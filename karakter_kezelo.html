@@ -1322,7 +1322,7 @@ const sb = supabase.createClient(
   }
 
   // ─── KEGYPONT MAX ───────────────────────────────────────────────
-  function updateMaxPower(val) {
+  window.updateMaxPower = function(val) {
     let newMax = Math.max(0, parseInt(val) || 0)
     appState.charData.maxPower = newMax
     document.getElementById('char-power-max-input').value = newMax
@@ -1330,18 +1330,18 @@ const sb = supabase.createClient(
       appState.charData.power = newMax
       document.getElementById('char-power-val').innerText = newMax
     }
-    scheduleSave()
+    window.scheduleSave()
   }
 
   // ─── AUTOSAVE ───────────────────────────────────────────────────
   let _saveTimer = null
 
-  function scheduleSave() {
+  window.scheduleSave = function() {
     if (_saveTimer) clearTimeout(_saveTimer)
-    _saveTimer = setTimeout(saveToSupabase, 1500)
+    _saveTimer = setTimeout(window.saveToSupabase, 1500)
   }
 
-  async function saveToSupabase() {
+  window.saveToSupabase = async function() {
     if (!window._sb || !window._userProfile) return
     syncMoneyData()
     const { data: { user } } = await window._sb.auth.getUser()
@@ -1355,14 +1355,15 @@ const sb = supabase.createClient(
       raw_card: appState.rawCharacterCard || null,
       updated_at: new Date().toISOString()
     }, { onConflict: 'user_id,session_name' })
-    if (!error) showSaveIndicator()
+    if (!error) window.showSaveIndicator()
+    else console.error('Mentési hiba:', error)
   }
 
-  async function loadFromSupabase() {
-    if (!window._sb) { setTimeout(loadFromSupabase, 100); return }
+  window.loadFromSupabase = async function() {
+    if (!window._sb) { setTimeout(window.loadFromSupabase, 100); return }
     const { data: { user } } = await window._sb.auth.getUser()
     if (!user) return
-    const { data } = await window._sb.from('session_states')
+    const { data, error } = await window._sb.from('session_states')
       .select('*').eq('user_id', user.id).eq('session_name', 'default').single()
     if (data) {
       if (data.char_data) appState.charData = data.char_data
@@ -1373,14 +1374,14 @@ const sb = supabase.createClient(
     }
   }
 
-  function showSaveIndicator() {
+  window.showSaveIndicator = function() {
     let el = document.getElementById('save-indicator')
     if (!el) return
     el.style.opacity = '1'
     setTimeout(() => el.style.opacity = '0', 1500)
   }
 
-  window.addEventListener('load', () => setTimeout(loadFromSupabase, 300))
+  window.addEventListener('load', () => setTimeout(window.loadFromSupabase, 300))
 </script>
 
 <div id="save-indicator" style="position:fixed;bottom:1rem;right:1rem;background:rgba(16,185,129,0.15);border:1px solid rgba(16,185,129,0.3);color:#34d399;font-size:.75rem;padding:.4rem .8rem;border-radius:.5rem;opacity:0;transition:opacity .5s;pointer-events:none;z-index:999;">✓ Mentve</div>
