@@ -428,7 +428,7 @@ const sb = supabase.createClient(
     <div class="ornament-deco">✦ &nbsp; ✦ &nbsp; ✦</div>
     <div class="ornament" style="margin:.3rem 0;"></div>
     <input type="text" class="vtitle-input" id="vampireTitle" placeholder="KARAKTER NEVE"
-      value="KARAKTER" oninput="sheetData.vampireTitle=this.value">
+      value="KARAKTER" oninput="sheetData.vampireTitle=this.value; window.scheduleSave()">
     <div class="ornament" style="margin:.3rem 0;"></div>
     <div class="ornament-deco">✦ &nbsp; ✦ &nbsp; ✦</div>
   </div>
@@ -438,13 +438,13 @@ const sb = supabase.createClient(
       <div class="info-field">
         <span class="info-label">Név:</span>
         <input type="text" class="info-input" id="info_name" placeholder="..."
-          oninput="sheetData.info.name=this.value">
+          oninput="sheetData.info.name=this.value; window.scheduleSave()">
       </div>
       <div class="info-field">
         <span class="info-label">Faj / Származás:</span>
         <div class="combo-wrap">
           <input type="text" class="combo-input" id="info_faj" list="dl_faj"
-            placeholder="..." oninput="sheetData.info.faj=this.value">
+            placeholder="..." oninput="sheetData.info.faj=this.value; window.scheduleSave()">
           <datalist id="dl_faj">
             <option value="Ember"><option value="Elf"><option value="Félelf">
             <option value="Törpe"><option value="Gnóm"><option value="Hobbitus">
@@ -457,7 +457,7 @@ const sb = supabase.createClient(
         <span class="info-label">Kaszt / Iskola:</span>
         <div class="combo-wrap">
           <input type="text" class="combo-input" id="info_kaszt" list="dl_kaszt"
-            placeholder="..." oninput="sheetData.info.kaszt=this.value">
+            placeholder="..." oninput="sheetData.info.kaszt=this.value; window.scheduleSave()">
           <datalist id="dl_kaszt">
             <option value="Harcos"><option value="Varázsló"><option value="Pap">
             <option value="Tolvaj"><option value="Bárd"><option value="Vadász">
@@ -471,7 +471,7 @@ const sb = supabase.createClient(
         <span class="info-label">Isten / Hit:</span>
         <div class="combo-wrap">
           <input type="text" class="combo-input" id="info_isten" list="dl_isten"
-            placeholder="..." oninput="sheetData.info.isten=this.value">
+            placeholder="..." oninput="sheetData.info.isten=this.value; window.scheduleSave()">
           <datalist id="dl_isten">
             <option value="Arel – Fény"><option value="Kaor – Rend">
             <option value="Domvik – Háború"><option value="Gilron – Erdő">
@@ -483,12 +483,12 @@ const sb = supabase.createClient(
       <div class="info-field">
         <span class="info-label">Krónika:</span>
         <input type="text" class="info-input" id="info_kronika" placeholder="..."
-          oninput="sheetData.info.kronika=this.value">
+          oninput="sheetData.info.kronika=this.value; window.scheduleSave()">
       </div>
       <div class="info-field">
         <span class="info-label">Tapasztalat:</span>
         <input type="text" class="info-input" id="info_xp" placeholder="0"
-          oninput="sheetData.info.xp=this.value">
+          oninput="sheetData.info.xp=this.value; window.scheduleSave()">
       </div>
     </div>
   </div>
@@ -651,7 +651,7 @@ function renderSection(sec, cont) {
   const hdr = document.createElement('div'); hdr.className='section-header';
   const ti = document.createElement('input');
   ti.type='text'; ti.className='section-title-input'; ti.value=sec.title;
-  ti.oninput = e => { sec.title = e.target.value; };
+  ti.oninput = e => { sec.title = e.target.value; window.scheduleSave(); };
 
   const ctrls = document.createElement('div'); ctrls.className='section-edit-ctrls edit-only';
 
@@ -703,7 +703,7 @@ function renderBox(box, grid, sec) {
   const bHdr = document.createElement('div'); bHdr.className='box-header';
   const bTi = document.createElement('input');
   bTi.type='text'; bTi.className='box-title-input'; bTi.value=box.title;
-  bTi.oninput = e => { box.title = e.target.value; };
+  bTi.oninput = e => { box.title = e.target.value; window.scheduleSave(); };
 
   const delBoxBtn = document.createElement('button');
   delBoxBtn.className='btn-del-box edit-only'; delBoxBtn.innerHTML='✕';
@@ -766,14 +766,14 @@ function buildRow(row, box) {
     li.style.maxWidth='100px'; li.placeholder='Felirat...';
     const ti = document.createElement('input');
     ti.type='text'; ti.className='row-text-input'; ti.value=row.value; ti.placeholder='...';
-    ti.oninput = e => { row.value=e.target.value; };
+    ti.oninput = e => { row.value=e.target.value; window.scheduleSave(); };
     wrap.append(li, ti, makeDelRowBtn(row,box));
 
   } else if (row.type === 'textarea') {
     wrap.style.cssText='flex-direction:column;align-items:stretch;display:flex;gap:.3rem;';
     const ta = document.createElement('textarea');
     ta.className='row-textarea'; ta.value=row.value; ta.placeholder='Ide írj...';
-    ta.oninput = e => { row.value=e.target.value; };
+    ta.oninput = e => { row.value=e.target.value; window.scheduleSave(); };
     const del = makeDelRowBtn(row,box); del.style.alignSelf='flex-end';
     wrap.append(ta, del);
 
@@ -781,7 +781,7 @@ function buildRow(row, box) {
     const hw = document.createElement('div'); hw.className='header-row-wrap';
     const hi = document.createElement('input');
     hi.type='text'; hi.className='header-row-input'; hi.value=row.label; hi.placeholder='Fejléc neve...';
-    hi.oninput = e => { row.label=e.target.value; };
+    hi.oninput = e => { row.label=e.target.value; window.scheduleSave(); };
     const hdw = document.createElement('div'); hdw.className='header-dots-wrap';
     renderDots(hdw, row, true);
     const del = makeDelRowBtn(row,box);
@@ -794,7 +794,7 @@ function buildRow(row, box) {
 function makeRowLabelInput(row) {
   const li = document.createElement('input');
   li.type='text'; li.className='row-label-input'; li.value=row.label;
-  li.oninput = e => { row.label=e.target.value; };
+  li.oninput = e => { row.label=e.target.value; window.scheduleSave(); };
   return li;
 }
 
@@ -814,10 +814,10 @@ function renderDots(container, row, isHeader) {
     d.className = cls + (i<=row.value ? ' filled' : '');
     d.innerText = i<=row.value ? '●' : '○';
     d.onclick = () => {
-      // Ha nem szerkeszthető az érték mód (fotó), ne történjen semmi, de CSS is védi (pointer-events: none)
       if(sheetData.viewMode === 2) return; 
       row.value = (row.value===i) ? i-1 : i;
       renderDots(container, row, isHeader);
+      window.scheduleSave();
     };
     container.appendChild(d);
   }
@@ -951,6 +951,7 @@ function importData(e) {
       });
       
       setViewMode(1); // Visszaállítjuk szerkeszthetőre betöltéskor
+      window.scheduleSave()
       alert(data._type==='magus_char_template' ? 'Sablon betöltve!' : 'Karakter betöltve!');
     } catch(err) { alert('Hiba: '+err.message); }
   };
@@ -1044,6 +1045,7 @@ function resetSheet() {
     const el=document.getElementById('info_'+k); if(el) el.value='';
   });
   setViewMode(1);
+  window.scheduleSave()
 }
 
 /* ==============================
@@ -1077,28 +1079,79 @@ document.addEventListener('mousemove',e=>{
 renderAll();
 </script>
 <script>
+  // ─── USERNAME ───────────────────────────────────────────────────
   function trySetUsername() {
     const el = document.getElementById('auth-username')
-    if (!el) return
+    if (!el) { setTimeout(trySetUsername, 50); return }
     if (window._userProfile) {
       el.textContent = window._userProfile.display_name
     } else {
       setTimeout(trySetUsername, 50)
     }
   }
-  trySetUsername()
+  setTimeout(trySetUsername, 100)
 
+  // ─── LOGOUT ─────────────────────────────────────────────────────
   async function doLogout() {
     try {
-const sb = supabase.createClient(
-  'https://nmzdvsnoomusukkczuav.supabase.co',
-  'sb_publishable_JCRzD-ElN1os72wkfX_DKw_PoOTgnYR',
-{ auth: { persistSession: true, storageKey: 'magus-auth', storage: window.localStorage } }
-)
-      await sb.auth.signOut()
+      await window._sb.auth.signOut()
+      Object.keys(localStorage).filter(k => k.startsWith('sb-')).forEach(k => localStorage.removeItem(k))
     } catch(e) {}
     window.location.href = 'login.html'
   }
+
+  // ─── AUTOSAVE ───────────────────────────────────────────────────
+  let _saveTimer = null
+
+  window.scheduleSave = function() {
+    if (_saveTimer) clearTimeout(_saveTimer)
+    _saveTimer = setTimeout(window.saveToSupabase, 1500)
+  }
+
+  window.saveToSupabase = async function() {
+    if (!window._sb || !window._userProfile) return
+    const { data: { user } } = await window._sb.auth.getUser()
+    if (!user) return
+    const { error } = await window._sb.from('character_sheets').upsert({
+      user_id: user.id,
+      name: sheetData.info.name || 'Névtelen',
+      faj: sheetData.info.faj || '',
+      kaszt: sheetData.info.kaszt || '',
+      data: sheetData,
+      updated_at: new Date().toISOString()
+    }, { onConflict: 'user_id' })
+    if (!error) window.showSaveIndicator()
+    else console.error('Mentési hiba:', error)
+  }
+
+  window.loadFromSupabase = async function() {
+    if (!window._sb) { setTimeout(window.loadFromSupabase, 100); return }
+    const { data: { user } } = await window._sb.auth.getUser()
+    if (!user) return
+    const { data } = await window._sb.from('character_sheets')
+      .select('*').eq('user_id', user.id).single()
+    if (data && data.data) {
+      sheetData = data.data
+      document.getElementById('vampireTitle').value = sheetData.vampireTitle || 'KARAKTER'
+      const infoKeys = ['name','faj','kaszt','isten','kronika','xp']
+      infoKeys.forEach(k => {
+        const el = document.getElementById('info_' + k)
+        if (el) el.value = (sheetData.info || {})[k] || ''
+      })
+      renderAll()
+    }
+  }
+
+  window.showSaveIndicator = function() {
+    let el = document.getElementById('save-indicator')
+    if (!el) return
+    el.style.opacity = '1'
+    setTimeout(() => el.style.opacity = '0', 1500)
+  }
+
+  window.addEventListener('load', () => setTimeout(window.loadFromSupabase, 300))
 </script>
+
+<div id="save-indicator" style="position:fixed;bottom:1rem;right:1rem;background:rgba(16,185,129,0.15);border:1px solid rgba(16,185,129,0.3);color:#34d399;font-size:.75rem;padding:.4rem .8rem;border-radius:.5rem;opacity:0;transition:opacity .5s;pointer-events:none;z-index:999;">✓ Mentve</div>
 </body>
 </html>
