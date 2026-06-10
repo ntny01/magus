@@ -1974,23 +1974,18 @@ document.addEventListener('mousemove', e => {
 <script>
   function trySetUsername() {
     const el = document.getElementById('auth-username')
-    if (!el) return
+    if (!el) { setTimeout(trySetUsername, 50); return }
     if (window._userProfile) {
       el.textContent = window._userProfile.display_name
     } else {
       setTimeout(trySetUsername, 50)
     }
   }
-  trySetUsername()
+  setTimeout(trySetUsername, 100)
 
   async function doLogout() {
     try {
-const sb = supabase.createClient(
-  'https://nmzdvsnoomusukkczuav.supabase.co',
-  'sb_publishable_JCRzD-ElN1os72wkfX_DKw_PoOTgnYR',
-{ auth: { persistSession: true, storageKey: 'magus-auth', storage: window.localStorage } }
-)
-      await sb.auth.signOut()
+      await window._sb.auth.signOut()
     } catch(e) {}
     window.location.href = 'login.html'
   }
