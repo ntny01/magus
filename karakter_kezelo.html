@@ -562,7 +562,7 @@ const sb = supabase.createClient(
                     <button class="ctrl-btn" id="char-power-half-plus" onclick="adjustStat('char', 'power', 0.5)">+0.5</button>
                     <button class="ctrl-btn" onclick="adjustStat('char', 'power', 1)">+1</button>
                 </div>
-                <div style="font-size:0.75rem; text-align:right; color:var(--text-muted); margin-top:4px;" id="char-power-max-display">Max: 5</div>
+                <div style="font-size:0.75rem; text-align:right; color:var(--text-muted); margin-top:4px;" id="char-power-max-display">Max: <input type="number" id="char-power-max-input" value="5" min="0" style="width:48px;background:#1a1a1e;border:1px solid var(--panel-border);color:white;border-radius:4px;padding:1px 4px;font-size:0.75rem;text-align:center;" onchange="updateMaxPower(this.value)"></div>
             </div>
 
             <div class="stat-row">
@@ -884,7 +884,12 @@ const sb = supabase.createClient(
             document.getElementById('power-type-label').innerText = isKegypont ? "Kegypont" : "Mana";
             document.getElementById('char-power-half-minus').style.display = isKegypont ? 'inline-block' : 'none';
             document.getElementById('char-power-half-plus').style.display = isKegypont ? 'inline-block' : 'none';
-            document.getElementById('char-power-max-display').innerText = isKegypont ? `Max (Akaraterő): ${appState.charData.maxPower}` : "Max: ∞";
+            if (isKegypont) {
+                document.getElementById('char-power-max-display').style.display = 'block';
+                document.getElementById('char-power-max-input').value = appState.charData.maxPower;
+            } else {
+                document.getElementById('char-power-max-display').style.display = 'none';
+            }
         } else {
             let hench = appState.henchmen.find(h => h.id === henchId);
             if (!hench) return;
@@ -906,6 +911,7 @@ const sb = supabase.createClient(
             }
             document.getElementById('char-power-val').innerText = appState.charData.power;
             updatePowerUI('char');
+            scheduleSave();
         } else {
             let hench = appState.henchmen.find(h => h.id === henchId);
             if (!hench) return;
@@ -918,6 +924,7 @@ const sb = supabase.createClient(
             }
             document.getElementById(`hench-power-val-${henchId}`).innerText = hench.power;
             updatePowerUI('hench', henchId);
+            scheduleSave();
         }
     }
 
@@ -939,7 +946,7 @@ const sb = supabase.createClient(
                 appState.charData.power = newVal;
                 document.getElementById('char-power-val').innerText = appState.charData.power;
             }
-        } else {
+            scheduleSave();
             let hench = appState.henchmen.find(h => h.id === henchId);
             if (!hench) return;
             if (stat === 'hp') {
@@ -964,6 +971,7 @@ const sb = supabase.createClient(
                 hench.power = newVal;
                 document.getElementById(`hench-power-val-${henchId}`).innerText = hench.power;
             }
+            scheduleSave();
         }
     }
 
@@ -983,6 +991,7 @@ const sb = supabase.createClient(
         } else {
             renderWeapons('hench', appState.henchmen.find(h => h.id === henchId).weapons, `hench-weapon-container-${henchId}`, henchId);
         }
+        scheduleSave();
     }
 
     function renderWeapons(target, weaponList, containerId, henchId = null) {
@@ -1011,7 +1020,7 @@ const sb = supabase.createClient(
     function updateWeaponName(target, wId, value, henchId) {
         let list = (target === 'char') ? appState.charData.weapons : appState.henchmen.find(h => h.id === henchId).weapons;
         let w = list.find(item => item.id === wId);
-        if (w) w.name = value;
+        if (w) { w.name = value; scheduleSave(); }
     }
 
     function adjustWeaponVal(target, wId, amount, henchId) {
@@ -1020,6 +1029,7 @@ const sb = supabase.createClient(
         if (w) {
             w.val = Math.max(0, w.val + amount);
             document.getElementById(`w-val-${wId}`).innerText = w.val;
+            scheduleSave();
         }
     }
 
@@ -1034,6 +1044,7 @@ const sb = supabase.createClient(
                 renderWeapons('hench', hench.weapons, containerId, henchId);
             }
         }
+        scheduleSave();
     }
 
     function syncMoneyData() {
@@ -1096,6 +1107,7 @@ const sb = supabase.createClient(
         }
 
         renderEverything();
+        scheduleSave();
     }
 
     function createNewHenchman() {
@@ -1114,6 +1126,7 @@ const sb = supabase.createClient(
         });
         renderHenchmen();
         updateTransDestOptions();
+        scheduleSave();
     }
 
     function renderHenchmen() {
@@ -1206,6 +1219,7 @@ const sb = supabase.createClient(
         if (hench) {
             hench.name = value;
             updateTransDestOptions();
+            scheduleSave();
         }
     }
 
@@ -1213,6 +1227,7 @@ const sb = supabase.createClient(
         appState.henchmen = appState.henchmen.filter(h => h.id !== id);
         renderHenchmen();
         updateTransDestOptions();
+        scheduleSave();
     }
 
     function updateTransDestOptions() {
@@ -1269,6 +1284,7 @@ const sb = supabase.createClient(
         srcObj[curr] -= amount;
         destObj[curr] += amount;
         renderEverything();
+        scheduleSave();
     }
 
     function exportCompleteState() {
@@ -1284,25 +1300,89 @@ const sb = supabase.createClient(
     }
 </script>
 <script>
+  // ─── USERNAME ───────────────────────────────────────────────────
   function trySetUsername() {
     const el = document.getElementById('auth-username')
-    if (!el) return
+    if (!el) { setTimeout(trySetUsername, 50); return }
     if (window._userProfile) {
       el.textContent = window._userProfile.display_name
     } else {
       setTimeout(trySetUsername, 50)
     }
   }
-  trySetUsername()
+  setTimeout(trySetUsername, 100)
 
-async function doLogout() {
-  try {
-    await window._sb.auth.signOut()
-    Object.keys(localStorage)
-      .filter(k => k.startsWith('sb-'))
-      .forEach(k => localStorage.removeItem(k))
-  } catch(e) {}
-  window.location.href = 'login.html'
-}pt>
+  // ─── LOGOUT ─────────────────────────────────────────────────────
+  async function doLogout() {
+    try {
+      await window._sb.auth.signOut()
+      Object.keys(localStorage).filter(k => k.startsWith('sb-')).forEach(k => localStorage.removeItem(k))
+    } catch(e) {}
+    window.location.href = 'login.html'
+  }
+
+  // ─── KEGYPONT MAX ───────────────────────────────────────────────
+  function updateMaxPower(val) {
+    let newMax = Math.max(0, parseInt(val) || 0)
+    appState.charData.maxPower = newMax
+    document.getElementById('char-power-max-input').value = newMax
+    if (appState.charData.power > newMax) {
+      appState.charData.power = newMax
+      document.getElementById('char-power-val').innerText = newMax
+    }
+    scheduleSave()
+  }
+
+  // ─── AUTOSAVE ───────────────────────────────────────────────────
+  let _saveTimer = null
+
+  function scheduleSave() {
+    if (_saveTimer) clearTimeout(_saveTimer)
+    _saveTimer = setTimeout(saveToSupabase, 1500)
+  }
+
+  async function saveToSupabase() {
+    if (!window._sb || !window._userProfile) return
+    syncMoneyData()
+    const { data: { user } } = await window._sb.auth.getUser()
+    if (!user) return
+    const { error } = await window._sb.from('session_states').upsert({
+      user_id: user.id,
+      session_name: 'default',
+      char_data: appState.charData,
+      bank_money: appState.bankMoney,
+      henchmen: appState.henchmen,
+      raw_card: appState.rawCharacterCard || null,
+      updated_at: new Date().toISOString()
+    }, { onConflict: 'user_id,session_name' })
+    if (!error) showSaveIndicator()
+  }
+
+  async function loadFromSupabase() {
+    if (!window._sb) { setTimeout(loadFromSupabase, 100); return }
+    const { data: { user } } = await window._sb.auth.getUser()
+    if (!user) return
+    const { data } = await window._sb.from('session_states')
+      .select('*').eq('user_id', user.id).eq('session_name', 'default').single()
+    if (data) {
+      if (data.char_data) appState.charData = data.char_data
+      if (data.bank_money) appState.bankMoney = data.bank_money
+      if (data.henchmen) appState.henchmen = data.henchmen
+      if (data.raw_card) appState.rawCharacterCard = data.raw_card
+      renderEverything()
+    }
+  }
+
+  function showSaveIndicator() {
+    let el = document.getElementById('save-indicator')
+    if (!el) return
+    el.style.opacity = '1'
+    setTimeout(() => el.style.opacity = '0', 1500)
+  }
+
+  window.addEventListener('load', () => setTimeout(loadFromSupabase, 300))
+</script>
+
+<div id="save-indicator" style="position:fixed;bottom:1rem;right:1rem;background:rgba(16,185,129,0.15);border:1px solid rgba(16,185,129,0.3);color:#34d399;font-size:.75rem;padding:.4rem .8rem;border-radius:.5rem;opacity:0;transition:opacity .5s;pointer-events:none;z-index:999;">✓ Mentve</div>
 </body>
 </html>
