@@ -1,6 +1,23 @@
 <!DOCTYPE html>
 <html lang="hu">
 <head>
+      <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script>
+  (async () => {
+    const sb = supabase.createClient(
+      'https://nmzdvsnoomusukkczuav.supabase.co',
+      'sb_publishable_JCRzD-ElN1os72wkfX_DKw_PoOTgnYR'
+    )
+    const { data: { session } } = await sb.auth.getSession()
+    if (!session) { window.location.href = 'login.html'; return }
+    const { data: profile } = await sb.from('user_profiles')
+      .select('status').eq('id', session.user.id).single()
+    if (!profile || profile.status !== 'active') {
+      await sb.auth.signOut()
+      window.location.href = 'login.html'
+    }
+  })()
+</script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Karakter Segéd</title>
@@ -492,6 +509,10 @@
             </div>
             <button class="btn btn-accent" id="json-exporter">Teljes Állapot Mentése (JSON)</button>
         </div>
+        <div style="display:flex;align-items:center;gap:.6rem;margin-left:.5rem;">
+  <span id="auth-username" style="font-size:.78rem;color:#94a3b8;font-family:'Cinzel',serif;letter-spacing:.06em;"></span>
+  <button onclick="doLogout()" style="background:rgba(248,113,113,0.08);border:1px solid rgba(248,113,113,0.2);color:#f87171;font-size:.75rem;padding:.3rem .7rem;border-radius:.4rem;cursor:pointer;font-family:inherit;">Kilépés</button>
+</div>
     </header>
 
     <div id="main-character-panel" class="panel hidden">
@@ -1259,6 +1280,17 @@
         downloadAnchor.remove();
     }
 </script>
-
+<script>
+  window.addEventListener('load', () => {
+    const el = document.getElementById('auth-username')
+    if (el && window._userProfile) {
+      el.textContent = window._userProfile.display_name
+    }
+  })
+  async function doLogout() {
+    await window._sb.auth.signOut()
+    window.location.href = 'login.html'
+  }
+</script>
 </body>
 </html>
