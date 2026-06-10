@@ -6,8 +6,9 @@
   (async () => {
     const sb = supabase.createClient(
       'https://nmzdvsnoomusukkczuav.supabase.co',
-      'sb_publishable_JCRzD-ElN1os72wkfX_DKw_PoOTgnYR'
+      'IDE_AZ_ANON_KEY'
     )
+    window._sb = sb
     const { data: { session } } = await sb.auth.getSession()
     if (!session) { window.location.href = 'login.html'; return }
     const { data: profile } = await sb.from('user_profiles')
@@ -19,7 +20,9 @@
     }
     if (profile.role !== 'admin') {
       window.location.href = 'index.html'
+      return
     }
+    window._userProfile = profile
   })()
 </script>
 </script>

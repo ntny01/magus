@@ -3,19 +3,22 @@
 <head>
       <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 <script>
-  (async () => {
+(async () => {
     const sb = supabase.createClient(
       'https://nmzdvsnoomusukkczuav.supabase.co',
-      'sb_publishable_JCRzD-ElN1os72wkfX_DKw_PoOTgnYR'
+      'IDE_AZ_ANON_KEY'
     )
+    window._sb = sb
     const { data: { session } } = await sb.auth.getSession()
     if (!session) { window.location.href = 'login.html'; return }
     const { data: profile } = await sb.from('user_profiles')
-      .select('status').eq('id', session.user.id).single()
+      .select('status, role, display_name').eq('id', session.user.id).single()
     if (!profile || profile.status !== 'active') {
       await sb.auth.signOut()
       window.location.href = 'login.html'
+      return
     }
+    window._userProfile = profile
   })()
 </script>
     <meta charset="UTF-8">
