@@ -2453,10 +2453,15 @@ document.addEventListener('mousemove', e => {
       el.textContent = window._userProfile.display_name
     }
   })
-  async function doLogout() {
+async function doLogout() {
+  try {
     await window._sb.auth.signOut()
-    window.location.href = 'login.html'
-  }
+    Object.keys(localStorage)
+      .filter(k => k.startsWith('sb-'))
+      .forEach(k => localStorage.removeItem(k))
+  } catch(e) {}
+  window.location.href = 'login.html'
+}
 </script>
 <script>
   function trySetUsername() {

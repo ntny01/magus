@@ -1983,12 +1983,15 @@ document.addEventListener('mousemove', e => {
   }
   setTimeout(trySetUsername, 100)
 
-  async function doLogout() {
-    try {
-      await window._sb.auth.signOut()
-    } catch(e) {}
-    window.location.href = 'login.html'
-  }
+async function doLogout() {
+  try {
+    await window._sb.auth.signOut()
+    Object.keys(localStorage)
+      .filter(k => k.startsWith('sb-'))
+      .forEach(k => localStorage.removeItem(k))
+  } catch(e) {}
+  window.location.href = 'login.html'
+}
 </script>
 </body>
 </html>
