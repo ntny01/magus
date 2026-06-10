@@ -1181,20 +1181,19 @@ tbody tr:hover{
                 </div>
             </div>
             <div class="font-controls desktop-only">
-<div style="display: flex; gap: 0.5rem; margin-right: 0.75rem;">
-    <a href="km_pult.html" target="_blank" class="header-icon-btn" title="Kalandmesteri Pult megnyitása">🛡️</a>
-    <a href="ynev_terkep.html" target="_blank" id="mapLinkBtn" title="Interaktív Ynev Térkép megnyitása">🗺️</a>
-    <a href="char.html" target="_blank" class="header-icon-btn" title="Karakterlap megnyitása">🧙‍♂️</a>
-    <a href="karakter_kezelo.html" target="_blank" class="header-icon-btn" title="Karakter Segéd megnyitása">📊</a>
-</div>
+<div class="font-controls desktop-only">
+    <div style="display:flex;align-items:center;gap:0.5rem;margin-right:0.75rem;">
+        <a href="km_pult.html" target="_blank" class="header-icon-btn" title="Kalandmesteri Pult megnyitása">🛡️</a>
+        <a href="ynev_terkep.html" target="_blank" id="mapLinkBtn" title="Interaktív Ynev Térkép megnyitása">🗺️</a>
+        <a href="char.html" target="_blank" class="header-icon-btn" title="Karakterlap megnyitása">🧙‍♂️</a>
+        <a href="karakter_kezelo.html" target="_blank" class="header-icon-btn" title="Karakter Segéd megnyitása">📊</a>
+        <span id="auth-username" style="font-size:.75rem;color:#d4af37;font-family:'Cinzel',serif;letter-spacing:.06em;white-space:nowrap;margin-left:.25rem;"></span>
+        <button onclick="doLogout()" style="background:rgba(248,113,113,0.08);border:1px solid rgba(248,113,113,0.2);color:#f87171;font-size:.75rem;padding:.3rem .7rem;border-radius:.4rem;cursor:pointer;white-space:nowrap;">Kilépés</button>
+    </div>
     <button class="font-btn" id="fontDecrease" title="Betűméret csökkentése">A-</button>
     <button class="font-btn" id="fontIncrease" title="Betűméret növelése">A+</button>
 </div>
         </div>
-<div style="display:flex;align-items:center;gap:.5rem;padding:.2rem .5rem;flex-shrink:0;margin-left:.25rem;">
-    <span id="auth-username" style="font-size:.75rem;color:#d4af37;font-family:'Cinzel',serif;letter-spacing:.06em;white-space:nowrap;display:none;" class="desktop-only"></span>
-    <button onclick="doLogout()" style="background:rgba(248,113,113,0.08);border:1px solid rgba(248,113,113,0.2);color:#f87171;font-size:.75rem;padding:.3rem .7rem;border-radius:.4rem;cursor:pointer;white-space:nowrap;">Kilépés</button>
-</div>
     </header>
 
     <div class="layout-container">
@@ -1985,10 +1984,11 @@ document.addEventListener('mousemove', e => {
 
   async function doLogout() {
     try {
-      const sb = supabase.createClient(
-        'https://nmzdvsnoomusukkczuav.supabase.co',
-        'sb_publishable_JCRzD-ElN1os72wkfX_DKw_PoOTgnYR'
-      )
+const sb = supabase.createClient(
+  'https://nmzdvsnoomusukkczuav.supabase.co',
+  'sb_publishable_JCRzD-ElN1os72wkfX_DKw_PoOTgnYR',
+  { auth: { persistSession: true, storageKey: 'magus-auth', storage: window.sessionStorage } }
+)
       await sb.auth.signOut()
     } catch(e) {}
     window.location.href = 'login.html'

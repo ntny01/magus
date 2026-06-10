@@ -1294,10 +1294,11 @@
 
   async function doLogout() {
     try {
-      const sb = supabase.createClient(
-        'https://nmzdvsnoomusukkczuav.supabase.co',
-        'sb_publishable_JCRzD-ElN1os72wkfX_DKw_PoOTgnYR'
-      )
+const sb = supabase.createClient(
+  'https://nmzdvsnoomusukkczuav.supabase.co',
+  'sb_publishable_JCRzD-ElN1os72wkfX_DKw_PoOTgnYR',
+  { auth: { persistSession: true, storageKey: 'magus-auth', storage: window.sessionStorage } }
+)
       await sb.auth.signOut()
     } catch(e) {}
     window.location.href = 'login.html'
