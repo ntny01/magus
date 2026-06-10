@@ -453,7 +453,30 @@ const sb = supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY)
       role: 'player',
       status: 'pending'
     })
+await sb.from('user_profiles').insert({
+  id: data.user.id,
+  display_name: name,
+  role: 'player',
+  status: 'pending'
+})
 
+// Értesítő email küldése
+await fetch('https://nmzdvsnoomusukkczuav.supabase.co/functions/v1/notify-registration', {
+  method: 'POST',
+  headers: {
+    'Content-Type': 'application/json',
+    'Authorization': `Bearer ${SUPABASE_ANON_KEY}`
+  },
+  body: JSON.stringify({
+    record: {
+      display_name: name,
+      id: data.user.id
+    }
+  })
+})
+
+// Azonnal kijelentkeztetjük
+await sb.auth.signOut()
     // Azonnal kijelentkeztetjük, nem léphet be amíg nincs jóváhagyva
     await sb.auth.signOut()
 
