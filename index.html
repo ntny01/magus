@@ -1190,9 +1190,9 @@ tbody tr:hover{
     <button class="font-btn" id="fontIncrease" title="Betűméret növelése">A+</button>
 </div>
         </div>
-        <div style="display:flex;align-items:center;gap:.6rem;margin-left:.5rem;">
-  <span id="auth-username" style="font-size:.78rem;color:#94a3b8;font-family:'Cinzel',serif;letter-spacing:.06em;"></span>
-  <button onclick="doLogout()" style="background:rgba(248,113,113,0.08);border:1px solid rgba(248,113,113,0.2);color:#f87171;font-size:.75rem;padding:.3rem .7rem;border-radius:.4rem;cursor:pointer;font-family:inherit;">Kilépés</button>
+<div style="display:flex;align-items:center;gap:.5rem;padding:.2rem .5rem;flex-shrink:0;">
+  <span id="auth-username" style="font-size:.75rem;color:#d4af37;font-family:'Cinzel',serif;letter-spacing:.06em;white-space:nowrap;"></span>
+  <button onclick="doLogout()" style="background:rgba(248,113,113,0.08);border:1px solid rgba(248,113,113,0.2);color:#f87171;font-size:.75rem;padding:.3rem .7rem;border-radius:.4rem;cursor:pointer;white-space:nowrap;">Kilépés</button>
 </div>
     </header>
 
@@ -1970,12 +1970,17 @@ document.addEventListener('mousemove', e => {
     </div>
 </div>
 <script>
-  window.addEventListener('load', () => {
+  function trySetUsername() {
     const el = document.getElementById('auth-username')
-    if (el && window._userProfile) {
+    if (!el) return
+    if (window._userProfile) {
       el.textContent = window._userProfile.display_name
+    } else {
+      setTimeout(trySetUsername, 50)
     }
-  })
+  }
+  trySetUsername()
+
   async function doLogout() {
     await window._sb.auth.signOut()
     window.location.href = 'login.html'

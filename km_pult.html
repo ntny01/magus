@@ -526,6 +526,10 @@
             <button class="km-btn" onclick="document.getElementById('importFile').click()">📂 Betöltés</button>
             <input type="file" id="importFile" style="display:none;" onchange="importData(event)">
         </div>
+        <div style="display:flex;align-items:center;gap:.5rem;flex-shrink:0;margin-left:.5rem;">
+  <span id="auth-username" style="font-size:.75rem;color:#d4af37;font-family:'Cinzel',serif;letter-spacing:.06em;white-space:nowrap;"></span>
+  <button onclick="doLogout()" style="background:rgba(248,113,113,0.08);border:1px solid rgba(248,113,113,0.2);color:#f87171;font-size:.75rem;padding:.3rem .7rem;border-radius:.4rem;cursor:pointer;white-space:nowrap;">Kilépés</button>
+</div>
     </header>
 
     <!-- ===== KARAKTERKÁRTYA PANEL ===== -->
@@ -1148,13 +1152,18 @@
             });
         }
     </script>
-    <script>
-  window.addEventListener('load', () => {
+<script>
+  function trySetUsername() {
     const el = document.getElementById('auth-username')
-    if (el && window._userProfile) {
+    if (!el) return
+    if (window._userProfile) {
       el.textContent = window._userProfile.display_name
+    } else {
+      setTimeout(trySetUsername, 50)
     }
-  })
+  }
+  trySetUsername()
+
   async function doLogout() {
     await window._sb.auth.signOut()
     window.location.href = 'login.html'
