@@ -1,0 +1,388 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": false,
+    "section_title": "",
+    "content_blocks": [
+        {
+            "type": "table",
+            "title": "Rontások",
+            "headers": [
+                "A varázslat neve",
+                "Mana pont",
+                "Varázslás ideje",
+                "Hatótáv",
+                "Lappangás ideje",
+                "Mágiaellenállás"
+            ],
+            "rows": [
+                [
+                    "Agyhalál",
+                    "30",
+                    "5 szegmens",
+                    "20 ynevi láb vagy érintés",
+                    "Azonnali hatású",
+                    "Egészségpróba"
+                ],
+                [
+                    "Álomkór",
+                    "8",
+                    "5 szegmens",
+                    "20 ynevi láb vagy érintés",
+                    "Közepes lefolyású",
+                    "Egészségpróba"
+                ],
+                [
+                    "Belsőrvadás",
+                    "10",
+                    "5 szegmens",
+                    "20 ynevi láb vagy érintés",
+                    "Lassú lefolyású",
+                    "Egészségpróba"
+                ],
+                [
+                    "Búvragály",
+                    "+10",
+                    "+5 szegmens",
+                    "",
+                    "",
+                    ""
+                ],
+                [
+                    "Fekete halál",
+                    "30",
+                    "5 szegmens",
+                    "20 ynevi láb vagy érintés",
+                    "Gyors lefolyású",
+                    "Egészségpróba"
+                ],
+                [
+                    "Idegroncsolás",
+                    "25",
+                    "5 szegmens",
+                    "20 ynevi láb vagy érintés",
+                    "Azonnali hatású",
+                    "Egészségpróba"
+                ],
+                [
+                    "Izomsorvadás",
+                    "20",
+                    "5 szegmens",
+                    "20 ynevi láb vagy érintés",
+                    "Közepes lefolyású",
+                    "Egészségpróba"
+                ],
+                [
+                    "Izzó idegek",
+                    "8",
+                    "5 szegmens",
+                    "20 ynevi láb vagy érintés",
+                    "Lassú lefolyású",
+                    "Egészségpróba"
+                ],
+                [
+                    "Lepra",
+                    "20",
+                    "5 szegmens",
+                    "20 ynevi láb vagy érintés",
+                    "Lassú lefolyású",
+                    "Egészségpróba"
+                ],
+                [
+                    "Nyirohadás",
+                    "15",
+                    "5 szegmens",
+                    "20 ynevi láb vagy érintés",
+                    "Lassú lefolyású",
+                    "Egészségpróba"
+                ],
+                [
+                    "Rútság",
+                    "5",
+                    "5 szegmens",
+                    "20 ynevi láb vagy érintés",
+                    "Közepes lefolyású",
+                    "Egészségpróba"
+                ],
+                [
+                    "Szívbénítás",
+                    "30",
+                    "5 szegmens",
+                    "20 ynevi láb vagy érintés",
+                    "Lassú lefolyású",
+                    "Egészségpróba"
+                ],
+                [
+                    "Tüdősorvadás",
+                    "16",
+                    "5 szegmens",
+                    "20 ynevi láb vagy érintés",
+                    "Lassú lefolyású",
+                    "Egészségpróba"
+                ],
+                [
+                    "Vakság okozás",
+                    "15",
+                    "5 szegmens",
+                    "20 ynevi láb vagy érintés",
+                    "Közepes lefolyású",
+                    "Egészségpróba"
+                ],
+                [
+                    "Végtagsorvasztás",
+                    "15",
+                    "5 szegmens",
+                    "20 ynevi láb vagy érintés",
+                    "Azonnali hatású",
+                    "Egészségpróba"
+                ],
+                [
+                    "Vérdermesztés",
+                    "10",
+                    "5 szegmens",
+                    "20 ynevi láb vagy érintés",
+                    "Gyors lefolyású",
+                    "Egészségpróba"
+                ],
+                [
+                    "Vérzékenység",
+                    "20",
+                    "5 szegmens",
+                    "20 ynevi láb vagy érintés",
+                    "Lassú lefolyású",
+                    "Egészségpróba"
+                ],
+                [
+                    "Veszettség",
+                    "15",
+                    "5 szegmens",
+                    "20 ynevi láb vagy érintés",
+                    "Lassú lefolyású",
+                    "Egészségpróba"
+                ],
+                [
+                    "Vörös halál",
+                    "60",
+                    "5 szegmens",
+                    "20 ynevi láb vagy érintés",
+                    "Azonnali hatású",
+                    "Egészségpróba"
+                ]
+            ]
+        },
+        {
+            "type": "table",
+            "title": "Betegségmágia",
+            "headers": [
+                "A varázslat neve",
+                "Mana pont",
+                "Varázslás ideje",
+                "Hatótáv",
+                "Időtartam",
+                "Mágiaellenállás"
+            ],
+            "rows": [
+                [
+                    "Betegség azonosítása",
+                    "4",
+                    "1 perc",
+                    "Érintés",
+                    "Végleges",
+                    ""
+                ],
+                [
+                    "Betegség befolyásolása",
+                    "6/E",
+                    "1 kör/E",
+                    "Érintés",
+                    "Végleges",
+                    ""
+                ],
+                [
+                    "Betegség átadása",
+                    "22",
+                    "1 szegmens",
+                    "Érintés",
+                    "Végleges",
+                    ""
+                ]
+            ]
+        },
+        {
+            "type": "table",
+            "title": "Méregmágia",
+            "headers": [
+                "A varázslat neve",
+                "Mana pont",
+                "Varázslás ideje",
+                "Hatótáv",
+                "Időtartam",
+                "Mágiaellenállás"
+            ],
+            "rows": [
+                [
+                    "Méregismeret",
+                    "3",
+                    "1 kör",
+                    "Érintés",
+                    "Egyszeri",
+                    ""
+                ],
+                [
+                    "Méregvarázs",
+                    "3/E",
+                    "1 kör",
+                    "Érintés",
+                    "Maradandó",
+                    ""
+                ],
+                [
+                    "Méreg semlegesítése",
+                    "5/E",
+                    "1 kör",
+                    "Érintés",
+                    "Maradandó",
+                    ""
+                ],
+                [
+                    "Méreg átadása",
+                    "22",
+                    "1 szegmens",
+                    "Érintés",
+                    "Végleges",
+                    "Egészségpróba"
+                ]
+            ]
+        },
+        {
+            "type": "table",
+            "title": "Átkok",
+            "headers": [
+                "A varázslat neve",
+                "Mana pont",
+                "Varázslás ideje",
+                "Hatótáv",
+                "Időtartam",
+                "Mágiaellenállás"
+            ],
+            "rows": [
+                [
+                    "Átokvarázs",
+                    "Lásd a leírást!",
+                    "4 szegmens",
+                    "Hallótávolság",
+                    "1 hónap",
+                    "Mentális"
+                ],
+                [
+                    "Átokfejtés",
+                    "10",
+                    "10 kör",
+                    "Érintés",
+                    "Egy személy vizsgálata",
+                    ""
+                ],
+                [
+                    "Átokűzés",
+                    "1/E",
+                    "10 kör",
+                    "Érintés",
+                    "Maradandó",
+                    ""
+                ]
+            ]
+        },
+        {
+            "type": "table",
+            "title": "Természeti mágia",
+            "headers": [
+                "A varázslat neve",
+                "Mana pont",
+                "Varázslás ideje",
+                "Hatótáv",
+                "Időtartam",
+                "Mágiaellenállás"
+            ],
+            "rows": [
+                [
+                    "Tenger felkorbácsolása",
+                    "4/E",
+                    "1 perc/E",
+                    "1 mérföld",
+                    "1 óra",
+                    ""
+                ],
+                [
+                    "Jégverés",
+                    "5/E",
+                    "1 perc/E",
+                    "1 mérföld",
+                    "1 óra",
+                    ""
+                ],
+                [
+                    "Szélirányítás",
+                    "3/E",
+                    "1 perc/E",
+                    "1 mérföld",
+                    "1 óra",
+                    ""
+                ],
+                [
+                    "Földmozgás",
+                    "5/E",
+                    "1 perc/E",
+                    "1 mérföld",
+                    "1 óra",
+                    ""
+                ]
+            ]
+        },
+        {
+            "type": "table",
+            "title": "Asztrál- és Mentálmágia",
+            "headers": [
+                "A varázslat neve",
+                "Mana pont",
+                "Varázslás ideje",
+                "Hatótáv",
+                "Időtartam",
+                "Mágiaellenállás"
+            ],
+            "rows": [
+                [
+                    "Láthatatlanság felfedezése",
+                    "1/E",
+                    "1 szegmens",
+                    "20 ynevi láb sugarú kör",
+                    "1 perc/szint",
+                    "Mentális"
+                ],
+                [
+                    "Sötétté gyalázás",
+                    "3/E",
+                    "1 szegmens/E",
+                    "Érintés",
+                    "1 nap/szint",
+                    "Asztrális Mentális"
+                ],
+                [
+                    "Gyilokvágy",
+                    "5/E",
+                    "1 szegmens/E",
+                    "20 ynevi láb",
+                    "1 kör/szint",
+                    "Asztrális"
+                ],
+                [
+                    "Orgyilkosság",
+                    "4/E",
+                    "1 szegmens/E",
+                    "Érintés",
+                    "Lásd a leírást!",
+                    "Mentális"
+                ]
+            ]
+        }
+    ]
+}

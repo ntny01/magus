@@ -1,0 +1,91 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": true,
+    "section_title": "Sárkányok",
+    "content_blocks": [
+        {
+            "type": "paragraph",
+            "text": "többi végtagjukhoz képest váratlan fürgeséggel mozgatják. Természetesen a felsorolt támadási módok közül koronként mindegyiket legfeljebb egyszer alkalmazhatják – de akár egyidejűleg is. A következő táblázat arra tudósít, melyik támadási mód mennyire hatékony, s találat esetén milyen sebzést okoz az ellenfélnek."
+        },
+        {
+            "type": "paragraph",
+            "text": "A Sárkányok Védő értéke kevés (legalábbis törzsük túlnyomó részén) – hiszen ki ne lenne képes eltalálni óriási testüket? Hogy mégis szinte sebezhetetlenek, azt a testüket mindenütt borító, acélnál is keményebb, olykor fél méter vastag pikkelyeknek köszönhetik. (SFÉ: 15–30 – a KM dönti el) Ezeket átszúrni lehetetlen, kizárólag a köztük húzódó keskeny réseken nyílik mód a lágyabb részek elérésére. Ahhoz, hogy egy sárkány törzsén sebet ejtsen, legalább másfél méter hosszú fegyver szükségeseltetik – az ennél rövidebb még Ép-veszteség sem okoz. E célra külön készítenek kardokat, de legtöbbször kopját, esetleg nyeles fegyvert használnak a sárkányölők."
+        },
+        {
+            "type": "paragraph",
+            "text": "Akadnak azonban a sárkányoknak olyan gyenge pontjaik is, ahol jóval könnyebb megsebezni őket, mint a törzsükön. Ezen pontok kivételével a sárkánynak nem is okozhatod Ép-veszteség – kivéve a természetes 00-át –, bármilyen mértékű Túlütést is dob a támadó. A sárkányok legsebezhetőbb pontja a szemük (SFÉ: 0), erre mindig szerfelett vigyáznak – legszívesebben magasra emelik fejüket, ahol azt nyílvesz-szőkön kívül más el nem érheti. További gyenge pontjuk a hasuk (SFÉ: 10–15), a nyakuk eleje és a fejük (SFÉ: 8–10), ahol pikkelyeik jóval kisebbek és vékonyabbak. Természetesen a sárkányok mindezzel tisztában vannak, s említett testrészeiket fokozott gonddal óvják, ami azok nagyobb Védő értékében nyilvánul meg. Fontos tehát megjegyezni, hogy egy sárkány különböző testrészeinek – a humanoidokkal ellentétben – többféle VÉ-je van. Hogy törzsüknek és a kritikus pontoknak milyen seb okozható, az a következő táblázatból derül ki."
+        },
+        {
+            "type": "table",
+            "headers": [
+                "Testrész",
+                "VÉ",
+                "Okozható seb"
+            ],
+            "rows": [
+                [
+                    "Törzs",
+                    "40-50",
+                    "Csak Ép"
+                ],
+                [
+                    "Lábak, farok",
+                    "60-80",
+                    "Csak Ép"
+                ],
+                [
+                    "Nyak",
+                    "120-160",
+                    "Ép is okozható"
+                ],
+                [
+                    "Fej",
+                    "160-180",
+                    "Ép is okozható"
+                ],
+                [
+                    "Szemek",
+                    "220-240",
+                    "10 Ép egy szem"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "Azt, hogy a sárkány mely testrészét támadja, a támadónak előre be kell jelentenie, az ettől függő VÉ ellen teszi meg Támadó dobását, s ettől függ az okozott sebzés is, s az is, hogy abból mennyit fog fel a pikkelyek SFÉ-je."
+        },
+        {
+            "type": "paragraph",
+            "text": "A sárkányok legjellemzőbb képessége, hogy szájukból tüzet fújnak. A kifújt tűzcsóva a Mágia fejezetében leírt, Csóvába formázott Őstűznek felel meg, minden szempontból hasonlóan viselkedik, beleértve Erősségének, s ezáltal sebzésének csökkenését a Távolság függvényében. A kilövellés pontjánál Erőssége (E) attól függ, mennyi levegőt szívott be a sárkány a kifúvás előtt. Maximális erejű kifúváshoz 10 körön keresztül kell beszívnia a levegőt, s ha kevesebb időt szán a beszívásra, annak arányában a kifújt tűzcsóva Erőssége (E) is kisebb lesz. 5 kör esetén a fele, 2 kör esetén az ötöde, 1 kör esetén a tizede. Ebből is látszik, hogy egy sárkány akár minden második körben képes tüzet fújni, ám ilyenkor a tűzcsóva erőssége (E) elenyésző lesz. Alapos megfontolás tárgyává kell hát tennie, hogy sűrűn egymás után fújjon-e, vagy inkább körökön keresztül levegőt vegyen, egyetlen erősebb tűzlehelethez. A beszívás időtartama alatt bármit tehet, harcolhat, varázsolhat, repülhet, de nem beszélhet, és természetesen nem fújhat tüzet, hiszen ez a belélegzési szakasz végét jelentené. A kilövellő tűzcsóva Erőssége 50 és 20 É között lehet – a KM jogköre eldönteni a sárkány életkorának és méretének ismeretében."
+        },
+        {
+            "type": "paragraph",
+            "text": "A sárkányok kiváló képességű varázslók is egyben. Némelyikük ismeri is a mágia törvényeit, legtöbbjük azonban inkább csak született ösztönnel alkalmazza azt. Varázsláskor nem mondják ki a mozaik mágikus nevét, mint a varázslók, s nem is rajzolják rúnáját a levegőbe, hanem csak felidézik a képzeletükben. Ily módon minden mozaikot egyetlen szegmens alatt létrehoznak, függetlenül attól, hogy egy varázslónak ugyanez mennyi időbe kerülne. Anyag-, Asztrálés Mentálmágiát, továbbá Időmágiát használnak, a mágia többi fejezete idegen tőlük. Tudásuk mértéke különböző, de a varázslók Tapasztalati szintjének megfeleltethető. Legtöbbjük 10. szinten varázsol, némelyikük rosszabbul, némelyikük különbül, akár még 15. szinten is. Az ős-sárkányok tudása a 20. Tapasztalati szintet is elérheti. További különbség a varázslókhoz képest, hogy a sárkányok gyakorlatilag végtelenszer képesek energiával feltölteni elméjüket. Egyszerre természetesen ők is csak annyi Mana pontot képesek begyűjteni, amennyi a max. Mp-juk. Az energiagyűjtéshez 10 percre van szükségük, mely alatt bármit tehetnek, harcolhatnak, repülhetnek, tüzet lehelhetnek, de nem varázsolhatnak."
+        },
+        {
+            "type": "paragraph",
+            "text": "A sárkányok nem rendelkeznek a Pszi semmilyen formájával és immunisak annak minden rájuk irányuló hatásával szemben. Azonban faji mentális képességeik leginkább a Kyr metódusnak megfeleltethető képességekkel ruházzák fel őket. Nem hat rájuk az Asztrálmágia és Mentálmágia sem; pikkelyeiknek köszönhetően a tűz semmilyen megnyilvánulása, még az Őstűz sem sebzi testüket."
+        },
+        {
+            "type": "paragraph",
+            "text": "Túlvilági teremtmények"
+        },
+        {
+            "type": "paragraph",
+            "text": "Az elkövetkezendőkben csak a holtuk után visszajáró élőholtakról, kísértetekről és lelkekről lesz szó; a démonokat máshol tárgyaljuk."
+        },
+        {
+            "type": "paragraph",
+            "text": "A legfontosabb, ami minden túlvilági teremtményt megkülönböztet az evilágiaktól, természetesen az, hogy belőlük hiányzik az Élet princípiuma. Életfunkcióik nincsenek, nem létszükséglet számukra a levegő vagy a táplálék. Van ugyan néhány osztályuk, amely – úgymond – táplálkozik (vérivó élőholtak és életerővel táplálkozó szellemek), ám ezek számára sem elengedhetetlen az effajta táplálék, azaz nem szűnnek meg létezni, még ha sokáig nem is jutnak hozzá. Szaporodni – legalábbis a hagyományos értelemben – képtelenek, mindig mágikus úton, vagy valamely átok folytán jönnek létre."
+        },
+        {
+            "type": "paragraph",
+            "text": "Ezen teremtmények legtöbbje bír lélekkel (kivéve a tudattalan élőholtakat), amely lélek, legyen bár torz, de kiterjeszti Személyes Auráját a testre. Azon teremtmények, melyek bírnak anyagi testtel, átitatódottak mágiával vagy nem evilági anyagokkal, ezért a Természetes Anyag mágiája rájuk hatástalan. Természetesen a testtel nem rendelkező kísértetek és lelkek esetében ez a kérdés el sem merülhet. A megidézett teremtmények minden esetben mágikus anyagi kategóriának számítanak."
+        },
+        {
+            "type": "paragraph",
+            "text": "Annak ellenére, hogy a legtöbb túlvilági teremtményben lélek lakozik, csak igen kevesen befolyásolhatók asztrális vagy mentális úton. Ennek oka az, hogy noha a lélek a test halála után megtartotta Asztrális és a Mentális testét, azok az idők folyamán eltorzultak, elkorcsosultak, és immáron egészen másképp festenek, mint egy élő emberé. Az ilyen teremtményeknél a ME rovatban „immunis” jelző szerepel."
+        }
+    ]
+}

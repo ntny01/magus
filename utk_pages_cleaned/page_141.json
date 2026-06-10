@@ -1,0 +1,176 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": true,
+    "section_title": "Pusztakezes harc (II – Erő, Ügyesség, Állóképesség)",
+    "content_blocks": [
+        {
+            "type": "rule",
+            "text": "3. fok A pajzs ezen a szinten már a fegyverforgató oldaláról is védelmet viselhet, illetve a fegyvernélküli harcértékeivel támadhat is vele, bár ekkor elveszíti a pajzs adta VÉ-t a teljes körre. A manővert a kör elején kell bejelenteni és a karakter bármelyik harci cselekedetének ideje alatt bónusz támadásként végrehajthatja a fegyvertelen támadó értékével. Ha karakter nem rendelkezik külön fegyverrel, vagy csak pajzzsal kíván támadni, úgy a közelharc egykezes fegyver időbeli megszorításai vonatkoznak rá. A pajzs sebzése 1k6+Erőbónusz. A pajzs MGT-je 1 ponttal csökken.",
+            "title": "Pajzsforgatás 3. fok",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "4. fok Ezen a szinten pajzs MGT-je 2 ponttal csökken. Ha a pajzzsal sikeres támadás hajt végre, megpróbálhatja fellökni ellenfelét. Ilyenkor mind a két ellenfele dob, s ha a karakter nagyobb sikert ér el mint ellenfele, a földre döntés sikeres. Amennyiben rendje oktat különleges támadásokat, azok is ezen a szinten válnak számára elérhetővé.",
+            "title": "Pajzsforgatás 4. fok",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "5. fok A pajzs MGT-je immár 3 ponttal csökken, valamint ha támadni kíván a pajzzsal, nem veszíti el annak Védő értékét.",
+            "title": "Pajzsforgatás 5. fok",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "A képzettség magában foglalja a puszta kézzel folytatott harc minden fogását. Alacsonyabb szinten egyaránt tartalmazza a bakkéz leszorítás, végtagnyomorító fogásait éppúgy, mint az öklözés és a rúgások alapvető elemeit. Azonban a képzettség hivatásos szintjétől, 3. foktól a karakternek választania kell, hogy a birkózás, vagy az ökölharc (amely magába foglalhat rúgásokat is, ha karakter mesterei ilyen jellegű harci technikákat tanítanak) képességét fejleszti e tovább. Ezt fel kell tüntetnie karakterlapján is, mondjuk pl.: Ökölharc 3. fok. Természetesen arra is van lehetőség, hogy az adott személy mindkét stílusban jártasságot szerezzen; ekkor az adott képzettségszint eléréséhez szükséges Kp mennyiség kétszeresét kell kifizetnie. (Tehát a 3. fokot már kétszer kell felvenni, ha mindkét stílusban járatos akar lenni!)",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "Itt jegyzendő meg, hogy a birkózó karakter minden, nem a birkózás célpontjául kiválasztott ellenfelével szemben a Harc helyzethez kötve módosítókat szenved el. Természetesen birkózó ellenfelével szemben ezen hátrány nem sújtja.",
+            "title": "Birkózás hátrányai",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "Ha a karakter nem bír a képzettséggel, akkor azon összecsapásokban, ahol fegyvertelenül vesz részt, sújtják a Képzetlen fegyverforgatásból eredő módosítók. (Lásd a Harcrendszer c. fejezetben a 174. oldalt).",
+            "title": "Képzetlen fegyvertelen harc",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "1. fok A karakter képes egy gyors gánccsal, dobással földre vinni ellenfelét egy sikeres fegyver nélküli támadódobással, melyet a Pusztakezes harc szabályai szerint kell kiviteleznie. A karakter képes ökölcsapásaival 1k3 Sp sebet okozni ellenfelének.",
+            "title": "Pusztakezes harc 1. fok",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "2. fok A képzettség ezen szintjén a birkózó, öklöző már képes komoly sérüléseket okozni ellenfelének, fogásainak, ízületromboló csavarásainak, csapásainak sebzése 1k6 Sp.",
+            "title": "Pusztakezes harc 2. fok",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "3. fok A karakter hivatásos birkózó, megkapja a hivatásos fegyverforgatásból jelentkező KÉ: +2, TÉ: +5, VÉ: +5 módosítót. A birkózás alkalmazásával pedig képes egy lefegyverző támadás végrehajtására egy sikeres -50 TÉ-vel végrehajtott támadás esetén.",
+            "title": "Pusztakezes harc 3. fok (Birkózó)",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "Sikeres támadás, illetve sikeres Erő tulajdonság ellenpróba esetén képes részlegesen lebénítani az ellenfelét. A sikeres találatkor a kidobott sebzésnek megfelelő értékkel (túlütés esetén duplázódik) csökken az ellenfél VÉ-je a következő birkózófogással szemben, ekkor viszont nem sérül a célpont. Ezen támadásait a kör elején be kell jelentenie.",
+            "title": "Pusztakezes harc 3. fok (Birkózó - Bénítás)",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "A karakter hivatásos öklöző, megkapja a hivatásos fegyverforgatásból jelentkező KÉ: +2, TÉ: +5, VÉ: +5 módosítót.",
+            "title": "Pusztakezes harc 3. fok (Öklöző)",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "A karakter ezen a szinten már az eggyel magasabb méretkategóriába tartozó fegyverekkel szemben is alkalmazhatja a képzettség nyújtotta bónuszait, immáron nem csak fegyvernélküli harcértékével részt a küzdelemben.",
+            "title": "Pusztakezes harc 3. fok (Méretkategória)",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "4. fok A karakter mesteri birkózó vagy ökölharcos, megkapja a mester fokú fegyverhasználat bónuszait KÉ: +5, TÉ: +10, VÉ: +10. (A bónuszok nem adódnak össze a 3. fok-nál szereplőkkel).",
+            "title": "Pusztakezes harc 4. fok (Mesteri)",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "Birkózóként sikeres támadás, illetve sikeres Erő tulajdonság ellenpróba esetén képes részlegesen lebénítani az ellenfelét. A sikeres találatkor a kidobott sebzés (túlütés esetén duplázódik) kétszeresének megfelelő értékkel csökken az ellenfél VÉ-je a következő birkózófogással szemben, ekkor viszont nem sérül a célpont. Emellett képes egy lefegyverző támadás végrehajtására -30 TÉ-vel. Ezen támadásait a kör elején be kell jelentenie.",
+            "title": "Pusztakezes harc 4. fok (Birkózó - Bénítás és lefegyverzés)",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "Öklözőként könnyedén képes kiütni ellenfeleit, minden fejre mért célzott támadása esetén az okozott sebzés a leütésre nézve kétszeresének számít. (A célpont csak az eredeti sebzést szenvedi el.) Ezt a támadását a kör elején be kell jelentenie.",
+            "title": "Pusztakezes harc 4. fok (Öklöző - Kiütés)",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "A karakter ezen a szinten már a kettővel magasabb méretkategóriába tartozó fegyverekkel szemben is alkalmazhatja a képzettség nyújtotta bónuszait.",
+            "title": "Pusztakezes harc 4. fok (Méretkategória)",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "5. fok A karakter immáron hihetetlen képességekkel megáldott birkózó, sikeres találat esetén képes bénító fogásba vinni ellenfelét. Találatkor, sikeres Erő ellenpróba esetén a kidobott sebzés (túlütés esetén duplázódik) háromszorosának megfelelő értékkel csökken az ellenfél VÉ-je a következő birkózófogással szemben, ekkor viszont nem sérül a célpont. A lefegyverző támadást ekkor már csak -10 TÉ levonással hajtja végre. Ezen támadásait a kör elején be kell jelentenie.",
+            "title": "Pusztakezes harc 5. fok (Birkózó - Bénítás és lefegyverzés)",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "Öklözőként könnyedén képes kiütni ellenfeleit, minden fejre mért célzott támadása esetén az okozott sebzés a leütésre nézve háromszorosának számít. (A célpont csak az eredeti sebzést szenvedi el.) Ezt a támadását a kör elején be kell jelentenie.",
+            "title": "Pusztakezes harc 5. fok (Öklöző - Kiütés)",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "A karakterek ökle vagy fogásai ezen a szinten már egyaránt 1k10 Sp-t sebeznek.",
+            "title": "Pusztakezes harc 5. fok (Sebzés)",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "A karakter ezen a szinten már a hárommal magasabb méretkategóriába tartozó fegyverekkel szemben is alkalmazhatja a képzettség nyújtotta bónuszait.",
+            "title": "Pusztakezes harc 5. fok (Méretkategória)",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "Pusztítás (III – Erő)",
+            "title": "Pusztítás (III – Erő)",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "A harctéri hatékonyság, a halálosabbnál halálosabb sebek osztásának tudománya. Csak humanoidok ellen (vagy a megfelelő fajra felvett Élettan képzettség ismerete esetén más fajokra is) alkalmazható. Csakis 3-as, vagy nagyobb méretkategóriájú fegyverekre vehető fel. Az egyéb kategória tagjaival, illetve hajtó és célzó fegyverekre nem alkalmazható, fegyvercsaládonként kell felvenni.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "A képzettség egyedi, a szokványostól eltérő harcmodort követel meg alkalmazójától, így nem használható egyszerre az Orvtámadás képzettséggel.",
+            "title": "Pusztítás - Képzettség interakció",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "1. fok A karakter még csak sejti a képzettségben rejlő lehetőségeket, sebzéséhez túlütés esetén +1 Ép járul.",
+            "title": "Pusztítás 1. fok",
+            "headers": [],
+            "rows": []
+        }
+    ]
+}

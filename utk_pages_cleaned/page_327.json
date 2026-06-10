@@ -1,0 +1,26 @@
+{
+    "is_new_chapter": true,
+    "chapter_title": "Betegségek és Rontások",
+    "is_new_section": true,
+    "section_title": "Álomkór",
+    "content_blocks": [
+        {
+            "type": "rule",
+            "title": "Álomkór",
+            "headers": [
+                "Mana pont",
+                "Lappangás ideje"
+            ],
+            "rows": [
+                [
+                    "8",
+                    "Közepes lefolyású"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A fertőzött áldozat egyre többet fog aludni, az aktív cselekvésre egyre kevesebb ideje marad. Először napi 8, majd a betegség súlyossági szintjével megegyező órával több alvásra lesz szüksége a pihenéshez. Ha erre nincs módja, minden egyes hiányzó óra után 5-tel csökken KÉ-je, TÉ-je, VÉ-je, CÉ-je és százalékos jártasságai (ha tehát 11 órát kellett volna aludnia, de csak hetet aludt, a következő nap -20-as módosítóval kénytelen harcolni)."
+        }
+    ]
+}

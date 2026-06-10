@@ -1,0 +1,144 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": false,
+    "section_title": "",
+    "content_blocks": [
+        {
+            "type": "paragraph",
+            "text": "képpen felfedi az illúziót. Fontos, hogy az illúzió követhesse a bárd mozgását, így hihető maradjon, ezért a felvett alaknak egyetlen fejjel és legfeljebb négy végtaggal kell rendelkeznie. Az illúzióra így nem kell folyamatosan koncentrálnia, hiszen a kép saját mozgásmintát követhet."
+        },
+        {
+            "type": "paragraph",
+            "text": "Amennyiben a felvett lény alakja a fent leírtaknak nem felel meg, az illúzió könnyen felfedezhető. A bárd a lény semmiféle tulajdonságát nem kapja meg, az átváltozás csak fényjátéknak lesz, semmi egyéb. Az illúzió annál hihetőbb, minél közelebb áll az utánzott lény az emberhez, s minél többször vette fel az adott alakot a bárd a korábbiakban – hiszen utánoznia kell a lény jellegzetes mozgásformáit (kutya esetében például négykézlábra kell ereszkednie stb.)."
+        },
+        {
+            "type": "rule",
+            "title": "Aura",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Aura",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Aura",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Búvhárc",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Búvhárc",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Búvhárc",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Délibáb",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Délibáb",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Fantom",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Fantom",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Fantom",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Fantomsereg",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Fantomsereg",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Félelmetes fegyver",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Félelmetes fegyver",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Félelmetes fegyver",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        }
+    ]
+}

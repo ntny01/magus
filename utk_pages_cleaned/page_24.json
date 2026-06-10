@@ -1,0 +1,24 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": null,
+    "is_new_section": false,
+    "section_title": null,
+    "content_blocks": [
+        {
+            "type": "paragraph",
+            "text": "megkeresedett gyilkosokat is. Hazudni hamar megtanultak, ám a barátság szentségét még a legelvetemültebbek sem gyalázzák meg."
+        },
+        {
+            "type": "rule",
+            "title": "Különleges képességeik",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "title": "Udvari ork",
+            "headers": [],
+            "rows": []
+        }
+    ]
+}

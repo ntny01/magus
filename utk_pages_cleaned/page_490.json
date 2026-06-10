@@ -1,0 +1,108 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": false,
+    "section_title": "",
+    "content_blocks": [
+        {
+            "type": "table",
+            "headers": [
+                "Tulajdonság",
+                "Érték"
+            ],
+            "rows": [
+                [
+                    "Intelligencia",
+                    "kimagasló"
+                ],
+                [
+                    "Max. MP",
+                    "100*"
+                ],
+                [
+                    "Jellem",
+                    "Káosz, Halál"
+                ],
+                [
+                    "Tapasztalati pont",
+                    "50-300"
+                ],
+                [
+                    "Necrografiai osztály",
+                    "VII. életerővel táplálkozó szellem"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "*a táblázatban szereplő adatok csak példaértékűek, függenek a Lesath életében űzött foglalkozásától"
+        },
+        {
+            "type": "paragraph",
+            "text": "Minden élőholtak és kísértetek közül a Lesath a leghatalmasabb. Az válik Lesath-tá halála után, aki életében gonosz, sötét mágiát űzött – boszorkánymesterek, fekete mágusok. A Lesath életében – féktelen hatalomvágyától hajtva, szándékosan vagy csak véletlenül – az istenek hatalmát kísértette. A természet törvénye azonban kimondja, hogy hasonló nem lehet az istenekhez hasonlóan, ezért a Lesath az életével fizetett arcátlanságáért. A játék nyelvére átültetve: a Lesath olyan gonosz varázshasználó, aki magas Tapasztalati Szintre jutott el, és egy új, minden eddiginél hatalmasabb és gonoszabb varázslatot akart létrehozni – ám belebukott. Regélnek olyan boszorkánymesterekről is, akik ismerik az Átváltozás formuláját és szántszándékkal vetik magukat alá a rítusnak, hogy immáron az Anyagi Világ és az élet kötelékeitől szabadon gyakorolhassák veszedelmes praktikáikat."
+        },
+        {
+            "type": "paragraph",
+            "text": "Mindezekből kitetszhet: a Lesath hatalma abban rejlik, hogy halála után megőrizte mágikus képességeit, sőt, akár tovább is fejlesztette azokat."
+        },
+        {
+            "type": "paragraph",
+            "text": "Anyagi porhüvelye elporladt, a többi kísértethez hasonlóan teste csak légies anyagokból épül fel – ám a Lesath, a hozzá hasonlók közül egyetlenként, képes anyagi testet ölteni a puszta akaratával. Ez a test erős mágiát sugároz, soha nem lehet tárgya a Természetes Anyag Mágiájának, és soha nem tartalmazhatja az Élet princípiumát. A test segítségével a Lesath képes fizikai kapcsolatba lépni az anyagi világgal – azaz varázsolni vagy fegyvert használni. Ám ha anyagi testet ölt is, sebet csak mágikus fegyverek ejthetnek rajta."
+        },
+        {
+            "type": "paragraph",
+            "text": "A Lesath létezésének egyetlen célja őrült hatalomvágyának kielégítése, az uralkodás minden és mindenki felett."
+        },
+        {
+            "type": "rule",
+            "title": "Lesath Anyagi Test",
+            "headers": [
+                "Tulajdonság",
+                "Érték"
+            ],
+            "rows": [
+                [
+                    "Ép",
+                    "A táblázatban jelölt érték"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "Ha a Lesath anyagi testet ölt, vonatkozik rá a fent jelölt Ép-érték. Ez az érték azonban csak az anyagi test jellemzi: ha a pontok elfogynak, az anyagi test szertefoszlik, és a Lesath egy teljes napig nem képes újat összeállítani, minek következtében nem képes fizikai kapcsolatba lépni az Anyagi Síkkal. Ez idő alatt – magától értetődően – nem használhat fegyvert, nem használhat Anyagi mágiát sem. A Lesath valódi, légies teste csak akkor szenved sérülést, ha Ép-t sebeznek rajta."
+        },
+        {
+            "type": "section_title",
+            "text": "Egyéb Bestiák"
+        },
+        {
+            "type": "table",
+            "headers": [
+                "Tulajdonság",
+                "Érték"
+            ],
+            "rows": [
+                [
+                    "Elementálok",
+                    ""
+                ],
+                [
+                    "Előfordulás",
+                    "Nagyon ritka"
+                ],
+                [
+                    "Megjelenők száma",
+                    "1"
+                ],
+                [
+                    "Termet",
+                    "Változó"
+                ],
+                [
+                    "Méretkategória",
+                    "Változó"
+                ]
+            ]
+        }
+    ]
+}

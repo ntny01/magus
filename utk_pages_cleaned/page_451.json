@@ -1,0 +1,44 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": true,
+    "section_title": "Viadomó",
+    "content_blocks": [
+        {
+            "type": "paragraph",
+            "text": "pillér ível át, ennek tetejére építették a várat. Természetesen Viadomo azóta is terjeszkedik, épületei messze elnyúlnak a hegyek ormai felé, földalatti folyosói szeszélyesen kanyarognak a kanyon falában. A vár tervezői elterelték a közeli patakot, vizét az erőd hatalmas tárolómedencéiben gyűjtötték össze. Egy esetleges támadás esetén a gátak felnyithatók, s a roppant víztömeg az ellenséges sereg nyakába zúdulhat. Az ár minden bizonnyal a hegyek lábáig ragadná az omlókat."
+        },
+        {
+            "type": "paragraph",
+            "text": "Viadomó eredetileg a Három Pajzs Szövetség kiegészítésére, mintegy Negyedik Pajzsnak építették, ám az erőd az évszázadok során messze túlnőtt a neki szánt szerepen. Mint az Oroszlán Szíve, a lovagrend világméretű hálózatának központja, nem kényszerülhetett másodlagos szerepre az Államközösségen belül. Saját politikai érdekei voltak – olykor Pyarronnal ellentétesek. Ezért a Papi Szék rövidesen önállósággal ruházta fel, és teljes jogú tagként felvette soraiba."
+        },
+        {
+            "type": "paragraph",
+            "text": "A Dúlás alatt Viadomó keményen ellenállt. Égre törő falainak bevételével többször megpróbálkoztak mind a nomádok, mind az ork csapatok, még a külső-kránoi lovagok erre vetődő egységei is – mindhiába. Viadomó maradt, ami volt: bevehetetlen."
+        },
+        {
+            "type": "paragraph",
+            "text": "Az Ó-Pyarron pusztulása és Új-Pyarron felépülte közti években Viadomó adott otthont az Államközösséget irányító Dreina-papok hadának, s mellettük sok ezer menekültnek. Biztonságot jelentő falai mögül készítették elő Új-Pyarron felépítését is."
+        },
+        {
+            "type": "paragraph",
+            "text": "A főhatalmat az Oroszlánszív Lovagrend nagymestere gyakorolja, az alacsonyabb rangú lovagok előtt a Terriádok – Megbízottak – képviselik akaratát."
+        },
+        {
+            "type": "paragraph",
+            "text": "Viadomó hivatalos nyelve a pyarroni; lakossága zömmel Dreina-paplovagokból, és lovagokból, papokból s persze családos katonákból áll."
+        },
+        {
+            "type": "paragraph",
+            "text": "A lovagok a várban fehér ujjast és szűk, bíbor pantallót viselnek, a hűvös ellen egyszerűen posztóvértjüket öltik magukra. Ünnepélyes alkalmakkor mindig teljesvagy félvértezetben jelennek meg."
+        },
+        {
+            "type": "paragraph",
+            "text": "Az árak mérsékeltek – a nyitott Kapu itt is érezteti hatását."
+        },
+        {
+            "type": "paragraph",
+            "text": "Viadomóban Dreina-paplovagnak, vagy a rendhez tartozó harcos lovagnak tanulhat az ember. A közbiztonság tökéletes, a hitéletet a pyarroni vallás selmovita irányzata uralja."
+        }
+    ]
+}

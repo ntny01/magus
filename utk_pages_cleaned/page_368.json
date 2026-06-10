@@ -1,0 +1,197 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": true,
+    "section_title": "Dezintegráció (Megsemmisítés)",
+    "content_blocks": [
+        {
+            "type": "rule",
+            "title": "Dezintegráció (Megsemmisítés)",
+            "headers": [
+                "Mana pont",
+                "Időtartam",
+                "Varázslás ideje"
+            ],
+            "rows": [
+                [
+                    "3/1 ynevi font vagy 1/2 ynevi font vagy 1 ynevi lat",
+                    "Végleges",
+                    "1 kör"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A varázslattal a Természeti Anyag Mágiájára vonatkozó törvények szerint az anyag egyszerűen semmivé tehető. Pontosabban energiává, ami rögvest szétoszlik a Manahálóban."
+        },
+        {
+            "type": "paragraph",
+            "text": "3 Mp-ért 1 ynevi font I. csoportba, vagy 1/2 ynevi font II. csoportba, vagy 1 ynevi lat III. csoportba tartozó anyag dezintegrálható."
+        },
+        {
+            "type": "paragraph",
+            "text": "A Dezintegráció élőlények esetében – ha a Személyes Aura védő hatása nem érvényesül – azonnali halállal jár."
+        },
+        {
+            "type": "rule",
+            "title": "Teremtés",
+            "headers": [
+                "Mana pont",
+                "Időtartam",
+                "Varázslás ideje"
+            ],
+            "rows": [
+                [
+                    "5/1 ynevi font vagy 1/2 ynevi font vagy 1 ynevi lat",
+                    "Végleges",
+                    "1 kör"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A varázsló a semmiből – pontosabban a Világegyetemet átitató manából – anyagot teremt. Hogy ez melyik anyagcsoportba tartozik, azt meghatározhatja, ettől függ, hogy 5 Mp-ért mennyi anyagot teremt."
+        },
+        {
+            "type": "paragraph",
+            "text": "5 Mp-ért 1 ynevi font I. csoportba, vagy 1/2 ynevi font II. csoportba, vagy 1 ynevi lat III. csoportba tartozó anyag teremthető."
+        },
+        {
+            "type": "paragraph",
+            "text": "A teremtett anyagok nem keverednek egymással, hanem tisztán, valami formátlan rög, avagy tócsa alakjában jönnek létre. Ha ezekből a varázsló tárgyat, netán – az Élet princípiumától mentes – homunkuluszt kíván gyúrni, még az Átformázás varázslatot is használnia kell – az Átformázás hatása az esetben maradandó, s az alkotás befejeztével az adott tárgy nem minősül varázstárgynak és semmilyen mágiát nem sugároz. További megkötés, hogy a varázsló csak olyan, a fentieknek megfelelő anyagot képes teremteni, melynek összetételét ismeri (lásd Átalakítás!)."
+        },
+        {
+            "type": "rule",
+            "title": "Légiesség",
+            "headers": [
+                "Mana pont",
+                "Időtartam",
+                "Varázslás ideje"
+            ],
+            "rows": [
+                [
+                    "lásd a leírást!",
+                    "6 kör (1 perc)",
+                    "1 szegmens"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A légiesség a három közismert anyagi halmazállapoton túli további három hasonló állapot. Az ezen halmazállapotú dolgok képesek áthatolni akár a szilárd anyagokon is. A három légies halmazállapotot a Légiesség fokainak nevezik a varázslók."
+        },
+        {
+            "type": "paragraph",
+            "text": "1. fokú légies halmazállapotba csak az I. anyagcsoportba tartozó anyagok hozhatók, II., III. csoportba sorolhatóak nem. Az 1. fokon légies anyagok vagy lények képesek áthatolni a nemtelen anyagokon, míg fémeken, nemesfémeken vagy mágikus anyagokon nem."
+        },
+        {
+            "type": "paragraph",
+            "text": "2. fokra csak I. vagy II. csoportba tartozó anyagok hozhatók, és a III. csoportba tartozóak nem. A 2. fokon légies anyagok vagy lények akadálytalanul áthatolnak a nemtelen anyagokon és a fémeken, de a nemesfémeken és a mágikus anyagokon nem."
+        },
+        {
+            "type": "paragraph",
+            "text": "3. fokú légies halmazállapotba mind az I., mind a II. vagy III. csoportba tartozó anyagok kerülhetnek, mágikus anyagok azonban továbbra sem. A 3. fokon légies tárgyak vagy lények áthatolnak a nemtelen anyagokon, fémeken, nemesfémeken, ám a mágikus anyagokon nem."
+        },
+        {
+            "type": "paragraph",
+            "text": "Kimondhatjuk tehát, hogy mágikus anyagok nem tehetőek légiessé, és a légies tárgyaknak vagy lényeknek is útját állják. Ebből következik természetesen az is, hogy a mágikus támadások légies alakban is sebzik a varázslat alanyát."
+        },
+        {
+            "type": "paragraph",
+            "text": "Természetesen az élőlények a Légiességgel szemben is bírnak a Személyes Aura kisugározta védelemmel. Légies halmazállapotú lényre vagy tárgyra nem helyezhető Aurává formázott őselem, ha pedig már övezi, akkor azonnal lebomlik róla. Ez annyit tesz, hogy az Őselem teremtés mozaik megszűnik, még ha Időmágiát mondtak is rá. Mindez igaz Karddá formázás esetében is."
+        },
+        {
+            "type": "paragraph",
+            "text": "Az időtartam lejártával a légiessé tett tárgy vagy lény visszanyeri eredeti halmazállapotát."
+        },
+        {
+            "type": "paragraph",
+            "text": "Azt, hogy 1 Mp-ért milyen súlyú anyag vagy lény tehető 1 perc időtartamra légiessé, a következő táblázat mutatja meg:"
+        },
+        {
+            "type": "paragraph",
+            "text": "Légiesség fokai"
+        },
+        {
+            "type": "table",
+            "headers": [
+                "Anyagcsoport",
+                "1.",
+                "2.",
+                "3."
+            ],
+            "rows": [
+                [
+                    "nemtelen anyag",
+                    "6 ynevi font",
+                    "4 ynevi font",
+                    "2 ynevi font"
+                ],
+                [
+                    "fém",
+                    "—",
+                    "2 ynevi font",
+                    "1 ynevi font"
+                ],
+                [
+                    "nemesfém",
+                    "—",
+                    "—",
+                    "2 ynevi lat"
+                ]
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Láthatatlanság",
+            "headers": [
+                "Mana pont",
+                "Időtartam",
+                "Varázslás ideje"
+            ],
+            "rows": [
+                [
+                    "1/10 ynevi font vagy 5 ynevi font vagy 10 ynevi lat",
+                    "1 kör",
+                    "1 szegmens"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A varázslattal tárgyak vagy élőlények – egyszóval az anyagok – tehetőek láthatatlanná. Ami természetesen továbbra sem vonatkozik a mágikus anyagokra – azaz: mágikus anyag nem lehet láthatatlan!"
+        },
+        {
+            "type": "paragraph",
+            "text": "1 Mp-ért 10 ynevi font I. csoportba, 5 ynevi font II. csoportba, vagy 10 ynevi lat III. csoportba tartozó anyag tehető 1 körre láthatatlanná."
+        },
+        {
+            "type": "paragraph",
+            "text": "Ha a láthatatlanná tett tárgy vagy lény már láthatatlan, az erősítés 1 E. Ha dupla mennyiségű Mp-ot áldoz a varázsló a láthatatlanságra, akkor az 2 E lesz, tripla esetén 3 E, és így tovább."
+        },
+        {
+            "type": "paragraph",
+            "text": "A láthatatlanná tett dolgokat a csupán látással bíró szemlélő nem láthatja, még akkor sem, ha a pszi Érzékelésítés nevű diszciplínájához folyamodik, vagy Infra-, netán Ultralátással szemléli is a varázslat alanyát. A mágia észlelhetetlenné teszi a szem számára a Láthatatlanság célpontjának minden ilyennemű kisugárzását. Láthatatlanságot csak a pszi kiemelkedő tudásúak Láthatatlanság Észlelése nevű diszciplínájával, vagy mágiával lehet észlelni."
+        },
+        {
+            "type": "paragraph",
+            "text": "Az időtartam lejártával a láthatatlanná tett tárgy vagy lény ismét láthatóvá válik."
+        },
+        {
+            "type": "paragraph",
+            "text": "Asztrálmágia"
+        },
+        {
+            "type": "flavor_text",
+            "text": "„...Az Asztrálmágia segítségével a varázsló immár nem az anyagba fogant Testet, hanem magát a Lelket uralja. Indulatok, érzelmek felett rendelkezik – és nem lebecsülendő hatalom ez – hiszen ezrek és ezrek nem képesek legyőzni még saját, természetükből fakadó indulataikat sem, nemhogy a náluk mérhetetlenül nagyobb hatalmú varázsló által rájuk kényszerítetteket."
+        },
+        {
+            "type": "flavor_text",
+            "text": "Az Asztrálmágia az érzelmek oly fokú felerősítését jelenti, hogy azok elhatalmasodnak az elme, az intellektus – más néven a mentál – felett, lehetetlenné téve a józan mérlegelést. Ezáltal áldozatuk rabja lesz indulatainak, azok irányítják cselekedeteit..."
+        },
+        {
+            "type": "flavor_text",
+            "text": "...Nem vitatom én a Mentálmágia sokat hangoztatott felsőbbségét, pusztán azt vetem a tisztelt Tanács szemére,"
+        }
+    ]
+}

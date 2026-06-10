@@ -1,0 +1,76 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": null,
+    "is_new_section": false,
+    "section_title": null,
+    "content_blocks": [
+        {
+            "type": "paragraph",
+            "text": "A lovagi torna Egyes nagyuraknak, egyházfőknek, lovagrendeknek szokásuk alkalmanként összehívni a környék lovagjait, hogy fegyveres tusában mérjék össze erejüket. Az összecsapás bajtársias hangulatban folyik, a komolyabb sérüléseket a lehetőségekhez képest igyekeznek kerülni. Persze az olyan veszedelmes látványosságok, mint a kopjatörés vagy a gyalogos csapatmérkőzés, óhatatlanul előfordulhat egy-két súlyos vagy éppen halálos baleset. Amellett az is megtörténhet, hogy a baráti légkörben induló találkozó idővel elmérgesedik, különösen akkor, ha rivális családokat vagy rendeket is meghívtak. Az ilyesmi azonban egyáltalán nem csökkenti a rendezvény értékét, sőt – a túlélők utólag általában izgalmasabbnak és emlékezetesebbnek vélik a véresen komollyá fajuló tusakodásokat."
+        },
+        {
+            "type": "paragraph",
+            "text": "A fentiekben vázolt eseménysort hívjuk lovagi tornának. Bizonyos vonásaiban a gladiátorviadalokhoz hasonlít, ám a cél itt nem annyira a közönség szórakoztatása, inkább a vérpezsdítő fegyvergyakorlat, legalábbis ha hihetünk a lelkes rajongóknak. A soha be nem vallott, de mindenki számára nyilvánvaló igazság természetesen az, hogy az efféle látványosságok nagyszerű bizonyítási lehetőséget kínálnak a becsvágyó lovagoknak. Mindenki teljes erőbedobással igyekszik kitűnni a többiek közül. Egy tornagyőzelem nemcsak a lelátón ülő hölgyek szívét dobogtatja meg, hanem gyarapodást jelent hírnévben, dicsőségben és anyagiakban is; mellékesen pedig veszedelmes irigyeket és halálos ellenségeket lehet szerezni vele."
+        },
+        {
+            "type": "paragraph",
+            "text": "A tornákat jobbára különféle családi, rendi vagy állami ünnepnapok alkalmával hirdetik ki; esetleg jeles elhunytakról, híres történelmi évfordulókról emlékeznek meg így; néha még az is megesik, hogy semmiféle ürügyet nem keresnek, és egyedüli okként a versengés vágyát nevezik meg. Hetekig is elhúzódhat a legderekesebb bajnokok gyülekezője a viadal előre kijelölt színhelyén, amely általában tágas, füves rét egy vár vagy város szomszédságában. Itt verik föl tarka sátraikat, és – hacsak nem kaptak meghívást valamely környékbeli urasághoz – itt is hálnak a torna kezdetéig. Résztvételi szándékukat a sátor mellé tűzött kopjával jelzik, melynek végén címerdíszes lobogó leng."
+        },
+        {
+            "type": "paragraph",
+            "text": "A virágkorát élő lovagi kultúra százféléinél is több torna-szabályzatot ismer Yneven; a legelterjedtebbnek talán még a shadoni tornarend számít. Általában eszerint rendezik a legnagyobb viadalokat, ahová a világ minden tájáról érkeznek bajnokok. A shadoni tornarendnek három alapvető szabálya van."
+        },
+        {
+            "type": "rule",
+            "title": "Kikürtölés",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Kihívás",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Visszahívás",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A lovag az egyik legtöbb élvezetet és szórakozást nyújtó karakter, bár a csapatjátékába való beillesztése nem mindig zökkenőmentes. Ezzel szemben kiváló harcos, úri körökben is megállja a helyét, ráadásul nemesi rangja révén rengeteg kedvezményben részesül. Olyan játékosoknak ajánljuk, akik nem riadnak vissza a vezetői szereptől, adandó esetben szívesen elszegődnek jeles ügyek és eszmék bajnokául, mindenekelőtt pedig kedvelik a virtust és a hosszú, hősies küzdelmeket."
+        },
+        {
+            "type": "rule",
+            "title": "Harctérték",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Életerő és Fájdalomtűrés",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Képzettségek",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        }
+    ]
+}

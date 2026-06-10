@@ -1,0 +1,306 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": null,
+    "is_new_section": false,
+    "section_title": null,
+    "content_blocks": [
+        {
+            "type": "paragraph",
+            "text": "Egy átlagos első szintű tolvaj:"
+        },
+        {
+            "type": "table",
+            "headers": [
+                "Tulajdonság",
+                "Érték",
+                "Tulajdonság",
+                "Érték"
+            ],
+            "rows": [
+                [
+                    "Erő",
+                    "12",
+                    "Ép",
+                    "12"
+                ],
+                [
+                    "Gyorsaság",
+                    "14",
+                    "Fp",
+                    "31"
+                ],
+                [
+                    "Ügyesség",
+                    "15",
+                    "Vp",
+                    "14"
+                ],
+                [
+                    "Állóképesség",
+                    "13",
+                    "Mp",
+                    "—"
+                ],
+                [
+                    "Egészség",
+                    "12",
+                    "Kegy pont",
+                    "—"
+                ],
+                [
+                    "Karizma",
+                    "13",
+                    "MME",
+                    "18"
+                ],
+                [
+                    "Intelligencia",
+                    "14",
+                    "AME",
+                    "17"
+                ],
+                [
+                    "Akaraterő",
+                    "14",
+                    "",
+                    ""
+                ],
+                [
+                    "Asztrál",
+                    "13",
+                    "",
+                    ""
+                ],
+                [
+                    "Érzékelés",
+                    "15",
+                    "",
+                    ""
+                ]
+            ]
+        },
+        {
+            "type": "table",
+            "headers": [
+                "KAP",
+                "Érték"
+            ],
+            "rows": [
+                [
+                    "Iskola (Tolvaj)",
+                    "6 pont"
+                ],
+                [
+                    "Pszi Érzékenység",
+                    "1 pont"
+                ],
+                [
+                    "Sugallat",
+                    "1 pont"
+                ],
+                [
+                    "Manalátó",
+                    "2 pont"
+                ],
+                [
+                    "HM",
+                    "16 pont (8 HM)"
+                ],
+                [
+                    "Fp",
+                    "4 pont (4 Fp)"
+                ],
+                [
+                    "Kp",
+                    "20 pont (20 Kp)"
+                ]
+            ]
+        },
+        {
+            "type": "table",
+            "headers": [
+                "Fegyver",
+                "fvn*",
+                "rapír",
+                "könnyű nyílpuska"
+            ],
+            "rows": [
+                [
+                    "Időigény:",
+                    "3",
+                    "3",
+                    "3"
+                ],
+                [
+                    "KÉ:",
+                    "32",
+                    "41",
+                    "39"
+                ],
+                [
+                    "TÉ:",
+                    "42",
+                    "57",
+                    "—"
+                ],
+                [
+                    "VÉ:",
+                    "89",
+                    "107",
+                    "—"
+                ],
+                [
+                    "CÉ:",
+                    "34",
+                    "—",
+                    "44"
+                ],
+                [
+                    "Sebzés:",
+                    "1k6",
+                    "1k10",
+                    "1k6"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "* fegyver nélkül"
+        },
+        {
+            "type": "table",
+            "headers": [
+                "Képzettségek",
+                "Fok",
+                "Kp"
+            ],
+            "rows": [
+                [
+                    "Fegyverhasználat (rapír)",
+                    "3. fok",
+                    "5 Kp"
+                ],
+                [
+                    "Fegyverhasználat (könnyű nyílpuska)",
+                    "3. fok",
+                    "10 Kp"
+                ],
+                [
+                    "Csomózás",
+                    "1. fok",
+                    ""
+                ],
+                [
+                    "Helyismeret (szülőföld)",
+                    "3. fok",
+                    ""
+                ],
+                [
+                    "Kultúra (saját)",
+                    "3. fok",
+                    ""
+                ],
+                [
+                    "Nyelvismeret (anyanyelv)",
+                    "3. fok",
+                    ""
+                ],
+                [
+                    "Lélektan",
+                    "1. fok",
+                    ""
+                ],
+                [
+                    "Álcázás/álruha",
+                    "3. fok",
+                    "3 Kp"
+                ],
+                [
+                    "Értékbecslés",
+                    "3. fok",
+                    ""
+                ],
+                [
+                    "Orvtámadás",
+                    "1. fok",
+                    ""
+                ],
+                [
+                    "Jelbeszéd",
+                    "1. fok",
+                    ""
+                ],
+                [
+                    "Szabadulóművészet",
+                    "1. fok",
+                    ""
+                ],
+                [
+                    "Mechanika",
+                    "2. fok",
+                    ""
+                ],
+                [
+                    "Számtan/mértan",
+                    "2. fok",
+                    ""
+                ],
+                [
+                    "Pszi",
+                    "2. fok",
+                    "10 Kp"
+                ],
+                [
+                    "Rejtekkutatás",
+                    "+45%",
+                    ""
+                ],
+                [
+                    "Zárnyitás",
+                    "+45%",
+                    ""
+                ],
+                [
+                    "Zsebmetszés",
+                    "+25%",
+                    ""
+                ],
+                [
+                    "Lopódzás",
+                    "+50%",
+                    "1 Kp"
+                ],
+                [
+                    "Rejtőzés",
+                    "+50%",
+                    "1 Kp"
+                ],
+                [
+                    "Mászás",
+                    "+50%",
+                    "1 Kp"
+                ],
+                [
+                    "Esés",
+                    "+30%",
+                    ""
+                ],
+                [
+                    "Akrobatika",
+                    "+45%",
+                    ""
+                ],
+                [
+                    "Csapda keresés",
+                    "+40%",
+                    "1 Kp"
+                ],
+                [
+                    "Veszélyérzék",
+                    "+40%",
+                    "2 Kp"
+                ]
+            ]
+        }
+    ]
+}

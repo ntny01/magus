@@ -1,0 +1,52 @@
+{
+    "is_new_chapter": true,
+    "chapter_title": "A Teremtett Világ",
+    "is_new_section": false,
+    "section_title": "",
+    "content_blocks": [
+        {
+            "type": "flavor_text",
+            "text": "„Már a Creniomi Óidákban említették, hogy az Elsődleges Anyagi Síkok – ritka kivételektől eltekintve – gömb alakúak, és az univerzumok végtelen sokaságában hasonló pozíciókat foglalnak el. Az Őshaza bolygójának nevezi e matériaformát, használjuk hát a továbbiakban ezt az elnevezést mi is! A planéta, mely otthonunknak, Ynevnek ad otthont, más planétákkal együtt, a sorban negyedikként rója köreit aranyderűs napja körül. Születése után védtelenül, gazdátlanul úszott az idő tengerén, mígnem eljöttek a Nagyok, a csillagok teremtői, s szépségét látva Kristályszférák csodásan bonyolult együttesével vették körül. A bölcsek kilenc, különb-különb törvények szerint mozgó szférát különböztetnek meg. E szférák egymáshoz viszonyított helyzete szabja meg, mely napokat és planétákat láthatjuk halandó szemünkkel az égi ég boltozatján, s hogy mely égitestek terjeszthetik ki e világ lakóira éteri hatalmukat. A csillagok és planéták a külső sötétségben, a holdak a szférákon belül járják útjukat – nem tévedtek hát a poéták, kik isteni erők foglalatában tündöklő ékkövekként beszéltek róluk, és nem túloztak azok sem, kik a végítélet idejét a holdak lehullásának órájára teszik. Egynémely gondolkodó úgy véli, hogy a világ kilenc Korának elmúltával a szférák széthullanak ugyan, ám a halál ideje helyett az új életé kezdetét be – igazukról év tízezredek múltán lesz (ha lesz) módjuk meggyőződni azoknak, kik e földön utánunk jönnek. A szférák alatti világ összekovácsolása negyvennyolcezer mérföldnyi területének jó kétharmada szárazföld. Az Enravelli Tudástár bölcsei Keletiés Nyugati-óceánként említik a kontinensünket közrefogó vizeket; ezek méretéről úgy alkothatunk fogalmat, ha tudjuk, hogy még a kisebb, Keleti-óceán is huszonháromszorosa hatalmasabb, mint az egész flottákat elnyelő Quiron-tenger. Planétánk három kontinenssel, Anvariával, Calowynnel és Ynevvel, két roppant szigettel, Beriquellel és Larionnal, valamint kiterjedt szigetvilággal büszkélkedhet. Ami tanulmányunk voltaképpeni tárgyát, Ynevet illeti: kiterjedése már az ó-időkben partjaira vetődött kyreket is megdöbbentette. Kétszázezer négyszögmérföldes területével nemcsak egyes szárazulatok nagyságát múlja felül – óriásibb valamennyinél...” — Igrain Revali: Geoframia"
+        },
+        {
+            "type": "paragraph",
+            "text": "A fenti idézet az Ynevet elsőként leíró földrajzi munkából származik. Teljes szövegének közzétételével próbálkozni hősies, ám eleve reménytelen vállalkozás volna: olyan alapossággal és részletességgel taglal minden tárgykört, hogy tartalma százannyi kötetben sem férne el maradéktalanul. A most következő összefoglaló a kalandozók szempontjából elengedhetetlen információkra szorítkozik, melyek híján életük egy lyukas rézkasast is kevesebbet ér."
+        },
+        {
+            "type": "paragraph",
+            "text": "A kontinenst hagyományosan két tájegységre, Észak- és Dél-Ynevre szokás felosztani, e kettősség tükröződik majd az alábbiakban is. A két hatalmas területet a Sheral-hegység monumentális vonulata választja el, helyenként telivé vizsgálódásunkat itt, a Világ Tengelyénél megkezdenünk."
+        },
+        {
+            "type": "paragraph",
+            "text": "A Sheral legbölcsebb csúcsai jó húszezer lábnyira magasodnak a tengerek szintje fölé. Örökkön hó borítja; a bölcsek szerint olyan vékony, oly ritkás légréteg választja el a Mindenség Felsőbb Szféráitól, hogy éjjel-nappal a csillagok dermesztő fényében fürdik. Pusztító erővel fúj rá a nap is: nincs az a szívós teremtmény, mely szikláinak repedéseiben megél. Ember lába sosem érintette, de azt tartják, belátható róla a Teremtés művének egésze, az északfokon ködlő Beriquel partjaitól a Déli Jégmezők pereméig."
+        },
+        {
+            "type": "paragraph",
+            "text": "Jöjj hát, kalandozó, tekints körül ez egyszer úgy, ahogy csak istenek tehetik! Mert onnét, ahová a képzelet röpít, valóban minden látható. A Nagy Választó két oldalán alázúduló vízesések, az északnak és délnek rohanó hegyi folyók. A felszálló párán, permeten túl folyammá szelídülő csíkjaik, kanyarulataikban ékkövek csupán a hatalmas és büszke városok. A paránynak látszó beltengerek tükrén fehér vitorlák – kereskedelmi, hadi- és kalózhajóké – sokaságát űzik a változó szelek. Északon a növényzet zöldje, Délen a Tabu el-Ibara aranyló homoknyúlványai ötlenek szemedbe; a sivatag hullámzóan forró lehelete elhalványítja a Kráni Hegység bérceit, melyek gyűrűjébe temeti szívét az Yneven tanyát vert Ősgonosz."
+        },
+        {
+            "type": "paragraph",
+            "text": "Egy sólyom röptét kísérve északnak villan most tekinteted. Az Elátkozott Vidék sötétlő foltjain időzik, majd továbbhalad, végig a síkokon, seregek temetőin, csonthalmok fölé emelt dombokon, átfogja mindazt, ami hajdan egy nagyra hivatott, ám szerteszórt nép birodalma volt. A kontinenst kétfelől ölelő óceán habjain játékszerek a hajók: nem, vagy alig ismert földek felé, biztos révbe igyekeznek."
+        },
+        {
+            "type": "paragraph",
+            "text": "A szem megfárad, a sólyom a felhőkbe vág: lelkesen s borzongva állsz a Világ Tetején. A Szférák hideg fénye tűz reád megint – sugarai lejjebb, mind lejjebb vezérlik lépteidet. A Sheral kisebb-nagyobb csúcsain, fennsíkjain világitól elvonult mágusok, asztronómusok és szerzetesek rejtőznek; napjaik folyása lassú, akár a gleccserek vonulása; közel jutottak az éghez, a végső bölcsesség forrásához, de el nem érhetik. Színed őket, de mert egyelőre nincs dolgod velük, folytatod utadat, megy el, amerre a fény vezet. A roppant sziklaszoros nyugati lejtőin, a fenyveseken és lombhullató erdőségeken túl, a messze kéklő Dororai-tenger partján fekszik Erion, a Kalandozók Városa, melynek falai közt – ha erszényed engedi – mindenkor szívélyes fogadtatásra kész. Célhoz értél. Ynev köszönt."
+        },
+        {
+            "type": "paragraph",
+            "text": "Múltja kísér, üzen: ha álomra hajtod fejed, megelevenedni látod Képeit. A Rivál Apokrif dörzsölt olvasata szerint a Nagyok, akik Ynev Szféráit – s talán a mindenséget – teremtették, távozásuk előtt megszabták mind a kezdet, mind a vég pillanatát. Az első napkeltét kilenc sorsfordulóval választották el az utolsótól. Kilenc kor követi egymást, kilenc jóslat teljesül be, mire a halandók saját kezükbe vehetik sorsukat."
+        },
+        {
+            "type": "paragraph",
+            "text": "A világ ifjúságáról, a Nagyok távozása utáni Első Korról keveset tudunk. A bölcsek úgy tartják, a levegő sokkal ritkább volt akkortájt, a háborúkat a magasban vívták, a holtakat pedig az űrnek adták ahelyett, hogy a földbe temették volna. Ynev szoros kapcsolatban állt a Mindenség Felsőbb Szféráival, és bizonyos Kapuk révén más létsíkokkal is; ekkor érkeztek a kontinensre mindazon ősi népek, melyekre a ma embere tisztelettel vagy iszonnyal tekint."
+        },
+        {
+            "type": "paragraph",
+            "text": "A Másodkor a hagyomány szerint a „harcos béke” korszaka volt. A messziről idevetődött népek ekkor alakították ki saját befolyási övezeteiket a nap és a holdak alatt, szövetségek születtek és enyésztek el, mint homokban a zápor nyoma."
+        },
+        {
+            "type": "paragraph",
+            "text": "A Harmadkor vad háborúságai a felismerhetetlenségig megváltoztatták a kontinens arculatát. Pusztító csatákban mérték össze erejüket az elfek, az amundok és a dzsenned; az aquirok a föld, a yamm-haikanok a tenger mélyére rejtőztek ellenfeleik haragja elől. Mondják, ekkor jött létre az Ynevért küzdő halhatatlanok egyezsége, mely valamennyiük számára megtiltotta hatalmuk közvetlen alkalmazását az Elsődleges Anyagi Síkon. Az általánosan elfogadott nézet szerint a Harmadkor istenei már csak nevükben és megjelenési formájukban különböztek a maiaktól, lényegüket tekintve azonosak voltak velük."
+        }
+    ]
+}

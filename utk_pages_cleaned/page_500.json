@@ -1,0 +1,112 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": null,
+    "is_new_section": false,
+    "section_title": "",
+    "content_blocks": [
+        {
+            "type": "paragraph",
+            "text": "Sebezhetetlenség itala\nKészítheti: Pap, boszorkány, boszorkánymester\nMp: Lásd a leírásban!\nIdőtartam: 1k6-szor 10 perc\nÁra: Lásd a leírásban"
+        },
+        {
+            "type": "paragraph",
+            "text": "Aki ilyen italt iszik, ellenállóvá válik valamely, előre meghatározott támadási formával szemben. Az ital hatása mindig csak a személyre hat, annak felszerelésére soha. Különböző italok különböző támadásoktól védenek:"
+        },
+        {
+            "type": "table",
+            "headers": [
+                "Védelem",
+                "E",
+                "Mp",
+                "Ár"
+            ],
+            "rows": [
+                ["Őselemek és tűz", "10", "80", "2 a"],
+                ["Természetes mágia", "10", "80", "3 a"],
+                ["Asztrál", "10", "80", "1 a"],
+                ["Mentál", "10", "80", "2 a"],
+                ["Savak", "10", "80", "2 a"],
+                ["Méreg", "5", "100", "2 a"],
+                ["Sebezhetetlenség", "10 (SFÉ)*", "120", "4 a"],
+                ["Védelem (légieség II)", "1", "120", "4 a"]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "* A sebezhetetlenséget biztosító ital az időtartama alatt a karaktert érő minden támadásra 10 SFÉ-t ad."
+        },
+        {
+            "type": "paragraph",
+            "text": "Repülés itala\nKészítheti: Boszorkány, boszorkánymester\nMp: 100\nIdőtartam: 1k6-szor 10 perc\nÁra: 5 arany"
+        },
+        {
+            "type": "paragraph",
+            "text": "Aki e különös italt felhajtja, parancsolhat maga körül (20 ynevi láb sugarú kör) az elemi erőknek. Ezek felrepíthetik őt – de bárki mást is – a levegőbe. Egyszerre azonban csak egyetlen, 120 ynevi fontot meg nem haladó súlyú személy vagy tárgy repíthető. A hatás kiterjed az emelt személy felszerelési tárgyaira is, amennyiben azok a testtel együtt nem érik el a 120 fontos súlyt."
+        },
+        {
+            "type": "paragraph",
+            "text": "A varázsital főzésekor a vízbe kell helyezni egy darabka nefritet."
+        },
+        {
+            "type": "paragraph",
+            "text": "Láthatatlanság itala\nKészítheti: Boszorkány, boszorkánymester\nMp: 100\nIdőtartam: 1k6-szor 10 perc\nÁra: 3 arany"
+        },
+        {
+            "type": "paragraph",
+            "text": "Aki az italt megissza, láthatatlanná válik; hátránya, hogy a felszerelési tárgyakra nem hat. A láthatatlanság erőssége 5 É."
+        },
+        {
+            "type": "paragraph",
+            "text": "Átváltozás itala\nKészítheti: Boszorkány, boszorkánymester\nMp: 120 (240)\nIdőtartam: 1k6-szor 10 perc\nÁra: 10 (28) arany"
+        },
+        {
+            "type": "paragraph",
+            "text": "Aki az italt megissza, átalakul valamilyen élőlénnyé, s míg az ital hatása tart (vagy akár örökre) úgy is marad. A változás lehet számára előnyös, de hátrányos is. Az, hogy az áldozat mivé alakuljon át, minden esetben a készítő határozza meg az ital elkészítésekor. Egyébként az ital hatása megegyezik az azonos nevű varázslói mozaik hatásával."
+        },
+        {
+            "type": "paragraph",
+            "text": "A maradandó hatású ital készítése 180 Mp-ba kerül és a szokásos növényi összetevőkön kívül egy legalább 10 karátos varázstiszta gyémántot is igényel, mely feloldódik a varázsitalban."
+        },
+        {
+            "type": "paragraph",
+            "text": "Hatalom itala"
+        },
+        {
+            "type": "paragraph",
+            "text": "A Hatalom itala különleges, nélkülözhetetlen főzet, készítésének formulája az egyik első ismeret, amit a boszorkányoknak és boszorkánymestereknek mestereik megtanítanak. Az említett kétféle rend tagjai nem lehetnek meg a Hatalom itala nélkül, hiszen ebből nyerik a varázslatok létrehozásához szükséges mágikus energiát (Mana pontot). A különleges ital könnyen elkészíthető, néhány ritka növény, némi víz, és egy forraló edénye szükségeseltetik hozzá. A formula transzot és hosszas ráolvasást ír még elő, melynek során a készítő mindössze egyetlen Mana pontot használ el. Cserébe annyi Hatalom Italt készíthet, amennyi tíz alkalomra elegendő. A formula teljes elvégzése 3 órát vesz igénybe. A nélkülözhetetlen füvek 3. fokú Herbalizmus birtokában bármelyik erdőben begyűjthetőek, egyébként vásárolni kell őket (1 főzetre való 1 aranyba kerül)."
+        },
+        {
+            "type": "paragraph",
+            "text": "A boszorkány és boszorkánymester, ha felhajt egy adagot a Hatalom italából, telítődik mágikus energiával. Elméje feltöltődik Mana ponttal, ismét annyi áll rendelkezésére a varázsláshoz, amennyi az Energiabefogadó Képessége. Az ital használatának egyetlen hátránya, hogy erősen igénybe veszi a szervezetet. Egy adag felhajtása a boszorkány Egészségét 3, a boszorkánymesterét 4 ponttal csökkenti. (Ne feledjük, nullára érkezve az illető meghal!) Az ital által felemésztett Egészség pontok csak kiadós alvás után térnek vissza. Ha a karakternek nincs módja teljesen kipihenni magát, jóval kevesebb Egészség pontot kap vissza. Négy óránál rövidebb alvás alatt egy sem, attól kezdve óránként 1 pont tér vissza; a teljes kipihentséghez a karakter állapotától és a helyzettől függően 8-14 óra szükségeseltetik."
+        },
+        {
+            "type": "paragraph",
+            "text": "Mérgektől óvó amulett\nKészítheti: Boszorkány, boszorkánymester\nMp: Lásd a leírásban!\nÁra: 2 ezüst"
+        },
+        {
+            "type": "paragraph",
+            "text": "A parányi ékszer ellenállóvá teszi viselőjét a mérgekkel szemben. Formáját tekintve nyakláncon hordható, rúnákkal telerótt arany lapocska. Attól függően, hogy mekkora hatalmú boszorkánymester készíti, más és más Erősségű lehet."
+        },
+        {
+            "type": "table",
+            "headers": [
+                "Mp",
+                "Méregellenállás"
+            ],
+            "rows": [
+                ["40", "+1"],
+                ["60", "+2"],
+                ["90", "+3"],
+                ["120", "+4"]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "Észrevétlenség amulettje\nKészítheti: Boszorkánymester\nMp: 100\nÁra: 4 ezüst"
+        },
+        {
+            "type": "paragraph",
+            "text": "Aki ezt az amulettet viseli, senkinek nem szúr szemet, minden tekintet elsiklik felette. Persze aki kimondottan őt figyeli (mint például egy őr), az látja. Az amulett további tulajdonsága, hogy a Lopódzás és a Rejtőzés képzettséghez +20%-ot ad, valamint, hogy ha láthatatlanná tett karakter viseli, őt semmilyen módon nem lehet érzékelni – leszámítva a kereső mágiákat, illetve az ez irányú pszi alkalmazásokat. (Ez az amulett, ellentétben a többi mágikus tárggyal, láthatatlanná tehető.)"
+        }
+    ]
+}

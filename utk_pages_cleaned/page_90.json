@@ -1,0 +1,135 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": true,
+    "section_title": "Az Arel-pap különleges előnyei és hátrányai a papnál leírtakon kívül",
+    "content_blocks": [
+        {
+            "type": "paragraph",
+            "text": "valamifajta misztikus halálösztönt fejlesztettek ki magukban, talán a folyamatos veszteség, az elmúlás fenyegető közelsége miatt. Mások inkább attól tartanak, hogy Krán árnyéka túlságosan mély nyomot hagyott a lelkükön. Mindenesetre tény, hogy a Dúlas éveit követően szerte a Délvidéken láthatóan nagyobb teret hódított magának az irányzat a másik kettő ellenében.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "Az irányzat szférái a Természet és a Halál; szent jelképei a sólyomhold és a sólyomkarom.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "A Sólyomasszony szolgái – ellentétben az ynevi papok zömével – nem a gondolatok, hanem a tettek emberei. Meghökkentően keveset törődnek elméjük pallérozásával: döntő többségükben írástudatlanok. Még a tulajdon vallásukat sem tanulmányozzák mélyenszántóan, egyszerűen csak hagyják, hogy a szívük vezesse őket. Kiváltképp jeleskednek viszont a gyakorlati tudnivalókban. Több harci, alvilági és túlélő képzettségből válogathatnak, mint bármely más istenség papjai. Sokoldalúságukat némileg ellensúlyozza, hogy csak szabad ég alatt érzik magukat elemükben, a mesterséges környezet rendkívül nyomasztóan hat rájuk. Ráadásul elég kevés Arel-pap járatos a mentalizmus tudományában, féktelen-csapongó gondolatviláguk nehezen fogadja be a Pszi diszciplínákat.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "Istennőjük néhány egyedi fohászt is kínál nekik, melyek – akárcsak maga Arel – szeszélyesek és változékonyak: hol a hiúság legyezgetésére jók csupán, hol ravasz fondorlat munkál bennük, hol pedig brutális erővel sújtanak le, mint a vihar fellegből alázúduló villámcsapás.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "I. Amíg nyílt égbolt, sátorvászon vagy zöldellő lombtakaró feszül a fejük fölött, addig az Arel-papok ritkán vesztik el a hidegvérüket. Mihelyt azonban zárt térbe vagy mesterséges környezetbe kerülnek, rögvest erőt vesz rajtuk a szorongás. Úgy vélik, ha elszigetelik őket az eleven természettől, megszakad kapcsolatuk az istennőjükkel is. Ez aligha lehet igaz, hisz isteni kegyük jottányit sem csökken; zavaruk és nyugtalanságuk viszont tényleg szembeszökő. Harcértékeikre nincs különösebb befolyással; sőt, olykor még fel is tüzeli őket, hogy fegyverrel vágják ki magukat szorult helyzetükből. Ámde ha két-három napnál több időt töltenek zárt helyen, míg vissza nem jutnak a szabad levegőre, addig a szörnyű idegesség miatt minden képzettségüket egy fokkal, illetve 20%-kal alacsonyabb szinten képesek alkalmazni. Ezért irtóznak annyira a városoktól, és ezért számít embertelen kínzásnak, ha földalatti tömlöcbe zárják őket. Na persze ez nem azt jelenti, hogy egy Arel-pap ne hajtaná nyugodt álomra a fejét akármilyen fogadóban, vagy messziről kerülné a lakott településeket, csupán a nagyvárosok kórengetegétől ódzkodnak. Városokba minden további nélkül bemennek, csak napról napra érzik a fokozódó késztetést, hogy ismét nyílt eget és szabad láthatárt tudjanak maguk körül.",
+            "title": "Szabadtéri kötődés és zárt téri szorongás",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "II. Az Arel-papok – úrnőjükhöz hasonlatosan – mind hangulatemberek. Indulatosságuk, szeszélyesen kacskaringózó gondolataik silány táptalajt nyújtanak a szigorú belső önfegyelemnek, a mentalizmus legfőbb alapjának. Számukra a Pszi – szemben a legtöbb más pappal – nem elsődlegesen alkalmazott képzettség. Éppen ezért ők nem is rendelkeznek induláskor ezen képzettséggel. Azonban, ha akarják, akkor képesek elsajátítani mesterüktől a Pszi tudományát, már ha ő bír vele. Ennek eldöntése a KM tiszte.",
+            "title": "Pszi képzettség hiánya",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "III. Arel papjai nem tudományos műveltségükről híresek, így ők nem kapják meg a Pap leírásában szereplő Írás/olvasás 3. fokú képzettséget.",
+            "title": "Írás/olvasás képzettség hiánya",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "table",
+            "text": "",
+            "title": "Az Arel-pap induló képzettségei 1. Tapasztalati szinten a papnál feltüntetetteken kívül",
+            "headers": [
+                "Képzettség",
+                "Fok"
+            ],
+            "rows": [
+                [
+                    "Fegyverhasználat (választott íj)",
+                    "3. fok"
+                ],
+                [
+                    "Harctéri gyakorlat",
+                    "2. fok"
+                ],
+                [
+                    "Lovaglás",
+                    "3. fok"
+                ],
+                [
+                    "Vadonjárás (választott tereptípusra)",
+                    "2. fok"
+                ],
+                [
+                    "Herbalizmus",
+                    "2. fok"
+                ],
+                [
+                    "Állatismeret",
+                    "2. fok"
+                ],
+                [
+                    "Idomítás",
+                    "2. fok"
+                ],
+                [
+                    "Szakma (Vadászat)",
+                    "3. fok"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "Állatismeret, Hadvezetés, Harci láz, Harctéri gyakorlat, Fájdalomtűrés, Fegyverismeret, Idomítás, Kocsmai verekedés, Lovaglás, Nyomolvasás, Szakma (Vadászat), Szerencsejáték, Vadonjárás.",
+            "title": "Az Arel-pap képzettségei, melyeket mesterétől az Oktatás képzettség 4. foka által nyújtott előnnyel tanulhat",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "flavor_text",
+            "text": "„A Pyarron bukása előtti esztendőkben tulajdon paptársai közül is sokan felrótták Ordaric Lykargon atyának, hogy elriasztja egyházától a hívőit baljós vészmadárkodásával. Suttogva bár, de néhol még arról is szó esett, hogy le kellene tenni a zord aggastyánt a Papi Szék legfőbb ítélőbírói posztjáról, amely – mint Kyel szolgáinak rangidősét – őt illette meg. Ordaric atya egy ízben aztán így szólt a suttogókhoz: Fölösleges ennyit fondorkodnotok ellenem, ti jámborok. Rátok a szebbik orcájával mosolygott az én Uram; ezért nem is tanultatok el tőle ti egyebet, csak az élet örömét. Énrám viszont a másik orcájával tekint, amely epévé keseríti az ember szívét, az elméjét viszont bölcsességre nyitja. Bizony mondom néktek: midőn eljövend ama vész, amiről az én Uram a halott orcájával beszélt nekem, ti jámborok, valahányan csak vagytok, nyüszítve fogtok szertefutni előle mind. Én viszont... én majd itt maradok, hogy szembenézzek vele.",
+            "title": "Kyel-pap",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "flavor_text",
+            "text": "Ordaric Lykargon végül a végveszély órájában a Fellegvár védelmében esett el Krán pusztító hordái ellen védelmezve a Szent Várost.”",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "flavor_text",
+            "text": "A kettős arcú Kyel, a teremtés és a pusztítás ura, zord és méltóságteljes alakja a pyarroni istencsaládnak. Egyes mítoszok Ynev alkotójának állítják be, mások szerint sokáig ő őrködött a világ békéje és egyensúlya fölött. Nem tartozik a panteon népszerűbb alakjai közé, amiben talán az is közrejátszhat, hogy már évezredekkel Selmo próféta eljövetele és Pyarron alapítása előtt lemondott főhatalmáról és önszántából visszavonult. Az új hit követői így sohasem ismerhették meg igazán; számukra roppant, elmosódott kőalak volt csupán, amely időnként borzongatóan hűvös árnyékot vet az ifjabb és tevékenyebb istenekre.",
+            "title": "Sirthan Harabullas: A Kettős Orcák Könyve (Részletek)",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "Kyel papjai komor, büszke emberek, akik sohasem nyitják ok nélkül szóra a szájukat, és bármerre járnak, mindenütt",
+            "title": "",
+            "headers": [],
+            "rows": []
+        }
+    ]
+}

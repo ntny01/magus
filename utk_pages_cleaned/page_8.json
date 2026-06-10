@@ -1,0 +1,100 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": null,
+    "is_new_section": true,
+    "section_title": "A harc",
+    "content_blocks": [
+        {
+            "type": "paragraph",
+            "text": "Bizonyára gondoltad már egy-egy kalandregény olvasásán, hogy a hős ostobaságot művelt, könnyelműen cselekedett. Esetleg az is eszedbe jutott, hogy te jobban, eredményesebben oldottad volna meg a feladatot. Nincs ebben semmi rendkívüli, még akkor sem, ha kissé mesésen hangzik a folytatás…"
+        },
+        {
+            "type": "paragraph",
+            "text": "Két amerikai fiatalember, aki mindenki másnál többet foglalkozott efféle problémákkal, találni akart egy lehetőséget, hogy kiélhesse kalandvágyát. Próbálkozásukat 1972-ben siker koronázta. Megalkották a szerepjátékot, „minden játékok legjobbikát”."
+        },
+        {
+            "type": "paragraph",
+            "text": "Az új találmány lázba hozta Amerikát. Néhány év alatt mozgalommá izmosodott a rajongók tábora. Külön iskolák jöttek létre a játék oktatására, önálló iparág született, mely napjainkig szerepjátékok tervezésével, a már meglévők tökéletesítésével, könyvek kiadásával foglalkozik. Dave Arneson és Gary Gygax alkotása kinőtte Amerikát, s világhódító útra indult."
+        },
+        {
+            "type": "paragraph",
+            "text": "A játék sikerének titka alighanem univerzalitásában rejlik: éppúgy élvezetes a tizenéves, mint a felnőtt korosztály számára. Izgalmas, szórakoztató, fejleszti a képzelőerőt és a beszédkészséget. A játékosoknak szinte korlátlan szabadságot biztosít, s ezzel addig elképzelhetetlen élményekben részesíti őket."
+        },
+        {
+            "type": "paragraph",
+            "text": "A játékok sokfélék lehetnek: ismerünk táblás, kártya-, szó- és képijátékokat. A szerepjátékokat ezen kategóriák egyikébe sem lehet beleilleszteni – kissé nehéz meghatározni valódi mibenlétét. Az összehasonlítás sem segít, hisz nincs mihez hasonlítani anélkül, hogy képzeletünket rendes, hétköznapi határain túl ne engednénk. A szerepjáték lényege azonban pontosan a képzelet szabad szárnyalása."
+        },
+        {
+            "type": "paragraph",
+            "text": "Lássunk egy megközelítő analógiát!"
+        },
+        {
+            "type": "paragraph",
+            "text": "Tegyük fel, hogy egy hétköznapi, táblás játékot játszunk. A cél, hogy eljussunk a tábla első kockájától az utolsóig, mielőtt bárki más megtenné ezt. Az utat csapdákkal nehezítették, bármelyikről visszacsúszhatunk a kezdőpontra. Vannak átjárók, melyek segítségével nagyot ugorhatunk a cél felé. Eddig ez igen egyszerű és szokványos."
+        },
+        {
+            "type": "paragraph",
+            "text": "Változtassunk meg néhány dolgot! Az érdektelen, lapos tábla helyére – amin az út kanyarogva vezet – tegyünk bonyolult útvesztőt. A bejáratnál állunk. Tudjuk, hogy valahol kell lennie egy kijáratnak is, de azt nem, hogy merre található. Ne használjunk dobókockákat annak eldöntésére, hogy mennyit mehetünk – lehessen annyit menni, amennyit csak akarunk. Menjünk el a folyosón az első elágazásig. Innen tovább haladhatunk előre, jobbra vagy balra fordulhatunk, netán visszatérhetünk a kiindulópontra. Esetleg titkos ajtókat, rejtett átjárókat kereshetünk. Ha sikerül, újabb folyosóra bukkanunk. Ez az ösvény lehet zsákutca, de vezethet egyenesen a kijárathoz is. Az egyetlen módja, hogy megtudjuk, ha végigmegyünk rajta. Persze elég sokat járkálva előbb vagy utóbb eljutunk a kijárathoz."
+        },
+        {
+            "type": "paragraph",
+            "text": "Tegyük igazabbá a játékot! Kóboroljanak a labirintusban lények. Csúf, elvetemült lények. Ezért kapsz fegyvereket – kardot, íjat, tőr és pajzsot –, hogy megvédhesd magad, ha egy szörny rád támad. Ráadásul más játékosok is vannak a labirintusban. Nekik is akadnak fegyvereik."
+        },
+        {
+            "type": "paragraph",
+            "text": "Vajon mit tesz a másik játékos, ha találkozol vele? Megtámadhat – hisz neki is eltökélt szándéka, hogy elsőként kimeneküljön ki az útvesztőből –, de szövetséget is ajánlhat a túlélés érdekében. Elvégre még egy óriás is megfontolja, hogy rátámadjon-e két jól felfegyverzett emberre…"
+        },
+        {
+            "type": "paragraph",
+            "text": "Végül rejtsük el a táblát! Adjuk oda az egyik játékosnak, és nevezzük őt kalandmesternek!"
+        },
+        {
+            "type": "paragraph",
+            "text": "A továbbiakban ahelyett, hogy a táblát nézed, a kalandmesterre hallgatsz. Ő az, aki leírja, hogy a tábla szerint hogyan fest a hely, ahol éppen vagy. Megmondod, merre akarsz továbbmenni, s a kalandmester (a továbbiakban KM-nek rövidítjük) szerint mozgatja, mondja tovább a történéseket."
+        },
+        {
+            "type": "paragraph",
+            "text": "Csukd be a szemed, és a fantáziáddal építsd fel a labirintus falait! Képzeld el a nyirkosságtól csöpögő, ősi kőtömböket, melyekre egy rég elpusztult faj különös ábrákat vésett. Talán jelentenek valamit, talán nem. És képzeld el a támadó szörnyet is, amint csatabárdot lóbálva, elfeledett átkokat mormolva közelít feléd. Próbáld magad beleélni, s mondd el a KM-nek, hogy mit tennél egy efféle helyzetben."
+        },
+        {
+            "type": "paragraph",
+            "text": "Most alkotunk éppen egy primitív szerepjátékot. A végletekig leegyszerűsítve ugyan, de fellelhetőek benne az alapvető elemek: a játékosok – a KM által kiagylalt – ismeretlen, veszélyes helyzetbe kerülnek, ahonnan ki kell magukat vágniuk."
+        },
+        {
+            "type": "paragraph",
+            "text": "Ez a szerepjáték lényege. A játékos felöli – a szabályok figyelembe vételével saját maga alkotta – karakterének személyiségét, s ezt a karakter irányítja végig a kaland folyamán. Nem csupán a karakter külsejét, de felszerelését és jellemét is meghatározza. Mindezen adatokat az úgynevezett karakterlapra jegyzi fel. A karakter lehet kardforgató, szerencsevadász valamely ynevi istenség papja, harcművész esetleg mágiahasználó."
+        },
+        {
+            "type": "paragraph",
+            "text": "Miután a karaktert kidolgozták, annak fő tulajdonságait meghatározták, a játékos döntéseket hoz. Más karakterekkel és játékosokkal érintkezik, csatákban vesz részt, intrikákat sző és vagyont gyűjt. Egyszóval úgy tesz, mintha ő a karakter lenne a játék folyamán. Létezik a KM által megelevenített világban – egészen karakterének haláláig."
+        },
+        {
+            "type": "paragraph",
+            "text": "Ha valahol rosszul dönt, a túlerővel kerül szembe, ha szerencséje végképp cserbenhagyja, a karakter bizony meg is halhat, akárcsak a való életben. Ám ilyenkor sem szabad túlságosan elkeseredni, hiszen új karakter bármikor alkotható, s akkor csak a KM-en múlik, mikor és hogyan csempészi vissza játékosát – az új karakterrel – a már megkezdett játékba."
+        },
+        {
+            "type": "rule",
+            "title": "Karakterfejlődés",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "Az imént elmondottak nem azt jelentik, hogy a játékosnak fel-le kell ugrálnia, körbe futkosnia és úgy viselkednie, mint a karaktere. Arról van szó, hogy valahányszor a karakterével történik valami vagy döntést kell hoznia, úgy tesz, mintha ő lenne abban a helyzetben, és kiválasztja a megfelelő cselekvési irányt."
+        },
+        {
+            "type": "paragraph",
+            "text": "Fizikailag ez úgy néz ki, hogy a játékosok és a KM kényelmesen elhelyezkednek a maguk választotta környezetben. Mondjuk egy asztal körül, ahol a KM ül az asztalfőn. A játékosoknak rengeteg helyre van szükségük: papíroknak, ceruzáknak, kockáknak, szabálykönyveknek. A KM sem éri be kevesebbel: el kell férniük térképeinek, kalandmoduljának és jegyzeteinek."
+        },
+        {
+            "type": "paragraph",
+            "text": "Ha már mindenki elhelyezkedett, s a karakterek is elkészültek, a KM belekezd a kaland előadásába. Ő a játékosok szeme és füle, ő személyesíti meg a történet mellékszereplőit."
+        },
+        {
+            "type": "paragraph",
+            "text": "A játék párbeszédes és elbeszélő részek egysége. A szerencsének alkalmanként jut szerep, ennek megtestesítésére hivatottak a kockák."
+        }
+    ]
+}

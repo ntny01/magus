@@ -1,0 +1,2427 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+
+<meta charset="UTF-8" />
+
+<meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+/>
+
+<title>YNEV KALAND TÉRKÉP</title>
+
+<link
+    rel="stylesheet"
+    href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+/>
+
+<link
+    rel="stylesheet"
+    href="https://unpkg.com/leaflet-draw@1.0.4/dist/leaflet.draw.css"
+/>
+
+<style>
+
+html,
+body{
+
+    margin:0;
+    padding:0;
+
+    width:100%;
+    height:100%;
+
+    overflow:hidden;
+
+    font-family:Segoe UI,sans-serif;
+
+    background:#0f172a;
+
+}
+
+body{
+
+    display:flex;
+    flex-direction:column;
+
+}
+
+/* =========================================================
+   TOP BAR
+========================================================= */
+
+.toolbar{
+
+    height:60px;
+
+    background:#08111f;
+
+    border-bottom:1px solid #1f2937;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    padding:0 16px;
+
+    z-index:99999;
+
+}
+
+.title{
+
+    color:#ef4444;
+
+    font-size:22px;
+
+    font-weight:800;
+
+    margin-right:20px;
+
+}
+
+.btn{
+
+    border:none;
+
+    background:#17233a;
+
+    color:white;
+
+    padding:10px 14px;
+
+    border-radius:10px;
+
+    cursor:pointer;
+
+    font-weight:700;
+
+    transition:0.2s;
+
+}
+
+.btn:hover{
+
+    background:#f59e0b;
+
+    color:black;
+
+}
+
+/* =========================================================
+   MAP
+========================================================= */
+
+#map{
+
+    width:100%;
+    flex: 1;
+    min-height: 0;
+
+    background:#bcc6cf;
+
+}
+
+/* =========================================================
+   REMOVE DEFAULT DRAW UI
+========================================================= */
+
+.leaflet-draw,
+.leaflet-control-container .leaflet-top.leaflet-left{
+
+    display:none !important;
+
+}
+
+/* =========================================================
+   MENUS
+========================================================= */
+
+.menuColumn{
+
+    position:absolute;
+
+    top:80px;
+    left:10px;
+
+    z-index:99999;
+
+    display:flex;
+    flex-direction:column;
+    gap:12px;
+
+}
+
+.menuBlock{
+
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+
+}
+
+.menuToggle{
+
+    width:58px;
+    height:58px;
+
+    border:none;
+
+    border-radius:18px;
+
+    background:linear-gradient(
+        145deg,
+        #1e293b,
+        #0f172a
+    );
+
+    color:white;
+
+    font-size:26px;
+
+    cursor:pointer;
+
+    border:1px solid #475569;
+
+    box-shadow:
+        0 10px 25px rgba(0,0,0,0.45),
+        inset 0 1px 0 rgba(255,255,255,0.08);
+
+    transition:0.2s;
+
+}
+
+.menuToggle:hover{
+
+    transform:translateY(-2px);
+
+    background:linear-gradient(
+        145deg,
+        #334155,
+        #111827
+    );
+
+}
+
+.dropdown{
+
+    display:none;
+
+    flex-direction:column;
+
+    gap:10px;
+
+    background:rgba(15,23,42,0.96);
+
+    padding:14px 10px 14px 14px;
+
+    border-radius:20px;
+
+    border:1px solid #334155;
+
+    max-height:70vh;
+
+    overflow-y:auto;
+
+    width:88px;
+
+    backdrop-filter:blur(10px);
+
+    box-shadow:
+        0 20px 40px rgba(0,0,0,0.45),
+        inset 0 1px 0 rgba(255,255,255,0.05);
+
+}
+
+.dropdown.open{
+
+    display:flex;
+
+}
+
+/* =========================================================
+   SCROLLBAR
+========================================================= */
+
+.dropdown::-webkit-scrollbar{
+
+    width:10px;
+
+}
+
+.dropdown::-webkit-scrollbar-track{
+
+    background:#111827;
+
+    border-radius:20px;
+
+    margin:6px;
+
+}
+
+.dropdown::-webkit-scrollbar-thumb{
+
+    background:linear-gradient(
+        180deg,
+        #475569,
+        #1e293b
+    );
+
+    border-radius:20px;
+
+    border:2px solid #111827;
+
+}
+
+/* =========================================================
+   ICON BUTTONS
+========================================================= */
+
+.iconBtn{
+
+    width:58px;
+    height:58px;
+
+    border:none;
+
+    border-radius:16px;
+
+    background:linear-gradient(
+        145deg,
+        #0f172a,
+        #111827
+    );
+
+    color:white;
+
+    font-size:28px;
+
+    cursor:pointer;
+
+    transition:0.2s;
+
+    border:1px solid #334155;
+
+    box-shadow:
+        0 6px 14px rgba(0,0,0,0.35),
+        inset 0 1px 0 rgba(255,255,255,0.04);
+
+}
+
+.iconBtn:hover{
+
+    transform:
+        scale(1.08)
+        translateY(-2px);
+
+    background:linear-gradient(
+        145deg,
+        #1e293b,
+        #172554
+    );
+
+}
+
+.iconBtn.active{
+
+    background:linear-gradient(
+        145deg,
+        #f59e0b,
+        #fbbf24
+    );
+
+    color:black;
+
+    border:1px solid #fcd34d;
+
+    box-shadow:
+        0 0 18px rgba(245,158,11,0.6);
+
+}
+
+/* =========================================================
+   DRAW SETTINGS
+========================================================= */
+
+.drawSettings{
+
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+
+    margin-top:4px;
+
+    color:white;
+
+    font-size:12px;
+
+}
+
+.drawSettings label{
+
+    display:flex;
+    flex-direction:column;
+    gap:4px;
+
+}
+
+.drawSettings input,
+.drawSettings select{
+
+    border:none;
+
+    background:#111827;
+
+    color:white;
+
+    border-radius:8px;
+
+    padding:6px;
+
+}
+
+/* =========================================================
+   POPUP FORM
+========================================================= */
+
+.popupForm{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:8px;
+
+    width:240px;
+
+}
+
+.popupForm input,
+.popupForm textarea{
+
+    width:100%;
+
+    border:none;
+
+    background:#111827;
+
+    color:white;
+
+    padding:10px;
+
+    border-radius:8px;
+
+    resize:vertical;
+
+    box-sizing:border-box;
+
+}
+
+.popupButtons{
+
+    display:flex;
+
+    gap:8px;
+
+}
+
+.popupButtons button{
+
+    flex:1;
+
+    border:none;
+
+    padding:10px;
+
+    border-radius:8px;
+
+    font-weight:700;
+
+    cursor:pointer;
+
+}
+
+.saveBtn{
+
+    background:#f59e0b;
+
+    color:black;
+
+}
+
+.deleteBtn{
+
+    background:#991b1b;
+
+    color:white;
+
+}
+
+/* =========================================================
+   COORD PANEL
+========================================================= */
+
+.coordPanel{
+
+    background:#111827;
+
+    color:white;
+
+    padding:8px 12px;
+
+    border-radius:8px;
+
+    border:1px solid #374151;
+
+    font-size:12px;
+
+}
+
+.leaflet-control-layers{
+
+    background:#111827 !important;
+
+    color:white !important;
+
+    border:1px solid #374151 !important;
+
+}
+
+.leaflet-bar a{
+
+    background:#111827 !important;
+
+    color:white !important;
+
+    border-bottom:1px solid #374151 !important;
+
+}
+
+.customMarker{
+
+    font-size:30px;
+
+    text-shadow:0 0 4px black;
+
+}
+
+.markerLabel{
+
+    color:white;
+
+    font-weight:700;
+
+    text-shadow:
+        0 0 4px black,
+        0 0 4px black;
+
+    font-size:14px;
+
+    margin-top:-2px;
+
+}
+
+</style>
+<style>
+
+/* =========================
+   FANTASY MAP OVERLAY
+========================= */
+
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Inter:wght@300;400;500;600&display=swap');
+
+/* =========================
+   GLOBAL
+========================= */
+
+body{
+
+    font-family:'Inter',sans-serif !important;
+
+    background:
+        radial-gradient(circle at top left, rgba(16,185,129,.05), transparent 28%),
+        radial-gradient(circle at bottom right, rgba(245,158,11,.04), transparent 28%),
+        linear-gradient(180deg,#020617 0%,#071018 100%) !important;
+}
+
+/* =========================
+   TOOLBAR
+========================= */
+
+.toolbar{
+
+    position:relative;
+
+    display:flex;
+    align-items:center;
+    gap:.75rem;
+
+    backdrop-filter:blur(16px);
+
+    background:
+        linear-gradient(
+            180deg,
+            rgba(2,6,23,.92),
+            rgba(7,16,24,.96)
+        ) !important;
+
+    border-bottom:
+        1px solid rgba(255,255,255,.06);
+
+    box-shadow:
+        0 8px 32px rgba(0,0,0,.35);
+
+    z-index:1000;
+}
+
+.toolbar::after{
+
+    content:'';
+
+    position:absolute;
+
+    left:0;
+    right:0;
+    bottom:0;
+
+    height:1px;
+
+    background:
+        linear-gradient(
+            90deg,
+            transparent,
+            rgba(212,175,55,.35),
+            transparent
+        );
+}
+
+/* =========================
+   TITLE
+========================= */
+
+.toolbar-title,
+.toolbar h2,
+.title{
+
+    font-family:'Cinzel',serif !important;
+
+    color:#d4af37 !important;
+
+    letter-spacing:.06em;
+
+    text-shadow:
+        0 0 12px rgba(212,175,55,.18);
+}
+
+/* =========================
+   BUTTONS
+========================= */
+
+.tool-btn,
+.btn{
+
+    position:relative;
+
+    overflow:hidden;
+
+    backdrop-filter:blur(10px);
+
+    background:
+        rgba(255,255,255,.03) !important;
+
+    border:
+        1px solid rgba(255,255,255,.08) !important;
+
+    color:#e2e8f0 !important;
+
+    border-radius:14px !important;
+
+    transition:
+        transform .18s ease,
+        background .18s ease,
+        border-color .18s ease,
+        box-shadow .18s ease !important;
+}
+
+.tool-btn:hover,
+.btn:hover{
+
+    transform:translateY(-2px);
+
+    background:
+        rgba(16,185,129,.08) !important;
+
+    border-color:
+        rgba(16,185,129,.35) !important;
+
+    box-shadow:
+        0 8px 24px rgba(16,185,129,.14);
+
+    color:#d1fae5 !important;
+}
+
+.tool-btn.active,
+.btn.active{
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(16,185,129,.18),
+            rgba(52,211,153,.08)
+        ) !important;
+
+    border-color:
+        rgba(16,185,129,.4) !important;
+
+    color:#34d399 !important;
+
+    box-shadow:
+        0 0 20px rgba(16,185,129,.15);
+}
+
+/* shimmer */
+
+.tool-btn::before,
+.btn::before{
+
+    content:'';
+
+    position:absolute;
+
+    inset:0;
+
+    background:
+        linear-gradient(
+            120deg,
+            transparent,
+            rgba(255,255,255,.08),
+            transparent
+        );
+
+    transform:translateX(-120%);
+
+    transition:.5s;
+}
+
+.tool-btn:hover::before,
+.btn:hover::before{
+
+    transform:translateX(120%);
+}
+
+/* =========================
+   SIDE TOOLBAR
+========================= */
+
+.side-toolbar button,
+.menuToggle,
+.iconBtn{
+
+    backdrop-filter:blur(12px);
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(30,41,59,.92),
+            rgba(15,23,42,.96)
+        ) !important;
+
+    border:
+        1px solid rgba(255,255,255,.08) !important;
+
+    color:#e2e8f0 !important;
+
+    border-radius:16px !important;
+
+    box-shadow:
+        0 10px 24px rgba(0,0,0,.35);
+
+    transition:
+        transform .18s ease,
+        background .18s ease,
+        border-color .18s ease,
+        box-shadow .18s ease !important;
+}
+
+.side-toolbar button:hover,
+.menuToggle:hover,
+.iconBtn:hover{
+
+    transform:
+        translateY(-2px)
+        scale(1.03);
+
+    background:
+        rgba(16,185,129,.08) !important;
+
+    border-color:
+        rgba(16,185,129,.35) !important;
+
+    box-shadow:
+        0 10px 30px rgba(16,185,129,.16);
+}
+
+/* =========================
+   COLOR PICKER
+========================= */
+
+.color-picker{
+
+    width:36px !important;
+    height:36px !important;
+
+    border-radius:50%;
+
+    border:
+        2px solid rgba(255,255,255,.1);
+
+    box-shadow:
+        0 0 18px rgba(255,255,255,.08);
+}
+
+/* =========================
+   MAP CONTAINER
+========================= */
+
+.map-container{
+
+    position:relative;
+}
+
+/* =========================
+   MAP ATMOSPHERE
+========================= */
+
+#map{
+
+    filter:
+        saturate(.96)
+        contrast(1.01)
+        brightness(.96);
+}
+
+/* =========================
+   CANVAS
+========================= */
+
+canvas{
+
+    filter:
+        drop-shadow(0 0 6px rgba(255,255,255,.10));
+}
+
+/* =========================
+   FLOATING RUNES
+========================= */
+
+#magic-particles{
+
+    position:fixed;
+
+    inset:0;
+
+    pointer-events:none;
+
+    overflow:hidden;
+
+    z-index:2;
+}
+
+.rune{
+
+    position:absolute;
+
+    color:rgba(212,175,55,.10);
+
+    font-size:14px;
+
+    animation:floatRune linear infinite;
+}
+
+@keyframes floatRune{
+
+    from{
+
+        transform:
+            translateY(100vh)
+            rotate(0deg);
+
+        opacity:0;
+    }
+
+    10%{
+
+        opacity:1;
+    }
+
+    90%{
+
+        opacity:1;
+    }
+
+    to{
+
+        transform:
+            translateY(-120px)
+            rotate(360deg);
+
+        opacity:0;
+    }
+}
+
+/* =========================
+   FADE IN
+========================= */
+
+body{
+
+    animation:
+        mapFade .7s ease-out;
+}
+
+@keyframes mapFade{
+
+    from{
+
+        opacity:0;
+        transform:scale(1.01);
+    }
+
+    to{
+
+        opacity:1;
+        transform:scale(1);
+    }
+}
+
+/* =========================
+   LEAFLET
+========================= */
+
+.leaflet-control-layers{
+
+    background:
+        rgba(15,23,42,.92) !important;
+
+    border:
+        1px solid rgba(255,255,255,.06) !important;
+
+    color:#f8fafc !important;
+
+    backdrop-filter:blur(12px);
+}
+
+.leaflet-bar a{
+
+    background:
+        rgba(15,23,42,.92) !important;
+
+    color:#f8fafc !important;
+
+    border-bottom:
+        1px solid rgba(255,255,255,.06) !important;
+}
+
+.leaflet-popup-content-wrapper{
+
+    background:
+        rgba(15,23,42,.96) !important;
+
+    color:#f8fafc !important;
+
+    border:
+        1px solid rgba(255,255,255,.08);
+
+    backdrop-filter:blur(16px);
+}
+
+.leaflet-popup-tip{
+
+    background:
+        rgba(15,23,42,.96) !important;
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media(max-width:768px){
+
+    /* Toolbar: kompakt, egy sor marad ha lehet */
+    .toolbar{
+        height: auto !important;
+        min-height: 52px;
+        padding: 0 10px !important;
+        gap: 6px !important;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    /* Cím rövidebb mobilon */
+    .title{
+        font-size: 15px !important;
+        white-space: nowrap;
+        margin-right: 6px !important;
+        flex-shrink: 0;
+    }
+
+    /* Gombok: érintési célméret min 44px */
+    .tool-btn,
+    .btn{
+        font-size: .75rem !important;
+        padding: 8px 10px !important;
+        min-height: 40px;
+        white-space: nowrap;
+        flex-shrink: 0;
+    }
+
+    /* Oldalsó menü: kicsit feljebb és kisebb gombok */
+    .menuColumn{
+        top: 62px !important;
+        left: 8px !important;
+        gap: 8px !important;
+    }
+
+    .menuToggle{
+        width: 50px !important;
+        height: 50px !important;
+        font-size: 22px !important;
+    }
+
+    .iconBtn{
+        width: 50px !important;
+        height: 50px !important;
+        font-size: 24px !important;
+    }
+
+    /* Legördülő panel: max magasság mobilon kisebb */
+    .dropdown{
+        max-height: 55vh !important;
+        width: 78px !important;
+    }
+
+    /* Popup form: kicsit kisebb */
+    .popupForm{
+        width: 200px !important;
+    }
+
+    .popupButtons button{
+        min-height: 40px;
+        font-size: 0.85rem;
+    }
+
+    /* Koordináta panel: kisebb */
+    .coordPanel{
+        font-size: 11px !important;
+        padding: 5px 8px !important;
+    }
+
+    /* Leaflet zoom gombok nagyobbak */
+    .leaflet-bar a{
+        width: 36px !important;
+        height: 36px !important;
+        line-height: 36px !important;
+        font-size: 18px !important;
+    }
+}
+
+@media(max-width:400px){
+    .title{ display: none !important; }
+    .toolbar{ gap: 5px !important; }
+    .btn{ padding: 8px 8px !important; font-size: .7rem !important; }
+}
+
+/* =========================
+   SCROLLBAR
+========================= */
+
+::-webkit-scrollbar{
+
+    width:10px;
+}
+
+::-webkit-scrollbar-track{
+
+    background:#020617;
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:#1e293b;
+
+    border-radius:20px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+
+    background:#334155;
+}
+/* =========================
+   YNEV OCEAN BACKGROUND
+========================= */
+
+.leaflet-container{
+
+    background:
+
+        linear-gradient(
+            180deg,
+            #c7dceb 0%,
+            #bdd5e6 35%,
+            #b4cfe2 100%
+        ) !important;
+
+    position:relative;
+}
+
+/* subtle ocean waves */
+
+.leaflet-container::before{
+
+    content:'';
+
+    position:absolute;
+
+    inset:0;
+
+    pointer-events:none;
+
+    opacity:.16;
+
+    background:
+
+        repeating-linear-gradient(
+            0deg,
+
+            rgba(255,255,255,.10) 0px,
+            rgba(255,255,255,.10) 2px,
+
+            transparent 2px,
+            transparent 22px
+        ),
+
+        repeating-linear-gradient(
+            90deg,
+
+            rgba(255,255,255,.04) 0px,
+            rgba(255,255,255,.04) 1px,
+
+            transparent 1px,
+            transparent 120px
+        );
+
+    background-size:
+        100% 100%,
+        100% 100%;
+
+    animation:
+        oceanWave 18s linear infinite;
+
+    z-index:1;
+}
+
+/* soft moving waves */
+
+@keyframes oceanWave{
+
+    from{
+
+        transform:
+            translateX(0);
+    }
+
+    to{
+
+        transform:
+            translateX(-80px);
+    }
+}
+
+</style>
+</head>
+
+<body>
+<div id="magic-particles"></div>
+<div class="toolbar">
+
+    <div class="title">
+        🗺️ YNEV KALAND TÉRKÉP
+    </div>
+
+    <button
+        class="btn"
+        onclick="exportCampaign()"
+    >
+        💾 Mentés
+    </button>
+
+    <button
+        class="btn"
+        onclick="importCampaign()"
+    >
+        📂 Betöltés
+    </button>
+
+    <button
+        class="btn"
+        onclick="clearEverything()"
+    >
+        🗑️ Törlés
+    </button>
+
+    <button
+        class="btn"
+        onclick="toggleGrid()"
+    >
+        # Grid
+    </button>
+
+</div>
+
+<div class="menuColumn">
+
+    <!-- MARKERS -->
+
+    <div class="menuBlock">
+
+        <button
+            class="menuToggle"
+            onclick="toggleMenu('markerDropdown')"
+            title="Jelölések"
+        >
+            📍
+        </button>
+
+        <div
+            class="dropdown"
+            id="markerDropdown"
+        >
+
+            <button class="iconBtn markerBtn" data-icon="🏰" title="Vár">🏰</button>
+            <button class="iconBtn markerBtn" data-icon="🏙️" title="Város">🏙️</button>
+            <button class="iconBtn markerBtn" data-icon="🏠" title="Falu">🏠</button>
+            <button class="iconBtn markerBtn" data-icon="⚔️" title="Csata">⚔️</button>
+            <button class="iconBtn markerBtn" data-icon="☠️" title="Veszély">☠️</button>
+            <button class="iconBtn markerBtn" data-icon="❗" title="Fontos">❗</button>
+            <button class="iconBtn markerBtn" data-icon="❓" title="Rejtély">❓</button>
+            <button class="iconBtn markerBtn" data-icon="⭐" title="Kiemelt">⭐</button>
+            <button class="iconBtn markerBtn" data-icon="🐉" title="Sárkány">🐉</button>
+            <button class="iconBtn markerBtn" data-icon="🛡️" title="Erőd">🛡️</button>
+            <button class="iconBtn markerBtn" data-icon="⛪" title="Templom">⛪</button>
+            <button class="iconBtn markerBtn" data-icon="🧙" title="Mágus">🧙</button>
+            <button class="iconBtn markerBtn" data-icon="💎" title="Kincs">💎</button>
+
+        </div>
+
+    </div>
+
+    <!-- DRAW -->
+
+    <div class="menuBlock">
+
+        <button
+            class="menuToggle"
+            onclick="toggleMenu('drawDropdown')"
+            title="Rajzolás"
+        >
+            ✏️
+        </button>
+
+        <div
+            class="dropdown"
+            id="drawDropdown"
+        >
+
+            <button
+                class="iconBtn"
+                onclick="startDraw('polyline', this)"
+                title="Vonal rajzolása"
+            >
+                ✏️
+            </button>
+
+            <button
+                class="iconBtn"
+                onclick="startDraw('polygon', this)"
+                title="Terület rajzolása"
+            >
+                ⬡
+            </button>
+
+            <button
+                class="iconBtn"
+                onclick="enableEdit(this)"
+                title="Rajzok szerkesztése"
+            >
+                ✋
+            </button>
+
+            <button
+                class="iconBtn"
+                onclick="deleteMode(this)"
+                title="Rajz törlése"
+            >
+                🗑️
+            </button>
+
+            <button
+                class="iconBtn"
+                onclick="disableDrawing()"
+                title="Kilépés minden módból"
+            >
+                ❌
+            </button>
+
+            <div class="drawSettings">
+
+                <label>
+                    Szín
+                    <input
+                        type="color"
+                        id="drawColor"
+                        value="#ff0000"
+                    />
+                </label>
+
+                <label>
+                    Vastagság
+                    <input
+                        type="range"
+                        id="drawWeight"
+                        min="1"
+                        max="12"
+                        value="4"
+                    />
+                </label>
+
+                <label>
+                    Vonal
+                    <select id="drawDash">
+
+                        <option value="">
+                            Sima
+                        </option>
+
+                        <option value="10,10">
+                            Szaggatott
+                        </option>
+
+                    </select>
+                </label>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<div id="map"></div>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="https://unpkg.com/leaflet-draw@1.0.4/dist/leaflet.draw.js"></script>
+
+<script>
+
+/* =========================================================
+   TILE CONFIG
+========================================================= */
+
+const TILE_SIZE = 256;
+
+const X_MAX = 25;
+const Y_MAX = 39;
+
+const MAP_WIDTH =
+    (X_MAX + 1) * TILE_SIZE;
+
+const MAP_HEIGHT =
+    (Y_MAX + 1) * TILE_SIZE;
+
+/* =========================================================
+   MAP
+========================================================= */
+
+const map = L.map('map', {
+
+    crs:L.CRS.Simple,
+
+    minZoom:-2,
+    maxZoom:4,
+
+    zoomSnap:0.25,
+
+    attributionControl:false,
+
+});
+
+const bounds = [
+
+    [0,0],
+
+    [MAP_HEIGHT, MAP_WIDTH]
+
+];
+
+/* =========================================================
+   TILE GROUPS
+========================================================= */
+
+const topoGroup =
+    L.layerGroup();
+
+const politicalGroup =
+    L.layerGroup();
+
+/* =========================================================
+   TILE BUILDER
+========================================================= */
+
+function buildTiles(basePath, group){
+
+    for(let x=0; x<=X_MAX; x++){
+
+        for(let y=0; y<=Y_MAX; y++){
+
+            const flippedY =
+                Y_MAX - y;
+
+            const imageUrl =
+`${basePath}/6/${x}/${flippedY}.png`;
+
+            const left =
+                x * TILE_SIZE;
+
+            const top =
+                y * TILE_SIZE;
+
+            const bounds = [
+
+                [top,left],
+
+                [
+                    top + TILE_SIZE,
+                    left + TILE_SIZE
+                ]
+
+            ];
+
+            const overlay =
+                L.imageOverlay(
+                    imageUrl,
+                    bounds,
+                    {
+                        interactive:false,
+                        opacity:1
+                    }
+                );
+
+            overlay.on('error', ()=>{
+
+                overlay.setOpacity(0);
+
+            });
+
+            overlay.addTo(group);
+
+        }
+
+    }
+
+}
+
+/* =========================================================
+   BUILD MAPS
+========================================================= */
+
+buildTiles(
+    './terkep_kulon/output/3724_domborzati',
+    topoGroup
+);
+
+buildTiles(
+    './terkep_kulon/output/3724_politikai',
+    politicalGroup
+);
+
+topoGroup.addTo(map);
+
+L.control.layers({
+
+    "3724 Domborzati":
+        topoGroup,
+
+    "3724 Politikai":
+        politicalGroup,
+
+}).addTo(map);
+
+map.fitBounds(bounds);
+
+/* =========================================================
+   DRAW SYSTEM
+========================================================= */
+
+const drawnItems =
+    new L.FeatureGroup();
+
+map.addLayer(drawnItems);
+
+let currentDrawer = null;
+let editHandler = null;
+let deleteHandler = null;
+
+/* =========================================================
+   HELPERS
+========================================================= */
+
+function clearActiveButtons(){
+
+    document
+    .querySelectorAll('.iconBtn')
+    .forEach(btn=>{
+
+        btn.classList.remove('active');
+
+    });
+
+}
+
+function disableDrawing(){
+
+    if(currentDrawer){
+
+        currentDrawer.disable();
+        currentDrawer = null;
+
+    }
+
+    if(editHandler){
+
+        editHandler.disable();
+        editHandler = null;
+
+    }
+
+    if(deleteHandler){
+
+        deleteHandler.disable();
+        deleteHandler = null;
+
+    }
+
+    clearActiveButtons();
+
+}
+
+function deactivateMarkerMode(){
+
+    activeIcon = null;
+
+    document
+    .querySelectorAll('.markerBtn')
+    .forEach(btn=>{
+
+        btn.classList.remove('active');
+
+    });
+
+}
+
+function getDrawStyle(){
+
+    return {
+
+        color:
+            document.getElementById(
+                'drawColor'
+            ).value,
+
+        weight:
+            parseInt(
+                document.getElementById(
+                    'drawWeight'
+                ).value
+            ),
+
+        dashArray:
+            document.getElementById(
+                'drawDash'
+            ).value,
+
+        smoothFactor:2
+
+    };
+
+}
+
+/* =========================================================
+   DRAW
+========================================================= */
+
+function startDraw(type, btn){
+
+    deactivateMarkerMode();
+
+    disableDrawing();
+
+    btn.classList.add('active');
+
+    const style =
+        getDrawStyle();
+
+    if(type === 'polyline'){
+
+        currentDrawer =
+            new L.Draw.Polyline(map, {
+
+                shapeOptions:style,
+
+                guidelineDistance:20,
+
+                repeatMode:false
+
+            });
+
+    }
+
+    if(type === 'polygon'){
+
+        currentDrawer =
+            new L.Draw.Polygon(map, {
+
+                shapeOptions:style,
+
+                showArea:true,
+
+                repeatMode:false
+
+            });
+
+    }
+
+    currentDrawer.enable();
+
+}
+
+function enableEdit(btn){
+
+    deactivateMarkerMode();
+
+    disableDrawing();
+
+    btn.classList.add('active');
+
+    editHandler =
+        new L.EditToolbar.Edit(map, {
+
+            featureGroup:
+                drawnItems
+
+        });
+
+    editHandler.enable();
+
+}
+
+function deleteMode(btn){
+
+    deactivateMarkerMode();
+
+    disableDrawing();
+
+    btn.classList.add('active');
+
+    deleteHandler =
+        new L.EditToolbar.Delete(map, {
+
+            featureGroup:
+                drawnItems
+
+        });
+
+    deleteHandler.enable();
+
+}
+
+/* =========================================================
+   SAVE STYLE
+========================================================= */
+
+function saveLayerStyle(layer){
+
+    if(!layer.feature){
+
+        layer.feature = {
+
+            type:"Feature",
+            properties:{}
+
+        };
+
+    }
+
+    layer.feature.properties.style = {
+
+        color:
+            layer.options.color || "#ff0000",
+
+        weight:
+            layer.options.weight || 4,
+
+        dashArray:
+            layer.options.dashArray || ""
+
+    };
+
+}
+
+/* =========================================================
+   DRAW EVENTS
+========================================================= */
+
+map.on(L.Draw.Event.CREATED, function(e){
+
+    const layer = e.layer;
+
+    saveLayerStyle(layer);
+
+    drawnItems.addLayer(layer);
+
+    disableDrawing();
+
+    saveCampaign();
+
+});
+
+map.on(
+    L.Draw.Event.EDITED,
+    function(e){
+
+        e.layers.eachLayer(layer=>{
+
+            saveLayerStyle(layer);
+
+        });
+
+        saveCampaign();
+
+    }
+);
+
+map.on(
+    L.Draw.Event.DELETED,
+    saveCampaign
+);
+
+/* =========================================================
+   MENUS
+========================================================= */
+
+function toggleMenu(id){
+
+    document
+    .getElementById(id)
+    .classList.toggle('open');
+
+}
+
+/* =========================================================
+   MARKERS
+========================================================= */
+
+let activeIcon = null;
+
+const markers = [];
+
+document.querySelectorAll('.markerBtn')
+.forEach(btn=>{
+
+    btn.onclick = ()=>{
+
+        disableDrawing();
+
+        const alreadyActive =
+            btn.classList.contains('active');
+
+        deactivateMarkerMode();
+
+        if(alreadyActive){
+
+            return;
+
+        }
+
+        btn.classList.add('active');
+
+        activeIcon =
+            btn.dataset.icon;
+
+    };
+
+});
+
+map.on('click', function(e){
+
+    if(!activeIcon) return;
+
+    createRPGMarker(
+        e.latlng,
+        activeIcon
+    );
+
+});
+
+/* =========================================================
+   CREATE MARKER
+========================================================= */
+
+function buildMarkerHTML(data){
+
+    return `
+
+        <div style="text-align:center;">
+
+            <div class="customMarker">
+                ${data.icon}
+            </div>
+
+            <div class="markerLabel">
+                ${data.name || ""}
+            </div>
+
+        </div>
+
+    `;
+
+}
+
+function createRPGMarker(latlng, icon){
+
+    const marker =
+        L.marker(latlng, {
+
+            icon:L.divIcon({
+
+                className:'',
+
+                html:buildMarkerHTML({
+
+                    icon,
+                    name:''
+
+                }),
+
+                iconSize:[120,40],
+
+iconAnchor:[60,40],
+popupAnchor:[0,-40]
+
+            })
+
+        });
+
+    marker.data = {
+
+        icon,
+        name:'',
+        description:''
+
+    };
+
+    marker.addTo(map);
+
+    markers.push(marker);
+
+    openMarkerEditor(marker);
+
+    marker.on('click', ()=>{
+
+        openMarkerEditor(marker);
+
+    });
+
+    saveCampaign();
+
+}
+
+/* =========================================================
+   MARKER EDITOR
+========================================================= */
+
+function openMarkerEditor(marker){
+
+    const d =
+        marker.data;
+
+    const html = `
+
+        <div class="popupForm">
+
+            <input
+                id="markerName"
+                placeholder="Név"
+                value="${d.name}"
+            />
+
+            <textarea
+                id="markerDesc"
+                rows="4"
+                placeholder="Leírás"
+            >${d.description}</textarea>
+
+            <div class="popupButtons">
+
+                <button
+                    class="saveBtn"
+                    onclick="saveMarkerPopup()"
+                >
+                    Mentés
+                </button>
+
+                <button
+                    class="deleteBtn"
+                    onclick="deleteMarkerPopup()"
+                >
+                    Törlés
+                </button>
+
+            </div>
+
+        </div>
+
+    `;
+
+    marker.bindPopup(html)
+    .openPopup();
+
+    window.currentEditingMarker =
+        marker;
+
+}
+
+/* =========================================================
+   SAVE MARKER
+========================================================= */
+
+window.saveMarkerPopup = function(){
+
+    const marker =
+        window.currentEditingMarker;
+
+    marker.data.name =
+        document.getElementById(
+            'markerName'
+        ).value;
+
+    marker.data.description =
+        document.getElementById(
+            'markerDesc'
+        ).value;
+
+    marker.setIcon(
+
+        L.divIcon({
+
+            className:'',
+
+            html:buildMarkerHTML(
+                marker.data
+            ),
+
+            iconSize:[120,40],
+
+  iconAnchor:[60,40],
+popupAnchor:[0,-40]
+
+        })
+
+    );
+
+    marker.closePopup();
+
+    saveCampaign();
+
+};
+
+/* =========================================================
+   DELETE MARKER
+========================================================= */
+
+window.deleteMarkerPopup = function(){
+
+    const marker =
+        window.currentEditingMarker;
+
+    map.removeLayer(marker);
+
+    const index =
+        markers.indexOf(marker);
+
+    if(index > -1){
+
+        markers.splice(index,1);
+
+    }
+
+    saveCampaign();
+
+};
+
+/* =========================================================
+   SAVE CAMPAIGN
+========================================================= */
+
+function saveCampaign(){
+
+    drawnItems.eachLayer(layer=>{
+
+        saveLayerStyle(layer);
+
+    });
+
+    const drawData =
+        drawnItems.toGeoJSON();
+
+    const markerData =
+        markers.map(m=>({
+
+            latlng:m.getLatLng(),
+
+            data:m.data
+
+        }));
+
+    const campaign = {
+
+        drawings:drawData,
+
+        markers:markerData
+
+    };
+
+    localStorage.setItem(
+        'ynev_campaign',
+        JSON.stringify(campaign)
+    );
+
+}
+
+/* =========================================================
+   LOAD CAMPAIGN
+========================================================= */
+
+function loadCampaign(){
+
+    const raw =
+        localStorage.getItem(
+            'ynev_campaign'
+        );
+
+    if(!raw) return;
+
+    const campaign =
+        JSON.parse(raw);
+
+    drawnItems.clearLayers();
+
+    markers.forEach(m=>{
+
+        map.removeLayer(m);
+
+    });
+
+    markers.length = 0;
+
+    L.geoJSON(campaign.drawings, {
+
+        style:feature=>{
+
+            return feature.properties?.style || {
+
+                color:"#ff0000",
+                weight:4,
+                dashArray:""
+
+            };
+
+        },
+
+        onEachFeature:
+            (feature, layer)=>{
+
+                if(feature.properties?.style){
+
+                    layer.setStyle(
+                        feature.properties.style
+                    );
+
+                }
+
+                drawnItems.addLayer(layer);
+
+            }
+
+    });
+
+    campaign.markers.forEach(m=>{
+
+        const marker =
+            L.marker(m.latlng, {
+
+                icon:L.divIcon({
+
+                    className:'',
+
+                    html:buildMarkerHTML(
+                        m.data
+                    ),
+
+                    iconSize:[120,40],
+
+                   iconAnchor:[60,40],
+popupAnchor:[0,-40]
+
+                })
+
+            });
+
+        marker.data =
+            m.data;
+
+        marker.addTo(map);
+
+        markers.push(marker);
+
+        marker.on('click', ()=>{
+
+            openMarkerEditor(marker);
+
+        });
+
+    });
+
+}
+
+/* =========================================================
+   EXPORT
+========================================================= */
+
+function exportCampaign(){
+
+    saveCampaign();
+
+    const raw =
+        localStorage.getItem(
+            'ynev_campaign'
+        );
+
+    const blob =
+        new Blob(
+
+            [raw],
+
+            {
+
+                type:'application/json'
+
+            }
+
+        );
+
+    const a =
+        document.createElement('a');
+
+    a.href =
+        URL.createObjectURL(blob);
+
+    a.download =
+        'ynev_campaign.json';
+
+    a.click();
+
+}
+
+/* =========================================================
+   IMPORT
+========================================================= */
+
+function importCampaign(){
+
+    const input =
+        document.createElement('input');
+
+    input.type='file';
+
+    input.accept='.json';
+
+    input.onchange=e=>{
+
+        const file =
+            e.target.files[0];
+
+        const reader =
+            new FileReader();
+
+        reader.onload=evt=>{
+
+            localStorage.setItem(
+
+                'ynev_campaign',
+
+                evt.target.result
+
+            );
+
+            loadCampaign();
+
+        };
+
+        reader.readAsText(file);
+
+    };
+
+    input.click();
+
+}
+
+/* =========================================================
+   CLEAR
+========================================================= */
+
+function clearEverything(){
+
+    disableDrawing();
+
+    deactivateMarkerMode();
+
+    drawnItems.clearLayers();
+
+    markers.forEach(m=>{
+
+        map.removeLayer(m);
+
+    });
+
+    markers.length = 0;
+
+    localStorage.removeItem(
+        'ynev_campaign'
+    );
+
+}
+
+/* =========================================================
+   GRID
+========================================================= */
+
+let gridLayer = null;
+
+function toggleGrid(){
+
+    if(gridLayer){
+
+        map.removeLayer(gridLayer);
+
+        gridLayer = null;
+
+        return;
+
+    }
+
+    gridLayer =
+        L.layerGroup();
+
+    const step = 256;
+
+    for(let x=0; x<=MAP_WIDTH; x+=step){
+
+        L.polyline(
+
+            [
+
+                [0,x],
+
+                [MAP_HEIGHT,x]
+
+            ],
+
+            {
+
+                color:'#00000033',
+
+                weight:1
+
+            }
+
+        ).addTo(gridLayer);
+
+    }
+
+    for(let y=0; y<=MAP_HEIGHT; y+=step){
+
+        L.polyline(
+
+            [
+
+                [y,0],
+
+                [y,MAP_WIDTH]
+
+            ],
+
+            {
+
+                color:'#00000033',
+
+                weight:1
+
+            }
+
+        ).addTo(gridLayer);
+
+    }
+
+    gridLayer.addTo(map);
+
+}
+
+/* =========================================================
+   COORDS
+========================================================= */
+
+const coordControl =
+    L.control({
+
+        position:'bottomleft'
+
+    });
+
+coordControl.onAdd =
+function(){
+
+    this._div =
+        L.DomUtil.create(
+
+            'div',
+
+            'coordPanel'
+
+        );
+
+    this.update();
+
+    return this._div;
+
+};
+
+coordControl.update =
+function(latlng){
+
+    this._div.innerHTML = latlng
+
+        ? `
+            X:
+            ${Math.round(latlng.lng)}
+            <br>
+            Y:
+            ${Math.round(latlng.lat)}
+          `
+
+        : 'Koordináták';
+
+};
+
+coordControl.addTo(map);
+
+map.on('mousemove', function(e){
+
+    coordControl.update(
+        e.latlng
+    );
+
+});
+
+/* =========================================================
+   AUTO LOAD
+========================================================= */
+
+loadCampaign();
+
+</script>
+<script>
+
+/* =========================
+   FLOATING RUNES
+========================= */
+
+(() => {
+
+    const container =
+        document.getElementById('magic-particles');
+
+    if(!container) return;
+
+    const runes =
+        ['✦','☽','☼','ᚱ','ᛟ','✧'];
+
+    function createRune(){
+
+        const rune =
+            document.createElement('div');
+
+        rune.className = 'rune';
+
+        rune.innerText =
+            runes[
+                Math.floor(Math.random()*runes.length)
+            ];
+
+        rune.style.left =
+            Math.random()*100 + 'vw';
+
+        rune.style.animationDuration =
+            10 + Math.random()*15 + 's';
+
+        rune.style.fontSize =
+            10 + Math.random()*18 + 'px';
+
+        container.appendChild(rune);
+
+        setTimeout(() => {
+
+            rune.remove();
+
+        },25000);
+
+    }
+
+    setInterval(createRune,1400);
+
+})();
+
+/* =========================
+   SUBTLE PARALLAX
+========================= */
+
+document.addEventListener('mousemove', e => {
+
+    const x =
+        (e.clientX / window.innerWidth - .5) * 10;
+
+    const y =
+        (e.clientY / window.innerHeight - .5) * 10;
+
+    document.body.style.backgroundPosition =
+        `${x}px ${y}px`;
+
+});
+
+</script>
+</body>
+</html>

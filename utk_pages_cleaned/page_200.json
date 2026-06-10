@@ -1,0 +1,498 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": true,
+    "section_title": "5. Méretkategória",
+    "content_blocks": [
+        {
+            "type": "paragraph",
+            "text": "Nyeles fegyverek"
+        },
+        {
+            "type": "table",
+            "headers": [
+                "Név",
+                "Időigény",
+                "Sebzés",
+                "KÉ",
+                "TÉ",
+                "VÉ",
+                "Súly",
+                "Ár",
+                "Lefegyverzés",
+                "Fegyvertörés",
+                "Átütés",
+                "STP"
+            ],
+            "rows": [
+                [
+                    "alabárd",
+                    "10",
+                    "5k6",
+                    "10",
+                    "15",
+                    "15",
+                    "4",
+                    "5a",
+                    "igen",
+                    "igen",
+                    "igen",
+                    "30"
+                ],
+                [
+                    "lándzsa",
+                    "5",
+                    "2k6+2",
+                    "13",
+                    "15",
+                    "13",
+                    "2.3",
+                    "8e",
+                    "igen",
+                    "nem",
+                    "igen",
+                    "40"
+                ],
+                [
+                    "lovaskopja",
+                    "roham",
+                    "4k6",
+                    "15",
+                    "20",
+                    "1",
+                    "3",
+                    "1a",
+                    "nem",
+                    "nem",
+                    "igen",
+                    "40"
+                ],
+                [
+                    "nehézlovas kopja",
+                    "roham",
+                    "5k6",
+                    "15",
+                    "19",
+                    "1",
+                    "5",
+                    "1a 5e",
+                    "nem",
+                    "nem",
+                    "igen",
+                    "35"
+                ],
+                [
+                    "pika",
+                    "5",
+                    "3k6+2",
+                    "10",
+                    "14",
+                    "12",
+                    "2",
+                    "4e",
+                    "nem",
+                    "nem",
+                    "igen",
+                    "40"
+                ],
+                [
+                    "szigony",
+                    "5",
+                    "3k6+1",
+                    "8",
+                    "14",
+                    "16",
+                    "2.2",
+                    "5e",
+                    "nem",
+                    "nem",
+                    "igen",
+                    "40"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "Hajítófegyverek"
+        },
+        {
+            "type": "table",
+            "headers": [
+                "Név",
+                "Időigény",
+                "Sebzés",
+                "KÉ",
+                "CÉ",
+                "VÉ",
+                "Táv",
+                "Súly",
+                "Ár",
+                "Lefegyverzés",
+                "Fegyvertörés",
+                "Átütés",
+                "STP"
+            ],
+            "rows": [
+                [
+                    "bola",
+                    "5",
+                    "1k6",
+                    "2",
+                    "5",
+                    "—",
+                    "20 láb",
+                    "1",
+                    "40r",
+                    "nem",
+                    "nem",
+                    "nem",
+                    "10"
+                ],
+                [
+                    "dobóháló",
+                    "10",
+                    "—",
+                    "—",
+                    "1",
+                    "8",
+                    "5 láb",
+                    "4",
+                    "3e",
+                    "nem",
+                    "nem",
+                    "nem",
+                    "10"
+                ],
+                [
+                    "dobótőr",
+                    "3",
+                    "1k6",
+                    "10",
+                    "5",
+                    "2",
+                    "20 láb",
+                    "0.5",
+                    "1e 50r",
+                    "nem",
+                    "nem",
+                    "nem",
+                    "10"
+                ],
+                [
+                    "hajítóbárd",
+                    "3",
+                    "1k6+2",
+                    "9",
+                    "6",
+                    "4",
+                    "20 láb",
+                    "1.2",
+                    "1e",
+                    "nem",
+                    "nem",
+                    "nem",
+                    "20"
+                ],
+                [
+                    "hajítódárda",
+                    "5",
+                    "2k6+1",
+                    "8",
+                    "13",
+                    "5",
+                    "40 láb",
+                    "1",
+                    "5e",
+                    "nem",
+                    "nem",
+                    "igen",
+                    "20"
+                ],
+                [
+                    "slan csillag",
+                    "3",
+                    "1k6/2",
+                    "10",
+                    "4",
+                    "—",
+                    "10 láb",
+                    "0.1",
+                    "40r",
+                    "nem",
+                    "nem",
+                    "nem",
+                    "5"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "Íjak"
+        },
+        {
+            "type": "table",
+            "headers": [
+                "Név",
+                "Időigény",
+                "Sebzés*",
+                "KÉ",
+                "CÉ",
+                "Táv",
+                "Súly",
+                "Ár",
+                "Lefegyverzés",
+                "Fegyvertörés",
+                "Átütés**",
+                "STP"
+            ],
+            "rows": [
+                [
+                    "rövid íj",
+                    "3",
+                    "1k6",
+                    "5",
+                    "5",
+                    "50 láb",
+                    "0.5",
+                    "2a",
+                    "nem",
+                    "nem",
+                    "nem",
+                    "5"
+                ],
+                [
+                    "hosszú íj",
+                    "3",
+                    "2k6+1",
+                    "4",
+                    "4",
+                    "150 láb",
+                    "1",
+                    "3a 5e",
+                    "nem",
+                    "nem",
+                    "nem",
+                    "15"
+                ],
+                [
+                    "visszacsapó íj",
+                    "3",
+                    "2k6+2",
+                    "3",
+                    "8",
+                    "150 láb",
+                    "1",
+                    "25a",
+                    "nem",
+                    "nem",
+                    "nem",
+                    "25"
+                ],
+                [
+                    "elf íj*",
+                    "3",
+                    "2k6+2/2k6",
+                    "6/4",
+                    "15/8",
+                    "150/100 láb",
+                    "0.7",
+                    "120a",
+                    "nem",
+                    "nem",
+                    "igen",
+                    "30"
+                ]
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Megjegyzés: Elf íj",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "Nyílpuskák"
+        },
+        {
+            "type": "table",
+            "headers": [
+                "Név",
+                "Időigény",
+                "Sebzés*",
+                "KÉ",
+                "CÉ",
+                "Táv",
+                "Súly",
+                "Ár",
+                "Lefegyverzés",
+                "Fegyvertörés",
+                "Átütés**",
+                "STP"
+            ],
+            "rows": [
+                [
+                    "könnyű nyílpuska",
+                    "3",
+                    "1k6",
+                    "5",
+                    "5",
+                    "50 láb",
+                    "1.3",
+                    "20a",
+                    "nem",
+                    "nem",
+                    "nem",
+                    "5"
+                ],
+                [
+                    "kahrei nyílpuska",
+                    "5",
+                    "2k6*",
+                    "6",
+                    "14",
+                    "100 láb",
+                    "4",
+                    "120a",
+                    "nem",
+                    "nem",
+                    "igen",
+                    "15"
+                ],
+                [
+                    "vadász számszeríj",
+                    "10",
+                    "3k6",
+                    "5",
+                    "15",
+                    "150 láb",
+                    "4",
+                    "8a",
+                    "nem",
+                    "nem",
+                    "igen",
+                    "20"
+                ],
+                [
+                    "nehéz nyílpuska",
+                    "2 kör",
+                    "6k6",
+                    "0",
+                    "15",
+                    "250 láb",
+                    "7",
+                    "12a",
+                    "nem",
+                    "nem",
+                    "igen",
+                    "30"
+                ],
+                [
+                    "shadoni páncéltörő",
+                    "4 kör",
+                    "8k6",
+                    "0",
+                    "20",
+                    "400 láb",
+                    "20",
+                    "40a",
+                    "nem",
+                    "nem",
+                    "igen",
+                    "35"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "Egyéb célzófegyverek"
+        },
+        {
+            "type": "table",
+            "headers": [
+                "Név",
+                "Időigény",
+                "Sebzés*",
+                "KÉ",
+                "CÉ",
+                "Táv",
+                "Súly",
+                "Ár",
+                "Lefegyverzés",
+                "Fegyvertörés",
+                "Átütés",
+                "STP"
+            ],
+            "rows": [
+                [
+                    "fúvócső",
+                    "3",
+                    "1k6/2**",
+                    "8",
+                    "7",
+                    "30 láb",
+                    "0.4",
+                    "6e",
+                    "nem",
+                    "nem",
+                    "nem",
+                    "2"
+                ],
+                [
+                    "tüvető",
+                    "3",
+                    "1k6/3**",
+                    "10",
+                    "2",
+                    "5 láb",
+                    "0.2",
+                    "6e",
+                    "nem",
+                    "nem",
+                    "nem",
+                    "5"
+                ],
+                [
+                    "parittya",
+                    "5",
+                    "2k6",
+                    "4",
+                    "6",
+                    "100 láb",
+                    "0.1",
+                    "30r",
+                    "nem",
+                    "nem",
+                    "nem",
+                    "5"
+                ]
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Távolsági sebzés csökkenés",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Átütés számítása",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Íjászszabály kivétel",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        }
+    ]
+}

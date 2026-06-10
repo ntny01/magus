@@ -1,0 +1,142 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": false,
+    "section_title": "",
+    "content_blocks": [
+        {
+            "type": "rule",
+            "title": "Vérfarkas",
+            "headers": [
+                "Előfordulás",
+                "Megjelenők száma",
+                "Termet",
+                "Méretkategória",
+                "Sebesség",
+                "Időigény",
+                "Kezdeményező érték",
+                "Támadó érték",
+                "Védő érték",
+                "Célzó érték",
+                "Sebzés",
+                "Életerő pontok",
+                "Fájdalomtűrés pontok",
+                "Asztrál ME",
+                "Mentál ME",
+                "Méregellenállás",
+                "Pszi",
+                "Intelligencia",
+                "Max. Mp",
+                "Jellem",
+                "Tapasztalati pont",
+                "Necrografiai osztály"
+            ],
+            "rows": [
+                [
+                    "Ritka",
+                    "1",
+                    "E",
+                    "2",
+                    "120 (SZ)",
+                    "3",
+                    "35",
+                    "80",
+                    "110",
+                    "30",
+                    "1k10 (harapás)",
+                    "–",
+                    "60",
+                    "Immunis",
+                    "Immunis",
+                    "Immunis",
+                    "–",
+                    "Magas",
+                    "–",
+                    "Káosz, Halál",
+                    "80",
+                    "III. kóborló dög"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A fenti értékek a farkas formára vonatkoznak, emberi alakban az eredeti értékek maradnak!"
+        },
+        {
+            "type": "paragraph",
+            "text": "A vérfarkas – egyes területeken farkasembernek is nevezik – egy kóborló dög által megszállt ember."
+        },
+        {
+            "type": "paragraph",
+            "text": "Egyes emberek a vérengzésnek és kegyetlenkedésnek olyan határtalan fokát érik el életük folyamán, hogy halálukkor kiesnek a reinkarnáció folyamából, és vérfarkasként léteznek tovább. Egy ilyen lélek bármikor beköltözhet egy emberi testbe. Ha Akaratereje nagyobb, mint az áldozaté, akkor azonnal átveszi a teste fölött az uralmat, ha kisebb, akkor azon bizonyos konstellációknál, leggyakrabban, mikor a kék hold megtelik."
+        },
+        {
+            "type": "paragraph",
+            "text": "Amint a testet birtokukban tudják, elkezdik átalakítani, és az néhány perc leforgása alatt óriás farkassá változik, ami egész éjszaka pusztít és vérengzik. Amint fölkel a nap, a farkas visszaalakul emberré, a vérfarkas lélek visszahúzódik, teret adva az áldozat lelkének, aki az egészből semmit sem sejt. Fontos megjegyezni, hogy csak a testbe költözött lélek túlvilági teremtmény, maga a test nem, az hordozza az Élet princípiumát."
+        },
+        {
+            "type": "paragraph",
+            "text": "Azok, akiket vérfarkas száll meg, már keveset tehetnek – azok azonban, akiket a lény prédaul kiszemelt, annál többet. A leghatékonyabb talán, ha az átalakult farkast ezüstfegyverrel sebzik, mert ez az egyetlen sebzés, amit a testet bitorló lélek is megérez, sőt az efféle szúrás vagy vágás rettentő kínokat okoz neki. Ha ilyen módon az átalakult farkas 0 Fp alá kerül, a beköltözött lélek nem bírja tovább, elhagyja a testet, és nem költözik bele senki másba egy teljes éven át. Természetesen az áldozat azonnal visszaalakul emberré, de a Fájdalomtűrés pontjai nem térnek vissza azonnal. A farkasként szerzett sebek megmaradnak az emberi testen is."
+        },
+        {
+            "type": "paragraph",
+            "text": "A legrosszabb a vérfarkasokkal kapcsolatban mégis az, hogy akit egyszer megszálltak, annak a lelkét befolyásolják. Az áldozat, aki maga is vérengző farkasként pusztít, lélekben is vérfarkassá válhat. Minden elpusztított ember után 5% halmozódó esély van arra, hogy maga is átváltozzon. Ekkor az eredeti megszálló lélek új áldozat után kutatva elhagyja a régit, aki viszont maga is vérfarkasként folytatja életét."
+        },
+        {
+            "type": "paragraph",
+            "text": "Mint minden egyéb lelket, a vérfarkast is be lehet börtönözni Lélekcsapda varázsjellel – a neve ismeretében."
+        },
+        {
+            "type": "rule",
+            "title": "Vámpír",
+            "headers": [
+                "Előfordulás",
+                "Megjelenők száma",
+                "Termet",
+                "Méretkategória",
+                "Sebesség",
+                "Időigény",
+                "Kezdeményező érték",
+                "Támadó érték",
+                "Védő érték",
+                "Sebzés",
+                "Életerő pontok",
+                "Fájdalomtűrés pontok",
+                "Asztrál ME",
+                "Mentál ME",
+                "Méregellenállás",
+                "Intelligencia",
+                "Jellem",
+                "Tapasztalati pont",
+                "Necrografiai osztály"
+            ],
+            "rows": [
+                [
+                    "Nagyon ritka",
+                    "1",
+                    "E",
+                    "1",
+                    "100 (SZ)",
+                    "3 vagy fegyver szerint",
+                    "32",
+                    "80",
+                    "120",
+                    "1k6 vagy fegyver",
+                    "40",
+                    "–",
+                    "Immunis",
+                    "Immunis",
+                    "Immunis",
+                    "Magas",
+                    "Káosz, Halál",
+                    "40",
+                    "III. vérívó élőholt"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A vámpír minden élőholtak közül a legveszedelmesebb, legravaszabb ellenfél, hiszen ránézésre nem lehet megállapítani kilétét. Megjelenését tekintve általában magas, délceg tartású emberre hasonlít, kemény, határozott arcvonásokkal. Bőre sápadt, ajkai teltek és vörösek – ám ezen jegyek alapján szinte semmivel nem könnyebb felismerni, hisz nem csupán rá jellemzőek. Hosszúra nőtt szemfogukat a vámpírok az utolsó pillanatig gondosan rejtve tartják. Viselkedésük minden esetben tiszteletet parancsoló, lényüket egyfajta fölényesség lengi körül. Tekintetüket kevés ember képes hosszan állni."
+        }
+    ]
+}

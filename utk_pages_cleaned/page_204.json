@@ -1,0 +1,96 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": false,
+    "section_title": "",
+    "content_blocks": [
+        {
+            "type": "rule",
+            "title": "Sequor",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Slan kard",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Slan tőr",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Szablya",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Nehéz kardok",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Slan csatakard",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Lovagkard",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Marasequor",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Másfélkezes kard",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Kétkezes kard",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Nyeles fegyverek",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        }
+    ]
+}

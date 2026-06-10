@@ -1,0 +1,44 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": false,
+    "section_title": "",
+    "content_blocks": [
+        {
+            "type": "paragraph",
+            "text": "Az igazi nehézvértet a mellvért, a félvértzet és a teljes vértzet nem sokban különböznek egymástól. Alapvető elemeik ugyanazok, csak az különbözteti meg őket, hogy mely részeket használják fel, illetve hagyják el éppen."
+        },
+        {
+            "type": "paragraph",
+            "text": "A mellvértet mindig domborúra készítik, általában gömbölyűre vagy gerinccel osztottra. A gyomorszáj tájékán gyakran csúcsba futó lemezzel erősítik meg, ami néha a szegycsontig is felér. Ez a rátét néhány páncél esetében külön mozgatható, így kevésbé akadályozza a páncél viselőjét."
+        },
+        {
+            "type": "paragraph",
+            "text": "A lovagi fél- és teljesvértek mellvasának jobb oldalán kap helyet az úgynevezett ordó, ami a nehézkopja megtámasztására szolgál. Ebbe a csuklós kampóba akasztja be a lovas a kopja végét, amit így könnyebb tartani, azaz pontosabb lesz vele a döfés. Néhány vérteken a hátlemezen is található ilyen ordó, ez a kopja végének megtámasztását szolgálja. A mellvashoz kapcsolódik a vállvért, amelyen sokszor magas gallér fut végig. Ez néhány esetben csak a bal oldalon található meg. Feladata a nyak védelme; általában rákozott megoldással készül. Fontos problémája a páncélkovácsoknak a vállvas és a mellvért találkozása. Itt ugyanis a váll széles mozgásigénye miatt a hónalj részben fedetlen marad. Ezt a vállakra szíjazott korongokkal, tárcsákkal igyekeznek áthidalni, de ez a megoldás sem kielégítő. Ezért van, hogy a páncélos lovag ellen – akár kopjával, akár karddal – az egyik leghatékonyabb szúrás a hónaljdöfés."
+        },
+        {
+            "type": "paragraph",
+            "text": "Lehetséges megoldást kínál a felemás páncél, aminek a jobb vállvasa kicsi, de a bal hosszan benyúlik a mellvas elé, mivel a balban csak a pajzsot kell tartani. A felső és alsó karvasakat a könyökvért köti össze, amelyen oldalt pillangószerű kiszélesedés védi a hajlatot. A hátvasak tagoltak, alakjuk jól követi az emberi testet. A merevség érdekében gyakran bordázottak. A mell- és hátvasakhoz szíjakkal csatlakozik a csatakötény, ami rendszerint rákozott, akárcsak a rákozott vért. Feladata a combok védelme. A mozgást és a lovaglást megkönnyítendő, ágyéknál általában helyet hagynak – ezt a részt a teljes vért alá vett fegyverkabáton sodrony rátéttel védik. A lábvértek csőszerű vasak, melyeket a mellvért alatt viselt övhöz szíjaznak, egymáshoz pedig vaskapoccsal vagy szíjakkal csatlakoztatnak. A comb- és lábszárvértet a térdvas kapcsolja össze, ami a könyökvértjéhez hasonlóan pillangószerű kiszélesedéssel védi a hajlatot. A mellvérthez felül vagy az állvért kapcsolódik, amihez azután a harangsisakot rögzítik, vagy az összetettebb zárt sisak. A sisak és a mellvért találkozása a vállvérthez hasonlóan nem teljesen megoldott, ezért az ellenfél álla is elsődleges célpont a lovagok számára. Az alkarvérthez vaskesztyű csatlakozik. Egyes vidékeken ez csak egy fémlemezekkel megerősített bőrkesztyű, de a nevesebb fegyverkovácsok olyan kesztyűket is készítenek, amelyek mindenütt acél alkatrészekből állnak, és pontosan követik a kéz mozdulatait. A legtöbb páncélkesztyű csak a kézhát felőli oldalon véd, a lovag tenyere szabadon marad, így képes megfogni fegyvereit. A lábszárvérthez vassaru csatlakozik. Ennek orrészére gyakran hosszú, hegyes toldalékot illesztenek, ez azonban csak a lovasságra jellemző – a gyalogság vassarui elöl mind lekerekítettek."
+        },
+        {
+            "type": "paragraph",
+            "text": "A nehézvért alá, a hézagok elfedésére sodrony- vagy láncrátétet hordanak, amit a bőr- vagy posztóruházaton viselnek. A díszes, rangot jelző köpönyegék a vértezeteken kívülre kerülnek. A súly csökkentése végett a nehézvért alá vett kiegészítőket gyakran ötvözik. A bőr- vagy posztó fegyverkabátra csak ott erősítenek láncszövet darabokat, ahol annak védenie kell."
+        },
+        {
+            "type": "paragraph",
+            "text": "A félvért jóval egyszerűbb, itt a lábat védő páncéldarabok részben vagy teljes egészében elmaradnak. A csataszoknyát a megfelelő védelem miatt láncnadrággal egészítik ki. Gyakran a térdvértet külön is felveszik, mivel a térd különösen sérülékeny. A mellvért hagyományos értelemben csak a mellvasat tartalmazza, bár általában a hátvassal együtt veszik fel. Alkalmanként váll-, könyök- és térdvas egészíti ki, olykor a csataszoknyát is felcsatolják hozzá. Szintén láncinget vagy sodrony inget hordanak alatta, ami a lábakat és a karokat védi."
+        },
+        {
+            "type": "paragraph",
+            "text": "A szaknyelv gladiátorvértzetnek nevezi a következő összeállítást: alkar-, felkar- és lábszárvédők, övszerűen derékra csatolható hasvért, csak gyomorszájig leérő mellpáncél."
+        },
+        {
+            "type": "paragraph",
+            "text": "A gladiátorokhoz hasonló, de erősebb és vállvasakkal is ellátott kráni vértet viselnek Krán fejedelmei."
+        },
+        {
+            "type": "paragraph",
+            "text": "A kardművészvért egymásra erősített fémlemezkékből, pikkelyekből áll; mindig hajlékony, nem akadályozza a szabad mozgást."
+        }
+    ]
+}

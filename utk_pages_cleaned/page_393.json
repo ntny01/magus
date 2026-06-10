@@ -1,0 +1,270 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": false,
+    "section_title": "",
+    "content_blocks": [
+        {
+            "type": "table",
+            "title": "Mentálmágia",
+            "headers": [
+                "Varázslat neve",
+                "Mana pont",
+                "Időtartam",
+                "Varázslás ideje"
+            ],
+            "rows": [
+                [
+                    "Megértés (Olvasás)",
+                    "1 Mp/4 E",
+                    "30 kör (5 perc)",
+                    "1 szegmens"
+                ],
+                [
+                    "Dadogás (Kábítás)",
+                    "1 Mp/3 E",
+                    "3 kör",
+                    "1 szegmens"
+                ],
+                [
+                    "Beszéltetés (Írás)",
+                    "1 Mp/2 E",
+                    "6 kör (1 perc)",
+                    "1 szegmens"
+                ],
+                [
+                    "Némaság (Bénítás)",
+                    "1 Mp/E",
+                    "1 kör",
+                    "1 szegmens"
+                ],
+                [
+                    "Érzékelés (Olvasás)",
+                    "1 Mp/4 E",
+                    "30 kör (5 perc)",
+                    "1 szegmens"
+                ],
+                [
+                    "Tompítás (Kábítás)",
+                    "1 Mp/3 E",
+                    "6 kör (1 perc)",
+                    "1 szegmens"
+                ],
+                [
+                    "Illúzió (Írás)",
+                    "1 Mp/2 E",
+                    "3 kör",
+                    "1 szegmens"
+                ],
+                [
+                    "Érzéketlenség (Bénítás)",
+                    "1 Mp/E",
+                    "1 kör",
+                    "1 szegmens"
+                ],
+                [
+                    "Emlékolvasás (Olvasás)",
+                    "2 Mp/4 E",
+                    "30 kör (5 perc)",
+                    "1 szegmens"
+                ],
+                [
+                    "Részleges Amnézia (Kábítás)",
+                    "2 Mp/3 E",
+                    "6 kör (1 perc)",
+                    "1 szegmens"
+                ],
+                [
+                    "Felejtés (Írás)",
+                    "2 Mp/2 E",
+                    "3 kör",
+                    "1 szegmens"
+                ],
+                [
+                    "Teljes Amnézia (Bénítás)",
+                    "2 Mp/E",
+                    "1 kör",
+                    "1 szegmens"
+                ],
+                [
+                    "Követés (Olvasás)",
+                    "2 Mp/4 E",
+                    "30 kör (5 perc)",
+                    "1 szegmens"
+                ],
+                [
+                    "Kábaság (Kábítás)",
+                    "2 Mp/3 E",
+                    "6 kör (1 perc)",
+                    "1 szegmens"
+                ],
+                [
+                    "Irányítás (Írás)",
+                    "2 Mp/2 E",
+                    "3 kör",
+                    "1 szegmens"
+                ],
+                [
+                    "Bénultság (Bénítás)",
+                    "2 Mp/E",
+                    "1 kör",
+                    "1 szegmens"
+                ],
+                [
+                    "Gondolatolvasás (Olvasás)",
+                    "3 Mp/4 E",
+                    "30 kör (5 perc)",
+                    "1 szegmens"
+                ],
+                [
+                    "Zavarodottság (Kábítás)",
+                    "3 Mp/3 E",
+                    "6 kör (1 perc)",
+                    "1 szegmens"
+                ],
+                [
+                    "Akaratátvitel (Írás)",
+                    "3 Mp/2 E",
+                    "3 kör",
+                    "1 szegmens"
+                ],
+                [
+                    "Tudattalanság (Bénítás)",
+                    "3 Mp/1 E",
+                    "1 kör",
+                    "1 szegmens"
+                ]
+            ]
+        },
+        {
+            "type": "table",
+            "title": "Rúnamágia - Varázskörök",
+            "headers": [
+                "Rúna neve",
+                "Erősség",
+                "Mana-pont"
+            ],
+            "rows": [
+                [
+                    "Kirekesztő varázskörök",
+                    "Végtelen erősségű",
+                    "Lásd a leírást!"
+                ],
+                [
+                    "Bebörtönző varázskörök",
+                    "Végtelen erősségű",
+                    "Lásd a leírást!"
+                ],
+                [
+                    "Védő varázskörök",
+                    "Lásd a leírást!",
+                    "Lásd a leírást!"
+                ],
+                [
+                    "Körbezáró varázskörök",
+                    "Lásd a leírást!",
+                    "Lásd a leírást!"
+                ],
+                [
+                    "Végrehajtó varázskör",
+                    "Amennyi a beleírt varázslaté",
+                    "40 + a varázslat"
+                ]
+            ]
+        },
+        {
+            "type": "table",
+            "title": "Rúnamágia - Varázsjelek",
+            "headers": [
+                "Varázsjelek",
+                "Mana-pont"
+            ],
+            "rows": [
+                [
+                    "Változás varázsjel",
+                    "Háromszoros Mp"
+                ],
+                [
+                    "Zóna varázsjel",
+                    "25 Mp"
+                ],
+                [
+                    "Személyes aura varázsjel",
+                    "40 Mp"
+                ],
+                [
+                    "Mágikus aura varázsjel",
+                    "Lásd a leírást!"
+                ],
+                [
+                    "Kisugárzó varázsjel",
+                    "20/30 + a varázslat"
+                ],
+                [
+                    "Szimpátia varázsjel",
+                    "20"
+                ],
+                [
+                    "Kémszem varázsjel",
+                    "Lásd a leírást!"
+                ],
+                [
+                    "Térgát varázsjel",
+                    "1 Mp/E/1 ynevi láb sugár"
+                ],
+                [
+                    "Tércsapda varázsjel",
+                    "2 Mp/E/1 lábnyi sugár"
+                ],
+                [
+                    "Tapadás varázsjel",
+                    "1 Mp/5 ynevi font"
+                ],
+                [
+                    "Forgás varázsjel",
+                    "1 Mp/ 5 ynevi font"
+                ]
+            ]
+        },
+        {
+            "type": "table",
+            "title": "Rúnamágia - Béylegek",
+            "headers": [
+                "Bélyegek",
+                "Erősség",
+                "Mana-pont"
+            ],
+            "rows": [
+                [
+                    "Asztrálbélyeg",
+                    "Végtelen erősségű",
+                    "Lásd a leírást!"
+                ],
+                [
+                    "Mentálbélyeg",
+                    "Végtelen erősségű",
+                    "Lásd a leírást!"
+                ],
+                [
+                    "Változás bélyege",
+                    "Amennyi a beleírt varázslaté",
+                    "Háromszoros Mp"
+                ]
+            ]
+        },
+        {
+            "type": "table",
+            "title": "Rúnamágia - Pentagrammák",
+            "headers": [
+                "Pentagrammák",
+                "Mana-pont"
+            ],
+            "rows": [
+                [
+                    "Térkapu pentagramma",
+                    "70 (2x)"
+                ]
+            ]
+        }
+    ]
+}

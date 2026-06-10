@@ -1,0 +1,135 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": false,
+    "section_title": "",
+    "content_blocks": [
+        {
+            "type": "flavor_text",
+            "text": "Az Elsődleges Anyagi Sík, melyen élünk – számtalan egyéb között – az Ősvíz alapú Anyagi Síkok csoportjába tartozik. Mint ilyen, anyagai, tárgyai, élőlényei nagy részére nézve ártalmas az Ősvíz elemi ellentéte, az Őstűz – s ezáltal a természetes tűz is."
+        },
+        {
+            "type": "flavor_text",
+            "text": "Ezt használja fel a tűzvarázsló, hogy különleges tűzmágiája segítségével megvédelmezze magát vagy kárt tegyen azokban, akik útját állják.”"
+        },
+        {
+            "type": "flavor_text",
+            "text": "A tűzvarázslók tapasztalati mágusok: nem kutatják varázslataik titkait, nem keresik a választ, hogy miként, és főképp miért működnek. Nem törekszenek arra, hogy a jelenségek mélyére lássanak; megelégszenek azzal, hogy megtörténnek – úgy és akkor, ahogyan és amikor ők akarják. Mert kétségtelen: hatalommal bírnak az Ősés a természetes tűz felett; megoldott, mint bárki más...!”"
+        },
+        {
+            "type": "flavor_text",
+            "text": "Sonor – Theoretica Magica"
+        },
+        {
+            "type": "flavor_text",
+            "text": "A tűzvarázslatok kivétel nélkül mind az Anyagi Síkon az áldozatok Anyagi Testére hatnak, ezért ellenük semmiféle Asztrális vagy Mentális Mágiaellenállásnak nincs. Az, hogy az áldozat képes-e – legalább valamennyire – kivonni magát a hatás alól, csak attól függ, elég ügyes és gyors-e ahhoz, hogy félrevetődjön, vagy valamely más módon megóvja testének épségét. Az ilyesmi természetesen nagyban függ a környezeti adottságoktól is. Más szavakkal: attól, hogy akad-e fedezék a közelben, vagy sem."
+        },
+        {
+            "type": "paragraph",
+            "text": "Közönséges tüzek fokozatai:"
+        },
+        {
+            "type": "table",
+            "headers": [
+                "Erősség",
+                "Fokozat",
+                "Sebzés",
+                "Fényerősség"
+            ],
+            "rows": [
+                [
+                    "0",
+                    "Gyertya",
+                    "1k6 Sp",
+                    "2 láb"
+                ],
+                [
+                    "1",
+                    "Fáklya",
+                    "1k6 Sp",
+                    "5 láb"
+                ],
+                [
+                    "2",
+                    "Kandallótűz",
+                    "2k6 Sp",
+                    "8 láb"
+                ],
+                [
+                    "3",
+                    "Táborűz",
+                    "3k6 Sp",
+                    "12 láb"
+                ],
+                [
+                    "4",
+                    "Jelzőtűz",
+                    "4k6 Sp",
+                    "16 láb"
+                ],
+                [
+                    "5",
+                    "Máglya",
+                    "5k6 Sp",
+                    "20 láb"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A tűz manafókuszából a tűzvarázsló 1 perc alatt annyi Mana pontot képes az elméjébe gyűjteni, amennyi a Tapasztalati szintje, plusz a tűzvagy a hőhatás Erőssége (E). Ha az adott fényudvaron belül több tűz is elhelyezkedik, úgy erősségük nem adódik össze, csak a legerősebb érvényesül. Legkevesebb 1 E tűzerősség szükséges, tűz nélkül vagy kisebb erősítésnél a manakinyerés nem történik meg."
+        },
+        {
+            "type": "paragraph",
+            "text": "A Tűzgyűjtés nem alkalmazható olyan tűz vagy tűzhely mellett, melyen papi Áldás vagy Szertartás varázslat hat, továbbá szent tüzekből. Szintén sikertelen, ha a tűz nem folyamatos, megszakad vagy elalszik. Utóbbi esetben a megszakadásig begyűjtött Mana pontok megmaradnak, de a meditációt újra kell kezdeni – elsőként is a kialudt tűz meggyújtásával, majd újabb Ψ-pontok feláldozásával."
+        },
+        {
+            "type": "paragraph",
+            "text": "A transzállapot elérésére és további fenntartására a végrehajtónak percenként 3 Ψ-pontot kell áldoznia. A Tűzgyűjtés ideje alatt nem végezhet semmilyen fizikai vagy szellemi tevékenységet, mozdulatlanul ül. Magától bármikor visszatérhet a köznapi tudatállapotba, de külső erők nem képesek kizökkenteni: hiába beszélnek hozzá, rázzák stb., a külső jelekből nem érzékel semmit. Transzát megszakítani csak Fp vagy Ép-veszteség okozásával lehet, ekkor az addig begyűjtött Mp-k megmaradnak."
+        },
+        {
+            "type": "paragraph",
+            "text": "Példa: egy 2. szintű tűzvarázsló egy tábortűz (3 E) hatósugarán (fényerősségén) belül meditálva percenként 5 Mana pontot gyűjthet az elméjébe. Ha maximális Mana pontja 15 és 9 Ψ-pontba kerül."
+        },
+        {
+            "type": "section",
+            "title": "Mananyerés"
+        },
+        {
+            "type": "paragraph",
+            "text": "A tűzvarázslók különböző módozatokat ismernek Mana pontjaik visszanyerésére. A Tűzkobra beavatottjai – noha lakhelyüket és neveltetésüket tekintve más-más úton közelítenek az isteni tökéletességhez – szabadon alkalmazhatják valamennyit, hisz az eljárások gyökerei a tradíció godoni múltjába nyúlnak vissza, s mint ilyenek, a tűz megabólázásának eszmei alapját képezik."
+        },
+        {
+            "type": "section",
+            "title": "Tűzgyűjtés (Godoni transz)"
+        },
+        {
+            "type": "paragraph",
+            "text": "Ψp: 3 Ψp/perc A meditáció ideje: 1 perc Időtartam: Korlátlan"
+        },
+        {
+            "type": "paragraph",
+            "text": "A metódus a tűz azon nyilvánvaló tulajdonságát használja ki, hogy fókuszálja a Világegyetemben természetes formában jelenlévő mágikus szubsztanciát, a manát. Ennek kinyerésére a tűzvarázslók a transz egy formáját használják, egy ősi godoni diszciplína tökéletlenül fennmaradt változatát, mely ma már csak managyűjtésre használatos. Bizonyos tekintetben hasonlít a Pszi Pyarroni módszerének Transzához, ám annál sokkal mélyebb tudatállapotba ragadja alkalmazóját. Elméletileg bármely varázstudó felhasználhatná managyűjtésre, de Ordan tűzvarázslói féltékenyen őrzik elsajátításának titkát."
+        },
+        {
+            "type": "paragraph",
+            "text": "A diszciplína segítségével a tűzvarázsló mély transzállapotba kerül. Ehhez 1 percig mozdulatlanul meditál, s teljes akarattal az elmélyülésre összpontosít. Az idő leteltével transzba kerül, s csak ekkor veszi kezdetét – továbbra is ebben a tudatállapotban – a Mana pontok begyűjtése. A tűzvarázsló csak akkor képes egy tűz manafókuszából is tulajdonságát kiaknázni, ha a tűz fényerősségén belül tartózkodik – a távolságról a tűz erősségének függvényében az alábbi táblázat tudósít."
+        },
+        {
+            "type": "section",
+            "title": "Tüzelnyelés"
+        },
+        {
+            "type": "paragraph",
+            "text": "A Tüzelnyelés képessége kétségtelenül a Godoni mágia hagyatéka, habár a tűzvarázslók – mágiájuk más részleteihez hasonlóan – nincsenek tisztában elméleti magyarázatával. A Tüzelnyelés képességével a tűzvarázsló bármilyen (legyen akár közönséges vagy elemi) tűzből és hőhatásból, mely folyamatosan, azaz legalább 1 körig hat rá, képes minden egyes körben annyi mágikus energiát (Mana pontot) kivonni, amennyi a tűz erőssége."
+        },
+        {
+            "type": "paragraph",
+            "text": "Erre addig képes, amíg fel nem töltődik a maximális Mana pontig, amennyit elméje az adott Tapasztalati szinten befogadni képes. A különleges energiagyűjtés ideje alatt természetesen éppúgy sebződik a tűztől, mint bárki más. 1 E-nél kisebb erejű tűzből (gyertya, mécses stb.), bármennyi ideig is hasson rá, és 1 körnél rövidebb hatásokból (Tűznyél) képtelen manát kivonni."
+        },
+        {
+            "type": "paragraph",
+            "text": "Akkor – és csak akkor –, ha a tűzvarázsló elméje teljesen feltöltődött, a Tüzelnyelés jellege megváltozik. Ettől kezdve a varázsló képes bármilyen (közönséges vagy elemi) tűz, hőhatás sebzéséből az Erősségnek (E) megfelelő – de minimum 1 – Sp-t semlegesíteni körönként. Ilyenkor gyertya vagy mécses nem is tudja megégetni. A hatás ideje bármennyi lehet, akár 1 körnél rövidebb is. Például: egy 3 E"
+        }
+    ]
+}

@@ -1,0 +1,52 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": true,
+    "section_title": "Vallás",
+    "content_blocks": [
+        {
+            "type": "paragraph",
+            "text": "A toroniak élvezik az életet, és minden lehetőséget megragadnak, hogy ezt megtehessék. Előszeretettel használnak ajzóés kábítószereket, afrodiziákumokat, gyakorta ezek furfangos keverékét. A legismertebbek az Angyalkönny, amit borban elkeverve fogyasztanak – ez szerelmi serkentő és kábítószer egyaránt; a súlyos függésben lévők szeme sárgásra színeződik tőle; Rualan Pora, a nyálkahártyán és sebeken keresztül felszívódó ajzószer – az orgyilkosok kedvelt serkentője, mely hihetetlen éberséggel, gyorsasággal és állóképességgel ruházza fel a vele élőket, ám alkalmazását szörnyű rosszullét követi –; és a Démonfüst, e rendkívül erős hallucinogén, amely kellemes illatával könnyen befolyásolhatóvá teszi áldozatát, nemegyszer könnyítve meg ezzel a boszorkányszekták dolgát."
+        },
+        {
+            "type": "paragraph",
+            "text": "A toroni nemesség – elsősorban a Nemes Házak – megszámolhatatlan rabszolgájukból húzzák a legtöbb hasznot. Mindenütt megtaláljuk ezeket a szerencsétleneket, akiket vagy valamely hadjáratban zsákmányoltak, vagy a törvény sújtotta ilyen büntetéssel őket, esetleg adósságaik vagy elővigyázatlanságuk miatt jutottak erre a sorsra."
+        },
+        {
+            "type": "paragraph",
+            "text": "A legtöbb rabszolgája Tharr egyházának van. Sem ők, sem más szervezetek nem rendelkeznek azonban saját földdel, mindezeket a Dinasztia látja el, cserébe az ideológiai támaszért. Tharr vezető szerepére jellemző, hogy az ellene szegülőket kíméletlenül elpusztítja, s így a többi egyház híveinek is némiképp az ő elveikhez kell igazítaniuk tanikat. A Háromfejűnek több szektája is létezik a különböző tartományokban; egymással vívott háborúik gyakoriak, ám a közös ellenséggel szemben mindig összefognak. Számos katedrálist emeltek Toron-szerte, ezeket előszeretettel veszik körbe kolostorőredekkel, ahol a különböző beosztású papok és szerzetesek kapnak szállást. Még a legkisebb településen is megtalálhatók az igehirdetők – ha más nem, hát az országot járó kolduló tanítók, a khótorr-papok egyike."
+        },
+        {
+            "type": "paragraph",
+            "text": "A Háromfejű úgy Sogronnak van a legtöbb híve az országban, jellemző a kyr gondolkodás alakulására, hogy a Tűzkobra ordani hívei mennyire másként ítélik meg a világ dolgainak állását és a követendő utakat, mint toroni ellenfeleik. Természetesen mindkét fél szakadárnak, eretneknek bélyegzi a másikat. Kibékíthetetlen ellentét feszül a két sogronita tábor között. Nemcsak elveikben, de módszereikben is különböznek."
+        },
+        {
+            "type": "paragraph",
+            "text": "A legfontosabb ezek között a Tűzmágia alkalmazása. Míg Ordanban a godoni alapokon nyugvó Tűzmágiát oktatják a tűzvarázslók a Rend érdekében, addig Toronban a Tűzkobra papjai elsősorban Tharr hitének erősítésére használják fel hatalmukat. A kyr időkben Sogron elsősorban a kíváncsiság és a tudásvágy istene volt, mióta azonban Tharr a panteon főistene, ő lett a pusztító és igazságot hozó tűz ura is. Toroni rendjei két irányzatra szakadtak, attól függően, mennyire itatta át őket a Háromfejű kaotikus befolyása."
+        },
+        {
+            "type": "paragraph",
+            "text": "A magukat az Őstűz Urainak nevezők, hívők maradtak meg leginkább a hagyományos sogronita filozófiánál, jóllehet a Tűzkobra égi státuszának megfelelően alávetették magukat Tharrnak, s őt szolgálják. Szektáik helyhez kötött életmódot folytatnak, templomaik minden városban megtalálhatók, papjaik tudományos munkái a legelismertebbek közé tartoznak."
+        },
+        {
+            "type": "paragraph",
+            "text": "A Lángvihar irányzat követői sokkal szabadabban, kötetlenebbül élnek. Templomaik, kolostoraik nincsenek, csupán pihenőházaik, imáikat a szabad ég alatt gyújtott tüzeknél mutatják be. Nem tömörülnek szektákba, magányos papjaik jobbára vándorlással töltik életüket, csak a legszigorúbb ítéletidő kényszerítheti őket, hogy két-három hónapig egy helyben maradjanak. Filozófiájuk hevesebb, agresszívebb és vadabb, mint az Őstüzek Uraié, mindazonáltal nincs különösebb hitbeli ellentét a két tábor között."
+        },
+        {
+            "type": "paragraph",
+            "text": "Sogron toroni követőinek mágiája papi mágia. Tűzvarázslók nincsenek a birodalomban, csak néhány renegát, akik vagy maguk is renegát mesterektől tanulták tudományukat, vagy megcsömörlöttek az ordani hierarchiától, és északon keresték tőle a szabadulást. Tanítással nem foglalkoznak, Tharrt és Sogrort segítik tudásukkal. Természetszerűleg nem gyűlölik a Háromfejű híveit, mint a déliek, s gyakorta közösen lépnek fel velük Toron ellenségeivel szemben."
+        },
+        {
+            "type": "paragraph",
+            "text": "A vallásokról szólva említést kell tenni a Kitaszított néhány szentélyéről és az Orwella-hitű boszorkányszektákról. Ők csak amolyan megátkozott személyek, hisz a Hatalmasok kudarcként élték meg a Kitaszítottal való szövetséget. Mindaddig azonban, amíg Daumyr egyes urainak érdeke úgy kívánja, a Kígyószív imádói helyet kapnak a birodalomban."
+        },
+        {
+            "type": "paragraph",
+            "text": "Elhanyagolható számban létezik néhány Weilának szentelt oltár, és Morgena hívei sem veszik ki végleg Ynevről, ám befolyásuk, politikai szerepük egyelőre sem közelíti régi hatalmukat. Szólni kell viszont a hekkákról, ezekről a mindenütt jelenlévő, sajátos bálványokról, akik igen fontos szerepet töltenek be Toron hitvilágában. Szentek, jó és rossz szellemek, csekély hatalmú istenségek – sokféleképpen próbálták már jellemezni ezeket a természetfölötti lényeket, melyek az elsősorban a köznép körében népszerűek. Hol istenekként szerepelnek, hol csak egyszerű erdő- vagy hegyiszellemként. Papjaik, szektáik nincsenek, de a beléjük vetett hit igen mélyen gyökerezik a toroni hagyományokban. Felfedezhetően a Káoszkorban születtek, eredetük roppant vegyes: akadnak közöttük Ryek fénykorából hátramaradt démonok, rangjukvesztett istenek is a bevándorló népek hitvilágából, égi hatalomra törő asztrál- és mentálszellemek, félisteni fattyak, korccsá sorvadt ősi manifesztációk, egyes tudósok szerint még néhány titokzatos aquir is."
+        },
+        {
+            "type": "paragraph",
+            "text": "Szót kell ejteni a próféták szerepéről is. Ezek a szent és érinthetetlen emberek különös megbecsülésnek örvendenek a császárságban. Nem kötődnek szorosan egyik valláshoz sem; kis csoportokban vagy magányosan járják az országot, s a hagyományokat, szent iratokat hirdetve próbálják az embereket helyes cselekedetekre biztatni példabeszédeikkel. Tanácsaikat, szónoklataikat mindenütt meghallgatják, gyakorta tulajdonítanak nekik jövendőmondó képességet. Általában alamizsnából élnek, de nem ritka, hogy egy-egy nemesúr maga mellé vesz egy barna szőrcsuhájáról már messziről felismerhető, talányos beszédű embert. Magának a császárnak is megvan a saját prófétája, amit udvari körökben ugyan nem néznek jó szemmel, mégsem tehetnek ellene semmit. Önmagukat az Igaz Út szónokainak tartják, a történetírás Nyolcadik Próféták néven emlegeti őket. Tény, hogy hátlátlan szálak fűzik őket egymáshoz, s hogy egyszerre szoktak eltűnni és felbukkanni, szinte mindig valami rendkívüli esemény előhírnökeiként. Hogy mennyi ideig prédikálnak, az nem függ semmitől. Volt már rá példa, hogy csupán két hónapon keresztül járták az országot, máskor több mint két évszázadon át maradtak. Legutóbb a Tizennegyedik Zászlóháború után tűntek fel, s egyelőre csak ködös utalásokba bocsátkoztak céljaik felől. Egyesek úgy értelmezik jövetelüket, mint Morgena újbóli hatalomra ébredésének jelét, mások Új-Kyria feledésének zálogát látják bennük. A többség azonban kivár; szerintük egyelőre nem lehet bizonyosat tudni a csuhások céljairól."
+        }
+    ]
+}

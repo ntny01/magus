@@ -1,0 +1,56 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "null",
+    "is_new_section": true,
+    "section_title": "Nekromancia",
+    "content_blocks": [
+        {
+            "type": "paragraph",
+            "text": "Nekromanciának a mágia életerővel, vitális energiákkal, halottidézéssel, élőhalott-ellenőrzéssel és másvilági (Külső Síkról származó) teremtmények megidézésével foglalkozó fejezetet nevezzük. Mivel a varázslatok célpontjai hol testek vagy lelkek, ezért velük szemben nincs Mágiaellenállás. Vannak persze mágiaformák, melyek élőlényekre hatnak, ám épp azért kerültek a legsötétebb Fekete mágiák besorolása alá, mivel kijátszva az egyetemes törvényeket, a testen belül végeznek roncsolást."
+        },
+        {
+            "type": "paragraph",
+            "text": "A Fekete mágia részei mindazok a varázslatok, melyek a legcsekélyebb mértékben is megbolygatják a lélekvándorlás törvényeit; melyek erőszakkal kiszakítják a lelket a testből, avagy más lelket, lényt plántálnak bele a test igazi tulajdonosának engedélye nélkül; melyek romboló, ártalmas hatást hoznak létre közvetlenül a testen belül; melyek közvetlenül kivonják az életerőt a testből és melyek az élőlények tömeges vagy felesleges pusztulását vonják maguk után."
+        },
+        {
+            "type": "paragraph",
+            "text": "A Nekromancia használata – akárcsak az összes többi Fekete mágiáé – mély nyomokat hagy az alkalmazó auráján. Az Asztrál Szem vagy Auraérzékelés diszciplínákkal, illetve a Szakrális mágia különböző Jellemérzékelés litániáival azonnal felismerhető, amennyiben a boszorkánymester elvéti Mágiaellenállását. Az efféle leleplezés Ynev számtalan országában (Puyarron, Shadon, Északi Szövetség) zaklatással, kitoloncolással jár, amennyiben pedig bizonyítást nyer, hogy az illető boszorkánymester, nemritkán nyilvánosan kivégzik."
+        },
+        {
+            "type": "paragraph",
+            "text": "Az egészen fekete aurák a papoknak azonnal megérzik, ha a boszorkánymester belép valamely isten templomába."
+        },
+        {
+            "type": "paragraph",
+            "text": "Vannak persze államok északon éppúgy, mint délen, ahol félelemmel vegyes tisztelettel tekintenek rájuk, s nem háborgatják őket. Azonban a boszorkánymester minden körülmények között jobban teszi, ha üzelmeit nem nyíltan, hanem nagy körültekintéssel és rejtve alkalmazza, mert soha nem lehet biztos benne, hogy ténykedésével mely hatalom vagy szervezet haragját idézi magára."
+        },
+        {
+            "type": "paragraph",
+            "text": "A Nekromanciában a boszorkánymesterek is a soha el nem évülő érdemű déznad nekromanta, Abdul al Sahred munkásságát tekintik irányadónak. A mester az élőhalottak és egyéb túlvilági teremtmények besorolásáról, természetéről Necrografia című összefoglaló igényű könyvében nyilatkozik."
+        },
+        {
+            "type": "rule",
+            "title": "Húsmasszk",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Magzat megrontása",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Öregítés",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        }
+    ]
+}

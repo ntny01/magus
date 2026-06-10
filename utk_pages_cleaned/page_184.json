@@ -1,0 +1,72 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": true,
+    "section_title": "Példabetegségek",
+    "content_blocks": [
+        {
+            "type": "paragraph",
+            "text": "Most álljon itt néhány kidolgozott, Yneven létező betegség, a fentiek alapján lebontva."
+        },
+        {
+            "type": "rule",
+            "title": "Aldennara",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "Szint: 3. Bőrbetegség. Lassú lefolyású. Levegő útján terjed. Minimális hatás: súlyos. Maximális hatás: kritikus. Egészségpróba: 12 óránként. Ez egy gyorsan terjedő, gombás fertőzés, mely a fejbőrt támadja meg. Hatására a haj csomókban kezd hullani, a bőrön csúf sebek jelennek meg. Ez a Karizmát a táblázatban leírtak alapján csökkenti, továbbá Fp vesztéssel jár: a táblázatban szereplő érték negyedét veszíti el az áldozat adott időközönként. A gyógyuláshoz el kell pusztítani a fejbőrön tenyésző gombát, ez pedig egy fa, a hamvas hárs leveléből készített borogatással lehetséges. A sűrű kivonattal át kell áztatni egy szövetdarabot, s azzal borogatni a sebes bőrt, naponta legalább 6 órán át. Ez az Egészségpróba +9-es módosítót ad."
+        },
+        {
+            "type": "rule",
+            "title": "Burjanhalál",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "Szint: 4. Egész szervezetre ható. Azonnali. Mágikus eredetű. Minimális hatás: nagyon súlyos. Maximális hatás: halálos. Egészségpróba: 12 óránként. A rendkívül ritka, mágikus eredetű betegséget, az Elátkozott Vidék egyes területeinek gonosz kipárolgásai okozzák. Olyan természetes-természetellenes csapdák ezek, melyeket minden állat és egyéb környékbeli lény ösztönösen elkerül. Igazi veszedelem tehát csak a külhoniakat fenyegeti. Mire ők megérzik a veszélyt, a betegség már befészkelte magát a szervezetükbe. A fertőződéshez a párát be kell lélegezni, ami után már dobható is a fertőzés elleni Egészségpróba. Ez megmutatja, megfertőzte-e a betegség a párolgás közelébe került élőlényt vagy sem. Ha igen, az áldozat egész testén és testében kisebb-nagyobb daganatok, ömlenyek keletkeznek, melyek teljesen véletlenszerűen egyszer felszívódnak, máskor felhasadnak. A szervezet sejtjei elszabadulnak, vaddá, elfajzottá válnak. A hatás meglehetősen riasztó: az áldozat állapotának megfelelő mennyiségű Fp-t veszít, s egyes Tulajdonságai, Ereje, Ügyessége, Gyorsasága, Egészsége és Karizmája is a táblázatoknak megfelelően csökken. A betegség elleni egyetlen hatásos, ismert ellenszer a mágia: a papok gyógyító varázslatai."
+        },
+        {
+            "type": "rule",
+            "title": "Ghrom kór",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "Szint: 4. Idegrendszerre ható. Gyors lefolyású. Harapással terjed. Minimális hatás: Enyhe lefolyású. Maximális hatás: Halállal fenyegető. Egészségpróba: javuláskor 5 naponként. Egy sivatagi ragadozó harapása az okozója e betegségnek. A kór a kéz idegeit támadja meg, s tönkreteszi annak finom, pontos mozgathatóságát. Hatására az Ügyesség a táblázat szerint csökken, a finom mozgásokkal kapcsolatos százalékos képzettségek (zsebmetszés, zárnyitás stb.) is negatív módosítót kapnak, a táblázatban leírtak alapján. A betegség szinte alig jár fájdalommal, a kéz inkább csak nehezen mozgathatóvá és irányíthatóvá válik. A gyógyulást nagyban elősegíti a tüskés bőröske leveléből készített főzet, melynek gőzét kell tartani a kezet, s mely az Egészségpróbára +5-ös módosítót ad."
+        },
+        {
+            "type": "rule",
+            "title": "Vérsapadás",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "Szint: 2. Keringésre ható. Gyors lefolyású. Cseppfertőzéssel terjed. Minimális hatás: súlyos. Maximális hatás: válságos. Egészségpróba: 16 óránként. Ez a csúf járvány Dél-Ynev egyes városaiban szedte áldozatait két-háromszáz évvel ezelőtt. A betegség gyorsan megfertőzött egész városrészeket is, s sokszor akár halállal is végződhetett a megfelelő ellátás hiánya miatt. Fertőzéskor a vér oxigént szállító vértestjei károsodnak, a vér színe megváltozik, a bőr színe súlyos esetben sárgás árnyalatot is felvehet. A betegek fáradékonyak, álmataggá válnak, s állapotuknak megfelelő módosítókat kapnak minden harci százalékra. Erő, Gyorsaság és Ügyesség pontjaik is csökkennek, s ha ezek nullára esnek, az illető meghal. A gyógyulást elősegíti a kékharmatfűből főzött tea, ami az Egészségpróbára +2-es módosítót ad. Segít még az állandó pihenés és a test melegen tartása, a pihenés +2 módosítót, a melegen tartás például nagy takarókkal, még +1 módosítót ad a dobásra. Tehát ha a gyógyítás összes eszköze együtt hat a betegre, a dobás már +5 módosítóval történhet."
+        },
+        {
+            "type": "rule",
+            "title": "Sreena átka",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "Szint: 1. Emésztőrendszerre ható. Lassú lefolyású. Cseppfertőzéssel terjed. Minimális hatás: súlyos. Maximális hatás: halállal fenyegető. Egészségpróba: 2 naponként. Egyes legendák szerint a fertőzésért felelős kórokozót egy bosszúálló boszorkánymester készítette, aki állati sorba akarta kényszeríteni az emberi fajt. Ténykedésének kezdetén alkotta meg a betegséget, hogy annak áldozatai „tudattalanul kérődzők módjára csak a föld gazait tömésszék magukba”. A betegség hatására ha az áldozat bármilyen húst vagy állati fehérjét – tejet, tojást – fogyaszt, szervezete lázadozni kezd. Nem tudja tökéletesen megemészteni az ilyen jellegű táplálékot, s a felhalmozódó káros anyagok következménye az állandó fájdalom és gyengeség. A megfertőzött karakter Egészsége a táblázatban leírtaknak megfelelően leesik, de csak ha húst vagy egyéb állati terméket fogyaszt. A kór Fp vesztéssel is jár: a táblázatban leírt pontok felét veszíti el az áldozat adott időegység alatt. A legtökéletesebb gyógymód, ha a beteg nem eszik húsfélét, s szépen lassan minden visszatér a megszokott kerékvágásba. Hogy megtudja, betegsége létezik-e még, ki kell próbálnia, azaz húst kell fogyasztania, s várni a kellemetlen utóhatást vagy annak elmaradását."
+        }
+    ]
+}

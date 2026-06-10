@@ -1,0 +1,62 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": null,
+    "is_new_section": false,
+    "section_title": "",
+    "content_blocks": [
+        {
+            "type": "rule",
+            "title": "Érzelmek amulettje",
+            "text": "Készítheti: Boszorkány\nMp: 80\nÁra: 4 ezüst\nAz amulett növeli viselőjének Asztrális Mágiaellenállását, kinézetét tekintve leggyakrabban apró ezüst korong."
+        },
+        {
+            "type": "table",
+            "headers": [
+                "Mp",
+                "Asztrál ME"
+            ],
+            "rows": [
+                ["60", "+5"],
+                ["80", "+10"],
+                ["100", "+15"],
+                ["120", "+20"]
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Tudatvédő amulett",
+            "text": "Készítheti: Boszorkánymester\nMp: 90\nÁra: 2 ezüst\nAz amulett növeli viselőjének Mentális Mágiaellenállását, kinézetét tekintve leggyakrabban egy ötszögletű acél lapocska."
+        },
+        {
+            "type": "table",
+            "headers": [
+                "Mp",
+                "Mentális ME"
+            ],
+            "rows": [
+                ["70", "+5"],
+                ["90", "+10"],
+                ["110", "+15"],
+                ["130", "+20"]
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Szerencseamulett",
+            "text": "Készítheti: Boszorkány\nMp: 120\nÁra: 2 ezüst\nAz amulett jó szerencsével ruházza fel viselőjét. A játékos saját dobásaihoz +1-et hozzáadhat (vagy levonhat, ha úgy kedvezőbb), ami minden kockadobásra vonatkozik, akármilyen céllal is gurítja a kockát. Mivel a szerencsét befolyásolja, nem módosítónak számít, hanem magát a dobást változtatja meg. Például: a 99 természetes 00-nak számít, a 01 pedig 02-nek."
+        },
+        {
+            "type": "rule",
+            "title": "Igazság amulettje",
+            "text": "Készítheti: Pap, boszorkány\nMp: 60\nÁra: 2 ezüst\nAki ezt az amulettet viseli, képes lesz különbséget tenni igazság és hazugság között, bármilyen meggyőzően érvelnek is az ellenkezője mellett. Az amulett használata koncentrációt igényel, azaz a karakternek figyelnie kell a hamisnak gondolt szavakra, (a játékosnak ezt előre be kell jelentenie!). Az amulett általában magában rejt egy darabka fehér, illetve fekete alabástromot."
+        },
+        {
+            "type": "paragraph",
+            "text": "Rúnamágiával készült varázstárgyak\nEfféle Varázstárgyat csak a Rúnamágiában megfelelően jártas karakter képes alkotni, mert egyedül ő ismeri a mágia mélyebb összefüggéseit, s a rajzolatok hatalmát. A Rúnamágiával készített tárgyak mindegyikén találhatunk Mágikus Aura Varázsjelet (lásd Rúnamágia), amely összefogja, s a tárgyhoz köti a mágikus hatást kölcsönző rúnákat, illetve ellátja őket energiával. Számlálhatatlan mágikus rúna létezik; mind más és más hatalommal ruházza fel a tárgyat, amelyre írták. A rúnák együttes alkalmazásával – akárcsak a Mozaikmágia esetében: varázslat mozaikokkal – szinte bármilyen mágikus hatás elérhető, következésképp bármilyen Varázstárgy elkészíthető. Hely hiányában nem sorolhatjuk fel az ismert rúnákat – a Rúnamágia mesterei több ezer efféle jelet tartanak számon –, csak néhány így készített Varázstárgyat."
+        },
+        {
+            "type": "paragraph",
+            "text": "A Varázstárgy készítésekor a varázsló a kiszemelt tárgyra írja fel a Mágikus Aura Varázsjelet, melybe belefoglalja a kívánt hatásnak megfelelő rúnát. Mivel a rúnát és a Mágikus Aura Varázsjelet egyszerre kell megrajzolnia, legfeljebb akkora hatalmú rúnát írat le, melynek Mana pont igénye a varázsjellel együtt sem haladja meg max. Mp-ját. Értelemszerűen, ha már elhasználta a fejében tárolt energia egy hányadát, csak a maradékkal gazdálkodhat (vagy Energiagyűjtés diszciplínához folyamodik). Az alább leírt varázstárgyaknál feltüntetett Mp-érték arról tudósít, mennyi Mana pontot kell a varázslónak áldoznia a Varázstárgy elkészítésére. Az érték a Mágikus Aura Varázsjellel együtt értendő."
+        }
+    ]
+}

@@ -1,0 +1,59 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": true,
+    "section_title": "Ranagol",
+    "content_blocks": [
+        {
+            "type": "flavor_text",
+            "text": "A sötétség úrnője, a halál és a pusztulás istennője. Az ő árnyéka borul mindenre, ami elmúlik, és az ő lehelete fagyasztja meg a szíveket. Ne keress benne irgalmat, mert csak a végtelen éjszaka vár rád."
+        },
+        {
+            "type": "paragraph",
+            "text": "Ranagol, a Sötétség Úrnője, Ynev egyik legősibb és legrettegettebb istensége. Kultusza titokban virágzik a romlott városokban és a sötét erdők mélyén. Papjai, a fekete papok, a halál és a pusztulás hírnökei, akik az istennő akaratát hajtják végre a halandók világában. Hatalmuk a félelemből és a kétségbeesésből táplálkozik, és céljuk a rend felborítása, a káosz elterjesztése."
+        },
+        {
+            "type": "rule",
+            "title": "Ranagol papjainak jellemzői",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "table",
+            "title": "Ranagol papjainak képzettségei",
+            "headers": [
+                "Képzettség",
+                "Szint",
+                "Leírás"
+            ],
+            "rows": [
+                [
+                    "Halálérzék",
+                    "Alap",
+                    "Érzékeli a halál közelségét."
+                ],
+                [
+                    "Árnyékjárás",
+                    "Mester",
+                    "Képes az árnyékokban rejtőzni."
+                ],
+                [
+                    "Félelemkeltés",
+                    "Alap",
+                    "Rettegést kelt az ellenfelekben."
+                ],
+                [
+                    "Méregkészítés",
+                    "Mester",
+                    "Különféle mérgek előállítása."
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A Sötétség Úrnője hűséges követőit hatalommal és tudással jutalmazza, de cserébe teljes odaadást és engedelmességet vár el. Azok, akik elfordulnak tőle, vagy megkérdőjelezik akaratát, szörnyű sorsra számíthatnak, lelkük örökre a sötétségben bolyong majd."
+        }
+    ]
+}

@@ -1,0 +1,56 @@
+{
+    "is_new_chapter": true,
+    "chapter_title": "Elf",
+    "is_new_section": false,
+    "section_title": null,
+    "content_blocks": [
+        {
+            "type": "paragraph",
+            "text": "Ynev legősibb fajai közé tartozik a Szépek Népe; emlékezetük a legmélyebbre nyúlik vissza a kontinensen, történelmük elhomályosult dicsőséggel, vérrel és szenvedéssel teli."
+        },
+        {
+            "type": "paragraph",
+            "text": "Az elfek az ősidők óta Ynev lakói. Származásukat illetően csupán legendáikra hagyatkozhatunk – a legtöbb tudós Larion szigetét tartja őshazájuknak, ámbár a hallgatag elf bölcsek sosem erősítették meg még ezt a nézetet."
+        },
+        {
+            "type": "paragraph",
+            "text": "Az embernépek által is ismert elf teremtmítoszok mindenesetre semmilyen szigetről nem tesznek említést; teremtőjükről, Urriáról beszélnek, kit feldühített népe, és kinek förgetege szétszórta őket a végtelen világokban. Így érkeztek hát az elfek Ynevre, és a mai napig visszavágynak Urria fényébe."
+        },
+        {
+            "type": "paragraph",
+            "text": "Az ősidőkben az aquirokkal vívtak irtóztató méretű háborúkat, fokról-fokra kényszerültek ősi erdeik feladására. Az amundok és dzsennék pusztító viszálya, majd a kráni Sötét Hatalom megjelenése után a Délen virágzó elf birodalom hanyatlásnak indult. Életterük egyre szűkült, némely csoportjaik a fenyegetés elől Északra menekültek, míg a délen maradottak Tysson Larba szorultak vissza, hogy azután onnan is tovább meneküljenek a Lasmosi-félszigetre. Itt élnek ma is, Elfendelnek nevezett királyságukban. Északra költözött társaik szerencsésebbnek bizonyultak: a Nyugati-óceán partjától a kontinens belsejéig húzódó komor erdőségekben – távol majd minden emberi civilizációtól – telepedtek meg. Birodalmukat Sirenar Szövetség néven jegyzik Ynev szerte, lakói nem vállalnak közösséget a fiatalabb népekkel."
+        },
+        {
+            "type": "paragraph",
+            "text": "Említést kell tenni azon társaikról is, kikről a Nép csupán vonakodva és – vérmérséklettől függően – csendes szomorúsággal avagy izzó gyűlölettel hajlandó beszélni. Tysson Lar bukása után sokan meghasonulva Elfendel északi határáihoz vándoroltak elhagyván népüket. Többeket közülük egy idegen hatalom vett oltalmába; ők Kránban telepedtek le, és Ranagol tanítása lassan kilúgozta a lelkükből Urria emlékét. Kevés közös vonás található a kráni elfek és a Sötét Birodalmon kívül élő fajtársaik közt, talán egy közös kapocs akad, az aquirok engesztelhetetlen gyűlölete, és ennek révén az őrült kalahora, Mallior tisztelete. A kráni elfek – vagy, ahogy magukat nevezik: a Könnyűléptű Nép – egyaránt megvetik szerintük gyenge és tudatlan fajtársaikat, és az ifjabb népeket."
+        },
+        {
+            "type": "paragraph",
+            "text": "Az elf elzárkózásra hajlamos, a világot csöndes méltósággal szemlélő faj – egyes feltételezések szerint létük a lélekvándorlás egy magasabb lépcsőfokát jelenti. Mérhetetlenül hosszú ideig élnek az embernépekhez képest, s ez gondolkodásmódjukra és viselkedésükre egyaránt rányomja bélyegét. Türelmesek, emberi mércével gyönyörűek, bölcsességük, felhalmozott tudásuk elképesztő."
+        },
+        {
+            "type": "paragraph",
+            "text": "A természet gyermekei, mindenki másnál jobban ismerik az élővilágot, tisztelettel és végtelen megbecsüléssel közelítenek hozzá. Városaik, településeik erdők mélyén állnak, követ csak elvétve használnak fel építésükhöz, ám művészetük és hozzáértésük folytán fából készült házaik vetekednek a leggondosabban, legpazarabban megépített kőpalotával is. Idejük nagy részét elmélkedéssel, a természet csodálatával töltik, de a kontinens legkitűnőbb íjászai is, s nem kétséges: náluk jobb lovasokat nem hordott még hátán Ynev."
+        },
+        {
+            "type": "paragraph",
+            "text": "Testfelépítésük, mozgásuk inkább könnyed és légies, mint erőtől duzzadó, de gyorsak akár a szarvas, és kézügyességük párját ritkítja. Bőrük halovány, hajuk aranyszőke vagy ezüst, szemük borostyánszínű vagy mélykék. Bárhová is vetődjenek Yneven, csodálatot, olykor azonban – a babonaságok, előítéletek miatt – félelmet váltanak ki más fajok szülötteiből. Közömbös azonban senki sem marad irántuk."
+        },
+        {
+            "type": "paragraph",
+            "text": "Nyugodt, türelmes életüket, megszokott környezetüket nem szívesen hagyják el, az embernépek mentalitása teljességgel idegen tőlük. Nyíltak és egyenesek, igaztalanságon vagy hazugságon nem kaphatja őket meg ellenségük sem. Hogy olykor rossz hírüket keltik, arról kizárólag az emberi civilizációban nevelkedett – attól megrontott fajtársaik tehetnek, akiknek – bár látszólag mindenben azonosak elf birodalmakkal élő társaikkal – gondolkodását, erkölcsét már eltorzította a fiatalabb népek kultúrája."
+        },
+        {
+            "type": "paragraph",
+            "text": "Igazi elfek csak igen ritkán kapják el a „kalandozó-kort”, így a legtöbb elf világjáró valamely emberbirodalomból, annak elf közösségéből származik (többségük Haonwellből, Yllinorból netán Erionból). Noha nem zárható ki, hogy az ősi földön élők némelyikének is kíváncsiság ébred a születésük óta jócskán megváltozott külvilág iránt, ennek valószínűsége egy az ezerhez."
+        },
+        {
+            "type": "paragraph",
+            "text": "Bármennyire eltorzul is az emberek közt nevelkedett elfek értékrendje, némely ösztönüket sosem vetkőzik le. Valamennyi elf – származzon bárhonnét – nehezen viseli a kővárosokat, s a csillagos eget jobban kedveli fedél gyanánt, mint a cserepes tetőt. Az élet szeretete ott fészkel bennük, az öncélú pusztítás, a kegyetlenség távol áll tőlük. Csupán kevesen, fajuk legelvetemültebbjei, kik teljesen elfeledték Urria arcát, és letérve őseik útjáról, eltévelyedtek, ölnek örömmel."
+        },
+        {
+            "type": "paragraph",
+            "text": "Az idők változását és a büszke nép hanyatlását mutatja, hogy ilyen elfekkel már nemcsak Kránban lehet találkozni. Az elmúlt évszázadokban egyre több hasonló elf bukkant fel kitaszítattván népükből, sok esetben szektákba tömörülnek, és magukat szent gyilkosnak tartva, Mallior nevével az ajkukon vesznek elégtételt népük vélt vagy valós sérelmeiért. Maguk a fajtársaik végeznek legkészségesebben ily módon eltorzult testvéreikkel."
+        }
+    ]
+}

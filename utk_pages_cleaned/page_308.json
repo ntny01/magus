@@ -1,0 +1,163 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": false,
+    "section_title": "",
+    "content_blocks": [
+        {
+            "type": "rule",
+            "title": "Árnyékajtó",
+            "rows": [
+                [
+                    "Mana pont: 12/E"
+                ],
+                [
+                    "Varázslás ideje: 1 kör + 3 kör"
+                ],
+                [
+                    "Hatótáv: Lásd a leírást!"
+                ],
+                [
+                    "Időtartam: Lásd a leírást!"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A varázslat utazás nélküli helyváltoztatásra szolgál; a teleportációnál nehezkesebb és lassúbb, viszont pontosabb. A boszorkány a varázslat idézése közben bal kezének mentőujjával egy ajtó körvonalát rajzolja a falra. Eközben felidézi maga előtt a helyet, ahová jutni kíván, és oda is elképzel egy ajtót. Az ajtó alakja kör alakú, három láb átmérőjű. A boszorkány az ajtóba kiválasztottakkal együtt átlépheti az ajtó küszöbét; akiket azonban nem hatalmaz fel erre, hiába próbálkoznak, csak a szilárd falba ütköznek. Az Árnyékajtó mögött mindig hosszú, sötét folyosó kezdődik. Ezen mindenki fertályóra (15 perc) alatt halad végig. Ha a folyosón haladó társaság együtt szándékszik maradni, a legkisebb Akaraterejű utazó tempóját kell felvenniük. A folyosó túlsó végén nyíló ajtón át az utazók kiléphetnek ama bizonyos másik helyre, amit a boszorkány maga elé képzelt. Ha mindenki átjutott, a folyosó, és az ajtókkal együtt, három kör alatt szertefoszlik. A varázslat csak akkor működik, ha mind a kiindulási, mind az érkezési oldalon akad legalább akkora, megközelítőleg egyenes falfelület, melyen az Árnyékajtók elférnek."
+        },
+        {
+            "type": "paragraph",
+            "text": "A boszorkány Tapasztalati szintje felének megfelelő számú kísérőt vihet magával, s a két ajtó maximális távolsága sem haladhatja meg a boszorkány Tapasztalati szintjének ötvenszeres szorzatát ynevi mérföldben. 12 további Mana ponttal vagy az utazók száma növelhető eggyel, vagy a távolság további 50 ynevi mérfölddel."
+        },
+        {
+            "type": "rule",
+            "title": "Eltűnés",
+            "rows": [
+                [
+                    "Mana pont: 30/E"
+                ],
+                [
+                    "Varázslás ideje: 1 szegmens"
+                ],
+                [
+                    "Hatótáv: Önmagam"
+                ],
+                [
+                    "Időtartam: Egyszeri"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A varázslattal a boszorkány egyetlen röpke parancs kiejtése után füstfelhő kíséretében semmivé válik. A kulisszák mögött persze tudják, valójában nem történik más, mint hogy a boszorkány egy 10 mérföld sugarú körön belül eső, véletlenszerűen kiválasztott helyre teleportál. A célállomás teljesen véletlenszerű, a következő módon kell meghatározni: az első dobás K10-zel történik, célja az irány kijelölése. 1-es Észak, 2-es Északkelet, 3-as Kelet, 4-es Délkelet, 5-ös Dél, 6-os Délnyugat, 7-es Nyugat, 8-as Északnyugat, 9-10 a boszorkány határozza meg az irányt."
+        },
+        {
+            "type": "paragraph",
+            "text": "A következő dobás a távolságot adja meg, ahogy a már meghatározott irányban milyen messze lesz az érkezési pont a kiindulásitól. Ezt K10 segítségével határozhatjuk meg, az eredményt ynevi mérföldekben kapjuk. A varázslattal a boszorkány saját súlyán felül még 20 font súlyú felszerelést vihet magával. A többi a kiindulási ponton a földre potyog, s ott is marad."
+        },
+        {
+            "type": "rule",
+            "title": "Hasadék",
+            "rows": [
+                [
+                    "Mana pont: 12"
+                ],
+                [
+                    "Varázslás ideje: 2 szegmens"
+                ],
+                [
+                    "Hatótáv: 20 ynevi láb"
+                ],
+                [
+                    "Időtartam: 10 kör"
+                ],
+                [
+                    "Mágiaellenállás: Lásd a leírást!"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A varázslat hatására hasadék nyílik a földben. Helyét a boszorkány határozza meg, elegendő egy mozdulattal kijelölni a majdani árok helyét és hosszát. A keletkező árok legtöbb 8 ynevi láb hosszú, másfél ynevi láb széles és 6 ynevi láb mély, továbbá csak teljesen egyenes vonalú lehet. Emberek (lények, teremtmények) alatt is megnyitható, ekkor az érintettek Gyorsaságpróbát dobhatnak; ha sikeres, időben, avagy a kellő szögben félreugrottak, így nem esik bele a lábuk előtt megnyílt hasadékba. Aki mégis beleesett, 3K6 Sp-t veszít. Ha valamelyik Képességpróba során 1-est dobott, az annyit tesz, hogy ráadásul szerencsétlenül esett, ami további K6 Sp elvesztésével jár. A páncélok SFÉ-je a sebzést nem mérsékeli, ellenben sikeres Esés Képzettségpróba esetén semmilyen sebzés nincs."
+        },
+        {
+            "type": "paragraph",
+            "text": "A hasadék remekül felhasználható teljes vértezetben feszítő lovagok ellen, valamint gyalogos rohamok megtörésére. Lovasroham esetén nagy a valószínűsége, hogy a lovak egyszerűen átugorják a megnyíló árkot – ilyenkor a ló dob próbát a lovasa helyett, s csak az esik a hasadékba, amelyik 0-t dob. Ekkor a fent említett sebzés a lóra és a lovasra is duplázódik."
+        },
+        {
+            "type": "paragraph",
+            "text": "A hasadékból kimászni +45-tel könnyített Mászás Képzettségpróbával lehet (tehát minimum 45%-a mindenkinek van), vagy a társak által leengedett kötélen. Tanácsos sietni, mert a hasadék 10 kör elteltével bezárul, s aki benne rekedt, szörnyű halált hal. A boszorkány 1 kör alatt, az időtartam lejárta előtt is bezárhatja a vermet. A hasadékot a boszorkány legfeljebb önmagától 20 ynevi láb távolságban képes megnyitni."
+        },
+        {
+            "type": "rule",
+            "title": "Kihallgatás",
+            "rows": [
+                [
+                    "Mana pont: 6"
+                ],
+                [
+                    "Varázslás ideje: 3 szegmens"
+                ],
+                [
+                    "Hatótáv: Korlátlan"
+                ],
+                [
+                    "Időtartam: 6 kör"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A Megfigyelés nevű varázslattal rokon. Ha a boszorkány olyan lényt szeretne kihallgatni, akit a Megbélyegzés csókjával megjelölt, a varázslat erre teremt lehetőséget. Nem szükséges segédeszközök, mint a Távolba látás vagy hallás varázslatokhoz, s a távolság is korlátlan."
+        },
+        {
+            "type": "rule",
+            "title": "Madártávlat",
+            "rows": [
+                [
+                    "Mana pont: 12 vagy 18"
+                ],
+                [
+                    "Varázslás ideje: 5 szegmens"
+                ],
+                [
+                    "Hatótáv: 5 ynevi mérföld"
+                ],
+                [
+                    "Időtartam: 10 perc"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A boszorkány a varázslattal egy égben szárnyaló madár szemszögéből tekinthet le az alanti tájra. Ennek egyetlen feltétele, hogy lásson legalább egy madarat. Ha többet is észrevesz, tetszése szerint választhat közülük. A varázslat 10 Mana pontba kerül, de ha alkalmazója további 5-öt áldoz rá, irányíthatja is a madarat. Feljebb vagy alább röptetheti, esetleg épületekbe is beviheti."
+        },
+        {
+            "type": "paragraph",
+            "text": "A varázslat nem erősíthető, és csak állati intelligenciájú szárnyasra alkalmazható."
+        },
+        {
+            "type": "rule",
+            "title": "Megfigyelés",
+            "rows": [
+                [
+                    "Mana pont: 6"
+                ],
+                [
+                    "Varázslás ideje: 3 szegmens"
+                ],
+                [
+                    "Hatótáv: Korlátlan"
+                ],
+                [
+                    "Időtartam: 6 kör"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "Hasonló a Távolbalátás nevű varázslathoz, de semmilyen eszközt nem igényel. Csak azok figyelhetőek vele, akiket a boszorkány a Megbélyegzés csókjával megjelölt, ők"
+        }
+    ]
+}

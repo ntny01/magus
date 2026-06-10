@@ -1,0 +1,16 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": true,
+    "section_title": "Az Elátkozott Vidék",
+    "content_blocks": [
+        {
+            "type": "flavor_text",
+            "text": "elemésztő erőt, amelynek azonban képtelenek voltak parancsolni. Az Őstűz annyira meggyengítette a Rettenet Asszonyát, hogy kénytelen volt évezredekre a Külső Sötétségbe menekülni –, de a felidézők közül is sokakat a nemlétbe taszított."
+        },
+        {
+            "type": "flavor_text",
+            "text": "Az Elátkozott Vidék a borzalom, a megnevezhetetlen gonoszság, az élőhalottak földje. A romok közt kísértetek és lidércek bolyonganak, egyetlen élőlény sem maradhat meg az átkos dzsungelben, mely éjszakánként rémeket álmodik, és vad időviharokban újra meg újrajátssza a régmúlt csatáit."
+        }
+    ]
+}

@@ -1,0 +1,303 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": false,
+    "section_title": "",
+    "content_blocks": [
+        {
+            "type": "paragraph",
+            "text": "csiszárok, idomárok képesek rá, s nekik is hosszú idejükbe telik."
+        },
+        {
+            "type": "paragraph",
+            "text": "A piacokon jobbára már kitanított igás-, illetve hátaslovak kaphatók, ám jól vigyázzon az, aki idegentől vásárol! Ha maga nem ért igazán a lovakhoz, jobban teszi, ha szakember segítségét kéri. Tapasztalt, ravasz kupecek az ócska gebét is képesek – rövid időre – jó áron eladhatóvá „fényesíteni”, ám a vásárlónak igen hamar csalatkoznia kell. Előfordulhat, hogy az állatnak viszonylag alaposabb megfigyeléssel sem lehet komoly hibájára bukkanni, mégis kellemetlen helyzetbe hozhatja új gazdáját. Az úgynevezett „rossz szokások”, melyekről az alábbi táblázat tájékoztat, többnyire apróbb jelekkel járnak, s ezeket igazi szakember felismerheti. Ha egy képzett vásárlónak elegendő ideje van az állat tanulmányozására, nagy pontossággal képes megállapítani a korát, erőnlétét, egészségi állapotát, kiképzettségét, vérmérsékletét, esetleges rejtett hibáit, netán különleges adottságait. Mivel az érmének jelen esetünkben is két oldala van, ha valaki szerencsés, vásárolhat átlagon felüli képességekkel és képzettségekkel rendelkező hátast is. A táblázat segítségével a KM meghatározhatja a vásárolt – talált, kapott, ne adj’ isten lopott – lovak minőségét, szokásait, viselkedését."
+        },
+        {
+            "type": "table",
+            "headers": [
+                "2k10",
+                "Ló minőség"
+            ],
+            "rows": [
+                [
+                    "2",
+                    "Gebe, 1k6 napon belül elpusztul"
+                ],
+                [
+                    "3",
+                    "Sánta ló, rendes sebességének felével képes csak haladni"
+                ],
+                [
+                    "4",
+                    "Gyenge ló, negyed óra vágta vagy ügetés után kimerül és meghal"
+                ],
+                [
+                    "5",
+                    "Zabolatlan ló, 3 rossz tulajdonság"
+                ],
+                [
+                    "6-7",
+                    "Nyugtalan ló, 2 rossz tulajdonság"
+                ],
+                [
+                    "8-9",
+                    "Átlagos ló, 1 rossz tulajdonság"
+                ],
+                [
+                    "10-12",
+                    "Átlagos ló"
+                ],
+                [
+                    "13-14",
+                    "Átlagos ló, 1 különleges tulajdonság"
+                ],
+                [
+                    "15-16",
+                    "Kezes ló, 2 különleges tulajdonság"
+                ],
+                [
+                    "17",
+                    "Ragaszkodó ló, 3 különleges tulajdonság"
+                ],
+                [
+                    "18",
+                    "Különleges ló, hűséges, ragaszkodik új gazdájához"
+                ],
+                [
+                    "19",
+                    "Különleges ló, 20%-kal gyorsabb az átlagosnál"
+                ],
+                [
+                    "20",
+                    "Táltos: ereje, gyorsasága és intelligenciája is átlagon felüli"
+                ]
+            ]
+        },
+        {
+            "type": "table",
+            "headers": [
+                "Rossz szokás"
+            ],
+            "rows": [
+                [
+                    "harap"
+                ],
+                [
+                    "rúg"
+                ],
+                [
+                    "nem vágtázik"
+                ],
+                [
+                    "csökönyös/hirtelen megáll"
+                ],
+                [
+                    "kerítésnek dörgölőzik"
+                ],
+                [
+                    "kényelmetlen/ügetésnél ráz"
+                ],
+                [
+                    "nem ugrik"
+                ],
+                [
+                    "veszélyben ledermed"
+                ],
+                [
+                    "ijedős (zajtól, tűztől, stb.)"
+                ],
+                [
+                    "hirtelen ágaskodik"
+                ]
+            ]
+        },
+        {
+            "type": "table",
+            "headers": [
+                "1k10",
+                "Különleges képesség"
+            ],
+            "rows": [
+                [
+                    "1",
+                    "harcol (csatában)"
+                ],
+                [
+                    "2",
+                    "hűséges"
+                ],
+                [
+                    "3",
+                    "jelzi a veszélyt"
+                ],
+                [
+                    "4",
+                    "füttyel hívható"
+                ],
+                [
+                    "5",
+                    "hazatalál"
+                ],
+                [
+                    "6",
+                    "parancsra lefekszik"
+                ],
+                [
+                    "7",
+                    "parancsra megáll"
+                ],
+                [
+                    "8",
+                    "parancsra csendben marad"
+                ],
+                [
+                    "9",
+                    "jól ugrik"
+                ],
+                [
+                    "10",
+                    "nyugodt, engedelmes"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A különböző képességeket persze erősen befolyásolja a ló fajtája. Erről ad tájékoztatást a következő táblázat. A sebesség ynevi mérföld/órában, a súly fontban, a napi táv mérföldben értendő."
+        },
+        {
+            "type": "paragraph",
+            "text": "Lépésben a ló megülése nem okoz különösebb gondot még képzetlen személynek sem. Ügetésben a sebesség a kétszeresére nő, de ezt az állat legfeljebb négy órán át képes tartani. (Itt kezdődnek a problémák azok számára, akik nem tanultak meg lovagolni.) A könnyű vágtát három, a vágtát egy órán át bírja a ló. A vihető teher a lovasán kívül elvihető súly, amivel a ló még vágtázni képes – bár csak fél órán át. A max. teher azt a maximális mennyiségű súlyt jelenti, amivel a ló legalább lépésben képes elindulni. Ekkora terhelés mellett a lépést is csak négy órán át bírja, utána pihennie kell, különben összeesik, illetve elpusztul. Ezek a súlyok mind málhára vonatkoznak – a ló által húzott szekér súlya (jó úton) ennek akár ötszöröse is lehet."
+        },
+        {
+            "type": "paragraph",
+            "text": "Érdekes összehasonlítani a különböző lovas kultúrákat felhasznált lószerszámaik alapján. Ynev vidékein változatos formáit fedezhetjük fel a szerszámzatoknak, ám minőségük, díszítettségük majd’ mindenütt utal a lova rangjára, származására szerkezete pedig a harmadkorra. A legmarkánsabb jellegzetességekkel alighanem a nyereg rendelkezik. Szőrén csak a nomádok és időnként az ilanoríak ülik meg a lovat. A nyereg váza többnyire fából készül, de használhat hozzá szarvasagancsot, bőrt is, bélésként pedig leginkább lószőrt, esetleg nyírfakérget – természetesen mindenütt területi sajátosságokkal."
+        },
+        {
+            "type": "paragraph",
+            "text": "A nyereg kiképzését külső megjelenését elsődlegesen funkciója szabja meg, de befolyásolja a származási helye is – a kettő persze gyakorta fedi egymást."
+        },
+        {
+            "type": "paragraph",
+            "text": "Az egyik legkönnyebben felismerhető forma a lovagi nyereg, amely tán Shadorban a legelterjedtebb, de megtaláljuk Pyrronban éppúgy, mint az északi államokban. Legfontosabb jellemzője a szilárdság, gyakran építik fémvázzal. Nehéz, széles hátú harci lovakhoz készítik, súlyos, terjedelmes alkotmány. Hátsó kápája magas, félkaréjos, ez a kopjaelőfésnél remek támaszt nyújt a lovagnak. Az első kápa szintén magas – védi a lovas ágyékát –, de gyakran lefelé is megnyújtják, ily módon térdvédőt képezve belőle. Leginkább a lovas kényelmét szolgálja, a lónak előnytelenebb, mivel nem túl jó a felfekvése és súlyelosztása."
+        },
+        {
+            "type": "paragraph",
+            "text": "A könnyű lovasok legtöbbje yllinori nyerget használ – elsősorban persze Yllinorban és Ilanorban találkozunk ezzel a típussal. Ez csaknem mindenben a lovagi nyereg ellentéte: könnyű, alacsony kápás, jó súlyelosztású. A lónak a lehető legkellemesebb, a lovas könnyedén mozog benne, páncélozott embert azonban nem bír el, így a nehézlovasok számára teljesen használhatatlan. Jóllehet ez a típus yllinori nyeregként vonult be a köztudatba, eredetije a nomád lovasok paripáin látható. Kevéssé finom munkák ugyan, s civilizált lovas számára tán kissé egyszerűnek tűnnek, ám semmivel sem rosszabb."
+        },
+        {
+            "type": "table",
+            "headers": [
+                "Állat",
+                "Lépés",
+                "Ügetés",
+                "Könnyű vágta",
+                "Vágta",
+                "Vihető teher",
+                "Max. teher",
+                "Napi táv"
+            ],
+            "rows": [
+                [
+                    "Igás",
+                    "4",
+                    "10",
+                    "20",
+                    "30",
+                    "120",
+                    "230",
+                    "35"
+                ],
+                [
+                    "Utazó",
+                    "7",
+                    "20",
+                    "40",
+                    "60",
+                    "80",
+                    "160",
+                    "90"
+                ],
+                [
+                    "Nehéz harci",
+                    "4",
+                    "8",
+                    "20",
+                    "32",
+                    "120",
+                    "230",
+                    "30"
+                ],
+                [
+                    "Könnyű harci",
+                    "6",
+                    "18",
+                    "36",
+                    "54",
+                    "75",
+                    "150",
+                    "80"
+                ],
+                [
+                    "Póni",
+                    "3",
+                    "8",
+                    "16",
+                    "24",
+                    "70",
+                    "140",
+                    "40"
+                ],
+                [
+                    "Öszvér",
+                    "3",
+                    "10",
+                    "18",
+                    "26",
+                    "110",
+                    "220",
+                    "40"
+                ],
+                [
+                    "Yllinori mén",
+                    "7",
+                    "25",
+                    "50",
+                    "80",
+                    "70",
+                    "140",
+                    "120"
+                ],
+                [
+                    "Yllinori félvér",
+                    "7",
+                    "21",
+                    "42",
+                    "64",
+                    "75",
+                    "150",
+                    "100"
+                ],
+                [
+                    "Predoci félvér",
+                    "7",
+                    "18",
+                    "36",
+                    "60",
+                    "75",
+                    "160",
+                    "80"
+                ],
+                [
+                    "Nomád ló",
+                    "6",
+                    "16",
+                    "30",
+                    "55",
+                    "80",
+                    "180",
+                    "100"
+                ]
+            ]
+        }
+    ]
+}

@@ -1,0 +1,179 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": false,
+    "section_title": "",
+    "content_blocks": [
+        {
+            "type": "paragraph",
+            "text": "tényével megváltja a gonosztevőt később elkövetendő bűneitől, s ezáltal előbbre segíti őt az üdvözülés rögös útján.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "A rendkívül jól szervezett Domvik-egyház szigorúan hierarchikus felépítésű. Belső szerkezetének vázát a kvalitásnak nevezett minősítési szintek adják; nyolc van belőlük, és ha valaki át kíván lépni egyikből a másikba, vizsgán kell bizonyítania érdemességét, egyházi ítélőszék előtt. A kvalitás-besorolás nem annyira a Tapasztalati szintet, mint inkább az egyházszervezetben betöltött funkciót tükrözi. A regulák a következő nyolc egyházi kasztot különböztetik meg, ami megegyezik az egyes beavatási kvalitétjával, illetve a kánoni hierarchiával:",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "Szervezetek (fajosz), Boszorkányvadászok (mendraiosz), Papok (leiosz), Paplovagok (leiosz thaira), Inkvizítorok (taleiosz), Belső inkvizítor (chon-taleiosz), Felső papság (leiosz pan-thia), Kortalanok (phrorakroinosz)",
+            "title": "Egyházi kasztok",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "A hat tudományos fokozat: I. Tiszta Lap (Charta Pura), II. Pallérozott (Exploitus), III. Beavatott (Initiatus), IV. Fehér (Albus), V. Ragyogóan Fehér (Candidatus), VI. Ezüstfehér (Canus)",
+            "title": "Tudományos fokozatok",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "A hat vallási méltóság: Atya (pater), Pap (sacerdos), Főpap (sacerdos maximus), Érsek (archiepiscopus), Bíboros (cardinalis), Főatya (pater maximus)",
+            "title": "Vallási méltóságok",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "A Lingua Domini",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "Ynev nyelvtudósainak sok fejtörést okozott ez a Domvik és szolgái között létező misztikus kapocs. Az Egyetlen tanai szerint maga Domvik adományozta a teremtés után igaz szolgáinak, hogy a tisztítótűzhöz láncolt Gonosz szolgái ne érthessék meg szándékukat. Ősi nyelv ez, amely csak Domvik felszentelt hívei számára hozzáférhető – minden egyházi kaszt beszéli. A szakrális ceremóniáknak csakúgy eszköze, mint a hivatalos ügymenetnek, a pergameneken rögzített rendelkezéseknek és a Szent igéknek. E nyelven ismerte meg Ynev az egyház világi és vallásos fokozatait – a kánoni nyelvtilalom alóli egyetlen kivétellel.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "Egyetlen beszélt nyelvi nyelvhez sem hasonlít, kemény, pattogó mássalhangzók és különös, hajló kettőshangzók teszik azonnal felismerhetővé a lingvisták számára. Írásképe valami ősi hangulatot, misztikus jelleget mutat, furcsa hurkok és mellékjelek barázdálta oszlopokban foglalja el a papirost.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "A mágiához értők szerint akkor is benne lappang a mana megkötésének lehetősége, ha nem a Litániák és a Rituálék szövegén szólal meg. Tiszta forrásnak, Hangzó gondolatnak is nevezik: aki ezen a nyelven szól, belső késztetésre teszi – s hogy ne sértse meg a Szentséget, sohasem hazudik. Több ezer éve létezik már a kontinensen, mégsem sikerült megfejtenie senkinek. Lüktetése mindenkiben érzelmeket kelt – mondják, az Asztrálsík lakóinak közvetítésével adományozta a Hétarcú az anyagi világnak. Amikor beszélik, a beavatottak finom arcjátékkal kísérik mondandójukat, apró izomrezdülésekkel tükrözve a szavak mélyebb jelentését. Letisztult kommunikációs forma: nem pusztán nyelv, hanem az Egyetlen útjának egyenességét szimbolizáló jelkép is egyben.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "A Domvik-pap különleges előnyei és hátrányai a papnál feltünteteken kívül:",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "I. Az Egyetlen felkenti uruk kegyéből az Élet, a Lélek és a Természet szférákból meríthetik fohászaikat. Ezenkívül a Márványistennő néhány egyedi fohászával is felruházza papjait, amelyeket egyetlen más istenség hívei sem ismernek.",
+            "title": "Domvik-pap előnyök és hátrányok (I.)",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "II. Domvik papjai feleslegesen egyetlen értelmes lényben sem tehetnek kárt, hiszen uruk az életet, a teremtés erejét okítja nekik. Abban az esetben, ha mégsem hitük ellensége ellenében ragadnának fegyvert, akkor az eseményről később papi ítélőszék előtt kell számot adniuk. (A szükségtelennek ítélt fegyverhasználat szokványos büntetése öt év vezeklés a szerzetesek vagy a boszorkányvadászok között.) A tilalom alapos okot nélkülöző, szándékos megszegését az egyházi hierarchiából való kitaszítással és eretnekké nyilvánítással büntetik.",
+            "title": "Domvik-pap előnyök és hátrányok (II.)",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "III. A Domvik-papok feltétlen engedelmességgel tartoznak egyházi följebbvalóiknak. A tőlük kapott parancsokat minden körülmények között teljesíteniük kell; a legtöbb, amit tehetnek, hogy utólag panasszal élnek a hierarchia magasabb fórumán. Ha egy kalandozó Domvik-pap az engedetlenség bűnébe esik, az eretnekké nyilvánítását kockáztatja. Maga Domvik érdekes módon nem mindig sújtja kegyei megvonásával az efféle vétkeseket. Amennyiben valamelyik prelátusi ítélőszék előtt bizonyítani tudják, hogy megőrizték az istenség kegyét (és valóban Domviktól származik), a tévelygőket öt-tíz év szigorú vezeklés után olykor visszafogadják az egyház kebelére.",
+            "title": "Domvik-pap előnyök és hátrányok (III.)",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "A Domvik-pap induló képzettségei I. Tapasztalati szinten a papnál feltünteteken kívül:",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "table",
+            "text": "",
+            "title": "Domvik-pap induló képzettségei",
+            "headers": [
+                "Képzettség",
+                "Fok"
+            ],
+            "rows": [
+                [
+                    "Jog/törvénykezés",
+                    "2. fok"
+                ],
+                [
+                    "Ősi nyelv (lingua domini)",
+                    "3. fok"
+                ],
+                [
+                    "Herbalizmus",
+                    "2. fok"
+                ],
+                [
+                    "Orvoslás",
+                    "2. fok"
+                ],
+                [
+                    "Élettan",
+                    "2. fok"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A Domvik-pap képzettségei, melyeket rendjétől az Oktatás képzettség 4. foka által nyújtott előnnyel tanulhat:",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "Hadvezetés, Oktatás, Ősi nyelv (lingua domini, godoni)",
+            "title": "Domvik-pap tanulható képzettségei",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "Ranagol-pap",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "flavor_text",
+            "text": "Korhadt faág ez a mi világunk.... Nyomot hagy-e a kérgén a dalos csalogány lába, ha tovaröppen róla? ... Ám a büszke sas karma nemde nyomot hagy, ha rátelepszik? ... És vajh mi történt közben a csalogánnyal?",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "flavor_text",
+            "text": "Részlet Symbolmine Példázataiból",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "A legtöbb Ranagol-pap gorviki származású, de szép számmal akadnak a kereskedőhercegségekben és a déli városállamokban is. Mindannyian művelt, kiemelkedően intelligens",
+            "title": "",
+            "headers": [],
+            "rows": []
+        }
+    ]
+}

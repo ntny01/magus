@@ -1,0 +1,32 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": false,
+    "section_title": "",
+    "content_blocks": [
+        {
+            "type": "paragraph",
+            "text": "A bárdok mágiájának titkát – a többi mágiaforma letéteményeseivel ellentétben – hiába keresnék a Ynev volt embernépek vagy a kyr kultúra töredékesen fennmaradt feljegyzései között. Megalkotását a historikusok az erveknek tulajdonítják, megjelenését és elterjedését a kontinensen pedig a Pyarron szerinti VI. századra datálják."
+        },
+        {
+            "type": "paragraph",
+            "text": "Forrása sem Ynev beláthatatlan térségein keresendő: bár a bárdok varázslataikat a Manaháló felhasználásával hozzák létre, a többi mágikus hagyománytól gyökeresen eltérő módon, hatalmuk nem az Ynevet átszövő Manahálóból, hanem a Felsőbbrendű Szférák, a csillagok energiájából merítkezik. Éjszakánként, mikor fények garmadája tündököl az égen, a bárdok képesek megszólaltatni a misztikus erők Összhangzatát, s megcsapolni a Kristályszférák résein átáramló Manát."
+        },
+        {
+            "type": "rule",
+            "title": "Mana visszanyerés",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Alborne segítsége",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        }
+    ]
+}

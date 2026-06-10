@@ -1,0 +1,44 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": null,
+    "is_new_section": true,
+    "section_title": "A gorviki szabad harcos különleges előnyei és hátrányai a harcosnál leírtakon kívül",
+    "content_blocks": [
+        {
+            "type": "paragraph",
+            "text": "hadjáratok, a hatalmas mezei ütközetek nemcsak gyakorlati szempontból nézve gyermeteg és haszon-talan dolgok, hanem esztétikailag is kirívó otromba-ságnak minősülnek."
+        },
+        {
+            "type": "paragraph",
+            "text": "Ezt az első pillantásra meghökkentő álláspontot több oldal-ról is alá lehet támasztani. Részint a tapasztalat azt mutatja, hogy a kisszámú és mozgékony különítmények, amelyek les-ből meglepetésszerűen csapnak le az ellenségre, hosszú távon mindig érzékenyebb veszteségeket okoznak, nagyobb zavart keltenek és hatékonyabban működnek együtt társaikkal, mint a népes és nehézkes hadtestek nyílt csatában. Másrészt – ha pragmatikus szemmel nézzük a helyzetet – a szakadatlanul marakodó tartományi seregek nemcsak hogy képtelenek egyesített erővel fellépni valamely közös ellenféllel szemben, hanem még kölcsönösen le is kötik egymást, eleve lehetet-lenné téve minden nagyobb lélegzetű hadászati elképzelést. Gorvik, éppen a fenti okokból, sohasem volt a nagy, látványos ütközetek hazája. A Shadonnal vívott háborúkban elért sike-reit túlnyomórészt sajátos hadászati alapelveinek köszönheti, amelyek az ellenfél szemszögéből nézve persze aljas, gyáva és hitvány manőverek."
+        },
+        {
+            "type": "paragraph",
+            "text": "Maguk a kiképzőközpontok jobbára a hírhedt corgák fenn-hatósága alá tartoznak, s lényegében nem egyebek a fejvadá-szoknak utánpótlást szállító műhelyeknél. A négyesztendős tanulóidő leteltével a pártfogó testvériségek kedvükre válo-gathatnak a végzett növendékek között, és természetesen csak azokkal kötnek vérszerződést, akik a legjobban megfelelnek az igényeiknek. A hoppon maradtak nem válnak ugyan fej-vadásszá, ám még így is olyan alapismeretekkel rendelkeznek, amelyek egy átlagos harcostól legalábbis roppant szokatlanok. Harcosok maradnak ugyan – ez kétségtelen –, ám küzdő-stílusuk és távlati taktikájuk egyaránt a fejvadászokéra emlé-keztet. A szabad délen azért biggyesztik a megnevezésük elé, mert nem köti őket vérszerződés, tetszésük szerint dönthetik el, hogy melyik világi vagy egyházi hatalmasságnak kínálják fel szolgálataikat, akár a Szent Földön kívül is."
+        },
+        {
+            "type": "paragraph",
+            "text": "Utóbbira már csak azért is rákényszerülnek, mert Gor-vikban szabad harcosokból lényegesen nagyobb a kínálat, mint a kereslet, sok valósággal az éhhalál szélén tengőd-nek. Akik szerencsésen munkát találnak hazájukban, azok között elképzelhetően magas a halálozási arányszám, mert gazdáik kezdetben alig tekintik különbnek őket a nemte-len katonarabok szolgáknál. Akik inkább különbe szegődnek, azok többnyire megkísérlik orgyilkosnak vagy fejvadásznak kiadni magukat; ha okosan viselkednek, kevés az esélyük a lelepleződésre. Itt inkább az a veszély fenyeget, hogy uruk vagy úrnőjük olyan feladattal bízza meg őket, amelyhez nem elegendőek a képességeik."
+        },
+        {
+            "type": "paragraph",
+            "text": "A szabad harcosok természetesen nem igazi fejvadászok, bár szeretik utánozni őket: ugyanolyan fegyvereket forgatnak, gyakran használnak mérgeket és szívesebben tevékenykednek magányosan vagy kis csoportokban. Soha nem válnak meg tarka selyemken-dőiktől, melyek lényegében egyfajta bonyolult jelrendszer elemei: segítségükkel nemcsak azt tudják megállapítani egymásról, hogy hol tanultak, hanem azt is, hogy mire képesek."
+        },
+        {
+            "type": "paragraph",
+            "text": "A gorviki szabad harcosok nyolc-tíz szolgálat után sze-reznek maguknak tekintélyt és társadalmi rangot. A puszta tény, hogy ilyen sokáig életben maradtak, minden ajánlóle-vélnél ékesebben szól mellettük. Ezek a tapasztalt veteránok általában nagybirtokos nemesurak magánhadseregeit vezetik vagy a saját szakállukra nekivágnak a nagyvilágnak, és újabb kolóniák alapításával gazdagítják a kiterjedt gorviki diaszpó-rát. Nem számít ritkaságnak, hogy valamely vértestvériség alkalmazza őket különleges feladatokra, néha éppen az, ame-lyikbe annak idején hiába folyamodtak felvételért. És végül, de nem utolsósorban: feltűnően nagy számban kerülnek ki soraikból kalandozók is..."
+        },
+        {
+            "type": "rule",
+            "title": "Nemesi Vér Háttér",
+            "headers": null,
+            "rows": null
+        },
+        {
+            "type": "rule",
+            "title": "Fegyverzet",
+            "headers": null,
+            "rows": null
+        }
+    ]
+}

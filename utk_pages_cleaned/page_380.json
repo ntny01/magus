@@ -1,0 +1,106 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": false,
+    "section_title": "",
+    "content_blocks": [
+        {
+            "type": "flavor_text",
+            "text": "– legyen az a Külső-, Belső-, vagy köztes síkok teremtménye. A varázstudók persze eljutottak a felismerésig, hogy az isteni hatalom – a felsőbb síkok energiája, melyből az alkotó akarat nyomán minden élet születik – sem más, mint a mana. Tehát az egyetlen akadály, mely a Teremtés Titkának elorzásának útjában áll, nem más, mint a halandó elme tökéletlensége. Épp ezért, a Nekromancia művelői, mivel tudományuk gyakorlása által – igaz torz módon, de az isteni Teremtés lemásolására törekednek – mindennél és mindenkinél többnek tartják magukat. Hatalmasak, mégis, teremtményeik nem egészek: torz másai csupán a Teremtés művének."
+        },
+        {
+            "type": "flavor_text",
+            "text": "„A nekromantikus vizsgálódás alapja nem lehet más, mint a legtökéletesebb műalkotás, az Élet vizsgálata. A Titok kutatása, hogy hogyan nem enyészik el, miért nem szökik el az Életerő az élő testekből. A holt részekből, pedig melyeket amaz elfogyaszt, hogyan alkot élőt és egészet, és miképp válnak egyes részei élettelenné már a testen belül. Az oktalan varázstudók, kik Nekromantának neveztetik magukat, képesek ugyan silány utánzatokkal mímelni az életet, de alkotásuk nemcsak mulandó, de tökéletlen is. Neked, tanítványom, egyelőre legyen elegendő ennyi. Alapnak ez pont elég, hogy megismerhesd a Nekromancia magasabb misztériumait."
+        },
+        {
+            "type": "paragraph",
+            "text": "Az élőhalottak az Élet princípiuma helyett mágikus energiát hordoznak magukban, egyfajta utánzatát az életerőnek. Ez szükségeltetik létezésükhöz, hiánya lelassítja, elpusztíthatja őket. Épp ezért szomjúhoznak az életerőre, a vér, vagy bármely más esszencia hatalmára, hogy a tökéletlen holttestük által elvesztegetett erőket pótolják. Ezért az egyszerű, tudattalan élőhalottakat nem a gonoszság, a puszta létezés utáni vágy vezérli, hasonlóképpen ahhoz, ahogy te, fiam, vágynál egy falat kenyérre holdhónapnyi koplalás után."
+        },
+        {
+            "type": "paragraph",
+            "text": "A nem isteni hatalom, vagy a Körforgás szabályai által életre keltett holtak még az élőhalottak között is tökéletlenek. Nincs erő, mely testüket az Örökkévalóságig körforgásra bírná, mégpedig, mert beléjük táplált élőerő nem az isteni Teremtésé. Következésképp, a teremtményeink csak addig léteznek, utánozva az Életet, míg varázslataink ereje hajtja őket, vagy a rájuk rótt jelek töretlenek. Ellentétben a Körforgás, vagy az istenek akarata által „megáldott” vagy megátkozott élőhalottakkal, vámpírokkal, lidércekkel, kísértettekkel, kik léteznek, míg az isteni rendelés, vagy egy halandó ellenükre nem tesz, el nem pusztítja őket..."
+        },
+        {
+            "type": "paragraph",
+            "text": "Szakítsuk félbe egy pillanatra Al Sahred mester szavait, és értelmezzük az elhangzottakat, miként jelentkeznek ezek a M.A.G.U.S. szabályrendszerében:"
+        },
+        {
+            "type": "rule",
+            "title": "Nekromancia képzettség",
+            "headers": [],
+            "rows": [
+                [
+                    "A Nekromancia tudományának gyakorlásához a varázslónak a Nekromancia képzettség legalább 3. fokát birtokolnia kell."
+                ]
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Az élőhalottak természete",
+            "headers": [],
+            "rows": [
+                [
+                    "I. Az élőhalottak nem életerő, csak egy azt utánzó mágikus erő, a mana."
+                ],
+                [
+                    "II. A Nekromanta képtelen előállítani az Élet Princípiumát, életerőt teremteni, vagy feltámasztani bárkit."
+                ],
+                [
+                    "III. A Nekromanta teremtményei nem bírnak lélekkel, csak ha a varázstudó idéz egyet, és azt börtönzi a halott test-be. Tehát a lélekkel rendelkező élőhalottak nem lehetnek a természeti anyagi mágia alanyai, csak Lélekkutatás mozaik alkalmazása után. A varázsló nem képes lelket teremteni – ahogy az Élet princípiumánál, erre is csak az istenek képesek – tudattal felruházott teremtményei nem többek egyszerű pszeudo-tudatoknál, legyenek bármilyen kifinomultak, vagy intelligensek."
+                ],
+                [
+                    "IV. A varázstudó irányítása, hacsak az adott élőholt nem bír saját értelemmel (tudattal vagy lélekkel, mert ez esetben annak döntése mérvadó), minden esetben a környezetében található élőlények elpusztítására tör, próbálván hozzájutni azok életerejéhez haláluk által."
+                ],
+                [
+                    "V. Az élőholt test halálakor bekövetkezett látható vagy láthatatlan károsodások miatt már nem képes megtartani, magába fogadni sem az életerőt, sem más mágikus energiát huzamosabb ideig. Éppen ezért, a varázstudók által életre keltett holt testek csak a különböző praktikák időtartamára változnak élőhalottá – az időtartam lejártával egyszerű holttestekként rogyanak össze."
+                ],
+                [
+                    "VI. A fentiekből következik, hogy egy élőhalott, ha anyagi testtel rendelkezik, bármilyen fizikai testét ért károsodás által elpusztítható, ha az eléggé megrongálja a létezéséhez szükséges energiákat befogadó testet ahhoz, hogy az őt életre keltő mágia elillanjon belőle. Tehát, hacsak az adott lény leírása másképp nem rendelkezik, a legtöbb élőhalott sebezhető tűzzel, vagy bármilyen (akár nem mágikus) fegyverrel is, ha van anyagi teste. Továbbá, megjegyzendő, hogy a halott testet komolyan pusztító támadások, mint például a tűz, a zúzó-, illetve a vágófegyverek rendes sebzést, míg a strukturálisan kisebb kárt okozó szúrófegyverek támadásokonként csak egyetlen Ép-sebzést okoznak."
+                ],
+                [
+                    "VII. Az élőhalottak nem éreznek fájdalmat, emiatt csak túlértékelten sebezhetők! A testüket összetartó mágikus energiát Életerő pontban mérjük ugyan, ám ez nem azonos az élőlényekben megtalálható princípiummal! Bármilyen hatás, amely életerőt adományozna egy élőholtnak, valójában a nyers élet esszenciáját alakítja át az élőhalottakat mozgató mágikus energiává. Tehát az élőhalottakat visszanyert „Ép” nem használható élőlények gyógyítására, vagy bármely más mágikus formulához, mely életerőt igényel."
+                ],
+                [
+                    "VIII. Bár az élőhalottak többsége (lélek híján) immunis az Asztrálés Mentálmágiára, abban az esetben, ha a varázstudó bír egy darab varázstiszta Hegyikristállyal, Holdkővel, Kalcedonnal, Krizoberillel vagy Obszidiánnal, és rendelkezik a Nekromancia képzettség 4. fokával, akkor képes Asztrál vagy Mentál mozaikokat is megidézni az adott teremtményekre. Mágiaellenállásukat ez esetben Pszi pontjaik száma, ezek híján, aktuális Ép-ik száma határozza meg."
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A Necrografia három csoportot (élőhalott, lélek és kísértet), valamint öt osztályt különböztet meg, s az alábbi módon osztályozza a túlvilági lényeket:"
+        },
+        {
+            "type": "table",
+            "headers": [
+                "Osztály",
+                "Megnevezés"
+            ],
+            "rows": [
+                [
+                    "I.",
+                    "Tudattalan élőhalottak (élőhalott)"
+                ],
+                [
+                    "II.",
+                    "Éji rémek (élőhalott)"
+                ],
+                [
+                    "III.",
+                    "Kóborló dögök (lélek), Vérivó dögök (élőhalott)"
+                ],
+                [
+                    "IV.",
+                    "Lidércek (kísértet), Szellemek (kísértet)"
+                ],
+                [
+                    "V.",
+                    "Elhunyt lelkek (lélek)"
+                ]
+            ]
+        },
+        {
+            "type": "flavor_text",
+            "text": "„...A többi Anyagi Világ és a Túlvilág teremtményeit megidézésük nehézsége szerint öt osztályba sorolom. A tudattalan élőhalottak nem rendelkeznek lélekkel, a természet rendjétől idegen, teremtményei valamely gonosz szándékú Istennek, azok papjainak vagy ostoba varázshasználóknak. Torz lélekmásolatok, melyek küldetésre képtelenek, létük nem több, mint egyfajta elferdült Asztrális vagy Mentális létezés."
+        }
+    ]
+}

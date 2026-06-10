@@ -1,0 +1,72 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": true,
+    "section_title": "Érzelemkeltő varázslatok",
+    "content_blocks": [
+        {
+            "type": "paragraph",
+            "text": "Az Érzelemkeltő varázslatok a Boszorkánymágia Asztrális tudásanyagának máris jelentős fejezetét képezik. Hatásmechanizmusuk sokban emlékeztet az Érzelemkioltó varázslatokéra, ám egyrészt több áldozatra is lehetséges hatni velük – igaz, jóval rövidebb ideig. A varázslatok időtartama 1 óra, hacsak a leírásban másképp nem áll."
+        },
+        {
+            "type": "rule",
+            "title": "Rendszerszabály",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "Az Érzelemkeltő varázslatokkal a boszorkány egyszerre maximum saját Tapasztalati szintjével egyező számú személyre képes hatni. De abban az esetben, ha a varázslat alap mana-költségén és az Erősítésre fordított Mana pontokon kívül, ha a boszorkány még 30 MP-ot feláldoz, a varázslat minden jelenlévőre hat, ha azok elvétik Mágiaellenállásukat. A varázslat létrejöttekor az áldozatok mindegyikének a boszorkány körüli 20 ynev láb sugarú körön belül kell tartózkodnia – ez akkor is érvényes, ha a varázslat leírásában a hatótáv másképpen szerepel – később természetesen eltávolodhatnak. Mindannyian jogosultak Asztrális ME-re a varázslat E-je (teljes E-je, és nem átlagos Erőssége!) ellen, s közülük azok, akik sikerrel járnak, mentesülnek a varázslat hatása alól. A többiekben nyomban tanyát ver a sugallt érzelem."
+        },
+        {
+            "type": "rule",
+            "title": "Búbáj",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Gyanú",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Gyűlölet",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Irtózat",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Rettegés",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Szerelemvarázs",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        }
+    ]
+}

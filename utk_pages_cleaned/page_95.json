@@ -1,0 +1,29 @@
+{
+    "is_new_chapter": true,
+    "chapter_title": "PAPLOVAGOK",
+    "is_new_section": true,
+    "section_title": "A Paplovagok",
+    "content_blocks": [
+        {
+            "type": "paragraph",
+            "text": "A paplovagok a hit és az acél bajnokai, akik életüket egy istenség vagy egy szent ügy szolgálatára szentelik. Ők azok, akik a templomok falain kívül is védelmezik a hitet, karddal és imával egyaránt harcolva a sötétség erői ellen.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "Nem csupán harcosok, hanem a hit élő példái is, akik a csatamezőn és a mindennapokban egyaránt tanúságot tesznek istenük erejéről. Szerepük kulcsfontosságú a vallási rend fenntartásában és a hívők védelmében.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "Képességeik a harci tudás és az isteni mágia egyedülálló ötvözetéből fakadnak. A paplovagok képesek gyógyítani, áldásokat osztani, és isteni erőt meríteni fegyvereikbe, miközben páncéljuk és harci kiképzésük révén a legveszélyesebb ellenfelekkel is felveszik a harcot.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        }
+    ]
+}

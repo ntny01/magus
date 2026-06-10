@@ -1,0 +1,60 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": false,
+    "section_title": "",
+    "content_blocks": [
+        {
+            "type": "paragraph",
+            "text": "Természetes úton, végül pedig az adott körülményeknek megfelelő idő fog kialakulni, meglehet, éppen a pap által létrehozott stabilizálódik."
+        },
+        {
+            "type": "rule",
+            "title": "Küldött megidézése",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Lélekáldozat",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Lélekcsapda",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Isteni áldás",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Összetartozás Asztrálisan/Mentálisan",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Segélykérés",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        }
+    ]
+}

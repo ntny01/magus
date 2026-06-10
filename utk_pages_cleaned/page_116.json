@@ -1,0 +1,165 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": false,
+    "section_title": "",
+    "content_blocks": [
+        {
+            "type": "paragraph",
+            "text": "Egyes rossznyelvek a szegény királyok csatamágusait is megemlékeznek róluk."
+        },
+        {
+            "type": "paragraph",
+            "text": "Igaz, ami igaz. Hergol zsoldos és kalózhercegei a település őidőkbe eső alapításának idején, fogadták fel az első északföldjéről menekült boszorkánymestereket, és hogy hajóik és katonáik erejét immáron rangjukhoz méltó és bugyellárisukhoz méretezett jövedelmű csatamágusokkal egészítsék ki."
+        },
+        {
+            "type": "paragraph",
+            "text": "Az alapító herceg, illetve családja neve ugyan azóta már feledésbe merült – s mostanság, mikor Pyarron és a hitelt érdemlő feljegyzések pusztulásának okán egyre másra jelennek meg a magukat godoni ősöktől eredeztető nemesek és városállamok szerte a Gályák-tengerének partjain – emiatt nem sokat lehet tudni ezen szervezet származásáról."
+        },
+        {
+            "type": "paragraph",
+            "text": "Két dolog mindenesetre bizonyos: Hergol mostanra szinte teljesen a boszorkánymesterek irányítása alá került, a jelenlegi kormányzóherceg leginkább csak egy báb a rend magas tanácsának kezében. Azonban tisztességét fenntartották, mivel legutóbb, majd két évszázaddal ezelőtti kísérletük egy egyszemélyes vezető megválasztására először belső viszállyá, majd polgárháborúvá fajult, melynek csak az alkalmat megragadó Shadon büntetőhadjárata vetett véget."
+        },
+        {
+            "type": "paragraph",
+            "text": "Ekkorra tehető az első, a flotta hajóin szolgáló villámmesterek megjelenése, illetve az uralkodócsalád kijelölése, melynek épsége és megfelelő számú sarjának nevelése felett azóta is a rend tanácsa őrködik."
+        },
+        {
+            "type": "paragraph",
+            "text": "A hergoliak nem szívesen látott vendégek ugyan a Gályák-tengerének kikötőiben, de a kevésbé finnyás államok ritkán mondanak nemet üzleti ajánlataikra, hiszen ezzel megkockáztatnák, hogy magukra vonják a rend haragját, melynek hatalma odáig terjed mostanra, hogy időnként még döntőbíróként fellépnek Erone, Gorvik, illetve a Kereskedőhercegségek vitáiban."
+        },
+        {
+            "type": "paragraph",
+            "text": "A legtöbb hergoli boszorkánymester tudós ember, első benyomásra az utazó nemesúr vagy titoknok benyomását keltik, s mivel ritkán folyamodnak nekromanciához, ezért még a finnyásabb államokban sem derítik fel azonnal kilétüket."
+        },
+        {
+            "type": "paragraph",
+            "text": "A Hergoli Villámmesterek különleges előnyei és hátrányai:"
+        },
+        {
+            "type": "rule",
+            "text": "I. A hergoli magiszterek célirányos képzésüknek hála semmiféle démonikus vagy nekromantikus képzettséggel nem bírnak, efféle varázslatokat nem ismernek, s ezeket iskolájukban nem is oktatják.",
+            "title": "Képzettségi korlátok"
+        },
+        {
+            "type": "rule",
+            "text": "II. A hergoli magiszterek oly szinten merültek el a villámok művészetének tanulmányozásában, hogy idejük már nem nagyon maradt más mágiaformák hathatósabb szemrevételezésére. Így a boszorkánymesteri varázslatok minden E-jének megidézési költsége számukra 1 Mp-tal drágább, míg a Villámmágia és a Természeti mágia fejezeteibe tartozó varázslatok minden E-jének megidézési költsége 1 Mp-tal kevesebb, de mindig legalább 1. Illetve képesek a rájuk kilőtt, vagy magukba visszairányított villámokat sikeres Tapasztalati mágia (boszorkánymester) képzettségpróbával befogni, s erejüket elnyelni aurájukban, majd felhasználni azokat a létrehozásuknak megfelelő E-ben, mintha maguk idézték volna meg. A jelenség elég riasztó, hiszen a villámmester a testébe csapódó energiától hirtelen fényesen felizzik, majd mikor úrrá lesz rajta, amaz bal tenyerébe gyűlik engedelmesen várva, hogy újabb formába öntsék. Abban az esetben azonban, ha a villámmester elvéti próbáját, akkor a villám természetesen normál módon sebzi, illetve ilyen esetben semmiféle védőmágia nem nyújt menedéket, hiszen a rombolás a varázstudó aurájában jön létre, belülről pusztítva célpontját.",
+            "title": "Különleges képesség"
+        },
+        {
+            "type": "paragraph",
+            "text": "III. A hergoli villámmesterek északi pályatársaik munkásságát folytatva komoly felfedezéseket tettek a Villámmágia terén, az alább következő varázslat és varázslat is ennek eredménye."
+        },
+        {
+            "type": "paragraph",
+            "text": "Vándorvillám (felruházás)"
+        },
+        {
+            "type": "rule",
+            "text": "Mana pont: +15",
+            "title": "Rendszerszabály"
+        },
+        {
+            "type": "paragraph",
+            "text": "A villámnyaláb, amit ezzel a tulajdonsággal ruháztak föl képes elhagyni a megidézője zónáját és maximálisan fél ynevi mérföld távolságig eloszlóan létrehozódni. A jelenség elég látványos, hiszen a varázslat pillanatában a „majd” alkarnyi fényív köti össze a boszorkánymestert és akár fél mérföldre lévő célpontját."
+        },
+        {
+            "type": "paragraph",
+            "text": "Villám mágnes"
+        },
+        {
+            "type": "rule",
+            "text": "Mana pont: 6/E Varázslás ideje: 1 kör/E Hatótáv: érintés Időtartam: 10 perc/E",
+            "title": "Rendszerszabály"
+        },
+        {
+            "type": "paragraph",
+            "text": "A villámmester ezen varázslat segítségével szerencsés esetben új irányt szabhat a fél ynevi mérföld sugarú körben lecsapó természetes villámoknak, az általa kijelölt célpontba irányítva a romboló mágikus energiákat. A varázslat alap erősítés mellett 50% eséllyel vonzza be a villámokat a megjelölt területre vagy személyre; ez az esély az erősség növelésével, E-nként 10%-kal nő."
+        },
+        {
+            "type": "paragraph",
+            "text": "Itt jegyzendő meg, hogy átlagosan egy természetes vagy mágikusan gerjesztett vihar esetében az egy ynevi mérföld átmérőjű körben átlagosan kör/2 percenként sújt le egy villám (természetesen a KM másképp is határozhat)."
+        },
+        {
+            "type": "paragraph",
+            "text": "A természetes villámok sebzésükben mindenben megegyeznek a boszorkánymesteri villámoknál leírtakkal, 10 E-s villámnak minősülnek (a KM itt is határozhat másképp)."
+        },
+        {
+            "type": "paragraph",
+            "text": "Hergol nagyhatalmú csatamesterei ezen varázslatot leginkább ütközetekben alkalmazzák, akár az ellenséges hajó elsüllyesztésére, akár energiaszerzésre a villámelnyelő képességük kamatoztatásával."
+        },
+        {
+            "type": "paragraph",
+            "text": "A Hergoli Villámmester induló képzettségei"
+        },
+        {
+            "type": "paragraph",
+            "text": "1. Tapasztalati szinten:"
+        },
+        {
+            "type": "table",
+            "headers": [
+                "Képzettségek",
+                "Fok"
+            ],
+            "rows": [
+                [
+                    "Tapasztalati mágia (boszorkánymester)",
+                    "3. fok"
+                ],
+                [
+                    "Fegyverhasználat",
+                    "2. fok"
+                ],
+                [
+                    "Herbalizmus",
+                    "2. fok"
+                ],
+                [
+                    "Alkímia",
+                    "2. fok"
+                ],
+                [
+                    "Méregkeverés/semlegesítés",
+                    "2. fok"
+                ],
+                [
+                    "Írás/olvasás",
+                    "2. fok"
+                ],
+                [
+                    "Számtan/mértan",
+                    "2. fok"
+                ],
+                [
+                    "Pszi (pyarroni)",
+                    "2. fok"
+                ],
+                [
+                    "Politika/diplomácia",
+                    "2. fok"
+                ],
+                [
+                    "Csomózás",
+                    "2. fok"
+                ],
+                [
+                    "Értékbecslés",
+                    "2. fok"
+                ],
+                [
+                    "Hajózás",
+                    "2. fok"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A Hergoli Villámmesterek által oktatott képzettségek a boszorkánymesternél felsoroltakon kívül, melyeket a karakter az Oktatás képzettség 4. foka által nyújtott bónuszokkal tanulhat:"
+        },
+        {
+            "type": "paragraph",
+            "text": "Hadvezetés, Lélektan, Térképészet, Művészetek (Rajz), Hajózás, Csomózás, Értékbecslés, Kultúra, Szakma (Pénzügyek), Politika/diplomácia, Udvari etikett/intrika."
+        }
+    ]
+}

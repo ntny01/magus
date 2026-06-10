@@ -1,0 +1,140 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": true,
+    "section_title": "Lélekidézés és Űzés",
+    "content_blocks": [
+        {
+            "type": "paragraph",
+            "text": "Csak meket, lidérceket, illetve kóborló dögöket lehet megidézni, más élőholtakat nem. Arra nézve, hogy az élőhalott miként fest, a KM-től tudhatsz meg adatokat, illetve a könyv végén található Bestiáriumban, a 483. oldalon olvashatsz bővebben róluk."
+        },
+        {
+            "type": "rule",
+            "title": "Lélekidézés Litánia",
+            "headers": [
+                "Mana pont",
+                "Időtartam",
+                "Litánia hossza"
+            ],
+            "rows": [
+                [
+                    "70",
+                    "Gyertyától függ",
+                    "7 kör"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A lélek Anyagi Test nélkül jelenik meg, a litánia utolsó szavának elhangzásakor. Az Anyagi Síkhoz egyáltalán nincs is köze, csak az Asztrál- és a Mentálsíkon van jelen. A varázsló, ha transzba kerül képes úgy kommunikálni a lélekkel, mint nem megidézettek, hanem elüzetik az Anyagi Síkról. Az űző litániák ugyan azokból a mágikus tartamú szavakból állnak (ugyanannyi a Mana pont igényük és a Varázslási idejük), mint az azonos idéző litániák, csak éppen fordított sorrendben, a legutolsó szavakat előre véve kell elkántálni őket. Az űző litánia utolsó szavának elhangzásakor a lény (akire a varázslat irányul), visszatéved – visszakerül – oda, ahonnan korábban megidézték. A nem idézéssel hívott teremtményekre a litánia semmilyen hatással nincs. A Lélekidézés alapvető feltétele, hogy az idéző ismerje a megidézni kívánt lélek életében viselt nevét, és rendelkezzen testének valamely csontjával vagy az illető valamely kedves, személyes holmijával. A lélek képességei életében birtokolt képességeivel egyenlőek, azaz ha testében rendelkezett pszível, akkor lélekként is fog, mi több, ha ismerte a mágiát, varázsolni is képes lesz – olyan szinten, amilyenen életében tette. Természetesen Anyagmágiát egészen addig nem tud használni, míg Anyagi Testre szert nem tesz. A megidézett lélekre vonatkozóan a további információkat a KM-ektől kérdezd!"
+        },
+        {
+            "type": "rule",
+            "title": "Űző litánia",
+            "headers": [
+                "Mana pont",
+                "Időtartam",
+                "Varázslás ideje"
+            ],
+            "rows": [
+                [
+                    "Lásd a leírást!",
+                    "Végleges",
+                    "Lásd a leírást!"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "Kevésen tudják, hogy az idéző litániákat visszafelé elmondva, azok hatása is megfordítható, azaz a lény nem megidéztetik, hanem elüzetik az Anyagi Síkról. Az űző litániák ugyan azokból a mágikus tartamú szavakból állnak (ugyanannyi a Mana pont igényük és a Varázslási idejük), mint az azonos idéző litániák, csak éppen fordított sorrendben, a legutolsó szavakat előre véve kell elkántálni őket. Az űző litánia utolsó szavának elhangzásakor a lény (akire a varázslat irányul), visszatéved – visszakerül – oda, ahonnan korábban megidézték. A nem idézéssel hívott teremtményekre a litánia semmilyen hatással nincs. A mágiatudomány, célja szerint, háromféle űző litániát ismer: Élőhalottűző, Kísértetűző és Lélekűző litániát."
+        },
+        {
+            "type": "rule",
+            "title": "Varázsjelek",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "A nekromanták képesek rúnák és mágikus jelek segítségével szentségtelen hatalmukat maradandóbb formába önteni, azonban ezen rúnákat a karakter csak akkor tudja felróni, ha rendelkezik a Rúnamágia képzettség 3. fokával."
+        },
+        {
+            "type": "rule",
+            "title": "Idéző Pentagramma",
+            "headers": [
+                "Mana pont",
+                "Időtartam"
+            ],
+            "rows": [
+                [
+                    "40 Mp",
+                    "Az idéző gyertya függvénye"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A pentagramma leggyakrabban idézésekhez használatos; ilyenkor a varázsló litániát kántál, a megidézett ennek végeztével jelenik meg. A litánia hossza az idézett teremtmény nekrográfiai besorolásától függ. Mint ahogy ez határozza meg azt is, hogy mennyi Mp szükséges az idézéshez. A Mp-ok a litánia elmondásakor használódnak fel. A pentagrammába mágikus rúnákkal bele kell írni a megidézni kívánt lény megnevezését. A további leírást lásd a Nekromancia című fejezet elején!"
+        },
+        {
+            "type": "rule",
+            "title": "Lélekcsapda bélyeg",
+            "headers": [
+                "Mana pont",
+                "Időtartam",
+                "Rajzolás ideje"
+            ],
+            "rows": [
+                [
+                    "30 Mp",
+                    "Ameddig a bélyeg töretlen",
+                    "20 perc"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "Az a test, amelyen a varázsló elhelyezi a Lélekcsapda bélyegét, képes lesz befogadni egy, a varázsló által meghatározott lelket. A beköltözött lélek azonnal kiterjeszti arra Személyes Aurájának védelmét, még akkor is, ha történetesen Halottmozgatás Bélyeggel mozgatott holttestről van szó. Ha a kiszemelt testben már lakozik lélek, akkor kettejük közül az fogja irányítani a közös testet, amelyiknek magasabb az Akaratereje. A bélyeg ellen nincs Mágiaellenállás. A beköltöztetett lélek addig marad a testben, ameddig arról le nem törik a varázsjelet. Ha ezt valaki megteszi, a lélek azonnal kikerül onnét."
+        },
+        {
+            "type": "rule",
+            "title": "Lélekcsapda varázsjel",
+            "headers": [
+                "Mana pont",
+                "Időtartam",
+                "Rajzolás ideje"
+            ],
+            "rows": [
+                [
+                    "30 Mp",
+                    "Ameddig a varázsjel töretlen",
+                    "20 perc"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "Hasonló a Lélekcsapda bélyeghez, de ezt nem lényre, hanem tárgyra írja a varázsló. Az adott tárgy ettől kezdve otthont ad a léleknek, amit az nem hagyhat el. Így képtelen lesz visszatérni eredeti testébe, vagy a síkra, ahonnan megidézték. A megidézett lélek ily módon immár kötve lesz az Anyagi Világhoz. A beköltözött lélek képes kiterjeszteni annak védelmét arra a tárgyra, amelyben lakozik. A beköltöztetett lélek addig marad a tárgyban, ameddig arról le nem törik a varázsjelet. Ha ezt valaki megteszi, akkor a lélek azonnal kikerül a belőle."
+        },
+        {
+            "type": "rule",
+            "title": "Halottmozgatás bélyege",
+            "headers": [
+                "Mana pont",
+                "Időtartam",
+                "Rajzolás ideje"
+            ],
+            "rows": [
+                [
+                    "40 Mp",
+                    "Ameddig a bélyeg töretlen",
+                    "20 perc"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "Ha a varázsló ezt a bélyeget elhelyezi egy holttesten, akkor az – dacára annak, hogy az élet már elszállt belőle – újból mozgásképes lesz. Ez éppúgy igaz a varázsló által készített (Homunkulusz), gondosan megmunkált (lásd Átformázás) testre is. Mivel a testből már eltűnt – vagy jelen sem volt – az Élet princípiuma, ezentúl a mágia hivatott biztosítani a mozgáshoz szükséges energiát. Ez nem jelenti azt, hogy a test komolyan sérült is lehet, hiszen a csontokra és az izmok munkájára továbbra is szükség van. A bélyeggel felruházott test addig képes erre a mágia vezérelte mozgásra, amíg a bélyeget róla le nem törik. Természetesen ez még nem jelenti azt, hogy a Halottmozgatás Bélyegével ellátott lény cselekszik is. Ehhez előbb lelket szükséges a testbe költöztetni, vagy bármely más módon irányító akarattal ellátni (Lélekcsapda bélyeg, Lélekmás stb.), ami vezérli azt. A Halottmozgatás bélyeggel mozgatott test nem számít élőlénynek, nem hiányzik belőle az Élet princípiuma. Ez annyit tesz, hogy az Átváltoztatás és a Visszaváltoztatás varázslatoknak nem képezheti alanyát."
+        }
+    ]
+}

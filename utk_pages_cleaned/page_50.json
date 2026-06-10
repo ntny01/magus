@@ -1,0 +1,77 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": null,
+    "is_new_section": true,
+    "section_title": "Marico con Rabora lovagrend (Gorvik)",
+    "content_blocks": [
+        {
+            "type": "table",
+            "headers": [
+                "Képzettség",
+                "Fok"
+            ],
+            "rows": [
+                [
+                    "Hadvezetés",
+                    "1. fok"
+                ],
+                [
+                    "Lovaglás",
+                    "3. fok"
+                ],
+                [
+                    "Udvari etikett",
+                    "2. fok"
+                ],
+                [
+                    "Heraldika",
+                    "2. fok"
+                ],
+                [
+                    "Párbaj",
+                    "1. fok"
+                ],
+                [
+                    "Történelem",
+                    "2. fok"
+                ],
+                [
+                    "Írás/olvasás",
+                    "2. fok"
+                ],
+                [
+                    "Vallásismeret (Ranagol)",
+                    "3. fok"
+                ],
+                [
+                    "Ősi nyelv (aquir)",
+                    "1. fok"
+                ]
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Rend által oktatott képzettségek",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "title": "Oktatható képzettségek listája",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "Noha minden szervezet vita nélkül elfogadja Ranagol főségét – a többi isten természetfölötti mivoltát a klasszikus amanoviki teológia nyomdokain haladva elismerik ugyan, ám az isteni lényeget megtagadják tőlük –, egyes hitelveket és dogmákat időnként eltérően értelmeznek, s ez ugyanúgy véres összetűzésekhez vezethet közöttük, mint a különféle világi disputák jószágok, kaszálók és jobbágyok dolgában. Az igazat megvallva a legtöbb rendi elöljáró csak a megfelelő ürügyet keresi a torzsalkodásra. Valójában a kiemelkedés, a felmagasztosulás vágya hajtja őket; ellenségeik tetemén átgázolva igyekeznek bizonyítani a Kosfejes Úr szemében saját érdemességüket."
+        },
+        {
+            "type": "paragraph",
+            "text": "Jellegzetes példája az ilyen gorviki szervezeteknek a Marico con Rabora rend. Hazájában egyik a leghatalmasabb lovagrendeknek, kastélymenedékei nem korlátozódnak egyetlen tartományra, hanem Abrado, Rokmund és Warvik területén szétszórva találhatók. Noha a tagok között örökös párbajok is akadnak, a szervezet mégis inkább világi jellegű. Névadó alapítója, Marico con Rabora gróf, az ország harmadik történeti periódusának egyik legjelentősebb hadvezére és harcászati újítója volt, sokáig kalandozóként is tevékenykedett. Noha nem szentelték fel Ranagol szolgálatára, mégis mélyenszántó teológiai tanulmányokat folytatott. Kiindulópontja a harmadik amanoviki alapvetés volt, a saját bűnök megváltása mások szenvedése által; innen bonyolult érveléssel jutott el odáig, hogy kimutassa és körülírja a testi-lelki szenvedésben rejlő művészi értékeket."
+        },
+        {
+            "type": "paragraph",
+            "text": "Az általa alapított rend, emelkedett szelleme emlékének adózva, egyik legfontosabb feladatának érzi, hogy ezeket az elveket átültesse a gyakorlatba. (Ámbátor annyira azért még közel sem merülnek el a szélsőségekben, mint a Dea Macula tetemszobrászai, netán a hírből ismert kráni hóhérpoéták.) Csapataik gyakran portyáznak az országhatárokon túl, vakmerően kutatva az újat, a dicsőséget, a kiemelkedés lehetőségét. Folyamatos háborúban állnak több másik renddel, a kastélymenedékek abregóinak időnként minden energiáját az köti le, hogy támogatást vagy legalábbis semlegességet ügyeskedhessenek ki maguknak a tartományi hatóságoktól és a befolyásosabb fejvadász corgáktól. Legalább ilyen bonyodalmas diplomáciai manőverekre van szükség ahhoz is, hogy ellenségeik ne fogjanak össze a hátuk mögött."
+        }
+    ]
+}

@@ -1,0 +1,111 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": true,
+    "section_title": "Az Asztrálmágia szabályai",
+    "content_blocks": [
+        {
+            "type": "paragraph",
+            "text": "Ahhoz, hogy a varázsló az Asztrálmágia fortélyait alkalmazhassa, tisztában kell lennie az érzelmek alapvető felépítésével, megjelenési formáival, ezért a Lélektan képzettség legalább 3. fokával kell bírnia."
+        },
+        {
+            "type": "rule",
+            "title": "Asztrálmágia varázslatok elleni védekezés",
+            "headers": [
+                "Szabály",
+                "Leírás"
+            ],
+            "rows": [
+                [
+                    "I.",
+                    "Az Asztrálmágia varázslatai ellen mindig Asztrális Mágiaellenállással lehet védekezni."
+                ],
+                [
+                    "II.",
+                    "Abban az esetben, ha az adott varázslat áttörte a célpont Asztrális Mágiaellenállását, akkor attól függően fejti ki hatását, hogy mekkora erővel sikerült felülkerekednie az áldozaton."
+                ],
+                [
+                    "III.",
+                    "Abban az esetben, ha a varázslat erősítése 10 E-vel meghaladja a célpont Mágiaellenállását, akkor amaz mindent felejtve, elfeledkezve akár még az önfenntartási ösztönéről is igyekszik eleget tenni az érzelem diktálta viselkedésformának, cselekedetnek."
+                ],
+                [
+                    "IV.",
+                    "Asztrálmágiát a varázsló – Távolbahatás híján – csak arra alkalmazhat, aki a Zónáján belül tartózkodik, (lásd még Zóna Varázsl, Térmágia!). Természetesen az áldozat, ha már a varázslat hatása alatt áll, eltávolodhat a varázslótól."
+                ],
+                [
+                    "V.",
+                    "A varázslatoknál feltüntetett Mp-igény akkor igaz, ha a varázslat által keltett érzelmét az áldozatnak egyetlen személy vagy tárgy iránt kell táplálnia. A varázslat akkor annyi E erősítésű lesz, amennyi az adott mozaiknál fel van tüntetve. Ezt természetesen tanácsos tovább erősíteni, hogy áthatoljon az áldozat Mágiaellenállásán."
+                ],
+                [
+                    "VI.",
+                    "Ha a varázsló azt kívánja, hogy az áldozat az érzelmet több személy vagy tárgy iránt táplálja, akkor dupla ennyi Mp-ot kell a varázslatra fordítania ahhoz, hogy az ugyanolyan Erősségű (E) legyen."
+                ],
+                [
+                    "VII.",
+                    "Ha az érzelem iránya egy eszme vagy fogalom, akkor a varázslatnál feltüntetett Mp igény háromszorosát kell a varázslónak felhasználnia ahhoz, hogy ugyanakkora erősítést (E) érjen el."
+                ],
+                [
+                    "VIII.",
+                    "Pozitív vagy negatív érzelmet csak semlegesség esetén lehet elérni. Ha az érzelem nem semleges, akkor a varázslat az előbb leírtaknak is duplájába kerül, hiszen az ellentétes érzelmet előbb meg kell szüntetnünk, lét rehozva a továbbiakhoz szükséges semlegességet."
+                ],
+                [
+                    "IX.",
+                    "Ha a varázsló által sugallt érzelmet az áldozat már eleve érzi (adott érzelemnek célja, iránya azonos), a varázslat könnyebben kifejti rajta hatását: Erőssége (E) duplának számít. Ilyen eset akkor következhet be, ha a varázsló nem bízik áldozata adott érzelmének rendíthetetlenségében, vagy az érzelem mértékét tartja kevésnek, ezért varázslattal kívánja megerősíteni."
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "Asztrális Formázás Mozaik"
+        },
+        {
+            "type": "paragraph",
+            "text": "Mana pont: Lásd a leírást! Időtartam: Lásd a leírást! Varázslás ideje: 1 szegmens"
+        },
+        {
+            "type": "paragraph",
+            "text": "A mozaikot a varázsló az Asztrál mozaikhoz kell, hogy hozzákösse. Ennek hiányában a megidézett Érzelem csak a varázslóra fejti ki hatását. Ezen mozaik segítségével annak létrehozója képes 1 körre, vagy egy szegmensre az adott formába kényszeríteni a megidézett érzelmeket. Az alábbi táblázat megmutatja, hogy 1 E erősségű Asztrál mozaik egy adott alakzatba való formázása mekkora energiát emészt fel, azaz mennyi Mana pontba kerül:"
+        },
+        {
+            "type": "table",
+            "headers": [
+                "Formázás",
+                "Mp igény"
+            ],
+            "rows": [
+                [
+                    "Érintés",
+                    "1 Mp/E"
+                ],
+                [
+                    "Hullám",
+                    "1 Mp/E"
+                ],
+                [
+                    "Szőnyeg, Fal",
+                    "1 Mp/E"
+                ],
+                [
+                    "Aura",
+                    "2 Mp/E"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "Érintés"
+        },
+        {
+            "type": "paragraph",
+            "text": "Mana pont: — Időtartam: Egyszeri"
+        },
+        {
+            "type": "paragraph",
+            "text": "A legalapvetőbb formázása az Asztrális mozaikoknak. A varázsló az önnön lelkében felidézett érzelemmel az Aszt rálsíkon kinyúl a célpont felé és megérinti annak tudatát. A varázslat, ha sikeres volt, átjutva az Asztrális Mágia ellenálláson, kifejti a belefoglalt Asztrál mozaik hatását a mozaik leírásában szereplő időtartam erejéig. Ennél a formázásnál az alany nem lehet messzebb 20 ynevi lábnál és csak egyetlen személy jelölhető ki."
+        },
+        {
+            "type": "paragraph",
+            "text": "Az alábbi Formázásokat csak akkor képes alkalmazni a varázsló, ha avatott ismerője a Lélektannak, azaz legalább 4. fokával bír a képzettségnek."
+        }
+    ]
+}

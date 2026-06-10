@@ -1,0 +1,200 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": false,
+    "section_title": "",
+    "content_blocks": [
+        {
+            "type": "rule",
+            "title": "Morquor Jellemzők",
+            "headers": [
+                "Jellemző",
+                "Érték"
+            ],
+            "rows": [
+                [
+                    "Fájdalomtűrés pontok",
+                    "65"
+                ],
+                [
+                    "Asztrál ME",
+                    "Immunis"
+                ],
+                [
+                    "Mentál ME",
+                    "Immunis"
+                ],
+                [
+                    "Méregellenállás",
+                    "Immunis"
+                ],
+                [
+                    "Pszi",
+                    "35 (4. fok – pyarroni)"
+                ],
+                [
+                    "Mp",
+                    "60"
+                ],
+                [
+                    "Intelligencia",
+                    "Magas"
+                ],
+                [
+                    "Jellem",
+                    "Káosz, Halál"
+                ],
+                [
+                    "Tapasztalati pont",
+                    "280"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "Gondolati séma: sértődékeny, bosszúálló és könnyen felingerelhető. Ha nem kezelik kellő tisztelettel, menten haragra gerjed. Meglehetősen értelmes, ám eltúlzott tisztelettel és udvariassággal hamar lekenyerezhető."
+        },
+        {
+            "type": "paragraph",
+            "text": "Két méter magas, humanoid külsejű démon. Testét vörössárga, fényes pikkelyek borítják, ami hullószerű külsőt kölcsönöz neki. Legtöbbször azonban teste nem pillantható meg, mert általában Tűzaura övezi (lásd Ős-elemi mágia)."
+        },
+        {
+            "type": "paragraph",
+            "text": "Általában a tűzmágia különféle formáival harcol, nem puszta kézzel vagy fegyverrel. Gyakorlatlansága mind Kezdeményező, mind Támadó, mind Védő értékében megmutatkozik. Ha valamely okból rákényszerül a harcra, KÉ-je 30, TÉ-je 75, VÉ-je 100; ilyenkor sem használ fegyvert, hanem Tűzaurától övezett kezeivel, testével igyekszik megégetni ellenfelét. Körönként mindkét kezével kétszer, azaz összesen négyszer támad."
+        },
+        {
+            "type": "paragraph",
+            "text": "Minden tűz, amit használ, azonos az Elemi mágiánál megismert Őstűzzel – azaz az Ősvíz védelmet nyújt el ellene. A Morquor akárhányszor, bármekkora időtartamig képes Tűzaurával övezni magát. Ennek – és minden egyéb tűzmágiájának – Erőssége (E) egyenlő mindenkori ÉP-jének számával. Ahogyan ő gyengül, úgy csökken mágikus tevékenységének Erőssége is. Minden körben egyet varázsolhat az alább felsoroltak közül, de varázslataiba nem képes Idővagy Térmágiát szőni. Zónája nem 20, hanem 100 ynevi láb sugarú kör, csak ezen belül tevékenykedhet. A Morquor az Őselemi mágiából az Őselemi Mágia képzettség 5. fokának megfelelő képességekkel teszi. Max. Mana pontjainak száma 60, azonban körönként saját síkján 5 MP-ot, az Elsődleges Anyagi Síkok bármelyikén körönként csupán 1 MP-ot nyer vissza."
+        },
+        {
+            "type": "paragraph",
+            "text": "A Morquor meglehetősen ritka, mivel a démonok és hercegeik gyűlölik, s gyakran irtják is. Természetesen az ellenszenv kölcsönös."
+        },
+        {
+            "type": "rule",
+            "title": "Xing (A Halálhozó) Jellemzők",
+            "headers": [
+                "Jellemző",
+                "Érték"
+            ],
+            "rows": [
+                [
+                    "Előfordulás",
+                    "Idézett"
+                ],
+                [
+                    "Megjelenők száma",
+                    "1"
+                ],
+                [
+                    "Termet",
+                    "E"
+                ],
+                [
+                    "Méretkategória",
+                    "Fegyvertől függ"
+                ],
+                [
+                    "Sebesség",
+                    "100 (SZ)"
+                ],
+                [
+                    "Időigény",
+                    "Fegyvertől függ"
+                ],
+                [
+                    "Kezdeményező érték",
+                    "55"
+                ],
+                [
+                    "Támadó érték",
+                    "110"
+                ],
+                [
+                    "Védő érték",
+                    "150"
+                ],
+                [
+                    "Sebzés",
+                    "1K10, vagy fegyvertől függ"
+                ],
+                [
+                    "Életerő pontok",
+                    "30"
+                ],
+                [
+                    "Fájdalomtűrés pontok",
+                    "60"
+                ],
+                [
+                    "Asztrál ME",
+                    "Immunis"
+                ],
+                [
+                    "Mentál ME",
+                    "Immunis"
+                ],
+                [
+                    "Méregellenállás",
+                    "Immunis"
+                ],
+                [
+                    "Pszi",
+                    "45 (Slan 5. fok)"
+                ],
+                [
+                    "Intelligencia",
+                    "Alacsony"
+                ],
+                [
+                    "Jellem",
+                    "Káosz, Halál"
+                ],
+                [
+                    "Tapasztalati pont",
+                    "800"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "Gondolati séma: büszke, a harcnak él, azt minden körülmények között keresi, el nem kerüli. Irtózik a mágiától, elpusztítani igyekszik minden megnyilvánulását. Bátor, nem fél a haláltól, csak attól, hogy mágia áldozatául esik. Makacs, önfejű, nem fogad el urat maga fölött, legfeljebb szövetségest."
+        },
+        {
+            "type": "paragraph",
+            "text": "A Xing 180 ynevi hüvelyk magas, teljesen emberi külsejű démon. Jó megjelenésű, férfi arcvonásaival rendelkezik, öltözéke ennek megfelelő. Egyedül kézen izzó szemei árulkodnak nem emberi származásáról. Szívesen jár-kel az emberek között, és lépten-nyomon ellenfeleket keres. Nem mindenkivel hajlandó azonban megküzdeni, csak azokkal, akiket méltó ellenfélnek ítél."
+        },
+        {
+            "type": "paragraph",
+            "text": "A Xing félelmetesen gyors és képzett harcos. Vérbeli harcművész. Félhold alakú kardokat forgat, a legenda szerint tőle tanulták a Slanek a fegyver használatát. A kardok értékei, melyeket 5. fokon forgat megegyeznek a slan kard értékeivel, és hozzáadódnak a fegyvertelen harcértékekhez."
+        },
+        {
+            "type": "paragraph",
+            "text": "A Xing 12. Pszi-használati szintnek megfelelően alkalmazza a Slan ún. diszciplínáit. Különleges Mágiaellenállása nincs legfeljebb kiemelkedő Pszi-tudományából ered különlegesen erős Asztrálés Mentálpajzsa."
+        },
+        {
+            "type": "paragraph",
+            "text": "A Xing általában magányos, még a hozzá hasonlók társaságát sem kedveli. Félelmetes harci technikái miatt még a démonurak és -hercegek is tartanak tőle, s ritkán szorítják engedelmességre. A Xing a démoni síkok kóbor lovagja. Megidézésétől is ajánlatos tartózkodni, hisz legfeljebb ártó mágiák kilátásba helyezésével lehet sakkban tartani, de tartsuk észben, hogy intelligens, könnyen átlát a szitán, és nem szenvedheti, ha ellenfele blöfföl."
+        },
+        {
+            "type": "section_header",
+            "text": "Sárkányok"
+        },
+        {
+            "type": "paragraph",
+            "text": "Ős-sárkányok és korcs sárkányok"
+        },
+        {
+            "type": "paragraph",
+            "text": "Az ős-sárkányok a Kyr Birodalom előtti időkben éltek, s az Ynevet akkoriban uraló aquirok ősi ellenségei voltak. Mágikus hatalmuk a kyr mágusokéval vetekszik, bölcsek és emberfelettien intelligensek. Békében éltek egymással és minden olyan fajjal, amely ezt számukra lehetővé tette. Az emberek elszaporodásával a hegységekbe húzódtak vissza, s bár életkoruk gyakorlatilag végtelen, lassanként mégis kipusztultak. Ma már alig egy tucat él belőlük Yneven, tágas barlangok rejtekében szunyókálnak, évszázadokat átaludva egy jobb kor eljövetelét várják. Az emberiség viszályairól mit sem tudnak, vagy ha igen, nem vesznek róla tudomást, s végképp nem vállalnak részt benne. Csak alszanak és várnak."
+        },
+        {
+            "type": "paragraph",
+            "text": "A korcs sárkányok az ős-sárkányok ma élő, elkorcsosult ivadékai. Mind méretükben, mind fizikai és szellemi képességeikben messze elmaradnak őseik mögött. Ynev elhagyatott hegyein meglehetősen nagy számban élnek – számuk kontinens-szerte ezerre tehető. Legismertebb előfordulási helyeik: a legendás Anúria, a Sheral Hegység, a kráni Sötét-hegység és Ediomad."
+        },
+        {
+            "type": "paragraph",
+            "text": "Egy sárkány annál nagyobb és veszedelmesebb, minél öregebb; de természetesen az ős-sárkányok a leghatalmasabbak. Egy kifejlett ős-sárkány eléri a 80-150 ynevi lábnyi hosszúságot, s a feje 35-40 ynevi láb magasra képes emelni. Ezzel szemben a legnagyobb korcs sárkány is legfeljebb 70 ynevi láb hosszú, s nem ritka közöttük a 15 ynevi lábnyi „apróság” sem."
+        }
+    ]
+}

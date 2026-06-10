@@ -1,0 +1,24 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": true,
+    "section_title": "A dinasztia",
+    "content_blocks": [
+        {
+            "type": "paragraph",
+            "text": "A dinasztia természetesen kyr vérvonalú. Az uralkodó család 3500 esztendeje irányítja Toront, s ha voltak is ki sebb megingások, belviszályok az örökösödés kérdésében (a Császári Háborúk, P.sz. 1022–1045 között), ma már kétség sem merülhet fel az utódlással kapcsolatban, hála a dinasztia kiterjedtségének. Miután az örökösödésből a császár egyet len ivadéka sincs kizárva – már amennyiben az anya is kyr származék –, mindig van elegendő fiúgyermek. Közülük a legidősebb a trónörökös, s egyben a Ten Hercegi Ház feje is. Trónralépésekor a Ten Ház a császári udvar részévé válik, egészen az új trónörökös születéséig, a másik két Hercegi Ház, a Hior és a Vall’hass pedig megmarad a két, korban utána következő fivér – esetleg unokafivér – irányítása alatt."
+        },
+        {
+            "type": "paragraph",
+            "text": "Bátran állíthatjuk, hogy a toroni császár a leghatalmasabb uralkodó Észak-Yneven. (Talán csak a niarei mikádó fogható hozzá; róla viszont keveset tudni, országa nem képes – vagy nem akar – kitörni nyomasztó elszigeteltségéből.) A birodalom minden földje az ő személyes tulajdonát képezi, a nemesi birtokon élőkre a földesurak csupán császári megbízásból ügyelnek, egy központi rendelet bármikor nincstelen koldussá teheti őket. Jog szerint mindössze családi udvarházaikat, városi ingatlanjaikat és rabszolgáikat mondhatják a magukénak."
+        },
+        {
+            "type": "paragraph",
+            "text": "Tharr és a többi isten szolgáinak sincsenek földbirtokaik. A toroni egyházakat a mérhetetlen gazdagságú dinasztia látja el pénzzel, így azok maradéktalan hívei a császári hatalomnak, tökéletes ideológiai támaszt nyújtanak minden cselekedetéhez."
+        },
+        {
+            "type": "paragraph",
+            "text": "A dinasztia hatalmának másik alapköve a kereskedelem. Mint az már szó esett, a kalmárjogokat csak busás összegekért válthatják meg az Észak-Ynev minden vidékén meg forduló toroni kereskedők. Az élénk forgalmat lebonyolító társaságok és Magános Házak kalmárai jövedelmük után roppant összegű adókat fizetnek a Fényesség kasztjának."
+        }
+    ]
+}

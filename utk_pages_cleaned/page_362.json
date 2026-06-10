@@ -1,0 +1,106 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": false,
+    "section_title": "",
+    "content_blocks": [
+        {
+            "type": "paragraph",
+            "text": "Amennyiben a varázsló rendelkezik az Őselemi mágia képzettség 4. fokával, úgy a formázás időtartama alatt a varázsló bármikor képes újabb formába önteni az általa megidézett elemeket."
+        },
+        {
+            "type": "paragraph",
+            "text": "Ilyenkor nem kell újabb Elemet idéznie, hiszen az már jelen van az Anyagi Síkon, elég a varázslat köré egy újabb Formázás mozaikot szőnie, tehát az Erősségnek megfelelően ismét elkölteni egy másik forma Mana pont igényét."
+        },
+        {
+            "type": "paragraph",
+            "text": "Például, ha egy folyosóra a varázsló 6 E-es tűzszőnyeget idéz, az 6x3+6x1=24 Mana pontjába kerül. Ha az Időtartam lejárta előtt Fallá alakítani a szőnyeget, úgy újabb 6 Mana pontot kell elköltenie."
+        },
+        {
+            "type": "paragraph",
+            "text": "Értelemszerűen, csakis a kötött iskolatípusba tartozó formákat képes ekképpen befolyásolni. Ezáltal a mágia megidézője újabb egy körrel kitolja az időtartamot, így képes továbbra is a megidézett Ős-, vagy Paraelemet megtartani."
+        },
+        {
+            "type": "paragraph",
+            "text": "Az átformázás nyújtotta lehetőségek a Szabad Elemi Formák valamelyikébe öntött alakzatokra is érvényesek, abban az esetben, ha ezek nem esnek a kötetlen vagy irányított iskolatípusok leírásánál szereplő megkötések alá."
+        },
+        {
+            "type": "paragraph",
+            "text": "Az iskolaformák átformázásakor viszont tekintettel kell lennie arra, hogy az újonnan létrehozott formának térben érintkeznie kell az elemet korábban magába foglaló eredeti formával, illetve az átformázást csakis a Zónáján belül eső varázslataira alkalmazhatja."
+        },
+        {
+            "type": "paragraph",
+            "text": "Például a varázsló által magára idézett Elemi Erő Aurát csak akkor képes Fallá formázva társai elé helyezni, ha a korábbi Aura valamely pontján érintkezik az új Fallal. Továbbá a későbbiekben, ha Szőnyeggé kívánja formázni az Elemi Erőt, annak kiindulópontja csakis a Fal lehet."
+        },
+        {
+            "type": "rule",
+            "title": "Kötetlen Iskolatípus",
+            "headers": [],
+            "rows": [
+                [
+                    "Ennél az iskolatípusnál a varázstudó klasszikus értelemben nem formázza az adott elemet, csak mintegy megidézi a kívánalmainak megfelelő, alább leírt formában."
+                ]
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Nyíl",
+            "headers": [],
+            "rows": [
+                [
+                    "Mana pont: - Időtartam: Egyszeri Támadó varázslat. A varázsló egy pillanat alatt megidézi a szükséges mennyiségű elemet, s annak irányát megfelelően megválasztva ujjából egyetlenegy, a teremtett elemből való nyíllövedék tör elő (Zóna varázslat esetén a varázslóból). Távolbahatásnál vagy Szimpátiánál a semmiből. Annak eldöntésére, hogy a varázsló eltalálja-e a kiszemelt célt, a harcrendszer célzásra vonatkozó szabályai a mérvadóak. A Nyíl CÉ-je 30, félre nem üthető, de sebzése ellen érvényesül a páncélok SFE-je, illetve a pajzsok nyújtotta Védő érték. E-je és sebzése egyenlő a teremtett elem E-jével és Sp-jével."
+                ]
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Irányított Iskolatípus",
+            "headers": [],
+            "rows": [
+                [
+                    "A varázsló ezen formázásoknál megidézi az Ős-, vagy Paraelemet, amelyek kiszabadulva, a varázsló akaratától függően, fókuszálva (Kitörés), vagy szétterjedve (Csóva) áradnak szét az Elsődleges Anyagi Síkon. Éppen ezért, mivel feloldódnak a Síkon, ezen formákat képtelenség újabb formába rendezni."
+                ]
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Kitörés",
+            "headers": [],
+            "rows": [
+                [
+                    "Mana pont: 1/E Időtartam: Egyszeri A varázsló a megidézett elemet egyetlen pontba fókuszálja, majd feloldja róla az őt összesűrítő formát, minek hatására az elem robbanásszerűen szétoszlik az Elsődleges Anyagi Síkon, s szinte azonnal fel is oldódik a Manahálóban. A varázsló a Zónáján belül bárhol meghatározhatja azt a pontot, amely a Kitörés epicentruma lesz; tanácsos azonban figyelni arra, hogy az elég távol essen tőle, és a robbanás ne sebezze meg őt is! A Kitörés által érintett terület nagyságát a varázsló nem képes befolyásolni, az egyedül a szétrobbanó elem mennyiségétől, azaz E-jétől függ. A Kitörés epicentruma körüli egy láb sugarú körben az E egyenlő a megidézett elem E-jével, attól távolodva, pedig ynevi lábanként 1 E-vel csökken, míg végül semmivé enyészik. Ezzel meg is határoztuk az érintett terület nagyságát: annyi ynevi láb sugarú kör, amennyi a Kitöréssé formázott elem E-je. A sebzés is ehhez hasonlóan alakul: középen maximális, majd az epicentrumtól távolodva az Erősséggel együtt csökken – annyival, ahány ynevi lábra az áldozat a középponttól tartózkodik."
+                ]
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Csóva",
+            "headers": [],
+            "rows": [
+                [
+                    "Mana pont: 1/E Időtartam: 1 kör A kitörés különleges változata, s ebből következően főként támadásra használható. A varázsló itt is fókuszba rántja az általa létrehozott elemet, azonban nem engedi a tér minden irányában szétterülni, hanem fokozatos áramlattá ki, s így a megidézett elem irányított csóvában tör ki. A Csóva mindig a végpontján éri el az 1 lábnyi átmérőt. A Csóva formázott elem Erőssége (E) az első lábnyi, amennyi a teremtett elem Erőssége, attól kezdve pedig lábanként eggyel csökken (akár a Kitörésnél). Ebből máris kiviláglik, hogy a csóva annyi láb hosszú, amennyi az Erőssége. Csak a kiindulási pontja és iránya adható meg, tárgyhoz vagy személyhez nem rendelhető, azzal együtt nem mozgatható vagy forgatható. A másik szembetűnő különbség a Kitöréshez képest, hogy a Csóva időtartama nem egyszeri, hanem egy teljes kör. Ez idő alatt a teremtett elem folyamatosan áramlik a Csóva kiindulási pontjától a végpontjáig."
+                ]
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Kötött Iskolatípus",
+            "headers": [],
+            "rows": [
+                [
+                    "Az Ős-, vagy Paraelem megidézője ezekkel a formákkal zárt alakzatba rendezi az elemeket, ezért aztán azok képtelenek szétoszlani a síkon, egészen a Formázás Időtartamának lejártáig, vagy ameddig a varázsló újabb formába nem kényszeríti őket."
+                ]
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Szőnyeg",
+            "headers": [],
+            "rows": [
+                [
+                    "Mana pont: 1/E Időtartam: 1 kör Védő és támadó varázslat. A varázsló a megteremtett elemet az előbbiekhez képest jóval nagyobb területen osztja el. Ezt csak egyenletesen teheti, s annak formáját sem határozhatja meg; az minden esetben szabályos kör. Ezt a kört nevezzük Szőnyegnek."
+                ]
+            ]
+        }
+    ]
+}

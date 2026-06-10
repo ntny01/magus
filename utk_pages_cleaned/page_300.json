@@ -1,0 +1,24 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": false,
+    "section_title": "",
+    "content_blocks": [
+        {
+            "type": "paragraph",
+            "text": "a szervezet nyugalmát, regenerációját. A varázs egyszeri felhasználása egy éjszakai ébrenlétet eredményez – amennyiben mint az Asztrális, mint a Mentális Mágiaellenállás sikertelen volt. Az áldozat hiába próbál aludni – akár gyógynövények segítségével is –: legfeljebb mágia hatására hajthatja álomra fejét."
+        },
+        {
+            "type": "rule",
+            "title": "Alvásmegvonás hatásai",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "Egy alvás nélkül töltött nap után a kéz enyhén remegni kezd, a szem egyre nehezebben fókuszál, a fej enyhén lüktet, a sebek lassabban gyógyulnak. Ez annyit tesz, hogy az áldozat az első álmatlan éjszaka után -5-tel, a második után -10-zel, a harmadik után -15-tel cselekszik mindenre. Ha a helyzetet odáig fajul, hogy a nyolcadik éjszakán sem képes aludni, kómába esik és összeroskad. Kómában 4k6 nap elteltével Állóképesség-próbát kell dobni; ha sikeres, magához tér, ha nem, csak még egyszer ennyi idő elteltével próbálkozhat ismét."
+        }
+    ]
+}

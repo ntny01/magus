@@ -1,0 +1,24 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": false,
+    "section_title": "",
+    "content_blocks": [
+        {
+            "type": "rule",
+            "title": "Jósálom",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Rémálom",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        }
+    ]
+}

@@ -1,0 +1,29 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": false,
+    "section_title": "",
+    "content_blocks": [
+        {
+            "type": "paragraph",
+            "text": "hátrányával, a Támadó pedig a Támadás Felhátulról harci helyzet módosítóit megkapja. A kemény feltétele a pontos időzítés amihez kell, hogy a kettős támadó tagjának Kezdeményezése felülmúlja az áldozatét. Ha ez nem így történik és elkésik a támadással, akkor mindketten elveszítik pozitív módosítóikat.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "A Falkataktika a tiadlani kettős többszemélyes változata. Humanoid, emberméretű ellenfél ellenében maximálisan hatan képesek egyszerre fellépni. A létszámfölény miatt nem csak egy, de két személy is Támadóként vehet részt a formációban a fenti módosítók, illetve megkötések mellett; természetesen a túlerőből adódó módosítók is sújtják az áldozatot.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "Terkinior hercegkapitány Abhaimaik Otlokir uralkodása idején élt, a hadsereg-reformer nagykirály jobbkeze volt. Az ő nevéhez fűződik ez a módszer. Lényege egy szűk területet elzár pajzs és lándzsa segítségével. Annyi falanksz-harcos szükséges hozzá, amennyi az adott terület, átjáró teljes elállásához szükséges. Ilyenkor a harcos lándzsájával, pajzsa védelmét kihasználva, feltartja ellenfeleit. Amennyiben ő kezdeményez, és ameddig ellenfelét eltalálja – ha nem üti át a páncélt az SFÉ miatt, akkor is –, annak nincs joga a visszatámadáshoz, kivéve, ha fegyvere legalább azonos méretkategóriájú, mint a falanksz lándzsája. Ha a feltartó harcos elhibázza támadását, természetesen minden előnyét elveszíti.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        }
+    ]
+}

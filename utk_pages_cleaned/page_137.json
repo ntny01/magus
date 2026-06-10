@@ -1,0 +1,102 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": true,
+    "section_title": "Fegyverismeret (II – Intelligencia, Érzékelés)",
+    "content_blocks": [
+        {
+            "type": "paragraph",
+            "text": "3. Méretkategória: Egykezes fegyverek"
+        },
+        {
+            "type": "paragraph",
+            "text": "Botok (rövid bot, fúróbot) * Buzogányok (tollas buzogány, harci kalapács, csatacsillag stb.)** Egykezes kardok (hosszúkard, rövidkard stb.)*"
+        },
+        {
+            "type": "paragraph",
+            "text": "4. Méretkategória: Nehéz fegyverek"
+        },
+        {
+            "type": "paragraph",
+            "text": "Nehéz kardok (másfélkezes kard, mara-sequor, lovagkard, kétkezes kard)**"
+        },
+        {
+            "type": "paragraph",
+            "text": "5. Méretkategória: Nyeles fegyverek"
+        },
+        {
+            "type": "paragraph",
+            "text": "Nyeles fegyverek (alabárd, lándzsa, hosszúbot stb.)**"
+        },
+        {
+            "type": "paragraph",
+            "text": "Egyebek:"
+        },
+        {
+            "type": "paragraph",
+            "text": "Hajítótőr, -bárd, -csillag **** Íjak (hosszúíj, rövid íj stb.) *** Nyílpuskák (kézi nyílpuska, könnyű nyílpuska stb.) **** Parittya Bola Háló"
+        },
+        {
+            "type": "rule",
+            "text": "A garott használata speciálisan nem fegyverhasználat, használata csakis az orvtámadással képzettség alkalmazásakor lehetséges, és minden esetben a fegyvernélküli harcértékek történik.",
+            "title": "Garott használata"
+        },
+        {
+            "type": "rule",
+            "text": "Tulajdonságkövetelmény: Erő, Gyorsaság, Ügyesség ** Tulajdonságkövetelmény: Erő, Ügyesség *** Tulajdonságkövetelmény: Gyorsaság, Ügyesség **** Tulajdonságkövetelmény: Ügyesség, Érzékelés",
+            "title": "Fegyver tulajdonságkövetelmények"
+        },
+        {
+            "type": "rule",
+            "text": "Minden más fegyver, ami nem sorolható egyértelműen a fentebbi kategóriákba, az egyebek kategóriába sorolandó külön kategóriát képez, melynek méret alapján történő besorolása a KM feladata.",
+            "title": "Ismeretlen fegyverek besorolása"
+        },
+        {
+            "type": "rule",
+            "text": "A karakter már gyakorlott forgatója az adott készségnek, nem sújtják a képzetlenségből eredő negatív módosítók, de nem kapja meg a fegyver harcértékeit, még a saját kategóriájába eső fegyverekkel szemben sem.",
+            "title": "Fegyverhasználat 1. fok"
+        },
+        {
+            "type": "rule",
+            "text": "A karakter megtanult bánni az adott fegyverrel, már megkapja annak harcértékeit a saját kategóriájába tartozó, illetve a kisebb fegyverekkel szemben; (a nagyobb kategóriába tartozó fegyverek ellen még nem) innentől kezdve a fegyver harcértékeinek hozzáadásával vesz részt az összecsapásokban.",
+            "title": "Fegyverhasználat 2. fok"
+        },
+        {
+            "type": "rule",
+            "text": "A hivatásos fegyverforgató az adott harceszköz forgatásának, sebzéseihez KÉ: +2, TÉ: +5, VÉ: +5, CÉ: +5 módosítóval. A karakter már az eggyel magasabb méretkategóriába eső fegyverekkel szemben is a fegyvere adta, illetve a képzettség nyújtotta plusz pontokkal megnövelt harcértékkel számolhat. Az ilyen szinten képzett fegyverforgató már képes –50 módosítóval, sikeres találat esetén lefegyverezni ellenfelét, vagy ha a fegyvere képes rá, eltörni annak harci eszközét (akár pajzsot is), ha a fegyver eltöréséhez elég STP-t sebez rajta (nem szükséges egyetlen támadásból). Illetve a karakter képes kihasználni a fegyver átütő, páncéltörő képességét, ha a fegyvere rendelkezik efféle képességgel. Csapásainak így ezen a szinten 1 ponttal csökkentett SFE-vel állnak ellen a páncélok. (Lásd a Fegyverek speciális tulajdonságait a Fegyverek című táblázatban a 197. oldalon).",
+            "title": "Fegyverhasználat 3. fok"
+        },
+        {
+            "type": "rule",
+            "text": "A karakter már mestere az adott fegyver forgatásának, a fegyveres harcértékeihez KÉ: +5, TÉ: +10, VÉ: +10, CÉ: +10 (A bónuszok nem adódnak össze a 3. foknál szereplőkkel). A karakter a lefegyverző, illetve fegyvertörő támadásait immáron csak –30 TÉ módosítóval hajtja végre, csapásainak, ha a fegyvere bír ilyen képességgel a páncélok –2 SFE-vel állnak ellen. A karakter már a kettővel magasabb méretkategóriába eső fegyverekkel szemben is a fegyvere adta, illetve a képzettség nyújtotta plusz pontokkal megnövelt harcértékkel számolhat.",
+            "title": "Fegyverhasználat 4. fok"
+        },
+        {
+            "type": "rule",
+            "text": "A karakter legendás mestere választott fegyvere forgatásának, sebzéseihez +1 Sp kap és a Túlütés küszöbe 10 ponttal csökken. A karakter a lefegyverző, illetve fegyvertörő támadásait immáron csak –10 TÉ módosítóval hajtja végre, csapásainak, ha a fegyvere bír ilyen képességgel a páncélok –3 SFE-vel állnak ellen. Ha a karakter célzófegyvert használ, akkor képes felkészülni a lövésre. Minden egyes felkészüléssel töltött kör +10 CÉ-t jelent a képzettség birtokosa számára. Hagyományos íjjal lövő lövész 1 körnél, számszeríjjal alkalmazó lövész 3 körnél többet nem tölthet felkészüléssel. A karakter már a hárommal magasabb méretkategóriába eső fegyverekkel szemben is a fegyvere adta, illetve a képzettség nyújtotta plusz pontokkal megnövelt harcértékkel számolhat.",
+            "title": "Fegyverhasználat 5. fok"
+        },
+        {
+            "type": "paragraph",
+            "text": "Minden valamire való kardforgató, nemesember, bérverekedő, zsoldos vagy fejvadász, esetleg tolvaj vagy orgazda sajátja ez a képzettség, bár magasabb szintű alkalmazói között ősi ereklyéket kutató mágusok és történettudorok is akadnak."
+        },
+        {
+            "type": "paragraph",
+            "text": "Ennek a tudománynak a segítségével a karakter képes alkotni egy fegyver minőségéről, anyagáról, és forgatásának módozatairól. Ez utóbbi információ persze csak szigorúan elméleti jellegű."
+        },
+        {
+            "type": "paragraph",
+            "text": "A gyakorlatias mindennapokban a fegyverek beszerzésekor fontos e képzettség, nehogy gyatra, silány arzenállal induljanak útra a csapat tagjai. Ezen képzettség híján a KM nyugodtan keserítheti a kalandozók életét folyamatosan eltörő pengékkel, repedt, de szépen festett pajzsokkal, melyek a legrosszabbkor adják meg magukat az enyészetnek vagy önveszélyes íjakkal, illetve nyílpuskákkal. Magasabb fokú ismeret esetén pedig, valamely mágikus hagyomány beavatottjaként, vagy Történelem, esetleg Legendaismeret birtokában már varázsfegyvereket is felismerhet a karakter, esetleg ismerheti különleges képességeik titkait."
+        },
+        {
+            "type": "rule",
+            "text": "A képzettség ezen szintjének birtokában a karakter ismeri saját kultúrkörének legelterjedtebb fegyvertípusait és a készítésükhöz használt leggyakoribb anyagokat. Egy-két perces vizsgálódással képes helytálló véleményt formálni a kezébe akadt készségek minőségéről. Az ismeretlen kultúrák alkotta gyilokszerszámok esetén még helyes forgatásuk módját is csak találgatja.",
+            "title": "Fegyverismeret 1. fok"
+        },
+        {
+            "type": "rule",
+            "text": "A karakter jól ismeri saját kultúrkörére minden, más humán kultúrák elterjedtebb fegyvereit. Pillatok alatt megmondja, ha egy pengét csak némi súrolással és csiszolással tettek csillogóvá, de mondjuk egy mara-sequorban továbbra is csak ívelt másfélkezes kardhoz hasonló fegyvert lát.",
+            "title": "Fegyverismeret 2. fok"
+        }
+    ]
+}

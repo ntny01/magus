@@ -1,0 +1,78 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": false,
+    "section_title": "",
+    "content_blocks": [
+        {
+            "type": "paragraph",
+            "text": "kérdésekről csakis ők számolhatnak be, de általában mélyen hallgatnak. Egyesek varázspraktikákat emlegetnek, mások a Nagytanácstól való riadalommal magyarázzák a dolgot. Egy bizonyos, Doran féltékenyen őrzi a kiválasztás titkát.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "Mindenesetre nem egy esetben volt már példa arra is, hogy nem ezen procedúrával, hanem a rend valamely mesterének közbenjárására került valaki a falak közé. Bizonyosan ezen hírekről sem tudni, csak annyit, hogy az efféle diákok lettek később Doran leghatalmasabb mágusai, varázslói.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "Az északi varázslóállam iskoláiban a karakter bármely Mozaikmágikus irányzat tanulója lehet, hatalmának csak eltökéltsége szabhat határt.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "Az Arowin-szikláiból emelt Emlékezés Tornyában Doran minden tanítványa az alapítók akarata szerint beavatást nyer a Tér- és Időmágia, illetve az Idéző (Szimpatikus) Mágia és az egyéb mágikus módszerek rejtelmeibe. Minden dorani varázsló képzése e három mágiaforma elsajátításával kezdődik, majd választhatnak az iskola oktatta területek mágikus tanaiból.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "Az Északi Torony hófehér falai között, illetve az Ewirám-tó mellett elterülő hatalmas erdőségekben az Őselemi és a Természetes Anyag Mágiáját sajátíthatja el az akolita, ki az anyag és az elemek formálásának útjára lép.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "A Szarvtorony a város egyik legjellegzetesebb épülete. A beavatottak az akolitává történő avatásuk után léphetnek be kapuján, ha a Nekromancia vagy a Démonidézés a pyarroniak által sötétnek titulált tanaiba kívánják ásni magukat.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "A tornyot folyamatosan őrszellemek és kísértetek vigyázzák, egyes rossznyelvek szerint e teremtmények még kémkednek is uraiknak, akik ez által markukban tartják nem csak Észak, de a Tengermellék jó néhány nemes famíliáját is. Ezt látszik alátámasztani az is, hogy a Szarvtorony jelenlegi, a köznép és a varázslók számára is ismert vezetője, Alyr Arkhon az Északi Titkosszolgálat feje is egyszemélyben.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "Az Asztrál- és Mentálmágia nem Doran sajátja. Igaz a közelmúltban több próbálkozás is történt egy nagyobb iskola felállítására a Belsőváros falai között – Rielon Quar a Nagytanács jeles tagjának javaslatára. Ennek ellenére a dorani magiszterek nehezen barátkoznak meg a szerintük délies „lélekmágiákkal” és ezen véleményükhöz tartják magukat, még azon tény ellenére is, hogy a mesterek állhatatos munkája nyomán egyre több mentalista áll Észak Ynev uralkodóinak szolgálatában.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "A XIV. Zászlóháború során bekövetkezett, majdnem végzetesnek bizonyuló árulások sorozata, melyben központi szerepet játszott a Szem néven hírhedetté vált dorani magiszter, Wolkum Naizerd is, alapjaiban rengette meg a varázslóállam hírnevét. Az azóta a háború szétzilálta Észak gyanakodva méregeti szilárd támasza tevékenységét. A barátok, kik mindezidáig biztos révnek számítottak a varázslók számára, már titkolóznak előttük, és igyekeznek függetleníteni magukat a varázslóállam befolyásától. A dorani Varázslótanács pedig az időbe vetett bizalommal, a magiszterek eljövendő nemzedékeinek tetteivel óhajt megfelelni kritikusainak és ellenlábasainak: Doran él, erős, és még mindig Észak védelmezője.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "Az igazi dorani varázsló mindig tettre kész, agilis személyiség. A hatalom, az erő és a bölcsesség letéteményese. Déli társaikhoz hasonlóan vallják, hogy a varázslók lelke már igen öreg lélek, ki messzire jutott a Körforgásban, s kit bölcsessége emel az út elején járók fölé. De velük ellentétben hiszik, hogy az ő feladatuk nem a szemlélődés, nem a bölcsesség továbbadása, hanem a világ megóvása, ha kell önnönmaga ellenében is.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        }
+    ]
+}

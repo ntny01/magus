@@ -1,0 +1,148 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": false,
+    "section_title": "",
+    "content_blocks": [
+        {
+            "type": "paragraph",
+            "text": "emésztett el: holttesteket, törmelékfát, szétzúzott hajódeszkákat."
+        },
+        {
+            "type": "rule",
+            "title": "Szokóár (20 Erősség)",
+            "headers": [
+                "Erősség",
+                "Hatás"
+            ],
+            "rows": [
+                [
+                    "20",
+                    "A varázslat szokóárat idéz elő. A víz lassú hullámokat vet, amelyek vészes sebességgel nőnek egyre hatalmasabbá, majd szinte a semmiből szokóár emelkedik húsz ynevi lábnyira a felszín fölé, és elemi erővel árasztja el a partokat vagy a hajót. Erősségétől függően csónakokat, hajókat boríthat fel vagy medréből kiöntve kikötőket, falvakat söpörhet el. Iszonyatos dühe azonban ezután sem csillapodik, háromszor sújt végig a területen haragos fekete hullámtaréjaival, a víz levonultával tócsákat, sártengert, s elsősorban romokat hagyva hátra."
+                ]
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Jégverés",
+            "headers": [
+                "Mana pont",
+                "Leírás"
+            ],
+            "rows": [
+                [
+                    "5/E",
+                    "A varázslattal a boszorkánymester vad jégesőt idézhet. Ennek feltétele, hogy a látótávolságban legalább minimális mennyiségben, de akadjanak esőfelhők. A varázslat hatására a felhő óriásira duzzad, és haragosfekete színt ölt, elemészteni látszik a láthatárt. A varázslat nagy, félelmetes hangú mennydörgés, négy égből lecsapó villám kíséri."
+                ],
+                [
+                    "10",
+                    "Az első dörgés a levegő hirtelen párás és fülledt lesz, a másodikra az eső lassan szemerkélni kezd. Heves szél kerekedik, majd a harmadik villámlásra nagy cseppekben záporozni kezd az eső, s néhány perc múlva, az utolsó villámsújtásra, mely a jégvihar epicentrumát jelöli ki, már diónyi jégdarabok hullanak az égből. A termést, a jószágot elveri, a házak tetejét megrongálja, az utakra ujjnyi vastag hófehér jégréteget von, meghiúsítva az utazást, a vizeken pedig életveszélyessé teszi a hajózást. A vihar eloszlásával újból kitisztul az ég."
+                ]
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Szélirányítás",
+            "headers": [
+                "Mana pont",
+                "Leírás"
+            ],
+            "rows": [
+                [
+                    "3/E",
+                    "A varázslattal a szél sebessége, iránya változtatható meg. A varázslat feltétele, hogy az érintett területen legyen legalább minimális légmozgás. Az irány egy perc alatt maximum kilencven fokkal, a sebesség 2 ynevi mérföld/órával változtatható akár pozitív, akár negatív irányban. A változtatásokra a varázslat megidézőjének folyamatosan koncentrálnia kell."
+                ],
+                [
+                    "10",
+                    "A gyenge fuvallat váratlanul erősödni kezd, majd hihetetlen sebességgel csap át orkánerejű széllé. Falhoz csapja a spalettákat, betöri az ablakokat, a rozogább pajták, istállók tetejét letépi, az emberek alig tudnak talpon maradni, a hajók vitorláit tépik-szaggatják a váltakozó irányú széllökések. Ha nem vonják be a vitorlákat azonnal, csak a nagy óceánjárók, vagy nehéz hadihajók szegülhetnek ellen haragjának. Az embereket így is lesodorja a fedélzetről, a vitorlázatba ijedten kapaszkodó tengerészek közül is sokan rongybabaként zuhannak az óceánba."
+                ],
+                [
+                    "15",
+                    "Sivatagos, homokos területen a szélirányítással homokvihart kavarhat a boszorkánymester A homokvihar sűrűen berúzsos az aranyszín szemcsék kavargásba kezdenek, s dűnék között váratlanul sivatagi szél kerekedik, ami egyre több por kavar föl, s pár percen belül az egész látóhatárt beteríti a fakóhomok homokfüggöny, majd hangos robajjal zúdul a védtelen áldozatokra."
+                ],
+                [
+                    "",
+                    "A sivítva száguldó homok (hacsak nem védekeznek ellene) eltömíti az orrot, szájat, éles szúrással kezdi ki a bőrt, betemeti áldozatait, nemritkán csontig marja a húst bőrükről, hogy elvonultával csak hófehér, simára koptatott mementókat hagyva hátra."
+                ],
+                [
+                    "20",
+                    "A varázslat valóságos tornádót kavar. Az égbe nyúló széltölcsér a 100 ynevi fontnál könnyebb tárgyakat és élőlényeket viszi könnyedséggel a levegőbe emeli és elragadja, háza tetejét sodorja el. Porral telített, szürke, pusztító örvényként söpör végig a tájon. Szédületes tempóval halad, másodpercenként, majd 30 ynevi láb távolságot tesz meg, ami több mint 100 ynevi mérföld/órás sebességnek felel meg, így gyakorlatilag lehetetlen elmenekülni előle. Azonban haladási irányát körönként változtatja. Ennek eldöntésére a KM dob k6-tal: 1-nél visszafordul, 2-nél helyben marad, 3-nál balra, 4-nél jobbra fordul és 5-6-nál halad tovább egyenesen."
+                ]
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Földmozgás",
+            "headers": [
+                "Mana pont",
+                "Leírás"
+            ],
+            "rows": [
+                [
+                    "5/E",
+                    "A varázslat kisebb földrengést idéz elő. 10-es Erősség esetén a föld remegni kezd, a házakban felborulnak a vázák, a képek leesnek a falról, majd megvonaglik a talaj. A földmozgások nem túl hevesek, de az ingatag épületek így is összeomlanak, a korhadt fák tövestül kicsavarodnak, a kövezet felrepedezik, a padlások beomlanak."
+                ],
+                [
+                    "",
+                    "Meredek lejtőjű, hófödte hegyek között a varázslat lavinát is elindíthat. Kőgörgetegek záporoznak alá, szakadékok nyílnak meg, a hegygerinc felől pedig morajló hang tör föl, majd repedés hasad végig, s a hegyoldal 1 mérföldes sávjában több ezer mázsányi hó indul meg a völgy felé, útjában erdőket söpörve el, sziklákat forgatva ki, és sodorva maga előtt. A lezúduló lavina 10k6 Sp-t sebez mindenkin, aki az útjába kerül. Áldozatait 80%-ban betemeti, miáltal komoly esélyük támad arra, hogy megfagyjanak vagy megfulladjanak. A hó börtönében annyiszor fél óráig maradhatnak életben, amennyi az Egészség Tulajdonságuk."
+                ]
+            ]
+        },
+        {
+            "type": "chapter",
+            "title": "Asztrál- és Mentálmágia"
+        },
+        {
+            "type": "rule",
+            "title": "Láthatatlanság felfedezése",
+            "headers": [
+                "Mana pont",
+                "Varázslás ideje",
+                "Hatótáv",
+                "Időtartam",
+                "Mágiaellenállás",
+                "Leírás"
+            ],
+            "rows": [
+                [
+                    "1/E",
+                    "1 szegmens",
+                    "20 ynevi láb sugarú kör",
+                    "1 perc/szint",
+                    "Mentális",
+                    "Ez a varázslat a láthatatlan személy gondolatainak forrását kutatja, s ennek segítségével teszi ismertté annak helyét. A gondolatok közül az illető külseje is kiolvasásra kerül, s a boszorkánymester tulajdonképpen csak egy, a saját elméje által a láthatatlan lény helyére vetített képet lát. A láthatatlanság ezúton történő leleplezésével egyszerre csak egyetlen személy pillantható meg."
+                ],
+                [
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "Ha a láthatatlan lény Mentális Mágiaellenállása sikeres, továbbra is láthatatlan marad."
+                ]
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Sötétté gyalázás",
+            "headers": [
+                "Mana pont",
+                "Varázslás ideje",
+                "Hatótáv",
+                "Időtartam",
+                "Mágiaellenállás",
+                "Leírás"
+            ],
+            "rows": [
+                [
+                    "3/E",
+                    "1 szegmens/E",
+                    "Érintés",
+                    "1 nap/szint",
+                    "Asztrális és Mentális",
+                    "A boszorkánymester ezzel a varázslattal a legtisztább szívű teremtményt is a gonosz feltétlen szolgájává teheti. Ha az áldozat mindkét Mágiaellenállása sikertelen, gondolatai eltorzulnak, elrendezője teljes átalakuláson esik át. Minden"
+                ]
+            ]
+        }
+    ]
+}

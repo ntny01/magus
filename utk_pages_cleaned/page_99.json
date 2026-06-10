@@ -1,0 +1,102 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": true,
+    "section_title": "Az Domvik-paplovag különleges előnyei és hátrányai",
+    "content_blocks": [
+        {
+            "type": "paragraph",
+            "text": "melynek minden más alárendelnek, szükség esetén a saját életüket is. Hétszögletű hasáboltáraikon a Hét Arc faragott képe díszeleg, ámbátor legnagyobb becsben természetesen a Hatodikat, az Eretnekek Ostorát tartják. Ha csak lehetséges, a nyilvánosság előtt ezüsttel vagy arannyal futtatott díszpáncéljukban mutatkoznak, gazdagon felszerszámozott csataménen nyeregben, hófehér és bíbor-szín ünnepi ruhákban. Ahhoz azonban elég gyakorlatiasak, hogy hadba sokkal praktikusabb és egyszerűbb öltözékben vonuljanak."
+        },
+        {
+            "type": "paragraph",
+            "text": "Az egyházi törvények szerint az egyház fölszentelt tagjainak minősülnek, legtöbbjük a harmadik kvalitásba, a leiosz thairába tartozik. Ugyanakkor életvitelüket nem szabályozzák kötelmek és előírások; sokan ugyan rendházakba vonulnak közülük, az azonban teljesen önkéntes döntés a részükről, senki nem kötelezi rá őket. Elsődleges feladatuk a Fényes Birodalom határain kívül küzdeni az igaz hit védelmében, ezért hazájuktól távol is viszonylag gyakran találkozhatunk velük. Valamennyien engesztelhetetlenül gyűlölik a Ranagol-hitet, szüntelen szószólói a Gorvik ellen vezetett véres háborúknak, s a Dúlás esztendejében szép számmal harcoltak államszövetségi területen a kráni hordák ellen."
+        },
+        {
+            "type": "paragraph",
+            "text": "Shadonban létezik néhány egyházi lovagrend, amely egyedül a Főatyának felel cselekedeteiért, s bár a gerincét egyszerű lovagok adják, elöljáróik a paplovagok közül kerülnek ki. Ilyen például a koronavárosban székelő Isten Kardja rend, vagy a Harmadik Arc Testvérisége, bailironi központtal. Ezek a szervezetek inkább a birodalmon belül lappangó eretnekek kifüstölésével vannak elfoglalva, ők adják például az inkvizítorok személyes testőrségét. A határ túloldalán nagyon ritkán fordulnak meg; a különösen tevékenykedő Domvik-paplovagok többsége önálló egyházi ágens, nem tartozik egyik rendbe sem."
+        },
+        {
+            "type": "paragraph",
+            "text": "Nevezettessenek mindenesetre bármilyen módon, tartozzanak bármilyen rendbe, Domvik fegyveres szolgái jó szót és szállást Dél-Ynev bármely jólelkű államában kapnak, még ha óvatosan figyelő tekintetek mellett is."
+        },
+        {
+            "type": "rule",
+            "text": "I. Domvik uralmi szférái, ahonnan hű szolgái fohászaikat meríthetik, az Élet, a Lélek és a Természet. Ezen kívül néhány egyedi fohásszal is felruházza paplovagjait, amelyeket egyetlen más istenség hívei sem ismernek. E fohászoknak nincs közvetlen romboló hatásuk, inkább gyógyító, bátorító, erőt adó jellegűek, összhangban Domvik egyéniségével.",
+            "title": "Domvik uralmi szférái és egyedi fohászai"
+        },
+        {
+            "type": "rule",
+            "text": "II. Az alap paplovagnál feltüntetett képzettségek közül kötelezően a 2. fokú Pajzshasználatot választja.",
+            "title": "Kötelező képzettség"
+        },
+        {
+            "type": "rule",
+            "text": "III. A Domvik paplovag, ha elöljárói érdemesnek és méltónak találják (5. Tsz felett) bármely Misztikus vagy Tudományos képzettséget tanulhat, s ekkor utólag megvásárolhatja a Pszi érzékenység Hátteret.",
+            "title": "Misztikus/Tudományos képzettségek és Pszi érzékenység"
+        },
+        {
+            "type": "rule",
+            "text": "IV. A játék kezdetén saját fegyverzettel rendelkezik, amelyért nem kell pénzzel fizetnie, egyháza ajándéka harcához az eretnekek ellen. A fegyverzet tartozékai: Acél teljes vértezet és rostéllyal ellátott acél nagy sisak, közepes acélpajzs, lovagkard.",
+            "title": "Induló felszerelés"
+        },
+        {
+            "type": "paragraph",
+            "title": "A Domvik-paplovag induló képzettségei 1. Tapasztalati szinten az alap paplovagnál feltüntetetteken kívül:",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "table",
+            "headers": [
+                "Képzettség",
+                "Fok"
+            ],
+            "rows": [
+                [
+                    "Ékesszólás",
+                    "2. fok"
+                ],
+                [
+                    "Politika/diplomácia",
+                    "2. fok"
+                ]
+            ]
+        },
+        {
+            "type": "table",
+            "headers": [
+                "Képzettség",
+                "Fok"
+            ],
+            "rows": [
+                [
+                    "Herbalizmus",
+                    "2. fok"
+                ],
+                [
+                    "Orvoslás",
+                    "2. fok"
+                ],
+                [
+                    "Élettan",
+                    "2. fok"
+                ],
+                [
+                    "Ősi nyelv (Lingua Domini)",
+                    "2. fok"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "title": "A Domvik-paplovag képzettségei, melyeket rendjétől az Oktatás képzettség 4. foka által nyújtott előnnyel tanulhat:",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "Élettan, Jog/törvénykezés, Diplomácia/politika, Ősi nyelv (Lingua Domini)."
+        }
+    ]
+}

@@ -1,0 +1,124 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": false,
+    "section_title": "",
+    "content_blocks": [
+        {
+            "type": "paragraph",
+            "text": "Tudatuk egyetlen, egyszerű, kívülről beléjük plántált paranccsra korlátozódik; céljuk nem több, mint ennek végrehajtása. A parancs megfogalmazója leggyakrabban maga a teremtőisten, esetleg az, aki uralma alá hajtja, vagy határtalan ostobaságában megidézi őket. Lévén Anyagi Testük általában evilági, s így nehezen bár, de sebezhetők nem mágikus fegyverekkel is, ám korcs lelkük miatt a Természeti Anyagok Mágiája nem gyakorol rájuk semmilyen hatást, mint ahogy immunisak a Mentálés Asztrálvarázslatokkal szemben is. Legismertebb fajtáik az Izar és a Zaurak."
+        },
+        {
+            "type": "paragraph",
+            "text": "Az éji rémek a reinkarnáció folyamatában már magasra jutott, gonosszá vált lelkek, akik a további újjászületésből jó időre kirekedtek. Utolsó halálukkor a mágikus együttállások révén nem szakadtak el anyagi testüktől, hanem annak rabjává válva az Anyagi Világban élőhalottakká lettek. Legismertebb fajtáik a Bosszúálló (Beid), a Mulip-hein és a Syvan."
+        },
+        {
+            "type": "paragraph",
+            "text": "A kóborló dögök afféle lelkek, akik a reinkarnáció kikövezett ösvényéről saját gonoszságuk folytán az útszéli árok mocskába sodródtak. Tönkrement, elkorcsosult, beteges lelkek, akik többé nem születnek újjá semmiben és senkiben, nem is jutnak soha a Külső Síkok Isteni Világába. Lényük, tudatuk jelentős részét torz Asztrálrajuk teszi ki, Mentáljuk legfeljebb egy állathoz mérhető. Az anyagban egyébként ölthetnek testet: elbitorolják más, egészséges lelkek Anyagi Testét. Beöltözöttek és ritka asztrológiai vagy ezoterikus együttállásokkor beteges vágyaik, őrületük kielégítésére kényszerítik azt. A kóborló dögök legismertebb fajtája a Hekator."
+        },
+        {
+            "type": "paragraph",
+            "text": "A vérívó dögök olyan lények, akiket áldozatként öltek meg valamely gonosz isten oltárán. Lelküket a sötét szertartás taszította ki a reinkarnáció folyamatából, és az Istenek Külső Síkjára ragadta el. Ott új testtel ruháztattak fel, mely már annak anyagából való, így az Anyagi Síkon csak mágiával átitatott fegyverekkel sebezhetők, s hatástalan rájuk a Természeti Anyagok Mágiája. Egykori haláluk Vérmágia következménye, ezzel magyarázható olthatatlan szomjuk az emberi vér iránt. Legismertebb fajtáik a Gahul, a Vérfarkas és a Vámpír."
+        },
+        {
+            "type": "paragraph",
+            "text": "A lidércek és szellemek intelligens félhalottak, akik haláluk után valamilyen ártó szándékú átok következtében nem születhettek újjá új testben, hanem a síkok között rekedve örök bolyongásra kárhoztattak. Idézéskor a síkok közti térből szivárognak az Anyagi Világba, és az idézés lejártával oda is térnek vissza. Testük a világokat összekötő légies anyagból épül fel, ezért csak mágiával átitatott fegyverekkel sebezhetők. A lidérc boszorkányi átoknak, a szellem boszorkánymesteri Fekete mágiának a szüleménye. A lidércek legismertebb fajtái az Árny (Arich) és a Fantom, a szellemeké a Hatyra és a Lesath."
+        },
+        {
+            "type": "paragraph",
+            "text": "Az elhunytak lelkeinek nevezem azokat a lelkeket, akik, bár részt vesznek a reinkarnáció folyamatában, meghatározatlan időre pihenni tértek valamely isten által uralt Külső Síkra. Ők nevük ismeretében és személyes tárgyaik vagy csontjaik birtokában megidézhetők, akár anyagba is börtönözhetők, ám aki ilyet tesz, legyen tisztában azzal, hogy cselekedete a Mindenség törvényei és az istenek akarata ellen való."
+        },
+        {
+            "type": "paragraph",
+            "text": "Felhívom továbbá az idézéssel kísérletezők figyelmét arra, hogy a reinkarnáció folyamatában már újjászületett lelkek semmilyen módon meg nem idézhetők. Ezen kuruzslók silány kis tudásától már az is nagy eredmény, ha az efféle lelkeknek egyáltalán nyomára bukkannak, és felfedik azt az isteni titkot, hogy a lélek kiben avagy miben született újjá..."
+        },
+        {
+            "type": "paragraph",
+            "text": "A Nekromancián belül két nagy iskolaformát különböztetünk meg: a Teremtést és az Idézést."
+        },
+        {
+            "type": "chapter",
+            "title": "Teremtés",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "A Nekromancia alapja, az élőhalottak teremtésének képességével ruházza fel ismerőit. Segítségével a varázsló holtestekből alkothat varázshatalmával élőhalottakat, illetve ruházhatja fel őket szellemmel. A varázslatok ezen iskolaforma mozaikjaival képes elorozni az adott osztályba tartozó lények létezéséhez és mozgásához szükséges mágikus energiát, mely ugyan nem életerő, csak valamiféle torz utánzata, ám ideig-óráig működésre bírja a halott testeket."
+        },
+        {
+            "type": "rule",
+            "title": "Élőhalott teremtés",
+            "headers": [],
+            "rows": [
+                [
+                    "Mana pont",
+                    "1/E"
+                ],
+                [
+                    "Időtartam",
+                    "3 perc (18 kör)"
+                ],
+                [
+                    "Varázslás ideje",
+                    "1 kör"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A varázsló a zónáján belül egy, vagy akár több élőhalottat is, mozgásra bírhat mágikus energiát juttatva testükbe. A varázstudó igéi és kántálása nyomán hatalmas mennyiségű, nyers energia halmozódik fel testében, szemeiben szikrák pattognak, szájából túlvilági lidércfény tör elő, balja kékes fénnyel izzik fel."
+        },
+        {
+            "type": "paragraph",
+            "text": "A varázslat elmondása után a Zónája középpontján bal ökölével, vagy botjával lesújtva a földre képes az erőket szétosztani a feltámasztani kívánt holtak között. Az erők átáramlása egy pillanatot vesz csak igénybe: a holtak, mintegy a varázsló ütésétől összerázkódva riadnak fel dermedtségükből."
+        },
+        {
+            "type": "paragraph",
+            "text": "Mivel a holtak nem rendelkeznek tudattal vagy lélekkel, ezért ezen varázslat segítségével nem uralhatóak. Saját akaratuk szerint (a KM belátására bízva) indulnak útnak, és próbálják elpusztítani az életerő minél magasabb szintű megnyilvánulásait, legfőképp a teremtés koronáinak nevezhető, tudattal bíró élőlényeket."
+        },
+        {
+            "type": "paragraph",
+            "text": "Egy élőhalott csak akkor bírható mozgásra, ha a nekromanta megfelelő mennyiségű mágikus energiát juttat a szervezetébe. A varázslat minden egyes Erőssége 1 Életerő pontnak felel meg, s a holttest „életrekeléséhez” annyi Életerő pont szükséges, amennyit a test még életében birtokolt. Ebből is látszik, hogy a „feltámasztott” holtak számának csak azok korábbi életereje (Ép-inek száma) és a varázstudó hatalma szab határt."
+        },
+        {
+            "type": "paragraph",
+            "text": "A nekromanta rövid megfigyelés után pontosan képes felmérni, hogy az általa feltámasztani kívánt holtak mozgatásához mennyi mágikus energia, azaz hány E erősítésű varázslat szükséges (ez az érték KM belátására van bízva)."
+        },
+        {
+            "type": "paragraph",
+            "text": "A varázslat Időtartama alatt az élőhalott testében minden bomlási folyamat megtorpan, az Időtartam lejárta után viszont rohamos gyorsasággal indul be újra."
+        },
+        {
+            "type": "paragraph",
+            "text": "A varázslattal megteremtett élőhalottak minden értéke megfelel a haláluk előtti értékeiknek, azonban nem rendelkeznek a lelkük birtokolta képességekkel, képzettségekkel, így a tapasztalatuk nyújtotta HM-ekkel, esetleges képességbeli bónuszaikkal. Csakis a testük birtokolta Tulajdonságok a mérvadóak az értékeik kiszámításánál (például a Harcérték, vagy az Erőből származó sebzésbónusz)."
+        },
+        {
+            "type": "paragraph",
+            "text": "Abban a kivételes esetben, ha az adott lény halála nem teste bárminemű károsodása miatt következett be, hanem lelkét tépték ki testéből, akkor az Élőhalott Teremtés varázslat időszakosan életre kelthető, az élő test minden funkciójával felruházható."
+        },
+        {
+            "type": "rule",
+            "title": "Élőhalott Pusztítás",
+            "headers": [],
+            "rows": [
+                [
+                    "Mana pont",
+                    "5/E"
+                ],
+                [
+                    "Időtartam",
+                    "Egyszeri"
+                ],
+                [
+                    "Varázslás ideje",
+                    "1 szegmens/E"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "Ezen varázslat segítségével a varázsló képes bármely, nem a Túlvilágról megidézett élőhalottat elpusztítani. A mozaik a különböző vájozások, papok, varázslók által a halott testébe"
+        }
+    ]
+}

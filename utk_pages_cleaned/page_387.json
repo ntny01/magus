@@ -1,0 +1,163 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": false,
+    "section_title": "",
+    "content_blocks": [
+        {
+            "type": "paragraph",
+            "text": "Néha, szorult helyzetben, ha lény nem akarja veszni hagyni szolgáját, a halandó akarata ellenére is beavatkozhat, és juttathat némi hatalmat áldozat nélkül is, de ez nem jellemző."
+        },
+        {
+            "type": "paragraph",
+            "text": "A paktum egyéb előnyökkel is jár: a szerfista nem képes ugyan meghaladni saját korlátait, tehát nem tudja magát a Max. Mp-je fölé tölteni, illetve nem tud fájdalom nélkül varázslatokat formázni, mint amennyit a Mágikus kifáradás számára engedélyezne, de a veszteségeket nem max. Fp-ből, hanem csak az aktuális Fp-ből veszíti el – eltérésként az Alkumál ismertetettektől. Illetve kérheti a szeráfot, hogy csak akkor juttassa el jussát hozzá, ha épp szüksége van a varázshatalomra. Így a szerfista akár iszonyató erőket is felhalmozhat."
+        },
+        {
+            "type": "rule",
+            "title": "A szerfista alkura vonatkozó szabályok:",
+            "headers": [],
+            "rows": [
+                [
+                    "I.",
+                    "A szerfista alkuhoz mind a halandónak, mind pedig a démonnak meg kell ismernie a másik Igaz nevét. Emiatt igyekeznek az alkukban a démonok ezen neveket minél jobban elrejteni, majd esetleges istenné válásuk után (például Thar esetében, aki guttarból, közönséges kín-démonból lényegült istenséggé) ezen alkuk szövegeit minél hamarabb elpusztítani."
+                ],
+                [
+                    "II.",
+                    "A papok saját szentélyükben azonnal megérzik egy szerfista jelenlétét, még ha nem is képesek más úton jöveteléről tudomást szerezni. A varázshasználók bármiféle Asztrál vagy Mentál alapú kutatómágiával felfedezhetik a szerfista lelkén burjánzó fekélyeket, ha képesek átütni annak pajzsait, vagy ha éppen varázsol."
+                ],
+                [
+                    "III.",
+                    "Minden istenhitűnek követői, és papjai (a sötétebb tanításokkal bíró egyházak is) a saját istenségük esetleges vetélytársainak feltűnésének veszélye miatt azonnal üldözőbe veszik, ha egy efféle mágiával bíró alak feltűnik a színen."
+                ],
+                [
+                    "IV.",
+                    "Rendszeres imádságokkal és szertartásokkal is ki lehet váltani az áldozatokat, és ez már csak nagyobb, több-száz fős, hívő tömegek részvétele esetén működik. Ekkor a jutalom meghatározásának jogköre a KM-é."
+                ]
+            ]
+        },
+        {
+            "type": "table",
+            "headers": [
+                "Osztály",
+                "Megnevezés"
+            ],
+            "rows": [
+                [
+                    "I.",
+                    "Alsórendű- vagy szolgadémonok"
+                ],
+                [
+                    "II.",
+                    "Közdémonok"
+                ],
+                [
+                    "III.",
+                    "Démonurak"
+                ],
+                [
+                    "IV.",
+                    "Démonhercegek"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "Démonidéző Litánia"
+        },
+        {
+            "type": "paragraph",
+            "text": "Mana pont: Lásd a leírást!"
+        },
+        {
+            "type": "paragraph",
+            "text": "Időtartam: Gyertyától függ"
+        },
+        {
+            "type": "paragraph",
+            "text": "Litánia hossza: Lásd a leírást!"
+        },
+        {
+            "type": "paragraph",
+            "text": "A démon más világról származó, szinte sebezhetetlen Anyagi Testvével egyetemben jelenik meg, a litánia utolsó szavának elhangzásakor. A démonok – mivel lélekkel nem bírnak – a gyertya kialvásakor erejük nagy részét elveszítve saját síkjukra kerülnek vissza, és a testükben megkötött energiák pattogva, szikrázva szivárognak el a Manahálóba. A démonok megidézésének költsége démonológiai osztályuktól függően a következő:"
+        },
+        {
+            "type": "table",
+            "headers": [
+                "Osztály",
+                "Mana pont"
+            ],
+            "rows": [
+                [
+                    "Alsórendű démon",
+                    "30 Mp"
+                ],
+                [
+                    "Közdémon",
+                    "60 Mp"
+                ],
+                [
+                    "Démonurak",
+                    "120 Mp"
+                ],
+                [
+                    "Démonherceg",
+                    "180 Mp"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "Az idézésük hossza 1 Mp-onként 1 szegmens."
+        },
+        {
+            "type": "paragraph",
+            "text": "Démonűző Litánia"
+        },
+        {
+            "type": "paragraph",
+            "text": "Mana pont: Lásd a leírást!"
+        },
+        {
+            "type": "paragraph",
+            "text": "Időtartam: Végleges"
+        },
+        {
+            "type": "paragraph",
+            "text": "Litánia hossza: Lásd a leírást!"
+        },
+        {
+            "type": "paragraph",
+            "text": "Kevesen tudják, hogy az idéző litániákat visszafelé elmondva, azok hatása is megfordítható, azaz a lény nem megidéztetik, hanem elűzetik az Anyagi Síkról. Az űző litániák ugyanazokból a mágikus tartalmú szavakból állnak (ugyanannyi a Mana pont igényük és a varázslási idejük), mint az azonos idéző litániák, csak éppen fordított sorrendben, a legutolsó szavakat előrevéve kell elkántálni őket. Az űző litánia utolsó szavának elhangzásakor a lény (akire a varázslat irányul), visszaűzetik – visszakerül – oda, ahonnan korábban megidézték."
+        },
+        {
+            "type": "paragraph",
+            "text": "Időmágia"
+        },
+        {
+            "type": "paragraph",
+            "text": "Az Időmágia gyakorlásához, szabályszerűségeinek felismeréséhez elengedhetetlenül szükséges a Számtan/Mértan képzettség 3. fokú ismerete."
+        },
+        {
+            "type": "paragraph",
+            "text": "Az Időmágia segítségével a varázsló képes arra, hogy egy általa létrehozott varázslatnak folyamatos utánpótlást biztosítson a Világegyetemet átitató mágikus energiákból. Ennek eredményeképpen a természetes az adott időre elzárva látja el a kívánt varázslatot. Egyfajta csatorna ez, melyen át mágikus energia áramlik a varázslatba."
+        },
+        {
+            "type": "paragraph",
+            "text": "A gyakorlatban ez azt jelenti, hogy a varázsló kinyújthatja a varázslat időtartamát, újabb körökre, percekre, órákra, de akár még az örökkévalóságig is."
+        },
+        {
+            "type": "paragraph",
+            "text": "Az Időmágia ígérit a varázslónak mindig egybe kell olvasnia a meghosszabbítani kívánt varázslattal, ami egyértelműen kizárja azt, hogy a varázsló egy már működő varázslat időtartama is módosítható. Tehát egy már működő varázslat időtartama nem befolyásolható!"
+        },
+        {
+            "type": "rule",
+            "title": "Lássunk egy példát!",
+            "headers": [],
+            "rows": [
+                [
+                    "A varázsló szeretne létrehozni egy olyan 5 E erősségű tűzkardot, amely örökre megmarad. Hogyan teheti ezt? Teremt 5 E erősségű Őstüzet, és karddá formázza, ez 30 Mp. Majd a teljes varázslatra ráolvassa az Örökkévalóságot – ami 150 Mp. A teljes varázslat tehát 180 Mp-ot emészt fel – ami nem kevés! Abban az esetben, ha egy varázslat valamely okból – akár csak egy pillanatra is – megszűnik működni, az Időmágia is lefoszlik róla, és kárba vész. Ezután már hiába ér véget a zavaró hatás, a varázslat – még ha akár Örökkévalóságot olvasott is rá a varázsló – többé nem kap új erőre. Az előbbi példát követve: ha az öröklétnek készített kard nála erősebb vízaurával csap össze – tegyük fel 10 E erejűvel – akkor eltűnik és soha többé nem jelenik meg; akkor sem, amikor forgatója kihúzza az aurából. (A vízaura E-je természetesen 5-re csökken.) Ha a varázslat Erőssége valamiért csökken, attól kezdve a maradék E fog érvényesülni az Időmágiával meghosszabbított időtartam lejártáig. Ha tehát a példaként használt örökidejű tűzkard 3 E erősségű vízaurával találkozik, akkor ettől kezdve E-je 2 lesz. (A vízaura, pedig megszűnik létezni.) Azonban a varázsló képes arra is, hogy ne csak a teljes varázslatra olvassa rá az Időmágiát, hanem egyetlen mozaikot is előnyben részesíthet: például egy 1 órára kiterjesztett Időtartamú Félelem Fal esetében a Félelem mozaikot 2 órás Időmágiával kombinálja. Így a Fal maga csupán 1 órán át"
+                ]
+            ]
+        }
+    ]
+}

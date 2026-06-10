@@ -1,0 +1,212 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": false,
+    "section_title": "",
+    "content_blocks": [
+        {
+            "type": "rule",
+            "title": "Lángfestés",
+            "headers": [
+                "Mana pont",
+                "Varázslás ideje",
+                "Időtartam"
+            ],
+            "rows": [
+                [
+                    "Lásd a leírást!",
+                    "1 szegmens/E",
+                    "Lásd a leírást!"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "Misztikus varázslat, melynek segítségével a tűzvarázsló megváltoztathatja az Őstűz mágikus tulajdonságait, olyan praktika, melyet önmagában soha nem alkalmaznak, hanem mindig valamilyen tűzvarázslathoz fűznek hozzá, vagy már létező tűzmágiát alakítanak át vele. A varázslás idejénél feltüntetett 1 szegmens/E mindig hozzáadandó az eredeti varázslat varázslási idejéhez."
+        },
+        {
+            "type": "table",
+            "headers": [
+                "Szín",
+                "Hatás",
+                "Mp/E"
+            ],
+            "rows": [
+                [
+                    "Vakító fehér",
+                    "A tüzek E-jét maga olvasztja",
+                    "6"
+                ],
+                [
+                    "Kék",
+                    "Ősvíz ellen 2xE",
+                    "2"
+                ],
+                [
+                    "Méregzöld",
+                    "Csak a célpontokra hat",
+                    "4+2"
+                ],
+                [
+                    "Aranysárga",
+                    "A tűzvarázslóra nem hat",
+                    "3"
+                ],
+                [
+                    "Bíborvörös",
+                    "Fele sebzés, kétszeres időtartam",
+                    "2"
+                ],
+                [
+                    "Fekete",
+                    "Csak a tűzvarázslóra hat",
+                    "Speciális"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A fenti táblázat azt mutatja, hogy a tűzvarázsló által létrehozandó varázslat lángfestése mennyi Mp-ba kerül E-jének függvényében. A már létező varázslatok dupla annyi Mana pontért festhetők meg."
+        },
+        {
+            "type": "paragraph",
+            "text": "Ha a varázslat kevesebb E lángfestést alkalmaz, mint amekkora a tűz E-je, akkor a tűz színe feketévé vált. Célszerű ezért vagy Őstűz észlelése vagy a Tűzelemzés varázslatokat alkalmazni, már amennyiben erre idő és lehetőség van. Nem egy tűzvarázsló végezze lett a kockáztatás..."
+        },
+        {
+            "type": "paragraph",
+            "text": "Nagyon fontos, hogy a KM szigorúan ügyeljen a varázslat használatakor, ha értelmetlenül próbálják felhasználni, akkor a tűz mindenképpen visszaüt: Fekete színű lángok tűzkitörése kellő eszköz a Játékosok megfékezésére."
+        },
+        {
+            "type": "paragraph",
+            "text": "Az egyes színek bővebb magyarázatra szorulnak:"
+        },
+        {
+            "type": "rule",
+            "title": "Vakító fehér",
+            "headers": [
+                "Leírás"
+            ],
+            "rows": [
+                [
+                    "Vakító fehér fényben tündöklő tűz a Zónában lévő összes természetes tüzet is Őstűzzé alakítja, magába olvasztva, ezáltal saját E-jét növeli. Ugyanezt teszi az összes olyan Őstűzzel, mellyel fizikailag érintkezik. Ha két Fehér láng találkozik, akkor a nagyobb E-jű magába olvasztja a kisebb E-jűt. Ekkor a kisebb E-jű megszűnik létezni eredeti formájában, E-je hozzáadódik az őt magába olvasztó Fehér láng E-jéhez. Ha E-jük egyenlő, akkor egyik sem olvasztja magába a másikat. Ha a Fehér láng más festett lánggal találkozik, akkor a magába olvasztott tűz festése megszűnik, teljesen a Fehér tűz részévé válik. Fontos itt megjegyezni, hogy nem elég a tűznek csak egy bizonyos részét megfesteni, hogy majd az „átfest” a többi részt, hanem az egész varázslatra vonatkozó összes E-t meg kell festeni."
+                ]
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Általános szabály a festésre",
+            "headers": [
+                "Leírás"
+            ],
+            "rows": [
+                [
+                    "Ez vonatkozik az összes színre, ha a tűzvarázsló ezt nem veszi figyelembe, akkor a tűz Fekete lánggá válik. A Fehérre festett láng ezenkívül ötször annyi természetes, és háromszor annyi Őstüzet tud magába olvasztani, mint a varázslat eredeti Erőssége."
+                ]
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "A Kéken lángoló tűz",
+            "headers": [
+                "Leírás"
+            ],
+            "rows": [
+                [
+                    "A Kéken lángoló tűz ellenállóbbá válik az őt egyébként kioltó Ősvíz ellen, E-je az ilyen hatáson ellen kétszeresére növekszik."
+                ]
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "A Zölden lobogó tűz",
+            "headers": [
+                "Leírás"
+            ],
+            "rows": [
+                [
+                    "A Zölden lobogó tűz sajátossága, hogy csak a tűzvarázsló által megadott célpontokra (célpontra), vagy csoportra hat. Mások hiába tartózkodnak is a területén, rájuk a tűzmágia nem fejti ki hatását. A tűz zöldre festéséhez 4 Mp/E kell, ha egy célpont ellen varázsolja, és további 2 Mp/E további célpontonként. Itt is csak az összes E-t lehet megfesteni, nem lehet 2 E-t az egyik, 3 E-t a másik célpontra hangolni, ilyen alkalmazásoknál a tűz színezete automatikusan Feketévé válik. Fontos még, hogy attól, hogy valakit a tűzvarázsló célpontként ad meg, még nem biztos, hogy eltalálja. Ha azonban mást talál el, azokra a tűz hatástalan."
+                ]
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Az Aranysárga színezetű lángok",
+            "headers": [
+                "Leírás"
+            ],
+            "rows": [
+                [
+                    "Az Aranysárga színezetű lángok pusztító ereje az őket létrehozó tűzvarázslóra, vagy az általa kijelölt célpontokra teljes mértékben hatástalan, ebben az esetben azonban minden további célpont többszörözi a varázslat Mp-igényét. Azaz 3 védett személy esetén a feltüntetett Mp-igény háromszorosa számolandó a színezett tűz minden egyes E-je után."
+                ]
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "A Bíborvörös tűz",
+            "headers": [
+                "Leírás"
+            ],
+            "rows": [
+                [
+                    "A Bíborvörös tűz színe teljesen elsötétül, szinte már feketébe hajlik. A hőfoka (ezáltal a Sebzése) és a fényereje fele az ugyanolyan Erősségű tűznek. Azonban az Időtartama, mivel a belsejében az izzás intenzitása jelentősen csökken, kétszerese az ugyanolyan erősségű varázslatnak. Értelemszerűen ezzel a színnel nem színezhető az olyan varázslatok által idézett tűz, amelyek Időtartam nélküliek (mint például Tűznyíl, Tűzkitörés stb.)."
+                ]
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "A Fekete színű láng",
+            "headers": [
+                "Leírás"
+            ],
+            "rows": [
+                [
+                    "A Fekete színű láng speciális eset, mely akkor jön létre, ha a tűzvarázsló a varázslat átalakításakor hibázott, megzavarva az érzékeny egyensúlyt. Ekkor a tűz kitöréssé alakul, csak őt fogja sebezni, függetlenül eredeti rendeltetésétől."
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "Példák a varázslat használatára:"
+        },
+        {
+            "type": "rule",
+            "title": "Zöld lángú tűzkitörés",
+            "headers": [
+                "Mana pont",
+                "Varázslás ideje",
+                "Időtartam"
+            ],
+            "rows": [
+                [
+                    "3 E x 5 Mp + 3 E x 4 Mp + 3 E x 2 Mp = 33",
+                    "3 + 3 = 6 szegmens",
+                    "Egyszeri"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A tűzvarázsló 3 E Tűzkitörést varázsol, de a társait nem akarja megsebezni, hanem csak a két ellenséges személyt, akivel harcolnak. Ezért a varázslat Mp-igényéhez hozzáfűzi minden egyes E után a Zöld láng Mp-igényét, és így a varázslat a következőképpen fog kinézni: A tűzkitörés ezáltal 3k6-ot sebez mindazokon, akiket a tűzvarázsló célpontként megad (jelen esetünkben a két ellenfél), és a varázslat területén tartózkodnak (3 láb sugarú gömb). Ha a tűzvarázsló által célpontnak nem megadott személy (például kalandozótársa) lehet akár az epicentrumban is, rá a hatástalan varázslat."
+        },
+        {
+            "type": "rule",
+            "title": "Fehér lángokból alkotott tűzaura",
+            "headers": [
+                "Mana pont",
+                "Varázslás ideje",
+                "Időtartam"
+            ],
+            "rows": [
+                [
+                    "3 E x 6 Mp + 3 E x 6 Mp = 36",
+                    "6 + 4 = 10 szegmens",
+                    "3 kör"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A tűzvarázsló kerülhet olyan helyzetbe, hogy egy perzselő tűzfal állja útját. Tegyük fel, hogy a Zónában belül tűz fáklya is ég. Ekkor varázsolhat magára egy olyan Tűzaurát, mely magába olvaszthatja a tűzfalat. Először elvégez egy Tűzelemzést (lásd előbb), és megtudja, hogy a fal E-je 9 és még 1 évig áll. Tehát teremt magára egy Őstűzből formázott, 3 E erősségű aurát, melynek lángjai fehérré színezi. A varázslat hatására a tűzvarázsló testét fehér lángok fogják övezni, 3 E erősségben. A fáklyák E-je egyenként 1. Ezek egy lobbanással kialszalnak, és ugyanebben a szegmensben már az aura részei. Ekkor az aura E-je az eredeti Erősség E-je (3 E)"
+        }
+    ]
+}

@@ -1,0 +1,138 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": true,
+    "section_title": "Inhumán kultúrák:",
+    "content_blocks": [
+        {
+            "type": "paragraph",
+            "text": "Godon, a Délvidék első nagy emberek alapította varázslóbirodalma, melyet évezredes tündöklés után Krán taszított a nemlétbe. A pyarronita, Lar-Dor városában tanult varázstudók mágikus nyelve, a godoni egyszerűsített változata. Az általa történő varázslás, csak a Mágikus fogékonyság előny felvételével, illetve a varázslóiskola elvégzésével válik lehetővé."
+        },
+        {
+            "type": "paragraph",
+            "text": "Az óelf nyelv, a hatodkor előtt élt elfek misztikus hatalomtól átjárt nyelve, melyet csakis az elf királyságok valamelyikében, esetleg Haonwellben vagy Erionban tanulmányozhat a kíváncsi karakter."
+        },
+        {
+            "type": "paragraph",
+            "text": "A nyelvben rejlő mágikus hatalom csakis tiszta vérű óelfek számára elérhető. A játékos karakter csupán az emberelőtti történetírás kincseihez férhet közelebb általa. Írásbelisége a hólyagírás."
+        },
+        {
+            "type": "paragraph",
+            "text": "A kyr nyelv, a majd húszezer esztendeig virágzó kyr birodalom nyelve, mely kiforrottságában képessé tette a hódítókat Ynev jelenlegi egyik leghatalmasabb misztikus művészetének megalkotására. Írásbelisége rúnák és jelek sorozata, a világegyetem mágikus leírása."
+        },
+        {
+            "type": "paragraph",
+            "text": "Északfölde minden varázslóiskolája ezen nyelv és rúnáinak használatát oktatja, az általa történő varázslás csak a Mágikus fogékonyság előny felvételével, illetve a varázslóiskola elvégzésével válik lehetővé."
+        },
+        {
+            "type": "paragraph",
+            "text": "Aquir, a káoszt és halált szolgáló ősi népek, az Első, Második szülöttek, más létsíkokról bevándorolt, romlott ősfajok összefoglaló neve, és az általuk használt valamennyire egységes nyelv elnevezése. Az isteni nyelvekhez legközelebb álló, főleg a pusztítás dialektusaiban elmélyedt varázsnyelv. A nyelvből eredő mágikus hatású hatalomszavak használatához a karakternek aquir vérű ősökkel kell büszkélkednie, így használata játékosok számára nem elérhető."
+        },
+        {
+            "type": "paragraph",
+            "text": "Írásbelisége igen fejlett és sokrétű, a csak térben értelmezhető látványfeliratoktól, a szimbolikus értelmű festmény-soroktól, a rúnairásig bezárólag. A karakter valamely egyetemi könyvtár zárolt rekeszeiben, vagy a sötét birodalmak, Gorvik, Toron varázslóiskoláiban, esetleg valamely gonosz szekta szolgálatában tanulhatja a nyelvet és írásmódjait."
+        },
+        {
+            "type": "paragraph",
+            "text": "Törpe, Észak-Ynev szorgos, dolgos népe, kikben viszonylag kevesen ismernék fel a kyrek előtti korok egyik hatalmas, az ómágiát még ma is birtokló fajainak egyikét."
+        },
+        {
+            "type": "paragraph",
+            "text": "A híd nyelv ma már nem telítődik az ősök hatalomtól zengő, tárnákat rengető erejével, mégis nagy kincs birtokába juthat ezen nyelv ismerője, már ha a keményfejű törpék titkaikba avatják. Hiszen az északi historikusok rákfenéjétől, a Kyr Birodalom és utódállamainak elfogult történetírásától független, csak a törpékre jellemzően egyenes leírásokra és forrásokra bukkanhat az illető."
+        },
+        {
+            "type": "section_title",
+            "text": "Képzettségek"
+        },
+        {
+            "type": "rule",
+            "title": "1. fok",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "title": "2. fok",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "title": "3. fok",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "title": "4. fok",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "title": "5. fok",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "section_title",
+            "text": "Számtan/mértan (III – Intelligencia)"
+        },
+        {
+            "type": "paragraph",
+            "text": "A Számtan/mértan tudománya igen hasznos és Yneven jóval ritkábban előforduló tudás, mint azt sejtenénk, hiszen a hétköznapi életben nem okoz fennakadást hiánya. Az egyszerű ember tapasztalataira támaszkodva vásárol a piacon, illetve arassal, vagy lépésben méri ki a szükséges dolgokat. Ez a képzettség a pénzváltók, kereskedők, építő- és alkimista mesterek sajátja. Segítségével magasabb szinteken a világ egész működésének leírását közelítő misztikus egyenletek közelébe is eljuthatnak."
+        },
+        {
+            "type": "rule",
+            "title": "1. fok",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "title": "2. fok",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "title": "3. fok",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "A Mozaikmágia termágikus, időmágikus mozaikjainak használatához is a képzettség ezen fokának ismerete szükséges."
+        },
+        {
+            "type": "rule",
+            "title": "4. fok",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "title": "5. fok",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "Mértanilag korszakalkotó ötletei vannak, főleg a tapasztalati építészeti, mechanikai felhasználásokban, de páran a világegyetem, Ynev felépítésének titkait is feszegetik."
+        },
+        {
+            "type": "section_title",
+            "text": "Térképészet (III – Intelligencia)"
+        },
+        {
+            "type": "paragraph",
+            "text": "Kezdetben hajósnépek, kereskedők, hadvezérek birtokolták e tudományt, majd egyre többen rátettek a térképolvasás és készítés fontosságára, s mostanság már virágzó, szerteágazó tudásanyaggal áll a köznép rendelkezésére is."
+        },
+        {
+            "type": "rule",
+            "title": "1. fok",
+            "headers": [],
+            "rows": []
+        }
+    ]
+}

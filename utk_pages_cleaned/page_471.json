@@ -1,0 +1,68 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": false,
+    "section_title": "",
+    "content_blocks": [
+        {
+            "type": "paragraph",
+            "text": "Magon L'levar, a Szavakat Ismerő: Az elfek népének bölcse. Ő ügyel arra, hogy semmi ne merüljön feledésbe, ami egyszer megtörtént. Feljegyzi a neveket, vigyázza a históriákat, így őrködik a világ egyensúlyán, nehogy a Tudatlanság és a Közömbösség elsodorja a teremtés művét. Az aquir háborúkban tűnt el, még az ősidőkben, de azóta is figyel, s csak az alkalmat várja, hogy visszatérhessen."
+        },
+        {
+            "type": "paragraph",
+            "text": "Eidhíl K'Meakhan, a Dalokban Élő: A Szavakat Ismerő mellett, a másik isteni lény, aki nem engedheti, hogy a múlt emlékei veszendőbe menjenek. Dalnokok és költők szájával nyilatkozik meg, ő maga soha nincs jelen Yneven. Minden tanítását, intelmét, példázatát élőszóban adja hívei ajkára."
+        },
+        {
+            "type": "paragraph",
+            "text": "Nemathiel Airaven, a Tűzhelyre Vigyázó: Tyssa L'limenel déli megfelője, a jövendő és a családi béke őre, a meleghozó. Két megtestesülését pusztították el, ám a töretlen akarat s a bizakodás mindkét alkalommal új lángra lobbantotta élete parazsát. Az önfeláldozásban lelt gyönyör heve teszi halhatatlanná, ebből merít erőt a létezéshez, s ugyanezt várja el követőitől is. Tanítása a türelmen s a bizalmon alapszik."
+        },
+        {
+            "type": "paragraph",
+            "text": "Rhienna Malvaureen, a Tűz Csiholója, a Mosolyokban Honoló: Az elf szerelmesek isteni lényeggel bíró pártfogója, a szívekben lobogó tűz szítója. Fagyörékek alá temetkezett, hogy tavasszal eljuthasson mindenhova, mindenkihez, aki híjával van a mosolynak, a becéző szónak. Ő a virágpor a sarjú erdőben és a madárral a mezőn. A régi szerelmesek felvigyázója; a hevület, mely csak akkor csillapodhat, ha magasabbra hág."
+        },
+        {
+            "type": "paragraph",
+            "text": "Flidais D'amatel, a Lombok Őre: Narmiraen, illetve Sie-na Boralisse testvére, esetleg az ő valamely megtestesülések. Bizonyos déli erdők őrző kalahorája, a megadó és megbocsátó türelem hírnöke. Hívei mind kevesebben vannak, ereje fogy-tán. Azt állítják rajta, mindig Ynev legnagyobb élő fájában lakozik."
+        },
+        {
+            "type": "paragraph",
+            "text": "Moranna Naranol, a Homály Lakója: A szükségszerű elmúlás kalahorája, mosolya szelíd és titokzatos. Minden elf lelkének mérlegelője, noha a szabadossabb szellemi irányzatok elvitatják tőle ezt a jogát. A túlvilági vándor, aki a beletörődés és a tiszta szem tanítását vallja. A megváltoztathatatlan sors gyakorlati, de nem erkölcsi főségét hirdeti."
+        },
+        {
+            "type": "paragraph",
+            "text": "valószínűleg azok járnak legközelebb, akik a kráni elf lélek szimbólumát látják Verrionban: az örök nagyrátörés, a féktelen becsvágy, a fennhéjázó dölyf, a halhatatlan gyűlölet, a hosszú évezredek során epekeserűvé sűrűsödő harag elsöprő erejű megszemélyesülését."
+        },
+        {
+            "type": "paragraph",
+            "text": "Hantien Harran, az Árnyékban Neszező: Kráni elf kalahora, a feketetölgyek lelke, aki az erdő árnyékaiban és a lombok zúgásában nyilatkozik meg. A Könnyűléptű Nép hosszú emlékezetét jelképezi, és azt a félelmetes türelmet, amellyel ősi bosszújuk beteljesedésére várnak. Az Ötödkor óta nem manifesztálódott; nevét nem felejtették el, de hatalma erősen megcsappant, manapság már legfeljebb annyi telik tőle, hogy elleplezze az avarban lopakodó gyilkos léptei neszezését."
+        },
+        {
+            "type": "paragraph",
+            "text": "Gorhannain, a Tűzben Élő: Ízig-vérig kráni kalahora. Nem a tűzre vigyáz – ő maga a tűz. Nem a tűz miatt él, hanem általa. A hagyományok tiszteletben tartásával párosuló kíméletlen nagyrátörést jelképezi, kifordítva és eltorzítva Eidhíl K'meakhan, illetve Nemathiel Airaven tanait. Ezzel kitűnő ideológiai alapozást szolgáltat a kráni elfek agresszív és büszke belpolitikai csatározásaihoz."
+        },
+        {
+            "type": "section_header",
+            "text": "Krán"
+        },
+        {
+            "type": "paragraph",
+            "text": "Verrion H'anthall, a Sötétség Szája, a Mindeneket Elnyelő: A kráni elfek leghatalmasabb kalahorája, akit maga a Kosfejes Úr hozott létre: nyálát, könnyét és verítékét keverte el azzal a vérrel, amit az Elveszettek egyik mártírjának ereiből folyatott ki, majd teremtő leheletét a lüktető masszára bocsátotta. Ilyenképpen született meg Verrion, a Sötétség Szája, a Mindeneket Elnyelő, akit létezése első percétől kezdve csillapíthatatlan éhség gyötört. Egyesek szerint a Tizenhármak testvére ő; mások a huszonötödik Káosz-angyalnak tartják; megint mások művi lénynek, démonikus golemnek, Ranagol lángelméje holt-eleven bizonyítékának. Az igazsághoz"
+        },
+        {
+            "type": "section_header",
+            "text": "Mindenhol tisztelt"
+        },
+        {
+            "type": "paragraph",
+            "text": "Mallior, az Éjben Kacagó: Az egyetlen olyan kalahora, akit valamennyi elf tisztel Yneven, a Délvidéken éppúgy, mint Északon, de még Kránban is. Életében az elf-aquir háborúk legendás hőse volt, aki dicső halálával szentté magasztosult, s e minőségében a bosszúvágyat és a sötét szenvedélyeket személyesíti meg. A külvilágiak csak végső elkeseredésükben fordulnak hozzá, Kránban azonban sokkal elterjedtebb a kultusza; itt élnek vér szerinti leszármazottai is, a Ly'She-matenelek, azaz a Tettek Emlékezői."
+        },
+        {
+            "type": "chapter_header",
+            "text": "KÁOSZ-ANGYALOK"
+        },
+        {
+            "type": "paragraph",
+            "text": "A Káosz-angyalok túlvilági entitások, akik Ranagol szűkebb aspektusait testesítik meg, s őt táplálják a híveiktől nyert hatalommal. Mindannyian az abszolút igazsághoz vezető utak egyikét jelképezik, a transzcendens megismerés különféle módozatait. Együttesen piramisként szokás ábrázolni őket, amelynek a csúcsán maga Ranagol áll, a káoszból születő dinamikus rend szimbólumaként. Számuk összesen huszonnégy, az év hónapjainak megfelelően. Eredetüket tekintve meglehetősen sokfélék: akadnak köztük ősi, elfeledett istenek, akik behódoltak a Kosfejes Úrnak; valaha volt halandók, akik eljutottak az apoteózis hón sóvárgott állapotába; tiszta eszmék, amelyek formát és öntudatot öltöttek az önmagukról való hosszas elmélkedés során; démoni és őselemi lények, a túlsó létsíkokon honos hatalmak tarka egyvelege. Számuk tizenkétezer éve óta változott, összetételük azonban nem – egyikük-másikuk olykor lehanyatlik, elpusztul, gyökeresen átalakul vagy egyszerűen eltűnik. Hiánytalan lajstromba foglalásuk már csak ezért is lehetetlen vállalkozás volna; a helyzetet tovább nehezíti, hogy Kránról roppant kevés hiteles információval rendelkezünk, s azok is meglehetősen hézagosak. Az alábbiakban a jelentősebb Káosz-angyalokat kíséreltük meg számba venni; a nekik hódoló szekták fontos szerepet töltenek be a birodalom életében, tanításaik utat találtak a vérfilozófusok teológiai értekezéseibe."
+        }
+    ]
+}

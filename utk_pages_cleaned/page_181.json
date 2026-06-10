@@ -1,0 +1,97 @@
+{
+    "is_new_chapter": true,
+    "chapter_title": "BETEGSÉGEK",
+    "is_new_section": false,
+    "section_title": "",
+    "content_blocks": [
+        {
+            "type": "paragraph",
+            "text": "A betegségek állandó veszélyt jelentenek Ynev lakóira; esetenként városrészek vagy egész városok válhatnak járványok áldozatává. A pusztító fertőzések leginkább a sűrűn lakott területeket, a városokban élőket sújtják. Itt több ember kerül egymással kapcsolatba, s a legtöbb helyen a felhalmozódott hulladék elszállítása sem megoldott. A szemét pedig remek táptalaj a betegségeket okozó vírusoknak, baktériumoknak és különféle gombáknak. Tényésznek benne járványt hordozó patkányok és egyéb apró állatok is. Fertőzést hordozhatnak még a különböző vérszívók, ha fertőzött lényből szívnak vért, s a kórokozókat továbbadják. Ynev népeinek zöme találkozott már járványokkal, s jól tudja, a legfontosabb szabály a megelőzés. Számtalan városlakó indul ilyenkor hosszú útra a kevésbé sűrűn lakott falvak, erdőségek felé. A járványok áldozatait, személyes tárgyait – egyes helyeken még a házukat is – elégetik, így szándékozván megfékezni a kór elharapódzását. Betegségek alatt azonban nem csak a tömegeket tizedelő járványokat értünk, hiszen a kalandozók életét is veszélyeztethetik különféle harapással, karmolással okozott fertőzések, s léteznek mágia alapú kórságok is, melyek ráadásul természetes úton gyógyíthatatlanok."
+        },
+        {
+            "type": "title",
+            "title": "Betegségek szintje"
+        },
+        {
+            "type": "rule",
+            "title": "Betegség szintje és Egészségpróba",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "Azt, hogy egy betegség hogyan viszonyul az emberi vagy egyéb humanoid szervezet ellenálló Tulajdonságához, a Betegség szintjével jellemezzük. Minél magasabb egy Betegség szintje, annál fertőzőbb. Az 0. szintűek inkább csak gyermekekre és aggokra veszélyesek, míg az 5. szintűek a legerősebb szervezetet is legyűrhetik. A fentieket a M.A.G.U.S.-ban a következő szabály hivatott leképezni: minden betegség ellen Egészségpróbát kell dobni, melynek sikere annál valószínűtlenebb, minél magasabb a Betegség Szintje. Ha a próba sikeres, a karakter ellenállt a fertőzésnek, s nem kapta el a betegséget. Ha azonban sikertelen, akkor megfertőződött, s a szervezetében beférkőzött betegség súlyossága attól függ, mennyivel vetette el a fertőzés elleni Egészségpróbát. Az Egészségpróbát módosító értékekről a következő táblázat tudósít:"
+        },
+        {
+            "type": "table",
+            "headers": [
+                "Szint",
+                "Módosító"
+            ],
+            "rows": [
+                [
+                    "0.",
+                    "0"
+                ],
+                [
+                    "1.",
+                    "-1"
+                ],
+                [
+                    "2.",
+                    "-2"
+                ],
+                [
+                    "3.",
+                    "-3"
+                ],
+                [
+                    "4.",
+                    "-4"
+                ],
+                [
+                    "5.",
+                    "-5"
+                ]
+            ]
+        },
+        {
+            "type": "title",
+            "title": "Betegségek csoportosítása"
+        },
+        {
+            "type": "paragraph",
+            "text": "A betegségeket csoportosíthatjuk fertőző erejük, hatásuk, eredetük, lappangási idejük és súlyosságuk szerint. A csoportokból válogatva majd' minden betegség összeállítható és jellemezhető. Nem is tagadjuk, az alábbiakban ismertetett csoportosítással az volt a célunk, hogy lehetőséget adjunk a KM-nek különféle, akár a legagyfúrtabb betegségek megalkotására. A csoportokban természetesen átfedések mutatkozhatnak, de a KM így is sok betegséget állíthat elő segítségükkel – kicsit a Mozaikmágiára emlékeztetően. Mindenképpen ügyeljen azonban a játék egyensúlyára, mert egyes kombinációk szinte esély nélküli halált okoznak Játékos és Nem Játékos Karaktereknek egyaránt!"
+        },
+        {
+            "type": "title",
+            "title": "Betegségek hatása"
+        },
+        {
+            "type": "rule",
+            "title": "Egész szervezet károsító betegségek",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "Többnyire általános gyengeséget okoznak, s csökkenthetik az egyes Tulajdonságokat – Erő, Gyorsaság, Ügyesség. Hatásuk a súlyosságtól függően, a fáradékonyságtól egészen a halálig terjedhet."
+        },
+        {
+            "type": "rule",
+            "title": "Keringési rendszert károsító betegségek",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "Idetartoznak a vérkeringési zavarok. Együtt járhatnak az egész szervezetet érintő betegségekkel, de lehetnek azoktól függetlenek is. Az első esetre példa a hibás vértestek képződése, minek hatására a szervezet teljesítőképessége lecsökken, s a karakter fáradékonyabbá, gyengébbé válik. A rossz oxigenellátás következményeként esetenként még az idegrendszer is károsodhat. A legvégső állapot akár a halál is lehet, amit ilyen esetben mindig kóma előz meg. A második esetre a vérzékenységet említhetnénk példaképpen (lásd a hasonló nevű boszorkánymesteri varázslatot vagy a kidolgozott Betegségeket!)."
+        }
+    ]
+}

@@ -1,0 +1,48 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": false,
+    "section_title": "",
+    "content_blocks": [
+        {
+            "type": "paragraph",
+            "text": "A nemesek is szerényen, a fényűzéstől visszariadva élnek, ez nem jellemző haonwelli osztályos társaikra. A hercegség különben is a leggazdagabb államok közé tartozik egész északon, s a nagy pénzek gazdái élnek is a vagyonuk adta lehetőségekkel. Két mintára épült házak, paloták egész sora emelkedik a gyönyörű kertek és sétányok között, a biztonságra a hercegi gárda őrjáratai ügyelnek. Bármennyire is kérkednek igazságosságukkal és megértésükkel a haonwelli nemesek, nem akad szegény csavargó vagy más nemtelen, aki betehetné a lábát ezekbe a parkokba, még a Dal havában felbolyduló városi forgatagban sem. Ez nem azt jelenti, hogy a Garai nem veszi ki a részét az egész városra kiterjedő kavalkádból – épp ellenkezőleg. Káprázatos bálokat, lakomákat rendeznek, s külön meghívóval dalnokok, viadorok, csépúrágok is belépést nyerhetnek ide, ám a valódi mulatság az éjszakákon át tartó tánc, ívászat a város más negyedeiben zajlik."
+        },
+        {
+            "type": "paragraph",
+            "text": "Synn Erian a Kyr Palotát és a környező dombokat foglalja magába. A városrész aránytalanul nagy a benne lakók számához képest. A távoli Kopasz-hegyről nézve ez a terület hatalmas erdőnek tűnik, melyből hol itt, hol ott dugja ki a fejét egy-egy fantasztikus építmény. Itt találhatóak a régmúltból maradt paloták, s számos új épület is, annak jeléül, hogy az elfeknek akkor is bámulatos érzékük van a szépséghez és a harmóniához, ha netán élettelen anyagból emelnek szálláshelyeket maguknak. Az elf kalhorák szentélyei lélegzetelállítóan gyönyörű kertek közepén állnak, gyakran kisebb erdőkben, de annak sem kell csalódnod, aki a városlakó elfeket keresi; a hegyoldalakról leereszkedő zegzugos utcák, terek, sikátorok útvesztőjében egykönnyen eltévedhetsz, ha nem kerítesz magadnak idejekorán kalauzt. Különösen hírhedt e tekintetben a Százezer Lépcsőnek nevezett kerület, mely Tyssa L'Imenel, a Vér Nélkül Való szentélyét s a környező szűk utcácskákat foglalja magába. Synn Erian számos északi elf álma; nem egy ereni vagy gianagi elfhajsza túlélői lettek itt menedéket, de tudunk olyan elf rímkovácsról is, aki toroni rabszolgaságból szökött ide."
+        },
+        {
+            "type": "paragraph",
+            "text": "A Hano, vagy ahogy az itteniek mondják „az igazi város”, hatalmas kerületekből álló monstrum, melyet tisztes polgárok – kereskedő és iparosok – éppúgy laknak, mint nincstelen csavargók, koldusok és tolvajok. Önérzetes, büszke emberek mindannyian, nem ritka a különböző kerületek közti rivalizálás sem. A Dal havában nekibuzduló életben, mikor a hangoskodókat nemcsak a városrész iránti szeretetük, hanem a jófajta bor és a távolról jött bajkeverők szúrós megjegyzései is hevítik, gyakran véres utcai harcokkal fajul a pártoskodás. A másik kettőnél fiatalabb városrész ez, bár vannak igen régi kerületei is, például a Nagy Aréna melletti Yattyr, ahol a legnagyobb piactér, a Kyr Palotával vetekedő körül Gőzfürdő és Haonwell leghíresebb színháza, a Khalida áll."
+        },
+        {
+            "type": "paragraph",
+            "text": "A városnyi birodalmon Haonwell hercegi párja uralkodik. A család története nem mentes az intrikáktól, hisz a hatalom igézete még a legtisztább lelket is képes megbolondítani, ám a koronás főök sosem igyekeztek a hercegség sorsát saját érdekeiknek alárendelni. Felismerték, hogy Haonwellt nem érdemes letéríteni a már jól kitaposott, neki rendelt útról. Ez a józan gondolkodás az oka, hogy a hercegi családon belüli összezördüléseket – olykor gyilkosságokat; ilyesmire legutóbb százhetven éve került sor – a nép inkább érdeklődve, semmint rettegve figyeli, hisz az ő sorsuk alakulására az uralkodó személye vajmi kevés befolyással bír. Mostanra elcsitultak a hullámok a család körül: a legutóbbi pártütő önkéntes száműzetésbe vonult, mivel nem élvezte a nemesi családok többségének bizalmát. De azt mesélik, nem is él olyan messze, és bármikor visszatérhet."
+        },
+        {
+            "type": "paragraph",
+            "text": "A nemesség hatalmas vagyonát Haonwell legendás méneseinek köszönheti, melyekről alább részletesebben is szólni fogunk. Maguk a családok büszke vérvonalú erv nemesek, csatában bátran, híresen jó kardforgatók. Nem volt még olyan Zászlóháború, amelyből ne vették volna ki a részüket. A hősi tetteikről szóló dalok igen kedveltek mind nemesi, mind polgári körökben. Igazi kalandorlelkűek is akadnak közöttük, s beszélik, az olyan sem ritka, aki alvilági körökkel tart kapcsolatot."
+        },
+        {
+            "type": "paragraph",
+            "text": "A hatalmas város nem lehet meg ügyes kereskedők és mesteremberek nélkül. Belőlük kerül ki a városi tanács döntő hányada is, jóllehet akaratukat csak akkor tudják érvényesíteni, ha az egybevág a nemesség és a herceg érdekeivel. Ezen sokan úgy segítenek, hogy befolyásos pártfogókat keresnek a Garai lakói között. A bankházak és ékszerészházak vezetőinek sok ilyen lehetőségeik akad, de az ügyes politikával a nagyobb céhek atyamesterei is megtalálják a számításukat."
+        },
+        {
+            "type": "paragraph",
+            "text": "Haonwell ugyan mezőgazdaságilag önellátó, de a távoli vidékek árui mindig találnak vevőt az ősi falak között, hála az ügyes kereskedőknek, akik különben jóljára kelméket, selymet, illatszereket, bőrt, csontot, érceket, vágómarhát, ereni búzát, bort, festőanyagokat hoznak, s üveggel, kézművestermékekkel, ötvösmunkával, borostyánnyal, fegyverekkel és állatokkal fizetnek értük."
+        },
+        {
+            "type": "paragraph",
+            "text": "Az elfek fontos szerepet töltenek be Haonwell kulturális életében. Számos híres színház működik a Synn Erian területén, s az is előfordulhat, hogy műértőknek bepillantást engednek énektudásukba. Gyakoriak a ligetekben bemutatott táncjátékok, és a leghíresebb dalnokok vagy maguk is az ősi nép fiai, vagy a mesterük tartozott közéjük. A város más területein is szívesen látott vendégek, gyakran tűnnek fel nemesi házakban, de senki nem fordul utánuk, ha éppen a Hano kerületeiben intézik ügyeiket. Jogállásuk sajátos. Az ő kerületeiken kívül a város törvényei érvényesek rájuk, de minden Synn Erianban elkövetett vétkükért elf bíráik előtt felelnek, s ugyanezen ítélőszékek előtt adnak számot tetteikről azok, akik a hercegség területén bárhol az elfek ellenére cselekedtek. Adott esetben emberek is részt vehetnek ezeken az tárgyalásokon, de nincs sok beleszólásuk a dolgokba, s az elf törvényszékek ítéleteit tiszteletben tartják mindenütt."
+        },
+        {
+            "type": "paragraph",
+            "text": "Noha a magában Haonwellben is számosan laknak, igazi városiaknak mégis csak a félelfek számítanak, a nagyobb elf települések a város határain kívül, a végtelen erdőségekben rejtőznek. Aki természetes szálláshelyükön akarja felkeresni őket, ide igyekszik, bár igazán szerencsésnek kell lennie, ha megadatik neki a találkozás. Nem mindenki bukkanhat rájuk, ha mégoly pontos útbaigazítást kapott is hollétükről. Nem kedvelik az idegeneket – büszke és akaratos nép az övék –, azokat a fajtársaikat pedig, akik a városi életet választották, eltévelyedettnek, züllöttnek tartják, bár soha nem utasítják vissza őket, ha találkozni kívánnak velük. Akinek feltett szándéka, hogy az erdőkben kutassa az elfeket, jobban teszi, ha Synn Erianban keres pártfogót magának."
+        },
+        {
+            "type": "paragraph",
+            "text": "Az elfek mindazonáltal nem hálátlanok. A számukra biztosított nyugodt életkörülményekért cserébe nagyban hozzájárulnak Haonwell határainak védelméhez. Bár fegyveres harcba csak kivételes alkalmakkor keverednek, nyomolvasásuk, futáraik tudnak mindenről, ami a város környékén történik, s a hercegi tanácsot minden esetben friss hírekkel látják el. Fontos feladat hárul rájuk a Haonwellen elhelyezett gazdaságnak alapjául szolgáló pegazusés unikornis-ménesek mellett: keresve sem találni olyan lovászt, aki náluk jobban értene e különös állatok nyelvén. Állítólag egészen ősi szálak fűzik össze a három fajt, amit bárki azonnal elhisz, aki csak egyszer látott pegazusokkal vagy unikornisokkal foglalkozó elfet."
+        }
+    ]
+}

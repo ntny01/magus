@@ -1,0 +1,243 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": null,
+    "is_new_section": true,
+    "section_title": "Pszi",
+    "content_blocks": [
+        {
+            "type": "paragraph",
+            "text": "azonban csak akkor teljesíti érvényesülését, ha a pap kiérdemelte bizalmát. Az istenségek ezen támasztását az Isteni kegy Háttér felvételével biztosíthatod karakterednek."
+        },
+        {
+            "type": "rule",
+            "title": "Kegy pontok szerzése",
+            "rows": [
+                [
+                    "A kegyelt karakter a Vallásismeret képzettség általa birtokolt fokának leírásában szereplő Kegy pontokat kapja meg minden Tapasztalati szinten (már első szinten is) istene kegyelméből, illetve a rendelkezésre álló KAP-jaiból vásárolhat továbbiakat."
+                ]
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Pszi érték és Mágiaellenállás",
+            "rows": [
+                [
+                    "Ha van Pszi képzettséged, akkor határozd meg pszi értékedet is. Ezeket a Pszi c. fejezetben találod meg a 217. oldalon. Az ott leírtaknak megfelelően számold ki a Tudatalatti Mágiaellenállásodat (TME) mind az Asztrál-, mind a Mentálmágiákkal szemben, és ha van pszid, akkor a tényleges Pszi pajzsokkal növelt Mágiaellenállásodat is fel kell jegyezned."
+                ]
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Pszi pontok szerzése",
+            "rows": [
+                [
+                    "A pszit alkalmazó karakter minden Tapasztalati szinten (már az elsőn is) a Pszi képzettség általa birtokolt fokának leírásában szereplő pontokkal növelheti Pszi pontjai számát, illetve a rendelkezésre álló KAP-jaiból vásárolhat továbbiakat."
+                ]
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Pszi Érzékenység Háttér",
+            "rows": [
+                [
+                    "Nincs Pszi képzettséged, de a Pszi Érzékenység Hátteret felvetted, akkor annyi Pszi ponttal rendelkezel, amennyi az Intelligenciád értéke, de ezt tudatosan felhasználni nem tudod."
+                ]
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Mágiaellenállás",
+            "rows": [
+                [
+                    "A pszihez hatásában hasonló lehet, ami az asztrális, mentális varázslatokkal szembeni védekezést illeti, a Hit. Ha a karakter igazán hívő – gyakorolja vallását, istene, vagy bármely, általa tisztelt felsőbb lény törvényei, tanításai szerint él (ezt a KM jogköre eldönteni), akkor a Vallásismeret képzettségnél leírtak szerint növelheti Tudatalatti Mágiaellenállását (lásd a 161. oldalon a Vallásismeret képzettség leírásában)."
+                ]
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Mágiatagadás Háttér",
+            "rows": [
+                [
+                    "A természeti népek Mágiatagadás Háttere szintén hasonló célokat szolgál (lásd a Hátterek című fejezetben a 31. oldalon)."
+                ]
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Felszerelés",
+            "rows": [
+                [
+                    "Klánod, rended, iskolád leírásából keresd ki, hogy mennyi pénzzel indulsz, majd lapozz a Felszerelés c. fejezethez a 191. oldalra! A pénzedből végy magadnak felszerelést és fegyvereket. A fegyverek harcértékekkel, míg a pajzsok és vértek Mozgásgátló tényezővel (MGT), illetve a páncélok Sebzésfelfogó értékkel is bírnak, melyek befolyásolhatják a harcértékeidet – a szükséges módosítások után megvannak a végleges harcértékeid."
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "Készen is vagyunk. Megalkottad a karakteredet!"
+        },
+        {
+            "type": "paragraph",
+            "text": "A fentiekből kiviláglik, hogy nem túl egyszerű, és meglehetősen időigényes feladat egy-egy új karaktert megalkotni. Persze minél gyakorlottabb leszel, annál könnyebben megy majd, de arra számíts, hogy eleinte fél-egy órát mindenképpen igénybe vesz. Ám nem kell elkedvetlenedned: karaktereddel – mindaddig, míg él – nem csak egy kalandban vehetsz részt. Csak akkor kell újat alkotnod, ha elhalálozik, vagy ha te döntesz úgy, ideje kipróbálni egy újabb ötletet. Esetenként a KM-ed is javasolhatja a váltást – a játék és a játékosok jól felfogott érdekében. Légy belátó, hogy hosszú életű lehess a Kalandok Kontinensén!"
+        },
+        {
+            "type": "rule",
+            "title": "A Karakteralkotás összefoglalása",
+            "rows": [
+                [
+                    "10 Tulajdonság között 135 pont osztható szét"
+                ]
+            ]
+        },
+        {
+            "type": "table",
+            "headers": [
+                "Rövidítés",
+                "Jelentés"
+            ],
+            "rows": [
+                [
+                    "Ép",
+                    "Egészség"
+                ],
+                [
+                    "Fp",
+                    "Állóképesség + Akaraterő"
+                ],
+                [
+                    "Kp",
+                    "Intelligencia"
+                ],
+                [
+                    "Pp",
+                    "Intelligencia"
+                ],
+                [
+                    "KÉ",
+                    "Érzékelés + Gyorsaság + HM"
+                ],
+                [
+                    "TÉ",
+                    "Ügyesség + Gyorsaság + Erő + HM"
+                ],
+                [
+                    "VÉ",
+                    "Ügyesség + Gyorsaság + 60 + HM"
+                ],
+                [
+                    "CÉ",
+                    "Ügyesség + Érzékelés + HM"
+                ],
+                [
+                    "Sebzés bónusz",
+                    "Erő 15 fölötti része"
+                ]
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "50 Karakteralkotó pont (KAP)",
+            "rows": [
+                [
+                    ""
+                ]
+            ]
+        },
+        {
+            "type": "table",
+            "headers": [
+                "Tétel",
+                "Költség"
+            ],
+            "rows": [
+                [
+                    "Háttér",
+                    "1-10 KAP"
+                ],
+                [
+                    "+1 Kegy pont",
+                    "3 KAP"
+                ],
+                [
+                    "+1 Mp",
+                    "3 KAP"
+                ],
+                [
+                    "+1 Pp",
+                    "2 KAP"
+                ],
+                [
+                    "+1 HM",
+                    "2 KAP"
+                ],
+                [
+                    "+1 Kp",
+                    "1 KAP"
+                ],
+                [
+                    "+1 Fp",
+                    "1 KAP"
+                ],
+                [
+                    "+ Tulajdonság",
+                    "20 KAP"
+                ]
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Játszható Fajok",
+            "rows": [
+                [
+                    "Ynev világán nemcsak emberek, más értelmes fajok is élnek. Kalandozó azonban csak némelyikükből válhat. Mindazon szabályok, melyek a kötet egyéb részeiben ismertetésre kerülnek, elsősorban az emberi fajba tartozó kalandozókra érvényesek – jelen fejezet tárgyalja a más fajú karakterek lehetőségeit."
+                ]
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Játszható fajok megkötései",
+            "rows": [
+                [
+                    "A M.A.G.U.S. csak humanoid fajú lénnyel enged játszani, de még itt is vannak további megkötések. A játszható fajok a következők:"
+                ]
+            ]
+        },
+        {
+            "type": "table",
+            "headers": [
+                "Faj1",
+                "Faj2",
+                "Faj3"
+            ],
+            "rows": [
+                [
+                    "Ember",
+                    "Elf",
+                    "Félfél"
+                ],
+                [
+                    "Törpe",
+                    "Udvari ork",
+                    "Kyr származék"
+                ]
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Nem emberi fajok hátrányai",
+            "rows": [
+                [
+                    "Minden embertől különböző fajnak vannak előnyei és hátrányai, ám a velük való játék szórakoztató; kellemesen ellenpontozza Ynev emberközpontúságát. Azt mindenképp érdemes megjegyezni, hogy egyes vidékek kivételével az emberi civilizáció kevésbé bíznak más fajba tartozó lényekben, s ez bizony komolyan kihathat egy karakter életére."
+                ]
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Faji korlátozások iskolákra",
+            "rows": [
+                [
+                    "A különböző fajokba tartozó karakterek nem lehetnek bármely iskola tagjai, hiszen némelyik túlságosan emberi, vagy túlságosan távol áll az adott faj képviselte mentalitástól. Előfordulhat az is, hogy egyes fajoknál külön iskolák létesültek, s ide az emberek és más lények nem nyerhetnek felvételt. Azt, hogy egy embertől eltérő fajú játékos karakter mely szervezetnek lehet a tagja, az alábbi táblázat mutatja meg. Léteznek persze kivételek, mikor egy rend mégis tagjai közé fogad idegen fajúakat, ám ezek az esetek felettébb ritkák, és mindig komoly indoklást igényelnek. Ilyenkor a KM joga eldönteni, lehetséges-e a kívánt kombináció."
+                ]
+            ]
+        }
+    ]
+}

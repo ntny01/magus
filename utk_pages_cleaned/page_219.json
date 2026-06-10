@@ -1,0 +1,141 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": true,
+    "section_title": "Slan Út",
+    "content_blocks": [
+        {
+            "type": "paragraph",
+            "text": "A kutatásnak egy időre Pyarron 3676-os pusztulása, illetve az ezen esemény folyamányaként a Fehér Páholyban belül kibontakozó széthúzás vetett véget; a Páholy tanácsának egyes tagjai a bosszút, mások inkább az újjáépítést szorgalmazták."
+        },
+        {
+            "type": "paragraph",
+            "text": "Egy azonban bizonyos, a jelenleg összeállított tudásanyagból már feltételezhető, hogy miféle félelmetes mértékű hatalommal bírhattak Godon nagyjai egykoron. Ezen diszciplínák erőt és hatalmat hordoznak, mely nem való felkészületlen alkalmazó kezébe, emiatt csakis a dar-dor-i Északi és Belső Iskola növendékeinek oktatják, illetve még Ordan leghatalmasabb varázstudói férhetnek hozzá a titkos tanokhoz."
+        },
+        {
+            "type": "paragraph",
+            "text": "A Godoni Örökség tükrözi a birodalom világszemléletét: ismerd meg a szabályokat, majd találd meg bennük rejlő lehetőségeket és ha már ez sem elég, alkosd újra őket. Alkalmazói hihetetlen figyelemmel és erkölcsiséggel megáldott emberek, kik hatalmukat csakis építésre használják, s semmiképpen sem vallják a tüzet tűzzel elvet."
+        },
+        {
+            "type": "paragraph",
+            "text": "A godoni pszi alapja a Manaháló. Ahogy a kyr szellemiségű varázstudók megragadják varázshatalmukkal a szövedéket, és új mintázatokba csomózva változásra kényszerítik a valóságot, úgy változtatja meg a mana áramait a godoni pszi, melyhez leginkább hasonló alkalmazás talán a kyr Energiagyűjtés, mely szintén a Manahálóval manipulál."
+        },
+        {
+            "type": "paragraph",
+            "text": "A Godoni Örökség az újító szellem, a tiszta és nyílt kíváncsiság miatt, mely megalkotóinak szellemiségét mélyen áthatja, képes bármely szemlélet befogadására, tehát alkalmazói bármely pszi irányzatot tanulhatnak mellette."
+        },
+        {
+            "type": "paragraph",
+            "text": "Nara, azaz Észak népei által Niarénak nevezett császárság lakói a Kyr birodalom bukása utáni évszázadokban alapították meg államukat a Sárkánygerinc határvidékén íratlan medencékben, a Közép-tengerének partján. Történelmük vérzivataros hajnala, a hatodkori démonikus betörések és háborúk sorozata, melyből alig maroknyi hős – mint az államalapító Kin-Ce és Karaoku, a sárkányisten – hite vezette ki a meggyötört, ekkorra már néppé kovácsolódott nomád törzsszövetséget."
+        },
+        {
+            "type": "paragraph",
+            "text": "A Slan pszionika alapja a befelé fordulás, a belsőnkben rejtekező lélek megacélozása, a tudat tökéletes uralmának elérése a test felett, az egyensúly fenntartása a célok és az elérésükhöz végigjárandó út között. A legyőzhetetlen belső harmónia és tökéletesség elérése."
+        },
+        {
+            "type": "rule",
+            "title": "Slan Út elsajátítása",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Slan Út diszciplínák",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "Tudásukat, bár képesek mások ellen fordítani, általában a saját testük és szellemük felett elérendő tökéletes ellenőrzés megszerzésére használják."
+        },
+        {
+            "type": "rule",
+            "title": "Slan Út és Kyri Metódus",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Pszi pont (Ψp)",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Pszi pont számítása",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Példa Pszi pont számításra",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Pszi pont felhasználása",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Pszi pont regeneráció",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "table",
+            "headers": [
+                "Tevékenység",
+                "1 Ψp visszanyeréséhez szükséges idő"
+            ],
+            "rows": [
+                [
+                    "Meditáció*",
+                    "2 perc"
+                ],
+                [
+                    "Alvás**",
+                    "10 perc"
+                ],
+                [
+                    "Pihenés (üldögélés)",
+                    "20 perc"
+                ],
+                [
+                    "Könnyű séta, léptetés lovon",
+                    "30 perc"
+                ],
+                [
+                    "Utazás, ügetés, vagy vágta",
+                    "60 perc"
+                ]
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Meditáció",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        }
+    ]
+}

@@ -1,0 +1,52 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": true,
+    "section_title": "Magasmágia (IV – Intelligencia, Akaraterő)",
+    "content_blocks": [
+        {
+            "type": "paragraph",
+            "text": "A Mozaikmágia rejtett ismereteit meg is ismerheti a karakter ezen a tudományon keresztül. Alacsonyabb szinteken csak a formulák és a varázslatok jellemző jeleit, magasabb szinteken magának a mozaikokból történő varázslásnak a mikéntjét."
+        },
+        {
+            "type": "rule",
+            "title": "Magasmágia 1. fok",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Magasmágia 2. fok",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Magasmágia 3. fok",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Magasmágia 4. fok",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Magasmágia 5. fok",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        }
+    ]
+}

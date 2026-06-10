@@ -1,0 +1,31 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": false,
+    "section_title": "",
+    "content_blocks": [
+        {
+            "type": "rule",
+            "text": "újban csak immáron hordozója jóvoltából, s ez meg is látszik eredetén, apróbb hajtásain. Az íj és az elf szimbiózisa miatt, ha az íj megsérül, akkor annak látható nyoma nincs, mivel az elf helyette, méghozzá annyi Fp-t, amennyi sebzést (STP) az íj elszenvedett. Ha Fp-i elfogynának, akkor az elf elájul, s az íj innentől kezdve normál módon sebződik. A fegyver mivel saját lélekkel bír, nem lehet semmiféle természetes anyagok mágiájának, vagy destrukciónak, esetleg papi Szétzúzásnak fohászának alanya, ennek minden előnyével és hátrányával együtt. Mivel a szertartás a hordozójához kapcsolta, ezért mágikus védelmük is összeadódik, tehát az elf bármiféle védelme, varázslat, varázstárgy, TME, pszi, vagy Háttérhatalmakból fakadó az íjra is érvényesül, illetve bármelyikükre is hat asztrál, vagy mentál alapú támadás, az kiteljesül a másikon is, legyenek bár mérföldek ezrek távolában.",
+            "title": "Elf íj szimbiózis és védelem"
+        },
+        {
+            "type": "paragraph",
+            "text": "Az eltépethetetlen kötelék miatt az elf megérzi, ha a fa, honnan íja vétetett szenved, haldoklik vagy elpusztult, ilyenkor a fa lelke tovább él a fegyverben. Azonban, ha az elf pusztul el, akkor mindkét lélek hosszú útra indul a Kárpiton túlra, s a fa lassan alig egy év alatt kiszárad."
+        },
+        {
+            "type": "rule",
+            "text": "Abban az esetben, ha az íj lelkét elpusztítják, vagy nem a társa használja, akkor a fent feltüntetett csökkentett értékek érvényesülnek. Fontos még megjegyezni, hogy ha bárki aki nem elf vagy elf származék és nem saját íját hordozza, illetve nem tudja hitelt érdemlően bebizonyítani bármely elfek uralta területre tévedve, hogy nem álnok módon jutott a fegyverhez, az igen kellemetlen utolsó pillanatoknak néz elébe.",
+            "title": "Elf íj használatának következményei"
+        },
+        {
+            "type": "paragraph",
+            "text": "használata. A felhúzókampót a lövész széles derékszíjához erősíti, kampós végét az idegbe akasztja, majd a nyílpuskák kengyelébe akasztva felajzza azt. Jóval bonyolultabb a tekervény, ami egy fogaskerékből és fogaslécekből áll. A tekervény fogantyúját megtekerve a tushoz rögzített fogaskerék végiglépked az idegbe akasztott fogaslécen és felajzza azt. Végül a legnagyobb páncéltörő és ostromnyílpuskákhoz motollát használnak. Ez több csigából és kötélből álló szerkezet, ahol a csigaáttételek segítségével a kötelet egy dobra tekerve lehet felhúzni a nyílpuskát. Ennek használatához külön üreget kell kiképezni a tus végén, ahová a motollát be lehet támasztani. A shadoni páncéltörő csak motollával együtt használható – és két személy szükséges kezeléséhez, s ezért tart ilyen hosszú ideig az újratöltése."
+        },
+        {
+            "type": "rule",
+            "text": "Egyes birodalmakban a számszeríjat nem csak lövésre használják, hanem a reguláris hadseregben szuronnyal is ellátják. Ez egy vagy két, körülbelül arasznyi hosszúságú penge, amit a kengyel elé erősítenek. Így két kézre fogva a számszeríj tusát döfni is lehet vele. Ha az íjász közelharcra kényszerül, ezzel megvédheti magát. A szuronyvívás külön Fegyverhasználat képzettséget igényel, a szuronyos nyílpuskák harcértékei: KÉ: 0, TÉ: 8, VÉ: 5, sebzés: 1k10, időigénye: 5.",
+            "title": "Szuronyos nyílpuskák harcértékei"
+        }
+    ]
+}

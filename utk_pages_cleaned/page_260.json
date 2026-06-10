@@ -1,0 +1,240 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": true,
+    "section_title": "Természet",
+    "content_blocks": [
+        {
+            "type": "paragraph",
+            "text": "A Természet szférába tartoznak mindazok a fohászok, melyek a természet erőinek, vagy lényeinek parancsolnak, függetlenül attól, hogy segítő vagy ártó szándékkal alkalmazzák őket. Használatukkal nemcsak állatok és növények felett nyerhet hatalmat a pap, de kérheti az elemi síkok lakóinak segítségét, és némely természetben előforduló jelenséget is előidézhet. A fohász ideje alatt a pap szimbóluma smaragdzöld fénnyel világít."
+        },
+        {
+            "type": "paragraph",
+            "text": "Ha a fohászok szféráit vizsgáljuk, három csoportot különböztethetünk meg:"
+        },
+        {
+            "type": "paragraph",
+            "text": "I. Az általános fohászok közé azok tartoznak, melyek nincsenek szoros kapcsolatban egyetlen vallás papjaival sem. Mind a négy szféra tartalmazza az adott fohászt, következésképp a szükséges Kegy pontok birtokában bármely pap képes a végrehajtásukra."
+        },
+        {
+            "type": "paragraph",
+            "text": "II. A szférikus fohászok egy, kettő vagy legfeljebb három szférához tartozhatnak. Amennyiben a pap ismeri az adott szférát, lehetősége van bármelyik ott található fohász felhasználására – már ha rendelkezik a szükséges Kegy pontokkal."
+        },
+        {
+            "type": "paragraph",
+            "text": "III. Az egyedi fohászok – jóllehet szférákba is besorolhatók – nem hozzáférhetők bármely, az adott szférát ismerő pap számára. Mindegyiknél külön jeleztük, mely égi hatalmasság jutalmazza vele hithű szolgáit. Ennek megfelelően használatára csakis az adott isten papjai és paplovagjai képesek."
+        },
+        {
+            "type": "paragraph",
+            "text": "Ynev nagyobb vallásainak papjai által birtokolt szférákról az alábbi táblázat tudósít:"
+        },
+        {
+            "type": "paragraph",
+            "text": "A pyarróni istencsalád"
+        },
+        {
+            "type": "table",
+            "headers": [
+                "Istenség",
+                "Hatalmának területe",
+                "Szférái"
+            ],
+            "rows": [
+                [
+                    "Adron",
+                    "Varázslás és fény",
+                    "Élet, Lélek"
+                ],
+                [
+                    "Alborne",
+                    "Zene, legendák, ünnepek",
+                    "Élet, Lélek"
+                ],
+                [
+                    "Antoh",
+                    "Vizek, tengerek, viharok",
+                    "Élet, Természet"
+                ],
+                [
+                    "Arel",
+                    "Harc, természet, vakmerőség, makacsság",
+                    "Élet, Lélek, Természet, Halál"
+                ],
+                [
+                    "Darton",
+                    "Halál, halottak, humor, túlvilág",
+                    "Lélek, Halál"
+                ],
+                [
+                    "Della",
+                    "Művészetek",
+                    "Lélek"
+                ],
+                [
+                    "Dreina",
+                    "Hatalom, rend, gazdagság",
+                    "Élet, Lélek"
+                ],
+                [
+                    "Ellana",
+                    "Szerelem, szépség, kéj, léhaság",
+                    "Élet, Lélek"
+                ],
+                [
+                    "Gilron",
+                    "Kovácsok, mesterségek",
+                    "Élet, Természet"
+                ],
+                [
+                    "Krad",
+                    "Tudomány, felfedezők, utazók",
+                    "Élet, Lélek"
+                ],
+                [
+                    "Kyel",
+                    "Teremtés, pusztítás, sors",
+                    "Élet, Lélek, Halál"
+                ],
+                [
+                    "Noir",
+                    "Álmok, csalás, játékok, fogadások",
+                    "Élet, Lélek, Halál"
+                ],
+                [
+                    "Uwel",
+                    "Bosszú, igazság, fájdalom",
+                    "Élet, Lélek, Halál"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A kyr panteon"
+        },
+        {
+            "type": "table",
+            "headers": [
+                "Istenség",
+                "Hatalmának területe",
+                "Szférái"
+            ],
+            "rows": [
+                [
+                    "Morgena",
+                    "Árnyak, álmok, jóslatok, rejtőzés, bosszú",
+                    "Lélek, Halál"
+                ],
+                [
+                    "Sogron",
+                    "Angyalok, tudás",
+                    "Élet, Lélek, Természet"
+                ],
+                [
+                    "Tharr",
+                    "Káosz, vér, fájdalom, hatalom",
+                    "Lélek, Halál"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "Egyistenhitek"
+        },
+        {
+            "type": "table",
+            "headers": [
+                "Istenség",
+                "Hatalmának területe",
+                "Szférái"
+            ],
+            "rows": [
+                [
+                    "Domvik",
+                    "Hét aspektusa a teremtés egésze felett biztosít számára hatalmat",
+                    "Élet, Lélek, Természet"
+                ],
+                [
+                    "Orwella",
+                    "Betegségek, rontások, átkok",
+                    "Lélek, Halál"
+                ],
+                [
+                    "Ranagol",
+                    "Rend, fájdalom, vér, kiemelkedettség, gondolat",
+                    "Lélek, Természet, Halál"
+                ],
+                [
+                    "Ranil",
+                    "Fény, bátorság, élet",
+                    "Lélek, Természet"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A törpék istenei"
+        },
+        {
+            "type": "table",
+            "headers": [
+                "Istenség",
+                "Hatalmának területe",
+                "Szférái"
+            ],
+            "rows": [
+                [
+                    "Búi Rúurig",
+                    "Sors, múlt, tudás",
+                    "Lélek, Természet"
+                ],
+                [
+                    "Kadal",
+                    "Felfedezés, mesterségek",
+                    "Élet, Természet"
+                ],
+                [
+                    "Tooma",
+                    "Harc, bátorság, fegyverek",
+                    "Élet, Természet"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "Arkánumok, Rituálék és Litániák"
+        },
+        {
+            "type": "paragraph",
+            "text": "A papok fohászait hatalmuk szerint Kis, illetve Nagy Arkánumra osztjuk. Míg az előbbi a legtöbb felkent számára elérhető, addig az utóbbi csak azok számára nyílik meg, akik igen magas kegyben állnak égi patrónusuknál (tehát megfelelő mennyiségű Kegy ponttal rendelkeznek)."
+        },
+        {
+            "type": "paragraph",
+            "text": "Megkülönböztetünk még litániákat és rituálékat is. Litániának nevezzük azon fohászokat, amiket a pap képes „erősíteni”, kérésére istene több Kegy pontért nagyobb hatalommal idézi meg, tehát a Kegy pontok többszörözésével az Erősség vagy az Időtartam egyaránt növelhető."
+        },
+        {
+            "type": "paragraph",
+            "text": "A rituálék mindig ugyanakkora hatalommal jönnek létre, „erősítésükre” nincs mód, ám erre nincs is szükség, mert az isteni akarat végtelen hatalommal nyilvánul meg. Tehát a Kegy pontok többszörözésével csupán az Időtartam növelhető."
+        },
+        {
+            "type": "paragraph",
+            "text": "Általános fohászok"
+        },
+        {
+            "type": "paragraph",
+            "text": "Általános fohászok litániái"
+        },
+        {
+            "type": "rule",
+            "title": "A hit pajzsa",
+            "headers": [],
+            "rows": [
+                [],
+                []
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A hit pajzsa nevezetű fohász segítségével a kegyelt egy rövid fohásszal felhívja magára pártfogója figyelmét, hogy óvja meg az elkövetkezendőkben. Az ima nyomán a pap, vagy paplovag hatalma egy, a kegyelt körüli 20 ynevi láb sugarú gömbben nyilvánul meg; itt az időtartam lejártáig minden létrejövő ártó szándékú varázslat, vagy fohász ellen kinyilváníthatja istene hatalmát. Ez annyit tesz, hogy a segített akár 1 szegmenses varázslatokat is képes még létrejöttük előtt szétoszlatni a Mágia szétoszlatása nevezetű fohásznál leírtaknak megfelelően, az ott részletezett Kegy pont mennyiségéért. Azonban a pap képtelen előre felmérni egy megrohanó varázslat erejét, így ha a fohász segítségével ellenségül és nem bír a varázslat szétoszlatásához szükséges Kegy pontokkal, akkor a varázslat a fohász félbeszakadásának pillanatában ismét teljes erősítésével fogan meg."
+        }
+    ]
+}

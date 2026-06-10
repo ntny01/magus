@@ -1,0 +1,72 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": true,
+    "section_title": "A betegségek eredete",
+    "content_blocks": [
+        {
+            "type": "paragraph",
+            "text": "Emésztőrendszeri megbetegedések: Az efféle betegségek az áldozat emésztésében okoznak zavart, ami különösen táplálkozás után jelentkezik. Legtöbbször kínzó fájdalommal, gyomormorrással járnak, amin sokszor csak a helyes étrend segít. A mostoha körülmények között – mely a kalandozó életmód sajátja – bizony komoly gond lehet a megfelelő élelem beszerzése; miközben a megalázó fájdalom a legkínosabb helyzetekbe kergetheti a betegségben szenvedőt. Gyakran egy egyszerű ételmérgezés is hasonló következményekkel járhat – megjegyzendő az ételmérgezés egyszerre betegség és mérgezés, mindkét csoportba besorolhatjuk."
+        },
+        {
+            "type": "paragraph",
+            "text": "Idegrendszeri megbetegedések: Az idegrendszerre ható betegségek legtöbbször bénulást vagy érzékiesést okoznak. Előfordulhat például, hogy az áldozat elveszti jobb kezének tapintását, mely esetben – lehunyt szemmel – képtelen különbséget tenni a markába helyezett golyó és kocka között. Mint ahogy az is előfordulhat, hogy egyik karjának hőérzékelése esik ki, s így nem tudja eldönteni, melyik a hideg és melyik a forró víz. A fenti módon károsítható érzékek a tapintás, a hőérzet, a fájdalomérzet és a vibráció-érzés lehetnek. Ha a mozgatásért felelős idegszakaszok sérülnek, a test érintett izmai lebénulnak, azaz használhatatlanná válnak. Fontos tehát leszögezni, hogy az idegrendszerre ható betegségek közé nem a lelki nyavalyákat (pl. depresszió), hanem az idegek károsodásával kapcsolatosakat soroljuk."
+        },
+        {
+            "type": "paragraph",
+            "text": "Érzékszervi zavarokat okozó betegségek: Az érzékszervek működését károsító betegségek részleges vagy teljes érzék kiesést okoznak. Ide tartozik a süketség, a vakság, a szaglás vagy az egyensúlyérzék elvesztése. Az érzékszervek részleges károsodása nagyothallást, színvakságot, homályos látást jelent. De térjünk ki részletesebben az egyensúlyvesztésre! Ez esetben negatív módosító sújt minden olyan mozdulatot és harci manővert, melynek sikeres végrehajtásakor kockadobást igényel."
+        },
+        {
+            "type": "rule",
+            "title": "Egyensúlyzavarok hatása",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "Izomrendszeri megbetegedések: Az efféle elváltozások ritkák, hatásuk többféle lehet. Ha csak egyetlen izomra hatnak, az működőképes marad, bár ereje elvész. Csak amolyan tessék-lássék mozgatásra lesz képes, komoly erőkifejtésre nem. Ha a hatás a szervezetet összes izmára kiterjed, (a szívre nem), az egész szervezetet érintő betegségek leírásának megfelelően kell eljárni."
+        },
+        {
+            "type": "paragraph",
+            "text": "Szívre és tüdőre ható betegségek: Ebbe a csoportba tartozik a betegség, komoly problémákkal kell szembenéznie az áldozatnak. Ezen szervek kifogástalan működése elengedhetetlen a szervezet életben tartásához; ha károsodnak, annak könnyen halál lehet a vége. Az efféle betegség általános legyengüléssel, fájdalmakkal, aminek hatására folyamatos Fp-vesztés, a Tulajdonságok értékének csökkenése következhet be."
+        },
+        {
+            "type": "paragraph",
+            "text": "Bőrbetegségek: Az efféle nyavalyák szerfelett változatosan fordulnak elő a kétes higiéniáról ismert városlakók között. Legegyszerűbb formája a bőrpír, de mind súlyosabb állapotokban megjelenhetnek a kiütések, sebhelyek, gennyesedések, kelések, üszkös sebek is. A testen való elhelyezkedésüktől függően csökkenthetik az áldozat Ép-jét és Fp-jét, s nem egyszer Karizmáját is. Kínzó fájdalommal járnak, rendkívül visszataszító látványt nyújthatnak, de ritkán jelentenek életveszélyt."
+        },
+        {
+            "type": "paragraph",
+            "text": "Immunrendszeri betegségek: Az egyszerűség kedvéért ide soroljuk a máj méregtelenítő funkciójának károsodását is, így az ebbe a csoportba tartozó betegségek a többi fertőzéssel és a mérgekkel szembeni ellenállást, vagyis az áldozat egészségét csökkentik jelentős mértékben. Ha az efféle betegség súlyos, akár egy könnyű nátha, vagy nagyobb mennyiségű alkohol fogyasztása is halálos lehet. Az ilyesmivel fertőzött karaktert minden lehetséges betegség megtámadja, s az Egészségpróba sikertelen, az máris egy kategóriával súlyosabb állapotot jelent. Ha a Méregellenállás károsodott, a mérgek automatikusan legsúlyosabb hatásukat fejtik ki, s az Egészségpróba sikerének esélye is csökken."
+        },
+        {
+            "type": "paragraph",
+            "text": "Pszichológiai elváltozások: Ez a csoport magába foglalja a szellemi és lelki betegségeket, a teljes intelligenciavesztéstől az üldözési mániáig. Két fő csoportról beszélhetünk. Az első a Szellemi Tulajdonságok elvesztését jelenti, mely esetben az Intelligencia értéke csökken. Intelligenciacsökkenés esetén az áldozat agysejtjei pusztulnak, miáltal gondolkodása eltompul. Értékvesztésével részleges vagy teljes emlékezetkiesés járhat, ami a Nyelvismeret és más képzettségek visszafejlődését, netán teljes elfelejtését okozhatja."
+        },
+        {
+            "type": "paragraph",
+            "text": "A másik csoportba a lélek betegségei tartoznak. Ezt nem lehet pontokkal és számokkal körülírni (bár minden esetben az Asztrál csökkenésének vonják maguk után), ez esetben a karakter szerepjátékára van szükség. Ide tartoznak a különböző félelmek, mániák, téveszmék, képzelgések. Jó példa ezekre a bezártságtól való félelem, az üldözési mánia, a tudathasadás vagy az embergyűlölet. Bár fontos tudni, ezen lelki elváltozásokat az esetek túlnyomó többségében nem fertőzések okozzák – sokkal inkább valamely súlyos lelki behatás, stressz eredményei, gyakran veleszületett betegségek."
+        },
+        {
+            "type": "paragraph",
+            "text": "Szót kell ejtenünk a betegségek eredetéről is. Itt is csoportokat állíthatunk fel, a betegség terjedésének módja szerint. A kórokozók, bár sokkal fontosabbak a valós életben, elhanyagolhatóak a szerepjátékban, hiszen a karakterek többnyire nem vírusokkal és baktériumokkal, hanem kórokozókkal és más, nagyon is kézzelfogható problémákkal küzdenek."
+        },
+        {
+            "type": "paragraph",
+            "text": "Cseppfertőzéssel terjedő kórok: Azok a betegségek tartoznak ide, melyeknek okozói elfogyasztott vagy testre került folyadékkal jutnak a szervezetbe. Közrejátszhat egy használt tányér a fogadóban vagy a falu kútjának fertőzött vize is."
+        },
+        {
+            "type": "paragraph",
+            "text": "Harapással terjedő betegségek: Ezen betegségek kórokozóinak a vérbe kell kerülniük, hogy szaporodhassanak, s fertőzést okozzanak. Az efféle nyavalyákat legtöbbször patkányok, vadállatok vagy vérszívók terjesztik."
+        },
+        {
+            "type": "paragraph",
+            "text": "Levegő által terjedő nyavalyák: Rendkívül veszélyes és legtöbbször magas szintű betegségek. Kórokozóik a levegőben is életben maradnak; a betegség már azzal is elkapható, ha fertőzött ember fölé hajolunk."
+        },
+        {
+            "type": "paragraph",
+            "text": "Táplálékban rejtőző betegségek: Rögtön két csoportra oszthatóak. Az egyikbe az ételben lévő olyan kórokozókat soroljuk, melyek a bélrendszerből tovább haladva az eddigiekhez hasonló betegségeket okoznak. A másikba pedig azokat, melyek magát az emésztő rendszert károsítják. Ez utóbbi esetet ételmérgezésként is kezelhetjük."
+        }
+    ]
+}

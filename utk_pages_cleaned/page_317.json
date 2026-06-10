@@ -1,0 +1,116 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": false,
+    "section_title": "",
+    "content_blocks": [
+        {
+            "type": "paragraph",
+            "text": "rogy a földre, s csak a fentebb meghatározott számú kör után képes újra megmozdulni. A villámok ellen – mivel az Elemi Mágia egy sajátos mellékágát képezik – Mágiaellenállás nem dobható."
+        },
+        {
+            "type": "paragraph",
+            "text": "A Villámmágián belül három jól elkülöníthető csoportot különböztetünk meg: idézéseket, formázásokat és felruházásokat (bővebben lásd az adott varázslatok leírásánál). A Villámok ellen érvényesülő Mana pont költsége pedig az alkalmazott varázslatok költségének összege."
+        },
+        {
+            "type": "rule",
+            "title": "Villámkeltés (idézés)",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A boszorkánymester ezzel a varázslattal szabad folyást enged testén keresztül a nyers mágikus energiáknak; az időtartam alatt a Villámidézés varázslatot feleannyi Mana pontért lesz képes végrehajtani (csak a Villámidézést, tehát a formázások és a felruházások továbbra is teljes Mana pontba kerülnek és a varázslat nem befolyásolja a varázslás idejét sem, az továbbra is egy szegmens minden egyes É után!)."
+        },
+        {
+            "type": "paragraph",
+            "text": "Ilyenkor a boszorkánymester ujja és fogai között kékes szikrák pattognak, ajkai közül félelmetes morajlás tör elő, karjain és ruháján derengő energiaszálak cikáznak végig."
+        },
+        {
+            "type": "paragraph",
+            "text": "A zabolázatlanul tomboló energiáknak köszönhetően azonban minden egyes É-jére a boszorkánymester is 2 Fp-t veszít (ÉP-t csak Fp-i esetleges elfogytakor). Egy-egy komolyabb (10 É feletti) varázslat után nem ritka, hogy szeme bevérzik, körmei megfeketednek, hajába ősz csíkok vegyülnek vagy bőrén májfoltok jelennek meg."
+        },
+        {
+            "type": "rule",
+            "title": "Villámtagadás (idézés)",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A boszorkánymester megvédheti magát mindenfajta nyers energia sebzésétől. A villám energiája ártalmatlanul eloszlik a környező Manahálóban, és közben semmilyen módon nem károsítja a varázslat használóját, amennyiben erőssége nem haladja meg a védelem Erősségét. Ha mégis meghaladja, csak annyi É-t sebez rajta, amennyivel Erőssége magasabb a védelem Erősségénél (azaz egy 7 É-s Villámvarázs a 3 É-s Villámtagadással felvértezett boszorkánymesterbe csapódva mindössze 4k10-et sebez)."
+        },
+        {
+            "type": "paragraph",
+            "text": "Hátulütője, hogy megidézése után a boszorkánymester sem Villámidézést, sem Villámkeltést nem alkalmazhat, mivel a varázslat nem csak a mások által szabadjára bocsátott energia, hanem a saját rombolói erői ellen is „védelmet” nyújt."
+        },
+        {
+            "type": "rule",
+            "title": "Villámidézés (idézés)",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A Villámidézés formulája segítségével a boszorkánymester felszabadítja mágikus hatalmát, és nyers, formálatlan energiává sűríti. A kéken, ibolyaszínben, olykor fehéren villódzó nyers Mana a bal tenyerében ölt formát, és sercegő, pattogó energiaszikrákat vet, míg a boszorkánymester útjára nem engedi."
+        },
+        {
+            "type": "paragraph",
+            "text": "Ez a varázslat a legtöbb Villámmágia alapja. Ha a boszorkánymester a nyers energiákat varázslat formájába kívánja önteni, akkor először mindig Villámidézéshez kell folyamodnia, majd az így fókuszált erőnek formát adni (ezek a különböző formázás és felruházás formulák)."
+        },
+        {
+            "type": "paragraph",
+            "text": "1-es Erősségű villám idézési költsége 4 Mp, ami minden újabb 4 Mana pontért eggyel Erősíthető, s az Erősítés a varázslási időt is kitolja minden egyes plusz É után 1 szegmenssel. A villám minden É-je 1k10 sebzést okoz."
+        },
+        {
+            "type": "paragraph",
+            "text": "Miután a boszorkánymester felhalmozta a nyers mágikus energiát, formát kell rendelnie hozzá, az idézésnek megfelelő E-vel. Ez egy oly rövid gondolati formula, hogy a külön erre szánt idő gyakorlatilag elhanyagolható."
+        },
+        {
+            "type": "paragraph",
+            "text": "Ezt az idézés befejeztétől számított egy körön belül bármikor megteheti, azonban a tíz szívdobbanás elteltével a boszorkánymesternek döntenie kell: vagy azonnal formába önti a varázslatot, vagy ugyanannyi idő alatt, mint amíg összegyűjtötte, most lassan visszaáramoltatja a Manahálóba. Ebben az esetben a varázslathoz felhasznált Mana pontok értelemszerűen ugyanúgy elvesznek, mintha felhasználta volna egy varázslathoz őket."
+        },
+        {
+            "type": "paragraph",
+            "text": "Amennyiben ezt nem teszi meg, úgy a Manát fogva tartó kötés felszakad, és az energia elszabadul (lásd Kisülés varázslat)."
+        },
+        {
+            "type": "rule",
+            "title": "Kisülés (formázás)",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A boszorkánymester a Villámidézéssel tenyerébe gyűjtött lüktető energiát az összegyűjtés befejeztével hirtelen szabadon engedi. Mivel a mágikus energiákat befolyásoló tartó varázs megtörik, a nyers Mana robbanásszerűen szétveti magát, és az erősségnek megfelelően sebez mindenkit, aki a robbanás pillanatában 5 láb sugarú körön belül tartózkodik (magát a boszorkánymestert is!)."
+        },
+        {
+            "type": "paragraph",
+            "text": "Ahhoz, hogy a boszorkánymester ezt elkerülje, és irányított módon kisüthesse a tenyerében felhalmozódott energiát, meg kell érintenie egy kiszemelt áldozatot – ami harci helyzetben természetesen sikeres támadást igényel. Találat esetén az áldozat annyiszor 1k10 Sp-t veszít, amennyi az előzőleg végrehajtott Villámidézés Erőssége."
+        },
+        {
+            "type": "rule",
+            "title": "Villámtűk (formázás)",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A varázslat során a boszorkánymester – a Villámidézéssel korábban már a kezébe „összegyűjtött” – sercegő energiagömbből több tucat apró villámot idéz meg, melyeket kinyújtott tenyeréből lőhet ki. Egyszerre annyi ellenfél támadható, amennyi az idézett villám Erőssége. A tűkkel nehéz pontosan célozni, csak az irány adható meg, aztán a többi már a véletlen dolga."
+        },
+        {
+            "type": "paragraph",
+            "text": "Minden kiszemelt áldozat – ha érzékeli a veszélyt – megpróbál félreugrani a villámtűk elől, ám kísérletét csak akkor koronázza siker, ha eredményes Érzékelés és Gyorsaságpróbát dob. Ez esetben semmilyen sebzést nem szenved el. Ha bármelyik Tulajdonságpróba kudarcot vallott, az áldozatot annyi tű találja el, amennyivel a próbát elvetette"
+        }
+    ]
+}

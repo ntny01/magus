@@ -1,0 +1,189 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": true,
+    "section_title": "Tűzhányók, vulkánok, hőkutak",
+    "content_blocks": [
+        {
+            "type": "paragraph",
+            "text": "Csak a tűzvarázslók képesek érzékelni és kiaknázni a más varázstudók által észlelhetetlen és használhatatlan mana-források, a tűzhányók és hőkutak erejét. A mágiatudósok máig értetlenül állnak a szintén godoni eredetű képesség előtt – csak annyit tudnak bizonyosan, hogy az erős hőt és fényt sugárzó természeti jelenségek összegyűjtik a Világegyetemet átható mágikus energiát. A legbölcsebbek csak annyit tesznek hozzá, hogy a Felföldet, az ősi Godon földjét napjainkban is számtalan tűzhányó és hőkút fűti. Így aztán nem meglepő, ha egyes renegát tűzvarázslók az alvó tűzhányók lejtőjén építenek házat."
+        },
+        {
+            "type": "paragraph",
+            "text": "Az alábbi táblázat a tűzhányók erősségéről tudósít:"
+        },
+        {
+            "type": "table",
+            "headers": [
+                "A vulkán fajtája",
+                "Erősség (E)"
+            ],
+            "rows": [
+                [
+                    "Több mint 3000 éve alvó – meddő",
+                    "0"
+                ],
+                [
+                    "Több mint 2000 éve alvó",
+                    "1"
+                ],
+                [
+                    "Több mint 1000 éve alvó",
+                    "2"
+                ],
+                [
+                    "Több mint 500 éve alvó",
+                    "3"
+                ],
+                [
+                    "Több mint 100 éve alvó",
+                    "4"
+                ],
+                [
+                    "Több mint 50 éve alvó",
+                    "5"
+                ],
+                [
+                    "Több mint 20 éve alvó",
+                    "6"
+                ],
+                [
+                    "Több mint 5 éve alvó",
+                    "7"
+                ],
+                [
+                    "Aktív vulkán",
+                    "12"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "Az 500 éve alvó azt jelenti, hogy az adott vulkán 500 éve nem tört ki. A játék szempontjából minden olyan tűzhányót aktívnak nevezünk, mely 5 évnél nem régebben tört ki utoljára, vagy éppen működik. A fenti erősségek a kürtő 100 ynevi láb sugarú körzetére vonatkoznak, onnan távolodva minden további 100 ynevi lábbal 1-gyel csökken az erősség. Például egy 6-os erősségű vulkánnak 600 lábnyi a hatósugara. A hatósugarak nem mindig érnek el a vulkán lábán túlra, ez a tűzhányó alakjától is függ – a KM saját belátása szerint döntse el a kérdéses vulkán fajtáját."
+        },
+        {
+            "type": "paragraph",
+            "text": "Az olyan Erősségű hőkutak, hőforrások, melyek képesek maguk körül energiamezőt létrehozni, ritkák. Közös jellemzőjük a magas hőfok és a nagy nyomás. Némelyik csak forró levegőt áraszt, de akad vizet okádó gőzforrás is. A Délvidék legnagyobb hőkútja, a Kanor a Felföldön található, Erőssége 5-ös. A kisebb kutak ereje mind ez alatt marad. A KM egyéni belátása szerint döntsön a ritka természeti jelenségek erejéről, ám miheztartás végett: Yneven az eddig megtalált és ismert hőkutak 50 %-ának Erőssége még az 1-est sem éri el. A hőforrások maximális Erőssége 10 ynevi láb sugarú körzetükre vonatkozik, innen minden további 10 ynevi lábbal 1-gyel csökken."
+        },
+        {
+            "type": "paragraph",
+            "text": "A tűzvarázsló, a többi varázshasználó kaszthoz hasonlóan, képes különleges helyeken gyorsabban feltölteni elméjét az ott tomboló többlet energiákból. A mana-források közül a vulkánok és a hőkutak erejét egyedül a tűzvarázslók képesek érzékelni és felhasználni. Ezek két módszerrel aknázhatók ki: egyrészt a minden tűzvarázsló által alkalmazott hagyományos Godoni transzszal, valamint a Tűzelvonással, melyet csak a Fény Ösvényén járók ismernek."
+        },
+        {
+            "type": "paragraph",
+            "text": "A Tűzelvonás és a Tűzgyűjtés az érintett területen az amúgy elengedhetetlen – minimum 1 E erejű – tűz nélkül is alkalmazható. A mana-forrás e tekintetben Erősségének megfelelő Erősségű (E) tüzet pótol. Tűzgyűjtés során annyi Mana pont gyűjthető be 1 perc alatt, amennyi a tűzvarázsló Tapasztalati szintjének és a mana-forrás aktuális erősségének összege. Ha a közelben (fényerősségen belül) még tűz is lobog, annak Erőssége is hozzáadható a kinyert Mana pontok számához."
+        },
+        {
+            "type": "paragraph",
+            "text": "Lángrobbanás"
+        },
+        {
+            "type": "paragraph",
+            "text": "Minden tűzvarázsló halálakor képes Tűzkitörésben felszabadítani testi és szellemi energiáit. Ezen különleges képességét 1 kör hosszú összpontosítással ébresztheti fel. Mindaddig, amíg újabb összpontosítással el nem altatja, a halálakor – mikor Ép-i elfogynak, vagy más módon halála – bekövetkezik a Tűzkitörés, melynek erőssége a következőképpen alakul:"
+        },
+        {
+            "type": "rule",
+            "title": "Tűzkitörés erőssége",
+            "headers": [],
+            "rows": [
+                [
+                    "1 Tsz = 1 E"
+                ],
+                [
+                    "3 Mp = 1 E"
+                ],
+                [
+                    "5 Vp = 1 E"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "Lángteremtés"
+        },
+        {
+            "type": "paragraph",
+            "text": "A tűzvarázslók különleges képessége, hogy csettintés kíséretében Mana pont költség nélkül képesek apró lángnyelvet teremteni ujjuk hegyén. A lángnyelv – Őselemi Tűzről lévén szó – tápláló anyagok híján is ég, ám mint az eddigiekből kiderült, az éghető anyagokat meggyújtja, és ezáltal akár komolyan el is harapódzhat. Ilyenkor a tűz azután is megmarad, hogy a varázslat időtartama lejár és a teremtett lángnyelv eltűnik."
+        },
+        {
+            "type": "paragraph",
+            "text": "Alapvető Tűzmágia"
+        },
+        {
+            "type": "paragraph",
+            "text": "Az alábbi varázslatokat az Ordani Tűzvarázsló Iskola alapvető jellegűnek tekinti. Mint a tűzvarázslók mondják, ez az első lecke, melyet minden novíciusnak el kell sajátítania, ha a Rendhez kíván tartozni. Aki az Alapvető Tűzmágiát végrehajtására képes, már tűzvarázslónak tekintheti magát – ha nem is a legkülönbek közül valónak."
+        },
+        {
+            "type": "paragraph",
+            "text": "Fellobbanó láng"
+        },
+        {
+            "type": "rule",
+            "title": "Varázslat adatai",
+            "headers": [],
+            "rows": [
+                [
+                    "Mana pont: 5"
+                ],
+                [
+                    "Varázslás ideje: 1 kör"
+                ],
+                [
+                    "Időtartam: 6 kör (1 perc)"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A varázslat befejeztekor a tűzvarázsló a Zónáján belül eső területen tízszer annyi pontot jelölhet meg, mint amennyi a Tapasztalati szintje. Ezen pontok mindegyikén apró Őstűz lángnyelv lobban fel, s a varázslat időtartama alatt éghető anyag híján sem enyészik el."
+        },
+        {
+            "type": "paragraph",
+            "text": "Időzített tűzteremtés"
+        },
+        {
+            "type": "rule",
+            "title": "Varázslat adatai",
+            "headers": [],
+            "rows": [
+                [
+                    "Mana pont: 18"
+                ],
+                [
+                    "Varázslás ideje: 2 perc"
+                ],
+                [
+                    "Időtartam: 6 kör (1 perc)"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A varázslat mindenben hasonlít a Tűzteremtésre. A különbség az, hogy az időzített lángteremtés varázslathoz hasonlóan a varázsló megjelölheti az időpontot (egy másodperctől az örökkévalóságig), amikor a varázslat aktivizálódik, és a tűz felcsap. A helyet bal hüvelykujjának érintésével kell megjelölnie, s ahol halovány, lángnyelvű mintázó varázsejel keletkezik."
+        },
+        {
+            "type": "paragraph",
+            "text": "Tűztáncoltatás"
+        },
+        {
+            "type": "rule",
+            "title": "Varázslat adatai",
+            "headers": [],
+            "rows": [
+                [
+                    "Mana pont: 4"
+                ],
+                [
+                    "Varázslás ideje: 1 szegmens"
+                ],
+                [
+                    "Időtartam: 6 kör (1 perc)"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A varázslás befejeztével a tűzvarázsló a Zónáján belül eső területen képes lesz minden természetes tüzet befolyásolni. (Természetesnek minősül az olyan tűz, melynek lángjait"
+        }
+    ]
+}

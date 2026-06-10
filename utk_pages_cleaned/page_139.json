@@ -1,0 +1,190 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": true,
+    "section_title": "Harctéri gyakorlat",
+    "content_blocks": [
+        {
+            "type": "rule",
+            "text": "A gyakorlott alkalmazó az őrjöngés ideje alatt nem esik össze, ha esetleg ÉP-i nullára csökkennek, csak ÉP-i elfogytával veszíti el az eszméletét.",
+            "title": "Őrjöngés 2. fok",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "A képzettség ezen fokán a birtokosa tudatát annyira betölti a cél, az ellenfelek legyőzésének vágya, hogy saját testét sem kímélő hevület feszíti izmait, minden közelharci fegyverre sebzésre kockánként +1 pontot kap.",
+            "title": "Őrjöngés 3. fok",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "Az efféle harci tomboló a Harc gyűlölettel módosítókat duplán kapja meg, illetve szenvedi el.",
+            "title": "Őrjöngés 4. fok",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "A karakter harci megszállottságában szélvészként kaszabol és öl, közelharci fegyverei a támadások idejét illetőleg eggyel gyorsabb kategóriába esnek, azaz például egy kétkezes csatabárddal kétszer, egy hosszúkarddal háromszor támad egy teljes támadással töltött harci kör alatt.",
+            "title": "Őrjöngés 5. fok (fegyver gyorsaság)",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "(II – Gyorsaság, Ügyesség, Érzékelés)",
+            "title": "Harctéri gyakorlat követelmények",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "A képzettség birtokosa nem csak vívótermekben, illetve párbajokban fejlesztette harci tudását, hanem valódi csatamezők öldöklő forgatagában is tapasztalatokat szerzett. Nem jön zavarba, ha többen törnek ellene, illetve tudja, miként kezelje a derékig érő víz, a csúszós pallók, a magasabbról hadakozó ellenfél vagy bármely más harci helyzet miatt kialakult kellemetlen helyzeteket. A képzettség nem alkalmazható a sötétség, köd, nagy zaj vagy bármely, az érzékszerveket tompító negatív módosító leküzdésére, ellenben semlegesíthetőek vele a karakter ellen alkalmazott alakzatokból eredő negatív módosítók.",
+            "title": "Harctéri gyakorlat leírás",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "A karakter már gyakorlott az igazi, éles összecsapásokban. Minden negatív Harcérték módosító, mely valamely számára hátrányos helyzetből eredően sújtaná, érvényét veszti egyetlen körre, ha a karakter sikeres Tulajdonságpróbát tesz. Próbát körönként lehet tenni.",
+            "title": "Harctéri gyakorlat 1. fok",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "A gyakorlott alkalmazó még jobban képes elkerülni a számára hátrányos helyzeteket, illetve csökkenteni annak hatásait. A képzettség ezen fokán az alkalmazót sújtó módosítók figyelmen kívül hagyhatóak egy sikeres Tulajdonságpróbát követően, egészen addig míg a karakter nem óhajt haladni a „csatamezőn”.",
+            "title": "Harctéri gyakorlat 2. fok",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "A képzettség ezen fokán a birtokosa már igazi veterán, az őt sújtó módosítók már akkor is figyelmen kívül hagyhatóak, ha a karakter mozog, illetve immáron próbáját is +1 módosítóval dobhatja.",
+            "title": "Harctéri gyakorlat 3. fok",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "Az ezen a szinten képzett harcos a vonatkozó Tulajdonságpróbát immáron +2 módosítóval teheti, illetve a korábbiakhoz képest már nem, hanem plusz két fővel is képes levonások nélkül felvenni a harcot.",
+            "title": "Harctéri gyakorlat 4. fok",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "A karakter a csatamezők réme. Képtelenség megszorítani, hiába is tör ellene akár egy kisebb tömeg. Mozdulatai kiszámítottak, nincs olyan hadrend, mely legyűrné.",
+            "title": "Harctéri gyakorlat 5. fok (leírás)",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "A karakter a képzettség ezen szintjén már +2 HM-et kap.",
+            "title": "Harctéri gyakorlat HM bónusz",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "A karakter a képzettség ezen szintjén már +3 HM-et kap.",
+            "title": "Harctéri gyakorlat HM bónusz",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "A karakter harci gyakorlata és tapasztalatai miatt már képes rendszerezni ellenfeleiről, saját harcmodoráról szerzett tudásanyagát, így minden szintlépéskor +1 HM-et kap.",
+            "title": "Harctéri gyakorlat HM bónusz (szintlépéskor)",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "(IV – Erő, Gyorsaság, Ügyesség, Akaraterő)",
+            "title": "Harcművészet követelmények",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "A képzettség nem csak harcmodor, de a test-test elleni küzdelem és a harcművész fegyverek használatának tudománya, a lélek összpontosító képességének kifejlesztése. Ezen képzettség segítségével képes a karakter testét és harcművész fegyvereit a Sárkány-harc megkövetelte rendben és harmóniában alkalmazni. Nem Slan felhasználók esetén ez a képzettség teszi igazán veszedelmessé ökölcsapásaikat és rúgásaikat.",
+            "title": "Harcművészet leírás",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "Emellett az ilyen tapasztalatokra szert tett harcos már képes önállóan, a csetepaték forgatagában szerzett gyakorlatát hasznosítani és tovább fejleszteni, emiatt magasabb szinteken plusz HM-ekkel növelni harci képességeit.",
+            "title": "Harcművészet fejlődés",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "A képzettséget stílusonként kell felvenni pl.: Harcművészet (Avad-ka-kinito) 2. fok. Ekkor a karakter az adott szinten képes a stílusirányzat tartalmazta összes fegyver, illetve pusztakezes technika alkalmazására. Azonban 3. foktól a Fegyverhasználat képzettségéhez hasonlóan itt is el kell dönteni, hogy a stíluson belül oktatott fegyverek közül, melyiket, esetleg a fegyvertelen harcművészetet kívánja-e tanulni a karakter. Természetesen a képzettség nyújtotta bónuszok is csak ezen fegyverre, vagy a fegyvertelen technikára vonatkoznak, pl. Harcművészet 4. fok (tonfa).",
+            "title": "Harcművészet felvétele",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "A kardművész karakterek (Slan kard és Slan tőr) szintén ezen képzettség segítségével képes a Sárkány-harcban alkalmazni – ezért forgatásukhoz fegyverhasználat képzettség nem szükséges.",
+            "title": "Slan kard és tőr használat",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "A tanuló már csak a formagyakorlatok és iskolánként eltérő szellemiség alapjaival ismerkedik, nem sújtják már a képzetlenségből eredő negatív módosítók",
+            "title": "Harcművészet 1. fok",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "A karakter megtanult harcolni az adott stílusban, már megkapja a fegyver vagy a stílus harcértékeit, innentől kezdve az így megnövelt harcértékeivel vesz részt az összecsapásokban. (A pusztakezes harc sebzésére vonatkozó stílusok sebzéseit lásd az iskolák leírásánál a 77. oldalon).",
+            "title": "Harcművészet 2. fok",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "A karakter az összecsapásokban a Fegyverhasználatnál ismertetett módon, a képzettség szintjétől függően, a harcművészetben alkalmazott fegyver méretkategóriája szerint vesz részt. Azonban e fegyverek a Harcművészet képzettség alkalmazása miatt eggyel magasabb méretkategóriájúnak számítanak, mint ami fel van tüntetve az adott harceszköznél a Fegyverek c. táblázatban.",
+            "title": "Harcművészet fegyver méretkategória",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "Tehát, ha egy lándzsát fegyverhasználat képzettséggel forgat egy városi őr, akkor ő egy 5. méretkategóriájú fegyverrel harcol. Míg ugyanez a lándzsa egy erre specializálódott harcművész kezében már 6. méretkategóriájúnak számít.",
+            "title": "Harcművészet fegyver méretkategória példa",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "A képzettség birtokosa már veszedelmes harcművész, a fegyveres vagy pusztakezes harcértékeihez KÉ: +2, TÉ: +5, VÉ:+5 módosító járul.",
+            "title": "Harcművészet 3. fok",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "A képzettség birtokosa több ellenfél ellen felvenni a harcot, mint arra fegyverzete, és harcmodora képessé tenné. Tehát, eggyel több ellenféllel szemben is képes levonások nélkül harcolni, mint ahányat a Túlérő szabályánál a Harcrendszer c. fejezet 174. oldalán feltüntettünk.",
+            "title": "Harcművészet több ellenfél elleni harc",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "Emellett abban az esetben, ha fegyvert nem alkalmaz a képzettség birtokosa, puszta teste már akkor is 2. méretkategóriába számít, s a 3. foktól kezdve a Fegyverhasználatnál leírtak szerint kapja a bónuszokat.",
+            "title": "Harcművészet pusztakezes harc méretkategória",
+            "headers": [],
+            "rows": []
+        }
+    ]
+}

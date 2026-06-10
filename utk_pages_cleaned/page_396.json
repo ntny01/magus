@@ -1,0 +1,146 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": true,
+    "section_title": "A drágakő segítségével készített varázstárgyak",
+    "content_blocks": [
+        {
+            "type": "paragraph",
+            "text": "A drágakő segítségével készített varázstárgyak a leghatalmasabbak mind között. Gyakorlatilag minden varázstárgy elkészíthető drágakő felhasználásával, csak ki kell választani a megfelelő követ."
+        },
+        {
+            "type": "paragraph",
+            "text": "Igaz-drágakőként hatot tartanak számon – a gyémántot, a smaragdot, a rubint, a zafírt, a feketeavagy sonioni-opált és az igazgyöngyöt –, de a legtöbb valós és alkimista drágakő névvel illeti az összes olyan kristályt, amely mágikus tulajdonsággal bír. Kimondhatjuk tehát, a drágaköveket az különbözteti meg a közönséges kövektől, hogy képesek a mágikus energiák fókuszálására. Ezt rendkívüli és egyedi kristályrajzolatuk teszi lehetővé: a rácsszerkezetükben összegyűjtik környezetükből a mágikus energiát és tárolják avagy kisugározzák azt. Ibn al Beithar, dzsad drágakőmágus és alkimista összefoglaló művében az Al Ahmada Beninú-ban (A drágakövek varázsa) ír erről. Megállapítja, hogy egyes kövek nem csak nem csak maguktól fókuszálják a környezeti energiákat, hanem fel is tölthetőek mágikus energiákkal (Mana pontokkal), miáltal különféle mágikus hatások tárolására és kisugárzására válnak képessé. Erre elméletileg minden drágakő alkalmas, gyakorlatban azonban csak a különlegesen tiszta és értékes darabok. Drágakőmágiára csak különlegesen tiszta, jó minőségű drágakövek használhatóak; értékük legalább tízszerese az ugyanolyan fajta, de közönséges kövekének."
+        },
+        {
+            "type": "paragraph",
+            "text": "A drágakövek és féldrágakövek mágikus mintázatukkal, amikor varázserőt áramoltatunk át rajtuk a Felruházás varázslat segítségével, az áramló mágikus erőket az adott kő meghatározott formába rendezik. Mintegy helyettünk alakítva a megfelelő módon, másképpen, helyettünk varázsolva."
+        },
+        {
+            "type": "paragraph",
+            "text": "A különböző fajta drágakövek különböző mágikus hatások gyakorlására alkalmasak. Tárgykörnek nevezzük azt a területet, témát, mellyel kapcsolatban a kő mágikus hatást képes tárolni és kisugározni. Az alábbi felsorolás megadja, melyik drágakő, milyen tárgykörben érintett, azaz mivel kapcsolatos varázstárgyat lehet belőle készíteni."
+        },
+        {
+            "type": "table",
+            "headers": [
+                "Drágakő",
+                "Tárgykör"
+            ],
+            "rows": [
+                [
+                    "Gyémánt",
+                    "élőholtak, mérgek, betegségek"
+                ],
+                [
+                    "Igazgyöngy",
+                    "gyógyítás"
+                ],
+                [
+                    "Rubin",
+                    "általános mágikus kő"
+                ],
+                [
+                    "Smaragd",
+                    "általános mágikus kő"
+                ],
+                [
+                    "Zafír",
+                    "mágiaellenállás, ellenvarázs"
+                ],
+                [
+                    "Fekete (sonioni) opál",
+                    "varázslat immunitás"
+                ],
+                [
+                    "Akvamarin",
+                    "őselemek* (Ősvíz)"
+                ],
+                [
+                    "Alexandrit",
+                    "démonok"
+                ],
+                [
+                    "Borostyán",
+                    "betegségek"
+                ],
+                [
+                    "Cirkon",
+                    "idő, időmágia"
+                ],
+                [
+                    "Füstkő/varc",
+                    "tájékozódás, égtájak, térmágia"
+                ],
+                [
+                    "Gránát",
+                    "őselemek* (Őstűz, tűz)"
+                ],
+                [
+                    "Hegyikristály",
+                    "általános mágikus kő"
+                ],
+                [
+                    "Holdkő",
+                    "őselemek* (Őslevégő), kísértetek"
+                ],
+                [
+                    "Jaspis",
+                    "alakváltók, kóborló dögök, éji rémei"
+                ],
+                [
+                    "Jet",
+                    "mérgek"
+                ],
+                [
+                    "Kalcedon",
+                    "őselemek* (Ősföld)"
+                ],
+                [
+                    "Krizoberill",
+                    "lélek"
+                ],
+                [
+                    "Krizopráz",
+                    "láthatatlanság, észrevétlenség"
+                ]
+            ]
+        },
+        {
+            "type": "table",
+            "headers": [
+                "Drágakő",
+                "Tárgykör"
+            ],
+            "rows": [
+                [
+                    "Nefrit",
+                    "őselemek (Elemi Erő)"
+                ],
+                [
+                    "Obszidián",
+                    "nekromancia"
+                ],
+                [
+                    "Opál",
+                    "természetes anyagok mágiája"
+                ],
+                [
+                    "Peridot",
+                    "asztrál"
+                ],
+                [
+                    "Szerpentin",
+                    "mentál"
+                ],
+                [
+                    "Topáz",
+                    "légieség"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "* A kő vonatkozik az Őselem hatására, a Paraelemre is"
+        }
+    ]
+}

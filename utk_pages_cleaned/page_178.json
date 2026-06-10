@@ -1,0 +1,225 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": false,
+    "section_title": "",
+    "content_blocks": [
+        {
+            "type": "rule",
+            "title": "Életerő (Ép)",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Maximális Életerő (max. Ép)",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Ép veszteség",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Fájdalomtűrés (Fp)",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Maximális Fájdalomtűrés (max. Fp)",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Max. Fp számítása",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Max. Fp növekedése",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Fp veszteség és eszméletvesztés",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Életerő pont (Ép) részletes szabályok",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Ép csökkenés hatásai",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Ép és Fp kapcsolat",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Ép sérülés és kezdeményezés",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Fájdalomtűrés pont (Fp) részletes szabályok",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Fp módosítók: Állóképesség és Akaraterő",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Fp növekedés szintlépéskor",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Fp számítás és növelés",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Fp csökkenés hatásai",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Fp korlát",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Eszméletvesztés",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Eszméletvesztés: ismételt próba",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Gyógyulás",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Gyógyulás körülményei",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "table",
+            "title": "Gyógyulási idők",
+            "headers": [
+                "Cselekvés",
+                "1 Fp",
+                "1 Ép"
+            ],
+            "rows": [
+                [
+                    "Pihenés ágyban fekve, szobában",
+                    "1 óra",
+                    "0,5 nap"
+                ],
+                [
+                    "Pihenés fekve, táborban – tető alatt",
+                    "1 óra",
+                    "1 nap"
+                ],
+                [
+                    "Alvás táborozáskor – szabad ég alatt",
+                    "1 óra",
+                    "–"
+                ],
+                [
+                    "Utazás szekéren vagy hordágyon",
+                    "2 óra",
+                    "2 nap"
+                ],
+                [
+                    "Könnyű séta, léptetés lovon",
+                    "3 óra",
+                    "4 nap"
+                ],
+                [
+                    "Erőltetett séta, lovaglás",
+                    "6 óra",
+                    "–"
+                ]
+            ]
+        }
+    ]
+}

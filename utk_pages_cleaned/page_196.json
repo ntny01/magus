@@ -1,0 +1,504 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": false,
+    "section_title": "",
+    "content_blocks": [
+        {
+            "type": "table",
+            "headers": [
+                "Jármű",
+                "Ár"
+            ],
+            "rows": [
+                [
+                    "hordszék",
+                    "10a"
+                ],
+                [
+                    "kocsi",
+                    "12a"
+                ],
+                [
+                    "kordé",
+                    "3e"
+                ],
+                [
+                    "kutyaszán",
+                    "8e"
+                ],
+                [
+                    "lovasszán",
+                    "5a"
+                ],
+                [
+                    "társzekér",
+                    "13a"
+                ],
+                [
+                    "taliga",
+                    "50r"
+                ],
+                [
+                    "utazószekér, kétkerekű",
+                    "5a"
+                ],
+                [
+                    "utazószekér, négykerekű",
+                    "15a"
+                ],
+                [
+                    "szekér kerék",
+                    "40r"
+                ],
+                [
+                    "postakocsi, naponta",
+                    "60r–1e"
+                ]
+            ]
+        },
+        {
+            "type": "table",
+            "headers": [
+                "Ruha",
+                "Ár"
+            ],
+            "rows": [
+                [
+                    "bakancs",
+                    "20r"
+                ],
+                [
+                    "cipő",
+                    "1e"
+                ],
+                [
+                    "csizma, lovagló",
+                    "3e"
+                ],
+                [
+                    "csizma, gyalogos",
+                    "80r"
+                ],
+                [
+                    "csuklya",
+                    "8r"
+                ],
+                [
+                    "derékszíj",
+                    "5r"
+                ],
+                [
+                    "dreggis",
+                    "2a"
+                ],
+                [
+                    "emáme",
+                    "6r"
+                ],
+                [
+                    "gatya",
+                    "3r"
+                ],
+                [
+                    "harisnya",
+                    "6r"
+                ],
+                [
+                    "incogno",
+                    "1e"
+                ],
+                [
+                    "ing, nemesi",
+                    "2e"
+                ],
+                [
+                    "ing, paraszti",
+                    "5r"
+                ],
+                [
+                    "kapca",
+                    "1r"
+                ],
+                [
+                    "kabát",
+                    "2e"
+                ],
+                [
+                    "kaftán",
+                    "5e"
+                ],
+                [
+                    "kalap",
+                    "150r"
+                ],
+                [
+                    "köntös",
+                    "3e"
+                ],
+                [
+                    "köpeny, selyem",
+                    "2a"
+                ],
+                [
+                    "köpeny, szövet",
+                    "1e"
+                ],
+                [
+                    "köpeny, prém",
+                    "5a"
+                ],
+                [
+                    "kesztyű, nemesi",
+                    "3e"
+                ],
+                [
+                    "kesztyű, vívó",
+                    "1e"
+                ],
+                [
+                    "mellény",
+                    "30r"
+                ],
+                [
+                    "nadrág",
+                    "20r"
+                ],
+                [
+                    "öv",
+                    "20r"
+                ],
+                [
+                    "pantalló",
+                    "150r"
+                ],
+                [
+                    "papucs",
+                    "20r"
+                ],
+                [
+                    "sapka",
+                    "5r"
+                ],
+                [
+                    "saru",
+                    "3r"
+                ],
+                [
+                    "szandál",
+                    "4r"
+                ],
+                [
+                    "tunika",
+                    "1e"
+                ]
+            ]
+        },
+        {
+            "type": "table",
+            "headers": [
+                "Szolgáltatás",
+                "Ár"
+            ],
+            "rows": [
+                [
+                    "abrak, egynapi",
+                    "4r"
+                ],
+                [
+                    "ebéd, vacsora",
+                    "5r"
+                ],
+                [
+                    "istálló",
+                    "2r"
+                ],
+                [
+                    "szoba, közös háló",
+                    "3r"
+                ],
+                [
+                    "szoba, külön ágy",
+                    "7r"
+                ],
+                [
+                    "szoba, egyszemélyes",
+                    "10r"
+                ],
+                [
+                    "szoba, díszes",
+                    "30r"
+                ],
+                [
+                    "szoba, lakosztály",
+                    "1e"
+                ],
+                [
+                    "fürdő",
+                    "3r"
+                ]
+            ]
+        },
+        {
+            "type": "table",
+            "headers": [
+                "Fűszer",
+                "Ár"
+            ],
+            "rows": [
+                [
+                    "közönséges",
+                    "2r"
+                ],
+                [
+                    "ritka",
+                    "7r"
+                ],
+                [
+                    "különleges",
+                    "2e"
+                ]
+            ]
+        },
+        {
+            "type": "table",
+            "headers": [
+                "Élelmiszer",
+                "Ár"
+            ],
+            "rows": [
+                [
+                    "bor, kupa",
+                    "1r"
+                ],
+                [
+                    "gyümölcsök",
+                    "1-5r"
+                ],
+                [
+                    "hal",
+                    "1r"
+                ],
+                [
+                    "hús, egy ynevi font",
+                    "2r"
+                ],
+                [
+                    "kenyér",
+                    "1r"
+                ],
+                [
+                    "likőr",
+                    "6r"
+                ],
+                [
+                    "lóre",
+                    "1r"
+                ],
+                [
+                    "méz, csupor",
+                    "4r"
+                ],
+                [
+                    "pálinka, üveg",
+                    "4r"
+                ],
+                [
+                    "predoci óbor",
+                    "20r"
+                ],
+                [
+                    "1 fürtös",
+                    "50r"
+                ],
+                [
+                    "2 fürtös",
+                    "1e"
+                ],
+                [
+                    "3 fürtös",
+                    "1a"
+                ],
+                [
+                    "4 fürtös",
+                    "5a"
+                ],
+                [
+                    "5 fürtös",
+                    "2r"
+                ],
+                [
+                    "Sajt, egy ynevi font",
+                    "2r"
+                ],
+                [
+                    "Só, tömb",
+                    "1r"
+                ],
+                [
+                    "sör, korsó",
+                    "1r"
+                ],
+                [
+                    "szalonna (oldal)",
+                    "5r"
+                ],
+                [
+                    "tej, kancsó",
+                    "1r"
+                ],
+                [
+                    "tojás, tucat",
+                    "1r"
+                ],
+                [
+                    "vadhús, egy ynevi font",
+                    "4r"
+                ],
+                [
+                    "vaj, egy ynevi font",
+                    "2r"
+                ],
+                [
+                    "zöldség, egy csomó",
+                    "1-3r"
+                ]
+            ]
+        },
+        {
+            "type": "table",
+            "headers": [
+                "Tétel",
+                "Ár"
+            ],
+            "rows": [
+                [
+                    "hímszajha",
+                    "5e"
+                ],
+                [
+                    "közönséges örömlány",
+                    "25r-1e"
+                ],
+                [
+                    "Lótusz Leányai",
+                    "1a"
+                ],
+                [
+                    "alidari nő",
+                    "10000a"
+                ]
+            ]
+        },
+        {
+            "type": "table",
+            "headers": [
+                "Szolgáltatás",
+                "Ár"
+            ],
+            "rows": [
+                [
+                    "bába",
+                    "3r"
+                ],
+                [
+                    "borbély",
+                    "1r"
+                ],
+                [
+                    "cipész",
+                    "2r"
+                ],
+                [
+                    "fáklyahordozó",
+                    "1r/óra"
+                ],
+                [
+                    "gyaloghintó",
+                    "10r/óra"
+                ],
+                [
+                    "ispotály, naponta",
+                    "5r"
+                ],
+                [
+                    "írnok",
+                    "5r/alkalom"
+                ],
+                [
+                    "jogtudor",
+                    "1e/alkalom, 5e-10a/per"
+                ],
+                [
+                    "kengyelfutó",
+                    "1e/alkalom"
+                ],
+                [
+                    "küldönc",
+                    "1r/alkalom"
+                ],
+                [
+                    "mosónő",
+                    "1r"
+                ],
+                [
+                    "révkalauz",
+                    "1e"
+                ],
+                [
+                    "szabó",
+                    "10r + anyagköltség"
+                ],
+                [
+                    "színház",
+                    "3r-1e"
+                ],
+                [
+                    "takarítónő",
+                    "1r"
+                ],
+                [
+                    "testőr, naponta",
+                    "1e"
+                ],
+                [
+                    "városkalauz",
+                    "2a"
+                ],
+                [
+                    "zenész",
+                    "3r/óra"
+                ]
+            ]
+        },
+        {
+            "type": "table",
+            "headers": [
+                "Esküvő típusa",
+                "Ár"
+            ],
+            "rows": [
+                [
+                    "egyszerű szertartás",
+                    "5r"
+                ],
+                [
+                    "lakodalom",
+                    "2a"
+                ],
+                [
+                    "nemesi esküvő",
+                    "25a"
+                ],
+                [
+                    "főúri mennyegző",
+                    "350a"
+                ],
+                [
+                    "királyi nász",
+                    "1000a"
+                ]
+            ]
+        }
+    ]
+}

@@ -1,0 +1,92 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": true,
+    "section_title": "Alidaxi boszorkányrend",
+    "content_blocks": [
+        {
+            "type": "paragraph",
+            "text": "Emellett a Masgar környéki kisebb városokban is központokat létesítettek, együttműködve a helyi tolvajklánokkal és Noir papokkal. Kölcsönösen segítették egymás tevékenységét, a Noir „egyház” védelmét és támogatását, a tolvajok információt és fegyvereseket kínáltak a boszorkányok bajtalanításáért és mágikus segítségéért cserébe. Minden tökéletes összhangban működött; amit a nyers férfierő vagy a besurranó tolvajok sem érhettek el, ott a boszorkányok érzelmeket manipuláló mágiája megtette a magáét. A Stella Prosylens, mely érv nyelven hullócsillagot jelent, azóta is viszonylagos nyugalomban működik. Legfőbb céljukat Noir vallásának terjesztését és észak politikai elitje feletti ellenőrzés megszerzését nagyon óvatosan és lépésenként haladva igyekeznek megvalósítani, mivel Tharr egyházán és az északi Inkvizítorok Szövetségén kívül vetélytársaikkal is számolniuk kell, például a Liviniai Gyülekezet beavatottaival.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "I. A szekta beavatottjai Noir kegyelméből rendelkeznek egyfajta jövendölátással, melyet a szervezet leírásában ismertettünk. Ennek működéséről minden esetben a KM jogköre dönt. (Játéktechnikailag ez annyit jelent, hogy a karakter induláskor megkapja a Sugallat Hátteret.) II. A szervezet tapasztaltabb tagjai (5. Tsz. felett) beavatást nyerhetnek Noir misztériumaiba. A felszentelés során Noir kegyeltjévé válnak, megkapják ingyenesen a Kegyelmet Hátteret, és innentől kezdve, ha bírnak a Vallásismeret képzettség (Noir) 3. fokával és megfelelő mennyiségű Kegy ponttal, akkor képessé válnak a Lélek és Halál szférák fohászainak megidézésére.",
+            "title": "A Stella Prosylens tagjainak különleges képességei:",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "Idinal hegye már a Negyedkorban is szent helynek számított: a crantaiak sámánjai ajánlották az ősök figyelmébe vízeséseinek dübörgő árnyékában vagy épp a barlangtavak sötétjében; hogy a kyrek aztán a győztesekre jellemző magabízással írják át a történelmet és rontsák le az előttük járók szent helyeit, hogy Morgena katedrálisait emeljék a magányos hegy hatalmas lándzsahegyként nap mint nap a tengerig vándorló árnyékában.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "A mai Alidax helyén álló legelső település, még Freiglund alapításának idején afféle határőrerődként emeltetett, hogy idővel a hatalmas tanúhegy mászhatatlan sziklafalainak, barlangjainak természetesnek tűnő kiegészítéseként létrehozzák azt a bevehetetlen erődrendszert, mely a Hatodkor káoszának viharaival is megküzdve óvta és védelmezte lakóit.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "A Hetedkor hajnalára Morus kultusza azonban elhalványult, papnői helyét a különböző aspektusait tisztelő boszorkány- és homályszekták vették át, melyek háborúsága mind a mai napig tart az árnyak közt. Idinal hegyére a békét és a szinte hetente egymást követő puccsok és palotaforradalmak során végét az alidaxi Fekete Lobogó feltűnése és a legtöbb északföldi homályszekta behódolása hozta el. Alidax első Fekete Hadura a legtöbb boszorkányrendet egyesítve Alidax boszorkány-hadúrnőjeként majd tucatnyi rend és szervezet felett bír hatalommal. Ügynökei egész északot behálózva szinte mindenhonnan szállítják az információt Idinal hegyére, vagy épp cselekednek a városállam királynőjének akarata szerint.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "A várost ugyan majd tucatnyiszor igyekeztek a két nagy ellenlábas ügynökeinek buzdítására elpusztítani a Szövetség csapatát, mégis mind a mai napig a Liviniai Gyülekezet és a Symarei Berkanu boszorkányainak törekvése kudarcot vallott.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "A játékos karakterek a rend soraiba általában már igen korán, alig tíz esztendős korukban felvételt nyerhetnek, ha valamely ügynöke a szervezetnek reájuk akad és felfigyel tehetségükre. Ekkor általában valamely a Quironeia déli partján álló rendház falai közé kerülnek, ahol az általában leányneveldeként vagy valamely nemes asszony udvaraként rejtve működő iskola tanítványaként elsajátíthatnak mindent, ami egy mágikus tudományokban járatos ifjú hölgynek szüksége lehet. Idinal hegye – leszámítva a különlegesen tehetséges, vagy valamely okból kiemelt novíciákat – leghamarabb 3. Tsz-en pillanthatják meg. Az erre méltók innentől kezdve a boszorkányúrnő tanítványainak felügyelete alatt folytathatják tanulmányaikat, elsajátíthatják nem csak a Rúnamágia, de a Drágakőmágia tudományát is.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "A másik különlegessége az Alidaxi boszorkányrendnek, hogy nem csak a jelenben keresik a boldogulást, hanem igen komoly tudományos igényű kutatást is folytatnak Kyria és a múlt távoli nagyhatalmainak háborúi kapcsán. Az itteni kincstár minden más, északföldi kincsesháznál több varázstárgyat, ősi tekercset és fóliánst rejt. Az erre méltók minden harmadik Tapasztalati szinten ezen kincsesházból kapnak ajándékot, mely minden esetben valamely az adott hölgy feladatát elősegítő mágikus relikvia; ezen tárgyakat mindig az adott főherkirály személyes felügyeletével megbízott boszorkányok választják ki.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "I. A szervezet tagjai 3. Tapasztalati szint felett mestereiktől az Ősi nyelv (kyr, crantai, oelf), a Rúnamágia, és a Drágakőmágia képzettségeket is elsajátíthatják 3. fokú Oktatás képzettségnek megfelelő bónuszokkal. II. A boszorkányrend tagjai, abban az esetben, ha sikeresen és hűségesen szolgálták a rend céljait, minden harmadik Tapasztalati szinten a rend nagyasszonyaitól ajándékot kapnak, valamely varázstárgyat, melyet minden esetben a rend vezetői, azaz a KM választ ki, melynek Mp-költsége sosem haladhatja meg a boszorkány Tapasztalati szintjének a tízszeresét.",
+            "title": "Az Alidaxi boszorkányrend tagjainak különleges képességei:",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "Ezer Fátyol Nővérei",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "Hiába tagadhatatlan tény, hogy a dzsad kultúra dzsenn gyökerei miatt igen erősen férfiközpontú társadalmat és államokat eredményezett, azért az is megkérdőjelezhetetlen, hogy a nőknek mégiscsak akad alkalmuk érvényre juttatni akaratukat, talán még jobban is, mint Ynev más államaiban. Hiszen pont dzsad földről ered a mondás, hogy minden hatalmas férfi mögött ott áll egy bölcs nő. Arra persze már nem tér ki e szólás, hogy ezen hölgyek általában nem csak bölcsek, de sokszor igen erős mágia birtokosai nem riadnak vissza mágikus fortélyaik alkalmazásától sem.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "Az Ezer Fátyol Nővérei boszorkányszektája alapításának ideje a múlt homályába vész, és sokan a dzsenn mára kihalt női mágiájának örökségét látják bennük. Az egyes ősi tekercsek és vésetek azonban arról árulkodnak, hogy a szekta első mágiaforgatói a területen kóborló nomád embernépek vajákos asszonyai közül kerültek ki, kik törzseik ősi földanykultuszát ápolták és a déli nomádok sámánjaihoz hasonló kultikus szertartásokat.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        }
+    ]
+}

@@ -1,0 +1,160 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": true,
+    "section_title": "Goblin",
+    "content_blocks": [
+        {
+            "type": "paragraph",
+            "text": "A Név rovatban az alfaj nevét találhatjuk, a Szín is elég egyértemu, bár mindkettőnek a sötét árnyalatát jelenti. Az MP/FP megmutatja, egy saját FP ráfordításával hány MP-t sugározhat ki a lény. ÉP átalakítása is lehetséges, ebben az esetben az MP/ÉP szerinti MP keletkezik. A Lopakodási és Rejtőzési százalékok és a Tapasztalati pontok is alfajonként különböznek."
+        },
+        {
+            "type": "rule",
+            "title": "Goblin",
+            "headers": [
+                "Előfordulás",
+                "Megjelenők száma",
+                "Termet",
+                "Méretkategória",
+                "Sebesség",
+                "Időigény",
+                "Kezdeményező érték",
+                "Célzó érték",
+                "Sebzés",
+                "Életerő pontok",
+                "Fájdalomtűrés pontok",
+                "Asztrál ME",
+                "Mentál ME",
+                "Méregellenállás",
+                "Pszi",
+                "Intelligencia",
+                "Jellem",
+                "Tapasztalati pont"
+            ],
+            "rows": [
+                [
+                    "Ritka",
+                    "10k10",
+                    "K",
+                    "0 vagy használt fegyver",
+                    "65 (SZ)",
+                    "3",
+                    "20",
+                    "30",
+                    "1k3 vagy fegyver szerint",
+                    "7",
+                    "12",
+                    "10",
+                    "10",
+                    "3",
+                    "—",
+                    "Alacsony",
+                    "Káosz",
+                    "1"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A goblinok alapvetően humanoidok, ám jóval alacsonyabbak az embernél, mindössze egy Yneven láb magasak. Bőrük színe a sárgától a narancsvörösig terjed, szemük színe szintén a sárga valamilyen árnyalata. Karjuk testükhöz viszonyítva aránytalanul hosszú, egészen térdig ér. Arcuk az emberi arc elnagyolt karikatúrája: szemük jókora, szájuk széles, füleik kicsik, hegyesek és elállóak."
+        },
+        {
+            "type": "paragraph",
+            "text": "A goblinok, akárcsak az orkok, Orwella teremtményei. A Tinolok barlangjainak mélyén teremtette meg a Kitaszított az első ilyen lényeket – ezek a föld alatti járatok azóta is hemzsegnek tőlük. Mára már szerte Yneven megtalálhatók, sőt az északi Ugo-Gronban élő törzseik a helyi politika alakításába is beleártják magukat."
+        },
+        {
+            "type": "paragraph",
+            "text": "A vad goblinok gyűlölik a fényt, a felszínen ritkán mutatkoznak, leginkább barlangok, bányák vagy romos épületek mélyén húzzák meg magukat. Portyázni is éjjel járnak, amikor kisebb falvakat vagy utazókat fosztanak ki. Ha megfelelő túlerőben vannak – háromszor, négyszer annyian, mint áldozataik –, esetleg harcba is bocsátkoznak. Ilyenkor élvezettel kegyetlenkednek és gyilkolnak. Magányos goblinok vagy kisebb csapatok a veszély első jelére hanyatt-homlok menekülnek."
+        },
+        {
+            "type": "paragraph",
+            "text": "A harchoz egyszerű fegyvereket használnak, baltát vagy buzogányt, ritkábban kardot. Ezek nagy részét összelopkodták, de néha maguk is készítenek fegyvereket. Nem túl jó célzók: goblin íjászokról egyetlen valamirevaló legenda sem tesz említést."
+        },
+        {
+            "type": "paragraph",
+            "text": "A goblinok – akárcsak az emberek – fejlődhetnek harcosként, de még a legerősebb goblin hős Tapasztalati szintje sem haladja meg az 5-öt. Az ilyenek ritkák, és szinte mindig a törzs vezetői. Szintlépéskor +8 HM-et és 1k6 FP-t kapnak. A goblin harcosok legyőzéséért minden Szintjük után + 1 TP adható."
+        },
+        {
+            "type": "paragraph",
+            "text": "Majd' minden törzsnek van sámánja. A sámán ugyanúgy bír Tapasztalati szinttel, mint a többi karakter, tudása pedig egy azonos Szintű Boszorkánymesterének felel meg. A sámán legfeljebb 4. TSZ-ű lehet. A sámán legyőzése szintenként 2 TP-t ér."
+        },
+        {
+            "type": "paragraph",
+            "text": "A goblinok képesek az orkokkal és az emberekkel utódot nemzeni, bár ez utóbbiak ritkán teszik ezt önszántukból. Az ember-goblin félvér felettébb ritka, és ezen – a fogantatás körülményeit tekintetbe véve – nincs is miért csodálkoznunk."
+        },
+        {
+            "type": "paragraph",
+            "text": "A goblin törzsek néha farkasokat tartanak, egyrészt hátasként, másrészt harci célokra."
+        },
+        {
+            "type": "rule",
+            "title": "Gólemek",
+            "headers": [
+                "Előfordulás",
+                "Megjelenők száma",
+                "Termet",
+                "Méretkategória",
+                "Sebesség",
+                "Időigény",
+                "Kezdeményező érték",
+                "Támadó érték",
+                "Védő érték",
+                "Célzó érték",
+                "Sebzés",
+                "Életerő pontok",
+                "Fájdalomtűrés pontok",
+                "Asztrál ME",
+                "Mentál ME",
+                "Méregellenállás",
+                "Pszi",
+                "Intelligencia",
+                "Jellem",
+                "Tapasztalati pont"
+            ],
+            "rows": [
+                [
+                    "Nagyon ritka",
+                    "1",
+                    "Változó",
+                    "Változó",
+                    "Változó",
+                    "5",
+                    "Változó",
+                    "Változó",
+                    "Változó",
+                    "—",
+                    "Változó",
+                    "Változó",
+                    "—",
+                    "Immunis",
+                    "Immunis",
+                    "Immunis",
+                    "—",
+                    "Átlagos",
+                    "—",
+                    "Változó"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "Gólemek több mint egy évezreddel ezelőtt tűntek fel először Yneven kék ege alatt, Deludus Mons kísérleteinek eredményeképpen. Az Élettan jeles tudósa egy eszközt adott a varázslók kezébe, melynek segítségével a hű testőrök leghalálosabbikát teremthetik meg. Élettelen anyagból hozhatnak létre olyan lényt, akinek ereje, állóképessége és kitartása többszörösen meghaladja az emberét."
+        },
+        {
+            "type": "paragraph",
+            "text": "A gólem teremtése komoly előkészületeket igényel, s nem elég hozzá a megfelelő mágikus mozaikok ismerete. A megfelelő befogadó test megalkotásához ügyes kéz és tökéletes tudás kívántatik. Annak, hogy Yneven nem árasztották el varázslók alkotta gólemek hadai, több oka van. Legfontosabb a szükséges 4. fokú Élettan képzettség nehéz megszerezhetősége. A gólemkészítés titkát, annak elméletét sok varázsló ismeri, a szoborformálás tökéletessége nélkül azonban nem képesek életet lehelni az anyagba."
+        },
+        {
+            "type": "paragraph",
+            "text": "A gólemalkotás első nehezebb, és különös gondosságot igénylő lépése a megfelelő test megalkotása. Ehhez legelőször a megfelelő anyagot kell kiválasztani, mely a leginkább összhangban áll a létrehozandó lény feladatával. Ezek után a varázslónak el kell döntenie, mekkora teremtményt szeretne létrehozni – természetesen a gólem céljának szem előtt tartásával. Ha ez megtörtént, elkezdődhet maga a munka."
+        },
+        {
+            "type": "paragraph",
+            "text": "A szobor váza egy csontváz, melyen minden csontnak szerepelnie kell, lehetőleg minél valósághűbben. A következő réteget a mélyen fekvő izmok alkotják, ezek után sorban az egyre felszínesebb izmokat kell megmintáznia a varázslónak. Minden egyes izmot egymástól függetlenül, a valóságnak megfelelő csontokról eredeztetve és tapadva kell megmintázni, másképp a gólem mozgásképtelen lesz. Ez a munka minimum egy hétig tart, de további idő ráfordításával az alkotás tökéletesíthető. A szobor felépítésében fontosak az arányok és a kidolgozás is, ezeken is múlhat, hogy a test képes lesz-e a ráolvasott bélyegek hatására élővé válni."
+        },
+        {
+            "type": "paragraph",
+            "text": "Ha a test elkészült, a varázsló nekikezdhet a teremtés mágikus energiáinak megidézéséhez."
+        }
+    ]
+}

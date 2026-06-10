@@ -1,0 +1,52 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": true,
+    "section_title": "Célzó Érték (CÉ)",
+    "content_blocks": [
+        {
+            "type": "paragraph",
+            "text": "A Célzó érték akkor jut szerephez, ha a karakter távolsági fegyverrel (célzó vagy hajítófegyverrel) kíván támadást végrehajtani. Minél magasabb valakinek a CÉ-je, annál biztosabb a szem-kéz koordinációja, annál tévedhetetlenebbül találja el a kiszemelt célpontot."
+        },
+        {
+            "type": "paragraph",
+            "text": "A Célzó érték kiszámításakor a következő tényezők érvényesülnek: a karakter Ügyessége és Érzékelése, harci tapasztalata, képzettségei, a célzó fegyver típusa, illetve adott esetben a fajból származó bónusz."
+        },
+        {
+            "type": "rule",
+            "title": "Célzó Érték Kiszámítása",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "Kezdeményező dobás"
+        },
+        {
+            "type": "paragraph",
+            "text": "A Kezdeményező dobás hivatott eldönteni, hogy egy harci körben kinek van joga elsőként cselekedni. Természetesen, aki kezdeményezéshez jut, nem köteles nyomban támadni, tehet bármi mást is (például menekülhet), sőt, ha úgy véli helyesnek, akár le is mondhat a kezdeményezés jogáról."
+        },
+        {
+            "type": "paragraph",
+            "text": "Minden a kezdeményezési jogért versengő résztvevő dob k10-zel. A kapott számot hozzáadja saját Kezdeményező értékéhez (KÉ) és az így született eredményt hívjuk Kezdeményezésnek."
+        },
+        {
+            "type": "paragraph",
+            "text": "Különbséget kell tennünk azonban a között, ha valaki cselekedetet hajt végre vagy harc közben fegyveres támadást indít. Fegyveres küzdelemben a Kezdeményező értéket a fegyver harcértéke módosítja, míg ha a karakter cselekedni akar, fegyver nélküli Kezdeményező értékhez 10-et adhat."
+        },
+        {
+            "type": "paragraph",
+            "text": "Az cselekedhet elsőként, akinek legnagyobb a Kezdeményezése; majd őt követve a többiek, eredményük csökkenő sorrendjében. Miután mindenki bejelentette, mit kíván tenni, azé lesz a következő cselekvés joga, akinek a legnagyobb a Kezdeményezése, s a körben maradt még ideje bármi tenni."
+        },
+        {
+            "type": "paragraph",
+            "text": "Amennyiben két vagy több egymással harcoló félnek egyforma lett a Kezdeményezése, a támadások egy időben történnek, a Támadó dobást egyszerre kell tenni."
+        },
+        {
+            "type": "rule",
+            "title": "Fontos szabály",
+            "headers": [],
+            "rows": []
+        }
+    ]
+}

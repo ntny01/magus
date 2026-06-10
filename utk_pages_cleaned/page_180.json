@@ -1,0 +1,162 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": true,
+    "section_title": "Leütés és eszméletvesztés",
+    "content_blocks": [
+        {
+            "type": "rule",
+            "title": "Leütés szabálya",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "table",
+            "headers": [
+                "A találat helye",
+                "Sebzés módosító"
+            ],
+            "rows": [
+                [
+                    "Tarkó, halánték, állcsúcs",
+                    "0"
+                ],
+                [
+                    "Orr, torok",
+                    "+1"
+                ],
+                [
+                    "Szegycsont, nyakizom, bárhol a fejen",
+                    "+3"
+                ],
+                [
+                    "Hónalj, vese, gyomorszáj",
+                    "+5"
+                ],
+                [
+                    "Lágyék, bordák",
+                    "+7"
+                ],
+                [
+                    "Bárhol másutt",
+                    "+9"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "Kötelező Ép vesztes"
+        },
+        {
+            "type": "rule",
+            "title": "Kötelező Ép-veszteség szabálya",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "Súlyos sebek"
+        },
+        {
+            "type": "paragraph",
+            "text": "Amennyiben a karakter Ép-veszteséget szenved valamely támadás, baleset, stb. miatt, akkor beszélünk az ún. súlyos sebzésről. Azt, hogy egy sérülés mennyire súlyos, mindig a KM-nek kell meghatároznia az illető Ép-inek ismeretében. Hiszen nem mindegy, hogy egy lovag vagy pedig egy boszorkány szenved el 4 Ép-nyi veszteséget, elvégre egyéni tűrőképességük általában meglehetősen eltérő. Szintén a KM tisztázhatja a játékhelyzet ismeretében annak meghatározása, hogy hol sérült meg a karakter. Amennyiben célzott támadásról (lásd a Harcrendszer fejezetben) van szó, könnyű a dolga, hiszen már a sérülés bekövetkezte előtt tudta, hová irányul a támadás. Egyéb esetekben pedig a max. Ép-k számát és a seb súlyosságát figyelembe véve kell döntenie a sérülés pontos helyéről. Ha valaki Ép-t veszít, az mindenképpen komoly károsodást eredményez, amely mágia használata nélkül bizony hosszú lábadozást jelent (bővebben lásd a Gyógyulás címszó alatt). Ilyen sérülések a különféle csonttörések, bénult végtagok, létfontosságú szerveket ért károsodások stb. Ám amíg egy 15-ös max. Ép-vel rendelkező karakter számára 5 Ép elveszítése csupán legfeljebb csonttörést jelenthet, ugyanez egy gyengébb szervezetű, 8-as max. Ép-jű karakter számára életveszélyes, akár belső sérüléseket takarhat. A súlyos sebek mindenképpen hátrányokkal járnak a sebesültek számára, hiszen a sérülésekkel járó vérzés, heves fájdalom nem teszi lehetővé, hogy az illető ugyanolyan hatékonysággal tevékenykedjen, miként tette azt a sérülése előtt. Hogy a karakter milyen hátrányok sújtják, azt a KM határozza meg, miután eldöntötte a sebesülés jellegét. Bizonyos hátrányok össze is adódhatnak (de nem a Sérülési módosítókkal!), ez csupán a seb súlyosságától, jellegétől függ."
+        },
+        {
+            "type": "paragraph",
+            "text": "Vérzés"
+        },
+        {
+            "type": "rule",
+            "title": "Vérzés szabálya",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "table",
+            "headers": [
+                "Vérzés típusa",
+                "Hatás"
+            ],
+            "rows": [
+                [
+                    "Gyenge vérzés:",
+                    "1 Ép/15 perc. 15 percenként Egészségpróba, hogy eláll-e."
+                ],
+                [
+                    "Mérsékelt vérzés:",
+                    "1 Ép/5 perc. 5 percenként Egészségpróba, hogy eláll-e."
+                ],
+                [
+                    "Heves vérzés:",
+                    "1 Ép/4 kör. Kötözés vagy mágikus gyógyítás nélkül nem áll el."
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "Hátrány"
+        },
+        {
+            "type": "paragraph",
+            "text": "A seb, a fájdalom és a test valamely létfontosságú szervének sérülése akadályozza a sebesültet a harcban. A hátrány legtöbb esetben a teljes testre vonatkozik, nem pedig a sérült testrészre (az a Részleges bénulás). A Hátrány elmúltának megállapítása minden esetben a KM feladata és joga, mivel figyelembe kell vennie a Hátrány okát (törés, zsibbadás, szembe csorgó vér stb.), s csak annak elmúltával szüntetheti azt meg. Lábsérülés esetén, még a haladási sebesség is csökkenhet."
+        },
+        {
+            "type": "table",
+            "headers": [
+                "Hátrány típusa",
+                "Hatás"
+            ],
+            "rows": [
+                [
+                    "Zavaró hátrány",
+                    "-10 KÉ, TÉ, VÉ, CÉ"
+                ],
+                [
+                    "Jelentős hátrány",
+                    "-25 KÉ, TÉ, VÉ, CÉ"
+                ],
+                [
+                    "Végzetes hátrány",
+                    "-50 KÉ, TÉ, VÉ, CÉ"
+                ]
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Hátrányok összeadódása",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "Tartós fájdalom"
+        },
+        {
+            "type": "rule",
+            "title": "Tartós fájdalom szabálya",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "table",
+            "headers": [
+                "Fájdalom típusa",
+                "Hatás"
+            ],
+            "rows": [
+                [
+                    "Gyenge fájdalom:",
+                    "1 Fp/10 perc"
+                ],
+                [
+                    "Mérsékelt fájdalom:",
+                    "1 Fp/3 perc"
+                ],
+                [
+                    "Heves fájdalom:",
+                    "1 Fp/kör"
+                ]
+            ]
+        }
+    ]
+}

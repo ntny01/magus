@@ -1,0 +1,142 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": true,
+    "section_title": "1. Tapasztalati szinten:",
+    "content_blocks": [
+        {
+            "type": "paragraph",
+            "text": "közti vitában csak egyszer és csak az egyik oldalon szállnak be, így a pórul járt Háznak nem érdeke ellenük acsarogni, hacsak nem óhajtanak újabb veszteségeket elkönyvelni. A Nagy Házak vitáiba természetesen az Ascens Morga nem nagyon szól bele, megelégszik a saját súlycsoportjában lévő családok igen bőkezű adományaival. Az itt végzett vajákosok legalább olyan jól bánnak a különféle pengékkel, mint a mágiával; képzésük szerint két nagyobb csoportra oszthatók: a viadorokra, kik leginkább a shuluri viadalokkal erősítve, míg a méregmesterekre, kik művészetüket jól rejtettén gyakorolják a Nemes Házak legnagyobb megelégedésére vagy épp bánatára. Az előbbiek a mendemondák szerint hozzák a nagyobb bevételt a klánnak az előre lebeszélt és megrendezett viadalok miatt, s a rossznyelvek szerint pont emiatt nem túl rózsás a viszonyuk a szintén a viadalok nyereségéből részesülni kívánó Kobrákkal sem."
+        },
+        {
+            "type": "rule",
+            "title": "Ascens Morga boszorkánymesteri rend különleges előnye",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "title": "Ascens Morga boszorkánymesteri rend különleges előnye",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "title": "Méregvarázs",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "title": "Méregvarázs",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "title": "Méregvarázs",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "title": "Méregvarázs",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "title": "Méregvarázs",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "title": "Ascens Morga boszorkánymester induló képzettségei",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "table",
+            "headers": [
+                "Képzettségek",
+                "Fok"
+            ],
+            "rows": [
+                [
+                    "Tapasztalati mágia (boszorkánymester)",
+                    "3. fok"
+                ],
+                [
+                    "Fegyverhasználat",
+                    "2. fok"
+                ],
+                [
+                    "Herbalizmus",
+                    "3. fok"
+                ],
+                [
+                    "Alkímia",
+                    "3. fok"
+                ],
+                [
+                    "Méregkeverés/semlegesítés",
+                    "3. fok"
+                ],
+                [
+                    "Írás/olvasás",
+                    "2. fok"
+                ]
+            ]
+        },
+        {
+            "type": "table",
+            "headers": [
+                "Számtan/mértan",
+                "3. fok"
+            ],
+            "rows": [
+                [
+                    "Pszi (pyaarroni)",
+                    "2. fok"
+                ],
+                [
+                    "Nekromancia",
+                    "1. fok"
+                ],
+                [
+                    "Élettan",
+                    "2. fok"
+                ],
+                [
+                    "Orvtámadás",
+                    "2. fok"
+                ],
+                [
+                    "Politika/diplomácia",
+                    "1. fok"
+                ],
+                [
+                    "Udvari etikett/intrika",
+                    "2. fok"
+                ],
+                [
+                    "Történelem",
+                    "2. fok"
+                ]
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Ascens Morga által oktatott képzettségek",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "title": "Oktatott képzettségek listája",
+            "headers": [],
+            "rows": []
+        }
+    ]
+}

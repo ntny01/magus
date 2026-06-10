@@ -1,0 +1,136 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": false,
+    "section_title": "",
+    "content_blocks": [
+        {
+            "type": "paragraph",
+            "text": "módszerek is a transzállapot elérésére, mint például a koplalás, kántálás vagy a törzsi tánc, ám ezek a javasasszonyok, sámánok eszköztárába tartoznak. Transzállapotban az ember testi funkciói lelassulnak, így jóval (ötször) hosszabb időt képesek kibírni evés, ivás vagy levegővétel nélkül."
+        },
+        {
+            "type": "rule",
+            "title": "Ébredés (Ébresztés)",
+            "headers": [],
+            "rows": [
+                [
+                    "Típus: Test Ψp: 1 A meditáció ideje: 1 kör Időtartam: egyszeri ME: Mentális"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A Fájdalomcsillapításhoz hasonló elvű, de ellentétes működésű diszciplína, mely fogékonyabbá teszi az elmét tudat alatt a jelzéseire."
+        },
+        {
+            "type": "paragraph",
+            "text": "A pszikalmazó képes szellemét felkészíteni arra, hogy egy meghatározott időben minden külső befolyásolás nélkül felébredjen. Az önszuggesziónak vagy arra kell irányulnia, hogy mennyi idő múlva szakadjon ki az álomból, vagy egy külső jelhez kell kapcsolódnia. Mivel az érzékszervek az álom alatt is működnek – noha normális esetben a gyenge ingereket a tudat figyelmen kívül hagyja – a diszciplína alkalmazója olyasféle jeleket határozhat meg ébredési pontnak, mint hajnali kakasszó, az Éjközép teljes sötétje, lova ideges horkantása, léptek zaja, reccsenő padló stb."
+        },
+        {
+            "type": "paragraph",
+            "text": "A diszciplína nem működik, ha a karakter elájult, bódult álomba merült, vagy valamely mentális támadás hatására vesztette el eszméletét és a hatás még mindig tart."
+        },
+        {
+            "type": "rule",
+            "title": "Érzékelés (Tompítás és megzavarás)",
+            "headers": [],
+            "rows": [
+                [
+                    "Típus: Test Ψp: 1 A meditáció ideje: 1 kör Időtartam: 6 kör ME: Mentális"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "Az ébresztéshez hasonlóan a test, ebben az esetben az öt érzékszerv egyikének jelzéseit erősíti fel, vagy tompítja le. A diszciplína arra ad módot, hogy a látást, hallást, szaglást, tapintást vagy ízlelést akaratunk szerint befolyásoljuk."
+        },
+        {
+            "type": "paragraph",
+            "text": "A látás befolyásolásával élesíthetjük a szemet (esetleg elhomályosíthatjuk). A látás élesítésével maximum megkétszereződik a látótávolság, tompításával azonban vakság is okozható."
+        },
+        {
+            "type": "paragraph",
+            "text": "A hallás élesítésére növeli a hallótávolságot, míg tompítása akár süketséghez is vezethet."
+        },
+        {
+            "type": "paragraph",
+            "text": "A szaglás, a tapintás és az ízlelés felerősítése megkétszerezi ezen érzékszervek hatásfokát, tompításuk az érzékszervek teljes kikapcsolásával is járhat."
+        },
+        {
+            "type": "paragraph",
+            "text": "Az alkalmazó a diszciplínát végrehajtva önmagán, már 1 Ψ-pontért képes megtisztítani egyik érzékszervét a korábbi túlterheléstől. Például éles fény után sötét helyre belépve káprázó szem okozta kellemetlenségtől, vagy az iszonyatató bűz orrunkban maradt utóhatásaitól."
+        },
+        {
+            "type": "paragraph",
+            "text": "A diszciplína hatása a célponton az átjutott Erősítés függvénye: 1 E = 10%, illetve -1 módosító az Érzékeléspróbákra, ha az adott érzékszervre támaszkodva hajtja végre a karakter a próbát. Az alkalmazó másokat csakis kizárólag a 4. fokú Pszi képzettség elérése után befolyásolhat."
+        },
+        {
+            "type": "rule",
+            "title": "Figyelem!",
+            "headers": [],
+            "rows": [
+                [
+                    "A diszciplína nem alkalmas arra, hogy bármely érzékszerv befolyásolásával valós kárt okozzon. Pl. Nem lehet a hőérzetet annyira fokozni, ami már Fp vesztéssel jár."
+                ]
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Testhőmérséklet befolyásolása",
+            "headers": [],
+            "rows": [
+                [
+                    "Típus: Test Ψp: 1/2 fok A meditáció ideje: 1 kör Időtartam: 1 óra ME: Mentális"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A diszciplína alkalmazója képes saját – 4. fokú Pszi képzettséggel más – testével közvetlenül szellemi energiát közölni, annak hőmérsékletét növelni vagy csökkenteni. Így lehetősége nyílik a vizes ruhát megszárítani magán, vagy egy lángoló házból kimenekülni komolyabb égési sérülések nélkül. Minden felhasznált Ψ-pont 2 fokkal képes megváltoztatni a testhőmérsékletet."
+        },
+        {
+            "type": "paragraph",
+            "text": "Az ötven fok fölé emelt testhő hat kör után ájulást eredményez, 70 fok felett pedig azonnali halállal jár. A húsz fokra csökkentett hőmérséklet Tetszhalálhoz vezet – ilyen formán még egy felkészületlen szervezet is képes életben maradni néhány hónapig –, a húsz fok alá csökkentett testhő maradandó károsodással jár, míg a negyedfokot meghaladó öt fok alatti állapot visszafordíthatatlan folyamatot indít el a szervezetben, és az áldozat meghal."
+        },
+        {
+            "type": "paragraph",
+            "text": "A diszciplína lehetőséget ad arra, hogy 1 Ψ-pontért a 2 fokkal eltérő hőmérséklet 1 óráig fennmaradjon, 4 Ψ-pontért a 8 fokos befolyásolást 1 óráig, vagy az 2 fokos változtatást 4 órán keresztül biztosítsa stb."
+        },
+        {
+            "type": "paragraph",
+            "text": "4. fokú Pszi képzettséggel bíró alkalmazó esetén az áldozat testhője annyiszor 2 fokkal, vagy annyiszor 1 óráig változhat, amennyivel a diszciplína Erőssége (E) meghaladta az illető Mentál ME-jét."
+        },
+        {
+            "type": "rule",
+            "title": "Képességjavítás (Rontás)",
+            "headers": [],
+            "rows": [
+                [
+                    "Típus: Test Ψp: 3 A meditáció ideje: 1 kör Időtartam: 6 kör ME: Mentális"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "Olykor – különleges vészhelyzetekben – az emberi fizikum látszólag csodákra képes. Egy vadállattól megrémült gyermek hihetetlen gyorsasággal képes felkúszni egy sudár, ág nélküli fa törzsén, s miután a veszély elmúlt, nem csak azon csodálkozik, hogy miképp sikerült ez neki, hanem gyakorta lemászni sem tud magától. Ez jellemző példája a pszi akaratlan megnyilvánulásának, hiszen ilyenkor a tudat szabadít fel a testben olyan erőforrásokat, melyek egyébként nem hozzáférhetőek."
+        },
+        {
+            "type": "paragraph",
+            "text": "A diszciplína ugyanezt képes végrehajtani, természetesen a tudat teljes irányítása alatt. A pszi erők segítségével a fizikai képességek – Erő, Gyorsaság, Ügyesség, Állóképesség, Egészség – megváltoztathatóak, a diszciplína minden egyes E-je után eggyel. A változtatás időleges, s a diszciplína hatásának elmúltával visszatérnek az eredeti értékek. Ugyanakkor nem szabad elfelejteni, hogy a pszi sem képes a lehetetlenre: egyik képességünket sem emelhetjük 20 fölé."
+        },
+        {
+            "type": "rule",
+            "title": "Figyelem!",
+            "headers": [],
+            "rows": [
+                [
+                    "Bármely képesség nullára – vagy nulla alá – csökkentése azonnali halálhoz vezet."
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A Képességjavítás az egyik legkedveltebb általános diszciplína. Gyakorta használják az Egészség – s ezáltal a Méregerő-ellenállás – megnövelésére. Valójában hasznos minden olyan esetben, amikor Tulajdonságpróbára kényszerülünk, hiszen az adott pillanatban valóban erősebbek, gyorsabbak, egészségesebbek vagy ügyesebbek leszünk. Nem szabad elfelejteni, hogy ha harc folyamán megnöveljük Egészségünket – és egy"
+        }
+    ]
+}

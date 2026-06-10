@@ -1,0 +1,118 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": false,
+    "section_title": "",
+    "content_blocks": [
+        {
+            "type": "paragraph",
+            "text": "Szőnyeg a föld szintjét fél ynevi láb magasságban borítja be, és követi a terep egyenetlenségeit. A kör mérete a varázslótól függ, és nem lehet kisebb 1 ynevi lábnál, és nem lehet nagyobb annyi ynevi láb sugarúnál, amekkora a teremtett elem E-je. Középpontja a varázsló Zónáján belül bárhová eshet."
+        },
+        {
+            "type": "paragraph",
+            "text": "A Szőnyeg E-je a teremtett Elem E-jének, és a Szőnyeg méretének függvénye. Átlagérték, amit úgy kaphatunk meg, hogy az elem E-jét elosztjuk a Szőnyeg lábban számított sugarával. A Szőnyeg sebzése a Szőnyeg E-jével és nem a teremtett elemével arányos."
+        },
+        {
+            "type": "rule",
+            "title": "Például",
+            "headers": [],
+            "rows": [
+                [
+                    "6 E erősségű elem esetén: Ha a Szőnyeg sugara 6 ynevi láb, az E-je 1; ha sugara 3 ynevi láb, E-je 2; ha sugara 2 ynevi láb, E-je 3, és végül, ha sugara 1 ynevi láb, akkor E-je 6.) Ha a Szőnyeg E-jére tört értéket kapnánk, azt mindig lefelé kerekítjük; például 2.9 is 2, nem pedig 3."
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "Ha a Szőnyegbe ellentétes Elem alkotta Nyíl, Kard, Fal vagy Aura kerül, azokkal nem átlag E-je-kel bírokra, hanem a bele formázott elem összes E-je."
+        },
+        {
+            "type": "rule",
+            "title": "Például",
+            "headers": [],
+            "rows": [
+                [
+                    "Adott egy 12 E Őstüzet tartalmazó 3 ynevi láb sugarú Tűzszőnyeg. Mikor ebbe 6 E erősségű Vízaurát viselő ember lép, az Aura fog megsemmisülni, mert nem a Szőnyeg átlag 4-es E-jével kell harcra, hanem az abba beleformázott Őstűz 12 E-jével. Természetesen az Őstűz E-je is csökken: 6-ra, miáltal a Szőnyeg is gyengül: átlag E-je 2 lesz.)"
+                ]
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Fal",
+            "headers": [],
+            "rows": [
+                [
+                    "Mana pont: 1/E Időtartam: 1 kör Védő varázslat. A varázsló a Zónáján belül eső, és általa meghatározott helyen, az adott elemből megalkotott Falat emel. Ez valójában egy félbevágott, függőleges Szőnyeg. Az az fél láb vastag, epicentruma a föld szintjén helyezkedik el, és félkörívben emelkedik. Sugarát és Erősségét a Szőnyeghez hasonlóan kell számolni, tehát a Fal E-je a beleformázott elem E-jének és a Fal kiterjedésének átlaga."
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "Útját állja az ellentétes Elemi Mágiáknak (például Vízfal a Tűznyílnak). Hatásukat vagy teljesen megszünteti, vagy erejéhez mérten mérsékli (az ellentétes elemek kioltásra vonatkozó szabály szerint). Azaz, ha a Fal E-je nagyobb a támadás E-jénél, akkor a támadás megszűnik létezni (még akkor is, ha eredetileg több körig fennmaradt volna, mint például a Kard). Közben persze a Fal is veszít az erejéből. Abban az esetben, ha a támadás E-je a nagyobb, a Fal semmisül meg, ám a támadás is csak meggyengülve jut át rajta."
+        },
+        {
+            "type": "paragraph",
+            "text": "Elemi Fal ként a fizikai hatásoknak is gátat szab – például az elhajított törnek, a kilőtt nyílvesszőnek, vagy a rohamozó lovasnak. Az erre vonatkozó adatokat lásd az Elemi Erő Teremtése nevű mozaiknál."
+        },
+        {
+            "type": "paragraph",
+            "text": "De ellenállhat másként is: a Tűzfal elhamvaszthatja a rajta keresztülzúdított tárgyakat, a Földfal pora elvakíthatja a rajta áthalálódót. Ám az efféle mellékhatások hatékonyságának megítélése a KM feladata."
+        },
+        {
+            "type": "rule",
+            "title": "Kupola",
+            "headers": [],
+            "rows": [
+                [
+                    "Mana pont: 2/E Időtartam: 1 kör Szintén a Szőnyeg egy változata. Azonban magassága nem fél láb, hanem megegyezik a kör sugarával. Röviden: a Kupola nem más, mint egy tömör félgömb. Egyetlen hátránya,"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "hogy ismeretlen okból kizárólag Paraelemekkel működik, Őselemekkel és Elemi Erővel nem. E-je a szőnyeghez hasonlóan számítható ki."
+        },
+        {
+            "type": "rule",
+            "title": "Sátor",
+            "headers": [],
+            "rows": [
+                [
+                    "Mana pont: 2/E Időtartam: 1 kör A Szőnyeg és a Fal egybeolvasztott változata. Hasonló a Kupolához, de itt az Elem a félgömb felett fél ynevi láb széles burkot képez, magában a félgömbben nincs jelen. Pontosan megfogalmazva: a Sátor egy adott sugarú félgömböt zár körül. E-je és sebzése a Falhoz hasonlóan számítandó ki."
+                ]
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Aura",
+            "headers": [],
+            "rows": [
+                [
+                    "Mana pont: 2/E Időtartam: 1 kör Védő varázslat. A varázsló testét egy a teremtett elemből álló Aura övezi. Ez egyfajta személyre szabott Fal. Nagyrészt mágikus védelem céljára szolgál: az ellentétes elemből készült varázslatok ellen véd éppúgy, akár a Fal."
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "Másik alkalmazási módja az érintéstől való védelem, mikor annak, aki az Aura védettjét megérinti, vagy puszta kézzel megüti, az elem E-jének megfelelő SP-t okoz."
+        },
+        {
+            "type": "paragraph",
+            "text": "Az Aura nem akadályozza a mozgásban azt, akit öv; mozdulatait – akár valami ruha – követi. Vedettjére közvetlen hatással nincs (a Tűzaura nem égeti, a Vízaurától nem lesz nedves, még akkor sem, mikor azok eltűnnek), az érzékelésben (látásban, hallásban) azonban akadályozza, vagy épp lehetetlenné teszi az észlelést (például Őselemi Föld aurában se nem lát, se nem hall, Vízaurán át csak homályosan lát, a Sötétségaurán át pedig egyáltalán nem). Az Elemi Erő Aura a mágikus (például Őselemi vagy Villámmágikus) támadások ellen nem véd."
+        },
+        {
+            "type": "rule",
+            "title": "Kard",
+            "headers": [],
+            "rows": [
+                [
+                    "Mana pont: 2/E Időtartam: 1 kör Támadó varázslat. A varázsló a megteremtett elemmel körbeveheti egy tetszés szerinti fegyver pengéjét. Az elem felveszi a fegyver formáját – legyen az tör vagy hosszúkard – akár az Aura az ember alakját, akit övez. A fegyvert a markolatánál bárki megfoghatja, ám a penge többszörösen sebez. Természetesen csak akkor, ha a Kardba formázott elem ártalmas a megtámadottra (például a tűzkard éget)."
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A Kard E-je egyenlő a teremtett Elem E-jével. Éppúgy viselkedik, akár egy közönséges fegyver: éppúgy harcolni, támadni szükséges vele a harcrendszer szabályai szerint, harcértékei változatlanok maradnak. Bárkinek átadható, forgatásához nem kell varázslónak lenni. Sebzés csak sikeres támadás esetén éri az áldozatot. Ám ez nem csak annyi SP, amennyi a fegyvereknél feltüntetett táblázatban szerepel, hanem még plusz annyi, amennyit a teremtett elem okoz. Túlütés esetén azonban csak a fegyver okoz automatikus ÉP-sebzést, az Elem nem, illetve természetesen a páncélok SFÉ-je is érvényesül az Elem sebzése ellen."
+        }
+    ]
+}

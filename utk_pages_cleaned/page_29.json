@@ -1,0 +1,76 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": null,
+    "is_new_section": true,
+    "section_title": "Állóképesség",
+    "content_blocks": [
+        {
+            "type": "paragraph",
+            "text": "Az Állóképesség a karakter kitartásának, fizikai tűrőképességének mutatója. A harcos és harcművész kalandozók fontos tulajdonsága, s szerepe van az Fp meghatározásában is. Minél magasabb az Állóképessége valakinek, annál jobban tűri a fájdalmat és a folyamatos megterhelést. Tovább tud megállás nélkül harcolni, lovagolni vagy futni, jobban ellenáll a fájdalomnak és a hidegnek."
+        },
+        {
+            "type": "paragraph",
+            "text": "Az átlagnál jóval alacsonyabb Állóképességűek már rövid futás vagy munka után is kifulladnak, arcuk kipirul, izmaik fájdalmasan sajognak. Az átlag 12-es érték ebben az esetben is a hétköznapok emberének felel meg. A 18-as vagy annál nagyobb Állóképesség lehetővé teszi több tucat mérföld lefutását, 25-30 percnyi aktív küzdést, nehéz terhek folyamatos cipelését."
+        },
+        {
+            "type": "paragraph",
+            "text": "Az Állóképesség adja a karakter Fájdalomtűrés pontjait, az Akaraterő értékével együtt."
+        },
+        {
+            "type": "rule",
+            "title": "1-3",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "4-5",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "6-8",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "9-12",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "13-15",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "16-18",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "19-20",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        }
+    ]
+}

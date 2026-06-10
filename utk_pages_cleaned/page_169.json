@@ -1,0 +1,320 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "null",
+    "is_new_section": true,
+    "section_title": "A cselekedetek típusai",
+    "content_blocks": [
+        {
+            "type": "paragraph",
+            "text": "akár többször is – ha a Támadások száma rovat ezt számukra lehetővé teszi, vagy ha egyszerre két kézzel harcolnak."
+        },
+        {
+            "type": "paragraph",
+            "text": "A kör végeztével új kör veszi kezdetét, egészen a harc befejezéséig, körönként új Kezdeményező dobással."
+        },
+        {
+            "type": "paragraph",
+            "text": "Mint ahogy azt a harc meneténél már említettük, egy körben nem csak harcolni, hanem számtalan egyéb dolgot is lehet tenni. Ezért a különböző cselekedeteket típusokra osztottuk fel."
+        },
+        {
+            "type": "rule",
+            "title": "Szabad cselekedet",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "Szabad cselekedeteknek nevezzük azon manővereket, melyek végrehajtásához szükséges idő általában olyan rövid, hogy egy harci cselekedettel is végezhetőek egy időben. Ide tartoznak továbbá mindazok, amik nem sorolhatók a másik két kategóriába."
+        },
+        {
+            "type": "table",
+            "title": "Szabad cselekedetek",
+            "headers": [
+                "Cselekedet",
+                "Megjegyzés"
+            ],
+            "rows": [
+                [
+                    "Varázslás*",
+                    ""
+                ],
+                [
+                    "Pszi használat*",
+                    ""
+                ],
+                [
+                    "Kiáltás",
+                    ""
+                ],
+                [
+                    "Földre vetődés",
+                    ""
+                ],
+                [
+                    "Fegyver/tárgy elejtése",
+                    ""
+                ],
+                [
+                    "Fegyverrántás",
+                    ""
+                ],
+                [
+                    "Varázsital felhajtása",
+                    ""
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "* lásd a Közelharc és varázslás fejezetet az 174. oldalon"
+        },
+        {
+            "type": "rule",
+            "title": "Szabad cselekedetek végrehajtása",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A szabad cselekedeteket a játékos kívánsága szerint karaktere az adott harci cselekedetben végrehajtott Támadó dobás előtt, vagy az után is elvégezheti. Ha a támadás előtt kívánja végrehajtani, akkor automatikusan elveszíti a Kezdeményezést egész körre; ha a támadás után, akkor nem sújtja semmiféle hátrány. Ezen cselekedetek végrehajtása általában 1, 2 szegmenst igényel."
+        },
+        {
+            "type": "rule",
+            "title": "Mozgásértékű cselekedet",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "Mozgásértékűnek nevezzük azokat a manővereket, amelyek és kizárólag helyváltoztatást használnak, legyen az séta, futás vagy feltápászkodás a földről. A mozgásértékű cselekedeteknél minden esetben a karakter aktuális Gyorsasága a mérvadó, tehát az az érték, amit a páncélok MGT-je, a felszerelés súlya vagy egyes betegségek már csökkentettek."
+        },
+        {
+            "type": "rule",
+            "title": "Séta",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "– Sétálni minden ember nagyjából egyforma sebességgel sétál, és körülbelül 12 ynevi láb távolságot tesz meg egy kör alatt."
+        },
+        {
+            "type": "rule",
+            "title": "Futás",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "– Futva minden karakter olyan gyorsan mozog (tehát körönként annyi ynevi lábat képes megtenni), mint a Gyorsaság Tulajdonságának háromszorosa."
+        },
+        {
+            "type": "rule",
+            "title": "Rohanás",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "– Rohanva minden karakter ötször annyi ynevi láb távolságot tesz meg körönként, mint a Gyorsaság Tulajdonsága; szegmensenként pedig a Gyorsaság értékének felét (lefelé kerekítve). A karakter lélekszakadva maximálisan annyi körig képes rohanni, amennyi az Állóképessége háromszorosa..."
+        },
+        {
+            "type": "rule",
+            "title": "Harci cselekedetek",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "Harci cselekedetnek azt nevezzük, amely végrehajtásával az ellenfelünket közelharcban vagy távolsági fegyverrel megtámadhatjuk. A Harci cselekedet végrehajtásakor a karakter a fegyvere bevetési Időigény értéke által meghatározott időtartam alatt az aktívan védekező ellenfelet egyszer megtámadhatja, azaz ellene Támadó dobást tehet."
+        },
+        {
+            "type": "table",
+            "title": "Harci cselekedetek időigénye",
+            "headers": [
+                "Harci cselekedetek",
+                "Időigény"
+            ],
+            "rows": [
+                [
+                    "Közelharc 1. Méretkategóriájú fegyverrel",
+                    "3 szegmens"
+                ],
+                [
+                    "Közelharc 2. Méretkategóriájú fegyverrel",
+                    "3 szegmens"
+                ],
+                [
+                    "Közelharc 3. Méretkategóriájú fegyverrel",
+                    "5 szegmens"
+                ],
+                [
+                    "Közelharc 4. Méretkategóriájú fegyverrel",
+                    "10 szegmens"
+                ],
+                [
+                    "Közelharc 5. Méretkategóriájú fegyverrel",
+                    "10 szegmens"
+                ],
+                [
+                    "Távolági támadás*",
+                    "2 szegmens"
+                ],
+                [
+                    "Távolági fegyverek újratöltése",
+                    ""
+                ],
+                [
+                    "Fúvócső",
+                    "1 szegmens"
+                ],
+                [
+                    "Íj",
+                    "1 szegmens"
+                ],
+                [
+                    "Dobófegyver",
+                    "1 szegmens"
+                ],
+                [
+                    "Könnyű számszeríj",
+                    "1 szegmens"
+                ],
+                [
+                    "Vadás számszeríj",
+                    "3 szegmens"
+                ],
+                [
+                    "Nehéz számszeríj",
+                    "2 kör"
+                ],
+                [
+                    "Shadleki páncéltörő",
+                    "4 kör"
+                ],
+                [
+                    "Talpra állás**",
+                    "Az ellenfél harci cselekedete"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "* a távolsági fegyvereket újra kell tölteni"
+        },
+        {
+            "type": "paragraph",
+            "text": "** a talpra állás egy teljes harci cselekedet vesz igénybe, melynek hossza az ellenfél harci cselekedetének hossza közelharci helyzetben, egyéb esetben 2 szegmens."
+        },
+        {
+            "type": "rule",
+            "title": "Közelharc időigénye",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "Közelharcnál az időigény persze korántsem azt jelenti, hogy egy kétkezes csatabárdot meglengetni 10 szegmens. A közelharc folytonos támadást és hárítást, kitérést és riposztot jelent. Ez az érték arra vonatkozik, hogy ha ilyen jellegű fegyverrel keveredsz közelharcba, ennyi idő alatt sikerül rést találni az ellenfél védekezésén egy olyan támadáshoz, ami találattal kecsegtet."
+        },
+        {
+            "type": "rule",
+            "title": "Távolági harc időigénye",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "Távolági harc esetén a 2 szegmens magában foglalja azt az időtartamot, amíg az íjász vagy törvető célba veszi ellenfelét, útjára küldi a lövedéket, s az megteszi a köztük lévő távolságot. Az újratöltés időtartama pedig a fegyver újra használatkész állapotra való hozásának időigényéről tájékoztat."
+        },
+        {
+            "type": "rule",
+            "title": "Egész körös cselekedet",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "Egész körös cselekedetnek azokat a manővereket nevezzük, amik felemésztik a karakter minden idejét, s közben nincs lehetősége mást tenni, mivel valami módon rá van kényszerítve a cselekvés folytatására."
+        },
+        {
+            "type": "rule",
+            "title": "Közelharc mint egész körös cselekedet",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A közelharc egész körös cselekedete. Ilyenkor mindkét fél csak a küzdelemmel foglalkozik, nem osztja meg figyelmét, s bár a körben minden támadásuk kiosztása után is maradna még idejük, azt továbbra is a vívás tölti ki."
+        },
+        {
+            "type": "rule",
+            "title": "Felszabadulás egész körös cselekedet alól",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "Amennyiben azonban egyikük összerogy a sebektől, a másik felszabadul az egész körös cselekedet alól, s a kör hátralévő részében szabadon választhat, mit tegyen ezután."
+        },
+        {
+            "type": "rule",
+            "title": "Védekező harc mint egész körös cselekedet",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "Egész körös cselekedet a védekező harc is, ilyenkor az egyik fél feladja a támadásait, cserébe mozgás értékű cselekedetként hátrálhat ellenfele elől (aki természetesen, ha akarja, követheti, ezzel rákényszerítve a védekező harcot)."
+        },
+        {
+            "type": "rule",
+            "title": "Roham mint egész körös cselekedet",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A Roham szintén lehet egész körös cselekedet. A rohamozó fél ellenfelére ront egy adott távolságból (mozgás értékű cselekedet) majd lesújt rá (harci cselekedet). Ha az ellenfél összerogy a csapás alatt, és a támadónak maradt még ideje, úgy a kör hátralévő részében szabadon választhat, mit kíván tenni. Azonban ha ellenfele nem esik össze, és felveszi a harcot, úgy a rohamozó a kör hátralévő részében kényszerítve van harc folytatására (értelemszerűen a védekező ilyenkor csak annyi támadást adhat le, amennyi a kör hátralévő részéből hátra van, de minimum egyet!)."
+        },
+        {
+            "type": "rule",
+            "title": "Képzettségek alkalmazása",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "Egész körös cselekedet továbbá a különböző Képzettségek alkalmazása (kivételt képeznek ez alól azon Képzettségek,"
+        }
+    ]
+}

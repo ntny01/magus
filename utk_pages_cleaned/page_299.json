@@ -1,0 +1,49 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": false,
+    "section_title": "",
+    "content_blocks": [
+        {
+            "type": "rule",
+            "title": "Láthatatlanság felfedezése",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "title": "Nyelvbéklyó",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "title": "Parancs",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "title": "Sugallat",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "title": "Tudatrablás",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "A Lélek egészére ható varázslatok tartoznak ebbe a csoportba. Összetett mágikus hatások: mind Mentálisan, mind Asztrálisan hatnak. Ha olyan teremtmény esik efféle mágia áldozatául, akinek vagy Asztrál-, vagy Mentálteste hiányzik, arra csak létező testén át hat a varázslat. Lélekvarázs démonok ellen nem alkalmazható, hiszen köztudott, hogy ők nem bírnak lélekkel.",
+            "title": ""
+        },
+        {
+            "type": "rule",
+            "title": "Álmatlanság",
+            "headers": [],
+            "rows": []
+        }
+    ]
+}

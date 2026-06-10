@@ -1,0 +1,301 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": null,
+    "is_new_section": true,
+    "section_title": "Aszisz Énekmondó",
+    "content_blocks": [
+        {
+            "type": "paragraph",
+            "text": "Egy átlagos I. Tapasztalati szintű bárd"
+        },
+        {
+            "type": "table",
+            "headers": [
+                "Tulajdonság",
+                "Érték",
+                "Tulajdonság",
+                "Érték"
+            ],
+            "rows": [
+                [
+                    "Erő",
+                    "12",
+                    "ÉP",
+                    "12"
+                ],
+                [
+                    "Gyorsaság",
+                    "13",
+                    "FP",
+                    "29"
+                ],
+                [
+                    "Ügyesség",
+                    "14",
+                    "",
+                    ""
+                ],
+                [
+                    "Állóképesség",
+                    "12",
+                    "ΨP",
+                    "—"
+                ],
+                [
+                    "Egészség",
+                    "12",
+                    "MP",
+                    "5"
+                ],
+                [
+                    "Karizma",
+                    "15",
+                    "Kegy-pont",
+                    "—"
+                ],
+                [
+                    "Intelligencia",
+                    "15",
+                    "",
+                    ""
+                ],
+                [
+                    "Akaraterő",
+                    "13",
+                    "MME",
+                    "13"
+                ],
+                [
+                    "Asztrál",
+                    "15",
+                    "AME",
+                    "15"
+                ],
+                [
+                    "Érzékelés",
+                    "14",
+                    "",
+                    ""
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "Elköltött KAP-ok:"
+        },
+        {
+            "type": "table",
+            "headers": [
+                "KAP-tétel",
+                "Érték"
+            ],
+            "rows": [
+                [
+                    "Iskola (Bárd)",
+                    "6 pont"
+                ],
+                [
+                    "Mágikus Fogékonyság",
+                    "—"
+                ],
+                [
+                    "Művésztehetség",
+                    "1 pont (zene)"
+                ],
+                [
+                    "Nemesi vér",
+                    "1 pont"
+                ],
+                [
+                    "HM",
+                    "12 pont (6 HM)"
+                ],
+                [
+                    "FP",
+                    "4 pont (4 FP)"
+                ],
+                [
+                    "KP",
+                    "14 pont (14 Kp)"
+                ],
+                [
+                    "MP",
+                    "12 pont (4 Mp)"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "Fegyverzet:"
+        },
+        {
+            "type": "table",
+            "headers": [
+                "Tulajdonság",
+                "fvn",
+                "vadász számszeríj"
+            ],
+            "rows": [
+                [
+                    "Fegyver",
+                    "",
+                    ""
+                ],
+                [
+                    "Időigény",
+                    "3",
+                    "10"
+                ],
+                [
+                    "KÉ",
+                    "29",
+                    "36"
+                ],
+                [
+                    "TÉ",
+                    "39",
+                    "—"
+                ],
+                [
+                    "VÉ",
+                    "87",
+                    "—"
+                ],
+                [
+                    "CÉ",
+                    "32",
+                    "63"
+                ],
+                [
+                    "Sebzés",
+                    "1k6",
+                    "3k6"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "Képzettségek:"
+        },
+        {
+            "type": "table",
+            "headers": [
+                "Képzettség",
+                "Fok",
+                "Kp"
+            ],
+            "rows": [
+                [
+                    "Fegyverhasználat (vadász számszeríj)",
+                    "2. fok",
+                    "5 Kp"
+                ],
+                [
+                    "Fegyverhasználat (tőr jellegű fegyverek)",
+                    "2. fok",
+                    "5 Kp"
+                ],
+                [
+                    "Ékesszólás",
+                    "3. fok",
+                    "6 Kp"
+                ],
+                [
+                    "Lélektan",
+                    "3. fok",
+                    "10 Kp"
+                ],
+                [
+                    "Szexuális kultúra",
+                    "3. fok",
+                    ""
+                ],
+                [
+                    "Művészetek (Ének vagy Zene)",
+                    "3. fok",
+                    ""
+                ],
+                [
+                    "Művészetek",
+                    "3. fok",
+                    ""
+                ],
+                [
+                    "Legendaisméret",
+                    "3. fok",
+                    ""
+                ],
+                [
+                    "Nyelvtudás (szülőföld)",
+                    "4. fok",
+                    ""
+                ],
+                [
+                    "Helyismeret (szülőföld)",
+                    "3. fok",
+                    ""
+                ],
+                [
+                    "Tapasztalati mágia (bárd)",
+                    "3. fok",
+                    ""
+                ],
+                [
+                    "Lopódzás",
+                    "+29%",
+                    "1 Kp"
+                ],
+                [
+                    "Rejtőzködés",
+                    "+29%",
+                    "1 Kp"
+                ],
+                [
+                    "Mászás",
+                    "+19%",
+                    "1 Kp"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "Az aszisz dalnokok alkotják a bárdok közt a nagystílű gazemberek csoportját. A tolvajokhoz hasonlóan nem a maguk, hanem mások vagyonából élnek, vándormutatványosok, vásári szemfényvesztők, kóbor muzsikusok képében járják a világot, hogy felfordulást keltsenek, amerre csak megfordulnak."
+        },
+        {
+            "type": "paragraph",
+            "text": "Nincsenek tekintettel sem a világi törvényekre, sem az erkölcs szavára, mintha csak azokat más, jámborabb lelkű halandók rendszabályozására hozták volna létre az istenek."
+        },
+        {
+            "type": "paragraph",
+            "text": "Habár általában csak önös érdekeik vezérlik őket, ugyanakkor méltóságon alulinak találják, hogy jelentéktelen ügyekben alakoskodjanak, apró pénzért lopjanak, nyíltan fosztogassanak. Sőt, egyenesen sértésnek veszik, ha tolvajnak, haramiának nevezik őket. Módszereik a rablásnál jóval kifinomultabbak. Ahelyett, hogy az utcán vadásznának a járókelők erszényeire, inkább beférkőznek a „magasabb körökbe”, tehetős kalmárok feleségének vagy főrangú asszonyok bizalmába, hálószobáiba; zenélnek, dalolnak, s olykor egyéb, intimebb szolgálatokat is tesznek, majd egy éjjel meglépnek a családfő felette őrzött pénzesládájával."
+        },
+        {
+            "type": "paragraph",
+            "text": "Mindazonáltal elég ritkán fordulnak meg igazán előkelő nemesi házaknál. Modoruk nem elég csiszolt, és neveltetésük sem teszi őket alkalmassá (mondhatni szalonképessé) a hercegi vagy főúri körök számára. Ideig-óráig persze elboldogulnak közöttük is, ám akárhogy igyekezzen is a bárd, előbb-utóbb órmótlan hibát vét, s akkor egész tekintélyét eljátszotta."
+        },
+        {
+            "type": "paragraph",
+            "text": "Ám nem egy közszájon forgó történet kering pórul járt grófokról, bárókról, kiknek feleségét üdvállott udvari muzsikusukkal, általuk felkarolt színészpalántákkal csípték el pásztoróra közben. Talán a leghíresebb mindközül a nyktalosi hercegkapitány esete, kit makulátlan főrangú családból származónak hitt veje rövidített meg leánya ártatlanságával és arányban mérhető hozományával."
+        },
+        {
+            "type": "paragraph",
+            "text": "Általában nem is vonzódnak az arisztokrácia finomkodó rétegéhez, de megélhetésükért olykor-olykor félre kell tenniük ellenszenvüket. A zsarnokgyűlölő aszisz nép pedig mindig jót mulat a pórul járt gazdagok történetein, az igric pedig szívesen látott vendég a kocsmákban, bordélyokban, italmérésekben, ahol legfőbb „kötelessége”, hogy addig mulatassa a közönséget, míg vigadni van kedvük."
+        },
+        {
+            "type": "paragraph",
+            "text": "A köznép köreiből kikerült dalnokok szíve is jobban húz a szegényebb társadalmi osztályok felé. Ők nevettetik az egyszerű népeket a vásárok piacain, ők zenélnek borissza kocsmadalokat a lebujok mélyén, ők lopnak fényből csodákat az ámuló szemek elé. Isznak és mulatnak bárkivel, aki erre hajlandó, s ha nem adnak nekik valamit szépszerével, hát megszerzik máshogy. Nőcsábászok és szélhámosok, s ha valaki, akkor ők aztán igazán nem foglalkoznak azzal, mit hoz a holnap."
+        },
+        {
+            "type": "paragraph",
+            "text": "Önző és önimádó, beképzelt népségnek tarthatnánk őket, hiszen gátlástalanul lopnak, csalnak, hazudnak, ha úgy adódik, ám ha egyszer pénzhez jutnak, megosztják kenyerüket az éhezőkkel és utolsó fillérüket is képesek elverni csak azért, hogy mindenki jól mulasson körülöttük."
+        },
+        {
+            "type": "paragraph",
+            "text": "A kocsmárosnak és a nekivívult vendégeknek pedig mindig akad egy pofa ingyen itala, hogy a kobzos torka nehogy kiszáradjon. Kis utánajárással általában fedél is kerül a feje fölé (persze ingyen). Mégis ritkán maradnak egy helyben, s ha a jólelkű gazda nem vigyáz eléggé, hajnalhasadtával se szó, se beszéd, a vándorzenész együtt búcsút mondhat a tegnap esti bevételnek, esetleg leánya tisztességének egyaránt. Nagy valószínűséggel ők a felelősök azért is, hogy a lantforgató világcsavargóknak ilyen rossz híre kelt szerte a világban."
+        },
+        {
+            "type": "paragraph",
+            "text": "Nem mintha ez különösebben zavarná őket, vagy bűntudatot éreznének tetteik miatt, nem is háborodnak fel rajta: a bizalmatlanságot az élet velejárójának tekintik. Gyakran örömmel ők magukról csak rossz hírükre (főleg olyanok, ha a bizalomhiányt túlzottnak vagy stílustalannak érzik). Égi pártfogóul rendszerint Nőirt, a csalók és szemfényvesztők istennőjét választják, bár a vallásosságot ugyanúgy élvezőül veszik, mint bármi mást az életben."
+        }
+    ]
+}

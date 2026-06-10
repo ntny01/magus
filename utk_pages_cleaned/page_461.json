@@ -1,0 +1,50 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": true,
+    "section_title": "Ranagol",
+    "content_blocks": [
+        {
+            "type": "flavor_text",
+            "text": "Halott indul hozzád, Uram, Lelkét ezer kínba taszítva! Könnyel terhes jajsiráma Megváltja majd bűneimet.\nÁldozati fohász az Akviloniai Nagy Liturgiából"
+        },
+        {
+            "type": "paragraph",
+            "text": "Ynev legrégebbi, változatlan formában tisztelt istene. Hite eredetileg inhumán vallás volt, s híveinek jelentős száma továbbra sem az emberek közül kerül ki. Hogy a vallás bölcsőjében, Kránban pontosan milyen dogmái és szertartásai vannak, arra csak következtethetünk, hiszen rendkívül töredékes és egymásnak ellentmondó ismeretek szivárogtak csupán ki a Fekete Határ mögül."
+        },
+        {
+            "type": "paragraph",
+            "text": "Kétség sem férhet azonban ahhoz, hogy az embernépek által is ismert szertartásai és hittételei a legszélsőségesebb érzelmeket keltették minden ma is hívekkel bíró felekezet tagjai között. Nem kell különösebben járatosnak lenni Ynev vallásaiban ahhoz, hogy tisztában legyünk vele, Kránt kell keresni a Ranagol-hit dél-ynevi elterjedése mögött."
+        },
+        {
+            "type": "paragraph",
+            "text": "A Shadonból menekülő démonimádó szekta vezetője, Amanovik volt az, akinek kétségbeesett segélykérését Kránban meghallották, s szintén ő volt az, aki az általa imádott isteni hatalmú entitást a későbbiekben azonosította a Sötét Birodalomból – egyelőre érthetetlen módon – segítségére siető erők istenével."
+        },
+        {
+            "type": "paragraph",
+            "text": "Számos elmét megmozgatott már az a kérdés, mi mindent nyerhetett a Kosfejű elsőre kalandosnak tűnő vállalkozásával. Az elvakultabb historikusok a cél nélküli pusztítást, a gonosz mérhetetlen bírágvát és mohóságát ki vallási viszonyokban is. (Rögtön érthetőbbé válik Kránnak a Manifesztációs Háborúban betöltött szerepe is.)"
+        },
+        {
+            "type": "paragraph",
+            "text": "Ezeket az érveket figyelembe véve nyilvánvaló lesz az is, miért különböznek a gorviki és a kráni hittételek is. A Kosfejűnek elsősorban nem a hogyan, avagy a miként számít. Számára csupán az a fontos, hogy az ő érdekeit mindig szem előtt tartva cselekedjenek hívei. Nem fontos hogy egyetlen és mindenható istenként imádják (Gorvik), vagy hogy az angyalain és egyéb megnyilvánulásain keresztül (Krán). Hitének nincsenek kötött formái. Ranagol rendkívüli rugalmasságáról tanúskodik, hogy hívei szabadon, különösebb külsőségektől mentesen imádhatják. Ismételten más kérdés, hogy maguk a hívek, illetve az ellenségei miként vélekednek minderről."
+        },
+        {
+            "type": "paragraph",
+            "text": "Az Óbolvidéken szárba szökkenő Ranagol-kultusznak két természetes riválisa is támadt: egyrészt a másik dél-ynevi monoteizmus, Domvik vallása, másrészt a kontinens legelterjedtebb hitrendszere, a pýarroni panteon. Az utóbbi kétezer évben ennek a három ideológiának – és a hozzájuk kötődő politikai hatalmaknak – a szakadatlan birkózása határozta meg a térség történelmének alakulását."
+        },
+        {
+            "type": "paragraph",
+            "text": "Fontos még megjegyeznünk, hogy a gorviki Ranagol-hit nem azonos a kráni okkultusszal. Főbb tételeit röviden az alábbiakban foglalhatjuk össze:"
+        },
+        {
+            "type": "rule",
+            "title": "A kiemelkedés",
+            "headers": [],
+            "rows": [
+                [
+                    "Az érzelmek felesleges koloncok, súlyuk lehúzza elménket, akadályoz a szellemi tökéletesedésben. Ha megszabadulunk tőlük, mentesülhetünk fékező hatásuktól. Így magasabbrendűvé válunk embertársainknál, és jogot formálhatunk rá, hogy tetszés szerint bármire, bármikor, bármiként felhasználhassuk őket. Ez a folyamat az ún. kiemelkedés. A kiemelkedett személy – az alsóbbrendű lényekkel szemben – már bizonyságot adott róla, hogy méltó az életre; mivel azonban ő sem tökéletes, esetenként véthet az isteni törvények ellen. Ilyenkor kínálhatja kell vezekelnie, de nem feltétlenül a sajátjával: a célnak tökéletesen megfelel egy alsóbbrendű lény szenvedése is."
+                ]
+            ]
+        }
+    ]
+}

@@ -1,0 +1,99 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": true,
+    "section_title": "A bot különleges képességei:",
+    "content_blocks": [
+        {
+            "type": "paragraph",
+            "text": "A meditációt követően elvégzi a Megkötés szertartását, mely majdnem teljes egészében igénybe veszi a nap hátralévő részét. A szertartás végeztével a botban megfogant lélek és varázsló lelke egybeforr.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "A szertartás végén, életében először, megtelik elméje mágiával, (ám ez a mágia a rituálé végeztével szerte is foszlik) így rövid időre megtapasztalja, hogy milyen a mágikus hatalmakat birtokolni.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "A Bot a rituáléjának befejeztével a tanonc nem tanonc többé, hanem Doran teljes jogú varázslója, noha varázsolni ekkor még nem tud. (A mágia használatának megtanulása, csak ezek után kezdődik.) A rituálé befejeztét követő éjszaka a Beavatás éjszakája, címe ezentúl nem tanonc vagy növendék, hanem beavatott. Kevés személyes holmiját átviszik a Beavatottak tornyába, s itt már ha nem is túl nagy, de külön szobát kap. Ettől a naptól kezdve varázsló, igaz még őt hosszú, tanulással teli év vár rá, míg tudása alkalmassá teszi arra, hogy a mágiát teljes mélységében használni is tudja.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "I. A dorani varázslóbot a varázsló lelkének része, mely a körforgásban a varázslóhoz láncolva, de önálló lélekként „születik meg”.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "II. A bot és gazdája minden képzettségével bír, tehát a botnak lehet Pszi pontja és Mp-ja, melynek mennyisége a képzettségek után járó bónuszok nélkül számolandó; képes pszit alkalmazni, illetve varázsolni, ha bír a követelményekkel.",
+            "title": "Bot képzettségei",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "III. A bot önálló entitásként csakis lelki Tulajdonságokkal bír: Intelligencia, Akaratereje, Asztrálja egységesen 11, és a varázsló képes számára pontokat maradandóan átadni saját tulajdonságnövekményeiből (4. fokú képzettségekből, vagy KAP-ból származó növekmények). A bot gazdája minden képzettségével bír, tehát a botnak lehet Pszi pontja, melynek mennyisége teljesen a normális módon számolandó, és Mp-ja; képes pszit alkalmazni, illetve varázsolni, ha bír a követelményekkel. A pszit használni képes bot, mivel nem „lát” ezért csakis saját 20 ynevi láb sugarú zónáján belül képes alkalmazni pszionikus hatalmát, mintha körkörösen látna – ez leginkább a Tudatnyitáshoz hasonló pszi diszciplínával azonos – azonban a bot ME-je ezáltal nem szűnik meg. A varázsolni is tudó bot önálló zónával bír, mely teljesen megegyezik egy közönséges varázsló zónájával. Természetesen a bot képes eredeti alakjában is varázsolni, mozdulatok és kiejtett igék nélkül, azonban ekkor a szokásos négyszeresének megfelelő varázslási idővel. A bot számára a varázsló KAP-jaiból külön Pszi pontokat, illetve Mp-kat vásárolhat. A bot a gazdája minden Tapasztalati szintje után 3 Mp-tal növeli maximális Mp-jai számát ingyenesen. A benne tárolt varázserőt a varázsló 1 kör összpontosítással képes kinyerni és saját elméjébe elraktározni. A bot és gazdája Pszi pontjaikat szabadon megoszthatják, természetesen egyikőjük sem töltődhet maximális pontértékük fölé. A botba és varázslóba tárolt Tapasztalati szintnek megegyező számú Mp-t a bot vissza. Természetesen Energiaegyüttesek, ha már bír a bot ezen képességgel, ezt a folyamatot felgyorsíthatja!",
+            "title": "Bot tulajdonságai és képességei",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "IV. A varázslóbot, mivel önálló lélek, ezért támadható, illetve lelke köré védművek építhetőek stb. A bot feletti hatalom megszerzésével, vagy a bot akaratának lebonításával a varázsló elzárhatja a botban tárolt Mp-któl, vagy Pszi pontoktól, azonban gazdája ellen csak akkor fordul, ha Akaratpróbáján is elvéti.",
+            "title": "Bot sebezhetősége és kontrollja",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "V. A bot alap formájában ereklyének minősül, megsemmisíteni szinte lehetetlen. A mágia semmiféle formája nem hat rá, mindaddig, amíg a tulajdonosa él, mivel önálló Személyes Aurával rendelkezik. Másfelől fizikailag sem lehet kárt tenni benne: törhetetlen, éghetetlen stb. Ugyanakkor tulajdonosa képes mágiát alkalmazni a botra, de ártani ő sem tud neki, ebben az esetben a bot II. kategóriájú anyagcsoportba tartozik. Itt jegyzendő még meg, hogy a bot a megbontott erővonalak miatt ezen formájában sebezhető, ami azt jelenti, hogy egy hasonló méretű tárgyhoz, vagy élőlényhez képest annak STP-inek, avagy ÉP-inek duplájával bír. A varázslóbot élőlénnyé formázva homunkulusznak minősül.",
+            "title": "Bot ellenállása és formái",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "VI. Az önálló lélek, mely a botban található teljesen fejlődőképes; egyes meg nem erősített híresztelések szerint az anyagi mágia tornyának mestereinek botja átformázva élő személyekként, állatokként, növényekként ténykednek.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "A dorani varázsló a varázslón leírtakon kívüli különleges előnyei és hátrányai:",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "I. Első Tapasztalati szinten a rend segítségével a fent leírt procedúrával megszerzi varázslóbotját.",
+            "title": "Bot megszerzése",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "II. A dorani varázslók Észak elismert diplomatai, tudós fői. A dorani nagypecsét egyedi, az adott varázsló saját címével ékített változata, melyet minden varázsló akolitává avatása éjszakáján megkap, s afféle menlevélként szolgál a Szövetség egész területén. Kapukat nyit meg befolyásos nemesek kastélyaiba, segítséget és együttműködést biztosít hordozója számára Észak minden egyetemén, levéltárában. A hordozója nemesember, ki birtokát nem holdakban, hanem hatalma súlyában méri.",
+            "title": "Dorani nagypecsét",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "A dorani varázsló 1. Tsz.-en megszerzett képzettségei és a később oktatott ismeretek is megegyeznek a varázslónál leírtakkal.",
+            "title": "Képzettségek",
+            "headers": [],
+            "rows": []
+        }
+    ]
+}

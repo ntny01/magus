@@ -1,0 +1,345 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": false,
+    "section_title": "",
+    "content_blocks": [
+        {
+            "type": "paragraph",
+            "text": "Térképészet, Történelem, Udvari etikett, Vallásismeret (illetve minden egyéb, az egyház profiljába vágó képzettség).",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "A legtöbb pap egyáltalán nem hord sem fegyvert, sem vértezetet – elvégre nem az ő dolguk a hadakozás, és baj esetén általában számíthatnak rá, hogy gyülekezetük igyekszik megvédeni őket. Ugyanakkor némely egyházak és szekták sokkal agresszívabb viselkedést várnak el papjaiktól, néha egyenesen harciasnak mondhatók. Az ilyen vallások általában paplovagokat is képeznek, és nekik tartják fenn a hit sújtó öklének megtisztelő szerepét, de azért a papoktól is megkövetelik, hogy értsenek valamelyest a fegyverforgatáshoz. Amikor ezek a papok csatába vonulnak, hadifelszerelésüket rendkívül szigorú vallási-rituális diktátumok szabályozzák, melyek a kívülálló számára nemegyszer érthetetlenek, és felekezetről felekezetre eltérők, olykor még egyazon isten hívei között is. Gyakori előírás például, hogy csak istenük szent fegyverét forgathatják, vagy hogy vértezetük megválasztásakor tartózkodniuk kell az uruk számára ellenszenves anyagoktól.",
+            "title": "A pap fegyvertára",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "A Papok, mint istenük kiválasztottjai és bizalmasai élvezői, ingyenesen megkapják a Kegyet Hátteret, valamint képesek alkalmazni a Szakrális mágiát. Azonban fohászaikat csak azokból a szakrális szférákból választhatják, amelyeket uruk vagy úrnőjük hatalma megnyitott előttük; továbbá rendelkezésükre állnak istenüknek egyházi fohászai is (bővebben lásd a Szakrális mágia c. fejezetben a 255. oldalon. Emellett pedig élvezik a Hit erejéből fakadó védelmet, mely TME-jüket erősíti lásd a Vallásismeret képzettséget a 161. oldalon.",
+            "title": "A pap különleges előnyei és hátrányai",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "",
+            "title": "Egy átlagos 1. Tapasztalati szintű pap",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "table",
+            "text": "",
+            "title": "",
+            "headers": [
+                "Tulajdonság",
+                "Érték",
+                "Tulajdonság",
+                "Érték"
+            ],
+            "rows": [
+                [
+                    "Erő",
+                    "12",
+                    "Ép",
+                    "12"
+                ],
+                [
+                    "Gyorsaság",
+                    "13",
+                    "Fp",
+                    "3"
+                ],
+                [
+                    "Ügyesség",
+                    "13",
+                    "Mp",
+                    "—"
+                ],
+                [
+                    "Állóképesség",
+                    "13",
+                    "Kegy pont",
+                    "8"
+                ],
+                [
+                    "Egészség",
+                    "12",
+                    "MME",
+                    "17"
+                ],
+                [
+                    "Karizma",
+                    "14",
+                    "AME",
+                    "18"
+                ],
+                [
+                    "Intelligencia",
+                    "14",
+                    "",
+                    ""
+                ],
+                [
+                    "Akaraterő",
+                    "15",
+                    "",
+                    ""
+                ],
+                [
+                    "Asztrál",
+                    "16",
+                    "",
+                    ""
+                ],
+                [
+                    "Érzékelés",
+                    "14",
+                    "",
+                    ""
+                ]
+            ]
+        },
+        {
+            "type": "rule",
+            "text": "",
+            "title": "Elköltött KAP-ok",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "table",
+            "text": "",
+            "title": "",
+            "headers": [
+                "Kategória",
+                "Költség"
+            ],
+            "rows": [
+                [
+                    "Iskola (Pap)",
+                    "7 pont"
+                ],
+                [
+                    "Kegyelv",
+                    "12 pont (6 HM)"
+                ],
+                [
+                    "Fp",
+                    "3 pont (3 Fp)"
+                ],
+                [
+                    "Kp",
+                    "10 pont (10 Kp)"
+                ],
+                [
+                    "Kegy pont",
+                    "18 pont (6 Kegy pont)"
+                ]
+            ]
+        },
+        {
+            "type": "rule",
+            "text": "",
+            "title": "Fegyverek",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "table",
+            "text": "",
+            "title": "",
+            "headers": [
+                "Fegyver",
+                "fvn*",
+                "Hosszúkard"
+            ],
+            "rows": [
+                [
+                    "Időigény",
+                    "3",
+                    "5"
+                ],
+                [
+                    "KE",
+                    "27",
+                    "34"
+                ],
+                [
+                    "TÉ",
+                    "38",
+                    "53"
+                ],
+                [
+                    "VÉ",
+                    "86",
+                    "101"
+                ],
+                [
+                    "CÉ",
+                    "27",
+                    "27"
+                ],
+                [
+                    "Sebzés",
+                    "1k6",
+                    "2k6"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "* fegyver nélkül",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "",
+            "title": "Képzettségek",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "table",
+            "text": "",
+            "title": "",
+            "headers": [
+                "Induló képzettségek",
+                "Fok",
+                "Kp"
+            ],
+            "rows": [
+                [
+                    "Fegyverhasználat (hosszúkard)",
+                    "3. fok",
+                    "5 Kp"
+                ],
+                [
+                    "Ékesszólás",
+                    "2. fok",
+                    ""
+                ],
+                [
+                    "Helyismeret (szülőföld)",
+                    "3. fok",
+                    ""
+                ],
+                [
+                    "Kultúra (saját)",
+                    "4. fok",
+                    "5 Kp"
+                ],
+                [
+                    "Lélektan",
+                    "2. fok",
+                    ""
+                ],
+                [
+                    "Művészetek (ének)",
+                    "1. fok",
+                    "1 Kp"
+                ],
+                [
+                    "Nyelvtudás (anyanyelv)",
+                    "4. fok",
+                    "5 Kp"
+                ],
+                [
+                    "Nyelvtudás",
+                    "2. fok",
+                    ""
+                ],
+                [
+                    "Írás/olvasás",
+                    "3. fok",
+                    ""
+                ],
+                [
+                    "Legendaismeret",
+                    "1. fok",
+                    ""
+                ],
+                [
+                    "Történelem",
+                    "2. fok",
+                    ""
+                ],
+                [
+                    "Vallásismeret",
+                    "4. fok",
+                    "8 Kp"
+                ]
+            ]
+        },
+        {
+            "type": "rule",
+            "text": "",
+            "title": "Domvik-pap",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "Ki vagy hát Te, Uram?",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "flavor_text",
+            "text": "Vagyok, aki vagyok. Előszörre: zölddel sarjú vetés, anyaölnek melege. Másodszorra: halat adó habok, napnak mosolya. Harmadszorra: óvón nyújtott tenyér, erőnek bástyája. Negyedszerre: testet serkentő ír, léleknek balzsama. Ötödszörre: bölcsen szóló szózat, aggoknak intése. Hatodszorra: jobbal sújtó pallos, hegyeknek haragja. Hetedszerre: hidegre hűlő szív, éjnek morajlása. Vagyok, aki vagyok. Dicsérjünk hát Téged, Uram!",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "Balthus Beatus: Hétszeres Hitvallás",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "Domvik papjainak megjelenése tekintélyt parancsoló, méltóságukat minden körülmények között megőrzik; mi sem áll tőlük távolabb, mint a közönségesség vagy a könnyelmű sietség. A laikus hívőkben gondozásukra bízott birkanyájat látnak, s ennek megfelelően atyai jóindulattal kezelik őket, míg a kívülállók felé hűvös távolságtartással viseltetnek.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "Mivel őszintén igyekeznek eleget tenni a rájuk rótt feladatoknak, akár segítségért fordul hozzájuk, az mindig számíthat tanácsra, támogatásra – az elkerülhetetlen kioktatással és erkölcsi példázatokkal fűszerezve.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "Konokok és hajlíthatatlanok, nem feledik sem a szolgálatokat, sem a sérelmeket, és igyekeznek úgy rendezni az életüket, hogy ne hagyjanak elintézetlen ügyeket maguk után.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "Természetesen egyetlen más istent sem ismernek el Domvikon kívül: de nem rontanak karddal a kézben mindenkire, aki nem a Hétarcút tiszteli. Legalábbis Shadonon kívül nem. A többi vallás híveire jó jellemű hitek esetében mint szánandó tévelygőkre tekintenek, akiket hamis istenek tévesztettek meg, ám nem kárhoztatni kell őket ezért, hanem elvinni számukra Domvik fényét, hogy az igaz útra találva elnyerhessék az Egyetlen üdvösségét. A sötétebb tanokat vallókak ezzel szemben kiirtandó mételyeknek tekintik, kiknek istenként imádott démonai parazitaként élősködnek az embereken, kiknek romlott lelkét csupán a tisztító tűz képes az égbe emelni, s akiktől meg kell óvni az igazakat.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "Felszentelésükkor Domvik Hét Arcára tesznek esküt, s tevékenységüket a későbbiekben is az alapelv vezérli,",
+            "title": "",
+            "headers": [],
+            "rows": []
+        }
+    ]
+}

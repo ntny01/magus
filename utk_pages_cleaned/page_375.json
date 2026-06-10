@@ -1,0 +1,70 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": true,
+    "section_title": "A Rúnamágia alkalmazása",
+    "content_blocks": [
+        {
+            "type": "paragraph",
+            "text": "A Világegyetem törvényszerűségeit nemcsak szavakkal, hanem bizonyos különös vonalvezetésű jelekkel is meg lehet fogalmazni. Ezek a jelek képesek arra, hogy rabul ejtsék a mágikus energiákat, átalakítsák, kisugározzák őket, akár a varázsló elméje. Általában nem többek, mint egyszerű végrehajtók, ám némelyikük a varázsló segítőjeként is közreműködik a varázslatok során, akár holmi egyszerű inas. A Rúnamágia nagymesterei szinte minden, már megismert mágikus hatást képesek rajzolatok formájában leírni."
+        },
+        {
+            "type": "paragraph",
+            "text": "A Rúnamágia alkalmazásához a varázslónak tisztában kell lennie a Világegyetemet öröktörvényeiben meghatározó jelek és formák mibenlétével, törvényeikkel. Ehhez pedig a Rúnamágia képzettség legalább 3. fokú ismerete szükséges."
+        },
+        {
+            "type": "paragraph",
+            "text": "I. A Rúnamágia a mágikus tartamú rajzolatokat öt csoportba sorolja: Varázskörök, Varázsjelek, Szimbólumok, Bélyegek és Pentagrammák."
+        },
+        {
+            "type": "rule",
+            "title": "A rajzolatok épsége",
+            "headers": [],
+            "rows": [
+                [
+                    "II. Minden rajzolat elveszíti mágikus tartalmát (azaz többé nem fejt ki mágikus hatást), ha vonalai megsérülnek."
+                ]
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "A vonalak sérülése és a mágikus erő",
+            "headers": [],
+            "rows": [
+                [
+                    "III. A vonalakat bármi (akár tudattalan természeti jelenség is) megtörheti, de a beléjük foglalt varázserő miatt az őket hordozó felületek ötször annyi STP-vel bírnak, mint egyszerű társaik."
+                ]
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Rúnajelek vonalainak megtörése",
+            "headers": [],
+            "rows": [
+                [
+                    "IV. A rúnajelek vonalainak megtörésekor, ha bennük felhalmozott mágikus energia nem egyenletesen, hanem hirtelen és formátlanul távozik el, az nem kis veszélyt jelenthet a varázsló megtestőjére nézve. Rúnajeleket az a képzettség és sikeres Képzettségpróbát tesz. A KM a jel bonyolultságától és a tanulmányozására szánt időtől függően rendelhet módosítókat a próbadobáshoz."
+                ]
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Szakszerűtlen rúna feloldás",
+            "headers": [],
+            "rows": [
+                [
+                    "V. Abban az esetben, ha a rúna feloldását nem szakszerűen végzik el, akkor a kiszabaduló mana nem oszlik el némi fényjáték kíséretében a környező Manahálóban, hanem a megtörést a vonalakat megsértő tárgyon, illetve az azt végző, vagy vele érintkező személyen keresztül áramlik ki (mintegy villámhárítón keresztül szívja el). Ezt a legritkább esetben viseli el komolyabb sérülés nélkül az adott tárgy vagy személy. A kiszabaduló mágikus erők minden 5 Mp után 1k6 Sp sebet okoznak az áldozatnak. Ugyan ez vonatkozik a Drágakő mágiával készült varázstárgyak pusztulására is. Igen nagyhatalmú és összetett rajzolatok vagy jelsorok esetén a felszabaduló mana különleges mágikus jelenségeket is produkálhat, ezek a KM belátására vannak bízva."
+                ]
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Korlátozott mágiaformák",
+            "headers": [],
+            "rows": [
+                [
+                    "VI. A Rúnamágiával nem foglalható varázsjelekbe Szimpatikus mágia és az alább részletezettek kívüli egyéb mágiaformák."
+                ]
+            ]
+        }
+    ]
+}

@@ -1,0 +1,145 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": true,
+    "section_title": "Drágakőmágia",
+    "content_blocks": [
+        {
+            "type": "paragraph",
+            "text": "A varázstiszta drágakövek Okozás típusú hatással való feltöltéséhez 5. fokú Drágakőmágia képzettség szükséges."
+        },
+        {
+            "type": "paragraph",
+            "text": "A drágakőbe töltött minden Mana pont 1 E-vel növeli a benne tárolt mágikus hatás Erősségét (1 Mp = 1 E), ha Detekció típusú hatásról van szó."
+        },
+        {
+            "type": "paragraph",
+            "text": "A drágakőbe töltött minden 2 Mana pont 1 E-vel növeli a benne tárolt mágikus hatás Erősségét (2 Mp = 1 E), ha Védelem típusú hatásról van szó."
+        },
+        {
+            "type": "paragraph",
+            "text": "A drágakőbe töltött minden 3 Mana pont 1 E-vel növeli a benne tárolt mágikus hatás Erősségét (3 Mp = 1 E), ha Okozás típusú hatásról van szó."
+        },
+        {
+            "type": "paragraph",
+            "text": "A drágakövekbe tölthető Mana pontok mennyiségét egyedül a drágakő mérete korlátozza. Egy karátnyi drágakő 1 Mana ponttal tölthető fel – ebbe nem számítanak bele az Átlényegítésre fordított Mana pontok, tehát a drágakő elkészítésének Mp-igénye megegyezik az Átlényegítéshez és az erősítéshez (1, 2 vagy 3 Mp x E) szükséges Mp-k összegével."
+        },
+        {
+            "type": "paragraph",
+            "text": "Drágakőmágiával alapvetően kétféle módon készülhetnek varázstárgyak: Felruházással vagy Esszenciával."
+        },
+        {
+            "type": "paragraph",
+            "text": "Felruházás"
+        },
+        {
+            "type": "paragraph",
+            "text": "Felruházásnál a drágakövet gondosan kiválasztott hordozóba kell foglalni; a kő azon keresztül fejti ki hatását környezetére vagy viselőjére. Az egyes hordozókba foglalható drágakövek maximális nagyságáról az alábbi táblázat tudósít:"
+        },
+        {
+            "type": "table",
+            "headers": [
+                "Hordozó",
+                "Max. karát (Max. Mp, max. E)"
+            ],
+            "rows": [
+                [
+                    "Pálca, gyűrű",
+                    "40"
+                ],
+                [
+                    "Bot, markolat",
+                    "60"
+                ],
+                [
+                    "Medál",
+                    "100"
+                ],
+                [
+                    "Pajzs, páncél (mellvért)",
+                    "120"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "Az adott varázstárgy elkészítéséhez a mágikusan feltöltött drágakövet bele kell foglalni a hordozófelületbe, méghozzá szem előtt tartva a drágakőmágia alapvető szimmetriájára vonatkozó alapvető szabályokat. Emiatt a drágakőmágusnak magának kell bírnia a vonatkozó képzettség (Szakma – fegyverkovács, ötvös stb.) legalább 4. fokával, vagy pedig irányítania kell a mestert munka közben, akinek szintén bírnia kell a Szakma képzettség 4. fokával."
+        },
+        {
+            "type": "paragraph",
+            "text": "A gyűrűbe foglalt drágakő csak akkor fejti ki hatását, ha a gyűrűt viselik. A detektáló-gyűrűvel való érzékeléshez összpontosítani kell; a viselő a testétől számított 20 ynevi lábnyi körben, egyszerre minden irányban érzékel. A védő-gyűrű – hacsak az adott leírásánál másként nem szerepel – szünet nélkül gyakorolja védelmét viselőjére – amíg az a gyűrűt az ujján tartja. Az okozó-gyűrű hatását viselője akarata és a hatás leírásánál közöltek szerint gyakorolja, akkor, amikor a gondolati parancsot kiadja."
+        },
+        {
+            "type": "paragraph",
+            "text": "A pálcába foglalt drágakő csak akkor fejti ki hatását, ha a pálcát kézben fogják. A detektáló-pálcával való érzékeléshez összpontosítani kell, s a pálcával a kifürkészni kívánt irányba mutatni; a pálca birtokosa 20 láb távolságig képes érzékelni. A védő-pálca csak akkor védi birtokosát, ha az a kezében tartja és csak az ellen, akire vagy amire a pálcával mutat. Az okozó-pálca hatását arra gyakorolja, akire vagy amire a pálca birtokosa mutat. A kiszemelt áldozatnak nem 20, hanem 100 láb sugarú körön kell belül esnie."
+        },
+        {
+            "type": "paragraph",
+            "text": "A medált általában nyakban, láncon hordják; hatását csak arra fejti ki, aki viseli. Minden egyébben a gyűrűkre emlékeztet."
+        },
+        {
+            "type": "paragraph",
+            "text": "A botba foglalt drágakő csak akkor fejti ki hatását, ha a botot kézben fogják. A detektáló-bottal való érzékeléshez összpontosítani kell, és a botot föltartani a kívánt irányba tekintve. A bot birtokosa abban az irányban, amerre néz, 120 fokos irányszögben, 40 ynevi láb távolságig érzékel. A védő-bot csak akkor védi birtokosát, ha kezében fogják, és csak az ellen, aki vagy ami felé tartják. Az okozó-bot hatását arra gyakorolja, aki vagy ami irányába a botot emelik; a kiszemelt áldozatnak 60 ynevi lábon belül kell tartózkodnia."
+        },
+        {
+            "type": "paragraph",
+            "text": "A pajzs majd' mindenben a bothoz hasonlít, ám esetében az okozás, védelem avagy detekció mindig arra fejti ki hatását, amerre a pajzs hordozója néz; a távolság pedig a szokásos 20 ynevi láb."
+        },
+        {
+            "type": "paragraph",
+            "text": "A markolat bármilyen fegyver markolata lehet; a belefoglalt drágakő csak akkor fejti ki hatását, ha a fegyvert kézben tartják. A detektálóés védő-fegyverek a hasonló botokra, az okozó-fegyverek pedig az okozó-pálcákra emlékeztetnek – ám hatásukat minden esetben csak 20 láb távolságig fejtik ki. A fegyverek természetükből eredően egészen különbözően viselkednek, ha a hatás a harccal mint tárgykörrel kapcsolatos (lásd a hatások leírásában)."
+        },
+        {
+            "type": "paragraph",
+            "text": "A páncél azon darabja, amely a drágakő foglalatát adja, mindig merev anyagból kell legyen. A páncélba foglalt drágakő csak akkor fejti ki hatását, ha a páncélt viselik. A páncélok – természetükből fakadóan – kivételes módon viselkednek, ha a drágakő tárgykörre a védelemmel kapcsolatos. Egyebekben mindenben a medálokra emlékeztetnek."
+        },
+        {
+            "type": "paragraph",
+            "text": "Esszencia"
+        },
+        {
+            "type": "paragraph",
+            "text": "Az Esszencia Szimpatikus Mágián alapuló eljárás, mellyel bájitalokat lehet készíteni. Lényege, hogy a mágikus hatalommal (Mana pontokkal) már feltöltött drágakövet kristálytiszta forrásvízbe helyezzük, s ott egy teljes holdhónapon át állni hagyjuk, miáltal a víz átveszi a kő hatását és bájitallá válik. Külsőre a bájolás nem állapítható meg a vízről, de mágikus Fürkészés felfedi mibenlétét. A drágakő az egy hónap leteltével, újabb egy hónapig képtelen mágikus hatás kisugárzására, de utána újból felhasználható, egyszerre azonban csak egyetlen adagra való esszencia készíthető vele."
+        },
+        {
+            "type": "paragraph",
+            "text": "Az esszenciák – a bájitalokhoz hasonlóan – arra vonatkoztatva fejtik ki mágikus hatásukat, aki megissza őket, az okozás jellegű esszenciák gyűrű viseletére emlékeztető módon működnek, azaz a hatás nem az ital felhasználóját éri. Egyes esszenciák esetében ez egészen abszurd helyzetet teremthet."
+        },
+        {
+            "type": "paragraph",
+            "text": "Drágakövek mágikus hatásai"
+        },
+        {
+            "type": "paragraph",
+            "text": "Az alábbiak hordozóba foglalt drágakőre vonatkoznak, de ugyanezen hatások érvényesülnek esszenciák esetében is. Az egyetlen kivétel, hogy az esszencia a bájitalokhoz hasonló, azaz csak egyszer hatásos."
+        },
+        {
+            "type": "paragraph",
+            "text": "Alexandrit"
+        },
+        {
+            "type": "rule",
+            "title": "Detekció: Démonok észlelése.",
+            "headers": [
+                "Detekció: Démonok észlelése."
+            ],
+            "rows": [
+                [
+                    "Ha a démon leplezni akarja jelenlétét, nagyobb erősítéssel kell tegye, mint a varázstárgy E-je, különben lelepleződik. Az észlelő nem képes meghatározni a démon típusát, csak azt, hogy Külső, Démoni síkról származik."
+                ]
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Védelem: Védelem a démonoktól.",
+            "headers": [
+                "Védelem: Védelem a démonoktól."
+            ],
+            "rows": [
+                [
+                    "A kő olyan aurát bocsát ki, amely felettébb kellemetlen a démonoknak, ezért össze-"
+                ]
+            ]
+        }
+    ]
+}

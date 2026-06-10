@@ -1,0 +1,134 @@
+{
+    "is_new_chapter": true,
+    "chapter_title": "Új Törvénykönyv",
+    "is_new_section": true,
+    "section_title": "Őselem teremtése",
+    "content_blocks": [
+        {
+            "type": "rule",
+            "title": "Őselem teremtésének költségei",
+            "headers": [
+                "Elem típusa",
+                "Mana pont / E",
+                "Varázslás ideje / E"
+            ],
+            "rows": [
+                [
+                    "Őselem",
+                    "3 Mp",
+                    "1 szegmens"
+                ],
+                [
+                    "Paraelem",
+                    "2 Mp",
+                    "1 szegmens"
+                ]
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Őselemek kölcsönhatása",
+            "headers": [
+                "Elem típusa",
+                "Hatás",
+                "Sebzés"
+            ],
+            "rows": [
+                [
+                    "1 E Ős- és Paraelem kiolt",
+                    "Kisebb E megszűnik, nagyobb E gyengül. Egyenlő E esetén mindkettő megsemmisül.",
+                    "Nem specifikált"
+                ],
+                [
+                    "Ellentétes Őselemek érintkezése",
+                    "Gyengítik, kioltják egymást.",
+                    "1k6 sebzés"
+                ]
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Őselemek sebzése",
+            "headers": [
+                "Elem típusa",
+                "Sebzés / E",
+                "Megjegyzés"
+            ],
+            "rows": [
+                [
+                    "Őselem (általában)",
+                    "1k6 Sp",
+                    "Ellentétes Őselem-alapú lényekre"
+                ],
+                [
+                    "Őstűz (támadásra)",
+                    "Nem specifikált",
+                    "Ynev Ősvíz alapú, így védekezésre az Ősvizet használják."
+                ],
+                [
+                    "Ősvíz (védekezésre)",
+                    "Nem specifikált",
+                    "Ynev Ősvíz alapú, így védekezésre az Ősvizet használják."
+                ],
+                [
+                    "Ős- vagy Paraelem (támadóformációban)",
+                    "2 Sp",
+                    "Nem ellentétes Őselemből felépülő lényen is sebezhet."
+                ]
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Őselemek védelmi képessége (SFE)",
+            "headers": [
+                "Elem típusa",
+                "SFE / E",
+                "Megjegyzés"
+            ],
+            "rows": [
+                [
+                    "Minden Őselem (kivéve Őstűz)",
+                    "1 SFE",
+                    "Minden egyes E után, a mögötte lévő tárgyak, élőlények számára."
+                ],
+                [
+                    "Őselemi Föld",
+                    "2 SFE",
+                    "Minden egyes E után, a mögötte lévő tárgyak, élőlények számára."
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A varázsló Őselemet (Őstüzet, Ősvizet, Ősföldet, Ősjeget) teremt, amit a kívánt formába (Formázás) zár. Ez lehet a Hét Iskolaforma egyike, vagy – ha a varázsló bír efféle tudással – valamely Szabad Elemi Forma. Azt, hogy a teremtett Ős- elem meddig marad együtt, a Formázás határozza meg."
+        },
+        {
+            "type": "paragraph",
+            "text": "A varázslók az Őstüzet általában támadásra, az Ősvizet védekezésre használják, míg a további két Őselemhez csak egyéb céllal, vagy más létsíkok teremtményeivel szemben nyúlnak. Az ellentétes Őselemek gyengítik, akár ki is olt- ják egymást. Ellentétes Őselemmel való érintkezés 1k6 sebzést okoz."
+        },
+        {
+            "type": "paragraph",
+            "text": "A hétköznapi tárgyak és az Őselemek találkozása esetén az említett célpontok az adott Őselem sebzésének megfelelő STP-t sérülnek, azaz elégnek, szétfagynak, összetörnek, il- letve például a leginkább Őselemi Földből felépülő eszkö- zök, mondjuk fém fegyverek esetében az Őslégtől elrozs- dállnak. Ezen sérülések módozatairól, mikéntjéről a KM jogköre dönteni."
+        },
+        {
+            "type": "paragraph",
+            "text": "Azonban, ha a tűzvarázsló 3 E-s Tűznyila lecsökkenti az aura E-jét 5-re, akkor már az aura a fizikai támadások ellen is csak a csökkentett 5 pontos SFE-vel bír."
+        },
+        {
+            "type": "paragraph",
+            "text": "A fenti szabály alól csak az Őselemi Föld a kivétel, mely E-nként 2 pontos SFE-t ad a formáció mögött lévőik számára. Az Őselemi Föld azonban másban is eltér a többi Őselemtől, mivel minél nagyobb E-vel idézzük meg, megjelenési formája annál tömörebb, kristályszerűbb; 1-5 E-ig általában por vagy homokszerű, 6-10 E-ig nagyobb leginkább kavi- csokra emlékeztető rögökbe áll össze, 10 E felett már kristályos sziklaszerű anyagot idéző meg. Ezen tulajdonsága miatt az Őselemi Föld támadóformációban, akár nem ellentétes Őselemből felépülő lényen is sebezhet, E-nként 2 Sp-t."
+        },
+        {
+            "type": "example",
+            "text": "Példa: ha Wilvarien, a varázsló egy Őselemi Víz aurával igyekszik magát védeni egy tűzvarázsló támadása ellen, és idéz egy 8 E-s aurát, akkor az aura nemcsak a tűz alapú támadások ellen védi az erejéig, de felfogja a 8 Sp-nél ki- sebb fizikai támadásokat, tehát az ellenleges mágiahasználó kardcsapásait is."
+        },
+        {
+            "type": "paragraph",
+            "text": "hoz hasonlóan – erősíthetők, ha a varázsló erre további Mp-okat áldoz: nő a varázslat E-je, és ezzel arányban a hatás és a sebzés is."
+        },
+        {
+            "type": "paragraph",
+            "text": "homokszerű, 6-10 E-ig nagyobb leginkább kavi- csokra emlékeztető rögökbe áll össze, 10 E felett már kristályos sziklaszerű anyagot idéző meg. Ezen tulajdonsága miatt az Őselemi Föld támadóformációban, akár nem ellentétes Őselemből felépülő lényen is sebezhet, E-nként 2 Sp-t."
+        }
+    ]
+}

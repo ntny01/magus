@@ -1,0 +1,70 @@
+{
+    "is_new_chapter": true,
+    "chapter_title": "HARCMŰVÉSZEK",
+    "is_new_section": true,
+    "section_title": "A Ki Energia",
+    "content_blocks": [
+        {
+            "type": "paragraph",
+            "text": "A harcművészek a testüket és elméjüket tökéletesítik, hogy fegyverré váljanak. Nem csupán a fizikai erőre támaszkodnak, hanem a belső energiájuk, a ki uralására is. Képzésük során különleges technikákat sajátítanak el, amelyekkel felülmúlják a hagyományos harcosokat.",
+            "title": null,
+            "headers": null,
+            "rows": null
+        },
+        {
+            "type": "paragraph",
+            "text": "A ki energia a harcművészek életereje és belső ereje. Ezt az energiát használják fel különleges képességeikhez, mint például a gyors mozgás, az erős ütések vagy a fájdalom elviselése. Minden harcművész rendelkezik egy bizonyos mennyiségű ki ponttal, amelyet a nap folyamán felhasználhat.",
+            "title": null,
+            "headers": null,
+            "rows": null
+        },
+        {
+            "type": "rule",
+            "text": "A harcművészek ki pontjainak száma a Szintjük + Akarat erejük. Minden harcművész szintlépéskor 1d6+1 ki pontot kap. A ki pontok pihenéssel regenerálódnak, óránként 1 pont.",
+            "title": "Ki Pontok",
+            "headers": null,
+            "rows": null
+        },
+        {
+            "type": "example",
+            "text": "Egy 5. szintű harcművész, akinek Akarat ereje 15, 20 ki ponttal rendelkezik (5+15). Ha egy különleges rúgást hajt végre, ami 3 ki pontba kerül, akkor 17 ki pontja marad.",
+            "title": "Ki felhasználása",
+            "headers": null,
+            "rows": null
+        },
+        {
+            "type": "flavor_text",
+            "text": "A test a lélek temploma, a lélek pedig a ki forrása. Aki ezt megérti, az uralja a harcot.\" - Egy ősi mester mondása",
+            "title": null,
+            "headers": null,
+            "rows": null
+        },
+        {
+            "type": "table",
+            "text": null,
+            "title": null,
+            "headers": [
+                "Szint",
+                "Képesség",
+                "Ki Költség"
+            ],
+            "rows": [
+                [
+                    "1",
+                    "Gyors ütés",
+                    "1"
+                ],
+                [
+                    "3",
+                    "Elkerülés",
+                    "2"
+                ],
+                [
+                    "5",
+                    "Erőteljes rúgás",
+                    "3"
+                ]
+            ]
+        }
+    ]
+}

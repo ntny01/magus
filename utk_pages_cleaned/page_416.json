@@ -1,0 +1,72 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": false,
+    "section_title": "",
+    "content_blocks": [
+        {
+            "type": "flavor_text",
+            "text": "Azóta számos hasonló pengét készítettek, s mindegyikbe az előző szent lelkét bűvölték. Mivel Ranil hosszú élettel ajándékozza meg a nagymestereket, eddig mindössze tizenkilenc Rawoon készült. Hármat elpusztítottak, hatnak nyoma veszett – köztük a Hidakir lelkét tartalmazónak, a Fénykévének is. Némelyik Toron hadizsákmánya lett, mások, például a Fényvivő, Silkann szent kardja, Ediomad mélyén tűnt el hordozójával együtt. A hiányzó pengék holttér még mágiával sem sikerült földeríteni. Fokozhatja a dwoonok megosztottságát, hogy a Fénykéve a hírek szerint a lázongó imryra Dali tulajdonába került. Hogy honnan és miképpen, arra a legbölcsebbek sem tudják a választ."
+        },
+        {
+            "type": "paragraph",
+            "text": "A Dwyll Unió hivatalos nyelve a dwoon; az érvet számon, a közöst csupán az iskolázottabbak beszélik. Az ország lakosai túlnyomó többségében dwoonok, elszórtan találni csupán egy-egy érv illetve törpe kolóniát."
+        },
+        {
+            "type": "paragraph",
+            "text": "Ami az öltözködést illeti, a nemtelen szabadok és a nemesek szokásai nagyban különböznek. Az előbbiek a sötét, olykor pasztell árnyalatokkal díszített összeállításokat kedvelik, ruházatukra legjobban a gyakorlatias kifejezés illenék. A cserzett bőr zeke, vastag posztónadrág és köpeny mindennapos viselet körükben. A nemesség zöme valamely lovagrend tagja. Öltözködésük túlzó színorgia: sárga, vörös, lila, kék selymek, és finoman kidolgozott kelmék együttese. Páncéljaikat gyakran ezüsttel futtatják, lótakaróik – ahogyan egy harcos néphez illik – a vér vörös színét idézik. Fegyverekből a két kézre foghatókat kedvelik leginkább: a pallost, csatabárdot, kopját és lándzsát."
+        },
+        {
+            "type": "paragraph",
+            "text": "A dwoonok alig kereskednek a környező államokkal. Élelmiszerből önellátóak, tevékenységük egyes nyersanyagok, ércek behozatalára korlátozódik. Az Unió árai elviselhetőek a külvilágiak számára, ám döreség lenne ebben az országban valódi kényelemre, rafinált ízekre és örömökre számítani."
+        },
+        {
+            "type": "paragraph",
+            "text": "A dwoon iskolák többségében Ranil paplovagjai tanulják hivatásukat, ám minden nagyobb településen megtalálhatók a harcos iskolák oktatói is. A közbiztonság átlagos; a városokban és erősségekben kimondottan jó, az utakon és a kisebb településeken azonban könnyen baja eshet az óvatlan utazónak."
+        },
+        {
+            "type": "paragraph",
+            "text": "Az Unió területén kizárólag Ranil isteni templomai állnak – más vallások hívei jobban teszik, ha nem mutatnak túlzott buzgóságot hitük iránt."
+        },
+        {
+            "type": "paragraph",
+            "text": "Gianag"
+        },
+        {
+            "type": "paragraph",
+            "text": "Dawa bukása után, a darabjaira hullott birodalom területén egymással marakodó hercegségek, királyságok alakultak, melyek folytonos harcban állottak egymással, valamint a külső és belső ellenséggel. Amíg a délebbre elbukott démoncsászárság romjain Toron lassan felemelte fejét – egyelőre minden erejét határai védelmére és a belső rend megteremtésére fordítva –, addig északon is mélyreható változások történtek. A nyugatról érkezett irláv törzsek egy megerősödött ága vette birtokába a Traidlan-medencét."
+        },
+        {
+            "type": "paragraph",
+            "text": "Királyaik a lassan megnyugvó északi vidékeken elismert uralkodók voltak, szomszédjaikkal – elsősorban Erigowval – gyümölcsöző kapcsolatokat alakítottak ki. A királyság legnagyobb kiterjedését a Pyarron szerinti VIII. században érte el. Ekkor az uralkodó egy Ötödkori tekercs jövendöléseire hivatkozva három hercegségre osztotta az országot – fiaira biztonságos határokat és a Káoszkor zűrzavarához képest rendezett belső viszonyokat, jószomszédi kapcsolatokat hagyott."
+        },
+        {
+            "type": "paragraph",
+            "text": "A három hercegség: Eren, Haonwell és Gianag, melyeket Északi Hármak néven ismert ezentúl a világ, azóta is szoros szövetségben áll egymással. Gianag története némiképp másként alakult, mint testvérei – enyhe legalább okaként egy egész Ynevre hatást gyakorló eseményt szoktak megemlíteni: a Pyarron szerinti 1200-as évek derekán a fővárosban, Sinog Kulban fogadták a pártot ért beriquei törpék prémbundás követeit. Az akkori vezetők nem követték el súlyos diplomáciai hibákat, hozzájárultak, hogy a törpék letelepedjenek a Traidlan-hegységben, s azok hamarosan csatlakoztak az Északi Hármak és Erigow kezdeményezésére létrejött Szövetséghez."
+        },
+        {
+            "type": "paragraph",
+            "text": "Jelenlétükből Gianag húzta a legtöbbet hasznot. A törpékkel fenntartott híresen jó viszony a hercegségen belül szinte mindenütt megmutatkozik. Nemcsak a hercegi testőrség törpe tagjai és az építészet beriquei stílusjegyei utalnak erre, de a vanír nyelv elterjedtsége, s a különböző szokásokban, a mondavilágban mutatkozó hasonlóságok is."
+        },
+        {
+            "type": "paragraph",
+            "text": "A jó katonai és gazdasági kapcsolatokkal rendelkező állam – erőskezű hercegeinek irányítása alatt – viszonylagos biztonságban él. Távol esik a különböző ütközőzónáktól, háború emberöltők óta nem dúlta területét. Ez nem jelenti azt, hogy lakói ne lennének jó kardforgatók, hiszen a magára valamit is adó nemesek mindegyike ért a fegyverhasználathoz, s a nép körében nagy megbecsülésnek örvendő alabárdosok is messze földön híresek."
+        },
+        {
+            "type": "paragraph",
+            "text": "A külsőségekre nem sokat adó gianagiak a külhoniak szemében gyakorta igénytelennek tűnnek – a zord éghajlat és a lakosok puritán gondolkodása e különcségre is magyarázatot ad. Nem szembetűnő a különbség a nemesek és nemtelenek között, de a nekik kijáró tiszteletet mindig megkapják a családjuk hagyományaira büszke birtokosok. Az északi mondás – „Gianagban mindenki úr” – kétszeresen igaz. Egyfelől, mert a városokon kívül élő nemtelenek szabadon rendelkezhetnek saját földjeik felett, még ha azokon nem is termény, hanem tűlevelű erdő zöldell; másfelől, mert hírhedetten büszke és udvarias még a legszegényebb gianagi is."
+        },
+        {
+            "type": "paragraph",
+            "text": "Bár külsőségekben nincs sok különbség úr és szolga között, az ország ügyeinek igazgatása mégiscsak a nemesség feladata. A legfőbb ügyekben a herceg szava dönt, őt a nemesi gyűlés igyekszik segíteni a határozatok meghozatalában. Nem egyszer volt már rá példa, hogy a nemesség és az uralkodó nem értett egyet valamely kérdésben, de arra még sohasem, hogy valamely, az országot közelről érintő problémát, legyen az háború vagy szövetség, ne sikerült volna közös megegyezéssel helyreigazítani."
+        },
+        {
+            "type": "paragraph",
+            "text": "Egyetlen dolgon azonban a legnagyobb jóindulattal sem tudnak változtatni – országuk földrajzi helyzetén. A hegyek és a szűkös termőföldek nem kedveznek a mezőgazdaságnak, s bár Gianag állattenyésztése híres, lakói a javak zömét a környező államoktól kénytelenek beszerezni, ezért háborús időkben bizony megérzik, ha a szomszédok éléskamrája ürülni kezd. Jobbára nyersanyagokkal kereskednek, de elég nagy keletje van kézműveseik míves termékeinek és a hegyekből lehajtott, híresen szívós marhacsordáiknak is."
+        },
+        {
+            "type": "paragraph",
+            "text": "A törpénél való jó kapcsolatnak ugyan bárhol nyomára bukkanhatunk, de sehol annyira, mint a főváros, Sinog Kul utcáit járván. Az uralkodói székhely égbenyúló hegyek között fekszik, s hatalmas méreteire nem is következtethet az utazó, ha a törpe védművekkel megerősített falakhoz valamelyik évezredes kőút irányából közelít. Az óriás kapuk mögött rejtkező város legnagyobb része ugyanis a hegyek mélyén található. Ravasz csapdákkal védett kürtők biztosítják a sziklába vájt otthonok, őrhelyek szellőzését és fényellátását. Ahol ez nem vezethet eredményre, vagy nem akartak közvetlen kapcsolatot teremteni a felszínnel, ott mágiával oldották meg ugyanezt."
+        }
+    ]
+}

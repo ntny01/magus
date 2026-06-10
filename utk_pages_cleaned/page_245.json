@@ -1,0 +1,56 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": false,
+    "section_title": "",
+    "content_blocks": [
+        {
+            "type": "paragraph",
+            "text": "forrásadósokat hagy hátra, mivel a varázslat csupán a természetes gyógyulást gyorsítja fel."
+        },
+        {
+            "type": "paragraph",
+            "text": "A varázslat minden ÉP-je után a célpont 1 ÉP-t vagy annyi FP-t gyógyul, amennyi a bárd tapasztalati szintje. A bárd képes varázslatával betegséget vagy mérgezést is gyógyítani, ilyenkor a varázslat célpontjának Egészségpróbájához annyi plusz módosító járul, amennyi a Dal Erőssége."
+        },
+        {
+            "type": "paragraph",
+            "text": "A varázslat Erősségére azonban nem adódnak hozzá a bárd Éneklés és Zenélés képzettsége nyújtotta bónuszok."
+        },
+        {
+            "type": "rule",
+            "title": "Nyugalom dala",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "A bárd énekének hatására minden célpont, aki hallótávolságon belül tartózkodik és Mágiaellenállása sikertelen, közönyössé válik, elveszti harci kedvét. Haragjuk, indulataik elszállnak, megnyugszanak, míg ha a dal közben elszenderednek, álmuk zavartalan és nyugodt lesz. Ha ebben az állapotban megtámadják őket, újra fegyverükhöz kapnak, s harcolni kezdenek. Ekkor már nem nyugtathatók meg újabb Nyugalom dalával."
+        },
+        {
+            "type": "rule",
+            "title": "TávolSág dala",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "Ez a varázslat bármely daltípusú varázslattal együtt használható. Nem a dal hangerejét, csak a varázslat hatótávolságát növeli meg. A bárdnak nem kell hangosan játszania, a hangfoszlányok mégis utat találnak a lármán, ricsajon, falakon át. A hatósugár kétszeresére, háromszorosára stb. növelhető, méghozzá a kétszeres növelés 6, a háromszoros 9, a négyszeres 12 Mana-pontért, stb. A varázslat hatóideje megegyezik a „hangosított” dal időtartamával."
+        },
+        {
+            "type": "rule",
+            "title": "Zavarodottság dala",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "A bárd énekének hatására azon célpontok, akik hallótávolságon belül tartózkodnak és Mágiaellenállásuk sikertelen, teljesen összezavarodnak. Értetlenül néznek körül, nem tudják, mit tegyenek, hova indultak, mit csináltak épp az előbb. Csak tétován álldogálnak, ám ha megtámadják őket, védekeznek, és a Harc félelem hatása alatt módosítói érvényesek rájuk."
+        },
+        {
+            "type": "rule",
+            "title": "Statisztika",
+            "headers": [],
+            "rows": []
+        }
+    ]
+}

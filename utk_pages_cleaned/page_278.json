@@ -1,0 +1,108 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": true,
+    "section_title": "Domvik egyedi litániái",
+    "content_blocks": [
+        {
+            "type": "paragraph",
+            "text": "a próbát elvétette, s ezeket a pontokat csak 1k6 nap alatt nyeri vissza."
+        },
+        {
+            "type": "paragraph",
+            "text": "A fohász időtartama a Kegy pontok megtöbbszörözésével sem hosszabbítható meg."
+        },
+        {
+            "type": "rule",
+            "title": "Acélos akarat",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "A Hétarcú szolgálói gyakorta kerülhetnek olyan helyzetbe, amikor kivételes Akaraterővel lehet csak szembeszegülni az ellenük forduló hatalmakkal. Ez a fohászuk éppen az ilyen lehetőségek esetén nyújt segítséget Domvik híveinek. A pap nemcsak magára, hanem egy általa kiválasztott személyre is rámondhatja."
+        },
+        {
+            "type": "paragraph",
+            "text": "A fohász hatására az illető Akaratereje a fohász minden E-je után 1-gyel megnő (nem emelkedhet azonban 20 fölé), s a fohász ideje alatt ez lesz a meghatározó pl. a TME kiszámolásánál is."
+        },
+        {
+            "type": "paragraph",
+            "text": "Domvik egyedi rituáléi"
+        },
+        {
+            "type": "rule",
+            "title": "Isteni emlékezet",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "Domvik közbenjárásával papjai hihetetlen módon kitolhatják emlékezetük korlátait. A szertartás gondos előkészületeket igényel, s a papnak mindenre fel kell készülnie, ami a későbbiekben fontos lehet számára. Ezt követően egyfajta transzba esik, s onnan csupán a fohász végeztével kerül ki."
+        },
+        {
+            "type": "paragraph",
+            "text": "A pap könyveket tanulhat meg ily módon szóról szóra, szertartások leírását tanulmányozhatja, de éppen verseket is hallgathat. Minden esetben pontosan fog emlékezni mindenre a fohász befejezésétől számított 1 hétig. A transz időtartama mindig olyan hosszú lesz, amennyit az adott feladat elvégzése, tehát valamely tudás elsajátítása jelent, ám semmi esetre sem lehet a pap Intelligenciájával egyező számú óránál több. Képzettségek és más gyakorlati dolgok – nyelvek, stb. – megtanulása ily módon nem lehetséges, lévén sokkalta több időt igényelnek."
+        },
+        {
+            "type": "paragraph",
+            "text": "Ha a pap valamilyen külső behatás folytán kizökken a transzból, minden eddig elsajátított ismerete és elhasznált Kegy pontja kárba vész, s csakúgy megsemmisül mindaz a tudás, amelynek elsajátítása meghaladná a rendelkezésére álló időt."
+        },
+        {
+            "type": "rule",
+            "title": "Isteni fegyver",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "A papot kérésére istene különleges fegyverrel ajándékozhatja meg. Ez esetenként természetesen különbözhet, ám mindig erős fehér fényt árasztó tárgy lesz. Ezeket a harci eszközöket Domvik papjai általában csak végső esetben kérik, isteneiktől, de általánosan ilyen fegyverekkel szokás az Exterminust is végrehajtani."
+        },
+        {
+            "type": "paragraph",
+            "text": "Értékeik a hasonló, közönséges fegyverekéhez képest a következőképpen módosulnak:"
+        },
+        {
+            "type": "rule",
+            "title": "Fegyver módosítók",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "Hitük szerint a Fekete Angyaltól kapják ezeket a fegyvereket, s az ő közbenjárásáért csak a legritkább esetekben fohászkodnak."
+        },
+        {
+            "type": "paragraph",
+            "text": "Az Isteni fegyver használatának nem előfeltétele egyetlen képzettség elsajátítása sem, ha a pap nem is képzett benne, úgy forgathatja, mintha 2. fokú képzettséggel bírna. Amennyiben a fegyveres képzettsége ennél magasabb, az ebből adódó bónuszok érvényesülnek. Fegyvertöréssel, lefegyverzéssel nem támadható. Két Isteni fegyvert egyetlen karakter sem forgathat."
+        },
+        {
+            "type": "rule",
+            "title": "Kézrátétel",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "Domvik papjainak gyógyító hatalma közismert még az északon élők között is. Ezzel a fohásszal sebeket, sérüléseket képesek eltüntetni. A közönséges Gyógyítástól azonban több vonatkozásban is eltér. A fohász bárkit meggyógyít, akit a pap arra érdemesnek tart, s nem kíván előzetesen áldást sem az alkalmazójától. Míg a pap egyik kezében szent jelképét tartja, másikat a sérült testrészre kell helyeznie, s amennyiben hatalma elegendő rá, azt rendbe is hozza. Szúrt, vágott és zúzott sérülések egyaránt orvosolhatók – így a hegek, forradások nyomtalanul eltűnnek –, ám betegségeket, mérgezést és egyéb fogyatékosságot képtelen gyógyítani."
+        },
+        {
+            "type": "paragraph",
+            "text": "A pap szintenként 2 Ép vagy 4 Fp visszaadásra képes. További Kegy pontok felhasználásával az így visszaadható életerő nem növelhető. A pap csakis azoknak a sérüléseknek a meggyógyítására képes, amelyeket egyetlen fohásszal semlegesíthet. Elképzelhetetlen tehát, hogy amennyiben nem elég magas szintű egy komolyabb sérülés orvoslására, akkor azt több részletben tegye meg."
+        },
+        {
+            "type": "paragraph",
+            "text": "Dreina egyedi litániái"
+        },
+        {
+            "type": "rule",
+            "title": "Hűségbélyeg",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "Ha ezt a fohászt alkalmazva Dreina egy papja megérint valakit, és az elvéti a Mágiaellenállást, akkor a fohász célpontja a hatóidő lejártáig hűséges marad ahhoz a személyhez, eszméhez, csoportosuláshoz, országhoz stb., amelyet, akit a pap számára meghatároz."
+        }
+    ]
+}

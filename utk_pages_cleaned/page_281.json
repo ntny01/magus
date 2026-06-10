@@ -1,0 +1,88 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": false,
+    "section_title": "",
+    "content_blocks": [
+        {
+            "type": "rule",
+            "title": "Döbbenet",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "Szféra: Lélek. Kegy pont: 1. Fohász hossza: 1 szegmens. Hatótáv: 20 ynevi láb. Időtartam: Egyszeri. Mágiaellenállás: Mentális. A fohász nem más, mint egy éles kiáltás, amely ha az ellenfél elvéti Mágiaellenállását, lehetővé teszi, hogy a zavart kihasználva Ranagol papja az összecsapásukban elsőként támadhasson, bármi volt is a kezdeményezés eredménye. Ellenfele döbbenetét kihasználva mindenképpen az övé lesz az első támadás, és a megtámadott Védő értékéből is levonódik 20 pont. Gyakorta alkalmazzák fegyveres összecsapásokban, még akkor is, ha a biztos sikerhez esetleg csak sok Kegy pont felhasználásával juthatnak."
+        },
+        {
+            "type": "rule",
+            "title": "Holt szolga",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "Szféra: Halál. Kegy pont: 5. Fohász hossza: 5 szegmens. Hatótáv: Érintés. Időtartam: Amíg a szelence sértetlen. Mágiaellenállás: Mentális, Asztrális. Ez a borzasztó hatású fohász számos szolgát teremtett már a Kosfejes Úr alattvalóinak, s jól példázza, hogy a Szakrális mágia bizonyos esetekben oly dolgokra is képes, amelyekre hasonló energiák felemésztésével a varázslók képtelenek. Ez a fohász ugyanis, ha az áldozat elvéti mindkét Mágiaellenállását, lelki testéből, s azt egy kis szelencébe zárja. Ezt a parányi tárgyat a papnak mindig magánál kell tartania, legalábbis akkor, ha holt szolgát irányítani is akarja. Az ily módon teremtett élőholtak semmiben nem különböznek az élő személyektől, csupán szemük lehet az árulójuk. Ezek a testek nem indulnak oszlásnak, nem éreznek fájdalmat, nem igényelnek élelmet, de a szolgálat igencsak megtépázhatja őket. Önálló akaratuk nincs, mindenben a papnak tartoznak engedelmességgel, aki a szelencétől 1 ynevi mérföldnyi távolságban képes parancsolni nekik. Ha valamilyen okból kívül kerülnének a hatótávolságon, megállnak és értelem nélkül bambulnak maguk elé. A szelence elkészítéséhez a papnak rendelkeznie kell a Rúnamágia képzettség 3. fokával, valamint a rajzolatok megalkotása előtt fel kell szentelnie azt. Egy papnak egyszerre csupán egy holt szolgája lehet. Az elorzott lelkek csak akkor kerülhetnek vissza a testbe, ha a szelencét valaki megszerzi és kinyitja a számukra. Ebben az esetben a lélek azonnal visszaköltözik a testbe (amennyiben a porhüvely nem szenvedett maradandó károsodásokat), és a borzalmas emlékeket leszámítva éppen kerül ki a megpróbáltatásokból."
+        },
+        {
+            "type": "rule",
+            "title": "Őrző kos",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "Szféra: Halál. Kegy pont: 1. Fohász hossza: 2 kör. Hatótáv: 5 ynevi láb. Időtartam: Egyszeri. Ranagol hívei gyakran alkalmazzák ezt a fohászt mások, esetleg saját lakóhelyiségeik védelmében. Egy faszéndarabbal vagy más íróeszközzel az őrizni kívánt helyiség ajtaja fölé kell felírniuk a tradicionális ábrát, amely leginkább egy kosfejre hasonlít. Ha fontos a rajzolat elrejtése, gyakorta valamilyen módon álcázzák, bár kisugárzása így is megmarad. A papon kívül a kosfej mindenkit megtámad, aki áthalad alatta, s akinek a pap fennhangon nem engedett meg bejutást. Egyetlen energiacsapásra képes, ez felhasználja minden erejét, Annyi SP-veszteség okozására képes, amennyi Erősítése. Vonalai megtörésével sem lehet hatástalanítani, erre egyedül az őt felróvó képes. Mindenki más megismerheti a belé zárt hatalmat, aki evvel próbálkozik. Amennyiben az ábra egyszer kisül, arról a pap azonnal értesül, bárhol tartózkodjon is. Azt is tudni fogja, melyik ábrája semmisült meg. Ranagol híve legfeljebb kétszer annyi Őrző kost tarthat „életben”, mint amennyi a Tapasztalati szintje."
+        },
+        {
+            "type": "rule",
+            "title": "Sogron egyedi litániái",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Kígyótűz",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "Szféra: Természet. Kegy pont: 4. Fohász hossza: 1 szegmens/E. Hatótáv: 20 ynevi láb. Időtartam: 1 kör. Bármely természetes tűz alakját megváltoztathatja ezzel a mágikus módszerrel a pap, kígyózó tüzet hozva így létre, amely az akarata szerinti irányba halad. Körönként 6 ynevi lábnyi távolság megtételére képes, és minden útjába eső gyúlékony anyagot lángra lobbant. Hossza és sebzése a tűz nagyságától és a fohász erejétől függ. 1 E erősségű tűz 1k6 Fp-t sebez és 1 ynevi láb hosszú kígyó létrehozására elegendő, befolyásolásához 1 E Erősségű fohász szükséges. A fohásszal a pap nem képes a tűzkígyó erejét befolyásolni, csupán az időtartamra lehet hatással. A fohász időtartamának lejártával a kígyó szertefoszlik, a tűz kihuny."
+        },
+        {
+            "type": "rule",
+            "title": "Perzselő ordítás",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "Szféra: Természet. Kegy pont: 6. Fohász hossza: 2 szegmens/E. Hatótáv: Lásd a leírást! Időtartam: Egyszeri. Evvel a fohásszal a tűz őselemi síkjának melegeből formál egy csóvát a Tűzkobra szolgája. Hangos üvöltésével pokoli forróságot szabadít arra, aki a fohász idején előtte áll. De nem csak támadó jelleggel szokás alkalmazni, bizonyos esetekben az adott környezet kiszárítására – gyúlékonyabbá tételére használják. A fohász minden E-je egy ynevi lábbal növeli a hőcsóva hosszát és 1k6-tal az okozott sebzést."
+        },
+        {
+            "type": "rule",
+            "title": "Sogron szent tüze",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "Szféra: Természet. Kegy pont: 10. Fohász hossza: 1 kör. Hatótáv: 20 ynevi láb. Időtartam: Végleges. Ezen fohász segítségével a pap közönséges tüzek hatásait képes véglegessé tenni, mágikusan befolyásolt tüzekkel szemben azonban hatástalan. Ehhez a tüzet először fel kell szentelnie, majd elmondania a fohász igét. Ily módon a fáklyák, lámpások örökké égnek, a kandallók folyamatosan ontják a meleget. A fohász minden egyes E-je után egyes erősségű tűz szentelhető fel. Tehát egy kandalló tüze (2 E) 20 Kegy pontért változtatható örökkévalóvá."
+        }
+    ]
+}

@@ -1,0 +1,97 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": null,
+    "is_new_section": true,
+    "section_title": "Feketerend (Shadon)",
+    "content_blocks": [
+        {
+            "type": "paragraph",
+            "text": "Kifürkészhetetlen célokat szolgáló, titokzatos lovagrend a Shadon Földjén. Alapításának körülményeit, korai tevékenységét sűrű homály fedi. Az ősi iratok és a felföldiek babonái szerint, az egykoron Godon földjét pusztító, átkos emlékezetű aquirok „lovagjainak” hagyományait, azok vérvonalát folytató felföldi nemesek Krán szekerét tolják. Fanatikus hűséggel, elvetemült, titokzatos szertartásokkal, melyek során fájdalommal, de leginkább mások fájdalmával hódolnak a Kosfejes Úr, Ranagol előtt és munkálkodnak Shadon bukásán."
+        },
+        {
+            "type": "paragraph",
+            "text": "A birodalom inkvizítorai, Domvik felkentjei ugyan rendületlenül írtják, pusztítják a rendet még az írmagját is, de az aquirokkal és átkaikkal évezredek óta hadakozó felföldiek babonái, a járhatatlan, mérföldszázak távolában kiégett pusztaságok, megközelíthetetlen rendházak jól óvják az Egyetlen birodalmában rejtékező fenevadakat. Az emberszörnyeket, akik fekete, ősi, rettenetes rúnákkal ékített vértezetüket csak az éj leple alatt öltik fel, hogy sötét lovagként, a romlás hírnökeiként járják a vidéket és megmérettessék a helybéliek hitét vagy vasát kedvük szerint. Nappal pedig éljenek az Egyetlen fényében, rejtekezve, farkasokként a nyáj sorai közt."
+        },
+        {
+            "type": "paragraph",
+            "text": "A rendben viszonylag kevés ismert központja van. Egy-két, a felföldön hadakozó, a korona ellen lázadó főúr erődjén kívül kevés olyan hely van, ahol biztosan ráakadhatunk a Feketerendre tartozó lovagokra. Ha a karakter efféle bajnokot kíván indítani lelke rajta, de ne feledje el, hogy a KM-mel egyeztetve, komoly indokot kell találnia arra, hogy a rend soraiba léphessen. Ez legtöbbször származás kérdése. Ha a karakter felmenői között is akadt feketerendi, akkor szinte bizonyos, hogy idővel felkeresik megbízatottat az ifjú nemest, hogy mint atyáit, és azoknak atyáit is a lovagrend soraiba csábítsák."
+        },
+        {
+            "type": "paragraph",
+            "text": "A szervezet felépítésére nézve leginkább a vallási szekták szerkezetét idézi: a mindenkori nagymester gyakran címét nyíltan viselve húzódik valamely felföldi lázadó főúr birtokaira, vagy futárok által üzenve, irányítsa az alárendelteket. A rend lovagjai általában nem ismerik egymást, csakis és kizárólag a felettük rangban közvetlenül állót, ki általában kéthárom társat vezet csupán; így még a legmegátalkodottabb inkvizítornak sincs sok esélye teljes egészében felderíteni a rend tagjait. A lovagok a renden belül azonban mégiscsak megismerik egymás tetteit, méltathatják társaikat, hiszen általában valamely ősi fajzatot mintázó páncélzatukról nyert elnevezéseik igazi névként használatosak. Így aztán akkor is köttethetnek barátságok, alakulhatnak ki bajtársi kötelékek köztük, ha még sosem látták a másikat felnyitott sisakban, vagy arcmaszk nélkül."
+        },
+        {
+            "type": "paragraph",
+            "text": "A feketerendiek másik nagy csoportja a Suttogók és a Talpasok serege. Az előbbiek a besúgóhálózat, illetve a rend által pénzelt orgyilkosok és más „mesteremberek” serege, kik a hatékony üzenetváltásokért, illetve a „lovagiatlan” feladatok ellátásáért felelnek. Az utóbbiak pedig a rend seregének gerincét adják, gyalogharcosok, fegyverhordozók, más szolgálónépek, főleg olyan családok sarjai, kik már generációk óta szolgálják valamelyik lovagi famíliát a renden belül a felemelkedésre várva, vagy olyan latrok, kik életüket csakis valamely lovagnak köszönhetik: általában kötél általi halálra ítélt gazemberek, gyilkosok, erőszaktevők, vagy eretnekek, kikre a rend oltalma nélkül bárhol halál várna Shadonban."
+        },
+        {
+            "type": "paragraph",
+            "text": "A rend talán egyik leghíresebb alakja Dequator Marses, a költő, író, filozófus, kinek művei Ynev-szerte híresek vagy még inkább hírhedtek. A fájdalomról szóló allegóriái olyan elragadtatással éneklik meg az elmúlást, a kiemelkedettebbek távozását ebből az árnyékvilágból, hogy még az is kérdéses, egyáltalán emberi anya szülte-e a pusztulás ezen ihletett prófétáját."
+        },
+        {
+            "type": "paragraph",
+            "text": "A Feketerend lovagjai különleges előnyei és hátrányai a Lovagnál leírtakon kívül:"
+        },
+        {
+            "type": "rule",
+            "text": "I. A Feketerend lovag mind kiátkozottak Shadonban; ha kilétükre fény derül, a Felföldön kívül, hol napnyugta után a babonák miatt nem hajlandóak a helybéliek üldözésükre indulni, biztos hajtóvadászat és máglyahalál vár rájuk.",
+            "title": "Hátrány: Kiátkozottság"
+        },
+        {
+            "type": "rule",
+            "text": "II. Hitsorsosainak segítsége miatt szinte mindig jómódú nemes úr induláskor megkapja a Vagyon Háttér 1 pontos fokozatát.",
+            "title": "Előny: Vagyon Háttér"
+        },
+        {
+            "type": "rule",
+            "text": "III. A Feketerend lovagjai közül a legrátermettebbek (5. Tsz. felett) lehetőséget kapnak arra, hogy valamely veszedelmes küldetésben bizonyítsák uruknak, Ranagolnak kiemelkedettségüket, s ha sikerrel járnak, beavatást nyerjenek a Rejtekezők vagy az Ítélkezők közé. Ez játéktechnikailag annyit jelent, hogy azon lovagok, kik ezen a küldetésen sikerrel járnak (mely igen kétes kimenetelű, a lovag és teljes kíséretének pusztulásával fenyeget, és mely általában valamely domvikita főrend meggyilkolásával, esetleg P.sz. 3692 után bosszú beteljesítése egy szakadár dartonita vezéren), azok megkapják a Kegyelt hátteret, és beavatást nyernek vérmérsékletük és hajlandóságuk szerint vagy a Rejtekezők közé, kik a Lélek és a Halál, vagy az Ítélkezők közé, kik a Természet és a Halál szférákkal bírnak Ranagol kegyéből.",
+            "title": "Előny: Beavatás és Kegyelt Háttér"
+        },
+        {
+            "type": "rule",
+            "text": "Ezen beavatás különlegessége azonban az, hogy a karakterek ugyan mindenben élvezik a Szakrális mágia nyújtotta előnyöket, vásárolhatnak KAP-jaikból Kegy pontokat, nyerhetnek tetteik miatt is plusz pontokat stb., azonban hatalmuk, istenük pártfogását csakis önnön fájdalmukból vagy más szenvedése árán képesek visszanyerni. Ez annyit jelent, hogy vagy rituálisan saját fájdalmukat kell áldozat keretében bemutatniuk, vagy más értelmes élőlényt kell oltárukon megkínozniuk, esetleg elpusztítaniuk a kívánt erőkért cserébe. Létezik persze más módszer is. A másik út ugyan jóval nehezebb, de több előnnyel is kecsegtet. A karakternek lehetősége van valamely méltó (hasonló vagy magasabb Tsz.-ű) ellenfelével vívott párviadalt Ranagolnak szentelni, melynek során az elmúlás kapuit megnyitva ellenfele testén (tizenhárom sikeres célzott támadás az ellenfél minden nagyobb testtáján) bizonyítva önnön kiemelkedettségét magát Ranagol kegyébe ajánlva, ellenfele halála pillanatában az Úr kegyével telítődni (ilyenkor a legyőzött ellenfél lelke Ranagolnak áldoztatik). Az efféle szertartás másik előnye is, hogy ha a lovag sikerrel bevégzett egy effajta tusát, akkor egy teljes holdhónapig képes a papi mágiánál leírtak szerint imát intézni istenéhez, így fohászkodva hatalomért.",
+            "title": "A Kegy visszanyerése"
+        },
+        {
+            "type": "paragraph",
+            "text": "A Feketerend lovagjának induló képzettségei 1. Tapasztalati szinten:"
+        },
+        {
+            "type": "table",
+            "headers": [
+                "Képzettségek",
+                "Fok"
+            ],
+            "rows": [
+                [
+                    "Fegyverhasználat",
+                    "3. fok"
+                ],
+                [
+                    "Fegyverhasználat",
+                    "2. fok"
+                ],
+                [
+                    "Harctéri gyakorlat",
+                    "2. fok"
+                ],
+                [
+                    "Pajzshasználat",
+                    "2. fok"
+                ],
+                [
+                    "Fájdalomtűrés",
+                    "2. fok"
+                ],
+                [
+                    "Fegyverismeret",
+                    "2. fok"
+                ],
+                [
+                    "Vértviselet",
+                    "3. fok"
+                ]
+            ]
+        }
+    ]
+}

@@ -1,0 +1,48 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": false,
+    "section_title": "",
+    "content_blocks": [
+        {
+            "type": "paragraph",
+            "text": "Bárd. A varázslat nem mozog együtt megidézőjével. Ezen a területen semmiféle hang nem lesz észlelhető. Ez a varázshasználó ténykedését is megnehezíti, jóllehet nem teszi a varázslatokat mozgásképtelenné, hiszen varázsolni továbbra is képesek: a bűvigék megfognak ugyan, ám varázslataik vagy fohászaik hangkomponense mások számára nem érzékelhetők. Tehát mindazon mágiák és fohászok, melyek feltétele, hogy a célpont hallja a varázslat, a belfoglalt parancsot, vagy az alkalmazó mondanivalóját, hatástalanul elenyésznek. A varázslat azonban felhasználható lopakodáskor is, hisz így a bárd teljesen zaj nélkül haladhat át az adott területen."
+        },
+        {
+            "type": "rule",
+            "title": "Hamis beszéd",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "title": "Hangidézés",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "title": "Hangkivetítés",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "title": "Hangorkán",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "title": "Hangteremtés",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "title": "Mágikus hang",
+            "headers": [],
+            "rows": []
+        }
+    ]
+}

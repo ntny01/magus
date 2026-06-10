@@ -1,0 +1,326 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": false,
+    "section_title": "",
+    "content_blocks": [
+        {
+            "type": "paragraph",
+            "text": "Árak: Változó"
+        },
+        {
+            "type": "rule",
+            "title": "Iskolák (Krán)",
+            "headers": [
+                "Iskola",
+                "Megkötés"
+            ],
+            "rows": [
+                [
+                    "Ranagol-pap",
+                    "Szabad Tartományból származhat!"
+                ],
+                [
+                    "Ranagol-paplovag",
+                    "Szabad Tartományból származhat!"
+                ],
+                [
+                    "Harcos",
+                    "Szabad Tartományból származhat!"
+                ],
+                [
+                    "Gladiátor",
+                    "Szabad Tartományból származhat!"
+                ],
+                [
+                    "Fejvadász",
+                    "Szabad Tartományból származhat!"
+                ],
+                [
+                    "Boszorkánymester",
+                    "Szabad Tartományból származhat!"
+                ],
+                [
+                    "Boszorkány",
+                    "Szabad Tartományból származhat!"
+                ]
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Közbiztonság (Krán)",
+            "headers": [
+                "Terület",
+                "Biztonság"
+            ],
+            "rows": [
+                [
+                    "Belső területek",
+                    "Tökéletes"
+                ],
+                [
+                    "Kráni Toronytól távolodva",
+                    "Rohamosan romlik"
+                ],
+                [
+                    "Azonkívül",
+                    "Csapnivaló"
+                ]
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Vallás (Krán)",
+            "headers": [
+                "Vallás",
+                "Megjegyzés"
+            ],
+            "rows": [
+                [
+                    "Államvallás",
+                    "Ranagol hite"
+                ],
+                [
+                    "Egyéb",
+                    "Mindenki imádhatja saját kisistenét, ha azokat hajlandó Ranagol szolgáinak elismerni."
+                ]
+            ]
+        },
+        {
+            "type": "section_header",
+            "text": "Gorvik"
+        },
+        {
+            "type": "paragraph",
+            "text": "Gorvikot a P.sz.-i XV. században alapította Amanovik, a kalandor pap, aki Shadon flottájának egy részét elragadva, hosszas hányattatás után ért partot a Gályák Tengerének északi partján. Uralma megerősítéséhez Shackallor segítségéhez folyamodott sikerrel. Hogy kedvére tegyen, Ranagol hitére tért, mi több, erre szorította országa lakóit is. A Kosfejű újdonsült birodalma, az őshaza, Shadon ádáz ellenfele lett, s bár Shadon sokszorta hatalmasabb Gorviknál, az utóbbit maga Ranagol s kráni szolgái oltalmazzák, teszik legyőzhetetlenné."
+        },
+        {
+            "type": "paragraph",
+            "text": "Gorvik lakosságának jelentős hányadát Kránból áttelepült fejvadász-nemzetségek alkotják. Kár lenne tagadni, Amanovik nagyrészt nekik köszönheti, hogy sikerült kiűznie a dzsadokat s az itt tanyázott szervezetlen kalózbandákat „országa” területéről."
+        },
+        {
+            "type": "paragraph",
+            "text": "Különös fintora a sorsnak, hogy Gorvikban idővel – a P.sz. XVII. századra – a shadonéhoz hasonló lovagi kultúra alakult ki, bár az erkölcsök és a törvények itt korántsem annyira szigorúak. Gorvik nem egységes, öt tartomány alkotja. Urai (Abrado, Akvilona, Gorvik, Warvik és Rokmund hercegei és főpapjai) szüntelenül marakodnak egymással."
+        },
+        {
+            "type": "paragraph",
+            "text": "P.sz. 3682-ben, Todvarban megrendezték a Nagy-Gorviki Tanácsülést, amelynek célja az egység megteremtése volt, a felek azonban nem jutottak egyezségre. A fiaskóért a hagyomány szerint Abrado kevély hercegét és Akvilona intrikus főpapját terheli a felelősség."
+        },
+        {
+            "type": "rule",
+            "title": "Államszervezete (Gorvik)",
+            "headers": [
+                "Tartomány",
+                "Uralkodó"
+            ],
+            "rows": [
+                [
+                    "Abradó",
+                    "Herceg"
+                ],
+                [
+                    "Rokmund",
+                    "Herceg"
+                ],
+                [
+                    "Gorvik",
+                    "Bíboros"
+                ],
+                [
+                    "Warvik",
+                    "Bíboros"
+                ],
+                [
+                    "Akvilona",
+                    "Bíboros"
+                ]
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Hivatalos nyelv (Gorvik)",
+            "headers": [
+                "Nyelv",
+                "Leírás"
+            ],
+            "rows": [
+                [
+                    "Gorviki",
+                    "A shadoni nyelv eltorzult változata. Shadonban rögtön felismerik a gorviki akcentust, s keményen büntetik is. Ugyanez igaz persze a Gályák Tengerének innenső partján is. Gorvik öt tartományában is különböző akcentussal beszélik a nyelvet, ám ez megértési problémákat nem, inkább csak etnikai elkülönülést és villongást okoz."
+                ]
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Lakossága (Gorvik)",
+            "headers": [
+                "Nép",
+                "Jellemzők"
+            ],
+            "rows": [
+                [
+                    "Gorviki",
+                    "Vékonyak, középmagas termetűek. Bőrük kreol, hajuk hullámos, fekete, olajosan csillogó. Arcuk pengeéles síkokkal határolt, szépségesen romlott szoborarc, orruk vonala a sólyomcsőr határozott ívével. Pillantásuk rezzenetlen, tekintetük sötét mélységeiből valódi gonoszságot nem, inkább a felsőbbrendűség biztos tudata táplálta enyhe érdektelenséget olvashat ki a lélekbúvár. „Önként s kényel” ölnek, Ranagol vallása azonban még nem hatott rájuk oly mértékben, hogy – tetteik és felfogásuk tükreként – fizikumuk megváltozzék."
+                ]
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Öltözködési szokások (Gorvik)",
+            "headers": [
+                "Ruházat",
+                "Leírás"
+            ],
+            "rows": [
+                [
+                    "Udvari öltözködés",
+                    "Shadonét idézi"
+                ],
+                [
+                    "Paraszti öltözködés",
+                    "Nyomort sejtett"
+                ],
+                [
+                    "Nemesek és szabad harcosok (nők és férfiak)",
+                    "Bő, fehér inget, fekete harisnyát, magas szárú, puha bőrcsizmát hordanak. Ha hűvösebb re fordul az idő, bőrből szerzett mellényt húznak, s ha kedvük úgy diktálja, színes kendőket kötnek a fejükre, tekernek a nyakuk köré. Rejtett fegyver – ramijera, hajítótőr, netán fejvadászkard – mindig akad náluk."
+                ]
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Árak (Gorvik)",
+            "headers": [
+                "Ár",
+                "Megjegyzés"
+            ],
+            "rows": [
+                [
+                    "Átlagosak",
+                    "Gazdaságuk fegyelmezettségi fokát és állandó háborúságaik hevességét ismerve magasabbak is lehetnének."
+                ]
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Iskolák (Gorvik)",
+            "headers": [
+                "Iskola",
+                "Megjegyzés"
+            ],
+            "rows": [
+                [
+                    "Fejvadász",
+                    "Lehet a Gorvikban nevelkedett karakter."
+                ],
+                [
+                    "Ranagol-pap",
+                    "Lehet a Gorvikban nevelkedett karakter."
+                ],
+                [
+                    "Ranagol-paplovag",
+                    "Lehet a Gorvikban nevelkedett karakter."
+                ],
+                [
+                    "Harcos",
+                    "Lehet a Gorvikban nevelkedett karakter."
+                ],
+                [
+                    "Marcos lovag",
+                    "Lehet a Gorvikban nevelkedett karakter."
+                ],
+                [
+                    "Gladiátor",
+                    "Lehet a Gorvikban nevelkedett karakter."
+                ],
+                [
+                    "Tolvaj",
+                    "Lehet a Gorvikban nevelkedett karakter."
+                ],
+                [
+                    "Boszorkány",
+                    "Lehet a Gorvikban nevelkedett karakter."
+                ],
+                [
+                    "Boszorkánymester",
+                    "Lehet a Gorvikban nevelkedett karakter."
+                ]
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Közbiztonság (Gorvik)",
+            "headers": [
+                "Megítélés",
+                "Szabályok"
+            ],
+            "rows": [
+                [
+                    "Kívülálló szemével nézve",
+                    "Minősíthetetlen"
+                ],
+                [
+                    "Helyiek esküsznek rá",
+                    "Jó"
+                ],
+                [
+                    "Kettősség oka",
+                    "Különleges, egyedi törvényeikben keresendő."
+                ],
+                [
+                    "Magasabb rangú személy",
+                    "Bármikor, ok nélkül is börtönbe vethet, akár ki is végeztethet egy nála alacsonyabb rangút."
+                ],
+                [
+                    "Szabály az ítélet végrehajtásával",
+                    "Várnia kell pontosan két hetet – ennyi időt kapnak az elítélt rokonai és ismerősei, hogy bebizonyítsák, a halálra szánt fontos személyiség. Ha ez idő alatt találnak kellően magas kapcsolatot, ha sikerül elintézniük, hogy valaki közbenjárjon az érdekében, az ítéletet semmissé nyilvánítják, és az illető – akár a bitó árnyékából is – szabadon távozhat. Ha nem, halálával amúgy sem éri nagy veszteség a társadalmat."
+                ],
+                [
+                    "Faji alapú részrehajlás",
+                    "Két kisszerű piaci tolvaj közül a helyben születettet dorgálásra, botütésekre és egyéb kellemetlenségekre számíthat – a dzsad származású azonban holtbiztosan kötélre, netán évtizedes gályarabságba kerül."
+                ],
+                [
+                    "Házasságtörők",
+                    "A faj vérének tisztaságára ügyeltek: kesztyűs kézzel bánik a törvény. Az a nemesasszony azonban, aki „jöttmentek” közeledését fogadta, s effélékkel adta össze magát, a legrosszabbra számíthat: meghurcolják, sőt – akár bűnös vágyának tárgyával együtt –, elevenen eltemethetik."
+                ]
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Vallás (Gorvik)",
+            "headers": [
+                "Vallás",
+                "Megjegyzés"
+            ],
+            "rows": [
+                [
+                    "Ranagol hite",
+                    "A Vallás sugallta erkölcsök szigorúak, de a papok tanai szerint az elkövetett bűn kínnal és vérrel lemosható – akár mások vérével is."
+                ]
+            ]
+        },
+        {
+            "type": "section_header",
+            "text": "Útravaló"
+        },
+        {
+            "type": "paragraph",
+            "text": "A Délvidék története vonult el komor tablóként szemed előtt, kalandozó."
+        },
+        {
+            "type": "paragraph",
+            "text": "E perctől, ha Ynev földjét járod, számtalanszor bukkansz majd nyomokra, melyek ezen, vagy még régebbi eseményekre utalnak, s nagy fontossággal bírhatnak életed alakulása szempontjából. Tanuld meg felismerni a lényeget, az igazat; e képesség segedelmével hosszú életű lehetsz az istenek előtt, s mind magad, mind társaid sorsát jobbra fordíthatod!"
+        },
+        {
+            "type": "paragraph",
+            "text": "A fogadó előtt, ahol legutóbb éjszakádat töltötted, sugárzó napfény fogad. Mikor lovadra szállsz, hogy Erion, esetleg más tájak felé, új kalandok elébe indulj, friss szél simítja végig arcod – zugásába az Eltávozottak kacaja vegyül."
+        },
+        {
+            "type": "paragraph",
+            "text": "Ha emberek, ha igazak voltak, e percben szerencsét kívánnak neked."
+        },
+        {
+            "type": "paragraph",
+            "text": "Ha nem... lelkük legyen a démonoké!"
+        }
+    ]
+}

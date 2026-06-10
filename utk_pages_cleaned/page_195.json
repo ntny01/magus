@@ -1,0 +1,432 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": false,
+    "section_title": "",
+    "content_blocks": [
+        {
+            "type": "rule",
+            "title": "Pénznemek és átváltás",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "table",
+            "headers": [
+                "Pénznem",
+                "réz",
+                "ezüst",
+                "arany",
+                "mithrill"
+            ],
+            "rows": [
+                [
+                    "1 réz",
+                    "1",
+                    "1/100",
+                    "1/1000",
+                    "1/100000"
+                ],
+                [
+                    "1 ezüst",
+                    "100",
+                    "1",
+                    "1/10",
+                    "1/1000"
+                ],
+                [
+                    "1 arany",
+                    "1000",
+                    "10",
+                    "1",
+                    "1/100"
+                ],
+                [
+                    "1 mithrill",
+                    "100000",
+                    "1000",
+                    "100",
+                    "1"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A köznép a rézpénzt használja, forgatja. A gazdagabb polgárok, kereskedőknél néha előfordul egy-egy ezüst, az arany viszont szinte kizárólag a nemesek pénze. A mithrillérme úgyszólván csak a legendákban fordul elő."
+        },
+        {
+            "type": "rule",
+            "title": "Árváltozások",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "table",
+            "headers": [
+                "Terület típusa",
+                "Árszorzó",
+                "Megjegyzés"
+            ],
+            "rows": [
+                [
+                    "telített piac",
+                    "x0.5",
+                    "túlkínálat van"
+                ],
+                [
+                    "közönséges piac",
+                    "x1",
+                    "közönséges piaci viszonyok"
+                ],
+                [
+                    "szegényes piac",
+                    "x2",
+                    "kereskedelmi utaktól távol"
+                ],
+                [
+                    "rossz piac",
+                    "x3",
+                    "ritkán tartott piac, kis kínálat"
+                ],
+                [
+                    "hozzáférhetetlen",
+                    "x10",
+                    "általában nem beszerezhető"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "Példák a fenti táblázat használatához: Egy teve a dzsadoknál közönséges piacon kapható, de Erigowban már hozzáférhetetlen. A fűszer, ami Niaréban bárhol megterem (telített piac), Shadombon már lehet ritka és különleges. Tavasszal és nyáron zöldségekből túlkínálat van, tél végén viszont nem lehet hozzájutni."
+        },
+        {
+            "type": "rule",
+            "title": "Jövedelmek",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "(r – rézpénz; e – ezüstpénz; a – aranypénz)"
+        },
+        {
+            "type": "table",
+            "headers": [
+                "Társadalmi helyzet",
+                "Átlag éves jövedelem"
+            ],
+            "rows": [
+                [
+                    "rabszolga",
+                    "500r"
+                ],
+                [
+                    "napszámos",
+                    "2a 5e"
+                ],
+                [
+                    "paraszt",
+                    "5-6a"
+                ],
+                [
+                    "mesterember",
+                    "8-10a"
+                ],
+                [
+                    "polgár, kiskereskedő",
+                    "10a"
+                ],
+                [
+                    "katona",
+                    "15-20a"
+                ],
+                [
+                    "tisztviselő, nagykereskedő",
+                    "20-40a"
+                ],
+                [
+                    "kisnemes",
+                    "30-50a"
+                ],
+                [
+                    "tudós, pap",
+                    "40-80a"
+                ],
+                [
+                    "középnemes",
+                    "80-100a"
+                ],
+                [
+                    "főpap",
+                    "100-200a"
+                ],
+                [
+                    "klánfőnök, céhmester",
+                    "150-1000a"
+                ],
+                [
+                    "főnemes",
+                    "1000-10000a"
+                ],
+                [
+                    "herceg",
+                    "1000-10000a"
+                ],
+                [
+                    "király",
+                    "5000a felett"
+                ]
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Általános árak",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "table",
+            "headers": [
+                "Állatok",
+                "Ár"
+            ],
+            "rows": [
+                [
+                    "borjú",
+                    "5e"
+                ],
+                [
+                    "csirke",
+                    "5r"
+                ],
+                [
+                    "disznó",
+                    "3e"
+                ],
+                [
+                    "juh",
+                    "4e"
+                ],
+                [
+                    "kecske",
+                    "3e"
+                ],
+                [
+                    "kutya, harci",
+                    "8e"
+                ],
+                [
+                    "kutya, házőrző",
+                    "80r"
+                ],
+                [
+                    "kutya, szánhúzó",
+                    "2e"
+                ],
+                [
+                    "kutya, vadász",
+                    "2e"
+                ],
+                [
+                    "liba",
+                    "10r"
+                ],
+                [
+                    "ló, igás",
+                    "8e"
+                ],
+                [
+                    "ló, könnyű harci",
+                    "3a"
+                ],
+                [
+                    "ló, nehéz harci",
+                    "10a"
+                ],
+                [
+                    "ló, póni",
+                    "8e"
+                ],
+                [
+                    "ló, utazó",
+                    "1a"
+                ],
+                [
+                    "macska",
+                    "5r"
+                ],
+                [
+                    "ökör",
+                    "1a"
+                ],
+                [
+                    "őz",
+                    "8e"
+                ],
+                [
+                    "pulyka",
+                    "8r"
+                ],
+                [
+                    "sólyom, vadász",
+                    "8a"
+                ],
+                [
+                    "szamár",
+                    "7e"
+                ],
+                [
+                    "tehén",
+                    "9e"
+                ],
+                [
+                    "teve",
+                    "1a"
+                ],
+                [
+                    "tyúk",
+                    "7r"
+                ]
+            ]
+        },
+        {
+            "type": "table",
+            "headers": [
+                "Lószerszámok",
+                "Ár"
+            ],
+            "rows": [
+                [
+                    "gyeplő, kantár, zabla",
+                    "15r"
+                ],
+                [
+                    "iga, járom",
+                    "80r"
+                ],
+                [
+                    "kötőfék",
+                    "3r"
+                ],
+                [
+                    "lópokróc",
+                    "4r"
+                ],
+                [
+                    "nyereg, harci",
+                    "5e"
+                ],
+                [
+                    "nyereg, málhás",
+                    "2e"
+                ],
+                [
+                    "nyereg, utazó",
+                    "150r"
+                ],
+                [
+                    "nyereg, női",
+                    "5e"
+                ],
+                [
+                    "nyeregtáska",
+                    "1e"
+                ],
+                [
+                    "patkó és patkolás",
+                    "1e"
+                ],
+                [
+                    "szekér szerszám",
+                    "6e"
+                ]
+            ]
+        },
+        {
+            "type": "table",
+            "headers": [
+                "Hajózás",
+                "Ár"
+            ],
+            "rows": [
+                [
+                    "bárka",
+                    "40a"
+                ],
+                [
+                    "csónak",
+                    "3a"
+                ],
+                [
+                    "drakkar",
+                    "300a"
+                ],
+                [
+                    "galeassz",
+                    "800a"
+                ],
+                [
+                    "galeon",
+                    "1800a"
+                ],
+                [
+                    "gálya",
+                    "300a"
+                ],
+                [
+                    "karavella",
+                    "250a"
+                ],
+                [
+                    "kenu",
+                    "5a"
+                ],
+                [
+                    "evező",
+                    "10r"
+                ],
+                [
+                    "vitorla",
+                    "2e"
+                ],
+                [
+                    "révész",
+                    "20r"
+                ],
+                [
+                    "komp",
+                    "10r"
+                ]
+            ]
+        },
+        {
+            "type": "table",
+            "headers": [
+                "Szekerek, szánok",
+                "Ár"
+            ],
+            "rows": [
+                [
+                    "harci, kétkerekű",
+                    "40a"
+                ],
+                [
+                    "harci, négykerekű",
+                    "70a"
+                ],
+                [
+                    "hintó",
+                    "70a"
+                ]
+            ]
+        }
+    ]
+}

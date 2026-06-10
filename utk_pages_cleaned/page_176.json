@@ -1,0 +1,63 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": false,
+    "section_title": "",
+    "content_blocks": [
+        {
+            "type": "rule",
+            "text": "A Kezdeményezés korábban ismertetett módszere csak közelharcban mérvadó, hiszen ott nem csupán a karakterek reakcióiban, sebességében, sokkal inkább harcgyakorlatukban meghatározó. Nem véletlenül, hiszen ott azt modellezte, hogy harci helyzetben milyen fürgén képesek sebezhető pontot találni a másik fegyverforgató védelmén. Ha azonban az ellenfél varázsol, harci helyzetről, egyáltalán harcról, szó sincs. Az elsőként cselekvés jogát pusztán az dönti el, hogy a kardforgató vagy a varázshasználó reagál-e hamarabb.",
+            "title": "Kezdeményezés közelharcban és mágia ellen"
+        },
+        {
+            "type": "rule",
+            "text": "Ennek megfelelően vannak bizonyos szituációk, amikor a kezdeményezés joga egyértelműen az egyik felet illeti: – Távolági fegyvert használó ellenfél mindig hamarabb cselekedhet amennyiben a lőfegyvert felajzva, lövésre készen, illetve a hajítófegyvert dobásra készen tartja már a kör kezdetén és kifejezetten a mágiahasználóra céloz. – Nincs helye kezdeményezésnek akkor sem, ha az egyik fél mágiát a másik közelharci fegyvert használ, és a mágia hamarabb fogan meg (a varázslási idő rövidebb), mintsem a fegyverforgatónak esélye lenne közvetlen közelre kerülni. Lásd még a Mozgás jellegű cselekedeteket a 168. oldalon.",
+            "title": "Kezdeményezés speciális szituációkban"
+        },
+        {
+            "type": "rule",
+            "text": "Tehát ha Villar egy tűzvarázslóhoz igyekszik közel jutni, miközben amaz épp egy varázslattal akarja őt örökre elnémítani, akkor a helyzet azon áll vagy bukik, hogy milyen gyorsan sikerül a varázstudó közelébe jutnia.",
+            "title": "Példa: Harcos mágiahasználó ellen"
+        },
+        {
+            "type": "rule",
+            "text": "A sogronita által létrehozni kívánt varázslat 5 szegmens, Villar 25 ynevi láb távolságra van tőle. Mivel a Gyorsasága 14, ezért szegmensenként 7 ynevi lábnyit képes megtenni rohanva, tehát az 5 szegmens alatt 30 ynevi lábat. Ez azt jelenti, hogy még a varázslat befejezése előtt a két karakter pengetávolságba kerül. Ebben az esetben, mivel a harcos Harci cselekedete alatt jön létre a varázslat, ezért a Kezdeményezés eldöntésére mindketten Tulajdonságpróbát dobnak. Ha a próbát Villar nyeri, a tűzvarázsló közelharci fegyverek képességeihez mérten távolodni az őt fenyegető ellenféltől, azaz hátrálni igyekszik, akkor egészen másképp is alakulhatnak a dolgok.",
+            "title": "Példa: Kezdeményezés dobás feltételei"
+        },
+        {
+            "type": "rule",
+            "text": "Azonban, ha az Őstűz szolgája varázslás közben igyekszik képességeihez mérten távolodni az őt fenyegető ellenféltől, azaz hátrálni igyekszik, és sétáló sebességgel hátrál Villar rohama alatt, akkor a harcos könnyen elhamvadhat Sogron dühe nyomán.",
+            "title": "Példa: Varázsló hátrálása harc közben"
+        },
+        {
+            "type": "rule",
+            "text": "Kezdeményező dobást tehát csak akkor teszünk, ha nem dönthető el egyértelműen, hogy melyik fél cselekszik hamarabb, mialatt a másiknak esélye sincs megelőzni őt.",
+            "title": "Kezdeményező dobás feltétele"
+        },
+        {
+            "type": "rule",
+            "text": "Tehát, ha a mágia hamarabb létrejön, mintsem a harcos közel érhetne a varázshasználóhoz, úgy a varázslat fogan meg hamarabb. Ha a harcos már testközelben (kardtávolságon belül) van és a mágia még nem jött létre, úgy a harcos közelharci támadásra jogosult. Ha nem sikerül megsebeznie a varázshasználót, vagy az nem zökken ki a koncentrációból, és továbbra is varázsol, úgy a harcrendszernél leírt egészkörös harc szabályai szerint a harcos csak fegyvere típusától függő szegmens múltán támadhat újra. Amennyiben ezalatt a mágia megfogan, akkor kénytelen elviselni a következményeket. Ha a varázslás ideje ennél hosszabb, a harcos annyiszor támadhat a mágiahasználóra, amennyi támadást fegyverével az adott idő alatt kivitelezni lehetséges.",
+            "title": "Mágia és közelharc egyidejűsége"
+        },
+        {
+            "type": "rule",
+            "text": "Fontos, hogy a fentebb leírt szituációban a varázslat alkalmazója nemcsak érzékelte a harcos jelentette veszélyt, de varázslás közben minden tehetségét latba vetve igyekezett elkerülni a fegyverforgató csapásait. Ilyenkor természetesen csak fegyver nélküli harcértékét fordíthatja szembe a harcos Támadó értékével.",
+            "title": "Varázsló védekezése közelharcban"
+        },
+        {
+            "type": "rule",
+            "text": "Ha mindketten éppen egyszerre cselekednek (például a varázslat épp a fegyverforgató Harci cselekedete alatt fogan meg), úgy mindkét fél Tulajdonságpróbát dob (a varázshasználó Intelligenciára, míg a fegyverforgató a Gyorsaságára). A kezdeményezést az nyeri, aki nagyobbat dob.",
+            "title": "Egyidejű cselekedetek kezdeményezése"
+        },
+        {
+            "type": "rule",
+            "text": "Erre a dobásra is igaz a Közelharcnál leírt szituáció, miszerint ha ugyanakkora mértékű sikert értek el, a két támadást egyszerre hajtják végre.",
+            "title": "Egyenlő siker egyidejű cselekedeteknél"
+        },
+        {
+            "type": "rule",
+            "text": "Fegyver és fegyver közti kezdeményezés eldöntésére a hagyományos Kezdeményező dobás szolgál, két varázslat közül pedig az jön létre hamarabb, amelyiknek rövidebb a varázslási ideje. Egyforma varázslási idő esetén a fent leírtaknak megfelelően a mágiahasználók Intelligenciapróbát dobnak, és az kezdeményez, aki nagyobbat dob. Egyenlőség esetén a két mágia egyszerre fogan meg.",
+            "title": "Kezdeményezés fegyverek és varázslatok között"
+        }
+    ]
+}

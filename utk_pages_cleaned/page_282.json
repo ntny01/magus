@@ -1,0 +1,46 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": false,
+    "section_title": "",
+    "content_blocks": [
+        {
+            "type": "rule",
+            "title": "Tűztáplálás",
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "Sogron egyedi rituáléi"
+        },
+        {
+            "type": "rule",
+            "title": "A Kobra ujja",
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "Tharr egyedi litániái"
+        },
+        {
+            "type": "rule",
+            "title": "Rángó hús",
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "title": "Vérklyó",
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "title": "Vérdermesztés",
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "title": "Vérszolga",
+            "rows": []
+        }
+    ]
+}

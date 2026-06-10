@@ -1,0 +1,151 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": false,
+    "section_title": "",
+    "content_blocks": [
+        {
+            "type": "paragraph",
+            "text": "szabbak, mint elterjedtebb társaik. Ezekkel jórészt a Pajzs Államokban (főként Enysmonban) találkozhat az utazó."
+        },
+        {
+            "type": "paragraph",
+            "text": "Az Északi Szövetség országaiban kifejlesztettek egy úgynevezett nyereget is, ami a nehéz és a könnyű típus előnyeit próbálja meg egyesíteni – több-kevesebb sikerrel."
+        },
+        {
+            "type": "paragraph",
+            "text": "Ugyancsak jellegzetes nyeregfajta a dzsad nyereg, amelynek mindkét kápája kicsi, és különös jellemzője, hogy igen ritkán alkalmaznak benne merevítést. Hasonló érzést nyújt, mintha a lovas a szőrén ülne meg a lovat, ami idegeneknek zavaró lehet, de ha valaki egyszer megszokja, „gyorsabban repül lován, mint száll a szél a dűnék felett”, Bedir al Habib, neves dzsad dalnok szavaival élve."
+        },
+        {
+            "type": "paragraph",
+            "text": "Nem csupán a nyereg, a zabla is sokféle lehet. Ezúttal csak egyet említünk közülük, nevezetesen a feszítőzablát. Nehézkesebb csatalovakra általában ilyet tesznek, főképpen harc közben előnyös. Jóval szorosabb a közönséges zablánál, emelőszerűen működik, így a szár húzására erejét fokozza, „érzékenyebbé” teszi az állatot – nagyobb testű lovak is gyorsabban reagálnak és fordulékonyabbak lesznek alkalmazásakor. Könnyűlovakon ritkán használják. A harci lovakra békelődésben nem ritkán szájkosarat húznak, nehogy gondozójukban vagy a többi lóban kárt tegyenek."
+        },
+        {
+            "type": "paragraph",
+            "text": "A kengyel szintúgy eltérő vonásokat mutat az egyes vidékeken, illetve a különböző harci lovaknál. A nehézlovasok kengyele például aszimmetrikus, segítve a jobb megtámaszkodást és a kopja biztosabb tartását. Egyes helyeken viszont egyáltalán nem terjedt el a kengyelhasználat – így a dzsadok sem mindig alkalmazzák. Ilyen körülmények között egy kengyelhez szokott lovasnak komoly problémái támadhatnak."
+        },
+        {
+            "type": "paragraph",
+            "text": "„Megnézem a patkót – ismerem a kovácsot”, mondják Illanorban. Való igaz, a patkó legalább olyan fontos felszerelése a lónak, mint bármi más: még lehet kockáztatni a kijelentést, hogy tán a legfontosabb. Ha nincs, köves, nehéz talajon könnyen sérül a lábára! Egy rossz patkolókovács tökéletesen tönkre tudja tenni a legremekebb lovat is, míg egy ügyes, képzett mester pusztán a helyesen megválasztott patkóval képes meggyógyítani egyes sántaságokat, járáshibákat. Patkót a jó kovács mindig az adott állat egyéni adottságainak, mozgás stílusának, munkavégzésének, igénybevételének, a pata és a régi patkó állapotának megfelelően készít. Mindezeket figyelembe véve, bizony számtalanféle patkó létezik, felesleges lenne őket ehelyütt felsorolni. Egy jó tanácsot azonban hadd adunk a kalandozóknak: akinek kedves avagy fontos a lova, nézze meg jól a patkolókovácsot!"
+        },
+        {
+            "type": "paragraph",
+            "text": "Szólnunk kell még a sarkantyúról is, mely amellett, hogy alkalmas a hátas ösztökélésére, cifraságával, anyagával rangot, vagyont is jelent. Tájegységenként különbözik formája és viselete, általánosságban annyit érdemes tudni, hogy a könnyűlovas sarkantyúk rövidebbek, mint nehézlovas társaik."
+        },
+        {
+            "type": "paragraph",
+            "text": "Lássuk most a lovakat abból a szempontból, miként szolgálnak a kalandozások során, hogyan lehet hasznukat venni a harcban."
+        },
+        {
+            "type": "paragraph",
+            "text": "Azt hiszem, aligha akad Yneven olyan kalandozó, aki ne tudna lóháton utazni, legalább könnyű vágtáig viszonylagos biztonsággal nyeregben maradni. Mi több, biztosan állíthatom, hogy legtöbbjük igen kiváló lovas, ez azonban még nem jelenti azt, hogy hátasaikat harc közben is tökéletesen tudják irányítani, s előnyt tudnak kovácsolni abból a tényből, hogy lovon ülnek. Vannak ellenben bizonyos kasztok – így például a lovagok –, melyek képviselői akkor vannak igazán elemükben, ha lóháton forgathatják fegyverüket, sőt egyes túlspecializált egységeik alig képesek gyalogos harcra."
+        },
+        {
+            "type": "paragraph",
+            "text": "Amint az eddig leírtakból is világosan kiderül, nem mindegy hát, hogy miféle lovat választ magának egy kalandozó."
+        },
+        {
+            "type": "paragraph",
+            "text": "Szerencsére az ezredéveken át folyó tenyésztési munka következtében ma már szinte mindenféle célra találhat kedvére valót. Harci szempontból három nagy csoportra oszthatjuk a lovakat: könnyű és nehéz harci lovak, valamint azok, amelyek képzetlenek a harcban – ezeket tünteti fel a táblázatban az „egyéb” kategória. Természetesen az egyes csoportok között (s az „egyéb” kategórián belül is) jelentős az eltérés, kis gyakorlattal még egy ork bányász is meg tud különböztetni egy nehéz csatamént mondjuk egy félvér utazólótól. Nem csupán méretük és tömegük különbözik, de testfelépítésük is más – a tenyésztés során idomult a feladathoz."
+        },
+        {
+            "type": "paragraph",
+            "text": "Egy igazi, nehéz harci mén súlya eléri az utazólovak súlyának másfél-kétszeresét, ennek megfelelő mérettel és izomzattal. Ha erre még fölkerül saját nehézpáncélzata, plusz a lovas nehézvértben (aki maga is megvan vagy másfél mázsa), el lehet képzelni, micsoda tömeget képviselnek. Ha ez a mozgó erőföl egyszer nekidől, nemigen akad, ami megállítsa."
+        },
+        {
+            "type": "paragraph",
+            "text": "Ezzel szemben az utazóló, miként neve is jelzi, nagyobb távolságok gyorsabb és viszonylag kényelmesebb leküzdésére használható leginkább. Gyors és kitartó, járása könnyű, viszont nem képes nagyobb erőkifejtésekre, mint például egy szekér elhúzása, vagy akár nehézpáncélzat viselése, s csatában leginkább pánikot kap, nem szárnyakat. Kategóriájának tovább képviselői az igás-, illetve málhás ló, a póni és az öszvér. A kalandorok számára tán az igásló a legkevésbé érdekes, mert bár teherbíró és kitartó, de egyrészt nincs lovashoz szoktatva, másrészt pedig vágtában hamar kifullad. Létezik azonban olyan képviselőjük is, mely nem csak erős, de viszonylag hosszabb távon képes gyorsabb iramot diktálni: ezeket módosabb emberek, kereskedők fogják komoly, hosszabb útra szolgáló kocsijuk elé (fizikai tulajdonságaikat tekintve erőteljesebb lónak felelnek meg, persze másként kiképezve)."
+        },
+        {
+            "type": "paragraph",
+            "text": "Málhás ló végeredményben bármilyen ló lehet, amely terhet eltűr a hátán, csupán arra kell ügyelni, hogy túl ne terheljük. Hosszabb útra induló kalandozók jól teszik, ha számolnak vele. A pónikat leginkább Tarin törpéi használják – méretben ez illik a legjobban hozzájuk. A „póni” természetesen nem egyetlen fajta, számos változata létezik. Tarin tárnáiban például erős, durva szőrű, kefesorényű, alacsony jószágok hordják az ércet, a Shanice magasan fekvő völgyeiben pedig kecses mozgású, zászlósfarkú, középmagas rokonaik kószálnak. Az öszvért – mindig egy ló és egy szamár keresztezéséből születik, két öszvér nem képes utódot nemzeni – főleg hegyekben vagy sziklás terepen használják, mert bár csökönyös és lassú, biztos a járása nyaktörő ösvényeken is. Hegyi népek, illetve azokkal üzletelő kereskedők kedvelt málhás állata. Hasonló megfontolásokból esetenként jól szolgálhat kalandozóknak is."
+        },
+        {
+            "type": "paragraph",
+            "text": "Termet:"
+        },
+        {
+            "type": "table",
+            "headers": [
+                "",
+                "Könnyű harci",
+                "Nehéz harci",
+                "Egyéb"
+            ],
+            "rows": [
+                [
+                    "Méretkategória",
+                    "3",
+                    "3",
+                    "3"
+                ],
+                [
+                    "Időigény:",
+                    "5",
+                    "5",
+                    "4"
+                ],
+                [
+                    "KÉ:",
+                    "20",
+                    "18",
+                    "16"
+                ],
+                [
+                    "TÉ:",
+                    "45",
+                    "55",
+                    "20-30"
+                ],
+                [
+                    "VÉ:",
+                    "80",
+                    "75",
+                    "45-60"
+                ],
+                [
+                    "Sebzés:",
+                    "2k6+1",
+                    "2k6+1",
+                    "1k10"
+                ],
+                [
+                    "Ép:",
+                    "20",
+                    "25",
+                    "20-30"
+                ],
+                [
+                    "Fp:",
+                    "40",
+                    "50",
+                    "30-40"
+                ],
+                [
+                    "Asztrál ME:",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Mentál ME:",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Méregellenállás:",
+                    "4",
+                    "5",
+                    "2-3"
+                ],
+                [
+                    "Intelligencia:",
+                    "Állati",
+                    "Állati",
+                    "Állati"
+                ]
+            ]
+        }
+    ]
+}

@@ -1,0 +1,276 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": null,
+    "is_new_section": true,
+    "section_title": "Életkorok",
+    "content_blocks": [
+        {
+            "type": "paragraph",
+            "text": "Rendkívül nehéz helyzetekben kényszerül tudása legjavát nyújtani – gyakran bizony a túlélésért. Ez hihetetlenül gyors fejlődés eredményez, így a kalandozók előtt nyitva áll az út a hőssé válás felé."
+        },
+        {
+            "type": "paragraph",
+            "text": "Az újabb és újabb tapasztalatok a karaktert gyakorlottabbá teszik saját tudományának művelésében, legyen az harc vagy mágia. Ennek meg kell mutatkoznia Harcértéke, Tulajdonságai és Képzettségei növekedésében, varázslatainak egyre veszedelmesebbé válásában. A karakter tapasztaltságát a M.A.G.U.S. jól elkülöníthető szintekre osztja, melyeket Tapasztalati szinteknek (TSZ) nevezünk."
+        },
+        {
+            "type": "paragraph",
+            "text": "Minél magasabb Tapasztalati szintre jut egy karakter, annál képzettebb fegyverforgató, annál több mindenhez ért, egyre magasabb fokon, annál ellenállóbb az őt ért fájdalommal, kellemetlenségekkel szemben, annál gyakorlottabban és mélyebben képes alkalmazni a mágiát. Röviden, minél magasabb szintű, annál veszedelmesebb és életképesebb."
+        },
+        {
+            "type": "rule",
+            "title": "Karakteralkotó pontok szintlépéskor",
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A M.A.G.U.S. játékrendszerében fontos szerephez jut karakter tapasztalata. Mivel folytonos vitákhoz vezetne, hogy ki és miért a többi Tapasztalati szintet, milyen úton-módon lett különb a többieknél, szükséges valamely mértékegység bevezetése a szerzett tapasztalat mérésére. Ez a mértékegység a Tapasztalati pont (Tp). Minden – már felsorolt – tapasztalat Tp-ben nyilvánul meg a karakter számára. Hogy a különféle események mennyi tapasztalatot jelentenek, vagy mennyi Tp-t érnek, azt mindig a KM hivatott eldönteni, a M.A.G.U.S. szigorú szabályokat nem, csak irányelveket fektet le számára. Amit azonban itt is szükségszerű megemlíteni: minden karakternek az jelenti a legtöbb Tp-t, ha kasztjának megfelelő módon cselekszik. A Harcos legyőzi ellenfeleit, a Szerencsevadász csellel, trükkel ravaszkodva oldja meg a kényes szituációt, a Pap istenéhez hű módon viselkedik, a Harcművész valóban művész marad és nem torzul gyilkossá, a Varázshasználó ügyesen alkalmazza mágiáját a feladatok megoldására. Ugyanakkor szükségszerű azt is figyelembe venni, hogy az ismétlődő helyzetek megoldása egyre kevesebb tapasztalatot jelent, hiszen ha egy dolgot sokadszorra viszünk véghez, az újat már nem taníthat, legfeljebb a rutint mélyíti el. Azt is a KM feladata eldönteni, hogy egy feladat ismételten sikeres teljesítése honnan ér kevesebb Tp-t."
+        },
+        {
+            "type": "paragraph",
+            "text": "A karakter, mikor mesélőjétől Tapasztalati pontot kap, hozzáadja azokat eddigi Tp-inak számához. Minden karakter számára azonos a különböző Tapasztalati szintek eléréséhez szükséges Tp. Természetesen egyre több és több; hiszen minél magasabb szintre lép a karakter, annál nehezebb és nehezebb a következő szintet elérni. Ha a karakter összegyűjtötte a szintugráshoz szükséges Tapasztalati pont mennyiségét, attól kezdve eggyel magasabb Tapasztalati szintűnek számít."
+        },
+        {
+            "type": "paragraph",
+            "text": "A M.A.G.U.S. rendszerében a karakterek a következő Tp értékek elérésével léphetnek szintet:"
+        },
+        {
+            "type": "table",
+            "headers": [
+                "Szint",
+                "Tp érték"
+            ],
+            "rows": [
+                [
+                    "1.",
+                    "0-100"
+                ],
+                [
+                    "2.",
+                    "101-300"
+                ],
+                [
+                    "3.",
+                    "301-600"
+                ],
+                [
+                    "4.",
+                    "601-1000"
+                ],
+                [
+                    "5.",
+                    "1001-1500"
+                ],
+                [
+                    "6.",
+                    "1501-2100"
+                ],
+                [
+                    "7.",
+                    "2101-2800"
+                ],
+                [
+                    "8.",
+                    "2801-3600"
+                ],
+                [
+                    "9.",
+                    "3601-4500"
+                ],
+                [
+                    "10.",
+                    "4501-5500"
+                ],
+                [
+                    "11.",
+                    "5501-6600"
+                ],
+                [
+                    "12.",
+                    "6601-7800"
+                ],
+                [
+                    "13.",
+                    "7801-9100"
+                ],
+                [
+                    "14.",
+                    "9101-10500"
+                ],
+                [
+                    "15.",
+                    "10501-12000"
+                ],
+                [
+                    "16.",
+                    "12001-13600"
+                ],
+                [
+                    "17.",
+                    "13601-15300"
+                ],
+                [
+                    "18.",
+                    "15301-17100"
+                ],
+                [
+                    "19.",
+                    "17101-19000"
+                ],
+                [
+                    "20.",
+                    "19001-21000"
+                ]
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Tapasztalati pontok magasabb szinteken",
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "Karaktere életkorát mindenki szabadon megválaszthatja, ám érdemes gondosan mérlegelni: a serdülő és aggastyánkor nem szerencsés a játék szempontjából."
+        },
+        {
+            "type": "paragraph",
+            "text": "A játékos által elosztott Tulajdonságok a karakter indításakor választott életkorára érvényesek. A következő táblázat megmutatja, hogy a karakter Tulajdonságai miként csökkennek illetve növekednek az életkoruk változásával:"
+        },
+        {
+            "type": "table",
+            "headers": [
+                "Korkategóriák",
+                "Erő",
+                "Gy",
+                "Ügy",
+                "Áks",
+                "Egs"
+            ],
+            "rows": [
+                [
+                    "I. serdülőkor",
+                    "-1",
+                    "-1",
+                    "0",
+                    "1",
+                    "0"
+                ],
+                [
+                    "II. ifjúkor",
+                    "0",
+                    "0",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "III. középkor",
+                    "0",
+                    "0",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "IV. meglettkor",
+                    "-1",
+                    "-1",
+                    "-1",
+                    "-1",
+                    "-1"
+                ],
+                [
+                    "V. időskor",
+                    "-3",
+                    "-3",
+                    "-3",
+                    "-3",
+                    "-3"
+                ],
+                [
+                    "VI. aggastyánkor",
+                    "-5",
+                    "-5",
+                    "-5",
+                    "-5",
+                    "-5"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "Mint azt már korábban is írtuk, Yneven nem csupán emberek, de számtalan más, különös lény is él, melyekkel szintén lehet játszani. Ezek a teremtmények nem feltétlenül addig élnek, mint az emberek. Az egyes fajok életkor-kategóriáiról az alábbi táblázat tájékoztat:"
+        },
+        {
+            "type": "table",
+            "headers": [
+                "Faj",
+                "I.",
+                "II.",
+                "III.",
+                "IV.",
+                "V.",
+                "VI."
+            ],
+            "rows": [
+                [
+                    "Ember",
+                    "12-18",
+                    "18-35",
+                    "35-50",
+                    "50-60",
+                    "60-70",
+                    "70-"
+                ],
+                [
+                    "Elf",
+                    "50-100",
+                    "100-900",
+                    "900-1200",
+                    "1200-1500",
+                    "1500-1800",
+                    "1800-"
+                ],
+                [
+                    "Félelf",
+                    "15-40",
+                    "40-70",
+                    "70-100",
+                    "100-130",
+                    "130-160",
+                    "160-"
+                ],
+                [
+                    "Törpe",
+                    "25-200",
+                    "200-400",
+                    "400-600",
+                    "600-700",
+                    "700-800",
+                    "800-"
+                ],
+                [
+                    "Udvari ork",
+                    "10-25",
+                    "25-50",
+                    "50-75",
+                    "75-90",
+                    "90-110",
+                    "110-"
+                ],
+                [
+                    "Kyr származék",
+                    "12-20",
+                    "20-70",
+                    "70-100",
+                    "100-130",
+                    "130-160",
+                    "160-"
+                ]
+            ]
+        }
+    ]
+}

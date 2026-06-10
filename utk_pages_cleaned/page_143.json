@@ -1,0 +1,29 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": true,
+    "section_title": "Sün",
+    "content_blocks": [
+        {
+            "type": "rule",
+            "text": "Hasonló mint a pajzsfal, de nem támadásra, hanem védekezésre használatos. Ennek alkalmazásához kevesebb katona is elég, de minimum 5 szükséges. A technika lényegében megegyezik a pajzsfal-lal, ám jelen esetben az alakzat minden oldalán felülről a pajzsok alkotta védmű. Legelterjedtebb formái a háromszög, négyszög és kör. A középen állók, akiknek társuk élesítésig nincs feladatuk, pajzsaikat fejük fölé emelik, ezzel is megnehezítve az ellenfél íjászainak, parittyásainak dolgát. Az ilyen alakzat nehezen mozog, hiszen tagjai különböző irányokba néznek, haladniuk azonban egy irányba, egyszerre kellene. Védekezéshez viszont ideális: a szálfegyverek nyelének földbetámasztásával a lovasrohamot is képes megtörni, a gyalogos ellenfelek támadását pedig még inkább megnehezíti. A formációban állók VÉ-je –20-szal nő, célzott fegyverek ellen +50-nel. Ha netán haladni akarnának, úgy csak a pajzsfalból származó előnyöket kapják meg.",
+            "title": "Sün formáció",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "Tiadlan kettős",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "A Tiadlan kettős nem annyira katonai formáció, mint inkább kalandozók kedvelt harcmodora. Mint neve is mutatja, két harcos kell hozzá. Alapvetően a túlélőre épít. Ha a két harcosnál erősebb ellenféllel kerül szembe, egymást támogatva és védve harcolhatnak a közös ellenfél ellen. Az alakzatban a résztvevők megosztják egymás közt, hogy ki támad, és ki védekezik. Ezt alaposan begyakorolják, hiszen a kettős előnye a pontosság és az összehangoltság – nem meglepő tehát, hogy a taktika származási helyét a tiadlani kolostorok erődfalai között sejtik Ynev tudós fői. Általában egyikük rátámad az ellenfélre, de szándékosan elrontja. Az felbuzdulva sikerén visszatámad. Ez a kritikus pillanat, ugyanis ezt a viszonttámadást már váró harcos felkészülten hárít, míg a másik ezzel egyidőben lecsap. Ha jól időzítettek, az ellenfél nem képes védekezni, hiszen támad. A hárító harcos védekező harcot folytat annak minden előnyével és",
+            "title": "Tiadlan kettős formáció",
+            "headers": [],
+            "rows": []
+        }
+    ]
+}

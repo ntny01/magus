@@ -1,0 +1,113 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": true,
+    "section_title": "Hamisítás (III – Ügyesség, Intelligencia)",
+    "content_blocks": [
+        {
+            "type": "paragraph",
+            "text": "4. fok A Mesteri művelője e „szakmának” már bármilyen körbe bejuthat öltözékei segítségével, ha bír a KM által meghatározott Udvari etikett vagy Kultúra képzettség szükséges fokával. Maszkjai akár nyolc órán át használhatóak maradnak. A sajátjától maximálisan 30%-kal eltérő testméretek utánzására képes.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "Már igen nagy, akár kisebb kunyhónyi tárgyakat is elrejthet a KM belátása szerinti idő alatt, ha ez az adott helyzetben lehetséges.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "A karakter próbájához +2 módosító járul.",
+            "title": "Rendszerszabály",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "5. fok Legendás hírű álcázómester, kinek híre munkásságának és álöltözeteinek hála csak igen szűk körben terjed. Ha ideje engedi, szinte bármekkorra, emberi méretű testet viselhető álcáját elkészíti, maszkjai akár napokig is kitarthatnak.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "Képességei birtokában nagyobb háznyi tárgyakat is megpróbálhat elrejteni a KM beleegyezésével, a megfelelő idő birtokában.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "A karakter próbájához +3 módosító járul.",
+            "title": "Rendszerszabály",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "A képzettség különböző iratok, értékek hamisítására, az eredetihez megszólalásig hasonló másolatának elkészítésére szolgál.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "A képzettség követelménye lehet a hamisítandó érték elkészítéséhez tartozó Szakma ismerete, illetve okirat hamisításnál Írás/olvasás, Heraldika megfelelő kultúrkörének ismerete.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "A csalást felfedni kívánók ellen próba dobandó a kutakodó személy Érzékeléspróbája, esetleg Értékbecslés vagy bármely a KM által kiválasztott képzettsége ellenében.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "A karakter még csak figyelgeti a mesterség alapjait. Jobban teszi, ha nem próbálkozik, ha nem akar kötelet a nyaka köré.",
+            "title": "1. fok",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "A karakter próbájához -1 módosító járul.",
+            "title": "Rendszerszabály",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "Kontár, még csak tanulja a szakma alapjait. Komolyabb munkáknál nincs sok esélye sikerre.",
+            "title": "2. fok",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "A karakter próbáját módosító nélkül végezheti el.",
+            "title": "Rendszerszabály",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "Tehetős iparos, komolyabb munkákat még csak nagy kockázattal vállalhat, de már tisztességes úti okmányok egyszerűbb passzusok kerülnek ki a keze alól, becsületes pénzhamisító.",
+            "title": "3. fok",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "A karakter próbájához +1 módosító járul.",
+            "title": "Rendszerszabály",
+            "headers": [],
+            "rows": []
+        }
+    ]
+}

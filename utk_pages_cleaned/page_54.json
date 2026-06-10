@@ -1,0 +1,98 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": null,
+    "is_new_section": false,
+    "section_title": null,
+    "content_blocks": [
+        {
+            "type": "flavor_text",
+            "text": "...A Messor üres tekintettel térdepelt mellette. Elmúlás nélkül nincs kiteljesedés; csak most értette meg, hogy igaz szerelemre, szerelmetre lelt Jadist. Idővel kezét a nő vállára helyezte – a lepel alatt megrezdült a dermedt Lopakodó –, amikor pedig elvette onnan, a tenyerén fekete acélgömb nyugodott. A Pyarroni ügynök lépett mellé. Saját, apró zsákját nyújtotta át, de kerülte a férfi tekintetét. Amint a gömb eltűnt az iszákban – mintha zárványként magával vitte volna a Messor érzelmeit is – már ismét a Meridián állt előttük."
+        },
+        {
+            "type": "flavor_text",
+            "text": "Határozottságának asztrálhullámai elérték a Transcepst, majd a Stratégiát is. A hadvezér szellemehangja törte meg a háló hosszú csendjét:"
+        },
+        {
+            "type": "flavor_text",
+            "text": "– A terv szerint folytatjuk. Kerüljétek el a lépcsőt!"
+        },
+        {
+            "type": "flavor_text",
+            "text": "– A Meridián hátat fordított a lépcsőnek, csak a folyosó végén fordult vissza, és vetett kifürkészhetetlen pillantást a holttestre – s azon túl a falrajzokra. Az egyik sequator lemaradt, szemén keresztül a Transceps szegezte pillantását a Mortel testére – a következő minutumban a test és a lepel egyaránt lángra kapott."
+        },
+        {
+            "type": "flavor_text",
+            "text": "– A sequatorok visszatérnek őrhelyükre, a Meridián és kísérője folytatja az előrenyomulást! – rendelkezett a hadvezér."
+        },
+        {
+            "type": "flavor_text",
+            "text": "A sequadion minden tagjától folyamatosan áramló, s a Messor korábbi behatolásából származó képek lassanként összeálltak tudatának elkülönített zugában, s a strategis-meditációnak köszönhetően kirajzolódtak előtte a Hiada térképe. Akár egy többrétegű pergamen, melyre különböző színű tintával vezettek fel az épület alaprajzát és – ahol szükséges – némi magyarázatot. Habár a térképen még jókora fehér foltok terpeszkedtek, a hadvezér teljes biztonsággal vezette mindkét csapatot a megfelelő irányba. Akár a sivatagba tikkadt vándor a vizet, úgy szomjazta a híreket. Mint minden hadvezér, mind távolabbra vágyott látni – kiismerni az ellenséget, feltárni indítékait –, hogy aztán kiszámíthassa a lépéseit."
+        },
+        {
+            "type": "flavor_text",
+            "text": "Ám ezúttal semmit nem látott: áthatolhatatlan, fekete füst fedte el a jövőt."
+        },
+        {
+            "type": "flavor_text",
+            "text": "Dale Avery: Renegát"
+        },
+        {
+            "type": "paragraph",
+            "text": "A fejvadász hivatása az ölés művészete. Nem stílusosan, tradíciók szerint gyilkol, inkább hatékonyan, lesből, orvul, ha kell hideg vassal, méreggel vagy íjjal, neki mit sem számít. A megnevezés igen találó, hiszen embertársaiban, áldozataiban ritkán lát többet, mint a vadász, ki íját a vadra emeli: a célpontot, kinek pusztulnia kell, hogy más élhessen."
+        },
+        {
+            "type": "paragraph",
+            "text": "A fejvadászok igen sok fajtáját ismerjük: akadnak közöttük orgyilkosok, testőrök, felderítők és még számos más feladat ellátói. Egy dologban mégis mindannyian megegyeznek, és ez különbözteti meg őket az egyszerű késelőktől, útonállóktól: a rend, a fegyelem és a szellemi tartás. Az életüket irányító, saját klántársaikkal, elöljáróikkal szembeni viselkedésüket szabályozó tradíciók szükségesek, mivel ez az egyetlen út, hogy ez az emberi ragadozókból álló falka ne önmagát marcangolja szét vitáik közepette, és hatékonyan valósíthassák meg a klán alapításakor kitűzött célokat."
+        },
+        {
+            "type": "paragraph",
+            "text": "A fejvadász azonban sohasem egyszerű szabályként fogja fel ezeket az előírásokat, hanem mindig elvként, irányvonaliként. Az ő szemében ugyanis a klán családi, vérrokoni közösség, bármilyen messze álljon is ez a valóságtól. Ilyen keretek között pedig megváltoznak a viszonyok. A hatóságnak kényszerből engedelmeskedik az ember; a szüleinek tiszteletből. Az idegent parancsra segíti; a testvérét szeretetből. Az uralkodót kötelességből védi; a családját becsületből."
+        },
+        {
+            "type": "paragraph",
+            "text": "Így hát a fejvadász, amikor lesújt tehetetlen áldozatára, a családjáért öl."
+        },
+        {
+            "type": "rule",
+            "title": "Karakterajánlás",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "title": "Harcmodor és Harcérték",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "title": "Fájdalomtűrés és Életerő",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "title": "Képzettségek és Képzettségpontok",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "title": "Speciális fegyverek és vértek",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "title": "Belső erők művészete",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "title": "Különleges pszi elsajátítása",
+            "headers": [],
+            "rows": []
+        }
+    ]
+}

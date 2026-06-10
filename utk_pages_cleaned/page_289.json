@@ -1,0 +1,88 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": true,
+    "section_title": "Misztikus képességek",
+    "content_blocks": [
+        {
+            "type": "paragraph",
+            "text": "marad fenn, míg a tagok kívánják. Ha bármi okból megtörik, megszakad a kapcsolat, az épp alakulófélben lévő varázslat nem jön létre, ráadásul az összes résztvevő boszorkány elveszíti Mana pontjait. A kör alkotásához legalább három boszorkány szükséges – kettő a gyűrűben, egy középen –, a résztvevők maximális létszáma pedig hat lehet."
+        },
+        {
+            "type": "rule",
+            "title": "Lebegés",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "E varázslat lehetővé teszi, hogy a boszorkány a levegőbe emelkedjen és lebegjen. A megfelelő erők megidézéséhez karjait széttárva az ég felé nyúl, lassan süvöltve fújja ki a levegőt tüdejéből, majd a levegőbe szökken. A varázslattal nemcsak a levegőbe emelkedni, de vízszintesen irányban mozogni is lehet. A boszorkány nagyjából egy arasszal a talaj fölé emelkedik, s szinte siklik a felszín felett. Így semmilyen súlyérzékeny csapda nem észleli; átkelhet a vízen, s akár egy sétáló ember sebességével is haladhat, egyetlen mozdulat nélkül. A varázslatot a boszorkány nem csak önmagára, hanem bárki másra is alkalmazhatja, akit megérint."
+        },
+        {
+            "type": "rule",
+            "title": "Mágia felfedezése",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A varázslat végrehajtásakor a boszorkány ajkai ősi igéket suttognak, alig hallhatóan hívja segítségül varázserejét, hogy érzékelje bármilyen típusú mágia jelenlétét, legyen annak forrása tárgy, személy, hely, vagy bármi más. A hatalom forrása a boszorkány lelki szemei előtt hófehér izzással fénylik fel. Kivételt képeznek ez alól azok a mágiaformák, melyeket Leplezés véd. Más boszorkányok Megbélyegzés csókja által létrehozott bélyeg sem észlelhető ezen a módon."
+        },
+        {
+            "type": "rule",
+            "title": "Szépségvarázs",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A boszorkány e varázslatot csak saját magára alkalmazhatja. Egy percig kell igét kántálnia, az előírt mozdulatokat ismételnie, minek következtében külseje megváltozik; régi vonásait a varázsige elhangzásával együtt veszíti el, s nyeri el új alakját. Egészséges, fiatal, szép egyedévé válik fajának (gyönyörű leánnyá változik). Karizmája 14 + 1k6-ra módosul, attól függően, mennyire sikerült a varázslat. További Mana pontok hozzáadásával a valószínűség persze növelhető: a k6 alacsony értékei helyett újra lehet dobni, a következők szerint: További 4 Mana pont feldobásával 1-es helyett lehet újat dobni; 8 Mana pontért 1-2 helyett; 12 Mana pontért 1-3 helyett; 16 Mana pontért 1-4 helyett; további 20 Mana pontért pedig biztosított a 20-as Szépség. A dobás természetesen addig végezhető el újra és újra, míg a plusz manaköltséggel kiiktatott értékeket dobja a játékos. A boszorkány 1 napig marad megváltozott küllemében, s visszaváltozni akkor sem tudna hamarabb, ha történetesen ezt kívánná."
+        },
+        {
+            "type": "flavor_text",
+            "text": "„...A boszorkányok – bár sokan és hevesen tagadják – jóval több közük van bizonyos misztikus energiákhoz, együttállásokhoz, felsőbbrendű hatalmakhoz és égiekhez, mint más varázshasználóknak. Így válhattak képessé olyan módszerek alkalmazására, melyek láttán még az avatott megfigyelők is hajlamosak csodát emlegetni...”"
+        },
+        {
+            "type": "rule",
+            "title": "Árnyak",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A varázslat szintén a női varázstudók és az éjszaka misztikus kapcsolatával magyarázható. A boszorkány megváltoztathatja egy hely fényviszonyait: az árnyékok kiterjedését. Ez annyit tesz, hogy az érintett területen minden árnyék eredeti méretének kétszeresére nyúlik, vagy felére zsugorodik. A varázslat hatására módosul a Rejtőzés képzettséghez tartozó képzettségpróba is, mivel sűrű, nagy kiterjedésű árnyékban sokkal könnyebb észrevétlennek maradni, mint a kivilágított helyen. A Rejtőzés képzettséget módosító érték maximum plusz-mínusz 25% lehet. A varázslat hatósugara 20 láb."
+        },
+        {
+            "type": "rule",
+            "title": "Csapdakeresés",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A boszorkány ezt a varázslatot háromféleképpen alkalmazhatja, a szükséges Mana pontok száma is eszerint változik. Az első, 6 Mana pontos felhasználási mód segítségével 5 lábsugarú körben minden mechanikus csapda felfedezhető, a mágikusak azonban nem. Azok a csapdák is rejtve maradnak, melyet törpék készítettek, s saját kőépítményeikben helyeztek el. Ezek a legjobban elkészített és legtökéletesebben álcázott csapdák: nagy műgonddal készültek, a szikla és a föld erejével itatódtak át, miáltal szinte észlelhetetlenül ugyan, de mágikussá váltak. A második felhasználási mód 12 Mana pontot igényel, s ez már a törpék által készített és a mágikus csapdákat is észleli. A harmadik módszer a legenergiaigényesebb, mert nem a hely adottságait, az elkészített csapdák helyét vizsgálja, hanem korlátozott mértékben a jövőbe tekint. Így nem csak a valódi csapdákat, hanem a lehetséges veszélyeket, veszélyforrásokat is érzékeli – legyen az egy leomlani készülő tetőgerenda, vagy meglepetésszerűen támadó orgyilkos."
+        },
+        {
+            "type": "rule",
+            "title": "Eredetkutatás",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A boszorkány e varázslattal tárgyak múltjába nyerhet bepillantást. A mágikus rituálé két részből áll: az első a mágikus igék kimondása (12 kört vesz igénybe), ezt hosszabb transzállapot követi (1k6 órán át tart). Ezalatt a boszorkány szeme előtt lepereg a vizsgált tárgy története – rendkívül gyorsan, csak lényeges eseményekre sarkítva: kik voltak eddigi tulajdonosai, milyen fontos eseményekhez kötődik, milyen varázslatok hatottak rá, stb. A varázslat nem ad választ a jövőre, csak a múltra. A tárgyat a boszorkány végig érintenie kell. Ha a kapcsolat megszakad, a varázslat azonnal véget ér."
+        }
+    ]
+}

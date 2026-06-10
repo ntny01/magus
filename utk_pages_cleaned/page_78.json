@@ -1,0 +1,275 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": true,
+    "section_title": "Harcművész stílusok",
+    "content_blocks": [
+        {
+            "type": "table",
+            "text": "",
+            "title": "",
+            "headers": [
+                "Fegyver",
+                "fvn*",
+                "Stílus (Shien-ka-to)",
+                "Hosszú bot"
+            ],
+            "rows": [
+                [
+                    "Időigény",
+                    "3",
+                    "3",
+                    "4"
+                ],
+                [
+                    "KÉ:",
+                    "29",
+                    "41",
+                    "40"
+                ],
+                [
+                    "TÉ:",
+                    "46",
+                    "66",
+                    "61"
+                ],
+                [
+                    "VÉ:",
+                    "92",
+                    "105",
+                    "113"
+                ],
+                [
+                    "CÉ:",
+                    "28",
+                    "",
+                    ""
+                ],
+                [
+                    "Sebzés:",
+                    "1k10",
+                    "",
+                    "2k6"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "\"fegyver nélkül\"",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "table",
+            "text": "",
+            "title": "",
+            "headers": [
+                "Képzettségek",
+                "Fok",
+                "Kp"
+            ],
+            "rows": [
+                [
+                    "Harcművészet (Shien-ka-to)",
+                    "4. fok",
+                    "13 Kp"
+                ],
+                [
+                    "Harcművészet (hosszú bot)",
+                    "4. fok",
+                    "3 Kp"
+                ],
+                [
+                    "Harctéri gyakorlat",
+                    "2. fok",
+                    "3 Kp"
+                ],
+                [
+                    "Helyismeret (szülőföld)",
+                    "3. fok",
+                    ""
+                ],
+                [
+                    "Kultúra (saját)",
+                    "3. fok",
+                    ""
+                ],
+                [
+                    "Nyelvtudás (anyanyelv)",
+                    "3. fok",
+                    ""
+                ],
+                [
+                    "Udvari etikett",
+                    "1. fok",
+                    "1 Kp"
+                ],
+                [
+                    "Vadonjárás",
+                    "1. fok",
+                    "1 Kp"
+                ],
+                [
+                    "Írás/olvasás",
+                    "1. fok",
+                    ""
+                ],
+                [
+                    "Orvoslás",
+                    "2. fok",
+                    ""
+                ],
+                [
+                    "Élettan",
+                    "2. fok",
+                    ""
+                ],
+                [
+                    "Herbalizmus",
+                    "2. fok",
+                    ""
+                ],
+                [
+                    "Pszi (Slan Út)",
+                    "3. fok",
+                    ""
+                ],
+                [
+                    "Akrobatika",
+                    "+49%",
+                    "5 Kp"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A harcművészek harci stílusát a szellemiségüket formáló jegyeik teszik egyedivé. Az iskolák általában valamely természeti jelenséghez, a legerjedtebbek az őselemhez hasonlítják szellemiségüket, könnyebben befogadhatóvá téve így a tudat számára a tudatos léten túli viselkedésformák összességét.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "A harcművészek – bár a tradicionális alapfegyverek forgatását mind elsajátítják – küzdelemben ritkán folyamodnak rideg készségekhez. Nem idegenkednek tőlük, pusztán szemléletük szerint a fegyver már önmagában behatárolja a küzdőt, rákényszeríti stílusát, így sokkal nehezebb kibontakoztatni a belső erőket. Azonban a harcművészek sosem riadnak vissza az efféle kihívásoktól. Mindannyiuk számára kötelező egyet választani, mellyel el kell sajátítaniuk a harc művészetét. Általában az egyes iskolák és mesternek megvannak a maguk hagyományos fegyverei, tanoncaik pedig a stíluson kívül egyedül ezzel az fegyverrel képesek a Sárkány diszciplínák használatára. Ezenkívül a harcművészek soha nem öltenek semmilyen merev fémvértezet, a fegyverek esetében már leírt ok miatt.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "Az iskolák nem csak meghatározzák a harcművész küzdőstílusát, de személyiségének fejlődéséhez, irányultságához is nagyban hozzájárulnak.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "A harcművész minden támadása elején bejelentheti, hogy kezével, lábával vagy fegyverével kíván-e támadni. E támadásokkor a megjelölt stílus értékei adódnak hozzá a Harcértékekhez vagy fegyveres harc esetén a fegyverek módosítói – természetesen aktuálisan csak az az egy, amelyiket használni kívánja.",
+            "title": "Harcművész támadások",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "A stílusok alkalmazása közben a harcművésznek az ököllel feltüntetett szabályok szerint 3 személyesen van lehetősége támadni, azaz 3-szor egy körben. Természetesen mind a lefegyverzés, mind a fegyvertörés végrehajtható bármelyik stílusirányzattal.",
+            "title": "Stílusok alkalmazása",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "Shien-ka-to (Tűz)",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "Az egyik legősibb harci irányzat, az iskola alapítását a P.Sz.-i XXII. évszázadra teszik. Legüresebb mestere Twien Loo Ka Niaréből származott, harminc évesen telepedett le Tiadlanban. Itt ismerkedett meg a Shien-ka-to stílussal, s hamarosan a legtehetségesebb tanítványnak számított. Ötvenöt korára lett az iskola nagymestere, ekkor látott hozzá a technikák megreformálásához és kibővítéséhez. Az addigi stílusjegyekhez igazított Niaréből származó tudását, s majd tíz év tökéletesítés és csiszolás után létrejött az a tudásanyag, amit ma Shien-ka-to néven ismer a világ.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "Az irányzatnak leginkább Tiadlan északi részén akadnak kolostorai. Futárai messze földön híresek és megbízhatóak. A király és a duin levelezésének megszokott kísérői, illetve az északnyugati hegyi hágók felvigyázását is jórészt ők látják el, biztosítva a veszélymentes áthaladást a Vittadora postakocsi-szolgálat fogatainak télen-nyáron. Emellett gyámolítják és tanítják is a hozzájuk kéréssel forduló helybélieket; a világ minden részéből érkező kereskedők és utazók meséiből, történeteiből, jegyzeteiből kezdetben csak a határvidék, majd egész Észak részletes térképét összeállították, némelyik bölcsük még a világ szerkezetének felépítését is megpróbálta filozófiájuknak megfelelően ábrázolni. Gondolkodásuk munkássága nemegyszer okozott már felzúdulást Észak tudományos köreiben; igaz a dolgoknak általában nem volt folytatása, mivel a csendes, visszahúzódó szerzetesek szinte mindig megelégedtek azzal, hogy ők bírják a tudást, s ha más nem fogadja el, hát lelke rajta.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "Szimbólumuk sárga kör alapon fekete lángnyelv, s ezt előszeretettel viselik fejkötőiken, ruházatuk hátán. Fegyvereket ritkán használnak, technikájuk jórészt a pusztakezes harcra korlátozódik, ám ha mégis fegyvert vesznek a kezükbe, a botot részesítik előnyben.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "A kemény, ám könnyű drakka husángjából csiszolják e botot, amelynek erezete vöröses színű, s igen ellenálló – egy képzett Shien-ka-to kezében méltó ellenfele bármely acélból kovácsolt fegyvernek. Eltörni, elvágni nem könnyű, sebzése, amennyiben a megfelelő technikákkal forgatják 2k6. Ez az egyetlen fegyver, amelyet egy Shien-ka-to harcos a Sárkány diszciplínák közepette is tud használni.",
+            "title": "Shien-ka-to bot",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "Technikáik sokkal inkább támadás-, semmint védelemcentrikus. A cél minél gyorsabban ártalmatlanná tenni az ellenfelet, könnyed mozgással, forgásokkal, akrobatikus elemekkel, mintha a harcművész valóban szélben lobogó lángnyelvként táncolna. Viszonylag széles, lendületes mozdulatok jellemzik, az ütések és rúgások erejét inkább gyorsaságuk és pontosságuk adja. Szeretik távol tartani ellenfeleiket, a belharc idegen a Shien-ka-to-tól. Kezüket és lábukat közel azonos arányban használják harc közben, állásaik magasak, s kiváló az egyensúlyérzékük.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "A stílus harcértékei:",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "table",
+            "text": "",
+            "title": "",
+            "headers": [
+                "Jellemző",
+                "Érték"
+            ],
+            "rows": [
+                [
+                    "Időigény:",
+                    "3"
+                ],
+                [
+                    "KÉ:",
+                    "10"
+                ],
+                [
+                    "TÉ:",
+                    "15"
+                ],
+                [
+                    "VÉ:",
+                    "8"
+                ],
+                [
+                    "Sebzés:",
+                    "1k10"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A Shien-ka-to irányzat kolostoraiban tanult karakterek előnye:",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "1. Az irányzat kolostoraiban igen nagy hangsúlyt fektetnek a tudás megszerzésére és továbbadására, legyen bár szó egy egyszerű versről vagy akár egy démon igaz nevéről. Az ezen rendházakban tanult karakterek a harcművészet leírásában nem szereplő minden nem misztikus képzettséget 2. fokú Oktatás képzettségnek megfelelő bónuszokkal tanulhatnak.",
+            "title": "Shien-ka-to kolostor előny",
+            "headers": [],
+            "rows": []
+        }
+    ]
+}

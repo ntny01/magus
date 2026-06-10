@@ -1,0 +1,106 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": true,
+    "section_title": "A varázslóiskolák",
+    "content_blocks": [
+        {
+            "type": "flavor_text",
+            "text": "„Kesernyés illat terjengett a levegőben, melynek hatására Alír rüstént felkapta a fejét – a számára minden másnál ismerősebb halál szaga volt ez... Nem szólt, csak elmosolyodott, mielőtt folytatta volna sajátos ténykedését. Jókorát rajzolt maga köré a porba, majd kiegészítette egy pentagrammával. Öt csúcsába egy-egy ókyn rúnát került, a közepébe egy megidéző formula Abdul al Sahred Necrografia című könyvéből. A magasabbik dob tetején jártak már a lovasok, mire az elf intett egyet a dorani Szarvtornyot jelképező botjával – s a pentagramma csúcsaiba írt rúnák kékes fénnyel nyomban felizzottak. Alír csúfondáros ajakbiggyesztéssel kántálásba kezdett. Készen állt...\"",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "flavor_text",
+            "text": "Alír megszorította a kéken fénylő kezet. A burnuszos csapat három élen haladó tagja előtt egy-egy kéken sugárzó fantomkéz tűnt elő. Mielőtt az áldozatok kiterhelték volna, már le is csaptak rájuk. Szorítását érezték torkukon. Pár pillanatig ellenállhattak, küzdöttek még, de ezt a szorítást a legerősebbik sem bírhatták sokáig. A kék derengésben csontok reccsentek. A lovasok, társaik döbbent tekintetében keresztülzúztak borzalmas változásokon keresztül. Rohamosan vénülni kezdtek, egykettőre sok ezer éves múmiákhoz váltak hasonlatossá, a folyamat azonban nem maradt abba, sőt, folyvást gyorsult. A szemek körül már repedezett a megszikkadt hús, a szájak förtelmes, torz koponyavigyorgóra nyíltak, az ínyek úgy szürkéllettek, akár a napra tett, döglött varangy bőre... Egy végső hördülés után mozdulatlanná dermedtek mindhárman. A fantomkezek szertefoszlottak. Az áldozatok szemüregében rőt fény lobbant, s mire baljós izzása tompult, az aszott jobbok ismét mozdultak...\"",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "flavor_text",
+            "text": "— Wayne Chapman: A halál havában",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "A mágia titkos tudomány, melyet nem sajátíthat el bárki. Az igaz varázslók a mágiában nem a hatalom eszközét, hanem a világ megismerésének, a lélek előrejutásnak eszközét látják – hasonlóan a harcművészek tökéletességkereséséhez. Aki nem ekként tekint a mágiára, soha nem képes tiszta formájában elsajátítani. Ezért a hatalom és a gazdagság keresői sosem jutnak el a mágia teljes megismeréséig, annak legfeljebb alacsonyabb szintű alkalmazását sajátíthatják el. Ők a boszorkányok, boszorkánymesterek és egyéb tapasztalati mágiát használó mágiaforgatók.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "A varázslói mágia megtanulása, a letisztult varázslatformák alkalmazása olyan átszellemültséget, elvont gondolkodásmódot igényel, mely mindenképpen távol áll az Anyagi Világ hívásaitól, a hétköznapi hatalomvágytól, az anyagiasságtól. A mágia tana művészet; nem fegyver, sokkal inkább szerszám. Aki nem ekként viszonyul a titkos tanokhoz, nem felvételt a varázslóiskolába, vagy ha mégis bejut, sosem válik belőle varázsló.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "A varázslók – Ynev bármely iskolájában sajátították is el tudományukat – büszkék. Büszkék tudásukra, titkos ismereteikre, mely a halandók többségének soha nem adatik meg. Ezen büszkeségük elsősorban a sötétnek nevezhető kultúrákban (Krán, Gorvik, Toron) nyilvánul meg hétköznapi módon – bár másutt sem feltétlenül mentesek tőle – egyébként sokkal inkább „szakmai” büszkeséget jelent.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "A varázsló úgy tekinti a mágiát, miként a pap istene oltárát vagy a kardművész a kardját. Méltóságán alulinak, bizonyos szempontból szentségtörésnek érzi alantas tevékenységre felhasználni. Nem váltja tudását aprópénzre, nem teremt aranyat, drágaságokat vagyonszerzés céljából. Ahogyan nem fordítja hétköznapi célok elérésére és viszolyog olyasmire használni, ami mágia nélkül is elérhető, megalkotható lenne. A mágiát büszkén és fennköltén használja, még akkor is, ha történetesen pusztít általa. Ezen íratlan törvényeket minden varázsló betartja, a feketemágiát gyakorlók – fennhéjázó önteltségüknek köszönhetően – talán még inkább.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "Iskolájától és szülőföldjétől függően sokféle varázsló létezik Yneven. Mégis van néhány olyan tulajdonságuk, amelyek összekötik vagy legalábbis hasonlóvá teszik őket, minden különbségük ellenére.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "Mindannyian hihetetlen mennyiségű tanulás után lesznek csak képesek arra, hogy a mágikus tudás legalapvetőbb formáit elsajátíthassák. Ehhez persze rengeteg időt, bizony éveket kell eltölteniük egy-egy iskola falai között. Nem véletlen hát, hogy mindannyijuk gondolkodásmódját, jellemét, viselkedését döntő módon befolyásolják mestereik és a tőlük szerzett tapasztalatok.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "A varázslók általában kisgyermekkoruk óta egy ilyen intézmény bentlakó tagjai, csak kivételes esetekben fordulhat elő, hogy meglett korukban kerüljenek a mágia fellegvárába. Nagyrítkán persze elképzelhető, hogy valakit egy magányos mester vegyen pártfogásába, ám ez a fajta képzés mindenképpen hiányos kell, legyen, hiszen nem valószínű, hogy a magiszter rendelkezésére olyan felszereltségű laboratóriumok és könyvtárak álljanak, mint amilyenek a híresebb varázslóiskoláknak vannak.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "Ily módon legalábbis érthető, miért rendelkeznek oly kevés praktikus ismerettel, s ezzel magyarázható, hogy legtöbbjüknek rendkívül hiányos fogalmai vannak a mindennapi élet különféle praktikáiról.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "Bármennyi hihető és hihetetlen történet kering is a varázslókról, nem szabad megfeledkezni róla, hogy ők maguk rendkívül csekély számban lelhetők fel Yneven. Azok a szerencsések is kevesen vannak, akik képességeiknek köszönhetően bejuthatnak egy-egy ilyen intézménybe, ám hozzájuk képest is elhanyagolható azoknak a növendékeknek a száma, akik sikerrel leteszik a vizsgáikat. Ez a tény, ha lehet még magabiztosabbá teszi azokat, akiknek sikerül mesterségük jelképét, a varázslóbotot megszerezni. Éppen csekély számuk az oka, hogy megjelenésük mindenütt nagy feltűnést kelt – magukat ugyanis a legritkább esetekben álcázzák másnak –, s jobbára félelemmel vegyes tisztelettel tölti el a szíveket. Kevés olyan vakmerő akad, aki ujjat merne húzni egy ismeretlen varázslóval. Ugyanezen okból az sem maradhat sokáig titokban, ha egy környéken varázsló üti fel a tanyáját.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "A kifejezés két különböző fogalmat takar. Varázslóiskolának nevezzük azokat a mágikus erődítményeket és eldugott kis építményeket egyaránt, ahol szervezett módon folyik a különféle varázslónövendékek mágikus képzése. Ezeken a helyeken nem csupán a legalapvetőbb mozaikokat, varázslatokat sajátítják el a tanítványok, de magukba szívják az adott helyre jellemző viselkedésformákat és erkölcsiséget csakúgy, mint a magiszterek képviselte gondolkodásmódot.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "Másik jelentése a különféle mágiák irányzatok elkülönítésére szolgál. Ezek az iskolák megegyeznek abban, hogy az alkalmazott módszerektől függetlenül megközelítőleg azonos elvek alapján tevékenykednek. Esetükben a cél azonos, míg az odavezető út tökéletesen különböző is lehet. Úgy tekinthetünk rájuk, mint a tudás különféle nagy mezeire, ahol mindenki más és más módszerrel gazdálkodik. Több ilyen nagy iskolát különböztetünk meg, közülük az alábbiak a legismertebbek: Az Asztrálmágus iskolák az Asztrális, az érzelem-",
+            "title": "",
+            "headers": [],
+            "rows": []
+        }
+    ]
+}

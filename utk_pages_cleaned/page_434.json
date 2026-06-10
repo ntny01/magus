@@ -1,0 +1,52 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": false,
+    "section_title": "",
+    "content_blocks": [
+        {
+            "type": "paragraph",
+            "text": "Hadsereg Toron leghatékonyabban működő szervezete a hadsereg. Számos légióra tagolódik, nem beszélve a földrajzi és hatalmi hovatartozástól függő felosztásról. A legfőbb hadúr természetesen maga a császár, bár csak a legritkább esetekben fordul elő, hogy személyesen vezesse a seregeket. Nagyhatalmú, széles körben rettegett generálisai, a Birodalmi Légiók parancsnokai jól ellátják kezdeti feladatokat. Ezek az emberek betéve ismerik Ynev legritkább hadászati szakmunkáit, ráadásul számos fegyverrel maguk is kitűnően bánnak, a csaták forgatagában jól megállják a helyüket. Valamennyi hírneves katonadinasztiából származnak, s a Nemes Házak sarjainak kijáró tisztelet és megbecsülés övezi őket. Sokak szemében velejéig romlottnak és gonosznak tűnnek, ám ők nem foglalkoznak erkölcsi kérdésekkel – jövedelmük, a lehető leghatékonyabban és leglátványosabban szolgálni a császárt és a pusztulást."
+        },
+        {
+            "type": "paragraph",
+            "text": "A Generálisok Konzíliuma a legmagasabb szintű katonai tanácsadó testület, elméletileg a császár alárendeltje, gyakorlatilag azonban háborús ügyekben a legfelsőbb döntéshozó szerv. Ők nevezik ki a különböző Haditanácsokat, élet és halál mindenható urai a harcmezőn. Alájuk tartoznak a különböző alakulatok, az ő utasításaiknak engedelmeskedik az Összes parancsnok. Toronról lévén szó, ez alól is akadnak persze kivételek, de erről később ejtünk szót."
+        },
+        {
+            "type": "paragraph",
+            "text": "A birodalmi légiók után hatékonyságban a tartományi hadak következnek. A különböző tartományok állandó seregeiről van szó, melyeknek gerincét a számtalan kisebb, önálló jogú katonacsalád fegyverforgatói alkotják. E hadak állandó készenlétben tartása és ellátása a Regitor Imperialisok feladata. Hatalmas, városnyi erődökben vannak elszállásolva, életük folyamán gyakorlatozással telik. Időről időre kisebb határszéli hadjáratokra küldik őket, nehogy elszokjanak a vérreménű küzdelemtől. A seregek magánhasználói mindentütt jelen vannak, s igyekeznek minél hatékonyabban kivenni a részüket az ütközetből."
+        },
+        {
+            "type": "paragraph",
+            "text": "Számban ugyan csekélyebbek, de semmivel sem felkészületlenebbek a Nemesi Hadak. Szigorú törvények szabályozzák, hogy háború esetén az egyes nemesi famíliák – jövedelmüktől függően – mekkora létszámú hadi kontingens kiállítására, felfegyverzésére kötelezhetők. Ezek a seregek általában a hadjárat meghirdetése után egy hónappal már harcra foghatók; ennyi idő kell, hogy a kijelölt gyülekezési helyeken összeverődjenek. Így általában ők látják el az utóvéd feladatait, az utánpótlási vonalak biztosítását, az első sorokban csak ritkán kerülnek bevetésre."
+        },
+        {
+            "type": "paragraph",
+            "text": "Mind irányítás, mind fegyelem és gondolkodásmód dolgában kilógnak a sorból a szövetséges Toronban állomásozó seregei és a különféle zsoldoscsapatok. Őket külön táborokban szállásolják el, és békeidőben számuk elhanyagolható."
+        },
+        {
+            "type": "paragraph",
+            "text": "Szóltunk már azokról a hadakról, amelyek ugyan Toron érdekeit képviselik, mégsem a generálisoknak tartoznak engedelmességgel. A Hatalmasok seregeiről van szó, melyeket messziről fel lehet ismerni fakó hadilobogóikról. Közkeletű – és messze földön rettegett – elnevezésük a Sápadt Légió. Hús-vér emberek alkotják, jóllehet találunk közöttük néhány élőholt hadosztályt is. Nevüket hadijelvényeik színéről kapták. Vezetőik, a boszorkányhadurak rettegett harcosok, akik emellett a mágia bizonyos formáit is magukon űzik. Kizárólag a boszorkányhercegeknek és a Hatalmasoknak engedelmeskednek, ez azonban nem jelenti azt, hogy önálló politikát folytathatnak. Csupán a nagyobb hadjáratokban vesznek részt, ilyenkor érdekeiknek mindenkép egybe kell vágniuk az uralkodó érdekeivel. Gyakorta lobogóik puszta megjelenése dönti el a csaták sorsát."
+        },
+        {
+            "type": "paragraph",
+            "text": "Kereskedelem és alvilág Toron hatalmának másik pillére a mindenre kiterjedő kereskedelem, s ennek bonyolítói, a kalmár-dinasztiák. Olyan hatékony és gondosan felépített szervezet-ről van szó, amely elérte azt, amit a politika soha: Ynev majd' minden kikötőjében szívesen fogadják hajóikat, karavánjaikat, mert megbízható szállítók, rengeteg kapcsolattal, s nem utolsósorban kiváló minőségű az árujuk. A kalmárjogok temérdek pénzbe kerülnek, nem beszélve a Kamarának fizetendő adókról. A társaságok haszna még így is rendkívüli, nem véletlenül ér messzire a kezük: félelmetes képességű katonákat, testőröket, mágiahasználókat alkalmaznak."
+        },
+        {
+            "type": "paragraph",
+            "text": "A kalmárdinasztiák évszázadok alatt építették ki láncolataikat, s mindig hűek maradtak a birodalomhoz, különben egyvesztettként eltűntek volna valamely rabszolgatelepen, minden rokonukkal együtt. Óriási raktárerdők, kereskedelmi lerakatok jelzik jelenlétüket a kikötőkben és a szigeteken. Nemcsak a különböző társaságok, hanem az úgynevezett Magános Házak Kamarái is jókora szeletet hasítanak ki ebből a tortából. Számos tengerészeti újítás, találmány fűződik a nevükhöz – állítólag még Igrain Reval is sokat utazott egy toroni kereskedő karavánjával. Ámbar hatalmas vagyonok felett rendelkeznek, s befolyásuk nemcsak a bankházaknál, de még az udvarnál is érvényesül, pénzüket pedig mindenütt szívesen fogadják, mégsem örvendenek kiemelt megbecsülésnek. Ennek részben az lehet az oka, hogy a nemesség lenézi a kupeckedést, részben pedig az, hogy a kereskedőkről mindenki tudja: időnként leereszkednek más fajokhoz is, s nem kizárólag emberlakta országokkal üzletelnek."
+        },
+        {
+            "type": "paragraph",
+            "text": "Toron a faji előítéletek hazája: a lyrek felsőbbrendű népnek minősülnek, a többi faj közül pedig csak az embereket tekintik értelmes lénynek. A birodalomban nagy számban honos udvari orkoknak a hasznos háziállat státusza jut; szállásaikat udvari orkoknak nevezik, és nem ritka eset, hogy nyakörvvel és pórázzal látják el őket. Ami a többi intelligens fajt illeti: őrültnek kell lennie annak a törpének, elfnek vagy félelfnek, aki önszántából Toron felé veszi útját. A legtöbben akkor jár, ha csak rabláncra verik, s nem veszik a vérét azonnal, bár ekkor sincs irigylésre méltó helyzetben, hisz nála még a legutolsó emberi rabszolga is különb elbánásban részesül."
+        },
+        {
+            "type": "paragraph",
+            "text": "Toronról beszélve nem feledkezhetünk meg a számtalan alvilági testvériségről sem. Noha a birodalomról elsősorban a Kobrák neve ötlik az ember eszébe, nem ők az egyetlen klán a hatalmas kiterjedésű országban, jóllehet mindenképpen a legjobban szervezettek. Rengeteg kisebb, helyi érdekeltségű tolvajház létezik, gyakran egymás mellett is egy-egy városban. Bonyolult szerződések szabják meg egymáshoz való viszonyukat, befolyási területeiket, mégis elég gyakoriak a torzsalkodások, nem ritkán háborúk, főként a nagyobb településeken. A tolvajokat az különbözteti meg a haramiáktól, hogy tevékenységükért cserébe adót fizetnek, s így jobbára büntetlenek maradhatnak, amíg nem kerülnek szembe a parancsokat diktáló akaratával. Előfordul azonban – általában a tolvajklán vezetőségének beleegyezésével – , hogy az elégedetlenkedő lakosság kedélyének leütésére időről időre nyilvánosan kivégeznek néhány céges gazembert. Nyílt titok, hogy a tartományok legnagyobb szervezetei különféle kedvezményeket élveznek, gyakorta egész városok felett gyakorolnak hatalmat. Ilyen például Sinhin, és az azoktoroni Laggay; amit a Háromkéz klán ural. Az említetteken kívül a fontosabb szervezetek: a Kígyó-fattyak, a Cápák, a Siró Hölgy Lányai és a Sutyorogók."
+        },
+        {
+            "type": "paragraph",
+            "text": "Kisebb városok, területek felett másféle klánok is uralkodnak, ezek azonban szolgálataikkal fizetnek kiváltságaikért."
+        }
+    ]
+}

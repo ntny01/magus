@@ -1,0 +1,96 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": null,
+    "is_new_section": true,
+    "section_title": "Jellemek",
+    "content_blocks": [
+        {
+            "type": "paragraph",
+            "text": "Ahhoz persze, hogy kitaláld az előtörténeted, el kell döntened, hogy milyen karakterrel akarsz játszani, majd meg kell alkotnod azt. Az erre vonatkozó szabályokat a Karakteralkotás c. fejezetben a 17. oldalon találod. Előtörténetednek természetesen igazolnia kell karaktered személyiségéhez, hisz az magát – s persze a játék egészét – hivatott hitelesebbé tenni."
+        },
+        {
+            "type": "paragraph",
+            "text": "A M.A.G.U.S. rendszere négy fő jellemet különböztet meg: az Életet, a Halált, a Rendet és a Káoszt. Az egyes karakterekre jellemzők azon értékekről, eszmékről, melyeknek követését fontosnak, esetenként életcéloknak érzik. Ez nagyban befolyásolja viselkedésüket, életstílusukat is, ennek köszönhetően számtértékben nem kifejezhető jelentősége van a játékban, mert behatárolja a karakter jellemmel összeegyeztethető cselekedeteket."
+        },
+        {
+            "type": "paragraph",
+            "text": "Fontos megjegyezni, hogy nem a cselekedetek határozzák meg a jellemet, hanem a jellem a cselekedeteket! Tanácsos ezért, hogy a játékos először alkosson magában tiszta képet karakterének személyiségéről, s csak utána válassza meg jellemét."
+        },
+        {
+            "type": "paragraph",
+            "text": "A jellem egy vagy két részből állhat, attól függően, hogy a játékos meghatározónak tartja-e a második jellemet is. Amennyiben a játékos úgy dönt, hogy karaktere jelleme a négy főjellem egyikének tiszta formája, akkor csak azt kell feltüntetnie a karakterlapon."
+        },
+        {
+            "type": "paragraph",
+            "text": "Két jellem esetén az első helyen szereplő jellem befolyása erősebb, mint a másodiké. Különbség van tehát a „Káosz, Élet” és „Élet, Káosz” jellemű karakterek között. Az első legfontosabbnak a szabad döntés jogát és a függetlenséget tartja, sőt, hajlandó ezek kedvéért az Élet amúgy figyelembe vett értékrendjétől eltérni. A második karakter inkább az élettel járó örömöket keresi, elveti az erőszakot, tiszteletben tartja mások szabad akaratát is, s maga is a függetlenséget kedveli. Ám ha teheti, más akaratával nem törődik, csak saját érdekét nézi, azonban ha efféle cselekedetei azzal járnának, hogy nem élvezheti az életet maradéktalanul, inkább megalkuszik."
+        },
+        {
+            "type": "paragraph",
+            "text": "Amennyiben pártatlanul szeretnénk megismerni a négy fő jellemcsoportot, elsőként arról kell beszélnünk, milyen filozófia is húzódik meg hátterükben. Az Élet és Halál megmutatja, hogy az adott teremtmény mennyire tiszteli mások – legyenek akár emberek vagy állatok – életét, míg a Rend és Káosz jellem arról tájékoztat, mit vélekedik a teremtmény a természet törvényeiről, s ezeknek megjelenéséről az ember alkotta civilizációban."
+        },
+        {
+            "type": "rule",
+            "title": "Rend",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Káosz",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Élet",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Élet, Rend",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Élet, Káosz",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Halál",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Halál, Rend",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Halál, Káosz",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        }
+    ]
+}

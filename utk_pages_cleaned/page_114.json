@@ -1,0 +1,192 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": true,
+    "section_title": "Boszorkánymesteri céhek",
+    "content_blocks": [
+        {
+            "type": "table",
+            "headers": [
+                "Képzettség",
+                "Fok"
+            ],
+            "rows": [
+                [
+                    "Herbalizmus",
+                    "2. fok"
+                ],
+                [
+                    "Írás/olvasás",
+                    "2. fok"
+                ],
+                [
+                    "Méregkeverés/semlegesítés",
+                    "3. fok 3 Kp"
+                ],
+                [
+                    "Számtan/mértan",
+                    "2. fok"
+                ],
+                [
+                    "Nekromancia",
+                    "2. fok"
+                ],
+                [
+                    "Pszi (pyaarroni)",
+                    "3. fok 13 Kp"
+                ],
+                [
+                    "Tapasztalati mágia (boszorkánymester)",
+                    "4. fok 13 Kp"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "Az efféle szervezeteknek se szeri, se száma Yneven, mindenütt megtalálhatóak, ahol a romlás felvetette a fejét, legyen bár emberi, vagy inhumán kultúráról szó."
+        },
+        {
+            "type": "paragraph",
+            "text": "Bár fontos megjegyeznünk, hogy akadnak olyan rendek is, amelyek a mágiaforma megalkotóinak gyalázatos alapvetéseitől eltávolodva keresik a boldogulást, titoknokként, csatamágusként vagy épp „gyógyítóként” szolgálva választott hazájuk érdekeit."
+        },
+        {
+            "type": "paragraph",
+            "text": "A legtöbb boszorkánymesteri céh általában valamely más rend vagy állam hatalmi struktúrájában tölt be kulcsfontosságú pozíciót vagy épp vezeti ezen szervezeteket. Az efféle céhek a legritkább esetben állnak csupán egymagukban, gyakorta harcosrendek, orgyilkosklánok vagy épp valamely udvar védelmét élvezik cserébe nem elhanyagolható mágikus hatalmukért."
+        },
+        {
+            "type": "paragraph",
+            "title": "Aszisz Vérkelyhesek",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "Az aszisz boszorkánymesteri rend tagjai egytől egyig Ifinben, Abasszisz székvárosában tartanak fent rezidenciát és itt állnak iskoláik is. Nagymesterükkel az élen a mindenkori aszisz nagykirály koronájának támaszai a hercegkapitányok bérvarázslói és Antoh papjai ellenében. Rettegett és elismert szervezet, kiknek méregmágiájáról és egész tartományokat pusztító viharairól sötét történetek keringenek a Quironea mindkét partján. A mindenkori nagymester és bizalmasai az Aszisz Fekete Lobogó testőrségének tagjai."
+        },
+        {
+            "type": "paragraph",
+            "text": "Tanítványaikat leggyakrabban királyhű famíliák tehetségesebb, nagyravágyó és a szükséges mértékben elvetemült tagjaiból válogatják. Legfőbb központjuk a hírhedt ifini Tűztorony, mely nem csak Ynev-szerte ismert és rettegett börtön, de a rend egyik menedéke is."
+        },
+        {
+            "type": "paragraph",
+            "text": "A Vérkelyhesek ugyan jó kapcsolatot ápolnak északi parti pályatársaikkal, mégis irigyen figyelik amazok ténykedését. Évről évre igyekeznek titkaikat kitudni, bizalmukba férkőzve hozzáférni a felhalmozott évezredes tudásanyaghoz. Ezen kíváncsiságuk és kísérletező kedvük vezetett nem egy elhúnyt fajta megjelenéséhez is, mint például a „testvérek” felbukkanásához, kik a még gyerekcipőben járó aszisz nekromancia első eredményei, s mely tettükkel kieszközölték, hogy Darton abasziszi egyháza majdhogynem nyílt háborút hirdessen ellenük."
+        },
+        {
+            "type": "paragraph",
+            "text": "A M.A.G.U.S. jelenében (P.sz. 3692) hatalmuk töretlen, a nagykirály sosem látott méretű adományaiból egész uradalmakat kerekítettek ki, hogy ültetvényeiken, bányáikban mérgező dudvák termésével és átkos hatású ércek kitermelésével foglalkoztathassák jobbágyaikat."
+        },
+        {
+            "type": "paragraph",
+            "text": "Emelkedésük természetesen politikai befolyásukra is jó hatással volt, így mostanra Abaszisz legtöbb nagykövete, diplomatája mögött ott állnak és suttognak az erős és egységes királyság érdekében, melynek kieszközlése közben igencsak vigyáznak arra, hogy a majdani birodalom fontos és nélkülözhetetlen pártfogókat leljenek."
+        },
+        {
+            "type": "paragraph",
+            "text": "A rend összetartása nem mondható példásnak, amit az orgyilkososságok és véletlen balesetek nagy száma is jelez; azonban kifelé, külső ellenség felé mindig gondolkodás nélkül, gyorsan, és hathatósan összefognak, hogy amaz legyőzése után ott folytassák alantas vetélkedésüket, ahol abbahagyták."
+        },
+        {
+            "type": "paragraph",
+            "text": "A jövő azonban ennek ellenére sem rózsás a rend számára, hiszen a Karnelianok emelkedése és a következetes hintapolitikát folytató dul Mordakok elfordulása a királyi udvartól lassan ellehetetlenítette a sorsát a koronához kötő rend helyzetét, melynek magasabb rangú, befolyással bíró tagjai már az árulás gondolatával is rokonszenveznek, természetesen, csak mint kicsiny valószínűségű eshetőséget latolgatva."
+        },
+        {
+            "type": "rule",
+            "title": "A Vérkelyhes boszorkánymesteri rend különleges előnye:",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "A rend tagjai minden esetben a nagykirály kegyéből vagyonos emberek. Megkapják a Vagyon 1 pontos Hátteret anélkül, hogy erre KAP-jaikból költeniük kellene."
+        },
+        {
+            "type": "paragraph",
+            "text": "A Vérkelyhes boszorkánymester induló képzettségei 1. Tapasztalati szinten:"
+        },
+        {
+            "type": "table",
+            "headers": [
+                "Képzettségek",
+                "Fok"
+            ],
+            "rows": [
+                [
+                    "Tapasztalati mágia (boszorkánymester)",
+                    "3. fok"
+                ],
+                [
+                    "Fegyverhasználat",
+                    "2. fok"
+                ],
+                [
+                    "Herbalizmus",
+                    "3. fok"
+                ],
+                [
+                    "Alkímia",
+                    "3. fok"
+                ],
+                [
+                    "Méregkeverés/semlegesítés",
+                    "3. fok"
+                ],
+                [
+                    "Írás/olvasás",
+                    "2. fok"
+                ],
+                [
+                    "Számtan/mértan",
+                    "2. fok"
+                ],
+                [
+                    "Pszi (pyaarroni)",
+                    "2. fok"
+                ],
+                [
+                    "Nekromancia",
+                    "2. fok"
+                ],
+                [
+                    "Élettan",
+                    "2. fok"
+                ],
+                [
+                    "Nyelvtudás",
+                    "2. fok"
+                ],
+                [
+                    "Politika/diplomácia",
+                    "3. fok"
+                ],
+                [
+                    "Udvari etikett/intrika",
+                    "3. fok"
+                ],
+                [
+                    "Történelem",
+                    "3. fok"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A Vérkelyhesek által oktatott képzettségek a boszorkánymesternél felsoroltakon kívül, melyeket a karakter az Oktatás képzettség 4. foka által nyújtott bónuszokkal tanulhat:"
+        },
+        {
+            "type": "paragraph",
+            "text": "Udvari etikett/intrika, Politika/diplomácia, Történelem."
+        },
+        {
+            "type": "paragraph",
+            "title": "Ascens Morga",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "Az Ascens Morga a Shuluri boszorkánymesteri iskolák közül az egyik legrégebbi szervezet, melyről az első feljegyzések a Családi Háborúk korából származnak. Igen sikeres és jó politikai érzékkel megáldott vezetőinek hála, afféle status quo-t erősítő szerv, melynek manapság már-már rituális szerepe is van a kisebb Nemes Házak összecsapásaiban. A rend bevetése mindig a nyitó vagy záróakkord ezen árnyékháborúban, minden alkalommal vagy a kezdőcsapást, vagy a végső elkeseredett roham bevégzését szánják nekik a famorok stratégiái."
+        },
+        {
+            "type": "paragraph",
+            "text": "A klán biztonságát leginkább egyenességük szavatolja, illetve a távolmaradás szokása. Az egy munkára felbérelt boszorkánymesterek mindig csak egyszer, egy munka erejéig vállalkoznak valaki megölésére, s ha nem járnak sikerrel, nem állnak bosszút elfogott társaikért, de alkalom adtán igyekeznek kiváltani őket. Emellett pedig egy-egy Házak"
+        }
+    ]
+}

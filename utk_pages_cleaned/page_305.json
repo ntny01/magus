@@ -1,0 +1,62 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": false,
+    "section_title": "",
+    "content_blocks": [
+        {
+            "type": "paragraph",
+            "text": "ilyen ölelkezés végeztével 2 pontot elveszít Állóképességéből, amit csakis kiadós alvással szerezhet vissza. Amennyiben az Állóképessége 6 alá csökkenne a manakinyerés miatt, a boszorkány elveszíti eszméletét és k6x10 percig öntudatlan, és kiszolgáltatott marad. A Mágus ölelés során a boszorkány teste egészen felhevül, egyfajta belső tűz emészti ilyenkor, mely a Mana megkötését segíti. Beszélik, hogy ekkor a legkiszolgáltatottabb minden boszorkány, de mindig ragyogó szemekkel és tetterősen térnek vissza a révületből. A legvakmerőbb boszorkányvadászok állítólag ezt a pillanatot szokták választani, hogy speciális tűtőket a nő torkához helyezzék."
+        },
+        {
+            "type": "rule",
+            "title": "Rabszolga ölelés",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "Mana pont: 2/E Varázslás ideje: 5 szegmens Hatótáv: Érintés Időtartam: 1 nap (vagy a boszorkány akarata szerint) Mágiaellenállás: Asztrális"
+        },
+        {
+            "type": "paragraph",
+            "text": "Hatásaiban megegyezik a Rabszolgaság csókja nevű varázslattal, csupán annyi a különbség, hogy létrehozásához kevesebb Mp szükséges. Ezt a könnyebbséget ellensúlyozza az a mesterkedés, amíg a boszorkány ágyába tudja rángatni a kiszemelt áldozatot. Fontos különbség azonban, hogy itt nem csak egy egyszerű csókról van szó, hanem egy olyan szerelkezésről, mely után a férfi egyenesen beleőrül a nő utáni vágyakozásba és szó szerint kétségbe esik, ha a boszorkány nincsen mellette. Mindenféle szerelemvarázsnál inkább megőrjíti ez a férfiakat, akik mindent megtesznek, csakhogy jutalmukképpen „kedvesük” megajándékozza őket az ölelésével. Az ily módon elszédített férfiak a nő közelségének hiányában bátortalanná, határozatlanná válnak, önálló döntésre képtelenek, s csakis a boszorkány jár az eszükben."
+        },
+        {
+            "type": "rule",
+            "title": "Sorvasztás",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "Mana pont: 2/E Varázslás ideje: 5 szegmens Hatótáv: Érintés Időtartam: Lásd a leírást! Mágiaellenállás: Mentális"
+        },
+        {
+            "type": "paragraph",
+            "text": "Ez a varázslat több időt vesz igénybe mint a többi, és Mágiaellenállás is csak egyszer dobható ellene. Amennyiben az áldozat elvéti ezt a dobást, utána képtelen lesz ellenállni a boszorkánynak és praktikáinak. Nem szenved majd annak híján, ám mihelyt meglátja, félbehagyja legfontosabb dolgait, és csakis a nő kiszolgálására szorítkozik majd. Minden újabb együttlétük ugyanis – hacsak valami módon meg nem szakítják a varázst – 3 pontot fog elhabzsolni az áldozat Egészségéből, amelyeket a boszorkány a Hatalom italának elfogyasztása utáni Egészségcsökkenésének ellensúlyozására – és csakis arra – használhat fel. Az így nyert pontoknak mindaddig hasznát látja, amíg áldozata életben van. Ha azonban annak Egészsége 0-ra csökken, a férfi meghal, és az addig fel nem használt pontok is kárba vesznek. Értelemszerűen nem érdeke hát a boszorkánynak, hogy áldozata végleg elsorvadjon, s nem is szokták megölni őket, csak abban az esetben, ha valamely személyes bosszú úgy diktálja."
+        },
+        {
+            "type": "paragraph",
+            "text": "A beteg látványos sorvadásnak indul, s nemcsak testi, de lelkiereje is csökken. Mélabússá, kedvetlenné válik, s ő maga képtelen összefüggésbe hozni betegségét a nővel. Mindaddig nem lehet meggyógyítani, amíg a kapcsolat fennáll közöttük, vagy a boszorkány életben van."
+        },
+        {
+            "type": "rule",
+            "title": "Tudástár",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "Mana pont: 6 Varázslás ideje: 3 szegmens Hatótáv: Önmagam Időtartam: speciális"
+        },
+        {
+            "type": "paragraph",
+            "text": "Ez a fajta mágia sem a partner elveszejtésére irányul. Két felhasználási módja van. Az elsőt akkor szokták a boszorkányok használni, ha valaki olyannal hozza össze őket a jószerencséjük, aki még náluk is többet tud a szexuális művészetek terén. Ily módon alkalmazva elsajátíthatják az adott tudást, annak minden apró cselével, részletével együtt. A későbbiekben, ha fel kívánják idézni ezt a tudást, nem szükséges újabb Mana pontokat erre áldozni, az így szerzett ismeret tökéletesen sikerült elsajátítaniuk."
+        },
+        {
+            "type": "paragraph",
+            "text": "Másik felhasználási módja a szexuális ismeretek egyfajta sajátos, ösztönös alkalmazása, mely során a mágikus erők segítségével Szexuális kultúra képzettségét tudja egyel magasabb szinten alkalmazni, mint amilyen a valós tudása. Ily módon elérhető, hogy akár az 5. fokú ismeret adata határokat is meghaladó mutatványokra legyenek képesek. Így lehetségessé válik az is, hogy mágikus befolyásolás nélkül is testének rabszolgájává áldozzon egy férfit."
+        }
+    ]
+}

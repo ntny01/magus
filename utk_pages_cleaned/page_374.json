@@ -1,0 +1,146 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": false,
+    "section_title": "",
+    "content_blocks": [
+        {
+            "type": "paragraph",
+            "text": "a duplájával. Varázsolni képtelen. Ereje, Gyorsasága, Ügyessége az Erősséggel (E) fordított arányban lecsökken. Azaz minden bejutott 5 E 1 Képességpont-csökkenést eredményez (pl: 5 E = 1 pont csökkenés, 10 E = 2 pont csökkenés, 15 E = 3 pont, és így tovább)."
+        },
+        {
+            "type": "rule",
+            "title": "Irányítás (Írás)",
+            "headers": [
+                "Mana pont",
+                "Időtartam",
+                "Varázslás ideje"
+            ],
+            "rows": [
+                [
+                    "2 Mp/2 E",
+                    "3 kör",
+                    "1 szegmens"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A varázsló képes irányítani az áldozat mozdulatait. Ezek csak viszonylagosan egyszerűek lehetnek (pl: varázslás, kardforgatás nem!), és az áldozat, ha éppen nincs parancsa valamely mozdulatra, vagy ha az előzőt már végrehajtotta, akkor a következőig maga is cselekedhet. Ám ez nyomban félbeszakad, amint az új utasítást megkapja. Fontos megjegyezni, hogy az életösztön erősebb az Irányításnál, ezért ha a varázsló öngyilkos cselekedetre kényszeríti az áldozatot, akkor az újabb Mágiaellenállásra jogosult, amely, ha sikeres, az illető kitör a varázslat hatása alól; míg ha sikertelen, akkor végrehajtja az öngyilkossághoz vezető mozdulatot."
+        },
+        {
+            "type": "rule",
+            "title": "Bénultság (Bénítás)",
+            "headers": [
+                "Mana pont",
+                "Időtartam",
+                "Varázslás ideje"
+            ],
+            "rows": [
+                [
+                    "2 Mp/E",
+                    "1 kör",
+                    "1 szegmens"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A varázslat hatására az áldozat az Időtartam lejártáig megbénul, mozdulni is képtelen. Fegyvert forgatni, célozni, védekezni, varázsolni képtelen, de szellemi és pszi képességeinek birtokában marad."
+        },
+        {
+            "type": "rule",
+            "title": "Gondolatolvasás (Olvasás)",
+            "headers": [
+                "Mana pont",
+                "Időtartam",
+                "Varázslás ideje"
+            ],
+            "rows": [
+                [
+                    "3 Mp/4 E",
+                    "30 kör (5 perc)",
+                    "1 szegmens"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A varázsló az áldozat gondolataiban olvas, azokban, amelyek azt éppen foglalkoztatják. Minél nagyobb az erősítés, annál mélyebb, avagy elvontabb gondolatoknak jut nyomára. Kis átjutott erősítés esetén (1-15 E), ezek csak felületes gondolatok lehetnek, olyanok, amelyek az elkövetkező pillanatok cselekvéseire vonatkoznak. Komolyabb erősítés esetén már hosszabb távú, vagy elvont gondolatok és szándékok is a varázsló tudomására jutnak."
+        },
+        {
+            "type": "rule",
+            "title": "Zavarodottság (Kábítás)",
+            "headers": [
+                "Mana pont",
+                "Időtartam",
+                "Varázslás ideje"
+            ],
+            "rows": [
+                [
+                    "3 Mp/3 E",
+                    "6 kör (1 perc)",
+                    "1 szegmens"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "Az áldozat összezavarodik, nincs egy tiszta gondolata sem, nem képes dönteni a legapróbb ügyekben is tanácstalan. Fejében egymást kergetik az összekeveredett gondolatok. Varázsolni képtelen, harcolni (azaz támadni és védekezni) is csak akkor, ha minden egyes körben sikeres Akaraterő-próbát tesz."
+        },
+        {
+            "type": "rule",
+            "title": "Akaratátvitel (Írás)",
+            "headers": [
+                "Mana pont",
+                "Időtartam",
+                "Varázslás ideje"
+            ],
+            "rows": [
+                [
+                    "3 Mp/2 E",
+                    "3 kör",
+                    "1 szegmens"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A varázsló rákényszeríti akaratát az áldozatra. Az akként cselekszik, beszél, harcol, ahogyan a varázsló azt meghatározza. Ez azt jelenti, hogy teljes tudatával hiszi, azt, amit tenni kíván, a saját gondolata és vágya. Meg sem fordul a fejében, hogy a motiváció netán mástól származik. Ha öngyilkos cselekedetre kap parancsot, akkor Akaraterő-próbát tehet. Amennyiben teljesen sikeres, kiszabadul a varázslat hatása alól, és tudatába kerül a befolyásoltságának, miáltal – sikertelen Asztrálpróba esetén – vak gyűlölet ébred benne a varázsló iránt. Ennek hatása az Asztrálmágia fejezetében leírt Gyűlölet varázslathoz hasonló. Ha Asztrálpróba sikeres, ura marad érzelmeinek (JK esetén a játékos dönti el, miként érez a varázsló irányában)."
+        },
+        {
+            "type": "rule",
+            "title": "Tudattalanság (Bénítás)",
+            "headers": [
+                "Mana pont",
+                "Időtartam",
+                "Varázslás ideje"
+            ],
+            "rows": [
+                [
+                    "3 Mp/1 E",
+                    "1 kör",
+                    "1 szegmens"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "Az áldozat elméje lebénul. Képtelen mérlegelni, gondolkodni; pusztán indulatai, érzelmei, vágyai irányítják. Az egyik pillanatban sír, a másikban kacag; elvakultan imádja barátait, társait, aztán a legapróbb sérelem után fegyverrel ront rájuk, és teljes szívéből gyűlöli őket. A varázs hatására minden Asztrálmágiával okozott érzelem elvakultsággá erősödik."
+        },
+        {
+            "type": "chapter",
+            "title": "RÚNAMÁGIA",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "flavor_text",
+            "text": "„A jelek mágikus formulák, a mágikus energia anyagba rögzült megnyilvánulásai. Meghatározó tulajdonságuk nem az anyag, amelyre írják őket, hanem a forma, a rajzolat vonalvezetése. A jelek tehát, bár nem bírnak anyagi minőséggel, mégis az anyag egy változatát jelentik, hiszen a forma, a külalak egyedül az Anyagi Világban meghatározó attribútum... ...Az eltérő – legalábbis az eltérőnek tekinthető – formák, így rajzolatok száma végtelen, végtelen tehát a Rúnamágia jeleinek száma is. Ezzel együtt végtelen az így megidézhető mágikus módszerek és hatások sokasága is... ...A rajzolatok uralmat adnak a Világegyetem felett – nem különbek és nem hitványabbak a mágikus igéknél és holmiknál. Talán csak annyiban különböznek, hogy bizonyos mágikus operációkhoz már elfeledtük a szavakat, míg a jelek reánk maradtak az elődöktől. Kutatjuk tartalmukat, igyekszünk szétboncolni őket, hogy beléjük lássunk, egészen a vázat adó csontokig, akár a gyógyító teszi az emberi testtel. Állítom, semmit sem tudunk még alapvető titkaikról... ...A Rúnamágia nem pusztán a rajzolatból áll, hanem abból a műveletből is, melynek során a varázsló lelkének lenyomatát, egy lényéből kipattanó apró szikrát is elhelyez a vonalak között. Ez az a parányi szikra, melytől az életre kél...”"
+        },
+        {
+            "type": "paragraph",
+            "text": "A mágia ezen formájának valaha élt legnagyobb ismerőjéről, Moress Nobren mágusról az a legenda terjedt el, hogy egy alkalommal fél esztendős munkával egy egész hatalmas terem padlóját, falait és mennyezetét tehervá olyan mágikus jelrendszert alkotott, amely önálló gondolkodásra is képes volt. Az idézet egyetlen kötetbe összefoglalt életművéből, a Magica Graphicából származik."
+        }
+    ]
+}

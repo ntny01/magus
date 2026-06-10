@@ -1,0 +1,202 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": true,
+    "section_title": "Képzettség követelmény",
+    "content_blocks": [
+        {
+            "type": "paragraph",
+            "text": "Ha ezek a jellemzők nincsenek meg, akkor a karakternek még mindig van lehetősége elsajátítani az adott képzettséget, csak több ráfordított idő és vesződség, meg Kp árán. A karakter ebben az esetben a hiányzó értékeknek megfelelő pontnyi plusz Kp elköltésével szerezheti meg az adott képzettséget. Tehát ha egy 4. fokú képzettségre szeretne tanulni és 12-12-es Tulajdonságokkal bír, akkor 2+2=4 plusz Kp elköltésével sajátíthatja el az adott képzettséget.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "A képzettségnél felsorolt előkövetelmények két fajtáját ismerjük, egyik az erős, másik a gyenge képzettség követelmény. Erős képzettség követelmény esetén, a karakternek legalább azonos fokon kell bírnia a vonatkozó képzettség(ek)kel. A tanult képzettség tulajdonképpen nem képzelhető el a másik tudása nélkül.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "Gyenge képzettség követelmény esetén, a karakternek egy fokkal alacsonyabb szinten szükséges ismernie az előkövetelmény képzettséget. Mivel szüksége van a másik képzettségre, de elég azt alacsonyabb szinten ismerni, hiszen például a Történelemismeret hivatásos szintjéhez, a 3. fokhoz elég alap szinten, 2. fokon Írni/olvasni. Azaz egy képzettség 1. fokú elsajátításához nem szükséges ismernie az adott képzettség gyenge követelményét.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "A képzettségek tanulásának időigénye. Egy képzettség elsajátítása időbe és rengeteg energiába kerül. Az elsőnél könnyű számolni, hiszen a karakter mindaddig, amíg le nem tölti a tanulási időt, nem birtokolja az adott képzettséget. Minél nehezebb elsajátítani egy ismeretet, minél több háttéranyagra, oktatásra és gyakorlásra van szükség, annál jobban megnyúlik a tanulás időigénye. Arról, hogy egy képzettséget mennyi idő alatt sajátíthat el a karakter az alábbi táblázat nyújt felvilágosítást. Az egyes fokok tanulási ideje összeadódik. (Az egyszerűség kedvéért a táblázat adataihoz a 12 hónapos földi évet vettük alapul.)",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "table",
+            "text": "",
+            "title": "",
+            "headers": [
+                "Nehézség",
+                "1. fok",
+                "2. fok",
+                "3. fok",
+                "4. fok",
+                "5. fok"
+            ],
+            "rows": [
+                [
+                    "I.",
+                    "1 hét",
+                    "1 hónap",
+                    "3 hónap",
+                    "6 hónap",
+                    "1 év"
+                ],
+                [
+                    "II.",
+                    "1 hónap",
+                    "3 hónap",
+                    "6 hónap",
+                    "1 év",
+                    "2 év"
+                ],
+                [
+                    "III.",
+                    "3 hónap",
+                    "6 hónap",
+                    "1 év",
+                    "2 év",
+                    "4 év"
+                ],
+                [
+                    "IV.",
+                    "6 hónap",
+                    "1 év",
+                    "2 év",
+                    "4 év",
+                    "8 év"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "Egy képzettség megfelelő elsajátításához általában napi 2-3 óra gyakorlás szükséges, ezért öt képzettségnél többet általában egyetlen karakter sem tanulhat egyszerre.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "Oktatás. A klánok, rendek, iskolák oktatói bírnak legtöbbször valamely rendszerezett oktatási módozattal, amely megkönnyíti, átláthatóvá és ezáltal könnyebben elsajátíthatóvá teszi az okulni kívánó személy számára a képzettségek megtanulását.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "A játék rendszerében ez annyit jelent, hogy a Klánok, rendek, iskolák 4. fokú oktatókkal képzettek növendékeik, azaz az iskolában elsajátított képzettségek fokonkénti emelésének költsége 2 Kp-val csökken egészen a 4. fok eléréséig. (Bővebben lásd az Oktatás képzettséget, illetve a Klánok, rendek, iskolák c. fejezetet)",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "Igaz ez a Százalékos képzettségekre is, ahol minden Kp-ért nem 3, hanem 5%-ot kap a tanuló.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "A karakter indítása, azaz a karakter megalkotása és a játék megkezdése után bárki képes az iskolát nem igénylő tudományokat, tehát a IV. elsajátíthatósági kategóriájú képzettségeket leszámítva bármely képzettség tanulására a képzettség bármely birtokosától, aki képes és hajlandó őt oktatni. Ezen személyeknek nem kell rendelkeznie az Oktatás képzettséggel, igaz így a tanulás Kp költsége sem csökken. Az oktató az adott képzettséget csakis a saját ismerete fokáig taníthatja, afölött már nem.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "Tehát egy kalandozókaszt varázslója, ha bír az Írás/olvasás képzettség 4. fokával, akkor képes kardforgató társának megtanítani azt egészen 4. fokig, de a Kp igény csak akkor lesz olcsóbb, ha rendelkezik Oktatás képzettséggel, s akkor is csak addig a fokig jár a könnyítés, amennyi a varázsló Oktatás képzettségének foka.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "A Képzettség pont (Kp). A képzettség elsajátításához szükséges ráfordított energiát már jóval nehezebb meghatározni. Mindazt a koncentrációt, gyakorlást, elmélkedést, amit egy képzettség igényel, az ún. Képzettség ponttal (Kp) mérjük. Erre azért van szükség, mert egyetlen karakter sem rendelkezik végtelen képességekkel a tanulás terén.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "A fent említetteket a M.A.G.U.S. képzettségrendszere a következőképpen kezeli: a karakter Intelligencia Tulajdonságától függően rendelkezik bizonyos mennyiségű Kp-val, (ezek száma minden szinten – már az elsőn is – a Kötött pontelosztás esetén az adott iskola leírásánál szereplő értékkel, a Szabad pontelosztás esetén a Szabadon elosztható pontokból vásárolt Kp-kal növelendő). Minden egyes képzettség megtanulása adott mennyiségű Kp-ba kerül. Mikor a játékos eldönti, hogy karaktere egy képzettség elsajátításába kezd, pontjainak számából levon annyit, amennyi a választott képzettség fokánál fel van tüntetve.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "Amikor Kp pontot a karakter fejleszti képzettségeit, csupán a két fok Kp értékének különbségét kell elköltenie. Például ha egy harcos, fel akarja venni a Fegyverhasználat (Hosszú kard) 3. fok képzettséget, akkor az 15 Kp-jába és 1 és ¾ évébe kerül.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "A képzettségek alkalmazására vonatkozó szabályok. A képzettségek leírásában szereplő ismereteket, képességeket a karakter mindig biztosan képes alkalmazni megfelelő körülmények, a szükséges felszerelés és kellő idő megléte esetén. Amennyiben ezek közül akár egy, akár több feltétel nem teljesül, úgy a KM eldöntheti, hogy engedélyezi-e a képzettség használatát, vagy Tulajdonságpróbát dobhat a képzettség leírásánál szereplő Tulajdonság követelmények egyikére (a körülmények ismeretében ezt még további pozitív vagy negatív módosítókkal befolyásolhatja).",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "Általános esetben, ha a leírás másképp nem a rendelkezik, akkor a KM által a körülmények ismeretében adott módosítók mellett az adott képzettség ismeretének foka szerint az alábbi módosítók érvényesek:",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "-1 módosítóval nehezített a próbadobása.",
+            "title": "1. fokú képzettség esetén",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "nincs módosító a próbadobáskor.",
+            "title": "2. fokú képzettség esetén",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "+1 módosító a vonatkozó Tulajdonságra a próbadobáskor.",
+            "title": "3. fokú képzettség esetén",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "+2 módosító a vonatkozó Tulajdonságra a próbadobáskor.",
+            "title": "4. fokú képzettség esetén",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "+3 módosító a vonatkozó Tulajdonságra a próbadobáskor.",
+            "title": "5. fokú képzettség esetén",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "a próbáknál a karakter vonatkozó százalékos értékére dobott próba mindig",
+            "title": "Százalékos képzettségek esetében",
+            "headers": [],
+            "rows": []
+        }
+    ]
+}

@@ -1,0 +1,176 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": true,
+    "section_title": "A Tűzmágia magasiskolája",
+    "content_blocks": [
+        {
+            "type": "rule",
+            "title": "Tűz gyűrű",
+            "headers": [
+                "Mana pont",
+                "Varázslás ideje",
+                "Időtartam"
+            ],
+            "rows": [
+                [
+                    "5/E",
+                    "1 szegmens/E",
+                    "6 kör (1 perc)"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "yev hüvelyk magasak. Mikor bárki vagy bármi áthatolni kíván a gyűrűn, a tűz felcsap és lángba borítja a behatolót. Az éghető anyagok nyomban meggyulladnak, az élőlények Erősségként 1k6 SP sebet szenvednek el."
+        },
+        {
+            "type": "rule",
+            "title": "Tűz henger",
+            "headers": [
+                "Mana pont",
+                "Varázslás ideje",
+                "Időtartam"
+            ],
+            "rows": [
+                [
+                    "5/E",
+                    "1 szegmens/E",
+                    "6 kör (1 perc)"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A varázslat hatására a tűzvarázsló Zónáján belül bárhol egy 3 yev hosszú, 1 yev magas Tűzhenger keletkezik, s gurulni kezd. Haladásának iránya nem befolyásolható, az kizárólag a domborzati viszonyoktól függ. A henger haladási sebessége 10 lépés körönként. 6 kör múltán magától eltűnik, de amerre elhaladt, az éghető anyagok lángra kapnak – így a tűz könnyen elharapózhat. Akit a Tűzhenger elér, az a varázslat minden egyes E-je után 1k6 SP égési sebet szenved el."
+        },
+        {
+            "type": "rule",
+            "title": "Tűzhullám",
+            "headers": [
+                "Mana pont",
+                "Varázslás ideje",
+                "Időtartam"
+            ],
+            "rows": [
+                [
+                    "12/E",
+                    "1 szegmens/E",
+                    "3 kör"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A varázslat létrejöttekor gyűrű alakban egyre erősebb lánghullámok indulnak útnak a középpontban álló tűzvarázsló felől, aki bal nyitott tenyerével a föld felé sújtva indítja útnak a lángokat, egészen Zónájának határáig (20 yev láb). A hullámok 1 kör alatt megteszik ezt a távolságot, és minden útjukba eső éghető anyagot lángra lobbantanak. Minden körben egy-egy új hullám születik, az első annyiszor 1k6-ot sebez, amennyi a varázslat E-je, a második hullám 1k6-tal többet, a harmadik újabb 1k6-tal többet, és így tovább, az időtartam végeztéig."
+        },
+        {
+            "type": "rule",
+            "title": "Tűzzápor",
+            "headers": [
+                "Mana pont",
+                "Varázslás ideje",
+                "Időtartam"
+            ],
+            "rows": [
+                [
+                    "10/E",
+                    "1 szegmens/E",
+                    "3 kör"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A varázslat hatására a tűzvarázsló Zónáján belül a levegőben 20 yev láb magasan lángfellegek jelennek meg, melyekből 3 körön keresztül tűzzápor hull a földre. Az érintett terület 5 yev sugarú kör. Mindenki, aki ezen belül tartózkodik, körönként 1k6 SP-t veszít – a vértek SFÉ-tényezője azonban ilyenkor is érvényesül."
+        },
+        {
+            "type": "paragraph",
+            "text": "A most következő varázslatok már a tűzvarázslás magasiskoláját jelentik. Egyenes ági leszármazottai a godoni mágiának – ami abból mérhető le legszembetűnőbben, hogy még egy varázsló is értetlenül állna előttük, képtelenül arra, hogy utánozza őket, mi több, hogy meghatározza, mily módon épülnek fel."
+        },
+        {
+            "type": "rule",
+            "title": "A Sárkány lehelete",
+            "headers": [
+                "Mana pont",
+                "Varázslás ideje",
+                "Időtartam"
+            ],
+            "rows": [
+                [
+                    "8/E",
+                    "1 szegmens/E",
+                    "30 kör (5 perc)"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A varázslat segítségével a tűzvarázsló az időtartam alatt három alkalommal lángot képes fújni a szájából, akárcsak az erről nevezetes sárkányok. A tűzcsóva egy láb széles és annyi yev láb hosszú, amennyi a varázslat Erőssége. E-nként 1k6 sebzést okoz."
+        },
+        {
+            "type": "rule",
+            "title": "A tűz ropogása",
+            "headers": [
+                "Mana pont",
+                "Varázslás ideje",
+                "Időtartam"
+            ],
+            "rows": [
+                [
+                    "15",
+                    "Az üzenet hossza",
+                    "Egyszeri"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A tűzvarázsló ezzel a varázslattal valamely általa jól ismert személlyel veheti fel a kapcsolatot. A rövid üzenetet (maximum egy perc) valamely tűz (akár egy mécses is elegendő) lángjába kell elsuttognia. A szöveg, ha akad bármekkora, akár gyertyányi láng az üzenet címzettje közelében, azonnal kézbesítődik, mintha a lángok suttognának a távoli helyen. Ha azonban a célpont közelében nincsenek lángok, akkor a varázslat az üzenetet egészen addig tárolja, míg amaz tűz közelébe nem kerül."
+        },
+        {
+            "type": "flavor_text",
+            "text": "A lángok üzenetét bárki meghallgathatja, ha elég közel áll a tűzhöz, ezért titkokat ritkán bíznak erre a kihallgatható közlésformára. Ordán nagyjaira azonban jellemző, hogy ellenfeleiknek az esetlegesen megváltottá vált társaiknak is efféleképpen üzenik meg a Rend ítéletét."
+        },
+        {
+            "type": "rule",
+            "title": "Fémizzítás",
+            "headers": [
+                "Mana pont",
+                "Varázslás ideje",
+                "Időtartam"
+            ],
+            "rows": [
+                [
+                    "6/E",
+                    "1 szegmens/E",
+                    "1 kör/E"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A tűzvarázsló bármely, a Zónáján belül eső nem mágikus fémtárgyat megjelölhet a varázslat célpontjául (de egyszerre csak egyet), mely ettől kezdve rohamos sebességgel forrósodni kezd. Az első körben még csak éget, a másodikban sötétvörösen, a harmadikban sárgán, a negyedikben fehéren izzik, az ötödikben megolvad, a hatodikban pedig már képlékennyé válik. Ha az érintett tárgyat valaki a testén viseli, akkor minden körben annyiszor 1k6 SP-t veszít, ahányadik az adott kör a fentebb ismertetett fokozatok sorában. Abban az esetben, ha a tárgy kikerül a tűzvarázsló Zónájából, vagy az Időtartam lejár, körönként egy fokozatot hűl – és ennek megfelelően továbbra is sebez. Természetesen, ha újra izzítani kezdik, a folyamat nem elölről, hanem az éppen aktuális fokozattól folytatódik."
+        },
+        {
+            "type": "rule",
+            "title": "Forró nyom",
+            "headers": [
+                "Mana pont",
+                "Varázslás ideje",
+                "Időtartam"
+            ],
+            "rows": [
+                [
+                    "20",
+                    "2 kör",
+                    "1 nap"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A tűzvarázslók nem csak a tűz feletti uralmukról, de az egyes szektáik közötti békétlenkedésekről is híresek. Ez a mágikus praktika is ezen viszálykodások eredményeképpen született. A varázslat segítséget ad a tűzvarázslók számára, hogy valamely személy nyomára bukkanhassanak, akinek valamely fontos, személyes tárgya (szimpatikus viszony fennállása szükséges) a birtokukban van. A varázslat végrehajtása nyomán a személyes tárgyat, vagy annak egy darabját tűzbe vetik, majd követik az abból felszálló füstöt,"
+        }
+    ]
+}

@@ -1,0 +1,100 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": true,
+    "section_title": "Kyr Metódus",
+    "content_blocks": [
+        {
+            "type": "flavor_text",
+            "text": "...A kíváncsiság és a képzelet a tudatos lét két legnagyobb erénye és hibája. A kíváncsiság, mellyel megismerni vágyunk a megismerhetetlent; és a fantázia, mellyel elképzeljük és megalkotjuk az elképzelhetetlent."
+        },
+        {
+            "type": "flavor_text",
+            "text": "Az elme hatalmas erőforrásokat és lehetőségeket rejt azok számára, kik megismerve az anyagi világ korlátait, törvényeit, a szabályok mögé, a szem számára láthatatlan világokba kívánnak bepillantani vagy épp a valóság szabályait igyekeznek áthágni a logika számára felfoghatatlan módokon."
+        },
+        {
+            "type": "flavor_text",
+            "text": "Ezen erők minden teremtett, tudatos lény elméjében ott szunnyadnak, legtöbbször kiaknázatlanul, éjszakai álmokra, pazar ötletekre fecsérelve. Igen csekély számúak azok, kik felismerték magukban a képességet – vagy mások segedelmével fejlesztve tudásukat –, harmadik szemüket a világra nyitva megindulnak önmaguk és a világ megismerésének e rögös útján. A kiteljesedés eléréséhez elkerülhetetlen nehézségekért cserébe azonban olyasmit láthatnak, alkothatnak, mit egyszerűbb lelkek elképzelni sem bírnának."
+        },
+        {
+            "type": "paragraph",
+            "text": "Ynev népei a jelenkorra az elme művészetének, a pszionikának három válfaját alkották meg, illetve vették át más világok, más népek kultúrájából. Az évezredek során a tudományok keveredtek, s mostanra csak felfogásukban, illetve a módszerek gerincét adó diszciplínákban térnek el egymástól..."
+        },
+        {
+            "type": "flavor_text",
+            "text": "Wilvarien magiszter előadása a Pýarroni Okkult Tudományok Egyetemén"
+        },
+        {
+            "type": "rule",
+            "title": "Slan Út korlátozás",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "Elsőnek az Óidőkorban, a Riegoy-öböl partján partot ért kyr hódítók mágusairól jegyeztetett fel, hogy járatosak e tudományban. Az ő kései leszármazottaik által átörökített világfelfogást és diszciplínát nevezzük egységesen a Kyr Metódusnak, melynek alapelve a kitekintés, a világ megismerésének és befolyásolásának vágya. A diszciplínák és lelki gyakorlatok használói, melyek által az alkalmazó hatalmat nyer a környező fizikai világ és mások akarata felett, a világot megismerni és befolyásolni vágyó lényekké formálja. Soraikból a kontinens legnagyobb gondolkodói, diplomatái és varázslói kerülnek ki."
+        },
+        {
+            "type": "paragraph",
+            "title": "Pýarroni Módszer",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A módszer alapja és legfőbb támasza a szintén kyr alapokra épülő Mozaikmágiának. A varázslók ennek segítségével csapolhatják meg közvetlenül az Ynevet átszelő mana csatornákat, tehetnek szert a varázsláshoz szükséges mágikus energiákra. Támadhatják, védelmezhetik saját maguk, vagy mások testét, illetve szellemét. Láthatják a láthatatlant és bepillanthatnak a belső, szellemi síkok kaotikus világába is. A Kyr Metódus diszciplínáit csakis Észak és Dél nagy varázslóiskoláinak egyikében, vagy valamely nagyhatalmú mágus tanítványaként sajátíthatja el a tanulni vágyó. Az ismeretek elemi alapjainak elsajátításához legkevesebb két tanulással töltött esztendő, a fejlettebb alkalmazásokhoz akár nyolc év és jó néhány ritka fóliáns birtoklása szükséges, amelyekből, aligha fél tucat akad az egész kontinensen. Egyesek szerint a lar-dor-i varázslóiskola tanítványai nem is az északi eredetű kyr metódust, hanem a déli, godoni pszi örökségének a pýarroninál magasabb rendű változatát tanulják, sajátítják el. A szóbeszédnek se szeri se száma meggyőződni azonban az igazságtartalmukról igen nehéz, mivel valószínűleg a régvolt mesterek hasonló problémák megoldására, hasonló elmékkel, hasonló praktikákat eszeltek ki."
+        },
+        {
+            "type": "paragraph",
+            "text": "A módszer lényege az elfogadás, a világban létező egyensúly megismerése. A pýarroni pszi alkalmazói északi, kyr hagyományokat ápoló társaikkal szemben tisztelik, és helybenhagyják a világ törvényeit és inkább a szabályokban rejlő lehetőségeket kutatják, nem pedig azok áthágásának módozatait."
+        },
+        {
+            "type": "paragraph",
+            "text": "A kevésbé képzett elmék még csak önmaguk befolyásolására, védelmére, illetve a környező világ felszínes megismerésére képesek. A módszer magasabb szintű alkalmazói már másokat is megérinthetnek, vagy akár befolyásolhatnak elméjükkel, illetve alakíthatják az őket körülvevő világot."
+        },
+        {
+            "type": "rule",
+            "title": "Pýarroni Módszer elsajátítása",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A metódus kiteljesedett mivolta miatt magában foglalja a Pýarroni Módszer és a Kyr Metódus azon darabjait, melyet az alkalmazás ismeretének foka megenged."
+        },
+        {
+            "type": "rule",
+            "title": "Godoni Örökség képességek",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Godoni Örökség továbbfejlődés",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "paragraph",
+            "title": "Godoni Örökség",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A lar-dor-i Keleti Iskola Psz. 2647-es megalapítása volt az első lépése a régi hatalom és tudás újrafelfedezésének. Godon varázslóinak leszármazottai bűntudatuktól hajtva, immáron a pýarroni istenek égisze alatt próbálták meg tudományukat az embernépek javára ismét összegyűjteni és kamatoztatni. A munkát az ősi pszionikus erejük felkutatásával kezdték: elsőre tökéletesítették és kibővítették a Pýarroni Módszer alkalmazásait, majd a régi-új utak felkutatására indultak. Krán azonban túl jó munkát végzett. Egészen a 3600-as évek elejéig, Sonor magiszter ordani útjáig a teljes godoni tudás visszaszerzésére irányuló munka reménytelen vállalkozásnak tűnt. Pýarron nagyjainak szerencséjére, Ardae magnus által Ordanba menekített feljegyzések pótolták a hiányzó mozaikokat, és sosem látott fellendülés következett be a szellem tudományában."
+        }
+    ]
+}

@@ -1,0 +1,230 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": null,
+    "is_new_section": true,
+    "section_title": "Kobrák",
+    "content_blocks": [
+        {
+            "type": "paragraph",
+            "text": "lói felszámolják, a hamisítók az elsők között találnak újra munkát egy másik szervezet oltalmában. Legtöbbször nem maguk szerzik a megbízásokat, bár kétségkívül léteznek közöttük olyanok is, akik akár védelmező klán nélkül is meg találják a számításukat."
+        },
+        {
+            "type": "paragraph",
+            "text": "Jobbára az események hátterében maradnak, nem szívesen keverednek harcba. Általában a klánjuk megvédi őket, de az is bizonyos, hogy amennyiben jól végzik a munkájukat, más pártfogót is könnyűszerrel találnak. Hogy ez nem mindőjüknek elegendő, mi sem bizonyítja jobban, mint az hogy amennyiben fizikai képességeik ezt lehetővé teszik, maguk is elsajátítják egy-két fegyver használatát."
+        },
+        {
+            "type": "table",
+            "headers": [
+                "Képzettségek",
+                "Fok"
+            ],
+            "rows": [
+                [
+                    "Fegyverhasználat",
+                    "2. fok"
+                ],
+                [
+                    "Hamisítás",
+                    "3. fok"
+                ],
+                [
+                    "Mechanika",
+                    "2. fok"
+                ],
+                [
+                    "Számtan/mértan",
+                    "2. fok"
+                ],
+                [
+                    "Értékbecslés",
+                    "3. fok"
+                ],
+                [
+                    "Ékesszólás",
+                    "2. fok"
+                ],
+                [
+                    "Szakma (választható)",
+                    "2. fok"
+                ],
+                [
+                    "Csomózás",
+                    "1. fok"
+                ],
+                [
+                    "Lélektan",
+                    "1. fok"
+                ],
+                [
+                    "Heraldika",
+                    "2. fok"
+                ],
+                [
+                    "Művészet (pl. Festészet vagy Rajzolás)",
+                    "2. fok"
+                ],
+                [
+                    "Írás/olvasás",
+                    "3. fok"
+                ],
+                [
+                    "Rejtekkutatás",
+                    "+10%"
+                ],
+                [
+                    "Zárnyitás",
+                    "+10%"
+                ],
+                [
+                    "Lopódzás",
+                    "+10%"
+                ],
+                [
+                    "Rejtőzés",
+                    "+10%"
+                ],
+                [
+                    "Mászás",
+                    "+10%"
+                ],
+                [
+                    "Esés",
+                    "+10%"
+                ],
+                [
+                    "Akrobatika",
+                    "+10%"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "Az efféle tolvaj az alap tolvaj leírásában feltüntetett képzettségeket tanulhatja iskolája nyújtotta 4. fokú Oktatás képzettségnek megfelelő bónuszokkal."
+        },
+        {
+            "type": "paragraph",
+            "text": "Az igazi besurranó tolvajok valódi művészei szakmájuknak. Nem elégszenek meg azzal, hogy éjnek idején nesztelen mozdulatokkal átkutassák a fehérneműket némi aranyért vagy az ezüst étkészletért. Nem lesik áldozatukat napokon keresztül, hogy mikor egy el hosszabb időre, hogy aztán nyugodtan kifoszthassák otthonát. Ezek a módszerek a kezdők és a pitiánerek eszköztárát gazdagítják. Az igazi profik maguk szervezik meg a ház népének eltávozását, semmit nem bíznak a véletlenre, de arra azért számítanak, hogy mindig közbejöhet valami."
+        },
+        {
+            "type": "paragraph",
+            "text": "Vannak, akik különleges értéktárgyakra szakosodtak, esetleg, kegytárgyakra. Ők bizony valódi akrobaták, minden ügyességükre, gyorsaságukra szükségük van, ha ki akarják játszani az állandó őrséget."
+        },
+        {
+            "type": "paragraph",
+            "text": "Kevés olyan zár létezik, amelyik ellenállhatna álkulcsainak, trükkjeiknek. Az állandó veszély miatt a fegyverekkel is ügyesebben bánnak, mint más tolvajok, hiszen soha nem lehet biztosan tudni, mire számíthatnak, mi fogadja őket egy épület belsejében."
+        },
+        {
+            "type": "paragraph",
+            "text": "Egy adott város fontosabb épületeinek alaprajzát, belső elrendezését, lakóinak szokásait vélhetően ők ismerik leginkább, s bizonyosan fontos információkkal szolgálhatnak egyes magánszemélyek életkörülményeiről is. Idővel akár a csapdák avatott szakértőivé válhatnak."
+        },
+        {
+            "type": "table",
+            "headers": [
+                "Képzettség",
+                "Fok"
+            ],
+            "rows": [
+                [
+                    "Fegyverhasználat",
+                    "2. fok"
+                ],
+                [
+                    "Álcázás/álruha",
+                    "2. fok"
+                ],
+                [
+                    "Mechanika",
+                    "2. fok"
+                ],
+                [
+                    "Számtan/mértan",
+                    "2. fok"
+                ],
+                [
+                    "Értékbecslés",
+                    "3. fok"
+                ],
+                [
+                    "Orvtámadás",
+                    "1. fok"
+                ],
+                [
+                    "Jelbeszéd",
+                    "1. fok"
+                ],
+                [
+                    "Szabadulóművészet",
+                    "1. fok"
+                ],
+                [
+                    "Csomózás",
+                    "1. fok"
+                ],
+                [
+                    "Lélektan",
+                    "1. fok"
+                ],
+                [
+                    "Rejtekkutatás",
+                    "+30%"
+                ],
+                [
+                    "Zárnyitás",
+                    "+30%"
+                ],
+                [
+                    "Zsebmetszés",
+                    "+10%"
+                ],
+                [
+                    "Lopódzás",
+                    "+30%"
+                ],
+                [
+                    "Rejtőzés",
+                    "+30%"
+                ],
+                [
+                    "Mászás",
+                    "+30%"
+                ],
+                [
+                    "Esés",
+                    "+15%"
+                ],
+                [
+                    "Akrobatika",
+                    "+30%"
+                ],
+                [
+                    "Csapdakeresés",
+                    "+20%"
+                ],
+                [
+                    "Veszélyérzék",
+                    "+15%"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "Az efféle tolvaj az alap tolvaj leírásában feltüntetett képzettségeket tanulhatja iskolája nyújtotta 4. fokú Oktatás képzettségnek megfelelő bónuszokkal."
+        },
+        {
+            "type": "paragraph",
+            "text": "A Kobrák Észak-Ynev legnagyobb és legbefolyásosabb tolvajklánja. Ez – ahogyan egymás közt hívják magukat – a Család. Székhelye Toron fővárosában, Shulurban található a híresztelések szerint, ám pontos adatokkal az Északi Szövetség hírszerzése sem rendelkezik. Mondják még, hogy a Család feje, a tolvajkirály befolyásos toroni főúr, ám a gyanúsítgatásoknak hamar véget vetett néhány kíváncsi katonatiszt halála. Toronban – de Abasziszban és a környező városállamokban is – a tényleges hatalom ennek a tolvajklánnak a kezében van. Nincs azonban Ynevnek egyetlen olyan birodalma, városa, ahol ne lennének valamilyen módon érdekeltek a Kobrák. Olykor a tisztesség látszatát próbálják megőrizni, máskor azonban erre sem ügyelnek: külön hadsereget, kémszolgálatot tartanak fenn, saját törvényeket alkotnak, melyek betartatását kíméletlen eszközökkel vigyázzák."
+        },
+        {
+            "type": "paragraph",
+            "text": "A tolvajokon kívül – akik közt zsebtolvajoktól kezdve egészen a rablógyilkosokig minden fajtát megtalálhatunk –, rabszolga-kereskedőket, koldusokat, szemfényvesztőket, kábítószer-kereskedőket és bérgyilkosokat foglalkoztatnak. A városokban védelmi pénzeket szednek, olykor maguktól a város uraitól, megint máskor a gazdag kereskedőktől, de fenntartanak játékbarlangokat, mulatóhelyeket is. Iskoláikban a tolvajmesterség minden csínját-bínját oktatják, de az igazán szerencsés tanulók valamely híres egyetemre kerülnek politikai, uralkodást és gazdaságtant tanulni."
+        },
+        {
+            "type": "paragraph",
+            "text": "A Kobrák kegyetlenségükről hírhedettek (no és arról, hogy sosem bocsátanak meg), mégis sok szabadúszó tolvaj és más szerencsevadász csatlakozik hozzájuk évről évre, hisz a külső tagoknak – mindazoknak, akiket nem a Család nevelt – csupán a bevétel 25 százalékát kell beszolgáltatniuk. Ezért cserébe védelmet élveznek a törvénnyel és más klánok tagjaival szemben, sőt, gyakran még ötleteket is kapnak."
+        },
+        {
+            "type": "paragraph",
+            "text": "A belső tagok – akik a Családban születtek és nevelkedtek"
+        }
+    ]
+}

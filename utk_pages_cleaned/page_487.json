@@ -1,0 +1,16 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": true,
+    "section_title": "Crantai Haláltörvény",
+    "content_blocks": [
+        {
+            "type": "paragraph",
+            "text": "A crantai Haláltörvény közül az elsőt és negyediket, míg a varázslónak el kell mondania egy bizonyos kényszerítő rituált a Pusztulás Könyvéből. A litánia elmondása 4 körig tart, ráadásul száz Mana pontba kerül. A varázsló, amikor először megkísérli a mágia végrehajtását, 40%-ban megőrül. A második használatkor már 20%-ra csökken a tébolyodás esélye, míg harmadjára biztos a siker. Azok, akik a fent említett feltételeknek eleget tudnak tenni, egy évre magukénak mondhatják a Crantai Koborlók csoportját. A formula olyan erős mágikus köteléket teremt, amit élő varázsló – bármennyi hatalmát is áldozná erre – megtörni nem tud. A kötődés idő előtt csupán egyetlenképpen szüntethető meg: ha a Koborlók kapitányának valaki felmutatja az Arbegi Szent Tüzet tartalmazó jáspisamulétet."
+        },
+        {
+            "type": "paragraph",
+            "text": "Anyanyelvük, a crantai, rég kihalt, de értik és beszélik a kyrt is. Megtermett, magas férfiak, testfelépítésük inkább karcsú, mint robosztus. Fejükön szárnyas, koponyával, rúnákkal díszített sisakot hordanak, arcukat még soha senki nem látta. Egész testüket fekete-lunír pikkelyvért borítja, SFE: 6, MGT: 2, körülbelüli értéke 30 mithrill pénz lehet. Egyetlen fegyvert használnak, egy keskeny hosszúkardot, melyet kék-lunírból kovácsoltak egykor, TÉ: +15, VÉ: +5, KÉ: +7, Sebzés: +2. Értéke megközelíti a 200 aranyat. Tőrük és sisakjuk vörös-lunír, minden mágikus tulajdonság nélkül való."
+        }
+    ]
+}

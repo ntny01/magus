@@ -1,0 +1,116 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": false,
+    "section_title": "",
+    "content_blocks": [
+        {
+            "type": "paragraph",
+            "text": "hibázna Asztrális Mágiaellenállást. A varázslat a távolságot csak 500 ynevi mérföldig képes meghatározni, de az irányt ennél nagyobb távolság esetén is megtudható."
+        },
+        {
+            "type": "rule",
+            "title": "Szólító ige",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "Mana pont: 2/E Varázslás ideje: 3 kör Hatótáv: Korlátlan Időtartam: Lásd a leírást! Mágiaellenállás: Asztrális"
+        },
+        {
+            "type": "paragraph",
+            "text": "A boszorkány ezen varázslattal magához szólíthatja a mágia alanyát, amennyiben birtokában van a keresett személlyel szimpatikus viszonyban álló tárgy. A hívás nem szó szerint értendő, az áldozat csak azt fogja érezni, hogy mindenképpen el kell jutnia egy bizonyos helyre. Nem kell ismernie a boszorkányt; nem is tudja, miért halad vajon új útja felé? Tudatának legmélyére fészkeli be magát a szűnni nem akaró vágy, hogy minél gyorsabban elérje a kérdéses helyet. Ha a helyet megtalálta, vár – nem tudja mire és miért, de várakozik. A cél elérése után 12 órával a varázslat hatása semmivé foszlik, s az áldozat újra szabad lesz. Megjegyzendő, hogy a hely minden esetben az, ahol a boszorkány a varázslat alkalmazásakor tartózkodott. Az áldozat, ha a hely nyilvánvalóan közvetlen életveszélyt jelent számára – például egy tűzhányó kürtője – Akaraterő-próbára jogosult, de csak a cél elérésekor. Amennyiben az Akaraterő-próba sikeres, a varázslat hatása megtörik. A boszorkány ezzel a varázslattal segítőtársakat szólíthat magához, vagy éppen ellenkezőleg, ellenfeleket csalhat csapdába. A célpont – legyen barát vagy ellenség – Asztrális Mágiaellenállásra jogosult."
+        },
+        {
+            "type": "paragraph",
+            "text": "A viaszbábok készítése a Szimpatikus mágia társ-személy szimpátia viszonyán alapuló, alacsonyrendű mágikus gyakorlat. Lényege, hogy a boszorkány gondos előkészítő munka után, ráolvasással többé-kevésbé szoros szimpátia viszonyt hoz létre kiszemelt áldozata és egy hozzá hasonlóra gyúrt viaszbábu között. A ráolvasás erősségétől és a mágikus tulajdonságú viasz minőségétől függően a szimpátia lehetővé teszi hatások átvitelét a bábúról az áldozatra."
+        },
+        {
+            "type": "paragraph",
+            "text": "Bármire alkalmas bábut is gyúrjon a boszorkány, mindenképpen szüksége van áldozata valamely testrészére. Kár lenne félreérteni, szó sincs ujj vagy füllevágáshoz hasonló mészáros munkáról, megteszi egy hajtincs, vagy körömdarab is, amit bele kell gyúrni a viaszba. Ha a bábuból ezt eltávolítják, a szimpátia viszony azonnal megszűnik, s a bábu attól fogva használhatatlan. Minél komolyabb ártalom továbbítására alkalmas a bábu, annál drágább viasz és annál több Mana pont szükségeltetik az előállításához. Egy bábu elkészítése átlagosan egy órát vesz igénybe."
+        },
+        {
+            "type": "paragraph",
+            "text": "Alkalmazásuk alapján négyféle viaszbábu különböztethetünk meg. Az első három megközelítőleg kétarasznyi méretű, s fizikális hatások: sebek, fájdalom okozására alkalmas. A negyedik a rá irányuló mágikus hatásokat, varázslatokat továbbítja az áldozathoz."
+        },
+        {
+            "type": "paragraph",
+            "text": "Varázslat csak a viaszbábok elkészítéséhez szükséges, a használatukhoz nem. Ebből következőleg: a bábut elkészíteni csak a boszorkány képes, használni azonban már bárki. Többször is alkalmazható – ameddig egyben van és megőrzi eredeti formáját."
+        },
+        {
+            "type": "rule",
+            "title": "Fehér bábu",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "Mana pont: 33"
+        },
+        {
+            "type": "paragraph",
+            "text": "Amelyik testrészén a bábut megszúrják, ott az áldozat nyilalló fájdalmat érez. Seb vagy egyéb nyom nem keletkezik. A Fehér bábúval körönként legtöbb 1k6 Ép elvesztése okozható, de a hirtelen fájdalommal könnyen földre dönthető, vagy kellemetlen helyzetbe hozható az áldozat. Amint az áldozat elveszti az eszméletét, a szimpátia viszony megszakad, míg ha visszanyeri, a szimpátia azonnal, újra kialakul. Ebből nyomban látszik, hogy a bábuval Ép nem vehető el. A Fehér bábu egyszerű, hétköznapi gyertyaviaszból is elkészíthető."
+        },
+        {
+            "type": "rule",
+            "title": "Kék bábu",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "Mana pont: 33"
+        },
+        {
+            "type": "paragraph",
+            "text": "A Kék bábura olvasott varázslatok nem a bábura, hanem az áldozatra hatnak. Hasonló tehát a Mozaikmágia Tárgy szimpátia mozaikjához, az teszi veszedelmesebbé, hogy akárhány alkalommal, bárki által használható. Elkészítésekor nem csak az áldozat testrészét, hanem 5 karátnyi (1 g) porrá zúzott zafírt is a viaszba kell keverni."
+        },
+        {
+            "type": "rule",
+            "title": "Vörös bábu",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "Mana pont: 55"
+        },
+        {
+            "type": "paragraph",
+            "text": "Hatása a Fehér bábuhoz hasonló, ám ez esetben az áldozat testén seb keletkezik, melynek súlyossága függ a szúrás helyétől és erősségétől. Körönként legtöbb 1k6 Ép elvesztése okozható, de eszméletvesztéskor a szimpátia viszony szünetel. A bábu segítségével az áldozat közvetlenül semmiképpen nem ölhető meg, legfeljebb súlyosan megsebezhető, tehát 4 Ép alá nem sebezhető. Azaz létfontosságú szervei (szíve, agya, szeme... stb.) nem sérülnek. A Vörös bábu elkészítésekor a viaszba mindenképpen bele kell keverni öt gyűszűnyit az áldozat véréből is."
+        },
+        {
+            "type": "rule",
+            "title": "Fekete bábu",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "Mana pont: 66"
+        },
+        {
+            "type": "paragraph",
+            "text": "A legveszedelmesebb a fizikai hatású viaszbábuk közül. Azonnal halálos seb okozására is alkalmas; megfelelő helyre döfve a tűt, kiszúrhatjuk az áldozat szemét, vagy átdöfhetjük a szívét. Eszméletlen áldozat ellen ez a bábu sem használható."
+        },
+        {
+            "type": "paragraph",
+            "text": "A Fekete bábu elkészítése követeli a boszorkánytól a legtöbb eltökéltséget és a legkörülményesebb előkészítő munkát. Ahhoz ugyanis, hogy az ilyen szoros szimpátia viszony létrejöjjön, a viaszba kell kevernie a kiszemelt áldozat vérén kívül az ürülékét is. Továbbá, az így preparált viasznak legkevesebb 1 óra hosszan az áldozat testközelében (1 ynevi lábon belül) kell maradnia."
+        },
+        {
+            "type": "paragraph",
+            "text": "A Térmágia fejezete alá tartozó varázslatok általában mind besorolhatóak más fejezetekbe is. Hogy mégis ide kerültek, annak magyarázata az, hogy hatásuk elsődleges vonása a tér, a távolság leküzdése. Hogy ez miként működik, ne firtassuk – ezzel a boszorkányok közül is csak kevesen törődnek. Lehetséges – a távolság igenis, könnyedén legyűrhető – és ez a lényeg!"
+        }
+    ]
+}

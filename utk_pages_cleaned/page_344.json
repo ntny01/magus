@@ -1,0 +1,168 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": true,
+    "section_title": "Szabad Elemi Formák",
+    "content_blocks": [
+        {
+            "type": "rule",
+            "title": "Tűzcsóva",
+            "headers": [
+                "Mana pont",
+                "Varázslás ideje",
+                "Időtartam"
+            ],
+            "rows": [
+                [
+                    "5/E",
+                    "1 szegmens/E",
+                    "1 kör"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A Tűzkitörés különleges változata, s ebből következően főként támadásra használható. A tűzvarázsló itt is összesűríti az általa létrehozott elemet, ami azonban nem a tér minden irányában, hanem egyetlen irányított Csóvában tör ki. A Csóva mindig a végpontján éri el az 1 ynevi lábnyi átmérőt. A Csóva formázott elem Erőssége (E) az első lábon annyi, amennyi a teremtett elem erőssége, attól kezdve pedig ynevi lábanként eggyel csökken (akár a Kitörésnél). Ebből máris kiviláglik, hogy a Csóva annyi láb hosszú, amennyi az Erőssége. A másik szembeötlő különbség a Kitöréshez képest, hogy a Csóva időtartama nem egyszeri, hanem egy teljes kör. Ez idő alatt a teremtett elem folyamatosan áramlik a Csóva kiindulási pontjától a végpontjáig. A tűzvarázsló, mikor a mágikus igék elkántálása és rúnák felrajzolása után létrehozza a varázslatot még köteles meghatározni a Csóva irányát, amerre az idézett Östűz majd kitör. A Csóvát később már nem irányíthatja új célpontra."
+        },
+        {
+            "type": "rule",
+            "title": "Tűzfal",
+            "headers": [
+                "Mana pont",
+                "Varázslás ideje",
+                "Időtartam"
+            ],
+            "rows": [
+                [
+                    "8/E",
+                    "1 szegmens/E",
+                    "3 kör"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "E varázslattal a tűzvarázsló a Zónáján belül létrehozhat egy fél ynevi láb vastag, 2 ynevi láb sugarú függőleges Tűzfalat – ami valójában egy félbevágott, függőleges Tűzsonyeg. Alsó vonala követi a terep egyenetlenségeit. A Tűzfal lángra lobbant minden éghető anyagot, ami belekerül, és körönként a varázslat minden egyes E-je után 1k6 Sp sebet okoz azoknak, akik érintkeznek vele, vagy rajta keresztülhatolni kívánnak. A Mana pontok többszörözésével az Időtartam és az Erősség igen, a Tűzfal mérete nem növelhető."
+        },
+        {
+            "type": "rule",
+            "title": "Tűzkard",
+            "headers": [
+                "Mana pont",
+                "Varázslás ideje",
+                "Időtartam"
+            ],
+            "rows": [
+                [
+                    "6/E",
+                    "1 szegmens/E",
+                    "3 kör"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A varázslattal a tűzvarázsló lángokkal övezheti egy tetszés szerinti formájú fegyvert. A tűz körülöleli a pengét – akár a Tűzaura az embert –, és a fegyver sebzésén túl égési sebeket okoz, valamint lángra lobbantja a gyúlékony anyagokat, melyeket megérint. A Tűzkardot a markolatánál bárki megfoghatja és forgathatja; a harc során éppúgy viselkedik, akár egy hétköznapi fegyver: támadni szükséges vele, s éppúgy használható védekezésre is – a Harcrendszer szabályai szerint. Sebzés csak sikeres támadás esetén éri az áldozatot: a fegyver eredeti sebzésén túl a varázslat minden egyes E-je után 1k6 Sp. Azonban túltöltés estén csak a fegyver sebez automatikusan Ép-t, a tűzvarázslat nem!"
+        },
+        {
+            "type": "rule",
+            "title": "Tűzkitörés",
+            "headers": [
+                "Mana pont",
+                "Varázslás ideje",
+                "Időtartam"
+            ],
+            "rows": [
+                [
+                    "5/E",
+                    "1 szegmens/E",
+                    "Egyszeri"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A tűzvarázsló a Zónáján belül eső területen meghatározhat egy tetszés szerinti pontot, amely a robbanás epicentrumaként fog szolgálni. A robbanás mindazoknak, akik a középpont 1 ynevi láb körzetén belül tartózkodnak, minden E után 1k6 Sp sebet fog okozni. Ha a tűzvarázsló erősséggel idézi meg, akkor már a távolabb állók is részesülnek a hatásából – minél távolabb tartózkodnak, annál kevésbé. A sebzés az epicentrumtól távolodva lábanként 1k6-tal csökken."
+        },
+        {
+            "type": "rule",
+            "title": "Tűznyíl",
+            "headers": [
+                "Mana pont",
+                "Varázslás ideje",
+                "Időtartam"
+            ],
+            "rows": [
+                [
+                    "4/E",
+                    "1 szegmens/E",
+                    "Egyszeri"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A tűzvarázsló bal kezének mutatóujjából Tűznyíl csap elő. Ezzel akkor találja el az ellenfelét, ha sikeres Célzó Dobást tesz. A Tűznyíl CÉ-je 30, amihez a tűzvarázsló fegyver nélküli CÉ-je is hozzáadódik, sebzése pedig Erősségenként 1k6 Sp."
+        },
+        {
+            "type": "rule",
+            "title": "Tűzsonyeg",
+            "headers": [
+                "Mana pont",
+                "Varázslás ideje",
+                "Időtartam"
+            ],
+            "rows": [
+                [
+                    "8/E",
+                    "1 szegmens/E",
+                    "3 kör"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A varázslattal a tűzvarázsló egy 5 ynevi láb sugarú körben fél ynevi láb magas Tűzsonyéget hoz létre. Ezt úgy a legegyszerűbb elképzelni, mint egy hosszú szárú fűvel benőtt területet – csakhogy a fűszálak itt lobogó lángnyelvek. Mindazok, akik ebbe belekerülnek vagy belelépnek, a varázslat minden egyes E-je után körönként 1k6 Sp sebet szenvednek. Minden éghető anyag, melyet a szőnyeg lángnyelvei érnek, tüzet fog. A Tűzsonyegnek csupán Erőssége és Időtartama növelhető, mérete nem."
+        },
+        {
+            "type": "rule",
+            "title": "Tűzgolyó",
+            "headers": [
+                "Mana pont",
+                "Varázslás ideje",
+                "Időtartam"
+            ],
+            "rows": [
+                [
+                    "6/E",
+                    "1 szegmens/E",
+                    "3 kör"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A varázslat utolsó igéjének elhangzása után 1 ynevi láb átmérőjű Tűzgolyó jön létre a tűzvarázsló Zónáján belül eső, tetszés szerinti ponton. A tűzvarázsló a Zónáján belül az időtartam lejártáig tetszés szerint mozgathatja a golyót, mely körönként 20 ynevi lábat tehet meg. Belsejében iszonyú forróság uralkodik – akit megérint, E-nként 1k6 Sp-t szenved el. Ha az áldozatok félreugrani igyekeznek a Tűzgolyó útjából, sikeres Gyorsaságpróbát kell tenniük, hogy elkerülhessék."
+        },
+        {
+            "type": "rule",
+            "title": "Tűzgyűrű",
+            "headers": [
+                "Mana pont",
+                "Varázslás ideje",
+                "Időtartam"
+            ],
+            "rows": [
+                [
+                    "6/E",
+                    "1 szegmens/E",
+                    "4 kör"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A varázslat létrejöttekor a tűzvarázsló egyetlen mozdulattal kijelöl egy 3 ynevi láb átmérőjű körivet, ahol Tűzgyűrű keletkezik, melynek lángnyelvei maximum húsz"
+        }
+    ]
+}

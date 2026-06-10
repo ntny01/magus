@@ -1,0 +1,458 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": false,
+    "section_title": "",
+    "content_blocks": [
+        {
+            "type": "table",
+            "title": "Hangmágia",
+            "headers": [
+                "Varázslat",
+                "Mana-pont",
+                "Erősség",
+                "Varázslás ideje",
+                "Hatótáv",
+                "Időtartam"
+            ],
+            "rows": [
+                [
+                    "Bűvhangszer",
+                    "4",
+                    "1",
+                    "1 kör",
+                    "A bárd hangszere",
+                    "1 kör/szint"
+                ],
+                [
+                    "Csend",
+                    "10",
+                    "1",
+                    "1 kör",
+                    "10 ynevi láb sugarú gömb",
+                    "1 perc/szint"
+                ],
+                [
+                    "Hamis beszéd",
+                    "12",
+                    "1",
+                    "1 szegmens",
+                    "10 ynevi láb",
+                    "1 perc/szint"
+                ],
+                [
+                    "Hangidézés",
+                    "10",
+                    "1",
+                    "1 kör",
+                    "10 ynevi láb",
+                    "1 perc/szint"
+                ],
+                [
+                    "Hangkivetítés",
+                    "6",
+                    "1",
+                    "1 szegmens",
+                    "20 ynevi láb",
+                    "1 perc/szint"
+                ],
+                [
+                    "Hangorkán",
+                    "15",
+                    "1",
+                    "4 szegmens",
+                    "20 ynevi láb sugarú kör",
+                    "1 szegmens"
+                ],
+                [
+                    "Hangteremtés",
+                    "4",
+                    "1",
+                    "1 szegmens",
+                    "20 ynevi láb",
+                    "1 perc/szint"
+                ],
+                [
+                    "Mágikus hang",
+                    "20",
+                    "1",
+                    "1 kör",
+                    "Az üzenet hossza",
+                    "Lásd a leírást!"
+                ],
+                [
+                    "Nyelvagyválás",
+                    "6",
+                    "1",
+                    "1 szegmens",
+                    "10 ynevi láb",
+                    "1 perc/szint"
+                ],
+                [
+                    "Rejtett üzenet",
+                    "5",
+                    "1",
+                    "Lásd a leírást!",
+                    "Hallótávolság",
+                    "2 perc"
+                ],
+                [
+                    "Távoli üzenet",
+                    "15",
+                    "1",
+                    "Lásd a leírást!",
+                    "Korlátlan",
+                    "2 perc"
+                ],
+                [
+                    "Zajkeltés",
+                    "1",
+                    "1",
+                    "1 szegmens",
+                    "20 ynevi láb",
+                    "1 kör"
+                ]
+            ]
+        },
+        {
+            "type": "table",
+            "title": "Fénymágia",
+            "headers": [
+                "Varázslat",
+                "Mana-pont",
+                "Erősség",
+                "Varázslás ideje",
+                "Hatótáv",
+                "Időtartam"
+            ],
+            "rows": [
+                [
+                    "Alakváltás",
+                    "15",
+                    "1",
+                    "1 kör",
+                    "Önmaga",
+                    "10 perc/szint"
+                ],
+                [
+                    "Aura",
+                    "4",
+                    "1",
+                    "1 szegmens",
+                    "20 ynevi láb",
+                    "1 kör/szint"
+                ],
+                [
+                    "Bűvhárc",
+                    "6",
+                    "1",
+                    "1 szegmens",
+                    "Önmaga",
+                    "Egyszeri"
+                ],
+                [
+                    "Délibáb",
+                    "20",
+                    "1",
+                    "1 perc",
+                    "1 ynevi mérföld",
+                    "10 perc/szint"
+                ],
+                [
+                    "Fantom",
+                    "24",
+                    "1",
+                    "3 szegmens",
+                    "20 ynevi láb",
+                    "1 perc/szint"
+                ],
+                [
+                    "Fantomcsereg",
+                    "10",
+                    "1",
+                    "1 szegmens",
+                    "100 ynevi láb",
+                    "1 kör/szint"
+                ],
+                [
+                    "Félelmetes fegyver",
+                    "5",
+                    "1",
+                    "1 szegmens",
+                    "A bárd fegyvere",
+                    "1 kör/szint"
+                ],
+                [
+                    "Fénysugár",
+                    "8",
+                    "1",
+                    "1 szegmens",
+                    "Önmaga",
+                    "1 kör/szint"
+                ],
+                [
+                    "Fényvarázs",
+                    "10",
+                    "1",
+                    "1 kör",
+                    "20 ynevi láb",
+                    "1 perc/szint"
+                ],
+                [
+                    "Fényvért",
+                    "6",
+                    "1",
+                    "1 szegmens",
+                    "Önmaga",
+                    "1 kör/szint"
+                ],
+                [
+                    "Fókuszált fény",
+                    "10",
+                    "1",
+                    "1 szegmens",
+                    "Önmaga",
+                    "1 kör/3 szint"
+                ],
+                [
+                    "Hasonmás",
+                    "6/hasonmás",
+                    "1",
+                    "1 kör",
+                    "Önmaga",
+                    "1 kör/szint"
+                ],
+                [
+                    "Illúzió",
+                    "4",
+                    "1",
+                    "1 kör",
+                    "20 ynevi láb",
+                    "10 perc/szint"
+                ],
+                [
+                    "Illúziótalaj",
+                    "6",
+                    "1",
+                    "1 perc",
+                    "50 ynevi láb sugarú kör",
+                    "10 perc/szint"
+                ],
+                [
+                    "Irányvesztés",
+                    "12",
+                    "1",
+                    "1 kör",
+                    "20 ynevi láb",
+                    "10 perc/szint"
+                ],
+                [
+                    "Kép",
+                    "5",
+                    "1",
+                    "1 kör",
+                    "Érintés",
+                    "1 perc/szint"
+                ],
+                [
+                    "Képidézés",
+                    "8",
+                    "1",
+                    "1 kör",
+                    "20 ynevi láb",
+                    "1 perc/szint"
+                ],
+                [
+                    "Kódalak",
+                    "4",
+                    "1",
+                    "1 szegmens",
+                    "Érintés",
+                    "1 kör/szint"
+                ],
+                [
+                    "Láthatatlanság",
+                    "6",
+                    "1",
+                    "1 szegmens",
+                    "Önmaga",
+                    "1 kör/szint"
+                ],
+                [
+                    "Lényalkotás",
+                    "8",
+                    "1",
+                    "1 kör",
+                    "20 ynevi láb",
+                    "1 perc/szint"
+                ],
+                [
+                    "Macskaszem",
+                    "8",
+                    "1",
+                    "1 kör",
+                    "Önmaga",
+                    "10 perc/szint"
+                ],
+                [
+                    "Maszk",
+                    "4",
+                    "1",
+                    "1 kör",
+                    "Önmaga",
+                    "1 kör/szint"
+                ],
+                [
+                    "Nyílzápor",
+                    "5",
+                    "1",
+                    "1 szegmens",
+                    "50 ynevi láb",
+                    "1 kör/szint"
+                ],
+                [
+                    "Rejtel",
+                    "10",
+                    "1",
+                    "1 perc",
+                    "Érintés",
+                    "1 hónap"
+                ],
+                [
+                    "Rémítés",
+                    "20",
+                    "1",
+                    "1 szegmens",
+                    "20 ynevi láb",
+                    "1 óra/szint"
+                ],
+                [
+                    "Személyes varázs",
+                    "4",
+                    "1",
+                    "1 szegmens",
+                    "Önmaga",
+                    "1 óra/szint"
+                ],
+                [
+                    "Szépségvarázs",
+                    "6",
+                    "1",
+                    "1 kör",
+                    "Önmaga",
+                    "1 óra/szint"
+                ],
+                [
+                    "Színvarázs",
+                    "2",
+                    "1",
+                    "1 kör",
+                    "10 ynevi láb",
+                    "1 nap/szint"
+                ],
+                [
+                    "Tárgyláthatatlanság",
+                    "4",
+                    "1",
+                    "1 kör",
+                    "20 ynevi láb",
+                    "1 kör/szint"
+                ],
+                [
+                    "Tárgyátváltoztatás",
+                    "4",
+                    "1",
+                    "1 szegmens",
+                    "Érintés",
+                    "1 óra/szint"
+                ],
+                [
+                    "Távoli torzítás",
+                    "9",
+                    "1",
+                    "1 kör",
+                    "Lásd a leírást!",
+                    "1 perc/szint"
+                ],
+                [
+                    "Vakonlátás",
+                    "17",
+                    "1",
+                    "1 kör",
+                    "Önmaga",
+                    "10 perc/szint"
+                ],
+                [
+                    "Vakságokozás",
+                    "8",
+                    "1",
+                    "1 szegmens",
+                    "10 ynevi láb",
+                    "1 kör/szint"
+                ]
+            ]
+        },
+        {
+            "type": "table",
+            "title": "Egyéb bárdmágiák",
+            "headers": [
+                "Varázslat",
+                "Mana-pont",
+                "Erősség",
+                "Varázslás ideje",
+                "Hatótáv",
+                "Időtartam"
+            ],
+            "rows": [
+                [
+                    "Tanulás",
+                    "4",
+                    "1",
+                    "Lásd a leírást!",
+                    "Hallótávolság",
+                    "Végleges"
+                ],
+                [
+                    "Tanulmány",
+                    "2",
+                    "1",
+                    "Min. 3 perc",
+                    "20 ynevi láb",
+                    "Végleges"
+                ],
+                [
+                    "Hangtanulmány",
+                    "2",
+                    "1",
+                    "Lásd a leírást!",
+                    "20 ynevi láb",
+                    "Végleges"
+                ],
+                [
+                    "Rohanó idő",
+                    "30",
+                    "1",
+                    "1 kör",
+                    "20 ynevi láb",
+                    "1 perc/szint"
+                ],
+                [
+                    "Figyelemelterelés",
+                    "2",
+                    "1",
+                    "1 szegmens",
+                    "5 ynevi láb",
+                    "1 szegmens"
+                ],
+                [
+                    "Hipnózis",
+                    "3/E",
+                    "1",
+                    "1 perc",
+                    "5 ynevi láb",
+                    "1 perc/szint"
+                ]
+            ]
+        }
+    ]
+}

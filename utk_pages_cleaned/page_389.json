@@ -1,0 +1,234 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": false,
+    "section_title": "",
+    "content_blocks": [
+        {
+            "type": "paragraph",
+            "text": "telik az idő, bármilyen távolra is ugranak, csak egy villanásként érzékelik az utazást. Nem öregszenek a világon együtt töltött, betegségeik sem gyógyulnak. A köztes idők egyszerűen átugorják."
+        },
+        {
+            "type": "paragraph",
+            "text": "Az Időugrás csak akkor jön létre, ha az érkezés pillanatában semmi nem gátolja az utazókat, hogy belépjenek a térbe. Ellenkező esetben semmi nem történik, az utazók el sem tűnnek, bár a varázslatra felhasznált Mana pontok elvesznek. Vagyis a Teleporthoz hasonlóan az Időugrással sem lehet valakit valamibe, vagy valamit valakibe belejuttatni."
+        },
+        {
+            "type": "paragraph",
+            "text": "Tárgyat a varázsló a súlyától függően, tetszés szerint küldhet előre az időben, de élőlények esetében bírnia kell az illető beleegyezését. Fontos tény még, hogy a mozaik segítségével az idő csak előrefelé járható, a múltba ugrás módját csak a mágusok ismerik."
+        },
+        {
+            "type": "paragraph",
+            "text": "Az alábbi táblázat megmutatja, hogy 3 ynevi font súly hány Mana pontért milyen messzire küldhető előre a jövőbe:"
+        },
+        {
+            "type": "table",
+            "headers": [
+                "Időugrás",
+                "Mp",
+                "Varázslás ideje"
+            ],
+            "rows": [
+                [
+                    "1 körnél kevesebb",
+                    "1 Mp",
+                    "1 szegmens"
+                ],
+                [
+                    "1-6 kör",
+                    "2 Mp",
+                    "2 szegmens"
+                ],
+                [
+                    "1 perc – 1 óra",
+                    "3 Mp",
+                    "1 kör"
+                ],
+                [
+                    "1 óra – 1 nap",
+                    "4 Mp",
+                    "6 kör"
+                ],
+                [
+                    "1 nap – 1 év",
+                    "5 Mp",
+                    "2 perc"
+                ],
+                [
+                    "1-100 év",
+                    "6 Mp",
+                    "5 perc"
+                ],
+                [
+                    "100-000 év",
+                    "7 Mp",
+                    "15 perc"
+                ]
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Lassítás",
+            "headers": [
+                "Mana pont",
+                "Időtartam",
+                "Varázslás ideje"
+            ],
+            "rows": [
+                [
+                    "1 Mp/3 ynevi font",
+                    "1 kör",
+                    "3 szegmens"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "Az Időmágia alább taglalt szintű alkalmazásához elengedhetetlenül szükséges a Számtan/Mértan képzettség 5. fokú ismerete."
+        },
+        {
+            "type": "paragraph",
+            "text": "A mozaik segítségével egy kiszemelt élőlény számára minimális mértékben lelassítható az idő. Az áldozat annyit észlel, hogy körülötte hirtelen minden és mindenki felgyorsul."
+        },
+        {
+            "type": "rule",
+            "title": "Öregítés",
+            "headers": [
+                "Mana pont",
+                "Időtartam",
+                "Varázslás ideje"
+            ],
+            "rows": [
+                [
+                    "Lásd a leírást!",
+                    "1 szegmens",
+                    "Lásd a leírást!"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A lelassult áldozat Gyorsasága – bármennyi volt is – 3-ra zuhan, minden cselekedetének időigénye a duplájára nő, és elveszíti kezdeményezési jogát mindenkivel szemben. A lassulás időtartama alatt TE-je és VE-je –40-nel csökken, ellenben – az időtörés miatt – puszta bőre is 4-es SFÉ-vel rendelkezik, sebzése pedig megkétszereződik."
+        },
+        {
+            "type": "paragraph",
+            "text": "A mozaik bizonyos értelemben az Időugrás ellentéte. A kiszemelt tárgyat vagy személyt éppúgy kiszakítja az univerzum időszövéséből, ám nem megállítja, hanem felpörgeti számára az idő múlását. Míg az áldozatot körülvevő világban csak egyetlen röpke szegmens telik el, ő – testileg – napokat, heteket vagy akár éveket öregszik."
+        },
+        {
+            "type": "paragraph",
+            "text": "A mozaik nem mentálisan vagy asztrálisan hat, hanem az áldozat – legyen az személy vagy tárgy – számára az idő múlását valóban lelassítja. Az így aláhulló tárgy jóval lomhábban esik, ám földet érve éppolyan sérüléseket szenved, mint szenvedne egyébként. Ugyanakkor a gyorsabb időben mozgó tárgyakkal szemben hihetetlen ellenállást tanúsít (ennek köszönhető az SFÉ), s általuk rendkívül nehezen mozdítható."
+        },
+        {
+            "type": "paragraph",
+            "text": "Mivel a varázslat az Asztrálés a Mentáltestre nem hat, az élőlények nem észlelik az idő rohamos múlását, csak a testük öregszik egyik pillanatról a másikra. Tárgyak tetszés szerint öregíthetőek, ám az élőlényekre csak a Személyes Aura megszüntetésével, vagy az illető beleegyezésével hat a mozaik. Lényeges körülmény azonban, hogy az élőlények erőszakos öregítése szigorúan Fekete mágia."
+        },
+        {
+            "type": "paragraph",
+            "text": "Mivel a Lassítás közvetlenül semmilyen káros hatással nincs az áldozatra, a Személyes Aura nem véd ellene. Mana pont igénye kizárólag a kiszemelt tárgy ill. személy súlyától függ."
+        },
+        {
+            "type": "rule",
+            "title": "Gyorsítás",
+            "headers": [
+                "Mana pont",
+                "Időtartam",
+                "Varázslás ideje"
+            ],
+            "rows": [
+                [
+                    "1 Mp/3 ynevi font",
+                    "1 kör",
+                    "3 szegmens"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A mozaik Mana pont igénye a kiszemelt tárgy ill. élőlény súlyától, továbbá az öregedés mértékétől függ – az alábbi táblázat szerint:"
+        },
+        {
+            "type": "paragraph",
+            "text": "A Lassítással éppen ellentétes hatású mozaik. A kiszemelt tárgy vagy személy saját idejének múlását felgyorsítja, miáltal környezete hozzá képest lelassul."
+        },
+        {
+            "type": "table",
+            "headers": [
+                "Öregedés",
+                "Mp/3 font"
+            ],
+            "rows": [
+                [
+                    "1 hétnél kevesebb",
+                    "1 Mp"
+                ],
+                [
+                    "1 hét – 1 hónap",
+                    "2 Mp"
+                ],
+                [
+                    "1 hónap – 1 év",
+                    "3 Mp"
+                ],
+                [
+                    "1 év – 10 év",
+                    "4 Mp"
+                ],
+                [
+                    "10 év – 50 év",
+                    "5 Mp"
+                ],
+                [
+                    "50 év – 100 év",
+                    "6 Mp"
+                ],
+                [
+                    "100 év – 1000 év",
+                    "7 Mp"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A felgyorsított személy Gyorsasága 20-ra nő – bármennyi is volt egyébként. TE-je és VE-je 40-nel növekszik, ám minden sebzés (Sp) amit elszenved, megkétszereződik, s minden ellenfelének +4 SFÉ-je lesz az ő csapásaival és szúrásaival szemben."
+        },
+        {
+            "type": "paragraph",
+            "text": "A felgyorsított tárgy kevésbé képes kárt tenni a többiben, ám annál könnyebben rongálódik."
+        },
+        {
+            "type": "rule",
+            "title": "Térmágia",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "A Térmágia gyakorlásához szükséges a pontos távolságok felismerése a Számtan/Mértan képzettség legalább 3. fokú ismerete."
+        },
+        {
+            "type": "paragraph",
+            "text": "Dorham Adex, az egyik legelső pyarroni mágus összegyűjtött kézirataiban így nyilatkozik:"
+        },
+        {
+            "type": "flavor_text",
+            "text": "„...A Térmágia lényege a Világegyetem szerkezetének különösségében rejlik. Abban, hogy a tér egyes pontjait, bár jelentős távolságok választják el egymástól, mindig létezik közöttük közvetlen kapcsolat is. Az Anyagi Világhoz szokott szemlélő számára persze mindez fel nem fogható, így magyarázata is pusztán hiábavaló szócséplés lenne. Fogadjuk el tényként: igenis, a távolság egyazon Anyagi Síkon belül könnyen leküzdhető. Két hozzávaló szükségeltetik: a Világegyetemben fellelhető mágikus energiák, és a Titkos Tudományok ismerete...”"
+        },
+        {
+            "type": "rule",
+            "title": "Távolbahatás",
+            "headers": [
+                "Mana pont",
+                "Varázslás ideje"
+            ],
+            "rows": [
+                [
+                    "Lásd a leírást!",
+                    "4 szegmens"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A varázsló varázslatai – tartozzanak is a mágia bármelyik fejezete alá – csak Zónáján belül képes létrehozni. Ez azt"
+        }
+    ]
+}

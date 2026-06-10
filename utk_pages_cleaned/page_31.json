@@ -1,0 +1,52 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": null,
+    "is_new_section": false,
+    "section_title": null,
+    "content_blocks": [
+        {
+            "type": "paragraph",
+            "text": "az adott cselekvés. Ebből következik az is, hogy a karakter számára a mindennapos tevékenységek nem igényelnek külön próbát, hiszen egy 18-as Erejű ember különösebb megerőltetés nélkül tol arrébb egy szekeret, a patkókovács sem ront a patkoláskor és a tapasztalt lovas is biztosan üli a lovát (lásd az egyes Tulajdonságok leírásában szereplő hozzávetőleges meghatározásokat)."
+        },
+        {
+            "type": "paragraph",
+            "text": "Próbára akkor van szükség, ha a karakter eddig ismeretlen, a mindennapitól eltérő vagy lényegesen nehezebb kihívás előtt áll: oldalára dőlt postakocsit kell visszabillenteni, egy szilaj vadlovat először megpatkolni, vágtából visszafogni a megbokrosodott állatot."
+        },
+        {
+            "type": "paragraph",
+            "text": "Annak eldöntése, hogy az adott szituációban a karakter képes-e automatikusan végrehajtani a cselekvést vagy próbát kell dobnia, mindig a KM feladata."
+        },
+        {
+            "type": "rule",
+            "title": "Tulajdonságpróba mechanika",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Tulajdonságpróba példa",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Tulajdonságpróba módosítók",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Különböző Tulajdonságpróbák",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        }
+    ]
+}

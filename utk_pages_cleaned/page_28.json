@@ -1,0 +1,145 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": null,
+    "is_new_section": true,
+    "section_title": "Tulajdonságok",
+    "content_blocks": [
+        {
+            "type": "paragraph",
+            "text": "A karakterek cselekedeteinek sikerét, harci és egyéb képességeit a Tapasztalati szint mellett Tulajdonságai határozzák meg. Ezek a Tulajdonságok egy személy veleszületett és gyakorlással, tanulással megszerzett alapképességeit jellemzői. A Tulajdonságértékek 1-től 20-ig változhatnak, s minél magasabb egy érték, annál közelebb áll a tökéletességhez. Az átlagérték 10-12 körül mozog, s a 19-es és 20-as tulajdonság értékek oly ritkák, hogy csak különleges iskolák vagy kivételes adottság révén van mód megszerzésükre (Bővebben lásd a Háttérrel c. fejezetben!). A M.A.G.U.S. különböző Tulajdonságát hat fizikai és négy szellemi képességre bonthatjuk. Fizikai az Erő, Gyorsaság, Ügyesség, Állóképesség, Egészség és a Karizma. Szellemi az Intelligencia, Akaraterő, Asztrál és az Érzékelés."
+        },
+        {
+            "type": "paragraph",
+            "text": "Ez az egyik legnyilvánvalóbb képesség, a karakter fizikai erejéről tájékoztat. Megmutatja, hogy bírja a személy a hirtelen fizikai terhelést, milyen maximális erőkifejtésre képesek izmai. A rövid izommunkával kapcsolatban használjuk, a hosszú, kevésbé intenzív, de folyamatos megterhelés mutatója az Állóképesség."
+        },
+        {
+            "type": "paragraph",
+            "text": "A karakter Teherbírása szintén az Ereje függvénye. Egy humanoid az Erő értékének tízszeresét ynevi fontban mérve képes megmozdítani, és annyi felszerelést képes magával cipelni maximálisan huzamosabb ideig testen megfelelően elosztva, amennyi az Ereje háromszorosa. E felett minden megkezdett öt ynevi font csomag után 1 MGT sújtja a karaktert. Azt természetesen a KM jogköre eldönteni, a karakter képzettségei és Állóképesség értéke ismeretében, hogy ezen súlyokkal mennyi ideig képes haladni vagy munkát végezni, esetleg hadakozni a karakter."
+        },
+        {
+            "type": "paragraph",
+            "text": "Az Erő fontos szerepet kap a közelharcban is, így a harcosok egyik meghatározó Tulajdonsága, mivel hozzáadódik a TE-hez, és 15-ös érték fölött pedig pontonként +1 sebzést eredményez közelharci fegyverek esetén."
+        },
+        {
+            "type": "rule",
+            "title": "1-3",
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "title": "4-5",
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "title": "6-8",
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "title": "9-12",
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "title": "13-15",
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "title": "16-18",
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "title": "19-20",
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "Gyorsaságon a karakter fürgeségét, reakcióinak sebességét értjük. Ez a szám megmutatja azt, hogy milyen gyorsan futhat valaki, de jellemzi a cselekvések gyorsaságát is. Tehát nem ez dönti el, hogy valaki milyen gyorsan fejt meg egy logikai feladványt, hanem hogy a karakter el tud-e ugrani egy felé száguldó lovas elől."
+        },
+        {
+            "type": "paragraph",
+            "text": "A Gyorsaság még egy nagyon fontos értéket, a karakter Sebességét adja meg. Ebből a Tulajdonságból számítható ki, hogy a karakter 1 kör, illetve 1 szegmens alatt mekkora távolságot képes megtenni. Minden karakter egy körben ötször annyi ynevi láb távolságot képes megtenni, mint amennyi a Gyorsaság értéke. Egyetlen szegmens alatt pedig legfeljebb a Gyorsasága felének (lefelé kerekítve) megfelelő ynevi láb távolságra juthat. Ez az érték természetesen változik, ha a karakter Gyorsasága valamilyen okból (például MGT) csökken. Sokat számít a Gyorsaság a harcban is. Egyrészt vitathatatlan szerepe van egyrészt a támadások előli kitérésben, másrészt a karakter saját támadásának eredményességében. Minél gyorsabb ugyanis a támadó, hárítása annál nehezebb. A támadás pillanatát is befolyásolja ez az érték, így a Gyorsaság hozzáadódik a KE-hez, továbbá a TE-hez és a VE-hez is."
+        },
+        {
+            "type": "rule",
+            "title": "1-3",
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "title": "4-5",
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "title": "6-8",
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "title": "9-12",
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "title": "13-15",
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "title": "16-18",
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "title": "19-20",
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "E tulajdonság alatt a mozgáskoordinációt, az egyensúlyérzéket és a kézügyességet értjük. Az agy és az izmok tökéletes összhangja szükséges az igazán finom és összetett mozgások kivitelezéséhez, s ennek mutatója az Ügyesség. Meghatározó szerepe van az alvilági képzettségek legtöbbjében, a kártyázásban vagy a zsebmetszésben."
+        },
+        {
+            "type": "paragraph",
+            "text": "Fontos az Ügyesség a közelharcban, hiszen a legjobb technika is veszendőbe megy, ha a test nem azt hajtja végre, amit az elme diktál. Az Ügyesség hozzáadódik a TE-hez, a VE-hez és a CÉ-hez. Egyes százalékos képzettségek esetében az Ügyesség képezi a karakter alap százalékértékét."
+        },
+        {
+            "type": "rule",
+            "title": "1-3",
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "title": "4-5",
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "title": "6-8",
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "title": "9-12",
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "title": "13-15",
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "title": "16-18",
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "title": "19-20",
+            "rows": []
+        }
+    ]
+}

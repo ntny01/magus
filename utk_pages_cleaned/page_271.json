@@ -1,0 +1,224 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": false,
+    "section_title": "",
+    "content_blocks": [
+        {
+            "type": "paragraph",
+            "text": "személy kezében egy hosszúkard anyagiásul. Egyenes, kétélű pengéjű, fekete színű, túlburjánzó kaotikus mintázattal ékített fegyver, melynek egészen apró, szinte jelzésszerű a keresztvasa."
+        },
+        {
+            "type": "rule",
+            "title": "Rendszerszabály",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A Káoszkard forgatója nem használhat másik kezében semmilyen fegyvert vagy pajzsot – ha ilyesmi lenne nála, azt azonnal eldobja. A Káoszkardot nem lehet eldobni vagy másnak átadni, amíg az időtartam tart. Ha nem harc közben jelöli meg, akkor is reagál a legkisebb provokációra: támadásra kényszeríti gazdáját. A fohász nem akadályozza meg, hogy a Káoszkardot a fohászt létrehozó pap ellen használják."
+        },
+        {
+            "type": "paragraph",
+            "text": "Amennyiben a pap önmagát jelöli meg a fegyver forgatójául, s az áldozat ellenkezik, a papnak sikeres Támadó dobást kell tennie."
+        },
+        {
+            "type": "paragraph",
+            "text": "A felhasznált Kegy pontok többszörözésével csak az időtartam növelhető, a fegyver harcértékei ettől nem változnak. A Káoszkard használatának nem előfeltétele a Fegyverhasználat képzettség elsajátítása, ha a pap nem is képzett benne, úgy forgathatja, mintha 2. fokú képzettséggel bírna. Amennyiben a fegyveres képzettsége ennél magasabb, az ebből adódó bónuszok érvényesülnek. Fegyvertöréssel, Lefegyverzéssel nem támadható. Két Káoszkardot egyetlen karakter sem forgathat."
+        },
+        {
+            "type": "paragraph",
+            "text": "Köd felidézése"
+        },
+        {
+            "type": "paragraph",
+            "text": "Szféra: Természet"
+        },
+        {
+            "type": "paragraph",
+            "text": "Kegy pont: 10"
+        },
+        {
+            "type": "paragraph",
+            "text": "Hatótáv: 20 ynevi láb"
+        },
+        {
+            "type": "paragraph",
+            "text": "Időtartam: 6 kör (1 perc)"
+        },
+        {
+            "type": "paragraph",
+            "text": "A pap ezen fohásszal ködöt idéz a kijelölt terület fölé. A kis kiterjedésű, de annál sűrűbb ködfelhő az Időtartam lejártáig stabil marad, s utána is fennmaradhat, ha a szél szét nem oszlatja. Az Időtartam lejárta után a köd már csak a légmozgás játéka, nem feltétlen marad a kijelölt területen, hanem tovább sodródik, vagy eloszlik. A ködben tartózkodó személyek a következő negatív harcérték módosítókat szenvedik el:"
+        },
+        {
+            "type": "rule",
+            "title": "Rendszerszabály",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "*azokra is vonatkozik, akik a ködön kívülről használnak célzó fegyvert a ködben tartózkodókkal szemben"
+        },
+        {
+            "type": "paragraph",
+            "text": "Láthatatlanság evilági lények előtt"
+        },
+        {
+            "type": "paragraph",
+            "text": "Szféra: Természet"
+        },
+        {
+            "type": "paragraph",
+            "text": "Kegy pont: 10"
+        },
+        {
+            "type": "paragraph",
+            "text": "Fohász hossza: 2 szegmens"
+        },
+        {
+            "type": "paragraph",
+            "text": "Hatotáv: Érintés"
+        },
+        {
+            "type": "paragraph",
+            "text": "Időtartam: 6 kör (1 perc)"
+        },
+        {
+            "type": "paragraph",
+            "text": "A pap képes egyetlen halk segélykérő igével ajkán pillanatok alatt láthatatlanná válni bármilyen – az Elsődleges Anyagi Síkról származó – teremtmény előtt. Az így nyert láthatatlanság nem észlelhető sem infralátással, sem ultralátással/segítséggel, s csupán érzékelő varázslatokkal, fohászokkal vagy diszciplínával leplezhető le. A pap látható marad minden más síkról származó, vagy élőholt lény előtt."
+        },
+        {
+            "type": "paragraph",
+            "text": "Láthatatlanság túlvilági lények előtt"
+        },
+        {
+            "type": "paragraph",
+            "text": "Szféra: Élet"
+        },
+        {
+            "type": "paragraph",
+            "text": "Kegy pont: 20"
+        },
+        {
+            "type": "paragraph",
+            "text": "Fohász hossza: 2 szegmens"
+        },
+        {
+            "type": "paragraph",
+            "text": "Hatotáv: Érintés"
+        },
+        {
+            "type": "paragraph",
+            "text": "Időtartam: 6 kör (1 perc)"
+        },
+        {
+            "type": "paragraph",
+            "text": "A pap fohásza kulcsolja kezét, hogy istene mentse ki szorultságból, majd egy szemvillanás alatt láthatatlanná válik minden olyan lény előtt, mely nem az Elsődleges Anyagi Síkról származik. Ugyanígy nem érzékelhető az élőholt lények számára sem. Ezek a lények csak akkor pillanthatják meg, ha valamilyen mágiához folyamodnak."
+        },
+        {
+            "type": "paragraph",
+            "text": "Méregérzékelés"
+        },
+        {
+            "type": "paragraph",
+            "text": "Szféra: Élet, Természet"
+        },
+        {
+            "type": "paragraph",
+            "text": "Kegy pont: 5"
+        },
+        {
+            "type": "paragraph",
+            "text": "Fohász hossza: 1 kör"
+        },
+        {
+            "type": "paragraph",
+            "text": "Hatotáv: Lásd a leírást!"
+        },
+        {
+            "type": "paragraph",
+            "text": "Időtartam: 3 kör"
+        },
+        {
+            "type": "paragraph",
+            "text": "A pap ezen fohásza segítségével meg tudja mondani, hogy a megérintett tárgy vagy személy mérgezett-e, illetve az a helyiség, amelyben tartózkodik, körülötte 3 ynevi láb sugarú területen belül tartalmaz-e valamilyen légmérget. A fohász minden mérget érzékel, megállapítja típusát, szintjét és hatását is."
+        },
+        {
+            "type": "paragraph",
+            "text": "Óvó fegyver"
+        },
+        {
+            "type": "paragraph",
+            "text": "Szféra: Élet"
+        },
+        {
+            "type": "paragraph",
+            "text": "Kegy pont: 10"
+        },
+        {
+            "type": "paragraph",
+            "text": "Fohász hossza: 1 kör"
+        },
+        {
+            "type": "paragraph",
+            "text": "Hatotáv: Érintés"
+        },
+        {
+            "type": "paragraph",
+            "text": "Időtartam: 6 kör (1 perc)"
+        },
+        {
+            "type": "paragraph",
+            "text": "A fohász hatására olyan fegyver jelenik meg a pap, vagy az általa kiválasztott személy kezében. A fegyver kékes színben fog tündökölni – kinézete egyszerű, dísztelen. Harcértékei:"
+        },
+        {
+            "type": "rule",
+            "title": "Rendszerszabály",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "Csak a Harcrendszerben leírt Védekező harc folytatható vele. Ha támadásra kívánják használni, azonnal szertefoszlik. A fegyver másik kézben csak pajzsot tűr meg, s ha azzal támad alkalmazója, ugyanúgy eltűnik, mintha őt használták volna támadásra. A fegyvert nem lehet eltörni, nem üthető ki a kézből."
+        },
+        {
+            "type": "paragraph",
+            "text": "Az Óvó fegyver használatának nem előfeltétele a Fegyverhasználat képzettség elsajátítása, ha a pap nem is képzett benne, úgy forgathatja, mintha 2. fokú képzettséggel bírna. Amennyiben a fegyveres képzettsége ennél magasabb, az ebből adódó bónuszok érvényesülnek. Fegyvertöréssel, Lefegyverzéssel nem támadható. Két Óvó fegyvert egyetlen karakter sem forgathat."
+        },
+        {
+            "type": "paragraph",
+            "text": "Szférák zenéje"
+        },
+        {
+            "type": "paragraph",
+            "text": "Szféra: Lélek, Élet, Természet"
+        },
+        {
+            "type": "paragraph",
+            "text": "Kegy pont: 18"
+        },
+        {
+            "type": "paragraph",
+            "text": "Fohász hossza: 5 kör"
+        },
+        {
+            "type": "paragraph",
+            "text": "Hatotáv: 20 ynevi láb sugarú kör"
+        },
+        {
+            "type": "paragraph",
+            "text": "Időtartam: 1 óra"
+        },
+        {
+            "type": "paragraph",
+            "text": "A pap megidézheti a tökéletes harmónia dallamait, a Szférák zenéjét. A fohász hatására a levegő megtelik csodás hangokkal, s minden lény, aki a hatótávon belül tartózkodik, egy óra elteltével frissebbnek és kipihentebbnek érzi magát. Fájdalomtűrés pontjaik a pap szintjeinek háromszorosával"
+        }
+    ]
+}

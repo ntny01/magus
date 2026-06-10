@@ -1,0 +1,127 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": false,
+    "section_title": "",
+    "content_blocks": [
+        {
+            "type": "paragraph",
+            "text": "Dart-nid-kinito (Víz) Kelet-Tiadlan legnevesebb stílusirányzata, szinte érintetlenül őrizte meg a Niarei kolostorokból származó hagyományokat. Magányos, kevés tanítványt oktató mesterek jellemzik, akik a szellem épülésére nagyobb gondot fordítanak, mint magára a harcra. A küzdelem mintegy mellékes elemként jelentkezik a szellemi út mellett, igaz e mellékes elemet messze földön emlegetik kiválósága miatt. A Dart-nid-kinito követői semmiféle fegyvert nem használnak, a harcot inkább elkerülni próbálják, ám ha ez nem lehetséges, inkább törekednek az ellenfél minél kisebb sérülésekkel járó ártalmának tételére, semmint elpusztítására. Miután a szellemi útra összpontosítanak – vagyis a Slan-pszi alkalmazására – mindenkinél kiválóbbak e téren.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "Kolostorerdőjeik mélyén nagy tudású bölcsek és mesterek kutatják folyamatosan a szellem ösvényeit, hogy Tiadlan falvai biztonságban érezhessék magukat az éjben, az árnyékvilágon túl lapuló névtelen fenyegetéstől. Egyes szóbeszédek szerint nagyjaik némelyike harcművészetével még a szellemek és egyéb túlvilági teremtmények ellenében is sikerrel léphet fel. Egyvalami bizonyos, Kelet-Tiadlanban nyoma sincs a kalandorok által oly sokszor emlegetett ártó szellemeknek, melyek a Sárkánygerincet vigyázzák az oktalanoktól, s melyek oly sokszor kísérik akár mérföldek százain át a merészeket, hogy már a hegyektől távol veszejtsék el őket.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "Szimbólumuk a víz, s mesterektől, iskolától függően, a víz valamely stilizált ábrázolását hordják ruhájukon. A stílusok között ez a leglágyabb. Egyetlen szögletes mozdulatot sem találhatunk benne, a kezek és lábak – mi több, maga a test – inkább körívek mentén mozog. A technika nagy hangsúlyt fektet a védelemre, az ellenfél saját támadásának lendületét próbálja elvezetni, ezt a maga javára kihasználni. A Dart-nid-kinito megtanulása meglehetősen időigényes feladat, kevés harcművész választja.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "Időigény: 3, KÉ: 7, TÉ: 10, VÉ: 19, Sebzés: 1k6+1",
+            "title": "A Dart-nid-kinito harcértékei",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "I. Az iskola növendékei mind a Nekromancia, mind a Démonológia, illetve az Ősi nyelv (kyr) képzettséget 3. fokú Oktatás képzettségnek megfelelő bónuszokkal tanulhatják.",
+            "title": "A Dart-nid-kinito előnyei",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "Avad-ka-kinito (Föld) Az eredetileg Niaréből származó stílus változtatás nélkül tanítja a Sárga Kolostorok fizikai anyagát. Gyakran ma is Niaréből érkezett mesterek oktatják, igen magas színvonalon. A női tanítványok igen ritkák, hisz elsősorban a fizikai erőre és állóképességre épülő technikákból áll. Egyformán és talán a legmagasabb színvonalon tanítja a tíz alapfegyver forgatását, ezek közül a tanítvány egy választott fegyvert a Sárkány diszciplínák közepette is forgathat.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "Jelképejük a Sidar hegyre stilizált körvonala, ezt általában a ruhájuk hátára hímezve viselik. Kolostoraik a leginkább megerődített helységek, az ork határ mentén. Legfőbb feladatuk a betörések megfékezése, a helyiek védelme a dorcha vagy a király csapatainak érkezéséig. Még a vad ork törzsek is tisztelik a mennydörgő hágók harcosait.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "Harci stílusuk meglehetősen stabil állásokat és romboló erejű ütéseket tartalmaz. Öklük ha kell, buzogányként zúz, csapásaik nyomán csont törik és meghorpad a páncél. A harcművész nem csak karjának erejét, hanem szinte egész testsúlyát beleadja a jól kiszámított pillanatban leadott ütésekbe. Rúgásokat csak ritkán és csak igen alacsony testtájon alkalmaznak, bokára-térdre támadva igyekeznek megbénítani ellenfelüket.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "Időigény: 3, KÉ: 5, TÉ: 19, VÉ: 19, Sebzés: 1k10+2",
+            "title": "Az Avad-ka-kinito harcértékei",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "I. Az irányzatot követő kolostorokban tanult karakterek igen harcedzettek, már első Tsz.-en a Harctéri gyakorlat képzettség 2. fokával bírnak, illetve hasonló szinten (2. fok) birtokolják a Vérteviselet és a Hadvezetés képzettséget is. Természetesen a Hadvezetést, emellett pedig az ehhez szükséges Térképészet, Számtan/mértan Lélektan, illetve a Művészetek (Rajz) képzettségeket is iskolájuk a szokásos 4. fokú Oktatás képzettségnek megfelelő bónuszokkal oktatja. II. Az igen gyakran komolyabb ostromokat, csatákat is megvívni kényszerülő harcművészek az évszázadok alatt kifejlesztettek egy, a kardművészeknél sokkalta könnyedebb, igaz valamivel kevesebb védelmet is nyújtó páncélzatot, mely formáját tekintve rengeteg egyezést mutat amazzal, ám anyagában jócskán eltér; a vértest posztó kabátra varrt apró pálcikák köré csavart papírlapokból készítik, melyeket festéssel, lakkal tesznek időtállóvá, illetve bőrrel erősítenek meg a kritikus részeken.",
+            "title": "Az Avad-ka-kinito előnyei",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "MGT: 0, SFÉ: 2, Súly: 8 ynevi font, Ár: —, STP: 40",
+            "title": "Az Avad-ka-kinito páncél értékei",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "Nisen-nid-to (Levegő) Vien wri Dara, az egykorvolt tiadlanai dorcha által kidolgozott stílus, azóta is a dorcha testőrségének és csapatait vezető elit-osztagoknak a fő irányzata. Megtanulására egyedül Par-Elyában vagy Di’Maremben van mód. A gyengébbik nem körében talán ez a leginkább kedvelt harci metódus, ám a Nisen-nid-to iskolák jó néhány férfi mestert is adtak Ynevnek. A legharciasabbnak tartott stílus, elegáns, látványos és igen hatékony.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "E stílus a tíz alapfegyver használatát is oktatja, a legnagyobb hangsúlyt azonban egy különlegesen kiképzett, egykezes, a stílus után Nisen-kardnak nevezett penge forgatásának tanítására fordítja. A Nisen-kardot a tanítványok a Sárkány diszciplínák közben is képesek használni.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "A Nisen-nid-to jelképéül a szelet választották, a tanítványok nem hordanak ruházatukon jeleket, mégis jellegzetes láb és kéztartásukról azonnal felismerhető stílusuk. A belharc nem kifejezetten erősségük, ám lábsöpréseik, legváratlanabb helyzetekben végrehajtott gáncsaik messze földön hírhedtté tették e stílus követőit.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "A négy stílus közül ez kívánja a legnagyobb gyorsaságot és ügyességet, viszont nem épít túlságosan a testi erőre. Az alkalmazó harcművész szélesen mozog, villámként csap le, de a támadások gyorsasága miatt kevés erő vihető bele egy-egy csapásba. Inkább a láb használata dominál, de a különbség nem túl nagy a rúgások javára. A technika rengeteg ugrást, kitérést foglal magába, így a védekezés sem szenved csorbát.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "Időigény: 3, KÉ: 11, TÉ: 13, VÉ: 14, Sebzés: 1k6+2",
+            "title": "A Nisen-nid-to harcértékei",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "Méret kategória: 4, Időigény: 5, KÉ: 6, TÉ: 14, VÉ: 11, Sebzés: 2k6+2, STP: 30",
+            "title": "Nisen-kard",
+            "headers": [],
+            "rows": []
+        }
+    ]
+}

@@ -1,0 +1,122 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": true,
+    "section_title": "A bárd induló képzettségei 1. Tapasztalati szinten:",
+    "content_blocks": [
+        {
+            "type": "paragraph",
+            "text": "Ha a főhangszere elpusztul, a bárdnak be kell szereznie egy, az eredetihez hasonló darabot (lehetőleg ugyanattól a mesterembertől, bár ez nem követelmény, inkább csak hagyomány), majd legalább egy éven át naponta játszania rajta, míg az a Személyes Aurájának részévé nem válik. Ez az idő kitolódhat vagy le is rövidülhet attól függően, hogy a dalnok szívének mennyire válik kedvessé új hangszere, mennyi időt szán gyakorlásra, milyen kalandokon mennek át együtt. Így is elég ritka azonban, hogy egy esztendőnél kevesebb időre lenne szükség, míg a bárd lelke kiterjedt befolyását hangszerére. Ha például hosszú időn át gyűjti a pénzt, hogy egy kisebb vagyonért a legnevesebb mestereknél készíttesse el lantját, valóban megbecsüli és féltő gonddal ápolja, úgy jóval hamarabb lezajlik a folyamat. Ezt minden esetben a KM feladata eldönteni, hogy a karakter kiérdemelte-e főhangszere visszaszerzését. Azt, hogy a hangszer mikor válik alkalmassá az Összhangzat megszólaltatására – ha nem is napra pontosan –, de egy idő után megérzi. Nem intuíció vagy sugallat formájában, egyszerűen tudja, előtte azonban nem is próbálkozik vele. Ahány vidéke Ynevnek, annyiféle bárdhangszer létezik. Míg északon ilanori mintára a lant használata terjedt el elsősorban – húrozás, nyakának törése és alakja alapján több tucat típusát ismerjük –, addig a Délvidék a különféle ciszterek, Pyarron pedig a hárfa hódolatának él. Ezek a pengetős hangszerek is legalább annyi változatban fordulnak elő, mint a lantok. Ilyen például az északi származó asszisz szkoboz, vagy az Északi Hármak országaiban igen kedvelt mandolin. Ugyanígy a különféle vonós vagy fúvóshangszerek, de a változatos dobok, csörgők is tökéletesen megfelelnek a bárdok főhangszerének.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "A bárd karakter rendkívül szerteágazó ismeretekkel rendelkezik. Míg képzettségei igen sokrétűek (harci, alvilági, világi, és szociális képzettségek egyaránt tartoznak repertoárjába), képes mágiát is használni. A vele való játék igazán élvezetes és szórakoztató, ám meglehetős mennyiségű tapasztalatot és jókora önmérsékletet igényel, ezért csak rutinosabb játékosoknak ajánljuk.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "A bárdok meglehetősen jó vívók. Nem vehetik ugyan fel a versenyt a harcosokkal vagy a harcművészekkel, de néhányuk kardforgató tudománya már-már a bajvívókéval vetekszik. Persze vannak dalnokok, kik nem a közelharcot, sokkal inkább a célzás tudományát részesítik előnyben, s így a különböző íjak és a számszeríjak használatában jeleskednek. Szerteágazó ismereteik és mágiájuk miatt nem fordíthatnak annyi figyelmet harcértékeik fejlesztésére, mint a harciasabb szervezetek tagjai. HM-jeik számát átlagosan szintenként 6-tal növelik.",
+            "title": "Harcérték",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "A bárdok életmódja nem feltétlenül eredményez magas Életerőt vagy kiemelkedő Fájdalomtűrő képességet. Sőt, az efféle szerencsevadászok nem igazán kedvelik, s ha csak tehetik, kerülik a felesleges fájdalmakat; időszakos megpróbáltatásaik dacára kényelmes élethez szoktak. Szintenként Fp-ik száma átlagosan 4 ponttal nő.",
+            "title": "Életerő és Fájdalomtűrés",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "A bárdok ezernyi különféle dolgot kényszerülnek megtanulni ahhoz, hogy hatékonyan ravaszkodhassanak, udvarolhassanak – vagyis elérjék céljaikat. Ezen túl azonban még művészi tehetségüket is ki kell bontakoztatniuk, és törődniük kell csekély mágikus hatalmukkal is, ezért általában sok Kp-ra van szükségük. Szintenként átlagosan 14 Kp-t növelik Kp-ik számát.",
+            "title": "Képzettségek",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "A bárdok különleges varázslataikhoz, az illúziók és hangok csodálatos megidézéséhez a külső, szférákon túli térségekből, a csillagok fényéből merítik hatalmukat. Szintenként általában 5 ponttal emelik Mana pontjaik számát, bár ez igen csak az adott dalnok személyétől függ.",
+            "title": "Varázserő",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "table",
+            "text": "",
+            "title": "",
+            "headers": [
+                "Képzettség",
+                "Fok"
+            ],
+            "rows": [
+                [
+                    "Fegyverhasználat",
+                    "2. fok"
+                ],
+                [
+                    "Szexuális kultúra",
+                    "2. fok"
+                ],
+                [
+                    "Művészetek (ének vagy zene)",
+                    "3. fok"
+                ],
+                [
+                    "Művészetek",
+                    "3. fok"
+                ],
+                [
+                    "Nyelvtudás (anyanyelv)",
+                    "4. fok"
+                ],
+                [
+                    "Kultúra (szülőföld)",
+                    "4. fok"
+                ],
+                [
+                    "Legendaismeret",
+                    "3. fok"
+                ],
+                [
+                    "Tapasztalati mágia (bárd)",
+                    "3. fok"
+                ],
+                [
+                    "Lopódzás",
+                    "+10%"
+                ],
+                [
+                    "Rejtőzködés",
+                    "+10%"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A bárd képzettségei, melyeket mesterétől az Oktatás képzettség 4. foka által nyújtott előnnyel tanulhat: Álcázás/álruha, Ékesszólás, Értékbecslés, Fegyverhasználat, Írás/olvasás, Heraldika, Kocsmai verekedés, Kultúra, Legendaismeret, Lélektan, Lopódzás, Művészetek, Nyelvtudás, Párbaj, Rejtekhelykutatás, Rejtőzködés, Szerencsejáték, Szexuális kultúra, Színészet, Tapasztalati mágia (bárd), Történelem, Udvari etikett/intrika, Zárnyitás, a KM engedélyével Pszi (pyarroni).",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "A bárdok fegyvertára sokszínűségében és gazdagságában a harcosokéhoz mérhető. Az egyetlen megkötés, amihez a bárdok általában ragaszkodni szoktak, hogy nehézvértzetet, súlyos, kétkezes fegyvereket nemigen viselnek, pajzsot ritkán használnak. A tolvajokhoz hasonlóan kedvelik a könnyű, jól forgatható kardokat és a hajítófegyvereket. A legáltalánosabb bárdfegyver – persze a hangszerükön kívül – a hosszú, egyenes, egykezes kard, netán a rapír, a hajítótőr vagy a vadász számszeríj.",
+            "title": "A bárdok fegyvertára",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "I. A bárdok nem rendelkeznek iskolákkal, magányos mesterük 6 pontos Háttérnek felel meg. II. A bárdok elsődleges különleges képessége a Bárdmágia használata, épp ezért ingyenesen megkapják a Mágikus fogékonyság hátteret. Erről bővebben a Bárdmágia fejezetben olvashatsz a 241. oldalon. III. A bárdok 3. Tapasztalati szinttől megérzik – pszi vagy mágia alkalmazása nélkül is – ha egy tárgy mágikus tulajdonságokkal bír. A dalnoknak ehhez elegendő kezébe vennie a tárgyat.",
+            "title": "A bárd különleges előnyei és hátrányai:",
+            "headers": [],
+            "rows": []
+        }
+    ]
+}

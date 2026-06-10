@@ -1,0 +1,170 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": false,
+    "section_title": "",
+    "content_blocks": [
+        {
+            "type": "rule",
+            "title": "A Sárkány ébredése",
+            "rows": [
+                [
+                    "Típus",
+                    "Test"
+                ],
+                [
+                    "Ψp",
+                    "3/kör"
+                ],
+                [
+                    "A meditáció ideje",
+                    "1 szegmens"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A Sárkány ébredése a határvonal a mágiahasználat és a Slan pszi között. A Slan már olyan szinten képes uralni saját maga és a környezete fizikai valóját a puszta akaratával, hogy képes belátni a világ mögötti homályba, és képes az ott megbúvó erővonalakat elmozdítva kárt tenni olyan lényeken ütéseivel, rúgásaival vagy fegyverével a diszciplína hatása alatt, akiket csak mágiával átitatott gyilokszerszámokkal lehetett volna legyőzni."
+        },
+        {
+            "type": "paragraph",
+            "text": "A diszciplína fenntartása gyenge koncentrációt igényel, ezért ezzel párhuzamosan csak az Aranyharang, Kiáltás és a Sárkány tánca és dühe diszciplínák alkalmazhatóak és a Statikus pajzsok sem bomlanak le."
+        },
+        {
+            "type": "rule",
+            "title": "Érzékelhetetlenség",
+            "rows": [
+                [
+                    "Típus",
+                    "Test"
+                ],
+                [
+                    "Ψp",
+                    "5"
+                ],
+                [
+                    "A meditáció ideje",
+                    "1 kör"
+                ],
+                [
+                    "Időtartam",
+                    "6 kör"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A diszciplína alkalmazója saját belső statikus csendjét, békéjét testébe irányítva, mozdulatlanná dermedve képes érzékelhetetlenné válni, aurája és létezése feloldódik környezetében, semmiféle hatást nem fejt a körülötte létező világra. Aurája külső régióit teljesen feloldva a Belső Síkokon a környezetében lévő létezők által vetett hullámokban, hagyja, hogy ezek teljesen átmossák. Így hiába észlelik jelenlétét az érzékszervek, ha a tudat kapaszkodó híján képtelen megragadni és összerendezni az általuk közölt információkat. A diszciplína mellékhatásaként a Slan megérzi a körülötte fodrozódó Belső Síkok uralkodó érzelmi színezetét, mentális formáinak összetettségét, így képes benyomásokat gyűjteni környezetéről."
+        },
+        {
+            "type": "paragraph",
+            "text": "Ebben az állapotban még a legélesebb érzékszervek (pl. látás, hallás, szaglás stb.) számára sem fedezhető fel, és kikerül a Hatodik érzék hatósugarából is. Az Érzékelhetetlenség folyamán semmilyen tevékenység (mozgás, harc, pszi használat vagy varázslás, kommunikáció) nem végezhető."
+        },
+        {
+            "type": "paragraph",
+            "text": "Az Auraérzékelés előtt is rejtve marad, csupán olyan Láthatatlanságérzékeléssel, vagy Életérzékelés varázslattal fedezhető fel, amely legalább 5-ös erősítésű."
+        },
+        {
+            "type": "rule",
+            "title": "Zavarás",
+            "rows": [
+                [
+                    "Típus",
+                    "Test"
+                ],
+                [
+                    "Ψp",
+                    "5"
+                ],
+                [
+                    "A meditáció ideje",
+                    "1 szegmens"
+                ],
+                [
+                    "Időtartam",
+                    "1 kör"
+                ],
+                [
+                    "ME",
+                    "Akaraerőpróba"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A Zavarás a Slan pszi kiterjesztett Aurára épülő alkalmazásainak legmagasabb szintű formája. Végrehajtásakor a Slan saját Auraérzékelését kiterjesztve borítja be ellenfelét, elzárva őt a Belső Síkoktól, illetve a Manahálótól. Az áldozat ezt egyfajta elcsendesülésként, kikapcsolásként éli meg. A körülötte lévő világ elveszti minden érdekességét, az illatok eltompulnak az emberek mosolya vagy haragja hiteltelenné válik, mivel az öntudatlan észlelése az Asztrál- és Mentálsíkon immáron nem látja el benyomásokkal, nem egészíti ki az érzékszervei által nyújtott információkat, észleléseket."
+        },
+        {
+            "type": "paragraph",
+            "text": "Ennek hatásai többféleképpen is megnyilvánulnak: minden már megfogant varázslat, fohász és pszi alkalmazás, mely koncentrációt igényel, és nem az alkalmazó saját testére hat azonnal megszakad, az időtartam alatt pedig az áldozat nem képes Mana pontjai visszaszerzésére sem, illetve újabb varázslatok, fohászok, vagy pedig pszi alkalmazások végrehajtására."
+        },
+        {
+            "type": "paragraph",
+            "text": "A sikeres alkalmazáskor az áldozatnak a Slannek meg kell érintenie áldozatát, hogy Aurájuk érintkezhessen. Ez után sem távolodhat el a célponttól 5 ynevi lábnál messzebb, mivel ekkor a diszciplína azonnal megszakad. Emellett a megtámadott másféleképpen is védekezhet: sikeres Akaraerőpróbával legyűrheti a reá boruló Aurát, azonban próbáját a diszciplína E-jének megfelelő negatív módosítóval dobja. Minden egyes E után -1-gyel. Az Akaraerőpróbát csakis a diszciplína megfoganásakor dobhatja a célpont, s ha ez sikertelen, akkor önnön erejéből képtelen szabadulni."
+        },
+        {
+            "type": "rule",
+            "title": "Levitáció",
+            "rows": [
+                [
+                    "Típus",
+                    "Test"
+                ],
+                [
+                    "Ψp",
+                    "8/kör"
+                ],
+                [
+                    "A meditáció ideje",
+                    "1 szegmens"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A diszciplína az Auraátalakítás egyik igen komoly szintű alkalmazása. A Slan a rövid pillanatnyi meditáció után Aurájába hihetetlen mennyiségű szellemi energiát zúdít, hogy az éteri létezésből egyfajta anyagi valót kölcsönözzön neki. Ezzel az alkalmazással a Slan képes a szokásos felületek helyett a tárgyak vagy élőlények Auráját alkalmazni kiindulási pontként ugrásaihoz, nekirugaszkodásaihoz, mivel az immáron szilárd Aurája számára ezek a csak a Belső Síkokon létező lenyomatok ha nem is teljesen szilárd, de egyfajta ingoványos támasztékként szolgálnak számára."
+        },
+        {
+            "type": "paragraph",
+            "text": "Így az alkalmazó képes rövid ideig futni akár a víz felületén, vagy esetleg egy sövényorom tetején. A diszciplína talán leghátborzongatóbb megnyilvánulása, mikor a Slan egy embertömeg felett halad át, szinte alig érintve a lábaival a vállakat, fejeket."
+        },
+        {
+            "type": "paragraph",
+            "text": "A Slan haladási sebessége teljesen megegyezik a normál képességeivel, illetve a diszciplína hatása alatt ugrásainak magassága és hossza sem változik."
+        },
+        {
+            "type": "rule",
+            "title": "Tetszhalál",
+            "rows": [
+                [
+                    "Típus",
+                    "Test"
+                ],
+                [
+                    "Ψp",
+                    "6/óra"
+                ],
+                [
+                    "A meditáció ideje",
+                    "10 kör"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A testben áramló energiák irányításának tökélyre vitele, az életerő felszítása, lelassítása az alkalmazó saját testében. Az alkalmazás segítségével lehetőség nyílik a test élettani folyamatainak felfüggesztésére."
+        },
+        {
+            "type": "paragraph",
+            "text": "Ilyenkor az alkalmazó semmiféle életjelet nem ad, nincs szüksége táplálékra vagy folyadékra, de még levegőre sem. Mozdulatlanná válik – olyan ez, mint a halál dermedtsége – és kihűl, a tudati folyamatok megszűnnek, az elme is egy visszahúzódott állapotba dermed, csupán a Statikus pajzs alkalmazás marad meg, épp ezért a Tetszhalál felfedezése csak Auraérzékelésével lehetséges, igaz az már 1 E-vel is kimutatja a jelenlévő lelket."
+        },
+        {
+            "type": "paragraph",
+            "text": "Ezzel szemben az Asztrál- és Mentálsíkon nem alszik, így az alkalmazó továbbra sem lehet alanya a Természeti Anyag Mágiájának. Az alkalmazónak előre el kell döntenie a Tetszhalál időtartamát, mert nincs rá mód, hogy az időtartam lejárta előtt félbeszakítsák a diszciplínát."
+        },
+        {
+            "type": "paragraph",
+            "text": "Tetszhalál állapotában semmiféle fájdalom (Fp) nem okozható, és a testet ért (Ép) sérülések feleződnek. Az egyetlen olyan diszciplína ez, melynek alkalmazása során valóban regenerálódik a test. Minden Tetszhalálban töltött óra alatt 1 Ép regenerálódik – azaz gyógyul magától. Maximuma fölé sem az Ép, sem az Fp nem emelkedhet. A szervezetbe került mérgek hatóideje háromszorosára lassul."
+        }
+    ]
+}

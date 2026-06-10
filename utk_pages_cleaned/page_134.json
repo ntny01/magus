@@ -1,0 +1,469 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": false,
+    "section_title": "",
+    "content_blocks": [
+        {
+            "type": "paragraph",
+            "text": "az átlagos szituációt mutatja. Amennyiben a KM úgy dönt, hogy a helyzet valamiben eltér a megszokottól (a karakternek rengeteg ideje van felkészülni, vagy pont fordítva, sürgeti az idő; alaposan felszerelkezett a szükséges holmikkal, vagy ott helyben kell tolvajkulcsot rögtönöznie), úgy belátása szerint pozitív vagy negatív módon befolyásolhatja a karakter próbáját.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "Ha a karakter képzettsége alkalmazása során ellenféllel kerül szembe, és el kell dönteni, hogy melyikük alkalmazza eredményesebben képzettségét, akkor mindkét félnek Tulajdonságpróbát kell tennie a képzettség leírásában szereplő módosítókkal, mely próbához a képzettebb karakter minden általa ismert plusz szint után, mellyel ellenfele nem bír +3 módosítót kap.",
+            "title": "Vetélkedő képzettségpróba",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "Tehát, ha egy Csomózás képzettség 2. fokával bíró karakter megkötöz egy Szabadulóművészet 1. fokkal rendelkező karaktert, akkor mindketten próbát tesznek, s a képzettebb karakter (a csomózó) +3 pontot ad a Tulajdonságpróbájához. A fogolynak viszonylag kevés esélye van szabadulni, hacsak nem elég tehetséges (nem elég magas mondjuk az Ügyessége).",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "Ha a köteléket megkötő karakter még képzettebb, mondjuk 3. fokon képzett, míg ellenfele még mindig csak 1. fokon képzett szabaduló-művész, akkor már nem +3, hanem",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "+6 módosító jár a próbájához, illetve ekkor már a képzettsége is ad még +1 pontot (3. fokú alkalmazó). Természetesen az a karakter nyeri a vetélkedést, aki nagyobb sikert ér el a Tulajdonságpróbán.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "Természetesen abban az esetben, ha nem efféle vetélkedés, hanem két alkotó képzettség eredményének összehasonlításáról van szó, a vetélkedést eldöntő próba előtt a KM még dönthet úgy, hogy egy szimpla képzettségpróbával kideríti, hogy egyáltalán a karakterek képesek voltak-e végrehajtani a feladatot vagy valamelyikük már alaphelyzetben is felsült.",
+            "title": "Alkotó képzettségek összehasonlítása",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "A százalékos képzettségeknél hasonlóképpen a százalékdobás alkalmával nagyobb sikert elért karakter a győztes. Képzetlenség esetén a képzetlen karakter képzettségi foka 0-nak számít, azaz az 1. fokon képzett karakter is már +3 módosítóval dobhatja ellene a próbát. A százalékos képzettségek esetén a képzetlen karakter csakis a KM által választott Tulajdonságának értékével vesz részt a próbán.",
+            "title": "Százalékos képzettségek és képzetlenség",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "Annak eldöntése, hogy az adott szituációban a játékosok milyen képzettségeiket vethetik be egymás ellen, illetve, hogy a képzetlen karakter dobhat-e próbát, mindig a KM feladata.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "Fontos még megjegyeznünk, hogy abban az esetben, ha a karakter bármely a képzettség alkalmazásához szükséges Tulajdonsága lecsökken, a karakter nem képes az adott képzettség használatára.",
+            "title": "Képzettség használata csökkent Tulajdonság esetén",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "table",
+            "text": "",
+            "title": "Harci képzettségek",
+            "headers": [
+                "képzettség",
+                "1. fok",
+                "2. fok",
+                "3. fok",
+                "4. fok",
+                "5. fok",
+                "Nehéz.",
+                "Erős",
+                "Gyenge",
+                "Tulajdonság"
+            ],
+            "rows": [
+                [
+                    "Fájdalomtűrés",
+                    "1",
+                    "5",
+                    "10",
+                    "20",
+                    "30",
+                    "II",
+                    "—",
+                    "—",
+                    "Áks, Akr"
+                ],
+                [
+                    "Fegyverhasználat",
+                    "2",
+                    "8",
+                    "15",
+                    "30",
+                    "45",
+                    "III",
+                    "—",
+                    "—",
+                    "Erő, Gy, Ügy, Érz"
+                ],
+                [
+                    "Fegyverismeret",
+                    "1",
+                    "5",
+                    "10",
+                    "20",
+                    "30",
+                    "II",
+                    "—",
+                    "—",
+                    "Int, Érz, —"
+                ],
+                [
+                    "Hadvezetés",
+                    "2",
+                    "8",
+                    "15",
+                    "30",
+                    "45",
+                    "III",
+                    "—",
+                    "Lélekt. és Térkép.",
+                    "Int, Krz, —"
+                ],
+                [
+                    "Harci láz",
+                    "1",
+                    "5",
+                    "10",
+                    "20",
+                    "30",
+                    "II",
+                    "—",
+                    "—",
+                    "Áks, Egs"
+                ],
+                [
+                    "Harcművészet",
+                    "3",
+                    "10",
+                    "20",
+                    "35",
+                    "55",
+                    "IV",
+                    "—",
+                    "—",
+                    "Erő, Gy, Ügy, Akr"
+                ],
+                [
+                    "Harctéri gyakorlat",
+                    "1",
+                    "5",
+                    "10",
+                    "20",
+                    "30",
+                    "II",
+                    "—",
+                    "—",
+                    "Gy, Ügy, Érz"
+                ],
+                [
+                    "Kétkezesharc",
+                    "2",
+                    "8",
+                    "15",
+                    "30",
+                    "45",
+                    "III",
+                    "Fegyverh.",
+                    "—",
+                    "Gy, Ügy, —"
+                ],
+                [
+                    "Pajzshasználat",
+                    "1",
+                    "5",
+                    "10",
+                    "20",
+                    "30",
+                    "II",
+                    "—",
+                    "—",
+                    "Erő, Ügy, Áks"
+                ],
+                [
+                    "Pusztakezes harc",
+                    "1",
+                    "5",
+                    "10",
+                    "20",
+                    "30",
+                    "II",
+                    "—",
+                    "—",
+                    "Erő, Ügy, —"
+                ],
+                [
+                    "Pusztítás",
+                    "2",
+                    "8",
+                    "15",
+                    "30",
+                    "45",
+                    "III",
+                    "Fegyverh.",
+                    "Élettan",
+                    "Erő, —"
+                ],
+                [
+                    "Taktika",
+                    "1",
+                    "5",
+                    "10",
+                    "20",
+                    "30",
+                    "II",
+                    "—",
+                    "—",
+                    "Érz, —"
+                ],
+                [
+                    "Vakharc",
+                    "2",
+                    "8",
+                    "15",
+                    "30",
+                    "45",
+                    "III",
+                    "—",
+                    "—",
+                    "Érz, —"
+                ],
+                [
+                    "Vértviselet",
+                    "1",
+                    "5",
+                    "10",
+                    "20",
+                    "30",
+                    "II",
+                    "—",
+                    "—",
+                    "Erő, —"
+                ]
+            ]
+        },
+        {
+            "type": "table",
+            "text": "",
+            "title": "Egyéb képzettségek",
+            "headers": [
+                "képzettség",
+                "1. fok",
+                "2. fok",
+                "3. fok",
+                "4. fok",
+                "5. fok",
+                "Nehéz.",
+                "Erős",
+                "Gyenge",
+                "Tulajdonság"
+            ],
+            "rows": [
+                [
+                    "Álcázás/álruha",
+                    "1",
+                    "5",
+                    "10",
+                    "20",
+                    "30",
+                    "II",
+                    "Kultúra",
+                    "—",
+                    "Ügy, Érz, —"
+                ],
+                [
+                    "Hamisítás",
+                    "2",
+                    "8",
+                    "15",
+                    "30",
+                    "45",
+                    "III",
+                    "Lásd a leírást!",
+                    "—",
+                    "Ügy, Int, —"
+                ],
+                [
+                    "Jelbeszéd",
+                    "1",
+                    "5",
+                    "10",
+                    "20",
+                    "30",
+                    "II",
+                    "—",
+                    "—",
+                    "Int, Érz, —"
+                ],
+                [
+                    "Kocsmai verekedés",
+                    "1",
+                    "3",
+                    "8",
+                    "15",
+                    "25",
+                    "I",
+                    "—",
+                    "—",
+                    "Erő, Gy, Ügy"
+                ],
+                [
+                    "Méregkeverés/semlegesítés",
+                    "1",
+                    "5",
+                    "10",
+                    "20",
+                    "30",
+                    "II",
+                    "Herbalizmus",
+                    "Alkimia",
+                    "Int, —"
+                ],
+                [
+                    "Orvtámadás",
+                    "1",
+                    "5",
+                    "10",
+                    "20",
+                    "30",
+                    "II",
+                    "Fegyverhaszn. v. Pusztakez. harc",
+                    "Élettan",
+                    "Ügy, —"
+                ],
+                [
+                    "Kínzás",
+                    "1",
+                    "5",
+                    "10",
+                    "20",
+                    "30",
+                    "II",
+                    "—",
+                    "—",
+                    "Ügy, Int"
+                ],
+                [
+                    "Szabadulóművészet",
+                    "2",
+                    "8",
+                    "15",
+                    "30",
+                    "45",
+                    "III",
+                    "Csomózás",
+                    "Zárnyit.",
+                    "Ügy, —"
+                ],
+                [
+                    "Szerencsejáték",
+                    "1",
+                    "5",
+                    "10",
+                    "20",
+                    "30",
+                    "II",
+                    "—",
+                    "—",
+                    "Ügy, Int"
+                ],
+                [
+                    "Csapdakészítés",
+                    "1 Kp = 3%",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "I",
+                    "—",
+                    "—",
+                    "Ügy, Érz, —"
+                ],
+                [
+                    "Lopódzás",
+                    "1 Kp = 3%",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "I",
+                    "—",
+                    "—",
+                    "Ügy, Érz, —"
+                ],
+                [
+                    "Rejtőzködés",
+                    "1 Kp = 3%",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "I",
+                    "—",
+                    "—",
+                    "Ügy, Érz, —"
+                ],
+                [
+                    "Rejtekhely kutatás",
+                    "1 Kp = 3%",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "I",
+                    "—",
+                    "—",
+                    "Ügy, Érz, —"
+                ],
+                [
+                    "Zárnyitás",
+                    "1 Kp = 3%",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "I",
+                    "—",
+                    "—",
+                    "Ügy, Érz, —"
+                ],
+                [
+                    "Zsebmetszés",
+                    "1 Kp = 3%",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "I",
+                    "—",
+                    "—",
+                    "Ügy, Érz, —"
+                ],
+                [
+                    "Veszélyérzék",
+                    "1 Kp = 3%",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "I",
+                    "—",
+                    "—",
+                    "Ügy, Érz, —"
+                ]
+            ]
+        }
+    ]
+}

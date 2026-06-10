@@ -1,0 +1,78 @@
+{
+    "is_new_chapter": true,
+    "chapter_title": "HARCOSOK",
+    "is_new_section": true,
+    "section_title": "A Harcosok Képzettségei",
+    "content_blocks": [
+        {
+            "type": "paragraph",
+            "text": "A harcosok számos képzettséggel rendelkeznek, amelyek segítik őket a csatában és a túlélésben. Ezek a képzettségek a karakter fejlődésével válnak elérhetővé, és alapvető fontosságúak a túléléshez Ynev veszélyes világában."
+        },
+        {
+            "type": "rule",
+            "title": "Fegyverhasználat",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A Fegyverhasználat képzettség a harcos alapvető képessége. Lehetővé teszi a különböző fegyvertípusok hatékony kezelését. Minden fegyvertípushoz (pl. kard, íj, fejsze) külön képzettségi szint tartozik, melyek a következők:"
+        },
+        {
+            "type": "rule",
+            "title": null,
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "Alap: +1 Támadás, +1 Védekezés."
+        },
+        {
+            "type": "paragraph",
+            "text": "Haladó: +2 Támadás, +2 Védekezés, +1 Sebzés."
+        },
+        {
+            "type": "paragraph",
+            "text": "Mester: +3 Támadás, +3 Védekezés, +2 Sebzés."
+        },
+        {
+            "type": "paragraph",
+            "text": "A képzettség szintje a karakter tapasztalati pontjainak gyűjtésével növelhető."
+        },
+        {
+            "type": "table",
+            "title": "Harci Manőverek",
+            "headers": [
+                "Manőver neve",
+                "Képzettség szint",
+                "Leírás"
+            ],
+            "rows": [
+                [
+                    "Pajzsütés",
+                    "Alap",
+                    "Célpont elkábítása"
+                ],
+                [
+                    "Szúrás",
+                    "Haladó",
+                    "Kritikus sebzés esélye"
+                ],
+                [
+                    "Körbeforgás",
+                    "Mester",
+                    "Több ellenfél támadása"
+                ]
+            ]
+        },
+        {
+            "type": "flavor_text",
+            "text": "'A penge éneke a csata zaja, a vér illata a győzelem íze.' - Ismeretlen harcos mondása."
+        }
+    ]
+}

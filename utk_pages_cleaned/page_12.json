@@ -1,0 +1,89 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": null,
+    "is_new_section": false,
+    "section_title": null,
+    "content_blocks": [
+        {
+            "type": "paragraph",
+            "text": "a fegyver támadó értéke és a fegyveres képzettségekből adódó bónuszok."
+        },
+        {
+            "type": "rule",
+            "title": "Tapasztalati pont (Tp)",
+            "rows": [
+                [
+                    ",",
+                    ",",
+                    ","
+                ]
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Tapasztalati szint (TSZ)",
+            "rows": [
+                [
+                    ",",
+                    ",",
+                    ","
+                ]
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Tulajdonság",
+            "rows": [
+                [
+                    ",",
+                    ",",
+                    ","
+                ]
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Tulajdonságpróba",
+            "rows": [
+                [
+                    ",",
+                    ",",
+                    ","
+                ]
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Ultrahatás",
+            "rows": [
+                [
+                    ",",
+                    ",",
+                    ","
+                ]
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Ügyesség (Ügy)",
+            "rows": [
+                [
+                    ",",
+                    ",",
+                    ","
+                ]
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Védő érték (VÉ)",
+            "rows": [
+                [
+                    ",",
+                    ",",
+                    ","
+                ]
+            ]
+        }
+    ]
+}

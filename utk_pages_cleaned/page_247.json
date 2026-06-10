@@ -1,0 +1,45 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": true,
+    "section_title": "Fénymágia",
+    "content_blocks": [
+        {
+            "type": "rule",
+            "title": "Nyelvzagylás",
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "title": "Rejtett üzenet",
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "title": "Távoli üzenet",
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "title": "Zajkeltés",
+            "rows": []
+        },
+        {
+            "type": "flavor_text",
+            "text": "„Mikor a három kalandozó mozgásba lendült, a lépcsőn és a lépcső körül húszegynehány fegyveres várakozott. Pihent, a terepet jól ismerő férfiak voltak, kemény ellenfelek bárki számára – a támadás azonban készületlenül érte őket, és pillanatnyi döbbenetükben ebben a helyzetben felért egy vereséggel. Gorduin ugrás közben szabadjára engedte energiáit. A búvárok vakító villanást láttak, aztán ahogy a manaörvény lecsapott rájuk, nem láttak többé semmit: a varázslat éteri szikrákká robbantotta a fényugarakat, a homály astesi-maszkját erőltette a körülállókra, és utat nyitott a bárd számára a kapuhoz, a feketébe öltözött nő felé. A lándzsások hátrálni kezdtek, ahogy a csatornára nyíló kaput roppant hullám szakította be, és piszkosfehér fajtájukat, ítéletnapi dübörgéssel zúdult rájuk. A canoce Liuval és a csónakosai együtt eltűnt, mintha sosem lett volna. Az áradat tíz lábbal a lépcsősor fölé magasodott, tucatnyi fiók-hullámot növesztett, mintha egy elfeledett istenség nyújtaná szószagú csápjait a narvaniak felé – aztán jéggé dermedt, és ahogy összeroskadt, húszlábnyi körben terítette szét törékeny szilánkjait. Az örök többsége mostanra a földre kushadt, úgy fohászkodott gyors és könnyű halálért; Kalidart, aki nehéz kardját törve át a parafüggönyön, mindössze négyen próbálták megállítani. A kőrgáncsot vetett az elsőnek, balkezes ökölcsapással terítette le a másodikat, és addig hátrált a megmaradt kettő elől, míg meg nem hallotta a kahrei nyílpuskája húrjának páros pendülését: a tompa hegyű vesszők, melyek a szokásos sebesség harmadával csapódtak célba, mindkét lándzsást az eszméletlenség homályába taszították. Gorduin megtorpant a lépcsősor tetején, és visszanézett arra, amerről jöttek. A hullám látomása mostanra szertefoszlott…”"
+        },
+        {
+            "type": "flavor_text",
+            "text": "Wayne Chapman – Karnevál"
+        },
+        {
+            "type": "rule",
+            "text": "A Fénymágia az Elemi Mágia változata, mely a fényt nem elemi formájában idézi meg, hanem a bárd kívánta mint szerint alakítja át. Így félrevezethető az érzékelés, hiszen csupán a szem látja oda a fényárnyalékokból szőtt képet, ahol valójában nincs ott. Az efféle érzékcsalódást nevezzük illúziónak. I. Az illúziók varázslatai soha sem hatnak másra, csak a fénysugarakra, s bár a varázslatok Erőssége egységesen 1 E, ellenük Mágiaellenállásnak helye nincs. II. Minden, a bárdok által létrehozott kép valódi természete könnyen felismerhető, ha valaki megkísérli megérinteni őket: keze ugyanis átsiklik a fényjátékon. Az illúzió felismerése azonban nem jelenti azt, hogy a kép eltűnik. Az illúzió továbbra is ott marad, s a mögötte található tárgyakat eltakarja. III. Ahhoz, hogy valaki első pillantásra felismerje az apró pontatlanságokat a fény alkotta képben, s rájöjjön illúzió voltára, igen kicsi az esély. Sőt, ha a bárd kellő időt fordít a varázslat megformálására, még a legfigyelmesebb szemlélőt is becsaphatja. IV. Annak eldöntésére, hogy valaki gyanút fog-e az illúzió láttán, Érzékeléspróbát köteles dobni a KM által meghatározott módosítókkal."
+        },
+        {
+            "type": "rule",
+            "title": "Alakváltás",
+            "rows": []
+        }
+    ]
+}

@@ -1,0 +1,263 @@
+{
+    "is_new_chapter": true,
+    "chapter_title": "Sötét bárd",
+    "is_new_section": true,
+    "section_title": "A Vándorló Dalnok képzettségei 1. Tapasztalati szinten:",
+    "content_blocks": [
+        {
+            "type": "paragraph",
+            "text": "Lovaikkal különös kapcsolat fűzi őket össze, ha gazdájukat elveszítik, a hűséges állatok sohasem engednek a későbbiekben mást a nyergükbe.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "A vándor dalnok különleges előnyei és hátrányai a bárdoknál leírtakon kívül: Semmilyen körülmények között nem vehetik föl az alábbi képzettségeket: Kínzás, Pusztítás, Orvtámadás, Méregkeverés/semlegesítés, Zsebmetszés.",
+            "title": "Vándor Dalnok képzettségi korlátozások",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "table",
+            "text": "",
+            "title": "",
+            "headers": [
+                "Képzettség",
+                "Fok"
+            ],
+            "rows": [
+                [
+                    "Fegyverhasználat (egykezes kardok)",
+                    "2. fok"
+                ],
+                [
+                    "Fegyverhasználat (íjak vagy számszeríjak)",
+                    "2. fok"
+                ],
+                [
+                    "Lovaglás",
+                    "3. fok"
+                ],
+                [
+                    "Idomítás",
+                    "2. fok"
+                ],
+                [
+                    "Állatismeret",
+                    "2. fok"
+                ],
+                [
+                    "Vadonjárás (mérsékelt égövi erdő)",
+                    "2. fok"
+                ],
+                [
+                    "Nyomolvasás",
+                    "2. fok"
+                ],
+                [
+                    "Herbalizmus",
+                    "1. fok"
+                ],
+                [
+                    "Legendaismeret",
+                    "2. fok"
+                ],
+                [
+                    "Művészetek (Éneklés)",
+                    "2. fok"
+                ],
+                [
+                    "Művészetek (Zenélés)",
+                    "2. fok"
+                ],
+                [
+                    "Tapasztalati mágia (Bárd)",
+                    "3. fok"
+                ],
+                [
+                    "Mászás",
+                    "+10%"
+                ],
+                [
+                    "Esés",
+                    "+10%"
+                ],
+                [
+                    "Akrobatika",
+                    "+10%"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A Vándorló Dalnok képzettségei, melyeket mesterétől az Oktatás képzettség 4. foka által nyújtott előnnyel tanulhat:",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "Akrobatika, Állatismeret, Csomózás, Értékbecslés, Esés, Fegyverhasználat, Hangutánzás, Harctéri gyakorlat, Herbalizmus, Idomítás, Kocsmai verekedés, Kultúra, Legendaismeret, Lélektan, Lopódzás, Lovaglás, Mászás, Művészetek (Éneklés), Művészetek (Zenélés), Párbaj, Rejtőzés, Szexuális kultúra, Tapasztalati mágia (bárd), Vadonjárás.",
+            "title": "Vándor Dalnok tanulható képzettségek",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "flavor_text",
+            "text": "Egyetlen szerepet játszanak: a kiismerhetetlen idegen titokzatos figuráját. Ő az, aki a viharban kacagva szaval, aki rózsát csempész a kiszemelt hölgy vánkosára, aki éjszakákon átívelő regéket kelt életre, s aki hidegvérrel vágja át egy szolgáló torkát, ha érdekei úgy kívánják.",
+            "title": "A Sötét Bárd jelleme",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "flavor_text",
+            "text": "A mágiában nem válogatósak, bármit felhasználnak, amiről úgy ítélik, hogy hasznukra lehet, de minden esetben meggondolják alkalmazását, s csak abban az esetben fordulnak a varázshoz, ha más módon nem találnak orvoslást problémájukra.",
+            "title": "A Sötét Bárd mágiahasználata",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "flavor_text",
+            "text": "A fegyverek tekintetében nem válogatósak, bár a ramierával majdnem mindannyian jól bánnak. A vérteket nem kedvelik, s ha mégis felöltenek valamit, akkor az általában valamely könnyű, míves láncing, amelyet érett egy bő, fekete selyemujjas.",
+            "title": "A Sötét Bárd felszerelése",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "A sötét bárd képzettségei 1. Tapasztalati szinten:",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "table",
+            "text": "",
+            "title": "",
+            "headers": [
+                "Képzettség",
+                "Fok"
+            ],
+            "rows": [
+                [
+                    "Fegyverhasználat (egykezes kardok)",
+                    "2. fok"
+                ],
+                [
+                    "Fegyverhasználat (tör jellegű fegyverek)",
+                    "2. fok"
+                ],
+                [
+                    "Kínzás",
+                    "2. fok"
+                ],
+                [
+                    "Orvtámadás",
+                    "2. fok"
+                ],
+                [
+                    "Tapasztalati mágia (bárd)",
+                    "3. fok"
+                ],
+                [
+                    "Élettan",
+                    "2. fok"
+                ],
+                [
+                    "Írás/olvasás",
+                    "2. fok"
+                ],
+                [
+                    "Udvari Etikett",
+                    "2. fok"
+                ],
+                [
+                    "Lélektan",
+                    "1. fok"
+                ],
+                [
+                    "Vallásismeret (Ranagol)",
+                    "1. fok"
+                ],
+                [
+                    "Álcázás/álruha",
+                    "2. fok"
+                ],
+                [
+                    "Művészetek (Éneklés)",
+                    "2. fok"
+                ],
+                [
+                    "Művészetek (Zenélés)",
+                    "2. fok"
+                ],
+                [
+                    "Művészetek (Szobrászat)",
+                    "1. fok"
+                ],
+                [
+                    "Művészetek (Irodalom)",
+                    "1. fok"
+                ],
+                [
+                    "Lopódzás",
+                    "+10%"
+                ],
+                [
+                    "Rejtőzködés",
+                    "+10%"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A sötét bárd képzettségei, melyeket mesterétől az Oktatás képzettség 4. foka által nyújtott előnnyel tanulhat:",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "Fegyverhasználat, Vallásismeret, Kínzás, Lélektan, Művészetek, Színészet, Álcázás/álruha, Orvtámadás, Lopódzás, Rejtőzés, Kétkezes harc, Kultúra, Élettan, Írás/olvasás, Legendaismeret, Történelem, Udvari etikett, Tapasztalati mágia (bárd)",
+            "title": "Sötét Bárd mestertől tanulható képzettségek",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "flavor_text",
+            "text": "Ha nincsenek is számottevő túlsúlyban, akadnak azért Yneven olyan bárdok is, akik nem tekintik magukra névést kötelező érvényűnek azokat a szabályokat, amelyeket a pyarroni istenek adtak alattvalóiknak. Gorvik, netán a sötét Krán a hazájuk, Ranagol fősegét hirdetik, s az ő eszméi szerint intézik evilági ügyleteiket. Hideg fejjel készítik terveiket, és biztos kézzel hajtják végre azokat. Nem hatódnak meg a könnyektől és nem bizonytalanodnak el, ha mások szemében szenvedést látnak. Dalalaikkal, előadásaikkal saját útjukat egyengetik, művészetüket a sötétség szolgálatába állították.",
+            "title": "A Sötét Bárdok eredete",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "flavor_text",
+            "text": "Céltudatos, erős akaratú férfiak és nők, akik csak a velük egyenrangúaktól fogadnak el parancsot vagy tanácsot. Eszköztárukban éppúgy megtalálható az orgyilkosság, mint a mérgezés és a hazugság. Káprázatos költeményeikkel, dalaikkal, történeteikkel ellenfeleik közelébe férkőznek, bizalmat, szimpátiát keltenek önmaguk iránt, hogy azután lecsaphassanak.",
+            "title": "A Sötét Bárdok módszerei",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "flavor_text",
+            "text": "A sötét bárdok egy különleges csoportja a magukat hőspoétáknak is nevező gorviki Dea Macula Lovagrend. Csak nevükben viselik az igazi lovagrendekkel való hasonlatosságot, valójában eltorzult értékrendű, dekadens művészet testvérisége, akik a szobrászat egy igen hátborzongató emberi mércével már-már felfoghatatlan formáját űzik. Az államalapító Amanovik intelmeinek halálmenőként történő megjelenítését tekintik művészetük fő ihletőjének, s alkotásaikhoz általuk kiválasztott és meggyilkolt emberek testét használják föl.",
+            "title": "Dea Macula Lovagrend",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "flavor_text",
+            "text": "Vannak, akik hajlamosak azt gondolni, hogy az ilyen sötét lelkületű távol áll minden, a szép iránti fogékonyság. Éppen ellenkezőleg. Az ilyen dalnokok talán mindenki másnál inkább tekintik művésznek magukat, s roppant energiákat fektetnek abba, hogy mindaz, amit csinálnak, harmonikus, szép és legfőképpen stílusos legyen.",
+            "title": "A Sötét Bárdok művészete",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "flavor_text",
+            "text": "Az obeliszk csúcsán két ruhátlan alak függött, két vértől vöröslő testű, fénytelen szemű gyermek. Bal csuklójuknál és bokájuknál összekötözték, azután módszeres kegyetlenséggel kiszúrták őket, mint egy csillogó kígyók seregétől környékezett, magasba törőkre vágyóak. Nogren, bár volt alkalma hozzáedződni az efféle megpróbáltatásokhoz, keményen markolta a kantárt, és érezte, hogy torkában felgyűlik a keserű nyál. Az emberi gyarlóság összes megnyilvánulása volt az értelmetlen pusztítást gyűlölte leginkább. Nem voltak kétségei",
+            "title": "Hangulati leírás",
+            "headers": [],
+            "rows": []
+        }
+    ]
+}

@@ -1,0 +1,112 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": true,
+    "section_title": "A Fekete mágia",
+    "content_blocks": [
+        {
+            "type": "paragraph",
+            "text": "Az okkult tanok szerint a mágia egyetemes, hogy fekete-e vagy fehér, csupán a felhasználás módja, a mögöttes szándék határozza meg. A mágiaelmélet pyarroni mágusmesterei szerint a mágiát építő célzattal, alkotásra, javító és segítő célzattal kell alkalmazni; a pusztítás, rombolás, ártalom a Fekete Út ismérvei. A kevésbé szigorú tanok csak a természet egyetemes törvényeinek megszegését vélik tilalmasnak, elfogadva, hogy a harc, a kiválasztódás, a jobb és erősebb győzelme a természet szerint való."
+        },
+        {
+            "type": "paragraph",
+            "text": "Mivel a játékban szereplő karakterek varázslók, s nem mágusmesterek – hatalmukat is csak ennek megfelelően kapják – megítélésükkor a kevésbé szigorú nézeteket ildomos alkalmazni. Így a játékosok az ideológiától függetlenül mit tekintsenek Fekete mágiának, arra segítséget nyújtanak a következők."
+        },
+        {
+            "type": "paragraph",
+            "text": "Fekete mágia számít minden varázslat és mágikus praktika, mely..."
+        },
+        {
+            "type": "paragraph",
+            "text": "...a legcsekélyebb mértékben is megbolygatja a lélekvándorlás törvényeit;"
+        },
+        {
+            "type": "paragraph",
+            "text": "...erőszakkal kiszakítja a lelket a testből, avagy más lelket, lényt plántál bele, a test igazi tulajdonosának akarata ellenére;"
+        },
+        {
+            "type": "paragraph",
+            "text": "...romboló, ártalmas hatást hoz létre közvetlenül a testen belül (méregmágia, rontások, betegségmágia);"
+        },
+        {
+            "type": "paragraph",
+            "text": "...közvetlenül kivonja az életerőt (Ép) a testből;"
+        },
+        {
+            "type": "paragraph",
+            "text": "...az élőlények tömegei (vagy felesleges) pusztulását vonja maga után, figyelmen kívül hagyva a „csak a kiszemelt vadat lődd ki!” íratlan szabályát;"
+        },
+        {
+            "type": "paragraph",
+            "text": "...szövegében külön feltüntettük (pl. a Kisajtolás pszi-diszciplína.)"
+        },
+        {
+            "type": "paragraph",
+            "text": "Arra nézvést, hogy az adott praktika Fekete mágiának minősül-e vagy sem, mindig a KM szava a döntő!"
+        },
+        {
+            "type": "paragraph",
+            "text": "Ősi igazság a titkos művészetekben, hogy a Fekete mágia visszahat alkalmazójára. Ez persze nem egyik pillanatról a másikra következik be, és nem is befolyásolja a varázslatok sikerét. A Fekete mágia rendszeres használata módszeresen rombolja a varázsló személyiségét, nyomot hagy auráján, Asztráltestén, idővel a Zónáján és végül fizikai testén is."
+        },
+        {
+            "type": "paragraph",
+            "text": "A legnagyobb változást természetesen azokban okozza, akik személyisége ellentétes az efféle praktikákkal. Hatására jelentősen megváltozik érzelmi kiegyensúlyozottságuk, bizonytalanná, labilissá válnak."
+        },
+        {
+            "type": "rule",
+            "title": "Asztrálképesség csökkenése Fekete mágia használatakor",
+            "headers": [
+                "Jellemző",
+                "Hatás"
+            ],
+            "rows": [
+                [
+                    "Életet kedvelő karakterek",
+                    "Minden alkalommal 1 pontot veszítenek Asztrálképességükből. Az elvesztett pontok visszatérnek: minden eltelt nappal egy."
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A csökkenő Asztrállal a karakter értelemszerűen jobban kiteszi magát a különféle asztrális befolyásolások hatásainak, ugyanakkor környezetének változásaira is sokkal hevesebben, türelmetlenebbül reagál, érzelmileg kiszolgáltatottabbá válik. Emellett pedig a varázsló Asztrálcsökkenés miatt időlegesen elveszítheti egyes képességeit, illetve alacsonyabb szinten képes csak alkalmazni a vonatkozó Tulajdonságtól függő képzettségeit."
+        },
+        {
+            "type": "paragraph",
+            "text": "Természetesen a KM feladata, hogy az ily módon megváltozott Asztrálú karakterrel folyamatosan éreztesse ennek hátrányait, olyan – esetleg szélsőséges – helyzetekbe hozva,"
+        },
+        {
+            "type": "paragraph",
+            "text": "amelyek szemléletesen érzékeltetik, hogy alaposan felborult a világhoz való viszonya. Minden elvett Asztrálpróba kényelmetlen helyzetbe hozhatja az adott játékost, neki nem tetsző cselekedethez vezethet. (Eltúlzott vagy megfontolatlan reakciók, dühroham stb., ösztönösen rátámad a sarok mögül előbukkanó társára, vagy vérlázító sértésnek vesz egy szurkálódó megjegyzést is.)"
+        },
+        {
+            "type": "paragraph",
+            "text": "Csupán azok mentesülnek ezen hátrányok hatásai alól, akik tudatosan használják a Fekete mágiát és jellemükben szerepel a Halál. Rajtuk viszont letörölhetetlen nyomokat hagynak ezek a praktikák."
+        },
+        {
+            "type": "rule",
+            "title": "Rendszeres Fekete mágia használatának következményei",
+            "headers": [
+                "Használat gyakorisága",
+                "Következmény"
+            ],
+            "rows": [
+                [
+                    "Rendszeres (fél éven át havonta több alkalom)",
+                    "Asztráltestén nyomot hagy a sötét út. Ez Asztrálszemmel vagy auraérzékeléssel nyomban felfedezhető, ha a varázsló elvéti asztrális mágiaellenállását a diszciplína ellen. Az efféle leplezés Ynev számtalan országában (Pyarroni Államközösség, Shadon, Északi Szövetség) kellemetlenségekkel, zaklatással, kitoloncolással jár."
+                ],
+                [
+                    "Megrögzött (évente több tucat alkalom)",
+                    "Jellemét Halálra változtatja, s a Zónáját is megmérgezi, amit minden varázsló, valamint saját istene templomában minden pap rögvest megérez. Az efféle fekélyes Zóna már komoly riadalmat kelt: tulajdonosát nagy erőkkel igyekeznek megölni, jobb híján elűzni."
+                ],
+                [
+                    "Áttért a sötét útra (nap mint nap Fekete mágiát használ)",
+                    "Feketenemágusnak számít, s a sötét út már fizikai testén is nyomot hagy. Egészsége és Asztrálja 1k6-tal csökken (egyszerre, egyben dobandó!), ellenben Akaratereje megedződik, azaz ugyanennyivel nő (legfeljebb 20-ig). Ettől fogva nem is veszít Asztráljából, amikor Fekete mágiához nyúl. A változás nem zajlik le néhány nap alatt, annyi esztendeig tart, amennyivel a képzettségek csökkennek. Az ilyen feketemágusok már a gyakorlott szem is felismeri a jeleket: aszott bőr, vézna test, kegyetlen vonások, állandó tűzben égő szempár."
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "más"
+        }
+    ]
+}

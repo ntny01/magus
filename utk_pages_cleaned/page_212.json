@@ -1,0 +1,249 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": true,
+    "section_title": "Vértezetek",
+    "content_blocks": [
+        {
+            "type": "table",
+            "headers": [
+                "Név",
+                "MGT",
+                "VÉ",
+                "Súly",
+                "Ár"
+            ],
+            "rows": [
+                [
+                    "Pajzs, kicsi",
+                    "0",
+                    "20",
+                    "1",
+                    "6e"
+                ],
+                [
+                    "Pajzs, közepes",
+                    "-1",
+                    "35",
+                    "3",
+                    "1a 6e"
+                ],
+                [
+                    "Pajzs, nagy",
+                    "-3",
+                    "50",
+                    "6",
+                    "6a"
+                ],
+                [
+                    "Pajzs, pavaze",
+                    "-",
+                    "30/40",
+                    "6",
+                    "5a"
+                ],
+                [
+                    "Alkarvédő",
+                    "-",
+                    "15",
+                    "1",
+                    "5e"
+                ]
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Rendszerszabály",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "table",
+            "headers": [
+                "Vértezet",
+                "MGT",
+                "SFE",
+                "Súly",
+                "Ár",
+                "STP"
+            ],
+            "rows": [
+                [
+                    "fegyverkabát",
+                    "0",
+                    "1",
+                    "5",
+                    "1e",
+                    "20"
+                ],
+                [
+                    "bőrpáncél",
+                    "0",
+                    "1",
+                    "8",
+                    "3e",
+                    "20"
+                ],
+                [
+                    "keményített bőr-vértezet",
+                    "-2",
+                    "4",
+                    "7",
+                    "10a",
+                    "80"
+                ],
+                [
+                    "gyűrűs vértezet",
+                    "-1",
+                    "1",
+                    "12",
+                    "2a",
+                    "20"
+                ],
+                [
+                    "brigandin",
+                    "-2",
+                    "3",
+                    "15",
+                    "4a",
+                    "60"
+                ],
+                [
+                    "láncing",
+                    "-1",
+                    "2",
+                    "20",
+                    "10a",
+                    "40"
+                ],
+                [
+                    "sodronying",
+                    "-1",
+                    "3",
+                    "20",
+                    "12a",
+                    "60"
+                ],
+                [
+                    "pikkelyvért",
+                    "-2",
+                    "3",
+                    "16",
+                    "20a",
+                    "60"
+                ],
+                [
+                    "lemezvértezet",
+                    "-2",
+                    "2",
+                    "18",
+                    "40a",
+                    "40"
+                ],
+                [
+                    "rákozott páncél",
+                    "-2",
+                    "4",
+                    "25",
+                    "100a",
+                    "80"
+                ],
+                [
+                    "mellvért",
+                    "-3",
+                    "4",
+                    "20",
+                    "80a",
+                    "80"
+                ],
+                [
+                    "félvértezet",
+                    "-4",
+                    "5",
+                    "30",
+                    "120a",
+                    "100"
+                ],
+                [
+                    "teljes vértezet",
+                    "-5",
+                    "6",
+                    "35",
+                    "200a",
+                    "120"
+                ],
+                [
+                    "gladiátorvért",
+                    "-2",
+                    "4",
+                    "15",
+                    "-",
+                    "80"
+                ],
+                [
+                    "kráni vért",
+                    "-1",
+                    "4",
+                    "15",
+                    "-",
+                    "80"
+                ],
+                [
+                    "kardművész vért",
+                    "-1",
+                    "4",
+                    "15",
+                    "-",
+                    "80"
+                ]
+            ]
+        },
+        {
+            "type": "rule",
+            "text": "A legegyszerűbb páncélfajta a fegyverkabát. Az alapgondolat az, hogy a vastagon hordott ruha valamelyest felfogja, tompítja az ütéseket, vágásokat. A fegyverkabát – bár neve erre engedne következtetni – nem mindig ruhaposztóból készül. Bármilyen vastag anyag megteszi. Sokszor puha bőrből készült zekét, kabátot bélelnek ki úgy, hogy védjen a támadások ellen, illetve a sérülékenyebb helyeken, pl. hónaljban még láncszövet rátéttel is erősíthetik. A fegyverkabát alapvetően a felsőtestet védi. Elöl és hátul egyaránt védettséget nyújt. A kezet és a lábat a különböző darabok különbözőképpen védik. Ezen vért általában hosszú ujjú, így a karokat egészen csuklóig beborítja, de a combokra csak kis mértékben lóg rá. A nehezebb vértezetek alapjául szolgál a legtöbb esetben, így, ha említésre kerül az adott páncél leírásánál, hogy efféle alap szükségeltetik viseléséhez, akkor a vértezet változatlan MGT mellett a táblázatban feltüntetett SFE-nél egy ponttal kevesebb védelmet nyújt, ha hiányzik a fegyverkabát.",
+            "title": "Fegyverkabát",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "text": "A bőrpáncél, amit gyakran szegecsekkel vernek ki, puha, de vastag bőrből készül. Minthogy hajlékony, szabad mozgást tesz lehetővé, vastagsága viszont tompítja az ütések erejét, és átvágni sem könnyű. Nagy előnye a fegyverkabáttal szemben, hogy vékonyabb, hiszen a bőr erősebb, szívósabb anyag. A ráerősített szegecsek díszítő szerepe csak másodrendű. Elsősorban a vért keménységét, ellenállását fokozzák. Ezért van, hogy a bőrpáncélokon nem egyforma sűrűséggel helyezkednek el minden testtájon. Egyes vidékeken a harcosok alkarjukon olyan sűrűn szegecseltett bőrvértjeiket, hogy az alkalmas legyen fegyverek hárítására, védekezésre is. Játékszabály szempontjából az 2 ezüsttel megdrágítja a bőrvértet, de amikor a harcos viseli, úgy védekezhet, mintha alkarvédő lenne rajta. A bőrvért beborítja a teljes felsőtestet, elöl és hátul egyaránt. A karokat általában könyékig fedi, de készülnek hosszú ujjú és mellényszerű bőrpáncélok is.",
+            "title": "Bőrpáncél",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "text": "A bőrvértezet vastag bőrből készül, amit forró olajban kifőzve alakítanak a kívánt formára. Az olajfürdőtől a bőr kemény és merev lesz, ezért jobban ellenáll a támadásoknak. Sajnos a merevséggel az is együtt jár, hogy jobban akadályozza a mozgást. Leginkább mellvértet csinálnak kikeményített bőrből, de néha hátvértet, vállvértet is. Azonban leggyakoribb formája a nomád népeknél kifejlődött teljes testet takaró páncélzat, melyhez sisak is készül. Ez a páncél több rétegben tartalmazza a fent említett kifőzött, összeenyvezett bőrlapokat, emiatt igen vastag és ütésálló felületet alkot, melyet átvágni, vagy átdöfni is igen nehéz.",
+            "title": "Keményített bőrvértezet",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "text": "A gyűrűs vért a fegyverkabát illetve a bőrpáncél továbbfejlesztett, megerősített változata. Itt a vastag és viszonylag puha anyagra acélgyűrűket varrnak. Ezek a gyűrűk elegendőek ahhoz, hogy a vágásokat és szúrásokat megakasszák, az ütések erejét pedig a posztó-/vagy bőralap fogja meg. Mivel a gyűrűk nem fedik egymást, a pontosabb szúrások ellen nem véd olyan jól. Elkészítése viszonylag olcsó és egyszerű.",
+            "title": "Gyűrűs vért",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "text": "Az előkelő urak nem találták megfelelőnek a gyűrűsvértet – számukra készült a brigandin. Itt nem kívülről kerülnek a ruhára a fém részek, hanem két réteg szövet közé rögzítik azokat.",
+            "title": "Brigandin",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        }
+    ]
+}

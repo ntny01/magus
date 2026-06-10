@@ -1,0 +1,157 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": true,
+    "section_title": "Misztikus képzettségek",
+    "content_blocks": [
+        {
+            "type": "table",
+            "headers": [
+                "képzettség",
+                "1. fok",
+                "2. fok",
+                "3. fok",
+                "4. fok",
+                "5. fok",
+                "Nehéz.",
+                "Erős",
+                "Gyenge",
+                "Tulajdonság"
+            ],
+            "rows": [
+                [
+                    "Démonológia",
+                    "3",
+                    "10",
+                    "20",
+                    "35",
+                    "55",
+                    "IV",
+                    "Ősi nyelv",
+                    "—",
+                    "Int, Akr, —"
+                ],
+                [
+                    "Drágakőmágia",
+                    "3",
+                    "10",
+                    "20",
+                    "35",
+                    "55",
+                    "IV",
+                    "Szakma (Drágakőcsisz.)",
+                    "—",
+                    "Int, Akr, Aszt"
+                ],
+                [
+                    "Magasmágia",
+                    "3",
+                    "10",
+                    "20",
+                    "35",
+                    "55",
+                    "IV",
+                    "Ősi nyelv",
+                    "—",
+                    "Int, Akr, Aszt"
+                ],
+                [
+                    "Nekromancia",
+                    "3",
+                    "10",
+                    "20",
+                    "35",
+                    "55",
+                    "IV",
+                    "Élettan",
+                    "—",
+                    "Int, Akr, Aszt"
+                ],
+                [
+                    "Őselemi mágia",
+                    "3",
+                    "10",
+                    "20",
+                    "35",
+                    "55",
+                    "IV",
+                    "Ősi nyelv",
+                    "—",
+                    "Int, Akr, Aszt"
+                ],
+                [
+                    "Pszi",
+                    "3",
+                    "10",
+                    "20",
+                    "35",
+                    "55",
+                    "IV",
+                    "—",
+                    "—",
+                    "Int, Akr, Aszt"
+                ],
+                [
+                    "Rúnamágia",
+                    "3",
+                    "10",
+                    "20",
+                    "35",
+                    "55",
+                    "IV",
+                    "Ősi nyelv",
+                    "—",
+                    "Int, Akr, Aszt"
+                ],
+                [
+                    "Tapasztalati mágia",
+                    "3",
+                    "10",
+                    "20",
+                    "35",
+                    "55",
+                    "IV",
+                    "—",
+                    "—",
+                    "Int, Akr, Aszt"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "Harci képzettségek"
+        },
+        {
+            "type": "rule",
+            "title": "Fájdalomtűrés",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "Fájdalomtűrés (II-Akaraterő, Állóképesség)A képzettség birtokosa sokat megélt szívós ember. Képes a teste figyelmeztetéseként jelentkező fájdalmat rövid, vagy hosszú távon lebírni, hogy elméjét tisztán, testét pedig mozgásban tarthassa minél tovább.Az efféle tapasztalatokkal rendelkező karakter hosszútávfutó, harcos, esetleg sokat megélt szerencsevadász, vándor, aki nem riad vissza a hétköznapok jelentette fájdalmaktól, esetleg olyan személy, aki magasabb szinteken nemi gyakorlással már szinte teljesen képes elszakadni testétől, addig sanyargatva, kihasználva annak tartalékait, míg az egyáltalán lehetséges.1. fok A karakter durva közegben nőtt fel, esetleg rendszeresen kénytelen testi épségét kockára tenni, netalántán gyakran kénytelen fizikumát a végleteken túlhajszolva újra és újra felülmúlni önnön teljesítőképessége határait. A karakter bármely esetben, mely tőle Állóképesség vagy Akaraterő próbát követelne meg – kizárólag fizikai kimerültség, ájulás, egyéb fájdalmak elviselése, kínzás stb., de semmiféleképpen mágikus procedúrák, vagy más szellemi beavatkozások ellensúlyozására tett kísérlet esetén – az adott helyzetnél ismertetett módosítók mellett még egyszer -1 módosítóval megismételheti próbáját, az eredeti próba kudarca esetén.2. fok A karakter már igen széleskörű tapasztalatokkal bír bizonyos sérülések fájdalmának leküzdésében. A karakter egy sikeres Akaraterő, vagy Állóképesség próba után figyelmen kívül hagyhatja az Fp sérülések okozta negatív módosítókat. Természetesen újabb sérülések esetén a karakter újabb próbát köteles dobni. Az 1. fokán ismertetett „újradobást” a karakter már csupán az adott szituációban leírt módosítókkal hajtja végre.3. fok A képzettség ezen fokának birtokosa már igazi túlélő. A különböző fájdalmak leküzdésére szolgáló próbáját, illetve a fent ismertetett „újradobást” (az adott szituáció módosítói mellett) immáron +1 módosítóval végezheti el. A karakter egy +1 módosítóval végrehajtott sikeres próba esetén akkor is képes talpon maradni, ha Fp-je nullára csökkenne. Ebben az esetben azonban minden körben köteles elvégezni a próbadobást. Sikertelenség esetén azonnal elájul és meghal a dobás sikerétől függetlenül. Az ilyen szívós személy már könnyedén gyűri le a fájdalmat, Fp-hez szintenként +1 járul.4. fok A képzettség ilyen szintű birtokosa a vonatkozó Tulajdonságpróbáját immáron +2 módosítóval teheti, illetve a korábbiakhoz képest szintenként nem +1, hanem +2 Fp-t kap.5. fok A karakter szinte teljesen érzéketlen a fájdalomra, vonatkozó Tulajdonságpróbáját már +3 módosítóval dobhatja. Szintenként +3 Fp-t kap."
+        },
+        {
+            "type": "rule",
+            "title": "Fegyverhasználat",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "Fegyverhasználat (III)Fegyvereket az ősidők hajnalától Ynev minden értelmes faja forgat. Az első eszköz is, mely kóborló őseink kezébe akadt nem szerszám, hanem egy fegyver, kődarab vagy husáng volt. Az alábbiakban annyiféle képzettséget foglaltunk össze, ahány fegyvert a Hetedkor alkonyáig a kontinens földjén halandó kezébe akadhatott. Minden fegyvercsaládhoz, illetve fegyvertípushoz tartozik egy képzettség, mely a forgatásában való jártasság fokmérője. Amikor a játékos eldönti, hogy mely csoportba, illetve mely típusba tartozó fegyverrel kíván bánni, karaktere a Fegyverek táblázatban feltüntetettek közül válogathat. A képzettség alacsonyabb szintjein (1. és 2. fokon) a karakter még csak egy fegyvercsalád forgatásának alapvető technikáit sajátítja el, (a szúrás, vágás vagy zúzás a hasonló felépítésű fegyverek esetén hasonló alapokon nyugszik) azaz képessé válik a csatabárdok, a buzogányok vagy a tőrök stb. forgatására. Magasabb szinteken, a 3. foktól kezdődően pedig a képzettség egy adott harci eszköz használatának titkaiba, trükkjeibe avatja be birtokosát, aki az innen számított bónuszokat már csak a kiválasztott fegyverre kapja meg.A karakterlapon a képzettségek felsorolásakor a Fegyverhasználat képzettség mellet a forgatott fegyvercsaládot is fel kell tüntetni 1. és a 2. fokú alkalmazó esetén, 3. foktól pedig a választott fegyvert, melynek mesterévé kíván válni a játékos karaktere. Például: Fegyverhasználat 2. fok (buzogányok) majd Fegyverhasználat 3. fok (Shadileki buzogány)Ha a karakter nem bír a képzettséggel, akkor azon összecsapásokban, ahol fegyverrel vesz részt a harcban, sújtják a Képzetlen fegyverforgatásból eredő módosítók. (Lásd a Harcrendszer c. fejezetben a 167. oldalt)."
+        },
+        {
+            "type": "paragraph",
+            "text": "Fegyvercsaládok:"
+        },
+        {
+            "type": "paragraph",
+            "text": "1. Méretkategória: Ököl (a használatát ugyan a Pusztakezes harc képzettség oktatja, de álljon itt a jobb áttekinthetőség végett). — Puszta kéz (ököl, vasököl) *"
+        },
+        {
+            "type": "paragraph",
+            "text": "2. Méretkategória: – Tőr jellegű (kés, tőr, dzsambia, ököl-tőr, sequor stb.) ***"
+        }
+    ]
+}

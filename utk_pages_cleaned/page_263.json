@@ -1,0 +1,48 @@
+{
+    "is_new_chapter": true,
+    "chapter_title": "A Kis Arkánum Litániái",
+    "is_new_section": false,
+    "section_title": "",
+    "content_blocks": [
+        {
+            "type": "paragraph",
+            "text": "Ez alatt az idő alatt a pap szükségletei szinte nullára esnek vissza, így nem kötik le a test kívánalmai. Napi egy pohár víz és egy szelet kenyér elég táplálék az aszketizmussal töltött nap elején kell koncentrálnia. Az aszketizmust addig kell folytatnia, míg istene jónak látja. Véget vethet önnön sanyargatásának, ha jelet kap istenétől. A fohászt minden aszketizmussal töltött nap elején használni kell (ez teszi lehetővé, hogy a szervezet elviselje a kevés élelem és víz okozta ártalmakat). Az aszketizmus végeztével a pap bűnei megbocsátást nyernek, esetleg istene valamely küldetést ír elő számára, amit teljesítenie kell a bűnbocsánathoz."
+        },
+        {
+            "type": "rule",
+            "title": "Szent Fény",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "title": "Szertartás",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "title": "5. Áldás:",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "title": "6. Összeesketés:",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "title": "A halál szava",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "title": "Asztrál-/Mentálfátyol",
+            "headers": [],
+            "rows": []
+        }
+    ]
+}

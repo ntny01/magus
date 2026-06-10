@@ -1,0 +1,138 @@
+{
+    "is_new_chapter": true,
+    "chapter_title": "Tűz Elemi Varázslatok",
+    "is_new_section": true,
+    "section_title": "Általános Szabályok",
+    "content_blocks": [
+        {
+            "type": "rule",
+            "title": "Tűzlények Materializációja és Fenntartása",
+            "headers": [],
+            "rows": [
+                [
+                    "A tűzlények egy meghatározott ponton materializálódnak, és el sem hagyhatják azt, mivel akkor a tűzvarázsló nem képes összetartani, megsemmisül. Hasonló módon, ahogy akkor teszi, ha a tűzvarázslat megzavarják a koncentrációban. Mindegyik varázslat erősíthető. Ez szükséges is, mivel a lényeket eredetileg 1 E Östűz alkotja, mely 1 E Ösvízzel való találkozáskor kialszik. Egy E 6Mp-ba kerül. Ezen kívül a lények nagysága és/vagy ereje is növelhető az Erősséggel."
+                ]
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Tűzlények Sebezhetősége és Megsemmisülése",
+            "headers": [],
+            "rows": [
+                [
+                    "Csak ösvízzel és mágikus fegyverekkel sebezhetők, a mágikus fegyver sebzése feleződik. (Sebzhetők még Fehér lángú tűzzel is, lásd lent.) A fegyverrel való sebzés a lények anyagát nem károsítja, ám a formájukat megbontja. Ha egy lényt fegyverrel győznek le, akkor az adott E-nek megfelelően tűzkitöréssé alakul, majd anyaga visszatér a Tűz Őselemi Síkjára."
+                ]
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Tűzlények Irányítása és Koncentráció",
+            "headers": [],
+            "rows": [
+                [
+                    "A varázslat fenntartása folyamatos koncentrációt igényel, mivel a lények nem rendelkeznek saját tudattal, irányítani kell őket. Ha egy tűzvarázslót megzavarnak lényének irányításában (például Ép-sebet kap), akkor a lény formája megbomlik, tűzkitöréssé lesz, ami az adott E-nek megfelelően sebez."
+                ]
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Tűzlények Megsemmisülése Ösvízzel vagy Időtartam Lejárta Esetén",
+            "headers": [],
+            "rows": [
+                [
+                    "A tűzlények, ha Ösvízzel semmisítik meg őket, akkor természetesen nem változnak tűzkitöréssé, hanem az Ösvízzel együtt elenyésznek. Ugyanezt teszik, ha lejár a varázslat Időtartama, mely a tűzvarázsló Tapasztalati szintjétől függ. Ekkor a tűzlény minden, az időtartamot meghaladó új körben elveszt 1k6 Ép-t. A tűzvarázslónak óvatosan kell megsemmisítenie a lényt, különben az anyag kitörhet uralma alól. A tűzlény egészen addig képes harcolni, amíg Ép-i nullára nem esnek. A tűzvarázsló az Időtartam lejárta előtt bármikor tűzkitöréssé alakíthatja lényeit. Egy tűzvarázsló egyszerre csak egy tűzlényt irányíthat, s közben nem végezhet semmilyen koncentrációt igénylő tevékenységet."
+                ]
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Tűzlények Östűzzel Való Kapcsolata és Erősödése",
+            "headers": [],
+            "rows": [
+                [
+                    "Minden tűzlényre jellemző, hogy az Östűz, amivel fizikai kapcsolatba kerülnek, megszűnik eredeti formájában létezni, magukba olvasztják, hasonlóan a Fehér színű lángokhoz (lásd Lángfestés varázslat). Így a tűzvarázsló, amennyiben lényének létét veszélyeztetve érzi, irányíthatja azt a Zónában lévő Östűzek felé, hogy érintkezzen velük. Így új erőre kaphat. Sajnos a tűzvarázsló nem képes a varázslat Időtartama alatt varázsolni, így nem tudja lényét tűzvarázslatokkal erősíteni."
+                ]
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Tűzlények Alkotása Színes Lángokból és Sebezhetősége Fehér Lángra",
+            "headers": [],
+            "rows": [
+                [
+                    "A tűzlényeket meg lehet alkotni színes lángokból is, és képesek magukba olvasztani bármely színű lángot, minden E után Életerőt nyerve. A tűz olyan szintűvé válik, mint ami, testük anyagát alkotja. A Fehér láng kivételt képez, ugyanis képes sebezni a lényt, azáltal, hogy anyagát magába olvasztja. Ezzel csökkenti a lény Életerő pontjait. Erre természetesen csak akkor képes, ha E-je nagyobb, mint a lény E-je."
+                ]
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Tűzlények Immunis Képességei és Sebezhetősége",
+            "headers": [],
+            "rows": [
+                [
+                    "Minden tűzlény immunis az Asztrál és Mentál alapú varázslatokra és a mérgekre. A Természetes Anyagok Mágiaja nem hat rájuk, mert kiterjed rájuk a tűzvarázsló Személyes Aurájának védelme. Ösvág, Ösföld és Elemi erő csak Fp-sebződést okozhat. Az Őselemek E-nként 1k6-ot."
+                ]
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Tűzlények Ép- és Fp-veszteség",
+            "headers": [],
+            "rows": [
+                [
+                    "zások, illetve csökkenhet Ösvíz és Fehér tűz által. Ép-veszteség, akárcsak az élőlényeknél, kétszeres Fp-veszteséget is okoz (jóllehet itt nem fájdalomról, hanem a forma felbomlásáról van szó)."
+                ]
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Fegyverek Sebzése Tűzlények Ellen",
+            "headers": [],
+            "rows": [
+                [
+                    "A fegyverek csak Fp-t sebezhetnek, még túltés esetén is. Ha túlütes van, akkor a fegyver kidobott sebzése megduplázódik."
+                ]
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Tűzlények Harci Értékeinek Számítása",
+            "headers": [],
+            "rows": [
+                [
+                    "A tűzlények harci értékei mindig így számolhatók ki: a tűzvarázsló alapértékei (fegyver nélkül) + a lény harcmodosítója."
+                ]
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Tűzlények Mozgékonysága",
+            "headers": [],
+            "rows": [
+                [
+                    "A lények gyorsak, 120 lábat képesek egy kör alatt megtenni, természetesen csak a Zónán belül mozogva."
+                ]
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Tűzlények Sebzése és Védekezés Ellene",
+            "headers": [],
+            "rows": [
+                [
+                    "A lények, ha találnak, mindig annyi E Östűznek megfelelően sebeznek, mint ami, anyagukat alkotja. Nagyobb sebet jelent ugyanis, ha valaki hatalmas felületen találna el, és a tűzlények találata nem egyszerű érintést jelent, hanem ennél sokkal többet. Ha túltűnek valakit, azon keresztülmennek, ezzel teljes testfelületet érintő égési sérülést okozva. Az így okozott sebzés duplázódik. A lények csapásaival szemben nem védenek a nem mágikus fegyverek és vértek, ezek VÉ-je és SFE-je nem érvényesül. A mágikus fegyverek és pajzsok VÉ-jét nem kell levonni, a mágikus vértek SFE-je levonódik a sebzésből."
+                ]
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Tűzlények Erősségének Növelése",
+            "headers": [],
+            "rows": [
+                [
+                    "A lények Erőssége alapból 1-es, és egységes módon erősíthetők: minden a varázslat alapköltéségen túl elköltött 6 Mp +1 Erősséget jelent."
+                ]
+            ]
+        }
+    ]
+}

@@ -1,0 +1,444 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": false,
+    "section_title": "",
+    "content_blocks": [
+        {
+            "type": "table",
+            "headers": [
+                "Fohász neve",
+                "Szféra",
+                "Kegy pont",
+                "Fohász hossza",
+                "Hatótáv",
+                "Időtartam",
+                "Mágiaellenállás"
+            ],
+            "rows": [
+                [
+                    "Acélos akarat",
+                    "L",
+                    "4",
+                    "5 szegmens",
+                    "Érintés",
+                    "10 perc",
+                    "—"
+                ],
+                [
+                    "Isteni emlékezet",
+                    "L",
+                    "18",
+                    "3 kör",
+                    "Önmagam",
+                    "Speciális",
+                    "—"
+                ],
+                [
+                    "Isteni fegyver",
+                    "L",
+                    "10",
+                    "3 szegmens",
+                    "Önmagam",
+                    "6 kör (1 perc)",
+                    "—"
+                ],
+                [
+                    "Kézrátétel",
+                    "É",
+                    "6",
+                    "2 kör",
+                    "Érintés",
+                    "Végleges",
+                    "—"
+                ]
+            ]
+        },
+        {
+            "type": "table",
+            "headers": [
+                "Fohász neve",
+                "Szféra",
+                "Kegy pont",
+                "Fohász hossza",
+                "Hatótáv",
+                "Időtartam",
+                "Mágiaellenállás"
+            ],
+            "rows": [
+                [
+                    "Hűségbéklyó",
+                    "É",
+                    "1",
+                    "3 szegmens",
+                    "Érintés",
+                    "1 nap",
+                    "Asztrális"
+                ],
+                [
+                    "Földabrosz",
+                    "É",
+                    "6",
+                    "1 kör",
+                    "Önmagam",
+                    "Végleges/1 óra",
+                    "—"
+                ],
+                [
+                    "Lakat",
+                    "É",
+                    "10",
+                    "2 szegmens",
+                    "Érintés",
+                    "Végleges",
+                    "—"
+                ],
+                [
+                    "Menedék",
+                    "É",
+                    "8",
+                    "2 kör",
+                    "1 ynevi láb",
+                    "3 óra",
+                    "—"
+                ],
+                [
+                    "Óvó kar",
+                    "É",
+                    "40",
+                    "1 kör",
+                    "Érintés",
+                    "Végleges",
+                    "—"
+                ]
+            ]
+        },
+        {
+            "type": "table",
+            "headers": [
+                "Fohász neve",
+                "Szféra",
+                "Kegy pont",
+                "Fohász hossza",
+                "Hatótáv",
+                "Időtartam",
+                "Mágiaellenállás"
+            ],
+            "rows": [
+                [
+                    "Elmeszipoly",
+                    "L",
+                    "1",
+                    "5 szegmens",
+                    "Érintés",
+                    "Egyszeri",
+                    "Mentális"
+                ],
+                [
+                    "Biztos kéz",
+                    "É",
+                    "10",
+                    "5 kör",
+                    "Önmagam",
+                    "1 óra",
+                    "—"
+                ],
+                [
+                    "Emlékezet",
+                    "L",
+                    "8",
+                    "2 kör",
+                    "Önmagam",
+                    "1 óra",
+                    "—"
+                ],
+                [
+                    "Utazás",
+                    "L",
+                    "15",
+                    "6 kör (1 perc)",
+                    "Önmagam",
+                    "3 óra",
+                    "—"
+                ],
+                [
+                    "Útkeresés",
+                    "L",
+                    "12, 15, 18",
+                    "1 kör",
+                    "Speciális",
+                    "Végleges",
+                    "—"
+                ]
+            ]
+        },
+        {
+            "type": "table",
+            "headers": [
+                "Fohász neve",
+                "Szféra",
+                "Kegy pont",
+                "Fohász hossza",
+                "Hatótáv",
+                "Időtartam",
+                "Mágiaellenállás"
+            ],
+            "rows": [
+                [
+                    "Kizökkent idő",
+                    "É",
+                    "25",
+                    "3 szegmens",
+                    "Érintés",
+                    "1 kör",
+                    "—"
+                ],
+                [
+                    "Kyel ökle",
+                    "H",
+                    "22",
+                    "2 szegmens",
+                    "Érintés",
+                    "10 kör",
+                    "—"
+                ],
+                [
+                    "Sors",
+                    "L",
+                    "60",
+                    "1 kör",
+                    "Önmagam",
+                    "Egyszeri",
+                    "—"
+                ]
+            ]
+        },
+        {
+            "type": "table",
+            "headers": [
+                "Fohász neve",
+                "Szféra",
+                "Kegy pont",
+                "Fohász hossza",
+                "Hatótáv",
+                "Időtartam",
+                "Mágiaellenállás"
+            ],
+            "rows": [
+                [
+                    "A Kos hite",
+                    "L",
+                    "2",
+                    "5 szegmens",
+                    "20 ynevi láb",
+                    "3 kör",
+                    "Mentális"
+                ],
+                [
+                    "Döbbenet",
+                    "L",
+                    "1",
+                    "1 szegmens",
+                    "20 ynevi láb",
+                    "Egyszeri",
+                    "Mentális"
+                ],
+                [
+                    "Holt szolga",
+                    "H",
+                    "5",
+                    "5 szegmens",
+                    "Érintés",
+                    "Speciális",
+                    "Mentális"
+                ],
+                [
+                    "Őrző kos",
+                    "H",
+                    "1",
+                    "2 kör",
+                    "5 ynevi láb",
+                    "Egyszeri",
+                    "Asztrális"
+                ]
+            ]
+        },
+        {
+            "type": "table",
+            "headers": [
+                "Fohász neve",
+                "Szféra",
+                "Kegy pont",
+                "Fohász hossza",
+                "Hatótáv",
+                "Időtartam",
+                "Mágiaellenállás"
+            ],
+            "rows": [
+                [
+                    "Kígyótűz",
+                    "T",
+                    "4",
+                    "1 szegmens/É",
+                    "20 ynevi láb",
+                    "1 kör",
+                    "—"
+                ],
+                [
+                    "Perzselő ordítás",
+                    "T",
+                    "6",
+                    "1 szegmens/É",
+                    "Lásd a leírást!",
+                    "Egyszeri",
+                    "—"
+                ],
+                [
+                    "Sogron szent tüze",
+                    "T",
+                    "10",
+                    "1 kör",
+                    "20 ynevi láb",
+                    "Végleges",
+                    "—"
+                ],
+                [
+                    "Tűztáplálás",
+                    "T",
+                    "5",
+                    "1 szegmens/É",
+                    "20 ynevi láb",
+                    "6 kör (1 perc)",
+                    "—"
+                ],
+                [
+                    "A Kobra ujja",
+                    "T",
+                    "20",
+                    "3 szegmens",
+                    "20 ynevi láb",
+                    "3 kör",
+                    "—"
+                ]
+            ]
+        },
+        {
+            "type": "table",
+            "headers": [
+                "Fohász neve",
+                "Szféra",
+                "Kegy pont",
+                "Fohász hossza",
+                "Hatótáv",
+                "Időtartam",
+                "Mágiaellenállás"
+            ],
+            "rows": [
+                [
+                    "Rángó hús",
+                    "H, L",
+                    "6",
+                    "2 szegmens",
+                    "20 ynevi láb",
+                    "1 kör",
+                    "Mentális"
+                ],
+                [
+                    "Vérbéklyó",
+                    "H, L",
+                    "5/kacs",
+                    "3 szegmens",
+                    "20 ynevi láb",
+                    "Egyszeri",
+                    "Gyorsaságpróba"
+                ],
+                [
+                    "Vérdermesztés",
+                    "H",
+                    "3",
+                    "5 szegmens",
+                    "20 ynevi láb",
+                    "5 kör",
+                    "Mentális"
+                ],
+                [
+                    "Vérszolga",
+                    "H",
+                    "8/liter",
+                    "1 óra",
+                    "Speciális",
+                    "Végleges",
+                    "—"
+                ],
+                [
+                    "Istenalak",
+                    "H",
+                    "35",
+                    "30 kör (5 perc)",
+                    "Önmagam",
+                    "1 óra",
+                    "—"
+                ],
+                [
+                    "Patkányidézés",
+                    "L",
+                    "4",
+                    "2 szegmens",
+                    "200 ynevi láb",
+                    "30 perc",
+                    "—"
+                ],
+                [
+                    "Vérzivatar",
+                    "H",
+                    "18",
+                    "3 szegmens",
+                    "20 ynevi láb",
+                    "6 kör (1 perc)",
+                    "—"
+                ]
+            ]
+        },
+        {
+            "type": "table",
+            "headers": [
+                "Fohász neve",
+                "Szféra",
+                "Kegy pont",
+                "Fohász hossza",
+                "Hatótáv",
+                "Időtartam",
+                "Mágiaellenállás"
+            ],
+            "rows": [
+                [
+                    "Bizonyosság",
+                    "L",
+                    "8",
+                    "3 szegmens",
+                    "Önmagam",
+                    "Egyszeri",
+                    "—"
+                ],
+                [
+                    "Jutalom",
+                    "L",
+                    "18",
+                    "1 kör",
+                    "Önmagam",
+                    "1 óra",
+                    "—"
+                ],
+                [
+                    "Kopó",
+                    "É",
+                    "18",
+                    "1 kör",
+                    "20 ynevi láb",
+                    "1 nap",
+                    "—"
+                ]
+            ]
+        }
+    ]
+}

@@ -1,0 +1,28 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": null,
+    "is_new_section": false,
+    "section_title": null,
+    "content_blocks": [
+        {
+            "type": "paragraph",
+            "text": "Rend, Élet A Rend, Élet jelleműek mindenben alávetik magukat a saját maguk vagy mások által hozott törvényeknek; cselekedeteiket erős szabályok határozzák meg. Szabályok, melyek tiltják ugyan a gyilkosságot, de mindazok ellen szólnak, akik az életet veszélyeztetik. Ha arra kényszerülnek, hogy ölnek, azt soha nem élvezetből, hanem mindig kötelességből teszik."
+        },
+        {
+            "type": "paragraph",
+            "text": "Rend, Halál A Rend, Halál jelleműek szolgálnak és ölnek, ha kell. Kérlehetetlen és könyörtelen gyilkosok, mihelyt arra valakitől parancsot kaptak vagy érdekeik, hitük így követeli. Nem életcéljukon azonban más életének kioltása és semmiképp nem ölnek szórakozásból. Általában hideg és számító eszmerendszereket vallanak magukénak; nem ritkán a felsőbbrendűség ideáját szolgálják."
+        },
+        {
+            "type": "paragraph",
+            "text": "Káosz, Élet Öntörvényű és önfejű alakok a Káosz, Élet jelleműek, akik ha valakit szolgálnak, azt csakis saját érdekükben teszik. Minden korlátozás csak nyűg a számukra, a szabadságuk megkurtítása. Bármit is tesznek azonban, ha csak módjukban áll, igyekeznek megkímélni ellenfeleik vagy áldozataik életét."
+        },
+        {
+            "type": "paragraph",
+            "text": "Káosz, Halál Talán a Káosz, Halál jellemű karakterek azok, akik legtávolabb állnak mindattól, amit emberinek nevezünk. Kötöttségek nélkül, zavaros gondolatok hajtják őket, s mivel az életet semmibe veszik, nem ritkán szakadatlan harc, menekülés az életük. A tiszteletet nem, csupán a félelmet ismerik, s csakis az erősebbeket tűrik el maguk felett."
+        },
+        {
+            "type": "paragraph",
+            "text": "Az ideális játékos soha nem követi el azt a hibát, hogy jellemével ellenkező tettre ragadtatja magát – de hát senki sem tökéletes. Ha a játékos ilyen cselekedetre készül, a KM köteles figyelmeztetni, hogy ezt a karakter személyisége nem teszi lehetővé. Ha a játékos nem tágít, karakterének jelleme, életfilozófiája torzulhat. A változás nem azonnali, s a karakternek több jellemével ellentétes tettet kell elkövetnie ahhoz, hogy életfelfogása, filozófiája az új irányvonalhoz alkalmazkodjék. Amennyiben a KM úgy érzi, a játékos sokszor megszegte saját filozófiájának íratlan törvényeit, s életszemlélete nem tükrözi többé eredeti jellemét, megváltoztathatja azt. Ez a legtöbb esetben kerülendő lépés, de ha a KM úgy érzi, minden más meggyőzési kísérlet eredménytelen maradt, szabad kezet kap. Előfordulhat az is, hogy a karakter életfelfogását a játékos szándékosan kívánja megváltoztatni, mert új eszmékkel, gondolatokkal szembesült kalandozásai során, s ezek meggyőzték arról, hogy eddig helytelenül szemlélte a világot maga körül. Ilyen esetben a jellemváltozás indokolt."
+        }
+    ]
+}

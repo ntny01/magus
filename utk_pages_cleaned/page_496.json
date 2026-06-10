@@ -1,0 +1,116 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": false,
+    "section_title": "",
+    "content_blocks": [
+        {
+            "type": "rule",
+            "title": "Ork Statisztika",
+            "headers": [
+                "Kezdeményező érték",
+                "Támadó érték",
+                "Védő érték",
+                "Célzó érték",
+                "Sebzés",
+                "Életerő pontok",
+                "Fájdalomtűrő pontok",
+                "Asztrál ME",
+                "Mentál ME",
+                "Méregellenállás",
+                "Pszi",
+                "Intelligencia",
+                "Jellem",
+                "Tapasztalati pont"
+            ],
+            "rows": [
+                [
+                    "20",
+                    "35",
+                    "80",
+                    "0",
+                    "Fegyver szerint",
+                    "10",
+                    "16",
+                    "—",
+                    "—",
+                    "3",
+                    "—",
+                    "Alacsony",
+                    "Káosz",
+                    "2"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A legenda szerint Orwella, a Kitaszított teremtette az orkokat, még a történelem hajnalán. Azóta elszaporodtak, napjainkban Ynev-szerte több millióra tehető a számuk. Legnépesebb hordáik és törzseik az északi Gro-Ugonban találhatóak, de fel lehet lelni őket majd' minden tájon: sokan élnek Kránban, vagy a Sheral csúcsai között."
+        },
+        {
+            "type": "paragraph",
+            "text": "Az orkok 160-190 ynevi hüvelyk magas, robusztus testalkatú teremtmények. Szemük sárga, bőrük, irhájuk szürkés árnyalatú. Pofájuk megnyúlt, kissé farkasszerű, a kifejlett egyedek agyarai a száj csukott állapotában is szembeötlőek. Erősebbek az embernél; állóképességük és szívósságuk legendás."
+        },
+        {
+            "type": "paragraph",
+            "text": "Az orkok hordákba, törzsekbe, nemzetségekbe tömörülnek, s mindig csapatostul járnak. A magányos ork ritka, mint a fehér holló."
+        },
+        {
+            "type": "paragraph",
+            "text": "A nemzetségek 20-tól 50 fős, többé-kevésbé családi alapú közösségek. Az orkok társadalmában ez a legkisebb egység. A nemzetséget a nemzetségfő irányítja, teljhatalommal. Ő általában a legerősebb egyed a családban, hiszen az elsőség kérdését véres párviadalok során döntik el. Az ork gyerekek (gaugok) újszülött koruktól kezdve a nemzetségben nevelkednek, nem a szűk családban – a család fogalmát nem is igen ismerik – csak így válhatnak kegyetlen harcosokká."
+        },
+        {
+            "type": "paragraph",
+            "text": "A törzs az egymás mellett élő nemzetségek közössége. Általában öt-nyolc nemzetség alkot egy törzset. Vezetését a Nemzetségfők Tanácsa látja el, de olykor törzsfőnököt választanak maguk közül – itt nem a nyers erő, hanem a ravaszság, a rátermettség a döntő. A törzs közös szálláshelyen él, együtt vándorol, ha költözni kell. A legjelentősebb szerepet azonban a törzsi háborúban tölti be, mikor a nemzetségek közösen védekezhetnek vagy hódíthatnak."
+        },
+        {
+            "type": "paragraph",
+            "text": "A horda az egymáshoz közel élő törzsek szövetsége. Hasonló szerepet tölt be, mint az emberi társadalomban az ország il-letve nemzet: éppúgy királya van, általában a legerősebb törzs főnökének személyében."
+        },
+        {
+            "type": "paragraph",
+            "text": "A horda majd' mindig külön nyelvjárást beszél, s külön szokásokat alakít ki. Mikor ork hadseregről beszélünk, egy-egy horda egyesített haderejét értjük alatta."
+        },
+        {
+            "type": "paragraph",
+            "text": "Mindezek ellenére ne gondoljuk, hogy az ork társadalomban nem kap szerepet a származás és az öröklődés! Minden ork nyilvántartja apjának és nagyapjának nevét, hiszen dicsőséges apai ősökkel büszkélkedni irigylésre méltó dolog. A nemzetségen, törzsön, de esetleg még a hordán belül is nagy befolyást biztosíthat a „jó” származás. Az örökléssel egészen más a helyzet. A személyes vagyontárgyak persze apáról fiúra szállnak – nem így a rangok. A vér szerinti utódnak sok az esélyei a főnöki jelölésre, de a megürült posztra mindig a már említett módszerekkel „választanak” utódot."
+        },
+        {
+            "type": "paragraph",
+            "text": "Az orkok életében éppúgy megtalálható a mágia, mint Ynev legtöbb népének hétköznapjaiban. Pontosabban nem is a mágia, hanem annak tapasztalatokon alapuló, alacsony szintű alkalmazása. Minden ork törzsnek saját sámánja van, aki ellátja a törzs tagjainak bűbáj elleni védelmét, mágikus felülvizsgálatát; s a gyógyítástól az utódok kinevelésén túl még számtalan, mágiával kapcsolatos feladatot."
+        },
+        {
+            "type": "paragraph",
+            "text": "Az ork asszonyok nem sokban különböznek a „férfiaktól”. Éppoly durva arcúak és robusztus testalkatúak, mint amazok. A ház körüli munkákat inkább csak irányítják, annak oroszlánrészét az összefogdosott rabszolgák végzik. A harchoz nem értenek annyira, mint férjeik, de ha kell, kiveszik belőle a részüket."
+        },
+        {
+            "type": "paragraph",
+            "text": "Az orkok általában az emberi szem számára durva ruhadarabokat, gatyát, bocskort és kacagányt viselnek. Ez utóbbit általában bőrből, nemritkán emberbőrből készítik. Fegyverzetük általában igen hatékony és híján van minden díszítő elemnek, mivel nem csak háborúság idején kerül elő, hanem ragadozó fajról lévén szó a napi élelemszerzésnél is. Fémvértezet ritkán öltenek, a kemény, vastag bőrből készült páncélt jobban kedvelik; olykor pajzsukat rögzítik hátukra, mellkasukra."
+        },
+        {
+            "type": "paragraph",
+            "text": "Az orkok – mint már kiderült – nem élhetnek rabszolgák nélkül. Foglyaikat reggeltől estig dolgoztatják, és embertelen körülmények között tartják. Enni alig adnak a raboknak – s az a kevés is kétes eredetű és minőségű. Földalatti börtönökbe, vagy barlang-csarnokokban ácsolt ketrecekbe zárják a szerencsétleneket, akik – „vendégszeretetüknek” hála – nem élnek sokáig. Az ork rendszeres rabszolgavadász-portyákkal biztosítják az utánpótlást."
+        },
+        {
+            "type": "paragraph",
+            "text": "Az orkok között éppúgy akadnak tapasztaltabb harcosok, mint az emberek között."
+        },
+        {
+            "type": "rule",
+            "title": "Harci képességek",
+            "headers": [
+                "Szint",
+                "Tapasztalati pont"
+            ],
+            "rows": [
+                [
+                    "Magasabb szintű orkok",
+                    "Szintenként 2 Tp"
+                ],
+                [
+                    "Ork sámánok",
+                    "Szintenként 3 Tp"
+                ]
+            ]
+        }
+    ]
+}

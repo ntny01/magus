@@ -1,0 +1,72 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "null",
+    "is_new_section": false,
+    "section_title": "",
+    "content_blocks": [
+        {
+            "type": "paragraph",
+            "text": "I. Ebből következően a dalmágia varázslatainak hatótávja hallótávolság, és eredményességének feltétele az is, hogy a kiszemelt alany ne csak belül tartózkodjon a dalmágia varázslatainak hatótávolságán, de hallja is a dalt. Amennyiben a célpont süket, vagy – saját jól felfogott érdekében – fülének befogásával védekezik a mágia ellen, a dal hatástalan marad. Minden esetben a KM feladata eldönteni, hogy az adott szituációban milyen messzire hallatszik el a bárd éneke."
+        },
+        {
+            "type": "paragraph",
+            "text": "II. Ritkán kerül sor arra, hogy egy bárd zajos helyen (például csatában) használja a dalmágiát – ez alól talán csak a Bátorság dala jelent kivételt. A zaj ugyanis elnyomja a bárd énekét, s a Dalmágia varázslatainak hatótávolsága a felére csökken. Mindazonáltal a dalokat tiszta énekhangon, nem pedig ordítva kell előadni, ily módon a hatótáv nem növelhető."
+        },
+        {
+            "type": "paragraph",
+            "text": "III. A bárdok egyszerre annyi lényre alkalmazhatják a Dalmágia varázslatait, amennyi a Tapasztalati szintjük, de a célpontok száma a Mana pontok többszörözésével növelhető, és a dal hatókörén belül a bárd határozhatja meg, ki legyen az, akire a dal varázslatként hat. A többi hallgató csupán akkor észlelheti a dallamba ágyazott varázst, ha ehhez valamilyen érzékelő mágiát alkalmaz. Ellenkező esetben elkerüli figyelmét a hangok közt feszülő varázshatalom."
+        },
+        {
+            "type": "paragraph",
+            "text": "IV. A Dalmágiák hatásának kiteljesedéséhez a célpontoknak legalább annyi ideig kell hallaniuk a dalt, amennyi a Varázslás ideje. Ellenkező esetben a varázslat hatása elmarad."
+        },
+        {
+            "type": "paragraph",
+            "text": "V. A varázslatok Időtartama általában megegyezik a dal hosszával – ennek oka, hogy a mágia csak addig hat, míg a bárd játszik, viszont a hatás nem enyészik el azonnal. Amint az utolsó hangok is elhalnak, további 1k6 körre van szükség, amíg az „áldozatok” magukhoz térnek és a dal foszlányait is elűzik elméjükből. Az ettől való esetleges eltérést a varázslat leírásában külön feltüntettük."
+        },
+        {
+            "type": "paragraph",
+            "text": "VI. A bárdok dalmágia kizárólag élőlényekre hat, és az „áldozatok” a hatás elmúltával nem lesznek tisztában vele, hogy mágia hatása alatt álltak!"
+        },
+        {
+            "type": "paragraph",
+            "text": "VII. Fontos látnunk, hogy a Dalmágia varázslatai tökéletesen összekapcsolódnak az előadói képességgel, ezért a bárd Művészet képzettségei (Éneklés és Zenélés egyaránt) növeli a varázslat Erősségét. A képzettségek 3. foka +1 E-t, 4. foka +2 E-t míg 5. foka +3 E-t ad a varázslat Erősségéhez. Természetesen, ha a bárd nem játszik a hangszeren, csupán énekhangjára támaszkodik, akkor csak az Éneklés képzettsége számít, míg ha nem énekel, csak hangszert használ, úgy a Zenélés képzettsége a mérvadó. Ha a bárd énekét hangszeres játékkal is kíséri, úgy a képzettségek fokának összege számít bele a varázslat Erősségébe."
+        },
+        {
+            "type": "paragraph",
+            "text": "Például: vegyünk egy 3. szintű bárdot, aki 18 Mp-tal rendelkezik, Éneklés képzettsége 3., Zenélés képzettsége pedig 4. fokú és Álom dalát akarja használni. A varázslat költsége 2 Mp/E, így a 18 Mana pontból legfeljebb 9-es Erősítéssel tudja létrehozni, amihez +1 E járul az Éneklés és +2 E a Zenélés képzettség miatt. Ez összesen tehát 12 E és Tapasztalati Szintjéből fakadóan egyszerre legfeljebb 3 célpontot képes elaltatni."
+        },
+        {
+            "type": "paragraph",
+            "text": "Ha nem 3, hanem 6 célpontot akar a varázslat befolyása alá vonni, akkor a Mana pontok kétszeresét, 9 célpontnál a háromszorosát stb. kell kifizetnie. Tehát 18 Mana pontból"
+        },
+        {
+            "type": "paragraph",
+            "text": "legfeljebb 4-es Erősítést tudja létrehozni, amihez továbbra is +1 E járul az Éneklés és +2 E a Zenélés képzettség miatt. Ez összesen tehát 7 E és egyszerre legfeljebb 6 célpontot képes elaltatni."
+        },
+        {
+            "type": "rule",
+            "title": "Álom dala",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Bájolás dala",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Bátorság dala",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        }
+    ]
+}

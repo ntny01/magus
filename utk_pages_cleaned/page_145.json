@@ -1,0 +1,275 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": true,
+    "section_title": "Világi képzettségek",
+    "content_blocks": [
+        {
+            "type": "rule",
+            "title": "5. fok: „Páncélban született”",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "tartják az efféléről a bölcsek és a köznép egyaránt, már szinte észrevétlen hordozza az irdatlan vasakkal felszerelt teljes vértezetet is. A Nehézvértesek MGT-je 3-mal csökken, az általa viselt vértek SFÉ-je 3 ponttal magasabbnak számít.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "title": "Állatismeret (I)",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "A karakter ezzel a képzettséggel bizonyos kultúrkörbe tartozó állatok szokásait, életmódját ismerheti meg, mint pl.: háziállatok, vagy mérsékelt égövi erdők természetes vadjai, esetleg a Nyugati puszták állatai... stb. De ezzel a képzettséggel lehet ismereteket szerezni egy bizonyos állati szörny-típusra, mint például sárkányok és sárkánygyíkok stb.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "title": "1. fok",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "A képzettség ezen fokú ismerője még csak ismerkedik az adott csoportba tartozó állatokkal, messziről felismeri a hímeket és nőstényeket, fokozatosan megismeri az életmódjukat, szokásaikat, hangjukat.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "title": "2. fok",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "Az ilyen szinten képzett személynek már beható ismeretei vannak az adott csoport állatainak viselkedéséről, életmódjáról, étrendjéről.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "title": "3. fok",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "A karakter már szakavatott ismerője az adott állat-, vagy szörnycsoportnak, tisztában van viselkedésük miértjeivel, a harcmodoruk nyújtotta lehetőségekkel, ezért ellenük való harc esetén harcértékei KÉ: +2, TÉ: +5, VÉ: +5, CÉ: +5 módosító járul. A karakter képes az állatok betegségeit felismerni, de csak gyógyító képzettségekkel tudja orvosolni azokat.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "title": "4. fok",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "A bónusz ezen a szinte már KÉ: +5, TÉ: +10, VÉ: +10, CÉ: +10-re nő, illetve a karakter innentől kezdve képes a választott állatcsoport betegségeinek azonosítására, s alapvető segítséget nyújthat nekik célirányos táplálásukkal.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "title": "5. fok",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "A karakter olyan szinten ismeri az adott csoport tagjait, hogy jöttére nem riadnak fel az állatok, még a ragadozók is megkímélik, ha épp nem ingerli őket.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "title": "Csapdaállítás/leszerelés (II – Ügyesség)",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "Jó csapdát állítani nem egyszerű feladat, főleg akkor nem, ha az ember huzamosabb ideig próbál fogva tartani valamilyen intelligens bestiát, ne adja az ég humanoidot. A karakter ezzel a képzettséggel nemcsak csapdák felállításában, hanem azok elkészítésében is járatossá válhat, illetve képessé válik a szerkezetek hatástalanítására is.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "A képzettség avatott bajnokai a törpe várés útvesztő-építészek, vadászok és vadorzók, illetve a tolvajcéhek és fejvadászrendek mesterei.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "title": "1. fok",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "A képzettség birtokosa képes egyszerű, max 1k6 Fp sebzésű csapdák készítésére vagy jelzőcsapdák fabrikálására.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "title": "2. fok",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "A tudomány ezen fokú ismerője, már gyakorlott csapdaállító, csapdái akár 2k6 Fp sebzést is okozhatnak, állatokat fogva is tarthatnak, de egy ember hamar kiszabadul belőlük.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "title": "3. fok",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "A karakter már szakavatott ismerője tudományának, csapdái ezen a szinten már 3k6 Fp vagy 1k6 Ép sebzés okozására képesek, képzett készítőjüknek köszönhetően pedig -10%-os módosítóval sújtják a Csapdakeresés próbát, ez a módosító összeadódik az Álcázás képzettségből adódó módosítókkal.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "title": "4. fok",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "A karakter mesteri csapdái ezen a szinten már embert is huzamosabb ideig fogva tarthatnak, sebzésük pedig vagy 3k10 Fp, vagy 2k6 Ép. Jobban el is vannak rejtve, keresésük már 20%-kal nehezített feladat, ez a módosító összeadódik az Álcázás képzettségből adódó módosítókkal.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "title": "5. fok",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "A képzettség ezen fokának ismeretében már gyakorlatilag bármilyen csapda készíthető (nem mágikus, a csapda méretétől függően a KM belátására bízott sebzéssel), melyet alkotója igen jól elrejt, a keresésük már 30%-kal nehezített feladat, ez a módosító összeadódik az Álcázás képzettségből adódó módosítókkal.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "title": "Csomózás (II – Ügyesség)",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "Egyszerű csomót kötni bárki tud, de ezen képzettség segítségével tudományát igen csak hasznosan bővítheti a bogok, csúszóhurkok, önoldó csomók és egyéb nyalánkságok titkaival. A csomók, kötelek mesterévé válhat; igen hasznos tudomány tengerészek, falmászók és kalandozók számára.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "title": "1. fok",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "Ezen a szinten a karakter már biztosan rögzíthet nagyobb terheket, s egy ember gúzsba-kötése sem okoz gondot.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "title": "2. fok",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "A képzettség gyakorlott ismerője már képes nehezen vagy könnyen és gyorsan oldható csomók kötésére. Falmászó felszerelés készítéséhez és használatához elengedhetetlen a képzettség ilyen szintű ismerete.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "title": "3. fok",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "A karakter egyre jobban elmélyed ebben a tudományban, már hivatásos bogozó, kötöző. A hivatásos csomózó már utólag kioldható csomót is készíthet, hogy a csapatnak ne kelljen hátrahagyni minden egyes leereszkedés után a köteleit... Kérdés hogyan jutnak vissza, ha még egyszer kellene. A karakter a képzettség alkalmazásakor +1 módosítóval dobhatja Ügyességpróbáját.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "title": "4. fok",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "A népi művészek ismerik ilyen behatóan ezt a képzettséget, illetve egyes kultúrák, – pl. az ilanori – hírvivőinek rejtjelezői alkalmazzák. A csomózás alkalmazásához elengedhetetlenül szükséges a képzettség ilyen fokú ismerete. A karakter a képzettség alkalmazásakor +2 módosítóval dobhatja Ügyességpróbáját.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "title": "5. fok",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "A karakter tudása már a fizika törvényeit megszégyenítő hurkok és bogok kitalálására is elegendő. Olyan helyekre képes terheket függeszteni vagy kötelet vetni, ahová senki más, illetve képes bizonyos idő után a terhelés alatt kibomló csomók elkészítésére is, megfelelő, maga által elkészíthető eszközökkel. A karakter a képzettség alkalmazásakor +3 módosítóval dobhatja Ügyességpróbáját.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "title": "Vadonjárás (II – Érzékelés)",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "A képzettség a természet, illetve egy táj vonásainak jellegének ismeretét jelenti. Olyan tudás, melynek segítségével a karakter eligazodik az adott terepen, ismeri a ragadozókat, a",
+            "title": "",
+            "headers": [],
+            "rows": []
+        }
+    ]
+}

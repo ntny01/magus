@@ -1,0 +1,450 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": false,
+    "section_title": "",
+    "content_blocks": [
+        {
+            "type": "table",
+            "title": "Átkok",
+            "headers": [
+                "Varázslat neve",
+                "Mana pont",
+                "Varázslás ideje",
+                "Hatótáv",
+                "Időtartam",
+                "Mágiaellenállás"
+            ],
+            "rows": [
+                [
+                    "Átokfejtés",
+                    "10",
+                    "10 kör",
+                    "Érintés",
+                    "Lásd a leírást!",
+                    "-"
+                ],
+                [
+                    "Átokűzés",
+                    "2/E",
+                    "10 kör",
+                    "Érintés",
+                    "Végleges",
+                    "-"
+                ],
+                [
+                    "Átokvarázs",
+                    "3/E",
+                    "Lásd a leírást!",
+                    "Hallótávolság",
+                    "Lásd a leírást!",
+                    "Asztrális"
+                ]
+            ]
+        },
+        {
+            "type": "table",
+            "title": "Jellemtorzító átkok",
+            "headers": [
+                "Varázslat neve",
+                "Mana pont",
+                "Varázslás ideje",
+                "Hatótáv",
+                "Időtartam",
+                "Mágiaellenállás"
+            ],
+            "rows": [
+                [
+                    "Csalás",
+                    "2/E",
+                    "5 kör",
+                    "Érintés",
+                    "Végleges",
+                    "Asztrális"
+                ],
+                [
+                    "Gyilkos hajlam",
+                    "6/E",
+                    "5 kör",
+                    "Érintés",
+                    "Végleges",
+                    "Asztrális"
+                ],
+                [
+                    "Hazugság",
+                    "3/E",
+                    "5 kör",
+                    "Érintés",
+                    "Végleges",
+                    "Asztrális"
+                ],
+                [
+                    "Iszákosság",
+                    "2/E",
+                    "5 kör",
+                    "Érintés",
+                    "Végleges",
+                    "Asztrális"
+                ],
+                [
+                    "Lopás",
+                    "2/E",
+                    "5 kör",
+                    "Érintés",
+                    "Végleges",
+                    "Asztrális"
+                ],
+                [
+                    "Öngyilkos hajlam",
+                    "8/E",
+                    "5 kör",
+                    "Érintés",
+                    "Végleges",
+                    "Asztrális"
+                ],
+                [
+                    "Szószátyárság",
+                    "1/E",
+                    "5 kör",
+                    "Érintés",
+                    "Végleges",
+                    "Asztrális"
+                ],
+                [
+                    "Tisztetlenség",
+                    "2/E",
+                    "5 kör",
+                    "Érintés",
+                    "Végleges",
+                    "Asztrális"
+                ]
+            ]
+        },
+        {
+            "type": "table",
+            "title": "Mentális praktikák",
+            "headers": [
+                "Varázslat neve",
+                "Mana pont",
+                "Varázslás ideje",
+                "Hatótáv",
+                "Időtartam",
+                "Mágiaellenállás"
+            ],
+            "rows": [
+                [
+                    "Akaratrablás",
+                    "2/E",
+                    "2 szegmens",
+                    "3 ynevi láb",
+                    "6 kör (1 perc)",
+                    "Mentális"
+                ],
+                [
+                    "Bódulat",
+                    "2/E",
+                    "1 kör",
+                    "10 ynevi láb",
+                    "6 kör (1 perc)",
+                    "Mentális"
+                ],
+                [
+                    "Észlelhetetlenség",
+                    "2/E",
+                    "5 szegmens",
+                    "Látótávolság",
+                    "1k6 óra",
+                    "Mentális"
+                ],
+                [
+                    "Kinokozás",
+                    "4/E",
+                    "1 szegmens",
+                    "10 ynevi láb",
+                    "Egyszeri",
+                    "Mentális"
+                ],
+                [
+                    "Láthatatlanság",
+                    "1/E",
+                    "1 kör",
+                    "Látótávolság",
+                    "1k6 óra",
+                    "Mentális"
+                ],
+                [
+                    "Láthat. felfedezése",
+                    "1/E",
+                    "2 szegmens",
+                    "10 ynevi láb",
+                    "10 perc",
+                    "Mentális"
+                ],
+                [
+                    "Nyelvbéklyó",
+                    "2/E",
+                    "5 szegmens",
+                    "20 ynevi láb",
+                    "Lásd a leírást!",
+                    "Mentális"
+                ],
+                [
+                    "Parancs",
+                    "2/E",
+                    "3 szegmens",
+                    "10 ynevi láb",
+                    "1 kör",
+                    "Mentális"
+                ],
+                [
+                    "Sugallat",
+                    "3/E",
+                    "2 kör",
+                    "Látótávolság",
+                    "Lásd a leírást!",
+                    "Mentális"
+                ],
+                [
+                    "Tudatrablás",
+                    "5/E",
+                    "2 szegmens",
+                    "10 ynevi láb",
+                    "1 óra",
+                    "Mentális"
+                ]
+            ]
+        },
+        {
+            "type": "table",
+            "title": "Lélekvarázs",
+            "headers": [
+                "Varázslat neve",
+                "Mana pont",
+                "Varázslás ideje",
+                "Hatótáv",
+                "Időtartam",
+                "Mágiaellenállás"
+            ],
+            "rows": [
+                [
+                    "Álmatlanság",
+                    "2/E",
+                    "1 kör",
+                    "10 ynevi láb",
+                    "1 nap",
+                    "Aszt. és Ment."
+                ],
+                [
+                    "Álomvarázs",
+                    "3/E",
+                    "1 kör",
+                    "10 ynevi láb",
+                    "Lásd a leírást!",
+                    "Aszt. és Ment."
+                ],
+                [
+                    "Ámokfutás",
+                    "8/E",
+                    "2 kör",
+                    "3 ynevi láb",
+                    "Lásd a leírást!",
+                    "Aszt. és Ment."
+                ],
+                [
+                    "Éberség",
+                    "1/E",
+                    "5 kör",
+                    "Érintés",
+                    "48 óra",
+                    "Aszt. és Ment."
+                ]
+            ]
+        },
+        {
+            "type": "table",
+            "title": "Álommágia",
+            "headers": [
+                "Varázslat neve",
+                "Mana pont",
+                "Varázslás ideje",
+                "Hatótáv",
+                "Időtartam",
+                "Mágiaellenállás"
+            ],
+            "rows": [
+                [
+                    "Igazálom",
+                    "6/E",
+                    "2 kör",
+                    "Látótávolság",
+                    "6 óra",
+                    "Aszt. és Ment."
+                ],
+                [
+                    "Jósálom",
+                    "2/E",
+                    "30 kör",
+                    "Önmaga",
+                    "6 óra",
+                    "Aszt. és Ment."
+                ],
+                [
+                    "Rémálom",
+                    "3/E",
+                    "10 kör",
+                    "Látótávolság",
+                    "6 óra",
+                    "Aszt. és Ment."
+                ]
+            ]
+        },
+        {
+            "type": "table",
+            "title": "Bájolások",
+            "headers": [
+                "Varázslat neve",
+                "Mana pont",
+                "Varázslás ideje",
+                "Hatótáv",
+                "Időtartam",
+                "Mágiaellenállás"
+            ],
+            "rows": [
+                [
+                    "Az álmok asszonya",
+                    "16",
+                    "2 kör",
+                    "Önmaga",
+                    "1 óra",
+                    "-"
+                ],
+                [
+                    "Bénítás",
+                    "1/E",
+                    "1 szegmens",
+                    "Érintés",
+                    "1 szegmens",
+                    "Mentális"
+                ],
+                [
+                    "Csábítás",
+                    "2/E",
+                    "1 szegmens",
+                    "10 lépés sugarú kör",
+                    "1 óra/szint",
+                    "Asztrális"
+                ],
+                [
+                    "Fürkészés",
+                    "1/E",
+                    "1 szegmens",
+                    "Érintés",
+                    "2 kör",
+                    "Mentális"
+                ],
+                [
+                    "Őrjítő pillantás",
+                    "1/E",
+                    "1 szegmens",
+                    "5 lépés sugarú kör",
+                    "1 óra",
+                    "Asztrális"
+                ],
+                [
+                    "Védelem",
+                    "3/E",
+                    "1 szegmens",
+                    "Érintés",
+                    "5 perc/szint",
+                    "Mentális"
+                ]
+            ]
+        },
+        {
+            "type": "table",
+            "title": "Csókmágia",
+            "headers": [
+                "Varázslat neve",
+                "Mana pont",
+                "Varázslás ideje",
+                "Hatótáv",
+                "Időtartam",
+                "Mágiaellenállás"
+            ],
+            "rows": [
+                [
+                    "Átváltoztatás csókja",
+                    "5/E",
+                    "5 szegmens",
+                    "Csók",
+                    "Lásd a Csókmágiát!",
+                    "-"
+                ],
+                [
+                    "Élet csókja",
+                    "24/E",
+                    "5 szegmens",
+                    "Csók",
+                    "Lásd a Csókmágiát!",
+                    "Mentális"
+                ],
+                [
+                    "Felejtés csókja",
+                    "1/E",
+                    "5 szegmens",
+                    "Csók",
+                    "Lásd a Csókmágiát!",
+                    "Asztrális"
+                ],
+                [
+                    "Halál csókja",
+                    "4/E",
+                    "5 szegmens",
+                    "Csók",
+                    "Lásd a Csókmágiát!",
+                    "Asztrális"
+                ],
+                [
+                    "Iszonyat csókja",
+                    "2/E",
+                    "5 szegmens",
+                    "Csók",
+                    "Lásd a Csókmágiát!",
+                    "Asztrális"
+                ],
+                [
+                    "Izzó csók",
+                    "3/E",
+                    "5 szegmens",
+                    "Csók",
+                    "Lásd a Csókmágiát!",
+                    "-"
+                ],
+                [
+                    "Kriptacsók",
+                    "4/E",
+                    "5 szegmens",
+                    "Csók",
+                    "Végleges",
+                    "Mentális"
+                ],
+                [
+                    "Megbélyegzés csókja",
+                    "2/E",
+                    "5 szegmens",
+                    "Csók",
+                    "Lásd a Csókmágiát!",
+                    "Mentális"
+                ],
+                [
+                    "Rabszolgaság csókja",
+                    "3/E",
+                    "5 szegmens",
+                    "Csók",
+                    "Lásd a Csókmágiát!",
+                    "Mentális"
+                ]
+            ]
+        }
+    ]
+}

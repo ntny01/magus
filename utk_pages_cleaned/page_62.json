@@ -1,0 +1,164 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": null,
+    "is_new_section": true,
+    "section_title": "A tolvaj induló képzettségei 1. Tapasztalati szinten:",
+    "content_blocks": [
+        {
+            "type": "flavor_text",
+            "text": "...Sianis szomorkás félmosollyal csóválta a fejét. Úgy vélte, hogy ha valóban a Fényes Birodalom Egyistene teremtette a világot, azóta minden bizonnyal hátat fordított neki, és másutt, halászabb síkokon tevékenykedik."
+        },
+        {
+            "type": "flavor_text",
+            "text": "A magas, huszonegyedik évét betöltött ifjú biccentett a szembejövő nemes kisasszonynak, akik izgatottan súgtak össze a háta mögött. Szőke, ami szó, lenyűgözően festett combközépig érő vörös csizmában és fekete lovaglónadrágban, melyhez selyeminget és könnyű szarvasbőr zekét választott. Senki nem ismerte fel benne a mestervizsgáját teljesítő városi tolvajt, de hát ez így volt rendjén – sokan akadtak Erionban, akik arannyal fizettek volna a besúgónak, aki felfedi az elbizakodott nemesek, óvatlan bankárok és tolvajcéhek kincstárait fosztogató Nagy Ismeretlen titkát."
+        },
+        {
+            "type": "flavor_text",
+            "text": "A fiú ezúttal minden eddiginél vakmerőbb fogásra készült. A próba szabályszerűen bejelentette a Kevés Barátok Házában, az erioni tolvajcéhek felett döntő hatalommal bíró szervezetnél. A feltételeket Sianis szabta meg magának úgy, hogy abban a Kevés Barátok se találhassanak kivetnivalót. Aki fényes nappal el tudja lopnia kormányzói palota védelmével évező varázstudó amulettjét, az a továbbiakban egyéb lehetetlenségekre is képes. Ha napnyugtáig bemutatja az amulettet, megilleti a mestertolvaj cím – ami ebben az életkorban nagy ritkaság –, és az ezzel járó abbitygyűrű, mely bizonyos jogokat és védelmet jelent a rivális tolvajklánokkal szemben."
+        },
+        {
+            "type": "flavor_text",
+            "text": "A mesterpróba, mint az efféle próbák általában, a lehetetlent kísértette: ezt már csak úgy múlhatta volna felül, ha lelopja egy városőr lábáról a fűszeklit úgy, hogy a csizma rajta marad. Az amulettlopás ötlete azonban szükséges őrültség volt: Bram mester nem talált volna másik bolondot a feladatra."
+        },
+        {
+            "type": "flavor_text",
+            "text": "Alan O'Connor: Kék éjszakák árnyai"
+        },
+        {
+            "type": "paragraph",
+            "text": "A tolvajok meglehetősen laza erkölcsű, nem kifejezetten törvénytisztelő emberek. Abból élnek, amit másoktól elvennek. Akadnak köztük rablók, zsebmetszők, besurranók és szélhámosok, de más kisés nagystílű gazemberek is. A képzett tolvaj karakter minden „mesterségekben” járatos. A tolvajok rendszerint klánokba tömörülnek, ám akad közöttük magányos farkas is. A képzett tolvaj megbecsült tagja bármely klánnak; annak hatalmi felépítésében valahol középtájon kap helyet. Alatta tanoncok tömegei, piti alakok sokasága szolgál, míg felette nagystílű gonosztevők, olykor bizony magas társadalmi ranggal bíró személyek találhatók. A tolvajklánok száma szerte Yneven több százra tehető. Némelyikben bizony több száz vagy több ezer ember lel jobb-rosszabb megélhetésre, munkára, védelemre. Előmeneteli lehetőségeik valósággal lenyűgözőek: idővel akár tolvajherceggé emelkedhetnek a rangsorban. Nem csoda hát, ha az utcák neveltjei, a nincstelen városi családok gyermekei előbb-utóbb valamelyik tolvajklán kebelén kötnek ki. A tolvajklánok, ellentétben a fejvadász szervezetekkel, a városokban, a sűrűn lakott helyeken székelnek. Legtöbbjük egyetlen városban működik, ám némelyik egész országrészekre, netán a teljes országra is kiterjeszti befolyását."
+        },
+        {
+            "type": "paragraph",
+            "text": "A tolvaj karaktert leginkább azoknak ajánljuk, akik a kardforgatás helyett egy kis ügyességgel, képzettségeik alkalmazásával szeretnék elérni céljukat. Igen sokrétűen képzett, sokoldalú karakter, mellyel könnyű és élvezetes a játék."
+        },
+        {
+            "type": "rule",
+            "title": "Harctérték",
+            "headers": null,
+            "rows": null
+        },
+        {
+            "type": "rule",
+            "title": "Életerő és Fájdalomtűrés",
+            "headers": null,
+            "rows": null
+        },
+        {
+            "type": "rule",
+            "title": "Képzettségek",
+            "headers": null,
+            "rows": null
+        },
+        {
+            "type": "rule",
+            "title": "A tolvaj fegyvertára",
+            "headers": null,
+            "rows": null
+        },
+        {
+            "type": "rule",
+            "title": "A tolvaj induló képzettségei",
+            "headers": null,
+            "rows": null
+        },
+        {
+            "type": "table",
+            "text": null,
+            "title": null,
+            "headers": [
+                "Képzettségek",
+                "Fok"
+            ],
+            "rows": [
+                [
+                    "Fegyverhasználat",
+                    "2. fok"
+                ],
+                [
+                    "Lélektan",
+                    "1. fok"
+                ],
+                [
+                    "Csomózás",
+                    "2. fok"
+                ],
+                [
+                    "Értékbecslés",
+                    "2. fok"
+                ],
+                [
+                    "Álcázás/álruha",
+                    "2. fok"
+                ],
+                [
+                    "Jelbeszéd",
+                    "1. fok"
+                ],
+                [
+                    "Orvtámadás",
+                    "1. fok"
+                ],
+                [
+                    "Szabadulóművészet",
+                    "1. fok"
+                ],
+                [
+                    "Szerencsejáték",
+                    "1. fok"
+                ],
+                [
+                    "Mechanika",
+                    "2. fok"
+                ],
+                [
+                    "Számtan/mértan",
+                    "2. fok"
+                ],
+                [
+                    "Rejtekhelykutatás",
+                    "+15%"
+                ],
+                [
+                    "Zárnyitás",
+                    "+15%"
+                ],
+                [
+                    "Zsebmetszés",
+                    "+15%"
+                ],
+                [
+                    "Lopódzás",
+                    "+15%"
+                ],
+                [
+                    "Rejtőzés",
+                    "+15%"
+                ],
+                [
+                    "Mászás",
+                    "+15%"
+                ],
+                [
+                    "Esés",
+                    "+15%"
+                ],
+                [
+                    "Akrobatika",
+                    "+15%"
+                ],
+                [
+                    "CsapdakereSés",
+                    "+15%"
+                ]
+            ]
+        },
+        {
+            "type": "rule",
+            "text": "Akrobatika, Álcázás/álruha, CsapdakereSés, Csomózás, Ékesszólás, Élettan, Építészet, Értékbecslés, Esés, Fegyverhasználat, Hamisítás, Helyismeret, Heraldika, Írás/olvasás, Jelbeszéd, Kétkezes harc, Kocsmai verekedés, Kultúra, Legendaismeret, Lélektan, Lopódzás, Mászás, Mechanika, Művészetek, Nyomolvasás, Orvtámadás, Rejtekhelykutatás, Rejtőzés, Szabadulóművészet, Számtan/mértan, Szerencsejáték, Színészet, Udvari etikett/Intrika, Zárnyitás, Zsebmetszés.",
+            "title": "A tolvaj klánja által oktatott képzettségei, melyeket az Oktatás képzettség 4. foka által nyújtott bónuszokkal tanulhat:",
+            "headers": null,
+            "rows": null
+        }
+    ]
+}

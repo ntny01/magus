@@ -1,0 +1,190 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": true,
+    "section_title": "Asztrális operációk",
+    "content_blocks": [
+        {
+            "type": "rule",
+            "title": "Hullám",
+            "headers": [
+                "Mana pont",
+                "Időtartam"
+            ],
+            "rows": [
+                [
+                    "1/E",
+                    "Egyszeri"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A Lélektan avatott ismerője már képes a tudattól függetlenül magának az Asztrálison egyfajta érzelmi hullámot vetni. Ezáltal pusztítva a megidézett érzelemből álló lényeket, vagy épp befolyásolva alá vonva a közelben tartózkodó elméket."
+        },
+        {
+            "type": "paragraph",
+            "text": "A varázsló a Zónáján belül kijelölhet egy tetszés szerinti pontot, ami a Hullám epicentruma lesz. Az adott Érzelem Erőssége a Hullám kiindulópontjában a teljes Erősség, majd minden yevi láb távolság után csökken egy E-vel, megérintve mindenkinek az elméjét, s kifejtve a területen tartózkodók közül azokra az adott érzelem hatását, akik elvetik az Asztrális Mágiaellenállásukat. A továbbiakban a fentebb ismertetett szabályok a mérvadóak, tehát az alkalmazott asztrális mozaik, vagy a varázslathoz kapcsolt Időmágia időtartamára az adott érzelem hatása alá kerülnek a célpontok."
+        },
+        {
+            "type": "rule",
+            "title": "Szőnyeg, Fal",
+            "headers": [
+                "Mana pont",
+                "Időtartam"
+            ],
+            "rows": [
+                [
+                    "1/E",
+                    "1 kör"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "Az elemi mágiánál ismertetett Formázás mozaikok Szőnyeg és Fal mozaikjaival azonos felépítésű gátat emel az Asztrálison a varázsló, az adott érzelemből. A gát 1 körig, vagy a varázslathoz kapcsolt Időmágia időtartamáig áll fent és uralja az áldozat érzelmeit. Az Asztrál mozaik akkor fejti ki hatását, ha valaki keresztül halad a védett területen, vagy érinti azt."
+        },
+        {
+            "type": "paragraph",
+            "text": "Az alábbi Formázást csak akkor képes alkalmazni a varázsló, ha avatott ismerője a Lélektannak és az Asztrális sík működésének, azaz legalább 5. fokával bír a képzettségnek."
+        },
+        {
+            "type": "rule",
+            "title": "Aura",
+            "headers": [
+                "Mana pont",
+                "Időtartam"
+            ],
+            "rows": [
+                [
+                    "2/E",
+                    "1 kör"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "Az Elemi mágiánál ismertetett Aura mozaikkal azonos felépítésű gátat emel az Asztrálison a varázsló az adott érzelemből egy tárgy vagy személy köré. A gát alapesetben 1 körig, vagy a hozzákapcsolt Időmágia időtartamáig áll fent. Az áldozatra a varázslat Asztrál mozaikja akkor próbálja meg kifejteni hatását, mikor amaz megérinti az Aurával védett tárgyat, vagy személyt."
+        },
+        {
+            "type": "rule",
+            "title": "Szeretet/Gyűlölet",
+            "headers": [
+                "Mana pont",
+                "Időtartam",
+                "Varázslás ideje"
+            ],
+            "rows": [
+                [
+                    "1/E",
+                    "6 kör (1 perc)",
+                    "3 szegmens"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A varázslat áldozata a varázsló által meghatározott személy, tárgy, vagy eszme iránt erős szeretetet, másként fogalmazva szimpátiát érez. Ez megakadályozza abban, hogy ellene tegyen, és inkább arra sarkallja, hogy a kedvére cselekedjék."
+        },
+        {
+            "type": "paragraph",
+            "text": "Negatív érzelem esetén gyűlölet jelentkezik, ami könnyen lehet vérfürdő indítéka."
+        },
+        {
+            "type": "rule",
+            "title": "Bátorság/Félelem",
+            "headers": [
+                "Mana pont",
+                "Időtartam",
+                "Varázslás ideje"
+            ],
+            "rows": [
+                [
+                    "1/E",
+                    "6 kör (1 perc)",
+                    "3 szegmens"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A varázslat áldozata erős bátorságot érez, a varázsló által meghatározott tárgy, személy, vagy eszme kapcsán. Ez annyit tesz, hogy attól semmiféle módon nem tart, vagy épp ellenkezőleg: könnyű szívvel tesz ellene."
+        },
+        {
+            "type": "paragraph",
+            "text": "Félelem esetén retteg az adott személytől, tárgytól, eszmétől; miáltal könnyen megfutamodik, és az összetűzést mindenképp elkerülni igyekszik."
+        },
+        {
+            "type": "rule",
+            "title": "Vágy/Undor",
+            "headers": [
+                "Mana pont",
+                "Időtartam",
+                "Varázslás ideje"
+            ],
+            "rows": [
+                [
+                    "1/E",
+                    "6 kör (1 perc)",
+                    "3 szegmens"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A varázslat áldozata erős vágyat érez a varázsló által meghatározott személy, tárgy, vagy eszme iránt. Személyek esetében – ha jóérzéssel elképzelhető –, akkor ez szexuális vágyat is jelent, egyébként – akárcsak tárgyak esetében – birtoklási vágyat. Különleges esetekben, mint például az étel, ital, annak elfogyasztására sarkall. Eszme iránt érzett vágy az eszmével való azonosulási vágyat jelenti."
+        },
+        {
+            "type": "paragraph",
+            "text": "Undor esetén az áldozat megundorodik az adott személytől, igyekszik kerülni a társaságát, és érzelmei könnyen haragba csapnak át irányába. Tárgytól való undor arra sarkallja, hogy váljon meg az adott holmitól, ne tartsa magánál. Eszme iránt érzett undor elidegeníti az adott eszmétől, és mindazoktól, akik azt magukénak vallják."
+        },
+        {
+            "type": "rule",
+            "title": "Nyugalom/Ingerültség",
+            "headers": [
+                "Mana pont",
+                "Időtartam",
+                "Varázslás ideje"
+            ],
+            "rows": [
+                [
+                    "1/E",
+                    "6 kör (1 perc)",
+                    "3 szegmens"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A varázslat áldozata a varázsló által meghatározott személlyel, tárggyal, avagy eszmével kapcsolatban irigylésre méltó nyugalomról tesz tanúbizonyságot, még akkor is, ha egyébként minden jel arra mutat, hogy alapos oka lenne az ingerültségre. Másképpen ezt türelemnek is nevezhetnénk."
+        },
+        {
+            "type": "paragraph",
+            "text": "Ingerültség esetén az áldozat a fentiekkel szemben fokozottan türelmetlen; egyetlen rossz szó vagy mozdulat is azonnal kihozza a sodrából."
+        },
+        {
+            "type": "rule",
+            "title": "Hűség/Hűtlenség",
+            "headers": [
+                "Mana pont",
+                "Időtartam",
+                "Varázslás ideje"
+            ],
+            "rows": [
+                [
+                    "1/E",
+                    "6 kör (1 perc)",
+                    "3 szegmens"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A varázslat áldozata a varázsló által meghatározott személy, tárgy, avagy eszme irányában erős hűséget érez, ami a lojalitást kevésbé előtérbe helyező csoportok valamelyikébe tartozó áldozat esetében enyhébb, a becsületükre sokat adó lovagok és kardművészek esetében fokozottabb hatást jelent, mint a Szeretet, és az ott leírtakhoz hasonló cselekedetekre sarkallja."
+        },
+        {
+            "type": "paragraph",
+            "text": "Hűtlenség esetén a fentiek irányában semmilyen lojalitást nem érez, saját érdekeit azokénál mindenképp előrébb helyezi."
+        }
+    ]
+}

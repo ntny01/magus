@@ -1,0 +1,248 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": true,
+    "section_title": "Démonok és elemek",
+    "content_blocks": [
+        {
+            "type": "paragraph",
+            "text": "zavarodnak és gyengébben harcolnak. A tárgy minden E-je után -1 levonás jár a démonok Te-re és minden varázslatukat -1 E-vel gyengébben képesek csak létrehozni. A hatás 10 percig tart. Két használata között legalább egy órának kell eltelnie."
+        },
+        {
+            "type": "rule",
+            "title": "Démon idézése kővel",
+            "headers": [
+                "Leírás",
+                "Megjegyzés"
+            ],
+            "rows": [
+                [
+                    "A kő birtokában egy varázstudó megidézhet egy tetszőleges, általa kiválasztott démont. A kő helyettesíti az idéző pentagrammát és annyi Manapontot a litániából, amennyi az E-je. Mágikus gyertya, és a démon neve ez esetben is szükséges.",
+                    "Mivel itt nincs pentagramma, a gyertya addig fenyegeti a démont, amíg a varázstudó kezében van. Figyelem, az okozásra felkészített kő – akárcsak a pentagramma – nem véd meg a démontól! A tárgy két használata között legalább egy nap kell elteljen."
+                ]
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Démonok befolyásolása kővel",
+            "headers": [
+                "Leírás",
+                "Megjegyzés"
+            ],
+            "rows": [
+                [
+                    "A drágakövet tartalmazó tárgy segítségével saját akaratunkat rábírhatjuk egy démonra, ha elvéti Mentális Mágiaellenállását. Onnan kezdve úgy viselkedik, mintha Akaratátvitel mozaik hatna rá. A démonnak csak egyetlen parancsot – de bármilyen bonyolultat is – adhat a kő viselője, amit a démonnak végre kell hajtania.",
+                    "A kő hatása nem feleltethető meg egyértelműen Mentálmágikus hatásnak, mivel elsősorban a démonokkal és nem a Mentálmágiával áll kapcsolatban. Akár sikeres volt a küldetés, akár nem, egy nap elteltével a mágikus hatás elmúlik. A tárgy két használata között legalább egy nap kell elteljen."
+                ]
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Mentálmágia alkalmazása démonokra Alexandrittal",
+            "headers": [
+                "Leírás",
+                "Megjegyzés"
+            ],
+            "rows": [
+                [
+                    "Mint ismeretes, a démonok Mentáltestének felépítése annyira különböző az élőlényekétől, hogy külön ismeretek hiányában egyetlen varázstudó sem képes rájuk Mentálmágiával hatni. Alexandrit segítségével azonban, az okozásnál nem nagyobb erősítésű Mentálmágia alkalmazható ellenük.",
+                    ""
+                ]
+            ]
+        },
+        {
+            "type": "section_title",
+            "text": "Elemek kövei"
+        },
+        {
+            "type": "paragraph",
+            "text": "Akvamarin (Ősvíz, Elemi fagy),"
+        },
+        {
+            "type": "paragraph",
+            "text": "Gránát (Őstűz, Elemi hő),"
+        },
+        {
+            "type": "paragraph",
+            "text": "Jet (Ősföld, Elemi sötét),"
+        },
+        {
+            "type": "paragraph",
+            "text": "Hegyikristály (Őslevegő, Elemi fény)"
+        },
+        {
+            "type": "paragraph",
+            "text": "Nefrit (Elemi Erő)"
+        },
+        {
+            "type": "rule",
+            "title": "Őselemek detekciója és védelme",
+            "headers": [
+                "Leírás",
+                "Megjegyzés"
+            ],
+            "rows": [
+                [
+                    "Detekció: Őselemek észlelése. Alkalmas leplezett jelenlétük felderítésére is, ha a detekció erőssége meghaladja a leplezését. Segítségével viselőjük a többi, őselemekkel kapcsolatos tárgyról, rúnáról is megállapíthatja mibenlétüket. A rúnákat minden esetben látni kell.",
+                    "Védelem: Védelem a kapcsolatos őselemtől. Minden olyan varázslat, amely a kapcsolatos őselemen alapszik, annyit veszít E-jéből, amennyi a védő tárgy E-je. A gyengülés csak a viselőre érvényes – mintha ellentétes elemből való aura védené – a környezetre csonkítatlan erősséggel hat a varázslat. Használata összpontosítást és varázsszó kimondását igényli. A hatás 10 percig tart. Két használata között legalább egy órának kell eltelnie."
+                ]
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Őselemek megidézése kővel",
+            "headers": [
+                "Leírás",
+                "Megjegyzés"
+            ],
+            "rows": [
+                [
+                    "Okozás: A kapcsolatos őselem egy előre meghatározott formában megidézhető, kivéve a szabad elemi formázásokat. A tárgy minden esetben úgy működik, mint a megfelelő mágikus mozaik, negyede akkora Erősséggel, mint az okozás E-je (4 E okozás = 1E mozaik).",
+                    "A drágakő hatása azonban 1 percig (6 kör) tart, ami természetesen nem vonatkozik az Időtartam nélküli formákra (Nyíl, Kitörés). Két használata között legalább egy napnak kell eltelnie."
+                ]
+            ]
+        },
+        {
+            "type": "section_title",
+            "text": "Borostyán"
+        },
+        {
+            "type": "rule",
+            "title": "Betegségek detekciója és védelme borostyánnal",
+            "headers": [
+                "Leírás",
+                "Megjegyzés"
+            ],
+            "rows": [
+                [
+                    "Detekció: A kő viselője megállapíthatja, hogy van-e beteg ember a környezetében. Képes felfedni a fertőzött kutakat, ételeket is. A Mágikus betegségeket és hordozóikat is felfedezheti, ha a kő E-je nagyobb, mint a betegségé.",
+                    "Védelem: A betegségekkel szemben viselője egészségét javítja eggyel a kő minden 10 E-je (10 E = 1 pont); minden más tekintetben a viselő egészsége változatlan."
+                ]
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Mágikus betegségek okozása borostyánnal",
+            "headers": [
+                "Leírás",
+                "Megjegyzés"
+            ],
+            "rows": [
+                [
+                    "Okozás: A Fekete mágiával átitatott borostyán segítségével a kő tulajdonosa mágikus betegségeket okozhat ellenfeleinek, ha a kővel őket megérinti. Az áldozat dobhat Egészség-próbát, hogy a hatást elkerülje. Az okozott betegség fajtáját a készítő határozza meg a tárgy Erősségének függvényében.",
+                    "A tárgy két használata között legalább egy napnak kell eltelnie."
+                ]
+            ]
+        },
+        {
+            "type": "section_title",
+            "text": "Cirkon"
+        },
+        {
+            "type": "rule",
+            "title": "Időérzék és időtartam csökkentése cirkonnal",
+            "headers": [
+                "Leírás",
+                "Megjegyzés"
+            ],
+            "rows": [
+                [
+                    "Detekció: A kő páratlan időérzékkel ruházza föl tulajdonosát, ami gyakran nem kis előny, például a föld alatt, vagy olyan helyeken, ahol a karakter a nap, vagy a csillagok, esetleg holdak állásából nem képes meghatározni az idő múlását.",
+                    "Védelem: A kő a viselőjére ható varázslatok Időtartamát csökkenti, mégpedig 1 szegmenssel minden egyes E után. Ha a levonás nagyobb, mint a varázslat eredeti időtartama, akkor a varázslat – a kő viselőjén – csak 1 szegmensig működik. A hatás 10 percig tart. Két használata között legalább egy órának kell eltelnie."
+                ]
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Varázslatok időtartamának növelése cirkonnal",
+            "headers": [
+                "Leírás",
+                "Megjegyzés"
+            ],
+            "rows": [
+                [
+                    "Okozás: Ha varázstudó használja a követ, minden egyes varázslata annyi szegmenssel tovább tart, amennyi a kő E-je. Ez nem vonatkozik az Időtartam nélküli varázslatokra.",
+                    "Két használata között legalább egy napnak kell eltelnie."
+                ]
+            ]
+        },
+        {
+            "type": "section_title",
+            "text": "Füstkvarc"
+        },
+        {
+            "type": "rule",
+            "title": "Térmágia észlelése és iránytű funkció füstkvarccal",
+            "headers": [
+                "Leírás",
+                "Megjegyzés"
+            ],
+            "rows": [
+                [
+                    "Detekció: Térmágia észlelése. A tárgy segítségével viselője a többi, térmágiával kapcsolatos tárgyról, rúnáról is megállapíthatja mibenlétüket. A rúnákat minden esetben látni kell.",
+                    "Detekció: A kő viselője minden körülmények között képes megállapítani az északi irányt."
+                ]
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Távolbahatások elleni védelem füstkvarccal",
+            "headers": [
+                "Leírás",
+                "Megjegyzés"
+            ],
+            "rows": [
+                [
+                    "Védelem: A kő viselője nem hatnak azok a távolbaható varázslatok, melyek erőssége nem haladja meg a védelem erősségét.",
+                    "A hatás 10 percig tart. Két használata között legalább egy órának kell eltelnie."
+                ]
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Térmágikus hatások létrehozása füstkvarccal",
+            "headers": [
+                "Leírás",
+                "Megjegyzés"
+            ],
+            "rows": [
+                [
+                    "Okozás: A kő segítségével térmágikus hatások hozhatók létre: Térkapu (15 E a szükséges kőbe foglalt erősítés, ekkor a kapu 1 E-vel jön létre, és mind a kiinduló, mind az érkezési ponton már járnia kellett a kő felruházójának), Teleportáció (1 E/3 ynevi font, lásd a megfelelő mozaik leírását!) vagy Távolbahatás (1 E/+1 ynevi láb hatótáv). Ez utóbbit csak varázstudó képes használni, mégpedig ha varázslás közben jobbjába fogja a követ, az – Erősségének arányában – a megfelelő mozaikot pótolja. Minden esetben a pontos hatást a tárgy készítője határozza meg.",
+                    "Két használata között legalább egy napnak kell eltelnie."
+                ]
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Célt találó nyílvesszők füstkvarccal",
+            "headers": [
+                "Leírás",
+                "Megjegyzés"
+            ],
+            "rows": [
+                [
+                    "Okozás: A kő esszenciájába megmártott nyílvessző pontosan célt talál. Az ilyen vesszőt használó íjász +1-et kap CÉ-re az esszencia minden egyes E-je után, a nyílvessző csak egy lövésig birtokolja ezen bónuszt.",
+                    ""
+                ]
+            ]
+        },
+        {
+            "type": "section_title",
+            "text": "Hegyikristály, Holdkő, Kalcedon, Krizoberil, Obszidián"
+        },
+        {
+            "type": "rule",
+            "title": "Túlvilági lények észlelése",
+            "headers": [
+                "Leírás",
+                "Megjegyzés"
+            ],
+            "rows": [
+                [
+                    "Detekció: Élőholtak/kísértetek/lelkek/alakváltók észlelése. Ha a túlvilági teremtmény leplezni akarja jelenlétét, nagyobb erősítéssel kell tegye, mint a varázstárgy, különben derül fény jelenlétére.",
+                    "Az észlelő nem képes meghatározni a túlvilági teremtmény típusát, csak amennyire ezt az kő tárgyköre elárulja."
+                ]
+            ]
+        }
+    ]
+}

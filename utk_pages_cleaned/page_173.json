@@ -1,0 +1,124 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": true,
+    "section_title": "Harci helyzetek",
+    "content_blocks": [
+        {
+            "type": "paragraph",
+            "text": "Koronként többször támadhat tehát az, aki arra alkalmas fegyvert forgat."
+        },
+        {
+            "type": "paragraph",
+            "text": "Ha a karakter rendelkezik a Harcművészet, Pajzshasználat vagy Kétkezes harc képzettségek bármelyikével, az ott leírtaknak megfelelően több támadásra jogosult. Mindentképpen megjegyzendő, hogy több fenti feltétel megléte esetén nem adódik össze az eredmény. Sőt: azoknál a fegyvereknél, amelyek ezt lehetővé teszik, több támadás lehetséges. Aki emellett még Kétkezes harcban is jártas, az mindkét kézben tartott fegyverével képes erre. Abban az esetben, amikor a fegyverekre erre lehetőséget adnak, ő pedig jártas a képzettségben, mindkét kézzel kétszer támadhat. Azok ellen, akik magatehetetlenre, vagy egyéb okból képtelenek védekezésre, mindenki annyiszor támad koronként, ahányadik szintű a Fegyverhasználat képzettsége."
+        },
+        {
+            "type": "paragraph",
+            "text": "A Kezdeményező, Támadó és Céldobás eredményességét nagyban befolyásolhatja a harci helyzet. Ez magában foglalja a küzdő felek egymáshoz viszonyított helyzetéből, illetve a környezetükből származó előnyöket és hátrányokat. A következőkben majd más, felhasználati különböző harci helyzetet említünk és kommentálunk."
+        },
+        {
+            "type": "rule",
+            "title": "Meglepetésszerű támadás",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Harc magasabbról",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Harc helyhez kötve",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Harc fekve",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "Az érintett felállni csak akkor képes, ha sikeres mozgás értékű cselekedetet hajt végre anélkül, hogy közben bárki sikeres Támadó dobást hajtana végre ellene. Ha mindezen feltételek teljesülnek, a kör végére újból talpra állhat."
+        },
+        {
+            "type": "paragraph",
+            "text": "*Közelharc közben fekve lehetetlen célzófegyvert használni. Egyébként – harcon kívül – kizárólag nyílpuskával és fúvócsővel lehet eredményesen célozni fekve."
+        },
+        {
+            "type": "rule",
+            "title": "Harc mozgó lóról",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Harc vakon vagy vaksötétben",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Harc láthatatlan ellenféllel",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Harc gyűlölettel eltelve",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Roham",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "Roham esetén gyakran egy kör alatt eldől a küzdelem sorsa. Az eredmény legtöbbször attól függ, hogy a rohamozó, vagy a nyugton várakozó ellenfél ragadja-e magához a kezdeményezést. Sikeres roham, illetve a rohamozó ellen végrehajtott sikeres feltartó támadás esetén az okozott sebzés mindig kétszerese a közönségesnek (lásd még Egészségkörös cselekedetek!)."
+        },
+        {
+            "type": "paragraph",
+            "text": "A sebzés kétszeresedése nem vonatkozik sem a hajító-fegyverekre, sem a célzófegyverek lövedékei által okozott veszteségekre."
+        },
+        {
+            "type": "paragraph",
+            "text": "Ha mindkét fél rohamra lendül, az összecsapáskor mindketten élvezik és elszenvedik jelen szabály előnyeit és hátrányait, azonban a sebzés nem négyszereződik."
+        },
+        {
+            "type": "paragraph",
+            "text": "Rohammal csak akkor lehet több támadást is leadni, ha a rohamozót semmi sem kényszeríti lendülete megtörésére, lelassulásra, tehát senki nem dob ellene sikeres Támadó dobást, és nem kerül akadály az útjába. Ellenkező esetben a roham megtörik."
+        },
+        {
+            "type": "rule",
+            "title": "Harc az ellenfél elfogásáért",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        }
+    ]
+}

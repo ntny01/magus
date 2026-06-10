@@ -1,0 +1,132 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": true,
+    "section_title": "Életerő manipulálás",
+    "content_blocks": [
+        {
+            "type": "paragraph",
+            "text": "Az életerő manipuláló mágiák lényege, hogy áthágva a mágiaelmélet alapízéseit, képesek a Személyes Aura ellenére is direkt roncsolást végbevinni a szervezetben. A boszorkánymester varázshatalmát pusztító erőkké formázzák, melyek azonban az anyagot nem, csupán az Élet Princípiumát, a nyers életerőt emésztik el, s épp ezért esnek a Fekete mágia besorolásába."
+        },
+        {
+            "type": "paragraph",
+            "text": "A varázslatok létrehozása mindössze pár elsuttogott, mágiától átitatott ősi igéből és egy érintésből áll – ami harci helyzetben természetesen sikeres támadást igényel. A varázslás ideje minden esetben 1 szegmens E-nként, majd a nyitószavak elhangzása után a boszorkánymester bal kezével meg kell, hogy érintse áldozatát. A Hatótáv tehát mindig érintés. Mágiaellenállásnak helye nincs."
+        },
+        {
+            "type": "paragraph",
+            "text": "Az érintés pillanatában a varázslat megfogan, s minden egyes E után 1k10 Sp sebzést okoz."
+        },
+        {
+            "type": "paragraph",
+            "text": "Az így elveszített Fp-k és Ép-k csak fele sebességgel térnek vissza, s mágiával is csak feleannyit lehet gyógyítani az életerőt vesztett áldozaton, mint a hagyományos sebzésen."
+        },
+        {
+            "type": "rule",
+            "title": "Életerőszívás",
+            "headers": [
+                "Mana pont"
+            ],
+            "rows": [
+                [
+                    "4/E"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A boszorkánymester kezéből smaragdzöld derengés tör elő, ami egy szegmensre feldereng az érintés helyén, s égett szélű stigmával pecsételi meg az áldozatot, aki az érintés lassan halványuló nyomát élete végéig magán kell hordozza."
+        },
+        {
+            "type": "paragraph",
+            "text": "A boszorkánymester kezéből előtörő, megidézett energiák beférkőznek az anyagi szövetbe és hirtelen fájdalomhullámmal mohón szipolyozzák, pusztítják a lény életerejét. Az áldozat fájdalmasan megvonaglik, s 1k10 Sp-t veszít a varázslat minden egyes E-je után. A hatást csak súlyosbítja, hogy minden 5 Fp elvesztése 1 Ép veszteséggel is jár. Amennyiben azonban az áldozatnak elfogynak a Fájdalomtűrés pontjai, úgy a fennmaradó sebzés mind az Életerő pontjaiból vonódik le."
+        },
+        {
+            "type": "rule",
+            "title": "Életerőrablás",
+            "headers": [
+                "Mana pont"
+            ],
+            "rows": [
+                [
+                    "6/E"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "Az Életerőszívás összetettebb formája. A boszorkánymester az elszívott Sp-ket saját sebeinek gyógyítására használhatja fel. 1 elrablott Fp-vel 1 Fp-t, 1 Ép-vel 1 Ép-t vagy 5 Fp-t gyógyíthat saját magán (az Életerő fejezetben leírtaknak megfelelően minden 1 Ép gyógyulás után 2 Fp is regenerálódik)."
+        },
+        {
+            "type": "rule",
+            "title": "Életerő átadása",
+            "headers": [
+                "Mana pont"
+            ],
+            "rows": [
+                [
+                    "8/E"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A boszorkánymesterek Fekete mágiája eredetéből, módszereiből adódóan nem teremthet életerőt, igazi életet. Gondoskodhat azonban a kedvezőbb újraelosztásáról. A boszorkánymester érintése – akárcsak az Életerőszívásnál – energiát csapol le az áldozatból, s így szerzett életerőt a boszorkánymester átadhatja bárkinek (saját magának nincs értelme, akkor egyszerűbb – és kevesebb Mana pontból megoldható – az Életerőrablás alkalmazása). Az átadás pontosan úgy történik, mintha a boszorkánymester saját magát gyógyítaná. Az eddigiek alapján a varázslatból nem sok haszna származik magának a boszorkánymesternek. Ám most következik a lényeg."
+        },
+        {
+            "type": "paragraph",
+            "text": "A varázslat alkalmazója a „gyógyítást” követően az átadott Életerőt mindenféle mágia haszon nélkül vissza-veheti, és saját testének építésére használhatja fel. Ehhez csupán meg kell érintenie a személyt, akinek korábban az életerőt átadta."
+        },
+        {
+            "type": "paragraph",
+            "text": "Nem tesz hát mást, mint raktározza az energiát más szervezetében. Az időtartam 6 óra szintenként, ha ez az idő letelt, az energia már nem nyerhető vissza többé, az időtartamon belül azonban bármikor. Meglehetősen kínos lehet ez egy csatában például, amikor az áldozat már alig áll a lábán az energia visszavételének pillanatában."
+        },
+        {
+            "type": "rule",
+            "title": "Életerő felruházás",
+            "headers": [
+                "Mana pont"
+            ],
+            "rows": [
+                [
+                    "8/E"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "Ez a varázslat is Életerőszívással indul, ám a nyert életenergiát a boszorkánymester ezúttal egy kiválasztott élőhalottnak adhatja át. Az élőhalott annyi Ép-hez jut, amennyit az áldozat elveszített – az Fp-k számára semmit nem érnek, hiszen az élőhalott nem érez fájdalmat. Egy élőholtban azonban legfeljebb annyi Ép raktározható, amennyit a test életében is hordozott."
+        },
+        {
+            "type": "paragraph",
+            "text": "A varázslat alkalmazásakor – miután a boszorkánymester kiszipolyozta áldozatából az életerőt – kezében smaragdzölden pulzáló gömbbe gyűlik az energia, majd a varázslat végeztével 1 percen belül az élőholtat is meg kell érintenie, ellenkező esetben a begyűjtött életerő egyszerűen semmivé foszlik."
+        },
+        {
+            "type": "rule",
+            "title": "Életerő raktározása",
+            "headers": [
+                "Mana pont"
+            ],
+            "rows": [
+                [
+                    "12 + 4/E"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "Az Életerő raktározása egyike azon boszorkánymesteri varázslatoknak, melyek varázserőn kívül egyéb kellékeket is megkövetelnek. Az Életerő raktározásához ugyanis drágakőre vagy varázsjelre van szükség, hogy az elorzott Életerőt abban tárolja el."
+        },
+        {
+            "type": "paragraph",
+            "text": "A drágakőnek alkalmasnak kell lennie az életerő befogadására, így erre a célra kizárólag smaragd használható. A karátok száma megmutatja a maximálisan tárolható Ép-k és Fp-k számát. Egy karát 1 Ép avagy 5 Fp befogadására alkalmas. A varázslat első része mindenben megegyezik az Életerőszívással. A második rész, a nyert életerő felhasználása különös – a boszorkánymester ugyanis az energiát az előkészített drágakőben helyezheti el."
+        },
+        {
+            "type": "paragraph",
+            "text": "A kőből csak a boszorkánymester nyerheti vissza az életerőt, azaz kizárólag saját maga gyógyítására alkalmazhatja. A belehelyezett életerő korlátlan ideig a kőben maradhat, állandóan jelenlévő forrást jelentve veszély esetére. Az Ép-k és Fp-k kinyerése Mana pontot nem igényel, a szükséges koncentráció is csak 1 szegmens hosszú, és használata közben bal kezével meg kell érintenie a követ."
+        },
+        {
+            "type": "paragraph",
+            "text": "A másik lehetőség, hogy rajzolatban tárolja el a begyűjtött életerőt. A drágakővel ellentétben – aminek tiszta szerkezete önmagában is képes az életerő tárolására – itt"
+        }
+    ]
+}

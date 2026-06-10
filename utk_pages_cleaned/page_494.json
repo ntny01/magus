@@ -1,0 +1,216 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": false,
+    "section_title": "",
+    "content_blocks": [
+        {
+            "type": "rule",
+            "title": "Gólemalkotás folyamata",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "Először egy Lélekcsapda Varázsjelet kell a szoborra rajzolnia, ez adja a tulajdonképpeni „életet” az élettelen anyagnak. Második lépésként a test mozgatását lehetővé tevő Halottmozgatás Bélyeg ráírásának kell megtörténnie. Ezzel a két jellel és a beleidézett lélekkel a test már mozog, cselekszik. Sajnálatos módon a csapdába ejtett lélek irányítja, aki az esetek jelentős részében bensőjének legmélyéből fakadó ellenszenvvel viseltetik az őt csapdába ejtő varázsló iránt. Ennek egyenes következménye, hogy az alkotás az annyiszor ismételt, de örökérvényű módon reagál: teremtője ellen fordul."
+        },
+        {
+            "type": "paragraph",
+            "text": "A konfliktus elkerülésére természetesen van lehetőség. A Halottmozgatás Bélyeg alkalmazása előtt célszerű egy Akaratirányítás és egy Hűség Bélyeget a testre róni, ezzel biztosítva, hogy a gólem soha ne váljon engedetlenné, s csak gazdájának parancsait teljesítse. Ha ezek a Bélyegek a testen vannak, a szobor életre kel, s a varázsló befejezte alkotását. Hogy a szobor mennyire tökéletesen vagy tökéletlenül felel meg funkciójának, a varázsló ügyességének függvénye. A gólem befejezésekor a varázslónak Ügyességpróbát kell tennie. Ha ez sikertelen, a szobor a ráolvasott Bélyegek hatására sem válik gólemmé. A sikeres próba azt jelenti, a varázsló tökéletesen kombinálta elméleti tudását a gyakorlati szoboralkotással, s műve – úgyszólván – tökéletes."
+        },
+        {
+            "type": "paragraph",
+            "text": "A gólemek tulajdonságai igen sokfélék lehetnek: anyaguk és méreteik határozzák meg őket. Ezeket az alábbi táblázat foglalja össze. Fontos még, hogy az anyag-típusokhoz és méretekhez kapcsolódó jegyzetek sok egyéb, fontos információt tartalmaznak."
+        },
+        {
+            "type": "table",
+            "headers": [
+                "Méret",
+                "Seb.",
+                "Mér.",
+                "TÉ",
+                "VÉ",
+                "KÉ",
+                "Sebzés",
+                "Ép",
+                "Tp"
+            ],
+            "rows": [
+                [
+                    "fél lábnál kisebb",
+                    "60",
+                    "0",
+                    "55",
+                    "115",
+                    "50",
+                    "1k10/2",
+                    "8",
+                    "220"
+                ],
+                [
+                    "0.5-1 láb",
+                    "60",
+                    "0",
+                    "55",
+                    "115",
+                    "50",
+                    "1k10/2",
+                    "8",
+                    "220"
+                ],
+                [
+                    "1-1.5 láb",
+                    "65",
+                    "1",
+                    "65",
+                    "100",
+                    "40",
+                    "1k6+2",
+                    "10",
+                    "300"
+                ],
+                [
+                    "1.5-2 láb",
+                    "75",
+                    "1",
+                    "75",
+                    "90",
+                    "35",
+                    "1k10",
+                    "12",
+                    "450"
+                ],
+                [
+                    "2-2.5 láb",
+                    "6",
+                    "2",
+                    "75",
+                    "85",
+                    "25",
+                    "1k10+4",
+                    "15",
+                    "550"
+                ],
+                [
+                    "2.5-3 láb",
+                    "50",
+                    "2",
+                    "75",
+                    "95",
+                    "20",
+                    "2k10",
+                    "21",
+                    "680"
+                ],
+                [
+                    "3-3.5 láb",
+                    "35",
+                    "3",
+                    "70",
+                    "82",
+                    "20",
+                    "3k10",
+                    "26",
+                    "750"
+                ],
+                [
+                    "3.5-4 láb",
+                    "25",
+                    "4",
+                    "65",
+                    "80",
+                    "15",
+                    "4k10",
+                    "30",
+                    "800"
+                ],
+                [
+                    "4 lábnál nagyobb",
+                    "15",
+                    "5",
+                    "60",
+                    "60",
+                    "2",
+                    "5k10",
+                    "35",
+                    "780"
+                ]
+            ]
+        },
+        {
+            "type": "table",
+            "headers": [
+                "Alapanyag",
+                "Sebesség",
+                "Mérföld",
+                "Támadó Érték",
+                "Védő Érték",
+                "Sebzés",
+                "Életerő Pont",
+                "Tapasztalati Pont"
+            ],
+            "rows": [
+                [
+                    "Kő",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-"
+                ],
+                [
+                    "Fa",
+                    "x1/2",
+                    "-",
+                    "-",
+                    "+10",
+                    "-2/k",
+                    "x1/2",
+                    "x1/2"
+                ],
+                [
+                    "Agyag",
+                    "x1/2",
+                    "-",
+                    "-",
+                    "-10",
+                    "-2/k",
+                    "-",
+                    "x1/4"
+                ],
+                [
+                    "Vas",
+                    "-",
+                    "+10",
+                    "+10",
+                    "-",
+                    "-",
+                    "+20",
+                    "x1/2"
+                ]
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Gólemek tulajdonságai és módosítói",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "A táblázatban megtalálhatjuk azokat az értékeket, melyek az eredeti statisztikában változóként voltak jelezve. (A Seb. a Sebességet jelenti.) Fontos még, hogy az alapanyag-megválasztás is befolyásolja a méret által meghatározott tulajdonságokat. A méretnél szereplő értékek a kő alapanyagú gólemre kerültek kidolgozásra, így módosító ebben az esetben nincs. A szorzók a méreteknél számolt értékekre vonatkoznak, úgy mint a pozitív és negatív módosítók. A Sebzésnél a -2/k annyit jelent, hogy minden egyes sebzéskocka dobásából kettőt le kell vonni, tehát egy 4 lábnyi fa gólem 4k10-8 Sp-t sebez egy támadáskor, ha az sikeres volt. Ahol osztás is szerepel a sebzésben, ezt a 2 pontot mindig az osztás előtt kell kivonni a kockadobás eredményéből. Ha így egy kockadobásra negatív eredmény adódna, azt nullának kell tekinteni. A méretek csak a táblázatban szereplő értékek között mozoghatnak, mert az 1/2 lábnál alacsonyabb gólemeken nagyon nehéz az izmokat megformázni, a 4-4,5 lábnál magasabbak pedig nem stabilak, az anyagok nem teszik lehetővé, hogy mozoghassanak, két lábra emelkedhessenek. Így négy és fél méternél nagyobb működő gólemet még senkinek sem sikerült teremtenie, bár többen is megpróbálkoztak vele. Ezek a hatalmas szobrok saját súlyuk alatt összeroppantak."
+        },
+        {
+            "type": "rule",
+            "title": "Fájdalomtűrés",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "A gólemek nem éreznek fájdalmat, Fájdalomtűrés pontjaik száma gyakorlatilag végtelen. Ezért a gólemeken csak Túlütéssel lehet sebet ejteni."
+        }
+    ]
+}

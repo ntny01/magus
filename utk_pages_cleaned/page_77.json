@@ -1,0 +1,262 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": true,
+    "section_title": "1. Tapasztalati szinten",
+    "content_blocks": [
+        {
+            "type": "paragraph",
+            "text": "akik nem Kaoraku népéből származtak. Tanításaikkal megalapozták a későbbi tiadlani harcművész iskolák alapjait, amik bár azóta is őseik tradícióit követik, leginkább már csak hagyományaik, mentalitásuk, filozófiájuk alapjait őrizték meg hajdani mestereiktől.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "Az egyes iskolák tanítványai szinte testvéri közelségű kapcsolatba kerülnek egymással, a hosszú évek alatt acélkeménnyé kovácsolódik köztük az egység. Tudják, hogy akárhol vannak is, minden körülmények közt számíthatnak egymásra. Az iskolák vasfegyelmet követelnek meg tőlük, melyet a harcművészek életük végéig megőriznek. Sohasem kérkednek harci tudásukkal, igyekeznek kerülni a feltűnést. A tanítványok nem csupán harci képzésben részesülnek, mindenütt megismerkednek a sebgyógyítás alapjaival is.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "Mindamellett az egyes stílusok nem csupán technikai módszereik alapján ismerhetőek fel. Világszemléletet, életfilozófiát is hordoznak magukban. A sokszor évezredes múltra visszatekintő, gondosan felépített rendszer szerint működő intézmények az azonos küzdőstílus mellett óhatatlanul azonos értékrenddel ruháznak fel minden egyes tanítványt.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "A magányos mesternél tanulók általában más típusú egyéniséggé érnek. Az igazi mesterek maguk választják ki tanítványaikat, gondosan irányítva testi és lelki fejlődésüket. Legtöbben a tanítás idejét a civilizációtól távol töltik, hatalmas erdőségekben, ember nem lakta hegységekben.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "Akárhol is tanuljon azonban a harcművész, közös vonás mindannyiunkban, hogy tanulóéveik nem érnek véget a kolostorokban. Mestereik vallják, hogy a megvilágosodáshoz, a belső harmóniához a tapasztalaton át vezet az út. Ahhoz, hogy valaki képes legyen önmaga megismerésére, először a világot kell megismernie. A hosszas meditációk segítenek megtisztítani a lelket, a soha véget nem érő gyakorlatok megacélozzák a testet és az akaratot, ám e három összhangját csak az idő és a megértés hozhatja el.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "Ezért a harcművészek, mikor erre mestereik elérkezettnek látják az időt, hátrahagyják az eddig otthonukat jelentő kolostort, hogy a nagyvilágot járva keressék a megismerés ösvényét.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "A Harcművészek számára a harc nem cél, csak az út a tökéletesedéshez. Különleges képességeiket nem kiemelkedő harci tapasztalataiknak, hanem lelkük tökélybe hajló kifinomultságával, a tökéletesedés pillanatnyi elérésének megnyilvánulásával magyarázhatjuk. Ennek megfelelően harcértékeik nem feltétlenül haladják meg az egyszerű harcosokét. Ők nem puszta harci tudásukkal válnak többé más fegyverforgatóknál. HM-jeik számát szintenként átlagosan 8 ponttal növelik.",
+            "title": "Harci értékek (HM)",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "A harcművészek teste a kimerítő gyakorlatoknak és a testet-lelket egyaránt próbáló feladatoknak hála igen szívós. Hatalmas akaraterejükkel párosítva pedig nem ritkán emberfeletti fájdalomtűréssel bírnak. Fp-ik száma átlagosan szintenként 7 ponttal nő.",
+            "title": "Életerő és Fájdalomtűrés (Fp)",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "A képzettségek a harcművészek számára a harchoz hasonlóan a szemlélődés eszközei. Könnyen tanulnak, mindig nyitottak az újdonságok felé, lelkük minden megpróbáltatás nélkül fogadja be az új ismereteket. Kp-ik száma átlagosan szintenként 14-gyel nő.",
+            "title": "Képzettségpontok (Kp)",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "A harc művészei belső tartásuk, kifinomult elméjük, a harmóniára törekvés miatt többek, mint egyszerű öklözők, vagy kardforgatók. A kard és harcművészek különös és hatalmas energiákat rejtő képessége a Slan pszi alkalmazása, melyet eredetileg démonok megszabadítására fejlesztettek ki a szigetvilágbéli őseik. A játékban ezen képességük kihasználásával emelkednek az egyszerű harcosok fölé. Szintenként a Pszi képzettségük fokának megfelelő mennyiségű Pszi pontot kapnak.",
+            "title": "Pszi",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "table",
+            "text": "",
+            "title": "A harcművész induló képzettségei",
+            "headers": [
+                "Képzettség",
+                "Fok"
+            ],
+            "rows": [
+                [
+                    "Harcművészet (választott stílus)*",
+                    "3 fok"
+                ],
+                [
+                    "Harcművészet (1 választott harcművész fegyver)*",
+                    "3 fok"
+                ],
+                [
+                    "Harcművészet (Slan kard)**",
+                    "3 fok"
+                ],
+                [
+                    "Harcművészet (Slan tőr)**",
+                    "3 fok"
+                ],
+                [
+                    "Pszi (Slan Út)",
+                    "3 fok"
+                ],
+                [
+                    "Írás/olvasás",
+                    "1 fok"
+                ],
+                [
+                    "Orvoslás",
+                    "2 fok"
+                ],
+                [
+                    "Élettan",
+                    "2 fok"
+                ],
+                [
+                    "Herbalizmus",
+                    "2 fok"
+                ],
+                [
+                    "Esés",
+                    "+10%"
+                ],
+                [
+                    "Akrobatika",
+                    "+10%"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "* csak harcművész kapja meg ** csak kardművész kapja meg",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "Akrobatika, Élettan, Esés, Fájdalomtűrés, Fegyverismeret, Futás, Harcművészet, Harctéri gyakorlat, Herbalizmus, Írás/olvasás, Kétkezes harc, Kultúra, Művészetek, Nyelvtudás, Orvoslás, Párbaj, Pszi (Slan Út), Udvari etikett, Vakharc, Vérviselet.",
+            "title": "Tanulható képzettségek",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "I. A karakter induláskor ingyenesen felveheti a Pszi érzékenység Hátteret. II. 1. Tapasztalati szinten megkapja iskolája tradicionális fegyverét(rejt).",
+            "title": "Különleges előnyök és hátrányok",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "table",
+            "text": "",
+            "title": "Egy átlagos I. Tapasztalati szintű harcművész",
+            "headers": [
+                "Tulajdonság",
+                "Érték",
+                "Pont",
+                "Érték"
+            ],
+            "rows": [
+                [
+                    "Erő",
+                    "14",
+                    "Fp",
+                    "12"
+                ],
+                [
+                    "Gyorsaság",
+                    "14",
+                    "Yp",
+                    "34"
+                ],
+                [
+                    "Ügyesség",
+                    "15",
+                    "Yp",
+                    "15"
+                ],
+                [
+                    "Állóképesség",
+                    "13",
+                    "Mp",
+                    "—"
+                ],
+                [
+                    "Egészség",
+                    "12",
+                    "Kegy-pont",
+                    "—"
+                ],
+                [
+                    "Karizma",
+                    "13",
+                    "MME",
+                    "19"
+                ],
+                [
+                    "Intelligencia",
+                    "14",
+                    "AME",
+                    "19"
+                ],
+                [
+                    "Akaraterő",
+                    "14",
+                    "",
+                    ""
+                ],
+                [
+                    "Asztrál",
+                    "13",
+                    "",
+                    ""
+                ],
+                [
+                    "Érzékelés",
+                    "13",
+                    "",
+                    ""
+                ]
+            ]
+        },
+        {
+            "type": "table",
+            "text": "",
+            "title": "Elköltött KAP-ok",
+            "headers": [
+                "Kategória",
+                "Érték"
+            ],
+            "rows": [
+                [
+                    "Iskola (Harcművész)",
+                    "10 pont"
+                ],
+                [
+                    "Pszi Érzékenység",
+                    "3 pont"
+                ],
+                [
+                    "Szellemek jóindulata",
+                    ""
+                ],
+                [
+                    "HM",
+                    "16 pont (8 HM)"
+                ],
+                [
+                    "Fp",
+                    "7 pont (7Fp)"
+                ],
+                [
+                    "Kp",
+                    "14 pont (14 Kp)"
+                ]
+            ]
+        }
+    ]
+}

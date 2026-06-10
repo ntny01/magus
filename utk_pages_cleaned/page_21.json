@@ -1,0 +1,40 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": null,
+    "is_new_section": true,
+    "section_title": "Ember",
+    "content_blocks": [
+        {
+            "type": "paragraph",
+            "text": "Az emberi faj nem öröktől fogva lakja Ynev földjét; pontos eredetükről még a legbölcsebbek is csak ködös találgatásokba bocsátkozhatnak. A dorani magiszterek több értekezése az emberiség első feltűnését a Negyedkorra datálja, amikor is egy Cranta nevezetű emberi birodalom emelkedett fel Észak-Yneven a Fajháborúk káoszából."
+        },
+        {
+            "type": "paragraph",
+            "text": "Egyes pyar történetkutatók szerint azonban az emberek faja Dél-Yneven, a Démonikus óbirodalom létrejöttével és bukásával bukkant fel először a történelem színpadán."
+        },
+        {
+            "type": "paragraph",
+            "text": "Az azóta eltelt viharos évezredek majd' minden ősi fajnak hanyatlást hoztak; a rettegett aquirok a túlélésért küzdenek a kontinens félreeső szegleteiben, az elfek büszke népe mára hatalmának és életerejének töredékével bír csak, a dzsennek vére felhígult, az amundok földalatti romvárosaikba húzódtak vissza. A legtöbb ősi népre pedig már senki sem emlékszik Ynev egén."
+        },
+        {
+            "type": "paragraph",
+            "text": "Mindeközben az emberek sokasodtak, birodalmakat alapítottak; számtalanszor elbuktak – emlékezzünk csak a kyrek által megdöntött Crantára, a Godonban elpusztított kráni aquirokra vagy a Dúlás borzalmaira –, de a romokból, hamuból és üszökből mindig új birodalom épült, a fejüket dacosan felszegő, az élethez makacsul ragaszkodó emberek szorgos keze nyomán."
+        },
+        {
+            "type": "paragraph",
+            "text": "Bár az istenek által számukra rendelt idő szűkös, s csupán szívdobbanásoknak tűnhet az ősi fajok számára, nyitottságuk, tanulékonyságuk és hihetetlen tudásvágyuk kompenzálja eme fogyatékosságukat."
+        },
+        {
+            "type": "paragraph",
+            "text": "Ahány vidék, annyi fajta az ember. Ez a faj az, amely a leginkább változékony és rugalmas, amely a legtöbb tudást, kultúrát, hagyományt és eszmét fogadta magába, mintegy olvasztótégelyévé válva az őket megelőző társadalmak hagyatékának."
+        },
+        {
+            "type": "paragraph",
+            "text": "Alkalmazkodóképességük rendkívüli, kultúráik hihetetlenül sokszínűek: legtöbbjük nem is tudja már, milyen ősöknek köszönheti hagyományait. Épp ezért kilátástalan vállalkozás volna röviden összefoglalni változékony, egymástól sok esetben teljesen idegen kultúráikat. Az egyes emberi társadalmakról csak külön-külön érdemes beszélni, hisz az embernépek számtalan vizsgálódása tanúsíthatja, hogy az emberiség jellemzésekor nem célravezetőek az általánosítások."
+        },
+        {
+            "type": "paragraph",
+            "text": "Az emberi kultúrákról, országokról, birodalmakról a Kalandok Kontinense c. fejezetben olvashatsz a könyv 402. oldalán."
+        }
+    ]
+}

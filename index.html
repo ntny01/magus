@@ -1,0 +1,1953 @@
+<!DOCTYPE html>
+<html lang="hu" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M.A.G.U.S. ÚTK - Digitális Szabálykönyv</title>
+    
+    <style>
+        #mapLinkBtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(59, 130, 246, 0.1);
+    color: #3b82f6;
+    border: 1px solid rgba(59, 130, 246, 0.2);
+    width: 32px;
+    height: 32px;
+    font-size: 0.95rem;
+    border-radius: 0.375rem;
+    cursor: pointer;
+    margin-right: 0.75rem;
+    text-decoration: none;
+    transition: all 0.2s;
+}
+#mapLinkBtn:hover {
+    background: #3b82f6;
+    color: #000;
+}
+
+.header-icon-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.05);
+    color: var(--text-main);
+    border: 1px solid var(--border-color);
+    width: 32px;
+    height: 32px;
+    font-size: 0.95rem;
+    border-radius: 0.375rem;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.2s;
+}
+.header-icon-btn:hover {
+    background: var(--accent);
+    color: #000;
+    border-color: var(--accent);
+}
+
+
+        /* ALAPBEÁLLÍTÁSOK ÉS SÖTÉT MÓD SZÍNEI */
+        :root {
+            --bg-main: #f8fafc;
+            --bg-card: #ffffff;
+            --border-color: #e2e8f0;
+            --text-main: #0f172a;
+            --text-muted: #475569;
+            --accent: #059669;
+            --accent-hover: #10b981;
+            --callout-rule-bg: rgba(245, 158, 11, 0.1);
+            --callout-rule-border: #f59e0b;
+            --callout-example-bg: rgba(5, 150, 105, 0.1);
+            --callout-example-border: #059669;
+        }
+
+        html.dark {
+            --bg-main: #020617;
+            --bg-card: #0f172a;
+            --border-color: #1e293b;
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+            --accent: #10b981;
+            --accent-hover: #34d399;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-main);
+            color: var(--text-main);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            transition: background-color 0.2s, color 0.2s;
+        }
+
+        /* FELSŐ SÁV */
+        header {
+            position: sticky;
+            top: 0;
+            z-index: 50;
+            height: 4rem;
+            background-color: var(--bg-card);
+            border-bottom: 1px solid var(--border-color);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 1rem;
+            box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+        }
+
+        .logo-area {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        .logo-text {
+            font-weight: 800;
+            color: var(--accent);
+            letter-spacing: 0.05em;
+            font-size: 1.125rem;
+        }
+
+        .badge {
+            font-size: 0.75rem;
+            background-color: var(--border-color);
+            color: var(--text-muted);
+            padding: 0.125rem 0.5rem;
+            border-radius: 0.25rem;
+            font-family: monospace;
+        }
+
+        .search-container {
+            position: relative;
+            width: 100%;
+            max-width: 28rem;
+            margin: 0 1rem;
+        }
+
+        .search-input {
+            width: 100%;
+            padding: 0.5rem 1rem 0.5rem 2.25rem;
+            background-color: var(--bg-main);
+            border: 1px solid var(--border-color);
+            border-radius: 0.5rem;
+            font-size: 0.875rem;
+            color: var(--text-main);
+            outline: none;
+            transition: all 0.2s;
+        }
+
+        .search-input:focus {
+            border-color: var(--accent);
+            background-color: var(--bg-card);
+        }
+
+        .icon-btn {
+            background: none;
+            border: none;
+            padding: 0.5rem;
+            border-radius: 0.5rem;
+            color: var(--text-muted);
+            cursor: pointer;
+            font-size: 1.1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .icon-btn:hover {
+            background-color: var(--border-color);
+            color: var(--text-main);
+        }
+
+        .layout-container {
+            display: flex;
+            flex: 1;
+            position: relative;
+        }
+
+        /* OLDALSÁV */
+        aside {
+            position: fixed;
+            top: 4rem;
+            bottom: 0;
+            left: 0;
+            width: 18rem;
+            background-color: var(--bg-card);
+            border-right: 1px solid var(--border-color);
+            overflow-y: auto;
+            padding: 1rem;
+            transition: transform 0.3s ease-in-out;
+            z-index: 40;
+        }
+
+        @media (min-width: 768px) {
+            aside {
+                position: sticky;
+                transform: translateX(0) !important;
+            }
+            .menu-toggle-btn { display: none !important; }
+        }
+
+        aside.closed { transform: translateX(-18rem); }
+        aside.open { transform: translateX(0); }
+
+        .nav-group {
+            margin-bottom: 1rem;
+        }
+
+        .nav-title {
+            width: 100%;
+            text-align: left;
+            background: none;
+            border: none;
+            font-weight: 600;
+            color: var(--text-main);
+            padding: 0.5rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+            font-size: 0.9rem;
+        }
+
+        .nav-links {
+            padding-left: 1rem;
+            margin-top: 0.25rem;
+        }
+
+        .nav-link {
+            display: block;
+            padding: 0.375rem 0.5rem;
+            color: var(--text-muted);
+            text-decoration: none;
+            border-radius: 0.25rem;
+            font-size: 0.85rem;
+            cursor: pointer;
+        }
+
+        .nav-link:hover {
+            color: var(--accent);
+            background-color: var(--bg-main);
+        }
+
+        /* KÖZÉPSŐ TARTALOM */
+        main {
+            flex: 1;
+            padding: 2rem 1rem;
+            max-width: 48rem;
+            margin: 0 auto;
+            width: 100%;
+        }
+
+        @media (min-width: 768px) {
+            main { padding: 2rem 3rem; }
+        }
+
+        section {
+            scroll-margin-top: 5rem;
+            margin-bottom: 2.5rem;
+        }
+
+        .section-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 0.5rem;
+            margin-bottom: 1rem;
+        }
+
+        h1 { font-size: 1.875rem; font-weight: 800; }
+        h2 { font-size: 1.5rem; font-weight: 700; }
+        p { line-height: 1.7; margin-bottom: 1rem; color: var(--text-main); }
+        
+        .highlight { color: var(--accent); font-weight: 600; }
+
+        .callout {
+            border-left-width: 4px;
+            border-left-style: solid;
+            padding: 1rem;
+            border-radius: 0 0.5rem 0.5rem 0;
+            margin: 1.5rem 0;
+        }
+
+        .callout-rule {
+            background-color: var(--callout-rule-bg);
+            border-left-color: var(--callout-rule-border);
+        }
+
+        .callout-example {
+            background-color: var(--callout-example-bg);
+            border-left-color: var(--callout-example-border);
+        }
+
+        .callout-title {
+            font-weight: 700;
+            font-size: 0.875rem;
+            margin-bottom: 0.25rem;
+        }
+
+        .callout-rule .callout-title { color: var(--callout-rule-border); }
+        .callout-example .callout-title { color: var(--callout-example-border); }
+
+        .table-container {
+            overflow-x: auto;
+            border: 1px solid var(--border-color);
+            border-radius: 0.5rem;
+            margin: 1.5rem 0;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            text-align: left;
+            font-size: 0.875rem;
+        }
+
+        th {
+            background-color: var(--border-color);
+            padding: 0.75rem;
+            font-weight: 600;
+        }
+
+        td {
+            padding: 0.75rem;
+            border-top: 1px solid var(--border-color);
+        }
+
+        tr:hover {
+            background-color: var(--border-color);
+        }
+
+        .formula {
+            font-family: monospace;
+            font-size: 0.8rem;
+            background-color: var(--bg-main);
+            padding: 0.25rem 0.5rem;
+            border-radius: 0.25rem;
+        }
+
+        .pagination {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 3rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid var(--border-color);
+        }
+
+        .page-btn {
+            background: none;
+            border: 1px solid var(--border-color);
+            color: var(--text-muted);
+            padding: 0.5rem 1rem;
+            border-radius: 0.375rem;
+            cursor: pointer;
+            font-weight: 500;
+            font-size: 0.875rem;
+        }
+
+        .page-btn:hover {
+            border-color: var(--accent);
+            color: var(--accent);
+        }
+
+        #scrollToTop {
+            position: fixed;
+            bottom: 1.5rem;
+            right: 1.5rem;
+            background-color: var(--accent);
+            color: white;
+            border: none;
+            width: 2.5rem;
+            height: 2.5rem;
+            border-radius: 50%;
+            cursor: pointer;
+            display: none;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            z-index: 100;
+        }
+
+        #overlay {
+            position: fixed;
+            inset: 0;
+            background-color: rgba(0,0,0,0.5);
+            z-index: 30;
+            display: none;
+        }
+        /* Quick-Glosszary Felugró Ablak Stílusai */
+.glossary-modal {
+    display: none;
+    position: fixed;
+    z-index: 2000;
+    left: 0; top: 0;
+    width: 100%; height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(4px);
+    align-items: center; justify-content: center;
+}
+.glossary-content {
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    padding: 1.5rem;
+    border-radius: 0.75rem;
+    width: 90%; max-width: 550px;
+    max-height: 80vh;
+    overflow-y: auto;
+    box-shadow: 0 10px 25px -5px rgba(0,0,0,0.5);
+    position: relative;
+    animation: modalFadeIn 0.2s ease-out;
+}
+@keyframes modalFadeIn {
+    from { opacity: 0; transform: scale(0.95); }
+    to { opacity: 1; transform: scale(1); }
+}
+.modal-close {
+    position: absolute;
+    top: 1rem; right: 1rem;
+    cursor: pointer;
+    font-size: 1.25rem;
+    color: var(--text-muted);
+}
+.modal-close:hover { color: var(--text-main); }
+
+/* Betűméret állító gombok a felső sávba */
+.font-controls {
+    display: flex;
+    gap: 0.25rem;
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: 0.375rem;
+    padding: 0.15rem;
+    margin-right: 0.5rem;
+}
+.font-btn {
+    background: transparent;
+    border: none;
+    color: var(--text-main);
+    padding: 0.25rem 0.5rem;
+    cursor: pointer;
+    font-size: 0.85rem;
+    border-radius: 0.25rem;
+}
+.font-btn:hover { background: rgba(255,255,255,0.05); }
+
+/* ===== MOBILE SEARCH TOGGLE BUTTON ===== */
+#mobileSearchBtn {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    background: none;
+    border: none;
+    color: var(--text-muted);
+    font-size: 1.1rem;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    min-width: 44px;
+    min-height: 44px;
+}
+#mobileSearchBtn:hover { background-color: var(--border-color); color: var(--text-main); }
+
+/* ===== MOBILE BOTTOM NAVIGATION BAR ===== */
+#mobileBottomBar {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 60;
+    background: rgba(2, 6, 23, 0.97);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-top: 1px solid rgba(255,255,255,0.08);
+    padding: 0.4rem 0.75rem;
+    padding-bottom: max(0.4rem, env(safe-area-inset-bottom));
+    align-items: center;
+    justify-content: space-around;
+    gap: 0.25rem;
+    box-shadow: 0 -4px 24px rgba(0,0,0,0.4);
+}
+.mobile-nav-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.15rem;
+    color: rgba(212,175,55,0.75);
+    text-decoration: none;
+    font-size: 1.3rem;
+    min-width: 52px;
+    min-height: 52px;
+    border-radius: 12px;
+    transition: background 0.2s, color 0.2s;
+    padding: 0.25rem;
+}
+.mobile-nav-btn span {
+    font-size: 0.6rem;
+    color: var(--text-muted);
+    font-family: 'Inter', sans-serif;
+    letter-spacing: 0.02em;
+}
+.mobile-nav-btn:hover, .mobile-nav-btn:active { background: rgba(212,175,55,0.1); color: #d4af37; }
+.mobile-font-controls {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.15rem;
+}
+.mobile-font-row { display: flex; gap: 0.25rem; }
+.mobile-font-btn {
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(255,255,255,0.1);
+    color: var(--text-main);
+    padding: 0.2rem 0.5rem;
+    cursor: pointer;
+    font-size: 0.8rem;
+    border-radius: 0.375rem;
+    min-width: 36px;
+    min-height: 30px;
+    transition: background 0.2s;
+}
+.mobile-font-btn:hover, .mobile-font-btn:active { background: rgba(255,255,255,0.12); }
+.mobile-font-label {
+    font-size: 0.58rem;
+    color: var(--text-muted);
+    font-family: 'Inter', sans-serif;
+}
+
+/* ===== RESPONSIVE OVERRIDES ===== */
+@media (max-width: 767px) {
+    header {
+        height: auto !important;
+        flex-wrap: wrap;
+        padding: 0.5rem 0.75rem !important;
+        gap: 0.4rem;
+        align-items: center;
+    }
+    .logo-area:first-child { flex: 1; }
+    .desktop-only { display: none !important; }
+    .search-container {
+        order: 10;
+        width: 100%;
+        max-width: 100% !important;
+        margin: 0 !important;
+        display: none;
+    }
+    .search-container.mobile-open { display: block; }
+    #mobileSearchBtn { display: flex !important; }
+
+    .icon-btn, .header-icon-btn, #mapLinkBtn {
+        min-width: 44px !important;
+        min-height: 44px !important;
+        width: 44px !important;
+        height: 44px !important;
+    }
+    .nav-link {
+        padding: 0.625rem 0.5rem !important;
+        min-height: 44px;
+        display: flex !important;
+        align-items: center;
+    }
+    .nav-title {
+        min-height: 48px;
+        font-size: 0.95rem !important;
+        padding: 0.625rem 0.5rem !important;
+    }
+    aside { width: 16rem !important; }
+    main {
+        padding: 1rem 0.75rem !important;
+        padding-bottom: 5.5rem !important;
+    }
+    article {
+        border-radius: 16px !important;
+        padding: 1.25rem 1rem !important;
+    }
+    .pagination { gap: 0.5rem; margin-top: 2rem; }
+    .page-btn {
+        flex: 1;
+        min-height: 48px !important;
+        font-size: 0.95rem !important;
+        border-radius: 12px !important;
+    }
+    .section-header { flex-wrap: wrap; gap: 0.5rem; }
+    h1 { font-size: 1.4rem !important; }
+    h2 { font-size: 1.25rem !important; }
+    #searchResults { left: 0 !important; right: 0 !important; }
+    #scrollToTop { bottom: 5.5rem !important; right: 1rem !important; }
+    #mobileBottomBar { display: flex !important; }
+    .table-container { -webkit-overflow-scrolling: touch; }
+    table { font-size: 0.8rem !important; }
+    td, th { padding: 0.5rem 0.4rem !important; }
+    .callout { padding: 0.75rem !important; margin: 1rem 0 !important; }
+    .glossary-content {
+        width: 95% !important;
+        max-height: 88vh !important;
+        border-radius: 16px !important;
+        padding: 1.25rem !important;
+    }
+    #bookmarkDropdown { width: 14rem !important; }
+    p { max-width: 100% !important; }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    aside { width: 15rem !important; }
+    main { padding: 1.5rem 2rem !important; }
+    h1 { font-size: 1.65rem !important; }
+    .nav-link { min-height: 38px; }
+    .page-btn { min-height: 44px !important; }
+}
+
+html, body { overflow-x: hidden; max-width: 100vw; }
+
+    </style>
+    <style>
+
+/* ===== FANTASY OVERLAY UI ===== */
+
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap');
+
+body{
+
+    background:
+        radial-gradient(circle at top left, rgba(16,185,129,.06), transparent 30%),
+        radial-gradient(circle at bottom right, rgba(212,175,55,.05), transparent 30%),
+        linear-gradient(180deg,#020617 0%,#071018 100%) !important;
+
+    color:#e2e8f0 !important;
+
+    font-family:'Inter',sans-serif !important;
+}
+
+/* ===== TOPBAR ===== */
+
+header{
+
+    backdrop-filter:blur(18px);
+
+    background:rgba(2,6,23,.72) !important;
+
+    border-bottom:1px solid rgba(255,255,255,.06);
+
+    box-shadow:
+        0 10px 40px rgba(0,0,0,.35);
+}
+
+/* ===== LOGO ===== */
+
+.logo-text{
+
+    font-family:'Cinzel',serif !important;
+
+    color:#d4af37 !important;
+
+    letter-spacing:.12em;
+}
+
+/* ===== SIDEBAR ===== */
+
+aside{
+
+    background:rgba(2,6,23,.72) !important;
+
+    backdrop-filter:blur(18px);
+
+    border-right:1px solid rgba(255,255,255,.06);
+}
+
+/* ===== NAV GROUPS ===== */
+
+.nav-group{
+
+    background:rgba(255,255,255,.02);
+
+    border:1px solid rgba(255,255,255,.04);
+
+    border-radius:16px;
+
+    margin-bottom:10px;
+
+    overflow:hidden;
+}
+
+.nav-title{
+
+    font-family:'Cinzel',serif !important;
+
+    color:#d4af37 !important;
+
+    transition:.2s;
+}
+
+.nav-title:hover{
+
+    background:rgba(255,255,255,.03);
+}
+
+.nav-link{
+
+    border-radius:10px;
+
+    transition:.2s;
+}
+
+.nav-link:hover{
+
+    background:rgba(16,185,129,.08);
+
+    color:#34d399 !important;
+
+    transform:translateX(4px);
+}
+
+/* ===== CONTENT ===== */
+
+main{
+
+    padding-top:20px;
+}
+
+article{
+
+    position:relative;
+    
+    overflow:hidden;
+
+    background:rgba(15,23,42,.45);
+
+    backdrop-filter:blur(14px);
+
+    border:1px solid rgba(255,255,255,.06);
+
+    border-radius:26px;
+
+    box-shadow:
+        0 20px 70px rgba(0,0,0,.35);
+}
+
+/* ===== TEXT ===== */
+
+h1,h2,h3{
+
+    font-family:'Cinzel',serif !important;
+
+    color:#d4af37 !important;
+}
+
+p,
+span,
+div,
+td,
+li{
+
+    color:#e2e8f0;
+}
+
+/* ===== BUTTONS ===== */
+
+button,
+.icon-btn,
+.page-btn,
+.header-icon-btn{
+
+    transition:
+        transform .2s ease,
+        background .2s ease,
+        border-color .2s ease;
+}
+
+button:hover,
+.icon-btn:hover,
+.page-btn:hover,
+.header-icon-btn:hover{
+
+    transform:translateY(-2px);
+}
+
+.icon-btn,
+.page-btn,
+.header-icon-btn{
+
+    background:rgba(255,255,255,.03) !important;
+
+    border:1px solid rgba(255,255,255,.08) !important;
+
+    border-radius:12px;
+
+    color:white !important;
+}
+
+.page-btn:hover{
+
+    background:rgba(16,185,129,.08) !important;
+
+    border-color:rgba(16,185,129,.35) !important;
+}
+
+/* ===== SEARCH ===== */
+
+.search-input{
+
+    background:rgba(15,23,42,.72) !important;
+
+    border:1px solid rgba(255,255,255,.08) !important;
+
+    border-radius:14px;
+
+    color:white !important;
+
+    backdrop-filter:blur(10px);
+}
+
+.search-input:focus{
+
+    border-color:rgba(16,185,129,.4) !important;
+
+    box-shadow:
+        0 0 0 4px rgba(16,185,129,.08);
+}
+
+/* ===== TABLES ===== */
+
+table{
+
+    overflow:hidden;
+
+    border-radius:16px;
+}
+
+th{
+
+    background:rgba(16,185,129,.12) !important;
+
+    color:#34d399 !important;
+}
+
+td,
+th{
+
+    border-color:rgba(255,255,255,.06) !important;
+}
+
+/* ===== MODALS ===== */
+
+.glossary-content{
+
+    background:rgba(15,23,42,.95) !important;
+
+    border:1px solid rgba(255,255,255,.08);
+
+    border-radius:26px;
+}
+
+/* ===== SEARCH DROPDOWN ===== */
+
+#searchResults,
+#bookmarkDropdown{
+
+    background:rgba(15,23,42,.96) !important;
+
+    backdrop-filter:blur(18px);
+
+    border:1px solid rgba(255,255,255,.08) !important;
+
+    border-radius:18px !important;
+
+    box-shadow:
+        0 30px 80px rgba(0,0,0,.45);
+}
+
+/* ===== SCROLLBAR ===== */
+
+::-webkit-scrollbar{
+
+    width:8px;
+}
+
+::-webkit-scrollbar-track{
+
+    background:#020617;
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:rgba(255,255,255,.12);
+
+    border-radius:999px;
+}
+
+/* ===== MAGIC BACKGROUND ===== */
+
+body::before{
+
+    content:'';
+
+    position:fixed;
+
+    inset:0;
+
+    background:
+        radial-gradient(circle at 20% 20%, rgba(16,185,129,.08), transparent 20%),
+        radial-gradient(circle at 80% 80%, rgba(212,175,55,.06), transparent 20%);
+
+    pointer-events:none;
+
+    z-index:-1;
+}
+/* ===== CODEX GLOW ===== */
+
+article::before{
+
+    content:'';
+
+    position:absolute;
+
+    inset:0;
+
+    background:
+        linear-gradient(
+            180deg,
+            rgba(255,255,255,.03),
+            transparent 120px
+        );
+
+    pointer-events:none;
+}
+
+article::after{
+
+    content:'';
+
+    position:absolute;
+
+    inset:0;
+
+    background:
+        radial-gradient(
+            circle at top,
+            rgba(212,175,55,.05),
+            transparent 35%
+        );
+
+    pointer-events:none;
+}
+
+/* ===== PARAGRAPH READABILITY ===== */
+
+p{
+
+    max-width:78ch;
+
+    letter-spacing:.01em;
+}
+
+/* ===== SECTION TITLES ===== */
+
+h2{
+
+    position:relative;
+
+    padding-bottom:14px;
+
+    margin-bottom:24px;
+}
+
+h2::after{
+
+    content:'';
+
+    position:absolute;
+
+    left:0;
+    bottom:0;
+
+    width:120px;
+    height:2px;
+
+    background:
+        linear-gradient(
+            90deg,
+            #d4af37,
+            transparent
+        );
+}
+/* ===== NAV MAGIC ===== */
+
+.nav-link{
+
+    position:relative;
+
+    overflow:hidden;
+}
+
+.nav-link::before{
+
+    content:'';
+
+    position:absolute;
+
+    inset:0;
+
+    background:
+        linear-gradient(
+            90deg,
+            transparent,
+            rgba(255,255,255,.06),
+            transparent
+        );
+
+    transform:translateX(-100%);
+
+    transition:.45s;
+}
+
+.nav-link:hover::before{
+
+    transform:translateX(100%);
+}
+/* ===== PARTICLES ===== */
+
+#magic-particles{
+
+    position:fixed;
+
+    inset:0;
+
+    overflow:hidden;
+
+    pointer-events:none;
+
+    z-index:-1;
+}
+
+.rune{
+
+    position:absolute;
+
+    color:rgba(212,175,55,.12);
+
+    font-size:14px;
+
+    animation:floatRune linear infinite;
+}
+
+@keyframes floatRune{
+
+    from{
+
+        transform:
+            translateY(100vh)
+            rotate(0deg);
+
+        opacity:0;
+    }
+
+    10%{
+
+        opacity:1;
+    }
+
+    90%{
+
+        opacity:1;
+    }
+
+    to{
+
+        transform:
+            translateY(-120px)
+            rotate(360deg);
+
+        opacity:0;
+    }
+}
+/* ===== TABLE UPGRADE ===== */
+
+table{
+
+    background:
+        rgba(255,255,255,.02);
+
+    overflow:hidden;
+
+    border-radius:18px;
+}
+
+tr{
+
+    transition:.2s;
+}
+
+tbody tr:hover{
+
+    background:
+        rgba(255,255,255,.03);
+}
+/* ===== BUTTON MAGIC ===== */
+
+.page-btn,
+.icon-btn,
+.header-icon-btn{
+
+    position:relative;
+
+    overflow:hidden;
+}
+
+.page-btn::before,
+.icon-btn::before,
+.header-icon-btn::before{
+
+    content:'';
+
+    position:absolute;
+
+    inset:0;
+
+    background:
+        linear-gradient(
+            120deg,
+            transparent,
+            rgba(255,255,255,.08),
+            transparent
+        );
+
+    transform:translateX(-120%);
+
+    transition:.45s;
+}
+
+.page-btn:hover::before,
+.icon-btn:hover::before,
+.header-icon-btn:hover::before{
+
+    transform:translateX(120%);
+}
+</style>
+</head>
+<body>
+<div id="magic-particles"></div>
+    <header>
+        <div class="logo-area">
+            <button id="menuToggle" class="icon-btn menu-toggle-btn">☰</button>
+            <span class="logo-text">M.A.G.U.S.</span>
+            <span class="badge">ÚTK</span>
+        </div>
+
+        <div class="search-container" id="searchContainer">
+            <input type="text" id="globalSearch" placeholder="Gyorskeresés (szabályok, kasztok)..." class="search-input" autocomplete="off">
+            <div id="searchResults" style="display: none; position: absolute; top: 110%; left: 0; right: 0; background-color: var(--bg-card); border: 1px solid var(--border-color); border-radius: 0.5rem; max-height: 20rem; overflow-y: auto; z-index: 100; box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3);"></div>
+        </div>
+
+        <div class="logo-area">
+            <button id="mobileSearchBtn" title="Keresés">🔍</button>
+            <div style="position: relative;">
+                <button id="bookmarkMenuBtn" class="icon-btn" title="Könyvjelzők">🔖</button>
+                <div id="bookmarkDropdown" style="display: none; position: absolute; top: 110%; right: 0; width: 16rem; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 0.5rem; max-height: 20rem; overflow-y: auto; z-index: 100; box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3); padding: 0.5rem 0;">
+                    <div style="font-size: 0.8rem; font-weight: 700; color: var(--text-muted); padding: 0.5rem 1rem; border-bottom: 1px solid var(--border-color);">MENTETT SZABÁLYOK</div>
+                    <div id="bookmarkList"></div>
+                </div>
+            </div>
+            <div class="font-controls desktop-only">
+<div style="display: flex; gap: 0.5rem; margin-right: 0.75rem;">
+    <a href="km_pult.html" target="_blank" class="header-icon-btn" title="Kalandmesteri Pult megnyitása">🛡️</a>
+    <a href="ynev_terkep.html" target="_blank" id="mapLinkBtn" title="Interaktív Ynev Térkép megnyitása">🗺️</a>
+    <a href="char.html" target="_blank" class="header-icon-btn" title="Karakterlap megnyitása">🧙‍♂️</a>
+</div>
+    <button class="font-btn" id="fontDecrease" title="Betűméret csökkentése">A-</button>
+    <button class="font-btn" id="fontIncrease" title="Betűméret növelése">A+</button>
+</div>
+        </div>
+    </header>
+
+    <div class="layout-container">
+        <div id="overlay"></div>
+        <aside id="sidebar" class="closed"></aside>
+
+        <main>
+            <article id="content-area"></article>
+
+            <div class="pagination">
+                <button class="page-btn" id="prevBtn">◀ Előző</button>
+                <button class="page-btn" id="nextBtn">Következő ▶</button>
+            </div>
+        </main>
+    </div>
+
+    <button id="scrollToTop">▲</button>
+
+    <!-- Mobilos alsó navigációs sáv -->
+    <div id="mobileBottomBar">
+        <a href="km_pult.html" target="_blank" class="mobile-nav-btn" title="Kalandmesteri Pult">🛡️<span>KM Pult</span></a>
+        <a href="ynev_terkep.html" target="_blank" class="mobile-nav-btn" title="Interaktív Térkép">🗺️<span>Térkép</span></a>
+        <a href="char.html" target="_blank" class="mobile-nav-btn" title="Karakterlap">🧙‍♂️<span>Karakter</span></a>
+        <div class="mobile-font-controls">
+            <div class="mobile-font-row">
+                <button class="mobile-font-btn" id="mobileFontDecrease" title="Betűméret csökkentése">A-</button>
+                <button class="mobile-font-btn" id="mobileFontIncrease" title="Betűméret növelése">A+</button>
+            </div>
+            <span class="mobile-font-label">Betűméret</span>
+        </div>
+    </div>
+    <script>
+// Globális állapotok és adatbázis alapértelmezés
+let utkData = { "chapters": [] };
+let allSections = [];
+let currentSectionIndex = 0;
+
+// UI ELEMEK KIGYŰJTÉSE
+const sidebar = document.getElementById('sidebar');
+const contentArea = document.getElementById('content-area');
+const menuToggle = document.getElementById('menuToggle');
+const overlay = document.getElementById('overlay');
+const scrollToTopBtn = document.getElementById('scrollToTop');
+const prevBtn = document.getElementById('prevBtn');
+const nextBtn = document.getElementById('nextBtn');
+const globalSearch = document.getElementById('globalSearch');
+const searchResults = document.getElementById('searchResults');
+const bookmarkMenuBtn = document.getElementById('bookmarkMenuBtn');
+const bookmarkDropdown = document.getElementById('bookmarkDropdown');
+const bookmarkList = document.getElementById('bookmarkList');
+
+// HAMBURGER MENÜ TOGGLE
+function toggleMenu() {
+    if (!sidebar) return;
+    const isOpen = sidebar.classList.contains('open');
+    if (isOpen) {
+        sidebar.classList.remove('open');
+        sidebar.classList.add('closed');
+        if (overlay) overlay.style.display = 'none';
+    } else {
+        sidebar.classList.remove('closed');
+        sidebar.classList.add('open');
+        if (overlay) overlay.style.display = 'block';
+    }
+}
+if (menuToggle) {
+    menuToggle.addEventListener('click', toggleMenu);
+}
+if (overlay) {
+    overlay.addEventListener('click', () => {
+        if (sidebar && sidebar.classList.contains('open')) toggleMenu();
+    });
+}
+
+// MOBIL KERESÉS TOGGLE
+const mobileSearchBtn = document.getElementById('mobileSearchBtn');
+const searchContainer = document.getElementById('searchContainer');
+if (mobileSearchBtn && searchContainer) {
+    mobileSearchBtn.addEventListener('click', () => {
+        const isOpen = searchContainer.classList.contains('mobile-open');
+        if (isOpen) {
+            searchContainer.classList.remove('mobile-open');
+            mobileSearchBtn.innerText = '🔍';
+        } else {
+            searchContainer.classList.add('mobile-open');
+            mobileSearchBtn.innerText = '✕';
+            setTimeout(() => { if(globalSearch) globalSearch.focus(); }, 100);
+        }
+    });
+}
+
+// Automatikus belső hivatkozások generálása kulcsszavak alapján (Glosszary Híd)
+function autoLinkify(text) {
+    if (!text || typeof text !== 'string' || !allSections || allSections.length === 0) return text;
+    let linkedText = text;
+    allSections.forEach(sec => {
+        const currentTitle = sec.section_title || sec.title;
+        if (currentTitle && currentTitle.length > 4) {
+            const escapedTitle = currentTitle.replace(/[-\/\\^$*+?.()|[\]{}]/g, '\\$&');
+            const regex = new RegExp(`\\b(${escapedTitle})\\b`, 'gi');
+            
+            if (linkedText.includes(currentTitle) && !linkedText.includes(sec.id)) {
+                linkedText = linkedText.replace(regex, (match) => {
+                    return `<span class="hyperlink-anchor" style="color: #3b82f6; font-weight: 600; cursor: pointer; text-decoration: underline;" onclick="jumpToSection('${sec.id}')">${match}</span>`;
+                });
+            }
+        }
+    });
+    return linkedText;
+}
+
+// ASZINKRON ADATBÁZIS BETÖLTÉS
+async function loadFullDatabase() {
+    try {
+        const response = await fetch('utk_data.json');
+        if (!response.ok) throw new Error('Nem sikerült betölteni az utk_data.json fájlt.');
+        
+        utkData = await response.json();
+        
+        flattenSections();
+        initSidebar();
+        
+        if (allSections && allSections.length > 0) {
+            currentSectionIndex = 0;
+            renderSection(allSections[currentSectionIndex]);
+        } else {
+            contentArea.innerHTML = "<h3>⚠️Az adatbázis szerkezete üres. Futtasd le a compile_cache.py szkriptet!</h3>";
+        }
+    } catch (error) {
+        printCriticalError(error);
+    }
+}
+
+function printCriticalError(error) {
+    console.error("Hiba az adatbázis betöltésekor:", error);
+    if (contentArea) {
+        contentArea.innerHTML = `
+            <div style="padding: 2rem; border: 1px solid #ef4444; background: rgba(239, 68, 68, 0.1); border-radius: 0.5rem; margin-top: 2rem;">
+                <h3 style="color: #ef4444; margin-bottom: 0.5rem;">⚠️Adatbázis Kapcsolati Hiba</h3>
+                <p style="font-size: 0.95rem; line-height: 1.6;">A böngésző biztonsági okokból (CORS) letiltotta a helyi fájlrendszerről történő betöltést.</p>
+                <p style="font-size: 0.85rem; margin-top: 1rem; color: var(--text-muted);">
+                <strong>Megoldás:</strong> Indíts egy helyi szervert a projekt mappájában! <br>
+                Terminálból: <code style="background: var(--bg-main); padding: 0.2rem 0.4rem; border-radius: 0.25rem;">python -m http.server 8000</code> vagy VS Code-ban használd a <strong>Live Server</strong> bővítményt.</p>
+            </div>
+        `;
+    }
+}
+
+// SÖTÉT MÓD KÉNYSZERÍTÉSE
+document.documentElement.classList.add('dark');
+
+function flattenSections() {
+    allSections = [];
+    if (!utkData || !utkData.chapters) return;
+    utkData.chapters.forEach(chapter => {
+        if (chapter.sections) {
+            chapter.sections.forEach(section => {
+                allSections.push(section);
+            });
+        }
+    });
+}
+
+// OLDALSÁV FASTREUKTÚRA GENERÁLÁSA
+function initSidebar() {
+    if (!sidebar) return;
+    sidebar.innerHTML = '';
+    if (!utkData || !utkData.chapters) return;
+    
+    utkData.chapters.forEach(chapter => {
+        const group = document.createElement('div');
+        group.className = 'nav-group';
+        
+        const titleBtn = document.createElement('button');
+        titleBtn.className = 'nav-title';
+        titleBtn.innerHTML = `${chapter.title} <span>▼</span>`;
+        
+        const linksContainer = document.createElement('div');
+        linksContainer.className = 'nav-links';
+        
+        titleBtn.addEventListener('click', () => {
+            linksContainer.style.display = linksContainer.style.display === 'none' ? 'block' : 'none';
+            titleBtn.querySelector('span').innerText = linksContainer.style.display === 'none' ? '▶' : '▼';
+        });
+
+        if (chapter.sections) {
+            chapter.sections.forEach(section => {
+                const link = document.createElement('span');
+                link.className = 'nav-link';
+                link.innerText = section.section_title || section.title || "Általános Áttekintés";
+                
+                link.addEventListener('click', () => {
+                    currentSectionIndex = allSections.findIndex(s => s.id === section.id);
+                    renderSection(allSections[currentSectionIndex]);
+                    if (window.innerWidth < 768 && typeof toggleMenu === 'function') toggleMenu();
+                });
+                linksContainer.appendChild(link);
+            });
+        }
+        
+        group.appendChild(titleBtn);
+        group.appendChild(linksContainer);
+        sidebar.appendChild(group);
+    });
+}
+
+// TARTALOM DINAMIKUS MEGJELENÍTÉSE
+function renderSection(section) {
+    if (!section || !contentArea) return;
+    contentArea.animate(
+    [
+        {
+            opacity:.4,
+            transform:'translateY(8px)'
+        },
+        {
+            opacity:1,
+            transform:'translateY(0)'
+        }
+    ],
+    {
+        duration:350,
+        easing:'ease-out'
+    }
+);
+    contentArea.innerHTML = '';
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+    
+    let bookmarks = [];
+    try { bookmarks = JSON.parse(localStorage.getItem('magus_bookmarks')) || []; } catch(e){}
+    const isBookmarked = bookmarks.includes(section.id);
+    
+    const displayTitle = section.section_title || section.title || "Általános Áttekintés";
+    
+    const header = document.createElement('div');
+    header.className = 'section-header';
+    header.innerHTML = `
+        <h2>${displayTitle}</h2>
+        <div style="display:flex; gap:0.75rem; font-size:1rem; align-items:center;">
+            <span style="cursor:pointer; color: ${isBookmarked ? '#10b981' : 'inherit'};" id="sectionBookmarkIcon">${isBookmarked ? '⭐' : '🔖'}</span>
+            <span style="cursor:pointer;" id="copyLinkIcon">🔗</span>
+        </div>
+    `;
+    contentArea.appendChild(header);
+    
+    document.getElementById('copyLinkIcon').addEventListener('click', () => {
+        navigator.clipboard.writeText(window.location.href);
+        alert('Link kimásolva!');
+    });
+    document.getElementById('sectionBookmarkIcon').addEventListener('click', () => {
+        toggleBookmark(section.id);
+    });
+    
+    const blocks = section.content_blocks || section.content;
+    if (!blocks) return;
+    
+    blocks.forEach(block => {
+        if (block.type === 'paragraph' && block.text) {
+            const p = document.createElement('p');
+            p.innerHTML = autoLinkify(block.text);
+            contentArea.appendChild(p);
+        }
+        else if (block.type === 'rule' && block.text) {
+            const div = document.createElement('div');
+            div.className = 'callout callout-rule';
+            div.innerHTML = `<div class="callout-title">🎲 ${block.title || 'Rendszerszabály'}</div>
+                             <p style="font-style:italic; font-size:0.9rem; margin:0;">${autoLinkify(block.text)}</p>`;
+            contentArea.appendChild(div);
+        }
+        else if (block.type === 'flavor_text' && block.text) {
+            const div = document.createElement('div');
+            div.style.padding = '0.5rem 1.5rem';
+            div.style.borderLeft = '2px solid var(--text-muted)';
+            div.style.margin = '1rem 0';
+            div.innerHTML = `<p style="font-style:italic; font-size:0.95rem; color: var(--text-muted); line-height:1.6;">${autoLinkify(block.text)}</p>`;
+            contentArea.appendChild(div);
+        }
+        else if (block.type === 'example' && block.text) {
+            const div = document.createElement('div');
+            div.className = 'callout callout-example';
+            div.innerHTML = `<div class="callout-title">📖 ${block.title || 'Példa'}</div>
+                             <p style="font-size:0.9rem; margin:0;">${autoLinkify(block.text)}</p>`;
+            contentArea.appendChild(div);
+        }
+        else if (block.type === 'table') {
+            const container = document.createElement('div');
+            container.className = 'table-container';
+            let tableHTML = '<table><thead><tr>';
+            
+            if (block.headers && Array.isArray(block.headers)) {
+                block.headers.forEach(h => tableHTML += `<th>${h}</th>`);
+            }
+            tableHTML += '</tr></thead><tbody>';
+            
+            if (block.rows && Array.isArray(block.rows)) {
+                block.rows.forEach(row => {
+                    if (Array.isArray(row)) {
+                        tableHTML += '<tr>';
+                        row.forEach((cell, idx) => {
+                            let linkedCell = autoLinkify(String(cell));
+                            if (idx === 2) {
+                                tableHTML += `<td><span class="formula">${linkedCell}</span></td>`;
+                            } else {
+                                tableHTML += `<td style="${idx === 0 ? 'font-weight:600;' : ''}">${linkedCell}</td>`;
+                            }
+                        });
+                        tableHTML += '</tr>';
+                    }
+                });
+            }
+            tableHTML += '</tbody></table>';
+            container.innerHTML = tableHTML;
+            contentArea.appendChild(container);
+        }
+    });
+    updatePaginationButtons();
+}
+
+function updatePaginationButtons() {
+    if (!prevBtn || !nextBtn) return;
+    prevBtn.style.visibility = (currentSectionIndex === 0) ? 'hidden' : 'visible';
+    nextBtn.style.visibility = (currentSectionIndex === allSections.length - 1) ? 'hidden' : 'visible';
+}
+
+if (prevBtn) {
+    prevBtn.addEventListener('click', () => {
+        if (currentSectionIndex > 0) {
+            currentSectionIndex--;
+            renderSection(allSections[currentSectionIndex]);
+        }
+    });
+}
+if (nextBtn) {
+    nextBtn.addEventListener('click', () => {
+        if (currentSectionIndex < allSections.length - 1) {
+            currentSectionIndex++;
+            renderSection(allSections[currentSectionIndex]);
+        }
+    });
+}
+
+// =====================================================================
+// 🎲 SÚLYOZOTT RPG KERESŐMOTOR V2.0 - PREMIUM PRODUCTION ENGINE
+// =====================================================================
+if (globalSearch && searchResults) {
+    globalSearch.addEventListener('input', (e) => {
+        const query = e.target.value.toLowerCase().trim();
+        
+        // Ha a keresőszó rövidebb mint 2 karakter, teljesen kiürítjük és elrejtjük a panelt
+        if (query.length < 2) {
+            searchResults.style.display = 'none';
+            searchResults.innerHTML = '';
+            return;
+        }
+        
+        searchResults.innerHTML = '';
+        let resultsArray = [];
+        
+        // Végigpásztázzuk a teljes adatbázist
+        utkData.chapters.forEach(chapter => {
+            if (!chapter.sections) return;
+            
+            chapter.sections.forEach(section => {
+                let score = 0;
+                let previewText = '';
+                const currentTitle = section.section_title || section.title || "Általános Áttekintés";
+                const sectionTitleLower = currentTitle.toLowerCase();
+                const chapterTitleLower = (chapter.title || "").toLowerCase();
+                
+                // 1. SZINT: Főfejezet címegyezés (Pl. ha beírja, hogy "Bárdok")
+                if (chapterTitleLower === query) score += 150;
+                else if (chapterTitleLower.includes(query)) score += 30;
+                
+                // 2. SZINT: Alfejezet / Alkaszt címegyezés
+                if (sectionTitleLower === query) {
+                    score += 100;
+                    previewText = `<span style="color: var(--accent); font-weight:700;">Pontos fejezetcím egyezés</span>`;
+                } else if (sectionTitleLower.includes(query)) {
+                    score += 50;
+                    previewText = `Fejezetcímben szerepel`;
+                }
+                
+                // 3. SZINT: Mélyszintű tartalomvizsgálat blokkonként
+                const blocks = section.content_blocks || section.content;
+                if (blocks && Array.isArray(blocks)) {
+                    blocks.forEach(block => {
+                        const blockText = (block.text || "").toLowerCase();
+                        const blockTitle = (block.title || "").toLowerCase();
+                        
+                        // Ha a szabálydoboz címében van a kulcsszó
+                        if (blockTitle && blockTitle.includes(query)) {
+                            score += 40;
+                        }
+                        
+                        // Ha a szövegtörzsben van a kulcsszó
+                        if (blockText && blockText.includes(query)) {
+                            // Súlyozás a blokk típusa szerint (A játékszabályok előnyt élveznek a hangulati elemekkel szemben)
+                            if (block.type === 'rule') score += 25;
+                            else if (block.type === 'table') score += 20;
+                            else score += 5;
+                            
+                            // Ha még nincs szép előnézeti szövegünk, legeneráljuk a kulcsszó köré igazítva
+                            if (!previewText || previewText.includes("szerepel") || previewText.includes("egyezés")) {
+                                const idx = blockText.indexOf(query);
+                                // Kiszámoljuk a vágási pontokat, hogy ne szavakat vágjunk félbe
+                                const start = Math.max(0, idx - 40);
+                                const end = Math.min(block.text.length, idx + 60);
+                                
+                                let rawSnippet = block.text.substring(start, end).replace(/<[^>]*>/g, '');
+                                
+                                // Regex-alapú vizuális kiemelés a kulcsszóra (Case Insensitive mark)
+                                const highlightRegex = new RegExp(`(${query.replace(/[-\/\\^$*+?.()|[\]{}]/g, '\\$&')})`, 'gi');
+                                previewText = "..." + rawSnippet.replace(highlightRegex, '<mark style="background-color: rgba(245, 158, 11, 0.3); color: #f59e0b; padding: 0.1rem 0.2rem; border-radius: 0.25rem; font-weight: 600;">$1</mark>') + "...";
+                            }
+                        }
+                        
+                        // Táblázatok belső celláinak átvizsgálása (Fegyverkódok, ME módosítók kereshetősége)
+                        if (block.type === 'table' && block.rows) {
+                            block.rows.forEach(row => {
+                                if (Array.isArray(row)) {
+                                    row.forEach(cell => {
+                                        if (String(cell).toLowerCase().includes(query)) {
+                                            score += 15;
+                                            if (!previewText) {
+                                                previewText = `Megtalálható az alfejezet egyik adattáblázatában.`;
+                                            }
+                                        }
+                                    });
+                                }
+                            });
+                        }
+                    });
+                }
+                
+                // Ha a pontszám nagyobb mint nulla, érvényes találatként elmentjük
+                if (score > 0) {
+                    resultsArray.push({
+                        section: section,
+                        chapterTitle: chapter.title || "ÁLTALÁNOS",
+                        score: score,
+                        previewText: previewText || "Nincs elérhető szöveges előnézet."
+                    });
+                }
+            });
+        });
+        
+        // Szigorú relevancia szerinti rendezés (a legtöbb pontot elérő találat megy legfelülre)
+        resultsArray.sort((a, b) => b.score - a.score);
+        
+        // Renderelés a HTML felületre
+        if (resultsArray.length > 0) {
+            resultsArray.forEach(res => {
+                const item = document.createElement('div');
+                item.style.padding = '0.85rem 1rem';
+                item.style.cursor = 'pointer';
+                item.style.borderBottom = '1px solid var(--border-color)';
+                item.style.transition = 'background-color 0.15s';
+                
+                // Hover effektus programozott hozzáadása
+                item.addEventListener('mouseenter', () => item.style.backgroundColor = 'var(--border-color)');
+                item.addEventListener('mouseleave', () => item.style.backgroundColor = 'transparent');
+                
+                const currentTitle = res.section.section_title || res.section.title || "Általános Áttekintés";
+                
+                // Jelvények (Badge) generálása a relevancia vizuális jelzésére
+                let badge = '';
+                if (res.score >= 100) {
+                    badge = `<span style="font-size:0.65rem; background:rgba(16,185,129,0.15); color:#10b981; padding:0.15rem 0.4rem; border-radius:0.25rem; margin-left:0.5rem; font-weight:700; border: 1px solid rgba(16,185,129,0.3);">KASZT / TÉMA</span>`;
+                } else if (res.score >= 40) {
+                    badge = `<span style="font-size:0.65rem; background:rgba(59,130,246,0.15); color:#3b82f6; padding:0.15rem 0.4rem; border-radius:0.25rem; margin-left:0.5rem; font-weight:600;">ALFEJEZET</span>`;
+                }
+                
+                item.innerHTML = `
+                    <div style="display:flex; justify-content:space-between; align-items:center;">
+                        <div style="font-weight: 700; font-size: 0.925rem; color: var(--accent); display: flex; align-items: center; gap: 0.25rem;">
+                            ${currentTitle} ${badge}
+                        </div>
+                        <div style="font-size: 0.65rem; color: var(--text-muted); font-family: monospace; background: var(--bg-main); padding: 0.1rem 0.3rem; border-radius: 0.25rem; border: 1px solid var(--border-color);">
+                            ${res.chapterTitle}
+                        </div>
+                    </div>
+                    <div style="font-size: 0.78rem; color: var(--text-muted); margin-top: 0.35rem; line-height: 1.4; letter-spacing: 0.01em;">
+                        ${res.previewText}
+                    </div>
+                `;
+                
+                // Kattintás esemény: Beállítja az indexet és rendereli a teljes szekciót
+                item.addEventListener('click', () => {
+                    currentSectionIndex = allSections.findIndex(s => s.id === res.section.id);
+                    if (currentSectionIndex !== -1) {
+                        renderSection(allSections[currentSectionIndex]);
+                    }
+                    globalSearch.value = '';
+                    searchResults.style.display = 'none';
+                });
+                
+                searchResults.appendChild(item);
+            });
+            searchResults.style.display = 'block';
+        } else {
+            searchResults.innerHTML = '<div style="padding: 1rem; font-size: 0.85rem; color: var(--text-muted); text-align: center; font-style: italic;">⚔️ Nincs találat az ÚTK krónikáiban...</div>';
+            searchResults.style.display = 'block';
+        }
+    });
+}
+
+
+// LOCALSTORAGE KÖNYVJELZŐ RENDSZER
+if (bookmarkMenuBtn && bookmarkDropdown) {
+    bookmarkMenuBtn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        if (bookmarkDropdown.style.display === 'none') {
+            renderBookmarkList();
+            bookmarkDropdown.style.display = 'block';
+        } else {
+            bookmarkDropdown.style.display = 'none';
+        }
+    });
+}
+
+function toggleBookmark(sectionId) {
+    let bookmarks = [];
+    try { bookmarks = JSON.parse(localStorage.getItem('magus_bookmarks')) || []; } catch(e){}
+    const icon = document.getElementById('sectionBookmarkIcon');
+    
+    if (bookmarks.includes(sectionId)) {
+        bookmarks = bookmarks.filter(id => id !== sectionId);
+        if(icon) { icon.innerText = '🔖'; icon.style.color = 'inherit'; }
+    } else {
+        bookmarks.push(sectionId);
+        if(icon) { icon.innerText = '⭐'; icon.style.color = '#10b981'; }
+    }
+    localStorage.setItem('magus_bookmarks', JSON.stringify(bookmarks));
+    if (typeof renderBookmarkList === 'function') renderBookmarkList();
+}
+
+function renderBookmarkList() {
+    if (!bookmarkList) return;
+    bookmarkList.innerHTML = '';
+    let bookmarks = [];
+    try { bookmarks = JSON.parse(localStorage.getItem('magus_bookmarks')) || []; } catch(e){}
+    
+    if (bookmarks.length === 0) {
+        bookmarkList.innerHTML = `<div style="padding: 0.75rem 1rem; font-size: 0.85rem; color: var(--text-muted); font-style: italic;">Nincs elmentett szabály...</div>`;
+        return;
+    }
+    
+    bookmarks.forEach(sectionId => {
+        let foundSection = null;
+        utkData.chapters.forEach(chapter => {
+            if (chapter.sections) {
+                const sec = chapter.sections.find(s => s.id === sectionId);
+                if (sec) foundSection = sec;
+            }
+        });
+        
+        if (foundSection) {
+            const item = document.createElement('div');
+            item.style.display = 'flex'; item.style.justifyContent = 'space-between'; item.style.alignItems = 'center';
+            item.style.padding = '0.5rem 1rem'; item.style.borderBottom = '1px solid var(--border-color)';
+            item.style.fontSize = '0.85rem';
+            
+            const linkPart = document.createElement('span');
+            const currentTitle = foundSection.section_title || foundSection.title || "Általános Áttekintés";
+            linkPart.innerText = currentTitle; linkPart.style.cursor = 'pointer'; linkPart.style.flex = '1'; linkPart.style.color = 'var(--text-main)';
+            linkPart.addEventListener('click', () => {
+                currentSectionIndex = allSections.findIndex(s => s.id === foundSection.id);
+                renderSection(allSections[currentSectionIndex]);
+                if (bookmarkDropdown) bookmarkDropdown.style.display = 'none';
+            });
+            
+            const deletePart = document.createElement('span');
+            deletePart.innerText = '❌'; deletePart.style.cursor = 'pointer'; deletePart.style.paddingLeft = '0.5rem'; deletePart.style.fontSize = '0.75rem';
+            deletePart.addEventListener('click', (e) => {
+                e.stopPropagation();
+                toggleBookmark(sectionId);
+            });
+            
+            item.appendChild(linkPart);
+            item.appendChild(deletePart);
+            bookmarkList.appendChild(item);
+        }
+    });
+}
+
+if (scrollToTopBtn) {
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 300) scrollToTopBtn.style.display = 'flex';
+        else scrollToTopBtn.style.display = 'none';
+    });
+    scrollToTopBtn.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+}
+
+// QUICK-GLOSSZARY POPUP MODAL LOGIKA
+const glossaryModal = document.getElementById('glossaryModal');
+const glossaryModalBody = document.getElementById('glossaryModalBody');
+const closeGlossary = document.getElementById('closeGlossary');
+if (closeGlossary && glossaryModal) {
+    closeGlossary.addEventListener('click', () => glossaryModal.style.display = 'none');
+    window.addEventListener('click', (e) => { if (e.target === glossaryModal) glossaryModal.style.display = 'none'; });
+}
+
+window.jumpToSection = function(sectionId) {
+    if (!glossaryModal || !glossaryModalBody) return;
+    const foundSection = allSections.find(s => s.id === sectionId);
+    if (!foundSection) return;
+    
+    const currentTitle = foundSection.section_title || foundSection.title || "Általános Áttekintés";
+    glossaryModalBody.innerHTML = `<h3 style="color: var(--accent); margin-bottom: 1rem; border-bottom: 1px solid var(--border-color); padding-bottom: 0.5rem;">${currentTitle}</h3>`;
+    
+    const blocks = foundSection.content_blocks || foundSection.content;
+    if (blocks) {
+        blocks.forEach(block => {
+            if (block.type === 'paragraph' && block.text) {
+                const p = document.createElement('p');
+                p.style.fontSize = '0.9rem'; p.style.lineHeight = '1.5';
+                p.innerHTML = block.text;
+                glossaryModalBody.appendChild(p);
+            }
+            else if (block.type === 'rule' && block.text) {
+                const div = document.createElement('div');
+                div.className = 'callout callout-rule';
+                div.innerHTML = `<div class="callout-title">🎲 ${block.title || 'Szabály'}</div><p style="font-style:italic; font-size:0.85rem; margin:0;">${block.text}</p>`;
+                glossaryModalBody.appendChild(div);
+            }
+        });
+    }
+    glossaryModal.style.display = 'flex';
+};
+
+// PROGRAM INDÍTÁSA
+document.addEventListener('DOMContentLoaded', loadFullDatabase);
+/* ===== FONT SIZE CONTROLS FIX ===== */
+
+(() => {
+
+    let currentScale = 1;
+
+    const contentTarget =
+        document.querySelector('main')
+        || document.querySelector('article')
+        || document.body;
+
+    const buttons = [...document.querySelectorAll('.font-btn')];
+
+    if(buttons.length < 2) return;
+
+    const decreaseBtn = buttons[0];
+    const increaseBtn = buttons[1];
+
+    function applyScale(){
+
+        contentTarget.style.fontSize = `${currentScale}rem`;
+
+        localStorage.setItem(
+            'magusFontScale',
+            currentScale
+        );
+
+    }
+
+    increaseBtn.addEventListener('click', () => {
+
+        currentScale = Math.min(currentScale + 0.08, 1.6);
+
+        applyScale();
+
+    });
+
+    decreaseBtn.addEventListener('click', () => {
+
+        currentScale = Math.max(currentScale - 0.08, 0.8);
+
+        applyScale();
+
+    });
+
+    const saved =
+        parseFloat(localStorage.getItem('magusFontScale'));
+
+    if(saved){
+
+        currentScale = saved;
+
+        applyScale();
+
+    }
+
+})();
+
+/* ===== MOBIL BETŰMÉRET GOMBOK ===== */
+(() => {
+    const mDec = document.getElementById('mobileFontDecrease');
+    const mInc = document.getElementById('mobileFontIncrease');
+    if (!mDec || !mInc) return;
+    const contentTarget = document.querySelector('main') || document.body;
+    function getScale() { return parseFloat(localStorage.getItem('magusFontScale')) || 1; }
+    function applyScale(s) {
+        contentTarget.style.fontSize = `${s}rem`;
+        localStorage.setItem('magusFontScale', s);
+    }
+    mInc.addEventListener('click', () => applyScale(Math.min(getScale() + 0.08, 1.6)));
+    mDec.addEventListener('click', () => applyScale(Math.max(getScale() - 0.08, 0.8)));
+})();
+
+/* ===== PARALLAX MAGIC ===== */
+
+document.addEventListener('mousemove', e => {
+
+    const x =
+        (e.clientX / window.innerWidth - .5) * 20;
+
+    const y =
+        (e.clientY / window.innerHeight - .5) * 20;
+
+    document.body.style.backgroundPosition =
+        `${x}px ${y}px`;
+
+});
+
+/* ===== FLOATING RUNES ===== */
+
+(() => {
+
+    const container =
+        document.getElementById('magic-particles');
+
+    if(!container) return;
+
+    const runes =
+        ['✦','ᚱ','ᛟ','✧','☽','☼'];
+
+    function createRune(){
+
+        const rune =
+            document.createElement('div');
+
+        rune.className = 'rune';
+
+        rune.innerText =
+            runes[
+                Math.floor(Math.random()*runes.length)
+            ];
+
+        rune.style.left =
+            Math.random()*100 + 'vw';
+
+        rune.style.animationDuration =
+            10 + Math.random()*15 + 's';
+
+        rune.style.fontSize =
+            12 + Math.random()*20 + 'px';
+
+        container.appendChild(rune);
+
+        setTimeout(() => {
+
+            rune.remove();
+
+        },25000);
+
+    }
+
+    setInterval(createRune,1200);
+
+})();
+
+</script>
+
+<div id="glossaryModal" class="glossary-modal">
+    <div class="glossary-content">
+        <span class="modal-close" id="closeGlossary">&times;</span>
+        <div id="glossaryModalBody"></div>
+    </div>
+</div>
+
+</body>
+</html>

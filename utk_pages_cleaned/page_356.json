@@ -1,0 +1,108 @@
+{
+    "is_new_chapter": true,
+    "chapter_title": "A Mágia Művészete",
+    "is_new_section": false,
+    "section_title": "",
+    "content_blocks": [
+        {
+            "type": "paragraph",
+            "text": "Tisztelt Játékos! A M.A.G.U.S. legnehezebben érthető, legsokrétűbb és legösszetettebb fejezetéhez érkeztél. Ha csak most ismerkedsz a játékkal, jobban teszed, ha jelen sorokat egyszerűen átugrod, és a következő fejezetről folytatod az olvasást. Ha nem fogadod meg a tanácsot, mert hajt a kíváncsiság, nosza rajta: olvass – de tedd egyelőre a megértés igénye nélkül!"
+        },
+        {
+            "type": "paragraph",
+            "text": "Sok érdekességről fogsz hallani és talán magával is ragad a varázslóval való játék különlegessége, szépsége. Ám ne feledd: ez az az általunk kidolgozott mágiaformák legnehezebbike. Csak tapasztalt játékosoknak – az igazi „vén rókáknak” ajánlhatjuk tiszta szívvel. Ahhoz, hogy minden előnyét és hátrányát megismerd, s idővel a magad javára fordítsd, természetesen segítséget nyújtanak az alábbiak."
+        },
+        {
+            "type": "paragraph",
+            "text": "Ha már eldöntötted, hogy erre a rögös útra lépsz, először is szerezd meg a többi mágiahasználó rend kínálta tapasztalatokat. Indíts útnak Tűzvarázsló, Boszorkánymester, netán Boszorkány karaktert! Hosszú időnek kell még eltelnie, mire tanulmányaid végére érsz. Bizony: valódi iskola ez, melynek elvégzése nélkül legfeljebb színlelheted, hogy varázslót játszol."
+        },
+        {
+            "type": "paragraph",
+            "text": "Ha már eljutottál odáig, hogy megalkottad első varázsló karakteredet, ne hidd, hogy könnyebb idők jönnek! A tanulás folytatódik. Tanulmányozd a leírt varázslatmozaikokat, a hozzájuk tartozó magyarázatokat, de mindenekelőtt az elméleti hátteret. Próbálkozz, azután építsd fel első, teljesen saját varázslatodat! Legyen ez egyszerű, később egyre bonyolultabb; s mikor úgy érzed, mindent értesz, állítsd össze egyedi varázslat-arzenálodat!"
+        },
+        {
+            "type": "paragraph",
+            "text": "A M.A.G.U.S. mágiarendszere az úgynevezett mozaikelvre épül. Ez annyit tesz, hogy minden varázslat összeállítható: meghatározható, hogy mi, mikor, meddig, milyen erővel történjen. Ez megszámlálhatatlanul sok variációt tesz lehetővé: megannyi kész és működőképes varázslat."
+        },
+        {
+            "type": "paragraph",
+            "text": "A mágiahasználat igazi mágiaiskolája azonban az, mikor már nem előre elkészített varázslatokat használsz, hanem ott helyben, a pillanatnyi kívánalmaknak megfelelően alkotod meg azokat. Ez óriási gyakorlatot, valamint a rendszer teljes ismeretét és megértését igénylő feladat – hisz gyorsan és habozás nélkül kell cselekedned, nem tarthatod fel játékos társaidat hosszas gondolkodással meg számolgatással."
+        },
+        {
+            "type": "paragraph",
+            "text": "A mágia összetett ismeret, egyesek Titkos Tudománynak is nevezik. Mielőtt beszélnénk róla, szót kell ejtenünk néhány, hozzá szorosan kapcsolódó dologról is. Ilyen a varázslók világképe, a Lélek és a Test viszonya."
+        },
+        {
+            "type": "paragraph",
+            "text": "Legyen itt elegendő annyi, hogy egy lény érzelmi és indulati élete éppúgy meghatározza az illetőt, mint Anyagi teste, ezért ezen összességet az ő Asztráltestének nevezzük. Az a lény, aki mentes minden érzelemtől, nem rendelkezik Asztráltesttel, s így nincs is jelen az Asztrálsíkon."
+        },
+        {
+            "type": "paragraph",
+            "text": "A Mentálsík sokban hasonlít az Asztrálhoz, ám ez a gondolatok, az intellektuális élet hazája. Az értelmes, gondolkodó lények mindenképpen rendelkeznek Mentáltesttel, így jelen vannak a Mentálsíkon. A gondolkodásra képtelen lények nem rendelkeznek Mentáltesttel, tehát nem léteznek a Mentálsíkon sem."
+        },
+        {
+            "type": "paragraph",
+            "text": "Az állati ösztönöket még nem nevezhetjük teljes értékű Mentális létnek; az állatok Mentálteste inkább csak afféle csíra, amely már magában hordozza az ígéretet, de még nem teljesedett ki."
+        },
+        {
+            "type": "paragraph",
+            "text": "Az olyan teremtményekre, melyek nem rendelkeznek Asztráltesttel, hatástalan az Asztrálmágia, az affélekre pedig, melyek Mentáltesttel nem bírnak, a Mentálmágia nem hat."
+        },
+        {
+            "type": "section",
+            "title": "A Világkép",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "A Mindenséget Külső és Belső Síkokra oszthatjuk. Külsők az istenségek, démonok lakhelyei, a Belsők összessége alkotja a Világegyetemet. Ez utóbbit hármas összetétel jellemzi: Anyagi Síkokból, Asztrál- és Mentálsíkból áll."
+        },
+        {
+            "type": "paragraph",
+            "text": "Anyagi Síknak nevezzük mindazon Belső Létsíkokat, ahol az anyag, mint minőség, előfordul. Ezen Síkok száma elméletileg és gyakorlatilag végtelen; az, ahol Ynev világa is elhelyezkedik, csupán egy közülük. Minden és mindenki, aki Anyagi Testtel rendelkezik (anyagból épül fel), jelen van valamelyik Anyagi Síkon."
+        },
+        {
+            "type": "paragraph",
+            "text": "Maga az anyag nem elegendő ahhoz, hogy egy lényt önnön teljességében meghatározzon. Az érzelmek és indulatok megnyilvánulásai éppoly színesek és változatosak, mint ahány formát az anyag az Anyagi Síkon ölteni képes. Ezen megnyilvánulások az Asztrálsíkon jelennek meg; hogy miként és hogyan, azt igazán csak a mágia ismerői értik."
+        },
+        {
+            "type": "section",
+            "title": "A Lélekről és a Testről",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "A következő idézet Ynev világának egyik legtitokzatosabb alakjától, a művelt körökben egyszerűen Névtelen Szerzetesként ismert férfiútól származik:"
+        },
+        {
+            "type": "flavor_text",
+            "text": "„...Az élőlények mind bírnak lélekkel, legyenek emberek, állatok, rovarok, vagy akár növények. Természetesen ez utóbbi két csoportba tartozó teremtmények lelke rendkívül kezdetleges; úgy is fogalmazhatnánk, nem több lélekcsíránál. A Lélek ugyanis nem csak él, akár a test. Megfogan – az Istenek által – kialakul, megszületik, fejlődik, talán még öregszik is. Ám soha el nem pusztul: a lélek halhatatlan!"
+        },
+        {
+            "type": "paragraph",
+            "text": "Eleinte valamely tudattalan, kezdetleges létformán nyilvánul meg. Fejlődése során Anyagi Teste növényi életek sokaságán át, később a rovarlét különféle állomásain keresztül válik egyre bonyolultabb, egyre kifinomultabb alkotmánnyá. A nagybetűs Lélek megszületése az állattá válás pillanatára tehető, mikor már nem pusztán Anyagi, de Asztrális Teste is jelentősnek, kialakultnak mutatkozik."
+        },
+        {
+            "type": "paragraph",
+            "text": "Állomások hosszú sora követi egymást ezután is, míg végül felépül a Mentális Test: megszületik a Tudat, és vele az Emberi Lélek, mely tucatnyi porhüvelyben ölt testet. Ekkor már minden szempontból felnőttnek tekinthető. Anyagi megnyilvánulásai egyre emelkedettebb, egyre intelligensebb emberek. A varázslók, méginkább a Mágusok, már öreg lélekkel bírnak."
+        },
+        {
+            "type": "paragraph",
+            "text": "A Lélek aggkorára nézvést csak találgathat az emberi elme. A legközelebb talán akkor járunk az igazsághoz, ha így valljuk: elfekben lakozik."
+        },
+        {
+            "type": "paragraph",
+            "text": "Íme a lélekvándorlás."
+        },
+        {
+            "type": "paragraph",
+            "text": "A Lélek akkor lesz képes a Személyes Aura kisugárzására, mikor Asztrális Teste már kialakul – ez az állati és annál fejlettebbé létformákra igaz. Ettől kezdve megvédi Anyagi Testét a közvetlenül rá ható mágiáktól. Ezért nem lehet tárgya a Természetes Anyagok Mágiájának, vagy a testen belülre irányított fizikai rombolásoknak."
+        },
+        {
+            "type": "paragraph",
+            "text": "Attól kezdve, hogy a Lélek Mentáltesttel bír, közvetlenül a Tudatra gyakorolt Asztrális és Mentális hatásoknak is ellen tud szegülni; mi több, képessé válik arra, hogy másokra hasonló hatást gyakoroljon. A csiszolt elmével bíró ember megtanulta, miként fokozhatja és emelheti tudatossá a lélek eme tudattalati képességét."
+        }
+    ]
+}

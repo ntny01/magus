@@ -1,0 +1,43 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": false,
+    "section_title": "",
+    "content_blocks": [
+        {
+            "type": "rule",
+            "text": "Alig néhány szót makog a karakter az adott nyelvből, kézzel-lábbal mutogat és legtöbbször csak nagyon hiányosan értelmezik mondanivalóját.",
+            "title": "1. fok",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "Alapszintű, de már érthető szókincs, gyenge nyelvtan... a karakter ezen a szinten már kevés nehézséggel, de majd mindennel elboldogul.",
+            "title": "2. fok",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "Majdnem tökéletes, akcentusos hétköznapi nyelvtudás, anyanyelvét kezdetben így beszéli egy karakter a szülőföldjére jellemző tájszólásban.",
+            "title": "3. fok",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "Kiművelt nyelvtudás, egy-két tájszólást is beszél már a karakter a képzettség ezen fokán. Ha úgy hozza a szükség irodalmilag is elég választékos.",
+            "title": "4. fok",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "Mesteri tudás, a nyelv virtuóza, az adott nyelv minden dialektusát beszéli, utánozza bármelyik tájszólást vagy akcentust. Elengedhetetlenül szükséges ez a fokozat az igazán komoly irodalmi művek megalkotásához, azok élvezhető, felemelő vagy épp a mélységekbe taszító előadásához.",
+            "title": "5. fok",
+            "headers": [],
+            "rows": []
+        }
+    ]
+}

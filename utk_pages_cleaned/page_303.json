@@ -1,0 +1,121 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": false,
+    "section_title": "",
+    "content_blocks": [
+        {
+            "type": "paragraph",
+            "text": "mind Mentális Mágiaellenállást el kell vetnie. Az Időtartam lejártával az áldozat visszaváltozik. A változás mértékétől függően az átalakulás és a visszaváltozás egyaránt 1-10 kör alatt megy végbe. A pontos Időtartamokról a következő táblázat tájékoztat:"
+        },
+        {
+            "type": "table",
+            "headers": [
+                "Lény",
+                "Átváltozás ideje"
+            ],
+            "rows": [
+                [
+                    "emberből másik ember",
+                    "1 kör"
+                ],
+                [
+                    "emberből ork",
+                    "2 kör"
+                ],
+                [
+                    "emberből törpe",
+                    "3 kör"
+                ],
+                [
+                    "emberből négylábú, embernagyságú állat",
+                    "4 kör"
+                ],
+                [
+                    "emberből négylábú, de valamivel kisebb vagy nagyobb állat, például kutya, ló",
+                    "5 kör"
+                ],
+                [
+                    "emberből apró állat, nyúl, béka",
+                    "6 kör"
+                ],
+                [
+                    "emberből madár, hal",
+                    "7 kör"
+                ],
+                [
+                    "emberből hangya, egyéb rovar",
+                    "8 kör"
+                ],
+                [
+                    "emberből olyan teremtmény, melynek különleges szervei is vannak",
+                    "9 kör"
+                ],
+                [
+                    "emberből egészen idegen létforma",
+                    "10 kör"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "Természetesen a táblázatban szereplő lények csak útmutatásul szolgálnak, a boszorkány más lényekké is képes alakítani áldozatát."
+        },
+        {
+            "type": "rule",
+            "title": "Élet csókja",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Felejtés csókja",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Halál csókja",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Iszonyat csókja",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Izzó csók",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Kriptacsók",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Megbélyegzés csókja",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        }
+    ]
+}

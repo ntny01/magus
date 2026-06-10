@@ -1,0 +1,360 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": true,
+    "section_title": "Támadó dobás",
+    "content_blocks": [
+        {
+            "type": "rule",
+            "title": "Támadó dobás szabálya",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "text": "A Támadó dobás határozza meg egy támadási kísérlet sikerességét, vagy kudarcát. A Támadó k100-zal dob, és a kapott számot hozzáadja Támadó értékéhez (TÉ). Ha az eredmény egyenlő, vagy nagyobb a megadott Védő értékénél (VÉ), a támadás sikeresnek számít, és az áldozat sebet kap, lásd Sebzés. Ha az érték kevesebb, a támadás kudarcot vall.",
+            "title": "Támadó dobás szabálya",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "text": "A 00-ás dobás minden esetben automatikus találatot jelent, és a Sebzésnél is külön elbírálás alá esik. A 01-es dobás, bármilyen nagy számmá lesz is a Támadó értékéhez hozzáadva, mindenképpen kudarcnak számít és semmiképp sem talál.",
+            "title": "Kritikus dobások",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "text": "Célzó dobás",
+            "title": "Célzó dobás",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "text": "A Célzó dobás hivatott eldönteni, hogy egy íjból vagy nyílpuskából leadott lövés, az elhajított dobótőr célba talál-e vagy sem. A Célzó dobás során a célzó dob k100-zal, és ennek eredményét hozzáadja a Célzó értékéhez. Ha az eredmény nagyobb, vagy egyenlő szám a megcélzott tárgy vagy személy Célzó dobás elleni VÉ-jénél, akkor a lövés talál, és az áldozat sebet kap, lásd Sebzés. Ha kevesebb, a lövés célt tévesztett.",
+            "title": "Célzó dobás mechanikája",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "text": "A célzás sikerességét négy tényező befolyásolja jelentősen: a lövést leadó jártassága, a célpont távolsága, mérete és viselkedése, valamint a körülmények. A felsoroltak közül egyedül a negyedik szorul bővebb magyarázatra.",
+            "title": "Célzás befolyásoló tényezői",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "text": "A M.A.G.U.S. négy különböző kategóriát ismer a célpont viselkedését illetően: mozdulatlan; kiszámítható mozgást végez; kiszámíthatatlanul mozog; és a találat elkerülésére összpontosít.",
+            "title": "Célpont viselkedési kategóriái",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "text": "Mozdulatlan célpontnak minősítjük a helyhez kötött tárgyakat, az ott álló embereket, a legelésző állatokat, az egyenesen szembe jövő vagy egyenesen távozó alakokat stb.",
+            "title": "Mozdulatlan célpont",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "text": "Kiszámítható mozgást végez a lengő inga, a feldobott alma, a gyalogló ember, a változatlan tempóban haladó lovas.",
+            "title": "Kiszámíthatóan mozgó célpont",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "text": "Kiszámíthatatlanul mozgónak számítanak a harcoló emberek, a menekülő állatok.",
+            "title": "Kiszámíthatatlanul mozgó célpont",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "text": "A találat elkerülésére összpontosít az, aki legfőbb tevékenységeként a rá célzó fegyvert emelő ellenfélre figyel, és arra törekszik, hogy a kiröppenő lövedéket elkerülje. Ez egy harcművész karakter esetében diszciplína alkalmazását és mozdulatlan koncentrációt, másoknál általában kétségbeesett ugrálást jelent.",
+            "title": "Kitérésre összpontosító célpont",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "text": "A célpont Védő értéke",
+            "title": "A célpont Védő értéke",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "text": "Mint az a fentiekből is látszik, a célpont VÉ-je nem egyenlő a megcélzott személy VÉ-jével, hanem külön elbírálás alá esik. A legtöbb esetben – különösképp, ha a célpont nem élőlény – a VÉ-je nem más, mint a célzótól számított távolsága ynevi lábban plusz 50.",
+            "title": "Célpont VÉ számítása",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "text": "Ehhez a felsorolt viselkedési formák szerint még a következők adódnak hozzá:",
+            "title": "Viselkedés módosítók bevezetése",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "table",
+            "title": "Célpont viselkedés módosítók",
+            "headers": [
+                "Viselkedés",
+                "Módosító"
+            ],
+            "rows": [
+                [
+                    "Mozdulatlan célpont",
+                    "+ 0"
+                ],
+                [
+                    "Kiszámíthatóan mozgó célpont",
+                    "+ 10"
+                ],
+                [
+                    "Kiszámíthatatlanul mozgó célpont",
+                    "+ 30"
+                ],
+                [
+                    "Kitérésre összpontosító célpont*",
+                    "+ 50"
+                ]
+            ]
+        },
+        {
+            "type": "rule",
+            "text": "* Ha a megcélzott személy harcművész, a Kitérés diszciplína segítségével, lehetősége van arra, hogy saját Védő értékét fordítsa szembe a Célzó dobással.",
+            "title": "Harcművész kitérés",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "text": "Az időjárási viszonyok is nagyban befolyásolhatják egy lövés eredményét. Ezek alapján a célpont VÉ-jéhez az alábbi módosítók adódnak (ezek az értékek adott esetben akár össze is adódhatnak, bár a köd és a szél természetesen kizárják egymást):",
+            "title": "Időjárási módosítók bevezetése",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "table",
+            "title": "Időjárási módosítók",
+            "headers": [
+                "Időjárás",
+                "Módosító"
+            ],
+            "rows": [
+                [
+                    "Napsütés, szélcsend",
+                    "+ 0"
+                ],
+                [
+                    "Szemerkélő eső, szellő",
+                    "+ 10"
+                ],
+                [
+                    "Gyenge eső, gyenge szél",
+                    "+ 30"
+                ],
+                [
+                    "Ritkább köd, eső, erős szél",
+                    "+ 50"
+                ],
+                [
+                    "Sűrű köd, zivatar, viharos szél",
+                    "+ 70"
+                ],
+                [
+                    "Egészen sűrű köd, felhőszakadás, orkán",
+                    "+ 100"
+                ]
+            ]
+        },
+        {
+            "type": "rule",
+            "text": "Az eddig leírtak csak emberméretű célpontra igazak. Ha a célpont embernél nagyobb, természetesen könnyebb eltalálni, ezért Védő értéke csökken. Ha kisebb, akkor nehezebb, így VÉ-je növelendő. Hogy miként, arról a következő táblázat közöl hozzávetőleges adatokat:",
+            "title": "Célpont méret módosítók bevezetése",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "table",
+            "title": "Célpont méret módosítók",
+            "headers": [
+                "Célpont mérete",
+                "Módosító"
+            ],
+            "rows": [
+                [
+                    "Óriás",
+                    "-50"
+                ],
+                [
+                    "Szekér",
+                    "-30"
+                ],
+                [
+                    "Ló",
+                    "-10"
+                ],
+                [
+                    "Ember",
+                    "0"
+                ],
+                [
+                    "Kutya",
+                    "+10"
+                ],
+                [
+                    "Dinnye",
+                    "+30"
+                ],
+                [
+                    "Alma",
+                    "+50"
+                ],
+                [
+                    "Pénzérme",
+                    "+70"
+                ]
+            ]
+        },
+        {
+            "type": "rule",
+            "text": "Természetesen minden lehetséges célról nem nyilatkozhattunk, így a fenti táblázat szolgáljon csak irányadóként a pontos módosító értékek meghatározásához – mely minden esetben a KM feladata.",
+            "title": "KM döntése a méretmódosítókról",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "text": "Íjász szabály",
+            "title": "Íjász szabály",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "text": "Ha a lövés vagy a célba dobás talál, és a sebzésdobásnál használt kocka a maximális számra fordul (k10-en a tízes, k6-on a hatos), a támadó azzal a kockával még egyszer dobhat. A plusz (ajándék) dobás eredménye is hozzáadandó a sebzéshez. Ez addig folytatható így, ameddig a kocka a maximumát adja.",
+            "title": "Íjász sebzés szabály",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "text": "Célzott támadás",
+            "title": "Célzott támadás",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "text": "Amennyiben a karakter egy bizonyos testrészt kíván eltalálni, akkor azt a Támadó dobás megtétele előtt be kell jelentenie a KM-nek. Az ilyen esetekben természetesen az adott testrész megnövekedett Védő értékével kell számolni, hiszen a karakter nem csupán eltalálni kívánja az ellenfelét, hanem egy kiválasztott ponton szeretné megsebezni.",
+            "title": "Célzott támadás bejelentése",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "text": "Mindenképpen a KM lesz hivatott meghatározni az így megnövekedett VÉ-t a helyzet ismeretében; az alábbi táblázat azonban hozzávetőleges segítséget nyújthat:",
+            "title": "KM döntése a célzott támadás VÉ-ről",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "table",
+            "title": "Célzott támadás módosítók",
+            "headers": [
+                "Testrész",
+                "Módosító"
+            ],
+            "rows": [
+                [
+                    "Kar/láb",
+                    "+10"
+                ],
+                [
+                    "Fej",
+                    "+30"
+                ],
+                [
+                    "Torok, kéz-, lábfej, lágyék",
+                    "+50"
+                ],
+                [
+                    "Szem, ujjak, száj",
+                    "+70"
+                ]
+            ]
+        },
+        {
+            "type": "rule",
+            "text": "Támadások száma",
+            "title": "Támadások száma",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "text": "A M.A.G.U.S. harcrendszerében a fegyverek bevetési időigénye vagy a Harci cselekedetek mutatják meg, hogy az adott fegyverrel egy körben legfeljebb hányszor lehet támadni.",
+            "title": "Támadások száma szabály",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        }
+    ]
+}

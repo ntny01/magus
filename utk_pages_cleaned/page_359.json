@@ -1,0 +1,120 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": false,
+    "section_title": "",
+    "content_blocks": [
+        {
+            "type": "paragraph",
+            "text": "akad: északon Doran, délen Pyarron, még pontosabban Lar-Dor."
+        },
+        {
+            "type": "paragraph",
+            "text": "A két említett legnagyobb iskola – bár egészen különböző forrásokból merítette tudásanyagát – alapvetően hasonlóan osztja fejezetekre a mágia tudományát."
+        },
+        {
+            "type": "paragraph",
+            "text": "Bevezetésként idézzük az egyik első pyarroní mágus, Orgonomus sorait, a mester Kismágia című művéből. Könnyítésként – ahol szükséges – a megértést segítő magyarázatokat és példákat fűzünk majd hozzá."
+        },
+        {
+            "type": "paragraph",
+            "text": "Elemi mágia"
+        },
+        {
+            "type": "flavor_text",
+            "text": "„A másik csoportba az elemekkel kapcsolatos varázslatok sorolandók. Ezekkel a varázsló Ős-, vagy Paraelemeket teremt, netán elemi állapotú energiát. Ez az Elemi Mágia."
+        },
+        {
+            "type": "paragraph",
+            "text": "A mágia legkönnyebben elsajátítható fejezete ez – magával a Világegyetemet alkotó négy őselemmel, és azok hatásaival, a Paraelemekkel foglalkozik, valamint a mindent átható mágikus energiák naturális felhasználásával."
+        },
+        {
+            "type": "paragraph",
+            "text": "A Világegyetem Anyagi Síkjai négy Őselemből épülnek fel. Ezek az Őstűz, Ősvíz, Ősföld és az Őslég. A legtöbbször képtelenség felismerni őket magukban a természetes anyagokban, ám tudjuk, hogy minden, ami körülvesz bennünket – beleértve önnön testünk anyagát is – ezen négy Őselem keverékéből áll. Olyan Sík, ahol egyáltalán nem keverednek, négy akad: az Őstűz Síkja, az Ősvíz Síkja, az Ősföld Síkja és az Őslég Síkja: összefoglalóan Őselemi Síkoknak mondjuk őket. Az elemek e Síkokon tisztán, torzítatlan és keveretlen formájukban lelhetők fel. Fontos megjegyezni, hogy ezen Síkok világain is élhetnek teremtmények: őket Elementál Lényeknek nevezzük."
+        },
+        {
+            "type": "paragraph",
+            "text": "A Paraelemek nem Önálló Őselemek, hanem a négy Őselem által kifejtett hatások. Az Őstűz hatása az Elemi Hő, az Ősvízé az Elemi Fagy, az Ősföldé az Elemi Sötét, az Őslégé az Elemi Fény."
+        },
+        {
+            "type": "paragraph",
+            "text": "Az Őselemek – és velük a Paraelemek is – bizonyos párosítás szerint gyökeres ellentétei egymásnak. Vagyis: tiszta állapotában az Ősvíz igyekszik kioltani az Őstüzet, az Őstűz pedig megsemmisíteni az Ősvizet, ahogyan azt a világunkban előforduló tűz és víz esetében megfigyelhető. Kettőjük párharcából az kerül ki győztesen – bár megfogyva –, amelyik nagyobb mennyiségben volt jelen. Ugyanez igaz az Ősföld–Őslevegő, Elemi Hő–Elemi Fagy és az Elemi Sötét–Elemi Fény ellentétpárokra is; ámbár ez számunkra nehezebben elképzelhető."
+        },
+        {
+            "type": "paragraph",
+            "text": "Mikor a varázsló Őselemet teremt, valójában az őt körbevevő Anyagi Világból (talajból, növényekből, légtérből) vonja ki azt. Ezért van, hogy Őstűz teremtése könnyebb lángok, láva közelében; Ősvízé egyszerűbb a tengeren; Ősföldé kevesebb gondot okoz a föld mélyében vagy a sivatag közepén; és Őslég teremtése is kisebb nehézséggel jár magas hegyekben, vagy a levegőben tartózkodva. Ugyanez persze igaz az adott Őselemhez tartozó Paraelemre is..."
+        },
+        {
+            "type": "rule",
+            "title": "Opcionális szabály",
+            "headers": [],
+            "rows": [
+                [
+                    "Az előbbiek ugyan nem mutatkoznak meg a M.A.G.U.S. mágia rendszerében, a KM azonban opcionális szabályként alkalmazhatja őket, ha úgy látja jónak. Ebben az esetben, ha a megidézendő elem nagyon nagy mennyiségben fordul elő a varázsló környezetében – lásd fentebb a példákat – akkor az adott elem, vagy Őselem idézése 1 Mp-tal olcsóbb E-nként."
+                ]
+            ]
+        },
+        {
+            "type": "flavor_text",
+            "text": "„...Paraelemek teremtésekor a varázsló nem magát az adott Őselemet vonja ki a természetből, csak lehetővé teszi, hogy pusztán annak – és egyedül annak – érvényesüljön hatása. Azaz hőség vagy fagy, sötét, vagy világosság keletkezzék. Mivel a Paraelemek csak maguk a hatások, és nem az azokat kibocsátó forrás, ezért a varázsló által megszabott területen belül mindenütt ugyanakkora erősséggel érvényesülnek, míg a határvonalon túl hirtelen semmivé enyésznek. Ezt a jelenséget nevezzük határos végnek.”"
+        },
+        {
+            "type": "flavor_text",
+            "text": "„...Az Őstűz a lángjait tápláló éghető anyag híján is lobog. Azon Síkok világain, ahol az Ősvíz az alapvető Őselem, az Őstűz pusztulást okoz – hiszen kibékíthetetlen ellentétpárjai egymásnak. Az Elsődleges Anyagi Sík, amely Ynev világának is otthont ad, ezek közé tartozik, ezért teremtményeit az Őstűz sebzi. Mondják, léteznek más felépítésű világok is, ahol a víz, a föld, vagy a lég a veszedelmes elem. Ezek lényeit azon adott világ alapvető Őselemének ellentétpárja sebzi."
+        },
+        {
+            "type": "paragraph",
+            "text": "Az Ősvíz kristálytiszta, a természetes vízre minden szempontból hasonlító folyadék."
+        },
+        {
+            "type": "paragraph",
+            "text": "Az Ősföld tökéletesen száraz, szürke, porszerű anyag. Szemcséinek mérete a homokéhoz hasonló alapesetben."
+        },
+        {
+            "type": "paragraph",
+            "text": "Az Őslég átlátszó, belélegezhető, színtelen, szagtalan gáz. Minden szempontból a különösen tiszta természetes (hegyi) levegőre emlékeztet."
+        },
+        {
+            "type": "paragraph",
+            "text": "Az Elemi Hő az Őstűz hőhatásának megnyilvánulása, amely a meleg tapasztalásán túl semmilyen más módon nem érzékelhető. A forróság mértéke a Paraelem mennyiségétől függ."
+        },
+        {
+            "type": "paragraph",
+            "text": "Az Elemi Fagy az Ősvíz fagyhatásának megnyilvánulása. A hideg észlelését kivéve másként nem érzékelhető. A fagy a Paraelem mennyiségének növekedésével erősödik."
+        },
+        {
+            "type": "paragraph",
+            "text": "Az Elemi Fény az Őslég fényhatása, amely semmiféle hő jelenséggel nem jár. Egyenletes kékesfehér világosság, melytől idegen minden villódzás, avagy pulzálás. Erőssége a jelenlévő Paraelem mennyiségétől függ."
+        },
+        {
+            "type": "paragraph",
+            "text": "Az Elemi Sötét az Ősföld paraelemi hatása. Akár valami negatív fény: félhomály, erősebb jelenlét esetén sötétséget teremt."
+        },
+        {
+            "type": "paragraph",
+            "text": "A Világegyetemet különleges energia itatja át, egyfajta Elemi Erő, mely egyes mágiatudorok meghatározása szerint nem más, mint a pentagramma felső csúcsához tartozó ötödik elem. A varázsló képes arra, hogy ezt – akárcsak az Őselemeket – kivonja a világból, és céljai érdekében felhasználja. Az Elemi Erő segítségével anyag érzetét keltheti ott, ahol valójában nincs semmi. Azaz gátat vethet a fizikai hatásoknak, mozdulatlanságra kárhoztathat egy tárgyat, melynek egyébként a fizika törvényeit követve mozognia illenék. Ha a varázsló fordítva cselekszik, és az Elemi Erő segítségével megmozdít egy tárgyat, ami egyébként nyugszik, nos, akkor Telekinézisről beszélünk...”"
+        },
+        {
+            "type": "flavor_text",
+            "text": "„...Mikor a varázsló Őselemet, Paraelemet vagy Elemi Erőt – röviden Elemet – teremt, meg kell határoznia azt a formát, amelybe azt zárni kívánja. Ha nem tenné meg, az Elem nyomban visszatérne az Anyagi Világban elfoglalt eredeti helyére, vagyis feloldódna és eltűnne. Ha viszont a varázsló formába zárja, akkor elemi állapotában marad. Ezt nevezzük Formázásnak.”"
+        },
+        {
+            "type": "paragraph",
+            "text": "Orgonomustól idézett bevezetőnk után nézzük a M.A.G.U.S. játékszabályait – azt, hogy miként is használható az Elemi Mágia a játékban!"
+        },
+        {
+            "type": "paragraph",
+            "text": "Ezen mágiaforma használatához az Őselemi Mágia képzettség legalább 3. fokú ismerete szükséges."
+        },
+        {
+            "type": "rule",
+            "title": "Az Elemi Mágia alapszabályai",
+            "headers": [],
+            "rows": [
+                [
+                    "I. Nevezzünk egységnyi mennyiségűnek annyi Őselemet, amennyit a varázsló 3 Mp-ért teremteni képes! Egységnyi megteremtett elem mágiaerőssége egyenlő 1-gyel (E = 1). Máris látszik, hogy az Elemi Mágiák – az egyéb mágiák-"
+                ]
+            ]
+        }
+    ]
+}

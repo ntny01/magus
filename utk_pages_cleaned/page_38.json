@@ -1,0 +1,162 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": null,
+    "is_new_section": true,
+    "section_title": "Harcérték",
+    "content_blocks": [
+        {
+            "type": "flavor_text",
+            "text": "„A kölyök szétrebbentek. Az eszesebbje menekült, a tétovábbja a falhoz lapulva leste, hogy boldogulok a többiekkel. Egy penge felhasította köpenyem vásznát, és szikrázó övön vágott el sokat tűrt karvásamon. Tulajdonosa a hónom alatt átkígyózva a hátamba került, újra nekihuzakodott, majd a falnak zuhant egy gyors könyökütéstől. Talpon maradt társa földre ejtette a tőrt. Ő volt az első, aki rájött, hol hibáztak... és velem együtt rezzent össze, ahogy a szomszédos sikátorból új, az összes eddiginél feketébb árny rontott elő.",
+            "title": null
+        },
+        {
+            "type": "flavor_text",
+            "text": "Már a szele elárulta, hogy nem tegnap óta űzi az ipart: csak annyi időm maradt, hogy megvessem a lábam, mielőtt acélkarmai a bőrvértbe, azon át a vállamba téptek. A csapás kemény volt, de nem elég kemény ahhoz, hogy megroggyanjak tőle. A fal felé lódultam a fickóval, nekivágtam, minden levegőt kipréseltem a tüdejéből. Sapkája félrecsúszott, vicsorra húzódó ajkai látni engedték rohadt fogait. Javakorabeli görény volt, az a fajta, akit csak unatkozó nemes kölyök látnak mesehősnek – söpredék, aki első az osztozkodásnál, de utolsónak száll harcba, s mert nagy néha sikert arat, ifjú görények tömegének szolgál példaképül.",
+            "title": null
+        },
+        {
+            "type": "flavor_text",
+            "text": "– Megdöglesz, kígyóföldi!",
+            "title": null
+        },
+        {
+            "type": "flavor_text",
+            "text": "Nem éreztem kedvet a magyarázkodáshoz, ezért lefejeltem inkább. Meglepetten látszott, de nem eresztett, és nem is ájult el: vérhabos szájjal vigyorgott, ahogy a nekibátorodott tanítványai ismét támadásba lendültek. Minden erőmre szükségem volt, hogy féken tartsam: gorviki mintára készült acélkarmai szememet és torkomat, a kölyök pengéi a hátamat és az oldalaimat fenyegették. Már-már lecsaptak, mikor ismét megperdültem – két vakarcs visszatorpant, két második-verőn-döfőn döfte a görényt, hogy egy szemvillanással utóbb hanyatt zuhanjon az összeránduló kolonc súlya alatt. Nem hagytam időt, hogy felocsúdjanak, és utánuk küldtem a harmadikat és a negyediket, aki az árnyékcsárdának átszökkenve próbált egérutat nyerni. Az utolsónak maradt éjtestvér remegő inakkal, eltátott, nyáladzó nyelvével maradt rám. Meg sem rezdült a golyó koppanására, melyet azért ejtettem le, hogy nyitott tenyérrel vághassam nyakon – pályafutásának első pofonja volt, reméltem, épülésére szolgál.",
+            "title": null
+        },
+        {
+            "type": "flavor_text",
+            "text": "Wayne Chapman: Garmacor címere",
+            "title": null
+        },
+        {
+            "type": "paragraph",
+            "text": "A harcos karaktereket ajánljuk mindazoknak, akik még csak most ismerkednek a M.A.G.U.S.-sal. A Harcosok már alacsony szinten is igen erős, életképes karakterek. Könnyű velük a játék és rengeteg szabadságot adnak, hiszen a játékost nem kötik gúzsba szabályok, karakterét teljesen szabadon fejlesztheti. Sok harci képzettségükkel jó eséllyel túlélik a komolyabb balhékat is, magasabb szinten pedig elképesztő harci trükkök birtokába jutnak. Ugyanakkor ne higgyük, hogy a fegyverforgatókkal való kalandozás csak kezdő játékosok számára ideális. A Harcosokban megvan minden ahhoz, hogy zöldfülűtől a vén rókákig mindenki élvezetes, izgalmas karaktereket játszhasson.",
+            "title": null
+        },
+        {
+            "type": "rule",
+            "text": "A harcosok – nevükhöz híven – azon kalandozók, kik kardforgatásból, fegyverük áruba bocsátásából élnek. Elvárható tehát, hogy mindközül ők forgassák legkiválóbban választott fegyverüket. Aki a hideg vas iskoláját járja, ahol minden pengéváltás, minden vágás könnyen az utolsó lehet, nem nélkülözheti a vívás tudományát. Csoda hát, ha a harcosok mindenkinél több időt áldoznak harci tudásuk fejlesztésére? Ennek megfelelően érdemes sok Harcértek módosítót (HM) vásárolniuk, szintlépésenként általában 10 ponttal növelniük HM-jeik számát.",
+            "title": "Harcérték"
+        },
+        {
+            "type": "paragraph",
+            "text": "Életerő és fájdalomtűrés",
+            "title": null
+        },
+        {
+            "type": "rule",
+            "text": "A harcosok életerő és fájdalomtűrés terén is a legjobbak közé számítanak, hiszen választott hivatásuk nap mint nap ezernyi megpróbáltatásnak teszi ki őket, ami megedzi testüket. Aki nem bírja a szüntelen terhelést, abból sohasem válik kalandozó, aki pedig igen, az szükségszerűen megacélzódik tőle. Így aztán egyetlen valamirevaló harcos sem nélkülözheti a magas fájdalomtűrést, Fp-jeik számát szintlépésenként átlagosan 7 ponttal növelik.",
+            "title": "Életerő és fájdalomtűrés"
+        },
+        {
+            "type": "paragraph",
+            "text": "Képzettségek",
+            "title": null
+        },
+        {
+            "type": "rule",
+            "text": "A harcos – mint az eddigiekből bizonyára kiderült – a lehetőségek kasztja. A küzdelmen túl semmit nem köteles tanulni, nem verik béklyóba hagyományok, kötelezettségek, így bőven jut ideje és energiája arra, hogy bármilyen érdeklődési körébe tartozó képzettséget elsajátítson. Ám harci tudományát folyamatosan fejlesztenie kell, ami még tőle is időt és kitartást követel, így a harcosok általában meglehetősen sok Kp-t vásárolnak, szintenként átlagosan 15-öt.",
+            "title": "Képzettségek"
+        },
+        {
+            "type": "paragraph",
+            "text": "A harcos induló képzettségei",
+            "title": null
+        },
+        {
+            "type": "paragraph",
+            "text": "Azok a harcosok, akik nem jártak ki egyetlen „neves” iskolát sem, általában más harcosoktól, rokonaiktól vagy házi tanítóktól sajátítják el a küzdelem alapjait. Szükségképpen kevesebb tudással indulnak, mint mindazok, akiket képzett fegyvermesterek oktatnak számtalan társukkal egyetemben.",
+            "title": null
+        },
+        {
+            "type": "paragraph",
+            "text": "Ide soroljuk továbbá az egyszerű katonákat, városőröket és testőröket is, hacsak nem valamely híresen jól szervezett reguláris haderő kötelékéből vagy más iskolából kerültek ki.",
+            "title": null
+        },
+        {
+            "type": "paragraph",
+            "text": "A harcos induló képzettségei 1. Tapasztalati szinten:",
+            "title": null
+        },
+        {
+            "type": "table",
+            "text": null,
+            "title": null,
+            "headers": [
+                "Képzettség",
+                "Fok"
+            ],
+            "rows": [
+                [
+                    "Fegyverhasználat",
+                    "3. fok"
+                ],
+                [
+                    "3 Fegyverhasználat",
+                    "2. fok"
+                ],
+                [
+                    "Fegyverismeret",
+                    "2. fok"
+                ],
+                [
+                    "Fájdalomtűrés",
+                    "2. fok"
+                ],
+                [
+                    "Harctéri gyakorlat",
+                    "2. fok"
+                ],
+                [
+                    "Pajzshasználat",
+                    "2. fok"
+                ],
+                [
+                    "Állatismeret (hátasok)",
+                    "1. fok"
+                ],
+                [
+                    "Lovaglás",
+                    "2. fok"
+                ],
+                [
+                    "Futás",
+                    "2. fok"
+                ],
+                [
+                    "Mászás",
+                    "+15%"
+                ],
+                [
+                    "Esés",
+                    "+15%"
+                ],
+                [
+                    "Akrobatika",
+                    "+15%"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A harcos képzettségei, melyeket iskolájától vagy mesterétől az Oktatás képzettség 4. foka által nyújtott előnyével tanulhat:",
+            "title": null
+        },
+        {
+            "type": "rule",
+            "text": "Akrobatika, Állatismeret, Esés, Fájdalomtűrés, Fegyverhasználat, Fegyverismeret, Futás, Harctéri gyakorlat, Hadvezetés, Harci láz, Lélektan, Lovaglás, Mászás, Művészetek (Rajz), Pajzshasználat, Pusztakezes harc, Számtan/mértan, Taktika, Térképészet, Úszás, Vérviselet.",
+            "title": "Harcos képzettségek (Oktatás 4. fok)"
+        },
+        {
+            "type": "paragraph",
+            "text": "A harcos fegyvertára",
+            "title": null
+        },
+        {
+            "type": "rule",
+            "text": "A harcosok annyiféle fegyverrel verekszenek, ahány félék. Egyes tájegységekre vagy hagyományokra persze jellemző lehet egy-egy bevett összeállítás. Nem ódzkodnak sem a pajzsok használatától, sem merev vértek viseletétől, közelharci, hajító és célzófegyvereket egyaránt szívesen használnak. A tapasztaltabb harcosok általában egy-két fegyver használatát sajátítják el 4. fokon (ezek természetesen azok, melyeket leggyakrabban forgatnak).",
+            "title": "Harcos fegyverhasználat"
+        }
+    ]
+}

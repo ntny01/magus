@@ -1,0 +1,340 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": false,
+    "section_title": "",
+    "content_blocks": [
+        {
+            "type": "table",
+            "headers": [
+                "Tétel",
+                "Ár"
+            ],
+            "rows": [
+                [
+                    "Temetés: egyszerű szertartás (pap)",
+                    "3r"
+                ],
+                [
+                    "Temetés: kisebb temetés (pap, fejfa, harang)",
+                    "10r"
+                ],
+                [
+                    "Temetés: nemesi sírba tétel",
+                    "5a"
+                ],
+                [
+                    "Temetés: mumifikálás",
+                    "50a"
+                ],
+                [
+                    "Temetés: síremlék, családi sírbolt",
+                    "25a"
+                ],
+                [
+                    "Temetés: főnemesi gyászszertartás",
+                    "150a"
+                ],
+                [
+                    "Temetés: királyi végtisztesség",
+                    "500a"
+                ]
+            ]
+        },
+        {
+            "type": "table",
+            "headers": [
+                "Tétel",
+                "Ár"
+            ],
+            "rows": [
+                [
+                    "Ingatlan: telek",
+                    "5-200a"
+                ],
+                [
+                    "Ingatlan: parasztház",
+                    "15e"
+                ],
+                [
+                    "Ingatlan: gazdasági épületek",
+                    "5e"
+                ],
+                [
+                    "Ingatlan: nemesi udvarház",
+                    "65a"
+                ],
+                [
+                    "Ingatlan: gazdasági épületek",
+                    "15a"
+                ],
+                [
+                    "Ingatlan: kastély",
+                    "1000a"
+                ],
+                [
+                    "Ingatlan: vár",
+                    "1500a"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "* Ingatlanok csak egészen kivételes esetekben cserélnek gazdát pénzért, értéküket mégis megadjuk a viszonyítás végett. Jobbára adományként kerülnek új birtokosukhoz, Toronban például semmilyen más módja nincs a megszerzésüknek. A telek(birtok)árak változása elsősorban az évi jövedelmüktől függ."
+        },
+        {
+            "type": "table",
+            "headers": [
+                "Tétel",
+                "Ár"
+            ],
+            "rows": [
+                [
+                    "Egyéb: agyagedény",
+                    "5r"
+                ],
+                [
+                    "Egyéb: ásó",
+                    "40r"
+                ],
+                [
+                    "Egyéb: csengő",
+                    "10r"
+                ],
+                [
+                    "Egyéb: fáklya",
+                    "1r"
+                ],
+                [
+                    "Egyéb: fenőkő",
+                    "1r"
+                ],
+                [
+                    "Egyéb: gyertya",
+                    "2r"
+                ],
+                [
+                    "Egyéb: halászháló",
+                    "80r"
+                ],
+                [
+                    "Egyéb: hátizsák, kicsi",
+                    "90r"
+                ],
+                [
+                    "Egyéb: hátizsák, nagy",
+                    "120r"
+                ],
+                [
+                    "Egyéb: hordó, kicsi",
+                    "2e"
+                ],
+                [
+                    "Egyéb: hordó, nagy",
+                    "4e"
+                ],
+                [
+                    "Egyéb: horgász horog",
+                    "1r"
+                ],
+                [
+                    "Egyéb: írótoll",
+                    "20r"
+                ],
+                [
+                    "Egyéb: kardhüvely, díszes",
+                    "6e"
+                ],
+                [
+                    "Egyéb: kardhüvely, közönséges",
+                    "2e"
+                ],
+                [
+                    "Egyéb: kalapács",
+                    "10r"
+                ],
+                [
+                    "Egyéb: kosár",
+                    "6r"
+                ]
+            ]
+        },
+        {
+            "type": "table",
+            "headers": [
+                "Tétel",
+                "Ár"
+            ],
+            "rows": [
+                [
+                    "kova és acél",
+                    "5r"
+                ],
+                [
+                    "kenderkötél, 20 ynevi láb",
+                    "30r"
+                ],
+                [
+                    "kréta",
+                    "1r"
+                ],
+                [
+                    "kulacs",
+                    "4r"
+                ],
+                [
+                    "láda, kicsi",
+                    "3e"
+                ],
+                [
+                    "láda, nagy",
+                    "6e"
+                ],
+                [
+                    "lánc, 1 ynevi lábanként",
+                    "5r"
+                ],
+                [
+                    "lámpás",
+                    "10r"
+                ],
+                [
+                    "létra",
+                    "25r"
+                ],
+                [
+                    "lőpor, 1 ynevi lat",
+                    "1a"
+                ],
+                [
+                    "mászóvas",
+                    "3r"
+                ],
+                [
+                    "mécses",
+                    "1r"
+                ],
+                [
+                    "méreg",
+                    "1e"
+                ],
+                [
+                    "olaj, lámpásba",
+                    "3r"
+                ],
+                [
+                    "óváska",
+                    "70r"
+                ],
+                [
+                    "papír, ív",
+                    "20r"
+                ],
+                [
+                    "pecsétviasz",
+                    "10r"
+                ],
+                [
+                    "pergamen, ív",
+                    "15r"
+                ],
+                [
+                    "prém",
+                    "6e"
+                ],
+                [
+                    "sátor, kicsi",
+                    "5e"
+                ],
+                [
+                    "sátor, nagy",
+                    "7a"
+                ],
+                [
+                    "sátor, legénységi",
+                    "1a"
+                ],
+                [
+                    "selyem, láb",
+                    "8e"
+                ],
+                [
+                    "síp",
+                    "1e"
+                ],
+                [
+                    "szeg, tucat",
+                    "1r"
+                ],
+                [
+                    "szekérce",
+                    "2e"
+                ],
+                [
+                    "szövet, láb",
+                    "30r"
+                ],
+                [
+                    "takaró",
+                    "80r"
+                ],
+                [
+                    "tapló",
+                    "2r"
+                ],
+                [
+                    "tarisznya",
+                    "40r"
+                ],
+                [
+                    "tegez",
+                    "150r"
+                ],
+                [
+                    "tinta",
+                    "20r"
+                ],
+                [
+                    "tömlő",
+                    "3r"
+                ],
+                [
+                    "törhüvely",
+                    "1e"
+                ],
+                [
+                    "tükör, fém",
+                    "10r"
+                ],
+                [
+                    "tűzszerszám",
+                    "10r"
+                ],
+                [
+                    "vaslabás",
+                    "10r"
+                ],
+                [
+                    "varrótű",
+                    "3r"
+                ],
+                [
+                    "viaszkosvászon, rőf",
+                    "25r"
+                ],
+                [
+                    "vödör",
+                    "1e"
+                ],
+                [
+                    "zár/lakat",
+                    "3e"
+                ],
+                [
+                    "zsák",
+                    "20r"
+                ]
+            ]
+        }
+    ]
+}

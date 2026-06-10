@@ -1,0 +1,321 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": true,
+    "section_title": "Gyógynövények",
+    "content_blocks": [
+        {
+            "type": "paragraph",
+            "text": "az egyszerűség kedvéért a M.A.G.U.S. rendszerében betegségként kezelendő, melynek oka a seb szennyeződése. A súlyosság ugyanúgy határozandó meg, mint a többi betegség esetén, azaz az Egészségpróba elhibázásából számolható ki. Hatása minimálisan Enyhe lefolyású, maximálisan Halálos lehet. Az ott leírt táblázatnak megfelelően csökkenni fog az áldozat FP-inek száma, s a sebláz miatt Ereje is a táblázatnak megfelelően fog esni. Az Egészség tulajdonság is csökken, de csak a táblázatban szereplő érték felével."
+        },
+        {
+            "type": "paragraph",
+            "text": "Ha a sebesültet azután kívánják kezelni, hogy a seb már elfertőződött, először a betegséget kell meggyógyítani, s csak utána kerülhet sor a seb ellátására. A betegség gyógyítása alatt nem kell újabb százalékokat dobni az újra fertőződés esélyére, ez elhagyható."
+        },
+        {
+            "type": "paragraph",
+            "text": "A gyógynövények segítségével mindenféle bajokat, nyavalyákat meggyógyíthat a vajákos. A megfelelő kezelés alkalmazásával lerövidíthető az adott betegség javulási ideje, s biztosabbá tehető a javulás is."
+        },
+        {
+            "type": "paragraph",
+            "text": "A helyes gyógymód segít a betegnek, hogy legyűrje a testében terebélyesedő kórt. Komoly plusz módosítókat ad a javulás során dobott Egészségpróbákra, így szinte biztossá teszi a teljes kigyógyulást. A kérdés pusztán az, hogy a csodadoktor megtalálja-e a helyes gyógymódot. Ebben a Herbalizmus képzettség lehet segítségére."
+        },
+        {
+            "type": "paragraph",
+            "title": "A gyógynövények alkalmazásai",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Főzet",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Forrázat",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Kivonat",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Tinktúra",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Szirup",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Kenőcs",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Por",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Fürdő, borogatás",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "Attól függően, hogy milyen anyagot óhajt a karakter készíteni, különböző módszerekhez folyamodhat. A gyógyteákat általában főzik vagy forrázzák. A fegyvermérgek szinte kivétel nélkül kivonatok vagy kenőcsök; az étel és italmérgek pedig porok vagy tinktúrák."
+        },
+        {
+            "type": "paragraph",
+            "text": "Néhány gyógyfajta igen sok mindenre jó, úgymond általános gyógyhatású – ilyen például az ezerjófű vagy a felcsercsarab – szinte minden esetben lehet használni. Persze ahhoz is szakértelem kell, hogy mikor, milyen formában alkalmazzuk őket."
+        },
+        {
+            "type": "paragraph",
+            "text": "Az alábbiakban néhány példát sorolunk fel a gyógynövények használatára. A lista korántsem teljes, még csak nem is töredékes – nem több, mint ízelítő mind a játékosoknak, mind a KM-eknek, hogy miként értelmezzék és alkalmazzák a Herbalizmus képzettséget és a gyógynövényeket. Minden KM-et csak biztatni tudunk, nosza, alkosson betegséget, s találja ki gyógymódjukat, a hatásukat enyhítő gyógyfüveket, azok kombinációit."
+        },
+        {
+            "type": "paragraph",
+            "title": "Gyógynövények gyógyhatásai",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "table",
+            "headers": [
+                "Betegség",
+                "Gyógyhatás"
+            ],
+            "rows": [
+                [
+                    "Aranyér",
+                    "benedekfű, ebszmag, galagonya"
+                ],
+                [
+                    "Asztma",
+                    "bodza, csikorka, söpörje"
+                ],
+                [
+                    "Bélbajok",
+                    "árnika, madár keserűfű, macskagyökér"
+                ],
+                [
+                    "Bénulás",
+                    "boglárka, nadragulya, zászpa"
+                ],
+                [
+                    "Bőrbaj",
+                    "angyélika, kenderkefű, tárnics"
+                ],
+                [
+                    "Búskomorság",
+                    "citromfű, csikorkafű, verbéna"
+                ],
+                [
+                    "Csonthártya",
+                    "árnika, kamilla, nadálytő"
+                ],
+                [
+                    "Csuklás",
+                    "ánizs, kapor, mérges saláta"
+                ],
+                [
+                    "Csúz",
+                    "berkenye, homokigyopár, istápfű"
+                ],
+                [
+                    "Fejfájás",
+                    "árvácska, hunyor, kalánfű"
+                ],
+                [
+                    "Féreghajtók",
+                    "benedekfű, diólevél, kutyabenge"
+                ],
+                [
+                    "Fogfájás",
+                    "bérese, borsmenta, ratanhia"
+                ],
+                [
+                    "Görcs",
+                    "aranyarozs, fekete üröm, hérics"
+                ],
+                [
+                    "Gyomorbaj",
+                    "aranyvirág, harmatfű, vérehulló fecskefű"
+                ],
+                [
+                    "Hashajtók",
+                    "békalen, fekete szeder, varjútövis"
+                ],
+                [
+                    "Hasmenés",
+                    "árvácska fű, kálmos"
+                ],
+                [
+                    "Hányás",
+                    "füstike, sás, tengeri hagyma"
+                ],
+                [
+                    "Húgyhajtók",
+                    "aranyvessző, berkenye, porcikafű"
+                ],
+                [
+                    "Idegbaj",
+                    "árnika, boróka, hársfa"
+                ],
+                [
+                    "Kanyaró",
+                    "kecskeruta, kökörcsin, szemvidítófű"
+                ],
+                [
+                    "Kopaszság",
+                    "csalán, hamvas hárs, zsurló"
+                ],
+                [
+                    "Köhögés",
+                    "ánizs, boróka, hársfa"
+                ],
+                [
+                    "Köszvény",
+                    "babhéj, ezerjófű, pemetefű"
+                ],
+                [
+                    "Láz",
+                    "bodza, kamilla, útifű"
+                ],
+                [
+                    "Lép",
+                    "apróbojtorján, buzér, pásztortáska"
+                ],
+                [
+                    "Malária",
+                    "cickafark, grindélia, napraforgó"
+                ],
+                [
+                    "Máj",
+                    "ebszmag, kecskerágó, varjúháj"
+                ],
+                [
+                    "Mérgezés",
+                    ""
+                ],
+                [
+                    "- alkohol",
+                    "ebszmag, zab"
+                ],
+                [
+                    "- gáz",
+                    "gyöngyvirág, keserű mandulavíz, lobélia"
+                ],
+                [
+                    "- étel",
+                    "zászpa"
+                ],
+                [
+                    "Nátha",
+                    "ámbrafű, hársfa, kamilla"
+                ],
+                [
+                    "Nemi serkentők",
+                    "méz, bazsalikom"
+                ],
+                [
+                    "Ötvar",
+                    "bojtorján, görvélyfű, lóhere"
+                ],
+                [
+                    "Rüh",
+                    "bérese, levendula, üröm"
+                ],
+                [
+                    "Sárgaság",
+                    "borbolya, katáng, szurokfű"
+                ],
+                [
+                    "Sebek",
+                    ""
+                ],
+                [
+                    "- friss seb",
+                    "útilapuvél, cickafark főzet, orbáncfű olaj"
+                ],
+                [
+                    "- nehezen gyógyuló seb",
+                    "cickafark főzet, árnika tinktúra, körömvirág kenőcs"
+                ],
+                [
+                    "- kelés, gyulladás",
+                    "ezerjófű por, körömvirág kenőcs"
+                ],
+                [
+                    "- tályog",
+                    "árnika tinktúra, kamilla főzet"
+                ],
+                [
+                    "- égés",
+                    "méz, ezerjófű főzet, orbáncfű olaj"
+                ],
+                [
+                    "- fagyás",
+                    "fagyöngy, fehércsalán, zab"
+                ],
+                [
+                    "- fekély",
+                    "bürök, ezerjófű, vérfű"
+                ],
+                [
+                    "Szívbaj",
+                    "fekete bodza, gyűszűvirág, iglice"
+                ],
+                [
+                    "Tüdőgyulladás",
+                    "beléndek, kender, vérfű"
+                ],
+                [
+                    "Vesebaj",
+                    "babhéj, májvirág, petrezselyem"
+                ],
+                [
+                    "Vérhas",
+                    "borsos keserűfű, harmatul, vérontó pimpó"
+                ],
+                [
+                    "Vérsapadás",
+                    "ezerjófű, kékharmathfű, sárga tárnics"
+                ]
+            ]
+        }
+    ]
+}

@@ -1,0 +1,135 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": false,
+    "section_title": "",
+    "content_blocks": [
+        {
+            "type": "rule",
+            "title": "Mérgezés semlegesítése",
+            "headers": [
+                "Mana pont",
+                "Varázslás ideje",
+                "Hatótáv",
+                "Időtartam"
+            ],
+            "rows": [
+                [
+                    "5 + 5/a méreg szintje",
+                    "1 kör",
+                    "Érintés",
+                    "Maradandó"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A boszorkánymester a varázslattal bármilyen mérget semlegesíthet a kiválasztott lény szervezetében. A méreg addig kiváltott hatásait a semlegesítés nem fogja megszüntetni, ehhez gyógyító mágiára, vagy természetes gyógyulásra van szükség, de a további hatás azonnal felfüggeszthető."
+        },
+        {
+            "type": "paragraph",
+            "text": "Semlegesítés esetén a hatás nem, csupán a méreg szintje a mérvadó. Minden egyes méregszint semlegesítése 5 Mp-ba kerül az alap Erősítéshez (0. szintű méreg ellen) szükséges 5 Mp-on felül. A varázslat csak akkor hat, ha a semlegesítés szintje egyenlő vagy magasabb, mint a méreg szintje. Ellenkező esetben a hatás elmarad. A Varázslási idő leteltével az áldozat teste megvonaglik, homlokára veríték ül ki, arca elfehéredik és görcsösen öklendezi föl a véréből és testnedvei közül kicsapódó és gyomrába gyűlő mérget, mely immáron minden káros hatását elveszítette."
+        },
+        {
+            "type": "rule",
+            "title": "Méreg átadása",
+            "headers": [
+                "Mana pont",
+                "Varázslás ideje",
+                "Hatótáv",
+                "Időtartam"
+            ],
+            "rows": [
+                [
+                    "22",
+                    "1 szegmens",
+                    "Érintés",
+                    "Végleges"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A boszorkánymester bal tenyere a varázslat elmormolása után izzadni kezd, és apró verítékcseppek jelennek meg rajta. Ha képes áldozata bőrfelületét teljes tenyérrel megérinteni, a testében felgyülemlett méreg (akárha kontaktméreg lenne) egy töredékmásodperc alatt átáramlik az áldozat testébe. Az érintés helyén még egy percen keresztül vörhenyes kiütések rajzolják ki a boszorkánymester keze nyomát."
+        },
+        {
+            "type": "paragraph",
+            "text": "A varázslat a méreg addigi hatásait természetesen nem semlegesíti az áldozatban, azonban a méreg minden tekintetben úgy fog működni, mint a boszorkánymester szervezetében."
+        },
+        {
+            "type": "paragraph",
+            "text": "Amennyiben egy méreg hatása egyszeri volt (például azonnali Fp-vesztés), a varázslatot a mérgezést követő 10 körön belül érdemes alkalmazni, utána ugyanis a szervezet semlegesíti az ártalmas anyagot. Ha a méreg hatása görcs, bénulás vagy hasonló állapot előidézése volt, a varázslat alkalmazásával a hatás a boszorkánymesteren azonnal megszűnik, az áldozat testébe pedig teljes értékű méreg kerül."
+        },
+        {
+            "type": "paragraph",
+            "text": "Ha a boszorkánymester mérgezésekor sikeres Egészségpróbát dobott, tehát a méreg rajta nem fejtette ki hatását, még 10 körön át elegendő mennyiségben áll rendelkezésre a szervezetben ahhoz, hogy a varázslat alkalmazható legyen. A 10. kör leteltével a méreg lebomlik, és nem adható tovább. Az áldozat ellenállhat a varázslatnak, sikeres Egészségpróbával. A próba módosítójának meghatározásakor mindig a méreg szintje a mérvadó."
+        },
+        {
+            "type": "flavor_text",
+            "text": "Átkozásom nem szokásom De ha megfog, azt se bánom! Járóföldnyi vérré váljon! Fürdőlepedő lángot hányjon! Tizenhárom szekér szalma Rohadjon el az ágyadba! Tizenhárom esztendőre... Vigyenek a temetőbe!"
+        },
+        {
+            "type": "paragraph",
+            "text": "Az átkok a mágiaelméleti viták egyik sarkalatos témái. Sem a Sigranomoi Egyetem professzorai, de még a Fehér Páholy mágusmesterei sem boldogultak működésük mechanizmusának megfejtésével. Besorolás szerint nem esnek egyetlen ismert mágiatípus alá sem, s kialakulását tekintve is megoszlanak a vélemények. Abban azonban mindannyian egyetértenek, hogy szinte biztosan nem emberi vívmány. Valószínűsíthető, hogy Ryek démonokkal paktáló hatalmasságai hagyták örökül nem evilági pártfogóiktól, de a töredékes ismeretek tükrében ugyanúgy lehet crantai idők-ből visszamaradt, vagy talán még régebbi hagyaték. Egyes nézetek szerint közelebb áll a Szakrális mágiához, mint a világi hatalomhoz, s eredete a szellemhit és a sámánizmus tanai között keresendő."
+        },
+        {
+            "type": "paragraph",
+            "text": "A boszorkánymesterektől azonban mi sem áll távolabb, mint rontó hatalmuk forrásának kutatása. Ők megelégszenek azzal, hogy a megfelelő formulák használatával ellenfeleikre gyötrelmet, kínt, s gyalázattal terhes életet hozhatnak."
+        },
+        {
+            "type": "rule",
+            "title": "Átokvarázs",
+            "headers": [
+                "Mana pont",
+                "Varázslás ideje",
+                "Hatótáv",
+                "Mágiaellenállás"
+            ],
+            "rows": [
+                [
+                    "Lásd a leírást!",
+                    "4 szegmens",
+                    "Hallótávolság",
+                    "Asztrális"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A varázslat segítségével a legkülönbözőbb átkok szórhatók ki a kiszemelt áldozatra. A boszorkánymesterek által testi gyengeséget okoznak; használatukkal bármelyik Tulajdonság csökkenthető, a maximális Fp-k mennyisége változtatható, vagy lehet gyengeséget előidézni, mely által az áldozat harcértékei fogyatkoznak meg. Az átok Mana pont igényéről a következő táblázat tudósít:"
+        },
+        {
+            "type": "table",
+            "headers": [
+                "Átok természete",
+                "Mp-igény"
+            ],
+            "rows": [
+                [
+                    "Képesség csökkentés",
+                    "6 Mp / képesség-pont"
+                ],
+                [
+                    "Max. Fp csökkentés",
+                    "4 Mp / 1 Fp"
+                ],
+                [
+                    "Gyengeség",
+                    "2 Mp / 1 TÉ, VÉ"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A hatás nem azonnal teljesedik ki, hanem napról-napra egy fokozattal romlik (tehát minden egyes nappal 1-gyel csökken a Tulajdonság, 2-vel a max. Fp, 4-gyel a harcértékek) egészen a varázslat kiteljesedéséig, majd egy egész holdhónapig ül az áldozaton, s csak utána foszlik szét. Két azonos természetű átok módosítói nem adódnak össze, hanem csak az erősebb hatása érvényesül."
+        },
+        {
+            "type": "paragraph",
+            "text": "Az átok Erőssége egyenlő befektetett Mana pont mennyiségével. Tehát egy 36 Mana pontos átok 6 ponttal csökkent egy Tulajdonságot vagy 9 ponttal a maximális Fp-t vagy 18-cal az áldozat Támadó és Védő értékét, az Erőssége pedig 36 lesz."
+        },
+        {
+            "type": "paragraph",
+            "text": "Ha a boszorkánymester a halálán van, Mana pont feláldozása nélkül – vagy Mana pontok hiányában – is elmondhat"
+        }
+    ]
+}

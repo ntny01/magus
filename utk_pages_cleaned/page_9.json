@@ -1,0 +1,100 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": null,
+    "is_new_section": true,
+    "section_title": "A Cél",
+    "content_blocks": [
+        {
+            "type": "paragraph",
+            "text": "Van még egy fontos különbség a szerepjátékok és az egyéb játékok között: a végső cél. Általánosan elfogadott szabály, hogy egy játéknak van eleje és vége – a vége pedig akkor következik be, ha valaki győz. Ez így nem igaz a szerepjátékokra, mert itt senki sem „győz”. A játék célja, hogy jól érezzék magukat a játékosok, hogy összejöjjenek és együtt töltsék szabadidejüket."
+        },
+        {
+            "type": "paragraph",
+            "text": "Egy elkezdett játék számtalan fejezetből, úgynevezett kalandból áll. A kalandnak persze mindig van egyfajta célja: megszerezni valamilyen különösen értékes tárgyat egy nagyúr megbízásából, felkutatni romvárosok titkait vagy segíteni egyik birodalmat a másik ellen. Az effajta célok elérhetőek egy-két játéknapon alatt, ahol persze a játékosok olykor öt-hat órát is játszanak."
+        },
+        {
+            "type": "paragraph",
+            "text": "Ám a játéknak nincs vége, amikor egy kaland befejeződik. Ugyanaz a karakter más kalandokban is felkerekedhet. Az ilyen kaland-sorozatokat életút-játéknak nevezzük, hisz szerencsés esetben a karakter teljes életét játsszuk végig."
+        },
+        {
+            "type": "paragraph",
+            "text": "De emlékezzünk: a kaland célja nem a győzelem, hanem hogy jól érezzük magunkat, míg a közös cél felé haladunk. Egy kaland hossza nem szab szükségképp mesterséges határt a játékidőnek – a M.A.G.U.S. több, mint elég kalandra ad lehetőséget ahhoz, hogy egy társaság akár élete végéig eljátszhasson."
+        },
+        {
+            "type": "paragraph",
+            "text": "Ez a kötet egy tágas és különös dimenziót tár fel, különös népekkel, fajokkal, varázslatokkal keresi azok kedvét, akik csak most ismerkednek és akik már régebb óta játszanak szerepjátékot, ezen könyv anyaga minden bizonnyal elegendő számukra ahhoz, hogy megkezdhessék – vagy épp új utakon folytathassák – kalandozásaikat Ynev világán."
+        },
+        {
+            "type": "rule",
+            "title": "Néhány etikai szabály",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Tanácsok",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Kifejezések",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Akaraterő (Akr)",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Asztrál (Asz)",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Asztrálmágia",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Állóképesség (Áks)",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Célzó érték (CÉ)",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Egészség (Egs)",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        }
+    ]
+}

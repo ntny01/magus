@@ -1,0 +1,88 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": true,
+    "section_title": "Darton egyedi litániái",
+    "content_blocks": [
+        {
+            "type": "paragraph",
+            "text": "Mégsem az ettől való félelem az oka, hogy a papok ritkán kívánnak többet a madártól, mint egy nyúl elejtése, egy üzenet eljuttatása vagy áldozat bemutatása s jóval az időtartam előtt elbocsátják a madarat. Sokkalta inkább arról van szó, hogy őszintén tisztelik és becsülik őket, mint büszke, egyenrangú társakat, akit alávaló gazság lenne önző érdekből veszélybe sodorni. Hitük szerint a harcban elesett Arel-papokat úrnőjük maga mellé emeli, s ilyen vándorsólymok formájában küldi hívei megsegítésére."
+        },
+        {
+            "type": "rule",
+            "title": "Szélkeltés",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "Arel papjai kisebb szelet hívhatnak létre ily módon, feltéve, hogy a szabad ég alatt tartózkodnak. A szél erőssége nem lesz elegendő ahhoz, hogy tárgyakat sodorjon el, de a fáklyákat és a kisebb tüzeket már képes kioltani. Csak kisebb hajók tartós irányítására alkalmas, nemcsak gyengesége, de rövid időtartama miatt is. Ködök, mérgező gőzök elhajtására viszont kiválóan alkalmas."
+        },
+        {
+            "type": "rule",
+            "title": "Gyilkos tréfa",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "Ha az alany elvéti Mágiaellenállását, fájdalmas, kínlódó röhögésben tör ki. Minden körrel elveszít egyet Állóképességéből, illetve 1k3-at Fp-iből. Ha állóképessége 0-ra csökken, belehal kínjaiba, csakúgy, ha elfogynak Fp-i után az ÉP-je is. Darton szolgája az időtartam alatt bármikor megszakíthatja fohászát, de akkor is véget ér, ha a fohászt megidéző pap elveszíti eszméletét vagy maga is meghal. Az áldozat csakis akkor képes harcolni, ha a kör elején sikeres Akaraterőpróbát tesz. Ekkor a Harc kábultan módosítói érvényesek rá. KÉ: -10, TÉ: -20, VÉ: -10, CÉ: -30"
+        },
+        {
+            "type": "rule",
+            "title": "Méregizzadás",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "Darton szolgája ily módon képes eltávolítani a szervezetéből került mérget, hacsak az lehetetlenné nem teszi fohászok használatát. A fohász mindig annyi körig tart, ahányadik szintű az adott méreg volt, s ez határozza meg a fohász Kegy pont szükségletét is. Ha a pap nincs tisztában a méreg erősségével, csak találgathat, és addig kell folytatnia a fohászkodást, míg a mérget sikeresen el nem távolítja a testéből. Ha hatalma ehhez nem elegendő, a fohász minden ÉP-je egy szinttel csökkenti a méreg erősségét. Tehát egy 3. szintű méreg legyőzése 18 Kegy pont, azonban ha a papnak csak 12 Kegy pontja van, a mérget nem sikerül maradéktalanul eltávolítania, viszont Erőssége 1. szintre esik vissza. A pap ilyenkor újabb Egészségpróbára jogosult, immár a méreg csökkentett Erősségével szemben. Ha sikerül felülkerekednie a mérgező anyagon, azt kiizzadva eltávolítja szervezetéből, s minden eddigi káros hatását megszünteti. Az ily módon hatástalanított anyag újbóli felhasználása lehetetlen."
+        },
+        {
+            "type": "paragraph",
+            "text": "Darton egyedi rituáléi"
+        },
+        {
+            "type": "rule",
+            "title": "Holt beszéd",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "E fohász segítségével Darton szolgája megértheti magát mindazon túlvilági teremtményekkel, amelyeket ő hajt hatalma alá, valamint azokkal, akik valamilyen szintű intelligenciával rendelkeznek. Ettől függetlenül az ellenséges élőholtak nem feltétlenül válnak barátságossá az irányában, ám megpróbálhatja meggyőzni őket saját igazáról."
+        },
+        {
+            "type": "rule",
+            "title": "Nyugalom",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "Ennek a mágiának a felhasználásával Darton szolgája nyugalmat biztosíthat mindazoknak, akiket eltemet. Az ily módon túlvilági útra bocsátott holttesteket nem lehet sírjukból előszólítani, sem beléjük lelket idézni. Erre egyedül az lenne képes, aki magát a szertartást végrehajtotta."
+        },
+        {
+            "type": "rule",
+            "title": "Holtak útja",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "Igen veszélyes része ez annak a tudásnak, amelyet Darton tár fel szolgálói előtt. Segítségével ugyanis képesek lesznek arra, hogy egy hónaposnál nem régebbi holttestbe férkőzve, hozzájussanak utolsó emlékeihez. Az utolsó 30 kör (5 perc) és a halál emléke oly szörnyű, hogy a papnak sikeres Asztrálpróbát kell tennie, különben csak zavaros rémképek maradnak meg benne. Amennyiben sikeres a próba, akkor az minden mozdulatát átéli az áldozat utolsó 30 körének (5 perc), legyen az akármilyen rémisztő is. Ez alatt az idő alatt egyfajta transzba kerül és semmilyen más tevékenységre nem képes. A transzból kizökkenhető ugyan, ám ekkor mind a Kegy pontjai, mind az addig megszerzett információk kárba vesznek. Ha kettővel, vagy annál többel veti el Asztrálpróbáját, akkor még komolyabb következményei is lehetnek a fohásznak. A pap ilyenkor annyi pontot veszít Asztráljából, amennyivel"
+        }
+    ]
+}

@@ -1,0 +1,20 @@
+{
+    "is_new_chapter": true,
+    "chapter_title": "Istenek és Vallások",
+    "is_new_section": true,
+    "section_title": "Ranil",
+    "content_blocks": [
+        {
+            "type": "paragraph",
+            "text": "A dwoon mitológia egyetlen istene; a Dwyll Unió lakói ő az egyetlen és mindenek felett való létező. Megnyilvánulása a ragyogó nap, ezért gyakran nevezik napistennek is, bár vallása nem a klasszikus értelemben vett napkultusz, külsőségeiben sokkal inkább emlékeztet a shadoni Domvik-hitre."
+        },
+        {
+            "type": "paragraph",
+            "text": "Papjai minden más istent Ranil részének vagy árnyékának tartanak, akiket az eltévelyedettek külön néven és külön szertartásokkal tisztelnek. Egyes istenekről – Tharról, Sog-ronról – az a véleményük, hogy nem egyebek különösképpen hatalmas démonoknál és elementáloknál."
+        },
+        {
+            "type": "paragraph",
+            "text": "Ranil hívei fanatikusak, a pyarroni egyházzal csupán jól felfogott politikai érdekeik miatt férnek össze. Mindenesetre az a szemelvita térítők számíthatnak rá, hogy ha kiterjesztik prédikáló körútjaikat az Unió területére, előbb-utóbb színleg véletlen, de bizonyosan halálos kimenetelű baleset éri őket."
+        }
+    ]
+}

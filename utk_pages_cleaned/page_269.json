@@ -1,0 +1,104 @@
+{
+    "is_new_chapter": true,
+    "chapter_title": "A Kis Arkánum Rituáléi",
+    "is_new_section": false,
+    "section_title": "",
+    "content_blocks": [
+        {
+            "type": "paragraph",
+            "text": "természet irányító törvényeket – ebben az esetben is. A fohász hatásának ugyanis nem szab határt a Személyes Aura jelentette védelem."
+        },
+        {
+            "type": "paragraph",
+            "text": "A pap a fohász alkalmazásával porrá zúzhat egy általa kiválasztott, nem mágikus, élettelen tárgyat. Ez lehet kő, fém, arany, bármi. A szétzúzható tárgy mérete a felhasznált Kegy pontok számától függ. A fohász minden E-je után 1 Ynevi pont tömegű tárgy tehető semmivé."
+        },
+        {
+            "type": "paragraph",
+            "text": "A pusztulás teljes, ráadásul meglehetősen látványos. A kiszemelt tárgy szilánkokra hull, s a szilánkok még további darabokra esnek szét. Mindez villámgyorsan történik, az apró, szerteszét repülő maradványok folyamatosan porladnak, a tárgy eredeti helyétől nagyjából fél ynevi láb sugarú körben már porszemekként hullanak alá. A fohász használatára számos lehetőség rejlik: könnyen megszabadíthatjuk ellenfelünket drága lánc- vagy sodronyingétől, esetleg feltett buzogányától, kétkezes kardjától."
+        },
+        {
+            "type": "rule",
+            "title": "Túlvilági lények elűzése",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A pap ezen fohásza más síkokról átkerült lényeket taszíthat ki az Elsődleges Anyagi Síkról. A könyörgés közben csak rámutat a kiválasztott lényre, s egy parancsszóval megtagadja jelenlétét az Elsődleges Anyagi Síkon. Ha a pap ismeri a lény igazi nevét, s ezt is használja a fohászban, az erősség 20 E-vel növekszik. Az űzés csak akkor sikeres, ha a fohász erőssége meghaladja a másvilági lény aktuális életerejét."
+        },
+        {
+            "type": "rule",
+            "title": "Útmutatás",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A fohász lehetővé teszi, hogy a pap tárgyak vagy személyek irányát felderítse. A fohász hatására a papnak felfedi a keresett tárgyak vagy személyek helyét, illetve irányát. Ez nem jelenti a távolság tökéletes ismeretét és az irányzék teljes pontosságát, ám ha a pap az isteni gondviselésre bízza magát, megérzései mindig a helyes útra vezérlik. A fohász időtartamának lejártáig hozzávetőlegesen érzi, hogy milyen messze és merrefelé lehet a célja, majd az érzések elvesznek – de a már így betájolt irányban tovább haladhatnak. Megjegyzendő, hogy a fohásszal nemcsak tárgyak, de városok, épületek is kereshetőek, így a pap nemigen tévedhet el. Hasznos tudomány Ynev hatalmas világában."
+        },
+        {
+            "type": "paragraph",
+            "text": "Tárgyak kereséséhez igen pontos leírással kell rendelkezni. Elbeszélés alapján csak igen érzékletes leírás esetén van esély a megtalálására, a biztos sikerhez egy rajzra vagy emlékképre van szükség. Nem egy esetben megtörtént, hogy a kísérletező papot hasonló, de nem a keresett tárgyhoz vezette el a fohász."
+        },
+        {
+            "type": "paragraph",
+            "text": "Személy keresése esetén tudni kell az illető életkorát, hozzávetőleges kinézetét, és azt a nevét, amit születésekor a névadás szertartás keretében adományoztak neki. Később felvett álnevek esetén a varázslat csak a leírásra támaszkodik, s könnyen tévútra vezethet alkalmazóját."
+        },
+        {
+            "type": "paragraph",
+            "text": "A keresett személy Mágiaellenállásra jogosult a fohász ellen, ha ez sikeres, jelenléte titokban marad."
+        },
+        {
+            "type": "rule",
+            "title": "Villámcsapás",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A fohászt csak szabad ég alatt lehet megidézni. A pap éles kiáltása nyomán hirtelen felmorajlik az ég és a jobbja által kijelölt helyre villámnyaláb sújt le a magasból. Ellentétben a mágiahasználók villámaival, ez nem az ujjhegyéből, hanem az áldozat feje feletti magasságból csap le, így fedezékbe vonulni, pajzsot a pap felé tartani teljesen felesleges. A kiszemelt célpontot látnia kell a papnak, s felé kell mutatnia a fohász alkalmazásakor. A villám sebzése a fohász minden E-je után 1k10 Sp. A villám minden esetben a fejet találja el."
+        },
+        {
+            "type": "rule",
+            "title": "Vízfakasztás",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A Vízfakasztás segítségével a pap a fohász minden egyes E-je után 1 liter vizet képes fakasztani valamely természeti tárgyból; avagy felszínre hívható a talajban lévő víz is. A víz teljesen természetes eredetű, tiszta és iható. A pap csak olyan tárgyból (pl. szikla vagy fatörzs) képes vizet fakasztani, melyet nem itat át semmiféle mágia. Ha az előcsorgó vizet nem fogják fel edénybe, akárcsak a közönséges víz, szétfolyik."
+        },
+        {
+            "type": "rule",
+            "title": "Átokérzékelés",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A fohász megfelel a boszorkányok és boszorkánymesterek Átokfejtés varázslatának, de minden típusú átkot képes felismerni, s ismérveit a pap tudomására hozni, ki az imádság során istenétől kér útmutatást. A fohász megmutatja az átok pontos hatását, s hogy ki alkalmazta azt az áldozaton."
+        },
+        {
+            "type": "rule",
+            "title": "Csend",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A fohász végrehajtásakor a hatótávolságon belül eső területen eluralkodik a teljes csend. Semmilyen zaj nem hallható – beszélgetni lehetetlen, a fohászok és varázslatok hangkomponense elvesz (mindazon varázslatok, melyek bűvös-"
+        }
+    ]
+}

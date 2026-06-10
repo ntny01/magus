@@ -1,0 +1,60 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": true,
+    "section_title": "Az ölelés mágiája",
+    "content_blocks": [
+        {
+            "type": "paragraph",
+            "text": "felismeri. A varázslat ellen Mentális Mágiaellenállás dobható, sikere esetén a bélyeg az áldozatról lefoszlik. A Megbélyegzés csókja állatokra is hatásos, mivel a bélyeg Mentális Mágiaellenállásuk részének jelentős hányada az érzékeléssel, az érzékszervekkel kapcsolatos. A megbélyegzettet a boszorkány a Megfigyelés varázslat együtt alkalmazásával, bármilyen távolságból varázsolhatja azokat a varázslatokat, melynek végrehajtásához elegendő látni az áldozatot. A megbélyegzett a boszorkány varázslatai ellen Asztrális Mágiaellenállásra -20 módosító járul, Mentális ME-re pedig nem jogosult – ez állatokra nem vonatkozik."
+        },
+        {
+            "type": "rule",
+            "title": "Rabszolgaság csókja",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "Az ölelés mágiája sajátos része a Szexuálmágiának, hiszen amellett, hogy rendkívül hatékony varázslatokat tartalmaz, az erősítésük is meglehetősen jó. Ezt annak köszönhetik ezek a mágiaformák, hogy a varázslat alanya nemcsak hogy beleegyezik a szerelmi aktusba, – hiszen ez nélkülözhetetlen feltétele ezen mágiacsoportnak – de többnyire aktívan részt is vesz benne. Ilyen esetekben a varázslat hatóideje megegyezik a mágiánál leírtakkal, s a ME is érvényesül. Akkor viszont, ha a boszorkány eléri, hogy a férfi kezdeményezze együttlétüket, a férfi nem jogosult a Mágiaellenállásra, és az időtartam is olyan hosszúra nyúlik, amennyire a boszorkány csak akarja. Ó akkor szakítja azt meg, amikor csak jónak látja, míg áldozatán csak mágikus destrukció, vagy hatékony papi mágia segíthet."
+        },
+        {
+            "type": "rule",
+            "title": "Akarat elorzása",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A kapcsolat mindaddig megvan közöttük, míg azt mágikus úton nem destruálták, vagy papi mágiával nem semmisítették meg, illetve ameddig a boszorkány ébren van. Mihelyt elalszik, a kapcsolat megszűnik közte és áldozata között. A boszorkány jól teszi, ha valamely jól őrzött, biztonságos területen tartózkodik, amíg a varázslatot alkalmazza, hiszen arra az időre kilép saját testéből, s magatehetetlenné válik. Áldozata testének bitorlása után arra legközelebb 1 óra elteltével lesz képes. A varázslat hátulütője, hogy a boszorkány és áldozata között egyfajta Mentálfonál húzódik az adott időtartam alatt, s ez elvezethet a mágiát megidézőjéhez."
+        },
+        {
+            "type": "rule",
+            "title": "Betegség átadása",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Féltékenység",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Mágikus ölelés",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        }
+    ]
+}

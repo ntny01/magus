@@ -1,0 +1,218 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": false,
+    "section_title": "",
+    "content_blocks": [
+        {
+            "type": "paragraph",
+            "text": "Számos kalandozó választ magának hátast az úgynevezett utazólovak közül. Hiszen ezek – jól lehet képességeikkel nem rendelkeznek – számos jó tulajdonsággal bírnak, s lehetnek remek állatok. Fontos kiemelni, hogy egy ló képességei és harcértékei (tehát lényegében az, hogy melyik csoportba tartozik a fent említett háromból) nem pusztán fajtájától függ. A legpompásabb yllinori félvér is a harmadik kategóriába sorolandó, ha csak utazásra szántották, s ennek megfelelő kiképzést kapott. Természetesen kiváló utazóló lesz, s így a megadott értékekből mindig a jobbat kapja, hiszen nemes fajta."
+        },
+        {
+            "type": "paragraph",
+            "text": "Nem szabad ugyanakkor szem elől téveszteni azt sem, hogy a fajta gyakran mégis megszabja a hasznosíthatóságot – őrzővérből sohasem lesz például nehéz harci mén, bármeddig is tanítják. Csak a megfelelő tulajdonságokkal bíró állatot lehet ilyesmire felkészíteni."
+        },
+        {
+            "type": "paragraph",
+            "text": "S nézzük most a harcban járatos hátasok két csoportját: a könnyű és nehéz harci lovat. De mi is különbözteti meg egymástól a két típust? Mindenekelőtt az állatok felépítése. Még aki járatlan a lovak megítélésében, de jó megfigyelő, az is könnyedén különbséget tud tenni közöttük. A könnyű harci lovak kecsesek, inkább az utazólovakra hasonlítanak. Lábuk vékony, faruk gömbölyded, járásuk könnyed. Ezzel ellentétben a nehéz harci lovak vaskosak, faruk széles és lapos, hosszú szőrük általában jóval dúsabb, testsúlyuk szemmel láthatóan nagyobb. Járásuk nehézkesebbnek és lomhábbnak tűnik. Testfelépítésük, megjelenésük szerepüket is híven tükrözi."
+        },
+        {
+            "type": "paragraph",
+            "text": "A könnyűés nehézlovasok között elsősorban vértezet és fegyverzetbeli különbség van. A könnyűlovasok ritkán öltenek fémpáncélt, és akkor is legfeljebb lánc vagy sodronyinget, fegyvereik közt megtaláljuk a szablyát, a könnyebb kardokat, az íjakat és a könnyűlovas kopját. Csatabárdot vagy zúzófegyvert ritkán forgatnak. Gyorsabb manőverekre, fürge futtatásokra alkalmasak, lovukkal együtt szinte „táncolnak” a csatában. A nehézlovasok – miként nevük is jelzi – nehézvértzetben harcolnak. Ez leginkább teljes-, esetleg félvértzet, de szegényebb seregek lovagjain látható mellvért, lemezvért vagy pikkelyvért is. Arzenáljukban súlyos zúzófegyverek, hosszabb, nehezebb vágófegyverek, valamint nehézlovas kopják találhatóak. Ez utóbbi jóval hosszabb könnyű társánál, a markolat fele általában vastagodik, a kezet pedig mindig védőtárcsa védi. Csapataik pusztító falként, robogó erődként rohamoznak, de egyenként sem lebecsülendő ellenfelek."
+        },
+        {
+            "type": "paragraph",
+            "text": "Mint látható, a lovak igen fontos szerepet töltenek be Ynev és lakói életében, figyelj hát, kalandozó, milyen hátast választasz, ha útra vagy hadra kelsz, hiszen sok múlhat döntéseden!"
+        },
+        {
+            "type": "rule",
+            "title": "Farkas",
+            "headers": [
+                "Jellemző",
+                "Érték"
+            ],
+            "rows": [
+                [
+                    "Előfordulás",
+                    "Gyakori"
+                ],
+                [
+                    "Megjelenők száma",
+                    "2k10"
+                ],
+                [
+                    "Termet",
+                    "E"
+                ],
+                [
+                    "Méretkategória",
+                    "2"
+                ],
+                [
+                    "Sebesség",
+                    "120 (SZ)"
+                ],
+                [
+                    "Időigény",
+                    "3 (harapás, karmolás, karmolás)"
+                ],
+                [
+                    "Kezdeményező érték",
+                    "35"
+                ],
+                [
+                    "Támadó érték",
+                    "50"
+                ],
+                [
+                    "Védő érték",
+                    "80"
+                ],
+                [
+                    "Sebzés",
+                    "1k6+2, 1k6, 1k6"
+                ],
+                [
+                    "Életerő pontok",
+                    "10"
+                ],
+                [
+                    "Fájdalomtűrés pontok",
+                    "30"
+                ],
+                [
+                    "Asztrál ME",
+                    "0"
+                ],
+                [
+                    "Mentál ME",
+                    "0"
+                ]
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Általános Állati Adatok",
+            "headers": [
+                "Jellemző",
+                "Érték"
+            ],
+            "rows": [
+                [
+                    "Méregellenállás",
+                    "4"
+                ],
+                [
+                    "Intelligencia",
+                    "Állati"
+                ],
+                [
+                    "Tapasztalati pont",
+                    "5"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A farkasok szinte minden mérsékelt égövi vagy hidegebb erdőben megtalálhatók, és megkeserítik az egyszeri emberek életét. Főképp télen, mikor az ínség lekergeti őket a hegyekből, s az ordasok kiéhezett falkákban járva prédálják a falvak lábasjószágait, olykor még lovasokat is megtámadnak. Állkapcsaik erősek, fogaik hegyesek, veszélyes ragadozók."
+        },
+        {
+            "type": "paragraph",
+            "text": "Ha vadásznak, körbeállják prédájukat és egymás után ugranak neki, megpróbálják őt a földre rántani, és ott átharapni a torkát. A falkataktikában támadó törzspéldányok mindig kettesével támadnak. Az egyik szemből veti rá magát áldozatára, míg a másik a háta mögül, hogy prédájuk semmiképp se tudjon mindkettejük ellen védekezni. A falkát mindig a legerősebb hím vezeti (Harcértékei 10-zel, Életereje 3-mal, Fájdalomtűrése 5-tel magasabb). Ha a falkavezér vagy a falka fele odaveszett, a többi farkas elmenekül."
+        },
+        {
+            "type": "rule",
+            "title": "Medve",
+            "headers": [
+                "Jellemző",
+                "Érték"
+            ],
+            "rows": [
+                [
+                    "Előfordulás",
+                    "Gyakori"
+                ],
+                [
+                    "Megjelenők száma",
+                    "1-2"
+                ],
+                [
+                    "Termet",
+                    "N"
+                ],
+                [
+                    "Méretkategória",
+                    "3"
+                ],
+                [
+                    "Sebesség",
+                    "50 (SZ)"
+                ],
+                [
+                    "Időigény",
+                    "3 (harapás, mancs, mancs)"
+                ],
+                [
+                    "Kezdeményező érték",
+                    "30"
+                ],
+                [
+                    "Támadó érték",
+                    "80"
+                ],
+                [
+                    "Védő érték",
+                    "75"
+                ],
+                [
+                    "Sebzés",
+                    "2k6"
+                ],
+                [
+                    "Életerő pontok",
+                    "28"
+                ],
+                [
+                    "Fájdalomtűrés pontok",
+                    "50"
+                ],
+                [
+                    "Asztrál ME",
+                    "0"
+                ],
+                [
+                    "Mentál ME",
+                    "0"
+                ],
+                [
+                    "Méregellenállás",
+                    "8"
+                ],
+                [
+                    "Intelligencia",
+                    "állati"
+                ],
+                [
+                    "Tapasztalati pont",
+                    "18"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A medvék hatalmas testű, mindenevő állatok, amelyek a mérsékelt égövtől egészen Beriquelig minden nagyobb erdőségben megtalálhatók. Vastag szőrzetük szürkés vagy feketésbarna lehet. Ha valamilyen veszély fenyeget egy medvét, akkor két hátsó lábára állva felemelkedik, úgy néz szembe ellenfelével. Ilyenkor az igazán nagy példányok a két és fél méteres magasságot is elérik."
+        },
+        {
+            "type": "paragraph",
+            "text": "A medvék ritkán bocsátkoznak harcba – csak akkor, ha őket vagy bocsátaikat fenyegeti közvetlen veszély. Ezen kívül – mint minden vad – a sebzett medve is mindennek nekiront, ami él és mozog."
+        },
+        {
+            "type": "paragraph",
+            "text": "Ha harcolni kényszerülnek, fölegyenesednek és mellső mancsaik hatalmas csapásaival, valamint harapásukkal támadnak. Ha egy medve mindkét mancsával túlütötte ellenfelét, akkor megragadta és magához szorította, amitől az veszít további 1k10 Sp-t. A bundájuk és a bőrük olyan vastag, hogy bármilyen támadás ellen 1 az SFÉ-je."
+        },
+        {
+            "type": "paragraph",
+            "text": "A medvék általában párban élnek, gyakran található a barlangjukban 1k6 bocs is. A bocsok nem harcolnak. A kereskedelemben egy medvebocs két-három aranyat ér."
+        }
+    ]
+}

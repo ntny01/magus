@@ -1,0 +1,55 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": true,
+    "section_title": "Nyomolvasás (II – Érzékelés)",
+    "content_blocks": [
+        {
+            "type": "paragraph",
+            "text": "A képzettség leginkább vadászok, felderítők, nyomolvasók tudománya. Segítségével nyomokat, jeleket találhat, illetve ismerhet fel és értelmezhet a karakter. Képzetlenség esetén a KM joga eldönteni, hogy a karakter dobhat-e egyáltalán Érzékeléspróbát, és ha megtalálja a nyomokat, ki tud-e egyáltalán hüvelyezni belőlük valamit. A képzettség követelménye lehet a Vadonjárás megfelelő terepre vonatkozó ismerete, különleges bestiák esetén Állatismeret.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "title": "1. fok",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "2. fok",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "3. fok",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "4. fok",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "5. fok",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        }
+    ]
+}

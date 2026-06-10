@@ -1,0 +1,252 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": false,
+    "section_title": "",
+    "content_blocks": [
+        {
+            "type": "rule",
+            "title": "Elementálok",
+            "headers": [
+                "Sebesség",
+                "Időigény",
+                "Kezdeményező érték",
+                "Támadó érték",
+                "Védő érték",
+                "Sebzés",
+                "Életerő pontok",
+                "Fájdalomtűrés pontok",
+                "Asztrál ME",
+                "Mentál ME",
+                "Méregellenállás",
+                "Intelligencia",
+                "Jellem",
+                "Tapasztalati pont"
+            ],
+            "rows": [
+                [
+                    "Változó",
+                    "3",
+                    "Változó",
+                    "Változó",
+                    "Változó",
+                    "Változó",
+                    "Változó",
+                    "—",
+                    "Immúnis",
+                    "Immúnis",
+                    "Immúnis",
+                    "Átlagos",
+                    "Semleges",
+                    "Változó"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "Elementáloknak nevezzük az Őselemi Síkok lakóit. Csak kivételes alkalmakkor találkozhatunk velük az Elsődleges Anyagi Síkon – csak Síkkapuk megnyitásakor és idéző varázslatok felhasználásának eredményeképp bukkanhatnak fel, amikor lehetőség nyílik a dimenziók közti közlekedésre. Az elementálok saját őselemükből épülnek fel, s sem Asztrál-, sem Mentáltestük nincs. Ezért minden ilyen alapú varázslatra és a mérgekre is teljesen immunisak. Ezeket az elemi lényeket leginkább a velük ellentétes őselemmel manipuláló mágia sebzi. Az ellentétpárok: tűz-víz és levegő-föld. Mivel az Ynevi Elsődleges Anyagi Síkja vízalapú, lényeit leginkább az elemi Tűz kreatúrái tudják megsebezni. Az elementálok saját síkjukon jól szervezett társadalomban élnek, saját logikájuk és hierarchiájuk szerint. Ennek alapjai az ember számára eddig teljesen ismeretlenek, de túlzott érdeklődés eddig nem is mutatkozott pontos leírására."
+        },
+        {
+            "type": "paragraph",
+            "text": "Megidézésükkor vagy kisebb (Szolga), vagy nagyobb (Harcos) lény hívására van lehetőség. Ezek tulajdonságai a következők: az elementálok immunisak a saját elemeiken alapuló mágiára, és a nem mágikus fegyverek sem árthatnak nekik. Ami az abbitot, a mithrilt, vagyis a természetükből adódóan mágikus fémekből kovácsolt fegyvereket illeti: kárt tehetnek ugyan az elementálokban, kidobott sebzésük azonban automatikusan feleződik, a lény Ép-jéből csak ennyi vonandó le. Ahhoz, hogy az elementál sebződjék, minden esetben Túltűtés szükséges. Az, hogy Fp-ik nincsenek, azt jelenti, hogy nem érzik a fájdalmat – vagyis minden sebzés Ép-ikből vonódik le."
+        },
+        {
+            "type": "table",
+            "headers": [
+                "Element.",
+                "Seb.",
+                "Mér.",
+                "KÉ",
+                "TÉ",
+                "VÉ",
+                "Sebzés",
+                "Ép",
+                "Tp"
+            ],
+            "rows": [
+                [
+                    "Harcos, Tűz",
+                    "80(SZ)",
+                    "3",
+                    "55",
+                    "95",
+                    "110",
+                    "3k6+3",
+                    "20",
+                    "850"
+                ],
+                [
+                    "Harcos, Víz",
+                    "60(SZ)",
+                    "3",
+                    "45",
+                    "85",
+                    "110",
+                    "1k6+3",
+                    "30",
+                    "620"
+                ],
+                [
+                    "Harcos, Levegő",
+                    "120(L)",
+                    "3",
+                    "65",
+                    "105",
+                    "120",
+                    "1k6+3",
+                    "20",
+                    "620"
+                ],
+                [
+                    "Harcos, Föld",
+                    "45(SZ)",
+                    "3",
+                    "35",
+                    "75",
+                    "100",
+                    "2k6+3",
+                    "40",
+                    "680"
+                ],
+                [
+                    "Szolga, Tűz",
+                    "70(SZ)",
+                    "2",
+                    "50",
+                    "70",
+                    "90",
+                    "3k6",
+                    "10",
+                    "320"
+                ],
+                [
+                    "Szolga, Víz",
+                    "50(SZ)",
+                    "2",
+                    "40",
+                    "60",
+                    "90",
+                    "1k6",
+                    "15",
+                    "300"
+                ],
+                [
+                    "Szolga, Levegő",
+                    "110(L)",
+                    "2",
+                    "60",
+                    "80",
+                    "100",
+                    "1k6",
+                    "10",
+                    "310"
+                ],
+                [
+                    "Szolga, Föld",
+                    "35(SZ)",
+                    "2",
+                    "30",
+                    "50",
+                    "80",
+                    "2k6",
+                    "20",
+                    "320"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "Méretükre nézve a Szolgák ember nagyságúak, a Harcosok közelebb állnak a 3 ynevi láb magassághoz, azaz nagy méretűek."
+        },
+        {
+            "type": "rule",
+            "title": "Erdőpille",
+            "headers": [
+                "Előfordulás",
+                "Megjelenők száma",
+                "Termet",
+                "Méretkategória",
+                "Sebesség",
+                "Támadó érték",
+                "Védő érték",
+                "Kezdeményező érték",
+                "Célzó érték",
+                "Sebzés",
+                "Időigény",
+                "Életerő pontok",
+                "Fájdalomtűrés pontok",
+                "Asztrál ME",
+                "Mentál ME",
+                "Méregellenállás",
+                "Pszi",
+                "Intelligencia",
+                "Jellem",
+                "Tapasztalati pont"
+            ],
+            "rows": [
+                [
+                    "Nagyon ritka",
+                    "2k6",
+                    "K",
+                    "0",
+                    "12 (SZ) 50 (L)",
+                    "15",
+                    "120",
+                    "40",
+                    "60",
+                    "Lásd a leírásban",
+                    "2",
+                    "1",
+                    "3",
+                    "20",
+                    "20",
+                    "4",
+                    "—",
+                    "Átlagos",
+                    "Élet",
+                    "1"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "Az erdőpillék különös népség. Alig nagyobbak egy arasznál. Felépítésük sokban hasonlít az elfekére, de hátukon két áttetsző, hártyás szárny rezeg, kolibrihez hasonló röptük látványa lenyűgöző. Szeretik a színes és díszes ruhákat, melyeket növényi rostokból készítenek, és élőhelyük közelében fellelhető anyagokkal festenek. Mindenevők. Filozófiájuk szerint nincs nemesebb időtöltés a gyanútlan utazók zargatásánál – erről a gyanútlan utazók persze másként vélekednek. Ha valaki erdőpillék lakta, mérsékelt övi rengetegbe téved, azonnal különös dolgok kezdenek vele történni. Annyi eszük a bujkáló bajkeverőknek azért mindig van, hogy megérezzék, kivel nem tanácsos próbálkozniuk."
+        },
+        {
+            "type": "paragraph",
+            "text": "Ha valaki tart velük otthonuk növényzetében, vagy „ártatlan” szórakozásuk miatt ellenük fordul, komiszabb dolgokra kell felkészülnie. A pillék apró nyilaikkal veszik célba, s noha a vesszők csak a vékonyabb vásznat, vagyis a lengébb öltözéket ütik át, s találat esetén sem sebeznek sokat (csak annyit, mint egy tű), a rájuk kent növényi hatóanyagok csúf meglepetéseket okozhatnak."
+        },
+        {
+            "type": "paragraph",
+            "text": "Az álomkenőcs 2. szintű méregnek felel meg, amely azonnal hat, hatása – sikertelen Méregellenállás esetén – hosszú és mély álom, mely 1k6 óráig tart. Ezalatt az erdőpillék egyesült erővel olyan messzire cipelik ellenségüket tanyájuktól, amilyen messzire csak bírják. Ez a távolság – minthogy hamar kifáradnak – ritkán haladja meg a négy-öt kilométert. Ha azonban az adott személy szántszándékkal elpusztított közülük egyet vagy többet, a bánásmód nem lesz ennyire kíméletes. Az erdőpillék törei aprók, de borotvaélesek..."
+        },
+        {
+            "type": "paragraph",
+            "text": "Komolyabb mérgeket kizárólag nagytestű lények ellen használnak – saját viszályaikat félretéve, csapdák és szilánknyi szálfegyverek segítségével igyekeznek rendezni. Az elaltatott vagy megölt személyt szinte mindig megszabadítják fegyvereitől. Ezeket a fegyvereket azután elhagyják valahol, és szinte azonnal megfeledkeznek róluk."
+        },
+        {
+            "type": "rule",
+            "title": "Ginsour",
+            "headers": [
+                "Előfordulás",
+                "Megjelenők száma",
+                "Termet",
+                "Méretkategória",
+                "Sebesség",
+                "Támadó érték",
+                "Védő érték"
+            ],
+            "rows": [
+                [
+                    "Nagyon ritka",
+                    "1",
+                    "K (5 arasz)",
+                    "0",
+                    "80 (SZ)",
+                    "50",
+                    "95"
+                ]
+            ]
+        }
+    ]
+}

@@ -1,0 +1,172 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": false,
+    "section_title": "",
+    "content_blocks": [
+        {
+            "type": "paragraph",
+            "text": "mely, ha még nem jutott a varázslat hatótávján túl az üldözött, akkor a nyomára vezeti a tűzvarázslókat. A füstkígyó maximum vágtató sebességével követi a célpontot, de semmiképpen sem távolodik el 20 ynevi lábnál jobban megidézőjétől."
+        },
+        {
+            "type": "paragraph",
+            "text": "A varázslat hatótávja, tehát amilyen messziről még megtalálja célpontját a füstkígyó a megidézője minden Tapasztalati szintje után 20 ynevi mérföld. A füstkígyó maximum egy napig követi a célpontot, aztán szétoszlik, ellenben újból megidézhető, hacsak az áldozat ki nem ért a hatótáv jelentette veszélyzónából."
+        },
+        {
+            "type": "rule",
+            "title": "Hamvasztó tekintet",
+            "headers": [
+                "Mana pont",
+                "Varázslás ideje",
+                "Időtartam"
+            ],
+            "rows": [
+                [
+                    "10/E",
+                    "1 szegmens/E",
+                    "6 kör (1 perc)"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A varázslat létrejöttével a tűzvarázsló az időtartam lejártáig képes arra, hogy tekintetével megperzselje azokat a Zónáján belül eső tárgyakat, amelyekre pillant. Ez az éghető anyagokat nyomban lángra lobbantja, a kevésbé éghetőeket pedig megperzseli, fémek felolvasztására nem alkalmas. A gyújtópontban a hőmérséklet E-nként megközelítőleg 100 Celsius fok, amely az élőlényeknek a varázslat minden Erőssége után 1k6 SP sebet okoz körönként."
+        },
+        {
+            "type": "paragraph",
+            "text": "A varázslat hatóideje alatt a tűzvarázsló szeme halvány vörös fénnyel parázslik."
+        },
+        {
+            "type": "rule",
+            "title": "Harcos hívása",
+            "headers": [
+                "Mana pont",
+                "Varázslás ideje",
+                "Időtartam"
+            ],
+            "rows": [
+                [
+                    "40",
+                    "3 kör",
+                    "30 kör (5 perc)"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A Szolga hívása varázslathoz hasonlóan kaput nyit a Tűz Elemi Síkjára, ám az éteri hívásnak most egy jóval hatalmasabb lény, egy lángokból fogant Harcos elementál válaszol, és lép át az Elsődleges Anyagi Síkra. Engedelmeskedik a tűzvarázsló összes parancsának, az Időtartam lejártával pedig szertefoszlik. Értékei a könyv végén található Bestiáriumban olvashatók a 490. oldalon."
+        },
+        {
+            "type": "rule",
+            "title": "Izzó érintés",
+            "headers": [
+                "Mana pont",
+                "Varázslás ideje",
+                "Időtartam"
+            ],
+            "rows": [
+                [
+                    "8/E",
+                    "1 szegmens/E",
+                    "6 kör (1 perc)"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "Mindenben megegyezik a Hamvasztó tekintet nevű varázslattal, a különbség annyi, hogy itt a tűzvarázsló bal kezének érintésével tudja megperzselni áldozatát. Ehhez sikeres Támadó dobást kell tennie. Kezét halványvörös izzás veszi körül, érintése az éghető anyagokat nyomban lángra lobbantja, a kevésbé éghetőeket csak megperzseli. Az érintési pontban a hőmérséklet E-nként megközelítőleg 100 C fok, ami 1k6 SP égési sebet okoz."
+        },
+        {
+            "type": "rule",
+            "title": "Kémtűz",
+            "headers": [
+                "Mana pont",
+                "Varázslás ideje",
+                "Időtartam"
+            ],
+            "rows": [
+                [
+                    "3",
+                    "1 szegmens",
+                    "30 kör (5 perc)"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "Ez a varázslat azon kevesek közé tartozik, amely nem közvetlen támadásra szolgálnak. A tűzvarázsló által megidézett Őselemi Tűz tenyérnyi nagyságú gömbként jelenik meg, és egy helyben lebeg. A gömböt a tűzvarázsló koncentrálással mozgathatja, körülbelül egy futó ember sebességével. Érintésekor a Kémtűz csupán egyetlen SP-t sebez, viszont segítségével a varázslat alkalmazója egy könnyen és gyorsan mozgatható fényforrást nyer."
+        },
+        {
+            "type": "paragraph",
+            "text": "Ezzel be lehet világítani a sötétbe vesző folyosók kanyarulatait, mély vermeket és kutakat, gyanús kőfülkéket és alkóvokat. A tűz egy közepes erejű fáklya fényével ég, így körülbelül 5 lépés sugarú körben világítja be környezetét. A Kémtűz az Időtartam lejárta előtt akkor is elalszik, ha bármivel érintkezésbe kerül."
+        },
+        {
+            "type": "rule",
+            "title": "Lángvihar",
+            "headers": [
+                "Mana pont",
+                "Varázslás ideje",
+                "Időtartam"
+            ],
+            "rows": [
+                [
+                    "95",
+                    "1 perc",
+                    "6 kör (1 perc)"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A varázslat létrejöttekor a tűzvarázsló kijelöl egy tőle legfeljebb 1 ynevi mérföldre lévő pontot, ahol 10 kör alatt soha nem látott, világító lángfellegek gyűlnek össze az égen. Ezután tűzeső hullik belőlük a földre, amely 20 ynevi láb sugarú, kör alakú területet érint. Mindazon éghető anyagok, melyek e területen belül találhatók, rövid idő alatt meggyulladnak és elhamvadnak, sőt az első percmúltán a talaj is megolvad. Mindazok, akik az érintett területen belül tartózkodnak, körönként 8k6 SP tűzsebzést szenvednek el."
+        },
+        {
+            "type": "paragraph",
+            "text": "A lángfellegeket a tűzvarázsló megközelítőleg 60 mérföld/órás sebességgel képes mozgatni, ami körönként 160 ynevi lábat jelent, szegmensenként pedig 16 ynevi lábat. Tájékoztatásul közöljük, hogy egy fürgének számító vágtató ló végsebessége 60 mérföld/óra körül mozog."
+        },
+        {
+            "type": "rule",
+            "title": "Lávafolyam",
+            "headers": [
+                "Mana pont",
+                "Varázslás ideje",
+                "Időtartam"
+            ],
+            "rows": [
+                [
+                    "45",
+                    "6 kör (1 perc)",
+                    "10 perc"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A Lávafolyam igazából csak lejtős terepen alkalmazható varázslat. A tűzvarázsló Zónájának teljes szélességében meghasad a föld, és izzó láva tör elő. A lejtő ahhoz szükséges, hogy az olvadék tovább is folyjon. Az áramlás sebessége a lejtő meredekségétől függően percenként 10-20 ynevi láb lehet. A láva haladási irányát a tűzvarázsló nem határozhatja meg, és az kizárólag a domborzattól függ. Mindazok, akik belekerülnek, nyomban életüket vesztik."
+        },
+        {
+            "type": "rule",
+            "title": "Perzselő aura",
+            "headers": [
+                "Mana pont",
+                "Varázslás ideje",
+                "Időtartam"
+            ],
+            "rows": [
+                [
+                    "10/E",
+                    "1 szegmens/E",
+                    "4 kör"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A varázslat szinte mindenben megegyezik a Tűzaura varázslattal, csupán egy fontos különbség van a kettő között. A Perzselő aura nem a testtől 5-10 ynevi hüvelyknyi öleli körül a tűzvarázsló testét, hanem annál távolabb. Az aura testtől való távolsága 1-120 ynevi hüvelyk között változtatható a tűzvarázsló kívánsága szerint. Így sokkal könnyebb lesz egyszerre védekezni és támadni is, hiszen a Kívül több, mint egy ynevi lábnyi maximális távolságú aura már minden 5. kategóriánál kisebb fegyver forgatóját sebez, ha az a támadó megpróbál közelharcra alkalmas távolságon belülre kerülni."
+        },
+        {
+            "type": "paragraph",
+            "text": "Az aura éppen aktuális távolsága egy szegmensnyi koncentráció után egy újabb szegmens alatt megváltoztatható. A tűzvarázsló természetesen támadásra is felhasználhatja a Perzselő aurát, amely minden E-je után 1k6 SP-t sebez."
+        }
+    ]
+}

@@ -1,0 +1,100 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": null,
+    "is_new_section": true,
+    "section_title": "Előtörténet",
+    "content_blocks": [
+        {
+            "type": "paragraph",
+            "text": "Ahhoz, hogy a játékot elkezdhesd, először meg kell alkotnod karakteredet, a személyiséget, mellyel a kalandok során gondolkozol, cselekszel, szóval, akivel játszol. Mielőtt belefognál a karakteralkotásba, célszerű megismerkedned egy kissé Ynevel, a lehetőségeiddel, s azután érdemes kitalálni az előtörténetedet. Ez a te feladatod, ám elképzelhető, hogy a KM-ed beleszól majd, sőt az sem kizárt, hogy elkészíti neked – ezt általában olyankor teszi, mikor valami különleges kaland mesélésébe akar kezdeni."
+        },
+        {
+            "type": "paragraph",
+            "text": "Az előtörténet nem más, mint a karaktered életének az a része, mikor még nem játszottál vele – születésének körülményei, családja és velük való viszonya, tanulmányai, addigi életének főbb eseményei, esetleges szerelmei és persze az az esemény, ami miatt kalandozni kezdett."
+        },
+        {
+            "type": "paragraph",
+            "text": "Segítségül lássunk egy példát, Villar cwa Khaitir előtörténetét:"
+        },
+        {
+            "type": "flavor_text",
+            "text": "„Még soha nem írtam semmit magamról, vagy legalábbis nem sok igazat. Ezen sorokat is csak barátom, mentorom, ivócimborám és még sok más cím büszke birtokosa Nain, házunk legvitézebb lovagja noszogatására vetem papírra."
+        },
+        {
+            "type": "flavor_text",
+            "text": "A történet nem lesz túl hosszú és tanulság sem sok lesz benne. A legtöbben nem sokat várnak egy hozzám hasonló ficsúrtól, s ki vagyok én, hogy meghazudtoljam becses véleményük."
+        },
+        {
+            "type": "flavor_text",
+            "text": "Mint a legtöbb léhűtőnek, nekem is saját személyes tragédiámmal kellene kezdenem mesém, elnyerendő olvasóim sajnálatát. No de, miután a Pyarron szerinti 3674-ben a Dal havának harmadik napján megszülettem, hamar árvaságra jutottam. Semmi háború, tűzvész vagy efféle tragédia. Csak egy fiatal toroni famor, egy leány, ki szinte még gyermek és egy erigowi hős. A leány persze túsz valami csereügyletben. A ház urának örököse szemet vet a leányra, aki enged a gyengéd erőszaknak. Ha Toronban nem is, de Északon még lehet belőle nemes és hatalmasság; azaz megtér új hazája kebelére és némi családi vita után boldogan nyújtja kezét atyámnak."
+        },
+        {
+            "type": "flavor_text",
+            "text": "Nagyatyám persze dühöng a frigy hallatán és kitagadja idővel fiát, atyai örökségéből. Anyám erre a birtok és a rang elvesztése miatt szerelmét és alig cseperedő gyermekét feledve hazaszökik, ahol örökös híján nagyon boldogan fogadják... Atyám meg sem próbálja tartóztatni édesanyám, inkább a borba menekül. Telnek az évek atyám egyre keserűbb, majd 3689 tavaszán nagyatyám áldásával és pénzéből expedíciót vezet az északfoki sziget, Beriguel partjainak felderítésére, ahonnan sohasem tér vissza. Az egyre idősebb Arques cwa Khaitir, ő volna a nagyapám, ekkor fia temetése után unokaöccsét Valdant nevezi meg örököséül, kinek első dolga engem vidékre száműzni Nain Tarlon birtokára, ki atyám bajtársa, ivócimborája, s nagyapám hűséges vazallusa volt."
+        },
+        {
+            "type": "flavor_text",
+            "text": "Mit szépítsek, életem legszebb éveit töltöttem itt, bízva abban, hogy családomból soha senki nem akad itt reám többé. Nem érdekelt Erigow fényes udvara, se Toron, se a politika. Csak a tenger illata, a nők kacaja, az acél csengése és a Holdak változó fénye. Kitanultam itt a végeken Nain udvarában a hadakozás, a kardforgatás, a lovaglás és még számtalan nemes és nemtelen tudomány csínját-bínját. Cseperedtem és azt hittem ez a csoda örökké tart, hogy míg a holdak fénye fennen ragyog, élhetem világom Erigow ezen eldugott messzi vidékén."
+        },
+        {
+            "type": "flavor_text",
+            "text": "De tegnap érkezett maga a lovag... Nain még mindig gyűlöli, ha címén szólítom, de nekem örömet okoz, ha láthatom, hogy hogyan önti el a vér az arcát."
+        },
+        {
+            "type": "flavor_text",
+            "text": "Egyszóval ő hozta a rossz hírt, nagyatyám halott, nagybatyám Valdan pedig poroszlókkal kerestet. Mivel nem ejtettek a fejemre, és mert ereimben árnyékodó kyr őseim vére is csörgedezik, ezért úgy döntöttem felveszem a kesztyűt, megküzdök jussomért. Sohasem hittem, hogy van rá esély, hogy bármit is megkaphassak apám örökéből, de ha Valdan uraság ennyire keresett, biztosan megvan rá az oka."
+        },
+        {
+            "type": "flavor_text",
+            "text": "Egy szó, mint száz, előre az örökségért."
+        },
+        {
+            "type": "flavor_text",
+            "text": "Nain szerintem nem ezt kellett volna lejegyeznem, még ha ezen gondolatok is voltak fejemben, szerinte az efféléket másképp kell leírni, szerinte csinján, szőrmenőn kell vezetni az olvasót, mint az asszonyt az ágyasházba."
+        },
+        {
+            "type": "flavor_text",
+            "text": "Szerintem viszont e girbegurba betűket azért alkottam, hogy ha elbúknék, amire magam is igen sok esélyt látok, legalább egy biztos pontja legyen a dalnokoknak, ha megéneklik családom e balsikerű tagjának történetét; ha Valdan az emlékem meghagyja egyáltalán."
+        },
+        {
+            "type": "flavor_text",
+            "text": "Tehát Arel kvartjának 9. napján, az égi fény 3691. esztendejében, másképp a Birodalom 27. dodekádjának 3. esztendejében, a Vér havának 17. napján – hátha a Birodalom históriásai is megemlékeznének rólam – Erigow fele indulok, hogy nagybátyám kutató tekintete és számos poroszlója elől saját szoknyája mellett leljek menedéket."
+        },
+        {
+            "type": "flavor_text",
+            "text": "Másfelől pediglen:"
+        },
+        {
+            "type": "flavor_text",
+            "text": "Nemesi becsüszavam adom arra, hogy Nain Tarlon lovag hűbérurának Valdan Akrynnak tett esküje értelmében engem megpróbált feltartóztatni poroszlói segedelmével, de én szétzavarva a nemteleneket, párbajra hívtam őt és Vrynn mezején tisztes viadalban legyőztem. Ezért szőkésem miatt semmiféle felelősség nem terheli, büntetés nem érheti a jó lovagot. Pyarron istenei mérjék ki rám haragjuk, ha szavaim igaztalannak találtatnak."
+        },
+        {
+            "type": "flavor_text",
+            "text": "Ezen sorokat kézjegyemmel és pecsétemmel szentesítettem és megőrzésre Nain Tarlon lovagnak átadtam, kit veresége után is barátomnak nevezek."
+        },
+        {
+            "type": "flavor_text",
+            "text": "Villar cwa Khaitir on Arachyn Khaitir lovagja, Estam és Vrynn ura, az északi határgyepű őrizője az Arachyn család szedője"
+        },
+        {
+            "type": "flavor_text",
+            "text": "(Nem vagyok benne bizonyos, de híreim szerint anyám Toronba hazatérve kezét nyújtotta egy főrendnek, ám még nem sikerült fiút szülnie neki; emiatt volnék secodom.)"
+        },
+        {
+            "type": "flavor_text",
+            "text": "Utóirat: Megjegyezném, hogy a sorok átfutása után a lovag igen becstelenül viselkedve többször nyakon vágott és fennhangon kacagva becsmérelte lovagi és nemesi erényeim. Az isteni vérjék őt meg ezért ágyi poloskákkal és sok egészséges leánygyermekkel."
+        },
+        {
+            "type": "flavor_text",
+            "text": "Szerencse fel, Noir legyen kegyes hozzám!"
+        },
+        {
+            "type": "paragraph",
+            "text": "Az imént leírtak után kezdődik maga a játék. Ekkor Villar cwa Khaitir első szintű. Kyr származék harcos kasztú karakter. Tudja mindazt, amit egy harcosnak, egy nemesnek tudnia illik, ám mint kalandozó még tapasztalatlan."
+        },
+        {
+            "type": "paragraph",
+            "text": "Ilyen vagy efféle előtörténetet neked kell kitalálnod. Senki sem születik huszonévesen, és a hitelesség kedvéért – még ha mindazt, amit kitaláltál nem is mondod el társaidnak – legalább te tudd, hogy mi minden történt veled, mielőtt kalandozni kezdtél. Egyetlen megkötés van csupán: előtörténetedet mindenképpen el kell mesélned a KM-ednek, hogy jóváhagyja! Így nem fordulhat elő, hogy később előállsz valami olyasmivel, hogy ezt vagy azt már tudod az előtörténetből kifolyólag, s ezt nem hiszik el neked."
+        }
+    ]
+}

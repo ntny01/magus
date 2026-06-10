@@ -1,0 +1,68 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": true,
+    "section_title": "A harc tényezői",
+    "content_blocks": [
+        {
+            "type": "flavor_text",
+            "text": "„A férfi csak állt némán, ugrásra készen. A két lány összevillantott, villanásnyi időre sem tévesztve szem elől ellenfelüket. — A kráni...? — kérdezte szellemszóval a gorviki. Apró bólintást kapott válaszul. Akkor mire várunk? — vont vállat Vierre, s a férfi felé lendült. Asyra is megpördítette kardjait – a pengék az alkarjára feküdtek –, leheletnyi lemaradással követte társnőjét. A Messor különös mozdulattal tért ki az első lány útjából. Derékból hajlott hátra – homloka majdhogynem a földet érintette –, talpa ismét emelkedett el a talajról. A vágás elsuhant felette – ha hagyományos kitéréssel próbálkozik, pontosan a torkán találta volna. Aztán felegyenesedett, miként a meghajlított nádszál. Mozdult... Asyra meglepte a szokatlan támadás; az ütés a kézfején érte, az idegcsomóból kisugárzó zsibbadás folyékony tűzként terjedt szét ujjaiban, mígnem a karát kihullott ernyedt markából. De nem adta fel, hiszen csak az egyik fegyverétől fosztották meg. Szúrt. A test takarásában tartott fegyverrel való támadást is Vierrétől tanulta. A gorviki lány ekkor pördült hátra, szája szegletében bosszús mosoly lobbant, kardhegye a férfi szívének meredt. A Messor ezúttal csak aprót fordított csuklóján. Fémes pendülés hallatszott, a lendület kitépte Asyra kezéből az eltérített fegyvert. A lány megbabonázottan meredt üres tenyerébe. A kráni eltűnt látóteréből – mélyen az alatt, egészen a földre hajolva támadott. A fejvadászlány a rémülettől félig dermedten meg sem érezte a bokájára kulcsolódó ujjakat; épphogy lepillantott, amikor lába kilendült alóla. Alig jutott ideje tompítani a zuhanást – félelemtől dúltan, térdét és könyökét összezúzva gördült a falhoz. Egyetlen vágy lüktetett benne: mihamarabb távol kerülni a kráni démontól. Mert efféle harcmodort csak démon űzhet.”"
+        },
+        {
+            "type": "flavor_text",
+            "text": "Dale Avery: A renegát"
+        },
+        {
+            "type": "paragraph",
+            "text": "A Yneven játszódó regényekben gyakran előfordul, hogy az egymással szembekerülő hősök vitájában döntő szerephez jut a fegyver. Nincs ez másként a szerepjátékban sem. Sőt, a játék egyik legmeghatározóbb fejezete az, amelyik arról szól, hogy a játékos miként győzheti le erővel ellenfeleit – legyenek azok a legendák mitikus szörnyei, a kalandmester által megszemélyesített alakok, netán más játékosok karakterei."
+        },
+        {
+            "type": "paragraph",
+            "text": "A harcrendszer hivatott arra, hogy szimulálja a képzelet szülte ellenfelek összecsapását, hogy szabályokat hozzon arra nézve, milyen áldozatokkal jár a győzelem, és milyen veszteségekkel a vereség; miként érvényesül az erő, az ügyesség, a tapasztalat; mennyit számít a siker szempontjából az összecsapó fegyverek és a viselt vértek típusa."
+        },
+        {
+            "type": "paragraph",
+            "text": "Egy sikeres és játszható harcrendszer megalkotásánál döntő szempont az egyszerűség és a valósághűség. Az egyszerűség megköveteli, hogy a játékosoknak és a Kalandmesternek ne kerüljön hosszú percek számolgatásába annak kiderítése, vajon ki győzedelmeskedik, és ki marad alól; míg a valósághűség biztosítja, hogy a szimulált küzdelem minél jobban hasonlítson egy valós összecsapásra."
+        },
+        {
+            "type": "paragraph",
+            "text": "A M.A.G.U.S. harcrendszere mindkét szempontnak igyekszik megfelelni. Ahhoz, hogy ez az igyekezet ne vesszen kárba, a játékosnak kell fogadnia, hogy mindig gondosan felvezeti a karakterével kapcsolatos jellemzőket az ún. Karakterlapra."
+        },
+        {
+            "type": "paragraph",
+            "text": "A bevezetőben már szó esett néhány olyan tényezőről, melyek jelentősen befolyásolhatják egy összecsapás végkimenetelét. Ebben a paragrafusban részben összefoglaltatnak mindezek."
+        },
+        {
+            "type": "paragraph",
+            "text": "Egy karakter Tulajdonságai – Ereje, Ügyessége, Gyorsasága és adott esetben Érzékelése – komoly súllyal esik latba az illető harcértékének meghatározásakor. Akaratereje és Állóképessége befolyással van arra, hogy milyen mértékben képes elviselni a könnyebb sebek szülte fájdalmat. Egészsége pedig arra, vajon túléli-e a súlyosabbakat."
+        },
+        {
+            "type": "paragraph",
+            "text": "A karakter harcértékének legalapvetőbb meghatározója a tapasztalat. Ezt a M.A.G.U.S. a Tapasztalati szint nevű paraméterrel méri."
+        },
+        {
+            "type": "paragraph",
+            "text": "Egyes fegyverek támadása, megint mások inkább védekezésre alkalmasabbak; némelyikkel fürgén lehet támadni, míg a másokkal komolyabb sebet lehet ejteni az ellenfélen."
+        },
+        {
+            "type": "paragraph",
+            "text": "A páncélok, és vértek között éppúgy akad olyan, amelyik súlyos és remekül véd, ám akadályozza viselőjét a szabad mozgásban, végső soron tehát a küzdelemben, mint ahogy olyan is, amelyikben könnyű a mozgás, ellenben jóval kevésbé óv az ellenfél fegyverétől. Ezek a különbségek mind megmutatkoznak a M.A.G.U.S. harcrendszerében."
+        },
+        {
+            "type": "paragraph",
+            "text": "A harc menete. A harc menetét körökre osztjuk. Egy kör 10 szegmensből (másodpercből) áll, s arra használjuk, hogy a harc menetét egységes időtartamokra osszuk föl. Egy harci kör tehát 10 másodperc, tíz szegmens. Egy adott körben rengeteg mindent tehet a karakter: harcolhat, varázsolhat, bereteszelhet egy ajtót támadója előtt stb. Azonban minden egyes cselekedetének van egy meghatározott időtartama, ennyi idő alatt képes végrehajtani az adott cselekvést. Ezalatt a többi játékos és a mesélő által mozgatott ellenfelek is folyamatosan ténykednek. Ez főleg akkor válik nehézkessé, ha sok résztvevőre kell egyszerre figyelni, s azok egymástól eltérő dolgokat tesznek. A lovag feltartja az útonállókat, a haldokló tolvajt a pap épp gyógyítja, míg a varázsló varázslásba kezd, hogy időt nyerjen a számszerűsítésnek az újratöltéshez. Azért, hogy a számtalan egyidejű cselekvés, vagy az elhúzódó harc ne váljon követhetetlenné, minden tizedik eltelt szegmens után új harci kört nyitunk."
+        },
+        {
+            "type": "paragraph",
+            "text": "A harc egyes köreiben mindazok részt vehetnek, akik számára a harci helyzet ezt lehetővé teszi. Akik elég közel állnak egymáshoz ahhoz, hogy kétkezi harcot folytassanak, és ebben semmi és senki nem akadályozza meg őket, vagy azok, akik célzott lövéseket szándékoznak leadni, és ehhez adottak számukra a feltételek: nincs takarásban a célpont, és ráérnek a célzással foglalkozni stb."
+        },
+        {
+            "type": "paragraph",
+            "text": "Persze nem mindegy, hogy milyen sorrendben teszik ezt. Ezért minden harci kör ún. Kezdeményező dobással kezdődik, ami a résztvevők közti cselekvési – adott esetben támadási – sorrendet hivatott megállapítani."
+        },
+        {
+            "type": "paragraph",
+            "text": "Eztán mindenki bejelentheti, hogy mit kíván tenni. Akik harcolnak, megindítják első támadásukat, abban a sorrendben, ahogyan azt a Kezdeményező dobás meghatározza. A támadás sikeressége szintén kockadobás függvénye. Azok, akik a kapott sérülések dacára továbbra is képesek folytatni a küzdelmet, támadhatnak másodszor, majd harmadszor vagy"
+        }
+    ]
+}

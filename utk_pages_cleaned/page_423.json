@@ -1,0 +1,72 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": false,
+    "section_title": "",
+    "content_blocks": [
+        {
+            "type": "paragraph",
+            "text": "ennek megfelelően sok kívánvalót hagy maga után: vagyontárgyaira minden idelátogatónak ügyelnie kell, fegyveres rablásra, gyilkosságra azonban felette ritkán kerül sor."
+        },
+        {
+            "type": "paragraph",
+            "text": "A haonwelliek pyarroni hitet vallanak: Arel, Alborne és Kyel kultusza a legelterjedtebb, ám – különösen az elfek és kevertvérűek lakta negyedekben – gyakoriak a kalahorák emlékhelyei is."
+        },
+        {
+            "type": "section_title",
+            "text": "Erigow"
+        },
+        {
+            "type": "paragraph",
+            "text": "Észak-Ynev leggazdagabb hercegsége. Lovagrendjei világszerte híresek, elsősorban az erigowi Krad, illetve a hercegi Vörös Lovagrend. Erigow a hajdanvolt Kyria fővárosa, Enrawell helyén épült, s a kyr kultúra, művészet és tudomány letéteményesének vallja magát. Haladó gondolkodású uralkodói ennek ellenére – vagy tán épp ezért – megvetik a történelem kerekét visszafordítani kívánó bolondokat, akik Kyria újjáélesztésén fáradoznak. Alapító tagjai az Északi Szövetségnek, a hercegi Vörös Lovagrend nagymestere egyben Vörös Hadúr is. A fővároson kívül tíz-egynéhány kisebb, ám nem kevésbé gazdag város, és ezernél is több település tartozik palotái alá. A főváros elitista elvek szerint épült, s eszerint is kormányozzák. A Belsővárost fal övezi, a kapupénz egységesen öt arany, melynek leszúrkálásat csak a legtehetősebbek engedhetik meg maguknak. E teher alól csupán a bárdok mentesülnek – ők szabadon járhatnak-kelhetnek Erigow falai közt. A Belsőváros a kontinens egyik csodája: gyönyörű paloták, lelkiismeretesen gondozott parkok, fehér márvánnyal kövezett utak, híres mesterek szobrai áradítják itt Észak nemeseit. Fogadóból mindössze kettő akad, hisz a jövevények zöme a paloták valamelyikének szívesen látott vendége."
+        },
+        {
+            "type": "paragraph",
+            "text": "Ez a dekadenciára hajlamos – a kyrek és a toroniak szellemiségével szemben rokon – nép kemény, félelmet nem ismerő lovagokat ad a világnak. Jellemük egyenessége, különös erkölcsiségük szóbeszéd tárgya, megbízhatóságukra és ízlésükre bárki számíthat. Noha a Toronnal vívott háborúk rendre elkerülik területüket, s a dúló hordák is csak ritkán jutnak el Erigowig, a hercegség hatalmas vagyonának legjavát e háborúk emésztik fel."
+        },
+        {
+            "type": "paragraph",
+            "text": "Egyetemei – különösen a Sigramomói – egész Yneven elismertek, még a messzi Délről is érkeznek tanulni vágyók falaik közé. Erigow vitathatatlanul Észak kulturális központja, a bárdok igazi paradicsoma. Nincs mit csodálkozni azon, hogy Pyarron szerint 1713-ban Enika Gwon – minden idők leghíresebb bárdja – épp Erigow-t választotta lakhelyéül, és az akkori herceg segítségével felépítette a Legendák Tornyát. Itt alkotta meg élete főművét, a Legendák és Enigmák című gigászi kötetet, melybe a szóbeszéd szerint Ynev minden valaha volt legendáját és dalát lejegyezte. Ez ebben a formában nem is igaz – hisz kétségtelen, hogy a sötét birodalmak hősmondái nem kaptak helyet a kötetben –, a Legendák és Enigmák akkor is a legátfogóbb és legterjedelmesebb válogatás mind közül."
+        },
+        {
+            "type": "paragraph",
+            "text": "A bárdok épp ezért kötelességüknek érzik, hogy életükben egyszer elzarándokoljanak a toronyhoz, s szemügyre vegyék az ereklyét. A zarándoklat során bizonyos időt – rendszerint két órát – ki-ki a kötet tanulmányozásával tölthet. Mint mondják, egy bizonyos Iriogo Orelnek kétszáznyolcvan történetét sikerült megjegyeznie, s ennek köszönhetően haláláig a kontinens legkeresettebb énekmondója volt."
+        },
+        {
+            "type": "paragraph",
+            "text": "A hercegség hivatalos nyelve az erv, de általánosan használják a közös Nyelvet is. A lakosság zömmel erv, a tekintélyes számú kyr-származék miatt azonban nem ritka a tejfehér hajú, smaragdzöld szemű erigowi sem."
+        },
+        {
+            "type": "paragraph",
+            "text": "A divat iránymutatójának, az elegancia abszolútumának tartják az erigowi ruházkodást. Kissé dekadens, olykor kényelmetlen szabású öltözeteik mindenkor az esztétikát tartják szem előtt. A kék, szürke, lila és bíbor pasztell árnyalatokkal váltakozik. A női ruhák szűk derekúak, kiemelik a kebleket, olykor többet engednek látni belőlük, mint azt Észak konzervatívabb ízlésű népei kívánatosnak vélnek. Egyszerű, de pompásan metszett kövekkel – elsősorban gyémánttal és zafírral – ékített drágaságokat hordanak. Kedvelt viselet a selyemmel szegett köpönyeg, a térd alatt végződő, finom bőrből készült csizma. Az ingek és felsőöltők nyakát és ujját előszeretettel keményítik. Lovagi öltözetüket és fegyverzetüket – a dwonoktól eltérően – csak utazáskor és csatába indulva öltik fel. Páncéljukat olajban edzik feketére vagy mélykékre, kivételt ez alól csak a hercegi Vörös Lovagrend tagjai képeznek, akik abban a kegyben részesülnek, hogy páncéljukat bíborszínnel futtathatják. Kedvelt fegyverük a lovagkard és a kopja, előszeretettel használnak bordás buzogányt – a hajítóés dobófegyvereket ellenben szívből megvetik."
+        },
+        {
+            "type": "paragraph",
+            "text": "Erigow talán a legdrágább északi állam, ez különösképp fővárosára igaz. Kétségtelen ugyan ekkor, hogy a fáradt utazó sehol nem részesülhet ilyen színvonalú kiszolgálásban a pénzéért."
+        },
+        {
+            "type": "paragraph",
+            "text": "A hercegség területén Észak legrangosabb harcosés lovagi iskolái találhatók, de sem bárdnak, sem papnak, sem varázslónak nincs szüksége különb ajánlólevélre e mondatnál: „Erigowban nevelkedtem.”"
+        },
+        {
+            "type": "paragraph",
+            "text": "A közbiztonság kiemelkedően jó, meglehet, a legkülönb a Szövetség országai közül. Ez nem csupán gazdasági okokra vezethető vissza, hisz Erigow egyéb erényei mellett a pyarroni vallás északi központja. Természetesen nem hiányozhatnak innét a kyr istenségek templomai, sőt Ranil egyháza szintén képviselteti magát. A hercegség védistene Krad, de igen elterjedt Dreina és Arel kultusza is."
+        },
+        {
+            "type": "section_title",
+            "text": "Ilanor"
+        },
+        {
+            "type": "paragraph",
+            "text": "A Peratlon-félszigetre a Pyarron szerinti VI. században benyomult lovasnép a maga nyelvén Ilanornak, azaz Szépmezőnek nevezte új hazáját. Mondják, más kontinensről érkeztek, s talán nem is hajóval, hanem a Hatodkor alkonyán Ynevre nyílt Kapukon át. A bölcsek szerint az idők hajnalán a napnyugati szigetvilágot lakhatták, ahonnét isteneik akaratából kellett távozniuk, bár ezen feltevést cáfolni látszik az ilanoríak igen komoly lovastudománya, melyet őshazájukból hoztak magukkal."
+        },
+        {
+            "type": "paragraph",
+            "text": "Ynevre érkezve sokáig nem települtek le, csupán lótenyésztéssel foglalkoztak, törzsi szálláshelyüket változtatva legelőről legelőre vándoroltak. Barátaikat, ellenségeiket egyaránt érdemük szerint választották, ezért fordultak szembe Toronnal, és ezért váltak végül az Északi Szövetség tagjaivá. Földben, fában, szélben lakozó isteneik helyébe fokozatosan a pyarroni pantheon felsőbb lényei kerültek, kultúrájuk azonban nem sorvadt el, csupán új elemekkel bővült. Ilanor fővárosában, Doranban máig számos hatalmas kertet, fából összerótt palotát találni – építőmestereik a követ nem szívesen használják."
+        },
+        {
+            "type": "paragraph",
+            "text": "Ilanor a lócsiszárok és lovasok, íjászok és bárdok hazája. Hozzájuk fogható céllövő csak az elfek közt akad: léptük könnyű, szemük éles, kezük biztos. Természetét adta tehetségük van a zenéhez; legendáik sokszínűsége elismerést, megbecsülést hoz dalnokaik számára szerte a világban. Noha"
+        }
+    ]
+}

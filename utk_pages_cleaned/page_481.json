@@ -1,0 +1,200 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": false,
+    "section_title": "",
+    "content_blocks": [
+        {
+            "type": "paragraph",
+            "text": "a továbblépés. Képességeik a fajtájukon belül jól behatárolhatóak, egyéniségük, egyedi vágyaik, gondolataik nemigen akadnak, a fajtájukra jellemző séma szerint gondolkodnak. Egy fajtán belül az egyik egyed úgy hasonlít a másikra, akár két tojás – különbséget tenni közöttük lehetetlen. Fajtájuk neve egyben a saját nevük is, ők a közlémonok."
+        },
+        {
+            "type": "paragraph",
+            "text": "Ezen démonok általában a fajtára jellemző megjelenéssel bírnak azonban az Elsődleges Anyagi Síkon, mely számukra leginkább csak egy ködfátyolszerű látomásra emlékeztet, képesek más alakot is ölteni, azonban ezen esetben is nagyjából az eredeti sémát követve."
+        },
+        {
+            "type": "paragraph",
+            "text": "Testi tulajdonságaik 18-as értéknek feleltethetők meg. A Démonológia tudománya több mint száz közlémon fajtát ismer (s bizonyára akad számtalan, még ismeretlen is), de itt hely híján – csak ötöt teszünk közzé."
+        },
+        {
+            "type": "rule",
+            "title": "Styx (a Pusztító)",
+            "headers": [
+                "Előfordulás",
+                "Idézett Megjelenők száma",
+                "Termet",
+                "Méretkategória",
+                "Sebesség",
+                "Időigény",
+                "Kezdeményező érték",
+                "Támadó érték",
+                "Védő érték",
+                "Sebzés",
+                "Életerő pontok",
+                "Fájdalomtűrés pontok",
+                "Asztrál ME",
+                "Mentál ME",
+                "Méregellenállás",
+                "Pszi",
+                "Intelligencia",
+                "Jellem",
+                "Tapasztalati pont"
+            ],
+            "rows": [
+                [
+                    "1",
+                    "1",
+                    "N",
+                    "4",
+                    "250 (SZ)",
+                    "3",
+                    "65",
+                    "110/95",
+                    "180",
+                    "4k6/1k10+2",
+                    "35",
+                    "110",
+                    "Immunis",
+                    "Immunis",
+                    "Immunis",
+                    "25 (2. fok)",
+                    "Átlagos",
+                    "Káosz, Halál",
+                    "320"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "Gondolati séma: agresszív, bosszúvágyó – a legbátrabb démon; a halál gondolata a legkevésbé sem riasztja. A céltalan pusztításban és gyilkolásban leli örömét."
+        },
+        {
+            "type": "paragraph",
+            "text": "A Styx három méter magas, kétlábú, négykezű, farkasfejű, zöldesszürke váladéknak tetszik; pofájában ujjnyi hosszú, tűhegyes fogak sorakoznak, kezeinek ujjain arasznyi, kétélű, az acélnál is keményebb pengék a karmok."
+        },
+        {
+            "type": "paragraph",
+            "text": "A Styx félelmetesen gyors. Minden karjával körönként támad, ami harapással együtt összesen három támadást jelent. Egy kezének sebzése 4k6 Sp, TÉ-je 110. Harapásának TÉ-je 95, sebzése pedig 1k10+2 Sp. Ha két karjával sikeres támadást hajtott végre, az annyit tesz, hogy megragadta és magához rántotta ellenfelét. Szorításából kiszabadulni nincs esély, ilyenkor harapása dobás nélkül is Túlütésnek minősül."
+        },
+        {
+            "type": "paragraph",
+            "text": "A Styx négy karjával döbbenetes hatékonysággal védekezik. VÉ-je 180."
+        },
+        {
+            "type": "paragraph",
+            "text": "Pszi 2. fokon használ, mágiát nem alkalmaz, különleges ellenállása sincs vele szemben – csak, mint az összes egyéb démonnak."
+        },
+        {
+            "type": "paragraph",
+            "text": "A Styx, teste másvilági anyagának köszönhetően, kiemelkedően életerős és ellenállóképes, az sem rendíti meg, ha valamelyik végtagját netán elveszítené."
+        },
+        {
+            "type": "paragraph",
+            "text": "A Styxei a démonurak és -hercegek előszeretettel foglalkoztatják, mint testőrt. Ha egy magasabbrendű démon megidéztetik, általában Styxei hívásával igyekszik megfenyegetni megidézőjét. Magát a Styxet megidézni ostoba dolog, mert legtöbbször nem törődik a gyertya fenyegetésével, és ráront megidézőjére."
+        },
+        {
+            "type": "rule",
+            "title": "Shereb (a Katona)",
+            "headers": [
+                "Előfordulás",
+                "Idézett Megjelenők száma",
+                "Termet",
+                "Méretkategória",
+                "Sebesség",
+                "Időigény",
+                "Kezdeményező érték",
+                "Támadó érték",
+                "Védő érték",
+                "Sebzés",
+                "Életerő pontok",
+                "Fájdalomtűrés pontok",
+                "Asztrál ME",
+                "Mentál ME",
+                "Méregellenállás",
+                "Pszi",
+                "Intelligencia",
+                "Jellem",
+                "Tapasztalati pont"
+            ],
+            "rows": [
+                [
+                    "1",
+                    "1",
+                    "N",
+                    "3",
+                    "300 (SZ)",
+                    "5",
+                    "50",
+                    "105",
+                    "145",
+                    "3k6+méreg",
+                    "20",
+                    "55",
+                    "Immunis",
+                    "Immunis",
+                    "Immunis",
+                    "25 (2. fok)",
+                    "Alacsony",
+                    "Káosz, Halál",
+                    "300"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "Gondolati séma: az egyetlen hűséget ismerő démon. Meglehetősen ostoba, könnyen megtéveszthető, ám ha valakit már elfogadott urának, a tőle kapott parancsokat vakon követi. Meglehetősen gyáva, de általában jobban fél urától, mint a veszélyektől."
+        },
+        {
+            "type": "paragraph",
+            "text": "A Shereb jól megtermett, természetellenesen izmos farkasra emlékeztet. Testét dús, fekete szőrzet borítja, szemei sárga fénnyel izzanak. Négy lábon jár, és félelmetes sebességgel halad, de két mellső végtagjának emberire emlékeztető ujjaival fogni is képes. Helyből 8-10 ynevi lábat tud ugrani, nekifutásból pedig 10-15-öt is. Szükség esetén teljesen nesztelenül képes haladni."
+        },
+        {
+            "type": "paragraph",
+            "text": "Harc közben egyetlen fegyvere a pofájában meredező, ujjnyi agyarak alkotta dupla fogsor. Harapásának sebzése 3k6; fogaiból maró váladékot fecskendez a sebbe. Ez pokoli kínt okoz (mindenképpen csak Fp-t, még túlütés esetén is) 10 körön keresztül, körönként k6 Fp-t."
+        },
+        {
+            "type": "paragraph",
+            "text": "A Shereb Védő értéke, fürgesége és meglehetős harci tapasztalata miatt, 145. A támadásokat nem hárítja, hanem rövid ugrásokkal kitér előlük, akár egy nagymacska."
+        },
+        {
+            "type": "paragraph",
+            "text": "A Shereb átkozottul életerős – még a démonok között is –, ám a fájdalmat nehezen tűri. Ép-je 20, Fp-je 55 van."
+        },
+        {
+            "type": "paragraph",
+            "text": "A Shereb a démonok között leggyakrabban a közkatonai szerepét tölti be – innen ered második neve is. A démonidézők kedvence, hiszen az ő gondolati sémája a legalkalmasabb szolgálatok elvégzésére, mi több, könnyen meg is félemlíthető."
+        },
+        {
+            "type": "rule",
+            "title": "Morquor (a Tűzköpő)",
+            "headers": [
+                "Előfordulás",
+                "Idézett Megjelenők száma",
+                "Termet",
+                "Méretkategória",
+                "Sebesség",
+                "Időigény",
+                "Kezdeményező érték",
+                "Támadó érték",
+                "Védő érték",
+                "Sebzés",
+                "Életerő pontok"
+            ],
+            "rows": [
+                [
+                    "1",
+                    "1",
+                    "E",
+                    "2",
+                    "150 (SZ)",
+                    "4",
+                    "30",
+                    "45",
+                    "100",
+                    "Lásd lent",
+                    "18"
+                ]
+            ]
+        }
+    ]
+}

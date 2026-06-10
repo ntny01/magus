@@ -1,0 +1,78 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": false,
+    "section_title": "",
+    "content_blocks": [
+        {
+            "type": "paragraph",
+            "text": "Felépítésükről általánosan elmondható, hogy egy hosszabb-rövidebb nyélből és valamiféle fejből állnak. A nyél gyakran fa, de az igényesebb, drágább példányoké fémből is készülhet. A fegyveren köpünek hívjuk a fej alsó, csőszerű részét, amibe a nyelet rögzítik. Ez általában hosszabb a kelleténél, ily módon valamelyest védi a nyelet is. Bizonyos esetekben ez mindössze két lenyúló szegecselt pánt, s nem teljes cső, de a fej rögzítését és a fanyél védelmét ez is tökéletesen ellátja."
+        },
+        {
+            "type": "paragraph",
+            "text": "Más a helyzet a fémnyelű bárdokkal, buzogányokkal. Ezeket két vagy három darabból kovácsolják, vagy utólag forrasztják a nyélre a fejet. A fémnyelű fegyverek nyelét és fejét gyakran díszítik, esetleg aranyozzák. Különösen szép, értékes daraboknál a bárd pengéjét vagy a buzogány tollát áttörésekkel is ékíthetik."
+        },
+        {
+            "type": "paragraph",
+            "text": "A zúzófegyverek sajátja, hogy valamiféle nehezékkel, tompán ütik meg az ellenfelet. Még a tüskés buzogánynál is – ahol pedig a tüske döfése komoly sebet ejthet – a hangsúly az ütés erején és lendületén van. Ezekkel a fegyverekkel nem lehet csonkolni, csak bénítani."
+        },
+        {
+            "type": "rule",
+            "title": "Harci kalapács",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "title": "Egykezes buzogány",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "title": "Kétkezes buzogány",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "title": "Láncos buzogány",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "title": "Shadleki buzogány",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "title": "Csatacsilag",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "Az Yneven egyre inkább elterjedő, tért hódító páncélos vitézek ellen már az idők óta a fegyverkovácsok a megfelelő eszközöket készítették. A folyamat végeredménye a csatabárd, mely nagy súlyával, kis felületen érintkezve a vértezettel beszakítani igyekszik azt. Ebben a témában azonban a fegyverkovács-technika csúcsa, a leginkább a különféle mágikus képességű vértezeteiről híres Hatodkorban kifejlődött csatabárd típus a csatacsákány, mely kimunkált csőrével szinte bármely páncélzatot átlyukaszt."
+        },
+        {
+            "type": "rule",
+            "title": "Csatabárdok és Csatacsákány",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "title": "Egykezes kardok",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "title": "Dzsenna szablya",
+            "headers": [],
+            "rows": []
+        }
+    ]
+}

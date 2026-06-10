@@ -1,0 +1,106 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "Kyel-pap",
+    "is_new_section": true,
+    "section_title": "A Kyel-pap induló képzettségei 1. Tapasztalati szinten az alapkasztnál feltünteteken kívül:",
+    "content_blocks": [
+        {
+            "type": "paragraph",
+            "text": "Számos kolostorerőd romba dőlt. A megkeresett túlélők közül számosan a krániak elleni öngyilkos bevetéseken vesztették életüket. Hogy fennmarad-e egyáltalán Yneven a nagymúltú Kyel-hit, azt csakis a jövő dönti el; őszintén be kell azonban ismernünk, hogy kilátásai egyelőre nem túl kecsegtetőek."
+        },
+        {
+            "type": "paragraph",
+            "text": "A Kyel-papok számára a vallási előírások egyetlen fegyverfajta használatát engedélyezik – a buzogányét, amely egyúttal az ítélőbírói jogar megjelenítője, s mint ilyen, tekintélyük szimbóluma. Szent harci páncéljukat csak akkor veszik fel, ha uruk a Vak Arcát fordítja Ynev felé; ilyenkor ezzel jelzik, hogy készen állnak a halálra. Maga a páncél nem, koromfekete ruhájuk bűntudatukról, bűnbánatukról és a halálról tanúskodik. A Kyel-papok rendkívül baljóssá és fenyegetővé teszik a megjelenésüket. Emellett a szent jelkép szerepét is betölti, ámbár csak háborúban. Mikor békeidő járja, a papok a kettős arc helyett a két másik szimbólumot, az ikerkört és a mérleget használják."
+        },
+        {
+            "type": "paragraph",
+            "text": "A Kyel-pap különleges előnyei és hátrányai a papnál leírtakon kívül"
+        },
+        {
+            "type": "rule",
+            "text": "I. Kyel szolgái az Élet, a Halál és a Lélek szféráiból meríthetik fohászaikat. Ezen kívül a Teremtés és a Pusztítás Atyja néhány egyedi fohászaival is felruházza papjait, amelyeket egyetlen más istenség hívei sem ismernek.",
+            "title": "Kyel szolgái: Fohászok szférái"
+        },
+        {
+            "type": "rule",
+            "text": "II. A Kyel-papok kizárólag buzogány típusú fegyverekkel tanulhatnak meg bánni, ámbár végszükségben – alkalmilag és rövid időre – másokat is használhatnak. Ilyenkor természetesen sújtják őket a képzetlenségi módosítók, egyéb hátrányos következményektől azonban nem kell tartaniuk. Regulájuk elnézően ítéli meg ezt a kihágást: utóbb néhány kurta bűnbánó imával levezekelhetik, följebbvalóik előtt nem szükséges mentegetőzniük érte.",
+            "title": "Kyel szolgái: Fegyverhasználat"
+        },
+        {
+            "type": "rule",
+            "text": "III. Az egyház minden Kyel-papnak készített főavatása alkalmából egy tökéletesen testre igazított teljes vértet, melynek sisaklemeze egyúttal szent jelképként is szolgál. Gazdájának ez a különleges páncél 6-os SFE-t biztosít, 4-es MGT mellett; ha bárki más ölti magára (ideértve paptársait is), az MGT 9-re nő. Kyel szent vértezeteit a kolostorerődökben őrzik, és a papok kizárólag elöljáróik közvetlen utasítására vehetik fel őket. Ilyesmire csak akkor kerül sor, ha az egyház vezetői megérzik a Vak Arc idejének közeledtét.",
+            "title": "Kyel szolgái: Szent vért"
+        },
+        {
+            "type": "rule",
+            "text": "IV. Kyel papjai rendkívül szigorú regula szerint élnek. Tilos például asszonnyal hálniuk, szeszesitalt fogyasztaniuk és tudatosan hazudniuk. Akik vétenek az előírások ellen, azokat Kyel azonnal megfosztja kegyétől; ezután öt-tíz esztendeig kell szerzetesi fegyelemben vezekelniük, hogy esetleg visszafogadja őket kegyébe.",
+            "title": "Kyel szolgái: Regula"
+        },
+        {
+            "type": "rule",
+            "text": "V. Kivétel ez alól a tudatos hazugság, melyre soha nincsen bocsánat, bármilyen jóhiszemű vagy kegyes okból követték el. Amelyik karakter ilyen förtelmes vétekbe esik, az örökre és visszavonhatatlanul megszűnik Kyel papja lenni, elveszíti Kegyelt Hátterét.",
+            "title": "Kyel szolgái: Hazugság"
+        },
+        {
+            "type": "rule",
+            "text": "VI. Kyel szolgái a Domvik-papokhoz hasonlóan teljes körű engedelmességgel tartoznak elöljáróiknak, különösen a Vak Arc idején. A tilalom ellen vétőket az istenség nem feltétlenül bünteti (itt már fontos szerepe van az indokoknak), az egyház azonban mindig – méghozzá igencsak szigorúan.",
+            "title": "Kyel szolgái: Engedelmesség"
+        },
+        {
+            "type": "rule",
+            "text": "VII. Kyel papjait igen figyelemreméltó és szellemileg kiemelkedett fiatalemberek közül választják ki, mindegyikük rendelkezik a Pszi érzékenység Háttérrel, így erre KAP-jaikból nem kell költeniük a karakter megalkotásakor.",
+            "title": "Kyel szolgái: Pszi érzékenység"
+        },
+        {
+            "type": "table",
+            "headers": [
+                "Képzettség",
+                "Fok"
+            ],
+            "rows": [
+                [
+                    "Vértviselet",
+                    "2. fok"
+                ],
+                [
+                    "Hadvezetés",
+                    "1. fok"
+                ],
+                [
+                    "Harctéri gyakorlat",
+                    "1. fok"
+                ],
+                [
+                    "Pajzshasználat",
+                    "2. fok"
+                ],
+                [
+                    "Pusztítás",
+                    "2. fok"
+                ],
+                [
+                    "Élettan",
+                    "1. fok"
+                ],
+                [
+                    "Jog/törvénykezés",
+                    "3. fok"
+                ],
+                [
+                    "Pszi (pyarroni)",
+                    "2. fok"
+                ]
+            ]
+        },
+        {
+            "type": "rule",
+            "text": "A Kyel-pap képzettségei, melyeket rendjétől az Oktatás képzettség 4. foka által nyújtott előnnyel tanulhat: Fegyverismeret, Hadvezetés, Harctéri gyakorlat, Pajzshasználat, Pusztítás, Vértviselet.",
+            "title": "Kyel-pap tanulható képzettségei"
+        },
+        {
+            "type": "flavor_text",
+            "text": "Kevesen vannak Yneven, akik valaha betekintést nyerhettek a Kígyó álmába. Vöröset álmodik és közben kristályos rubinkönnyeket sír. Mély és ólomnehéz az álma, mert vénségesen vén ő, s régóta nem esett már a halandók világában olyasmi, ami felzavarta volna belőle. De ha kockára veted elméd épségét, s lemerülsz a Kígyó álmában ama sötétnél is sötétebb régiókba, ahol hideg hamuvá porlik a gondolat zsaratnoka... ott, ott rábukkanhatsz az igazságra.Mert hamis próféták prédikálnak a Kígyó nevében, gyermekem, és tisztátalan kezek emelik magasba az ő jelét. Ne hallgass reájuk: ne hidd, hogy a Kígyó erőszakot és elvakultságot hirdetne. Ha ezt tenné, aligha vénülhetett volna meg így: az indulatok legalább mindig a gerjesztőjüket emésztik el. A Kígyó bölcs és türelmes: nem hevülve forró parázs, hanem sziklaágyban fénylő lángrubin.Akik szítják a tüzet, azok nem közülünk valók. Mi csak tápláljuk, örökkön-örökké.",
+            "title": "Rubalcas mester: Lángrubin (Részlet)"
+        }
+    ]
+}

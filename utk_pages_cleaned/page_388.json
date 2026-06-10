@@ -1,0 +1,192 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": true,
+    "section_title": "Időmágikus mozaikok",
+    "content_blocks": [
+        {
+            "type": "paragraph",
+            "text": "létezik és fejti ki az áthaladókra a hatását, azonban az így a mágia hatása alá került alanyok 2 órán át rettegnek majd a varázslat által meghatározott célponttól."
+        },
+        {
+            "type": "paragraph",
+            "text": "Azonban az így egy varázslatra ráolvasott Időmágiák időtartama nem adódik össze, s egy mozaikon csakis a hosszabb Időtartamú fejti ki a hatását."
+        },
+        {
+            "type": "paragraph",
+            "text": "A ráolvasás ideje mutatja meg, hogy a varázslónak milyen hosszan kell a szükséges varázsszavakat kántálnia ahhoz, hogy a mozaik létrejöjjön, és kapcsolódjon a többihez."
+        },
+        {
+            "type": "rule",
+            "title": "Időtartam: kör",
+            "headers": [
+                "Plussz kör",
+                "Mp"
+            ],
+            "rows": [
+                [
+                    "1 kör",
+                    "+5 Mp"
+                ],
+                [
+                    "2 kör",
+                    "+6 Mp"
+                ],
+                [
+                    "3 kör",
+                    "+7 Mp"
+                ],
+                [
+                    "4 kör",
+                    "+8 Mp"
+                ],
+                [
+                    "5 kör",
+                    "+9 Mp"
+                ]
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Időtartam: perc",
+            "headers": [
+                "Plussz perc",
+                "Mp"
+            ],
+            "rows": [
+                [
+                    "1 perc",
+                    "+10 Mp"
+                ],
+                [
+                    "2 perc",
+                    "+13 Mp"
+                ],
+                [
+                    "3 perc",
+                    "+16 Mp"
+                ],
+                [
+                    "4 perc",
+                    "+19 Mp"
+                ],
+                [
+                    "5 perc",
+                    "+22 Mp"
+                ]
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Időtartam: óra",
+            "headers": [
+                "Plussz óra",
+                "Mp"
+            ],
+            "rows": [
+                [
+                    "1 óra",
+                    "+25 Mp"
+                ],
+                [
+                    "2 óra",
+                    "+30 Mp"
+                ],
+                [
+                    "3 óra",
+                    "+35 Mp"
+                ],
+                [
+                    "4 óra",
+                    "+40 Mp"
+                ],
+                [
+                    "5 óra",
+                    "+45 Mp"
+                ]
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Időtartam: nap",
+            "headers": [
+                "Plussz nap",
+                "Mp"
+            ],
+            "rows": [
+                [
+                    "1 nap",
+                    "50 Mp"
+                ],
+                [
+                    "2 nap",
+                    "57 Mp"
+                ],
+                [
+                    "3 nap",
+                    "64 Mp"
+                ],
+                [
+                    "4 nap",
+                    "71 Mp"
+                ],
+                [
+                    "5 nap",
+                    "78 Mp"
+                ]
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Időtartam: év",
+            "headers": [
+                "Plussz év",
+                "Mp"
+            ],
+            "rows": [
+                [
+                    "1 év",
+                    "90 Mp"
+                ],
+                [
+                    "2 év",
+                    "100 Mp"
+                ],
+                [
+                    "3 év",
+                    "110 Mp"
+                ],
+                [
+                    "4 év",
+                    "120 Mp"
+                ],
+                [
+                    "5 év",
+                    "130 Mp"
+                ]
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Időtartam: örökkévalóság",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "title": "Időzítés",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "Az Időmágia következő bekezdésben tárgyalt magasabb fokú alkalmazásához elengedhetetlenül szükséges a Számtan/Mértan képzettség 4. fokú ismerete."
+        },
+        {
+            "type": "rule",
+            "title": "Időugrás",
+            "headers": [],
+            "rows": []
+        }
+    ]
+}

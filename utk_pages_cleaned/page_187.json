@@ -1,0 +1,109 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "null",
+    "is_new_section": true,
+    "section_title": "MÉRGEK ÉS MÉRGEZÉS",
+    "content_blocks": [
+        {
+            "type": "paragraph",
+            "text": "Ynev világán is léteznek az emberi egészséget károsító anyagok. Ezek növényi vagy állati eredetű, esetleg különleges ásványokból készített keverékek, porok, párlatok. Okozhatnak kisebb gyomorégést éppúgy, mint azonnali halált. Ezeket az ártalmas, természetben előforduló vagy művi úton előállított anyagokat nevezzük összefoglaló néven méregnek."
+        },
+        {
+            "type": "paragraph",
+            "text": "A hozzáértők az efféle szereket különböző módokon csoportosítják; leggyakrabban hatásuk vagy alkalmazásuk szerint, néha összetevőik eredete, mennyisége, netán ára alapján. Alkalmazásuk alapján a következő csoportokba sorolhatók a mérgek:"
+        },
+        {
+            "type": "paragraph",
+            "text": "Étel- és italmérgek"
+        },
+        {
+            "type": "paragraph",
+            "text": "Fegyvermérgek"
+        },
+        {
+            "type": "paragraph",
+            "text": "Gáz- vagy légmérgek"
+        },
+        {
+            "type": "paragraph",
+            "text": "Kontaktmérgek"
+        },
+        {
+            "type": "paragraph",
+            "text": "Többkomponensű mérgek"
+        },
+        {
+            "type": "paragraph",
+            "text": "Az étel- és italmérgek az emésztőrendszerbe kerülve fejtik ki hatásukat. Hatóidejük a néhány perctől a néhány napig terjed. A hatás általában rosszullét, gyengeség vagy halál. Legtöbbször növényi vagy ásványi mérgek. Általában por vagy folyadék formában készülnek. Előnyük a biztos hatás, hátrányuk, hogy bizonyos előkészületeket igényelnek."
+        },
+        {
+            "type": "paragraph",
+            "text": "A fegyvermérge a fegyver éléről vagy hegyéről a véráramba kerülő mérgek összefoglaló neve. Ezek hatása többnyire gyors, hiszen nyílt harcban az ellenféllel minél előbb végezni kell. A fegyvermérgek legtöbbször állati eredetű mérgek."
+        },
+        {
+            "type": "paragraph",
+            "text": "A légmérgek gázok, a végletekig finommá őrölt porok vagy porlasztott folyadékok, amelyek belégzéssel kerülnek az áldozat szervezetébe. Nehezen kezelhetőek, hiszen nagy térfogat kell belőlük, ugyanakkor nem irányíthatóak – néhány esetben mégis ez a járható út. A gázmérgeket általában nem gáz halmazállapotban tárolják, hanem folyadékként vagy szilárd anyagként, amit később elpárologtatva vagy elégetve nyerik a gázt."
+        },
+        {
+            "type": "paragraph",
+            "text": "A kontaktmérgek szintén igen nehezen kezelhetők, hiszen leglényegesebb tulajdonságuk, hogy a csupasz bőrön, de még a vékonyabb ruhán keresztül is felszívódnak és igen gyorsan hatnak. Ez teszi őket alkalmassá a többcélú felhasználásra. Az ilyen anyagok előállítása igen bonyolult és költséges eljárás, csak igen képzett méregkeverő képes rá, és egy alkimista segítségét is igénybe kell vennie (vagy rendelkeznie kell az Alkímia képzettséggel)."
+        },
+        {
+            "type": "paragraph",
+            "text": "A többkomponensű mérgek már a mérgezés magasiskoláját jelentik. Működésük igen összetett, több lépcsőben jutnak az áldozat szervezetébe és ott elegyedve fejtik ki áldatlan hatásukat. Például egy estén lehet méreg az ételben és az italban, de csak az esik áldozatul, akibe mindkét fajta méreg bejut – a házigazda pedig nyugodtan ehet, ha nem iszik hozzá. Másik szokásos használatuk, hogy valakinek lassan ölő mérget adnak be, ami csak akkor hat, ha az áldozat nem kap rendszeresen ellenszert. Amíg szedi a méreg ellenanyagát, észrevétlenül lappang, de ha egyszer kimarad az ellenméreg, az áldozat meghal, noha a valódi méreg talán évekkel azelőtt került a testébe."
+        },
+        {
+            "type": "paragraph",
+            "text": "Az egyik típusú mérget általában nem lehet a másik módon használni, kivétel ezalól a kontaktméreg, mert az fegyverre is kenhető és ételbe, italba is keverhető."
+        },
+        {
+            "type": "rule",
+            "title": "A mérgek szintje és a Méregellenállás",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "Azt, hogy egy méreg milyen erősséggel támadja meg az áldozat Egészségét, a méreg szintjének nevezzük. Minél magasabb egy méreg szintje, annál erősebb. A 0. szintűek legfeljebb gyengébb egészségűekre hatnak, míg az 5. szintűek a legerősebb szervezetre is halálos veszélyt jelentenek. A fentieket a M.A.G.U.S.-ban a következő szabály hivatott leképezni: Minden méreg ellen Egészségpróbát kell dobni, az áldozat Egészségéből levonva a méreg szintjének megfelelő módosítót. Ha a próba sikeres, a karakter ellenállt a mérgezésnek, miáltal csak az enyhébb hatás érvényesül rá. Ha azonban sikertelen, akkor a méreg teljes hatóerővel hat, azaz a súlyosabb hatás érvényesül. Az Egészségpróbát módosító értékekről a következő táblázat tudósít:"
+        },
+        {
+            "type": "table",
+            "headers": [
+                "Szint",
+                "Módosító"
+            ],
+            "rows": [
+                [
+                    "0.",
+                    "0"
+                ],
+                [
+                    "1.",
+                    "-1"
+                ],
+                [
+                    "2.",
+                    "-2"
+                ],
+                [
+                    "3.",
+                    "-3"
+                ],
+                [
+                    "4.",
+                    "-4"
+                ],
+                [
+                    "5.",
+                    "-5"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "Minden élőlény valamilyen fokon ellenáll a szervezetbe került méreg hatásának. Az ellenállás nagyrészt tudattalan – hiszen a szervezet immunrendszere küzd meg az idegen anyaggal –, ám a Pszí segítségével bizonyos fokig tudatosan is megerősíthető (lásd: Pszí – Képességjavítás: Egészség javítása)."
+        }
+    ]
+}

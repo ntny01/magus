@@ -1,0 +1,91 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": true,
+    "section_title": "Méregkeverés",
+    "content_blocks": [
+        {
+            "type": "paragraph",
+            "text": "fájdalommal) mérsékelhető a fájdalom. Azaz 1. fokú képzettséggel 1k6 Sp, 3. fokú képzettséggel 3k6 Sp. Ez a sebzés alapvetően Fp, azonban a kötelező Ép vesztés miatt könnyedén komolyabb Ép sérüléssé változhat."
+        },
+        {
+            "type": "table",
+            "headers": [
+                "Az adott méreg keveréséhez szükséges Ip-k száma.",
+                "A méreg ára (1 adag)"
+            ],
+            "rows": [
+                [
+                    "1-10",
+                    "10 réz/Ip"
+                ],
+                [
+                    "11-20",
+                    "1 ezüst/Ip"
+                ],
+                [
+                    "21-",
+                    "1 arany/Ip"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "Például: Arash, a boszorkánymester, aki 3. fokon jártas a méregkeverésben, és ezért 15 Ip-vel bír, egy talmi mérget akar készíteni (1 pont), ami kábulatot okoz (2 pont), ami közepes ideig hat (3 pont) és aminek gyors a hatása (3 pont) – összesen tehát 9 pont. A mérget nem szánja túl erősre, hiszen egy nyeszlett uzsorás életének megkeserítésére készül, azaz 2. szintű elegendő lesz. Tehát a végső Ip költség 9+6=15 pont. Ezek szerint pont a 3. szintű méregkeverés szükséges az előállításhoz, tehát Arash szépen munkához láthat."
+        },
+        {
+            "type": "paragraph",
+            "text": "Másik alkalommal Arash egy egész ivó vendégeire akarja rászabadítani a halált, mert vérig sértették. Egy légmérget szeretne (3 pont), ami halált okoz (5 pont), aminek hatása természetesen maradandó (5 pont) és ami lassú hatású (2 pont) – összesen tehát 15 pont. Mivel az ivó vendégei jórészt harcosok, ezért magasabb szintű mérget, mondjuk 1. szintűt szeretne a biztos hatás elérése érdekében, így a végső Ip költség 15+3=18 Ip lenne. A fogadó vendégei e szerint megmenekülnének, mivel Arash ezt a mérget képtelen előállítani. De jaj nekik, mert a boszorkánymester belátó és inkább csak 0. szintű mérget készít, aminek Ip költsége 15, és a többit a törére bízza."
+        },
+        {
+            "type": "paragraph",
+            "text": "Azonban abban az esetben, ha Arash birtokol néhány szemet az Elátkozott Vidék legendás görcsfáinak magvaiból, akkor ezekkel képes megerősíteni egy szinttel áfiuma gyilkos hatását, és csak a legkitartóbbat az életbe kapaszkodó vendégeket kell megismertetnie tőre vasával."
+        },
+        {
+            "type": "paragraph",
+            "text": "A mérgek mindig kétféle hatással bírnak, az egyik az Ip pontokból kigazdálkodott mérgek Hatása, ez mindig az erősebb hatás, a másik a méregkeverő által választott, egy vagy több kategóriával gyengébb hatás. Ez abban az esetben lép színre, ha a célpont sikeres Egészségpróbát dobna. Ennek a másodlagos hatásnak az időtartama is egy kategóriával kisebb az elsődleges hatásénál."
+        },
+        {
+            "type": "paragraph",
+            "text": "A mérgek hatóidejének letelte után a célpont még 1k6 percig a KM által meghatározott utóhatásoktól szenved (általában gyengeség)."
+        },
+        {
+            "type": "paragraph",
+            "text": "A mérgek tulajdonságait és az alkalmazásukról szóló egyéb információkat lásd a 186. oldalon a Mérgek c. fejezetnél."
+        },
+        {
+            "type": "rule",
+            "title": "1. fok",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "title": "2. fok",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "title": "3. fok",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "A karakter, ha gyógyításra adja a fejét, akkor Intelligenciapróbáját már +1 módosítóval dobja."
+        },
+        {
+            "type": "rule",
+            "title": "4. fok",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "title": "5. fok",
+            "headers": [],
+            "rows": []
+        }
+    ]
+}

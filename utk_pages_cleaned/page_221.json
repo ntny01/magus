@@ -1,0 +1,148 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "null",
+    "is_new_section": true,
+    "section_title": "Diszciplínák",
+    "content_blocks": [
+        {
+            "type": "paragraph",
+            "text": "önmagában sem könnyű, ezután pedig a látottakat értelmeznie kell."
+        },
+        {
+            "type": "paragraph",
+            "text": "Az Aura összetett képződmény, több rétegre bontható. Három régióban belül hat réteget különböztetünk meg, ezek, mint a hagyma héjai borítják egymást, ha nem is különülnek el olyan élesen egymástól. A külső régióba két réteg tartozik. A középső régió három rétegből áll, míg a belső régiót csak egy réteg alkotja."
+        },
+        {
+            "type": "paragraph",
+            "text": "A régiók tehát egymásra épülnek, mégpedig olymódon, hogy az egyes rétegekben vizsgálható gondolatok, érzelmek okait, forrásait egy belsőbb rétegben találhatjuk. Így visszafejthető a vizsgált alany viselkedése, sőt még a személyiségét kialakító elemekre is ráakadhatunk egy alapos elemzés alkalmával."
+        },
+        {
+            "type": "paragraph",
+            "text": "Külső régió:"
+        },
+        {
+            "type": "paragraph",
+            "text": "A legkülső régióban a futó gondolatoknak, pillanatnyi érzelmeknek, érzeteknek a lenyomatai találhatók. Egy hozzáértő annyit tud nagyjából kiolvasni a réteg elemzése során, hogy mire gondol konkrétan az illető, milyen dolgok foglalkoztatják éppen. Például: „Ezen a sarkon kell befordulnom!”, „Éhes vagyok.”, nyugalmat vagy feszültséget, ami akkori állapotát jellemzi. Ezen gondolatok, érzelmek közvetlen okaira is következtethet, mivel ezek a következő rétegben találhatók, és bizonyos mértékig az árnyékuk átvetül ide is. Az egyébként minden rétegre igaz, hogy az ott rejtőző dolgok a szomszédos külső régióban nyomot hagynak."
+        },
+        {
+            "type": "paragraph",
+            "text": "A második régióban a rövid távú tervek, pillanatnyi célok találhatók. A futó érzelmek okaira találunk utalást. Nagyon fontos ez a réteg abból a szempontból, hogy már halványan dereng benne a köznapi név, szervezet, melyhez a karakter tartozik és a Tapasztalati szint lenyomata. Nem itt van a valódi helyük, hanem a harmadik rétegben, viszont már lehet következtetni a mibenlétükre. Igaz az eredmény valószínűleg igen durva közelítés lesz."
+        },
+        {
+            "type": "paragraph",
+            "text": "Középső régió:"
+        },
+        {
+            "type": "paragraph",
+            "text": "A harmadik réteg a fent említetteken kívül tartalmazza az olyan dolgokat is, melyek gyakorta foglalkoztatják az illetőt. Például egy tan vagy eszme, illetve az ezekkel kapcsolatos érzelmek és érzetek."
+        },
+        {
+            "type": "paragraph",
+            "text": "A negyedik régió a meggyökeresedett eszmék, hosszú távú tervek helye. Itt lelhetünk rá a tartós érzelmekre is. Ezekből már egy tapasztalt emberismerő következtethet az illető jellemére."
+        },
+        {
+            "type": "paragraph",
+            "text": "A következő, ötödik régióban – a középső régió legbelső rétege – a személyiséget felépítő elemek kapnak helyet. Itt találhatók a személyiségjegyek, a jellem. Minden olyan hatásnak a lenyomatát is ebben a rétegben kell keresnünk, amelyek az illető egész életére kihatást gyakoroltak."
+        },
+        {
+            "type": "paragraph",
+            "text": "Belső régió:"
+        },
+        {
+            "type": "paragraph",
+            "text": "A hatodik réteg olyan mélyen rejtőzik, hogy tartalmáról csak keveseknek van tudomása. Itt őrződnek azok az emlékek, melyeket a lélek az újjászületések körforgásában szerzett, az illető Valódi neve, és azok a jelek, melyek a sorsát irányítják."
+        },
+        {
+            "type": "rule",
+            "title": "Rendszerszabály",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "flavor_text",
+            "text": "„Ranagol – vér szálljon a szájára –, testet és szellemet adott nekünk, hogy a dieurok és az Ő színe előtt tegyünk tanúságot kiemelkedettségünkről, vagy bukjunk el fájdalom és kín közepette."
+        },
+        {
+            "type": "rule",
+            "title": "Rendszerszabály",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "flavor_text",
+            "text": "A nayanok velője is pont oly véres és mocskos kiontva, pont akkora szennyben látják meg a világot és pontosan oly egyedül távoznak belőle, mint bármelyikünk."
+        },
+        {
+            "type": "rule",
+            "title": "Rendszerszabály",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "flavor_text",
+            "text": "A szellemmel sincs másképp a Sötét Úr egyformán adott minket a világnak, hogy bizonyíthassuk különbek vagyunk. Épp ezért ha még egyszer becsmérelni mered szellemi hatalmuk, ne feledd, hogy saját magad is mocskolod, ostoba..."
+        },
+        {
+            "type": "paragraph",
+            "text": "A Neszezoklán transzepsz noviciátushoz"
+        },
+        {
+            "type": "paragraph",
+            "text": "A transzepsz szavait értelmezve láthatjuk, hogy Ynev mai lakói a pszi (Ψ) energiák alkalmazásának művészetét hasonló szellemi felépítésük miatt, eltérő forrásaik ellenére is azonos módon kezdték el alkalmazni. Ezen szellemi, az elme hatalmának felhasználását célzó gyakorlatokat nevezzük diszciplínáknak, melyeket két nagy csoportba soroljuk. Az egyik a test és a fizikai valóság feletti uralmat segítik elő, ezen diszciplínák összességét nevezzük Test-fának. A másik a valóságon túli világ, a Belső Síkok értelmezésével és befolyásolásával foglalkozó diszciplínák gyűjteménye, ezt nevezzük a Tudat-fának."
+        },
+        {
+            "type": "paragraph",
+            "text": "A két csoport diszciplínái elnevezésükhöz hűen fa-szerűen, a gyökérdiszciplínákra épülve az újabb és újabb célok eléréséhez szükséges módon ágakra bomolva fejlődtek tovább. Az alábbiakban megtartva a három nagy hagyomány szerinti felosztást a két nagy fára bontva taglaljuk a diszciplínákat."
+        },
+        {
+            "type": "paragraph",
+            "text": "A diszciplínák alkalmazására vonatkozó általános szabályok:"
+        },
+        {
+            "type": "paragraph",
+            "text": "I. A diszciplínák általános hatósugara látótávolság, hacsak a leírásban másképp nem szerepel. A célpontot valami módon (természetes, vagy mágikus érzékeléssel), de látni kell."
+        },
+        {
+            "type": "paragraph",
+            "text": "II. A diszciplínák alap erősítése 1 E, az alkalmazásnál feltüntetett Ψ-pont érték újabb többszörözésével a diszciplina Erőssége növelhető."
+        },
+        {
+            "type": "paragraph",
+            "text": "A Pyarroni Módszer diszciplínái"
+        },
+        {
+            "type": "paragraph",
+            "text": "1. fokú diszciplína. Az ébredés szintjén az alkalmazó Harmadik szemét a belső és az őt körülvevő világra nyitja. Ahogy az újszülött a formákkal ismerkedik, felismeri az alapvető alakokat az őt körülvevő Asztrál- és Mentálvilág tengerében. Látja az indulatok, a velős gondolatok keltette hullámokat, örvényeket. Az Asztrál-, Mentálvilág lényeinek kísértetszerű alakjait, a hatalmasabb – értelemmel bíró – lényekkel akár kommunikálhat is, ha vállalja a kockázatot, hogy csekély hatalma ellenére, pőre elmével áll az ősi teremtmények színe elé. Megfigyelhet más tudatos lényeket, a létezők – az anyagi világ lélekkel bíró teremtményei – zsarátnokként izzanak a Belső Síkok mindegyikén, ha nem rejtekeznek el valami módon."
+        },
+        {
+            "type": "paragraph",
+            "text": "Tudatnyitás"
+        },
+        {
+            "type": "paragraph",
+            "text": "Típus: Tudat"
+        },
+        {
+            "type": "paragraph",
+            "text": "Ψp: 1/1 perc"
+        },
+        {
+            "type": "paragraph",
+            "text": "A meditáció ideje: 1 szegmens"
+        },
+        {
+            "type": "paragraph",
+            "text": "A legalapvetőbb szellemi képesség, a Harmadik szem felnyitása. Ezen esemény első bekövetkeztétől számít valaki mindhárom – az Asztrál-, a Mentál- és az Anyagi síkon kifejlett tudatnak. Az eddig csupán az Anyagi síkot érzékelő tudat eztán már nem csak Létezőként, de passzív szemlélőként is részt vehet a Belső Síkok életében."
+        },
+        {
+            "type": "paragraph",
+            "text": "A karakter rövid elmélyülésével felnyitja tudatának védműveit – TME, Pszi pajzsok, egyéb védelmek –, a Belső Síkok egyikére pillanthat. Megfigyelheti az adott sík mozgását, örvényeit, színeit: a háborúskodás, az öldöklés vonagló vöröseit,"
+        }
+    ]
+}

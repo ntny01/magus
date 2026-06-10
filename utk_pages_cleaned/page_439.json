@@ -1,0 +1,16 @@
+{
+    "is_new_chapter": true,
+    "chapter_title": "Quiron-vidék",
+    "is_new_section": true,
+    "section_title": "Arguren",
+    "content_blocks": [
+        {
+            "type": "paragraph",
+            "text": "Arguren"
+        },
+        {
+            "type": "paragraph",
+            "text": "Legendás városállam a Quiron-tenger medencéjének délkeleti részén; beszélő neve a Közös Nyelven Ezüst-révet jelent. A hagyomány szerint nagymúltú, különös nép menedéke volt a Hatodkor zűrzavarát követő felvirágzás idején, gazdagságát és hatalmát ősi (talán még a kyrek előtti időkből származó) titkoknak köszönhette. Urait bizonyos források alakváltó zaudereknek, mások őrült mágusoknak, megint mások anur szakadároknak vélik – tény minden esetre, hogy a tizenharmadik Zászlóháború idején (Psz. 3616) egy toroni hajó megközelítette, és tűzköpőkkel elpusztította. A shuluri Birodalmi Levéltárban, mely a Hetedkor hajnala óta minden valamirevaló hadijelentést megőriz, csak a támadásnak találmi nyomát, partraszállásra (bizonyára jó okkal) sem ekkor, sem később nem került sor. Arguren romjainak helyét mostanság már csak a beavatottak, az északi és a császári kémszolgálat tisztjei – no meg persze egyes kalandozók ismerik."
+        }
+    ]
+}

@@ -1,0 +1,159 @@
+{
+    "is_new_chapter": true,
+    "chapter_title": "A Kilenc Sor Iskolája",
+    "is_new_section": true,
+    "section_title": "Drágakövek",
+    "content_blocks": [
+        {
+            "type": "paragraph",
+            "text": "egyenesen mindennel kapcsolatos, így bármilyen mágikus hatás tárolására alkalmas."
+        },
+        {
+            "type": "paragraph",
+            "text": "Példa a közvetlen felhasználásra: a varázstudó mozaikjai-ból összerak egy lángpengét 85 Mp-ért (Őstűz teremtés 10 E, karddá formázva; időmágia – óra), majd ahelyett, hogy azonnal létrehozná a varázslatot beletölti egy 100 karátos rubinba (a rubin önmagában 10000 aranyat ér!). Utolsó lépésként pedig meghatározza a varázslat előhívásához szükséges varázsszót, melyet elégséges akár gondolati úton aktiválni. A legközelebbi alkalommal, mikor a rubint egy kard pengéjét érinti és a varázsszót felidézi, a varázslat kiszabadul a kőből, s a kard pengéjét egy óra hosszan lángok övezik majd, +10K6 Sp sebet okozva. FIGYELEM: ez esetben a rubin kiürül!"
+        },
+        {
+            "type": "paragraph",
+            "text": "Ha azonban a kőbe töltendő varázslathoz a varázstudó hozzáfűz egy Átlenyegítést is (okozás: 145 Mp), s a követ egy kard markolatába – mint hordozóba – foglalja (felruházás), a varázsszó kimondásakor a lángok ugyanúgy megjelennek, s egy óra hosszan jelen vannak, azonban a varázslat nem távozik a rubinból, azaz máskor is, akárhányszor előhívható. Persze a kőnek minden használat után időre van szüksége ahhoz, hogy újra feltöltődjék: ez 1 teljes nap!"
+        },
+        {
+            "type": "paragraph",
+            "text": "Mivel fenti példánk mozaikkőből összerakott varázslat, hat rá az ellentétes elem gyengítése és a Destrukció – azonban mindkettő a már létrejött varázslatot érinti, s nem a kő hatalmát."
+        },
+        {
+            "type": "paragraph",
+            "text": "Smaragdba és rubinba a Mana pontok nyers formában is beletölthetők; ezek a kövek mintegy Mana pont tárként is működnek. Ha egy varázstudó a varázslást azzal kezdi, hogy az ilyen követ a jobbágyba fogva aktiválja a kőhöz tartozó varázsszót, a varázslás során nem saját Mana pontjai használódnak el, hanem a kőben tároltak. A fenti előzmények után már a szokott módon varázsolhat. A Mana pontokkal feltöltött követ hiába veszi kézbe nem varázshasználó karakter, varázsolni ettől nem fog tudni. A varázshasználók is legfeljebb annyi Mana pontot képesek egyszerre kivonni a kőből, amennyi a max. Mp-juk. Egy efféle drágakőben legtöbb; annyi Mana pont tárolható, ahány karátos a kő, s az ily módon feltöltött kő nem lényegíthető át."
+        },
+        {
+            "type": "paragraph",
+            "text": "A drágaköveken belül külön kategóriát képvisel a sonioni feketeopál. Egyetlen tulajdonsága, hogy bizonyos százalékú varázslatimmunitást nyújt viselőjének és az illető Személyes Aurájához tartozó tárgyaknak; az illetőnek annyi százalék esélye van arra, hogy egy adott varázslat egyáltalán nem hat rá. A varázslat immunitást minden egyes varázslat esetén újra kell dobni. Ha a dobás sikeres, a varázslat semmiféle hatást nem fejt ki a kő viselőjére, ha sikertelen, zavartalanul gyakorolja rá hatását. Az immunitás a mágia minden formájára igaz, függetlenül a varázslat típusától és a varázshasználó iskolájától. Ha a varázslat nem kifejezetten a kő viselője ellen irányul, hanem egy adott területre hat, a kő viselője akkor is jogosult az immunitáspróbára. Sikeres dobás esetén rá – és csak rá! – a varázslat nem hat, minden körülötte állóra azonban igen. A sonioni feketeopál semmilyen módon nem tölthető fel mágikus energiával, azonban fent említett hatását feltöltés nélkül is kifejti. A kő minden két karátja után 1 százalékos varázslat immunitást ad."
+        },
+        {
+            "type": "paragraph",
+            "text": "A Drágakőmágia magasiskoláját a Kilenc Sor drágakőmágusai alkalmazzák, akik kilenc láncon, megfelelő sorrendben, különböző mágikus hatású drágaköveket viselnek. Mindegyik kő speciálisan van feltöltve, s ugyanolyan szerepet tölt be, mint a varázstudóknál a mozaikok. A megfelelő sorrend kirakásával gyakorlatilag bármilyen mágikus hatás elérhető."
+        },
+        {
+            "type": "rule",
+            "title": "Drágakövek",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "Egy-egy kő árát sok minden befolyásolja, mint például a nagysága, a csiszolata, a tisztasága és nem utolsó sorban a színe. A drágakövek méretét karátban határozzuk meg (1 karát = 0,2 ynevi lat). A csiszolat nemcsak az értékben, de a mágikus energiák fókuszálásában is szerepet kap. A drágakőmágiához használt kövek csiszolatuk miatt, mely mágikus fókuszáló képességüket adja, sokkalta tisztábbak és értékesebbek az itt leírtaknál, ezért varázstárgyak esetében az érték tízzel szorzandó, mint az itt feltüntetett nyers kövek értékei! A Drágakőmágus természetesen megvásárolhat ilyen nyers köveket is, majd a Drágakőcsiszolás szakmájával képes maga is elkészíteni a varázstiszta ékköveket, sikeres Képzettségpróba esetén."
+        },
+        {
+            "type": "paragraph",
+            "text": "Az igaz drágakövek értéke karátonként 3-5 arany, a féldrágaköveké pedig 2 ezüst és 3 arany között változik attól függően, hogy hol kívánja beszerezni őket a vásárló. Például a Gálvák-tengere mentén valószínűleg már 10 aranyért egy nagyobbacska gyöngyöt is vehetünk, míg ugyanez a darab az Északi Szövetség területén akár az ötszörösébe is kerülhet."
+        },
+        {
+            "type": "table",
+            "headers": [
+                "Drágakő",
+                "Szín"
+            ],
+            "rows": [
+                [
+                    "Gyémánt",
+                    "tiszta, átlátszó, néha enyhén színezett"
+                ],
+                [
+                    "Igazgyöngy",
+                    "szivárványosan csillogó tejfehér"
+                ],
+                [
+                    "Rubin",
+                    "átlátszó karmazsínvörös"
+                ],
+                [
+                    "Smaragd",
+                    "átlátszó, ragyogó sötétzöld"
+                ],
+                [
+                    "Zafír",
+                    "átlátszó kék"
+                ],
+                [
+                    "Akvamarin",
+                    "átlátszó sápadtkék"
+                ],
+                [
+                    "Alexandrit",
+                    "átlátszó mélyzöld"
+                ],
+                [
+                    "Borostyán",
+                    "átlátszó, aranyló"
+                ],
+                [
+                    "Cirkon",
+                    "sárga átlátszó sápadt kékeszöld"
+                ],
+                [
+                    "Fekete opál",
+                    "áttetsző, méregzöld, aranyló foltokkal"
+                ],
+                [
+                    "Füstkvarc",
+                    "áttetsző, árnyalt szürkés-barnás"
+                ],
+                [
+                    "Gránát",
+                    "áttetsző, vöröses vagy rozsdaszín"
+                ],
+                [
+                    "Hegyikristály",
+                    "tiszta, átlátszó"
+                ],
+                [
+                    "Holdkő",
+                    "átlátszó, sápadt arany fénnyel"
+                ],
+                [
+                    "Jáspis",
+                    "vöröses rozsdaszín"
+                ],
+                [
+                    "Jet",
+                    "matt fekete"
+                ],
+                [
+                    "Kalcedon",
+                    "tejfehér vagy kékes"
+                ],
+                [
+                    "Krizoberill",
+                    "átlátszó sárgászöld"
+                ],
+                [
+                    "Krizopráz",
+                    "opálos almazöld"
+                ],
+                [
+                    "Nefrit",
+                    "áttetsző sápadt zöld"
+                ],
+                [
+                    "Obszidián",
+                    "csillogó fekete"
+                ],
+                [
+                    "Opál",
+                    "sápadt kék zöld és arany pettyezéssel"
+                ],
+                [
+                    "Peridot",
+                    "áttetsző, sötét olivazöld"
+                ],
+                [
+                    "Szerpentin",
+                    "átlátszó vöröses-sárgás, vörös erezettel"
+                ],
+                [
+                    "Topáz",
+                    "átlátszó, tiszta esetleg pasztellkék"
+                ]
+            ]
+        }
+    ]
+}

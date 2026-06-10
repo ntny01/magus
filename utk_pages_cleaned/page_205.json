@@ -1,0 +1,60 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": true,
+    "section_title": "Hajítófegyverek",
+    "content_blocks": [
+        {
+            "type": "paragraph",
+            "text": "Alabárd (35): A legelterjedtebb és legváltozatosabb formában megjelenő fegyver. Nyele általában 2-4 ynevnyi láb hosszú. Ahány tája csak van Yneven, annyi féle és fajta fejet készítenek. A több száz, esetenként több ezer éves kísérletezés eredményeképpen igen letisztult, célratörő formákat nyertek. Megfigyelhető azonban némi egyezés az alabárdok különböző típusai között. Az alapvető felépítésében mindegyik tartalmaz egy egyenes vagy enyhén görbülő pengeszélt, egy hosszabb-rövidebb egyenes döfőhegyet, valamint egy ütőtüskét a bárdpenge hátoldalán. Hogy azután ezen elemek közül melyik kap nagyobb hangsúlyt, illetve melyiket hanyagolják el, s milyen alakban, variációkban jelenítik meg őket, az adja az egyes fegyverek eredetiségét. Ez a három alapelem látja el egyben az alabárd három alapvető funkcióját – a vágást, a szúrást, illetve a zúzást. A harmadik megsegítésére az ütőtüskét gyakran tompára és súlyosra készítik. Előfordul az is, hogy az ütőtüske vagy a bárdlap csőre hosszabb és erősen hátrahajlik – ez különösen lovasok lerántásánál nagy előny. Mindezen előnyei mellett persze megvan a maga hátránya is, nevezetesen, hogy túlságosan nagy; ez pedig a kezelését, szállítását, forgatását meglehetősen nehézkessé teszi (főleg szűk helyen). Az aprólékosan kimunkált, gyakran díszítésekkel ellátott fej miatt meglehetősen drága fegyver."
+        },
+        {
+            "type": "paragraph",
+            "text": "Lovaskopja (36): Kizárólag öklelésre szolgáló nyeles fegyver. Felépítésében egy túlméretezett, három-négy méter hosszú lándzsára emlékeztet. Általában könnyű vértezetű lovasok vagy gyalogosok ellen használják. Fejlettebb változatanál bőr vagy fa tárcsát húznak rá, ami a kopjás karját és testét védi. A leglényegesebb különbség a nehézlovas kopjához képest, hogy a lovas – ha jobb kezében tartja – a ló jobb oldalán döf vele. A nehézlovas kopját ezzel szemben a ló nyaka mögött keresztben tartják, és a ló bal oldalára döfnek vele."
+        },
+        {
+            "type": "paragraph",
+            "text": "Nehézlovas kopja (37): A könnyűlovas változatot nagyobb, súlyosabb kivitele. Hossz a az öt ynevnyi lábnyit is elérheti, a kézvédő tárcsa pedig szerves része a nyélnek. Jellegzetes lovagi fegyver, a lovas fémvérteken külön kopjatartó kampót – úgynevezett ordót – alakítanak ki a kopja tartásának megkönnyítésére. Az öklelőkopját a lovas jobbjával megmarkolja, s könyökével az oldalához szorítja. Támadáskor kiemelkedik a nyeregből, merev lábbal megtámasztja magát a kengyelben és a nyereg hátsó kápáján, így ér el megfelelően szilárd tartást. A könnyűlovas kopját még valamennyire lehet irányítani menet közben, a nehezet viszont alig. Efféle harcmodor a lovagok és paplovagok körében divik igazán, különösen a Pyarroni Államközösségben és Shadoban."
+        },
+        {
+            "type": "rule",
+            "title": "Lándzsa",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "Pika (39): Északon – főleg Abasziszban és Toronban – kialakult fegyver, a lándzsának egy egészen különleges válfaja. Az a két és fél ynevnyi láb hosszú döfőalkalmatosság félméteres lándzsa. A kétlábnyi nyél végére erősíti a fél lábnyi, szögletes keresztmetszetű, vékony szurony, amit ugyan nem éleznek el, de annál hegyesebbre fennek. A nyárs tövében kis, kerek fémlap található, ami a védekezést, az ellenfél fegyverének megakasztását szolgálja. Elkészítése nagyon egyszerű és olcsó, mindazonáltal hihetetlenül hatékony lovasok ellen, ezért Abasziszban és Toronban a hadsereg nagy részét ilyen fegyverrel látják el. A pika az Északi Szövetség országaiban is ismert, ott azonban kevésbé használatos."
+        },
+        {
+            "type": "rule",
+            "title": "Szigony",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Bola",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "Dobótőr (42): Különlegesen kiképzett tőr, aminek súlyelosztása jó dobóhatóságot tesz lehetővé. Kétélű, keresztvasa kicsi vagy egyáltalán nincs is. Gyakran egyetlen fémdarabból készül, és nem vonják be külön a markolatot."
+        },
+        {
+            "type": "rule",
+            "title": "Dobóháló",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        }
+    ]
+}

@@ -1,0 +1,494 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "null",
+    "is_new_section": true,
+    "section_title": "Pszi diszciplínák",
+    "content_blocks": [
+        {
+            "type": "paragraph",
+            "text": "A Pyarroni Módszer diszciplínái"
+        },
+        {
+            "type": "table",
+            "headers": [
+                "Diszciplína",
+                "Szint",
+                "Típus",
+                "Ψ-pont",
+                "A meditáció ideje:",
+                "Időtartam",
+                "Mágiaellenállás"
+            ],
+            "rows": [
+                [
+                    "Abszolút látás",
+                    "4",
+                    "tudat",
+                    "8",
+                    "1 kör",
+                    "Lásd a leírást!",
+                    "—"
+                ],
+                [
+                    "Csettintés",
+                    "4",
+                    "tudat",
+                    "1",
+                    "1 szegmens",
+                    "egyszeri",
+                    "—"
+                ],
+                [
+                    "Dinamikus Ψ-pajzs",
+                    "3",
+                    "tudat",
+                    "1/E",
+                    "1 kör",
+                    "Lásd a leírást!",
+                    "—"
+                ],
+                [
+                    "Ébredés",
+                    "2",
+                    "test",
+                    "1/E",
+                    "1 kör",
+                    "egyszeri",
+                    "Mentális"
+                ],
+                [
+                    "Emlékfelidézés",
+                    "3",
+                    "tudat",
+                    "1/E",
+                    "1 kör vagy 1 perc",
+                    "1 év vagy 10 perc",
+                    "Mentális"
+                ],
+                [
+                    "Energia felszabadítás",
+                    "3",
+                    "test",
+                    "8",
+                    "1 szegmens",
+                    "egyszeri",
+                    "—"
+                ],
+                [
+                    "Érzékelésítés",
+                    "2",
+                    "test",
+                    "1/E",
+                    "1 kör",
+                    "6 kör",
+                    "Mentális"
+                ],
+                [
+                    "Fájdalomcsillapítás",
+                    "1",
+                    "test",
+                    "1/2 Fp",
+                    "1 kör",
+                    "végleges",
+                    "Mentális"
+                ],
+                [
+                    "Hatodik érzék",
+                    "3",
+                    "tudat",
+                    "3",
+                    "1 kör",
+                    "1 perc",
+                    "—"
+                ],
+                [
+                    "Képességjavítás",
+                    "2",
+                    "test",
+                    "2/1 pont",
+                    "1 kör",
+                    "6 kör",
+                    "Mentális"
+                ],
+                [
+                    "Membrán",
+                    "4",
+                    "tudat",
+                    "10",
+                    "5 perc",
+                    "Lásd a leírást!",
+                    "—"
+                ],
+                [
+                    "Roham",
+                    "3",
+                    "test",
+                    "1/2 TÉ",
+                    "1 szegmens",
+                    "egyszeri",
+                    "—"
+                ],
+                [
+                    "Statikus Ψ-pajzs",
+                    "2",
+                    "tudat",
+                    "10 + 1/E",
+                    "15 perc",
+                    "Lásd a leírást!",
+                    "—"
+                ],
+                [
+                    "Telekinézis",
+                    "4",
+                    "test",
+                    "1/1 font",
+                    "1 szegmens",
+                    "1 kör",
+                    "—"
+                ],
+                [
+                    "Telepátia",
+                    "4",
+                    "tudat",
+                    "Lásd a leírást!",
+                    "1 kör",
+                    "Lásd a leírást!",
+                    "—"
+                ],
+                [
+                    "Testhőmérséklet befoly.",
+                    "2",
+                    "test",
+                    "1/2 fok",
+                    "1 kör",
+                    "1 óra",
+                    "Mentális"
+                ],
+                [
+                    "Testsúlyváltoztatás",
+                    "3",
+                    "test",
+                    "1/3 font",
+                    "1 kör",
+                    "6 kör",
+                    "—"
+                ],
+                [
+                    "Tiszta elme",
+                    "3",
+                    "tudat",
+                    "1/5 MME",
+                    "amíg a litánia tart",
+                    "1 kör",
+                    "—"
+                ],
+                [
+                    "Transz",
+                    "2",
+                    "tudat",
+                    "1",
+                    "5 perc",
+                    "korlátlan",
+                    "—"
+                ],
+                [
+                    "Tudatnyitás",
+                    "1",
+                    "tudat",
+                    "1",
+                    "1 szegmens",
+                    "1 perc",
+                    "—"
+                ],
+                [
+                    "Ψ-lökés",
+                    "3",
+                    "test",
+                    "1/5 font",
+                    "1 szegmens",
+                    "egyszeri",
+                    "—"
+                ],
+                [
+                    "Ψ-ostrom",
+                    "4",
+                    "tudat",
+                    "1/E",
+                    "1 szegmens",
+                    "egyszeri",
+                    "—"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A Godoni Örökség diszciplínái"
+        },
+        {
+            "type": "table",
+            "headers": [
+                "Diszciplína",
+                "Szint",
+                "Típus",
+                "Ψ-pont",
+                "A meditáció ideje:",
+                "Időtartam",
+                "Mágiaellenállás"
+            ],
+            "rows": [
+                [
+                    "Godoni transz",
+                    "3",
+                    "tudat",
+                    "1/E",
+                    "Lásd a leírást!",
+                    "Lásd a leírást!",
+                    "—"
+                ],
+                [
+                    "Felfedés",
+                    "3",
+                    "tudat",
+                    "3/E",
+                    "1 szegmens",
+                    "Lásd a leírást!",
+                    "—"
+                ],
+                [
+                    "Örvény",
+                    "4",
+                    "tudat",
+                    "1/E",
+                    "Lásd a leírást!",
+                    "Lásd a leírást!",
+                    "—"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A Kyr Metódus diszciplínái"
+        },
+        {
+            "type": "table",
+            "headers": [
+                "Diszciplína",
+                "Szint",
+                "Típus",
+                "Ψ-pont",
+                "A meditáció ideje:",
+                "Időtartam",
+                "Mágiaellenállás"
+            ],
+            "rows": [
+                [
+                    "Asztráltest",
+                    "5",
+                    "tudat",
+                    "1/E",
+                    "1 kör",
+                    "egyszeri",
+                    "Asztrál"
+                ],
+                [
+                    "Auraérzékelés",
+                    "5",
+                    "tudat",
+                    "3/E",
+                    "1 szegmens",
+                    "egyszeri",
+                    "Asztrális, Mentális"
+                ],
+                [
+                    "Energiagyűjtés",
+                    "3",
+                    "tudat",
+                    "Lásd a leírást!",
+                    "Lásd a leírást!",
+                    "végleges",
+                    "—"
+                ],
+                [
+                    "Erősített ostrom",
+                    "5",
+                    "tudat",
+                    "1/2 E",
+                    "1 szegmens",
+                    "egyszeri",
+                    "—"
+                ],
+                [
+                    "Láthatatlanság észlelése",
+                    "5",
+                    "tudat",
+                    "5/1 E",
+                    "1 kör",
+                    "6 kör",
+                    "—"
+                ],
+                [
+                    "Mágikus tekintet",
+                    "5",
+                    "tudat",
+                    "4",
+                    "1 szegmens",
+                    "Lásd a leírást!",
+                    "Akaraterőpróba"
+                ],
+                [
+                    "Mentálszem",
+                    "5",
+                    "tudat",
+                    "2/E",
+                    "5 szegmens",
+                    "egyszeri",
+                    "Mentális"
+                ],
+                [
+                    "Pszudó",
+                    "5",
+                    "tudat",
+                    "5",
+                    "1 kör",
+                    "Lásd a leírást!",
+                    "—"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A Slan Út diszciplínái"
+        },
+        {
+            "type": "table",
+            "headers": [
+                "Diszciplína",
+                "Szint",
+                "Típus",
+                "Ψ-pont",
+                "A meditáció ideje:",
+                "Időtartam",
+                "Mágiaellenállás"
+            ],
+            "rows": [
+                [
+                    "Aranyharang",
+                    "5",
+                    "test",
+                    "1/1 SFE",
+                    "1 szegmens",
+                    "1 kör",
+                    "—"
+                ],
+                [
+                    "A Sárkány dühe",
+                    "3",
+                    "test",
+                    "1",
+                    "1 szegmens",
+                    "1 kör",
+                    "—"
+                ],
+                [
+                    "A Sárkány tánca",
+                    "4",
+                    "test",
+                    "2",
+                    "1 szegmens",
+                    "1 kör",
+                    "—"
+                ],
+                [
+                    "A Sárkány ébredése",
+                    "5",
+                    "test",
+                    "3",
+                    "1 szegmens",
+                    "1 kör",
+                    "—"
+                ],
+                [
+                    "Belső idő",
+                    "5",
+                    "test",
+                    "10",
+                    "1 szegmens",
+                    "1 szegmens",
+                    "—"
+                ],
+                [
+                    "Érzékelhetetlenség",
+                    "5",
+                    "test",
+                    "5",
+                    "1 kör",
+                    "6 nap",
+                    "—"
+                ],
+                [
+                    "Halálos ujj",
+                    "4",
+                    "test",
+                    "3/1 Ép",
+                    "1 szegmens",
+                    "1 nap",
+                    "—"
+                ],
+                [
+                    "Jelentéktelenség",
+                    "4",
+                    "test",
+                    "1",
+                    "1 szegmens",
+                    "6 kör",
+                    "—"
+                ],
+                [
+                    "Kiáltás",
+                    "5",
+                    "test",
+                    "5/támadás",
+                    "1 szegmens",
+                    "egyszeri",
+                    "—"
+                ],
+                [
+                    "Kitérés",
+                    "5",
+                    "test",
+                    "3",
+                    "1 szegmens",
+                    "1 kör",
+                    "—"
+                ],
+                [
+                    "Levitáció",
+                    "4",
+                    "test",
+                    "8",
+                    "1 szegmens",
+                    "1 kör",
+                    "—"
+                ],
+                [
+                    "Tetszhalál",
+                    "4",
+                    "test",
+                    "6",
+                    "10 kör",
+                    "1 óra",
+                    "—"
+                ],
+                [
+                    "Zavarás",
+                    "5",
+                    "test",
+                    "5/E",
+                    "1 szegmens",
+                    "Lásd a leírást!",
+                    "Akaraterőpróba"
+                ]
+            ]
+        }
+    ]
+}

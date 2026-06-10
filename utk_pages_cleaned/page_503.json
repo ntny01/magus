@@ -1,0 +1,108 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": null,
+    "is_new_section": false,
+    "section_title": "",
+    "content_blocks": [
+        {
+            "type": "paragraph",
+            "text": "vagy Mentál Testtel – hogy hasson rá a mágia – és el kell vétenie Mágiaellenállását."
+        },
+        {
+            "type": "paragraph",
+            "text": "A bot két egymást követő használata között legalább egy nap kell elteljen. A botba foglalt hatás Időtartama a belefoglalt Időmágiától függ."
+        },
+        {
+            "type": "rule",
+            "title": "Fegyver bot",
+            "text": "Mp: A szükséges Átformázás, Átalakítás vagy Transzmutáció mozaik kívánt E-je, +13 Mp alapszintű Mágikus Aura Varázsjel + 6 Mp / a varázslat E-je, mivel óránként megidézhető a rúnákba zárt hatalom + 0 Mp, mivel varázsszóval kell aktiválni + a kívánt Időmágia).\nÁra: 3 arany"
+        },
+        {
+            "type": "paragraph",
+            "text": "Első ránézésre a majd megidézendő fegyver méretétől függő fémpálca, melyre rúnák egész sorát rótták fel. A megfelelő varázsszó kimondásakor ezen jelek alakítják át a botot a kívánt karddá."
+        },
+        {
+            "type": "paragraph",
+            "text": "Egyes legendák beszámolnak olyan Fegyver botokról is, melyekre nem kardot, hanem bárdot vagy lándzsát formáznak magukból."
+        },
+        {
+            "type": "rule",
+            "title": "Telekinézis botja",
+            "text": "Mp: A szükséges Telekinézis mozaik kívánt E-je, +13 Mp alapszintű Mágikus Aura Varázsjel + 6 Mp / a varázslat E-je, mivel óránként megidézhető a rúnákba zárt hatalom + 0 Mp, mivel varázsszóval kell aktiválni + a kívánt Időmágia).\nÁra: 3 arany"
+        },
+        {
+            "type": "paragraph",
+            "text": "A Telekinézis bottal Elemi Erőt idézhetünk meg, minek segítségével különböző tárgyakat mozgathatunk. A bot hatása mindenben megegyezik a Telekinézis nevű mágikus mozaikéval; kivéve, hogy a hatás a beleplántált Időmágia erejéig tart."
+        },
+        {
+            "type": "rule",
+            "title": "Rúnapajzs",
+            "text": "Mp: Őselemi Erő, Szabad elemi formázású megfelelő E-je: 7 Mp/E +13 Mp alapszintű Mágikus Aura Varázsjel + 24 Mp / a varázslat E-je, mivel folyamatosan megidézhető a pajzsba zárt hatalom + 0 Mp, mivel nem kell aktiválni.\nÁra: 6 arany + a pajzs ára"
+        },
+        {
+            "type": "paragraph",
+            "text": "Azt, aki ilyen pajzsot használ, ellenfelei sokkal nehezebben találják el a harcban, mivel a rúnákkal ékesített pajzsba foglalt Elemi Erő wears felfogja még a legügyesebb támadásokat is. A pajzs mágikus ereje mindig annak engedelmeskedik, aki a kezében tartja."
+        },
+        {
+            "type": "table",
+            "headers": [
+                "Mp",
+                "VÉ"
+            ],
+            "rows": [
+                ["44", "+5"],
+                ["75", "+10"],
+                ["106", "+15"],
+                ["137", "+20"]
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Láthatatlanság köpenye",
+            "text": "Mp: A szükséges Láthatatlanság mozaik kívánt E-je, +13 Mp alapszintű Mágikus Aura Varázsjel + 6 Mp / a varázslat E-je, mivel óránként megidézhető a rúnákba zárt hatalom + 5 Mp érintéssel aktiválható + a kívánt Időmágia.\nÁra: Egy normál köpeny ára + 4 arany"
+        },
+        {
+            "type": "paragraph",
+            "text": "Aki ezt a köpenyt magára ölti, láthatatlanná válik – minden olyan felszerelésével együtt, amely része Személyes Aurájának –, feltéve, hogy súlya nem haladja meg a tárgyba zárt láthatatlanság varázs lehetőségét. A köpeny érintésre, általában egy csat megérintésére aktiválódik és a belefoglalt Időmágiának megfelelő ideig fejti ki hatását."
+        },
+        {
+            "type": "rule",
+            "title": "Ugrás lábbelije",
+            "text": "Mp: Őselemi Erő, Szabad elemi formázású megfelelő E-je: 7 Mp/E +13 Mp alapszintű Mágikus Aura Varázsjel + 24 Mp / a varázslat E-je, mivel folyamatosan megidézhető a csizmába zárt hatalom + 0 Mp, mivel nem kell aktiválni.\nÁra: 2 arany"
+        },
+        {
+            "type": "paragraph",
+            "text": "A lábbeli viselője a varázstárgyba foglalt Őselemi Erő minden 1 E-je után +10%-ot kap az Akrobatika képzettségére, ezáltal megnövekszik nemcsak az ugrások magassága, hanem a maximális hossza is. A csizma viselője a harcrendszernél, illetve az Akrobatika képzettségnél feltüntetett módon növelheti Harcértékeit."
+        },
+        {
+            "type": "paragraph",
+            "text": "Fontos még megjegyeznünk, hogy a varázstárgy által biztosított bónuszokkal a karakter Akrobatika képzettsége meghaladhatja akár az adott személy Tulajdonságai által meghatározott maximális értéket is."
+        },
+        {
+            "type": "rule",
+            "title": "Erő kesztyűje",
+            "text": "Mp: Őselemi Erő, Szabad elemi formázású megfelelő E-je: 7 Mp/E +13 Mp alapszintű Mágikus Aura Varázsjel + 24 Mp / a varázslat E-je, mivel folyamatosan megidézhető a kesztyűbe zárt hatalom + 0 Mp, mivel nem kell aktiválni.\nÁra: 3 arany"
+        },
+        {
+            "type": "paragraph",
+            "text": "Bárki aki e mágikus kesztyűket felhúzza, Ereje megnövekszik annyi ponttal, amennyi a kesztyűbe zárt Őselemi Erő E-je."
+        },
+        {
+            "type": "paragraph",
+            "text": "Ezt jegyzendő meg, hogy az őselemi mágiában 5. fokon járatos karakter a kesztyű által megidézett erőket képes Telekinézishez hasonló módon alkalmazni, E-nként 20 ynevi font súlyt mozgatva, maximálisan futó ember sebességével."
+        },
+        {
+            "type": "paragraph",
+            "text": "Fontos még megjegyeznünk, hogy a varázstárgy segítségével a karakter meghaladhatja a karakteralkotásnál feltüntetett maximális tulajdonságértéket is."
+        },
+        {
+            "type": "rule",
+            "title": "Repülő szőnyeg",
+            "text": "Mp: A Telekinézis varázslat 20 E-s erősítéssel: 20 Mp, +13 Mp alapszintű Mágikus Aura Varázsjel + 3 Mp / a varázslat E-je, mivel naponta egyszer megidézhető a szőnyeg varázsereje + 30 Mp, mivel 2 órán át képes repülni a szőnyeg + 0 Mp, mivel varázsszóval kell aktiválni. Összesen 93 Mp.\nÁra: 8 arany"
+        },
+        {
+            "type": "paragraph",
+            "text": "Dzsad varázslók által közkedvelt tárgy, képes a levegőbe emelni bárkit (maximum 100 Ynevi fontot), aki ráül és kimondja a varázsszót. A szőnyeg egyszerű összpontosítással irányítható, és legfeljebb 2 órán át képes a levegőben maradni. Természetesen a megfelelő varázslatok erősítésével mind a repülés hossza, mind pedig a maximálisan a szőnyeg által hordozható teher mértéke kitolható."
+        }
+    ]
+}

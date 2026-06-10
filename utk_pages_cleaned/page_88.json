@@ -1,0 +1,118 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": false,
+    "section_title": "",
+    "content_blocks": [
+        {
+            "type": "paragraph",
+            "text": "emberek, erkölcsi felfogásuk azonban oly riasztóan idegen, hogy teljes joggal nevezhetjük őket lelkük mélyéig romlottnak. Ők persze nem romlottak, sem gonosznak nem tartják magukat, csak éppen kiemelkedni igyekeznek a szürke tömegből – méghozzá istenük tanítása szerint, azaz minden lehetséges módszerrel. Aki ezért visszaborzad tőlük, az – vélik ők – ékes jelét adja alsóbbrendűségének, és méltatlan rá, hogy törődjön vele. A legtöbb, amit az élet adhat nekik, hogy pusztulásával lépcsőfokként szolgálhat egy nálánál magasabbra hivatottnak."
+        },
+        {
+            "type": "paragraph",
+            "text": "Az embernépek által tisztelt Ranagol a kráni eszméktől eltérően kizárólag isteni lény, minden más égi hatalmasság."
+        },
+        {
+            "type": "paragraph",
+            "text": "Hittételeik szerint az érzelmek felesleges, gyarló emberi koloncok, súlyuk minduntalan igyekszik a hús börtönében marasztalni elménket, akadályozva a szellemi kiteljesedésben. Ha sikerül megszabadulnunk tőlük, magasabb rendűvé válunk embertársainknál. A kiemelkedett személy pedig az alsóbbrendű lényekkel szemben már bizonyosságot adott róla, hogy méltó az életre, s szabadon bánhat azokkal, kik életrevalóságukról még nem tettek tanúbizonyságot. Ha mégis vétene az isteni törvények ellen, kínnal kell fizetnie tetteiért, de nem feltétlenül a sajátjával: a célnak tökéletesen megfelel alsóbbrendű lény szenvedése is."
+        },
+        {
+            "type": "paragraph",
+            "text": "És ha már önmagukkal is ilyen kíméletlenek, hát másokkal százszorta inkább: mosolyogva és könnyű kézzel ölnek, örömüket lelik a kínzásban és a züllött érzékiségben, merő szórakozásból használják a legförtelmesebb Feketemágiát. Elvégre minél alaposabban képesek megtörni és megalázni embertársaikat, annál szembetűnőbben bizonyítják saját magasabbrendűségüket."
+        },
+        {
+            "type": "paragraph",
+            "text": "Jellegzetes viseletük nincs, ám legtöbbjük kedveli a fekete bőrruhát és a selyemköpenyt, odahaza Gorvikban pedig tarka, hímzett kendőkkel egészítik ki az öltözéküket. A kendők színéből, redőzéséből, elhelyezéséből nemcsak egymás szűkebb családfáját tudják kiolvasni, hanem a másik pap rangját és nevezetesebb tetteit is. Szintén gorviki szokás, hogy kosfejet tetováltatnak a homlokukra. Ha valamely küldetés különhonba szólítja őket, természetesen gondjuk van rá, hogy elleplezzék ezeket az áruló jeleket. Az alsóbbrendű népségben való elvegyülést Ranagoltól rendelt próbatételnek tekintik, nem kockáztatják fölösleges feltűnéssel az életüket."
+        },
+        {
+            "type": "paragraph",
+            "text": "Mint a fentiekből is kitűnik, rendkívül nagyra értékelik a könnyed eleganciát, ezért általában páncél nélkül járnak és nehezvérteket a legszorultabb helyzetben sem öltenek. Szent jelképük a kosfej, ezt vagy nyakukba függesztik, vagy a bőrükre tetoválják, hogy semmiféleképpen se veszíthessék el – ámbátor, ha egy rivális paptársuk kerül a kezükre, a nyúzókésük segítségével örömest megmutatják neki, hogy ez a módszer sem tökéletes..."
+        },
+        {
+            "type": "paragraph",
+            "text": "Szentélyeiket, templomaikat hatalmas, égbenyúló tornyok és nyitott kupolák alkotják, fennén hirdetve az eszmét, miszerint senkit sem tűrnek el maguk felett Ranagolon kívül. A rejtve működő gyülekezetek is igyekeznek ezen jelképek fontosságához illő módon kialakítani akár földalatti szentélyeiket is; ha másképp nem megy, akárcsak jelképesen is, de alkalmazva a szimbólumokat."
+        },
+        {
+            "type": "paragraph",
+            "text": "Fontos megjegyezni, hogy a gonoszság nem egyenlő a nyakló nélküli vérengzéssel. Az öncélú gyilkolás, az ostoba erő és hatalomfitogtatás éppannyira nem jellemző rájuk, mint a kicsinyes középszerűség. Ha egy Ranagol-pap a nagyvilágot járja, mindig körültekintően viselkedik, ha a nyomában mindenhol gyilkolások és mészárlás járna, könnyedén magára vonhatná a helyi hatalmasságok és kiváltképp a pyarroni vagy shadoni inkvizíció figyelmét, és az efféle ostoba lelepleződés egy kiemelkedett Ranagol szemében a gyengeség legnyilvánvalóbb jele, s mint ilyen, az elkövethető legnagyobb vétségek egyike."
+        },
+        {
+            "type": "rule",
+            "text": "",
+            "title": "Ranagol-pap különleges előnyei és hátrányai"
+        },
+        {
+            "type": "rule",
+            "text": "Ranagol kiválasztottjainak a Halál, a Lélek és a Természet szférákat teszi elérhetővé. Ezenkívül a Kosfejes Úr néhány egyedi fohásszal is felruházza papjait, amelyeket egyetlen más istenség hívei sem ismernek. Ezek jórészt mások megtörésére, demoralizálására, szolgává alázására valók, híven tükrözve a Gorvikban vallott felsőbbrendűségi hitelveket.",
+            "title": "Ranagol-pap szférái és fohászai"
+        },
+        {
+            "type": "rule",
+            "text": "",
+            "title": "Ranagol-pap induló képzettségei"
+        },
+        {
+            "type": "table",
+            "headers": [
+                "Képzettség",
+                "Fok"
+            ],
+            "rows": [
+                [
+                    "Ősi nyelv (aquir)",
+                    "2. fok"
+                ],
+                [
+                    "Pszi (pyarroni)",
+                    "3. fok"
+                ],
+                [
+                    "Kínzás",
+                    "2. fok"
+                ],
+                [
+                    "Élettan",
+                    "2. fok"
+                ],
+                [
+                    "Méregkeverés/semlegesítés",
+                    "2. fok"
+                ],
+                [
+                    "Alkímia",
+                    "1. fok"
+                ],
+                [
+                    "Herbalizmus",
+                    "1. fok"
+                ]
+            ]
+        },
+        {
+            "type": "rule",
+            "text": "A Ranagol-pap képzettségei, melyeket rendjétől az Oktatás képzettség 4. foka által nyújtott előnnyel tanulhat: Alkímia, Kínzás, Művészetek, Ősi nyelv (aquir).",
+            "title": "Ranagol-pap tanulható képzettségei"
+        },
+        {
+            "type": "rule",
+            "text": "",
+            "title": "Arel-pap"
+        },
+        {
+            "type": "flavor_text",
+            "text": "Szó a könyvben, rács a házon, Vad ketrecben, fejsze fákon, Szenny a vérben, zár határon, Tör sötétben, ember láncon."
+        },
+        {
+            "type": "flavor_text",
+            "text": "Timul cwa Anrem: Türni nem való dolgok balladája (Részlet)"
+        },
+        {
+            "type": "paragraph",
+            "text": "A Sólyomasszony hívei talán a legnagyobb zsiványok és szélhámosok egész Yneven. Mindenütt a felfordulást, a zűrzavart keresik, szívesen kötözködnek és elfogadnak bármiféle kihívást. Javukra írandó, hogy a gyengéket, az elesetteket nemhogy bántanák, de mindenkor megvédelmezik – ami gyakorta bajba sodorja őket. Még hitük esküdt ellenségeinek szorult helyzetével sem élnek vissza soha: az ilyen győzelmet méltatlannak vélik magukhoz. A megoldásra váró feladat annál érdekesebb számukra, minél veszedelmesebb és kockázatosabb. Nem csoda hát, hogy leginkább esztelen vakmerőségükről híresültek el, mely esetekben már-már az öngyilkosság határát súrolja."
+        },
+        {
+            "type": "paragraph",
+            "text": "Nem telepednek meg sehol, egész életüket végigcsavarogják, folyton új kalandokat keresnek. Megesik, hogy lopnak, csalnak, szélhámoskodnak – hisz egyéb megélhetésük nemigen akad –, előszeretettel kísértik meg a sorsot és mindannyian"
+        }
+    ]
+}

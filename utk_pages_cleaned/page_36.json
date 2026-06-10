@@ -1,0 +1,381 @@
+{
+    "is_new_chapter": true,
+    "chapter_title": "Klánok, rendek, iskolák",
+    "is_new_section": false,
+    "section_title": null,
+    "content_blocks": [
+        {
+            "type": "paragraph",
+            "text": "Minden induló karakter kezdetben csakis egyetlen klánt, rendet vagy iskolát választhat. A későbbiekben, ahogy a való világban is, a természetesen önálló ismereteket szerezhet, s ha sikerül megfelelő engedélyeket és támogatást szereznie az egyes iskolák vezetőitől, más szervezetek tagjává is válhat. Ekkor elsajátítva – természetesen, már mint az iskola tagja, azaz élvezve az oktatás nyújtotta előnyöket, illetve viselve a szervezetre jellemző megkötéseket, hátrányokat – az adott klán, rend vagy iskola oktatta szükséges képzettséget, az adott iskola teljes jogú tagjává válhat. Tehát a Vallásismeret képzettség 3. fokának elsajátításával, ha a karakter rendelkezik a Kegyelt Háttérrel, akkor teljes jogú pappá válik, Mágikus fogékonyság és Tapasztalati mágia (boszorkány) 3. fok esetén igazi boszorkánnyá stb."
+        },
+        {
+            "type": "paragraph",
+            "text": "Itt jegyzendő meg, hogy a klánok, rendek, iskolák nyújtotta induló képzettségekhez nem szükséges a karakternek rendelkeznie a szükséges Tulajdonságkövetelményekkel, de a továbbiakban minden fejlődés alkalmával kötelező érvényűek számára a képzettségek tanulására vonatkozó szabályok."
+        },
+        {
+            "type": "table",
+            "headers": [
+                "Kategória",
+                "Pontérték",
+                "Név"
+            ],
+            "rows": [
+                [
+                    "Harcos iskolák",
+                    "5 pont",
+                    "Amazon"
+                ],
+                [
+                    "Harcos iskolák",
+                    "5 pont",
+                    "Barbár"
+                ],
+                [
+                    "Harcos iskolák",
+                    "5 pont",
+                    "Erigowi számszeríjász"
+                ],
+                [
+                    "Harcos iskolák",
+                    "5 pont",
+                    "Gorviki siedon"
+                ],
+                [
+                    "Harcos iskolák",
+                    "5 pont",
+                    "Predoci vértes"
+                ]
+            ]
+        },
+        {
+            "type": "table",
+            "headers": [
+                "Kategória",
+                "Pontérték",
+                "Név"
+            ],
+            "rows": [
+                [
+                    "Lovagrendek",
+                    "6 pont",
+                    "Feketerendek"
+                ],
+                [
+                    "Lovagrendek",
+                    "6 pont",
+                    "Marico con Rabóra"
+                ],
+                [
+                    "Lovagrendek",
+                    "6 pont",
+                    "Isten Kardja lovagrend"
+                ],
+                [
+                    "Lovagrendek",
+                    "6 pont",
+                    "Erigowi Krad lovagrend"
+                ]
+            ]
+        },
+        {
+            "type": "table",
+            "headers": [
+                "Kategória",
+                "Pontérték",
+                "Név"
+            ],
+            "rows": [
+                [
+                    "Fejvadászklánok",
+                    "7 pont",
+                    "Gorviki Vértestvériség"
+                ],
+                [
+                    "Fejvadászklánok",
+                    "7 pont",
+                    "Anat-Akhan"
+                ],
+                [
+                    "Fejvadászklánok",
+                    "7 pont",
+                    "Toroni Ikrek"
+                ],
+                [
+                    "Fejvadászklánok",
+                    "7 pont",
+                    "Embervadászok"
+                ]
+            ]
+        },
+        {
+            "type": "table",
+            "headers": [
+                "Kategória",
+                "Pontérték",
+                "Név"
+            ],
+            "rows": [
+                [
+                    "Tolvaj klánok",
+                    "6 pont",
+                    "Kobrák"
+                ],
+                [
+                    "Tolvaj klánok",
+                    "6 pont",
+                    "Talavrai Csodaművesek"
+                ],
+                [
+                    "Tolvaj klánok",
+                    "6 pont",
+                    "Szürkecsuklyások"
+                ]
+            ]
+        },
+        {
+            "type": "table",
+            "headers": [
+                "Kategória",
+                "Pontérték",
+                "Név"
+            ],
+            "rows": [
+                [
+                    "Bárdszervezetek",
+                    "6 pont",
+                    "Aszisz énekmondó"
+                ],
+                [
+                    "Bárdszervezetek",
+                    "6 pont",
+                    "Lombhullás Árvái"
+                ],
+                [
+                    "Bárdszervezetek",
+                    "6 pont",
+                    "Vándorló dalnok"
+                ],
+                [
+                    "Bárdszervezetek",
+                    "6 pont",
+                    "Sötét bárd"
+                ]
+            ]
+        },
+        {
+            "type": "table",
+            "headers": [
+                "Kategória",
+                "Pontérték",
+                "Név"
+            ],
+            "rows": [
+                [
+                    "Harcművész iskolák",
+                    "10 pont",
+                    ""
+                ]
+            ]
+        },
+        {
+            "type": "table",
+            "headers": [
+                "Kategória",
+                "Pontérték",
+                "Név"
+            ],
+            "rows": [
+                [
+                    "Papi rendek",
+                    "7 pont",
+                    "Domvik-pap"
+                ],
+                [
+                    "Papi rendek",
+                    "7 pont",
+                    "Ranagol-pap"
+                ],
+                [
+                    "Papi rendek",
+                    "7 pont",
+                    "Arel-pap"
+                ],
+                [
+                    "Papi rendek",
+                    "7 pont",
+                    "Kyel-pap"
+                ],
+                [
+                    "Papi rendek",
+                    "7 pont",
+                    "Sogron-pap"
+                ],
+                [
+                    "Papi rendek",
+                    "7 pont",
+                    "Tharr-pap"
+                ]
+            ]
+        },
+        {
+            "type": "table",
+            "headers": [
+                "Kategória",
+                "Pontérték",
+                "Név"
+            ],
+            "rows": [
+                [
+                    "Paplovag rendek",
+                    "6 pont",
+                    "Darton-paplovag (Maremita)"
+                ],
+                [
+                    "Paplovag rendek",
+                    "6 pont",
+                    "Domvik-paplovag (Isten Kardja)"
+                ],
+                [
+                    "Paplovag rendek",
+                    "6 pont",
+                    "Dreina-paplovag (Oroszlánszív)"
+                ],
+                [
+                    "Paplovag rendek",
+                    "6 pont",
+                    "Krad-paplovag (Aranykör lovag)"
+                ],
+                [
+                    "Paplovag rendek",
+                    "6 pont",
+                    "Ranagol-paplovag"
+                ],
+                [
+                    "Paplovag rendek",
+                    "6 pont",
+                    "Sogron-paplovag (Főnix)"
+                ],
+                [
+                    "Paplovag rendek",
+                    "6 pont",
+                    "Uwel-paplovag (Bosszúangyal)"
+                ]
+            ]
+        },
+        {
+            "type": "table",
+            "headers": [
+                "Kategória",
+                "Pontérték",
+                "Név"
+            ],
+            "rows": [
+                [
+                    "Boszorkányszekták",
+                    "5 pont",
+                    "Liviniai Gyülekezet"
+                ],
+                [
+                    "Boszorkányszekták",
+                    "5 pont",
+                    "Maida Saluquas"
+                ],
+                [
+                    "Boszorkányszekták",
+                    "5 pont",
+                    "Stella Prosylens"
+                ],
+                [
+                    "Boszorkányszekták",
+                    "5 pont",
+                    "Alidaxi Boszorkányrend"
+                ],
+                [
+                    "Boszorkányszekták",
+                    "5 pont",
+                    "Ezer Fátyol Nővérei"
+                ]
+            ]
+        },
+        {
+            "type": "table",
+            "headers": [
+                "Kategória",
+                "Pontérték",
+                "Név"
+            ],
+            "rows": [
+                [
+                    "Boszorkánymesteri céhek",
+                    "6 pont",
+                    "Aszisz Vérkelyhesek"
+                ],
+                [
+                    "Boszorkánymesteri céhek",
+                    "6 pont",
+                    "Ascens Morga"
+                ],
+                [
+                    "Boszorkánymesteri céhek",
+                    "6 pont",
+                    "Hergoli Villámmesterek"
+                ]
+            ]
+        },
+        {
+            "type": "table",
+            "headers": [
+                "Kategória",
+                "Pontérték",
+                "Név"
+            ],
+            "rows": [
+                [
+                    "Tűzvarázsló rendek",
+                    "6 pont",
+                    "Tűz Táplálói"
+                ],
+                [
+                    "Tűzvarázsló rendek",
+                    "6 pont",
+                    "Tűz Hordozói"
+                ],
+                [
+                    "Tűzvarázsló rendek",
+                    "6 pont",
+                    "Tűz Harcosai"
+                ],
+                [
+                    "Tűzvarázsló rendek",
+                    "6 pont",
+                    "Aschaon Tűzmesterei"
+                ]
+            ]
+        },
+        {
+            "type": "table",
+            "headers": [
+                "Kategória",
+                "Pontérték",
+                "Név"
+            ],
+            "rows": [
+                [
+                    "Varázslórendek",
+                    "10 pont",
+                    "Lar-Dor"
+                ],
+                [
+                    "Varázslórendek",
+                    "10 pont",
+                    "Pyyarroni Varázslórend"
+                ],
+                [
+                    "Varázslórendek",
+                    "10 pont",
+                    "Doran"
+                ]
+            ]
+        }
+    ]
+}

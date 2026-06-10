@@ -1,0 +1,34 @@
+{
+    "is_new_chapter": true,
+    "chapter_title": "Betegségek és hatásaik",
+    "is_new_section": true,
+    "section_title": "Általános szabályok",
+    "content_blocks": [
+        {
+            "type": "rule",
+            "title": "Betegségek hatása",
+            "headers": [
+                "Feltétel",
+                "Hatás"
+            ],
+            "rows": [
+                [
+                    "A betegség nem éri el a Válság stádiumot és immunrendszer nem sérült",
+                    "Gyors gyógyulás, utóhatás nélkül (1 perc)"
+                ],
+                [
+                    "A betegség eléri a Válságos állapotot és az immunrendszer sérült",
+                    "1k6 óra bénulás"
+                ],
+                [
+                    "A betegség eléri a Válságos szintet",
+                    "Szívmegállás, eszméletvesztés (1 kör múlva), halál 1 perc múlva, ha nem kezelik Gyógyítással"
+                ]
+            ]
+        },
+        {
+            "type": "flavor_text",
+            "text": "A kérdéses időtartam alatt azonban az áldozat a földre zuhanva vonaglik, arcát hideg verejték veri ki, ajkáról nyál csorog és artikulálatlanul nyögdécsel, tagjain görcsös rángások futnak végig. Semmilyen fizikai cselekvésre vagy varázslásra nem képes, de pszit használhat."
+        }
+    ]
+}

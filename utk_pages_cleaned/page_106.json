@@ -1,0 +1,178 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": false,
+    "section_title": "",
+    "content_blocks": [
+        {
+            "type": "flavor_text",
+            "text": "...Hella Riquill elmosolyodott. Uszályos, fekete ruhát viselt, vörös haját baloldalt nefritköves csat fogta össze. Két kezén jó féltucat gyűrű – eleven fénnyel szikrázott valamennyi. – Nem mindennapi ember vagy – mondta. – Más körülmények közt sok örömünk telne egymásban, ezt biztosra veszem. Sajnálom, hogy épp most érkeztél. Amibe belefogtunk, túlságosan fontos ahhoz, hogy mégsem megzavarhassd... – Félrebillentette szép menyétfejét. – Engedd le a fegyvert! – suttogta. – Hisz nem akarhatsz megölni egy védtelen nőt! Gorduint mintha folyvást vastagodó jégréteg választotta volna el a valóságtól. A zsibbadás ágyékába fészkelte magát, kegyetlenül incselkedett vele, azután megindult felfelé, hogy belefojtsa a szuszt. Hisz nem akarhatsz megölni egy védtelen nőt! Érezte, a szívverése menten kihagy, kétségbeesett erőfeszítéssel rántott egyet a szürke zsempart a zölddel összekötő fényfonálon... Halványan érzékelte a mozgást jobb kéz felől: tulajdon köpenye sötétlett ott, alatta pedig... – Tier! A világ fordult egyet vele. Az illatokat, ízeket orkán erejű szél söpörte el; a boszorkány összerezzenett, figyelme a pillanat egy történésére Eriel felé fordult, ám a bárd számára ez a csekély haladék is elegendőnek bizonyult: meghúzta a ravaszt."
+        },
+        {
+            "type": "flavor_text",
+            "text": "Wayne Chapman: Halál havában"
+        },
+        {
+            "type": "paragraph",
+            "text": "A boszorkányok legtöbbje csak felhasználója az ősi, mágikus tanoknak. Tudományuk évezredek tapasztalatán alapul, mégsem tér el lényegesen az ősi formuláktól. Számukra a mágia nem a tökéletesedés útja, hanem a hatalom eszköze. A mágiát okkult művészetként, szemlélő varázstudó kevés akad soraikban. A boszorkányok nem igyekeznek megérteni a mágia törvényeit – ők a gyakorlat, az alkalmazott mágia hívei. A törvényeknek nem szerkezetét, összefüggéseit, hanem alkalmasint kiskapuit keresik."
+        },
+        {
+            "type": "paragraph",
+            "text": "A boszorkány karaktert csakis női játékosoknak ajánljuk elkerülendő a kellemetlen, kínos szituációkat. Közülük is leginkább azoknak, akik már valamiféle rálátással bírnak Ynev világára, mágiarendszerére, s most valami olyasfélét szeretnének kipróbálni, mely adott esetben többet, hangulatosabbat nyújthat számukra. A boszorkánnyal való játék igen élvezetes, azonban szem előtt kell mindenféleképpen tartani: a boszorkány nem csatamágus, ereje, hatalma az őt megszemélyesítő hölgy fantáziájában, képzelteiben rejtőzik."
+        },
+        {
+            "type": "rule",
+            "title": "Harcérték",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "A boszorkányok kizárólag mágikus tudományukra támaszkodnak, ha baj éri őket. A fegyverforgatáshoz, a harchoz alig-alig értenek. Bár, mint minden nő, ők is tartogatnak meglepetéseket. HM-jeiket szintenként ritkán növelik 3 pontnál többel."
+        },
+        {
+            "type": "rule",
+            "title": "Életerő és Fájdalomtűrés",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "A boszorkányok fájdalomtűrés tekintetében sem állnak valami fényesen. Életmódjuk megköveteli, hogy a mágia használatának érdekében nap mint nap sanyargassák testüket. A tisztán fizikai fájdalom számukra, emiatt rosszul is tűrik. Ritkán áldoznak KAP-jaikból Fp-ik számának növelésére, ezért általában 3 Fp-vel gyarapszanak szintlépésenként."
+        },
+        {
+            "type": "rule",
+            "title": "Képzettségek",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "A boszorkányok mágiájuk mellett általában magas műveltségükre és hihetetlen alkalmazkodó képességükre támaszkodnak, legfőképpen a Misztikus és a Világi képzettségek terén. A nem is szívesen, de hatékonyan és gyorsan tanulnak. Szintenként kivételes esetben növelik csak 15 pontnál kevesebb Kp-ik számát."
+        },
+        {
+            "type": "rule",
+            "title": "Varázserő",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "A boszorkányok varázserejüket önnön életerejükből, vagy épp szexuális bűverejük útján nyerik. Sokan és sokfélét állítanak róluk, de egy bizonyos: praktikáik egész tárházával tartják kordában Ynev férfinépét. Mindehhez szintenként általában 8 Mp-tal növekvő varázserejük szolgálja a szükséges hatalmat."
+        },
+        {
+            "type": "rule",
+            "title": "A boszorkány induló képzettségei",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "A boszorkányok számtalan képzettséget kénytelenek elsajátítani, ahhoz, hogy felülkerekedhessenek a férfiak uralta világon. Szinte nincs olyan képzettség, melynek elsajátításától visszariadnának, főleg, ha hatalmuk, mágiájuk támogatásáról van szó. Már első szinten is igen sok és szerteágazó ismerettel bírnak, legfőképpen a Misztikus és a Világi képzettségek terén."
+        },
+        {
+            "type": "table",
+            "title": "1. Tapasztalati szinten",
+            "headers": [
+                "Képzettségek",
+                "Fok"
+            ],
+            "rows": [
+                [
+                    "Lélektan",
+                    "2. fok"
+                ],
+                [
+                    "Művészetek",
+                    "2. fok"
+                ],
+                [
+                    "Nyelvtudás",
+                    "3. fok"
+                ],
+                [
+                    "Szexuális kultúra",
+                    "2. fok"
+                ],
+                [
+                    "Udvari etikett",
+                    "2. fok"
+                ],
+                [
+                    "Alkímia",
+                    "2. fok"
+                ],
+                [
+                    "Herbalizmus",
+                    "3. fok"
+                ],
+                [
+                    "Írás/olvasás",
+                    "2. fok"
+                ],
+                [
+                    "Legendaismeret",
+                    "2. fok"
+                ],
+                [
+                    "Pszi (pyarroni)",
+                    "2. fok"
+                ],
+                [
+                    "Tapasztalati mágia (boszorkány)",
+                    "3. fok"
+                ]
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Oktatott képzettségek",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "A boszorkány rendje által oktatott képzettségei, melyeket az Oktatás képzettség 4. foka által nyújtott bónuszokkal tanulhat:"
+        },
+        {
+            "type": "rule",
+            "title": "Oktatott képzettségek listája",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "Alkímia, Állatismeret, Ékesszólás, Élettan, Értékbecslés, Fegyverhasználat, Lélektan, Heraldika, Herbalizmus, Időmítés, Időjóslás, Írás/olvasás, Kultúra, Legendaismeret, Méregkeverés/semlegesítés, Művészetek, Nyelvtudás, Orvoslás, Pszi (pyarroni), Szakma, Számtan/mértan, Szexuális kultúra, Tapasztalati mágia (boszorkány), Történelem, Udvari etikett, Vallásismeret (Kiemelt helyeken: Drágakőmágia Ősi nyelv, Rúnamágia, Színészet)."
+        },
+        {
+            "type": "rule",
+            "title": "A boszorkány fegyverraktára",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "A boszorkányok általában törrel harcolnak vagy valamely könnyedebb, de annál egzotikusabb fegyverrel, melynek pengéjét gyakran mérgekkel teszik veszedelmesebbé."
+        },
+        {
+            "type": "rule",
+            "title": "A boszorkányok különleges előnyei és hátrányai",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "I. A boszorkány karaktert indító játékos ingyenesen megkapja a Mágikus fogékonyság és a Pszi érzékenység Hátteret."
+        },
+        {
+            "type": "rule",
+            "title": "A boszorkányok különleges előnyei és hátrányai",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "II. A karakter különleges képessége a Boszorkánymágia használata, melyet az elsajátított Tapasztalati mágia képzettség 3. fokának ismerete tesz lehetővé."
+        }
+    ]
+}

@@ -1,0 +1,89 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": false,
+    "section_title": "",
+    "content_blocks": [
+        {
+            "type": "rule",
+            "title": "Vaskígyó",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "title": "Két-, illetve háromrészes bot",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "title": "Tigrismarkor",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "Mielőtt részletesebben szemügyre vennénk a slanek e specializált csoportját, mindenféleképpen szót kell ejtenünk Tiadlan, ezen hármas kormányzás alatt álló ország berendezkedéséről, hogy megértsük e harcos nemesek filozófiáját.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "Az ország három legfőbb hatalmasságot ismer el maga felett a királyt, a duint és a dorchát. A négy nagy társadalmi kaszt közül a kard- és harcművész iskolák növendékei ugyan elméletileg a dorcha fennhatósága alá tartoznának, a kardművészek helyzete azonban kettős, mivel legtöbbjük családja kiterjedt földbirtokokkal is rendelkezik, s emiatt a király is bírja hűségszavukat, mely ezen kardforgatók számára többet ér bármilyen írott papírosnál. Ez a kettősség, a nem ritkán eltérő érdekek közti vívódás volt az az erő, mely életre hívta, s azóta is létjogosultságot ad a kardművészek erkölcsi kódexének a Lashainak, mely egyszerű, bármely helyzetre alkalmazható szabályaival megóvja a politikai párviadaloktól irtózó kardművészeket.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "flavor_text",
+            "text": "A becsület szolgálat, A becsület élet, A becsület minden. Szolgáld, ki szolgálja az országot.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "A Lashai szavait értelmezve kiderül, hogy az alapvető mozgatórugója a kardművészeknek övék védelme és istápolása; a hagyományok és a törvények betartatása. A nép vezetése a példamutatás, ha kell, az erő által. A fent említett célok elérése érdekében más országok nemeseitől eltérően a tiadlani kardművészek nem csak fegyverforgatók, de igen tanult gondolkodók, filozófusok, tudós főik.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "A politikai és erkölcsi kérdéseket is vívótudományuk tisztaságához és egyszerűségéhez hasonlóan kezelik a kódex szavait értelmezve. A király és a dorcha egyaránt az ország szolgálói, így azt az urat követik, ki ellenfeleitől megóvja, s egységben megőrzi területét. Ennek érdekében ugyan sohasem mennek el odáig, hogy valótlanat állítsanak, azonban az nem idegen tőlük, hogy a rendelkezésére álló tényeket és információkat a saját céljainak megfelelően adják elő, ha kell szó szerint ragaszkodva a kimondott vagy leírt szavakhoz, ígéretekhez.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "Természetesen ennek ellenére nem állíthatjuk, hogy minden kardművész gazdag, birtokos ember, hiszen a harmadik kaszt, a kereskedők térnyerésének és politikai erejének megnövekedésével egyre kevésbé jelent gazdasági hatalmat a földbirtok, így egyre több a földnélküli nemes. Mindezek ellenére a kardművészek képviselik a harcművész iskolák mellett a legnagyobb világi hatalmat Tiadlanban.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "A kardművészek fegyverei a Slan csatakard, a Slan kard és a Slan tőr, melyek hosszú évszázadok munkájával és az ősök tradícióival tökélyre fejlesztett kovácsolási eljárással készülnek, anyaguk és formájuk szinte tökéletes, talán csak az ó-idők varázsos pengéi vetekedhetnek velük. A hármas hatalmi berendezkedésű országban nem lévén hagyománya a lovagi harcmodornak, a „nehéz” és a könnyűlovasságot is a dorcha kardművészei és a király kardmesterei alkotják (utóbbiak a harcosok közé sorolandók). A Kardművészek a kard útját járva igyekeznek elérni a tökéletesedést, ezen fémdarabok szellemük horgonyai az árnyékvilágban és még ennél is többek. Családjaik, hatalmuk, az évszázados, évezredes tradícióik fémből megformált eszét a kardok, melyek mereven dacolnak az idők viharával. A kardművészek vallják, hogy a vívás nem tudomány, művészet. Szinte sosem cseleznek fegyvereikkel, a tökéletességben keresik a győzelmet. Egyetlen apró csuklómozdulat begyakorlására képesek éveket feláldozni életükből, csakhogy egyetlen kanzan erejéig elmondhassák, elérték a tökéletességet. A kardművészek, ellentétben a harcművészekkel csak a legritkább esetben tanulják tudományukat iskolákban: a kardművészetét a magányos mesterek oktatják, egyszerre legfeljebb három, négy tanítványnak. Az azonos mesternél tanult Slanek éppúgy összetartanak, mint rendekbe tömörült társaik és a Dorcha tiszteletében sem maradnak el tőlük.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "A Slan kard enyhén görbe, keskeny pengéjű, kétkezes markolatú fegyver, keresztvasa a korong alakú. Általában magában forgatják, ám olykor előfordul, hogy egy valamivel rövidebb, balkezes pengével egészítik ki harcmodorukat.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "A tiadlani nemesség elitjéhez tartozó főnemesek körében dívó irányzat, mely leginkább a szellem tökéletesedésén keresztül kívánja elérni céljait. A csoportba tartozó mesterek és tanítványaik egyaránt vallják, hogy az égi rendnek és harmóniának kell tükröződnie a világ térségein is, mert ez a béke és a fejlődés útja. Emiatt igen komoly hangsúlyt fektetnek a tudományok és a Szociális képzettségek megismerésére, tanulmányozására. Az irányzat követőinek soraiból kerülnek ki az ország jelesebb filozófusai és hadvezérei egyaránt, s leggyakrabban ők kísérik tanácsadóként az ország követeit is, ha útjuk távoli tájakra vezet.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        }
+    ]
+}

@@ -1,0 +1,64 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": true,
+    "section_title": "Kyel egyedi rituáléi",
+    "content_blocks": [
+        {
+            "type": "paragraph",
+            "text": "koncentrálnia kell rá. Az ily módon bevésett információk véglegesen megmaradnak, csakis valamely Mentális operáció tüntetheti el őket."
+        },
+        {
+            "type": "rule",
+            "title": "Utazás",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Útkeresés",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Kizökkent idő",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Kyel ökle",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Sors",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "Ranagol egyedi litániái"
+        },
+        {
+            "type": "rule",
+            "title": "A Kos hite",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        }
+    ]
+}

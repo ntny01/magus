@@ -1,0 +1,64 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": true,
+    "section_title": "Az Ezer Fátyol Boszorkányrend tagjainak különleges előnyei és hátrányai",
+    "content_blocks": [
+        {
+            "type": "paragraph",
+            "text": "repet töltöttek be nemzettségeik életében. Az nem bizonyos azonban, – s egyes vérmesebb helyeken az efféle feltételezés is karóba húzás érdemlő rémségnek számít –, hogy kapcsolat áll-e fent Tallaren, az elf Kék Hadúr álomtáncosai és a dzsadok varázstudói között az emberek mágiájának fejlődését tekintve. Lar-Dor bölcsei arra a véleményre hajlanak, hogy a törzsek boszorkányai az álomtáncosoktól lesték el különleges varázstáncuk alapjait, mivel mindkét irányzat ereje a térben felrajzolt, a tánc során megjelenített rúnák delejes hatalmában rejlik. Mivel így nem csak megragadják, de bezárók közé zárva újra is formázzák a rúna vonalai által körbekerített szövedékét. A szekta ezen misztikus táncmágiáról kapta nevét is.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "A rend tagja bármely, a misztikus hatalmak iránt fogékony leánygyermek lehet, akire időben rátalálnak a rend tagjai, még nővé serdülése előtt. Az ilyen leánygyermekeket nem ritkán a ház urának tudta nélkül, de általában a gyermek anyjának segítségével a szolgálók közt felvett nevelőnő tanítja, oktatja titkos tudományokra; esetleg a leány valamely nőrokonra. Azonban arra is volt már példa, hogy egy kiemelkedően tehetséges kisleányt esküvőjét szervezték meg a rend vezetői egy általuk pénzelt és jóformán megkreált igen gazdag kereskedővel, hogy minél hamarabb eltávolítva az atyai háztól pártfogásukba vehessék.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "A rend igen gazdag, ennek ellenére nincsenek hivatalos rendházai, hiszen Galradzsa, Dzsah és Dolzsah vallása nem enged meg afféle bűnös kilengéseket, mint amilyen az asszonyszemélyek vagyonbírása vagy részvétele a politikai vitákban, esetleg az üzleti életben. Ezért a hölgyek rejtve, általuk alaposan kézben tartott nemesek palotáiban, karavánszerájok tulajdonosainak fényűző sátraiban leltek menedékre, a rend nagyasszonya pedig nem kisebb fontosságú helyen, mint az el hamedi emir legkisebb fiának palotájában irányítja övéit, s egyesek szerint tisztavervű dzsinn.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "I. A szekta tagjai, a többi boszorkánnyal ellentétben nem kapják meg induláskor a Szexuális kultúra képzettséget. Emiatt, csak „férjhez menetelük” után képesek alkalmazni az Ölelésmágia tárgykörébe tartozó varázslatokat, ha elérték a Szexuális kultúra képzettség 3. fokát.",
+            "title": "Szexuális kultúra képzettség hiánya",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "II. A rend tagjai képesek különleges táncmágiájuk, az Ezer fátyol táncának megidézésére. Ez játéktechnikailag a következőket jelenti: a boszorkány képes varázslatait mágikus táncával megidézni, mely által nélkülözhető az amúgy árulkodó tagleések végrehajtása és mágikus igék kimondása. Ez esetben azonban a varázslási idő 3 körrel megnő, az adott varázslatnál feltüntetett varázslási időhöz képest. Ekkor azonban az ily módon megfogant varázs csakis egy 3 E-nél erősebb kutatómágiával vagy pszi alkalmazással fedezhető fel. A különleges képesség alkalmazásához sikeres Tánc képzettségpróbát kell tenni a karakternek.",
+            "title": "Ezer fátyol tánca",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "III. A Táncmágiát alkalmazó boszorkány abban az esetben, ha újabb 3 kört áldoz a korábban táncmágiával megidézett varázslat varázslási idejének kitolására, akkor vagy a varázslat E-jét megnövelheti egy módosítók nélkül végrehajtott Tánc képzettségpróba sikerének megfelelő értékű E-vel, vagy hasonló összeget adhat a varázslat leplezésének E-jéhez.",
+            "title": "Táncmágia erősítése/leplezése",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "IV. A szekta tagjai képesek varázslataikat fátylaikban elrejteni, azokban elraktározni, majd egy rövid, mindössze egykörös tánccal előhívni. A varázslat eltárolása 3 kört, plusz annyi időt vesz igénybe, amennyi a varázslat varázslási ideje. A boszorkány egyszerre annyi varázslatot képes fátylaiban korlátlan ideig tárolni, amennyivel megdobta a Tánc képzettségpróbáját, azonban minden próbálkozáskor az összes elraktározandó varázslat Mp költségét egyszerre kell elkölteni, mely Mp-ok elvesznek, ha a próba sikertelen.",
+            "title": "Varázslatok tárolása fátylakban",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "V. A varázslatokat csak a boszorkány idézheti meg, s amíg viseli ezen ruhadarabokat, addig ezek csak 3 E-nél erősebb érzékelőmágia, vagy pszi alkalmazás számára tűnnek mágikusnak. Ha a fátylakat a boszorkány leveti, akkor gyenge villódzás kíséretében felszabadulnak a mágikus erők, melyek semmiféle hangjelenséget vagy pusztítást nem okozva eloszlanak a környező Mana-hálóban.",
+            "title": "Fátylak mágikus érzékelése",
+            "headers": [],
+            "rows": []
+        }
+    ]
+}

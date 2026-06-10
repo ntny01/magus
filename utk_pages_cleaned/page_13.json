@@ -1,0 +1,70 @@
+{
+    "is_new_chapter": true,
+    "chapter_title": "KARAKTERALKOTÁS",
+    "is_new_section": true,
+    "section_title": "Alapvető Tulajdonságok",
+    "content_blocks": [
+        {
+            "type": "paragraph",
+            "text": "A M.A.G.U.S. világában a karakteralkotás az első és egyik legfontosabb lépés, mely során életre keltheted hősödet vagy antihősödet. Ez a fejezet részletesen bemutatja azokat a lépéseket és döntéseket, amelyekkel egyedi és emlékezetes karaktert hozhatsz létre, aki készen áll a kalandokra Ynev szerte."
+        },
+        {
+            "type": "paragraph",
+            "text": "A karakteralkotás során számos tényezőt kell figyelembe venned, mint például a faj, a kaszt, az alapvető tulajdonságok, a képzettségek és a felszerelés. Minden döntésed hozzájárul ahhoz, hogy karaktered milyen szerepet tölthet be a történetben, és milyen kihívásokkal nézhet szembe."
+        },
+        {
+            "type": "paragraph",
+            "text": "Karaktered alapját hat fő tulajdonság adja, melyek meghatározzák fizikai és mentális képességeit. Ezek az Erő, Ügyesség, Állóképesség, Intelligencia, Akaraterő és Karizma. Minden tulajdonság egy 1-20 közötti értékkel rendelkezik, melyek befolyásolják a karakter cselekedeteinek sikerességét."
+        },
+        {
+            "type": "rule",
+            "title": "Tulajdonságok meghatározása",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A tulajdonságok értékét 3 darab hatoldalú kocka (3k6) dobásával kell meghatározni, sorrendben. A dobott értékeket a megfelelő tulajdonsághoz kell rendelni. Alternatívaként a játékmester engedélyezheti a pontvásárlásos rendszert, ahol 75 pontot oszthat el a játékos a hat tulajdonság között, úgy, hogy egy tulajdonság sem lehet 5-nél alacsonyabb és 18-nál magasabb."
+        },
+        {
+            "type": "table",
+            "title": "Tulajdonság módosítók",
+            "headers": [
+                "Tulajdonság érték",
+                "Módosító"
+            ],
+            "rows": [
+                [
+                    "1-3",
+                    "-3"
+                ],
+                [
+                    "4-5",
+                    "-2"
+                ],
+                [
+                    "6-8",
+                    "-1"
+                ],
+                [
+                    "9-12",
+                    "0"
+                ],
+                [
+                    "13-15",
+                    "+1"
+                ],
+                [
+                    "16-17",
+                    "+2"
+                ],
+                [
+                    "18-20",
+                    "+3"
+                ]
+            ]
+        }
+    ]
+}

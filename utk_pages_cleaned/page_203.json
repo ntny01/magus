@@ -1,0 +1,76 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": false,
+    "section_title": "",
+    "content_blocks": [
+        {
+            "type": "paragraph",
+            "text": "igényel. Látszólag túl könnyű ahhoz, hogy komoly sebet ejtsen, de páratlan pengéje mélyen vágódik az áldozatba – innen a magas sebzésértéke."
+        },
+        {
+            "type": "paragraph",
+            "text": "Emrelin kard (11): Az amazonok hagyományos, leginkább a predoci egyeneskardra emlékeztető, majd 1 Ynevi láb hosszú pengéje, mely vágásra és szúrásra egyaránt alkalmas, s mely markolatkosárral is bír. A pengét gyakran díszítik az adott mesterre, klánra jellemző vésetekkel, gyakorlottabb szem, még a viselője családfájáról megtudhat egyet s mindent."
+        },
+        {
+            "type": "paragraph",
+            "text": "Fejvadász kard (12): Rövid, de igen sokoldalú fegyver, mely ugyan nem rendelkezik keresztvassal, de a szokásos markolaton kívül található rajta egy második, erre merőleges markolat is. Ha ennél fogva a fejvadász az alkarjához szorítja a kardot, akkor pontosan a könyökékig kell érnie a penge hegyének. Ilyenkor védekezhet vele, mint rögtönzött alkarvédővel, de gyors mozdulattal előreforgatva a következő pillanatban már döfhet is. Ugyanígy, alkarhoz szorítva kis ívben vághat is, ami szűk helyeken, belharcban igen hatásos. Természetesen lehet a szokásos markolattal is forgatni, így rövidkardra emlékeztet. A második markolatot igénybe vevő technikákat szinte kizárólag csak fejvadászok ismerik, ezért ha más a kezébe veszi, csak közönséges rövidkardként forgathatja."
+        },
+        {
+            "type": "paragraph",
+            "text": "Hárítótőr (13): Második fegyverként használt eszköz, mely elsősorban – mint neve is mutatja – a védekezésben van forgatója segítségére. Több fajtája ismert, legnépszerűbbek a kosaras és a hárítógyűrűs tőrök. Neve alapján ugyan a tőrök közé sorolhatnánk, ám méretei miatt inkább a kardok közt került ismertetésre."
+        },
+        {
+            "type": "paragraph",
+            "text": "Kosaras hárítótőr: Az ellenfél fegyvere ellen fémkosár védi a kezet, amivel a támadások jól háríthatók."
+        },
+        {
+            "type": "paragraph",
+            "text": "Hárítógyűrűs hárítótőr: A keresztvas mellett egy külön felerősített gyűrűvel fokozzák a védelmet. Gyakori megoldás, mivel egyszerű és olcsó. Néha kosárral együtt alkalmazzák."
+        },
+        {
+            "type": "paragraph",
+            "text": "Hiequar (14): A kráni elfek által kedvelt furcsa ívű, fokélre fent kard. Pengéjéről, markolatáról általában megismerhető, melyik mester műhelyéből került ki. Kránon kívül szinte lehetetlen vele találkozni."
+        },
+        {
+            "type": "paragraph",
+            "text": "Hosszúkard (15): Nehéz erről a fegyverről általánosságban bármit is mondani, mivel ez talán a legelterjedtebb kard, és szinte minden vidéken másképp néz ki. Szúrásra, vágásra egyaránt alkalmas, markolatát általában védik. Jó kezelhetősége miatt a különböző hadseregekben és őrségeken ez az egyik legkedveltebb fegyver."
+        },
+        {
+            "type": "paragraph",
+            "text": "Jatagán (16): Azonnal felismerhető különös, kettős ívű pengéjéről. Keresztvasa csökevényes, markolata gyakorta marhabőrszíjjal, vagy nemesebb fegyverek esetén ezt formázza. Vágásra és szúrásra egyaránt kiváló eszköz."
+        },
+        {
+            "type": "paragraph",
+            "text": "Khossas (17): Jobbára Sirenarban, illetve a határos területeken elterjedt rövidebb kard, mely alakját tekintve a levéltörőkhöz hasonlítható, bár keresztvasa általában nagyobb azoknál."
+        },
+        {
+            "type": "paragraph",
+            "text": "Kígyókard (18): Tharr papjainak közkedvelt fegyvere. 4-5 arasz hosszúságú, mérgeskígyóként tekergő, egykezes, kétélű kard. Keresztvasa szinte soha nincs, vércsatornáját gyakran díszítik átokhozó káoszrúnákkal. Itt jegyzendő meg, hogy a komoly hitbéli ellentét dacára Sogrion papjainak, tűzvarázslóinak lángkardjai (19) is hasonló megjelenésűek – természetesen a káosz rúnái nélkül – leszámítva, a kígyónyelv hiányát a penge végén."
+        },
+        {
+            "type": "paragraph",
+            "text": "Lagoss (20): Toron fejvadászainak hosszabb (max. 55-60 Ynevi hüvelyk) pengéje, melyet előszeretettel alkalmaznak más helyi iskolák kardforgatói is."
+        },
+        {
+            "type": "paragraph",
+            "text": "Meneth (21): Az amundok jellegzetes fogazott kardját, a meneth-t (menesz) egyetlen más Ynevi civilizáció sem ismeri. Ez a fegyver nem elsősorban ölésre való, hanem sebzésre, roncsolásra, csonkításra alkalmas. Széles rövidkardra emlékeztet, pengéje ujjnyi vastag, élezetlen acél, melyet körben hegyes, éles gúlák fogaznak. Vágáskor a fogak tépik, szaggatják az áldozat testét, csúf és fájdalmas, nehezen gyógyuló, noha nem túlságosan súlyos sebet ejtve. A meneth kialakulása elsősorban kulturális okokkal magyarázható, hiszen csak mezítelen vagy könnyen öltözött ellenféllel szemben hatékony: fogai a páncélban elakadnak, ezáltal fegyvertelenségre kárhoztatva a meneth forgatóját. Ugyanakkor félelmetes fegyver egy, a test szépségét és tökéletességét olyan sokra tartó kultúra szemében, mint amilyen az amund."
+        },
+        {
+            "type": "paragraph",
+            "text": "Mesterkard (22): A tiadlani kardmesterek fegyvere. Kialakításában a Slan kardra emlékeztet, bár nem görbül annyira, a keresztvasa valamivel nagyobb. A leglényegesebb különbség azonban a minőségben van. Míg a Slan kardok a kovácsok mesterremekei, a mesterkardok csak kevéssel jobbak az átlag hosszúkardoknál. Tiadlanon kívül sem készítenek ilyet, a kardmestereken kívül más nem is használja őket."
+        },
+        {
+            "type": "paragraph",
+            "text": "Predoci egyeneskard (23): Nem csak Predocban, de a Gályák tengerének mentén több országban – például Gorvikban – is elterjedt. A kard alapjában a hagyományos hosszúkardra hasonlít, de annál jóval keskenyebb és könnyebb. Mégsem lehet azt állítani, hogy rapír lenne, mivel annál vaskosabb és jóval kevésbé hajlékony. Különös ismertetőjegye még, hogy két éle már a keresztvasnál sem párhuzamos, hanem lapos szögben összetart és markolatát a keresztvason kívül markolatkosár is védi."
+        },
+        {
+            "type": "paragraph",
+            "text": "Rapír (24): A legkönnyebb kard valamennyi között; pengéje keskeny, vékony és igen hajlékony. Mindkét élét kifenik, a hangsúly azonban a hegyén van, mivel ez elsősorban szúrófegyver. Főleg könnyűvértezetű vagy páncél nélküli ellenféllel szemben hatékony. Könnyű pengéjének megfelelően markolatgombja kicsi vagy hiányozhat is. Mivel kis súlya miatt könnyebb forgatni, esetében a védekezés jelentős szerepet kap. A markolatot különböző módon védik: kosárral, kézvédővel, hárítógyűrűvel. Ahány vidék Yneven, annyiféle a tőrkardok díszítése. A fegyverismeretben alacsonyabb fokon jártas karakter nagy eséllyel képes megállapítani a tőrkard származási helyét – országot és tartományt –, míg a képzettség mesterei név szerint azonosíthatnak egy-egy híresebb fegyverkészítőt. Kiegészítésül gyakran forgatnak mellette hárítótőrt. Általában elfogadott, hogy a polgárok és közrendű szabadok fegyvere."
+        },
+        {
+            "type": "paragraph",
+            "text": "Rövidkard (25): Használatában a hosszúkardtól gyökeresen különbözik, hiszen elsősorban döfésre használható, klasszikus vívójelenségek aligha bonyolíthatók vele. Aki először döf, nyert. Előszeretettel alkalmazzák tolvajok, fejvadászok, mivel kis mérete miatt könnyen elrejthető. Kedvelt fegyver Abasziszban is, ahol egyes hadseregtestek fő fegyvere."
+        }
+    ]
+}

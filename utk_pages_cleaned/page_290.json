@@ -1,0 +1,93 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": false,
+    "section_title": "",
+    "content_blocks": [
+        {
+            "type": "paragraph",
+            "text": "donosai, mikor cserélt gazdát, milyen események, háborúk, katasztrófák során kísérte végig az illetőket. A boszorkány az egész történetet a tárgy szemszögéből látja, így egész sor mozzanat nehezen értelmezhetővé lehet számára. A boszorkány mindent megtud a tárgy környezetéről, hogy mit látott, hallott volna a tárgy, ha élőlény lenne. A másik fontos információ magára a tárgyra vonatkozik, hiszen így megtudható, ki készítette, ki és mire használta. A varázslat ez utóbbi vonása különösen mágikus tárgyak vizsgálatakor hasznos."
+        },
+        {
+            "type": "rule",
+            "title": "Holdfényjárás",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "Mana pont: 8 Varázslás ideje: 1 szegmens Hatótáv: Önmagam Időtartam: Lásd a leírást! Az éj a boszorkány igazi lételeme; ilyenkor a két hold bármelyikének fénysugarain közlekedhet e varázslat segítségével. A holdsugár hídként ívelhet át tavakon és folyókon, így a boszorkány száraz lábbal átkelhet a víz felett. A varázslat Időtartama alatt a boszorkány csendesen a holdak neveit és az őselemi erőt mormolja. Ha valami ok folytán a litánia megszakad, a boszorkány lezuhan. Teliholdkor a misztikus sugárzás olyan erős, hogy a boszorkány a levegőben is sétálhat, olyan meredek szögben, amilyen magasan a hold ragyog. Az ilyen helyzetekben két megkötés érvényesül: a boszorkány csak a holddal szemben haladhat, s csakis lehunyt szemmel. Ha szemét akár csak egy pillanatra is kinyitja, nyomban lezuhan. Ugyanez történik, ha a holdat felhők takarják el, vagy bármi más a holdfényáram és a boszorkány közé kerül. A varázslat Időtartama alatt akár futó tempóban is biztosan haladhat a holdfény sugarain."
+        },
+        {
+            "type": "rule",
+            "title": "Kígyóvarázs I.",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "Mana pont: 3 Varázslás ideje: 3 szegmens Hatótáv: 20 ynevi láb sugarú kör Időtartam: 6 kör (1 perc) A varázslattal a boszorkány köteleket bájol, lassú kígyószerű mozdulataira reagálva életre kelnek, majd az időtartam leteltéig kígyókként fognak viselkedni, engedelmeskedve gondolati parancsainak. Tárgyak köré tekerednek, lényeket kötnek gúzsba, óriáskígyó módjára. Támadó értékük 50, de nem érvényesül ellenük sem a fegyver, sem a pajzs nyújtotta Védő érték. Esetükben a sikeres támadás annyit tesz, hogy áldozatukra tekeredtek, s egyre keményebben szorítják. Az áldozat körönként 1k6 FP-t veszít a szorítás miatt, s nem mozdíthatja végtagjait. Csak kurta fegyvert, tőrt vagy rövid kardot használhat, Harcértékeiből levonódnak a harc helyhez kötve módosítói, továbbá sem célozni, sem dobófegyvert használni nem tud. A szorításból csak úgy szabadulhat, ha sikeres Erőpróbát dob, vagy ha akár ő, akár más az eleven kötelet elvágja. Az áldozatra tekeredett kötelet nem nehéz eltalálni, VÉ-jét 50-nek vehetjük; elvágásához azonban legalább 10 SP-t kell sebezni rajta, méghozzá vágófegyverrel. A varázslat a boszorkány körüli 20 ynevi láb sugarú körben az összes legalább 3 ynevi láb hosszú kötélre hat, ám a kötelek mozgatásához a boszorkánynak mindvégig koncentrálnia kell, pszit vagy mágiát nem használhat, de bármilyen más tevékenységet végezhet. A varázslat Időtartamának lejártával a kötelek elveszítik különleges természetüket, s közönséges kötéllel alakulnak vissza – áldozatukról általában lehullnak."
+        },
+        {
+            "type": "rule",
+            "title": "Lebegés vízben",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "Mana pont: 2 Varázslás ideje: 1 szegmens Hatótáv: Önmagam Időtartam: Lásd a leírást! A varázsige kimondása után a boszorkány képes fennmaradni a legvadabbul háborgó víz felszínén is. Úgy lebeg, mintha teste könnyű fából volna; erőszakkal a víz alá nyomni is nehéz. Saját súlyán túl 30 ynevi font súlyt képes a felszínen tartani. Minderre elméletileg bármilyen hosszú ideig, a gyakorlatban addig képes, ameddig teljesen mozdulatlan marad."
+        },
+        {
+            "type": "rule",
+            "title": "Mágiaelnyelés",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "Mana pont: 6 Varázslás ideje: 1 szegmens Hatótáv: Önmagam Időtartam: 5 perc A Mágiaelnyeléssel a boszorkány saját teste fizikai épségének kárára semlegesíthet varázslatokat. Elmormolja a varázslat igéit, és vár – a varázslat adta különleges képesség az Időtartam lejártáig nem szűnik meg. Az alkalmazó teste egyfajta mágikus villámhárítóként szolgál, magához vonzza és eloszlatja a boszorkányra ható varázslatok energiáit. Így a varázslat nem képes kifejteni hatását, hanem ártalmatlanul elenyészik. A módszer egyetlen hátránya, hogy a testen keresztül eloszló energia komoly sérüléseket is okozhat: a boszorkány annyi FP-t veszít, amennyi Mana pontba az elnyelt varázslat került. Ha FP-inek száma nulla alá zuhan, a továbbiakban már ÉP-t veszít, amibe könnyen belehalhat. A varázslatot a boszorkány az Időtartam lejárta előtt bármikor megszüntetheti, vagy akár több tucat apróbb varázslatot is semlegesíthet."
+        },
+        {
+            "type": "rule",
+            "title": "Pusztítás",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "Mana pont: 36 Varázslás ideje: 1 kör Hatótáv: Lásd a leírást! Időtartam: Egyszeri A boszorkány ezzel a varázslattal kegyetlen pusztítás véghezvitelére képes, minden létező energiájának befektetése árán. Épp ezért a Pusztítást a boszorkányok csak a legvégső esetben használják, ha már minden más módszer kudarcot vallott. A varázslat elemi, romboló energiává alakít minden Mana pontot, PSZI pontot és Fájdalom pontot, amivel a boszorkány az adott pillanatban rendelkezik. Az energia legősibb formáját, egyfajta nyers mágiát szabadít fel: kékes, villódzó örvény jelenik meg körülötte, melynek erősségét a következő módon számolhatjuk ki: 10 FP=1 E, 4 VP=1 E, 4 MP=1 E A boszorkány ÉP-inek mennyisége nem változik, de a varázslat minden a varázslat elmondása után maradt FP-t, MP-t és PSZI-pontot varázserővé alakít. Az így felszabaduló energia az örvényben a boszorkány szándéka szerint osztható el, a leírtak szerint:"
+        },
+        {
+            "type": "table",
+            "headers": [
+                "Örvény mérete",
+                "Sebzés"
+            ],
+            "rows": [
+                [
+                    "2 ynevi láb sugarú örvény",
+                    "a sebzés annyi, mint amennyi a varázslat E-je."
+                ],
+                [
+                    "4 ynevi láb sugarú örvény",
+                    "a sebzés feleannyi, mint amennyi a varázslat E-je."
+                ],
+                [
+                    "8 ynevi láb sugarú örvény",
+                    "a sebzés negyedannyi, mint amennyi a varázslat E-je."
+                ]
+            ]
+        }
+    ]
+}

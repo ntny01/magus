@@ -1,0 +1,46 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": null,
+    "is_new_section": true,
+    "section_title": "Különleges képességeik",
+    "content_blocks": [
+        {
+            "type": "paragraph",
+            "text": "A természet egyéb teremtményeivel kialakult évezredes jó kapcsolat nem múlik el nyomtalanul: nincs az az elf, aki tétlenül tűrné, hogy egy állatot megkínozzanak vagy egy ligetet fölöslegesen kivágjanak. Ez persze kölcsönös, az erdők-mezők vadjai ösztönös bizalommal viseltetnek irányukban, s ha egy nekivadult lovat vagy őrjöngő kutyát kell lecsillapítani, az elfeknél jobban senki sem képes teljesíteni a feladatot."
+        },
+        {
+            "type": "paragraph",
+            "text": "Az elfeknek néhány olyan érzékszerve és képessége is kifejlődött az idők során, mellyel más fajok egyedei nem dicsékedhetnek. Ezek a következők:"
+        },
+        {
+            "type": "rule",
+            "text": "Alkati adottságaik miatt az elfek Gyorsasága, Karizmája és Érzékelés akár 20-as, míg Ereje és Állóképessége legfeljebb 16-os lehet.",
+            "title": "Alkati adottságok"
+        },
+        {
+            "type": "rule",
+            "text": "Hallásuk élessége mintegy kétszerese a közönséges földi halandókénak.",
+            "title": "Hallás"
+        },
+        {
+            "type": "rule",
+            "text": "Éles szemükkel kétszer messzebbről felfedeznek mindent, mint az emberek, ezért minden elf +10 Célzó értékkel rendelkezik.",
+            "title": "Látás és Célzó érték"
+        },
+        {
+            "type": "rule",
+            "text": "Rendelkeznek infralátással, mely vaksötétben is 30 ynevi látótávolságot jelent.",
+            "title": "Infralátás"
+        },
+        {
+            "type": "rule",
+            "text": "Az elfek őseiktől örökölték ösztönös tehetségüket az alábbi képzettségekhez: Állatismeret, Idomítás, Erdőjárás, Lovaglás. Ezeket úgy tanulják, mintha 4. fokú oktatótól sajátítanák el (a képzettségek minden szintje 2 KP-val olcsóbb a képzettség 4. fokáig, de legalább 1; ez a bónusz nem adódik össze az oktatás képzettség nyújtotta előnyökkel).",
+            "title": "Ösztönös képzettségek"
+        },
+        {
+            "type": "rule",
+            "text": "Az elfek természetétől leginkább a Feketemágia és a Nekromancia esik távol, ezért az efféle varázslatoknak kevésbé tudnak ellenszegülni, mint mások. Ez számokban kifejezve azt jelenti, hogy bármely Nekromancia típusú varázslat 4 E-vel erősebben hat rájuk.",
+            "title": "Feketemágia és Nekromancia ellenállás"
+        }
+    ]
+}

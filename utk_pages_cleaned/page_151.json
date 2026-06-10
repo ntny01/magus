@@ -1,0 +1,148 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": false,
+    "section_title": "",
+    "content_blocks": [
+        {
+            "type": "rule",
+            "text": "A legendás címertudós belelát a jelek mögötti összefüggésrendszerekbe, szövetségek és nemesi házak titkai nem maradnak előtte rejtve, ezen a fokozaton akár még igazi tudós fok számára is hitelennek tűnő csalásokat, észlelhet ki, vagy nemesi családok származását vonhatja kétségbe, ha sikeres Intelligenciapróbát tesz +3 módosítóval.",
+            "title": "Címertudós képzettség (5. fok)",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "A karakter az adott terület, vagy népcsoport szokásaiba, szociális berendezkedésébe nyer bepillantást. Alacsonyabb fokú képzettség esetén még csak látogatóként ismeri a dolgok menetét, magasabb fokú képzettség birtokában már a helyi néprajz rejtelmeivel is tisztában van. A képzettséget valamely civilizáció vagy népcsoport kultúrájára kell felvenni, pl.: Kultúra (Erv) 3. fok.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "1. fok Az idegenek ezen a szinten még csak ismerkednek a helyi szokásokkal, könnyedén belesétálhatnak egy kínos helyzetbe, főleg, ha nem ismerik készség szinten az adott nyelvet.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "2. fok A helyi szokásokban az ilyen fokon képzett karakter, már annyira járatos, hogy képes ügyeit egymaga intézni, de zárt közösségek esetén még bajba kerülhet.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "3. fok A közösségbe besimuló idegen vagy tősgyökeres helybeli lakos bírja ezen a fokon az adott Kultúra ismeretét, már könnyedén adja ki magát helybélinek az idegen, illetve tisztában van a számára szükséges szokások, helyzetek által megkövetelt viselkedésformák mibenlétével.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "4. fok A közösség valamely tanultabb vezetője, vagy idegen, aki lassan őslakosnak is kiadhatja magát, bírja ezen a fokon a képzettséget. A karakter már az adott kultúra folk-kultúráinak dolgaiban is járatos, elzárt, titkos közösségekkel szembeni fellépés mikéntjében sem ejt vérlázító hibát. Ezen a szinten már történeti alapossággal képes nyilatkozni egy kultúra fejlődéséről, átalakulásairól.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "5. fok A tudós fők és papok sajátja, esetleg mesterkémek és kereskedők birtokolják ezt a fokot. Az ennyire képzett karakter már tisztában van az adott kultúra rétegkultúráinak minden apróbb szokásával, illetve kimerítően képes nyilatkozni ezek kialakulásáról is.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "A psziché megismerésének tudománya. Birtokosa könnyebben férkőzik közel mások lelkéhez, érti meg a szándékaik mögött megbúvó indítékaikat, leplezi le hazugságaikat, vagy magasabb szinteken hajtja befolyása alá az illetőt. Ha a képzettség célpontja bármely leplező képzettséggel bír, akkor a képzettségek összevetésére vonatkozó szabályok a mérvadóak. Azonban a fent említett szabályok által megállapított siker esetén sem mentesül a karakter az alábbi leírásban szereplő próbadobás alól.",
+            "title": "Lélektan alapok",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "1. fok Empátia, enyhe fogékonyság másokkal szemben. Ezen a szinten az apróbb változások még nem, de a durvább esetleges mágikus beavatkozások már felfedezhetőek a célpont viselkedésében, ha a varázstudó nem volt elég elővigyázatos. A karakternek -1 módosítóval dobott sikeres Asztrálpróba esetén tűnhetnek fel a változások.",
+            "title": "Lélektan 1. fok",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "2. fok A már gyakorlott lélekbúvár a képzettség ezen fokának birtokában már nagyobb sikerrel számolhat. A karakternek sikeres Asztrálpróba esetén tűnhetnek fel a gyanús jelek, és csak ekkor értelmezheti őket.",
+            "title": "Lélektan 2. fok",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "3. fok Papok és varázslók bírják legtöbbször ezt a tudásszintet, innentől válik lehetővé az asztrális, mentális varázslatok alkalmazása a Mozaikmágián belül. Ezen szint nélkül a varázsló nem ismeri eléggé a pszichét, hogy befolyást gyakoroljon rá. A karakter innentől kezdve próbálkozhat, ha ideje engedi lelki torzulások gyógyításával, +1 módosítóval dobott sikeres Asztrálpróba esetén.",
+            "title": "Lélektan 3. fok",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "4. fok A karakter mestere a lélektannak, ha elegendő ideje és lehetősége van, hosszas munkával kondicionálhat vagy kondicionálás alól szabadíthat fel másokat – a KM beleegyezésével. A gyanús jelek, elváltozások keresésére dobott próbáját a karakter +2 módosítóval végezheti el.",
+            "title": "Lélektan 4. fok",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "5. fok Az igazán sokat látott bölcs mesterek az ilyen szintű tudás birtokosai, tapasztalataikat felhasználva egyre inkább elmélyültek a tudományban, emiatt a képzettség ezen fokú ismerői a gyanús jelek, elváltozások keresésére dobott próbájukhoz +3 módosítást adhatnak.",
+            "title": "Lélektan 5. fok",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "A karakter valamely művészeti ágban tökéletesíti tudását és egyre csodálatosabb műveket képes alkotni, előadni. A Tulajdonságkövetelmény művészeti áganként eltérő lehet, ez a KM belátására és fantáziájára van bízva, bár leggyakrabban az Asztrál és valamely másik Tulajdonság kombinációja. (Pl. éneklés, zenélés, tánc, költészet, szobrászat, színjátszás stb.)",
+            "title": "Művészetek alapok",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "1. fok Egyszerű műkedvelő, esetleg az adott irányzat alapfogásaival ismerkedő személy. Próbálkozásai még legtöbbször komikusak, de már „sejti merre van a helyes irány”.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "2. fok Az ezen fokon képzett karakter már tűrhető művelője irányzatának, alkotásai pontosak, mármint harmóniát is sugároznak.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "3. fok A képzettség ezen foka már igazi iparos mestert jelez, akinek munkája pontos és szép, tetszetős, de nem lenyűgöző, még nem igazi művész.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "4. fok Igazi művész, műveivel, előadásaival már szép munkákat kereshet. Megérintette a felsőbb harmónia, előadásaiba, műremekeibe akár rejtett mondanivalót is becsempészhet.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "5. fok Csak Művésztehetség Háttérrel rendelkező karakter veheti fel. Ihletett nagy művész, százévente ha egy születik.",
+            "title": "Művészetek 5. fok",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "A képzettség a karakter anyanyelvének, illetve attól eltérő nyelvek ismeretét fedi. Alacsonyabb fokon a nyelv használatát, magasabb fokú képzettség esetén pedig már igazi, irodalmi szintű nyelvtudást jelent. Yneven papok, művelt tudós fők, varázslók, esetleg művészek bírnak a nyelvek magasabb fokú ismeretével.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        }
+    ]
+}

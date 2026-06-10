@@ -1,0 +1,58 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": true,
+    "section_title": "A kasztok",
+    "content_blocks": [
+        {
+            "type": "paragraph",
+            "text": "Az egyik legmegbecsültebb kaszt, tagjaival gyakorta találkoznak a hétköznapi emberek is, ők maguk pedig haditetteik révén könnyen felsőbb kasztba kerülhetnek. Ők a hatalom letéteményesei, az irdatlan toroni seregek katonái, a nemesi familiák testőrzői és orgyilkosai."
+        },
+        {
+            "type": "paragraph",
+            "text": "A toroni birodalom erőteljesen militáns jellegét tekintve nem csodálkozhatunk magán a társadalmi megbecsültségükön. Egy földműves család gyermekének szinte az egyetlen lehetősége a felemelkedésre, ha befogadják katonának valamelyik nemesúr hadseregébe. Természetesen az alá-fölérendeltségi viszonyok itt a legmerevebbek, a legfelsőbb hadúr maga a császár, de a Nemes Házaknak, sőt néhány befolyásosabb házon kívüli nemesnek is van magánhadserege."
+        },
+        {
+            "type": "paragraph",
+            "text": "Bármilyen sok is a fejvadász az országban, azért nem kell minden járókelőben gyilkost gyanítani; számuk nemcsak az össznépességhez, hanem még a fegyverforgatókhoz képest is elenyészően csekély."
+        },
+        {
+            "type": "paragraph",
+            "text": "A boszorkányhadurakról már szólottunk: a boszorkányhercegek hű szolgái ők a Sápadt Légió parancsnokai, alkalomadtán különböző politikai játszmák főszereplői. Nem egy közülük sötét, ártó varázserővel bír, s nem habozik használni sem, ha Daumyr érdekei forognak kockán."
+        },
+        {
+            "type": "paragraph",
+            "text": "A kaszt tagjaival a Sedular kasztúak kivételével – ők fejtartásukkal és tradicionális karmozdulataikkal jelzik tiszteletüket – csak térden állva és szemlesütve lehet beszélni."
+        },
+        {
+            "type": "rule",
+            "title": "Sedular – Szorgosság",
+            "headers": [],
+            "rows": [
+                [
+                    "A kereskedők, papok és kézművesek kasztja. Színük az arany kivételével bármilyen lehet, amennyiben nem túl ékes; akár nemesi színeket is használhatnak. Jellemző címerállataik nincsenek, a társaságok és céhek jelzéseit használják, illetve a papok a szent szimbólumukat. Mint már említettük, a kereskedők hatalmas hasznot hoznak Toronnak, s bár nemességet igen ritkán kapnak (nemesember pedig nem fanyalodik kalmárkodásra), mégis fontos tagjai a társadalomnak. Zárt közösségeket alkotnak, kívülállókat szinte sohasem fogadnak maguk közé, a tengerésztudományok, a kereskedelmi ismeretek, a mesterfogások, a kapcsolatok apáról fiúra szállnak. Érdekes kaszt ez, az egyedüli olyan, amely alkalomadtán megbízatást adhat a magasabb rangúaknak. A nagyhatalmú kereskedőtársaságok és egyes iparos céhek például rendszeresen foglalkoztatnak fejvadászokat, katonákat, testőröket – természetesen mindig illő tiszteletadás mellett. Ilyenkor a pietorok fennhéjázás és gög nélkül igyekeznek ellátni feladatukat. Persze mindvégig rangjuknak kijáró tisztelet övezi őket, cserébe ők is megbecsülik kenyéradóikat. Thorra és a többi istenség papjai a soraikból kikerülő famoroknak, egyházuk főrendjeinek tartoznak számadással. Mindenben az ő utasításaiknak engedelmeskednek, figyelembe véve a saját lehetőségeiket. Ily módon egy rangban vannak a kézművesmesterekkel, ami miatt nem panaszkodhatnak, hisz a lakosság túlnyomó része még így is alattuk áll a társadalmi ranglétrán. Vannak persze különleges esetek és szolgálatok, amikor az egyszerű hívek között élő, őket irányító, az igaz úton vezető papok, és vándorló társaik, az ún. khórtorok Thorr rendelésére felsőbb kasztokba emelkedhetnek, egészen a famor cím eléréséig, hiszen a főpapi titulus nem örökletes. A szigorú szabályok szerint dolgozó iparos céhek a legjobbak közé tartoznak egész Északon. Még a Szövetség tagországainak is el kell ismerniük, hogy a toroni kelmék nem csatolt üvegeknek, kéziszerszámoknak nemigen akad párja a Quiron tenger mellékén. Az egyes céhek tagjai mind ugyanolyan ruházatot viselnek, saját ünnepeik, szertartásaik, áldozataik vannak. Szorgos hangyák módjára szolgálják ki a hatalmas birodalmat, öltöztetik, fegyverzik a gigászi seregeket. A Navor kasztbeliek fejtartásukkal és tradicionális kézmozgásukkal fejezik ki irántuk tiszteletüket, az Obsor kasztúak mindenkivel csak térden állva és szemlesütve beszélnek."
+                ]
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Navor – Dolgosság",
+            "headers": [],
+            "rows": [
+                [
+                    "Toron parasztjai és közrendű szolgái tartoznak ide, valamint a tolvajok és emberkereskedők, de róluk külön is kell majd szólni. Színük a szürke, a barna és a fehér. A birodalmat éltető és kiszolgáló földművesek milliói ők, akik a kegyetlen adóterhek alatt nyögve etetik az őket kiszolgáló nagyurakat, a vidéki kismestestől egészen a császárig. A föld, amit megművelnek, nem az övék; a termésből szinte semmit nem tarthatnak meg; helyzetük csak egy szemernyivel jobb a rabszolgákénál, ha egy aszályos évben túl sok adósság gyűlik a nyakukra, ők maguk is közéjük kerülhetnek. Sárviskóikban, földbe mélyített kunyhóikban nem is álmodhatnak arról, hogy fegyveres szolgálatba lépjenek, hiszen valakinek a seregeket is táplálnia kell, s a katonacsaládok ritkán teszik meg nekik azt a szívességet, hogy teljesen kipusztuljanak. A háború átok és áldás számukra. Átok, mert folyamatos, látástól vakulásig tartó robotolást jelent; és áldás, mert az elesettek pótlására mindig keresnek önkénteseket a sokgyermekes családokból. Márpedig, ha az újonc túléli a kiképzést s az első csatákat, később talán arra is lesz lehetősége, hogy támogassa az otthon maradottakat. A különböző udvartartások, hivatalok, nemesek szolgánépe egy kicsivel jobb helyzetben van. Ha jól végzik dolgukat, netán uraik kedvelik őket, jó soruk lehet; ám ha hibáznak, egyik percről a másikra a rabszolgák között találhatják magukat. Jogaik szinte nincsenek, mindenben ki vannak szolgáltatva uraiknak és magasabb beosztású társaiknak. A társadalmi megítélés szerint ebbe a kasztba tartoznak a különböző komédiások, csepűrágók, énekmondók és más ingyenélők is, bár ők rendelkeznek egy különleges kiváltsággal: a városlakókhoz hasonlóan viselhetnek tarka öltözéket. Mint már említettük, a tolvajokat és emberkereskedőket is ide szokás sorolni. Lényeges különbség persze, hogy nekik többnyire magasabb kasztbéli pártfogóik vannak, s olykor maguk is feljebb kerülhetnek, vagy legalábbis feljebb állónak hazudhatják magukat. Bármilyen hihetetlen, de a háborítatlan működésért cserébe egyes alvilági szervezetek tetemes összegeket fizetnek a császári és helytartói udvaroknak. Ilyenkor már ők diktálják a feltételeket, s nem ritka, hogy egész falvakat, városokat tartanak a markukban. Jó példa erre a Láncbárátok északi erődítményrendszere vagy Szinhen, ez a forgalmas kikötő, amely keleti irányban háromszáz mérföldre esik Shulurtól, s a nép csak a Kóbrák Városa néven emlegeti. A mindenütt jelenlévő boszorkánymesterek is külön elbírálás alá esnek. Általában a Navor kasztba tartoznak, de saját belső hierarchiájuk alapján az Elendor kivételével bármelyikbe sorolhatjuk őket. Ennek megítélése kizárólag titkos, belső törvényeiken alapul. Színük általában a barna, jellemző címerállatuk nincs, többnyire a szektájuk titkos vérjeleit alkalmazzák."
+                ]
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Obsor – Sötétség",
+            "headers": [],
+            "rows": [
+                [
+                    "A rabszolgák és bűnözők kasztja. A hatalmas birtokokon százezerszám túrják a földet a hadjáratokban foglyul ejtett ellenséges katonák, a külországból Toronba hurcolt szerencsétlenek, a lecsúszott, kegyvesztett páriák. Ők dolgoznak"
+                ]
+            ]
+        }
+    ]
+}

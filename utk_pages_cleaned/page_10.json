@@ -1,0 +1,183 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": null,
+    "is_new_section": false,
+    "section_title": null,
+    "content_blocks": [
+        {
+            "type": "rule",
+            "title": "Életerő pont (Ép)",
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Életút-játék",
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Erő",
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Érzékelés (Érz)",
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Fájdalomtűrés pont (Fp)",
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Fegyver méretkategória",
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Gyorsaság (Gy)",
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Háttér",
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Harcérték módosító (HM)",
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Infralátás",
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Intelligencia (Int)",
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Játékos karakter (JK)",
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "k6",
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "k10",
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "k100",
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Kaland",
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Kalandmester (KM)",
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Kalandmodul",
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Kalandozó",
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Karakter",
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Karakteralkotó pont (KAP)",
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Karizma (Krz)",
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Kegy pont",
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Kezdeményezés",
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Kezdeményező érték (KÉ)",
+            "rows": [
+                []
+            ]
+        }
+    ]
+}

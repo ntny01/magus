@@ -1,0 +1,218 @@
+{
+    "is_new_chapter": true,
+    "chapter_title": "A harcművész fegyvertára",
+    "is_new_section": true,
+    "section_title": "1. Hollószárnyak (khrin-kao)",
+    "content_blocks": [
+        {
+            "type": "paragraph",
+            "text": "A Nisen-nid-to irányzat kolostoraiban tanult karakterek előnyei:",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "I. Az ezen irányzatot oktató kolostorokban tanult karakterek képzése igen célirányos, leginkább testőri feladatokra képzik őket, emiatt a Veszélyérzék, a Hadvezetés, a Lélektan, Térképészet, Számtan/Mértan, Művészetek (Rajz), illetve a Taktika képzettségeket szintén a 4. fokú Oktatásnak megfelelő bónuszokkal tanulhatják iskolájukban.",
+            "title": "Nisen-nid-to előnyök",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "II. Az innen induló karakterek ingyenesen megkapják a rend különleges kialakítású fegyverkabátját, mely megjelenésében semmiben sem különbözik egy zárt, keményített, állógallérú díszkabátétól, melyet minden valamire való tiadlani udvaronc vagy tudós fő viselne.",
+            "title": "Fegyverkabát leírás",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "A fegyverkabát értékei a következők:",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "MGT: 0, SFÉ: 1, Súly: 3 ynevi font, Ár: –, STP: 20",
+            "title": "Fegyverkabát statisztikák",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "Jóllehet a harcművészek mindenekelőtt a pusztakezes harc avatott művelői, egyáltalán nem elhanyagolható a különféle fegyveres küzdelmet oktató iskolák, mesterek száma és jelentősége sem. A harcművészek pengéinek halálos villanását széles körben ismerik Yneven, ám sokféle eszköz, amit a harcművészek Harcművészet képzettségükkel forgatnak, már korántsem olyan közismert. Igazán jól bánni velük általában csak hosszú évek kitartó munkája után lehetséges, így 5. fokon csupán egyet sajátíthat el harcművész; ám hagyománytiszteletből idővel a másik kilenc tradicionális fegyver forgatását is megtanulják.",
+            "title": "Harcművész fegyverek elsajátítása",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "Az alább ismertetett fegyverek mindegyike alkalmas a lefegyverzésre, a fegyvertörésre és átütő képességgel is bírnak, de csakis Sárkányharcban. Más esetekben csak a hozzájuk hasonló normál fegyverek képességeivel rendelkeznek – ezekben a fegyverek tulajdonságairól mindig a KM dönt.",
+            "title": "Harcművész fegyverek képességei",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "Párban használt, körülbelül arasznyi hosszúságú, széles pengéjű, egyélű kard, kereszvas helyett kézvédő markolattal. Szűk helyen vívott belharcra kiválóan alkalmas. Használata fürgeséget, harmonikus mozgást igényel, ám ha a küzdő elég közel kerül ellenfeléhez, a széles pengékkel igen komoly sebeket okozhat. A két kard forgás közben a madárszárnyak suhogásához hasonlatos hangot ad, innen ered az elnevezés.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "Időigény: 5, KÉ: 12, TÉ: 8, VÉ: 8, Sebzés: 2k6, STP: 20 Méretkategória: 3",
+            "title": "Hollószárnyak statisztikák",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "2. Mesterkard (sho-khot)",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "Pengéje a Slan kardéra hasonlít, keresztvasa korong alakú, éppen ökölnyi. Egykezes, egyélű fegyver; többnyire egymagában forgatják. A Dúin kardmesterinek tradicionális fegyvere, valamint kedvelt eszköze a színes, könnyű selymekben írt „Bíborudvarú” táncnak, mely amellett, hogy lenyűgöző látványosság, alkalmat ad a harcművésznek tudása bemutatására is.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "Időigény: 5, KÉ: 5, TÉ: 13, VÉ: 7, Sebzés: 2k6, STP: 20 Méretkategória: 3",
+            "title": "Mesterkard statisztikák",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "3. Sryn-tőr",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "Keskeny, borotvaéles és igen hegyes pengéje 25-30 ynevi hüvelyk hosszú, néha enyhén hullámos; markolata szögbe törve illeszkedik hozzá, akár egyes kézi szerszámfjak tusa. Kiképzése is inkább ahhoz hasonlatos – a sryn markolatot mindig „tulajdonosa tenyeréhez kell elkészíteni”, hogy amikor ráfog, a lehető legtökéletesebben illeszkedjék. Úgy mondják, a sryn markolat gazdája lelkének lenyomata. Kiegészítő fegyver, szorosan értelmezett küzdésirányzat nem alakult köré.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "Időigény: 3, KÉ: 6, TÉ: 12, VÉ: 2, Sebzés: 1k10, STP: 10 Méretkategória: 2",
+            "title": "Sryn-tőr statisztikák",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "4. Botok",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "A hosszú bot 120-180 ynevi hüvelyk hosszú és két kézzel forgatják, míg a rövid bot 40-100 hüvelyk és egy kézbe fogják – esetleg kettőt, mindkét kezükben. Iskolák szerint eltérőek a fogástechnikák (egy kézzel, két kézzel, kardszerűen, harmadolva), kiváló segédeszköz dobásokhoz, csavarásokhoz, fojtásokhoz, stb.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "Hosszú bot",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "Időigény: 5, KÉ: 9, TÉ: 10, VÉ: 16, Sebzés: 2k6, STP: 30 Méretkategória: 4",
+            "title": "Hosszú bot statisztikák",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "Rövid bot",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "Időigény: 3, KÉ: 8, TÉ: 12, VÉ: 12, Sebzés: 1k6+2, STP: 20 Méretkategória: 3",
+            "title": "Rövid bot statisztikák",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "5. Tonfa",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "Elsőként a niarei határvidék hegyi szerzetesei alkalmazták. 40-50 ynevi hüvelyk hosszú, általában szögletes, egyes területeken kerek átmetszetű fa, melynek egyik végén mintegy 15 hüvelyknyire merőlegesen keresztül áll. Célja a pusztakezes technikák támogatása. A markolatnál fogva, a hosszabb részt az alkarhoz szorítva tartják, innen lendítik íves mozdulattal előre. Hárításra többnyire a leszorított hosszabb, míg ütésre a rövidebb részt használják, ám ez egyáltalán nem törvényszerű.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "Időigény: 5, KÉ: 5, TÉ: 10, VÉ: 15, Sebzés: 1k10, STP: 20 Méretkategória: 3",
+            "title": "Tonfa statisztikák",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "6. Holdsarló (hagai)",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "Lényegében egy rövid fanyélre erősített sarló, melynek borotvaéles pengéje iskolánként és tájanként különböző formájú. Irányzatai megegyeznek abban, hogy főfegyvernek tekintik; még pusztakezes technikákat sem tanítanak mellé (azokat többnyire előbb szokás elsajátítani). Forgatását igen nehéz megtanulni, a kezdők gyakorta komoly sérüléseket okoznak saját maguknak. Általában a nyéllel hárítanak, a pengét csak támadásra szokás használni. Amennyiben nem kívánnak ellenfelüknek komoly sebet okozni, úgy fogást váltanak és a nyéllel ütnek. Forgatják párban is, az egyiket ilyenkor bőrszíjjal a csuklójukra erősítik, hogy „ki tudják vetni”. Valódi mestere kevés van; két kicsiny iskola ismert széles körben – a Holdezüst Árnyék Tiadlanban és a Felhővilág Niarében.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "Időigény: 3, KÉ: 8, TÉ: 18, VÉ: 10+1, Sebzés: 1k10+1, STP: 20 Méretkategória: 3",
+            "title": "Holdsarló statisztikák",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "7. Nunchaku",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "Széles körben elterjedt, közismert harcművész fegyver. Két keményfa, esetenként fémből melyeket rövid szíj vagy lánc köt össze. A bot többnyire azonos hosszúságú a könyök és a tenyér közepe közti távolsággal, átmetszete hengeres. Pusztakezes harcot oktató iskolák kiegészítő fegyvere; általában kevéssé bonyolult, gyors és erős ütésekre használják, a látványos pörgetések csupán gyakorlásra vagy bemutatóra valók. Éles küzdelemben meglehetősen nehéz kiszámítani, miként viselkedik a célba érő nunchaku: ferde felületen megcsúszik, keményről visszapattan, lágyban bennragad, stb.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "Időigény: 3, KÉ: 8, TÉ: 14, VÉ: 3, Sebzés: 1k10, STP: 20 Méretkategória: 3",
+            "title": "Nunchaku statisztikák",
+            "headers": [],
+            "rows": []
+        }
+    ]
+}

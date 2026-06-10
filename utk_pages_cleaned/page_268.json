@@ -1,0 +1,108 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": false,
+    "section_title": "",
+    "content_blocks": [
+        {
+            "type": "rule",
+            "title": "Meggyőzés",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "flavor_text",
+            "text": "„Igazat mondani nem nehéz, csak bebizonyítani művészet” — tartja a kyr mondás. Gyakorta a legkiáltóbb esetekben is lehetetlené válik akarat ellenére meggyőzni. Vagy azért, mert az igazság a legritkább esetben a tetszésünk szerint való, vagy mert büszkeségünkkel ellenkezik, hogy beismerjük tévedésünket. A Szakrális mágia ezen darabja, az igazság bebizonyításra szolgál."
+        },
+        {
+            "type": "paragraph",
+            "text": "A pap a fohász végrehajtása után meg tudja győzni állításai igazáról beszélgető – illetve vitapartnerét – ha azok valóban igazak. Ha az érvek, vagy állítások akár csak minimális olyan hazugságot is tartalmaznak, amelynek valótlan voltával a pap tisztában van, a fohász kudarcot vall. Aki a hatótávon belül elveti Mágiaellenállását, elfogadja a pap érveit, és belátja annak igazát. Ez azonban semmilyen cselekedetre nem kötelezi, és továbbá, a belátásától függ."
+        },
+        {
+            "type": "paragraph",
+            "text": "A fohász csak akkor működik, ha a pap olyan nyelven beszél, amelyet a hallgatóság megért, s emellett látják is egymást. A fohász nem evilági és élőholt lényekre nem fejti ki hatását. A Meggyőzés időtartama addig tart, míg a pap be nem fejezi az érvelést."
+        },
+        {
+            "type": "rule",
+            "title": "Őrző aura",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A pap képes a hatótávolságon belül egy területet – amennyiben nem valamely más vallás felszentelt helyéről van szó – Őrző aurával ellátni. Amíg a fohász kifejti hatását, a pap értesül a közeledő lényekről, amint azok elérik az Őrző aura határát."
+        },
+        {
+            "type": "paragraph",
+            "text": "Az Őrző aura nem tudja kijátszani semmiféle láthatatlanság vagy álcázó mágia, sem a pszi Érzékelhetetlenség vagy Jelentéktelenség diszciplínája."
+        },
+        {
+            "type": "paragraph",
+            "text": "A hatótávolságon belül csak olyan idegen – nem a pap, illetve kompániájához tartozó személy által megidézett – mágia jöhet létre, melynek erőssége meghaladja az Őrző aura erősségét."
+        },
+        {
+            "type": "rule",
+            "title": "Parancs",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A pap képes egyszerű, legfeljebb néhány tagú parancs kiadására. A megfogalmazás több szavas is lehet, csak a feladat ne számítson összetettnek. Tipikus parancsok: „Takarodj!”, „Rohanj el!”, „Menekülj!”, „Hallgass!”, „Állj fel!”, „Feküdj a földre!”, „Támadd meg!”, „Ne védekezz!”. Remek ellenpélda a „Szolgálj!”. Ezt nem lesz képes teljesíteni, egyszerűen követni fogja a papot. A „Pusztulj!” utasításra az áldozat összerogy, mintha halott lenne, de az időtartam lejártával magához tér anélkül, hogy valójában bármi baja történt volna. Amennyiben a parancs félreérthető vagy nem egyértelmű, a mágia megtörik. Az öngyilkosságra való felszólítást figyelmen kívül hagyja, a fohász azonnal megtörik. A befolyásolt lény az időtartam lejártával tisztában lesz azzal, hogy a pap parancsára cselekedett."
+        },
+        {
+            "type": "paragraph",
+            "text": "A Parancs végrehajtásához a papnak látnia kell áldozatát és olyan nyelven szólnia hozzá, amit az megért. Az áldozat, ha elvetette Mágiaellenállását, akkor a tőle telhető legjobb képességei szerint megpróbálja végrehajtani a pap utasítását, amíg az időtartam tart."
+        },
+        {
+            "type": "paragraph",
+            "text": "A fohász nem evilági vagy élőholt lényekre nem fejti ki hatását."
+        },
+        {
+            "type": "rule",
+            "title": "Rettegés",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A fohász hatására a pap sokkal hatalmasabbnak és félelmetesebbnek tűnik ellenfelei szemében, szinte legyőzhetetlennek látszik. Ezért a hatótávolságon belül minden ellenfél megmenekülni kezd, ha nem sikerül a Mágiaellenállása. Az időtartam lejártával csak akkor térnek vissza, ha eredendően komoly céljuk volt a pappal és kísérőivel. Ily módon például titánollók bandája nem fog visszatérni, ha egyszer lélekszakadva elmenekült, hiszen továbbra is tartanak a pap hatalmától."
+        },
+        {
+            "type": "paragraph",
+            "text": "Ha mégis harcra kényszeríti őket, a Harc félelem hatása alatt negatív módosítóval küzdenek: KÉ: a támadóé, TÉ: -20, VÉ: +10, CÉ: —"
+        },
+        {
+            "type": "rule",
+            "title": "Szent tűz",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A fohász csak szabad ég alatt lehet megidézni, segítségével a pap tűzbe boríthatja ellenfelét. A papnak rá kell mutatnia az áldozatra, s hangosan zengenie kell istene nevét. Ennek hatására mintha maguk az istenek dühödtek volna meg az áldozatra, a fellegek közül lesújt egy lángoszlop, s tűzbe borítja a célpontot. A tűz az első körben Elemi tűz, s a fohász minden egyes E-je után 1k6 Sp-t sebez. A második és további körökben csak a meggyújtott anyagok természetes tüze sebzi az áldozatot, míg az el nem oltja ruháit és felszerelését. Minden gyúlékony anyag automatikusan lángra kap a fohász hatására."
+        },
+        {
+            "type": "rule",
+            "title": "Szétzúzás",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A fohász hűen tükrözi azt a tényt, hogy a Szakrális mágia sokszor messze többre képes, mint az Anyagi Sík energiáival manipuláló bármely más varázslási mód. A papok isteni forrású hatalma többször is megsérti a varázslók által leírt,"
+        }
+    ]
+}

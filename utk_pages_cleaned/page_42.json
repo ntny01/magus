@@ -1,0 +1,180 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": null,
+    "is_new_section": false,
+    "section_title": null,
+    "content_blocks": [
+        {
+            "type": "paragraph",
+            "text": "hat arra, hogy a szent emberek egyre-másra feltűnnek majd a nyomában, s népük számára fontos küldetések, feladatok elvégzésére kérik majd fel. Abban az esetben, ha korg nem vállalná ezeket, jobb, ha odébb áll a Keleti Barbárok földjéről, mert egyetlen sámán sem viseli el, ha választottja faképnél hagyja. Azonban, ha méltónak bizonyul a figyelemre, s kalandok során bizonyítja erejét és hatalmát, akkor idővel a sámánok kiválasztottjaként a szellemek kegyeltjévé válhat (Szellemek jóindulata 2 pontos Háttérrel kapja meg), illetve 10. Tsz. felett elnyerheti a sámánok legnagyobb adományát, a varázslatás képességét (Manalátó 2 pontos Háttér). Ekkorra azonban már valószínűleg a sámánok bajnokaként a karakter népe egyik legendás alakja, a Kán harcosa, ki sátrát a Nagy Kán sátra mellett vetheti fel, s ki első az osztozkodásnál, ahogy a lakomaasztal mellett is."
+        },
+        {
+            "type": "table",
+            "title": "A barbár induló képzettségei 1. Tapasztalati szinten",
+            "headers": [
+                "Induló képzettségek",
+                "Fok"
+            ],
+            "rows": [
+                [
+                    "Fegyverhasználat",
+                    "3. fok"
+                ],
+                [
+                    "2 Fegyverhasználat",
+                    "2. fok"
+                ],
+                [
+                    "Fájdalomtűrés",
+                    "3. fok"
+                ],
+                [
+                    "Harctéri gyakorlat",
+                    "3. fok"
+                ],
+                [
+                    "Harci láz",
+                    "2. fok"
+                ],
+                [
+                    "Pusztakezes harc",
+                    "2. fok"
+                ],
+                [
+                    "Fegyverismeret",
+                    "2. fok"
+                ],
+                [
+                    "Futás",
+                    "2. fok"
+                ],
+                [
+                    "Úszás",
+                    "2. fok"
+                ],
+                [
+                    "Vadonjárás (keleti sztyeppék)",
+                    "2. fok"
+                ],
+                [
+                    "Herbalizmus",
+                    "2. fok"
+                ],
+                [
+                    "Állatismeret",
+                    "2. fok"
+                ],
+                [
+                    "Szakma (vadászat)",
+                    "2. fok"
+                ]
+            ]
+        },
+        {
+            "is_new_section": true,
+            "section_title": "Erigowi számszeríjász",
+            "type": "paragraph",
+            "text": "Az erigowi hercegség legjelesebb gyalogos felderítői és portyázói a könnyűfegyverzetű számszeríjászok, akik elsősorban az ország déli vidékeinek erdeiből kerülnek ki. A déli országrész víg kedélyű, mókakedvelő lakói nem mennek a szomszédba egy kis furfangért, s akkor sem esnek kétségbe, ha vakmerő cselvetés vagy duhaj mulatság van a láthatáron. Már-már hagyományszámba megy a híres Sigranomói Íjász-ezreddel való versengésük, mely ritkán fajul komolyabb össze-tűzéssé, a folyamatos csúfolódás és az időről időre odadobott fricskák azonban állandóan napirenden vannak."
+        },
+        {
+            "type": "paragraph",
+            "text": "A csatamezőn azonban igen figyelmezett, már-már em-bertelen nyugalmukról, és szívósságukról híres felderítők és számszeríjászok, kiket leginkább portyázóként, az ellenséges sereg vezéreit, varázstudóit ritkító lövészekként vetnek be leggyakrabban a hercegség stratégiái."
+        },
+        {
+            "type": "paragraph",
+            "text": "Viseletük szegecsekkel megerősített avarszínre munkált bőrvért, melyet felvonulásokkor, illetve az egység szállás-helyein rangjukat jelző, tetteiket, csatáikat hirdető színes kendőkkel tarkítanak."
+        },
+        {
+            "type": "paragraph",
+            "text": "Kedvelt fegyverük a könnyű számszeríj mellett a kurta rövidkard, amelytől csak a legritkább esetben válnak meg. Gyorsan és hatékonyan változtatják helyüket, szinte a vé-rükben van a gyalogos portyázó harcmodor, mely rendkívül kockázatos és nehezen áttekinthető, ők azonban szinte min-dig sikerrel alkalmazzák. Ez leginkább taktikai ismereteiknek köszönhető – a hadakozás tudományát ifjabb korukban, már családjukban tanulják, s tervszerű kiképzésben is részesül-nek később."
+        },
+        {
+            "type": "paragraph",
+            "text": "Békeidőben vadászként, erdőjáróként élnek, ami nagyrészt magyarázatot nyújt speciális harcmodo-rukra. Nem idegen tőlük azonban a világi életmód sem, és – bár a szükség órájában hazájuk mindig számíthat rájuk – bizony az is előfordul, hogy Erigowon kívül bocsát-ják áruba fegyverüket."
+        },
+        {
+            "type": "paragraph",
+            "text": "Az erigowi számszeríjászok nem részesülnek különleges kiképzésben, mégsem alábecsülendő harcosok, szolgálati idejük mindössze öt esztendő."
+        },
+        {
+            "is_new_section": true,
+            "section_title": "Az erigowi számszeríjász különleges előnyei és hátrányai a Harcosnál leírtakon kívül:",
+            "type": "paragraph",
+            "text": "I. Ha értesül róla, hogy Erigowban hadállapot van, az eri-gowi íjász köteles azonnal és haladéktalanul szülőhazája védelmére sietni, bárhol tartózkodjék és bármit is csi-náljon éppen. Ellenkező esetben katonaszökevénynek minősül, és törvényen kívülivé nyilvánítják az Északi Szövetség egész területén."
+        },
+        {
+            "type": "paragraph",
+            "text": "II. Az Erigowi íjász a játék kezdetén saját fegyvervezettel rendelkezik, amelyért nem kell pénzzel fizetnie: a her-cegségi fegyverbarátokból utalták ki neki leszerelésekor. A fegyverzet tartozékai: szegecselt bőrvért, vadász szám-szeríj, rövid kard."
+        },
+        {
+            "type": "table",
+            "title": "Az erigowi számszeríjász induló képzettségei 1. Tapasztalati szinten:",
+            "headers": [
+                "Képzettségek",
+                "Fok"
+            ],
+            "rows": [
+                [
+                    "Fegyverhasználat (vadász számszeríj)",
+                    "3. fok"
+                ],
+                [
+                    "Fegyverhasználat (egykezes kardok)",
+                    "2. fok"
+                ],
+                [
+                    "Fegyverismeret",
+                    "2. fok"
+                ],
+                [
+                    "Csapdaállítás",
+                    "1. fok"
+                ],
+                [
+                    "Futás",
+                    "2. fok"
+                ],
+                [
+                    "Úszás",
+                    "2. fok"
+                ],
+                [
+                    "Vadonjárás (mérsékelt égövi erdő)",
+                    "2. fok"
+                ],
+                [
+                    "Nyomolvasás",
+                    "2. fok"
+                ],
+                [
+                    "Kocsmai verekedés",
+                    "1. fok"
+                ],
+                [
+                    "Jelbeszéd",
+                    "1. fok"
+                ],
+                [
+                    "Lopódzás",
+                    "+25%"
+                ],
+                [
+                    "Rejtőzködés",
+                    "+25%"
+                ]
+            ]
+        },
+        {
+            "is_new_section": true,
+            "section_title": "Az erigowi számszeríjász képzettségei, melyeket iskolájától az Oktatás képzettség 4. foka által nyújtott előnyei közül tanulhat:",
+            "type": "paragraph",
+            "text": "Akrobatika, Csapdaállítás, Esés, Fájdalomtűrés, Fegyver-használat, Fegyverismeret, Futás, Hadvezetés, Harctéri gya-korlat, Jelbeszéd, Lélektan, Mászás, Mechanika, Művészetek (Rajz), Nyomolvasás, Számtan/mértan, Taktika, Térképészet, Úszás, Vadonjárás."
+        },
+        {
+            "is_new_section": true,
+            "section_title": "Siedon (gorviki szabad harcos)",
+            "type": "paragraph",
+            "text": "Az öt részre szakadt, szüntelenül forrongó Gorvik har-cászati viszonyai meglehetősen eltűnnek mindattól, amit ha-gyományosan lehetne nevezni. Ennek megfelelően az itt nevelkedett harcosok helyzetét sem tekinthetjük tipikus-nak. A nyilvánosság előtt zajló viszályoknak errefele inkább a különböző lovagés paplovagrendek a főszereplői, a har-cosiskolákból kikerülő fegyverforgatók inkább a háttérben tevékenykednek. Nincs ezen mit csodálkozni, hiszen meste-reik a helyi háborús tradíciók alapján képzik ki őket. Márpe-dig gorviki felfogás szerint a nyílt hadviselés, a hosszadalmas"
+        }
+    ]
+}

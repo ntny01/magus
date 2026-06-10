@@ -1,0 +1,254 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": true,
+    "section_title": "Szabadulóművészet (III – Ügyesség)",
+    "content_blocks": [
+        {
+            "type": "rule",
+            "title": "Kínvallatás 4. fok",
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A már szinte művészetként hivatását gyakorló kínzómester áldozata 10 percenként köteles dobni, a vallató karakter +2 módosítóval dobhatja próbáját."
+        },
+        {
+            "type": "rule",
+            "title": "Kínvallatás 5. fok",
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A legendás hírű mester áldozatának öt percenként kell Akaraterő próbát dobnia, amely ellenében a vallató +3 módosítóval mérhet el dobni. A képzettség ilyen szintű alkalmazója már inkább a lelki kínzásban, áldozata személyiségének és akarerejének teljes megtörésében látja a megszerzni kívánt információhoz vezető utat, semmint a fizikai test fájdalmas szétrombolásában."
+        },
+        {
+            "type": "paragraph",
+            "text": "A karakter szorongatott helyzetekből, csapdákból, kötelékekből, leláncolva, vagy lelakatolt szerkezetekből juthat ki ily módon. A szabaduláshoz sikeres próbát kell dobnia a leírásban szereplő módosítókkal, a csapdát vagy a köteléket megalkotó vonatkozó próbája ellenében."
+        },
+        {
+            "type": "rule",
+            "title": "Szabadulóművészet 1. fok",
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A képzettséggel ismerkedő karakter már megpróbált kioldani egy csuklóra kötött csomót, nem túl nagy sikerrel. Egyelőre még csak tanulmányozza a régiek meséit és ha gúzsba kötnék nagy levegőt vesz, hogy azt majd kifújva szabadulhasson, szükséges próbáját -1 módosítóval dobhatja."
+        },
+        {
+            "type": "rule",
+            "title": "Szabadulóművészet 2. fok",
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A karakter már gyakorlott szabaduló. Egy csomó, vagy szíj nem állja útját, ismeri a láncok trükkjeit is, szükséges próbáját módosító nélkül dobhatja."
+        },
+        {
+            "type": "rule",
+            "title": "Szabadulóművészet 3. fok",
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A karakter teste szinte gumiból van, nem nagyon létezik olyan kaloda, vagy csapda, amiből ne tudna szabadulni, szükséges próbáját +1 módosítóval dobhatja."
+        },
+        {
+            "type": "rule",
+            "title": "Szabadulóművészet 4. fok",
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A karakter igazi mestere a szabadulásnak, trükkjeit már víz alatt, teljes sötétségben, vagy egyéb a KM által engedélyezett zavaró körülmény között is alkalmazhatja, szükséges próbáját +2 módosítóval dobhatja."
+        },
+        {
+            "type": "rule",
+            "title": "Szabadulóművészet 5. fok",
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A karakter igazi nagy művész, már bármilyen kötelékből, bilincsből képes kijutni, ahonnét mágia alkalmazása nélkül is lehetséges, szükséges próbáját +3 módosítóval dobhatja."
+        },
+        {
+            "type": "rule",
+            "title": "Szerencsejáték (II – Ügyesség, Intelligencia)",
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A szerencse forgandó, de néha segíthetünk neki egy kicsit... A legtöbb szerencsejáték hideg fejjel, vagy a partner alapos megfigyelésével sikeresebbé tehető a számunkra. Ha a játékos csalni is szeretne, hát lelke rajta, de ekkor egy átvert ellenfél haragjával is számolnia kell."
+        },
+        {
+            "type": "rule",
+            "title": "Szerencsejáték 1. fok",
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A kezdő szerencsejátékos még csak ismerkedik a szerencsejátékokkal, kultúrkörére egy-két játékát ismeri. A játék megnyerésére, vagy a csalásra irányuló próbáit -1 módosítóval dobja."
+        },
+        {
+            "type": "rule",
+            "title": "Szerencsejáték 2. fok",
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "Az igazán gyakorlott játékos már kultúrkörére 5 játékát ismeri. A próbáit módosító nélkül dobja."
+        },
+        {
+            "type": "rule",
+            "title": "Szerencsejáték 3. fok",
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A karakter kultúrkörére 10 játékát ismeri. A próbáit +1 módosítóval dobja. Ezen a szinten a karakter egy, a KM belátása szerint nehezített, sikeres próba után akár másra is terelheti a csalás gyanúját."
+        },
+        {
+            "type": "rule",
+            "title": "Szerencsejáték 4. fok",
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A karakter már a kártyalapok, különféle bábuk és zsetonok mestere, kultúrkörére 15 játékát ismeri, próbáit +2 módosítóval dobja. Ezen a szinten a karakter egy, a KM belátása szerint nehezített, sikeres próba után, akár másra is terelheti a csalás gyanúját úgy, hogy immáron kézzel fogható bizonyítékokat is képes kreálni. Lebuktatni csakis egy sikeres ellenpróbával lehetséges."
+        },
+        {
+            "type": "rule",
+            "title": "Szerencsejáték 5. fok",
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A karakter szinte mágikus képességekkel bír egy általa választott játéktípusban, ebben próbadobásához +4, a többi általa ismert játékban +3 módosító járul. Valószínűleg már kidolgozott egy-két játékot maga is."
+        },
+        {
+            "type": "rule",
+            "title": "CsapdakERESÉS (I – Érzékelés)",
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A csapdák felkutatásának képessége %-ban mérve. A képzettség 30%-os ismerete még zsenge kezdett jelent, az igazi kalandorok és tolvajok képessége 50% felett mozog."
+        },
+        {
+            "type": "rule",
+            "title": "Lopódzás (Ügyesség, Érzékelés)",
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A karakter lopakodási képessége %-ban mérve. Az éjszakai légyottokról hazasettenkedő ifjú feleségek képességei 30% körül mozognak, míg egy képzett fejvadász vagy tolvaj 50-60%-kal bír."
+        },
+        {
+            "type": "rule",
+            "title": "Lopódzás Módosítók",
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "table",
+            "headers": [
+                "Módosító",
+                "Érték"
+            ],
+            "rows": [
+                [
+                    "Teljes sötétség",
+                    "+20%"
+                ],
+                [
+                    "Kőpadló",
+                    "+10%"
+                ],
+                [
+                    "Vastag szőnyeg",
+                    "+20%"
+                ],
+                [
+                    "Száraz avar",
+                    "-20%"
+                ],
+                [
+                    "Kavicságy",
+                    "-10%"
+                ],
+                [
+                    "Nyikorgó fapadló",
+                    "-20%"
+                ]
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Rejtőzés (Ügyesség, Érzékelés)",
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A karakter rejtőzködőképzettsége %-ban mérve. Egy vadorzó, aki rendszeresen a cserjésben keres menedéket a herceg emberei elől birtokolja a képzettséget 30% körül, míg egy képzett tolvaj vagy orgyilkos már akár 60%-kal rendelkezik. A módosítók a KM döntésétől függően változhatnak."
+        },
+        {
+            "type": "rule",
+            "title": "Rejtekhelykutatás (Érzékelés)",
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A karakter titkosajtó és egyéb rejtekhelykutató képessége %-ban mérve. A perlekedő, házsártos feleség, ki ura eldugott pálinkáját rendszeresen felkutatja 20%-kal bír, míg egy képzett besurranó már 60%-ot is birtokolhat."
+        },
+        {
+            "type": "rule",
+            "title": "Zárnyitás (Ügyesség, Érzékelés)",
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A karakter zárnyitó tudománya %-ban kifejezve. A képzettség már magában foglalja a képzettséghez szükséges minimális és célirányos mechanika tudományát. A betörő tolvajok bírnak 20-30%-kal e képzettségből, hivatásos kasszafúró társaik majd 60-80%-kal bír, itt már a KM megkövetelheti a Mechanika képzettség elsajátítását is."
+        },
+        {
+            "type": "paragraph",
+            "text": "A karakter csakis a szükséges segédeszközök birtokában képes alkalmazni a képzettséget. A jobb vagy gyengébb minőségű eszközök a KM által megítélt negatív vagy pozitív módosítókkal befolyásolhatják a próbadobást."
+        }
+    ]
+}

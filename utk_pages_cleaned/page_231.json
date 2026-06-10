@@ -1,0 +1,70 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": true,
+    "section_title": "3. fokú diszciplínák",
+    "content_blocks": [
+        {
+            "type": "rule",
+            "title": "Asztrálszem",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "Az Asztrálszem mások érzelmeinek, indulatainak kifürkészésére alkalmas, az Auraérzékeléshez hasonlóan az Aurát vizsgálja, de annál célirányosabb módon, az Asztrálsík felől. A diszciplína ellen az áldozat Asztrális Mágiaellenállásra jogosult. Amennyiben az sikeres, a diszciplína alkalmazója nem jutott át a kiszemelt áldozat Asztrális védelmén, így semmilyen információhoz nem juthat. Ha a diszciplína erőssége elegendő ahhoz, hogy az alkalmazó átlásson a pajzsokon, akkor az Aura rétegeire vethet pillantást. Mindenféle egyéb ismeret nélkül képes hozzávetőlegesen megállapítani az illető érzelmi kiegyensúlyozottságát, azaz az Asztrál Tulajdonságát. Az Aura ezen rétegeiben fellelhető valamennyi információhoz hozzájuthat, természetesen csak azokhoz, amelyek az áldozat Asztráltestével kapcsolatosak, ha sikerül rétegenként 2 E-vel áttörni a célpont ME-jét."
+        },
+        {
+            "type": "paragraph",
+            "text": "A diszciplína egyszerre egyetlen személy ellen alkalmazható, és a feltüntetett 1 kör alatt a teljes információcsere lezajlik. Az Asztrálszem használatáról a diszciplína áldozata nem szerez tudomást, hacsak nem védekezik Membránnal."
+        },
+        {
+            "type": "rule",
+            "title": "Mentálszem",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "A Mentálszem felépítését tekintve, az Asztrálszemmel rokon diszciplína egyetlen személy gondolati életének minőségéről ad felvilágosítást."
+        },
+        {
+            "type": "paragraph",
+            "text": "A diszciplína használat ellen a kiszemelt áldozat Mentális Mágiaellenállásra jogosult. Ha az sikeres, akkor az alkalmazó semmit nem tud meg kiszemelt áldozatáról."
+        },
+        {
+            "type": "paragraph",
+            "text": "Ha az áldozat elveti a Mágiaellenállását, a diszciplína alkalmazója az Aura rétegeit figyelheti meg, valamint az Intelligencia Tulajdonság értékét. Ráadásul az Aura rétegeiben fellelhető valamennyi információhoz hozzájuthat. Természetesen csak azokhoz, amelyek az áldozat Mentáltestével kapcsolatosak, s csak akkor, ha sikerül rétegenként 2 E-vel áttörni a célpont ME-jét. Sikeres támadás esetén a diszciplína alkalmazója ilyen esetben arról is tudomást szerez, ha az illető Mentálfonál köti össze valakivel."
+        },
+        {
+            "type": "paragraph",
+            "text": "A diszciplína egyszerre egyetlen személy ellen alkalmazható, és a feltüntetett 1 kör alatt a teljes információcsere lezajlik. A Mentálszem használatáról a diszciplína áldozata nem szerez tudomást, hacsak nem védekezik Membránnal."
+        },
+        {
+            "type": "rule",
+            "title": "Mágikus tekintet",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "A diszciplína a Kyr Metódus egyik telepatikus csúcspontját jelenti. Kifejezetten újkeletű, bár évek alatt széles körben elterjedt; kifejlesztése egy Ynev-szerte csak a Smaragd Uraként ismert pyarroni mágus nevéhez fűződik. Alapja az okkult tan, miszerint az anyagi porhüvelyben a szem a legrövidebb út a lélek felé. Éppen ezért az alkalmazónak minden esetben a kiszemelt áldozat szemébe kell néznie."
+        },
+        {
+            "type": "paragraph",
+            "text": "Bárki, aki a diszciplína alkalmazójának szemébe néz, Akaraterő próbát köteles dobni az erősítésnek megfelelő negatív módosítóval, amit ha elvét nem képes tekintetét a varázslóétól elszakítani. Bármit tehet, hátrálhat, akár rá is támadhat az alkalmazóra, de nem cselekedhet semmi olyat, minek eredményeként kiszabadulna a Mágikus tekintet béklyójából. A Mágikus tekintettől csak akkor szabadulhat, ha az alkalmazó – tekintetének elfordításával – szabadon engedi, illetőleg ha harmadik személy akár csak egy szemvillanásra is akadályt gördít a két pillantás keresztezésébe."
+        },
+        {
+            "type": "paragraph",
+            "text": "Ha az áldozat kiszabadult, a diszciplína időtartama azonnal lejár, egyébként percekig, órákig, de elméletileg akár a végtelenségig is tarthat."
+        },
+        {
+            "type": "paragraph",
+            "text": "A varázsló az ellen a személy ellen, aki Mágikus tekintetének rabja, magasabb hatásfokon képes diszciplínákat, illetve Asztrál- és Mentálmágiát alkalmazni. Ami természetesen feltételezi, hogy az áldozat közben nem szabadul. Varázslatai Erősségéhez a Mágikus tekintet Erősségét adhatja hozzá."
+        },
+        {
+            "type": "paragraph",
+            "text": "A varázslat vagy diszciplína létrejöttével – de még időtartamának lejártával sem – az áldozat nem szabadul a Mágikus tekintet bilincséből. Ez csak a fent említett esetekben történhet, addig a varázsló annyiszor hat rá a leírt kedvezménnyel, ahányszor csak jónak látja, illetve ameddig Mana vagy Ψ-pontjai el nem fogynak."
+        }
+    ]
+}

@@ -1,0 +1,100 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": false,
+    "section_title": "",
+    "content_blocks": [
+        {
+            "type": "rule",
+            "title": "Bomlás megfékezése",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "Mana pont: 10 Varázslás ideje: 1 perc Időtartam: 1 nap/szint"
+        },
+        {
+            "type": "paragraph",
+            "text": "A varázslat egy bármilyen állapotban lévő holttestet, illetve annak nedveit és sóit őrzi meg épségben. A boszorkánymester kezéből elillanó energiák indákként fonják körbe a tetemet, lassan bekúsznak száján, orrán, fülén, s egy szegmensre túlvilági fénnyel derengenek föl."
+        },
+        {
+            "type": "paragraph",
+            "text": "A szentségtelen energiák ezután távol tartják a porhüvelytől a férgeket és más holt hússal táplálkozó dögevőket, megfékezik a rothadás folyamatát, a varázslat időtartamára felfüggesztve a test bomlását (nemcsak a látható nyomokat tünteti el, de elleplezi a tetemből áradó hullabűzt is)."
+        },
+        {
+            "type": "paragraph",
+            "text": "A varázslat időtartamának lejártával a bomlás fokozott sebességgel játszódik le: a test látványosan oszlásnak indul, húsa kiszikkad és lefoszlik, a csontok megsárgulnak."
+        },
+        {
+            "type": "rule",
+            "title": "Halottak nyelve",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "Mana pont: 5 Varázslás ideje: 3 szegmens Hatótáv: Önmagam Időtartam: 1 perc/szint"
+        },
+        {
+            "type": "paragraph",
+            "text": "A boszorkánymester lidércekkel és más kísértetekkel, valamint saját teremtményeivel sem képes emberi nyelven szót váltani, míg csak lelket nem idéz beléjük. Ha mégis ez áll szándékában, a halottak különös, soha nem létezett nyelvén kell szólnia, melyet élők a mágia törvényei szerint soha nem sajátíthatnak el."
+        },
+        {
+            "type": "paragraph",
+            "text": "A varázslat segítségével az Időtartam alatt, a boszorkánymester beszéli és érti a Halottak nyelvét, ami furcsa, sikoltáshoz és nyögésekkel, elhaló suttogással és zihálással terhes hátborzongató hangok kavalkádjából áll. Külső szemlélő számára a boszorkánymester pusztán maga elé mered, és néha érthetetlenül mormog, míg az alkalmazó nemcsak hallja, látja is a síron túli teremtmények felé sugárzott gondolatait, érzelmeit. Ezek olyannyira távol esnek az élők világától, annyi keserűség és harag gyülemlett fel bennük, hogy az nem ritkán a boszorkánymester elméjének épségét veszélyezteti. Gyakran előfordul, hogy a varázslat alkalmazása közben elered az orra vére, vagy nyál csordul le a szája szélén, körmeivel mélyen saját húsába mar vagy véreset köhög."
+        },
+        {
+            "type": "paragraph",
+            "text": "Természetesen a varázslattal is csak értelemmel, intelligenciával – felruházott élőhalottakkal társaloghat érdemben: győzködheti őket, hogy szegődjenek a szolgálatába; ígérettel, fenyegetéssel ráveheti őket valamely feladat teljesítésére. Minél intelligensebb egy élőhalott, annál erősebben ragaszkodik a létezéshez. Ha tehát a boszorkánymester hatalma elegendő az elpusztítására, és főként, ha efelől őt is meggyőzi, az erő pozíciójából tárgyalhat. A fent említett módok bármelyikén kicsikarhatja a szolgálatot, nincs szükség Élőholt parancsnoklás varázslatra, elnyerte az élőholt(ak) kétes hűségét."
+        },
+        {
+            "type": "rule",
+            "title": "Élőholt teremtés",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "Mana pont: 20 Varázslás ideje: 1 perc Időtartam: Maradandó"
+        },
+        {
+            "type": "paragraph",
+            "text": "A boszorkánymester a varázslat új életet lehelhet egy halottba. Bár az élet nem szerencsés kifejezés, hiszen a lélek és értelem nélküli testet csak egyfajta torz energia mozgatja. A boszorkánymester egy síkok között rekedt, ellenállni is képtelen alacsonyrendű Mentállényt, vagy eltorzult léleksíránt plántál teremtményébe. Az így alkotott lényt nevezzük tudattalan élőhalottnak. A varázslat egyetlen Életerő ponttal ruházza fel az élőhalottat – a boszorkánymester teremtménye további ÉP-ről az Életerővel felruházás nevű varázslattal gondoskodhat. Az átadott Életerő pontokat a boszorkánymester vagy saját magától vonja el, vagy mástól rabolja. Egy élőhalottban maximálisan annyi ÉP tárolható, mint amennyit a lény életében is hordozott."
+        },
+        {
+            "type": "paragraph",
+            "text": "Természetesen az élőhalott már 1 ÉP-vel is „életképes”, ám ajánlatos továbbiakkal is ellátni, mert a mozgását biztosító energia csak addig marad a testben, míg az élőhalott életerő pontjai el nem fogynak. Ha pedig ez megtörténik, az élőhalott elpusztul. Amennyiben a test nem sérül súlyosan, akár újból élőhalottá teremthető belőle. Az ilyen élőhalottak sorolhatók a Necrografia I. osztályába, a tudattalan élőhalottak közé."
+        },
+        {
+            "type": "paragraph",
+            "text": "A megteremtett élőhalottba a boszorkánymester egyetlen egyszerű parancsot plántálhat – ez lesz a teremtmény „életcélja”. Értelme, tudata ezen egyetlen alap-parancsra korlátozódik, a maga határtalanul ostoba, korlátolt módján (Intelligencia 1) mindent megtesz ennek végrehajtása érdekében. A parancs ilyen lehet: „Ölj!”, „Őrizz!”, „Senki nem léphet be az ajtón!”. Látni kell tehát, hogy a megfogalmazás több szavas is lehet, csak a feladat ne számítson összetettnek. Remek ellenpélda a „Szolgálj!”: ezt nem lesz képes teljesíteni, egyszerűen vakon követi teremlőjét."
+        },
+        {
+            "type": "rule",
+            "title": "Élőholt idézés",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "Mana pont: 10 Varázslás ideje: 1 kör Hatótáv: 100 láb Időtartam: 1 perc/szint"
+        },
+        {
+            "type": "paragraph",
+            "text": "A varázslat segítségével a boszorkánymester egy képletes „kiáltást” hallat a síkok között, amire halandó fül nem, csak az élétből távozott, de a léthez mindennél jobban kapaszkodó lelkek figyelnek fel. A boszorkánymester egyetlen módon csábíthatja őket magához: a vér, a velő, az élet ígéretével. A különböző típusú élőhalottak közös tulajdonsága ugyanis, hogy határtalanul és engesztelhetetlenül gyűlölik mindazokat, akiknek még megadatott az élet élvezete."
+        },
+        {
+            "type": "paragraph",
+            "text": "A 100 ynevi láb sugarú kör területén a boszorkánymester magához szólíthat minden élőhalottat. Azok köré gyűlnek, de csak akkor engedelmeskednek parancsainak, ha önálló akarattal nem rendelkeznek, pusztán annyi értelemmel, hogy a parancs tartalmát felfogják (például közönséges éji rémek, amilyen az Izar, a Bosszúálló vagy a Múmia)."
+        },
+        {
+            "type": "paragraph",
+            "text": "Őket a boszorkánymester könnyedén befolyásolhatja, és pislákoló tudatukat sem nehéz maga alá gyűrnie, így azok vakon engedelmeskednek neki. A varázslattal maximum Tapasztalati szintjével megegyező számú élőholtra terjesztheti ki hatalmát, választása szerint. A többi teremtmény, akik szintén a boszorkánymester köré gyűltek, de nem kerültek a varázslat hatása alá, törvényszerűen megtámadják őt, amiért zaklatta síron túli nyugalmukat. Egy így boszorkánymester százszor is meggondolja, hogy egy élőhalottak megszállta területen alkalmazza-e a varázslatot vagy sem."
+        },
+        {
+            "type": "paragraph",
+            "text": "Az intelligens élőhalottak akkor engedelmeskednek, ha érdekeik is ezt kívánják (például az életerővel táplálkozó szellemek, amilyen a Lesath és a Hatyasa). A boszorkánymester, ha megfelelő módon tárgyal velük, és kellő ellenszolgáltatást ígér, netán képes megfélemlíteni őket, ideiglenesen elnyerheti szolgálatukat. Ám jobb, ha mindig észben tartja, hogy az önálló akarattal rendelkező élőhalottak velejéig romlottak, lelküket annyira elgyötörte a lét nélküli lét, hogy gondolati sémáik az álnokság legmélyebb vermeiben merítkeztek meg."
+        }
+    ]
+}

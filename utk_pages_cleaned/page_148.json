@@ -1,0 +1,28 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": false,
+    "section_title": "",
+    "content_blocks": [
+        {
+            "type": "paragraph",
+            "text": "A karakter a képzettség ezen fokán csak barátságos és intelligens állatokat taníthat be kunsztokra, egyszerűbb parancsok követésére. Ilyen állatok pl. a kutya és a ló."
+        },
+        {
+            "type": "paragraph",
+            "text": "A gyakorlott idomár már képes mindenféle háziállat idomítására, esetleg ezek vad rokonait is magához szoktathatja, de komolyabb eredményeket még nem érhet el velük."
+        },
+        {
+            "type": "paragraph",
+            "text": "A szakavatott karakter egyre inkább elsajátítja az idomítás művészetét, kevésbé barátságos vagy intelligens állatokat taníthat, akár vadállatokat is kiképezhet egyszerűbb munkákra, és a háziállatokat már komolyabb feladatokra is oktathatja."
+        },
+        {
+            "type": "paragraph",
+            "text": "A karakter már bármilyen kunszt betanítására képes az adott állat számára feltéve, hogy az fizikailag képes rá. Ezen a szinten válik elérhetővé az állati harcostársak kiképzésének tudománya."
+        },
+        {
+            "type": "paragraph",
+            "text": "Ezen a szinten már igazi kalandozótársat nevelhet a karakter a választott állatból, aki helyette őrködik, megvédelmezi, vagy intelligenciájának függvényében, megfelelő feladatokat hajt végre önállóan. Az állat és gazdája között egyfajta asztrális kapcsolat jön létre, amely nem nevezhető a szó szoros értelmében kommunikációnak, inkább afféle benyomások és hangulatok villanásnyi cseréjének."
+        }
+    ]
+}

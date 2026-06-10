@@ -1,0 +1,167 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": false,
+    "section_title": "",
+    "content_blocks": [
+        {
+            "type": "paragraph",
+            "text": "Több különálló tárgy is szolgálhatott alapanyagot a megformázni kívánt egyetlen holmihoz. Ilyenkor azok összeolvadnak. Ha eleve több különböző minőségű anyagból álló tárgyat kívánunk átformázni, akkor a végtermékben is érvényesül azok egymáshoz viszonyított aránya."
+        },
+        {
+            "type": "paragraph",
+            "text": "Ha a varázslat Időtartama lejár, a tárgy visszaalakul eredeti formájára, mivel a változást előidéző manatöbblet elillan a tárgyból."
+        },
+        {
+            "type": "rule",
+            "title": "Átalakítás",
+            "headers": [
+                "Mana pont",
+                "Időtartam",
+                "Varázslás ideje"
+            ],
+            "rows": [
+                [
+                    "1/1 ynevi font vagy fél ynevi font vagy 1 ynevi lat",
+                    "1 kör",
+                    "1 kör"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A varázsló az anyag minőségét változtathatja meg, de csak az adott anyagcsoporton belül. A tárgy halmazállapota, formája nem változik, színe is csak akkor, ha ezt az anyagminőség változása indokolttá teszi. Az átalakítás során az anyag térfogata a mérvadó: pontosan ugyanakkora, és ugyanolyan formájú marad, ám a súlya megváltozik."
+        },
+        {
+            "type": "paragraph",
+            "text": "Mana pontonként az anyagcsoporttól függően 1 ynevi font (I. csoport), 1/2 ynevi font (II. csoport), vagy 1 ynevi lat (III. csoport) anyag alakítható át."
+        },
+        {
+            "type": "paragraph",
+            "text": "Szigorú megkötés, hogy a varázsló csak olyan anyaggá képes bármit is átalakítani, melynek összetételét ismeri. Például méreggé való átalakításhoz bírnia kell a Méregkeverés vagy az Alkímia, netán a Herbalizmus képzettséggel."
+        },
+        {
+            "type": "paragraph",
+            "text": "A varázslattal élőlények is átalakíthatóak, bármely az I. csoportba tartozó anyaggá (például kővé változtatás). Vagy éppen fordítva, sárból is gyúrható élőlény teste, ám az efféle teremtmény nem fogja magában hordozni az Élet princípiumát, ezért nem számít élőlénynek, csak homonkulusznak."
+        },
+        {
+            "type": "paragraph",
+            "text": "Ha a varázslat Időtartama lejár, a tárgy visszanyeri eredeti minőségét. A Mp-igény kiszámításánál a kiindulási tárgy súlya a mérvadó, nem a keletkezőé."
+        },
+        {
+            "type": "rule",
+            "title": "Átváltoztatás",
+            "headers": [
+                "Mana pont",
+                "Időtartam",
+                "Varázslás ideje"
+            ],
+            "rows": [
+                [
+                    "1/1 ynevi font",
+                    "1 kör",
+                    "1 kör"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "Ha a varázsló élőlényt – mely tartalmazza az Élet princípiumát – más élőlénnyé változtat át, az ynevi fontonként 1 Mp-be kerül (I. csoport). Az összérték kiszámításakor azon teremtmény súlya a mérvadó, amelyik a nehezebb. A varázslat során az áldozat szemmel is követhetően változik át (ruhái, felszerelése nem)."
+        },
+        {
+            "type": "paragraph",
+            "text": "Az élőlények azonban lélekkel bírnak, és Személyes Aurát sugároznak ki, ami – mint tudjuk – gátat szab a Természetes Anyag Mágiaja alá tartozó összes varázslatnak. Élőlényt tehát átváltoztatni is csak úgy lehetséges, hogy előbb vagy kiemeljük a lelkét a testéből, vagy megszüntetjük a védő kisugárzást (lásd Személyes Aura)."
+        },
+        {
+            "type": "paragraph",
+            "text": "A varázsló csak olyan teremtménnyé képes bárkit is átváltoztatni, mely teremtmény anatómiáját, szerveit, testi felépítését ismeri, tehát rendelkeznie kell az Élettan képzettség 3. fokával. Minél alaposabban ismeri, annál nagyobb a valószínűsége, hogy az új kreatúra életképes lesz. Ha nem életképes, és a varázslat Időtartama alatt meghal, az Időtartam lejártával hiába változik vissza, nem kel újra életre."
+        },
+        {
+            "type": "paragraph",
+            "text": "Az I. anyagcsoport anyagaiból (például sárból) is lehetséges élőlényt, legalábbis ahhoz hasonló homonkuluszt gyúrni (Átformázás, majd Átalakítás varázslattal). Ám ne feledjük, hogy az Élet princípiumát ez a test nem hordozza, így az efféle teremtmény nem élőlény, így nem is változtatható át."
+        },
+        {
+            "type": "paragraph",
+            "text": "A Időtartam lejártával a kreatúra visszaváltozik az eredeti élőlénnyé."
+        },
+        {
+            "type": "rule",
+            "title": "Visszaváltoztatás",
+            "headers": [
+                "Mana pont",
+                "Időtartam",
+                "Varázslás ideje"
+            ],
+            "rows": [
+                [
+                    "1/1 ynevi font",
+                    "Végleges",
+                    "1 kör"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A varázsló az átvagy anyaggá változtatott (kővé változtatott) élőlényt annak lelke alapján újraalkotja. 1 Mp-ért 1 ynevi fontnyi súlyú lény változtatható vissza. Egyszerűbb azonban úgy fogalmazni, hogy egy élőlény visszaváltoztatásához annyi Mp szükséges, amennyi a teremtmény igazi testének (visszaváltoztatott) súlya."
+        },
+        {
+            "type": "paragraph",
+            "text": "Természetesen, ha a tudat ébren van, és nem kívánja a visszaváltoztatást, akkor a Személyes Aura miatt az nem működik."
+        },
+        {
+            "type": "paragraph",
+            "text": "Fontos megjegyezni továbbá, hogy a lélek az általa birtokolt valódi Anyagi Testről egyfajta idealizált képet őriz, vagyis: a visszaváltoztatás során a testről eltűnnek a forradások, a csonkítások; még a hiányzó végtagok is visszakerülnek a helyükre. A test ideális fizikai állapotában – azaz általában fiatalon, de semmiképpen sem szemben – alkotódik meg. (Ebben különbözik a varázslattal visszaváltoztatott élőlény az elváltoztatás Időtartamának lejártakor visszaalakulótól!)"
+        },
+        {
+            "type": "paragraph",
+            "text": "Az életkort a lélek (karakter esetében a játékos) határozza meg, ám ez nem lehet kevesebb a felnőtté válást jelentő kornál, és több annál, amennyit az illető már leélt. Ha ezt az elváltoztatáskor még nem érte el, akkor annyi esztendős lesz, amennyi akkor volt."
+        },
+        {
+            "type": "paragraph",
+            "text": "Elváltoztatott Homonkulusz nem változtatható vissza ezzel a varázslattal, csak Átformálással és Átalakítással, akár egy darab kő."
+        },
+        {
+            "type": "rule",
+            "title": "Transzmutáció",
+            "headers": [
+                "Mana pont",
+                "Időtartam",
+                "Varázslás ideje"
+            ],
+            "rows": [
+                [
+                    "Lásd a leírást!",
+                    "1 kör",
+                    "1 kör"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A varázslattal a különböző anyagcsoportok közötti átalakítás valósítható meg. Ez továbbra sem vonatkozik a mágikus anyagokra és a Személyes Aura által védett testekre és tárgyakra."
+        },
+        {
+            "type": "rule",
+            "title": "2 Mp-ért:",
+            "rows": [
+                [
+                    "1 ynevi font nemtelen anyagból 1/2 ynevi font fém vagy 1 ynevi lat nemesfém"
+                ],
+                [
+                    "1/2 ynevi font fémből 1 ynevi font nemtelen anyag vagy 1 ynevi lat nemes fémből 1/2 ynevi font fém vagy 1 ynevi font nemtelen anyag"
+                ],
+                [
+                    "1 ynevi lat nemes fém transzmutálható."
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "Transzmutáció során a tárgy formája nem változik, de a súlya – értelemszerűen – igen. Ez természetesen majdnem minden esetben jelentős méretcsökkenéssel, avagy növekedéssel jár (melynek során – mint már hangsúlyt nyert – a tárgy formája, alakja, halmazállapota nem változik!). További megkötés, hogy a varázsló csak olyan anyaggá képes bármit is transzmutálni, melynek összetételét ismeri (lásd Átalakítás)."
+        },
+        {
+            "type": "paragraph",
+            "text": "Az Időtartam lejártával a tárgy visszanyeri eredeti anyagi minőségét, miáltal mérete és súlya is változik."
+        }
+    ]
+}

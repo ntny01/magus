@@ -1,0 +1,112 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": false,
+    "section_title": "",
+    "content_blocks": [
+        {
+            "type": "paragraph",
+            "text": "A boszorkánymester egy, általa kiválasztott lényt évekkel öregíthet. A varázslat az alap költségen túl annyi Mana pontot igényel, amennyi évvel az áldozat öregszik. Ez esetben a varázslat időtartama mindössze Tapasztalati szintenként 1 nap, feltételével az áldozat visszafiatalodik eredeti életkorára."
+        },
+        {
+            "type": "paragraph",
+            "text": "A második módszer az alap MP-költségen túl évenként további 10 Mana pontba kerül, ám a hatás maradandó, és kiteljesedése után csupán mágiával szüntethető meg."
+        },
+        {
+            "type": "paragraph",
+            "text": "A varázslat különösen romboló hatással van a Nekromanciával szemben sokkalta érzékenyebb fajokra: az elfekre és félelfekre. Elfek esetében egyetlen évnyi öregítés 10 esztendőt rabol el az életéből, míg a félelféből egy év helyett kettőt."
+        },
+        {
+            "type": "paragraph",
+            "text": "Az öregedés jelei mindkét esetben azonnal megmutatkoznak: az áldozat gyengébbé, lassabb mozgásúvá válik, látása megromlik, arcán ráncok futnak végig, bőre megszárad, hajába őszes csíkok keverednek. Csak a test öregszik, a lélek nem, ami komoly belső konfliktusokhoz vezethet. A mindennapos cselekvések is nehezebbekké válnak, hiszen az áldozat nem lesz tisztában megöregedett testének tulajdonságaival, tűrőképességével."
+        },
+        {
+            "type": "rule",
+            "title": "Szentségtelen kapu",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "Ez az egyik legerősebb démonidéző mágiaforma. Észak tudós fői erre a varázslatra alapozzák azon nézetüket, miszerint a Boszorkánymesteri mágia egykoron emberek és démonok szentségtelen paktumából született. A feltevés nem nélkülöz minden valóságalapot, hiszen meglepő módon ez az idéző formula mindmáig közel tökéletesen őrizte meg eredeti formáját."
+        },
+        {
+            "type": "paragraph",
+            "text": "Alkalmazásához nem szükséges köröket és pentagrammákat rajzolnia a boszorkánymesternek, s idéző gyertyákra sincs szükség. Ez a leggyorsabb – ám legveszélyesebb és legkiszámíthatatlanabb metódus: a kántálás végeztével a boszorkánymester bal tenyeréből elővágódó éjszín villanás repedést hasít a Síkok között, melyen át lények özönlenek az Elsődleges Anyagi Síkra. Ezen túlvilági teremtmények kiválasztása a Kalandmester feladata, de irányelvként fontos lefektetni, hogy általában közdémonok érkeznek, démonurak, s főként démonhercegek soha."
+        },
+        {
+            "type": "paragraph",
+            "text": "A boszorkánymester bármikor bezárhatja a kaput, ám ez további 50 Mana pontot igényel."
+        },
+        {
+            "type": "rule",
+            "title": "Túlvilági birtok",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A varázslathoz a boszorkánymesternek saját vérének néhány cseppjével kell kijelölnie az adott területet. Ettől kezdve ott az Élet nem kívánatos Princípiummá lesz; a túlvilági energiák minden élet elpusztítására törekszenek majd. A mágia kiszipolyozza az életerőt a környezetből, a nagyobb növények látványosan elrohadnak, a fű kiszikkad, a föld felrepedezik és csak sivó, kiégett, fekete törmelék marad hátra."
+        },
+        {
+            "type": "paragraph",
+            "text": "A másvilági gyűlölet gennyes csomókba gyűlik, ahogy az Asztrálisík szennyes hullámokat vet, és megmételyezi az anyagi világot. Ha értelmes lény lép át a vérrel kijelölt kör vonalát, jeges borzongás markol a gyomrába, hullahúzt érez, és páni félelem fogja el. Minden élőlénytől, aki az érintett területen tartózkodik, vagy oda belép, a Túlvilági birtok körönként 1K6 Fp életenergiát oroz el. Ha Fp-i elfogynak, elájul, s a továbbiakban már Ép-i csökkennek – ezek nullára csökkenésekor életét veszti. Ha pedig halála után sem távolítják el onnan, szellemként reked a világok között (bővebben lásd a Necrografia leírásánál)."
+        },
+        {
+            "type": "paragraph",
+            "text": "Az állatok messzire elkerülik az ilyen területeket, míg az élőholtakat – ha tartózkodnak a környéken – ellenállhatatlanul vonzza magához. A boszorkánymester, ha életét veszti, és nem temetik el szertartásosan, közvetlenül a sírja fölött egy éven belül Túlvilági birtok alakul ki."
+        },
+        {
+            "type": "paragraph",
+            "text": "A varázslatot csakis a terület középpontján végrehajtott papi Szertartás varázslattal vagy varázslói Destrukcióval lehet megszüntetni."
+        },
+        {
+            "type": "rule",
+            "title": "Enyészet posványa",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "Sokban hasonlít a Túlvilági birtok varázslathoz. A megátkozott területen a rothadás és az enyészet sebessége többszörösére gyorsul. A folyamat szemmel nem követhető, annál jóval lassabban zajlik, ám a természetes sebességnek így is vagy százszorosa. Minden tárgy gyorsan széthull, a szövetek és fatárgyak egy-két napig maradnak csak használhatók."
+        },
+        {
+            "type": "paragraph",
+            "text": "A területen tartózkodó, vagy oda betévedő lények percenként kötelesek fertőzés elleni Egészségpróbát dobni, különben a Rontásoknál leírt Rútság varázslat áldozatául esnek."
+        },
+        {
+            "type": "paragraph",
+            "text": "A terület és az átok feloldásának módja ez esetben is csak a papi Szertartás varázslat vagy a varázslói Destrukció."
+        },
+        {
+            "type": "rule",
+            "title": "Szépség elorzása",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A boszorkánymester képessé válik emberi vagy félemberi lények vérben megfürödve, szépségük elorzására. A különleges rituálé időtartamára a boszorkánymester Karizmája földöntúlivá, romlottan gyönyörűvé válik (20-as); vonzatai erővel telnek meg, kisugárzása láttán minden tiszta szívű, gondolkodó lényen, amennyiben kellemesen szerepet kap az Élet, iszonyat lesz úrrá, a balgákat és a sötétség Halál jellemű halandó szolgáit pedig hódolattal, áhítattal tölti el."
+        },
+        {
+            "type": "paragraph",
+            "text": "Necrografia"
+        },
+        {
+            "type": "flavor_text",
+            "text": "Szólítom a Holtakat, A Valaha Voltakat, Az egyszer Létezőket, A majdán Eljövendőket!"
+        },
+        {
+            "type": "paragraph",
+            "text": "Necrografiának nevezzük a Boszorkánymesteri mágia azon fejezetét, ami halott lelkek és másvilági teremtmények megidézésével, a túlvilági lények fölött nyert uralommal, vagy a boszorkánymester által teremtett élőholtak ellenőrzésével és"
+        }
+    ]
+}

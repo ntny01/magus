@@ -1,0 +1,93 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": null,
+    "is_new_section": true,
+    "section_title": "Karakteralkotás",
+    "content_blocks": [
+        {
+            "type": "paragraph",
+            "text": "Az eddigiekből már sok mindent megtudhattál a szerepjáték lényegéről, ám most lássuk, hogy mit kell tenned a gyakorlatban ahhoz, hogy játszani tudj."
+        },
+        {
+            "type": "paragraph",
+            "text": "Először olvasd végig a M.A.G.U.S. játékosok számára írott fejezeteit! Jóllehet a szabályokat és összefüggéseket sokkal egyszerűbb megérteni, ha egy tapasztalt játékos magyarázza el őket, de a könyvet úgy állítottuk össze, hogy tartalmazzon mindent, ami a játék elkezdéséhez szükséges, és bárki eligazodjon benne."
+        },
+        {
+            "type": "paragraph",
+            "text": "Feltételezve, hogy játékos szeretnél lenni, ez elég lesz ahhoz, hogy elboldogulj. Azután keress magadnak társakat az ismeretségi körödben – ha nem találsz, alakíts saját csapatot vagy nézz szét az interneten."
+        },
+        {
+            "type": "paragraph",
+            "text": "Karakteralkotáshoz készíts elő egy karakterlapot (találsz néhány mintát e kötet hátuljában, amit érdemes lesz fénymásolnod, vagy venned egy csomaggal valamely szerepjátékboltban), ceruzát, radírt és esetleg egy számológépet, hogy gyorsan ellenőrizni tudd, helyesen számoltál-e. A karakteralkotáshoz nem lesz szükséged kockákra, ám a játékhoz elengedhetetlenek a hat- és tízoldalú dobókockák (ilyeneket könnyedén beszerezhetsz bármelyik szerepjátékkal foglalkozó üzletben)."
+        },
+        {
+            "type": "rule",
+            "title": "Az ötlet",
+            "rows": [
+                [
+                    "A karaktered megalkotásakor legelőször is arra gondolj, milyen személyiséggel szeretnél játszani (szálas izmú, ám kissé bárgyú harcossal; minden lében kanál szájhőssel; a nemes ügyekért küzdő lovaggal stb.). Az ötlet származhat egy filmből, regényekből, a M.A.G.U.S. irodalmából, de lehet egy puszta életérzés, hangulat is, amit szívesen eljátszanál. Ha már van ötleted, fusd át a kasztok leírását, és keresd meg melyik illik legjobban az általad megszemélyesíteni kívánt karakterhez, hogyan tudnád legkönnyebben Ynev világába illeszteni elképzelésedet. Ha nem találsz olyat, ami a te karakteredhez illik, akkor se csüggedj, ez nem azt jelenti, hogy ilyen karakter nem létezik, csupán nincs még kidolgozva. Ynev határtalan lehetőségeket rejt, korlátlan szabadságot, amit most a te kezedbe helyezünk. A további teendők: találd ki a karaktered nevét, válaszd ki, hogy Ynev mely részén született. Határozd meg, hogy mennyi idős és kérdezd meg a KM-edet, hogy az ynevi időszámítás szerint mennyit írtok. Ebből a két adatból kiszámolhatod, hogy mikor született karaktered. Olvasd el Ynev leírásában az erről a vidékről szóló részt! Ez meghatározza, hogy milyen nyelveket beszélsz és milyen vallás(ok) vált(ak) számodra elfogadhatóvá. Ezekhez a kötöttségekhez alkalmazkodnod kell. Ha szeretnél választhatsz magadnak az uralkodó vallás panteonjából egy őristent – azt, amelyik a legszimpatikusabb neked. A választott vidék öltözködési szokásait nem kötelező követned, de az adott kedvelt fegyvereket sem muszáj elfogadnod, de ha nem így teszel, az előtörténetedben utalnod kell az okára. Mindezt vezesd föl a karakterlap megfelelő rovataiba. Végül érdemes feljegyezned a saját és a Kalandmestered nevét, valamint a karaktered megalkotásának (valóságos) dátumát. Ezután vagy egyedül, vagy a KM-eddel közösen üljetek le, és találjátok ki a karakter előtörténetét. A karakteralkotás fejezet Előtörténet részénél a 14. oldalon találsz példát arra, hogyan is nézzen ki. Írd le Ynev mely országában született – érdemes a várost is megnevezned –, kik voltak a szülei és mivel foglalkoztak. Gyermekkorában milyen iskolákba járt (netán az utcán lézengett?), kik voltak a barátai, tanítói. Fontos, hogy ötletes és egyedi dolgot találj ki rá, hogy miért hagyta ott karaktered az otthonát, miért lépett a kalandozók pénzzel, hírnévvel kecsegtető és ezernyi veszéllyel terhes útjára. Milyen kalandok estek meg vele, míg zöldfülű kalandorból vérbeli szerencsevadásszá lett, milyen ellenségeket, új ismerősöket szerzett. Ezek mind nagyon fontosak, mert nagyban megkönnyítik a Kalandmestered dolgát, és neked is segítséget, hogy jobban elképzelhesd a karaktered, minél inkább bele tudd élni magad a szerepébe."
+                ]
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "A karakteralkotás szabályai",
+            "rows": [
+                [
+                    "Ha ezekkel mind készen vagy, karaktered megalkotásának következő lépcsője, hogy a szabályrendszernek megfelelően különböző számszerű értékeket (melyek elsősorban a faji jellemzők, képzettségek, tulajdonságok, kasztok, stb. által meghatározottak) rendelj hozzá. A szabályrendszerre azért van szükség, hogy modellezni tudjuk a való világot, hogy számokkal határozhassuk meg, mire képes az egyik és mire a másik lény. A szabályrendszer fontos tulajdonsága, hogy mindig játékegyensúlyra törekszik: azaz azonos szintű karakterek esetén egyik fél se legyen kirívóan erősebb a másiknál egy összecsapásban, tehát mindkettőjüknek legyen esélye a győzelemre."
+                ]
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Pontelosztás",
+            "rows": [
+                [
+                    "Mielőtt belevágnánk a karakteralkotás szabályainak taglalásába, tisztáznunk kell, mit jelent a Karakteralkotó pont (KAP). Minden karakter 50 ponttal rendelkezik, amit tetszés szerint oszthatsz el az alább részletesen is leírt Harcérték módosító (HM), Fájdalomtűrés pont (Fp), Képzettség pont (Kp), Pszi alkalmazó karakter esetén Pszi pont (Pp), Pap vagy Paplovag karakter esetén Kegy pont (Kegy), valamint ha varázshasználó karakterrel szeretnél játszani, akkor Mana pont (Mp) között. Ezt az 50 pontot minden tapasztalati szinten megkapod (már elsőn is), és eloszthatod a fenti hat érték között. Ha úgy gondolod, a karakter indításakor ebből Háttereket is vásárolhatsz magadnak. Azonban vigyázzon, mivel az így elköltött pontok elvesznek, és későbbi szinteken csak egy ennyivel csökkentett értéket oszthatsz el. Fontos, hogy Hátterekre csak a karakter indításakor költhetsz, későbbi szinteken KAP-ból már csak HM-et, Fp-t, Kp-t, Pp-t, Mp-t illetve Kegy pontot vásárolhatsz. Emellett, ha a KM erre engedélyt ad, növelheted Tulajdonságaid értékét is a későbbi szintlépések alkalmával. A KAP elosztása minden esetben a Játékos és a Kalandmester közös megállapodása alapján történik, tehát a KM belátása szerint akár befolyásolhatja is a pontok elosztását aszerint, hogy az adott kaland során a karakter mely képességeit használta leginkább. (Például, ha a karakter nem harcolt a kaland során, a mesélő megteheti, hogy nem engedi a játékost Harcérték módosítóra költeni KAP-jaiból, hiszen a karakter harci tudása azon a szinten nem fejlődhetett annyit.) Ebből azonban semmilyen esetben sem szabad konfliktust csinálni, a játékos fogadja el a KM döntését, a mesélő pedig legyen belátó, és igyekezzenek közös megegyezésre jutni. Arról, hogy melyik érték növelése mennyi Karakteralkotó pontba kerül, az alábbi táblázat tájékoztat:"
+                ]
+            ]
+        },
+        {
+            "type": "table",
+            "headers": [],
+            "rows": [
+                [
+                    "+1 Kegy pont",
+                    "3 KAP"
+                ],
+                [
+                    "+1 Mp",
+                    "3 KAP"
+                ],
+                [
+                    "+1 Pp",
+                    "2 KAP"
+                ],
+                [
+                    "+1 HM",
+                    "2 KAP"
+                ],
+                [
+                    "+1 Kp",
+                    "1 KAP"
+                ],
+                [
+                    "+1 Fp",
+                    "1 KAP"
+                ],
+                [
+                    "Háttér (csak 1. szinten*)",
+                    "1–10 KAP"
+                ],
+                [
+                    "+1 Tulajdonság",
+                    "20 KAP"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "*hacsak erről az adott klán vagy rend leírása másképp nem rendelkezik"
+        }
+    ]
+}

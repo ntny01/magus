@@ -1,0 +1,114 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": false,
+    "section_title": "",
+    "content_blocks": [
+        {
+            "type": "rule",
+            "title": "Halottmozgatás Bélyege",
+            "headers": [
+                "Hatás",
+                "Megjegyzés"
+            ],
+            "rows": [
+                [
+                    "Ha a varázsló egy kevesebb, mint 66 perce halott lényen helyezi el a bélyeget, a kiköltözött lélek még nem jár messze, így – idézés nélkül is – nyomban visszaköltözik a testbe.",
+                    "A Halottmozgatás Bélyege csak akkor akadályozza meg a test elrohadását, ha az minden szempontból működőképes, azaz anyagcseréjére is alkalmas. Ha nem, akkor a test hónapok alatt, lábon rothad el. A tartósításra csak a papok képesek – vagy a varázsló, folytonos Átformázással."
+                ]
+            ]
+        },
+        {
+            "type": "flavor_text",
+            "text": "„A démonok, legyenek bár alacsonyvagy közrendűek, netán urak vagy hercegek, mind afféle Köztes Síkok teremtményei, melyeket nem ural isten. Intelligensek és rossz szándékúak, gondolkodásuk kifinomult és követhetetlenül kaotikus. Lelküik nincsen, testük mágikus energiából épül fel, melyből a korok hajnalán megalkották őket teremtőik, az istenek. Csakis a mágikus pengékben van elég erő, hogy kárt okozzanak a démonokban, kik számára fátyolszerű, halvány álomvilágunk káprázat csupán, hol lelkünk – legízletesebb csemegéjük – szinte védtelen sodródik. A mágikus gyilokszer-számok és csakis a mágia, mely képes megsebezni, nagy szerencsével elpusztítani testüket, mivel lényegük egy, hatalmuk együnen való."
+        },
+        {
+            "type": "flavor_text",
+            "text": "Megidézőjüket majd minden esetben igyekeznek elpusztítani; gonoszságukról és leleményességükről, de bátran mondhatom, korlátlan hatalmukról sem lehet fogalma az olvasóimhoz hasonló ostoba földi halandónak.”"
+        },
+        {
+            "type": "rule",
+            "title": "Démonológia képzettség",
+            "headers": [
+                "Szabály"
+            ],
+            "rows": [
+                [
+                    "A Démonológia mozaikjainak alkalmazásához a varázslónak legalább 3. fokon bírnia kell a Démonológia képzettséget."
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "Al Sahred mester szavait értelmezve tehát játéktechnikai-lag:"
+        },
+        {
+            "type": "rule",
+            "title": "Démonok megidézése és tulajdonságai",
+            "headers": [
+                "Tétel",
+                "Leírás"
+            ],
+            "rows": [
+                [
+                    "I.",
+                    "A démonok az idézés nyomán teljes valójukban jelennek meg, fizikai testükkel egyetemben, mely csakis varázsfegyverekkel és mágiával sebezhető."
+                ],
+                [
+                    "II.",
+                    "Az Idézésnél ildomos betartani a Nekromancia Idézés fejezetében leírtakat, hiszen a megjelenő lényt semmi sem tartja vissza attól, hogy megidézőjének támadjon. Leszámítva azt, hogy a gyertya égésének időtartamáig az Elsődleges Anyagi Sík foglya, illetve annak elfújásával a lény saját síkjára száműzhető, s így hatalma nagy részétől megfosztható."
+                ],
+                [
+                    "III.",
+                    "Mivel testük nyers mágikus energiából épül fel, ezért a mágia bármely támadó formája sebzi őket. Bármely démon Igaz neve ismeretében, amennyiben az a támadó varázslat igéi közé foglaltatik, illetve a démon nevével elkészült mágikus pengék kétszeres sebzést okoznak az adott lényen."
+                ],
+                [
+                    "IV.",
+                    "Ezen lények teste hiába nyers mana, hatalmat nyerni belőlük, esetleg mágikus energiáikat megcsapolni csakis Igaz nevük ismeretében lehetséges, az Energiagyűjtés formuláival, abban az esetben, ha a karakter sikeres Akaraterőpróbát tesz –3 módosítóval. Ebben az esetben a démon minden begyűjtött 5 Mp után 1 Ép-t veszít, az Energiagyűjtés hatásfoka is a kétszeresére nő."
+                ],
+                [
+                    "V.",
+                    "A démonok többsége immunis az Asztrálés Mentál-mágiára, azonban ha a démonidéző rendelkezik egy darab varázs-tiszta Alexandrittal és bír a Démonológia képzettség 4. fokával, képes Asztrál vagy Mentál mozaikokat is megidézni az adott teremtményekre, azok hiába immunisak. ME-jüket ez esetben, ha van nekik Pszi pontjaik száma, ha ez nincs, akkor Ép-ik száma adja meg."
+                ]
+            ]
+        },
+        {
+            "type": "flavor_text",
+            "text": "„A démonok rettentő teremtmények, legnagyobb szerencsénkre isteneink, mikor kiűzték őket egeinkből, elzárták őket a síkok közötti, sivár lelkek pusztaságokba, hogy ott bolyongjanak nagyravágyásuk ostobaságában merengve, megverve az örök létezéssel. Igen, olvasóm, bármily nehezedre is essék elképzelni, a démonok a Köztes síkokon örökké léteznek. Örökké, mivel ők maguk a Sík fodrai, örvényei, melyek teremtésük szabályai szerint, ha el is törölhetnek, újra és újra összeállnak, mint az örvény a folyóban két kő között. Kezeddel megzavarhatod ugyan, de újra megjelenik, amint elcsitul a hullám. Ők hasonlóképpen jelennek meg ismét, ha el is pusztítják egymást kicsiny időkre. No persze vannak kivételek... mindenütt vannak, hol az isteneink valaha is a teremtésbe fogtak... Ha valamely démon megszerzi egy másiknak az Igaz nevét – bár ez felettébb ritka. Ebben az esetben képes megszerezni amannak esszenciáját, a sziklát, mely örvényét kavarja, csak hogy te is megérthesd, olvasóm. Ekkor amaz megszűnik létezni, mivel nincs erő, mely újból a létezésbe hívja, s lelkük nem lévén csupán legyőzőjük esszenciájával egybeolvadva múlnak el örökre. Az ereje azonban nem vész el, hanem legyőzőjét gyarapítja. Így kelnek újabb és újabb démonurak és hercegek a síkokat dúló csaták forgatagából. Nagy ritkán persze teremtődnek újak, véletlenszerűen, mintha csak a káosz igyekezne rácáfolni még ezen igazságokra is. Így ezen szörnyetegek számát akár vehetjük végtelennek is..."
+        },
+        {
+            "type": "flavor_text",
+            "text": "„Hogy mit keresnek közöttünk, miért jönnek az Anyagi síkok bármelyikére, ha az örök pusztulás várja őket, ha legyőzetnek, mivel testük itt nem áll össze ismét... mivel itt feloldódnak a mana szövedékben. Mert ideát a lelkek védtelenek, ideát bőszen lakomázhatnak, ha végeznek a fizikai valóddal, és hidd el, megteszik, mert a lelked olyasvalami, melyet túllopnak alkotóik, s melynek erejéből jóval hamarabb nyernek elég hatalmat ahhoz, hogy hitük szerint istenné lehessenek. Ezért igyekeznek az eltévedetteket szolgálatukba csábítani, hogy halandókat, lelkeket áldozzanak nekik... az ostobábbja pedig ezért öldököl, ha világunkban elszabadul."
+        },
+        {
+            "type": "flavor_text",
+            "text": "„Az isteneknek hála a démonok önnön erejükből képtelenek a Síkok közt átjutni hozzánk, csakis mi idézhetjük meg őket, bár segedelmünkre lehetnek ebben. Ha egy démon igyekszik utat találni hozzánk, akkor csakis az Asztrál-, vagy Mentálsíkon át teheti, mely síkok nyitottak a felsőbb és a köztes szférák felé egyaránt. Így ilyenkor, álmodban suttognak először, mikor lelked fogékony és kifelé figyel a mindenségbe... majd idővel hitegetve, fenyegetve, de elérik, hogy végrehajtsd a szertartást, mely megidézi őket... Ó, nem ilyen egyszerű. Ha nincs elég erőd, azt is ígér, ha szövetségre lépsz velük. Ezt nevezik az északi népek szeráfi alkunak, jómagam pedig... mérhetetlen ostobaságnak.”"
+        },
+        {
+            "type": "paragraph",
+            "text": "Al Sahred mester szavait félbeszakítva a következő ki-jelentéseket tehetjük:"
+        },
+        {
+            "type": "rule",
+            "title": "Démonok megismerése és tulajdonságai",
+            "headers": [
+                "Tétel",
+                "Leírás"
+            ],
+            "rows": [
+                [
+                    "I.",
+                    "A démonok Igaz neve csakis valamiféle legalább 30 E-vel túlerősített bármiféle Asztrális vagy Mentális fürkésző varázslattal, esetleg egy másik démonnal tudható meg."
+                ],
+                [
+                    "II.",
+                    "A démonok a Köztes síkok teremtményei, s mint ilyenek, csakis az Asztrál-, Mentálsíkon keresztül képesek szólni hozzánk, amikor lelkünk gyenge, épp alszik tesz-tünk, vagy mikor tudattalan létezésünk ájulás miatt, vagy épp mikor megérint minket a halál szele."
+                ],
+                [
+                    "III.",
+                    "A démonok célja a feltörekvés, az előrébb jutás, ezért öldöklik egymást és áhítoznak szervezett hatalomra a"
+                ]
+            ]
+        }
+    ]
+}

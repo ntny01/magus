@@ -1,0 +1,106 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": false,
+    "section_title": "",
+    "content_blocks": [
+        {
+            "type": "rule",
+            "title": "Személyes Aura vs. Mágiaellenállás",
+            "headers": [],
+            "rows": [
+                [
+                    "A Személyes Aura nem tévesztendő össze a Mágiaellenállással. A Természetes Anyag Mágiája nem a Lélekre hat, hanem az anyagra, azaz a testre magára. A Személyes Aura, bár a Lélek függvénye, nem egyenlő azzal!"
+                ]
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Lélek áthelyezése és test újraalkotása",
+            "headers": [],
+            "rows": [
+                [
+                    "Amikor a varázsló lelkét helyezzük más testbe, vagy bármely élettelen anyagba (például kővé változtatjuk) akkor számára nem jelent nehézséget, hogy visszaalakuljon hiszen a test újraalkotásához szükséges mágiának birtokában van. Persze az cselekvőképességet igényel, és arra csak éber lélek képes, elaltatott semmiképp!"
+                ]
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Természetes Anyag Mágiájának játékszabályai",
+            "headers": [],
+            "rows": [
+                [
+                    "Ahhoz, hogy a varázsló képes legyen a Természetes Anyag Mágiájával az anyagok minőségének vagy szerkezetének megváltoztatására, bírnia kell az Alkimia képzettség 3. fokával. Adott esetben, ha élőlényeket kíván formázni, alakítani vagy transzmutálni, ehhez az Élettan képzettség 3. foka is szükséges."
+                ],
+                [
+                    "I. Mágikus anyagokra nem hat semmilyen Anyagmágia."
+                ],
+                [
+                    "II. Az anyagok halmazállapotát megváltoztatni nem tudjuk, azaz szilárdból csak szilárd, folyadékból csak folyadékot, gázból csak gáz hozhatunk létre."
+                ],
+                [
+                    "III. Az élőlények az I. anyagcsoportba tartoznak, de Személyes Aura védi őket."
+                ],
+                [
+                    "IV. A Személyes Aura lehetetlenné teszi a védelme alá tartozó testre és tárgyakra irányuló varázslást. Ami nem egyfajta erősítéssel legyűrhető Mágiaellenállást, hanem kivételektől mentes lehetetlenséget jelent."
+                ],
+                [
+                    "V. A Személyes Aura megakadályozza, hogy tulajdonosába bármit beteleportáljanak. Ugyancsak megakadályozza, hogy a légies úton (vagy bármely más, a Természetes Anyag Mágiájához tartozó módon) a testbe juttatott idegen tárgy a testben visszaalakuljon. (A Személyes Aura kilöki az idegen tárgyakat, melyek csak a kilökődés után változnak vissza.)"
+                ],
+                [
+                    "VI. A Személyes Aura fejti ki semlegesítő hatását – azaz a varázslat működik –, ha az áldozat a mágiába beleegyezik (újabb különbség a Mágiaellenálláshoz képest), vagy ha tudata alszik."
+                ],
+                [
+                    "VII. Ha olyan tárgyra kívánunk varázsolni, amely több különféle anyagból áll, az mindaddig nem jelent problémát, amíg ezek az anyagok egyazon csoportba tartozóak. Ha különbözőekből kerülnek ki, akkor a varázslat Mp-igényénél külön kell kalkulálnunk a súlyukkal."
+                ],
+                [
+                    "VIII. A varázslat Erőssége akkor 1 E, amikor már a teljes tárgyra vagy lényre működőképes, és akkor 2, ha dupla annyi Mp-ot fordítunk rá, mint amennyit a súly indokolttá tett volna. Vagyis az erősítés nagyban függ a tárgy súlyától, és az anyagcsoporttól, amelyekbe tartozik."
+                ],
+                [
+                    "IX. A mozaikok Időtartama a legtöbb esetben 1 kör, néha valamivel több, és csak egészen kivételes esetekben fordul elő, hogy az eredményezett változás végleges lenne (például Dezintegráció). Az Időtartam lejártával a mágia eredményezte változás megszűnik, és visszaáll a kiindulási állapot. Ha a varázsló hosszabb Időtartammal szeretné létrehozni a varázslatát, akkor Időmágiához kell folyamodnia."
+                ],
+                [
+                    "X. Az új formában, testben, anyagi minőségben szerzett sérülések a tárgyon, illetve élőlényen a visszaváltozás után is megmaradnak. Élőlények esetében ez Sp-vesztést, adott esetben halált is eredményezhet."
+                ]
+            ]
+        },
+        {
+            "type": "section",
+            "title": "Példák",
+            "headers": [],
+            "rows": [
+                [
+                    "Ha acélkardból bronzkardot szeretnénk készíteni, a következőt kell tennünk. Mivel acélból bronzzá alakításkor nem változik az anyagcsoport, elegendő átalakítás varázslatot használni. A penge részét – tegyük fel, csak az élét – nem tudjuk bronzzá alakítani, csak egyben az egész kardot. 4 fontos kard esetén ez 8 Mp-ot jelent. Mivel a markolat anyagát nem alakítjuk bronzzá, hanem meghagyjuk eredeti minőségében, nincs szükség Transzmutációra. Ha a varázslat időtartama alatt a karddal bronznál keményebb tárgyra sújtanak, a penge kicsorbul, talán el is törik. Sérült állapota azután is megmarad majd, hogy a varázslat Időtartama lejár, és a penge visszaalakul acéllá."
+                ],
+                [
+                    "A következő példában a varázsló súlyos tolófaajtóba ütközik, mely elzárja útját. Kinyitni nem tudja, mert öreg, elrozsdállt lakat reteszeli. A varázsló elhatározza, hogy üveggé változtatja a vas lakatot, amit már könnyen összezúzhat. Lássuk, mit kell tennie! A lakat különálló tárgy, tehát önmagában is tárgya lehet a varázslatnak. A vas a II., az üveg az I. anyagcsoportba tartozik, ezért Transzmutációhoz kell folyamodni. A vas lakat súlya nem több fél ynevi fontnál, így transzmutálása 1 Mp-ba kerül. Miután az időtartam alatt gyorsan szilánkokra zúzta a lakatot, lejártával az már hiába változik vissza vassá, többé nem töltheti be feladatát."
+                ],
+                [
+                    "Ha Transzmutáció segítségével (vagy más módon) kisebb méretűvé alakított tárgyat, vagy eredeti formájában mérgező, netán más módon ártó tulajdonságú tárgyat átváltoztatva a Személyes Aura védelme alatt álló lénybe juttatnak bármely módon (teleportálni értelemszerűen nem lehet), a tárgy a visszaalakulás pillanatában kilökődik. Ezt a védekező mechanizmust szintén a Személyes Aura okozza, így védelmezve a Lélekkel bíró lényt a Természetes Anyag Mágiájával bármely formájú ellen. Ugyancsak hasonló módszerrel akadályozza meg, hogy átváltoztatott tárgy a visszaváltozás folyamán bármilyen módon kárt tegyen Lélekkel bíró lényben. Tehát egy ezüstgyűrűt vasakarikává transzmutálva és az áldozat nyakára juttatva a varázsló nem ér célt, noha az Időtartam lejártával a vasakarika visszaalakul ezüstgyűrűvé, ám mielőtt lefejezhetné áldozatát, elmozdul, és közvetlen kárt nem okozva változik vissza."
+                ]
+            ]
+        },
+        {
+            "type": "section",
+            "title": "Átformázás",
+            "headers": [],
+            "rows": [
+                [
+                    "Mana pont: 1/1 ynevi font vagy fél ynevi font vagy 1 ynevi lat"
+                ],
+                [
+                    "Időtartam: 1 kör"
+                ],
+                [
+                    "Varázslás ideje: 1 kör"
+                ],
+                [
+                    "A varázslattal egy tárgy formáját, színét változtathatja meg a varázsló. A varázslatban egyfajta súlyés anyagmegmaradási törvény érvényesül; azaz pontosan a kiindulásival azonos súlyú és minőségű tárgy keletkezik. Ha kevesebb, akkor az új tárgy kialakításához fel nem használt anyag felesleg formájában megmarad. Az alapanyagnál nagyobb súlyú tárgy nem formázható."
+                ],
+                [
+                    "Mana pontonként az anyagcsoporttól függően 1 ynevi font (I. csoport), 1/2 ynevi font (II. csoport), vagy 1 ynevi lat (III. csoport) anyag formázható át."
+                ]
+            ]
+        }
+    ]
+}

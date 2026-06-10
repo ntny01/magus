@@ -1,0 +1,102 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": null,
+    "is_new_section": true,
+    "section_title": "A Bárdok hangszerei",
+    "content_blocks": [
+        {
+            "type": "flavor_text",
+            "text": "„Nem volt avatott kezű dalnok, de őszintén hitt Kai-Syah hatalmában, akiből csak később formáltak Arel istennőt a pyaroniták... és szenvedélyes volt, mint minden ilanorí. Hunyt szemmel énekelt és dalában végtelen, szabad ménesek dübörögtek a vadvirágillatú fűtengeren, sólyom rikoltott a hajnal tiszta fényében ragyogó égen, férfiak és nők szökkentek a tavaszmaglyák lángjai felett szerelmes hevüléssel, karcsú ilanorí lovasszablyák hűvös acélját csókolta a kacagó fény.”"
+        },
+        {
+            "type": "flavor_text",
+            "text": "„Sejtette, hogy az életéért dalol, legtisztább emlékeiből, tulajdon szárnyaló sólyomfelhőkből teremtette-szőtte hát igézetté a lant szavát. Nem volt avatott kezű bárd... de először hallottam embert így dalolni. Ügyet sem vetettünk az arcunkon pergő könnyekre és amint az utolsó akkordok a csendbe simultak, a torkunkat kaparó áhítattól még sokáig nem tudtunk megszólalni.”"
+        },
+        {
+            "type": "flavor_text",
+            "text": "„Nem úgy a kráni. – Mindig sajnálom elpusztítani a szépet sessaryen, de én... – amint előrehajolt, hosszú nyakú elf mandolin jelent meg a kezében –...halált énekelek.”"
+        },
+        {
+            "type": "flavor_text",
+            "text": "„Halált. Szívdobbanásnyi idő múlva a fogadót a mandolin húrjain felszakadó hátborzongató hangok uralták és a táncoló, karcsú ujjak nyomán feljajduló, nem-evilági összhangzat megfagyasztotta az erekben a vért. A kráni kígyó kinyitotta hasított szemét, a préda pedig – vagy száz nyomorult daerí – mi halandó – dermedten várta a halálos marást. A tetovált arcú elf hangja olyan volt, akár az Idő Homokóráján semmibe pergő hamvak száraz percegése:”"
+        },
+        {
+            "type": "flavor_text",
+            "text": "„Üresen ásít a közönyös menny Féregléled céltalan pokol Pondrók ezerszám, melyekben Én, vak lélek haldokok. Sövár sorsod lépés-múlandóság Hasztalan könnyek, ostoba álmok Rotthadásod éhség-örökkévalóság Lelkeddel pusztuló sikoltásod a semmibe vész és nem szán a világ”"
+        },
+        {
+            "type": "flavor_text",
+            "text": "„Alan O'Connor: A halál hét arca”"
+        },
+        {
+            "type": "paragraph",
+            "text": "A zene fontos szerepet tölt be Ynev lakóinak életében. Jól esik egy útszéli fogadóban hideg serital mellett vidám kocsmadalokat hallgatni, s nincs igazi mulatság sem talpalávaló nélkül. Sorsdöntő csaták előtt az őrtüzek fényénél a katonák hőstettekről szóló regékből merítenek erőt a másnaphoz, míg az előkelő udvarok főrangú hölgyei ábrándos sóhajjal hallgatják egy-egy igric muzsikába öntött mélabús világfájdalmát."
+        },
+        {
+            "type": "paragraph",
+            "text": "Nem meglepő hát, hogy Ynev földjét sok vándormuzsikus, csavargó énekes járja, és majd mindenütt szívélyes fogadtatásra számíthatnak. Más kérdés, hogy nem minden dalnok sorolható a bárdok legendásan megbízhatatlan népsége közé, akik nem haboznak kétes hírnevű tudományukat és szemfényvesztő trükkjeiket sem felhasználni saját boldogulásuk érdekében."
+        },
+        {
+            "type": "paragraph",
+            "text": "Minden köztiszteletben álló dalnok és minden ötödik vándormuzsikus jut egy effajta szálláshoz, jóllehet, ők bizton kikérnék maguknak az efféle elnevezést. Saját értékrendjük szerint erkölcs, becsület és szabadelvűség dolgában mindenki más előtt járnak, bár a szabadelvűségre hivatkozva gyakorta sajátosan értelmezik az erkölcs és becsület fogalmát."
+        },
+        {
+            "type": "paragraph",
+            "text": "Ahhoz azonban, hogy valaki valódi bárd lehessen, nem elég egy hangszer, a képzettségek birtoklása és a Bárdmágia ismerete. Bárdnak lenni sokkal többet jelent ennél. A dalnok lét életstílust jelent, egy sajátos világszemléletet, amit"
+        },
+        {
+            "type": "paragraph",
+            "text": "elsajátítani nem, csak megélni lehet. Ez az első lecke, amit egy ifjú bárd mesterétől tanulhat. Ezután sorra kell vennie mindazt, ami kitölti e szélről világcsavargók mindennapjait."
+        },
+        {
+            "type": "paragraph",
+            "text": "Saját szakállára kell tapasztalnia a női lélek rejtelmeit: hogyan hívja fel magára a szíve hölgyének figyelmét, hogyan csavarja el sok tapasztalt dámák fejét vagy keveredjen könnyed kalandokba... Tegye mindezt stílusosan, nem elkényeztetett nemesi ficsúr, vagy neveletlen falusi molnárlegény módjára. Hogy könnyen álljon nála a szerelmes szó, sziporkázzon a bók, társasága kellemes legyen, modora kifogástalan, ölelése kényes. A mester pedig – légyen bár akármily tapasztalt is ilyen téren – csak útmutatásokkal szolgálhat, a szükséges tapasztalatot elkerülhetetlenül az élet hozza meg (sokszor csúfos felsülések árán)."
+        },
+        {
+            "type": "paragraph",
+            "text": "A második – hasonlóan fontos – lecke a költészeté. A leendő dalnoknak számtalan dalt, románcot, balladát és legendát kell ismernie, s el kell sajátítania az előadó-művészet fortélyait is. Tudnia kell szavalni, verselni, dalolni és persze hangszeren játszani. Első hangszerét mesterétől kapja, rendszerint az övéhez hasonlót, és hosszas gyakorlással töltött évek alatt sajátítja el a használatát."
+        },
+        {
+            "type": "paragraph",
+            "text": "Minden kobzos, igric, énekes legfontosabb használati eszköz, elválaszthatatlan társa a hangszer. Vannak ugyan bárdok, akik nem használnak hangszert, s csakis hangjuk erejére támaszkodnak, ám ez meglehetősen ritka. Bármennyi zeneeszköz megszólaltatására is képes azonban egy bárd, van egy választott hangszer, amely többet jelent számára mindegyik másnál. Ez az úgynevezett főhangszer."
+        },
+        {
+            "type": "paragraph",
+            "text": "Nemcsak társ és segítő, de a hagyományok megtartó erejének kézzelfogható bizonyítéka is. Minden bárd a mesterétől kapja felavatásának napján, s éppen ezért egy bárd általában ugyanolyan hangszeren játszik, mint mestere."
+        },
+        {
+            "type": "paragraph",
+            "text": "Amint a tanítvány először megszólaltatja a misztikus erők Összhangzatát, közte és hangszere közt láthatatlan kötelék alakul ki. A hangszeren nyomot hagy az őt megszólaltató akarat és a rajta átáramló mana. Ettől a pillanattól fogva mágikus tárgynak minősül, s míg el nem pusztul, eltéphetetlen szálak fűzik gazdájához. Ez játéktechnikailag a következőképpen nyilvánul meg:"
+        },
+        {
+            "type": "rule",
+            "title": "Főhangszer és a Személyes Aura",
+            "headers": null,
+            "rows": null
+        },
+        {
+            "type": "rule",
+            "title": "Összhangzat és Mana visszanyerés",
+            "headers": null,
+            "rows": null
+        },
+        {
+            "type": "rule",
+            "title": "Hangszer érzékelése",
+            "headers": null,
+            "rows": null
+        },
+        {
+            "type": "rule",
+            "title": "Hangszer ellenállása",
+            "headers": null,
+            "rows": null
+        },
+        {
+            "type": "rule",
+            "title": "Hangszer Struktúrapontja és javítása",
+            "headers": null,
+            "rows": null
+        }
+    ]
+}

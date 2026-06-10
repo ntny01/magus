@@ -1,0 +1,12 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": true,
+    "section_title": "Varázskör",
+    "content_blocks": [
+        {
+            "type": "paragraph",
+            "text": "is legyen eredeti hatóterülete – csak az varázskör bel-ső körívén belül eső területre, ill. az ott tartózkodókra hat, ott azonban válogatás nélkül mindenkire. A Varázskör felrajzolása 40 Mana pont, plusz még annyi, amennyibe a beleírt varázslat kerül. A beleírt va-rázslatot csak egyszer képes végrehajtani, de a kimerült varázslat Mana-igénye, újra feltölthető. Ha vonalai megtörnek, a varázslat kiszabadul és kifejti hatását, de a rajzolat többé nem használható."
+        }
+    ]
+}

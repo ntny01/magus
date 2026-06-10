@@ -1,0 +1,352 @@
+{
+    "is_new_chapter": true,
+    "chapter_title": "A Vámpír és az Árny",
+    "is_new_section": true,
+    "section_title": "A Vámpír",
+    "content_blocks": [
+        {
+            "type": "paragraph",
+            "text": "Az alaposabb megfigyelő azonban bizonyos jelekből következtethet egy illető vámpír mivoltára. A vámpír sosem vet árnyékot, képe nem látszik a tükörben, lépte sohasem hallatszik, retteg a fokhagyma szagától, és sohasem mutatkozik, míg a nap ragyog."
+        },
+        {
+            "type": "paragraph",
+            "text": "A vámpír, lényéből fakadóan, puszta a tekintetével is képes hatást gyakorolni áldozataira: képes az emberek akaratát és félelmeit befolyásolni. A játék nyelvére lefordítva ez azt jelenti, hogy képes a Kyr diszciplínák közt leírt Mágikus tekintetet alkalmazni, mintha 10. Tapasztalati szintű volna (+15 É). FIGYELEM! Ez nem jelenti azt, hogy a vámpír pszi-vel alkalmazkodó, mindössze hasonló hatás elérésére képes, de nem a Pszi diszciplínán keresztül! Ezenfelül képes akaratátvitelre (a Mentálmágia mozaikjához hasonlóan), valamint félelemkeltésre (az Asztrálmágia mozaikokhoz hasonlóan). Ezek sem mágikus támadások, noha Mágiaellenállás dobható ellenük, mintha 40 É-jűek lennének."
+        },
+        {
+            "type": "paragraph",
+            "text": "A vámpírok másik fegyvere emberfeletti erejük (20), amelyet harcban jól ki is használnak. A vámpírt közönséges fegyverekkel legyőzni lehetetlen, az általuk okozott sebek minden esetben azonnal begyógyulnak, míg a mágikus vagy ezüstfegyverek által okozott sebek körönként 1 Ép sebességgel hegednek be. A vámpír képes felmászni akár függőleges, sima falon is (mászás 100%), lépteit pedig sohasem lehet meghallani (lopódzás 100%). Puszta akaratával parancsol a denevéreknek, farkasoknak, és maga is képes egyetlen kör leforgása alatt valamelyik említett állattá átváltozni (mint az Átváltoztatás mozaik). Átváltozott alakjában mindig különlegesen nagy és erős példány."
+        },
+        {
+            "type": "paragraph",
+            "text": "Sok különleges képessége mellett a vámpírnak számos gyengéje is akad. Nem képes elviselni a nap fényét, ezért a nappalt mindig koporsójában tölti. Ilyenkor teljesen elveszti az erejét: valóban halott, csak véres ajkai, vérrel teli szája árulja el. Amikor azonban beköszönt az éj, új erőre kap, új áldozatot keres. Akárkit szemeljen ki azonban, csak olyan házba léphet be, ahová egyszer már meghívták. (Ez történhetett akár Akaratátvitellel is!)"
+        },
+        {
+            "type": "paragraph",
+            "text": "A vámpír állandóan és olthatatlanul szomjazik az emberi vérre. Fontos azonban megjegyezni, hogy ennek fogyasztása nem létszükséglet számára, azaz nem „hal éhen” vér híján, csak szenved. Minél régebben jutott friss vérhez, a vámpír annál sápadtabb és soványabb lesz."
+        },
+        {
+            "type": "paragraph",
+            "text": "A vámpír ki nem állhatja a folyóvizet, a tükröket, a szent dolgokat és a fokhagymát. Ezek bármelyikével távol tarthatjuk magunktól, noha el nem űzhetjük. Ha egy vámpír harc közben elveszíti összes Ép-jét, akkor sem pusztul el végleg. Egy nap leforgása alatt a teste ismét sértetlen, ereje visszatér. A vámpírt csak kétféle módon lehet végleg elpusztítani: vagy el kell hamvasztani, vagy a szívét kihegyezett fakaróval át kell döfni, majd a fejét levágni, fokhagymát tenni a fej és a test közé, a szájába pedig egy ezüstpénzt kell helyezni."
+        },
+        {
+            "type": "paragraph",
+            "text": "A vámpír az egyetlen élőhalott, amelynek van még valami köze az élethez. Nemcsak megjelenésekor kelti eleven ember benyomását – szeretkezni is képes, mégpedig a játékrendszerben szereplő 5. fokon. Természetesen az ilyen aktusból utód nem származhat."
+        },
+        {
+            "type": "rule",
+            "title": "Vámpír (Árny)",
+            "headers": [
+                "Jellemző",
+                "Érték"
+            ],
+            "rows": [
+                [
+                    "Előfordulás",
+                    "Ritka"
+                ],
+                [
+                    "Megjelenők száma",
+                    "1"
+                ],
+                [
+                    "Termet",
+                    "E"
+                ],
+                [
+                    "Méretkategória",
+                    "1"
+                ],
+                [
+                    "Sebesség",
+                    "160 (L)"
+                ],
+                [
+                    "Időigény",
+                    "3"
+                ],
+                [
+                    "Kezdeményező érték",
+                    "20"
+                ],
+                [
+                    "Támadó érték",
+                    "50"
+                ]
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Vámpír (Árny) - Statisztikák",
+            "headers": [
+                "Jellemző",
+                "Érték"
+            ],
+            "rows": [
+                [
+                    "Védő érték",
+                    "90"
+                ],
+                [
+                    "Sebzés",
+                    "1k10"
+                ],
+                [
+                    "Életerő pontok",
+                    "30"
+                ],
+                [
+                    "Fájdalomtűrés pontok",
+                    "—"
+                ],
+                [
+                    "Asztrál ME",
+                    "Immunis"
+                ],
+                [
+                    "Mentál ME",
+                    "Immunis"
+                ],
+                [
+                    "Méregellenállás",
+                    "Immunis"
+                ],
+                [
+                    "Pszi",
+                    "—"
+                ],
+                [
+                    "Intelligencia",
+                    "alacsony"
+                ],
+                [
+                    "Max. Mp",
+                    "—"
+                ],
+                [
+                    "Jellem",
+                    "Káosz, Halál"
+                ],
+                [
+                    "Tapasztalati pont",
+                    "30"
+                ],
+                [
+                    "Necrografiai osztály",
+                    "IV. Lidérc"
+                ]
+            ]
+        },
+        {
+            "type": "new_section",
+            "title": "Az Árny",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "Az árnyak Boszorkánymágia áldozatául esett emberek megkeseredett kísértetei. Lelkük teljesen elkorcsosult, Mentáltestük gyakorlatilag eltűnt, Asztráljukból is csak néhány negatív érzelem maradt – gyűlölet és undor. Létezésük egyetlen célja az élők kínzása és elpusztítása lett, ennek érdekében mindent el is követnek."
+        },
+        {
+            "type": "paragraph",
+            "text": "Megjelenésük nem nagyon lehet őket megkülönböztetni egy megnyomorodott ember árnyékától – az első meglepetést akkor okozzák, mikor a többi árnyéktól függetlenül megmozdulnak, majd lelépnek a falról."
+        },
+        {
+            "type": "paragraph",
+            "text": "Mivel testük légies anyagokból épül fel, csak mágikus fegyverek okoznak rajtuk sebet, a közönséges fegyverek átsiklanak rajtuk. Félhomályban gyakorlatilag láthatatlanok, ilyenkor ellenfeleik a megfelelő levonásokkal harcolhatnak velük."
+        },
+        {
+            "type": "paragraph",
+            "text": "Úgy támadnak, hogy anyagtalan kezükkel megpróbálnak átnyúlni áldozataik testén, akik, ha az árny célt ér, dermesztő, jeges hideget és metsző fájdalmat éreznek. Ha az árny támadása különlegesen sikeres (Túlültetés), kezével sikerült áldozata szívét megmarkolnia, aki ennek következtében Ép-t is veszít. Támadásaiknak a borzongató kínon kívül egyéb hatásuk is van: akit eltalálnak, fokozatosan megdermed, minden találatnál eggyel csökken a Gyorsasága, míg a nullát el nem éri. Ekkor az áldozat teljesen megbénul – vagyis alulmarad."
+        },
+        {
+            "type": "paragraph",
+            "text": "Az árnyakat igen érzékenyen érinti az erős fény: ha módjuk van rá, kerülik. Rejtekhelyükről alkonyat előtt sosem merészkednek elő. Ha ennek ellenére mégis alkonyinál erősebb fény éri őket, az minden körben 1k6 Ép-t sebez rajtuk. A sötétség viszont éppen az ellenkező hatást gyakorolja. Ha egy árny elveszített az Ép-iből, de nem pusztult el teljesen, egy napot teljes sötétben töltve visszanyerheti azokat."
+        },
+        {
+            "type": "paragraph",
+            "text": "Ha valaki legyőz egy árnyat, az semmivé foszlik, a belé zárt lélek pedig visszakerül a lélekvándorlás folyamába."
+        },
+        {
+            "type": "rule",
+            "title": "Árny (Arich)",
+            "headers": [
+                "Jellemző",
+                "Érték"
+            ],
+            "rows": [
+                [
+                    "Előfordulás",
+                    "Ritka"
+                ],
+                [
+                    "Megjelenők száma",
+                    "1"
+                ],
+                [
+                    "Termet",
+                    "E"
+                ],
+                [
+                    "Méretkategória",
+                    "1"
+                ],
+                [
+                    "Sebesség",
+                    "160 (L)"
+                ],
+                [
+                    "Időigény",
+                    "3"
+                ],
+                [
+                    "Kezdeményező érték",
+                    "20"
+                ],
+                [
+                    "Támadó érték",
+                    "50"
+                ]
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Árny (Arich) - Statisztikák",
+            "headers": [
+                "Jellemző",
+                "Érték"
+            ],
+            "rows": [
+                [
+                    "Védő érték",
+                    "90"
+                ],
+                [
+                    "Sebzés",
+                    "1k10"
+                ],
+                [
+                    "Életerő pontok",
+                    "30"
+                ],
+                [
+                    "Fájdalomtűrés pontok",
+                    "—"
+                ],
+                [
+                    "Asztrál ME",
+                    "Immunis"
+                ],
+                [
+                    "Mentál ME",
+                    "Immunis"
+                ],
+                [
+                    "Méregellenállás",
+                    "Immunis"
+                ],
+                [
+                    "Pszi",
+                    "—"
+                ],
+                [
+                    "Intelligencia",
+                    "alacsony"
+                ],
+                [
+                    "Max. Mp",
+                    "—"
+                ],
+                [
+                    "Jellem",
+                    "Káosz, Halál"
+                ],
+                [
+                    "Tapasztalati pont",
+                    "30"
+                ],
+                [
+                    "Necrografiai osztály",
+                    "IV. Lidérc"
+                ]
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Lesath",
+            "headers": [
+                "Jellemző",
+                "Érték"
+            ],
+            "rows": [
+                [
+                    "Előfordulás",
+                    "Ritka"
+                ],
+                [
+                    "Megjelenők száma",
+                    "1"
+                ],
+                [
+                    "Termet",
+                    "E"
+                ],
+                [
+                    "Méretkategória",
+                    "1"
+                ],
+                [
+                    "Sebesség",
+                    "100 (SZ)"
+                ],
+                [
+                    "Időigény",
+                    "3"
+                ],
+                [
+                    "Kezdeményező érték",
+                    "20*"
+                ],
+                [
+                    "Támadó érték",
+                    "40*"
+                ],
+                [
+                    "Védő érték",
+                    "80*"
+                ],
+                [
+                    "Célszó érték",
+                    "30*"
+                ],
+                [
+                    "Sebzés",
+                    "Életerőszívás, vagy fegyver szerint"
+                ],
+                [
+                    "Életerő pontok",
+                    "30"
+                ],
+                [
+                    "Fájdalomtűrés pontok",
+                    "60*"
+                ],
+                [
+                    "Asztrál ME",
+                    "Immunis"
+                ],
+                [
+                    "Mentál ME",
+                    "Immunis"
+                ],
+                [
+                    "Méregellenállás",
+                    "Immunis"
+                ],
+                [
+                    "Pszi",
+                    "61*"
+                ]
+            ]
+        }
+    ]
+}

@@ -1,0 +1,94 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "Bestiárium",
+    "is_new_section": true,
+    "section_title": "Patkány",
+    "content_blocks": [
+        {
+            "type": "table",
+            "title": "Jellemzők",
+            "headers": [
+                "Jellemző",
+                "Érték"
+            ],
+            "rows": [
+                [
+                    "Előfordulás",
+                    "Gyakori"
+                ],
+                [
+                    "Megjelenők száma",
+                    "K100"
+                ],
+                [
+                    "Termet",
+                    "K"
+                ],
+                [
+                    "Méretkategória",
+                    "0"
+                ],
+                [
+                    "Sebesség",
+                    "60 (SZ) 12 (V)"
+                ],
+                [
+                    "Időigény",
+                    "3"
+                ],
+                [
+                    "Kezdeményező érték",
+                    "10"
+                ],
+                [
+                    "Támadó érték",
+                    "30"
+                ],
+                [
+                    "Védő érték",
+                    "50"
+                ],
+                [
+                    "Sebzés",
+                    "1k2"
+                ],
+                [
+                    "Életerő pontok",
+                    "2"
+                ],
+                [
+                    "Fájdalomtűrés pontok",
+                    "8"
+                ],
+                [
+                    "Asztrál ME",
+                    "0"
+                ],
+                [
+                    "Mentál ME",
+                    "0"
+                ],
+                [
+                    "Méregellenállás",
+                    "2"
+                ],
+                [
+                    "Intelligencia",
+                    "Állati"
+                ],
+                [
+                    "Tapasztalati pont",
+                    "1"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "Ezek a sokak által gyűlölt állatok mindenhol megtalálhatóak, de nem komoly ellenfelek. Hogy mégis e könyv lapjaira kerültek, azt az általuk terjesztett betegségek indokolják. Igaz, hogy egy állat sebzése 1k2 Sp, melyet már egy egyszerű bőrvért is felfog, azonban a patkányok által megdézsmált élelem ugyanúgy vírushordozónak minősül. A patkányok 2-4. szintű betegségeket terjesztenek."
+        },
+        {
+            "type": "paragraph",
+            "text": "Emellett nagyon jól használhatóak zavaró – vagy éppen „fűszerező” – tényezőnek a kalandok során, ha elhagyatott házakban, vagy csatornákban járnak a karakterek, hiszen ezen helyek a természetes élőhelyeik."
+        }
+    ]
+}

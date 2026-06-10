@@ -1,0 +1,117 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": false,
+    "section_title": "",
+    "content_blocks": [
+        {
+            "type": "paragraph",
+            "text": "irányításával foglalkozik. Necrografiának a hetedkor méltán legnagyobb dzsad nekromantája, Abdul al Sahred világhírű műve után nevezték: kétségtelenül az ő tevékenysége és páratlanul mélyreható tanulmányai tették ezt a mágiaformát oly hatékonnyá."
+        },
+        {
+            "type": "paragraph",
+            "text": "A boszorkánymesterek természetesen korábban is ismerték a Necrografia tanait, azonban al Sahred munkája nyomán tudásuk nemcsak bővült, de a korábban használt formulák is tovább csiszolódtak, valamint nem egy régen hatalmát vesztett, vagy megcsonkított rajzolat nyerte vissza így eredeti formáját."
+        },
+        {
+            "type": "paragraph",
+            "text": "A boszorkánymesterek – tanuljon bár Ynev bármely táján – mára szinte kizárólag az al Sahred munkáját alapul vevő Necrografiát tanítják, a csonkább varázslatokat csupán elszeparált, hagyományaikhoz végletekig ragaszkodó céh használja továbbra is, illetve azon nagymúltú szervezetek, akik az eltelt évezredek ellenére is képesek voltak tisztán megőrizni mágiájuk alapjait. Játétechnikailag azonban nem teszünk különbséget az utóbbi és az al Sahred által kidolgozott Necrografia között."
+        },
+        {
+            "type": "paragraph",
+            "text": "A Necrografia három csoportot (élőhalott, lélek és kísértet), valamint öt osztályt különböztet meg, s az alábbi módon osztályozza a túlvilági lényeket:"
+        },
+        {
+            "type": "table",
+            "headers": [
+                "Osztály",
+                "Megnevezés"
+            ],
+            "rows": [
+                [
+                    "I.",
+                    "Tudattalan élőholtak (élőhalott)"
+                ],
+                [
+                    "II.",
+                    "Éji rémek (élőhalott)"
+                ],
+                [
+                    "III.",
+                    "Kóborló dögök (lélek), Vérívó dögök (élőhalott)"
+                ],
+                [
+                    "IV.",
+                    "Lidércek (kísértet), Szellemek (kísértet)"
+                ],
+                [
+                    "V.",
+                    "Elhunyt lelkek (lélek)"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A többi Anyagi Világ és a Túlvilág teremtményeit megidézésük nehézsége szerint öt osztályba sorolom."
+        },
+        {
+            "type": "paragraph",
+            "text": "A tudattalan élőhalottak lelkekkel nem rendelkező, a természet rendjétől idegen teremtményei valamely gonosz szándékú Istennek, azok papjainak vagy ostoba varázshasználóinak. Torz lélekmásolatok, melyek fejlődésre képtelenek, létük nem több mint egyfajta elferdült Asztrális vagy Mentális létezés. Tudatuk egyetlen egyszerű, kívülről beléjük plántált parancsra korlátozódik; céljuk nem több mint ennek végrehajtása. A parancs megfogalmazója leggyakrabban maga a teremtőjük, esetleg az, aki uralma alá hajtja vagy határtalan ostobaságában megidézi őket. Lévén Anyagi Testük általában evilági, s így nehezebben, de sebezhetőek nem mágikus fegyverekkel is, ám korcs lelkük miatt a Természeti Anyagok Mágiája nem gyakorol rájuk semmilyen hatást, mint ahogy immúnisak a Mentál- és Asztrálvarázslatokkal szemben is. Legismertebb fajtáik az Izar és a Zaurak."
+        },
+        {
+            "type": "paragraph",
+            "text": "Az éji rémek a reinkarnáció folyamatában már magasra jutott, gonosszá vált lelkek, akik a további újjászületésből jó időre kitaszíttattak. Utolsó halálukkor a mágikus együttállások révén nem szakadtak el anyagi testüktől, hanem annak rabjává válva az Anyagi Világban kóborló élőhalottakká lettek. Legismertebb fajtáik a Bosszúálló (Beid), a Muliphein és a Syvan."
+        },
+        {
+            "type": "paragraph",
+            "text": "A kóborló dögök afféle lelkek, akik a reinkarnáció kikövezett ösvényéről saját gonoszságuk folytán az útszéli árok mocsokába sodródtak. Tönkrement, elkorcsosult, beteges lelkek, aki többé nem születnek újjá semmiben és senkiben, nem is jutnak soha a Külső Sík Világába. Lényük, tudatuk jelentős részét torz Asztráljuk teszi ki, Mentáljuk legfeljebb egy állathoz mérhető. Az anyagban egyébképpen ölthetnek testet: elbitorolják más, egészséges lelkek Anyagi Testét. Beöltöznek és ritka asztrológiai vagy ezoterikus együttállásokkor beteges vágyaik, őrületük kielégítésére kényszerítik azt. A kóborló dögök legismertebb fajtái a Hekator és a Rémlátó."
+        },
+        {
+            "type": "paragraph",
+            "text": "A vérívó dögök olyan lények, akiket áldozatként öltek meg valamely gonosz Isten oltárán. Lelküket a sötét szertartás ragadta ki a reinkarnáció folyamatából, és az Istenek Külső Síkjára ragadta el. Ott új testtel ruháztattak fel, mely már annak anyagából való, így az Anyagi Síkon csak mágiával átitatott fegyverekkel sebezhetők, s hatástalan rájuk a Természeti Anyagok Mágiája. Egykori haláluk Vérmágia következménye, ezzel magyarázható olthatatlan szomjuk az említett testnedv iránt. Legismertebb fajtáik a Gahul, a Vérfarkas és a Vámpír."
+        },
+        {
+            "type": "paragraph",
+            "text": "A lidércek és szellemek intelligens félhalottak, akik haláluk után valamilyen ártó szándékú átok következtében nem születtek újjá testben, hanem a síkok között rekedve örök bolyongásra kárhoztattak. Idézéskor a síkok közti térből szivárognak az Anyagi Világba, és az idézés lejártával oda is térnek vissza. Testük a világokat összekötő légies anyagból épül fel, ezért csak mágiával átitatott fegyverekkel sebezhetők. A lidérc boszorkányi átoknak, a szellem boszorkánymesteri Fekete mágiának a szüleménye. A lidércek legismertebb fajtái az Árny (Arich) és a Fantom, a szellemeké a Hatyasa és a Lesath."
+        },
+        {
+            "type": "paragraph",
+            "text": "Az elhunytak lelkeinek nevezzük azokat a lelkeket, akik bár részt vesznek a reinkarnáció folyamatában, meghatározatlan időre pihenni tértek valamely isten által uralt Külső Síkra. Ők nevük ismeretében és személyes tárgyaik vagy csontjaik birtokában megidézhetők, akár anyagba is börtönözhetők, ám aki ilyet tesz, legyen tisztában azzal, hogy cselekedete a Mindenség törvényei és az istenek akarata ellen való."
+        },
+        {
+            "type": "paragraph",
+            "text": "A reinkarnáció folyamatában már újjászületett lelkek semmilyen módon meg nem idézhetők."
+        },
+        {
+            "type": "paragraph",
+            "text": "Az ezen fejezethez tartozó varázslatok célpontja kivétel nélkül a halott test, az emberi porhüvely, amiből távozott az azt mozgató lélek, s mint ilyen, nem élvezi többé a Személyes Aura védelmét, így Mágiaellenállásra sem jogosult."
+        },
+        {
+            "type": "paragraph",
+            "text": "A varázslatok Erőssége egységesen 1 E, a Hatótávolság pedig – mint a legtöbb boszorkánymesteri varázslat esetében – itt is érintés, amit az alkalmazónak bal kezével kell végrehajtania."
+        },
+        {
+            "type": "rule",
+            "title": "Azonosítás",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "Mana pont: 15 Varázslás ideje: 1 perc Időtartam: Egyszeri. A varázslattal még a legvénebb csontok története is kifürkészhető. A boszorkánymester egyetlen elhunyt holttestét, vagy annak valamely maradványát vizsgálhatja meg. Hosszas koncentrálás után összetett érzelem- és gondolatfoszlányokként megismeri az elhunyt élettörténetét, származását. Ezáltal akár történelmi eseményekről is gyűjthet információkat. Mint ahogy hasznára válik a Lélekkidézés varázslat előkészítésében is, hiszen világossá válik számára az elhunyt hovatartozása, múltja, halálának oka és körülményei."
+        },
+        {
+            "type": "rule",
+            "title": "Csontérzékelés",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "Mana pont: 5 Varázslás ideje: 1 perc Hatótáv: 20 ynevi láb sugarú gömb Időtartam: 10 perc. A boszorkánymester ezen varázslattal elhalálozott teremtmények mélyen föld alá nyugvó csontjait, maradványait fedezheti fel. Ha nem fekszenek 20 ynevi lábnál mélyebben, az érzékeléshez elegendő elhaladnia felettük, miközben a varázslat igéit mormolja."
+        }
+    ]
+}

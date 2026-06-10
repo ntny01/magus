@@ -1,0 +1,206 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": true,
+    "section_title": "Barbár",
+    "content_blocks": [
+        {
+            "type": "paragraph",
+            "text": "Az amazon különleges előnyei és hátrányai a harcosnál leírtakon kívül:",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "Az amazonok egy hihetetlen összetartásuk, hatékony törzseik és alkalmazkodóképességük révén nem söpörtettek még el Ynev színpadáról. Az emrelin számára minden mindennek a középpontja és értelme. Igaz, kissé kaotikus és harcra épülő társadalmukban ugyan megválogatják, hogy kinek és mit tanítanak meg, de a KM belátására bízva a karakter bármely nem Misztikus és Tudományos képzettséget tanulhat. Ez esetben a közösség 4. fokú Oktatás képzettség előnyeit biztosítja számára. Természetesen, csak azon képzettségeket tanulhatja meg a módon, melyeket a törzs valamely tagja birtokol. Ebben a kérdésben ismét a KM szava a döntő.",
+            "title": "Amazon képzettségtanulás",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "Az amazonok női társadalma a finom intrikára épül, éppen ezért az emrelin karakter könnyebben veszi észre a hazugságot: sikeres Asztrálpróba esetén felfigyel a valótlant állító személy viselkedésében beállt apró változásokra. Tehát 2. fokon képzett Lélektannal bíró karakterként vehet részt a képzettségpróbában ellenfele Színészet képzettsége ellenében.",
+            "title": "Amazon hazugságérzékelés",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "Az amazon harcosok 5. Tapasztalati szint felett, ha visszatérnek törzsükhöz, akkor próbatétel elé kerülhetnek. A kitartás és tisztaság próbája, mely egybeesik a nyári napforduló éjszakájával minden harcos előtt nyitva áll, azonban csak igen kevesen mernek részt venni ezen megmérettetésen. A próba alatt a törzs papnői által a próba résztvevőjére bocsátott álorcában (mely leginkább az Igaz-álom néven nevezett boszorkány varázslathoz hasonló) kell a jelöltnek bizonyítania, hogy felvegyék a Szolgálók közé, kik a Földanya harcosai. Az álom alatt bármely a törzset fenyegető veszedelem elhárításáról szól, mely csavaros észjárást és kiemelkedő harci tudást vagy szervezőkészséget követel meg a próbálkozótól. A próba rendszeresen végződik a jelölt halálával, ki, ha elbukik, egyszerűen nem ébred fel álmából. Azok azonban, akik győztesen ébrednek kiérdemlik a Földanya kegyét (a Kegyelt hátteret nyerik el), s a papnők bevezetik új tanítványukat vallásuk misztikus rejtelmeibe (innentől kezdve tanulhatja a Vallásismeret (Igére) képzettséget a karakter a törzse nyújtotta bónuszokkal). S felkészítik a reá váró küldetésekre – a karakter innentől kezdve vásárolhat Kegy pontokat.",
+            "title": "Amazon próbatétel",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "Az amazon induló képzettségei I. Tapasztalati szinten",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "table",
+            "text": "",
+            "title": "Amazon induló képzettségek",
+            "headers": [
+                "Induló képzettségek",
+                "Fok"
+            ],
+            "rows": [
+                [
+                    "Fegyverhasználat (emrelin kard)",
+                    "3. fok"
+                ],
+                [
+                    "Fegyverhasználat (hajítófegyverek)",
+                    "2. fok"
+                ],
+                [
+                    "Fegyverhasználat (íjak)",
+                    "2. fok"
+                ],
+                [
+                    "Fegyverismeret",
+                    "2. fok"
+                ],
+                [
+                    "Fájdalomtűrés",
+                    "2. fok"
+                ],
+                [
+                    "Harctéri gyakorlat",
+                    "2. fok"
+                ],
+                [
+                    "Futás",
+                    "2. fok"
+                ],
+                [
+                    "Úszás",
+                    "2. fok"
+                ],
+                [
+                    "Vadonjárás (mérsékelt égövi erdő)",
+                    "2. fok"
+                ],
+                [
+                    "Herbalizmus",
+                    "2. fok"
+                ],
+                [
+                    "Állatismeret",
+                    "2. fok"
+                ],
+                [
+                    "Időjóslás",
+                    "2. fok"
+                ],
+                [
+                    "Lélektan",
+                    "1. fok"
+                ],
+                [
+                    "Udvari etikett/intrika",
+                    "1. fok"
+                ],
+                [
+                    "Mászás",
+                    "+10%"
+                ],
+                [
+                    "Esés",
+                    "+10%"
+                ],
+                [
+                    "Akrobatika",
+                    "+10%"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "Civilizált ember vagy más humanoid nem lehet barbár – erre nemcsak fizikumának hiányosságai, de világlátása és ismeretanyaga sem teszi alkalmassá.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "A barbár, ahogyan Ynev lakói megismerhették, a J'Hapi na és a K'Harkad közeli elterülő vidéken élő Keleti Barbárok közül származó harcosok révén vált ismertté.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "A Keleti Barbárok törzsi csoportokban, szigorú hierarchia szerint élnek, e törzseket fogja össze időnként – mikor épp sikerül nekik – a kán. A hierarchia megkülönbözteti az ún. szabad harcosokat és a korgokat. A korg hozzávetőleges fordításban vadászt, kóborlót jelent – a nagyvilág számára azonban a korgok egyet jelentenek a barbárokkal.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "A korgok a törzseken belül megkülönböztetett bánásmódban részesülnek. Nem tartoznak egyetlen törzshöz sem, de mindenütt szívesen látják őket, és nagy tisztelettel viseltetnek irányukban. Egy korgnak nem parancsol a törzsfő; még a kán is csak kérhet tőle – igaz, az efféle kéréseknek nem illik ellentmondani, de még egy korg is meggondolja, hogy szembeszálljon-e a teljhatalmú kán akaratával.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "A korgok életük nagy részét a szabadban kóborolva töltik, vadásznak vagy törzsi csapatokban segédkeznek. Kiváló fegyverforgatók, félelmetes fizikai erővel és állóképességgel rendelkeznek, ám mentális és asztrális tulajdonságaik nem valami fényesek. Szigorú hagyományok szerint élik életüket, s noha számtalan újdonsággal és hasznos tudással rendelkeznek mára a Keleti Barbárok – e tudást a környező civilizált népektől szerezték –, azok jó részét egyáltalán nem használják, vagy egészen más látásmóddal.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "A korgokat a civilizáció még nem (vagy csak igen kevéssé) rontotta meg, egyfajta különös – inkább állatias – kölcsönösséggel rendelkeznek. Az intrikák, a hazugságok idegenek tőlük, mint ahogy a józan belátás és a megfontolás is – feltéve, ha az a harccal lenne kapcsolatos. Vérmérsékletük miatt talán őhozzájuk áll legközelebb a Harci láz képzettség alkalmazása. Emiatt azonban leszögezhetjük, hogyha egy barbár fegyvert húz, addig nem teszi le, míg ellenfelét le nem győzte vagy ő maga meg nem halt.",
+            "title": "Barbár harci jellemzők",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "flavor_text",
+            "text": "Mondják, barátnak kevés jobbat találni náluk – feltéve, ha valaki elfogadja nehézfejűségüket és babonásságukat –, de ellenfelének felettebb szörnyűek. A korg sosem felejti sérelmét, s képes az egész világot bejárni, hogy megtalálja, akit keres. Ha ez húsz évbe kerül, akkor húsz év múlva jön el a pillanat, mikor sújtásra emelkedik a csatabárd...",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "A barbár különleges előnyei és hátrányai a harcosnál leírtakon kívül:",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "Törzsében, saját szálláshelyén a törzs megbecsült, értékes tagja. Mivel tudásától és hatalmától a törzs élete függhet, ezért az életmódjuktól idegen képzettségeket leszámítva – lásd lentebb – a karakter minden képzettségét 4. fokú Oktatás képzettség bónuszai szerint tanulhat népétől.",
+            "title": "Barbár képzettségtanulás",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "Ingyenesen megkapja a Mágiatagadás Háttér tetszőleges mértékű változatát.",
+            "title": "Barbár mágiatagadás",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "Neveltetése és világnézete miatt a Szociális, Alvilági, Tudományos képzettségeket mindössze annyi KP-ért sajátíthatják el számára (felfelé kerekítve), Misztikus képzettségeket pedig egyáltalán nem tanulhat.",
+            "title": "Barbár képzettségkorlátok",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "Az igazán kiemelkedő, hősies tetteikről híressé váló harcosok legendái idővel eljutnak a Hatalmas Tengeri Kígyó barlangja környékén tanyázó sámánokhoz is, kik a Nagy Kánok udvarának szellemharcosait kutatják folyamatosan népük hősei közt. Ha a sámánok felfigyelnek egy ilyen híres korgra (5. Tsz. felett), akkor az számít-",
+            "title": "Barbár sámánok figyelme",
+            "headers": [],
+            "rows": []
+        }
+    ]
+}

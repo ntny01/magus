@@ -1,0 +1,80 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": false,
+    "section_title": "",
+    "content_blocks": [
+        {
+            "type": "paragraph",
+            "text": "A Méregellenállást sok módosító befolyásolhatja, mint például a méreg szintje és az áldozat cselekedetei."
+        },
+        {
+            "type": "paragraph",
+            "text": "Ha az áldozat csak a méreg eltávolításával törődik – pl. kiszívja a sebből – jelentősen javulnak esélyei a mérgezéssel szemben. Az efféle megelőző cselekedetekre csak a méreg hatásának kezdete előtt van lehetősége – ha így tesz, akkor abban a körben mást nem cselekedhet."
+        },
+        {
+            "type": "paragraph",
+            "text": "Léteznek egyéb védelmek is, amulettek, litániák, ezek módosítóit a megfelelő helyeken tárgyaljuk."
+        },
+        {
+            "type": "paragraph",
+            "text": "Aki teheti, ellenméreggel védekezik. Ezeket a méregkeverők és nagyritkán a herbalisták is képesek előállítani. Legtöbbször akkor hatásos, ha még a mérgezés előtt beveszi őket az áldozat."
+        },
+        {
+            "type": "paragraph",
+            "text": "Van egy másik módszer is, amivel testünk ellenszegülhet a méregnek, és pedig a hozzászoktatás. Ilyenkor a hozzászoktatandó karakter először kis, később egyre nagyobb adagokat kap az adott méregből, míg szervezete fokozatosan ellenállást fejleszt ki. Ezt kizárólag 4. fokú méregkeverő segítségével tanácsos végezni, hiszen nem minden méregre működik a módszer és nem mindegy, hogy milyen adagokat és milyen ütemben kap a karakter. A hatás még így is bizonytalan, könnyen lehet, hogy a karakter belehal."
+        },
+        {
+            "type": "paragraph",
+            "text": "Az éremnek van azonban másik oldala is: mert a mérgeket lehet erősíteni. Egy adott erősségű méregből minél többet kap valaki, annál biztosabb a hatás. Persze nem minden méregfajtából lehet egyszerre több adagot bejuttatni az ellenfél szervezetébe."
+        },
+        {
+            "type": "rule",
+            "title": "Egészségpróba módosítók",
+            "headers": [],
+            "rows": [
+                [
+                    ",",
+                    ""
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "Az alábbi táblázat arról tudósít, hogy az egyes fegyverekre mennyi méreg szükséges. Ennyi a minimális mennyiség, ha valaki ennyit ken a fegyverére, attól még nem élvezi a többletméregre vonatkozó szabályokat, míg ennél kevesebbet használva a méreg hatása egy osztályt esik minden hiányzó adag után. A feltüntetett adagnak legfeljebb a kétszeresét lehet kenni egy fegyverre."
+        },
+        {
+            "type": "table",
+            "headers": [
+                "Fegyver",
+                "Adag"
+            ],
+            "rows": [
+                [
+                    "Tű",
+                    "1"
+                ],
+                [
+                    "Nyílvessző",
+                    "1"
+                ],
+                [
+                    "Tőr",
+                    "2"
+                ],
+                [
+                    "Rövidkard",
+                    "4"
+                ],
+                [
+                    "Hosszúkard",
+                    "6"
+                ],
+                [
+                    "Lovagkard",
+                    "7"
+                ]
+            ]
+        }
+    ]
+}

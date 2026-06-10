@@ -1,0 +1,118 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": false,
+    "section_title": "",
+    "content_blocks": [
+        {
+            "type": "paragraph",
+            "text": "A másik alkalmazáskor az áldozat vére már az erekben alvadni kezd, s a súlyosságnak megfelelő negatív Tulajdonságmódosítót szenved el. Ha Állóképessége vagy Intelligenciája 0-ra csökken, a vér áramlása teljesen leáll a szervezetben."
+        },
+        {
+            "type": "rule",
+            "title": "Vérzékenység",
+            "headers": [
+                "Mana pont",
+                "Lappangás ideje"
+            ],
+            "rows": [
+                [
+                    "20",
+                    "Lassú lefolyású"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A varázslat okozta betegség a véralvadás képességét gátolja, ha az áldozat a fertőzés elleni Egészségpróbát elvétette. Hatására, ha az áldozat éles vagy hegyes fegyverrel ejtette sebet kap, az nem álló vérzés következtében percenként annyi Ép-t veszít, amennyit a fegyver sebzése okozott. Ha Ép-i elfogynak, a sebződés Életerő pontjaiból vonódik le. A vérzés sikeres Egészségpróba esetén magától eláll, ellenkező esetben Ép-i elfogytával a sebződés Életerő pontjaiból vonódik le. A próbát minden eltelt perc után meg lehet ismételni. A vérzés egyébként csak sikeres Orvosláspróbával, vagy harbalista által készített körömvirágkenőccsel állítható el. Ezzel az adott Ép-vesztés is véget ér, ám a betegség nem múlik el: a következő seb újabb bonyodalmat okoz. Sokkal veszedelmesebbek a zúzófegyverek okozta Ép-sebzések, mert ezek minden esetben belső vérzéssel járnak. Ilyen esetben az áldozat percenként a súlyossági foknak megfelelő Ép-t veszít. Ép-i elfogytával a sebződés Életerő pontjaiból vonódik le. Az efféle vérzés csak Szakrális mágiával, vagy -4 módosítóval megdobott sikeres Orvoslás képzettségpróbával állítható el."
+        },
+        {
+            "type": "rule",
+            "title": "Veszettseg",
+            "headers": [
+                "Mana pont",
+                "Lappangás ideje"
+            ],
+            "rows": [
+                [
+                    "15",
+                    "Lassú lefolyású"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A varázslat az állatok által terjesztett Veszettseget plántálja és az áldozat szervezetébe. A betegség a lefolyási idő elteltéig észrevétlen marad, lappang. Utána az izmok görcsösebbé válnak, a száj szélén fehér hab jelenik meg, az áldozat pedig egyre szomjasabb és vadabb lesz. A súlyossági foktól függően csupán hordozó lesz, vagy hetente rohamokban jön rá az őrjöngés, a Válságos stádiumot elérve azonban megtámad minden körülötte fellelhető élőlényt, de nem fegyverrel vagy mágiával, hanem foggal, körömmel. A megsebzett lényeknek Egészségpróbát kell dobniuk, különben ők is elkapják a veszettséget. A beteg állapota magától soha nem javul, s ha eléri a Halálos fokozatot, az áldozat menthetetlenül elpusztul."
+        },
+        {
+            "type": "rule",
+            "title": "Vörös halál",
+            "headers": [
+                "Mana pont",
+                "Lappangás ideje"
+            ],
+            "rows": [
+                [
+                    "60",
+                    "Azonnali hatású"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "Ez a varázslat az egyik leghalálosabb betegség okozója. A Vörös halál keringési rendszert károsító, biztosan halálos betegség. Hatására az áldozatok bőre elvékonyodik, áttetszővé válik, majd a következő körben a lény elkezd pórusain át vérezni, ami teljes elvérzéshez, halálhoz vezet. A vérzés alatt az áldozat körönként 1k6 Ép-t veszít, s nullára érve meghal. A beteg állapota magától soha nem javul vagy romlik, a betegség lefolyása minden esetben halálos kimenetelű."
+        },
+        {
+            "type": "chapter",
+            "title": "Betegségmágia"
+        },
+        {
+            "type": "paragraph",
+            "text": "Az ebbe a csoportba tartozó varázslatok természetüket tekintve igen hasonlatosak és szorosan kapcsolódnak a Rontások mágiáihoz. A különbség köztük az, hogy a Betegségmágiák önmagukban ártalmatlanok, sőt, nemcsak önös, de egyenesen jobbító szándékkal is használhatók. Jóllehet, ez felettébb ritka. Ezen mágiaformák a betegségek lefolyását befolyásolják, vagy azonosításukban jutnak szerephez. Tulajdonképpen a Rontások hatását is módosíthatják, esetenként még ütőképesebb kombinációk létrehozására nyílik lehetőség. De nincs akadálya annak sem, hogy a boszorkánymester a természetes úton kialakult betegségeket vonja ellenőrzése alá."
+        },
+        {
+            "type": "rule",
+            "title": "Betegség azonosítása",
+            "headers": [
+                "Mana pont",
+                "Varázslás ideje",
+                "Hatótáv",
+                "Időtartam"
+            ],
+            "rows": [
+                [
+                    "4",
+                    "1 perc",
+                    "Érintés",
+                    "Egyszeri"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "Ezzel a varázslattal a boszorkánymesternek lehetősége nyílik minden fontos információt megtudni egy betegségről. A varázslat megidézése után ismerni fogja a lefolyás súlyosságát, a betegség pontos hatásait, terjedésének körülményeit. A gyógyítás módjáról természetesen csak akkor lesznek elképzelései, ha ismeri a betegség lehetséges ellenszereit, vagy mágiához folyamodik. A varázslat felismeri a Boszorkánymesteri mágia eredményeként megjelent kórokat is – az azonosító tehát minden efféle esetben tudni fogja, hogy a beteg boszorkánymesteri mágiának esett áldozatul."
+        },
+        {
+            "type": "rule",
+            "title": "Betegség befolyásolása",
+            "headers": [
+                "Mana pont",
+                "Varázslás ideje",
+                "Hatótáv",
+                "Időtartam"
+            ],
+            "rows": [
+                [
+                    "6/E",
+                    "1 kör/E",
+                    "Érintés",
+                    "Végleges"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A varázslat hatására a boszorkánymester vagy megbolygatja a szervezet életenergia-áramlását, és megzavarja az immunrendszert (ezzel elősegítve, hogy a betegség kiteljesedhessen és még nagyobb pusztítást vigyen végbe az áldozat testén), vagy időlegesen többlet életerőt juttat az áldozat szervezetébe, hogy könnyebben leküzdhesse a kórt. A rontás hasznát kár lenne ecsetelni: kellő gonoszsággal és Mana ponttal egy egyszerű meghűlés is halálos kórrá válhat, a varázslat jótékony változata azonban még a boszorkánymester számára is veszélyeket rejt. Mivel mágiája híján van a gyógyító formuláknak, ezért egyetlen módon tud segíteni a szerencsétlenül járt lényen: saját Életerő pontjaiból időlegesen annyit ad át az áldozatnak, amennyivel a betegség súlyosságát csökkenteni akarja. A mágia bevégeztével az Ép-k azonnal visszatérnek, kivéve, ha a boszorkánymester megzavarják a varázslás közben (Épvagy Ép-sérülést szenved). Ilyenkor ugyanis nemcsak a felhasznált Mana és Életerő pontok vesznek el, hanem az alkalmazónak Egészségpróbát kell tennie a betegség ellen, s ha elveti, maga is fertőzött lesz. Érthető tehát, hogy a boszorkánymesterek milyen körültekintéssel járnak el, ha mégis az áldozat megsegítésére szánják magukat. A varázslat Mana pont igénye attól függ, hány kategóriával kívánja a boszorkánymester megváltoztatni a betegség"
+        }
+    ]
+}

@@ -1,0 +1,166 @@
+{
+    "is_new_chapter": true,
+    "chapter_title": "Vértestvérek",
+    "is_new_section": true,
+    "section_title": "A testőr fejvadász induló képzettségei",
+    "content_blocks": [
+        {
+            "type": "paragraph",
+            "text": "egyértelműen az Orgyilkosok mellett a fejvadász alakulatok másik lehetséges vezető rétege ez."
+        },
+        {
+            "type": "paragraph",
+            "text": "Fegyverzetük teljesen feladatuktól függő, azonban ritkán jelennek meg valamilyféle vértezet nélkül, túlélésük mindennél fontosabb a védett személy szempontjából."
+        },
+        {
+            "type": "paragraph",
+            "text": "A befolyásos pártfogókat azonban a belviszályoktól dúlt Szent Földön sem nélkülözhetik. Független klán rendkívül kevés van; többségük egy-egy nagyhatalmú nemesi család, egyházfő vagy lovagrend védelmét élvezi. Ők gondoskodnak a saját faluközösségeikben (gorviki kifejezéssel gorvákban) élő fejvadászokról, akik viszonzásul feltétlen engedelmességgel tartoznak nekik."
+        },
+        {
+            "type": "table",
+            "title": "1. Tapasztalati szinten:",
+            "headers": [
+                "Induló képzettségek",
+                "Fok"
+            ],
+            "rows": [
+                [
+                    "Fegyverhasználat (a klán tradicionális fegyvere)",
+                    "3. fok"
+                ],
+                [
+                    "Fegyverhasználat",
+                    "2. fok"
+                ],
+                [
+                    "Fegyverhasználat (nehézkardok, egykezes kardok, tőrök, csatabárdok, buzogányok, szálfegyverek)",
+                    "1. fok"
+                ],
+                [
+                    "Fájdalomtűrés",
+                    "2. fok"
+                ],
+                [
+                    "Vértviselet",
+                    "2. fok"
+                ],
+                [
+                    "Fegyverismeret",
+                    "2. fok"
+                ],
+                [
+                    "Harctéri gyakorlat",
+                    "2. fok"
+                ],
+                [
+                    "Hadvezetés",
+                    "2. fok"
+                ],
+                [
+                    "Taktika (kisebb egységes formációk)",
+                    "1. fok"
+                ],
+                [
+                    "Lélektan",
+                    "2. fok"
+                ],
+                [
+                    "Térképészet",
+                    "1. fok"
+                ],
+                [
+                    "Orvtámadás",
+                    "1. fok"
+                ],
+                [
+                    "Élettan",
+                    "1. fok"
+                ],
+                [
+                    "Futás",
+                    "2. fok"
+                ],
+                [
+                    "Úszás",
+                    "2. fok"
+                ],
+                [
+                    "Pszi (pyarroni)",
+                    "2. fok"
+                ],
+                [
+                    "Lopódzás",
+                    "+10%"
+                ],
+                [
+                    "Rejtőzés",
+                    "+10%"
+                ],
+                [
+                    "Csapdafelderítés",
+                    "+20%"
+                ],
+                [
+                    "Esés",
+                    "+10%"
+                ],
+                [
+                    "Akrobatika",
+                    "+15%"
+                ],
+                [
+                    "Veszélyérzék",
+                    "+20%"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A Corgák kezében van ugyanakkor a gorviki alvilág csaknem teljes irányítása is. Nemcsak a pénzhamisítást és a csempészést ellenőrzik, hanem helyenként a nagypolitikában, Gorvik legfelsőbb köreiben is képesek az érdekeiket érvényesíteni. Ily módon bonyolult visszacsatolások révén előfordulhat – bár az ilyesmi mindig szörnyen kockázatos vállalkozás –, hogy némelyik klán bizonyos kérdésekben nyomást tud gyakorolni a saját pártfogóira! A Vértestvériség nélkülözi ugyan az egységes, központi irányítást, hálózata azonban az egész országot átszövi, a Corgák befolyási övezetében a köznép sajátos hűbéri viszonyban áll velük."
+        },
+        {
+            "type": "rule",
+            "title": "A testőr képzettségei",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "A Vértestvérek messze földön nevezetes speciális arzenáljukról, mely ellenfeleik számára igen sok kellemetlen meglepetést tartogat. Gorvik a fejvadászok hazája; ennek a jellegzetes fegyvernek a forgatását csak a Corgák kiképzőközpontjaiban lehet megtanulni, s az itteni fejvadászok különleges ismeret előnyévé vált. A lelepleződés valószínűsége mégis csekély, hisz ezeket a gyilkos szerszámokat – épp ritkaságuk és egyediségük miatt – Gorvikon kívül legfeljebb a hivatásos fegyverszakértők tudják azonosítani."
+        },
+        {
+            "type": "paragraph",
+            "text": "Az egész Gorvikot behálózó fejvadász szervezetek tagjait illetik ezzel a névvel. Szerte Yneven gyűlölt és rettegett orgyilkosok, gátlástalanáguk és aljasságuk közmondásos; körmönfont cselszövők és úgy hazudnak, mint a vízfolyás. Nem vetik meg a mérgeket, sőt – kimondottan előszeretettel folyamodnak hozzájuk. Nyílt harcra nemigen kaphatók, a szavuk széle szórt pelyva, s nemcsak megbízásból ölnek, hanem élvezetből is."
+        },
+        {
+            "type": "paragraph",
+            "text": "A Vértestvérektől nem egészen idegen a mechanika tudománya, és nagyra tartják a csavaros, kézi fegyverés páncélkovácsokat. Vezetőik méregdrága páncéljai nem csupán bámulatosan könnyűek és ütésállóak, hanem kisebbfajta fegyverraktár is lapul bennük: tűvetők, rugóra járó pengék, tőröket, mérgeket rejtő rekeszek. Felszerelésüket különleges, egyedi célzófegyverekkel egészítik ki, például nehéz, ismétlő számszeríjakkal, vagy épp ellenkezőleg, apró, köpenyráncban eldugható műremekekkel, melyeket fél kézzel is használni lehet cinikus eltökéltségüknek hála, könnyűszerrel túlteszik magukat a hagyományhűségen, a morális megfontolásokon. Épp ezért nagyon ritka az olyan gorviki klán napjainkra, amely birtokolja és oktatja a Slan Pszi diszciplínáit. Ezen klánok a Birodalmi Fejvadászklán beszállítói, ezért ezekből JK nem indulhat."
+        },
+        {
+            "type": "paragraph",
+            "text": "Vesztett hírüknek köszönhetik, hogy hazájukon kívül mindenütt csak rejtve és titokban tevékenykedhetnek – hacsak nem állnak befolyásos helyi hatalmasság védelme alatt. Ha lelepleződnek vagy pártfogójuk elbukik, nincs senki, aki megkönyörülne rajtuk; velük szemben még az ősi ellenségek is összefognak. Persze épp ez az, ami oly szívesen látott vendéggé teszi őket a gátlástalanabb nagyurak udvarában: kiszolgáltatottságuk biztosítja a védnökük iránti hűségüket."
+        },
+        {
+            "type": "paragraph",
+            "text": "A szervezet mind a négy fejvadásztípust képzi és alkalmazza."
+        },
+        {
+            "type": "rule",
+            "title": "A Gorviki Vértestvér különleges képességei",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "title": "I. Képzettségi előnyök Gorvikban képzett fejvadászoknak",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "title": "II. Speciális fegyverek és felszerelések",
+            "headers": [],
+            "rows": []
+        }
+    ]
+}

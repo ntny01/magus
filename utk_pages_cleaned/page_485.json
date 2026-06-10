@@ -1,0 +1,193 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": false,
+    "section_title": "",
+    "content_blocks": [
+        {
+            "type": "paragraph",
+            "text": "Mivel egyetlen túlvilági lény sem él a szó szoros értelmében, ezért a mérgek, amelyek köztudottan az életfunkciókat befolyásolják, semmilyen hatással nincsenek rájuk."
+        },
+        {
+            "type": "paragraph",
+            "text": "Ugyancsak az Élet princípiumának hiánya miatt az élőholtak nem éreznek fájdalmat, így változatlan erővel támadnak, míg el nem pusztulnak, akármilyen súlyos sérüléseket szenvedjenek is a harcban. Mert nem élnek és nincsenek életfunkcióik, egy túlvilági lényt sokkal nehezebb legyőzni, mint egy közönséges halandót, hiszen míg egy szíven szúrt ember szinte rögtön meghal, az élőholtat ez a seb nem befolyásolja. Ez tükröződik ÉP-jük számában is. Elpusztításukhoz minden esetben olyan súlyos sebeket kell ejteni testükön, amitől az használhatatlanná (harcképtelenné) válik. Ezt csak Túlütéssel lehet elérni – azaz az élőholtak csak Túlütéssel sebezhetőek."
+        },
+        {
+            "type": "paragraph",
+            "text": "Bizonyos élőholtak rendelkeznek különleges képességekkel. Noha ezek jellemzésénél gyakran hivatkozunk varázslatmozaikokra, ezek nem mágikus hatások, hanem a teremtmény lényéből fakadó képességek, akár az embereknél a beszéd. Éppen ezért ezeket a hatásokat Mágia észleléses diszciplínával vagy Fürkészéssel felfedni lehetetlen, mint ahogy Destrukcióval sem lehet őket megszüntetni. Ha azonban valaki hasonló, de nagyobb erejű mágikus hatással válaszol, természetesen semlegesítheti őket."
+        },
+        {
+            "type": "paragraph",
+            "text": "Az életerővel táplálkozó szellemek Abdul al Sahred Necrografiájában külön osztályt szentelt az életerővel táplálkozó szellemeknek – s nem véletlenül. Az emberek életerőenergiáit elszívó kísértetek gyengítik áldozatukat, de saját magukat erősítik is egyúttal. A Necrografia ezt írja az életerővel táplálkozó szellemekről:"
+        },
+        {
+            "type": "rule",
+            "title": "Életerővel táplálkozó szellemek",
+            "headers": [],
+            "rows": [
+                [
+                    "„Akit ez a fajta fajzat megérint, azonnal dermesztő kábultságot érez testében és lélekben egyaránt. Minél többet szipolyoz ki belőle a szellem az élet édes esszenciájából, annál gyengébb és erőtlenebb lesz a halandó, míg végül, ha az élet utolsó szikrája is távozott belőle, rémes élőholtként kísért tovább, amit a tudósok csak Izarnak ismernek... Míg a vérívó élőholtak nagyritkán bár, de ráfanyalodnak állati vérre, az életerővel táplálkozó szellemek áldozata csak ember lehet.”"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A játék nyelvén ez a következőket jelenti az áldozat számára: az életerővel táplálkozó szellemek puszta érintésükkel képesek elorozni áldozatuk életerőenergiáit. Ennek hatása azonos a boszorkánymester Nekromancia típusú varázslatainál leírt, életerőt szívó varázslatokkal. Az ott leírtak közül a szellem tetszés szerint alkalmazhatja bármelyiket."
+        },
+        {
+            "type": "paragraph",
+            "text": "A halott lelke Halott lelkének egy már meghalt teremtmény valamely módon megidézett és/vagy az Anyagi Síkhoz kötött lelkét nevezzük."
+        },
+        {
+            "type": "paragraph",
+            "text": "A lélek csak Asztrálés Mentálsíkon van jelen, anyagi teste nincsen, egészen addig a pillanatig, míg valamely módon az anyagba nem köttetik."
+        },
+        {
+            "type": "paragraph",
+            "text": "A lélek rendelkezik az egykori lény képességeivel: annak TSZ-ével, valamint képes Pszit és mágiát használni, ha az is képes volt. Rendelkezik az egykori teremtmény minden tudásával és emlékével. Természetesen ezek jelentős részét csak akkor lesz képes használni, ha „működő” testbe helyezik. Ilyenkor megközelítőleg azonos TSZ-en fog harcolni – bár az új test megszokása némi időt vesz igénybe! Varázsolni is csak anyagi testben tud, hiszen csak így képes kiejteni a varázsigéket és a levegőbe róni a rúnákat. Pszit anyagi test nélkül is alkalmazhat."
+        },
+        {
+            "type": "paragraph",
+            "text": "A megidézettet nem mindig helyezik testbe. Van úgy, hogy valamely tárgyhoz kötik – ilyenkor az adott tárgy minősül az anyagi testének. Ezáltal általában nem lesz mozgásképes, még beszélni sem tud, kivéve néhány különleges esetet (lásd Homunkulusz), pszijét viszont így is használhatja, miáltal telepatikus kommunikációra képes."
+        },
+        {
+            "type": "paragraph",
+            "text": "A lélek jelleme, dolgokhoz való hozzáállása az egykori teremtményével azonos, s ha ez a módosult körülmények dacára egyáltalán lehetséges, céljai is változatlanok maradnak."
+        },
+        {
+            "type": "paragraph",
+            "text": "Ha a halott lelke egy közelmúltban meghalt másik lény testébe kerül, a létrejövő lény Homunkulusz. Természetesen az Élet princípiuma e teremtményben nem található meg."
+        },
+        {
+            "type": "rule",
+            "title": "Zombi (Zaurak)",
+            "headers": [],
+            "rows": [
+                [
+                    "Előfordulás: Ritka"
+                ],
+                [
+                    "Megjelenők száma: 1"
+                ],
+                [
+                    "Termet: E"
+                ],
+                [
+                    "Méretkategória: 1"
+                ],
+                [
+                    "Sebesség: 60 (SZ)"
+                ],
+                [
+                    "Időigény: 3"
+                ],
+                [
+                    "Kezdeményező érték: 20"
+                ],
+                [
+                    "Támadó érték: 60"
+                ],
+                [
+                    "Védő érték: 70"
+                ],
+                [
+                    "Sebzés: 1k6 vagy fegyver"
+                ],
+                [
+                    "Életerő pontok: 15"
+                ],
+                [
+                    "Fájdalomtűrés pontok: -"
+                ],
+                [
+                    "Asztrál ME: Immunis"
+                ],
+                [
+                    "Mentál ME: Immunis"
+                ],
+                [
+                    "Méregellenállás: Immunis"
+                ],
+                [
+                    "Intelligencia: Alacsony"
+                ],
+                [
+                    "Jellem: Káosz, Halál"
+                ],
+                [
+                    "Tapasztalati pont: 8"
+                ],
+                [
+                    "Necrografiai osztály: I. tudattalan élőholt"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A zombik lélekkel nem rendelkező, mágiával mozgatott holttestek, akiket gonosz papok vagy boszorkánymesterek használnak fel sötét céljaik érdekében. Teremtőik egyszerű parancsainak engedelmeskednek, gondolkodás nélkül. Lelkük nem lévén, minden érzelemtől mentesek, fájdalmat sem éreznek."
+        },
+        {
+            "type": "paragraph",
+            "text": "Harcban használhatnak egyszerűbb fegyvereket, vagy puszta kezüket, húsz körmük halálukban egy ideig tovább nőttek. Harci tudásuk szinte a nullával egyenlő, gépiesen támadják áldozatukat. Ami mégis néha veszélyessé teheti őket, az kitartásuk, hiszen fájdalmat nem érezvén semmitől sem rettenek vissza."
+        },
+        {
+            "type": "paragraph",
+            "text": "Testük lehet ép holttest, de akár összeaszott csontváz is. A bomlás akármilyen szakában is lett belőlük élőholt, rothadásuk azon a fokon megállt, azonban állandóan az elmúlás szaga lengi őket körül."
+        },
+        {
+            "type": "rule",
+            "title": "Crantai Kóborló",
+            "headers": [],
+            "rows": [
+                [
+                    "Előfordulás: Nagyon ritka (lásd lentebb)"
+                ],
+                [
+                    "Megjelenők száma: 2k6"
+                ],
+                [
+                    "Termet: E"
+                ],
+                [
+                    "Méretkategória: 1 vagy fegyvertől függ"
+                ],
+                [
+                    "Sebesség: 100 (SZ)"
+                ],
+                [
+                    "Támadások száma: 2"
+                ],
+                [
+                    "Kezdeményező érték: 40 vagy 52 (hosszúkard)"
+                ],
+                [
+                    "Támadó érték: 95 vagy 120 (hosszúkard)"
+                ],
+                [
+                    "Védő érték: 115 vagy 140 (hosszúkard)"
+                ],
+                [
+                    "Sebzés: 1k6 vagy 2k6+4 (hosszúkard)"
+                ],
+                [
+                    "Életerő pontok: 35"
+                ],
+                [
+                    "Fájdalomtűrés pontok: -"
+                ],
+                [
+                    "Asztrál ME: Immunis"
+                ],
+                [
+                    "Mentál ME: Immunis"
+                ],
+                [
+                    "Méregellenállás: Immunis"
+                ],
+                [
+                    "Pszi képzettség: 25 (lásd lentebb)"
+                ]
+            ]
+        }
+    ]
+}

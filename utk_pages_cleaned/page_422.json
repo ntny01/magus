@@ -1,0 +1,68 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": false,
+    "section_title": "",
+    "content_blocks": [
+        {
+            "type": "paragraph",
+            "text": "Hatalmas, elkerített térségeken, az erdők mélyén találhatók ezek a telepek, s félelmetes gerendaváraknak tűnnek inkább, mint épp oly gyönyörű lakhelynek. Ez csak kívülről igaz. A tolvajoktól, gonosztevőktől védő falak óriási területeket kerítenek el, ahol szinte eredeti környezetükben élnek és szaporodnak ezen a ritka teremtmények. Állandó, jól kiképzett őrség vigyázza őket, földön és levegőben egyaránt. Az elfek ebben is nagy szerepet vállalnak. Az egyes telepek mellett csaknem mindenütt megtalálhatók az elf kopók tágas kifutói, és általában elfek azok is, akik a levegőből, pegazus-hátról figyelik a vidék háborítatlanságát."
+        },
+        {
+            "type": "paragraph",
+            "text": "Ménesei majdnem minden nemesi családnak vannak, a legnagyobb telep természetesen a hercegi ház birtoka. A ritka hátasok értékesítéséből csak egy szűk körű kereskedőcsoport húz igazi hasznot, s bár a tetemes jövedelem után jócskán csusszan-cseppen a hercegi kamarába is, a város közvetlenül nem részesül ezekből a pénzekből."
+        },
+        {
+            "type": "paragraph",
+            "text": "Nem sok leírás emlékezik meg róla, de Haonwell hálával tartozik a környező földeken dolgozó parasztoknak, módosabb gazdáknak, hiszen ők látják el élelemmel örökké éhes lakóit. Jófélék és kukoricából termelnek a legtöbbet, de virágzó kertek és gyümölcsösök is ontják a terményeiket a város felé. A földek a herceg tulajdonában vannak, a parasztok ötödnyi adót kötelesek fizetni, a maradékkal maguk rendelkezhetnek."
+        },
+        {
+            "type": "paragraph",
+            "text": "Haonwellről írva nem feledkezhetünk meg a városban működő különféle alvilági szervezetekről sem, de a közönséges tolvajok helyett inkább egy sokkal kiterjedtebb testvériségről, a Suttogókról ejtenénk pár szót. Titokzatos szervezet ez, hisz vezetőinek és tagjainak nagy része ismeretlen még az alvilág alakjai előtt is; mondják, kapcsolatban állnak a Kobrákkal, s a városon belül minden céh területpénzt fizet nekik bántatlanságáért cserébe. A kyr adószedők mintájára seraknak nevezik azokat az ügynököket, akik a Suttogók által kirótt összegeket szedik be a kisebb szervezetektől; mélységes titok, hogy rajtuk kívül kik tartoznak még a testvériségbe, a vezetők és a végrehajtók sohasem mutatkoznak. Néhány védett házuk is ismert, de – nyilván magas összeköttetéseiknek köszönhetően – a városi őrség nemigen zaklatja őket. A Haonwellbe érkező jelentősebb zsákmányokra előjogai vannak, ezekről csak tekintélyes összegek lefizetése ellenében hajlandók lemondani. Ők számítanak a legerőszakosabbnak a tolvajcéhek közül; nem egy felderítetlen gyilkosságáról rebesgették már, hogy az ő intrikáik húzódnak meg a háttérben. Szolgálatukban állítólag fejvadászok is állnak, s markukban tartják a városi tanács több tagját."
+        },
+        {
+            "type": "paragraph",
+            "text": "Az erigowi embervadászok is rendházat tartanak fenn Haonwellben – ők jobbára testőri feladatokat végeznek a Garis területén. Beszélik azonban, hogy gyakran érkezik futár a Malomnak nevezett komor épületbe Erigowból, és sokan úgy vélik, hogy a szervezet tagjai előbbrevalónak ítélik saját klánjuk érdekeit a városénál. Hogy ebben az állításban mennyi az igazság, egyelőre eldöntetlen."
+        },
+        {
+            "type": "paragraph",
+            "text": "A Láncbarátok ősi ellensége, a gianagi alapítású Ezüst Ököl Testvériség is képviselteti magát Haonwellben – a szökött rabszolgák ügyeinek intézésével, menedéknyújtással is ők foglalkoznak."
+        },
+        {
+            "type": "paragraph",
+            "text": "A Garis szélén áll az Inkvizítorok Szövetségének rendháza. A szervezet hírnevéhez méltó, komor épület, mely hiába szolgálja a városbeliek biztonságát, mégsem nyerte el soha bizalmukat. Lakóit félelemmel vegyes tisztelettel kezelik, s nagy ívben kitérnek a rend fehér köntöst viselő beavatottjai elől."
+        },
+        {
+            "type": "paragraph",
+            "text": "Ejtetttünk már néhány szót Haonwell fontosabb épületeiről, de mert a hercegséget járva a kalandozó majd' minden sarkon újabb csodát lát, illő még többet néven neveznünk."
+        },
+        {
+            "type": "paragraph",
+            "text": "Híres építmény a város első fala, az úgynevezett Bástyasor. Két világot választ el egymástól. Az épen maradt, illetve újjáépített fal mögött kezdődik a hegyre felkapaszkodó Garis, míg a vörös kőből rakott bástyáknak innenső oldalán az egyik legkétesebb hírű kerület, a csak Lápnak gúnyolt Treis található. Itt székel a legtöbb tolvajcéh, s míg Ellana szentélyei az előkelőbb városrészek díszei, errefelé egyszerű bordélyházak várják a gyönyörre vágyókat. A Treisben mutatkozik meg legkevésbé, mennyire gazdag Haonwell. Nincs feltétlenül biztonságban az, aki az itteni fogadók egyikében kíván éjszakázni, hacsak meg nem vásárolja a nyugalmát, hisz ez az a hely, ahol pénzért minden kapható. Azt azonban még más kerületekben is elismerik, hogy a treisi kifőzdék konyhájának nincs párja az egész városban. Erre a hírükre a vendéglősök rettentően ügyelnek, s valóban: minden sarkon tiszta, nyugodt helyiségek várják a gyomor szerelmeseit. A Láp híres épülete még a Sifanne, ez a különleges aréna."
+        },
+        {
+            "type": "paragraph",
+            "text": "Haonwell épületeiről szólva mindenképp meg kell említenünk a Yattir kerület egyik büszkeségét, a Gőzfűrdőt is. A Fürdőtéren álló hatalmas létesítmény a völgyben épült, a környék leghíresebb hőforrása fölé. A forrást állítólag már a kyrek is használták, s az ókori fürdőházuk romjai fölé emelték a mai, hatalmas kupoláiról messziről felismerhető épületet. A város egyik Ynev-szerte ismert jelképe ez a gazdagon díszített, palotának is beillő monstrum. Számtalan színes üvegablak ékíti, s belsejében is szobrok, faragások ámitják el a betérőt."
+        },
+        {
+            "type": "paragraph",
+            "text": "Nemcsak fürdőként üzemel, élénk társasági élet zajlik falai között. Mondják, a Haonwellben kötött üzletek nagy részét itt bonyolítják le, s a tolvajok is gyakorta adnak itt találkát egymásnak. A fűtött márványmedencékben, az izzasztó gőzfülkékben bárki felfrissülhet, s noha vannak elsősorban nemeseknek szánt frigidáriumok és masszázstermek, a szerényebb jövedelműeket is csaknem ugyanilyen díszes, minden igényt kielégítő helyiségek várják. A város büszke rá, hogy ez a szolgáltatása mindenki számára ingyenes – ez alól csak a Dal havában tesznek kivételt, ilyenkor helyi lakos még sem fordul a fürdőben."
+        },
+        {
+            "type": "paragraph",
+            "text": "Fentebb említettük már Ziadot, ezt a kis halásztelepülést, melyet csengő aranyakért vásárolt meg Haonwell a törpék tárnafejedelemségétől. Mára már kisebbfajta város áll az egykori falu helyén, s az „anyaország” alig titkolt, nagyszabású terveket sző gyarmatával kapcsolatban. Itt a legkisebb a távolság a Mer'Daray és Haonwell között: a zord kikötő látja el szárított hallal s az északi kereskedőállomások áruival a hercegséget. Külön kalmárcéhek foglalkoznak a tengerparti vidékeken a temérdek borostyánkő begyűjtésével és értékesítésével. A kikötő egyre nagyobb forgalmat bonyolít le, s egyes állítások szerint időnként Beriquelről is érkeznek bárkák, ám bár meglehet, ez csak amolyan túlzó híresztelés."
+        },
+        {
+            "type": "paragraph",
+            "text": "Haonwell lakói az erdei divatot követik, de a zöld különböző árnyalatai is kedveltek körükben. A nők gyakorta hordanak nadrágot, és számosan mímelik közülük az elfek látványos hajfonatait."
+        },
+        {
+            "type": "paragraph",
+            "text": "A hercegség lakói, noha majd' mindenből behozatalra szorulnak, semmiben nem szenvednek hiányt. Az árak az ereniekhéz igazodnak, de valamivel magasabbak az Yneven megszokottnál – ám ez azon haonwelliek számára nyilvánvaló, akiket kalandvágy, netán felsőbb parancs szólít a nagyvilágba."
+        },
+        {
+            "type": "paragraph",
+            "text": "Haonwellben harcosnak, gladiátornak és bárdnak tanulhat a jóravaló ember, ám köztudott, hogy a tolvajklánok is szorgosan folytatják az utánpótlás nevelését. A közbiztonság"
+        }
+    ]
+}

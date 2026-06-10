@@ -1,0 +1,301 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": false,
+    "section_title": "",
+    "content_blocks": [
+        {
+            "type": "paragraph",
+            "text": "ami sikeres Támadó dobást igényel – eredményesség esetén az alany a fohász minden egyes E-je után 1k6 Fp-t veszít. Ezt a mennyiséget a pap saját gyógyítására használhatja fel: egy okozott sebzés 1 Fp, vagy 1/5 Ép gyógyulást jelent."
+        },
+        {
+            "type": "rule",
+            "title": "Gyógyítás",
+            "headers": [],
+            "rows": [
+                [
+                    "Szféra",
+                    "Élet, Természet"
+                ],
+                [
+                    "Kegy pont",
+                    "1"
+                ],
+                [
+                    "Fohász hossza",
+                    "1 szegmens/E"
+                ],
+                [
+                    "Hatótáv",
+                    "Érintés"
+                ],
+                [
+                    "Időtartam",
+                    "Végleges"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A pap képes mind Életerő pontokat, mind Fájdalomtűrés pontokat visszaadni, meggyógyítani bármely betegséget vagy testi fogyatékosságot. A fohász alkalmazásakor a pap szent igéket mormol, ám ez csak akkor lehet sikeres, ha előtte – élete folyamán legalább egyszer az adott istenség bármely papja – a beteget vagy sebesültet megáldotta. Ha a célpont nem részesült még Áldásban, úgy a papnak előbb végre kell hajtania rajta a fohászt."
+        },
+        {
+            "type": "paragraph",
+            "text": "A szükséges Kegy pont és idő mennyiségéről az alábbi táblázat tudósít:"
+        },
+        {
+            "type": "table",
+            "headers": [
+                "Életerő",
+                "Erősség"
+            ],
+            "rows": [
+                [
+                    "1 Fp",
+                    "1 E"
+                ],
+                [
+                    "1 Ép",
+                    "4 E"
+                ]
+            ]
+        },
+        {
+            "type": "table",
+            "headers": [
+                "Betegségek",
+                "Erősség"
+            ],
+            "rows": [
+                [
+                    "Enyhe lefolyású",
+                    "2 E"
+                ],
+                [
+                    "Kevéssé súlyos",
+                    "5 E"
+                ],
+                [
+                    "Súlyos",
+                    "10 E"
+                ],
+                [
+                    "Nagyon súlyos",
+                    "20 E"
+                ],
+                [
+                    "Kritikus",
+                    "30 E"
+                ],
+                [
+                    "Válságos",
+                    "40 E"
+                ],
+                [
+                    "Halállal fenyegető",
+                    "50 E"
+                ],
+                [
+                    "Halálos",
+                    "60 E"
+                ],
+                [
+                    "Biztosan halálos",
+                    "70 E"
+                ]
+            ]
+        },
+        {
+            "type": "table",
+            "headers": [
+                "Egyéb",
+                "Erősség"
+            ],
+            "rows": [
+                [
+                    "Méreg szintjének 1-gyel csökkentése",
+                    "8 E"
+                ],
+                [
+                    "Valamely végtag bénultsága",
+                    "60 E"
+                ],
+                [
+                    "Bármely fogyatékosság (süketség, némaság, vakság)",
+                    "40 E"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A pap gyógyítás közben kezével megérinti a sebesültet (beteget), mialatt lehunyt szemhéjai mögül, ujjai hegyéből hófehér fény csordogál a beteg teste felé, lassan felizzítva, életre keltve annak auráját. Ezalatt a pap szent jelképével meg kell, hogy érintse az áldozat homlokát. Ha a sebesült (beteg) jelleme ellentétes a pap vallásának jellemével, körönként 50% az esély, hogy a gyógyítás csődöt mond, és a fohász egyáltalán nem jön létre, a felhasznált Kegy pontok pedig elvesznek."
+        },
+        {
+            "type": "paragraph",
+            "text": "Ha a mágia sikeresen kifejtette hatását, a sebek pillanatok alatt, látványosan, heg nélkül beforrnak és a betegségek is maradandó nyom nélkül – a fohász végrehajtása úton azonnal – meggyógyulnak."
+        },
+        {
+            "type": "paragraph",
+            "text": "Sikertelen fohász esetén, a sebesült (beteg) állapota ugyanúgy tovább romlik – vagy stagnál –, mintha nem is kísérleteztek volna meggyógyításával."
+        },
+        {
+            "type": "paragraph",
+            "text": "A pap csakis azoknak a sérüléseknek, betegségeknek és egyéb károsodásoknak meggyógyítására képes, amelyeket egyetlen fohásszal semlegesíthet. Elképzelhetőnek tarthat, hogy amennyiben nincs elegendő Kegy pontja egy komolyabb sérülés orvoslására, akkor azt több részletben tegye meg."
+        },
+        {
+            "type": "rule",
+            "title": "Időtlen álom",
+            "headers": [],
+            "rows": [
+                [
+                    "Szféra",
+                    "Halál, Lélek"
+                ],
+                [
+                    "Kegy pont",
+                    "4"
+                ],
+                [
+                    "Fohász hossza",
+                    "1 kör"
+                ],
+                [
+                    "Hatótáv",
+                    "Érintés"
+                ],
+                [
+                    "Időtartam",
+                    "Speciális"
+                ],
+                [
+                    "Mágiaellenállás",
+                    "Mentális"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A mágia áldozata mozdulatlanságba dermed, amiből természetes úton csak a fohász időtartamának lejártakor riad fel. E különös tetszhalál megtorpanja az életfolyamatokat, és szinte teljesen megállítja az öregedést: minden tíz Időtlen álomban töltött év alatt csak egy hónapot vénül a célpont. A papnak a fohász elkántálása után egy körön belül meg kell érintenie áldozatát, s amennyiben az ellenkezik, úgy a mágiaalkalmazónak sikeres Támadó dobást kell tennie. Ezután a mágia alanya az alábbi táblázat szerinti, véletlenszerű időtartamra Időtlen álomba merül."
+        },
+        {
+            "type": "paragraph",
+            "text": "A pap semmilyen módon nem tudja befolyásolni az időtartamot, az minden esetben a véletlen függvénye. A fohász magasabb erősítésű Mágia szétoszlatással megszűntethető."
+        },
+        {
+            "type": "paragraph",
+            "text": "A fohász nem evilági vagy élőholt lényeken nem fejti ki hatását."
+        },
+        {
+            "type": "table",
+            "headers": [
+                "k100",
+                "Időtlen álomban töltött idő"
+            ],
+            "rows": [
+                [
+                    "01-09",
+                    "1 nap"
+                ],
+                [
+                    "10-16",
+                    "2 hét"
+                ],
+                [
+                    "17-20",
+                    "5 év"
+                ],
+                [
+                    "21-25",
+                    "6 perc"
+                ],
+                [
+                    "26-30",
+                    "4 óra"
+                ],
+                [
+                    "31-50",
+                    "3 nap"
+                ],
+                [
+                    "51-57",
+                    "10 óra"
+                ],
+                [
+                    "58-75",
+                    "3 szegmens"
+                ],
+                [
+                    "76-80",
+                    "22 év"
+                ],
+                [
+                    "81-85",
+                    "7 nap"
+                ],
+                [
+                    "86-88",
+                    "100 év"
+                ],
+                [
+                    "89-92",
+                    "17 év"
+                ],
+                [
+                    "93",
+                    "21 nap"
+                ],
+                [
+                    "94-96",
+                    "9 óra"
+                ],
+                [
+                    "97-98",
+                    "44 nap"
+                ],
+                [
+                    "99",
+                    "333 év"
+                ],
+                [
+                    "00",
+                    "333 év"
+                ]
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Igaz szó",
+            "headers": [],
+            "rows": [
+                [
+                    "Szféra",
+                    "Lélek"
+                ],
+                [
+                    "Kegy pont",
+                    "1"
+                ],
+                [
+                    "Fohász hossza",
+                    "1 szegmens"
+                ],
+                [
+                    "Hatótáv",
+                    "20 ynevi láb"
+                ],
+                [
+                    "Időtartam",
+                    "30 kör (5 perc)"
+                ],
+                [
+                    "Mágiaellenállás",
+                    "Mentális"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A fohász hatására a fohász hatókörén belül a jelenlévők száját csak igaz szó hagyhatja el. A fohász hátránya, hogy a papra is hat, így ő sem hazudhat a körülötte állóknak, illetve senki nem tud hazudni, viszont semmi sem kényszeríti őket, hogy megszólaljanak. Komoly tárgyalásoknál sokszor van jelen pap csak azért, hogy a fohászát megidézze, s a tárgyaló felek még véletlenül se állíthassanak valótlant. A fohász ellen Mentál ME-ra jogosult minden érintett, s ha ez sikeres, rájuk a fohász nem hat."
+        }
+    ]
+}

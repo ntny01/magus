@@ -1,0 +1,155 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": null,
+    "is_new_section": false,
+    "section_title": null,
+    "content_blocks": [
+        {
+            "type": "rule",
+            "title": "HM",
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Kezdeményező dobás (KD)",
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Képzettség",
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Képzettség pont (Kp)",
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Klánok, rendek, iskolák",
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Kör",
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Mana",
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Manaháló",
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Mana pont (Mp)",
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Mágiaellenállás (ME)",
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Mértékegységek",
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Mozgásgátló tényező (MGT)",
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Nem játékos karakter (NJK)",
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Od",
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Pszi",
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Pszi pont (Ψp)",
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Sebzés",
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Sebzésfelfogó érték (SFÉ)",
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Szegmens",
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Támadó dobás",
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Támadó érték (TÉ)",
+            "rows": [
+                []
+            ]
+        }
+    ]
+}

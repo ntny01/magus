@@ -1,0 +1,151 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": false,
+    "section_title": "",
+    "content_blocks": [
+        {
+            "type": "paragraph",
+            "text": "A vadonjárás képzettség ismerője otthonosan mozog a vadonban, ismeri a zsákmány állatokat, tudja, mitől kell tartania és mitől nem. Megleli az ehető növényeket, mint ahogy felismeri a mérgezőeket is. Ismeri az adott terület életének ritmusát, képes hosszabb ideig életben maradni az adott terepen. A területet tájanként kell felvenni, mint például füves síkság, esőerdő vagy épp hegyvidéki terep stb.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "1. fok A karakter már csak ismerkedik az adott terep formáival, színeivel. Könnyen veszélybe sodorhatja magát, egyenlőre még csak egy-két napig képes létezni anélkül, hogy bármiben különösebb hiányt szenvedne.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "2. fok Az ilyen fokú ismerője az adott terepnek már sejti az itteni életforma rejtelmeit, képes akár egy hétig is életben maradni.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "3. fok Az ilyen szinten képzett személy már igazi túlélő, képes életben maradni akár egy hónapig is az általa ismert tereptípuson külső segítség, azaz bármilyen felszerelés nélkül. Alapvető eszközökkel akár saját magán kívül még egy-két embert is eltarthat. A terepen a képzetlen karaktereknél 10%-kal gyorsabban halad.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "4. fok A vadonjárás mestere már nem csak a túlélés fortélyairól, de az őslakos lényekről, illetve misztikus szörnyetegekről is beható tudással bír. Már korlátlan ideig képes eltartani magát a természetben. A terepen a képzetlen karaktereknél 20%-kal gyorsabban halad.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "5. fok Legendás hírű túlélő, már akár egy kisebb csoportot (max. 2-6 főt) is képes eltartani az általa ismert terepen, akár korlátlan ideig. Az adott területen a képzetlen karaktereknél 30%-kal gyorsabban halad.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "A karakter ezen a szinten kezdi el átlátni a nagy bankházak és kereskedőházak működését, az általuk képviselt értéket.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "title": "Értékbecslés (I – Intelligencia, Érzékelés)",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "1. fok Minden átlagember sajátja... a piacon felismeri a silány vagy romlott árut.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "2. fok A karakter kultúrkörére műremekeit és bármiféle értékkel bíró tárgyát, ingatlanát sikeres Intelligenciapróbával azonosíthatja és becsülheti fel.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "3. fok A szakavatott becsüs, már nagy biztonsággal nyilatkozik az általa ismert kultúrkörök alkotásairól, értékeiről +1 módosítóval dobott sikeres Intelligenciapróba után, illetve felismeri az idegen kultúra alkotásában is az értéket, ha a fenti próbát sikeresen végzi el. A képzettség ezen fokán már a karakter egyfajta művészettörténeti tudással is bír.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "4. fok A fenti próbát az általa ismert kultúrák esetén +2, az idegen kultúrák esetében +1 módosítóval végezheti el.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "5. fok A karakter művészettörténeti tudása kultúráira szinte hiánytalan, a fenti becslést +3 módosítóval végezheti el. Idegen kultúrák esetén +2 módosító járul a próbához.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "title": "Futás (I – Állóképesség, Egészség)",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "1. fok A karakter annyi ynevi mérföld lefutására képes, mint Állóképességének a fele.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "2. fok A gyakorlott futó Állóképességével egyenlő ynevi mérföld lefutására képes.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "3. fok A hivatásos futó Állóképességének kétszeresét képes lefutni.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "4. fok A karakter mestere a hosszútávfutásnak, képességei messze földön híresek, Állóképességének háromszorosát képes megtenni egyhuzamban.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "5. fok A karakter képességei legendásak, mozgása igen gördülékeny és rendkívül energiatakarékos. Egyhuzamban négyszer annyi ynevi mérföldet képes megtenni, mint az Állóképessége.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "title": "Hajózás (II – Erő, Ügyesség, Állóképesség, Intelligencia)",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        }
+    ]
+}

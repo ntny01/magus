@@ -1,0 +1,384 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": true,
+    "section_title": "Tárgyak ellenállása",
+    "content_blocks": [
+        {
+            "type": "table",
+            "headers": [
+                "Anyag típusa",
+                "Tűz",
+                "Elemi tűz",
+                "Hideg",
+                "Ütés (Vágás)",
+                "Terhelés",
+                "Sav",
+                "Nyers mágikus energia"
+            ],
+            "rows": [
+                [
+                    "Fa",
+                    "1",
+                    "2",
+                    "1/2",
+                    "1",
+                    "1",
+                    "1",
+                    "1"
+                ],
+                [
+                    "Fémek",
+                    "1/12",
+                    "1/8",
+                    "1",
+                    "1/6",
+                    "1/6",
+                    "1",
+                    "1"
+                ],
+                [
+                    "Csont",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1"
+                ],
+                [
+                    "Üveg",
+                    "1/4",
+                    "1/2",
+                    "—",
+                    "5",
+                    "1/2",
+                    "—",
+                    "—"
+                ],
+                [
+                    "Porcelán",
+                    "1/8",
+                    "1/4",
+                    "—",
+                    "6",
+                    "1/2",
+                    "—",
+                    "—"
+                ],
+                [
+                    "Kötél, textil",
+                    "2",
+                    "4",
+                    "—",
+                    "-(4)",
+                    "1",
+                    "2",
+                    "1"
+                ],
+                [
+                    "Kőzet",
+                    "—",
+                    "1/10",
+                    "1/10",
+                    "1/4",
+                    "1/2",
+                    "1",
+                    "—"
+                ],
+                [
+                    "Drágakő",
+                    "—",
+                    "—",
+                    "1/10",
+                    "1/12",
+                    "1/12",
+                    "1/8",
+                    "—"
+                ],
+                [
+                    "Papír",
+                    "5",
+                    "8",
+                    "—",
+                    "-(4)",
+                    "8",
+                    "2",
+                    "1"
+                ],
+                [
+                    "Bőr",
+                    "1",
+                    "1",
+                    "1/2",
+                    "—",
+                    "1",
+                    "1",
+                    "1"
+                ]
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Támadástípusok magyarázata",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "text": "A Tűz típusú támadás magába foglal minden nem-mágikus tűz alapú sebzést. Az éghető tárgyak STP-ik felének elvesztésekor meggyulladnak, s az őket emésztő lángok tovább csökkentik az STP-k számát. A tűz sebzése így sokkal magasabb lehet olyan tárgyakon, melyek maguk is gyúlékonyak. Ez a szabály az Elemi tűzre is érvényes.",
+            "title": "Tűz",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "text": "Az Elemi tűz az összes mágikus tűz esetén használandó kategória.",
+            "title": "Elemi tűz",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "text": "A Hideg típusú támadások egyaránt jelentik a mágikus és természetes, hirtelen bekövetkező hőmérsékletcsökkenést.",
+            "title": "Hideg",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "text": "Az Ütés a tompa tárgyakkal indított fizikai támadások eredménye. Ide a támadás Vágás lenne, ennek két helyen volna jelentősége: a kötélénél és a papírnál, amelyek szorzója ezen támadási formák ellen 4.",
+            "title": "Ütés (Vágás)",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "text": "Terhelés alatt a többé-kevésbé folyamatos, egyenletes megterhelést értjük húzás, kapaszkodás, vagy tárgyon állás esetén. A használhatóság kedvéért úgy tekintjük, hogy a terhelés csak akkor rongálja az adott tárgyat, ha az általa okozott STP-veszteség meghaladja a tárgy összes STP-inek számát. Egy STP-nyi terhelés 25 ynevi fontnyi (kg) tömegnek felel meg. Ha ez a tömeg gyorsulva érkezik a tárgyra, nagysága hárommal szorzandó.",
+            "title": "Terhelés",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "text": "Álljon itt egy egyszerű példa! Egy gyenge minőségű kötél STP-je 6. Ez annyit jelent, hogy 6x25, azaz 150 ynevi font teherbírással rendelkezik. Ha erre egy 80 ynevi font tömegű ember ráesik, semmilyen katasztrófa nem történik. Abban az esetben viszont, ha ugyanez az ember ráugrik a kötélre – ne adja Noir, esésből menekülve kapna a kötél után – a terhelés 80x3, azaz 240 ynevi font lesz, ami annyit jelent, hogy a kötél elszakad.",
+            "title": "Példa terhelésre",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "text": "A Savtámadás a maró anyagok hatását mutatja meg.",
+            "title": "Savtámadás",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "text": "A Nyers mágikus energia, a természetes villámok és a hasonló hatású varázslatok által eredményezett sebzést jelöli.",
+            "title": "Nyers mágikus energia",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "text": "A támadások alapsebzése, tehát a módosítószorzó előtti sebzés mindig annyi STP, ahány Sp-t egy élőlény ellen jelentene. A tárgy STP-inek meghatározása a KM feladata, s ennek megkönnyítésére több fontos tárgy értékeit közöljük. Ezek jó viszonyítási alapot szolgáltatnak a le nem írt tárgyakhoz is.",
+            "title": "Alapsebzés és STP meghatározás",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "table",
+            "headers": [
+                "Tárgy",
+                "Anyaga",
+                "STP"
+            ],
+            "rows": [
+                [
+                    "Kiváló kötél",
+                    "Kötél",
+                    "22-25"
+                ],
+                [
+                    "Ruha",
+                    "Textil",
+                    "4-5"
+                ],
+                [
+                    "Bot (fegyvernyél)",
+                    "Fa",
+                    "12-15"
+                ],
+                [
+                    "Páncél (bőr)",
+                    "Bőr",
+                    "SFÉx20"
+                ],
+                [
+                    "Páncél (fém)",
+                    "Fém",
+                    "SFÉx20"
+                ],
+                [
+                    "Fegyver (fém)",
+                    "Fém",
+                    "10-60"
+                ],
+                [
+                    "Hátizsák (vászon)",
+                    "Textil",
+                    "6-8"
+                ],
+                [
+                    "Hátizsák (bőr)",
+                    "Bőr",
+                    "13-15"
+                ],
+                [
+                    "Üvegcsé",
+                    "Üveg",
+                    "12-20"
+                ],
+                [
+                    "Könyv",
+                    "Papír",
+                    "6-8"
+                ],
+                [
+                    "Papírlap",
+                    "Papír",
+                    "1"
+                ],
+                [
+                    "Kulacs, tömlő",
+                    "Bőr",
+                    "8-11"
+                ],
+                [
+                    "Szék",
+                    "Fa",
+                    "12-20"
+                ],
+                [
+                    "Asztal",
+                    "Fa",
+                    "15-30"
+                ],
+                [
+                    "Kőoltár",
+                    "Kő",
+                    "100-500"
+                ],
+                [
+                    "1 láb x 1 láb x ½ láb gyenge kőfal",
+                    "Kő",
+                    "40-55"
+                ],
+                [
+                    "1 láb x 1 láb x ½ láb közepes kőfal",
+                    "Kő",
+                    "56-75"
+                ],
+                [
+                    "1 láb x 1 láb x ½ láb erős kőfal",
+                    "Kő",
+                    "76-100"
+                ],
+                [
+                    "Kunyhó",
+                    "Fa",
+                    "300-500"
+                ],
+                [
+                    "Ház",
+                    "Kő",
+                    "700-1500"
+                ],
+                [
+                    "Csónak",
+                    "Fa",
+                    "80-140"
+                ],
+                [
+                    "Csatahajó",
+                    "Fa",
+                    "3000+"
+                ]
+            ]
+        },
+        {
+            "type": "table",
+            "headers": [
+                "Tárgy",
+                "Anyaga",
+                "STP"
+            ],
+            "rows": [
+                [
+                    "Gyenge kötél",
+                    "Kötél",
+                    "6-8"
+                ],
+                [
+                    "Közepes kötél",
+                    "Kötél",
+                    "9-14"
+                ],
+                [
+                    "Jó minőségű kötél",
+                    "Kötél",
+                    "15-21"
+                ]
+            ]
+        },
+        {
+            "type": "rule",
+            "text": "A táblázatban szereplő tárgyak anyaga megmutatja, melyik kategóriába tartozóként kezelendők, a jobb oldali oszlopban pedig STP-ik lehetséges minimumát és maximumát közöljük. Egyes tárgyak STP-je meglepően magas lehet, például az üvegcséé 12-20. Számolnunk kell azonban a tárgy anyagának érzékenységével is. Így, bár egy üvegcsé sokáig ellenáll az időnek, de rongáló erőként például a tűznek is, még egy viszonylag erőltetett ütés is könnyen összetörheti. A papírlap STP-je 1, azonban az érzékenység miatt minden támadástípus, amivel sebezhető azonnal szétroncsolja – kivéve persze a nyomás típusú Terhelést. A KM, ha úgy látja jónak, speciális tárgyak, épületek esetében egész más STP-értékeket határozhat meg.",
+            "title": "Tárgyak STP-je és érzékenysége",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "text": "Az adott tárgyak STP-jét természetesen az is behatárolja, hogy készítőjük milyen fokon képzett az adott mesterségben, mellyel előállította az adott tárgyat. Az adott szakma, vagy más alkotó képzettség 3. foka +10%, a 4. foka +20%, az 5. fok +30% STP-t jelent.",
+            "title": "Készítő képzettségének hatása az STP-re",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "text": "Az adott páncélok SFÉ csökkenése mindig az általuk elveszített STP-k függvényében csökken, azaz -1 SFÉ minden elveszített 20 STP után.",
+            "title": "Páncél SFÉ csökkenése",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        }
+    ]
+}

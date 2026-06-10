@@ -1,0 +1,113 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": false,
+    "section_title": "",
+    "content_blocks": [
+        {
+            "type": "rule",
+            "title": "Asztrál-/Mentálparharc",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A litánia segítségével a pap képes elűzni mindazokat a lényeket, teremtményeket és entitásokat, akik valakit az Asztrál- vagy Mentálsíkról befolyásolnak, kiszipolyoznak vagy hatalmukban tartanak. Rövid elmélyülése és csendes imája alatt érzelmi hullámokat bocsát ki az Asztrál-, vagy gondolati hullámokat a Mentálsíkon, amelyek megtévesztik ezeket a lényeket, s azok – mivel nem érzékelik ezen hullámok hamis voltát – otthagyják eddigi áldozatukat (azonban semmi nem tartja vissza őket attól, hogy később ismét megtámadják azt)."
+        },
+        {
+            "type": "paragraph",
+            "text": "Amennyiben a fohász erősítése 15-tel meghaladja az adott lény Asztrális vagy Mentális ellenállását, el is pusztítja azt. Azonban ha a pap fohásza sikertelen (a lény Mágiaellenállása magasabb a fohász Erősségénél), a lény otthagyja előző áldozatát, s a papot támadja meg."
+        },
+        {
+            "type": "paragraph",
+            "text": "Az Asztrál- és Mentállények képességeiről bővebben a Bestiáriumban olvashatsz a 494. oldalon."
+        },
+        {
+            "type": "rule",
+            "title": "Asztrál-/Mentálpillantás",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A rövid, suttogva elszavalt litánia segítségével a pap bepillantást nyer az Asztrál- vagy a Mentálsíkra, s megfigyelheti, hogy a vizsgált személy Asztrál- vagy Mentálteste miként viselkedik, pontosan milyen mértékű és típusú erők védelmezik az elméjét (Statikus, Dinamikus Pajzsok, Tudatalatti Mágiaellenállás, hitből fakadó védelem stb.). Ha a célpont Mágiaellenállása sikertelen, a pap bepillantást nyer az áldozat aurájának legfelső két rétegébe. Megállapíthatja, hogy ha valamely, csupán az Asztrál- vagy Mentálsíkon létező teremtmény les rá, esetleg annak befolyása alatt áll. A fohász ideje alatt lehetősége nyílik annak megállapítására, hogy milyen erős ez a teremtmény, s hogy elűzéséhez, esetleg kibékítéséhez mely erőkhöz kell fordulnia."
+        },
+        {
+            "type": "paragraph",
+            "text": "Amennyiben a célpont Mágiaellenállása sikeres, a pap csak annyit tud meg, hogy milyen típusú és nagyságrendileg mekkora erősségű a védelem."
+        },
+        {
+            "type": "table",
+            "headers": [
+                "Védelem Erőssége",
+                "Nagyságrend"
+            ],
+            "rows": [
+                [
+                    "1-10",
+                    "elenyésző"
+                ],
+                [
+                    "10-20",
+                    "gyenge"
+                ],
+                [
+                    "20-30",
+                    "mérsékelt"
+                ],
+                [
+                    "30-40",
+                    "közepes"
+                ],
+                [
+                    "40-50",
+                    "erős"
+                ],
+                [
+                    "50+",
+                    "nagyon erős"
+                ]
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Asztrál-/Mentálpöröly",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A rövid tagadó igékből álló fohász tulajdonképpen ellentéte a Fátyolnak, célja az ellenfél védelmének lerombolása. A fohász hatása gyors és nagyon erőteljes, valóban egy pörölycsapásra emlékeztet. A fohász ideje az ellenfél Asztrális vagy Mentális pszi-pajzsa, esetleg más varázslat, diszciplína, vagy fohász nyújtotta védelme (a varázstárgyak adta védelem nem) a fohász Erősségének megfelelő számú ponttal csökken. Ez a fohász hatóidejének leteltével visszatér, mert a Pöröly a védelmet nem pusztítja el, pusztán időleges utat nyit valamely tudati támadás előtt."
+        },
+        {
+            "type": "rule",
+            "title": "Átok",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "Ezt a fohászt is többnyire Halál jellemű papok alkalmazzák, de egyik formája az Élet jellemű papoktól sem idegen. A papi átkok erősebbek mind a boszorkány, mind a boszorkánymesteri átkoknál. Azon vállfajuk, amelyet a halál jelleműek alkalmaznak, tulajdonság vagy harcérték csökkenést okoz. A csökkenés nem túl jelentős, viszont folyamatos, s csak az átok elűzésével állítható meg. Ily módon például egy pap megátkozhat egy harcost, hogy annak Té-je csökkenjen. A játékosnak természetesen ezt ékes szavakkal kell megfogalmaznia, mivel éppen ezen áll vagy bukik az átok hatásossága. Nagyjából így hangzana hát a pap szájából:"
+        },
+        {
+            "type": "flavor_text",
+            "text": "„Nyomorult féreg! Ranagol nevében sújtalak iszonyú átkommal, hogy ismerd és rettegd őt! Fegyvered hagyjon cserben, erőd apadjon el, agyonveretve leld nyomorú véged, s örökké kísértsen a vereség szelleme! Pusztulj erről a világról!”"
+        },
+        {
+            "type": "paragraph",
+            "text": "Az átok erősítéséhez +1–10 E adható, amit a KM határozhat meg az átok szövegének ismeretében. Az átok szövege meghatározza a fohász hosszát is – minél hosszabb a szöveg, annál tovább tart a fohász. A hatás egy Tulajdonságpont csökkenés naponta, illetve 5 pontos csökkenés, ha százalékos képzettségről vagy harcértékről van szó. A hatás annyi napig súlyosbodik, ahányadik szintű a pap, utána stagnálni kezd. Így például valamely Tulajdonság 0-ra csökkentésével egy magas rangú pap meg is ölheti ellenfelét."
+        },
+        {
+            "type": "paragraph",
+            "text": "A papi átkok másik képviselője inkább a kiátkozás nevet érdemelné. Ezt Élet jellemű papok is használhatják, de csak rendkívül súlyos esetben. Ennek lényege, hogy a saját vallásához tartozó áldozatot a pap kitaszíthatja istene kegyéből. Ez csak akkor lehetséges, ha az áldozat valóban súlyosan vétett vallásának szabályai ellen. Ha a pap feleslegesen használja a fohászt, vagy egyenesen önző céllal, s nem istenének érdekeit szem előtt tartva, a fohász nem jön létre, a pap pedig 1k6 napig elveszíti összes Kegy pontját. Az efféle kiátkozás a papokra nézve a legsúlyosabb, mert elmúltáig csak a Kis Arkánum Litániáit használhatják. Megszüntetése Átokűzéssel lehetséges, de mindaddig nem sikerülhet, míg a kiátkozott jóvá nem teszi elkövetett bűnét."
+        }
+    ]
+}

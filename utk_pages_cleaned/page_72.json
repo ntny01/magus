@@ -1,0 +1,133 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": null,
+    "is_new_section": true,
+    "section_title": "A Lombhullás Árváinak különleges előnyei és hátrányai a bárdnál leírtakon kívül",
+    "content_blocks": [
+        {
+            "type": "rule",
+            "title": "Különleges előny: Nemes Vér Háttér",
+            "rows": null
+        },
+        {
+            "type": "rule",
+            "title": "Különleges hátrányok: Tiltott képzettségek",
+            "rows": null
+        },
+        {
+            "type": "paragraph",
+            "text": "A Lombhullás Árváinak képzettségei"
+        },
+        {
+            "type": "paragraph",
+            "text": "I. Tapasztalati szinten:"
+        },
+        {
+            "type": "table",
+            "headers": [
+                "Képzettség",
+                "Fok"
+            ],
+            "rows": [
+                [
+                    "Fegyverhasználat (egykezes kardok)",
+                    "2. fok"
+                ],
+                [
+                    "Fegyverhasználat (tőr jellegű fegyverek)",
+                    "2. fok"
+                ],
+                [
+                    "Művészetek (Éneklés)",
+                    "3. fok"
+                ],
+                [
+                    "Művészetek (Zenélés)",
+                    "2. fok"
+                ],
+                [
+                    "Művészetek (Színészet)",
+                    "2. fok"
+                ],
+                [
+                    "Művészetek (Irodalom)",
+                    "2. fok"
+                ],
+                [
+                    "Párbaj",
+                    "2. fok"
+                ],
+                [
+                    "Udvari etikett",
+                    "2. fok"
+                ],
+                [
+                    "Heraldika",
+                    "1. fok"
+                ],
+                [
+                    "Írás/olvasás",
+                    "2. fok"
+                ],
+                [
+                    "Legendaismeret",
+                    "2. fok"
+                ]
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Tanulható képzettségek (Oktatás 4. fok)",
+            "rows": null
+        },
+        {
+            "type": "paragraph",
+            "text": "A „klasszikus” bárdok hazája Ilanor és Yllinor. Tekintve, hogy a két, egymástól távoli országot közös töről fakadó nép lakja, a szokásos számos rokon vonást mutatnak. Ilanor és Yllinor bárdjai a táborüzek, a hadi utak, inkább a virtus, semmint a léhaság dalnokai, s bár számtalan közöttük az utolérhetetlenül tehetséges, az igazán képzett, virtuóz muzsikus ritka, mint a fehér holló."
+        },
+        {
+            "type": "paragraph",
+            "text": "Ilanor bárdjai nem puhány széptevők – bár a női nemhez különösen vonzódnak –, s nem is mosolymaszkos szélhámosok. A virtust, a hazaszeretetet, a dicső küzdelmet, a méltó elmúlást énekelik meg dalaikban. Igazi vándor dalnokok, magányos énekmondók, akik nem elveszettek ugyan a városokban, de igazán csak a természetben érzik otthon magukat. A királyi udvarok pompáját nem sokra becsülik, s nem is igen vágyakoznak oda; inkább lelik kedvüket fegyvertársaik tüzénél, a bortól kipirult arcok előtt idézve fel őseik tetteit, Ilanor dicső történelmét."
+        },
+        {
+            "type": "paragraph",
+            "text": "Mondomondák keringenek arról, hogy Szépmező irigyei egytől-egyig egy titkos Társaság tagjai, amit sokan az Északi Szövetség kémhálózatával azonosítanak. Némi igazságalapja van ugyan a dolognak, hisz vezetőjük – kit dalnoktársai Riknek az Öregnek, Szürke Farkasnak, olykor a Muzsikusok Kapitányának szólítanak – valóban hazája Vörös Hadurának kémfőnöke. Az ilanori bárdtestvériség, más néven az Énekmondók Társaságának tagjait egyfajta megmagyarázhatatlan – talán misztikus, talán vérségi – kötelék fűzi össze: Ynev majd’ minden táján készek megvédelmezni bajba jutott társukat, s ha ez már nem lehetséges, kíméletlen bosszút állnak érte."
+        },
+        {
+            "type": "rule",
+            "title": "Vándorló dalnok",
+            "rows": null
+        },
+        {
+            "type": "flavor_text",
+            "text": "A Murgador gyepűjén meggyilkolt dalnok Emberlelke meghatározhatatlan ideig követve tekintetét a Vándorósolyom röptét. A Farkas távolabbról figyelt szomorú szemével. Nem volt igazi fenevad – az énekmondó tudta ezt, s első ízben bánkódott miatta. Egyre várt, körözött a Fényben, míg valahol messze, valahol odalent, abban a másik szférában, amelyet maga mögött hagyott, meg nem pillantotta a lovasokat."
+        },
+        {
+            "type": "paragraph",
+            "text": "Szótárukban kiemelt jelentőséggel bírnak ezek a szavak: hazaszeretet, bátorság és becsület. A bajtársiasságot, a harcban való derekas helytállást, a hősiességet mindennél többre becsülik. Dalaikban sosem magasztalják túl, nem dicsőítik az egekig szereplőiket, egyedül az ő énekeikben él tovább máig torzítatlanul a múlt sok legendás cselekedete."
+        },
+        {
+            "type": "paragraph",
+            "text": "Húszan, legfeljebb huszonöten lehettek. Zömük Szépmező szívéből indult útnak, néhányan a Boszorkánymesterek sötét birodalmának határán, őrhelyüket másoknak átadva csatlakoztak a menethez. Most együtt vágtattak felperzselt mezőkön, úttalan utakon, elnéptelenedett falvakon át, dacolva a helyi hatalmasságok haragjával, mit sem törődve a veszedelemmel, a küszöbön álló háborúval; megannyi elszánt Emberarc, megannyi verdeső szárnyú Sólyom, agyarát villogtató Farkas."
+        },
+        {
+            "type": "paragraph",
+            "text": "Nem is meglepő hát, hogy költeményeik között a dicső balladák, hősköltemények és népük ősi regéi kapnak kiemelt helyet. Verseik, dalaik nyersen egyszerűek, őszinték, sodró lüktetésükből hiányzik az erigowiak túlzottan finomkodó, már-már dekadenciába hajló, bonyolult verselése, a báltermek arisztokratikus gőgje vagy az asszisz kozmadalok faragatlansága."
+        },
+        {
+            "type": "flavor_text",
+            "text": "És a dalnok mosolygott. Bár esztendők óta a maga útját járta, ő nem feledkeztek meg róla."
+        },
+        {
+            "type": "paragraph",
+            "text": "Égi pártfogójukul szinte kivétel nélkül Arelit választják (bár az ilanoriak Kai-Syah, a Szűz-vadász néven tisztelik a természet istennőjét). Akárcsak a Harc Úrnőjének papjai, ők is a szabadság szerelmesei, öntörvényű, önfejű alakok. Mindenfajta korlátozást nyűgnek, szabadságuk megkurtításának tekintenek."
+        },
+        {
+            "type": "flavor_text",
+            "text": "Most már minden rendben lesz. Most már megpihenhet. Wayne Chapman: Észak lángjai"
+        },
+        {
+            "type": "paragraph",
+            "text": "Fegyverek terén előnyben részesítik a szabályt, illetve a hosszú, egyenes, egykezes kardot, a tört és a kétszeresen hajlított visszacsapó íjat, ám ha a szükség úgy hozza, elboldogulnak minden fajta íjjal, néhányan akár a nyílpuskával is. Összes társuk közül ők idegenkednek leginkább a vértek viseletétől. Ha tehetik, nem is öltenek páncélt, de még csatában is megelégszenek a könnyű láncvagy sodronyingekkel. Pajzsot, sisakot sohasem hordanak, ha mégis veszélyben éreznék magukat, a bő ingujj alá rejthető, alkarra csatolható bőr alkarvédőket viselnek."
+        }
+    ]
+}

@@ -1,0 +1,143 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": false,
+    "section_title": "",
+    "content_blocks": [
+        {
+            "type": "paragraph",
+            "text": "gonosz szándék lelkes hívévé válik, s feltétlen engedelmességgel fog adózni minden gonosz kreatúrának, akit önmagánál hatalmasabbnak ismer meg, vagy amelyik bebizonyítja ezt számára. Semmilyen képessége nem szenved csorbát, de a másik oldal szolgálatában fogja kamatoztatni őket, legyen az harcvagy mágiahasználat."
+        },
+        {
+            "type": "rule",
+            "title": "Gyilokvágy",
+            "headers": [
+                "Mana pont",
+                "Varázslás ideje",
+                "Hatótáv",
+                "Időtartam",
+                "Mágiaellenállás"
+            ],
+            "rows": [
+                [
+                    "5/E",
+                    "1 szegmens/E",
+                    "20 ynevi láb",
+                    "1 kör/szint",
+                    "Asztrális"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A boszorkánymester a varázslattal őrjöngő gyilkolási vágyat olthat áldozatának lelkébe. Ha az elveti Asztrális Mágiaellenállását, még a legbékésebb és legjámborabb ember is a mesterségesen gerjesztett érzelmek játékszerévé válik. A varázslat hatása alatt álló személy válogatás nélkül, minden körülötte fellelhető élőlényt megpróbál a lehető leghatékonyabb, legkegyetlenebb módon elpusztítani – olyan eszeveszett erővel küzd, mintha démonok szállták volna meg (KÉ: +10, TÉ +30, VÉ: -40; +2 Erő)."
+        },
+        {
+            "type": "paragraph",
+            "text": "Sebesülhetetlennek érzi magát, a gyilkolás szinte fizikai gyönyört okoz számára, mely még mélyebbre lovallja az őrjöngésbe. ÉP-i elfogytával nem veszíti el eszméletét, az utolsó ÉP-ig harcol. Ha a varázslat kiteljesedésekor egyetlen élőlény sem tartózkodik közelében, és elrontja az Akaraterőpróbáját, még saját magában is megpróbál kárt tenni. Tombolása végeztével annyi körig érvényes rá a Kábultság módosító, ameddig a varázslat tartott."
+        },
+        {
+            "type": "rule",
+            "title": "Orgyilkosság",
+            "headers": [
+                "Mana pont",
+                "Varázslás ideje",
+                "Hatótáv",
+                "Időtartam",
+                "Mágiaellenállás"
+            ],
+            "rows": [
+                [
+                    "4/E",
+                    "1 szegmens/E",
+                    "Érintés",
+                    "Lásd a leírást!",
+                    "Mentális"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A boszorkánymester a varázslattal gyilkos szándékot ültethet a varázslat alanyának lelkébe. Ha az elveti Mentális Mágiaellenállását, a szándék befészkeli magát a tudata mélyére. A boszorkánymesternek a varázsigék elmormolásakor koncentrálnia kell, és elméjében felidézni a gyilkosság áldozatának arcát és nevét. A varázslat hatása alatt álló, kiszemelt gyilkos szintén látja az arcot, a vonások mindörökre bevésődnek emlékezetébe. Ettől a ponttól fogva a varázslat két módon használható."
+        },
+        {
+            "type": "paragraph",
+            "text": "Az első módszer alkalmazásával a gyilkosnak mágiájává válik az áldozat meggyilkolása. Rafináltabbnál rafináltabb terveket készít, minden információt megszerez célpontjáról. Ezek után sort kerít a kivitelezésre. Semmi nem állíthatja meg, mindenképpen megpróbálja megölni a számára kijelölt lényt, még saját élete árán is. Persze ez nem jelenti azt, hogy feleslegesen lemészároltatná magát a testőrökkel, katonákkal."
+        },
+        {
+            "type": "paragraph",
+            "text": "A másik módszer esetén a gyilkosban nem tudatosul, ki a boszorkánymester varázslata, sem szerez tudomást. Bizonyára hamarosan el is felejti az eseményt. A tudata mélyén megbúvó gyilkos szándék csak akkor lángol fel benne, mikor megpillantja az áldozatot. Ekkor, a körülményektől függően, vagy azonnal megtámadja, vagy ettől kezdve az első módszernél leírtak szerint jár el. A varázslat csak a kijelölt áldozat halálakor, vagy semlegesítő mágia hatására szűnik meg."
+        },
+        {
+            "type": "paragraph",
+            "text": "Az alább következő varázstárgyak elkészítéséhez a boszorkánymesternek bírnia kell a Rúnamágia képzettség 3. fokával."
+        },
+        {
+            "type": "rule",
+            "title": "Halottűző bot",
+            "headers": [
+                "Mp",
+                "Leírás"
+            ],
+            "rows": [
+                [
+                    "Lásd a leírást!",
+                    "A Halottűző bot nagyjából embernyi magasságú, vörös-tölgyből készített eszköz, melyen három sorban találhatók a különböző hatalommal átitatott vésetek. Ezekből kettőt a bot tetején, egyet pedig megközelítőleg a felénél rónak föl a fára. Segítségével a boszorkánymester távol tarthatja magától – és esetleges társaitól is – azokat az élőholtakat, amelyek ellen a varázs védelmet nyújt.\nAz a bot, amely ellenáll például a III. Necrografiai osztályba sorolt lényeknek, értelemszerűen ugyanazt a hatást biztosítja az alacsonyabb besorolású élőholtakkal szemben is. A távol tartott lények típusáról a lenti táblázat tájékoztat, a varázstárgy alapestben azonban csak a botot fogó személyt/személyeket óvja meg. A védelem 1 ynevi lábanként 5 Mana pontért tolható ki (a felhasználandó Mana pontok számát akkor kapjuk meg, ha a területre, illetve az élőholt osztályra vonatkozó Mp-költséget összeadjuk)."
+                ]
+            ]
+        },
+        {
+            "type": "table",
+            "title": "Halottűző bot",
+            "headers": [
+                "Osztály",
+                "Megnevezés",
+                "Mp"
+            ],
+            "rows": [
+                [
+                    "I.",
+                    "Tudattalan élőholtak",
+                    "30"
+                ],
+                [
+                    "II.",
+                    "Éji rémek",
+                    "45"
+                ],
+                [
+                    "III.",
+                    "Kóborló dögök, Vérivó dögök",
+                    "60"
+                ],
+                [
+                    "IV.",
+                    "Lidércek, Szellemek",
+                    "75"
+                ]
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Holtak gyűrűje",
+            "headers": [
+                "Mp",
+                "Leírás"
+            ],
+            "rows": [
+                [
+                    "35",
+                    "Ez a gyűrű vidékenként más-más formájú, néhanapján kalcedonnal, obszidiánnal vagy holdkővel ékes, abban azonban mindegyik megegyezik, hogy kígyóvonalban tekergő, madárkarmolásra emlékeztető vésetek futnak végig rajtuk. A gyűrű viselője képessé válik a holtak nyelvének beszélésére és megértésére. Akaratát nem képes rákényszeríteni az élőholtakra, a gyűrű védelmet sem nyújt, csupán a kommunikációt könnyíti meg."
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A boszorkánymesterek tudását gazdagítja nem egy különös rajzolat és bélyeg, melyek felrajzolásával viselőjük különleges képességekre tehet szert. A varázsjelek közös jellemzője, hogy vonalaik, mintázatuk képesek megkötni a mágikus energiákat, viszont csak akkor képesek kifejteni hatásukat, ha emberi testre rajzolják őket, méghozzá nem is akárhogyan. Mindegyik bélyeget csak a test megfelelő pontján lehet elhelyezni, és nem elég csupán a bőrre rajzolni őket. Ahhoz, hogy a beléjük foglalt mágia megfoganhasson, a varázsjelnek eggyé kell válnia az alkalmazóval, a jelet a bőre alá kell tetoválni."
+        },
+        {
+            "type": "paragraph",
+            "text": "A rajzolatokat a boszorkánymester csak akkor képes elkészíteni, ha rendelkezik a Szakma (tetoválómester) és a Rúnamágia képzettségek 3. fokával, valamint birtokában van a megfelelő formuláknak, eszközöknek és alapanyagoknak. Ezeket csupán néhány céh ismeri, akik csak a kiválasztott kevesekkel osztják meg a titkos tudást, de a mágikus tetoválások elkészítéséhez szükséges alapanyagok beszerzése is rendkívül nehéz."
+        }
+    ]
+}

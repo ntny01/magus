@@ -1,0 +1,68 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": false,
+    "section_title": "",
+    "content_blocks": [
+        {
+            "type": "paragraph",
+            "text": "óhaját szinte parancsnak tekinti. A szerelem örökké tart (ez a fajta legalábbis!); ha a boszorkány a varázslatot meg nem szünteti, vagy ismételt, nyilvánvalóan ellenséges cselekedet meg nem zavarja és meg nem töri a varázst, a „befogott” férfi (hím) mellette marad. Ha a boszorkány Karizmája legalább 14-es, akkor minden e feletti pontonként 2E-vel nő a varázslat erősítése."
+        },
+        {
+            "type": "rule",
+            "title": "Üldözési mánia",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Viszály",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Átokűzés",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Átokvarázs",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "flavor_text",
+            "title": "Átkok",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Jellem torzító Átkok",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Átokfejtés",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        }
+    ]
+}

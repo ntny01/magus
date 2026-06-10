@@ -1,0 +1,76 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": false,
+    "section_title": "",
+    "content_blocks": [
+        {
+            "type": "paragraph",
+            "text": "Dreina egyedi rituáléi"
+        },
+        {
+            "type": "rule",
+            "title": "Földabrosz",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Lakat",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Menedék",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Óvó kar",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "Krad egyedi litániái"
+        },
+        {
+            "type": "rule",
+            "title": "Elmeszipoly",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "Krad egyedi rituáléi"
+        },
+        {
+            "type": "rule",
+            "title": "Biztos kéz",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Emlékezet",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        }
+    ]
+}

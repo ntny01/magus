@@ -1,0 +1,170 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": true,
+    "section_title": "Rontások",
+    "content_blocks": [
+        {
+            "type": "paragraph",
+            "text": "A rajzolatba foglalt rúnáknak kell megkötniük a nyers életenergiát. A boszorkánymesterek tudásáról azonban régen kikoptak azok a formulák, melyek önmagukban képesek lettek volna erre, ezért az egyre inkább torzuló rúnajelek felhasználásával új módszereket kellett keresniük, s így alakult ki a boszorkánymesteri Tetoválásmágia (bővebben lásd később)."
+        },
+        {
+            "type": "paragraph",
+            "text": "A Rontások a boszorkánymesterek mágiájának igen jellegzetes – ravasz és aljas – formái. A Rontás varázslatok különleges formája az Életerővel manipuláló mágiáknak, s mint ilyenek, Nekromanciának minősülnek. Hatásukra nem életenergia vonódik el, vagy adódik át, hanem megváltozik a test életerő-áramlása, ezzel betegségeket idézve elő a kiszemelt áldozat szervezetében."
+        },
+        {
+            "type": "paragraph",
+            "text": "Az áldozat egyetlen lehetősége, hogy megkísérli szervezete erejével, ellenálló-képességével legyűrni a betegséget. Ehhez Egészségpróbát kell dobnia, a betegség szintjének megfelelő módosítókkal, melynek sikere esetén felülkerekedik, s a mágikusan gerjesztett kórokozók ártalmatlanul elpusztulnak a szervezetében. Másként fogalmazva: semmilyen hatás nem érvényesül rá. Ha azonban elvéti Egészségpróbáját, a betegség hatni kezd."
+        },
+        {
+            "type": "paragraph",
+            "text": "A Rontások szintje (Erőssége) alapesetben 1-es, tehát az áldozat -1 módosítóval dobhatja a Tulajdonságpróbát. Ehhez azonban a kántálás végeztével meg kell érinteni az áldozatot. Amennyiben az érintés elmarad, úgy a varázslat Erőssége 1-gyel csökken (tehát az alap Mp-költségért 0. szinten jön létre). A Rontás szintjét a boszorkánymester – a legtöbb mágiához hasonlóan – a Mana pontok többszörözésével növelheti."
+        },
+        {
+            "type": "table",
+            "headers": [
+                "Szint",
+                "Módosító"
+            ],
+            "rows": [
+                [
+                    "0.",
+                    "0"
+                ],
+                [
+                    "1.",
+                    "-1"
+                ],
+                [
+                    "2.",
+                    "-2"
+                ],
+                [
+                    "3.",
+                    "-3"
+                ],
+                [
+                    "4.",
+                    "-4"
+                ],
+                [
+                    "5.",
+                    "-5"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A varázslat létrehozásának idejére is igaz az általános szabály: minél súlyosabb elváltozást indít be az áldozat szervezetében, annál több időbe kerül megváltoztatni az életerő áramlását. A varázslás ideje tehát Erősítés nélkül 5 szegmens, és minden E-vel 5 szegmenssel nő."
+        },
+        {
+            "type": "paragraph",
+            "text": "Rontás mindig csak egyetlen áldozatra mondható. Az áldozat a mágikus úton történő megfertőződéskor nem tartózkodhat a boszorkánymestertől 20 ynevi lábnál messzebb, különben a varázslat nem hat. Tehát a Rontások Hatótávja 20 ynevi láb sugarú kör. Később – ha már megbetegedett – természetesen akármennyire eltávolodhat a boszorkánymestertől."
+        },
+        {
+            "type": "paragraph",
+            "text": "Mivel Rontás esetén a mágia csak a fertőzés körülményeinek megteremtésében játszik szerepet, majd megszűnik – átadva a helyet az áldozat szervezetében terebélyesedő betegségnek – a mágia semlegesítése a betegem nem segít. Állapota csak a Szakrális mágia Gyógyítás varázslatával, vagy esetenként a Herbalizmus, esetleg Orvoslás képzettségben való jártassággal javítható. Persze akadnak esetek, mikor a beteg külső segítség nélkül, pusztán erős szervezetének köszönhetően maga is felépül – ha ez lehet."
+        },
+        {
+            "type": "paragraph",
+            "text": "A Rontással terjesztett betegség súlyossága általában attól függ, hogy az áldozat mennyivel vétette el a fertőzés elleni Egészségpróbát. A vetés mértéke alapján, az alábbi táblázat segítségével könnyen meghatározhatjuk a betegség súlyosságát. Akadnak azonban betegségek, melyek mindig azonos súlyossági fokon hatnak – az ilyen kitétel a varázslat leírásában mindenütt helyet kapott. Ezek esetében az Egészségpróba elvetésének mértéke természetesen nem számít."
+        },
+        {
+            "type": "table",
+            "headers": [
+                "Vetés",
+                "Hatás",
+                "Módosító",
+                "Fp-vesztés"
+            ],
+            "rows": [
+                [
+                    "1",
+                    "Enyhe lefolyású",
+                    "1-2",
+                    "1k3/nap"
+                ],
+                [
+                    "2",
+                    "Kevésbé súlyos",
+                    "2-4",
+                    "1k6/nap"
+                ],
+                [
+                    "3",
+                    "Súlyos",
+                    "4-6",
+                    "1k10/nap"
+                ],
+                [
+                    "4",
+                    "Nagyon súlyos",
+                    "6-8",
+                    "2k10/nap"
+                ],
+                [
+                    "5",
+                    "Kritikus",
+                    "8-10",
+                    "1k3/óra"
+                ],
+                [
+                    "6",
+                    "Válságos",
+                    "10-12",
+                    "1k6/óra"
+                ],
+                [
+                    "7",
+                    "Halállal fenyegető",
+                    "12-13",
+                    "1k10/óra"
+                ],
+                [
+                    "8",
+                    "Halálos",
+                    "13-14",
+                    "2k10/óra"
+                ],
+                [
+                    "9-10",
+                    "Biztosan halálos",
+                    "15",
+                    "1k3/perc"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A módosító megadja, hogy a betegség miatt mekkora negatív módosító sújtja a Tulajdonságokat; az Fp-vesztés elárulja, mennyivel csökkenhetnek a beteg maximális Fp-i a fertőzés ideje alatt."
+        },
+        {
+            "type": "paragraph",
+            "text": "Minden Rontás alapú mágia esetében a Hatóidő nem más, mint a betegség lappangási ideje. Ez megmutatja, hogy mennyi idő telik el a fertőzés pillanatától a betegség első tüneteinek észleléséig. A boszorkánymesteri Rontások általában súlyosabbak és gyorsabban rongálják a szervezetet, mint a közönséges betegségek."
+        },
+        {
+            "type": "paragraph",
+            "text": "Azonnali hatású: Ezek nagyon ritka betegségek, s a fertőzés pillanatát követően azonnal hatnak a szervezetre. Általában a hatás ellen nem lehet dobni javulásra."
+        },
+        {
+            "type": "paragraph",
+            "text": "Gyors lefolyású: Ezek a legrövidebb lappangási idővel járó kórok: a fertőzéstől számított 1k10 percen belül látható vagy egyéb módon észlelhető tüneteket okoznak. Súlyosbodásra, javulásra 10 percenként kell dobni."
+        },
+        {
+            "type": "paragraph",
+            "text": "Közepes lefolyású: A kór lappangási ideje nem túl hosszú: 1k10 órán belül kifejti hatását. Súlyosbodásra, javulásra óránként kell dobni."
+        },
+        {
+            "type": "paragraph",
+            "text": "Lassú lefolyású: A fertőzés után akár napok is eltelhetnek tünetek nélkül, s csak utána kezd a betegség kifejlődni a szervezetben. Ebben az esetben a lappangási idő 1k10 nap. Súlyosbodásra, javulásra naponta kell dobni."
+        },
+        {
+            "type": "paragraph",
+            "text": "A betegségekről bővebben lásd a Betegségek c. fejezetet a 180. oldalon."
+        },
+        {
+            "type": "paragraph",
+            "text": "Ágyhalál Mana pont: 30 Lappangás ideje: Azonnali hatású A varázslattal egy lény elméjének Mentális Képességei csökkenthetőek – ha az elvetette a betegség szintjének megfelelő Egészségpróbát. A varázslat a keringési rendszert támadja meg, s amíg jelen van, gátolja az agy vérellátását, minek következményeként az áldozat annyi pontot veszít maradandóan az Intelligenciájából, amennyi az adott súlyossági fokon szerepel a táblázatban. A betegség olyan gyors lefolyású, hogy gyakorlatilag semmilyen gyógymód nem alkalmazható ellene."
+        }
+    ]
+}

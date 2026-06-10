@@ -1,0 +1,48 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": false,
+    "section_title": "",
+    "content_blocks": [
+        {
+            "type": "rule",
+            "text": "Messziről a brigandin közönséges ruhának is vélhető, bár közelről látszanak a lemezek rögzítésére szolgáló, szabályosan elhelyezkedő varrások vagy szegecsek. A brigandin a legáltalánosabb védelmet nyújtó gyűrűsvértnél, mert itt a lapok átfedéssel kerülnek a két réteg szövet közé, nem hagyva rést maguk között. A nagyobb biztonság ára a nagyobb súly és a nehezebb mozgás. A gyűrűsvért, valamint a brigandin elöl-hátul védi a felsőtestet és általában a felkarokat, éppúgy, mint a fegyverkabát, ami ezek alapjául szolgál.",
+            "title": "Páncélok jellemzői"
+        },
+        {
+            "type": "rule",
+            "text": "A sodronyíng és a láncing kisebb-nagyobb fémgyűrűkből áll, melyeket egymásba fűztek, és utána kovácsoltak vagy forrasztottak egybe. A szemek kapcsolódhatnak egyszeresen vagy többszörösen. Láncingek esetében az előbbi, míg sodronyingeknél az utóbbi szokásos. Sodronyingeknél többlet-védelmet jelent az is, hogy a láncsorokat megcsavarják, így vastagabbá, ellenállóbbá téve azokat. Ezeket a vérteket sem tanácsos magukban hordani, mert nem tompítják eléggé az erős ütéseket – SFÉ-jük így 1 illetve 2 –; célszerű fegyverkabátot ölteni alájuk, így sokkal jobban védenek – így nyújtják a táblázatban feltüntetett teljes SFÉ-jüket.",
+            "title": "Páncélok jellemzői"
+        },
+        {
+            "type": "rule",
+            "text": "A lánc- és sodronyingek a teljes felsőtestet borítják, de gyakran a felkart és a combokat is befedik. Láncszövetből egyébként más ruhadarabokat utánzó vérteket is készítenek, például nadrágot, kesztyűt vagy csuklyát. Ezeket gyakran nem magukban, hanem a nehezebb vértek kiegészítéseként hordják.",
+            "title": "Páncélok jellemzői"
+        },
+        {
+            "type": "rule",
+            "text": "A pikkelyvért is a brigandin elvén készül, itt viszont ismét kívülre kerülnek a fémlapocskák. Ezek általában kör-, cserép- vagy téglalap alakúak, és jelentős átfedésekkel borítják a testet. Egyes vidékeken ezt is fegyverkabátra vagy bőrvért alapra varrják fel, de léteznek olyan megoldások is, ahol a lemezeket csak önmagukban fűzik össze. Ilyen esetekben mindig úgy vezetik az összekötő szíjat vagy zsinórt, hogy a pikkelylemezek egyben azt is takarják.",
+            "title": "Páncélok jellemzői"
+        },
+        {
+            "type": "rule",
+            "text": "A posztóalap nélküli pikkelyvért magában is viselhető, a vágásokat így is felfogja, de az ütések erejét alig tompítja, ezért így csak 2 az SFÉ-je – változatlan MGT mellett. Ahhoz, hogy teljes értékű védelmet nyújtson, megfelelő ruházatot kell alávenni, ami általában megfelel a fegyverkabát kategóriájának.",
+            "title": "Páncélok jellemzői"
+        },
+        {
+            "type": "rule",
+            "text": "A pikkelyvért a mellkast és a hasat védi, gyakran kiegészül a hátat borító résszel is. A karokat legfeljebb könyékig fedik, de sokszor leérnek egészen viselőjük térdéig. Ez esetben középen hasítékkal készülnek, a mozgás megkönnyítése érdekében.",
+            "title": "Páncélok jellemzői"
+        },
+        {
+            "type": "rule",
+            "text": "A lemezvértezet elvben a pikkelyvérthez hasonló, hiszen ez is egymáshoz erősített fémlapokból áll, kinézete azonban teljesen más. A lemezvértezetet alkotó fémlapok általában hosszú, széles csíkok, amelyeket belső oldalukon szíjakkal fűznek össze. Ezek a szíjak biztosítják, hogy a lemezek elmozdulhassanak egymáshoz képest. A nagyobb lemezek miatt kevésbé hajlékony, mint a pikkelyvért, jobban akadályozza a mozgást. A lemezeket alapvetően kétféleképpen szokták elhelyezni: vagy függőlegesen vagy vízszintesen. Hátránya, hogy a lemezek alakja egyszerű, nem követi a test vonalát. Az általánosan elterjedt lemezvértezetek a felsőtestet teljes egészében védik, legtöbb fajtájuk a vállat is. Csak kevés készül a combokra nyúló csatökpennyel, a karokat, lábakat pedig egyáltalán nem védik. Szintén ajánlott alatta fegyverkabátot hordani.",
+            "title": "Páncélok jellemzői"
+        },
+        {
+            "type": "rule",
+            "text": "A lemezvértezet és a mellvért, illetve a félvértezet közti átmenetet a rákozott páncél képviseli. Ez is egymásra rétegelt lemezekből áll, de ezek a lemezek már úgy vannak kialakítva, hogy jobban viselőjük testéhez simuljanak. Ezáltal növelve védelmének hatásosságát, míg nem akadályozza jobban a mozgást, mint egy lemezvértezet. A rákozott páncél a teljes felsőtestet védi elöl-hátul, és minden esetben rálóg a combokra és a felkarra is.",
+            "title": "Páncélok jellemzői"
+        }
+    ]
+}

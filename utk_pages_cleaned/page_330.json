@@ -1,0 +1,129 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": true,
+    "section_title": "Betegség átadása",
+    "content_blocks": [
+        {
+            "type": "paragraph",
+            "text": "Mana pont: 22 Varázslás ideje: 1 szegmens Hatótáv: Érintés Időtartam: Végleges"
+        },
+        {
+            "type": "paragraph",
+            "text": "Ez a mágia remekül példázza a boszorkánymesterek élet-felfogását: „ha lehet, akkor inkább valaki más dögöljön meg helyettem”. A varázslat segítségével (akárcsak a Méreg átadá-sánál) érintése nyomán megszabadul az őt kínzó kórságtól egy idegen kárára – s ha az történetesen valamely ellenfele, úgy megoldotta a számlát is."
+        },
+        {
+            "type": "paragraph",
+            "text": "A mágia alkalmazásakor semmi egyéb nem történik, mint hogy a boszorkánymester áthelyezi a szervezetében jelenlévő betegséget. A varázslat alkalmazásához mindenképpen kell egy élőlény, aki a kór további hordozója lesz. Az áldozat megfelelő módosítókkal Egészségpróbát tehet a betegség le-győzésére. Amennyiben a próba sikeres, a kór eljutott ugyan a kiszemelt áldozat szervezetébe, de ott nem tudott meg-telepedni, megsemmisült. Ha az Egészségpróba sikertelen, a betegséget legfeljebb egy képzett herbalista, orvos, vagy mágia állíthatja meg."
+        },
+        {
+            "type": "paragraph",
+            "text": "A célpont szervezetébe juttatott méreg azonban csak akkor fejti ki hatását, ha az áldozat elveti az Egészségpróbáját. A mérgek, akárcsak a Rontások – erősségüktől függően –, egyre nehezedő módosítókat adnak az áldozat próbájához."
+        },
+        {
+            "type": "table",
+            "headers": [
+                "Szint",
+                "Módosító"
+            ],
+            "rows": [
+                [
+                    "0",
+                    "0"
+                ],
+                [
+                    "1",
+                    "-1"
+                ],
+                [
+                    "2",
+                    "-2"
+                ],
+                [
+                    "3",
+                    "-3"
+                ],
+                [
+                    "4",
+                    "-4"
+                ],
+                [
+                    "5",
+                    "-5"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "Bővebben lásd a Mérgek c. fejezetet a 186. oldalon."
+        },
+        {
+            "type": "rule",
+            "title": "Méregismeret",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "Mana pont: 3 Varázslás ideje: 1 kör Hatótáv: Érintés Időtartam: Egyszeri"
+        },
+        {
+            "type": "paragraph",
+            "text": "A boszorkánymester bal keze mutatóujjának hegyét kell a méreghez, vagy a vizsgálandó személyhez, ételhez, italba stb. érintenie. Segítségével bármilyen mérget azonosítani tud, tisztában lesz leghatékonyabb felhasználási módjával, pontos hatásával és szintjével is."
+        },
+        {
+            "type": "paragraph",
+            "text": "Egyszerre egyféle méreg vizsgálható, a vizsgálat 1 kört vesz igénybe, s amíg csak a bal mutatóujja ér a méreghez, nem fog megfertőződni tőle."
+        },
+        {
+            "type": "rule",
+            "title": "Méregvarázs",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "Mana pont: 3/E Varázslás ideje: 1 kör Hatótáv: Érintés Időtartam: Maradandó"
+        },
+        {
+            "type": "paragraph",
+            "text": "A varázslat segítségével a boszorkánymester bármilyen fo-lyadékot mérgező tulajdonságokkal ruházhat fel. A folyadék íze, színe, szaga nem fog megváltozni, így a Méregkeverés képzettség is hatástalan az efféle matéria felderítésére avagy azonosítására, ám a hatásból már következtethet az ellen-szerre. Egy varázslattal több adag méreg is készíthető, eb-ben az esetben természetesen a Mana pontok többszörözése szükséges. A több komponensű mérgek egyes komponenseit külön-külön kell elkészíteni."
+        },
+        {
+            "type": "paragraph",
+            "text": "Ha a mérget valamilyen folyadékba vagy ételbe keverik, akkor a méreg arányosan akkora erősségű lesz, amennyi mérget az áldozat elfogyasztott, tehát a méreg minden el-fogyasztott adagja után a méreg szintje 1-gyel erősebbnek számít, míg ha az áldozat egy adagnál kevesebbet fogyaszt el, akkor arányosan kevesebb 0. szint alatt a méreg semmi-lyen hatást nem fejt ki."
+        },
+        {
+            "type": "paragraph",
+            "text": "A varázslattal készített méreg, hatásai és képességei a következő módon állapíthatóak meg: a Méregvarázs min-den egyes E-je után a boszorkánymester a Méregkeverés képzettségnél (lásd a 154. oldalon) leírtaknak megfelelő egy Ismeret pontot kap, és ebből állíthatja össze az általa létre-hozni kívánt mérget."
+        },
+        {
+            "type": "paragraph",
+            "text": "A varázslat természetesen nem juttatja az áldozat szerve-zetébe a mérget, ahhoz más eszközöket, netán varázslatot kell alkalmazni."
+        },
+        {
+            "type": "paragraph",
+            "text": "A létrehozott méreg mindig a boszorkánymester bal mutató-ujjából szivárog elő, s egy körig, legyen bármiféle is, nem fejti ki hatását a boszorkánymesterre; ennyi idő alatt kell biztonságo-san megszabadulnia tőle, vagy elraktároznia valami módon."
+        },
+        {
+            "type": "paragraph",
+            "text": "Méregmágia"
+        },
+        {
+            "type": "paragraph",
+            "text": "A boszorkánymesterek tudásának sokszínűségét mi sem igazolja jobban, mint ez a varázslatcsoport. A Mé-regmágia leginkább az Anyagi Mágia egy sajátos mellék-ágaként kezelendő, bár funkciója igen korlátozott, mégis hatalmasak a benne rejlő lehetőségek. Segítségével kö-zönséges anyagok változtathatók át ártalmas párlatok-ká, bódító főzetekké vagy mérgező áfiumokká. Láthatjuk tehát, hogy egyetlen valamirevaló boszorkánymesternek sem kell a szomszédba mennie egy jó adag álnokságért és rosszindulatért."
+        },
+        {
+            "type": "paragraph",
+            "text": "Többször is említés esett már a mérgekről, s a mérgek közt a mágikus természetűekről – mindezidáig azonban nem derült rá fény, mit is jelentenek valójában. Íme, a boszorkánymester a mágikus mérgek legkülönbje ismerője, hűen tükrözi ezt mágikus tudományának Méregmágia néven közismertté vált fejezete."
+        },
+        {
+            "type": "paragraph",
+            "text": "Azonban hiába minden varázstudomány, ha a boszor-kánymester nem ismeri a különböző mérgek összetételét. Ezért a Méregmágia használatához a boszorkánymester-nek birtokában kell lennie a Méregkeverés/Semlegesítés képzettség legalább 3. fokának."
+        },
+        {
+            "type": "paragraph",
+            "text": "Alkalmazásuk alapján a mérgek a következő csoportokba sorolhatók: ételés italmérgek, fegyvermérgek, gázvagy lé-gimérgek, kontaktmérgek, és több komponensű mérgek."
+        }
+    ]
+}

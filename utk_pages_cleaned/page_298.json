@@ -1,0 +1,56 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": true,
+    "section_title": "Mentális praktikák",
+    "content_blocks": [
+        {
+            "type": "paragraph",
+            "text": "A Mentálmágia a tudatra, az akaratra, a Mentálra, mint a gondolkodás központjára gyakorolt mágikus befolyást jelenti. Ennek egyenes következménye, hogy – kevés számú kivételtől eltekintve – kizárólag értelmes lényekre alkalmazható, állatokra semmiképpen sem. Állatokra csak a Mentálmágia azon varázslatai hatnak, melyek az érzékelésüket, vagy a mozgásukat befolyásolják, illetve zavarják."
+        },
+        {
+            "type": "paragraph",
+            "text": "A Mentálmágia nem kifejezett erőssége a boszorkánynak, bár számtalan efféle varázslatot ismer. Ezeket azonban az Asztrál varázslatokhoz képest jóval kisebb erősséggel képes használni – melynek következményeként általában csak nála alacsonyabb Tapasztalati szintűek ellen alkalmazhatja őket sikeresen."
+        },
+        {
+            "type": "rule",
+            "title": "Akaratrablás",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Bódulat",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Észlelhetetlenség",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Kinokozás",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Láthatatlanság",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        }
+    ]
+}

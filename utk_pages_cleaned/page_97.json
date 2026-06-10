@@ -1,0 +1,353 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": true,
+    "section_title": "Darton-paplovag",
+    "content_blocks": [
+        {
+            "type": "paragraph",
+            "text": "A paplovag képzettségei, melyeket rendjétől az Oktatás képzettség 4. foka által nyújtott előnnyel tanulhat: Állatismeret, Ékesszólás, Fájdalomtűrés, Fegyverhasználat, Fegyverismeret, Hadvezetés, Harctéri gyakorlat, Heraldika, Herbalizmus, Írás/olvasás, Kultúra, Legendaismeret, Lélektan, Lovaglás, Művészetek (Éneklés, Rajz stb.), Nyelvtudás, Orvoslás, Pajzshasználat, Pszi (pyarroni), Számtan/mértan, Térképészet, Történelem, Udvari etikett, Vallásismeret, Vértviselet. (illetve az egyház profiljából adódó egyéb képzettségek).",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "A paplovag fegyvertára",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "A paplovagok egyházuk elhivatottjai, nincs tehát sok csodálkoznivaló rajta, hogy arra a harcmodorra képezik ki őket, amely a hetedkori Yneven a legkorszerűbbnek és a legütőképesebbnek számít: a nehézlovas taktikára. Ehhez igazodik a hadifelszerelésük is, melyre a nehézvértéken kívül a különféle nemesi kézifegyverek jellemzőek. Fontos megjegyezni, hogy a paplovagok felfogása szerint a célzófegyverek alantas és méltatlan harceszközök. Ezért nem alkalmazzák őket, ellentétben a lovagi harcmodorba illő hajítófegyverekkel.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "A paplovag különleges előnyei",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "A paplovag istene kegyelmét élvezi, s ezáltal egyrészt megkapja a Kegyeltség Hátteret, valamint képes a Szakrális mágia alkalmazására (bővebben lásd a Szakrális mágia c. fejezetet a 255. oldalon), illetve a Vallásismeret képzettségnél leírtaknak megfelelően növelheti TME-jét a Hitből fakadó bónuszaival.",
+            "title": "Különleges előny I.",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "A paplovag másik különleges előnye, a már induláskor rendelkezésére álló egy rend fegyverzet, amellyel az egyháza látta el, nem szükséges pénzzel fizetnie érte. A fegyverzet típusa és minősége a választott egyháztól függ. Ha a későbbiekben megrongálódik vagy elvész, pótlásáról a karakternek természetesen már magának kell gondoskodnia.",
+            "title": "Különleges előny II.",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "Egy átlagos 1. Tapasztalati szintű paplovag",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "table",
+            "text": "",
+            "title": "",
+            "headers": [
+                "Tulajdonság",
+                "Érték",
+                "Tulajdonság",
+                "Érték"
+            ],
+            "rows": [
+                [
+                    "Erő",
+                    "15",
+                    "Ép",
+                    "13"
+                ],
+                [
+                    "Gyorsaság",
+                    "14",
+                    "Fp",
+                    "32"
+                ],
+                [
+                    "Ügyesség",
+                    "15",
+                    "Ψp",
+                    "—"
+                ],
+                [
+                    "Állóképesség",
+                    "14",
+                    "Mp",
+                    "—"
+                ],
+                [
+                    "Egészség",
+                    "13",
+                    "Kegy pont",
+                    "6"
+                ],
+                [
+                    "Karizma",
+                    "14",
+                    "MME",
+                    "14"
+                ],
+                [
+                    "Intelligencia",
+                    "13",
+                    "AME",
+                    "16"
+                ],
+                [
+                    "Akaraterő",
+                    "13",
+                    "",
+                    ""
+                ],
+                [
+                    "Asztrál",
+                    "15",
+                    "",
+                    ""
+                ],
+                [
+                    "Érzékelés",
+                    "12",
+                    "",
+                    ""
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "Elköltött KAP-ok:",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "table",
+            "text": "",
+            "title": "",
+            "headers": [
+                "Költségtípus",
+                "Pont"
+            ],
+            "rows": [
+                [
+                    "Iskola (Paplovag)",
+                    "6 pont"
+                ],
+                [
+                    "Kegyel",
+                    "—"
+                ],
+                [
+                    "Fegyverzet",
+                    "14 pont (7 HM)"
+                ],
+                [
+                    "HM",
+                    "5 pont (5 Fp)"
+                ],
+                [
+                    "Fp",
+                    "10 pont (10 Kp)"
+                ],
+                [
+                    "Kp",
+                    "15 pont (5 Kegy pont)"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "Fegyverzet:",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "table",
+            "text": "*fegyver nélkül",
+            "title": "Fegyverzet",
+            "headers": [
+                "Jellemző",
+                "Fegyver nélkül",
+                "Kétkezes kard"
+            ],
+            "rows": [
+                [
+                    "Időigény",
+                    "3",
+                    "10"
+                ],
+                [
+                    "KÉ",
+                    "29",
+                    "36"
+                ],
+                [
+                    "TÉ",
+                    "48",
+                    "74"
+                ],
+                [
+                    "VÉ",
+                    "90",
+                    "108"
+                ],
+                [
+                    "CÉ",
+                    "27",
+                    "4k6+2"
+                ],
+                [
+                    "Sebzés",
+                    "1k6",
+                    ""
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "Induló képzettségek",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "table",
+            "text": "",
+            "title": "",
+            "headers": [
+                "Induló képzettségek",
+                "Fok",
+                "Kp"
+            ],
+            "rows": [
+                [
+                    "Fegyverhasználat (kétkezes kard)",
+                    "4. fok",
+                    "13 Kp"
+                ],
+                [
+                    "Fegyverhasználat (nyeles fegyverek)",
+                    "2. fok",
+                    ""
+                ],
+                [
+                    "Fájdalomtűrés",
+                    "2. fok",
+                    ""
+                ],
+                [
+                    "Hadvezetés",
+                    "2. fok",
+                    ""
+                ],
+                [
+                    "Harctéri gyakorlat",
+                    "3. fok",
+                    "3 Kp"
+                ],
+                [
+                    "Vértviselet",
+                    "4. fok",
+                    "8 Kp"
+                ],
+                [
+                    "Helyismeret (szülőföld)",
+                    "3. fok",
+                    ""
+                ],
+                [
+                    "Állatismeret (hátas állatok)",
+                    "2. fok",
+                    ""
+                ],
+                [
+                    "Lovaglás",
+                    "3. fok",
+                    ""
+                ],
+                [
+                    "Kultúra (saját)",
+                    "3. fok",
+                    ""
+                ],
+                [
+                    "Nyelvtudás (anyanyelv)",
+                    "3. fok",
+                    ""
+                ],
+                [
+                    "Udvari Etikett",
+                    "2. fok",
+                    ""
+                ],
+                [
+                    "Heraldika",
+                    "2. fok",
+                    ""
+                ],
+                [
+                    "Írás/olvasás",
+                    "2. fok",
+                    ""
+                ],
+                [
+                    "Lélektan",
+                    "2. fok",
+                    ""
+                ],
+                [
+                    "Történelem",
+                    "2. fok",
+                    ""
+                ],
+                [
+                    "Vallásismeret",
+                    "3. fok",
+                    ""
+                ]
+            ]
+        },
+        {
+            "type": "flavor_text",
+            "text": "Örvendezz, emberfia, magasztos perc előtt állsz! A Hallgatag Úr mindjárt szólani fog hozzád, a saját szájával, ahogyan minden halandóhoz csak egyszer. Figyelmezz hát jól; el ne szalaszd a szavát!",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "Dartonita vigasz haldoklóknak",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "Darton – másképpen a Hallgatag Úr – a pyarroni istencsalád ellentmondásos egyéniségei közé tartozik. A holtak patrónusa, az elmúlás és a csend misztériumainak legtöbb létetményese, titokzatos és kifürkészhetetlen alak, nem igazán gonosz, de jóindulatúnak távolról sem mondható. A Sötét Tréfák Atyjaként is tisztelik, mert úgy látszik, örömét leli benne, ha hívei megdöbbentenek és megbotránkoztatnak másokat. A Darton-kultusz egyes vonásai akkora visszatetszést váltottak ki a befolyásosabb pyarroni egyházak némelyikéből, hogy közös erővel megpróbálták fokozatosan háttérbe szorítani, népszerűtlenné tenni. Munkálkodásuk lassan, de sikeresen haladt – egészen a Sötét Próféta felbukkanásáig.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "Airun al Maremt tevékenysége rohamos gyorsasággal vezetett az első komoly egyházszakadáshoz a pyarroni vallás történetében, legalábbis a XIX. századi Viadomo-bonyodalmak óta. (Azóta már bekövetkezett a második is, Gilron követői között, a harmadik és a negyedik pedig számtalan más a küszöbön áll.) A konkrét kiváltó ok a dartonita paplovagrend megalapítása volt – a Hallgatag Urat addig csak papok és szerzetesek szolgálták –, amelyhez nem kérték ki a Papi Szék beleegyezését, de már korábban is sejteni lehetett, hogy a Sötét Próféta működése szétfeszíti a nem túl rugalmas pyarroni erkölcs kereteit. A Darton-egyház örökös szárnya – az ő képviselőjük ül a Papi Székben – nem ismeri el prófétának Airun al Maremet, és élesen elhatárolja magát a paplovagrend minden cselekedetétől. Szószólóik a Hallgatag Úr hittételeinek rosszhiszemű félremagyarázásával vádolják a Rowon városát örök homályba borító dartonitákat. A két irányzat között már fegyveres összetűzésekre is sor került.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        }
+    ]
+}

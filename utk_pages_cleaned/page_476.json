@@ -1,0 +1,138 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": false,
+    "section_title": "",
+    "content_blocks": [
+        {
+            "type": "paragraph",
+            "text": "Blegront - Közönséges"
+        },
+        {
+            "type": "paragraph",
+            "text": "Erőteljes felépítésű kutya. Feje széles, szeme ferde metszésű. Füle hegyes, felálló. Farkát a hátára kunkorítja. Szőrzete dús, enyhén hullámos, szinte minden színben megtalálható. Marmagassága 65-80 ynevi hüvelyk, testtömege 45-60 ynevi font. Munkabíró, készséges, de idegenekkel szemben bizalmatlan. Kitartó, helymemóriája kitűnő. Hidegtűrő és tájékozódó képességéről legendákat mesélnek. Jó tulajdonságai miatt főleg szánhúzóknak alkalmazzák, de a harcikutya-k között sem ritka."
+        },
+        {
+            "type": "rule",
+            "title": "Módosítói",
+            "headers": [
+                "KE",
+                "TÉ",
+                "VÉ",
+                "Sebzés",
+                "Ép",
+                "Fp"
+            ],
+            "rows": [
+                [
+                    "-3",
+                    "+15",
+                    "-10",
+                    "+1",
+                    "+4",
+                    "+5"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "Hastin - Harc"
+        },
+        {
+            "type": "paragraph",
+            "text": "Hatalmas testű, robosztus kutya, feje hosszúkás, füle lelógó. Farka hosszú, vaskos. Barnásfekete szőre rendkívül vastag, sűrű és tömött. Marmagassága 80 ynevi hüvelyk körüli, de egyes példányok elérhetik a 90-100 ynevi hüvelykett is. Súlya 60-75 ynevi font. Szívós, kitartó, erőteljes testalkatú. Eredendően nyugodt fajta, de ha felhergelik, félelmetes ellenfél. A leggyakoribb harcikutya szerte északon. Néhány példánya délen is megtalálható."
+        },
+        {
+            "type": "rule",
+            "title": "Módosítói",
+            "headers": [
+                "KE",
+                "TÉ",
+                "VÉ",
+                "Sebzés",
+                "Ép",
+                "Fp"
+            ],
+            "rows": [
+                [
+                    "-2",
+                    "+25",
+                    "-15",
+                    "+2",
+                    "+5",
+                    "+10"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "Robardoar - Közönséges"
+        },
+        {
+            "type": "paragraph",
+            "text": "Kissé testes, mégis jó mozgású fajta. Feje közepes, füle lelógó. Farka rövid, általában lóg. Testalkata izmos. Rövid szőrzete fehér, fekete vagy rőtes színezetű. Marmagassága 35-50 ynevi hüvelyk, súlya 20-40 ynevi font. Tanulékony, engedelmes, nyugodt fajta, de könnyen el lehet vadítani. Szerte Yneven széles körben alkalmazzák előnyös tulajdonságai miatt."
+        },
+        {
+            "type": "rule",
+            "title": "Módosítói",
+            "headers": [
+                "KE",
+                "TÉ",
+                "VÉ",
+                "Sebzés",
+                "Ép",
+                "Fp"
+            ],
+            "rows": [
+                [
+                    "-1",
+                    "+5",
+                    "-1",
+                    "-1",
+                    "-1",
+                    "-1"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "Lovak"
+        },
+        {
+            "type": "paragraph",
+            "text": "Ynev kontinensén hatalmas távolságokat kell leküzdeniük az utazóknak, s bár számtalan helyre juthatnak el mágia segítségével, előbb-utóbb mindegyiküknek akad dolga lovakkal. Aki nem kifejezetten lóra termett alkat, vagy pusztán csak szereti a kényelmet, hintón, szekéren utazik, akinek a gyorsaság a fontos, nyeregbe ül. Igen ám, de miféle ló nyeregbe?"
+        },
+        {
+            "type": "paragraph",
+            "text": "Egy laikus számára az egyes állatok között talán a legfeltűnőbb különbség a szín. Meglehet, a köznép szerint a legtöbb ló „barna”, ez azonban hibás nézet: barna ló nincs. Ezt a bizonyos árnyalatot pejnek nevezik, s különböző tónusai léteznek (pl. sötétpej, vöröspej). Ismeretes még sárga, szürke, fekete, illetve albínó fehér, egyes területeken tarka, foltos ló."
+        },
+        {
+            "type": "paragraph",
+            "text": "A sokféle árnyalat némileg megnehezíti a tájékozódást, ám a pej lovat elkülöníti a sárgától fekete sörénye, farka és lábvége, a valódi feketétől a sötétpejtől pedig feketén pigmentált bőre és palaszürke patája. Persze fekete ló sem csupán egyféle van, megkülönböztetnek hollófeketét, nyári feketét."
+        },
+        {
+            "type": "paragraph",
+            "text": "A szürke ló születésekor még pej színű, szőre csak később nyeri el végső színét. Ha csak szürkés foltok tarkítják a szőrzetét, akkor tűzött vagy deres (almásderes, vörösderes). Mindezeken felül még számos változat létezik, a fakótól a borderesig, a vöröspejtől az arany sárgáig, a zsemlészínűtől az acélszürkéig."
+        },
+        {
+            "type": "paragraph",
+            "text": "A valódi fehér ló igen ritka, ez ugyanis az albínó. Bőre halovány rózsaszín, szeme vöröses, a paták szarúja is inkább rózsaszínes, s teljes szőrzete hófehér. Meglehet, szép és különleges, mégsem ajánljuk senkinek, hiszen az albínók többnyire jóval rövidebb életűek, fáradékonyabbak, érzékenyebbek. Mégse keseredjen el az, aki „fehér” lovat szeretne: bőven akad a szürkék között olyan, amely megfelel igényeinek. Szőrük színe alapján joggal nevezi ezeket a köznyelv fehérnek, ám nem hiányoznak belőlük a pigmentsejtek, s mentesek minden albínó hátránytól."
+        },
+        {
+            "type": "paragraph",
+            "text": "Az igazán gazdagok és az uralkodó osztály kedvéért kinyesztették a fehér szőrű, kék szemű fél-albínókat, amelyek már biztosan örökítik tulajdonságaikat, és jobban tűrik a viszontagságokat, mint vörös szemű társaik, ám ezek sem olyan teherbíróak még, mint bármely más fajta ló, ezért általában csak parádékon és díszmeneteken használják őket. Ritkaságuk miatt természetesen értékük így is jókora, egy-egy szebb példányért a közönséges színű hátasok árának két-háromszorosát is elkérheti a kupec."
+        },
+        {
+            "type": "paragraph",
+            "text": "A fentieken kívül még rengeteg szempont alapján vizsgálják a lovakat. A fogsorukat megnézve lehet következtetni korukra és egészségi állapotukra, sőt, egyes rossz szokásaikra is. Külön névvel illetik a fejalakulású (egyenest, félkos, juh, csuka), a fejen lévő fehér foltot (tűzött virág, virág, csillag, orrcsík, hóka, tejfeles száj, szárcsa), a láb fehér színét (harisnya, csüdben kesely, pártában kesely), s mindezek igen fontosak egy-egy hátas szépségének megítélésében. A nyak, a hát és a far izomzata, felépítése befolyásolja a ló teherbírását, futásképességét. A szügy és a mar alakja, az ízületek állapota, a paták alakulása és a lábállás sok mindent elmond a hozzáértőnek a ló járásáról, képességeiről."
+        },
+        {
+            "type": "paragraph",
+            "text": "Egy átlagos ló 25-30 évet él. 2 éves koráig tekintik csikónak; azután kifejlett állat. Egy megerőltető feladatot végző ló úgy 12-14 éves korig bírja a mindennapos munkát, de ha gondosan, jól bánnak vele, akár 20 éves koráig is jó hasznát vehetik."
+        },
+        {
+            "type": "paragraph",
+            "text": "A lovakat általában a lócsiszárok – akik tulajdonképpen az Idomítás képzettség egy speciális ágát képviselik – tanítják be. A csizsármesterség is épp olyan mesterség, akár a többi, azaz szakmaként tanulható. Egy-egy állat kiképzése korántsem egyszerű és gyors feladat, hanem hónapokon, egyes esetekben években át tartó folyamat. Emberhez, esetleg istállóhoz szoktatás után a nyereghez, hámhoz, majd a teherviseléshez, illetve vontatáshoz kell hozzászoktatni a csikót. Itt az igás- és málhás ló idomítása többnyire vége is ér. Az utazólovaknak eztán a különböző segítségeket tanítják meg. Segítségnek hívják összefoglaló néven a ló irányítását szolgáló mozdulatokat, parancsokat – ilyen például a szár mozgatása, a comb szorítása, a sarkantyú, a pálca használata, illetve vezényszavak, jelek. Egy egyszerű hátast ezekhez bárki hozzászoktathat; aki legalább 2. fokon jártas akár a csizsár szakmában, akár az Idomítás képzettségben. A harci lovak, különleges kalandozó-lovak betanításához azonban valódi szakértelem, komoly tapasztalat kell, tehát csak legalább 4. fokon képzett"
+        }
+    ]
+}

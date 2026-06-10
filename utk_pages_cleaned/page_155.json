@@ -1,0 +1,244 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": true,
+    "section_title": "Jelbeszéd (II – Érzékelés)",
+    "content_blocks": [
+        {
+            "type": "paragraph",
+            "text": "4. fok Ezen a szinten a karakter már komolyabb ékszereket vagy iratokat hamisít, csak igazi, szakavatott mesterek kezdenek el gyanakodni munkája láttán.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "A karakter próbájához +2 módosító járul.",
+            "title": "Rendszerszabály",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "5. fok A hamisítás nagymestere, igen tehetős, pártfogókkal bíró művész. Munkája, akár még egy bankház titoknokát is megtévesztheti, igen nagybecsű és értékes ékszerekről készíthet másolatot a lelepleződés csekély esélyével. Ha bírja a vonatkozó mágikus hagyományt, akár varázstárgyakat is hamisíthat, melyek hatásukban sem, de kinézetükben és egészen használatukig képességeikben is teljesen azonosak az eredetivel.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "A karakter próbájához +3 módosító járul.",
+            "title": "Rendszerszabály",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "A jelekkel folytatott kommunikáció tudománya, a fejvadászrendek és tolvajklánok sajátos belső nyelve, de kalandozóknak is jól jöhet.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "1. fok Az ilyen szinten képzett személy még csak egy-két jelet ismer, melyek igen egyszerűek, például: „Menj innen!” vagy „Le a fegyvert!”",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "2. fok A karakter már nagyon egyszerű, köznapi szavakkal megértheti magát, például: „Menj fel a padlásra!” vagy „Nincs itt senki, elmentek.” A tolvajcéhek képzettebb embereinek szintje.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "3. fok A képzett személy szókincse már jelentős és nagy gyakorlata van a csendes beszéd használatában is. Egyfajta konyhanyelvet már igen gyorsan és szinte hibátlanul alkalmaz. A képzettség ezen szintje, afféle fejvadász harcinyelv a csendesebb bevetésekre.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "A süketnéma karakterek kötelező tudásszintje. Induláskor anyanyelvük helyett ezen képzettség 3. fokát birtokolják.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "4. fok A karakter képes magát az előszónál valamivel lassabban, de teljes nyelvi repertoárját felölelő módon kifejezni.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "5. fok Akár irodalmi értekezést is lefolytathat a karakter a jelbeszéd segítségével, már ha van aki megértse. Kommunikációja sebessége már azonos az előszóéval. A karakter akár már számára idegen jelrendszereket is megért sikeres Intelligenciapróbával.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "Kocsmai verekedés (I – Erő, Gyorsaság, Ügyesség)",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "Ezen képzettséggel felvértezve bármilyen rögtönzött fegyverrel képes a karakter helytállni, amit egy ivó vagy egy fogadó söntése nyújthat, például szék, asztal, söröskupa, kancsó, esetleg étkőfogóvilla. A magasabb szintjein már igen komoly harci tapasztalatot birtokol a karakter.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "A kocsmai fegyverek értékének meghatározása a KM döntése, bár azt megjegyeznénk, hogy ritkán akad olyan kocsmai berendezési tárgy vagy kellék, amely akár harcértékeiben, akár sebzésében elérné egy valódi fegyver képességeit.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "1. fok A kezdő bunyóst nem sújtják már a képzetlenségből eredő negatív módosítók",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "2. fok A gyakorlott kocsmavitéz megtanult bánni az adott fegyverekkel, már megkapja a fegyver harcértékeit, innentől kezdve a fegyver KM által meghatározott értékeivel megnövelt harcértékekkel vesz részt az összecsapásokban.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "3. fok A hivatásos ivóbajnok már képzett fegyverforgató, sebzéseihez +1 Sp járul.",
+            "title": "Rendszerszabály",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "4. fok Az ilyen megalkotott kocsmai vitézek már mestere a kocsmai fegyverek forgatásának, a fegyveres harcértékeihez KÉ: +2, TÉ: +5, VÉ: +5, CÉ: +5 járul.",
+            "title": "Rendszerszabály",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "5. fok A karakter legendás bajnoka Ynev ivóinak, sebzéseihez +2 Sp adódik.",
+            "title": "Rendszerszabály",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "Méregkeverés/semlegesítés (II – Intelligencia)",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "A képzettség birtokosa képes mérgek, afiumok és ajzó-szerek keverésére. Ha úgy hozza a szükség, a méreg típusának és jellemzőinek meghatározása után képes ellenszert készíteni, ha az adott képességekkel bíró mérget maga is ki tudná keverni. Azonban a méreg képességeinek kiderítéséhez vagy magát használná a karakternek, vagy sikeres Intelligenciapróbát kell dobnia a leírásban szereplő módosítókkal.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "A méregkeverő által elkészíthető mérgek képességeit a képzettség függvényében a következő módon állíthatja össze a játékos a KM-mel egyeztetve:",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "table",
+            "headers": [
+                "Ip",
+                "Méregtípus",
+                "Hatás",
+                "Hatás idő-tartama",
+                "Hatóidő"
+            ],
+            "rows": [
+                [
+                    "1",
+                    "Étel és italméreg",
+                    "Gyengeség, Rosszullét",
+                    "Egyszeri hatású",
+                    "Nagyon lassú"
+                ],
+                [
+                    "2",
+                    "Fegyver-méreg",
+                    "Kábult, Bódulat, Fájdalom",
+                    "Rövid ideig ható",
+                    "Lassú"
+                ],
+                [
+                    "3",
+                    "Légméreg",
+                    "Görcs, Bénulás",
+                    "Közepes ideig ható",
+                    "Gyors"
+                ],
+                [
+                    "4",
+                    "Több komponensű",
+                    "Alvás, ájulás",
+                    "Hosszú ideig ható",
+                    "Azonnali"
+                ],
+                [
+                    "5",
+                    "Kontakt-méreg",
+                    "Halál",
+                    "Maradandó",
+                    "Lappangó"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A mérgek négy fontos képességét sorolja fel az alábbi táblázat, feltüntetve a tulajdonság pontértékét. Mikor egy méreg kikeverésére kerül a sor a karakter a képzettség nyújtotta Ismeret pontokból vásárolhatja meg az adott méreg képességeit. A tulajdonságok Ismeret pont (Ip) költségét összeadva kapjuk meg a 0. szintű méreg Ip értékét. Ha magasabb szintű mérget kívánunk előállítani, úgy a korábban kiszámított Ip költség mellett az elérni kívánt szintnek megfelelően, szintenként +3 Ip-ba kerül az adott méreg előállítása.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "Azonban a KM belátása szerint igen különleges esetekben, ritka, nagyon nehezen beszerezhető, vagy igen borsos árú alapanyagok felhasználásával a méreg Ip-je maximum hárommal növelhető, az Ip költség növekedése nélkül.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "A mérgek szintjének növekedésével párhuzamosan az adott méreg hatása ellen dobandó Egészségpróbát a méreg szintjének megfelelő negatív módosító sújtja.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "Itt jegyzendő meg, hogy a komolyabb, súlyosabb hatású mérgek elkészítéséhez már laboratórium vagy drága felszerelés szükséges, a KM döntése szerint.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "A Fájdalom hatással bíró mérgek sebzése minden egyes a karakter által birtokolt képzettségi fok után 1k6 Sp, ami a hatás kialakulásakor azonnal fellép, és a teljes hatóidő alatt érvényesül. Amíg a méreg hat csakis pszionikával, vagy mágiával (a méreg semlegesítése vagy a karakter eltompítása ál",
+            "title": "",
+            "headers": [],
+            "rows": []
+        }
+    ]
+}

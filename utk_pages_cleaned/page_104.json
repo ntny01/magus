@@ -1,0 +1,144 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": true,
+    "section_title": "Az Uwel-paplovag különleges előnyei",
+    "content_blocks": [
+        {
+            "type": "flavor_text",
+            "text": "kevés volt, többen tán elegendően lesznek – és felkerekedtek mindahányan. Takaros látogatás volt, csudára megszervezve. Még a nevét is eltörölték a városnak; azóta is óvákodnak a környékbeli népek a szájukra venni, állítólag átok ül rajta. Azt a kiégett romhalmazt meg azóta Sathkun Uweliornak hívják. Uwel Lába Nyomának.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "flavor_text",
+            "text": "Raibur kapitány történeteiből",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "A Bosszúállás Atyja a pyarroni pantheon egyik legérdekesebb, egyben legellentmondásosabb alakja. Mindenféle ideológiai előítélettől mentes, öntörvényű isten, szenvtelen és rendíthetetlen; akarata, melyet szolgáin keresztül nyilvánít ki, nem mindig esik egybe a pyarronita egyházak elképzeléseivel. Uwel az az isten, aki megtorolja a gyengék és a nyomorultak, a becsapottak és a kisemmizettek sérelmeit és bosszút áll azok helyett, akik maguk képtelenek rá.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "Dartón mellett ő a másik olyan tagja a pyarroni panteonnak, aki nem mindig osztja a többiek nézeteit az Anyagi Síkon zajló eseményekkel kapcsolatban. Arra is akadt már példa, hogy egyes ügyek elbírálásakor istentársai ellenségeinek javára döntött. Hogy melyik bosszú igazságos és melyik nem, annak megítélésében pártatlansága a zord Kyelével vetekszik; a két egyház azonban egyáltalán nem rokonszenvez egymással. Uwel szolgái ugyanis hangsúlyozottan kívül állnak a társadalmon és a törvényeken, a Kyelt imádó katonapapok pedig éppenséggel a társadalmi rendet fenntartó törvényeket tartják a legszentebbnek.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "Uwel egyháza a földrészen rendszertelenül elszórt rendházakból áll, melyek mind önállóak és egyenrangúak, semmilyen központi hatóság nem fogja össze őket. Papjai rendhagyó módon egyáltalán nincsenek, csak paplovagjai, akiket a köznyelv már több mint ezer éve Bosszúangyaloknak hív.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "Számtalanszor előfordul, hogy valakit égbekiáltó sérelmet ér, ám nem tud érvényt szerezni igazának. Ennek ezerféle oka lehet, és sokkal gyakoribb eset, mint hinnénk. Ilyenkor nincs más hátra, mint felkeresni a legközelebbi Uwel-rendházat. Nem túlságosan hívogató építmények ezek: komor lovagvárak, erődített kastélyok, bérci sziklafészkek. Szerte Yneven megtaláljuk őket, mindig a sűrűn lakott tartományok peremvidékén, barátságtalan és nehezen megközelíthető régiókban. Földbirtok sohasem tartozik hozzájuk; eseti adományokból tartják fenn magukat, és bármilyen bizonytalannak tűnhet is ez a forrás, ritkán látnak szükséget.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "A Bosszúangyalok meghallgatják az elébük járuló panaszost, majd egy titkos szertartáson kikérik uruk ítéletét: valóban méltányos-e a kérése? Ezt sohasem mulasztják el, még a legegyértelműbbnek tűnő esetekben sem, hisz az ember elmarad. Amit tesznek, az nem szolgálat, hanem kötelesség.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "Keménykötésű, félelmet nem ismerő harcosok egytől egyig, eltökélt céljuktól senki és semmi sem tántoríthatja el őket. Ha időnek előtte dőlnek ki a sorból, azonnal helyükbe lép egy társuk, hogy bevégezze küldetését. A kiszemelt áldozat legfeljebb akkor menekülhet, ha az egész rendházat kiirtja. A megtorlás mértékét maguk határozzák meg, már-már lelketlen szigorral, bármely humán jogrendnél kegyetlenebbül. Két alapelvük van, amelyhez minden körülmények között tartják magukat. „A halott soha többet nem vétkezik.” – tartja az egyik. „A bosszútól szemben kell beteljesíteni.” – írja elő a másik.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "A Bosszúangyalok állandó készültségben élnek, különös gondot fordítanak a testedzésre és a fegyvergyakorlatokra. Félelmetes harcosok, ám csapnivaló katonák: az öngyilkosság keményfejűek, senkitől nem fogadnak el parancsot saját elöljáróikon kívül. Magányosan tevékenykednek, segítséget nem várnak senkitől, legkevésbé más pyarroni egyházaktól.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "Kedvelik ugyan a koromfekete, jeltelen nehézvértet, ám páncélzatukat mindig küldetésüknek megfelelően választják meg; nem bolondok például teljes vértben tengerre szállni. Ugyanez vonatkozik az arzenáljukra is, bár szívesen használnak olyan fegyvereket, amelyek valamiféleképpen utalnak uruk szent jelképeire: a hóhérbárdra, a vasalt ökölre vagy a tizenhárom csomóra kötött hurokra.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "Akivel viszont valóban méltatlanul bántak, attól a zord paplovagok minden viszonzás nélkül átvállalják a bosszú terhét. Ha tehetős az illető, elfogadnak tőle jutalmazást, kérni azonban sohasem kérik, és akkor sem hiányolják, ha",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "I. Uruk által rájuk ruházott hatalom számottevő, fohászaikat az Élet, a Halál és a Lélek szféráiból választhatják; mégis nagyon ritka közöttük az olyan, aki a szakrális hatalmát fejlesztett fegyverforgató tudományára rovására. Számottevőek még a bűnösök felkutatására alkalmazható fohászaik is.",
+            "title": "Különleges előny I.",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "II. Az Uwel-lovag a játék kezdetén saját páncélzattal rendelkezik, amiért nem kell pénzzel fizetnie, rendháza adta össze a rendet támogatók, bosszút kérők javaiból. A páncélzat tartozékai: acél félvértzet és hozzávaló sisak; egyes rendházak paplovagjainál a vértezet gyakori kiegészítő eleme a vállvasak fölé magasodó baljóslatú éjszín angyalszárny, melynek elhelyezkedése miatt a lovagokat képtelenség hátba szúrni.",
+            "title": "Különleges előny II.",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "Az Uwel-paplovag induló képzettségei 1. Tapasztalati szinten az alap paplovagnál feltüntetetteken kívül:",
+            "title": "Uwel-paplovag induló képzettségei",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "table",
+            "text": "",
+            "title": "",
+            "headers": [
+                "Képzettség",
+                "Fok"
+            ],
+            "rows": [
+                [
+                    "Térképészet",
+                    "2. fok"
+                ],
+                [
+                    "Jog/törvénykezés",
+                    "2. fok"
+                ],
+                [
+                    "Pusztítás",
+                    "2. fok"
+                ],
+                [
+                    "Számtan/mértan",
+                    "2. fok"
+                ],
+                [
+                    "Élettan",
+                    "2. fok"
+                ]
+            ]
+        },
+        {
+            "type": "rule",
+            "text": "Az Uwel-paplovag képzettségei, melyeket rendjétől az Oktatás képzettség 4. foka által nyújtott előnnyel tanulhat: Pusztítás, Jog/törvénykezés.",
+            "title": "Uwel-paplovag tanulható képzettségek",
+            "headers": [],
+            "rows": []
+        }
+    ]
+}

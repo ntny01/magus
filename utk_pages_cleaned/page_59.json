@@ -1,0 +1,64 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": false,
+    "section_title": "",
+    "content_blocks": [
+        {
+            "type": "paragraph",
+            "text": "hihetetlennek tűnik az a feltevés, miszerint van egy rejtélyes legfőbb vezető, a Quassom – azaz Árnyékúr –, aki valóban parancsol az összes klánnak."
+        },
+        {
+            "type": "paragraph",
+            "text": "A rendek és szekták terjeszkedése, széthullása és elszaporodása miatt valószínűleg senki sem tudja egészen pontosan, hogy hány Iker – vagy magát Ikernek valló – fejvadász tevékenykedik szerte Észak-Yneven. Az egyes csoportjaikat főleg azt különbözteti meg egymástól, hogy melyik Ikrek tisztelik esküszelemükként. A klán legősibb, legtekintélyesebb ágai – ideértve magát a Quassomot – Ilho-mantarira, a Biztos Kéz Hölgyre tesznek fogadalmat."
+        },
+        {
+            "type": "paragraph",
+            "text": "Az Ikrek tevékenységi területe ritkán terjed ki Toron határain kívülre. A birodalom elvont eszméjéhez töretlen hűség fűzi őket. Soha nem vállalnak olyan feladatot, ami Toron érdekeit sértené; ha valami eszement mégis efféle kéréssel keresné meg őket, azt anélkül is örömest felkoncolják, hogy bárki fizetne érte. Az uralkodóháznak és a Hatalmasoknak minden szekta feltétel nélkül engedelmeskedik. Ha egy Iker a birodalmon kívül tevékenykedik, szinte biztosra vehető, hogy az ő küldetésükben jár; ilyen megbízatást ugyanis senki mástól nem fogadnak el."
+        },
+        {
+            "type": "paragraph",
+            "text": "A pyarroni felfogás szerinti erkölcsök és emberség mit sem jelentenek nekik, ám ettől még egyáltalán nem nevezhetők elvtelennek, sőt – híresek rendíthetetlen kötelességtudatukról. Minden Iker már kiképzése korai szakaszában megtanul bánni a lagoss-szal és a pugoss-szal, de külországba ritkán viszik magukkal őket, nehogy árulójukká váljanak. Az Ikrek legjelesebbjei beavatást nyerhetnek a klán féltve őrzött, titkos varázshagyományaiba, a Quarsba, azaz Árnymágiába. Ezek a kiválasztottak rendkívül kevesen vannak, csupa tapasztalt és tekintélyes vadász, még a szektavezérek közül sem valamennyien tartoznak ebbe a szűk körbe – ahonnan egyébként a Boszorkányurak a legkiválóbb ügynökeiket válogatják."
+        },
+        {
+            "type": "paragraph",
+            "text": "Az Ikrek másik különlegessége, hogy viszonylag gyakran fogadnak a soraikba külhoni ifjakat, általában olyanokat, kiknek se kutyája, se macskája, sérült formálható emberanyagot, kikből saját akaratuk szerint kovácsolhatnak ellenfeleik szívének szegezett tőrt, kiket hűségük csupán a klánjukhoz köt, s értelmet is csak ez ad létezésüknek."
+        },
+        {
+            "type": "paragraph",
+            "text": "A klántól függetlenül tevékenykedő Ikrek mindannyian renegátok, s mint ilyenek, űzött vadak. A szervezet hírhedt jelmondatát tekintve – sohasem bocsájtunk, sohasem felejtünk – még akkor sem számíthatnak hosszú életre, ha Ynev legtávolabbi zugába bujdokolnak volt testvéreik elől. Olyan egyetlenegy sem akad közöttük, akit beavatattak volna a Quars titkaiba: erre a megtiszteltetésre csak olyan vadászok méltók, akik hamarabb vágynak ki a tulajdon szemüket, semhogy árulóvá váljanak."
+        },
+        {
+            "type": "paragraph",
+            "text": "Az Ikrek fejvadászainak különleges képességei"
+        },
+        {
+            "type": "paragraph",
+            "text": "I. Az Ikrek tagjai a Boszorkányurak jóvoltából több különös mágikus eszközzel is bírnak, ezek legismertebbike, melynek riasztó híre már a külvilágba is eljutott: a Fürkész. Ez az alig tenyérnyi önyrúnákkal borított rézlap igen veszedelmes eszköz. Működési elvét már sokan igyekeztek észak nagy uralkodói közül is megfejteni mindezidáig hiába. Csupán két dolog bizonyos: a Fürkész a Boszorkányurak csinálmánya, rajtuk kívül senkinek sem sikerült még hasonlót sem készíteni, az eszköz a szimpatikus mágia elvén működik, méghozzá igen nagy erősítéssel (5E). A Fürkész, ha megfelelően kezelik – ezt 5. Tsz.-től oktatják a klánok tagjainak – képes bármely az illetővel szimpatikus viszonyban lévő tárgy, vér, körömvirágdarabka stb. segítségével meghatározni a célpont irányát, és 100 ynevi mérföldön belül távolságát is."
+        },
+        {
+            "type": "paragraph",
+            "text": "Az eszközt nem mindenki megkapja az Ikrek szervezetének tagjai 5. Tsz.-en."
+        },
+        {
+            "type": "paragraph",
+            "text": "II. Az Ikrek legmagasabb rangú tagjai (10. Tsz felett) megfelelő tanulás után, melyet leghamarabb 8. Tsz.-en kezdhetnek el beavatást nyerhetnek a Quars, az Árnymágia rejtelmeibe. Ez annyit jelent, hogy a kiszemelt fejvadász legalább 3. fokával, azaz 8. Tsz.-től kezdve és elkezdik oktatni Ilho-Mantarit (azaz Morgena) vallására, megismerheti úrnője aspektusait stb. Majd, ha méltónak bizonyul 10. Tsz.-en elvégzik a Kötés szertartását, mellyel az Úrnő figyelmébe ajánlják a halandót, aki innentől kezdve, ha bír a Vallásismeret (Morgena) képzettséggel legalább 3. fokával, akkor képes a lentebb leírt egyedi fohászok megidézésére Kegy pontjaiból, természetesen szent szimbólum nélkül, bár a Quars alkalmazóit az istennő megjelöli érintésével. Szemük bogara megfeketedik, majd az árnyvisszán lassan elborítja az egész szemgolyót; testükön pedig anyajegyszerű sötét foltok jelennek meg, melyek gyakran állnak össze növekedésük közepette az istennő szent jeleivé. Varázslás közben ezen jelekből szivárog elő az árnyék és a sötétség, melyet a kiválasztott uralma alá hajt."
+        },
+        {
+            "type": "rule",
+            "title": "Árnyak szólítása",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Árnyékjáték",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        }
+    ]
+}

@@ -1,0 +1,58 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": false,
+    "section_title": "",
+    "content_blocks": [
+        {
+            "type": "paragraph",
+            "text": "nak. A nemesség hasonlóképp ősi; a legfiatalabb família is jó három évezredre tudja visszavezetni családfáját."
+        },
+        {
+            "type": "paragraph",
+            "text": "Nem könnyű erioni – avagy godorai – nemességhez jutni. Ez a háborúk szörnyűségein túl gazdasági okokra vezethető vissza: miután Erionon kívül Godorának – s így az uralkodónak – nincs földbirtoka, osztani sem tud belőle hűbérséget, a jövedelmező kiváltságokat kapott, ezek képezik anyagi jólétének alapját. Ahhoz, hogy valaki véglegesen letelepedhessék a kalandozók városában, valamely nemes támogatását kell élveznie. A letelepedési engedélyt természetesen bármikor visszavonhatják, és a polgárok, hogy ez ne történjék meg, évente adót fizetnek (ajándékot adnak) az őket támogató nemesnek. Ugyancsak valamely nemes támogatása szükségeltetik ahhoz, hogy valaki üzleti tevékenységet folytasson, ezért a kegyért szintén ajándékokkal kell kedveskedni – minél nagyobb az üzlet, annál pompásabb ajándékkal."
+        },
+        {
+            "type": "paragraph",
+            "text": "A herceg a város kerületekre – mintegy tartományokra – osztotta, e kerületek (közel nyolcezer kerület van, némelyik nem nagyobb néhány háztömbnyinél) letelepedési és üzletnyitási jogát adományozta egy-egy nemesi családnak. A jog – így a jövedelemforrás – mindig az elsőszülött fiúra száll, a többi gyermek vagyontalan lesz, ezért, ha egy családban több fiúgyermek születik, ezek bizonyosan valamely egyetemre, vagy lovagi rendházba kerülnek. Leánygyermek nem örökölhet: ha nincs fiú utód, a kerület joga visszaszáll az uralkodóra. A jog át nem ruházható, hozományul sem adható, ezzel veszi elejét az udvar a hűbéres családok túlzott megerősödésének."
+        },
+        {
+            "type": "paragraph",
+            "text": "A hercegi família a kapupénzeket, a kikötői vámokat és a Palotanegyed bevételét magának tartotta fenn."
+        },
+        {
+            "type": "paragraph",
+            "text": "Minden nemesi család saját hadsereggel rendelkezik, s feladata, hogy kerületében a törvényeket betartassa. Ezek a törvények különlegesnek tűnhetnek egy külhoni számára, a maguk könyörtelen módján azonban igen logikusak. Miután Erion a kalandozók fogadására és ellátására rendezkedett be, a törvények döntő többsége nem vonatkozik rájuk, ezzel is hangsúlyozva lehetőségeiket. A város nem állandó lakói és látogatói egymás közt bármit tehetnek, az őrség nem lép közbe. Csak olyanok cselekszenek, ha erioni polgárok, netán a város kárára történik bűncselekmény. A bűncselekmény megítélése persze kényes dolog. A kerületek nemes urainak húsba vágó anyagi érdeke, hogy alattvalóik békében éljenek, üzleteik zavartalanul virágozzanak – ám ezt nem mindegyik őrség tudja szavatolni. Az előkelőbb negyedekben (ezek közé tartozik a Palotanegyed, a Kereskedőnegyed és a Szórakozónegyed), ahol magasak az adók, így több pénz fordítható a nemesi őrségekre, a közbiztonság jobb: e kerületek urai volt kalandozókból és veterán zsoldosokból szervezik csapataikat, akik a ma rendbontóival is képesek felvenni a harcot. A leghíresebb persze a hercegi őrség, mely drága pénzen fogadott külhoni fejvadászokból és gladiátorokból áll. A szegényebb negyedekben a bűnözésnek semmi nem szab határt. A kalandozó egész piacot foszthat le, ha kellően erősnek mutatja magát, hisz a kerület ura jobban félti őrségét, mint alattvalóit. Miután egy-egy család, egy-egy üzlet csekély jövedelmet jelent kincstárának, vesztesége sem számottevő. Ráadásul mindig akadnak betelepülni vágyók, akik az alacsony adókért cserébe vállalnak minden kockázatot."
+        },
+        {
+            "type": "paragraph",
+            "text": "Pedig rájuk, a köznapi emberekre más törvények vonatkoznak. A város urai szigorúan büntetik a csalást, a gyilkosságot és a lopást. Más kérdés, hogy a tolvajklánokkal nemigen tudnak mit kezdeni, így egyes kerületek urai megegyeznek egy-egy klán vezetőjével, vakságot fizetnek a klánnak, és ha azoknak mégis törvény előtt kell felelniük tetteikért, befolyásukat is latba vetik az érdekükben. Cserébe a klánok nem működnek az adott kerületben, sőt a szabadúszó tolvajok ellen is fellépnek. A kevésbé szerencsés kerületek nem élveznek efféle védelmet, őrségük egy-egy besúgó révén tudomást szereznek bűnügyekről, egész hadsereget küldenek ellenük: a kerület ura inkább kalandozókat, zsoldosokat bérel – hisz ez egyszeri kiadás –, semhogy megtorlatlanul hagyja a klánok pimaszságát. A tolvajok ezért mindenütt jól meggondolják, meddig merészkednek."
+        },
+        {
+            "type": "paragraph",
+            "text": "Erion negyedei"
+        },
+        {
+            "type": "paragraph",
+            "text": "A város nyolc negyedből áll, ezekben igen eltérő gazdasági viszonyokat találhatunk. Az árak változatosak, ám általánosságban leszögezhetjük: Erion Ynev legdrágább városai közé tartozik. Ha az utazó tudja, mit és hol keressen, persze jól is járhat, ha azonban nem ismeri a viszonyokat, egész vagyont költhet semmiért. Mondják, ami nem kapható Erionban, az nem létezik, s ugyanez áll a szolgáltatásokra is: bérgyilkost, bölcset, állandó vagy alkalmi szeretőt éppúgy találhat magának az ember, mint alkimistát, asztrológust, netán bérvarázslót – csak azt kell tudnia, hol keresse az illetőt."
+        },
+        {
+            "type": "section",
+            "title": "Palotanegyed",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "Erion legelegánsabb negyede; mindössze százkilenc kerületből áll. Külön fal veszi körül, ezért gyakran hívják Belsővárosnak is. Az uralkodócsaládon kívül itt él a nemesség kilencven százaléka, de szinte minden nagyobb rend saját palotát tart fenn benne. A Hercegi Palota kisebbfajta erődítmény, az írott történelem folyamán senki nem merte megpróbálni bevehetetlenségét. Jobbról a Főnixek Parkja, balról a Godorai Függőkert határolja. A Főnixek Parkja Ynev egyik csodájának számít különös növényzetével, melynek egy része nem is erről az Anyagi Síkról származik. Nevét arról a hat különféle főnixről kapta, melyeket Ediomad főhierarchiája adományozott békés szándéka jeléül a város akkori hercegének. A park nyilvános, a belépti díj azonban felettébb borsos: 120 arany személyenként, és a kiváltságosakat mindvégig őrség kíséri. A Godorai Függőkertet senki sem látogathatja – ide a város urainak sincs bejárásuk. Magas bronzkerítés veszi körül, ám ez nem akadályozza meg a behatolást. Odabent hatalmas alabástrompiramis emelkedik, ez rejti a tulajdonképpeni Függőkertet. Bejáratát mágia védi, melyet eleddig nem sikerült megtörni – noha pénzét és befolyását nem kímélve több herceg is megpróbálkozott vele, a bent rejlő tudás és kincs megszerzésének hiú reményében."
+        },
+        {
+            "type": "paragraph",
+            "text": "A Főnixek Parkja mellett található a Hercegi Könyvtár, melynek gyűjteménye a maga nemében egyedülállónak számít, különösen a történelmi munkák tekintetében. Említésre méltó nevezeteség Darton rendháza, e közel hetven méter magas, ötven méter átmérőjű torony, mely az egyik legújabb épület errefelé: Airun al Maremm és Álex con Arvioni emelte a Pyrarron szerinti 3687-ben. Falai közt száznál is több dartonita lovag tanyázik, s olykor kisebb szövetségeseket tesz a hercegnek. Mondják, nem véletlenül választotta a két nagymester ezt a helyet, hisz éppen szemben áll a Krad lovagrend székházával, és a Dreina-rendházzal. Mióta Pyrarron rendjének minősítette al Maremm rendjét, az ellenségeskedés állandó – igaz, nem csak tákban, inkább kellemetlenkedésekben és diplomáciai intrikákban nyilvánul meg. A torony voltaképp a dartoniták diadalát jelképezi, hisz Airun és követői – az erioni diplomácia harcmezején legalábbis – fényes győzelmet arattak Pyrarron felett."
+        },
+        {
+            "type": "paragraph",
+            "text": "A Palotanegyed kapujának közelében az Inkvizítorok Szövetségének székháza áll: tíz emelet magas gránitépület."
+        }
+    ]
+}

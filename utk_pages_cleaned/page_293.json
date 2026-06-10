@@ -1,0 +1,77 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": true,
+    "section_title": "Asztrális praktikák",
+    "content_blocks": [
+        {
+            "type": "paragraph",
+            "text": "az objektum az érzelmek célja. Az Asztrálmágiával el lehet rabolni egyes érzelmek célját, vagy célt lehet adni általános érzelmeknek. Egészen különleges hatások elérésére is lehetőség nyílik, hiszen az érzelem alapvető motiváció az emberek s más lények életében is. Aki tehát uralja mások érzelmeit, javarészt uralja cselekedeteit is..."
+        },
+        {
+            "type": "paragraph",
+            "text": "A boszorkányok mágikus tudásának mind minőségi, mind mennyiségi többsége az Asztrálmágia fejezetéhez sorolható. Olyan varázslatok is tartozhatnak ide, melyek a jelen felsorolásban más címszó alatt kerülnek megemlítésre, hiszen a mágia mellett a boszorkányok ismerik legjobban az emberi érzelmeket és indulatokat – még a varázslók sem érhetnek nyomukba, bármily nagyra tartsák is tudományukat. Ez megnyilvánul a varázslatok erősségében, bonyolultságában; nem egy hasonló varázslatot varázsló is képes lenne létrehozni, csak éppen jóval több energiával s kisebb erősséggel."
+        },
+        {
+            "type": "paragraph",
+            "text": "...Fontos tudni, hogy az Asztrálmágia csak azon lényekre hat, akik rendelkeznek Asztráltesttel. Az Asztráltest a lény érzelmeinek és indulatainak összessége, az a – fogalmazzunk így – forma, melyben mindez az Asztrális Síkon testet ölt. Az állatoktól fölfelé – őket is beleértve – minden normális, teljes, egészséges lény rendelkezik Asztráltesttel; ki satnyábbbal, ki fejlettebbel. Tény, hogy valakinek az Asztráltestére pillantva fel lehet ismerni az illető érzelmi életének gazdagságát – vagy éppen szegénységét –, s fogalom alkotható érzelmi kiegyensúlyozottságáról. Felfedezhetők ilyenkor az Asztrálmágiával végzett jelentős, vagy épp ügyetlen változtatások is, akárcsak a hegek az anyagi testen..."
+        },
+        {
+            "type": "rule",
+            "title": "Igaz Felelet",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Rovarfelhő",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "table",
+            "headers": [
+                "Terület",
+                "Esély"
+            ],
+            "rows": [
+                [
+                    "Forró klímájú, mocsaras, lápos, vizes terület:",
+                    "75%"
+                ],
+                [
+                    "Mocsaras terület:",
+                    "25%"
+                ],
+                [
+                    "Városi, lakott terület:",
+                    "5%"
+                ],
+                [
+                    "Erdő, száraz terület:",
+                    "2%"
+                ]
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Kígyóbűvölés",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Szemmelverés",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        }
+    ]
+}

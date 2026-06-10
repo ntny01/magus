@@ -1,0 +1,217 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": false,
+    "section_title": "",
+    "content_blocks": [
+        {
+            "type": "table",
+            "headers": [
+                "Gyakoriság",
+                "Mp/E"
+            ],
+            "rows": [
+                [
+                    "Naponként",
+                    "+3"
+                ],
+                [
+                    "Óránként",
+                    "+6"
+                ],
+                [
+                    "Körönként",
+                    "+12"
+                ],
+                [
+                    "Folyamatosan",
+                    "+24"
+                ]
+            ]
+        },
+        {
+            "type": "table",
+            "headers": [
+                "Mód",
+                "Költség"
+            ],
+            "rows": [
+                [
+                    "Varázsszó",
+                    "0"
+                ],
+                [
+                    "Érintés",
+                    "+5"
+                ],
+                [
+                    "Gondolati úton",
+                    "+10"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "Példa: Wilvariennathas, az elf varázsló egy Láthatatlanság köpenyt szeretne készíteni magának, amely folyamatosan kifejti hatását. Ebben az esetben készítenie kell a köpenyre egy 42 Mp-os Mágikus Aura varázsjelet (13 Mp + 24 Mp az 1 E-s Láthatatlanság varázslat miatt, melyet folyamatosan kisugározva szeretne tenni, illetve az érintés alapú aktiválás miatt + 5 Mp) kell felrónia. Ezen felül bele kell foglalni magát a varázslatot, aminek Mana pont költsége attól függ, mekkora tömeget, hány ynevi fontot szeretne a köpennyel láthatatlanná tenni (80 ynevi font esetén ez 16Mp). Tehát a köpeny teljes költsége 58Mp. A ruhadarab egyik gombjának érintésével aktiválható, viselőjét, aki felszerelésével együtt legfeljebb 80 ynevi font súlyú, rejti el a normál látással rendelkező lények elől."
+        },
+        {
+            "type": "rule",
+            "title": "Kisugárzó varázsjel",
+            "headers": [
+                "Sebzés",
+                "Mana pont"
+            ],
+            "rows": [
+                [
+                    "Lásd a leírást!",
+                    "20/30 + a varázslat"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A Végrehajtó Varázskör ikertestvére; hatása és működése is ahhoz hasonló. Két válfaja ismeretes: az elsőnél a beleírt varázslat arra hat, aki a varázsjelet megérinti, a másodiknál a varázsjel előtt karnyújtásnyi (1 ynevi láb) távolságon belül elhaladókra – válogatás nélkül. A hatás megnyilvánulása és az érintettek elleni hatékonysága a varázsjelbe írt varázslat természetétől és erősségétől függ. (Például a kicsapó Tűznyíl nem feltétlenül találja el az áldozatot.)"
+        },
+        {
+            "type": "paragraph",
+            "text": "Az első változat 20 Mana pont, plusz annyi, amennyibe a beleírt varázslat kerül, a második 10 Mp-tal több."
+        },
+        {
+            "type": "paragraph",
+            "text": "Az efféle varázsjel elkészítéséhez 5. fokú Rúnamágia képzettség szükséges."
+        },
+        {
+            "type": "rule",
+            "title": "Szimpátia varázsjel",
+            "headers": [
+                "Mana pont"
+            ],
+            "rows": [
+                [
+                    "20"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "Jelpár, mely tárgy-tárgy szimpátiát hoz létre két tárgy között, melyekre írják őket. Ha bármelyik rajzolat megsérül, a szimpátia azonnal megszűnik."
+        },
+        {
+            "type": "rule",
+            "title": "Kémszem varázsjel",
+            "headers": [
+                "Mana pont"
+            ],
+            "rows": [
+                [
+                    "Lásd a leírást!"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "Jelpár, amely egymással szimpátiaviszonyban álló varázsjelből és bélyegből áll. Az első bárhol, bármilyen tárgyon elhelyezhető, míg a második arra a személyre írandó, aki a varázsjellel látni fog."
+        },
+        {
+            "type": "paragraph",
+            "text": "A bélyeg viselője – ha akarja – képes a varázsjellel úgy látni, mintha az a saját szeme lenne. Ilyenkor saját szemével természetesen nem lát. Ha valaki úgy rajzolja fel a bélyeget, hogy az egyszerre több varázsjellel is kapcsolatban áll, tetszése szerint válogathat azok között, egyikről a másikra váltva egymás után több helyszínt is szemmel tart hat. Fontos megjegyezni, hogy a Kémszem nem forgatható, azaz egyetlen, meghatározott irányba mered. Forgatásáról, mozgatásáról más varázslattal, netán kahrei mechanikával szükséges gondoskodni."
+        },
+        {
+            "type": "paragraph",
+            "text": "A rajzolat felírásának Mp-igénye a bélyeg és a varázsjel maximális távolságától függ. Ha ennél távolabb kerülnek egymástól, a szimpátiaviszony szünetel, így a Kémszem ideiglenesen megvakul, s csak akkor használható újból, ha ismét a hatótávba kerül."
+        },
+        {
+            "type": "table",
+            "headers": [
+                "Hatótáv",
+                "Mp-igény"
+            ],
+            "rows": [
+                [
+                    "0-20 láb",
+                    "55 Mp"
+                ],
+                [
+                    "20-40 láb",
+                    "60 Mp"
+                ],
+                [
+                    "40-100 láb",
+                    "65 Mp"
+                ],
+                [
+                    "100-1000 láb",
+                    "70 Mp"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "Ennél nagyobb távolságra nem alkalmazható."
+        },
+        {
+            "type": "paragraph",
+            "text": "A fent feltüntetett Mana pontok a teljes jelpárra vonatkoznak. Több varázsjel egy bélyeghez csatlakoztatása esetén a bélyeget is minden alkalommal újra kell rajzolni, bár vonalai tökéletesen fedhetik a korábban felírt bélyegeket."
+        },
+        {
+            "type": "paragraph",
+            "text": "A Kémszem addig működőképes, ameddig mindkét rajzoláta töretlen."
+        },
+        {
+            "type": "rule",
+            "title": "Térgát varázsjel",
+            "headers": [
+                "Mana pont"
+            ],
+            "rows": [
+                [
+                    "1 Mp/E/1 ynevi láb sugár"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A Térgát Varázsjel Ynev várainak, palotáinak, erősségeinek mindennapos kelléke, a rúnatornyok leggyakoribb jele. Adott területen belül gátat szab minden TérMágiának: a területről és a területre Teleportálni, Távolbahatni, Térkaput nyitni lehetetlen – hacsak a TérMágia Erőssége (E) meg nem haladja a Varázsjelét."
+        },
+        {
+            "type": "paragraph",
+            "text": "A Teleport Erőssége akkor számít 1 E-nek, amikor a varázsló az utazó tárgy vagy személy teljes súlyának megfelelő Mana pontot fordít a varázslat létrehozására. Ezen Összérték megduplázásával az Erősség is megkétszerezhető, megtriplázásával pedig megháromszorozható."
+        },
+        {
+            "type": "paragraph",
+            "text": "A Térkapu Erőssége alapesetben (60 Mp) 1 E, ami további 60 Mana ponttal 2 E-re növelhető."
+        },
+        {
+            "type": "paragraph",
+            "text": "A Távolbahatás Erőssége a hozzáfűzött legerősebb (legnagyobb E) mozaik Erősségével azonos."
+        },
+        {
+            "type": "paragraph",
+            "text": "A Szimpatikus Mágián alapuló varázslatokat a Varázsjel nem rekeszti ki."
+        },
+        {
+            "type": "paragraph",
+            "text": "A Térgát Varázsjel gömbterületen fejti ki gátló hatását, melynek középpontja minden esetben maga a jel. Az érintett területen a gátló hatás mindenütt azonos Erősséggel érvényesül, míg a gömb határán kívül azonnal megszűnik. A védett gömb sugarát a Varázsjel felírásakor kell meghatározni, ez befolyásolja a rajzolás Mana pont igényét. Minden 1 ynevi lábnyi sugár 1 Mana pontba kerül, azaz a 20 lábnyi sugár 20Mp-ba, az 50 lábnyi sugár 50Mp-ba. Ekkor az adott területen a Térgát Erőssége 1 E. Az Erősség minden ezenfelüli (a sugarat nem növelő) Mana pont befektetésével 1 E-vel növelhető. Azaz 20 lábnyi sugár esetén 20Mp-ért az Erősség 1 E, 39Mp-ért 20 E, 50 Mana pontért 31 E; míg 5 lábnyi sugárnál 39 Mana pontért 35 E, 50-ért pedig 46 E."
+        },
+        {
+            "type": "paragraph",
+            "text": "Abban az esetben, ha a területre több Térgát Varázsjel is hat egyszerre, akkor csakis a nagyobb erősítésű jel hatása érvényesül."
+        },
+        {
+            "type": "rule",
+            "title": "Tércsapda varázsjel",
+            "headers": [
+                "Mana pont"
+            ],
+            "rows": [
+                [
+                    "2 Mp/1 E/1 lábnyi sugár"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A Tércsapda a Térgát Varázsjel különleges változata. Hatóterületén nem szab gátat a TérMágiának, hanem a varázsjelhez vonzza. Minden TérMágikus hatás a varázsjelen, ill. annak közvetlen szomszédságában jön létre. A Térkapu oda nyílik – hiába akarta létrehozója máshova nyitni –, a Teleportált"
+        }
+    ]
+}

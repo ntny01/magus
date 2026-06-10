@@ -1,0 +1,64 @@
+{
+    "is_new_chapter": true,
+    "chapter_title": "Dorani varázsló",
+    "is_new_section": false,
+    "section_title": "",
+    "content_blocks": [
+        {
+            "type": "paragraph",
+            "text": "Minden bot tulajdonosának természetét, jellemét, tulajdonságait tükrözi. Ezáltal minden pyarroni varázslóbot más, mindössze a hozzájuk hasonló, mindegyik azonos magasságú a tulajdonosával."
+        },
+        {
+            "type": "paragraph",
+            "text": "A pyarroni varázslóbot mágikus tárgynak számít, holott nem sugároz mágiát. Tulajdonosa, de csak és kizárólag ő, a Természetes Anyag Mágiájával is képes hatni rá, mintha az 1. csoportba tartozó anyag lenne. Ennek ellenére a botot semmilyen fizikai hatás nem pusztíthatja el, legyen akár természetes, akár mágikus. A varázsló Személyes Aurájának elválaszthatatlan részét képezi, és védelmét élvezi, bármilyen messzire ragadják is tőle."
+        },
+        {
+            "type": "paragraph",
+            "text": "A Pyarroni Rendben a varázslóbotnak jelképes jelentőséget tulajdonítanak. Nézetük szerint a bot jelképezi az egyenes tartást, a nyílt tekintetet, a hajlíthatatlan erkölcsöket. A bot a varázsló tudásának szimbolikus tengelye, lelki tartásának eszményképe. Mint mágikus tárgy, megtestesíti az Anyagi Síkon a varázsló mágikus hatalmát és annak fókuszát, a Zónát."
+        },
+        {
+            "type": "rule",
+            "text": "A Zóna a varázsló mágikus hatalmának kisugárzása a közvetlen környezetére; a pyarroni bot ezt fókuszálja, erősíti. A varázsló elméje mellett egyfajta második csatornát nyit a mágikus energiáknak. Ennek következtében a varázsló hatalma – mágikus értelemben – megsűrűsödik, megerősödik saját Zónáján belül. Mivel a bot nem önálló lény és nem is a varázsló második anyagi teste, mindössze hatalmának (Zónájának) jelképe, ereje is a varázslótól függ. A bot hatalmának erőssége (E), minden esetben megegyezik a varázsló Tapasztalati szintjének harmadával (felfelé kerekítve).",
+            "title": "A bot ereje"
+        },
+        {
+            "type": "rule",
+            "text": "Ha a bot a varázsló Zónájában van, a varázsló akarata – mágia tekintetében – fokozottan érvényesül a Zónában. Úgy is megfogalmazható, hogy azon belül ő az úr. Ezen a területen belül minden varázslat, mely akarata ellen való, csak annyival kisebb erősséggel (E) jön létre, amennyi a bot erőssége (azaz a varázsló Tapasztalati szintjének harmada). A hatás úgy működik, miként a Védő Varázskör, a Zónán belül minden mágikus hatás kisebb erősséggel – vagy 1 E alatt egyáltalán nem – jön létre. Ez elsősorban a Térmágiáknak és Szimpatikus mágiáknak vet gátat, mivel azok erőssége általában alacsony.",
+            "title": "Zóna védőhatása"
+        },
+        {
+            "type": "rule",
+            "text": "A felerősödő Zóna minden varázslatot legyengít – bármely iskolába is tartozik az azt létrehozó varázstudó –, amennyiben a varázslat hatása besorolható a Védő Varázskörnél felsorolt mágikus hatások közé. A Védő Varázskörrel ellentétben ez a védőhatás nem csak a kívülről érkező varázslatok ellen véd, hanem a Zónán belül tartózkodó varázshasználók hatása ellen is. A védelemre nem szükséges összpontosítani, az folyamatosan és magától létezik mindaddig, míg a bot a varázsló Zónáján belül található. Kivételt csak a varázsló saját varázslatai képeznek, és azon varázslatok, melyek létrejöttébe beleegyezik.",
+            "title": "Zóna védőhatása"
+        },
+        {
+            "type": "rule",
+            "text": "A mágikus hatalom mellett a bot a Rendhez tartozás jelképe. Ha a varázsló kívánja, a bot mágikus úton – hasonlóan a papok Hatalom szava litániájához – a Zónán belül mindenki tudatosítja, hogy a bot felmutatója a Rend varázslója. Az illetők semmilyen módon nem zárhatják ki tudatukból a felismerést, birtokába kerülnek az említett tényeknek, és tisztában lesznek a varázsló Jellemével is. Ezek után maguk dönthetnek, miként reagálnak, támogatják vagy ellen fordulnak, esetleg megrémülnek tőle. A Rend tagjai pedig egyértelműen felismerik a bot felmutatóját, sőt Tapasztalati szintjét és nevét is megtudják. Számukra a bot hatalma nem hamisítható.",
+            "title": "A Rend jelképe"
+        },
+        {
+            "type": "flavor_text",
+            "text": "„...Nem szólt, csak elmosolyodott, mielőtt folytatta volna sajátos ténykedését. Jókorra kört rajzolt maga köré a porba, majd kiegészítette egy pentagrammával. Öt csúcsába egy-egy ó-kyr rúna került, a közepébe egy megidéző formula Abdul al-Sahred Necrografia című könyvéből. A magasabbik domb tetején jártak már a lovasok, mire az elf intett egyet a dorani Szarvtornyot jelképező botjával – s a pentagramma csúcsaiba írt rúnák kékes fénnyel nyomban felizzottak. Alír csúfondáros ajakbiggyesztéssel kántálásba kezdett. Készen állt. A lovasok tempósan közeledtek. Gorduin e pillanatokban már-már szánta őket. Ezeknek a nomádoknak sosem volt alkalmuk megtanulni a legalapvetőbb szabályt: Soha, semmilyen körülmények között ne támadj magányos, netán kis csoportban utazó kalandozókra! Ha pedig mégis úgy hozza a sors, hogy meg kell tenned... Nos, akkor készülj fel a legrosszabbra! A pyarroni mágiájának természetével nem volt tisztában, a nekromanta körül formáló aura azonban életenergiával manipuláló varázslatra vallott, s ez megborzongatta. Az elf nem csupán életüktől képes megfosztani áldozatait, hanem még a halál nyugalmától is! A kántálás egyre erősödött. Alír előhúzta a minap zsákmányolt kézfejet – kékes derengés övezte, akár magát a zöldköpenyest...”"
+        },
+        {
+            "type": "flavor_text",
+            "text": "Wayne Chapman: A halál havában"
+        },
+        {
+            "type": "paragraph",
+            "text": "Az Arowin-hegy híres városállamát Pyarron előtt 1214-ben alapította három mágus, Vinidius Artemora, Quirin Dan Jeir és Elorio Calendil. Céljuk világszerte egyedülálló varázslóközpont létrehozása volt. Mindhárman a mágia egy-egy alapformáját vitték tökélyre, eleinte e három formát (a sík- és térmágiát, az időmágiát és a megidézés tanait) oktatták az akkor még kicsiny településen. A tanítványok számának rohamos emelkedésével Doran előbb városkává, majd nagyvárossá növekedett. Pyarron előtt 462-ben a dorani Varázslótanács úgy döntött, hogy a várost kétfelé osztja. Létrehozták és elkülönítették a Belsővárost, mely a mágusiskolák központjait, a mesterek, a tanítók és tanítványok lakhelyét foglalta magába. A Külsővárosba szorult a polgárság, s itt emelt fellegvárat a Vigyázók Rendje is – e rend a dorani Varázslótanács fanatikus harcos-lovagokat tömörítő csoportja, feladata a mágusok politikájának támogatása világi eszközökkel."
+        },
+        {
+            "type": "paragraph",
+            "text": "Pyarron szerint 348-ban felépítették a Szarvtornyot, ezzel hivatalosan is befogadták a nekromanciát – a negyedik mágikus alapformát – Doran falai közé. Az évszázadok során a varázslóváros befolyása folyvást növekedett, végül Észak-Ynev egyik meghatározó hatalmi tényezőjévé vált. P.sz. 1457-ben csatlakozott az Északi Szövetséghez, ily módon hangsúlyozta szembenállását Toronnal és a kyr hagyományok felélesztésével. A Pyarron szerinti harmadik évezred végére nem maradt Észak-Ynevnek olyan országa vagy városállama, amely teljesen függetlennek mondhatná magát Doran varázslóitól."
+        },
+        {
+            "type": "paragraph",
+            "text": "A városállam Belsővárosa lassanként tökéletesen elzárkózott, és mára állandó lakóin kívül senkinek sem lehet maradása falai között. A varázslóállam urai mind titokzatosabbá válnak, újabban kilétüket is homály fedi."
+        },
+        {
+            "type": "paragraph",
+            "text": "A városban minden évben csupán egy tucatnyi új tanítványt fogadnak, kiket meghallgatásokon választanak ki a Sigranomoi Egyetemen tanuló ifjak közül. A meghallgatásra minden évben a nyári napforduló éjjelén, a nyár legrövidebb éjszakáján kerül sor a Belsővárosban. A megmérettetésre csakis az ifjak engedtetnek a falak közé, s az ott próbákról és"
+        }
+    ]
+}

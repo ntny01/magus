@@ -1,0 +1,105 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": true,
+    "section_title": "Harcmódor",
+    "content_blocks": [
+        {
+            "type": "paragraph",
+            "text": "amik nem követelnek meg eltérő cselekvést alkalmazójuktól pl. Harcművészet, Pusztítás, stb.)."
+        },
+        {
+            "type": "paragraph",
+            "text": "Az itt fel nem sorolt cselekedetek melyik kategóriába esnek, s ezeket az adott szituációban a játék nyelvére lefordítva hogyan lehet alkalmazni, arról mindig a KM joga dönteni."
+        },
+        {
+            "type": "rule",
+            "title": "Harcmódor bevezető",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "Méretkategóriák:"
+        },
+        {
+            "type": "table",
+            "headers": [
+                "Sorszám",
+                "Kategória"
+            ],
+            "rows": [
+                [
+                    "1.",
+                    "Pusztakéz vagy ökölfegyverek"
+                ],
+                [
+                    "2.",
+                    "Tőr jellegű fegyverek"
+                ],
+                [
+                    "3.",
+                    "Egykezes fegyverek"
+                ],
+                [
+                    "4.",
+                    "Nehézfegyverek"
+                ],
+                [
+                    "5.",
+                    "Nyeles fegyverek"
+                ]
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Fegyverek méretkategória hatékonysága",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Harcértékek bevezető",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "A Harcérték módosító (HM) leírása",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Kezdeményező érték (KÉ) leírása",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Támadó érték (TÉ) leírása",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Védő érték (VÉ) leírása",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        }
+    ]
+}

@@ -1,0 +1,24 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": null,
+    "is_new_section": false,
+    "section_title": null,
+    "content_blocks": [
+        {
+            "type": "paragraph",
+            "text": "az elmenetel lehetősége: hadijelvényeik alatt nincs más mérce, csakis a rátermettség."
+        },
+        {
+            "type": "paragraph",
+            "text": "A Ynevre érkezésük óta eltelt évezredek alatt Tarinon kívül is jöttek létre törpe kolóniák. Sok ilyen kolónia lakossága renegátokból áll; a leghírhedtebb ezek közül a Bahúb törzs, amely megtagadta ősi istenét, Bul Ruurigot, és a Doardon-hegység bércein hozott létre új országot. Ősi isteneik helyett Zimahot, a Szökevényt tisztelik, említésük a legkisebb bűn. Egy renegát klán Ifinben lelt menedéket; vezetője, Bofkar mester mélyen helytelenítette a törpék részvallását a zászlóháborúkban, és tiltakozását kifejezendő, csupaszra borotválta az állát, majd klánjával együtt elhagyta Tarint."
+        },
+        {
+            "type": "paragraph",
+            "text": "A Tarinon kívüli törpék sok esetben elhagyják népük szilárd erkölcsiségét és homálytestvérükre hallgatnak, ki ott él minden törpe lelke mélyén. Mondják nem ritka köztük az, kik tolvajlásból szerzi meg betevőjét."
+        },
+        {
+            "type": "paragraph",
+            "text": "A törpék átlagos testmagassága 120-150 ynevi hüvelyk, alkatuk tömzszerű, nagy erőkifejezésre képesek, kitartásuk párját ritkítja. Arcuk széles; gyakorta – de nem mindig – szakáll ékíti. Szemük sötét árnyalatú, az egészen ősi, beriqueli vérvonal képviselőiéi azonban gleccserkék is lehetnek. Rendszerint csak egyszer házasodnak: a hűség fogalmának, az emberektől eltérő módon, csak egy változatát, a sírig tartót ismerik."
+        }
+    ]
+}

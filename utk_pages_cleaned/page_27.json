@@ -1,0 +1,280 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": null,
+    "is_new_section": false,
+    "section_title": null,
+    "content_blocks": [
+        {
+            "type": "paragraph",
+            "text": "Szertartásaik és szokásaik élnek a kontinens bármely szegletében is, majd húsz évezred történelmükből származnak, így megtalálhatók közöttük az embernép nagy barátai, igazi humánus gondolkodók, lánglelkű lovagok és démonimádó elfajzottak is egyaránt."
+        },
+        {
+            "type": "paragraph",
+            "text": "Életvitelük e szerint roppant eltérő lehet, azonban mindegyikük mérlegelő, tervezgetésre hajlamos, elemző személyiség. Az már csak irányultságuktól függ, hogy a rombolás vagy az építés oldalán vetik-e latba képességeiket."
+        },
+        {
+            "type": "paragraph",
+            "text": "Igaz, a nem kevert vérű családokat a vér tisztaságán munkálkodó közeli rokonházasságok miatt kialakult szellemi és testi torzulások és különböző örökletes nyavalyák és kórságok gyötrik, s egyesek szerint hatalmuk lassan leáldozóban van, azonban még mindig kitartóan ragaszkodnak hatalmukhoz."
+        },
+        {
+            "type": "paragraph",
+            "text": "Mindezen nehézségek és buktatók ellenére is a kyrek alkalmazkodtak és túlélték, három kor nagy viharai közepette is, és mind a mai napig megőrizték vezető szerepüket. Hiszen, nem csak Toron nemesei, elendorai és famorai közt találunk tiszta vérű kyreket Yneven. Godora nemesi családjainak jelentős része mai napig kyr származásával büszkélkedik, és valóban akadnak köztük olyan Házak, melyek esetében valós az az állítás. Észak államai közül Erigow nemesei őrizték meg talán leginkább vérük tisztaságát; a hercegség legrégebbi családjainak családfája egészen Kyráig nyúlik vissza. A Délvidéken a Hat Város Szövetségének ősibb családjai között, illetve Ordan tűzvarázslóinak, magasabb rangú nemeseinek soraiban fedezhetünk fel kyr származékokat. Egyes történetírók között szilárdan tartja magát azon elképzelés is, hogy esetlegesen Krán hegyeink túlra is jutott a kyr menekültek áradatából a Birodalom bukásakor. Ezt, és ezen csoportok túlélését bizonyítja a nem is oly rég Krád-magiában ismertté a pyarróni tudós körökben."
+        },
+        {
+            "type": "paragraph",
+            "text": "A játékos egyaránt indíthat tiszta vérű és kevert származású karaktert, melynek legalább egyik szülője tiszta vérű kyr vagy mindkettő kevert vérű származék. A külső jegyek ettől függően változhatnak, azonban belső szellemi másságuk és különleges képességeik minden esetben érvényre jutnak."
+        },
+        {
+            "type": "rule",
+            "title": "Különleges képességeik",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "title": "Kasztok és fajok:",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "table",
+            "headers": [
+                "Klán, Rend, iskola",
+                "Ember",
+                "Elf",
+                "Félelf",
+                "Udvari ork",
+                "Törpe",
+                "Kyr származék"
+            ],
+            "rows": [
+                [
+                    "Harcosok",
+                    "I",
+                    "I",
+                    "I",
+                    "I",
+                    "I",
+                    "I"
+                ],
+                [
+                    "Lovagok",
+                    "I",
+                    "N",
+                    "I",
+                    "N",
+                    "N",
+                    "I"
+                ],
+                [
+                    "Fejvadászok",
+                    "I",
+                    "N",
+                    "I",
+                    "N",
+                    "N",
+                    "I"
+                ],
+                [
+                    "Tolvajok",
+                    "I",
+                    "N",
+                    "I",
+                    "N",
+                    "N",
+                    "I"
+                ],
+                [
+                    "Bárdok",
+                    "I",
+                    "N",
+                    "I",
+                    "N",
+                    "N",
+                    "I"
+                ],
+                [
+                    "Papok",
+                    "I",
+                    "I",
+                    "I",
+                    "I",
+                    "I",
+                    "I"
+                ],
+                [
+                    "Paplovagok",
+                    "I",
+                    "N",
+                    "I",
+                    "N",
+                    "N",
+                    "I"
+                ],
+                [
+                    "Harcművészek",
+                    "I",
+                    "N",
+                    "I",
+                    "N",
+                    "N",
+                    "I"
+                ],
+                [
+                    "Bosorkányok",
+                    "I",
+                    "N",
+                    "N",
+                    "N",
+                    "N",
+                    "I"
+                ],
+                [
+                    "Boszorkánymesterek",
+                    "I",
+                    "N",
+                    "N",
+                    "N",
+                    "N",
+                    "I"
+                ],
+                [
+                    "Tűzvarázslók",
+                    "I",
+                    "N",
+                    "N",
+                    "N",
+                    "N",
+                    "I"
+                ],
+                [
+                    "Varázslók",
+                    "I",
+                    "I",
+                    "I",
+                    "I",
+                    "I",
+                    "I"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "I = az adott fajba tartozó lény lehet az adott klán, rend vagy iskola tagja"
+        },
+        {
+            "type": "paragraph",
+            "text": "N = az adott fajba tartozó lény nem lehet az adott klán, rend, vagy iskola tagja"
+        },
+        {
+            "type": "rule",
+            "title": "A Fajok Tulajdonságainak maximális értéke:",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "table",
+            "headers": [
+                "Tulajdonság",
+                "Ember",
+                "Elf",
+                "Félelf",
+                "Udvari ork",
+                "Törpe",
+                "Kyr származék"
+            ],
+            "rows": [
+                [
+                    "Erő",
+                    "18",
+                    "16",
+                    "17",
+                    "20",
+                    "19",
+                    "17"
+                ],
+                [
+                    "Gyorsaság",
+                    "18",
+                    "20",
+                    "19",
+                    "18",
+                    "18",
+                    "18"
+                ],
+                [
+                    "Ügyesség",
+                    "18",
+                    "18",
+                    "18",
+                    "18",
+                    "18",
+                    "18"
+                ],
+                [
+                    "Állóképesség",
+                    "18",
+                    "16",
+                    "17",
+                    "20",
+                    "19",
+                    "17"
+                ],
+                [
+                    "Egészség",
+                    "18",
+                    "18",
+                    "18",
+                    "20",
+                    "19",
+                    "17"
+                ],
+                [
+                    "Karizma",
+                    "18",
+                    "20",
+                    "19",
+                    "16",
+                    "17",
+                    "19"
+                ],
+                [
+                    "Intelligencia",
+                    "18",
+                    "18",
+                    "18",
+                    "16",
+                    "17",
+                    "19"
+                ],
+                [
+                    "Akaraterő",
+                    "18",
+                    "18",
+                    "18",
+                    "16",
+                    "17",
+                    "18"
+                ],
+                [
+                    "Asztrál",
+                    "18",
+                    "18",
+                    "18",
+                    "16",
+                    "17",
+                    "18"
+                ],
+                [
+                    "Érzékelés",
+                    "18",
+                    "20",
+                    "19",
+                    "18",
+                    "18",
+                    "18"
+                ]
+            ]
+        }
+    ]
+}

@@ -1,0 +1,169 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": true,
+    "section_title": "A képzettség foka",
+    "content_blocks": [
+        {
+            "type": "paragraph",
+            "text": "Képzettségeknek nevezzük azokat az ismereteket, amelyek nem a karakter veleszületett adottságai, hanem hosszas tanulással elsajátított tudása, képességei. A karakter jellemzőjén alapján is személyiségen kívül leginkább az eltérő képzettségek azok, amelyek megkülönböztetik egymástól az egyszerű harcost a bűvöktől, fejvadászt a harcművésztől vagy boszorkánymestert a varázslótól. A M.A.G.U.S. szabályrendszerében a játékos közel száz képzettség közül válogathat, hogy karakterét minél árnyaltabban, sokszínűbben alkothassa meg.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "Minden képzettségnél öt különböző tudásszintet különböztetünk meg, ezt egy 1-5-ig terjedő szám, a képzettség ismeretének foka mutatja meg.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "1. fok – Még csak futó, felszínes ismereteket jelent a képzettség terén. Nagy általánosságokban képes beszélni róla, gyakorlatban csak a legelemibb fogásokat tudja alkalmazni. A képzettség ezen foka műkedvelők, lelkes kontárok sajátja.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "2. fok – Ezen a szinten a karakter már megbízhatóan tudja alkalmazni a képzettség alapjait, de különösebb kunsztokra, kiemelkedő teljesítményre nem képes. A képzettség ezen foka leginkább az inasok, segédek, diákok sajátja.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "3. fok – Azt jelenti, hogy a karakter hivatásos szinten ért az adott képzettséghez, szükség esetén meg tudna élni belőle. Tudása biztos és átfogó, a keze alól kikerülő holmik minősége megfelel az elvárásoknak. Bár legtöbb ember rendelkezik 3-4 fokú képzettséggel, általában nem nagyon jutnak ennél a szintnél magasabbra.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "4. fok – A karakter megbecsült, elismert mestere szakmájának, tudásával, teljesítményével sehol nem vall szégyent. Észak tudós fői, a fejvadászrendek mestergyilkosai, a legkiválóbb bajvívók rendelkeznek a „mesterségükre” leginkább jellemző képzettség ezen szintjével.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "5. fok – Aki ilyen magas fokú ismeret birtokában van, az már ritkán talál komoly vetélytársra, méltó ellenfélre. Szinte mindig országosan ismert tudósok, művészek, hadvezérek, nemegyszer iskolaalapítók, feltalálók, nagymesterek.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "Százalékos képzettség",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "Akadnak azonban olyan képzettségek is, melyek ismeretének meghatározásában jóval finomabb skálát kell alkalmaznunk. Ezek hatékonyságának mértékét százalékban mérjük, s ezért Százalékos képzettségnek nevezzük.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "Minden karakter külön időráfordítás és tanulás nélkül is rendelkezik bizonyos eséllyel ezen képzettségek alkalmazására, még akkor is, ha soha nem tanulta azt senkitől. Ezt nevezzük százalékos alapértéknek, ami megegyezik a vonatkozó Tulajdonság értékével. (Például egy tolvaj egy két és fél láb magasan nyíló erkélyre akar feljutni, akkor Mászás próbát kell tennie. Tegyük fel, hogy nem fejlesztette ezt a képzettséget, így százalékos alapértéke megegyezik az Ügyességével, ami legyen mondjuk 16. Így tehát 16%-a van rá, hogy képes lesz felmászni. A KM ezt +35-tel módosítja, mivel a tolvajnál van mászóvas, ráadásul a fal kövei elég sok fogódzkodót kínál. A próbára tehát összesen 51%-a van.)",
+            "title": "Százalékos alapérték",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "A Százalékos képzettség használatának sikerét úgy döntjük el, hogy K100-al dobunk. Amennyiben a dobás eredménye kisebb vagy egyenlő mint a képzettség százalékértéke, úgy a próba sikerült. Ha a dobás értéke nagyobb, akkor a feladatot elrontottuk.",
+            "title": "Százalékos képzettség próba",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "A Százalékos képzettség fejlesztésénél alapesetben 1 Kp 3%-kal fejleszti a képzettség értékét (ami az Oktatás képzettség módosíthat), és hozzávetőleg 20% felel meg egy képzettségfoknak. Minden képzettségre legfeljebb 100% költhető, tehát a Százalékos képzettség maximális értéke 100, plusz a vonatkozó Tulajdonság értéke. E fölé egyetlen képzettség sem fejleszthető.",
+            "title": "Százalékos képzettség fejlesztése",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "A képzettségek elsajátíthatósága",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "A képzettségek elsajátítása nem pusztán akarat, hanem lehetőség kérdése is. Hiszen a tanulásra vágyó karakternek keresnie kell egy iskolát, ahol tanítják vagy egy mestert, vagy legalábbis egy, a témával foglalkozó könyvet. A különféle képzettségeket sokhelyütt oktatják, külön iskolák épültek e céllal Északon és Délen egyaránt. Ezek a tanításért cserébe vagy pénzt, vagy szolgálatot, netán hűséget várnak: jóakaratból, szívességből ritkán oktatnak.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "A magányos mesterek elsősorban érzelmi kötődés okán fogadják tanítványukká a jelentkezőket; esetleg azért, mert kiemelkedő tehetséget vélnek felfedezni benne az adott képzettség irányában. Ugyanakkor egy kalandozócsapaton belül gyakorta előfordul, hogy a karakterek egymástól is elsajátítanak bizonyos ismereteket.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "A képzettségeket a szerint csoportosítjuk, hogy mennyi veszélyességgel, mennyi belefektetett energiával jár az elsajátításuk. A M.A.G.U.S. képzettségeit ennek megfelelően négy nehézségi kategóriába sorolhatjuk:",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "I. A képzettség segítség nélkül, egyszerű gyakorlással elsajátítható. II. A képzettség valamiféle feltétel (gyakorlóterem, könyvtár stb.) megléte esetén, gyakorlással, oktató segítségére nélkül is tanulható. III. A képzettség a szükséges feltételek megléte esetén is csak oktató segítségével tanulható. IV. A képzettség csakis valamely nagyhírű rend, egyetem vagy híres oktató segítségével tanulható.",
+            "title": "Képzettség elsajátítási nehézségi kategóriák",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "A képzettségek tanulására vonatkozó szabályok:",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "Bármely megszerzett képzettség 4. foka az adott ismeret Tulajdonságkövetelményénél felsoroltak közül egy ponttal emeli a karakter egyik, a játékos által választott Tulajdonságát. Azonban a képzettség újbóli felvételével (pl. Fegyverhasználat) ugyanaz a Tulajdonság nem növelhető többé.",
+            "title": "Tulajdonság növelés képzettség 4. fokánál",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "Például, ha Villar cwa Khaitir hosszas tanulás és gyakorlás után elsajátítja a Fegyverforgatás képzettség (hosszúkard) 4. fokát, akkor növelheti 1 ponttal valamelyik szükséges, a Tulajdonságkövetelményénél felsorolt Erőjét, Gyorsaságát, vagy Ügyességét. Villar az Erő Tulajdonságot választja. Így, amikor a következő alkalommal valamely más fegyverrel sajátítja el a Fegyverforgatás képzettség negyedik fokát, akkor már nem növelheti az Erőjét, csak a többi felsorolt Tulajdonság közül választhat.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "Természetesen más típusú képzettség, pl. Pusztakezes harc képzettség 4. fokának elsajátításával ismét növelheti az Erőjét, ha ez a kívánsága.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "Tulajdonságkövetelmény",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "A képzettségnél felsorolt Tulajdonságok (ahol csak egy Tulajdonság van, ott egy) tíz feletti értéke el kell, hogy érje a megtanulni kívánt képzettség szintjét. Tehát egy 3. fokú képzettség tanulásához legalább 13-as vonatkozó Tulajdonságokkal kell bírnia a karakternek.",
+            "title": "Tulajdonságkövetelmény képzettségekhez",
+            "headers": [],
+            "rows": []
+        }
+    ]
+}

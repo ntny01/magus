@@ -1,0 +1,68 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": false,
+    "section_title": "",
+    "content_blocks": [
+        {
+            "type": "paragraph",
+            "text": "Az örvény sebzése ÉP-nként 1k6 Sp."
+        },
+        {
+            "type": "paragraph",
+            "text": "A boszorkány akcióját követően ájultan esik össze, hisz minden FP-jét felélte. Továbbá, a varázslat létrehozását követő 3 napig semmilyen mágiát nem használhat, s naponta legalább 12 órát kell pihennie."
+        },
+        {
+            "type": "rule",
+            "title": "Repülés",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Retesz",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Útkeresés",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "...a boszorkányok kevéssé ismerik az Ős- és Paraelemek idézésének, az Elemi Mágiának tudományát. Ugyanakkor mindig is erősen kötődtek a tűzhöz, a lángokhoz. Tűzmágiájuk tapasztalati úton szerzett tudásból táplálkozik – az Elemi Mágia mélyebb összefüggései rejtve maradnak majd mindegyikük előtt. Ne is tekintsünk hát tűzzel kapcsolatos varázsaikra úgy, mint az Elemi Mágia valamely elfajzott vetületére! Tekintsünk rájuk akként, ahogy ők: a pusztítás látványos és hatékony módozatai ezek..."
+        },
+        {
+            "type": "rule",
+            "title": "Tűzbogarak",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Tüzes Tekintet",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Tűzgejzír",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        }
+    ]
+}

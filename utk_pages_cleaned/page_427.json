@@ -1,0 +1,20 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": true,
+    "section_title": "Abaszisz",
+    "content_blocks": [
+        {
+            "type": "paragraph",
+            "text": "Népességet zömmel asziszok alkotják, a tenger-melléki városokban azonban toroniak, ervek, sőt gorvikiak is élnek. A közrendűek vásznat, a tehetősebbek selymet, brokátot hordanak. A testhez tapadó nadrág délvidéki bolondériája idefent nem terjedt el, és alapvetően idegenek Abaszisz népétől a kyr stílusjegyek. Ha hadba vonulnak, rendszerint vaskos bőrpáncélt öltenek, mert sem a védtelenséget, sem a nehéz páncélzatot nem szenvedhetik. Az árak átlagosak, az északon elfogadott normáknak megfelelő."
+        },
+        {
+            "type": "paragraph",
+            "text": "Abasziszban harcos-, gladiátor-, pap-, paplovag-, tolvaj-, boszorkányés boszorkánymester-képzés egyaránt folyik; mondják, az utóbbi három mesterség itt végzett képviselői kontinens szerte párujukat ritkítják. Az ország közbiztonsága változó, a nagyvárosokban pocsék, a tengermelléken elfogadható, egyes belső területeken – a többé-kevésbé nyíltan tevékenykedő romlásszekták miatt – csapnivaló."
+        },
+        {
+            "type": "paragraph",
+            "text": "A tenger mellékén Antoh, a síkvidéken és a hegyek lábánál Darton, Uwei és Dreina kultusza dívik, a gorviki diaszpóra itt letelepült képviselői Ranagolt imádják. A Pyarron szerinti második évezred eleje óta Tharr papjai is jelen vannak, és – főként a nagykirály birtokain – mind több szentélyben hirdetik a Háromfejű dicsőségét."
+        }
+    ]
+}

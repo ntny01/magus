@@ -1,0 +1,166 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": false,
+    "section_title": "",
+    "content_blocks": [
+        {
+            "type": "paragraph",
+            "text": "börtönzött evilági mágikus energiákat ragadja el, oszlatja szét, a túlvilágról idézett lények ellen éppen ezért a varázslat hatástalan. A varázslat minden E-je 1k6 Ép-nyit rombolást visz végbe az előholt létezését biztosító energiákban."
+        },
+        {
+            "type": "paragraph",
+            "text": "A mozaik megidézésekor a varázstudó baljából akár 20 ynevi lábnyi villámot vághat ki, körbefonva, beborítva a célpontot, felszabadítva annak energiáit. A villám CÉ-je 30."
+        },
+        {
+            "type": "rule",
+            "title": "Életerő átadása",
+            "headers": [
+                "Mana pont",
+                "Időtartam",
+                "Hatótáv",
+                "Varázslás ideje"
+            ],
+            "rows": [
+                [
+                    "2/E",
+                    "Végleges",
+                    "Érintés",
+                    "1 kör"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A varázstudó teremtményei életerejét a saját életereje vagy mások rovására növelheti, úgy, hogy a nyers életerőt sötét energiákká alakítva teremtményeibe plántálja. A varázslat során az energia hátborzongató, hangtalan szárazvillámok formájában tör ki a varázsló baljából, majd fut végig a célpont testén, mire azon az esetleges korábbi sebek beforrnak, bőre, ha van neki, feszessé és ifjúvá változik, ha nincs, ekkor rohamosan pillanatok alatt kinő."
+        },
+        {
+            "type": "paragraph",
+            "text": "A varázstudó képes saját ÉP-iből Erősségenként 1 ÉP-t átadni teremtménye számára. Ha mások életerejét kívánja átáramoltatni, akkor először az Életerő szipolyozás mozaikkal kell begyűjtenie amazt, csak eztán adhatja át az előholtnak. A varázslat célpontja maximálisan a megteremtésekor az Előhalott teremtés mozaik által ráruházott ÉP duplájával rendelkezhet a varázslat után. Tehát ha egy, az Előhalott teremtés mozaikkal „feltámasztott” zombi ÉP-inek száma 10, akkor az Életerő átadással sem lehet ÉP-i számát 20 fölé növelni."
+        },
+        {
+            "type": "paragraph",
+            "text": "Egyes szélsőséges esetekben a nekromanta egy másik élő lénynek is átadhat életerejéből, bár ez nem jellemző. Ezen esetekben a célpont nem „gyógyítható” eredeti ÉP mennyisége fölé."
+        },
+        {
+            "type": "rule",
+            "title": "Lélekkötés",
+            "headers": [
+                "Mana pont",
+                "Időtartam",
+                "Varázslás ideje",
+                "Mágiaellenállás"
+            ],
+            "rows": [
+                [
+                    "2/E",
+                    "1 óra",
+                    "1 kör",
+                    "Asztrális és Mentális"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A varázslat végrehajtásakor a varázsló magasra tartott balja éteri kék fénnyel izzik fel, majd pillanatok alatt kihuny – nem így az Asztrál-, Mentálsíkokon, ahol lámpafényként vonzza magához a nemrég elhunyt, még a Kárpit innenső oldalán keringő lelkeket."
+        },
+        {
+            "type": "paragraph",
+            "text": "Megjegyzendő, hogy a halál pillanatától számítva maximum egy órán keresztül marad egy holt lélek a teste mellett, ezen időtartam lejárta után tovább indul a felsőbb szférák felé, és már csak Lélekidézés varázslattal idézhető meg. A Lélekkötés hatótávon belülről a varázsló köré gyűlt lelkek közül az általa kiválasztottat egy olyan varázsló mellé rendeli, feltéve, hogy annak varázslata képes lebírni a holt lélek Asztrális és Mentális TME-jét. A holt lelkek tudatában vannak kiszolgáltatottságuknak, de csak akkor engedelmeskednek a varázsló parancsainak, ha amaz valami módon rábírja, vagy rákényszeríti őket."
+        },
+        {
+            "type": "paragraph",
+            "text": "Az efféle módon kötött lelkek játéktechnikailag kísértetnek minősülnek, azaz az Asztrál-, Mentálsíkokon léteznek, ott felfedezhetőek, de semmilyen anyagi kivetülésük nincsen, ezért nem is láthatóak. Viszont képesek képességeiket alkalmazni, ha életükben képesek voltak ilyesmire. Megjegyzendő mindenesetre, hogy a halál élménye komolyan megrázó lehet ezen lelkek számára, épp ezért szinte bármire képesek nyugalmuk megzavarójával szemben. Nem egy"
+        },
+        {
+            "type": "paragraph",
+            "text": "közülük megőrült az átéltek hatására, szólítójával szemben pedig bármilyen reakciókat mutathat, a rajongástól a gyilkos dühig."
+        },
+        {
+            "type": "rule",
+            "title": "Életerő szipolyozás",
+            "headers": [
+                "Mana pont",
+                "Időtartam",
+                "Hatótáv",
+                "Varázslás ideje"
+            ],
+            "rows": [
+                [
+                    "5/E vagy 10/E",
+                    "Egyszeri",
+                    "Érintés vagy 20 ynevi láb",
+                    "1 szegmens/E"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A varázslat megidézésekor a varázsló baljában egy rohamosan növekvő sötétség gömböt tart, mellyel kétféleképpen támadhat. Az első módszer szerint (melynek Mana pont költsége 5 MP/E) egyszerű érintéssel szipolyozhatja ki célpontjából az életerőt. Ehhez, ha az áldozat ellenáll, sikeres Támadó dobást kell tennie."
+        },
+        {
+            "type": "paragraph",
+            "text": "A második módszer alkalmazásakor (melynek Mana pont költsége 10 MP/E) magából a gömbből idéz meg egy árnyékszín villámot, mely pillanatnyi ideig összeköti a varázslót és az áldozatot, a varázslóba áramoltatva az elragadott életerőt. A villám CÉ-je 30."
+        },
+        {
+            "type": "paragraph",
+            "text": "A sebzés mindkét esetben erősítésenként 1k6 Sp, ami minden elszenvedett 5 ÉP-sebzés után 1 ÉP elvesztését is magával vonja. A varázslat ellen a páncélok SFÉ-je nem érvényesül."
+        },
+        {
+            "type": "paragraph",
+            "text": "A nekromanta az így kiszipolyozott életerőt felhasználhatja saját sebei gyógyítására, vagy ha magának nincsen rá szüksége (azaz teljesen sértetlen), maximum egyetlen percig képes tárolni, utána a felgyülemlett energia elszivárog."
+        },
+        {
+            "type": "rule",
+            "title": "Parancs",
+            "headers": [
+                "Mana pont",
+                "Időtartam",
+                "Hatótáv",
+                "Varázslás ideje"
+            ],
+            "rows": [
+                [
+                    "3/E",
+                    "3 perc",
+                    "20 ynevi láb",
+                    "1 kör"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A varázslat igéinek elmondása, és rúnajeleinek levegőbe írása után a nekromanta hosszú, elnyújtott sikolyt hallat, mellyel felhívja magára a környéken található tudattalan előholtak figyelmét, s számukra egyetlen szavas parancsot adhat, melyet legjobb tudásuk szerint igyekeznek majd végrehajtani az Időtartam lejártáig. A varázslattal a varázsló annyi tudattalan előholtat hajthat az uralma alá, amennyi a varázslat E-je."
+        },
+        {
+            "type": "paragraph",
+            "text": "Azonban az Előholt parancsnoklás E-jénél nagyobb erősítésű varázslatokkal a bűvölet megtörhető, és az irányítása elorozható a nekromantától."
+        },
+        {
+            "type": "rule",
+            "title": "Lélekmás",
+            "headers": [
+                "Mana pont",
+                "Időtartam",
+                "Hatótáv",
+                "Varázslás ideje"
+            ],
+            "rows": [
+                [
+                    "20",
+                    "1 nap",
+                    "Érintés",
+                    "1 óra"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "Azon tudattalan előholtak, melyek semmiféle értelemmel, vagy érzelemmel nem bírnak, megajándékozhatók az értelem és az érzelem adományával. A nekromanta ehhez valamely állati szintű érző lény lelkét tépi ki és plántálja a varázslat alanyába – ez a lény pusztulásával jár. Majd ezen léleknek tiszta lapra vési fel az értelem betűit, az egy óra hosszan tartó suttogásával."
+        },
+        {
+            "type": "paragraph",
+            "text": "Játéktechnikailag ez idő alatt állítja össze azon szabályok és törvények sorát a nekromanta, melyek nyomán az előholt majd ténykedni kezd. Az évezredes tapasztalatoknak hála, manapság már igen ritkán fordul elő, hogy valamely varázsló elvétse e törvényeket, és teremtménye ellene forduljon. Azaz játéktechnikailag az így teremtett lény teljes hűségével szolgálja majd alkotóját."
+        }
+    ]
+}

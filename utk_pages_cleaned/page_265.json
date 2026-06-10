@@ -1,0 +1,129 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": false,
+    "section_title": "",
+    "content_blocks": [
+        {
+            "type": "rule",
+            "title": "Átok hatása",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Átokűzés",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A papok Átokűzése a leghatásosabb semlegesítő fohász a boszorkányok és boszorkánymesterek mágiájával szemben. Tehát nemcsak a papi átkokat, de a boszorkányok és boszorkánymesterek által megidézett átkokat és boszorkányátkokat is megszüntetheti. A fohász hosszas előkészítést igényel, s a megidézésének időtartama is hosszú – annyi kör, ahány Kegy pontot a pap a fohászhoz felhasznál. A papnak először meg kell áldania a megátkozott személyt, majd tájkarója megszentelt vért, vizet, esetleg bort (a vallás reguláitól függően) öntve fennhangon újra s újra elkiáltania az átoktörés szövegét. Az átok hatása akkor szüntethető meg, ha az űzés erősítése nagyobb az átok eredeti Erősítésénél."
+        },
+        {
+            "type": "rule",
+            "title": "Belső Síkok lényeinek szólítása",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "E mágiaforma segítségével a pap a Belső Síkok lényeit szólíthatja a közelébe. A fohász végrehajtásakor csak az adott lény síkját tudja meghatározni, a faját nem. A szólított lény Asztrális vagy Mentális Mágiaellenállása jogosult attól függően, hogy mely sík lakója. Ha enged a hívásnak, az időtartam alatt engedelmeskedik a pap utasításainak, ha kell, még más, az adott síkon lakó lény ellen is fordul. Ily módon az is elérhető, hogy valamely, a síkon élő teremtmény által megszállt, befolyásolt vagy irányított személyt a pap megmentsen, bár ez a fohász nem tiltja meg, hogy az elűzött lény később ne próbálkozzon újra."
+        },
+        {
+            "type": "rule",
+            "title": "Bénítás",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A pap ezzel a fohásszal részlegesen megbéníthatja az ellenfél mozgásirányító központját. Rá kell mutatnia a kiszemelt áldozatra, majd ki kell mondania a fohász megidézéséhez szükséges szavakat. A mágia hatására, amennyiben a Mágiaellenállása sikertelen volt, az áldozat a következő módosítókat szenvedi el:"
+        },
+        {
+            "type": "table",
+            "headers": [
+                "Tulajdonság",
+                "Módosító"
+            ],
+            "rows": [
+                [
+                    "Erő",
+                    "-8"
+                ],
+                [
+                    "Gyorsaság",
+                    "-8"
+                ],
+                [
+                    "Ügyesség",
+                    "-8"
+                ],
+                [
+                    "KÉ",
+                    "-30"
+                ],
+                [
+                    "TÉ",
+                    "-40"
+                ],
+                [
+                    "VÉ",
+                    "-35"
+                ],
+                [
+                    "CÉ",
+                    "-15"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "Valamint képtelenné válik varázsolni. A Bénítás jól alkalmazható szinte minden harci helyzetben, s további előnye még, hogy időtartama alatt az ellenfél sem varázslatait, sem fohászait nem hívhatja segítségül."
+        },
+        {
+            "type": "rule",
+            "title": "Csapás",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A papok mágiájának egyik egyszerű, ám hatásos harcban is alkalmazható fohásza a Csapás. Ennek segítségével megtörhető az ellenfél rohama, vagy fájdalmas seb okozható rajta. A fohász végrehajtásakor a pap választhat, milyen módon kívánja felhasználni a mágiát. Két lehetőség áll rendelkezésére: az első inkább védekező, a második tisztán támadó jellegű. A fohász megidézése a következőképpen zajlik: a pap mindkét kezét ökölbe zárja, majd behúzza a mellkasához. Ezt követően szorosan egymás mellett kinyújtja két karját, mintha a levegőben maga elé ütne. A fohász első felhasználási módja esetén a kéz kinyújtásának hatására láthatatlan erőfal keletkezik, mely a rohamban megakasztja a támadót, az álló ellenfelet pedig erősen hátra taszítja. A lökés nagysága elegendő ahhoz, hogy az álló vagy lassan haladó áldozat 1-2 ynevi lábat hátrazuhanjon – ami viszont nem jár feltétlenül hanyatt eséssel! A rohamozó vagy gyorsan haladó áldozat a fohász Erősítésének minden ÉP-je után 1k6 Fp-t veszít az ütközéstől, lendülete pedig elvész; a fallal való találkozás helyén az illető megáll. A fohász másik, támadó felhasználása esetén az erő nem fal, hanem rúd vagy kopja alakjában jelenik meg. Ezt a rudat „löki ki” a pap gyors karnyújtásával. Sikeres Célzó dobás esetén – a fohász ÉP-je +20 – az ellenfélen keresztülszalad a fantomfegyver. Ennek hatására a fohász Erősítésének minden ÉP-je után 1k6 Fp-t veszít az áldozat, azonban a fohász túlélés esetén sem okoz ÉP-sebzést."
+        },
+        {
+            "type": "rule",
+            "title": "Élelemteremtés",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A pap rövid imával képes friss élelmet és italt teremteni. Ez, a fohász minden ÉP-je után, egy felnőtt ember számára egyetlen étkezésre elegendő. Az étel a környező természeti anyagokból formálódik, míg az ital a légkörből kicsapódó párából alakul át. Különleges étel vagy ital a fohász segítségével nem teremthető. A megteremtett étel és ital minden egyéb tekintetben megegyezik a közönséges úton előállított élelmiszerekkel."
+        },
+        {
+            "type": "rule",
+            "title": "Életerő-csapolás",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A Halál szféra ezen fohászával a pap életerőt vonhat el az ellenfelétől, és saját gyógyulására használhatja fel. A papnak az életet tagadó igék kiejtése után meg kell érintenie áldozatát."
+        }
+    ]
+}

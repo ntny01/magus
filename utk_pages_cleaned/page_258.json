@@ -1,0 +1,40 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": false,
+    "section_title": "",
+    "content_blocks": [
+        {
+            "type": "paragraph",
+            "text": "Itt jegyzendő meg: mivel a pap istene hatalmát alkalmazza a fohászok megidézésekor, ezért a szakrális eredetű praktikáival bármiféle varázslat kifürkészhető és szétoszlatható."
+        },
+        {
+            "type": "paragraph",
+            "text": "Ellenben a Szakrális mágia fohászait csakis másik égi pártfogással bíró személy oszlathatja szét, tapasztalati vagy magaságiával fürkészni viszont bármely erre képes varázstudónak lehetősége van."
+        },
+        {
+            "type": "rule",
+            "title": "Az Isteni Kegy",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Tapasztalati szintenként kapott Kegy pontok",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Szerepjátékkal szerezhető Kegy pontok",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        }
+    ]
+}

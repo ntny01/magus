@@ -1,0 +1,309 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": true,
+    "section_title": "Opcionális szabályok",
+    "content_blocks": [
+        {
+            "type": "paragraph",
+            "text": "A gyógyulás Fp-k esetében csak 6 óra pihenés, egyébként 1 nap, Ép-k esetében 1 nap pihenés, egyébként 5 nap múlva kezdődik meg!"
+        },
+        {
+            "type": "paragraph",
+            "text": "Egy pontnyi Életerő gyógyulása – mint azt már említettük – mindenképpen két Fp visszatértét eredményezi. Ez azon túl is igaz, hogy az adott idő alatt – a fenti táblázat tanúsága szerint – valószínűleg egyébként is növekedés állt be az adott karakter Fp-inek számában."
+        },
+        {
+            "type": "paragraph",
+            "text": "Fontos kiemelni, hogy az eddig tárgyalt, természetes úton történő gyógyuláson kívül léteznek másféle módszerek is. Ezek némelyike egyszerűen az orvostudományon, nagyobb hányada azonban a mágia valamely formáján alapszik. Ezekről itt nem nyilatkozunk, pusztán felsorolásszerűen közöljük, hogy mely fejezeteknél lelhetőek fel: - Képzettségek – Orvoslás - Papi Varázslatok – Gyógyítás - Boszorkány/Boszorkánymesteri mágia – Gyógyitalok, Nekromancia - Pszi – Fájdalomcsillapítás, Tetszhalál"
+        },
+        {
+            "type": "rule",
+            "title": "Mágikus kifáradás",
+            "rows": [
+                [
+                    "19",
+                    "1/2 óra"
+                ],
+                [
+                    "17 – 18",
+                    "1 óra"
+                ],
+                [
+                    "15 – 16",
+                    "2 óra"
+                ],
+                [
+                    "13 – 14",
+                    "3 óra"
+                ],
+                [
+                    "11 – 12",
+                    "4 óra"
+                ],
+                [
+                    "9 – 10",
+                    "5 óra"
+                ],
+                [
+                    "7 – 8",
+                    "6 óra"
+                ],
+                [
+                    "4 – 6",
+                    "7 óra"
+                ]
+            ]
+        },
+        {
+            "type": "table",
+            "headers": [
+                "Állóképesség",
+                "Idő"
+            ],
+            "rows": [
+                [
+                    "19",
+                    "1/2 óra"
+                ],
+                [
+                    "17 – 18",
+                    "1 óra"
+                ],
+                [
+                    "15 – 16",
+                    "2 óra"
+                ],
+                [
+                    "13 – 14",
+                    "3 óra"
+                ],
+                [
+                    "11 – 12",
+                    "4 óra"
+                ],
+                [
+                    "9 – 10",
+                    "5 óra"
+                ],
+                [
+                    "7 – 8",
+                    "6 óra"
+                ],
+                [
+                    "4 – 6",
+                    "7 óra"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "Egy első szintű boszorkány (9 Mana pont, 14 Állóképesség) esetében ez a következőképpen érvényesül: felhasználja egy varázslatához minden Mana pontját, majd újratölti elméjét és az így nyert manát ismételten elsüti. Ezek után, ha ismét feltölti mágikus erejét és mágiát akar használni, minden, a 25. Mp-ot meghaladó újabb Mana pont 1 pontot ideiglenesen elvon mind maximális, mind aktuális Fp-i számából."
+        },
+        {
+            "type": "paragraph",
+            "text": "Tehát a 25 Mp után már annyira kimerült lesz, hogy (mivel Állóképessége 14) 3 órán belül nem tud majd Fp veszteség nélkül mágiát használni. Erre pedig csakis akkor lesz képes, ha a 3 órát szelleme pihentetésével tölti, és nem próbálkozik varázslással."
+        },
+        {
+            "type": "paragraph",
+            "text": "A pihenést az utolsó varázslat létrejötte után kell számolni."
+        },
+        {
+            "type": "paragraph",
+            "text": "A mágiahasználat túlerőltetése miatt elveszített max. Fp-k csak 8 órányi tökéletes pihenés után térnek vissza; az az aktuális Fp veszteségeket a hagyományos módszerekkel is pótolni lehet, ám soha nem haladhatják meg az újonnan meghatározott max. Fp értékét."
+        },
+        {
+            "type": "rule",
+            "title": "Sérülési módosítók",
+            "rows": [
+                [
+                    "19",
+                    "1/2 óra"
+                ],
+                [
+                    "17 – 18",
+                    "1 óra"
+                ],
+                [
+                    "15 – 16",
+                    "2 óra"
+                ],
+                [
+                    "13 – 14",
+                    "3 óra"
+                ],
+                [
+                    "11 – 12",
+                    "4 óra"
+                ],
+                [
+                    "9 – 10",
+                    "5 óra"
+                ],
+                [
+                    "7 – 8",
+                    "6 óra"
+                ],
+                [
+                    "4 – 6",
+                    "7 óra"
+                ]
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Zuhanás",
+            "rows": [
+                [
+                    "19",
+                    "1/2 óra"
+                ],
+                [
+                    "17 – 18",
+                    "1 óra"
+                ],
+                [
+                    "15 – 16",
+                    "2 óra"
+                ],
+                [
+                    "13 – 14",
+                    "3 óra"
+                ],
+                [
+                    "11 – 12",
+                    "4 óra"
+                ],
+                [
+                    "9 – 10",
+                    "5 óra"
+                ],
+                [
+                    "7 – 8",
+                    "6 óra"
+                ],
+                [
+                    "4 – 6",
+                    "7 óra"
+                ]
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Kábultság és bénultság",
+            "rows": [
+                [
+                    "19",
+                    "1/2 óra"
+                ],
+                [
+                    "17 – 18",
+                    "1 óra"
+                ],
+                [
+                    "15 – 16",
+                    "2 óra"
+                ],
+                [
+                    "13 – 14",
+                    "3 óra"
+                ],
+                [
+                    "11 – 12",
+                    "4 óra"
+                ],
+                [
+                    "9 – 10",
+                    "5 óra"
+                ],
+                [
+                    "7 – 8",
+                    "6 óra"
+                ],
+                [
+                    "4 – 6",
+                    "7 óra"
+                ]
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Kábultság",
+            "rows": [
+                [
+                    "19",
+                    "1/2 óra"
+                ],
+                [
+                    "17 – 18",
+                    "1 óra"
+                ],
+                [
+                    "15 – 16",
+                    "2 óra"
+                ],
+                [
+                    "13 – 14",
+                    "3 óra"
+                ],
+                [
+                    "11 – 12",
+                    "4 óra"
+                ],
+                [
+                    "9 – 10",
+                    "5 óra"
+                ],
+                [
+                    "7 – 8",
+                    "6 óra"
+                ],
+                [
+                    "4 – 6",
+                    "7 óra"
+                ]
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Bénultság",
+            "rows": [
+                [
+                    "19",
+                    "1/2 óra"
+                ],
+                [
+                    "17 – 18",
+                    "1 óra"
+                ],
+                [
+                    "15 – 16",
+                    "2 óra"
+                ],
+                [
+                    "13 – 14",
+                    "3 óra"
+                ],
+                [
+                    "11 – 12",
+                    "4 óra"
+                ],
+                [
+                    "9 – 10",
+                    "5 óra"
+                ],
+                [
+                    "7 – 8",
+                    "6 óra"
+                ],
+                [
+                    "4 – 6",
+                    "7 óra"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "Ha az említett képességcsökkenések után még maradna lehetősége és kedve harcolni, akkor azt a Harci helyzetek fejezetnél leírtak szerint teheti."
+        }
+    ]
+}

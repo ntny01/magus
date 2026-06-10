@@ -1,0 +1,75 @@
+{
+    "is_new_chapter": true,
+    "chapter_title": "Szürkecsuklyások",
+    "is_new_section": false,
+    "section_title": "",
+    "content_blocks": [
+        {
+            "type": "paragraph",
+            "text": "nem hordják maguknál, a hajók főárbocára sem húzzák fel – előszeretettel alkalmazzák ellenben más államok jelvényeit, hogy ellenségeiket megtévesszék."
+        },
+        {
+            "type": "rule",
+            "title": "Talavrai Csodaművesek különleges képességei",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "text": "I. A Talavraiak hihetetlenül összetartó népek, kik tudományukat egytől-egyig igen szívesen megosztják, legyen bár szó a magasabb mágia titkairól, vagy egészen egyszerűen a kolbásztöltés csínjáról-bínjáról. Ez annyit jelent, hogy egy átlagos Csodaműves minden képzettségét 2. fokú Oktatásnak megfelelő bónuszokkal tanulhat.",
+            "title": "Talavrai Csodaművesek különleges képességei I.",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A Kobrákhoz hasonlóan a Szürkecsuklyásokról sem lehet pusztán mint egyénekről írni. Óriási, egész Ynevre kiterjedő szervezet, melynek tagjai között nem csupán tolvajokat, de harcosokat és mágiahasználókat is találunk szép számmal. Abban is megegyeznek a Családdal, hogy vezetőik általában rangrejtve járnak, a klán életét irányítók személyét a titokzatosság homálya fedi, bár sokan esküdt mérnökök, hogy valamennyien nemesemberek."
+        },
+        {
+            "type": "paragraph",
+            "text": "A Szürkecsuklyások központja Shadon, ám az egész földrészen mindenütt vannak tagjaik, szervezeteik, szerződésekkel, paktumokkal szerzett szövetséges tolvajklánjaik."
+        },
+        {
+            "type": "paragraph",
+            "text": "A szervezetnek méretéből adódóan feltehetően nincs egy személyi vezetője, bár a különböző „tartományokat” irányítók minden bizonnyal hihetetlen hatalom és vagyon felett rendelkeznek. Kibékíthetetlen az ellentét, ami a Kobrákkal való viszonyukat jellemzi, s amely a két szervezet módszerei közötti különbségeken alapul. Lényeik a Család tagjait, módszereiket nem tekintik eléggé kifinomultnak, egyszerű gyilkosoknak tartják őket, míg azok megvetik a shadoni székhelyű klánt, gyávának, élhetetlennek nevezve tagjait. Határozatlanságnak és az erős kéz hiányának tudják be békésebb módszereiket; érzéggel és álszenteskedéssel magyarázzák a vérontás hiányát."
+        },
+        {
+            "type": "paragraph",
+            "text": "A Szürkecsuklyások inkább afféle világméretű szélhámos csoportosulás, amely lehetőleg békés módszerekkel igyekszik megszabadítani a vagyonától a tehetősebbeket. A szegények teljes sérthetetlenséget élveznek előttük. Ez nem amolyan rosszul értelmezett lovagiasság vagy romantikus képmutatás eredménye. Egészen egyszerűen a szegényektől nem sok minden olyasmit tudnának elvenni, aminek komoly hasznát látnák. A Szürkecsuklyások pedig szinte mindig „nagyban dolgoznak”, elvből nem foglalkoznak a nincstelenekkel. Kitűnően képzett besurranók, hamisítók, zsarolók dolgoznak nekik a szélsebzés, alakoskodás csakúgy széles eszköztáruk tartozéka, akárcsak az ügyes fegyverforgatók."
+        },
+        {
+            "type": "paragraph",
+            "text": "Szükségük is van a gyilkolás nyelvén jól beszélőkre, mert noha ők maguk ha lehetőség van rá tartózkodnak a vér kiontásától, számtalan ellenségük akad, s jó néhány tolvajszervezet kér tőlük védelmet, s ezért csengő aranyakkal fizetni is hajlandó."
+        },
+        {
+            "type": "rule",
+            "title": "Szürkecsuklyások különleges képességei",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "text": "I. A Szürkecsuklyások képzettebb tolvajai szinte mindig magasabb körökben mozognak, ezért 5. Tsz felett minden Szociális és Tudományos képzettségüket 3. fokú Oktatásnak megfelelő bónuszokkal tanulhatják.",
+            "title": "Szürkecsuklyások különleges képességei I.",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "text": "II. A megbecsültebbé beavatottak emellett a klán jóvoltából címet és rangot is kapnak felfelé emelkedve a ranglétrán, hogy az adott szervezet vezetőjeként hatékonyan téveszthessék meg a helyi gazdagokat, befolyásos hatalmasságokat, magukat is közéjük valónak tettetve. Ez azt jelenti, hogy 10. Tsz felett a 3 pontos Vagyon, illetve a 2 pontos Rang Hátteret ingyenesen megkapják.",
+            "title": "Szürkecsuklyások különleges képességei II.",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        }
+    ]
+}

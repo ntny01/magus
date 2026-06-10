@@ -1,0 +1,147 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": false,
+    "section_title": "",
+    "content_blocks": [
+        {
+            "type": "paragraph",
+            "text": "egy átkot. Ez esetben az átok mindig a lehető legnagyobb ÉP-vel jön létre, s elemészti a boszorkánymester minden maradék Mana pontját és életerejét."
+        },
+        {
+            "type": "table",
+            "headers": [
+                "Egység",
+                "Átváltás"
+            ],
+            "rows": [
+                [
+                    "1 Ép",
+                    "1 Mp"
+                ],
+                [
+                    "1 TSZ",
+                    "3 Mp"
+                ],
+                [
+                    "1 Ép",
+                    "5 Mp"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "Az ilyen átok nem egy hónapig, hanem addig ül a megátkozott személyen, míg mágiával el nem oszlatják (Szakrális, vagy boszorkánymesteri Átokűzéssel, esetleg varázslói Destrukcióval) – így akár egy életre is megkeserítheti az áldozat mindennapjait."
+        },
+        {
+            "type": "paragraph",
+            "text": "Előfordul azonban, hogy a boszorkánymester halálakor nem a fentebb taglalt levonásokkal bünteti meg ellenfelét, hanem olyan átkot mond rá, hogy az valóban gyilkosra hátráló életének minden pillanatát megkeserítse. A lehetőségeknek csak a boszorkánymester fantáziája és elvetemültsége szab határt, az Erősségtől függően a KM belátására van bízva, milyen módon fogan meg az átok."
+        },
+        {
+            "type": "rule",
+            "title": "Átokfejtés",
+            "headers": [
+                "Mana pont",
+                "Varázslás ideje",
+                "Hatótáv",
+                "Időtartam"
+            ],
+            "rows": [
+                [
+                    "10",
+                    "10 kör",
+                    "érintés",
+                    "egy személy vizsgálata"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A varázslat más boszorkánymesterek átkainak felfedésére, mibenlétük kiderítésére szolgál. Segítségével kifürkészhető az átkot szóró neve, valamint nyilvánvalóvá lesz az átok valódi természete, erőssége és az átok teljes szövege is."
+        },
+        {
+            "type": "paragraph",
+            "text": "Azonban csak boszorkánymesterek átkai fedhetők fel általa, a boszorkányok és papok átkairól semmit sem árul el. Alkalmazása szinte elengedhetetlen feltétele az Átokűzés varázslatnak, hisz a boszorkánymester csak így tudhatja meg pontosan, mivel is kell szembenéznie."
+        },
+        {
+            "type": "rule",
+            "title": "Átokűzés",
+            "headers": [
+                "Mana pont",
+                "Varázslás ideje",
+                "Hatótáv",
+                "Időtartam"
+            ],
+            "rows": [
+                [
+                    "1/E",
+                    "10 kör",
+                    "érintés",
+                    "maradandó"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "E varázs sokszor az egyetlen megoldás az átkok eltávolítására, segítségével azonban csak boszorkánymesteri átok távolíthatók el. Elengedhetetlen előfeltétele, hogy a boszorkánymester ismerje az átok pontos szövegét (ennek hiányában, vagy akár egyetlen szó elvetése esetén is csődöt mond a varázslat és az átok az áldozat helyett a boszorkánymesterre száll). Erre akár az áldozat is emlékezhet, vagy megtudhatja Átokfejtés használatával."
+        },
+        {
+            "type": "paragraph",
+            "text": "A boszorkánymester – mivel mágiája alapvetően a pusztítást, mintsem az építést szolgálja – önmagában képtelen felszabadítani az áldozatot a rontó hatás alól, ehhez egy másik, állatinál fejlettebb értelmes élőlényre van szüksége, akire átruházza az átkot."
+        },
+        {
+            "type": "paragraph",
+            "text": "Jobb kezével az átkozott személyt, ballal a leendő áldozatot kell megérintenie, s közben visszafelé elócitálnia az átok szövegét – ehhez sikeres Intelligenciapróbára van szükség, vetés esetén a fent felsorolt hátrányok sújtják a boszorkánymestert."
+        },
+        {
+            "type": "paragraph",
+            "text": "Az űzéshez legalább annyi Mana pontot kell elhasználnia, hogy erőssége meghaladja az átok erősségét. A varázslattal csak boszorkánymesterek átkai távolíthatóak el, papok és boszorkányokéi nem. Egy boszorkánymester azonnal megérzi, ha átkát egy másik lénybe plántálták."
+        },
+        {
+            "type": "rule",
+            "title": "Természeti mágia",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "A Természeti mágiával a boszorkánymester természeti hatásokat, elemi csapásokat idézhet elő. Ezen varázslataival megszegi a mágia íratlan törvényeit, hatalmas energiákat szabadít fel, és megbontja a környezet kényes egyensúlyát. Antoh és Adron felkent papjai rendkívül rossz néven veszik, s mivel a Természeti mágiák hatalmas energiaigényük miatt messzegyűrűző hullámokat vetnek a Manahálón, általában kelleténél hamarabb értesülnek a ténykedéséről, mint azt a boszorkánymester szeretné."
+        },
+        {
+            "type": "paragraph",
+            "text": "Azonban nincs akkora hatalmú boszorkánymester, aki képes lenne oly mértékben erőszakot tenni a környezeten, hogy például a sivatagban esőt idézzen, mint ahogy a józan ész határait sem lépheti át (síkságon értelemszerűen nem lehet lavinát indítani, messze a tengertől és folyóktól nem jön létre a szökőár stb.)."
+        },
+        {
+            "type": "paragraph",
+            "text": "A Természeti mágia varázslatai csak magas szinten hatásosak igazán. A varázslatok alap Erőssége 1-es, s a boszorkánymesternek a Mana pontok többszörözésével tovább kell erősítenie, hogy a pusztítás kiteljesedhessen. Természetesen létrehozhatja alacsonyabb Erősséggel is, ekkor a hatásfok is arányosan csökken."
+        },
+        {
+            "type": "paragraph",
+            "text": "Varázslataival a boszorkánymester 1 mérföld sugarú körön belül, 1 órára képes felborítani a természet egyensúlyát. A varázslat középpontja tőle legfeljebb 1 mérföld távolságra lehet. Ha a varázslat már létrejött, már semmit nem tehet a hatás megszüntetése végett. Az egyensúly csak a varázslat Időtartamának lejártával áll helyre – ez sem a boszorkánymester érdeme, hanem a természet áthatáthatatlan törvényszerűsége. Az érintett terület kiterjedése nem növelhető és nem is csökkenthető."
+        },
+        {
+            "type": "paragraph",
+            "text": "A varázslás ideje minden egyes E után 1 perccel hosszabbodik, s további megkötés, hogy a boszorkánymesternek a varázslás ideje alatt mindvégig a szabad ég alatt kell tartózkodnia. A varázslás karmodulatokkal kísért hosszas, fennhangú kántálás, idéző és megkötő rúnák földbe vésése, levegőbe írása stb."
+        },
+        {
+            "type": "rule",
+            "title": "Tenger felkorbácsolása",
+            "headers": [
+                "Mana pont"
+            ],
+            "rows": [
+                [
+                    "4/E"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A varázslat csak nagyobb vízfölületeken, tavon és tengeren, nagyobb folyamokon használható. 10-es Erősség mellett a varázslat hatására heves szél támad, a víz viharossá válik, sós permet szitál, a haragvó tenger tarajos hullámokat vet. A feltornyosuló víztömeg felborítja, vagy összetöri az 5 ynevi lábnál rövidebb csónakokat, megrongálja a kikötőben veszteglő hajókat, és komoly megpróbáltatást jelent még a mélymerülésű hadihajók számára is. A hajózást teljesen lehetetlenné és életveszélyessé teszi. A vihar 1 ynevi mérföld sugarú körön belül tombol, átvészeléséhez legalább 4. fokú Hajózás képzettség szükséges, míg a vízbe került áldozatoknak csak legalább 4. fokú Úszás képzettséggel van esélyük a túlélésre."
+        },
+        {
+            "type": "paragraph",
+            "text": "15-ös Erősség mellett akár örvény is képezhető. A hatalmas (50 ynevi láb átmérőjű víztölcsér) mélybe rántja a 10 ynevi lábnál rövidebb hajókat, csónakokat, vízbe kerülő embereket, állatokat. A legalább 4. fokon úszni tudó emberek körönként sikeres Állóképesség-próbát kell, hogy dobjanak, ellenkező esetben 5 ynevi lábbal közelebb kerülnek az örvény közepéhez, s ha azt elérik, sorsuk megpecsételődött. Az örvény elmúltával a tenger újra kisimul, s a felszínre okádja mindazt, amit korábban oly mohón"
+        }
+    ]
+}

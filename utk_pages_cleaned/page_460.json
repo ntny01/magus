@@ -1,0 +1,82 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": false,
+    "section_title": "",
+    "content_blocks": [
+        {
+            "type": "flavor_text",
+            "text": "A dallam egy ideig szavak nélkül szárnyalt tovább. A hallgatók szeme előtt testet öltöttek a macskamód osonó kráni fejvadászok; az első hold vörösre vágott szemeken és ívelt pengéken csillant. És egyetlen ott volt Chei, a Mogorva, tekintete a második hold kék-ezüstje, haja és köpenye sötét kavargás, legendás fegyverei, Eldir és Sólyomszárny villám-sebesen osztozták a halált. A fejvadászok után éjsötét páncélba öltözött lovagok, kámzsás varázstudók következtek, Arel bajnoka azonban, akinek homlokát immár Yllinor koronája ékítette, állta rohamukat... és Krán ereje megtört rajongó elszánásán."
+        },
+        {
+            "type": "flavor_text",
+            "text": "Wayne Chapman: Geofrámia"
+        },
+        {
+            "type": "section_title",
+            "text": "A hitvallás"
+        },
+        {
+            "type": "paragraph",
+            "text": "A papnak csak egyetlen istene lehet, akihez örök hűség fűzi. Ha vallása több istent ismer, természetesen azokat is tiszteli, hozzájuk is imádkozik, sőt – amennyiben fohásza kifejezetten egy másik isten illetékességi körébe irányul, akkor ahhoz intézi szavait és áldozatát. A panteon egyik istene felé azonban testestül-lelkestül el van kötelezve: mindenekelőtt őt tekinti urának (vagy úrnőjének), neki hódol imáival."
+        },
+        {
+            "type": "paragraph",
+            "text": "Hogy melyik istenség szolgálatára érez elhivatottságot, azt a pap maga dönti el ifjúi éveiben, ám ez a döntés – ha egyszer már meghozta – végérvényes és visszavonhatatlan. Ugyanakkor a szándék nem elég, hiszen nem lesz minden növendékből felszentelt pap. Az istenség kegyelmét buzgó imádattal, a regula szerinti életvitellel, de mindenekelőtt puszta hittel kell kiérdemelnie. Ezt szimbolizálja a Kegyelt Háttér. Természetesen az is megtörténhet, hogy a pap kiesik ura kegyeiből. Ezt általában büntetésként szenvedi el, mert nem felelt meg a hite által támasztott követelményeknek, vagy a vallási tanításokkal ellentétesen cselekedett. Ritkább esetben bár, de az is előfordul, hogy maga a pap fordul el az istenétől, s tagadja meg őt. Így vagy úgy, a végeredmény mindkét esetben ugyanaz: a karakter elveszti kegyeltségét, s ezzel együtt égi pártfogója reáruházott hatalmát."
+        },
+        {
+            "type": "paragraph",
+            "text": "Fohászával megválaszolatlanok maradnak, a litániák puszta szövegével pedig semmire sem megy, hiszen az istenség nem ítatja át őket energiával. A karakter továbbra is szerezhet Tp-t, és minden olyan területen, amely független az égi hatalmak pártfogásától (harcérték, fájdalomtűrés, képzettségek), a rendes szabályok szerint fejlődhet tovább. Hogy haragra gyúlt gazdája visszafogadja-e őt a kegyeibe, és há igen, miféle vezeklés után, az kizárólag a KM illetékességi körébe tartozik."
+        },
+        {
+            "type": "paragraph",
+            "text": "Soha, semmilyen körülmények között nem fordulhat elő, hogy a hitehagyott karakter egy másik istenség papjává váljon, akár ugyanazon a panteonon belül is! A gyülekezetbe, az egyszerű hívek közé esetenként beállhat ugyan, de egyetlen isten sem ajándékoz meg bizalmával egy olyan halandót, aki korábban már egy másikat megtagadott. Ennek semmi köze az égi hatalom erkölcsi beállítottságához: egyszerűen arról van szó, hogy akit egy másik istenség nem tartott méltónak kegyére, azt valószínűleg jó okkal taszította el magától. Az isteneknek ezernyi hűséges követője van, akit hatalommal ruházhatnak fel, nincsenek rászorulva az efféle kétes hírű renegátok szolgálataira. Soha ne feledjük, hogy nem az égiek keresik a halandók kegyeit, hanem éppen fordítva!"
+        },
+        {
+            "type": "chapter",
+            "title": "EGYISTENHITEK",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "section_title",
+            "text": "Domvik"
+        },
+        {
+            "type": "flavor_text",
+            "text": "Vagyok, aki vagyok.\nElőszörre: zöldellő sarjú vetés,\nanyaföldnek melege\nMásodszorra: óvón nyújtott\ntenyér, erőnek bástyája.\nHarmadszorra: halat adó habok,\nnapnak mosolygása.\nNegyedszerre: testet serkentő ír,\nléleknek balzsama.\nÖtödszörre: bölcsen szóló szózat,\naggoknak intése.\nHatodszorra: lobbal sújtó pallos,\nhegyeknek haragja.\nHetedszerre: hidegre hűlő szív,\néjnek morajlása.\nVagyok, aki vagyok."
+        },
+        {
+            "type": "flavor_text",
+            "text": "Dicsérjünk hát Téged, Uram!"
+        },
+        {
+            "type": "flavor_text",
+            "text": "Papi imádság – részlet a Septameronból"
+        },
+        {
+            "type": "paragraph",
+            "text": "A godoni birodalom bukásával tért hódító istenség. Pyarroni vallástörténészek szerint több archaikus istenalakból gyúrt entitás – amit az is bizonyítana, hogy Hét Arcát a mai napig külön-külön is tisztelik –, ám ezt az eretnek nézetet Domvik papjai az eltévelyedettség legmélyebb stációjának tartják. Kultusza Psz. I. évezred második felétől rohamosan erősödik és terjeszkedik, napjainkban a shadoni birodalom államvallása. Az igen hatékony szervezettségű egyháza az ország kétharmada fölött világi hatalmat is gyakorol. Szigorú monoteista hit, más istenek létezését még föltételesen sem engedi meg, a többi vallást babonaságnak vagy démonimádásnak tekinti, a fennhatósága alatt álló területeken puszta jelenlétüket sem tűri meg."
+        },
+        {
+            "type": "paragraph",
+            "text": "Maga Domvik tekintélyközpontú istenalak, gondviselő-védelmező vonásokkal. Kevéssé intellektuális, egyáltalán nem érzelmi típusú, erkölcsiségének alapja a kötelességtudat. Befolyási övezetében állandó vallási tisztogatások folynak, kifelé agresszív erőszak-politika jellemzi az idegen kultuszokkal szemben. Ennek dacára régi, tartós szövetség fűzi a pyarroni hitű Államszövetséghez, melynek éle a közös ellenségnek tekintett Ranagol-vallás ellen irányul."
+        },
+        {
+            "type": "paragraph",
+            "text": "Számos teológiai munka igyekezte már jó, illetve rossz színben feltüntetni, a szerző pártállásától függően. Ezzel csak azt bizonyították be, hogy – mint oly sok hasonló esetben –, az igazság ezúttal is valahol középtájt keresendő."
+        },
+        {
+            "type": "paragraph",
+            "text": "Domvik valóban gyámolítója az elesetteknek és az árváknak – ha az ő igazságát vallják. Gyógyít és épít – ha a sebesültek és a földönfutók hozzá fohászkodnak. Megsegíti a harcolókat – ha az ő ellenségeivel tusáznak."
+        },
+        {
+            "type": "paragraph",
+            "text": "Tud azonban kegyetlen is lenni – ha árulást és gyávaságot lát; bosszúálló – ha romlásra törnek; és mohó – ha hívei számát gyarapíthatja."
+        },
+        {
+            "type": "paragraph",
+            "text": "Mi sem tanúsítja ezt jobban, mint Shadon példája. A vas-kézzel irányított birodalombarom hisztérikus tisztogatás folyik a hit vélt vagy valós ellenségeivel szemben, a makacs ellenszegülés bármely hitvitában, valamint a konok terjeszkedés"
+        }
+    ]
+}

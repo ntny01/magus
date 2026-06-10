@@ -1,0 +1,260 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": false,
+    "section_title": "",
+    "content_blocks": [
+        {
+            "type": "rule",
+            "title": "Tűzpolip",
+            "headers": [
+                "Mana pont",
+                "Varázslás ideje",
+                "Időtartam",
+                "Harcmódosító",
+                "Méretkategória"
+            ],
+            "rows": [
+                [
+                    "36",
+                    "5 szegmens",
+                    "6 kör (1 perc)",
+                    "+35",
+                    "7"
+                ]
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Tűzpolip Leírás",
+            "headers": [],
+            "rows": [
+                [
+                    "A tűz nyolckarú polip alakját veszi föl, ami képes minden körben négy támadásra. Mind a négy a polip karjaival történik, amik ostorokhoz hasonlóan csapkodják a támadókat, a harc magasabbról módosítókkal együtt, mivel a polip a harctér fölött képes lebegni, ahonnan az egész Zóna területét képes elérni."
+                ]
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Tűzsárkány",
+            "headers": [
+                "Mana pont",
+                "Varázslás ideje",
+                "Időtartam",
+                "Harcmódosító",
+                "Méretkategória"
+            ],
+            "rows": [
+                [
+                    "24",
+                    "5 szegmens",
+                    "6 kör (1 perc)",
+                    "+40",
+                    "6"
+                ]
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Tűzsárkány Leírás",
+            "headers": [],
+            "rows": [
+                [
+                    "A megidézett tűz a tűzvarázsló akarata által formázva sárkány alakját veszi fel, ami tüzet okád az ellenfeleire 20 ynevi láb magasból. A sárkánynak ahhoz, hogy eltalálja áldozatát, sikeres Célzó dobást kell véghezvinnie. A sárkány körönként egyszer támadhat, harcérték módosítója 40. Ha támadása sikeres, úgy számolandó, mintha teljes felületen érte volna az áldozatot. Ha teheti, akkor nem ereszkedik olyan mélyre, hogy eltalálhassák, repülés híján az áldozatok csak célzófegyverekkel és mágiával támadhatják."
+                ]
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Tűzgólem",
+            "headers": [
+                "Mana pont",
+                "Varázslás ideje",
+                "Időtartam",
+                "Harcmódosító",
+                "Méretkategória"
+            ],
+            "rows": [
+                [
+                    "28",
+                    "5 szegmens",
+                    "6 kör (1 perc)",
+                    "+30",
+                    "4"
+                ]
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Tűzgólem Leírás",
+            "headers": [],
+            "rows": [
+                [
+                    "A tűzgólem nyúlánk, majd' 3 ynevi láb magas humanoid alakú tűzlény, mely leginkább karjaival támad ellenfeleire, vagy megpróbál átrohanni rajtuk. Körönként kétszer képes támadni, azonban ha a körben mindkét találata sikeres, akkor belekapaszkodik ellenfelébe, és innentől kezdve az áldozatra a Harc helyhez kötve módosítók érvényesek. Szabadulni öleléséből csakis egy, a megidézett Ötödik É-jével megegyező mínuszokkal végrehajtott sikeres Erőpróbával lehetséges."
+                ]
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Lángdarazsak",
+            "headers": [
+                "Mana pont",
+                "Varázslás ideje",
+                "Időtartam",
+                "Harcmódosító",
+                "Méretkategória"
+            ],
+            "rows": [
+                [
+                    "25",
+                    "5 szegmens",
+                    "6 kör (1 perc)",
+                    "+20",
+                    "1"
+                ]
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Lángdarazsak Leírás",
+            "headers": [],
+            "rows": [
+                [
+                    "A varázslat nagyjából ökölnyi, a megidézett Ötödik É-jével megegyező számú lángból formált darazsat teremt, melyek dühödten rontanak a célpontra. A darazsak körönként csupán egyszer támadnak, azonban darabonként külön ellenfélként viselkednek, azaz külön Támadó dobást tesznek és darabonkénti 1k6 Sp-sebzésük is külön-külön érvényes; igazán veszedelmessé nagy tömegben válnak, a vonatkozó tűlerőszabály miatt. Emellett megegyezendő, hogy a darazsak mindig igyekeznek hátulról lecsapni az ellenfélre, s folyamatosan védtelen oldala felől támadni. Az összeadódó negatív módosítók alól mentesülni csak sikeres Gyorsaságpróbával elugorva, vagy a Harctéri tapasztalat képzettségre tett sikeres próbával elmanőverezve lehetséges."
+                ]
+            ]
+        },
+        {
+            "type": "table",
+            "title": "Tűzvarázslatok",
+            "headers": [
+                "Varázslat neve",
+                "Mana pont",
+                "Varázslás ideje",
+                "Időtartam"
+            ],
+            "rows": [
+                [
+                    "Fellobbanó láng",
+                    "5",
+                    "1 kör",
+                    "6 kör (1 perc)"
+                ],
+                [
+                    "Időzített tűzteremtés",
+                    "18",
+                    "2 perc",
+                    "6 kör (1 perc)"
+                ],
+                [
+                    "Tűztáncoltatás",
+                    "4",
+                    "1 szegmens",
+                    "6 kör (1 perc)"
+                ],
+                [
+                    "Tűzelemzés",
+                    "2",
+                    "1 szegmens",
+                    "Egyszeri"
+                ],
+                [
+                    "Tűzészlelés",
+                    "1",
+                    "1 szegmens",
+                    "Egyszeri"
+                ],
+                [
+                    "Tűzteremtés",
+                    "3",
+                    "3 szegmens",
+                    "6 kör (1 perc)"
+                ]
+            ]
+        },
+        {
+            "type": "table",
+            "title": "Tűzvarázslatok (Pajzsok)",
+            "headers": [
+                "Varázslat neve",
+                "Mana pont",
+                "Varázslás ideje",
+                "Időtartam"
+            ],
+            "rows": [
+                [
+                    "A Szalamandra bőre",
+                    "2/E",
+                    "5 szegmens",
+                    "6 kör (1 perc)"
+                ],
+                [
+                    "A Sárkány pikkelye",
+                    "4/E",
+                    "1 kör",
+                    "6 kör (1 perc)"
+                ],
+                [
+                    "A Sárkánykirály pikkelye",
+                    "40",
+                    "1 perc",
+                    "10 perc"
+                ]
+            ]
+        },
+        {
+            "type": "table",
+            "title": "Tűzvarázslatok (Fegyverek)",
+            "headers": [
+                "Varázslat neve",
+                "Mana pont",
+                "Varázslás ideje",
+                "Időtartam"
+            ],
+            "rows": [
+                [
+                    "Tűzaura",
+                    "6/E",
+                    "1 szegmens/E",
+                    "3 kör"
+                ],
+                [
+                    "Tűzcsóva",
+                    "5/E",
+                    "1 szegmens/E",
+                    "1 kör"
+                ],
+                [
+                    "Tűzfal",
+                    "8/E",
+                    "1 szegmens/E",
+                    "3 kör"
+                ],
+                [
+                    "Tűzkard",
+                    "6/E",
+                    "1 szegmens/E",
+                    "3 kör"
+                ],
+                [
+                    "Tűzkitörés",
+                    "5/E",
+                    "1 szegmens/E",
+                    "Egyszeri"
+                ],
+                [
+                    "Tűznyíl",
+                    "4/E",
+                    "1 szegmens/E",
+                    "Egyszeri"
+                ],
+                [
+                    "Tűzzsönyeg",
+                    "8/E",
+                    "1 szegmens/E",
+                    "3 kör"
+                ]
+            ]
+        }
+    ]
+}

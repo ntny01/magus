@@ -1,0 +1,43 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": null,
+    "is_new_section": false,
+    "section_title": null,
+    "content_blocks": [
+        {
+            "type": "rule",
+            "text": "A karakter értelmi szintje egy nyáladzó idiótáé, személyisége (ha lehet ilyesmiről egyáltalán beszélni) nem emelkedik túl az állati ösztönök kusza halmazán.",
+            "title": "Intelligencia 1-3"
+        },
+        {
+            "type": "rule",
+            "text": "Intelligenciája már meghaladja egy jól fejlett karópa szintjét. Három réz. Nem érted? H-A-R-O-M. Mindegy, hagyjuk. Add ide amennyid van...",
+            "title": "Intelligencia 4-5"
+        },
+        {
+            "type": "rule",
+            "text": "Kisgyermekek vagy szenilis vénemberek sajátja. A karakter ritkán veszi szívére ha csúnyán átejtik, mivel rendszerint nem is veszi észre.",
+            "title": "Intelligencia 6-8"
+        },
+        {
+            "type": "rule",
+            "text": "Az átlagos emberi érték, a józan paraszti ész. A szemenszedett hazugságokon átlát, a logikai fejtörők jó részét hosszas gondolkozással bár, de megoldja. Mágiaelméleti és elvont matematikai vitákba már azért ne bocsátkozzon.",
+            "title": "Intelligencia 9-12"
+        },
+        {
+            "type": "rule",
+            "text": "Figyelemre méltó intelligencia. Ravasz fickó, pontosan tudja mennyivel okosabb másoknál, és épp ezért azt is tudja jól, jobban teszi, ha ezzel nem kérkedik, inkább kihasználja.",
+            "title": "Intelligencia 13-15"
+        },
+        {
+            "type": "rule",
+            "text": "Kiemelkedő szellemiség, a dolgokat összefüggéseiben vizsgáló és rendszerező elme. Mindenben az okokat és a következményeket vizsgálja, hamar felfedezi a párhuzamokat, átlátja a bonyolultabb összefüggéseket.",
+            "title": "Intelligencia 16-18"
+        },
+        {
+            "type": "rule",
+            "text": "Ha valamivel korábban születik, valószínűleg ő találja fel a Menzini sakot.",
+            "title": "Intelligencia 19-20"
+        }
+    ]
+}

@@ -1,0 +1,72 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": false,
+    "section_title": "",
+    "content_blocks": [
+        {
+            "type": "paragraph",
+            "text": "igék kiejtését igénylik, nem hozhatók létre. Ha valaki mégis megpróbálkozik vele, a hatás nem jön létre, és a felhasználni kívánt Mana avagy Kegy pontok nem vesznek el). A fohásszal megcélozható a talaj, a levegő egy darabja, de rá lehet mondani élőlényre vagy tárgyra is. Az így elnevezett ember vagy tárgy mozgásakor a Csend a fohász alattvalójává, tehát az semmiféle zajt nem üthet, hangot nem hallathat. A Csend teremtéséhez a papnak meg kell érintenie szent jelképével azt a középpontot, melyből a fohász kisugárzik. Ha az élőlény, s ellenáll, úgy a papnak sikeres Támadó dobást kell tennie. A felhasznált Kegy pontok többszörözésével az időtartam megnyújtható, a hatótávolság azonban nem növelhető."
+        },
+        {
+            "type": "rule",
+            "title": "Életérzékelés",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "Szféra: Élet Kegy pont: 10 Fohász hossza: 5 szegmens Hatótáv: 20 ynevi láb Időtartam: 6 kör (1 perc)A fohász igéinek elsorolása után a pap megtudja, hogy a hatótávolságon belül van-e élet. A növényi, állati és magasabban fejlett életjelenségek között különbség észlelhető, és a fohász tájékoztat a jelenlévő élőlények számáról is, azonban hollétüket nem fedi fel. Az Életérzékelés csak természeti lények kisugárzását képes felfedezni, tehát a Külső, illetve Belső Síkokról származó teremtmények, valamint az élőholtak rejtve maradnak a fohász előtt. Az érzékelésnek nem vet gátat sem fal, sem egyéb természetes vagy mesterséges akadály. Az Életérzékelés felfedi a tetszhalál állapotába dermedt lények, a láthatatlanságba burkolózók vagy az Érzékelhetetlenség diszciplínával rejtőzők jelenlétét is."
+        },
+        {
+            "type": "rule",
+            "title": "Fanatizálás",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "Szféra: Lélek Kegy pont: 15 és +5/fő vagy +1/fő Fohász hossza: 6 kör (1 perc) Hatótáv: 100 ynevi láb Időtartam: 30 kör (5 perc)A fohász két módon használható fel, s csak a pap szövetségeseire van hatással. Az első alkalmazási mód inkább játékos karakterek esetében hasznos. A pap istenéhez intézett fohászának hatására a harcban minden félelmük elvész, különös, belső energiák árasztják el őket, sokszoros erővel vetik magukat a küzdelembe. Minden közelharci harcértékük, KÉ, TÉ, VÉ-jük 10-zel emelkedik, és semmiféle félelem alapú mágia nem érintheti őket a fohász hatóideje alatt. Az első módszer alkalmazásakor a Kegy pont igény 15 alapponton kívül 5 pont fejenként. A második alkalmazási mód NJK-katonák harci kedvének növelésére használatos. A közös imádság hatására a katonák Bátorsága 6 ponttal emelkedik, szinte verhetetlennek érzik majd magukat. Erejük látszólag megsokszorozódik, a legkisebb esélyekkel szemben is harcolni fognak. A papnak hosszan, hangosan kell elmondania a fohász igéit, s az 100 ynevi láb sugarú körön belül minden kiválasztottra hatni fog. Ebben az esetben a 15 alaphoz +1 Kegy pont elköltése szükséges fejenként."
+        },
+        {
+            "type": "rule",
+            "title": "Hang",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "Szféra: Lélek Kegy pont: 12 Fohász hossza: 1 perc Hatótáv: Korlátlan Időtartam: EgyszeriA fohász segítségével a pap telepatikus üzenetet küldhet egy konkrét, általa ismert személynek. Az üzenet a címzett elméjében szólal meg a pap hangján. A szöveg vagy dallam hossza nem haladhatja meg az 1 percet, de más megkötés nem vonatkozik rá."
+        },
+        {
+            "type": "rule",
+            "title": "Hősi lélek",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "Szféra: Lélek Kegy pont: 20 Fohász hossza: 3 szegmens Hatótáv: Érintés Időtartam: 10 körA fohász hasonlít az Áldáshoz, de sokkal nagyobb hatalmú annál. Csak egyetlen kiválasztott személyre használható, akinek vallása (jelleme) meg kell egyezzen a pap vallásával (jellemével). A mágia hatására a személy mindhalálig harcolni fog. Ha Fp-i nulla alá esnek, akkor is harcképes marad, egészen a halálig, azaz az Ép-k elfogyásáig. A hős harci értékei is megváltoznak: KÉ: +15, TÉ: +30, VÉ: +10. Akaratereje és Egészsége 1k6-tal nő (ám nem emelkedhet a faji maximumérték fölé), s ez hat a méregellenállásra is."
+        },
+        {
+            "type": "rule",
+            "title": "Izzó vér",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "Szféra: Halál Kegy pont: 20 Fohász hossza: 3 szegmens Hatótáv: 20 ynevi láb Időtartam: 6 kör (1 perc)Az Izzó vér a Vér mágia fohászainak egyik leggonoszabbika: az áldozat saját vére válik önnön elpusztítójává, ha a körülmények megfelelnek erre. A fohász hatása meglehetősen sajátos. Alkalmazása esetén az ellenfél vére, ha levegőre kerül – például kapott seb miatt – lángra lobban. A hatás döbbenetes. A több sebből vérző áldozat, még ha sérülései nem is lennének végzetesek, a lángok örök oltásába hal bele, ha be nem kötözik. Több seb esetén minden egyes mozdulata, mely a vérzés csillapítására irányul, az ellenkező oldalon feltépi a sebeket, fellobbannak hát a lángok. Ekkor kétségbeesetten próbálja eloltani a bőrén csorgó, eleven tüzet, mire a lassan már-már lecsillapodó vérzés kezdődik elölről az ellenkező oldalon. A fellobbanó tűz nagysága persze arányos az elvesztett vérrel, így a lángok sebzése is ettől függ. A tűz minden körben fele annyi Fp-t sebez, mint amennyi az eredeti seb okozta veszteség volt. Ezek után a sebet a fellobbanó lángok kiégetik, és nem vérzik tovább. Tehát az áldozat egy sebből csak egyszer szenvedi el az Izzó vér okozta sebzést. A lángok a közönséges anyagokat nem gyújtják meg, egyedül az áldozat vérére vannak hatással."
+        },
+        {
+            "type": "rule",
+            "title": "Káoszkard",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "Szféra: Halál, Természet Kegy pont: 10 Fohász hossza: 5 szegmens Hatótáv: Érintés Időtartam: 6 kör (1 perc)A rövid isteni segítségkérés – mely leginkább dühödt üvöltésre emlékeztet – nyomán a pap vagy az általa megérintett"
+        }
+    ]
+}

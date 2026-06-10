@@ -1,0 +1,63 @@
+{
+    "is_new_chapter": true,
+    "chapter_title": "BÁRDOK",
+    "is_new_section": true,
+    "section_title": "A Bárdok Képességei",
+    "content_blocks": [
+        {
+            "type": "paragraph",
+            "text": "A bárdok a zene, a költészet és a történetmesélés mesterei, akik erejüket a szavak és dallamok erejéből merítik. Képesek inspirálni szövetségeseiket, elbűvölni ellenfeleiket, és varázslatokat szőni a hangokból.",
+            "title": null,
+            "headers": null,
+            "rows": null
+        },
+        {
+            "type": "rule",
+            "text": "A bárdok képesek inspirálni szövetségeseiket, bónuszt adva nekik bizonyos dobásokhoz. Ez a képesség naponta X alkalommal használható, és Y körig tart.",
+            "title": "Bárdi Inspiráció",
+            "headers": null,
+            "rows": null
+        },
+        {
+            "type": "paragraph",
+            "text": "A bárdok gyakran utaznak, és sokféle emberrel találkoznak.",
+            "title": null,
+            "headers": null,
+            "rows": null
+        },
+        {
+            "type": "flavor_text",
+            "text": "„A dal, melyet énekelsz, örökké él, még ha te magad el is porladnál.” – Egy ismeretlen bárd mondása",
+            "title": null,
+            "headers": null,
+            "rows": null
+        },
+        {
+            "type": "table",
+            "text": null,
+            "title": null,
+            "headers": [
+                "Szint",
+                "Képesség",
+                "Varázslatok száma"
+            ],
+            "rows": [
+                [
+                    "1",
+                    "Bárdi Inspiráció",
+                    "2"
+                ],
+                [
+                    "2",
+                    "Tudás és Bölcsesség",
+                    "3"
+                ],
+                [
+                    "3",
+                    "Inspiráló Előadás",
+                    "4"
+                ]
+            ]
+        }
+    ]
+}

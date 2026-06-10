@@ -1,0 +1,182 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": false,
+    "section_title": "",
+    "content_blocks": [
+        {
+            "type": "rule",
+            "title": "Védelem",
+            "headers": [],
+            "rows": [
+                [
+                    "A kő olyan aurát bocsát ki, amely kellemetlen a túlvilági teremtményeknek, ezért összezavarodnak és gyengébben harcolnak. A tárgy minden E-je után -1 levonás jár a túlvilági teremtmény TÉ-re, valamint minden varázslatukat ugyanennyi E-vel gyengébben képesek csak létrehozni. A hatás 10 percig tart. Két használata között legalább egy órának kell eltelnie."
+                ]
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Okozás",
+            "headers": [],
+            "rows": [
+                [
+                    "A kő birtokában egy varázstudó megidézhet egy tetszőleges, általa kiválasztott túlvilági teremtményt. A kő helyettesíti az idéző pentagrammát és annyi Mana pontot a litániából, amennyi az E-je. Mágikus gyertya, és a túlvilági teremtmény neve ez esetben is szükséges. Mivel nincs pentagramma, a gyertya addig fenyegeti a túlvilági teremtményt, amíg a varázstudó kezében van. Figyelem, a kő – akárcsak a pentagramma – nem véd meg a túlvilági teremtménytől! Két használata között legalább egy napnak kell eltelnie."
+                ]
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Okozás",
+            "headers": [],
+            "rows": [
+                [
+                    "A követ tartalmazó tárgy segítségével saját akaratunkat kényszeríthetjük rá egy túlvilági teremtményre, ha az elvéti Mentális Mágiaellenállását. Ettől kezdve úgy viselkedik, mintha Akaratátvitel mozaik hatna rá. A kő hatása nem feleltethető meg egyértelműen Mentálmágikus hatásnak, mivel elsősorban a túlvilági teremtményekkel és nem a Mentálmágiával áll kapcsolatban, éppen ezért olyan élőholtakra és kísértetekre is hat, amelyek egyébként immunisak a Mentálmágiára. A túlvilági teremtmények csak egyetlen parancsot – legyen az bármilyen bonyolult is – adhat a kő viselője, amit annak végre kell hajtania. Aki sikeres volt a kényszerküldetés, akár nem, egy nap elteltével a mágikus hatás elmúlik. A tárgy két használata közt legalább egy napnak kell elteljen."
+                ]
+            ]
+        },
+        {
+            "type": "section_title",
+            "text": "Jaspis"
+        },
+        {
+            "type": "rule",
+            "title": "Detekció",
+            "headers": [],
+            "rows": [
+                [
+                    "A kő viselője képes felismerni a mérgeket, a mérgezett ételeket-italokat és fegyvereket. A fegyvereket elég látnia, az egyéb mérgeket közelről, alaposan meg kell vizsgálnia. A méreg pontos fajtáját így sem képes megállapítani, de ha ért hozzá (2. fokú Méregkeverés), hatását jó közelítéssel fel tudja becsülni."
+                ]
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Védelem",
+            "headers": [],
+            "rows": [
+                [
+                    "A méreggel szemben viselője egészségét javítja egyenlő a kő minden 10 E-je (10 E = 1 Egészség pont), minden más tekintetben a viselő egészsége változatlan."
+                ]
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Okozás",
+            "headers": [],
+            "rows": [
+                [
+                    "A Feketemágiával átitatott jáspis segítségével a kő tulajdonosa mágikus mérgezéseket okozhat ellenfeleinek, ha a kővel megérinti Őket. Az áldozat dobhat Egészségpróbát, hogy a hatást elkerülje. Az okozott mérgezés fajtáját (a kő minden egyes E-je 1 Ismeret pontnak felel meg a Méregkeverésnél feltüntetett táblázat szerint) a készítő határozza meg a tárgy Erősségének függvényében. A tárgy két használata között legalább egy napnak kell eltelnie."
+                ]
+            ]
+        },
+        {
+            "type": "section_title",
+            "text": "Krizopráz"
+        },
+        {
+            "type": "rule",
+            "title": "Detekció",
+            "headers": [],
+            "rows": [
+                [
+                    "A kő viselőjét a Kyr Pszi Láthatatlanság Érzékelése Diszciplínához hasonlatos képességgel ruházza föl. Természetesen csak olyan dolgokat érzékelhet, amelyek láthatatlanságának E-je nem haladja meg a kő E-jét. Az észleléshez az észlelendő dolog irányába kell nézni és azt semmi nem takarhatja."
+                ]
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Védelem",
+            "headers": [],
+            "rows": [
+                [
+                    "Ha a kő viselője láthatatlan, az észlelésénél nem csak a Láthatatlanság varázslat E-je számít, hanem a védőkéé is. Két használata között legalább egy órának kell eltelnie."
+                ]
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Okozás",
+            "headers": [],
+            "rows": [
+                [
+                    "Aki ilyen követ visel, az láthatatlanná válik. A kő minden egyes E-je 5 ÉP-nyi fontot tesz láthatatlanná. Természetesen, amint valaki felveszi (vagy kézbe fogja) a kő hordozóját, a hordozó és a kő is láthatatlanná válik – holott mágikus tárgy. A tárgy két használata között legalább egy napnak kell eltelnie."
+                ]
+            ]
+        },
+        {
+            "type": "section_title",
+            "text": "Opál"
+        },
+        {
+            "type": "rule",
+            "title": "Detekció",
+            "headers": [],
+            "rows": [
+                [
+                    "Természetes Anyag Mágiájának észlelése, legyen jelen akár valójában, vagy leplezve. A tárgy segítségével viselője a többi, a Természetes Anyag Mágiájával kapcsolatos tárgyról, rúnáról is megállapíthatja mibenlétüket. A rúnákat minden esetben látni kell."
+                ]
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Védelem",
+            "headers": [],
+            "rows": [
+                [
+                    "Minden olyan varázslat, amely a Természetes Anyag Mágiáján alapszik, annyit veszít az E-jéből, amennyi a védő tárgy E-je. Két használata között legalább egy órának kell eltelnie, hatását 10 percig fejti ki."
+                ]
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Okozás",
+            "headers": [],
+            "rows": [
+                [
+                    "A Természetes Anyag Mágiájának egy előre meghatározott hatását gyakorolja, a feltöltéshez azonban szükséges a mágia bonyolultságának megfelelő ismeret az Alkimia képzettségben (lásd az Alkimia képzettség leírását!). Minden esetben úgy működik, mint a megfelelő mágikus mozaik annyi Mana pontból, mint a kő E-je. A hatás – a mozaikoknál leírtakkal ellentétben – 1 órán át tart. Természetesen ez az Időtartam nélküli varázslatokra (Dezintegráció, Teremtés) nem vonatkozik. Két használata között legalább egy teljes napnak kell eltelnie."
+                ]
+            ]
+        },
+        {
+            "type": "section_title",
+            "text": "Peridot (Asztrál), Szerpentin (Mentál)"
+        },
+        {
+            "type": "rule",
+            "title": "Detekció",
+            "headers": [],
+            "rows": [
+                [
+                    "Asztrális/Mentális mágia észlelése, legyen akár leplezve. A tárgy segítségével viselője a többi, Asztrális/Mentális mágiával kapcsolatos tárgyról, rúnáról is megállapíthatja mibenlétüket. A rúnákat minden esetben látni kell."
+                ]
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Védelem",
+            "headers": [],
+            "rows": [
+                [
+                    "Minden asztrális/mentális varázslat annyit veszít az E-jéből, amennyi a védő tárgy E-je, azaz a viselője olyan módosítót kap a megfelelő ME-ra. Két használata között legalább egy órának kell eltelnie, hatását 10 percig fejti ki."
+                ]
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Okozás",
+            "headers": [],
+            "rows": [
+                [
+                    "A kő segítségével az Asztrális/Mentális mágiának egy előre meghatározott formája gyakorolható, a feltöltéshez a Lélektan képzettség legalább 3. foka szükséges, s a kő célpontja mindig csupán egyetlen személy lehet. A hatás minden esetben úgy működik, mint a megfelelő mágikus mozaik, csak éppen a tárgy E-jével. Az egyetlen kivétel ez alól, hogy a hatás 10 percen át tart. Két használata között legalább egy napnak kell eltelnie."
+                ]
+            ]
+        },
+        {
+            "type": "section_title",
+            "text": "Igaz-drágakövek"
+        },
+        {
+            "type": "paragraph",
+            "text": "Az igaz-drágaköveknél némileg más a helyzet. A fent ismertetett három módszeren felül van egy úgynevezett közvetlen felhasználási módjuk is. Ilyenkor tisztán Mana pontokat, vagy kész varázslatokat lehet tárolni bennük, természetesen a célból, hogy szükség esetén előhívhatóak legyenek. Ez esetben az Átlényegítés elhagyható, miáltal a kívánt hatás csak egyetlen, egyszer idézhető meg a kőből. Itt is igaz természetesen, hogy a kő csak a tárgykörével kapcsolatos varázslatokat képes befogadni, ám az igaz-drágakövek tárgyköre jóval bővebb; sőt a rubin és a smaragd"
+        }
+    ]
+}

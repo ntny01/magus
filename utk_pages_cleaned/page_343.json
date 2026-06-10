@@ -1,0 +1,150 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": false,
+    "section_title": "",
+    "content_blocks": [
+        {
+            "type": "paragraph",
+            "text": "gyúlékony anyagok táplálják és nem Őselemi elvek alapján lobog – azaz semmilyen varázslattal létrehozott tűz nem tekinthető természetesnek; míg az ennek nyomán elharapózó, éghető anyagok táplálta láng már igen!"
+        },
+        {
+            "type": "paragraph",
+            "text": "A befolyásolás annyit tesz, hogy a tűzvarázsló a lángokat eredeti méretük felére csökkentheti, vagy duplájára nyújthatja, mi több, meghatározhatja a tűz továbbterjedésének irányát is. Ennek sebessége körönként 1 nevi láb."
+        },
+        {
+            "type": "rule",
+            "title": "Tűzelemzés",
+            "headers": [
+                "Mana pont",
+                "Varázslás ideje",
+                "Időtartam",
+                "Leírás"
+            ],
+            "rows": [
+                [
+                    "2",
+                    "1 szegmens",
+                    "Egyszeri",
+                    "A tűzvarázsló a varázslat segítségével egy, a Zónáján belül lévő, működő tűzvarázslatról szerezhet információkat: megtudhatja Erősségét és Időtartamának hosszát. A tűzvarázsló tisztában lesz a tűz természetes vagy mágikus mivoltával is."
+                ]
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Tűzlelés",
+            "headers": [
+                "Mana pont",
+                "Varázslás ideje",
+                "Időtartam",
+                "Leírás"
+            ],
+            "rows": [
+                [
+                    "1",
+                    "1 szegmens",
+                    "Egyszeri",
+                    "A tűzvarázsló meg tudja állapítani, hogy a Zónájában az adott pillanatban egyidejűleg hány darab, és mekkora Erősségű természetes eredetű és leplezetlen Őstűz lobog."
+                ]
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Tűzteremtés",
+            "headers": [
+                "Mana pont",
+                "Varázslás ideje",
+                "Időtartam",
+                "Leírás"
+            ],
+            "rows": [
+                [
+                    "3",
+                    "3 szegmens",
+                    "6 kör (1 perc)",
+                    "A varázslat segítségével a tűzvarázsló nem apró lángnyelvet, hanem egy tábortűz méretű máglya lángját teremti meg. Az éghető anyagok nyomban meggyulladnak, és a környékén komoly hőhatás is érzékelhető."
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": ""
+        },
+        {
+            "type": "rule",
+            "title": "A Szalamandra bőre",
+            "headers": [
+                "Mana pont",
+                "Varázslás ideje",
+                "Időtartam",
+                "Leírás"
+            ],
+            "rows": [
+                [
+                    "2/E",
+                    "5 szegmens",
+                    "6 kör (1 perc)",
+                    "Akin a tűzvarázsló e varázslatot végrehajtja, az az időtartam lejártáig képes lesz ellenállni a hőhatásoknak. Ez Erősségenként 100 Celsius-fokos hőséget jelent, valamint minden egyes E 1-es Sebzésfelfogó értéket biztosít tűzhatások sebzésével szemben. Vagyis: 1 E esetén 100 fokos hőségben tartózkodhat büntetlenül, és 1-et vonhat le minden tűzalapú sebzésből. 2 E estén 200 fok, 2 SFE; 3 E esetén 300 fok, 3 SFE stb. A tűzvarázsló a varázslatot bárkin végrehajthatja, aki a Zónáján belül tartózkodik, ám egyszerre csak egyetlen személyen. Az illető felszerelése, ruhái és egyéb tárgyai nem élvezik a védelmet. Ha saját magán alkalmazza, különleges képességei (Tűznyelés, Tűzvonás) zavartalanul működnek."
+                ]
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "A Sárkány pikkelye",
+            "headers": [
+                "Mana pont",
+                "Varázslás ideje",
+                "Időtartam",
+                "Leírás"
+            ],
+            "rows": [
+                [
+                    "4/E",
+                    "1 kör",
+                    "6 kör (1 perc)",
+                    "Akin a tűzvarázsló a varázslatot végrehajtja, az Időtartam lejártáig képes lesz ellenállni az elemi és közönséges tüzeknek, illetve a hőhatásoknak. A varázslat minden E-je egy E-t semlegesít a tűzalapú hatás Erősségéből. A védelemben feszülő varázslatok és tüzek nem gyengülnek le, csak a varázslat védettjére hatnak gyengébben. A védelem mindennemű kiterjed, ami a Személyes Aurához tartozik. Ha a tűzvarázsló magára alkalmazza, úgy különleges képességei (Tűznyelés, Tűzvonás) zavartalanul működnek, tehát a tüzek eredeti erősségének megfelelően. A sebzést előbb a varázslat csökkenti, a különleges képességek védelme csak eztán vonandó le – vagyis a védelmek összeadódnak. A varázslat bárkin végrehajtható, aki a Zónán belül tartózkodik, ám egyszerre csak egyetlen személyen."
+                ]
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "A Sárkánykirály pikkelye",
+            "headers": [
+                "Mana pont",
+                "Varázslás ideje",
+                "Időtartam",
+                "Leírás"
+            ],
+            "rows": [
+                [
+                    "40",
+                    "1 perc",
+                    "10 perc",
+                    "Hasonló A Sárkány pikkelye varázslathoz, de jelen esetben a varázslat alanya teljesen sebezhetetlenné válik a tűz és a hő minden megjelenési formájával szemben – legyenek azok bármekkora Erősségűek (E). Ha a tűzvarázsló magán alkalmazza, úgy a Tűznyelés és a Tűzvonás különleges képességeit a varázslat időtartama alatt nem tudja használni. Ekkor csak a hagyományos godoni managyűjtéssel és a Tűzgyűjtéssel kísérletezhet, ám még ezek is fele hatékonysággal (kétszeres időtartammal) alkalmazhatók. Emellett a manaforrások is kiaknázhatatlanokká válnak számára."
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A most következő hét varázslat egy varázsló számára rögtön felismerhető, hiszen valójában nem más, mint az Elemi Mágia Őstűz Formázása mozaikjának Hét Iskola Formája."
+        },
+        {
+            "type": "rule",
+            "title": "Tűzaura",
+            "headers": [
+                "Mana pont",
+                "Varázslás ideje",
+                "Időtartam",
+                "Leírás"
+            ],
+            "rows": [
+                [
+                    "6/E",
+                    "1 szegmens/E",
+                    "3 kör",
+                    "A varázslat befejeztekor a tűzvarázslót – vagy azt a kizárólag egyenesen Zónáján belül tartózkodó személyt, akit meghatároz – Tűzaura veszi körül. Ez úgy hat, mint valami lángokból álló vértezet: beborítja, védelmezi az illetőt. Testétől mintegy tíz ynevi hüvelyk távolságra lobog, védettjét a mozgásban és a látásban egyáltalán nem akadályozza, és nem is sebzi; mi több, a ruháit, tárgyait sem lobbantja lángra; befelé semmilyen hőhatást nem fejt ki. Ellenben azoknak, akik az aura védettjét megérinteni, puszta kézzel megütni szándékoznak – vagyis az Aurán átnyúlni kívánnak – égési sebzést okoz, valamint a kívülről behatoló éghető anyagokat lángra lobbantja. Ez a sebzés minden benyúlási kísérlet esetén Erősségenként 1k6 Sp."
+                ]
+            ]
+        }
+    ]
+}

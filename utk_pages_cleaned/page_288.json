@@ -1,0 +1,93 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": true,
+    "section_title": "Varázslás",
+    "content_blocks": [
+        {
+            "type": "paragraph",
+            "text": "A boszorkányok különleges varázstudók. Noha legtöbbjük felhasználója csupán az ősi tanoknak, s nem a tökéletesedés útja, hanem a hatalom, a hatékonypusztítás, az érvényesülés lehetősége izgatja őket, bizton állíthatjuk: akad köztük nem egy igazi, a mágia magasabb művészetében járatos nőszemély is."
+        },
+        {
+            "type": "paragraph",
+            "text": "A fejezetben szereplő összes idézet a rejtélyes kráni boszorkánytól, Requa Berequortól származik. A veszedelmes teremtés harminc esztendei „szolgálat” után ismerte fel, hogy Krán bábjaként nem képes függetleníteni mágiáját és világképét a lelke mélyén még pislákoló emberi érzésektől. Meghasonlott önmagával, elhagyta otthonát és gyűlölt mestereit, hogy a Sheral bércei között rejtőzzék el. Idézett és alább idézendő sorai Grimora Magna című, összefoglaló jellegű munkájából valók."
+        },
+        {
+            "type": "flavor_text",
+            "text": "„A boszorkányok tudományának java tapasztalatokon alapszik, nem a mágia törvényeinek boncolgatásán és megértésén. A boszorkányok nem az elmélet, sokkal inkább a gyakorlat útját járják. A törvényeknek nem szerkezetét, összefüggéseit, hanem megkötéseit – és alkalmasint kiskapuit ismerik...”"
+        },
+        {
+            "type": "paragraph",
+            "text": "A Boszorkány varázslatok – a mágiahasználat más formáihoz hasonlóan – koncentrációt, varázsigék kimondását, és mágikus tartalmú taglejtéseket kívánnak meg felhasználójuktól. A koncentráció a varázslat létrejöttével legtöbbször befejezhető, ám bizonyos esetekben – mikor a már működő varázslatot továbbra is irányítani kell – egészen az Időtartam lejártáig szükség lehet rá."
+        },
+        {
+            "type": "paragraph",
+            "text": "Varázsige majd’ minden boszorkány varázslathoz tartozik. Ezt legtöbbször hangosan szükséges kiejteni – hiszen a hangos beszéd Asztrális energiákat szabadít fel, segítve a boszorkány a mágikus hatalom megidézésében –, de olyan varázslatoknál elegendő elmorzsolni is. Ez utóbbiak esetében a kitétel a varázslat leírásában említést nyer."
+        },
+        {
+            "type": "paragraph",
+            "text": "A taglejtések nem minden esetben jelentik varázsjelek legvégső írását. Olykor nem takarnak mást, mint az áldozat kijelölésére szolgáló rámutatást. Ezt minden esetben bal keze mutatóujjával teszi a boszorkány."
+        },
+        {
+            "type": "paragraph",
+            "text": "A boszorkányok tisztában vannak vele, hogy milyen előítéletek kísérik tevékenységüket. Vannak olyanok, amelyeket a saját hasznukra tudnak fordítani, de az általános idegenkedés a „gyanús női praktikák”-tól egyáltalán nem könnyíti meg a dolgukat. Éppen ezért rendkívül körültekintően bánnak azokkal a varázslataikkal, amelyeket az érzelmek befolyásolására használnak. Nem ritka, hogy egész haditerveket kell kidolgozniuk, hiszen ha az áldozat nem is, a környezete észrevehet rajta bizonyos változásokat."
+        },
+        {
+            "type": "paragraph",
+            "text": "Ugyanakkor számtalan mendemonda, történet kering a boszorkányokról. Bármire is képesek azonban ezek a nőszemélyek, az ilyen híresztelések javarésze szemenszedett hazugság. Az átlagos Ynevi – és a kalandozók nagy többsége is – soha nem találkozott szemtől szembe egy boszorkánnyal, vagy legalábbis nem tud róla. Igazi ismereteik ily módon nem lehetnek az általuk használt mágiáról. Gyanakodni mindazonáltal szabad."
+        },
+        {
+            "type": "paragraph",
+            "text": "A játékosok viszont nem feledkezhetnek meg néhány fontos dologról. Bármit is mondjon egy adott helyzetben a játékon kívüli tudásról, soha nem hagyhatják figyelmen kívül, hogy ez mind túlzott tudás a karaktereik számára. Nem valószínű, hogy minden gyönyörű hölgy láttán azonnal gyanakodva húzzák össze szemöldöküket – ez hihetetlen mértékű paranoiára vallana. Arra is gondolniuk kell, hogy amennyiben mégis valamely rontó nőszemély hatalmába kerültek, valószínűleg nem lesznek a tudatában az esetleges káros következményeknek."
+        },
+        {
+            "type": "paragraph",
+            "text": "Az egész játékot tönkreteheti egy fanyalgó játékos, hiteltelét veszti a karaktere, tévútra mehet a történet. Nekik nem tudunk mást javasolni, minthogy a karakterük próbálja a jó oldalát nézni a dolognak. Hiszen feltehetően megismerkedett egy gyönyörű nővel, meglehet, hogy szerelembe is esett, s az sem kizárt, hogy kedvese oly gyönyörű dolgokkal ajándékozta meg, melyekről korábban álmodni sem merészelt..."
+        },
+        {
+            "type": "rule",
+            "title": "A Boszorkánymágia általános érvényű szabályai:",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "subsection_title",
+            "title": "Alapvető varázslatok"
+        },
+        {
+            "type": "flavor_text",
+            "text": "„...E varázsokat előszeretettel mossák egybe misztikus képességeinkkel – azon az alapon, hogy a tanulatlan emberek szemében általában e két csoportba tartozó fogásokról ismerik meg az igazi boszorkány. Sokan bizonyára azt képzelik, ez a Boszorkánymágia egésze, s hogy gyakorlásában ki is merül »kicsinyes asszonyi tudományunk«. Nagy tévedés...”"
+        },
+        {
+            "type": "subsection_title",
+            "title": "Boszorkánykör"
+        },
+        {
+            "type": "table",
+            "headers": [
+                "Tulajdonság",
+                "Érték"
+            ],
+            "rows": [
+                [
+                    "Mana pont",
+                    "3"
+                ],
+                [
+                    "Varázslás ideje",
+                    "10 kör + Transz"
+                ],
+                [
+                    "Időtartam",
+                    "Lásd a leírást!"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A Boszorkánykör a boszorkányok egyik legfélelmetesebb fegyvere. Segítségével több boszorkány is összeadhatja hatalmát, amely így a kör közepén állóra hagyományozódik. A boszorkánykörök kört alkotnak, a kör közepére pedig a legnagyobb hatalmúnak (legmagasabb Tapasztalati szintűnek) kell beállnia. A kört alkotó boszorkányok letérdelnek, s egymás kezét fogva létrehozzák a varázskört. Mindegyikük előbb transzba esik, majd elmorzsolja a Boszorkánykör varázslat litániáját. A résztvevő boszorkányok Mana pontjai összeadódnak, s a kör közepén álló, legmagasabb szintű felé sugárzódnak. Varázsolni csak a középen álló boszorkány lesz képes, ám ő az egész csoport összesített erejével – ami a Mana pontok összeadódását jelenti. A Boszorkánykör ideális esetben addig"
+        }
+    ]
+}

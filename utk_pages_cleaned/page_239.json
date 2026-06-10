@@ -1,0 +1,112 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": true,
+    "section_title": "A varázslás",
+    "content_blocks": [
+        {
+            "type": "rule",
+            "title": "A mágia működése és korlátai",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "A varázslás folyamata",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Mana költség",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Koncentráció varázslás közben",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "Az egyes varázslatok leírásakor több ismétlődő fogalommal találkozhatunk. Ezek a mágia olyan jellemzői, melyek minden varázslat leírásában előfordulnak, s fontos szerepük van a pontos hatás ismertetésében. Az alábbiakban ezek kerülnek bemutatásra."
+        },
+        {
+            "type": "paragraph",
+            "text": "A mágia használata a játékban"
+        },
+        {
+            "type": "paragraph",
+            "text": "Yneven a mágia szerves részét képezi a mindennapoknak. Az emberek ritkán találkoznak a varázslás avatott művelőivel, ám hagyományaik részét képezi a különböző természetfeletti entitásokkal való kapcsolat. A babonáikban szereplő szellemek néha nagyon is érzékelhető formában öltenek testet, a gonosz erőktől óvó rajzok pedig nemritkán tényleges hatalommal bírnak."
+        },
+        {
+            "type": "paragraph",
+            "text": "Az ynevi halandó tehát együtt él a mágiával, viszont nem ismeri működését és féli hatalmát. Vannak azonban olyan kiemelkedett emberek, akik képesek rá, hogy uralmuk alá hajtsák a mindenséget átható mágikus erőket, s akaratuk szerint befolyásolják vele mind az anyagi, mind a szellemi világot. Az ilyen emberek közös tulajdonsága, hogy rendelkeznek a Mágikus Fogékonyság Háttérrel, ami lehetővé teszi számukra, hogy valamilyen formában felhasználják a manát. Vannak azonban olyanok is, akik valamely másvilági lény pártfogását élvezik, s ezért rendelkeznek a Kegyelt Háttérrel (bővebben lásd a Szakrális mágia c. fejezetet 255. oldalon)."
+        },
+        {
+            "type": "paragraph",
+            "text": "Sokakban lappang ez a tehetség anélkül, hogy kiaknáznák tudásukat, mások megrekednek a fejlődés egy-egy lépcsőfokán, vagy egyáltalán nem is kívánják maguknak a varázserőt, s nyűgként cipelik adottságukat egész életükben."
+        },
+        {
+            "type": "paragraph",
+            "text": "Azon kevesekből pedig, akik képességeiket egy-egy klán, rend, iskola vagy magányos mester segítségével fejlesztik, válnak az igazi mágiahasználók."
+        },
+        {
+            "type": "paragraph",
+            "text": "Mana pont"
+        },
+        {
+            "type": "rule",
+            "title": "Mana pontok",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Mana pont költség",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Mana pont visszanyerés",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Mana pont és Erősség/Időtartam skálázás",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "Erősség"
+        },
+        {
+            "type": "rule",
+            "title": "Erősség",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        }
+    ]
+}

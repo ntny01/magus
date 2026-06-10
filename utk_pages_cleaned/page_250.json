@@ -1,0 +1,76 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": false,
+    "section_title": "",
+    "content_blocks": [
+        {
+            "type": "paragraph",
+            "text": "képét változtathatja meg. Az illúzióval bármilyen talajtípus képe létrehozható, legyen az tó, mocsár, legelő, kőút avagy ezek kombinációja. Az egyetlen hátrány az, hogy a befolyásolható magasság csupán 1/2 ynevi láb. Így erdők, sziklafalak, hegyek ezzel a varázslattal nem teremthetők. Mindettől függetlenül kiválóan alkalmas például csapdák elfedésére."
+        },
+        {
+            "type": "rule",
+            "title": "Irány vesztés",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Kép",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Képidézés",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Kódalak",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Láthatatlanság",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Lényalkotás",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Macskaszem",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Maszk",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        }
+    ]
+}

@@ -1,0 +1,282 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": false,
+    "section_title": "",
+    "content_blocks": [
+        {
+            "type": "rule",
+            "title": "Életvíz",
+            "rows": [
+                [
+                    "Készítheti",
+                    "Boszorkány"
+                ],
+                [
+                    "Mp",
+                    "200"
+                ],
+                [
+                    "Időtartam",
+                    "Maradandó"
+                ],
+                [
+                    "Ára",
+                    "120 arany"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A rendkívül erős bájital felhajtója újból fiatallá és életerőssé lesz, kigyógyul minden betegségéből. A hatás hasonló a Visszaváltoztatás (lásd Mágia; Természetes Anyag Mágia!) mozaiknál leírthoz; azaz, az illető a lelke emlékezetében megőrzi idealizált kép alapját fiatalkori, hegei eltűnnek, csonkolt végtagjai újból kinőnek, és így tovább. Az italhoz általában valamely igen hosszú életű lény vére szükséges, illetve némi porított smaragd. Egyes dorani bölcsek értekezései szerint a megfiatalodás ezen formája alkalmával, ha valamely igen erős természetes mágikus képességekkel bíró lény vérét keverik, az ital felhajtója maga is fogékony lesz a mágiára."
+        },
+        {
+            "type": "rule",
+            "title": "Istenek Italai",
+            "rows": [
+                [
+                    "Készítheti",
+                    "Pap, boszorkány"
+                ],
+                [
+                    "Mp",
+                    "Lásd a leírásban!"
+                ],
+                [
+                    "Időtartam",
+                    "1k6-szor 10 perc"
+                ],
+                [
+                    "Ára",
+                    "4 arany"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "Több efféle bájital ismeretes; közös tulajdonságuk, hogy felhajtójuk Képességeit fokozzák: erősebbé, ügyesebbé, intelligensebbé vagy akár szebbé teszik (minden Képességhez készíthető ilyen ital). A megváltozott Képesség természetesen befolyásolja az összes tőle függő értéket is, mint például a harcértéket vagy a Mágiaellenállást. Az Istenek Italai több formában, különböző erősséggel készülnek:"
+        },
+        {
+            "type": "table",
+            "headers": [
+                "Mp",
+                "Tulajdonság"
+            ],
+            "rows": [
+                [
+                    "10",
+                    "+1"
+                ],
+                [
+                    "20",
+                    "+2"
+                ],
+                [
+                    "40",
+                    "+3"
+                ],
+                [
+                    "80",
+                    "+4"
+                ],
+                [
+                    "130",
+                    "+5"
+                ]
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Szerelmi bájital",
+            "rows": [
+                [
+                    "Készítheti",
+                    "Boszorkány"
+                ],
+                [
+                    "Mp",
+                    "45"
+                ],
+                [
+                    "Időtartam",
+                    "1k6 nap"
+                ],
+                [
+                    "Ára",
+                    "5 arany"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "Aki a szerelmi bájitalt megissza, nyomban lángoló szerelemre gyúl az első ellentétes nemű, azonos fajba tartozó élőlény iránt, akit megpillant. Az áldozat jogosult Asztrális ME-re 50 E erősség ellenében. Az ital hatása 1k6 napig tart."
+        },
+        {
+            "type": "rule",
+            "title": "Bátorság itala",
+            "rows": [
+                [
+                    "Készítheti",
+                    "Pap, boszorkánymester"
+                ],
+                [
+                    "Mp",
+                    "50"
+                ],
+                [
+                    "Időtartam",
+                    "1k6-szor 10 perc"
+                ],
+                [
+                    "Ára",
+                    "5 arany"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "Aki a Bátorság italából iszik, nem ismer többé félelmet – legalábbis míg a hatás érvényesül. Harcban a következő előnyöket élvezi: KÉ +3, TÉ +10, Sebzés +1. Mivel bátorsága a vakmerőséggel határos, megfeledkezik minden óvatosságról, nem mérlegeli hideg fejjel az esélyeket, hanem az első adandó alkalommal ront ellenfelére. Ezért VÉ-je 10-zel csökken."
+        },
+        {
+            "type": "rule",
+            "title": "Gondolatolvasás itala",
+            "rows": [
+                [
+                    "Készítheti",
+                    "Boszorkány, boszorkánymester"
+                ],
+                [
+                    "Mp",
+                    "60"
+                ],
+                [
+                    "Időtartam",
+                    "1k6-szor 10 perc"
+                ],
+                [
+                    "Ára",
+                    "5 arany"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "Aki az italt felhajtja, képes lesz a környezetében (20 öl sugarú kör) tartózkodó értelmes élőlények felszínes gondolatait kifürkészni. Egyszerre csak egy lény elméjéből olvashat, de tetszés szerint megválaszthatja, ki legyen az. Az áldozat Mentális ME-re jogosult, 30 E ellen."
+        },
+        {
+            "type": "rule",
+            "title": "Kicsinyítés itala",
+            "rows": [
+                [
+                    "Készítheti",
+                    "Boszorkány, boszorkánymester"
+                ],
+                [
+                    "Mp",
+                    "80"
+                ],
+                [
+                    "Időtartam",
+                    "1k6-szor 10 perc"
+                ],
+                [
+                    "Ára",
+                    "1 arany"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A Kicsinyítés italát felhajtó ember zsugorodni kezd, testmagassága a tizedére csökken egyetlen kör alatt; a súlya is hasonlóképp változik. A hatás elmúltával visszaalakul eredeti méretére, ám ha ezt valami akadályozza, az FP- vagy Ép-vesztéssel, súlyosabb esetben halállal jár. Az ital csak az élőlényekre hat, felszerelési tárgyaikra nem. Elkészítéséhez egy csipetnyi füstkvarcra van szükség."
+        },
+        {
+            "type": "rule",
+            "title": "Akaratátvitel itala",
+            "rows": [
+                [
+                    "Készítheti",
+                    "Boszorkánymester"
+                ],
+                [
+                    "Mp",
+                    "100"
+                ],
+                [
+                    "Időtartam",
+                    "1k6-szor 10 perc"
+                ],
+                [
+                    "Ára",
+                    "10 arany"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "Aki az italt megissza, képes lesz egy értelmes lény akaratát befolyásolni, ha az illető elvéti Mentális ME-jét az ital 30 E-s erőssége ellen. A befolyásolt személyek a befolyásoló közelében (20 öl sugarú kör) kell tartózkodnia, ameddig a mentális kapcsolat (mentál-fonál) létre nem jön, azután már bármekkora távolság elválaszthatja őket egymástól. Ha az irányító nem látja áldozatát, csak találgatásokra hagyatkozhat afelől, vajon az végrehajtotta-e a kapott mentális parancsot, mert lehet, hogy időközben valamilyen mágikus hatás vagy pszi alkalmazás megnövelte annak a Mentális ME-jét. Az ital hatásának elmúltával az áldozat felszabadul a mentális befolyás alól."
+        },
+        {
+            "type": "rule",
+            "title": "Sárkánylehelet itala",
+            "rows": [
+                [
+                    "Készítheti",
+                    "Boszorkány, boszorkánymester"
+                ],
+                [
+                    "Mp",
+                    "Lásd a leírásban!"
+                ],
+                [
+                    "Időtartam",
+                    "1 nap"
+                ],
+                [
+                    "Ára",
+                    "15 arany"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "Aki az italt felhajtja, tűzcsóvát fújhat a szájából. A csóva megperzseli az útjába kerülőket, de nem tesz kárt létrehozójában. Az ital egyetlen tűzfúvásra elegendő, de erre az ital elfogyasztásától számított egy napon belül tetszés szerinti pillanatban kerülhet sor. Többféle erősségű ital ismeretes:"
+        },
+        {
+            "type": "table",
+            "headers": [
+                "Név",
+                "Hossz",
+                "Átmérő",
+                "Sebzés",
+                "Mp"
+            ],
+            "rows": [
+                [
+                    "Sárkányfiók lehelete",
+                    "10 láb",
+                    "3 láb",
+                    "6k6",
+                    "60"
+                ],
+                [
+                    "Sárkány lehelete",
+                    "20 láb",
+                    "5 láb",
+                    "10k6",
+                    "90"
+                ],
+                [
+                    "Sárkánykirály lehelete",
+                    "30 láb",
+                    "7 láb",
+                    "15k6",
+                    "120"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "Az ital elkészítéséhez egy legalább 3 karátos tűzopálra van szükség, mely igen nehezen beszerezhető, és tárolása is veszélyes, mert a nyílt levegőn egyszerűen lángra kap, ezért csakis lámpás-, vagy halolajban, esetleg víz alatt tartható."
+        }
+    ]
+}

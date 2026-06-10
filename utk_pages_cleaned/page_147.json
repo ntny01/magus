@@ -1,0 +1,190 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": true,
+    "section_title": "Hangutánzás (II - Érzékelés)",
+    "content_blocks": [
+        {
+            "type": "paragraph",
+            "text": "A képzettség ismerete növeli a hajó sebességét harmadik fok felett, szintenként 10%-kal.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "1. fok A karakter egyelőre csak ismerkedik a hajózás tudományával, maximálisan apró evezős alkalmatosságok, tutajok irányításához ért, nyugodt vízen.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "2. fok A gyakorlott karakter ezen a szinten, ha megvannak a megfelelő kiegészítő képzettségei már nagyobb hajókon is dolgozhat, vagy a korábban ismertetett evezős, tutajszerű járművekkel biztosabban bánik, még folyóvizeken vagy háborogó tavakon is.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "3. fok Hivatásos hajós, matróz, megfelelő képzettségekkel, akár kormányos is vagy kisebb hajó kapitánya. Evezősöknél és tutajoknál már akár viharban is megállja a helyét.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "4. fok A mesteri hajós neve már ismert, mint tapasztalt kapitány vagy igen képzett kormányos, ha megvannak a megfelelő képzettségei. Már tengerjáró hajókon is parancsnokolhat, illetve evezősökön, tutajokon akár már zuhatagokon, vízeséseken is áthaladhat, ha ez végrehajtható.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "5. fok A karakter legendás kapitány, tengerjáró, felfedező, evezősöknél igazi ördög. Ezen a parancsnokok, már szinte bármire képes hajójukkal, ami egyáltalán elképzelhető. Bármekkora hajókat is parancsnokolhat.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "Itt megjegyzendő még, hogy tengeri csata esetén úgy dönthetjük el, hogy egy hajítógép, tűzköpő vagy bármely más alkalmatosság eltalálja a hajókat, hogy a hajót irányító személy Hajózás képzettségével ellenpróbát dobhatunk az ostromgépet irányzó karakter Ostromgépkezelés Szakma képzettsége ellenében, ahol minden 100 ynevi láb távolság után, amely elválasztja a szerkezetet a célponttól -1 levonást kap a kezelőszemélyzet a próbájára.",
+            "title": "Tengeri csata szabályai",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "– legalább 2. fokon – akkor akár az áldozat közeli ismerőseit, családtagjait, szeretőjét is könnyedén megtévesztheti.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "Mulatságos, olykor életet mentő képzettség. Vannak, akik kizárólag szájukat használják hangutánzásra, mások, főleg magasabb fokozatú képzettség esetén, már egyéb segédeszközöknek sincsenek híján, pl. kezük, használati tárgyak.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "Magasabb szinteken már nem csak emberek, vagy állatok hangja, de bármilyen zörej, nesz vagy hang utánozható a KM beleegyezésével. A hangutánzót az általa elsajátított foknak megfelelő nehezítéssel, vagy a KM belátása szerint könnyített Érzékeléspróbával buktathatja csak le egy hallgatózó személy.",
+            "title": "Hangutánzás leleplezése",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "1. fok A karakter még csak egy-két általa ismert állathangot képes utánozni élethűen.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "2. fok A gyakorlott hangutánzó képes már komolyabb állathangok utánzására is, az általa ismert fajok – Állatismeret képzettség 2. fok – teljes hangrepertoárját utánozza, illetve képes egyszerűbb, a karakter életterén előforduló hangok (nyikorgások, neszek) valósághű utánzására.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "3. fok A szakavatott hangutánzó már egy valós személy hangját is utánozhatja, ha legalább három nap áll rendelkezésére az adott személy hangjának megfigyelésére és begyakorlására.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "4. fok A mesteri szintű hangutánzó már egy óra alatt képes valaki hangját „ellopni”, ha jártas a Lélektan képzettségben.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "5. fok A legendás hangművész akár két ember párbeszédét is képes előadni, illetve fél óra tanulással ismeretlen beszélők hangjait utánozni. Szinte már bármilyen a KM által engedélyezett hangot leutánozhat, egy kecske mekegésétől egy komplett gyalogezred távolodó zajáig.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "A karakter ismereteinek összessége egy hely térképészeti, szociális (akár alvilági) berendezéséről. Minden karakter sajátja, a klánok, rendek, iskolák beavatottjai, tagjai bizonyos, az adott szervezetnél megjelölt szintű ismerettel indulnak saját szülőföldjükre vonatkozóan.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "1. fok A karakter a képzettség ezen fokán még csak ismerkedik a tájjal, csak híresebb épületeket, illetve terepalakzatokat ismer fel.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "2. fok A képzettségben ennyire elmerült karakter már a híresebb személyek és lakhelyük, illetve nagyobb piacok, színházak, egyebek elhelyezkedésével, az őrség kaszárnyáinak helyzetével, a tömlöcök fellelhetőségével is tisztában van.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "3. fok A környéket ennyire ismerő személy, vagy tősgyökeres helybéli, vagy ha idegen, hát valami komoly terve van itt, mert már a helyi érdekességek és rejtettebb zugok nagy ismerőjének mondhatja magát, természetesen beállítottságától függően – Domvik papja valószínűleg az inkvizíció helyi központjainak, illetve a rejtett ispotályoknak a helyét ismeri, míg egy tolvaj inkább a biztos házak, megerősített italmérések, és bandaterületek határát vési eszébe.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "Ha KM a próbát szükségesnek véli, azt a karakter +1 módosítóval dobhatja.",
+            "title": "Helyismeret próba módosító",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "4. fok A karakter már könnyen eligazodik bárhol, ismeri a negyedek, bandák területeinek határát, ritka az olyan épület, amelynek lakóiról ne bírna legalábbis minimális ismereteket. Szinte bármi származási helyét képes felfedni a falak között, amit venni szeretne, és egyáltalán előfordul az adott nagyvárosban, országrészben.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "Ha KM a próbát szükségesnek véli, azt a karakter +2 módosítóval dobhatja.",
+            "title": "Helyismeret próba módosító",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "5. fok Az ilyen mélységében egy adott területet ismerő karakter hatalmas tudás birtokosa; már minden épületet, vízmosást és barlangot ismer. Mindenkiről van néhány szónyi ismerete, aki őslakos az adott területen, meg a titkos társaságok rejtett helyeiről is van elképzelése.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "Ha KM a próbát szükségesnek véli, azt a karakter +3 módosítóval dobhatja.",
+            "title": "Helyismeret próba módosító",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "Ynev világán rengeteg olyan állat és félintelligens lény akad, amely beidomítható a karakter számára, amely némely foglalkozás és törődés után képes akár igen bonyolult feladatok végrehajtására is. Ezen lények száma szinte korlátlan, a játékos ötleteinek az idomítandó lény fajának csak a józanész és a KM döntése szabhat határt.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "A képzettség segítségével társra vagy szolgára tehet szert a karakter. Legmagasabb szintű művelői között elvétve akad ember, az idomítás inkább az elfek, félelfek tudománya.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        }
+    ]
+}

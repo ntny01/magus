@@ -1,0 +1,358 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": false,
+    "section_title": "",
+    "content_blocks": [
+        {
+            "type": "table",
+            "title": "Az ölelés mágiája",
+            "headers": [
+                "Varázslat neve",
+                "Mana pont",
+                "Varázslás ideje",
+                "Hatótáv",
+                "Időtartam",
+                "Mágiaellenállás"
+            ],
+            "rows": [
+                [
+                    "Akarat elorzása",
+                    "2/E",
+                    "1 kör",
+                    "Érintés",
+                    "1 óra",
+                    "Mentális"
+                ],
+                [
+                    "Betegség átadása",
+                    "12 + 10/szint",
+                    "5 szegmens",
+                    "Érintés",
+                    "Lásd a leírást!",
+                    "Egészségpróba"
+                ],
+                [
+                    "Félkenység",
+                    "1/E",
+                    "3 szegmens",
+                    "Érintés",
+                    "1 óra",
+                    "Asztrális"
+                ],
+                [
+                    "Mágikus ölelés",
+                    "1",
+                    "5 szegmens",
+                    "Érintés",
+                    "6 kör (1 perc)",
+                    "Asztrális"
+                ],
+                [
+                    "Rabszolga ölelés",
+                    "2/E",
+                    "5 szegmens",
+                    "Érintés",
+                    "Lásd a leírást!",
+                    "Mentális"
+                ],
+                [
+                    "Sorvasztás",
+                    "2/E",
+                    "5 szegmens",
+                    "Érintés",
+                    "Lásd a leírást!",
+                    "Mentális"
+                ],
+                [
+                    "Tudástár",
+                    "6",
+                    "3 szegmens",
+                    "önmaga",
+                    "Lásd a leírást!",
+                    "—"
+                ]
+            ]
+        },
+        {
+            "type": "table",
+            "title": "Gyertyamágia",
+            "headers": [
+                "Gyertya neve",
+                "Mana pont",
+                "Készítés ideje",
+                "Égés időtartam",
+                "Mágiaellenállás"
+            ],
+            "rows": [
+                [
+                    "Kék gyertya",
+                    "1/E",
+                    "1 óra",
+                    "30 perc",
+                    "Mentális"
+                ],
+                [
+                    "Sárga gyertya",
+                    "Lásd a leírást!",
+                    "1 óra",
+                    "Lásd a leírást!",
+                    "Asztrális"
+                ],
+                [
+                    "Szivárványszín gyertya",
+                    "Lásd a leírást!",
+                    "1 óra",
+                    "Lásd a leírást!",
+                    "Lásd a leírást!"
+                ],
+                [
+                    "Vörös gyertya",
+                    "2/E",
+                    "1 óra",
+                    "30 perc",
+                    "Asztrális és Mentális"
+                ],
+                [
+                    "Zöld gyertya",
+                    "24",
+                    "1 óra",
+                    "5 perc",
+                    "Méregellenállás"
+                ]
+            ]
+        },
+        {
+            "type": "table",
+            "title": "Szimpatikus mágia",
+            "headers": [
+                "Varázslat neve",
+                "Mana pont",
+                "Varázslás ideje",
+                "Hatótáv",
+                "Időtartam",
+                "Mágiaellenállás"
+            ],
+            "rows": [
+                [
+                    "Személy megkeresése",
+                    "1/E",
+                    "3 kör",
+                    "Lásd a leírást!",
+                    "1 óra/szint",
+                    "Asztrális"
+                ],
+                [
+                    "Szólító ige",
+                    "2/E",
+                    "3 kör",
+                    "Korlátlan",
+                    "Lásd a leírást!",
+                    "Asztrális"
+                ]
+            ]
+        },
+        {
+            "type": "table",
+            "title": "Viaszbábok mágia",
+            "headers": [
+                "Viaszbábu neve",
+                "Mana pont",
+                "Készítés ideje",
+                "Hatótáv",
+                "Időtartam",
+                "Mágiaellenállás"
+            ],
+            "rows": [
+                [
+                    "Fehér bábú",
+                    "33",
+                    "1 óra",
+                    "Korlátlan",
+                    "Maradandó",
+                    "Lásd a leírást!"
+                ],
+                [
+                    "Kékbábú",
+                    "33",
+                    "1 óra",
+                    "Korlátlan",
+                    "Maradandó",
+                    "Lásd a leírást!"
+                ],
+                [
+                    "Vörös bábú",
+                    "55",
+                    "1 óra",
+                    "Korlátlan",
+                    "Maradandó",
+                    "Lásd a leírást!"
+                ],
+                [
+                    "Feketebábú",
+                    "66",
+                    "1 óra",
+                    "Korlátlan",
+                    "Maradandó",
+                    "Lásd a leírást!"
+                ]
+            ]
+        },
+        {
+            "type": "table",
+            "title": "Térmágia",
+            "headers": [
+                "Varázslat neve",
+                "Mana pont",
+                "Varázslás ideje",
+                "Hatótáv",
+                "Időtartam",
+                "Mágiaellenállás"
+            ],
+            "rows": [
+                [
+                    "Árnyékajtó",
+                    "12/E",
+                    "1 kör + 3 kör",
+                    "Lásd a leírást!",
+                    "Lásd a leírást!",
+                    "Egyszeri"
+                ],
+                [
+                    "Eltűnés",
+                    "30/E",
+                    "1 szegmens",
+                    "Önmaga",
+                    "Egyszeri",
+                    "—"
+                ],
+                [
+                    "Hasadék",
+                    "12",
+                    "2 szegmens",
+                    "20 ynevi láb",
+                    "10 kör",
+                    "—"
+                ],
+                [
+                    "Kihallgatás",
+                    "6",
+                    "3 szegmens",
+                    "Korlátlan",
+                    "6 kör",
+                    "—"
+                ],
+                [
+                    "Madártávlat",
+                    "12 vagy 18",
+                    "5 szegmens",
+                    "5 ynevi mérföld",
+                    "10 perc",
+                    "—"
+                ],
+                [
+                    "Megfigyelés",
+                    "6",
+                    "3 szegmens",
+                    "Korlátlan",
+                    "6 kör",
+                    "—"
+                ],
+                [
+                    "Távolbalátás",
+                    "24",
+                    "3 kör",
+                    "Lásd a leírást!",
+                    "Korlátlan",
+                    "—"
+                ],
+                [
+                    "Üzenet",
+                    "3",
+                    "1 szegmens",
+                    "Korlátlan",
+                    "6 kör (1 perc)/szint",
+                    "—"
+                ]
+            ]
+        },
+        {
+            "type": "table",
+            "title": "Familiáris mágia",
+            "headers": [
+                "Varázslat neve",
+                "Mana pont",
+                "Varázslás ideje",
+                "Hatótáv",
+                "Időtartam",
+                "Mágiaellenállás"
+            ],
+            "rows": [
+                [
+                    "Egygyeválás",
+                    "10/E",
+                    "5 kör",
+                    "Érintés",
+                    "Lásd a leírást!",
+                    "Aszt. és Ment."
+                ],
+                [
+                    "Összetartozás",
+                    "3/E",
+                    "5 kör",
+                    "Érintés",
+                    "Lásd a leírást!",
+                    "Aszt. és Ment."
+                ]
+            ]
+        },
+        {
+            "type": "table",
+            "title": "Bájitalok",
+            "headers": [
+                "Ital neve",
+                "Mana pont",
+                "Időtartam",
+                "Elkészítési ár",
+                "Eladási ár"
+            ],
+            "rows": [
+                [
+                    "Jellemzitorzítás itala",
+                    "Lásd a leírást!",
+                    "maradandó",
+                    "1 arany",
+                    "10-200 arany"
+                ],
+                [
+                    "Kapcsolat főzete",
+                    "45",
+                    "1 óra",
+                    "6 arany",
+                    "—"
+                ],
+                [
+                    "Szerelem itala",
+                    "60",
+                    "maradandó",
+                    "10 arany",
+                    "150 arany"
+                ],
+                [
+                    "Szépség itala",
+                    "40",
+                    "1 nap",
+                    "10 arany",
+                    "50 v. 80 arany"
+                ],
+                [
+                    "Átváltozás itala",
+                    "Lásd a leírást!",
+                    "1 nap",
+                    "Lásd a leírást!",
+                    "Lásd a leírást!"
+                ]
+            ]
+        }
+    ]
+}

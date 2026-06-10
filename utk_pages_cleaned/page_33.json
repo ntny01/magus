@@ -1,0 +1,118 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": null,
+    "is_new_section": true,
+    "section_title": "Nemesi vér (1)",
+    "content_blocks": [
+        {
+            "type": "rule",
+            "text": "Ha a játékos nemesi származású karaktert akar indítani Háttérpontot köteles rákölteni. Ilyenkor a karakter nem kap rangot, vagyont vagy egyéb kiváltságokat, csupán kékvérű származása bizonyított. További előnye, hogy ha gyermekkorában nemesi udvarban nevelkedett vagy később nemesi körökben forgolódik, a Szociális képzettségeket úgy tanulhatja, mintha 4. fokú oktatótól sajátítaná el, ez az előny nem adódik össze az Oktatás képzettség nyújtotta előnyökkel, ellenben a karakter faja által biztosítottakkal igen.",
+            "title": "Nemesi vér (1)"
+        },
+        {
+            "type": "rule",
+            "text": "Nem kell Nemesi vér Hátteret felvennie például a balkézről származó fattyúnak, aki bár apja révén félig nemes, de a cselekedetek között nőtt fel, s később is egyszerű haramiaként tengeti napjait.",
+            "title": "Nemesi vér (1)"
+        },
+        {
+            "type": "rule",
+            "text": "",
+            "title": "Pszi érzékenység (1)"
+        },
+        {
+            "type": "rule",
+            "text": "A Háttér — mint ahogy a nevéből is kiderül — a Pszi képzettség elsajátításának előfeltétele. A karakter nem feltétlenül bír pallérozott elmével, de képes a tudati energiák használatára. Ha nem is oktatják neki a képzettséget, bizonyos szituációkban öntudatlanul is a felszínre törhetnek rejtett képességei.",
+            "title": "Pszi érzékenység (1)"
+        },
+        {
+            "type": "rule",
+            "text": "A karakter, aki rendelkezik a Pszi érzékenység Háttérrel, első Tapasztalati szinten annyi Pszi pontot kap, amennyi az Intelligencia tulajdonságának értéke, ami minden szinten tovább növekszik a Pszi képzettség általa birtokolt foka által biztosított pontokkal. Ezen pontok mellé a karakter minden Tapasztalati szinten (már az elsőn is) újabbakat vásárolhat KAP-jaiból. Értelemszerűen ahhoz, hogy képessé váljon pszi diszciplínák tudatos használatára, a karakternek bírnia kell a Pszi képzettség legalább 1. fokával.",
+            "title": "Pszi érzékenység (1)"
+        },
+        {
+            "type": "rule",
+            "text": "",
+            "title": "Rang (1-3)"
+        },
+        {
+            "type": "rule",
+            "text": "A karakter valamely szervezet vagy állam befolyásos tagja. Kézműves céh esetén tanácstag vagy céhmester, egy tolvaj klánban klánbarát vagy fontosabb orgazda, egyházi körökben befolyásos vallástudor vagy főpap, nemesi körökben főrang, míg varázstudóként valamely titkos társaság beavatottja netán egy rend nagymestere.",
+            "title": "Rang (1-3)"
+        },
+        {
+            "type": "rule",
+            "text": "A Ranggal rendelkező 1 pontért egy kisebb városka befolyásos embere, 2 pontért egy nagyvárosban is ismert és hatalommal rendelkező illető, míg 3 pontért tartományi szinten is befolyással bíró személy.",
+            "title": "Rang (1-3)"
+        },
+        {
+            "type": "rule",
+            "text": "Arról, hogy a karakter pontosan mekkora hatalommal rendelkezik, a KM joga dönteni.",
+            "title": "Rang (1-3)"
+        },
+        {
+            "type": "rule",
+            "text": "",
+            "title": "Sugallat (1)"
+        },
+        {
+            "type": "rule",
+            "text": "A karakternek bizonyos időközönként megmagyarázhatatlan megérzései, látomásai, hallucinációi támadnak. Úgy érzi, mintha korábban megélte volna már az adott szituációt. Megérzései néha életmentőek lehetnek, azonban előfordul, hogy cserbenhagyják, és az ajtó mögül fejvadászok helyett a fogadósné megszappant kislánya kerül elő. A képességet nem tudja tudatosan alkalmazni, és adott esetben a KM dobhat, hogy a karakter képes-e időben reagálni. Azonban arról, hogy ez az adottság a játékban pontosan hogyan működik, minden esetben a KM szava dönt.",
+            "title": "Sugallat (1)"
+        },
+        {
+            "type": "rule",
+            "text": "",
+            "title": "Szellemek jóindulata (1-3)"
+        },
+        {
+            "type": "rule",
+            "text": "A karakter vérvonala vagy mesterei igen jó kapcsolatot ápoltak vagy ápolnak a természetszellemekkel, melyek jóindulattal fordulnak feléjük. A természetszellemek a különböző fajok civilizációjának forgatagától távol, járhatatlan erdők, hegyvidékek mélyén lakoznak, folyókban, tavakban, ligetekben, barlangokban, rengetegekben, hegyekben. Ezek az asztrális és mentállények annyira eggyé váltak környezetükkel, hogy nem csak az általuk uralt területeket lélekkel bíró teremtményei felett rendelkeznek valamely asztrális hatalommal, de a hatalmasabbak az elemek és az időjárás felett is befolyással bírnak. Ezen lények általában helyhez kötöttek, addig léteznek, míg az anyagi világban horgonyukként szolgáló területek sértetlenek. Épp ezért jóindulattal azok iránt viseltetnek, kik betartják a törvényeiket, védelmezik a területüket, kisebb ajándékokkal, áldozatokkal keresik kedvüket. Az ilyen karaktereket lehetőségeikhez mérten segítik jó idővel, jó helyen felbukkanó vadászzsákmánnyal, menedékkel, esetleg „véletlenül” megfelelő helyen kilyukadó vadcsapásokkal, ösvényekkel.",
+            "title": "Szellemek jóindulata (1-3)"
+        },
+        {
+            "type": "rule",
+            "text": "Ez a Háttér a természetes népek, illetve leszármazottaik sajátja. A Háttér 3 pontos Háttér felvétele esetén hatalmát fejezik ki, pl. 1 pont egy tó szelleme, 2 pont egy rengetegé, 3 pont egy hegységé. A karakter személyisége, asztrális jellemvonásai idomulnak a szelleméhez. Egy hegyszellem pártfogoltja nyugodt, megingathatatlan lesz, szeme a gleccserek vakító fagy-kékjét idézi, míg egy völgymélyi erdő szellemének védence érzékeny lesz, cserfes, játékos, mint a lombok, szeme pedig a napsütötte levelek zöldjében játszik.",
+            "title": "Szellemek jóindulata (1-3)"
+        },
+        {
+            "type": "rule",
+            "text": "Ez a kapcsolat a karakter Asztrális és Mentális TME-jében is visszaköszön, a 2 vagy 3 pontos Háttér felvétele esetén a Háttér birtokosának TME-je minden Tapasztalati szinten 1 ponttal nő.",
+            "title": "Szellemek jóindulata (1-3)"
+        },
+        {
+            "type": "rule",
+            "text": "",
+            "title": "Vagyon (1-3)"
+        },
+        {
+            "type": "rule",
+            "text": "A vagyon adja meg a karakter induló pénzösszegét, és mindazon juttatások mértékét, amit családja vagy előélete biztosítani tud számára a későbbiekben. Azok, akik nem rendelkeznek ezzel a Háttérrel, a 193. oldalon a Felszerelés c. fejezetben meghatározott pénzösszeggel kezdik a játékot.",
+            "title": "Vagyon (1-3)"
+        },
+        {
+            "type": "rule",
+            "text": "1 pontos Háttér esetén a karakternek vagy közeli rokonának kisebb földbirtoka és kúriája van néhány szolgával. A karakter így indulója a klánja, rendje, iskolája által biztosított felszerelésen túl 20-40 arannyal rendelkezik. Éves szinten legfeljebb 5-10 arany értékű támogatást képes szerezni, a KM belátása szerint.",
+            "title": "Vagyon (1-3)"
+        },
+        {
+            "type": "rule",
+            "text": "2 pontos Háttér esetén a karakter vagy közeli rokona jómódú kereskedő, főpap vagy nemesember, jelentős földbirtokkal. Induláskor a karakter 50-100 arannyal rendelkezik és éves szinten 12-25 aranyat érő életjáradékkal bír, a KM belátása szerint.",
+            "title": "Vagyon (1-3)"
+        },
+        {
+            "type": "rule",
+            "text": "3 pontos Háttér esetén a karakter vagy közeli rokona a tartományúr közvetlen hűbérese, gróf vagy báró, esetleg egy jelentős kereskedőház vezetője. Induláskor 200-300 arannyal rendelkezik, birtokai évente 50-75 arannyal gyarapítják vagyonát, a KM belátása szerint.",
+            "title": "Vagyon (1-3)"
+        },
+        {
+            "type": "rule",
+            "text": "",
+            "title": "Tapasztalati szint"
+        },
+        {
+            "type": "rule",
+            "text": "Ynev bármely tájáról származzon is egy kalandor, tanulóévei nem érnek véget az iskola elhagyásával. Sőt, az igazi megmérettetés még csak most kezdődik számára. Minél többet lát, tapasztal, minél több veszedelmet él túl, tudása annál jobban bővül, képességei fejlődnek. Ennek a fejlődésnek az alapköve a tapasztalat. Tapasztalatot jelenthet az ellenség legyőzése, a nehéz, veszedelmes helyzetek túlélése, küldetések, feladatok teljesítése, rejtélyek megoldása, különös tárgyak, helyek, lények megismerése és még ezer egyéb dolog. A karakter, aki kiválasztottsága révén megvetett a nyughatatlanság átkával vagy áldásával, fokozottan szembesül mindezzel. Kalandról kalandra, mások által elképzelhetetlen",
+            "title": "Tapasztalati szint"
+        }
+    ]
+}

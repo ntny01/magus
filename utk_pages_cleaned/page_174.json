@@ -1,0 +1,207 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": false,
+    "section_title": "",
+    "content_blocks": [
+        {
+            "type": "rule",
+            "title": "Foglyul ejtés",
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "title": "Harc kábultan",
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "title": "Harc bénultan",
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "title": "Támadás hátulról",
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "title": "Támadás oldalról/félhátulról",
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "title": "Harc félelem hatása alatt",
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "title": "Védekező harc",
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "title": "Védekező harc (falhoz szorítva)",
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "title": "Védekező harc (megosztott figyelem)",
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "Harci helyzet"
+        },
+        {
+            "type": "table",
+            "headers": [
+                "",
+                "KÉ",
+                "TÉ",
+                "VÉ",
+                "CÉ"
+            ],
+            "rows": [
+                [
+                    "Meglepetésszerű támadás",
+                    "–",
+                    "+30",
+                    "–",
+                    "–"
+                ],
+                [
+                    "Harc magasabbról",
+                    "–",
+                    "+5",
+                    "–",
+                    "–"
+                ],
+                [
+                    "Harc helyhez kötve",
+                    "–10",
+                    "–",
+                    "–10",
+                    "nincs"
+                ],
+                [
+                    "Harc fekve",
+                    "nincs",
+                    "–20",
+                    "–10",
+                    "nincs"
+                ],
+                [
+                    "Harc mozgó lóról",
+                    "–",
+                    "+20",
+                    "+10",
+                    "–"
+                ],
+                [
+                    "Harc vakon vagy vaksötétben",
+                    "nincs",
+                    "–60",
+                    "–60",
+                    "–150"
+                ],
+                [
+                    "Harc láthatatlan ellenféllel",
+                    "nincs",
+                    "–40",
+                    "–40",
+                    "–75"
+                ],
+                [
+                    "Harc félelem hatása alatt",
+                    "TÉ",
+                    "–20",
+                    "+10",
+                    "–"
+                ],
+                [
+                    "Harc gyűlölettel eltelve",
+                    "+5",
+                    "+5",
+                    "–",
+                    "–"
+                ],
+                [
+                    "Roham",
+                    "–",
+                    "+20",
+                    "–20",
+                    "–20"
+                ],
+                [
+                    "Harc az ellenfél elfogásáért",
+                    "–",
+                    "–10",
+                    "–",
+                    "nincs"
+                ],
+                [
+                    "Harc kábultan",
+                    "–10",
+                    "–20",
+                    "–10",
+                    "–30"
+                ],
+                [
+                    "Harc bénultan",
+                    "Lásd a leírást!",
+                    "Lásd a leírást!",
+                    "Lásd a leírást!",
+                    "Lásd a leírást!"
+                ],
+                [
+                    "Támadás hátulról",
+                    "Lásd a leírást!",
+                    "Lásd a leírást!",
+                    "Lásd a leírást!",
+                    "Lásd a leírást!"
+                ],
+                [
+                    "Támadás oldalról/félhátulról",
+                    "Lásd a leírást!",
+                    "Lásd a leírást!",
+                    "Lásd a leírást!",
+                    "Lásd a leírást!"
+                ],
+                [
+                    "Védekező harc",
+                    "Lásd a leírást!",
+                    "Lásd a leírást!",
+                    "Lásd a leírást!",
+                    "Lásd a leírást!"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "Sebzés"
+        },
+        {
+            "type": "paragraph",
+            "text": "Sikeres támadás vagy találat esetén az áldozat sebet kap, amit Sebzéspontban (Sp) mérünk. Az elszenvedett Sp a legtöbb esetben szintén kockadobás eredménye. A különböző fegyverek, nyílvesszők vagy egyéb lövedékek mind másként sebeznek, hiszen például egy kard súlyosabb sebet ejt, mint egy tőr. Azt, hogy melyik fegyver mennyit sebez, lásd a Fegyverek című fejezetben a 197. oldalon."
+        },
+        {
+            "type": "paragraph",
+            "text": "Az áldozat által viselt páncél képes enyhíteni, olykor teljesen semlegesíteni a támadó fegyver sebzését. Erről bővebben a Páncélok és Vértek című fejezetben olvashatsz – ehelyütt álljon csak annyi, hogy a páncél Sebzésfelfogó értéke (SFÉ) levonódik a sebzésből, és az áldozat csak a maradékot szenvedi el. (Lásd a Vértezetek című fejezetben a 211. oldalon)"
+        },
+        {
+            "type": "paragraph",
+            "text": "Az Sp alaphelyzetben a karakter Fájdalomtűrési pontjaiból (Fp) vonódik le. Ezen csak az alábbi három módosító szabály változtathat:"
+        },
+        {
+            "type": "rule",
+            "title": "Túlütés",
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "title": "Csonkolás",
+            "rows": []
+        }
+    ]
+}

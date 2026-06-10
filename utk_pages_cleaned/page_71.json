@@ -1,0 +1,165 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": null,
+    "is_new_section": false,
+    "section_title": null,
+    "content_blocks": [
+        {
+            "type": "paragraph",
+            "text": "Az aszisz bárdokat nemritkán laza szálak fűzik egy-egy alvilági szervezethez (olykor tesznek egymásnak néhány kisebb, kölcsönös szívességet), azonban hazafiak lehet, mégis jobban szeretik megőrizni függetlenségüket."
+        },
+        {
+            "type": "paragraph",
+            "text": "Költészetük nem szárnyal oly művészi magasságokba, mint erigowi társaiké. Olyan zenét játszanak, amilyet a közönség akar: tréfás versikéket, karcos bordalokat vagy pajzán románcot, nekik igazán egyre megy..."
+        },
+        {
+            "type": "paragraph",
+            "text": "Fegyverek tekintetében megint csak a tolvajokhoz állnak közel: a könnyű, rövid, fürge mozdulatokkal forgatható tőröket, rövid kardokat részesítik előnyben. Ezeket ritkán viselik nyíltan, sokkal inkább alkarvédőbe, csizmaszárba rejtve (többi társukkal ellentétben a mérgeket sem vetik meg). Ha el akarják kerülni a közelharcot rendszerint dobótőrökkel, könnyű nyílpuskával fegyverzik fel magukat. Páncélt ritkán öltenek, akkor is megelégszenek a puha bőrvérttel, vagy legfeljebb a láncing nyújtotta védelemmel."
+        },
+        {
+            "type": "paragraph",
+            "text": "Az aszisz énekmondó képzettségei"
+        },
+        {
+            "is_new_section": true,
+            "section_title": "1. Tapasztalati szinten:",
+            "type": "paragraph",
+            "text": ""
+        },
+        {
+            "type": "table",
+            "headers": [
+                "Képzettség",
+                "Fok"
+            ],
+            "rows": [
+                [
+                    "Fegyverhasználat",
+                    "2. fok"
+                ],
+                [
+                    "Fegyverhasználat (dobófegyverek)",
+                    "2. fok"
+                ],
+                [
+                    "Kocsmai verekedés",
+                    "2. fok"
+                ],
+                [
+                    "Értékbecslés",
+                    "1. fok"
+                ],
+                [
+                    "Szerencsejáték",
+                    "1. fok"
+                ],
+                [
+                    "Legendaismeret",
+                    "1. fok"
+                ],
+                [
+                    "Művészetek (Éneklés)",
+                    "1. fok"
+                ],
+                [
+                    "Művészetek (Zenélés)",
+                    "1. fok"
+                ],
+                [
+                    "Szexuális kultúra",
+                    "2. fok"
+                ],
+                [
+                    "Lélektan",
+                    "1. fok"
+                ],
+                [
+                    "Tapasztalati mágia (bárd)",
+                    "3. fok"
+                ],
+                [
+                    "Akrobatika",
+                    "+10%"
+                ],
+                [
+                    "Álcázás/álruha",
+                    "+10%"
+                ],
+                [
+                    "Lopódzás",
+                    "+10%"
+                ],
+                [
+                    "Rejtőzködés",
+                    "+10%"
+                ],
+                [
+                    "Zsebmetszés",
+                    "+10%"
+                ],
+                [
+                    "Csapdafeldedezés",
+                    "+10%"
+                ],
+                [
+                    "Rejtekkutatás",
+                    "+10%"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "Az aszisz énekmondó képzettségei, melyeket mesterétől az Oktatás képzettség 4. foka által nyújtott előnnyel tanulhat:"
+        },
+        {
+            "type": "paragraph",
+            "text": "Akrobatika, Álcázás/álruha, Csapdafeldedezés, Csomózás, Értékbecslés, Fegyverhasználat, Hamisítás, Heraldika Írás/olvasás, Kocsihajtás, Kocsmai verekedés, Kultúra, Legendaismeret, Lélektan, Lopódzás, Művészetek, Rejtekhelykutatás, Rejtőzködés, Szabadulóművészet, Szerencsejáték, Szexuális kultúra, Színészet, Tapasztalati mágia (bárd), Történelem, Zárnyitás, Zsebmetszés."
+        },
+        {
+            "is_new_chapter": true,
+            "chapter_title": "Lombhullás Árvái",
+            "type": "paragraph",
+            "text": ""
+        },
+        {
+            "type": "paragraph",
+            "text": "Az erigowi és haonwelli (ritkább esetben ereni) bárdok a nemesi körök kifinomult hallással megáldott közönségének dalnokai. Megtalálhatók az Északi Szövetség majd minden országának kékvérű udvaraiban. Származásukat tekintve maguk is nemesi családok (nem ritkán balkézről született) sarjai, elszegényedett úri famíliák utolsó hírmondói, netán főrangok erkölcs nélkül nevelt gyermekei. Így az éneklés, zenélés művészetét egészen zsenge ifjúkoruktól már-már tudományos alapossággal tanulják. Soraikból kerül ki a melankolikus, mélabútól átitatott művészetükről híres Lombhullás Árváinak legtöbb tagja is."
+        },
+        {
+            "type": "paragraph",
+            "text": "Széptévők, párbajhősök és kitartott szeretőkszemélyében, forrongó vérükben könnyen lobot vet a szerelem lángja. Meghalni is képesek egy-egy női pillantásért, de vágyuk amilyen gyorsan felhorgad, ugyanolyan hamar illan el, nemegyszer a családi ékszerekkel együtt. Erkölcsük meglehetősen feslett, züllött életvitelük, szabados gondolkodásuk miatt ritkán tűrik meg őket családjuk keblén. Egy-egy kínos kimenetelű párbaj, szerelmi affér vagy hasonló, házuk nevére szégyent hozó cselekedet után a szülők gyakorta megelégelik gyermekük kicsapongásait és kitagadják az örökségből, elcsapják a háztól."
+        },
+        {
+            "type": "paragraph",
+            "text": "A szebbik nem meghódításán kívül egy dolog tudja még lázba hozni a Lombhullás Árváit: a versengés. Tehetségüket és tudásukat évről évre különböző rendű és rangú dalnokversenyeken mérik össze."
+        },
+        {
+            "type": "paragraph",
+            "text": "Ezekre a megmérettetésekre általában a környező városok kobzosai gyűlnek össze, de sokszor egészen távoli vidékek vándormuzsikusai is tiszteletüket teszik, hogy Dalpárba hívják ki a bajnokot, kit hagyományosan mirtuszkoszorúval vagy egy míves hangszerrel, ritkábban pénzzel jutalmaznak. Ha két bárd találkozik (akárhol is hozza őket össze az istenek szeszélye) szinte elkerülhetetlen a köztük kialakuló kedélyes vetélkedés, legyen szó a lant művészetéről vagy hölgyek kegyeiről."
+        },
+        {
+            "type": "paragraph",
+            "text": "Ha léhaságuk, kétes életvitelük miatt sokan is ítélik őket, mi sem áll tőlük távolabb, mint a durva, közönséges viselkedés. Megvetik a nyílt erőszakot, jobban kedvelik a sértéseket, félreértéseket szép szóval elsimítani. Lantjuknál, tőrkardjuknál talán csak főurakat is megszégyenítő modoruk veszedelmesebb. A szavakkal oly ügyesen bánnak, hogy képesek addig csűrni-csavarni a mondandójukat, míg végül még azok kérnek bocsánatot tőlük, akikbe belekötöttek. Ugyanakkor nem nevezhetők kényelemben elpuhult, gyáva piperkőcöknek sem, a művészetüket vagy a hölgyek becsületét ért sérelemért azonnal elégtételt követelnek. Efféle kényes ügyeiket általában párbaj útján intézik el."
+        },
+        {
+            "type": "paragraph",
+            "text": "Vannak azonban köztük igazi művészek is, akik még a királyi udvarokban is szívesen látott vendégek, ország-szerte elismert költők, poéták, udvari énekesek. Szívükhöz közel áll minden, ami gyönyörködtet, kápráztassa el akár az érzékeket, akár a testet vagy a lelket. Emelkedett, kifinomult ízlésükhöz és pazarló életmódjukhoz azonban gyakorta társul közömbösség, a meg nem értett művészsoros érzett melankolikus világfájdalom."
+        },
+        {
+            "type": "paragraph",
+            "text": "Legtöbbjük Dellát vagy Albornet választja pártfogójául, nem ritka eset az sem, hogy az igazán tehetségesek idővel a két istennő papjává lépnek elő."
+        },
+        {
+            "type": "paragraph",
+            "text": "Alkotásaikat, zenéjüket cizellált túldíszítettség jellemzi, dalaikban mindig rendkívül finom, művészi gonddal formált, néha már kissé dekadenciába hajló szólamok csendülnek föl. Kedvenceik közé a szonettek, románcok és balladák tartoznak. Hallgatóságuk általában a nemesi udvarok, bálok, lovagi tornák műértő közönsége. Hangszerük hagyományosan a lant, a mandolin vagy a líra. Az élet minden területén szeretik hangsúlyozni kiemelkedett származásukat, így kinézetükre, megjelenésükre mindig sokat adnak, öltözködésük a legújabb divathoz alkalmazkodik. Ruháik hivalkodóak, magamutogatóak."
+        },
+        {
+            "type": "paragraph",
+            "text": "Fegyverek terén – több bárdtársukkal ellentétben – a rapírt és a hárítótőrt részesítik előnyben, de nem vetik meg a könnyen rejthető dobótőröket, könnyű nyílpuskákat sem. A többi bárdhoz hasonlóan ők is idegenkednek a merev nehézvértetől. Legtöbbjük a láncés sodronyinget is túlzottan porosnak tartja, már csak súlyuk és kényelmetlen viseletük miatt is. Köreikben leginkább a díszesen kialakított, ezüsttel-arannyal hímzett puha bőrvértek, illetve a drága brigandinok dívnak, amely elegáns viselete mellett kellő védelmet is nyújt."
+        },
+        {
+            "type": "paragraph",
+            "text": "Mágiájuk főként a Dalés Hangmágiára terjed ki, ezen a két területen érzik igazán otthon magukat."
+        }
+    ]
+}

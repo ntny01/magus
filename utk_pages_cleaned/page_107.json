@@ -1,0 +1,316 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": true,
+    "section_title": "III. Varázshatalmak a boszorkányok a Hatalom Italaiból merítik.",
+    "content_blocks": [
+        {
+            "type": "rule",
+            "text": "Minden alkalommal, amikor felhajtanak belőle egy adagot, annyi Mana pontjuk lesz, amennyi maximális Mp-tal bírnak. Nem ihatnak azonnal bármennyit, mert a főzet minden alkalommal csökkenti Egészségüket. Márpedig ha Egészségük 0-ra zuhan, nyomban meghalnak. (Persze egyéb esetek is adódhatnak, amikor az alacsony Egészség mértéktelen hátrányt jelent!) Minden elfogyasztott italadag 3-mal csökkenti a boszorkányok Egészségét. Az ital elemésztette Egészségpontok csak kiadós alvással térnek vissza. Ha a karakternek nincs módja teljesen kipihennie magát, jóval kevesebb Egészségpontot kap vissza. Négy óránál rövidebb alvásidő alatt egy sem, attól kezdve óránként 1 pont tér vissza; a teljes kipihentség a karakter állapotától és a helyzettől függően 8–14 órát jelent. A boszorkány képes elkészíteni a Hatalom Italát 3 óra alatt. A főzethez szükséges füvek 1 aranyért bárhol megvásárolhatóak, vagy 4. fokú Herbalizmussal a természetben összegyűjthetőek. (Lásd még a Varázstárgyak című fejezetet a 497. oldalon.)",
+            "title": "A Hatalom Itala",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "Az asszonyi praktikákat gyakorló boszorkányok másféle-képp is képesek feltöltődni, lásd a Mágikus ölelés nevezetű varázslatot a 303. oldalon.",
+            "title": "Mágikus feltöltődés",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "table",
+            "text": "",
+            "title": "Boszorkány alapjellemzők",
+            "headers": [
+                "Jellemző",
+                "Érték"
+            ],
+            "rows": [
+                [
+                    "Erő",
+                    "10"
+                ],
+                [
+                    "Gyorsaság",
+                    "14"
+                ],
+                [
+                    "Ügyesség",
+                    "14"
+                ],
+                [
+                    "Állóképesség",
+                    "12"
+                ],
+                [
+                    "Egészség",
+                    "15"
+                ],
+                [
+                    "Karizma",
+                    "15"
+                ],
+                [
+                    "Intelligencia",
+                    "14"
+                ],
+                [
+                    "Akaraterő",
+                    "14"
+                ],
+                [
+                    "Asztrál",
+                    "14"
+                ],
+                [
+                    "Érzékelés",
+                    "13"
+                ],
+                [
+                    "Ép",
+                    "15"
+                ],
+                [
+                    "Fp",
+                    "26"
+                ],
+                [
+                    "Ψp",
+                    "14"
+                ],
+                [
+                    "Mp",
+                    "8"
+                ],
+                [
+                    "Kegy-pont",
+                    "—"
+                ],
+                [
+                    "MME",
+                    "18"
+                ],
+                [
+                    "AME",
+                    "18"
+                ]
+            ]
+        },
+        {
+            "type": "table",
+            "text": "",
+            "title": "Karakteralkotás pontköltségek",
+            "headers": [
+                "Kategória",
+                "Érték"
+            ],
+            "rows": [
+                [
+                    "Iskola (Boszorkány)",
+                    "5 pont"
+                ],
+                [
+                    "Mágikus fogékonyság",
+                    "—"
+                ],
+                [
+                    "Pszi érzékenység",
+                    "—"
+                ],
+                [
+                    "HM",
+                    "6 pont (3 HM)"
+                ],
+                [
+                    "Fp",
+                    "3 pont (3 Fp)"
+                ],
+                [
+                    "Kp",
+                    "15 pont (15 Kp)"
+                ],
+                [
+                    "Mana pont",
+                    "21 pont (7 Mana pont)"
+                ]
+            ]
+        },
+        {
+            "type": "table",
+            "text": "",
+            "title": "Boszorkány harci értékek",
+            "headers": [
+                "Jellemző",
+                "Érték"
+            ],
+            "rows": [
+                [
+                    "Fegyver",
+                    "fvn*"
+                ],
+                [
+                    "Időigény",
+                    "3"
+                ],
+                [
+                    "KÉ",
+                    "27"
+                ],
+                [
+                    "TÉ",
+                    "38"
+                ],
+                [
+                    "VÉ",
+                    "88"
+                ],
+                [
+                    "CÉ",
+                    "30"
+                ],
+                [
+                    "Sebzés",
+                    "1k6"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "*fegyver nélkül",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "table",
+            "text": "",
+            "title": "Boszorkány képzettségek",
+            "headers": [
+                "Képzettségek",
+                "Fok",
+                "Kp"
+            ],
+            "rows": [
+                [
+                    "Fegyverhasználat (számszeríjak)",
+                    "2 fok",
+                    "5 Kp"
+                ],
+                [
+                    "Helyismeret (szülőföld)",
+                    "3 fok",
+                    ""
+                ],
+                [
+                    "Kultúra (saját)",
+                    "3 fok",
+                    ""
+                ],
+                [
+                    "Lélektan",
+                    "3 fok",
+                    "5 Kp"
+                ],
+                [
+                    "Művészetek (Tánc)",
+                    "3 fok",
+                    ""
+                ],
+                [
+                    "Nyelvtudás (anyanyelv)",
+                    "3 fok",
+                    ""
+                ],
+                [
+                    "Nyelvtudás",
+                    "3 fok",
+                    ""
+                ],
+                [
+                    "Politika/diplomácia",
+                    "2 fok",
+                    "5 Kp"
+                ],
+                [
+                    "Udvari etikett",
+                    "3 fok",
+                    "3 Kp"
+                ],
+                [
+                    "Alkímia",
+                    "2 fok",
+                    ""
+                ],
+                [
+                    "Herbalizmus",
+                    "3 fok",
+                    ""
+                ],
+                [
+                    "Írás/olvasás",
+                    "2 fok",
+                    ""
+                ],
+                [
+                    "Legendaismeret",
+                    "2 fok",
+                    ""
+                ],
+                [
+                    "Történelem",
+                    "3 fok",
+                    "6 Kp"
+                ],
+                [
+                    "Pszi (pyarroni)",
+                    "2 fok",
+                    ""
+                ],
+                [
+                    "Tapasztalati mágia (boszorkány)",
+                    "3 fok",
+                    ""
+                ],
+                [
+                    "Lopódzás",
+                    "24%",
+                    "2 Kp"
+                ],
+                [
+                    "Rejtőzés",
+                    "29%",
+                    "3 Kp"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A legnevesebb és valódi hatalommal bíró szervezet a Liviniai Gyülekezet. Akárcsak más, kisebb rendek, ők is Morgena papi szervezetétől eredeztetik magukat, s ebben lehet némi igazság. Céljaik, módszereik koronként változnak, egy azonban bizonyos: Tharr, a Háromfejű hívei ellen engesztelhetetlen gyűlölet él szívükben. Összetartásuk és befolyásuk világszerte híres – mondják, egyes tagjaik a Dorani Varázslótanács urainak halószobáikról is regélhetnének. Erősen kötődnek a kyr hagyományokhoz, s a legtöbb régi ereklye is Livinában halmozódott fel.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "A Hetedkor alkonyán ezen rend tagjai majd minden északi szövetségi, illetve Tharrt nem túl lelkesen támogató toroni nemes hálótermében, vagy épp asztalánál megfordulnak. Nem egyet közülük vérségi kapcsolat is köt Észak egyes hatalmasságaihoz, például Alyr Arkhon a félelf nekromanta édesanyja a Gyülekezet Nagyasszonya volt egészen haláláig; Tharr papjainak oltárán végezte.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "A város melyről a szervezet nevét kapta nem csak Tharr papjainak ellensége, de igen kellemetlen szálka Alidax Boszorkány-hadrnőjének szemében is. Békeidőben ugyan megelégszik a két szekta egymás előrejelzésének, kapcsolatainak rombolásával, néhanapján egy-egy mágikus csapásváltással a Nagyasszony és a Hadrnő között – melyek a Fekete Lobogó hatalma miatt rendszerint az utóbbi győzelmével zárulnak; azonban az igazi háborúság a Zászlóháborúk idején tör csak ki. Mindkét oldal igyekszik a másikat ellehetetleníteni pártfogóik seregeinek segítségével – mivel saját komolyabb haderővel nem igazán rendelkeznek –, s esetlegesen végső csapást mérni, mellyel végre ellenlábasaik gerincét törik.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "3694-ben például az Alidaxhoz közeli Wieryn-foknál az Aszisz Nagykirály, Otlokir hajói, illetve a segítségükre küldött toroni flottaegységek ütköztek meg a Karnelian vezette Hercegkapitányi Liga, illetve a Sineros Szövetség pár hajójával. A történettudorok mind a mai napig értetlenül állnak a csata okai előtt, hiszen egyik fél számára sem volt kedvező a helyszín, mivel elég messze estek hazai támaszpontjaiktól, ráadásul Alidax közelségét leszámítva semmiféle kihatással sem volt a 14. Zászlóháború kimenetelére.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        }
+    ]
+}

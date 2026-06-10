@@ -1,0 +1,155 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": true,
+    "section_title": "A Lar-Dori varázsló a varázslónál leírtakon kívüli különleges előnyei és hátrányai:",
+    "content_blocks": [
+        {
+            "type": "paragraph",
+            "text": "kalandoroknak tartják fenn Pyraron nagyjai, akik a mágia művészetében kívánnak elmélyedni. A tandíj meglehetősen boros, félezer arany a képzés tíz esztendejére. Nekik „csupán” az északról megörökölt Kyr Metódusra, illetve az északi Mozaikmágia elemeit oktatják.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "Kalandor karakternek persze nem csupán a tandíjat kell kifizetnie, és máris mágikus praktikák birtokába kerül. Egy-egy képzettségért, illetve a Mágikus fogékonyság Háttérrel, valamint Kp-ből ki kell fizetnie az iskola által számára tanított képzettséget (természetesen már csak a 4. fokú Oktatás képzettség által csökkentett értéket).",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "Az Északi Iskola növendékei, nem kevesebb mágikus tehetséggel áldattak meg, mint a Belsőszigeti iskola növendékei, elszánásuk azonban nem elég erős, vagy csak lelkük nem elég tiszta az efféle tudományokhoz. Ők is Lar-Dori varázslói, a fény szolgái, az embernem oltalmazói, belőlük az Államszövetség diplomatái, vezetői netán azok tanácsadói válnak. Jellemükben mindig helyet kap az Élet, de nem vonatkoznak rájuk a Belsőszigeti iskola diákjainak megkötései – ők a Kyr Metódus helyett a Godoni Örökség 3. fokát sajátítják el 1. Tapasztalati szinten.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "A Belsőszigeti magiszterei, az Államszövetség legtehetségesebb mágusai, tanítványaik a godoni eredetű mágia letéteményesei, számukra hozzáférhető csupán tanácstaggá választásuk után a godoni mágia, melyet jelenleg csakis a Fehér Páholy Magastanácsának tagjai, illetve kiválasztott tanítványaik birtokolnak. (Jelen kötet hasábjain még nem kerül a godoni hagyaték részletes tárgyalásra.)",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "Az itt tanult varázslók neveltetésüknek és kiválasztásuknak hála olyan emberek, kik bármit képesek feláldozni a jó érdekében. Jellemük szigorúan Élet és az esetek többségében helyet kap benne a Rend is. Erkölcsi kódexük szerint nem okozhatnak akaratlagosan sebesülést semmilyen érző létformának, csak mások életének védelme érdekében. Nem birtokolhatnak világi javakat, csak a Rendjük által számukra kiutalt tárgyakat, mivel a birtoklás megrontja a lelket, mert amaz természeténél fogva majd egyre többet akar.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "Minden Lar-Dori varázsló legfontosabb feladata a Pyraroni Államszövetség és az embernem védelme. A szemlélődés, a háttérbehúzódás, a lélekvándorlásban magasra jutott lelkük bölcsességének tovább adása, mások segítése a megismerés útján.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "Akik megszegik eme szabályokat, méltatlannak bizonyulnak botjuk viselésére, lelkük romlottá válik. A Zónájukon azonnal felismerhetővé válik a romlás fekélyes jele. Ám a szigorú nevelés, a több mint másfél évtized alatt beléjük vert gondolkodásmód és erkölcsiség még a lehetőséget is kizárja, hogy Lar-Dori varázsló ilyet tegyen.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "A Lar-Dorban tanult varázslók számára nem oktatják a Nekromanciát és a Démonológiát, mely tanok tiltott és meg nem tűrt tudásnak számítanak az Államszövetség berkein belül, azonban az északi eredetű Mozaikmágia összes többi mágiatípusát képesek elsajátítani iskolájukban.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "I. 3. Tapasztalati szinten rendjétől megkapja varázslóbotját, ha a Pyraroni Varázslórend tagjává válik, és ha érdemes rá. Ennek eldöntése a KM jogköre.",
+            "title": "Varázslóbot megszerzése",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "II. A Lar-Dorban tanult varázslók az Államszövetség nagy tiszteletben tartott tagjai. Mindegyikük nemesembernek számít, míg közelebb állnak a néphez, mint saját nemesei vagy papjai. Szolgálnak és vezetnek, ha kell saját tetteikkel példát mutatva. Nem riadnak vissza a nehézségektől, vagy a megpróbáltatásoktól sem, ha a szükség úgy hozza. Gyűrűjük, botjuk mindenhol elemhez, hajlékhoz és segedelemhez juttatja őket a nemesi kastélyokban, a pyrar panteon szentélyeiben és az Államszövetség falvaiban egyaránt.",
+            "title": "Lar-Dori varázslók társadalmi helyzete és előnyei",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "III. A Lar-Dori varázslók 1. Tapasztalati szinten megszerzett képzettségei és a később oktatott ismeretek is megegyeznek a varázslónál leírtakkal azonban a számára tiltott képzettségnek számít a Nekromancia és a Démonológia 2. foknál magasabb szintű ismerete. Emellett pedig 1. Tsz.-en, ha a Belsőszigeti, vagy az Északi Iskola diákja, nem a Pszi (kyr) képzettség 3. fokát sajátítják el, hanem a Pszi (Godoni Örökség) 3. fokát. Természetesen a továbbiakban mindkét képzettségágat tanulhatják az iskola nyújtotta 4. fokú Oktatás képzettségnek megfelelő bónuszokkal.",
+            "title": "Képzettségek és korlátozások",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "A Délvidék legnagyobb varázslórendje, a Pyraroni Eszmét magukénak valló beavatottakat magába tömörítő szervezet. A Rend nyílt, minden 3. Tapasztalati szintet elért varázsló kérheti felvételét, bármelyik iskolában vagy magányos mesternél is sajátította el a mágia tudományát. Mivel azonban a jelentkezőket a Rend nagy tudású mesterei (a Fehér Páholy mágusai) szigorú asztrális és mentális próbának vetik alá, csak kevesen nyerhetnek felvételt. Főként azok, akik a Lar-Dori iskolában illetve a Rendhez tartozó mestertől tanultak.",
+            "title": "Pyraroni Varázslórend",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "A próba során ugyanis kétséget kizáróan kifürkészik, egyetért-e a Rend céljaival, elfogadja-e törvényeit és magáénak vallja-e a Pyraroni Eszmét. Ha a szigorú erkölcsi és szellemi követelményeknek megfelelt, a Rend tagjává avatják és a Rend magisztereinek segítségével elkészítheti varázslóbotját. A Pyraroni Varázsló Rend tagja a következő feltételeknek kell megfeleljen:",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "Asztráltestét ne fertőzze fekete mágia nyoma.",
+            "title": "Rendtagsági feltételek",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "Jellemében kapjon helyet az Élet",
+            "title": "Rendtagsági feltételek",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "Varázslóként érje el legalább a 3. Tapasztalati szintet.",
+            "title": "Rendtagsági feltételek",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "Tartsa magát a Rend belső törvényeihez.",
+            "title": "Rendtagsági feltételek",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "Vallja magának a Pyraroni Eszmét, azaz az élet és az emberi kultúra védelmét.",
+            "title": "Rendtagsági feltételek",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "Ezen követelményeknek nem pusztán a beavatásakor kell megfelelnie, hanem ettől fogva egész életén át; s ha megszegi őket, kizárattatik a Rendből. Amennyiben a már beavatott tag a két első feltételnek nem felel meg; varázslóbotja, tudásának és Rendhez tartozásának jelképe elfordul tőle, s többé nem képes használni azt.",
+            "title": "Rendtagság megszegése",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "A Pyraroni Rend minden varázslója maga is részt vesz botjának elkészítésében: magiszterek és mágusmesterek segítségével a botba foglalja okkult képességeit. A bot elkészítése heteket vesz igénybe, mely során a beavatottat felváltva segítik a Rend nagyjai. A bot nem hagyományos módon készül, hanem a puszta akarat teremti meg és formálja ki a semmiből, pontosabban a világmindenséget átható energiából. Ennek ellenére gyakran természetes eredetű botnak látszik, hiszen az alkotó emberi képzelet a természetből merít.",
+            "title": "Varázslóbot elkészítése",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "Formája nem meghatározott, külseje tulajdonosának lényéből fakad, hiszen a bot a varázsló lelkének és Zónájának jelképe; szimbolikus díszítéseiben, megmunkálásában minden",
+            "title": "Varázslóbot tulajdonságai",
+            "headers": [],
+            "rows": []
+        }
+    ]
+}

@@ -1,0 +1,16 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": false,
+    "section_title": "",
+    "content_blocks": [
+        {
+            "type": "paragraph",
+            "text": "hidak megtervezését is vállalhatja kockázat nélkül. Képzettsége miatt a Rejtekhelykutatás képzettségre +20%-ot kap."
+        },
+        {
+            "type": "paragraph",
+            "text": "5. fok A legendás építész már művészi fokra fejlesztette az építészetet. Katedrálisokat, uralkodói palotákat emel, új stílusokat talál ki, új technikákat eszel ki és alkalmaz. Képzettsége folytán +30%-ot kap a Rejtekhelykutatás képzettségére."
+        }
+    ]
+}

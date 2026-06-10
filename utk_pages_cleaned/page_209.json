@@ -1,0 +1,52 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": true,
+    "section_title": "A Hitvallás Ereje",
+    "content_blocks": [
+        {
+            "type": "flavor_text",
+            "text": "A hit nem csupán szó, hanem tett, mely hegyeket mozdít és isteneket hív. Aki igazán hisz, annak ereje túlszárnyalja a halandó korlátokat. - Ismeretlen papírnok"
+        },
+        {
+            "type": "paragraph",
+            "text": "A M.A.G.U.S. világában a hit nem csupán vallási meggyőződés, hanem valós, tapintható erőforrás, melyet a papok, szerzetesek és más istenhívők használnak. A hitvallás ereje a karakter istenével való kapcsolatának mélységétől függ, és közvetlenül befolyásolja a liturgiák hatékonyságát, valamint bizonyos képességek erejét."
+        },
+        {
+            "type": "rule",
+            "title": "Hitvallás Szintjei",
+            "headers": [
+                "Szint",
+                "Leírás",
+                "Bónusz"
+            ],
+            "rows": [
+                [
+                    "1. Kezdő Hívő",
+                    "Alapvető liturgiák",
+                    "+1 SFE liturgiákra"
+                ],
+                [
+                    "2. Elkötelezett",
+                    "Közepes liturgiák",
+                    "+2 SFE liturgiákra, +1 MGT"
+                ],
+                [
+                    "3. Fanatikus",
+                    "Erős liturgiák",
+                    "+3 SFE liturgiákra, +2 MGT, +1 VÉ"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A hitvallás szintje a karakter tapasztalati pontjainak elköltésével növelhető, vagy bizonyos isteni küldetések teljesítésével. Fontos megjegyezni, hogy az istenek haragja súlyos következményekkel járhat a hűtlenek számára."
+        },
+        {
+            "type": "rule",
+            "title": "Isteni Beavatkozás",
+            "headers": [],
+            "rows": []
+        }
+    ]
+}

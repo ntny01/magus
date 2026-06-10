@@ -1,0 +1,249 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": true,
+    "section_title": "Paraclem teremtése",
+    "content_blocks": [
+        {
+            "type": "paragraph",
+            "text": "Paraclem teremtése – Hő"
+        },
+        {
+            "type": "paragraph",
+            "text": "Mana pont: 2/E"
+        },
+        {
+            "type": "paragraph",
+            "text": "Időtartam: Lásd a formázásokat!"
+        },
+        {
+            "type": "paragraph",
+            "text": "Varázslás ideje: 1 szegmens/E"
+        },
+        {
+            "type": "paragraph",
+            "text": "A varázsló nem tiszta Őstüzet, hanem annak egyik kivetülési formáját, Elemi Hőt teremt. A hőmérséklet az adott formán belül első területen 10 °C fokkal növekszik – a formán túl ellenben egyáltalán nem érződik, mint ahogy fényt sem bocsát ki, épp ezért a szem számára láthatatlan (infralátással azonban érzékelhető). A sebzés 50 °C fok felettiekor 10 °C fokonként 2 Sp-vel nő."
+        },
+        {
+            "type": "paragraph",
+            "text": "Paraclem teremtése – Fagy"
+        },
+        {
+            "type": "paragraph",
+            "text": "Mana pont: 2/E"
+        },
+        {
+            "type": "paragraph",
+            "text": "Időtartam: Lásd a Formázásokat!"
+        },
+        {
+            "type": "paragraph",
+            "text": "Varázslás ideje: 1 szegmens/E"
+        },
+        {
+            "type": "paragraph",
+            "text": "A varázsló az Ősvíz egyik megjelenési formáját, Elemi Fagyot teremt. A formán belül első területen hűvös, fokozott erősítés során fagy jön létre. Ez E-nként 10 °C fok hőmérsékletcsökkenést eredményez. A sebzés -50 °C foknál jelentkezik, és innen kezdve minden E után 2 Sp-t okoz. A Elemi Fagy ellen meleg ruházattal nem lehet védekezni, hiszen az – mágiáról lévén szó – a felöltött holmik alatt is érvényesül."
+        },
+        {
+            "type": "paragraph",
+            "text": "Paraclem teremtése – Fény"
+        },
+        {
+            "type": "paragraph",
+            "text": "Mana pont: 2/E"
+        },
+        {
+            "type": "paragraph",
+            "text": "Időtartam: Lásd a Formázásokat!"
+        },
+        {
+            "type": "paragraph",
+            "text": "Varázslás ideje: 1 szegmens/E"
+        },
+        {
+            "type": "paragraph",
+            "text": "A varázsló a Formázás megszabta területen és alakban az Ősbe Paraclemet, Elemi fényt teremt. Ennek Erőssége a varázslat E-jétől függ, az alábbi táblázat szerint:"
+        },
+        {
+            "type": "table",
+            "headers": [
+                "E",
+                "Hasonló erejű fényforrás"
+            ],
+            "rows": [
+                [
+                    "1",
+                    "Mécsesfény"
+                ],
+                [
+                    "3",
+                    "Nagyobb olvasógyertya lángja"
+                ],
+                [
+                    "5",
+                    "Fáklya lángja"
+                ],
+                [
+                    "7",
+                    "Táborűz fénye"
+                ],
+                [
+                    "9",
+                    "Máglya fénye"
+                ],
+                [
+                    "11",
+                    "Napfény borús időben"
+                ],
+                [
+                    "13",
+                    "Napsütés"
+                ],
+                [
+                    "15+",
+                    "Vakító fény"
+                ],
+                [
+                    "20+",
+                    "Nyitott szem esetén végleges vakság"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "Paraclem Teremtése – Sötétség"
+        },
+        {
+            "type": "paragraph",
+            "text": "Mana pont: 2/E"
+        },
+        {
+            "type": "paragraph",
+            "text": "Időtartam: Lásd a Formázásokat!"
+        },
+        {
+            "type": "paragraph",
+            "text": "Varázslás ideje: 1 szegmens/E"
+        },
+        {
+            "type": "paragraph",
+            "text": "Hasonló a Fény Teremtése varázslathoz, azonban ez az Ősléggel ellentétes elem, az Ősföld megnyilvánulását idézi meg. Úgy szerencsés elképzelni, akár valami negatív, fekete fényt. Épp ezért az Elemi Sötétet csak az Elemi Fény világíthatja be, a lámpások, és fáklyák világa vagy akár a Nap ehhez nem elegendő: fényük nem is látszik, legfeljebb a hőhatásuk érződik. Így a területen, ahol az Elemi Sötét nyilvánul meg, a varázslat által meghatározott fényviszonyok érvényesülnek, függetlenül a napszaktól vagy a mesterséges fényforrásoktól. A varázsló az Elemi Sötétséget az alábbi táblázat szerint hozhatja létre:"
+        },
+        {
+            "type": "table",
+            "headers": [
+                "E",
+                "Hasonló félhomály vagy sötétség"
+            ],
+            "rows": [
+                [
+                    "1",
+                    "Alkonyat"
+                ],
+                [
+                    "3",
+                    "Fogyó hold"
+                ],
+                [
+                    "5",
+                    "Csillagos éjszaka"
+                ],
+                [
+                    "7",
+                    "Éjszaka kivilágítatlan szobában"
+                ],
+                [
+                    "9",
+                    "Vaksötét pl. barlangban"
+                ],
+                [
+                    "11+",
+                    "Ultra- és infralátás sem működik"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "Telekinézis"
+        },
+        {
+            "type": "paragraph",
+            "text": "Mana pont: 1/E"
+        },
+        {
+            "type": "paragraph",
+            "text": "Időtartam: 1 kör"
+        },
+        {
+            "type": "paragraph",
+            "text": "Varázslás ideje: 1 szegmens/E"
+        },
+        {
+            "type": "paragraph",
+            "text": "Hatásában hasonló a Pszi diszciplínáinál leírt Telekinézishez, valójában azonban az Elemi Erő egyfajta szabad megjelenési formája. A varázslattal a varázsló képes 1 körig a levegőbe emelni, avagy sétáló ember sebességével mozgatni 5 ynevi fontnyi súlyt. Az erősítés növelésével természetesen emelkedik a mozgatható súly mennyisége is. Az egyetlen Elemi Mágiaforma, melyhez nem kapcsolható Formázás mozaik."
+        },
+        {
+            "type": "paragraph",
+            "text": "Formázás"
+        },
+        {
+            "type": "paragraph",
+            "text": "A Formázás mozaikok lényege, hogy a varázsló nem csupán kiragad egy darabot valamely Őselemből, hanem a Manaháló szöveténekből egyfajta burkot, mágikus kötést idéz köré, ami az általa kívánt formába rendezi az anyagot, nem engedvén feloldódni a Manaháló hullámai között. Ezen mozaikok segítségével a már korábban megidézett Ős-, vagy Paraclemet képes a varázsló akaratának megfelelő formába kényszeríteni, illetve egyes esetekben mozgatni a zónáján belül a létrehozott alakzatokat, legfeljebb futó ember sebességével. A varázslók az évezredek során kilenc iskolaformát hoztak létre, melyeket három csoportba (Kötetlen, Irányított és Kötött formákba) sorolnak. Azonban az időről időre felbukkannak újabb formák is, melyeket nagyhatalmú varázslók dolgoztak ki. Ezeket nevezzük Szabad Elemi Formáknak."
+        },
+        {
+            "type": "paragraph",
+            "text": "Formázás Mozaik"
+        },
+        {
+            "type": "paragraph",
+            "text": "Mana pont: Lásd a leírást!"
+        },
+        {
+            "type": "paragraph",
+            "text": "Időtartam: Lásd a leírást!"
+        },
+        {
+            "type": "paragraph",
+            "text": "Varázslás ideje: 1 szegmens"
+        },
+        {
+            "type": "paragraph",
+            "text": "A mozaikot a varázsló az Elemidézés mozaikhoz kell, hogy hozzákösse. Ennek hiányában a megidézett Őselem vagy Paraclem energia egyszerűen feloldódna a Manahálóban. Ez a varázslatmozaik szolgál kötésként, segítségével annak létrehozója képes egy körre az adott formába kényszeríteni a megidézett elemeket. Az alábbi táblázat megmutatja, hogy 1 E Erősségű Ős-, vagy Paraclem egy adott alakzatba való formázása mekkora energiát emészt fel:"
+        },
+        {
+            "type": "table",
+            "headers": [
+                "Iskolatípus",
+                "Iskolaforma",
+                "Mp igény"
+            ],
+            "rows": [
+                [
+                    "Kötetlen",
+                    "Nyíl",
+                    "1/E"
+                ],
+                [
+                    "Irányított",
+                    "Kitörés, Csóva",
+                    "1/E"
+                ],
+                [
+                    "Kötött",
+                    "Szőnyeg, Fal",
+                    "2/E"
+                ],
+                [
+                    "",
+                    "Sátor, Kupola, Aura, Kard",
+                    "2/E"
+                ],
+                [
+                    "Szabad E. Forma",
+                    "Varázsló elképzelése szerint",
+                    "3/E"
+                ]
+            ]
+        }
+    ]
+}

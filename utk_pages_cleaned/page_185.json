@@ -1,0 +1,80 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": false,
+    "section_title": "",
+    "content_blocks": [
+        {
+            "type": "rule",
+            "title": "Gilmen rothadása",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "Szint: 1 Egész szervezetre ható Lassú lefolyású Harapással terjed Minimális hatás: kritikus Maximális hatás: halálos Egészségpróba: naponta"
+        },
+        {
+            "type": "paragraph",
+            "text": "Gilmen a balszerencsés boszorkánymester a Hetedkor hajnalán tevékenykedett, megbízói akarata szerint egyaránt állított elő mérgeket, illetve személyre szabott rontásokat. Munkásságának csúcsát a Vryann chara-i ütközetben bemutatott légmérge jelentette, mely nemcsak elpusztította az ellenséges oldalon álló csapatok zömét, de a megzavart, bomlott elméjű, haldokló szerencsétleneket saját sorstársaik ellen uszította. Az utolsó általa kifejlesztett betegségről a hetedkori bölcsek nem rendelkeznek hitelt érdemlő leírással, mivel Gilmen az első áldozatai között volt a kórnak. A betegség kezdeti tünetei leginkább a leprára hasonlítanak, a test egészre érzéketlenné válik és felületén kelések jelennek meg, majd a halállal fenyegető állapot elérésekor az ujjak, illetve a kisebb testrészek leválnak. A hatás meglehetősen riasztó: az áldozat állapotának megfelelő mennyiségű Fp-t veszít, s egyes Tulajdonságai, Ereje, Ügyessége, Gyorsasága, Egészsége és Karizmája is a táblázatnak megfelelően csökken. A betegség felépülését az is hátráltathatja, hogy a lepra ellen eredményesen alkalmazott gyógymódok – különféle tinktúrák és balzsamok – ez esetben teljesen hatástalanok. A betegség elleni egyetlen hatásos, ismert ellenszer a mágia: a papok gyógyító varázslatai."
+        },
+        {
+            "type": "paragraph",
+            "text": "A betegség bizarr mellékhatásaként a lehullott testrészek idővel új életre kelnek, a rothadó szövetekből kialakított nyúlványokon útnak indulnak. Az még a mai napig sem tisztázott, hogy ilyenkor merre és miért kerekednek fel; csupán egyetlen dolog bizonyos, ezen testrészek általában egymás társaságát keresve igyekeznek egy bizonyos meghatározhatatlan hely irányába... a jól értesültek szerint Gilmen egykori lakhelye felé."
+        },
+        {
+            "type": "rule",
+            "title": "Fojtó gyilok",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "Szint: 2 Egész szervezetre ható Gyors lefolyású Cseppfertőzéssel terjed Minimális hatás: súlyos Maximális hatás: kritikus Egészségpróba: 12 óránként"
+        },
+        {
+            "type": "paragraph",
+            "text": "Ez a gyorsan kiteljesedő gombás fertőzés a légutakat és a tüdőt támadja meg, a zöldes színű foltok először a torokban, majd később lentebb a tüdőben jelennek meg. A betegség az áldozat lélegzetét lopja el, a fertőzöttek fáradékonnyá, gyengévé válnak, s állapotuknak megfelelő módosítókat kapnak minden harci értékükre és tulajdonságukra, s ha tulajdonságaik bármelyike is nullára esik az illető meghal."
+        },
+        {
+            "type": "paragraph",
+            "text": "A vérfűből készített tea, illetve az ezen növényből nyert forrázat inhalálása +2 módosítót ad az áldozatnak a javulásra dobott Egészségpróbájához. Emellett természetesen a pihenés, illetve a hőkúra is hatásos lehet."
+        },
+        {
+            "type": "paragraph",
+            "text": "Sebgyógyítás A sebek, sérülések gyógyításának több módja is ismeretes Yneven. Legcélszerűbb két csoportra osztanunk őket, úgy mint: mágikus gyógymódok és természetes gyógymódok. A papok Gyógyítás varázslatával minden orvosolható, legyen az mérgezés, betegség vagy nyílt seb. A képzettségek közül a Herbalizmus a test belső problémáival, a betegségekkel és mérgezésekkel foglalkozik; gyakorlói nem nyitják meg a testet, csak gyógyhatású teákkal, porokkal, kenőcsökkel dolgoznak."
+        },
+        {
+            "type": "paragraph",
+            "text": "A külső sérülések ellátásához az Orvoslás képzettség ismerete szükségeltetik; ezzel kötések készíthetők, csontok rakhatók sínbe, s ez segít inszalagok szakadásakor vagy ízületek sérülésekor is."
+        },
+        {
+            "type": "paragraph",
+            "text": "Ha egy lény Fp-t veszít, az – mint tudjuk – csak kisebb horzsolásokat apró sebeket jelent, melyek bár valóban fájdalmasak, nem túl veszélyesek a szervezet egészére. Az Ép-vesztés sokkal súlyosabb: csonttöréssel, repedéssel, izomszakadással és sok egyéb valóban komoly sérüléssel jár. Mindkét típusú sérülés meggyógyul kezelés nélkül is, de ez lassú, fájdalmas, és sokszor kétes eredményű folyamat."
+        },
+        {
+            "type": "paragraph",
+            "text": "A nem kötözött sebek – különösen, ha Ép-vesztés eredményei – könnyen begyulladhatnak, elfertőződhetnek, s további Fp vagy Ép csökkenést eredményezhetnek. Ezért minden kalandozócsapatban hasznos, ha legalább egy, de inkább két Játékos karakter rendelkezik legalább 2. fokú Orvoslás képzettséggel."
+        },
+        {
+            "type": "paragraph",
+            "text": "Természetesen a gyógyulás szempontjából nem közömbös, hogy a beteg milyen körülményeknek van kitéve, továbbá hogy mennyi figyelmet fordít állapota javítására. A gyógyulás Fp-k esetében csak hat óra pihenés, annak híján pedig egy nap múltán, Ép-k esetében 3 nap pihenés, egyébként pedig egy hét múltán kezdődik meg! A további részleteket lásd az Életerő c. fejezetben!"
+        },
+        {
+            "type": "paragraph",
+            "text": "A gyógyulást még sok tényező befolyásolhatja: egyes lények harapása például kétszer annyi idő alatt gyógyul; bizonyos átkok és varázslatok teljesen megszüntethetik a szervezet természetes gyógyulását. Utóbbi esetben a természetes, tehát nem mágián alapuló képzettségek használata sem segít, mivel ezek is csak a szervezet saját regenerációs folyamatainak felgyorsításával érik el a gyógyulást."
+        },
+        {
+            "type": "paragraph",
+            "text": "Ugyanakkor a már említett képzettségek – Orvoslás, Herbalizmus – alkalmazásával felgyorsítható a sebek gyógyulása, (lásd még az említett képzettségeknél!). Egyes papok, boszorkányok képesek a sebek mágikus úton történő gyógyítására; ilyenkor nem a gyógyulás folyamatának felgyorsulásáról, hanem azonnali gyógyulásról beszélünk. Ugyanezen módon gyógyítanak egyes varázstárgyak és bájitalok is."
+        },
+        {
+            "type": "paragraph",
+            "text": "Sebfertőzés Mivel az Ép veszteséggel járó sérülések mély vágások vagy nagy felületet érintő ütések, a nagy nyílt seb komoly veszélyt jelent. A seb elfertőződés esélye az elvesztett Ép-k tízszerese százalékban. Ha valaki 4 Ép-veszteséget jelentő sebeket szenvedett, s sérülését nem kezelték, az elfertőződés esélye 40% lesz. Amennyiben az elfertőződés bekövetkezik, az áldozatnak Egészségpróbát kell dobnia. Ha a próba sikeres, a fertőzést szervezete leküzdötte, s semmilyen hatás nem jelentkezik."
+        },
+        {
+            "type": "paragraph",
+            "text": "A fertőzésveszély százalékát minden 12 órában újra kell dobni, amíg csak a seb tökéletesen be nem gyógyul vagy szakértők ellátásban nem részesítik; ha a sebesült Egészségpróbája sikertelen volt, a fertőzés bekövetkezett."
+        }
+    ]
+}

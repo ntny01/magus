@@ -1,0 +1,415 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": true,
+    "section_title": "Képzettségek",
+    "content_blocks": [
+        {
+            "type": "paragraph",
+            "text": "A boszorkánymester képzettségek általában az Alvilági, Tudományos és Misztikus képzettségek egész tárházával vértezik fel magukat a világ ellenében. Legtöbbször, ha nem is művelt, de igen tanult emberek. Szintenként ritkán adják alább 13 Kp megszerzésénél.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "Varázserő",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "A boszorkánymester általában önnön testük sanyargatásával, a Hatalom Itala által nyerik varázshatalmukat. Az elvetemültebbek viszont nem riadnak vissza attól sem, hogy mások életerejét vegyék igénybe céljaik eléréséhez. Általában szintenként 7 ponttal növelik Mp-jaik számát.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "A boszorkánymesterek fegyvertára",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "A boszorkánymesterek úgy hozza a szükség orvul, lesből támadnak. Szeretnek jó tíz-tizenkét lábnyi távolságot tudni maguk és ellenlábasaik között, ám ha mégis rászorulnak, töröket és tőrkardokat forgatnak. De sokkal jobban simul egy könnyű nyílpuska tusa markukba, mintsem egy penge markolata.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "A boszorkánymester induló képzettségei",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "A boszorkánymesterek, szinte bármilyen képzettség elsajátítására rászánják magukat, mellyel kétes hatalmukat növelhetik vagy efféle hihetetlenek el másokkal magukról. A mesterük vagy mestereik általában felkészítik őket az alattomos pusztítás alapvetőbb fortélyaira, már első szinten is gyakorlott méregkeverők, sötét varázstudók.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "A boszorkánymester induló képzettségei",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "1. Tapasztalati szinten:",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "table",
+            "text": "",
+            "title": "",
+            "headers": [
+                "Képzettségek",
+                "Fok"
+            ],
+            "rows": [
+                [
+                    "Fegyverhasználat",
+                    "2. fok"
+                ],
+                [
+                    "Nyelvtudás",
+                    "2. fok"
+                ],
+                [
+                    "Alkímia",
+                    "2. fok"
+                ],
+                [
+                    "Élettan",
+                    "2. fok"
+                ],
+                [
+                    "Herbalizmus",
+                    "2. fok"
+                ],
+                [
+                    "Írás/olvasás",
+                    "2. fok"
+                ],
+                [
+                    "Méregkeverés/semlegesítés",
+                    "2. fok"
+                ],
+                [
+                    "Számtan/mértan",
+                    "2. fok"
+                ],
+                [
+                    "Nekromancia",
+                    "2. fok"
+                ],
+                [
+                    "Pszi (pírarroni)",
+                    "2. fok"
+                ],
+                [
+                    "Tapasztalati mágia (boszorkánymester)",
+                    "3. fok"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A boszorkánymester céhe által oktatott képzettségei, melyeket az Oktatás képzettség 4. foka által nyújtott bónuszokkal tanulhat:",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "Alkímia, Élettan, Fegyverhasználat, Heraldika, Herbalizmus, Időjóslás, Írás/olvasás, Kultúra, Legendaismeret, Méregkeverés/semlegesítés, Nekromancia, Nyelvismeret, Orvoslás, Orvtámadás, Pszi (pírarroni), Szakma, Számtan/mértan, Tapasztalati mágia (boszorkánymester), Történelem. (Kiemelt helyeken: Ősi nyelv, Rúnamágia, Démonológia)",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "A boszorkánymesterek különleges előnyei és hátrányai.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "I. A boszorkánymester karakter ingyenesen felveheti a Mágikus fogékonyság és a Pszi érzékenység Háttérét.",
+            "title": "Különleges előnyök",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "II. A boszorkánymesteri mágia használata, melyet az elsajátított Tapasztalati mágia (boszorkánymester) képzettség 3. fokának ismerete tesz lehetővé.",
+            "title": "Mágia használata",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "III. A boszorkánymesterek a Hatalom Itálából merítik varázserejüket, minden alkalommal, amikor felhajtanak belőle egy adagot, annyi Mana pontjuk lesz, amennyi maximális Mp-tal bírnak. Nem ihatnak azonban bármennyit, mert a főzet minden alkalommal csökkenti Egészségüket. Márpedig ha Egészségük 0-ra zuhan, nyomban meghalnak. (Persze egyéb esetek is adódhatnak, mikor az alacsony Egészség mérhetetlen hátrányt jelent!) Minden elfogyasztott italadag 4-gyel csökkenti a boszorkánymesterek Egészségét. Az ital elemésztette Egészségpontok csak kiadós alvással térnek vissza. Ha a karakternek nincs módja teljesen kipihennie magát, jóval kevesebb Egészségpontot kap vissza. Négy óránál rövidebb alvásidő alatt egy sem, attól kezdve óránként 1 pont tér vissza; a teljes kipihentség a karakter állapotától és a helyzettől függően 8–14 órát jelent. A boszorkánymester képes elkészíteni a Hatalom Italát 3 óra alatt. A főzethez szükséges füvek 1 aranyért bárhol megvásárolhatóak vagy 4. fokú Herbalizmussal a természetben összegyűjthetőek. (Lásd még varázstárgyak című fejezetet a 498. oldalon.)",
+            "title": "Hatalom Itala",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "Egy átlagos első Tapasztalati szintű boszorkánymester:",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "table",
+            "text": "",
+            "title": "",
+            "headers": [
+                "Tulajdonság",
+                "Érték"
+            ],
+            "rows": [
+                [
+                    "Erő",
+                    "11"
+                ],
+                [
+                    "Gyorsaság",
+                    "13"
+                ],
+                [
+                    "Ügyesség",
+                    "13"
+                ],
+                [
+                    "Állóképesség",
+                    "13"
+                ],
+                [
+                    "Egészség",
+                    "14"
+                ],
+                [
+                    "Karizma",
+                    "13"
+                ],
+                [
+                    "Intelligencia",
+                    "14"
+                ],
+                [
+                    "Akaraterő",
+                    "15"
+                ],
+                [
+                    "Asztrál",
+                    "14"
+                ],
+                [
+                    "Érzékelés",
+                    "14"
+                ],
+                [
+                    "Ép",
+                    "14"
+                ],
+                [
+                    "Fp",
+                    "31"
+                ],
+                [
+                    "Ψp",
+                    "15"
+                ],
+                [
+                    "Mp",
+                    "9"
+                ],
+                [
+                    "Kegy pont",
+                    "—"
+                ],
+                [
+                    "MME",
+                    "20"
+                ],
+                [
+                    "AME",
+                    "19"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "Elköltött KAP-ok:",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "table",
+            "text": "",
+            "title": "",
+            "headers": [
+                "Kategória",
+                "Érték"
+            ],
+            "rows": [
+                [
+                    "Iskola (Boszorkány)",
+                    "6 pont"
+                ],
+                [
+                    "Mágikus Fogékonyság",
+                    "—"
+                ],
+                [
+                    "Pszi Érzékenység",
+                    "—"
+                ],
+                [
+                    "HM",
+                    "4 pont (2 HM)"
+                ],
+                [
+                    "Fp",
+                    "3 pont (3 Fp)"
+                ],
+                [
+                    "Kp",
+                    "13 pont (13 Kp)"
+                ],
+                [
+                    "Mana pont",
+                    "21 pont (7 Mana pont)"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "Fegyverzet:",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "table",
+            "text": "",
+            "title": "",
+            "headers": [
+                "Fegyver",
+                "fvn*",
+                "tőr"
+            ],
+            "rows": [
+                [
+                    "Időigény:",
+                    "3",
+                    "3"
+                ],
+                [
+                    "KÉ:",
+                    "27",
+                    "33"
+                ],
+                [
+                    "TÉ:",
+                    "37",
+                    "47"
+                ],
+                [
+                    "VÉ:",
+                    "86",
+                    "90"
+                ],
+                [
+                    "CÉ:",
+                    "29",
+                    "—"
+                ],
+                [
+                    "Sebzés:",
+                    "1k6",
+                    "1k6"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "*fegyver nélkül",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "Képzettségek:",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "table",
+            "text": "",
+            "title": "",
+            "headers": [
+                "Képzettségek",
+                "Fok",
+                "Kp"
+            ],
+            "rows": [
+                [
+                    "Fegyverhasználat (tőr jellegű fegyverek)",
+                    "2. fok",
+                    "—"
+                ],
+                [
+                    "Helyismeret (szülőföld)",
+                    "3. fok",
+                    "—"
+                ],
+                [
+                    "Kultúra (saját)",
+                    "3. fok",
+                    "—"
+                ],
+                [
+                    "Nyelvtudás (anyanyelv)",
+                    "3. fok",
+                    "—"
+                ],
+                [
+                    "Nyelvtudás",
+                    "2. fok",
+                    "—"
+                ],
+                [
+                    "Udvari etikett",
+                    "1. fok",
+                    "1 Kp"
+                ],
+                [
+                    "Alkímia",
+                    "2. fok",
+                    "—"
+                ],
+                [
+                    "Élettan",
+                    "2. fok",
+                    "—"
+                ]
+            ]
+        }
+    ]
+}

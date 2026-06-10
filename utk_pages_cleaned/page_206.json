@@ -1,0 +1,108 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": true,
+    "section_title": "Tőr jellegű fegyverek",
+    "content_blocks": [
+        {
+            "type": "rule",
+            "title": "Háló használata",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Hajítóbárd (43)",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Hajítódárda (44)",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Dobófa használata",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Slan csillag",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A tőr jellegű fegyverek szerte Yneven igen gyakoriak, egyaránt forgatják őket, nemesek és közrendűek, szent emberek és útonállók, de ezen csoportba tartoznak az egyszerű szerszámnak készült kések is. Játétechnikailag ebbe a kategóriába sorolunk minden 40 ynevi hüvelyknél rövidebb szúró/vágó eszközt, melyek közül a két élre fenve, valamely ujjvédővel vagy minimális keresztvassal ellátott pengék a tőrök, míg egy élre fenve, általában védelmi alkalmatosságok nélküli társaik a kések."
+        },
+        {
+            "type": "rule",
+            "title": "Béltépő (44)",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Dzsambia (45)",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Kés (46)",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Levéltőr (47)",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Méregfog (48)",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Pugoss (49)",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Ramiera (50)",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        }
+    ]
+}

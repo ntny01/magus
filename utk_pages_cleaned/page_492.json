@@ -1,0 +1,129 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": false,
+    "section_title": "",
+    "content_blocks": [
+        {
+            "type": "rule",
+            "title": "Rendszerszabály",
+            "headers": [
+                "Kezd",
+                "Célz",
+                "Sebz",
+                "Idő",
+                "Életerő",
+                "Fáj.",
+                "Asztrál",
+                "Mentál",
+                "Méreg",
+                "Pszi",
+                "Int",
+                "Jellem",
+                "XP"
+            ],
+            "rows": [
+                [
+                    "30",
+                    "90",
+                    "1k5",
+                    "5",
+                    "6",
+                    "18",
+                    "35",
+                    "25",
+                    "10",
+                    "—",
+                    "Átlagos",
+                    "Élet, Káosz",
+                    "Lásd a táblázatot!"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A ginsourokról először egy pyarroni mágus tett említést, akinek komoly fejtörést okozott némely megmagyarázhatatlan esemény, melyben e lényeknek fontos szerep jutott. A mágus – De Torranne – hatalmat és gazdagságot hozó, ám veszélyekkel teli élete kései szakaszában békére és a természet csendjére vágyott, s kisebb torony építtetésébe kezdett. Az épület befejezését követően védő szimbólumokat vésett a falakra, s erős mágiával tette teljessé lakhelyének védelmét. Egy reggel hitetlenkedve látta: a jelek egytől-egyig eltűntek. Áldozatos munkával ismét megalkotta a szimbólumokat, de másnapra ismét az üres falak tekintettek vissza a meghökkent mágusra. Ám De Torranne nem adta fel, s újra megrajzolta a jeleket – éjjel pedig várt."
+        },
+        {
+            "type": "paragraph",
+            "text": "Ébersége meghozta gyümölcsét. Furcsa, sötét színű lény közeledett a toronyhoz, ám a szimbólumok mind hatástalanok maradtak. A szörnyek elérték a falakat, s egy fejükről lógó csáppal nyalogatni kezdték a rajzolatokat – melyek lassan eltűntek!"
+        },
+        {
+            "type": "paragraph",
+            "text": "A mágus dühösen rohant elő, átkozta a természetet és az isteneket kreativitásukért. Az egyik ginsour sikerült megbénítania, a többiek elmenekültek – de ez az egy is épp elég volt De Torrannénak. Megvizsgálta a lényt, s miután fényt derített mágikus természetének valódi mibenlétére, viszonylag pontos leírást készített a fajról."
+        },
+        {
+            "type": "paragraph",
+            "text": "A lények két erős, leginkább a békához hasonlító lábbal, kurta mellső végtagokkal bírnak. Fejükön apró, fénylő szemeken kívül csupán az energiák begyűjtésére szolgáló, szőrtelen tapogatók találhatók. A szemlélő első látásra úgy érezheti, a ginsournak nincsenek valódi körvonalai, a fény furcsa játékot játszik a lény bőrén, s határozott kontúrok helyett inkább lecsorogni látszik a testéről. Származásukra De Torranne is csak mágikus természetükből következtetett: véleménye szerint ősmágusok félresikerült kísérleteinek szomorú termékei a ginsourok, melyeket teremtőik – életképtelennek gondolva – sorsukra hagytak."
+        },
+        {
+            "type": "paragraph",
+            "text": "A ginsourok a mágikus energiák átalakítására képes szörnyek legegyszerűbb formái. Az effajta energiafelhasználás tulajdonképpen éltető erejük, hiszen csak Manával táplálkoznak. Az ilyen lényeket a mágikus tudományok összefoglaló néven Raptóres Vis Magicae-nak nevezik, azaz a Varázserőráblók osztályába sorolják, s több alcsoportjukat megkülönböztetik. A legprimitívebbek azok, melyek a Manából szerzett energiát csak testük felépítésére tudják használni. A következő fokozat – melynek tagja a ginsour is – ezt az energiát nyers formában már visszajuttathatja a környezetbe. A legfejlettebbek csoportját azok képviselik, akik ezt az energiát újra manaként használhatják fel, azaz varázslatokat is képesek alkalmazni."
+        },
+        {
+            "type": "paragraph",
+            "text": "Különbséget tehetünk még ezen kreatúrák között a mana felszívásának módozatai szerint. A ginsourok csak a különféle tárolt formában lévő mana energiáinak hasznosítására képesek, azaz a Jel mágia különböző formáinak elrablására. Ezek a varázslatok, pontosabban a Pentagrammák, Varázskörök, Varázsjelek, Szimbólumok és Bélyegek nem is hatnak rájuk. A Mana felvételére a ginsourok a fejükön található furcsa ormány és a csáp közötti függelékrendszerüket használják. Ezzel megérintik a felszívni kívánt jelet, s ha a jel erőssége nem elégséges, a jel teljesen eltűnik, s a benne tárolt Mana pontok a ginsour energiáját növelik. Ilyenkor a jelnek ME-t kell dobni 60 É. Ellen, ahol a jel Mágiaellenállása Erősségének felel meg. Ha a dobás sikeres, semmi sem történik, s a lény csak 48 óra múlva próbálhatja meg újra bekebelezését."
+        },
+        {
+            "type": "paragraph",
+            "text": "Az így szerzett energiát úgy hasznosítják, mint az egyéb fajok a táplálékból nyert energiát. Ezért szöveteiket állandó mágikus folyamok szövik át, ennek köszönhető magas a Mágiaellenállásuk és Méregellenállásuk is (hiszen a mérgek alapvetően más anyagforgalmú lények ellen készültek). A ginsourok nem agresszív lények, csak akkor harcolnak, ha rákényszerítik őket, azaz a menekülés útját is elvágták. Szinte minden fáradságot vállalnak egy-egy komolyabb mana-forrásért, de harcba nem bocsátkoznak érte. Színük átmenet a sötétkék és a fekete között, így kiválóan rejtőzhetnek éjszaka (adatok a táblázatban). Ezért legtöbbször éjjel aktívak, s nappal pihennek, alszanak."
+        },
+        {
+            "type": "paragraph",
+            "text": "Ha harcolniuk kell, két fogócsáppal teszik, bár ezek nem igazán erre készült szervek, így együttes sebzésük egy körben legfeljebb 1k5 (1k10/2) Sp."
+        },
+        {
+            "type": "paragraph",
+            "text": "Mondják, Erionban kisebb vagyont hajlandóak fizetni egy-egy élő ginsour-ért, hiszen nem egy kalandozó vinné magával szívesen olyan jószágot, amely jó eséllyel megoldja számára a Jel mágia jelentette akadályokat. Ez azonban nem egyszerű. Noha a ginsour nem rosszindulatú, ráadásul értelmes is, ám bizalmatlan és az embereket nem kedveli. Különös, telepátián alapuló kommunikáció segítségével érintkeznek, amelynek elsajátítása csak Mesterfokú Pszi képzettség ismeretében lehetséges. A ginsour, ha egyszer összebarátkozott valakivel, hűséges társnak bizonyul, feltéve, ha figyelembe veszik szokásait és lehetőségeit. Fegyvert nem hajlandó – nem is képes – használni, egyébiránt nagyon makacs. Mikor valamit a fejébe vesz – ez elsősorban a Mana elfogyasztására vonatkozik – szinte lehetetlen eltéríteni szándékától, s miután számára a mágikus energiák az éltető táplálékot jelentik, nehéz megóvni tőle emberi szövetségese rúnámágikus úton felhalmozott manáját is."
+        },
+        {
+            "type": "paragraph",
+            "text": "Sarokba szorítva, kilátástalan helyzetben képesek mozgósítani a szervezetükben tárolt mágikus energiát, három alfajuknak megfelelő hatásfokkal. Ezek az alfajok színben is eltérést mutatnak, innen ered elnevezésük is."
+        },
+        {
+            "type": "paragraph",
+            "text": "A legkevésbé hatékonyak a Verőfény ginsourok (ők a legvilágosabb színűek), míg az Éjféli ginsour a legsötétebb és legütőképesebb. Ha ezek a lények testük energiáját alakítják Mana ponttá, és ezeket a pontokat nyers energia formájában kibocsátják, ezzel sebet ejtenek ellenfelükön, viszont saját testük is gyengülni fog. Az ormányukból kicsapó energiasugár világító, kékes fényű nyaláb, leginkább egy villámtölcsérre emlékeztet, ami 12 ynevi láb hosszú, és a végén 5 láb átmérőjű. 1 Mana pontnyi energia mindig 1 pont sebzést eredményez, a különbség abban mutatkozik, hogy 1 Épvagy Fpráfordítás hány Mana pontnyi energia felszabadítást tesz lehetővé. A három alfaj adatai:"
+        },
+        {
+            "type": "table",
+            "headers": [
+                "Név",
+                "szín",
+                "Mp/Ép",
+                "Mp/Fp",
+                "Lpo. %",
+                "Rejt. %",
+                "Tp"
+            ],
+            "rows": [
+                [
+                    "Verőfényes ginsour",
+                    "kék",
+                    "1",
+                    "4",
+                    "60",
+                    "70",
+                    "6"
+                ],
+                [
+                    "Alkony ginsour",
+                    "szürke",
+                    "2",
+                    "6",
+                    "70",
+                    "80",
+                    "9"
+                ],
+                [
+                    "Éjféli ginsour",
+                    "fekete",
+                    "3",
+                    "10",
+                    "85",
+                    "95",
+                    "12"
+                ]
+            ]
+        }
+    ]
+}

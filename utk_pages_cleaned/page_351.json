@@ -1,0 +1,76 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": false,
+    "section_title": "",
+    "content_blocks": [
+        {
+            "type": "paragraph",
+            "text": "plusz a magába olvasztott tűz E-je (jelen esetünkben fáklyánként 1 E, azaz összesen 10 E), azaz összesen 13 E. Elképzelhető, hogy csak a fáklyák világították be a termet eddig. Most már csak a tűzfal és a varázsló aurája fog világítani."
+        },
+        {
+            "type": "paragraph",
+            "text": "Ha most hozzáér a tűzfalhoz, akkor az aura magába olvasztja a tűzfal 9 E-jét, a tűzfal megszűnik, az aura erőssége 3+9+10 = 22E lesz, ez így is marad az Időtartam végéig."
+        },
+        {
+            "type": "paragraph",
+            "text": "Ha azonban az aura az Időtartam lejárta előtt újabb Őselementi tűzzel találkozik, akkor azt már nem tudja magába olvasztani, mivel már így is telített. A háromszoros aranynál, amit ötszörösből magába tud olvasztani, csak az eredeti Erősség E-je számít. Ekkor az újabb tűz adott Erősségében fogja sebezni a tűzvarázslót."
+        },
+        {
+            "type": "rule",
+            "title": "Tűznyíl kék lángokból",
+            "headers": [
+                "Mana pont",
+                "Varázslás ideje",
+                "Időtartam"
+            ],
+            "rows": [
+                [
+                    "6 E x 4 Mp + 6 E x 2 Mp = 36",
+                    "6 + 6 = 12 szegmens",
+                    "Egyszeri"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "Létezhet olyan szituáció, hogy a tűzvarázsló olyan ellenféllel kerül össze, akit a tűz hatásai ellen Vízaura véd. Ekkor az ellene alkotandó Tűznyilat teremtheti kék színezetű lángokból:"
+        },
+        {
+            "type": "paragraph",
+            "text": "Ha egy 6 E-s Tűznyíl belecsapódik a 8 E Vízaurába, mely, ha közönséges lángként csapódna bele a tűz, kioltaná. Ebben az esetben azonban az E-je 2x-eséből kivonjuk az Vízaura E-jét, 12-8 = 4. A tűz E-je 2 E lesz, ennek megfelelően sebzi a varázslat alanyát. Az aura megszűnik."
+        },
+        {
+            "type": "rule",
+            "title": "Többszínű lángfestés",
+            "headers": [
+                "Mana pont",
+                "Időtartam",
+                "Varázslás ideje"
+            ],
+            "rows": [
+                [
+                    "Lásd a leírást!",
+                    "Lásd a leírást!",
+                    "5 szegmens/szín"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "Egyszerre több színű láng hatása keveredhet egy varázslaton belül. A színek nem keverednek össze, hanem lángnyelvenként jól elkülöníthető a több szín közül valamelyik. Mindenképpen minden szín Mp-igényét minden egyes E után számolni kell, és minden szín tulajdonságaival rendelkezni fog a teremtett Őstűz. Amennyiben színezetét Fehér tűz olvaszt magába bármilyen mást, akkor az újonnan létre jött tűz E-je a két tűz E-jeinek összege, tulajdonságai pedig a magába olvasztó tűz színeinek megfelelőek lesznek. Amennyiben bármely színből kevesebb E lenne, mint a varázslat E-je, Fekete tűzkitörés alakul ki."
+        },
+        {
+            "type": "rule",
+            "title": "Tűzlények megidézése",
+            "headers": [
+                "Szabály"
+            ],
+            "rows": [
+                [
+                    "A varázslatok különbözőek, azonban néhány dologban megegyeznek: A tűzvarázsló adott Mana pontért „megidézi” a tűzlényt. A lényt alkotó tüzet valóban meg kell idézni, majd a kívánt lénnyé formázni. A lény a varázsló Zónájának tet-"
+                ]
+            ]
+        }
+    ]
+}

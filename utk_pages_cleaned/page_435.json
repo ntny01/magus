@@ -1,0 +1,65 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": true,
+    "section_title": "Társadalom",
+    "content_blocks": [
+        {
+            "type": "paragraph",
+            "text": "Mindenütt szükség van rájuk; Toron alighanem megbénulna, ha hirtelen eltűnnének. A fejvadászokról van szó, akik minden intrika, cselszövés mögött ott állnak, óráit áldozzák, égen bár szócsaládok egymás között torzalkodásáról, országromboló háborúkról vagy kereskedelmi viszályokról. Jól kiépített szervezeteik mindenütt jelen vannak; a tolvajokkal ellentétben nem kell titokban tartaniuk kilétüket, csak ha erre kifejezett utasítást kapnak. Társadalmi megbecsülésük magas: ha jól végzik dolgukat, szinte bármit kérhetnek megbízóiktól. A különböző klánokat gyakorta kötik szerződések vagy egyéb jellegű kötelékek a helyi hatalmasságokkal. Titkos paktumok ezek, a legtöbb ember nem is tud róluk, akinek pedig jó értesülései vannak, általában elég bölcs ahhoz, hogy ne kíváncsiskodjon sokat."
+        },
+        {
+            "type": "paragraph",
+            "text": "Toron neve hallatán sokaknak az ikrek jutnak először eszébe, pedig rengeteg más fejvadász szervezet működik rajtuk kívül, noha hatékonyságban nem mind veheti fel velük a versenyt. Az Ikreken belül is több ágazat működik, közülük kerülnek ki a császár orgyilkosai, a titokzatos Mortor Imperialisok is. Más fontos klánok: Gyilkok; Shan Fiai; Corritesek; Éjenjárók; a Lashgúk, a kikötői fejvadászok szervezetei, akik jobbára kalmárcsaládok szolgálatában állnak; a Régensi Ház kémkedésre szakosodott Ködfivérei; illetve Tharr őrült Vérnyelői."
+        },
+        {
+            "type": "paragraph",
+            "text": "A kalmárés katonadinasztiákhoz hasonló hagyományaik vannak a kézműves céheknek is, akik híresen jó minőségű áruikkal látják el a hatalmas országot és a külhoni piacokat. A birodalom minden tartományában megtalálhatók, nem csak a városokban, hanem a kisebb vidéki műhelyekben is; mindenütt ott vannak, ahol szükség van rájuk, például a városnyi kaszárnyák és kiképzőtelepek körül."
+        },
+        {
+            "type": "paragraph",
+            "text": "A piaci árak a termékek mennyiségét, a pénzforgalom léptékét és az állam kereskedelmi státusát figyelembe véve akár alacsonyabbak is lehetnének. A drágaság magyarázatát a toroni társadalmat ismerő külhoniak a koronaés egyéb adók mértékében vélik megtalálni."
+        },
+        {
+            "type": "paragraph",
+            "text": "Az emlékezetesebben különösen jól jövedelmező foglalkozások a császárság, művelői országszerte megtalálhatók. Éhes dögök gyanánt nyüzsögnek a seregek körül, a nagyobb kikötőkben, s kicsiny, ám annál hatékonyabb csapataik gyakran vezetnek portyákat a határokon túlra. Számtalan ellenségük van Északon, és nem csupán a birodalmon kívül – bizony előfordul, hogy egy haragra gerjedt katonacsalád vagy tolvajklán váratlan rajtaütése után a volt emberkereskedő maga is a rabszolgavermekben végzi."
+        },
+        {
+            "type": "paragraph",
+            "text": "Toron boszorkánymesterei mindenütt, a legkisebb településeken is jelen vannak. Az ő tisztük a rontások és átkok eltávoztatása, a falvak és tanyák védelme a természetfölötti veszedelmekkel szemben, az ellenséges szándékú kóborlók elriasztása. Városi szervezeteik nagyobb létszámú közösségek, közvetve a Hatalmasok utasításai szerint járnak el, de a Boszorkányerőd lakói nem figyelik őket olyan áruk szemmel, hogy ne folytathatnák saját politikát, míg ellentétbe nem kerülnék az ország érdekeivel. Jól jövedelmező foglalatosságuk a különböző mérgek és bájitalok keverése és árusítása; olyanok is akadnak közöttük, akik egyáltalán nem értenek a mágiához, kizárólag ajzóés kábítószerek, tinktúrák és flastromok készítésével foglalkoznak."
+        },
+        {
+            "type": "paragraph",
+            "text": "Ugyanez mondható el a boszorkányszektekről is. Ezek kevésbé függnek a Hatalmasoktól, szabadabban űzik praktikáikat. Valamennyi nagyobb városban ott vannak, de sokkal feltűnésmentesebben tevékenykednek, mint a boszorkánymesterek. Gyakorta bújnak valamilyen álca mögé, jobban szeretik a háttérből irányítani az ügyeiket; nem egy város vezetésében találunk olyan férfiakat, akiket fortélyos módon elbájolva rabjaikká tettek."
+        },
+        {
+            "type": "paragraph",
+            "text": "Számuk ugyan milliókra rúg, a környező államokkal összevetve azonban a toroni parasztok aránya a társadalmon belül nem olyan jelentős, mint külhoni sorstársaiké. Ennek oka a rengeteg olcsó rabszolganál keresendő, akik a nehezebb munkákat végzik; egy-két rabszolgacsaládja általában még a legszegényebb családnak is van. Ezek többnyire szerencsés helyzetben vannak a nagyirtokokon robotoló társaikhoz képest: emberibb módon bánnak velük, hisz gazdájuk sem él náluk sokkal jobb körülmények között. Néha szinte még családtagoknak számítanak."
+        },
+        {
+            "type": "paragraph",
+            "text": "Toron lakossága laza kasztrendszerbe tagolódik. Kasztrendszer, mert élesen meghúzza az egyes rétegek határait, és laza, mert bizonyos esetekben átjárhatóágot biztosít a kasztok között. Külön érdekessége, hogy látszólagos rendezettsége tökéletes hátteret biztosít a káosz különböző megnyilvánulásainak. A kasztok különleges eseteket kivéve – fejvadászok teszik a dolgukat, seregek küzdenek egymással – nem fordulnak egymás ellen, de saját kereteiken belül szabad folyást engednek az intrikáknak, gyilkosságoknak s a hatalmi harc más, jól bevált eszközeinek. E szigorú szabályozás eredménye, hogy a kaszton kívüli gyilkosság, a kyars (amikor alsóbb rétegbeli ontja vérét egy nálánál magasabb társadalmi helyzetűnek) az elkövethető legsúlyosabb bűnök közé tartozik is a császárság törvényhozói szerint. Persze a törvénymagyarázók mindig találhatnak enyhítő körülményeket, szokásjogon alapuló példákat, különleges helyzeteket. A külső szemlélő számára ez néha teljességgel átláthatatlan eseteket eredményezhet, amit tovább bonyolít, hogy a kasztokon belüli aláés fölérendeltség a baráti, üzleti kapcsolatok, családi és rokoni szálak egymásba fonódása révén egy szint után kibogozhatatlan, áttekinthetetlen társadalmi kavarodásokat okoz."
+        },
+        {
+            "type": "paragraph",
+            "text": "Ami mindig egyértelmű és azonnal látható: egy alacsonyabb kasztbéli találkozása egy magasabbal. A kötelező tiszteletadásra változatos módok léteznek, a pusztán szóbélitől egészen a rituális mozdulatokkal kísért önmegalázásig. A társadalmi érintkezést évezredek, kívülállók számára átláthatatlanul bonyolult illemkódex szabályozza; egy rangos személy megközelítése – különösképp, ha az illető jó kondícióban van – alig veszélytelenebb egy erőd ostrománál. A különböző kasztok csak született toroniak által átlátható módon érintkeznek egymással. Még egy alacsonyabb kasztbéli is megszólíthat – bizonyos tiszteletadási formaságok betartásával – egy magas rangú toronit. Igaz, mint mindenben (tipikus toroni jelenség), ebben is vannak kivételek."
+        },
+        {
+            "type": "paragraph",
+            "text": "A külhoni kalandozók igen könnyen rajtaveszthetnek, ha nem ismerik ezeket a tiszteletadási szokásokat. Az egyes kasztok leírása után ismertetésre kerülő viselkedési előírások csak a két kaszt tagjai közötti beszédre vonatkoznak. Az egyéb társasági magatartásformákat más szabályok hatálya alá esnek. A nem toroni születésűek ezeket rendszeresen eltévesztik, s csak huzamosabb helybenlakás után boldogulhatnak – feltéve, ha találnak egy pártfogót, aki idegen létükre védőszárnyai alá veszi őket; ám tudásuk sohasem lehet tökéletes, mindig észrevehető lesz külországi mivoltuk. Ez nem feltétlen jelent hátrányt, sőt bizonyos feladatok elvégzését előszeretettel bízzák külhoniakra."
+        },
+        {
+            "type": "paragraph",
+            "text": "Toron társadalma a következő kasztokra tagolódik:"
+        },
+        {
+            "type": "section_title",
+            "text": "Elendor – Fényesség",
+            "title": "Elendor – Fényesség"
+        },
+        {
+            "type": "paragraph",
+            "text": "A legfelső kaszt. Színe az arany. Címerállatai az oroszlán, a sas és a mantikor. A császár és a dinasztia tartozik ide, valamint a Hatalmasok és leszármazottaik, hiszen nélkülük a császár hatalma sem létezhetne."
+        }
+    ]
+}

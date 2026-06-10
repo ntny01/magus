@@ -1,0 +1,234 @@
+{
+    "is_new_chapter": true,
+    "chapter_title": "Varázskörök",
+    "is_new_section": true,
+    "section_title": "Varászkörök",
+    "content_blocks": [
+        {
+            "type": "paragraph",
+            "text": "A varázskör egy azonos középpont köré rajzolt kisebb és nagyobb kör. A két körív között szerepelnek a hatásra vonatkozó mágikus tartalmú feliratok és jelek. A varázskör általában lények kirekesztésére vagy bebörtönzésére, mágikus hatások távoltartására vagy körbezárására használatos. A kirekesztő varázskör lehetetlenné teszi, hogy a teremtmény, aki ellen alkották, a külső körív vonalát átlépje. A bebörtönzésre használatos éppen fordítva működik: a bezárt lényt megakadályozza abban, hogy a külső körön belül, a védő varázskör bizonyos mágikus hatásoknak vet gátat, azaz a megjelölt hatás nem juthat a külső köríven belülre, míg ellenben a körbezáró varázskör a hatást éppen, hogy a belső kör vonalán belülre korlátozza."
+        },
+        {
+            "type": "paragraph",
+            "text": "Keresztező Varászkörök"
+        },
+        {
+            "type": "rule",
+            "title": "Keresztező Varászkörök Erősség és Mana pont",
+            "headers": [
+                "Erősség",
+                "Mana pont"
+            ],
+            "rows": [
+                [
+                    "Végtelen",
+                    "Lásd a leírást!"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A Keresztező Varászkörök arra használatosak, hogy bizonyos nem természeti eredetű lényeket visszatartsanak a külső köríven belüli területtől. Ez úgy történik, hogy az adott lény a mágikus hatások miatt képtelen átlépni a körívet, ám varázslatai átjutnak azon. Az, hogy egy efféle varázskör mennyi Mp-ba kerül, attól függ, hogy milyen lény távoltartására készült. Erről a következő táblázat tudósít:"
+        },
+        {
+            "type": "table",
+            "headers": [
+                "Lény hovatartozása",
+                "Mp"
+            ],
+            "rows": [
+                [
+                    "Tudattalan élőholtak",
+                    "20 Mp"
+                ],
+                [
+                    "Éji rémek",
+                    "30 Mp"
+                ],
+                [
+                    "Kóborló dögök, Vérívó dögök",
+                    "40 Mp"
+                ],
+                [
+                    "Alsórendű démonok",
+                    "40 Mp"
+                ],
+                [
+                    "Lidércek, Szellemek, Lelkek",
+                    "50 Mp"
+                ],
+                [
+                    "Közdémonok",
+                    "60 Mp"
+                ],
+                [
+                    "Démonurak",
+                    "80 Mp"
+                ],
+                [
+                    "Démonhercegek",
+                    "100 Mp"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A Kirekesztő varázskör az összes Rúnamágikus rajzolathoz hasonlóan addig fejti ki hatását, amíg vonalai sértetlenek."
+        },
+        {
+            "type": "paragraph",
+            "text": "Maga a kiszemelt lény képtelen arra, hogy megtörje a varázskör vonalait. Még mágikus úton sem: ez irányú varázslata létre sem jönnek. Természetesen szép szóval, fenyegetéssel, Asztrálvagy Mentálmágiával rávehet erre bárkit."
+        },
+        {
+            "type": "paragraph",
+            "text": "Bebörtönző varázskörök"
+        },
+        {
+            "type": "rule",
+            "title": "Bebörtönző varázskörök Erősség és Mana pont",
+            "headers": [
+                "Erősség",
+                "Mana pont"
+            ],
+            "rows": [
+                [
+                    "Végtelen",
+                    "Lásd a leírást!"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A Bebörtönző Varászkörök bizonyos lényeknek a belső körbe történő bezárására használatosak. Ez azt jelenti, hogy az adott lény képtelen átlépni a belső kör vonalát, és kijutni azon belülről. Egyébként minden szempontból hasonlóak a Kirekesztő Varászkörökhöz, az Mp-igényük meghatározásában is az ott említett táblázat az irányadó."
+        },
+        {
+            "type": "paragraph",
+            "text": "Védő varázskörök"
+        },
+        {
+            "type": "rule",
+            "title": "Védő varázskörök Erősség és Mana pont",
+            "headers": [
+                "Erősség",
+                "Mana pont"
+            ],
+            "rows": [
+                [
+                    "Lásd a leírást!",
+                    "Lásd a leírást!"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A Védő Varászkörök arra használatosak, hogy egy adott mágikus vagy környezeti hatástól megvédjék a varázskör külső körén belül eső területet."
+        },
+        {
+            "type": "paragraph",
+            "text": "Mágikus hatás esetén: a védett területen, ha a varázskör E-je nagyobb a mágikus hatás E-jénél, a hatás nem érvényesül. A védett terület nagysága 1 ynevi láb sugarú kör, ami a varázskör teljes Mana pont költségének többszörösével növelhető."
+        },
+        {
+            "type": "paragraph",
+            "text": "Ha a varázskör E-je kisebb, akkor a hatásból csak annyi jut át a Védő Varázskörön, amennyivel E-je több, mint a varázsköré, (bejutott E egyenlő a hatás E-je mínusz a varázskör E-je). Ebben az esetben a védett területen belül az adott hatás csak bejutott E-jének függvényében érvényesül."
+        },
+        {
+            "type": "paragraph",
+            "text": "Környezeti hatások esetén ugyanez a metódus a mérvadó, ám ezek erőssége minden esetben 15 E-nek számít."
+        },
+        {
+            "type": "paragraph",
+            "text": "Arról, hogy milyen típusú Védő Varászkörök léteznek, és ezek 1 E-s erősítéséhez mennyi Mp szükséges, a következő táblázat tudósít:"
+        },
+        {
+            "type": "table",
+            "headers": [
+                "Hatás",
+                "1 ynevi láb sugarú varázskör Mp-igénye 1 E-hez"
+            ],
+            "rows": [
+                [
+                    "Elemi Mágia (Ős- és Paraelemek)",
+                    "1 Mp"
+                ],
+                [
+                    "Természeti Anyag Mágia",
+                    "2 Mp"
+                ],
+                [
+                    "Asztrál- és Mentálmágia",
+                    "2 Mp"
+                ],
+                [
+                    "Térmágia és Időmágia",
+                    "2 Mp"
+                ],
+                [
+                    "Szimpatikus Mágia",
+                    "3 Mp"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A varázskörnek nem kell a teljes varázslat E-jével megbirkóznia, irányulhat annak egyetlen mozaikja ellen is. Ilyenkor a körön belül csak az adott mozaik nem érvényesül, a varázslatba foglalt többi igen."
+        },
+        {
+            "type": "paragraph",
+            "text": "Körbezáró Varászkörök"
+        },
+        {
+            "type": "rule",
+            "title": "Körbezáró Varászkörök Erősség és Mana pont",
+            "headers": [
+                "Erősség",
+                "Mana pont"
+            ],
+            "rows": [
+                [
+                    "Lásd a leírást!",
+                    "Lásd a leírást!"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A Körbezáró varázskörök a Védő varázskörökhöz hasonlóan működnek azzal a különbséggel, hogy a hatást ami ellen készítették őket nem a külső körön kívülre korlátozzák, hanem bezárják a belső körön belülre – megakadályozva, hogy az azon túl is érvényesüljön. A hatásból annyi jut ki, amennyi a Védő Varászkörnél említett módon, ott belülre kerülhet. Azaz: a kijutó E egyenlő a hatás E-je mínusz a varázskör E-je. Környezeti hatások erőssége minden esetben 15 E-nek számít."
+        },
+        {
+            "type": "paragraph",
+            "text": "Arról, hogy milyen típusú Körbezáró Varászkörök léteznek, és ezek 1 E-s erősítéséhez mennyi Mp szükséges, a Védő Varázsköröknél ismertetett táblázat tudósít."
+        },
+        {
+            "type": "paragraph",
+            "text": "Végrehajtó varázskör"
+        },
+        {
+            "type": "rule",
+            "title": "Végrehajtó varázskör Erősség, Sebzés és Mana pont",
+            "headers": [
+                "Erősség",
+                "Sebzés",
+                "Mana pont"
+            ],
+            "rows": [
+                [
+                    "amennyi a beleírt varázslaté",
+                    "Lásd a leírást!",
+                    "40 + a varázslat"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A Rúnamágia egyik kevéssé ismert rajzolata. Sok varázsló még a létéről sem tud, mások, ha hallottak is felőle, nem ismerik rajzolatának titkát. A Pyarronban és Doranban nevelkedett növendékek természetesen elsajátíthatják, ha külön figyelmet szentelnek a Rúnamágia tanulmányozására, bírnak a Rúnamágia képzettség 4. fokával."
+        },
+        {
+            "type": "paragraph",
+            "text": "A Végrehajtó varázskört Moress Nobren mágus dolgozta ki, híres lankonti falrajzolatában, a Sydulban. Összefoglaló művében, a Magica Graphicában is említést tesz róla – rajzolatát a mai napig ez alapján oktatják."
+        },
+        {
+            "type": "paragraph",
+            "text": "A Végrehajtó varázskörbe bármilyen mozaikokból felépített varázslat beleírható, és csak akkor aktivizálódik, ha valaki a varázskörbe lép. Fontos megkötés, hogy a varázslat – bármekkora"
+        }
+    ]
+}

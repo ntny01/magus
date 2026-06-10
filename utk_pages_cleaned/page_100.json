@@ -1,0 +1,120 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": true,
+    "section_title": "II.",
+    "content_blocks": [
+        {
+            "type": "paragraph",
+            "text": "ó-hiten maradottak teszik ki; Észak-Yneven az egyháznak gyakorlatilag csak ez az irányzata létezik.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "Az Aranyrúnó ortodox paplovagjai egyáltalán nem harciasak, inkább megfontoltság és józan gyakorlatiasság jellemzi őket. Időnként ugyan bizonyságot adnak róla, hogy még nem feledték el a hadakozás mesterségét, ez azonban csak végszükségben teszik, ha a hazájukat éri külső támadás. Egyébként a Dreina-paplovagok határozottan az erőszak alkalmazásától tartózkodnak, és – a legtöbb pyarronita szervezettől eltérően – nem igazán érdekelik őket, hogy mi történik a szülőföldjükön kívül. Vallják: a nagyvilág dolgai, a hősi csaták, meg a földrészre kiterjedő szövetségek mind-mind igen fontosak, csakhogy valakinek odahaza is rendet kell tartania, különben addig-addig törjük a fejünket mindenféle eget-földet rengető ügyön, míg a végén azt vesszük észre, hogy kiürült a kincstár.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "Ezzel a felfogással összhangban a Dreina Paplovagok elsősorban azt tekintik feladatuknak, hogy segítsék a világi uralkodókat a kormányzás nehéz feladatában. Sohasem hiányozhatnak a királyok, hercegek és kormányzók tanácsadó testületéből – s ha már úgyis ott vannak, egyszersmind tapintatosan, ám határozottan képviselik az igaz hit érdekeit is. Szilárd eszmei elkötelezettségük megóvja őket a túlfűtött hazafiságtól, ezért keresve se lehetne náluk alkalmasabb közvetítőket találni, ha két pyarroni hitű ország valami apróság okán összekülönbözik.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "Szerénységük, gyakorlatiasságuk, udvariasságuk az egyszerű emberek körében is népszerűvé teszi őket; gyakran kérik fel a paplovagokat ítélőbíráknak kisebb-nagyobb disputákban. Dreina paplovagjai örömest eleget tesznek e kéréseknek, bár ezzel voltaképpen a Kyel-papok előjogait csorbítják. Igazsággal bíráskodnak, de nem kérlelhetetlenül; és mi tagadás, időnként bizony hajlamosak nem jogi, hanem erkölcsi vagy épp vallási alapon dönteni. Kyel szigorú szolgái valószínűleg pártatlan ítéleteket hoznának a helyükben – csakhogy ezeket a zord aszkétapapokat a köznép babonás rettegéssel nézi, nem szívesen kéri a segítségüket.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "A Dreina-paplovagok alapos elméleti képzése sohasem terjed ki az elvont tudományokra; aminek nincs közvetlen gyakorlati haszna, az ő felfogásuk szerint csupán meddő szőrszálhasogatás, a tanulásával vesződni időpazarlás. Így hát, bár a nagyúri udvarokban mindig szívesen látják őket, az univerzitásokon és a tudás egyéb fellegváraiban bizony hűvösebb fogadtatásra számíthatnak. Igaz, ilyen helyekre – semmi okom nem lévén rá – nemigen járnak.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "Ünnepi díszpáncéljukat csak jeles alkalmakkor öltik magukra, egyébként megelégszenek a könnyebb vértekkel is, vagy éppen teljesen lemondanak róluk, nehogy elijesszék vagy bizalmatlanná tegyék a pórnépet harcias külsejükkel. A fegyverforgatásban időnként ugyan gyakorolják magukat, hogy be ne rozsdásodjanak, ám a viadoméi szakadárokhoz képest így is legfeljebb középszerű harcosok.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "Egyébként az ortodox Dreina-paplovagok nemigen tömörülnek rendekbe, legfeljebb lazább, egymással összefüggő szövetségekbe, amelyek területi alapon szerveződnek, és sohasem nyúlnak túl az államhatárokon. Az utánpótlás képzése e szövetségek szervezésében folyik; elképzelhetetlen tehát, hogy mondjuk egy edorli meg egy syburri Dreina-paplovag együtt nevelkedjen.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "A Dreina-paplovag a játék kezdetén saját fegyverzettel rendelkezik, amelyért nem kell pénzzel fizetnie, egyháza ajándéka harcához az egyház és az állam ellenségei ellen. A fegyverzet tartozékai: acél teljesvértezet megfelelő sisakkal, közepes acélpajzs, lovagkard.",
+            "title": "Induló fegyverzet",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "table",
+            "text": "",
+            "title": "A Dreina-paplovag induló képzettségei 1. Tapasztalati szinten az alapkasztnál feltünteteken kívül:",
+            "headers": [
+                "Képzettség",
+                "Fok"
+            ],
+            "rows": [
+                [
+                    "Számtan/mértan",
+                    "2. fok"
+                ],
+                [
+                    "Szakma (Birtokigazgatás vagy Pénzügyek)",
+                    "2. fok"
+                ],
+                [
+                    "Jog/Törvénykezés",
+                    "2. fok"
+                ],
+                [
+                    "Politika/Diplomácia",
+                    "2. fok"
+                ],
+                [
+                    "Kultúra",
+                    "2. fok"
+                ],
+                [
+                    "Nyelvtudás",
+                    "2. fok"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "Értékbecslés, Jog/Törvénykezés, Politika/Diplomácia, Szakma (Birtokigazgatás vagy Pénzügyek).",
+            "title": "B. A Dreina-paplovag képzettségei, melyeket rendjétől az Oktatás képzettség 4. foka által nyújtott előnnyel tanulhat:",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "flavor_text",
+            "text": "...A Kódextárba végül csupán háromhetes várakozást követően nyertem bebocsátást, akkor, néhány óra és szigorú felügyelet mellett. Természetesen rendkívüli módon bosszankodtam a hosszadalmas huzavona miatt; határozottan az volt a benyomásom, hogy a lovagok még azután is csak igen kelletlenül engedtek kéréseimnek, hogy a Fehér Páholy több neves magisztere – hála az akadémiáink között kialakult baráti kapcsolatoknak – a saját személyében vállalt felelősséget értem. Mikor azonban valahára mégis bejutottam, be kellett látnom, hogy a kezdetben túlzottnak ítélt óvintézkedések valóban nem nélkülöztek minden alapot. Krad tanítása szerint sötét tanok nem léteznek; a tudomány morálisan semleges, a gonosz csírája mindig abban a személyben lappang, aki rossz célokra használja fel. Ennek megfelelően ők – a vakbuzgó shadoni fanatikusokkal ellentétben – tartózkodnak a barbár iratégetésektől; arra azonban szerfölött ügyelnek, hogy a legveszélyesebbnek ítélt műveket csak a gondosan megrostált kevesek számára tegyék hozzáférhetővé. Ami az anyagukat illeti, az valóban bámulatos volt; utólag visszatekintve azt a kijelentést is megkockáztatom, hogy még a mi egyetemünknek is díszére válhatott volna. Hibát sem a témakatalógusban, sem a kivonatos ismertetőkben nem találtam. Nem világi, hanem egyházi intézményben járók, arról csak egy különös apróság árulkodott: a Kódextár címjegyzékében feltüntetett irományok ugyanis kivétel nélkül el voltak látva valami sajátos, előttem ismeretlen könyvtári jelzettel, a lovagrend címerének kicsinyített másával. A legtöbb – számottevőt – a hírhedt Hargunn ta Karthinhmak mellett találtam, de száznál többet csatoltak Roxund Homoki Históriájához, a Memorabilia Crotonishoz és egy Doctrina Nigra néven számon tartott, rejtélyes műhöz is. Egyik kísérőm – bizonyos din Archeos lovag – makacs kérdezősködésemre elárulta, hogy ha valaki tanulmányozni kívánja az illető könyvet, előtte ennyi",
+            "title": "Aranykor lovag (Krad-paplovag)",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "Dreina szent jelképei az ezüstfényű és a bőségszaru; paplovagjai az Élet és a Lélek szféráiból merítik fohászaikat, és úrnőjük felvértezi őket néhány egyedi fohásszal is, amiket egyetlen más istenség paplovagjai sem ismernek. Ezek leginkább az utazás, a hűség és az anyagi javak felett bírnak hatalommal.",
+            "title": "E. A Dreina-paplovag különleges előnyei",
+            "headers": [],
+            "rows": []
+        }
+    ]
+}

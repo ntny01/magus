@@ -1,0 +1,1056 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>M.A.G.U.S. – Karakterlap</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap');
+
+    :root {
+      --bg-main:#020617; --bg-card:#0f172a; --bg-sheet:rgba(12,20,40,0.88);
+      --border:rgba(212,175,55,0.18); --border-soft:rgba(255,255,255,0.06);
+      --text:#e2e8f0; --muted:#94a3b8; --gold:#d4af37;
+      --gold-glow:rgba(212,175,55,0.3); --accent:#10b981; --accent-h:#34d399; --red:#f87171;
+    }
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+
+    body {
+      font-family:'Inter',sans-serif;
+      background:
+        radial-gradient(ellipse at 20% 10%,rgba(212,175,55,.07) 0%,transparent 40%),
+        radial-gradient(ellipse at 80% 80%,rgba(16,185,129,.06) 0%,transparent 40%),
+        radial-gradient(ellipse at 50% 50%,rgba(30,10,60,.4) 0%,transparent 70%),
+        linear-gradient(160deg,#020617 0%,#050e1f 50%,#020a14 100%);
+      color:var(--text); min-height:100vh; overflow-x:hidden;
+    }
+
+    /* ===== PARTICLES ===== */
+    #magic-particles{position:fixed;inset:0;pointer-events:none;z-index:0;overflow:hidden;}
+    .rune{position:absolute;color:rgba(212,175,55,0.1);animation:floatRune linear infinite;pointer-events:none;}
+    @keyframes floatRune{
+      from{transform:translateY(100vh) rotate(0deg);opacity:0;}
+      8%{opacity:1;} 90%{opacity:.8;}
+      to{transform:translateY(-120px) rotate(360deg);opacity:0;}
+    }
+
+    /* ===== HEADER ===== */
+    header{
+      position:sticky;top:0;z-index:50;
+      background:rgba(2,6,23,0.96);backdrop-filter:blur(24px);
+      border-bottom:1px solid var(--border);
+      padding:.6rem 1.25rem;
+      display:flex;align-items:center;justify-content:space-between;gap:.5rem;flex-wrap:wrap;
+    }
+    .header-left{display:flex;align-items:center;gap:.4rem;flex-wrap:wrap;}
+    .header-right{display:flex;align-items:center;gap:.35rem;flex-wrap:wrap;}
+    .page-title{
+      font-family:'Cinzel',serif;color:var(--gold);font-size:1.15rem;
+      letter-spacing:.12em;text-shadow:0 0 20px var(--gold-glow);
+      margin-left:.4rem;white-space:nowrap;
+    }
+
+    /* ===== BUTTONS ===== */
+    .btn{
+      background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.1);
+      color:var(--text);padding:.4rem .85rem;font-size:.8rem;font-weight:600;
+      border-radius:.5rem;cursor:pointer;transition:all .18s;
+      display:inline-flex;align-items:center;gap:.35rem;
+      white-space:nowrap;min-height:36px;font-family:inherit;
+    }
+    .btn:hover{background:rgba(16,185,129,.08);border-color:rgba(16,185,129,.35);color:var(--accent-h);}
+    .btn-gold{border-color:rgba(212,175,55,.4)!important;color:var(--gold)!important;}
+    .btn-gold:hover{background:rgba(212,175,55,.08)!important;color:#f0cc60!important;}
+    .btn-red{border-color:rgba(239,68,68,.35)!important;color:var(--red)!important;}
+    .btn-red:hover{background:rgba(239,68,68,.08)!important;}
+    .btn-sm{padding:.28rem .55rem;font-size:.73rem;min-height:28px;}
+
+    /* Export dropdown */
+    .export-wrap{position:relative;}
+    .export-menu{
+      display:none;position:absolute;top:110%;right:0;
+      background:var(--bg-card);border:1px solid var(--border);
+      border-radius:.6rem;overflow:hidden;min-width:200px;
+      box-shadow:0 12px 40px rgba(0,0,0,.5);z-index:200;
+    }
+    .export-menu.open{display:block;}
+    .export-item{
+      display:flex;align-items:center;gap:.6rem;padding:.65rem 1rem;
+      font-size:.82rem;cursor:pointer;transition:background .15s;color:var(--text);
+      border-bottom:1px solid var(--border-soft);
+    }
+    .export-item:last-child{border:none;}
+    .export-item:hover{background:rgba(212,175,55,.07);color:var(--gold);}
+
+    /* ===== OUTER WRAPPER ===== */
+    .sheet-outer{
+      max-width:1300px;margin:0 auto;
+      padding:1.75rem 1.5rem 5rem;
+      position:relative;z-index:1;
+      display:flex;flex-direction:column;gap:1.75rem;
+    }
+
+    /* ===== VAMPIRE TITLE ===== */
+    .vtitle-wrap{text-align:center;padding:.25rem 0;}
+    .vtitle-input{
+      font-family:'Cinzel',serif;
+      font-size:clamp(1.8rem,5vw,3.2rem);
+      font-weight:700;letter-spacing:.22em;text-transform:uppercase;
+      color:var(--text);background:transparent;border:none;outline:none;
+      text-align:center;width:100%;
+      text-shadow:0 0 40px rgba(212,175,55,.25),0 2px 6px rgba(0,0,0,.6);
+    }
+    .vtitle-input::placeholder{color:rgba(255,255,255,.18);}
+    .ornament{height:2px;background:linear-gradient(90deg,transparent 0%,rgba(212,175,55,.6) 20%,rgba(212,175,55,.6) 80%,transparent 100%);border-radius:2px;margin:.4rem 0;}
+    .ornament-sm{height:1px;background:linear-gradient(90deg,transparent,rgba(212,175,55,.25),transparent);border-radius:1px;margin:.2rem 0;}
+    .ornament-deco{
+      text-align:center;font-size:.75rem;color:rgba(212,175,55,.35);
+      letter-spacing:.5em;user-select:none;
+    }
+
+    /* ===== INFO CARD ===== */
+    .info-card{
+      background:var(--bg-sheet);border:1px solid var(--border);
+      border-radius:18px;padding:1.4rem 1.75rem;
+      backdrop-filter:blur(14px);
+      box-shadow:0 8px 40px rgba(0,0,0,.3),inset 0 1px 0 rgba(255,255,255,.025),
+                 0 0 0 1px rgba(212,175,55,.04);
+    }
+    .info-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.1rem 2rem;}
+    .info-field{display:flex;align-items:flex-end;gap:.45rem;}
+    .info-label{font-family:'Cinzel',serif;color:var(--gold);font-size:.79rem;white-space:nowrap;font-weight:600;}
+    .info-input{
+      flex:1;background:transparent;border:none;border-bottom:1px dashed rgba(255,255,255,.18);
+      color:#fff;padding:.18rem .25rem;font-size:.92rem;outline:none;transition:border-color .2s;
+      font-family:inherit;
+    }
+    .info-input:focus{border-bottom-color:var(--accent);}
+    .combo-wrap{flex:1;}
+    .combo-input{
+      width:100%;background:transparent;border:none;border-bottom:1px dashed rgba(255,255,255,.18);
+      color:#fff;padding:.18rem .25rem;font-size:.92rem;outline:none;
+      transition:border-color .2s;font-family:inherit;
+    }
+    .combo-input:focus{border-bottom-color:var(--gold);}
+
+    /* ===== SHEET CARD ===== */
+    .sheet-card{
+      background:var(--bg-sheet);border:1px solid var(--border);
+      border-radius:22px;padding:2rem 2rem 2.5rem;
+      backdrop-filter:blur(14px);
+      box-shadow:0 20px 70px rgba(0,0,0,.45),inset 0 1px 0 rgba(255,255,255,.025),
+                 0 0 0 1px rgba(212,175,55,.03);
+      position:relative;
+    }
+    .sheet-card::before{
+      content:'';position:absolute;inset:0;pointer-events:none;
+      background:linear-gradient(135deg,rgba(212,175,55,.03) 0%,transparent 50%,rgba(16,185,129,.015) 100%);
+      border-radius:22px;
+    }
+
+    /* ===== SECTIONS ===== */
+    #sections-container{display:flex;flex-direction:column;gap:2.25rem;}
+
+    .section-header{display:flex;align-items:center;gap:.65rem;margin-bottom:.9rem;}
+    .section-title-input{
+      font-family:'Cinzel',serif;color:var(--gold);font-size:1.25rem;font-weight:600;
+      letter-spacing:.08em;background:transparent;border:none;outline:none;flex:1;
+      text-shadow:0 0 15px rgba(212,175,55,.15);
+      border-bottom:1px solid transparent;transition:border-color .2s;
+    }
+    .section-title-input:focus{border-bottom-color:rgba(212,175,55,.4);}
+    .section-edit-ctrls{display:flex;gap:.35rem;}
+
+    .boxes-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(255px,1fr));gap:1.1rem;}
+
+    /* ===== BOX ===== */
+    .box-wrap{
+      background:rgba(0,0,0,.22);border:1px solid rgba(255,255,255,.06);
+      border-radius:14px;padding:1rem 1.1rem 1.1rem;
+      display:flex;flex-direction:column;gap:.5rem;position:relative;
+      transition:border-color .2s,box-shadow .2s;
+    }
+    .box-wrap:hover{border-color:rgba(212,175,55,.1);box-shadow:0 4px 20px rgba(0,0,0,.2);}
+    .box-header{display:flex;align-items:center;gap:.4rem;margin-bottom:.2rem;}
+    .box-title-input{
+      flex:1;background:transparent;border:none;outline:none;
+      color:var(--text);font-size:.84rem;font-weight:600;
+      text-transform:uppercase;letter-spacing:.06em;font-family:inherit;
+      border-bottom:1px solid transparent;transition:border-color .2s;
+    }
+    .box-title-input:focus{border-bottom-color:rgba(255,255,255,.18);}
+    .btn-del-box{
+      background:none;border:none;color:rgba(239,68,68,.35);cursor:pointer;
+      font-size:.82rem;padding:.12rem .28rem;border-radius:4px;transition:all .15s;line-height:1;
+    }
+    .btn-del-box:hover{color:var(--red);background:rgba(239,68,68,.1);}
+
+    /* ===== ROW ===== */
+    .row-wrap{display:flex;align-items:center;gap:.38rem;font-size:.85rem;}
+
+    .row-label-input{
+      background:transparent;border:none;
+      border-bottom:1px dotted rgba(255,255,255,.12);
+      color:var(--text);font-size:.85rem;font-family:inherit;outline:none;
+      flex:1;min-width:0;transition:border-color .2s;
+    }
+    .row-label-input:focus{border-bottom-color:var(--accent);}
+
+    /* Dots */
+    .dots-wrap{display:flex;gap:3px;user-select:none;flex-shrink:0;}
+    .dot{cursor:pointer;color:var(--muted);font-size:1.05rem;transition:color .1s,transform .12s;line-height:1;}
+    .dot:hover{transform:scale(1.28);color:var(--gold);}
+    .dot.filled{color:var(--gold);text-shadow:0 0 6px rgba(212,175,55,.5);}
+
+    /* Text row */
+    .row-text-input{
+      flex:1;background:transparent;border:none;
+      border-bottom:1px dashed rgba(255,255,255,.12);
+      color:#fff;font-size:.85rem;font-family:inherit;outline:none;
+      transition:border-color .2s;min-width:0;
+    }
+    .row-text-input:focus{border-bottom-color:var(--accent);}
+
+    /* Textarea row */
+    .row-textarea{
+      width:100%;background:rgba(0,0,0,.28);border:1px solid var(--border-soft);
+      border-radius:8px;color:var(--text);font-size:.84rem;font-family:inherit;
+      outline:none;resize:vertical;padding:.55rem .7rem;min-height:80px;
+      transition:border-color .2s;
+    }
+    .row-textarea:focus{border-color:rgba(16,185,129,.3);}
+
+    /* Header row (big dot bar) */
+    .header-row-wrap{
+      display:flex;flex-direction:column;align-items:center;gap:.45rem;
+      padding:.6rem .25rem;
+      background:linear-gradient(135deg,rgba(212,175,55,.04),transparent,rgba(212,175,55,.04));
+      border-top:1px solid rgba(212,175,55,.15);
+      border-bottom:1px solid rgba(212,175,55,.15);
+      border-radius:8px;margin:.2rem 0;position:relative;
+    }
+    .header-row-input{
+      background:transparent;border:none;outline:none;
+      font-family:'Cinzel',serif;color:var(--gold);font-size:.88rem;font-weight:600;
+      text-align:center;width:100%;letter-spacing:.07em;
+      border-bottom:1px solid transparent;transition:border-color .2s;
+    }
+    .header-row-input:focus{border-bottom-color:rgba(212,175,55,.4);}
+    .header-dots-wrap{display:flex;gap:5px;justify-content:center;}
+    .header-dot{
+      cursor:pointer;font-size:1.35rem;color:var(--muted);
+      transition:color .1s,transform .12s;user-select:none;line-height:1;
+    }
+    .header-dot:hover{transform:scale(1.2);color:var(--gold);}
+    .header-dot.filled{color:var(--gold);text-shadow:0 0 10px var(--gold-glow);}
+
+    /* Delete row btn */
+    .btn-del-row{
+      background:none;border:none;color:rgba(239,68,68,.3);cursor:pointer;
+      font-size:.75rem;padding:.1rem .22rem;border-radius:3px;
+      transition:color .15s;flex-shrink:0;line-height:1;
+    }
+    .btn-del-row:hover{color:var(--red);}
+
+    /* Add row picker */
+    .add-row-area{margin-top:.4rem;}
+    .add-row-picker{display:flex;gap:.3rem;flex-wrap:wrap;}
+    .add-row-btn{
+      background:rgba(255,255,255,.025);border:1px dashed rgba(255,255,255,.1);
+      color:var(--muted);cursor:pointer;padding:.28rem .55rem;
+      font-size:.71rem;border-radius:6px;transition:all .15s;font-family:inherit;
+    }
+    .add-row-btn:hover{border-color:var(--gold);color:var(--gold);background:rgba(212,175,55,.06);}
+
+    /* Add box / section */
+    .add-box-placeholder{
+      border:1px dashed rgba(255,255,255,.07);border-radius:14px;
+      display:flex;align-items:center;justify-content:center;
+      cursor:pointer;padding:1.5rem;color:var(--muted);font-size:.82rem;gap:.4rem;
+      transition:all .2s;background:rgba(255,255,255,.01);
+    }
+    .add-box-placeholder:hover{border-color:var(--accent);color:var(--accent-h);background:rgba(16,185,129,.03);}
+
+    #add-section-btn{
+      background:rgba(255,255,255,.02);border:1px dashed rgba(212,175,55,.22);
+      color:rgba(212,175,55,.55);cursor:pointer;padding:.7rem 1.5rem;
+      font-size:.83rem;font-weight:600;border-radius:12px;transition:all .2s;
+      display:flex;align-items:center;gap:.5rem;width:100%;justify-content:center;
+      font-family:inherit;margin-top:.5rem;
+    }
+    #add-section-btn:hover{border-color:var(--gold);color:var(--gold);background:rgba(212,175,55,.06);}
+
+    /* ===== STATE CLASSES: LOCKED & PHOTO ===== */
+    .sheet-locked .edit-only{display:none!important;}
+    .sheet-locked .box-title-input,
+    .sheet-locked .section-title-input,
+    .sheet-locked .row-label-input,
+    .sheet-locked .header-row-input {
+      pointer-events:none; border-bottom-color:transparent!important;
+    }
+
+    /* Kifejezetten FOTÓ MÓD (minden input mező rejtve/letiltva) */
+    .sheet-photo .info-input,
+    .sheet-photo .combo-input,
+    .sheet-photo .vtitle-input,
+    .sheet-photo .row-text-input {
+      pointer-events:none; border-bottom-color:transparent!important;
+    }
+    .sheet-photo .row-textarea {
+      pointer-events:none; border-color:transparent!important;
+      background:transparent!important; resize:none;
+      padding-left:0; padding-right:0;
+    }
+    .sheet-photo .dot, .sheet-photo .header-dot {
+      pointer-events:none; /* Ne lehessen kattintgatni a pontokat */
+    }
+
+    /* ===== PRINT ===== */
+    @media print{
+      /* Agresszív háttérszín kényszerítés nyomtatáskor az összes elemre */
+      *, *::before, *::after, html, body {
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
+        color-adjust: exact !important;
+      }
+      
+      body {
+        background-color: #020617 !important; 
+        color: var(--text) !important;
+      }
+      
+      header, #magic-particles, .edit-only, #add-section-btn { display:none!important; }
+      .sheet-outer { padding: 0!important; margin: 0 auto !important; }
+      .info-card, .sheet-card, .box-wrap {
+        break-inside: avoid; /* Ne vágja ketté az elemeket lapozásnál */
+      }
+    }
+
+    /* ===== RESPONSIVE ===== */
+@media (max-width:767px){
+  .sheet-outer{padding:1rem .75rem 5rem;gap:1rem;}
+  
+  /* Fejléc optimalizálása */
+  header{padding:.5rem .5rem; justify-content: center; gap: 0.5rem;}
+  .header-left, .header-right { justify-content: center; width: 100%; }
+  .page-title { display: none; } /* Kevesebb helyet foglal el */
+  
+  /* Gombok méretének növelése érintéshez */
+  .btn{padding:.5rem .75rem; font-size:.85rem; min-height:42px; margin: 2px;}
+
+  /* Információs blokk: egy oszlopra váltás */
+  .info-card{padding:1rem;}
+  .info-grid{grid-template-columns: 1fr !important; gap: .7rem;}
+  .info-field { flex-direction: column; align-items: flex-start; gap: 0.2rem; }
+  .info-label { font-size: 0.7rem; }
+  
+  .sheet-card{padding:1.1rem .9rem 1.5rem;}
+  .boxes-grid{grid-template-columns:1fr;}
+  
+  /* Cím és beviteli mezők */
+  .vtitle-input{font-size:1.5rem; letter-spacing:.08em;}
+  
+  /* iOS zoom megakadályozása bevitelnél */
+  input, select, textarea { font-size: 16px !important; }
+  /* Mobil optimalizálás a szekció gombokhoz */
+  .section-header {
+    flex-wrap: wrap; /* Engedélyezzük a sortörést */
+    gap: 0.5rem;     /* Kicsit kisebb rés a sortörésnél */
+  }
+  .section-edit-ctrls {
+    width: 100%;              /* A gombok sora elfoglalja a teljes szélességet */
+    justify-content: flex-end; /* Jobbra igazítjuk a gombokat */
+  }
+}
+    @media (min-width:768px) and (max-width:1023px){
+      .sheet-outer{padding:1.5rem 1.25rem 4rem;}
+      .info-grid{grid-template-columns:repeat(2,1fr);}
+      .boxes-grid{grid-template-columns:repeat(2,1fr);}
+    }
+    html{overflow-x:hidden;}
+  </style>
+</head>
+<body>
+<div id="magic-particles"></div>
+
+<header>
+  <div class="header-left">
+    <a href="index.html" class="btn">📖 Kódex</a>
+    <a href="ynev_terkep.html" class="btn" style="border-color:rgba(59,130,246,.25);color:#60a5fa;">🗺️ Térkép</a>
+    <span class="page-title">M.A.G.U.S. Karakterlap</span>
+  </div>
+  <div class="header-right">
+    <button class="btn btn-gold" id="viewBtn" onclick="toggleViewMode()">🔓 Szerkeszthető</button>
+    <button class="btn" onclick="printSheet()">🖨️ Nyomtatás</button>
+    <button class="btn" id="imgBtn" onclick="saveAsImage()">🖼️ Kép</button>
+    <div class="export-wrap">
+      <button class="btn" onclick="toggleExportMenu()">💾 Export ▾</button>
+      <div class="export-menu" id="exportMenu">
+        <div class="export-item" onclick="exportFull()">📄 Teljes karakterlap</div>
+        <div class="export-item" onclick="exportTemplate()">📋 Sablon (üres értékek)</div>
+        <div class="export-item" onclick="exportCard()">🃏 Karakter kártya (KM)</div>
+      </div>
+    </div>
+    <button class="btn" onclick="document.getElementById('importFile').click()">📂 Import</button>
+    <input type="file" id="importFile" accept=".json" style="display:none" onchange="importData(event)">
+    <button class="btn btn-red" onclick="resetSheet()">🗑️ Törlés</button>
+  </div>
+</header>
+
+<div class="sheet-outer" id="sheet-wrapper">
+
+  <div class="vtitle-wrap">
+    <div class="ornament-deco">✦ &nbsp; ✦ &nbsp; ✦</div>
+    <div class="ornament" style="margin:.3rem 0;"></div>
+    <input type="text" class="vtitle-input" id="vampireTitle" placeholder="KARAKTER NEVE"
+      value="KARAKTER" oninput="sheetData.vampireTitle=this.value">
+    <div class="ornament" style="margin:.3rem 0;"></div>
+    <div class="ornament-deco">✦ &nbsp; ✦ &nbsp; ✦</div>
+  </div>
+
+  <div class="info-card">
+    <div class="info-grid" id="info-grid-container">
+      <div class="info-field">
+        <span class="info-label">Név:</span>
+        <input type="text" class="info-input" id="info_name" placeholder="..."
+          oninput="sheetData.info.name=this.value">
+      </div>
+      <div class="info-field">
+        <span class="info-label">Faj / Származás:</span>
+        <div class="combo-wrap">
+          <input type="text" class="combo-input" id="info_faj" list="dl_faj"
+            placeholder="..." oninput="sheetData.info.faj=this.value">
+          <datalist id="dl_faj">
+            <option value="Ember"><option value="Elf"><option value="Félelf">
+            <option value="Törpe"><option value="Gnóm"><option value="Hobbitus">
+            <option value="Ork"><option value="Félork"><option value="Dzsinn">
+            <option value="Troll"><option value="Óriás"><option value="Drow">
+          </datalist>
+        </div>
+      </div>
+      <div class="info-field">
+        <span class="info-label">Kaszt / Iskola:</span>
+        <div class="combo-wrap">
+          <input type="text" class="combo-input" id="info_kaszt" list="dl_kaszt"
+            placeholder="..." oninput="sheetData.info.kaszt=this.value">
+          <datalist id="dl_kaszt">
+            <option value="Harcos"><option value="Varázsló"><option value="Pap">
+            <option value="Tolvaj"><option value="Bárd"><option value="Vadász">
+            <option value="Lovag"><option value="Druida"><option value="Szerzetes">
+            <option value="Mágus"><option value="Nekromanta"><option value="Paladin">
+            <option value="Alkimista"><option value="Ezermester"><option value="Sámán">
+          </datalist>
+        </div>
+      </div>
+      <div class="info-field">
+        <span class="info-label">Isten / Hit:</span>
+        <div class="combo-wrap">
+          <input type="text" class="combo-input" id="info_isten" list="dl_isten"
+            placeholder="..." oninput="sheetData.info.isten=this.value">
+          <datalist id="dl_isten">
+            <option value="Arel – Fény"><option value="Kaor – Rend">
+            <option value="Domvik – Háború"><option value="Gilron – Erdő">
+            <option value="Istár – Mágia"><option value="Narmeszt – Sötétség">
+            <option value="Keret – Halál"><option value="Semmi – Ateista"><option value="Egyéb">
+          </datalist>
+        </div>
+      </div>
+      <div class="info-field">
+        <span class="info-label">Krónika:</span>
+        <input type="text" class="info-input" id="info_kronika" placeholder="..."
+          oninput="sheetData.info.kronika=this.value">
+      </div>
+      <div class="info-field">
+        <span class="info-label">Tapasztalat:</span>
+        <input type="text" class="info-input" id="info_xp" placeholder="0"
+          oninput="sheetData.info.xp=this.value">
+      </div>
+    </div>
+  </div>
+
+  <div class="sheet-card">
+    <div id="sections-container"></div>
+    <button id="add-section-btn" class="edit-only" onclick="addSection()">
+      ✦ &nbsp; Új szekció hozzáadása &nbsp; ✦
+    </button>
+  </div>
+
+</div>
+
+<script>
+/* ==============================
+   DEFAULT DATA
+   ============================== */
+const DEFAULT_SECTIONS = [
+  { id:'sec_attr', title:'Tulajdonságok', boxes:[
+    { id:'box_fiz', title:'Fizikai', rows:[
+      {id:'r_ero',type:'dot',label:'Erő',value:0,max:5},
+      {id:'r_ugy',type:'dot',label:'Ügyesség',value:0,max:5},
+      {id:'r_all',type:'dot',label:'Állóképesség',value:0,max:5},
+    ]},
+    { id:'box_tars', title:'Társadalmi', rows:[
+      {id:'r_kar',type:'dot',label:'Karizma',value:0,max:5},
+      {id:'r_man',type:'dot',label:'Manipuláció',value:0,max:5},
+      {id:'r_meg',type:'dot',label:'Megjelenés',value:0,max:5},
+    ]},
+    { id:'box_ment', title:'Mentális', rows:[
+      {id:'r_erz',type:'dot',label:'Érzékelés',value:0,max:5},
+      {id:'r_int',type:'dot',label:'Intelligencia',value:0,max:5},
+      {id:'r_esz',type:'dot',label:'Észjárás',value:0,max:5},
+    ]},
+  ]},
+  { id:'sec_abil', title:'Képességek', boxes:[
+    { id:'box_teh', title:'Tehetségek', rows:[
+      {id:'r_atl',type:'dot',label:'Atlétika',value:0,max:5},
+      {id:'r_emp',type:'dot',label:'Empátia',value:0,max:5},
+      {id:'r_ebe',type:'dot',label:'Éberség',value:0,max:5},
+      {id:'r_hel',type:'dot',label:'Helyismeret',value:0,max:5},
+      {id:'r_ira',type:'dot',label:'Irányítás',value:0,max:5},
+      {id:'r_kez',type:'dot',label:'Kézitusa',value:0,max:5},
+      {id:'r_kif',type:'dot',label:'Kifejezőkészség',value:0,max:5},
+      {id:'r_kit',type:'dot',label:'Kitérés',value:0,max:5},
+      {id:'r_fmeg',type:'dot',label:'Megfélemlítés',value:0,max:5},
+      {id:'r_ras',type:'dot',label:'Rászedés',value:0,max:5},
+    ]},
+    { id:'box_jar', title:'Jártasságok', rows:[
+      {id:'r_allt',type:'dot',label:'Állatszelídítés',value:0,max:5},
+      {id:'r_biz',type:'dot',label:'Biztonsági rendszerek',value:0,max:5},
+      {id:'r_ill',type:'dot',label:'Illemtan',value:0,max:5},
+      {id:'r_koz',type:'dot',label:'Közelharc',value:0,max:5},
+      {id:'r_lop',type:'dot',label:'Lopakodás',value:0,max:5},
+      {id:'r_lof',type:'dot',label:'Lőfegyverek',value:0,max:5},
+      {id:'r_mes',type:'dot',label:'Mesterség',value:0,max:5},
+      {id:'r_szr',type:'dot',label:'Szereplés',value:0,max:5},
+      {id:'r_tul',type:'dot',label:'Túlélés',value:0,max:5},
+      {id:'r_vez',type:'dot',label:'Vezetés',value:0,max:5},
+    ]},
+    { id:'box_ism', title:'Ismeretek', rows:[
+      {id:'r_hum',type:'dot',label:'Humán tudományok',value:0,max:5},
+      {id:'r_jog',type:'dot',label:'Jog',value:0,max:5},
+      {id:'r_nye',type:'dot',label:'Nyelvismeret',value:0,max:5},
+      {id:'r_nyo',type:'dot',label:'Nyomozás',value:0,max:5},
+      {id:'r_okk',type:'dot',label:'Okkultizmus',value:0,max:5},
+      {id:'r_orv',type:'dot',label:'Orvostudomány',value:0,max:5},
+      {id:'r_pen',type:'dot',label:'Pénzügy',value:0,max:5},
+      {id:'r_pol',type:'dot',label:'Politika',value:0,max:5},
+      {id:'r_ter',type:'dot',label:'Természettudomány',value:0,max:5},
+    ]},
+  ]},
+  { id:'sec_adv', title:'Hátterek és Erények', boxes:[
+    { id:'box_hat', title:'Hátterek / Előnyök', rows:[
+      {id:'r_h1',type:'dot',label:'Háttér 1',value:0,max:5},
+      {id:'r_h2',type:'dot',label:'Háttér 2',value:0,max:5},
+      {id:'r_h3',type:'dot',label:'Háttér 3',value:0,max:5},
+      {id:'r_h4',type:'dot',label:'Háttér 4',value:0,max:5},
+      {id:'r_h5',type:'dot',label:'Háttér 5',value:0,max:5},
+    ]},
+    { id:'box_ereny', title:'Erények', rows:[
+      {id:'r_lel',type:'dot',label:'Lelkiismeret',value:0,max:5},
+      {id:'r_onur',type:'dot',label:'Önuralom',value:0,max:5},
+      {id:'r_bat',type:'dot',label:'Bátorság',value:0,max:5},
+    ]},
+  ]},
+  { id:'sec_notes', title:'Felszerelés és Megjegyzések', boxes:[
+    { id:'box_fsz', title:'Fegyverek / Felszerelés', rows:[
+      {id:'r_fsz',type:'textarea',label:'',value:''}
+    ]},
+    { id:'box_mj', title:'Egyéb Megjegyzések', rows:[
+      {id:'r_mj',type:'textarea',label:'',value:''}
+    ]},
+  ]},
+];
+
+/* ==============================
+   STATE
+   ============================== */
+let sheetData = {
+  vampireTitle:'KARAKTER',
+  info:{name:'',faj:'',kaszt:'',isten:'',kronika:'',xp:''},
+  sections: JSON.parse(JSON.stringify(DEFAULT_SECTIONS)),
+  viewMode: 0 // 0: Edit, 1: Lock, 2: Photo
+};
+
+let _uid = 2000;
+const uid = () => 'u' + (++_uid) + '_' + (Math.random()*999|0);
+
+/* ==============================
+   HELPERS
+   ============================== */
+function isRowHasValue(row) {
+  if (row.type === 'dot' || row.type === 'header') return row.value > 0;
+  return (row.value || '').trim().length > 0;
+}
+
+/* ==============================
+   RENDER
+   ============================== */
+function renderAll() {
+  const cont = document.getElementById('sections-container');
+  cont.innerHTML = '';
+  sheetData.sections.forEach(sec => renderSection(sec, cont));
+  updateInfoVisibility();
+}
+
+function updateInfoVisibility() {
+  const isPhoto = (sheetData.viewMode === 2);
+  const fields = document.querySelectorAll('.info-field');
+  
+  fields.forEach(field => {
+    if (!isPhoto) {
+      field.style.display = 'flex';
+    } else {
+      const input = field.querySelector('input');
+      // A Tapasztalat 0 értéke is érvényes lehet, de üres ne legyen
+      if (!input.value || input.value.trim() === '') {
+        field.style.display = 'none';
+      } else {
+        field.style.display = 'flex';
+      }
+    }
+  });
+}
+
+function renderSection(sec, cont) {
+  // Fotó módban ha a szekció üres, elrejtjük
+  if (sheetData.viewMode === 2) {
+    const hasContent = sec.boxes.some(b => b.rows.some(r => isRowHasValue(r)));
+    if (!hasContent) return;
+  }
+
+  const wrap = document.createElement('div');
+  wrap.className = 'section-wrap';
+
+  // Ornament + header
+  const ornSm = document.createElement('div'); ornSm.className='ornament-sm';
+
+  const hdr = document.createElement('div'); hdr.className='section-header';
+  const ti = document.createElement('input');
+  ti.type='text'; ti.className='section-title-input'; ti.value=sec.title;
+  ti.oninput = e => { sec.title = e.target.value; };
+
+  const ctrls = document.createElement('div'); ctrls.className='section-edit-ctrls edit-only';
+
+  const addBoxBtn = document.createElement('button');
+  addBoxBtn.className='btn btn-sm'; addBoxBtn.innerHTML='+ Blokk';
+  addBoxBtn.onclick = () => {
+    sec.boxes.push({id:uid(),title:'Új blokk',rows:[]});
+    renderAll();
+  };
+
+  const delSecBtn = document.createElement('button');
+  delSecBtn.className='btn btn-sm btn-red'; delSecBtn.innerHTML='✕ Szekció';
+  delSecBtn.onclick = () => {
+    if(confirm(`"${sec.title}" szekció törlése?`)) {
+      sheetData.sections = sheetData.sections.filter(s=>s.id!==sec.id);
+      renderAll();
+    }
+  };
+  ctrls.append(addBoxBtn, delSecBtn);
+  hdr.append(ti, ctrls);
+
+  const grid = document.createElement('div'); grid.className='boxes-grid';
+  sec.boxes.forEach(box => renderBox(box, grid, sec));
+
+  // Add box placeholder (edit-only)
+  const addBoxPh = document.createElement('div');
+  addBoxPh.className='add-box-placeholder edit-only';
+  addBoxPh.innerHTML='<span style="font-size:1.1rem">+</span> Új blokk hozzáadása';
+  addBoxPh.onclick = () => {
+    sec.boxes.push({id:uid(),title:'Új blokk',rows:[]});
+    renderAll();
+  };
+  grid.appendChild(addBoxPh);
+
+  wrap.append(ornSm, hdr, grid);
+  cont.appendChild(wrap);
+}
+
+function renderBox(box, grid, sec) {
+  // Fotó módban ha a blokk üres, elrejtjük
+  if (sheetData.viewMode === 2) {
+    const hasContent = box.rows.some(r => isRowHasValue(r));
+    if (!hasContent) return;
+  }
+
+  const div = document.createElement('div'); div.className='box-wrap';
+
+  // Header
+  const bHdr = document.createElement('div'); bHdr.className='box-header';
+  const bTi = document.createElement('input');
+  bTi.type='text'; bTi.className='box-title-input'; bTi.value=box.title;
+  bTi.oninput = e => { box.title = e.target.value; };
+
+  const delBoxBtn = document.createElement('button');
+  delBoxBtn.className='btn-del-box edit-only'; delBoxBtn.innerHTML='✕';
+  delBoxBtn.title='Blokk törlése';
+  delBoxBtn.onclick = () => {
+    if(confirm(`"${box.title}" blokk törlése?`)) {
+      sec.boxes = sec.boxes.filter(b=>b.id!==box.id);
+      renderAll();
+    }
+  };
+  bHdr.append(bTi, delBoxBtn);
+  div.appendChild(bHdr);
+
+  // Rows (Csak azokat jelenítjük meg, amik nem üresek fotó módban)
+  box.rows.forEach(row => {
+    if (sheetData.viewMode === 2 && !isRowHasValue(row)) return;
+    div.appendChild(buildRow(row, box));
+  });
+
+  // Add row picker
+  const addArea = document.createElement('div'); addArea.className='add-row-area edit-only';
+  const picker = document.createElement('div'); picker.className='add-row-picker';
+  [
+    {t:'dot',   l:'●●● Pont-sor'},
+    {t:'text',  l:'___ Szöveges sor'},
+    {t:'textarea',l:'≡ Szövegmező'},
+    {t:'header',l:'◉ Fejléc sáv'},
+  ].forEach(({t,l}) => {
+    const b = document.createElement('button');
+    b.className='add-row-btn'; b.innerText=l;
+    b.onclick = () => {
+      box.rows.push({
+        id:uid(), type:t,
+        label: t==='dot'?'Új képesség': t==='header'?'Fejléc':'',
+        value: (t==='dot'||t==='header') ? 0 : '',
+        max:   t==='header' ? 10 : 5
+      });
+      renderAll();
+    };
+    picker.appendChild(b);
+  });
+  addArea.appendChild(picker);
+  div.appendChild(addArea);
+  grid.appendChild(div);
+}
+
+function buildRow(row, box) {
+  const wrap = document.createElement('div');
+
+  if (row.type === 'dot') {
+    wrap.className='row-wrap';
+    const li = makeRowLabelInput(row);
+    const dw = document.createElement('div'); dw.className='dots-wrap';
+    renderDots(dw, row, false);
+    wrap.append(li, dw, makeDelRowBtn(row,box));
+
+  } else if (row.type === 'text') {
+    wrap.className='row-wrap';
+    const li = makeRowLabelInput(row);
+    li.style.maxWidth='100px'; li.placeholder='Felirat...';
+    const ti = document.createElement('input');
+    ti.type='text'; ti.className='row-text-input'; ti.value=row.value; ti.placeholder='...';
+    ti.oninput = e => { row.value=e.target.value; };
+    wrap.append(li, ti, makeDelRowBtn(row,box));
+
+  } else if (row.type === 'textarea') {
+    wrap.style.cssText='flex-direction:column;align-items:stretch;display:flex;gap:.3rem;';
+    const ta = document.createElement('textarea');
+    ta.className='row-textarea'; ta.value=row.value; ta.placeholder='Ide írj...';
+    ta.oninput = e => { row.value=e.target.value; };
+    const del = makeDelRowBtn(row,box); del.style.alignSelf='flex-end';
+    wrap.append(ta, del);
+
+  } else if (row.type === 'header') {
+    const hw = document.createElement('div'); hw.className='header-row-wrap';
+    const hi = document.createElement('input');
+    hi.type='text'; hi.className='header-row-input'; hi.value=row.label; hi.placeholder='Fejléc neve...';
+    hi.oninput = e => { row.label=e.target.value; };
+    const hdw = document.createElement('div'); hdw.className='header-dots-wrap';
+    renderDots(hdw, row, true);
+    const del = makeDelRowBtn(row,box);
+    hw.append(hi, hdw, del);
+    wrap.appendChild(hw);
+  }
+  return wrap;
+}
+
+function makeRowLabelInput(row) {
+  const li = document.createElement('input');
+  li.type='text'; li.className='row-label-input'; li.value=row.label;
+  li.oninput = e => { row.label=e.target.value; };
+  return li;
+}
+
+function makeDelRowBtn(row, box) {
+  const b = document.createElement('button');
+  b.className='btn-del-row edit-only'; b.innerHTML='✕'; b.title='Sor törlése';
+  b.onclick = () => { box.rows=box.rows.filter(r=>r.id!==row.id); renderAll(); };
+  return b;
+}
+
+function renderDots(container, row, isHeader) {
+  container.innerHTML = '';
+  const max = row.max || 5;
+  for (let i=1;i<=max;i++) {
+    const d = document.createElement('span');
+    const cls = isHeader ? 'header-dot' : 'dot';
+    d.className = cls + (i<=row.value ? ' filled' : '');
+    d.innerText = i<=row.value ? '●' : '○';
+    d.onclick = () => {
+      // Ha nem szerkeszthető az érték mód (fotó), ne történjen semmi, de CSS is védi (pointer-events: none)
+      if(sheetData.viewMode === 2) return; 
+      row.value = (row.value===i) ? i-1 : i;
+      renderDots(container, row, isHeader);
+    };
+    container.appendChild(d);
+  }
+}
+
+/* ==============================
+   ADD SECTION
+   ============================== */
+function addSection() {
+  sheetData.sections.push({
+    id:uid(), title:'Új szekció',
+    boxes:[{id:uid(),title:'Új blokk',rows:[]}]
+  });
+  renderAll();
+  document.getElementById('add-section-btn').scrollIntoView({behavior:'smooth'});
+}
+
+/* ==============================
+   VIEW MODE TOGGLE
+   ============================== */
+function toggleViewMode() {
+  sheetData.viewMode = ((sheetData.viewMode || 0) + 1) % 3;
+  const btn = document.getElementById('viewBtn');
+  document.body.classList.remove('sheet-locked', 'sheet-photo');
+
+  if (sheetData.viewMode === 0) {
+    btn.innerHTML = '🔓 Szerkeszthető';
+    btn.style.cssText = 'border-color:rgba(212,175,55,.4)!important;color:var(--gold)!important;';
+  } else if (sheetData.viewMode === 1) {
+    btn.innerHTML = '🔒 Lezárva (Szerkesztés)';
+    btn.style.cssText = 'border-color:rgba(239,68,68,.4)!important;color:#f87171!important;';
+    document.body.classList.add('sheet-locked');
+  } else if (sheetData.viewMode === 2) {
+    btn.innerHTML = '📸 Fotó Mód';
+    btn.style.cssText = 'border-color:rgba(16,185,129,.4)!important;color:var(--accent-h)!important;';
+    document.body.classList.add('sheet-locked', 'sheet-photo');
+  }
+  
+  renderAll(); // Újrarajzolás az üres mezők elrejtése miatt
+}
+
+function setViewMode(mode) {
+  sheetData.viewMode = mode - 1; 
+  toggleViewMode();
+}
+
+/* ==============================
+   EXPORT / IMPORT
+   ============================== */
+function toggleExportMenu() {
+  document.getElementById('exportMenu').classList.toggle('open');
+}
+document.addEventListener('click', e => {
+  if (!e.target.closest('.export-wrap'))
+    document.getElementById('exportMenu').classList.remove('open');
+});
+
+function dlJson(data, name) {
+  const a = document.createElement('a');
+  a.href = 'data:text/json;charset=utf-8,' + encodeURIComponent(JSON.stringify(data,null,2));
+  a.download = name; a.click();
+}
+
+function exportFull() {
+  const n = sheetData.info.name || 'Nevtelen';
+  dlJson({...sheetData, _type:'magus_character_full'},
+    `karakter_${n.replace(/\s+/g,'_').toLowerCase()}.json`);
+  document.getElementById('exportMenu').classList.remove('open');
+}
+
+function exportTemplate() {
+  const tmpl = JSON.parse(JSON.stringify(sheetData));
+  tmpl._type = 'magus_char_template';
+  tmpl.vampireTitle = 'KARAKTER';
+  tmpl.info = {name:'',faj:'',kaszt:'',isten:'',kronika:'',xp:''};
+  tmpl.viewMode = 0;
+  tmpl.sections.forEach(sec =>
+    sec.boxes.forEach(box =>
+      box.rows.forEach(row => {
+        row.value = (row.type==='dot'||row.type==='header') ? 0 : '';
+      })
+    )
+  );
+  dlJson(tmpl,'karakter_sablon.json');
+  document.getElementById('exportMenu').classList.remove('open');
+}
+
+function exportCard() {
+  const card = {
+    _type:'magus_character_card', _version:2,
+    name:sheetData.info.name, faj:sheetData.info.faj,
+    kaszt:sheetData.info.kaszt, isten:sheetData.info.isten,
+    kronika:sheetData.info.kronika, xp:sheetData.info.xp,
+    title:sheetData.vampireTitle, stats:[]
+  };
+  sheetData.sections.forEach(sec =>
+    sec.boxes.forEach(box =>
+      box.rows.forEach(row => {
+        if(isRowHasValue(row)) card.stats.push({
+          section:sec.title, box:box.title,
+          type:row.type, label:row.label,
+          value:row.value, max:row.max||5
+        });
+      })
+    )
+  );
+  const n = sheetData.info.name || 'Nevtelen';
+  dlJson(card, `kartya_${n.replace(/\s+/g,'_').toLowerCase()}.json`);
+  document.getElementById('exportMenu').classList.remove('open');
+}
+
+function importData(e) {
+  const file = e.target.files[0]; if(!file) return;
+  const reader = new FileReader();
+  reader.onload = evt => {
+    try {
+      const data = JSON.parse(evt.target.result);
+      if (data._type === 'magus_character_card') {
+        alert('Ez egy karakter kártya fájl – közvetlenül nem tölthető be a karakterlapra.');
+        return;
+      }
+      sheetData = data;
+      // Biztosítjuk, hogy az új viewMode működjön a régi isLocked fájlokkal is
+      sheetData.viewMode = 0; 
+      
+      document.getElementById('vampireTitle').value = data.vampireTitle||'KARAKTER';
+      const infoKeys = ['name','faj','kaszt','isten','kronika','xp'];
+      infoKeys.forEach(k => {
+        const el=document.getElementById('info_'+k);
+        if(el) el.value = (data.info||{})[k]||'';
+      });
+      
+      setViewMode(1); // Visszaállítjuk szerkeszthetőre betöltéskor
+      alert(data._type==='magus_char_template' ? 'Sablon betöltve!' : 'Karakter betöltve!');
+    } catch(err) { alert('Hiba: '+err.message); }
+  };
+  reader.readAsText(file); e.target.value='';
+}
+
+/* ==============================
+   PRINT / SAVE IMAGE
+   ============================== */
+function printSheet() { window.print(); }
+
+async function saveAsImage() {
+  if (typeof html2canvas === 'undefined') {
+    alert('A html2canvas könyvtár nem töltődött be. Ellenőrizd az internet kapcsolatot!');
+    return;
+  }
+  const btn = document.getElementById('imgBtn');
+  btn.innerHTML = '⏳...'; btn.disabled = true;
+  
+  // 1. Mentsük el a jelenlegi görgetést és pozíciót
+  const originalScrollY = window.scrollY;
+  window.scrollTo(0, 0);
+
+  // 2. A fejlécet elrejtjük, hogy ne zavarjon be
+  const header = document.querySelector('header');
+  const originalHeaderDisplay = header.style.display;
+  header.style.display = 'none';
+
+  // 3. --- TRÜKK A "KARAKTER" FELIRAT ELCSÚSZÁSA ELLEN ---
+  // Megkeressük a problémás input mezőt
+  const titleInput = document.getElementById('vampireTitle');
+  const titleWrapper = titleInput.parentElement;
+  
+  // Létrehozunk helyette egy sima DIV-et a fotózáshoz, pontosan ugyanazokkal a stílusokkal
+  const textDiv = document.createElement('div');
+  textDiv.className = 'vtitle-input';
+  textDiv.innerText = titleInput.value || 'KARAKTER';
+  // Biztosítjuk, hogy a DIV-en belül a szöveg középen és stabilan álljon
+  textDiv.style.lineHeight = '1.2';
+  textDiv.style.display = 'block';
+  textDiv.style.width = '100%';
+
+  // Elrejtjük az inputot, és betesszük a helyére a stabil DIV-et
+  titleInput.style.display = 'none';
+  titleWrapper.insertBefore(textDiv, titleInput);
+  // -----------------------------------------------------
+
+  // Várunk egy picit, hogy a böngésző biztosan lekövesse a cserét
+  await new Promise(r => setTimeout(r, 150));
+
+  try {
+    const canvas = await html2canvas(document.getElementById('sheet-wrapper'), {
+      backgroundColor: '#020617', 
+      scale: 2, 
+      useCORS: true,
+      scrollY: 0, 
+      windowY: 0,
+      ignoreElements: el => el.id === 'magic-particles'
+    });
+    
+    const a = document.createElement('a');
+    a.download = `karakter_${(sheetData.info.name || 'ismeretlen').replace(/\s+/g, '_')}.png`;
+    a.href = canvas.toDataURL('image/png');
+    a.click();
+  } catch(err) { 
+    alert('Hiba a kép mentésekor: ' + err.message); 
+  }
+  
+  // 4. HELYREÁLLÍTÁS: Kitöröljük az ideiglenes DIV-et, visszahozzuk az eredeti inputot
+  textDiv.remove();
+  titleInput.style.display = '';
+  
+  header.style.display = originalHeaderDisplay;
+  window.scrollTo(0, originalScrollY);
+  btn.innerHTML = '🖼️ Kép'; btn.disabled = false;
+}
+
+/* ==============================
+   RESET
+   ============================== */
+function resetSheet() {
+  if(!confirm('Biztosan törölsz mindent? Ez nem visszavonható!')) return;
+  sheetData = {
+    vampireTitle:'KARAKTER',
+    info:{name:'',faj:'',kaszt:'',isten:'',kronika:'',xp:''},
+    sections:JSON.parse(JSON.stringify(DEFAULT_SECTIONS)),
+    viewMode:0
+  };
+  document.getElementById('vampireTitle').value='KARAKTER';
+  ['name','faj','kaszt','isten','kronika','xp'].forEach(k=>{
+    const el=document.getElementById('info_'+k); if(el) el.value='';
+  });
+  setViewMode(1);
+}
+
+/* ==============================
+   RUNES
+   ============================== */
+(() => {
+  const cont = document.getElementById('magic-particles');
+  const runes=['✦','ᚱ','ᛟ','✧','☽','☼','᛫','ᚷ','ᛁ','✴','᚛','ᚔ'];
+  setInterval(()=>{
+    const r=document.createElement('div'); r.className='rune';
+    r.innerText=runes[Math.random()*runes.length|0];
+    r.style.left=Math.random()*100+'vw';
+    r.style.animationDuration=(10+Math.random()*15)+'s';
+    r.style.fontSize=(11+Math.random()*16)+'px';
+    cont.appendChild(r); setTimeout(()=>r.remove(),26000);
+  },1800);
+})();
+
+/* ==============================
+   PARALLAX
+   ============================== */
+document.addEventListener('mousemove',e=>{
+  const x=(e.clientX/window.innerWidth-.5)*12;
+  const y=(e.clientY/window.innerHeight-.5)*8;
+  document.body.style.backgroundPosition=`${x}px ${y}px`;
+});
+
+/* ==============================
+   INIT
+   ============================== */
+renderAll();
+</script>
+</body>
+</html>

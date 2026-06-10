@@ -1,0 +1,179 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": true,
+    "section_title": "A Lar-Dori varázsló",
+    "content_blocks": [
+        {
+            "type": "rule",
+            "text": "CÉ: 26",
+            "title": "Harci értékek",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "Sebzés: 1k6",
+            "title": "Harci értékek",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "*Fegyver nélkül",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "table",
+            "text": "",
+            "title": "Képzettségek",
+            "headers": [
+                "Képzettségek",
+                "Fok",
+                "Kp"
+            ],
+            "rows": [
+                [
+                    "Kultúra (saját)",
+                    "3. fok",
+                    ""
+                ],
+                [
+                    "Nyelvtudás (anyanyelve)",
+                    "3. fok",
+                    ""
+                ],
+                [
+                    "Nyelvtudás",
+                    "3. fok",
+                    ""
+                ],
+                [
+                    "Nyelvtudás",
+                    "2. fok",
+                    ""
+                ],
+                [
+                    "Politika/diplomácia",
+                    "2. fok",
+                    ""
+                ],
+                [
+                    "Udvari etikett",
+                    "3. fok",
+                    "3 Kp"
+                ],
+                [
+                    "Élettan",
+                    "3. fok",
+                    "5 Kp"
+                ],
+                [
+                    "Írás/olvasás",
+                    "3. fok",
+                    ""
+                ],
+                [
+                    "Ősi nyelv",
+                    "3. fok",
+                    ""
+                ],
+                [
+                    "Számtan/mértan",
+                    "3. fok",
+                    ""
+                ],
+                [
+                    "Történelem",
+                    "2. fok",
+                    ""
+                ],
+                [
+                    "Magas mágia",
+                    "3. fok",
+                    ""
+                ],
+                [
+                    "Nekromancia",
+                    "2. fok",
+                    "6 Kp"
+                ],
+                [
+                    "Őselemi mágia",
+                    "3. fok",
+                    "14 Kp"
+                ],
+                [
+                    "Pszi (kyr)",
+                    "4. fok",
+                    ""
+                ]
+            ]
+        },
+        {
+            "type": "flavor_text",
+            "text": "szabadulhattam tőle másképp, de te... – Hangja halkult, a mosoly azonban változatlanul ott derengett az ajkán. – A sétány. Tich. A hajnali köd, az a lány a Fehér Szárnyak házából. Megvannak mind, és most már nem is vészhetnek el. Igazában nem vész el semmi... semmi, amit meg ne lehetne találni. „Megint mosolygott, azután meghalt.” Wayne Chapman: Karnevál",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "flavor_text",
+            "text": "„...A magiszter áll még, mikor fölé hajolt. Arcát, nyakát, a Lar-Dori belsőszigeti iskola pecsétjével ékes medált rozsdaszín foltokkal borította a találatok erejétől szétfreccsent vér. Szaggatottan lélegzett, teste, mint valami túlterhelt kahrei szerkezet, hevesen remegett, a bárd azonban különös elégedettséget vélt kiérezni a mosolyából.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "flavor_text",
+            "text": "– Egyszerre öltöttem termet – dünnyögte Kalidar, nagy kínkeservvel térdre ereszkedve a titoknok oldalán. – Ha ő nincs, most én fekszem itt: az életemet mentette meg.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "flavor_text",
+            "text": "A légátus ráemelte tompa fényű szemét. – Élned kell – suttogta, és akik hallották, összerezzentek a szavakat kísérő neszek hallatán. – Élned, hogy folytathasd, amit elkezdtél. Én nem vagyok képes ártani az ellenségnek, te viszont... megteheted. Ugye megteszed, északföldi? Ugye sosem hátráltok meg?",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "flavor_text",
+            "text": "– Magiszter...! – A vézna fiatalember sírt, a könnyek világos sávokat rajzoltak koromtól feketéllő arcán és nyakán: – Bocsásd meg a gyengeségemet, uram! Harcolni akartam, de...",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "flavor_text",
+            "text": "– Harcolni fogsz – bólintott az ősz diplomata. – Amilyen ifjú vagy, olyan sok... a küzdenivalód. Maradj ezekkel az emberekkel. Segítsd őket, számolj be tetteikről a mieinknek, miután hazatérsz... aztán menj tovább, utazz messzi országokba, és gyűjtsd a tudást, olyan igyekezettel, ahogy eddig tetted: idővel bölcsességgé, a bölcsesség pedig... fegyverré válik a kezedben, amivel legyőzheted a bestiádat.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "flavor_text",
+            "text": "– A bestiámat, uram?",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "flavor_text",
+            "text": "– Sose rágódj azon, mit nem tettél meg – suttogta a légátus. – Arra gondolj, amit megtehetsz még, mert csak így... csak így lehetsz szabad. Krán ádáz ellenség, de a bűntudat és a bosszúvágy... sokkal veszedelmesebb nála. Bestia, mely belülről marcangol... felfalja a múltat és a jövőt... elfeledteti, honnét jövünk, hová megyünk, és mi mindent kell... véghezvinnünk ezen a világon. Az enyém túl vén, túl erős volt már, nem",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "A Larmaron-medence közepén csillámló, tengernyi tó neve Lar-Dor. Partján sokáig csak Pyarron városállamhoz tartozó halászfalvak sorakoztak, mígnem 2647-ben a Fehér Páholy varázslóiskolát alapított a keleti part egy félreeső öblében. Ettől fogva Kapu kötötte össze Lar-Dort a közel ezer mérföldnyire fekvő Ó-Pyarronnal. Az iskola piacot kínált a halászoknak, akik hamarost falai köré gyűltek; jöttek velük a kereskedők, az iparosok, s rövidesen egész kisváros nőtt ki a földből. A Lar-Dor partján felnőtt nemesek tanulóéveik alatt megkedvelték a festői tájat, s a felnővén kastélyokat, nyári lakokat emeltek a tó körül. 2800-ban Lar-Dor már mint Pyarron és az Államközösség nemeseinek kedvelt pihenőhelye is komoly hírnévnek örvendett. A tó partján ekkorra számtalan városka alakult ki, a legnagyobb azonban megmaradt az első, a Keleti Varázslóiskola körül felépült Syenas. Ez idő tájt adományozott Pyarron Papi Széke függetlenséget a Közösség új államának, Lar-Dornak. A szerződés értelmében az állam irányítását az első ötven esztendőben Dreina papi rendje végezte, majd, az idő leteltével az iskolák és nemesurak küldötteiből álló helyi szenátus vette át. Lar-Dor államnak soha nem volt, s a mai napig sincs egyszemélyi uralkodója. 2994-ben a Fehér Páholy felismerte, hogy a Keleti Varázslóiskola többé nem tölti be a neki szánt szerepet, hiszen egy város központjává, a varázslást megismerni vágyó nemesek és gazdag polgárok gyülekezőhelyévé lett. Mint ilyen, nem volt alkalmas a magányt s nyugalmat követelő igazi tanításra. Ezért a Keleti Iskolát nyílt, tandíjas varázslóiskolává minősítette át, és saját céljaira – néhány éves eltéréssel – megalapította előbb az Északi, majd a Belsőszigeti Iskolát. Ez előbbi helyen kizárólag válogatott tanítványok nevelésével foglalkoznak, ők hét- és tízéves koruk között kerülhetnek az iskolába. Négyévente legfeljebb egyszer, egyetlen kurta hónapra hagyhatják el azt, a teljes kurzus tizenkét esztendeig tart. Közülük a legtehetségesebbek jutnak csak el a Belsőszigeti Iskolába, ahol újabb négy esztendőt töltenek teljes elzártságban mestereikkel. A Belsőszigeti Iskolából kikerülők elmondhatják, hogy a legjobb mesterektől, a legmagasabb szinten tanulták a mágiát; illetve a Godoni Ösvény pszi iskolát is csak ezen diákoknak oktatják mesterei. A Dúlás évének pusztításait Lar-Dor csodával határos módon átvészelte. Talán, mert Kránnak soha nem jelentett elsődleges célpontot, a nomádoknak pedig túlzottan északra esett. Az sem elhanyagolandó szempont, hogy a Délvidék pyarroni hitű kalandozóinak jó része Lar-Dorban tanult, s komolyan szívén viselte az iskolaközpont sorsát. Ne feledkezzünk meg az iskolák válogatott tanítómestereiről és a Belsőszigeti Iskola élmágusairól sem! Még a kráni varázslók is meggondolják, hogy kétes kimenetelű varázspárbajba bonyolódjanak-e az emberi nem leghatalmasabb mágusaival. A játékos karakter, aki Lar-Dorban kezdte pályafutását, mindenféleképp a Belsőszigeti, vagy az Északi Varázslóiskola növendéke. A Keleti Iskolát általában a kevesebb tehetséggel megáldott nemesifjaknak, illetve azoknak a tehetősebb",
+            "title": "",
+            "headers": [],
+            "rows": []
+        }
+    ]
+}

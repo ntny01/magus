@@ -1,0 +1,124 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": true,
+    "section_title": "Pszi (IV – Intelligencia, Akaraterő, Asztrál)",
+    "content_blocks": [
+        {
+            "type": "paragraph",
+            "text": "2. fok A karakter már ismeri a paraelemeket, tisztában van előnyeikkel, hátrányaikkal, azonosítja az alapvető Formázásokat, igen nagy pontossággal nyilatkozik az adott mágiaforma hatásait illetően. Az őselemi síkok teremtményeinek nagy részét felismeri azok képességeiről sikeres Intelligenciapróba után tud nyilatkozni."
+        },
+        {
+            "type": "paragraph",
+            "text": "A karakter a Magasmágia képzettség hasonló szintű ismerője, illetve a Mágikus fegyverek, háttér birtokában képes őselemek megidézésére, illetve az alapvető Formázás mozaikok használatára."
+        },
+        {
+            "type": "paragraph",
+            "text": "4. fok Az őselemi síkok teremtményeit felismeri, immáron azok képességeiről +2 módosítóval dobott sikeres Intelligenciapróba után tud nyilatkozni."
+        },
+        {
+            "type": "paragraph",
+            "text": "A képzettség ezen fokának ismerője az elemi mágia mestere, képes az egyszer már megidézett őselemeket újabb Formázás mozaikokkal kordában tartani, egyre újabb és újabb alakba kényszeríteni az időtartam letelte előtt. Bővebben lásd az Elemi mágia c. fejezetben az 358. oldalon."
+        },
+        {
+            "type": "paragraph",
+            "text": "5. fok Az őselemi mágia letéteményese, a világot alakító erők avatott ismerője. Az őselemi síkok minden teremtményét felismeri, immáron azok képességeiről +3 módosítóval dobott sikeres Intelligenciapróba után tud nyilatkozni."
+        },
+        {
+            "type": "paragraph",
+            "text": "A varázsló ezen a szinten már képes az elemeket teljesen uralma alá hajtani, képes a Formázás mozaikkal szabad elemi formák megalkotására. Bővebben lásd az Elemi mágia c. fejezetben a 358. oldalon."
+        },
+        {
+            "type": "paragraph",
+            "text": "A világegyetem legnagyobb hatalma a képzelet, mely alkotásra, tettekre sarkallja a teremtett világ lényeit, s ennek a hihetetlen erőnek a forrása a gondolkodó elme. Ahány faj és világ, annyi módon próbálták a tudat erejét az idők folyamán közvetlenül felhasználni a külső, belső és az anyagi világok lakói. Voltak, akik csak egy lépcsőfokot láttak a mentális energiákban a magasabb rendű formáló erő, a mágia megértése és megzabolázása felé, voltak, akik magát az utat."
+        },
+        {
+            "type": "paragraph",
+            "text": "Ynev mai lakói a pszi (Ψ) energiák alkalmazásának művészetét három forrásból, három különböző felfogású irányzat birtokosaitól sajátították el, évezredek bölcselkedése, évszázadok háborúi folyamán. A kyr mágusok, a káoszkorok démonai, az ellenük hadakozó hősök és Godon varázslói adták a mai pszi tudomány alapjait. Az alkalmazók hasonló szellemi felépítése miatt viszont mára a tudásanyag jórészt kicserélődött, s inkább csak a jellegzetesebb diszciplínákban tér el."
+        },
+        {
+            "type": "paragraph",
+            "text": "A játék megkülönböztet kyr, slan, és pyarroni pszionikát, ezeknek sajátosságairól és alkalmazásáról bővebben lásd a Pszi c. fejezetet a 217. oldalon. A képzettség felvételéhez szükséges a Pszi érzékenység Háttér."
+        },
+        {
+            "type": "paragraph",
+            "text": "1. fok Ezen a szinten még csak a belső önmegismerés útjának elején jár a karakter. Szemét úgy már felnyitotta a belső síkokon, de még csak saját énjének formáival, sajátságaival ismerkedik; képes alkalmazni az 1. foknál feltüntetett diszciplínákat, természetesen csak saját magára."
+        },
+        {
+            "type": "paragraph",
+            "text": "2. fok A képzettség ezen szintű alkalmazója már gyakorlott, képzett, fegyelmezett elmével bír, könnyedén mozgósítja belső erőit, de még csak készül a nagy ugrásra, még mindig teste rabja. A karakter képes alkalmazni a 2. foknál feltüntetett diszciplínákat is, ám még mindig csak saját magára."
+        },
+        {
+            "type": "paragraph",
+            "text": "3. fok A Kitekintés szintje. A gyakorlott elme a képzettség ezen fokán harmadik szemével vizsgálja a rejtett világot és képes reagálni rezdüléseire. A karakter képes alkalmazni a 3. foknál feltüntetett diszciplínákat – ha oktatói lehetővé teszik, akkor a Kyr Metódus elemeit is – ám még mindig csak saját magára."
+        },
+        {
+            "type": "rule",
+            "title": "Rendszerszabály",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "3. fokon képzett pszionistának ezen a szinten választania kell a Test vagy az Elme ágak közül, hogy tanulmányait mely irányba folytatja, a legtöbb klán, rend, iskola azonban ezt általában megszabja tanítványainak."
+        },
+        {
+            "type": "paragraph",
+            "text": "4. fok Az Érintés szintje. A fegyelmezett elme ezen a szinten képes áthidalni a fizikai világ szakadékait, melyek a belső síkokon is megmutatkoznak. A karakter már képes más elmekre, vagy a fizikai valóság elemeire, tárgyakra hatni, ismeri és alkalmazza a 4. foknál feltüntetett diszciplínákat közül az általa választott ág diszciplínáit is – ha oktatói lehetővé teszik a Kyr Metódus vagy a Slan Út elemeit is."
+        },
+        {
+            "type": "rule",
+            "title": "Rendszerszabály",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "5. fok Az elme művészetének magasiskolája, az uralom szintje, a karakter erre a szintre csakis a Slan Út vagy a Kyr Metódus tanulmányozásával juthat. Az ilyen szinten képzett pszikalmazó már komolyan formálja, a valóságot. A belső síkokon keresztül képes elérni, megfigyelni és befolyásolni mások elméjét. A karakter ismeri és alkalmazza a 5. foknál feltüntetett, az általa választott ágon található diszciplínákat, azaz oktatói által elérhetővé tett Kyr Metódust vagy a Slan pszit."
+        },
+        {
+            "type": "rule",
+            "title": "Rendszerszabály",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "title",
+            "title": "Rúnamágia (IV – Intelligencia, Akaraterő)"
+        },
+        {
+            "type": "paragraph",
+            "text": "Ynev majd minden népcsoportja idővel megörökölte, vagy újra felfedezte magának a jelmágikus rajzolatokban rejtőző, céljaikhoz igazítva átrendezett mágikus erők tudományát. A képzettség ismerete ezen örökkévaló, a kontinenssel egyidős kultúrától független jelek felismerését, működésük megértését, esetleg maguknak a rúnáknak az alkalmazását jelenti."
+        },
+        {
+            "type": "paragraph",
+            "text": "1. fok A Rúnamágiával ismerkedő személy képes felismerni sikeres -1 módosítóval végrehajtott Intelligenciapróba esetén a rúnamágia tárgykörébe tartozó jeleket."
+        },
+        {
+            "type": "paragraph",
+            "text": "2. fok A Rúnamágia beavatottja sikeres Intelligenciapróba esetén képes érzékelni a jelmágikus rajzolatok rejtette erők típusát, azaz felismerni, hogy a rúnába foglalt varázslat mely mágikus hagyomány követőjének műve: szakrális, tapasztalati vagy magasmágikus eredetű-e."
+        },
+        {
+            "type": "paragraph",
+            "text": "A képzettség ezen szintű ismerője képes varázstekercseket felolvasni, aktivizálni."
+        },
+        {
+            "type": "paragraph",
+            "text": "3. fok A szakavatott ismerője a Rúnamágiának az Intelligenciapróbáját +1 módosítóval dobja. Ha rendelkezik az adott hagyományra vonatkozó képzettségével, akkor sikeres próba esetén képes felismerni a rúnamágia tárgykörébe tartozó jeleket."
+        },
+        {
+            "type": "paragraph",
+            "text": "4. fok A Rúnamágia +1 módosítóval dobja az Intelligenciapróbáját. Ha rendelkezik az adott hagyományra vonatkozó képzettségével, akkor sikeres próba esetén képes felismerni a rúnamágia tárgykörébe tartozó jeleket."
+        },
+        {
+            "type": "paragraph",
+            "text": "5. fok A Rúnamágia +2 módosítóval dobja az Intelligenciapróbáját. Ha rendelkezik az adott hagyományra vonatkozó képzettségével, akkor sikeres próba esetén képes felismerni a rúnamágia tárgykörébe tartozó jeleket."
+        }
+    ]
+}

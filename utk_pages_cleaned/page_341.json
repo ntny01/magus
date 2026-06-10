@@ -1,0 +1,68 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": true,
+    "section_title": "Tűznyelés",
+    "content_blocks": [
+        {
+            "type": "paragraph",
+            "text": "erősségű Tűznyíl sebzéséből a tűzvarázsló – ha telítik a mágikus energiák – 3 Sp-t képes semlegesíteni, míg egy azonos erősségű Tűzzsönyeg sebzéséből kettőt is elnyel."
+        },
+        {
+            "type": "paragraph",
+            "text": "Kívülről szemlélve úgy látszik, mintha a lángok lelohadnának a tűzvarázsló közvetlen közelében – valójában ott teljesen kialszik a tűz. Persze a közeli lángok hőhatása érvényesül, sebzésük a test kizárásában: égési sebekben, hólyagokban, fájdalomban nyilvánul meg. Mivel a jelenség nemcsak a tűzvarázsló testére érvényes, hanem teljes aurájára, így ruházata és tárgyai is élvezik a Személyes Aura ezen különleges védelmét, melynek következtében soha nem gyulladnak meg, bármekkorra is a sebzés. Ez alól csak a fokozottan gyúlékony anyagok a kivételek, mint például a száraz pergamen. Ha a tűzvarázsló aktuális Mana pontjainak száma akár csak 1 Mp-tal is kevesebb a maximumnál, ez a tulajdonság megszűnik, és a Tűznyelés újfent az elvesztett Mana pontok visszaszerzésére irányul."
+        },
+        {
+            "type": "paragraph",
+            "text": "A képességgel lehetetlen Mana pontot nyerni olyan tüzekből, tűzhelyekről, melyeken Papi Áldás vagy Szertartás varázslat hat, továbbá a szent tüzekből. A sebzésemlegesítő hatás persze ekkor is működhet – feltéve, hogy a tűzvarázslót telítik a mágikus energiák."
+        },
+        {
+            "type": "paragraph",
+            "text": "A védő mágiák alkalmazása a képességet nem befolyásolja – hacsak a leírásban nincs erre vonatkozó kitétel –, védő erejük, tűz és hőhatások ellen SFE-jük, hozzáadódik a képesség nyújtotta védelemhez. A Testhőmérséklet-csökkentés Pszi diszciplína a Tűzelvonásban leírtak szerint befolyásolhatja a képességet."
+        },
+        {
+            "type": "paragraph",
+            "text": "Tűzelvonás"
+        },
+        {
+            "type": "paragraph",
+            "text": "A tűzvarázslók másik mana-nyerési módszere a Tűzelvonás. Ezen metódust a Tűzmágia mesterei csak a Fény Ösvényére lépőknek (5. TSz) tanítják meg. A tanítvány a Tűznyelés képességét fejleszti tovább – természetesen csak olyan mestertől sajátíthatja el, aki maga is a Fény Ösvényét követi."
+        },
+        {
+            "type": "paragraph",
+            "text": "A különleges képesség lehetővé teszi, hogy a tűzvarázsló, amíg elméje maximális Mp-ra fel nem töltődik, bármilyen (közönséges vagy elemi) tűznek ellenálljon. Ez a M.A.G.U.S.-ban a minimális sebzést jelenti (például 1k6 Sp esetén 1 Sp/kör, 2k6 Sp esetén 2 Sp/kör, 3k6 Sp esetén 3 Sp/kör stb). Mivel a képesség kihat a Személyes Aurára, a tűzvarázsló ruházatát és más tárgyait is védi."
+        },
+        {
+            "type": "paragraph",
+            "text": "A Tűzelvonással az első körben a tűzvarázsló minden tűzés hőhatásból (legyen közönséges vagy elemi), mely folyamatosan, azaz legalább 1 körig hat rá, természetes sebzésének megfelelő Mana pontot képes kivonni. Vagyis a tűz sebzését mégis ki kell dobni, ennyi Mana pontot nyer ki belőle a tűzvarázsló, miközben ő csak a minimális sebzést szenvedi el. A kör végén a tűz hirtelen lelohad, erőssége 1 E-vel csökken. A második körben már az 1 E-vel gyengébb tűz természetes sebzése adja ki az újabb elvont Mana pontokat, míg értelemszerűen a tűz valós sebzése is csökken 1 Sp-vel. A tűz az újabb kör végén is lejjebb lohad, és a harmadik körben már eredeti erősségénél 2 E-vel gyengébben lobog a tűzvarázsló körül. A Tűzelvonás mindaddig működik, ameddig a tűzvarázsló a tűzben tartózkodik és amíg elméje maximális Mp-ra fel nem töltődik, vagy a tűz"
+        },
+        {
+            "type": "paragraph",
+            "text": "(1 E alatt) ki nem alszik. Utóbbi gyakorta előfordul, még akkor is, ha tüzet táplálja valami vagy Őselemi Tűzről van szó. Az a közönséges tűz, mely nem aludt ki, rövid időre lelohad, de azután új erőre kap, ha éghető anyagok táplálják. Őselemi Tűznél, ha még tart a formázás időtartama, szintén visszaáll a korábbi Erősség: minden körben 1 E-vel nő, míg el nem éri az eredeti erősséget."
+        },
+        {
+            "type": "paragraph",
+            "text": "A képességgel lehetetlen manát kivonni olyan tüzekből és tűzhelyekről, melyeken Papi Áldás, vagy Szertartás varázslat hat, továbbá szent tüzekből. A sebzésemlegesítő hatás ekkor is érvényesül. Az 1 E-nél gyengébb tűzből nem lehet manát elvonni."
+        },
+        {
+            "type": "paragraph",
+            "text": "Amint a tűzvarázsló elméje feltöltődik maximális Mana pontra, a sebzés is erősebben, a Tűzelnyelésben leírtak szerint hat rá. Ekkor körönként már csak a tűz erősségének megfelelő Sp-t képes közömbösíteni a sebzésből. Persze mindenkor pontosan – számszerűen – tudja, mennyi Mana pontot tárol éppen az elméjében, így elkerülheti az ostoba baleseteket."
+        },
+        {
+            "type": "paragraph",
+            "text": "Nézzünk egy példát! Egy 6. szintű tűzvarázsló, aki minden Mana pontját elhasználta, beleáll vagy benyújtja kezét egy jelzőtűz lángjai közé. Ennek erőssége 4 E, így körönként 4k6 Sp-t sebez. Az első körben sebződik 4 Sp-t és dob 4k6-tal, melynek eredménye – tegyük fel – 19. Ennyi Mana pontot vont ki a tűzből az első körben. A kör végén a tűz hirtelen lelohad, kezdődik a második kör. A tűz erőssége már csak 3 E, természetes sebzése 3k6 Sp. A második körben a tűzvarázsló 3 Sp-t sebződik és dob 3k6-tal, melynek eredménye 14. Ennyi Mana-pontot nyer ki a második körben; elméjében már 33 Mp-t tárol. A lángok ismét lejjebb lohadnak, már csak 2 E erősségűek, 2k6 Sp sebzéssel. A tűzvarázsló – mivel már csak 3 Mp és hiányzik – ha továbbra is a tűzben marad, vállalja a következményeit, hogy Tűzelvonás képességét elveszítve nagyobb sebzést szenved el, míg ki nem lép – kihúzza a kezét – a tűzből, így a folyamat abbamarad. Ha a maradás mellett dönt, elkezdődik a harmadik kör. Sebződik 2 Sp-t és dob 2k6-tal, melynek eredménye 10. Ekkor elméje maximális Mp-ra töltődik, viszont a Tűzelvonás ettől kezdve másként viselkedik, már csak a tűz Erősségének (E) megfelelő Sp-t semlegesít körönként. A „túlcsorduló” Mana pontok sebzésként jelennek meg: 2 Sp-t semlegesített, 3 Sp átalakult Mp-tá, így a túlcsordulásból származó sebzés a kör végén 5 Sp lesz. A tűz erőssége 1E-re zuhan, alig ég, de nem alszik ki. Ettől fogva – mivel bőven áll rendelkezésére tűzifa – körönként 1E-vel nő az erőssége, mígnem újra jelzőtűzként lobog."
+        },
+        {
+            "type": "paragraph",
+            "text": "Ha a tűzvarázslóra a tűz-, hőhatás egy körnél rövidebb ideig hat – egyszerű, mint például a tűzsaura érintése, tűznyíl, tűzkörítés, tűzkard ütése, stb –, akkor nem képes Mana pontot elvonni belőle."
+        },
+        {
+            "type": "paragraph",
+            "text": "A Testhőmérséklet-hűtés nevű Pszi diszciplína szintén befolyásolja a sebzést. Mivel az ember testhőmérséklete 36-37 fokos, ezért maximálisan 15 fokkal lehet úgy lehűteni, hogy a tetszhalál be ne álljon. A játékban 5 fokonként 1-es SFE jön létre, mely a hőés tűzalapú sebzések ellen érvényesül. Testhőmérséklet-hűtéssel vagy varázslattal elért tűz elleni SFE – hacsak leírása másként nem rendelkezik – hozzáadódik a különleges képesség védelméhez. Ezalatt természetesen zavartalanul használhatja adottságait a tűzvarázsló."
+        },
+        {
+            "type": "paragraph",
+            "text": "A Tűzelvonás a Tűzelnyeléshez hasonlóan különleges képesség, tehát használatához nem szükséges összpontosítani és Mana pontot áldozni. Használata közben a végrehajtó harcolhat, varázsolhat, pszi-t alkalmazhat – egyszóval bármit tehet."
+        }
+    ]
+}

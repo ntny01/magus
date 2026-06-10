@@ -1,0 +1,404 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": null,
+    "is_new_section": true,
+    "section_title": "A lovag induló képzettségei 1. Tapasztalati szinten",
+    "content_blocks": [
+        {
+            "type": "paragraph",
+            "text": "A lovag induló képzettségei A Lovag karakter már első Tapasztalati szinten is igen komoly harcképességet jelentő képzettségekkel bír, illetve járatos a nemesi udvarokban szükséges minden Szociális tudományban."
+        },
+        {
+            "type": "table",
+            "headers": [
+                "Képzettségek",
+                "Fok"
+            ],
+            "rows": [
+                [
+                    "Fegyverhasználat",
+                    "3. fok"
+                ],
+                [
+                    "Két Fegyverhasználat",
+                    "2. fok"
+                ],
+                [
+                    "Harctéri gyakorlat",
+                    "2. fok"
+                ],
+                [
+                    "Fegyverismeret",
+                    "2. fok"
+                ],
+                [
+                    "Vértviselet",
+                    "3. fok"
+                ],
+                [
+                    "Hadvezetés",
+                    "1. fok"
+                ],
+                [
+                    "Lovaglás",
+                    "3. fok"
+                ],
+                [
+                    "Udvari etikett",
+                    "2. fok"
+                ],
+                [
+                    "Heraldika",
+                    "2. fok"
+                ],
+                [
+                    "Párbaj",
+                    "2. fok"
+                ],
+                [
+                    "Állatismeret (hátas állatok)",
+                    "2. fok"
+                ],
+                [
+                    "Történelem",
+                    "2. fok"
+                ],
+                [
+                    "Írás/olvasás",
+                    "2. fok"
+                ]
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Rend által oktatott képzettségek",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A lovag fegyvertára Ha néhány szabályt erősítő kivételtől (Abaszisz, Ilanor stb.) eltekintünk, gyakorlatilag Észak és Dél minden jelentősebb országában a lovagok alkotják a fegyverforgató elitet. Ez elsősorban azért lehetséges, mert ők rendelkeznek a legnagyobb gyakorlattal a hetedkori Ynev legkorszerűbb és leghatásosabb csatataktikájában: a nehézlovas harcmodorban. Ehhez igazodik hadifelszerelésük is, melyre a nehézvértéken kívül a különféle nemesi kézifegyverek jellemzőek. Fontos megjegyezni, hogy a lovagok felfogása szerint a célzófegyverek alantas és méltatlan harceszközök (ideértve a tűzfegyvereket is). Ezért kategorikusan elutasítják a használatukat. Ugyanez a hajítófegyverekre nem feltétlenül vonatkozik, bár közöttük is akadnak „nemtelen” fajták – például a slan csillag vagy a lasszó –, amiket egy magára valamit is adó Lovag sohasem illetne a kezével."
+        },
+        {
+            "type": "paragraph",
+            "text": "A lovag különleges előnyei:",
+            "title": "A lovag különleges előnyei"
+        },
+        {
+            "type": "rule",
+            "text": "I. A lovag legfontosabb különleges előnye előkelő származása, emiatt a lovag karakter ingyenesen megkapja a Nemesi vér Hátteret.",
+            "title": "Különleges előny I.",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "text": "II. Saját páncélzattal és fegyverzettel bír, mely valamely félvértezettnél nem magasabb kategóriájú nehézvértből és lovagi fegyverzetből áll, mely mibenlétének meghatározása a KM feladata.",
+            "title": "Különleges előny II.",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "Egy átlagos első szintű lovag",
+            "title": "Egy átlagos első szintű lovag"
+        },
+        {
+            "type": "table",
+            "headers": [
+                "Tulajdonság",
+                "Érték"
+            ],
+            "rows": [
+                [
+                    "Erő",
+                    "17"
+                ],
+                [
+                    "Gyorsaság",
+                    "15"
+                ],
+                [
+                    "Ügyesség",
+                    "16"
+                ],
+                [
+                    "Állóképesség",
+                    "15"
+                ],
+                [
+                    "Egészség",
+                    "13"
+                ],
+                [
+                    "Karizma",
+                    "13"
+                ],
+                [
+                    "Intelligencia",
+                    "13"
+                ],
+                [
+                    "Akaraterő",
+                    "13"
+                ],
+                [
+                    "Asztrál",
+                    "13"
+                ],
+                [
+                    "Érzékelés",
+                    "13"
+                ],
+                [
+                    "Ép",
+                    "13"
+                ],
+                [
+                    "Fp",
+                    "34"
+                ],
+                [
+                    "Yp",
+                    "—"
+                ],
+                [
+                    "Mp",
+                    "—"
+                ],
+                [
+                    "Kegy-pont",
+                    "—"
+                ],
+                [
+                    "MME",
+                    "14"
+                ],
+                [
+                    "AME",
+                    "14"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "Elköltött KAP-ok:",
+            "title": "Elköltött KAP-ok"
+        },
+        {
+            "type": "table",
+            "headers": [
+                "Tétel",
+                "Költség"
+            ],
+            "rows": [
+                [
+                    "Iskola (Lovag)",
+                    "6 pont"
+                ],
+                [
+                    "Nemesi vér",
+                    "—"
+                ],
+                [
+                    "Saját fegyverzet",
+                    "—"
+                ],
+                [
+                    "HM",
+                    "24 pont (12 HM)"
+                ],
+                [
+                    "Fp",
+                    "6 pont (6 Fp)"
+                ],
+                [
+                    "Kp",
+                    "14 Pont (14 Kp)"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "Fegyverzet:",
+            "title": "Fegyverzet"
+        },
+        {
+            "type": "table",
+            "headers": [
+                "",
+                "fvn*",
+                "lovagkard",
+                "közepes pajzs"
+            ],
+            "rows": [
+                [
+                    "Időigény",
+                    "3",
+                    "5",
+                    ""
+                ],
+                [
+                    "KÉ:",
+                    "31",
+                    "36",
+                    ""
+                ],
+                [
+                    "TÉ:",
+                    "53",
+                    "70",
+                    ""
+                ],
+                [
+                    "VÉ:",
+                    "95",
+                    "115",
+                    "+35"
+                ],
+                [
+                    "CÉ:",
+                    "29",
+                    "",
+                    ""
+                ],
+                [
+                    "Sebzés:",
+                    "1k6+2",
+                    "3k6+2",
+                    ""
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "* Fegyver nélkül"
+        },
+        {
+            "type": "paragraph",
+            "text": "Képzettségek:",
+            "title": "Képzettségek"
+        },
+        {
+            "type": "table",
+            "headers": [
+                "Képzettségek",
+                "Fok",
+                "Kp"
+            ],
+            "rows": [
+                [
+                    "Fegyverhasználat (lovagkard)",
+                    "3. fok",
+                    ""
+                ],
+                [
+                    "Két Fegyverhasználat (nyeles fegyverek, buzogányok)",
+                    "2. fok",
+                    ""
+                ],
+                [
+                    "Harctéri gyakorlat",
+                    "2. fok",
+                    ""
+                ],
+                [
+                    "Fegyverismeret",
+                    "2. fok",
+                    ""
+                ],
+                [
+                    "Pajzshasználat",
+                    "3. fok",
+                    "6 Kp"
+                ],
+                [
+                    "Vértviselet",
+                    "3. fok",
+                    ""
+                ],
+                [
+                    "Hadvezetés",
+                    "1. fok",
+                    ""
+                ],
+                [
+                    "Lovaglás",
+                    "4. fok",
+                    "5 Kp"
+                ],
+                [
+                    "Udvari etikett",
+                    "2. fok",
+                    ""
+                ],
+                [
+                    "Nyelvtudás (anyanyelv)",
+                    "3. fok",
+                    ""
+                ],
+                [
+                    "Kultúra (saját)",
+                    "3. fok",
+                    ""
+                ],
+                [
+                    "Ékesszólás",
+                    "1. fok",
+                    "1 Kp"
+                ],
+                [
+                    "Szexuális kultúra",
+                    "1. fok",
+                    "1 Kp"
+                ],
+                [
+                    "Helyismeret (szülőföld)",
+                    "3. fok",
+                    ""
+                ],
+                [
+                    "Lélektan",
+                    "1. fok",
+                    "1 Kp"
+                ],
+                [
+                    "Heraldika",
+                    "2. fok",
+                    ""
+                ],
+                [
+                    "Párbaj",
+                    "2. fok",
+                    ""
+                ],
+                [
+                    "Állatismeret (hátas állatok)",
+                    "3. fok",
+                    "3 Kp"
+                ],
+                [
+                    "Történelem",
+                    "2. fok",
+                    ""
+                ],
+                [
+                    "Írás/olvasás",
+                    "2. fok",
+                    ""
+                ],
+                [
+                    "Vallásismeret",
+                    "3. fok",
+                    "10 Kp"
+                ]
+            ]
+        }
+    ]
+}

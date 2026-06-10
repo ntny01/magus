@@ -1,0 +1,158 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": false,
+    "section_title": "",
+    "content_blocks": [
+        {
+            "type": "table",
+            "text": "",
+            "title": "",
+            "headers": [
+                "Képzettségek",
+                "Fok"
+            ],
+            "rows": [
+                [
+                    "Fegyverhasználat (ramiera)",
+                    "3. fok"
+                ],
+                [
+                    "Fegyverhasználat (tőr jellegű fegyverek)",
+                    "2. fok"
+                ],
+                [
+                    "Fegyverhasználat (egykezes kardok)",
+                    "2. fok"
+                ],
+                [
+                    "Orvtámadás",
+                    "2. fok"
+                ],
+                [
+                    "Fegyverismeret",
+                    "2. fok"
+                ],
+                [
+                    "Élettan",
+                    "1. fok"
+                ],
+                [
+                    "Udvari etikett",
+                    "2. fok"
+                ],
+                [
+                    "Úszás",
+                    "2. fok"
+                ],
+                [
+                    "Heraldika",
+                    "1. fok"
+                ],
+                [
+                    "Párbaj",
+                    "2. fok"
+                ],
+                [
+                    "Írás/olvasás",
+                    "2. fok"
+                ],
+                [
+                    "Fájdalomtűrés",
+                    "2. fok"
+                ],
+                [
+                    "Lopódzás",
+                    "15%"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A siedon képzettségei, melyeket klánja az Oktatás képzettség 4. foka által nyújtott előnnyel tanulhat: Akrobatika, Álcázás/álruha, Csapdakerekes, Csomózás, Élettan, Esés, Fájdalomtűrés, Fegyverhasználat, Fegyverismeret, Harctéri gyakorlat, Heraldika, Írás/olvasás, Kétkezes harc, Kultúra, Lopódzás, Mászás, Orvtámadás, Párbaj, Rejtekhelykutatás, Rejtőzködés, Szabadulóművészet, Udvari etikett, Vérteviselet, Zárnyitás.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "Pvarronból elvándorolt nemesi családok alapították egykoron a Gályák Tengerének mellékén az egymással szomszédos két hercegséget, Predocot és Edorlt – vagy, ahogy a szólás tartja, a déli partvidék két „ékszerdobozát”. Az egymást folyamatosan felülmúlni vágyó, az országokat vezető büszke és nyakas dinasztiák kölcsönös vetélkedése azonban haszonnal is járt. Mire a nyugati horizonton fölkomorlott a sötét Krán fenyegetése, mindkét – akkor már nagy múltnak számító – állam harcedzett, önálló hadsereggel rendelkezett. Míg Edorl a gyalogságát fejlesztette különös szenvedéllyel, addig Predoc nemesei nagyobb hangsúlyt fektettek a hatékony lovasságra. Ez vezetett azután a Vértek Rendházának megalapításához, amely ma már Predoc legnagyobb és legelismertebb harci iskolája, az istállóiból kikerülő pompás hátasok pedig joggal vonják magukra a külországi látogatók ámuló tekintetét. A Rendház sohasem számlált túl sok tagot, ám hatalmas nemesi vagyonok összpontosultak benne: nem csoda hát, hogy ő állítja ki az Államszövetség legjobban felszerelt és legképzettebb nehézlovas hadtesteit. Nem utolsósorban nekik köszönhető, hogy a Dúlás esztendejében Predocot nem söpörte el teljesen a fekete hordák áradata. Ámbátor a tenger fölül mágiával eltérített esőfellegek leginkább a roppant pincevárak szőlőhegyeit hivatottak öntözni, azért jut elegendő csapadék a Rendház kövér füvű rétjeire is, ahol a hírneves predoci telivéreket legeltetik. Ezek a gyönyörű, kitartó állatok szolgálnak hátasul a predoci vérteseknek, akik utánpótlásukat a hercegség birtokos nemesei közül toborozzák. Csakis előkelő születésű ifjakat fogadnak maguk közé, s bár a képzés költségeit a hercegi kincstár állja, közrendűek és külhoniak soha nem nyerhetnek felvételt a szervezetbe. Egyesek ugyan fellengzősen lovagoknak titulálják őket, ám a vértesek nem nevezhetők igazi lovagrendnek, hiszen kiképzésüket követően semmiféle egységes szervezeti keret nem fogja össze őket, ki-ki hazatér családi birtokára, a Rendház csupán azt a célt szolgálja, hogy azok a predoci nemesek, akik háború esetén kötelesek fegyverrel szolgálni az uralkodóházat, ne szedett-vedett hadként gyűljenek össze zászlóik alatt, hanem – hála a közös ifjúkori kiképzésnek – egységes, összeszokott csapatokban tevékenykedjenek a harcmezőn. Persze korántsem minden hadra kötelezett nemesúrfi járja el a Rendház iskoláját, csak a jómódúak; mert maga a képzés ugyan ingyenes, megfelelő fegyverzetről és harci felszerelésről azonban a növendéknek kell gondoskodnia. A vértesek ilyenformán nemcsak katonai, hanem politikai elitet is alkotnak. Szólóindás lobogójuk minden jelentősebb pincevár tornyán ott leng a Rendház família zászlaja mellett, s lovagjaik – ahogyan magukat nevezik – jelentős befolyással bírnak az ország kormányzására. A kiképzésen átesett nemesifjak háromféle fegyverhasználatát sajátítják el: a predoci egyeneskardét, a nehézlovas kopjáét és a tőrét. Megkülönböztető jelük a saját költségen csináltatott, ezüstözött indákkal míves lovasvért. Ez a rákozott páncélnak egy különleges, a hagyományosnál lényegesen jobb súlyelosztású változata, amelynek készítése a predoci páncélkovácsok féltve őrzött titka.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "I. Nem kapja meg induláskor általában járó Cé-alapot (Ügyesség és Érzékelés összege), és Célozóértékét a továbbiakban sem fejlesztheti. II. Mindig nemesivadék, ingyen megkapja az 1 pontos Nemesi Vér Hátteret. III. A játék kezdetén rendelkezik egy nehéz harci ménnel, amely ráadásul tiszteletű predoci telivér (leírását és értékeit lásd a Bestiárium c. fejezetben a 475. oldalon). A hátasállat az ő tulajdonában képezi; vagy maga nevelte, vagy családja vásárolta neki valamikor ifjabb korában. Elvesztése esetén természetesen a pótlásáról már neki magának kell gondoskodnia. IV. A játék kezdetén saját fegyverzettel rendelkezik, amelyért nem kell pénzzel fizetnie: családi öröksége. A fegyverzet tartozékai: predoci rákozott vért, nehézlovas kopja, predoci egyeneskard.",
+            "title": "A predoci vértes különleges előnyei és hátrányai az alapkasztnál leírtakon kívül:",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "table",
+            "text": "",
+            "title": "",
+            "headers": [
+                "Képzettség",
+                "Fok"
+            ],
+            "rows": [
+                [
+                    "Fegyverhasználat (nehézlovas kopja)",
+                    "3. fok"
+                ],
+                [
+                    "Fegyverhasználat (egykezes kardok)",
+                    "2. fok"
+                ],
+                [
+                    "Fegyverhasználat (tőr jellegű fegyverek)",
+                    "2. fok"
+                ],
+                [
+                    "Fegyverismeret",
+                    "2. fok"
+                ],
+                [
+                    "Harctéri gyakorlat",
+                    "2. fok"
+                ],
+                [
+                    "Pajzshasználat",
+                    "2. fok"
+                ],
+                [
+                    "Vértviselet",
+                    "3. fok"
+                ],
+                [
+                    "Taktika",
+                    "2. fok"
+                ],
+                [
+                    "Lovaglás",
+                    "3. fok"
+                ],
+                [
+                    "Heraldika",
+                    "2. fok"
+                ],
+                [
+                    "Udvari etikett",
+                    "2. fok"
+                ],
+                [
+                    "Állatismeret (hátas állatok)",
+                    "2. fok"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A predoci vértes képzettségei, melyeket iskolája az Oktatás képzettség 4. foka által nyújtott előnnyel tanulhat: Állatismeret, Esés, Fájdalomtűrés, Fegyverhasználat, Fegyverismeret, Hadvezetés, Harctéri gyakorlat, Heraldika, Idomítás, Írás/olvasás, Kultúra, Lélektan, Lovaglás, Mászás, Művészetek (Rajz, Irodalom), Párbaj, Számtan/Mértan, Taktika, Térképészet, Udvari etikett, Úszás, Vérteviselet.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        }
+    ]
+}

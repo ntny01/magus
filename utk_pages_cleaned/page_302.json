@@ -1,0 +1,92 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": false,
+    "section_title": "",
+    "content_blocks": [
+        {
+            "type": "paragraph",
+            "text": "készni áldozatukat és sürgősen MP-ra van szükségük, akkor fordulnak ehhez a varázslathoz. Érintésük nyomán ugyanis megbénul a férfi, és nem képes ellenkezni, míg a boszorkány a Mágikus Ölelés szertartását végre nem hajtja rajta. Ha ez utóbbi nem következik be, a bénítás egyetlen szegmensén belül szertefoszlik, s a boszorkány lelepleződik."
+        },
+        {
+            "type": "paragraph",
+            "text": "Azok a férfiak, akik ilyen durva módon kerülnek a Szexuálmágia hatása alá, a későbbiekben éppen emiatt nagyobb védelmet fognak élvezni. Minden, az elkövetkező héten feléjük irányuló, a Szexuálmágia körébe tartozó varázslattal szemben +5 járul majd a ME-jükhöz."
+        },
+        {
+            "type": "rule",
+            "title": "Csábítás",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "Sokban hasonlít az Őrjölt pillantás nevű varázslatra, ám ez még azokra a férfiakra is hatással van, akik máskülönben rendkívül visszahúzódóak női társaságban. Ha elvétik AME-jüket, az időtartam alatt heves udvarlásba kezdenek az adott hölgynek, azok a férfiak pedig, akik különben is vonzódnak a másik nemhez, szinte megőrülnek, hogy a nő kedvére tegyenek. Nem is annyira a szerelem teszi ezt velük, sokkal inkább a nő iránti vágyuk. Fontos megjegyezni, hogy amennyiben a mágiahasználó ki tudja provokálni, hogy áldozata megérintse őt, abban az esetben a varázslat erősítéséhez +5 E járul."
+        },
+        {
+            "type": "rule",
+            "title": "Fürkészés",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "Nagyon ravasz fogása ez a boszorkányoknak, hiszen általa megtudhatják, hogy a kiszemelt áldozat milyen női eszményekért rajong. A rövid összpontosítás után a boszorkánynak meg kell érintenie az áldozatot; ha a férfi elvéti a Mágiaellenállást, feltárul az alkalmazó előtt az a nőideál, amely legközelebb van a férfi szívéhez. Nemcsak a külső erényekről szerez ily módon tudomást, de a képzeletbeli nő belső tulajdonságairól is hozzávetőlegesen teljes képet alkothat, arról nem beszélve, hogy amennyiben áldozata legalább 3-mal elvétette az MME-t, képet kaphat az illető szexuális szokásairól, vágyairól is."
+        },
+        {
+            "type": "rule",
+            "title": "Őrjölt pillantás",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "Egyszerű, ám annál hatékonyabb mágia ez. A boszorkány egy apró kacajt hallat, vagy más figyelemfelkeltő mozdulatot tesz és ha az áldozat elvéti a Mágiaellenállást, menthetetlenül felfigyel a boszorkányra, jóllehet az immár egészen mással foglalkozik, s csupán egy pillanatra kapta el áldozata tekintetét. A varázslat alanya ezután egyfajta kíváncsisággal vegyes csodálattal fog a boszorkányra tekinteni, s ha nem túl félénk és gátlásos, előbb-utóbb ő maga fogja kezdeményezni a kapcsolatkeresést, aminek útjába a nő feltehetően nem gördít majd akadályt."
+        },
+        {
+            "type": "rule",
+            "title": "Védelem",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "Egyike azon boszorkányvarázslatoknak, amelyek csakis akkor fejtik ki hatásukat, amennyiben bizonyos feltételek teljesülnek. Talán ez az oka annak is, hogy maga a boszorkány sem szerez tudomást varázslata sikeréről, mindaddig, míg annak aktiválódnia nem kell. Így előfordulhat, hogy akár több nap is eltelhet a varázslás és a hatás megjelenése között. A mágia csakis akkor enyészik el, ha létrejön, illetve az áldozat kerül 1 ynevi mérföldnél távolabb a boszorkánytól."
+        },
+        {
+            "type": "paragraph",
+            "text": "E varázslat ugyanis akkor nyújt csupán védelmet a boszorkány számára, amikor az általa megérintett férfi rendes körülmények között a nő ellen fordulna. A hirtelen pofonra emelkedő kéz lehanyatlik, a boszorkányt nem kötik meg, hanem kap egy utolsó esélyt és elzavarják, a gyilkos szándék egyszerű ordítássá és fenyegetőzéssé fajul stb."
+        },
+        {
+            "type": "paragraph",
+            "text": "A varázslatot alkalmazó nő ilyenkor tudja, mi a teendője, hiszen csupán az időtartam lejártáig lesznek iránta ilyen érzéssel, utána ismét eredeti terveiket akarják majd az elbájoltak véghezvinni."
+        },
+        {
+            "type": "rule",
+            "title": "Csókmágia",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Átváltoztatás csókja",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A megcsókolt áldozat a boszorkány óhaja szerinti állattá változik át. Az állat lehet béka, nyúl, kecske, veréb stb. A varázslat sikeréhez az áldozatnak mind Asztrális,"
+        }
+    ]
+}

@@ -1,0 +1,22 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": false,
+    "section_title": "",
+    "content_blocks": [
+        {
+            "type": "rule",
+            "text": "Szféra: Halál Kegy pont: 3 Fohász hossza: 1 kör Hatótáv: önmaga Időtartam: 3 perc A beavatott egy rövid litániával képes elmerülni a homályban, anyagi valóját feloldani az árnyakban. A fohász hatására a megidézőjének anyagi teste feloldódik az árnyakban, megszűnik létezni időszakosan, mintha elmerült volna bennük. Ez idő alatt mozogni nem képes, s bármiféle pszi használatra, vagy varázslásra képtelen, csakis Morgena Árnyékprímáját alkalmazhatja; ekkor, mintha a sötétség suttogna alig hallhatóan azon a helyen, ahol eltűnt a beavatott. Az így elrejtőzött személyt asztrálisan, mentálisan lehetséges csak felfedezni, a láthatatlanság felfedésére irányuló mágiák, illetve az Élet érzékelése teljesen haszontalan ebben az esetben. Ráadásul az árnyak között rejtőzött az időtartam lejárta előtt semmilyen módon nem lehet erőszakosan előkeríteni, csakis úgy, ha valamiféle erős fényforrással teljesen (!) megszüntetjük a területen fél ynev-láb átmérőnél nagyobb árnyékokat, ekkor az árnyak védelmezte személy hirtelen kél elő a legnagyobb megmaradt árnyéktömegéből. Emellett pedig az árnyakban elrejtőzött személy nem is teljesen sebezhetetlen, hiszen az árnyéktömegeken áthaladó tűz (természetes és mágikus egyaránt), illetve a mágikus pengék, mellyel az árnyékba döfnek, vagy sújtanak normál módon sebzik, mely ellen, ha bír effélével, SFE-je nem érvényesül. Morgena beavatottjai előszeretettel alkalmazzák ezen fohászt a Sötét marionettel együtt.",
+            "title": "Árnymenedék",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "Szféra: Halál Kegy pont: 15 Fohász hossza: 3 kör Hatótáv: Lásd a leírást! Időtartam: 3 perc Ezzel a fohásszal a beavatott képes alakot adni, mélységet és kiterjedést kölcsönözni saját árnyékának, mely a szólítója akaratának megfelelően humanoid formát vesz fel, azonban a játékos nem képes megszabni az alak méreteit, mindig közepes termetű nemtelen emberszerű test lesz. Az árnylény nem más, mint gazdája akaratának kiterjesztése. A fohász befejezte után a megidéző az anyagiassult sötétségből álló alak érzékszerveit érő benyomásokat érzékeli csupán, és saját testét hátrahagyva immáron az árnylényben létezik tovább. A fohász Erősítésétől függően a lény, mely képes a legapróbb repedéseken is áthatolni 1 E esetén csakis érzékszervekkel bír, mozgáson kívül mást cselekedni képtelen. 2 E esetén már valamiféle anyagiassult testet is képes ölteni, ezáltal 2k6 Sp okozására alkalmas – harcértékei mindenben megegyeznek a beavatott fegyvertelen értékeivel, illetve mivel ez a test már képes tárgyakat is megragadni, akár megkaparintott fegyvereket is forgathat. 3 E esetén az árnyékban keresztül már varázsolni, fohászokat megidézni, vagy akár pszit alkalmazni is képes a beavatott, mintha jelen lenne az adott helyszínen. A marionett legfeljebb futó ember sebességével képes közlekedni, és maximálisan a megidézője akaratától függő távolságra tud eltávolodni annak testétől, mivel minden megtett 20 lábnyi távolság egy pontot emészt fel a beavatott Karaktererejéből, mely pontok egyesével, óránként térnek csak vissza. Az árnyék megfelelő erősségű fényforrással: több fáklya, rengeteg jól elhelyezett lámpás, vagy mágia alkalmazásával stb. lehet szétoszlatni, ezek a fényerejüknek megfelelően E-nként 1k6 Fp-t sebeznek a lényen, melynek csak FP-i vannak, ennek száma a megidéző aktuális Karaktererejének a háromszorosa. Ha a báb FP-i nullára zuhannának, akkor a megidézője elájul, s csak 2k6 percen belül térhet magához. Azonban természetesen hamarabb is magára hagyhatja teremtményét, ekkor az pillanatok alatt szétfoszlik.",
+            "title": "Sötét marionett",
+            "headers": [],
+            "rows": []
+        }
+    ]
+}

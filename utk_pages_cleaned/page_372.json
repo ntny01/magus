@@ -1,0 +1,218 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": false,
+    "section_title": "",
+    "content_blocks": [
+        {
+            "type": "paragraph",
+            "text": "(E) Írásával vagy bénításával, továbbá azzal, ha akár az áldozat, akár a varázsló, olyan Mentálmágiától védő varázskörbe lép, melynek Erőssége (E) meghaladja a Mentálmágiát létrehozó Operáció erősségét."
+        },
+        {
+            "type": "rule",
+            "title": "A Mentálfonál csak Mentálszem diszciplínával észlelhető.",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "A személy, akit Mentálfonál köt össze a varázslóval, a mágia törvényei szerint Társszimpátiás viszonyban áll vele. A szimpatikus kapcsolat mindaddig fennáll, míg a fonál létezik."
+        },
+        {
+            "type": "rule",
+            "title": "Mentális operációk",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "title": "A Mentálmágia ellen az áldozat a Mentális Mágiaellenállásával védekezhet.",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "title": "Mentális operáció alapesetben egyszerre csak egyetlen személlyel hajtható végre, azonban ha a varázsló bír a Lélektan képzettség 4. fokával, akkor képes egyszerre több személyt is egyetlen Mentális operációval a hatalmába keríteni, de ehhez minden egyes újabb bevont személy után a mozaik erősítésén felül 10 Mp-ot kell befektetnie.",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "title": "A Mentális operációk – mint már említést nyert – a Mentális központokat befolyásolják. Ezek a beszédközpont, az érzékközpont, az emlékközpont, a mozgásközpont, és az akaratközpont. Négyféle Mentális operációt ismerünk: Az Olvasást, az Írást, a Kábítást és a Bénítást.",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "title": "Olvasás során a varázsló olyan egyoldalú kapcsolatot létesít az áldozat adott Központjával, melyen keresztül adatokat szerezhet annak működésével kapcsolatban. Az Olvasás tényéről a varázslat áldozata nem szerez tudomást. Az Olvasás a legkevesebb mágikus energiát igénylő Mentáloperáció, miáltal Időtartama is a leghosszabb: 5 perc, azaz 30 kör.",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "title": "Kábítással a varázsló az áldozat kijelölt központjának működését elégtelenségeket, zavarokat okozhat, miáltal az sokkal rosszabb hatásfokkal képes csak ellátni a feladatát. A Kábítás időtartama 1 perc, azaz 6 kör.",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "title": "Írás esetén az áldozat kijelölt központját a varázsló mentálisan a sajátját tudatával köti össze, és annak rendeli alá, miáltal a központ az időtartam alatt nem az áldozat, hanem a varázsló akaratának megfelelően fog működni. Természetesen az áldozat tudatában lesz annak, hogy központja nem az általa megkívánt módon működik, kivéve, ha a varázslat az akaratközpontot befolyásolja (lásd Akaratátvitel!). Az Írás időtartama fél perc, vagyis 3 kör.",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "title": "Bénítás során a varázsló az áldozat adott központjának működését beszünteti, miáltal az fontos feladatát egyáltalán nem képes ellátni. A Bénítás a legtöbb energiát igénylő, legkomolyabb Mentáloperáció, időtartama 1 kör.",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "section_header",
+            "text": "Beszédközpontra ható operációk"
+        },
+        {
+            "type": "spell",
+            "title": "Megértés (Olvasás)",
+            "headers": [
+                "Mana pont",
+                "Időtartam",
+                "Varázslás ideje"
+            ],
+            "rows": [
+                [
+                    "1 Mp/4 E",
+                    "30 kör (5 perc)",
+                    "1 szegmens"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A varázsló megérti az áldozat szavait, akkor is, ha azokat valamely okból nem hallani, de még akkor is, ha az illető számára ismeretlen nyelven beszél."
+        },
+        {
+            "type": "spell",
+            "title": "Dadogás (Kábítás)",
+            "headers": [
+                "Mana pont",
+                "Időtartam",
+                "Varázslás ideje"
+            ],
+            "rows": [
+                [
+                    "1 Mp/3 E",
+                    "3 kör",
+                    "1 szegmens"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "Kába beszédközponttal az áldozat képtelen tisztán ejteni a szavakat, és folyamatosan beszélni. Dadogni fog, vagy szinte az érthetetlenségig torzítja a szavakat, akár a részeg ember. Hogy melyik hatás következzék be, azt a varázsló határozza meg."
+        },
+        {
+            "type": "spell",
+            "title": "Beszéltetés (Írás)",
+            "headers": [
+                "Mana pont",
+                "Időtartam",
+                "Varázslás ideje"
+            ],
+            "rows": [
+                [
+                    "1 Mp/2 E",
+                    "6 kör (1 perc)",
+                    "1 szegmens"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A varázsló az áldozat szájával beszél, pontosabban az áldozat azt mondja, amit a varázsló szeretne. Ez nem helyettesíti az Akaratátvitelt, azaz az áldozat, miközben más beszél a szájával, tisztában van azzal, hogy nem ezt szeretné mondani, de nincs hatalma a saját beszédközpontja felett. Az egyetlen, amit tehet az, hogy igyekszik írásban vagy taglejtésekkel tiltakozni, esetleg mást közölni."
+        },
+        {
+            "type": "spell",
+            "title": "Némaság (Bénítás)",
+            "headers": [
+                "Mana pont",
+                "Időtartam",
+                "Varázslás ideje"
+            ],
+            "rows": [
+                [
+                    "1 Mp/E",
+                    "1 kör",
+                    "1 szegmens"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "Az áldozat megnémul: képtelen egy szót is kiejteni, csak érthetetlen nyögdécselésre képes, egészen addig, míg a varázslat időtartama tart."
+        },
+        {
+            "type": "section_header",
+            "text": "Érzékközpontra ható operációk"
+        },
+        {
+            "type": "spell",
+            "title": "Érzékelés (Olvasás)",
+            "headers": [
+                "Mana pont",
+                "Időtartam",
+                "Varázslás ideje"
+            ],
+            "rows": [
+                [
+                    "1 Mp/4 E",
+                    "30 kör (5 perc)",
+                    "1 szegmens"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A varázsló az áldozat érzékszerveivel érzékel. Látja, amit az lát, hallja, amit az hall, tapint, ízlel, szagol, mintha csak belekerült volna a másik testébe."
+        },
+        {
+            "type": "spell",
+            "title": "Tompítás (Kábítás)",
+            "headers": [
+                "Mana pont",
+                "Időtartam",
+                "Varázslás ideje"
+            ],
+            "rows": [
+                [
+                    "1 Mp/3 E",
+                    "6 kör (1 perc)",
+                    "1 szegmens"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "Az áldozat érzékszervei eltompulnak: homályosan lát, tompán hall, durván tapint, akárha kesztyűt viselne. Szaglása és ízlelése is jelentősen romlik. Ügyességet és figyelmet igénylő kézimunkát végezni képtelen. TÉ-je, VÉ-je, és KÉ-je annyival csökken, amennyi az áldozat Mágiaellenállásán felüli erősítés mértéke; CÉ-je ennek a háromszorosával – ami általában lehetetlenné teszi a céllövést."
+        },
+        {
+            "type": "spell",
+            "title": "Illúzió (Írás)",
+            "headers": [
+                "Mana pont",
+                "Időtartam",
+                "Varázslás ideje"
+            ],
+            "rows": [
+                [
+                    "1 Mp/2 E",
+                    "3 kör",
+                    "1 szegmens"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A varázsló becsapja az áldozat érzékelését. Nem létező dolgokat láttat, nem hallatszó hangokat hallat vele – de igaz ez a többi érzékszervre is. Az áldozat úgy érezheti, mintha"
+        }
+    ]
+}

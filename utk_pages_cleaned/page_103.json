@@ -1,0 +1,115 @@
+{
+    "is_new_chapter": true,
+    "chapter_title": "Bosszúangyal (Uwel-paplovag)",
+    "is_new_section": true,
+    "section_title": "",
+    "content_blocks": [
+        {
+            "type": "paragraph",
+            "text": "homályba vesző múlthoz képest – meglehetősen kései is. Ha egyes kódex legendáktól eltekintünk, az első hitelt érdemlő adataink a Psz. II. évezred derekáról valók. Ekkor tűnnek fel először dzsad forrásokban az „üvöltő lángdervisek a füvet nem becsülő hegyekből”, akik elevenesen elhamvasztják magukat abban a balgatag reményben, hogy hamis isteneik újjáélesztik őket. Ezek az utalások azokra a különös paplovagokra vonatkoznak, akik manapság Főnixek néven ismeretesek, s nem csupán Sogront szolgálják fanatikus odaadással, hanem egyúttal a tűzvarázslók ordeni rendjét is.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "Főnixeket kizárólag Ordanban képeznek, a legtehetségesebbnek ígérkező Lángőr-növendékekből. Elnevezésük állítólag az ordani tűzmágia alapvetését rejtő varázsfőnixra, a Phoenix Triumphatra utalna, egyesek azonban elképzelhetetlennek tartanak egy sokkal baljósabb magyarázatot. Eszerint a Sogron-paplovagokat azért hívják Főnixeknek, mert akik a leghűségesebben és a legeredményesebben szolgálják urukat, azok idővel elnyerik ama hőn áhított kiváltságot, hogy önkéntes máglyahalált halhatnak érte. A Tűzkobra aztán – a tűzvarázslók hathatós segítségével – feltámasztja őket még forró hamvaikból.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "A Főnixek emellett leginkább esztelenségbe hajló bátorságukról közismertek, no meg feltétlen és tántoríthatatlan hűségükről a tűzvarázslók iránt. Nem túl gyakori jelenség Yneven, hogy egy istenség felszentelt szolgái világi mágusoknak vessék alá magukat, jelen esetben azonban kétségkívül így áll a helyzet. Az ordani hierarchiában a Főnixek feladata a lángszentélyek védelme. Ezt nemcsak az államhatárokon belül látják el, hanem a külvilágban is, általában Lángőrökkel karöltve. Úgy tűnik, Ordan főleg azoknak a független Sogron kegyhelyeknek az oltalmára szokott Főnixeket kirendelni, amelyek a leginkább igyekeznek elhárítani maguktól a kéretlen kapott segítséget.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "A Főnixek tökéletesen tudatában vannak hatalmuknak, és nem hiányzik belőlük az önteltség sem, de nem ostobák. Általában tudnak uralkodni indulataikon, és gyakori eset, hogy ők simítják el a lobbanékony Lángőrök által előidézett súrlódásokat, amelyek máskülönben szinte bizonyosan vérontásba torkollnának. Hitüket, rendjüket, feljebbvalóikat az életük árán is megvédelmezik, a tűzvarázslók parancsait kérdés nélkül végrehajtják.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "Ez azonban nem azt jelenti, hogy ne tudnának önállóan felmérni valamely veszedelmes helyzetet, vagy felülről kapott utasítások híján a saját kezükbe ragadni a kezdeményezést. Amennyiben például belátják, hogy a konok kitartás csak az emberi erőforrások értelmetlen elpocsékolása lenne, fanatikus hitük dacára képesek feladni állásaikat és visszavonulni. Egy egyszerű Lángőr számára ez elképzelhetetlen volna.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "A Főnixek harcmodora más, mint a többi paplovagé, a hagyományos nehézlovas taktika ugyanis nemigen fér meg a tűzmágia alkalmazásával. A legtöbb Főnix gyalogszerrel harcol, merev nehézvértetek helyett, pedig ordani pikkelypáncélt viselnek, amely sogronita mágiával van átitatva és különleges védelmet nyújt nekik. Szent jelképük az Érckobra, az eleven láng vagy az izzó parázs.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "A Főnixek különleges képessége a Szakrális mágia használata. Istenük kegyelméből nemcsak a Lélek és a Természet szféráiból válogathatják fohászaikat, hanem korlátozott mértékben, de hozzáférhetők a tűzmágia egyes fejezeteihez. Ha felveszik a Mágikus fogékonyság Hátteret – ezt ebben az esetben utólag is megtehetik – és elsajátítják a Tapasztalati mágia (tűzvarázsló) képzettség 3. fokát, Sogron különleges adományaként Kegy pontjaikból képessé válnak a tűzvarázslói Alapvető tűzmágiák illetve az Iskolaformák használatára (bővebben lásd a Tűzmágia c. fejezetet a 341. oldalon). Itt jegyzendő meg, hogy esetükben a Tapasztalati mágia képzettség birtoklása bármilyen fokon is nem ad Mana pontokat.",
+            "title": "Sogron-paplovag különleges képességei",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "Tapasztalati szinten az alap paplovagnál feltünteteken kívül:",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "table",
+            "text": "",
+            "title": "",
+            "headers": [
+                "Képzettség",
+                "Fok"
+            ],
+            "rows": [
+                [
+                    "Tapasztalati mágia",
+                    "2. fok"
+                ],
+                [
+                    "Taktika",
+                    "2. fok"
+                ],
+                [
+                    "Hadvezetés",
+                    "2. fok"
+                ]
+            ]
+        },
+        {
+            "type": "rule",
+            "text": "A Sogron-paplovag képzettségei, melyeket rendjétől az Oktatás képzettség 4. foka által nyújtott előnnyel tanulhat: Hajózás, Térképészet, Tapasztalati mágia (tűzvarázsló), Csomózás, Ősi nyelv (kyr, godoni), Taktika.",
+            "title": "Sogron-paplovag képzettségei",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "flavor_text",
+            "text": "Rak Narval tartományban, ahol a dúl Mordak család kormányoz, volt valaha egy város. Messzehírű, nyüzsgő kikötő, temérdek lármás népséggel, hajókkal, matrózokkal, aranyláncos kalmárokkal. Ifjabb éveimben még sokfelé ismerték a nevét. Manapság már másképp hívják, legalábbis azt a keveset, ami megmaradt belőle. Ti is látjátok, fiaim; az a feketére perzselt, öbölmenti katlan volt az, ami mellett a minap elhajóztunk.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "flavor_text",
+            "text": "Történt egyszer, hogy valami helybeli ürféle szörnyűmód csúfot tett egy oly kölyöknyi, koldusszegény utcagyerekkel. Még az emberi ábrázata is odalett a nyomorultnak. Nem nagy ügy, mondhatnátok; elvégre megesik olykor errefelé az ilyesmi, különösen mióta a toroni gályákkal együtt a Háromfejű hite is átvitorlázott hozzánk északról. Igen ám, de én éppen haragban voltam azzal az ürfélével, egy s más disputa miatt; gondoltam hát, szurrantok rajta egyet. A fedélzetre vettem azt a szerencsétlen leányt, és elvittem egy ismerős szentélybe, félnapi hajóútra innen, egy keskenyen bevágott öbölbe. Az ottani népek meghallgatták türelmesen, mi mondandója van, aztán küldöttet menesztettek a városi tanácshoz, és követelték az ürféle megbüntetését. Csakhogy amaz ott eléggé fontos embernek számított, senki sem szívesen húzott volna ujjat vele. A tanács az ő pártját fogta; a küldöttet nem szívesen látták; én meg belenyugodtam szépen a dologba, mondván, hogy ez a tervem sem sikerült.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "flavor_text",
+            "text": "Pedig sikerült, méghozzá olyan kiadáson, hogy azt álmomban sem hittem volna. Merthogy ezek az én balkézi ismerőseim nem hagyták ám annyiban a dolgot. Gondolták, ha egy követ",
+            "title": "",
+            "headers": [],
+            "rows": []
+        }
+    ]
+}

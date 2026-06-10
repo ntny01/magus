@@ -1,0 +1,1264 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karakter Segéd</title>
+    <style>
+        :root {
+            --bg-color: #121214;
+            --panel-bg: #1a1a1e;
+            --panel-border: #2d2d34;
+            --text-color: #e2e2e6;
+            --text-muted: #a0a0aa;
+            --primary: #8b1e1e;
+            --primary-hover: #a72424;
+            --accent: #d4af37;
+            --accent-hover: #f3cd47;
+            --success: #2e7d32;
+            --copper: #b87333;
+            --silver: #cccccc;
+            --gold: #ffd700;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            padding: 10px;
+            padding-bottom: 40px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 15px;
+            padding: 15px;
+            background: var(--panel-bg);
+            border: 1px solid var(--panel-border);
+            border-radius: 8px;
+        }
+
+        h1 {
+            color: var(--accent);
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .btn {
+            background-color: var(--primary);
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-weight: bold;
+            font-size: 0.9rem;
+            transition: background 0.2s;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 5px;
+        }
+
+        .btn:hover { background-color: var(--primary-hover); }
+        .btn-accent { background-color: var(--accent); color: #121214; }
+        .btn-accent:hover { background-color: var(--accent-hover); }
+        .btn-sm { padding: 5px 10px; font-size: 0.8rem; }
+        .btn-danger { background-color: #c62828; }
+        .btn-danger:hover { background-color: #b71c1c; }
+
+        .file-input-wrapper {
+            position: relative;
+            display: inline-block;
+        }
+
+        .file-input-wrapper input[type="file"] {
+            position: absolute;
+            left: 0; top: 0; opacity: 0;
+            width: 100%; height: 100%;
+            cursor: pointer;
+        }
+
+        .io-bar {
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 5px;
+        }
+
+        .panel {
+            background: var(--panel-bg);
+            border: 1px solid var(--panel-border);
+            border-radius: 8px;
+            padding: 15px;
+            margin-bottom: 15px;
+        }
+
+        .panel-title {
+            color: var(--accent);
+            font-size: 1.2rem;
+            border-bottom: 1px solid var(--panel-border);
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .character-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-bottom: 15px;
+            background: #222226;
+            padding: 12px;
+            border-radius: 6px;
+            border: 1px solid var(--panel-border);
+        }
+
+        .char-name {
+            font-size: 1.3rem;
+            font-weight: bold;
+            color: #fff;
+        }
+
+        .static-stat {
+            background: #121214;
+            padding: 6px 10px;
+            border-radius: 4px;
+            font-size: 0.85rem;
+            border-left: 3px solid var(--accent);
+            font-weight: bold;
+        }
+
+        .stat-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 12px;
+        }
+
+        @media(min-width: 600px) {
+            .stat-grid { grid-template-columns: 1fr 1fr; }
+        }
+
+        .stat-row {
+            display: flex;
+            flex-direction: column;
+            background: #222226;
+            padding: 10px;
+            border-radius: 6px;
+            border: 1px solid #2d2d34;
+        }
+
+        .stat-info {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 8px;
+        }
+
+        .stat-label {
+            font-weight: bold;
+            font-size: 0.95rem;
+        }
+
+        .stat-type-toggle {
+            font-size: 0.75rem;
+            color: var(--text-muted);
+            cursor: pointer;
+            text-decoration: underline;
+        }
+
+        .stat-controls {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .ctrl-btn {
+            width: 40px;
+            height: 40px;
+            background: #2d2d34;
+            border: none;
+            color: white;
+            font-size: 1.3rem;
+            font-weight: bold;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+        .ctrl-btn:active { background: #3d3d47; }
+
+        .stat-value-display {
+            flex: 1;
+            text-align: center;
+            font-size: 1.2rem;
+            font-weight: bold;
+            background: #121214;
+            padding: 6px;
+            border-radius: 4px;
+            min-width: 70px;
+        }
+
+        .weapon-list {
+            margin-top: 10px;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .weapon-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            background: #25252b;
+            padding: 8px;
+            border-radius: 6px;
+        }
+
+        .weapon-color {
+            width: 12px;
+            height: 36px;
+            border-radius: 4px;
+            flex-shrink: 0;
+        }
+
+        .weapon-name-input {
+            background: transparent;
+            border: none;
+            border-bottom: 1px solid var(--panel-border);
+            color: white;
+            font-size: 0.9rem;
+            padding: 4px;
+            width: 100%;
+        }
+        .weapon-name-input:focus {
+            outline: none;
+            border-color: var(--accent);
+        }
+
+        .money-container {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 15px;
+        }
+        @media(min-width: 600px) {
+            .money-container { grid-template-columns: 1fr 1fr; }
+        }
+
+        .money-box {
+            background: #222226;
+            padding: 12px;
+            border-radius: 6px;
+            border: 1px solid var(--panel-border);
+        }
+
+        .money-box-title {
+            font-size: 0.9rem;
+            color: var(--accent);
+            margin-bottom: 10px;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        .money-row {
+            display: flex;
+            align-items: center;
+            margin-bottom: 8px;
+            gap: 5px;
+        }
+
+        .money-label {
+            width: 50px;
+            font-weight: bold;
+            font-size: 0.9rem;
+        }
+        .m-p { color: var(--copper); }
+        .m-e { color: var(--silver); }
+        .m-a { color: var(--gold); }
+
+        .money-input {
+            width: 75px;
+            background: #121214;
+            border: 1px solid var(--panel-border);
+            color: white;
+            text-align: center;
+            padding: 6px 2px;
+            border-radius: 4px;
+            font-size: 1rem;
+        }
+
+        .transaction-ui, .exchange-ui {
+            background: #1e1e24;
+            border: 1px dashed var(--panel-border);
+            padding: 12px;
+            border-radius: 6px;
+            margin-top: 15px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .exchange-ui {
+            border-color: var(--accent);
+        }
+
+        .trans-row {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            flex-wrap: wrap;
+        }
+
+        .trans-select, .trans-input {
+            background: #121214;
+            border: 1px solid var(--panel-border);
+            color: white;
+            padding: 8px;
+            border-radius: 4px;
+            font-size: 0.9rem;
+        }
+        .trans-input { width: 70px; text-align: center; }
+
+        .henchmen-section {
+            margin-top: 20px;
+        }
+
+        .henchmen-list {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .henchman-card {
+            background: #1d1d22;
+            border: 1px solid #3e3e4a;
+            border-radius: 8px;
+            padding: 12px;
+            position: relative;
+        }
+
+        .henchman-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+            gap: 10px;
+        }
+
+        .henchman-name-input {
+            background: transparent;
+            border: none;
+            border-bottom: 1px solid var(--accent);
+            color: white;
+            font-size: 1.1rem;
+            font-weight: bold;
+            padding: 2px;
+            width: 60%;
+        }
+
+        /* FULL PAGE OVERLAY MODAL */
+        .modal-overlay {
+            position: fixed;
+            top: 0; left: 0;
+            width: 100vw; height: 100vh;
+            background: rgba(10, 10, 12, 0.95);
+            z-index: 1000;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            padding: 20px 10px;
+            overflow-y: auto;
+        }
+
+        .modal-content {
+            background: #1a1a1e;
+            border: 1px solid var(--accent);
+            border-radius: 10px;
+            width: 100%;
+            max-width: 750px;
+            padding: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.8);
+            margin-bottom: 40px;
+        }
+
+        .modal-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid var(--panel-border);
+            padding-bottom: 10px;
+            margin-bottom: 15px;
+        }
+
+        .modal-title {
+            color: var(--accent);
+            font-size: 1.4rem;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        .modal-info-meta {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+            gap: 10px;
+            background: #121214;
+            padding: 10px;
+            border-radius: 6px;
+            margin-bottom: 20px;
+            font-size: 0.9rem;
+            border: 1px solid var(--panel-border);
+        }
+
+        .modal-section-title {
+            background: #2d2d34;
+            color: var(--accent);
+            padding: 6px 12px;
+            border-radius: 4px;
+            font-weight: bold;
+            margin-top: 15px;
+            margin-bottom: 10px;
+            font-size: 1.05rem;
+        }
+
+        .modal-box-group {
+            margin-left: 5px;
+            margin-bottom: 10px;
+        }
+
+        .modal-box-title {
+            color: #fff;
+            font-size: 0.95rem;
+            font-weight: bold;
+            margin-bottom: 5px;
+            padding-left: 5px;
+            border-left: 2px solid var(--primary);
+        }
+
+        .modal-items-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 8px;
+            padding: 5px;
+        }
+
+        .modal-stat-card {
+            background: #222226;
+            padding: 8px 12px;
+            border-radius: 4px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 0.9rem;
+            border: 1px solid var(--panel-border);
+        }
+
+        .modal-stat-dots {
+            color: var(--accent);
+            font-weight: bold;
+            background: #121214;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-size: 0.85rem;
+        }
+
+        .hidden { display: none !important; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>Karakter segéd</h1>
+        <div class="io-bar">
+            <div class="file-input-wrapper">
+                <button class="btn">Karakter JSON Betöltés</button>
+                <input type="file" id="json-loader" accept=".json">
+            </div>
+            <button class="btn btn-accent" id="json-exporter">Teljes Állapot Mentése (JSON)</button>
+        </div>
+    </header>
+
+    <div id="main-character-panel" class="panel hidden">
+        <div class="character-header">
+            <div style="display: flex; flex-direction: column; gap: 5px;">
+                <div class="char-name" id="char-display-name">Karakter</div>
+                <div id="char-full-name-sub" style="font-size: 0.8rem; color: var(--text-muted);"></div>
+            </div>
+            <div style="display: flex; align-items: center; gap: 10px;">
+                <div class="static-stat" id="char-initiative">Kezdeményező pont: 0</div>
+                <button class="btn btn-sm btn-accent" id="btn-view-card" onclick="openCharacterModal()">Kártya megtekintése</button>
+            </div>
+        </div>
+
+        <div class="panel-title">Dinamikus Értékek</div>
+        
+        <div class="stat-grid">
+            <div class="stat-row">
+                <div class="stat-info">
+                    <span class="stat-label">Életerő Pont (HP)</span>
+                    <span class="stat-type-toggle" id="hp-max-display">Max: 0</span>
+                </div>
+                <div class="stat-controls">
+                    <button class="ctrl-btn" onclick="adjustStat('char', 'hp', -5)">-5</button>
+                    <button class="ctrl-btn" onclick="adjustStat('char', 'hp', -1)">-1</button>
+                    <div class="stat-value-display" id="char-hp-val">0</div>
+                    <button class="ctrl-btn" onclick="adjustStat('char', 'hp', 1)">+1</button>
+                    <button class="ctrl-btn" onclick="adjustStat('char', 'hp', 5)">+5</button>
+                </div>
+            </div>
+
+            <div class="stat-row">
+                <div class="stat-info">
+                    <span class="stat-label" id="power-type-label">Kegypont</span>
+                    <select id="power-mode-select" onchange="togglePowerMode('char')" style="background:#121214; color:white; border:none; font-size:0.8rem;">
+                        <option value="kegypont">Kegypont (Akaraterő max)</option>
+                        <option value="mana">Mana</option>
+                    </select>
+                </div>
+                <div class="stat-controls">
+                    <button class="ctrl-btn" onclick="adjustStat('char', 'power', -1)">-1</button>
+                    <button class="ctrl-btn" id="char-power-half-minus" onclick="adjustStat('char', 'power', -0.5)">-0.5</button>
+                    <div class="stat-value-display" id="char-power-val">0</div>
+                    <button class="ctrl-btn" id="char-power-half-plus" onclick="adjustStat('char', 'power', 0.5)">+0.5</button>
+                    <button class="ctrl-btn" onclick="adjustStat('char', 'power', 1)">+1</button>
+                </div>
+                <div style="font-size:0.75rem; text-align:right; color:var(--text-muted); margin-top:4px;" id="char-power-max-display">Max: 5</div>
+            </div>
+
+            <div class="stat-row">
+                <div class="stat-info">
+                    <span class="stat-label">SFÉ (Sebzésfelfogó)</span>
+                </div>
+                <div class="stat-controls">
+                    <button class="ctrl-btn" onclick="adjustStat('char', 'sfe', -1)">-1</button>
+                    <div class="stat-value-display" id="char-sfe-val">0</div>
+                    <button class="ctrl-btn" onclick="adjustStat('char', 'sfe', 1)">+1</button>
+                </div>
+            </div>
+
+            <div class="stat-row">
+                <div class="stat-info">
+                    <span class="stat-label">Fegyverek / Sebzések</span>
+                    <button class="btn btn-sm" onclick="addWeaponField('char')">+ Új Fegyver</button>
+                </div>
+                <div class="weapon-list" id="char-weapon-container"></div>
+            </div>
+        </div>
+
+        <div class="panel-title" style="margin-top: 20px;">Karakter Gazdaság & Pénztárca</div>
+        <div class="money-container">
+            <div class="money-box">
+                <div class="money-box-title">Saját zseb</div>
+                <div class="money-row"><span class="money-label m-a">Arany:</span><input type="number" class="money-input" id="char-m-gold" value="0" onchange="syncMoneyData()"></div>
+                <div class="money-row"><span class="money-label m-e">Ezüst:</span><input type="number" class="money-input" id="char-m-silver" value="0" onchange="syncMoneyData()"></div>
+                <div class="money-row"><span class="money-label m-p">Réz:</span><input type="number" class="money-input" id="char-m-copper" value="0" onchange="syncMoneyData()"></div>
+            </div>
+            <div class="money-box">
+                <div class="money-box-title">Karakter Bankja</div>
+                <div class="money-row"><span class="money-label m-a">Arany:</span><input type="number" class="money-input" id="bank-m-gold" value="0" onchange="syncMoneyData()"></div>
+                <div class="money-row"><span class="money-label m-e">Ezüst:</span><input type="number" class="money-input" id="bank-m-silver" value="0" onchange="syncMoneyData()"></div>
+                <div class="money-row"><span class="money-label m-p">Réz:</span><input type="number" class="money-input" id="bank-m-copper" value="0" onchange="syncMoneyData()"></div>
+            </div>
+        </div>
+
+        <div class="exchange-ui">
+            <div style="font-size: 0.85rem; font-weight: bold; color: var(--accent);">Banki Pénzváltó (1 Arany = 10 Ezüst = 1000 Réz | 1 Ezüst = 100 Réz)</div>
+            <div class="trans-row">
+                <span>Váltás típusa:</span>
+                <select id="exchange-type" class="trans-select">
+                    <option value="gold_to_silver">1 Arany ➔ 10 Ezüst felváltás</option>
+                    <option value="gold_to_copper">1 Arany ➔ 1000 Réz felváltás</option>
+                    <option value="silver_to_copper">1 Ezüst ➔ 100 Réz felváltás</option>
+                    <option value="silver_to_gold">10 Ezüst ➔ 1 Arany beváltás</option>
+                    <option value="copper_to_silver">100 Réz ➔ 1 Ezüst beváltás</option>
+                    <option value="copper_to_gold">1000 Réz ➔ 1 Arany beváltás</option>
+                </select>
+                <span>Mennyiség:</span>
+                <input type="number" id="exchange-qty" class="trans-input" value="1" min="1">
+                <button class="btn btn-sm btn-accent" onclick="executeBankExchange()">Váltás végrehajtása</button>
+            </div>
+        </div>
+
+        <div class="transaction-ui">
+            <div style="font-size: 0.85rem; font-weight: bold; color: var(--text-muted);">Pénzmozgatás a tárolók között</div>
+            <div class="trans-row">
+                <span>Honnan:</span>
+                <select id="trans-source" class="trans-select"></select>
+                <span>Mennyit:</span>
+                <input type="number" id="trans-amount" class="trans-input" value="1" min="1">
+                <select id="trans-currency" class="trans-select">
+                    <option value="gold">Arany (A)</option>
+                    <option value="silver">Ezüst (E)</option>
+                    <option value="copper">Réz (R)</option>
+                </select>
+                <span>Hova:</span>
+                <select id="trans-dest" class="trans-select"></select>
+                <button class="btn btn-sm" onclick="executeTransaction()">Küldés</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="henchmen-wrapper" class="henchmen-section hidden">
+        <div class="panel-title">
+            <span>Csatlósok menedzselése</span>
+            <button class="btn btn-accent btn-sm" onclick="createNewHenchman()">+ Új Csatlós Hozzáadása</button>
+        </div>
+        <div class="henchmen-list" id="henchmen-container"></div>
+    </div>
+</div>
+
+<div id="char-card-modal" class="modal-overlay hidden" onclick="closeCharacterModal()">
+    <div class="modal-content" onclick="event.stopPropagation()">
+        <div class="modal-header">
+            <div class="modal-title" id="modal-char-name">Karakter Kártya</div>
+            <button class="btn btn-sm btn-danger" onclick="closeCharacterModal()">Bezárás ✕</button>
+        </div>
+        
+        <div class="modal-info-meta" id="modal-meta-bar"></div>
+
+        <div id="modal-details-body"></div>
+    </div>
+</div>
+
+<script>
+    let appState = {
+        rawCharacterCard: null,
+        charData: {
+            name: "",
+            shortName: "",
+            iniBonus: 0,
+            hp: 0,
+            maxHp: 0,
+            powerType: "kegypont",
+            power: 0,
+            maxPower: 5,
+            sfe: 0,
+            weapons: [],
+            money: { gold: 0, silver: 0, copper: 0 }
+        },
+        bankMoney: { gold: 0, silver: 0, copper: 0 },
+        henchmen: []
+    };
+
+    const weaponColors = ["#8b1e1e", "#3a6073", "#2e7d32", "#8e44ad", "#d35400", "#2c3e50", "#16a085"];
+
+    document.getElementById('json-loader').addEventListener('change', handleFileSelect);
+    document.getElementById('json-exporter').addEventListener('click', exportCompleteState);
+
+    function handleFileSelect(e) {
+        const file = e.target.files[0];
+        if (!file) return;
+        const reader = new FileReader();
+        reader.onload = function(evt) {
+            try {
+                const parsed = JSON.parse(evt.target.result);
+                if (parsed.charData && parsed.bankMoney) {
+                    appState = parsed;
+                    renderEverything();
+                } else if (parsed._type === "magus_character_card") {
+                    loadRawCharacterCard(parsed);
+                } else {
+                    alert("Ismeretlen JSON formátum!");
+                }
+            } catch(err) {
+                alert("Hiba a fájl beolvasása közben: " + err.message);
+            }
+        };
+        reader.readAsText(file);
+    }
+
+    function loadRawCharacterCard(card) {
+        appState.rawCharacterCard = card;
+        let origName = card.name || "Ismeretlen Hős";
+        appState.charData.name = origName;
+        appState.charData.shortName = shortenName(origName);
+
+        let ugyesseg = getStatValue(card, "Ügyesség");
+        let erzek = getStatValue(card, "Érzék");
+        appState.charData.iniBonus = ugyesseg + erzek;
+
+        let allokepesseg = getStatValue(card, "Állóképesség");
+        appState.charData.maxHp = allokepesseg * 5;
+        appState.charData.hp = appState.charData.maxHp;
+
+        let akaratero = getStatValue(card, "Akaraterő");
+        appState.charData.maxPower = akaratero > 0 ? akaratero : 5;
+        appState.charData.power = appState.charData.maxPower;
+        appState.charData.powerType = "kegypont";
+
+        appState.charData.sfe = 0;
+        appState.charData.weapons = [];
+        appState.charData.money = { gold: 0, silver: 0, copper: 0 };
+        appState.bankMoney = { gold: 0, silver: 0, copper: 0 };
+        appState.henchmen = [];
+
+        renderEverything();
+    }
+
+    function shortenName(name) {
+        let parts = name.trim().split(/\s+/);
+        if (parts.length <= 1) return name;
+        let firstPart = parts[0];
+        let secondPart = parts[1];
+        if (secondPart && secondPart.length > 0) {
+            return `${firstPart} ${secondPart.charAt(0)}.`;
+        }
+        return firstPart;
+    }
+
+    function getStatValue(card, label) {
+        if (!card.stats) return 0;
+        let found = card.stats.find(s => s.label && s.label.toLowerCase() === label.toLowerCase());
+        return found ? (found.value || 0) : 0;
+    }
+
+    function renderEverything() {
+        document.getElementById('main-character-panel').classList.remove('hidden');
+        document.getElementById('henchmen-wrapper').classList.remove('hidden');
+
+        document.getElementById('char-display-name').innerText = appState.charData.shortName || appState.charData.name;
+        
+        if(appState.rawCharacterCard) {
+            let card = appState.rawCharacterCard;
+            document.getElementById('char-full-name-sub').innerText = `${card.name || ''} (${card.faj || ''} ${card.kaszt || ''})`;
+            document.getElementById('btn-view-card').classList.remove('hidden');
+        } else {
+            document.getElementById('char-full-name-sub').innerText = appState.charData.name || "";
+            document.getElementById('btn-view-card').classList.add('hidden');
+        }
+
+        document.getElementById('char-initiative').innerText = `Kezdeményező pont: ${appState.charData.iniBonus}`;
+        document.getElementById('hp-max-display').innerText = `Max: ${appState.charData.maxHp}`;
+        document.getElementById('char-hp-val').innerText = appState.charData.hp;
+        document.getElementById('char-sfe-val').innerText = appState.charData.sfe;
+        document.getElementById('char-power-val').innerText = appState.charData.power;
+        document.getElementById('power-mode-select').value = appState.charData.powerType;
+        
+        updatePowerUI('char');
+
+        document.getElementById('char-m-gold').value = appState.charData.money.gold;
+        document.getElementById('char-m-silver').value = appState.charData.money.silver;
+        document.getElementById('char-m-copper').value = appState.charData.money.copper;
+
+        document.getElementById('bank-m-gold').value = appState.bankMoney.gold;
+        document.getElementById('bank-m-silver').value = appState.bankMoney.silver;
+        document.getElementById('bank-m-copper').value = appState.bankMoney.copper;
+
+        renderWeapons('char', appState.charData.weapons, 'char-weapon-container');
+        renderHenchmen();
+        updateTransDestOptions();
+    }
+
+    /* TELJES OLDALAS OVERLAY MEGJELENÍTÉSE ÉS GENERÁLÁSA */
+    function openCharacterModal() {
+        if (!appState.rawCharacterCard) return;
+        const card = appState.rawCharacterCard;
+
+        document.getElementById('modal-char-name').innerText = card.name || "Karakter Adatlap";
+        
+        // Meta sáv felépítése
+        const metaBar = document.getElementById('modal-meta-bar');
+        metaBar.innerHTML = `
+            <div><strong>Faj:</strong> ${card.faj || 'Ember'}</div>
+            <div><strong>Kaszt:</strong> ${card.kaszt || 'Ismeretlen'}</div>
+            <div><strong>Isten:</strong> ${card.isten || 'Nincs'}</div>
+            <div><strong>Krónika:</strong> ${card.kronika || 'Nincs'}</div>
+            ${card.xp ? `<div><strong>TP / XP:</strong> ${card.xp}</div>` : ''}
+        `;
+
+        // Részletes értékek csoportosítása szekciókra és boxokra
+        const bodyContainer = document.getElementById('modal-details-body');
+        bodyContainer.innerHTML = "";
+
+        if (card.stats && Array.isArray(card.stats)) {
+            // Szekciók kigyűjtése sorrendben
+            let sections = [];
+            card.stats.forEach(s => {
+                if (s.section && !sections.includes(s.section)) {
+                    sections.push(s.section);
+                }
+            });
+
+            sections.forEach(secName => {
+                // Szekció cím renderelés
+                let secTitle = document.createElement('div');
+                secTitle.className = "modal-section-title";
+                secTitle.innerText = secName;
+                bodyContainer.appendChild(secTitle);
+
+                // Boxok (csoportok) kigyűjtése a szekción belül
+                let boxes = [];
+                let secStats = card.stats.filter(s => s.section === secName);
+                secStats.forEach(s => {
+                    let bName = s.box || "Egyéb";
+                    if (!boxes.includes(bName)) {
+                        boxes.push(bName);
+                    }
+                });
+
+                boxes.forEach(boxName => {
+                    let boxGroup = document.createElement('div');
+                    boxGroup.className = "modal-box-group";
+                    
+                    let boxTitle = document.createElement('div');
+                    boxTitle.className = "modal-box-title";
+                    boxTitle.innerText = boxName;
+                    boxGroup.appendChild(boxTitle);
+
+                    let grid = document.createElement('div');
+                    grid.className = "modal-items-grid";
+
+                    let boxStats = secStats.filter(s => (s.box || "Egyéb") === boxName);
+                    boxStats.forEach(stat => {
+                        let statCard = document.createElement('div');
+                        statCard.className = "modal-stat-card";
+                        statCard.innerHTML = `
+                            <span>${stat.label || 'Ismeretlen'}</span>
+                            <span class="modal-stat-dots">${stat.value ?? ''}</span>
+                        `;
+                        grid.appendChild(statCard);
+                    });
+
+                    boxGroup.appendChild(grid);
+                    bodyContainer.appendChild(boxGroup);
+                });
+            });
+        } else {
+            bodyContainer.innerHTML = "<p style='color:var(--text-muted); padding:10px;'>Nincsenek részletes tulajdonságok a kártyában.</p>";
+        }
+
+        // Modal megjelenítése a meglévő tabon belül overlay-ként
+        document.getElementById('char-card-modal').classList.remove('hidden');
+        document.body.style.overflow = "hidden"; // Háttér görgetés letiltása
+    }
+
+    function closeCharacterModal() {
+        document.getElementById('char-card-modal').classList.add('hidden');
+        document.body.style.overflow = "auto"; // Háttér görgetés visszaállítása
+    }
+
+    function updatePowerUI(target, henchId = null) {
+        if (target === 'char') {
+            let type = appState.charData.powerType;
+            let isKegypont = (type === 'kegypont');
+            document.getElementById('power-type-label').innerText = isKegypont ? "Kegypont" : "Mana";
+            document.getElementById('char-power-half-minus').style.display = isKegypont ? 'inline-block' : 'none';
+            document.getElementById('char-power-half-plus').style.display = isKegypont ? 'inline-block' : 'none';
+            document.getElementById('char-power-max-display').innerText = isKegypont ? `Max (Akaraterő): ${appState.charData.maxPower}` : "Max: ∞";
+        } else {
+            let hench = appState.henchmen.find(h => h.id === henchId);
+            if (!hench) return;
+            let isKegypont = (hench.powerType === 'kegypont');
+            document.getElementById(`hench-label-${henchId}`).innerText = isKegypont ? "Kegypont" : "Mana";
+            document.getElementById(`hench-half-m-${henchId}`).style.display = isKegypont ? 'inline-block' : 'none';
+            document.getElementById(`hench-half-p-${henchId}`).style.display = isKegypont ? 'inline-block' : 'none';
+        }
+    }
+
+    function togglePowerMode(target, henchId = null) {
+        if (target === 'char') {
+            appState.charData.powerType = document.getElementById('power-mode-select').value;
+            if (appState.charData.powerType === 'kegypont' && appState.charData.power > appState.charData.maxPower) {
+                appState.charData.power = appState.charData.maxPower;
+            }
+            if (appState.charData.powerType === 'mana') {
+                appState.charData.power = Math.floor(appState.charData.power);
+            }
+            document.getElementById('char-power-val').innerText = appState.charData.power;
+            updatePowerUI('char');
+        } else {
+            let hench = appState.henchmen.find(h => h.id === henchId);
+            if (!hench) return;
+            hench.powerType = document.getElementById(`hench-power-select-${henchId}`).value;
+            if (hench.powerType === 'kegypont' && hench.power > hench.maxPower) {
+                hench.power = hench.maxPower;
+            }
+            if (hench.powerType === 'mana') {
+                hench.power = Math.floor(hench.power);
+            }
+            document.getElementById(`hench-power-val-${henchId}`).innerText = hench.power;
+            updatePowerUI('hench', henchId);
+        }
+    }
+
+    function adjustStat(target, stat, amount, henchId = null) {
+        if (target === 'char') {
+            if (stat === 'hp') {
+                appState.charData.hp = Math.max(0, appState.charData.hp + amount);
+                document.getElementById('char-hp-val').innerText = appState.charData.hp;
+            } else if (stat === 'sfe') {
+                appState.charData.sfe = Math.max(0, appState.charData.sfe + amount);
+                document.getElementById('char-sfe-val').innerText = appState.charData.sfe;
+            } else if (stat === 'power') {
+                let newVal = appState.charData.power + amount;
+                if (appState.charData.powerType === 'kegypont') {
+                    newVal = Math.min(appState.charData.maxPower, Math.max(0, newVal));
+                } else {
+                    newVal = Math.max(0, newVal);
+                }
+                appState.charData.power = newVal;
+                document.getElementById('char-power-val').innerText = appState.charData.power;
+            }
+        } else {
+            let hench = appState.henchmen.find(h => h.id === henchId);
+            if (!hench) return;
+            if (stat === 'hp') {
+                hench.hp = Math.max(0, hench.hp + amount);
+                document.getElementById(`hench-hp-val-${henchId}`).innerText = hench.hp;
+            } else if (stat === 'maxHp') {
+                hench.maxHp = Math.max(0, hench.maxHp + amount);
+                document.getElementById(`hench-hp-max-display-${henchId}`).innerText = `Max: ${hench.maxHp}`;
+            } else if (stat === 'sfe') {
+                hench.sfe = Math.max(0, hench.sfe + amount);
+                document.getElementById(`hench-sfe-val-${henchId}`).innerText = hench.sfe;
+            } else if (stat === 'maxPower') {
+                hench.maxPower = Math.max(0, hench.maxPower + amount);
+                document.getElementById(`hench-power-max-display-${henchId}`).innerText = hench.powerType === 'kegypont' ? `Max: ${hench.maxPower}` : "Max: ∞";
+            } else if (stat === 'power') {
+                let newVal = hench.power + amount;
+                if (hench.powerType === 'kegypont') {
+                    newVal = Math.min(hench.maxPower, Math.max(0, newVal));
+                } else {
+                    newVal = Math.max(0, newVal);
+                }
+                hench.power = newVal;
+                document.getElementById(`hench-power-val-${henchId}`).innerText = hench.power;
+            }
+        }
+    }
+
+    function addWeaponField(target, henchId = null) {
+        let list = (target === 'char') ? appState.charData.weapons : appState.henchmen.find(h => h.id === henchId).weapons;
+        let randomColor = weaponColors[Math.floor(Math.random() * weaponColors.length)];
+        
+        list.push({
+            id: Date.now() + Math.random().toString(36).substr(2, 5),
+            name: "Új fegyver / sebzés",
+            val: 0,
+            color: randomColor
+        });
+
+        if (target === 'char') {
+            renderWeapons('char', appState.charData.weapons, 'char-weapon-container');
+        } else {
+            renderWeapons('hench', appState.henchmen.find(h => h.id === henchId).weapons, `hench-weapon-container-${henchId}`, henchId);
+        }
+    }
+
+    function renderWeapons(target, weaponList, containerId, henchId = null) {
+        let container = document.getElementById(containerId);
+        container.innerHTML = "";
+        
+        weaponList.forEach(w => {
+            let row = document.createElement('div');
+            row.className = "weapon-item";
+            row.innerHTML = `
+                <div class="weapon-color" style="background-color: ${w.color};"></div>
+                <div style="flex:1;">
+                    <input type="text" class="weapon-name-input" value="${w.name}" onchange="updateWeaponName('${target}', '${w.id}', this.value, '${henchId}')">
+                </div>
+                <div class="stat-controls">
+                    <button class="ctrl-btn" style="width:32px; height:32px; font-size:1rem;" onclick="adjustWeaponVal('${target}', '${w.id}', -1, '${henchId}')">-</button>
+                    <div style="min-width:35px; text-align:center; font-weight:bold;" id="w-val-${w.id}">${w.val}</div>
+                    <button class="ctrl-btn" style="width:32px; height:32px; font-size:1rem;" onclick="adjustWeaponVal('${target}', '${w.id}', 1, '${henchId}')">+</button>
+                    <button class="btn btn-sm btn-danger" style="padding: 6px 8px;" onclick="deleteWeapon('${target}', '${w.id}', '${henchId}', '${containerId}')">✕</button>
+                </div>
+            `;
+            container.appendChild(row);
+        });
+    }
+
+    function updateWeaponName(target, wId, value, henchId) {
+        let list = (target === 'char') ? appState.charData.weapons : appState.henchmen.find(h => h.id === henchId).weapons;
+        let w = list.find(item => item.id === wId);
+        if (w) w.name = value;
+    }
+
+    function adjustWeaponVal(target, wId, amount, henchId) {
+        let list = (target === 'char') ? appState.charData.weapons : appState.henchmen.find(h => h.id === henchId).weapons;
+        let w = list.find(item => item.id === wId);
+        if (w) {
+            w.val = Math.max(0, w.val + amount);
+            document.getElementById(`w-val-${wId}`).innerText = w.val;
+        }
+    }
+
+    function deleteWeapon(target, wId, henchId, containerId) {
+        if (target === 'char') {
+            appState.charData.weapons = appState.charData.weapons.filter(w => w.id !== wId);
+            renderWeapons('char', appState.charData.weapons, containerId);
+        } else {
+            let hench = appState.henchmen.find(h => h.id === henchId);
+            if (hench) {
+                hench.weapons = hench.weapons.filter(w => w.id !== wId);
+                renderWeapons('hench', hench.weapons, containerId, henchId);
+            }
+        }
+    }
+
+    function syncMoneyData() {
+        appState.charData.money.gold = parseInt(document.getElementById('char-m-gold').value) || 0;
+        appState.charData.money.silver = parseInt(document.getElementById('char-m-silver').value) || 0;
+        appState.charData.money.copper = parseInt(document.getElementById('char-m-copper').value) || 0;
+
+        appState.bankMoney.gold = parseInt(document.getElementById('bank-m-gold').value) || 0;
+        appState.bankMoney.silver = parseInt(document.getElementById('bank-m-silver').value) || 0;
+        appState.bankMoney.copper = parseInt(document.getElementById('bank-m-copper').value) || 0;
+
+        appState.henchmen.forEach(h => {
+            h.money.gold = parseInt(document.getElementById(`hench-m-gold-${h.id}`).value) || 0;
+            h.money.silver = parseInt(document.getElementById(`hench-m-silver-${h.id}`).value) || 0;
+            h.money.copper = parseInt(document.getElementById(`hench-m-copper-${h.id}`).value) || 0;
+        });
+    }
+
+    function executeBankExchange() {
+        syncMoneyData();
+        const mode = document.getElementById('exchange-type').value;
+        const qty = parseInt(document.getElementById('exchange-qty').value) || 0;
+
+        if (qty <= 0) {
+            alert("Kérlek adj meg egy pozitív mennyiséget a váltáshoz!");
+            return;
+        }
+
+        switch (mode) {
+            case "gold_to_silver":
+                if (appState.bankMoney.gold < qty) { alert("Nincs elég Arany a bankban!"); return; }
+                appState.bankMoney.gold -= qty;
+                appState.bankMoney.silver += (qty * 10);
+                break;
+            case "gold_to_copper":
+                if (appState.bankMoney.gold < qty) { alert("Nincs elég Arany a bankban!"); return; }
+                appState.bankMoney.gold -= qty;
+                appState.bankMoney.copper += (qty * 1000);
+                break;
+            case "silver_to_copper":
+                if (appState.bankMoney.silver < qty) { alert("Nincs elég Ezüst a bankban!"); return; }
+                appState.bankMoney.silver -= qty;
+                appState.bankMoney.copper += (qty * 100);
+                break;
+            case "silver_to_gold":
+                if (appState.bankMoney.silver < (qty * 10)) { alert("Nincs elég Ezüst a beváltáshoz (10 E = 1 A)!"); return; }
+                appState.bankMoney.silver -= (qty * 10);
+                appState.bankMoney.gold += qty;
+                break;
+            case "copper_to_silver":
+                if (appState.bankMoney.copper < (qty * 100)) { alert("Nincs elég Réz a beváltáshoz (100 R = 1 E)!"); return; }
+                appState.bankMoney.copper -= (qty * 100);
+                appState.bankMoney.silver += qty;
+                break;
+            case "copper_to_gold":
+                if (appState.bankMoney.copper < (qty * 1000)) { alert("Nincs elég Réz a beváltáshoz (1000 R = 1 A)!"); return; }
+                appState.bankMoney.copper -= (qty * 1000);
+                appState.bankMoney.gold += qty;
+                break;
+        }
+
+        renderEverything();
+    }
+
+    function createNewHenchman() {
+        let hId = "hench_" + Date.now();
+        appState.henchmen.push({
+            id: hId,
+            name: "Új Csatlós",
+            hp: 0,
+            maxHp: 0,
+            powerType: "kegypont",
+            power: 0,
+            maxPower: 5,
+            sfe: 0,
+            weapons: [],
+            money: { gold: 0, silver: 0, copper: 0 }
+        });
+        renderHenchmen();
+        updateTransDestOptions();
+    }
+
+    function renderHenchmen() {
+        let container = document.getElementById('henchmen-container');
+        container.innerHTML = "";
+
+        appState.henchmen.forEach(h => {
+            let card = document.createElement('div');
+            card.className = "henchman-card";
+            card.innerHTML = `
+                <div class="henchman-header">
+                    <input type="text" class="henchman-name-input" value="${h.name}" onchange="updateHenchName('${h.id}', this.value)">
+                    <button class="btn btn-sm btn-danger" onclick="deleteHenchman('${h.id}')">Eltávolítás</button>
+                </div>
+
+                <div class="stat-grid">
+                    <div class="stat-row">
+                        <div class="stat-info">
+                            <span class="stat-label">Életerő (HP)</span>
+                            <div style="display:flex; gap:2px; font-size:0.8rem;">
+                                <button class="btn btn-sm" style="padding:1px 4px;" onclick="adjustStat('hench', 'maxHp', -1, '${h.id}')">-</button>
+                                <span id="hench-hp-max-display-${h.id}">Max: ${h.maxHp}</span>
+                                <button class="btn btn-sm" style="padding:1px 4px;" onclick="adjustStat('hench', 'maxHp', 1, '${h.id}')">+</button>
+                            </div>
+                        </div>
+                        <div class="stat-controls">
+                            <button class="ctrl-btn" onclick="adjustStat('hench', 'hp', -1, '${h.id}')">-1</button>
+                            <div class="stat-value-display" id="hench-hp-val-${h.id}">${h.hp}</div>
+                            <button class="ctrl-btn" onclick="adjustStat('hench', 'hp', 1, '${h.id}')">+1</button>
+                        </div>
+                    </div>
+
+                    <div class="stat-row">
+                        <div class="stat-info">
+                            <span class="stat-label" id="hench-label-${h.id}">Kegypont</span>
+                            <select id="hench-power-select-${h.id}" onchange="togglePowerMode('hench', '${h.id}')" style="background:#121214; color:white; border:none; font-size:0.8rem;">
+                                <option value="kegypont" ${h.powerType === 'kegypont' ? 'selected' : ''}>Kegypont</option>
+                                <option value="mana" ${h.powerType === 'mana' ? 'selected' : ''}>Mana</option>
+                            </select>
+                            <div style="display:flex; gap:2px; font-size:0.8rem;">
+                                <button class="btn btn-sm" style="padding:1px 4px;" onclick="adjustStat('hench', 'maxPower', -1, '${h.id}')">-</button>
+                                <span id="hench-power-max-display-${h.id}">Max: ${h.maxPower}</span>
+                                <button class="btn btn-sm" style="padding:1px 4px;" onclick="adjustStat('hench', 'maxPower', 1, '${h.id}')">+</button>
+                            </div>
+                        </div>
+                        <div class="stat-controls">
+                            <button class="ctrl-btn" onclick="adjustStat('hench', 'power', -1, '${h.id}')">-1</button>
+                            <button class="ctrl-btn" id="hench-half-m-${h.id}" onclick="adjustStat('hench', 'power', -0.5, '${h.id}')">-0.5</button>
+                            <div class="stat-value-display" id="hench-power-val-${h.id}">${h.power}</div>
+                            <button class="ctrl-btn" id="hench-half-p-${h.id}" onclick="adjustStat('hench', 'power', 0.5, '${h.id}')">+0.5</button>
+                            <button class="ctrl-btn" onclick="adjustStat('hench', 'power', 1, '${h.id}')">+1</button>
+                        </div>
+                    </div>
+
+                    <div class="stat-row">
+                        <div class="stat-info"><span class="stat-label">SFÉ</span></div>
+                        <div class="stat-controls">
+                            <button class="ctrl-btn" onclick="adjustStat('hench', 'sfe', -1, '${h.id}')">-1</button>
+                            <div class="stat-value-display" id="hench-sfe-val-${h.id}">${h.sfe}</div>
+                            <button class="ctrl-btn" onclick="adjustStat('hench', 'sfe', 1, '${h.id}')">+1</button>
+                        </div>
+                    </div>
+
+                    <div class="stat-row">
+                        <div class="stat-info">
+                            <span class="stat-label">Fegyverek</span>
+                            <button class="btn btn-sm" onclick="addWeaponField('hench', '${h.id}')">+ Új Sebzés</button>
+                        </div>
+                        <div class="weapon-list" id="hench-weapon-container-${h.id}"></div>
+                    </div>
+                </div>
+
+                <div style="margin-top:12px; border-top:1px solid #3e3e4a; padding-top:8px;">
+                    <div class="money-box-title">Csatlós Zsebe</div>
+                    <div style="display:flex; gap:10px; flex-wrap:wrap;">
+                        <div class="money-row"><span class="money-label m-a">A:</span><input type="number" class="money-input" id="hench-m-gold-${h.id}" value="${h.money.gold}" onchange="syncMoneyData()"></div>
+                        <div class="money-row"><span class="money-label m-e">E:</span><input type="number" class="money-input" id="hench-m-silver-${h.id}" value="${h.money.silver}" onchange="syncMoneyData()"></div>
+                        <div class="money-row"><span class="money-label m-p">R:</span><input type="number" class="money-input" id="hench-m-copper-${h.id}" value="${h.money.copper}" onchange="syncMoneyData()"></div>
+                    </div>
+                </div>
+            `;
+            container.appendChild(card);
+            renderWeapons('hench', h.weapons, `hench-weapon-container-${h.id}`, h.id);
+            updatePowerUI('hench', h.id);
+        });
+    }
+
+    function updateHenchName(id, value) {
+        let hench = appState.henchmen.find(h => h.id === id);
+        if (hench) {
+            hench.name = value;
+            updateTransDestOptions();
+        }
+    }
+
+    function deleteHenchman(id) {
+        appState.henchmen = appState.henchmen.filter(h => h.id !== id);
+        renderHenchmen();
+        updateTransDestOptions();
+    }
+
+    function updateTransDestOptions() {
+        let srcSelect = document.getElementById('trans-source');
+        let destSelect = document.getElementById('trans-dest');
+        let currentSrc = srcSelect.value;
+        let currentDest = destSelect.value;
+
+        let options = [
+            { value: "char", label: "Karakter zsebe" },
+            { value: "bank", label: "Karakter Bankja" }
+        ];
+
+        appState.henchmen.forEach(h => {
+            options.push({ value: h.id, label: `Csatlós: ${h.name}` });
+        });
+
+        srcSelect.innerHTML = "";
+        destSelect.innerHTML = "";
+
+        options.forEach(opt => {
+            let o1 = document.createElement('option');
+            o1.value = opt.value; o1.text = opt.label;
+            srcSelect.appendChild(o1);
+
+            let o2 = document.createElement('option');
+            o2.value = opt.value; o2.text = opt.label;
+            destSelect.appendChild(o2);
+        });
+
+        if (currentSrc) srcSelect.value = currentSrc;
+        if (currentDest) destSelect.value = currentDest;
+        if (srcSelect.value === currentDest && destSelect.options[1]) {
+            destSelect.selectedIndex = 1;
+        }
+    }
+
+    function executeTransaction() {
+        syncMoneyData();
+        let src = document.getElementById('trans-source').value;
+        let dest = document.getElementById('trans-dest').value;
+        let amount = parseInt(document.getElementById('trans-amount').value) || 0;
+        let curr = document.getElementById('trans-currency').value;
+
+        if (src === dest) { alert("Önmagába nem utalhatsz pénzt!"); return; }
+        if (amount <= 0) { alert("Pozitív összeget adj meg!"); return; }
+
+        let srcObj = (src === 'char') ? appState.charData.money : (src === 'bank' ? appState.bankMoney : appState.henchmen.find(i => i.id === src)?.money);
+        let destObj = (dest === 'char') ? appState.charData.money : (dest === 'bank' ? appState.bankMoney : appState.henchmen.find(i => i.id === dest)?.money);
+
+        if (!srcObj || !destObj) return;
+        if (srcObj[curr] < amount) { alert("Nincs elég fedezet a forrásnál ebben a pénznemben!"); return; }
+
+        srcObj[curr] -= amount;
+        destObj[curr] += amount;
+        renderEverything();
+    }
+
+    function exportCompleteState() {
+        syncMoneyData();
+        let dataStr = "data:text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(appState, null, 2));
+        let downloadAnchor = document.createElement('a');
+        let filename = "magus_manager_mentes_" + (appState.charData.shortName || "karakter").replace(/[^a-z0-9]/gi, '_').toLowerCase() + ".json";
+        downloadAnchor.setAttribute("href", dataStr);
+        downloadAnchor.setAttribute("download", filename);
+        document.body.appendChild(downloadAnchor);
+        downloadAnchor.click();
+        downloadAnchor.remove();
+    }
+</script>
+
+</body>
+</html>

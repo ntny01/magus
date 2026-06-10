@@ -1,0 +1,127 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": true,
+    "section_title": "A harc útja",
+    "content_blocks": [
+        {
+            "type": "paragraph",
+            "text": "Az udvari irányzatot követő kardművészek különleges képességei.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "I. Az irányzatot követő kardművészek nemes emberek, így I. Tsz.-en megkapják ingyenesen a Nemesi vér Hátteret, illetve a vagyon Háttér 1 pontos verzióját, emellett mestereik minden Szociális képzettséget, illetve a Hadvezetés, Lélektan, és a Tudományos képzettségeket 3. fokú Oktatás képzettségnek megfelelő bónuszokkal tanítják nekik.",
+            "title": "Udvari irányzat előnyei: Nemesi vér és képzettségek",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "II. Az irányzat szemléletmódjában igen cselekvő, s ez harci stílusukon a Dhala-saan is meglátszik. Ez az egykezes harcművészet, melynek erős előkövetelménye a Harcművészet (Slan kard) képzettség, a szokásos Harcművészet képzettségnél feltüntetett Kp igény feléért tanulható. A stílus különlegessége, hogy az alapjául szolgáló Harcművészet képzettség által nyújtott bónusz harcértékekhez hozzáadódnak a Dhala-saa által adott bónuszok is, azonban csakis a KÉ-hez és a VÉ-hez. (Fontos megjegyezni, hogy újabb fegyverkategória növekedés nem történik). Emellett pedig az első kardrántás alkalmával, ha nem meglepetésszerűen éri a kardművészt a támadás, a stílus alkalmazója mentesül a fegyver elővonásának időigénye alól.",
+            "title": "Dhala-saa harcművészet",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "III. A kardművészek különleges, kifejezetten az ő harcmodorukhoz igazított, hajlékony, könnyű vértezetet viselnek, mely a legkevésbé akadályozza őket a szabad mozgásban; családjuktól ingyenesen az 1. Tsz.-en megkapják.",
+            "title": "Udvari irányzat előnyei: Kardművész vért (ingyenes)",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "MGT: –1, SFÉ: 4, Súly: 15 ynevi font, Ár: –, STP: 80",
+            "title": "Kardművész vért statisztikák",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "flavor_text",
+            "text": "„...A világ benne foglaltatik egyetlen vágásban, s a harc maga az élet...”",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "flavor_text",
+            "text": "Idézet a Lashaból.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "A kardművészek többsége erőteljesen ragaszkodik az ősi tradíciókhoz, melyeket a szigetvilágbeli őseiktől örököltek, s melyekre szerintük Tiadlanban épülnie kell. Mereven elutasítják az új idők vívmányait, a negyedik kaszt előretörését, s a csendes szemlélődést, a békés mozdulatlanságot hirdetik. Bíráloik és politikai ellenfeleik pont ezen felfogás miatt Avin leithe ra daragasú-nak vagyis a „lusta sziklák ösvényének” nevezik az irányzatot. Azonban mi sem áll távolabb a valóságtól.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "Az irányzat tagjai a szükséges erő elvét hirdetik: amíg a világ rendje magától is helyreállhat, nem kell beavatkozni; azonban, ha eljön a szükség órája alkalmazkodni kell, s fellépni a megfelelő határozottsággal és a szükséges erővel.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "Az irányzat a kardforgatást is filozófiájává emelte, nem ritka a szellemi vita rituális párbajaik során, ahol akár a bölcsesség bizonyítéka is lehet egy tökéletes vágás, hiszen csak a tökéletes ember értheti meg a tökéletességet. Az irányzat nem csak hatalmas ligáról, egész tartományokat átfogó köreiről, hanem a két pengét, a Slan kardot és tőrt egyszerre forgató kardművészeiről is híres.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "A harc útját járó kardművészek különleges előnyei:",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "I. Az irányzat mesterei minden Harci, illetve a Lélektan, Számítás/mértan, Térképészet Jog/törvénykezés, Történelem, Vallásismeret, Állatismeret, Lovaglás képzettségeket 3. fokú Oktatás képzettségnek megfelelő bónuszokkal tanítják diákjaiknak.",
+            "title": "A harc útja előnyei: Képzettségek",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "II. A két penge egyidejű forgatása külön technikát igényel, ennek a stílusnak a neve Shien-su, s Tiadlanban is csak kevés neves mester oktatja. Kétség kívül ez a kardvívás létező legtökéletesebb formája – ezt a karakternek, miután elsajátította a Harcművészet (Slan kard és Slan tőr) képzettséget, még külön fel kell venni, mint Harcművészet (Shien-su) képzettséget. Megjegyzendő még, hogy a Shien-su csakis olyan szintig tanulható, amilyen fokon a karakter a Slan kard és tőr harcművészetét tanulmányozta. A fent említett képzettségek által adott bónuszok összeadódnak, s a választott fegyver harcértékéhez számítódnak. Tehát a Shien-su megnöveli a korábbi bónuszok mellett nem csak a fegyverek méretkategóriáját, de harcértékeit is. Emellett pedig a Kétkezesharc képzettség hasonló fokú birtokosának megfelelő képességekkel ruházza fel alkalmazóját.",
+            "title": "Shien-su harcművészet (két penge)",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "III. A kardművészek különleges, kifejezetten az ő harcmodorukhoz igazított, hajlékony, könnyű vértezetet viselnek, mely a legkevésbé akadályozza őket a szabad mozgásban; családjuktól ingyenesen az 1. Tsz.-en megkapják.",
+            "title": "A harc útja előnyei: Kardművész vért (ingyenes)",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "MGT: –1, SFÉ: 4, Súly: 15 ynevi font, Ár: –, STP: 80",
+            "title": "Kardművész vért statisztikák",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "Ezen felül meg kell még említenünk a kardművészek ritkán látható vívótechnikáját, amely a Slan csatakard forgatását jelenti. A majd embernyi hatalmas fegyvert kizárólag ütközetekben alkalmazzák, nehézkes szállítása és viselete miatt általában nélkülözik az utazó vagy kalandozó kardművészek.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "A technika elsajátítása szintén a Harcművészet képzettség (Slan csatakard) megszerzésével lehetséges, s majd minden harciasabb mester oktatja tanulóinak.",
+            "title": "Slan csatakard elsajátítása",
+            "headers": [],
+            "rows": []
+        }
+    ]
+}

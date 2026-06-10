@@ -1,0 +1,46 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": null,
+    "is_new_section": true,
+    "section_title": "Törpe",
+    "content_blocks": [
+        {
+            "type": "paragraph",
+            "text": "ideális a gátlásoktól gyötört, mélabúra hajlamos udvari orkok számára, akiket bizonyos idő elteltével biztosan helyreráznak."
+        },
+        {
+            "type": "paragraph",
+            "text": "Az udvari orkok átlagos testmagassága 160 ynevi hüvelyk, szőrzetük többnyire világosabb vadonélő társaikénál, arcukon és nyakukon kimondottan ritkás – és jó, hogy az, mert a boldogtalanokat még ez is szégyenérzettel tölti el. Emberi módon öltöznek, beszélnek, étkeznek, emberneveken hívatják magukat, emberi tudományokat tanulnak, többnyire az embernépek isteneit imádják. Legbenső lényegüket azonban nem tudja megváltoztatni, akárhogy küszködnek, valahol mélyen mindig orkok maradnak."
+        },
+        {
+            "type": "paragraph",
+            "text": "Továbbá sújtja őket Orwella Átka, amelyet nem enyhíthetnek sem a pyarrioni istenek, sem a toroni hekkák. Emellett még mindig kísértik álmaikat a falkaragadozói ösztönök, amit csak a törzs összetartó kötelékeiben élhetnének ki maradéktalanul; az ő harciés vértestvériségeik ennek szánalmas utánzatai csupán. Még mindig arcukon viselik a Farkasszellem vonásait, hiába változtatkoznak folyton és kenik magukat szépítőszerekkel. Az udvari orkok szeme savószínű, ritkábban földbarna. Kínosan tiszták – egy természetes állapotú ork éppúgy undorral tölti el őket, mint az embereket."
+        },
+        {
+            "type": "paragraph",
+            "text": "Az igazi orkokhoz fűződő viszonyuk sajátságos: mindkét faj képviselői saját torzéképüknek tekintik a másikat. Az udvari orkok azért gyűlölik a vadon élőket, mert őket teszik felelőssé az emberek előítéleteiért – a vadon élő ork pedig faja minden értékének árulóját látja az udvariban. Keveredés a két faj közt sosem fordul elő; a kölcsönös megvetés miatt szó sem lehet ilyen frigyről."
+        },
+        {
+            "type": "rule",
+            "title": "Különleges képességeik",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "A törpék Beriquelről érkeztek a P.sz. 1200-as években. Őshazájukból szörnyű démonfajzatok űzték el őket, ősi ellenségük Tyrrano teremtményei. Számtalan törpe harcos áldozta életét, hogy testvéreik elmenekülhessenek és Ynev földjén lelhessenek új hazát. Hamar barátságot kötöttek az Északi Szövetség népeivel, akik eleinte ugyan különösnek találták ezt az aprótermetű fajt, mely szokásában és gondolkodásában igencsak elüt az embertől, ám rövidesen rádöbbentek, milyen kemény harcosokra, milyen hű barátokra tettek szert személyükben."
+        },
+        {
+            "type": "paragraph",
+            "text": "Való igaz: a törpéknél, az építészet, a kőszobrászat és a kovácsolás szerelmeseinél keresve sem találni rendíthetetlenebb társakat. Életük egész tartama alatt az állandóságot, a nyugalmat keresik – ám mivel Ynev és a valóság talaján két lábbal állnak, pontosan felmérik, hogy az állandósághoz, a nyugalomhoz és a kényelemhez munkára, vagyonra, vagyis kiemelkedettségre van szükség."
+        },
+        {
+            "type": "paragraph",
+            "text": "Az átlag fölé emelkedés egyik módja: maradandót alkotni. Aki látott már törpék építette erődöt, netán megfordult a Tarini-hegység mélyén kialakított barlangvárosaik valamelyikében, tudja, miként viszonyulnak ehhez a kérdéshez. Épületeik, hídjaik bámulatosan szilárdak, századokig, sőt, akár ezredévekig dacolhatnak az idővel. A törpék azonban nemcsak az építészet területén alkotnak nagyot. Acélból azok mondhatnának bővebben, akik viseltek már ütközetben törpék kovácsolta páncélt, láncinget és pajzsot, vagy küzdöttek már tarini csatabárddal nem-tarini vérbe öltözött szerencsétlenek ellen."
+        },
+        {
+            "type": "paragraph",
+            "text": "A kiemelkedés második bevett módja a katonáskodás – s Tarin törpéi nagy számban élnek ezzel a lehetőséggel. Az Északi Szövetség armádiájának gyalogos derékhadát adják háború idején. Felbecsülhetők parancsnokaik minden képességüket, feladatukat teljesítik. Ha nem természetes akadály állja útjukat, szétrombolják, legyen az fatörzsek torlasza vagy roppant kövekből rakott fal; ha szorult helyzetbe kerülnek, utolsó törpéig harcolnak, megadni sosem szokták magukat. Valamennyi törpe harcos számára adott"
+        }
+    ]
+}

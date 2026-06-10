@@ -1,0 +1,222 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": true,
+    "section_title": "Szimpatikus mágia",
+    "content_blocks": [
+        {
+            "type": "rule",
+            "title": "Gyertyakészítés",
+            "rows": [
+                [
+                    "Mana pont",
+                    "Gyertyától függ"
+                ],
+                [
+                    "Erősség",
+                    "Gyertyától függ"
+                ],
+                [
+                    "Varázslás ideje",
+                    "1 óra"
+                ],
+                [
+                    "Hatótáv",
+                    "Érintés"
+                ],
+                [
+                    "Időtartam",
+                    "Végleges"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A varázslat segítségével az alábbiakban felsorolt gyertyák bármelyike elkészíthető. A készítés annyi Mana pontba kerül, amennyi az adott gyertyánál fel van tüntetve. Természetesen a gyertya által tartalmazott varázslat Erősítésére költött, vagy a leégés idejének kitolására – a gyertya teljes leégéséig tart. Ezalatt a boszorkány és a varázsló képességei többszöröződésével a leégés ideje is a többszörözésre nyújtható – áldozott Mana pontok is beszámítandók."
+        },
+        {
+            "type": "paragraph",
+            "text": "Egy mágikus gyertya készítése mindig transzot igényel, s egy teljes órába kerül. Ezalatt a boszorkány a rendelkezésre álló különleges viaszból meggyúrja, s mágiával itatja át a gyertyát. Természetesen 30 percnél rövidebb idő alatt leégő gyertyák is készíthetőek, de nem kerülnek kevesebb Mana pontba."
+        },
+        {
+            "type": "paragraph",
+            "text": "A gyertya természetesen bárki meggyújthatja, nem csak a boszorkány – ettől az még kifejti mágikus hatását."
+        },
+        {
+            "type": "rule",
+            "title": "Kék gyertya",
+            "rows": [
+                [
+                    "Mana pont",
+                    "1/E"
+                ],
+                [
+                    "Varázslás ideje",
+                    "1 kör múltán hat"
+                ],
+                [
+                    "Égés időtartama",
+                    "30 perc"
+                ],
+                [
+                    "Mágiaellenállás",
+                    "Mentális"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A kék gyertya mágiája kábító esszenciát hordoz – hatása a Bódulat varázslattal egyezik, de az állandósult időszak a gyertya teljes leégéséig tart. A hatás az első füstben töltött kör végén éri az áldozatokat. Természetesen minden áldozat dobhat Mentális Mágiaellenállást a gyertya által kibocsátott varázslat erőssége ellen, melynek sikere semmissé teszi a hatást. Ha a gyertya bármely okból elalszik, a hatás állandósult szakasza még 3 körig tart."
+        },
+        {
+            "type": "rule",
+            "title": "Sárga gyertya",
+            "rows": [
+                [
+                    "Mana pont",
+                    "Amennyi a hasonló Jellemtorzító Átoké + 5"
+                ],
+                [
+                    "Erősség",
+                    "Amennyi a hasonló Jellemtorzító Átoké"
+                ],
+                [
+                    "Varázslás ideje",
+                    "1 kör múltán hat"
+                ],
+                [
+                    "Égés időtartama",
+                    "30 perc"
+                ],
+                [
+                    "Mágiaellenállás",
+                    "Asztrális"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A gyertyába a boszorkány bármilyen Jellemtorzító Átkot behelyezhet – a hatás az ott leírtakhoz lesz hasonló. A különbség csak annyi, hogy a hatás 1 kör múltán jelentkezik, és nem maradandó, csak addig tart, ameddig az áldozat a füstben tartózkodik. A gyertya létrehozásához szükséges Mana pontok száma megegyezik a bezárt varázslathoz szükségesekkel, amihez még 5 Mana pont kell a gyertya készítés miatt."
+        },
+        {
+            "type": "rule",
+            "title": "Szivárványszín gyertya",
+            "rows": [
+                [
+                    "Mana pont",
+                    "Lásd a leírást!"
+                ],
+                [
+                    "Erősség",
+                    "Lásd a leírást!"
+                ],
+                [
+                    "Varázslás ideje",
+                    "1 kör múltán hat"
+                ],
+                [
+                    "Égés időtartama",
+                    "Lásd a leírást!"
+                ],
+                [
+                    "Mágiaellenállás",
+                    "Lásd a leírást!"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "Minden eddigi gyertyából elhelyezhető darab ebben a sokszínű gyertyában. A különböző hatást rejtő rétegek kétféleképpen helyezhetők el, vagy spirálban, egymás mellett, vagy rétegelve, egymás felett. Az első esetben az összes gyertya mágiája egyszerre fejti ki hatását, míg a második esetben időrendi sorrend megalkotására nyílik lehetőség. A két módszer természetesen keverhető is, így egy gyertyán belül, de ilyenkor pontos jellemzésre, leírásra van szükség, amit a Kalandmesterrel a Szivárvány gyertya megalkotásakor ismertetni kell. A szeletek a különböző színű gyertyák leírtaknak megfelelően készíthetők el. A Szivárvány gyertya elkészítéséhez szükséges Mana pontok száma egyenlő a benne részt kapó gyertyarétegek összes Mana pont igényével. A különböző rétegek különböző erősséggel hatnak, és különböző a leégési idejük is, attól függ mennyit használt fel belőlük a boszorkány a Szivárvány gyertyához. Az ellenállások (ME, vagy Méregellenállás) minden réteg esetében külön-külön vizsgálandóak."
+        },
+        {
+            "type": "rule",
+            "title": "Vörös gyertya",
+            "rows": [
+                [
+                    "Mana pont",
+                    "2/E"
+                ],
+                [
+                    "Varázslás ideje",
+                    "speciális"
+                ],
+                [
+                    "Égés időtartama",
+                    "30 perc"
+                ],
+                [
+                    "Mágiaellenállás",
+                    "Asztrális és Mentális"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A legegyszerűbb Gyertyamágia a Vörös gyertya elkészítése. Az ilyen gyertya füstje altatóvarázslat bocsát a levegőbe – hatása az Álomvarázshoz hasonló. Áldozatai természetesen Asztrális és Mentális Mágiaellenállást is dobhatnak a gyertya erőssége ellen, különben elalszanak az első kör végére."
+        },
+        {
+            "type": "rule",
+            "title": "Zöld gyertya",
+            "rows": [
+                [
+                    "Mana pont",
+                    "24"
+                ],
+                [
+                    "Erősség",
+                    "A méreg erőssége"
+                ],
+                [
+                    "Varázslás ideje",
+                    "Lásd a leírást!"
+                ],
+                [
+                    "Égés időtartama",
+                    "5 perc"
+                ],
+                [
+                    "Mágiaellenállás",
+                    "Méregellenállás"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A Zöld gyertya mérgező gázokat bocsát ki, melyek mágikus úton terjednek. A gyertyába bármilyen méreg bele keverhető, melyet a gyertyába foglalt mágia füsttel terjedő, kontaktméreggé lényegít át. A hatás ellen nem Mágia-, hanem Méregellenállást kell dobni, természetesen a méreg szintjének függvényében. A méreg tetszőleges típusú lehet, az egyszerű rosszullétet okozóktól az azonnali halált hozóig. Ahhoz, hogy a méreg az áldozat szervezetébe kerüljön, annak legalább egy körig a füstben kell tartózkodnia – de az első kör után a hatás bekövetkezte már csak a méreg hatóidejétől függ. A hatás minden szempontból azonos a felhasznált méreg hatásával (lásd még Mérgek!)."
+        },
+        {
+            "type": "paragraph",
+            "text": "Egy 30 percig égő gyertyába 5 adag mérget kell foglalni, különben a várt hatás elmarad."
+        },
+        {
+            "type": "rule",
+            "title": "Személy megkeresése",
+            "rows": [
+                [
+                    "Mana pont",
+                    "1/E"
+                ],
+                [
+                    "Varázslás ideje",
+                    "3 kör"
+                ],
+                [
+                    "Hatótáv",
+                    "Lásd a leírást!"
+                ],
+                [
+                    "Időtartam",
+                    "1 óra/szint"
+                ],
+                [
+                    "Mágiaellenállás",
+                    "Asztrális"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A boszorkányok ezzel a varázslattal, ha birtokukban van a keresett személlyel szimpatikus viszonyban álló tárgy (lásd még a Szimpatikus mágia c. fejezetet a 389. oldalon!), megtudhatják az illető pontos tartózkodási helyét. Mérföldnyi pontossággal kideríthetik a célpont távolságát, továbbá a felé vezető irányt. A sikeres alkalmazáshoz az áldozatnak el kell"
+        }
+    ]
+}

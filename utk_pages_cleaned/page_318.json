@@ -1,0 +1,120 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": false,
+    "section_title": "",
+    "content_blocks": [
+        {
+            "type": "paragraph",
+            "text": "(ha mindkét próbát elvétette, akkor a kettő összegét szenvedi el sebzésként). Az energia komoly sebzést ritkán okoz, darabonként mindössze 1 Sp-t – ami annyit tesz, hogy vastagabb ruházat, vértezet esetén semmilyen sebzés nincs."
+        },
+        {
+            "type": "rule",
+            "title": "Villámvarázs (formázás)",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "Mana pont: 2/E Hatótáv: 20 ynevi láb Időtartam: PillanatA boszorkánymester a varázslattal a kezében villódzó Manát energianyalábbá sűríti, és bal kezének mutatóujjából ellenfele felé lövi. A sercegő mágikus lövedék a szívdobbanás törtrésze alatt átszeli a köztük lévő távolságot, ám a boszorkánymesternek a villámmal céloznia kell, s célpontjának csak akkor okozhat sebet, ha el is találja."
+        },
+        {
+            "type": "paragraph",
+            "text": "Ehhez sikeres Céldobást kell tennie, ahol saját CÉ-jéhez hozzáadhatja a villám 20-as CÉ-jét. A villámmal csak egyenes vonalban, maximum 20 ynevi láb távolságig lehet ellőni a célzásnál leírt megkötésekkel, ezen a távolságon túl a villám egyszerűen elenyészik."
+        },
+        {
+            "type": "paragraph",
+            "text": "Az energianyaláb értelemszerűen nem lehet fegyverrel hárítani, mint ahogy nem érvényesül ellenük a pajzsok nyújtotta Védőérték sem (hiszen a pajzsba vagy fegyverbe csapódva ugyanúgy megégeti a pajzsot tartó kart)."
+        },
+        {
+            "type": "paragraph",
+            "text": "A villámok pörkös szélű, fájdalmas égési sebeket okoznak; a ruha, a bőr a találat helyén elszenesedik, az izmok gyakran huzamosabb időre lebénulnak."
+        },
+        {
+            "type": "paragraph",
+            "text": "A boszorkánymester villámaihoz bizonyos varázserő befektetését cserébe különböző tulajdonságokat rendelhet (lásd lentebb). Ilyenkor a varázslat Mana pont igényéhez hozzá kell adnia a tulajdonság MP költségét is, de csak egyetlen egyszer (tehát nem N-ként). Egyetlen Villámvarázs több tulajdonsággal is felruházható, ilyenkor a tulajdonságok MP értéke összeadódik."
+        },
+        {
+            "type": "rule",
+            "title": "Visszaverődő villám (felruházás)",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "Mana pont: +3A villámnyaláb, amit ezzel a tulajdonsággal ruháztak fel a kőfelületről, fáról, üvegről – és egyéb szilárd anyagokról – visszaverődik, azokban semmilyen kárt nem tesz. Irányát megváltoztatva eltalálhatja a takarásban rejtőző célpontot. Az efféle – visszaverődésre alapozó – célzás visszaverődésenként 10-zel csökkenti a célzás pontosságát. Ha a visszaverésre kiszemelt felület tükör, a CÉ nem változik."
+        },
+        {
+            "type": "paragraph",
+            "text": "Figyelem! A visszaverődés révén a célpont távolsága nő – ez a célzásnál szerepet kap, viszont a varázslat hatótávolsága nem csökken, mert az nem a villám által megtett utat jelenti, hanem a boszorkánymester körüli 20 ynevi láb sugarú kört."
+        },
+        {
+            "type": "rule",
+            "title": "Villámlánc (felruházás)",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "Mana pont: +15A villámlánccal több ellenfél is támadható, azonban mindegyiküknek 20 ynevi láb sugarú körön belül kell tartózkodniuk. A boszorkánymester célba veszi az első áldozatot; ha eltalálja, a villám a szokásos módon sebez. Ezután a boszorkánymester kijelölheti a következő célpontot; a villám az ő irányában folytatja az útját – ám CÉ-je 10-zel csökken. Új Céldobást kell dobni, a következő célpontra. Ha ez is célba talál, újból sebez és CÉ-je újabb 10-zel kevesebb lesz. Ez így folytatódik addig, míg a villám egyszer célt nem téveszt, vagy míg a boszorkánymester nem szünteti a varázslatot. A varázslat tetszőleges számú ellenféllel szemben alkalmazható."
+        },
+        {
+            "type": "rule",
+            "title": "Villámpenge (formázás)",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "Mana pont: 2/E Hatótáv: Érintés Időtartam: 1 kör/szintA varázslattal a boszorkánymester nyers energiával övezhet egy tetszés szerinti egy-, vagy kétkezes tőrt, vagy kardot, amit bal kezének mutatóujjával érint. A kékes derengés körbefonja a pengét, s ha élő húsba mar, a belefoglalt energiák borzalmas roncsolást visznek végbe az élő szöveten. A fegyver eredeti sebzésén túl megégeti mindazokat, akiken a fegyver sebet ejt. A kardot nemcsak a mágia létrehozza, hanem bárki megfoghatja, ha ügyel arra, hogy ne érintse a villódzó pengét. Ha ezt elmulasztaná megtenni, maga is sebződik. Ez alól csupán a varázslatot létrehozó boszorkánymester mentesül."
+        },
+        {
+            "type": "paragraph",
+            "text": "A mágiával felruházott karddal a továbbiakban is harcolni szükséges. KÉ-je, TÉ-je, VÉ-je nem változik; sebzéséhez a kard eredeti sebzésén túl az energia sebzése járul, ami annyiszor 1k10 Sp, amennyi a korábban megidézett villám Erőssége. Túlütés esetén azonban a villám továbbra is csak Fp-t sebez, s csupán a fegyver sebzése vonódik le az áldozat ÉP-jéből (természetesen ha az Fp-k elfogynak, immár a villám is Ép-sebet okoz, illetve érvényes a kötelező Ép-vesztés szabálya.)"
+        },
+        {
+            "type": "paragraph",
+            "text": "A Villámpenge a boszorkánymester tapasztalati szintjével megegyező körig marad fenn, aztán semmivé lesz, s a fegyver ismét közönséges pengévé változik."
+        },
+        {
+            "type": "rule",
+            "title": "Villámvért (formázás)",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "Mana pont: 1/E vagy 3/E Hatótáv: Érintés Időtartam: 1 kör/szintA varázslat során nyers Manából formált, kéken villódzó aurát hoz létre a boszorkánymester – illetve azon személy körül, akit a boszorkánymester megérint. A villámvért kétféleképpen alkalmazhatja boszorkánymester. Az első változat csupán +1 Mana pontba kerül minden egyes erősítés után, s ilyenkor a villámból szőtt aura csak a célpont testét fonja körül, felszerelését és kézben tartott fegyverét nem."
+        },
+        {
+            "type": "paragraph",
+            "text": "A második változat költségesebb ugyan, ám ilyenkor az alany felszerelése, sőt fegyvere is a villámvért „védelmét” élvezi. Így a boszorkánymester a varázslattal támadhat is. Akik a villámok útját keresztezik, vagy akiket az így felvértezett személy megérint, sebzést szenvednek el. Annyiszor 1k10 Sp-t, amennyi a Villámidézés Erőssége. Ugyanez történik azzal, aki kézifegyverrel sikeres támadást hajt végre ellene, ilyenkor ugyanis a vért végigkúszik a támadó pengéjén, és a fegyvert tartó kézbe mar."
+        },
+        {
+            "type": "paragraph",
+            "text": "A villámvért a boszorkánymester tapasztalati szintjével megegyező körig marad fenn, aztán elenyészik."
+        },
+        {
+            "type": "rule",
+            "title": "Villámbörtön (formázás)",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "Mana pont: 4/E Hatótáv: 10 láb Időtartam: 1 óra/szintA varázslat segítségével a boszorkánymester nyers energiájából való erőtérketrecbe zárhat egy emberi méretű, vagy kisebb teremtményt. A ketrec kör alakú, sugara 1 ynevi láb,"
+        }
+    ]
+}

@@ -1,0 +1,131 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": true,
+    "section_title": "Mentálmágia",
+    "content_blocks": [
+        {
+            "type": "paragraph",
+            "text": "Semlegesség/Elvakultság (Közömbösség)"
+        },
+        {
+            "type": "rule",
+            "title": "Rendszerszabály",
+            "headers": [
+                "Mana pont",
+                "Időtartam",
+                "Varázslás ideje"
+            ],
+            "rows": [
+                [
+                    "1/E",
+                    "6 kör (1 perc)",
+                    "3 szegmens"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A varázslat az Asztrálmágia legalapvetőbb eszköze; az eddig bemutatott mozaikoknál általánosabb hatást eredményez. Semlegesség esetén az áldozat összes létező érzelme semlegessé válik a megadott cél iránt. Akár szerette, akár gyűlölte, akár vágyott utána, akár undorodott tőle, akár hű volt hozzá, akár hűtlen, mindez a varázslat időtartamára értelmét veszti. Az áldozat az adott személy (személyek vagy eszme) iránt minden szempontból közömbös lesz. Elvakultság esetén éppen fordítva történik. A varázsló által meghatározott cél iránt minden más létező érzelme az elvakultságig fokozódik (de iránya nem változik!). Ha eddig csak kicsit szerette, a varázslat időtartama alatt tiszta szívből fogja imádni, ha nem igazán kedvelte, vak gyűlölet lesz rajta úrrá. Az időtartam lejártával természetesen az eredeti érzelmek minden esetben visszatérnek."
+        },
+        {
+            "type": "paragraph",
+            "text": "Mindenképpen szót kell még ejtenünk a Semlegesség gyakran alkalmazott általános formájáról, a Közömbösségről. Ez esetben a varázsló a mindent mint fogalmat határozza meg a Semlegesség céljául, miáltal az áldozat minden iránt közömbössé válik. Gyakorlatilag megszűnik minden érzelme és indulata, úgy is fogalmazhatnánk, alszik az Asztrálteste. Ilyenkor kizárólag a Mentálja irányítja, azaz döntéseiben csak az önérdek, a tiszta logika fog megnyilvánulni, érzelmek, indulatok nem. Cselekedeteit nem befolyásolja sem szeretet, sem bosszúvágy, legjobb barátait, kalandozótársait – akik iránt most semmit sem érez! – is feladja, vagy megöli saját boldogulása érdekében."
+        },
+        {
+            "type": "paragraph",
+            "text": "A Közömbösségnek a Lélekalkatiak jut jelentős szerep, hiszen tudatközpont-bénítással együtt alkalmazva gyakorlatilag elaltatja a lelket."
+        },
+        {
+            "type": "flavor_text",
+            "text": "paszkodóként a reánk zúduló emlékek, késztetések, tudatfoszlányok végtelen árjában... ...A tudat befolyásolásának azonban elengedhetetlen követelménye magának az elmének beható ismerete. Nem elég csupán koncentrálnunk a kívánt hatásra, alá kell ereszkedni egy másik tudat beláthatatlan mélységeibe, utat találni a testet befolyásoló gócpontokhoz, legyűrni az ellenszegülő akaratot, s ami a legfontosabb: megőriznünk eközben saját lényegünk, énünk, személyiségünk zárványát, hogy biztosan visszataláljunk a magunk után húzott fonalon, s ne rekedjünk egy idegen tudat börtönében."
+        },
+        {
+            "type": "paragraph",
+            "text": "Az idézet minden idők egyik legtisztultabb gondolkodójának, Sonornak, a pyarroni Fehér Páholy nagymesterének könyvéből, a Mentalizmusból származik."
+        },
+        {
+            "type": "paragraph",
+            "text": "...A Mentálmágia a Lélekre ható mágiák legerősebb, legkifinomultabb formája. A Tudat legfelső régiójára, magára az intellektusra, a Mentálra gyakorol hatást. Ez a hatás vagy magához ragadja a Mentáltest feletti uralmat, vagy magát a Mentált befolyásolja..."
+        },
+        {
+            "type": "paragraph",
+            "text": "...A Mentalista megnyitja tudatát a másik elme felé, s eltépethetetlen szállal kapcsolja össze a két akaratot. Ezen szál szolgál csatornául az áramló gondolatoknak, kapuként és kulcsként az akarat birodalmába, ugyanakkor egyetlen ka-"
+        },
+        {
+            "type": "paragraph",
+            "text": "A Mentálmágia segítségével vagy átvesszük a Tudattól a test és az ahhoz kapcsolódó Mentális Központok irányítását, vagy magát a Tudatot befolyásoljuk, elhitetve a varázslat alanyával, hogy valójában azt akarja tenni, amit a varázsló sugall."
+        },
+        {
+            "type": "paragraph",
+            "text": "Ha az áldozat egyszerre több, ellentétes célú Mentáloperáció hatása alatt áll, akkor ezek közül az fog érvényesülni, amelyiknek nagyobb az erősítése (E). A Kábítástípusú operációk – értelemszerűen – lehetetlenné teszik, vagy legalábbis megnehezítik az írást, a Bénítástípusúak pedig – mivel megszüntetik a központ működését – kizárják azt."
+        },
+        {
+            "type": "paragraph",
+            "text": "Mentálmágiát a varázsló csak arra alkalmazhat, aki Zónáján belül tartózkodik (lásd még Zóna Varázslás; Térmágia, Távolbahatás; Szimpátia!). A varázslat létrejöttével az áldozat már kívül kerülhet a Zónán, a varázslat hatása továbbra is érvényesül."
+        },
+        {
+            "type": "paragraph",
+            "text": "Ahhoz, hogy a karakter képes legyen alkalmazni a Mentálmágiát, tisztában kell lennie a tudat működésének alapvető szabályaival, ezért szükséges a Lélektan képzettség legalább 3. fokú ismerete."
+        },
+        {
+            "type": "paragraph",
+            "text": "Mentálfonál"
+        },
+        {
+            "type": "paragraph",
+            "text": "I. Írás vagy Olvasás típusú Mentáloperáció során a varázsló folyamatos kapcsolatban marad áldozatával. A kapcsolat nem az Anyagi-, hanem a Mentálfonálon jön létre, és a mágia tudománya Mentálfonálnak nevezi. Írás esetén a sorozatos változtatások ezen jutnak el a varázslótól az áldozatig. Olvasás esetén ezen áramlanak az információk az áldozattól a varázslóig. Ha a Mentálfonál elszakad, a varázsló sem írni, sem olvasni nem képes tovább az áldozat központját."
+        },
+        {
+            "type": "paragraph",
+            "text": "II. A Mentálfonál csak a következő módon szakítható meg: az érintett Központ azonos, netán nagyobb Erősségű"
+        },
+        {
+            "type": "table",
+            "headers": [
+                "Központok",
+                "Olvasás (30 kör)",
+                "Kábítás (6 kör)",
+                "Írás (3 kör)",
+                "Bénítás (1 kör)"
+            ],
+            "rows": [
+                [
+                    "Beszéd",
+                    "Megértés\nMp: 1 • E: 4",
+                    "Dadogás\nMp: 1 • E: 3",
+                    "Beszéltetés\nMp: 1 • E: 2",
+                    "Némaság\nMp: 1 • E: 1"
+                ],
+                [
+                    "Érzék",
+                    "Érzékelés\nMp: 1 • E: 4",
+                    "Tompítás\nMp: 1 • E: 3",
+                    "Illúzió\nMp: 1 • E: 2",
+                    "Érzéketlenség\nMp: 1 • E: 1"
+                ],
+                [
+                    "Emlék",
+                    "Emlékolvasás\nMp: 2 • E: 4",
+                    "Amnézia\nMp: 2 • E: 3",
+                    "Felelés\nMp: 2 • E: 2",
+                    "Teljes Amnezia\nMp: 2 • E: 1"
+                ],
+                [
+                    "Mozgás",
+                    "Követés\nMp: 2 • E: 4",
+                    "Kábaság\nMp: 2 • E: 3",
+                    "Irányítás\nMp: 2 • E: 2",
+                    "Bénultság\nMp: 2 • E: 1"
+                ],
+                [
+                    "Akarat",
+                    "Gondolatolvasás\nMp: 3 • E: 4",
+                    "Zavarodottság\nMp: 3 • E: 3",
+                    "Akaratátvitel\nMp: 3 • E: 2",
+                    "Tudattalanság\nMp: 3 • E: 1"
+                ]
+            ]
+        }
+    ]
+}

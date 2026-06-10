@@ -1,0 +1,289 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": false,
+    "section_title": "",
+    "content_blocks": [
+        {
+            "type": "rule",
+            "title": "Tanulás",
+            "rows": [
+                [
+                    "Mana pont",
+                    "4"
+                ],
+                [
+                    "Varázslás ideje",
+                    "Lásd a leírást!"
+                ],
+                [
+                    "Hatótáv",
+                    "Hallótáv"
+                ],
+                [
+                    "Időtartam",
+                    "Végleges"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A bárd ezzel a varázslattal bármilyen verset vagy dalt, melyet hall, első alkalommal megtanulhat. Így nem kell több órán át gyakorolnia, akár azonnal előadhatja. A varázslatot a dal hallgatása közben kell megidézni, s az időtartam a próza, vers vagy dal előadásának idejével egyezik meg."
+        },
+        {
+            "type": "rule",
+            "title": "Tanulmány",
+            "rows": [
+                [
+                    "Mana pont",
+                    "2"
+                ],
+                [
+                    "Varázslás ideje",
+                    "3 perc"
+                ],
+                [
+                    "Hatótáv",
+                    "20 ynevi láb"
+                ],
+                [
+                    "Időtartam",
+                    "Végleges"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A bárd ezzel a varázslattal elméjébe vésheti a tanulmányozott lény, személy alakját, mozgását, viselkedésének alapjait. Ennek segítségével a Lényalkotás varázslat hatékonyabban alkalmazható. A bárd ezzel a varázslattal és a Lényalkotással konkrét személyt vagy állatot is utánozhat."
+        },
+        {
+            "type": "rule",
+            "title": "Hangtanulmány",
+            "rows": [
+                [
+                    "Mana pont",
+                    "2"
+                ],
+                [
+                    "Varázslás ideje",
+                    "lásd a leírást!"
+                ],
+                [
+                    "Hatótáv",
+                    "20 ynevi láb"
+                ],
+                [
+                    "Időtartam",
+                    "Végleges"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "Szinte mindenben hasonlít a Tanulmány nevű varázslathoz. Általa a tanulmányozott lény, tárgyak vagy természeti jelenségek hangja lesz újra meg újra felhasználható. A varázslat segítségével utánozható lesz a hangerősség, magasság és hanghordozás is, a stílus azonban nem. Ezt a bárdnak meg kell tanulnia, el kell lesnie, minden misztikum nélkül. A varázslat addig tart, míg elegendő információ birtokába nem jut a bárd az adott hangokkal kapcsolatban; a varázslat hosszának meghatározása a KM feladata."
+        },
+        {
+            "type": "rule",
+            "title": "Rohano idő",
+            "rows": [
+                [
+                    "Mana pont",
+                    "30"
+                ],
+                [
+                    "Varázslás ideje",
+                    "1 kör"
+                ],
+                [
+                    "Hatótáv",
+                    "20 ynevi láb"
+                ],
+                [
+                    "Időtartam",
+                    "perc/szint"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A varázslat egyszerre hat a hang- és a látványillúziók területén. A bárd ennek segítségével ellenfelei számára látszólagosan felgyorsíthatja az idő múlását, legalábbis környezetükben. Az illúzió lényege, hogy az áldozatok környezetében minden a felgyorsult idő szerint reagál. Például, ha az ellenfél egy erdei úton áll, akkor a növények szemmel látható sebességgel növekedni kezdenek, az állatok szinte követhetetlen gyorsasággal mozognak, a nap sebességgel halad pályáján. Ha barlangban, földalatti folyosón jár láthatja, ahogy a por lerakódik a padlón, pókhálók terjeszkednek a sarokban. A múló idő persze csak illúzió, de hang és kép is tartozik hozzá. A történések sebességét a bárd választhatja meg, de legfeljebb százszorosra gyorsíthatja az idő folyását. A varázslat ideje alatt az áldozatok csupán az illúziót látják, s a normál tér hangjai is csak gyengén jutnak el hozzájuk. Azonban, ha valamelyik célpont elhagyja a kijelölt területet, akkor a varázslat lefoszlik róla."
+        },
+        {
+            "type": "rule",
+            "title": "Figyelemelterelés",
+            "rows": [
+                [
+                    "Mana pont",
+                    "2"
+                ],
+                [
+                    "Varázslás ideje",
+                    "1 szegmens"
+                ],
+                [
+                    "Hatótáv",
+                    "5 ynevi láb"
+                ],
+                [
+                    "Időtartam",
+                    "1 szegmens"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A varázslat arra szolgál, hogy egy pillanatra elvonja a jelenlévők figyelmét a bárdról. Ennek számtalan módja lehetséges. A megkötés csupán annyi, hogy sem a hang-, sem a látványillúzió nem lehet hosszabb egy szegmensnél. A hatást a bárd választja ki: például egy ork figyelmét elterelhetjük egy felröppenő, rikoltó madárral stb. A lehetőségek száma végtelen."
+        },
+        {
+            "type": "rule",
+            "title": "Hipnózis",
+            "rows": [
+                [
+                    "Mana pont",
+                    "3/E"
+                ],
+                [
+                    "Varázslás ideje",
+                    "1 perc"
+                ],
+                [
+                    "Hatótáv",
+                    "5 ynevi láb"
+                ],
+                [
+                    "Időtartam",
+                    "perc/szint"
+                ],
+                [
+                    "Mágiaellenállás",
+                    "Asztrális"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A varázslat segítségével a bárd egy ezüstösen ragyogó fénygömböcskét teremthet, mely lassan imbolyogva mozog az áldozat szeme előtt. A fény hatása álomba, vagy hipnotikus állapotba ringathatja célpontját, a bárd óhaja szerint. Ha az áldozat elveti Mágiaellenállását, akkor álomba merül, vagy félig öntudatlan állapotba kerül. Ha elalszik, akkor csak két óra elteltével lehet felébreszteni, addig szinte reménytelen; csakis SP-t sebet okozó sérülés esetén ébred fel, vagy mágia segítségével ébreszthető fel. Ha hipnotikus állapotba került, akkor a bárd utasításokat adhat neki, melyeket teljesítenie kell. Az utasítások száma csakis a végrehajtásukhoz szükséges idő hosszától és a varázslat időtartamától függ. A parancs nem lehet olyan, mely öngyilkosságra sarkallja a célpontot, ilyen utasítás kiadása esetén azonnal szétfoszlik a varázslat."
+        },
+        {
+            "type": "section_title",
+            "title": "Dalmágia"
+        },
+        {
+            "type": "table",
+            "headers": [
+                "Varázslat",
+                "Mana-pont",
+                "Varázslás ideje",
+                "Hatótáv",
+                "Időtartam",
+                "Mágiaellenállás"
+            ],
+            "rows": [
+                [
+                    "Álom dala",
+                    "2/E",
+                    "1 perc",
+                    "Hallótávolság",
+                    "Lásd a leírást!",
+                    "Mentális"
+                ],
+                [
+                    "Bájolás dala",
+                    "1/E",
+                    "1 perc",
+                    "Hallótávolság",
+                    "1 óra",
+                    "Asztrális"
+                ],
+                [
+                    "Bátorság dala",
+                    "1/2 E",
+                    "1 perc",
+                    "Hallótávolság",
+                    "A dal hossza + 10 perc",
+                    "Asztrális"
+                ],
+                [
+                    "Bénítás dala",
+                    "3/E",
+                    "2 kör",
+                    "Hallótávolság",
+                    "A dal hossza + 1k6 kör",
+                    "Mentális"
+                ],
+                [
+                    "Dalegyesítés",
+                    "+5",
+                    "Lásd a leírást!",
+                    "Hallótávolság",
+                    "A dal hossza",
+                    "—"
+                ],
+                [
+                    "Ellentétek dala",
+                    "4/E",
+                    "1 perc",
+                    "Hallótávolság",
+                    "1k6 óra",
+                    "Asztrális"
+                ],
+                [
+                    "Emlékek dala",
+                    "2/E",
+                    "3 perc",
+                    "Hallótávolság",
+                    "Végleges",
+                    "Mentális"
+                ],
+                [
+                    "Felelés dala",
+                    "2/E",
+                    "3 perc",
+                    "Hallótávolság",
+                    "Végleges",
+                    "Mentális"
+                ],
+                [
+                    "Félelem dala",
+                    "2/E",
+                    "1 kör",
+                    "Hallótávolság",
+                    "A dal hossza + 1k6 kör",
+                    "Asztrális"
+                ],
+                [
+                    "Gyógyítás dala",
+                    "6/E",
+                    "1 óra",
+                    "Hallótávolság",
+                    "Végleges",
+                    "—"
+                ],
+                [
+                    "Nyugalom dala",
+                    "1/E",
+                    "1 perc",
+                    "Hallótávolság",
+                    "A dal hossza + 1k6 kör",
+                    "Asztrális"
+                ],
+                [
+                    "Távolaság dala",
+                    "Lásd a leírást!",
+                    "1 szegmens",
+                    "Hallótávolság",
+                    "A dal hossza",
+                    "—"
+                ],
+                [
+                    "Zavarodottság dala",
+                    "3/E",
+                    "1 perc",
+                    "Hallótávolság",
+                    "A dal hossza + 1k6 kör",
+                    "Mentális"
+                ]
+            ]
+        }
+    ]
+}

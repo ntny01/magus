@@ -1,0 +1,155 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": false,
+    "section_title": "",
+    "content_blocks": [
+        {
+            "type": "paragraph",
+            "text": "kedő nép él. Teszik a dolgukat, legyen bár háborúról vagy mezei munkáról. Nem tulajdonítanak jelentőséget a gazdagságnak – meglehet azért, mert az igazi nyomor emlékét is rég elfeledték. Bőrés hajszínük világosabb, vérük nehezebben forr fel, mint északi testvéreiké. Biztos támaszai a koronának és az egyháznak, nagy és szép szavak helyett inkább hősi tettekkel, kitartással és erényességgel hívják fel magukra a figyelmet. E vidék súlyos léptű, kése üstökű férfinépe alkotja a shadoni sereg gyalogos és lovas derékhadát."
+        },
+        {
+            "type": "paragraph",
+            "text": "A déli Felföld mostohább körülményekhez szokott lakói sem a kalmárok stílusérzékével, sem a koronabirtokokon élők mértékletességével nem dicsekedhetnek, kitartásukról, büszkeségükről és erejükről ellenben csodákat mesélnek. Különös istent imádnak, csak a maguk törvényeinek, alább az alábbiakban kiderül majd, milyen jó okuk van rá."
+        },
+        {
+            "type": "paragraph",
+            "text": "A kultúrájukat behatóan ismerők ajkán született a mondás: „Egy shadoninál egy felföldi lehet csupán igazabb barát!” Színigaz. Csak meg kell érni valahogy azt a bizonyos pillanatot..."
+        },
+        {
+            "type": "paragraph",
+            "text": "Öltözködési szokások: A divat vidékenként, sőt tartományonként változó: általános érvényű megállapítások nem tehetők. Egy rőf selyem ára az aranyéval vetekszik, a posztó, a vászon azonban majd mindenki számára elérhető. Állatbőrt csak a déli Felföld kétséges ízlésű lakói használnak ruházkodásra – a nemesi hölgyek beérik az yllinoriból behozott drága prémekkel."
+        },
+        {
+            "type": "paragraph",
+            "text": "A nemesek és a közrendű szabadok fegyverviselésre jogosultak, de a jobbágyok is hordhatnak magukkal lándzsát, kést, rövid kardot, amennyiben helyzetük megkívánja, s hűbéruruk, vagy annak képviselője – a birtokos – engedélyt ad rá."
+        },
+        {
+            "type": "paragraph",
+            "text": "Árak: Shadon a P.sz. XII. század óta gyakorlatilag önellátó. Csak luxuscikkeket importál – ezek méregdrágák –, míg a kereskedők sokféle árut hordanak innét a kontinens minden tájára. Messze földön híres kenyérgabona, fekete szőlője és bora; az északi partokon az olíva is megterem – a bogyóiból sajtolt olaj, ahogyan az igazi ínyencek állítják, különb az abasziszínál."
+        },
+        {
+            "type": "paragraph",
+            "text": "Iskolák: Shadonban Domvik-paplovagnak, papnak, harcos lovagnak, harcosnak tanulhat a Játékos Karakter."
+        },
+        {
+            "type": "paragraph",
+            "text": "Közbiztonság: Jó."
+        },
+        {
+            "type": "paragraph",
+            "text": "Vallás: Domvik hite az államilag bevett vallás, Shadonban még jövevények sem imádhatnak nyíltan más istent. A Pyarroni Paktum rendelkezései természetesen ehelyütt is érvényesek. A mágia gyakorlása tilos – noha a papok többségükben szintén varázstudók, akik, szellemileg megtisztultak lévén, beavatást nyertek a legnagyobb misztériumokba –, a fekete mágia használóit halállal sújtják. Érdekes tény, hogy Domvikhoz csak papok és szerzetesek fohászkodnak; az egyszerű paraszt és polgár számára e szakrális forma túlságosan emelkedett. A köznép inkább angyalaihoz, védszellemeihez imádkozik, akik egyébként az Egyetlen különféle megjelenési formáival azonosak."
+        },
+        {
+            "type": "section_title",
+            "text": "Tartományok"
+        },
+        {
+            "type": "table",
+            "headers": [
+                "Tartomány",
+                "Leírás",
+                "Főváros"
+            ],
+            "rows": [
+                [
+                    "Irganna-ronna",
+                    "Kígyóföld",
+                    "Shadlek"
+                ],
+                [
+                    "Ronella",
+                    "Tengerkapu",
+                    "Ronna-gella (Felföld)"
+                ],
+                [
+                    "Corma-dina",
+                    "Szigetköze",
+                    "Cormasa"
+                ],
+                [
+                    "Shadon Ronna-dina",
+                    "Belföld",
+                    ""
+                ]
+            ]
+        },
+        {
+            "type": "section_title",
+            "text": "Nagyvárosok"
+        },
+        {
+            "type": "table",
+            "headers": [
+                "Nagyváros",
+                "Leírás"
+            ],
+            "rows": [
+                [
+                    "Shadon",
+                    ""
+                ],
+                [
+                    "Shadlek",
+                    ""
+                ],
+                [
+                    "Berrana-roda",
+                    "Tengerkapu"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A tartományok élén helytartók állnak. Őket a király jelöli ki, de gyakorlatilag a helyi nemesek választják maguk fölé."
+        },
+        {
+            "type": "paragraph",
+            "text": "Némelyik helytartónak saját titulusa is van – lásd Felföld: fejedelem. A helytartó adományozza a tartományi nemesi címeket. A vitatott adók behajtását minden esetben a birodalmi hadsereg végzi."
+        },
+        {
+            "type": "section_title",
+            "text": "Shadon városa"
+        },
+        {
+            "type": "paragraph",
+            "text": "A központi tartomány a Shadlek-folyó partján, az azonos nevű város körül terül el. Valaha, a birodalom felvirágzása előtt itt ütöttek fel táborukat a kóborló lovagok. A M.A.G.U.S. jelenének Shadonja élettől pezsgő, bűnben, kéjben és imákban tobzódó, százezres nagyváros, királyi székhely, a birodalom dicsőségének és erejének szimbóluma."
+        },
+        {
+            "type": "section_title",
+            "text": "Shadlek"
+        },
+        {
+            "type": "paragraph",
+            "text": "Igrain Reval szerint a legfelvilágosultabb shadoni város mind közül. A mester, némi malíciával, ekképp fogalmaz: „Az utcákat járó rangosak nem hordanak páncélt, sok ellenben a papír, s még több a térdnadrág...”"
+        },
+        {
+            "type": "paragraph",
+            "text": "A szabadságságáról hirdetett település az Egyetlen imádatában a sor végén kullog. Aligha véletlen, hogy épp innét indult ki a Gorvikot megalapító pap, Amanovik renegát mozgalma. Bujkálnak errefelé boszorkányok, de még ranagoliták is; itt találkozott Mogorva Chei, Yllinor jelenlegi királya az gonosszal – ámbár ez régi história... Mégis, nagy a rémület, valahányszor a korona elhatározza, hogy ezúttal – kerül amibe kerül – rendet teremt odalent."
+        },
+        {
+            "type": "paragraph",
+            "text": "Nem fontos, de érdekes: Shadlek kétes hírét egy különös formájú fegyver, a városról – netán a tartományról – elnevezett csatabuzogány öregbíti a gyilkos szerszámok kedvelőinek széles táborában. E kies zug egyébiránt Shadon városától, a központi tartománytól délre, a Gon-Shadlek felső folyásánál vár minden óvatlan utazót."
+        },
+        {
+            "type": "paragraph",
+            "text": "Corma-dina szigetegyüttes a keleti part közelében meglehetősen autonóm, mert az év nagy részében a környező vizek hajózhatatlanok. Lakossága bárdolatlan – gyanítható, túlsúlyba került itt az értékes shadonit megrohanó barbár vér..."
+        },
+        {
+            "type": "paragraph",
+            "text": "Ronella a legészakibb tartomány a Gályák Tengerének partján. Közel van Gorvikhoz, hajói folytonos harcban állnak az „elvetemült szomszéd” flottájával és kalózaival. Páncélkovácsai, fegyvercsiszárai párjukat ritkítják, a város mégis elsősorban kereskedelemből tartja fenn magát. Suttogják, egyes kalmárainak ereiben olívaolaj, asszonyaikéban aszúbor – vagy épp ecet csörgedezik..."
+        },
+        {
+            "type": "paragraph",
+            "text": "A Felföld kemény dió a birodalmi közigazgatás, a történészek (és a Játékos Karakterek) számára egyaránt. Íme: A központi hatalom a helytartó-fejedelem kezében van, ám ő, shadoni viszonyok közt méltatlan módon, nem áll a helyzet magaslatán. Akaratos kisirályok, engedetlen nemesek, rablólovagok tartománya ez. Gyakori belviszályok, forrongások dúlják. Háttérben legtöbbször a bevett feleségszerzési forma: a nőrablás áll. A rablólovagok körében gyakori a többnejűség és a rabszolgatartás."
+        },
+        {
+            "type": "paragraph",
+            "text": "Fejlett állattenyésztő kultúra, elsődlegesen juhtartásra rendezkedett be. Területén kiaknázatlan vasfaés érclelőhelyek rejtőznek. Kereskedelme elhanyagolható, az uradalmak nagyrészt önellátók."
+        },
+        {
+            "type": "paragraph",
+            "text": "A Felföld népe mélyen vallásos, babonás nép. Előfordul itt a szelídebb, shadoni Domvik-hit, nemkülönben régi godoni, a legelterjedtebb azonban Domvik és a godoni isten, Javea alakjából összekovácsolt, kizárólag a Felföldön imádott istenség, Jedome. Papjai és rendjei szoros kapcsolatban állnak a birodalmi egyházzal, elfogadják azt felettük állóként, és Jedomét Domvikkal azonossítják. Ennek ellenére szertartásaik jelentősen különböznek a birodalmi előírásoktól, és bevett szokás a máshol szigorúan tiltott áldozat."
+        }
+    ]
+}

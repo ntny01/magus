@@ -1,0 +1,190 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": false,
+    "section_title": "",
+    "content_blocks": [
+        {
+            "type": "rule",
+            "text": "3. fok A képzettség ezen fokú birtokosa igazi fegyverszakértő. Magabiztosan ítél minden kultúrája alkotta fegyverről, a jelesebb mesterek műveit könnyedén spontán esetleg elkészítheti és gazdáik történetét is tud pár adatot. Az ab-bitból, lunírból, mithrillből kovácsolt pengéket és fegyvereket is csak ezen a szinten azonosíthatja a karakter, mert az alacsonyabb fokú alkalmazó csak olajban edzett, vagy ezüsttel futtatott darabokat vél felfedezni.",
+            "title": "Fegyverismeret 3. fok",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "Ahhoz, hogy fegyverzete alapján valaki származását beazonosítsa a karakternek szintén ezen fok ismerete szükséges.",
+            "title": "Fegyverismeret szabály",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "4. fok A karakter már a mágiával átitatott pengéket is nagy valószínűséggel azonosítja kiegyensúlyozásuk, megjelenésük alapján. Az összes kortárs ynevi faj fegyvereiről a 3. foknál leírtak szerint képes nyilatkozni. Az ősfajok – aquirok, amundok, óelfek, stb. – fegyverei viszont még mindig zavarba hozzák.",
+            "title": "Fegyverismeret 4. fok",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "5. fok Ynev legjelesebb szakértői bírnak e tudomány ilyen fokú ismeretével. A karakter már az ősfajok fegyvereiről is a 3. foknál leírtak szerint nyilatkozik, ismeri a hozzájuk fűződő legendákat, illetve ismerheti különleges képességeik titkait is, bár ennek eldöntése a KM joga.",
+            "title": "Fegyverismeret 5. fok",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "section_title",
+            "text": "",
+            "title": "Hadvezetés (III - Intelligencia, Karizma)",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "A Hadvezetés nem a párviadalszerű összecsapások, hanem a csatamezők és háborúk nélkülözhetetlen képzettsége, a tisztek, lovagok és rendszeresen háborúskodó nemesek sajátja. Segítségével csapatokat vezethet, ütközeteket vívhat meg birtokosa, magasabb fokú ismerete esetén pedig (Lélektannal, Térképészettel, Történelemmel, Alakzatharc-cal) alkalmazásával már háborúk levezénylésére, megtervezésére is befoghat. Ez esetben a vezénylendő sereg méretétől és a hadjárat hosszától függően a KM feladata a szükséges képzettségek megállapítása.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "Mindenesetre leszögezendő, a jó hadvezér nem biztos, hogy jó harcos. Ynev történelme számtalan rokkant vagy beteg hősről, legendás alakról bír feljegyzésekkel, kik testi fogyatékosságuk ellenére szárnyaló szellemükkel háborúkat, csatákat nyertek meg.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "Két hadvezér szembekerülésekor a köztük lévő képzettségi fokonként 3 ponttal emelkedik a képzettebb vezető alárendeltjeinek Bátorsága.",
+            "title": "Hadvezetés párbaj szabály",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "1. fok A bölcs ember ezen a szinten még csak ismerkedik a tudomány alapjaival, mások munkásságát tanulmányozza. A kialakuló forgatagban, ha lehetősége van rá, beazonosíthatja az ellenfél főbb erőit, azok elhelyezkedését. Maximálisan 10 ember vezetésére képes.",
+            "title": "Hadvezetés 1. fok",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "2. fok A karakter hivatásos kardforgató, lovag, egyszóval parancsnok. Képes értelmezni felettese utasításait és végrehajtani azok parancsait csapatával. Az alakulat pusztulásával járó parancsok kiadásakor köteles Karizma próbát tenni. Ha ez sikertelen, akkor emberei megtagadják az engedelmességet. Maximálisan 100 ember vezetésére képes.",
+            "title": "Hadvezetés 2. fok",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "3. fok Az ilyen szinten képzett parancsnok már igazi vezér, sok csatát látott. Alárendeltjeinek, ha követik parancsait az éppen végrehajtott hadmozdulattól függően +5 TÉ-t vagy VÉ-t biztosít.",
+            "title": "Hadvezetés 3. fok",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "A fent leírt Karizma próbát +1 módosítóval dobhatja. Maximálisan 1000 ember vezetésére képes.",
+            "title": "Hadvezetés 3. fok (folytatás)",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "Ezen a szinten más képes – ha bír a KM által meghatározott fokon a fent felsorolt képzettségekkel, vagy vannak tanácsadói – kisebb hadjáratok levezetésére a sereg széthullása, utánpótlási problémák nélkül.",
+            "title": "Hadvezetés 3. fok (hadjárat)",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "Ha bír a képzettség leírásánál felsorolt képzettségek 5. fokával, vagy tanácsadói bírnak a követelményekkel, akkor együttműködésük esetén egy +1 módosítóval dobott sikeres Intelligencia próbával egy megtervezett hadjárat sikeréről képes előre nyilatkozni, az összegyűjtött információk fényében.",
+            "title": "Hadvezetés 3. fok (hadjárat előrejelzés)",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "4. fok Az ennyire képzett vezér már ritkaság, országonként egy-kettő, ha akad. Előre kidolgozott haditervei +10 TÉ vagy VÉ módosítót juttatnak csapatainak, ha képes őket kivitelezni. A sereg ellátását bármely területen képes megszervezni, kivitelezni, ha az fizikailag lehetséges – e döntés a KM jogköre.",
+            "title": "Hadvezetés 4. fok",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "A fent leírt Karizma próbát +2 módosítóval dobhatja. Maximálisan 10.000 ember vezetésére képes.",
+            "title": "Hadvezetés 4. fok (folytatás)",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "Ha bír a képzettség leírásánál felsorolt képzettségek 5. fokával, vagy tanácsadói bírnak a követelményekkel, akkor együttműködésük esetén egy +2 módosítóval dobott sikeres Intelligencia próbával egy megtervezett hadjárat sikeréről képes előre nyilatkozni, az összegyűjtött információk fényében.",
+            "title": "Hadvezetés 4. fok (hadjárat előrejelzés)",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "5. fok A karakter stratégiai, taktikai zseni, puszta jelenléte hírneve miatt +5 Bátorság bónuszt ad alárendeltjeinek.",
+            "title": "Hadvezetés 5. fok",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "A fent leírt Karizma próbát +3 módosítóval dobhatja. Az általa vezetett csapatoknak nincs létszám korlátja.",
+            "title": "Hadvezetés 5. fok (folytatás)",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "Ha bír a képzettség leírásánál felsorolt képzettségek 5. fokával, vagy tanácsadói bírnak a követelményekkel, akkor együttműködésük esetén egy +3 módosítóval dobott sikeres Intelligencia próbával egy megtervezett hadjárat sikeréről képes előre nyilatkozni, az összeszedett információk fényében.",
+            "title": "Hadvezetés 5. fok (hadjárat előrejelzés)",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "section_title",
+            "text": "",
+            "title": "Harci láz (II - Állóképesség, Egészség)",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "Igen riasztó vagy magasztos külsőségek között jelentkező harci képzettség, amelyet a történelem folyamán majd minden civilizáció és kultúra felfedezett magának. A módszer lényege, hogy a kellőképp feltüzelt harcos nagyobb lelkesedéssel és lendülettel veti magát a csata forgatagába; vadul lobogó, vagy épp fehéren izzó, csendes gyűlölettel koncentrálva fordítja ellenfelei ellen.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "A képzettség alkalmazása során a karakter valamely monoton ingerre összpontosítva lovallja magát eksztázisba. Ez lehet dobszó, zene vagy akár egy litánia is, amire a karakter kondicionálja magát, majd dühe erejét felhasználva, azzal kitöltve tudatát tör előre, nem foglalkozva saját teste, életösztöne jelzéseivel, csakis az ellenfél elpusztítására koncentrálva. Igaz, teljesen más oldalról és megközelítés alapján, de a képzettség valaha volt leggyakorlottabb alkalmazói közt leginkább az északi barbárok szent tombolóit, illetve Kyria pusztítóit találjuk. Ez utóbbiak és módszerük már-már megközelíti a slanek által létrehozott Sárkány-harcot; csak egyetlen vékony, de áthághatatlan határvonal, a szellemi béke hiánya választja el őket tőle.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "A Harci lázba lovalt karakter felismeri ugyan társait, de csak +2 módosítóval dobott Asztrál próba esetén kíméli őket. A próbát körönként újra dobhatja. A csata végeztével sikeres Asztrálpróba dobás szükségeltetik a révület megszüntetéséhez az alkalmazó részéről szintén +2 módosítóval.",
+            "title": "Harci láz szabályok",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "A féktelen tombolás közepette az alkalmazó nem gondol saját testi épségére, így pajzsát – ha visel is ilyet – nem használja.",
+            "title": "Harci láz pajzs szabály",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "1. fok A Karakter mesterségesen előidézheti a Harc gyűlölettel (KÉ: +5, TÉ: +5, VÉ: -10) helyzetet, megkapva annak módosítóit.",
+            "title": "Harci láz 1. fok",
+            "headers": [],
+            "rows": []
+        }
+    ]
+}

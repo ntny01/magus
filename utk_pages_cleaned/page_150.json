@@ -1,0 +1,305 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": true,
+    "section_title": "Akrobatika (I – Ügyesség)",
+    "content_blocks": [
+        {
+            "type": "paragraph",
+            "text": "A karakter százalékokban kifejezett ugró és egyensúlyozó képessége.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "Minden 5% után a harci képzettséggel bíró karakterek egy pontot adhatnak a VÉ-jükhöz olyan helyzetben, ahol képesek ugrani (pajzzsal vagy mély vízben, szűk helyen nem). A karakter minden százalékpont után 3 ynevi hüvelyknyit súlypontemelkedésre képes, illetve százalékpontonként 10 ynevi hüvelyknyit képes ugrani helyből. Nekifutásból százalékpontonként 10 ynevi hüvelyknyit képes ugrani.",
+            "title": "Akrobatika hatásai",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "A hordozott felszerelés minden 1 ynevi fontja 1%-kal rontja a képzettség alkalmazhatóságát, azaz egy 20 ynevi fontnyi teherrel ugró karakter, akinek Akrobatika képzettsége 60%, már csak 40%-kal dobhatja próbáját.",
+            "title": "Akrobatika - Felszerelés hatása",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "",
+            "title": "Esés (I – Ügyesség)",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "A karakter százalékokban kifejezett képessége a zuhanások tompítására, túlélésére. Sikeres próba esetén a zuhanásból származó, a karaktert érő sebzést 5%-onként 2 ponttal, sikertelen százalékdobás esetén 1 ponttal csökkenti.",
+            "title": "Esés képzettség",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "A hordozott felszerelés minden 1 ynevi fontja 1%-kal rontja a képzettség alkalmazhatóságát, azaz egy 20 ynevi fontnyi teherrel zuhanó karakter, akinek Esés képzettsége 60%, már csak 40%-kal dobhatja próbáját.",
+            "title": "Esés - Felszerelés hatása",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "",
+            "title": "Mászás (I – Erő, Ügyesség)",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "A karakter százalékokban kifejezett képessége magasabb tárgyak, pontok elérésére, meghódítására.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "20% tudásnál még csak egy fával, 40% körül már egy mászható nyolc-tíz lábnyi fallal, 60% százaléknál egy nehezen mászható fallal, 80% körül már egy szédítő várfallal, 100% körül pedig már bármilyen feladattal megbirkózik a mászó, ami fizikailag lehetséges. A hordozott felszerelés minden 1 ynevi fontja 1%-kal rontja a képzettség alkalmazhatóságát, azaz egy 20 ynevi fontnyi teherrel mászó karakter, akinek Mászás képzettsége 60%, már csak 40%-kal dobhatja próbáját.",
+            "title": "Mászás képzettség és felszerelés hatása",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "Az alábbi táblázat megmutatja, hogy egy kör alatt hány ynevi láb távolságot képes a felsorolt körülmények között megtenni a mászó.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "table",
+            "text": "",
+            "title": "Mászás sebessége és módosítói",
+            "headers": [
+                "Felszín",
+                "Ynevi láb/kör",
+                "Próba módosítója"
+            ],
+            "rows": [
+                [
+                    "Csúszós, síkos felület",
+                    "0,1",
+                    "-80 %"
+                ],
+                [
+                    "Teljesen sima felület",
+                    "0,1",
+                    "-50 %"
+                ],
+                [
+                    "Repedezett felület",
+                    "0,5",
+                    "-15 %"
+                ],
+                [
+                    "Durva felület",
+                    "0,5",
+                    "0"
+                ],
+                [
+                    "Kiszögelléses felület",
+                    "0,5",
+                    "+5 %"
+                ],
+                [
+                    "Ferde fal",
+                    "1",
+                    "+15 %"
+                ],
+                [
+                    "Kötél",
+                    "2",
+                    "+40 %"
+                ],
+                [
+                    "Fa",
+                    "3",
+                    "+30 %"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "Mint a táblázatból is látszik, még a legképzettebb mászónak is komoly nehézséget okozhat egy-egy nehezebb akadály leküzdése, ugyanakkor ne felejtsük el, hogy a képzettség nyújtotta százalék az ember természetes alapértékét jelöli, így megfelelő felszerelés használatával a feladat is megkönnyíthető.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "Folyamatosan annyi percen át képes mászni a karakter, amennyi az Állóképessége. Aki mászik, kiszolgáltatott helyzetbe kerül. Ekkor a Harc helyhez kötve szabályai vonatkoznak rá.",
+            "title": "Mászás időtartama és harci helyzet",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "",
+            "title": "Szociális képzettségek",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "",
+            "title": "Ékesszólás (II – Intelligencia, Asztrál, Karizma)",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "Ynev az előző világa, a könyvek igen ritkák és meglehetősen borsos az áruk, a népesség jó része írástudatlan. Ilyen körülmények között nem csak egy fejedelmi udvarbéli pályának, de a nyilvánosság előtti szerepvállalásnak is elengedhetetlen követelménye a jó szónoki képesség.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "",
+            "title": "Ékesszólás: 1. fok",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "Az első fokon képzett karakter egyszerűen jó mesemondó, képes történeteivel lenyűgözni akár egy tucat főnyi hallgatóságát is. Ha korábban a hallgatók semlegesek voltak vele, akkor most egy -1 módosítóval végrehajtott Karizmapróbával a barátaivá teheti őket.",
+            "title": "Ékesszólás 1. fok hatása",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "",
+            "title": "Ékesszólás: 2. fok",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "A már gyakorlott szónok képes hallgatóságát akár tettlegességig is feltüzelni egy sikeres Karizmapróbával, igaz az érzelmek célpontját még nem ő, hanem a tömeg alapirányultsága szabja meg. A tömeg +1 Bátorságot kap. A tömeg egy-kétszáz főnél nem lehet nagyobb.",
+            "title": "Ékesszólás 2. fok hatása",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "",
+            "title": "Ékesszólás: 3. fok",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "A hivatásos szónok képes a tömeg érzelmét új célpontra irányítani, bár ehhez brilliáns szerepjátékra van szükség a játékos részéről. A Karizmapróbát a karakter +1 módosítóval dobja. A hallgatóság háromszáz főnél nem lehet nagyobb.",
+            "title": "Ékesszólás 3. fok hatása",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "",
+            "title": "Ékesszólás: 4. fok",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "A mesterien szónokló karakter képes a tömeget immáron nem csak feltüzelni, de lecsillapítani is. Karizmapróbáját már +2 módosítóval dobja, a képzettség alkalmazásának felső létszámhatára ezer fő.",
+            "title": "Ékesszólás 4. fok hatása",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "",
+            "title": "Ékesszólás: 5. fok",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "A karakter legendás szónokká válik, akár egy népvándorlást megindító szónoklatot vagy nyilvános egyházszakadást elérő előadást is képes prezentálni, ha járatos az adott témákban. Karizmapróbáját +3 módosítóval dobja.",
+            "title": "Ékesszólás 5. fok hatása",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "",
+            "title": "Heraldika (II – Intelligencia)",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "Ynev különféle címereinek, jeleinek, tetoválásainak ismeretét és azok mögött rejlő összefüggésének értelmezését fedi a képzettség.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "",
+            "title": "Heraldika: 1. fok",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "A tudománnyal ismerkedő karakter kultúrkörre fontosabb címereit, zászlójeleit, tetoválásait felismeri, de értelmezésükkel, csak a legegyszerűbbeknél próbálkozhat, ha sikeres Intelligenciapróbát tesz -1 módosítóval.",
+            "title": "Heraldika 1. fok hatása",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "",
+            "title": "Heraldika: 2. fok",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "A címertan gyakorlott ismerője, a kultúrkörre vagy foglalkozása körébe tartozó jelek nagy részét felismeri és értelmezi is, ha sikeres Intelligenciapróbát tesz.",
+            "title": "Heraldika 2. fok hatása",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "",
+            "title": "Heraldika: 3. fok",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "A karakter már szakavatott gyakorlója a heraldikának, képes kultúrkörre címereinek, jeleinek, tetoválásainak, zászlóinak értelmezésére és használatára, kevés jel hozza zavarba, ha sikeres Intelligenciapróbát tesz +1 módosítóval.",
+            "title": "Heraldika 3. fok hatása",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "",
+            "title": "Heraldika: 4. fok",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "A Heraldika mestere ezen a fokozaton új jeleket is alkothat, a jelek értelmezése és kialakulása mögé lát, messzemenő következtetéseket vonhat le a címert, jelet, vagy tetoválást megalkotó mesterről, a szervezetről, melyhez tartozik, vagy a nemesi családról, amelyeket ezeket birtokolják, ha sikeres Intelligenciapróbát tesz +2 módosítóval.",
+            "title": "Heraldika 4. fok hatása",
+            "headers": [],
+            "rows": []
+        }
+    ]
+}

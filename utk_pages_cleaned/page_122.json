@@ -1,0 +1,78 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": true,
+    "section_title": "Az Aschaoni Tűzmester különleges előnyei és hátrányai",
+    "content_blocks": [
+        {
+            "type": "paragraph",
+            "text": "előre az Őselemi Tűz uralásának ösvényén. A módszer igen hatékony, azonban nem kis hátránya, hogy a toroni nekromantikusok átvett alkalmazása miatt alkalmazása valósággal habzsolja az életerőt.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "Fontos azonban megjegyezni, hogy a testrajzolatokkal varázsló adeptusok tévesztése esetén gyors halálra számíthatnak: lángozva emészti el az óvatlant vagy belülről robban fel, akár a tűző napon felfúvódó békazetem. A gyors haladás és a könnyen megszerezhető hatalom csábítása azonban mindig erősebben bizonyult a rút halál fenyegetésénél.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "A rend mostani központja ugyan Dsidonban található, ennek ellenére az egész Pentád területén igénybe vehetők szolgálataik az itt-ott is elszórt rendházaikon keresztül, a „Kivárók” nemeseinek legnagyobb örömére.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "A tagság is akárcsak a tűzmesterek mágiája, igen összetett. A rend mesterei leginkább különféle alkuk és egyezségek által a szervezetbe került varázstudókat és ifjú gyermekeket tanítanak, kik a tudásért cserébe a zsoldoslégiók tagjaihoz hasonlóan tíz, illetve húszéves szolgálattal tartoznak nekik.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "Fontos még megjegyeznünk, hogy ez az egyetlen olyan tűzmágiával foglalkozó szervezet, amely nőket is soraiba fogad, további ellenőrzést keltve ezzel a hithű sogroniták között.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "I. A karaktert indító játékos ingyenesen megkapja a Mágikus fogékonyság és a Pszi érzékenység Hátteret.",
+            "title": "Mágikus fogékonyság és Pszi érzékenység",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "II. Különleges képességük a Tűzmágia használata, melyet az elsajátított Tapasztalati mágia képzettség (Tűzvarázslói mágia) 3. fokának ismerete tesz lehetővé. Azonban fontos megjegyeznünk, hogy ezen varázstudók sosem férhetnek hozzá a Tűzmágia Magasiskolájába tartozó formulákhoz.",
+            "title": "Tűzmágia használata",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "III. A tűzmesterek ordani társaikkal ellentétben nem képesek a Godoni Örökség egyetlen diszciplínájának használatára sem, illetve a Kívülről jövő különleges képességek alkalmazására. Így mágikus hatalmukat csakis a tűzvarázslók közül, csupán általuk ismert, és a rend tagjai által is készíthető Hatalom italával tölthetik fel (a leírást lásd a Boszorkánymesterek c. fejezetben, a 111. oldalon).",
+            "title": "Godoni Örökség és Kívülről jövő képességek",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "IV. A magasabb rangú beavatottak 3. Tapasztalati szint felett megkapják első tetoválásukat, mely vagy valamely a céh által ismert tűzvarázslat alaperősítésén való megidézését szolgálja, vagy pedig a tűzmester számára nyer mágikus energiákat, melyből tűzvarázslatait idézheti meg. Az alaperősítésen megidézett tűzvarázslatokat, melyek varázslási ideje megegyezik a tűzmágiánál leírtakkal a tűzmester saját Mana pontjaiból tovább erősítheti. Abban az esetben, ha a tűzmágiához szükséges Mp-kat szeretné a jelekből kicsikarni, akkor a varázslási idő a normál időtartamnál 1 szegmenssel hosszabb, illetve a tűzmester minden egyes megkezdett 5 Mp után 5 Fp-t vagy 1 Ép-t veszít. Fontos még megjegyeznünk, hogy alkalmazza a beavatott bármelyik formulát is, minden alkalommal sikeres Tapasztalati mágia (tűzmágia) képzettségpróbát kell tennie. A próba sikertelensége esetén a mágia elszabadul, és a varázslat visszacsap, azaz maximális sebzésével a megidézője aurájában idéződik meg és ott pusztít, de csak a megidézőjét sebzi.",
+            "title": "Tetoválások és mágia",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "V. A tagok 3. fokú Oktatás képzettségnek megfelelő bónuszokkal tanulhatják a Tapasztalati mágia képzettséget (Boszorkánymesteri mágia). Így, ha már rendelkeznek a képzettség 3. fokával, akkor Mana pontjaikból akár boszorkánymesteri varázslatokat is megidézhetnek, ha az ott leírtaknak megfelelő képzettségeket birtokolják.",
+            "title": "Boszorkánymesteri mágia",
+            "headers": [],
+            "rows": []
+        }
+    ]
+}

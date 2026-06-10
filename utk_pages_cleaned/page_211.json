@@ -1,0 +1,118 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": true,
+    "section_title": "Egyéb fegyverek",
+    "content_blocks": [
+        {
+            "type": "rule",
+            "title": "Általános szabályok",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Garott",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Ököl",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Vasököl",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Tűgyűrű",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Vassúlyom",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Pajzsok - Általános szabályok",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Pavéze pajzs",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "table",
+            "title": "Pajzsok adatai",
+            "headers": [
+                "Név",
+                "Idő-igény",
+                "Sebzés",
+                "KÉ",
+                "TÉ",
+                "VÉ",
+                "Súly",
+                "Ár"
+            ],
+            "rows": [
+                [
+                    "Pajzs, kicsi",
+                    "3",
+                    "1k6",
+                    "5",
+                    "0",
+                    "20",
+                    "1",
+                    "6e"
+                ],
+                [
+                    "Pajzs, közepes",
+                    "5",
+                    "1k6",
+                    "0",
+                    "0",
+                    "35",
+                    "3",
+                    "1a 6e"
+                ],
+                [
+                    "Pajzs, nagy",
+                    "10",
+                    "1k6",
+                    "0",
+                    "0",
+                    "50",
+                    "6",
+                    "6a"
+                ]
+            ]
+        }
+    ]
+}

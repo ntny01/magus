@@ -1,0 +1,225 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": null,
+    "is_new_section": false,
+    "section_title": null,
+    "content_blocks": [
+        {
+            "type": "paragraph",
+            "text": "Az első és talán legfontosabb dolog, hogy az előtörténeted alapján meghatározod a karaktered Hátterét. Ezek azok a veleszületett adottságok vagy körülmények, amik kalandozóvá válása előtt végigkísérték a karakter életét. Ilyenek a nemesi születés, a rang és a különleges képességek is, mint például a Mágikus fogékonyság. A különböző Háttereket Karakteralkotó Pontjaidból (KAP) kell megvenned. Ilyen Háttér továbbá a karaktered klánja, rendje, avagy iskolája is, amikről bővebben a 35. oldalon a Klánok, rendek, iskolák c. fejezetben olvashatsz. Természetesen egyes Háttereket, mely nélkül az adott karakter nem lehetett volna az általa választott klán, rend, vagy iskola tanítványa, a karakter ingyenesen megkapja (ezen Hátterek értéke már benne van számolva az adott szervezet pontköltségébe)."
+        },
+        {
+            "type": "paragraph",
+            "text": "Háttereket azonban csak 1. Tapasztalati szinten lehet vásárolni (hiszen ezek a karakter kalandozóvá válása előtti életét jelképezik). Vigyázz azonban, hogy mennyi Hátteret veszel föl, mert minden erre elköltött pont csökkenti a szintenként kapott 50 KAP-odat (ha például első Tapasztalati szinten 14 pontot költesz el Hátterekre, akkor a későbbi szinteken, minden szintlépés alkalmával már csak 36 pontból gazdálkodhatsz)."
+        },
+        {
+            "type": "rule",
+            "title": "Tulajdonságok elosztása",
+            "rows": [
+                [
+                    "Nyelvtudás (anyanyelv)",
+                    "3. fok"
+                ],
+                [
+                    "Kultúra (saját)",
+                    "3. fok"
+                ],
+                [
+                    "Helyismeret (szülőföld)",
+                    "3. fok"
+                ]
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Életerő pont (Ép) meghatározása",
+            "rows": [
+                [
+                    "Nyelvtudás (anyanyelv)",
+                    "3. fok"
+                ],
+                [
+                    "Kultúra (saját)",
+                    "3. fok"
+                ],
+                [
+                    "Helyismeret (szülőföld)",
+                    "3. fok"
+                ]
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Fájdalomtűrés pont (Fp) meghatározása",
+            "rows": [
+                [
+                    "Nyelvtudás (anyanyelv)",
+                    "3. fok"
+                ],
+                [
+                    "Kultúra (saját)",
+                    "3. fok"
+                ],
+                [
+                    "Helyismeret (szülőföld)",
+                    "3. fok"
+                ]
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Harcértékek meghatározása",
+            "rows": [
+                [
+                    "Nyelvtudás (anyanyelv)",
+                    "3. fok"
+                ],
+                [
+                    "Kultúra (saját)",
+                    "3. fok"
+                ],
+                [
+                    "Helyismeret (szülőföld)",
+                    "3. fok"
+                ]
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Harci Módosítók (HM) elosztása",
+            "rows": [
+                [
+                    "Nyelvtudás (anyanyelv)",
+                    "3. fok"
+                ],
+                [
+                    "Kultúra (saját)",
+                    "3. fok"
+                ],
+                [
+                    "Helyismeret (szülőföld)",
+                    "3. fok"
+                ]
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Képzettség pontok (Kp) meghatározása",
+            "rows": [
+                [
+                    "Nyelvtudás (anyanyelv)",
+                    "3. fok"
+                ],
+                [
+                    "Kultúra (saját)",
+                    "3. fok"
+                ],
+                [
+                    "Helyismeret (szülőföld)",
+                    "3. fok"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "Ha ezzel végeztél, másold át a karakterlap képzettségek rovatába, hogy melyek azok a Képzettségek, amelyeket választott tanítóid vagy magányos mestered oktatott neked, mielőtt kalandozni indultál. Ennek listáját a Klánok, rendek, iskolák c. fejezetben találod az adott szervezet leírásánál."
+        },
+        {
+            "type": "rule",
+            "title": "Képzettségek vásárlása",
+            "rows": [
+                [
+                    "Nyelvtudás (anyanyelv)",
+                    "3. fok"
+                ],
+                [
+                    "Kultúra (saját)",
+                    "3. fok"
+                ],
+                [
+                    "Helyismeret (szülőföld)",
+                    "3. fok"
+                ]
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Fontos megjegyeznünk:",
+            "rows": [
+                [
+                    "Nyelvtudás (anyanyelv)",
+                    "3. fok"
+                ],
+                [
+                    "Kultúra (saját)",
+                    "3. fok"
+                ],
+                [
+                    "Helyismeret (szülőföld)",
+                    "3. fok"
+                ]
+            ]
+        },
+        {
+            "type": "table",
+            "headers": [
+                "Képzettség",
+                "Fok"
+            ],
+            "rows": [
+                [
+                    "Nyelvtudás (anyanyelv)",
+                    "3. fok"
+                ],
+                [
+                    "Kultúra (saját)",
+                    "3. fok"
+                ],
+                [
+                    "Helyismeret (szülőföld)",
+                    "3. fok"
+                ]
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Mana pontok (Mp) meghatározása",
+            "rows": [
+                [
+                    "Nyelvtudás (anyanyelv)",
+                    "3. fok"
+                ],
+                [
+                    "Kultúra (saját)",
+                    "3. fok"
+                ],
+                [
+                    "Helyismeret (szülőföld)",
+                    "3. fok"
+                ]
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Mágikus fogékonyság követelmény",
+            "rows": [
+                [
+                    "Nyelvtudás (anyanyelv)",
+                    "3. fok"
+                ],
+                [
+                    "Kultúra (saját)",
+                    "3. fok"
+                ],
+                [
+                    "Helyismeret (szülőföld)",
+                    "3. fok"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A Papok és a Paplovagok esetében kicsit más a helyzet, hiszen ők nem manából varázsolnak, hanem fohászokkal könyörögnek az istenüknek a csodatételért. Egy patrónusuk"
+        }
+    ]
+}

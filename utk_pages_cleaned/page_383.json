@@ -1,0 +1,187 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": true,
+    "section_title": "A Tudat adománya",
+    "content_blocks": [
+        {
+            "type": "paragraph",
+            "text": "A varázslat egyetlen hátránya az, hogy a teremtmény „személyisége” erősen magán viseli a lelke alapjául szolgáló teremtmény jellegzetességeit. Azaz egy macskából megalkotott lény meglehetősen találékony, de független, míg egy farkasból származtatott valószínűleg kevésbé önálló – falkaosztön –, de igen vérszomjas lesz. Az így megalkotott élőholt intelligenciája és Asztrálja, illetve Akaratereje semmiképpen sem haladhatja meg a 9 pontot. A teremtmény a benne foglalt lélek miatt nem lehet alanya a Természeti Anyag Mágiájának."
+        },
+        {
+            "type": "rule",
+            "title": "A Tudat adománya",
+            "headers": [
+                "Mana pont",
+                "Időtartam",
+                "Hatótáv",
+                "Varázslás ideje"
+            ],
+            "rows": [
+                [
+                    "30",
+                    "1 nap",
+                    "Érintés",
+                    "1 perc"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A varázslat segítségével tudat, intelligencia kölcsönözhető egy értelemmel nem bíró élőhalottnak. A varázslás során a nekromanta saját tudatának torz és igen primitív lenyomatát plántálja az élőhalottba. Ami ezáltal rövid, egyszerű parancsokat képes csak végrehajtani, melyek nem lehetnek összetett feladatok. Például: „Senkit ne eressz be az ajtón!” – parancsot képes végrehajtani, míg a „Csak a vendégeimet ereszd be!” – utasítással nem tud mit kezdeni."
+        },
+        {
+            "type": "rule",
+            "title": "Idézés",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "A Nekromancia ezen vállfaja foglalkozik a Kárpiton túl megrekedt, a Körforgásból kiragadott, a lélekvándorlásból örökre kizáratott lelkek, és torz maradványaik megidézésével."
+        },
+        {
+            "type": "paragraph",
+            "text": "Az idézésekhez mindig szükséges egy idéző pentagramma, egy mágikus jelekkel rótt gyertya, és megfelelő hosszúságú idéző litánia. Továbbá ajánlatos gondoskodni arról is, hogy a megidézett teremtmény ne fordulhasson megidézője ellen. Erre olykor elegendő a gyertya nyújtotta fenyegetés, ám néha szükség lehet a megidézőt óvó védő varázskörre, netán az érkezőt rabul ejtő bebörtönző varázskörre is."
+        },
+        {
+            "type": "paragraph",
+            "text": "A varázsló az idéző litánia elmondásakor a pentagramma közepén köteles tartózkodni, és a gyertyát is itt kell elhelyeznie. A megidézett teremtmény a varázsló által meghatározott, annak Zónáján belül eső, tetszőleges helyen jelenik meg."
+        },
+        {
+            "type": "paragraph",
+            "text": "A gyertya az idézés időtartama alatt az idézett lény életének jelképe. Az idézett addig képtelen visszatérni saját síkjára, ameddig a gyertya a pentagrammán belül marad. Ez akkor is igaz, ha történetesen birtokában van a mágikus hatalomnak, melynek segítségével maga is képes a síkváltásra. Ha a gyertya – mielőtt még elaludna – kikerül a pentagrammán belülről, akkor a lény – hacsak időközben más módon az Anyagi Síkhoz nem köttetett – haladéktalanul visszakerül oda, ahonnét a varázsló megidézte. Abban az esetben, ha a gyertya az idéző pentagrammán belül elalszik, a megidézett teremtmény elpusztul. Lelke pedig – ha egyáltalán bír ilyennel – vissza kerül a reinkarnáció legeslegelső lépcsőfokára. Ez az a fenyegetés, amivel a megidézőt sakkban tarthatja a nála akár jóval hatalmasabb teremtményeket is – hiszen elegendő elfújnia a gyertyát."
+        },
+        {
+            "type": "paragraph",
+            "text": "A gyertya színe iskolánként más és más. Akadnak gyertyák, amelyek órák alatt leégnek, de olyanok is, melyek egy hónap hosszan őrzik lángjukat. A gyertyákat mágikus jelek borítják, ezek teszik a megidézett teremtmény életének szimbólumává. Arról, hogy ezen kívül még mennyi Mp-ba kerül egy-egy mágikus gyertya elkészítése, a Mágikus Gyertya Készítése nevű varázslatnál közlünk adatokat."
+        },
+        {
+            "type": "paragraph",
+            "text": "A varázsló az idézéssel leggyakrabban az a célja, hogy az idézett teremtményt szolgálatra bírja, netán tudakozódjon tőle valami felől. A védekezés módja – a gyertyán túl – általában szintén ezen cél függvénye. Hiszen a tudakozódás során elegendő a teremtményt bebörtönözni, míg szolgálat esetén szabad mozgást kell biztosítani számára. Ilyenkor a megidézőnek – a gyertyával együtt – tanácsos védő varázskörök oltalmába húzódni."
+        },
+        {
+            "type": "paragraph",
+            "text": "Mentáltesttel nem rendelkező, azaz pusztán érzelmek és indulatok irányította lények az idézés időtartamára vak hűséget éreznek megidézőjük irányában – esetükben tehát védekezésre nincs komoly szükség."
+        },
+        {
+            "type": "rule",
+            "title": "Idéző litánia",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "Az idéző litániák mágikus tartalommal bíró szavakból állnak, melyek kimondására a varázsló csak mágikus energiáinak felhasználásával képes – azaz a litániák Mp-okba kerülnek. Minél több szóból áll egy litánia, annál több Mp-ot emészt fel – pontosan: 1 szó 1 Mp felhasználását igényli. Ha a litánia bármely okból félbeszakad, többé nem folytatható – a már kimondott szavakhoz felhasznált Mp-ok elvesznek – és az idézés is sikertelen lesz."
+        },
+        {
+            "type": "rule",
+            "title": "Idézés mozaikok",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "A teremtett élőhalottak, a természet rendjétől idegen teremtményei valamely gonosz szándékú papnak vagy ostoba varázslóknak. Torz lélekmásolatok, melyek fejlődésre képtelenek, létük nem több, mint egyfajta elferdült asztrális létezés. Tudatuk egyetlen, egyszerű, kívülről beléjük plántált parancsra korlátozódik; céljuk nem több, mint ennek végrehajtása. A parancs megfogalmazója leggyakrabban maga a teremtőjük. Anyagi Testük általában a Világegyetem anyagából épül fel, így a Természeti Anyag Mágiája alkalmazható ellenük, hacsak teremtményük nem zárt beléjük egy valódi lelket. A Mentálés Asztrálvarázslatokkal szemben immunisak."
+        },
+        {
+            "type": "rule",
+            "title": "Mágikus gyertya készítése",
+            "headers": [
+                "Mana pont",
+                "Időtartam",
+                "Rajzolás ideje"
+            ],
+            "rows": [
+                [
+                    "Lásd a leírást!",
+                    "Lásd a leírást!",
+                    "Lásd a leírást!"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A varázsló varázsjeleket helyez el egy speciális viaszból készített gyertyán. Ehhez természetesen rendelkeznie kell a Rúnamágia képzettség 3. fokával. Arról, hogy a gyertyához szükséges alapanyag mennyi pénzbe kerül, és elkészítése mennyi időt és Mp-ot igényel, valamint, hogy a kész mágikus gyertya milyen hosszan ég, az alábbi táblázat tudósít."
+        },
+        {
+            "type": "table",
+            "headers": [
+                "Gyertya ára",
+                "Készítés ideje",
+                "Mana pont",
+                "Égés ideje"
+            ],
+            "rows": [
+                [
+                    "1 arany",
+                    "10 perc",
+                    "10 Mp",
+                    "1 óra"
+                ],
+                [
+                    "2 arany",
+                    "15 perc",
+                    "20 Mp",
+                    "2 óra"
+                ],
+                [
+                    "3 arany",
+                    "30 perc",
+                    "30 Mp",
+                    "6 óra"
+                ],
+                [
+                    "5 arany",
+                    "45 perc",
+                    "40 Mp",
+                    "12 óra"
+                ],
+                [
+                    "7 arany",
+                    "1 óra",
+                    "50 Mp",
+                    "1 nap"
+                ],
+                [
+                    "10 arany",
+                    "1,5 óra",
+                    "60 Mp",
+                    "2 nap"
+                ],
+                [
+                    "25 arany",
+                    "2 óra",
+                    "70 Mp",
+                    "6 nap"
+                ],
+                [
+                    "50 arany",
+                    "3 óra",
+                    "80 Mp",
+                    "12 nap"
+                ]
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Élőhalott-idéző Litánia",
+            "headers": [
+                "Mana pont",
+                "Időtartam",
+                "Litánia hossza"
+            ],
+            "rows": [
+                [
+                    "50",
+                    "Gyertyától függ",
+                    "5 kör"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "Az élőhalott Anyagi Testével egyetemben jelenik meg, a litánia utolsó szavának elhangzásakor."
+        }
+    ]
+}

@@ -1,0 +1,44 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": true,
+    "section_title": "Familiáris mágia",
+    "content_blocks": [
+        {
+            "type": "paragraph",
+            "text": "viszont bármilyen távolságból. A boszorkány a megbélyegzett szemén keresztül látja a valóságot. A Megbélyegzés időtartama alatt a boszorkány azon varázslataival is hatni tud, melyekhez elég látnia az áldozatot, akik nem a saját, hanem a megbélyegzett lény szemével lát."
+        },
+        {
+            "type": "rule",
+            "title": "Távolbalátás",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Üzenet",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A Familiáris mágia a Szimpatikus és Lélekmágia legmagasabb rendű alkalmazása. A boszorkányok mágiájának magasiskolája."
+        },
+        {
+            "type": "paragraph",
+            "text": "Az itt felsorolt varázslatok közül a boszorkány lelkére rótt komoly megpróbáltatások miatt típusonként csakis egy alkalmazható, míg a boszorkánynak a különböző Familiáris-mágiából tetszés szerinti számú lehet aktív."
+        },
+        {
+            "type": "rule",
+            "title": "Egyéválás",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        }
+    ]
+}

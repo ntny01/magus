@@ -1,0 +1,96 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": false,
+    "section_title": "",
+    "content_blocks": [
+        {
+            "type": "paragraph",
+            "text": "válaszok avatott mesterei számos könyvet is írtak a témáról (nemritkán valódi, emberi bőrre tetovált illusztrációkkal), ám azok többsége vagy a céh tulajdonát képezi, vagy az inkvizíció kezére került."
+        },
+        {
+            "type": "paragraph",
+            "text": "Amennyiben a boszorkánymester birtokában van a megfelelő ismereteknek és minden szükséges kelléknek, akkor fel kell rajzolnia a tetoválás vonalait, majd egy rövid litániával és 1 Mp feláldozásával létrehozza a mágikus kötést, ami biztosítja, hogy a tetoválás két felhasználás között is megőrizze a jel hatalmát."
+        },
+        {
+            "type": "paragraph",
+            "text": "Az így elkészült bélyeget azonban még fel is kell tölteni Mana pontokkal, hogy kifejthesse hatását. Ehhez egy 5 perces rituálé szükséges. A különböző tetoválásoknál a Mana pont rovatban a feltöltéshez szükséges érték szerepel. Miután a rajzolat feltöltődik mágikus energiával, a tetoválásban tárolt varázslat nem aktivizálódik azonnal, a mana addig szunnyad a jelekbe zárva, mialatt az alkalmazó, aki a testen viseli (és csakis ő) rövid koncentrációval életre nem hívja a hatást."
+        },
+        {
+            "type": "paragraph",
+            "text": "Ilyenkor az Időtartam rovatban feltüntetett ideig tart a hatás, mialatt a mana felszabadul a bélyegből és lassan elszivárog. Az Időtartam lejártakor a tetoválás teljesen kiürül, és csak újabb feltöltés után használható ismét."
+        },
+        {
+            "type": "paragraph",
+            "text": "Egyetlen személy akár több azonos hatású tetoválást is viselhet, azonban egyszerre mindig csak egyetlen bélyeg hatása érvényesül. Hiába is próbálkozna egy újabb jel aktivizálásával, ameddig az előző hatás le nem jár, egyetlen más tetoválás sem fejti ki a hatását."
+        },
+        {
+            "type": "paragraph",
+            "text": "A tetoválásoknak azonban megvannak a maga veszélyei is. Ha a rajzolat vonalai megtörnek, nemcsak a hatás szűnik meg azonnal, de a hirtelen felszabaduló, zabolátlan mana akár el is pusztíthatja a jel viselőjét. Számszerűen: a rajzolatban tárolt minden egyes Mana pont után 1 Sp sebet okoz a tetoválás megsértettje. Annak az esélye, hogy a tetoválás harc közben megsérüljön, nagyban függ attól, hogy a test mely pontjára rajzolták fel, illetve a tetoválás méretétől függően 1-25% lehet. Természetesen, ha a bélyeg hordozója páncélt visel a tetoválás fölött, a sérülés esélye még kevesebb."
+        },
+        {
+            "type": "paragraph",
+            "text": "Annak eldöntése, hogy az adott szituációban a tetoválás mennyire könnyen sérülhet meg (vagy megsérülhet-e egyáltalán) minden esetben a KM feladata, a leírásban megadott érték csupán iránymutatóként szolgál."
+        },
+        {
+            "type": "rule",
+            "title": "Áspis jel",
+            "headers": [
+                "Mana pont",
+                "Időtartam",
+                "Sérülés esélye"
+            ],
+            "rows": [
+                [
+                    "15",
+                    "6 óra",
+                    "3%"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A pénzérményi mágikus rajzolat a szív fölött helyezkedik el. Ha a viselője szervezetében az időtartam alatt mérgező anyag kerül, akkor a rajzolatban tárolt mágia megkísérel ellenszegülni annak. Hordozója egyetlen alkalommal +4-et kap mérgezés elleni Egészségpróbájára. A jel csak egy támadástól védi meg a viselőjét, és nem értesíti róla, hogyha mérgezés éri."
+        },
+        {
+            "type": "rule",
+            "title": "Méregpohár",
+            "headers": [
+                "Mana pont",
+                "Időtartam",
+                "Sérülés esélye"
+            ],
+            "rows": [
+                [
+                    "30",
+                    "6 óra",
+                    "1%"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "Ez a mágikus rajzolat a boszorkánymester bal tenyerére kerül. Hatására a boszorkánymester, vagy akire rajzolta, az Időtartam alatt annyi adag légnemű vagy folyékony mérget tárolhat a jelben, amennyi a boszorkánymester Tapasztalati szintje (egyszerre azonban csak egyfajta mérget). Elég csupán a mérget a kezére önteni, vagy a kezét a mérgező felhőbe dugnia és a rajzolat az Időtartam lejártáig magába szívja a mérget. Az Időtartam lejárta előtt az elpárolt méreg bármikor előhívható (akár adagonként is), a tetoválás viselőjének körmei alól szivárog elő. A bélyeg veszélye, hogy a viselője nem válik ellenállóvá a mérgekkel szemben, tehát beleegyezve az előhívott mérget, ő is áldozatává válik, illetve ha az Időtartam lejártának pillanatában a rajzolatban található meg méreg, az a viselőn fogja kifejteni hatását."
+        },
+        {
+            "type": "rule",
+            "title": "Bagolyszem",
+            "headers": [
+                "Mana pont",
+                "Időtartam",
+                "Sérülés esélye"
+            ],
+            "rows": [
+                [
+                    "10",
+                    "6 óra",
+                    "2%"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A pénzérményi tetoválást a homlokon szokás elhelyezni. A boszorkánymester – vagy akire a tetoválást rajzolja – képes lesz látni a sötétben. Ez nem infravagy ultralátás: a szem érzékenysége változik meg úgy, hogy a legkisebb fényben is nappali fénynek megfelelő élességgel lásson mindent."
+        }
+    ]
+}

@@ -1,0 +1,116 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": false,
+    "section_title": "",
+    "content_blocks": [
+        {
+            "type": "paragraph",
+            "text": "esetén a varázslatot is képes meghatározni, melyet a rúna ereje, illetve képes biztonságosan megtörni a mágikus jeleket sikeres próba esetén."
+        },
+        {
+            "type": "paragraph",
+            "text": "A megfelelő képzettség (valamely szakma), valamely mágikus hagyomány beavatottjaként a karakter képes jelmágikus rajzolatok készítésére. Ezeket bővebben lásd a Rúnamágia c. fejezetet a 373. oldalon."
+        },
+        {
+            "type": "paragraph",
+            "text": "Abban az esetben, ha a karakter nem a magasmágia beavatottja, hanem tapasztalati mágiahasználó, akkor csakis a Végrehajtó Varázskör, Kisugárzó Varázsjel, illetve, ha bír Asztrál-, Mentálmágiával, akkor az Asztrál-, Mentálbélyegek alkalmazása elérhető a számára."
+        },
+        {
+            "type": "rule",
+            "title": "4. fok",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "5. fok",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "Tapasztalati mágia (IV – Intelligencia, Akaraterő)"
+        },
+        {
+            "type": "paragraph",
+            "text": "A hagyományokon, az évezredeken átöröklődő, mágikus procedúrákon alapuló mágikus fortélyok ismeretébe, illetve magasabb szinteken azok használatába enged betekintést e képzettség. Felvételkor természetesen meg kell jelölni az adott hagyományt, mint pl. Tapasztalati mágia – bárd varázslatok (iskola, vagy magányos mester)."
+        },
+        {
+            "type": "rule",
+            "title": "1. fok",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "2. fok",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "3. fok",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A karakter a Mágikus fogékonyság előny birtokában az adott mágiaformát alkalmazni is képes. A MP-jai által megengedett varázslatokat a Mágia fejezetben leírtak szerint hajthatja végre."
+        },
+        {
+            "type": "paragraph",
+            "text": "A mágikus tanokba való ilyen szintű elmélyedés miatt a karakter minden Tapasztalati szinten (már az elsőn is) +1 Mana pontot kap. Az így nyert MP-ok esetén mindig az adott szinten aktuális képzettségből számít. Tehát, ha Ricara a boszorkány 4.-ről 5. TSZ-re lépve felveszi a képzettség 5. fokát, s eddig csak a 4. fokkal bírt, akkor ezentúl minden szintlépéskor innentől kezdve 1 plusz MP-t kap, de ez nem befolyásolja a korábban kapott MP-jai számát."
+        },
+        {
+            "type": "rule",
+            "title": "4. fok",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A karakter már mestere a választott misztikus hagyománynak, mozdulatai, elejtett szavai mágikus erőket rejtenek. Az ilyen fokon képzett varázstudó képes létrehozni egy varázslatot, majd testében, mozgásában megkötni a mágikus hatalmat, s akár órákkal később életre hívni azt."
+        },
+        {
+            "type": "paragraph",
+            "text": "Játéktechnikailag a varázstudó megidézi az adott varázslatot, elkölti a szükséges Mana pontokat – amennyiben szükséges felhasználja az egyéb kellékeket –, majd nem fejezi be varázslatát, mintegy testében köti le, majd később 1 szegmens alatt egy korábban meghatározott formulával – ez mindig ugyanaz: egy intés, egy mosoly vagy egy szó – beindítja a varázslatot. Ha a karakter elalszik, vagy bármilyen más módon, de eszméletét veszíti, elveszik a varázslat és a belefoglalt varázserő, mely sebzés okozása és hatás nélkül, némi fényjelenség kíséretében visszaáramlik a Manahalóba. Amíg a mágiahasználó egy varázslatot efféleképpen birtokol, addig semmilyen koncentrálást igénylő feladatot nem végezhet: azaz nem használhat pszit, nem varázsolhat és varázserejét sem nyerheti vissza."
+        },
+        {
+            "type": "paragraph",
+            "text": "A mágikus tanokba való ilyen szintű elmélyedés miatt a karakter minden Tapasztalati szinten +2 MP-t kap."
+        },
+        {
+            "type": "rule",
+            "title": "5. fok",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A játékos ezen a szinten már saját varázslatokat is megalkothat, de csak azon mágiaformából, melynek vonatkozó képzettségéből szintén bír az 5. fokkal. Pl. Varsarco a tűzvarázsló új tűzmágiák megalkotását tűzte ki maga elé célul, ezt akkor teheti meg, ha az Őselemi mágia képzettséget szintén 5. fokon birtokolja, míg új bájolások kiötléséhez Syrának a boszorkányának 5. fokú Lélektan képzettség szükséges."
+        },
+        {
+            "type": "paragraph",
+            "text": "(Ám minden esetben a KM-é a döntő szó, ő bírálja el a játékos által megalkotott új varázslatot.)"
+        },
+        {
+            "type": "paragraph",
+            "text": "A mágikus tanokba való ilyen szintű elmélyedés miatt a karakter minden Tapasztalati szinten +3 MP-t kap."
+        }
+    ]
+}

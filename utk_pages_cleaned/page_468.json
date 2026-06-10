@@ -1,0 +1,90 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": false,
+    "section_title": "",
+    "content_blocks": [
+        {
+            "type": "paragraph",
+            "text": "csempészte hatalmát Ynevre. Az isteni akarat által megtermékenyített papnők a titkos templomokban hatezer esztendő alatt huszonhárom Amhe-démont hoztak a világra, az utolsót, a leghatalmasabbat a Sötét Együttállás évében. A Kék Hold felkeltekor az Amhe-démonok és az Amhe-papok lelke összekapcsolódik, közösen alkotva az Isteni Tudatot. Egységük maga Amhe-Ramun, a huszonhárom testben lakozó manifesztáció."
+        },
+        {
+            "type": "rule",
+            "title": "Nesire (Nethiree)",
+            "headers": [],
+            "rows": [
+                [
+                    "A szerelem, a szépség és a vörös csókjából fogant istennője az amund hitvilágban; róka vagy Ibisz képében szokás ábrázolni. Szeszélyes, időnként rosszindulatú hatalmasság volt, az érzelmek és indulatok rabja: csak a testi gyönyör tartozott a befolyási szférájába, a termékenység és az életadás soha. Bizonyos ősi feljegyzések szerint papnői féktelen orgiákon hódoltak neki; az ezeken részt vevő férfiakat később rituálisan megcsonkították."
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "Szent szimbóluma ritkán volt látható az Ibarán kívül – akik mégis megpillantották, egyhamar aligha felejtették el. A vörösrézből készült ovális külső lapja sík, csak a belső kidolgozott: három ujj (madárláb?) domborulatait rejti. Kikovácsolása után pillanatokkal, még izzó állapotban helyezték a beavatandó nyakába, akinek mellén jellegzetes alakú sebet égetett – e bélyeget, a Szent Csók jegyét egész életén át viselte aztán. Nesire kultuszáról egyébként roppant keveset tudunk, mert évezredekkel ezelőtt kiveszett Ynevről; híveit sötét testvérei, Amhe-Ramun követői irtották gyilkos hatékonysággal, még a kisdedeket sem kímélve."
+        },
+        {
+            "type": "rule",
+            "title": "Refis (Reefith)",
+            "headers": [],
+            "rows": [
+                [
+                    "Az amund panteon anyaistennője, a föld megszemélyesítője, a napisten hitvese; kettejük nászából született Nesire. Hátborzongató termékenységkultusz alakult ki körülötte; tanítása szerint az élet a halálból fogan, aminthogy a vetés is dúsabban nő a felszántott temetők helyén. Papjai időnként szertartásos öngyilkossággal – élve eltemetkezéssel – hódoltak neki; máskor viselős anyákat áldoztak tiszteletére, s a kiontott vért gránitfalú kutakba folyatták, ezzel táplálva a földmélyi sötétben szunnyadó teremtő szellemeket."
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "Szent szimbólumuk valóságos kis kozmosz-modell volt, a maga nemében egyedülálló a hasonló jelképek között. Külső része valamely nehéz fémből vert, tenyérnyi keret, melynek közepébe egy második, jobbára nemesfém szelencét foglaltak. Refis minden híve egy-egy csipetnyit helyezett a szelencébe"
+        },
+        {
+            "type": "paragraph",
+            "text": "A fajháborúk pusztítását követően Refis egyházának maradékaí a föld alá menekültek Amhe-Ramun dühe elől. Azóta nem sokat tudni róluk; minden valószínűség szerint elfajzottak és korcsokká degenerálódtak. Néhány kolóniájuk Kránba költözött, de nem sokáig bírták az ott uralkodó viszonyokat, rövidesen hírmondó sem maradt belőlük."
+        },
+        {
+            "type": "rule",
+            "title": "Themes (Theemeth)",
+            "headers": [],
+            "rows": [
+                [
+                    "Az amund panteon főistene, az Églakó Nap-Atya, az Örök Fényesség. Teremtőként és pusztítóként egyaránt tisztelték, bár előbbi aspektusa mind jobban háttérbe szorult az"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "évezredek során. Papjai szigorúan zárt születési arisztokráciát alkottak, s tizenkét esztendős korukban beavatási szertartáson estek át: öt teljes percig kellett rezzenetlenül istenük fényes arcába tekinteniük. Akik kiállták a próbát, azok jog szerint is felvételt nyertek a papi rendbe; akik megvakultak, azokat elevenen feldarabolva áldozati máglyára vetették."
+        },
+        {
+            "type": "paragraph",
+            "text": "Themes szent szimbóluma arany napkorong. Valamennyi amund kultusz közül az övé állta legtovább a háborúságot Amhe-Ramun híveivel, a bukást azonban csak elodázniuk sikerült, megakadályozniuk nem. Állítólag utolsó napjaikban néhány kisgyermeket sikerült biztonságba csempészniük a vérükre szomjazó menetek elől, s ezeknek a leszármazottai mind a mai napig élnek a dzsádok között. Kétséges, hogy mennyi az igazság ezekben a híresztelésekben; mégha léteznek is ilyen kései papi sarjak, örökségüknek aligha vannak tudatában."
+        },
+        {
+            "type": "rule",
+            "title": "A TÖRPÉK ISTENEI",
+            "headers": [],
+            "rows": [
+                [
+                    "Bul Ruurig, a Kőatya Kadal, a Tárnakat Zengető Tooma a Fejszés Zimah, a Szökevény"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "Az egykor Bórogot (Beriquel), manapság Ynev legészakibb partvidékének hegyeit lakó törpék eredete az idők homályába vész: bizton állíthatjuk, az elsők voltak azon fajok közt, melyeket a végzet örvénye e világra vetett. Írásbeliségük felülmúlja az emlékezetükre hagyatkozó elfekét, a hieroglifák béklyóiba vert amundokét, s természetesen a dzsennékét, akik jobban kedvelik a példabeszédeket a krónikáknál. Ha igaz, amit a Tarinban őrzött Mak Haroór, a sajnálatosan töredékes Ósmítosz állít, a törpék a Teremtés hajnalán, két gyürkőző istenség, a rendíthetetlen Bul Ruurig és a tüzes Tyrrano kövekre hulló véréből születtek. Hitviláguk alapvetése a többarcúság: megélik a lelkükben dúló kozmikus küzdelmet, tudják, hogy egyik vagy másik erő hosszabb-rövidebb időre felülkerekedhet rajtuk (lásd: Kófiak – Homálytestvér), s azt latolgatják, vajon mikor válnak végérvényesen e harc kárvallottjaivá. Az első csatában győztes Bul Ruurig a sajátjának érzi a a törpéket, Tyrrano vad gyűlölettel viseltetik irányukban, és újra meg újra saját szörnyeteg teremtményeit küldi ellenük. A bizonyosságok, vagy majdnem-bizonyosságok, itt el is fogynak; az anyag hátralévő részét súlyos ellentmondások feszítik, ezért döntöttünk úgy, hogy a törpe istenekről megemlékezve sorra vesszük őket, s ahol módunkban áll, több lehetséges értelmezést is közreadunk."
+        },
+        {
+            "type": "rule",
+            "title": "Bul Ruurig, a Kőatya",
+            "headers": [],
+            "rows": [
+                [
+                    "A törpék első istene; a törzsi hagyomány neki – és csak neki – tulajdonítja a kőfiak teremtését, az Ósmítosz azonban szót ejt Tyrrano közreműködéséről is. A két forrás egybehangzóan állítja, hogy a világ már létezett, mikor összecsaptak felette; a harcban a démon megsebesült, a Külső Hidegbe taszíttatott, az isten pedig alászállt, hogy gondoskodjon övéiről, akiknek „feje, karja-lába s minden része éppen olyan volt, mint az övé”."
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "Az Ósmítosz szerint Bul Ruurig a nap és a holdak születése után paktumot kötött a szférákat létrehozó Nagyokkal, akik"
+        }
+    ]
+}

@@ -1,0 +1,192 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": true,
+    "section_title": "Páncélok, vértek",
+    "content_blocks": [
+        {
+            "type": "paragraph",
+            "text": "Arról, hogy egyes testrészeken legfeljebb mekkora mennyiségű Ép sebezhető, illetve, hogy mekkora sérülést bírnak ki, az alábbi táblázat ad felvilágosítást:"
+        },
+        {
+            "type": "table",
+            "headers": [
+                "Testrész",
+                "Maximális Ép sebzés"
+            ],
+            "rows": [
+                [
+                    "Csukló/lábfej",
+                    "A max. Ép 1/5-e"
+                ],
+                [
+                    "Alkar/lábszár",
+                    "A max. Ép 1/5-e"
+                ],
+                [
+                    "Kar/láb",
+                    "A max. Ép 1/4-e"
+                ],
+                [
+                    "Fej",
+                    "A max. Ép 1/2-e"
+                ],
+                [
+                    "Törzs",
+                    "max. Ép"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A fej bénítása maradandó, csak mágia segítségével gyógyítható, minden más végtag idővel meggyógyul. A fej csonkítása azonnali halállal jár, ezért a Morális szabály értelmében Játékos karaktert így csonkolni etikátlan."
+        },
+        {
+            "type": "paragraph",
+            "text": "A törzs csonkítása azonnali halállal jár, ezért a Morális szabály értelmében Játékos karaktert csonkolni etikátlan."
+        },
+        {
+            "type": "paragraph",
+            "text": "Csonkítani értelemszerűen csak akkor lehet, ha a támadó megfelelő méretű vágófegyvert használ. Szúró- vagy zúzófegyverrel csak bénítani lehet."
+        },
+        {
+            "type": "rule",
+            "title": "00-ás szabály",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A Célzott támadások esetén másként kell kezelni a páncélok és vértek SFÉ-jét is. Az elv egyszerű: minden páncél csak ott véd, ahol viselik (pl. a mellvért nyilván nem adhat SFÉ-t a lábon). A páncél SFÉ-je tehát csak akkor vonható le a sebzésből, ha van páncél a sebesülés helyén. Nem célzott támadások esetén a támadás célpontjának kell kiválasztania a találat helyét, méghozzá kockadobással. Ennek mikéntjéről az alábbi táblázat tudósít."
+        },
+        {
+            "type": "table",
+            "headers": [
+                "Testrész",
+                "Dobás k10-en"
+            ],
+            "rows": [
+                [
+                    "Fej",
+                    "0"
+                ],
+                [
+                    "Törzs",
+                    "7, 8, 9"
+                ],
+                [
+                    "Jobb (fegyverforgató) kar",
+                    "4, 5, 6"
+                ],
+                [
+                    "Bal (gyengébbik) kar",
+                    "3"
+                ],
+                [
+                    "Bal láb",
+                    "2"
+                ],
+                [
+                    "Jobb láb",
+                    "1"
+                ]
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Morális szabály",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Képzetlen fegyverforgatás",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "KÉ: az ellenfél, TÉ: —, VÉ: —, CÉ: —",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Túlerő",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "table",
+            "headers": [
+                "Ellenfél",
+                "Hátrány",
+                "Két fegyverrel"
+            ],
+            "rows": [
+                [
+                    "1",
+                    "nincs",
+                    "nincs"
+                ],
+                [
+                    "2",
+                    "-5",
+                    "nincs"
+                ],
+                [
+                    "3",
+                    "-10",
+                    "-5"
+                ],
+                [
+                    "4",
+                    "-15",
+                    "-10"
+                ],
+                [
+                    "5",
+                    "-20",
+                    "-15"
+                ],
+                [
+                    "6",
+                    "-25",
+                    "-20"
+                ],
+                [
+                    "7",
+                    "-30",
+                    "-25"
+                ],
+                [
+                    "8",
+                    "-35",
+                    "-30"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "Közönséges körülmények között 6-nál többen nem férnek el egy ember körül; az egyetlen kivétel, ha nyeles fegyvert használnak, mert ekkor 8-an is elérik. Aki hátát a falnak veti, arra legfeljebb 4-en támadhatnak. A hátukat egymásnak vető, párban küzdők körül összesen 6, azaz fejenként 3-3 embernek jut hely. Különböző méretű küzdő felek esetén ezek a számok természetesen arányosan és értelemszerűen módosulnak. A végső döntés azonban mindig a KM-é!"
+        },
+        {
+            "type": "rule",
+            "title": "Közelharc és varázslás",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        }
+    ]
+}

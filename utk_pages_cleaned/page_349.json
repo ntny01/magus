@@ -1,0 +1,132 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": false,
+    "section_title": "",
+    "content_blocks": [
+        {
+            "type": "paragraph",
+            "text": "A tűzvarázsló tehát Mana pontok befektetésével 2 kör erejéig a tűz kategóriáját változtathatja meg, még egy gyertya lángjából is készíthet – legalábbis rövid időre – tábortüzet. A varázslat Mana pont igénye a kiindulási és a kívánt kategóriák különbségétől függ. Ha a különbség csupán egy Erősség, a befektetendő Mp-k száma 2. Két kategóriánál 4, háromnál 8, négynél 16. Ebből is látható, hogy fáklyából könnyen lehet kandallóban égő láng, de máglya már sokkal nehezebben. A fenti különbségek a tűz kioltására is vonatkoznak, azaz egy fáklya fénye 2 Mp ráfordítással tompítható gyertyányi lánggá. A Tűzlohasztás több előnnyel is bír, például kezdődő tűzvészek előzhetőek meg vele. A tüzek befolyásolása – bármelyik hasonló varázslattal – minden esetben megváltoztatja az adott hely fény-árnyék viszonyait. Így a tüzek tompításával a rejtőzés könnyebbé, vagy ellenkezőleg, erősítésükkel nehezebbé válik. A tűzvarázsló ennek segítségével meglehetősen könnyen fedezheti fel az árnyakban lapuló ellenfeleit, mivel a tüzek méretének – azaz az árnyékoknak – a megváltozása kívülállók számára kiszámíthatatlan, azonnal létrejövő hatás."
+        },
+        {
+            "type": "rule",
+            "title": "Tűzválasztás",
+            "headers": [
+                "Mana pont",
+                "Varázslás ideje",
+                "Időtartam"
+            ],
+            "rows": [
+                [
+                    "4/E",
+                    "2 szegmens",
+                    "3 kör"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A varázslat hatására a tűz fényés hőhatásai térben elválaszthatóak. Ez azt jelenti, hogy a láng e két összetevője a tűzvarázsló körüli tíz ynevi láb sugarú körben tetszőleges helyen fejtheti ki hatását. A varázslat használatát korlátozza, hogy az egyik komponensnek mindenképpen a láng eredeti helyén kell maradnia. A tűzvarázsló ezzel a varázslattal komoly károkat okozhat ellenfeleinek, ugyanis megteheti, hogy a tűz képét a kandallóban hagyja, de a hővel támad, és minden látható tűz nélkül sebez. A sikeres találathoz a tűzvarázslónak Célzó dobást kell tennie, +30-cal. A találat majdnem bizonyos, hiszen a láthatatlan láng elől szinte lehetetlen kitérni."
+        },
+        {
+            "type": "paragraph",
+            "text": "Az áldozaton persze meglátszanak az égés nyomai, még az esetleges gyúlékony anyagok is lángra lobbanhatnak. A tűzvarázsló előszeretettel alkalmazza a Tűzválasztást nagyobb ütközetek, ostromok alkalmával is, hiszen a legtöbb efféle esemény alatt akár mágia, akár fáklyák hatására is gyúlhatnak nagy, elszabaduló tüzek."
+        },
+        {
+            "type": "paragraph",
+            "text": "Amennyiben a tűzvarázsló a hőhatást hagyja a láng eredeti helyén, és a fényt mozgatja, ezzel nagy csarnokokat, termeket deríthet fel."
+        },
+        {
+            "type": "rule",
+            "title": "Tűzvarázslás",
+            "headers": [
+                "Mana pont",
+                "Varázslás ideje",
+                "Időtartam"
+            ],
+            "rows": [
+                [
+                    "10/E",
+                    "1 szegmens",
+                    "Egyszeri"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "csak a hét iskolaformát használhatja, míg az átalakítandó tűz formája tetszőleges. Azok az Őstüzek, melyeket egy tűzvarázsló, vagy egy elementálista akarata irányít (lásd a Tűznyelőnek de a Tűz a Tűzgyőző és a Tűzpenge is, és a szabad elemi formák) nem reagálnak az átformázásra. A felhasznált mana elvész. Ezzel a varázslattal elképzelhető az a jelenet is, hogy a tűzvarázsló ellen harcoló ellenfél körülvevő aura tűzkitöréssé alakul. Az Erősségnek legalább annyinak kell lenni, mint az átformázni kívánt tűz erőssége. A személyes aura nem véd ellene, mert a tűzvarázsló misztikus tűzzel való kapcsolata miatt (melyet a varázslat által használ ki) olyan lesz, mintha az Őstűz a saját Személyes Aurájának lenne a része és nem az áldozaté."
+        },
+        {
+            "type": "rule",
+            "title": "Tűznyelés",
+            "headers": [
+                "Mana pont",
+                "Varázslás ideje",
+                "Időtartam"
+            ],
+            "rows": [
+                [
+                    "10/E",
+                    "1 szegmens",
+                    "Egyszeri"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A tűzvarázsló ezen varázslata egyesíti magában a támadást és a védekezést. A tűzvarázsló elnyelheti a rá ható tüzet, majd csóva formában visszafújhatja ellenfelére. Jellemző még, hogy a tűzvarázsló varázslás közben érzi, hogy szükség van-e még mágikus energia befektetésére, azaz hogy mekkora erősséggel kell varázsolnia a varázslatot. Még így is fenyegeti azonban az a veszély, hogy Mana pontjai hamarabb fogynak el, minthogy az összes tüzet elnyelte volna, azaz a tűz erősítése még mindig nagyobb, mint a varázslaté. Ebben az esetben a tűz csökkentett Erősséggel hat. A tűzvarázslónak a varázslat után 1 teljes köre van, hogy az elnyelt tüzet kifújja, ellenkező esetben a tűz hatni fog az elnyelt Erősségben. Csontba, mivel a tűz a tűzvarázsló testében van, a tűz sebzése maximális (E-nként 6 Sp) lesz. Ebből is látszik, hogy a varázslat használata nem veszélytelen, ámde nem kis meglepetést okozhat a pusztító lángokat elnyelő és a támadórára visszalehelő tűzvarázsló. A visszafújásnál a varázslat teljesen megegyezik a Tűzcsóva nevű tűzvarázslói varázslattal. A visszafújás nem igényel Mana pont ráfordítást."
+        },
+        {
+            "type": "paragraph",
+            "text": "Mivel a varázslat lényege az időzítés, a tűzvarázsló csak akkor alkalmazhatja sikeresen, ha összpontosít a megfelelő időpontra. Ezt úgy teheti meg, hogy az adott harci kör elején bejelenti, hogy abban az esetben, ha tüzet használnak ellene, akkor Tűznyelést varázsol. Az adott körben más varázslatot nem idézhet meg. Ha a tűzzel való támadás bekövetkezik, akkor a varázslat létrejön, méghozzá a másodperc törtrésze alatt."
+        },
+        {
+            "type": "rule",
+            "title": "Tűzrablást",
+            "headers": [
+                "Mana pont",
+                "Varázslás ideje",
+                "Időtartam"
+            ],
+            "rows": [
+                [
+                    "4/E",
+                    "Lásd a leírást!",
+                    "Egyszeri"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A varázslat képessé teszi használóját arra, hogy varázslatát megformálva kevesebb manát használjon fel. A Zónán belül égő összes tűz E-jét felhasználhatja varázslatához, amik annak Erősségét fogják ezentúl növelni. A tűzvarázslónak legalább 1 E Erősségű varázslatot kell létrehoznia, és ahhoz hozzáfűznie annyi E Tűzrablást, amennyit szükségesnek lát. Minden E Tűzrablást a Zónán belül lobogó Őstüzek E-jéből kiolt 1 E-t. A tűz ezután a tűzvarázsló varázslatát erősíti. Ha több E Tűzrablást varázsolt, mint amennyi E Őstűz a Zónán belül jelen van, akkor a Mana pontok elvesznek."
+        },
+        {
+            "type": "paragraph",
+            "text": "A tűzvarázsló ezt a varázslatot csak a hét iskolaformával és a szabálytalan elemi formákkal kapcsolatban alkalmazhatja."
+        },
+        {
+            "type": "section_title",
+            "text": "Őstüzek befolyásolása"
+        },
+        {
+            "type": "rule",
+            "title": "Átformázás",
+            "headers": [
+                "Mana pont",
+                "Varázslás ideje",
+                "Időtartam"
+            ],
+            "rows": [
+                [
+                    "6/E",
+                    "1 szegmens/E",
+                    "Egyszeri"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A tűzvarázsló e varázslat által képessé lesz arra, hogy más varázshasználók által idézett Őstüzet átformáljon a saját igényeinek megfelelő formába. A formázás tekintetében"
+        }
+    ]
+}

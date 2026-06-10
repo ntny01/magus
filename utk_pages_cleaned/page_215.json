@@ -1,0 +1,76 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": true,
+    "section_title": "Tárgyak Ellenállása",
+    "content_blocks": [
+        {
+            "type": "paragraph",
+            "text": "Essen még néhány szó a sisakokról, amiknek szintén rengeteg formája ismert Ynev-szerte. A sisakot sem magában hordják, hanem posztóból, nemezből készült védőrészt vesznek alá, ami tompítja az ütéseket. A legegyszerűbb sisakok csak a fej tetejét védik. Az igényesebb darabok már rendelkeznek az orr fölé nyúló arcvédővel, oldaluk pedig lenyúlik a fülre. Ez a lenyúló rész akár a harcos válláig is érhet. Speciális változata ennek a vödörsisak, ami az arcot is elfedi, mindössze apró réseket és lyukakat hagyva a kilátás és a légzés miatt."
+        },
+        {
+            "type": "paragraph",
+            "text": "Bonyolultságukban ezután következnek az egyszerű rostélyos sisakok, ahol az orrvédőt a mozgatható rostély váltja föl. A legfinomultabbak kétségkívül a teljes vértezetet kiegészítő nagy sisakok, ami több részből áll, és az egész fejet, sőt a nyakat is körülveszi."
+        },
+        {
+            "type": "rule",
+            "title": "Sisakok SP-je és MGT módosítója",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Páncél sérülése és SP veszteség",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Páncél javítási költsége",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "GM döntési joga",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Példa a GM döntési jogára és Strukturális pontok",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "Különböző anyagú tárgyak más és más hatásra érzékenyek, ezért először ezeket kell összefoglalnunk."
+        },
+        {
+            "type": "rule",
+            "title": "Strukturális pontok (SP) definíciója és működése",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "SP módosítók értelmezése",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        }
+    ]
+}

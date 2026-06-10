@@ -1,0 +1,22 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": true,
+    "section_title": "A Fény Ösvénye",
+    "content_blocks": [
+        {
+            "type": "rule",
+            "text": "A Fény Ösvényére lépett tűzvarázslók 5. Tsz felett, ha a KM is beleegyezik beavatást nyerhetnek Sogron felsőbb misztériumaiba, a Tűzmágia mélyebb összefüggéseibe. Tanulmányaik során bepillantást nyerhetnek az ősi godoni iratokba, melyekből, illetve egyes, szintén Godon idejéből származó, ősi fúliánsból elsajátíthatják a Godoni Ösvény alapjait, azaz tanulhatják a Pszi (Godoni Ösvény) képzettséget 3. fokú Oktatás képzettségnek megfelelő bónuszokkal.",
+            "title": "A Godoni Ösvény elsajátítása",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "Tudásuk miatt a külvilág szemében leginkább rettegett, és legnagyobb hatalmú varázslói Ordannak; bár megjegyzendő, hogy a godoni szemlélet és gondolkodásmód átvétele miatt talán a leginkább emberségesnek nevezhetőek Sogron fanatikusai között.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        }
+    ]
+}

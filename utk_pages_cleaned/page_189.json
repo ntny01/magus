@@ -1,0 +1,281 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": false,
+    "section_title": "",
+    "content_blocks": [
+        {
+            "type": "paragraph",
+            "text": "A felsorolt hatások – melyeknél ez nem egyértelmű – a következő hátrányokat, érték- és képességcsökkenéseket okozzák. Ahol negatív szám áll, ott annyival csökken az érintett képesség. A Tulajdonságcsökkenésekkel párhuzamosan a karakter természetesen elveszíti időlegesen a képzettségei nyújtotta bónuszokat, illetve akár még mágikus képességeit is."
+        },
+        {
+            "type": "table",
+            "title": "A táblázatban szereplő hatások a M.A.G.U.S. játékrendszerében a következő jelentik:",
+            "headers": [
+                "Hatás",
+                "Leírás"
+            ],
+            "rows": [
+                [
+                    "Alvás, Ájulás",
+                    "az áldozat bizonyos időre eszméletét veszti, nem tud a külvilágról"
+                ],
+                [
+                    "Bénultság",
+                    "az áldozat akaratlagos mozgásra képtelen"
+                ],
+                [
+                    "Rosszullét",
+                    "az áldozat komoly hányingerrel, fejfájással stb. küszködik"
+                ],
+                [
+                    "Fájdalom",
+                    "a kínmérgek sajátja, hogy áldozatuknak szörnyű fájdalmat okoznak"
+                ],
+                [
+                    "Görcs",
+                    "az áldozat részlegesen lebénul, csak nehézkesen és lassan képes mozogni"
+                ],
+                [
+                    "Gyengeség",
+                    "az áldozat legyengül, képtelen bármilyen megerőltető tettre"
+                ],
+                [
+                    "Kábulat, Bódulat",
+                    "az áldozat tudata eltompul, akarata gyengül, esetleg látomások gyötrik"
+                ],
+                [
+                    "Halál",
+                    "az áldozat meghal, egyszerű gyógyítás haszavehetetlen"
+                ],
+                [
+                    "Semmi",
+                    "a méreg valamilyen oknál fogva nem hat"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "title": "A mérgek árai",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A Méregkeverés képzettségnél ismertetett Ismeret pontok általánosságban megfelelnek az adott méreg bonyolultságának, előállítási nehézségének. Éppen ezért nagy általánosságban megállapítható, hogy minden méreg 1 adagja annyi pénzbe kerül, amennyi a Méregkeverés képzettségnél feltüntetett táblázatban szerepel. Ha az adott méregkeverő a Herbalizmus, illetve az Alkimia képzettséggel, saját laboratóriumában állítja elő az adott mérget, akkor ez az összeg a korábbi ár töredéke, mindössze harmada."
+        },
+        {
+            "type": "paragraph",
+            "title": "Példamérgek",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "Íme néhány, Yneven létező méreg leírása, a fentiek alapján lebontva."
+        },
+        {
+            "type": "paragraph",
+            "title": "Álomkenőcs",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "2. szintű rosszullétet vagy bódulatot okozó szer. A legcélszerűbb idegméregnek nevezzük. Egyes vidékeken – így főleg Abasziszban – boszorkányok állítják elő maszlagból. Hatása gyors és rövid ideig tart. Kontaktméreg, azaz elég bőrfelületre juttatni, de az ételbe, italba nem keverhető. Valószerű álmokat és látomásokat okoz, ezért boszorkányok gyakran használják jóslatokhoz. Túl gyakori használata kábítószer-függőséget okozhat. Egy adagja 1 arany és 8 ezüst."
+        },
+        {
+            "type": "paragraph",
+            "title": "A Császár Bosszúja",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "3. szintű több komponensű méreg. A toroni császári udvar méregkeverői készítik és készítésének titkát féltve őrzik. Csak ételbe keverhető. Kereskedelemben nem beszerezhető, de előállítási költsége is hozzávetőleg 100 arany, mivel különleges összetevők szükségesek hozzá. A császár minden kétes hűségű bizalmi emberének ételébe belecsempészett egy keveset. Hatását tekintve a méreg az emésztőrendszerre hat, lappangó, és ájulást vagy halált okoz, amennyiben nem kap meg egy bizonyos ellenszert az áldozat. Ha az illető áruló lesz, a császár futni hagyja – hiszen az ellenszerhez nem juthat hozzá."
+        },
+        {
+            "type": "paragraph",
+            "title": "Feketevér",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "2. szintű gorviki eredetű idegméreg. Sűrű, fekete, keserű folyadék, legtöbbször ételbe keverve adják be. Az idegrendszerre hat, bódulatot, súlyosabb esetben halált okoz. Gyors hatású és rövid ideig hat – ha túlélik. Egyetlen adag 20 aranyba kerül."
+        },
+        {
+            "type": "paragraph",
+            "title": "Kobramarás",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "2. szintű összetett fegyverméreg, melynek fő komponense a kígyó mérge. Az izomrendszerre hat. Görcsöt vagy halált okoz, hatása azonnali és görcs esetén hosszú ideig tart. Főleg délen készítik, északon nehezen beszerezhető és rendkívül drága. Egy adagja délen is 22 aranyba kerül."
+        },
+        {
+            "type": "paragraph",
+            "title": "Altató",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "0. szintű idegrendszerre ható méreg, mely vagy hatástalan vagy alvást okoz. Gyorsan hat, de csak rövid ideig. Fegyverre kenhető, enyhén zöldes színű gél, készítése a legtöbb vajákos előtt ismert. Ára adagonként 11 ezüst."
+        },
+        {
+            "type": "paragraph",
+            "title": "Toroni Pokol",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "3. szintű fegyverre kenhető kínméreg. A véráramba jutva fejti ki azonnali hatását, ami hosszú ideig tart. Az áldozat"
+        },
+        {
+            "type": "paragraph",
+            "title": "A hatás időtartama",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "Nem közömbös, hogy egy méreg, ha egyszer már hatni kezdett, mennyi ideig hat. Ezt nevezzük a méreg időtartamának, s a következő kategóriákat különböztetjük meg:"
+        },
+        {
+            "type": "paragraph",
+            "title": "Egyszeri hatású",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "hatását egyetlen kör alatt kifejti, majd elmúlik. Általában kínmérgek, pillanatnyi bénulást, vagy futó görcsöt okoznak."
+        },
+        {
+            "type": "paragraph",
+            "title": "Rövid ideig ható mérgek",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "Mindössze 1k6-szor tíz percen át fejtik ki hatásukat, azután a szervezet felülkerekedik."
+        },
+        {
+            "type": "paragraph",
+            "title": "Közepes ideig ható mérgek",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A mérgek legtöbbje ebbe a kategóriába sorolható. Ezek 1k6 órán keresztül hatnak."
+        },
+        {
+            "type": "paragraph",
+            "title": "Hosszú ideig ható mérgek",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "Főleg étel- és italmérgek; 1k6 napon át gyötrik áldozatukat."
+        },
+        {
+            "type": "paragraph",
+            "title": "Maradandó hatású mérgek",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "Ezek a mérgek maradandó károsodást okoznak a szervezetben. Ide tartoznak természetesen a halált okozó mérgek, de néha a görcsöt, bénultságot okozók is."
+        },
+        {
+            "type": "paragraph",
+            "text": "A méreg hatásának múlásával, az áldozat a méreg típusához tartozó összes enyhébb hatáson keresztül megy: Gyengeség, Rosszullét, Kábulat, Bódulat, Fájdalom, Görcs, Bénultság, Alvás, Ájulás, Halál."
+        },
+        {
+            "type": "table",
+            "title": "Hatás",
+            "headers": [
+                "Hatás",
+                "Erő",
+                "Ügyesség",
+                "Gyorsaság",
+                "Akaraterő (AKS)",
+                "Akaraterő (AKR)",
+                "Érzékelés"
+            ],
+            "rows": [
+                [
+                    "Rosszullét",
+                    "-1",
+                    "-1",
+                    "-1",
+                    "—",
+                    "-1",
+                    "-1"
+                ],
+                [
+                    "Gyengeség",
+                    "-2",
+                    "-2",
+                    "-1",
+                    "—",
+                    "—",
+                    "—"
+                ],
+                [
+                    "Kábulat, Bódulat",
+                    "-1",
+                    "-1",
+                    "-1",
+                    "-3",
+                    "-3",
+                    "-3"
+                ],
+                [
+                    "Görcs",
+                    "-4",
+                    "-4",
+                    "-4",
+                    "—",
+                    "—",
+                    "-1"
+                ]
+            ]
+        }
+    ]
+}

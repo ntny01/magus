@@ -1,0 +1,54 @@
+{
+    "is_new_chapter": true,
+    "chapter_title": "HARCRENDSZER",
+    "is_new_section": true,
+    "section_title": "A Harc Menete",
+    "content_blocks": [
+        {
+            "type": "paragraph",
+            "text": "A harc a M.A.G.U.S. Új Törvénykönyvben körökre osztottan zajlik, ahol minden karakter és szörny egy adott sorrendben cselekszik. A harc célja az ellenfél legyőzése, ami általában az életerőpontjainak nullára csökkentésével érhető el."
+        },
+        {
+            "type": "rule",
+            "title": "Kezdeményezés",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "table",
+            "title": "Kezdeményezés Módosítók",
+            "headers": [
+                "Tényező",
+                "Módosító"
+            ],
+            "rows": [
+                [
+                    "Meglepetés",
+                    "-2"
+                ],
+                [
+                    "Előnyös pozíció",
+                    "+1"
+                ],
+                [
+                    "Nehéz páncél",
+                    "-1"
+                ]
+            ]
+        },
+        {
+            "type": "flavor_text",
+            "text": "A csata zaja betöltötte a szűk folyosót. Kardok csattogása, páncélok zörgése, és a harcosok elszánt kiáltásai keveredtek a levegőben. Minden mozdulat számított, minden ütés sorsdöntő lehetett."
+        },
+        {
+            "type": "rule",
+            "title": "Támadás és Védekezés",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        }
+    ]
+}

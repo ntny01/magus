@@ -1,0 +1,330 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": false,
+    "section_title": "",
+    "content_blocks": [
+        {
+            "type": "paragraph",
+            "text": "világ különféle sajátosságait igyekeznek kihasználni, azokat a saját javukra fordítani. A Mentalista iskolák ugyanezt teszik, természetesen a Mentális sík adta lehetőségeket felhasználva. A különféle Nekromanta iskolák változatos módszerekkel kutatják az elmúlás, a lélekvándorlás titkait, míg az Elementálistáknál senki nem érti jobban az őselemek összefüggéseit és törvényszerűségeit. A természeti anyagok mágiáját űző Anyagmágusok pedig az anyagi sík szabályait kutatják és feszegetik. A valódi Feketemágusok otthonosan mozognak az élő teremtmények energiáinak megcsapolásában és felhasználásában. Ugyanekkor a Tér- és Időmágusok a távolságok áthidalásában különféle módszereiben járatosak. Külön iskolát képeznek a Demonidézők is, akik a különféle köztes síkok teremtményeinek megidézésében és szolgálatba bírásában jeleskednek."
+        },
+        {
+            "type": "paragraph",
+            "text": "A varázsló karakter választását csak a tapasztalt szerepjátékosoknak tanácsoljuk. Olyanoknak, akik töviről-hegyire ismerik a M.A.G.U.S. szabályait, értik és sajátjuknak érzik a háttérben meghúzódó ideológiát. Azoknak a játékosoknak viszont, akik a Mágia c. fejezetet végigböngészvén azt sem értik, mivel találkoztak... nos, nekik egyelőre eszükbe se jusson varázsló karaktert indítani!"
+        },
+        {
+            "type": "rule",
+            "title": "Harcérték",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A varázslók a mágia letéteményesei. Alig szentelnek figyelmet a közelharc gyakorlásának – a küzdelem számukra nem több, mint az az igen távoli és elhanyagolható valószínűségű esemény, amikor mágiájukkal nem érnek célt. Éppen ezért általában nem növelik HM-jeik számát."
+        },
+        {
+            "type": "rule",
+            "title": "Életerő és Fájdalomtűrés",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A varázslók a legritkább esetben kerülnek szembe olyan helyzetekkel, ahol Intelligenciájuk helyett puszta szívósságukra, testük tűrőképességére lennének utalva. Épp ezért szintenként általában nem növelik Fp-ik számát."
+        },
+        {
+            "type": "rule",
+            "title": "Képzettségek",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A varázsló a tudományos és misztikus képzettségeinek igen szerteágazó tárházából gazdálkodik. Már első szinten is igen művelt, tudós karakter, aki mágia gyakorlása közben igen sok képzettséget köteles elsajátítani, s ez ideje nagy részét leköti. Épp ezért a varázslók általában 15 ponttal növelik Kp-ik számát."
+        },
+        {
+            "type": "rule",
+            "title": "Varázserő",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A Varázsló karakter hatalmát a Manahálóból, az éteri és anyagi síkokat behálózó, összetartó szövedékből nyeri. Magát a Teremtés princípiumát formálja és alakítja kedve szerint hatalmával, ha elég bölcs és tapasztalt. Épp ezért a mágusok, Ynev legnagyobb hatalmú varázslói azok, kiket a halandók közül leginkább az istenekhez hasonlónak vélhetünk. Legtöbbször, szintenként 10 ponttal növelik Mp-jaik számát."
+        },
+        {
+            "type": "rule",
+            "title": "A varázsló induló képzettségei",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A varázslók, akik nem egy nagyobb neves iskola növendékei, általában nem az első szinten, hanem később kerülnek hátrányba, hiszen mesterük saját mágiaformáját általában igen magas szinten űzi, míg más mágiaformákat, melyeket később sajátítanának el tőle a növendékek, valószínűleg kevésbé ismer."
+        },
+        {
+            "type": "paragraph",
+            "text": "A varázsló 1 Tsz.-en általában inkább Tudományos képzettségeikkel alapozzák meg Misztikus képzettségeik tárházát; igen művelt, kifinomult emberek."
+        },
+        {
+            "type": "rule",
+            "title": "A varázsló induló képzettségei 1. Tapasztalati szinten:",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "table",
+            "headers": [
+                "Képzettségek",
+                "Fok"
+            ],
+            "rows": [
+                [
+                    "Nyelvtudás",
+                    "3. fok"
+                ],
+                [
+                    "Nyelvtudás",
+                    "2. fok"
+                ],
+                [
+                    "Politika/diplomácia",
+                    "2. fok"
+                ],
+                [
+                    "Udvari etikett",
+                    "2. fok"
+                ],
+                [
+                    "Írás/olvasás",
+                    "3. fok"
+                ],
+                [
+                    "Ősi nyelv",
+                    "3. fok"
+                ],
+                [
+                    "Számtan/mértan",
+                    "3. fok"
+                ],
+                [
+                    "Történelem",
+                    "2. fok"
+                ],
+                [
+                    "Magas mágia",
+                    "3. fok"
+                ],
+                [
+                    "Pszi (kyr)",
+                    "4. fok"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A Varázsló képzettségei, melyeket mestertől az Oktatás képzettség 4. foka által nyújtott előnnyel tanulhat: Alkímia, Demonológia, Drágakőmágia, Élettan, Építészet, Heraldika, Herbalizmus, Írás/olvasás, Kultúra, Legendaismeret, Lélektan, Magasmágia, Nekromancia, Nyelvtudás, Orvoslás, Őselemi mágia, Ősi nyelv, Politika/diplomácia, Pszi (kyr), Rúnamágia, Történelem, Szakma, Számtan/mértan, Udvari etikett."
+        },
+        {
+            "type": "rule",
+            "title": "A varázsló fegyvertára:",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A varázslók igen ritkán ragadnak fegyvert. Ekkor általában hazájukra jellemző könnyű fegyvereket (töröket, egykezes kardokat) vagy varázslóbotjukat használják."
+        },
+        {
+            "type": "rule",
+            "title": "A varázsló különleges előnyei és hátrányai:",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "I. A varázsló karakter ingyenesen megkapja a Mágikus fogékonyság és a Pszi érzékenység Hátteret. II. A Mozaikmágia alkalmazásához elengedhetetlenül szükséges az adott mágiaforma alapjainak ismerete, azaz a vonatkozó képzettségek birtoklása legalább 3. fokon. A szükséges képzettségeket megtalálod a Magasmágia című fejezetben az egyes mágiaformák leírásai előtt."
+        },
+        {
+            "type": "rule",
+            "title": "Egy átlagos 1. Tapasztalati szintű varázsló",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "table",
+            "headers": [
+                "Tulajdonság",
+                "Érték",
+                "Tulajdonság",
+                "Érték"
+            ],
+            "rows": [
+                [
+                    "Erő",
+                    "11",
+                    "Ép",
+                    "12"
+                ],
+                [
+                    "Gyorsaság",
+                    "12",
+                    "Fp",
+                    "26"
+                ],
+                [
+                    "Ügyesség",
+                    "14",
+                    "Vp",
+                    "16"
+                ],
+                [
+                    "Állóképesség",
+                    "12",
+                    "Mp",
+                    "9"
+                ],
+                [
+                    "Egészség",
+                    "12",
+                    "Kegy-pont",
+                    "—"
+                ],
+                [
+                    "Karizma",
+                    "14",
+                    "MME",
+                    "20"
+                ],
+                [
+                    "Intelligencia",
+                    "14",
+                    "AME",
+                    "20"
+                ],
+                [
+                    "Akaraterő",
+                    "14",
+                    "",
+                    ""
+                ],
+                [
+                    "Asztrál",
+                    "14",
+                    "",
+                    ""
+                ],
+                [
+                    "Érzékelés",
+                    "12",
+                    "",
+                    ""
+                ]
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Elköltött KAP-ok:",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "table",
+            "headers": [
+                "KAP tétel",
+                "Érték"
+            ],
+            "rows": [
+                [
+                    "Iskola (Varázsló)",
+                    "10 pont"
+                ],
+                [
+                    "Mágikus fogékonyság",
+                    "—"
+                ],
+                [
+                    "Pszi érzékenység",
+                    "—"
+                ],
+                [
+                    "Manalátó",
+                    "2"
+                ],
+                [
+                    "HM",
+                    "—"
+                ],
+                [
+                    "Fp",
+                    "—"
+                ],
+                [
+                    "Kp",
+                    "14pont (14 Kp)"
+                ],
+                [
+                    "Mana pont",
+                    "24 pont (8 Mana pont)"
+                ]
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Fegyverzet:",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "table",
+            "headers": [
+                "Fegyverzet tétel",
+                "Érték"
+            ],
+            "rows": [
+                [
+                    "Fegyver",
+                    "fvn*"
+                ],
+                [
+                    "Időigény",
+                    "3"
+                ],
+                [
+                    "KÉ",
+                    "24"
+                ],
+                [
+                    "TÉ",
+                    "37"
+                ],
+                [
+                    "VÉ",
+                    "86"
+                ]
+            ]
+        }
+    ]
+}

@@ -1,0 +1,442 @@
+{
+    "is_new_chapter": true,
+    "chapter_title": "Tűz Táplálói Rend",
+    "is_new_section": true,
+    "section_title": "A tűzvarázsló induló képzettségei",
+    "content_blocks": [
+        {
+            "type": "rule",
+            "text": "A tűzvarázslók szintenként átlagosan 6 ponttal növelik Mp-jaik számát.",
+            "title": "Manapont növekedés",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "",
+            "title": "1. Tapasztalati szinten",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "table",
+            "text": "",
+            "title": "Induló képzettségek",
+            "headers": [
+                "Képzettségek",
+                "Fok"
+            ],
+            "rows": [
+                [
+                    "Fegyverhasználat (egykezes kardok és tőr jellegű fegyverek)",
+                    "2. fok"
+                ],
+                [
+                    "Írás/olvasás",
+                    "3. fok"
+                ],
+                [
+                    "Ősi nyelv (godoni)",
+                    "3. fok"
+                ],
+                [
+                    "Vallásismeret (Sogron)",
+                    "2. fok"
+                ],
+                [
+                    "Őselemi mágia",
+                    "2. fok"
+                ],
+                [
+                    "Pszi (pyarroni)",
+                    "3. fok"
+                ],
+                [
+                    "Tapasztalati mágia (tűzmágia)*",
+                    "3. fok"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "* a tűzvarázslók csakis az Őstűz síkjának teremtményeiről bírnak beható ismeretekkel",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "A tűzvarázsló rendje által oktatott képzettségei, melyeket az Oktatás képzettség 4. foka által nyújtott bónuszokkal tanulhat:",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "Csomózás, Fegyverhasználat, Hadvezetés, Hajózás, Heraldika, Időjóslás, Írás/olvasás, Kultúra, Lélektan, Művészet (Rajz), Nyelvtudás, Ősi nyelv (godoni, kyr), Őselemi mágia (Tűz), Politika/diplomácia, Pszi (pyarroni), Rúnamágia, Számtan/mértan, Tapasztalati mágia (tűzmágia), Térképészet, Történelem, Udvari etikett, Úszás, Vallásismeret.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "",
+            "title": "A tűzvarázsló fegyvertára",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "A tűzvarázslók, mágiajuhászok hasonlatosan fegyverzetükben is jócskán eltérnek más mágikus hagyományok követőitől. Tradicionálisan a lángnyelvet formázó kardjukat forgatják, harcosabb lelkületű tagjaik pedig baljukba szintén lobogó lángot mímelő lángtőrt ragadnak.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "A mágiahasználók között egyedülálló, hogy előszeretettel viselik a rendjük jelképeként elhíresedett, a szalamandra bőréhez hasonló, koromszín pikkelyvértet.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "",
+            "title": "A tűzvarázsló különleges előnyei és hátrányai",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "I. A tűzvarázsló karaktert indító játékos ingyenesen megkapja a Mágikus fogékonyság és a Pszi érzékenység Hátteret.",
+            "title": "Ingyenes hátterek",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "II. Különleges képességük a Tűzmágia használata, melyet az elsajátított Tapasztalati mágia képzettség 3. fokának ismerete tesz lehetővé.",
+            "title": "Tűzmágia használat",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "III. A tűzvarázslók 1 Tsz.-en rendjük adományaként megkapják fegyverzetüket: lángkard és lángtőr, illetve pikkelyvértezetüket. A lángkard s -tőr értékei megfelelnek a normál hosszúkard és tőr értékeinek.",
+            "title": "Induló felszerelés",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "",
+            "title": "A pikkelyvértezetük értékei",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "MGT: -1, SFÉ: 3, Súly: 14 ynevi font, STP: 60",
+            "title": "Pikkelyvértezet statisztikák",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "",
+            "title": "Egy átlagos első szintű tűzvarázsló",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "table",
+            "text": "",
+            "title": "Tulajdonságok",
+            "headers": [
+                "Tulajdonság",
+                "Érték",
+                "Tulajdonság",
+                "Érték"
+            ],
+            "rows": [
+                [
+                    "Erő:",
+                    "13",
+                    "Ep:",
+                    "13"
+                ],
+                [
+                    "Gyorsaság:",
+                    "13",
+                    "Fp:",
+                    "33"
+                ],
+                [
+                    "Ügyesség:",
+                    "13",
+                    "Vp:",
+                    "15"
+                ],
+                [
+                    "Állóképesség:",
+                    "13",
+                    "Mp:",
+                    "6"
+                ],
+                [
+                    "Egészség:",
+                    "14",
+                    "Kegy-pont:",
+                    "-"
+                ],
+                [
+                    "Karizma:",
+                    "13",
+                    "MME:",
+                    "19"
+                ],
+                [
+                    "Intelligencia:",
+                    "14",
+                    "AME:",
+                    "19"
+                ],
+                [
+                    "Akaraterő:",
+                    "14",
+                    "",
+                    ""
+                ],
+                [
+                    "Asztrál:",
+                    "14",
+                    "",
+                    ""
+                ],
+                [
+                    "Érzékelés:",
+                    "14",
+                    "",
+                    ""
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "",
+            "title": "Elköltött KAP-ok",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "table",
+            "text": "",
+            "title": "KAP elköltés",
+            "headers": [
+                "Kategória",
+                "Érték"
+            ],
+            "rows": [
+                [
+                    "Iskola (Tűzvarázsló)",
+                    "6 pont"
+                ],
+                [
+                    "Mágikus fogékonyság",
+                    "-"
+                ],
+                [
+                    "Pszi érzékenység",
+                    "-"
+                ],
+                [
+                    "HM",
+                    "14 pont (7 HM)"
+                ],
+                [
+                    "Fp",
+                    "5 pont (5 Fp)"
+                ],
+                [
+                    "Kp",
+                    "10 pont (10 Kp)"
+                ],
+                [
+                    "Mana pont",
+                    "15 pont (5 Mana pont)"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "",
+            "title": "Fegyverzet",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "table",
+            "text": "",
+            "title": "Fegyver statisztikák",
+            "headers": [
+                "Fegyver",
+                "Alap",
+                "lángkard",
+                "lángtőr"
+            ],
+            "rows": [
+                [
+                    "Időigény:",
+                    "3",
+                    "5",
+                    "5"
+                ],
+                [
+                    "KÉ:",
+                    "27",
+                    "34",
+                    "35"
+                ],
+                [
+                    "TÉ:",
+                    "39",
+                    "54",
+                    "54"
+                ],
+                [
+                    "VÉ:",
+                    "86",
+                    "101",
+                    "95"
+                ],
+                [
+                    "CÉ:",
+                    "27",
+                    "27",
+                    "27"
+                ],
+                [
+                    "Sebzés:",
+                    "1k6",
+                    "2k6",
+                    "1k10"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "",
+            "title": "Képzettségek",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "table",
+            "text": "",
+            "title": "Képzettségek listája",
+            "headers": [
+                "Képzettségek",
+                "Fok",
+                "Kp"
+            ],
+            "rows": [
+                [
+                    "Fegyverhasználat (lángtőr)",
+                    "3. fok",
+                    "5 Kp"
+                ],
+                [
+                    "Fegyverhasználat (lángkard)",
+                    "3. fok",
+                    "5 Kp"
+                ],
+                [
+                    "Harctéri gyakorlat",
+                    "3. fok",
+                    "10 Kp"
+                ],
+                [
+                    "Helyismeret (szülőföld)",
+                    "3. fok",
+                    "-"
+                ],
+                [
+                    "Kultúra",
+                    "3. fok",
+                    "-"
+                ],
+                [
+                    "Nyelvtudás (anyanyelve)",
+                    "3. fok",
+                    "-"
+                ],
+                [
+                    "Nyelvtudás",
+                    "3. fok",
+                    "-"
+                ],
+                [
+                    "Írás/olvasás",
+                    "3. fok",
+                    "-"
+                ],
+                [
+                    "Ősi nyelv (godoni)",
+                    "3. fok",
+                    "-"
+                ],
+                [
+                    "Számtan/mértan",
+                    "1. fok",
+                    "1 Kp"
+                ],
+                [
+                    "Történelem",
+                    "2. fok",
+                    "3 Kp"
+                ],
+                [
+                    "Vallásismeret (Sogron)",
+                    "2. fok",
+                    "-"
+                ],
+                [
+                    "Őselemi mágia*",
+                    "2. fok",
+                    "-"
+                ],
+                [
+                    "Pszi (pyarroni)",
+                    "3. fok",
+                    "-"
+                ],
+                [
+                    "Tapasztalati mágia (tűzmágia)*",
+                    "3. fok",
+                    "-"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "* a tűzvarázslók csakis az Őstűz síkjának teremtményeiről bírnak beható ismeretekkel",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "A Tűzkobra kultuszának terjesztésével, a vallási kérdésekkel a Tűz Táplálói Rend foglalkozik. Vezetői a Sogron Útját járó tűzvarázslók, akik főként a vallás elméleti kérdéseivel foglalkoznak. Közülük való vezeti az Ordani Rend minden nagyobb templomát és rendházát – a városban vagy határaink kívül. A magas rangúak – északi pédát követve – a Tűz Letéteményeseinek, a legalacsonyabbak pedig a Tűz Megtisztítóinak nevezik magukat.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "A Sogron Útját járó tűzvarázslók útmutatása alapján látják el munkájukat, a hétköznapi papi teendőket – a hívek vallási tanítását, a mindennapos szertartásokat – végző Tűz Táplálói. A legalacsonyabb rangúak a Tűz Szolgálói, ők tartják rendben a templomokat, kerteket, iskolákat, ők végeznek minden hétköznapi munkát, mely a rend létesítményei és fennmaradása érdekében nélkülözhetetlen. Munkájuk fontossága nagy tiszteletet biztosít számukra mind a hívek, mind a magasabb rangú rendtagok körében. Részletesebben lásd a Sogron-pap c. fejezetben a 91. oldalon.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        }
+    ]
+}

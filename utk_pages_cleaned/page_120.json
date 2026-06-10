@@ -1,0 +1,106 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": true,
+    "section_title": "Tűz Hordozói Rend",
+    "content_blocks": [
+        {
+            "type": "paragraph",
+            "text": "A Tűz Hordozói Rend elsősorban a godoni alapú Tűzmágia tanulmányozásával és megőrzésével törődik. Ők a Fény Ösvényére lépett Tűzvarázslók, a Tűzmágia legkülönb ismerői. Közülük kerül ki a tűzvarázslók nagymestere; ők tanítják a Tűzmágia használatára az Ordani Rend minden tagját, a Fény Ösvényére lépő Tűzvarázslóktól egészen az egyszerű Lángörökig. A Tűz Hordozói Rendhez sorolják még, alacsony rangban, az összes olyan Tűzvarázslót, aki (5. Tapasztalati szint alatt) még nem lépett a három Út egyikére sem.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "Más teendőik mellett a Fény Ösvényén járó tűzvarázslók felelnek az ordani nagykönyvtár működtetéséért is. Jeles tudósaik immáron évszázadok óta kutatják, gyűjtögetik és rendszerezik a godoni és kyr időkből hátramaradt tudásmorzsákat, kódexeket, illetve egyes külhoni eretnek tanok szerint a rend mindenkori nagymestere birtokolja a Sogronnal való szeráfi alku megkötéséhez szükséges szövegeket tartalmazó tűzkódexeket, melyekben benne foglaltatik Sogron igazi neve is. Egyes szélsőséges, az ordani papok által igencsak üldözött gondolkodók szerint minden tűzvarázsló felavatáskor minimális szinten, de a szertartás során szeráfi alkuba kerül a Tűzkobrával, s ezzel magyarázható, hogy a Sogrontól elfordult varázstudók miért veszítik el minden hatalmuk. Igaz, ennek ellenkezőjére is van bizonyíték, hiszen a Szeráfizmus alaptételei szerint egy lény, ha isteni hatalomra emelkedik, minél hamarabb igyekszik elkorcsosítani és teljesen felszámolni papjainak kezébe menően át.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "érdekében a Sogron által megszentelt mágikus tárgyakra cserélik le.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "Sogronita aranyszín pikkelypáncéljuk értékei a következők:",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "MGT: -1, SFÉ: 4, súly: 15 ynev-i font, ár: -, STP: 80, a páncél Sogron áldását viseli magán, ezért minden rá és viselőjére ható hőhatás és tűz sebzése é-nként 1 ponttal csökken.",
+            "title": "Rendszerszabály",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "Innentől kezdve a legnevesebb mesterek figyelő tekintete mellett tanulhatnak bárminemű Harci, vagy a hozzá kapcsolódó Tudományos, esetleg Világi képzettséget, mellyel pusztításuknak erejét növelhetik. Akkor is, ha a kiválasztott képzettség nem szerepel az iskola listáján, a szervezet 4. fokú oktatót biztosít harcosa számára.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "A Sogron Útját járó tűzvarázslók magasabb szinteken – 5. Tapasztalati szint felett – beavatatást nyerhetnek Sogron szakrális misztériumaiba. Azaz a KM beleegyezésével, utólag megkapják a Kegyelt Hátteret, s ekkor a Vallásismeret képzettség 3. fokának elsajátításával és a beavatási szertartások elvégzése után Sogron papjává emelkedhetnek.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "Amikor mind mestereik, mind pedig a jelöltek úgy érzik készen állnak a próbára, elkezdődik a beavatás rítusa. A Sosem Égető Szent Tűzben pappá szenteltetnek és elnyerik Sogron kegyelmét. Habár a Szent Tűz nevével ellentétben hamuvá égeti az alkalmatlanokat, kik könnyűnek találtatnak, ez igen ritka eset a jelöltek gondos kiválasztása miatt. A Szent Tűz Sogron akaratából megedzi az ifjú pap hitét és eltökéltségét, még inkább elmélyíti iránta való hűségét és szeretetét. Ezen isteni csodát később semmiféle mágiával nem lehet megtörni, így Sogron ordani papjai semmiféle módon nem vehetők rá arra, hogy bármiféle módon Sogron akarata vagy érdekei ellen cselekedjenek. Erre még akkor is képtelenek, ha szabad akaratukból tennék, igaz ez esetben számolniuk kell a Tűzkobra hatalmával és a gondolat súlyához mért büntetéssel is, mely kirívó esetben akár azonnali elhamvadás is lehet.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "Beavatásuktól kezdve a Sogron Útjára lépő tűzvarázslók papoknak számítanak, hitükkel, tetteikkel és áldozataikkal istenüket erősítik, és innentől kezdve tőle, és csakis tőle nyerhetik mágikus hatalmukat.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "Ez annyit tesz, hogy a Szent Tűz kilúgozza belőlük minden más mágikus hatalomnyerési formula módszereit, sőt még emlékét is, mely nem a Sogronhoz szóló ima vagy áldozatbemutatás. Innentől kezdve csakis a Papok c. fejezetben leírtak szerint nyerhetik vissza erejüket. Tehát elveszítik minden eddig birtokolt különleges mananyerési képességüket és a Godoni Pszi vonatkozó diszciplínáját is. Az eddig megszerzett Mana pontjaik innentől kezdve Kegy pontokként kezelendőek, és a továbbiakban is csak ezeket vásárolhatják KAP-jaikból. A Sogron Útján járó beavatott Kegy pontjaiból a Lélek, Természet, illetve a Tűzkobra egyedi szférájából, illetve az Illat Szakrális mágiaként kezelve a teljes Tűzmágia repertoárjából is válogathat.",
+            "title": "Sogron Útjának Mágikus Hatalma",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "Az ilyen megtiszteltetésben részesült tűzvarázslók nem csak a nyakukban hordott vándormécsest kapják meg szent szimbólumukként, melyben egy Sogronnak szentelt örökláng lobog, hanem testük valamely részére ábrázolva a fejtetőre Sogron valamely ábrázolása, leggyakrabban egy kitárt csuklyájú kobra tetoválása is felkerül, mely szintén működhet szent szimbólumként.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "A Tűz Harcosai Rend felelős Ordan és az azon kívüli templomok, rendházak védelméért. Ők képzik fegyverforgatásra az Ordani Rend minden tagját. A Tűz Harcosai Rendet a Pusztító Tűz Útjára lépett tűzvarázslók irányítják, akik főként a hadi taktikában és a Tűzmágia harctéri alkalmazásában jeleskednek, hiszen a Lángörök és a Főnixek között akadnak náluk is különb fegyverforgatók.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "A Lángörök különleges harcos irányzat, akik a tűzvarázslókkal való együttműködést vitték tökélyre. A Tűz Harcosai Rendbe történő felvételükkor nem avatják őket tűzvarázslóvá, azonban minden szükséges képzést megkapnak, ide értve a Tapasztalati mágia (tűzvarázsló), Ősi nyelv (kyr, godoni), illetve a Pszi (pyarroni) oktatását. Ezeknek a harcosoknak, ha bírnak a Tapasztalati mágia (tűzvarázsló) képzettség 3. fokával, akkor lehetőségük nyílik tetteiket és hitüket megmérettetve felvételüket kérni a Tűz Harcosai Rend tűzvarázslói közé. Ha a mesterek és Sogron is akaratával egyezőnek érzi ezt a kérést, akkor a jelentkezőt felavatják és megkapja a Mágikus fogékonyság Hátteret, innentől kezdve vásárolhat KAP-jaikból Mana pontokat és alkalmazhatja a Tűzmágiát.",
+            "title": "Lángörök Felvétel és Képzés",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "Ezen irányzat követői az 5. Tapasztalati szint elérése után, ha KM is úgy ítéli meg, felvételt nyerhetnek Ordan elitkatonái közé. Ekkor fegyverzetüket hatékonyságuk növelése",
+            "title": "",
+            "headers": [],
+            "rows": []
+        }
+    ]
+}

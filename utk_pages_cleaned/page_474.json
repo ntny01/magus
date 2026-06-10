@@ -1,0 +1,156 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": true,
+    "section_title": "Bestiárium",
+    "content_blocks": [
+        {
+            "type": "paragraph",
+            "text": "A Bestiárium fejezet a M.A.G.U.S.-ban a szörnyekkel foglalkozik. Az itt felsorolt néhány szörny mindegyikének leírásánál külön fejlécben kiemeltük a szörny főbb tulajdonságait. Az egyes ismérvek magyarázata a következő:"
+        },
+        {
+            "type": "rule",
+            "title": "Előfordulás",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "title": "Megjelenők",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "title": "Termet",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "title": "Méretkategória",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "title": "Sebesség",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "title": "Időigény",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "title": "KÉ, TÉ, VÉ, CÉ",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "title": "Sebzés",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "title": "Ép",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "title": "Fp",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "title": "Pszi",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "title": "Max. Mp",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "title": "Asztrál ME",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "title": "Mentál ME",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "title": "Méregellenállás",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "title": "Intelligencia",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "title": "Jellem",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "title": "Tapasztalati pont",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "ÁLLATOK"
+        },
+        {
+            "type": "paragraph",
+            "text": "Kutyák"
+        },
+        {
+            "type": "flavor_text",
+            "text": "„Nincs egy lélek széles e világban, kiben megbízhatnál? Tarts kutyát, komám!”"
+        },
+        {
+            "type": "paragraph",
+            "text": "A fenti mondás, különböző formákban, mindenütt ismert Yneven – de vajon igaz-e minden körülmények között? Mert – jóllehet, e derék négylábúak jó tulajdonságai hasonlatosak földi társaikéhoz – a mágia, s a rideg acél világában még ők is okozhatnak meglepetést az embernek."
+        },
+        {
+            "type": "paragraph",
+            "text": "Ha az átlagos, úgymond közönséges emberek szempontjából vizsgáljuk a kérdést, mindenképpen igaznak kell tartanunk a mondást. Hiszen ki ne tudná, mennyi örömet jelenthet egy eb a gazdájának, mennyi szeretettel, mennyi kedvességgel veszi körül a legminimálisabb jóságért cserébe. Magányos vándorok, kisgyermekek, esendő koldusok, békés családok, félrevonuló tudósok – és folytathatnánk a sort a végtelenségig – keresve sem találhatnának jobb, s hálásabb társat náluk."
+        },
+        {
+            "type": "paragraph",
+            "text": "Évezredek óta kísérik Ynev népeit, szolgálják legkülönbözőbb igényeiket – vadásznak, házat-portát őriznek, harcolnak, szánt húznak, vagy egyszerűen csak szórakoztatják gazdáikat, mindig töretlen bizalommal és hűséggel."
+        },
+        {
+            "type": "paragraph",
+            "text": "S amint felbukkantak a kutyák, természetszerűleg megjelentek azok is, akik az adott népen belül a legjobban értettek a nyelvükön, a legkönnyebben találtak utat a „lelkükhöz”, a leggyorsabban tudták őket közreműködésre bírni – bizony, ősi mesterség a kutyaidomítás, vagy ahogy széles körben nevezik, a kutyapécserség. Mivel az ebek valóban igazán értelmes állatok, betanításuk bizonyos szintig egyáltalán nem igényel különösebb szaktudást, csak némi érzéket – „Gyere ide!”, „Ülj!”, „Feküdj!”, „Pfuj!”, „Kusslegyenbüdösödög!” –, ennyit a hétköznapi jószágok zöme is igen gyorsan megtanul. Mindenki tudja azonban, hogy a kutyák képességei ennél jóval több lehetőséget rejtenek."
+        },
+        {
+            "type": "paragraph",
+            "text": "Ha ezeket ki szeretnénk használni, feltétlenül rendelkezünk kell Idomítás és Állatismeret képzettséggel. Vezényszavak helyett, vagy azok mellett alkalmazhatunk fütty-, illetve kézjeleket, melyekre kutyánk akár nagy távolságból is reagál, megtaníthatjuk apportírozni (tárgyak el-, illetve visszahozása, hordozása), akadályt ugrani, kúszni, esetleg vezényszóra ugatni, támadni."
+        },
+        {
+            "type": "paragraph",
+            "text": "Kutya amúgy minden nagyobbacska város piacán kapható. Természetszerűleg minden szerencsétlen, beesett horpaszú csikasz „garantáltan betanított, elsőrangú példány, egyenesen a hírneves telepről” – érdemes tehát odafigyelni, miféle jószágot is akarnak ránk sózni. Az árak értelemszerűen a fajtától, tudástól és környéktől függenek. A M.A.G.U.S.-ban megadott összegek átlagos házőrzőre vonatkoznak, egy-egy jó vadászkutyáért ennek két-háromszorosát is elkérhetik."
+        }
+    ]
+}

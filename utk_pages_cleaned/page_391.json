@@ -1,0 +1,140 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": true,
+    "section_title": "Egyéb Mágikus Módszerek",
+    "content_blocks": [
+        {
+            "type": "paragraph",
+            "text": "egymással, valamint az egykori személy Személyi Aurájába valaha is egy évnél hosszabb ideig tartozó tárgyával is. Tárgy-személy szimpátiában áll egykori tulajdonosával a tulajdonos halála után is, egészen a Személy-tárgy szimpátia nem létezik! A Szimpatikus viszony meglétének vagy hiányának eldöntése minden esetben a KM feladata és jogköre!"
+        },
+        {
+            "type": "rule",
+            "title": "Társszimpátia",
+            "headers": [
+                "Mana pont",
+                "Varázslás ideje"
+            ],
+            "rows": [
+                [
+                    "40",
+                    "1 kör"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A Társszimpátia két szorosan összetartozó személy, lény között jöhet létre. Mindenképpen Társszimpátia alakul ki gyermek és szülők, valamint az édestestvérek között, még akkor is, ha soha nem látták egymást, netán még csak nem is hallottak a másikról. Ezen túl Társszimpátiának nevezhető a legjobb barátok, szeretők közötti viszony, ha érzelmeik legalább egy esztendeje töretlenek; a lovas és hátasa, a gazda és kutyája közötti meghitt kapcsolat, ha legalább ugyanennyi ideje összetartoznak. Társszimpátiában áll egymással az a két személy ill. lény, akiket Mentálfonál köt össze, addig, amíg a fonál létezik. A szimpatikus viszony meglétének vagy hiányának eldöntése minden esetben a KM feladata és jogköre!"
+        },
+        {
+            "type": "rule",
+            "title": "Vérszimpátia",
+            "headers": [
+                "Mana pont",
+                "Varázslás ideje"
+            ],
+            "rows": [
+                [
+                    "20",
+                    "1 kör"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "Vérszimpátia áll fent egy személy (ill. lény) valamint a testéből származó vér (mint testnedv) között. Röviden: vér birtokában Szimpatikus Mágia hajtható végre azon, akitől származik. A felhasznált vérnek folyékony halmazállapotúnak kell lennie (porrá száradva nem alkalmas)."
+        },
+        {
+            "type": "paragraph",
+            "text": "Léteznek olyan mágikus módszerek és varázslatok is, melyek nem sorolhatóak be a Mágia eddig felsorolt fejezeteinek egyikébe sem. Ezek általában magukkal a varázslatokkal, illetve a varázslással, mint tevékenységgel kapcsolatosak."
+        },
+        {
+            "type": "rule",
+            "title": "Mágia érzékelés",
+            "headers": [
+                "Mana pont",
+                "Varázslás ideje"
+            ],
+            "rows": [
+                [
+                    "1 Mp/E",
+                    "1 szegmens/E"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A varázsló a mágia segítségével felderítheti a Zónájában lévő, számára nem látható, vagy leplezett varázslatokat is, ha az Érzékelés E-je meghaladja a Leplezését."
+        },
+        {
+            "type": "rule",
+            "title": "Fürkészés",
+            "headers": [
+                "Mana pont",
+                "Varázslás ideje"
+            ],
+            "rows": [
+                [
+                    "1 Mp/2",
+                    "1 szegmens/E"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "Fürkészés segítségével a varázsló képes meghatározni egy varázslat pontos szerkezetét – mozaikjait, vagy szakrális, esetleg tapasztalati mágia létrehozta varázslatok esetén a pontos működését –, erősítését (E) és a belefektetett Mana pontok számát egyaránt. Természetesen soha nem biztosított a siker, hiszen a Fürkészés gyakran sokáig is elhúzódhat, és nem lehet előre tudni, mennyi Mp-ba kerül. Ahhoz, hogy a varázsló kifürkészhessen egy varázslatot, annak a Zónáján belül kell esnie (vagy személyes Zónája vagy valamely Zóna Varázsló körüli 20 ynevi lábnyi sugarú gömbön belül). A Fürkészést Távolba hatni nem lehetséges. A varázslat csak akkor sikeres, ha a Fürkészés E-je meghaladja a kifürkészni kívánt varázslat Erősségét. A Fürkészés kezdetekor a varázsló még nem tudhatja, mennyi idejét veszi majd igénybe, s hogy mennyi Mana pontba fog kerülni. Előfordulhat az is, hogy félúton elfogynak a Mana pontjai, vagy felhagy a próbálkozással. Ilyenkor természetesen semmilyen eredményre nem jut."
+        },
+        {
+            "type": "rule",
+            "title": "Destrukció",
+            "headers": [
+                "Mana pont",
+                "Időtartam",
+                "Varázslás ideje"
+            ],
+            "rows": [
+                [
+                    "1 Mp/E",
+                    "Végleges",
+                    "1 szegmens/E"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A varázslatokat a megidézőjüktől származó mágikus energia táplálja és tartja össze. A varázsló azonban energiáit romboló célzattal is bejuttathatja egy varázslatba, akár másokéiba is. Olyan ez, akár az érzékeny mechanizmusba szórt homokszemcse – hibás működést, rosszabb esetben teljes működésképtelenséget okoz."
+        },
+        {
+            "type": "paragraph",
+            "text": "Egy varázslat tönkretétele épp annyi Mp-ba kerül, amennyibe létrehozása. Ha tehát a varázsló ugyanannyi Mana pontot erőltet ártó célzattal egy már működő varázslatba, mint amennyibe az eredetileg került, a varázslat teljes egészében megszűnik létezni. Ha kevesebbet áldoz: semmi nem történik, ha többet: a fölöslegesen elköltött Mana pontok elvesznek. Nem szükséges azonban a teljes varázslatot Destruálni. Mozaikmágia esetén lehetséges pusztán egyes kiszemelt mozaikjait is megtámadni. Egy mozaik tönkretételehez is annyi Mp szükségeltetik, amennyibe a létrehozása került. Ha egy varázslatról lebomlik az Időmágia, minden egyes mozaikja még annyi ideig működik, amennyi a mozaikok leírásában az Időtartam rovatban szerepel, azután sorban megszűnnek létezni."
+        },
+        {
+            "type": "paragraph",
+            "text": "Ha a Térmágia vagy a Szimpatikus mágia bomlik le róla, akkor hirtelenjében jön létre, ahol a varázsló a varázslás pillanatában tartózkodott. Természetesen Asztrálvagy Mentálmágia esetében az áldozat azonnal felszabadul a varázslat hatása alól."
+        },
+        {
+            "type": "paragraph",
+            "text": "Ha egy varázslatról maguk a magot képező mozaikok bomlanak le, a varázslat teljes egészében megszűnik működni. A fentiek ismeretében tehát leszögezhetjük, ha valaki képes felismerni és feltérképezni egy már működő varázslat szerkezetét, alkotóelemeit (azaz mozaikjait) és azok Mp-igényét, akkor képes lesz teljesen szét is bomlasztani az egész varázslatot, jóval kevesebb Mp-ért, mint amennyibe az eredetileg került. Rúnamágikus hatások Destrukcióval nem szüntethetők meg, csak a rajzolat eltörlésével, illetve a vonalak megszakításával. A varázsló a nem Mozaikmágiával létrehozott varázslatokat: boszorkányok, boszorkánymesterek, tűzvarázslók varázslatait is képes Destruálni, ám csak egészben. Ellenben a Szakrális mágia destruálására képtelen."
+        },
+        {
+            "type": "rule",
+            "title": "Leplezés",
+            "headers": [
+                "Mana pont",
+                "Időtartam",
+                "Varázslás ideje"
+            ],
+            "rows": [
+                [
+                    "1 Mp/a leplezni kívánt varázslat E-je",
+                    "Amíg a varázslat tart",
+                    "1 kör"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A Leplezés mozaik segítségével a varázsló varázslatának szerkezetét és mágikus kisugárzását képes elpalástolni, azonban a hétköznapi érzékek számára továbbra sem tűnik el, ha van ilyen megnyilvánulása. A leplezett varázslatra végrehajtott bármilyen fürkésző vagy érzékelőmágia mindaddig eredménytelen lesz, ameddig Erőssége kisebb a Leplezés E-jénél."
+        }
+    ]
+}

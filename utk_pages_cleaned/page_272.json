@@ -1,0 +1,112 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": true,
+    "section_title": "A Nagy Arkánum Rituáléi",
+    "content_blocks": [
+        {
+            "type": "paragraph",
+            "text": "növekednek, s annyi Pszi pontot kapnak vissza, mintha 2 órát meditációval töltöttek volna el. Ha valaki az egy óra letelte előtt kilép a körből, nem gyógyul, s Pszi pontjai sem töltődnek újra, mert megtörte a harmóniát, ami a folyamat előidézője volt."
+        },
+        {
+            "type": "rule",
+            "title": "Transz",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A fohász órájában a pap mély transzba esik. Miután elcsitult lelkének az anyagi világ zavaros képei, tudata átcsúszik a megbékélés csendes ürességébe, s egy örökkévalóságnak tűnő óráig lebeg eme üdvözült állapotban két világ határán. Amennyiben égi pártfogója érdemesnek találja rá, megnyilatkozik előtte."
+        },
+        {
+            "type": "paragraph",
+            "text": "A pap egyetlen kérdést tehet fel urának, aki ha a kérdést fontosnak érzi, avagy a pap sok szolgálatot tett neki a közelmúltban, válaszol a kérdésre. A papok ilyenkor rendszerint Áldozatot is mutatnak be égi pártfogójuknak."
+        },
+        {
+            "type": "paragraph",
+            "text": "A válasz az istenség természetétől függően nem feltétlenül lesz igaz, s nem is biztos, hogy az istenség kimerítő válasszal felel rá! Általában homályos kinyilatkoztatásokat, jóslatszerű talányos feleletet kap, amiből már neki kell kitalálnia a megoldást."
+        },
+        {
+            "type": "paragraph",
+            "text": "Ha a pap túl gyakran, vagy jelentéktelen esetben használja ezt a fohászt, istene figyelmen kívül hagyja a túlbuzgó egyházi kéréseit, és maximális Kegy pontjainak számát 1-gyel csökkenti."
+        },
+        {
+            "type": "rule",
+            "title": "Veszély észlelése",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "Istene segítségével a pap tudomást szerez a rá leselkedő veszélyek létezéséről – pontos helyéről, természetéről azonban nem. Az iránnyal és távolsággal nagyjából tisztában lesz, ám a veszély mibenléte teljesen ismeretlen marad. A fohász csupán annyi segítséget nyújt, hogy különbséget tesz a veszély fokozatai között, ám mindig csak a legveszélyesebbet jelzi."
+        },
+        {
+            "type": "rule",
+            "title": "Véráldozat",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A fohász nagyrészt emberáldozó vallások alkalmazzák. Az áldozat vére a pap istenét dicsőítő imája után kerül áldozati bemutatásra. A pap, miután a fohász létrehozta, az ellenfél életerejét istenéhez irányítja, kiontott vére vaskos füstként emelkedik az egek felé. Így az áldozat az időtartam alatt (pl. harcban, vagy egyéb sebzésből kifolyólag) vesztett Fp-t és Ép-t természetesen úton nem szerezheti vissza, s a Szakrális mágia Gyógyítás fohásza is csak a szokásos mennyiség negyedét gyógyítja rajta. A tapasztalati mágiák formulái azonban továbbra is rendesen működnek."
+        },
+        {
+            "type": "rule",
+            "title": "Vérgát",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A Vérmágia védőfohásza, mely távol tarthatja a nem kívánt behatolókat a pap által kijelölt területről. Ehhez a területet vérrel kell megjelölni, illetve a rituálé szövegének citálása közben körberajzolni határait. A Vérgát két módon alkalmazható. Az első módon a gátat csak az az egy lény nem lépheti át, melynek vérével azt felrajzolták."
+        },
+        {
+            "type": "paragraph",
+            "text": "A másik módszerrel minden, az adott lény fajába tartozó kreatúra távol tartható, legyen az ember, ork, tigris vagy árnyjáró. A rajzoláshoz felhasznált vér lehet kevert is. Annyi személy vagy lény vérét tartalmazhatja, ahányadik szintű a pap. A lények tartozhatnak egyazon fajba, avagy több különböző fajba is, ez utóbbi esetben minden képviselt faj egyedei számára áttörhetetlen lesz a gát."
+        },
+        {
+            "type": "paragraph",
+            "text": "A Vérgát vonalát bárki megtörheti, akinek vérét (illetve a második esetben vele egy fajba tartozó vérét) nem tartalmazza a rajzolat. A Vérgátat felrajzoló pap istenének többi felkentje szabadon keresztül sétálhat a Vérgát vonalán, még akkor is, ha ahhoz a fajhoz tartozik, amelynek véréből rajzolták."
+        },
+        {
+            "type": "paragraph",
+            "text": "A Kegy pontok többszörözésével a Vérgát mérete és a védelem időtartama egyaránt növelhető."
+        },
+        {
+            "type": "rule",
+            "title": "Álca",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A fürkésző mágiák, fohászok és diszciplínák elől rejtheti el magát a pap ily módon. Az összes típusú, öt fürkésző hatást nem lehetetlenné teszi, hanem megtéveszti (többet vagy kevesebbet mutat a pap képességeiből, az elméjét óvó pajzsokból, magánál hordott varázstárgyakból stb.). A KM feladata annak eldöntése, hogy az adott varázslat ismeretében „félretájékoztassa” azt, aki a fohász alanyára kíváncsi. A különféle befolyásoló varázslatok ellen nem nyújt védelmet, csupán az érzékelő jellegűeket vezeti félre."
+        },
+        {
+            "type": "rule",
+            "title": "Álomút",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "Az isteni útmutatás segítségével a pap végigjárhat egy olyan álmot, melynek alaptörténetét önnön maga határozza meg. Így előre megélhet olyan cselekedeteket, melyeket a későbbiekben majd végre kell hajtania, kielemezhet megoldásra váró történeteket vagy újra átélhet egy már megtörtént eseményt."
+        },
+        {
+            "type": "paragraph",
+            "text": "Hátránya a fohásznak, hogy a pap nem nyer vele új információkat, pusztán a már birtokában lévőket rendezi egységes egésszé; miként egy szeme előtt pergő történetben."
+        }
+    ]
+}

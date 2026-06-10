@@ -1,0 +1,364 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": true,
+    "section_title": "Elemi mágia",
+    "content_blocks": [
+        {
+            "type": "table",
+            "headers": [
+                "Varázslat neve",
+                "Mana pont",
+                "Időtartam",
+                "Varázslás ideje"
+            ],
+            "rows": [
+                [
+                    "Őselem teremtése",
+                    "3/E",
+                    "Lásd a formázásokat!",
+                    "1 szegmens/E"
+                ],
+                [
+                    "Elemi Erő teremtése",
+                    "4/E",
+                    "Lásd a formázásokat!",
+                    "1 szegmens/E"
+                ],
+                [
+                    "Paraelem teremtése",
+                    "2/E",
+                    "Lásd a formázásokat!",
+                    "1 szegmens/E"
+                ],
+                [
+                    "Telekinézis",
+                    "1/E",
+                    "1 kör",
+                    "1 szegmens/E"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "Formázás mozaikok"
+        },
+        {
+            "type": "table",
+            "headers": [
+                "Varázslat neve",
+                "Mana pont",
+                "Időtartam",
+                "Varázslás ideje"
+            ],
+            "rows": [
+                [
+                    "Nyíl",
+                    "—",
+                    "Egyszeri",
+                    "1 szegmens"
+                ],
+                [
+                    "Kitörés",
+                    "1/E",
+                    "Egyszeri",
+                    "1 szegmens"
+                ],
+                [
+                    "Csóva",
+                    "1/E",
+                    "1 kör",
+                    "1 szegmens"
+                ],
+                [
+                    "Szőnyeg",
+                    "1/E",
+                    "1 kör",
+                    "1 szegmens"
+                ],
+                [
+                    "Fal",
+                    "1/E",
+                    "1 kör",
+                    "1 szegmens"
+                ],
+                [
+                    "Kupola",
+                    "2/E",
+                    "1 kör",
+                    "1 szegmens"
+                ],
+                [
+                    "Sátor",
+                    "2/E",
+                    "1 kör",
+                    "1 szegmens"
+                ],
+                [
+                    "Aura",
+                    "2/E",
+                    "1 kör",
+                    "1 szegmens"
+                ],
+                [
+                    "Kard",
+                    "2/E",
+                    "1 kör",
+                    "1 szegmens"
+                ],
+                [
+                    "Szabad Elemi Formák",
+                    "3/E",
+                    "1 kör",
+                    "1 szegmens"
+                ],
+                [
+                    "Szabad Elemi Formák kapcs.",
+                    "1/E",
+                    "1 kör",
+                    "1 szegmens"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "Természeti Anyagok Mágiája"
+        },
+        {
+            "type": "table",
+            "headers": [
+                "Varázslat neve",
+                "Mana pont",
+                "Időtartam",
+                "Varázslás ideje"
+            ],
+            "rows": [
+                [
+                    "Átformázás",
+                    "Lásd a leírást!",
+                    "1 kör",
+                    "1 kör"
+                ],
+                [
+                    "Átalakítás",
+                    "Lásd a leírást!",
+                    "1 kör",
+                    "1 kör"
+                ],
+                [
+                    "Átváltoztatás",
+                    "1/1 ynevi font",
+                    "1 kör",
+                    "1 kör"
+                ],
+                [
+                    "Visszaváltoztatás",
+                    "1/1 ynevi font",
+                    "Végleges",
+                    "1 kör"
+                ],
+                [
+                    "Transzmutáció",
+                    "Lásd a leírást!",
+                    "1 kör",
+                    "1 kör"
+                ],
+                [
+                    "Dezintegráció",
+                    "Lásd a leírást!",
+                    "Végleges",
+                    "1 kör"
+                ],
+                [
+                    "Teremtés",
+                    "Lásd a leírást!",
+                    "Végleges",
+                    "1 kör"
+                ],
+                [
+                    "Légiesség",
+                    "Lásd a leírást!",
+                    "6 kör (1 perc)",
+                    "1 szegmens"
+                ],
+                [
+                    "Láthatatlanság",
+                    "Lásd a leírást!",
+                    "1 kör",
+                    "1 szegmens"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "Asztrálmágia"
+        },
+        {
+            "type": "table",
+            "headers": [
+                "Varázslat neve",
+                "Mana pont",
+                "Időtartam",
+                "Varázslás ideje"
+            ],
+            "rows": [
+                [
+                    "Érintés",
+                    "—",
+                    "Egyszeri",
+                    "1 szegmens"
+                ],
+                [
+                    "Hullám",
+                    "1/E",
+                    "Egyszeri",
+                    "1 szegmens"
+                ],
+                [
+                    "Szőnyeg, Fal",
+                    "1/E",
+                    "1 kör",
+                    "1 szegmens"
+                ],
+                [
+                    "Aura",
+                    "2/E",
+                    "1 kör",
+                    "1 szegmens"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "Asztrális operációk"
+        },
+        {
+            "type": "table",
+            "headers": [
+                "Varázslat neve",
+                "Mana pont",
+                "Időtartam",
+                "Varázslás ideje"
+            ],
+            "rows": [
+                [
+                    "Szeretet/Gyűlölet",
+                    "1/E",
+                    "6 kör (1 perc)",
+                    "3 szegmens"
+                ],
+                [
+                    "Bátorság/Félelem",
+                    "1/E",
+                    "6 kör (1 perc)",
+                    "3 szegmens"
+                ],
+                [
+                    "Vágy/Undor",
+                    "1/E",
+                    "6 kör (1 perc)",
+                    "3 szegmens"
+                ],
+                [
+                    "Nyugalom/Ingerültség",
+                    "1/E",
+                    "6 kör (1 perc)",
+                    "3 szegmens"
+                ],
+                [
+                    "Hűség/Hűtlenség",
+                    "1/E",
+                    "6 kör (1 perc)",
+                    "3 szegmens"
+                ],
+                [
+                    "Semlegesség/Elvakultság",
+                    "1/E",
+                    "6 kör (1 perc)",
+                    "3 szegmens"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "Időmágia"
+        },
+        {
+            "type": "table",
+            "headers": [
+                "Varázslat neve",
+                "Mana pont",
+                "Ráolvasás ideje",
+                "Időtartam"
+            ],
+            "rows": [
+                [
+                    "Kör",
+                    "Lásd a leírást!",
+                    "1 szegmens",
+                    ""
+                ],
+                [
+                    "Perc",
+                    "Lásd a leírást!",
+                    "1 kör",
+                    ""
+                ],
+                [
+                    "Óra",
+                    "Lásd a leírást!",
+                    "1 perc",
+                    ""
+                ],
+                [
+                    "Nap",
+                    "Lásd a leírást!",
+                    "1 óra",
+                    ""
+                ],
+                [
+                    "Év",
+                    "Lásd a leírást!",
+                    "6 óra",
+                    ""
+                ],
+                [
+                    "Örökkévalóság",
+                    "150 Mp",
+                    "12 óra",
+                    ""
+                ],
+                [
+                    "Időzés",
+                    "15 Mp",
+                    "1 perc",
+                    ""
+                ],
+                [
+                    "Időugrás",
+                    "Lásd a leírást!",
+                    "Lásd a leírást!",
+                    "Lásd a leírást!"
+                ],
+                [
+                    "Öregítés",
+                    "Lásd a leírást!",
+                    "3 szegmens",
+                    "1 szegmens"
+                ],
+                [
+                    "Lassítás",
+                    "1 Mp / 3 ynevi font",
+                    "3 szegmens",
+                    "1 kör"
+                ],
+                [
+                    "Gyorsítás",
+                    "1 Mp / 3 ynevi font",
+                    "3 szegmens",
+                    "1 kör"
+                ]
+            ]
+        }
+    ]
+}

@@ -1,0 +1,120 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": null,
+    "is_new_section": false,
+    "section_title": "",
+    "content_blocks": [
+        {
+            "type": "paragraph",
+            "text": "A Rúnamágiával készített varázstárgyak mindaddig megőrzik mágikus tulajdonságukat, amíg a rajzolatok töretlenek. Most csak néhány példát sorolunk fel Rúnamágiával létrehozott varázstárgyakra, de a lehetőségek szinte korlátlanok."
+        },
+        {
+            "type": "rule",
+            "title": "Varázstekercs",
+            "text": "Mp: mint az adott varázslatnál (+13 Mp alapszintű Mágikus Aura Varázsjel + 3 Mp / a varázslat E-je, mivel naponta egyszer megidézhető + 0 Mp, mivel varázsszó aktiválja).\nÁra: 2 ezüst"
+        },
+        {
+            "type": "paragraph",
+            "text": "A Varázstekercs egyedi formája a Rúnamágiával készült varázstárgyaknak. A varázsló pergamen- vagy papirusztekercsre rója a mágikus energiákat (Mana pontokat) tartalmazó rúnákat. Gyakorlatilag bármilyen varázslatot tekercsre vihet, amit hagyományos módon képes létrehozni. Ettől kezdve a tekercsre írt rúnák tartalmazzák a varázslathoz szükséges Mp-okat. Ha a varázsló életre akarja hívni varázslatát, csak fel kell olvasnia a rúnákat, hogy a mágikus energiák felszabaduljanak. A varázsigék kimondásával létrehozza a varázslatot, mintha csak fejből mondaná a megfelelő mozaikot, felszabadítva a bennük tárolt mágikus energiákat (Mana pontokat). A varázstekercs felolvasása kétszer annyi időt vesz igénybe, mint az azonos varázslat megidézése, hiszen a kézzel a levegőbe írt rúnák elmaradnak. A felolvasás egyetlen Mana pontba sem kerül, s nem mágiaforgató kasztú karakter is képes rá."
+        },
+        {
+            "type": "paragraph",
+            "text": "A felolvasónak mindenképpen legalább 2. fokon jártasnak kell lennie a Rúnamágia tudományában, hogy képes legyen helyesen kiejteni a mágikus tartamú szavakat. Nem kell azonban azonnal lennie a tekercs lejegyzőjével, azaz egy magasabb szintű varázsló által írt tekercset felolvashat egy alacsonyabb szintű, vagy akár bárki más, olyan varázslatot hozva ezzel létre, amihez a saját hatalma egyébként nem lenne elegendő."
+        },
+        {
+            "type": "paragraph",
+            "text": "A lejegyzett varázsjelek addig tárolják a beléjük zárt Mana pontokat, amíg vonalaik töretlenek, s hatásuk naponta egyszer megidézhető."
+        },
+        {
+            "type": "rule",
+            "title": "Rúnakard",
+            "text": "Mp: Őselemi Erő, Szabad elemi formázású megfelelő E-je: 7 Mp/E +13 Mp alapszintű Mágikus Aura Varázsjel + 24 Mp / a varázslat E-je, mivel folyamatosan megidézhető a kardba zárt hatalom + 0 Mp, mivel nem kell aktiválni.\nÁra: 5 arany + a fegyver ára (csak közelharci, vagy hajító fegyverek)"
+        },
+        {
+            "type": "paragraph",
+            "text": "A közönséges kard (vagy bármilyen más fegyver) pengéjét, hegyét díszítő rúnák képessé teszik a kardot, hogy a csak mágikus fegyverrel sebezhető (például légies) ellenfelet is megsebezze. Ezen kívül használója könnyebben forgatja – a kard szinte végtagja folytatásává válik – így Harcértéke is jónéhányat javul, hiszen az akarata által irányított Elemi Erő vezeti kezét és növeli csapásai erejét. A kard mágikus ereje mindig annak engedelmeskedik, aki a kezében tartja."
+        },
+        {
+            "type": "table",
+            "headers": [
+                "Mp",
+                "TÉ/CÉ",
+                "VÉ",
+                "KÉ",
+                "Sebzés"
+            ],
+            "rows": [
+                ["44", "+5", "+5", "+2", "+1"],
+                ["75", "+10", "+10", "+4", "+2"],
+                ["106", "+15", "+15", "+6", "+3"],
+                ["137", "+20", "+20", "+8", "+4"]
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Rúnapáncél",
+            "text": "Mp: Őselemi Erő, Szabad elemi formázású megfelelő E-je: 7 Mp/E + 13 Mp alapszintű Mágikus Aura Varázsjel + 24 Mp / a varázslat E-je, mivel folyamatosan óvják a vértet és viselőjét a mágikus erők + 0 Mp, mivel nem kell aktiválni.\nÁra: a felhasznált vért szokásos árának másfélszerese."
+        },
+        {
+            "type": "paragraph",
+            "text": "Bármilyen típusú vért, melyet megfelelő védőrúnák ruháznak fel különleges hatalommal, az alábbi Értékmódosítókkal bír, mivel a viselő akaratának engedelmeskedő elemi erők nem csak védik, de segítik is a páncél terhének mozgásában is az őket megidézőt. A páncél mágikus ereje mindig annak engedelmeskedik, aki viseli."
+        },
+        {
+            "type": "table",
+            "headers": [
+                "Mp",
+                "SFÉ",
+                "MGT"
+            ],
+            "rows": [
+                ["44", "+1", "-1"],
+                ["75", "+2", "-2"],
+                ["106", "+3", "-3"],
+                ["137", "+4", "-4"]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "Az MGT rovatban feltüntetett érték levonandó az adott vért Mozgás Gátló Tényezőjéből – ami nulla alá természetesen így sem csökkenhet."
+        },
+        {
+            "type": "rule",
+            "title": "Sárkánybot",
+            "text": "Mp: Őselemi Tűz, Csóva formázású megfelelő E-je: 5 Mp/E +13 Mp alapszintű Mágikus Aura Varázsjel + 24 Mp / a varázslat E-je, mivel folyamatosan megidézhető a botba zárt hatalom + 0 Mp, mivel varázsszóval kell aktiválni.\nÁra: 24 arany"
+        },
+        {
+            "type": "paragraph",
+            "text": "A sárkánybot tradicionálisan két méter hosszú, ékkövekkel díszített bot. Tulajdonosa képes a bot végéből csóva formázott tüzet lövellni az ellenfele irányába, akár a sárkányok. A lángcsóva erősségét a bot készítője határozhatja meg. A botot naponta egyszer lehet használni és varázsszóra aktiválódik, és 1 körig fújja magából a csóvát."
+        },
+        {
+            "type": "rule",
+            "title": "Varázstörő botja",
+            "text": "Mp: 120 Kisugárzó varázsjel – érintés + 100 Mp Destrukció\nÁra: 1 arany"
+        },
+        {
+            "type": "paragraph",
+            "text": "A bot rövid, mindössze fél méter hosszú. Segítségével bármilyen 100 Mp-nál nem nagyobb energiaigényű varázslat destruálható. Az ennél erősebb varázslatok bomlasztására a bot nem alkalmas."
+        },
+        {
+            "type": "paragraph",
+            "text": "Destruálásnál a használónak ugyanúgy ismernie kell a bomlasztandó varázslat felépítését, akár a hasonló mágikus mozaiknál. A használó feladata a felhasználandó Mana pontok számának meghatározása is. Ezekből kitűnik, a Varázstörő botját csak a varázslásban jártas személy képes használni."
+        },
+        {
+            "type": "paragraph",
+            "text": "A varázslat bomlasztásához a bottal minden esetben meg kell érinteni a személyt, tárgyat vagy térrészt, akin/amin/ahol a varázslat hatását gyakorolja."
+        },
+        {
+            "type": "paragraph",
+            "text": "A bot egyszer használható, majd újra fel kell tölteni."
+        },
+        {
+            "type": "rule",
+            "title": "Érzelmek botja",
+            "text": "Mp: A szükséges Asztrál vagy Mentál mozaik kívánt formázású, megfelelő E-je +13 Mp alapszintű Mágikus Aura Varázsjel + 3 Mp / a varázslat E-je, mivel naponta megidézhető a botba zárt mágikus erő + 0 Mp, mivel varázsszóval kell aktiválni + Időmágia).\nÁra: 8 ezüst"
+        },
+        {
+            "type": "paragraph",
+            "text": "A kurta varázsbot használója bárkire képes a tárgyba beleplántált Asztrál vagy Mentál mozaikot megidézni. Egyetlen feltétel, hogy a kiszemelt lénynek rendelkeznie kell Asztrál vagy Mentál tulajdonsággal."
+        }
+    ]
+}

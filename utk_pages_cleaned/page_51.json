@@ -1,0 +1,165 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": null,
+    "is_new_section": true,
+    "section_title": "Az Marico con Rabóra lovag különleges előnyei és hátrányai a lovagnál leírtakon kívül",
+    "content_blocks": [
+        {
+            "type": "paragraph",
+            "text": "Alapítójuk intéset megszívlelve rendkívül nagyra becsülik a tudást, az elméleti ismereteket. Lovag létükre várakozáson felül műveltek, így például kivétel nélkül mind írástudók. Központi kastélymenedékük, Cartuzza Senada egyik szárnyában található nevezetes bibliothékájuk, melynek állományát évszázadok munkájával gyűjtötték össze. Valószínűleg ez a leggazdagabb világi kézen lévő könyvtár egész Gorvikban; polcain állítólag még olyan eretnek művek is helyet kaptak, amelyek indexen vannak, más az öt tartományban. Többek között ez is szálka más, dogmatikusabb lovagrendek szemében. Cartuzza Senada azonban mindeddig nem vált tűz martalékává, hiába szorgalmazták már sokan a hitbéliek ezt a megoldást. Saját fortélyos védművein kívül a környező hegyekből három corga is őrködik biztonságán, melyek egyszersmind egymást is éberen szemmel tartják."
+        },
+        {
+            "type": "paragraph",
+            "text": "Szerteágazó érdeklődésük miatt a rend tagjainak a szokásosnál kevesebb ideje és energiája jut a hagyományos lovagi harcmodor elsajátítására. Szerencséjükre ez a taktika a gorviki árnyékháborúkban korántsem annyira hatásos, mint másutt, így egyéb módszerekkel is elboldogulnak. Például határozottan jobban szeretnek gyalogszerrel hadakozni – bár szükség esetén olykor megülik a lovat is –, a lovagi felszerelésből pedig csak a nehézfegyvereket vették át, a roppant páncélokat nem. Általában az arany középútat járják, és rugalmasabb nehézvértet hordanak. Vezetőik hadtörténeti és hadvezetési munkákon nevelkedtek, nem jelent hát számukra gondot egy-egy rajtaütés, lesvetés, bekerítő hadmozdulat megtervezése és levezénylése sem. Közelharcban legfőbb specialitásuk a pajzskezelés egy titkos technikája, melyet megint csak sokoldalú alapítójuk hagyott rájuk örökül. Ezüst sassal díszített pajzsuk fémszegélyét ugyanis borotvaélesre fenik és igen hatékonyan alkalmazzák a kézitusa során. Köpenyüket, hadizászlóikat szintén ezüst sasmadár díszíti, méregzöld alapon fekete harántpólyákkal."
+        },
+        {
+            "type": "rule",
+            "title": "Marico con Rabóra lovag - Páncélviselet",
+            "rows": [
+                [
+                    "I. A rend tagjai harcmodoruk miatt nem öltenek pikkelyvértetnél nehezebb páncélt magukra, s induláskor is csak ilyen vagy ennél könnyebb vértezetet kapnak."
+                ]
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Marico con Rabóra lovag - Képzettség tanulás",
+            "rows": [
+                [
+                    "II. A rend tagjai minden Tudományos és Alvilági képzettséget 3. fokú Oktatás képzettségnek megfelelő bónusszal tanulhatnak."
+                ]
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Marico con Rabóra lovag - Induló képzettségek",
+            "rows": [
+                [
+                    "A Marico con Rabóra lovag induló képzettségei"
+                ]
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Marico con Rabóra lovag - Induló képzettségek (Tapasztalati szint)",
+            "rows": [
+                [
+                    "1. Tapasztalati szinten:"
+                ]
+            ]
+        },
+        {
+            "type": "table",
+            "headers": [
+                "Képzettségek",
+                "Fok"
+            ],
+            "rows": [
+                [
+                    "Fegyverhasználat",
+                    "3. fok"
+                ],
+                [
+                    "Fegyverismeret",
+                    "2. fok"
+                ],
+                [
+                    "Harctéri gyakorlat",
+                    "2. fok"
+                ],
+                [
+                    "Pajzshasználat",
+                    "3. fok"
+                ],
+                [
+                    "Fegyverismeret",
+                    "2. fok"
+                ],
+                [
+                    "Vértviselet",
+                    "2. fok"
+                ],
+                [
+                    "Hadvezetés",
+                    "1. fok"
+                ],
+                [
+                    "Lovaglás",
+                    "3. fok"
+                ],
+                [
+                    "Udvari etikett",
+                    "2. fok"
+                ],
+                [
+                    "Heraldika",
+                    "2. fok"
+                ],
+                [
+                    "Párbaj",
+                    "1. fok"
+                ],
+                [
+                    "Történelem",
+                    "2. fok"
+                ],
+                [
+                    "Írás/olvasás",
+                    "2. fok"
+                ],
+                [
+                    "Vallásismeret (Ranagol)",
+                    "3. fok"
+                ]
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Marico con Rabóra lovag - Oktatott képzettségek bónuszokkal",
+            "rows": [
+                [
+                    "A lovag rendje által oktatott képzettségei, melyeket az Oktatás képzettség 4. foka által nyújtott bónuszokkal tanulhat:"
+                ]
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Marico con Rabóra lovag - Oktatott képzettségek listája",
+            "rows": [
+                [
+                    "Állatismeret, Esés, Fájdalomtűrés, Fegyverhasználat, Fegyverismeret, Hadvezetés, Harctéri gyakorlat, Heraldika, Írás/olvasás, Kultúra, Legendaismeret, Lélektan, Lovaglás, Művészetek (Rajz), Nyelvtudás, Pajzshasználat, Párbaj, Pszi (pyarroni), Számtan/mértan, Taktika, Térképészet, Történelem, Udvari etikett, Vallásismeret, Vértviselet."
+                ]
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Shadoni egyházi és királyi lovagrendek bemutatása",
+            "rows": [
+                [
+                    "A shadoni lovagrendek mind Domvikot tisztelik istenükként. A becsületet, a hitet, a gyengék védelmét, a nők csodálatát tartják a lovagi erkölcs tartóoszlopainak. Segítik a szegényeket, és vakmerőséggel vetekedő bátorsággal állnak ki az igazság mellett. A birodalom területén számtalan rendjük létezik, melyek (kevés kivételtől eltekintve) három különböző urat szolgálnak. Ezek egyike a király, másik a királyi hercegi család, a harmadik pedig az egyház. A királyi lovagrendek színe a kék és az arany, a messze leghíresebb közülük a tizenöt fős Királyi Testőrség (16. szint felett), a legnépesebb pedig a Kék Pajzsos lovagrend. A királyi hercegi családot tisztelő rendek kék és ezüst színeket hordoznak lobogóikon, és a legismertebb közülük a Liliomtor Lovagrend. Az egyházi lovagrendek színe a vörös és az arany, jelképük a kard."
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A legnevesebb efféle lovagrend a tíz tagot számláló Angyali Testőrség (20. szint felett; ők azonban mind paplovagok), a legelterjedtebb pedig a számtalan rendházzal rendelkező Isten Kardja Lovagrend. Ez utóbbi egyben Shadon legnagyobb lovagrendje is."
+        },
+        {
+            "type": "rule",
+            "title": "Az Isten Kardja Lovagrend bemutatása",
+            "rows": [
+                [
+                    "Shadon legelterjedtebb egyházi lovagrendje a birodalom majd minden pontján rendelkezik rendházakkal, erősségekkel. Lovagjai legfőbb céljuknak Domvik hitének világi módszerekkel történő terjesztését tekintik, melyet személyes tetteikkel és példamutatásukkal igyekeznek elérni."
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A renden belül a lovagok Domvik hat arcának megfelelő módon különülnek el; avatásukkor mindegyikük kiválasztja valamely arcot patrónusául és az általa képviselt irányban, az adott eszmének megfelelően képzi magát és tevékenykedik. Ezen felosztás szerint a rend fennállásának majd másfél évezrede alatt megjelentek az elesettek, gyengék védelmező és tápláló, térítő, a hitet külhonban védelmező, gyógyító, tanító, és az eretnekeket felkutató és pásztorló irányzatok egyaránt. Domvik hetedik arcának nincsen a renden belül követői, mivel pusztán világi eszközeikkel effajta ítélethez sem joguk, sem felkészültségük nincs, így ezt inkább a náluknál érdemesebb egyházi személyekre bízzák."
+        },
+        {
+            "type": "paragraph",
+            "text": "Az Isten Kardja Lovagrend minden rendházát, tartományi seregét, illetve magát a rendet is a lovagok soraiból kiemelkedett paplovagok vezetik. Emiatt a lovagok egyházi irányításuk miatt laikus testvérként egyházi címmel is bírnak világi méltóságaik mellett, így ha nincs jelen felszentelt személy, akkor vezetésükkel a közösség a domvikita rendtartásban."
+        }
+    ]
+}

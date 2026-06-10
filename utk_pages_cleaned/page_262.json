@@ -1,0 +1,92 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": false,
+    "section_title": "",
+    "content_blocks": [
+        {
+            "type": "paragraph",
+            "text": "s melynek tisztán és érthetően kell hallatszania 20 ynevi láb körzetben. A papnak közben fel kell mutatnia szent jelképét. Mindenki, aki ezen a területen belül tartózkodik, szembesül a pap valódi hatalmával és tudatára ébred a pap mindenre képes (megismerni kegyelt mivoltát, Tapasztalati szintjét, maximális Kegy pontjainak értékét, valamint tisztában lesz minden világi és vallási rangjával, méltóságával)."
+        },
+        {
+            "type": "paragraph",
+            "text": "A fohász sohasem hazudik, mindig a valóság szerint mutatja be alkalmazóját. A hatalom szavának nincs kényszerítő ereje. Ha a támadók, kötekedők a valódi mivoltot megpillantva sem riadnak meg, a papnak más eszközöket kell keresnie megfékezésükre."
+        },
+        {
+            "type": "paragraph",
+            "text": "Nem Játékos Karakter esetében a KM belátására van bízva, vagy a megismert tudás fényében az NJK féli-e a pap hatalmát."
+        },
+        {
+            "type": "rule",
+            "title": "A hit hatalma",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "Szféra: Élet, Halál, Lélek, Természet Kegy pont: 8 Fohász hossza: 1 szegmens Hatótáv: Önmagam Időtartam: 6 kör (1 perc)"
+        },
+        {
+            "type": "paragraph",
+            "text": "A fohász lehetővé teszi, hogy alkalmazója hitének erejét harci elvakultsággá formálja. A pap csak istene szolgálatában alkalmazhatja e fohászt – azaz jellemével ellentétes lényekkel vívott küzdelemben –, amennyiben máskor vagy indokolatlanul próbálkozna, a fohász nem jön létre és maximális Kegy pontja 1-gyel csökken. Ezen fohász külsőségeiben igen zord, mivel a pap egy pillanatra megmerítkezik szimbóluma fényében, mialatt istene nevét fennhangon üvöltve a csatába veti magát, szeméből túlvilági fényt sugározva."
+        },
+        {
+            "type": "paragraph",
+            "text": "A mágia ideje alatt a pap testi ereje, harci kedve és fegyverforgatási képességei megnőnek; az elvakultság, a szinte fanatikus hit tüze fűti. Az Erő tulajdonsága a pap minden 2 Tapasztalati szintje után 1-gyel emelkedik (legfeljebb 20-ig), KÉ-je és TÉ-je 15-tel nő. A fohász ideje alatt a pap nem gondolhat menekülésre, nem varázsolhat, nem használhat pszit, csak kétkezi harcot folytathat. A fohásznak csak az időtartama hosszabbítható meg további Kegy pontok feláldozásával, a harcértékek tovább nem növelhetők."
+        },
+        {
+            "type": "paragraph",
+            "text": "A fohász meglehetősen népszerű Arel papjai közt, akik csakis sokan sokszor fordulnak ily módon segítségért istennőjükhöz. Használata több látható jellel jár. A hatása alá került pap bámulatos gyorsasággal vív, keresi a veszélyt és a legerősebb, leghatalmasabb ellenfelet. Szemében különös, vad tűz lángol, ajkát harci kiáltások, az ellenfelet ingerlő, kihívó szavak hagyják el. A fohász különlegessége, hogy kis eséllyel ugyan, de kapcsolatot tesz lehetővé isten és papja közt – már amennyiben a pap valós istent imád. Tapasztalati szintenként 1% az esélye annak, hogy az isten felfigyel követőjének elvakult kirohanására, és saját maga is szemlélője lesz az összecsapásnak. (Ez az esély Arel papjai esetében kétszer ekkora, szintenként 2%)."
+        },
+        {
+            "type": "paragraph",
+            "text": "Amennyiben az istenség lepillantott hívére, néhány apróság történhet, amit többnyire hajlamosak kizárólag a véletlen, a jó szerencse számlájára írni. Az alkalmazó pap elől az alsóbb rendű, gyenge ellenfelek félrevonulnak, nem állítják meg, nem próbálják feltartóztatni. A pap így elérkezett kiszemelt célpontjához, és az esetek nagy részében az ellenséges erők egyik vezetője, irányítója. Kezdetét veheti a párbaj. A papot a véletlen is segíti harcában. A KM a harc minden körében dob K6-ot. Amennyiben az eredmény 6, a szerencse valamilyen formában a pap oldalára áll. A hatások lehetséges számának csak a KM fantáziája szabhat határt. Megtörténhet, hogy az ellenfél a kritikus pillanatban egy vizes fűcsomóra lép, és elesik. Ekkor a küzdelmet – míg fel nem áll ismét – a földre kerülés negatív módosítóival kell folytatnia. Előfordulhat, hogy az ellenség gyönyörű vágása, mely minden bizonnyal végzett volna hőseinkkel, mégis a pap füle mellett suhan el, mert az utolsó pillanatban az isten követője egy szemvillanásra elvesztette egyensúlyát és oldalra billent. Számtalan lehetőség kínálkozik a párharc eredményének befolyásolására, de néhány apró szabályt mindenképp érdemes szem előtt tartani."
+        },
+        {
+            "type": "paragraph",
+            "text": "Az isten véletlenhez hasonlatos beavatkozása semmiképp sem döntheti el közvetlenül a küzdelmet – azaz az ellenfél nem halhat meg, nem ájulhat el egyiküktől sem. A másik kikötés, hogy a pap életét egy összecsapásban legfeljebb egy alkalommal mentheti meg a sors. Ne feledjük tehát, a második halálos csapás könnyen az utolsóvá válhat. A fohász külön érdekessége lehet, ha mindkét küzdő fél sikeresen alkalmazza a fohászt, és a véletlen szinte minden másodpercben komolyan befolyásolja a harc kimenetelét."
+        },
+        {
+            "type": "rule",
+            "title": "Áldás",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "Szféra: Élet, Halál, Lélek, Természet Kegy pont: 1/fő Fohász hossza: 1 kör Hatótáv: Érintés Időtartam: 10 kör vagy 1 hónap"
+        },
+        {
+            "type": "paragraph",
+            "text": "Alkalmazásakor a pap rövid fohászával istene jóindulatát, segítségét kéri, s figyelmébe ajánlja a megáldandó személyt vagy tárgyat. Ennek következtében a fohász Erőssége végtelenül magas, hiszen ha valaki meg akarná törni, a közvetlen isteni hatalommal kéne szembeszegülnie."
+        },
+        {
+            "type": "paragraph",
+            "text": "Mindazok, akikre a pap kiterjeszti az áldás hatását – ha csak jellemük, életfelfogásuk nem ellenkezik gyökeresen a pap vallásának tanításaival – megerősödnek eltökéltségükben, a fohász időtartama alatt optimisták, jókedvűek és bátrak lesznek. Ebben az esetben a fohász időtartama 10 kör, s ez idő alatt a megáldott személyek minden harcértékeihez +5 járul, akárcsak az Asztrális és Mentális Mágiaellenállásukhoz. Egyetlen fohásszal akár több személy is megáldható, egyszerre annyi, ahány Kegy pontot a pap erre áldoz. A fohász nem evilági vagy élőholt teremtményekre nem fejti ki hatását."
+        },
+        {
+            "type": "paragraph",
+            "text": "Az Áldás segítségével felszentelt víz, étel tiszta és fogyasztható lesz – amennyiben mérgezett volt, úgy látványosan megposhad, undorítóvá válik. Azok a tárgyak, melyeket a pap megáldott, egy holdhónapon keresztül nem porosodnak, nem fog rajtuk a rozsda, színük nem fakul, s a belőlük áradó hatalom folytán a fegyverek képessé válnak másvilági lények megsebzésére is."
+        },
+        {
+            "type": "rule",
+            "title": "Aszkézis",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "Szféra: Élet, Halál, Lélek, Természet Kegy pont: 1 Fohász hossza: 1 óra Hatótáv: Önmagam Időtartam: 1 nap"
+        },
+        {
+            "type": "paragraph",
+            "text": "A fohász a papok bűntől és földi kísértéstől való megtisztulását segíti elő. Új gondolatokat ébreszt, közelebb hozza a papot istenéhez, segít elszakadni a világi örömök gyarlóságától. Első lépésként a papnak el kell szakadnia a mindennapi valóságtól, egyedül kell maradnia gondolataival. Erre a legtökéletesebb, ha egy elhagyatott helyen, netán cellája magányában meditál. A papnak a nap elején napkeltékor elmondania a fohászt, mely egy órás imádkozást és rituális szövegek kántálását jelenti. Ezek után a napot imáknak és meditációnak kell szentelnie."
+        }
+    ]
+}

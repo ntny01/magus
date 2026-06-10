@@ -1,0 +1,136 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": false,
+    "section_title": "",
+    "content_blocks": [
+        {
+            "type": "paragraph",
+            "text": "Ha tökéletes a sötétség – ez felettébb ritka, legfeljebb egy barlang belsejében, vagy egy bezárt, ablaktalan szobában fordul elő –, a varázslat sem lehet eltérő. Nyílt térben vagy ablakkal ellátott helyen a varázslat még a legsötétebb Éjközép idején is remekül alkalmazható."
+        },
+        {
+            "type": "paragraph",
+            "text": "A hatás az időtartam lejárta előtt bármikor megszüntethető és később újra felidézhető, azonban a rajzolat így is csak a legelső aktivizálástól számított 6 órán át működik, függetlenül attól, hogy viselője használja-e képességét vagy sem. Hátránya, hogy ha a szem ilyenkor közvetlen, erős fényt kap, az illető nyomban és maradandóan megvakul. Ez lehet tűző napfény, felhőtlen időben, vagy közvetlen az arc elé tartott fáklya. Mindkét esetben az egyetlen védekezés a szem azonnali lehunyása lehet. Ehhez az „áldozatnak” sikeres Érzékeléspróbát kell dobnia."
+        },
+        {
+            "type": "rule",
+            "title": "Villámtagadó bélyeg",
+            "headers": [
+                "Mana pont",
+                "Időtartam",
+                "Sérülés esélye"
+            ],
+            "rows": [
+                [
+                    "20",
+                    "Lásd a leírást",
+                    "5%"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A férfitényérnyi tetoválást a mellkas közepére kell felrajzolni. Feltöltésétől egészen addig megőrzi energiáját, míg a hordozóját villám alapú támadás nem éri. A jel képes 3 E-nyi villámmágiát semlegesíteni, vagy annál erősebbet 3 E-vel legyengíteni. A jelet csak akkor lehet újratölteni, ha a 3 E megtelt. A jel semmiben sem akadályozza viselőjét a villámmágia megidézésében, és nem óvja meg a Villámkeltés varázslat kedvezőtlen mellékhatásaitól."
+        },
+        {
+            "type": "rule",
+            "title": "Érzelmek bástyája",
+            "headers": [
+                "Mana pont",
+                "Időtartam",
+                "Sérülés esélye"
+            ],
+            "rows": [
+                [
+                    "25",
+                    "1 óra",
+                    "2%"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A jelet a halántékra szokás tetoválni. Feltöltésekor a boszorkánymester Asztrálteste körül mágikus védelem alakul ki, amely megnehezíti a mozgó Asztrális energiák hatását is. Az időtartam alatt a viselő Asztrális Mágiaellenállása annyival nő, amennyi a tetoválást készítő boszorkánymester tapasztalati szintje."
+        },
+        {
+            "type": "rule",
+            "title": "A Smaragd jele",
+            "headers": [
+                "Mana pont",
+                "Időtartam",
+                "Sérülés esélye"
+            ],
+            "rows": [
+                [
+                    "15",
+                    "Végleges",
+                    "2-10%"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A hozzávetőlegesen ökölnyi bélyeg bárhol elhelyezhető a boszorkánymester bőrén, csupán azt kell szem előtt tartania, hogy ha fel akarja használni azt, akkor meg kell érintenie. A feltöltött tetoválás képes lesz Életerő raktározására, azaz helyettesíti az életerő raktározására varázslathoz szükséges drágakövet. A rajzolat a boszorkánymester minden szintje után 1 Ép vagy 5 Fp tárolására képes. Ha a boszorkánymestert Életerővel manipuláló varázslat éri (akár a sajátja is), akkor először a jelben tárolt energiából kell levonni a sebzést. De a boszorkánymester saját testének gyógyítására is felhasználhatja az elraktározott életerőt. Ehhez csupán meg kell érintenie a rajzolatot, és az életenergia 1 kör alatt átáramlik a testébe. Ha a tetoválást harcban eltalálják, a belefoglalt Mana pontokon kívül a tárolt életerő is elszabadul és sebzi a boszorkánymestert: minden 2 Ép 1 Mp-nak és minden 2 Fp 1 Mp-nak felel meg."
+        },
+        {
+            "type": "rule",
+            "title": "A villámsújtás bélyege",
+            "headers": [
+                "Mana pont",
+                "Időtartam",
+                "Sérülés esélye"
+            ],
+            "rows": [
+                [
+                    "20 + 5/E",
+                    "6 óra",
+                    "25%"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "Ez a mágikus rajzolat a boszorkánymester vagy az általa kijelölt személy bal alkarjára, illetve kézfejére kerül. A jel leginkább egy nonfiguratív villámmintára emlékeztet, mely körbefonja viselője alkarját. A jel a délvidéki alvilági testvériségek soraiban félelemmel vegyes tiszteletet ébreszt a hergoli villámmester pártfogoltja iránt. (Leggyakrabban ők alkalmazzák ezen tetoválást, azonban a Dúlás utáni zavaros időkben egyes szabadúszóknak is sikerült szert tenniük a jel megalkotásához szükséges tudásra). A tetoválásba a boszorkánymester annyi E erősségű a Villámvarázs formázású villámot képes bebörtönözni, amennyi a Tapasztalati szintjének a fele felfelé kerekítve. Ez annyit jelent, hogy egy 5. Tapasztalati szintű boszorkánymester maximálisan 3E-s villámot képes a jelbe sűríteni. A villám egy egyszerű gondolati parancsra aktivizálódik, azonban a boszorkánymesteri villámoknál leírtak szerint célozni szükséges vele, méghozzá az alkalmazó bal mutatóujjával."
+        },
+        {
+            "type": "rule",
+            "title": "Fertő bélyeg",
+            "headers": [
+                "Mana pont",
+                "Időtartam",
+                "Sérülés esélye"
+            ],
+            "rows": [
+                [
+                    "15 + a belefoglalt rontás költsége",
+                    "Lásd a leírást!",
+                    "5%"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A tenyéren elhelyezkedő, szinte az egész felületet beborító, tátott szörnypofát mimelő tetoválás leginkább egy begyógyult, komolyabb égési seb tarajos felületére hasonlít, leggyakrabban Toron boszorkánymesterein, illetve ügynökein fedezhető fel. A mágikus rajzolat képes egy korábban megidézett rontást eltárolni, és a későbbiekben egyetlen érintéssel átruházni a kiszemelt célpontra. A jel, talán pont tökéletlensége miatt azonban nem óvja maradéktalanul gazdáját; a tetoválást hordozó személy Egészségének megfelelő napig képes csupán a vonalai közé zárt fertőt féken tartani, majd lassan elkezdi szétszórni rontó erejét. Innentől kezdve az adott rontás szintjével megegyező órán keresztül, óránként egyszer igyekszik lebírni az őt viselő személyt, minden alkalommal az egy ponttal alkalmanként csökkenő szintnek megfelelő erősséggel. A jel különlegessége, hogy sérülése esetén sem szabadulnak fel belőle a mágikus energiák, hanem a fertő szabadul el. Ilyenkor azonban +K6 szinttel erősebben jön létre a rontás a tetoválás hordozóján."
+        },
+        {
+            "type": "rule",
+            "title": "Betegségtől óvó bélyeg",
+            "headers": [
+                "Mana pont",
+                "Időtartam",
+                "Sérülés esélye"
+            ],
+            "rows": [
+                [
+                    "15 + 5/E",
+                    "Végleges",
+                    "15% + 3%/E"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "Ez a kéttenyérnyi mágikus rajzolat a boszorkánymester vagy az általa kijelölt személy hasfalára kerül. A leggyakrabban csiszolt smaragdot ábrázoló jel különlegessége, hogy a rajzolat minél erősebb védelmet fejt ki, annál inkább növekszik a mérete és az szó szerint értendő: a tetoválás elkészülte után a jel feltöltésekor a drágakőformából nonfiguratív, tintafekete vonalak terjednek szét, és fonják körbe a kiszemelt személy altestét, attól függő mértékben, minél hatalmasabb a jel. A jel minden egyes +1 E után 1 pont bónuszt ad a hordozója Egészségpróbáira a betegségek ellen."
+        }
+    ]
+}

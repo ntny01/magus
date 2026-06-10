@@ -1,0 +1,124 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": true,
+    "section_title": "4. fokú diszciplína",
+    "content_blocks": [
+        {
+            "type": "rule",
+            "title": "A Sárkány dühe",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A diszciplína fenntartása gyenge koncentrációt igényel, ezért ezzel párhuzamosan csak az Aranyharang, Kiáltás és a Sárkány tánca és ébredése diszciplínák alkalmazhatóak és a Statikus pajzsok sem bomlanak le."
+        },
+        {
+            "type": "paragraph",
+            "text": "Az érintés szintjén képzett Slan alkalmazó tudata felett olyan szintű ellenőrzést gyakorol, hogy elméjének rendezettsége testének fizikai megnyilvánulásaiban is visszatükröződik."
+        },
+        {
+            "type": "rule",
+            "title": "A Sárkány tánca",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A Sárkány tánca az ősi szörnyetegek időtlen álmaihoz hasonló állapotba, egyfajta transzba ragadja alkalmazóját. Amíg korábban a Sárkány dühe alkalmazásakor még csak a szellem harmóniáját terjesztett ki a testre, addigra most már a szellem harcol. Az alkalmazó csapásai mintegy rendre az ellenfél védtelen pontjaira találnak, mintha tudná hová kell sújtania."
+        },
+        {
+            "type": "paragraph",
+            "text": "A mérgezések és a belső látás vezette harcmodor miatt a Slan elmélyülve az összpontosításban szellemi fölényét fizikailag is érvényesíti. Ezt mutatja meg az alábbi táblázat."
+        },
+        {
+            "type": "table",
+            "headers": [
+                "Alkalmazás szintje*",
+                "KÉ",
+                "TÉ, VÉ"
+            ],
+            "rows": [
+                [
+                    "1.",
+                    "+2",
+                    "+5"
+                ],
+                [
+                    "3.",
+                    "+4",
+                    "+10"
+                ],
+                [
+                    "5.",
+                    "+6",
+                    "+15"
+                ],
+                [
+                    "7.",
+                    "+8",
+                    "+20"
+                ],
+                [
+                    "9.",
+                    "+10",
+                    "+25"
+                ],
+                [
+                    "11.",
+                    "+12",
+                    "+30"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "* nem a karakter Tapasztalati szintjét jelenti, hanem azt a szintet, amióta birtokában van a diszciplínának (a diszciplína elsajátítása jelenti az 1. Tapasztalati szintet. Például ha egy 7. szintű harcművész 3. Tapasztalati szinten sajátított el a Pszi képzettség 4. fokát, akkor ő 5. szintű alkalmazónak minősül)."
+        },
+        {
+            "type": "paragraph",
+            "text": "A diszciplína fenntartása gyenge koncentrációt igényel, ezért ezzel párhuzamosan csak az Aranyharang, Kiáltás és a Sárkány dühe és ébredése diszciplínák alkalmazhatóak és a Statikus pajzsok sem bomlanak le."
+        },
+        {
+            "type": "paragraph",
+            "text": "A diszciplína alkalmazása nagyon megterheli a testet és a szellemet. Ezért a harcművész a Sárkány táncát maximálisan annyi körig képes fenntartani, amennyi a Tapasztalati szintje. A Sárkány táncának befejeztével annyi kört kell pihenéssel töltenie, mielőtt újra használhatná az alkalmazást, amennyit a diszciplína hatása alatt töltött. A pihenés itt mindössze annyit jelent, hogy a karakternek hagyományos harcot kell folytatnia, de más diszciplínákat alkalmazhat."
+        },
+        {
+            "type": "paragraph",
+            "text": "A fegyveresek és a kardművészek nem mindegyik általuk ismert fegyverrel képesek Sárkánytáncot folytatni: az egyes csakis az általuk a Harcművészet képzettségnél kiválasztott fegyverrel, vagy puszta testükkel alkalmazhatják."
+        },
+        {
+            "type": "rule",
+            "title": "Jelentéktelenség",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A Slanek életük nagy részét – míg ki nem kerülnek a kolostorból vagy iskolából – csöndes önmagukba zárkózással, nyugalmas elmélyedéssel töltik. A szinte észrevétlen jelenlét, háttérbe húzódó viselkedés az effajta életmód egyik alapkövetelménye. A Ψ-energiákat is segítségül hívva, a Slan Út alkalmazói elérték, hogy a teljes jelentéktelenségbe burkolózhassanak."
+        },
+        {
+            "type": "paragraph",
+            "text": "A diszciplína alkalmazásakor a Slan átlényegíti aurájának felszínes régióit, és átveszi környezete hullámait, rezdüléseit. Csendes szemlélőként nem avatkozik be, halad megszabott útján, sodródik a tömeggel, ezáltal nem vet fodrokat az Asztrál-, Mentálsíkon, az érzékszervek vezérlő tudatok pedig képtelenek huzamosabb ideig megragadni jelenlétét. Azonban amint a passzivitását feladva a Slan felhívja magára a figyelmet, a hatás szertefoszlik."
+        },
+        {
+            "type": "paragraph",
+            "text": "A diszciplína használatakor az alkalmazó nem tűnik fel, a legfigyelmesebb szemlélőnek sem. A ráirányított tekintet lesiklik róla, jelentéktelen, figyelmet nem érdemlő senkinek hat. A tudatos érzékelések persze felfedezik (Auraérzékelés, Láthatatlanság érzékelés, Hatodik érzék) és lelepleződik akkor is, ha a kifejezetten kereséssel, őrködéssel foglalkozó szemlélő sikeres Érzékeléspróbát dob. Ha azonban az alkalmazó már elhagyta a helyszínt – ahol a diszciplína segítségével sikerült észrevétlennek maradnia – hiába járt le a Jelentéktelenség időtartama, nem ébred gyanú senkiben."
+        },
+        {
+            "type": "paragraph",
+            "text": "Közönséges példája ennek, ha az alkalmazó úgy kíván halálos ellenségeinek táborán végighalad – esetleg kémlelni azt –, hogy járása-kelése észrevétlen maradjon. Ilyenkor a diszciplína segítségével jelentéktelenné válik, s a táborlakók – sikeres Érzékeléspróba vagy tudatos érzékelés híján – nem figyelnek föl rá: maguk közé tartozónak tekintik. Miután a tábort elhagyta, senkinek nem jut eszébe, hogy idegen járt közöttük. Távozása éppúgy jelentőség nélkül való, mint jelenléte. A diszciplína alkalmazása közben szólni, beszédbe elegyedni nem lehet – ez azonnali lelepleződéssel jár –, miképpen a harcba bocsátkozás is megszünteti a Jelentéktelenséget."
+        },
+        {
+            "type": "paragraph",
+            "text": "A diszciplína értelmetlen alkalmazása is balul üthet ki: magányos emberhez odamenni vagy hegyi óriások falujába besétálni – azaz bármi olyat tenni, amikor nincs mód a környezetben tartózkodókhoz való azonosulásra – nem vezethet sikerhez."
+        }
+    ]
+}

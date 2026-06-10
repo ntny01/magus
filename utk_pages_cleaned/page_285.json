@@ -1,0 +1,523 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": false,
+    "section_title": "",
+    "content_blocks": [
+        {
+            "type": "table",
+            "headers": [
+                "Fohász neve",
+                "Szféra",
+                "Kegy pont",
+                "Fohász hossza",
+                "Hatótáv",
+                "Időtartam",
+                "Mágiaellenállás"
+            ],
+            "rows": [
+                [
+                    "Átokérzékelés",
+                    "É, L",
+                    "10",
+                    "10 perc",
+                    "Érintés",
+                    "Egyszeri",
+                    "—"
+                ],
+                [
+                    "Autóérzékelés",
+                    "T",
+                    "10",
+                    "5 szegmens",
+                    "20 ynevi láb",
+                    "6 kör (1 perc)",
+                    "—"
+                ],
+                [
+                    "Csend",
+                    "T",
+                    "5",
+                    "5 szegmens",
+                    "3 ynevi láb",
+                    "1 kör",
+                    "—"
+                ],
+                [
+                    "Életérzékelés",
+                    "É, L",
+                    "10",
+                    "5 szegmens",
+                    "20 ynevi láb",
+                    "6 kör (1 perc)",
+                    "—"
+                ],
+                [
+                    "Fanatizálás",
+                    "L",
+                    "Lásd a leírást!",
+                    "6 kör (1 perc)",
+                    "100 ynevi láb",
+                    "30 kör (5 perc)",
+                    "—"
+                ],
+                [
+                    "Hang",
+                    "L",
+                    "12",
+                    "1 perc",
+                    "Korlátlan",
+                    "Egyszeri",
+                    "—"
+                ],
+                [
+                    "Hősi lélek",
+                    "L",
+                    "20",
+                    "3 szegmens",
+                    "Érintés",
+                    "10 kör",
+                    "—"
+                ],
+                [
+                    "Izzó vér",
+                    "H",
+                    "20",
+                    "3 szegmens",
+                    "20 ynevi láb",
+                    "6 kör (1 perc)",
+                    "—"
+                ],
+                [
+                    "Káoszkard",
+                    "H, T",
+                    "10",
+                    "5 szegmens",
+                    "Érintés",
+                    "6 kör (1 perc)",
+                    "—"
+                ],
+                [
+                    "Kód felidézése",
+                    "T",
+                    "10",
+                    "2 szegmens",
+                    "20 ynevi láb",
+                    "6 kör (1 perc)",
+                    "—"
+                ],
+                [
+                    "Láth. évil. lények előtt",
+                    "T",
+                    "10",
+                    "2 szegmens",
+                    "Érintés",
+                    "6 kör (1 perc)",
+                    "—"
+                ],
+                [
+                    "Láth. túlv. lények előtt",
+                    "É",
+                    "20",
+                    "2 szegmens",
+                    "Érintés",
+                    "6 kör (1 perc)",
+                    "—"
+                ],
+                [
+                    "Méregérzékelés",
+                    "É, T",
+                    "5",
+                    "1 kör",
+                    "Lásd a leírást!",
+                    "1 perc",
+                    "—"
+                ],
+                [
+                    "Óvó fegyver",
+                    "É",
+                    "10",
+                    "1 kör",
+                    "Érintés",
+                    "6 kör (1 perc)",
+                    "—"
+                ],
+                [
+                    "Szférák zenéje",
+                    "L, É, T",
+                    "18",
+                    "5 kör",
+                    "20 ynevi láb",
+                    "1 óra",
+                    "—"
+                ],
+                [
+                    "Transz",
+                    "L",
+                    "18",
+                    "1 óra",
+                    "Önmagam",
+                    "1 óra",
+                    "—"
+                ],
+                [
+                    "Veszély észlelése",
+                    "L, T, É",
+                    "5",
+                    "6 kör (1 perc)",
+                    "20 ynevi láb",
+                    "15 perc",
+                    "—"
+                ],
+                [
+                    "Véráldozat",
+                    "H",
+                    "24",
+                    "1 kör",
+                    "Érintés",
+                    "1 óra",
+                    "—"
+                ],
+                [
+                    "Vérgát",
+                    "H",
+                    "10/20",
+                    "Rajzolás hossza",
+                    "10 ynevi láb",
+                    "1 nap",
+                    "—"
+                ]
+            ]
+        },
+        {
+            "type": "table",
+            "headers": [
+                "Fohász neve",
+                "Szféra",
+                "Kegy pont",
+                "Fohász hossza",
+                "Hatótáv",
+                "Időtartam",
+                "Mágiaellenállás"
+            ],
+            "rows": [
+                [
+                    "Álca",
+                    "L",
+                    "25",
+                    "3 kör",
+                    "Önmagam",
+                    "10 perc",
+                    "—"
+                ],
+                [
+                    "Álomút",
+                    "L",
+                    "35",
+                    "3 kör",
+                    "Önmagam",
+                    "1 óra",
+                    "—"
+                ],
+                [
+                    "Égi szekér",
+                    "T",
+                    "65",
+                    "10 perc",
+                    "1 óra",
+                    "1 óra",
+                    "—"
+                ],
+                [
+                    "Elemi lények szólítása",
+                    "T",
+                    "35",
+                    "6 kör (1 perc)",
+                    "20 ynevi láb",
+                    "10 perc",
+                    "—"
+                ],
+                [
+                    "Földrengés",
+                    "T",
+                    "85",
+                    "20 kör",
+                    "5 mérföld",
+                    "30 kör (5 perc)",
+                    "—"
+                ],
+                [
+                    "Gólemteremtés",
+                    "É, H, T",
+                    "75",
+                    "13 nap",
+                    "Érintés",
+                    "Végleges",
+                    "—"
+                ],
+                [
+                    "Hazatérés",
+                    "É",
+                    "55",
+                    "1 szegmens",
+                    "Egyszeri",
+                    "Végleges",
+                    "—"
+                ],
+                [
+                    "Holtak megelevenítése",
+                    "H",
+                    "25",
+                    "1 kör",
+                    "20 ynevi láb",
+                    "30 kör (5 perc)",
+                    "—"
+                ],
+                [
+                    "Időjárás-ellenőrzés",
+                    "T",
+                    "45",
+                    "10 perc",
+                    "2 ynevi mérföld",
+                    "1 óra",
+                    "—"
+                ],
+                [
+                    "Küldött megidézése",
+                    "H, É",
+                    "100",
+                    "2 óra/1 szegm.",
+                    "20 ynevi láb",
+                    "Speciális",
+                    "—"
+                ],
+                [
+                    "Lélekáldozat",
+                    "H",
+                    "40",
+                    "1 kör",
+                    "Érintés",
+                    "Végleges",
+                    "—"
+                ],
+                [
+                    "Lélekcsapda",
+                    "H, É",
+                    "40",
+                    "1 szegmens",
+                    "12 ynevi láb",
+                    "10 nap",
+                    "—"
+                ],
+                [
+                    "Isteni áldás",
+                    "É, H, L, T",
+                    "90",
+                    "1 szegmens",
+                    "20 ynevi láb",
+                    "10 perc",
+                    "—"
+                ],
+                [
+                    "Összetart. Aszt./Ment.",
+                    "L",
+                    "20/fő",
+                    "1 kör/fő",
+                    "Érintés",
+                    "1 óra",
+                    "—"
+                ],
+                [
+                    "Segélykérés",
+                    "É",
+                    "20 + 40",
+                    "1 szegmens",
+                    "Lásd a leírást!",
+                    "Végleges",
+                    "—"
+                ],
+                [
+                    "Természet megidézése",
+                    "T",
+                    "15",
+                    "1 kör",
+                    "20 ynevi láb",
+                    "30 kör (5 perc)",
+                    "—"
+                ],
+                [
+                    "Vadak irányítása",
+                    "T, L",
+                    "15",
+                    "1 kör",
+                    "20 ynevi láb",
+                    "30 kör (5 perc)",
+                    "—"
+                ],
+                [
+                    "Vadak szólítása",
+                    "T",
+                    "20",
+                    "1 kör",
+                    "2 ynevi mérföld",
+                    "10 perc",
+                    "—"
+                ],
+                [
+                    "Vízlélegzés",
+                    "T",
+                    "21",
+                    "1 kör",
+                    "Érintés",
+                    "30 kör (5 perc)",
+                    "—"
+                ],
+                [
+                    "Vérgyűjtés",
+                    "H",
+                    "15",
+                    "2 szegmens",
+                    "20 ynevi láb",
+                    "30 kör (5 perc)",
+                    "—"
+                ],
+                [
+                    "Vérzés",
+                    "H",
+                    "30",
+                    "1 szegmens",
+                    "20 ynevi láb",
+                    "6 kör (1 perc)",
+                    "—"
+                ]
+            ]
+        },
+        {
+            "type": "table",
+            "headers": [
+                "Fohász neve",
+                "Szféra",
+                "Kegy pont",
+                "Fohász hossza",
+                "Hatótáv",
+                "Időtartam",
+                "Mágiaellenállás"
+            ],
+            "rows": [
+                [
+                    "Csábítás",
+                    "L",
+                    "1",
+                    "5 szegmens",
+                    "Önmagam",
+                    "30 kör (5 perc)",
+                    "Asztrális"
+                ],
+                [
+                    "Állati kémek",
+                    "L, T",
+                    "10",
+                    "1 kör",
+                    "20 ynevi láb",
+                    "30 kör (5 perc)",
+                    "—"
+                ],
+                [
+                    "Csatakiáltás",
+                    "L",
+                    "2",
+                    "1 szegmens",
+                    "Önmagam",
+                    "1 kör",
+                    "—"
+                ],
+                [
+                    "Ivászat",
+                    "É, T",
+                    "12",
+                    "1 kör",
+                    "Önmagam",
+                    "Egyszeri",
+                    "—"
+                ],
+                [
+                    "Sólyomidézés",
+                    "T",
+                    "2",
+                    "1 kör",
+                    "1 óra",
+                    "1 óra",
+                    "—"
+                ],
+                [
+                    "Szélkeltés",
+                    "T",
+                    "10",
+                    "6 kör (1 perc)",
+                    "50 ynevi láb",
+                    "30 kör (5 perc)",
+                    "—"
+                ]
+            ]
+        },
+        {
+            "type": "table",
+            "headers": [
+                "Fohász neve",
+                "Szféra",
+                "Kegy pont",
+                "Fohász hossza",
+                "Hatótáv",
+                "Időtartam",
+                "Mágiaellenállás"
+            ],
+            "rows": [
+                [
+                    "Gyilkos tréfa",
+                    "H, L",
+                    "4",
+                    "1 kör",
+                    "20 ynevi láb",
+                    "6 kör (1 perc)",
+                    "Asztrális"
+                ],
+                [
+                    "Méregizzadás",
+                    "H",
+                    "6/méregszint",
+                    "1 kör/méregsz.",
+                    "Önmagam",
+                    "1 kör/méregsz.",
+                    "—"
+                ],
+                [
+                    "Holt beszéd",
+                    "H",
+                    "3",
+                    "2 szegmens",
+                    "Önmagam",
+                    "10 kör",
+                    "—"
+                ],
+                [
+                    "Nyugalom",
+                    "H",
+                    "10/fő",
+                    "1 kör",
+                    "Érintés",
+                    "Végleges",
+                    "—"
+                ],
+                [
+                    "Holtak útja",
+                    "H",
+                    "35",
+                    "1 kör",
+                    "Érintés",
+                    "30 kör (5 perc)",
+                    "—"
+                ]
+            ]
+        }
+    ]
+}

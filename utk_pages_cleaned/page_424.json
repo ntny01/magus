@@ -1,0 +1,96 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": false,
+    "section_title": "",
+    "content_blocks": [
+        {
+            "type": "paragraph",
+            "text": "A bárdok többnyire magányos figurák, Ilanorban szövetségbe tömörültek, melynek tagjai minden körülmények közt összetartanak."
+        },
+        {
+            "type": "paragraph",
+            "text": "Szépmező kereskedelmi kapcsolatai – főként a pompás hatások révén – kiterjednek Észak majd' minden államára. A rabszolgaságnak csak egy sajátos formáját, a hadi rabszolgaságot ismerik el: foglyaikat a nemes hadiigazgatóságban dolgoztatják, ám bizonyos idő – három-hat év – elteltével szélnek eresztik."
+        },
+        {
+            "type": "paragraph",
+            "text": "Itt született a legendás Mogorva Chei, aki a Pýarron szerinti harmadik évezred derekán társaival saját államot alapított messzi délen, a ma Yllinornak nevezett területen."
+        },
+        {
+            "type": "paragraph",
+            "text": "Ilanor felett öt nemzetség törzsfői uralkodnak, öt thán és a mellettük szerveződött tanács dönt a fontos kérdésekben. A hivatalos nyelv az érvtől idegen ilanorí, melyet Északföldén rejtnyelvként is emlegetnek. Szépmező lakói – hisz a szükség erre szorítja őket – értik és beszélik a Közöst, de hazai földön udvarias gesztusnak számít részükről, ha használják is."
+        },
+        {
+            "type": "paragraph",
+            "text": "Az ilanorí magas, karcsú embernép. Hajuk erős szálú, sötét árnyalatú, olykor hollófekete, szemük legtöbbször szintén sötét, mélybarna vagy fekete. Büszke, minden körülmények közt egyenes emberek; barátnak kívánni sem lehet jobbat náluk, ellenségeikkel azonban a kegyetlenségig kísérlethetetlenek."
+        },
+        {
+            "type": "paragraph",
+            "text": "Többnyire könnyű vászonruházatot viselnek, kedvelt színeik a fekete, a fehér, a szürke és a kék. Gyakran vesznek fel finomra cserzett bőrmellényt és bőrnadrágot; fém (akár nemesfém) díszeket láncon sosem hordanak. A felleghajtó, a csuklyás köpeny mindennapi viseletük, lábbelijük – ahogyan egy lovasnéphez illik – térdig érő csizma. A fegyverek közül a könnyű, olykor enyhén ívelt pengéjű szablyát, az egykezes kardot, az íjat és a nyílpuskát részesítik előnyben, de szívesen használják a tőrt, a kopját és a csatacsákányt is."
+        },
+        {
+            "type": "paragraph",
+            "text": "Ilanorban a szabadok hazája, árai ehhez mértek: a megélhetés bárki számára megfizethető, a kényelmi cikkeket azonban igen drágán mérik. Alkudni nem szokásuk, ezt méltóságukon alulinak tartják. Tárgyaikat ízléssel díszítik – ha tehetik, ezüstöt alkalmaznak e célra."
+        },
+        {
+            "type": "paragraph",
+            "text": "Harcosés bárdiskoláik a legismertebbek, olykor azonban a lassanként háttérbe szoruló ősi kultuszok hívei közül egy-egy sámán is kikerül soraik közül."
+        },
+        {
+            "type": "paragraph",
+            "text": "A közbiztonság jónak mondható; mivel mindenki fegyvert hord, és konyít is a használatához, külhoni martalócoknak eleve semmi esélyük a sikeres működésre. Az átlagos ilanorí született gazda vagy harcos, s mint ilyen, a törvényt ugyan nem, de a szokásjogot tiszteli. A kivételek ritkák – a javak elbitorlását, a lovak elpusztítását és a gyújtogatást kiemelkedő szigorral büntetik elöljáróik."
+        },
+        {
+            "type": "paragraph",
+            "text": "Szépmezőn többségben vannak a pýarroní hit hívei, elsősorban Arelt, Ellanát és Kyelt imádják, de nyílt titoknak számít, hogy sokan az ősi kultusz isteneit – Kai-Syahot, a Szűz Vadászt, Dal Lartit, Mindenek Anyját és Kruh-Berant, az Ősz Üstökűt – látják bennük."
+        },
+        {
+            "type": "section_header",
+            "text": "Tarin"
+        },
+        {
+            "type": "paragraph",
+            "text": "A Pýarron szerinti 1200-as évek elején hasas, vihartépte hajók érkeztek Beriquelről, és a Traidlan-hegység árnyékában, Ynev legészakibb partján vetettek horgonyt. Négy törpe törzs tagjait hozták, akik – saját bevallásuk szerint – isteneik sugallatára vállalkoztak az útra. A hegységen átkelve virágzó emberi civilizációra, az Északi Háromak hercegségeire bukkantak."
+        },
+        {
+            "type": "paragraph",
+            "text": "Vezetőik békét kötöttek az akkori uralkodóhercegekkel, s építkezésbe fogtak a hegyek mélyén. A hercegségek szerszámmal, nyersanyaggal és élelemmel látták el őket, s örök birtokul nekik adományozták az egész Traidlan-hegységet, annak kincseivel egyetemben. A törpék hálája nem maradt el: viszonzásul hűséget fogadtak a környéken élő embernépeknek, és megbonthatatlan szövetségre léptek velük."
+        },
+        {
+            "type": "paragraph",
+            "text": "Új otthonukban először a természetes barlangrendszereket népesítették be, majd egyre lejjebb fúrtak, s alig ezer esztendő alatt óriási, emberi mértékkel szinte felfoghatatlan tárnarendszert, földalatti birodalmat hoztak létre. Fővárosuk, Gromthi-karr Khazad, negyvenszintnyi csarnokrendszer, de a beszámolók több ehhez fogható óriási városról beszélnek. Alig néhány olyan utazó akad, aki látta őket; nem mintha a törpék társaságkerülők vagy mogorvák lennének, a felszíni viszonyokhoz szokott emberi elme azonban képtelen megbirkózni a földalatti világ sötétjének iszonyatával, a visszhangos mélységek rettenetével – vagyis mindazzal, amit egy ilyen látogatás jelent."
+        },
+        {
+            "type": "paragraph",
+            "text": "Tarinról szólva mindenképpen említést kell tennünk az elevenfémről, amely a tudósok egybehangzó állítása szerint Ynev tán legkülönösebb életformája; még a bölcsek sem tudnak róla eleget. Keménysége, ötvözhetősége túltesz még az abbiton is, értéke felülmúlja azt. Az élő fém megmunkálásának tudománya kizárólag néhány beavatott tariní kovácsméster számára hozzáférhető, mert a fémnek akarata van, így csak azzá formálhatják, amibe beleegyezik."
+        },
+        {
+            "type": "paragraph",
+            "text": "Beszélni képtelen ugyan, ám gondolatait, érzéseit, akaratát mentális energiái segítségével hozza mások tudomására; mint mondják, makacssága felülmúlja még a híres abasziszi öszvérékét is. Eleven fémből kovácsolt eszközút birtokolni olyan, mint hűséges társsal kóborolni, ám csúful járnak mindazok, akik a fém akarata és tetszése ellenében próbálják használni fegyverüket. Ki nem védett csapások, félrecsúszó támadások, hüvelyből szoruló kard… és ezek csak az első figyelmeztető jelek."
+        },
+        {
+            "type": "paragraph",
+            "text": "Az eleven fém csupán Tarin röghegységeiben, Doardon bérceinek sziklakatlanjaiban és a Yian-Yiel hegység mély barlangjaiban él meg, ám pontos lelőhelyeinek titka nem ismert."
+        },
+        {
+            "type": "paragraph",
+            "text": "A törpék kereskedelme igen kiterjedt Észak egyéb államaival: csodálatosan megmunkált fémtárgyakat – elsősorban fegyvereket és vérteket –, nemesfémeket (lunit, aranyat, ezüstöt és rezet), valamint drágaköveket szállítanak, cserébe élelmet, kelméket és élőállatot kapnak. A törpék kitűnő kovácsok, építészek, mérnökök és nem utolsósorban rettenthetetlen harcosok: az Északi Szövetség gyalogos légióinak derékhadát alkotják. Lovasságuk különös denevérkutyákat – vanirul rackla – használ hátas gyanánt."
+        },
+        {
+            "type": "paragraph",
+            "text": "Tarin királyság, uralkodója a közel kilencszáz esztendős Toroff Oggi, a Vándorút utolsó esztendejében elhunyt Torrof Miigan, a Smaragdszemű egyenes ági leszármazottja."
+        },
+        {
+            "type": "paragraph",
+            "text": "A hivatalos nyelv a vanir, melynek ősibb változatát, a hiltet csak a papok és varázstudók beszélik. A törpék túlnyomó többsége érti és beszéli az ervet, a világottabbja a Közöst is."
+        },
+        {
+            "type": "paragraph",
+            "text": "Tarin törpéi a könnyen elkészíthető, strapabíró, örökfejtést igénylő mozgásokat nem korlátozó ruhadarabokat részesítik előnyben, háborúban és békében egyaránt. Ingük vékonyabb, nadrágjuk anyaga háromrét hajtott vászon, csizmájuk, bakancsuk szívós medvebőr – az elejtett nagyvadak bundáját asszonyaik előszeretettel viselik, a férfiak inkább köpenyt, zekét hordanak. Ha kemény munkát végeznek, csak nadrágot öltenek, széles, bőr derékövüket egészen szorosra húzzák."
+        },
+        {
+            "type": "paragraph",
+            "text": "A királyság árai nem mérhetőek az emberi birodalmakéhoz, annyira más az értékrendje. A fém fizetőeszközöknek sokkal kisebb értéket tulajdonítanak, mint mondjuk a fának, netán a felszínről való élelemnek, árpasörnek."
+        }
+    ]
+}

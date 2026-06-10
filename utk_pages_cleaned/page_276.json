@@ -1,0 +1,64 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": true,
+    "section_title": "Egyedi fohászok",
+    "content_blocks": [
+        {
+            "type": "rule",
+            "title": "Vérzés",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "Arel egyedi litániái"
+        },
+        {
+            "type": "rule",
+            "title": "Csábítás",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "Arel egyedi rituáléi"
+        },
+        {
+            "type": "rule",
+            "title": "Állati kémek",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Csatakiáltás",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Ivászat",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Sólyomidőzés",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        }
+    ]
+}

@@ -1,0 +1,53 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": true,
+    "section_title": "Távolbahatás",
+    "content_blocks": [
+        {
+            "type": "paragraph",
+            "text": "jelenti, hogy vagy a maga körüli 20 Ynevi láb sugarú göm-bön, vagy a különböző helyeken elhelyezett Zóna Varázsjelei körüli ugyanekkora területen belül. Természetesen ez nem jelenti azt, hogy egy már működő varázslat összeomlana, ha a varázsló távolabb sétál."
+        },
+        {
+            "type": "paragraph",
+            "text": "A Távolbahatás lehetővé teszi, hogy a varázsló Zónáján kívül is létrehozzon egy varázslatot. Ez azonban – a Zónán belüli varázslással ellentétben – megköveteli azt, hogy a varázsló lássa azt a pontot, ahol varázslatát megjeleníteni kívánja."
+        },
+        {
+            "type": "paragraph",
+            "text": "Vagyis Távolbahatni csak olyan helyre képes, amit lát! Látása lehet természetes eredetű, de akár mágikus is. Az sem jelent akadályt, ha netán más szemével látja az adott helyet (lásd: Mentálmágia – Érzékelés!). A Távolbahatás Mp-igénye a kiszemelt pont a varázslótól mért távolságától függ. Hogy miként, azt a következő táblázat határozza meg:"
+        },
+        {
+            "type": "table",
+            "headers": [
+                "Távolság",
+                "Mp"
+            ],
+            "rows": [
+                [
+                    "20-40 láb",
+                    "10 Mp"
+                ],
+                [
+                    "40-100 láb",
+                    "20 Mp"
+                ],
+                [
+                    "100-1000 láb",
+                    "30 Mp"
+                ],
+                [
+                    "1-10 mérföld",
+                    "40 Mp"
+                ],
+                [
+                    "10-100 mérföld",
+                    "50 Mp"
+                ],
+                [
+                    "100 mérföld felett",
+                    "60 Mp"
+                ]
+            ]
+        }
+    ]
+}

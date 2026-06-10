@@ -1,0 +1,136 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": false,
+    "section_title": "",
+    "content_blocks": [
+        {
+            "type": "paragraph",
+            "text": "valami egészen más helyen járna, más dolgok történnének meg vele. Ha fejében megfordul annak a gondolata, hogy esetleg mindez nem a valóság, akkor Intelligencia-próbára jogosult. Sikeres próba esetén – bár a téves érzékelés továbbra is tart – már tisztában van azzal, hogy érzékszervei nem a valóságról tájékoztatják. Illúzióval sok minden elérhető, ám soha nem okozható valódi seb, főképp nem halál. Ahhoz azonban, hogy az illúzió ne pusztán egy előre megtervezett történet legyen, hanem változzon is az áldozat cselekedetei által indokolt módon – röviden, hogy tökéletes pszeudo-valóságot teremtsünk az illető számára – értesülnünk kell arról is, hogy miként cselekszik az érzékszervein át csak számára létező, valótlan világban, ezt Gondolatolvasással érhetjük el. Ahhoz, hogy az illúzió által teremtett pszeudo-valóság folyamatosan változó, és ne valami mozdulatlan világ legyen, a varázslónak a varázslat végéig egyfolytában összpontosítania kell. Ez kizárja más varázslatok alkalmazását, vagy a kézitúsát, ám nem teszi lehetetlenné a mozgást vagy a beszédet."
+        },
+        {
+            "type": "rule",
+            "title": "Érzéketlenség (Bénítás)",
+            "headers": [
+                "Mana pont",
+                "Időtartam",
+                "Varázslás ideje"
+            ],
+            "rows": [
+                [
+                    "1 Mp/E",
+                    "1 kör",
+                    "1 szegmens"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "történtek tekintetében. Hogy mennyi idő esik ki az emlékeiből, azt a Kábítás Erőssége (E) határozza meg. Minden egyes, a karakter Mágiaellenállásán átjutott E egy órát jelent. A varázslat Időtartamával visszatérnek az elfeledett emlékek maradéktalanul visszatérnek, ám ez nem egyik pillanatról a másikra történik meg, hanem percek alatt."
+        },
+        {
+            "type": "rule",
+            "title": "Feledés (Írás)",
+            "headers": [
+                "Mana pont",
+                "Időtartam",
+                "Varázslás ideje"
+            ],
+            "rows": [
+                [
+                    "2 Mp/2 E",
+                    "3 kör",
+                    "1 szegmens"
+                ]
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Teljes amnézia (Bénítás)",
+            "headers": [
+                "Mana pont",
+                "Időtartam",
+                "Varázslás ideje"
+            ],
+            "rows": [
+                [
+                    "2 Mp/E",
+                    "1 kör",
+                    "1 szegmens"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "Emlékközpontra ható operációk"
+        },
+        {
+            "type": "rule",
+            "title": "Emlékolvasás (Olvasás)",
+            "headers": [
+                "Mana pont",
+                "Időtartam",
+                "Varázslás ideje"
+            ],
+            "rows": [
+                [
+                    "2 Mp/4 E",
+                    "30 kör (5 perc)",
+                    "1 szegmens"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "Mozgásközpontra ható operációk"
+        },
+        {
+            "type": "rule",
+            "title": "Követés (Olvasás)",
+            "headers": [
+                "Mana pont",
+                "Időtartam",
+                "Varázslás ideje"
+            ],
+            "rows": [
+                [
+                    "2 Mp/4 E",
+                    "30 kör (5 perc)",
+                    "1 szegmens"
+                ]
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Részleges amnézia (Kábítás)",
+            "headers": [
+                "Mana pont",
+                "Időtartam",
+                "Varázslás ideje"
+            ],
+            "rows": [
+                [
+                    "2 Mp/3 E",
+                    "6 kör",
+                    "1 szegmens"
+                ]
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Kábítás (Kábítás)",
+            "headers": [
+                "Mana pont",
+                "Időtartam",
+                "Varázslás ideje"
+            ],
+            "rows": [
+                [
+                    "2 Mp/3 E",
+                    "6 kör",
+                    "1 szegmens"
+                ]
+            ]
+        }
+    ]
+}

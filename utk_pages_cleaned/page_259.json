@@ -1,0 +1,104 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": true,
+    "section_title": "A Szakrális mágia szférái",
+    "content_blocks": [
+        {
+            "type": "rule",
+            "title": "Isteni jutalom és segedelem",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "title": "Kegy pontok visszaszerzése",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "title": "Példa",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "title": "Az imák elmulasztásának következményei",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "title": "Isteni büntetés",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "title": "Túlzott imádkozás",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "title": "Áldozat bemutatása",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "title": "Vallásgyakorlás és szertartások",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "title": "Kegyelték manamentes területen",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "Az istenek hatalmukkal – mely emberi mércével ugyan korlátlannak tűnik – nem képesek az univerzum minden szféráját egyformán befolyásolni. Vannak olyan szférák, melyekre nagyobb hatalmat gyakorolnak, másokra kisebbet vagy egyáltalán semmilyet. Ez meghatározza azt is, hogy az isten papjai hatalma meddig terjed, a Szakrális mágia mely részeit képes használni. A papi rendek tárgyalásánál leírásra került, hogy mely istenek mely szférákat uralják – e szférákhoz tartozó fohászokat képesek használni az adott isten papjai és paplovagjai. Illetve ezen szférák határozzák meg azt is, hogy mekkora erővel képesek megidézni ezeket a hatalmakat. Azt, hogy egy fohász mely szférához tartozik, a fohász leírásánál a Szféra rovatban adtuk meg.",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "title": "Szféra alapú varázslás",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "title": "Kegy pontok többszörözése",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "title": "Példa",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "title": "Élet szféra",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "title": "Halál szféra",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "title": "Lélek szféra",
+            "headers": [],
+            "rows": []
+        }
+    ]
+}

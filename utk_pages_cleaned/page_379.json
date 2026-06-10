@@ -1,0 +1,178 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": false,
+    "section_title": "",
+    "content_blocks": [
+        {
+            "type": "paragraph",
+            "text": "tárgyak és lények oda érkeznek, a Távolbahatott varázslatok ott jönnek létre. Mivel a Tércsapda jelenlétét a Térmágiát létrehozó varázsló nem érzi meg előre, Teleportálás során könnyen csapdába kerülhet."
+        },
+        {
+            "type": "paragraph",
+            "text": "Tapadás varázsjel"
+        },
+        {
+            "type": "rule",
+            "title": "Rendszerszabály",
+            "headers": [
+                "Mana pont"
+            ],
+            "rows": [
+                [
+                    "1 Mp/5 ynevi fontot megtartó erő"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "Varázsjelpár, melyet két különálló tárgyon kell elhelyezni. A két tükörképe egymásnak, pontosan egymáshoz illesztve összetapadnak. Minél erősebb a beléjük foglalt mágia, an-nál nehezebben választhatók szét, azaz annál nagyobb súly megtartására alkalmasak. 1 Mana pontért 5 ynevi font súlyt megtartó jelpár rajzolható fel, s minden további Mp újabb fonttal növeli a súlyhatárt. Az összetapadó tárgyak a tapadás erősségét meghaladó erővel bármikor szétválaszthatók, de ismét összeillesztve újból összetapadnak – amíg a jelek töretlenek, bármennyiszer."
+        },
+        {
+            "type": "paragraph",
+            "text": "Forgás Varázsjel"
+        },
+        {
+            "type": "rule",
+            "title": "Rendszerszabály",
+            "headers": [
+                "Mana pont"
+            ],
+            "rows": [
+                [
+                    "1 Mp/5 ynevi fontot megtartó súly"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A Tapadáshoz hasonló jelpár, ám az összeillesztett tár-gyak (a rögzítetlen, vagy a kisebb súlyú) a varázsjelek ké-pezte tengely körül forognak. Egy tenyérnyi korong 5 szeg-mens alatt tesz meg egy teljes kört. A forgás sebessége a teljes Mana pont igény megkétszerezésével megduplázható, háromszorozásával megtriplázható... és így tovább. Egye-bekben a jelpár teljes mértékben a Tapadás Varázsjelhez hasonlóan viselkedik."
+        },
+        {
+            "type": "paragraph",
+            "text": "Bélyegek"
+        },
+        {
+            "type": "paragraph",
+            "text": "A bélyegek ezüstpénznyi-től néhány hüvelykig terjedő átmérőjű jelek, rajzolatok, vésetek. Hatásukat arra fejtik ki, akinek a testén a varázsló elhelyezi őket. Az alany egé-szen addig áldozata a bélyeg hordozta mágiának, ameddig azt el nem távolítják a testéről, avagy vonalait meg nem törik. A bélyegek oly erősen sugározzák a beléjük foglalt mágikus hatást, hogy velük szemben Mágiaellenállásnak helye nincs, mivel a bélyeg az áldozat testére írva, annak aurájában okoz változásokat, és annak szerves részét ké-pezi immár."
+        },
+        {
+            "type": "paragraph",
+            "text": "Asztrálbélyeg"
+        },
+        {
+            "type": "rule",
+            "title": "Rendszerszabály",
+            "headers": [
+                "Erősség",
+                "Mana pont"
+            ],
+            "rows": [
+                [
+                    "Végtelen erősségű",
+                    "Lásd a leírást!"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "Az Asztrálbélyegek alkalmasak arra, hogy viselőjüket az adott Asztrálmágia hatása alá helyezzék. Ez azt jelenti, hogy minden Asztrálmágiánál ismertetett varázslat belefoglalható egy Asztrálbélyegbe. Ez annyi Mana pontba kerül, ameny-nyibe az adott varázslat kerülne 15 E erősítés esetén. Olvasás"
+        },
+        {
+            "type": "paragraph",
+            "text": "Mentálbélyeg"
+        },
+        {
+            "type": "rule",
+            "title": "Rendszerszabály",
+            "headers": [
+                "Erősség",
+                "Mana pont"
+            ],
+            "rows": [
+                [
+                    "Végtelen erősségű",
+                    "Lásd a leírást!"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "Az Mentálbélyegek alkalmasak arra, hogy viselőjüket az adott Mentálmágia hatása alá helyezzék. Ez azt jelenti, hogy minden Mentálmágiánál ismertetett varázslat belefoglalható egy Mentálbélyegbe. Ez annyi Mana pontba kerül, ameny-nyibe az adott varázslat kerülne 15 E erősítés esetén. Olvasás"
+        },
+        {
+            "type": "paragraph",
+            "text": "és írás mozaikok esetén nem egy jelről, hanem egy jelpárról kell beszélnünk, hiszen a kapcsolathoz a varázsló testére is fel kell róni a megfelelő jeleket."
+        },
+        {
+            "type": "paragraph",
+            "text": "Változás bélyege"
+        },
+        {
+            "type": "rule",
+            "title": "Rendszerszabály",
+            "headers": [
+                "Erősség",
+                "Mana pont"
+            ],
+            "rows": [
+                [
+                    "Mint az azonos hatású mozaik esetében",
+                    "Háromszor annyi Mp, mint az azonos hatású mozaik esetében"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A Változás bélyege csak annyiban különbözik a Változás Varázsjelétől, hogy személyre, élőlényre írják, bár erőssége a többi bélyeggel ellentétben nem végtelen, hanem megegyezik az azonos hatású mozaik erősségével. Leírásához a varázslónak háromszor annyi Mana pontot kell áldoznia, amennyit a hasonló mozaik alkalmazásakor használna el."
+        },
+        {
+            "type": "paragraph",
+            "text": "Pentagrammák"
+        },
+        {
+            "type": "paragraph",
+            "text": "A pentagramma ötszögű csillag, melyet a varázsló olykor csúcsait érintő körbe foglal. Méretére jellemző, hogy ennek a körnek – akár létezik, akár csak képzeletbeli – legalább egy lépésnyi átmérőjűnek kell lennie."
+        },
+        {
+            "type": "paragraph",
+            "text": "Térkapu pentagramma"
+        },
+        {
+            "type": "rule",
+            "title": "Rendszerszabály",
+            "headers": [
+                "Mana pont"
+            ],
+            "rows": [
+                [
+                    "70 (2x)"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "Az időző pentagramma után a leggyakrabban alkalmazott pentagramma alapú rajzolat. Hatása hasonló a Térkapu mozaikéhoz, számottevő különbség csak működésének részleteiben mutatkozik. Párban használatos, csak akkor teszi lehetővé az átjárást a tér két pontja között, ha a pentagram-mát mind az indulási, mind az érkezési oldalon felrajzolták. A keletkező átjáró nem állandó, csak olyankor nyílik meg, ha valaki vagy valami az indulási pentagramma külső körívén belülre kerül. Ilyenkor sem átlátható – akár a térkapuk – és anyagi minőségen túl semmi nem juttatható át rajta – azaz nem alkalmas varázslatok Távolbahatása és a Zóna sem érvényesül rajta keresztül."
+        },
+        {
+            "type": "paragraph",
+            "text": "Hogy egy pentagramma érkezési vagy indulási, netán mindkét szerepet betölti-e, azt felrajzolásakor kell meghatá-rozni. Ezért van, hogy az értő szem a rajzolatra pillantva nyomban képes megállapítani annak rendeltetését. Senki nem képes azonban kiolvasni, vajon hol található a pentagramma párja, ezt legfeljebb egy vakmerő próbával, a körívet átlépve lehetséges kideríteni."
+        },
+        {
+            "type": "paragraph",
+            "text": "A pentagrammák tárgy-tárgy szimpátiaviszonyban állnak egymással. Az általuk biztosított térkapu addig üzemképes, ameddig mindkét oldali rajzolat vonalai töretlenek."
+        },
+        {
+            "type": "paragraph",
+            "text": "Nekromancia"
+        },
+        {
+            "type": "paragraph",
+            "text": "A Nekromancia az életerő, a halál utáni élet és a lélek-vándorlás vizsgálatának tudománya. Azon varázslók, kik elmélyednek sötét tanaiban, vagy a fényt, vagy a legmélyebb sötétséget szolgálják, de sosem középszerű, semmitmondó alakok. Varázshatalmukkal élőholtakat teremthetnek, idéz-hetnek meg, halott lelkeket szólíthatnak magukhoz, vagy épp pusztíthatják el őket; beleavatkozhatnak az újjászületés folyamatába, vagy épp ki is taszíthatnak abból bárkit, ki ha-talmukba kerül."
+        },
+        {
+            "type": "paragraph",
+            "text": "Ezen sötét tudomány képtelen létrehozni az Élet princípiumát, azaz életerőt teremteni. Ez csakis az istenek kiváltsága, nem képes rá semmiféle más felsőbbrendű lény"
+        }
+    ]
+}

@@ -1,0 +1,451 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": null,
+    "is_new_section": true,
+    "section_title": "A Fejvadász különleges képességei",
+    "content_blocks": [
+        {
+            "type": "paragraph",
+            "text": "5. Tapasztalati szint felett kezdhet bele ezen tanulmányaiba. A renegát fejvadászok nagyon ritkán rendelkeznek ilyen jellegű ismeretekkel, amennyiben mégis, akkor fokozott és sohasem szűnő üldöztetésnek vannak kitéve volt vadásztársaik részéről."
+        },
+        {
+            "type": "paragraph",
+            "text": "A Fejvadászok közül csupán a válogatott kevesek képesek a Slan-diszciplínák alkalmazására, és ők sem az összes diszciplínát tudhatják. Mivel nem a lelki tökéletesedés útját járják, de viselkedésükben fellelhető a felsőbbrendű, ezért csakis a 4. fokig képesek elsajátítani a Slan pszit."
+        },
+        {
+            "type": "rule",
+            "text": "I. Ingyenesen megkapja a Pszi érzékenység Hátteret.",
+            "title": "Pszi érzékenység Háttér"
+        },
+        {
+            "type": "rule",
+            "text": "II. Fegyverzetét a klánja bocsátja rendelkezésére, így az pénzbe nem kerül.",
+            "title": "Klán által biztosított fegyverzet"
+        },
+        {
+            "type": "paragraph",
+            "text": "Egy átlagos 1. Tapasztalati szintű fejvadász"
+        },
+        {
+            "type": "table",
+            "headers": [
+                "Tulajdonság",
+                "Érték",
+                "Tulajdonság",
+                "Érték"
+            ],
+            "rows": [
+                [
+                    "Erő",
+                    "13",
+                    "Fájdalompont",
+                    "13"
+                ],
+                [
+                    "Gyorsaság",
+                    "14",
+                    "Életerőpont",
+                    "35"
+                ],
+                [
+                    "Ügyesség",
+                    "14",
+                    "",
+                    ""
+                ],
+                [
+                    "Állóképesség",
+                    "14",
+                    "Pszi pont",
+                    "13"
+                ],
+                [
+                    "Egészség",
+                    "13",
+                    "Mana pont",
+                    "—"
+                ],
+                [
+                    "Karizma",
+                    "13",
+                    "Kegy-pont",
+                    "—"
+                ],
+                [
+                    "Intelligencia",
+                    "13",
+                    "",
+                    ""
+                ],
+                [
+                    "Akaratérő",
+                    "14",
+                    "Mentális Mágia Érték",
+                    "17"
+                ],
+                [
+                    "Asztrál",
+                    "13",
+                    "Asztrális Mágia Érték",
+                    "16"
+                ],
+                [
+                    "Érzékelés",
+                    "14",
+                    "",
+                    ""
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "Elköltött KAP-ok:"
+        },
+        {
+            "type": "table",
+            "headers": [
+                "Kategória",
+                "Érték"
+            ],
+            "rows": [
+                [
+                    "Iskola (Fejvadász)",
+                    "7 pont"
+                ],
+                [
+                    "Sugallat",
+                    "1 pont"
+                ],
+                [
+                    "Pszi Érzékenység",
+                    "—"
+                ],
+                [
+                    "Saját fegyverzet",
+                    "—"
+                ],
+                [
+                    "Harci Mágia",
+                    "20 pont (10 HM)"
+                ],
+                [
+                    "Fájdalompont",
+                    "7 pont (7Fp)"
+                ],
+                [
+                    "Képzettségpont",
+                    "15 pont (15 Kp)"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "Fegyverzet:"
+        },
+        {
+            "type": "table",
+            "headers": [
+                "Fegyver",
+                "fegyver nélkül*",
+                "fejvadászkard",
+                "tőr"
+            ],
+            "rows": [
+                [
+                    "Időigény",
+                    "3",
+                    "5",
+                    "3"
+                ],
+                [
+                    "Kéz",
+                    "31",
+                    "37",
+                    "37"
+                ],
+                [
+                    "Támadó Érték",
+                    "45",
+                    "59",
+                    "55"
+                ],
+                [
+                    "Védő Érték",
+                    "91",
+                    "101",
+                    "95"
+                ],
+                [
+                    "Célzás",
+                    "28",
+                    "—",
+                    "—"
+                ],
+                [
+                    "Sebzés",
+                    "1k6",
+                    "1k10",
+                    "1k10"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "* fegyver nélkül"
+        },
+        {
+            "type": "paragraph",
+            "text": "Képzettségek:"
+        },
+        {
+            "type": "table",
+            "headers": [
+                "Induló képzettségek",
+                "Fok",
+                "Képzettségpont"
+            ],
+            "rows": [
+                [
+                    "Fegyverhasználat (fejvadászkard)",
+                    "3. fok",
+                    "—"
+                ],
+                [
+                    "Fegyverhasználat (tőr)",
+                    "3. fok",
+                    "5 Kp"
+                ],
+                [
+                    "Fegyverhasználat (nehézkardok, egykezes kardok, csatabárdok, buzogányok, nyeles fegyverek)",
+                    "1. fok",
+                    "—"
+                ],
+                [
+                    "Kétkezes harc",
+                    "2. fok",
+                    "5 Kp"
+                ],
+                [
+                    "Pusztakezes harc",
+                    "2. fok",
+                    "—"
+                ],
+                [
+                    "Fájdalomtűrés",
+                    "2. fok",
+                    "—"
+                ],
+                [
+                    "Harctéri gyakorlat",
+                    "2. fok",
+                    "3 Kp"
+                ],
+                [
+                    "Fegyverismeret",
+                    "2. fok",
+                    "—"
+                ],
+                [
+                    "Helyismeret (szülőföld)",
+                    "3. fok",
+                    "—"
+                ],
+                [
+                    "Kultúra (saját)",
+                    "3. fok",
+                    "—"
+                ]
+            ]
+        },
+        {
+            "type": "table",
+            "headers": [
+                "Képzettség",
+                "Fok",
+                "Képzettségpont"
+            ],
+            "rows": [
+                [
+                    "Nyelvtudás (anyanyelv)",
+                    "3. fok",
+                    ""
+                ],
+                [
+                    "Álcázás/álruha",
+                    "2. fok",
+                    ""
+                ],
+                [
+                    "Orvtámadás",
+                    "2. fok",
+                    ""
+                ],
+                [
+                    "Élettan",
+                    "2. fok",
+                    ""
+                ],
+                [
+                    "Futás",
+                    "2. fok",
+                    ""
+                ],
+                [
+                    "Úszás",
+                    "2. fok",
+                    ""
+                ],
+                [
+                    "Pszi (pyarroni)",
+                    "2. fok",
+                    ""
+                ],
+                [
+                    "Írás/olvasás",
+                    "2. fok",
+                    "4 Kp"
+                ],
+                [
+                    "Lopódzás",
+                    "+44%",
+                    "2 Kp"
+                ],
+                [
+                    "Rejtőzés",
+                    "+44%",
+                    "2 Kp"
+                ],
+                [
+                    "Csapdafedezés",
+                    "+39%",
+                    "3 Kp"
+                ],
+                [
+                    "Mászás",
+                    "+39%",
+                    "3 Kp"
+                ],
+                [
+                    "Esés",
+                    "+24%",
+                    ""
+                ],
+                [
+                    "Akrobatika",
+                    "+29%",
+                    "1 Kp"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A fejvadászok típusai"
+        },
+        {
+            "type": "paragraph",
+            "text": "Harcos"
+        },
+        {
+            "type": "paragraph",
+            "text": "Az átlagosan, és igen szerteágazóan képzett harcos fejvadászok az egyszerű szemlélődő számára nem többek portyázóknál, felderítőknél. Fegyverzetük könnyű, nehezebb vértezeteket ritkán viselnek. Legfőbb tulajdonságuk az alkalmazkodóképességük, mivel egyetlen irányzatra való szakosodás helyett mestereik általában minden feladatkör alapszintű ellátására megfelelő képességekkel és tudással ruházták fel őket."
+        },
+        {
+            "type": "paragraph",
+            "text": "Minden klán berkeiben megtalálhatóak ezek a jól képzett kardforgatók, azonban fegyverzetük az adott szervezetre jellemzően eltérő."
+        },
+        {
+            "type": "paragraph",
+            "text": "A harcos fejvadász induló képzettségei 1. Tapasztalati szinten:"
+        },
+        {
+            "type": "table",
+            "headers": [
+                "Induló képzettségek",
+                "Fok"
+            ],
+            "rows": [
+                [
+                    "Fegyverhasználat (a klán tradicionális fegyvere)",
+                    "3. fok"
+                ],
+                [
+                    "Fegyverhasználat",
+                    "2. fok"
+                ],
+                [
+                    "Fegyverhasználat (nehézkardok, egykezes kardok, tőrök, csatabárdok, buzogányok, nyeles fegyverek)",
+                    "1. fok"
+                ],
+                [
+                    "Pusztakezes harc",
+                    "2. fok"
+                ],
+                [
+                    "Fájdalomtűrés",
+                    "2. fok"
+                ],
+                [
+                    "Fegyverismeret",
+                    "2. fok"
+                ],
+                [
+                    "Álcázás/álruha",
+                    "2. fok"
+                ],
+                [
+                    "Orvtámadás",
+                    "2. fok"
+                ],
+                [
+                    "Élettan",
+                    "2. fok"
+                ],
+                [
+                    "Futás",
+                    "2. fok"
+                ],
+                [
+                    "Úszás",
+                    "2. fok"
+                ],
+                [
+                    "Pszi (pyarroni)",
+                    "2. fok"
+                ],
+                [
+                    "Írás/olvasás",
+                    "1. fok"
+                ],
+                [
+                    "Lopódzás",
+                    "+20%"
+                ],
+                [
+                    "Rejtőzés",
+                    "+20%"
+                ],
+                [
+                    "Csapdafedezés",
+                    "+10%"
+                ],
+                [
+                    "Mászás",
+                    "+10%"
+                ],
+                [
+                    "Esés",
+                    "+10%"
+                ],
+                [
+                    "Akrobatika",
+                    "+10%"
+                ]
+            ]
+        },
+        {
+            "type": "rule",
+            "text": "A harcos fejvadász képzettségei, melyeket iskolájától az Oktatás képzettség 4. foka által nyújtott előnnyel tanulhat: Akrobatika, Álcázás/álruha, Csapdaállítás, Csapdafedezés, Csomózás, Élettan, Esés, Fájdalomtűrés, Fegyverhasználat, Fegyverismeret, Harcművészet, Harctéri gyakorlat, Írás/olvasás, Jelbeszéd, Kétkezes harc, Kinzás, Kultúra, Lopódzás, Mászás, Mechanika, Mesterlövészet, Nyomolvasás, Orvtámadás,",
+            "title": "Harcos fejvadász képzettségei (Oktatás 4. fok)"
+        }
+    ]
+}

@@ -1,0 +1,84 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": true,
+    "section_title": "5. fokú diszciplínák",
+    "content_blocks": [
+        {
+            "type": "paragraph",
+            "text": "Pszi pontot igényel a diszciplína, amennyi Mp-ot egy hasonló Időtartamhoz szükséges Időmágia Mp igénye lenne. A diszciplína másik alkalmazási módja, mikor az Örvénnyel egy varázslat mágikus energiáit fókuszban tartó erőket oldja fel az alkalmazó. Ekkor a fentiekhez hasonló módon 5 Mp-nyi varázserő 1 Pszi pontért oszlathat el. A diszciplína meditációjának ideje ezen esetben is 1 kör. Abban az esetben, ha az alkalmazó több Pszi pontot költ el a mágia feloldására, mint amennyi szükséges volna, akkor a plusz Pszi pontok elvesznek, és a varázslat eloszlik minden egyéb jelenség nélkül, mint azt tenné a megfelelő Erősítés mellett."
+        },
+        {
+            "type": "paragraph",
+            "text": "Az uralom szintje egyes bölcselők és diplomata-kémek elgondolása szerint az újrafelfedezett godoni hagyaték része, s a Fehér Páholy nagyjai már évek óta birtokolják. Erről azonban egyelőre még senkinek sem sikerült megbizonyosodnia."
+        },
+        {
+            "type": "paragraph",
+            "text": "A Kyr Metódus diszciplínái"
+        },
+        {
+            "type": "paragraph",
+            "text": "3. fokú diszciplína"
+        },
+        {
+            "type": "paragraph",
+            "text": "A kitekintés szintje az első lépcsőfok a mágia felé vezető úton. A Transzba merült elme már képes a világot átható mana formálására, képessé válik az erők begyűjtésére, a varázslásra."
+        },
+        {
+            "type": "rule",
+            "title": "Energiagyűjtés",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "A Kyr Metódus legalapvetőbb diszciplínája, a varázslók tudományának alapja. Az így előidézett transz segítségével a varázsló elméje nyitottá válik, mely begyűjti a varázslat mágikus energiáit (Mana pont), melyből a varázslatait létrehozza. Természetesen egyszerre annyit, amennyit befogadni képes. Erről a mennyiségről a Tapasztalati szint függvényében a maximális Mana pont tudósít. Ezen sorokon három módszert ismertetünk: a Meditációs-formulát, a Kivonást és a Kisajtolást."
+        },
+        {
+            "type": "rule",
+            "title": "A Meditációs-formula (1 Ψp = 10 Mp)",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "title": "Kivonáshoz (1 Ψp = 2 Mp)",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "title": "A Kisajtolás (1 Ψp = 5 Mp)",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "5. fokú diszciplínák"
+        },
+        {
+            "type": "paragraph",
+            "text": "Az uralom szintjén a képzett pszi alkalmazó már komolyan formálja, befolyásolja a valóságot, a Belső Síkokon keresztül képes elérni, megfigyelni és befolyásolni mások elméjét. Képessé válik saját lelkének megosztására, mások lelkének uralására vagy akár megnyomorítására is. A felsőbb szférák határáig, a teremtés művének mezsgyéjére merészkedhet."
+        },
+        {
+            "type": "rule",
+            "title": "Erősített ostrom",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "A diszciplína a Ψ-ostrom erősített, a kyr mágusok hatékonyságára és eltökéltségükre jellemző változata. A rövid mentális csapás mellyel ellenfelük védműveit pusztítják el, akár a Birodalom eszmeiségét is tükrözhette volna. Az Erősített ostrom használata mindenben megegyezik a Ψ-ostromnál leírtakkal, ám 1 Ψ-pontért 2 E-nyi romboló erő szabadul fel."
+        },
+        {
+            "type": "rule",
+            "title": "Láthatatlanság észlelése",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "A diszciplína az Abszolút látás egy irányba fókuszált változata, mely a varázsló akaratából más rejtkező elmék vagy elrejtett tárgyak láthatatlanságának mágikus nyomai után kutat. Az alkalmazás végrehajtója hat körön keresztül látja a mágikusan láthatatlanná tett tárgyakat és élőlényeket. Természetesen csak azokat, amelyeknél a diszciplína erőssége meghaladja a láthatatlanság Erősségét (E). Alapesetben a diszciplína Erőssége (E) 1, de újabb 5 Ψ-pont elköltésével erősíthető, vagy az időtartam tolható ki hat körrel."
+        }
+    ]
+}

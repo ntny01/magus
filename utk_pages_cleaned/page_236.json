@@ -1,0 +1,194 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": false,
+    "section_title": "",
+    "content_blocks": [
+        {
+            "type": "paragraph",
+            "text": "Tudat fa"
+        },
+        {
+            "type": "table",
+            "headers": [
+                "I.",
+                "II.",
+                "III.",
+                "IV.",
+                "V."
+            ],
+            "rows": [
+                [
+                    "Tudatnyitás",
+                    "Statikus pajzs",
+                    "Dinamikus pajzs",
+                    "Pajzsrombolás",
+                    "Erősített pajzsrombolás (árnyékolt)"
+                ],
+                [
+                    "",
+                    "",
+                    "",
+                    "Abszolút látás",
+                    "Láthatatlanság érzékelése (árnyékolt)"
+                ],
+                [
+                    "",
+                    "",
+                    "",
+                    "Telepátia",
+                    "Pszuedo (árnyékolt)"
+                ],
+                [
+                    "",
+                    "",
+                    "",
+                    "Membrán",
+                    "Auraérzékelés (árnyékolt)"
+                ],
+                [
+                    "",
+                    "",
+                    "",
+                    "Csettintés",
+                    "Asztrálszem (árnyékolt)"
+                ],
+                [
+                    "",
+                    "",
+                    "Energiagyűjtés (árnyékolt)",
+                    "",
+                    "Mentálszem (árnyékolt)"
+                ],
+                [
+                    "",
+                    "Transz",
+                    "Hatodik érzék",
+                    "",
+                    "Mágikus tekintet (árnyékolt)"
+                ],
+                [
+                    "",
+                    "",
+                    "Emlékfelidézés",
+                    "",
+                    ""
+                ],
+                [
+                    "",
+                    "",
+                    "Tiszta elme",
+                    "",
+                    ""
+                ],
+                [
+                    "",
+                    "",
+                    "Godoni transz (árnyékolt)",
+                    "Örvény (árnyékolt)",
+                    ""
+                ],
+                [
+                    "",
+                    "",
+                    "Felfedés (árnyékolt)",
+                    "",
+                    ""
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "Test fa"
+        },
+        {
+            "type": "table",
+            "headers": [
+                "I.",
+                "II.",
+                "III.",
+                "IV.",
+                "V."
+            ],
+            "rows": [
+                [
+                    "Fájdalomcsillapítás",
+                    "Képességjavítás",
+                    "A Sárkány Dühe (árnyékolt)",
+                    "A Sárkány Tánca (árnyékolt)",
+                    "Zavarás (árnyékolt)"
+                ],
+                [
+                    "",
+                    "",
+                    "",
+                    "",
+                    "A Sárkány Ébredése (árnyékolt)"
+                ],
+                [
+                    "",
+                    "Ébredés",
+                    "Pszi roham",
+                    "Energiafelszabadítás",
+                    "Kiáltás (árnyékolt)"
+                ],
+                [
+                    "",
+                    "",
+                    "",
+                    "",
+                    "Kitérés (árnyékolt)"
+                ],
+                [
+                    "",
+                    "Érzékelésítés",
+                    "Testhőmérséklet",
+                    "Telekinézis",
+                    "Belső idő (árnyékolt)"
+                ],
+                [
+                    "",
+                    "",
+                    "Pszi lökés",
+                    "Levitáció",
+                    "Halálos ujj (árnyékolt)"
+                ],
+                [
+                    "",
+                    "",
+                    "Testsúlyváltoztatás",
+                    "Tetszhalál",
+                    "Aranyharang (árnyékolt)"
+                ],
+                [
+                    "Pyrroni Módszer (árnyékolt)",
+                    "",
+                    "",
+                    "Jelentéktelenség",
+                    "Érzékelhetetlenség (árnyékolt)"
+                ],
+                [
+                    "Kyr Metódus (árnyékolt)",
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                [
+                    "Godoni Örökség (árnyékolt)",
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                [
+                    "Slan Út (árnyékolt)",
+                    "",
+                    "",
+                    "",
+                    ""
+                ]
+            ]
+        }
+    ]
+}

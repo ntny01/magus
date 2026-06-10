@@ -1,0 +1,58 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": null,
+    "is_new_section": true,
+    "section_title": "Klán, rend, iskola (5-10)",
+    "content_blocks": [
+        {
+            "type": "paragraph",
+            "text": "Minden szervezet, testvériség, klán, iskola vagy magányos mester ahol egy karakter tanulmányait végzi, bizonyos számú háttérpontot követel tőle cserébe az általa nyújtott előnyökért. Aki klánt, rendet, vagy iskolát választ, az már első szinten, későbbiekben pedig bármikor visszatérhet oktatóihoz, hogy tudás gyarapítsa."
+        },
+        {
+            "type": "paragraph",
+            "text": "Természetesen egy neves iskola nem csak képzettségeket tanít, hanem anyagi helyzetéhez, befolyásához mérten segíti is tagjait, azok mindig menedékre lelhetnek falai között, ugyanakkor meg is követelnek bizonyos dolgokat. Van, ahol éves adományt a közösség fenntartásáért, máshol szolgálatot, hűséget, birtokadományt vagy pusztán megfelelő életvitelt. Ezekről bővebben lásd az adott klán, rend, iskola leírását a megfelelő fejezetnél."
+        },
+        {
+            "type": "paragraph",
+            "text": "Minden induló karakter csakis egyetlen klánt, rendet vagy iskolát választhat. A későbbiekben, ahogy a való világban is, a karakter természetesen újabb ismereteket szerezhet, ha sikerül megfelelő engedélyeket és támogatást szereznie az egyes iskolák vezetőitől, más szervezetek tagjává is válhat, ha a KM engedélyezi."
+        },
+        {
+            "type": "paragraph",
+            "text": "Azt azonban szem előtt kell tartania a több mágiaformát birtokolni kívánó játékosnak, hogy bizonyos iskolák csak gyermekkorban fogadnak tanítványokat, bizonyos szervezetek pedig nem tűrik meg más mágikus irányzatok képviselőit soraikban. E tekintetben a Klánok, rendek iskolák leírásában találsz útmutatást."
+        },
+        {
+            "type": "paragraph",
+            "text": "Azonban azt is meg kell jegyeznünk, hogy ha a karakter a szükséges képzettségeket elsajátítja ugyanolyan, teljes értékű varázstudóvá válhat, mint a karakter mely az adott szervezet diákja már gyermekkora óta. Bár ezek után kénytelen immáron az új képesség megkövetelte pontokat is kifizetni, hogy alkalmazni tudja őket."
+        },
+        {
+            "type": "rule",
+            "title": "Léleklenyomat (1)",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "title": "Mágiatagadás (1-5)",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "title": "Mágikus fogékonyság (1)",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "title": "Manalátó (2-3)",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "title": "Művésztehetség (1)",
+            "headers": [],
+            "rows": []
+        }
+    ]
+}

@@ -1,0 +1,72 @@
+{
+    "is_new_chapter": true,
+    "chapter_title": "Anyagi Mágia",
+    "is_new_section": false,
+    "section_title": "",
+    "content_blocks": [
+        {
+            "type": "paragraph",
+            "text": "Ilyen időközönként a földre mutatni, a varázslat Időtartamán belül tetszés szerinti időpillanatokban idézheti meg a lángoszlopokat. Ha kívánja, gyors egymásutánban is kiváltja, hosszabb szünetekkel. A lángoszlopok elhasználására annyi kör áll rendelkezésére, ahányadik szintű."
+        },
+        {
+            "type": "rule",
+            "title": "Tűzgyújtás",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Tűzgyűrű",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Villámszórás",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "flavor_text",
+            "text": "„...Az Anyagi Mágia varázslatai az Anyagi Síkra, az élőlények anyagi testére hatnak. Mágiaelméleti szempontból ide sorolhatók a tűzvarázslatok, valamint az Elemi Mágiaformák. A gyakorlatban azonban mindig elkülönítve szokás említeni a csupán Anyaggal manipuláló varázslatokat...”"
+        },
+        {
+            "type": "flavor_text",
+            "text": "„...A szigorú besorolás szerinti Anyagi Mágiához a boszorkánynak kevés köze van – annyi csupán, mint bármely varázstudónak, aki kénytelen szembenézni a világ kíméletlenségével. Ne feledjük: bármily megvetendő is tudományunkat az Anyagi Síkon alkalmazni, ez az a sík, ahol élünk, és ahol igazán szükségünk lehet hatalmunkra...”"
+        },
+        {
+            "type": "rule",
+            "title": "Füstidézés",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Fuvallat",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Kígyóvarázs II.",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "Asztrálmágiának mások érzelmeinek, indulatainak befolyásolását nevezzük. Érzelmeket lehet fakasztani vagy éppenséggel kioltani, felerősíteni vagy legyengíteni. Az érzelmeket mindig valakinek, vagy valaminek az irányában tápláljuk – ez"
+        }
+    ]
+}

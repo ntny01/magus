@@ -1,0 +1,179 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": false,
+    "section_title": "",
+    "content_blocks": [
+        {
+            "type": "paragraph",
+            "text": "a sebzés és a fényerősség is ennek függvénye. Lássuk hát a kategóriákat:"
+        },
+        {
+            "type": "table",
+            "headers": [
+                "Kategória",
+                "Sebzés",
+                "Fényerősség",
+                "Erősség"
+            ],
+            "rows": [
+                [
+                    "Gyertya",
+                    "1 Sp",
+                    "2 láb",
+                    "0"
+                ],
+                [
+                    "Fáklya",
+                    "1k6 Sp",
+                    "5 láb",
+                    "1"
+                ],
+                [
+                    "Kandallótűz",
+                    "2k6 Sp",
+                    "8 láb",
+                    "2"
+                ],
+                [
+                    "Táborűz",
+                    "3k6 Sp",
+                    "12 láb",
+                    "3"
+                ],
+                [
+                    "Jelzőtűz",
+                    "4k6 Sp",
+                    "16 láb",
+                    "4"
+                ],
+                [
+                    "Máglya",
+                    "5k6 Sp",
+                    "20 láb",
+                    "5"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A táblázatban a csoportosítás egyértelmű, ugyanígy a sebzés is. A fényerősségnél szereplő érték a tűz által bevilágított kör sugarát jelenti. Az Erősség csupán a leírás egyszerűsítésére szolgál, megfeleltethető a megidézett Őselemi Tűznél megismert Erősséggel – ez látható a sebzés nagyságából is. Alkalmazni kell a nullás Erősséget is, a gyertya lángja miatt. Ha a varázslatok leírásában a Mana pont igény a tűz erősségének függvénye, a gyertya lángja minden esetben 1 Mana pontért befolyásolható, mivel erőssége csak nulla. A táblázat az 5 E erősségű máglyánál ér véget, de természetesen ennél nagyobb tüzek is elképzelhetőek. A tűz nagyságának – azaz kategóriájának, erősségének – meghatározása minden esetben a KM joga és feladata. Szem előtt kell tartanunk azonban, hogy a legnagyobb és legforróbb természetes tüzek – amelyek legfeljebb az erdőtüzek forrongó középpontjában vagy vulkánok izzó katlanjában lelhetőek fel – erőssége 15 E."
+        },
+        {
+            "type": "paragraph",
+            "text": "A közönséges tüzeket befolyásoló varázslatok lehetnek támadó és védekező jellegűek is, de közös tulajdonságuk, hogy legideálisabb felhasználási módjuk az adott helyzettől függ – csak a tűzvarázslón múlik hát, hogy képes-e a legtöbbet kihozni a kérdéses varázslatból."
+        },
+        {
+            "type": "rule",
+            "title": "Feketefűz",
+            "headers": [
+                "Mana pont",
+                "Varázslás ideje",
+                "Időtartam"
+            ],
+            "rows": [
+                [
+                    "2/E",
+                    "2 szegmens",
+                    "6 kör (1 perc)"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A misztikusan csengő nevű varázslat a közönséges tűz fény-hő arányát változtatja meg, méghozzá a hő javára. Segítségével elérhető, hogy az összes égés során felszabaduló energia hő formájában távozzon anélkül, hogy bármennyi is kisugárzott fénnyé alakulna. Az ilyen mágiával megváltoztatott tűz minden fénye elenyészik, a lángok teljesen láthatatlanná válnak. Az így nyert energia mind hővé alakul, és a tűz sebzését, hőfokát növeli meg. A sebzés a másfélszerese lesz az eredetinek (felfelé kerekítve), például egy tábortűz lángjának sebzése nem 3k6 Sp, hanem 5k6 Sp lesz. Ez a varázslat nem használható a Tűzválasztással együtt, hiszen nincs mit elválasztani, így a tűz helye ezen a módon nem változtatható meg. A tűzvarázslók különösen kedvelik ezt a varázslatot, mivel viszonylag kevés befektetett Mana ponttal nagyon magas sebzést érhetnek el."
+        },
+        {
+            "type": "rule",
+            "title": "Füstmarás",
+            "headers": [
+                "Mana pont",
+                "Varázslás ideje",
+                "Időtartam"
+            ],
+            "rows": [
+                [
+                    "2/E",
+                    "2 szegmens",
+                    "6 kör (1 perc)"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A varázslat hatására a tűz fénye és hőjének nagy része maró füstté változik. Végrehajtása után a tűzvarázsló Zónájában a kiválasztott tűz lelohad, szinte csak parázslik, sebzése is minimális lesz (például 1 Sp esetén 0, 1k6 Sp esetén 1, 2k6 Sp esetén 2 stb.)."
+        },
+        {
+            "type": "paragraph",
+            "text": "A füst nem ad, de fényerősségének határaiig sűrű szürkés-fekete füstöt ereszt. A keletkező füst akadályozza a légzést, csípi a szemet és sűrűségéből adódóan a látótávolságot is rontja. A benne tartózkodók kötelesek a 0. szintű méregnek számító füst ellen Egészségpróbát dobni, s vetés esetén Rosszullét fogja el őket. Ha a Tulajdonságpróbát sikeresen megdobták, úgy csak az Émelygés szabályai vonatkoznak rájuk. Ezen kívül a füstben távolsági fegyvert használni, illetve a füstben állókra célozni csak -50 CE-vel lehet, mivel a benne tartózkodók alig láthatók. A füstben a közelharc is módosul, minden támadás TÉ-je -25-tel csökken."
+        },
+        {
+            "type": "paragraph",
+            "text": "Akik kikerülnek a füstből, még 1k6 percig nyögik a füst szervezetükre gyakorolt hatását. A füst az időtartam lejártá előtt csak mágiával oszlatható el, utána a légmozgás játékszerévé válik."
+        },
+        {
+            "type": "rule",
+            "title": "Hidegtűz",
+            "headers": [
+                "Mana pont",
+                "Varázslás ideje",
+                "Időtartam"
+            ],
+            "rows": [
+                [
+                    "2/E",
+                    "2 szegmens",
+                    "6 kör (1 perc)"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A varázslat tökéletes ellentéte a Feketefűznek, ugyanúgy a tűz kettős természetének megváltoztatásával fejti ki hatását. Ritkábban alkalmazzák, mint párját, de mindenképp érdemes szem előtt tartanunk több előnyét is. A tűzvarázsló ezzel a mágiával egy egyszerű fáklyát is tökéletes fényességgé tehet, tökéletes fényforrást biztosítva ezzel nagyobb terek bevilágítására. A fényesség ugyanis a hő teljes átalakításával háromszorosára növelhető, azaz a bevilágítandó terület sugara ennyivel szorzandó meg. Ennek alapján egy máglya, amelynek a hőjét fénnyé alakítják, egy 60 ynevi láb sugarú kör teljes megvilágítására lesz alkalmas. Ez már jelzőfénynek sem utolsó, meglehetősen látványos jelenség."
+        },
+        {
+            "type": "rule",
+            "title": "Tűzcsapás",
+            "headers": [
+                "Mana pont",
+                "Varázslás ideje",
+                "Időtartam"
+            ],
+            "rows": [
+                [
+                    "2/E",
+                    "2 szegmens",
+                    "Egyszeri"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A Tűzcsapás a tűzvarázslók egyik veszedelmes fegyvere, amely már többször okozta a túlzottan magabiztos ellenfelek vesztét. A mágia hatására a tűz egy pillanatra megelevenedik, és megtámadja a tűzvarázsló által megjelölt célpontot. Az áldozat nem állhat 5 ynevi lábnál messzebb a tűztől, különben a varázslat nem jön létre."
+        },
+        {
+            "type": "paragraph",
+            "text": "A varázslat CE-je 30, a találathoz a tűzvarázslónak sikeres Célzó dobást kell tennie a fegyvertelen CE-jéhez adott +30 módosítóval. A támadás után minden visszatér eredeti állapotába."
+        },
+        {
+            "type": "rule",
+            "title": "Tűzébresztés/Tűzlohasztás",
+            "headers": [
+                "Mana pont",
+                "Varázslás ideje",
+                "Időtartam"
+            ],
+            "rows": [
+                [
+                    "Lásd a leírást!",
+                    "2 szegmens",
+                    "2 kör"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A tűzvarázsló ezen varázslata többek szerint átmenet az Elemi Tűz Idézése és a Közönséges Tüzek Befolyásolása közt. A mágia segítségével a tüzek nagysága változtatható meg, bárminemű éghető anyag hozzáadása nélkül. A tűz csak néhány pillanatra nő vagy csökken a kívánt mértékben, majd a természet újra kézbe veszi a dolgok irányítását, és minden visszatér az eredeti állapotba."
+        }
+    ]
+}

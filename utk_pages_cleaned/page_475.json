@@ -1,0 +1,211 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": false,
+    "section_title": "",
+    "content_blocks": [
+        {
+            "type": "paragraph",
+            "text": "Erionban – ahol, mint tudjuk, az égegyadta világon minden megtalálható – mindenféle kutya kapható, s a pecérkék bármire hajlandóak. Legszélesebb körben mégis talán a különféle harcikutvát, melyek nem nehéz efféle jószágot vásárolni, ám mint mindig, ezúttal is oda kell figyelni az alkura. Az árak magasak – hát persze, hogy azok –, de vajon mit kapunk a pénzünkért? A valódi harcikutya, amely mellettünk küzd majd, bármerre járunk, természetesen ritkább, s a legdrágább mind között. Viadalra nevelt, vagy inkább vadítottat könnyebben találunk; igazán olcsónak ezt sem mondhatnók – ha mégis azok, a felettebb gyanús! Nem kevés filmekből él ebből, ahogy eladja a kutyáját, amely aztán az első adandó alkalommal visszaszökik hozzá, s újabb balekra vár. Sokan árulnak innen-onnan összelopkodott, vagy kóbor ebeket, netán beteg, sebesült páriákat, melyek csak szűkölve tűrik, hogy az arénában széttépjék őket – a kutyáknak Yneven sincs könnyű dolguk."
+        },
+        {
+            "type": "paragraph",
+            "text": "Széles körben elterjedtek a titkos, néhol pedig engedélyezett viadalok, ahol a harcikutvák mérik össze erejüket. Mivel az ember azon kevés teremtmény közé tartozik, amelyet eksztatikus örömmel tölt el, ha élőlények tépik-vágják, s fojtják vérbe egymást előtte, ezek a rendezvények többnyire valóságos tömegeket vonzanak. (Persze a küzdők nem csak kutyák lehetnek, hiszen a nézőnek csak egy a fontos: nem az ő vére folyik.)"
+        },
+        {
+            "type": "paragraph",
+            "text": "Ezeken a viadalokon borzalmas sebeket kapnak az állatok, gyakorta a győztes sem sokkal éli túl legyőzött áldozatát. Éppen ezért a viadorokba nem ölnek túl sok pénzt a tulajdonosai; többnyire a vadság és az erő a döntő tényező. Valódi harcikutya nem is látható az efféle mészárszékeken. Mindazonáltal bármiféle kutya indulhat e vérengző versenyeken, ha tulajdonosa kifizeti a nevezési díjat, ami nagyjából 50 réztől kezdődik, s a rendezvény rangosságától függően emelkedik (akár magasra is)."
+        },
+        {
+            "type": "paragraph",
+            "text": "A viadalokat szinte mindig valamelyik alvilági klán szervezi; jelentős bevétel van a fogadásokból is – hiszen minden néző próbára teszi ilyenkor a szerencséjét, illetve ítélőképességét –, de nem megvetendő a zsebmetszők által gyűjtött összeg sem."
+        },
+        {
+            "type": "paragraph",
+            "text": "A dzsadoknál a küzdelem más formáját is kedvelik – ami kor gladiátort állítanak ki a kutya – vagy kutyák – ellen. Efféle alkalomra mindig jól megtermett, erős példányokat választanak, hogy minél érdekesebb legyen a küzdelem. Igazi fénypontnak számít, ha sikerül néha egy-egy querdát befogni, és az arénába küldeni – bár ezek ellen általában több embert állítanak ki, biztos ami biztos alapon."
+        },
+        {
+            "type": "paragraph",
+            "text": "Ha valaki olyan harcikutvát szeretne maga mellett tudni, amelyet az ember elleni küzdelem fortélyaira tanítottak ki, vágyának csak erszénye szabhat határt. Bátor, hű, hatékony társra tehet szert – de ne feledjük, ezek inkább csak az „átlag katonák” ellen lehetnek igazán alkalmasak."
+        },
+        {
+            "type": "paragraph",
+            "text": "Széles körben használják a kutyákat vadászatra is. Nemesi udvarok falkái, hajtó és nyomkövető kopói mellett jelentős értéket képviselnek az egyedül „dolgozó”, számos feladat megoldására kiképzett vadászkutyák is. Az efféléket nem csupán azok kedvelik, akik mesterségként üzik a vadászatot, szívesen támaszkodnak rájuk erdőjáró vándorok is. Egyes vidékeken – Erenben vagy Shadonban például – széles körben elterjedt, nagy népszerűségnek örvend a hajtóvadászat; nemesek szórakozása, valóságos társadalmi esemény. Sokat számít persze, ki milyen fegyverrel, ruházattal és kísérettel érkezik, mindenekelőtt azonban a kutyákat értékelik, bírálják szakértő szemmel – talán csak a vadászlovak fontosabbak náluk."
+        },
+        {
+            "type": "paragraph",
+            "text": "Mindebből következik, hogy jó kopót ajándékozni valódi nemesi gesztus errefelé; bevett szokás is. A kitartó, tiszta vérű, jól képzett vadászebek ára magas; egész falkányit vásárolni és eltartani bizony csak jól jövedelmező birtokokon lehetséges."
+        },
+        {
+            "type": "table",
+            "headers": [
+                "Jellemző",
+                "Közönséges",
+                "Harci",
+                "Vad"
+            ],
+            "rows": [
+                [
+                    "Termet",
+                    "E",
+                    "E",
+                    "E"
+                ],
+                [
+                    "Sebesség",
+                    "120 (SZ)",
+                    "120 (SZ)",
+                    "130 (SZ)"
+                ],
+                [
+                    "Méretkategória",
+                    "1",
+                    "2",
+                    "2"
+                ],
+                [
+                    "Időigény",
+                    "5",
+                    "3",
+                    "3"
+                ],
+                [
+                    "KE",
+                    "40",
+                    "45",
+                    "40"
+                ],
+                [
+                    "TÉ",
+                    "50",
+                    "65",
+                    "60"
+                ],
+                [
+                    "VÉ",
+                    "70",
+                    "100",
+                    "80"
+                ],
+                [
+                    "Sebzés",
+                    "1k10",
+                    "1k10+2",
+                    "1k10"
+                ],
+                [
+                    "Ép",
+                    "8",
+                    "10",
+                    "10"
+                ],
+                [
+                    "Fp",
+                    "20",
+                    "32",
+                    "28"
+                ],
+                [
+                    "Asztrál ME",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Mentális ME",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Méregellenállás",
+                    "3",
+                    "3",
+                    "3"
+                ],
+                [
+                    "Intelligencia",
+                    "Állati",
+                    "Állati",
+                    "Állati"
+                ],
+                [
+                    "Tp",
+                    "3",
+                    "8",
+                    "6"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A táblázatban szereplő értékek csak tájékoztatóul szolgálnak, mivel minden egyes fajta más és más tulajdonságokkal bír. Ezért az egyes fajták különböző módosítókat kapnak, amelyeket alább sorolunk fel. Rajtuk kívül természetesen se szeri se száma a különböző fajtáknak, hiánytalan leírásukat még ynevi tudósnak sem sikerült közreadnia."
+        },
+        {
+            "type": "rule",
+            "title": "Pittaros – Harci",
+            "headers": [
+                "KE",
+                "TÉ",
+                "VÉ",
+                "Sebzés",
+                "Ép",
+                "Fp"
+            ],
+            "rows": [
+                [
+                    "-5",
+                    "+20",
+                    "-15",
+                    "+1",
+                    "+2",
+                    "+6"
+                ]
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Acternam – közönséges",
+            "headers": [
+                "KE",
+                "TÉ",
+                "VÉ",
+                "Sebzés",
+                "Ép",
+                "Fp"
+            ],
+            "rows": [
+                [
+                    "+3",
+                    "+5",
+                    "+5",
+                    "-1",
+                    "-1",
+                    "-3"
+                ]
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Cirnecos – Közönséges",
+            "headers": [
+                "KE",
+                "TÉ",
+                "VÉ",
+                "Sebzés",
+                "Ép",
+                "Fp"
+            ],
+            "rows": [
+                [
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    ""
+                ]
+            ]
+        }
+    ]
+}

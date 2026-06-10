@@ -1,0 +1,159 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": true,
+    "section_title": "A Ranagol-paplovag induló képzettségei 1. Tapasztalati szinten az alap paplovagnál feltüntetetteken kívül:",
+    "content_blocks": [
+        {
+            "type": "paragraph",
+            "text": "Ranagol-paplovag",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "flavor_text",
+            "text": "Ha este lobot vet a vérszínű hold, Ha hallgatag árnyak sóhaja lebben, Panaszod, nyomorod mind sírva dalold, Baljóslatú órán, szárnyaszegetten! S ha lankad a hangod, fogyóban erőd, És néma marad a hold, a kegyetlen, Már tudni fogod, hogy nincs sok időd: Én eljövök érted, kard a kezemben.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "Dequator Marses: Lázalom (Részlet)",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "Hogy Ranagol kráni okultuszának vannak-e paplovagjai, az erősen vitatott kérdés. A legtöbb vallástörténész a tagadó véleményre hajlik; szerintük a Gorvikot alapító menekültek shadoni házukból hozták magukkal a paplovagság intézményét, és egyszerűen átplántálták a Ranagol-vallás általuk összefércelt változatába. A vita szerencsére merőben akadémikus, mert ha a Kosfejes Úrnak esetleg vannak is paplovagjai Kránban, mindeddig semmi hajlandóságot nem mutattak rá, hogy előjöjjenek onnan.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "A humanizált Ranagol-hit paplovagjainak hazája Gorvik, ahol három nagy lovagrendre tömörülnek. Az Emelkedettek központja Akvilonában, a Suttogó Fivéreké Warvikban, a Léleksövény rendé Gorvik tartományban található. Rendhagyó módon mindhárom szervezet kizárólag paplovagokat fogad a soraiba, ezért létszámuk meglehetősen alacsony. Eredetileg a három uralkodó bíborosi dinasztia családi testőrgárdájából fejlődtek ki; ma is az ő szolgálatukban állnak, és emésztő hévvel gyűlölik egymást. Terda Radovik király hatalmi szóval feloszlatta ugyan őket, ám rejtélyes eltűnése után sikerült újraszerveződniük.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "Független Ranagol-paplovagok sem Gorvikban, sem másutt nincsenek: a növendékek nevelését a három rend szigorúan a kezében tartja, a renegátoknak pedig rövid úton végeznek.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "A Kosfejes Úr paplovagjai megvetik az ostobákat, a gyávákat, a másokra utaltakat és mindazokat, akik döntéshozáskor hagyják magukat az érzelmeiktől vezetni. Vallják: az efféléknek nincs is joguk az élethez, létezésüknek egyedül az adhat értelmet, ha az érdemesek kihasználják és eltapossák őket. Elvakult irtásuk persze kerülendő – az igazi kiemelkedett sohasem cselekszik ok nélkül –, ám azért Ranagolnak tetsző cselekedet gyengéden rábírni őket a teremtett világból való távozásra, mégpedig lehetőleg olyasféle módon, hogy közben szembesülhessenek önnön méltatlanságukkal. Így pusztulásuk lelkük épülésére szolgál, hiszen elülteti bennük a vágyat a teljesebb, tökéletesebb életre. E hittételeket különös előszeretettel alkalmazzák a dzsadokra, ám hatályuk alól még a honfitársaik sem mentesek, ha esendőnek mutatkoznak.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "A Ranagol-hitű paplovagok szükség esetén ugyan habozás nélkül nehézvértet öltenek, egyébként azonban jobban kedvelik a könnyebb páncélokat. Jellemző öltözékük nincsen, bár a fekete és a vérvörös színekhez erősen vonzódnak. A kendőnyelvet paptársaikhoz hasonlóan jól ismerik, és szent jelképüket is szeretik ábra formájában a bőrükre tetováltatni.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "Hazájukon kívül kóbor lovagnak vagy egyszerű zsoldosnak adják ki magukat. Kilétüket jól álcázzák, cselekedeteikben egyfajta praktikus ravaszság vezérli őket. Egyetlen álruhás Ranagol-paplovag sem ránt bőszen fegyvert, ha jelenlétében gyalázzák urát; inkább türelmesen kivárja a megfelelő alkalmat, és feltűnés nélkül (esetleg közvetítők igénybe vételével) gondoskodik az istenkáromló megbüntetéséről. Ha ezt semmiképpen nem tehetné a saját gyanúba keveredése nélkül, könnyű szívvel elsiklik a dolog fölött a legközelebb erre vetődő kiemelkedettre hagyván a megtorlást.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "A Ranagol-paplovag különleges előnyei I. A Kosfejes Úr a Halál, a Lélek és a Természet szférákhoz biztosít szolgáinak hozzáférést, és felvértezi őket néhány egyedi fohásszal is, amiket egyetlen más istenség paplovagjai sem ismernek. Ezek jórészt mások megtörésére, demoralizálására, szolgává alázására valók, híven tükrözve a Gorvikban vallott felsőbbrendűségi hitelveket. II. A Ranagol-paplovag a játék kezdetén saját fegyverzettel rendelkezik, amelyért nem kell pénzzel fizetnie, egyháza ajándéka harcához az eretnekek ellen. A fegyverzet tartozékai: acél félvértet és a hozzátartozó sisak, közepes acélpajzs, lovagkard, nehézlovas kopja.",
+            "title": "Ranagol-paplovag előnyei",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "table",
+            "text": "",
+            "title": "Induló képzettségek",
+            "headers": [
+                "Képzettség",
+                "Fok"
+            ],
+            "rows": [
+                [
+                    "Fegyverhasználat (nyeles fegyverek)",
+                    "2. fok"
+                ],
+                [
+                    "Élettan",
+                    "2. fok"
+                ],
+                [
+                    "Kínzás",
+                    "2. fok"
+                ],
+                [
+                    "Orvtámadás",
+                    "2. fok"
+                ],
+                [
+                    "Méregkeverés/Semlegesítés",
+                    "2. fok"
+                ],
+                [
+                    "Herbalizmus",
+                    "1. fok"
+                ],
+                [
+                    "Alkímia",
+                    "1. fok"
+                ]
+            ]
+        },
+        {
+            "type": "rule",
+            "text": "A Ranagol Paplovag képzettségei, melyeket rendjétől az Oktatás képzettség 4. foka által nyújtott előnnyel tanulhat: Méregkeverés/semlegesítés, Alkímia, Orvtámadás, Kínzás.",
+            "title": "Ranagol-paplovag képzettségtanulás",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "Főnix (Sogron-paplovag)",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "flavor_text",
+            "text": "Láng lobban, tűz perzsel, Szent máglya, égess el! Rőt főnix vijjogva Szálljon sírhantomra! Forró vér, izzó csont Hamvából szárnyat bont: Hunytomtól támadjon, Füst-hányván változzon Lelkemből lelkére, Vörhenyéből éjszínre! Szikrázó tűz-testben Láng-létre ébredtem...",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "Ardae Magnus: Főnixlitánia (A Feketelángok öntés máglyahalálához)",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "Hajdan, Ó-Kyria fénykorában a Tűzkobrát főként félelmetes máguspapok szolgálták, akiket még leginkább a birodalmi Hatalmasokkal lehetett együtt emlegetni. Paplovagjairól sem ekkor, sem később, a hanyatlás évszázadaiban nincs tudomásunk.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "Váratlan ynevi felbukkanásuk tehát minden előzményt nélkülöz, és nemcsak meghökkentő, hanem – Sogron",
+            "title": "",
+            "headers": [],
+            "rows": []
+        }
+    ]
+}

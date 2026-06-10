@@ -1,0 +1,36 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": false,
+    "section_title": "",
+    "content_blocks": [
+        {
+            "type": "paragraph",
+            "text": "szenvedélyes hazárdjátékosok. Előfordul néha, hogy felcsapnak testőrnek vagy zsoldosnak, de sosem a fizetség miatt. Ha a megbízás elég izgalmasnak ígérkezik, és nem ütközik erkölcsi felfogásukkal, akár ingyen is elszegődnek. A munkájukban mindazonáltal nem sok a köszönet, mivel hirdetetten fegyelmezetlenek, úrnőjükön kívül semmit és senkit nem ismernek el maguk fölött."
+        },
+        {
+            "type": "paragraph",
+            "text": "A városokat, erődített helyeket nem kedvelik; ha csak módjukban áll, szabad ég alatt halnak. Nyitott építésű szentélyeiket soha nem rakják kőből: egyszerű fa vagy nádépítményeket emelnek, jobbára félreeső, csöndes ligetekben. Szent állatuk a sólyom, melynek elpusztítása vagy fogságba vetése halálos bűnnek számít. A vihar, a szél süvöltése valósággal elbűvöli őket; akkor vannak igazán elemükben, ha körülöttük záporeső szakad és villámok csapkodnak."
+        },
+        {
+            "type": "paragraph",
+            "text": "Meggondolatlanok és hevesek, akár a nyári zivatar, csatakiáltásaik olykor a legtökéletesebben tervezett rajtaütést is tönkretehetik. Viharos vérmérsékletük gyakran ütközik a bevett erkölcsi normákkal, ezért az Északi Szövetség jó néhány országában és a Délvidéken komoly fenntartásokkal fogadják őket. A pórnép száján nem túl hízelgő történetek forognak részeg dáridókról, könnyelműségből támasztott tűzvészekről és más hasonlókról. Az ő sajátos felfogásuk szerint azonban a Sólyomasszony minden tettüket megbocsátja nekik, ha igaz szívvel cselekedtek."
+        },
+        {
+            "type": "paragraph",
+            "text": "Más papokkal ellentétben nekik lételemük a harc, örvend a szívük, ha fegyvert vonhatnak. Hitük szerint mindazok, akik emlékezetes küzdelemben esnek el, holtuk után nyomban az Istenek Völgyébe kerülnek, Arel oldalára. Szabadság szeretetük még fegyverzetük megválasztását is befolyásolja. Nehézvértet sohasem hordanak: részint kényelmetlennek találják, részint harci technikájuk legjavát nem tudják alkalmazni bennük. („Vashordóba sajtolt fatuskók” – jellemzi a naphitű dwom lovagokat tömören és epésen Timul cwa Anrem.) Harc közben szeretik, ha az egyik kezük szabadon marad, ezért nem használnak sem pajzsot, sem kétkezes fegyvereket. Ettől az alapelvüktől csak szeretett vadászfegyverük, a hosszúíj, illetve a visszacsapó íj kedvéért hajlandók eltérni. Ami a mágiájukat illeti, közismert róluk, hogy olykor mámoros meggondolatlanságban szórják szét fohászaikat, gyermeki örömöt lelvén a körülöttük támadó zűrzavarban."
+        },
+        {
+            "type": "paragraph",
+            "text": "Bizonyos papi körökben élénken él az a téveszme, hogy a Sólyomasszony minden szakrális szférához korlátlan hozzáférést biztosít szolgáinak. Nos, ha elég hosszan figyeljük az Arel-papokat, valóban megállapíthatjuk, hogy mindegyik szféra fohászait használják. A bökkenő csak ott van, hogy egyetlen Arel-paptól – vagy akár kettőtől is – ilyesmit hiába is várnánk: képtelenek rá. Az viszont már előfordulhat, hogy hárman együtt az összes szférát kimerítik. S hogy hol itt a magyarázat?"
+        },
+        {
+            "type": "paragraph",
+            "text": "Nem kötik éppenséggel mindenkinek az orrára, de a Sólyomasszony követői három különböző irányzatra oszlanak, annak függvényében, hogy istennőjük mely aspektusát tisztelik. Mindhárom irányzat más-más szférákból válogatja a fohászait, közös hozzáférésük csak a Természethez van. Így hát valóban kimerítik ugyan a rendelkezésre álló lehetőségeket, de csupán összességükben nézve. Egy magányos Arel-pap – tartozzon bármelyik irányzathoz – egyszerre legfeljebb két szakrális szférához férhet hozzá."
+        },
+        {
+            "type": "paragraph",
+            "text": "Az Arel-hívő irányzatok nem minősíthetők hagyományos értelemben vett szektáknak. Nincsenek vitáik, súrlódásaik, dogmatikus ellentéteik, és ha együttműködnek egymással – ami gyakran megesik –, ezt mindig az elképzelhető legnagyobb összhangban teszik, ami csak egy ilyen kiszámíthatatlan vallástól egyáltalán elvárható. Bizonyos származási és regionális választóvonalak megfigyelhetők ugyan közöttük, ám eléggé elmosódottan. Az alapvető különbségek sokkal inkább érzelmi-hangulati beállítottságukban vannak. Az ifjú tanítványok mindig felszentelésük percében választják ki a lelki alkatuknak leginkább megfelelő irányzatot. Az elhatározás – híven Arel szellemiségéhez – teljesen szabad, semmilyen külső körülmény nem befolyásolja. Ha a növendék úgy látja jónak, minden további nélkül elkötelezheti magát másik irányzat mellett, mint a mestere."
+        }
+    ]
+}

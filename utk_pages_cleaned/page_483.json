@@ -1,0 +1,144 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": false,
+    "section_title": "",
+    "content_blocks": [
+        {
+            "type": "rule",
+            "title": "Sárkány - Alapvető Jellemzők",
+            "headers": [
+                "Jellemző",
+                "Érték"
+            ],
+            "rows": [
+                [
+                    "Előfordulás",
+                    "Nagyon ritka"
+                ],
+                [
+                    "Megjelenők száma",
+                    "1"
+                ],
+                [
+                    "Termet",
+                    "O"
+                ],
+                [
+                    "Méretkategória",
+                    "10"
+                ],
+                [
+                    "Sebesség",
+                    "100 (SZ) 300 (L)"
+                ],
+                [
+                    "Időigény",
+                    "Lásd lent"
+                ],
+                [
+                    "Kezdeményező érték",
+                    "30"
+                ],
+                [
+                    "Támadó érték",
+                    "Lásd lent"
+                ],
+                [
+                    "Védő érték",
+                    "Lásd lent"
+                ],
+                [
+                    "Célzó érték",
+                    "Lásd lent"
+                ],
+                [
+                    "Sebzés",
+                    "Lásd lent"
+                ],
+                [
+                    "Életerő pontok",
+                    "50-200"
+                ],
+                [
+                    "Fájdalomtűrés pontok",
+                    "150-500"
+                ],
+                [
+                    "Asztrál ME",
+                    "Immúnis"
+                ],
+                [
+                    "Mentál ME",
+                    "Immúnis"
+                ],
+                [
+                    "Méregellenállás",
+                    "Immúnis"
+                ],
+                [
+                    "Pszi",
+                    "50-100 (Kör 5.fok)"
+                ],
+                [
+                    "Mp",
+                    "100-150"
+                ],
+                [
+                    "Intelligencia",
+                    "Átlagos-kimagasló"
+                ],
+                [
+                    "Jellem",
+                    "Káosz, Halál"
+                ],
+                [
+                    "Tapasztalati pont",
+                    "2500-30 000"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A sárkányok nagy testű, súlyos, ellenben igen gyors teremtmények. Ha végtagjaikkal fizikailag támadnak, KÉ-jük gyakorlatilag 30."
+        },
+        {
+            "type": "table",
+            "headers": [
+                "Támadás",
+                "TÉ",
+                "Sp"
+            ],
+            "rows": [
+                [
+                    "Mancs csapás",
+                    "80-120",
+                    "5k6-7k6"
+                ],
+                [
+                    "Farok csapás",
+                    "100-130",
+                    "10k6-14k6"
+                ],
+                [
+                    "Harapás",
+                    "140-160",
+                    "4k6-8k6"
+                ],
+                [
+                    "Tűzlehelet*",
+                    "CÉ: 60-70",
+                    "Lásd a leírást"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "* a tűzlehelet lásd később!"
+        },
+        {
+            "type": "paragraph",
+            "text": "A sárkányok óriásiak, ennek megfelelően TÉ-jük nagy. Küzdelemben mellső két mancsukat, és ostorszerűen csapkodó farkukat használják, s ha megszorulnak, harapnak is. Hosszú nyakukkal meglepően messzire elérnek, s fejüket"
+        }
+    ]
+}

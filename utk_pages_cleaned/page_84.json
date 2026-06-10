@@ -1,0 +1,223 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": false,
+    "section_title": "",
+    "content_blocks": [
+        {
+            "type": "flavor_text",
+            "text": "...A Koldus széttárta két karját, merőn bámult a támadó karakkára. Az Oroszlán árbocerődítményeiből nyílvesszők szálltak, de rendre elkerülték – tucatjával csapódtak a palánkba, a közönyösen dolgozó élőholtak oldalába. Egyik-másik kránkbőrizű lánggal égett. A rongyosok vedrekhez kaptak, azután.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "flavor_text",
+            "text": "Azután megfordult a szél. A Tharr Próféta tüzet köpött, a pusztító naftafelhőt azonban megfékezte a hirtelen támadt orkán. Lendülete tovább, egyenesen az izzás szívébe ragadta az Oroszlánt – előbástyáját tüstént robbanás vetette szét. Az orrárbox hátrafelé dőlt, a leszakadó vitorlák halottá lepelként borultak a parancsnoki hídra. Több nyílvessző nem érkezett odaátról.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "flavor_text",
+            "text": "– A frad! – rikoltotta diadallal a Koldus. – Aret mellett tűnk harcol!",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "flavor_text",
+            "text": "Wanye Chapman: Észak Lángjai",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "Ynev papjai gondolkodásukban, cselekedeteikben, erkölcseikben mind-mind különböznek, s isteneik parancsolata szerint irányítják a rájuk bízott teremtmények sorsát, támogatást adnak hitükben, vigaszt bajukban, s ha kell segítik, oltalmazzák őket vész idején is.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "Rendkívül fontos szerepet játszanak Yneven. Nem csak az egyszerű szertartások, hétköznapi rituálék elvégzése a feladatuk, mint amilyen a házasságkötés, a házszentelés vagy a temetés, de ott vannak a magaspolitikában, s nem is egy olyan állam van a kontinensen, amely életét közvetve vagy közvetlenül az ott imádott isten felkentjei irányítják.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "Varázshatalommal bíró alakok, kiket tisztelet, félelem vagy épp megbecsülés övez híveik közt, s akiket acsarogva gyűlölnek, tűzzel-vassal irtanak vagy csak egyszerűen elkerülnek azok, akik más istenségben hisznek. Yneven népei számtalan istent és egyéb égi hatalmasságot tisztelnek, s még számosabbak tartanak számon, s ők is, akárcsak gyarló teremtményeik, mérhetetlen módon különböznek egymástól. Miért lenne ez másképp a szolgálatukra felesküdöttek közt?",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "Azt azonban elmondhatjuk, hogy minden különbségük ellenére van némely hasonlóság az Yneven élő papok között is.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "Jóllehet, mindannyian önálló és egyedi jellemű személyiségek, az adott isten szolgáinak gondolkodásmódját, a társadalomhoz, hitbéli kérdésekhez – s más hitekhez való viszonyukat mégis kizárólag saját istenük elvei határozzák meg, s az adott égi hatalom szolgái megközelítőleg ugyanúgy viselkednek, ha hitük valamely ellenfelével vagy a hittételek buktatóival kerül szemben.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "Az alábbiakban az ynevi istenek papjai közül csak néhányat taglalunk részletesen, de a pap leírásánál szereplő értékek szerint bárki megalkothatja a neki tetsző istenség kegyeltjét játékos karakterként, útmutatásul használva az Istenek és égi hatalmak c. fejezetben leírtakat 459. oldalon.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "Ezt a karaktert inkább a M.A.G.U.S.-t jól ismerő, tapasztaltabb játékosoknak ajánljuk – közülük is főként azoknak, akik számára a mágia vonzóbb a fegyvereknél, és hajlamosak kitérni a véres összecsapások elől. A pappal való játék a szűkebb értelemben vett szerepjátékosokon kívül némileg elmélyülést is kíván, mindenekelőtt Ynev varázsos fantáziavilágának a felületesnél alaposabb ismeretét.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "Harctér",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "A pap karakterek ritka a kiemelkedő fegyverforgató. Számukra általában sokkal fontosabb a hit dolgain való elmélkedés, a hívek nyájának irányítása, a példaadás és az útmutatás. Némely istenség egyenesen megtiltja szolgáinak, hogy erőszakot alkalmazzanak. Vannak persze szokatlanul harcias hitek, ám ezek inkább a kivételt jelentik, mint a szabályt. Ennek megfelelően a papok csak akkor tűnhetnek ki a hadakozásban, ha rendhagyóan sok időt és energiát szentelnek neki. Általában szintlépésenként HM-jeik számát 6 ponttal növelik.",
+            "title": "Harctéri képességek",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "Életerő és Fájdalomtűrés",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "A papok ügyelnek ugyan az egészségükre, hogy minél tovább szolgálhassák urukat vagy úrnőjüket a halandó világban – sokan közülük, ellentétben a harcosokkal, igen figyelemreméltó kort érnek meg –, ám hivatásukhoz nem alapvető követelmény az erős fizikum. Ráadásul, mint a közösség lelki vezetői, viszonylag védett körülmények között élnek; a beteges ifjú, aki a jobbágyélet megpróbáltatásaiba előbb-utóbb belepusztulna, egy rendházban vagy kolostorban békésen megöregedhet. A testi fájdalmak elviseléséhez nincsenek igazán hozzászokva, ha eltekintünk egyes aszkéta szektáktól, melyek a szélsőséges önsanyargatást hirdetik. Emiatt Fp-ik számát szintenként átlagosan csak 3 ponttal növelik.",
+            "title": "Fájdalomtűrés",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "A papok szintenként átlagosan 10 ponttal növelik Kp-ik számát.",
+            "title": "Képzettségpontok",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "Képzettségek",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "A papok istenük, istennőjük hatalmának ynevi letéteményesei, akaratuk végrehajtói. Megjelenésük és tudásuk épp oly sokrétű és változatos, mint az Ynev egyet lakó istenek sokasága. Az alábbiakban a papok képzettségeinek ismertetésében csakis azon képzettségeket tüntetjük fel, melyek minden pap sajátjai. Az istenségenként és egyházanként eltérő képzettségeket az adott egyházak papjainak ismertetésekor tüntetjük fel. Azon hitek felkentjei, kik itt nem kaptak helyett, képzettségeiket a KM-mel egyetértésben, a papok általános leírásában ismertetett képzettségek alapján maguk állíthatják össze.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "A papok szintenként átlagosan 10 ponttal növelik Kp-ik számát.",
+            "title": "Képzettségpontok",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "Isteni kegy",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "A pap karakter varázshatalmát istenétől nyeri. A széles körben elfogadott mágiaelmélet szerint varázsláskor nem a pap, hanem istene tesz csodát, s a pap nem más, mint szószóló, melynek szabad akarata segít az istenségnek, hogy megszegje az isteni Paktumot és beavatkozzék közvetlenül a halandók ügyeibe. A papok általában szintenként 8 Kegy ponttal, illetve a szerepjátékért kapott jutalompontokkal növelik hatalmukat.",
+            "title": "Kegy pontok",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "A pap induló képzettségei 1. Tapasztalati szinten",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "table",
+            "text": "",
+            "title": "",
+            "headers": [
+                "Induló képzettségek",
+                "Fok"
+            ],
+            "rows": [
+                [
+                    "Fegyverhasználat",
+                    "2. fok"
+                ],
+                [
+                    "Vallásismeret",
+                    "3. fok"
+                ],
+                [
+                    "Lélektan",
+                    "2. fok"
+                ],
+                [
+                    "Ékesszólás",
+                    "2. fok"
+                ],
+                [
+                    "Írás/Olvasás",
+                    "3. fok"
+                ],
+                [
+                    "Nyelvtudás",
+                    "3. fok"
+                ],
+                [
+                    "Nyelvtudás",
+                    "2. fok"
+                ],
+                [
+                    "Történelem",
+                    "2. fok"
+                ],
+                [
+                    "Legendaismeret",
+                    "1. fok"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A pap képzettségei, melyeket rendjétől az Oktatás képzettség 4. foka által nyújtott előnnyel tanulhat",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "Ékesszólás, Élettan, Fegyverhasználat, Heraldika, Herbalizmus, Írás/olvasás, Jog/törvénykezés, Kultúra, Legendaismeret, Lélektan, Művészetek, Nyelvtudás, Orvoslás, Ősi nyelv, Politika/Diplomácia, Pszi (pyarroni), Számtan/mértan.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        }
+    ]
+}

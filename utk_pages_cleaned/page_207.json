@@ -1,0 +1,120 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": true,
+    "section_title": "Célzófegyverek",
+    "content_blocks": [
+        {
+            "type": "paragraph",
+            "text": "keskeny keresztvassal. Nem gorviki kezében csak tőrként forgathat."
+        },
+        {
+            "type": "rule",
+            "title": "Tőr",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A legáltalánosabb fegyver szerte Yneven. Rengeteg különböző formája van, de pengéje nem haladja meg a 40 ynevi hüvelyket. Azonban mindig szúrásra alkalmas, kétélű penge, mely szinte mindig ujjvédővel is el van látva."
+        },
+        {
+            "type": "rule",
+            "title": "Célzófegyverek általános szabályai",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "Az ebbe a kategóriába tartozó fegyverek mind valamiféle lövedék kilövésére szolgálnak. A M.A.G.U.S.-ban az összes ilyen fegyver használatakor nem a karakter TÉ-je, hanem CÉ-je a mérvadó. Vonatkozik rájuk továbbá az íjászszabály is. A lőfegyvereknek számos előnye van. Ezek közül a legnyilvánvalóbb az, hogy az íjat, nyílpuskát használó karakter képes úgy támadni, hogy őt nem támadják."
+        },
+        {
+            "type": "rule",
+            "title": "Tűvető",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "Jellemzően embervadász fegyver – és persze mindig mérgezett. Igen bonyolult és költséges szerkezet, a hivatásos fejvadászok közül is csak kevesen engedhetik meg maguknak ezt a luxust. A tűvető egy rugós mechanizmus, amely egy zsinór megrántásával old, és a tűt az ellenfél felé lövi. Általában alkarra szíjazva viselik – bár gyakorta páncélokba is építik –, a zsinór pedig a tulajdonos egyik ujjára van hurkolva. Így egyetlen csuklómozdulattal a szerkezet elsüthető, s mérgezett tűt lő a köpeny ujjából az áldozatra. Rejtett mivolta miatt igen nehezen fedezhető fel, és az ellenfelet legtöbbször meglepetésszerűen éri a támadás. Az eszköz újratöltése nehézkes, 5-6 kört vesz igénybe."
+        },
+        {
+            "type": "rule",
+            "title": "Fúvócső",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "Rögtönzött fúvócsövet szinte bárki tud gyártani például bodzaágból; azonban ez még meglehetősen rossz tulajdonságokkal bír: a fent megadott CÉ egy fegyverkészítő által kimunkált csőre vonatkozik. A lőtávolságot nagyban befolyásolja a cső hossza: igazi mesterei közel két ynevi láb hosszú fúvócsöveikkel és mérgezett fatüskéikkel akár ötven láb távolságból is biztonsággal leterítenek egy galamb nagyságú madarat. E fegyver tipikusan a fejvadászok, orgyilkosok fegyvere. Csak lesből használható, és leginkább az ellenfél megmérgezése a cél."
+        },
+        {
+            "type": "rule",
+            "title": "Parittya",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "Meglehetősen egyszerű fegyver. Mindössze egymásfél ynevi láb hosszú bőrszíj, ami középen kiszélesedik. Az egyik végét a parittya általában a csuklójára rögzíti, a másikat pedig megmarkolja. A széles részbe helyezi a követ vagy golyót, majd a parittyát megpörgeti a feje felett, és a kellő pillanatban elengedi az egyik szárat, kilövi a lövedéket. A parittyások általában a legszegényebb néprétegekből kerülnek ki, nem találhatóak meg minden seregben."
+        },
+        {
+            "type": "rule",
+            "title": "Rövid íj",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "Az íj Ynev legősibb lőfegyvere, már a Crantai Birodalom előtt is ismerték és használták. Legegyszerűbb formája egy meghajlított fadarab, amelynek két végét erős kötéllel vagy ínnal kötötték össze. Ez a hagyományos rövid íj. Legfontosabb jellemzője, hogy az íjfa és az ideg között középen van a legnagyobb távolság. Mivel az íj felajzásakor az határozza meg a kilövés erejét, hogy milyen hosszan tudja az íjász kihúzni az ideget, az íjfa nem tartozik a legjobbak közé. Ezek kihúzása hozzávetőleg 15-20 ynevi font súly felemelésével egyenértékű."
+        },
+        {
+            "type": "rule",
+            "title": "Hosszú íj",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A kyrek használták először. Lényegében nem különbözik rövid társától, de egy fontos felismerésen alapszik. Az íjfa ruganyosságát ugyanis nem csak alakjának változtatásával lehet növelni, hanem hosszának növelésével is. Minél hosszabb az íjfa, annál nagyobb erőt lehet kifejteni vele. A kyrek idejében terjedt el a másfél-két ynevi láb hosszú íjfa, amivel jó ötven lépéssel kitolták a lőtávot és a célzás is pontosabbá vált. Míg a mérete miatt nehezebb kezelni, ezzel már nem lehetett volna hátáról lőni. A kyrekre egyébként nem jellemző az íjászkultusz, bár minden nagyobb seregben akadtak íjászok, harcászati jelentőségük csekély volt. A mai hosszú íjakat jobbára kőrisből készítik, bár akadnak vidékek, ahol más fatípusokra esküsznek."
+        },
+        {
+            "type": "rule",
+            "title": "Visszacsapó íj",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A nomádok találmánya, de használják ezt a fegyvert délen és északon egyaránt. Az első visszacsapó íjas nomádok Ilanor és Enysmon őslakói voltak. A visszacsapó íj lényege, hogy az általában összetett íjfa eredeti görbületével ellentétesen meghajlítják és így teszik rá az ideget. Ekkor az íj felhúzatlan állapotban is feszül, ezt felajzáskor tovább fokozva jóval nagyobb erővel röpíti ki a vesszőt, mint közönséges társai. Mivel ez az íjfa igen nagy igénybevételnek van kitéve, gyakran több réteg fából, illetve csontból, szaruból készítik, sőt néha egy fémréteget is rátesznek. Ettől sokkal szívósabb, keményebb lesz az íj – de a használatához is nagyobb erő kell. A közönséges íjak közül mindenképpen ez a leghatékonyabb, azonban kezelését elsajátítani nehéz, nagy Erőt igényel (legalább 13-as), és elkészítése is körülményes és hosszú munka. Az igazi mesteri példányok éveken át készülnek. Ezek a nehézségek magyarázzák, hogy jó teljesítménye ellenére kevéssé terjedt el."
+        },
+        {
+            "type": "rule",
+            "title": "Elf íj",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "Kizárólag az elfek használják és készítik ezeket a misztikus harci eszközöket, melyek alakjukat tekintve, leginkább a visszacsapó íjakra emlékeztetnek, noha első pillantásra nyilvánvaló, hogy nem azonosak azokkal, mivel ezek az íjak élnek. A szertartás során, mely alkalmával megszületnek az elf közösség megtartója az, aki a harcos számára annak álmai alapján, illetve a sorsjegyekből kikövetkeztetve megtalálja a fát, amely egy ágából majd az íj készül. Ezután az elfnek legalább egy esztendeig ismerkednie kell a fával, a területtel, ahonnét majd fegyvere vétetik. Ez idő alatt a megtartó segítségével szimpatikus viszony alakul ki a fa és az elf között; a fa lélekszikrája megmerítkezik az elf lelkének hullámaiban, míg az elf megnyugvást talál a növény létezésének egyszerűségében. Amikor eljön az idő, hogy a megfelelő ágat lemetszék a fáról, addigra már az elf és a fa lelke majdnem egy, s nem történik más, mint a fa lelke a létezés egy magasabb stációjába lépve az íjon és hordozóján keresztül megismerheti a világot. Egyes elf bölcsek szerint ezen fa-lélekszikrák sokkal hamarabb, az állatok és más teremtmények szintjét kihagyva mindjárt értelmes teremtményként születnek majd újjá, ha eljön az idejük. Ezen személyek szerintük könnyen felismerhetőek lombszöld szemükről, és békés, álmatag viselkedésükről, mellyel ősi alakjukat idézik. A szertartásnak azonban egyéb kihatásai is vannak: az elf lelke a faéhoz kötődik az íjban, mellyel innentől kezdve személy-személy szimpátiában áll. Megérzi, hogy merre található az íj, ha nincs nála, illetve annak életerejét is ő adja... hiszen a fa ága nem halt meg, hanem új életre kelt az"
+        }
+    ]
+}

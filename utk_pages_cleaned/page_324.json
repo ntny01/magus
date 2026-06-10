@@ -1,0 +1,144 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": false,
+    "section_title": "",
+    "content_blocks": [
+        {
+            "type": "rule",
+            "title": "Élőholt parancsnoklás",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "Mana pont: 2/E Varázslás ideje: 1 szegmens Hatótáv: 20 ynevi láb Időtartam: Egyszeri Mágiaellenállás: Mentális"
+        },
+        {
+            "type": "paragraph",
+            "text": "A varázslat használatakor a boszorkánymester hangja hirtelen elmélyül és félhangosan valamely ismeretlen nyelv szavait mormolja. Az Élőholt parancsnoklással egyszerű utasítást adhat a kiszemelt élőholtnak, hasonló ahhoz, mint amit élőholt teremtéskor beleplántált. A parancs a halottak embertől idegen, hátborzongató nyelven hangzik el, s a félintelligens, vagy még ostobább élőhalottak azonnal teljesítik a parancsot. Az intelligens Mentál Mágiaellenállásra jogosultak."
+        },
+        {
+            "type": "rule",
+            "title": "Érzékelés holtakon keresztül",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "Mana pont: 10 Varázslás ideje: 1 perc Időtartam: 1 óra/szint"
+        },
+        {
+            "type": "paragraph",
+            "text": "A varázslat csak Tudattal vagy Személyiséggel nem rendelkező (I. és II. Necrográfiai osztályba sorolt) élőholtakra alkalmazható. A boszorkánymester elméje az érintés pillanatában kinyúl az élőholt felé, és utat keres a beleplántált Mentállény vagy lélekcsíra felé. Miután a korlátozott tudatot maga alá gyűrte, képessé válik az általa teremtett élőholtak érzékszervein keresztül látni és hallani. A varázslat csak akkor működik, ha az élőhalott még rendelkezik látó- és hallószervekkel. Az érzékelés Erőssége pusztán fele egy átlagos ember képességeinek. A varázslat végrehajtása után az élőhalott bármilyen távolságra eltávolodhat a boszorkánymestertől, hiszen a két tudat között feszülő Mentálfonál továbbra is biztosítja a kapcsolatot, urának csak koncentrálnia kell, ha kedve támad az érzékszervek felidézésére."
+        },
+        {
+            "type": "rule",
+            "title": "Beszéd holtakon keresztül",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "Mana pont: 10 Varázslás ideje: 1 perc Időtartam: 1 óra/szint"
+        },
+        {
+            "type": "paragraph",
+            "text": "A varázslat mindenben megegyezik az Érzékelés holtakon keresztül varázslattal, azzal a különbséggel, hogy a boszorkánymester immár nem látni és hallani, hanem beszélni képes az általa teremtett élőhalott szájával, pontosabban az élőholt azt mondja, amit ura és parancsolója kíván. A varázslat csak akkor működik, ha az élőhalott még rendelkezik hangképző szervekkel. A varázslat végrehajtása után az élőhalott bármilyen távolságra eltávolodhat a boszorkánymestertől, urának csak koncentrálnia kell, ha szólni támad kedve, de nem varázsolhat rajta keresztül."
+        },
+        {
+            "type": "rule",
+            "title": "Értelemmel felruházás",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "Mana pont: 30 Varázslás ideje: 1 óra Időtartam: 1 nap/szint"
+        },
+        {
+            "type": "paragraph",
+            "text": "A varázslat hosszas előkészítést, a halott testbe vésett varázsjelek, idéző körök felrovását, lélekgyertyát és hosszas kántálást igényel (ezek Mana pont költségét a varázslat már tartalmazza). Segítségével a reinkarnációból kisodródott, torz lélek költöztethető az élőhalottba. Az efféle lelkeket a Necrográfia „kóborló dögök”-ként számtalan fajtájuk ismeretes, élőhalottba költöztetve a legkülönfélébb teremtmények hozhatók létre."
+        },
+        {
+            "type": "rule",
+            "title": "Értelemmel felruházás hatása",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "Az értelemmel nem bíró élőholtak – melyek még egyszavas parancsokat sem értenek meg, csupán valamely beléjük plántált, egyszerű utasítást vezérelve cselekszenek – a varázslat hatására olyan egyszerűbb utasítások elvégzésére is alkalmassá válnak, mint például: „Csak a szolgáimat engedd be az ajtón!” vagy „Kövess és oltalmazz!”. Az élőholt Intelligenciája 5 lesz. Ez annyit tesz, hogy a parancsokat megérti, és korlátozott mértékben önálló cselekvésre is alkalmas. Megfontolt döntéseket azonban nem hozhat. A varázslat áldásos mellékhatásaként az élőholt mindenképpen hűséges lesz parancsolójához, s mástól nem is fogad el utasításokat. A varázslat csak és kizárólag egyetlen, értelemmel nem bíró élőhalottra hat, más teremtmények ellen teljességgel hatástalan."
+        },
+        {
+            "type": "paragraph",
+            "text": "Az időtartam leteltével az élőhalott elhagyja a beleplántált lélek, s a teremtmény visszasüllyed az értelem nélküli létbe."
+        },
+        {
+            "type": "rule",
+            "title": "Tudattal felruházás",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "Mana pont: 50 Varázslás ideje: 1 óra Időtartam: 1 nap/szint"
+        },
+        {
+            "type": "rule",
+            "title": "Tudattal felruházás hatása",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A varázslat segítségével tudat, intelligencia kölcsönözhető egy érzelemmel nem bíró élőhalottnak. Ezáltal önállóan, logikusan fog gondolkodni. Parancsokat adhat társainak, döntéseket hozhat, de mindeközben a végletekig hűséges lesz a boszorkánymesterhez. Az élőhalott Intelligenciája a varázslat időtartama alatt 10 lesz. A varázslat csak és kizárólag az említett kategóriába tartozó egyetlen élőhalottra hat, más teremtményekre nem."
+        },
+        {
+            "type": "paragraph",
+            "text": "A varázslattal a boszorkánymester olyan lelket idéz az élőhalottba, amit Abdul al Sahred a „vérivó dögök” Anyagi Síkon fellelhető válfajaként említ. Ezek a lelkek az Anyagi Síkon rekedtek, s nem ragadtattak el valamelyik Külső Síkra. Anyagi Testüket már elhagyták, s puszta lélekként bolyongnak a Világegyetemben – szinte várva, kívánva a megidézést. Már-már hálásak a boszorkánymesternek, amiért ismét lehetővé teszi számukra az Anyagi test birtoklásával járó örömöket."
+        },
+        {
+            "type": "rule",
+            "title": "Személyiséggel felruházás",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "Mana pont: 70 Varázslás ideje: 1 óra Időtartam: 1 nap/szint"
+        },
+        {
+            "type": "rule",
+            "title": "Személyiséggel felruházás hatása",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A varázslathoz az Értelemmel felruházásnál felsorolt procedúrákra van szükség, melyek segítségével a boszorkánymester megidézheti egy elhunyt lelkét, ha birtokolja földi maradványait, vagy akár csak egyetlen csontját, és ha a lélek az Örök Körforgás valamely stációján rekedt éppen (tehát még nem született újjá). A lélek emlékezni fog életére, rendelkezik a megboldogult minden szellemi tulajdonságával és képességével. Azaz, ha ismerte a mágiát, ezt ismerni fogja, ha használt pszit, most is fog. Ha élőhalott teste erre alkalmas, a fizikai jellegű Képzettségek és a Harcérték is öröklődik. Gyakorlatilag úgy is tekinthető, hogy a boszorkánymester feltámasztotta a halottat."
+        },
+        {
+            "type": "paragraph",
+            "text": "A varázslattal lélek plántálható egy értelemmel nem bíró élőhalottba. Ezáltal az képessé válik a logikus, önálló gondolkodásra; saját személyisége, egyénisége lesz; Mentális és Asztrális szempontból teljes értékű emberré válik. Teste ugyan hagy némi kívánnivalót maga után – végül is élőhalott: fizikailag szemlélve nem több az egyszerű Zauraknál. Szellemiségét tekintve azonban akár óriás is lehet: varázsló, bölcs, netán egy"
+        }
+    ]
+}

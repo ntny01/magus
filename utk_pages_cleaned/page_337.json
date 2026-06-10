@@ -1,0 +1,420 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": true,
+    "section_title": "Varázslatok",
+    "content_blocks": [
+        {
+            "type": "table",
+            "title": "Alapvarázslatok",
+            "headers": [
+                "A varázslat neve",
+                "Mana pont",
+                "Varázslás ideje",
+                "Hatótáv",
+                "Időtartam",
+                "Mágiaellenállás"
+            ],
+            "rows": [
+                [
+                    "Mágia felfedezése",
+                    "1",
+                    "1 szegmens",
+                    "20 ynevi láb",
+                    "1 kör/szint",
+                    "—"
+                ]
+            ]
+        },
+        {
+            "type": "table",
+            "title": "Villámágia",
+            "headers": [
+                "A varázslat neve",
+                "Mana pont",
+                "Varázslás ideje",
+                "Hatótáv",
+                "Időtartam",
+                "Mágiaellenállás"
+            ],
+            "rows": [
+                [
+                    "Villámkeltés (idézés)",
+                    "3",
+                    "3 szegmens",
+                    "Önmaga",
+                    "1 kör/szint",
+                    "—"
+                ],
+                [
+                    "Villámtagadás (idézés)",
+                    "5/E",
+                    "1 szegmens/E",
+                    "20 ynevi láb",
+                    "1 kör/szint",
+                    "—"
+                ],
+                [
+                    "Villámidézés (idézés)",
+                    "4/E",
+                    "1 szegmens",
+                    "1 kör",
+                    "—",
+                    "—"
+                ],
+                [
+                    "Kisülés (formázás)",
+                    "0",
+                    "—",
+                    "5 láb vagy érintés",
+                    "—",
+                    "—"
+                ],
+                [
+                    "Villámfutás (formázás)",
+                    "1/E",
+                    "—",
+                    "20 ynevi láb",
+                    "1 kör/szint",
+                    "—"
+                ],
+                [
+                    "Villámvarázs (formázás)",
+                    "2/E",
+                    "—",
+                    "20 ynevi láb",
+                    "Pillanat",
+                    "—"
+                ],
+                [
+                    "Visszaverődő villám (felruházás)",
+                    "+3",
+                    "—",
+                    "—",
+                    "—",
+                    "—"
+                ],
+                [
+                    "Forduló villám (felruházás)",
+                    "+5",
+                    "—",
+                    "—",
+                    "—",
+                    "—"
+                ],
+                [
+                    "Villámlánc (felruházás)",
+                    "+15",
+                    "—",
+                    "Érintés",
+                    "1 kör/szint",
+                    "—"
+                ],
+                [
+                    "Villámpenge (formázás)",
+                    "2/E",
+                    "—",
+                    "Érintés",
+                    "1 kör/szint",
+                    "—"
+                ],
+                [
+                    "Villámvért (formázás)",
+                    "1/E vagy 3/E",
+                    "—",
+                    "Érintés",
+                    "1 kör/szint",
+                    "—"
+                ],
+                [
+                    "Villámbörtön (formázás)",
+                    "4/E",
+                    "—",
+                    "10 láb",
+                    "1 óra/szint",
+                    "—"
+                ]
+            ]
+        },
+        {
+            "type": "table",
+            "title": "Anyagmágia",
+            "headers": [
+                "A varázslat neve",
+                "Mana pont",
+                "Varázslás ideje",
+                "Hatótáv",
+                "Időtartam",
+                "Mágiaellenállás"
+            ],
+            "rows": [
+                [
+                    "Anyagpusztítás",
+                    "3/E",
+                    "1 szegmens",
+                    "20 ynevi láb",
+                    "Egyszeri",
+                    "—"
+                ],
+                [
+                    "Savfelhő",
+                    "12/E",
+                    "1 szegmens/E",
+                    "20 ynevi láb",
+                    "1 kör/szint",
+                    "—"
+                ],
+                [
+                    "Savteremtés",
+                    "8/E",
+                    "1 szegmens/E",
+                    "20 ynevi láb",
+                    "1 kör/szint",
+                    "—"
+                ],
+                [
+                    "Szilánkokra robbantás",
+                    "5/E",
+                    "2 szegmens",
+                    "20 ynevi láb",
+                    "Egyszeri",
+                    "—"
+                ]
+            ]
+        },
+        {
+            "type": "table",
+            "title": "Nekromancia",
+            "headers": [
+                "A varázslat neve",
+                "Mana pont",
+                "Varázslás ideje",
+                "Hatótáv",
+                "Időtartam",
+                "Mágiaellenállás"
+            ],
+            "rows": [
+                [
+                    "Húsmaszk",
+                    "30",
+                    "10 perc",
+                    "Önmaga",
+                    "1 óra/szint",
+                    "—"
+                ],
+                [
+                    "Magzat megrontása",
+                    "90",
+                    "10 perc",
+                    "Érintés",
+                    "Maradandó",
+                    "—"
+                ],
+                [
+                    "Öregítés",
+                    "20 + 1/E vagy 10/E",
+                    "1 perc",
+                    "20 ynevi láb",
+                    "1 nap/szint vagy végleges",
+                    "—"
+                ],
+                [
+                    "Szentségtelen kapu",
+                    "100",
+                    "10 perc",
+                    "1 láb",
+                    "Lásd a leírásban!",
+                    "—"
+                ],
+                [
+                    "Szépség elorzása",
+                    "22",
+                    "10 perc",
+                    "Önmaga",
+                    "1 óra/szint",
+                    "—"
+                ],
+                [
+                    "Túlvilági birtok",
+                    "45",
+                    "10 perc",
+                    "5 láb/szint sugarú kör",
+                    "Maradandó",
+                    "—"
+                ],
+                [
+                    "Enyészet posványa",
+                    "35",
+                    "10 perc",
+                    "5 láb/szint sugarú kör",
+                    "Maradandó",
+                    "—"
+                ]
+            ]
+        },
+        {
+            "type": "table",
+            "title": "Necrografia",
+            "headers": [
+                "A varázslat neve",
+                "Mana pont",
+                "Varázslás ideje",
+                "Hatótáv",
+                "Időtartam",
+                "Mágiaellenállás"
+            ],
+            "rows": [
+                [
+                    "Azonosítás",
+                    "15",
+                    "1 perc",
+                    "Érintés",
+                    "Egyszeri",
+                    "—"
+                ],
+                [
+                    "Csontszelés",
+                    "5",
+                    "1 perc",
+                    "100 láb sugarú kör",
+                    "10 perc",
+                    "—"
+                ],
+                [
+                    "Bomlás megfékezése",
+                    "10",
+                    "1 perc",
+                    "Érintés",
+                    "1 nap/szint",
+                    "—"
+                ],
+                [
+                    "Halottak nyelve",
+                    "5",
+                    "3 szegmens",
+                    "Önmaga",
+                    "1 perc/szint",
+                    "—"
+                ],
+                [
+                    "Élőholt teremtés",
+                    "20",
+                    "1 perc",
+                    "100 láb",
+                    "Maradandó",
+                    "—"
+                ],
+                [
+                    "Élőholt idézés",
+                    "10",
+                    "1 kör",
+                    "100 láb",
+                    "1 perc/szint",
+                    "—"
+                ],
+                [
+                    "Élőholt parancsnoklás",
+                    "2/E",
+                    "1 szegmens",
+                    "20 ynevi láb",
+                    "Egyszeri",
+                    "Mentális"
+                ],
+                [
+                    "Érzékelés holtakon keresztül",
+                    "10",
+                    "1 perc",
+                    "Érintés",
+                    "1 óra/szint",
+                    "—"
+                ],
+                [
+                    "Beszéd holtakon keresztül",
+                    "20",
+                    "1 perc",
+                    "Érintés",
+                    "1 óra/szint",
+                    "—"
+                ],
+                [
+                    "Értelemmel felruházás",
+                    "30",
+                    "1 óra",
+                    "Érintés",
+                    "1 nap/szint",
+                    "—"
+                ],
+                [
+                    "Tudattal felruházás",
+                    "50",
+                    "1 óra",
+                    "Érintés",
+                    "1 nap/szint",
+                    "—"
+                ],
+                [
+                    "Személyiséggel felruházás",
+                    "70",
+                    "1 óra",
+                    "Érintés",
+                    "1 nap/szint",
+                    "—"
+                ]
+            ]
+        },
+        {
+            "type": "table",
+            "title": "Életerő manipulálás",
+            "headers": [
+                "A varázslat neve",
+                "Mana pont",
+                "Varázslás ideje",
+                "Hatótáv",
+                "Időtartam",
+                "Mágiaellenállás"
+            ],
+            "rows": [
+                [
+                    "Életerőzsugor",
+                    "4/E",
+                    "1 szegmens/E",
+                    "Érintés",
+                    "1 szegmens/E",
+                    "—"
+                ],
+                [
+                    "Életerőrablás",
+                    "6/E",
+                    "1 szegmens/E",
+                    "Érintés",
+                    "1 szegmens/E",
+                    "—"
+                ],
+                [
+                    "Életerő átadása",
+                    "8/E",
+                    "1 szegmens/E",
+                    "Érintés",
+                    "1 szegmens/E",
+                    "—"
+                ],
+                [
+                    "Életerővel felruházás",
+                    "8/E",
+                    "1 szegmens/E",
+                    "Érintés",
+                    "1 szegmens/E",
+                    "—"
+                ],
+                [
+                    "Életerő raktározása",
+                    "4/E + 12",
+                    "1 szegmens/E",
+                    "Érintés",
+                    "1 szegmens/E",
+                    "—"
+                ]
+            ]
+        }
+    ]
+}

@@ -1,0 +1,135 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": null,
+    "is_new_section": false,
+    "section_title": "",
+    "content_blocks": [
+        {
+            "type": "paragraph",
+            "text": "Minden kincs közül a mágikus tulajdonságokkal bíró a legértékesebb. Aki ilyen tárgyat birtokol, hatalmat birtokol. A Varázstárgyak készítése költséges és fáradságos eljárás – tudást, tapasztalatot igényel. Játékos Karakter csak akkor készíthet efféle holmit, ha megfelelő képzettséggel bír."
+        },
+        {
+            "type": "paragraph",
+            "text": "A fejezetben szereplő „Ár” rovat arról tájékoztat, hogy a tárgy elkészítéséhez szükséges összetevők mennyibe kerülnek. Varázstárgyak eladásából rendkívül kevés bolt tartja fenn magát. Erionban több ismert kereskedő foglalkozik effajta ügyletekkel, ám csupán bájitalok és főzetek, esetenként amulettekkaphatók náluk – noha a forgalmi ár nagyban különbözhet az összetevők meghatározott Önköltségi árától."
+        },
+        {
+            "type": "paragraph",
+            "text": "Ezen kívül minden varázstárgy Mana igényétől függően is számít bizonyos díjazásra, már ha áruba bocsátja egyáltalán. Ilyen esetekben egy felhasznált Mp-ért átlagosan 1,5 aranyat kérnek."
+        },
+        {
+            "type": "paragraph",
+            "text": "A Varázstárgyakat, elkészítésük módja szerint, három különböző csoportba sorolhatjuk: a tapasztalati vagy szakrális úton, a Rúnamágiával vagy a Drágakőmágiával készített tárgyak közé."
+        },
+        {
+            "type": "paragraph",
+            "text": "A tapasztalati úton készített tárgyak a leggyengébbek, hatalmuk erősen korlátozott – általában boszorkányok, boszorkánymesterek hozzáértését dicsérik. Leggyakrabban bájitalok vagy amulettek, elkészítésükhöz elegendő birtokolni a receptet, nem szükséges behatóan ismerni a mágiát. Alkotójuk ráolvasással plántálja beléjük a mágikus energiát, miközben Mana pontjait felemésztve teszi a varázst. A szakrális úton készült varázstárgyak ereje igen különböző lehet: megtalálható közöttük az egyszerű, rontásűző amulettől a csodás, szinte isteni hatalommal bíró ereklyéig minden."
+        },
+        {
+            "type": "paragraph",
+            "text": "A Rúnamágiával alkotott varázstárgyakat a beléjük vésett rúnák ruházzák fel mágikus hatalommal. Készítésükhöz a Jelmágia ismerete és a mágia alapvető összefüggéseinek tisztánlátása szükségeltetik. A rúnákat minden esetben Mágikus Aura Varázstárgyba kell foglalni, mert ez köti őket az adott tárgyhoz és látja el mágikus energiákkal a beléjük zárt varázst. (Lásd a 373. oldalon a Rúnamágia c. fejezetben!)"
+        },
+        {
+            "type": "paragraph",
+            "text": "Rúnamágiával sokféle varázstárgy készíthető; az egyedüli korlátot a rúnák száma, pontosabban a megrajzolásukra fordított Mana pontok magas értéke jelenti. Olykor boszorkányok is készítenek rúnákkal televesett szerencseamuletteket. Ezeket mégis a tapasztalati úton készülő varázstárgyak közé soroljuk, mivel esetükben a rúnák nem tiszta mágikus hatást fogalmaznak meg, csak a készítéskor elkántált varázsigéket tükrözik megkötött formában."
+        },
+        {
+            "type": "paragraph",
+            "text": "A leghatalmasabbak kétségtelenül a Drágakőmágián alapuló Varázstárgyak. Számuknak, mágikus képességeiknek csak a képzelet és készítőjük hatalma szab határt. Az efféle tárgyak úgy készülnek, hogy egy drágakövet a varázsló mágikus energiákkal tölt fel, miáltal a kő maga is képessé válik mágikus hatások létrehozására."
+        },
+        {
+            "type": "paragraph",
+            "text": "Minden varázstárgy közös jellemzője, hogy a tárgyat egyetlen formulával kell elkészíteni, korlátozza a tulajdonságait is, hiszen a varázshasználó csak annyi Mana pontból gazdálkodhat, amennyit egyszerre begyűjteni képes, (lásd max. Mana pont)."
+        },
+        {
+            "type": "paragraph",
+            "text": "Tapasztalati és szakrális úton készült varázstárgyak"
+        },
+        {
+            "type": "paragraph",
+            "text": "Tapasztalati és szakrális úton a papok, boszorkányok, boszorkánymesterek készítik Varázstárgyaikat. A varázslók elzárkóznak a mágia ezen – alacsonyrendűnek mondott – alkalmazásától, mégha legtöbbjük amúgy képes is lenne efféle holmik létrehozására."
+        },
+        {
+            "type": "paragraph",
+            "text": "A tapasztalati vagy szakrális úton dolgozó mesterek kezei által készített bájitalok, főzetek és amulettek kerülnek ki; közös tulajdonságuk, hogy megfelelő módon elkészítve képesek Mana pontok befogadására és a kívánt mágikus hatás kifejtésére. Elkészítésük a tárgy természetétől függően 1-3 órát vesz igénybe."
+        },
+        {
+            "type": "paragraph",
+            "text": "A bájitalok és főzetek akkor fejtik ki hatásukat, amikor felhajtásra kerülnek; mindig a teljes mennyiséget kell elfogyasztani, csökkentett adag befogadása esetén a kívánt hatás elmarad. Az ital 1k6 szegmens alatt aktivizálódik, hatása általában 1k6-szor tíz percig tart. Természetesen akadnak kivételek, mint például a Gyógyítás Itala, amely véglegesen begyógyítja a sebeket."
+        },
+        {
+            "type": "paragraph",
+            "text": "Az amulettek viselőjükkel mágikus tulajdonságukkal, illetve rá – és csakis rá – fejtik ki hatásukat. Az azonnal megtörténik, mihelyt az illető magához vette az amulettet, s addig tart, ameddig el nem kerül tőle. Egy személy csak egyetlen adott típusú hatást kifejtő amulettet viselhet eredményesen, például olyat, amely az Asztrális Mágiaellenállására hat, amennyiben többet is magára aggat, csak a legnagyobb erősségű hatása érvényesül."
+        },
+        {
+            "type": "paragraph",
+            "text": "Ha Játékos Karakter kíván tapasztalati úton készülő varázstárgyat alkotni, csak a megfelelő formula birtokában teheti; annak utasításait pontosan követve elkészítheti az adott tárgyat. Be kell szereznie a hozzávalókat – amik nemritkán különleges és nehezen hozzáférhető anyagok –, majd gondos elkészítés után, feltöltheti a kellő mennyiségű Mana ponttal a Varázstárgyat. Mint az eddigiekből is kiviláglott, a karakter csak olyan tárgyat készíthet, amelynek Mana pont igénye nem haladja meg max. Mp-ját."
+        },
+        {
+            "type": "paragraph",
+            "text": "Az egyes tárgyaknál (bájitaloknál) a Mp rovatban tüntettük fel, hogy mennyi Mana pontba kerül az adott tárgy létrehozása."
+        },
+        {
+            "type": "paragraph",
+            "text": "Gyógyital"
+        },
+        {
+            "type": "paragraph",
+            "text": "Készítheti: pap, boszorkány"
+        },
+        {
+            "type": "paragraph",
+            "text": "Mp: Lásd a leírásban!"
+        },
+        {
+            "type": "paragraph",
+            "text": "Időtartam: Maradandó"
+        },
+        {
+            "type": "paragraph",
+            "text": "Ára: Lásd alább"
+        },
+        {
+            "type": "paragraph",
+            "text": "Bárki, aki iszik az italból, meggyógyul, sebei összeforrnak, visszanyeri életerejét, akárha pap gyógyította volna meg. Az ital minden olyan erősségű betegséget meggyógyít, melyre a készítéséhez felhasznált Mp-ok elegendőek, ám minden kórhoz más és más ital készítendő. A betegség az ital elfogyasztása után 1k6 körön belül, utóhatás nélkül meggyógyul. Az effajta főzetek csak élőlényekre hatnak, hisz csupán bennük lakozik az Élet princípiuma."
+        },
+        {
+            "type": "paragraph",
+            "text": "Az ital elkészítéséhez csupán tiszta vízre, lehetőleg forrásvízre és elegendő hitre van szükség."
+        },
+        {
+            "type": "paragraph",
+            "text": "A Gyógyital több formában, különböző erősséggel készül:"
+        },
+        {
+            "type": "rule",
+            "title": "Rendszerszabály",
+            "text": "1 Fp = 2 Mp\n1 Fp = 4 Mp"
+        },
+        {
+            "type": "paragraph",
+            "text": "Betegségek"
+        },
+        {
+            "type": "table",
+            "headers": [
+                "Betegség",
+                "Mp"
+            ],
+            "rows": [
+                ["Enyhe lefolyású", "5 Mp"],
+                ["Kevéssé súlyos", "10 Mp"],
+                ["Súlyos", "15 Mp"],
+                ["Nagyon súlyos", "20 Mp"],
+                ["Kritikus", "30 Mp"],
+                ["Válságos", "40 Mp"],
+                ["Halállal fenyegető", "50 Mp"],
+                ["Halálos", "60 Mp"],
+                ["Biztosan halálos", "70 Mp"]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A gyógyital hatása természetesen maradandó."
+        }
+    ]
+}

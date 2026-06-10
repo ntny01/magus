@@ -1,0 +1,42 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": false,
+    "section_title": "",
+    "content_blocks": [
+        {
+            "type": "rule",
+            "title": "Rendszerszabály",
+            "headers": [
+                "Intelligencia",
+                "Jellem",
+                "Tapasztalati pont",
+                "Necrografiai osztály"
+            ],
+            "rows": [
+                [
+                    "Magas",
+                    "Káosz, Halál",
+                    "70",
+                    "II. éji rém"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A Kyrek bevonulását követve – noha a történetírás erről előszeretettel hallgat – súlyos harcok kísérték. A hódítók legnagyobb ellenfelei a Crantai sámánkirályok voltak. Seregeiket számtalan rég elhalt, és élőhalottá vált harcos segítette. Az Óbirodalmi Krónikák Crantai Kóborlóknak nevezik ezeket a lényeket, míg a Necrografia besorolása szerint Éji Rémek. A háborúk során nagy részük odaveszett, ám a Kyr Birodalom bukását követő zűrzavaros évezredekben gyakorta folyamodtak segítségükhöz Dawa mágusirályai, és még az utóbbi időkben is felbukkant közülük néhány."
+        },
+        {
+            "type": "paragraph",
+            "text": "Miután a kyrek győzelme bizonyosnak látszott, Cranta uralkodóhercegei megegyeztek a csellel és erővel élőhalottá változtatott harcosok csapatával: segítségükért cserébe a háború végeztével feloldják az átkot, s nyugvást lelhetnek halálukban, visszatérhetnek a reinkarnáció örök körforgásába. A harcok azonban elhúzódhatnak – akár évekig is – figyelmeztették a Kóborlókat, s hogy mindig megtalálhassák egymást, újabb megállapodást kötöttek. A megállapodás pedig úgy szólt, hogy a Crantai Kóborlók csapatai minden évben, a Keselyű jegyében a környék legmagasabb pontján gyülekezzenek és táborozzanak két héten keresztül. Ott várják a boszorkányhercegek küldöttét, aki a megfelelő Formulával bizonyítván, hogy jogosult erre, egy éven át parancsol nekik."
+        },
+        {
+            "type": "paragraph",
+            "text": "Így szól a monda: s az élőholtak maradékai teljesítik is a megállapodást év-év után – mit sem tudva a letűnt évezredekről. Mivel pedig századokon keresztül nem akad senki, aki a megfelelő Formulával engedelmességre bírhatná őket, a két hét lejártával a fény és napvilágot gyűlölvén – sötét erdők, elhagyatott romvárosok kazamatái mélyére húzódnak vissza. Ez idő alatt kábult mozdulatlanságban várakoznak, így gyakran ők szobroknak vélik őket a rájuk bukkanó tudatlan utazók. Ez olykor végzetes hibának bizonyulhat. A dermedt tetemekben közönséges fegyver nem tehet kárt, a megsebzésükhöz csupán mágiával átitatott eszközök nyújtanak segítséget. Az élőholtak nem reagálnak kényszerű pihenőjük alatt még a megtámadásukra sem, ám ha csak egy csepp vér is érinti valamelyiküket, az nyomban (1 kör múltán) magához tér. A betolakodóra pedig halál vár. Miután a Crantai Kóborlók egy ősi világ ősi pszi tudásával rendelkeznek – melyet leginkább a pyarroni módszer mesterfokához hasonlíthatnánk (így is kell játszani) –, nem okoz nehézséget nekik, hogy a társaikat felébreszszék álomtalan álmukból. A mérgekre immunisak, s mágikus fegyverek híján egyedül a tűz segít ellenük. E lényeket csak túltöltéssel lehet megsebezni, az egyszerű, Fp-t okozó sérülések semmilyen hatással nincsenek rájuk. A menekülő idegeneket addig üldözik fáradhatatlanul, míg a végső csapást is megadhatják; sötét dühüknek csupán a napvilág vethet gátat. Ámde a fény nem pusztítja el őket, de legyengülnek tőle (mindenki értékük a felére csökken) és inkább visszahúzódnak menedékükbe. A pihenőidő alatt feléledt Kóborlók nem engedelmeskednek semmiféle kérésnek, parancsnak – legyen az akár az ősi formula is."
+        },
+        {
+            "type": "paragraph",
+            "text": "Rosszabb a helyzet, ha valaki olyanok bukkan rájuk, mikor feledésnek és elindulnak teljesíteni régi ígéretüket. Útközben nem kímélnek semmi élőlényt, s olykor egész karavánokat, falvakat kiirtanak elhaladtukban. Éber várakozásuk közben, az ősi diszciplína szerint szabályos tábort vernek, sosem fáradó őrsemeik vigyázzák, hogy uruk követén kívül senki ne közelíthessen. Bárki – aki elég merész –, eléjük léphet, ám ha nem tudja bizonyítani a parancsoláshoz való jogát az ősi formula szerint, nincs kegyelem. Olykor persze feltűnnek magányos hősök, vagy varázslók, hogy a valamely könyvtárban fellelt iratok szerint végrehajtsák a szertartást, de gyakran csalatkozniuk kell: a fennmaradt átiratok néha pontatlannak, néha egyszerű hamisítványnak bizonyulnak. A valódi formula előírja, hogy az érkezők legalább ketten legyenek – egy harcos és egy varázsló. A harcosnak idéznie kell"
+        }
+    ]
+}

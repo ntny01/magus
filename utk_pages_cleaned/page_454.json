@@ -1,0 +1,119 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": false,
+    "section_title": "",
+    "content_blocks": [
+        {
+            "type": "paragraph",
+            "text": "védnökséget élvező északi sogroniták között kibékíthetetlen gyűlölség uralkodik; egyik fél sem habozik a rendelkezésére álló legálisabb és legkegyetlenebb eszközökkel a másik romlására törni. Ezért Ordan sokkal élénkebb politikai tevékenységet fejt ki északon, mint a többi délvidéki állam; szívélyes kapcsolatokat ápol az Inkvizítorok Szövetségével, s leplezetlenül támogatja a Toron elleni háborúkat. Mindenekelőtt a szakadárnak kikiáltott északi sogroniták üldözését, pusztítását és teljes felszámolását tűzte ki célul, később azonban kiterjesztette gyűlöletét Toron vezérlő istenének, Tharrnak a híveire is. Tevékenysége nem annyira a körmönfont politizálás, sokkal inkább a kegyetlenség határozott, kemény fellépés jellemző. Fanatizmusa kevés pártfogót s még kevesebb barátot szerzett magának az Északi Szövetség tagállamai között."
+        },
+        {
+            "type": "paragraph",
+            "text": "Gazdaságilag a városállam központi fekvésének köszönheti kiterjedt befolyását. Amikor lassan felélénkült a kereskedelem a Sheral-hegység hágóin, az itt lakók rögvest felismerték a hely földrajzi adottságaival járó előnyöket, s igen gyorsan meggazdagodtak az Északés Dél-Ynev közötti kereskedelem nekik jutó sápjából. S ha bárki tiltakozni mer, netán cselekvésre szánta el magát, hamarost a félelmetes hírű tűzvarázslókkal találhatta szemben magát."
+        },
+        {
+            "type": "paragraph",
+            "text": "Az ordani Szigetváros festői látványt nyújt: egyetlen óriási, felduzzasztott tó, melyben számtalan kisebb-nagyobb sziget zöldell. Többségükön a szellős kertekben, a fák és cserjék között mindössze egyetlen házat lát az erre vetődő; a legnagyobbikon a tűzvarázslók rendjének iskolája áll. A szigetek között száraz lábbal nem közlekedhet az utazó – ha egyáltalán beengedték –, kizárólag csónakokkal, néhol apró hidakon."
+        },
+        {
+            "type": "paragraph",
+            "text": "Ordan kormányzása hivatalosan is a tűzvarázsló rend kezében van mind a mai napig."
+        },
+        {
+            "type": "paragraph",
+            "text": "úton végeznek velük. A dzsennek, e leginkább emberszerű lények – praktikus gondolkodású isteneik sugallatára – más utat jártak. Nem az elszigetelődést, hanem az elkeveredést választották, a táj új uraival közös életmódra rendezkedtek be, ősi vérük elkeveredett a jövevényekével: így jött létre a dzsadok különös, két (vagy még több) arcú nemzetsége."
+        },
+        {
+            "type": "paragraph",
+            "text": "A dzsadok és gondolkodás több megértéséhez ehelyütt csupán támpontokat adhatunk. Kétségbevonhatatlan tény, hogy e közönségesnek, sőt, némelykor morál nélkülinek bélyegzett nép felsőbbrendű lények vérvonalát hordozza, ám az sem vitatható, hogy gyakorta a dzsennek legellenszenvesebb tulajdonságai – számító könyörtelenség, erkölcsi vakság – ütköznek ki rajtuk. Nem tagadják el múltjukat, hajlamosak azonban figyelmen kívül hagyni a tényt, hogy a felsőbbrendű dzsennek maradéka ilyen vagy olyan formában, politikai, gazdasági vagy mágikus eszközökkel bizony a mai napig uralkodik felettük."
+        },
+        {
+            "type": "paragraph",
+            "text": "A dzsadok általános megjelenése a Föld közel-keleti népei ének felel meg. Bőrük kreol, hajuk minden esetben, szemük leggyakrabban sötét színű. Közepes magasságúak, igazán szálas termetű csak elvétve akad köztük. A lovak, tevék és öszvérek lelkivilágának egyedülálló ismerői. Szíjas, megpróbáltatások edzette izomzatuk hosszan tartó erőkifejtésre is alkalmassá teszi őket."
+        },
+        {
+            "type": "paragraph",
+            "text": "Dzsad államalakulatok"
+        },
+        {
+            "type": "paragraph",
+            "text": "A kontinenst felező Sheral hegység és a végeláthatatlan Keleti-óceán ravanói öble közt szürküllik Taba el Ibara, e forró homok és kősivatag."
+        },
+        {
+            "type": "paragraph",
+            "text": "A dzsadok által létrehozott államalakulatokat összefoglaló néven emírségekként emlegetik – nyilván csak az egyszerűség kedvéért, hisz sejségek és szálláshelyüket változtató törzsek is szép számmal akadnak köztük. Alább a Taba el Ibara nagyobb civilizációs központjainak/tényezőinek felsorolása következik:"
+        },
+        {
+            "type": "table",
+            "headers": [
+                "Név"
+            ],
+            "rows": [
+                [
+                    "Al Abadana emírség"
+                ],
+                [
+                    "Al Madoba emírség"
+                ],
+                [
+                    "Al Hidema emírség"
+                ],
+                [
+                    "Abu-Baldek emírség"
+                ],
+                [
+                    "Abu-Baldek Shibara emírség"
+                ],
+                [
+                    "El Hamed emírség"
+                ],
+                [
+                    "El Sobira emírség"
+                ],
+                [
+                    "Al Mugaffe sejség"
+                ],
+                [
+                    "Al Avdal sejség"
+                ],
+                [
+                    "El Quasarma sejség"
+                ],
+                [
+                    "Fayuma törzs"
+                ],
+                [
+                    "Bayadi törzs"
+                ],
+                [
+                    "Hászra törzs"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "Az Ynev mostanság benépesítő fajok zöme már csak ebben a formában ismeri, pedig valaha – igaz, sok ezredéve már ennek – éppoly zöldellő volt e táj, mint a tőle északra és délre eső területek. Roxund Homoki história című munkája elbeszéli a többit, foglaljuk hát össze most ennek alapján, amit a rég letűnt, gyászos évezredek történetéről tudunk!"
+        },
+        {
+            "type": "paragraph",
+            "text": "Az első helyen szereplő Abadana emírséggel kapcsolatban megjegyzésre érdemes, hogy a gondosan őrzött látszat ellenére voltaképp dzsennek kormányozzák – ennek köszönhető, hogy talán a legbékésebb hely mind közül. Mert az átlagosnak mondható dzsadok hétköznapjainak bizony szerves részét képezik a rablóés bosszúhadjáratok: a gazdasági vérkeringés élénkítésének, a termelőeszközök és értékek megosztásának elfogadott módozata ez."
+        },
+        {
+            "type": "paragraph",
+            "text": "Három ősi nép élt itt az idők hajnalán: az amundok, az elfek és a dzsennek hatalmas nemzetsége. A viszálykodás szinte törvényszerűen mélyült el köztük. Más-más isteneket imádtak, nagyon is különböző értékrendet vallottak a magukénak, egy közös vonása azonban mindhárom erkölcsöknek akadt: győzelmet követelt, vagy pusztulást."
+        },
+        {
+            "type": "paragraph",
+            "text": "A sivatag végtelenjében elszórtan fellelhető oázis-városokban számottevő növénytermesztés nem, csakis állattenyésztés mutatkozik. A dzsad szállások törvényei semmiféle – állati vagy növényi eredetű – táplálék, ital fogyasztását nem tiltják, a mértéktelenséget azonban éppúgy elutasítják, mint a monogámiát. A többnejűség általános, de találni példát a többférjűségre is. (A férfihárem nem jellemző.) A dzsadok született kupecek és kereskedők, leleményes és kitartó harcosok, szívós, igénytelen utazók, elmélyült szónokok, szilaj szeretők, minden hájjal megkent bankárok – s persze hétpróbás gonosztevők. Dzsad volt (némelyek szerint még ma"
+        },
+        {
+            "type": "paragraph",
+            "text": "A századokon át dúló, mágikus energiákat elszabadító háborúságok során, de biztosan végigjárták pusztasággá a vidéket, s szörnyűségesen megritkították mindhárom ősi nép sorait. Utóbb maga a könyörtelen végzet teremtett békét Taba el Ibara ége alatt: a felek egyike sem engedhetett meg magának újabb áldozatokat. Nyugalmat óhajtottak meggyengült isteneik is, hisz híveik maradékát elvesztve hatalmuk semmivé fosztott volna Ynev Elsődleges Anyagi Síkján."
+        },
+        {
+            "type": "paragraph",
+            "text": "Az amundok – Themes, Refis, Nesire és Amhe-Ramun gyermekei – titkos városaikba, labirintus-templomaikba húzódtak vissza, s azóta is kerülik a kapcsolatot a feltörekvő emberi nemmel. Az elfek szánalmasan elkorcsosultak: homoklakó életmódhoz alkalmazkodott törzseik még mostanság is ellenségesnek tekintenek szinte minden idemérszkedőt, s rövid"
+        }
+    ]
+}

@@ -1,0 +1,249 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": false,
+    "section_title": "",
+    "content_blocks": [
+        {
+            "type": "rule",
+            "title": "Öröklődött betegségek",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "Ide rengeteg betegség tartozhat, mint például a Vérzékenység vagy a Színvakság is. Ezeket a karaktereknek szedhetik össze játék közben, hacsak életük kezdetétől fogva nem lakoznak bennük. Mivel nagy valószínűséggel süket emberből nem lesz sikeres kalandozó, az öröklődött betegségekben szenvedők egyáltalán nem lesznek kalandozók. Ez annyit jelent, hogy a Játékos karakterek csak a Játékos kifejezett kérésére rendelkeznek ilyen vagy hasonló testi fogyatékossággal."
+        },
+        {
+            "type": "rule",
+            "title": "Környezeti hatásra kialakult betegségek",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "Ehhez a csoporthoz soroljuk a stressz által kiváltott lelki elváltozásokat, de ide tartozik az alkohol hatására bekövetkező Állóképesség és Egészség vesztés vagy egyéb hasonló zavar is."
+        },
+        {
+            "type": "rule",
+            "title": "Mágia hatására kialakult betegségek",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A Boszorkánymesteri mágia egyes varázslatai és bizonyos különleges lények támadásai okozhatnak így betegségeket."
+        },
+        {
+            "type": "rule",
+            "title": "A lappangási idő",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "Minden betegség esetében fontos meghatározni a lappangási időt. Ez megmutatja, hogy mennyi idő telik el a fertőzés pillanatától a betegség első tüneteinek észleléséig. Lappangási idő szerint besorolva a következő kategóriák léteznek:"
+        },
+        {
+            "type": "rule",
+            "title": "Azonnali hatásúak",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "Ezek nagyon ritka betegségek, s legtöbbször mágia használata okozza őket. A Boszorkánymesteri varázslatok vagy szörnyek támadásai lehetnek ilyenek. Esetükben a betegség a fertőzés pillanatát követően azonnal hat a szervezetre."
+        },
+        {
+            "type": "rule",
+            "title": "Gyors lefolyásúak",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "Ezek a legrövidebb lappangási idővel járó kórok: a fertőzéstől számított 4+1k10 percen belül látható vagy egyéb módon észlelhető tüneteket okoznak."
+        },
+        {
+            "type": "rule",
+            "title": "Gyors lefolyásúak",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A kór lappangási ideje nem túl hosszú: 4+1k10 órán belül kifejtik hatásukat."
+        },
+        {
+            "type": "rule",
+            "title": "Lassú lefolyásúak",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A fertőzés után akár napok is eltelhetnek tünetek nélkül, s csak utána kezd a betegség kifejlődni a szervezetben. Ebben az esetben a lappangási idő 4+1k10 nap."
+        },
+        {
+            "type": "rule",
+            "title": "Nagyon lassú lefolyásúak",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "Ezek ritka betegségek; a fertőzés okát általában már el is felejti a karakter, mire a tünetek kiütköznek. A lappangási idő 4+1k10 hét."
+        },
+        {
+            "type": "rule",
+            "title": "Hosszan lappangók",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "Ebbe a kategóriába csak azok a betegségek tartoznak, melyeknek oka örökletes. A tünetek megjelenésének pillanatáig évek telhetnek el, s a hatás kiteljesedése csak eztán következik be. A lappangási idő 4+1k10 év, ami annyit tesz, hogy egyesek meg sem érik a hatás kifejlődését. Ezek közé a betegségek közé az allergiák, a daganatos elváltozások, a keringési zavarok tartozhatnak, jelentőségük a szerepjátékban általában elhanyagolható."
+        },
+        {
+            "type": "rule",
+            "title": "A betegség súlyossága",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A következő fontos lépés a betegség súlyosságának meghatározása. A KM minden betegség leírásakor az alábbi táblázat alapján megállapít egy minimális és maximális súlyosságot. Ez annyit tesz, hogy az adott betegség soha nem lehet a minimálisnál enyhébb és a maximálisnál súlyosabb lefolyású. Hogy a két határérték között valójában milyen súlyos is lesz, az áldozattól függ – pontosabban attól, hogy az illető mennyivel vétette el a fertőzés elleni Egészségpróbát. A vetés mértéke alapján, az alábbi táblázat segítségével könnyen meghatározhatjuk a betegség súlyosságát."
+        },
+        {
+            "type": "rule",
+            "title": "Betegség hatása",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A módosító az érintett Tulajdonságok gyengülését tükrözi, ami természetesen együtt jár a harcértékek és a képzettségek hatásfokának csökkenésével is; az Fp módosító elárulja, mennyivel csökkennek a beteg Fp-i a fertőzés miatt."
+        },
+        {
+            "type": "paragraph",
+            "text": "A felsorolt tényezőkből persze több is hathat egyszerre, hiszen a beteg egyrészt Fp-ket veszíthet a fájdalomtól, másrészt Tulajdonságai is csökkenhetnek a betegség természete miatt."
+        },
+        {
+            "type": "paragraph",
+            "text": "A legtöbb betegségnek van maximális és minimális súlyossága, amit a KM-nek kell meghatároznia. Ha valaki kevesebbel veti el a fertőzés elleni Egészségpróbát, mint amennyi a betegség minimális súlyossága, akkor a minimális súlyosság érvényesül. Ugyanez igaz a maximális súlyosságra is: hiába veti el az áldozat többel a próbát, a betegség legfeljebb a maximális súlyosságnak megfelelő mértékben alakul ki."
+        },
+        {
+            "type": "table",
+            "headers": [
+                "Vétés",
+                "Hatás",
+                "Módosító",
+                "Fp vesztés"
+            ],
+            "rows": [
+                [
+                    "1",
+                    "Enyhe lefolyású",
+                    "1-2",
+                    "1k3/nap"
+                ],
+                [
+                    "2",
+                    "Kevéssé súlyos",
+                    "2-4",
+                    "1k6/nap"
+                ],
+                [
+                    "3",
+                    "Súlyos",
+                    "4-6",
+                    "1k10/nap"
+                ],
+                [
+                    "4",
+                    "Nagyon súlyos",
+                    "6-8",
+                    "2k10/nap"
+                ],
+                [
+                    "5",
+                    "Kritikus",
+                    "8-10",
+                    "1k3/óra"
+                ],
+                [
+                    "6",
+                    "Válságos",
+                    "10-12",
+                    "1k6/óra"
+                ],
+                [
+                    "7",
+                    "Halállal fenyegető",
+                    "12-13",
+                    "1k10/óra"
+                ],
+                [
+                    "8",
+                    "Halálos",
+                    "13-14",
+                    "2k10/óra"
+                ],
+                [
+                    "9-10",
+                    "Biztosan halálos",
+                    "15",
+                    "1k3/perc"
+                ]
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Javulás és romlás",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "Fontos még azt meghatározni, miként javulhat, illetve romolhat a beteg állapota, miután megkapott egy betegséget. Célszerű minden betegségnél leírni azt az időtartamot, melynek leteltével a beteg újból dobhat Egészségpróbát, továbbra is a betegség szintjének megfelelő módosítóval. (Persze ne feledjük, hogy a helyesen alkalmazott gyógymód plusz módosítókat adhat!)"
+        },
+        {
+            "type": "paragraph",
+            "text": "Ha az új próba sikeres, a beteg állapota egy súlyossági kategóriát javul; ha sikertelen, egyet romlik. Ha tehát egy betegség gyógyulási ideje 1 nap, a hatás kezdete után 1 nappal az áldozat Egészségpróbát dob. Ha ez sikeres, állapota egy kategóriát javul, s új dobásra csak 1 nap múlva lesz szükség. Ha viszont sikertelen, az állapot egy kategóriát romlik. Ez így megy vagy a gyógyulásig, vagy a betegség kiteljesedéséig."
+        },
+        {
+            "type": "paragraph",
+            "text": "Felépülésekor az áldozatnak minden egyes súlyossági fokon végig kell haladnia, egészen a teljes gyógyulásig. Javuláskor tehát a betegség minimális súlyossága nem jelent határértéket. Nem így romlás esetén: az áldozat állapota soha nem romolhat tovább a betegség maximális súlyosságánál."
+        },
+        {
+            "type": "paragraph",
+            "text": "Gyógyszerek és mágikus gyógymódok segítségével, pihenéssel és hozzáértő ellátással a gyógyulás felgyorsítható, de akár azonnali is lehet. Ez is módosíthatja a megismételt Egészségpróbák eredményét. Hogy miként, az betegségenként és gyógymódonként más és más – természetesen itt is a KM szava a döntő. Ő alkotja meg a betegséget, ő határozza meg a gyógyulás feltételeit is!"
+        }
+    ]
+}

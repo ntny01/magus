@@ -1,0 +1,114 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": true,
+    "section_title": "Serafizmus",
+    "content_blocks": [
+        {
+            "type": "paragraph",
+            "text": "A serafizmus ugyan nem szerves része a Mozaikmágiának, mégis, mivel legmagasabb szintű művelői az elvetemültebb, vagy csak éppen nagyobb hatalomvággyal megáldott vagy megvert varázslók közül kerülnek ki, ezért célszerűen ezen sorokon tárgyaljuk."
+        },
+        {
+            "type": "paragraph",
+            "text": "A serafista paktum egy egyezség, melyet egy halandó, lélekkel bíró lény és egy, a Külsővagy Köztes Síkokról származó teremtmény köt. Az Alkut bármelyik fél kezdeményezheti, bár ehhez valamiféle kapcsolatfelvétel szükségeltetik. Az Alku lényege, hogy a felsőbb lény valamely szolgálatáért, lélekenergiáért, életerőért cserébe mágikus hatalmat juttat az alkuban résztvevő partnerének. A serafizmus a paktumban résztvevő felek helyzete szerint kétféle egységet ismer: az Alkut és a Behódolást."
+        },
+        {
+            "type": "paragraph",
+            "text": "IV. A démonok nem törekednek a fizikai megjelenésre Yneven, ha akad megfelelő hordozó, ki befogadja lényük egy részét, mivel így nem teszik ki magukat a végső pusztulás veszélyének."
+        },
+        {
+            "type": "paragraph",
+            "text": "halandók felett. Egy egyházra, mely biztosítja számukra a rendszeres lélekenergiát."
+        },
+        {
+            "type": "section",
+            "title": "Alku",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "Ebben az esetben a serafista (a halandó fél) mondhatni egyenrangú félként vesz részt a paktumban. A serafistának ahhoz, hogy megidézze a démon hatalmát, átlényegülnie szükséges. Ez annyit tesz, hogy a serafista lelkébe fogadja a démont, illetve annak esszenciáját, s ezen a kapcsolaton keresztül idézi meg a lény erejét."
+        },
+        {
+            "type": "paragraph",
+            "text": "Ennek segítségével varázsolhat a démon által juttatott Mana pontokból, vagy a démon valamely tulajdonságát kaparinthatja meg, illetve, ami talán a legfontosabb a serafista számára, a démon Yneven sosem látott mágikus formulákat, varázslatokat is taníthat neki."
+        },
+        {
+            "type": "paragraph",
+            "text": "Az átlényegülés folyamata irányzatonként más és más. Egyes serafisták egyszerűen a Tudatnyitás nevezetű Pszi diszciplínával megnyitják egy pillanatra az elméjüket védő falakat; egyes sámánok dobot, füstölőket és transzot használnak, míg más rendek (mint például az ordani tűzvarázslók) egyetlen szertartással örökre megnyitják lelküket, hogy aztán ne legyen többé szükség a falak feloldására. Az átlényegülést mindig a megidézni kívánt varázslat végrehajtása előtt kell megejteni, s a varázslat varázslási ideje is ennek megfelelően tolódik ki."
+        },
+        {
+            "type": "paragraph",
+            "text": "A kapcsolat az átlényegülés alatt kétirányú; mialatt a démon ereje elárasztja a halandót, addig a démon emlékezet, érzéseket szipolyoz el a serafistától. Lassan kezdi annak lelkét feloldani, elvenni jussát. A varázslás befejeztével a serafistának sikeres Demonológia Képzettségpróbát kell tennie, hogy szétválassza önnön valóját a túlvilági teremtmény esszenciájától. Ha ez sikeres, akkor a csatorna lezárul, s a serafistának csak az erők áthaladásáért, a testén keresztül áramló nyers mágikus erők okozta rombolásért kell bűnhődnie."
+        },
+        {
+            "type": "rule",
+            "title": "Képzettségpróba sikertelensége",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "Azonban, ha a Képzettségpróba sikertelen, akkor a halandó lelke elkezd a másik létezőben feloldódni: a serafista teste a serafira (túlvilági lény) jellemző testi jegyek jelennek meg, Asztrál Tulajdonsága pedig maradandóan csökken egy ponttal. A próbát a serafista körönként megismételheti, azonban újabb vetés esetén tovább csökken Asztrálja, s a próbát addig kell dobni, míg a serafista lelke el nem szakad a démontól, vagy Asztrálja elfogytával el nem pusztul. A sikertelen próba esetén a serafista ráadásul annyi max. Fp-t is veszít, amennyi Mp-ot a varázslat létrehozásához a serafájától kapott. Itt is a fent említett megkötések a mérvadóak az Fp-k tekintetében."
+        },
+        {
+            "type": "rule",
+            "title": "Átlagos Mp és Fp veszteség",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "Játétechnikailag, ha sikeres a Képzettségpróba, akkor csak a varázslatba beleölt Mp-ok számának felével megegyező mennyiségű Fp-t veszít el a varázstudó. Ez leginkább vérük kiapadásában, a pórusaikon kiszivárgó nedvekként jelentkezik. Ez a veszteség a max. Fp-ből vonódik le, s fokozatosan tér vissza: annyi idő alatt, amennyi a Mágikus kifáradás táblázatban feltüntetve szerepel (a 178. oldalon). Természetesen a Fájdalompontrés pontok addig nem térnek vissza, míg a maximális Fp-k száma nem emelkedik."
+        },
+        {
+            "type": "rule",
+            "title": "Mp és Fp veszteség",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "Az átlényegüléssel szerzett Mp-ok nem számítanak bele a mágikus kifáradásnál számítandó Mana pontokba, és ebben a formában a serafista akár saját mája. Mp-jénél is többé hatalmat használhat fel egyetlen varázslatra, de azzal számolnia kell, hogy Fp-i elfogytával Ép-it is elveszítheti."
+        },
+        {
+            "type": "paragraph",
+            "text": "Az Alkuból következő mágikus módozat, mellyel a serafista hatalmat nyerhet, egyfajta időszakos fizikai átalakulás, mely annál szembetűnőbb, minél komolyabb erőket kényszerít magába az alkalmazó. Ezen erők mértéke a feláldozott életerőtől függ: minden Fp-ért cserébe egy HM-et, vagy 5 Fp-ként 1 Tulajdonságpontot nyerhet a beavatott. Természetesen csupán rövid időre: alkalmanként 10 percre, s az Időtartam lejárta után a fent taglaltakhoz hasonlóan kell szabadulnia a démoni erőktől, különben az ott leírt büntetések sújtják."
+        },
+        {
+            "type": "section",
+            "title": "Behódolás",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "A hordozó, ha behódol a démonnak, akkor mágikus hatalmat, nyers manát nyerhet kapcsolatukból, illetve, ami talán a legfontosabb a serafista számára, a démon új mágikus fogásokat, varázslatokat is taníthat alattvalójának – ez szükséges is, ha a serafista korábban semmilyen mágiaformát nem űzött (ilyenkor gyakran a felsőbb lényre jellemző szférából a Kis Árkánumot, vagy annak egyes fohászait juttatja a szeráf serafistájának)."
+        },
+        {
+            "type": "paragraph",
+            "text": "A túlvilági lény általában a megfelelő áldozatok megtörténte után jutalmazza hatalommal serafistáját (attól függően, hogy saját vagy mások életeréjét kínálja fel). Az így elveszített Ép-k (a Fájdalompontrés pontokkal ellentétben) soha nem térnek vissza! A serafista hatalmat nyerhet úgy is, hogy minél többet fogad magába a szeráf lényegéből, ezzel kockára téve tudata eltorzulását. Ez egyik szellemi Tulajdonságai csökkenésében nyilvánul meg (Intelligencia, Akaraterő vagy Asztrál). A démoni lényeg lassan letisztul lelkéből, így Tulajdonságai fokozatosan visszatérnek."
+        },
+        {
+            "type": "table",
+            "headers": [
+                "Saját életerő",
+                "Mástól származó áldozat",
+                "Jutalom"
+            ],
+            "rows": [
+                [
+                    "1 max. Ép",
+                    "Lélekáldozat (egy gondolkodó lény rituális feláldozása)",
+                    "30 Mp"
+                ],
+                [
+                    "1 pont Intelligencia, vagy Akaraterő, vagy Asztrál, az így elvesztett pontokból naponta 1 tér vissza.",
+                    "",
+                    "10 Mp"
+                ]
+            ]
+        }
+    ]
+}

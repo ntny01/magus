@@ -1,0 +1,190 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": true,
+    "section_title": "Taktika (II – Érzékelés)",
+    "content_blocks": [
+        {
+            "type": "rule",
+            "text": "A gyakorlott pusztító hatékonysága nő, a túlélés küszöbe 10-zel csökken, csapásai egyre halálosabbá válnak. (Ez a módosító összeadódik a Fegyverhasználat képzettség 5. fokának túlélésküszöböt csökkentő képességével, ha a karakter az utóbbival is bír).",
+            "title": "Pusztító képzettség - 2. fok",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "A hivatásos pusztító a korábbi előnyök mellett, ha túlélést ér el, már komolyabb, 1k3 Ép módosítót adhat a sebzéshez.",
+            "title": "Pusztító képzettség - 3. fok",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "A karakter a csatamezők réme, ellenfelei rettegik a nevét, túlélésküszöbe újabb 10 ponttal 30-ra változik, ez összeadódik esetleges más bónuszokkal.",
+            "title": "Pusztító képzettség - 4. fok",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "A legendás hírű pusztító megjelenése is félelemmel tölti el ellenfeleit, hírhedt csapásainak szinte mindegyike öl, a korábbi előnyök mellett túlélés esetén újabb +1k6 Ép extra sebzést is okoz. (Azaz a 2. fokon kapott Sebzés bónuszon felül még + 1k6).",
+            "title": "Pusztító képzettség - 5. fok",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "továbbra is csak maximum egy vagy kettő kis-egységes alakzat.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "A reguláris hadseregek elitcsapatai általában 3. fokon képzett harcosokból állnak; a fejlett hadszervezetükről híres országokban, például Abasziszban – minden katona ilyen szintű kiképzésben részesül.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "A harcmezők vagy bármiféle összecsapás túlélésének záloga, ha társaiddal együtt, egymást segítve harcoltok. Ez a felismerés késztette Ynev fegyverforgatóit, hogy alakzatok formálásával nemesítsék az egyéni párviadalok zűrzavarából nagyobb egységek összecsapásává a többszereplős kézitusaát.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "Aki járatos ebben a képzettségben beavatottságától függően ismeri Ynev majd minden harci alakzatát, egy-két pillanat alatt képes alkalmazkodni és részt venni az egység harcában. Az ebben járatlan karakterek nem képesek egységként hadakozni, az összecsapásokat csakis egyéni párviadalok soraként képzelik el, s legtöbbször alulmaradnak az alakzatba tömörült harcosokkal szemben.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "Abban az esetben, ha a harcos ismeri az ellene alkalmazott harci taktikát, akkor a taktika nyújtotta módosítóknak csak a fele érvényesül ellene.",
+            "title": "Taktika ismerete ellenséges alakzat ellen",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "Ynev harci formációi tájanként változnak, de több közös vonásuk akad.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "Az alakzat csak Taktikában megfelelően képzett fegyveresekből állhat, különben a képzetlen személyek megzavarják, és lehetetlenné teszik az alakzat működését. Az alakzatot zavaró idegenek jelenlétének és akadályozó tevékenységük meglétének megítélése a KM jogköre.",
+            "title": "Alakzatok szabályai - 1. (Képzett harcosok)",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "Az alakzatban való harc bizonyos helyzeti előnyökkel, illetve KÉ, TÉ, VÉ módosítókkal járhat, ezeket lásd az alakzatok egyéni leírásánál.",
+            "title": "Alakzatok szabályai - 2. (Módosítók)",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "Az alakzatoknak van egy minimális, és legtöbbször egy maximális létszáma, mely alatt, illetve felett a formáció képtelen ellátni feladatát, és minden általa adott módosító, bónusz elvész.",
+            "title": "Alakzatok szabályai - 3. (Létszám)",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "A képzetlen karakter ugyan utánozhatja alakzatba formálódott társait, de a képzettség adta semmilyen előnyt nem élvez.",
+            "title": "Képzetlen karakter alakzatban",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "A képzettség ezen fokán a karakter már képes viszonylag gyorsan alkalmazkodni – sikeres Érzékelésproba esetén – bármely harci alakzathoz, s részt venni azok működésében anélkül, hogy akadályozná annak működését. Igaz, ekkor sem kapja meg az alakzatok nyújtotta előnyöket.",
+            "title": "Taktika képzettség - 4. fok",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "A karakter már egy-két kör alatt képes alkalmazkodni Ynev bármely harci alakzatához – sikeres Érzékelésproba esetén. Ekkor nem csak, hogy nem akadályozza az alakzat működését, de hatásos részvételével részesül a taktika nyújtotta előnyökből.",
+            "title": "Taktika képzettség - 5. fok",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "A képzettség 1. fokú ismerete összesen egy harci alakzat ismeretét biztosítja a karakternek a legegyszerűbbek és a legalapvetőbbek közül.",
+            "title": "Taktika képzettség - 1. fok",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "Ezen a fokon a karakterek már két elterjedtebb harci alakzat ismernek; általában ez egy nagyobb, két, vagy három ember alkotta kisegységes alakzatot jelent.",
+            "title": "Taktika képzettség - 2. fok",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "A képzettség 3. foka minőségi változást hoz: a karakter immáron öt harci alakzat ismer. Ezekből általában",
+            "title": "Taktika képzettség - 3. fok",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "",
+            "title": "Shadoni páros",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "Közeli harcban a szembenálló csapatok teljes elkeveredése után használják. A két harcos egymásnak veti hátát, így védve társát a hátulról jövő támadásoktól. Az ilyen formációban küzdőket nem lehet hátulról (és félhátulról) támadni, VÉ-jük pedig – az állandó mozgástól és forgástól – 5-tel nő. Shadonban a katonák és zsoldosok alapvető kiképzéséhez tartozik, de Ynev több táján is ismerik és használják.",
+            "title": "Shadoni páros leírása és szabályai",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "",
+            "title": "Abasziszi hármas",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "Hasonló a shadoni páros küzdőmódszerhez, célja a többiek védelme. Ennek végrehajtásához – értelemszerűen – három harcos szükségeltetik, akik egymásnak háttal állva szűk kört alkotnak. Fő előnye ugyanaz, mint a shadoni párosnak, azaz, hogy az így harcolókat nem lehet hátulról vagy félhátulról támadni. Hátránya, hogy több embert igényel, előnye viszont, hogy a harcosok jobban odafigyelhetnek egymásra, hiszen így csak a teljes kör egyharmadát kell védeniük, nem pedig a felét. Ennek köszönhető a magasabb VÉ módosító: +10.",
+            "title": "Abasziszi hármas leírása és szabályai",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "",
+            "title": "Kráni pusztító ék",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "Kívülállók számára ritkán elsajátítható technika, a kráni Pusztító alakulatok alkalmazzák. A módszer a hagyományos, hadászati jellegű alakzatok közül talán a leghatásosabb, legkeményebb. A küzdők ék alakban támadnak, folyamatosan törnek előre. Az ék csúcsán a legkeményebb támadó harcos áll, a két oldalon a védők. A támadónak szinte felesleges ügyelnie a védelmére, a két szárnyon állók felelősek ezért. A két védő is támadhat, de Támadó értékük alacsonyabb, a fokozott védelemre való összpontosítás miatt. Az alakzatot áttörni meglehetősen nehéz; lassan, módszeresen haladva minden útjába kerülőt elpusztít, minden ellenállást felmorzsol. Gyakran indítják meg őket az ellenséges fővezér irányába. Ha a csúcson álló netán fárad, vagy mégis komolyabb sebet kapna, az egyik védő állhat támadó pozícióba, átvéve az élharcos szerepét.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "Az alakzat módosítói: hátulról és félhátulról nem intézhető támadás az ékben állók közül az ék csúcsán állóra. A támadó pozícióban álló TÉ-je 25-tel nő, a védőké fejénként 15-tel csökken. A csúcson álló VÉ-je a saját VÉ-jének fele plusz a két védő összes VÉ-jének harmada; a szárnyakon állóké nem változik. Leginkább három emberrel alkalmazzák, de lehet öt-, sőt hét fős éket is alkotni. Ekkor is csak az elől haladó három harcos harcértékei változnak, viszont a többi is harcol és utánpótlásként bármikor beállhatnak. Kránon kívül kevés helyen oktatják – kizárólag csakis nagyobb birodalmak (Shadon, Gorvik, Pyarron, Toron és Abaszisz) hadseregeiben.",
+            "title": "Kráni pusztító ék módosítói és szabályai",
+            "headers": [],
+            "rows": []
+        }
+    ]
+}

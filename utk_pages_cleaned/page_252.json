@@ -1,0 +1,96 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": true,
+    "section_title": "Egyéb bárdmágiák",
+    "content_blocks": [
+        {
+            "type": "paragraph",
+            "text": "A bárd nem a ruhára varázsol, hanem az arról visszaverődő fényre. A tárgy nem lehet nagyobb 1 köblábnál szintenként. A varázslat csak egy tárgyra mondható rá. A bárd saját fegyverére is alkalmazhatja a varázslatot, ha a javító vagy lőfegyver esetén a célpont hiába próbál kitérni a lövedék elől, nem kapja meg a kitérésből származó VÉ módosítót (ez alól kivételt képez a Kitérés diszciplína, ami továbbá is tökéletesen alkalmazható). Közelharci fegyver esetén a láthatatlan fegyver +10 Támadó értéket biztosít forgatója számára."
+        },
+        {
+            "type": "rule",
+            "title": "Tárgy átváltoztatás",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "Mana pont: 4 Varázslás ideje: 1 szegmens Hatótáv: Érintés Időtartam: 1 óra/szint"
+        },
+        {
+            "type": "paragraph",
+            "text": "A varázslatot egy létező tárgyra kell rámondani, mire annak anyagi minősége, színe, kidolgozottsága látszatra átalakul. A tárgy mibenléte az illúzióval nem változtatható meg, azaz egy asztal mindenképpen asztal marad, eredeti formáját megtartva. Anyaga viszont megváltoztatható, a látvány erejéig. Az eddigi faasztal látszatra kővé vagy akár arannyá is formálható. A tárgy maximális térfogata szintenként 1 ynevi köbláb lehet. Az illúzió viszonylag tartós, mert szorosan kötődik a tárgy anyagi valóságához. Az átalakulás természetesen csak a látványt érinti, az anyagi minőséget nem, így az érintés könnyen leleplezheti a csalást."
+        },
+        {
+            "type": "rule",
+            "title": "Távoli torzítás",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "Mana pont: 9 Varázslás ideje: 1 kör Hatótáv: Lásd a leírást! Időtartam: 1 perc/szint"
+        },
+        {
+            "type": "paragraph",
+            "text": "Ezzel az illúzióval a bárd a célpont számára minden távolságot nagyobbnak vagy kisebbnek láttathat, mint amekkora az valójában. Ezt a varázslatot saját magán is alkalmazhatja, ekkor a távcsövet helyettesíti, ám máson egészen más szerepe is lehet. Folyosók hossza, utak távolsága torzítható el teljesen a varázslattal. A maximális kezelhető távolság 10 ynevi mérföld, s a legnagyobb torzítási arány 1 az 50-hez lehet. Azaz 50 ynevi lábnyi távolság egy ynevi lábnak vagy 2500 ynevi lábnak tűnhet. Ez azonban a célzást nem könnyíti meg jelentősen, mivel a torz távolság lehetetlenné teszi lövedék ívének kiszámítását."
+        },
+        {
+            "type": "rule",
+            "title": "Vakon látás",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "Mana pont: 17 Varázslás ideje: 1 kör Hatótáv: Önmagam Időtartam: 10 perc/szint"
+        },
+        {
+            "type": "paragraph",
+            "text": "A bárd ezen varázslata igen-igen összetett, s rendkívül jól alkalmazhatóbb esetben is. Lehetővé teszi, hogy a bárd, szeme világa nélkül is (pl. vakon, vagy bekötött szemmel) láthassa környezetét. E tudomány a fény világának tökéletes ismeretén alapszik, s kiválóan alkalmazható együtt a Láthatatlanság varázslattal."
+        },
+        {
+            "type": "rule",
+            "title": "Vakság okozás",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "Mana pont: 8 Varázslás ideje: 1 szegmens Hatótáv: 1 kör/szint Időtartam: 10 ynevi láb"
+        },
+        {
+            "type": "rule",
+            "title": "Vakság okozás hatásai",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A mágia lényege, hogy az áldozat szeme előtt egy hajszálnyi minden fény kiolt – akár egy hártyavékony sötétség-varázs. Az áldozat csak a varázslat hatóidejének lejártával lesz képes újra látni mindaddig a Harc vakon negatív módosítóit kénytelen elszenvedni: KÉ: -20, TÉ: -60, VÉ: -60, CÉ: -150"
+        },
+        {
+            "type": "flavor_text",
+            "text": "„...— Tier Nan Gorduin – sziszegte a nem emberi száj. – Gorduin a dicső, a rettenthetetlen hős, aki Niare istenének segedelmében reménykedik. Arra készülsz tán, hogy dallal ébreszd, és ellenem uszítsd a szunnyadó sárkányt? Azt reméled, képes lesz különbséget tenni köztünk, és haragja tüzében csak engem, az űzött vadat emészt el? – Naizerd felkacagott, a csonka falak tetejéről kövek hullottak, a gerinc fölé hajló csúcsok magasában némán várakozott a hó és a jég. – Hogyan fogod meggyőzni az ártatlanságodról? Hogy akarod átvészelni ezt a hőstettet, nagyeszű kalandozó? – Keveset tudsz rólam – sóhajtott a bárd. – Keveset ahhoz képest, hogy valaha az értesüléseiből éltél, és hogy mint mondod, számítottál rám. – A közelgő démonokra hunyorított, aztán egy intéssel szabadjára engedte hatalmát: az égzengés, melyet az idei úton, egy tavaszi vihar idején raktározott el, iszonyú robajjal söpört végig a tájon, és egyetlen roppanással indította meg a havat, a köveket sodró, sziklákat morzsoló halálát, mely kétfelől zúdult a völgyre, és fehér áradatként, jégszilánk-taraját sok száz láb magasra emelve vágtatott a gerinc felé. – Egyetlen istennel sincs számadásom, ami pedig a hőstettemet illeti, nem akarom és nem is fogom átvészelni. Viszlát a pokolban, Naizerd! A démonok felüvöltöttek, a romtemplom köveit megreszkettető dübörgésre: az erővonalak összekuszálódtak, a valóság rései hét kör irtóztató nyomatékával zárultak össze eleven zsákmányukon. A vergődő homálylény vérének egy töredéke a mana csatornáin az áruló testébe tolult, és sötét áradatként tört elő sikolyra nyíló száján, írisz nélküli szemein, nafta-tömlőként dagadozó torkán. A szem fekete könnyek záporában fejezte be ynevi pályafutását: Gorduin, mielőtt a másik, a fehér áradat a falakig ért, még hallotta sikolyát... aztán gyémántosan szikrázó hullám tornyosult fölé, és ahogy a démonokkal, a kövekkel és a gerinc egy részével együtt őt is elsodorta, arra gondolt, hogy ez a halál a leghidegebb – és remélhetőleg a legutolsó – azok közé, melyek jelhordozóként, a világnak ebben a gyászos korában érik."
+        },
+        {
+            "type": "paragraph",
+            "text": "Ebbe a csoportba azok a varázslatok kerültek, melyek alapvetően nem tartoztak a bárdok eszköztárába – ki tudja, hogy e csavaros eszű, gyakorta görbe utakon járó fickók miképpen jutottak birtokukba."
+        },
+        {
+            "type": "flavor_text",
+            "text": "Wayne Chapman – Keleti szél"
+        }
+    ]
+}

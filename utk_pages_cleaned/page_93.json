@@ -1,0 +1,91 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": false,
+    "section_title": "",
+    "content_blocks": [
+        {
+            "type": "paragraph",
+            "text": "s a ritka rituális ünnepségek megtartásán kívül fő feladatuknak Tharr és szolgái elleni küzdelmüket tekintik. Állandó összecsapások, véres vallásháborúk jellemzik viszonyukat.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "A papság szigorú – már-már katonai – rangsor szerint épül fel. Legalul helyezkednek el a szervezetben a Tűz Szolgálói, belőlük van a legtöbb. Utánuk következnek a Tűz Harcosai, akik már papok, de leginkább fegyverrel támogatják Sogron uralmát. A következő lépcsőfokon a Tűz Táplálói állnak, akik a papi mágia minden misztériumának beavatottjai, Sogron kultuszának igazi oszlopai. Minden olyan vidéken, ahol sogroniták élnek, találhatóak szentélyek, ahol a Tűz Szolgálói végzik a munkát, a Tűz Harcosai látják el a védelem feladatát, és akad legalább egy a Tűz Táplálói közül, aki papi minőségben tevékenykedik. A Tűz Letéteményese (5. Tsz-felett) és száz Tűz Megtisztítója (10. Tsz.-től) élhet. A vallás központja Ordan, itt székelnek a legmagasabb rangú sogroniták is.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "Noha Sogron vallása meglehetősen harcias és kemény – a hazugságot és az igazságtalanságot halálos bűnnek tartják megítélése mégis kedvező Ynev lakóinak körében, sőt: a pyarroni vallási vezetők is őszinte tisztelettel szólnak a tűz híveiről.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "",
+            "title": "Sogron-pap különleges előnyei és hátrányai",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "I. Sogron papjai uruk kegyéből az Élet, a Természet és a Lélek szférákból meríthetnek fohászaikat. Ezen kívül a Tűzkobra néhány egyéni fohásszal is felruházza papjait, amelyeket egyetlen más isten hív sem ismernek. Szent fegyvere a lángkard és a lángtőr; semmilyen más fegyverrel nem tanulhatnak meg bánni. Végveszélyben ugyan használhatják őket, de csak alkalmilag és rövid ideig, utána pedig a lehető leghamarabb engesztelő égő-áldozatot kell bemutatniuk Sogronnak.",
+            "title": "Sogron-pap előnyei I.",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "II. Amennyiben a karakter ordani neveltetésű, úgy lehetősége nyílik rá, hogy beavatást nyerjen a Tűzvarázslói mágiába, azonban ehhez legalább 5. Tsz-űnek kell lennie. Ehhez Képzettség pontjaiból el kell sajátítania a Tapasztalati Mágia képzettség (tűzvarázsló) 3. fokát. Innentől kezdve KAP-jaiból Kegy pontok mellett Mana pontot is vásárolhat, és ebből hozhat létre tűzvarázslói varázslatokat (a Sogron papnak ehhez nem kell bírnia a Mágikus Fogékonyság előnnyel Sogron áldása miatt). 10 Tsz. felett pedig Ordanba utazva betekintést nyerhetnek a Godoni pszi titkaiba.",
+            "title": "Sogron-pap előnyei II.",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "",
+            "title": "Sogron-pap induló képzettségei",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "table",
+            "text": "",
+            "title": "",
+            "headers": [
+                "Képzettség",
+                "Fok"
+            ],
+            "rows": [
+                [
+                    "Hadvezetés",
+                    "2. fok"
+                ],
+                [
+                    "Vértviselet",
+                    "1. fok"
+                ],
+                [
+                    "Őselemi mágia (tűz)",
+                    "2. fok"
+                ],
+                [
+                    "Ősi nyelv (kyr)",
+                    "2. fok"
+                ]
+            ]
+        },
+        {
+            "type": "rule",
+            "text": "Hadvezetés, Tapasztalati mágia (tűzvarázsló), Vértviselet",
+            "title": "Sogron-pap rendi képzettségei",
+            "headers": [],
+            "rows": []
+        }
+    ]
+}

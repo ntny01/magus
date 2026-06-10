@@ -1,0 +1,407 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": false,
+    "section_title": "",
+    "content_blocks": [
+        {
+            "type": "table",
+            "headers": [
+                "Varázslat neve",
+                "Mana pont",
+                "Varázslás ideje",
+                "Hatótáv",
+                "Időtartam"
+            ],
+            "rows": [
+                [
+                    "Boszorkánykör",
+                    "",
+                    "10 kör + Transz",
+                    "Lásd a leírást!",
+                    "Lásd a leírást!"
+                ],
+                [
+                    "Lebegés",
+                    "3",
+                    "1 szegmens",
+                    "Érintés",
+                    "6 kör (1 perc)"
+                ],
+                [
+                    "Mágia felfedezése",
+                    "1/E",
+                    "1 szegmens",
+                    "20 ynevi lábsugarú kör",
+                    "6 kör (1 perc)"
+                ],
+                [
+                    "Szépségvarázs",
+                    "Lásd a leírást!",
+                    "1 perc",
+                    "Önmaga",
+                    "1 nap"
+                ]
+            ]
+        },
+        {
+            "type": "table",
+            "headers": [
+                "Varázslat neve",
+                "Mana pont",
+                "Varázslás ideje",
+                "Hatótáv",
+                "Időtartam"
+            ],
+            "rows": [
+                [
+                    "Árnyak",
+                    "4",
+                    "1 szegmens",
+                    "20 ynevi lábsugarú kör",
+                    "6 kör (1 perc)"
+                ],
+                [
+                    "Csapdakereés",
+                    "6, 12, 18",
+                    "1 kör",
+                    "5 ynevi láb sugarú kör",
+                    "6 kör (1 perc)"
+                ],
+                [
+                    "Eredetkutatás",
+                    "24",
+                    "12 kör + 1k6 óra",
+                    "Érintés",
+                    "Egyszeri"
+                ],
+                [
+                    "Holdfényjárás",
+                    "8",
+                    "1 szegmens",
+                    "Önmaga",
+                    "Lásd a leírást!"
+                ],
+                [
+                    "Kígyóvarázs I.",
+                    "3",
+                    "3 szegmens",
+                    "20 ynevi láb sugarú kör",
+                    "6 kör (1 perc)"
+                ],
+                [
+                    "Lebegés vízben",
+                    "2",
+                    "1 szegmens",
+                    "Önmaga",
+                    "Lásd a leírást!"
+                ],
+                [
+                    "Mágiaelnyelés",
+                    "6",
+                    "1 szegmens",
+                    "Önmaga",
+                    "5 perc"
+                ],
+                [
+                    "Pusztítás",
+                    "36",
+                    "1 kör",
+                    "Lásd a leírást!",
+                    "Egyszeri"
+                ],
+                [
+                    "Repülés",
+                    "36",
+                    "1 kör",
+                    "Érintés",
+                    "15 perc"
+                ],
+                [
+                    "Retesz",
+                    "1",
+                    "1 szegmens",
+                    "10 ynevi láb sugarú kör",
+                    "Egyszeri"
+                ],
+                [
+                    "Útkeresés",
+                    "3",
+                    "1 kör",
+                    "Korlátlan",
+                    "Egyszeri"
+                ]
+            ]
+        },
+        {
+            "type": "table",
+            "headers": [
+                "Varázslat neve",
+                "Mana pont",
+                "Varázslás ideje",
+                "Hatótáv",
+                "Időtartam"
+            ],
+            "rows": [
+                [
+                    "Tűzbogarak",
+                    "6",
+                    "3 szegmens",
+                    "20 ynevi láb",
+                    "6 kör (1 perc)"
+                ],
+                [
+                    "Tüzes tekintet",
+                    "10",
+                    "3 szegmens",
+                    "20 ynevi láb",
+                    "6 kör (1 perc)"
+                ],
+                [
+                    "Tűzgejzír",
+                    "26",
+                    "1 szegmens",
+                    "10 ynevi láb",
+                    "1 kör/szint"
+                ],
+                [
+                    "Tűzgyújtás",
+                    "3",
+                    "1 szegmens",
+                    "10 ynevi láb sugarú kör",
+                    "Egyszeri"
+                ],
+                [
+                    "Tűzgyűrű",
+                    "30",
+                    "4 szegmens",
+                    "Lásd a leírást!",
+                    "4 kör"
+                ],
+                [
+                    "Villámszórás",
+                    "8",
+                    "1 szegmens",
+                    "10 ynevi láb",
+                    "3 kör"
+                ]
+            ]
+        },
+        {
+            "type": "table",
+            "headers": [
+                "Varázslat neve",
+                "Mana pont",
+                "Varázslás ideje",
+                "Hatótáv",
+                "Időtartam"
+            ],
+            "rows": [
+                [
+                    "Füstidézés",
+                    "6",
+                    "3 szegmens",
+                    "20 ynevi láb",
+                    "3 kör"
+                ],
+                [
+                    "Fuvallat",
+                    "6",
+                    "2 szegmens",
+                    "20 ynevi láb",
+                    "1 kör"
+                ],
+                [
+                    "Kígyóvarázs II.",
+                    "7",
+                    "6 szegmens",
+                    "Érintés",
+                    "6 kör (1 perc)"
+                ]
+            ]
+        },
+        {
+            "type": "table",
+            "headers": [
+                "Varázslat neve",
+                "Mana pont",
+                "Varázslás ideje",
+                "Hatótáv",
+                "Időtartam",
+                "Mágiaellenállás"
+            ],
+            "rows": [
+                [
+                    "Igaz Felelet",
+                    "1/E",
+                    "1 kör",
+                    "3 ynevi láb sugarú kör",
+                    "10 perc",
+                    "Asztrális"
+                ],
+                [
+                    "Kígyóbűvölés",
+                    "6",
+                    "1 kör",
+                    "Látótávolság",
+                    "10 kör",
+                    "Asztrális"
+                ],
+                [
+                    "Rovarfelhő",
+                    "6",
+                    "1 kör",
+                    "Lásd a leírást!",
+                    "6 kör",
+                    "Asztrális"
+                ],
+                [
+                    "Szemmelverés",
+                    "2/E",
+                    "1 kör",
+                    "20 ynevi láb",
+                    "Lásd a leírást!",
+                    "Asztrális"
+                ]
+            ]
+        },
+        {
+            "type": "table",
+            "headers": [
+                "Varázslat neve",
+                "Mana pont",
+                "Varázslás ideje",
+                "Hatótáv",
+                "Időtartam",
+                "Mágiaellenállás"
+            ],
+            "rows": [
+                [
+                    "Düh kioltása",
+                    "2/E",
+                    "1 kör",
+                    "20 ynevi láb",
+                    "Lásd a leírást!",
+                    "Asztrális"
+                ],
+                [
+                    "Érzelem átirányítás",
+                    "2/E",
+                    "1 kör",
+                    "Érintés",
+                    "Egyszeri",
+                    "Asztrális"
+                ],
+                [
+                    "Félelem elűzése",
+                    "4/E",
+                    "1 kör",
+                    "20 ynevi láb",
+                    "Lásd a leírást!",
+                    "Asztrális"
+                ],
+                [
+                    "Felelősség, megszünt.",
+                    "2/E",
+                    "1 kör",
+                    "20 ynevi láb",
+                    "Lásd a leírást!",
+                    "Asztrális"
+                ],
+                [
+                    "Önbecsülés eltiprása",
+                    "2/E",
+                    "1 kör",
+                    "20 ynevi láb",
+                    "Lásd a leírást!",
+                    "Asztrális"
+                ],
+                [
+                    "Szerelem Elorzása",
+                    "2/E",
+                    "1 kör",
+                    "20 ynevi láb",
+                    "Lásd a leírást!",
+                    "Asztrális"
+                ]
+            ]
+        },
+        {
+            "type": "table",
+            "headers": [
+                "Varázslat neve",
+                "Mana pont",
+                "Varázslás ideje",
+                "Hatótáv",
+                "Időtartam",
+                "Mágiaellenállás"
+            ],
+            "rows": [
+                [
+                    "Bűbáj",
+                    "1/E",
+                    "1 kör",
+                    "10 ynevi láb",
+                    "1 óra",
+                    "Asztrális"
+                ],
+                [
+                    "Gyanú",
+                    "1/E",
+                    "1 kör",
+                    "10 ynevi láb",
+                    "1 óra",
+                    "Asztrális"
+                ],
+                [
+                    "Gyűlölet",
+                    "3/E",
+                    "1 kör",
+                    "10 ynevi láb",
+                    "1 óra",
+                    "Asztrális"
+                ],
+                [
+                    "Irtózat",
+                    "2/E",
+                    "1 kör",
+                    "10 ynevi láb",
+                    "1 óra",
+                    "Asztrális"
+                ],
+                [
+                    "Rettegés",
+                    "1/E",
+                    "1 kör",
+                    "10 ynevi láb",
+                    "1 óra",
+                    "Asztrális"
+                ],
+                [
+                    "Szerelemvarázs",
+                    "2/E",
+                    "1 kör",
+                    "10 ynevi láb",
+                    "Lásd a leírást!",
+                    "Asztrális"
+                ],
+                [
+                    "Üldöző mánia",
+                    "2/E",
+                    "1 kör",
+                    "10 ynevi láb",
+                    "1 óra",
+                    "Asztrális"
+                ],
+                [
+                    "Viszály",
+                    "2/E",
+                    "1 kör",
+                    "10 ynevi láb",
+                    "5 perc",
+                    "Asztrális"
+                ]
+            ]
+        }
+    ]
+}

@@ -1,0 +1,162 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": true,
+    "section_title": "Színészet (III – Asztrál, Karizma)",
+    "content_blocks": [
+        {
+            "type": "paragraph",
+            "text": "eljuttatni. Szexuális játékai olyan szinten őrítik meg szeretőit és oly járatossá vált az ellentétes nem vágyaiban, hogy Karizma próbáját +3 módosítóval dobhatja.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "A színészet a tettetés, a beleélés, az alkalmazkodás és a színészi átalakuló képesség tudománya, a karakter nem csak művészetként, de hazudozásaihoz, csalásaihoz is felhasználhatja... főleg Álcázás/álruha képzettséggel együtt. Ha a karakter valakit át szeretne ejteni és szerepjátéka a KM szerint nem elég meggyőző, vagy a célpont gyanakodni kezd, akkor képes leleplezni a karaktert a vonatkozó képzettségek (Lélektan) összevetését taglaló szabályok szerint.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "A karakter műértő, illetve már próbálkozott az alakoskodással, nem túl nagy sikerrel. Ha hazudozni vagy tettetni kényszerül köteles Asztrálpróbát dobnia -1 módosítóval.",
+            "title": "1. fok",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "Az ilyen szinten képzett karakter gyakorlott hazudozó, gyakorló színész, Asztrálpróbáját, már módosítók nélkül dobhatja.",
+            "title": "2. fok",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "A képzettség ezen fokát még bárki elsajátíthatja, igazi „iparos” mesterré válhat, akinek munkája pontos és szép, tetszetős, de nem lenyűgöző, még nem igazi művész. De már igen képzett fillentő és alakoskodó, Asztrálpróbáját +1 módosítóval dobhatja.",
+            "title": "3. fok",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "Igazi művész, előadásaival már szép summákat kereshet. A vonatkozó Asztrálpróbát +2 módosítóval dobhatja.",
+            "title": "4. fok",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "Már csak a tehetség előnnyel rendelkező karakter veheti fel. Ihletet nagy művész, százévente, ha egy születik... arca szinte gumiból van, bármilyen érzelmet képes megjeleníteni rajta és villanásnyit sem látszanak saját gondolatai érzelmei, ha csak nem akarja. A vonatkozó Asztrál próbát +3 módosítóval dobhatja.",
+            "title": "5. fok",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "Udvari etikett/intrika (II – Intelligencia, Asztrál, Karizma)",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "A karakter az udvarok, klánok, rendek szertartásrendjébe, belső elrendeződésébe, erővonalaiba láthat bele a képzettség segítségével, magasabb szinten pedig átrendezheti őket. Tetszése szerint taposhat el, vagy emelhet fel bárkit az adott közösségen belül.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "A karakter még csak ismerkedik a szabályokkal, komoly segítségre szorul. Ha „udvarképesen” akar viselkedni, netalán bele akar folyni a társaság ügyeibe, akkor feszültebb helyzetekben – ennek megítélése a KM joga –1 módosítóval kell sikeres Tulajdonságpróbát dobnia.",
+            "title": "1. fok",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "A gyakorlott karakter még nem teljesen udvarkész, de már kezd a társasági élet tényezőjévé válni. A feszült helyzetek könnyen hibázásra késztetik, ennek elkerülésére sikeres Tulajdonságpróbát kell dobnia.",
+            "title": "2. fok",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "A karakter már járatos az apróbb szokásokban, szabályokban is, ismeri a politikai erővonalakat és néhány fontosabb embert. A feszült helyzetek kezelésekor felmerülő nehézségek orvoslásának sikerét eldöntő Tulajdonságpróbadobást +1 módosítóval teheti meg.",
+            "title": "3. fok",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "Vérbeli politikus, szertartásmester. A karakter már komolyan képes befolyásolni az adott helyszín, udvar, bál szertartásmenetét, egyes szabályok alkalmazásával. Ha úgy kívánja szavaival, intrikus megnyilvánulásaival földbe tiporhat vagy az egekig magasztalhat bárkit a társaság szemében, ha sikeres Tulajdonságpróbát dob +2 módosítóval.",
+            "title": "4. fok",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "Igen befolyásos politikus, a társasági élet titkos vezetője. Szertartásmesterként a tudás végső forrása, igazán fontos ceremóniák és szertartások ismerője. Tettei még évszázadok távolából is híresek, a történelem részét képezik. Tulajdonságpróbáját +3 módosítóval teheti.",
+            "title": "5. fok",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "Alvilági képzettségek",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "Álcázás/álruha (II – Érzékelés, Ügyesség)",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "A karakter ezen képzettséggel álruhák felöltésére, készítésére, önmaga vagy mások elmaszkírozására, illetve tárgyak elrejtésére képes. A kutató szemek és kezek ellen próba dobandó a kutakodó személy Érzékeléspróbája, esetleg bármely a KM által kiválasztott képzettsége ellenében.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "Az álcázás elkészülési idejének megállapítása a KM köré, ám egyetlen álruha sem nagyon készül 2-3 óránál tovább, akad viszont egyetlen perc alatt kivitelezhető is. Másrészről egyetlen nagyobb meg elrejtett tárgyat sem nagyon kell négy-öt óránál tovább álcázni.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "paragraph",
+            "text": "Megjegyzendő még, hogy a képzettségből megszerzett fokonként -10% módosító járul a karakter által adott csapdák elleni Csapdakereés próbákhoz, amely összeadódik a Csapdaállításnál szereplő módosítókkal.",
+            "title": "",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "A karakter egyenlőre még csak elvegyülni képes az általa ismert kultúrkör tagjai alkotta tömegben, ha akadnak megfelelő ruhák, akár percek alatt is képes egy semmitmondó öltözék összeállítására. Kisebb tárgyakat rejthet, takarhat el, vagy álcázhat valamely más tárgy felhasználásával egy-két perc alatt. A karakter próbájához -1 módosító járul.",
+            "title": "1. fok",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "A gyakorlott álcázó, már képes nagyobb, majd félembernyi tárgyakat is elrejteni, vagy álcázhat más tárgyká, akár percek alatt is, ha ez fizikailag lehetséges, a KM belátása szerint. Emellett már képes egyszerűbb anyagokból álöltözetek elkészítésére is. A karakter próbáját módosító nélkül dobja.",
+            "title": "2. fok",
+            "headers": [],
+            "rows": []
+        },
+        {
+            "type": "rule",
+            "text": "Az ilyen szinten beavatott álca és álruhakészítő már igen gyakorlott. Akár embernyi tárgyakat is sikeresen elrejthet, a KM belátása szerinti idő alatt. Percek alatt képes akár nemesi vagy valamely szervezet beavatottjának öltözékét is mimelni, ha a megfelelő eszközök a rendelkezésére állnak. Képes akár már élethű maszkokat is készíteni, melyek három óránál nem tartanak tovább, s az időtartam lejárta után lassan széthullnak, illetve képes a sajátjától 20%-kal jobban el nem térő testalkat utánzására cseles eszközeivel. A karakter próbájához +1 módosító járul.",
+            "title": "3. fok",
+            "headers": [],
+            "rows": []
+        }
+    ]
+}

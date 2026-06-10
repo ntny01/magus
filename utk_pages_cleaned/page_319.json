@@ -1,0 +1,108 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": true,
+    "section_title": "Anyagmágia",
+    "content_blocks": [
+        {
+            "type": "paragraph",
+            "text": "rácsai anyagtalanok és derengő kék fényt sugároznak – gyakorlatilag villámnak minősülnek. A bezárt lény nem képes kitörni börtönéből, csak ha vállalja a „rácsokkal” való érintkezés kockázatát."
+        },
+        {
+            "type": "paragraph",
+            "text": "Ha hozzájuk ér, vagy áthatol rajtuk, körönként a villám É-jének megfelelően sebződik – ami érthetően erős fájdalommal jár –, s ha Éveti Egészségpróbáját, izmai 1k6 körre felmondják a szolgálatot. Bénultan rogy a földre, és szerencsésnek mondhatja magát, ha kellő távolságra zuhan az irtózatos energiarácsoktól. A ketrecből biztonságosan kijutni csak mágia segítségével lehet. A varázslat a boszorkánymester szintjeinek megfelelő számú óráig tart."
+        },
+        {
+            "type": "paragraph",
+            "text": "Az Anyagmágia nem foglal el kitüntetett szerepet a boszorkánymesterek repertoárjában. Kevés, és igen korlátozott képességű formulát ismernek csupán: olyanokat, melyek hathatós pusztítással járnak."
+        },
+        {
+            "type": "paragraph",
+            "text": "Azonban hiába rettegik a boszorkánymesterek rontó hatalmát, léteznek egyetemes törvényszerűségek, melyeket még ők sem hághatnak át."
+        },
+        {
+            "type": "paragraph",
+            "text": "Anyagmágiával képtelenség értelmes lényekre és oktalan állatokra hatni, mint ahogy ellenáll varázslataiknak minden mágiával átitatott tárgy, a drágakövek valamint az abbit és a mithrill is (illetve olyan anyagok, amik ezeknek legalább 10 százalékát tartalmazzák). Ezenfelül az Anyagmágia csak és kizárólag egész tárgyakra hat, azok részeire külön hatni nem lehetséges (a láncing egyes szemei nem különálló tárgyak, csak az egész láncing egyben; mint ahogy a kard sem bontható szét pengére és markolatra, az ajtó nem osztható fel ajtólapra, zsanérokra és zárra, a vasrács sem rudakra)."
+        },
+        {
+            "type": "paragraph",
+            "text": "Ezek okaival nincsenek tisztában, kénytelenek hát elfogadni és beletörődni, hogy az imént felsorolt hatások magyarázata meghaladja tudományukat."
+        },
+        {
+            "type": "rule",
+            "title": "Anyagpusztítás",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "Mana pont: 3/E Varázslás ideje: 1 szegmens Hatótáv: 20 ynevi láb Időtartam: Egyszeri"
+        },
+        {
+            "type": "paragraph",
+            "text": "A varázslat segítségével bármilyen szilárd vagy folyadék halmazállapotú, nem mágikus természetű anyag elpusztítható (nem levegővé tehető, hanem tökéletesen semmivé foszlatható). Az anyag mennyisége a minőségétől függ. A következő csoportok szerint: I. Nemtelen anyagok. Kő, fa, víz, bor és minden egyéb, ami nem sorolható a többi csoportba II. Fémek. Réz, bronz, vas és minden egyéb fém, ami nem sorolható a nemesfémek és a mágikus anyagok közé. III. Nemesfémek. Arany, ezüst (nemesfémnek számít az az ötvözet, melyben ötvöző anyagként legalább 10 százalék tiszta nemesfém található), a mérgek, valamint a savak és a lúgok is."
+        },
+        {
+            "type": "paragraph",
+            "text": "A varázslattal minden É után 1 ynevi font I. csoportba, 1/2 ynevi font II. csoportba, vagy 1 ynevi lat III. csoportba tartozó anyag változtatható semmivé. További kikötés, hogy csak önálló és egész tárgyakra alkalmazható, tárgyak részeire nem. Mint ahogy élőlények teste, tárgyai, felszerelése sem képezhetik a varázslat tárgyát (hiszen azok a lény Személyes Aurájának részei)."
+        },
+        {
+            "type": "rule",
+            "title": "Savfelhő",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "Mana pont: 12/E Varázslás ideje: 1 szegmens/É Hatótáv: 20 ynevi láb Időtartam: 1 kör/szint"
+        },
+        {
+            "type": "paragraph",
+            "text": "A boszorkánymester a varázslat segítségével zöldes-sárgás savpermetből álló maró felhőt hozhat létre. Ez a felhő a széllel elszáll – a varázslattal így nem irányítható – csak megjelenésének helyét jelölheti ki a varázslat megidézője. A felhő minden egyes É-je után körönként 1k10 SP-t sebez annyi láb sugarú körben, amennyi a varázslat Erőssége, s hosszú időn keresztül a felhőben tartózkodó átrágja magát ruhán, páncélon. Nyomában égett szag és gyenge füst kezd el terjedni, savpermet csapódik ki a tárgyakra és fekete csíkokat szánt beléjük a lefolyó anyag. A ruhák kilyukadnak, a fegyverek, vértek, pajzsok sisteregve pezsegni kezdenek, ahogy a maró oldalt kikezdi őket."
+        },
+        {
+            "type": "paragraph",
+            "text": "A varázslat a boszorkánymester szintjeivel egyező számú körig tartható fenn, de előbb is eloszlatható. A boszorkánymester sem áll ellen a felhőben lévő savnak, így a varázslatot néha hamar megszünteti, hogy ne essen ő maga is áldozatul."
+        },
+        {
+            "type": "rule",
+            "title": "Savteremtés",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "Mana pont: 8/E Varázslás ideje: 1 szegmens/É Hatótáv: 20 ynevi láb Időtartam: 1 kör/szint"
+        },
+        {
+            "type": "paragraph",
+            "text": "A boszorkánymester erős savat teremthet vízből, borból, egyéb folyadékból. A sav mennyisége 8 MP-ként egy gyűszűnyi. A sav Erősségenként 1k10 SP sebet okoz, s esetenként – a helyzettől függően – Ép-vesztést, vakságot, Tulajdonságok (például Karizma) csökkenését is eredményezheti. A sav annyi körig marad sav és maró, amennyi a boszorkánymester szintje – utána visszaalakul közönséges folyadékká."
+        },
+        {
+            "type": "paragraph",
+            "text": "Amennyiben a savat más folyadékkal vegyítik, úgy sebzése a hígulás arányában csökken."
+        },
+        {
+            "type": "rule",
+            "title": "Szilánkokra robbantás",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "Mana pont: 5/E Varázslás ideje: 2 szegmens Hatótáv: 20 ynevi láb Időtartam: Egyszeri"
+        },
+        {
+            "type": "paragraph",
+            "text": "A boszorkánymester másik szilárd anyagot pusztító varázslata ez. Hatására a mágikus energiák beférkőznek az anyag szerkezetébe és a gyenge pontoknál szétfeszítik azt. A folyamat eredményeképpen egy szilárd anyagú, nem mágikus természetű tárgy (amennyiben nem védi a Személyes Aura) hirtelen felmelegszik, majd apró, tűhegyes szilánkokra robban. Ez mágia mindenben megegyezik az Anyagpusztítás varázslattal, azzal a különbséggel, hogy a szétrobbanó tárgy közvetlen közelében (5 ynevi láb sugarú kör) tartózkodók a tárgy minden egyes fontja után 1k6 SP-sebet szenvednek el a repeszektől, míg az 1 ynevi fontnál jelentősen könnyebb tárgyak sebzése egységesen 1 SP."
+        }
+    ]
+}

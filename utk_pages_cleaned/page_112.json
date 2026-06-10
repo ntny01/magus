@@ -1,0 +1,74 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": false,
+    "section_title": "",
+    "content_blocks": [
+        {
+            "type": "flavor_text",
+            "text": "...Ahogy a bárd nekilendült, hirtelen elült a szél. Egy halódó matróz, akit társai irgalomból a fedélközben hagytak, kiszenvedett, aztán megrázkódott, talpra állt, és a gazdátlan pengék egyikével átvágta a fiatal Arel-pap torkát. A boszorkánymester, akit Gorduin a kölyök őrzésével bízott meg, hat láb hosszú villámával az semmitől sem féltő fajig röpítette, aztán szitkozódva felfelé iramodott: minden aggályt kilúgozott belőle a bizonyosság, hogy menekülnie kell földje, a feketébe öltözött gyilkos dühe elől. Ledobta hosszú köpenyét, két ugrással a jobb oldali palánknál termett, onnét bámult a tatbástyán dúló harc forgatagába."
+        },
+        {
+            "type": "flavor_text",
+            "text": "– Remélem elpatkolsz, mortor – dünnyögte. – Ha pedig élve rendeltetett, hát add, hogy ne találkozzunk soha többé! Nagy levegőt vett, és a vízbe vetette magát. Holmija súlyos volt, de valahogy elboldogult vele, és kegyébe fogadta a szerencse is: egyetlen szigony sem repült utána, egyetlen cápa sem keresztezte az útját, a baleknak pedig, aki a parton rálelve házába fogadta, takaros asszonya, ráadásnak tisztes készlete volt helyben vert ezüstökből."
+        },
+        {
+            "type": "paragraph",
+            "text": "A boszorkánymesterek gátlástalan Feketemágusok – természetesen csak a szó filozófiai értelmében, hiszen hatalmuk bármily sötét is, nyomába sem ér egy igazi mágusénak. Mégis, a többi varázshasználó csak irigységgel vegyes döbbenettel szemlélheti sötét hatalmuk mértékét. Mágikus tudományukat egyetlen cél, hatalomvágyuk szolgálatába állítják: pusztítanak, kínt, nyomorúságot okoznak, ha kell, de szolgálnak évekig, ha úgy hozza a szükség..."
+        },
+        {
+            "type": "paragraph",
+            "text": "Mindemellett a boszorkánymesterek is csak tapasztalati varázslók; ők sem értik a mágia mélyebb összefüggéseit, belső törvényeit. Ismerik a megfelelő formulákat: azon varázsigéket és taglejtéseket, melyek iszonyatos hatalmuk zálogát jelentik. Igaz, a tapasztalati varázstudók közül ők állnak a legközelebb ahhoz, hogy mágiájukat a magas mágiához hasonlíthassák, hisz nem egy esetben már-már a Mozaikmágia határait súroló mélységben ismerik és aknázzák ki lehetőségeiket egy-egy mágiaformájukban."
+        },
+        {
+            "type": "paragraph",
+            "text": "Varázslataik túlnyomórészt Rontásokból, Átkokból, Energiarablásokból állnak – s az áldozat testét roncsolják –, meg persze az elmaradhatatlan Nekromanciából. Emellett az elvetemültebb boszorkánymesterek járatosak az orgyilkosság különféle fogásaiban is: ismerik a méregkeverés tudományát és az orvtámadás „művészetét”."
+        },
+        {
+            "type": "paragraph",
+            "text": "Dél-Ynev majd’ minden tájára jut belőlük: Kránba, Gorvikba, a Dzsád Emírségekbe, de még Shadonba is. A leghatalmasabbak kétségtelenül Kránban élnek. Rendjeik behálózzák a Birodalmat, gyakran lovagrendek, fejvadászklánok vezetőiként tűnnek fel. A Birodalmi Belsőiskolákkal csak formális kapcsolatot tartanak fenn, annál meghittebb a viszonyuk a mindenki elől elzárkózó aquirokkal. Egymással nehezen találnak hangot, nem ritkák a rendek közti véres leszámolások, de a viszály olykor még a rendeken belül is felüti fejét. A boszorkánymesterek mindenkinél különbnek, kiemelkedettebbnek gondolják magukat, s az ilyesmi Kránban könnyen önbíráskodásra sarkall."
+        },
+        {
+            "type": "paragraph",
+            "text": "Észak boszorkánymestereiről szólva elsőként mindig Toron boszorkánymesterei ötlenek a történelemben és politikában jártas halandó eszébe. Nem véletlenül, hisz a kontinens e tájának legnagyobb hatalmú varázstudói, az embernépek legelkeseredettebb ellenségei ők. Mégsem tekinthetők boszorkánymesternek a szó igazi értelmében, hisz a mágia sokkal ősibb, sokkalta bonyolultabb formáit is használni képesek – kiérdemelvén ezáltal, hatalmuknak megfelelően, a boszorkányhadúr vagy a boszorkányherceg elnevezéseket."
+        },
+        {
+            "type": "paragraph",
+            "text": "Ama tíz Hatalmas egyenesági leszármazottai, akik a Kyr Birodalom bukásához vezető háború poklában megpróbálták Orwella istennő kezére játszani a császárt, egész udvartartásával egyetemben. Tervük kudarcba fulladt, az egykori birodalmi tartomány, Toron egységét azonban épp eme aljaság „jutalmaként” őrizhették meg, s emiatt uralhatják azt véreik mind a mai napig. A főváros felé nyitott Shuluri-öböl megközelíthetetlen szigetén élnek, közönséges halandó sosem láthatja őket."
+        },
+        {
+            "type": "paragraph",
+            "text": "Annál inkább ismeri és gyűlöli a világ követőiket, akik az árnyékukban tevékenykedő igazi boszorkánymestereket, akik a császár felett is érvényesíthetik."
+        },
+        {
+            "type": "paragraph",
+            "text": "A rejtőzködő és a világot nyíltan járó boszorkánymesterek az Yneven még mindig jókora hívői táborral rendelkező kyr szörnyisten, Tharr hívei. Mivel Toronban teljes biztonságban tudhatják magukat, a boszorkánymesteri rendek szervezete az egész országot behálózza, bonyolultabb talán még a császári közigazgatásnál is. Minden tartományban és minden jelentősebb településen megtalálhatók. (Ajzószerés rabszolga-kereskedelemmel is foglalkoznak, mondják, a Láncbarátok elnevezésű büntetvériséget boszorkánymesterek szervezték meg és irányítják!) A birodalmi politika szereplői között tartoznak ugyan; bár a Nemes Házak viszályaiba még mindig csak óvatosan és rendkívül körültekintően szólnak csak bele."
+        },
+        {
+            "type": "paragraph",
+            "text": "A toroni boszorkánymesterek rendjei természetes szövetségeseikre leltek Tharr egyházában és a Háromfejű papjaiban – mindkét szervezet azon igyekszik, hogy Toront Észak első számú hatalmává téve, az ottani országok és kultúrák mindegyikére kiterjessze befolyását."
+        },
+        {
+            "type": "paragraph",
+            "text": "A Quiron-tenger túlpartján elterülő királyság, Abaszisz boszorkánymesterei kényesebb helyzetben vannak, ezért, bár hatalmuk csekélyebb toroni társaikénál, az egyensúlypolitikában fontos szerep jut nekik."
+        },
+        {
+            "type": "paragraph",
+            "text": "Abaszisz nagykirálya, és az ország hercegkapitányi címet viselő főnemesei állandó harcban állnak egymással. A nagykirály, akit a trónfosztástól csakis a hercegkapitányok egymás közti viszálykodása óvhat meg, a boszorkánymesteri rendek segítségét sem átallja igénybe venni, s támogatója Tharr helyi egyházának is. Aligha túlzás azt állítanunk, hogy a Toron-Abaszisz tengely kikovácsolásában épp az egymással szívélyes kapcsolatot fenntartó boszorkánymesteri rendek játszották a főszerepet."
+        },
+        {
+            "type": "paragraph",
+            "text": "A boszorkánymestert ajánljuk mindazoknak, akik erkölcsi megkötések nélküli, élvezetes, és könnyen játszható mágiaforgató karaktert szeretnének indítani; s azoknak is, akik a mágiarendszer egyik legnehezebben érthető és alkalmazható darabja a Mozaikmágia elsajátítására adták fejüket, jó alapozást jelenthet egy efféle karakterrel való ismerkedés."
+        },
+        {
+            "type": "rule",
+            "text": "A boszorkánymester általában nem a szemtől szembe harc híve, bár akad közöttük afféle fennhéjázó magiszter is, ki ebben látja a hatalom ösvényét. Ezért akad soraikban mesteri tőrvívó és harcot szinte alig szagolt laboratóriumi penészvirág is. Emiatt KP-jaikból igen ritkán vásárolnak HP-ket és emelik a szintenkénti növekményüket 6 fölé.",
+            "title": "Harcérték"
+        },
+        {
+            "type": "rule",
+            "text": "A boszorkánymesterek mágiája, hatalmuk gyakorlása, lassan, de biztosan sorvasztja testük. A fájdalom mindennapjaik velejárója, mégsem tűrik oly kitartóan, mint mondjuk a kardforgatók. Szintenként ritkán növelik FP-ik számát 4 pontnál többel.",
+            "title": "Életerő és Fájdalomtűrés"
+        }
+    ]
+}

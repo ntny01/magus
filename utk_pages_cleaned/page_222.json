@@ -1,0 +1,104 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": true,
+    "section_title": "Fájdalomcsillapítás (Kinokozás)",
+    "content_blocks": [
+        {
+            "type": "paragraph",
+            "text": "melyek mérföldekről, vagy akár órák távolságából árulkodnak a képzett pszi használó számára a vérontásról, vagy akár a szeretet, szerelem izzó, pislákoló érzését, vakító fehérségét. Esetleg a Mentálisra, a tudatos rendszerre emelt elme keltette szabályozott formák sokaságát is megpillanthatja."
+        },
+        {
+            "type": "paragraph",
+            "text": "A létezők, hacsak nem rejtik el magukat valami módon, messzire fénylenek a síkokon. Ha pajzsok mögé rejtkeznek, az alacsonyabb fokú pszi felhasználók számára, akik Tudatnyitással tekintenek a Belső Síkokra nyomtalanul eltűnnek, míg 3. foktól halovány ezüstszínben derengenek föl az elméjüket óvó védművek (azonban ezek nagyságáról és összetételéről a diszciplína semmilyen információval nem szolgál)."
+        },
+        {
+            "type": "paragraph",
+            "text": "Ha a karakter beleegyezik, hogy diszciplínát, Asztrál vagy Mentálalapú varázslatot alkalmazzanak rá, ezzel a diszciplínával nyithatja fel védműveit, így a varázslat akadálytalanul hatol át rajtuk (az alkalmazó Mágiaellenállása ideiglenesen 0-ra csökken az adott varázslattal vagy diszciplínával szemben)."
+        },
+        {
+            "type": "paragraph",
+            "text": "Típus: Test Ψp: 1 A meditáció ideje: 1 kör Időtartam: végleges ME: Mentális"
+        },
+        {
+            "type": "paragraph",
+            "text": "A legalapvetőbb a testre ható diszciplínák közül, az első lépés az elme test feletti teljes uralmát eredményező út elején. Segítségével a tudat fájdalomközpontjára gyakorolhatunk hatást. Lehetőségünk nyílik fájdalomérzet tompítására vagy keltésére. Akaratunktól és energiáinktól függően egyszerű fejfájástól az elevenen égetés minden kínjáig."
+        },
+        {
+            "type": "paragraph",
+            "text": "Miután nem gyógyít vagy okoz valódi sebesüléseket, az Életerő pontokra nincs befolyással az alkalmazás, csak Fp-t képes adni vagy elorozni. A Fp-ok teljes elvonásával – 0 Fp-ra kínzás – elérhetjük, hogy az áldozat elájuljon, ám igazi sérülés ekkor sem keletkezik rajta. Maximum Fp fölé sem önmagunkat, sem másokat nem juttathatunk, bármennyi Ψ-pontot is áldoznánk rá energiáinkból. A diszciplína 1 E-je 1 Fp-t ad vissza az alkalmazónak, vagy célpontjának."
+        },
+        {
+            "type": "rule",
+            "title": "Rendszerszabály",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "2. fokú diszciplínák"
+        },
+        {
+            "type": "paragraph",
+            "text": "Az elfogadás szintje. A képzettség alkalmazója már gyakorlott, fegyelmezett elmével bír, könnyedén mozgósítja belső erőit, de még csak készül a nagy ugrásra, még mindig teste rabja."
+        },
+        {
+            "type": "paragraph",
+            "text": "Elméjét már rengeteg gyakorlással és meditációval képessé tette a passzív védekezésre, de igazán nagy lépést önnön fizikai valója teljes uralása felé tartó útján tett. Felismerte és elfogadta a fizikai lét korlátait, s a szabályok ismeretével nekilátott kitágítani lehetőségeit."
+        },
+        {
+            "type": "paragraph",
+            "text": "Statikus Ψ-pajzs Típus: Tudat Ψp: 10+1/E A meditáció ideje: 15 perc Időtartam: Lásd a leírást!"
+        },
+        {
+            "type": "paragraph",
+            "text": "A pszi használó a napi meditációs gyakorlatok, diszciplínák és a szemlélődés segítségével megtalálta magában a csend szigetét, a teljes nyugalom és béke honát. E harmónia és rendezettség lassan, tudatos gyakorlással beszivárog a tudat felsőbb régióiba is. Az elme egyre erősebbé, nehezebben megingathatóvá teszi a külső behatásokkal szemben. A folyamat végére a karakter képessé válik belső energiáiból passzív mentális és asztrális falak emelésére elméje védelme érdekében, melyeken keresztül a pszi erejétől függően egyre nehezebben találnak utat az asztrális és mentális támadások."
+        },
+        {
+            "type": "paragraph",
+            "text": "A Statikus pajzs Erőssége annyi, ahány Ψ-pontot az alkalmazó az építésére felhasznált, az alap 10 Ψ-ponton túl. Gyakorlati hatása abban nyilvánul meg, hogy a pajzs erősségét hozzáadjuk a Tudatalatti Mágiaellenálláshoz és így kapjuk meg teljes ME-nket. Két különböző Statikus pajzs létezik: asztrális és mentális. Az Asztrális pajzs az Asztrális támadások ME-jéhez adódik hozzá, míg a Mentális pajzs a Mentális ME-jéhez."
+        },
+        {
+            "type": "paragraph",
+            "text": "A Statikus pajzs, miután felépült, többé nem befolyásolható: Ψ-pontokat sem hozzáadni, sem elvenni nem lehetséges. Védő hatását akkor is kifejti, ha a pszi alkalmazó alszik, eszméletlen, vagy bármely egyéb okból öntudatlan, hiszen immár az elmétől, aktivitásától függetlenül létezik. Lebontani is csak újabb tizenöt percen át tartó meditációval lehet, vagy Ψ-ostrommal (lásd Ψ-ostrom)."
+        },
+        {
+            "type": "paragraph",
+            "text": "A Statikus pajzshoz felhasznált Ψ-pontok a későbbiekben nem számítanak bele az aktuális Ψ-pontok számába. Ez azt jelenti, hogy az alkalmazó megteheti, hogy egy békés napon az összes Ψ-pontját Statikus pajzsok emelésére fordítja, majd pihenés után ismét maximális Ψ-pontjaira támaszkodhat – noha ekkor már védik a Statikus pajzsok. Minden elme köré legfeljebb egy Asztrális és egy Mentális Statikus pajzs építhető."
+        },
+        {
+            "type": "rule",
+            "title": "Rendszerszabály",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "A Slan Út alkalmazói által gerjesztett Statikus Pajzs felépítésében gyökeresen különbözik a Pyarroni Módszer segítségével létrehozottól, ám működésében és alkalmazásában teljesen megegyezik azzal. A valódi különbség a végeredményben mutatkozik meg: a Slan Út Statikus Ψ-pajzsát senki nem képes lerombolni, csak maga az alkalmazó szüntetheti meg és építheti újra. Efféle pajzsot a Slan csak a saját elméje köré képes felhúzni."
+        },
+        {
+            "type": "paragraph",
+            "text": "Transz Típus: Tudat Ψp: 1 A meditáció ideje: 5 perc Időtartam: korlátlan"
+        },
+        {
+            "type": "paragraph",
+            "text": "A diszciplína segítségével az alkalmazó elméjét a Belső Síkokhoz, a teremtő tökéletességhez hangolja, figyelmét jórészt elfordítja e világ térségei felől. Ahhoz, hogy ez megtörténjék, öt percig mozdulatlanul kell meditálnia, teljes szellemiségével a transz elérésére összpontosítani. Ez alatt nem végezhet fizikai vagy szellemi tevékenységet, mozdulatlanul áll, ül, netán fekszik."
+        },
+        {
+            "type": "paragraph",
+            "text": "Transzban lassú mozdulatokkal képes mozogni, akár egy sétáló lovat is megülni, mágikus jeleket rajzolni, beszélni, írni; de nem képes fürge mozdulatokra, közelharcra és a transztól eltérő összpontosításra. Maga a végrehajtó bármikor visszatérhet a normális tudatállapotba, más azonban nehezen képes kizökkenteni."
+        },
+        {
+            "type": "paragraph",
+            "text": "A transzban lévő emberhez hiába beszélnek, rázzák, öntik nyakon vízzel; a Transz csak Fp vagy Ép vesztest okozó sebzés hatására szakad félbe."
+        },
+        {
+            "type": "paragraph",
+            "text": "Egyetlen Ψ-pont felhasználásával az alkalmazó korlátlan ideig transzállapotban maradhat. Természetesen léteznek más"
+        }
+    ]
+}

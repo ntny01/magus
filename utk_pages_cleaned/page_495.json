@@ -1,0 +1,219 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": true,
+    "section_title": "Az anyagokból eredő egyéb módosítók és megjegyzések:",
+    "content_blocks": [
+        {
+            "type": "rule",
+            "title": "Az anyagokból eredő egyéb módosítók és megjegyzések:",
+            "headers": [
+                "Anyag",
+                "Védelem",
+                "Tűz sebzés",
+                "Hideg sebzés",
+                "Egyéb"
+            ],
+            "rows": [
+                [
+                    "Fa",
+                    "Rossz",
+                    "2x sebzés",
+                    "Normál",
+                    "Könnyű"
+                ],
+                [
+                    "Agyag",
+                    "Tompa fegyverek: 0.5x sebzés",
+                    "0.5x sebzés",
+                    "Normál",
+                    "Lassú reakciók"
+                ],
+                [
+                    "Kő",
+                    "Éles/hegyes fegyverek: 0.5x sebzés",
+                    "Immunis",
+                    "Normál",
+                    "Gyakori"
+                ],
+                [
+                    "Vas",
+                    "Éles fegyverek: 0.25x sebzés, Hegyesszúrás: 1 SP/támadás",
+                    "0.5x sebzés (kivéve váltakozva)",
+                    "0.5x sebzés (kivéve váltakozva)",
+                    "Legjobb harcos"
+                ]
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Gólemek megalkotása és tudásának forrása",
+            "headers": [
+                "Tudás forrása",
+                "Szervezet",
+                "Tagok száma",
+                "Felvétel",
+                "Tanulási idő"
+            ],
+            "rows": [
+                [
+                    "Deludus Mons tanítványai",
+                    "Élet Kilenc Tudója kör (Doran)",
+                    "9",
+                    "3/2 évente",
+                    "Fél év"
+                ]
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Támadó érték:",
+            "headers": [
+                "Érték",
+                "Leírás"
+            ],
+            "rows": [
+                [
+                    "Védő érték",
+                    "—"
+                ],
+                [
+                    "Célzó érték",
+                    "—"
+                ],
+                [
+                    "Sebzés",
+                    "—"
+                ],
+                [
+                    "Életerő pontok",
+                    "Lásd a leírást!"
+                ],
+                [
+                    "Fájdalomtűrés pontok",
+                    "—"
+                ],
+                [
+                    "Asztrál MÉ",
+                    "Lásd a leírást!"
+                ],
+                [
+                    "Mentál MÉ",
+                    "Lásd a leírást!"
+                ],
+                [
+                    "Méregellenállás",
+                    "—"
+                ],
+                [
+                    "Pszi",
+                    "—"
+                ],
+                [
+                    "Intelligencia",
+                    "Lásd a leírást!"
+                ],
+                [
+                    "Jellem",
+                    "Lásd a leírást!"
+                ],
+                [
+                    "Tapasztalati pont",
+                    "Lásd a leírást!"
+                ]
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "Az Asztrálés Mentálsík a Létezők gondolatainak, érzelmeinek hona, mely saját teremtményekkel is bír. Ezen lények a gondolatok és érzelmek hullámait, formáit meglovagolva sodródnak az adott Síkon, az érzelmeinkből és gondolatainkból táplálkozva, azokat magukba fogadva. Ezen lények kezdetleges formái általában valamely komolyabb érzelmi kitörés, vagy magasabb ötlet nyomán jönnek létre, létezésük célja nem más, mint az önnön „testüket” alkotó szellemi matériából minél több megszerzése. Ezt úgy képesek megkaparintani, hogy a Létezőkre (lelkekre) telepedve azokat kényszerítik az adott gondolatok, vagy érzelmek kisugárzására. Ez teszi őket igazán veszedelmessé, hiszen ezáltal képesek befolyását gyakorolni a lelkekre, illetve ezen lények jelenléte miatt érezzük más hangulatúnak bizonyos helyek légkörét."
+        },
+        {
+            "type": "paragraph",
+            "text": "Természetesen ezen teremtmények Erőssége általában igen gyenge: 1-2 ÉP, így csupán csak nagyobb kínokat átadó, vagy szellemileg igen korlátolt, védtelen elmékre képesek lecsapni. Máskülönben csupán csak az asztrálisan, vagy mentálisan fejlettebb lelkek hulladékán vegetálnak, akiket természetesen nem képesek megtámadni."
+        },
+        {
+            "type": "paragraph",
+            "text": "Náluknál fejlettebb lények csupán akkor jöhetnek létre, ha egy efféle alacsonyabb rendű lény képes rátelepedni egy védtelen lélekre, és azt befolyásolni. Ekkor az adott ember vagy egy érzelem, vagy egy gondolatkör rabja lesz és szinte mániákusan, megszállottan éli meg ezen késztetéseket. Egészen addig, míg el nem telnek, és 50 ÉP felett önálló entitássá nem válnak, azaz öntudatra nem ébrednek, s innentől kezdve fajtájuktól függetlenül kimagasló értelmi, vagy érzelmi intelligenciával bírnak, s ilyenkor általában elhagyják korábbi áldozatukat, hogy más efféle lényekre vadászva növeljék tovább hatalmukat. Céljuk, hogy idővel a Sík nagyobb hatalmú teremtményévé válva horgonyt kerítsenek a való világban is, azaz egy épülethez, vagy természeti tárgyhoz kötve magukat, az ott létezők lelkének hullámaival töltekezzenek."
+        },
+        {
+            "type": "paragraph",
+            "text": "Az Asztrál-, illetve Mentállények alap esetben annyi ÉP-vel bírnak, amennyi az É-jük, őket elpusztítani, vagy legyengíteni erre az érzelem, vagy gondolatgomolyra mért ellentétes alapú érzelmet alkalmazó mágiával, vagy Akaratátvitel mozaikkal, esetleg más akaratátvitel alapú varázslattal lehet; előbbi az Asztrállények, utóbbi a Mentállények ellen hatékony."
+        },
+        {
+            "type": "paragraph",
+            "text": "A lények támadása, és az áldozatot befolyásolása teljesen azonos a lény É-jének megfelelő Asztrál-, vagy Mentál mozaik hatásával."
+        },
+        {
+            "type": "rule",
+            "title": "Asztrál- és Mentállények",
+            "headers": [
+                "Tulajdonság",
+                "Érték"
+            ],
+            "rows": [
+                [
+                    "Előfordulás",
+                    "Gyakori"
+                ],
+                [
+                    "Megjelenők száma",
+                    "Lásd a leírást!"
+                ],
+                [
+                    "Termet",
+                    "—"
+                ],
+                [
+                    "Méretkategória",
+                    "—"
+                ],
+                [
+                    "Sebesség",
+                    "150 (L)"
+                ],
+                [
+                    "Időigény",
+                    "—"
+                ],
+                [
+                    "Kezdeményező érték",
+                    "—"
+                ]
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Ork",
+            "headers": [
+                "Tulajdonság",
+                "Érték"
+            ],
+            "rows": [
+                [
+                    "Előfordulás",
+                    "Gyakori"
+                ],
+                [
+                    "Megjelenők száma",
+                    "10k10"
+                ],
+                [
+                    "Termet",
+                    "E"
+                ],
+                [
+                    "Méretkategória",
+                    "1 vagy forgatott fegyver"
+                ],
+                [
+                    "Sebesség",
+                    "100 (SZ)"
+                ],
+                [
+                    "Időigény",
+                    "3 vagy forgatott fegyver"
+                ]
+            ]
+        }
+    ]
+}

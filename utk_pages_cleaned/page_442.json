@@ -1,0 +1,72 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": false,
+    "section_title": "",
+    "content_blocks": [
+        {
+            "type": "paragraph",
+            "text": "A jelek szerint képes dacolni a sors akaratával, a végzet által a fajokra kiszabott rendeléssel. Ami a hajdani büszke elfek megereszkedett utódait illeti, ők a kontinens peremvidékére szorultak vissza, lépésről lépésre hátrálva az egymást váltó fajok legújabb nemzedékének képviselői, az emberek elől. Elvesztett hatalmuk emléke azonban tovább kísértette őket. Csak számukra érthető okokból beavatkoztak az amund-dzsenn háborúba; hogy kinek az oldalán, azt ma már lehetetlen kideríteni. Az eredmény mindenesetre katasztrofálisnak bizonyult. A három fél nem tartotta többé tiszteletben a természetet és a mágia törvényeit; a rombolás vagyis magába fosztotta őket józan eszüktől, minden belátást és megfontolást kiölt belőlük. Mire küzdelmüket lezárták, az amundokból és a dzsennekből szinte csak hírmondók maradtak, ám az elfek erdeinek helyén is sívó homok hullámzott – Taba el Ibara, a viharok és vándorló dűnék hona."
+        },
+        {
+            "type": "paragraph",
+            "text": "A Pyraron előtti III. évezred küszöbén felgyorsultak az események. Északon Kyriát már belső viszályok gyengítették, és a Sheral-hegység hágóján hamarosan feltűntek az első menekülők. Az elfek meghátrálni kényszerültek az áradat elől, és legszentebb erdejükbe, Tysson Larba húzódtak vissza. Ranagol prófétái őket is megkeresték, szövetséget és testvériséget kínálva nekik Krán határain belül; néhányan éltek az ajánlattal, legtöbbjük azonban gögösen visszautasította."
+        },
+        {
+            "type": "paragraph",
+            "text": "Kyria hanyatlása, az irtóztató háborúk, mágikus viharok elől egyre többen menekültek Északról Délre – mindhiába. A szárba szökkenő emberi civilizációkra mind könyörtelenebb nyomást gyakorolt Krán: az élet a jövevények számára ide-lent sem bizonyult könnyebbnek. Sőt, talán még kilátástalanabb volt ez a küzdelem, hisz a Tizenhármak személyében félistenekkel, az aquirok személyében a múlt sötét titkainak letéteményeseivel kellett szembenézniük."
+        },
+        {
+            "type": "paragraph",
+            "text": "Mindeközben a két ősi nép, az amund és a dzsenn is igyekezett átvészelni az emberiség rohamát. Más-más utat választottak: az amundok elrejtőztek a Taba el Ibara mélyén, és rémtörténetek terjesztésével ijesztették el mindenkit titkos városaik közeléből. A dzsennek fordítottak egyet a dolgon: részévé váltak az emberi társadalomnak, és igyekeztek abban vezető szerephez jutni. Nabu Szikkim helyén hamarosan megszületett a legendás Abadana, s megjelentek a dzsenn vérből származó dzsadok."
+        },
+        {
+            "type": "paragraph",
+            "text": "A Pyraron előtti I. évezred hajnalán a Délvidék Krántól legtávolabb eső részén, a későbbi Shadoni-félsziget déli szegletében az emberi történelem legkülönösebb társadalma jött létre: a godoni birodalom. A nagyhatalmú mágusok irányította ország nyomban felkeltette Krán figyelmét, ám ezúttal – példátlan módon – méltó ellenfelekre akadtak a rettegett Tizenhármak. Kétezer esztendő erőfeszítései, mágiával vívott ütközetek sokasága árán sikerült csak megtörniük Godon erejét, s e két évezred alatt – határaikhoz jóval közelebb – új kultúra sarjadt a Délvidék véres sarából: az erős istenek védelmezte, kitűnő politikusok irányította Pyraroné."
+        },
+        {
+            "type": "paragraph",
+            "text": "Pyraron városának megalapítása korunkban az időszámítás kezdetét jelenti. A végnapjaira gigászivá duzzadt város eredetileg egy ismeretlen vallású, félreeső kolostora volt. A pyraroni istencsalád tagjainak személyében azonban olyan felsőbb lényekre tett szert az emberiség, akik szívén viselték sorsát, és minden más éginél jobban megértették lelkének törvényszerűségeit – nem csoda, hogy Pyraron hite századok alatt ÚTK Ynev vezető vallásává lett, s tartós építményén csak mostanában kezdenek mutatkozni az első repedések. A Délvidéken gombamódra szaporodtak az új isteneket tisztelő városállamok, melyek az ezredfordulóra Pyraronhoz szorosan kötődő, mégis önálló államokká növekedtek."
+        },
+        {
+            "type": "chapter",
+            "title": "A MÚLT BIRODALMAI"
+        },
+        {
+            "type": "section",
+            "title": "Demonikus Óbirodalom"
+        },
+        {
+            "type": "paragraph",
+            "text": "Létéről csak a legtájékozottabb bölcsek némelyike, mibenlétéről senki sem tud. Tény, hogy az emberi faj történetének legsötétebb korszakát fémjelzi, melyben az élők és a démonok világa közti szakadék megszűnni látszott. Ezért egyesek Ranagol sötét mesterkedését, mások az istenek közt dúló belharcokat okolják; jelen írás nem hivatott e sokat vitatott kérdésben dönteni. Kétségtelen tény viszont, hogy Krán – noha mindvégig háborúzott az Óbirodalommal, s nem jelentéktelen szerepet játszott a megdöntésében – szinte teljes mértékben magáévá tette e titokzatos ország örökségét. Innen kerültek ki Ranagol első emberfajú hívei, s a kráni démonlovasok tudománya is óbirodalmi eredetű. A Fekete Határon kívül kevesen ismerik ezt a tiltott hagyatékot, bár egyes bölcsek úgy vélik, hogy a nomád törzsek a démonimádók népének leszármazottai."
+        },
+        {
+            "type": "paragraph",
+            "text": "Ugyanennek a gyanúnak az árnyéka vetül egyébként egy sokkal titokzatosabb és kiismerhetetlenebb népcsoportra is. Lakhelyüket, a Déli Gyűrűhegység csúcsai közt megbúvó kolostorrendszert Dél-Ynev őslakói emelték, még az írott történelem előtti időkben. A szerzetesek azóta is dacolnak a nagyvilágban zajló események sodrával, mintegy kívülállóként szemlélik államok, népek, olykor egyének sorsát."
+        },
+        {
+            "type": "section",
+            "title": "Tysson Lar"
+        },
+        {
+            "type": "paragraph",
+            "text": "Tysson Lar – az elfek nyelvén Szent Erdő – voltaképp nem egyéb a Kráni-félsziget déli csücskénél, a Sötét Hegység gyűrűjén kívül eső, a Lasmosi-öbölbe nyúló terjedelmes földnyelvnél. Pyraron virágzásának idején szinte érintetlen volt még – itt talált menedékre az amund-dzsenn háborúkban elgyötört elfek néhány nemzetsége."
+        },
+        {
+            "type": "paragraph",
+            "text": "Bár létezésének utolsó évezredeiben az elf királyság csupán Tysson Lart jelentette, egykor az egész Délvidékre kiterjedt. Érdekes tény, de fénykorában sem volt számottevően népesebb, mint a végnapokban, sőt, a mai Elfendelben sem élnek többen – ez csupán az elfek életmódjának sajátságával, az ösztönös elhúzódással magyarázható."
+        },
+        {
+            "type": "paragraph",
+            "text": "Középületeket több évezredes történelmük során az elfek kizárólag Tysson Larban emeltek, vagyis megpróbálkoztak a társadalmukból lassan kivesző közösségi érzések újraélesztésével – későn. A világ túllépett rajtuk, el kellett bukniuk."
+        },
+        {
+            "type": "paragraph",
+            "text": "Királyságuk megszületésétől mérő idő és a türelem volt. Az elfek nem tartják magukat harciasnak, a fegyverforgatás náluk az önkifejezés egyik eszköze, művészet, nem pedig mások legyilkolásának tudománya. Igazából nem is tartják méltónak rá a kései fajokat, hogy pergő keresztmetszeteknek véljék; az ő ősi ellenségeik a Krán sötétben szunnyadó aquirok. Kölcsönös gyűlöletük elfeledett korokra nyúlik vissza; ha aquirokkal kerülnék szembe, nem adnának és nem kérnének kegyelmet soha."
+        },
+        {
+            "type": "paragraph",
+            "text": "Ez az olthatatlan ellenségeskedés okozta végül Tysson Lar bukását is. Pyraron szerint 2003-ban négy Birodalmi Légió rohanta le, több Köteles Rend seregével és nagyszámú segédcsapattal megtámogatva. Sem azelőtt, sem azóta nem volt rá"
+        }
+    ]
+}

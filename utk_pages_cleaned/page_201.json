@@ -1,0 +1,56 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": true,
+    "section_title": "FEGYVERLEÍRÁSOK",
+    "content_blocks": [
+        {
+            "type": "paragraph",
+            "text": "Szúró és vágófegyverek. Két nagy csoportra oszthatók: a szorosabb értelemben vett kardok főleg szúrásra használt, egyenes pengével bírnak. A szablyák pengéje enyhén ívelt, így jobb vágófelületet ad. (Gyakran az egyszerűség kedvéért a szablyákat is csak kardnak hívjuk.)"
+        },
+        {
+            "type": "paragraph",
+            "text": "Minden szúró-vágó fegyver alapvető problémája a penge anyagában rejlik. Ynev-szerte igen sokféle anyagból készítenek kardokat, de a legalkalmasabbnak mindig is az acél, illetve ötvözetei bizonyultak. Hagyományos (nem mágikus) módszerekkel a vasat a vasércből csak faszén segítségével lehet kinyerni, így elkerülhetetlen, hogy a vashoz igen kis mennyiségű szén is kerüljön. Ezt az ötvözetet nevezzük acélnak. Hogy az acél milyen tulajdonságokkal bír, azt szén-tartalma határozza meg. Minél több benne a szén, annál ridegebb, keményebb. A színvas gyakorlatilag lágy, rugalmas fém. A kardkovácsok ennek megfelelően örökös dilemma előtt álltak: ha kevés szén kerül a kardba, az ugyan nehezen fog törni, rugalmas lesz, ám lágysága miatt nehéz kiélezni és hamar kicsorbul, netán elgörbül. Ha viszont sok szenet tesznek bele, a penge igen éles és kemény lesz, de egy nagyobb ütés hatására ridegen eltörik. A középút megélése korántsem könnyű feladat; ez jelentette az igazán nagy tudású kovácsmesterek számára a kihívást."
+        },
+        {
+            "type": "paragraph",
+            "text": "A fenti probléma áthidalására több megoldás is született. Egyesek különböző ötvözőkkel megnövelték az acél szívósságát és keménységét – lásd abbitacél. Mások más anyagokat kezdtek használni, de ezek közül csak a mithril bizonyult jobbnak. Megint mások nemzedékeken át tökéletesítették a kovácsolás folyamatát, mígnem olyan fegyvert alkottak, amely szinte tökéletes. Akiknek módjukban állt, mágiával itatták át a kész kardot, ami sosem látott tulajdonságokkal ruházta fel azokat. S akadtak olyanok is – néhány igen fejlett államban –, akik nem a kész kardra alkalmazták a mágiát, hanem maga a kovácsolás folyt varázslatok segítségével. Az összes efféle módszer célravezető, azonban közös tulajdonságuk, hogy nagyon költségesek, így nem igazán hozzáférhetőek bárki halandó számára."
+        },
+        {
+            "type": "paragraph",
+            "text": "Botok. Hosszú bot, rövid bot: A botok között is külön kategóriát alkotnak a harcművészek különféle botjai. Ezek a botok szépen kimunkáltak, gyakran lakkozottak vagy pácoltak – eleve fegyvernek készültek. A hosszú bot 120-180 hüvelyk, és két kézzel forgatják, míg a rövid bot 40-100 hüvelyk és egy kézbe fogják – esetleg kettőt, mindkét kezükben. Iskolák szerint eltérőek a fogástechnikák (egy kézzel, két kézzel, kardszerűen, harmadolva, stb.) és a felhasználási elképzelések is (dőfésre, zúzásra, törésre használt fegyver, esetleg pusztán segédeszköz dobásokhoz, csavarásokhoz, fojtásokhoz stb.), nem csupán az egyes, konkrét csele. Bármilyen ördögi fegyver is azonban egy bot a harcművész kezében, kardművész soha nem fanyalodna rá – legfeljebb az aljnövényzet félretolásához."
+        },
+        {
+            "type": "rule",
+            "title": "Harcművész botok hatékonysága",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Rövid bot technika",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Furkósbot",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "rule",
+            "title": "Buzogányok jellemzői",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        }
+    ]
+}

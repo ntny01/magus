@@ -1,0 +1,236 @@
+{
+    "is_new_chapter": false,
+    "chapter_title": "",
+    "is_new_section": true,
+    "section_title": "Tharr egyedi rituáléi",
+    "content_blocks": [
+        {
+            "type": "rule",
+            "title": "Istenalak",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "Szféra: Halál"
+        },
+        {
+            "type": "paragraph",
+            "text": "Kegy pont: 35"
+        },
+        {
+            "type": "paragraph",
+            "text": "Fohász hossza: 30 kör (5 perc)"
+        },
+        {
+            "type": "paragraph",
+            "text": "Hatótáv: Önmagára"
+        },
+        {
+            "type": "paragraph",
+            "text": "Időtartam: 1 óra"
+        },
+        {
+            "type": "paragraph",
+            "text": "Magasabb szinten Tharr papja képessé válik e fohász segítségével urának alakját magára ölteni. Nincs ennél nagyobb megtiszteltetés a Háromfejű szolgáinak, éppen ezért csakis kivételes esetekben, szakrális események alkalmával. Tharr nagyobb ünnepein stb. használják ezt a fohászt. Kizárólag a jelenlévők között rangban legelöl álló alkalmazhatja, s ha valaki más mégis ehhez a fohászhoz folyamodik, az nyílt kihívásként értékelhető."
+        },
+        {
+            "type": "paragraph",
+            "text": "Amennyiben Tharr méltatlannak találja erre a kegyre, a hatás létrejön és a pap ezután örökre elveszíti ura jóindulatát, és minden szakrális hatalmát."
+        },
+        {
+            "type": "paragraph",
+            "text": "A fohász hatására a pap feje oroszlánfejjé változik, mely mellől egy bak és egy kígyófej nő ki. Az alany ruházata és testének többi része változatlan marad. A fenséges megjelenésen és a neki kijáró tiszteleten kívül más előnyei is vannak ennek a fohásznak."
+        },
+        {
+            "type": "paragraph",
+            "text": "A pap ugyanis megmaradt Kegy pontjait három részre oszthatja, és ha úgy tartja kedve, egyszerre akár három különböző fohászt is alkalmazhat. Mindhárom feje képes a beszédre és az egyidejű cselekvésre. A pap megszüntetheti a fohászt akár az időtartam lejárta előtt is, de erre igen ritkán kerül sor."
+        },
+        {
+            "type": "rule",
+            "title": "Patkányidézés",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "Szféra: Lélek"
+        },
+        {
+            "type": "paragraph",
+            "text": "Kegy pont: 4"
+        },
+        {
+            "type": "paragraph",
+            "text": "Fohász hossza: 2 szegmens"
+        },
+        {
+            "type": "paragraph",
+            "text": "Hatótáv: 200 ynevi láb sugarú kör"
+        },
+        {
+            "type": "paragraph",
+            "text": "Időtartam: 30 perc"
+        },
+        {
+            "type": "paragraph",
+            "text": "A Tharr-papok különleges fohásza, mellyel 30+5k10 patkányt képesek magukhoz szólítani és ellenfeleikre zúdítani. A fohász létrehozásához mindössze 2 szegmensnyi időre, egyetlen visításra van szükség, melynek élethűen kell a patkányok hangját utánozni, különben a fohász hatástalan marad (ehhez Hangutánzás képzettség legalább 2. fokára van szükség)."
+        },
+        {
+            "type": "paragraph",
+            "text": "A patkányok 1k6 perc alatt érkeznek és csak olyan helyen érdemes hívásukhoz folyamodni, ahol természetesen előfordulnak, hiszen máskülönben egy sem jelenik meg."
+        },
+        {
+            "type": "paragraph",
+            "text": "A patkányok mindenben engedelmeskednek a pap parancsainak, és igen hasznos segítőnek bizonyulhatnak, akár harcban is, ám az Időtartam lejárta előtt minden patkánynak el kell pusztulnia, hiszen ezen állatok Tharr tanításai szerint olyan halottak voltak a tisztességre, hogy haláluk után a Lindigassra, Tharr vérszférájára kerüljenek, és lelkük azóta is itt sínylődik bebocsátásra várva. Mivel szolgálatukkal kiérdemelték, hogy az isten magához vegye őket, ezért ha a pap egyet is futni hagy a szolgálat végeztével, akkor istene haragját vonja a fejére, maximális Kegy pontja 1-gyel csökken."
+        },
+        {
+            "type": "paragraph",
+            "text": "A patkányok harci képességeiről a Bestiárium c. fejezetben olvashatsz bővebben a 479. oldalon."
+        },
+        {
+            "type": "rule",
+            "title": "Vérvízivatar",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "Szféra: Halál"
+        },
+        {
+            "type": "paragraph",
+            "text": "Kegy pont: 18"
+        },
+        {
+            "type": "paragraph",
+            "text": "Fohász hossza: 3 szegmens"
+        },
+        {
+            "type": "paragraph",
+            "text": "Hatótáv: 20 ynevi láb sugarú kör"
+        },
+        {
+            "type": "paragraph",
+            "text": "Időtartam: 6 kör (1 perc)"
+        },
+        {
+            "type": "paragraph",
+            "text": "E fohászt inkább lélektani fegyverként használják a Háromfejű papjai, hisz konkrét sérülést nem okozhatnak vele. Hatására a kijelölt területen hihetetlen mennyiségű vér szakad alá zivatarszerűen, akárha valamely ciszterna fala repedt volna meg. Miközben az érintett terület falaiból ömleni kezd a vér, pillanatok alatt iszamosabbá változtatva a környéket."
+        },
+        {
+            "type": "paragraph",
+            "text": "Az ily módon teremtett anyag valódi vér, amit azonban semmiféle céllal nem lehet felhasználni, az időtartam lejártával visszaszivárog a Lindigassra, ahonnan aláhullott."
+        },
+        {
+            "type": "paragraph",
+            "text": "Az itt tartózkodók Akaraterőpróbát kötelesek tenni, amit ha elvetnének akkor a körben a döbbenettől nem képesek gyorsan és hatékonyan cselekedni. Harcértékeikhez a Harc Kábulatán módosítói járulnak és következő varázslatukat vagy fohászukat csak 5 szegmenssel később kezdhetik el megidézni. KÉ: -10, TÉ: -20, VÉ: -10, CÉ: -30"
+        },
+        {
+            "type": "paragraph",
+            "text": "Uwel egyedi rituáléi"
+        },
+        {
+            "type": "rule",
+            "title": "Bizonyosság",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "Szféra: Lélek"
+        },
+        {
+            "type": "paragraph",
+            "text": "Kegy pont: 8"
+        },
+        {
+            "type": "paragraph",
+            "text": "Fohász hossza: 3 szegmens"
+        },
+        {
+            "type": "paragraph",
+            "text": "Hatótáv: Önmagára"
+        },
+        {
+            "type": "paragraph",
+            "text": "Időtartam: Egyszeri"
+        },
+        {
+            "type": "paragraph",
+            "text": "Uwel szolgái sem szívesen tévednek, főképp nem akkor, ha egy tévedés ártatlan életek kioltásához vezet. Éppen az ilyen sajnálatos balesetek kiküszöbölésére hívatott ez a fohász. Jóllehet az esetek többségében Uwel hívei egyértelműen tudják bizonyítani ellenfelük bűnösségét, néha még ők maguk is meginoghatnak. Ilyenkor használatos ez a fohász, amely meggyőzheti őket cselekedeteik helyességéről. Ha ugyanis áldozatuk valóban bűnös, a bosszúállókat jótékony bizonyosság árasztja el tetteik helyességéről."
+        },
+        {
+            "type": "rule",
+            "title": "Jutalom",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "Szféra: Lélek"
+        },
+        {
+            "type": "paragraph",
+            "text": "Kegy pont: 18"
+        },
+        {
+            "type": "paragraph",
+            "text": "Fohász hossza: 1 kör"
+        },
+        {
+            "type": "paragraph",
+            "text": "Hatótáv: Önmagára"
+        },
+        {
+            "type": "paragraph",
+            "text": "Időtartam: 1 óra"
+        },
+        {
+            "type": "paragraph",
+            "text": "Az igaz bosszú jutalmaként is szokás emlegetni ezt a fohászt, mellyel Uwel a jogos elégtételt honorálja. A fohász hatóideje alatt ugyanis – ha valóban igaz ügyért harcolnak – Uwel szolgái nem szenvedik el az első ÉP-t sebző találatot. Az ellenfél hiába üt súlyos sebet a paplovagon, a sérülés azonnal és nyomtalanul beforr. Kizárólag az összecsapás előtt használható, harc közbeni megidézése lehetetlen. Arra is volt azonban példa, hogy a bosszúálló mégis súlyosan megsebesült leszámolás közben. Ezzel számukra is nyilvánvalóvá válik tévedésük, s ha csak tehetik, bocsánatot remélve felhagynak a küzdelemmel."
+        },
+        {
+            "type": "rule",
+            "title": "Kopó",
+            "headers": [],
+            "rows": [
+                []
+            ]
+        },
+        {
+            "type": "paragraph",
+            "text": "Szféra: Élet"
+        },
+        {
+            "type": "paragraph",
+            "text": "Kegy pont: 18"
+        },
+        {
+            "type": "paragraph",
+            "text": "Fohász hossza: 1 kör"
+        },
+        {
+            "type": "paragraph",
+            "text": "Hatótáv: 20 ynevi láb sugarú kör"
+        },
+        {
+            "type": "paragraph",
+            "text": "Időtartam: 1 nap"
+        },
+        {
+            "type": "paragraph",
+            "text": "A bosszúállás paplovagjai nem ritkán hónapokon keresztül üldöznek egyeseket abban a reményben, hogy istenük segedelmével lecsaphatnak rá. Megkönnyíti a dolgukat, ha"
+        }
+    ]
+}
