@@ -509,9 +509,9 @@
             </div>
             <button class="btn btn-accent" id="json-exporter">Teljes Állapot Mentése (JSON)</button>
         </div>
-        <div style="display:flex;align-items:center;gap:.5rem;flex-wrap:wrap;margin-top:.4rem;">
-  <span id="auth-username" style="font-size:.78rem;color:#d4af37;font-family:'Segoe UI',sans-serif;"></span>
-  <button onclick="doLogout()" style="background:rgba(248,113,113,0.08);border:1px solid rgba(248,113,113,0.2);color:#f87171;font-size:.75rem;padding:.3rem .7rem;border-radius:.4rem;cursor:pointer;">Kilépés</button>
+<div style="display:flex;align-items:center;justify-content:space-between;margin-top:.5rem;">
+    <span id="auth-username" style="font-size:.78rem;color:#d4af37;"></span>
+    <button onclick="doLogout()" style="background:rgba(248,113,113,0.08);border:1px solid rgba(248,113,113,0.2);color:#f87171;font-size:.75rem;padding:.3rem .7rem;border-radius:.4rem;cursor:pointer;">Kilépés</button>
 </div>
     </header>
 
@@ -1293,7 +1293,13 @@
   trySetUsername()
 
   async function doLogout() {
-    await window._sb.auth.signOut()
+    try {
+      const sb = supabase.createClient(
+        'https://nmzdvsnoomusukkczuav.supabase.co',
+        'sb_publishable_JCRzD-ElN1os72wkfX_DKw_PoOTgnYR'
+      )
+      await sb.auth.signOut()
+    } catch(e) {}
     window.location.href = 'login.html'
   }
 </script>

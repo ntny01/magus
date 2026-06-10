@@ -1165,7 +1165,13 @@
   trySetUsername()
 
   async function doLogout() {
-    await window._sb.auth.signOut()
+    try {
+      const sb = supabase.createClient(
+        'https://nmzdvsnoomusukkczuav.supabase.co',
+        'sb_publishable_JCRzD-ElN1os72wkfX_DKw_PoOTgnYR'
+      )
+      await sb.auth.signOut()
+    } catch(e) {}
     window.location.href = 'login.html'
   }
 </script>
