@@ -11,7 +11,7 @@
     const { data: { session } } = await sb.auth.getSession()
     if (!session) { window.location.href = 'login.html'; return }
     const { data: profile } = await sb.from('user_profiles')
-      .select('status, role').eq('id', session.user.id).single()
+      .select('status, role, display_name').eq('id', session.user.id).single()
     if (!profile || profile.status !== 'active') {
       await sb.auth.signOut()
       window.location.href = 'login.html'
