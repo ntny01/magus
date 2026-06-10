@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>M.A.G.U.S. – Belépés</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap');
+
+    :root {
+      --bg-main:#020617;
+      --bg-card:#0f172a;
+      --border:rgba(212,175,55,0.18);
+      --border-soft:rgba(255,255,255,0.06);
+      --text:#e2e8f0;
+      --muted:#94a3b8;
+      --gold:#d4af37;
+      --gold-glow:rgba(212,175,55,0.3);
+      --accent:#10b981;
+      --accent-h:#34d399;
+      --red:#f87171;
+    }
+
+    *,*::before,*::after { box-sizing:border-box; margin:0; padding:0; }
+
+    body {
+      font-family:'Inter',sans-serif;
+      background:
+        radial-gradient(ellipse at 20% 10%, rgba(212,175,55,.07) 0%, transparent 40%),
+        radial-gradient(ellipse at 80% 80%, rgba(16,185,129,.06) 0%, transparent 40%),
+        radial-gradient(ellipse at 50% 50%, rgba(30,10,60,.4) 0%, transparent 70%),
+        linear-gradient(160deg,#020617 0%,#050e1f 50%,#020a14 100%);
+      color:var(--text);
+      min-height:100vh;
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      justify-content:center;
+      overflow-x:hidden;
+    }
+
+    /* ===== PARTICLES ===== */
+    #magic-particles { position:fixed; inset:0; pointer-events:none; z-index:0; overflow:hidden; }
+    .rune { position:absolute; color:rgba(212,175,55,0.1); animation:floatRune linear infinite; pointer-events:none; }
+    @keyframes floatRune {
+      from { transform:translateY(100vh) rotate(0deg); opacity:0; }
+      8% { opacity:1; } 90% { opacity:.8; }
+      to { transform:translateY(-120px) rotate(360deg); opacity:0; }
+    }
+
+    /* ===== LOGO AREA ===== */
+    .logo-area {
+      text-align:center;
+      margin-bottom:2rem;
+      position:relative;
+      z-index:1;
+    }
+    .logo-title {
+      font-family:'Cinzel',serif;
+      color:var(--gold);
+      font-size:2.2rem;
+      letter-spacing:.18em;
+      text-shadow:0 0 40px var(--gold-glow), 0 0 80px rgba(212,175,55,0.15);
+    }
+    .logo-sub {
+      font-family:'Cinzel',serif;
+      color:var(--muted);
+      font-size:.8rem;
+      letter-spacing:.25em;
+      margin-top:.35rem;
+      text-transform:uppercase;
+    }
+    .logo-divider {
+      width:120px;
+      height:1px;
+      background:linear-gradient(90deg, transparent, var(--gold), transparent);
+      margin:.85rem auto 0;
+    }
+
+    /* ===== CARD ===== */
+    .card {
+      background:rgba(15,23,42,0.92);
+      border:1px solid var(--border);
+      border-radius:1.25rem;
+      padding:2rem 2.25rem;
+      width:100%;
+      max-width:420px;
+      position:relative;
+      z-index:1;
+      backdrop-filter:blur(24px);
+      box-shadow:0 25px 60px rgba(0,0,0,.5), 0 0 0 1px rgba(212,175,55,0.05);
+    }
+
+    /* ===== TABS ===== */
+    .tabs {
+      display:flex;
+      gap:.5rem;
+      margin-bottom:1.75rem;
+      background:rgba(255,255,255,0.03);
+      border:1px solid var(--border-soft);
+      border-radius:.75rem;
+      padding:.25rem;
+    }
+    .tab-btn {
+      flex:1;
+      background:none;
+      border:none;
+      color:var(--muted);
+      font-family:'Cinzel',serif;
+      font-size:.78rem;
+      letter-spacing:.08em;
+      padding:.55rem .5rem;
+      border-radius:.55rem;
+      cursor:pointer;
+      transition:all .2s;
+    }
+    .tab-btn.active {
+      background:rgba(212,175,55,0.12);
+      color:var(--gold);
+      border:1px solid rgba(212,175,55,0.2);
+    }
+
+    /* ===== FORM ===== */
+    .form-panel { display:none; }
+    .form-panel.active { display:block; }
+
+    .field {
+      margin-bottom:1.1rem;
+    }
+    .field label {
+      display:block;
+      font-size:.75rem;
+      font-weight:600;
+      color:var(--muted);
+      letter-spacing:.06em;
+      text-transform:uppercase;
+      margin-bottom:.4rem;
+    }
+    .field input {
+      width:100%;
+      background:rgba(255,255,255,0.04);
+      border:1px solid rgba(255,255,255,0.1);
+      border-radius:.6rem;
+      color:var(--text);
+      font-family:'Inter',sans-serif;
+      font-size:.9rem;
+      padding:.65rem .9rem;
+      transition:border-color .18s, box-shadow .18s;
+      outline:none;
+    }
+    .field input:focus {
+      border-color:rgba(212,175,55,0.4);
+      box-shadow:0 0 0 3px rgba(212,175,55,0.08);
+    }
+    .field input::placeholder { color:rgba(148,163,184,0.5); }
+
+    /* ===== REMEMBER ME ===== */
+    .remember-row {
+      display:flex;
+      align-items:center;
+      gap:.6rem;
+      margin-bottom:1.4rem;
+    }
+    .remember-row input[type="checkbox"] {
+      width:16px; height:16px;
+      accent-color:var(--gold);
+      cursor:pointer;
+      flex-shrink:0;
+    }
+    .remember-row label {
+      font-size:.8rem;
+      color:var(--muted);
+      cursor:pointer;
+      user-select:none;
+    }
+
+    /* ===== SUBMIT BUTTON ===== */
+    .btn-submit {
+      width:100%;
+      background:linear-gradient(135deg, rgba(212,175,55,0.15), rgba(212,175,55,0.08));
+      border:1px solid rgba(212,175,55,0.3);
+      color:var(--gold);
+      font-family:'Cinzel',serif;
+      font-size:.85rem;
+      letter-spacing:.1em;
+      padding:.75rem;
+      border-radius:.75rem;
+      cursor:pointer;
+      transition:all .2s;
+      text-shadow:0 0 12px var(--gold-glow);
+    }
+    .btn-submit:hover {
+      background:linear-gradient(135deg, rgba(212,175,55,0.25), rgba(212,175,55,0.15));
+      border-color:rgba(212,175,55,0.5);
+      box-shadow:0 0 20px rgba(212,175,55,0.15);
+    }
+    .btn-submit:disabled {
+      opacity:.5;
+      cursor:not-allowed;
+    }
+
+    /* ===== MESSAGES ===== */
+    .msg {
+      font-size:.82rem;
+      padding:.65rem .9rem;
+      border-radius:.6rem;
+      margin-bottom:1rem;
+      display:none;
+    }
+    .msg.error {
+      background:rgba(248,113,113,0.1);
+      border:1px solid rgba(248,113,113,0.25);
+      color:var(--red);
+      display:block;
+    }
+    .msg.success {
+      background:rgba(16,185,129,0.1);
+      border:1px solid rgba(16,185,129,0.25);
+      color:var(--accent-h);
+      display:block;
+    }
+    .msg.info {
+      background:rgba(212,175,55,0.08);
+      border:1px solid rgba(212,175,55,0.2);
+      color:var(--gold);
+      display:block;
+    }
+
+    /* ===== FOOTER ===== */
+    .card-footer {
+      margin-top:1.25rem;
+      text-align:center;
+      font-size:.75rem;
+      color:rgba(148,163,184,0.4);
+      font-family:'Cinzel',serif;
+      letter-spacing:.08em;
+    }
+
+    @media (max-width:480px) {
+      .card { padding:1.5rem 1.25rem; margin:1rem; }
+      .logo-title { font-size:1.7rem; }
+    }
+  </style>
+</head>
+<body>
+
+<div id="magic-particles"></div>
+
+<div class="logo-area">
+  <div class="logo-title">M.A.G.U.S.</div>
+  <div class="logo-sub">Újabb Tavaszi Kalandok</div>
+  <div class="logo-divider"></div>
+</div>
+
+<div class="card">
+
+  <div class="tabs">
+    <button class="tab-btn active" onclick="switchTab('login')">Belépés</button>
+    <button class="tab-btn" onclick="switchTab('register')">Regisztráció</button>
+  </div>
+
+  <!-- LOGIN -->
+  <div id="panel-login" class="form-panel active">
+    <div id="login-msg" class="msg"></div>
+    <div class="field">
+      <label>Email</label>
+      <input type="email" id="login-email" placeholder="karakter@magus.hu" autocomplete="email">
+    </div>
+    <div class="field">
+      <label>Jelszó</label>
+      <input type="password" id="login-pass" placeholder="••••••••" autocomplete="current-password">
+    </div>
+    <div class="remember-row">
+      <input type="checkbox" id="remember-me" checked>
+      <label for="remember-me">Jegyezz meg ezen az eszközön</label>
+    </div>
+    <button class="btn-submit" onclick="doLogin()">Belépés</button>
+  </div>
+
+  <!-- REGISTER -->
+  <div id="panel-register" class="form-panel">
+    <div id="reg-msg" class="msg"></div>
+    <div class="field">
+      <label>Megjelenített név</label>
+      <input type="text" id="reg-name" placeholder="pl. Aranytoll Benedek" autocomplete="nickname">
+    </div>
+    <div class="field">
+      <label>Email</label>
+      <input type="email" id="reg-email" placeholder="karakter@magus.hu" autocomplete="email">
+    </div>
+    <div class="field">
+      <label>Jelszó</label>
+      <input type="password" id="reg-pass" placeholder="min. 8 karakter" autocomplete="new-password">
+    </div>
+    <button class="btn-submit" onclick="doRegister()">Regisztráció küldése</button>
+  </div>
+
+</div>
+
+<div class="card-footer" style="margin-top:1.5rem;">✦ &nbsp; Kalandok könyve &nbsp; ✦</div>
+
+<!-- SUPABASE SDK -->
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script>
+  // ─── KONFIGURÁCIÓ ───────────────────────────────────────────────
+  const SUPABASE_URL = 'https://nmzdvsnoomusukkczuav.supabase.co'
+  const SUPABASE_ANON_KEY = 'IDE_KERÜL_AZ_ANON_KEY'
+  const sb = supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY)
+
+  // ─── PARTICLES ──────────────────────────────────────────────────
+  const RUNES = ['✦','ᚱ','ᛟ','✧','☽','☼','᛫','ᚢ','ᚦ']
+  const pc = document.getElementById('magic-particles')
+  function spawnRune() {
+    const r = document.createElement('div')
+    r.className = 'rune'
+    r.innerText = RUNES[Math.floor(Math.random() * RUNES.length)]
+    r.style.left = Math.random() * 100 + 'vw'
+    r.style.animationDuration = 12 + Math.random() * 16 + 's'
+    r.style.fontSize = 11 + Math.random() * 16 + 'px'
+    pc.appendChild(r)
+    setTimeout(() => r.remove(), 28000)
+  }
+  setInterval(spawnRune, 1400)
+
+  // ─── TAB VÁLTÁS ─────────────────────────────────────────────────
+  function switchTab(tab) {
+    document.querySelectorAll('.tab-btn').forEach((b, i) => {
+      b.classList.toggle('active', (i === 0) === (tab === 'login'))
+    })
+    document.getElementById('panel-login').classList.toggle('active', tab === 'login')
+    document.getElementById('panel-register').classList.toggle('active', tab === 'register')
+    clearMsgs()
+  }
+
+  function clearMsgs() {
+    document.getElementById('login-msg').className = 'msg'
+    document.getElementById('reg-msg').className = 'msg'
+  }
+
+  function showMsg(id, type, text) {
+    const el = document.getElementById(id)
+    el.className = 'msg ' + type
+    el.textContent = text
+  }
+
+  // ─── HA MÁR BE VAN LÉPVE, ÁTIRÁNYÍTÁS ──────────────────────────
+  async function checkSession() {
+    const { data: { session } } = await sb.auth.getSession()
+    if (session) {
+      await redirectIfActive(session.user.id)
+    }
+  }
+  checkSession()
+
+  async function redirectIfActive(userId) {
+    const { data: profile } = await sb.from('user_profiles')
+      .select('status, role')
+      .eq('id', userId)
+      .single()
+    if (profile?.status === 'active') {
+      window.location.href = 'index.html'
+    }
+  }
+
+  // ─── BELÉPÉS ────────────────────────────────────────────────────
+  async function doLogin() {
+    const email = document.getElementById('login-email').value.trim()
+    const pass  = document.getElementById('login-pass').value
+    const remember = document.getElementById('remember-me').checked
+
+    if (!email || !pass) {
+      showMsg('login-msg', 'error', 'Töltsd ki az összes mezőt.')
+      return
+    }
+
+    const btn = document.querySelector('#panel-login .btn-submit')
+    btn.disabled = true
+    btn.textContent = 'Belépés...'
+
+    const { data, error } = await sb.auth.signInWithPassword({ email, password: pass })
+
+    if (error) {
+      showMsg('login-msg', 'error', 'Hibás email vagy jelszó.')
+      btn.disabled = false
+      btn.textContent = 'Belépés'
+      return
+    }
+
+    // Státusz ellenőrzés
+    const { data: profile } = await sb.from('user_profiles')
+      .select('status, role')
+      .eq('id', data.user.id)
+      .single()
+
+    if (!profile || profile.status === 'pending') {
+      await sb.auth.signOut()
+      showMsg('login-msg', 'info', 'A regisztrációdat még nem hagytuk jóvá. Kérlek várj értesítést.')
+      btn.disabled = false
+      btn.textContent = 'Belépés'
+      return
+    }
+
+    // Ha nem kell emlékezni, session csak böngésző bezárásáig él
+    if (!remember) {
+      await sb.auth.updateSession({ ...data.session, expires_in: 0 })
+    }
+
+    window.location.href = 'index.html'
+  }
+
+  // Enter gomb támogatás
+  document.addEventListener('keydown', e => {
+    if (e.key !== 'Enter') return
+    const loginActive = document.getElementById('panel-login').classList.contains('active')
+    if (loginActive) doLogin()
+    else doRegister()
+  })
+
+  // ─── REGISZTRÁCIÓ ───────────────────────────────────────────────
+  async function doRegister() {
+    const name  = document.getElementById('reg-name').value.trim()
+    const email = document.getElementById('reg-email').value.trim()
+    const pass  = document.getElementById('reg-pass').value
+
+    if (!name || !email || !pass) {
+      showMsg('reg-msg', 'error', 'Töltsd ki az összes mezőt.')
+      return
+    }
+    if (pass.length < 8) {
+      showMsg('reg-msg', 'error', 'A jelszó legalább 8 karakter legyen.')
+      return
+    }
+
+    const btn = document.querySelector('#panel-register .btn-submit')
+    btn.disabled = true
+    btn.textContent = 'Küldés...'
+
+    const { data, error } = await sb.auth.signUp({ email, password: pass })
+
+    if (error) {
+      showMsg('reg-msg', 'error', error.message === 'User already registered'
+        ? 'Ez az email cím már regisztrálva van.'
+        : 'Hiba a regisztráció során. Próbáld újra.')
+      btn.disabled = false
+      btn.textContent = 'Regisztráció küldése'
+      return
+    }
+
+    // user_profiles sor létrehozása pending státusszal
+    await sb.from('user_profiles').insert({
+      id: data.user.id,
+      display_name: name,
+      role: 'player',
+      status: 'pending'
+    })
+
+    // Azonnal kijelentkeztetjük, nem léphet be amíg nincs jóváhagyva
+    await sb.auth.signOut()
+
+    showMsg('reg-msg', 'success', 'Kérelem elküldve! Értesítünk amint jóváhagytuk a regisztrációdat.')
+    btn.disabled = false
+    btn.textContent = 'Regisztráció küldése'
+    document.getElementById('reg-name').value = ''
+    document.getElementById('reg-email').value = ''
+    document.getElementById('reg-pass').value = ''
+  }
+</script>
+
+</body>
+</html>
