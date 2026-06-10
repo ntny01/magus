@@ -306,7 +306,7 @@
   const SUPABASE_URL = 'https://nmzdvsnoomusukkczuav.supabase.co'
   const SUPABASE_ANON_KEY = 'sb_publishable_JCRzD-ElN1os72wkfX_DKw_PoOTgnYR'
 const sb = supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY, 
-  { auth: { persistSession: true, storageKey: 'magus-auth', storage: window.sessionStorage } }
+{ auth: { persistSession: true, storageKey: 'magus-auth', storage: window.localStorage } }
 )
 
   // ─── PARTICLES ──────────────────────────────────────────────────

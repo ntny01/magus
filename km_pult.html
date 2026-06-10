@@ -1169,7 +1169,7 @@
 const sb = supabase.createClient(
   'https://nmzdvsnoomusukkczuav.supabase.co',
   'sb_publishable_JCRzD-ElN1os72wkfX_DKw_PoOTgnYR',
-  { auth: { persistSession: true, storageKey: 'magus-auth', storage: window.sessionStorage } }
+{ auth: { persistSession: true, storageKey: 'magus-auth', storage: window.localStorage } }
 )
       await sb.auth.signOut()
     } catch(e) {}
