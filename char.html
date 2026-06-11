@@ -498,6 +498,7 @@ const sb = supabase.createClient(
         <div id="charList"><div class="dd-item" style="color:var(--muted);cursor:default;">Betöltés...</div></div>
         <div class="dd-section" style="margin-top:.25rem;">Aktuális</div>
         <div class="dd-item" onclick="saveCurrentChar()">💾 Mentés</div>
+        <div class="dd-item" onclick="newChar()">✨ Új karakter</div>
         <div class="dd-item danger" onclick="resetSheet();closeAllDD()">↺ Alaphelyzet</div>
       </div>
     </div>
@@ -508,10 +509,6 @@ const sb = supabase.createClient(
       <div class="dd-menu" id="templateDD">
         <div class="dd-section">Elérhető sablonok</div>
         <div id="templateList"><div class="dd-item" style="color:var(--muted);cursor:default;">Betöltés...</div></div>
-        <div id="adminTemplateSection" style="display:none;">
-          <div class="dd-section" style="margin-top:.25rem;">Admin</div>
-          <div class="dd-item" onclick="saveAsTemplate()">⬆️ Feltöltés sablonként</div>
-        </div>
       </div>
     </div>
 
@@ -1257,26 +1254,34 @@ renderAll();
     else console.error('Mentési hiba:', error)
   }
 
+  // ─── ÚJ KARAKTER ────────────────────────────────────────────────
+  window.newChar = function() {
+    closeAllDD()
+    if (!confirm('Új karaktert kezdesz? A jelenlegi mentetlen változtatások elvesznek.')) return
+    window._currentSheetId = null
+    resetSheet()
+  }
+
   // ─── KARAKTER MENTÉS ────────────────────────────────────────────
   window.saveCurrentChar = async function() {
     closeAllDD()
     if (!window._sb || !window._userProfile) return
     const { data: { user } } = await window._sb.auth.getUser()
     if (!user) return
-
     const charName = sheetData.info.name || 'Névtelen karakter'
-
     if (window._currentSheetId) {
-      // Frissítés
-      await window._sb.from('character_sheets').update({
+      // Meglévő frissítése
+      const { error } = await window._sb.from('character_sheets').update({
         name: charName,
         faj: sheetData.info.faj || '',
         kaszt: sheetData.info.kaszt || '',
         data: sheetData,
         updated_at: new Date().toISOString()
-      }).eq('id', window._currentSheetId)
+      }).eq('id', window._currentSheetId).eq('user_id', user.id)
+      if (!error) window.showSaveIndicator()
+      else console.error('Mentési hiba:', error)
     } else {
-      // Új karakter
+      // Új karakter létrehozása
       const { data, error } = await window._sb.from('character_sheets').insert({
         user_id: user.id,
         name: charName,
@@ -1286,19 +1291,22 @@ renderAll();
         is_template: false,
         template_visible: false
       }).select().single()
-      if (!error && data) window._currentSheetId = data.id
+      if (!error && data) {
+        window._currentSheetId = data.id
+        window.showSaveIndicator()
+      } else console.error('Mentési hiba:', error)
     }
-    window.showSaveIndicator()
     await window.loadCharList()
   }
 
   // ─── KARAKTER BETÖLTÉS ──────────────────────────────────────────
-  window.loadChar = async function(id) {
+  window.loadChar = async function(id, isTemplate) {
     closeAllDD()
     const { data } = await window._sb.from('character_sheets').select('*').eq('id', id).single()
     if (data && data.data) {
       sheetData = data.data
-      window._currentSheetId = data.id
+      // Sablon betöltésekor ne írjuk felül az eredetit — új karakterként kezeljük
+      window._currentSheetId = isTemplate ? null : data.id
       document.getElementById('vampireTitle').value = sheetData.vampireTitle || 'KARAKTER'
       const infoKeys = ['name','faj','kaszt','isten','kronika','xp']
       infoKeys.forEach(k => {
@@ -1322,7 +1330,7 @@ renderAll();
     await window.loadCharList()
   }
 
-  // ─── KARAKTER LISTA BETÖLTÉS ────────────────────────────────────
+  // ─── KARAKTER LISTA ─────────────────────────────────────────────
   window.loadCharList = async function() {
     if (!window._sb) return
     const { data: { user } } = await window._sb.auth.getUser()
@@ -1338,38 +1346,14 @@ renderAll();
       return
     }
     el.innerHTML = data.map(c => `
-      <div class="dd-item" onclick="window.loadChar('${c.id}')">
+      <div class="dd-item" onclick="window.loadChar('${c.id}', false)" style="${window._currentSheetId===c.id?'background:rgba(212,175,55,.07);':''}" >
         <span style="flex:1;">
-          <span style="font-weight:600;">${c.name || 'Névtelen'}</span>
-          ${c.faj || c.kaszt ? `<span style="font-size:.72rem;color:var(--muted);display:block;">${[c.faj,c.kaszt].filter(Boolean).join(' · ')}</span>` : ''}
+          <span style="font-weight:600;">${c.name || 'Névtelen'}${window._currentSheetId===c.id?' ✦':''}</span>
+          ${c.faj||c.kaszt?`<span style="font-size:.72rem;color:var(--muted);display:block;">${[c.faj,c.kaszt].filter(Boolean).join(' · ')}</span>`:''}
         </span>
         <span class="dd-item-del" onclick="window.deleteChar('${c.id}', event)" title="Törlés">✕</span>
       </div>
     `).join('')
-  }
-
-  // ─── SABLON MENTÉS (csak admin) ─────────────────────────────────
-  window.saveAsTemplate = async function() {
-    closeAllDD()
-    if (!window._sb || !window._userProfile) return
-    if (window._userProfile.role !== 'admin') return
-    const { data: { user } } = await window._sb.auth.getUser()
-    if (!user) return
-    const templateName = sheetData.info.name || sheetData.vampireTitle || 'Névtelen sablon'
-    const { error } = await window._sb.from('character_sheets').insert({
-      user_id: user.id,
-      name: templateName,
-      faj: sheetData.info.faj || '',
-      kaszt: sheetData.info.kaszt || '',
-      data: sheetData,
-      is_template: true,
-      template_visible: true
-    })
-    if (!error) {
-      window.showSaveIndicator()
-      await window.loadTemplateList()
-      alert(`"${templateName}" sablon feltöltve!`)
-    }
   }
 
   // ─── SABLON LISTA ───────────────────────────────────────────────
@@ -1386,10 +1370,10 @@ renderAll();
       return
     }
     el.innerHTML = data.map(t => `
-      <div class="dd-item" onclick="window.loadChar('${t.id}');window._currentSheetId=null;">
+      <div class="dd-item" onclick="window.loadChar('${t.id}', true)">
         <span style="flex:1;">
           <span style="font-weight:600;">${t.name}</span>
-          ${t.faj || t.kaszt ? `<span style="font-size:.72rem;color:var(--muted);display:block;">${[t.faj,t.kaszt].filter(Boolean).join(' · ')}</span>` : ''}
+          ${t.faj||t.kaszt?`<span style="font-size:.72rem;color:var(--muted);display:block;">${[t.faj,t.kaszt].filter(Boolean).join(' · ')}</span>`:''}
         </span>
       </div>
     `).join('')
@@ -1400,25 +1384,16 @@ renderAll();
     if (!window._sb) { setTimeout(window.loadFromSupabase, 100); return }
     const { data: { user } } = await window._sb.auth.getUser()
     if (!user) return
-
-    // Admin sablon feltöltés gomb megjelenítése
-    if (window._userProfile?.role === 'admin') {
-      const adminSec = document.getElementById('adminTemplateSection')
-      if (adminSec) adminSec.style.display = 'block'
-    }
-
-    // Listák betöltése
     await window.loadCharList()
     await window.loadTemplateList()
-
-    // Legutóbbi karakter betöltése
+    // Legutóbbi saját karakter betöltése
     const { data } = await window._sb.from('character_sheets')
       .select('*')
       .eq('user_id', user.id)
       .eq('is_template', false)
       .order('updated_at', { ascending: false })
       .limit(1)
-      .single()
+      .maybeSingle()
     if (data && data.data) {
       sheetData = data.data
       window._currentSheetId = data.id
