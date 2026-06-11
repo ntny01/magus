@@ -561,7 +561,7 @@ const sb = supabase.createClient(
     .search-container.mobile-open { display: block; }
     #mobileSearchBtn { display: flex !important; }
 
-    .icon-btn, .header-icon-btn, #mapLinkBtn {
+    .icon-btn, .header-icon-btn {
         min-width: 44px !important;
         min-height: 44px !important;
         width: 44px !important;
@@ -1234,10 +1234,10 @@ tbody tr:hover{
 
     <!-- Mobilos alsó navigációs sáv -->
     <div id="mobileBottomBar">
-        <a href="km_pult.html" target="_blank" class="mobile-nav-btn" title="Kalandmesteri Pult">🛡️<span>KM Pult</span></a>
-        <a href="ynev_terkep.html" target="_blank" class="mobile-nav-btn" title="Interaktív Térkép">🗺️<span>Térkép</span></a>
         <a href="char.html" target="_blank" class="mobile-nav-btn" title="Karakterlap">🧙‍♂️<span>Karakter</span></a>
         <a href="karakter_kezelo.html" target="_blank" class="mobile-nav-btn" title="Karakter Segéd">📊<span>Segéd</span></a>
+        <a href="ynev_terkep.html" target="_blank" class="mobile-nav-btn" title="Interaktív Térkép">🗺️<span>Térkép</span></a>
+        <a href="km_pult.html" target="_blank" class="mobile-nav-btn" id="mobileKmBtn" title="Kalandmesteri Pult" style="display:none;">🛡️<span>KM Pult</span></a>
         <div class="mobile-font-controls">
             <div class="mobile-font-row">
                 <button class="mobile-font-btn" id="mobileFontDecrease" title="Betűméret csökkentése">A-</button>
@@ -1999,6 +1999,8 @@ document.addEventListener('mousemove', e => {
       if (window._userProfile.role === 'admin') {
         const btn = document.getElementById('adminNavBtn')
         if (btn) btn.style.display = 'inline-flex'
+        const mobileKm = document.getElementById('mobileKmBtn')
+        if (mobileKm) mobileKm.style.display = 'flex'
       }
     } else {
       setTimeout(trySetUsername, 50)
