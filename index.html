@@ -1237,7 +1237,7 @@ tbody tr:hover{
         <a href="char.html" target="_blank" class="mobile-nav-btn" title="Karakterlap">🧙‍♂️<span>Karakter</span></a>
         <a href="karakter_kezelo.html" target="_blank" class="mobile-nav-btn" title="Karakter Segéd">📊<span>Segéd</span></a>
         <a href="ynev_terkep.html" target="_blank" class="mobile-nav-btn" title="Interaktív Térkép">🗺️<span>Térkép</span></a>
-        <button class="mobile-nav-btn" id="mobileBookmarkBtn" title="Könyvjelzők" onclick="document.getElementById('bookmarkMenuBtn').click()">🔖<span>Jelzők</span></button>
+        <button class="mobile-nav-btn" id="mobileBookmarkBtn" title="Könyvjelzők" onclick="toggleMobileBookmark()">🔖<span>Jelzők</span></button>
         <!-- Admin legördülő mobilon -->
         <div style="position:relative;" id="mobileAdminWrap">
             <button class="mobile-nav-btn" id="mobileAdminBtn" style="display:none;" onclick="toggleMobileAdmin()">⚙️<span>Admin</span></button>
@@ -2016,6 +2016,23 @@ document.addEventListener('mousemove', e => {
     }
   }
   setTimeout(trySetUsername, 100)
+
+  function toggleMobileBookmark() {
+    const dd = document.getElementById('bookmarkDropdown')
+    if (dd.style.display === 'none' || dd.style.display === '') {
+      dd.style.display = 'block'
+      dd.style.position = 'fixed'
+      dd.style.bottom = '80px'
+      dd.style.right = '10px'
+      dd.style.top = 'auto'
+      dd.style.left = 'auto'
+      dd.style.width = '90vw'
+      dd.style.maxWidth = '320px'
+      dd.style.zIndex = '300'
+    } else {
+      dd.style.display = 'none'
+    }
+  }
 
   function toggleMobileAdmin() {
     const dd = document.getElementById('mobileAdminDD')
