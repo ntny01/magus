@@ -1174,11 +1174,10 @@ tbody tr:hover{
             <div id="searchResults" style="display: none; position: absolute; top: 110%; left: 0; right: 0; background-color: var(--bg-card); border: 1px solid var(--border-color); border-radius: 0.5rem; max-height: 20rem; overflow-y: auto; z-index: 100; box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3);"></div>
         </div>
 
-        <div class="logo-area">
+        <div style="display:flex;align-items:center;flex-shrink:0;">
             <button id="mobileSearchBtn" title="Keresés">🔍</button>
-        </div>
 <div class="font-controls desktop-only">
-    <div style="display:flex;align-items:center;gap:0.4rem;margin-right:0.5rem;">
+    <div style="display:flex;align-items:center;gap:0.4rem;">
 
         <!-- Könyvjelző -->
         <div style="position: relative;">
@@ -1199,18 +1198,18 @@ tbody tr:hover{
         <!-- Navigációs legördülő -->
         <div style="position:relative;" id="navDropWrap">
             <button class="header-icon-btn" onclick="toggleNavDrop()" title="Oldalak">🧭 ▾</button>
-<div id="navDropDD" style="display:none;position:absolute;top:110%;right:0;background:var(--bg-card);border:1px solid var(--border-color);border-radius:.6rem;min-width:210px;box-shadow:0 12px 40px rgba(0,0,0,.5);z-index:200;">
-    <div style="padding:.4rem 1rem .25rem;font-size:.68rem;font-weight:700;letter-spacing:.1em;color:var(--text-muted);text-transform:uppercase;border-bottom:1px solid var(--border-color);">Eszközök</div>
-    <a href="char.html" target="_blank" style="display:flex;align-items:center;gap:.6rem;padding:.6rem 1rem;font-size:.82rem;cursor:pointer;color:var(--text-color);text-decoration:none;border-bottom:1px solid var(--border-color);" onmouseover="this.style.background='rgba(212,175,55,.07)'" onmouseout="this.style.background=''">🧙‍♂️ Karakterlap</a>
-    <a href="karakter_kezelo.html" target="_blank" style="display:flex;align-items:center;gap:.6rem;padding:.6rem 1rem;font-size:.82rem;cursor:pointer;color:var(--text-color);text-decoration:none;border-bottom:1px solid var(--border-color);" onmouseover="this.style.background='rgba(212,175,55,.07)'" onmouseout="this.style.background=''">📊 Karakter Segéd</a>
-    <a href="ynev_terkep.html" target="_blank" id="mapLinkBtn" style="display:flex;align-items:center;gap:.6rem;padding:.6rem 1rem;font-size:.82rem;cursor:pointer;color:var(--text-color);text-decoration:none;" onmouseover="this.style.background='rgba(212,175,55,.07)'" onmouseout="this.style.background=''">🗺️ Ynev Térkép</a>
-</div>
+            <div id="navDropDD" style="display:none;position:absolute;top:110%;right:0;background:var(--bg-card);border:1px solid var(--border-color);border-radius:.6rem;min-width:220px;white-space:nowrap;box-shadow:0 12px 40px rgba(0,0,0,.5);z-index:200;">
+                <div style="padding:.4rem 1rem .25rem;font-size:.68rem;font-weight:700;letter-spacing:.1em;color:var(--text-muted);text-transform:uppercase;border-bottom:1px solid var(--border-color);">Eszközök</div>
+                <a href="char.html" target="_blank" style="display:flex;align-items:center;gap:.6rem;padding:.6rem 1rem;font-size:.82rem;cursor:pointer;color:var(--text-color);text-decoration:none;border-bottom:1px solid var(--border-color);" onmouseover="this.style.background='rgba(212,175,55,.07)'" onmouseout="this.style.background=''">🧙‍♂️ Karakterlap</a>
+                <a href="karakter_kezelo.html" target="_blank" style="display:flex;align-items:center;gap:.6rem;padding:.6rem 1rem;font-size:.82rem;cursor:pointer;color:var(--text-color);text-decoration:none;border-bottom:1px solid var(--border-color);" onmouseover="this.style.background='rgba(212,175,55,.07)'" onmouseout="this.style.background=''">📊 Karakter Segéd</a>
+                <a href="ynev_terkep.html" target="_blank" id="mapLinkBtn" style="display:flex;align-items:center;gap:.6rem;padding:.6rem 1rem;font-size:.82rem;cursor:pointer;color:var(--text-color);text-decoration:none;" onmouseover="this.style.background='rgba(212,175,55,.07)'" onmouseout="this.style.background=''">🗺️ Ynev Térkép</a>
+            </div>
         </div>
 
         <!-- Admin legördülő (csak adminnak) -->
         <div style="position:relative;" id="adminNavWrap">
             <button class="header-icon-btn" id="adminNavBtn" onclick="toggleAdminNav()" title="Admin" style="display:none;">⚙️ ▾</button>
-            <div id="adminNavDD" style="display:none;position:absolute;top:110%;right:0;background:var(--bg-card);border:1px solid var(--border-color);border-radius:.6rem;min-width:180px;box-shadow:0 12px 40px rgba(0,0,0,.5);z-index:200;">
+            <div id="adminNavDD" style="display:none;position:absolute;top:110%;right:0;background:var(--bg-card);border:1px solid var(--border-color);border-radius:.6rem;min-width:200px;white-space:nowrap;box-shadow:0 12px 40px rgba(0,0,0,.5);z-index:200;">
                 <div style="padding:.4rem 1rem .25rem;font-size:.68rem;font-weight:700;letter-spacing:.1em;color:var(--text-muted);text-transform:uppercase;border-bottom:1px solid var(--border-color);">Admin</div>
                 <a href="km_pult.html" target="_blank" style="display:flex;align-items:center;gap:.6rem;padding:.6rem 1rem;font-size:.82rem;cursor:pointer;color:var(--text-color);text-decoration:none;border-bottom:1px solid var(--border-color);" onmouseover="this.style.background='rgba(212,175,55,.07)'" onmouseout="this.style.background=''">🛡️ KM Pult</a>
                 <a href="sabloneditor.html" target="_blank" style="display:flex;align-items:center;gap:.6rem;padding:.6rem 1rem;font-size:.82rem;cursor:pointer;color:var(--text-color);text-decoration:none;" onmouseover="this.style.background='rgba(212,175,55,.07)'" onmouseout="this.style.background=''">✏️ Sablon Editor</a>
@@ -1224,6 +1223,7 @@ tbody tr:hover{
         <span id="auth-username" style="font-size:.75rem;color:#d4af37;font-family:'Cinzel',serif;letter-spacing:.06em;white-space:nowrap;"></span>
         <button onclick="doLogout()" style="background:rgba(248,113,113,0.08);border:1px solid rgba(248,113,113,0.2);color:#f87171;font-size:.75rem;padding:.3rem .7rem;border-radius:.4rem;cursor:pointer;white-space:nowrap;">Kilépés</button>
     </div>
+</div>
         </div>
     </header>
 
