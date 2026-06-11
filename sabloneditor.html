@@ -1,0 +1,903 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script>
+(async () => {
+  const sb = supabase.createClient(
+    'https://nmzdvsnoomusukkczuav.supabase.co',
+    'sb_publishable_JCRzD-ElN1os72wkfX_DKw_PoOTgnYR'
+  )
+  window._sb = sb
+  const { data: { session } } = await sb.auth.getSession()
+  if (!session) { window.location.href = 'login.html'; return }
+  const { data: profile } = await sb.from('user_profiles')
+    .select('status, role, display_name').eq('id', session.user.id).single()
+  if (!profile || profile.status !== 'active') {
+    await sb.auth.signOut()
+    window.location.href = 'login.html'
+    return
+  }
+  if (profile.role !== 'admin') {
+    window.location.href = 'index.html'
+    return
+  }
+  window._userProfile = profile
+})()
+</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>M.A.G.U.S. – Műhely</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap');
+
+:root {
+  --bg-main:#020617; --bg-card:#0f172a; --bg-sheet:rgba(12,20,40,0.88);
+  --border:rgba(212,175,55,0.18); --border-soft:rgba(255,255,255,0.06);
+  --text:#e2e8f0; --muted:#94a3b8; --gold:#d4af37;
+  --gold-glow:rgba(212,175,55,0.3); --accent:#10b981; --accent-h:#34d399; --red:#f87171;
+  --purple:#a855f7; --blue:#3b82f6;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+
+body {
+  font-family:'Inter',sans-serif;
+  background:
+    radial-gradient(ellipse at 10% 5%,rgba(168,85,247,.08) 0%,transparent 40%),
+    radial-gradient(ellipse at 90% 90%,rgba(212,175,55,.07) 0%,transparent 40%),
+    radial-gradient(ellipse at 50% 50%,rgba(30,10,60,.5) 0%,transparent 70%),
+    linear-gradient(160deg,#020617 0%,#07051a 50%,#020a14 100%);
+  color:var(--text); min-height:100vh; overflow-x:hidden;
+}
+
+/* ===== PARTICLES ===== */
+#magic-particles{position:fixed;inset:0;pointer-events:none;z-index:0;overflow:hidden;}
+.rune{position:absolute;color:rgba(168,85,247,0.08);animation:floatRune linear infinite;pointer-events:none;}
+@keyframes floatRune{
+  from{transform:translateY(100vh) rotate(0deg);opacity:0;}
+  8%{opacity:1;} 90%{opacity:.8;}
+  to{transform:translateY(-120px) rotate(360deg);opacity:0;}
+}
+
+/* ===== HEADER ===== */
+header{
+  position:sticky;top:0;z-index:50;
+  background:rgba(2,6,23,0.96);backdrop-filter:blur(24px);
+  border-bottom:1px solid rgba(168,85,247,0.2);
+  padding:.5rem 1.25rem;
+  display:flex;align-items:center;justify-content:space-between;gap:.5rem;
+}
+.header-left{display:flex;align-items:center;gap:.6rem;flex-shrink:0;}
+.header-center{display:flex;align-items:center;gap:.4rem;flex:1;justify-content:center;flex-wrap:wrap;}
+.header-right{display:flex;align-items:center;gap:.5rem;flex-shrink:0;}
+.muhely-title{
+  font-family:'Cinzel',serif;
+  font-size:1.15rem;
+  letter-spacing:.15em;
+  color:var(--purple);
+  text-shadow:0 0 20px rgba(168,85,247,0.4);
+  white-space:nowrap;
+}
+.muhely-badge{
+  font-size:.65rem;font-weight:700;letter-spacing:.1em;
+  background:rgba(168,85,247,0.12);
+  border:1px solid rgba(168,85,247,0.3);
+  color:var(--purple);
+  padding:.2rem .55rem;border-radius:.35rem;
+  text-transform:uppercase;
+}
+.header-sep{width:1px;height:24px;background:rgba(255,255,255,0.08);flex-shrink:0;margin:0 .15rem;}
+
+/* ===== TABS ===== */
+.tab-bar{
+  display:flex;gap:.35rem;
+  background:rgba(255,255,255,0.03);
+  border:1px solid var(--border-soft);
+  border-radius:.75rem;padding:.25rem;
+}
+.tab-btn{
+  background:none;border:none;
+  color:var(--muted);font-family:'Cinzel',serif;
+  font-size:.75rem;letter-spacing:.07em;
+  padding:.4rem .9rem;border-radius:.55rem;
+  cursor:pointer;transition:all .2s;white-space:nowrap;
+}
+.tab-btn.active{
+  background:rgba(168,85,247,0.12);
+  color:var(--purple);
+  border:1px solid rgba(168,85,247,0.25);
+}
+
+/* ===== BUTTONS ===== */
+.btn{
+  background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.1);
+  color:var(--text);padding:.35rem .8rem;font-size:.78rem;font-weight:600;
+  border-radius:.5rem;cursor:pointer;transition:all .18s;
+  display:inline-flex;align-items:center;gap:.3rem;
+  white-space:nowrap;min-height:32px;font-family:inherit;
+}
+.btn:hover{background:rgba(168,85,247,.08);border-color:rgba(168,85,247,.35);color:var(--purple);}
+.btn-purple{border-color:rgba(168,85,247,.4)!important;color:var(--purple)!important;}
+.btn-purple:hover{background:rgba(168,85,247,.1)!important;}
+.btn-gold{border-color:rgba(212,175,55,.4)!important;color:var(--gold)!important;}
+.btn-gold:hover{background:rgba(212,175,55,.08)!important;}
+.btn-green{border-color:rgba(16,185,129,.4)!important;color:var(--accent-h)!important;}
+.btn-green:hover{background:rgba(16,185,129,.08)!important;}
+.btn-red{border-color:rgba(239,68,68,.35)!important;color:var(--red)!important;}
+.btn-red:hover{background:rgba(239,68,68,.08)!important;}
+.btn-sm{padding:.25rem .55rem;font-size:.72rem;min-height:26px;}
+
+/* ===== MAIN LAYOUT ===== */
+.workspace{
+  max-width:1600px;margin:0 auto;
+  padding:1.5rem 1.25rem 5rem;
+  display:grid;
+  grid-template-columns:320px 1fr;
+  gap:1.5rem;
+  position:relative;z-index:1;
+}
+
+/* ===== PANEL ===== */
+.panel{
+  background:rgba(15,23,42,0.7);
+  border:1px solid var(--border);
+  border-radius:1rem;
+  overflow:hidden;
+}
+.panel-header{
+  display:flex;align-items:center;justify-content:space-between;
+  padding:.75rem 1rem;
+  border-bottom:1px solid var(--border-soft);
+  background:rgba(168,85,247,0.04);
+}
+.panel-title{
+  font-family:'Cinzel',serif;
+  font-size:.8rem;letter-spacing:.1em;
+  color:var(--purple);text-transform:uppercase;
+}
+.panel-body{padding:.5rem 0;max-height:calc(100vh - 180px);overflow-y:auto;}
+
+/* ===== SABLON LISTA ===== */
+.template-item{
+  display:flex;align-items:center;gap:.5rem;
+  padding:.6rem 1rem;
+  cursor:pointer;
+  transition:background .15s;
+  border-bottom:1px solid var(--border-soft);
+}
+.template-item:last-child{border:none;}
+.template-item:hover{background:rgba(168,85,247,0.06);}
+.template-item.active{background:rgba(168,85,247,0.1);border-left:2px solid var(--purple);}
+.template-name{font-size:.85rem;font-weight:600;flex:1;}
+.template-sub{font-size:.72rem;color:var(--muted);display:block;margin-top:.1rem;}
+.template-badge{
+  font-size:.62rem;padding:.15rem .4rem;border-radius:.3rem;
+  font-weight:700;letter-spacing:.05em;
+}
+.badge-pub{background:rgba(16,185,129,.12);color:var(--accent-h);border:1px solid rgba(16,185,129,.2);}
+.badge-hidden{background:rgba(148,163,184,.1);color:var(--muted);border:1px solid rgba(148,163,184,.15);}
+.template-actions{display:flex;gap:.3rem;flex-shrink:0;}
+
+/* ===== EDITOR (jobb oldal) ===== */
+.editor-area{display:flex;flex-direction:column;gap:1rem;}
+
+.editor-toolbar{
+  display:flex;align-items:center;gap:.5rem;flex-wrap:wrap;
+  background:rgba(15,23,42,0.7);
+  border:1px solid var(--border);
+  border-radius:1rem;
+  padding:.65rem 1rem;
+}
+.editor-name-input{
+  font-family:'Cinzel',serif;
+  font-size:1rem;letter-spacing:.1em;
+  background:transparent;border:none;outline:none;
+  color:var(--text);flex:1;min-width:180px;
+  border-bottom:1px solid rgba(168,85,247,0.2);
+  padding-bottom:.2rem;
+}
+.editor-name-input::placeholder{color:rgba(148,163,184,0.4);}
+
+/* ===== KARAKTERLAP STÍLUSOK (char.html-ből átvett) ===== */
+.sheet-outer{
+  max-width:100%;
+  display:flex;flex-direction:column;gap:1.5rem;
+}
+.vtitle-wrap{text-align:center;padding:.25rem 0;}
+.vtitle-input{
+  font-family:'Cinzel',serif;
+  font-size:clamp(1.6rem,4vw,2.8rem);
+  font-weight:700;letter-spacing:.22em;text-transform:uppercase;
+  color:var(--text);background:transparent;border:none;outline:none;
+  text-align:center;width:100%;
+  text-shadow:0 0 40px rgba(168,85,247,.2),0 2px 6px rgba(0,0,0,.6);
+}
+.ornament{height:2px;background:linear-gradient(90deg,transparent 0%,rgba(168,85,247,.5) 20%,rgba(168,85,247,.5) 80%,transparent 100%);border-radius:2px;margin:.4rem 0;}
+.ornament-sm{height:1px;background:linear-gradient(90deg,transparent,rgba(168,85,247,.2),transparent);border-radius:1px;margin:.2rem 0;}
+.ornament-deco{text-align:center;font-size:.75rem;color:rgba(168,85,247,.3);letter-spacing:.5em;user-select:none;}
+
+.info-card{
+  background:var(--bg-sheet);border:1px solid var(--border);
+  border-radius:.9rem;padding:1.25rem 1.5rem;
+}
+.info-grid{
+  display:grid;grid-template-columns:repeat(3,1fr);gap:.6rem 1.5rem;
+}
+.info-field{display:flex;align-items:baseline;gap:.4rem;}
+.info-label{font-size:.72rem;font-weight:600;color:var(--muted);letter-spacing:.05em;text-transform:uppercase;white-space:nowrap;}
+.info-input{
+  background:transparent;border:none;outline:none;
+  border-bottom:1px dashed rgba(255,255,255,.12);
+  color:var(--text);font-size:.85rem;width:100%;padding:.15rem 0;
+}
+
+.sheet-card{
+  background:var(--bg-sheet);border:1px solid var(--border);
+  border-radius:.9rem;padding:1.5rem;
+}
+.section-wrap{margin-bottom:1.5rem;}
+.section-header{display:flex;align-items:center;justify-content:space-between;gap:.5rem;margin-bottom:.6rem;}
+.section-title-input{
+  font-family:'Cinzel',serif;font-size:1.05rem;font-weight:600;
+  letter-spacing:.1em;text-transform:uppercase;
+  color:var(--gold);background:transparent;border:none;outline:none;
+  border-bottom:2px solid rgba(168,85,247,.2);padding-bottom:.15rem;flex:1;
+}
+.section-edit-ctrls{display:flex;gap:.35rem;}
+.boxes-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:.85rem;}
+.box-wrap{
+  background:rgba(255,255,255,.025);border:1px solid var(--border-soft);
+  border-radius:.7rem;padding:.85rem .9rem;
+}
+.box-header{display:flex;align-items:center;gap:.4rem;margin-bottom:.6rem;}
+.box-title-input{
+  font-size:.72rem;font-weight:700;letter-spacing:.09em;text-transform:uppercase;
+  color:var(--muted);background:transparent;border:none;outline:none;
+  border-bottom:1px solid transparent;flex:1;
+  transition:border-color .15s;
+}
+.box-title-input:focus{border-bottom-color:rgba(168,85,247,.3);}
+.btn-del-box{
+  background:none;border:none;color:rgba(239,68,68,.4);font-size:.75rem;
+  cursor:pointer;padding:.1rem .3rem;border-radius:.3rem;transition:all .15s;
+}
+.btn-del-box:hover{color:var(--red);background:rgba(239,68,68,.08);}
+
+.row-wrap{display:flex;align-items:center;gap:.5rem;padding:.2rem 0;border-bottom:1px solid rgba(255,255,255,.04);}
+.row-wrap:last-of-type{border:none;}
+.row-label-input{
+  font-size:.8rem;color:var(--text);background:transparent;
+  border:none;outline:none;flex:1;min-width:0;
+  border-bottom:1px solid transparent;transition:border-color .15s;
+}
+.row-label-input:focus{border-bottom-color:rgba(168,85,247,.3);}
+.dots-wrap{display:flex;gap:3px;user-select:none;flex-shrink:0;}
+.dot{cursor:pointer;color:var(--muted);font-size:1.05rem;transition:color .1s,transform .12s;line-height:1;}
+.dot:hover{transform:scale(1.28);color:var(--purple);}
+.dot.filled{color:var(--purple);text-shadow:0 0 6px rgba(168,85,247,.5);}
+.btn-del-row{
+  background:none;border:none;color:rgba(239,68,68,.35);font-size:.72rem;
+  cursor:pointer;padding:.1rem .25rem;border-radius:.25rem;transition:all .15s;flex-shrink:0;
+}
+.btn-del-row:hover{color:var(--red);}
+
+.row-text-input{
+  flex:1;background:transparent;border:none;outline:none;
+  border-bottom:1px dashed rgba(255,255,255,.1);
+  color:var(--text);font-size:.82rem;padding:.1rem 0;
+}
+.row-textarea{
+  width:100%;min-height:70px;resize:vertical;
+  background:rgba(255,255,255,.03);border:1px solid var(--border-soft);
+  border-radius:.45rem;color:var(--text);font-size:.82rem;
+  padding:.5rem .7rem;font-family:inherit;outline:none;
+}
+.row-textarea:focus{border-color:rgba(168,85,247,.3);}
+
+.header-row-wrap{
+  display:flex;align-items:center;gap:.5rem;
+  background:rgba(168,85,247,.05);border:1px solid rgba(168,85,247,.1);
+  border-radius:.5rem;padding:.4rem .6rem;margin:.25rem 0;
+}
+.header-row-input{
+  font-family:'Cinzel',serif;font-size:.85rem;font-weight:600;letter-spacing:.08em;
+  color:var(--purple);background:transparent;border:none;outline:none;flex:1;
+}
+.header-dots-wrap{display:flex;gap:2px;user-select:none;flex-shrink:0;}
+.header-dot{cursor:pointer;color:var(--muted);font-size:1.1rem;transition:color .1s;line-height:1;}
+.header-dot.filled{color:var(--purple);}
+
+.add-row-area{margin-top:.5rem;}
+.add-row-picker{display:flex;flex-wrap:wrap;gap:.3rem;}
+.add-row-btn{
+  background:rgba(255,255,255,.03);border:1px solid var(--border-soft);
+  color:var(--muted);font-size:.7rem;padding:.25rem .5rem;
+  border-radius:.4rem;cursor:pointer;transition:all .15s;
+}
+.add-row-btn:hover{border-color:rgba(168,85,247,.3);color:var(--purple);background:rgba(168,85,247,.06);}
+
+.add-box-placeholder{
+  display:flex;align-items:center;justify-content:center;gap:.4rem;
+  border:1px dashed rgba(168,85,247,.2);border-radius:.7rem;
+  color:rgba(168,85,247,.4);font-size:.8rem;
+  padding:.85rem;cursor:pointer;transition:all .18s;min-height:80px;
+}
+.add-box-placeholder:hover{border-color:rgba(168,85,247,.4);color:var(--purple);background:rgba(168,85,247,.04);}
+
+#add-section-btn{
+  display:flex;align-items:center;justify-content:center;gap:.5rem;
+  width:100%;background:transparent;
+  border:2px dashed rgba(168,85,247,.2);border-radius:.9rem;
+  color:rgba(168,85,247,.4);font-family:'Cinzel',serif;font-size:.82rem;
+  letter-spacing:.1em;padding:1rem;cursor:pointer;transition:all .2s;
+  margin-top:.5rem;
+}
+#add-section-btn:hover{border-color:rgba(168,85,247,.4);color:var(--purple);background:rgba(168,85,247,.04);}
+
+/* ===== EMPTY STATE ===== */
+.empty-state{
+  display:flex;flex-direction:column;align-items:center;justify-content:center;
+  gap:1rem;padding:4rem 2rem;text-align:center;
+  color:var(--muted);
+}
+.empty-state-icon{font-size:3.5rem;opacity:.4;}
+.empty-state-title{font-family:'Cinzel',serif;font-size:1rem;letter-spacing:.1em;color:var(--muted);}
+.empty-state-sub{font-size:.82rem;max-width:280px;line-height:1.6;}
+
+/* ===== PUBLIKÁLÁS TOGGLE ===== */
+.pub-toggle{
+  display:flex;align-items:center;gap:.5rem;
+  background:rgba(255,255,255,.03);border:1px solid var(--border-soft);
+  border-radius:.5rem;padding:.35rem .7rem;font-size:.78rem;cursor:pointer;
+  transition:all .18s;
+}
+.pub-toggle.published{border-color:rgba(16,185,129,.3);color:var(--accent-h);}
+.pub-toggle:hover{background:rgba(16,185,129,.06);}
+
+/* ===== RESPONSIVE ===== */
+@media(max-width:900px){
+  .workspace{grid-template-columns:1fr;grid-template-rows:auto 1fr;}
+  .panel-body{max-height:250px;}
+}
+@media(max-width:600px){
+  .info-grid{grid-template-columns:1fr 1fr;}
+  .boxes-grid{grid-template-columns:1fr;}
+  header{padding:.4rem .75rem;}
+}
+</style>
+</head>
+<body>
+<div id="magic-particles"></div>
+
+<header>
+  <div class="header-left">
+    <a href="index.html" class="btn" style="padding:.3rem .6rem;">◀</a>
+    <span class="muhely-title">🔨 Műhely</span>
+    <span class="muhely-badge">Admin</span>
+  </div>
+
+  <div class="header-center">
+    <div class="tab-bar">
+      <button class="tab-btn active" onclick="switchTab('sablonok')" id="tab-sablonok">✦ Sablonok</button>
+      <button class="tab-btn" onclick="switchTab('terkep')" id="tab-terkep">🗺️ Térkép tervek</button>
+    </div>
+  </div>
+
+  <div class="header-right">
+    <span id="auth-username" style="font-size:.75rem;color:#a855f7;font-family:'Cinzel',serif;letter-spacing:.06em;white-space:nowrap;"></span>
+    <button onclick="doLogout()" style="background:rgba(248,113,113,0.08);border:1px solid rgba(248,113,113,0.2);color:#f87171;font-size:.75rem;padding:.3rem .7rem;border-radius:.4rem;cursor:pointer;">Kilépés</button>
+  </div>
+</header>
+
+<!-- SABLONOK TAB -->
+<div id="tab-content-sablonok" class="workspace">
+
+  <!-- BAL: Sablon lista -->
+  <div>
+    <div class="panel">
+      <div class="panel-header">
+        <span class="panel-title">Sablonok</span>
+        <button class="btn btn-purple btn-sm" onclick="newTemplate()">+ Új</button>
+      </div>
+      <div class="panel-body" id="templateListPanel">
+        <div class="empty-state" style="padding:2rem;">
+          <div class="empty-state-icon">📋</div>
+          <div class="empty-state-sub">Betöltés...</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- JOBB: Szerkesztő -->
+  <div class="editor-area" id="editorArea">
+    <div class="empty-state" style="margin-top:4rem;">
+      <div class="empty-state-icon">🔨</div>
+      <div class="empty-state-title">Műhely</div>
+      <div class="empty-state-sub">Válassz egy sablont a listából, vagy hozz létre újat a szerkesztéshez.</div>
+    </div>
+  </div>
+
+</div>
+
+<!-- TÉRKÉP TERVEK TAB -->
+<div id="tab-content-terkep" style="display:none;" class="workspace" style="grid-template-columns:1fr;">
+  <div class="empty-state" style="margin-top:6rem;grid-column:1/-1;">
+    <div class="empty-state-icon">🗺️</div>
+    <div class="empty-state-title">Térkép tervek</div>
+    <div class="empty-state-sub">Hamarosan — itt lehet majd térkép rétegeket és helyszín-sablonokat létrehozni az Ynev Térképhez.</div>
+  </div>
+</div>
+
+<script>
+/* ==============================
+   DEFAULT SECTIONS (char.html-ből)
+   ============================== */
+const DEFAULT_SECTIONS = [
+  { id:'sec_attr', title:'Tulajdonságok', boxes:[
+    { id:'box_fiz', title:'Fizikai', rows:[
+      {id:'r_ero',type:'dot',label:'Erő',value:0,max:5},
+      {id:'r_ugy',type:'dot',label:'Ügyesség',value:0,max:5},
+      {id:'r_all',type:'dot',label:'Állóképesség',value:0,max:5},
+    ]},
+    { id:'box_tars', title:'Társadalmi', rows:[
+      {id:'r_kar',type:'dot',label:'Karizma',value:0,max:5},
+      {id:'r_man',type:'dot',label:'Manipuláció',value:0,max:5},
+      {id:'r_meg',type:'dot',label:'Megjelenés',value:0,max:5},
+    ]},
+    { id:'box_ment', title:'Mentális', rows:[
+      {id:'r_erz',type:'dot',label:'Érzékelés',value:0,max:5},
+      {id:'r_int',type:'dot',label:'Intelligencia',value:0,max:5},
+      {id:'r_esz',type:'dot',label:'Észjárás',value:0,max:5},
+    ]},
+  ]},
+  { id:'sec_abil', title:'Képességek', boxes:[
+    { id:'box_teh', title:'Tehetségek', rows:[
+      {id:'r_atl',type:'dot',label:'Atlétika',value:0,max:5},
+      {id:'r_emp',type:'dot',label:'Empátia',value:0,max:5},
+      {id:'r_ebe',type:'dot',label:'Éberség',value:0,max:5},
+      {id:'r_hel',type:'dot',label:'Helyismeret',value:0,max:5},
+      {id:'r_ira',type:'dot',label:'Irányítás',value:0,max:5},
+      {id:'r_kez',type:'dot',label:'Kézitusa',value:0,max:5},
+      {id:'r_kif',type:'dot',label:'Kifejezőkészség',value:0,max:5},
+      {id:'r_kit',type:'dot',label:'Kitérés',value:0,max:5},
+      {id:'r_fmeg',type:'dot',label:'Megfélemlítés',value:0,max:5},
+      {id:'r_ras',type:'dot',label:'Rászedés',value:0,max:5},
+    ]},
+    { id:'box_jar', title:'Jártasságok', rows:[
+      {id:'r_ill',type:'dot',label:'Illemtan',value:0,max:5},
+      {id:'r_koz',type:'dot',label:'Közelharc',value:0,max:5},
+      {id:'r_mes',type:'dot',label:'Mesterség',value:0,max:5},
+      {id:'r_tul',type:'dot',label:'Túlélés',value:0,max:5},
+      {id:'r_vez',type:'dot',label:'Vezetés',value:0,max:5},
+    ]},
+    { id:'box_ism', title:'Ismeretek', rows:[
+      {id:'r_jog',type:'dot',label:'Jog',value:0,max:5},
+      {id:'r_nye',type:'dot',label:'Nyelvismeret',value:0,max:5},
+      {id:'r_nyo',type:'dot',label:'Nyomozás',value:0,max:5},
+      {id:'r_pol',type:'dot',label:'Politika',value:0,max:5},
+      {id:'r_ter',type:'dot',label:'Természettudomány',value:0,max:5},
+    ]},
+  ]},
+  { id:'sec_adv', title:'Hátterek és Erények', boxes:[
+    { id:'box_hat', title:'Hátterek / Előnyök', rows:[
+      {id:'r_h1',type:'dot',label:'Háttér 1',value:0,max:5},
+      {id:'r_h2',type:'dot',label:'Háttér 2',value:0,max:5},
+      {id:'r_h3',type:'dot',label:'Háttér 3',value:0,max:5},
+    ]},
+    { id:'box_ereny', title:'Erények', rows:[
+      {id:'r_lel',type:'dot',label:'Lelkiismeret',value:0,max:5},
+      {id:'r_onur',type:'dot',label:'Önuralom',value:0,max:5},
+      {id:'r_bat',type:'dot',label:'Bátorság',value:0,max:5},
+    ]},
+  ]},
+  { id:'sec_notes', title:'Felszerelés és Megjegyzések', boxes:[
+    { id:'box_fsz', title:'Fegyverek / Felszerelés', rows:[
+      {id:'r_fsz',type:'textarea',label:'',value:''}
+    ]},
+    { id:'box_mj', title:'Egyéb Megjegyzések', rows:[
+      {id:'r_mj',type:'textarea',label:'',value:''}
+    ]},
+  ]},
+];
+
+/* ==============================
+   STATE
+   ============================== */
+let sheetData = {
+  vampireTitle:'SABLON NEVE',
+  info:{name:'',faj:'',kaszt:'',isten:'',kronika:'',xp:''},
+  sections: JSON.parse(JSON.stringify(DEFAULT_SECTIONS)),
+  viewMode:0
+};
+let _currentTemplateId = null;
+
+let _uid = 3000;
+const uid = () => 'u' + (++_uid) + '_' + (Math.random()*999|0);
+
+/* ==============================
+   TAB VÁLTÁS
+   ============================== */
+function switchTab(tab) {
+  document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'))
+  document.getElementById('tab-' + tab).classList.add('active')
+  document.getElementById('tab-content-sablonok').style.display = tab === 'sablonok' ? 'grid' : 'none'
+  document.getElementById('tab-content-terkep').style.display = tab === 'terkep' ? 'grid' : 'none'
+}
+
+/* ==============================
+   RENDER EDITOR
+   ============================== */
+function renderEditor() {
+  const area = document.getElementById('editorArea')
+  area.innerHTML = `
+    <div class="editor-toolbar">
+      <input class="editor-name-input" id="templateNameInput" 
+        placeholder="Sablon neve..." 
+        value="${sheetData.info.name || ''}"
+        oninput="sheetData.info.name=this.value">
+      <div class="header-sep"></div>
+      <button class="btn btn-gold" onclick="saveTemplate()">💾 Mentés</button>
+      <button class="btn ${sheetData._published ? 'pub-toggle published' : 'pub-toggle'}" 
+        id="pubToggleBtn" onclick="togglePublish()">
+        ${sheetData._published ? '✓ Publikálva' : '○ Rejtett'}
+      </button>
+      <button class="btn btn-red btn-sm" onclick="deleteTemplate()">🗑️ Törlés</button>
+    </div>
+    <div class="sheet-outer" id="sheet-wrapper">
+      <div class="vtitle-wrap">
+        <div class="ornament-deco">✦ &nbsp; ✦ &nbsp; ✦</div>
+        <div class="ornament" style="margin:.3rem 0;"></div>
+        <input type="text" class="vtitle-input" id="vampireTitle" 
+          placeholder="SABLON NEVE"
+          value="${sheetData.vampireTitle || 'SABLON NEVE'}"
+          oninput="sheetData.vampireTitle=this.value">
+        <div class="ornament" style="margin:.3rem 0;"></div>
+        <div class="ornament-deco">✦ &nbsp; ✦ &nbsp; ✦</div>
+      </div>
+      <div class="info-card">
+        <div class="info-grid">
+          <div class="info-field">
+            <span class="info-label">Faj:</span>
+            <input type="text" class="info-input" id="info_faj" 
+              placeholder="..." value="${sheetData.info.faj||''}"
+              oninput="sheetData.info.faj=this.value">
+          </div>
+          <div class="info-field">
+            <span class="info-label">Kaszt:</span>
+            <input type="text" class="info-input" id="info_kaszt" 
+              placeholder="..." value="${sheetData.info.kaszt||''}"
+              oninput="sheetData.info.kaszt=this.value">
+          </div>
+          <div class="info-field">
+            <span class="info-label">Isten:</span>
+            <input type="text" class="info-input" id="info_isten" 
+              placeholder="..." value="${sheetData.info.isten||''}"
+              oninput="sheetData.info.isten=this.value">
+          </div>
+        </div>
+      </div>
+      <div class="sheet-card">
+        <div id="sections-container"></div>
+        <button id="add-section-btn" onclick="addSection()">✦ &nbsp; Új szekció hozzáadása &nbsp; ✦</button>
+      </div>
+    </div>
+  `
+  renderAll()
+}
+
+function renderAll() {
+  const cont = document.getElementById('sections-container')
+  if (!cont) return
+  cont.innerHTML = ''
+  sheetData.sections.forEach(sec => renderSection(sec, cont))
+}
+
+function renderSection(sec, cont) {
+  const wrap = document.createElement('div'); wrap.className='section-wrap'
+  const ornSm = document.createElement('div'); ornSm.className='ornament-sm'
+  const hdr = document.createElement('div'); hdr.className='section-header'
+  const ti = document.createElement('input')
+  ti.type='text'; ti.className='section-title-input'; ti.value=sec.title
+  ti.oninput = e => { sec.title=e.target.value }
+  const ctrls = document.createElement('div'); ctrls.className='section-edit-ctrls'
+  const addBoxBtn = document.createElement('button')
+  addBoxBtn.className='btn btn-sm'; addBoxBtn.innerHTML='+ Blokk'
+  addBoxBtn.onclick = () => { sec.boxes.push({id:uid(),title:'Új blokk',rows:[]}); renderAll() }
+  const delSecBtn = document.createElement('button')
+  delSecBtn.className='btn btn-sm btn-red'; delSecBtn.innerHTML='✕ Szekció'
+  delSecBtn.onclick = () => {
+    if(confirm(`"${sec.title}" törlése?`)) {
+      sheetData.sections = sheetData.sections.filter(s=>s.id!==sec.id); renderAll()
+    }
+  }
+  ctrls.append(addBoxBtn, delSecBtn)
+  hdr.append(ti, ctrls)
+  const grid = document.createElement('div'); grid.className='boxes-grid'
+  sec.boxes.forEach(box => renderBox(box, grid, sec))
+  const addBoxPh = document.createElement('div'); addBoxPh.className='add-box-placeholder'
+  addBoxPh.innerHTML='<span style="font-size:1.1rem">+</span> Új blokk'
+  addBoxPh.onclick = () => { sec.boxes.push({id:uid(),title:'Új blokk',rows:[]}); renderAll() }
+  grid.appendChild(addBoxPh)
+  wrap.append(ornSm, hdr, grid)
+  cont.appendChild(wrap)
+}
+
+function renderBox(box, grid, sec) {
+  const div = document.createElement('div'); div.className='box-wrap'
+  const bHdr = document.createElement('div'); bHdr.className='box-header'
+  const bTi = document.createElement('input')
+  bTi.type='text'; bTi.className='box-title-input'; bTi.value=box.title
+  bTi.oninput = e => { box.title=e.target.value }
+  const delBoxBtn = document.createElement('button')
+  delBoxBtn.className='btn-del-box'; delBoxBtn.innerHTML='✕'; delBoxBtn.title='Blokk törlése'
+  delBoxBtn.onclick = () => {
+    if(confirm(`"${box.title}" blokk törlése?`)) {
+      sec.boxes=sec.boxes.filter(b=>b.id!==box.id); renderAll()
+    }
+  }
+  bHdr.append(bTi, delBoxBtn); div.appendChild(bHdr)
+  box.rows.forEach(row => div.appendChild(buildRow(row, box)))
+  const addArea = document.createElement('div'); addArea.className='add-row-area'
+  const picker = document.createElement('div'); picker.className='add-row-picker'
+  [{t:'dot',l:'● Pont-sor'},{t:'text',l:'_ Szöveges'},{t:'textarea',l:'≡ Szövegmező'},{t:'header',l:'◉ Fejléc'}]
+    .forEach(({t,l}) => {
+      const b = document.createElement('button'); b.className='add-row-btn'; b.innerText=l
+      b.onclick = () => {
+        box.rows.push({id:uid(),type:t,label:t==='dot'?'Új képesség':t==='header'?'Fejléc':'',
+          value:(t==='dot'||t==='header')?0:'',max:t==='header'?10:5})
+        renderAll()
+      }
+      picker.appendChild(b)
+    })
+  addArea.appendChild(picker); div.appendChild(addArea); grid.appendChild(div)
+}
+
+function buildRow(row, box) {
+  const wrap = document.createElement('div')
+  if (row.type==='dot') {
+    wrap.className='row-wrap'
+    const li=makeRowLabelInput(row); const dw=document.createElement('div'); dw.className='dots-wrap'
+    renderDots(dw, row, false)
+    wrap.append(li, dw, makeDelRowBtn(row,box))
+  } else if (row.type==='text') {
+    wrap.className='row-wrap'
+    const li=makeRowLabelInput(row); li.style.maxWidth='100px'
+    const ti=document.createElement('input'); ti.type='text'; ti.className='row-text-input'
+    ti.value=row.value; ti.placeholder='...'
+    ti.oninput=e=>{row.value=e.target.value}
+    wrap.append(li, ti, makeDelRowBtn(row,box))
+  } else if (row.type==='textarea') {
+    wrap.style.cssText='flex-direction:column;align-items:stretch;display:flex;gap:.3rem;'
+    const ta=document.createElement('textarea'); ta.className='row-textarea'
+    ta.value=row.value; ta.placeholder='Ide írj...'
+    ta.oninput=e=>{row.value=e.target.value}
+    const del=makeDelRowBtn(row,box); del.style.alignSelf='flex-end'
+    wrap.append(ta, del)
+  } else if (row.type==='header') {
+    const hw=document.createElement('div'); hw.className='header-row-wrap'
+    const hi=document.createElement('input'); hi.type='text'; hi.className='header-row-input'
+    hi.value=row.label; hi.placeholder='Fejléc neve...'
+    hi.oninput=e=>{row.label=e.target.value}
+    const hdw=document.createElement('div'); hdw.className='header-dots-wrap'
+    renderDots(hdw, row, true)
+    const del=makeDelRowBtn(row,box)
+    hw.append(hi, hdw, del); wrap.appendChild(hw)
+  }
+  return wrap
+}
+
+function makeRowLabelInput(row) {
+  const li=document.createElement('input'); li.type='text'; li.className='row-label-input'
+  li.value=row.label; li.oninput=e=>{row.label=e.target.value}; return li
+}
+function makeDelRowBtn(row, box) {
+  const b=document.createElement('button'); b.className='btn-del-row'; b.innerHTML='✕'
+  b.onclick=()=>{box.rows=box.rows.filter(r=>r.id!==row.id); renderAll()}; return b
+}
+function renderDots(container, row, isHeader) {
+  container.innerHTML=''
+  const max=row.max||5
+  for(let i=1;i<=max;i++) {
+    const d=document.createElement('span')
+    const cls=isHeader?'header-dot':'dot'
+    d.className=cls+(i<=row.value?' filled':'')
+    d.innerText=i<=row.value?'●':'○'
+    d.onclick=()=>{ row.value=(row.value===i)?i-1:i; renderDots(container,row,isHeader) }
+    container.appendChild(d)
+  }
+}
+
+function addSection() {
+  sheetData.sections.push({id:uid(),title:'Új szekció',boxes:[{id:uid(),title:'Új blokk',rows:[]}]})
+  renderAll()
+}
+
+/* ==============================
+   SABLON MŰVELETEK
+   ============================== */
+function newTemplate() {
+  _currentTemplateId = null
+  sheetData = {
+    vampireTitle:'SABLON NEVE',
+    info:{name:'',faj:'',kaszt:'',isten:'',kronika:'',xp:''},
+    sections: JSON.parse(JSON.stringify(DEFAULT_SECTIONS)),
+    viewMode:0, _published:false
+  }
+  renderEditor()
+  document.querySelectorAll('.template-item').forEach(el => el.classList.remove('active'))
+}
+
+async function saveTemplate() {
+  if (!window._sb) return
+  const { data: { user } } = await window._sb.auth.getUser()
+  if (!user) return
+  const name = document.getElementById('templateNameInput')?.value || sheetData.info.name || 'Névtelen sablon'
+  sheetData.info.name = name
+  if (_currentTemplateId) {
+    const { error } = await window._sb.from('character_sheets').update({
+      name, faj:sheetData.info.faj||'', kaszt:sheetData.info.kaszt||'',
+      data: sheetData,
+      template_visible: sheetData._published || false,
+      updated_at: new Date().toISOString()
+    }).eq('id', _currentTemplateId)
+    if (!error) showToast('✓ Mentve')
+    else console.error(error)
+  } else {
+    const { data, error } = await window._sb.from('character_sheets').insert({
+      user_id: user.id, name,
+      faj:sheetData.info.faj||'', kaszt:sheetData.info.kaszt||'',
+      data: sheetData,
+      is_template: true,
+      template_visible: sheetData._published || false
+    }).select().single()
+    if (!error && data) {
+      _currentTemplateId = data.id
+      showToast('✓ Sablon létrehozva')
+    }
+  }
+  await loadTemplateList()
+}
+
+async function togglePublish() {
+  sheetData._published = !sheetData._published
+  const btn = document.getElementById('pubToggleBtn')
+  if (btn) {
+    btn.className = `btn ${sheetData._published ? 'pub-toggle published' : 'pub-toggle'}`
+    btn.innerHTML = sheetData._published ? '✓ Publikálva' : '○ Rejtett'
+  }
+  if (_currentTemplateId) {
+    await window._sb.from('character_sheets').update({
+      template_visible: sheetData._published
+    }).eq('id', _currentTemplateId)
+    showToast(sheetData._published ? '✓ Publikálva — userek látják' : '○ Elrejtve')
+    await loadTemplateList()
+  }
+}
+
+async function deleteTemplate() {
+  if (!_currentTemplateId) return
+  if (!confirm('Biztosan törlöd ezt a sablont? Ez visszavonhatatlan.')) return
+  await window._sb.from('character_sheets').delete().eq('id', _currentTemplateId)
+  _currentTemplateId = null
+  sheetData = {
+    vampireTitle:'SABLON NEVE',
+    info:{name:'',faj:'',kaszt:'',isten:'',kronika:'',xp:''},
+    sections: JSON.parse(JSON.stringify(DEFAULT_SECTIONS)),
+    viewMode:0, _published:false
+  }
+  document.getElementById('editorArea').innerHTML = `
+    <div class="empty-state" style="margin-top:4rem;">
+      <div class="empty-state-icon">🔨</div>
+      <div class="empty-state-title">Műhely</div>
+      <div class="empty-state-sub">Válassz egy sablont a listából, vagy hozz létre újat.</div>
+    </div>`
+  await loadTemplateList()
+  showToast('🗑️ Törölve')
+}
+
+async function loadTemplate(id) {
+  const { data } = await window._sb.from('character_sheets').select('*').eq('id', id).single()
+  if (!data) return
+  _currentTemplateId = data.id
+  sheetData = data.data || {}
+  sheetData._published = data.template_visible || false
+  document.querySelectorAll('.template-item').forEach(el => {
+    el.classList.toggle('active', el.dataset.id === id)
+  })
+  renderEditor()
+}
+
+async function loadTemplateList() {
+  if (!window._sb) return
+  const { data: { user } } = await window._sb.auth.getUser()
+  const { data } = await window._sb.from('character_sheets')
+    .select('id, name, faj, kaszt, template_visible, updated_at')
+    .eq('is_template', true)
+    .order('updated_at', { ascending: false })
+  const el = document.getElementById('templateListPanel')
+  if (!data || data.length === 0) {
+    el.innerHTML = `<div class="empty-state" style="padding:2rem;">
+      <div class="empty-state-icon">📋</div>
+      <div class="empty-state-sub">Még nincs sablon. Kattints a + Új gombra.</div>
+    </div>`
+    return
+  }
+  el.innerHTML = data.map(t => `
+    <div class="template-item ${_currentTemplateId===t.id?'active':''}" data-id="${t.id}" onclick="loadTemplate('${t.id}')">
+      <div style="flex:1;min-width:0;">
+        <div class="template-name">${t.name||'Névtelen'}</div>
+        <span class="template-sub">${[t.faj,t.kaszt].filter(Boolean).join(' · ')||'—'}</span>
+      </div>
+      <span class="template-badge ${t.template_visible?'badge-pub':'badge-hidden'}">
+        ${t.template_visible?'Pub':'Rejtett'}
+      </span>
+    </div>
+  `).join('')
+}
+
+/* ==============================
+   TOAST
+   ============================== */
+function showToast(msg) {
+  let el = document.getElementById('toast')
+  if (!el) {
+    el = document.createElement('div')
+    el.id = 'toast'
+    el.style.cssText = 'position:fixed;bottom:1.5rem;right:1.5rem;background:rgba(168,85,247,0.15);border:1px solid rgba(168,85,247,0.3);color:#a855f7;font-size:.78rem;padding:.5rem 1rem;border-radius:.6rem;opacity:0;transition:opacity .3s;pointer-events:none;z-index:999;'
+    document.body.appendChild(el)
+  }
+  el.textContent = msg
+  el.style.opacity = '1'
+  setTimeout(() => el.style.opacity = '0', 2000)
+}
+
+/* ==============================
+   AUTH / LOGOUT
+   ============================== */
+function trySetUsername() {
+  const el = document.getElementById('auth-username')
+  if (!el) { setTimeout(trySetUsername, 50); return }
+  if (window._userProfile) {
+    el.textContent = window._userProfile.display_name
+  } else {
+    setTimeout(trySetUsername, 50)
+  }
+}
+setTimeout(trySetUsername, 100)
+
+async function doLogout() {
+  try {
+    await window._sb.auth.signOut()
+    Object.keys(localStorage).filter(k=>k.startsWith('sb-')).forEach(k=>localStorage.removeItem(k))
+  } catch(e) {}
+  window.location.href = 'login.html'
+}
+
+/* ==============================
+   PARTICLES
+   ============================== */
+;(()=>{
+  const pc=document.getElementById('magic-particles')
+  const RUNES=['✦','ᚱ','ᛟ','✧','☽','☼','᛫','ᚢ','ᚦ']
+  function spawnRune(){
+    const r=document.createElement('div'); r.className='rune'
+    r.innerText=RUNES[Math.floor(Math.random()*RUNES.length)]
+    r.style.left=Math.random()*100+'vw'
+    r.style.animationDuration=12+Math.random()*16+'s'
+    r.style.fontSize=11+Math.random()*16+'px'
+    pc.appendChild(r); setTimeout(()=>r.remove(),28000)
+  }
+  setInterval(spawnRune,1600)
+})()
+
+/* ==============================
+   INIT
+   ============================== */
+window.addEventListener('load', () => {
+  setTimeout(async () => {
+    await loadTemplateList()
+  }, 300)
+})
+</script>
+</body>
+</html>
