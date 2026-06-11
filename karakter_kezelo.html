@@ -504,19 +504,27 @@ const sb = supabase.createClient(
 
 <div class="container">
     <header>
-        <h1>Karakter segéd</h1>
+        <h1>Karakter Segéd</h1>
         <div class="io-bar">
+            <!-- Karakterek Supabase-ből -->
+            <div style="position:relative;" id="kkCharWrap">
+                <button class="btn" onclick="toggleKKCharDD()" style="border-color:rgba(212,175,55,.4);color:#d4af37;">📁 Karakterek ▾</button>
+                <div id="kkCharDD" style="display:none;position:absolute;top:110%;left:0;background:#1a1a1e;border:1px solid rgba(212,175,55,.2);border-radius:.6rem;min-width:220px;box-shadow:0 12px 40px rgba(0,0,0,.5);z-index:200;">
+                    <div style="padding:.4rem 1rem .25rem;font-size:.68rem;font-weight:700;letter-spacing:.1em;color:#64748b;text-transform:uppercase;border-bottom:1px solid rgba(255,255,255,.06);">Mentett karakterek</div>
+                    <div id="kkCharList"><div style="padding:.6rem 1rem;font-size:.82rem;color:#64748b;">Betöltés...</div></div>
+                </div>
+            </div>
+            <!-- JSON betöltés megmarad -->
             <div class="file-input-wrapper">
-                <button class="btn">Karakter JSON Betöltés</button>
+                <button class="btn">📂 JSON Betöltés</button>
                 <input type="file" id="json-loader" accept=".json">
             </div>
-            <button class="btn btn-accent" id="json-exporter">Teljes Állapot Mentése (JSON)</button>
+            <button class="btn btn-accent" id="json-exporter">💾 Állapot Mentése</button>
         </div>
-<div style="display:flex;align-items:center;justify-content:space-between;margin-top:.5rem;">
-    <span id="auth-username" style="font-size:.78rem;color:#d4af37;"></span>
-    <button onclick="doLogout()" style="background:rgba(248,113,113,0.08);border:1px solid rgba(248,113,113,0.2);color:#f87171;font-size:.75rem;padding:.3rem .7rem;border-radius:.4rem;cursor:pointer;">Kilépés</button>
-</div>
-    </header>
+        <div style="display:flex;align-items:center;justify-content:space-between;margin-top:.5rem;">
+            <span id="auth-username" style="font-size:.78rem;color:#d4af37;"></span>
+            <button onclick="doLogout()" style="background:rgba(248,113,113,0.08);border:1px solid rgba(248,113,113,0.2);color:#f87171;font-size:.75rem;padding:.3rem .7rem;border-radius:.4rem;cursor:pointer;">Kilépés</button>
+        </div>
 
     <div id="main-character-panel" class="panel hidden">
         <div class="character-header">
@@ -1341,20 +1349,130 @@ const sb = supabase.createClient(
     _saveTimer = setTimeout(window.saveToSupabase, 1500)
   }
 
+  // ─── KK KARAKTER DROPDOWN ───────────────────────────────────────
+  function toggleKKCharDD() {
+    const dd = document.getElementById('kkCharDD')
+    dd.style.display = dd.style.display === 'none' ? 'block' : 'none'
+    if (dd.style.display === 'block') window.loadKKCharList()
+  }
+  document.addEventListener('click', e => {
+    if (!e.target.closest('#kkCharWrap')) {
+      const dd = document.getElementById('kkCharDD')
+      if (dd) dd.style.display = 'none'
+    }
+  })
+
+  window.loadKKCharList = async function() {
+    if (!window._sb) return
+    const { data: { user } } = await window._sb.auth.getUser()
+    if (!user) return
+    const { data } = await window._sb.from('character_sheets')
+      .select('id, name, faj, kaszt')
+      .eq('user_id', user.id)
+      .eq('is_template', false)
+      .order('updated_at', { ascending: false })
+    const el = document.getElementById('kkCharList')
+    if (!data || data.length === 0) {
+      el.innerHTML = '<div style="padding:.6rem 1rem;font-size:.82rem;color:#64748b;">Még nincs mentett karakter a char.html-ben</div>'
+      return
+    }
+    el.innerHTML = data.map(c => `
+      <div onclick="window.loadKKChar('${c.id}')" style="display:flex;align-items:center;gap:.6rem;padding:.6rem 1rem;font-size:.82rem;cursor:pointer;transition:background .15s;color:#e2e8f0;border-bottom:1px solid rgba(255,255,255,.06);"
+        onmouseover="this.style.background='rgba(212,175,55,.07)'" onmouseout="this.style.background=''">
+        <span style="flex:1;">
+          <span style="font-weight:600;">${c.name || 'Névtelen'}</span>
+          ${c.faj||c.kaszt?`<span style="font-size:.72rem;color:#64748b;display:block;">${[c.faj,c.kaszt].filter(Boolean).join(' · ')}</span>`:''}
+        </span>
+      </div>
+    `).join('')
+  }
+
+  window.loadKKChar = async function(sheetId) {
+    document.getElementById('kkCharDD').style.display = 'none'
+    if (!window._sb) return
+
+    // 1. Betöltjük a karakterlapot (kártya adatok)
+    const { data: sheet } = await window._sb.from('character_sheets')
+      .select('*').eq('id', sheetId).single()
+
+    // 2. Betöltjük a hozzá tartozó session state-t
+    const { data: { user } } = await window._sb.auth.getUser()
+    const { data: session } = await window._sb.from('session_states')
+      .select('*').eq('user_id', user.id).eq('sheet_id', sheetId).maybeSingle()
+
+    if (session) {
+      // Van session ehhez a karakterhez — folytatjuk ahol abbahagytuk
+      if (session.char_data) appState.charData = session.char_data
+      if (session.bank_money) appState.bankMoney = session.bank_money
+      if (session.henchmen) appState.henchmen = session.henchmen
+      if (session.raw_card) appState.rawCharacterCard = session.raw_card
+      else if (sheet?.data) {
+        // Ha nincs raw_card a sessionben, generáljuk a sheet-ből
+        appState.rawCharacterCard = buildCardFromSheet(sheet.data)
+      }
+    } else if (sheet?.data) {
+      // Nincs session — friss betöltés a karakterlapból
+      const card = buildCardFromSheet(sheet.data)
+      appState.rawCharacterCard = card
+      loadRawCharacterCard(card)
+    }
+
+    // Mentjük melyik sheet van betöltve
+    window._currentKKSheetId = sheetId
+    renderEverything()
+    window.scheduleSave()
+  }
+
+  // Karakterlap adataiból kártya formátum generálása
+  function buildCardFromSheet(data) {
+    if (!data) return null
+    const card = {
+      _type: 'magus_character_card', _version: 2,
+      name: data.info?.name || '',
+      faj: data.info?.faj || '',
+      kaszt: data.info?.kaszt || '',
+      isten: data.info?.isten || '',
+      kronika: data.info?.kronika || '',
+      xp: data.info?.xp || '',
+      title: data.vampireTitle || 'KARAKTER',
+      stats: []
+    }
+    if (data.sections) {
+      data.sections.forEach(sec => {
+        sec.boxes?.forEach(box => {
+          box.rows?.forEach(row => {
+            if (row.value || row.value === 0) {
+              card.stats.push({
+                section: sec.title, box: box.title,
+                type: row.type, label: row.label,
+                value: row.value, max: row.max || 5
+              })
+            }
+          })
+        })
+      })
+    }
+    return card
+  }
+
   window.saveToSupabase = async function() {
     if (!window._sb || !window._userProfile) return
     syncMoneyData()
     const { data: { user } } = await window._sb.auth.getUser()
     if (!user) return
-    const { error } = await window._sb.from('session_states').upsert({
+    const sessionData = {
       user_id: user.id,
-      session_name: 'default',
+      session_name: window._currentKKSheetId ? null : 'default',
+      sheet_id: window._currentKKSheetId || null,
       char_data: appState.charData,
       bank_money: appState.bankMoney,
       henchmen: appState.henchmen,
       raw_card: appState.rawCharacterCard || null,
       updated_at: new Date().toISOString()
-    }, { onConflict: 'user_id,session_name' })
+    }
+    // Ha van sheet_id, az alapján upsert; különben session_name alapján
+    const conflictCol = window._currentKKSheetId ? 'user_id,sheet_id' : 'user_id,session_name'
+    const { error } = await window._sb.from('session_states').upsert(sessionData, { onConflict: conflictCol })
     if (!error) window.showSaveIndicator()
     else console.error('Mentési hiba:', error)
   }
@@ -1363,8 +1481,9 @@ const sb = supabase.createClient(
     if (!window._sb) { setTimeout(window.loadFromSupabase, 100); return }
     const { data: { user } } = await window._sb.auth.getUser()
     if (!user) return
-    const { data, error } = await window._sb.from('session_states')
-      .select('*').eq('user_id', user.id).eq('session_name', 'default').single()
+    // Default session betöltése (JSON-ból betöltött állapot)
+    const { data } = await window._sb.from('session_states')
+      .select('*').eq('user_id', user.id).eq('session_name', 'default').maybeSingle()
     if (data) {
       if (data.char_data) appState.charData = data.char_data
       if (data.bank_money) appState.bankMoney = data.bank_money
