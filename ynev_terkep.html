@@ -2033,6 +2033,8 @@ function saveCampaign(){
         JSON.stringify(campaign)
     );
 
+    window.scheduleSave();
+
 }
 
 /* =========================================================
@@ -2447,45 +2449,77 @@ document.addEventListener('mousemove', e => {
 
 </script>
 <script>
-  window.addEventListener('load', () => {
-    const el = document.getElementById('auth-username')
-    if (el && window._userProfile) {
-      el.textContent = window._userProfile.display_name
-    }
-  })
-async function doLogout() {
-  try {
-    await window._sb.auth.signOut()
-    Object.keys(localStorage)
-      .filter(k => k.startsWith('sb-'))
-      .forEach(k => localStorage.removeItem(k))
-  } catch(e) {}
-  window.location.href = 'login.html'
-}
-</script>
-<script>
+  // ─── USERNAME ───────────────────────────────────────────────────
   function trySetUsername() {
     const el = document.getElementById('auth-username')
-    if (!el) return
+    if (!el) { setTimeout(trySetUsername, 50); return }
     if (window._userProfile) {
       el.textContent = window._userProfile.display_name
     } else {
       setTimeout(trySetUsername, 50)
     }
   }
-  trySetUsername()
+  setTimeout(trySetUsername, 100)
 
+  // ─── LOGOUT ─────────────────────────────────────────────────────
   async function doLogout() {
     try {
-const sb = supabase.createClient(
-  'https://nmzdvsnoomusukkczuav.supabase.co',
-  'sb_publishable_JCRzD-ElN1os72wkfX_DKw_PoOTgnYR',
-{ auth: { persistSession: true, storageKey: 'magus-auth', storage: window.localStorage } }
-)
-      await sb.auth.signOut()
+      await window._sb.auth.signOut()
+      Object.keys(localStorage).filter(k => k.startsWith('sb-')).forEach(k => localStorage.removeItem(k))
     } catch(e) {}
     window.location.href = 'login.html'
   }
+
+  // ─── AUTOSAVE ───────────────────────────────────────────────────
+  let _saveTimer = null
+
+  window.scheduleSave = function() {
+    if (_saveTimer) clearTimeout(_saveTimer)
+    _saveTimer = setTimeout(window.saveToSupabase, 1500)
+  }
+
+  window.saveToSupabase = async function() {
+    if (!window._sb || !window._userProfile) return
+    const { data: { user } } = await window._sb.auth.getUser()
+    if (!user) return
+    drawnItems.eachLayer(layer => saveLayerStyle(layer))
+    const campaign = {
+      drawings: drawnItems.toGeoJSON(),
+      markers: markers.map(m => ({ latlng: m.getLatLng(), data: m.data }))
+    }
+    const { error } = await window._sb.from('map_states').upsert({
+      user_id: user.id,
+      drawings: campaign.drawings,
+      markers: campaign.markers,
+      updated_at: new Date().toISOString()
+    }, { onConflict: 'user_id' })
+    if (!error) window.showSaveIndicator()
+    else console.error('Mentési hiba:', error)
+  }
+
+  window.loadFromSupabase = async function() {
+    if (!window._sb) { setTimeout(window.loadFromSupabase, 100); return }
+    const { data: { user } } = await window._sb.auth.getUser()
+    if (!user) return
+    const { data } = await window._sb.from('map_states')
+      .select('*').eq('user_id', user.id).single()
+    if (data) {
+      const campaign = { drawings: data.drawings, markers: data.markers }
+      localStorage.setItem('ynev_campaign', JSON.stringify(campaign))
+      loadCampaign()
+    }
+  }
+
+  window.showSaveIndicator = function() {
+    let el = document.getElementById('save-indicator')
+    if (!el) return
+    el.style.opacity = '1'
+    setTimeout(() => el.style.opacity = '0', 1500)
+  }
+
+  window.addEventListener('load', () => setTimeout(window.loadFromSupabase, 500))
 </script>
+
+<div id="save-indicator" style="position:fixed;bottom:1rem;right:1rem;background:rgba(16,185,129,0.15);border:1px solid rgba(16,185,129,0.3);color:#34d399;font-size:.75rem;padding:.4rem .8rem;border-radius:.5rem;opacity:0;transition:opacity .5s;pointer-events:none;z-index:999;">✓ Mentve</div>
 </body>
 </html>

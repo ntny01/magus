@@ -24,8 +24,7 @@ const sb = supabase.createClient(
     }
     window._userProfile = profile
   })()
-</script>
-</script>
+    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kalandmester Pult</title>
@@ -713,6 +712,7 @@ const sb = supabase.createClient(
             if (savedIndex !== null) { currentCombatIndex = parseInt(savedIndex); }
             renderList();
             updateTurnTracker();
+            window.loadFromSupabase();
         }
 
         function saveDashboardState() {
@@ -720,6 +720,7 @@ const sb = supabase.createClient(
             localStorage.setItem('magus_km_combatants', JSON.stringify(combatants));
             localStorage.setItem('magus_km_collapsed_groups', JSON.stringify(collapsedGroups));
             localStorage.setItem('magus_km_current_index', currentCombatIndex);
+            window.scheduleSave();
         }
 
         kmNotes.addEventListener('input', saveDashboardState);
@@ -1156,26 +1157,80 @@ const sb = supabase.createClient(
         }
     </script>
 <script>
+  // ─── USERNAME ───────────────────────────────────────────────────
   function trySetUsername() {
     const el = document.getElementById('auth-username')
-    if (!el) return
+    if (!el) { setTimeout(trySetUsername, 50); return }
     if (window._userProfile) {
       el.textContent = window._userProfile.display_name
     } else {
       setTimeout(trySetUsername, 50)
     }
   }
-  trySetUsername()
+  setTimeout(trySetUsername, 100)
 
-async function doLogout() {
-  try {
-    await window._sb.auth.signOut()
-    Object.keys(localStorage)
-      .filter(k => k.startsWith('sb-'))
-      .forEach(k => localStorage.removeItem(k))
-  } catch(e) {}
-  window.location.href = 'login.html'
-}
+  // ─── LOGOUT ─────────────────────────────────────────────────────
+  async function doLogout() {
+    try {
+      await window._sb.auth.signOut()
+      Object.keys(localStorage).filter(k => k.startsWith('sb-')).forEach(k => localStorage.removeItem(k))
+    } catch(e) {}
+    window.location.href = 'login.html'
+  }
+
+  // ─── AUTOSAVE ───────────────────────────────────────────────────
+  let _saveTimer = null
+
+  window.scheduleSave = function() {
+    if (_saveTimer) clearTimeout(_saveTimer)
+    _saveTimer = setTimeout(window.saveToSupabase, 1500)
+  }
+
+  window.saveToSupabase = async function() {
+    if (!window._sb || !window._userProfile) return
+    const { data: { user } } = await window._sb.auth.getUser()
+    if (!user) return
+    const kmNotes = document.getElementById('kmNotes')
+    const { error } = await window._sb.from('km_states').upsert({
+      user_id: user.id,
+      notes: kmNotes ? kmNotes.value : '',
+      combatants: combatants,
+      collapsed_groups: collapsedGroups,
+      current_index: currentCombatIndex,
+      loaded_cards: loadedCards,
+      updated_at: new Date().toISOString()
+    }, { onConflict: 'user_id' })
+    if (!error) window.showSaveIndicator()
+    else console.error('Mentési hiba:', error)
+  }
+
+  window.loadFromSupabase = async function() {
+    if (!window._sb) { setTimeout(window.loadFromSupabase, 100); return }
+    const { data: { user } } = await window._sb.auth.getUser()
+    if (!user) return
+    const { data } = await window._sb.from('km_states')
+      .select('*').eq('user_id', user.id).single()
+    if (data) {
+      const kmNotes = document.getElementById('kmNotes')
+      if (kmNotes && data.notes) kmNotes.value = data.notes
+      if (data.combatants) combatants = data.combatants
+      if (data.collapsed_groups) collapsedGroups = data.collapsed_groups
+      if (data.current_index !== undefined) currentCombatIndex = data.current_index
+      if (data.loaded_cards) loadedCards = data.loaded_cards
+      renderList()
+      updateTurnTracker()
+      if (typeof renderCards === 'function') renderCards()
+    }
+  }
+
+  window.showSaveIndicator = function() {
+    let el = document.getElementById('save-indicator')
+    if (!el) return
+    el.style.opacity = '1'
+    setTimeout(() => el.style.opacity = '0', 1500)
+  }
 </script>
+
+<div id="save-indicator" style="position:fixed;bottom:1rem;right:1rem;background:rgba(16,185,129,0.15);border:1px solid rgba(16,185,129,0.3);color:#34d399;font-size:.75rem;padding:.4rem .8rem;border-radius:.5rem;opacity:0;transition:opacity .5s;pointer-events:none;z-index:999;">✓ Mentve</div>
 </body>
 </html>
