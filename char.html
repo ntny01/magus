@@ -60,24 +60,26 @@ const sb = supabase.createClient(
       position:sticky;top:0;z-index:50;
       background:rgba(2,6,23,0.96);backdrop-filter:blur(24px);
       border-bottom:1px solid var(--border);
-      padding:.6rem 1.25rem;
-      display:flex;align-items:center;justify-content:space-between;gap:.5rem;flex-wrap:wrap;
+      padding:.5rem 1rem;
+      display:flex;align-items:center;justify-content:space-between;gap:.5rem;
     }
-    .header-left{display:flex;align-items:center;gap:.4rem;flex-wrap:wrap;}
-    .header-right{display:flex;align-items:center;gap:.35rem;flex-wrap:wrap;}
+    .header-left{display:flex;align-items:center;gap:.4rem;flex-shrink:0;}
+    .header-center{display:flex;align-items:center;gap:.35rem;flex-wrap:wrap;justify-content:center;flex:1;}
+    .header-right{display:flex;align-items:center;gap:.4rem;flex-shrink:0;}
     .page-title{
-      font-family:'Cinzel',serif;color:var(--gold);font-size:1.15rem;
+      font-family:'Cinzel',serif;color:var(--gold);font-size:1.1rem;
       letter-spacing:.12em;text-shadow:0 0 20px var(--gold-glow);
-      margin-left:.4rem;white-space:nowrap;
+      white-space:nowrap;
     }
+    .header-sep{width:1px;height:24px;background:rgba(255,255,255,0.08);flex-shrink:0;margin:0 .15rem;}
 
     /* ===== BUTTONS ===== */
     .btn{
       background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.1);
-      color:var(--text);padding:.4rem .85rem;font-size:.8rem;font-weight:600;
+      color:var(--text);padding:.35rem .75rem;font-size:.78rem;font-weight:600;
       border-radius:.5rem;cursor:pointer;transition:all .18s;
-      display:inline-flex;align-items:center;gap:.35rem;
-      white-space:nowrap;min-height:36px;font-family:inherit;
+      display:inline-flex;align-items:center;gap:.3rem;
+      white-space:nowrap;min-height:32px;font-family:inherit;
     }
     .btn:hover{background:rgba(16,185,129,.08);border-color:rgba(16,185,129,.35);color:var(--accent-h);}
     .btn-gold{border-color:rgba(212,175,55,.4)!important;color:var(--gold)!important;}
@@ -85,6 +87,32 @@ const sb = supabase.createClient(
     .btn-red{border-color:rgba(239,68,68,.35)!important;color:var(--red)!important;}
     .btn-red:hover{background:rgba(239,68,68,.08)!important;}
     .btn-sm{padding:.28rem .55rem;font-size:.73rem;min-height:28px;}
+
+    /* Dropdown alap */
+    .dd-wrap{position:relative;}
+    .dd-menu{
+      display:none;position:absolute;top:110%;left:0;
+      background:var(--bg-card);border:1px solid var(--border);
+      border-radius:.6rem;overflow:hidden;min-width:220px;
+      box-shadow:0 12px 40px rgba(0,0,0,.5);z-index:200;
+    }
+    .dd-menu.open{display:block;}
+    .dd-item{
+      display:flex;align-items:center;gap:.6rem;padding:.6rem 1rem;
+      font-size:.82rem;cursor:pointer;transition:background .15s;color:var(--text);
+      border-bottom:1px solid var(--border-soft);
+    }
+    .dd-item:last-child{border:none;}
+    .dd-item:hover{background:rgba(212,175,55,.07);color:var(--gold);}
+    .dd-item.danger:hover{background:rgba(239,68,68,.07);color:var(--red);}
+    .dd-section{
+      padding:.4rem 1rem .25rem;
+      font-size:.68rem;font-weight:700;letter-spacing:.1em;
+      color:var(--muted);text-transform:uppercase;
+      border-bottom:1px solid var(--border-soft);
+    }
+    .dd-item-del{margin-left:auto;opacity:.5;font-size:.75rem;padding:.1rem .3rem;border-radius:.3rem;transition:all .15s;}
+    .dd-item-del:hover{opacity:1;color:var(--red);}
 
     /* Export dropdown */
     .export-wrap{position:relative;}
@@ -424,38 +452,22 @@ const sb = supabase.createClient(
     /* ===== RESPONSIVE ===== */
 @media (max-width:767px){
   .sheet-outer{padding:1rem .75rem 5rem;gap:1rem;}
-  
-  /* Fejléc optimalizálása */
-  header{padding:.5rem .5rem; justify-content: center; gap: 0.5rem;}
-  .header-left, .header-right { justify-content: center; width: 100%; }
-  .page-title { display: none; } /* Kevesebb helyet foglal el */
-  
-  /* Gombok méretének növelése érintéshez */
-  .btn{padding:.5rem .75rem; font-size:.85rem; min-height:42px; margin: 2px;}
-
-  /* Információs blokk: egy oszlopra váltás */
+  header{flex-wrap:wrap;padding:.4rem .5rem;gap:.3rem;}
+  .header-left{order:1;}
+  .header-center{order:3;width:100%;justify-content:flex-start;overflow-x:auto;padding-bottom:.2rem;}
+  .header-right{order:2;margin-left:auto;}
+  .page-title{display:none;}
+  .btn{padding:.4rem .6rem;font-size:.78rem;min-height:36px;}
   .info-card{padding:1rem;}
   .info-grid{grid-template-columns: 1fr !important; gap: .7rem;}
   .info-field { flex-direction: column; align-items: flex-start; gap: 0.2rem; }
   .info-label { font-size: 0.7rem; }
-  
   .sheet-card{padding:1.1rem .9rem 1.5rem;}
   .boxes-grid{grid-template-columns:1fr;}
-  
-  /* Cím és beviteli mezők */
   .vtitle-input{font-size:1.5rem; letter-spacing:.08em;}
-  
-  /* iOS zoom megakadályozása bevitelnél */
   input, select, textarea { font-size: 16px !important; }
-  /* Mobil optimalizálás a szekció gombokhoz */
-  .section-header {
-    flex-wrap: wrap; /* Engedélyezzük a sortörést */
-    gap: 0.5rem;     /* Kicsit kisebb rés a sortörésnél */
-  }
-  .section-edit-ctrls {
-    width: 100%;              /* A gombok sora elfoglalja a teljes szélességet */
-    justify-content: flex-end; /* Jobbra igazítjuk a gombokat */
-  }
+  .section-header {flex-wrap: wrap;gap: 0.5rem;}
+  .section-edit-ctrls {width: 100%;justify-content: flex-end;}
 }
     @media (min-width:768px) and (max-width:1023px){
       .sheet-outer{padding:1.5rem 1.25rem 4rem;}
@@ -469,15 +481,47 @@ const sb = supabase.createClient(
 <div id="magic-particles"></div>
 
 <header>
+  <!-- BAL: Navigáció -->
   <div class="header-left">
-    <a href="index.html" class="btn">📖 Kódex</a>
-    <a href="ynev_terkep.html" class="btn" style="border-color:rgba(59,130,246,.25);color:#60a5fa;">🗺️ Térkép</a>
-    <span class="page-title">M.A.G.U.S. Karakterlap</span>
+    <a href="index.html" class="btn">📖</a>
+    <a href="ynev_terkep.html" class="btn" style="border-color:rgba(59,130,246,.25);color:#60a5fa;">🗺️</a>
+    <span class="page-title">Karakterlap</span>
   </div>
-  <div class="header-right">
+
+  <!-- KÖZÉP: Karakter eszközök -->
+  <div class="header-center">
+
+    <!-- Karakterek legördülő -->
+    <div class="dd-wrap">
+      <button class="btn btn-gold" onclick="toggleDD('charDD')">📁 Karakterek ▾</button>
+      <div class="dd-menu" id="charDD">
+        <div class="dd-section">Mentett karakterek</div>
+        <div id="charList"><div class="dd-item" style="color:var(--muted);cursor:default;">Betöltés...</div></div>
+        <div class="dd-section" style="margin-top:.25rem;">Aktuális</div>
+        <div class="dd-item" onclick="saveCurrentChar()">💾 Mentés</div>
+        <div class="dd-item danger" onclick="resetSheet();closeAllDD()">↺ Alaphelyzet</div>
+      </div>
+    </div>
+
+    <!-- Sablonok legördülő -->
+    <div class="dd-wrap">
+      <button class="btn" onclick="toggleDD('templateDD')">📋 Sablonok ▾</button>
+      <div class="dd-menu" id="templateDD">
+        <div class="dd-section">Elérhető sablonok</div>
+        <div id="templateList"><div class="dd-item" style="color:var(--muted);cursor:default;">Betöltés...</div></div>
+        <div id="adminTemplateSection" style="display:none;">
+          <div class="dd-section" style="margin-top:.25rem;">Admin</div>
+          <div class="dd-item" onclick="saveAsTemplate()">⬆️ Feltöltés sablonként</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="header-sep"></div>
+
+    <!-- Nézet -->
     <button class="btn btn-gold" id="viewBtn" onclick="toggleViewMode()">🔓 Szerkeszthető</button>
-    <button class="btn" onclick="printSheet()">🖨️ Nyomtatás</button>
-    <button class="btn" id="imgBtn" onclick="saveAsImage()">🖼️ Kép</button>
+
+    <!-- Export -->
     <div class="export-wrap">
       <button class="btn" onclick="toggleExportMenu()">💾 Export ▾</button>
       <div class="export-menu" id="exportMenu">
@@ -486,13 +530,19 @@ const sb = supabase.createClient(
         <div class="export-item" onclick="exportCard()">🃏 Karakter kártya (KM)</div>
       </div>
     </div>
+
+    <!-- Import / Nyomtatás / Kép -->
     <button class="btn" onclick="document.getElementById('importFile').click()">📂 Import</button>
     <input type="file" id="importFile" accept=".json" style="display:none" onchange="importData(event)">
-    <button class="btn btn-red" onclick="resetSheet()">↺ Alaphelyzet</button>
-  <div style="display:flex;align-items:center;gap:.5rem;flex-shrink:0;">
+    <button class="btn" onclick="printSheet()">🖨️</button>
+    <button class="btn" id="imgBtn" onclick="saveAsImage()">🖼️</button>
+
+  </div>
+
+  <!-- JOBB: User -->
+  <div class="header-right">
     <span id="auth-username" style="font-size:.75rem;color:#d4af37;font-family:'Cinzel',serif;letter-spacing:.06em;white-space:nowrap;"></span>
     <button onclick="doLogout()" style="background:rgba(248,113,113,0.08);border:1px solid rgba(248,113,113,0.2);color:#f87171;font-size:.75rem;padding:.3rem .7rem;border-radius:.4rem;cursor:pointer;white-space:nowrap;">Kilépés</button>
-  </div>
   </div>
 </header>
 
@@ -1174,38 +1224,205 @@ renderAll();
     window.location.href = 'login.html'
   }
 
-  // ─── AUTOSAVE ───────────────────────────────────────────────────
-  let _saveTimer = null
+  // ─── DROPDOWN KEZELÉS ───────────────────────────────────────────
+  function toggleDD(id) {
+    document.querySelectorAll('.dd-menu').forEach(m => { if(m.id !== id) m.classList.remove('open') })
+    document.getElementById(id).classList.toggle('open')
+  }
+  function closeAllDD() {
+    document.querySelectorAll('.dd-menu, .export-menu').forEach(m => m.classList.remove('open'))
+  }
+  document.addEventListener('click', e => {
+    if (!e.target.closest('.dd-wrap') && !e.target.closest('.export-wrap')) closeAllDD()
+  })
 
+  // ─── AUTOSAVE (háttér) ──────────────────────────────────────────
+  let _saveTimer = null
   window.scheduleSave = function() {
     if (_saveTimer) clearTimeout(_saveTimer)
-    _saveTimer = setTimeout(window.saveToSupabase, 1500)
+    _saveTimer = setTimeout(window._bgSave, 1500)
   }
 
-  window.saveToSupabase = async function() {
+  window._bgSave = async function() {
     if (!window._sb || !window._userProfile) return
     const { data: { user } } = await window._sb.auth.getUser()
-    if (!user) return
-    const { error } = await window._sb.from('character_sheets').upsert({
-      user_id: user.id,
+    if (!user || !window._currentSheetId) return
+    const { error } = await window._sb.from('character_sheets').update({
       name: sheetData.info.name || 'Névtelen',
       faj: sheetData.info.faj || '',
       kaszt: sheetData.info.kaszt || '',
       data: sheetData,
       updated_at: new Date().toISOString()
-    }, { onConflict: 'user_id' })
+    }).eq('id', window._currentSheetId)
     if (!error) window.showSaveIndicator()
     else console.error('Mentési hiba:', error)
   }
 
+  // ─── KARAKTER MENTÉS ────────────────────────────────────────────
+  window.saveCurrentChar = async function() {
+    closeAllDD()
+    if (!window._sb || !window._userProfile) return
+    const { data: { user } } = await window._sb.auth.getUser()
+    if (!user) return
+
+    const charName = sheetData.info.name || 'Névtelen karakter'
+
+    if (window._currentSheetId) {
+      // Frissítés
+      await window._sb.from('character_sheets').update({
+        name: charName,
+        faj: sheetData.info.faj || '',
+        kaszt: sheetData.info.kaszt || '',
+        data: sheetData,
+        updated_at: new Date().toISOString()
+      }).eq('id', window._currentSheetId)
+    } else {
+      // Új karakter
+      const { data, error } = await window._sb.from('character_sheets').insert({
+        user_id: user.id,
+        name: charName,
+        faj: sheetData.info.faj || '',
+        kaszt: sheetData.info.kaszt || '',
+        data: sheetData,
+        is_template: false,
+        template_visible: false
+      }).select().single()
+      if (!error && data) window._currentSheetId = data.id
+    }
+    window.showSaveIndicator()
+    await window.loadCharList()
+  }
+
+  // ─── KARAKTER BETÖLTÉS ──────────────────────────────────────────
+  window.loadChar = async function(id) {
+    closeAllDD()
+    const { data } = await window._sb.from('character_sheets').select('*').eq('id', id).single()
+    if (data && data.data) {
+      sheetData = data.data
+      window._currentSheetId = data.id
+      document.getElementById('vampireTitle').value = sheetData.vampireTitle || 'KARAKTER'
+      const infoKeys = ['name','faj','kaszt','isten','kronika','xp']
+      infoKeys.forEach(k => {
+        const el = document.getElementById('info_' + k)
+        if (el) el.value = (sheetData.info || {})[k] || ''
+      })
+      renderAll()
+      window.showSaveIndicator()
+    }
+  }
+
+  // ─── KARAKTER TÖRLÉS ────────────────────────────────────────────
+  window.deleteChar = async function(id, e) {
+    e.stopPropagation()
+    if (!confirm('Biztosan törlöd ezt a karaktert?')) return
+    await window._sb.from('character_sheets').delete().eq('id', id)
+    if (window._currentSheetId === id) {
+      window._currentSheetId = null
+      resetSheet()
+    }
+    await window.loadCharList()
+  }
+
+  // ─── KARAKTER LISTA BETÖLTÉS ────────────────────────────────────
+  window.loadCharList = async function() {
+    if (!window._sb) return
+    const { data: { user } } = await window._sb.auth.getUser()
+    if (!user) return
+    const { data } = await window._sb.from('character_sheets')
+      .select('id, name, faj, kaszt, updated_at')
+      .eq('user_id', user.id)
+      .eq('is_template', false)
+      .order('updated_at', { ascending: false })
+    const el = document.getElementById('charList')
+    if (!data || data.length === 0) {
+      el.innerHTML = '<div class="dd-item" style="color:var(--muted);cursor:default;font-size:.78rem;">Még nincs mentett karakter</div>'
+      return
+    }
+    el.innerHTML = data.map(c => `
+      <div class="dd-item" onclick="window.loadChar('${c.id}')">
+        <span style="flex:1;">
+          <span style="font-weight:600;">${c.name || 'Névtelen'}</span>
+          ${c.faj || c.kaszt ? `<span style="font-size:.72rem;color:var(--muted);display:block;">${[c.faj,c.kaszt].filter(Boolean).join(' · ')}</span>` : ''}
+        </span>
+        <span class="dd-item-del" onclick="window.deleteChar('${c.id}', event)" title="Törlés">✕</span>
+      </div>
+    `).join('')
+  }
+
+  // ─── SABLON MENTÉS (csak admin) ─────────────────────────────────
+  window.saveAsTemplate = async function() {
+    closeAllDD()
+    if (!window._sb || !window._userProfile) return
+    if (window._userProfile.role !== 'admin') return
+    const { data: { user } } = await window._sb.auth.getUser()
+    if (!user) return
+    const templateName = sheetData.info.name || sheetData.vampireTitle || 'Névtelen sablon'
+    const { error } = await window._sb.from('character_sheets').insert({
+      user_id: user.id,
+      name: templateName,
+      faj: sheetData.info.faj || '',
+      kaszt: sheetData.info.kaszt || '',
+      data: sheetData,
+      is_template: true,
+      template_visible: true
+    })
+    if (!error) {
+      window.showSaveIndicator()
+      await window.loadTemplateList()
+      alert(`"${templateName}" sablon feltöltve!`)
+    }
+  }
+
+  // ─── SABLON LISTA ───────────────────────────────────────────────
+  window.loadTemplateList = async function() {
+    if (!window._sb) return
+    const { data } = await window._sb.from('character_sheets')
+      .select('id, name, faj, kaszt')
+      .eq('is_template', true)
+      .eq('template_visible', true)
+      .order('name', { ascending: true })
+    const el = document.getElementById('templateList')
+    if (!data || data.length === 0) {
+      el.innerHTML = '<div class="dd-item" style="color:var(--muted);cursor:default;font-size:.78rem;">Még nincs sablon</div>'
+      return
+    }
+    el.innerHTML = data.map(t => `
+      <div class="dd-item" onclick="window.loadChar('${t.id}');window._currentSheetId=null;">
+        <span style="flex:1;">
+          <span style="font-weight:600;">${t.name}</span>
+          ${t.faj || t.kaszt ? `<span style="font-size:.72rem;color:var(--muted);display:block;">${[t.faj,t.kaszt].filter(Boolean).join(' · ')}</span>` : ''}
+        </span>
+      </div>
+    `).join('')
+  }
+
+  // ─── INIT ───────────────────────────────────────────────────────
   window.loadFromSupabase = async function() {
     if (!window._sb) { setTimeout(window.loadFromSupabase, 100); return }
     const { data: { user } } = await window._sb.auth.getUser()
     if (!user) return
+
+    // Admin sablon feltöltés gomb megjelenítése
+    if (window._userProfile?.role === 'admin') {
+      const adminSec = document.getElementById('adminTemplateSection')
+      if (adminSec) adminSec.style.display = 'block'
+    }
+
+    // Listák betöltése
+    await window.loadCharList()
+    await window.loadTemplateList()
+
+    // Legutóbbi karakter betöltése
     const { data } = await window._sb.from('character_sheets')
-      .select('*').eq('user_id', user.id).single()
+      .select('*')
+      .eq('user_id', user.id)
+      .eq('is_template', false)
+      .order('updated_at', { ascending: false })
+      .limit(1)
+      .single()
     if (data && data.data) {
       sheetData = data.data
+      window._currentSheetId = data.id
       document.getElementById('vampireTitle').value = sheetData.vampireTitle || 'KARAKTER'
       const infoKeys = ['name','faj','kaszt','isten','kronika','xp']
       infoKeys.forEach(k => {
