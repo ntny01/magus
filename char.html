@@ -328,22 +328,59 @@ const sb = supabase.createClient(
 
     /* ===== PRINT ===== */
     @media print{
-      /* Agresszív háttérszín kényszerítés nyomtatáskor az összes elemre */
-      *, *::before, *::after, html, body {
+      @page {
+        margin: 10mm;
+      }
+      html, body {
+        background: #ffffff !important;
+        color: #000000 !important;
+      }
+      * {
         -webkit-print-color-adjust: exact !important;
         print-color-adjust: exact !important;
         color-adjust: exact !important;
       }
-      
       body {
-        background-color: #020617 !important; 
-        color: var(--text) !important;
+        background: #ffffff !important;
       }
-      
       header, #magic-particles, .edit-only, #add-section-btn { display:none!important; }
       .sheet-outer { padding: 0!important; margin: 0 auto !important; }
       .info-card, .sheet-card, .box-wrap {
-        break-inside: avoid; /* Ne vágja ketté az elemeket lapozásnál */
+        break-inside: avoid;
+        background: #ffffff !important;
+        border-color: #cccccc !important;
+        box-shadow: none !important;
+      }
+      .vtitle-input {
+        color: #000000 !important;
+        background: transparent !important;
+        border: none !important;
+      }
+      .info-input, .info-label {
+        color: #000000 !important;
+        background: transparent !important;
+        border-color: #cccccc !important;
+      }
+      .section-title-input, .box-title-input {
+        color: #000000 !important;
+        background: transparent !important;
+        border-color: #cccccc !important;
+      }
+      .dot {
+        border-color: #000000 !important;
+      }
+      .dot.filled {
+        background: #000000 !important;
+      }
+      textarea, input[type="text"] {
+        color: #000000 !important;
+        background: transparent !important;
+      }
+      .row-label {
+        color: #333333 !important;
+      }
+      .header-value-display {
+        color: #000000 !important;
       }
     }
 
@@ -414,7 +451,7 @@ const sb = supabase.createClient(
     </div>
     <button class="btn" onclick="document.getElementById('importFile').click()">📂 Import</button>
     <input type="file" id="importFile" accept=".json" style="display:none" onchange="importData(event)">
-    <button class="btn btn-red" onclick="resetSheet()">🗑️ Törlés</button>
+    <button class="btn btn-red" onclick="resetSheet()">↺ Alaphelyzet</button>
   <div style="display:flex;align-items:center;gap:.5rem;flex-shrink:0;">
     <span id="auth-username" style="font-size:.75rem;color:#d4af37;font-family:'Cinzel',serif;letter-spacing:.06em;white-space:nowrap;"></span>
     <button onclick="doLogout()" style="background:rgba(248,113,113,0.08);border:1px solid rgba(248,113,113,0.2);color:#f87171;font-size:.75rem;padding:.3rem .7rem;border-radius:.4rem;cursor:pointer;white-space:nowrap;">Kilépés</button>
