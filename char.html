@@ -348,8 +348,11 @@ const sb = supabase.createClient(
       .info-card, .sheet-card, .box-wrap {
         break-inside: avoid;
         background: #ffffff !important;
-        border-color: #cccccc !important;
+        border: 1.5px solid #999999 !important;
         box-shadow: none !important;
+      }
+      .box-wrap {
+        border: 1px solid #bbbbbb !important;
       }
       .vtitle-input {
         color: #000000 !important;
@@ -359,28 +362,62 @@ const sb = supabase.createClient(
       .info-input, .info-label {
         color: #000000 !important;
         background: transparent !important;
-        border-color: #cccccc !important;
+        border-bottom: 1px solid #aaaaaa !important;
       }
-      .section-title-input, .box-title-input {
+      .section-title-input {
         color: #000000 !important;
         background: transparent !important;
-        border-color: #cccccc !important;
+        border-bottom: 1.5px solid #888888 !important;
       }
-      .dot {
-        border-color: #000000 !important;
-      }
-      .dot.filled {
-        background: #000000 !important;
+      .box-title-input {
+        color: #000000 !important;
+        background: transparent !important;
+        border-bottom: 1px solid #aaaaaa !important;
       }
       textarea, input[type="text"] {
         color: #000000 !important;
         background: transparent !important;
       }
       .row-label {
-        color: #333333 !important;
+        color: #222222 !important;
       }
-      .header-value-display {
-        color: #000000 !important;
+      /* ── Pontok: valódi CSS körök nyomtatáshoz ── */
+      .dot {
+        display: inline-block !important;
+        width: 11px !important;
+        height: 11px !important;
+        border-radius: 50% !important;
+        border: 1.5px solid #333333 !important;
+        background: transparent !important;
+        font-size: 0 !important;
+        vertical-align: middle !important;
+        margin: 0 1px !important;
+        color: transparent !important;
+        text-shadow: none !important;
+      }
+      .dot.filled {
+        background: #333333 !important;
+        border-color: #333333 !important;
+      }
+      .header-dot {
+        display: inline-block !important;
+        width: 13px !important;
+        height: 13px !important;
+        border-radius: 50% !important;
+        border: 1.5px solid #333333 !important;
+        background: transparent !important;
+        font-size: 0 !important;
+        vertical-align: middle !important;
+        margin: 0 1px !important;
+        color: transparent !important;
+        text-shadow: none !important;
+      }
+      .header-dot.filled {
+        background: #333333 !important;
+        border-color: #333333 !important;
+      }
+      .ornament, .ornament-sm {
+        background: #cccccc !important;
       }
     }
 
