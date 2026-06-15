@@ -354,6 +354,64 @@ header{
 .pub-toggle.published{border-color:rgba(16,185,129,.3);color:var(--accent-h);}
 .pub-toggle:hover{background:rgba(16,185,129,.06);}
 
+/* ===== OPCIÓ SZERKESZTŐ ===== */
+.opt-edit-btn{
+  background:rgba(255,255,255,.03);border:1px solid var(--border-soft);
+  color:var(--muted);font-size:.78rem;padding:.2rem .4rem;
+  border-radius:.4rem;cursor:pointer;transition:all .15s;flex-shrink:0;line-height:1;
+}
+.opt-edit-btn:hover{border-color:rgba(168,85,247,.35);color:var(--purple);background:rgba(168,85,247,.06);}
+
+.modal-overlay{
+  position:fixed;inset:0;background:rgba(0,0,0,.6);backdrop-filter:blur(4px);
+  display:flex;align-items:center;justify-content:center;z-index:1000;padding:1rem;
+}
+.modal-box{
+  background:var(--bg-card);border:1px solid rgba(168,85,247,.25);
+  border-radius:1rem;max-width:520px;width:100%;max-height:80vh;
+  display:flex;flex-direction:column;overflow:hidden;
+  box-shadow:0 20px 80px rgba(0,0,0,.5);
+}
+.modal-header{
+  padding:1rem 1.25rem;border-bottom:1px solid var(--border-soft);
+  display:flex;align-items:center;justify-content:space-between;
+}
+.modal-title{font-family:'Cinzel',serif;font-size:1rem;letter-spacing:.08em;color:var(--purple);}
+.modal-close{background:none;border:none;color:var(--muted);font-size:1.1rem;cursor:pointer;padding:.2rem .4rem;border-radius:.3rem;}
+.modal-close:hover{color:var(--red);background:rgba(239,68,68,.08);}
+.modal-body{padding:1rem 1.25rem;overflow-y:auto;flex:1;}
+.modal-footer{padding:.85rem 1.25rem;border-top:1px solid var(--border-soft);display:flex;gap:.5rem;}
+
+.opt-add-row{display:flex;gap:.5rem;margin-bottom:.85rem;}
+.opt-add-input{
+  flex:1;background:rgba(255,255,255,.03);border:1px solid var(--border-soft);
+  border-radius:.5rem;color:var(--text);padding:.5rem .7rem;font-size:.85rem;outline:none;
+}
+.opt-add-input:focus{border-color:rgba(168,85,247,.35);}
+
+.opt-list-item{
+  border:1px solid var(--border-soft);border-radius:.6rem;
+  padding:.6rem .8rem;margin-bottom:.5rem;
+}
+.opt-list-header{display:flex;align-items:center;gap:.5rem;margin-bottom:.4rem;}
+.opt-list-name{font-weight:600;font-size:.85rem;flex:1;}
+.opt-list-badge{
+  font-size:.62rem;padding:.1rem .35rem;border-radius:.3rem;
+  background:rgba(148,163,184,.1);color:var(--muted);border:1px solid rgba(148,163,184,.15);
+}
+.opt-list-badge.has-desc{background:rgba(16,185,129,.1);color:var(--accent-h);border-color:rgba(16,185,129,.2);}
+.opt-desc-input{
+  width:100%;background:rgba(255,255,255,.03);border:1px solid var(--border-soft);
+  border-radius:.4rem;color:var(--text);padding:.45rem .6rem;font-size:.8rem;
+  outline:none;resize:vertical;min-height:50px;font-family:inherit;
+}
+.opt-desc-input:focus{border-color:rgba(168,85,247,.3);}
+.opt-del-btn{
+  background:none;border:none;color:rgba(239,68,68,.4);cursor:pointer;
+  font-size:.8rem;padding:.1rem .35rem;border-radius:.3rem;transition:all .15s;
+}
+.opt-del-btn:hover{color:var(--red);background:rgba(239,68,68,.08);}
+
 /* ===== RESPONSIVE ===== */
 @media(max-width:900px){
   .workspace{grid-template-columns:1fr;grid-template-rows:auto 1fr;}
@@ -561,18 +619,21 @@ function renderEditor() {
             <input type="text" class="info-input" id="info_faj" 
               placeholder="..." value="${sheetData.info.faj||''}"
               oninput="sheetData.info.faj=this.value">
+            <button class="opt-edit-btn" onclick="openOptionEditor('info_faj','Faj')" title="Opciók és leírások szerkesztése">⚙️</button>
           </div>
           <div class="info-field">
             <span class="info-label">Kaszt:</span>
             <input type="text" class="info-input" id="info_kaszt" 
               placeholder="..." value="${sheetData.info.kaszt||''}"
               oninput="sheetData.info.kaszt=this.value">
+            <button class="opt-edit-btn" onclick="openOptionEditor('info_kaszt','Kaszt')" title="Opciók és leírások szerkesztése">⚙️</button>
           </div>
           <div class="info-field">
             <span class="info-label">Isten:</span>
             <input type="text" class="info-input" id="info_isten" 
               placeholder="..." value="${sheetData.info.isten||''}"
               oninput="sheetData.info.isten=this.value">
+            <button class="opt-edit-btn" onclick="openOptionEditor('info_isten','Isten')" title="Opciók és leírások szerkesztése">⚙️</button>
           </div>
         </div>
       </div>
@@ -639,11 +700,11 @@ function renderBox(box, grid, sec) {
   box.rows.forEach(row => div.appendChild(buildRow(row, box)))
   const addArea = document.createElement('div'); addArea.className='add-row-area'
   const picker = document.createElement('div'); picker.className='add-row-picker';
-  [{t:'dot',l:'● Pont-sor'},{t:'text',l:'_ Szöveges'},{t:'textarea',l:'≡ Szövegmező'},{t:'header',l:'◉ Fejléc'}]
+  [{t:'dot',l:'● Pont-sor'},{t:'text',l:'_ Szöveges'},{t:'select',l:'▾ Legördülő'},{t:'textarea',l:'≡ Szövegmező'},{t:'header',l:'◉ Fejléc'}]
     .forEach(({t,l}) => {
       const b = document.createElement('button'); b.className='add-row-btn'; b.innerText=l
       b.onclick = () => {
-        box.rows.push({id:uid(),type:t,label:t==='dot'?'Új képesség':t==='header'?'Fejléc':'',
+        box.rows.push({id:uid(),type:t,label:t==='dot'?'Új képesség':t==='header'?'Fejléc':t==='select'?'Új legördülő':'',
           value:(t==='dot'||t==='header')?0:'',max:t==='header'?10:5})
         renderAll()
       }
@@ -658,7 +719,7 @@ function buildRow(row, box) {
     wrap.className='row-wrap'
     const li=makeRowLabelInput(row); const dw=document.createElement('div'); dw.className='dots-wrap'
     renderDots(dw, row, false)
-    wrap.append(li, dw, makeDelRowBtn(row,box))
+    wrap.append(li, dw, makeOptEditBtn(row), makeDelRowBtn(row,box))
   } else if (row.type==='text') {
     wrap.className='row-wrap'
     const li=makeRowLabelInput(row); li.style.maxWidth='100px'
@@ -666,6 +727,23 @@ function buildRow(row, box) {
     ti.value=row.value; ti.placeholder='...'
     ti.oninput=e=>{row.value=e.target.value}
     wrap.append(li, ti, makeDelRowBtn(row,box))
+  } else if (row.type==='select') {
+    wrap.className='row-wrap'
+    const li=makeRowLabelInput(row); li.style.maxWidth='100px'
+    const sel=document.createElement('select'); sel.className='row-text-input'
+    const opts = row.options || []
+    if (opts.length === 0) {
+      const o = document.createElement('option'); o.textContent='(nincs opció — ⚙️)'; o.value=''
+      sel.appendChild(o)
+    } else {
+      opts.forEach(opt => {
+        const o = document.createElement('option'); o.value=opt; o.textContent=opt
+        if (row.value === opt) o.selected = true
+        sel.appendChild(o)
+      })
+    }
+    sel.onchange = e => { row.value = e.target.value }
+    wrap.append(li, sel, makeOptEditBtn(row), makeDelRowBtn(row,box))
   } else if (row.type==='textarea') {
     wrap.style.cssText='flex-direction:column;align-items:stretch;display:flex;gap:.3rem;'
     const ta=document.createElement('textarea'); ta.className='row-textarea'
@@ -684,6 +762,13 @@ function buildRow(row, box) {
     hw.append(hi, hdw, del); wrap.appendChild(hw)
   }
   return wrap
+}
+
+function makeOptEditBtn(row) {
+  const b = document.createElement('button')
+  b.className='opt-edit-btn'; b.innerHTML='⚙️'; b.title='Opciók és leírások szerkesztése'
+  b.onclick = () => openOptionEditor(row.id, row.label || 'Mező')
+  return b
 }
 
 function makeRowLabelInput(row) {
@@ -840,6 +925,141 @@ async function loadTemplateList() {
       </span>
     </div>
   `).join('')
+}
+
+/* ==============================
+   OPCIÓ SZERKESZTŐ (field_descriptions)
+   ============================== */
+let _optEditorFieldKey = null
+
+async function openOptionEditor(fieldKey, fieldLabel) {
+  _optEditorFieldKey = fieldKey
+  let overlay = document.getElementById('optModalOverlay')
+  if (!overlay) {
+    overlay = document.createElement('div')
+    overlay.id = 'optModalOverlay'
+    overlay.className = 'modal-overlay'
+    overlay.onclick = e => { if (e.target === overlay) closeOptionEditor() }
+    document.body.appendChild(overlay)
+  }
+  overlay.innerHTML = `
+    <div class="modal-box">
+      <div class="modal-header">
+        <span class="modal-title">⚙️ ${fieldLabel} — opciók és leírások</span>
+        <button class="modal-close" onclick="closeOptionEditor()">✕</button>
+      </div>
+      <div class="modal-body" id="optModalBody">
+        <div style="color:var(--muted);font-size:.82rem;">Betöltés...</div>
+      </div>
+      <div class="modal-footer">
+        <div class="opt-add-row" style="flex:1;margin-bottom:0;">
+          <input type="text" class="opt-add-input" id="optNewValue" placeholder="Új opció neve (pl. Ork)..."
+            onkeydown="if(event.key==='Enter') addOptionValue()">
+          <button class="btn btn-purple" onclick="addOptionValue()">+ Hozzáad</button>
+        </div>
+      </div>
+    </div>
+  `
+  overlay.style.display = 'flex'
+  await loadOptionList(fieldKey)
+}
+
+function closeOptionEditor() {
+  const overlay = document.getElementById('optModalOverlay')
+  if (overlay) overlay.style.display = 'none'
+  const fieldKey = _optEditorFieldKey
+  _optEditorFieldKey = null
+  // Ha select sorhoz tartozott, frissítjük a row.options listát a friss adatokkal
+  if (fieldKey && window._sb) {
+    window._sb.from('field_descriptions').select('option_value').eq('field_key', fieldKey)
+      .order('option_value', { ascending: true })
+      .then(({ data }) => {
+        if (data) {
+          const row = findRowById(fieldKey)
+          if (row) row.options = data.map(d => d.option_value)
+        }
+        renderAll()
+      })
+  } else {
+    renderAll()
+  }
+}
+
+function findRowById(rowId) {
+  for (const sec of sheetData.sections) {
+    for (const box of sec.boxes) {
+      const row = box.rows.find(r => r.id === rowId)
+      if (row) return row
+    }
+  }
+  return null
+}
+
+async function loadOptionList(fieldKey) {
+  const body = document.getElementById('optModalBody')
+  if (!window._sb) { body.innerHTML = '<div style="color:var(--muted);">Nincs adatbázis kapcsolat.</div>'; return }
+  const { data, error } = await window._sb.from('field_descriptions')
+    .select('*').eq('field_key', fieldKey).order('option_value', { ascending: true })
+  if (error) { body.innerHTML = `<div style="color:var(--red);">Hiba: ${error.message}</div>`; return }
+  if (!data || data.length === 0) {
+    body.innerHTML = '<div style="color:var(--muted);font-size:.82rem;">Még nincs opció ehhez a mezőhöz. Adj hozzá egyet lent.</div>'
+    return
+  }
+  body.innerHTML = data.map(opt => `
+    <div class="opt-list-item" data-id="${opt.id}">
+      <div class="opt-list-header">
+        <span class="opt-list-name">${opt.option_value}</span>
+        <span class="opt-list-badge ${opt.description ? 'has-desc' : ''}">${opt.description ? 'Van leírás' : 'Nincs leírás'}</span>
+        <button class="opt-del-btn" onclick="deleteOptionValue('${opt.id}','${fieldKey}')" title="Opció törlése">✕</button>
+      </div>
+      <textarea class="opt-desc-input" placeholder="Leírás (pl. ráviszik majd a kurzort a karakterlapon)..."
+        onblur="saveOptionDescription('${opt.id}', this.value)">${opt.description || ''}</textarea>
+    </div>
+  `).join('')
+}
+
+async function addOptionValue() {
+  const input = document.getElementById('optNewValue')
+  const val = input.value.trim()
+  if (!val || !_optEditorFieldKey) return
+  const { error } = await window._sb.from('field_descriptions').insert({
+    field_key: _optEditorFieldKey,
+    option_value: val,
+    description: ''
+  })
+  if (error) {
+    if (error.code === '23505') showToast('⚠️ Ez az opció már létezik')
+    else { console.error(error); showToast('⚠️ Hiba mentéskor') }
+    return
+  }
+  input.value = ''
+  await loadOptionList(_optEditorFieldKey)
+  showToast('✓ Opció hozzáadva')
+}
+
+async function saveOptionDescription(id, description) {
+  const { error } = await window._sb.from('field_descriptions')
+    .update({ description, updated_at: new Date().toISOString() })
+    .eq('id', id)
+  if (!error) {
+    showToast('✓ Leírás mentve')
+    const item = document.querySelector(`.opt-list-item[data-id="${id}"] .opt-list-badge`)
+    if (item) {
+      if (description) { item.textContent='Van leírás'; item.classList.add('has-desc') }
+      else { item.textContent='Nincs leírás'; item.classList.remove('has-desc') }
+    }
+  } else {
+    console.error(error); showToast('⚠️ Hiba mentéskor')
+  }
+}
+
+async function deleteOptionValue(id, fieldKey) {
+  if (!confirm('Biztosan törlöd ezt az opciót? Ha karakterlapokon használják, ott megmarad a szöveg, de a legördülőből eltűnik.')) return
+  const { error } = await window._sb.from('field_descriptions').delete().eq('id', id)
+  if (!error) {
+    await loadOptionList(fieldKey)
+    showToast('🗑️ Opció törölve')
+  }
 }
 
 /* ==============================
