@@ -638,7 +638,7 @@ function renderBox(box, grid, sec) {
   bHdr.append(bTi, delBoxBtn); div.appendChild(bHdr)
   box.rows.forEach(row => div.appendChild(buildRow(row, box)))
   const addArea = document.createElement('div'); addArea.className='add-row-area'
-  const picker = document.createElement('div'); picker.className='add-row-picker'
+  const picker = document.createElement('div'); picker.className='add-row-picker';
   [{t:'dot',l:'● Pont-sor'},{t:'text',l:'_ Szöveges'},{t:'textarea',l:'≡ Szövegmező'},{t:'header',l:'◉ Fejléc'}]
     .forEach(({t,l}) => {
       const b = document.createElement('button'); b.className='add-row-btn'; b.innerText=l
