@@ -361,6 +361,8 @@ header{
   border-radius:.4rem;cursor:pointer;transition:all .15s;flex-shrink:0;line-height:1;
 }
 .opt-edit-btn:hover{border-color:rgba(168,85,247,.35);color:var(--purple);background:rgba(168,85,247,.06);}
+.opt-edit-btn.has-data{border-color:rgba(16,185,129,.4);color:var(--accent-h);background:rgba(16,185,129,.06);}
+.opt-edit-btn.has-data:hover{border-color:rgba(16,185,129,.6);background:rgba(16,185,129,.1);}
 
 .modal-overlay{
   position:fixed;inset:0;background:rgba(0,0,0,.6);backdrop-filter:blur(4px);
@@ -568,6 +570,7 @@ let sheetData = {
   viewMode:0
 };
 let _currentTemplateId = null;
+let _fieldKeysWithData = new Set();
 
 let _uid = 3000;
 const uid = () => 'u' + (++_uid) + '_' + (Math.random()*999|0);
@@ -600,6 +603,7 @@ function renderEditor() {
         ${sheetData._published ? '✓ Publikálva' : '○ Rejtett'}
       </button>
       <button class="btn btn-red btn-sm" onclick="deleteTemplate()">🗑️ Törlés</button>
+      <button class="btn btn-sm" onclick="openAllOptionsBrowser()">📚 Összes opció</button>
     </div>
     <div class="sheet-outer" id="sheet-wrapper">
       <div class="vtitle-wrap">
@@ -619,21 +623,21 @@ function renderEditor() {
             <input type="text" class="info-input" id="info_faj" 
               placeholder="..." value="${sheetData.info.faj||''}"
               oninput="sheetData.info.faj=this.value">
-            <button class="opt-edit-btn" onclick="openOptionEditor('info_faj','Faj')" title="Opciók és leírások szerkesztése">⚙️</button>
+            <button class="opt-edit-btn ${_fieldKeysWithData.has('info_faj')?'has-data':''}" onclick="openOptionEditor('info_faj','Faj')" title="Opciók és leírások szerkesztése">⚙️</button>
           </div>
           <div class="info-field">
             <span class="info-label">Kaszt:</span>
             <input type="text" class="info-input" id="info_kaszt" 
               placeholder="..." value="${sheetData.info.kaszt||''}"
               oninput="sheetData.info.kaszt=this.value">
-            <button class="opt-edit-btn" onclick="openOptionEditor('info_kaszt','Kaszt')" title="Opciók és leírások szerkesztése">⚙️</button>
+            <button class="opt-edit-btn ${_fieldKeysWithData.has('info_kaszt')?'has-data':''}" onclick="openOptionEditor('info_kaszt','Kaszt')" title="Opciók és leírások szerkesztése">⚙️</button>
           </div>
           <div class="info-field">
             <span class="info-label">Isten:</span>
             <input type="text" class="info-input" id="info_isten" 
               placeholder="..." value="${sheetData.info.isten||''}"
               oninput="sheetData.info.isten=this.value">
-            <button class="opt-edit-btn" onclick="openOptionEditor('info_isten','Isten')" title="Opciók és leírások szerkesztése">⚙️</button>
+            <button class="opt-edit-btn ${_fieldKeysWithData.has('info_isten')?'has-data':''}" onclick="openOptionEditor('info_isten','Isten')" title="Opciók és leírások szerkesztése">⚙️</button>
           </div>
         </div>
       </div>
@@ -719,7 +723,7 @@ function buildRow(row, box) {
     wrap.className='row-wrap'
     const li=makeRowLabelInput(row); const dw=document.createElement('div'); dw.className='dots-wrap'
     renderDots(dw, row, false)
-    wrap.append(li, dw, makeOptEditBtn(row), makeDelRowBtn(row,box))
+    wrap.append(li, dw, makeDescEditBtn(row), makeDelRowBtn(row,box))
   } else if (row.type==='text') {
     wrap.className='row-wrap'
     const li=makeRowLabelInput(row); li.style.maxWidth='100px'
@@ -767,7 +771,16 @@ function buildRow(row, box) {
 function makeOptEditBtn(row) {
   const b = document.createElement('button')
   b.className='opt-edit-btn'; b.innerHTML='⚙️'; b.title='Opciók és leírások szerkesztése'
+  if (_fieldKeysWithData.has(row.id)) b.classList.add('has-data')
   b.onclick = () => openOptionEditor(row.id, row.label || 'Mező')
+  return b
+}
+
+function makeDescEditBtn(row) {
+  const b = document.createElement('button')
+  b.className='opt-edit-btn'; b.innerHTML='ⓘ'; b.title='Leírás szerkesztése'
+  if (_fieldKeysWithData.has(row.id)) b.classList.add('has-data')
+  b.onclick = () => openSingleDescEditor(row.id, row.label || 'Mező')
   return b
 }
 
@@ -932,6 +945,20 @@ async function loadTemplateList() {
    ============================== */
 let _optEditorFieldKey = null
 
+async function loadFieldKeysWithData() {
+  if (!window._sb) return
+  const { data } = await window._sb.from('field_descriptions').select('field_key')
+  _fieldKeysWithData = new Set((data || []).map(d => d.field_key))
+}
+
+async function refreshFieldKeyIndicator(fieldKey) {
+  if (!window._sb) return
+  const { data } = await window._sb.from('field_descriptions')
+    .select('id', { count: 'exact', head: false }).eq('field_key', fieldKey)
+  if (data && data.length > 0) _fieldKeysWithData.add(fieldKey)
+  else _fieldKeysWithData.delete(fieldKey)
+}
+
 async function openOptionEditor(fieldKey, fieldLabel) {
   _optEditorFieldKey = fieldKey
   let overlay = document.getElementById('optModalOverlay')
@@ -971,15 +998,17 @@ function closeOptionEditor() {
   _optEditorFieldKey = null
   // Ha select sorhoz tartozott, frissítjük a row.options listát a friss adatokkal
   if (fieldKey && window._sb) {
-    window._sb.from('field_descriptions').select('option_value').eq('field_key', fieldKey)
-      .order('option_value', { ascending: true })
-      .then(({ data }) => {
-        if (data) {
-          const row = findRowById(fieldKey)
-          if (row) row.options = data.map(d => d.option_value)
-        }
-        renderAll()
-      })
+    Promise.all([
+      window._sb.from('field_descriptions').select('option_value').eq('field_key', fieldKey)
+        .order('option_value', { ascending: true }),
+      refreshFieldKeyIndicator(fieldKey)
+    ]).then(([{ data }]) => {
+      if (data) {
+        const row = findRowById(fieldKey)
+        if (row) row.options = data.map(d => d.option_value)
+      }
+      renderAll()
+    })
   } else {
     renderAll()
   }
@@ -1063,6 +1092,152 @@ async function deleteOptionValue(id, fieldKey) {
 }
 
 /* ==============================
+   EGYSZERŰ LEÍRÁS SZERKESZTŐ (dot-soroknak, pl. "Erő")
+   ============================== */
+const SINGLE_DESC_KEY = '_self'
+
+async function openSingleDescEditor(rowId, rowLabel) {
+  _optEditorFieldKey = rowId
+  let overlay = document.getElementById('optModalOverlay')
+  if (!overlay) {
+    overlay = document.createElement('div')
+    overlay.id = 'optModalOverlay'
+    overlay.className = 'modal-overlay'
+    overlay.onclick = e => { if (e.target === overlay) closeSingleDescEditor() }
+    document.body.appendChild(overlay)
+  }
+  overlay.innerHTML = `
+    <div class="modal-box">
+      <div class="modal-header">
+        <span class="modal-title">ⓘ ${rowLabel} — leírás</span>
+        <button class="modal-close" onclick="closeSingleDescEditor()">✕</button>
+      </div>
+      <div class="modal-body" id="optModalBody">
+        <div style="color:var(--muted);font-size:.82rem;">Betöltés...</div>
+      </div>
+    </div>
+  `
+  overlay.style.display = 'flex'
+  await loadSingleDescription(rowId, rowLabel)
+}
+
+async function loadSingleDescription(rowId, rowLabel) {
+  const body = document.getElementById('optModalBody')
+  if (!window._sb) { body.innerHTML = '<div style="color:var(--muted);">Nincs adatbázis kapcsolat.</div>'; return }
+  const { data, error } = await window._sb.from('field_descriptions')
+    .select('*').eq('field_key', rowId).eq('option_value', SINGLE_DESC_KEY).maybeSingle()
+  if (error) { body.innerHTML = `<div style="color:var(--red);">Hiba: ${error.message}</div>`; return }
+  const desc = data?.description || ''
+  body.innerHTML = `
+    <div style="color:var(--muted);font-size:.78rem;margin-bottom:.5rem;">
+      Ez a leírás jelenik majd meg buborékban, ha a felhasználó a "${rowLabel}" mező fölé viszi az egeret a karakterlapon.
+    </div>
+    <textarea class="opt-desc-input" style="min-height:100px;" placeholder="Leírás szövege..."
+      onblur="saveSingleDescription('${rowId}', this.value)">${desc}</textarea>
+  `
+}
+
+async function saveSingleDescription(rowId, description) {
+  const { error } = await window._sb.from('field_descriptions').upsert({
+    field_key: rowId,
+    option_value: SINGLE_DESC_KEY,
+    description,
+    updated_at: new Date().toISOString()
+  }, { onConflict: 'field_key,option_value' })
+  if (!error) showToast('✓ Leírás mentve')
+  else { console.error(error); showToast('⚠️ Hiba mentéskor') }
+}
+
+function closeSingleDescEditor() {
+  const overlay = document.getElementById('optModalOverlay')
+  if (overlay) overlay.style.display = 'none'
+  const fieldKey = _optEditorFieldKey
+  _optEditorFieldKey = null
+  if (fieldKey && window._sb) {
+    refreshFieldKeyIndicator(fieldKey).then(() => renderAll())
+  } else {
+    renderAll()
+  }
+}
+
+/* ==============================
+   ÖSSZES OPCIÓ BÖNGÉSZŐ
+   ============================== */
+async function openAllOptionsBrowser() {
+  let overlay = document.getElementById('optModalOverlay')
+  if (!overlay) {
+    overlay = document.createElement('div')
+    overlay.id = 'optModalOverlay'
+    overlay.className = 'modal-overlay'
+    overlay.onclick = e => { if (e.target === overlay) overlay.style.display = 'none' }
+    document.body.appendChild(overlay)
+  }
+  overlay.innerHTML = `
+    <div class="modal-box" style="max-width:680px;">
+      <div class="modal-header">
+        <span class="modal-title">📚 Összes opció és leírás</span>
+        <button class="modal-close" onclick="document.getElementById('optModalOverlay').style.display='none'">✕</button>
+      </div>
+      <div class="modal-body" id="allOptBody">
+        <div style="color:var(--muted);font-size:.82rem;">Betöltés...</div>
+      </div>
+    </div>
+  `
+  overlay.style.display = 'flex'
+  await loadAllOptionsBrowser()
+}
+
+async function loadAllOptionsBrowser() {
+  const body = document.getElementById('allOptBody')
+  if (!window._sb) { body.innerHTML = '<div style="color:var(--muted);">Nincs adatbázis kapcsolat.</div>'; return }
+  const { data, error } = await window._sb.from('field_descriptions')
+    .select('*').order('field_key', { ascending: true }).order('option_value', { ascending: true })
+  if (error) { body.innerHTML = `<div style="color:var(--red);">Hiba: ${error.message}</div>`; return }
+  if (!data || data.length === 0) {
+    body.innerHTML = '<div style="color:var(--muted);font-size:.82rem;">Még nincs egyetlen opció vagy leírás sem.</div>'
+    return
+  }
+  // Csoportosítás field_key szerint
+  const groups = {}
+  data.forEach(d => {
+    if (!groups[d.field_key]) groups[d.field_key] = []
+    groups[d.field_key].push(d)
+  })
+  // Mezőnevek feloldása (info_faj -> "Faj", egyébként a sor label-je)
+  const fieldNames = { info_faj:'Faj', info_kaszt:'Kaszt', info_isten:'Isten' }
+  body.innerHTML = Object.entries(groups).map(([fieldKey, items]) => {
+    const row = findRowById(fieldKey)
+    const label = fieldNames[fieldKey] || row?.label || fieldKey
+    const isSingleDesc = items.length === 1 && items[0].option_value === SINGLE_DESC_KEY
+    return `
+      <div style="margin-bottom:1.1rem;">
+        <div style="font-family:'Cinzel',serif;font-size:.8rem;letter-spacing:.08em;color:var(--gold);text-transform:uppercase;margin-bottom:.4rem;border-bottom:1px solid var(--border-soft);padding-bottom:.25rem;">
+          ${label} <span style="color:var(--muted);font-size:.7rem;font-family:'Inter',sans-serif;text-transform:none;">(${fieldKey})</span>
+        </div>
+        ${isSingleDesc
+          ? `<div class="opt-list-item">
+               <div class="opt-list-header">
+                 <span class="opt-list-name">Leírás</span>
+                 <span class="opt-list-badge ${items[0].description?'has-desc':''}">${items[0].description?'Van leírás':'Nincs leírás'}</span>
+               </div>
+               <div style="font-size:.8rem;color:var(--muted);white-space:pre-wrap;">${items[0].description || '(üres)'}</div>
+             </div>`
+          : items.map(opt => `
+              <div class="opt-list-item">
+                <div class="opt-list-header">
+                  <span class="opt-list-name">${opt.option_value}</span>
+                  <span class="opt-list-badge ${opt.description?'has-desc':''}">${opt.description?'Van leírás':'Nincs leírás'}</span>
+                </div>
+                ${opt.description ? `<div style="font-size:.8rem;color:var(--muted);white-space:pre-wrap;">${opt.description}</div>` : ''}
+              </div>
+            `).join('')
+        }
+      </div>
+    `
+  }).join('')
+}
+
+/* ==============================
    TOAST
    ============================== */
 function showToast(msg) {
@@ -1122,6 +1297,7 @@ async function doLogout() {
    ============================== */
 window.addEventListener('load', () => {
   setTimeout(async () => {
+    await loadFieldKeysWithData()
     await loadTemplateList()
     // Ha még nincs kiválasztott sablon, induljon egy üres szerkesztővel
     if (!_currentTemplateId) newTemplate()
