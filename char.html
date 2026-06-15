@@ -353,6 +353,47 @@ const sb = supabase.createClient(
     .sheet-photo .dot, .sheet-photo .header-dot {
       pointer-events:none; /* Ne lehessen kattintgatni a pontokat */
     }
+    .sheet-photo .field-desc-icon { display:none!important; }
+
+    /* ===== LEÍRÁS IKON (ⓘ) ÉS POPOVER ===== */
+    .field-desc-icon{
+      display:inline-flex;align-items:center;justify-content:center;
+      width:16px;height:16px;border-radius:50%;
+      border:1px solid rgba(212,175,55,.35);color:var(--gold);
+      font-size:.65rem;font-weight:700;cursor:pointer;flex-shrink:0;
+      background:rgba(212,175,55,.06);transition:all .15s;line-height:1;
+      user-select:none;position:relative;
+    }
+    .field-desc-icon:hover{background:rgba(212,175,55,.18);border-color:var(--gold);}
+    .field-desc-popover{
+      position:absolute;z-index:300;
+      background:#0f172a;border:1px solid rgba(212,175,55,.3);
+      border-radius:.6rem;padding:.6rem .8rem;
+      font-size:.78rem;line-height:1.5;color:var(--text);
+      max-width:260px;min-width:140px;
+      box-shadow:0 12px 40px rgba(0,0,0,.55);
+      bottom:calc(100% + 8px);left:50%;transform:translateX(-50%);
+      display:none;
+    }
+    .field-desc-popover.open{display:block;}
+    .field-desc-popover::after{
+      content:'';position:absolute;top:100%;left:50%;transform:translateX(-50%);
+      border:6px solid transparent;border-top-color:rgba(212,175,55,.3);
+    }
+    .field-desc-popover-title{
+      font-family:'Cinzel',serif;color:var(--gold);font-size:.72rem;
+      letter-spacing:.06em;margin-bottom:.25rem;text-transform:uppercase;
+    }
+
+    /* ===== SELECT SOR (legördülő blokk-mező) ===== */
+    .row-select-input{
+      flex:1;background:transparent;border:none;
+      border-bottom:1px dashed rgba(255,255,255,.12);
+      color:#fff;font-size:.85rem;font-family:inherit;outline:none;
+      transition:border-color .2s;min-width:0;cursor:pointer;
+    }
+    .row-select-input:focus{border-bottom-color:var(--accent);}
+    .row-select-input option{background:#0f172a;color:#fff;}
 
     /* ===== PRINT ===== */
     @media print{
@@ -371,7 +412,7 @@ const sb = supabase.createClient(
       body {
         background: #ffffff !important;
       }
-      header, #magic-particles, .edit-only, #add-section-btn { display:none!important; }
+      header, #magic-particles, .edit-only, #add-section-btn, .field-desc-icon { display:none!important; }
       .sheet-outer { padding: 0!important; margin: 0 auto !important; }
       .info-card, .sheet-card, .box-wrap {
         break-inside: avoid;
@@ -564,7 +605,8 @@ const sb = supabase.createClient(
         <span class="info-label">Faj / Származás:</span>
         <div class="combo-wrap">
           <input type="text" class="combo-input" id="info_faj" list="dl_faj"
-            placeholder="..." oninput="sheetData.info.faj=this.value; window.scheduleSave()">
+            placeholder="..." oninput="sheetData.info.faj=this.value; window.scheduleSave(); window.updateFieldDescIcon('info_faj')"
+            onwheel="window.wheelCycleOption(event,'info_faj')">
           <datalist id="dl_faj">
             <option value="Ember"><option value="Elf"><option value="Félelf">
             <option value="Törpe"><option value="Gnóm"><option value="Hobbitus">
@@ -572,12 +614,17 @@ const sb = supabase.createClient(
             <option value="Troll"><option value="Óriás"><option value="Drow">
           </datalist>
         </div>
+        <span class="field-desc-icon" id="desc_info_faj" style="display:none;" 
+          onclick="window.toggleDescPopover(event,'info_faj')"
+          onmouseenter="window.showDescPopover('info_faj')"
+          onmouseleave="window.hideDescPopover('info_faj')">i</span>
       </div>
       <div class="info-field">
         <span class="info-label">Kaszt / Iskola:</span>
         <div class="combo-wrap">
           <input type="text" class="combo-input" id="info_kaszt" list="dl_kaszt"
-            placeholder="..." oninput="sheetData.info.kaszt=this.value; window.scheduleSave()">
+            placeholder="..." oninput="sheetData.info.kaszt=this.value; window.scheduleSave(); window.updateFieldDescIcon('info_kaszt')"
+            onwheel="window.wheelCycleOption(event,'info_kaszt')">
           <datalist id="dl_kaszt">
             <option value="Harcos"><option value="Varázsló"><option value="Pap">
             <option value="Tolvaj"><option value="Bárd"><option value="Vadász">
@@ -586,12 +633,17 @@ const sb = supabase.createClient(
             <option value="Alkimista"><option value="Ezermester"><option value="Sámán">
           </datalist>
         </div>
+        <span class="field-desc-icon" id="desc_info_kaszt" style="display:none;" 
+          onclick="window.toggleDescPopover(event,'info_kaszt')"
+          onmouseenter="window.showDescPopover('info_kaszt')"
+          onmouseleave="window.hideDescPopover('info_kaszt')">i</span>
       </div>
       <div class="info-field">
         <span class="info-label">Isten / Hit:</span>
         <div class="combo-wrap">
           <input type="text" class="combo-input" id="info_isten" list="dl_isten"
-            placeholder="..." oninput="sheetData.info.isten=this.value; window.scheduleSave()">
+            placeholder="..." oninput="sheetData.info.isten=this.value; window.scheduleSave(); window.updateFieldDescIcon('info_isten')"
+            onwheel="window.wheelCycleOption(event,'info_isten')">
           <datalist id="dl_isten">
             <option value="Arel – Fény"><option value="Kaor – Rend">
             <option value="Domvik – Háború"><option value="Gilron – Erdő">
@@ -599,6 +651,10 @@ const sb = supabase.createClient(
             <option value="Keret – Halál"><option value="Semmi – Ateista"><option value="Egyéb">
           </datalist>
         </div>
+        <span class="field-desc-icon" id="desc_info_isten" style="display:none;" 
+          onclick="window.toggleDescPopover(event,'info_isten')"
+          onmouseenter="window.showDescPopover('info_isten')"
+          onmouseleave="window.hideDescPopover('info_isten')">i</span>
       </div>
       <div class="info-field">
         <span class="info-label">Krónika:</span>
@@ -878,7 +934,8 @@ function buildRow(row, box) {
     const li = makeRowLabelInput(row);
     const dw = document.createElement('div'); dw.className='dots-wrap';
     renderDots(dw, row, false);
-    wrap.append(li, dw, makeDelRowBtn(row,box));
+    const icon = makeFieldDescIcon(row.id, row.label);
+    wrap.append(li, dw, icon, makeDelRowBtn(row,box));
 
   } else if (row.type === 'text') {
     wrap.className='row-wrap';
@@ -888,6 +945,31 @@ function buildRow(row, box) {
     ti.type='text'; ti.className='row-text-input'; ti.value=row.value; ti.placeholder='...';
     ti.oninput = e => { row.value=e.target.value; window.scheduleSave(); };
     wrap.append(li, ti, makeDelRowBtn(row,box));
+
+  } else if (row.type === 'select') {
+    wrap.className='row-wrap';
+    const li = makeRowLabelInput(row);
+    li.style.maxWidth='100px';
+    const sel = document.createElement('select'); sel.className='row-select-input';
+    const opts = row.options || [];
+    if (opts.length === 0) {
+      const o = document.createElement('option'); o.textContent='(nincs opció)'; o.value='';
+      sel.appendChild(o);
+    } else {
+      if (!row.value) {
+        const o = document.createElement('option'); o.value=''; o.textContent='—';
+        sel.appendChild(o);
+      }
+      opts.forEach(opt => {
+        const o = document.createElement('option'); o.value=opt; o.textContent=opt;
+        if (row.value === opt) o.selected = true;
+        sel.appendChild(o);
+      });
+    }
+    sel.onchange = e => { row.value = e.target.value; window.scheduleSave(); window.updateFieldDescIcon(row.id); };
+    sel.onwheel = e => window.wheelCycleSelectRow(e, row, sel);
+    const icon = makeFieldDescIcon(row.id, row.label);
+    wrap.append(li, sel, icon, makeDelRowBtn(row,box));
 
   } else if (row.type === 'textarea') {
     wrap.style.cssText='flex-direction:column;align-items:stretch;display:flex;gap:.3rem;';
@@ -909,6 +991,20 @@ function buildRow(row, box) {
     wrap.appendChild(hw);
   }
   return wrap;
+}
+
+function makeFieldDescIcon(fieldKey, fieldLabel) {
+  const icon = document.createElement('span');
+  icon.className = 'field-desc-icon';
+  icon.id = 'desc_' + fieldKey;
+  icon.textContent = 'i';
+  icon.style.display = 'none';
+  icon.onclick = e => window.toggleDescPopover(e, fieldKey);
+  icon.onmouseenter = () => window.showDescPopover(fieldKey);
+  icon.onmouseleave = () => window.hideDescPopover(fieldKey);
+  // Késleltetett megjelenítés/elrejtés, amint betöltődik a leírás-cache
+  setTimeout(() => window.updateFieldDescIcon(fieldKey), 0);
+  return icon;
 }
 
 function makeRowLabelInput(row) {
@@ -1384,6 +1480,7 @@ renderAll();
     if (!window._sb) { setTimeout(window.loadFromSupabase, 100); return }
     const { data: { user } } = await window._sb.auth.getUser()
     if (!user) return
+    await window.loadFieldDescriptions()
     await window.loadCharList()
     await window.loadTemplateList()
     // Legutóbbi saját karakter betöltése
@@ -1404,6 +1501,177 @@ renderAll();
         if (el) el.value = (sheetData.info || {})[k] || ''
       })
       renderAll()
+    }
+    // Az info mezők ikonjait is frissítjük (ezek statikus HTML-ben vannak, nem renderAll-ban)
+    window.updateFieldDescIcon('info_faj')
+    window.updateFieldDescIcon('info_kaszt')
+    window.updateFieldDescIcon('info_isten')
+  }
+
+  /* ==============================
+     LEÍRÁS RENDSZER (field_descriptions)
+     ============================== */
+  const SINGLE_DESC_KEY = '_self'
+  // _fieldDescCache[field_key] = { isSingle: bool, byOption: {opt: desc}, options: [opt,...], singleDesc: '' }
+  window._fieldDescCache = {}
+
+  window.loadFieldDescriptions = async function() {
+    if (!window._sb) return
+    const { data } = await window._sb.from('field_descriptions').select('*')
+    const cache = {}
+    ;(data || []).forEach(row => {
+      if (!cache[row.field_key]) cache[row.field_key] = { byOption:{}, options:[], singleDesc:'' }
+      if (row.option_value === SINGLE_DESC_KEY) {
+        cache[row.field_key].singleDesc = row.description || ''
+      } else {
+        cache[row.field_key].byOption[row.option_value] = row.description || ''
+        cache[row.field_key].options.push(row.option_value)
+      }
+    })
+    Object.values(cache).forEach(c => c.options.sort((a,b)=>a.localeCompare(b,'hu')))
+    window._fieldDescCache = cache
+    // Frissítsük a select sorok opciólistáját a sheetData-ban is
+    if (sheetData && sheetData.sections) {
+      sheetData.sections.forEach(sec => sec.boxes.forEach(box => box.rows.forEach(row => {
+        if (row.type === 'select') {
+          const c = cache[row.id]
+          row.options = c ? c.options : []
+        }
+      })))
+    }
+  }
+
+  // Visszaadja az aktuális leírást egy mezőhöz (info mezőknél az aktuális érték alapján, dot/select-nél a singleDesc/byOption alapján)
+  window.getFieldDescription = function(fieldKey) {
+    const c = window._fieldDescCache[fieldKey]
+    if (!c) return ''
+    // info mezők: az aktuális inputérték alapján keresünk
+    if (fieldKey.startsWith('info_')) {
+      const el = document.getElementById(fieldKey)
+      const val = el ? el.value.trim() : ''
+      return c.byOption[val] || ''
+    }
+    // dot sor: egyetlen leírás
+    if (c.singleDesc) return c.singleDesc
+    // select sor: az aktuális érték alapján
+    const row = findRowById(fieldKey)
+    if (row && row.value) return c.byOption[row.value] || ''
+    return ''
+  }
+
+  function findRowById(rowId) {
+    for (const sec of sheetData.sections) {
+      for (const box of sec.boxes) {
+        const row = box.rows.find(r => r.id === rowId)
+        if (row) return row
+      }
+    }
+    return null
+  }
+  window.findRowById = findRowById
+
+  // ⓘ ikon megjelenítés/elrejtés annak alapján, hogy van-e leírás
+  window.updateFieldDescIcon = function(fieldKey) {
+    const icon = document.getElementById('desc_' + fieldKey)
+    if (!icon) return
+    const desc = window.getFieldDescription(fieldKey)
+    icon.style.display = desc ? 'inline-flex' : 'none'
+    // Ha a popover épp nyitva van, frissítsük a tartalmát is
+    const pop = document.getElementById('pop_' + fieldKey)
+    if (pop && pop.classList.contains('open')) {
+      pop.innerHTML = window._buildPopoverContent(fieldKey, desc)
+    }
+  }
+
+  window._buildPopoverContent = function(fieldKey, desc) {
+    const row = findRowById(fieldKey)
+    let title = ''
+    if (fieldKey === 'info_faj') title = document.getElementById('info_faj')?.value || 'Faj'
+    else if (fieldKey === 'info_kaszt') title = document.getElementById('info_kaszt')?.value || 'Kaszt'
+    else if (fieldKey === 'info_isten') title = document.getElementById('info_isten')?.value || 'Isten'
+    else if (row) title = row.type === 'select' ? (row.value || row.label) : row.label
+    return `<div class="field-desc-popover-title">${title}</div>${(desc||'').replace(/\n/g,'<br>')}`
+  }
+
+  // Popover megjelenítés/elrejtés
+  function getOrCreatePopover(fieldKey, anchorEl) {
+    let pop = document.getElementById('pop_' + fieldKey)
+    if (!pop) {
+      pop = document.createElement('div')
+      pop.id = 'pop_' + fieldKey
+      pop.className = 'field-desc-popover'
+      anchorEl.style.position = 'relative'
+      anchorEl.appendChild(pop)
+    }
+    return pop
+  }
+
+  window.showDescPopover = function(fieldKey) {
+    const icon = document.getElementById('desc_' + fieldKey)
+    if (!icon) return
+    const desc = window.getFieldDescription(fieldKey)
+    if (!desc) return
+    const pop = getOrCreatePopover(fieldKey, icon)
+    pop.innerHTML = window._buildPopoverContent(fieldKey, desc)
+    pop.classList.add('open')
+  }
+
+  window.hideDescPopover = function(fieldKey) {
+    const pop = document.getElementById('pop_' + fieldKey)
+    if (pop) pop.classList.remove('open')
+  }
+
+  window.toggleDescPopover = function(e, fieldKey) {
+    e.stopPropagation()
+    const pop = document.getElementById('pop_' + fieldKey)
+    if (pop && pop.classList.contains('open')) {
+      window.hideDescPopover(fieldKey)
+    } else {
+      window.showDescPopover(fieldKey)
+    }
+  }
+
+  // Bárhova kattintva zárjuk a nyitott popovereket (mobil tap UX)
+  document.addEventListener('click', e => {
+    if (e.target.closest('.field-desc-icon')) return
+    document.querySelectorAll('.field-desc-popover.open').forEach(p => p.classList.remove('open'))
+  })
+
+  // ─── GÖRGŐ — Faj/Kaszt/Isten (datalist alapú combo-input) ───────
+  window.wheelCycleOption = function(e, fieldKey) {
+    const c = window._fieldDescCache[fieldKey]
+    if (!c || !c.options || c.options.length === 0) return
+    e.preventDefault()
+    const el = document.getElementById(fieldKey)
+    const current = el.value.trim()
+    let idx = c.options.indexOf(current)
+    if (e.deltaY > 0) idx = (idx + 1) % c.options.length
+    else idx = (idx - 1 + c.options.length) % c.options.length
+    el.value = c.options[idx]
+    // Mentés a sheetData-ba
+    const key = fieldKey.replace('info_','')
+    sheetData.info[key] = el.value
+    window.scheduleSave()
+    window.updateFieldDescIcon(fieldKey)
+    if (document.getElementById('pop_'+fieldKey)?.classList.contains('open')) {
+      window.showDescPopover(fieldKey)
+    }
+  }
+
+  // ─── GÖRGŐ — select típusú sorok ────────────────────────────────
+  window.wheelCycleSelectRow = function(e, row, selectEl) {
+    const opts = row.options || []
+    if (opts.length === 0) return
+    e.preventDefault()
+    let idx = opts.indexOf(row.value)
+    if (e.deltaY > 0) idx = (idx + 1) % opts.length
+    else idx = (idx - 1 + opts.length) % opts.length
+    row.value = opts[idx]
+    selectEl.value = row.value
+    window.scheduleSave()
+    window.updateFieldDescIcon(row.id)
+    if (document.getElementById('pop_'+row.id)?.classList.contains('open')) {
+      window.showDescPopover(row.id)
     }
   }
 
