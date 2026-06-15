@@ -1138,13 +1138,22 @@ async function loadSingleDescription(rowId, rowLabel) {
 }
 
 async function saveSingleDescription(rowId, description) {
+  description = (description || '').trim()
+  if (!description) {
+    // Üres leírás esetén töröljük a sort, ne maradjon "_self" rekord leírás nélkül
+    const { error } = await window._sb.from('field_descriptions')
+      .delete().eq('field_key', rowId).eq('option_value', SINGLE_DESC_KEY)
+    if (!error) { _fieldKeysWithData.delete(rowId); showToast('🗑️ Leírás törölve'); renderAll() }
+    else { console.error(error); showToast('⚠️ Hiba törléskor') }
+    return
+  }
   const { error } = await window._sb.from('field_descriptions').upsert({
     field_key: rowId,
     option_value: SINGLE_DESC_KEY,
     description,
     updated_at: new Date().toISOString()
   }, { onConflict: 'field_key,option_value' })
-  if (!error) showToast('✓ Leírás mentve')
+  if (!error) { _fieldKeysWithData.add(rowId); showToast('✓ Leírás mentve'); renderAll() }
   else { console.error(error); showToast('⚠️ Hiba mentéskor') }
 }
 
@@ -1210,31 +1219,91 @@ async function loadAllOptionsBrowser() {
     const label = fieldNames[fieldKey] || row?.label || fieldKey
     const isSingleDesc = items.length === 1 && items[0].option_value === SINGLE_DESC_KEY
     return `
-      <div style="margin-bottom:1.1rem;">
+      <div style="margin-bottom:1.1rem;" data-group="${fieldKey}">
         <div style="font-family:'Cinzel',serif;font-size:.8rem;letter-spacing:.08em;color:var(--gold);text-transform:uppercase;margin-bottom:.4rem;border-bottom:1px solid var(--border-soft);padding-bottom:.25rem;">
-          ${label} <span style="color:var(--muted);font-size:.7rem;font-family:'Inter',sans-serif;text-transform:none;">(${fieldKey})</span>
+          ${label}
         </div>
         ${isSingleDesc
-          ? `<div class="opt-list-item">
+          ? `<div class="opt-list-item" data-id="${items[0].id}">
                <div class="opt-list-header">
                  <span class="opt-list-name">Leírás</span>
                  <span class="opt-list-badge ${items[0].description?'has-desc':''}">${items[0].description?'Van leírás':'Nincs leírás'}</span>
                </div>
-               <div style="font-size:.8rem;color:var(--muted);white-space:pre-wrap;">${items[0].description || '(üres)'}</div>
+               <textarea class="opt-desc-input" placeholder="Leírás szövege..."
+                 onblur="browserSaveSingleDesc('${fieldKey}', this.value)">${items[0].description || ''}</textarea>
              </div>`
           : items.map(opt => `
-              <div class="opt-list-item">
+              <div class="opt-list-item" data-id="${opt.id}">
                 <div class="opt-list-header">
-                  <span class="opt-list-name">${opt.option_value}</span>
+                  <input type="text" class="opt-add-input" style="font-weight:600;font-size:.85rem;padding:.3rem .5rem;" 
+                    value="${opt.option_value}" 
+                    onblur="browserRenameOption('${opt.id}','${fieldKey}',this.value)">
                   <span class="opt-list-badge ${opt.description?'has-desc':''}">${opt.description?'Van leírás':'Nincs leírás'}</span>
+                  <button class="opt-del-btn" onclick="browserDeleteOption('${opt.id}','${fieldKey}')" title="Opció törlése">✕</button>
                 </div>
-                ${opt.description ? `<div style="font-size:.8rem;color:var(--muted);white-space:pre-wrap;">${opt.description}</div>` : ''}
+                <textarea class="opt-desc-input" placeholder="Leírás (opcionális)..."
+                  onblur="browserSaveOptionDesc('${opt.id}','${fieldKey}',this.value)">${opt.description || ''}</textarea>
               </div>
             `).join('')
         }
       </div>
     `
   }).join('')
+}
+
+async function browserSaveSingleDesc(fieldKey, description) {
+  await saveSingleDescription(fieldKey, description)
+  await loadAllOptionsBrowser()
+}
+
+async function browserSaveOptionDesc(id, fieldKey, description) {
+  const { error } = await window._sb.from('field_descriptions')
+    .update({ description, updated_at: new Date().toISOString() })
+    .eq('id', id)
+  if (!error) {
+    showToast('✓ Mentve')
+    await refreshFieldKeyIndicator(fieldKey)
+    renderAll()
+    await loadAllOptionsBrowser()
+  } else { console.error(error); showToast('⚠️ Hiba mentéskor') }
+}
+
+async function browserRenameOption(id, fieldKey, newValue) {
+  newValue = (newValue || '').trim()
+  if (!newValue) { showToast('⚠️ Az opció neve nem lehet üres'); await loadAllOptionsBrowser(); return }
+  const { error } = await window._sb.from('field_descriptions')
+    .update({ option_value: newValue, updated_at: new Date().toISOString() })
+    .eq('id', id)
+  if (!error) {
+    showToast('✓ Átnevezve')
+    const row = findRowById(fieldKey)
+    if (row && row.options) {
+      const { data } = await window._sb.from('field_descriptions').select('option_value').eq('field_key', fieldKey).order('option_value', { ascending: true })
+      if (data) row.options = data.map(d => d.option_value)
+    }
+    renderAll()
+    await loadAllOptionsBrowser()
+  } else {
+    if (error.code === '23505') showToast('⚠️ Ez a név már létezik ennél a mezőnél')
+    else { console.error(error); showToast('⚠️ Hiba mentéskor') }
+    await loadAllOptionsBrowser()
+  }
+}
+
+async function browserDeleteOption(id, fieldKey) {
+  if (!confirm('Biztosan törlöd ezt az opciót?')) return
+  const { error } = await window._sb.from('field_descriptions').delete().eq('id', id)
+  if (!error) {
+    showToast('🗑️ Törölve')
+    await refreshFieldKeyIndicator(fieldKey)
+    const row = findRowById(fieldKey)
+    if (row && row.options) {
+      const { data } = await window._sb.from('field_descriptions').select('option_value').eq('field_key', fieldKey).order('option_value', { ascending: true })
+      row.options = (data || []).map(d => d.option_value)
+    }
+    renderAll()
+    await loadAllOptionsBrowser()
+  } else { console.error(error); showToast('⚠️ Hiba törléskor') }
 }
 
 /* ==============================
