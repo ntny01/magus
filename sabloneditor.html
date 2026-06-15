@@ -903,6 +903,8 @@ async function doLogout() {
 window.addEventListener('load', () => {
   setTimeout(async () => {
     await loadTemplateList()
+    // Ha még nincs kiválasztott sablon, induljon egy üres szerkesztővel
+    if (!_currentTemplateId) newTemplate()
   }, 300)
 })
 </script>
