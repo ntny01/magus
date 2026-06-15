@@ -710,6 +710,8 @@ function renderDots(container, row, isHeader) {
 function addSection() {
   sheetData.sections.push({id:uid(),title:'Új szekció',boxes:[{id:uid(),title:'Új blokk',rows:[]}]})
   renderAll()
+  const btn = document.getElementById('add-section-btn')
+  if (btn) btn.scrollIntoView({behavior:'smooth', block:'center'})
 }
 
 /* ==============================
@@ -731,7 +733,12 @@ async function saveTemplate() {
   if (!window._sb) return
   const { data: { user } } = await window._sb.auth.getUser()
   if (!user) return
-  const name = document.getElementById('templateNameInput')?.value || sheetData.info.name || 'Névtelen sablon'
+  const name = document.getElementById('templateNameInput')?.value?.trim() || sheetData.info.name?.trim() || ''
+  if (!name) {
+    showToast('⚠️ Adj nevet a sablonnak mentés előtt!')
+    document.getElementById('templateNameInput')?.focus()
+    return
+  }
   sheetData.info.name = name
   if (_currentTemplateId) {
     const { error } = await window._sb.from('character_sheets').update({
