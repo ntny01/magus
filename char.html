@@ -1447,12 +1447,22 @@ function exportTemplate() {
   const tmpl = JSON.parse(JSON.stringify(sheetData));
   tmpl._type = 'magus_char_template';
   tmpl.vampireTitle = 'KARAKTER';
-  tmpl.info = {name:'',faj:'',kaszt:'',isten:'',kronika:'',xp:''};
   tmpl.viewMode = 0;
+  delete tmpl.template_id;
+  delete tmpl.template_name;
+  // infoFields értékeinek nullázása
+  if (tmpl.infoFields) {
+    tmpl.infoFields.forEach(f => {
+      if (f.type === 'dot' || f.type === 'header' || f.type === 'symbol') f.value = 0;
+      else f.value = '';
+    });
+  }
+  // Szekció értékek nullázása
   tmpl.sections.forEach(sec =>
     sec.boxes.forEach(box =>
       box.rows.forEach(row => {
-        row.value = (row.type==='dot'||row.type==='header') ? 0 : '';
+        if (row.type==='dot' || row.type==='header' || row.type==='symbol') row.value = 0;
+        else row.value = '';
       })
     )
   );
@@ -1461,12 +1471,19 @@ function exportTemplate() {
 }
 
 function exportCard() {
+  // infoFields-ből dinamikusan gyűjtsük az alap adatokat
+  const infoSnap = {};
+  (sheetData.infoFields || []).forEach(f => { infoSnap[f.id] = f.value || ''; });
   const card = {
-    _type:'magus_character_card', _version:2,
-    name:getInfoVal('name'), faj:getInfoVal('faj'),
-    kaszt:getInfoVal('kaszt'), isten:getInfoVal('isten'),
-    kronika:getInfoVal('kronika'), xp:getInfoVal('xp'),
-    title:sheetData.vampireTitle, stats:[]
+    _type:'magus_character_card', _version:3,
+    name: getInfoVal('name'), faj: getInfoVal('faj'),
+    kaszt: getInfoVal('kaszt'), isten: getInfoVal('isten'),
+    kronika: getInfoVal('kronika'), xp: getInfoVal('xp'),
+    title: sheetData.vampireTitle,
+    template_id: sheetData.template_id || null,
+    template_name: sheetData.template_name || null,
+    infoFields: (sheetData.infoFields || []).map(f => ({id:f.id,label:f.label,type:f.type,value:f.value,max:f.max,symbol:f.symbol,color:f.color})),
+    stats:[]
   };
   sheetData.sections.forEach(sec =>
     sec.boxes.forEach(box =>
@@ -1474,7 +1491,8 @@ function exportCard() {
         if(isRowHasValue(row)) card.stats.push({
           section:sec.title, box:box.title,
           type:row.type, label:row.label,
-          value:row.value, max:row.max||5
+          value:row.value, max:row.max||5,
+          ...(row.type==='symbol' ? {symbol:row.symbol,color:row.color} : {})
         });
       })
     )
@@ -1494,21 +1512,33 @@ function importData(e) {
         alert('Ez egy karakter kártya fájl – közvetlenül nem tölthető be a karakterlapra.');
         return;
       }
+      const isTemplate = data._type === 'magus_char_template';
       sheetData = data;
-      // Biztosítjuk, hogy az új viewMode működjön a régi isLocked fájlokkal is
-      sheetData.viewMode = 0; 
-      
-      document.getElementById('vampireTitle').value = data.vampireTitle||'KARAKTER';
-      const infoKeys = ['name','faj','kaszt','isten','kronika','xp'];
-      infoKeys.forEach(k => {
-        const el=document.getElementById('info_'+k);
-        if(el) el.value = (data.info||{})[k]||'';
-      });
-      
-      setViewMode(1); // Visszaállítjuk szerkeszthetőre betöltéskor
-      window.scheduleSave()
-      alert(data._type==='magus_char_template' ? 'Sablon betöltve!' : 'Karakter betöltve!');
-    } catch(err) { alert('Hiba: '+err.message); }
+      sheetData.viewMode = 0;
+      // Sablon importnál: sablon jelző törlése (szabad karakterként kezeljük)
+      // Normál importnál: template_id megmarad ha volt
+      if (isTemplate) {
+        delete sheetData.template_id;
+        delete sheetData.template_name;
+      }
+      // Migráció: régi info objektum → infoFields
+      migrateInfoToFields();
+      syncInfoFieldOptions();
+      // infoFields értékeinek nullázása sablon importnál
+      if (isTemplate && sheetData.infoFields) {
+        sheetData.infoFields.forEach(f => {
+          if (f.type === 'dot' || f.type === 'header' || f.type === 'symbol') f.value = 0;
+          else f.value = '';
+        });
+      }
+      window._currentSheetId = null; // Import = mindig új karakter
+      document.getElementById('vampireTitle').value = isTemplate ? 'KARAKTER' : (data.vampireTitle || 'KARAKTER');
+      setViewMode(1);
+      renderAll();
+      applyCharTheme();
+      window.scheduleSave();
+      alert(isTemplate ? 'Sablon betöltve – új karakterként szerkesztheted!' : 'Karakter betöltve!');
+    } catch(err) { alert('Hiba: ' + err.message); }
   };
   reader.readAsText(file); e.target.value='';
 }
@@ -1751,10 +1781,11 @@ renderAll();
       // Migráció: régi info objektum → infoFields
       migrateInfoToFields()
       syncInfoFieldOptions()
+      sheetData.viewMode = 0
       document.getElementById('vampireTitle').value = sheetData.vampireTitle || 'KARAKTER'
+      setViewMode(1)
       renderAll()
       applyCharTheme()
-      window.showSaveIndicator()
     }
   }
 
@@ -1776,7 +1807,7 @@ renderAll();
     const { data: { user } } = await window._sb.auth.getUser()
     if (!user) return
     const { data } = await window._sb.from('character_sheets')
-      .select('id, name, faj, kaszt, updated_at')
+      .select('id, name, faj, kaszt, updated_at, data')
       .eq('user_id', user.id)
       .eq('is_template', false)
       .order('updated_at', { ascending: false })
@@ -1785,15 +1816,34 @@ renderAll();
       el.innerHTML = '<div class="dd-item" style="color:var(--muted);cursor:default;font-size:.78rem;">Még nincs mentett karakter</div>'
       return
     }
-    el.innerHTML = data.map(c => `
-      <div class="dd-item" onclick="window.loadChar('${c.id}', false)" style="${window._currentSheetId===c.id?'background:rgba(212,175,55,.07);':''}" >
-        <span style="flex:1;">
-          <span style="font-weight:600;">${c.name || 'Névtelen'}${window._currentSheetId===c.id?' ✦':''}</span>
-          ${c.faj||c.kaszt?`<span style="font-size:.72rem;color:var(--muted);display:block;">${[c.faj,c.kaszt].filter(Boolean).join(' · ')}</span>`:''}
-        </span>
-        <span class="dd-item-del" onclick="window.deleteChar('${c.id}', event)" title="Törlés">✕</span>
-      </div>
-    `).join('')
+    // Szabad és sablon alapú karakterek szétválasztása
+    const templateBased = data.filter(c => c.data && c.data.template_id)
+    const freeChars = data.filter(c => !c.data || !c.data.template_id)
+
+    const makeItem = (c, isFree) => {
+      const isActive = window._currentSheetId === c.id
+      const activeStyle = isActive ? (isFree ? 'background:rgba(74,222,128,.07);' : 'background:rgba(212,175,55,.07);') : ''
+      const nameColor = isFree ? 'color:#4ade80;' : ''
+      return `
+        <div class="dd-item" onclick="window.loadChar('${c.id}', false)" style="${activeStyle}">
+          <span style="flex:1;">
+            <span style="font-weight:600;${nameColor}">${c.name || 'Névtelen'}${isActive ? ' ✦' : ''}</span>
+            ${c.faj||c.kaszt ? `<span style="font-size:.72rem;color:var(--muted);display:block;">${[c.faj,c.kaszt].filter(Boolean).join(' · ')}</span>` : ''}
+          </span>
+          <span class="dd-item-del" onclick="window.deleteChar('${c.id}', event)" title="Törlés">✕</span>
+        </div>`
+    }
+
+    let html = ''
+    if (templateBased.length > 0) {
+      html += '<div class="dd-section">⚔ Sablon alapú</div>'
+      html += templateBased.map(c => makeItem(c, false)).join('')
+    }
+    if (freeChars.length > 0) {
+      html += '<div class="dd-section">✦ Szabad karakterek</div>'
+      html += freeChars.map(c => makeItem(c, true)).join('')
+    }
+    el.innerHTML = html
   }
 
   // ─── SABLON LISTA ───────────────────────────────────────────────
