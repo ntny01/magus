@@ -875,12 +875,22 @@ function renderInfoFields() {
     div.appendChild(label);
 
     if (field.type === 'select') {
-      const cdWrap = makeInfoCustomDrop(field);
-      div.appendChild(cdWrap);
-      // ⓘ icon – görgő átmegy a dropdown gombra
-      const icon = makeFieldDescIcon(field.id, field.label);
-      icon.onwheel = e => { if (cdWrap._btn) cdWrap._btn.onwheel(e) };
-      div.appendChild(icon);
+      const isFree = !sheetData.template_id;
+      if (isFree) {
+        // Szabad karakternél: sima szöveges input, nincs dropdown/leírás
+        const inp = document.createElement('input');
+        inp.type='text'; inp.className='combo-input';
+        inp.id='inpf_'+field.id; inp.value=field.value||''; inp.placeholder='...';
+        inp.oninput = e => { field.value=e.target.value; window.scheduleSave(); };
+        div.appendChild(inp);
+      } else {
+        const cdWrap = makeInfoCustomDrop(field);
+        div.appendChild(cdWrap);
+        // ⓘ icon – görgő átmegy a dropdown gombra
+        const icon = makeFieldDescIcon(field.id, field.label);
+        icon.onwheel = e => { if (cdWrap._btn) cdWrap._btn.onwheel(e) };
+        div.appendChild(icon);
+      }
     } else if (field.type === 'number') {
       const inp = document.createElement('input');
       inp.type = 'text'; inp.className = 'info-input';
