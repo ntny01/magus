@@ -596,76 +596,6 @@ const sb = supabase.createClient(
 
   <div class="info-card">
     <div class="info-grid" id="info-grid-container">
-      <div class="info-field">
-        <span class="info-label">Név:</span>
-        <input type="text" class="info-input" id="info_name" placeholder="..."
-          oninput="sheetData.info.name=this.value; window.scheduleSave()">
-      </div>
-      <div class="info-field">
-        <span class="info-label">Faj / Származás:</span>
-        <div class="combo-wrap">
-          <input type="text" class="combo-input" id="info_faj" list="dl_faj"
-            placeholder="..." oninput="sheetData.info.faj=this.value; window.scheduleSave(); window.updateFieldDescIcon('info_faj')"
-            onwheel="window.wheelCycleOption(event,'info_faj')">
-          <datalist id="dl_faj">
-            <option value="Ember"><option value="Elf"><option value="Félelf">
-            <option value="Törpe"><option value="Gnóm"><option value="Hobbitus">
-            <option value="Ork"><option value="Félork"><option value="Dzsinn">
-            <option value="Troll"><option value="Óriás"><option value="Drow">
-          </datalist>
-        </div>
-        <span class="field-desc-icon" id="desc_info_faj" style="display:none;" 
-          onclick="window.toggleDescPopover(event,'info_faj')"
-          onmouseenter="window.showDescPopover('info_faj')"
-          onmouseleave="window.hideDescPopover('info_faj')">i</span>
-      </div>
-      <div class="info-field">
-        <span class="info-label">Kaszt / Iskola:</span>
-        <div class="combo-wrap">
-          <input type="text" class="combo-input" id="info_kaszt" list="dl_kaszt"
-            placeholder="..." oninput="sheetData.info.kaszt=this.value; window.scheduleSave(); window.updateFieldDescIcon('info_kaszt')"
-            onwheel="window.wheelCycleOption(event,'info_kaszt')">
-          <datalist id="dl_kaszt">
-            <option value="Harcos"><option value="Varázsló"><option value="Pap">
-            <option value="Tolvaj"><option value="Bárd"><option value="Vadász">
-            <option value="Lovag"><option value="Druida"><option value="Szerzetes">
-            <option value="Mágus"><option value="Nekromanta"><option value="Paladin">
-            <option value="Alkimista"><option value="Ezermester"><option value="Sámán">
-          </datalist>
-        </div>
-        <span class="field-desc-icon" id="desc_info_kaszt" style="display:none;" 
-          onclick="window.toggleDescPopover(event,'info_kaszt')"
-          onmouseenter="window.showDescPopover('info_kaszt')"
-          onmouseleave="window.hideDescPopover('info_kaszt')">i</span>
-      </div>
-      <div class="info-field">
-        <span class="info-label">Isten / Hit:</span>
-        <div class="combo-wrap">
-          <input type="text" class="combo-input" id="info_isten" list="dl_isten"
-            placeholder="..." oninput="sheetData.info.isten=this.value; window.scheduleSave(); window.updateFieldDescIcon('info_isten')"
-            onwheel="window.wheelCycleOption(event,'info_isten')">
-          <datalist id="dl_isten">
-            <option value="Arel – Fény"><option value="Kaor – Rend">
-            <option value="Domvik – Háború"><option value="Gilron – Erdő">
-            <option value="Istár – Mágia"><option value="Narmeszt – Sötétség">
-            <option value="Keret – Halál"><option value="Semmi – Ateista"><option value="Egyéb">
-          </datalist>
-        </div>
-        <span class="field-desc-icon" id="desc_info_isten" style="display:none;" 
-          onclick="window.toggleDescPopover(event,'info_isten')"
-          onmouseenter="window.showDescPopover('info_isten')"
-          onmouseleave="window.hideDescPopover('info_isten')">i</span>
-      </div>
-      <div class="info-field">
-        <span class="info-label">Krónika:</span>
-        <input type="text" class="info-input" id="info_kronika" placeholder="..."
-          oninput="sheetData.info.kronika=this.value; window.scheduleSave()">
-      </div>
-      <div class="info-field">
-        <span class="info-label">Tapasztalat:</span>
-        <input type="text" class="info-input" id="info_xp" placeholder="0"
-          oninput="sheetData.info.xp=this.value; window.scheduleSave()">
-      </div>
     </div>
   </div>
 
@@ -762,17 +692,51 @@ const DEFAULT_SECTIONS = [
 ];
 
 /* ==============================
+   DEFAULT INFO FIELDS
+   ============================== */
+const DEFAULT_INFO_FIELDS = [
+  {id:'inf_nev',    type:'text',   label:'Név',              value:''},
+  {id:'inf_faj',    type:'select', label:'Faj / Származás',  value:'', options:[]},
+  {id:'inf_kaszt',  type:'select', label:'Kaszt / Iskola',   value:'', options:[]},
+  {id:'inf_isten',  type:'select', label:'Isten / Hit',      value:'', options:[]},
+  {id:'inf_kronika',type:'text',   label:'Krónika',          value:''},
+  {id:'inf_xp',     type:'number', label:'Tapasztalat',      value:''},
+];
+
+/* ==============================
    STATE
    ============================== */
 let sheetData = {
   vampireTitle:'KARAKTER',
-  info:{name:'',faj:'',kaszt:'',isten:'',kronika:'',xp:''},
+  infoFields: JSON.parse(JSON.stringify(DEFAULT_INFO_FIELDS)),
   sections: JSON.parse(JSON.stringify(DEFAULT_SECTIONS)),
-  viewMode: 0 // 0: Edit, 1: Lock, 2: Photo
+  viewMode: 0
 };
 
 let _uid = 2000;
 const uid = () => 'u' + (++_uid) + '_' + (Math.random()*999|0);
+
+// Kompatibilitási helperek az infoFields tömbhöz
+function getInfoVal(key) {
+  const fields = sheetData.infoFields || [];
+  // key lehet 'name','faj','kaszt'... (régi) vagy 'inf_nev','inf_faj'... (új)
+  const legacyMap = {name:'inf_nev',faj:'inf_faj',kaszt:'inf_kaszt',isten:'inf_isten',kronika:'inf_kronika',xp:'inf_xp'};
+  const id = legacyMap[key] || key;
+  const f = fields.find(f => f.id === id);
+  return f ? (f.value || '') : '';
+}
+
+function setInfoVal(key, val) {
+  const fields = sheetData.infoFields || [];
+  const legacyMap = {name:'inf_nev',faj:'inf_faj',kaszt:'inf_kaszt',isten:'inf_isten',kronika:'inf_kronika',xp:'inf_xp'};
+  const id = legacyMap[key] || key;
+  const f = fields.find(f => f.id === id);
+  if (f) f.value = val;
+}
+
+function getInfoFieldById(id) {
+  return (sheetData.infoFields || []).find(f => f.id === id) || null;
+}
 
 /* ==============================
    HELPERS
@@ -789,23 +753,93 @@ function renderAll() {
   const cont = document.getElementById('sections-container');
   cont.innerHTML = '';
   sheetData.sections.forEach(sec => renderSection(sec, cont));
-  updateInfoVisibility();
+  renderInfoFields();
+}
+
+function renderInfoFields() {
+  const grid = document.getElementById('info-grid-container');
+  if (!grid) return;
+  grid.innerHTML = '';
+  const fields = sheetData.infoFields || DEFAULT_INFO_FIELDS;
+  const isPhoto = sheetData.viewMode === 2;
+  fields.forEach(field => {
+    const div = document.createElement('div');
+    div.className = 'info-field';
+    div.id = 'info-field-wrap-' + field.id;
+    const label = document.createElement('span');
+    label.className = 'info-label';
+    label.textContent = field.label + ':';
+    div.appendChild(label);
+
+    if (field.type === 'select') {
+      // Combo input with datalist for select fields
+      const wrap = document.createElement('div'); wrap.className = 'combo-wrap';
+      const inp = document.createElement('input');
+      inp.type = 'text'; inp.className = 'combo-input';
+      inp.id = 'inpf_' + field.id;
+      inp.value = field.value || '';
+      inp.placeholder = '...';
+      const dlId = 'dl_' + field.id;
+      inp.setAttribute('list', dlId);
+      // Populate datalist from field_descriptions cache or field.options
+      const dl = document.createElement('datalist'); dl.id = dlId;
+      const cache = window._fieldDescCache && window._fieldDescCache[field.id];
+      const opts = (cache && cache.options.length > 0) ? cache.options : (field.options || []);
+      opts.forEach(o => { const opt = document.createElement('option'); opt.value = o; dl.appendChild(opt); });
+      inp.oninput = e => { field.value = e.target.value; window.scheduleSave(); window.updateFieldDescIcon(field.id); };
+      inp.onwheel = e => window.wheelCycleOption(e, field.id);
+      wrap.append(inp, dl);
+      div.appendChild(wrap);
+      // ⓘ icon
+      const icon = makeFieldDescIcon(field.id, field.label);
+      div.appendChild(icon);
+    } else if (field.type === 'number') {
+      const inp = document.createElement('input');
+      inp.type = 'text'; inp.className = 'info-input';
+      inp.id = 'inpf_' + field.id;
+      inp.value = field.value || '';
+      inp.placeholder = '0';
+      inp.oninput = e => { field.value = e.target.value; window.scheduleSave(); };
+      div.appendChild(inp);
+    } else if (field.type === 'dot') {
+      const dw = document.createElement('div'); dw.className = 'dots-wrap';
+      renderDots(dw, field, false);
+      div.appendChild(dw);
+    } else {
+      // text default
+      const inp = document.createElement('input');
+      inp.type = 'text'; inp.className = 'info-input';
+      inp.id = 'inpf_' + field.id;
+      inp.value = field.value || '';
+      inp.placeholder = '...';
+      inp.oninput = e => { field.value = e.target.value; window.scheduleSave(); };
+      div.appendChild(inp);
+    }
+
+    // Photo mode: hide if empty
+    if (isPhoto && !(field.value && field.value !== '0' && field.value !== 0)) {
+      div.style.display = 'none';
+    }
+    grid.appendChild(div);
+  });
+  // Update desc icons for select fields
+  fields.filter(f => f.type === 'select').forEach(f => window.updateFieldDescIcon && window.updateFieldDescIcon(f.id));
 }
 
 function updateInfoVisibility() {
   const isPhoto = (sheetData.viewMode === 2);
-  const fields = document.querySelectorAll('.info-field');
-  
+  const fields = sheetData.infoFields || [];
   fields.forEach(field => {
+    const wrap = document.getElementById('info-field-wrap-' + field.id);
+    if (!wrap) return;
     if (!isPhoto) {
-      field.style.display = 'flex';
+      wrap.style.display = 'flex';
     } else {
-      const input = field.querySelector('input');
-      // A Tapasztalat 0 értéke is érvényes lehet, de üres ne legyen
-      if (!input.value || input.value.trim() === '') {
-        field.style.display = 'none';
+      const val = field.value;
+      if (!val || val === '' || val === '0' || val === 0) {
+        wrap.style.display = 'none';
       } else {
-        field.style.display = 'flex';
+        wrap.style.display = 'flex';
       }
     }
   });
@@ -1098,7 +1132,7 @@ function dlJson(data, name) {
 }
 
 function exportFull() {
-  const n = sheetData.info.name || 'Nevtelen';
+  const n = getInfoVal('name') || 'Nevtelen';
   dlJson({...sheetData, _type:'magus_character_full'},
     `karakter_${n.replace(/\s+/g,'_').toLowerCase()}.json`);
   document.getElementById('exportMenu').classList.remove('open');
@@ -1124,9 +1158,9 @@ function exportTemplate() {
 function exportCard() {
   const card = {
     _type:'magus_character_card', _version:2,
-    name:sheetData.info.name, faj:sheetData.info.faj,
-    kaszt:sheetData.info.kaszt, isten:sheetData.info.isten,
-    kronika:sheetData.info.kronika, xp:sheetData.info.xp,
+    name:getInfoVal('name'), faj:getInfoVal('faj'),
+    kaszt:getInfoVal('kaszt'), isten:getInfoVal('isten'),
+    kronika:getInfoVal('kronika'), xp:getInfoVal('xp'),
     title:sheetData.vampireTitle, stats:[]
   };
   sheetData.sections.forEach(sec =>
@@ -1140,7 +1174,7 @@ function exportCard() {
       })
     )
   );
-  const n = sheetData.info.name || 'Nevtelen';
+  const n = getInfoVal('name') || 'Nevtelen';
   dlJson(card, `kartya_${n.replace(/\s+/g,'_').toLowerCase()}.json`);
   document.getElementById('exportMenu').classList.remove('open');
 }
@@ -1229,7 +1263,7 @@ async function saveAsImage() {
     });
     
     const a = document.createElement('a');
-    a.download = `karakter_${(sheetData.info.name || 'ismeretlen').replace(/\s+/g, '_')}.png`;
+    a.download = `karakter_${(getInfoVal('name') || 'ismeretlen').replace(/\s+/g, '_')}.png`;
     a.href = canvas.toDataURL('image/png');
     a.click();
   } catch(err) { 
@@ -1252,15 +1286,13 @@ function resetSheet() {
   if(!confirm('Biztosan törölsz mindent? Ez nem visszavonható!')) return;
   sheetData = {
     vampireTitle:'KARAKTER',
-    info:{name:'',faj:'',kaszt:'',isten:'',kronika:'',xp:''},
+    infoFields: JSON.parse(JSON.stringify(DEFAULT_INFO_FIELDS)),
     sections:JSON.parse(JSON.stringify(DEFAULT_SECTIONS)),
     viewMode:0
   };
   document.getElementById('vampireTitle').value='KARAKTER';
-  ['name','faj','kaszt','isten','kronika','xp'].forEach(k=>{
-    const el=document.getElementById('info_'+k); if(el) el.value='';
-  });
   setViewMode(1);
+  renderAll();
   window.scheduleSave()
 }
 
@@ -1340,9 +1372,9 @@ renderAll();
     const { data: { user } } = await window._sb.auth.getUser()
     if (!user || !window._currentSheetId) return
     const { error } = await window._sb.from('character_sheets').update({
-      name: sheetData.info.name || 'Névtelen',
-      faj: sheetData.info.faj || '',
-      kaszt: sheetData.info.kaszt || '',
+      name: getInfoVal('name') || 'Névtelen',
+      faj: getInfoVal('faj') || '',
+      kaszt: getInfoVal('kaszt') || '',
       data: sheetData,
       updated_at: new Date().toISOString()
     }).eq('id', window._currentSheetId)
@@ -1364,13 +1396,13 @@ renderAll();
     if (!window._sb || !window._userProfile) return
     const { data: { user } } = await window._sb.auth.getUser()
     if (!user) return
-    const charName = sheetData.info.name || 'Névtelen karakter'
+    const charName = getInfoVal('name') || 'Névtelen karakter'
     if (window._currentSheetId) {
       // Meglévő frissítése
       const { error } = await window._sb.from('character_sheets').update({
         name: charName,
-        faj: sheetData.info.faj || '',
-        kaszt: sheetData.info.kaszt || '',
+        faj: getInfoVal('faj') || '',
+        kaszt: getInfoVal('kaszt') || '',
         data: sheetData,
         updated_at: new Date().toISOString()
       }).eq('id', window._currentSheetId).eq('user_id', user.id)
@@ -1381,8 +1413,8 @@ renderAll();
       const { data, error } = await window._sb.from('character_sheets').insert({
         user_id: user.id,
         name: charName,
-        faj: sheetData.info.faj || '',
-        kaszt: sheetData.info.kaszt || '',
+        faj: getInfoVal('faj') || '',
+        kaszt: getInfoVal('kaszt') || '',
         data: sheetData,
         is_template: false,
         template_visible: false
@@ -1403,12 +1435,10 @@ renderAll();
       sheetData = data.data
       // Sablon betöltésekor ne írjuk felül az eredetit — új karakterként kezeljük
       window._currentSheetId = isTemplate ? null : data.id
+      // Migráció: régi info objektum → infoFields
+      migrateInfoToFields()
+      syncInfoFieldOptions()
       document.getElementById('vampireTitle').value = sheetData.vampireTitle || 'KARAKTER'
-      const infoKeys = ['name','faj','kaszt','isten','kronika','xp']
-      infoKeys.forEach(k => {
-        const el = document.getElementById('info_' + k)
-        if (el) el.value = (sheetData.info || {})[k] || ''
-      })
       renderAll()
       window.showSaveIndicator()
     }
@@ -1494,18 +1524,42 @@ renderAll();
     if (data && data.data) {
       sheetData = data.data
       window._currentSheetId = data.id
+      // Migráció: régi info objektum → infoFields tömb
+      migrateInfoToFields()
+      // infoFields opcióit frissítjük a field_descriptions cache-ből
+      syncInfoFieldOptions()
       document.getElementById('vampireTitle').value = sheetData.vampireTitle || 'KARAKTER'
-      const infoKeys = ['name','faj','kaszt','isten','kronika','xp']
-      infoKeys.forEach(k => {
-        const el = document.getElementById('info_' + k)
-        if (el) el.value = (sheetData.info || {})[k] || ''
-      })
+      renderAll()
+    } else {
+      // Első betöltés: üres lap, de opciók szinkronizálása
+      syncInfoFieldOptions()
       renderAll()
     }
-    // Az info mezők ikonjait is frissítjük (ezek statikus HTML-ben vannak, nem renderAll-ban)
-    window.updateFieldDescIcon('info_faj')
-    window.updateFieldDescIcon('info_kaszt')
-    window.updateFieldDescIcon('info_isten')
+  }
+
+  function migrateInfoToFields() {
+    // Ha már van infoFields, csak szinkronizáljuk az opciókat
+    if (sheetData.infoFields && sheetData.infoFields.length > 0) return
+    // Régi info objektum migrálása
+    const legacyMap = {name:'inf_nev',faj:'inf_faj',kaszt:'inf_kaszt',isten:'inf_isten',kronika:'inf_kronika',xp:'inf_xp'}
+    sheetData.infoFields = JSON.parse(JSON.stringify(DEFAULT_INFO_FIELDS))
+    if (sheetData.info) {
+      Object.entries(legacyMap).forEach(([oldKey, newId]) => {
+        const f = sheetData.infoFields.find(f => f.id === newId)
+        if (f && sheetData.info[oldKey]) f.value = sheetData.info[oldKey]
+      })
+    }
+  }
+
+  function syncInfoFieldOptions() {
+    if (!sheetData.infoFields) return
+    const cache = window._fieldDescCache || {}
+    sheetData.infoFields.forEach(field => {
+      if (field.type === 'select') {
+        const c = cache[field.id]
+        field.options = c ? [...c.options] : (field.options || [])
+      }
+    })
   }
 
   /* ==============================
@@ -1530,7 +1584,16 @@ renderAll();
     })
     Object.values(cache).forEach(c => c.options.sort((a,b)=>a.localeCompare(b,'hu')))
     window._fieldDescCache = cache
-    // Frissítsük a select sorok opciólistáját a sheetData-ban is
+    // infoFields opcióinak szinkronizálása
+    if (sheetData && sheetData.infoFields) {
+      sheetData.infoFields.forEach(field => {
+        if (field.type === 'select') {
+          const c = cache[field.id]
+          field.options = c ? [...c.options] : (field.options || [])
+        }
+      })
+    }
+    // select sorok opcióinak szinkronizálása a szekciókon belül
     if (sheetData && sheetData.sections) {
       sheetData.sections.forEach(sec => sec.boxes.forEach(box => box.rows.forEach(row => {
         if (row.type === 'select') {
@@ -1541,14 +1604,14 @@ renderAll();
     }
   }
 
-  // Visszaadja az aktuális leírást egy mezőhöz (info mezőknél az aktuális érték alapján, dot/select-nél a singleDesc/byOption alapján)
+  // Visszaadja az aktuális leírást egy mezőhöz
   window.getFieldDescription = function(fieldKey) {
     const c = window._fieldDescCache[fieldKey]
     if (!c) return ''
-    // info mezők: az aktuális inputérték alapján keresünk
-    if (fieldKey.startsWith('info_')) {
-      const el = document.getElementById(fieldKey)
-      const val = el ? el.value.trim() : ''
+    // info mezők (inf_faj, inf_kaszt, stb.): az aktuális infoField value alapján
+    const infoField = getInfoFieldById(fieldKey)
+    if (infoField) {
+      const val = infoField.value || ''
       return c.byOption[val] || ''
     }
     // dot sor: egyetlen leírás
@@ -1584,11 +1647,10 @@ renderAll();
   }
 
   window._buildPopoverContent = function(fieldKey, desc) {
+    const infoField = getInfoFieldById(fieldKey)
     const row = findRowById(fieldKey)
     let title = ''
-    if (fieldKey === 'info_faj') title = document.getElementById('info_faj')?.value || 'Faj'
-    else if (fieldKey === 'info_kaszt') title = document.getElementById('info_kaszt')?.value || 'Kaszt'
-    else if (fieldKey === 'info_isten') title = document.getElementById('info_isten')?.value || 'Isten'
+    if (infoField) title = infoField.value || infoField.label
     else if (row) title = row.type === 'select' ? (row.value || row.label) : row.label
     return `<div class="field-desc-popover-title">${title}</div>${(desc||'').replace(/\n/g,'<br>')}`
   }
@@ -1637,20 +1699,21 @@ renderAll();
     document.querySelectorAll('.field-desc-popover.open').forEach(p => p.classList.remove('open'))
   })
 
-  // ─── GÖRGŐ — Faj/Kaszt/Isten (datalist alapú combo-input) ───────
+  // ─── GÖRGŐ — select típusú info mezők ───────────────────────────
   window.wheelCycleOption = function(e, fieldKey) {
-    const c = window._fieldDescCache[fieldKey]
-    if (!c || !c.options || c.options.length === 0) return
+    const field = getInfoFieldById(fieldKey)
+    if (!field) return
+    const opts = field.options || []
+    if (opts.length === 0) return
     e.preventDefault()
-    const el = document.getElementById(fieldKey)
+    const el = document.getElementById('inpf_' + fieldKey)
+    if (!el) return
     const current = el.value.trim()
-    let idx = c.options.indexOf(current)
-    if (e.deltaY > 0) idx = (idx + 1) % c.options.length
-    else idx = (idx - 1 + c.options.length) % c.options.length
-    el.value = c.options[idx]
-    // Mentés a sheetData-ba
-    const key = fieldKey.replace('info_','')
-    sheetData.info[key] = el.value
+    let idx = opts.indexOf(current)
+    if (e.deltaY > 0) idx = (idx + 1) % opts.length
+    else idx = (idx - 1 + opts.length) % opts.length
+    field.value = opts[idx]
+    el.value = field.value
     window.scheduleSave()
     window.updateFieldDescIcon(fieldKey)
     if (document.getElementById('pop_'+fieldKey)?.classList.contains('open')) {

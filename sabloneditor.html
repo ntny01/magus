@@ -561,11 +561,23 @@ const DEFAULT_SECTIONS = [
 ];
 
 /* ==============================
+   DEFAULT INFO FIELDS
+   ============================== */
+const DEFAULT_INFO_FIELDS = [
+  {id:'inf_nev',    type:'text',   label:'Név',              value:''},
+  {id:'inf_faj',    type:'select', label:'Faj / Származás',  value:'', options:[]},
+  {id:'inf_kaszt',  type:'select', label:'Kaszt / Iskola',   value:'', options:[]},
+  {id:'inf_isten',  type:'select', label:'Isten / Hit',      value:'', options:[]},
+  {id:'inf_kronika',type:'text',   label:'Krónika',          value:''},
+  {id:'inf_xp',     type:'number', label:'Tapasztalat',      value:''},
+];
+
+/* ==============================
    STATE
    ============================== */
 let sheetData = {
   vampireTitle:'SABLON NEVE',
-  info:{name:'',faj:'',kaszt:'',isten:'',kronika:'',xp:''},
+  infoFields: JSON.parse(JSON.stringify(DEFAULT_INFO_FIELDS)),
   sections: JSON.parse(JSON.stringify(DEFAULT_SECTIONS)),
   viewMode:0
 };
@@ -594,8 +606,8 @@ function renderEditor() {
     <div class="editor-toolbar">
       <input class="editor-name-input" id="templateNameInput" 
         placeholder="Sablon neve..." 
-        value="${sheetData.info.name || ''}"
-        oninput="sheetData.info.name=this.value">
+        value="${sheetData.vampireTitle || 'SABLON NEVE'}"
+        oninput="sheetData.vampireTitle=this.value; document.getElementById('vampireTitle').value=this.value">
       <div class="header-sep"></div>
       <button class="btn btn-gold" onclick="saveTemplate()">💾 Mentés</button>
       <button class="btn ${sheetData._published ? 'pub-toggle published' : 'pub-toggle'}" 
@@ -616,30 +628,7 @@ function renderEditor() {
         <div class="ornament" style="margin:.3rem 0;"></div>
         <div class="ornament-deco">✦ &nbsp; ✦ &nbsp; ✦</div>
       </div>
-      <div class="info-card">
-        <div class="info-grid">
-          <div class="info-field">
-            <span class="info-label">Faj:</span>
-            <input type="text" class="info-input" id="info_faj" 
-              placeholder="..." value="${sheetData.info.faj||''}"
-              oninput="sheetData.info.faj=this.value">
-            <button class="opt-edit-btn ${_fieldKeysWithData.has('info_faj')?'has-data':''}" onclick="openOptionEditor('info_faj','Faj')" title="Opciók és leírások szerkesztése">⚙️</button>
-          </div>
-          <div class="info-field">
-            <span class="info-label">Kaszt:</span>
-            <input type="text" class="info-input" id="info_kaszt" 
-              placeholder="..." value="${sheetData.info.kaszt||''}"
-              oninput="sheetData.info.kaszt=this.value">
-            <button class="opt-edit-btn ${_fieldKeysWithData.has('info_kaszt')?'has-data':''}" onclick="openOptionEditor('info_kaszt','Kaszt')" title="Opciók és leírások szerkesztése">⚙️</button>
-          </div>
-          <div class="info-field">
-            <span class="info-label">Isten:</span>
-            <input type="text" class="info-input" id="info_isten" 
-              placeholder="..." value="${sheetData.info.isten||''}"
-              oninput="sheetData.info.isten=this.value">
-            <button class="opt-edit-btn ${_fieldKeysWithData.has('info_isten')?'has-data':''}" onclick="openOptionEditor('info_isten','Isten')" title="Opciók és leírások szerkesztése">⚙️</button>
-          </div>
-        </div>
+      <div class="info-card" id="info-card-container">
       </div>
       <div class="sheet-card">
         <div id="sections-container"></div>
@@ -655,6 +644,49 @@ function renderAll() {
   if (!cont) return
   cont.innerHTML = ''
   sheetData.sections.forEach(sec => renderSection(sec, cont))
+  renderInfoCard()
+}
+
+function renderInfoCard() {
+  const card = document.getElementById('info-card-container')
+  if (!card) return
+  const grid = document.createElement('div'); grid.className = 'info-grid'
+  const fields = sheetData.infoFields || DEFAULT_INFO_FIELDS
+  fields.forEach(field => {
+    const div = document.createElement('div'); div.className = 'info-field'
+    const label = document.createElement('span'); label.className = 'info-label'
+    label.textContent = field.label + ':'
+    div.appendChild(label)
+
+    if (field.type === 'select') {
+      const inp = document.createElement('input')
+      inp.type = 'text'; inp.className = 'info-input'
+      inp.value = field.value || ''; inp.placeholder = '...'
+      inp.oninput = e => { field.value = e.target.value }
+      div.appendChild(inp)
+      // ⚙️ opció szerkesztő gomb
+      const btn = document.createElement('button')
+      btn.className = 'opt-edit-btn' + (_fieldKeysWithData.has(field.id) ? ' has-data' : '')
+      btn.innerHTML = '⚙️'; btn.title = 'Opciók és leírások szerkesztése'
+      btn.onclick = () => openOptionEditor(field.id, field.label)
+      div.appendChild(btn)
+    } else if (field.type === 'number') {
+      const inp = document.createElement('input')
+      inp.type = 'text'; inp.className = 'info-input'
+      inp.value = field.value || ''; inp.placeholder = '0'
+      inp.oninput = e => { field.value = e.target.value }
+      div.appendChild(inp)
+    } else {
+      const inp = document.createElement('input')
+      inp.type = 'text'; inp.className = 'info-input'
+      inp.value = field.value || ''; inp.placeholder = '...'
+      inp.oninput = e => { field.value = e.target.value }
+      div.appendChild(inp)
+    }
+    grid.appendChild(div)
+  })
+  card.innerHTML = ''
+  card.appendChild(grid)
 }
 
 function renderSection(sec, cont) {
@@ -819,7 +851,7 @@ function newTemplate() {
   _currentTemplateId = null
   sheetData = {
     vampireTitle:'SABLON NEVE',
-    info:{name:'',faj:'',kaszt:'',isten:'',kronika:'',xp:''},
+    infoFields: JSON.parse(JSON.stringify(DEFAULT_INFO_FIELDS)),
     sections: JSON.parse(JSON.stringify(DEFAULT_SECTIONS)),
     viewMode:0, _published:false
   }
@@ -831,16 +863,16 @@ async function saveTemplate() {
   if (!window._sb) return
   const { data: { user } } = await window._sb.auth.getUser()
   if (!user) return
-  const name = document.getElementById('templateNameInput')?.value?.trim() || sheetData.info.name?.trim() || ''
+  const name = document.getElementById('templateNameInput')?.value?.trim() || sheetData.vampireTitle?.trim() || ''
   if (!name) {
     showToast('⚠️ Adj nevet a sablonnak mentés előtt!')
     document.getElementById('templateNameInput')?.focus()
     return
   }
-  sheetData.info.name = name
+  sheetData.vampireTitle = name
   if (_currentTemplateId) {
     const { error } = await window._sb.from('character_sheets').update({
-      name, faj:sheetData.info.faj||'', kaszt:sheetData.info.kaszt||'',
+      name, faj:(sheetData.infoFields?.find(f=>f.id==='inf_faj')?.value || ''), kaszt:(sheetData.infoFields?.find(f=>f.id==='inf_kaszt')?.value || ''),
       data: sheetData,
       template_visible: sheetData._published || false,
       updated_at: new Date().toISOString()
@@ -850,7 +882,7 @@ async function saveTemplate() {
   } else {
     const { data, error } = await window._sb.from('character_sheets').insert({
       user_id: user.id, name,
-      faj:sheetData.info.faj||'', kaszt:sheetData.info.kaszt||'',
+      faj:(sheetData.infoFields?.find(f=>f.id==='inf_faj')?.value || ''), kaszt:(sheetData.infoFields?.find(f=>f.id==='inf_kaszt')?.value || ''),
       data: sheetData,
       is_template: true,
       template_visible: sheetData._published || false
@@ -886,7 +918,7 @@ async function deleteTemplate() {
   _currentTemplateId = null
   sheetData = {
     vampireTitle:'SABLON NEVE',
-    info:{name:'',faj:'',kaszt:'',isten:'',kronika:'',xp:''},
+    infoFields: JSON.parse(JSON.stringify(DEFAULT_INFO_FIELDS)),
     sections: JSON.parse(JSON.stringify(DEFAULT_SECTIONS)),
     viewMode:0, _published:false
   }
@@ -906,6 +938,17 @@ async function loadTemplate(id) {
   _currentTemplateId = data.id
   sheetData = data.data || {}
   sheetData._published = data.template_visible || false
+  // Migráció: régi info objektum → infoFields
+  if (!sheetData.infoFields || sheetData.infoFields.length === 0) {
+    const legacyMap = {name:'inf_nev',faj:'inf_faj',kaszt:'inf_kaszt',isten:'inf_isten',kronika:'inf_kronika',xp:'inf_xp'}
+    sheetData.infoFields = JSON.parse(JSON.stringify(DEFAULT_INFO_FIELDS))
+    if (sheetData.info) {
+      Object.entries(legacyMap).forEach(([oldKey, newId]) => {
+        const f = sheetData.infoFields.find(f => f.id === newId)
+        if (f && sheetData.info[oldKey]) f.value = sheetData.info[oldKey]
+      })
+    }
+  }
   document.querySelectorAll('.template-item').forEach(el => {
     el.classList.toggle('active', el.dataset.id === id)
   })
