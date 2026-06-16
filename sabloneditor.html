@@ -464,12 +464,35 @@ header{
 .sym{cursor:pointer;font-size:1.05rem;transition:transform .12s;line-height:1;flex-shrink:0;}
 .sym:hover{transform:scale(1.28);}
 .sym-controls{display:flex;flex-wrap:wrap;align-items:center;gap:.35rem;margin-top:.2rem;}
-.sym-picker-select{
-  background:rgba(255,255,255,.05);border:1px solid var(--border-soft);
-  border-radius:.35rem;color:var(--text);font-size:.8rem;
-  padding:.1rem .3rem;outline:none;flex-shrink:0;cursor:pointer;
+.sym-picker{
+  position:relative;flex-shrink:0;
 }
-.sym-picker-select:focus{border-color:rgba(168,85,247,.4);}
+.sym-picker-btn{
+  display:flex;align-items:center;gap:.35rem;
+  background:rgba(255,255,255,.05);border:1px solid var(--border-soft);
+  border-radius:.35rem;color:var(--text);font-size:.82rem;
+  padding:.18rem .5rem;outline:none;cursor:pointer;white-space:nowrap;
+  transition:border-color .15s,background .15s;
+}
+.sym-picker-btn:hover{border-color:rgba(168,85,247,.35);background:rgba(168,85,247,.07);}
+.sym-picker-btn .arrow{font-size:.6rem;opacity:.5;margin-left:.1rem;}
+.sym-dropdown{
+  position:fixed;z-index:9999;
+  background:var(--bg-card,#1a1a2e);border:1px solid rgba(168,85,247,.25);
+  border-radius:.55rem;padding:.3rem;min-width:130px;
+  box-shadow:0 8px 32px rgba(0,0,0,.55);
+  display:none;flex-direction:column;gap:2px;
+}
+.sym-dropdown.open{display:flex;}
+.sym-opt{
+  display:flex;align-items:center;gap:.5rem;
+  padding:.3rem .55rem;border-radius:.35rem;cursor:pointer;
+  font-size:.85rem;color:var(--text);white-space:nowrap;
+  transition:background .12s;
+}
+.sym-opt:hover{background:rgba(168,85,247,.12);}
+.sym-opt.selected{background:rgba(168,85,247,.18);color:var(--purple);}
+.sym-opt-icon{font-size:1rem;line-height:1;width:1.2rem;text-align:center;}
 .sym-color-input{
   width:2rem;height:1.5rem;border:1px solid var(--border-soft);border-radius:.35rem;
   background:transparent;cursor:pointer;padding:0;outline:none;flex-shrink:0;
@@ -768,15 +791,7 @@ function renderInfoCard() {
       renderSymbols(sw, field)
       const ctrls = document.createElement('div'); ctrls.className = 'sym-controls'
       // Picker
-      const picker = document.createElement('select'); picker.className = 'sym-picker-select'
-      picker.title = 'Szimbólum választó'
-      SYM_PAIRS.forEach(p => {
-        const o = document.createElement('option'); o.value = p.filled
-        o.textContent = p.filled + ' ' + p.label
-        if ((field.symbol||'★') === p.filled) o.selected = true
-        picker.appendChild(o)
-      })
-      picker.onchange = e => { field.symbol = e.target.value; renderSymbols(sw, field) }
+      const picker = makeSymPicker(field, val => { field.symbol = val; renderSymbols(sw, field) })
       // Szín
       const colorInp = document.createElement('input'); colorInp.type = 'color'
       colorInp.className = 'sym-color-input'; colorInp.title = 'Szín'
@@ -959,16 +974,8 @@ function buildRow(row, box) {
     renderSymbols(sw, row)
     // Kontrollok: picker + szín + max
     const ctrls=document.createElement('div'); ctrls.className='sym-controls'
-    // Szimbólum picker (legördülő)
-    const picker=document.createElement('select'); picker.className='sym-picker-select'
-    picker.title='Szimbólum választó'
-    SYM_PAIRS.forEach(p=>{
-      const o=document.createElement('option'); o.value=p.filled
-      o.textContent=p.filled+' '+p.label
-      if((row.symbol||'★')===p.filled) o.selected=true
-      picker.appendChild(o)
-    })
-    picker.onchange=e=>{row.symbol=e.target.value; renderSymbols(sw,row)}
+    // Szimbólum picker
+    const picker=makeSymPicker(row, val=>{ row.symbol=val; renderSymbols(sw,row) })
     // Szín
     const colorInp=document.createElement('input'); colorInp.type='color'
     colorInp.className='sym-color-input'; colorInp.title='Szín'
@@ -1038,6 +1045,57 @@ const SYM_EMPTY_MAP = Object.fromEntries(SYM_PAIRS.map(p => [p.filled, p.empty])
 
 function getEmptySym(sym) {
   return SYM_EMPTY_MAP[sym] || sym
+}
+
+function makeSymPicker(row, onchange) {
+  const wrap = document.createElement('div'); wrap.className = 'sym-picker'
+  const current = () => SYM_PAIRS.find(p => p.filled === (row.symbol||'★')) || SYM_PAIRS[0]
+
+  const btn = document.createElement('button'); btn.type='button'; btn.className = 'sym-picker-btn'
+  const updateBtn = () => {
+    const p = current()
+    btn.innerHTML = `<span>${p.filled}${p.empty}</span><span>${p.label}</span><span class="arrow">▼</span>`
+  }
+  updateBtn()
+
+  const drop = document.createElement('div'); drop.className = 'sym-dropdown'
+  document.body.appendChild(drop)
+
+  SYM_PAIRS.forEach(p => {
+    const opt = document.createElement('div')
+    opt.className = 'sym-opt' + (p.filled === (row.symbol||'★') ? ' selected' : '')
+    opt.innerHTML = `<span class="sym-opt-icon">${p.filled}${p.empty}</span><span>${p.label}</span>`
+    opt.onclick = e => {
+      e.stopPropagation()
+      row.symbol = p.filled
+      drop.querySelectorAll('.sym-opt').forEach(o => o.classList.remove('selected'))
+      opt.classList.add('selected')
+      updateBtn()
+      drop.classList.remove('open')
+      onchange(p.filled)
+    }
+    drop.appendChild(opt)
+  })
+
+  const openDrop = () => {
+    document.querySelectorAll('.sym-dropdown.open').forEach(d => d.classList.remove('open'))
+    const r = btn.getBoundingClientRect()
+    drop.style.top = (r.bottom + 4) + 'px'
+    drop.style.left = r.left + 'px'
+    drop.classList.add('open')
+  }
+
+  btn.onclick = e => {
+    e.stopPropagation()
+    drop.classList.contains('open') ? drop.classList.remove('open') : openDrop()
+  }
+
+  document.addEventListener('click', () => drop.classList.remove('open'), {capture:false})
+
+  wrap._drop = drop
+  wrap._updateBtn = updateBtn
+  wrap.appendChild(btn)
+  return wrap
 }
 
 function renderSymbols(container, row) {
