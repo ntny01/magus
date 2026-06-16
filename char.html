@@ -447,6 +447,35 @@ const sb = supabase.createClient(
       letter-spacing:.06em;margin-bottom:.25rem;text-transform:uppercase;
     }
 
+    /* ===== CUSTOM INFO DROPDOWN ===== */
+    .info-cd{position:relative;flex:1;}
+    .info-cd-btn{
+      width:100%;display:flex;align-items:center;justify-content:space-between;
+      background:transparent;border:none;border-bottom:1px dashed rgba(255,255,255,.18);
+      color:#fff;padding:.18rem .25rem;font-size:.92rem;outline:none;
+      cursor:pointer;font-family:inherit;text-align:left;transition:border-color .2s;
+    }
+    .info-cd-btn:focus{border-bottom-color:var(--gold);}
+    .free-char .info-cd-btn:focus{border-bottom-color:#4ade80;}
+    .info-cd-btn .cd-arrow{font-size:.6rem;opacity:.4;flex-shrink:0;margin-left:.3rem;}
+    .info-cd-drop{
+      position:fixed;z-index:9999;
+      background:#0f172a;border:1px solid rgba(212,175,55,.25);
+      border-radius:.55rem;padding:.3rem;min-width:160px;max-height:220px;overflow-y:auto;
+      box-shadow:0 8px 32px rgba(0,0,0,.55);
+      display:none;flex-direction:column;gap:2px;
+    }
+    .info-cd-drop.open{display:flex;}
+    .info-cd-opt{
+      padding:.32rem .6rem;border-radius:.35rem;cursor:pointer;
+      font-size:.88rem;color:var(--text);white-space:nowrap;
+      transition:background .12s;
+    }
+    .info-cd-opt:hover{background:rgba(212,175,55,.12);}
+    .info-cd-opt.selected{background:rgba(212,175,55,.18);color:var(--gold);}
+    .free-char .info-cd-opt:hover{background:rgba(74,222,128,.1);}
+    .free-char .info-cd-opt.selected{background:rgba(74,222,128,.15);color:#4ade80;}
+
     /* ===== SELECT SOR (legördülő blokk-mező) ===== */
     .row-select-input{
       flex:1;background:transparent;border:none;
@@ -495,6 +524,18 @@ const sb = supabase.createClient(
         background: transparent !important;
         border-bottom: 1px solid #aaaaaa !important;
       }
+      .combo-input, .info-cd-btn {
+        color: #000000 !important;
+        background: transparent !important;
+        border-bottom: 1px solid #aaaaaa !important;
+      }
+      .row-label-input, .row-text-input {
+        color: #000000 !important;
+        background: transparent !important;
+        border-bottom: 1px solid #aaaaaa !important;
+      }
+      .info-cd-btn .cd-arrow { display:none !important; }
+      .info-cd-drop { display:none !important; }
       .section-title-input {
         color: #000000 !important;
         background: transparent !important;
@@ -834,32 +875,11 @@ function renderInfoFields() {
     div.appendChild(label);
 
     if (field.type === 'select') {
-      // Combo input with datalist for select fields
-      const wrap = document.createElement('div'); wrap.className = 'combo-wrap';
-      const inp = document.createElement('input');
-      inp.type = 'text'; inp.className = 'combo-input';
-      inp.id = 'inpf_' + field.id;
-      inp.value = field.value || '';
-      inp.placeholder = '...';
-      const dlId = 'dl_' + field.id;
-      inp.setAttribute('list', dlId);
-      // Populate datalist from field_descriptions cache or field.options
-      const dl = document.createElement('datalist'); dl.id = dlId;
-      const cache = window._fieldDescCache && window._fieldDescCache[field.id];
-      const opts = (cache && cache.options.length > 0) ? cache.options : (field.options || []);
-      opts.forEach(o => { const opt = document.createElement('option'); opt.value = o; dl.appendChild(opt); });
-      // Csak akkor adjuk hozzá a datalist-et ha van opció
-      if (opts.length > 0) {
-        inp.setAttribute('list', dlId);
-        wrap.append(inp, dl);
-      } else {
-        wrap.appendChild(inp);
-      }
-      inp.oninput = e => { field.value = e.target.value; window.scheduleSave(); window.updateFieldDescIcon(field.id); };
-      inp.onwheel = e => window.wheelCycleOption(e, field.id);
-      div.appendChild(wrap);
-      // ⓘ icon
+      const cdWrap = makeInfoCustomDrop(field);
+      div.appendChild(cdWrap);
+      // ⓘ icon – görgő átmegy a dropdown gombra
       const icon = makeFieldDescIcon(field.id, field.label);
+      icon.onwheel = e => { if (cdWrap._btn) cdWrap._btn.onwheel(e) };
       div.appendChild(icon);
     } else if (field.type === 'number') {
       const inp = document.createElement('input');
@@ -1142,6 +1162,86 @@ function makeDelRowBtn(row, box) {
   b.className='btn-del-row edit-only'; b.innerHTML='✕'; b.title='Sor törlése';
   b.onclick = () => { box.rows=box.rows.filter(r=>r.id!==row.id); renderAll(); };
   return b;
+}
+
+function makeInfoCustomDrop(field) {
+  const wrap = document.createElement('div'); wrap.className = 'info-cd'
+  const cache = window._fieldDescCache && window._fieldDescCache[field.id]
+  const opts = (cache && cache.options.length > 0) ? cache.options : (field.options || [])
+
+  const btn = document.createElement('button'); btn.type='button'; btn.className='info-cd-btn'
+  const span = document.createElement('span'); span.textContent = field.value || '...'
+  const arrow = document.createElement('span'); arrow.className='cd-arrow'; arrow.textContent='▼'
+  btn.append(span, arrow)
+
+  // Ha nincs opció: sima input legyen
+  if (opts.length === 0) {
+    const inp = document.createElement('input')
+    inp.type='text'; inp.className='combo-input'
+    inp.id='inpf_'+field.id; inp.value=field.value||''; inp.placeholder='...'
+    inp.oninput = e => { field.value=e.target.value; window.scheduleSave(); window.updateFieldDescIcon(field.id) }
+    inp.onwheel = e => window.wheelCycleOption(e, field.id)
+    wrap.appendChild(inp)
+    return wrap
+  }
+
+  const drop = document.createElement('div'); drop.className='info-cd-drop'
+  document.body.appendChild(drop)
+
+  opts.forEach(o => {
+    const opt = document.createElement('div')
+    opt.className = 'info-cd-opt' + (field.value===o?' selected':'')
+    opt.textContent = o
+    opt.onclick = e => {
+      e.stopPropagation()
+      field.value = o
+      span.textContent = o || '...'
+      drop.querySelectorAll('.info-cd-opt').forEach(el => el.classList.remove('selected'))
+      opt.classList.add('selected')
+      drop.classList.remove('open')
+      window.scheduleSave()
+      window.updateFieldDescIcon(field.id)
+      if (document.getElementById('pop_'+field.id)?.classList.contains('open')) {
+        window.showDescPopover(field.id)
+      }
+    }
+    drop.appendChild(opt)
+  })
+
+  btn.onclick = e => {
+    e.stopPropagation()
+    const isOpen = drop.classList.contains('open')
+    document.querySelectorAll('.info-cd-drop.open').forEach(d => d.classList.remove('open'))
+    if (!isOpen) {
+      const r = btn.getBoundingClientRect()
+      drop.style.top = (r.bottom+4)+'px'
+      drop.style.left = r.left+'px'
+      drop.style.minWidth = r.width+'px'
+      drop.classList.add('open')
+    }
+  }
+
+  // Görgővel váltás
+  btn.onwheel = e => {
+    e.preventDefault()
+    const idx = opts.indexOf(field.value)
+    const next = e.deltaY>0 ? (idx+1)%opts.length : (idx-1+opts.length)%opts.length
+    field.value = opts[next]
+    span.textContent = field.value
+    drop.querySelectorAll('.info-cd-opt').forEach((el,i) => el.classList.toggle('selected', i===next))
+    window.scheduleSave()
+    window.updateFieldDescIcon(field.id)
+    if (document.getElementById('pop_'+field.id)?.classList.contains('open')) {
+      window.showDescPopover(field.id)
+    }
+  }
+
+  document.addEventListener('click', () => drop.classList.remove('open'), {capture:false})
+
+  // Görgő az ⓘ ikonon is átmegy a btn-re
+  wrap._btn = btn
+  wrap.appendChild(btn)
+  return wrap
 }
 
 function renderSymbols(container, row) {
