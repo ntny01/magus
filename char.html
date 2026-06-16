@@ -485,6 +485,34 @@ const sb = supabase.createClient(
     }
     .row-select-input:focus{border-bottom-color:var(--accent);}
     .row-select-input option{background:#0f172a;color:#fff;}
+    /* Custom blokk-sor dropdown */
+    .row-cd{position:relative;flex:1;min-width:0;}
+    .row-cd-btn{
+      width:100%;display:flex;align-items:center;justify-content:space-between;
+      background:transparent;border:none;border-bottom:1px dashed rgba(255,255,255,.12);
+      color:#fff;padding:.1rem .25rem;font-size:.85rem;outline:none;
+      cursor:pointer;font-family:inherit;text-align:left;transition:border-color .2s;
+    }
+    .row-cd-btn:hover{border-bottom-color:var(--accent);}
+    .free-char .row-cd-btn:hover{border-bottom-color:#4ade80;}
+    .row-cd-btn .cd-arrow{font-size:.55rem;opacity:.35;flex-shrink:0;margin-left:.2rem;}
+    .row-cd-drop{
+      position:fixed;z-index:9999;
+      background:#0f172a;border:1px solid rgba(212,175,55,.22);
+      border-radius:.5rem;padding:.25rem;min-width:130px;max-height:200px;overflow-y:auto;
+      box-shadow:0 8px 28px rgba(0,0,0,.55);
+      display:none;flex-direction:column;gap:2px;
+    }
+    .row-cd-drop.open{display:flex;}
+    .row-cd-opt{
+      padding:.28rem .55rem;border-radius:.3rem;cursor:pointer;
+      font-size:.83rem;color:var(--text);white-space:nowrap;transition:background .12s;
+    }
+    .row-cd-opt:hover{background:rgba(212,175,55,.1);}
+    .row-cd-opt.selected{background:rgba(212,175,55,.16);color:var(--gold);}
+    .free-char .row-cd-opt:hover{background:rgba(74,222,128,.08);}
+    .free-char .row-cd-opt.selected{background:rgba(74,222,128,.14);color:#4ade80;}
+    @media print{ .row-cd-btn .cd-arrow{display:none!important;} .row-cd-drop{display:none!important;} }
 
     /* ===== PRINT ===== */
     @media print{
@@ -1086,26 +1114,11 @@ function buildRow(row, box) {
     wrap.className='row-wrap';
     const li = makeRowLabelInput(row);
     li.style.maxWidth='100px';
-    const sel = document.createElement('select'); sel.className='row-select-input';
-    const opts = row.options || [];
-    if (opts.length === 0) {
-      const o = document.createElement('option'); o.textContent='(nincs opció)'; o.value='';
-      sel.appendChild(o);
-    } else {
-      if (!row.value) {
-        const o = document.createElement('option'); o.value=''; o.textContent='—';
-        sel.appendChild(o);
-      }
-      opts.forEach(opt => {
-        const o = document.createElement('option'); o.value=opt; o.textContent=opt;
-        if (row.value === opt) o.selected = true;
-        sel.appendChild(o);
-      });
-    }
-    sel.onchange = e => { row.value = e.target.value; window.scheduleSave(); window.updateFieldDescIcon(row.id); };
-    sel.onwheel = e => window.wheelCycleSelectRow(e, row, sel);
+    const cd = makeRowCustomDrop(row);
     const icon = makeFieldDescIcon(row.id, row.label);
-    wrap.append(li, sel, icon, makeDelRowBtn(row,box));
+    // Görgő az ⓘ ikonon átmegy a dropdown gombra
+    icon.onwheel = e => { if (cd._btn) cd._btn.onwheel(e) };
+    wrap.append(li, cd, icon, makeDelRowBtn(row,box));
 
   } else if (row.type === 'textarea') {
     wrap.style.cssText='flex-direction:column;align-items:stretch;display:flex;gap:.3rem;';
@@ -1172,6 +1185,80 @@ function makeDelRowBtn(row, box) {
   b.className='btn-del-row edit-only'; b.innerHTML='✕'; b.title='Sor törlése';
   b.onclick = () => { box.rows=box.rows.filter(r=>r.id!==row.id); renderAll(); };
   return b;
+}
+
+function makeRowCustomDrop(row) {
+  const wrap = document.createElement('div'); wrap.className = 'row-cd'
+  const opts = row.options || []
+
+  const btn = document.createElement('button'); btn.type='button'; btn.className='row-cd-btn'
+  const span = document.createElement('span'); span.textContent = row.value || '—'
+  const arrow = document.createElement('span'); arrow.className='cd-arrow'; arrow.textContent='▼'
+  btn.append(span, arrow)
+
+  if (opts.length === 0) {
+    span.textContent = '(nincs opció)'
+    span.style.color = 'var(--muted)'
+    btn.disabled = true
+    wrap.appendChild(btn)
+    return wrap
+  }
+
+  const drop = document.createElement('div'); drop.className='row-cd-drop'
+  document.body.appendChild(drop)
+
+  opts.forEach(o => {
+    const opt = document.createElement('div')
+    opt.className = 'row-cd-opt' + (row.value===o?' selected':'')
+    opt.textContent = o
+    opt.onclick = e => {
+      e.stopPropagation()
+      row.value = o
+      span.textContent = o
+      drop.querySelectorAll('.row-cd-opt').forEach(el => el.classList.remove('selected'))
+      opt.classList.add('selected')
+      drop.classList.remove('open')
+      window.scheduleSave()
+      window.updateFieldDescIcon(row.id)
+      if (document.getElementById('pop_'+row.id)?.classList.contains('open')) {
+        window.showDescPopover(row.id)
+      }
+    }
+    drop.appendChild(opt)
+  })
+
+  btn.onclick = e => {
+    e.stopPropagation()
+    const isOpen = drop.classList.contains('open')
+    document.querySelectorAll('.row-cd-drop.open,.info-cd-drop.open').forEach(d => d.classList.remove('open'))
+    if (!isOpen) {
+      const r = btn.getBoundingClientRect()
+      drop.style.top = (r.bottom+3)+'px'
+      drop.style.left = r.left+'px'
+      drop.style.minWidth = r.width+'px'
+      drop.classList.add('open')
+    }
+  }
+
+  btn.onwheel = e => {
+    e.preventDefault()
+    const idx = opts.indexOf(row.value)
+    const next = e.deltaY>0 ? (idx+1)%opts.length : (idx-1+opts.length)%opts.length
+    row.value = opts[next]
+    span.textContent = row.value
+    drop.querySelectorAll('.row-cd-opt').forEach((el,i) => el.classList.toggle('selected', i===next))
+    window.scheduleSave()
+    window.updateFieldDescIcon(row.id)
+    if (document.getElementById('pop_'+row.id)?.classList.contains('open')) {
+      window.showDescPopover(row.id)
+    }
+  }
+
+  document.addEventListener('click', () => drop.classList.remove('open'), {capture:false})
+
+  wrap._btn = btn
+  wrap.appendChild(btn)
+  return wrap
 }
 
 function makeInfoCustomDrop(field) {
