@@ -222,6 +222,7 @@ header{
 }
 .info-grid{
   display:grid;grid-template-columns:repeat(3,1fr);gap:.6rem 1.5rem;
+  align-items:start;
 }
 .info-field{display:flex;align-items:baseline;gap:.4rem;}
 .info-label{font-size:.72rem;font-weight:600;color:var(--muted);letter-spacing:.05em;text-transform:uppercase;white-space:nowrap;}
@@ -459,21 +460,28 @@ header{
 .info-add-btn:hover{border-color:rgba(168,85,247,.4);color:var(--purple);background:rgba(168,85,247,.06);}
 
 /* ===== SZIMBÓLUM SOR ===== */
-.symbol-wrap{display:flex;gap:3px;user-select:none;flex-shrink:0;}
-.sym{cursor:pointer;font-size:1.05rem;transition:transform .12s;line-height:1;}
+.symbol-wrap{display:flex;flex-wrap:wrap;gap:3px;user-select:none;flex-shrink:0;max-width:100%;}
+.sym{cursor:pointer;font-size:1.05rem;transition:transform .12s;line-height:1;flex-shrink:0;}
 .sym:hover{transform:scale(1.28);}
-.sym-edit-input{
-  width:2.2rem;background:rgba(255,255,255,.05);border:1px solid var(--border-soft);
-  border-radius:.35rem;color:var(--text);font-size:.9rem;text-align:center;
-  padding:.1rem;outline:none;flex-shrink:0;
+.sym-controls{display:flex;flex-wrap:wrap;align-items:center;gap:.35rem;margin-top:.2rem;}
+.sym-picker-select{
+  background:rgba(255,255,255,.05);border:1px solid var(--border-soft);
+  border-radius:.35rem;color:var(--text);font-size:.8rem;
+  padding:.1rem .3rem;outline:none;flex-shrink:0;cursor:pointer;
 }
-.sym-edit-input:focus{border-color:rgba(168,85,247,.4);}
+.sym-picker-select:focus{border-color:rgba(168,85,247,.4);}
+.sym-color-input{
+  width:2rem;height:1.5rem;border:1px solid var(--border-soft);border-radius:.35rem;
+  background:transparent;cursor:pointer;padding:0;outline:none;flex-shrink:0;
+}
 .sym-max-input{
   width:2.8rem;background:rgba(255,255,255,.05);border:1px solid var(--border-soft);
   border-radius:.35rem;color:var(--text);font-size:.78rem;text-align:center;
   padding:.1rem .2rem;outline:none;flex-shrink:0;
 }
 .sym-max-input:focus{border-color:rgba(168,85,247,.4);}
+.sym-row-outer{display:flex;flex-direction:column;gap:.15rem;flex:1;min-width:0;}
+.row-wrap.symbol-row{align-items:flex-start;}
 
 /* ===== RESPONSIVE ===== */
 @media(max-width:900px){
@@ -755,18 +763,33 @@ function renderInfoCard() {
       renderDots(dw, field, false)
       div.appendChild(dw)
     } else if (field.type === 'symbol') {
+      const outer = document.createElement('div'); outer.className = 'sym-row-outer'
       const sw = document.createElement('div'); sw.className = 'symbol-wrap'
       renderSymbols(sw, field)
-      // Szimbólum karakter szerkesztő
-      const symInp = document.createElement('input')
-      symInp.className = 'sym-edit-input'; symInp.value = field.symbol || '★'
-      symInp.title = 'Szimbólum'; symInp.maxLength = 2
-      symInp.oninput = e => { field.symbol = e.target.value || '★'; renderSymbols(sw, field) }
-      const maxInp = document.createElement('input')
-      maxInp.className = 'sym-max-input'; maxInp.type = 'number'
-      maxInp.value = field.max || 5; maxInp.min = 1; maxInp.max = 10; maxInp.title = 'Max'
-      maxInp.oninput = e => { field.max = parseInt(e.target.value)||5; renderSymbols(sw, field) }
-      div.append(sw, symInp, maxInp)
+      const ctrls = document.createElement('div'); ctrls.className = 'sym-controls'
+      // Picker
+      const picker = document.createElement('select'); picker.className = 'sym-picker-select'
+      picker.title = 'Szimbólum választó'
+      SYM_PAIRS.forEach(p => {
+        const o = document.createElement('option'); o.value = p.filled
+        o.textContent = p.filled + ' ' + p.label
+        if ((field.symbol||'★') === p.filled) o.selected = true
+        picker.appendChild(o)
+      })
+      picker.onchange = e => { field.symbol = e.target.value; renderSymbols(sw, field) }
+      // Szín
+      const colorInp = document.createElement('input'); colorInp.type = 'color'
+      colorInp.className = 'sym-color-input'; colorInp.title = 'Szín'
+      colorInp.value = field.color || '#d4af37'
+      colorInp.oninput = e => { field.color = e.target.value; renderSymbols(sw, field) }
+      // Max
+      const maxInp = document.createElement('input'); maxInp.className = 'sym-max-input'
+      maxInp.type = 'number'; maxInp.value = Math.min(field.max||5, 20)
+      maxInp.min = 1; maxInp.max = 20; maxInp.title = 'Maximum (max 20)'
+      maxInp.oninput = e => { field.max = Math.min(parseInt(e.target.value)||5, 20); renderSymbols(sw, field) }
+      ctrls.append(picker, colorInp, maxInp)
+      outer.append(sw, ctrls)
+      div.appendChild(outer)
     } else {
       const inp = document.createElement('input')
       inp.type = 'text'; inp.className = 'info-input'
@@ -808,7 +831,7 @@ function renderInfoCard() {
         label: t === 'select' ? 'Legördülő' : t === 'dot' ? 'Pont-sor' : t === 'symbol' ? 'Szimbólum' : t === 'number' ? 'Szám' : 'Szöveges',
         value: (t === 'dot' || t === 'symbol') ? 0 : '',
         ...(t === 'dot' || t === 'symbol' ? {max:5} : {}),
-        ...(t === 'symbol' ? {symbol:'★'} : {}),
+        ...(t === 'symbol' ? {symbol:'★', color:'#d4af37'} : {}),
         ...(t === 'select' ? {options:[]} : {}),
       }
       if (!sheetData.infoFields) sheetData.infoFields = JSON.parse(JSON.stringify(DEFAULT_INFO_FIELDS))
@@ -873,7 +896,7 @@ function renderBox(box, grid, sec) {
       b.onclick = () => {
         box.rows.push({id:uid(),type:t,label:t==='dot'?'Új képesség':t==='symbol'?'Szimbólum sor':t==='header'?'Fejléc':t==='select'?'Új legördülő':'',
           value:(t==='dot'||t==='header'||t==='symbol')?0:'',max:t==='header'?10:5,
-          ...(t==='symbol'?{symbol:'★'}:{})})
+          ...(t==='symbol'?{symbol:'★',color:'#d4af37'}:{})})
         renderAll()
       }
       picker.appendChild(b)
@@ -929,20 +952,36 @@ function buildRow(row, box) {
     const del=makeDelRowBtn(row,box)
     hw.append(hi, hdw, del); wrap.appendChild(hw)
   } else if (row.type==='symbol') {
-    wrap.className='row-wrap'
-    const li=makeRowLabelInput(row)
+    wrap.className='row-wrap symbol-row'
+    const li=makeRowLabelInput(row); li.style.flexShrink='0'
+    const outer=document.createElement('div'); outer.className='sym-row-outer'
     const sw=document.createElement('div'); sw.className='symbol-wrap'
     renderSymbols(sw, row)
-    // Szimbólum és max szerkesztő
-    const symInp=document.createElement('input')
-    symInp.className='sym-edit-input'; symInp.value=row.symbol||'★'
-    symInp.title='Szimbólum karakter'; symInp.maxLength=2
-    symInp.oninput=e=>{row.symbol=e.target.value||'★'; renderSymbols(sw,row)}
-    const maxInp=document.createElement('input')
-    maxInp.className='sym-max-input'; maxInp.type='number'
-    maxInp.value=row.max||5; maxInp.min=1; maxInp.max=10; maxInp.title='Maximum'
-    maxInp.oninput=e=>{row.max=parseInt(e.target.value)||5; renderSymbols(sw,row)}
-    wrap.append(li, sw, symInp, maxInp, makeDescEditBtn(row), makeDelRowBtn(row,box))
+    // Kontrollok: picker + szín + max
+    const ctrls=document.createElement('div'); ctrls.className='sym-controls'
+    // Szimbólum picker (legördülő)
+    const picker=document.createElement('select'); picker.className='sym-picker-select'
+    picker.title='Szimbólum választó'
+    SYM_PAIRS.forEach(p=>{
+      const o=document.createElement('option'); o.value=p.filled
+      o.textContent=p.filled+' '+p.label
+      if((row.symbol||'★')===p.filled) o.selected=true
+      picker.appendChild(o)
+    })
+    picker.onchange=e=>{row.symbol=e.target.value; renderSymbols(sw,row)}
+    // Szín
+    const colorInp=document.createElement('input'); colorInp.type='color'
+    colorInp.className='sym-color-input'; colorInp.title='Szín'
+    colorInp.value=row.color||'#d4af37'
+    colorInp.oninput=e=>{row.color=e.target.value; renderSymbols(sw,row)}
+    // Max
+    const maxInp=document.createElement('input'); maxInp.className='sym-max-input'
+    maxInp.type='number'; maxInp.value=Math.min(row.max||5,20)
+    maxInp.min=1; maxInp.max=20; maxInp.title='Maximum (max 20)'
+    maxInp.oninput=e=>{row.max=Math.min(parseInt(e.target.value)||5,20); renderSymbols(sw,row)}
+    ctrls.append(picker, colorInp, maxInp, makeDescEditBtn(row), makeDelRowBtn(row,box))
+    outer.append(sw, ctrls)
+    wrap.append(li, outer)
   }
   return wrap
 }
@@ -984,15 +1023,35 @@ function renderDots(container, row, isHeader) {
   }
 }
 
+const SYM_PAIRS = [
+  {filled:'★', empty:'☆', label:'Csillag'},
+  {filled:'♥', empty:'♡', label:'Szív'},
+  {filled:'♦', empty:'♢', label:'Rombusz'},
+  {filled:'♣', empty:'♧', label:'Lóhere'},
+  {filled:'●', empty:'○', label:'Kör'},
+  {filled:'■', empty:'□', label:'Négyzet'},
+  {filled:'▲', empty:'△', label:'Háromszög'},
+  {filled:'⬟', empty:'⬠', label:'Hatszög'},
+  {filled:'✦', empty:'✧', label:'Díszcsillag'},
+]
+const SYM_EMPTY_MAP = Object.fromEntries(SYM_PAIRS.map(p => [p.filled, p.empty]))
+
+function getEmptySym(sym) {
+  return SYM_EMPTY_MAP[sym] || sym
+}
+
 function renderSymbols(container, row) {
   container.innerHTML=''
-  const max=row.max||5
-  const sym=row.symbol||'★'
-  const empty='☆'
+  const max = Math.min(row.max||5, 20)
+  const sym = row.symbol||'★'
+  const empty = getEmptySym(sym)
+  const color = row.color || 'var(--gold)'
   for(let i=1;i<=max;i++) {
     const d=document.createElement('span'); d.className='sym'
-    d.innerText=i<=row.value?sym:empty
-    d.style.color=i<=row.value?'var(--gold)':'var(--muted)'
+    const filled = i<=row.value
+    d.innerText = filled ? sym : empty
+    d.style.color = color
+    d.style.opacity = filled ? '1' : '0.28'
     d.onclick=()=>{ row.value=(row.value===i)?i-1:i; renderSymbols(container,row) }
     container.appendChild(d)
   }
