@@ -347,13 +347,36 @@ const sb = supabase.createClient(
     .free-char .sheet-card::before{
       background:linear-gradient(135deg,rgba(74,222,128,.03) 0%,transparent 50%,rgba(74,222,128,.015) 100%);
     }
-    /* Vízjel szabad karakternél */
+    .free-char .sheet-card{border-color:rgba(74,222,128,.13);}
+    .free-char .section-title-input{color:#4ade80;text-shadow:0 0 15px rgba(74,222,128,.15);}
+    .free-char .section-title-input:focus{border-bottom-color:rgba(74,222,128,.4);}
+    .free-char .box-wrap:hover{border-color:rgba(74,222,128,.12);box-shadow:0 4px 20px rgba(0,0,0,.2);}
+    .free-char .dot:hover{color:#4ade80;}
+    .free-char .dot.filled{color:#4ade80;text-shadow:0 0 6px rgba(74,222,128,.5);}
+    .free-char .header-dot:hover,.free-char .header-dot.filled{color:#4ade80;text-shadow:0 0 10px rgba(74,222,128,.4);}
+    .free-char .row-label-input:focus{border-bottom-color:#4ade80;}
+    .free-char .row-text-input:focus{border-bottom-color:#4ade80;}
+    .free-char .row-textarea:focus{border-color:rgba(74,222,128,.3);}
+    .free-char .header-row-wrap{
+      background:linear-gradient(135deg,rgba(74,222,128,.04),transparent,rgba(74,222,128,.04));
+      border-top-color:rgba(74,222,128,.15);border-bottom-color:rgba(74,222,128,.15);
+    }
+    .free-char .header-row-input{color:#4ade80;}
+    .free-char .header-row-input:focus{border-bottom-color:rgba(74,222,128,.4);}
+    .free-char .add-row-btn:hover{border-color:#4ade80;color:#4ade80;background:rgba(74,222,128,.06);}
+    .free-char .add-box-placeholder:hover{border-color:#4ade80;color:#86efac;background:rgba(74,222,128,.03);}
+    .free-char #add-section-btn{border-color:rgba(74,222,128,.22);color:rgba(74,222,128,.55);}
+    .free-char #add-section-btn:hover{border-color:#4ade80;color:#4ade80;background:rgba(74,222,128,.06);}
+    .free-char .combo-input:focus{border-bottom-color:#4ade80;}
+    .free-char .box-title-input:focus{border-bottom-color:rgba(74,222,128,.3);color:#86efac;}
+    /* Vízjel szabad karakternél – kis felirat a cím alá */
     .free-char-watermark{
-      position:fixed;bottom:2rem;right:2rem;
-      font-size:4.5rem;opacity:.055;pointer-events:none;
-      color:#4ade80;font-family:'Cinzel',serif;
-      transform:rotate(-18deg);z-index:0;user-select:none;
-      letter-spacing:.15em;font-weight:700;
+      display:block;text-align:center;
+      font-family:'Cinzel',serif;font-size:.72rem;font-weight:600;
+      letter-spacing:.35em;text-transform:uppercase;
+      color:rgba(74,222,128,.45);
+      margin-top:-.15rem;margin-bottom:.2rem;
+      pointer-events:none;user-select:none;
     }
 
     /* ===== SABLON LOCK ===== */
@@ -824,9 +847,15 @@ function renderInfoFields() {
       const cache = window._fieldDescCache && window._fieldDescCache[field.id];
       const opts = (cache && cache.options.length > 0) ? cache.options : (field.options || []);
       opts.forEach(o => { const opt = document.createElement('option'); opt.value = o; dl.appendChild(opt); });
+      // Csak akkor adjuk hozzá a datalist-et ha van opció
+      if (opts.length > 0) {
+        inp.setAttribute('list', dlId);
+        wrap.append(inp, dl);
+      } else {
+        wrap.appendChild(inp);
+      }
       inp.oninput = e => { field.value = e.target.value; window.scheduleSave(); window.updateFieldDescIcon(field.id); };
       inp.onwheel = e => window.wheelCycleOption(e, field.id);
-      wrap.append(inp, dl);
       div.appendChild(wrap);
       // ⓘ icon
       const icon = makeFieldDescIcon(field.id, field.label);
@@ -1646,13 +1675,14 @@ renderAll();
       wrapper.classList.add('free-char')
       titleInp.readOnly = false
       titleInp.classList.remove('template-locked-title')
-      // Vízjel
+      // Vízjel a cím alá
       if (!document.getElementById('free-char-watermark')) {
         const wm = document.createElement('div')
         wm.id = 'free-char-watermark'
         wm.className = 'free-char-watermark'
-        wm.textContent = 'SZABAD'
-        document.body.appendChild(wm)
+        wm.textContent = '✦ szabad karakter ✦'
+        const vtitleWrap = document.querySelector('.vtitle-wrap')
+        if (vtitleWrap) vtitleWrap.appendChild(wm)
       }
     }
   }
