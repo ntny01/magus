@@ -329,6 +329,37 @@ const sb = supabase.createClient(
     }
     #add-section-btn:hover{border-color:var(--gold);color:var(--gold);background:rgba(212,175,55,.06);}
 
+    /* ===== SZABAD KARAKTER ZÖLD TÉMA ===== */
+    .free-char .vtitle-input{
+      color:#86efac;
+      text-shadow:0 0 40px rgba(74,222,128,.3),0 2px 6px rgba(0,0,0,.6);
+    }
+    .free-char .ornament{
+      background:linear-gradient(90deg,transparent 0%,rgba(74,222,128,.5) 20%,rgba(74,222,128,.5) 80%,transparent 100%);
+    }
+    .free-char .ornament-deco{color:rgba(74,222,128,.35);}
+    .free-char .info-card{
+      border-color:rgba(74,222,128,.18);
+      box-shadow:0 8px 40px rgba(0,0,0,.3),inset 0 1px 0 rgba(255,255,255,.025),0 0 0 1px rgba(74,222,128,.04);
+    }
+    .free-char .info-label{color:#4ade80;}
+    .free-char .info-input:focus,.free-char .combo-input:focus{border-bottom-color:#4ade80;}
+    .free-char .sheet-card::before{
+      background:linear-gradient(135deg,rgba(74,222,128,.03) 0%,transparent 50%,rgba(74,222,128,.015) 100%);
+    }
+    /* Vízjel szabad karakternél */
+    .free-char-watermark{
+      position:fixed;bottom:2rem;right:2rem;
+      font-size:4.5rem;opacity:.055;pointer-events:none;
+      color:#4ade80;font-family:'Cinzel',serif;
+      transform:rotate(-18deg);z-index:0;user-select:none;
+      letter-spacing:.15em;font-weight:700;
+    }
+
+    /* ===== SABLON LOCK ===== */
+    .template-locked-title{pointer-events:none!important;}
+    .template-locked-label{pointer-events:none!important;cursor:default!important;}
+
     /* ===== STATE CLASSES: LOCKED & PHOTO ===== */
     .sheet-locked .edit-only{display:none!important;}
     .sheet-locked .box-title-input,
@@ -337,6 +368,13 @@ const sb = supabase.createClient(
     .sheet-locked .header-row-input {
       pointer-events:none; border-bottom-color:transparent!important;
     }
+
+    /* ===== SZIMBÓLUM SOR ===== */
+    .symbol-wrap{display:flex;flex-wrap:wrap;gap:3px;user-select:none;flex-shrink:0;max-width:100%;}
+    .sym{cursor:pointer;font-size:1.05rem;transition:color .1s,transform .12s;line-height:1;flex-shrink:0;}
+    .sym:hover{transform:scale(1.28);}
+    .sym.filled{text-shadow:0 0 6px currentColor;}
+    .sheet-photo .sym,.sheet-locked .sym{pointer-events:none;}
 
     /* Kifejezetten FOTÓ MÓD (minden input mező rejtve/letiltva) */
     .sheet-photo .info-input,
@@ -805,6 +843,10 @@ function renderInfoFields() {
       const dw = document.createElement('div'); dw.className = 'dots-wrap';
       renderDots(dw, field, false);
       div.appendChild(dw);
+    } else if (field.type === 'symbol') {
+      const sw = document.createElement('div'); sw.className = 'symbol-wrap';
+      renderSymbols(sw, field);
+      div.appendChild(sw);
     } else {
       // text default
       const inp = document.createElement('input');
@@ -1023,6 +1065,15 @@ function buildRow(row, box) {
     const del = makeDelRowBtn(row,box);
     hw.append(hi, hdw, del);
     wrap.appendChild(hw);
+  } else if (row.type === 'symbol') {
+    wrap.className='row-wrap';
+    const li = makeRowLabelInput(row);
+    li.style.pointerEvents = 'none';
+    li.style.borderBottomColor = 'transparent';
+    const sw = document.createElement('div'); sw.className='symbol-wrap';
+    renderSymbols(sw, row);
+    const icon = makeFieldDescIcon(row.id, row.label);
+    wrap.append(li, sw, icon, makeDelRowBtn(row,box));
   }
   return wrap;
 }
@@ -1036,6 +1087,14 @@ function makeFieldDescIcon(fieldKey, fieldLabel) {
   icon.onclick = e => window.toggleDescPopover(e, fieldKey);
   icon.onmouseenter = () => window.showDescPopover(fieldKey);
   icon.onmouseleave = () => window.hideDescPopover(fieldKey);
+  // Görgetés az ⓘ ikonon átmegy a szülőre (combo-wrap → wheelCycleOption)
+  icon.onwheel = e => {
+    const parent = icon.closest('.info-field')
+    if (!parent) return
+    const inp = parent.querySelector('.combo-input')
+    if (inp && inp.onwheel) inp.onwheel(e)
+    else if (inp) { const ev = new WheelEvent('wheel', e); inp.dispatchEvent(ev); }
+  }
   // Késleltetett megjelenítés/elrejtés, amint betöltődik a leírás-cache
   setTimeout(() => window.updateFieldDescIcon(fieldKey), 0);
   return icon;
@@ -1053,6 +1112,25 @@ function makeDelRowBtn(row, box) {
   b.className='btn-del-row edit-only'; b.innerHTML='✕'; b.title='Sor törlése';
   b.onclick = () => { box.rows=box.rows.filter(r=>r.id!==row.id); renderAll(); };
   return b;
+}
+
+function renderSymbols(container, row) {
+  container.innerHTML = '';
+  const max = Math.min(row.max || 5, 20);
+  const SYM_EMPTY = {'★':'☆','♥':'♡','♦':'♢','♣':'♧','●':'○','■':'□','▲':'△','⬟':'⬠','✦':'✧'};
+  const sym = row.symbol || '★';
+  const empty = SYM_EMPTY[sym] || sym;
+  const color = row.color || 'var(--gold)';
+  for (let i = 1; i <= max; i++) {
+    const d = document.createElement('span'); d.className = 'sym';
+    const filled = i <= row.value;
+    d.innerText = filled ? sym : empty;
+    d.style.color = color;
+    d.style.opacity = filled ? '1' : '0.28';
+    if (filled) d.classList.add('filled');
+    d.onclick = () => { row.value = (row.value === i) ? i-1 : i; renderSymbols(container, row); window.scheduleSave(); };
+    container.appendChild(d);
+  }
 }
 
 function renderDots(container, row, isHeader) {
@@ -1293,6 +1371,7 @@ function resetSheet() {
   document.getElementById('vampireTitle').value='KARAKTER';
   setViewMode(1);
   renderAll();
+  applyCharTheme();
   window.scheduleSave()
 }
 
@@ -1434,12 +1513,20 @@ renderAll();
     if (data && data.data) {
       sheetData = data.data
       // Sablon betöltésekor ne írjuk felül az eredetit — új karakterként kezeljük
-      window._currentSheetId = isTemplate ? null : data.id
+      if (isTemplate) {
+        window._currentSheetId = null
+        // Jelöljük hogy melyik sablonból jött
+        sheetData.template_id = data.id
+        sheetData.template_name = data.name
+      } else {
+        window._currentSheetId = data.id
+      }
       // Migráció: régi info objektum → infoFields
       migrateInfoToFields()
       syncInfoFieldOptions()
       document.getElementById('vampireTitle').value = sheetData.vampireTitle || 'KARAKTER'
       renderAll()
+      applyCharTheme()
       window.showSaveIndicator()
     }
   }
@@ -1530,10 +1617,43 @@ renderAll();
       syncInfoFieldOptions()
       document.getElementById('vampireTitle').value = sheetData.vampireTitle || 'KARAKTER'
       renderAll()
+      applyCharTheme()
     } else {
       // Első betöltés: üres lap, de opciók szinkronizálása
       syncInfoFieldOptions()
       renderAll()
+      applyCharTheme()
+    }
+  }
+
+  // ─── TÉMA ALKALMAZÁS ───────────────────────────────────────────
+  function applyCharTheme() {
+    const isTemplateBased = !!sheetData.template_id
+    const wrapper = document.getElementById('sheet-wrapper')
+    const titleInp = document.getElementById('vampireTitle')
+
+    if (isTemplateBased) {
+      // Sablon alapú: arany/standard téma, cím nem szerkeszthető
+      wrapper.classList.remove('free-char')
+      titleInp.readOnly = true
+      titleInp.classList.add('template-locked-title')
+      // Vízjel eltávolítása ha volt
+      const wm = document.getElementById('free-char-watermark')
+      if (wm) wm.remove()
+      // Info label-ek: nem szerkeszthetők (span-ok, nem inputok – már lock)
+    } else {
+      // Szabad karakter: zöld téma + vízjel
+      wrapper.classList.add('free-char')
+      titleInp.readOnly = false
+      titleInp.classList.remove('template-locked-title')
+      // Vízjel
+      if (!document.getElementById('free-char-watermark')) {
+        const wm = document.createElement('div')
+        wm.id = 'free-char-watermark'
+        wm.className = 'free-char-watermark'
+        wm.textContent = 'SZABAD'
+        document.body.appendChild(wm)
+      }
     }
   }
 
