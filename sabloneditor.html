@@ -414,6 +414,67 @@ header{
 }
 .opt-del-btn:hover{color:var(--red);background:rgba(239,68,68,.08);}
 
+/* ===== INFO CARD SZERKESZTŐ ===== */
+.info-card-header{
+  display:flex;align-items:center;justify-content:space-between;
+  margin-bottom:.75rem;
+}
+.info-card-title{
+  font-family:'Cinzel',serif;font-size:.72rem;letter-spacing:.1em;
+  color:var(--muted);text-transform:uppercase;
+}
+.info-field-edit{
+  position:relative;
+  display:flex;align-items:baseline;gap:.3rem;
+  padding:.15rem .2rem;border-radius:.4rem;
+  transition:background .15s;
+}
+.info-field-edit:hover{background:rgba(168,85,247,.05);}
+.info-field-label-input{
+  font-size:.72rem;font-weight:600;color:var(--muted);letter-spacing:.05em;
+  text-transform:uppercase;white-space:nowrap;
+  background:transparent;border:none;outline:none;
+  border-bottom:1px dashed rgba(168,85,247,.2);
+  width:90px;flex-shrink:0;
+  transition:border-color .15s;
+}
+.info-field-label-input:focus{border-bottom-color:rgba(168,85,247,.5);}
+.info-del-btn{
+  background:none;border:none;color:rgba(239,68,68,.3);font-size:.7rem;
+  cursor:pointer;padding:.1rem .25rem;border-radius:.25rem;
+  transition:all .15s;flex-shrink:0;opacity:0;
+}
+.info-field-edit:hover .info-del-btn{opacity:1;}
+.info-del-btn:hover{color:var(--red);background:rgba(239,68,68,.08);}
+
+.info-add-picker{
+  display:flex;flex-wrap:wrap;gap:.3rem;margin-top:.6rem;padding-top:.6rem;
+  border-top:1px dashed rgba(168,85,247,.12);
+}
+.info-add-btn{
+  background:rgba(255,255,255,.03);border:1px dashed rgba(168,85,247,.2);
+  color:rgba(168,85,247,.5);font-size:.7rem;padding:.2rem .5rem;
+  border-radius:.4rem;cursor:pointer;transition:all .15s;
+}
+.info-add-btn:hover{border-color:rgba(168,85,247,.4);color:var(--purple);background:rgba(168,85,247,.06);}
+
+/* ===== SZIMBÓLUM SOR ===== */
+.symbol-wrap{display:flex;gap:3px;user-select:none;flex-shrink:0;}
+.sym{cursor:pointer;font-size:1.05rem;transition:transform .12s;line-height:1;}
+.sym:hover{transform:scale(1.28);}
+.sym-edit-input{
+  width:2.2rem;background:rgba(255,255,255,.05);border:1px solid var(--border-soft);
+  border-radius:.35rem;color:var(--text);font-size:.9rem;text-align:center;
+  padding:.1rem;outline:none;flex-shrink:0;
+}
+.sym-edit-input:focus{border-color:rgba(168,85,247,.4);}
+.sym-max-input{
+  width:2.8rem;background:rgba(255,255,255,.05);border:1px solid var(--border-soft);
+  border-radius:.35rem;color:var(--text);font-size:.78rem;text-align:center;
+  padding:.1rem .2rem;outline:none;flex-shrink:0;
+}
+.sym-max-input:focus{border-color:rgba(168,85,247,.4);}
+
 /* ===== RESPONSIVE ===== */
 @media(max-width:900px){
   .workspace{grid-template-columns:1fr;grid-template-rows:auto 1fr;}
@@ -650,21 +711,34 @@ function renderAll() {
 function renderInfoCard() {
   const card = document.getElementById('info-card-container')
   if (!card) return
+  card.innerHTML = ''
+
+  // Fejléc + + gomb
+  const hdr = document.createElement('div'); hdr.className = 'info-card-header'
+  const title = document.createElement('span'); title.className = 'info-card-title'; title.textContent = 'Alap adatok'
+  hdr.appendChild(title)
+  card.appendChild(hdr)
+
   const grid = document.createElement('div'); grid.className = 'info-grid'
   const fields = sheetData.infoFields || DEFAULT_INFO_FIELDS
-  fields.forEach(field => {
-    const div = document.createElement('div'); div.className = 'info-field'
-    const label = document.createElement('span'); label.className = 'info-label'
-    label.textContent = field.label + ':'
-    div.appendChild(label)
 
+  fields.forEach(field => {
+    const div = document.createElement('div'); div.className = 'info-field-edit'
+
+    // Label szerkeszthető input
+    const labelInp = document.createElement('input')
+    labelInp.type = 'text'; labelInp.className = 'info-field-label-input'
+    labelInp.value = field.label; labelInp.title = 'Label átnevezése'
+    labelInp.oninput = e => { field.label = e.target.value }
+    div.appendChild(labelInp)
+
+    // Érték mező típus szerint
     if (field.type === 'select') {
       const inp = document.createElement('input')
       inp.type = 'text'; inp.className = 'info-input'
       inp.value = field.value || ''; inp.placeholder = '...'
       inp.oninput = e => { field.value = e.target.value }
       div.appendChild(inp)
-      // ⚙️ opció szerkesztő gomb
       const btn = document.createElement('button')
       btn.className = 'opt-edit-btn' + (_fieldKeysWithData.has(field.id) ? ' has-data' : '')
       btn.innerHTML = '⚙️'; btn.title = 'Opciók és leírások szerkesztése'
@@ -676,6 +750,23 @@ function renderInfoCard() {
       inp.value = field.value || ''; inp.placeholder = '0'
       inp.oninput = e => { field.value = e.target.value }
       div.appendChild(inp)
+    } else if (field.type === 'dot') {
+      const dw = document.createElement('div'); dw.className = 'dots-wrap'
+      renderDots(dw, field, false)
+      div.appendChild(dw)
+    } else if (field.type === 'symbol') {
+      const sw = document.createElement('div'); sw.className = 'symbol-wrap'
+      renderSymbols(sw, field)
+      // Szimbólum karakter szerkesztő
+      const symInp = document.createElement('input')
+      symInp.className = 'sym-edit-input'; symInp.value = field.symbol || '★'
+      symInp.title = 'Szimbólum'; symInp.maxLength = 2
+      symInp.oninput = e => { field.symbol = e.target.value || '★'; renderSymbols(sw, field) }
+      const maxInp = document.createElement('input')
+      maxInp.className = 'sym-max-input'; maxInp.type = 'number'
+      maxInp.value = field.max || 5; maxInp.min = 1; maxInp.max = 10; maxInp.title = 'Max'
+      maxInp.oninput = e => { field.max = parseInt(e.target.value)||5; renderSymbols(sw, field) }
+      div.append(sw, symInp, maxInp)
     } else {
       const inp = document.createElement('input')
       inp.type = 'text'; inp.className = 'info-input'
@@ -683,10 +774,50 @@ function renderInfoCard() {
       inp.oninput = e => { field.value = e.target.value }
       div.appendChild(inp)
     }
+
+    // Törlés gomb
+    const del = document.createElement('button'); del.className = 'info-del-btn'; del.innerHTML = '✕'
+    del.title = 'Mező törlése'
+    del.onclick = () => {
+      if (confirm(`"${field.label}" mező törlése?`)) {
+        sheetData.infoFields = sheetData.infoFields.filter(f => f.id !== field.id)
+        renderInfoCard()
+      }
+    }
+    div.appendChild(del)
     grid.appendChild(div)
   })
-  card.innerHTML = ''
+
   card.appendChild(grid)
+
+  // Mező hozzáadó picker
+  const picker = document.createElement('div'); picker.className = 'info-add-picker'
+  const addTypes = [
+    {t:'text',    l:'+ Szöveges'},
+    {t:'number',  l:'+ Szám'},
+    {t:'select',  l:'+ Legördülő'},
+    {t:'dot',     l:'+ Pont-sor'},
+    {t:'symbol',  l:'+ Szimbólum'},
+  ]
+  addTypes.forEach(({t, l}) => {
+    const b = document.createElement('button'); b.className = 'info-add-btn'; b.textContent = l
+    b.onclick = () => {
+      const newField = {
+        id: 'inf_' + uid(),
+        type: t,
+        label: t === 'select' ? 'Legördülő' : t === 'dot' ? 'Pont-sor' : t === 'symbol' ? 'Szimbólum' : t === 'number' ? 'Szám' : 'Szöveges',
+        value: (t === 'dot' || t === 'symbol') ? 0 : '',
+        ...(t === 'dot' || t === 'symbol' ? {max:5} : {}),
+        ...(t === 'symbol' ? {symbol:'★'} : {}),
+        ...(t === 'select' ? {options:[]} : {}),
+      }
+      if (!sheetData.infoFields) sheetData.infoFields = JSON.parse(JSON.stringify(DEFAULT_INFO_FIELDS))
+      sheetData.infoFields.push(newField)
+      renderInfoCard()
+    }
+    picker.appendChild(b)
+  })
+  card.appendChild(picker)
 }
 
 function renderSection(sec, cont) {
@@ -736,12 +867,13 @@ function renderBox(box, grid, sec) {
   box.rows.forEach(row => div.appendChild(buildRow(row, box)))
   const addArea = document.createElement('div'); addArea.className='add-row-area'
   const picker = document.createElement('div'); picker.className='add-row-picker';
-  [{t:'dot',l:'● Pont-sor'},{t:'text',l:'_ Szöveges'},{t:'select',l:'▾ Legördülő'},{t:'textarea',l:'≡ Szövegmező'},{t:'header',l:'◉ Fejléc'}]
+  [{t:'dot',l:'● Pont-sor'},{t:'symbol',l:'★ Szimbólum'},{t:'text',l:'_ Szöveges'},{t:'select',l:'▾ Legördülő'},{t:'textarea',l:'≡ Szövegmező'},{t:'header',l:'◉ Fejléc'}]
     .forEach(({t,l}) => {
       const b = document.createElement('button'); b.className='add-row-btn'; b.innerText=l
       b.onclick = () => {
-        box.rows.push({id:uid(),type:t,label:t==='dot'?'Új képesség':t==='header'?'Fejléc':t==='select'?'Új legördülő':'',
-          value:(t==='dot'||t==='header')?0:'',max:t==='header'?10:5})
+        box.rows.push({id:uid(),type:t,label:t==='dot'?'Új képesség':t==='symbol'?'Szimbólum sor':t==='header'?'Fejléc':t==='select'?'Új legördülő':'',
+          value:(t==='dot'||t==='header'||t==='symbol')?0:'',max:t==='header'?10:5,
+          ...(t==='symbol'?{symbol:'★'}:{})})
         renderAll()
       }
       picker.appendChild(b)
@@ -796,6 +928,21 @@ function buildRow(row, box) {
     renderDots(hdw, row, true)
     const del=makeDelRowBtn(row,box)
     hw.append(hi, hdw, del); wrap.appendChild(hw)
+  } else if (row.type==='symbol') {
+    wrap.className='row-wrap'
+    const li=makeRowLabelInput(row)
+    const sw=document.createElement('div'); sw.className='symbol-wrap'
+    renderSymbols(sw, row)
+    // Szimbólum és max szerkesztő
+    const symInp=document.createElement('input')
+    symInp.className='sym-edit-input'; symInp.value=row.symbol||'★'
+    symInp.title='Szimbólum karakter'; symInp.maxLength=2
+    symInp.oninput=e=>{row.symbol=e.target.value||'★'; renderSymbols(sw,row)}
+    const maxInp=document.createElement('input')
+    maxInp.className='sym-max-input'; maxInp.type='number'
+    maxInp.value=row.max||5; maxInp.min=1; maxInp.max=10; maxInp.title='Maximum'
+    maxInp.oninput=e=>{row.max=parseInt(e.target.value)||5; renderSymbols(sw,row)}
+    wrap.append(li, sw, symInp, maxInp, makeDescEditBtn(row), makeDelRowBtn(row,box))
   }
   return wrap
 }
@@ -833,6 +980,20 @@ function renderDots(container, row, isHeader) {
     d.className=cls+(i<=row.value?' filled':'')
     d.innerText=i<=row.value?'●':'○'
     d.onclick=()=>{ row.value=(row.value===i)?i-1:i; renderDots(container,row,isHeader) }
+    container.appendChild(d)
+  }
+}
+
+function renderSymbols(container, row) {
+  container.innerHTML=''
+  const max=row.max||5
+  const sym=row.symbol||'★'
+  const empty='☆'
+  for(let i=1;i<=max;i++) {
+    const d=document.createElement('span'); d.className='sym'
+    d.innerText=i<=row.value?sym:empty
+    d.style.color=i<=row.value?'var(--gold)':'var(--muted)'
+    d.onclick=()=>{ row.value=(row.value===i)?i-1:i; renderSymbols(container,row) }
     container.appendChild(d)
   }
 }
@@ -1058,6 +1219,8 @@ function closeOptionEditor() {
 }
 
 function findRowById(rowId) {
+  const infoField = (sheetData.infoFields || []).find(f => f.id === rowId)
+  if (infoField) return infoField
   for (const sec of sheetData.sections) {
     for (const box of sec.boxes) {
       const row = box.rows.find(r => r.id === rowId)
