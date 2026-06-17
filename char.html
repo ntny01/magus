@@ -1447,34 +1447,50 @@ function exportTemplate() {
   const tmpl = JSON.parse(JSON.stringify(sheetData));
   tmpl._type = 'magus_char_template';
   tmpl.vampireTitle = 'KARAKTER';
-  tmpl.info = {name:'',faj:'',kaszt:'',isten:'',kronika:'',xp:''};
   tmpl.viewMode = 0;
+  delete tmpl.template_id;
+  delete tmpl.template_name;
+  // infoFields értékeinek nullázása
+  if (tmpl.infoFields) {
+    tmpl.infoFields.forEach(f => {
+      f.value = (f.type==='dot'||f.type==='header'||f.type==='symbol') ? 0 : '';
+    });
+  }
+  // Szekció értékek nullázása
   tmpl.sections.forEach(sec =>
     sec.boxes.forEach(box =>
       box.rows.forEach(row => {
-        row.value = (row.type==='dot'||row.type==='header') ? 0 : '';
+        row.value = (row.type==='dot'||row.type==='header'||row.type==='symbol') ? 0 : '';
       })
     )
   );
-  dlJson(tmpl,'karakter_sablon.json');
+  dlJson(tmpl, 'karakter_sablon.json');
   document.getElementById('exportMenu').classList.remove('open');
 }
 
 function exportCard() {
   const card = {
-    _type:'magus_character_card', _version:2,
-    name:getInfoVal('name'), faj:getInfoVal('faj'),
-    kaszt:getInfoVal('kaszt'), isten:getInfoVal('isten'),
-    kronika:getInfoVal('kronika'), xp:getInfoVal('xp'),
-    title:sheetData.vampireTitle, stats:[]
+    _type: 'magus_character_card', _version: 3,
+    name: getInfoVal('name'), faj: getInfoVal('faj'),
+    kaszt: getInfoVal('kaszt'), isten: getInfoVal('isten'),
+    kronika: getInfoVal('kronika'), xp: getInfoVal('xp'),
+    title: sheetData.vampireTitle,
+    template_id: sheetData.template_id || null,
+    template_name: sheetData.template_name || null,
+    infoFields: (sheetData.infoFields || []).map(f => ({
+      id:f.id, label:f.label, type:f.type, value:f.value,
+      max:f.max, symbol:f.symbol, color:f.color
+    })),
+    stats: []
   };
   sheetData.sections.forEach(sec =>
     sec.boxes.forEach(box =>
       box.rows.forEach(row => {
-        if(isRowHasValue(row)) card.stats.push({
-          section:sec.title, box:box.title,
-          type:row.type, label:row.label,
-          value:row.value, max:row.max||5
+        if (isRowHasValue(row)) card.stats.push({
+          section: sec.title, box: box.title,
+          type: row.type, label: row.label,
+          value: row.value, max: row.max||5,
+          ...(row.type==='symbol' ? {symbol:row.symbol, color:row.color} : {})
         });
       })
     )
@@ -1485,7 +1501,7 @@ function exportCard() {
 }
 
 function importData(e) {
-  const file = e.target.files[0]; if(!file) return;
+  const file = e.target.files[0]; if (!file) return;
   const reader = new FileReader();
   reader.onload = evt => {
     try {
@@ -1494,23 +1510,37 @@ function importData(e) {
         alert('Ez egy karakter kártya fájl – közvetlenül nem tölthető be a karakterlapra.');
         return;
       }
+      const isTemplateFile = data._type === 'magus_char_template';
       sheetData = data;
-      // Biztosítjuk, hogy az új viewMode működjön a régi isLocked fájlokkal is
-      sheetData.viewMode = 0; 
-      
-      document.getElementById('vampireTitle').value = data.vampireTitle||'KARAKTER';
-      const infoKeys = ['name','faj','kaszt','isten','kronika','xp'];
-      infoKeys.forEach(k => {
-        const el=document.getElementById('info_'+k);
-        if(el) el.value = (data.info||{})[k]||'';
-      });
-      
-      setViewMode(1); // Visszaállítjuk szerkeszthetőre betöltéskor
-      window.scheduleSave()
-      alert(data._type==='magus_char_template' ? 'Sablon betöltve!' : 'Karakter betöltve!');
-    } catch(err) { alert('Hiba: '+err.message); }
+      sheetData.viewMode = 1;
+      // Sablon fájl importnál: template_id törlése (szabad karakterként kezeljük)
+      // Teljes karakter importnál: template_id megmarad (sablon alapú marad ha volt)
+      if (isTemplateFile) {
+        delete sheetData.template_id;
+        delete sheetData.template_name;
+        sheetData.vampireTitle = 'KARAKTER';
+        // infoFields értékeinek nullázása
+        if (sheetData.infoFields) {
+          sheetData.infoFields.forEach(f => {
+            f.value = (f.type==='dot'||f.type==='header'||f.type==='symbol') ? 0 : '';
+          });
+        }
+      }
+      window._currentSheetId = null; // import = mindig új karakter (mentésig)
+      migrateInfoToFields();
+      syncInfoFieldOptions();
+      document.getElementById('vampireTitle').value = sheetData.vampireTitle || 'KARAKTER';
+      document.body.classList.remove('sheet-locked', 'sheet-photo');
+      document.body.classList.add('sheet-locked');
+      const btn = document.getElementById('viewBtn');
+      if (btn) { btn.innerHTML = '🔒 Lezárva (Szerkesztés)'; btn.style.cssText='border-color:rgba(239,68,68,.4)!important;color:#f87171!important;'; }
+      renderAll();
+      applyCharTheme();
+      window.scheduleSave();
+      alert(isTemplateFile ? 'Sablon betöltve – szabad karakterként szerkesztheted!' : (sheetData.template_id ? 'Sablon alapú karakter betöltve!' : 'Szabad karakter betöltve!'));
+    } catch(err) { alert('Hiba: ' + err.message); }
   };
-  reader.readAsText(file); e.target.value='';
+  reader.readAsText(file); e.target.value = '';
 }
 
 /* ==============================
