@@ -598,15 +598,15 @@ const sb = supabase.createClient(
         <div class="money-container">
             <div class="money-box">
                 <div class="money-box-title">Saját zseb</div>
-                <div class="money-row"><span class="money-label m-a">Arany:</span><input type="number" class="money-input" id="char-m-gold" value="0" onchange="syncMoneyData()"></div>
-                <div class="money-row"><span class="money-label m-e">Ezüst:</span><input type="number" class="money-input" id="char-m-silver" value="0" onchange="syncMoneyData()"></div>
-                <div class="money-row"><span class="money-label m-p">Réz:</span><input type="number" class="money-input" id="char-m-copper" value="0" onchange="syncMoneyData()"></div>
+                <div class="money-row"><span class="money-label m-a">Arany:</span><input type="number" class="money-input" id="char-m-gold" value="0" oninput="syncMoneyData();scheduleSave();"></div>
+                <div class="money-row"><span class="money-label m-e">Ezüst:</span><input type="number" class="money-input" id="char-m-silver" value="0" oninput="syncMoneyData();scheduleSave();"></div>
+                <div class="money-row"><span class="money-label m-p">Réz:</span><input type="number" class="money-input" id="char-m-copper" value="0" oninput="syncMoneyData();scheduleSave();"></div>
             </div>
             <div class="money-box">
                 <div class="money-box-title">Karakter Bankja</div>
-                <div class="money-row"><span class="money-label m-a">Arany:</span><input type="number" class="money-input" id="bank-m-gold" value="0" onchange="syncMoneyData()"></div>
-                <div class="money-row"><span class="money-label m-e">Ezüst:</span><input type="number" class="money-input" id="bank-m-silver" value="0" onchange="syncMoneyData()"></div>
-                <div class="money-row"><span class="money-label m-p">Réz:</span><input type="number" class="money-input" id="bank-m-copper" value="0" onchange="syncMoneyData()"></div>
+                <div class="money-row"><span class="money-label m-a">Arany:</span><input type="number" class="money-input" id="bank-m-gold" value="0" oninput="syncMoneyData();scheduleSave();"></div>
+                <div class="money-row"><span class="money-label m-e">Ezüst:</span><input type="number" class="money-input" id="bank-m-silver" value="0" oninput="syncMoneyData();scheduleSave();"></div>
+                <div class="money-row"><span class="money-label m-p">Réz:</span><input type="number" class="money-input" id="bank-m-copper" value="0" oninput="syncMoneyData();scheduleSave();"></div>
             </div>
         </div>
 
@@ -955,7 +955,7 @@ const sb = supabase.createClient(
                 appState.charData.power = newVal;
                 document.getElementById('char-power-val').innerText = appState.charData.power;
             }
-            scheduleSave();
+        } else if (target === 'hench') {
             let hench = appState.henchmen.find(h => h.id === henchId);
             if (!hench) return;
             if (stat === 'hp') {
@@ -963,12 +963,21 @@ const sb = supabase.createClient(
                 document.getElementById(`hench-hp-val-${henchId}`).innerText = hench.hp;
             } else if (stat === 'maxHp') {
                 hench.maxHp = Math.max(0, hench.maxHp + amount);
+                // Ha a jelenlegi HP nagyobb mint az új max, csökkentjük
+                if (hench.hp > hench.maxHp) {
+                    hench.hp = hench.maxHp;
+                    document.getElementById(`hench-hp-val-${henchId}`).innerText = hench.hp;
+                }
                 document.getElementById(`hench-hp-max-display-${henchId}`).innerText = `Max: ${hench.maxHp}`;
             } else if (stat === 'sfe') {
                 hench.sfe = Math.max(0, hench.sfe + amount);
                 document.getElementById(`hench-sfe-val-${henchId}`).innerText = hench.sfe;
             } else if (stat === 'maxPower') {
                 hench.maxPower = Math.max(0, hench.maxPower + amount);
+                if (hench.power > hench.maxPower && hench.powerType === 'kegypont') {
+                    hench.power = hench.maxPower;
+                    document.getElementById(`hench-power-val-${henchId}`).innerText = hench.power;
+                }
                 document.getElementById(`hench-power-max-display-${henchId}`).innerText = hench.powerType === 'kegypont' ? `Max: ${hench.maxPower}` : "Max: ∞";
             } else if (stat === 'power') {
                 let newVal = hench.power + amount;
@@ -980,8 +989,8 @@ const sb = supabase.createClient(
                 hench.power = newVal;
                 document.getElementById(`hench-power-val-${henchId}`).innerText = hench.power;
             }
-            scheduleSave();
         }
+        scheduleSave();
     }
 
     function addWeaponField(target, henchId = null) {
@@ -1211,9 +1220,9 @@ const sb = supabase.createClient(
                 <div style="margin-top:12px; border-top:1px solid #3e3e4a; padding-top:8px;">
                     <div class="money-box-title">Csatlós Zsebe</div>
                     <div style="display:flex; gap:10px; flex-wrap:wrap;">
-                        <div class="money-row"><span class="money-label m-a">A:</span><input type="number" class="money-input" id="hench-m-gold-${h.id}" value="${h.money.gold}" onchange="syncMoneyData()"></div>
-                        <div class="money-row"><span class="money-label m-e">E:</span><input type="number" class="money-input" id="hench-m-silver-${h.id}" value="${h.money.silver}" onchange="syncMoneyData()"></div>
-                        <div class="money-row"><span class="money-label m-p">R:</span><input type="number" class="money-input" id="hench-m-copper-${h.id}" value="${h.money.copper}" onchange="syncMoneyData()"></div>
+                        <div class="money-row"><span class="money-label m-a">A:</span><input type="number" class="money-input" id="hench-m-gold-${h.id}" value="${h.money.gold}" oninput="syncMoneyData();scheduleSave();"></div>
+                        <div class="money-row"><span class="money-label m-e">E:</span><input type="number" class="money-input" id="hench-m-silver-${h.id}" value="${h.money.silver}" oninput="syncMoneyData();scheduleSave();"></div>
+                        <div class="money-row"><span class="money-label m-p">R:</span><input type="number" class="money-input" id="hench-m-copper-${h.id}" value="${h.money.copper}" oninput="syncMoneyData();scheduleSave();"></div>
                     </div>
                 </div>
             `;
@@ -1402,6 +1411,12 @@ const sb = supabase.createClient(
     document.getElementById('kkCharDD').style.display = 'none'
     if (!window._sb) return
 
+    // 0. Váltás előtt mentsük az aktuális állapotot
+    if (window._currentKKSheetId) {
+      syncMoneyData()
+      await window.saveToSupabase()
+    }
+
     // 1. Betöltjük a karakterlapot (kártya adatok)
     const { data: sheet } = await window._sb.from('character_sheets')
       .select('*').eq('id', sheetId).single()
@@ -1416,10 +1431,22 @@ const sb = supabase.createClient(
       if (session.char_data) appState.charData = session.char_data
       if (session.bank_money) appState.bankMoney = session.bank_money
       if (session.henchmen) appState.henchmen = session.henchmen
-      if (session.raw_card) appState.rawCharacterCard = session.raw_card
-      else if (sheet?.data) {
+      if (session.raw_card) {
+        appState.rawCharacterCard = session.raw_card
+        // charData frissítése a raw_card alapján (név, stb.)
+        loadRawCharacterCard(session.raw_card)
+        // Visszaállítjuk a mentett értékeket (loadRawCharacterCard felülírja)
+        if (session.char_data) appState.charData = session.char_data
+        if (session.bank_money) appState.bankMoney = session.bank_money
+        if (session.henchmen) appState.henchmen = session.henchmen
+      } else if (sheet?.data) {
         // Ha nincs raw_card a sessionben, generáljuk a sheet-ből
-        appState.rawCharacterCard = buildCardFromSheet(sheet.data)
+        const card = buildCardFromSheet(sheet.data)
+        appState.rawCharacterCard = card
+        loadRawCharacterCard(card)
+        if (session.char_data) appState.charData = session.char_data
+        if (session.bank_money) appState.bankMoney = session.bank_money
+        if (session.henchmen) appState.henchmen = session.henchmen
       }
     } else if (sheet?.data) {
       // Nincs session — friss betöltés a karakterlapból
