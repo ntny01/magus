@@ -621,6 +621,22 @@ const sb = supabase.createClient(
       }
     }
 
+    /* ===== PUBLIKÁLÁS GOMB ===== */
+    .btn-publish{
+      background:rgba(168,85,247,.08)!important;
+      border-color:rgba(168,85,247,.35)!important;
+      color:#c084fc!important;transition:all .2s!important;
+    }
+    .btn-publish:hover{background:rgba(168,85,247,.15)!important;border-color:#a855f7!important;}
+    .btn-publish.published{
+      background:rgba(168,85,247,.18)!important;
+      border-color:#a855f7!important;color:#e9d5ff!important;
+    }
+    .publish-badge{
+      font-size:.62rem;background:rgba(168,85,247,.2);border:1px solid rgba(168,85,247,.3);
+      color:#c084fc;padding:.05rem .3rem;border-radius:.25rem;margin-left:.3rem;vertical-align:middle;
+    }
+
     /* ===== RESPONSIVE ===== */
 @media (max-width:767px){
   .sheet-outer{padding:1rem .75rem 5rem;gap:1rem;}
@@ -698,6 +714,9 @@ const sb = supabase.createClient(
         <div class="export-item" onclick="exportCard()">🃏 Karakter kártya (KM)</div>
       </div>
     </div>
+
+    <!-- Publikálás -->
+    <button class="btn btn-publish" id="publishBtn" onclick="togglePublish()">📢 Publikálás</button>
 
     <!-- Import / Nyomtatás / Kép -->
     <button class="btn" onclick="document.getElementById('importFile').click()">📂 Import</button>
@@ -1718,11 +1737,71 @@ renderAll();
     else console.error('Mentési hiba:', error)
   }
 
+  // ─── PUBLIKÁLÁS ─────────────────────────────────────────────────
+  window._currentPublished = false
+
+  function updatePublishBtn() {
+    const btn = document.getElementById('publishBtn')
+    if (!btn) return
+    if (!window._currentSheetId) {
+      btn.textContent = '📢 Publikálás'
+      btn.classList.remove('published')
+      btn.title = 'Először mentsd el a karaktert!'
+      return
+    }
+    if (window._currentPublished) {
+      btn.textContent = '🔕 Publikálva (visszavon)'
+      btn.classList.add('published')
+      btn.title = 'Kattints a publikálás visszavonásához'
+    } else {
+      btn.textContent = '📢 Publikálás'
+      btn.classList.remove('published')
+      btn.title = 'Publikáld a karaktert a KM Pultba'
+    }
+  }
+
+  window.togglePublish = async function() {
+    if (!window._currentSheetId) {
+      alert('Először mentsd el a karaktert!')
+      return
+    }
+    if (!window._sb || !window._userProfile) return
+    const { data: { user } } = await window._sb.auth.getUser()
+    if (!user) return
+
+    const newPublished = !window._currentPublished
+
+    if (newPublished) {
+      // Először az összes többi karaktert unpublish-oljuk
+      await window._sb.from('character_sheets')
+        .update({ published: false })
+        .eq('user_id', user.id)
+        .neq('id', window._currentSheetId)
+    }
+
+    // Majd a jelenlegi karaktert publish/unpublish
+    const { error } = await window._sb.from('character_sheets')
+      .update({ published: newPublished })
+      .eq('id', window._currentSheetId)
+      .eq('user_id', user.id)
+
+    if (!error) {
+      window._currentPublished = newPublished
+      updatePublishBtn()
+      await window.loadCharList()
+      window.showSaveIndicator()
+    } else {
+      console.error('Publikálási hiba:', error)
+    }
+  }
+
   // ─── ÚJ KARAKTER ────────────────────────────────────────────────
   window.newChar = function() {
     closeAllDD()
     if (!confirm('Új karaktert kezdesz? A jelenlegi mentetlen változtatások elvesznek.')) return
     window._currentSheetId = null
+    window._currentPublished = false
+    updatePublishBtn()
     resetSheet()
   }
 
@@ -1780,6 +1859,7 @@ renderAll();
       migrateInfoToFields()
       syncInfoFieldOptions()
       sheetData.viewMode = 1
+      window._currentPublished = !!data.published
       document.getElementById('vampireTitle').value = sheetData.vampireTitle || 'KARAKTER'
       // viewMode alkalmazása manuálisan (nem toggleViewMode, hogy ne hívjon felesleges renderAll-t)
       document.body.classList.remove('sheet-locked', 'sheet-photo')
@@ -1788,6 +1868,7 @@ renderAll();
       if (btn) { btn.innerHTML = '🔒 Lezárva (Szerkesztés)'; btn.style.cssText='border-color:rgba(239,68,68,.4)!important;color:#f87171!important;'; }
       renderAll()
       applyCharTheme()
+      updatePublishBtn()
     } else {
       console.error('Karakter adat nem található:', id)
     }
@@ -1811,7 +1892,7 @@ renderAll();
     const { data: { user } } = await window._sb.auth.getUser()
     if (!user) return
     const { data } = await window._sb.from('character_sheets')
-      .select('id, name, faj, kaszt, updated_at, data')
+      .select('id, name, faj, kaszt, updated_at, data, published')
       .eq('user_id', user.id)
       .eq('is_template', false)
       .order('updated_at', { ascending: false })
@@ -1826,9 +1907,10 @@ renderAll();
       const isActive = window._currentSheetId === c.id
       const activeBg = isActive ? (isFree ? 'background:rgba(74,222,128,.07);' : 'background:rgba(212,175,55,.07);') : ''
       const nameColor = isFree ? 'color:#4ade80;' : ''
+      const publishedBadge = c.published ? '<span class="publish-badge">📢 KM</span>' : ''
       return `<div class="dd-item" onclick="window.loadChar('${c.id}', false)" style="${activeBg}">
         <span style="flex:1;">
-          <span style="font-weight:600;${nameColor}">${c.name || 'Névtelen'}${isActive?' ✦':''}</span>
+          <span style="font-weight:600;${nameColor}">${c.name || 'Névtelen'}${isActive?' ✦':''}${publishedBadge}</span>
           ${c.faj||c.kaszt?`<span style="font-size:.72rem;color:var(--muted);display:block;">${[c.faj,c.kaszt].filter(Boolean).join(' · ')}</span>`:''}
         </span>
         <span class="dd-item-del" onclick="window.deleteChar('${c.id}', event)" title="Törlés">✕</span>
@@ -1888,6 +1970,7 @@ renderAll();
     if (data && data.data) {
       sheetData = data.data
       window._currentSheetId = data.id
+      window._currentPublished = !!data.published
       // Migráció: régi info objektum → infoFields tömb
       migrateInfoToFields()
       // infoFields opcióit frissítjük a field_descriptions cache-ből
@@ -1895,6 +1978,7 @@ renderAll();
       document.getElementById('vampireTitle').value = sheetData.vampireTitle || 'KARAKTER'
       renderAll()
       applyCharTheme()
+      updatePublishBtn()
     } else {
       // Első betöltés: üres lap, de opciók szinkronizálása
       syncInfoFieldOptions()

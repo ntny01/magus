@@ -1052,15 +1052,31 @@ const sb = supabase.createClient(
             e.target.value = '';
         }
 
-        function clearAllCards() {
+        async function clearAllCards() {
             if (!loadedCards.length) return;
-            if (confirm('Biztosan törölsz minden betöltött kártyát?')) {
+            if (confirm('Biztosan visszavonod az összes publikálást?')) {
+                // DB-ben minden sheetId-jű kártyát unpublish
+                if (window._sb) {
+                    const ids = loadedCards.filter(c => c._sheetId).map(c => c._sheetId)
+                    if (ids.length) {
+                        await window._sb.from('character_sheets')
+                            .update({ published: false })
+                            .in('id', ids)
+                    }
+                }
                 loadedCards = [];
                 renderCards();
             }
         }
 
-        function removeCard(idx) {
+        async function removeCard(idx) {
+            const card = loadedCards[idx]
+            // DB-ben is visszavonjuk a publikálást ha van sheetId
+            if (card && card._sheetId && window._sb) {
+                await window._sb.from('character_sheets')
+                    .update({ published: false })
+                    .eq('id', card._sheetId)
+            }
             loadedCards.splice(idx, 1);
             renderCards();
         }
@@ -1097,8 +1113,7 @@ const sb = supabase.createClient(
                         .select('*')
                         .eq('user_id', user.id)
                         .eq('is_template', false)
-                        .order('updated_at', { ascending: false })
-                        .limit(1)
+                        .eq('published', true)
                         .maybeSingle()
 
                     if (!sheet?.data) continue;
@@ -1114,8 +1129,8 @@ const sb = supabase.createClient(
                 }
 
                 renderCards();
-                if (loaded === 0) alert('Egyik játékosnak sincs mentett karaktere.');
-                else if (loaded < users.length) alert(`${loaded}/${users.length} karakter betöltve (${users.length - loaded} játékosnak nincs mentett karaktere).`);
+                if (loaded === 0) alert('Egyetlen játékos sem publikált karaktert.');
+                else if (loaded < users.length) alert(`${loaded}/${users.length} publikált karakter betöltve.`);
 
             } catch(err) {
                 alert('Hiba: ' + err.message);
