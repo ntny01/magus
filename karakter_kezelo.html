@@ -598,15 +598,15 @@ const sb = supabase.createClient(
         <div class="money-container">
             <div class="money-box">
                 <div class="money-box-title">Saját zseb</div>
-                <div class="money-row"><span class="money-label m-a">Arany:</span><input type="number" class="money-input" id="char-m-gold" value="0" onchange="syncMoneyData()"></div>
-                <div class="money-row"><span class="money-label m-e">Ezüst:</span><input type="number" class="money-input" id="char-m-silver" value="0" onchange="syncMoneyData()"></div>
-                <div class="money-row"><span class="money-label m-p">Réz:</span><input type="number" class="money-input" id="char-m-copper" value="0" onchange="syncMoneyData()"></div>
+                <div class="money-row"><span class="money-label m-a">Arany:</span><input type="number" class="money-input" id="char-m-gold" value="0" oninput="syncMoneyData();scheduleSave();"></div>
+                <div class="money-row"><span class="money-label m-e">Ezüst:</span><input type="number" class="money-input" id="char-m-silver" value="0" oninput="syncMoneyData();scheduleSave();"></div>
+                <div class="money-row"><span class="money-label m-p">Réz:</span><input type="number" class="money-input" id="char-m-copper" value="0" oninput="syncMoneyData();scheduleSave();"></div>
             </div>
             <div class="money-box">
                 <div class="money-box-title">Karakter Bankja</div>
-                <div class="money-row"><span class="money-label m-a">Arany:</span><input type="number" class="money-input" id="bank-m-gold" value="0" onchange="syncMoneyData()"></div>
-                <div class="money-row"><span class="money-label m-e">Ezüst:</span><input type="number" class="money-input" id="bank-m-silver" value="0" onchange="syncMoneyData()"></div>
-                <div class="money-row"><span class="money-label m-p">Réz:</span><input type="number" class="money-input" id="bank-m-copper" value="0" onchange="syncMoneyData()"></div>
+                <div class="money-row"><span class="money-label m-a">Arany:</span><input type="number" class="money-input" id="bank-m-gold" value="0" oninput="syncMoneyData();scheduleSave();"></div>
+                <div class="money-row"><span class="money-label m-e">Ezüst:</span><input type="number" class="money-input" id="bank-m-silver" value="0" oninput="syncMoneyData();scheduleSave();"></div>
+                <div class="money-row"><span class="money-label m-p">Réz:</span><input type="number" class="money-input" id="bank-m-copper" value="0" oninput="syncMoneyData();scheduleSave();"></div>
             </div>
         </div>
 
@@ -955,7 +955,7 @@ const sb = supabase.createClient(
                 appState.charData.power = newVal;
                 document.getElementById('char-power-val').innerText = appState.charData.power;
             }
-            scheduleSave();
+        } else if (target === 'hench') {
             let hench = appState.henchmen.find(h => h.id === henchId);
             if (!hench) return;
             if (stat === 'hp') {
@@ -980,8 +980,8 @@ const sb = supabase.createClient(
                 hench.power = newVal;
                 document.getElementById(`hench-power-val-${henchId}`).innerText = hench.power;
             }
-            scheduleSave();
         }
+        scheduleSave();
     }
 
     function addWeaponField(target, henchId = null) {
@@ -1211,9 +1211,9 @@ const sb = supabase.createClient(
                 <div style="margin-top:12px; border-top:1px solid #3e3e4a; padding-top:8px;">
                     <div class="money-box-title">Csatlós Zsebe</div>
                     <div style="display:flex; gap:10px; flex-wrap:wrap;">
-                        <div class="money-row"><span class="money-label m-a">A:</span><input type="number" class="money-input" id="hench-m-gold-${h.id}" value="${h.money.gold}" onchange="syncMoneyData()"></div>
-                        <div class="money-row"><span class="money-label m-e">E:</span><input type="number" class="money-input" id="hench-m-silver-${h.id}" value="${h.money.silver}" onchange="syncMoneyData()"></div>
-                        <div class="money-row"><span class="money-label m-p">R:</span><input type="number" class="money-input" id="hench-m-copper-${h.id}" value="${h.money.copper}" onchange="syncMoneyData()"></div>
+                        <div class="money-row"><span class="money-label m-a">A:</span><input type="number" class="money-input" id="hench-m-gold-${h.id}" value="${h.money.gold}" oninput="syncMoneyData();scheduleSave();"></div>
+                        <div class="money-row"><span class="money-label m-e">E:</span><input type="number" class="money-input" id="hench-m-silver-${h.id}" value="${h.money.silver}" oninput="syncMoneyData();scheduleSave();"></div>
+                        <div class="money-row"><span class="money-label m-p">R:</span><input type="number" class="money-input" id="hench-m-copper-${h.id}" value="${h.money.copper}" oninput="syncMoneyData();scheduleSave();"></div>
                     </div>
                 </div>
             `;
@@ -1401,6 +1401,12 @@ const sb = supabase.createClient(
   window.loadKKChar = async function(sheetId) {
     document.getElementById('kkCharDD').style.display = 'none'
     if (!window._sb) return
+
+    // 0. Váltás előtt mentsük az aktuális állapotot (pénz szinkron is)
+    if (window._currentKKSheetId) {
+      syncMoneyData()
+      await window.saveToSupabase()
+    }
 
     // 1. Betöltjük a karakterlapot (kártya adatok)
     const { data: sheet } = await window._sb.from('character_sheets')
