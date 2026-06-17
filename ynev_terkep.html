@@ -1401,6 +1401,18 @@ const topoGroup =
 const politicalGroup =
     L.layerGroup();
 
+const topo3715Group =
+    L.layerGroup();
+
+const political3715Group =
+    L.layerGroup();
+
+const topo3692Group =
+    L.layerGroup();
+
+const political3692Group =
+    L.layerGroup();
+
 /* =========================================================
    TILE BUILDER
 ========================================================= */
@@ -1472,15 +1484,36 @@ buildTiles(
     politicalGroup
 );
 
+buildTiles(
+    './terkep_kulon/output/3715_domborzati',
+    topo3715Group
+);
+
+buildTiles(
+    './terkep_kulon/output/3715_politikai',
+    political3715Group
+);
+
+buildTiles(
+    './terkep_kulon/output/3692_domborzati',
+    topo3692Group
+);
+
+buildTiles(
+    './terkep_kulon/output/3692_politikai',
+    political3692Group
+);
+
 topoGroup.addTo(map);
 
 L.control.layers({
 
-    "3724 Domborzati":
-        topoGroup,
-
-    "3724 Politikai":
-        politicalGroup,
+    "3724 Domborzati": topoGroup,
+    "3724 Politikai":  politicalGroup,
+    "3715 Domborzati": topo3715Group,
+    "3715 Politikai":  political3715Group,
+    "3692 Domborzati": topo3692Group,
+    "3692 Politikai":  political3692Group,
 
 }).addTo(map);
 
