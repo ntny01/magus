@@ -1082,7 +1082,6 @@ const sb = supabase.createClient(
                     .from('user_profiles')
                     .select('id, display_name, role')
                     .eq('status', 'active')
-                    .eq('role', 'player')
                     .order('display_name')
 
                 if (uErr || !users?.length) {
