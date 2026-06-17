@@ -2073,6 +2073,7 @@ document.querySelectorAll('.markerBtn')
 map.on('click', function(e){
 
     if(!activeIcon) return;
+    if(!canEdit()) return;
 
     createRPGMarker(
         e.latlng,
@@ -2140,7 +2141,10 @@ popupAnchor:[0,-40]
     marker.addTo(map);
     markers.push(marker);
     openMarkerEditor(marker);
-    marker.on('click', () => openMarkerEditor(marker));
+    marker.on('click', function(ev) {
+        L.DomEvent.stopPropagation(ev);
+        openMarkerEditor(marker);
+    });
 
     // Auto-deselect: lerakás után ki kell kapcsolni az ikont
     deactivateMarkerMode();
@@ -2154,6 +2158,18 @@ popupAnchor:[0,-40]
 
 function openMarkerEditor(marker){
     const d = marker.data;
+
+    if (!canEdit()) {
+        // Readonly popup: csak név és leírás
+        const roHtml = `<div class="popupForm" style="max-width:200px;">
+            ${d.name ? `<div style="font-weight:700;color:#e2e8f0;font-size:.9rem;">${d.name}</div>` : ''}
+            ${d.description ? `<div style="color:#94a3b8;font-size:.8rem;margin-top:4px;">${d.description}</div>` : ''}
+            ${!d.name && !d.description ? `<div style="color:#64748b;font-size:.8rem;">Névtelen jelölő</div>` : ''}
+        </div>`;
+        marker.bindPopup(roHtml).openPopup();
+        return;
+    }
+
     const size = d.size || 30;
     const outline = d.outline !== undefined ? d.outline : true;
 
@@ -2617,15 +2633,15 @@ const EFFECT_DEFS = {
     },
     chest: {
         label:'Kincsesláda',
-        build(c,s){ const sc=EFFECT_SIZE_MAP[s]; return `<div style="position:relative;display:flex;flex-direction:column;align-items:center;">
-            ${[0,1,2].map(i=>`<div style="position:absolute;width:${3*sc}px;height:${3*sc}px;border-radius:50%;background:#fbbf24;bottom:${28*sc}px;left:${[8,18,28][i]*sc}px;animation:efxChestSpark 3.5s ease-out infinite;animation-delay:${[.1,.25,.4][i]}s;"></div>`).join('')}
-            <div style="width:${36*sc}px;height:${13*sc}px;background:${c};border:${2*sc}px solid ${c}dd;border-radius:${3*sc}px ${3*sc}px 0 0;animation:efxChestLid 3.5s ease-in-out infinite;transform-origin:bottom;position:relative;">
-                <div style="position:absolute;bottom:-1px;left:50%;transform:translateX(-50%);width:${10*sc}px;height:${3*sc}px;background:${c}cc;border-radius:0 0 ${2*sc}px ${2*sc}px;"></div>
+        build(c,s){ const sc=EFFECT_SIZE_MAP[s]; return `<div style="position:relative;display:flex;flex-direction:column;align-items:center;filter:drop-shadow(0 0 ${4*sc}px #fbbf2488);">
+            ${[0,1,2].map(i=>`<div style="position:absolute;width:${3*sc}px;height:${3*sc}px;border-radius:50%;background:#fbbf24;bottom:${30*sc}px;left:${[6,17,28][i]*sc}px;animation:efxChestSpark 3.5s ease-out infinite;animation-delay:${[.1,.25,.4][i]}s;"></div>`).join('')}
+            <div style="width:${36*sc}px;height:${13*sc}px;background:${c};border:${2*sc}px solid #fbbf24;border-bottom:none;border-radius:${3*sc}px ${3*sc}px 0 0;animation:efxChestLid 3.5s ease-in-out infinite;transform-origin:bottom;position:relative;box-shadow:inset 0 ${2*sc}px 0 rgba(255,255,255,0.15),0 -${2*sc}px ${4*sc}px rgba(0,0,0,0.3);">
+                <div style="position:absolute;bottom:-1px;left:50%;transform:translateX(-50%);width:${10*sc}px;height:${3*sc}px;background:${c};border-radius:0 0 ${2*sc}px ${2*sc}px;border:${1.5*sc}px solid #fbbf24;border-top:none;"></div>
             </div>
-            <div style="width:${36*sc}px;height:${24*sc}px;background:${c}ee;border:${2*sc}px solid ${c}dd;border-radius:0 0 ${3*sc}px ${3*sc}px;animation:efxChestShake 3.5s ease-in-out infinite;position:relative;">
-                <div style="position:absolute;top:50%;left:0;right:0;height:${2*sc}px;background:${c}88;transform:translateY(-50%);"></div>
-                <div style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:${8*sc}px;height:${8*sc}px;border-radius:50%;background:#fbbf24;box-shadow:0 0 ${4*sc}px rgba(251,191,36,.6);"></div>
-                <div style="position:absolute;inset:-${3*sc}px;border-radius:${4*sc}px;border:1px solid #fbbf2444;animation:efxChestGlow 3.5s ease-in-out infinite;"></div>
+            <div style="width:${36*sc}px;height:${24*sc}px;background:${c};border:${2*sc}px solid #fbbf24;border-radius:0 0 ${3*sc}px ${3*sc}px;animation:efxChestShake 3.5s ease-in-out infinite;position:relative;box-shadow:inset 0 -${2*sc}px 0 rgba(0,0,0,0.2),0 ${3*sc}px ${6*sc}px rgba(0,0,0,0.4);">
+                <div style="position:absolute;top:50%;left:0;right:0;height:${2*sc}px;background:#fbbf2455;transform:translateY(-50%);"></div>
+                <div style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:${8*sc}px;height:${8*sc}px;border-radius:50%;background:#fbbf24;box-shadow:0 0 ${6*sc}px #fbbf24;"></div>
+                <div style="position:absolute;inset:-${2*sc}px;border-radius:${4*sc}px;border:${1.5*sc}px solid #fbbf2466;animation:efxChestGlow 3.5s ease-in-out infinite;"></div>
             </div></div>`; }
     },
     vortex: {
@@ -2710,6 +2726,7 @@ document.addEventListener('DOMContentLoaded', () => {
 // Effekt lerakás a térképre
 map.on('click', function(e) {
     if (!activeEffectKey) return;
+    if (!canEdit()) return;
     const def = EFFECT_DEFS[activeEffectKey];
     if (!def) return;
     const c = document.getElementById('effectColor').value;
@@ -2742,6 +2759,16 @@ map.on('click', function(e) {
 function openEffectEditor(em) {
     const d = em.efxData;
     const def = EFFECT_DEFS[d.key];
+
+    if (!canEdit()) {
+        // Readonly: csak a neve jelenik meg
+        const roHtml = `<div class="popupForm" style="max-width:160px;">
+            <div style="color:#c084fc;font-size:.85rem;font-weight:600;">${def.label}</div>
+        </div>`;
+        em.bindPopup(roHtml).openPopup();
+        return;
+    }
+
     const html = `<div class="popupForm">
         <div style="color:#c084fc;font-size:.85rem;font-weight:600;">${def.label}</div>
         <label style="color:#94a3b8;font-size:11px;display:flex;flex-direction:column;gap:3px;">
@@ -2892,6 +2919,15 @@ document.addEventListener('mousemove', e => {
 
   // ─── AUTOSAVE ───────────────────────────────────────────────────
   let _saveTimer = null
+
+  // ─── JOGOSULTSÁG HELPER ────────────────────────────────────
+  function canEdit() {
+    // Admin ?mode=admin URL-lel: mindent szerkeszthet
+    const urlParams = new URLSearchParams(window.location.search)
+    if (urlParams.get('mode') === 'admin' && window._userProfile?.role === 'admin') return true
+    // Player: nem szerkeszthet
+    return false
+  }
 
   window.scheduleSave = function() {
     if (_saveTimer) clearTimeout(_saveTimer)
@@ -3068,6 +3104,54 @@ document.addEventListener('mousemove', e => {
   }
 
   window.addEventListener('load', () => setTimeout(window.loadFromSupabase, 500))
+
+  // ─── IFRAME postMessage KOMMUNIKÁCIÓ ────────────────────────
+  window.addEventListener('message', function(e) {
+    if (e.data?.type === 'LOAD_CAMPAIGN_MAP') {
+      // Sabloneditor tölt be egy kampány térképet
+      const data = e.data.payload;
+      if (data.drawings?.version === 2 && data.drawings?.groups) {
+        Object.keys(groupState).forEach(grp => {
+          if (data.drawings.groups[grp]) {
+            groupState[grp].drawings = data.drawings.groups[grp]?.drawings || null;
+            groupState[grp].markers  = data.drawings.groups[grp]?.markers  || [];
+          }
+        });
+        activeMapGroup  = data.active_layer ? layerNameToGroup(data.active_layer) : '3724';
+        activeLayerName = data.active_layer || '3724_domborzati';
+        effects.forEach(em => map.removeLayer(em)); effects.length = 0;
+        if (data.drawings.effects) {
+          data.drawings.effects.forEach(e => {
+            const def = EFFECT_DEFS[e.efxData?.key]; if (!def) return;
+            const {key,color,size} = e.efxData;
+            const sc = EFFECT_SIZE_MAP[size]||1; const sz = Math.round(56*sc);
+            const em = L.marker(e.latlng, { icon: L.divIcon({
+              className:'', html:`<div data-efx="${key}">${def.build(color,size)}</div>`,
+              iconSize:[sz,sz], iconAnchor:[sz/2,sz/2]
+            })});
+            em.efxData={key,color,size}; em.addTo(map);
+            em.on('click', function(ev) { L.DomEvent.stopPropagation(ev); openEffectEditor(em); });
+            effects.push(em);
+          });
+        }
+        loadGroupState(activeMapGroup);
+      }
+    }
+
+    if (e.data?.type === 'REQUEST_MAP_STATE') {
+      // Sabloneditor kér állapotot mentéshez
+      saveGroupState(activeMapGroup);
+      const efxData = effects.map(em => ({ latlng: em.getLatLng(), efxData: em.efxData }));
+      e.source.postMessage({
+        type: 'MAP_STATE_RESPONSE',
+        payload: {
+          drawings: { version:2, groups: groupState, effects: efxData },
+          activeLayer: activeLayerName
+        }
+      }, '*');
+    }
+  });
+
 </script>
 
 <div id="save-indicator" style="position:fixed;bottom:1rem;right:1rem;background:rgba(16,185,129,0.15);border:1px solid rgba(16,185,129,0.3);color:#34d399;font-size:.75rem;padding:.4rem .8rem;border-radius:.5rem;opacity:0;transition:opacity .5s;pointer-events:none;z-index:999;">✓ Mentve</div>
