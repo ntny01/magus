@@ -1034,6 +1034,15 @@ body{
     }
 
     /* Koordináta panel: kisebb */
+    .layer-control-custom { z-index:1000; }
+    .layer-btn { display:block; width:100%; }
+    .layer-btn.active {
+        background:rgba(168,85,247,.2)!important;
+        border-color:rgba(168,85,247,.5)!important;
+        color:#e9d5ff!important;
+    }
+    .layer-btn:hover { background:rgba(255,255,255,.08)!important; }
+
     .coordPanel{
         font-size: 11px !important;
         padding: 5px 8px !important;
@@ -1392,145 +1401,162 @@ const bounds = [
 ];
 
 /* =========================================================
-   TILE GROUPS
+   RÉTEG KONFIGURÁCIÓ
 ========================================================= */
 
-const topoGroup =
-    L.layerGroup();
+// Réteg csoport: azonos évszámú Domb+Poli ugyanazokat a rajzokat mutatja
+const LAYER_CONFIG = {
+    '3724_domborzati': { path:'./terkep_kulon/output/3724_domborzati', group:'3724', label:'3724 Domborzati' },
+    '3724_politikai':  { path:'./terkep_kulon/output/3724_politikai',  group:'3724', label:'3724 Politikai'  },
+    '3715_domborzati': { path:'./terkep_kulon/output/3715_domborzati', group:'3715', label:'3715 Domborzati' },
+    '3715_politikai':  { path:'./terkep_kulon/output/3715_politikai',  group:'3715', label:'3715 Politikai'  },
+    '3692_domborzati': { path:'./terkep_kulon/output/3692_domborzati', group:'3692', label:'3692 Domborzati' },
+    '3692_politikai':  { path:'./terkep_kulon/output/3692_politikai',  group:'3692', label:'3692 Politikai'  },
+};
 
-const politicalGroup =
-    L.layerGroup();
+// Aktív réteg neve
+let activeLayerKey = '3724_domborzati';
 
-const topo3715Group =
-    L.layerGroup();
-
-const political3715Group =
-    L.layerGroup();
-
-const topo3692Group =
-    L.layerGroup();
-
-const political3692Group =
-    L.layerGroup();
+// Jelenlegi tile layerGroup
+let currentTileLayer = null;
 
 /* =========================================================
-   TILE BUILDER
+   LAZY TILE LOADER
 ========================================================= */
 
-function buildTiles(basePath, group){
-
-    for(let x=0; x<=X_MAX; x++){
-
-        for(let y=0; y<=Y_MAX; y++){
-
-            const flippedY =
-                Y_MAX - y;
-
-            const imageUrl =
-`${basePath}/6/${x}/${flippedY}.png`;
-
-            const left =
-                x * TILE_SIZE;
-
-            const top =
-                y * TILE_SIZE;
-
-            const bounds = [
-
-                [top,left],
-
-                [
-                    top + TILE_SIZE,
-                    left + TILE_SIZE
-                ]
-
-            ];
-
-            const overlay =
-                L.imageOverlay(
-                    imageUrl,
-                    bounds,
-                    {
-                        interactive:false,
-                        opacity:1
-                    }
-                );
-
-            overlay.on('error', ()=>{
-
-                overlay.setOpacity(0);
-
-            });
-
+function buildTiles(basePath) {
+    const group = L.layerGroup();
+    for (let x = 0; x <= X_MAX; x++) {
+        for (let y = 0; y <= Y_MAX; y++) {
+            const flippedY = Y_MAX - y;
+            const imageUrl = `${basePath}/6/${x}/${flippedY}.png`;
+            const left = x * TILE_SIZE;
+            const top  = y * TILE_SIZE;
+            const bounds = [[top, left], [top + TILE_SIZE, left + TILE_SIZE]];
+            const overlay = L.imageOverlay(imageUrl, bounds, { interactive:false, opacity:1 });
+            overlay.on('error', () => overlay.setOpacity(0));
             overlay.addTo(group);
-
         }
+    }
+    return group;
+}
 
+function switchLayer(layerKey) {
+    if (!LAYER_CONFIG[layerKey]) return;
+
+    // Régi tile layer eltávolítása
+    if (currentTileLayer) {
+        map.removeLayer(currentTileLayer);
+        currentTileLayer = null;
     }
 
+    // Rajzok/markerek mentése a régi csoport alá
+    const oldGroup = LAYER_CONFIG[activeLayerKey].group;
+    const newGroup = LAYER_CONFIG[layerKey].group;
+
+    // Régi csoport rajzait elmentjük
+    saveGroupDrawings(oldGroup);
+
+    activeLayerKey = layerKey;
+
+    // Új tile layer betöltése
+    currentTileLayer = buildTiles(LAYER_CONFIG[layerKey].path);
+    currentTileLayer.addTo(map);
+
+    // Ha csoport váltás történt, rajzok/markerek újratöltése
+    if (oldGroup !== newGroup) {
+        loadGroupDrawings(newGroup);
+    }
+
+    // Aktív réteg gomb kiemelése
+    document.querySelectorAll('.layer-btn').forEach(btn => {
+        btn.classList.toggle('active', btn.dataset.layer === layerKey);
+    });
+
+    window.scheduleSave();
 }
 
 /* =========================================================
-   BUILD MAPS
+   LAYER CONTROL (custom gombok)
 ========================================================= */
 
-buildTiles(
-    './terkep_kulon/output/3724_domborzati',
-    topoGroup
-);
+function buildLayerControl() {
+    const ctrl = L.control({ position: 'topright' });
+    ctrl.onAdd = function() {
+        const div = L.DomUtil.create('div', 'leaflet-control leaflet-bar layer-control-custom');
+        div.style.cssText = 'background:#1a1a2e;border:1px solid rgba(168,85,247,.3);border-radius:.5rem;padding:.4rem;display:flex;flex-direction:column;gap:.25rem;';
+        Object.entries(LAYER_CONFIG).forEach(([key, cfg]) => {
+            const btn = L.DomUtil.create('button', 'layer-btn', div);
+            btn.dataset.layer = key;
+            btn.textContent = cfg.label;
+            btn.style.cssText = 'background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.1);color:#e2e8f0;font-size:.75rem;padding:.25rem .6rem;border-radius:.35rem;cursor:pointer;text-align:left;white-space:nowrap;transition:all .15s;';
+            btn.classList.toggle('active', key === activeLayerKey);
+            L.DomEvent.on(btn, 'click', () => switchLayer(key));
+            L.DomEvent.disableClickPropagation(btn);
+        });
+        return div;
+    };
+    ctrl.addTo(map);
+}
 
-buildTiles(
-    './terkep_kulon/output/3724_politikai',
-    politicalGroup
-);
+buildLayerControl();
 
-buildTiles(
-    './terkep_kulon/output/3715_domborzati',
-    topo3715Group
-);
-
-buildTiles(
-    './terkep_kulon/output/3715_politikai',
-    political3715Group
-);
-
-buildTiles(
-    './terkep_kulon/output/3692_domborzati',
-    topo3692Group
-);
-
-buildTiles(
-    './terkep_kulon/output/3692_politikai',
-    political3692Group
-);
-
-topoGroup.addTo(map);
-
-L.control.layers({
-
-    "3724 Domborzati": topoGroup,
-    "3724 Politikai":  politicalGroup,
-    "3715 Domborzati": topo3715Group,
-    "3715 Politikai":  political3715Group,
-    "3692 Domborzati": topo3692Group,
-    "3692 Politikai":  political3692Group,
-
-}).addTo(map);
+// Inicális betöltés
+currentTileLayer = buildTiles(LAYER_CONFIG[activeLayerKey].path);
+currentTileLayer.addTo(map);
 
 map.fitBounds(bounds);
 
 /* =========================================================
-   DRAW SYSTEM
+   DRAW SYSTEM – CSOPORT ALAPÚ
 ========================================================= */
 
-const drawnItems =
-    new L.FeatureGroup();
+// Rajzok és markerek csoportonként (3724, 3715, 3692)
+const groupDrawings = { '3724': null, '3715': null, '3692': null };
+const groupMarkers  = { '3724': [],   '3715': [],   '3692': []   };
 
+// Aktív drawn items és markers (mindig az aktív csoport)
+const drawnItems = new L.FeatureGroup();
 map.addLayer(drawnItems);
+
+let markers = [];  // az aktív csoport markerei
 
 let currentDrawer = null;
 let editHandler = null;
 let deleteHandler = null;
+
+// Aktív csoport rajzainak mentése és másik csoport betöltése
+function saveGroupDrawings(groupKey) {
+    drawnItems.eachLayer(layer => saveLayerStyle(layer));
+    groupDrawings[groupKey] = drawnItems.toGeoJSON();
+    groupMarkers[groupKey] = markers.map(m => ({ latlng: m.getLatLng(), data: m.data }));
+}
+
+function loadGroupDrawings(groupKey) {
+    // Régi rajzok/markerek eltávolítása
+    drawnItems.clearLayers();
+    markers.forEach(m => map.removeLayer(m));
+    markers.length = 0;
+
+    // Új csoport betöltése ha van
+    const drawings = groupDrawings[groupKey];
+    const savedMarkers = groupMarkers[groupKey] || [];
+
+    if (drawings) {
+        L.geoJSON(drawings, {
+            style: f => f.properties || {},
+            onEachFeature: (f, layer) => {
+                restoreLayerStyle(layer, f.properties);
+                drawnItems.addLayer(layer);
+            }
+        });
+    }
+
+    savedMarkers.forEach(m => {
+        const marker = createMarker(m.latlng, m.data);
+        markers.push(marker);
+    });
+}
 
 /* =========================================================
    HELPERS
@@ -1857,6 +1883,23 @@ function buildMarkerHTML(data){
 
 }
 
+// Helper: marker objektum létrehozása adatokból (betöltéshez)
+function createMarker(latlng, data) {
+    const marker = L.marker(latlng, {
+        icon: L.divIcon({
+            className: '',
+            html: buildMarkerHTML(data),
+            iconSize: [120, 40],
+            iconAnchor: [60, 40],
+            popupAnchor: [0, -40]
+        })
+    });
+    marker.data = data;
+    marker.addTo(map);
+    marker.on('click', () => openMarkerEditor(marker));
+    return marker;
+}
+
 function createRPGMarker(latlng, icon){
 
     const marker =
@@ -2034,57 +2077,20 @@ window.deleteMarkerPopup = function(){
 ========================================================= */
 
 function saveCampaign(){
-
-    drawnItems.eachLayer(layer=>{
-
-        saveLayerStyle(layer);
-
-    });
-
-    const drawData =
-        drawnItems.toGeoJSON();
-
-    const markerData =
-        markers.map(m=>({
-
-            latlng:m.getLatLng(),
-
-            data:m.data
-
-        }));
-
-    const campaign = {
-
-        drawings:drawData,
-
-        markers:markerData
-
-    };
-
-    localStorage.setItem(
-        'ynev_campaign',
-        JSON.stringify(campaign)
-    );
+    // Aktív csoport frissítése
+    const activeGroup = LAYER_CONFIG[activeLayerKey].group;
+    saveGroupDrawings(activeGroup);
 
     window.scheduleSave();
-
 }
 
 /* =========================================================
    LOAD CAMPAIGN
 ========================================================= */
 
-function loadCampaign(){
+function loadCampaign(campaign){
 
-    const raw =
-        localStorage.getItem(
-            'ynev_campaign'
-        );
-
-    if(!raw) return;
-
-    const campaign =
-        JSON.parse(raw);
+    if(!campaign) return;
 
     drawnItems.clearLayers();
 
@@ -2128,40 +2134,8 @@ function loadCampaign(){
     });
 
     campaign.markers.forEach(m=>{
-
-        const marker =
-            L.marker(m.latlng, {
-
-                icon:L.divIcon({
-
-                    className:'',
-
-                    html:buildMarkerHTML(
-                        m.data
-                    ),
-
-                    iconSize:[120,40],
-
-                   iconAnchor:[60,40],
-popupAnchor:[0,-40]
-
-                })
-
-            });
-
-        marker.data =
-            m.data;
-
-        marker.addTo(map);
-
+        const marker = createMarker(m.latlng, m.data);
         markers.push(marker);
-
-        marker.on('click', ()=>{
-
-            openMarkerEditor(marker);
-
-        });
-
     });
 
 }
@@ -2171,38 +2145,26 @@ popupAnchor:[0,-40]
 ========================================================= */
 
 function exportCampaign(){
-
     saveCampaign();
 
-    const raw =
-        localStorage.getItem(
-            'ynev_campaign'
-        );
+    const exportData = {
+        version: 2,
+        activeLayer: activeLayerKey,
+        groups: {}
+    };
 
-    const blob =
-        new Blob(
+    Object.keys(groupDrawings).forEach(grp => {
+        exportData.groups[grp] = {
+            drawings: groupDrawings[grp] || { type:'FeatureCollection', features:[] },
+            markers: groupMarkers[grp] || []
+        };
+    });
 
-            [raw],
-
-            {
-
-                type:'application/json'
-
-            }
-
-        );
-
-    const a =
-        document.createElement('a');
-
-    a.href =
-        URL.createObjectURL(blob);
-
-    a.download =
-        'ynev_campaign.json';
-
+    const blob = new Blob([JSON.stringify(exportData, null, 2)], { type:'application/json' });
+    const a = document.createElement('a');
+    a.href = URL.createObjectURL(blob);
+    a.download = 'ynev_campaign.json';
     a.click();
-
 }
 
 /* =========================================================
@@ -2210,42 +2172,37 @@ function exportCampaign(){
 ========================================================= */
 
 function importCampaign(){
-
-    const input =
-        document.createElement('input');
-
-    input.type='file';
-
-    input.accept='.json';
-
-    input.onchange=e=>{
-
-        const file =
-            e.target.files[0];
-
-        const reader =
-            new FileReader();
-
-        reader.onload=evt=>{
-
-            localStorage.setItem(
-
-                'ynev_campaign',
-
-                evt.target.result
-
-            );
-
-            loadCampaign();
-
+    const input = document.createElement('input');
+    input.type = 'file';
+    input.accept = '.json';
+    input.onchange = e => {
+        const file = e.target.files[0];
+        const reader = new FileReader();
+        reader.onload = evt => {
+            try {
+                const data = JSON.parse(evt.target.result);
+                if (data.version === 2 && data.groups) {
+                    // Új formátum: csoportonként
+                    Object.keys(groupDrawings).forEach(grp => {
+                        groupDrawings[grp] = data.groups[grp]?.drawings || null;
+                        groupMarkers[grp] = data.groups[grp]?.markers || [];
+                    });
+                    const targetLayer = data.activeLayer || '3724_domborzati';
+                    switchLayer(targetLayer);
+                    loadGroupDrawings(LAYER_CONFIG[activeLayerKey].group);
+                } else {
+                    // Régi formátum: drawings + markers (mind a 3724 csoportba kerül)
+                    groupDrawings['3724'] = data.drawings || null;
+                    groupMarkers['3724'] = data.markers || [];
+                    loadGroupDrawings('3724');
+                }
+            } catch(err) {
+                alert('Import hiba: ' + err.message);
+            }
         };
-
         reader.readAsText(file);
-
     };
-
     input.click();
-
 }
 
 /* =========================================================
@@ -2253,25 +2210,17 @@ function importCampaign(){
 ========================================================= */
 
 function clearEverything(){
-
     disableDrawing();
-
     deactivateMarkerMode();
-
     drawnItems.clearLayers();
-
-    markers.forEach(m=>{
-
-        map.removeLayer(m);
-
-    });
-
+    markers.forEach(m => map.removeLayer(m));
     markers.length = 0;
-
-    localStorage.removeItem(
-        'ynev_campaign'
-    );
-
+    // Minden csoport törlése
+    Object.keys(groupDrawings).forEach(grp => {
+        groupDrawings[grp] = null;
+        groupMarkers[grp] = [];
+    });
+    saveCampaign();
 }
 
 /* =========================================================
@@ -2515,15 +2464,14 @@ document.addEventListener('mousemove', e => {
     if (!window._sb || !window._userProfile) return
     const { data: { user } } = await window._sb.auth.getUser()
     if (!user) return
-    drawnItems.eachLayer(layer => saveLayerStyle(layer))
-    const campaign = {
-      drawings: drawnItems.toGeoJSON(),
-      markers: markers.map(m => ({ latlng: m.getLatLng(), data: m.data }))
-    }
+    // Aktív csoport frissítése mentés előtt
+    const activeGroup = LAYER_CONFIG[activeLayerKey].group
+    saveGroupDrawings(activeGroup)
     const { error } = await window._sb.from('map_states').upsert({
       user_id: user.id,
-      drawings: campaign.drawings,
-      markers: campaign.markers,
+      drawings: groupDrawings,   // teljes csoport objektum {3724:..., 3715:..., 3692:...}
+      markers: groupMarkers,     // teljes csoport objektum
+      active_layer: activeLayerKey,
       updated_at: new Date().toISOString()
     }, { onConflict: 'user_id' })
     if (!error) window.showSaveIndicator()
@@ -2537,9 +2485,29 @@ document.addEventListener('mousemove', e => {
     const { data } = await window._sb.from('map_states')
       .select('*').eq('user_id', user.id).single()
     if (data) {
-      const campaign = { drawings: data.drawings, markers: data.markers }
-      localStorage.setItem('ynev_campaign', JSON.stringify(campaign))
-      loadCampaign()
+      // Új formátum: drawings = {3724:..., 3715:..., 3692:...}
+      if (data.drawings && data.drawings['3724'] !== undefined) {
+        Object.keys(groupDrawings).forEach(grp => {
+          groupDrawings[grp] = data.drawings[grp] || null
+          groupMarkers[grp] = data.markers?.[grp] || []
+        })
+      } else if (data.drawings) {
+        // Régi formátum: drawings közvetlenül GeoJSON – 3724 csoportba kerül
+        groupDrawings['3724'] = data.drawings
+        groupMarkers['3724'] = data.markers || []
+      }
+      // Aktív réteg visszaállítása
+      const targetLayer = data.active_layer || '3724_domborzati'
+      activeLayerKey = targetLayer
+      if (currentTileLayer) map.removeLayer(currentTileLayer)
+      currentTileLayer = buildTiles(LAYER_CONFIG[targetLayer].path)
+      currentTileLayer.addTo(map)
+      // Aktív csoport rajzainak betöltése
+      loadGroupDrawings(LAYER_CONFIG[targetLayer].group)
+      // Gombok frissítése
+      document.querySelectorAll('.layer-btn').forEach(btn => {
+        btn.classList.toggle('active', btn.dataset.layer === targetLayer)
+      })
     }
   }
 
