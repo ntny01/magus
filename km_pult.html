@@ -541,7 +541,8 @@ const sb = supabase.createClient(
             <div style="display:flex; align-items:center; justify-content:space-between; margin-bottom:1.5rem; flex-wrap:wrap; gap:.75rem;">
                 <h2 style="font-family:'Cinzel',serif; color:var(--gold); font-size:1.35rem; letter-spacing:.08em; margin:0;">🃏 Karakterkártyák</h2>
                 <div style="display:flex; gap:.5rem; flex-wrap:wrap; align-items:center;">
-                    <button class="km-btn" onclick="document.getElementById('cardImportInput').click()" style="border-color:rgba(16,185,129,.4);color:var(--accent-hover)!important;">📂 Kártyák betöltése</button>
+                    <button class="km-btn" onclick="loadCardsFromSupabase()" style="border-color:rgba(168,85,247,.4);color:#c084fc!important;">📋 Supabase karakterek</button>
+                    <button class="km-btn" onclick="document.getElementById('cardImportInput').click()" style="border-color:rgba(16,185,129,.4);color:var(--accent-hover)!important;">📂 JSON betöltés</button>
                     <input type="file" id="cardImportInput" style="display:none;" accept=".json" multiple onchange="importCards(event)">
                     <button class="km-btn" onclick="clearAllCards()" style="border-color:rgba(239,68,68,.35);color:#f87171!important;">🗑️ Összes törlése</button>
                     <button class="km-btn" onclick="toggleCardPanel()" style="border-color:rgba(239,68,68,.35);color:#f87171!important;">✕ Bezárás</button>
@@ -1069,6 +1070,105 @@ const sb = supabase.createClient(
             if (el) el.classList.toggle('open');
         }
 
+        // ── SUPABASE KARAKTEREK BETÖLTÉSE ──────────────────────────────
+        async function loadCardsFromSupabase() {
+            if (!window._sb) { alert('Supabase nem elérhető.'); return; }
+            const btn = document.querySelector('[onclick="loadCardsFromSupabase()"]');
+            if (btn) { btn.textContent = '⏳ Betöltés...'; btn.disabled = true; }
+
+            try {
+                // 1. Összes aktív player user lekérése
+                const { data: users, error: uErr } = await window._sb
+                    .from('user_profiles')
+                    .select('id, display_name, role')
+                    .eq('status', 'active')
+                    .eq('role', 'player')
+                    .order('display_name')
+
+                if (uErr || !users?.length) {
+                    alert('Nem találhatók aktív játékosok.');
+                    return;
+                }
+
+                // 2. Minden userhez a legutóbbi (nem sablon) karakterlap
+                let loaded = 0;
+                for (const user of users) {
+                    const { data: sheet } = await window._sb
+                        .from('character_sheets')
+                        .select('*')
+                        .eq('user_id', user.id)
+                        .eq('is_template', false)
+                        .order('updated_at', { ascending: false })
+                        .limit(1)
+                        .maybeSingle()
+
+                    if (!sheet?.data) continue;
+
+                    // Kártya generálása a sheet-ből
+                    const card = buildCardFromSheetKM(sheet.data, sheet, user.display_name)
+
+                    // Per user: ha már van betöltve ettől a usertől, csere
+                    const existsIdx = loadedCards.findIndex(c => c._userId === user.id)
+                    if (existsIdx >= 0) loadedCards[existsIdx] = card;
+                    else loadedCards.push(card);
+                    loaded++;
+                }
+
+                renderCards();
+                if (loaded === 0) alert('Egyik játékosnak sincs mentett karaktere.');
+                else if (loaded < users.length) alert(`${loaded}/${users.length} karakter betöltve (${users.length - loaded} játékosnak nincs mentett karaktere).`);
+
+            } catch(err) {
+                alert('Hiba: ' + err.message);
+            } finally {
+                if (btn) { btn.textContent = '📋 Supabase karakterek'; btn.disabled = false; }
+            }
+        }
+
+        function buildCardFromSheetKM(data, sheet, playerName) {
+            const getInfoVal = (key) => {
+                if (data.infoFields) {
+                    const f = data.infoFields.find(f => f.id === 'inf_' + key)
+                    return f ? (f.value || '') : ''
+                }
+                return data.info?.[key] || ''
+            }
+            const card = {
+                _type: 'magus_character_card', _version: 3,
+                _userId: sheet.user_id,
+                _playerName: playerName,
+                _sheetId: sheet.id,
+                name: getInfoVal('nev') || getInfoVal('name') || sheet.name,
+                faj: getInfoVal('faj') || sheet.faj,
+                kaszt: getInfoVal('kaszt') || sheet.kaszt,
+                isten: getInfoVal('isten'),
+                kronika: getInfoVal('kronika'),
+                xp: getInfoVal('xp'),
+                title: data.vampireTitle || 'KARAKTER',
+                template_id: data.template_id || null,
+                template_name: data.template_name || null,
+                infoFields: data.infoFields || [],
+                stats: []
+            }
+            if (data.sections) {
+                data.sections.forEach(sec => {
+                    sec.boxes?.forEach(box => {
+                        box.rows?.forEach(row => {
+                            if (row.value || row.value === 0) {
+                                card.stats.push({
+                                    section: sec.title, box: box.title,
+                                    type: row.type, label: row.label,
+                                    value: row.value, max: row.max || 5,
+                                    ...(row.type === 'symbol' ? {symbol: row.symbol, color: row.color} : {})
+                                })
+                            }
+                        })
+                    })
+                })
+            }
+            return card
+        }
+
         function renderCards() {
             const list = document.getElementById('cardList');
             const empty = document.getElementById('cardEmptyMsg');
@@ -1084,6 +1184,7 @@ const sb = supabase.createClient(
 
                 const kaszt = [card.faj, card.kaszt].filter(Boolean).join(' · ');
                 const sub = [kaszt, card.isten ? '⚔ '+card.isten : ''].filter(Boolean).join('  |  ');
+                const playerBadge = card._playerName ? `<span style="font-size:.7rem;background:rgba(168,85,247,.15);border:1px solid rgba(168,85,247,.25);color:#c084fc;padding:.1rem .45rem;border-radius:.3rem;margin-left:.5rem;">👤 ${card._playerName}</span>` : '';
 
                 // Body: group stats by section+box
                 let bodyHtml = '';
@@ -1127,6 +1228,17 @@ const sb = supabase.createClient(
                                 } else {
                                     bodyHtml += `<div class="card-row"><span class="card-row-label">${r.label}</span><div class="card-dots">${dotsHtml}</div></div>`;
                                 }
+                            } else if (r.type === 'symbol') {
+                                const sym = r.symbol || '★';
+                                const SYM_EMPTY = {'★':'☆','♥':'♡','♦':'♢','♣':'♧','●':'○','■':'□','▲':'△','⬟':'⬠','✦':'✧'};
+                                const empty = SYM_EMPTY[sym] || sym;
+                                const color = r.color || '#d4af37';
+                                let symHtml = '';
+                                for (let i=1;i<=(r.max||5);i++) {
+                                    const filled = i<=r.value;
+                                    symHtml += `<span style="color:${color};opacity:${filled?1:0.28};font-size:.95rem;">${filled?sym:empty}</span>`;
+                                }
+                                bodyHtml += `<div class="card-row"><span class="card-row-label">${r.label}</span><div class="card-dots">${symHtml}</div></div>`;
                             } else if (r.type === 'text') {
                                 bodyHtml += `<div class="card-row"><span class="card-row-label">${r.label}</span><span class="card-text-val">${r.value||''}</span></div>`;
                             } else if (r.type === 'textarea' && (r.value||'').trim()) {
@@ -1143,7 +1255,7 @@ const sb = supabase.createClient(
                     <div class="char-card-header" onclick="toggleCard(${idx})">
                         <div class="char-card-avatar">🧙</div>
                         <div class="char-card-meta">
-                            <div class="char-card-name">${card.name || card.title || 'Névtelen'}</div>
+                            <div class="char-card-name">${card.name || card.title || 'Névtelen'}${playerBadge}</div>
                             <div class="char-card-sub">${sub || 'Ismeretlen'}</div>
                         </div>
                         <span class="char-card-chevron">▼</span>
