@@ -505,6 +505,7 @@ const sb = supabase.createClient(
 <div class="container">
     <header>
         <h1>Karakter Segéd</h1>
+        <div id="kk-active-char" style="display:none;margin-bottom:.5rem;font-size:.82rem;color:var(--accent);letter-spacing:.04em;"></div>
         <div class="io-bar">
             <!-- Karakterek Supabase-ből -->
             <div style="position:relative;" id="kkCharWrap">
@@ -1367,24 +1368,34 @@ const sb = supabase.createClient(
     const { data: { user } } = await window._sb.auth.getUser()
     if (!user) return
     const { data } = await window._sb.from('character_sheets')
-      .select('id, name, faj, kaszt')
+      .select('id, name, faj, kaszt, data')
       .eq('user_id', user.id)
       .eq('is_template', false)
       .order('updated_at', { ascending: false })
     const el = document.getElementById('kkCharList')
     if (!data || data.length === 0) {
-      el.innerHTML = '<div style="padding:.6rem 1rem;font-size:.82rem;color:#64748b;">Még nincs mentett karakter a char.html-ben</div>'
+      el.innerHTML = '<div style="padding:.6rem 1rem;font-size:.82rem;color:#64748b;">Még nincs mentett karakter</div>'
       return
     }
-    el.innerHTML = data.map(c => `
-      <div onclick="window.loadKKChar('${c.id}')" style="display:flex;align-items:center;gap:.6rem;padding:.6rem 1rem;font-size:.82rem;cursor:pointer;transition:background .15s;color:#e2e8f0;border-bottom:1px solid rgba(255,255,255,.06);"
-        onmouseover="this.style.background='rgba(212,175,55,.07)'" onmouseout="this.style.background=''">
+    const templateBased = data.filter(c => c.data && c.data.template_id)
+    const freeChars = data.filter(c => !c.data || !c.data.template_id)
+    const makeItem = (c, isFree) => {
+      const isActive = window._currentKKSheetId === c.id
+      const activeBg = isActive ? (isFree ? 'rgba(74,222,128,.07)' : 'rgba(212,175,55,.07)') : ''
+      const nameColor = isFree ? '#4ade80' : '#d4af37'
+      return `<div onclick="window.loadKKChar('${c.id}')" style="display:flex;align-items:center;gap:.6rem;padding:.5rem 1rem;font-size:.82rem;cursor:pointer;transition:background .15s;color:#e2e8f0;border-bottom:1px solid rgba(255,255,255,.06);background:${activeBg};"
+        onmouseover="this.style.background='${isFree?'rgba(74,222,128,.07)':'rgba(212,175,55,.07)'}'" onmouseout="this.style.background='${activeBg}'">
         <span style="flex:1;">
-          <span style="font-weight:600;">${c.name || 'Névtelen'}</span>
+          <span style="font-weight:600;color:${nameColor}">${c.name || 'Névtelen'}${isActive?' ✦':''}</span>
           ${c.faj||c.kaszt?`<span style="font-size:.72rem;color:#64748b;display:block;">${[c.faj,c.kaszt].filter(Boolean).join(' · ')}</span>`:''}
         </span>
-      </div>
-    `).join('')
+      </div>`
+    }
+    const section = (label) => `<div style="padding:.3rem 1rem .15rem;font-size:.68rem;font-weight:700;letter-spacing:.1em;color:#64748b;text-transform:uppercase;border-bottom:1px solid rgba(255,255,255,.04);">${label}</div>`
+    let html = ''
+    if (templateBased.length > 0) html += section('⚔ Sablon alapú') + templateBased.map(c => makeItem(c, false)).join('')
+    if (freeChars.length > 0) html += section('✦ Szabad karakterek') + freeChars.map(c => makeItem(c, true)).join('')
+    el.innerHTML = html
   }
 
   window.loadKKChar = async function(sheetId) {
@@ -1420,21 +1431,47 @@ const sb = supabase.createClient(
     // Mentjük melyik sheet van betöltve
     window._currentKKSheetId = sheetId
     renderEverything()
+    updateKKActiveCharHeader()
     window.scheduleSave()
   }
 
-  // Karakterlap adataiból kártya formátum generálása
+  function updateKKActiveCharHeader() {
+    const el = document.getElementById('kk-active-char')
+    if (!el) return
+    const card = appState.rawCharacterCard
+    if (!card || !card.name) { el.style.display = 'none'; return }
+    const isTemplate = !!card.template_id
+    const color = isTemplate ? '#d4af37' : '#4ade80'
+    const badge = isTemplate ? '⚔' : '✦'
+    const sub = [card.faj, card.kaszt].filter(Boolean).join(' · ')
+    el.style.display = 'block'
+    el.style.color = color
+    el.innerHTML = `${badge} <strong>${card.name}</strong>${sub ? ` <span style="color:#64748b;font-size:.75rem;">· ${sub}</span>` : ''}`
+  }
+
+  // Karakterlap adataiból kártya formátum generálása (infoFields + régi info struktúra is)
   function buildCardFromSheet(data) {
     if (!data) return null
+    // infoFields helper
+    const getInfoVal = (key) => {
+      if (data.infoFields) {
+        const f = data.infoFields.find(f => f.id === 'inf_' + key)
+        return f ? (f.value || '') : ''
+      }
+      return data.info?.[key] || ''
+    }
     const card = {
-      _type: 'magus_character_card', _version: 2,
-      name: data.info?.name || '',
-      faj: data.info?.faj || '',
-      kaszt: data.info?.kaszt || '',
-      isten: data.info?.isten || '',
-      kronika: data.info?.kronika || '',
-      xp: data.info?.xp || '',
+      _type: 'magus_character_card', _version: 3,
+      name: getInfoVal('nev') || getInfoVal('name'),
+      faj: getInfoVal('faj'),
+      kaszt: getInfoVal('kaszt'),
+      isten: getInfoVal('isten'),
+      kronika: getInfoVal('kronika'),
+      xp: getInfoVal('xp'),
       title: data.vampireTitle || 'KARAKTER',
+      template_id: data.template_id || null,
+      template_name: data.template_name || null,
+      infoFields: data.infoFields || [],
       stats: []
     }
     if (data.sections) {
@@ -1445,7 +1482,8 @@ const sb = supabase.createClient(
               card.stats.push({
                 section: sec.title, box: box.title,
                 type: row.type, label: row.label,
-                value: row.value, max: row.max || 5
+                value: row.value, max: row.max || 5,
+                ...(row.type === 'symbol' ? {symbol: row.symbol, color: row.color} : {})
               })
             }
           })
@@ -1481,7 +1519,24 @@ const sb = supabase.createClient(
     if (!window._sb) { setTimeout(window.loadFromSupabase, 100); return }
     const { data: { user } } = await window._sb.auth.getUser()
     if (!user) return
-    // Default session betöltése (JSON-ból betöltött állapot)
+
+    // Legutóbbi sheet session betöltése (sheet_id alapján, nem null)
+    const { data: sheetSession } = await window._sb.from('session_states')
+      .select('*').eq('user_id', user.id).not('sheet_id', 'is', null)
+      .order('updated_at', { ascending: false }).limit(1).maybeSingle()
+
+    if (sheetSession) {
+      if (sheetSession.char_data) appState.charData = sheetSession.char_data
+      if (sheetSession.bank_money) appState.bankMoney = sheetSession.bank_money
+      if (sheetSession.henchmen) appState.henchmen = sheetSession.henchmen
+      if (sheetSession.raw_card) appState.rawCharacterCard = sheetSession.raw_card
+      window._currentKKSheetId = sheetSession.sheet_id
+      renderEverything()
+      updateKKActiveCharHeader()
+      return
+    }
+
+    // Fallback: default session (JSON-ból betöltött állapot)
     const { data } = await window._sb.from('session_states')
       .select('*').eq('user_id', user.id).eq('session_name', 'default').maybeSingle()
     if (data) {
@@ -1490,6 +1545,7 @@ const sb = supabase.createClient(
       if (data.henchmen) appState.henchmen = data.henchmen
       if (data.raw_card) appState.rawCharacterCard = data.raw_card
       renderEverything()
+      updateKKActiveCharHeader()
     }
   }
 
