@@ -174,6 +174,88 @@ body{
 
 }
 
+/* =========================================================
+   VIZUÁLIS OVERLAY-EK (időjárás, fény/sötét zóna)
+========================================================= */
+
+.weather-overlay {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    z-index: 500;
+    overflow: hidden;
+}
+
+/* Eső */
+.rain-drop {
+    position: absolute;
+    width: 1px;
+    background: linear-gradient(to bottom, transparent, rgba(147,197,253,.6));
+    animation: rainFall linear infinite;
+}
+@keyframes rainFall {
+    0%   { transform: translateY(-20px); opacity: 0; }
+    10%  { opacity: 1; }
+    90%  { opacity: .8; }
+    100% { transform: translateY(100vh); opacity: 0; }
+}
+
+/* Hó */
+.snow-flake {
+    position: absolute;
+    border-radius: 50%;
+    background: rgba(255,255,255,.85);
+    animation: snowFall linear infinite;
+}
+@keyframes snowFall {
+    0%   { transform: translateY(-10px) translateX(0); opacity: 0; }
+    10%  { opacity: 1; }
+    50%  { transform: translateY(50vh) translateX(15px); }
+    90%  { opacity: .7; }
+    100% { transform: translateY(105vh) translateX(-10px); opacity: 0; }
+}
+
+/* Köd */
+.fog-layer {
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(ellipse at 50% 60%, rgba(148,163,184,.18) 0%, rgba(148,163,184,.08) 60%, transparent 100%);
+    animation: fogDrift 12s ease-in-out infinite alternate;
+}
+.fog-layer:nth-child(2) {
+    background: radial-gradient(ellipse at 30% 40%, rgba(148,163,184,.14) 0%, transparent 70%);
+    animation-duration: 16s;
+    animation-direction: alternate-reverse;
+}
+@keyframes fogDrift {
+    0%   { transform: translateX(-3%) translateY(0); opacity: .7; }
+    100% { transform: translateX(3%) translateY(-2%); opacity: 1; }
+}
+
+/* Fény zóna */
+.light-zone {
+    position: absolute;
+    border-radius: 50%;
+    pointer-events: none;
+    animation: lightPulse 3s ease-in-out infinite alternate;
+}
+@keyframes lightPulse {
+    0%   { opacity: .6; }
+    100% { opacity: .85; }
+}
+
+/* Sötét zóna */
+.dark-zone {
+    position: absolute;
+    border-radius: 50%;
+    pointer-events: none;
+    animation: darkPulse 4s ease-in-out infinite alternate;
+}
+@keyframes darkPulse {
+    0%   { opacity: .55; }
+    100% { opacity: .75; }
+}
+
 /* Kompakt mód iframe-ben (?mode=admin) */
 body.compact-menu .menuColumn { top:8px; gap:6px; }
 body.compact-menu .menuToggle { width:42px; height:42px; font-size:18px; border-radius:12px; }
@@ -1316,7 +1398,14 @@ body{
     <button class="btn" onclick="exportCampaign()">💾 JSON</button>
     <button class="btn" onclick="importCampaign()">📂 JSON be</button>
     <button class="btn" onclick="toggleSavePanel()">🗃️ Mentések</button>
-    <button class="btn" onclick="loadCampaignFromAdmin()">📜 Kampány</button>
+    <div style="position:relative;display:inline-block;">
+        <button class="btn" onclick="toggleCampaignMenu()" id="campaignMenuBtn">📜 Kampány ▾</button>
+        <div id="campaignMenu" style="display:none;position:absolute;top:100%;left:0;min-width:200px;background:#0f172a;border:1px solid rgba(168,85,247,.3);border-radius:10px;padding:6px;z-index:99999;box-shadow:0 8px 24px rgba(0,0,0,.5);margin-top:4px;">
+            <div id="campaignMenuList" style="display:flex;flex-direction:column;gap:4px;">
+                <div style="color:#64748b;font-size:.75rem;padding:4px 8px;">Betöltés...</div>
+            </div>
+        </div>
+    </div>
 
     <button
         class="btn"
@@ -1475,6 +1564,32 @@ body{
 
     </div>
 
+    <!-- VIZUÁLIS OVERLAY - csak admin mode-ban látszik -->
+    <div class="menuBlock" id="weatherMenuBlock" style="display:none;">
+        <button class="menuToggle" onclick="toggleMenu('weatherDropdown')" title="Időjárás és zónák">🌤️</button>
+        <div class="dropdown" id="weatherDropdown">
+            <div style="color:#94a3b8;font-size:10px;font-weight:600;letter-spacing:.05em;margin-bottom:2px;">IDŐJÁRÁS</div>
+            ${Object.entries(WEATHER_CONFIGS??{}).map(([k,v])=>`
+            <button class="iconBtn weather-btn" data-weather="${k}" onclick="setWeather('${k}')" title="${v.label}" style="font-size:18px;">${v.label.split(' ')[0]}</button>`).join('')}
+            <div style="height:1px;background:rgba(255,255,255,.08);margin:4px 0;"></div>
+            <div style="color:#94a3b8;font-size:10px;font-weight:600;letter-spacing:.05em;margin-bottom:2px;">ZÓNÁK</div>
+            <div style="display:flex;gap:4px;margin-bottom:4px;">
+                <label style="color:#94a3b8;font-size:10px;display:flex;flex-direction:column;gap:2px;">Szín<input type="color" id="zoneColor" value="#fbbf24" style="width:36px;height:24px;border:none;border-radius:4px;cursor:pointer;background:none;padding:0;"></label>
+                <div style="display:flex;flex-direction:column;gap:2px;">
+                    <span style="color:#94a3b8;font-size:10px;">Méret</span>
+                    <div style="display:flex;gap:2px;">
+                        <button class="effect-size-btn active" id="zoneSizeS" onclick="setZoneSize('S')" style="width:22px;">S</button>
+                        <button class="effect-size-btn" id="zoneSizeM" onclick="setZoneSize('M')" style="width:22px;">M</button>
+                        <button class="effect-size-btn" id="zoneSizeL" onclick="setZoneSize('L')" style="width:22px;">L</button>
+                    </div>
+                </div>
+            </div>
+            <button class="iconBtn" onclick="startZoneMode('light')" title="Fény zóna lerakás" style="font-size:14px;height:36px;">☀️ Fény</button>
+            <button class="iconBtn" onclick="startZoneMode('dark')" title="Sötét zóna lerakás" style="font-size:14px;height:36px;">🌑 Sötét</button>
+            <button class="iconBtn" onclick="clearAllZones()" title="Összes zóna törlése" style="font-size:14px;height:36px;color:#f87171;">🗑️ Zónák</button>
+        </div>
+    </div>
+
     <!-- EFFEKTEK - csak admin mode-ban látszik -->
     <div class="menuBlock" id="effectMenuBlock" style="display:none;">
         <button class="menuToggle" onclick="toggleMenu('effectDropdown')" title="Effektek">✨</button>
@@ -1508,6 +1623,7 @@ body{
 </div>
 
 <div id="map"></div>
+<div class="weather-overlay" id="weatherOverlay"></div>
 
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 <script src="https://unpkg.com/leaflet-draw@1.0.4/dist/leaflet.draw.js"></script>
@@ -1982,12 +2098,38 @@ map.on(
 ========================================================= */
 
 function toggleMenu(id){
-    const all = ['markerDropdown','drawDropdown','effectDropdown'];
+    const all = ['markerDropdown','drawDropdown','effectDropdown','weatherDropdown'];
     all.forEach(otherId => {
         if (otherId !== id) document.getElementById(otherId)?.classList.remove('open');
     });
     document.getElementById(id)?.classList.toggle('open');
 }
+
+// Zóna lerakás mód
+let _zoneMode = null;
+let _zoneSize = 'S';
+
+function setZoneSize(s) {
+    _zoneSize = s;
+    ['S','M','L'].forEach(sz => {
+        document.getElementById('zoneSize'+sz)?.classList.toggle('active', sz===s);
+    });
+}
+
+function startZoneMode(type) {
+    _zoneMode = type;
+    map.getContainer().style.cursor = type === 'light' ? 'crosshair' : 'cell';
+    toggleMenu('weatherDropdown');
+}
+
+map.on('click', function(e2) {
+    if (!_zoneMode) return;
+    const color = document.getElementById('zoneColor')?.value || '#fbbf24';
+    if (_zoneMode === 'light') addLightZone(e2.latlng, color, _zoneSize);
+    else addDarkZone(e2.latlng, _zoneSize);
+    _zoneMode = null;
+    map.getContainer().style.cursor = '';
+});
 
 /* =========================================================
    MARKERS
@@ -2101,8 +2243,11 @@ map.on('click', function(e){
 function buildMarkerHTML(data){
     const sz = data.size || 30;
     const outline = data.outline !== false;
+    const outlineStyle = outline
+        ? 'text-shadow:-2px -2px 0 #000,2px -2px 0 #000,-2px 2px 0 #000,2px 2px 0 #000,-2px 0 0 #000,2px 0 0 #000,0 -2px 0 #000,0 2px 0 #000;'
+        : '';
     return `<div style="text-align:center;">
-        <div class="customMarker" style="font-size:${sz}px;${outline?'-webkit-text-stroke:2px black;paint-order:stroke fill;':''}">
+        <div class="customMarker" style="font-size:${sz}px;${outlineStyle}">
             ${data.icon}
         </div>
         <div class="markerLabel">${data.name || ''}</div>
@@ -2175,13 +2320,15 @@ function openMarkerEditor(marker){
     const d = marker.data;
 
     if (!canEdit()) {
-        // Readonly popup: csak név és leírás
         const roHtml = `<div class="popupForm" style="max-width:200px;">
             ${d.name ? `<div style="font-weight:700;color:#e2e8f0;font-size:.9rem;">${d.name}</div>` : ''}
             ${d.description ? `<div style="color:#94a3b8;font-size:.8rem;margin-top:4px;">${d.description}</div>` : ''}
             ${!d.name && !d.description ? `<div style="color:#64748b;font-size:.8rem;">Névtelen jelölő</div>` : ''}
         </div>`;
-        marker.bindPopup(roHtml).openPopup();
+        L.popup({ closeButton:true, className:'leaflet-popup' })
+            .setLatLng(marker.getLatLng())
+            .setContent(roHtml)
+            .openOn(map);
         return;
     }
 
@@ -2208,7 +2355,10 @@ function openMarkerEditor(marker){
         </div>
     `;
 
-    marker.bindPopup(html).openPopup();
+    L.popup({ closeButton:true, className:'leaflet-popup' })
+        .setLatLng(marker.getLatLng())
+        .setContent(html)
+        .openOn(map);
     window.currentEditingMarker = marker;
 }
 
@@ -2231,7 +2381,7 @@ window.saveMarkerPopup = function(){
         iconAnchor:[60, iconH],
         popupAnchor:[0, -iconH]
     }));
-    marker.closePopup();
+    map.closePopup();
     saveCampaign();
 };
 
@@ -2240,23 +2390,12 @@ window.saveMarkerPopup = function(){
 ========================================================= */
 
 window.deleteMarkerPopup = function(){
-
-    const marker =
-        window.currentEditingMarker;
-
+    const marker = window.currentEditingMarker;
+    map.closePopup();
     map.removeLayer(marker);
-
-    const index =
-        markers.indexOf(marker);
-
-    if(index > -1){
-
-        markers.splice(index,1);
-
-    }
-
+    const index = markers.indexOf(marker);
+    if(index > -1) markers.splice(index, 1);
     saveCampaign();
-
 };
 
 /* =========================================================
@@ -2270,10 +2409,10 @@ function saveCampaign(){
         activeGroup: activeMapGroup,
         activeLayer: activeLayerName,
         groups: groupState,
-        effects: effects.map(em => ({
-            latlng: em.getLatLng(),
-            efxData: em.efxData
-        }))
+        effects: effects.map(em => ({ latlng: em.getLatLng(), efxData: em.efxData })),
+        weather: currentWeather,
+        lightZones: lightZones.map(z => ({ latlng: z.latlng, color: z.color, size: z.size })),
+        darkZones:  darkZones.map(z => ({ latlng: z.latlng, size: z.size })),
     };
     localStorage.setItem('ynev_campaign', JSON.stringify(campaign));
     window.scheduleSave();
@@ -2314,6 +2453,15 @@ function loadCampaign(data){
 
     // Aktív csoport megjelenítése
     loadGroupState(activeMapGroup);
+
+    // Időjárás visszaállítása
+    if (campaign.weather) setWeather(campaign.weather);
+
+    // Zónák visszatöltése
+    lightZones.forEach(z => z.el.remove()); lightZones.length = 0;
+    darkZones.forEach(z => z.el.remove());  darkZones.length = 0;
+    (campaign.lightZones || []).forEach(z => addLightZone(z.latlng, z.color, z.size));
+    (campaign.darkZones  || []).forEach(z => addDarkZone(z.latlng, z.size));
 
     // Effektek betöltése
     if (campaign.effects && Array.isArray(campaign.effects)) {
@@ -2547,6 +2695,106 @@ map.on('mousemove', function(e){
 });
 
 /* =========================================================
+   VIZUÁLIS OVERLAY RENDSZER
+========================================================= */
+
+let currentWeather = null;
+const lightZones = [];
+const darkZones  = [];
+
+const WEATHER_CONFIGS = {
+    rain: {
+        label: '🌧️ Eső',
+        build() {
+            const overlay = document.getElementById('weatherOverlay');
+            overlay.innerHTML = '';
+            for (let i = 0; i < 80; i++) {
+                const d = document.createElement('div');
+                d.className = 'rain-drop';
+                const h = 10 + Math.random() * 25;
+                d.style.cssText = `left:${Math.random()*100}%;height:${h}px;animation-duration:${.4+Math.random()*.6}s;animation-delay:${Math.random()*2}s;top:-${h}px;`;
+                overlay.appendChild(d);
+            }
+        }
+    },
+    snow: {
+        label: '❄️ Hó',
+        build() {
+            const overlay = document.getElementById('weatherOverlay');
+            overlay.innerHTML = '';
+            for (let i = 0; i < 60; i++) {
+                const d = document.createElement('div');
+                d.className = 'snow-flake';
+                const sz = 2 + Math.random() * 4;
+                d.style.cssText = `left:${Math.random()*100}%;width:${sz}px;height:${sz}px;animation-duration:${2+Math.random()*3}s;animation-delay:${Math.random()*4}s;top:-10px;`;
+                overlay.appendChild(d);
+            }
+        }
+    },
+    fog: {
+        label: '🌫️ Köd',
+        build() {
+            const overlay = document.getElementById('weatherOverlay');
+            overlay.innerHTML = '<div class="fog-layer"></div><div class="fog-layer"></div>';
+        }
+    },
+    clear: {
+        label: '☀️ Tiszta',
+        build() {
+            document.getElementById('weatherOverlay').innerHTML = '';
+        }
+    }
+};
+
+function setWeather(type) {
+    currentWeather = type;
+    WEATHER_CONFIGS[type]?.build();
+    // Gomb frissítés
+    document.querySelectorAll('.weather-btn').forEach(b => {
+        b.classList.toggle('active', b.dataset.weather === type);
+    });
+    saveCampaign();
+}
+
+function addLightZone(latlng, color, size) {
+    const sz = size === 'S' ? 80 : size === 'L' ? 200 : 130;
+    const point = map.latLngToContainerPoint(latlng);
+    const div = document.createElement('div');
+    div.className = 'light-zone';
+    div.style.cssText = `width:${sz*2}px;height:${sz*2}px;left:${point.x-sz}px;top:${point.y-sz}px;background:radial-gradient(circle,${color}33 0%,${color}11 50%,transparent 75%);`;
+    document.getElementById('weatherOverlay').appendChild(div);
+    lightZones.push({ latlng, color, size, el: div });
+    saveCampaign();
+}
+
+function addDarkZone(latlng, size) {
+    const sz = size === 'S' ? 80 : size === 'L' ? 200 : 130;
+    const point = map.latLngToContainerPoint(latlng);
+    const div = document.createElement('div');
+    div.className = 'dark-zone';
+    div.style.cssText = `width:${sz*2}px;height:${sz*2}px;left:${point.x-sz}px;top:${point.y-sz}px;background:radial-gradient(circle,rgba(0,0,0,.7) 0%,rgba(0,0,0,.4) 50%,transparent 75%);`;
+    document.getElementById('weatherOverlay').appendChild(div);
+    darkZones.push({ latlng, size, el: div });
+    saveCampaign();
+}
+
+// Zónák pozíció frissítése ha a térkép mozdul
+map.on('move zoom', function() {
+    [...lightZones, ...darkZones].forEach(z => {
+        const point = map.latLngToContainerPoint(z.latlng);
+        const sz = z.size === 'S' ? 80 : z.size === 'L' ? 200 : 130;
+        z.el.style.left = (point.x - sz) + 'px';
+        z.el.style.top  = (point.y - sz) + 'px';
+    });
+});
+
+function clearAllZones() {
+    lightZones.forEach(z => z.el.remove()); lightZones.length = 0;
+    darkZones.forEach(z => z.el.remove());  darkZones.length = 0;
+    saveCampaign();
+}
+
+/* =========================================================
    EFFEKT RENDSZER
 ========================================================= */
 
@@ -2725,6 +2973,8 @@ document.addEventListener('DOMContentLoaded', () => {
         if (isAdminMode && window._userProfile.role === 'admin') {
             const efxBlock = document.getElementById('effectMenuBlock');
             if (efxBlock) efxBlock.style.display = '';
+            const wxBlock = document.getElementById('weatherMenuBlock');
+            if (wxBlock) wxBlock.style.display = '';
         }
         // Kompakt mód: ha iframe-ben vagyunk (window !== window.top)
         if (window !== window.top || isAdminMode) {
@@ -2784,11 +3034,13 @@ function openEffectEditor(em) {
     const def = EFFECT_DEFS[d.key];
 
     if (!canEdit()) {
-        // Readonly: csak a neve jelenik meg
         const roHtml = `<div class="popupForm" style="max-width:160px;">
             <div style="color:#c084fc;font-size:.85rem;font-weight:600;">${def.label}</div>
         </div>`;
-        em.bindPopup(roHtml).openPopup();
+        L.popup({ closeButton:true })
+            .setLatLng(em.getLatLng())
+            .setContent(roHtml)
+            .openOn(map);
         return;
     }
 
@@ -2805,7 +3057,10 @@ function openEffectEditor(em) {
             <button class="deleteBtn" onclick="deleteEffectPopup()">Törlés</button>
         </div>
     </div>`;
-    em.bindPopup(html).openPopup();
+    L.popup({ closeButton:true })
+        .setLatLng(em.getLatLng())
+        .setContent(html)
+        .openOn(map);
     window.currentEditingEffect = em;
 }
 
@@ -2830,7 +3085,7 @@ window.saveEffectPopup = function() {
         html: `<div data-efx="${em.efxData.key}" data-color="${c}" data-size="${s}">${def.build(c,s)}</div>`,
         iconSize:[sz,sz], iconAnchor:[sz/2,sz/2]
     }));
-    em.closePopup();
+    map.closePopup();
     saveCampaign();
 };
 
@@ -2965,7 +3220,10 @@ document.addEventListener('mousemove', e => {
     const efxData = effects.map(em => ({ latlng: em.getLatLng(), efxData: em.efxData }))
     const { error } = await window._sb.from('map_states').upsert({
       user_id: user.id,
-      drawings: { version:2, groups: groupState, effects: efxData },
+      drawings: { version:2, groups: groupState, effects: efxData,
+        weather: currentWeather,
+        lightZones: lightZones.map(z=>({latlng:z.latlng,color:z.color,size:z.size})),
+        darkZones: darkZones.map(z=>({latlng:z.latlng,size:z.size})) },
       markers: {},
       active_layer: activeLayerName,
       updated_at: new Date().toISOString()
@@ -3113,18 +3371,54 @@ document.addEventListener('mousemove', e => {
   }
 
   // ─── KAMPÁNY BETÖLTÉSE (admin publikált adatok) ──────────────
-  window.loadCampaignFromAdmin = async function() {
+  // ─── KAMPÁNY LENYÍLÓ MENÜ ──────────────────────────────────
+  window.toggleCampaignMenu = async function() {
+    const menu = document.getElementById('campaignMenu');
+    if (!menu) return;
+    const isOpen = menu.style.display !== 'none';
+    menu.style.display = isOpen ? 'none' : 'block';
+    if (!isOpen) await window.loadCampaignMenuList();
+  }
+
+  window.loadCampaignMenuList = async function() {
+    const listEl = document.getElementById('campaignMenuList');
+    if (!listEl || !window._sb) return;
+    const { data } = await window._sb.from('campaign_maps')
+      .select('id, name, published')
+      .eq('published', true)
+      .order('updated_at', { ascending: false });
+    if (!data || data.length === 0) {
+      listEl.innerHTML = '<div style="color:#64748b;font-size:.75rem;padding:4px 8px;">Nincs publikált kampány</div>';
+      return;
+    }
+    listEl.innerHTML = data.map(c => `
+      <button onclick="window.loadCampaignFromAdmin('${c.id}')"
+        style="width:100%;text-align:left;background:rgba(168,85,247,.08);border:1px solid rgba(168,85,247,.2);
+        color:#c084fc;border-radius:6px;padding:6px 10px;cursor:pointer;font-size:.8rem;transition:.15s;"
+        onmouseover="this.style.background='rgba(168,85,247,.18)'"
+        onmouseout="this.style.background='rgba(168,85,247,.08)'"
+      >📢 ${c.name}</button>`).join('');
+  }
+
+  // Kívülre kattintásra bezár
+  document.addEventListener('click', function(e) {
+    const menu = document.getElementById('campaignMenu');
+    const btn  = document.getElementById('campaignMenuBtn');
+    if (menu && btn && !menu.contains(e.target) && !btn.contains(e.target)) {
+      menu.style.display = 'none';
+    }
+  });
+
+  window.loadCampaignFromAdmin = async function(id) {
     if (!window._sb) return
     const { data: { user } } = await window._sb.auth.getUser()
     if (!user) return
-    // Lekérjük a publikált kampány térképet
-    const { data, error } = await window._sb
-      .from('campaign_maps')
-      .select('*')
-      .eq('published', true)
-      .order('updated_at', { ascending: false })
-      .limit(1)
-      .maybeSingle()
+    // Lekérjük a kampány térképet ID alapján, vagy az utolsó publikáltat
+    let query = window._sb.from('campaign_maps').select('*')
+    if (id) query = query.eq('id', id)
+    else query = query.eq('published', true).order('updated_at', { ascending: false }).limit(1)
+    const { data, error } = await query.maybeSingle()
+    document.getElementById('campaignMenu').style.display = 'none';
     if (error) { console.error('Kampány betöltési hiba:', error); return }
     if (!data) { alert('Nincs publikált kampány térkép.'); return }
     // Töröljük a jelenlegi rajzokat
