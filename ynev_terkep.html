@@ -1458,9 +1458,11 @@ function switchLayer(layerKey) {
     saveGroupDrawings(oldGroup);
 
     activeLayerKey = layerKey;
+    window.activeLayerKey = layerKey;
 
     // Új tile layer betöltése
     currentTileLayer = buildTiles(LAYER_CONFIG[layerKey].path);
+    window.currentTileLayer = currentTileLayer;
     currentTileLayer.addTo(map);
 
     // Ha csoport váltás történt, rajzok/markerek újratöltése
@@ -1503,6 +1505,8 @@ buildLayerControl();
 
 // Inicális betöltés
 currentTileLayer = buildTiles(LAYER_CONFIG[activeLayerKey].path);
+window.currentTileLayer = currentTileLayer;
+window.activeLayerKey = activeLayerKey;
 currentTileLayer.addTo(map);
 
 map.fitBounds(bounds);
@@ -1557,6 +1561,18 @@ function loadGroupDrawings(groupKey) {
         markers.push(marker);
     });
 }
+
+/* =========================================================
+   WINDOW ALIASOK (cross-script block eléréshez)
+========================================================= */
+
+window.groupDrawings      = groupDrawings;
+window.groupMarkers       = groupMarkers;
+window.LAYER_CONFIG       = LAYER_CONFIG;
+window.buildTiles         = buildTiles;
+window.switchLayer        = switchLayer;
+window.saveGroupDrawings  = saveGroupDrawings;
+window.loadGroupDrawings  = loadGroupDrawings;
 
 /* =========================================================
    HELPERS
@@ -1819,7 +1835,7 @@ function toggleMenu(id){
 
 let activeIcon = null;
 
-const markers = [];
+// markers változó a draw system-ben van definiálva (let markers = [])
 
 document.querySelectorAll('.markerBtn')
 .forEach(btn=>{
@@ -2464,14 +2480,14 @@ document.addEventListener('mousemove', e => {
     if (!window._sb || !window._userProfile) return
     const { data: { user } } = await window._sb.auth.getUser()
     if (!user) return
-    // Aktív csoport frissítése mentés előtt
-    const activeGroup = LAYER_CONFIG[activeLayerKey].group
-    saveGroupDrawings(activeGroup)
+    const currentKey = window.activeLayerKey
+    const activeGroup = window.LAYER_CONFIG[currentKey].group
+    window.saveGroupDrawings(activeGroup)
     const { error } = await window._sb.from('map_states').upsert({
       user_id: user.id,
-      drawings: groupDrawings,   // teljes csoport objektum {3724:..., 3715:..., 3692:...}
-      markers: groupMarkers,     // teljes csoport objektum
-      active_layer: activeLayerKey,
+      drawings: window.groupDrawings,
+      markers: window.groupMarkers,
+      active_layer: currentKey,
       updated_at: new Date().toISOString()
     }, { onConflict: 'user_id' })
     if (!error) window.showSaveIndicator()
@@ -2485,26 +2501,21 @@ document.addEventListener('mousemove', e => {
     const { data } = await window._sb.from('map_states')
       .select('*').eq('user_id', user.id).single()
     if (data) {
-      // Új formátum: drawings = {3724:..., 3715:..., 3692:...}
       if (data.drawings && data.drawings['3724'] !== undefined) {
-        Object.keys(groupDrawings).forEach(grp => {
-          groupDrawings[grp] = data.drawings[grp] || null
-          groupMarkers[grp] = data.markers?.[grp] || []
+        Object.keys(window.groupDrawings).forEach(grp => {
+          window.groupDrawings[grp] = data.drawings[grp] || null
+          window.groupMarkers[grp] = data.markers?.[grp] || []
         })
       } else if (data.drawings) {
-        // Régi formátum: drawings közvetlenül GeoJSON – 3724 csoportba kerül
-        groupDrawings['3724'] = data.drawings
-        groupMarkers['3724'] = data.markers || []
+        window.groupDrawings['3724'] = data.drawings
+        window.groupMarkers['3724'] = data.markers || []
       }
-      // Aktív réteg visszaállítása
       const targetLayer = data.active_layer || '3724_domborzati'
-      activeLayerKey = targetLayer
-      if (currentTileLayer) map.removeLayer(currentTileLayer)
-      currentTileLayer = buildTiles(LAYER_CONFIG[targetLayer].path)
-      currentTileLayer.addTo(map)
-      // Aktív csoport rajzainak betöltése
-      loadGroupDrawings(LAYER_CONFIG[targetLayer].group)
-      // Gombok frissítése
+      window.activeLayerKey = targetLayer
+      if (window.currentTileLayer) map.removeLayer(window.currentTileLayer)
+      window.currentTileLayer = window.buildTiles(window.LAYER_CONFIG[targetLayer].path)
+      window.currentTileLayer.addTo(map)
+      window.loadGroupDrawings(window.LAYER_CONFIG[targetLayer].group)
       document.querySelectorAll('.layer-btn').forEach(btn => {
         btn.classList.toggle('active', btn.dataset.layer === targetLayer)
       })
