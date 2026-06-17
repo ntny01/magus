@@ -174,6 +174,18 @@ body{
 
 }
 
+/* Kompakt mód iframe-ben (?mode=admin) */
+body.compact-menu .menuColumn { top:8px; gap:6px; }
+body.compact-menu .menuToggle { width:42px; height:42px; font-size:18px; border-radius:12px; }
+body.compact-menu .menuBlock { gap:6px; }
+body.compact-menu .toolbar { height:44px; padding:0 10px; }
+body.compact-menu .toolbar .btn { padding:6px 10px; font-size:.72rem; }
+body.compact-menu .title { font-size:14px; }
+body.compact-menu .iconBtn { width:42px; height:42px; font-size:20px; border-radius:12px; }
+body.compact-menu .dropdown { width:64px; padding:8px 6px; gap:6px; }
+body.compact-menu .drawSettings { font-size:10px; gap:6px; }
+body.compact-menu .effect-size-btn { padding:2px; font-size:10px; }
+
 .menuBlock{
 
     display:flex;
@@ -2140,9 +2152,12 @@ popupAnchor:[0,-40]
     }));
     marker.addTo(map);
     markers.push(marker);
+    _justPlaced = true;
+    setTimeout(() => { _justPlaced = false; }, 300);
     openMarkerEditor(marker);
     marker.on('click', function(ev) {
         L.DomEvent.stopPropagation(ev);
+        if (_justPlaced) return;
         openMarkerEditor(marker);
     });
 
@@ -2538,7 +2553,8 @@ map.on('mousemove', function(e){
 let activeEffectKey = null;
 let effectColor = '#000000';
 let effectSize = 'S';
-const effects = []; // {marker, key, color, size}
+const effects = [];
+let _justPlaced = false; // click bug guard // {marker, key, color, size}
 
 const EFFECT_SIZE_MAP = { S: .7, M: 1, L: 1.5 };
 
@@ -2710,6 +2726,10 @@ document.addEventListener('DOMContentLoaded', () => {
             const efxBlock = document.getElementById('effectMenuBlock');
             if (efxBlock) efxBlock.style.display = '';
         }
+        // Kompakt mód: ha iframe-ben vagyunk (window !== window.top)
+        if (window !== window.top || isAdminMode) {
+            document.body.classList.add('compact-menu');
+        }
     }
     checkAdminMode();
 
@@ -2745,9 +2765,12 @@ map.on('click', function(e) {
     effectMarker.efxData = { key: activeEffectKey, color: c, size: s };
     effectMarker.addTo(map);
     effects.push(effectMarker);
-    // Kattintásra szerkesztés/törlés - stopPropagation hogy ne triggerelje a map click-et
+    _justPlaced = true;
+    setTimeout(() => { _justPlaced = false; }, 300);
+    // Kattintásra szerkesztés/törlés
     effectMarker.on('click', function(ev) {
         L.DomEvent.stopPropagation(ev);
+        if (_justPlaced) return;
         openEffectEditor(effectMarker);
     });
     // Auto-deselect
@@ -3092,8 +3115,52 @@ document.addEventListener('mousemove', e => {
   // ─── KAMPÁNY BETÖLTÉSE (admin publikált adatok) ──────────────
   window.loadCampaignFromAdmin = async function() {
     if (!window._sb) return
-    // Placeholder: majd a sabloneditor körben lesz implementálva a campaign_maps tábla
-    alert('Kampány betöltése hamarosan elérhető lesz a Sablonszerkesztőből.')
+    const { data: { user } } = await window._sb.auth.getUser()
+    if (!user) return
+    // Lekérjük a publikált kampány térképet
+    const { data, error } = await window._sb
+      .from('campaign_maps')
+      .select('*')
+      .eq('published', true)
+      .order('updated_at', { ascending: false })
+      .limit(1)
+      .maybeSingle()
+    if (error) { console.error('Kampány betöltési hiba:', error); return }
+    if (!data) { alert('Nincs publikált kampány térkép.'); return }
+    // Töröljük a jelenlegi rajzokat
+    effects.forEach(em => map.removeLayer(em)); effects.length = 0
+    markers.forEach(m => map.removeLayer(m)); markers.length = 0
+    drawnItems.clearLayers()
+    // Betöltjük a kampány adatokat
+    if (data.drawings?.version === 2 && data.drawings?.groups) {
+      Object.keys(groupState).forEach(grp => {
+        if (data.drawings.groups[grp]) {
+          groupState[grp].drawings = data.drawings.groups[grp]?.drawings || null
+          groupState[grp].markers  = data.drawings.groups[grp]?.markers  || []
+        }
+      })
+      activeMapGroup  = data.active_layer ? layerNameToGroup(data.active_layer) : '3724'
+      activeLayerName = data.active_layer || '3724_domborzati'
+      // Effektek betöltése
+      if (data.drawings.effects) {
+        data.drawings.effects.forEach(e => {
+          const def = EFFECT_DEFS[e.efxData?.key]; if (!def) return
+          const {key, color, size} = e.efxData
+          const sc = EFFECT_SIZE_MAP[size] || 1
+          const sz = Math.round(56 * sc)
+          const em = L.marker(e.latlng, { icon: L.divIcon({
+            className: '', html: `<div data-efx="${key}">${def.build(color, size)}</div>`,
+            iconSize: [sz, sz], iconAnchor: [sz/2, sz/2]
+          })})
+          em.efxData = {key, color, size}
+          em.addTo(map)
+          em.on('click', function(ev) { L.DomEvent.stopPropagation(ev); if(_justPlaced) return; openEffectEditor(em); })
+          effects.push(em)
+        })
+      }
+    }
+    loadGroupState(activeMapGroup)
+    window.showSaveIndicator()
   }
 
   window.showSaveIndicator = function() {
