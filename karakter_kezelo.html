@@ -705,7 +705,7 @@ const sb = supabase.createClient(
                     appState = parsed;
                     renderEverything();
                 } else if (parsed._type === "magus_character_card") {
-                    loadRawCharacterCard(parsed);
+                    loadRawCharacterCard(parsed, true);
                 } else {
                     alert("Ismeretlen JSON formátum!");
                 }
@@ -716,30 +716,43 @@ const sb = supabase.createClient(
         reader.readAsText(file);
     }
 
-    function loadRawCharacterCard(card) {
+    function loadRawCharacterCard(card, freshLoad = true) {
         appState.rawCharacterCard = card;
+
+        // Név és ini mindig frissül
         let origName = card.name || "Ismeretlen Hős";
         appState.charData.name = origName;
         appState.charData.shortName = shortenName(origName);
-
         let ugyesseg = getStatValue(card, "Ügyesség");
         let erzek = getStatValue(card, "Érzék");
         appState.charData.iniBonus = ugyesseg + erzek;
 
+        // Max HP és max Power frissítése a stat alapján
         let allokepesseg = getStatValue(card, "Állóképesség");
-        appState.charData.maxHp = allokepesseg * 5;
-        appState.charData.hp = appState.charData.maxHp;
-
+        let newMaxHp = allokepesseg * 5;
         let akaratero = getStatValue(card, "Akaraterő");
-        appState.charData.maxPower = akaratero > 0 ? akaratero : 5;
-        appState.charData.power = appState.charData.maxPower;
-        appState.charData.powerType = "kegypont";
+        let newMaxPower = akaratero > 0 ? akaratero : 5;
 
-        appState.charData.sfe = 0;
-        appState.charData.weapons = [];
-        appState.charData.money = { gold: 0, silver: 0, copper: 0 };
-        appState.bankMoney = { gold: 0, silver: 0, copper: 0 };
-        appState.henchmen = [];
+        if (freshLoad) {
+            // Teljesen friss betöltés: mindent nulláz és max-ra állít
+            appState.charData.maxHp = newMaxHp;
+            appState.charData.hp = newMaxHp;
+            appState.charData.maxPower = newMaxPower;
+            appState.charData.power = newMaxPower;
+            appState.charData.powerType = "kegypont";
+            appState.charData.sfe = 0;
+            appState.charData.weapons = [];
+            appState.charData.money = { gold: 0, silver: 0, copper: 0 };
+            appState.bankMoney = { gold: 0, silver: 0, copper: 0 };
+            appState.henchmen = [];
+        } else {
+            // Folytatás: csak a maxokat frissíti, HP/power/pénz/csatlós megmarad
+            appState.charData.maxHp = newMaxHp;
+            // Ha a jelenlegi HP > új max, csökkentjük
+            if (appState.charData.hp > newMaxHp) appState.charData.hp = newMaxHp;
+            appState.charData.maxPower = newMaxPower;
+            if (appState.charData.power > newMaxPower) appState.charData.power = newMaxPower;
+        }
 
         renderEverything();
     }
@@ -1426,33 +1439,27 @@ const sb = supabase.createClient(
     const { data: session } = await window._sb.from('session_states')
       .select('*').eq('user_id', user.id).eq('sheet_id', sheetId).maybeSingle()
 
-    if (session) {
-      // Van session ehhez a karakterhez — folytatjuk ahol abbahagytuk
-      if (session.char_data) appState.charData = session.char_data
-      if (session.bank_money) appState.bankMoney = session.bank_money
-      if (session.henchmen) appState.henchmen = session.henchmen
-      if (session.raw_card) {
-        appState.rawCharacterCard = session.raw_card
-        // charData frissítése a raw_card alapján (név, stb.)
-        loadRawCharacterCard(session.raw_card)
-        // Visszaállítjuk a mentett értékeket (loadRawCharacterCard felülírja)
-        if (session.char_data) appState.charData = session.char_data
-        if (session.bank_money) appState.bankMoney = session.bank_money
-        if (session.henchmen) appState.henchmen = session.henchmen
-      } else if (sheet?.data) {
-        // Ha nincs raw_card a sessionben, generáljuk a sheet-ből
-        const card = buildCardFromSheet(sheet.data)
-        appState.rawCharacterCard = card
-        loadRawCharacterCard(card)
-        if (session.char_data) appState.charData = session.char_data
-        if (session.bank_money) appState.bankMoney = session.bank_money
-        if (session.henchmen) appState.henchmen = session.henchmen
+    if (sheet?.data) {
+      // Mindig a friss sheet-ből generáljuk a raw_card-ot (stat változások megjelennek)
+      const freshCard = buildCardFromSheet(sheet.data)
+
+      if (session && session.char_data) {
+        // Van mentett session: char_data/bank/csatlós megmarad, csak stat-ok frissülnek
+        appState.charData = session.char_data
+        appState.bankMoney = session.bank_money || { gold:0, silver:0, copper:0 }
+        appState.henchmen = session.henchmen || []
+        // Friss kártya betöltése folytatás módban (HP/pénz nem nullázódik)
+        loadRawCharacterCard(freshCard, false)
+      } else {
+        // Nincs session: teljesen friss betöltés, minden nullázódik és max-ra áll
+        loadRawCharacterCard(freshCard, true)
       }
-    } else if (sheet?.data) {
-      // Nincs session — friss betöltés a karakterlapból
-      const card = buildCardFromSheet(sheet.data)
-      appState.rawCharacterCard = card
-      loadRawCharacterCard(card)
+    } else if (session && session.char_data) {
+      // Nincs sheet adat (ritka eset), session-ből töltjük amit tudunk
+      appState.charData = session.char_data
+      appState.bankMoney = session.bank_money || { gold:0, silver:0, copper:0 }
+      appState.henchmen = session.henchmen || []
+      if (session.raw_card) loadRawCharacterCard(session.raw_card, false)
     }
 
     // Mentjük melyik sheet van betöltve
@@ -1532,7 +1539,7 @@ const sb = supabase.createClient(
       char_data: appState.charData,
       bank_money: appState.bankMoney,
       henchmen: appState.henchmen,
-      raw_card: appState.rawCharacterCard || null,
+      raw_card: null,  // mindig sheet-ből regenerálódik betöltéskor
       updated_at: new Date().toISOString()
     }
     // Ha van sheet_id, az alapján upsert; különben session_name alapján
@@ -1553,25 +1560,39 @@ const sb = supabase.createClient(
       .order('updated_at', { ascending: false }).limit(1).maybeSingle()
 
     if (sheetSession) {
-      if (sheetSession.char_data) appState.charData = sheetSession.char_data
-      if (sheetSession.bank_money) appState.bankMoney = sheetSession.bank_money
-      if (sheetSession.henchmen) appState.henchmen = sheetSession.henchmen
-      if (sheetSession.raw_card) appState.rawCharacterCard = sheetSession.raw_card
       window._currentKKSheetId = sheetSession.sheet_id
-      renderEverything()
+      // Friss sheet adat lekérése (stat változások megjelennek)
+      const { data: sheet } = await window._sb.from('character_sheets')
+        .select('*').eq('id', sheetSession.sheet_id).single()
+      if (sheet?.data) {
+        appState.charData = sheetSession.char_data || appState.charData
+        appState.bankMoney = sheetSession.bank_money || { gold:0, silver:0, copper:0 }
+        appState.henchmen = sheetSession.henchmen || []
+        const freshCard = buildCardFromSheet(sheet.data)
+        loadRawCharacterCard(freshCard, false)
+      } else {
+        // Sheet nem elérhető, session adatokkal megpróbáljuk
+        if (sheetSession.char_data) appState.charData = sheetSession.char_data
+        if (sheetSession.bank_money) appState.bankMoney = sheetSession.bank_money
+        if (sheetSession.henchmen) appState.henchmen = sheetSession.henchmen
+        renderEverything()
+      }
       updateKKActiveCharHeader()
       return
     }
 
-    // Fallback: default session (JSON-ból betöltött állapot)
+    // Fallback: default session (JSON-ból betöltött állapot, nincs sheet_id)
     const { data } = await window._sb.from('session_states')
       .select('*').eq('user_id', user.id).eq('session_name', 'default').maybeSingle()
     if (data) {
       if (data.char_data) appState.charData = data.char_data
       if (data.bank_money) appState.bankMoney = data.bank_money
       if (data.henchmen) appState.henchmen = data.henchmen
-      if (data.raw_card) appState.rawCharacterCard = data.raw_card
-      renderEverything()
+      if (data.raw_card) {
+        loadRawCharacterCard(data.raw_card, false)
+      } else {
+        renderEverything()
+      }
       updateKKActiveCharHeader()
     }
   }
