@@ -189,71 +189,64 @@ body{
 /* Eső */
 .rain-drop {
     position: absolute;
-    width: 1px;
-    background: linear-gradient(to bottom, transparent, rgba(147,197,253,.6));
+    width: 1.5px;
+    background: linear-gradient(to bottom, transparent, rgba(147,197,253,.8));
     animation: rainFall linear infinite;
+    border-radius: 1px;
 }
 @keyframes rainFall {
-    0%   { transform: translateY(-20px); opacity: 0; }
-    10%  { opacity: 1; }
-    90%  { opacity: .8; }
-    100% { transform: translateY(100vh); opacity: 0; }
+    0%   { transform: translateY(-30px) skewX(-8deg); opacity: 0; }
+    8%   { opacity: 1; }
+    92%  { opacity: .85; }
+    100% { transform: translateY(105vh) skewX(-8deg); opacity: 0; }
 }
 
 /* Hó */
 .snow-flake {
     position: absolute;
     border-radius: 50%;
-    background: rgba(255,255,255,.85);
-    animation: snowFall linear infinite;
+    background: rgba(255,255,255,.9);
+    animation: snowFall ease-in-out infinite;
+    box-shadow: 0 0 3px rgba(255,255,255,.5);
 }
 @keyframes snowFall {
-    0%   { transform: translateY(-10px) translateX(0); opacity: 0; }
-    10%  { opacity: 1; }
-    50%  { transform: translateY(50vh) translateX(15px); }
-    90%  { opacity: .7; }
-    100% { transform: translateY(105vh) translateX(-10px); opacity: 0; }
+    0%   { transform: translateY(-10px) translateX(0) rotate(0deg); opacity: 0; }
+    8%   { opacity: .9; }
+    50%  { transform: translateY(50vh) translateX(18px) rotate(180deg); }
+    92%  { opacity: .7; }
+    100% { transform: translateY(105vh) translateX(-12px) rotate(360deg); opacity: 0; }
+}
+
+/* Szél */
+.wind-line {
+    position: absolute;
+    height: 1.5px;
+    background: linear-gradient(to right, transparent, rgba(226,232,240,.55), transparent);
+    border-radius: 2px;
+    animation: windBlow ease-in-out infinite;
+}
+@keyframes windBlow {
+    0%   { transform: translateX(-120%) scaleX(.6); opacity: 0; }
+    15%  { opacity: .8; }
+    85%  { opacity: .6; }
+    100% { transform: translateX(120vw) scaleX(1.2); opacity: 0; }
 }
 
 /* Köd */
 .fog-layer {
     position: absolute;
     inset: 0;
-    background: radial-gradient(ellipse at 50% 60%, rgba(148,163,184,.18) 0%, rgba(148,163,184,.08) 60%, transparent 100%);
+    background: radial-gradient(ellipse at 50% 60%, rgba(148,163,184,.2) 0%, rgba(148,163,184,.1) 60%, transparent 100%);
     animation: fogDrift 12s ease-in-out infinite alternate;
 }
 .fog-layer:nth-child(2) {
-    background: radial-gradient(ellipse at 30% 40%, rgba(148,163,184,.14) 0%, transparent 70%);
+    background: radial-gradient(ellipse at 30% 40%, rgba(148,163,184,.15) 0%, transparent 70%);
     animation-duration: 16s;
     animation-direction: alternate-reverse;
 }
 @keyframes fogDrift {
     0%   { transform: translateX(-3%) translateY(0); opacity: .7; }
     100% { transform: translateX(3%) translateY(-2%); opacity: 1; }
-}
-
-/* Fény zóna */
-.light-zone {
-    position: absolute;
-    border-radius: 50%;
-    pointer-events: none;
-    animation: lightPulse 3s ease-in-out infinite alternate;
-}
-@keyframes lightPulse {
-    0%   { opacity: .6; }
-    100% { opacity: .85; }
-}
-
-/* Sötét zóna */
-.dark-zone {
-    position: absolute;
-    border-radius: 50%;
-    pointer-events: none;
-    animation: darkPulse 4s ease-in-out infinite alternate;
-}
-@keyframes darkPulse {
-    0%   { opacity: .55; }
-    100% { opacity: .75; }
 }
 
 /* Kompakt mód iframe-ben (?mode=admin) */
@@ -1431,7 +1424,7 @@ body{
 
     <!-- MARKERS -->
 
-    <div class="menuBlock">
+    <div class="menuBlock" id="markerMenuBlock">
 
         <button
             class="menuToggle"
@@ -1466,7 +1459,7 @@ body{
 
     <!-- DRAW -->
 
-    <div class="menuBlock">
+    <div class="menuBlock" id="drawMenuBlock">
 
         <button
             class="menuToggle"
@@ -1566,27 +1559,15 @@ body{
 
     <!-- VIZUÁLIS OVERLAY - csak admin mode-ban látszik -->
     <div class="menuBlock" id="weatherMenuBlock" style="display:none;">
-        <button class="menuToggle" onclick="toggleMenu('weatherDropdown')" title="Időjárás és zónák">🌤️</button>
+        <button class="menuToggle" onclick="toggleMenu('weatherDropdown')" title="Időjárás">🌤️</button>
         <div class="dropdown" id="weatherDropdown">
-            <div style="color:#94a3b8;font-size:10px;font-weight:600;letter-spacing:.05em;margin-bottom:2px;">IDŐJÁRÁS</div>
-            ${Object.entries(WEATHER_CONFIGS??{}).map(([k,v])=>`
-            <button class="iconBtn weather-btn" data-weather="${k}" onclick="setWeather('${k}')" title="${v.label}" style="font-size:18px;">${v.label.split(' ')[0]}</button>`).join('')}
-            <div style="height:1px;background:rgba(255,255,255,.08);margin:4px 0;"></div>
-            <div style="color:#94a3b8;font-size:10px;font-weight:600;letter-spacing:.05em;margin-bottom:2px;">ZÓNÁK</div>
-            <div style="display:flex;gap:4px;margin-bottom:4px;">
-                <label style="color:#94a3b8;font-size:10px;display:flex;flex-direction:column;gap:2px;">Szín<input type="color" id="zoneColor" value="#fbbf24" style="width:36px;height:24px;border:none;border-radius:4px;cursor:pointer;background:none;padding:0;"></label>
-                <div style="display:flex;flex-direction:column;gap:2px;">
-                    <span style="color:#94a3b8;font-size:10px;">Méret</span>
-                    <div style="display:flex;gap:2px;">
-                        <button class="effect-size-btn active" id="zoneSizeS" onclick="setZoneSize('S')" style="width:22px;">S</button>
-                        <button class="effect-size-btn" id="zoneSizeM" onclick="setZoneSize('M')" style="width:22px;">M</button>
-                        <button class="effect-size-btn" id="zoneSizeL" onclick="setZoneSize('L')" style="width:22px;">L</button>
-                    </div>
-                </div>
-            </div>
-            <button class="iconBtn" onclick="startZoneMode('light')" title="Fény zóna lerakás" style="font-size:14px;height:36px;">☀️ Fény</button>
-            <button class="iconBtn" onclick="startZoneMode('dark')" title="Sötét zóna lerakás" style="font-size:14px;height:36px;">🌑 Sötét</button>
-            <button class="iconBtn" onclick="clearAllZones()" title="Összes zóna törlése" style="font-size:14px;height:36px;color:#f87171;">🗑️ Zónák</button>
+            <div style="color:#94a3b8;font-size:10px;font-weight:600;letter-spacing:.05em;margin-bottom:4px;">IDŐJÁRÁS</div>
+            <button class="iconBtn weather-btn" data-weather="rain" onclick="setWeather('rain')" title="Eső" style="font-size:18px;height:36px;width:100%;justify-content:flex-start;gap:6px;">🌧️ Eső</button>
+            <button class="iconBtn weather-btn" data-weather="snow" onclick="setWeather('snow')" title="Hó" style="font-size:18px;height:36px;width:100%;justify-content:flex-start;gap:6px;">❄️ Hó</button>
+            <button class="iconBtn weather-btn" data-weather="wind" onclick="setWeather('wind')" title="Szél" style="font-size:18px;height:36px;width:100%;justify-content:flex-start;gap:6px;">💨 Szél</button>
+            <button class="iconBtn weather-btn" data-weather="fog" onclick="setWeather('fog')" title="Köd" style="font-size:18px;height:36px;width:100%;justify-content:flex-start;gap:6px;">🌫️ Köd</button>
+            <div style="height:1px;background:rgba(255,255,255,.08);margin:6px 0;"></div>
+            <button class="iconBtn" data-weather="clear" onclick="setWeather('clear')" style="font-size:13px;height:32px;width:100%;color:#94a3b8;">✕ Törlés</button>
         </div>
     </div>
 
@@ -2105,31 +2086,7 @@ function toggleMenu(id){
     document.getElementById(id)?.classList.toggle('open');
 }
 
-// Zóna lerakás mód
-let _zoneMode = null;
-let _zoneSize = 'S';
 
-function setZoneSize(s) {
-    _zoneSize = s;
-    ['S','M','L'].forEach(sz => {
-        document.getElementById('zoneSize'+sz)?.classList.toggle('active', sz===s);
-    });
-}
-
-function startZoneMode(type) {
-    _zoneMode = type;
-    map.getContainer().style.cursor = type === 'light' ? 'crosshair' : 'cell';
-    toggleMenu('weatherDropdown');
-}
-
-map.on('click', function(e2) {
-    if (!_zoneMode) return;
-    const color = document.getElementById('zoneColor')?.value || '#fbbf24';
-    if (_zoneMode === 'light') addLightZone(e2.latlng, color, _zoneSize);
-    else addDarkZone(e2.latlng, _zoneSize);
-    _zoneMode = null;
-    map.getContainer().style.cursor = '';
-});
 
 /* =========================================================
    MARKERS
@@ -2406,13 +2363,13 @@ function saveCampaign(){
     saveGroupState(activeMapGroup);
     const campaign = {
         version: 2,
+        map_type: mapType,
+        campaign_id: campaignMapId,
         activeGroup: activeMapGroup,
         activeLayer: activeLayerName,
         groups: groupState,
         effects: effects.map(em => ({ latlng: em.getLatLng(), efxData: em.efxData })),
         weather: currentWeather,
-        lightZones: lightZones.map(z => ({ latlng: z.latlng, color: z.color, size: z.size })),
-        darkZones:  darkZones.map(z => ({ latlng: z.latlng, size: z.size })),
     };
     localStorage.setItem('ynev_campaign', JSON.stringify(campaign));
     window.scheduleSave();
@@ -2443,6 +2400,8 @@ function loadCampaign(data){
         });
         activeMapGroup  = campaign.activeGroup  || '3724';
         activeLayerName = campaign.activeLayer  || '3724_domborzati';
+        // map_type visszaállítása
+        setMapType(campaign.map_type || 'free', campaign.campaign_id || null);
     } else {
         // Régi formátum: drawings + markers közvetlenül → 3724 csoportba kerül
         groupState['3724'].drawings = campaign.drawings || null;
@@ -2456,12 +2415,6 @@ function loadCampaign(data){
 
     // Időjárás visszaállítása
     if (campaign.weather) setWeather(campaign.weather);
-
-    // Zónák visszatöltése
-    lightZones.forEach(z => z.el.remove()); lightZones.length = 0;
-    darkZones.forEach(z => z.el.remove());  darkZones.length = 0;
-    (campaign.lightZones || []).forEach(z => addLightZone(z.latlng, z.color, z.size));
-    (campaign.darkZones  || []).forEach(z => addDarkZone(z.latlng, z.size));
 
     // Effektek betöltése
     if (campaign.effects && Array.isArray(campaign.effects)) {
@@ -2559,6 +2512,8 @@ function clearEverything(){
         groupState[grp].drawings = null;
         groupState[grp].markers = [];
     });
+    setMapType('free', null);
+    setWeather('clear');
     localStorage.removeItem('ynev_campaign');
     window.scheduleSave();
 }
@@ -2699,98 +2654,65 @@ map.on('mousemove', function(e){
 ========================================================= */
 
 let currentWeather = null;
-const lightZones = [];
-const darkZones  = [];
 
 const WEATHER_CONFIGS = {
     rain: {
-        label: '🌧️ Eső',
         build() {
-            const overlay = document.getElementById('weatherOverlay');
-            overlay.innerHTML = '';
-            for (let i = 0; i < 80; i++) {
+            const o = document.getElementById('weatherOverlay');
+            o.innerHTML = '';
+            for (let i = 0; i < 90; i++) {
                 const d = document.createElement('div');
                 d.className = 'rain-drop';
-                const h = 10 + Math.random() * 25;
-                d.style.cssText = `left:${Math.random()*100}%;height:${h}px;animation-duration:${.4+Math.random()*.6}s;animation-delay:${Math.random()*2}s;top:-${h}px;`;
-                overlay.appendChild(d);
+                const h = 12 + Math.random() * 22;
+                d.style.cssText = `left:${Math.random()*110-5}%;height:${h}px;animation-duration:${.35+Math.random()*.45}s;animation-delay:${Math.random()*2}s;top:-${h+10}px;`;
+                o.appendChild(d);
             }
         }
     },
     snow: {
-        label: '❄️ Hó',
         build() {
-            const overlay = document.getElementById('weatherOverlay');
-            overlay.innerHTML = '';
-            for (let i = 0; i < 60; i++) {
+            const o = document.getElementById('weatherOverlay');
+            o.innerHTML = '';
+            for (let i = 0; i < 65; i++) {
                 const d = document.createElement('div');
                 d.className = 'snow-flake';
                 const sz = 2 + Math.random() * 4;
-                d.style.cssText = `left:${Math.random()*100}%;width:${sz}px;height:${sz}px;animation-duration:${2+Math.random()*3}s;animation-delay:${Math.random()*4}s;top:-10px;`;
-                overlay.appendChild(d);
+                d.style.cssText = `left:${Math.random()*110-5}%;width:${sz}px;height:${sz}px;animation-duration:${3+Math.random()*4}s;animation-delay:${Math.random()*5}s;top:-10px;`;
+                o.appendChild(d);
+            }
+        }
+    },
+    wind: {
+        build() {
+            const o = document.getElementById('weatherOverlay');
+            o.innerHTML = '';
+            for (let i = 0; i < 18; i++) {
+                const d = document.createElement('div');
+                d.className = 'wind-line';
+                const w = 80 + Math.random() * 140;
+                const top = Math.random() * 100;
+                d.style.cssText = `top:${top}%;width:${w}px;animation-duration:${1.2+Math.random()*1.8}s;animation-delay:${Math.random()*3}s;left:-${w}px;`;
+                o.appendChild(d);
             }
         }
     },
     fog: {
-        label: '🌫️ Köd',
         build() {
-            const overlay = document.getElementById('weatherOverlay');
-            overlay.innerHTML = '<div class="fog-layer"></div><div class="fog-layer"></div>';
+            const o = document.getElementById('weatherOverlay');
+            o.innerHTML = '<div class="fog-layer"></div><div class="fog-layer"></div>';
         }
     },
     clear: {
-        label: '☀️ Tiszta',
-        build() {
-            document.getElementById('weatherOverlay').innerHTML = '';
-        }
+        build() { document.getElementById('weatherOverlay').innerHTML = ''; }
     }
 };
 
 function setWeather(type) {
     currentWeather = type;
     WEATHER_CONFIGS[type]?.build();
-    // Gomb frissítés
     document.querySelectorAll('.weather-btn').forEach(b => {
         b.classList.toggle('active', b.dataset.weather === type);
     });
-    saveCampaign();
-}
-
-function addLightZone(latlng, color, size) {
-    const sz = size === 'S' ? 80 : size === 'L' ? 200 : 130;
-    const point = map.latLngToContainerPoint(latlng);
-    const div = document.createElement('div');
-    div.className = 'light-zone';
-    div.style.cssText = `width:${sz*2}px;height:${sz*2}px;left:${point.x-sz}px;top:${point.y-sz}px;background:radial-gradient(circle,${color}33 0%,${color}11 50%,transparent 75%);`;
-    document.getElementById('weatherOverlay').appendChild(div);
-    lightZones.push({ latlng, color, size, el: div });
-    saveCampaign();
-}
-
-function addDarkZone(latlng, size) {
-    const sz = size === 'S' ? 80 : size === 'L' ? 200 : 130;
-    const point = map.latLngToContainerPoint(latlng);
-    const div = document.createElement('div');
-    div.className = 'dark-zone';
-    div.style.cssText = `width:${sz*2}px;height:${sz*2}px;left:${point.x-sz}px;top:${point.y-sz}px;background:radial-gradient(circle,rgba(0,0,0,.7) 0%,rgba(0,0,0,.4) 50%,transparent 75%);`;
-    document.getElementById('weatherOverlay').appendChild(div);
-    darkZones.push({ latlng, size, el: div });
-    saveCampaign();
-}
-
-// Zónák pozíció frissítése ha a térkép mozdul
-map.on('move zoom', function() {
-    [...lightZones, ...darkZones].forEach(z => {
-        const point = map.latLngToContainerPoint(z.latlng);
-        const sz = z.size === 'S' ? 80 : z.size === 'L' ? 200 : 130;
-        z.el.style.left = (point.x - sz) + 'px';
-        z.el.style.top  = (point.y - sz) + 'px';
-    });
-});
-
-function clearAllZones() {
-    lightZones.forEach(z => z.el.remove()); lightZones.length = 0;
-    darkZones.forEach(z => z.el.remove());  darkZones.length = 0;
     saveCampaign();
 }
 
@@ -3198,12 +3120,31 @@ document.addEventListener('mousemove', e => {
   // ─── AUTOSAVE ───────────────────────────────────────────────────
   let _saveTimer = null
 
-  // ─── JOGOSULTSÁG HELPER ────────────────────────────────────
+  // ─── TÉRKÉP TÍPUS ÉS READONLY LOGIKA ──────────────────────
+  // map_type: 'free' = szabad térkép (szerkeszthető), 'campaign' = sablon (readonly)
+  let mapType = 'free';
+  let campaignMapId = null;
+
+  function setMapType(type, cId) {
+    mapType = type;
+    campaignMapId = cId || null;
+    const isReadonly = type === 'campaign';
+    // Rajz és ikon menük elrejtése sablon módban
+    const markerBlock = document.getElementById('markerMenuBlock');
+    const drawBlock   = document.getElementById('drawMenuBlock');
+    if (markerBlock) markerBlock.style.display = isReadonly ? 'none' : '';
+    if (drawBlock)   drawBlock.style.display   = isReadonly ? 'none' : '';
+  }
+
+  function isReadonly() { return mapType === 'campaign'; }
+
   function canEdit() {
-    // Admin ?mode=admin URL-lel: mindent szerkeszthet
+    // Admin ?mode=admin URL-lel: effekteket/időjárást szerkeszthet
     const urlParams = new URLSearchParams(window.location.search)
     if (urlParams.get('mode') === 'admin' && window._userProfile?.role === 'admin') return true
-    // Player: nem szerkeszthet
+    // Szabad térkép: ikonokat rakhat le
+    if (mapType === 'free') return true
+    // Sablon térkép: readonly
     return false
   }
 
@@ -3221,9 +3162,7 @@ document.addEventListener('mousemove', e => {
     const { error } = await window._sb.from('map_states').upsert({
       user_id: user.id,
       drawings: { version:2, groups: groupState, effects: efxData,
-        weather: currentWeather,
-        lightZones: lightZones.map(z=>({latlng:z.latlng,color:z.color,size:z.size})),
-        darkZones: darkZones.map(z=>({latlng:z.latlng,size:z.size})) },
+        weather: currentWeather },
       markers: {},
       active_layer: activeLayerName,
       updated_at: new Date().toISOString()
@@ -3275,6 +3214,10 @@ document.addEventListener('mousemove', e => {
         activeLayerName = '3724_domborzati'
       }
       loadGroupState(activeMapGroup)
+      // map_type visszaállítása
+      const savedType2 = data.drawings?.map_type || 'free'
+      setMapType(savedType2, data.drawings?.campaign_id || null)
+      if (data.drawings?.weather) setWeather(data.drawings.weather)
     }
   }
 
@@ -3291,7 +3234,7 @@ document.addEventListener('mousemove', e => {
     const { data: { user } } = await window._sb.auth.getUser()
     if (!user) return
     const { data } = await window._sb.from('map_saves')
-      .select('id,name,created_at').eq('user_id', user.id)
+      .select('id,name,created_at,drawings').eq('user_id', user.id)
       .order('created_at', { ascending: false })
     const list = document.getElementById('saveList')
     if (!list) return
@@ -3299,16 +3242,24 @@ document.addEventListener('mousemove', e => {
       list.innerHTML = '<div style="color:#64748b;font-size:.78rem;">Nincs mentés</div>'
       return
     }
-    list.innerHTML = data.map(s => `
+    const freeSaves     = data.filter(s => !s.drawings?.map_type || s.drawings.map_type === 'free')
+    const campaignSaves = data.filter(s => s.drawings?.map_type === 'campaign')
+    const makeItem = s => `
       <div class="save-item">
         <span class="save-item-name" onclick="window.loadSaveItem('${s.id}')" title="${new Date(s.created_at).toLocaleString('hu-HU')}">
           ${s.name}
         </span>
         <button class="save-item-del" onclick="window.deleteSaveItem('${s.id}')" title="Törlés">✕</button>
-      </div>`).join('')
+      </div>`
+    const section = (label, color) => `<div style="font-size:.68rem;font-weight:700;letter-spacing:.08em;color:${color};padding:.2rem 0 .15rem;text-transform:uppercase;">${label}</div>`
+    let html = ''
+    if (freeSaves.length > 0) html += section('✦ Szabad térképek', '#4ade80') + freeSaves.map(makeItem).join('')
+    if (campaignSaves.length > 0) html += section('⚔ Sablon térképek', '#c084fc') + campaignSaves.map(makeItem).join('')
+    list.innerHTML = html || '<div style="color:#64748b;font-size:.78rem;">Nincs mentés</div>'
   }
 
   window.saveToList = async function() {
+    if (isReadonly()) { alert('Sablon térképet nem lehet elmenteni saját mentésként.'); return }
     const name = document.getElementById('saveNameInput')?.value?.trim()
     if (!name) { alert('Adj nevet a mentésnek!'); return }
     if (!window._sb) return
@@ -3319,7 +3270,8 @@ document.addEventListener('mousemove', e => {
     const { error } = await window._sb.from('map_saves').insert({
       user_id: user.id,
       name,
-      drawings: { version:2, groups: groupState, effects: efxData },
+      drawings: { version:2, map_type: mapType, campaign_id: campaignMapId,
+        groups: groupState, effects: efxData, weather: currentWeather },
       markers: {},
       active_layer: activeLayerName
     })
@@ -3359,6 +3311,11 @@ document.addEventListener('mousemove', e => {
       }
     }
     loadGroupState(activeMapGroup)
+    // map_type visszaállítása
+    const savedType = data.drawings?.map_type || 'free'
+    setMapType(savedType, data.drawings?.campaign_id || null)
+    // Időjárás visszaállítása
+    if (data.drawings?.weather) setWeather(data.drawings.weather)
     document.getElementById('savePanel')?.classList.remove('open')
   }
 
@@ -3425,6 +3382,8 @@ document.addEventListener('mousemove', e => {
     effects.forEach(em => map.removeLayer(em)); effects.length = 0
     markers.forEach(m => map.removeLayer(m)); markers.length = 0
     drawnItems.clearLayers()
+    // Sablon térkép: readonly mód
+    setMapType('campaign', data.id)
     // Betöltjük a kampány adatokat
     if (data.drawings?.version === 2 && data.drawings?.groups) {
       Object.keys(groupState).forEach(grp => {
