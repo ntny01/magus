@@ -189,13 +189,30 @@ body{
 /* Időjárás területek */
 .wx-zone {
     position: absolute;
-    border-radius: 50%;
     pointer-events: none;
     overflow: hidden;
+}
+.wx-zone-circle {
+    border-radius: 50%;
 }
 .wx-particle {
     position: absolute;
     pointer-events: none;
+}
+/* Időjárás zóna popup picker */
+.wx-picker-popup {
+    display: flex; flex-direction: column; gap: 8px; min-width: 180px;
+}
+.wx-picker-popup .wx-type-row {
+    display: flex; gap: 6px; flex-wrap: wrap;
+}
+.wx-picker-btn {
+    flex: 1; padding: 6px; border: 1px solid rgba(168,85,247,.3);
+    background: rgba(168,85,247,.08); color: #c084fc; border-radius: 6px;
+    cursor: pointer; font-size: 18px; transition: .15s; text-align: center;
+}
+.wx-picker-btn:hover, .wx-picker-btn.active {
+    background: rgba(168,85,247,.2); border-color: #a855f7;
 }
 
 /* Eső részecske */
@@ -1584,8 +1601,8 @@ body{
             <input type="range" id="wxSizeSlider" min="60" max="400" value="150" style="width:100%;margin-bottom:4px;">
             <div style="color:#94a3b8;font-size:10px;margin-bottom:2px;">Sűrűség</div>
             <input type="range" id="wxDensitySlider" min="10" max="100" value="50" style="width:100%;margin-bottom:6px;">
-            <button class="iconBtn" onclick="startWeatherPlacement()" style="font-size:12px;height:32px;width:100%;background:rgba(168,85,247,.1);border-color:rgba(168,85,247,.3);color:#c084fc;">
-                + Lerakás
+            <button class="iconBtn" onclick="startWeatherDraw()" id="wxDrawBtn" style="font-size:12px;height:32px;width:100%;background:rgba(168,85,247,.1);border-color:rgba(168,85,247,.3);color:#c084fc;">
+                ✏️ Terület rajzolása
             </button>
             <div style="height:1px;background:rgba(255,255,255,.06);margin:4px 0;"></div>
             <button class="iconBtn" onclick="clearAllWeather()" style="font-size:12px;height:28px;width:100%;color:#f87171;">✕ Összes törlés</button>
@@ -2121,9 +2138,9 @@ const markers = [];
 
 // Minden csoportnak saját rajzai és markerei vannak
 const groupState = {
-    '3724': { drawings: null, markers: [] },
-    '3715': { drawings: null, markers: [] },
-    '3692': { drawings: null, markers: [] },
+    '3724': { drawings: null, markers: [], effects: [], wxZones: [] },
+    '3715': { drawings: null, markers: [], effects: [], wxZones: [] },
+    '3692': { drawings: null, markers: [], effects: [], wxZones: [] },
 };
 
 function saveGroupState(groupKey) {
@@ -2133,13 +2150,22 @@ function saveGroupState(groupKey) {
         latlng: m.getLatLng(),
         data: m.data
     }));
+    groupState[groupKey].effects = effects.map(em => ({
+        latlng: em.getLatLng(),
+        efxData: em.efxData
+    }));
+    groupState[groupKey].wxZones = wxZones.map(z => ({
+        latlng: z.latlng, type: z.type, size: z.size, density: z.density,
+        polygon: z.polygon || null
+    }));
 }
 
 function loadGroupState(groupKey) {
-    // Töröljük a jelenlegi rajzokat és markereket
+    // Töröljük a jelenlegi elemeket
     drawnItems.clearLayers();
-    markers.forEach(m => map.removeLayer(m));
-    markers.length = 0;
+    markers.forEach(m => map.removeLayer(m)); markers.length = 0;
+    effects.forEach(em => map.removeLayer(em)); effects.length = 0;
+    wxZones.forEach(z => z.el?.remove()); wxZones.length = 0;
 
     const state = groupState[groupKey];
     if (!state) return;
@@ -2156,20 +2182,41 @@ function loadGroupState(groupKey) {
     }
 
     // Markerek visszatöltése
-    state.markers.forEach(m => {
+    (state.markers || []).forEach(m => {
+        const iconH = (m.data?.size || 30) + 10;
         const marker = L.marker(m.latlng, {
             icon: L.divIcon({
                 className: '',
                 html: buildMarkerHTML(m.data),
-                iconSize: [120, 40],
-                iconAnchor: [60, 40],
-                popupAnchor: [0, -40]
+                iconSize: [120, iconH],
+                iconAnchor: [60, iconH],
+                popupAnchor: [0, -iconH]
             })
         });
         marker.data = m.data;
         marker.addTo(map);
         markers.push(marker);
-        marker.on('click', () => openMarkerEditor(marker));
+        marker.on('click', function(ev) { L.DomEvent.stopPropagation(ev); if(_justPlaced)return; openMarkerEditor(marker); });
+    });
+
+    // Effektek visszatöltése
+    (state.effects || []).forEach(e => {
+        const def = EFFECT_DEFS[e.efxData?.key]; if (!def) return;
+        const {key, color, size} = e.efxData;
+        const sc = getEffectScale(size); const sz = Math.round(56*sc);
+        const em = L.marker(e.latlng, { icon: L.divIcon({
+            className: '', html: `<div data-efx="${key}">${def.build(color,size)}</div>`,
+            iconSize:[sz,sz], iconAnchor:[sz/2,sz/2], popupAnchor:[0,-sz/2]
+        })});
+        em.efxData = {key,color,size}; em.addTo(map);
+        em.on('click', function(ev) { L.DomEvent.stopPropagation(ev); if(_justPlaced)return; openEffectEditor(em); });
+        effects.push(em);
+    });
+
+    // wxZónák visszatöltése
+    (state.wxZones || []).forEach(z => {
+        if (z.polygon) addWxZonePolygon(z.polygon, z.type, z.density);
+        else addWxZone(z.latlng, z.type, z.size, z.density);
     });
 }
 
@@ -2385,14 +2432,12 @@ window.deleteMarkerPopup = function(){
 function saveCampaign(){
     saveGroupState(activeMapGroup);
     const campaign = {
-        version: 2,
+        version: 3,
         map_type: mapType,
         campaign_id: campaignMapId,
         activeGroup: activeMapGroup,
         activeLayer: activeLayerName,
-        groups: groupState,
-        effects: effects.map(em => ({ latlng: em.getLatLng(), efxData: em.efxData })),
-        wxZones: wxZones.map(z => ({ latlng: z.latlng, type: z.type, size: z.size, density: z.density })),
+        groups: groupState,  // effektek és wxZones már a groupState-ben vannak
     };
     localStorage.setItem('ynev_campaign', JSON.stringify(campaign));
     window.scheduleSave();
@@ -2413,56 +2458,32 @@ function loadCampaign(data){
         campaign = JSON.parse(raw);
     }
 
-    if (campaign.version === 2 && campaign.groups) {
-        // Új formátum: csoportos
+    if ((campaign.version === 2 || campaign.version === 3) && campaign.groups) {
         Object.keys(groupState).forEach(grp => {
             if (campaign.groups[grp]) {
                 groupState[grp].drawings = campaign.groups[grp].drawings || null;
                 groupState[grp].markers  = campaign.groups[grp].markers  || [];
+                groupState[grp].effects  = campaign.groups[grp].effects  || [];
+                groupState[grp].wxZones  = campaign.groups[grp].wxZones  || [];
             }
         });
         activeMapGroup  = campaign.activeGroup  || '3724';
         activeLayerName = campaign.activeLayer  || '3724_domborzati';
-        // map_type visszaállítása
         setMapType(campaign.map_type || 'free', campaign.campaign_id || null);
+        // v2 globális effektek/wxZónák migrálása az aktív csoportba
+        if (campaign.version === 2) {
+            if (campaign.effects?.length) groupState[activeMapGroup].effects = campaign.effects;
+            if (campaign.wxZones?.length) groupState[activeMapGroup].wxZones = campaign.wxZones;
+        }
     } else {
-        // Régi formátum: drawings + markers közvetlenül → 3724 csoportba kerül
         groupState['3724'].drawings = campaign.drawings || null;
         groupState['3724'].markers  = campaign.markers  || [];
         activeMapGroup  = '3724';
         activeLayerName = '3724_domborzati';
     }
 
-    // Aktív csoport megjelenítése
+    // loadGroupState betölti az effekteket és wxZónákat is
     loadGroupState(activeMapGroup);
-
-    // Időjárás zónák visszatöltése
-    wxZones.forEach(z => z.el.remove()); wxZones.length = 0;
-    (campaign.wxZones || []).forEach(z => addWxZone(z.latlng, z.type, z.size, z.density));
-
-    // Effektek betöltése
-    if (campaign.effects && Array.isArray(campaign.effects)) {
-        effects.forEach(em => map.removeLayer(em));
-        effects.length = 0;
-        campaign.effects.forEach(e => {
-            const def = EFFECT_DEFS[e.efxData?.key];
-            if (!def) return;
-            const {key, color, size} = e.efxData;
-            const sc = EFFECT_SIZE_MAP[size] || 1;
-            const sz = Math.round(56 * sc);
-            const em = L.marker(e.latlng, {
-                icon: L.divIcon({
-                    className:'',
-                    html:`<div data-efx="${key}" data-color="${color}" data-size="${size}">${def.build(color,size)}</div>`,
-                    iconSize:[sz,sz], iconAnchor:[sz/2,sz/2]
-                })
-            });
-            em.efxData = {key, color, size};
-            em.addTo(map);
-            em.on('click', () => openEffectEditor(em));
-            effects.push(em);
-        });
-    }
 }
 
 /* =========================================================
@@ -2682,7 +2703,7 @@ let currentWeather = null;
 // Időjárás zónák tömb
 const wxZones = [];
 let selectedWeatherType = 'rain';
-let _wxPlacementMode = false;
+let _wxDrawer = null;
 
 function selectWeatherType(type, btn) {
     selectedWeatherType = type;
@@ -2690,10 +2711,71 @@ function selectWeatherType(type, btn) {
     if (btn) btn.classList.add('active');
 }
 
-function startWeatherPlacement() {
-    _wxPlacementMode = true;
-    map.getContainer().style.cursor = 'crosshair';
+function startWeatherDraw() {
+    // Leaflet Draw polygon eszköz indítása
+    if (_wxDrawer) { _wxDrawer.disable(); _wxDrawer = null; }
     toggleMenu('weatherDropdown');
+    _wxDrawer = new L.Draw.Polygon(map, {
+        shapeOptions: {
+            color: 'rgba(147,197,253,0.5)',
+            fillColor: 'rgba(147,197,253,0.15)',
+            fillOpacity: 0.15,
+            weight: 1.5,
+            dashArray: '6,4',
+        },
+        showArea: false,
+        metric: false,
+    });
+    _wxDrawer.enable();
+}
+
+// Polygon rajzolás befejezése → picker popup
+map.on(L.Draw.Event.CREATED, function(e) {
+    if (e.layerType !== 'polygon' || !_wxDrawer) return;
+    _wxDrawer = null;
+    const layer = e.layer;
+    const latlngs = layer.getLatLngs()[0];
+    const center = layer.getBounds().getCenter();
+    const density = parseInt(document.getElementById('wxDensitySlider')?.value || 50);
+    // Picker popup az aktív típussal és sűrűséggel
+    openWxPickerPopup(center, latlngs, density);
+});
+
+function openWxPickerPopup(center, latlngs, density) {
+    const html = `<div class="wx-picker-popup">
+        <div style="color:#94a3b8;font-size:11px;font-weight:600;">Időjárás típus</div>
+        <div class="wx-type-row">
+            <button class="wx-picker-btn${selectedWeatherType==='rain'?' active':''}" onclick="window._wxPickType('rain',this)">🌧️</button>
+            <button class="wx-picker-btn${selectedWeatherType==='snow'?' active':''}" onclick="window._wxPickType('snow',this)">❄️</button>
+            <button class="wx-picker-btn${selectedWeatherType==='wind'?' active':''}" onclick="window._wxPickType('wind',this)">💨</button>
+            <button class="wx-picker-btn${selectedWeatherType==='fog'?' active':''}" onclick="window._wxPickType('fog',this)">🌫️</button>
+        </div>
+        <label style="color:#94a3b8;font-size:11px;display:flex;flex-direction:column;gap:3px;">
+            Sűrűség
+            <input type="range" id="wxPickDensity" min="10" max="100" value="${density}" style="width:100%;">
+        </label>
+        <div style="display:flex;gap:6px;">
+            <button class="saveBtn" onclick="window._wxPickConfirm()" style="flex:1;">✓ Alkalmaz</button>
+            <button class="deleteBtn" onclick="map.closePopup()" style="flex:1;">✕</button>
+        </div>
+    </div>`;
+
+    window._wxPendingLatlngs = latlngs;
+    window._wxPickType = function(type, btn) {
+        selectedWeatherType = type;
+        document.querySelectorAll('.wx-picker-btn').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+    };
+    window._wxPickConfirm = function() {
+        const d = parseInt(document.getElementById('wxPickDensity')?.value || 50);
+        addWxZonePolygon(window._wxPendingLatlngs, selectedWeatherType, d);
+        map.closePopup();
+    };
+
+    L.popup({ closeButton:true, maxWidth:240 })
+        .setLatLng(center)
+        .setContent(html)
+        .openOn(map);
 }
 
 function buildWxZone(container, type, density) {
@@ -2724,51 +2806,86 @@ function buildWxZone(container, type, density) {
     }
 }
 
-function addWxZone(latlng, type, size, density) {
-    const point = map.latLngToContainerPoint(latlng);
+function addWxZonePolygon(latlngs, type, density) {
+    // Leaflet polygon réteg (láthatatlan, csak a terület tárolásához)
+    const overlay = document.getElementById('weatherOverlay');
+
+    // Animációs konténer div – a térkép overlay-en jelenik meg
+    // Pozíciót és méretet a bounding box alapján számítjuk
     const el = document.createElement('div');
     el.className = 'wx-zone';
-    el.style.cssText = `width:${size*2}px;height:${size*2}px;left:${point.x-size}px;top:${point.y-size}px;`;
-    // Radial mask: széleinél elhalványuló
-    el.style.background = 'radial-gradient(circle, rgba(0,0,0,0.01) 60%, transparent 100%)';
-    el.style.webkitMaskImage = 'radial-gradient(circle, black 50%, transparent 100%)';
-    el.style.maskImage = 'radial-gradient(circle, black 50%, transparent 100%)';
+    el.style.position = 'absolute';
+    el.style.pointerEvents = 'none';
+    el.style.overflow = 'hidden';
+
+    // Töröld-gomb
+    const delBtn = document.createElement('button');
+    delBtn.innerHTML = '✕';
+    delBtn.style.cssText = 'position:absolute;top:4px;right:4px;background:rgba(239,68,68,.7);color:white;border:none;border-radius:50%;width:18px;height:18px;font-size:10px;cursor:pointer;z-index:10;display:none;';
+    el.appendChild(delBtn);
+    el.addEventListener('mouseenter', () => { if(canEdit()) delBtn.style.display='block'; });
+    el.addEventListener('mouseleave', () => { delBtn.style.display='none'; });
+
     buildWxZone(el, type, density);
-    document.getElementById('weatherOverlay').appendChild(el);
-    wxZones.push({ latlng, type, size, density, el });
+    overlay.appendChild(el);
+
+    const zone = { latlngs, type, density, el, polygon: latlngs };
+
+    // Pozíció frissítése
+    function updatePos() {
+        const pts = latlngs.map(ll => map.latLngToContainerPoint(ll));
+        const xs = pts.map(p=>p.x); const ys = pts.map(p=>p.y);
+        const minX=Math.min(...xs), minY=Math.min(...ys);
+        const maxX=Math.max(...xs), maxY=Math.max(...ys);
+        const w=maxX-minX, h=maxY-minY;
+        el.style.left=minX+'px'; el.style.top=minY+'px';
+        el.style.width=w+'px'; el.style.height=h+'px';
+        // SVG clip-path: lekerekített polygon határ
+        const relPts = pts.map(p=>`${p.x-minX}px ${p.y-minY}px`).join(',');
+        el.style.clipPath = `polygon(${relPts})`;
+        // Enyhe éllágyítás: box-shadow inset
+        el.style.filter = 'blur(0px)';
+        el.style.webkitMaskImage = `radial-gradient(ellipse ${w*0.7}px ${h*0.7}px at ${w/2}px ${h/2}px, black 40%, transparent 100%)`;
+        el.style.maskImage = el.style.webkitMaskImage;
+    }
+    zone.updatePos = updatePos;
+    updatePos();
+
+    delBtn.onclick = (e) => {
+        e.stopPropagation();
+        el.remove();
+        const i = wxZones.indexOf(zone);
+        if (i > -1) wxZones.splice(i, 1);
+        saveCampaign();
+    };
+
+    wxZones.push(zone);
     saveCampaign();
+}
+
+// Legacy: kör alakú zóna (betöltéshez)
+function addWxZone(latlng, type, size, density) {
+    addWxZonePolygon([
+        {lat: latlng.lat + size*0.004, lng: latlng.lng},
+        {lat: latlng.lat, lng: latlng.lng + size*0.006},
+        {lat: latlng.lat - size*0.004, lng: latlng.lng},
+        {lat: latlng.lat, lng: latlng.lng - size*0.006},
+    ], type, density);
 }
 
 function clearAllWeather() {
-    wxZones.forEach(z => z.el.remove());
+    wxZones.forEach(z => z.el?.remove());
     wxZones.length = 0;
-    currentWeather = null;
     saveCampaign();
 }
 
-// Zónák pozíció frissítése térkép mozgáskor
+// Pozíció frissítése térkép mozgáskor
 map.on('move zoom', function() {
-    wxZones.forEach(z => {
-        const point = map.latLngToContainerPoint(z.latlng);
-        z.el.style.left = (point.x - z.size) + 'px';
-        z.el.style.top  = (point.y - z.size) + 'px';
-    });
-});
-
-// Lerakás kattintásra
-map.on('click', function(ewx) {
-    if (!_wxPlacementMode) return;
-    _wxPlacementMode = false;
-    map.getContainer().style.cursor = '';
-    const size    = parseInt(document.getElementById('wxSizeSlider')?.value || 150);
-    const density = parseInt(document.getElementById('wxDensitySlider')?.value || 50);
-    addWxZone(ewx.latlng, selectedWeatherType, size, density);
+    wxZones.forEach(z => { if (z.updatePos) z.updatePos(); });
 });
 
 // Legacy setWeather (betöltéshez)
-function setWeather(type) {
-    currentWeather = type;
-}
+function setWeather(type) { currentWeather = type; }
 
 /* =========================================================
    EFFEKT RENDSZER
@@ -3248,11 +3365,13 @@ document.addEventListener('mousemove', e => {
     const { data } = await window._sb.from('map_states')
       .select('*').eq('user_id', user.id).single()
     if (data) {
-      if (data.drawings?.version === 2 && data.drawings?.groups) {
+      if ((data.drawings?.version === 2 || data.drawings?.version === 3) && data.drawings?.groups) {
         Object.keys(groupState).forEach(grp => {
           if (data.drawings.groups[grp]) {
             groupState[grp].drawings = data.drawings.groups[grp].drawings || null
             groupState[grp].markers  = data.drawings.groups[grp].markers  || []
+            groupState[grp].effects  = data.drawings.groups[grp].effects  || []
+            groupState[grp].wxZones  = data.drawings.groups[grp].wxZones  || []
           }
         })
         activeMapGroup  = data.active_layer ? layerNameToGroup(data.active_layer) : '3724'
@@ -3340,8 +3459,7 @@ document.addEventListener('mousemove', e => {
     const { error } = await window._sb.from('map_saves').insert({
       user_id: user.id,
       name,
-      drawings: { version:2, map_type: mapType, campaign_id: campaignMapId,
-        groups: groupState, effects: efxData, wxZones: wxZones.map(z=>({latlng:z.latlng,type:z.type,size:z.size,density:z.density})) },
+      drawings: { version:3, map_type: mapType, campaign_id: campaignMapId, groups: groupState },
       markers: {},
       active_layer: activeLayerName
     })
