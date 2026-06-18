@@ -186,67 +186,79 @@ body{
     overflow: hidden;
 }
 
-/* Eső */
-.rain-drop {
-    position: absolute;
-    width: 1.5px;
-    background: linear-gradient(to bottom, transparent, rgba(147,197,253,.8));
-    animation: rainFall linear infinite;
-    border-radius: 1px;
-}
-@keyframes rainFall {
-    0%   { transform: translateY(-30px) skewX(-8deg); opacity: 0; }
-    8%   { opacity: 1; }
-    92%  { opacity: .85; }
-    100% { transform: translateY(105vh) skewX(-8deg); opacity: 0; }
-}
-
-/* Hó */
-.snow-flake {
+/* Időjárás területek */
+.wx-zone {
     position: absolute;
     border-radius: 50%;
-    background: rgba(255,255,255,.9);
-    animation: snowFall ease-in-out infinite;
-    box-shadow: 0 0 3px rgba(255,255,255,.5);
+    pointer-events: none;
+    overflow: hidden;
 }
-@keyframes snowFall {
-    0%   { transform: translateY(-10px) translateX(0) rotate(0deg); opacity: 0; }
-    8%   { opacity: .9; }
-    50%  { transform: translateY(50vh) translateX(18px) rotate(180deg); }
-    92%  { opacity: .7; }
-    100% { transform: translateY(105vh) translateX(-12px) rotate(360deg); opacity: 0; }
-}
-
-/* Szél */
-.wind-line {
+.wx-particle {
     position: absolute;
-    height: 1.5px;
-    background: linear-gradient(to right, transparent, rgba(226,232,240,.55), transparent);
-    border-radius: 2px;
-    animation: windBlow ease-in-out infinite;
-}
-@keyframes windBlow {
-    0%   { transform: translateX(-120%) scaleX(.6); opacity: 0; }
-    15%  { opacity: .8; }
-    85%  { opacity: .6; }
-    100% { transform: translateX(120vw) scaleX(1.2); opacity: 0; }
+    pointer-events: none;
 }
 
-/* Köd */
-.fog-layer {
+/* Eső részecske */
+.wx-rain {
+    width: 1.5px;
+    background: linear-gradient(to bottom, transparent, rgba(147,197,253,.85));
+    border-radius: 1px;
+    animation: wxRain linear infinite;
+}
+@keyframes wxRain {
+    0%   { transform: translateY(-20px) skewX(-8deg); opacity: 0; }
+    8%   { opacity: 1; }
+    92%  { opacity: .8; }
+    100% { transform: translateY(110%) skewX(-8deg); opacity: 0; }
+}
+
+/* Hó részecske */
+.wx-snow {
+    border-radius: 50%;
+    background: rgba(255,255,255,.92);
+    box-shadow: 0 0 3px rgba(255,255,255,.4);
+    animation: wxSnow ease-in-out infinite;
+}
+@keyframes wxSnow {
+    0%   { transform: translateY(-10px) translateX(0) rotate(0); opacity: 0; }
+    8%   { opacity: .9; }
+    50%  { transform: translateY(50%) translateX(12px) rotate(180deg); }
+    92%  { opacity: .6; }
+    100% { transform: translateY(108%) translateX(-8px) rotate(360deg); opacity: 0; }
+}
+
+/* Szél részecske */
+.wx-wind {
+    height: 1.5px;
+    background: linear-gradient(to right, transparent, rgba(220,230,240,.6), transparent);
+    border-radius: 2px;
+    animation: wxWind ease-in-out infinite;
+}
+@keyframes wxWind {
+    0%   { transform: translateX(-10%) scaleX(.5); opacity: 0; }
+    15%  { opacity: .8; }
+    85%  { opacity: .5; }
+    100% { transform: translateX(110%) scaleX(1.3); opacity: 0; }
+}
+
+/* Köd layer */
+.wx-fog {
     position: absolute;
     inset: 0;
-    background: radial-gradient(ellipse at 50% 60%, rgba(148,163,184,.2) 0%, rgba(148,163,184,.1) 60%, transparent 100%);
-    animation: fogDrift 12s ease-in-out infinite alternate;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(148,163,184,.3) 0%, rgba(148,163,184,.15) 50%, transparent 100%);
+    animation: wxFogDrift 10s ease-in-out infinite alternate;
 }
-.fog-layer:nth-child(2) {
-    background: radial-gradient(ellipse at 30% 40%, rgba(148,163,184,.15) 0%, transparent 70%);
-    animation-duration: 16s;
-    animation-direction: alternate-reverse;
+.wx-fog2 {
+    position: absolute;
+    inset: 10%;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(148,163,184,.2) 0%, transparent 80%);
+    animation: wxFogDrift 14s ease-in-out infinite alternate-reverse;
 }
-@keyframes fogDrift {
-    0%   { transform: translateX(-3%) translateY(0); opacity: .7; }
-    100% { transform: translateX(3%) translateY(-2%); opacity: 1; }
+@keyframes wxFogDrift {
+    0%   { transform: translate(-3%,-2%) scale(1); opacity:.7; }
+    100% { transform: translate(3%,2%) scale(1.05); opacity:1; }
 }
 
 /* Kompakt mód iframe-ben (?mode=admin) */
@@ -1561,13 +1573,22 @@ body{
     <div class="menuBlock" id="weatherMenuBlock" style="display:none;">
         <button class="menuToggle" onclick="toggleMenu('weatherDropdown')" title="Időjárás">🌤️</button>
         <div class="dropdown" id="weatherDropdown">
-            <div style="color:#94a3b8;font-size:10px;font-weight:600;letter-spacing:.05em;margin-bottom:4px;">IDŐJÁRÁS</div>
-            <button class="iconBtn weather-btn" data-weather="rain" onclick="setWeather('rain')" title="Eső" style="font-size:18px;height:36px;width:100%;justify-content:flex-start;gap:6px;">🌧️ Eső</button>
-            <button class="iconBtn weather-btn" data-weather="snow" onclick="setWeather('snow')" title="Hó" style="font-size:18px;height:36px;width:100%;justify-content:flex-start;gap:6px;">❄️ Hó</button>
-            <button class="iconBtn weather-btn" data-weather="wind" onclick="setWeather('wind')" title="Szél" style="font-size:18px;height:36px;width:100%;justify-content:flex-start;gap:6px;">💨 Szél</button>
-            <button class="iconBtn weather-btn" data-weather="fog" onclick="setWeather('fog')" title="Köd" style="font-size:18px;height:36px;width:100%;justify-content:flex-start;gap:6px;">🌫️ Köd</button>
-            <div style="height:1px;background:rgba(255,255,255,.08);margin:6px 0;"></div>
-            <button class="iconBtn" data-weather="clear" onclick="setWeather('clear')" style="font-size:13px;height:32px;width:100%;color:#94a3b8;">✕ Törlés</button>
+            <div style="color:#94a3b8;font-size:10px;font-weight:600;letter-spacing:.05em;margin-bottom:4px;">TÍPUS</div>
+            <div style="display:flex;flex-wrap:wrap;gap:4px;margin-bottom:6px;">
+                <button class="effect-size-btn weather-type-btn active" id="wxTypeRain" onclick="selectWeatherType('rain',this)">🌧️</button>
+                <button class="effect-size-btn weather-type-btn" id="wxTypeSnow" onclick="selectWeatherType('snow',this)">❄️</button>
+                <button class="effect-size-btn weather-type-btn" id="wxTypeWind" onclick="selectWeatherType('wind',this)">💨</button>
+                <button class="effect-size-btn weather-type-btn" id="wxTypeFog" onclick="selectWeatherType('fog',this)">🌫️</button>
+            </div>
+            <div style="color:#94a3b8;font-size:10px;margin-bottom:2px;">Méret</div>
+            <input type="range" id="wxSizeSlider" min="60" max="400" value="150" style="width:100%;margin-bottom:4px;">
+            <div style="color:#94a3b8;font-size:10px;margin-bottom:2px;">Sűrűség</div>
+            <input type="range" id="wxDensitySlider" min="10" max="100" value="50" style="width:100%;margin-bottom:6px;">
+            <button class="iconBtn" onclick="startWeatherPlacement()" style="font-size:12px;height:32px;width:100%;background:rgba(168,85,247,.1);border-color:rgba(168,85,247,.3);color:#c084fc;">
+                + Lerakás
+            </button>
+            <div style="height:1px;background:rgba(255,255,255,.06);margin:4px 0;"></div>
+            <button class="iconBtn" onclick="clearAllWeather()" style="font-size:12px;height:28px;width:100%;color:#f87171;">✕ Összes törlés</button>
         </div>
     </div>
 
@@ -1580,11 +1601,9 @@ body{
                 <label>Szín <input type="color" id="effectColor" value="#000000"></label>
                 <div>
                     <div style="font-size:11px;color:#94a3b8;margin-bottom:4px;">Méret</div>
-                    <div class="effect-size-btns">
-                        <button class="effect-size-btn active" data-size="S" onclick="setEffectSize('S',this)">S</button>
-                        <button class="effect-size-btn" data-size="M" onclick="setEffectSize('M',this)">M</button>
-                        <button class="effect-size-btn" data-size="L" onclick="setEffectSize('L',this)">L</button>
-                    </div>
+                    <input type="range" id="effectSizeSlider" min="30" max="200" value="70"
+                        style="width:100%;"
+                        oninput="setEffectSizeSlider(this.value)">
                 </div>
             </div>
         </div>
@@ -2276,14 +2295,18 @@ popupAnchor:[0,-40]
 function openMarkerEditor(marker){
     const d = marker.data;
 
+    const iconH = (d.size || 30) + 10;
+    // Popup pozíció: az ikon teteje felett nyílik
+    const popupLatLng = marker.getLatLng();
+
     if (!canEdit()) {
         const roHtml = `<div class="popupForm" style="max-width:200px;">
             ${d.name ? `<div style="font-weight:700;color:#e2e8f0;font-size:.9rem;">${d.name}</div>` : ''}
             ${d.description ? `<div style="color:#94a3b8;font-size:.8rem;margin-top:4px;">${d.description}</div>` : ''}
             ${!d.name && !d.description ? `<div style="color:#64748b;font-size:.8rem;">Névtelen jelölő</div>` : ''}
         </div>`;
-        L.popup({ closeButton:true, className:'leaflet-popup' })
-            .setLatLng(marker.getLatLng())
+        L.popup({ closeButton:true, className:'leaflet-popup', offset:[0, -iconH] })
+            .setLatLng(popupLatLng)
             .setContent(roHtml)
             .openOn(map);
         return;
@@ -2312,8 +2335,8 @@ function openMarkerEditor(marker){
         </div>
     `;
 
-    L.popup({ closeButton:true, className:'leaflet-popup' })
-        .setLatLng(marker.getLatLng())
+    L.popup({ closeButton:true, className:'leaflet-popup', offset:[0, -iconH] })
+        .setLatLng(popupLatLng)
         .setContent(html)
         .openOn(map);
     window.currentEditingMarker = marker;
@@ -2369,7 +2392,7 @@ function saveCampaign(){
         activeLayer: activeLayerName,
         groups: groupState,
         effects: effects.map(em => ({ latlng: em.getLatLng(), efxData: em.efxData })),
-        weather: currentWeather,
+        wxZones: wxZones.map(z => ({ latlng: z.latlng, type: z.type, size: z.size, density: z.density })),
     };
     localStorage.setItem('ynev_campaign', JSON.stringify(campaign));
     window.scheduleSave();
@@ -2413,8 +2436,9 @@ function loadCampaign(data){
     // Aktív csoport megjelenítése
     loadGroupState(activeMapGroup);
 
-    // Időjárás visszaállítása
-    if (campaign.weather) setWeather(campaign.weather);
+    // Időjárás zónák visszatöltése
+    wxZones.forEach(z => z.el.remove()); wxZones.length = 0;
+    (campaign.wxZones || []).forEach(z => addWxZone(z.latlng, z.type, z.size, z.density));
 
     // Effektek betöltése
     if (campaign.effects && Array.isArray(campaign.effects)) {
@@ -2513,7 +2537,7 @@ function clearEverything(){
         groupState[grp].markers = [];
     });
     setMapType('free', null);
-    setWeather('clear');
+    wxZones.forEach(z => z.el.remove()); wxZones.length = 0;
     localStorage.removeItem('ynev_campaign');
     window.scheduleSave();
 }
@@ -2655,65 +2679,95 @@ map.on('mousemove', function(e){
 
 let currentWeather = null;
 
-const WEATHER_CONFIGS = {
-    rain: {
-        build() {
-            const o = document.getElementById('weatherOverlay');
-            o.innerHTML = '';
-            for (let i = 0; i < 90; i++) {
-                const d = document.createElement('div');
-                d.className = 'rain-drop';
-                const h = 12 + Math.random() * 22;
-                d.style.cssText = `left:${Math.random()*110-5}%;height:${h}px;animation-duration:${.35+Math.random()*.45}s;animation-delay:${Math.random()*2}s;top:-${h+10}px;`;
-                o.appendChild(d);
-            }
-        }
-    },
-    snow: {
-        build() {
-            const o = document.getElementById('weatherOverlay');
-            o.innerHTML = '';
-            for (let i = 0; i < 65; i++) {
-                const d = document.createElement('div');
-                d.className = 'snow-flake';
-                const sz = 2 + Math.random() * 4;
-                d.style.cssText = `left:${Math.random()*110-5}%;width:${sz}px;height:${sz}px;animation-duration:${3+Math.random()*4}s;animation-delay:${Math.random()*5}s;top:-10px;`;
-                o.appendChild(d);
-            }
-        }
-    },
-    wind: {
-        build() {
-            const o = document.getElementById('weatherOverlay');
-            o.innerHTML = '';
-            for (let i = 0; i < 18; i++) {
-                const d = document.createElement('div');
-                d.className = 'wind-line';
-                const w = 80 + Math.random() * 140;
-                const top = Math.random() * 100;
-                d.style.cssText = `top:${top}%;width:${w}px;animation-duration:${1.2+Math.random()*1.8}s;animation-delay:${Math.random()*3}s;left:-${w}px;`;
-                o.appendChild(d);
-            }
-        }
-    },
-    fog: {
-        build() {
-            const o = document.getElementById('weatherOverlay');
-            o.innerHTML = '<div class="fog-layer"></div><div class="fog-layer"></div>';
-        }
-    },
-    clear: {
-        build() { document.getElementById('weatherOverlay').innerHTML = ''; }
-    }
-};
+// Időjárás zónák tömb
+const wxZones = [];
+let selectedWeatherType = 'rain';
+let _wxPlacementMode = false;
 
+function selectWeatherType(type, btn) {
+    selectedWeatherType = type;
+    document.querySelectorAll('.weather-type-btn').forEach(b => b.classList.remove('active'));
+    if (btn) btn.classList.add('active');
+}
+
+function startWeatherPlacement() {
+    _wxPlacementMode = true;
+    map.getContainer().style.cursor = 'crosshair';
+    toggleMenu('weatherDropdown');
+}
+
+function buildWxZone(container, type, density) {
+    const cnt = Math.round(density * .8);
+    container.innerHTML = '';
+    if (type === 'fog') {
+        const f1 = document.createElement('div'); f1.className = 'wx-fog';
+        const f2 = document.createElement('div'); f2.className = 'wx-fog2';
+        container.appendChild(f1); container.appendChild(f2);
+        return;
+    }
+    const clsMap = { rain:'wx-rain', snow:'wx-snow', wind:'wx-wind' };
+    const cls = clsMap[type];
+    for (let i = 0; i < cnt; i++) {
+        const p = document.createElement('div');
+        p.className = 'wx-particle ' + cls;
+        if (type === 'rain') {
+            const h = 12 + Math.random() * 18;
+            p.style.cssText = `left:${Math.random()*100}%;height:${h}px;top:-${h}px;animation-duration:${.3+Math.random()*.4}s;animation-delay:${Math.random()*1.5}s;`;
+        } else if (type === 'snow') {
+            const sz = 2 + Math.random() * 3.5;
+            p.style.cssText = `left:${Math.random()*100}%;width:${sz}px;height:${sz}px;top:-8px;animation-duration:${3+Math.random()*3}s;animation-delay:${Math.random()*4}s;`;
+        } else if (type === 'wind') {
+            const w = 60 + Math.random() * 100;
+            p.style.cssText = `top:${Math.random()*100}%;width:${w}px;left:-${w}px;animation-duration:${1+Math.random()*1.5}s;animation-delay:${Math.random()*2.5}s;`;
+        }
+        container.appendChild(p);
+    }
+}
+
+function addWxZone(latlng, type, size, density) {
+    const point = map.latLngToContainerPoint(latlng);
+    const el = document.createElement('div');
+    el.className = 'wx-zone';
+    el.style.cssText = `width:${size*2}px;height:${size*2}px;left:${point.x-size}px;top:${point.y-size}px;`;
+    // Radial mask: széleinél elhalványuló
+    el.style.background = 'radial-gradient(circle, rgba(0,0,0,0.01) 60%, transparent 100%)';
+    el.style.webkitMaskImage = 'radial-gradient(circle, black 50%, transparent 100%)';
+    el.style.maskImage = 'radial-gradient(circle, black 50%, transparent 100%)';
+    buildWxZone(el, type, density);
+    document.getElementById('weatherOverlay').appendChild(el);
+    wxZones.push({ latlng, type, size, density, el });
+    saveCampaign();
+}
+
+function clearAllWeather() {
+    wxZones.forEach(z => z.el.remove());
+    wxZones.length = 0;
+    currentWeather = null;
+    saveCampaign();
+}
+
+// Zónák pozíció frissítése térkép mozgáskor
+map.on('move zoom', function() {
+    wxZones.forEach(z => {
+        const point = map.latLngToContainerPoint(z.latlng);
+        z.el.style.left = (point.x - z.size) + 'px';
+        z.el.style.top  = (point.y - z.size) + 'px';
+    });
+});
+
+// Lerakás kattintásra
+map.on('click', function(ewx) {
+    if (!_wxPlacementMode) return;
+    _wxPlacementMode = false;
+    map.getContainer().style.cursor = '';
+    const size    = parseInt(document.getElementById('wxSizeSlider')?.value || 150);
+    const density = parseInt(document.getElementById('wxDensitySlider')?.value || 50);
+    addWxZone(ewx.latlng, selectedWeatherType, size, density);
+});
+
+// Legacy setWeather (betöltéshez)
 function setWeather(type) {
     currentWeather = type;
-    WEATHER_CONFIGS[type]?.build();
-    document.querySelectorAll('.weather-btn').forEach(b => {
-        b.classList.toggle('active', b.dataset.weather === type);
-    });
-    saveCampaign();
 }
 
 /* =========================================================
@@ -2722,16 +2776,23 @@ function setWeather(type) {
 
 let activeEffectKey = null;
 let effectColor = '#000000';
-let effectSize = 'S';
+let effectSize = 0.7; // 0.3-2.0 skála
 const effects = [];
 let _justPlaced = false; // click bug guard // {marker, key, color, size}
 
-const EFFECT_SIZE_MAP = { S: .7, M: 1, L: 1.5 };
+const EFFECT_SIZE_MAP = { S: .7, M: 1, L: 1.5 }; // legacy, effekteknél már float
+function getEffectScale(s) {
+    // Ha float (slider értéke): direkt használjuk
+    // Ha string 'S'/'M'/'L' (régi mentett adatból): map-ből olvassuk
+    const f = parseFloat(s);
+    if (!isNaN(f)) return f;
+    return EFFECT_SIZE_MAP[s] || 1;
+}
 
 const EFFECT_DEFS = {
     pulse: {
         label:'Pulzáló gyűrű',
-        build(c,s){ const sc=EFFECT_SIZE_MAP[s]; return `<div style="position:relative;width:${32*sc}px;height:${32*sc}px;display:flex;align-items:center;justify-content:center;">
+        build(c,s){ const sc=getEffectScale(s); return `<div style="position:relative;width:${32*sc}px;height:${32*sc}px;display:flex;align-items:center;justify-content:center;">
             <div style="width:${14*sc}px;height:${14*sc}px;border-radius:50%;background:${c};position:relative;">
             <div style="position:absolute;inset:-${5*sc}px;border-radius:50%;border:${2*sc}px solid ${c}88;animation:efxPulse 2s ease-out infinite;"></div>
             <div style="position:absolute;inset:-${5*sc}px;border-radius:50%;border:${2*sc}px solid ${c}55;animation:efxPulse 2s ease-out infinite;animation-delay:1s;"></div>
@@ -2739,7 +2800,7 @@ const EFFECT_DEFS = {
     },
     rune: {
         label:'Rúna keringő',
-        build(c,s){ const sc=EFFECT_SIZE_MAP[s]; return `<div style="position:relative;width:${36*sc}px;height:${36*sc}px;display:flex;align-items:center;justify-content:center;">
+        build(c,s){ const sc=getEffectScale(s); return `<div style="position:relative;width:${36*sc}px;height:${36*sc}px;display:flex;align-items:center;justify-content:center;">
             <span style="font-size:${18*sc}px;color:${c};text-shadow:0 0 6px ${c};z-index:2;">✦</span>
             <div style="position:absolute;inset:0;border-radius:50%;border:1px dashed ${c}66;animation:efxOrbit 4s linear infinite;">
                 <div style="position:absolute;width:${4*sc}px;height:${4*sc}px;background:${c};border-radius:50%;top:-${2*sc}px;left:50%;transform:translateX(-50%);"></div>
@@ -2747,13 +2808,13 @@ const EFFECT_DEFS = {
     },
     aura: {
         label:'Lüktető aura',
-        build(c,s){ const sc=EFFECT_SIZE_MAP[s]; return `<div style="position:relative;width:${28*sc}px;height:${28*sc}px;display:flex;align-items:center;justify-content:center;">
+        build(c,s){ const sc=getEffectScale(s); return `<div style="position:relative;width:${28*sc}px;height:${28*sc}px;display:flex;align-items:center;justify-content:center;">
             <div style="position:absolute;inset:0;border-radius:50%;background:radial-gradient(circle,${c}99 0%,transparent 70%);animation:efxAura 1.5s ease-in-out infinite alternate;"></div>
             <div style="width:${10*sc}px;height:${10*sc}px;border-radius:50%;background:${c};z-index:2;"></div></div>`; }
     },
     portal: {
         label:'Portál gyűrűk',
-        build(c,s){ const sc=EFFECT_SIZE_MAP[s]; return `<div style="position:relative;width:${40*sc}px;height:${40*sc}px;display:flex;align-items:center;justify-content:center;">
+        build(c,s){ const sc=getEffectScale(s); return `<div style="position:relative;width:${40*sc}px;height:${40*sc}px;display:flex;align-items:center;justify-content:center;">
             <div style="position:absolute;inset:0;border-radius:50%;border:${2*sc}px solid ${c}aa;animation:efxPortal 3s linear infinite;"></div>
             <div style="position:absolute;inset:${5*sc}px;border-radius:50%;border:${1.5*sc}px solid ${c}77;animation:efxPortal 2s linear infinite reverse;"></div>
             <div style="position:absolute;inset:${10*sc}px;border-radius:50%;border:${1*sc}px solid ${c}55;animation:efxPortal 4s linear infinite;"></div>
@@ -2761,38 +2822,38 @@ const EFFECT_DEFS = {
     },
     spark: {
         label:'Részecske szikra',
-        build(c,s){ const sc=EFFECT_SIZE_MAP[s]; return `<div style="position:relative;width:${36*sc}px;height:${44*sc}px;display:flex;align-items:flex-end;justify-content:center;">
+        build(c,s){ const sc=getEffectScale(s); return `<div style="position:relative;width:${36*sc}px;height:${44*sc}px;display:flex;align-items:flex-end;justify-content:center;">
             ${[0,1,2,3].map(i=>`<div style="position:absolute;width:${3*sc}px;height:${3*sc}px;border-radius:50%;background:${c};bottom:${6*sc}px;left:${(8+i*5)*sc}px;animation:efxSpark ${1+i*.15}s linear infinite;animation-delay:${i*.25}s;"></div>`).join('')}
             <div style="font-size:${20*sc}px;z-index:2;">✦</div></div>`; }
     },
     quest: {
         label:'Küldetés ?',
-        build(c,s){ const sc=EFFECT_SIZE_MAP[s]; return `<div style="position:relative;display:flex;flex-direction:column;align-items:center;">
+        build(c,s){ const sc=getEffectScale(s); return `<div style="position:relative;display:flex;flex-direction:column;align-items:center;">
             <span style="font-size:${34*sc}px;font-weight:900;color:${c};animation:efxBounce 1.8s ease-in-out infinite;font-family:serif;text-shadow:0 0 6px ${c}99;line-height:1;">${'?'}</span>
             <div style="width:${18*sc}px;height:${4*sc}px;background:#00000055;border-radius:50%;animation:efxBounceShadow 1.8s ease-in-out infinite;"></div></div>`; }
     },
     exclaim: {
         label:'Veszély !',
-        build(c,s){ const sc=EFFECT_SIZE_MAP[s]; return `<div style="position:relative;display:flex;align-items:center;justify-content:center;width:${36*sc}px;height:${42*sc}px;">
+        build(c,s){ const sc=getEffectScale(s); return `<div style="position:relative;display:flex;align-items:center;justify-content:center;width:${36*sc}px;height:${42*sc}px;">
             <span style="font-size:${32*sc}px;font-weight:900;color:${c};font-family:serif;animation:efxExPulse .8s ease-in-out infinite alternate;text-shadow:0 0 8px ${c}cc;">!</span>
             <div style="position:absolute;inset:-${6*sc}px;border-radius:50%;border:${2*sc}px solid ${c}66;animation:efxExRing .8s ease-out infinite;"></div></div>`; }
     },
     battle: {
         label:'Csata jelző',
-        build(c,s){ const sc=EFFECT_SIZE_MAP[s]; return `<div style="position:relative;display:flex;align-items:center;justify-content:center;width:${40*sc}px;height:${40*sc}px;">
+        build(c,s){ const sc=getEffectScale(s); return `<div style="position:relative;display:flex;align-items:center;justify-content:center;width:${40*sc}px;height:${40*sc}px;">
             <span style="font-size:${20*sc}px;display:inline-block;animation:efxSword1 2s ease-in-out infinite;color:${c};">⚔</span>
             <span style="font-size:${20*sc}px;display:inline-block;animation:efxSword2 2s ease-in-out infinite;margin-left:-${6*sc}px;color:${c};">🛡</span>
             <div style="position:absolute;width:${5*sc}px;height:${5*sc}px;border-radius:50%;background:#fbbf24;animation:efxClash 2s ease-out infinite;"></div></div>`; }
     },
     crystal: {
         label:'Mágikus kristály',
-        build(c,s){ const sc=EFFECT_SIZE_MAP[s]; return `<div style="position:relative;display:flex;align-items:center;justify-content:center;width:${36*sc}px;height:${44*sc}px;">
+        build(c,s){ const sc=getEffectScale(s); return `<div style="position:relative;display:flex;align-items:center;justify-content:center;width:${36*sc}px;height:${44*sc}px;">
             ${[0,1,2].map((i,_)=>`<div style="position:absolute;width:${1.5*sc}px;height:${14*sc}px;background:linear-gradient(to top,${c}cc,transparent);top:-${10*sc}px;left:${50+[0,12,-12][i]}%;transform:rotate(${[0,30,-30][i]}deg);animation:efxCrystalRay 3s ease-in-out infinite;animation-delay:${i*.5}s;"></div>`).join('')}
             <span style="font-size:${26*sc}px;animation:efxCrystalFloat 3s ease-in-out infinite;filter:drop-shadow(0 0 ${6*sc}px ${c});">💎</span></div>`; }
     },
     dragoneye: {
         label:'Sárkány szem',
-        build(c,s){ const sc=EFFECT_SIZE_MAP[s]; return `<div style="position:relative;display:flex;align-items:center;justify-content:center;">
+        build(c,s){ const sc=getEffectScale(s); return `<div style="position:relative;display:flex;align-items:center;justify-content:center;">
             <div style="position:absolute;inset:-${4*sc}px;border-radius:50%;border:${1*sc}px solid ${c}44;animation:efxDragonGlow 2s ease-in-out infinite alternate;"></div>
             <div style="width:${44*sc}px;height:${26*sc}px;border-radius:50%;border:${2*sc}px solid ${c}aa;display:flex;align-items:center;justify-content:center;overflow:hidden;animation:efxDragonBlink 4s ease-in-out infinite;">
                 <div style="width:${18*sc}px;height:${18*sc}px;border-radius:50%;background:radial-gradient(circle at 40% 40%,#fbbf24,${c});position:relative;animation:efxDragonPupil 3s ease-in-out infinite;">
@@ -2802,13 +2863,13 @@ const EFFECT_DEFS = {
     },
     poison: {
         label:'Méreg/átok',
-        build(c,s){ const sc=EFFECT_SIZE_MAP[s]; return `<div style="position:relative;display:flex;align-items:center;justify-content:center;width:${48*sc}px;height:${48*sc}px;">
+        build(c,s){ const sc=getEffectScale(s); return `<div style="position:relative;display:flex;align-items:center;justify-content:center;width:${48*sc}px;height:${48*sc}px;">
             ${[0,1,2].map(i=>`<div style="position:absolute;width:${[10,7,12][i]*sc}px;height:${[10,7,12][i]*sc}px;border-radius:50%;background:${c}22;border:1px solid ${c}44;left:${[8,20,28][i]*sc}px;top:${20*sc}px;animation:efxPoison ${[2.5,2,3][i]}s linear infinite;animation-delay:${[0,.7,1.2][i]}s;"></div>`).join('')}
             <span style="font-size:${22*sc}px;z-index:2;filter:drop-shadow(0 0 ${5*sc}px ${c});">☠</span></div>`; }
     },
     pin: {
         label:'Térkép tű',
-        build(c,s){ const sc=EFFECT_SIZE_MAP[s]; return `<div style="display:flex;flex-direction:column;align-items:center;position:relative;">
+        build(c,s){ const sc=getEffectScale(s); return `<div style="display:flex;flex-direction:column;align-items:center;position:relative;">
             <div style="position:absolute;bottom:${6*sc}px;left:50%;width:${18*sc}px;height:${18*sc}px;border-radius:50%;border:1px solid ${c}66;animation:efxPinPulse 2.4s ease-out infinite;"></div>
             <div style="width:${22*sc}px;height:${22*sc}px;border-radius:50%;background:${c};border:${2*sc}px solid ${c}88;display:flex;align-items:center;justify-content:center;animation:efxPinBob 2.4s ease-in-out infinite;box-shadow:0 0 ${8*sc}px ${c}66;">
                 <div style="width:${8*sc}px;height:${8*sc}px;border-radius:50%;background:rgba(255,255,255,.3);"></div>
@@ -2819,7 +2880,7 @@ const EFFECT_DEFS = {
     },
     chest: {
         label:'Kincsesláda',
-        build(c,s){ const sc=EFFECT_SIZE_MAP[s]; return `<div style="position:relative;display:flex;flex-direction:column;align-items:center;filter:drop-shadow(0 0 ${4*sc}px #fbbf2488);">
+        build(c,s){ const sc=getEffectScale(s); return `<div style="position:relative;display:flex;flex-direction:column;align-items:center;filter:drop-shadow(0 0 ${4*sc}px #fbbf2488);">
             ${[0,1,2].map(i=>`<div style="position:absolute;width:${3*sc}px;height:${3*sc}px;border-radius:50%;background:#fbbf24;bottom:${30*sc}px;left:${[6,17,28][i]*sc}px;animation:efxChestSpark 3.5s ease-out infinite;animation-delay:${[.1,.25,.4][i]}s;"></div>`).join('')}
             <div style="width:${36*sc}px;height:${13*sc}px;background:${c};border:${2*sc}px solid #fbbf24;border-bottom:none;border-radius:${3*sc}px ${3*sc}px 0 0;animation:efxChestLid 3.5s ease-in-out infinite;transform-origin:bottom;position:relative;box-shadow:inset 0 ${2*sc}px 0 rgba(255,255,255,0.15),0 -${2*sc}px ${4*sc}px rgba(0,0,0,0.3);">
                 <div style="position:absolute;bottom:-1px;left:50%;transform:translateX(-50%);width:${10*sc}px;height:${3*sc}px;background:${c};border-radius:0 0 ${2*sc}px ${2*sc}px;border:${1.5*sc}px solid #fbbf24;border-top:none;"></div>
@@ -2832,7 +2893,7 @@ const EFFECT_DEFS = {
     },
     vortex: {
         label:'Mágikus örvény',
-        build(c,s){ const sc=EFFECT_SIZE_MAP[s]; return `<div style="position:relative;width:${44*sc}px;height:${44*sc}px;display:flex;align-items:center;justify-content:center;">
+        build(c,s){ const sc=getEffectScale(s); return `<div style="position:relative;width:${44*sc}px;height:${44*sc}px;display:flex;align-items:center;justify-content:center;">
             <div style="position:absolute;inset:0;border-radius:50%;border:${2*sc}px solid ${c}cc;animation:efxVortex 3s linear infinite;"></div>
             <div style="position:absolute;inset:${5*sc}px;border-radius:50%;border:${1.5*sc}px dashed ${c}88;animation:efxVortex 2s linear infinite reverse;"></div>
             <div style="position:absolute;inset:${10*sc}px;border-radius:50%;border:${1*sc}px solid ${c}66;animation:efxVortex 1.5s linear infinite;"></div>
@@ -2840,7 +2901,7 @@ const EFFECT_DEFS = {
     },
     shadow: {
         label:'Árnyék lény',
-        build(c,s){ const sc=EFFECT_SIZE_MAP[s]; return `<div style="position:relative;width:${56*sc}px;height:${56*sc}px;display:flex;align-items:center;justify-content:center;">
+        build(c,s){ const sc=getEffectScale(s); return `<div style="position:relative;width:${56*sc}px;height:${56*sc}px;display:flex;align-items:center;justify-content:center;">
             ${[0,1,2].map((i)=>`<div style="position:absolute;width:${[36,28,22][i]*sc}px;height:${[36,28,22][i]*sc}px;border-radius:50%;background:${c}${['44','55','44'][i]};top:${[0,8,14][i]*sc}px;left:${[0,8,12][i]*sc}px;animation:efxShadowBlob ${[3,3.5,2.5][i]}s ease-in-out infinite;animation-delay:${[0,.5,1][i]}s;"></div>`).join('')}
             <div style="position:absolute;display:flex;gap:${8*sc}px;top:${26*sc}px;left:${18*sc}px;">
                 <div style="width:${4*sc}px;height:${4*sc}px;border-radius:50%;background:${c};animation:efxShadowEye 3s ease-in-out infinite;box-shadow:0 0 ${4*sc}px ${c};"></div>
@@ -2876,9 +2937,14 @@ function setActiveEffect(key, btn) {
 }
 
 function setEffectSize(size, btn) {
-    effectSize = size;
-    document.querySelectorAll('.effect-size-btn').forEach(b => b.classList.remove('active'));
-    btn.classList.add('active');
+    // Legacy – régi S/M/L hívásokhoz
+    effectSize = getEffectScale(size);
+    buildEffectMenu();
+}
+
+function setEffectSizeSlider(val) {
+    // val: 30-200, scale: 0.3-2.0
+    effectSize = val / 100;
     buildEffectMenu();
 }
 
@@ -2924,7 +2990,7 @@ map.on('click', function(e) {
     const c = document.getElementById('effectColor').value;
     const s = effectSize;
     const html = def.build(c, s);
-    const sc = EFFECT_SIZE_MAP[s];
+    const sc = getEffectScale(s);
     const sz = Math.round(56 * sc);
     const effectMarker = L.marker(e.latlng, {
         icon: L.divIcon({
@@ -2932,6 +2998,7 @@ map.on('click', function(e) {
             html: `<div data-efx="${activeEffectKey}" data-color="${c}" data-size="${s}">${html}</div>`,
             iconSize: [sz, sz],
             iconAnchor: [sz/2, sz/2],
+            popupAnchor: [0, -sz/2],
         })
     });
     effectMarker.efxData = { key: activeEffectKey, color: c, size: s };
@@ -2971,9 +3038,12 @@ function openEffectEditor(em) {
         <label style="color:#94a3b8;font-size:11px;display:flex;flex-direction:column;gap:3px;">
             Szín <input type="color" id="efxColorEdit" value="${d.color}">
         </label>
-        <div style="display:flex;gap:4px;" id="efxSizeEdit">
-            ${['S','M','L'].map(s=>`<button class="effect-size-btn${s===d.size?' active':''}" onclick="setEfxEditSize('${s}',this)">${s}</button>`).join('')}
-        </div>
+        <label style="color:#94a3b8;font-size:11px;display:flex;flex-direction:column;gap:3px;">
+            Méret
+            <input type="range" id="efxSizeSlider" min="30" max="200"
+                value="${Math.round(getEffectScale(d.size)*100)}"
+                style="width:100%;">
+        </label>
         <div class="popupButtons">
             <button class="saveBtn" onclick="saveEffectPopup()">Mentés</button>
             <button class="deleteBtn" onclick="deleteEffectPopup()">Törlés</button>
@@ -2995,12 +3065,12 @@ window.setEfxEditSize = function(s, btn) {
 window.saveEffectPopup = function() {
     const em = window.currentEditingEffect;
     const c = document.getElementById('efxColorEdit').value;
-    const sBtn = document.querySelector('#efxSizeEdit .effect-size-btn.active');
-    const s = sBtn ? sBtn.textContent : em.efxData.size;
+    const sliderVal = document.getElementById('efxSizeSlider')?.value;
+    const s = sliderVal ? (sliderVal / 100) : em.efxData.size;
     em.efxData.color = c;
     em.efxData.size = s;
     const def = EFFECT_DEFS[em.efxData.key];
-    const sc = EFFECT_SIZE_MAP[s];
+    const sc = getEffectScale(s);
     const sz = Math.round(56 * sc);
     em.setIcon(L.divIcon({
         className: '',
@@ -3217,7 +3287,7 @@ document.addEventListener('mousemove', e => {
       // map_type visszaállítása
       const savedType2 = data.drawings?.map_type || 'free'
       setMapType(savedType2, data.drawings?.campaign_id || null)
-      if (data.drawings?.weather) setWeather(data.drawings.weather)
+      if (data.drawings?.wxZones) { wxZones.forEach(z=>z.el.remove()); wxZones.length=0; data.drawings.wxZones.forEach(z=>addWxZone(z.latlng,z.type,z.size,z.density)); }
     }
   }
 
@@ -3271,7 +3341,7 @@ document.addEventListener('mousemove', e => {
       user_id: user.id,
       name,
       drawings: { version:2, map_type: mapType, campaign_id: campaignMapId,
-        groups: groupState, effects: efxData, weather: currentWeather },
+        groups: groupState, effects: efxData, wxZones: wxZones.map(z=>({latlng:z.latlng,type:z.type,size:z.size,density:z.density})) },
       markers: {},
       active_layer: activeLayerName
     })
