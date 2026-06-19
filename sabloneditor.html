@@ -1796,14 +1796,28 @@ async function loadCampaignMap(id) {
 }
 
 window.saveCampaignMap = async function() {
-  if (!window._sb) return;
+  if (!window._sb) { alert('Még nem töltött be a Supabase kapcsolat, próbáld újra egy pillanat múlva.'); return; }
   const name = document.getElementById('campaignMapName')?.value?.trim() || 'Névtelen kampány';
   // Az iframe-ből lekérjük az aktuális térkép állapotot
   const iframe = document.getElementById('mapIframe');
-  if (!iframe?.contentWindow) return;
+  if (!iframe?.contentWindow) { alert('A térkép iframe nem található.'); return; }
+
+  const statusEl = document.getElementById('campaignMapStatus');
+  if (statusEl) statusEl.textContent = 'Mentés...';
+
+  // Védőháló: ha az iframe nem válaszol (pl. még be sem töltött), ne lógjon
+  // örökre némán a gomb – jelezzük a hibát.
+  const timeoutId = setTimeout(() => {
+    if (window._pendingSaveResolve) {
+      window._pendingSaveResolve = null;
+      if (statusEl) statusEl.textContent = '⚠ Nincs válasz a térképtől';
+      alert('A térkép nem válaszolt a mentési kérésre. Próbáld újratölteni az oldalt, és győződj meg róla, hogy a Térkép fül már betöltött, mielőtt mentesz.');
+    }
+  }, 6000);
 
   // postMessage kérés az iframe-nek
   window._pendingSaveResolve = async (mapData) => {
+    clearTimeout(timeoutId);
     const row = {
       name,
       drawings: mapData.drawings,
@@ -1820,9 +1834,13 @@ window.saveCampaignMap = async function() {
       if (data) _currentCampaignMapId = data.id;
     }
     if (!error) {
-      document.getElementById('campaignMapStatus').textContent = '✓ Elmentve';
+      if (statusEl) statusEl.textContent = '✓ Elmentve';
       loadCampaignMapList();
-    } else console.error('Kampány mentési hiba:', error);
+    } else {
+      console.error('Kampány mentési hiba:', error);
+      if (statusEl) statusEl.textContent = '⚠ Mentési hiba';
+      alert('Mentési hiba: ' + (error.message || JSON.stringify(error)));
+    }
   };
   iframe.contentWindow.postMessage({ type: 'REQUEST_MAP_STATE' }, '*');
 }
