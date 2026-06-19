@@ -192,6 +192,12 @@ body{
     pointer-events: none;
     overflow: hidden;
 }
+/* Leaflet.Draw vezetővonala (a polygon-rajzolás közben a kurzort követő
+   szaggatott segédvonal) nem a shapeOptions-t használja, hanem saját CSS-t –
+   nem-admin módban ezért külön el kell rejteni. */
+body.wx-draw-hide-guide .leaflet-draw-guide-dash {
+    display: none !important;
+}
 .wx-zone-circle {
     border-radius: 50%;
 }
@@ -2554,6 +2560,8 @@ function clearEverything(){
     Object.keys(groupState).forEach(grp => {
         groupState[grp].drawings = null;
         groupState[grp].markers = [];
+        groupState[grp].effects = [];
+        groupState[grp].wxZones = [];
     });
     setMapType('free', null);
     wxZones.forEach(z => z.el.remove()); wxZones.length = 0;
@@ -2714,6 +2722,7 @@ function disableWeatherMode() {
     map.getContainer().style.cursor = '';
     document.getElementById('wxDrawBtn')?.classList.remove('active');
     document.getElementById('wxEditBtn')?.classList.remove('active');
+    document.body.classList.remove('wx-draw-hide-guide');
     // Pointer events vissza
     document.querySelectorAll('.wx-zone').forEach(el => {
         el.style.pointerEvents = 'none';
@@ -2734,7 +2743,9 @@ function startWeatherDraw() {
     disableWeatherMode();
     toggleMenu('weatherDropdown');
     document.getElementById('wxDrawBtn')?.classList.add('active');
-    const isAdmin = new URLSearchParams(window.location.search).get('mode') === 'admin';
+    const isAdmin = new URLSearchParams(window.location.search).get('mode') === 'admin'
+        && window._userProfile?.role === 'admin';
+    document.body.classList.toggle('wx-draw-hide-guide', !isAdmin);
     _wxDrawer = new L.Draw.Polygon(map, {
         shapeOptions: {
             color: isAdmin ? 'rgba(147,197,253,0.6)' : 'rgba(0,0,0,0)',
@@ -2755,6 +2766,7 @@ map.on(L.Draw.Event.CREATED, function(e) {
     if (e.layerType !== 'polygon' || !_wxDrawer) return;
     _wxDrawer = null;
     document.getElementById('wxDrawBtn')?.classList.remove('active');
+    document.body.classList.remove('wx-draw-hide-guide');
     const layer = e.layer;
     // Ne adjuk a térképhez – csak a latlngs kell, vizuálisan az overlay mutatja
     const latlngs = layer.getLatLngs()[0];
@@ -3364,6 +3376,9 @@ document.addEventListener('mousemove', e => {
   }
 
   window.scheduleSave = function() {
+    // Kampány (readonly) nézetben sosem mentjük a saját autosave-be –
+    // különben a következő belépéskor a kampány töltődne be alapként.
+    if (mapType === 'campaign' && !canEdit()) return
     if (_saveTimer) clearTimeout(_saveTimer)
     _saveTimer = setTimeout(window.saveToSupabase, 1500)
   }
@@ -3392,6 +3407,9 @@ document.addEventListener('mousemove', e => {
     if (!user) return
     const { data } = await window._sb.from('map_states')
       .select('*').eq('user_id', user.id).single()
+    // Régi (hibás) autosave-ekben kampány-állapot is elmentődhetett –
+    // azt sosem töltjük be automatikusan, a térkép üres free módban induljon.
+    if (data && data.drawings?.map_type === 'campaign') return
     if (data) {
       if ((data.drawings?.version === 2 || data.drawings?.version === 3) && data.drawings?.groups) {
         Object.keys(groupState).forEach(grp => {
@@ -3672,6 +3690,11 @@ document.addEventListener('mousemove', e => {
         }
         loadGroupState(activeMapGroup);
       }
+    }
+
+    if (e.data?.type === 'RESET_MAP') {
+      // Sabloneditor "Új kampány" gombja – üres vászon az új kampányhoz
+      clearEverything();
     }
 
     if (e.data?.type === 'REQUEST_MAP_STATE') {
