@@ -3702,6 +3702,7 @@ document.addEventListener('mousemove', e => {
     // Töröljük a jelenlegi rajzokat
     effects.forEach(em => map.removeLayer(em)); effects.length = 0
     markers.forEach(m => map.removeLayer(m)); markers.length = 0
+    wxZones.forEach(z => { z.el?.remove(); z.delBtn?.remove(); }); wxZones.length = 0
     drawnItems.clearLayers()
     // Sablon térkép: readonly mód
     setMapType('campaign', data.id)
@@ -3711,6 +3712,7 @@ document.addEventListener('mousemove', e => {
         if (data.drawings.groups[grp]) {
           groupState[grp].drawings = data.drawings.groups[grp]?.drawings || null
           groupState[grp].markers  = data.drawings.groups[grp]?.markers  || []
+          groupState[grp].wxZones  = data.drawings.groups[grp]?.wxZones  || []
         }
       })
       activeMapGroup  = data.active_layer ? layerNameToGroup(data.active_layer) : '3724'
@@ -3756,11 +3758,13 @@ document.addEventListener('mousemove', e => {
           if (data.drawings.groups[grp]) {
             groupState[grp].drawings = data.drawings.groups[grp]?.drawings || null;
             groupState[grp].markers  = data.drawings.groups[grp]?.markers  || [];
+            groupState[grp].wxZones  = data.drawings.groups[grp]?.wxZones  || [];
           }
         });
         activeMapGroup  = data.active_layer ? layerNameToGroup(data.active_layer) : '3724';
         activeLayerName = data.active_layer || '3724_domborzati';
         effects.forEach(em => map.removeLayer(em)); effects.length = 0;
+        wxZones.forEach(z => { z.el?.remove(); z.delBtn?.remove(); }); wxZones.length = 0;
         if (data.drawings.effects) {
           data.drawings.effects.forEach(e => {
             const def = EFFECT_DEFS[e.efxData?.key]; if (!def) return;
