@@ -1692,6 +1692,12 @@ map.createPane('weatherPane');
 const weatherPaneEl = map.getPane('weatherPane');
 weatherPaneEl.style.zIndex = 450;
 weatherPaneEl.style.pointerEvents = 'none';
+// Leaflet pane-eknek alapból nincs explicit szélesség/magasságuk (csak
+// left:0;top:0), a .weather-overlay viszont inset:0-val a SZÜLŐ méretéhez
+// igazítja magát – nélküle 0x0-ra esne össze, és overflow:hidden miatt
+// minden részecske levágódna (eltűnne, csak a vágott terület "látszana").
+weatherPaneEl.style.width = '100%';
+weatherPaneEl.style.height = '100%';
 {
     const weatherOverlayEl = document.getElementById('weatherOverlay');
     if (weatherOverlayEl) weatherPaneEl.appendChild(weatherOverlayEl);
@@ -3317,9 +3323,13 @@ window.deleteEffectPopup = function() {
 
 /* =========================================================
    AUTO LOAD
+   Megj.: a tényleges automatikus betöltés a window.loadFromSupabase()
+   hívásával történik (lásd lentebb, window 'load' eseményen), AMI a
+   Supabase-ből tölt, nem a localStorage-ból. Egy korábbi, közvetlen
+   loadCampaign() hívás itt ReferenceError-t dobott (setMapType még nem
+   létezett egy KÉSŐBBI <script> blokkban), mert ez a kód a betöltéskor
+   azonnal, szinkron futott le, mielőtt az a blokk elérhető lett volna.
 ========================================================= */
-
-loadCampaign();
 
 </script>
 <script>
