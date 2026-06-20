@@ -125,7 +125,7 @@
                 },
                 {
                     "id": "sec_3",
-                    "title": "KARAKTERALKOTÁS",
+                    "title": "Karakteralkotás",
                     "content_blocks": [
                         {
                             "type": "paragraph",
@@ -185,7 +185,7 @@
                 },
                 {
                     "id": "sec_4",
-                    "title": "KALANDOROK",
+                    "title": "Kalandorok",
                     "content_blocks": [
                         {
                             "type": "paragraph",
@@ -650,7 +650,7 @@
                 },
                 {
                     "id": "sec_10",
-                    "title": "ELF",
+                    "title": "Elf",
                     "content_blocks": [
                         {
                             "type": "paragraph",
@@ -751,8 +751,9 @@
                     ]
                 },
                 {
-                    "id": "sec_12",
-                    "title": "Törpe",
+                    "id": "sec_11b",
+                    "title": "Udvari ork",
+                    "section_title": "",
                     "content_blocks": [
                         {
                             "type": "paragraph",
@@ -769,7 +770,13 @@
                         {
                             "type": "paragraph",
                             "text": "Az igazi orkokhoz fűződő viszonyuk sajátságos: mindkét faj képviselői saját torzéképüknek tekintik a másikat. Az udvari orkok azért gyűlölik a vadon élőket, mert őket teszik felelőssé az emberek előítéleteiért – a vadon élő ork pedig faja minden értékének árulóját látja az udvariban. Keveredés a két faj közt sosem fordul elő; a kölcsönös megvetés miatt szó sem lehet ilyen frigyről."
-                        },
+                        }
+                    ]
+                },
+                {
+                    "id": "sec_12",
+                    "title": "Törpe",
+                    "content_blocks": [
                         {
                             "type": "paragraph",
                             "text": "A törpék Beriquelről érkeztek a P.sz. 1200-as években. Őshazájukból szörnyű démonfajzatok űzték el őket, ősi ellenségük Tyrrano teremtményei. Számtalan törpe harcos áldozta életét, hogy testvéreik elmenekülhessenek és Ynev földjén lelhessenek új hazát. Hamar barátságot kötöttek az Északi Szövetség népeivel, akik eleinte ugyan különösnek találták ezt az aprótermetű fajt, mely szokásában és gondolkodásában igencsak elüt az embertől, ám rövidesen rádöbbentek, milyen kemény harcosokra, milyen hű barátokra tettek szert személyükben."
@@ -1111,7 +1118,14 @@
                         {
                             "type": "paragraph",
                             "text": "Az Állóképesség adja a karakter Fájdalomtűrés pontjait, az Akaraterő értékével együtt."
-                        },
+                        }
+                    ]
+                },
+                {
+                    "id": "sec_14b",
+                    "title": "Intelligencia (humoros melléktáblázat)",
+                    "section_title": "",
+                    "content_blocks": [
                         {
                             "type": "rule",
                             "text": "A karakter értelmi szintje egy nyáladzó idiótáé, személyisége (ha lehet ilyesmiről egyáltalán beszélni) nem emelkedik túl az állati ösztönök kusza halmazán.",
@@ -1146,7 +1160,14 @@
                             "type": "rule",
                             "text": "Ha valamivel korábban születik, valószínűleg ő találja fel a Menzini sakot.",
                             "title": "Intelligencia 19-20"
-                        },
+                        }
+                    ]
+                },
+                {
+                    "id": "sec_14c",
+                    "title": "A próbadobás szükségessége (töredék)",
+                    "section_title": "",
+                    "content_blocks": [
                         {
                             "type": "paragraph",
                             "text": "az adott cselekvés. Ebből következik az is, hogy a karakter számára a mindennapos tevékenységek nem igényelnek külön próbát, hiszen egy 18-as Erejű ember különösebb megerőltetés nélkül tol arrébb egy szekeret, a patkókovács sem ront a patkoláskor és a tapasztalt lovas is biztosan üli a lovát (lásd az egyes Tulajdonságok leírásában szereplő hozzávetőleges meghatározásokat)."
@@ -1535,7 +1556,7 @@
                 },
                 {
                     "id": "sec_18",
-                    "title": "KLÁNOK, RENDEK, ISKOLÁK",
+                    "title": "Klánok, rendek, iskolák",
                     "content_blocks": [
                         {
                             "type": "paragraph",
@@ -2465,13 +2486,7 @@
                         {
                             "type": "paragraph",
                             "text": "Elsősorban az egykezes, könnyebb kardokat, szablyákat kedvelik, de fegyvertárukban megtalálható a lándzsa is. Harci technikájuk a könnyebb vértezetű ellenfelekkel szemben hatékony, miután fegyvereiket gyakorta különböző bódítószerekkel mérgezik, tökéletes mesterei az apró szúrásoknak és vágásoknak, ami nem okoz túlzott fájdalmat, ám hosszú, nyílt sebet hagy. Mozgásuk akrobatikus, ám ha a trükkjeik nem segítenek, akkor kitűnő vívótechnikájukra hagyatkoznak, ilyenkor próbálják mihamarabb eldönteni a küzdelmet – ha tehetik, pontos, gyors szúrásokkal és vágásokkal támadnak a legvédtelenebb pontokra."
-                        }
-                    ]
-                },
-                {
-                    "id": "sec_24",
-                    "title": "Barbár",
-                    "content_blocks": [
+                        },
                         {
                             "type": "paragraph",
                             "text": "Az amazon különleges előnyei és hátrányai a harcosnál leírtakon kívül:",
@@ -2585,7 +2600,13 @@
                                     "+10%"
                                 ]
                             ]
-                        },
+                        }
+                    ]
+                },
+                {
+                    "id": "sec_24",
+                    "title": "Barbár",
+                    "content_blocks": [
                         {
                             "type": "paragraph",
                             "text": "Civilizált ember vagy más humanoid nem lehet barbár – erre nemcsak fizikumának hiányosságai, de világlátása és ismeretanyaga sem teszi alkalmassá.",
@@ -2735,7 +2756,14 @@
                                     "2. fok"
                                 ]
                             ]
-                        },
+                        }
+                    ]
+                },
+                {
+                    "id": "sec_24b",
+                    "title": "Erigowi számszeríjász",
+                    "section_title": "",
+                    "content_blocks": [
                         {
                             "is_new_section": true,
                             "section_title": "Erigowi számszeríjász",
@@ -2835,19 +2863,19 @@
                             "section_title": "Az erigowi számszeríjász képzettségei, melyeket iskolájától az Oktatás képzettség 4. foka által nyújtott előnyei közül tanulhat:",
                             "type": "paragraph",
                             "text": "Akrobatika, Csapdaállítás, Esés, Fájdalomtűrés, Fegyver-használat, Fegyverismeret, Futás, Hadvezetés, Harctéri gya-korlat, Jelbeszéd, Lélektan, Mászás, Mechanika, Művészetek (Rajz), Nyomolvasás, Számtan/mértan, Taktika, Térképészet, Úszás, Vadonjárás."
-                        },
-                        {
-                            "is_new_section": true,
-                            "section_title": "Siedon (gorviki szabad harcos)",
-                            "type": "paragraph",
-                            "text": "Az öt részre szakadt, szüntelenül forrongó Gorvik har-cászati viszonyai meglehetősen eltűnnek mindattól, amit ha-gyományosan lehetne nevezni. Ennek megfelelően az itt nevelkedett harcosok helyzetét sem tekinthetjük tipikus-nak. A nyilvánosság előtt zajló viszályoknak errefele inkább a különböző lovagés paplovagrendek a főszereplői, a har-cosiskolákból kikerülő fegyverforgatók inkább a háttérben tevékenykednek. Nincs ezen mit csodálkozni, hiszen meste-reik a helyi háborús tradíciók alapján képzik ki őket. Márpe-dig gorviki felfogás szerint a nyílt hadviselés, a hosszadalmas"
                         }
                     ]
                 },
                 {
                     "id": "sec_25",
-                    "title": "A gorviki szabad harcos különleges előnyei és hátrányai a harcosnál leírtakon kívül",
+                    "title": "Gorviki szabad harcos",
                     "content_blocks": [
+                        {
+                            "is_new_section": true,
+                            "section_title": "Siedon (gorviki szabad harcos)",
+                            "type": "paragraph",
+                            "text": "Az öt részre szakadt, szüntelenül forrongó Gorvik har-cászati viszonyai meglehetősen eltűnnek mindattól, amit ha-gyományosan lehetne nevezni. Ennek megfelelően az itt nevelkedett harcosok helyzetét sem tekinthetjük tipikus-nak. A nyilvánosság előtt zajló viszályoknak errefele inkább a különböző lovagés paplovagrendek a főszereplői, a har-cosiskolákból kikerülő fegyverforgatók inkább a háttérben tevékenykednek. Nincs ezen mit csodálkozni, hiszen meste-reik a helyi háborús tradíciók alapján képzik ki őket. Márpe-dig gorviki felfogás szerint a nyílt hadviselés, a hosszadalmas"
+                        },
                         {
                             "type": "paragraph",
                             "text": "hadjáratok, a hatalmas mezei ütközetek nemcsak gyakorlati szempontból nézve gyermeteg és haszon-talan dolgok, hanem esztétikailag is kirívó otromba-ságnak minősülnek."
@@ -2941,7 +2969,14 @@
                             "title": "",
                             "headers": [],
                             "rows": []
-                        },
+                        }
+                    ]
+                },
+                {
+                    "id": "sec_25b",
+                    "title": "Predoci vértes",
+                    "section_title": "",
+                    "content_blocks": [
                         {
                             "type": "paragraph",
                             "text": "Pvarronból elvándorolt nemesi családok alapították egykoron a Gályák Tengerének mellékén az egymással szomszédos két hercegséget, Predocot és Edorlt – vagy, ahogy a szólás tartja, a déli partvidék két „ékszerdobozát”. Az egymást folyamatosan felülmúlni vágyó, az országokat vezető büszke és nyakas dinasztiák kölcsönös vetélkedése azonban haszonnal is járt. Mire a nyugati horizonton fölkomorlott a sötét Krán fenyegetése, mindkét – akkor már nagy múltnak számító – állam harcedzett, önálló hadsereggel rendelkezett. Míg Edorl a gyalogságát fejlesztette különös szenvedéllyel, addig Predoc nemesei nagyobb hangsúlyt fektettek a hatékony lovasságra. Ez vezetett azután a Vértek Rendházának megalapításához, amely ma már Predoc legnagyobb és legelismertebb harci iskolája, az istállóiból kikerülő pompás hátasok pedig joggal vonják magukra a külországi látogatók ámuló tekintetét. A Rendház sohasem számlált túl sok tagot, ám hatalmas nemesi vagyonok összpontosultak benne: nem csoda hát, hogy ő állítja ki az Államszövetség legjobban felszerelt és legképzettebb nehézlovas hadtesteit. Nem utolsósorban nekik köszönhető, hogy a Dúlás esztendejében Predocot nem söpörte el teljesen a fekete hordák áradata. Ámbátor a tenger fölül mágiával eltérített esőfellegek leginkább a roppant pincevárak szőlőhegyeit hivatottak öntözni, azért jut elegendő csapadék a Rendház kövér füvű rétjeire is, ahol a hírneves predoci telivéreket legeltetik. Ezek a gyönyörű, kitartó állatok szolgálnak hátasul a predoci vérteseknek, akik utánpótlásukat a hercegség birtokos nemesei közül toborozzák. Csakis előkelő születésű ifjakat fogadnak maguk közé, s bár a képzés költségeit a hercegi kincstár állja, közrendűek és külhoniak soha nem nyerhetnek felvételt a szervezetbe. Egyesek ugyan fellengzősen lovagoknak titulálják őket, ám a vértesek nem nevezhetők igazi lovagrendnek, hiszen kiképzésüket követően semmiféle egységes szervezeti keret nem fogja össze őket, ki-ki hazatér családi birtokára, a Rendház csupán azt a célt szolgálja, hogy azok a predoci nemesek, akik háború esetén kötelesek fegyverrel szolgálni az uralkodóházat, ne szedett-vedett hadként gyűljenek össze zászlóik alatt, hanem – hála a közös ifjúkori kiképzésnek – egységes, összeszokott csapatokban tevékenykedjenek a harcmezőn. Persze korántsem minden hadra kötelezett nemesúrfi járja el a Rendház iskoláját, csak a jómódúak; mert maga a képzés ugyan ingyenes, megfelelő fegyverzetről és harci felszerelésről azonban a növendéknek kell gondoskodnia. A vértesek ilyenformán nemcsak katonai, hanem politikai elitet is alkotnak. Szólóindás lobogójuk minden jelentősebb pincevár tornyán ott leng a Rendház família zászlaja mellett, s lovagjaik – ahogyan magukat nevezik – jelentős befolyással bírnak az ország kormányzására. A kiképzésen átesett nemesifjak háromféle fegyverhasználatát sajátítják el: a predoci egyeneskardét, a nehézlovas kopjáét és a tőrét. Megkülönböztető jelük a saját költségen csináltatott, ezüstözött indákkal míves lovasvért. Ez a rákozott páncélnak egy különleges, a hagyományosnál lényegesen jobb súlyelosztású változata, amelynek készítése a predoci páncélkovácsok féltve őrzött titka.",
@@ -3026,7 +3061,7 @@
                 },
                 {
                     "id": "sec_26",
-                    "title": "I.",
+                    "title": "Villar cwa Khaitir tárgyalása",
                     "content_blocks": [
                         {
                             "type": "paragraph",
@@ -3091,7 +3126,14 @@
                         {
                             "type": "flavor_text",
                             "text": "Áldassék Kyel és az ő bölcsessége."
-                        },
+                        }
+                    ]
+                },
+                {
+                    "id": "sec_26b",
+                    "title": "A lovagok",
+                    "section_title": "",
+                    "content_blocks": [
                         {
                             "type": "rule",
                             "text": "A lovagok nemesi származású, bár nem feltétlenül vagyonos fegyverforgatók, akik Ynev jelenkorában legkorszerűbbnek és leghatásosabbnak minősülő harcmodorban, a rendkívül költséges nehézlovas taktikával küzdenek. Viselkedésüket háborúban és békében egyaránt szigorú erkölcsi-társadalmi kötöttségek szabályozzák, melyek esetleges megsértésével lovagi címük elvesztését kockáztatják. Ezek az előírások kultúrkörről kultúrkörre változnak, mindenütt közös bennük azonban a harcban tanúsított bátorság, a hűbérúr iránti hűség. A lovagok azon nemesi származású harcosok, akiket gyermekkoruktól fogva a rendjük megkövetelte kívánalmaknak megfelelően neveltek. Olykor persze az is előfordul, hogy uralkodók, főnemesek – olyanok, akik bírnak e joggal – lovaggá ütnek embereket, akik szerintük érdemesek erre. Fontos azonban megjegyezni, hogy az efféle lovagok csak rangjukban tartoznak valamely rendhez, képzettségükben nem. Hosszás átnevelés múltán válhatnak csak annak igazi tagjává.",
@@ -3763,7 +3805,14 @@
                                     "3. fok"
                                 ]
                             ]
-                        },
+                        }
+                    ]
+                },
+                {
+                    "id": "sec_31b",
+                    "title": "Isten Kardja Lovagrend",
+                    "section_title": "",
+                    "content_blocks": [
                         {
                             "type": "paragraph",
                             "text": "A legnevesebb efféle lovagrend a tíz tagot számláló Angyali Testőrség (20. szint felett; ők azonban mind paplovagok), a legelterjedtebb pedig a számtalan rendházzal rendelkező Isten Kardja Lovagrend. Ez utóbbi egyben Shadon legnagyobb lovagrendje is."
@@ -4302,7 +4351,7 @@
                 },
                 {
                     "id": "sec_35",
-                    "title": "VÉRTESTVÉREK",
+                    "title": "Vértestvérek",
                     "content_blocks": [
                         {
                             "type": "paragraph",
@@ -4524,7 +4573,14 @@
                                     "Magasmágia, Ősi nyelv (godoni, aquir, kyr), Rúnamágia, Pszi (Kyr Metódus, Pyarroni Módszer), Írás/olvasás – illetve megvásárolhatják a Mágikus fogékonyság hátteret."
                                 ]
                             ]
-                        },
+                        }
+                    ]
+                },
+                {
+                    "id": "sec_36b",
+                    "title": "Ikrek",
+                    "section_title": "",
+                    "content_blocks": [
                         {
                             "type": "paragraph",
                             "text": "Ikrek"
@@ -4588,7 +4644,12 @@
                             "rows": []
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "title": "TOLVAJOK",
+            "sections": [
                 {
                     "id": "sec_37",
                     "title": "A tolvaj induló képzettségei 1. Tapasztalati szinten:",
@@ -5292,7 +5353,14 @@
                             "title": "",
                             "headers": [],
                             "rows": []
-                        },
+                        }
+                    ]
+                },
+                {
+                    "id": "sec_39b",
+                    "title": "Talavrai Csodaművesek",
+                    "section_title": "",
+                    "content_blocks": [
                         {
                             "type": "paragraph",
                             "text": "Talavra csodaművesei",
@@ -5360,7 +5428,7 @@
                 },
                 {
                     "id": "sec_40",
-                    "title": "SZÜRKECSUKLYÁSOK",
+                    "title": "Szürkecsuklyások",
                     "content_blocks": [
                         {
                             "type": "paragraph",
@@ -6227,8 +6295,9 @@
                     ]
                 },
                 {
-                    "id": "sec_46",
-                    "title": "SÖTÉT BÁRD",
+                    "id": "sec_45b",
+                    "title": "Vándor Dalnok",
+                    "section_title": "",
                     "content_blocks": [
                         {
                             "type": "paragraph",
@@ -6328,7 +6397,13 @@
                             "title": "Vándor Dalnok tanulható képzettségek",
                             "headers": [],
                             "rows": []
-                        },
+                        }
+                    ]
+                },
+                {
+                    "id": "sec_46",
+                    "title": "Sötét bárd",
+                    "content_blocks": [
                         {
                             "type": "flavor_text",
                             "text": "Egyetlen szerepet játszanak: a kiismerhetetlen idegen titokzatos figuráját. Ő az, aki a viharban kacagva szaval, aki rózsát csempész a kiszemelt hölgy vánkosára, aki éjszakákon átívelő regéket kelt életre, s aki hidegvérrel vágja át egy szolgáló torkát, ha érdekei úgy kívánják.",
@@ -7879,7 +7954,18 @@
                             "title": "",
                             "headers": [],
                             "rows": []
-                        },
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "PAPOK ÉS PAPLOVAGOK",
+            "sections": [
+                {
+                    "id": "sec_52",
+                    "title": "Általános Áttekintés",
+                    "content_blocks": [
                         {
                             "type": "paragraph",
                             "text": "Ynev papjai gondolkodásukban, cselekedeteikben, erkölcseikben mind-mind különböznek, s isteneik parancsolata szerint irányítják a rájuk bízott teremtmények sorsát, támogatást adnak hitükben, vigaszt bajukban, s ha kell segítik, oltalmazzák őket vész idején is.",
@@ -8066,18 +8152,7 @@
                             "title": "",
                             "headers": [],
                             "rows": []
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "title": "PAPOK ÉS PAPLOVAGOK",
-            "sections": [
-                {
-                    "id": "sec_52",
-                    "title": "Általános Áttekintés",
-                    "content_blocks": [
+                        },
                         {
                             "type": "paragraph",
                             "text": "Térképészet, Történelem, Udvari etikett, Vallásismeret (illetve minden egyéb, az egyház profiljába vágó képzettség).",
@@ -8993,7 +9068,14 @@
                             "type": "rule",
                             "text": "A Kyel-pap képzettségei, melyeket rendjétől az Oktatás képzettség 4. foka által nyújtott előnnyel tanulhat: Fegyverismeret, Hadvezetés, Harctéri gyakorlat, Pajzshasználat, Pusztítás, Vértviselet.",
                             "title": "Kyel-pap tanulható képzettségei"
-                        },
+                        }
+                    ]
+                },
+                {
+                    "id": "sec_54b",
+                    "title": "Sogron-pap",
+                    "section_title": "",
+                    "content_blocks": [
                         {
                             "type": "flavor_text",
                             "text": "Kevesen vannak Yneven, akik valaha betekintést nyerhettek a Kígyó álmába. Vöröset álmodik és közben kristályos rubinkönnyeket sír. Mély és ólomnehéz az álma, mert vénségesen vén ő, s régóta nem esett már a halandók világában olyasmi, ami felzavarta volna belőle. De ha kockára veted elméd épségét, s lemerülsz a Kígyó álmában ama sötétnél is sötétebb régiókba, ahol hideg hamuvá porlik a gondolat zsaratnoka... ott, ott rábukkanhatsz az igazságra.Mert hamis próféták prédikálnak a Kígyó nevében, gyermekem, és tisztátalan kezek emelik magasba az ő jelét. Ne hallgass reájuk: ne hidd, hogy a Kígyó erőszakot és elvakultságot hirdetne. Ha ezt tenné, aligha vénülhetett volna meg így: az indulatok legalább mindig a gerjesztőjüket emésztik el. A Kígyó bölcs és türelmes: nem hevülve forró parázs, hanem sziklaágyban fénylő lángrubin.Akik szítják a tüzet, azok nem közülünk valók. Mi csak tápláljuk, örökkön-örökké.",
@@ -9743,7 +9825,7 @@
                 },
                 {
                     "id": "sec_60",
-                    "title": "DOMVIK-PAPLOVAG",
+                    "title": "Domvik-paplovag",
                     "content_blocks": [
                         {
                             "type": "paragraph",
@@ -10003,7 +10085,7 @@
                 },
                 {
                     "id": "sec_62",
-                    "title": "II.",
+                    "title": "Dreina-paplovag",
                     "content_blocks": [
                         {
                             "type": "paragraph",
@@ -10104,13 +10186,6 @@
                             "rows": []
                         },
                         {
-                            "type": "flavor_text",
-                            "text": "...A Kódextárba végül csupán háromhetes várakozást követően nyertem bebocsátást, akkor, néhány óra és szigorú felügyelet mellett. Természetesen rendkívüli módon bosszankodtam a hosszadalmas huzavona miatt; határozottan az volt a benyomásom, hogy a lovagok még azután is csak igen kelletlenül engedtek kéréseimnek, hogy a Fehér Páholy több neves magisztere – hála az akadémiáink között kialakult baráti kapcsolatoknak – a saját személyében vállalt felelősséget értem. Mikor azonban valahára mégis bejutottam, be kellett látnom, hogy a kezdetben túlzottnak ítélt óvintézkedések valóban nem nélkülöztek minden alapot. Krad tanítása szerint sötét tanok nem léteznek; a tudomány morálisan semleges, a gonosz csírája mindig abban a személyben lappang, aki rossz célokra használja fel. Ennek megfelelően ők – a vakbuzgó shadoni fanatikusokkal ellentétben – tartózkodnak a barbár iratégetésektől; arra azonban szerfölött ügyelnek, hogy a legveszélyesebbnek ítélt műveket csak a gondosan megrostált kevesek számára tegyék hozzáférhetővé. Ami az anyagukat illeti, az valóban bámulatos volt; utólag visszatekintve azt a kijelentést is megkockáztatom, hogy még a mi egyetemünknek is díszére válhatott volna. Hibát sem a témakatalógusban, sem a kivonatos ismertetőkben nem találtam. Nem világi, hanem egyházi intézményben járók, arról csak egy különös apróság árulkodott: a Kódextár címjegyzékében feltüntetett irományok ugyanis kivétel nélkül el voltak látva valami sajátos, előttem ismeretlen könyvtári jelzettel, a lovagrend címerének kicsinyített másával. A legtöbb – számottevőt – a hírhedt Hargunn ta Karthinhmak mellett találtam, de száznál többet csatoltak Roxund Homoki Históriájához, a Memorabilia Crotonishoz és egy Doctrina Nigra néven számon tartott, rejtélyes műhöz is. Egyik kísérőm – bizonyos din Archeos lovag – makacs kérdezősködésemre elárulta, hogy ha valaki tanulmányozni kívánja az illető könyvet, előtte ennyi",
-                            "title": "Aranykor lovag (Krad-paplovag)",
-                            "headers": [],
-                            "rows": []
-                        },
-                        {
                             "type": "paragraph",
                             "text": "Dreina szent jelképei az ezüstfényű és a bőségszaru; paplovagjai az Élet és a Lélek szféráiból merítik fohászaikat, és úrnőjük felvértezi őket néhány egyedi fohásszal is, amiket egyetlen más istenség paplovagjai sem ismernek. Ezek leginkább az utazás, a hűség és az anyagi javak felett bírnak hatalommal.",
                             "title": "E. A Dreina-paplovag különleges előnyei",
@@ -10123,6 +10198,13 @@
                     "id": "sec_63",
                     "title": "A Krad-paplovag induló képzettségei 1. Tapasztalati szinten az alap paplovagnál feltünteteken kívül:",
                     "content_blocks": [
+                        {
+                            "type": "flavor_text",
+                            "text": "...A Kódextárba végül csupán háromhetes várakozást követően nyertem bebocsátást, akkor, néhány óra és szigorú felügyelet mellett. Természetesen rendkívüli módon bosszankodtam a hosszadalmas huzavona miatt; határozottan az volt a benyomásom, hogy a lovagok még azután is csak igen kelletlenül engedtek kéréseimnek, hogy a Fehér Páholy több neves magisztere – hála az akadémiáink között kialakult baráti kapcsolatoknak – a saját személyében vállalt felelősséget értem. Mikor azonban valahára mégis bejutottam, be kellett látnom, hogy a kezdetben túlzottnak ítélt óvintézkedések valóban nem nélkülöztek minden alapot. Krad tanítása szerint sötét tanok nem léteznek; a tudomány morálisan semleges, a gonosz csírája mindig abban a személyben lappang, aki rossz célokra használja fel. Ennek megfelelően ők – a vakbuzgó shadoni fanatikusokkal ellentétben – tartózkodnak a barbár iratégetésektől; arra azonban szerfölött ügyelnek, hogy a legveszélyesebbnek ítélt műveket csak a gondosan megrostált kevesek számára tegyék hozzáférhetővé. Ami az anyagukat illeti, az valóban bámulatos volt; utólag visszatekintve azt a kijelentést is megkockáztatom, hogy még a mi egyetemünknek is díszére válhatott volna. Hibát sem a témakatalógusban, sem a kivonatos ismertetőkben nem találtam. Nem világi, hanem egyházi intézményben járók, arról csak egy különös apróság árulkodott: a Kódextár címjegyzékében feltüntetett irományok ugyanis kivétel nélkül el voltak látva valami sajátos, előttem ismeretlen könyvtári jelzettel, a lovagrend címerének kicsinyített másával. A legtöbb – számottevőt – a hírhedt Hargunn ta Karthinhmak mellett találtam, de száznál többet csatoltak Roxund Homoki Históriájához, a Memorabilia Crotonishoz és egy Doctrina Nigra néven számon tartott, rejtélyes műhöz is. Egyik kísérőm – bizonyos din Archeos lovag – makacs kérdezősködésemre elárulta, hogy ha valaki tanulmányozni kívánja az illető könyvet, előtte ennyi",
+                            "title": "Aranykör lovag (Krad-paplovag)",
+                            "headers": [],
+                            "rows": []
+                        },
                         {
                             "type": "flavor_text",
                             "text": "imát köteles intézni Kradhoz. A magam részéről ezt ostoba babonaságnak tartottam, s véleményem valószínűleg tükröződhetett az arckifejezésemen is, mert din Archeos lovagom hozzátette, hogy minden címerkép egy-egy olyan testvért jelent, aki életét áldozta a könyv megszerzéséért.",
@@ -10277,11 +10359,6 @@
                     ]
                 },
                 {
-                    "id": "sec_64",
-                    "title": "A Ranagol-paplovag induló képzettségei 1. Tapasztalati szinten az alap paplovagnál feltüntetetteken kívül:",
-                    "content_blocks": []
-                },
-                {
                     "id": "sec_65",
                     "title": "Ranagol-paplovag",
                     "content_blocks": [
@@ -10432,7 +10509,7 @@
                 },
                 {
                     "id": "sec_67",
-                    "title": "BOSSZÚANGYAL (UWEL-PAPLOVAG)",
+                    "title": "Bosszúangyal (Uwel-paplovag)",
                     "content_blocks": [
                         {
                             "type": "paragraph",
@@ -10808,7 +10885,7 @@
                 },
                 {
                     "id": "sec_70",
-                    "title": "III. Varázshatalmak a boszorkányok a Hatalom Italaiból merítik.",
+                    "title": "Boszorkány alapadatai és varázshatalma",
                     "content_blocks": [
                         {
                             "type": "rule",
@@ -11089,7 +11166,14 @@
                                     "3 Kp"
                                 ]
                             ]
-                        },
+                        }
+                    ]
+                },
+                {
+                    "id": "sec_70b",
+                    "title": "Liviniai Gyülekezet",
+                    "section_title": "",
+                    "content_blocks": [
                         {
                             "type": "paragraph",
                             "text": "A legnevesebb és valódi hatalommal bíró szervezet a Liviniai Gyülekezet. Akárcsak más, kisebb rendek, ők is Morgena papi szervezetétől eredeztetik magukat, s ebben lehet némi igazság. Céljaik, módszereik koronként változnak, egy azonban bizonyos: Tharr, a Háromfejű hívei ellen engesztelhetetlen gyűlölet él szívükben. Összetartásuk és befolyásuk világszerte híres – mondják, egyes tagjaik a Dorani Varázslótanács urainak halószobáikról is regélhetnének. Erősen kötődnek a kyr hagyományokhoz, s a legtöbb régi ereklye is Livinában halmozódott fel.",
@@ -11152,7 +11236,14 @@
                             "title": "Mágia elleplezése személyekre",
                             "headers": [],
                             "rows": []
-                        },
+                        }
+                    ]
+                },
+                {
+                    "id": "sec_70c",
+                    "title": "Maida Saluquas",
+                    "section_title": "",
+                    "content_blocks": [
                         {
                             "type": "paragraph",
                             "text": "A Kráni Birodalmi Belsőiskolák árnyékában tevékenykedő Maida Saluquas szektáról nem sokat tudunk, mivel nagyasszonyaik egytől egyig a Fekete Határ túloldalán, kráni hatalmasságok oltalmában rejteznek. A rend vezetője a mindenkori birodalmi tanács fejének felel csupán, s egyes szóbeszédek szerint azon kevesek közé tartozik, akik személyesen találkozhattak Shackalorral. Egyesek egészen odáig merészkednek, hogy a rend alapítója nem is ember vagy más eredetű lény, hanem valamely ősi faj tagja. A Maida Saluquas tagjai lélegzetelállító szépségű fiatal hölgyek, akik ártalmatlan külsejükre rácáfolva orgyilkosok és megszégyenítő képzettségekkel bíró ügynökök. Krán legfőbb politikai és gazdasági rendőrfőtisztjei megdobogható hatásának köszönheti. A szekta tagjai Dél legkülönbözőbb államaiban bukkantak fel az idők folyamán – rendszert jelentős személyiségek, bankárok sőt, uralkodók ágyasaiként, valódi céljaikat mindenkor titokban tartva. Misztikus tudományokban való jártasságuk, asztrálmágikus hatalmuk megfelelő – és gyakorlatilag kivédhetetlen – eszköznek bizonyult minden olyan esetben, mikor az egyes államok nyugalmának szétzilálása, a vezetők és/vagy tehetős személyiségek befolyásolása vagy épp félreállítása volt a kijelölt birodalmi cél. A boszorkányok a küldetés sikeres végrehajtása érdekében nem riadnak vissza a gyilkosságoktól sem, melyek elkövetésekor esetenként saját eszköztárukat, máskor célirányosan megválasztott, a gyanút egy jó előre kiszemelt egyénre vagy csoportra terelő fegyvereket használnak. Feljegyzések születtek olyan esetekről is, mikor a gyanút valamely istenségre, annak fanatikus híveire terelték – földművesek egykedvűségével hívták szét egy, a városok és városállamok pusztulását eredményező vallásháború magvait. A legriasztóbb azonban talán az, hogy a Dúlást követő véres tisztogatások ellenére, mely során ezreket égettek meg máglyán az inkvizítorok, a rend él és virágzik, és tagjai Pyarron államaiban nagyobb számban vannak jelen, mint valaha. Igaz kirajzásuknak az Amhe-Ramun fenyegetése miatti hallgatólagos pyarroni-kráni közeledés is újabb lendületet adott, de Amhe-Ramunt is legyőzik egyszer és akkor és az irgalmazzon az Államszövetségnek.",
@@ -11166,7 +11257,14 @@
                             "title": "A Maida Saluquas tagjainak különleges képességei",
                             "headers": [],
                             "rows": []
-                        },
+                        }
+                    ]
+                },
+                {
+                    "id": "sec_70d",
+                    "title": "Stella Prosylens",
+                    "section_title": "",
+                    "content_blocks": [
                         {
                             "type": "rule",
                             "text": "A boszorkányrend P.sz. 3251-ben született, Masgar városában. Alapítója egy különös kalandozónő, Velyen Aralea volt, aki ifjabb éveiben egy erioni nemes hölgy testőréül szegődött el, s szolgálataiért cserébe kapta mágikus tudományát. Velyen Noir istennő tiszteletére hozta létre a boszorkányiskolát, mert úgy érezte, életét többször köszönhette az Álmok Istennőjének. Nemegyszer megesett, hogy a reá leselkedő veszélyeket előző éjszaka előre látta álmában, és megtanulta értelmezni a látomásokat. Egyre többször kapott segítséget az istennőtől, ezért döntött úgy, hogy az általa alapított rend is Noirt szolgálja majd. Ez a képesség a rend összes beavatottjának megadatott, a boszorkányok az igazán fontos veszedelmekről, ha előtte kimagaslóan szolgálták istennőjüket, álmukban tudomást szerezhetnek különös látomások formájában.",
@@ -11180,13 +11278,7 @@
                             "title": "",
                             "headers": [],
                             "rows": []
-                        }
-                    ]
-                },
-                {
-                    "id": "sec_71",
-                    "title": "Alidaxi boszorkányrend",
-                    "content_blocks": [
+                        },
                         {
                             "type": "paragraph",
                             "text": "Emellett a Masgar környéki kisebb városokban is központokat létesítettek, együttműködve a helyi tolvajklánokkal és Noir papokkal. Kölcsönösen segítették egymás tevékenységét, a Noir „egyház” védelmét és támogatását, a tolvajok információt és fegyvereseket kínáltak a boszorkányok bajtalanításáért és mágikus segítségéért cserébe. Minden tökéletes összhangban működött; amit a nyers férfierő vagy a besurranó tolvajok sem érhettek el, ott a boszorkányok érzelmeket manipuláló mágiája megtette a magáét. A Stella Prosylens, mely érv nyelven hullócsillagot jelent, azóta is viszonylagos nyugalomban működik. Legfőbb céljukat Noir vallásának terjesztését és észak politikai elitje feletti ellenőrzés megszerzését nagyon óvatosan és lépésenként haladva igyekeznek megvalósítani, mivel Tharr egyházán és az északi Inkvizítorok Szövetségén kívül vetélytársaikkal is számolniuk kell, például a Liviniai Gyülekezet beavatottaival.",
@@ -11200,7 +11292,13 @@
                             "title": "A Stella Prosylens tagjainak különleges képességei:",
                             "headers": [],
                             "rows": []
-                        },
+                        }
+                    ]
+                },
+                {
+                    "id": "sec_71",
+                    "title": "Alidaxi boszorkányrend",
+                    "content_blocks": [
                         {
                             "type": "paragraph",
                             "text": "Idinal hegye már a Negyedkorban is szent helynek számított: a crantaiak sámánjai ajánlották az ősök figyelmébe vízeséseinek dübörgő árnyékában vagy épp a barlangtavak sötétjében; hogy a kyrek aztán a győztesekre jellemző magabízással írják át a történelmet és rontsák le az előttük járók szent helyeit, hogy Morgena katedrálisait emeljék a magányos hegy hatalmas lándzsahegyként nap mint nap a tengerig vándorló árnyékában.",
@@ -11249,7 +11347,14 @@
                             "title": "Az Alidaxi boszorkányrend tagjainak különleges képességei:",
                             "headers": [],
                             "rows": []
-                        },
+                        }
+                    ]
+                },
+                {
+                    "id": "sec_71b",
+                    "title": "Ezer Fátyol Nővérei",
+                    "section_title": "",
+                    "content_blocks": [
                         {
                             "type": "paragraph",
                             "text": "Ezer Fátyol Nővérei",
@@ -11270,13 +11375,7 @@
                             "title": "",
                             "headers": [],
                             "rows": []
-                        }
-                    ]
-                },
-                {
-                    "id": "sec_72",
-                    "title": "Az Ezer Fátyol Boszorkányrend tagjainak különleges előnyei és hátrányai",
-                    "content_blocks": [
+                        },
                         {
                             "type": "paragraph",
                             "text": "repet töltöttek be nemzettségeik életében. Az nem bizonyos azonban, – s egyes vérmesebb helyeken az efféle feltételezés is karóba húzás érdemlő rémségnek számít –, hogy kapcsolat áll-e fent Tallaren, az elf Kék Hadúr álomtáncosai és a dzsadok varázstudói között az emberek mágiájának fejlődését tekintve. Lar-Dor bölcsei arra a véleményre hajlanak, hogy a törzsek boszorkányai az álomtáncosoktól lesték el különleges varázstáncuk alapjait, mivel mindkét irányzat ereje a térben felrajzolt, a tánc során megjelenített rúnák delejes hatalmában rejlik. Mivel így nem csak megragadják, de bezárók közé zárva újra is formázzák a rúna vonalai által körbekerített szövedékét. A szekta ezen misztikus táncmágiáról kapta nevét is.",
@@ -11340,7 +11439,14 @@
                         {
                             "type": "flavor_text",
                             "text": "– Remélem elpatkolsz, mortor – dünnyögte. – Ha pedig élve rendeltetett, hát add, hogy ne találkozzunk soha többé! Nagy levegőt vett, és a vízbe vetette magát. Holmija súlyos volt, de valahogy elboldogult vele, és kegyébe fogadta a szerencse is: egyetlen szigony sem repült utána, egyetlen cápa sem keresztezte az útját, a baleknak pedig, aki a parton rálelve házába fogadta, takaros asszonya, ráadásnak tisztes készlete volt helyben vert ezüstökből."
-                        },
+                        }
+                    ]
+                },
+                {
+                    "id": "sec_72b",
+                    "title": "Boszorkánymester",
+                    "section_title": "",
+                    "content_blocks": [
                         {
                             "type": "paragraph",
                             "text": "A boszorkánymesterek gátlástalan Feketemágusok – természetesen csak a szó filozófiai értelmében, hiszen hatalmuk bármily sötét is, nyomába sem ér egy igazi mágusénak. Mégis, a többi varázshasználó csak irigységgel vegyes döbbenettel szemlélheti sötét hatalmuk mértékét. Mágikus tudományukat egyetlen cél, hatalomvágyuk szolgálatába állítják: pusztítanak, kínt, nyomorúságot okoznak, ha kell, de szolgálnak évekig, ha úgy hozza a szükség..."
@@ -11403,7 +11509,7 @@
                 },
                 {
                     "id": "sec_73",
-                    "title": "Képzettségek",
+                    "title": "A boszorkánymester képzettségei és jellemzői",
                     "content_blocks": [
                         {
                             "type": "paragraph",
@@ -11866,7 +11972,14 @@
                         {
                             "type": "paragraph",
                             "text": "A legtöbb boszorkánymesteri céh általában valamely más rend vagy állam hatalmi struktúrájában tölt be kulcsfontosságú pozíciót vagy épp vezeti ezen szervezeteket. Az efféle céhek a legritkább esetben állnak csupán egymagukban, gyakorta harcosrendek, orgyilkosklánok vagy épp valamely udvar védelmét élvezik cserébe nem elhanyagolható mágikus hatalmukért."
-                        },
+                        }
+                    ]
+                },
+                {
+                    "id": "sec_74d",
+                    "title": "Vérkelyhesek",
+                    "section_title": "",
+                    "content_blocks": [
                         {
                             "type": "paragraph",
                             "text": "Az aszisz boszorkánymesteri rend tagjai egytől egyig Ifinben, Abasszisz székvárosában tartanak fent rezidenciát és itt állnak iskoláik is. Nagymesterükkel az élen a mindenkori aszisz nagykirály koronájának támaszai a hercegkapitányok bérvarázslói és Antoh papjai ellenében. Rettegett és elismert szervezet, kiknek méregmágiájáról és egész tartományokat pusztító viharairól sötét történetek keringenek a Quironea mindkét partján. A mindenkori nagymester és bizalmasai az Aszisz Fekete Lobogó testőrségének tagjai."
@@ -11975,7 +12088,14 @@
                         {
                             "type": "paragraph",
                             "text": "Udvari etikett/intrika, Politika/diplomácia, Történelem."
-                        },
+                        }
+                    ]
+                },
+                {
+                    "id": "sec_74b",
+                    "title": "Ascens Morga",
+                    "section_title": "",
+                    "content_blocks": [
                         {
                             "type": "paragraph",
                             "text": "Az Ascens Morga a Shuluri boszorkánymesteri iskolák közül az egyik legrégebbi szervezet, melyről az első feljegyzések a Családi Háborúk korából származnak. Igen sikeres és jó politikai érzékkel megáldott vezetőinek hála, afféle status quo-t erősítő szerv, melynek manapság már-már rituális szerepe is van a kisebb Nemes Házak összecsapásaiban. A rend bevetése mindig a nyitó vagy záróakkord ezen árnyékháborúban, minden alkalommal vagy a kezdőcsapást, vagy a végső elkeseredett roham bevégzését szánják nekik a famorok stratégiái."
@@ -11983,13 +12103,7 @@
                         {
                             "type": "paragraph",
                             "text": "A klán biztonságát leginkább egyenességük szavatolja, illetve a távolmaradás szokása. Az egy munkára felbérelt boszorkánymesterek mindig csak egyszer, egy munka erejéig vállalkoznak valaki megölésére, s ha nem járnak sikerrel, nem állnak bosszút elfogott társaikért, de alkalom adtán igyekeznek kiváltani őket. Emellett pedig egy-egy Házak"
-                        }
-                    ]
-                },
-                {
-                    "id": "sec_75",
-                    "title": "1. Tapasztalati szinten:",
-                    "content_blocks": [
+                        },
                         {
                             "type": "paragraph",
                             "text": "közti vitában csak egyszer és csak az egyik oldalon szállnak be, így a pórul járt Háznak nem érdeke ellenük acsarogni, hacsak nem óhajtanak újabb veszteségeket elkönyvelni. A Nagy Házak vitáiba természetesen az Ascens Morga nem nagyon szól bele, megelégszik a saját súlycsoportjában lévő családok igen bőkezű adományaival. Az itt végzett vajákosok legalább olyan jól bánnak a különféle pengékkel, mint a mágiával; képzésük szerint két nagyobb csoportra oszthatók: a viadorokra, kik leginkább a shuluri viadalokkal erősítve, míg a méregmesterekre, kik művészetüket jól rejtettén gyakorolják a Nemes Házak legnagyobb megelégedésére vagy épp bánatára. Az előbbiek a mendemondák szerint hozzák a nagyobb bevételt a klánnak az előre lebeszélt és megrendezett viadalok miatt, s a rossznyelvek szerint pont emiatt nem túl rózsás a viszonyuk a szintén a viadalok nyereségéből részesülni kívánó Kobrákkal sem."
@@ -12063,7 +12177,14 @@
                                     "2. fok"
                                 ]
                             ]
-                        },
+                        }
+                    ]
+                },
+                {
+                    "id": "sec_74c",
+                    "title": "Hergoli Villámmesterek",
+                    "section_title": "",
+                    "content_blocks": [
                         {
                             "type": "paragraph",
                             "text": "Egyes rossznyelvek a szegény királyok csatamágusait is megemlékeznek róluk."
@@ -12220,7 +12341,14 @@
                         {
                             "type": "paragraph",
                             "text": "Hadvezetés, Lélektan, Térképészet, Művészetek (Rajz), Hajózás, Csomózás, Értékbecslés, Kultúra, Szakma (Pénzügyek), Politika/diplomácia, Udvari etikett/intrika."
-                        },
+                        }
+                    ]
+                },
+                {
+                    "id": "sec_75b",
+                    "title": "Tűzvarázsló",
+                    "section_title": "",
+                    "content_blocks": [
                         {
                             "type": "flavor_text",
                             "text": "„A szemei, azok az gyötrő, fájdalom-zöld szemei! Flammeo nem hallotta a boszorkány suttogását, nem ismerte fel a koponyájáért repesztő szemétverését sem. Énjének foszlányai sikoltva zuhantak az öntudatlanság felé, ám valahol a zsigerek mélyén, tudatán túl valaki – talán nem is ő maga, vagy mégis ő volt az, a valódi, megtörhetetlen lélek – ... igen, valahol, valaki a Hatodik Tűzoltár bevezető sorait mormolta:",
@@ -12276,13 +12404,7 @@
                             "title": "",
                             "headers": [],
                             "rows": []
-                        }
-                    ]
-                },
-                {
-                    "id": "sec_76",
-                    "title": "TŰZ TÁPLÁLÓI REND",
-                    "content_blocks": [
+                        },
                         {
                             "type": "rule",
                             "text": "A tűzvarázslók szintenként átlagosan 6 ponttal növelik Mp-jaik számát.",
@@ -12646,7 +12768,13 @@
                             "title": "",
                             "headers": [],
                             "rows": []
-                        },
+                        }
+                    ]
+                },
+                {
+                    "id": "sec_76",
+                    "title": "Tűz Táplálói Rend",
+                    "content_blocks": [
                         {
                             "type": "paragraph",
                             "text": "A Tűzkobra kultuszának terjesztésével, a vallási kérdésekkel a Tűz Táplálói Rend foglalkozik. Vezetői a Sogron Útját járó tűzvarázslók, akik főként a vallás elméleti kérdéseivel foglalkoznak. Közülük való vezeti az Ordani Rend minden nagyobb templomát és rendházát – a városban vagy határaink kívül. A magas rangúak – északi pédát követve – a Tűz Letéteményeseinek, a legalacsonyabbak pedig a Tűz Megtisztítóinak nevezik magukat.",
@@ -12743,7 +12871,14 @@
                             "title": "",
                             "headers": [],
                             "rows": []
-                        },
+                        }
+                    ]
+                },
+                {
+                    "id": "sec_77b",
+                    "title": "Tűz Harcosai Rend",
+                    "section_title": "",
+                    "content_blocks": [
                         {
                             "type": "paragraph",
                             "text": "A Tűz Harcosai Rend felelős Ordan és az azon kívüli templomok, rendházak védelméért. Ők képzik fegyverforgatásra az Ordani Rend minden tagját. A Tűz Harcosai Rendet a Pusztító Tűz Útjára lépett tűzvarázslók irányítják, akik főként a hadi taktikában és a Tűzmágia harctéri alkalmazásában jeleskednek, hiszen a Lángörök és a Főnixek között akadnak náluk is különb fegyverforgatók.",
@@ -13551,7 +13686,7 @@
                 },
                 {
                     "id": "sec_84",
-                    "title": "DORANI VARÁZSLÓ",
+                    "title": "Dorani varázsló",
                     "content_blocks": [
                         {
                             "type": "paragraph",
@@ -13777,7 +13912,12 @@
                             "rows": []
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "title": "KÉPZETTSÉGEK",
+            "sections": [
                 {
                     "id": "sec_86",
                     "title": "A képzettség foka",
@@ -17934,11 +18074,6 @@
                     ]
                 },
                 {
-                    "id": "sec_106",
-                    "title": "Misztikus képzettségek",
-                    "content_blocks": []
-                },
-                {
                     "id": "sec_107",
                     "title": "Magasmágia (IV – Intelligencia, Akaraterő)",
                     "content_blocks": [
@@ -19466,10 +19601,15 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "title": "BETEGSÉGEK",
+            "sections": [
                 {
                     "id": "sec_119",
-                    "title": "BETEGSÉGEK",
+                    "title": "Betegségek",
                     "content_blocks": [
                         {
                             "type": "paragraph",
@@ -20053,10 +20193,15 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "title": "MÉRGEK ÉS MÉRGEZÉS",
+            "sections": [
                 {
                     "id": "sec_123",
-                    "title": "MÉRGEK ÉS MÉRGEZÉS",
+                    "title": "Mérgek és mérgezés",
                     "content_blocks": [
                         {
                             "type": "paragraph",
@@ -20386,10 +20531,15 @@
                             "text": "Például: Asyl a boszorkánymester – 4. fokon képzett méregkeverő egy fájdalomcsillapítót szeretne kikeverni. A 0. szintű (0 Ip) gyógyítóval természetesen italméregnek minősül (1 Ip), ami fájdalomcsillapító hatást, és (2 Ip), közepes ideig ható (3 Ip) és gyorsan hat (3 Ip). Tehát a gyógyítóval Ip költsége a rendes költség (9 Ip) kétszerese, azaz 18 Ip, és 4k6 Fp visszaadására képes – természetesen Fp-t nem gyógyulnak így semmiféleképpen, s amint a hatás időtartama lejár az így nyert Fp-k is elvesznek."
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "title": "YNEV PÉNZEI",
+            "sections": [
                 {
                     "id": "sec_124",
-                    "title": "YNEV PÉNZEI",
+                    "title": "Ynev pénzei",
                     "content_blocks": [
                         {
                             "type": "paragraph",
@@ -21725,10 +21875,15 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "title": "FEGYVEREK ÉS VÉRTEZETEK",
+            "sections": [
                 {
                     "id": "sec_125",
-                    "title": "FEGYVEREK",
+                    "title": "Fegyverek",
                     "content_blocks": [
                         {
                             "type": "paragraph",
@@ -23130,7 +23285,7 @@
                 },
                 {
                     "id": "sec_128",
-                    "title": "FEGYVERLEÍRÁSOK",
+                    "title": "Fegyverleírások",
                     "content_blocks": [
                         {
                             "type": "paragraph",
@@ -24154,59 +24309,12 @@
                             ]
                         }
                     ]
-                },
-                {
-                    "id": "sec_138",
-                    "title": "A hitvallás",
-                    "content_blocks": [
-                        {
-                            "type": "flavor_text",
-                            "text": "Mert a Fény az, mi utat mutat, és az Árnyék az, mi próbára tesz. Ki e kettő között jár, az ismeri az Igazságot. – Rianna, a Fény Papnője"
-                        },
-                        {
-                            "type": "paragraph",
-                            "text": "A hitvallás ereje a hívő lelkében rejlik. Minden pap és papnő, aki egy istenségnek szenteli életét, köteles betartani az adott istenség dogmáit és parancsolatait. Ennek elmulasztása a papi képességek elvesztésével járhat, vagy akár az istenség haragját is kiválthatja. A hitvallás részletei az adott istenség leírásánál találhatóak."
-                        },
-                        {
-                            "type": "paragraph",
-                            "text": "A papi képességek használatához a papnak legalább 10 HITE ponttal kell rendelkeznie. Ha a HITE pontja 0 alá csökken, nem képes isteni mágiát használni. A HITE pontok visszanyerhetők imádkozással vagy szent cselekedetek végrehajtásával."
-                        },
-                        {
-                            "type": "table",
-                            "title": "Elf harcos jellemzők",
-                            "headers": [
-                                "Jellemző",
-                                "Érték"
-                            ],
-                            "rows": [
-                                [
-                                    "KE",
-                                    "12"
-                                ],
-                                [
-                                    "TÉ",
-                                    "10"
-                                ],
-                                [
-                                    "VÉ",
-                                    "14"
-                                ],
-                                [
-                                    "MGT",
-                                    "5"
-                                ],
-                                [
-                                    "SFE",
-                                    "8"
-                                ],
-                                [
-                                    "FP",
-                                    "30"
-                                ]
-                            ]
-                        }
-                    ]
-                },
+                }
+            ]
+        },
+        {
+            "title": "PSZI",
+            "sections": [
                 {
                     "id": "sec_139",
                     "title": "Kyr Metódus",
@@ -25922,6 +26030,63 @@
                             ]
                         }
                     ]
+                }
+            ]
+        },
+        {
+            "title": "SZAKRÁLIS MÁGIA",
+            "sections": [
+                {
+                    "id": "sec_138",
+                    "title": "A hitvallás",
+                    "content_blocks": [
+                        {
+                            "type": "flavor_text",
+                            "text": "Mert a Fény az, mi utat mutat, és az Árnyék az, mi próbára tesz. Ki e kettő között jár, az ismeri az Igazságot. – Rianna, a Fény Papnője"
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "A hitvallás ereje a hívő lelkében rejlik. Minden pap és papnő, aki egy istenségnek szenteli életét, köteles betartani az adott istenség dogmáit és parancsolatait. Ennek elmulasztása a papi képességek elvesztésével járhat, vagy akár az istenség haragját is kiválthatja. A hitvallás részletei az adott istenség leírásánál találhatóak."
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "A papi képességek használatához a papnak legalább 10 HITE ponttal kell rendelkeznie. Ha a HITE pontja 0 alá csökken, nem képes isteni mágiát használni. A HITE pontok visszanyerhetők imádkozással vagy szent cselekedetek végrehajtásával."
+                        },
+                        {
+                            "type": "table",
+                            "title": "Elf harcos jellemzők",
+                            "headers": [
+                                "Jellemző",
+                                "Érték"
+                            ],
+                            "rows": [
+                                [
+                                    "KE",
+                                    "12"
+                                ],
+                                [
+                                    "TÉ",
+                                    "10"
+                                ],
+                                [
+                                    "VÉ",
+                                    "14"
+                                ],
+                                [
+                                    "MGT",
+                                    "5"
+                                ],
+                                [
+                                    "SFE",
+                                    "8"
+                                ],
+                                [
+                                    "FP",
+                                    "30"
+                                ]
+                            ]
+                        }
+                    ]
                 },
                 {
                     "id": "sec_152",
@@ -27215,7 +27380,7 @@
                 },
                 {
                     "id": "sec_159",
-                    "title": "A KIS ARKÁNUM LITÁNIÁI",
+                    "title": "A Kis Arkánum Litániái",
                     "content_blocks": [
                         {
                             "type": "paragraph",
@@ -27749,7 +27914,7 @@
                 },
                 {
                     "id": "sec_160",
-                    "title": "A KIS ARKÁNUM RITUÁLÉI",
+                    "title": "A Kis Arkánum Rituáléi",
                     "content_blocks": [
                         {
                             "type": "paragraph",
@@ -29876,11 +30041,6 @@
                             ]
                         }
                     ]
-                },
-                {
-                    "id": "sec_171",
-                    "title": "Érzelemkioltó varázslatok",
-                    "content_blocks": []
                 },
                 {
                     "id": "sec_172",
@@ -32050,7 +32210,7 @@
                 },
                 {
                     "id": "sec_181",
-                    "title": "BETEGSÉGEK ÉS RONTÁSOK",
+                    "title": "Betegségek és rontások",
                     "content_blocks": [
                         {
                             "type": "paragraph",
@@ -32060,7 +32220,7 @@
                 },
                 {
                     "id": "sec_182",
-                    "title": "BETEGSÉGEK ÉS HATÁSAIK",
+                    "title": "Betegségek és hatásaik",
                     "content_blocks": [
                         {
                             "type": "flavor_text",
@@ -33181,7 +33341,19 @@
                                     "Mentális"
                                 ]
                             ]
-                        },
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "TŰZMÁGIA",
+            "sections": [
+                {
+                    "id": "sec_184b",
+                    "title": "A Tűzmágia eredete és a Tűznyelés",
+                    "section_title": "",
+                    "content_blocks": [
                         {
                             "type": "flavor_text",
                             "text": "Az Elsődleges Anyagi Sík, melyen élünk – számtalan egyéb között – az Ősvíz alapú Anyagi Síkok csoportjába tartozik. Mint ilyen, anyagai, tárgyai, élőlényei nagy részére nézve ártalmas az Ősvíz elemi ellentéte, az Őstűz – s ezáltal a természetes tűz is."
@@ -33931,7 +34103,7 @@
                 },
                 {
                     "id": "sec_190",
-                    "title": "TŰZ ELEMI VARÁZSLATOK",
+                    "title": "Tűz elemi varázslatok",
                     "content_blocks": [
                         {
                             "type": "table",
@@ -34699,7 +34871,7 @@
                 },
                 {
                     "id": "sec_194",
-                    "title": "ÚJ TÖRVÉNYKÖNYV",
+                    "title": "Új törvénykönyv",
                     "content_blocks": [
                         {
                             "type": "paragraph",
@@ -35749,7 +35921,7 @@
                 },
                 {
                     "id": "sec_202",
-                    "title": "VARÁZSKÖRÖK",
+                    "title": "Varázskörök",
                     "content_blocks": [
                         {
                             "type": "paragraph",
@@ -38249,7 +38421,7 @@
                 },
                 {
                     "id": "sec_216",
-                    "title": "A KILENC SOR ISKOLÁJA",
+                    "title": "A Kilenc Sor iskolája",
                     "content_blocks": [
                         {
                             "type": "paragraph",
@@ -38397,10 +38569,15 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "title": "YNEV VILÁGA ÉS FÖLDRAJZA",
+            "sections": [
                 {
                     "id": "sec_217",
-                    "title": "A TEREMTETT VILÁG",
+                    "title": "A teremtett világ",
                     "content_blocks": [
                         {
                             "type": "flavor_text",
@@ -38450,7 +38627,7 @@
                 },
                 {
                     "id": "sec_218",
-                    "title": "A VILÁG KRÓNIKÁJA",
+                    "title": "A világ krónikája",
                     "content_blocks": [
                         {
                             "type": "paragraph",
@@ -38830,7 +39007,7 @@
                 },
                 {
                     "id": "sec_222",
-                    "title": "ÉSZAK-YNEV",
+                    "title": "Észak-Ynev",
                     "content_blocks": [
                         {
                             "type": "paragraph",
@@ -39234,7 +39411,7 @@
                 },
                 {
                     "id": "sec_224",
-                    "title": "EREN HERCEGSÉG",
+                    "title": "Eren Hercegség",
                     "content_blocks": [
                         {
                             "type": "paragraph",
@@ -39244,7 +39421,7 @@
                 },
                 {
                     "id": "sec_225",
-                    "title": "HAONWELL",
+                    "title": "Haonwell",
                     "content_blocks": [
                         {
                             "type": "paragraph",
@@ -39828,7 +40005,7 @@
                 },
                 {
                     "id": "sec_227",
-                    "title": "TORON",
+                    "title": "Toron",
                     "content_blocks": [
                         {
                             "type": "paragraph",
@@ -40219,7 +40396,7 @@
                 },
                 {
                     "id": "sec_232",
-                    "title": "QUIRON-VIDÉK",
+                    "title": "Quiron-vidék",
                     "content_blocks": [
                         {
                             "type": "paragraph",
@@ -40233,7 +40410,7 @@
                 },
                 {
                     "id": "sec_233",
-                    "title": "A PENTÁD VÁROSAI",
+                    "title": "A Pentád városai",
                     "content_blocks": [
                         {
                             "type": "paragraph",
@@ -40243,7 +40420,7 @@
                 },
                 {
                     "id": "sec_234",
-                    "title": "DÉL-YNEV",
+                    "title": "Dél-Ynev",
                     "content_blocks": [
                         {
                             "type": "paragraph",
@@ -40377,7 +40554,7 @@
                 },
                 {
                     "id": "sec_235",
-                    "title": "A JELENKOR HATALMAI",
+                    "title": "A jelenkor hatalmai",
                     "content_blocks": [
                         {
                             "type": "paragraph",
@@ -40557,7 +40734,7 @@
                 },
                 {
                     "id": "sec_238",
-                    "title": "SEMPYER",
+                    "title": "Sempyer",
                     "content_blocks": [
                         {
                             "type": "paragraph",
@@ -41267,7 +41444,7 @@
                 },
                 {
                     "id": "sec_242",
-                    "title": "KRÁN",
+                    "title": "Krán",
                     "content_blocks": [
                         {
                             "type": "paragraph",
@@ -41472,10 +41649,15 @@
                             "text": "Fontos még megjegyeznünk, hogy a gorviki Ranagol-hit nem azonos a kráni okkultusszal. Főbb tételeit röviden az alábbiakban foglalhatjuk össze:"
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "title": "ISTENEK ÉS VALLÁSOK",
+            "sections": [
                 {
                     "id": "sec_244",
-                    "title": "ISTENEK ÉS VALLÁSOK",
+                    "title": "Istenek és vallások",
                     "content_blocks": [
                         {
                             "type": "paragraph",
@@ -41493,7 +41675,7 @@
                 },
                 {
                     "id": "sec_245",
-                    "title": "A PYARRONI PANTEON",
+                    "title": "A pyarroni panteon",
                     "content_blocks": [
                         {
                             "type": "paragraph",
@@ -41709,7 +41891,7 @@
                 },
                 {
                     "id": "sec_249",
-                    "title": "ZIMNAH KULTUSZA",
+                    "title": "Zimnah kultusza",
                     "content_blocks": [
                         {
                             "type": "paragraph",
@@ -41783,7 +41965,7 @@
                 },
                 {
                     "id": "sec_250",
-                    "title": "A KÁOSZ-ANGYALOK",
+                    "title": "A káosz-angyalok",
                     "content_blocks": [
                         {
                             "type": "paragraph",
@@ -41838,7 +42020,12 @@
                             "text": "Káosz-Yukk'rt: A legelső Káosz-angyal, eredetileg egy kipusztult aquir faj istene, amely híveivel együtt értelmét és emlékeit is elvesztette. A csillapíthatatlan éhséget szimbolizálja, az egyetlen olyan ösztön-érzést, amely mindvégig megmaradt neki, és nem engedte a nemlétbe foszlani. Hívei folyamatos böjtöléssel és önsanyargatással kívánnak közelebb kerülni Ranagolhoz: beavatásukat követően egyetlen falatot sem vesznek többé magukhoz, és éhen pusztulnak. Minél tovább el tudják nyújtani lassú haldoklásukat, annál inkább kegyelt őket védangyaluk; az utolsó stádiumban, amikor már magatehetetlenül delírizálnak, démoni ártó hatalommal ruházza fel őket."
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "title": "BESTIÁRIUM",
+            "sections": [
                 {
                     "id": "sec_251",
                     "title": "Bestiárium",
@@ -43035,7 +43222,7 @@
                 },
                 {
                     "id": "sec_255",
-                    "title": "A VÁMPÍR ÉS AZ ÁRNY",
+                    "title": "A vámpír és az árny",
                     "content_blocks": [
                         {
                             "type": "paragraph",

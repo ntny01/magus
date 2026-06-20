@@ -1320,12 +1320,16 @@ function autoLinkify(text) {
     if (!text || typeof text !== 'string' || !allSections || allSections.length === 0) return text;
     let linkedText = text;
     allSections.forEach(sec => {
-        const currentTitle = sec.section_title || sec.title;
-        if (currentTitle && currentTitle.length > 4) {
-            const escapedTitle = currentTitle.replace(/[-\/\\^$*+?.()|[\]{}]/g, '\\$&');
+        const rawTitle = sec.section_title || sec.title;
+        if (!rawTitle) return;
+        // Sok cím tartalmaz zárójeles kiegészítést (pl. "Fegyverhasználat (II – Intelligencia, Érzékelés)"),
+        // ami a szövegben sosem fordul elő szó szerint - a párosításhoz ezt le kell vágni.
+        const matchTitle = rawTitle.replace(/\s*\([^)]*\)\s*$/, '').replace(/[:.,]+$/, '').trim();
+        if (matchTitle && matchTitle.length > 3) {
+            const escapedTitle = matchTitle.replace(/[-\/\\^$*+?.()|[\]{}]/g, '\\$&');
             const regex = new RegExp(`\\b(${escapedTitle})\\b`, 'gi');
-            
-            if (linkedText.includes(currentTitle) && !linkedText.includes(sec.id)) {
+
+            if (regex.test(linkedText)) {
                 linkedText = linkedText.replace(regex, (match) => {
                     return `<span class="hyperlink-anchor" style="color: #3b82f6; font-weight: 600; cursor: pointer; text-decoration: underline;" onclick="jumpToSection('${sec.id}')">${match}</span>`;
                 });
@@ -1818,22 +1822,33 @@ if (scrollToTopBtn) {
 }
 
 // QUICK-GLOSSZARY POPUP MODAL LOGIKA
-const glossaryModal = document.getElementById('glossaryModal');
-const glossaryModalBody = document.getElementById('glossaryModalBody');
-const closeGlossary = document.getElementById('closeGlossary');
-if (closeGlossary && glossaryModal) {
-    closeGlossary.addEventListener('click', () => glossaryModal.style.display = 'none');
-    window.addEventListener('click', (e) => { if (e.target === glossaryModal) glossaryModal.style.display = 'none'; });
+// A modal DOM-eleme később, a HTML-ben jelenik meg, mint ahol ez a script fut,
+// ezért a kereséseket lusta (lazy) módon kell elvégezni, különben mindig null marad.
+function getGlossaryModalEls() {
+    return {
+        modal: document.getElementById('glossaryModal'),
+        body: document.getElementById('glossaryModalBody'),
+        close: document.getElementById('closeGlossary')
+    };
 }
 
+document.addEventListener('DOMContentLoaded', () => {
+    const { modal, close } = getGlossaryModalEls();
+    if (close && modal) {
+        close.addEventListener('click', () => modal.style.display = 'none');
+        window.addEventListener('click', (e) => { if (e.target === modal) modal.style.display = 'none'; });
+    }
+});
+
 window.jumpToSection = function(sectionId) {
-    if (!glossaryModal || !glossaryModalBody) return;
+    const { modal, body } = getGlossaryModalEls();
+    if (!modal || !body) return;
     const foundSection = allSections.find(s => s.id === sectionId);
     if (!foundSection) return;
-    
+
     const currentTitle = foundSection.section_title || foundSection.title || "Általános Áttekintés";
-    glossaryModalBody.innerHTML = `<h3 style="color: var(--accent); margin-bottom: 1rem; border-bottom: 1px solid var(--border-color); padding-bottom: 0.5rem;">${currentTitle}</h3>`;
-    
+    body.innerHTML = `<h3 style="color: var(--accent); margin-bottom: 1rem; border-bottom: 1px solid var(--border-color); padding-bottom: 0.5rem;">${currentTitle}</h3>`;
+
     const blocks = foundSection.content_blocks || foundSection.content;
     if (blocks) {
         blocks.forEach(block => {
@@ -1841,17 +1856,17 @@ window.jumpToSection = function(sectionId) {
                 const p = document.createElement('p');
                 p.style.fontSize = '0.9rem'; p.style.lineHeight = '1.5';
                 p.innerHTML = block.text;
-                glossaryModalBody.appendChild(p);
+                body.appendChild(p);
             }
             else if (block.type === 'rule' && block.text) {
                 const div = document.createElement('div');
                 div.className = 'callout callout-rule';
                 div.innerHTML = `<div class="callout-title">🎲 ${block.title || 'Szabály'}</div><p style="font-style:italic; font-size:0.85rem; margin:0;">${block.text}</p>`;
-                glossaryModalBody.appendChild(div);
+                body.appendChild(div);
             }
         });
     }
-    glossaryModal.style.display = 'flex';
+    modal.style.display = 'flex';
 };
 
 // PROGRAM INDÍTÁSA
