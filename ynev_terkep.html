@@ -2796,9 +2796,16 @@ map.on(L.Draw.Event.CREATED, function(e) {
     document.getElementById('wxDrawBtn')?.classList.remove('active');
     document.body.classList.remove('wx-draw-hide-guide');
     const layer = e.layer;
-    // Ne adjuk a térképhez – csak a latlngs kell, vizuálisan az overlay mutatja
     const latlngs = layer.getLatLngs()[0];
     const center = layer.getBounds().getCenter();
+    // A Leaflet.Draw a rajzolás közbeni szaggatott vázlat-poligont (e.layer)
+    // néha a térképen hagyja a CREATED után is – mi csak a koordinátákat
+    // használjuk, a saját .wx-zone overlay div jeleníti meg vizuálisan,
+    // ezért a Leaflet-réteget itt explicit el kell távolítani, különben
+    // szellem-körvonalként megmarad a térképen (akkor is, ha a zónát
+    // később törlik, mert a törlés csak a .wx-zone divet ismeri).
+    if (map.hasLayer(layer)) map.removeLayer(layer);
+    document.querySelectorAll('.leaflet-draw-guide-dash').forEach(el => el.remove());
     // Picker popup
     openWxPickerPopup(center, latlngs, 50);
 });
