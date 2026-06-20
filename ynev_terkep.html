@@ -3318,6 +3318,7 @@ window.deleteEffectPopup = function() {
     map.removeLayer(em);
     const i = effects.indexOf(em);
     if (i > -1) effects.splice(i, 1);
+    map.closePopup();
     saveCampaign();
 };
 
