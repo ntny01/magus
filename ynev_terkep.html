@@ -180,10 +180,18 @@ body{
 
 .weather-overlay {
     position: absolute;
-    inset: 0;
+    top: 0;
+    left: 0;
     pointer-events: none;
     z-index: 500;
-    overflow: hidden;
+    /* SZÁNDÉKOSAN nincs overflow:hidden: a zóna elemek (.wx-zone) left/top
+       koordinátája layerPoint-alapú, ami a térkép pixel-origójához relatív,
+       NEM a látható nézethez – panningnál negatívba is mehet, miközben a
+       zóna éppen látható a képernyőn. Egy fix méretű, overflow:hidden
+       "ablak" ezt levágta volna (eltüntette az effekteket/kijelölést),
+       mert nem mozog együtt a nézettel. Minden zóna saját clip-path-sal
+       már önmagát a megrajzolt alakra vágja, ez a külső vágás felesleges
+       volt. */
 }
 
 /* Időjárás területek */
@@ -1692,16 +1700,8 @@ map.createPane('weatherPane');
 const weatherPaneEl = map.getPane('weatherPane');
 weatherPaneEl.style.zIndex = 450;
 weatherPaneEl.style.pointerEvents = 'none';
-// Leaflet pane-eknek alapból nincs explicit szélesség/magasságuk (csak
-// left:0;top:0), a .weather-overlay viszont inset:0-val a SZÜLŐ méretéhez
-// igazítja magát – nélküle 0x0-ra esne össze, és overflow:hidden miatt
-// minden részecske levágódna (eltűnne, csak a vágott terület "látszana").
-weatherPaneEl.style.width = '100%';
-weatherPaneEl.style.height = '100%';
-{
-    const weatherOverlayEl = document.getElementById('weatherOverlay');
-    if (weatherOverlayEl) weatherPaneEl.appendChild(weatherOverlayEl);
-}
+const weatherOverlayEl = document.getElementById('weatherOverlay');
+if (weatherOverlayEl) weatherPaneEl.appendChild(weatherOverlayEl);
 
 const bounds = [
 
