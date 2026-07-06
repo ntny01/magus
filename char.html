@@ -1187,8 +1187,11 @@ function makeFieldDescIcon(fieldKey, fieldLabel) {
     if (inp && inp.onwheel) inp.onwheel(e)
     else if (inp) { const ev = new WheelEvent('wheel', e); inp.dispatchEvent(ev); }
   }
-  // Késleltetett megjelenítés/elrejtés, amint betöltődik a leírás-cache
-  setTimeout(() => window.updateFieldDescIcon(fieldKey), 0);
+  // Késleltetett megjelenítés/elrejtés, amint betöltődik a leírás-cache.
+  // Guard kell: a függvény egy KÉSŐBBI script-blokkban definiálódik, és a
+  // setTimeout(0) az induló renderelésnél hamarabb tüzelhet, mint ahogy az
+  // a blokk lefutna — enélkül betöltéskor TypeError-ok tucatjai dobódtak.
+  setTimeout(() => window.updateFieldDescIcon && window.updateFieldDescIcon(fieldKey), 0);
   return icon;
 }
 

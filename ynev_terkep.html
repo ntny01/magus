@@ -1626,7 +1626,7 @@ body{
         <div class="dropdown" id="effectDropdown">
             <div id="effectList"></div>
             <div class="effect-settings">
-                <label>Szín <input type="color" id="effectColor" value="#000000"></label>
+                <label>Szín <input type="color" id="effectColor" value="#a855f7"></label>
                 <div>
                     <div style="font-size:11px;color:#94a3b8;margin-bottom:4px;">Méret</div>
                     <input type="range" id="effectSizeSlider" min="30" max="200" value="70"
@@ -1712,117 +1712,49 @@ const bounds = [
 ];
 
 /* =========================================================
-   TILE GROUPS
+   TILE GROUPS — lusta L.TileLayer
+   Korábban 6 csoport × 26×40 = 6240 darab L.imageOverlay épült fel
+   azonnal betöltéskor, és az aktív rétegen mind az 1040 kép a DOM-ban
+   ült + letöltődött, láthatóságtól függetlenül. A TileLayer csak a
+   látható (~20-40) csempét kéri le, panning/zoom közben automatikusan
+   tölt be/ki — ez adja a fő betöltési és pan/zoom gyorsulást.
 ========================================================= */
 
-const topoGroup =
-    L.layerGroup();
+// 1×1 átlátszó PNG a térképen kívüli / hiányzó csempékhez
+const EMPTY_TILE =
+    'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNkYPhfDwAChwGA60e6kgAAAABJRU5ErkJggg==';
 
-const politicalGroup =
-    L.layerGroup();
-
-const topo3715Group =
-    L.layerGroup();
-
-const political3715Group =
-    L.layerGroup();
-
-const topo3692Group =
-    L.layerGroup();
-
-const political3692Group =
-    L.layerGroup();
-
-/* =========================================================
-   TILE BUILDER
-========================================================= */
-
-function buildTiles(basePath, group){
-
-    for(let x=0; x<=X_MAX; x++){
-
-        for(let y=0; y<=Y_MAX; y++){
-
-            const flippedY =
-                Y_MAX - y;
-
-            const imageUrl =
-`${basePath}/6/${x}/${flippedY}.png`;
-
-            const left =
-                x * TILE_SIZE;
-
-            const top =
-                y * TILE_SIZE;
-
-            const bounds = [
-
-                [top,left],
-
-                [
-                    top + TILE_SIZE,
-                    left + TILE_SIZE
-                ]
-
-            ];
-
-            const overlay =
-                L.imageOverlay(
-                    imageUrl,
-                    bounds,
-                    {
-                        interactive:false,
-                        opacity:1
-                    }
-                );
-
-            overlay.on('error', ()=>{
-
-                overlay.setOpacity(0);
-
-            });
-
-            overlay.addTo(group);
-
-        }
-
+const YnevTileLayer = L.TileLayer.extend({
+    getTileUrl(coords) {
+        // CRS.Simple, zoom 0: tileY = floor(-lat/256) → -40..-1 a térképen.
+        // A mappastruktúra (0..39, délről északra) ehhez +40 eltolással illeszkedik.
+        const imgY = coords.y + (Y_MAX + 1);
+        if (coords.x < 0 || coords.x > X_MAX || imgY < 0 || imgY > Y_MAX) return EMPTY_TILE;
+        return `${this.options.basePath}/6/${coords.x}/${imgY}.png`;
     }
+});
 
+function makeTileLayer(basePath){
+    return new YnevTileLayer('', {
+        basePath,
+        tileSize: TILE_SIZE,
+        minZoom: -2,          // a térkép negatív zoomon is jár; a TileLayer alapértéke (0) itt elrejtené a réteget
+        maxZoom: 4,
+        minNativeZoom: 0,
+        maxNativeZoom: 0,   // csak zoom-0 csempék léteznek, Leaflet skálázza a többit
+        errorTileUrl: EMPTY_TILE,
+        bounds: L.latLngBounds([[0,0],[MAP_HEIGHT, MAP_WIDTH]]),
+        keepBuffer: 3,
+        updateWhenZooming: false,
+    });
 }
 
-/* =========================================================
-   BUILD MAPS
-========================================================= */
-
-buildTiles(
-    './terkep_kulon/output/3724_domborzati',
-    topoGroup
-);
-
-buildTiles(
-    './terkep_kulon/output/3724_politikai',
-    politicalGroup
-);
-
-buildTiles(
-    './terkep_kulon/output/3715_domborzati',
-    topo3715Group
-);
-
-buildTiles(
-    './terkep_kulon/output/3715_politikai',
-    political3715Group
-);
-
-buildTiles(
-    './terkep_kulon/output/3692_domborzati',
-    topo3692Group
-);
-
-buildTiles(
-    './terkep_kulon/output/3692_politikai',
-    political3692Group
-);
+const topoGroup          = makeTileLayer('./terkep_kulon/output/3724_domborzati');
+const politicalGroup     = makeTileLayer('./terkep_kulon/output/3724_politikai');
+const topo3715Group      = makeTileLayer('./terkep_kulon/output/3715_domborzati');
+const political3715Group = makeTileLayer('./terkep_kulon/output/3715_politikai');
+const topo3692Group      = makeTileLayer('./terkep_kulon/output/3692_domborzati');
+const political3692Group = makeTileLayer('./terkep_kulon/output/3692_politikai');
 
 topoGroup.addTo(map);
 
@@ -1948,6 +1880,23 @@ function deactivateMarkerMode(){
 
 }
 
+// Effekt-lerakó mód kikapcsolása. Marker/rajz mód indításakor is hívni
+// kell, különben a marker ÉS az effekt mód egyszerre aktív maradhat, és
+// egyetlen térkép-kattintás mindkettőt lerakná.
+function deactivateEffectMode(){
+
+    activeEffectKey = null;
+
+    document
+    .querySelectorAll('.effect-preview')
+    .forEach(btn=>{
+
+        btn.classList.remove('active');
+
+    });
+
+}
+
 function getDrawStyle(){
 
     return {
@@ -1982,6 +1931,7 @@ function getDrawStyle(){
 function startDraw(type, btn){
 
     deactivateMarkerMode();
+    deactivateEffectMode();
 
     disableDrawing();
 
@@ -2027,6 +1977,7 @@ function startDraw(type, btn){
 function enableEdit(btn){
 
     deactivateMarkerMode();
+    deactivateEffectMode();
 
     disableDrawing();
 
@@ -2047,6 +1998,7 @@ function enableEdit(btn){
 function deleteMode(btn){
 
     deactivateMarkerMode();
+    deactivateEffectMode();
 
     disableDrawing();
 
@@ -2101,6 +2053,12 @@ function saveLayerStyle(layer){
 ========================================================= */
 
 map.on(L.Draw.Event.CREATED, function(e){
+
+    // Az időjárás-zóna rajzoló (_wxDrawer) polygonja NEM rajz: azt a
+    // második CREATED handler dolgozza fel és távolítja el. Ha itt
+    // beengednénk a drawnItems-be, láthatatlan szellem-polygonként
+    // mentődne el, és szerkesztő módban fogantyúkkal jelenne meg.
+    if (_wxDrawer) return;
 
     const layer = e.layer;
 
@@ -2250,6 +2208,7 @@ document.querySelectorAll('.markerBtn')
     btn.onclick = ()=>{
 
         disableDrawing();
+        deactivateEffectMode();
 
         const alreadyActive =
             btn.classList.contains('active');
@@ -2584,7 +2543,7 @@ function clearEverything(){
         groupState[grp].wxZones = [];
     });
     setMapType('free', null);
-    wxZones.forEach(z => { z.el.remove(); z.delBtn?.remove(); }); wxZones.length = 0;
+    wxZones.forEach(z => { z.el?.remove(); z.delBtn?.remove(); }); wxZones.length = 0;
     localStorage.removeItem('ynev_campaign');
     window.scheduleSave();
 }
@@ -3001,9 +2960,17 @@ function clearAllWeather() {
     saveCampaign();
 }
 
-// Pozíció frissítése térkép mozgáskor
+// Pozíció frissítése térkép mozgáskor — requestAnimationFrame-be fogva:
+// a 'move' esemény pan közben folyamatosan tüzel, és minden zóna
+// újrapozicionálása (latLngToLayerPoint + clip-path újraírás) layoutot
+// kényszerít; képkockánként egyszer bőven elég.
+let _wxPosRaf = null;
 map.on('move zoom', function() {
-    wxZones.forEach(z => { if (z.updatePos) z.updatePos(); });
+    if (_wxPosRaf) return;
+    _wxPosRaf = requestAnimationFrame(() => {
+        _wxPosRaf = null;
+        wxZones.forEach(z => { if (z.updatePos) z.updatePos(); });
+    });
 });
 
 // Legacy setWeather (betöltéshez)
@@ -3030,7 +2997,7 @@ function getEffectScale(s) {
 
 const EFFECT_DEFS = {
     pulse: {
-        label:'Pulzáló gyűrű',
+        label:'Pulzáló gyűrű', color:'#f43f5e',
         build(c,s){ const sc=getEffectScale(s); return `<div style="position:relative;width:${32*sc}px;height:${32*sc}px;display:flex;align-items:center;justify-content:center;">
             <div style="width:${14*sc}px;height:${14*sc}px;border-radius:50%;background:${c};position:relative;">
             <div style="position:absolute;inset:-${5*sc}px;border-radius:50%;border:${2*sc}px solid ${c}88;animation:efxPulse 2s ease-out infinite;"></div>
@@ -3038,7 +3005,7 @@ const EFFECT_DEFS = {
             </div></div>`; }
     },
     rune: {
-        label:'Rúna keringő',
+        label:'Rúna keringő', color:'#a855f7',
         build(c,s){ const sc=getEffectScale(s); return `<div style="position:relative;width:${36*sc}px;height:${36*sc}px;display:flex;align-items:center;justify-content:center;">
             <span style="font-size:${18*sc}px;color:${c};text-shadow:0 0 6px ${c};z-index:2;">✦</span>
             <div style="position:absolute;inset:0;border-radius:50%;border:1px dashed ${c}66;animation:efxOrbit 4s linear infinite;">
@@ -3046,13 +3013,13 @@ const EFFECT_DEFS = {
             </div></div>`; }
     },
     aura: {
-        label:'Lüktető aura',
+        label:'Lüktető aura', color:'#22d3ee',
         build(c,s){ const sc=getEffectScale(s); return `<div style="position:relative;width:${28*sc}px;height:${28*sc}px;display:flex;align-items:center;justify-content:center;">
             <div style="position:absolute;inset:0;border-radius:50%;background:radial-gradient(circle,${c}99 0%,transparent 70%);animation:efxAura 1.5s ease-in-out infinite alternate;"></div>
             <div style="width:${10*sc}px;height:${10*sc}px;border-radius:50%;background:${c};z-index:2;"></div></div>`; }
     },
     portal: {
-        label:'Portál gyűrűk',
+        label:'Portál gyűrűk', color:'#8b5cf6',
         build(c,s){ const sc=getEffectScale(s); return `<div style="position:relative;width:${40*sc}px;height:${40*sc}px;display:flex;align-items:center;justify-content:center;">
             <div style="position:absolute;inset:0;border-radius:50%;border:${2*sc}px solid ${c}aa;animation:efxPortal 3s linear infinite;"></div>
             <div style="position:absolute;inset:${5*sc}px;border-radius:50%;border:${1.5*sc}px solid ${c}77;animation:efxPortal 2s linear infinite reverse;"></div>
@@ -3060,38 +3027,38 @@ const EFFECT_DEFS = {
             <div style="width:${6*sc}px;height:${6*sc}px;border-radius:50%;background:${c};box-shadow:0 0 ${8*sc}px ${c};animation:efxVortexCore 1.5s ease-in-out infinite alternate;"></div></div>`; }
     },
     spark: {
-        label:'Részecske szikra',
+        label:'Részecske szikra', color:'#fbbf24',
         build(c,s){ const sc=getEffectScale(s); return `<div style="position:relative;width:${36*sc}px;height:${44*sc}px;display:flex;align-items:flex-end;justify-content:center;">
             ${[0,1,2,3].map(i=>`<div style="position:absolute;width:${3*sc}px;height:${3*sc}px;border-radius:50%;background:${c};bottom:${6*sc}px;left:${(8+i*5)*sc}px;animation:efxSpark ${1+i*.15}s linear infinite;animation-delay:${i*.25}s;"></div>`).join('')}
             <div style="font-size:${20*sc}px;z-index:2;">✦</div></div>`; }
     },
     quest: {
-        label:'Küldetés ?',
+        label:'Küldetés ?', color:'#eab308',
         build(c,s){ const sc=getEffectScale(s); return `<div style="position:relative;display:flex;flex-direction:column;align-items:center;">
             <span style="font-size:${34*sc}px;font-weight:900;color:${c};animation:efxBounce 1.8s ease-in-out infinite;font-family:serif;text-shadow:0 0 6px ${c}99;line-height:1;">${'?'}</span>
             <div style="width:${18*sc}px;height:${4*sc}px;background:#00000055;border-radius:50%;animation:efxBounceShadow 1.8s ease-in-out infinite;"></div></div>`; }
     },
     exclaim: {
-        label:'Veszély !',
+        label:'Veszély !', color:'#ef4444',
         build(c,s){ const sc=getEffectScale(s); return `<div style="position:relative;display:flex;align-items:center;justify-content:center;width:${36*sc}px;height:${42*sc}px;">
             <span style="font-size:${32*sc}px;font-weight:900;color:${c};font-family:serif;animation:efxExPulse .8s ease-in-out infinite alternate;text-shadow:0 0 8px ${c}cc;">!</span>
             <div style="position:absolute;inset:-${6*sc}px;border-radius:50%;border:${2*sc}px solid ${c}66;animation:efxExRing .8s ease-out infinite;"></div></div>`; }
     },
     battle: {
-        label:'Csata jelző',
+        label:'Csata jelző', color:'#dc2626',
         build(c,s){ const sc=getEffectScale(s); return `<div style="position:relative;display:flex;align-items:center;justify-content:center;width:${40*sc}px;height:${40*sc}px;">
             <span style="font-size:${20*sc}px;display:inline-block;animation:efxSword1 2s ease-in-out infinite;color:${c};">⚔</span>
             <span style="font-size:${20*sc}px;display:inline-block;animation:efxSword2 2s ease-in-out infinite;margin-left:-${6*sc}px;color:${c};">🛡</span>
             <div style="position:absolute;width:${5*sc}px;height:${5*sc}px;border-radius:50%;background:#fbbf24;animation:efxClash 2s ease-out infinite;"></div></div>`; }
     },
     crystal: {
-        label:'Mágikus kristály',
+        label:'Mágikus kristály', color:'#38bdf8',
         build(c,s){ const sc=getEffectScale(s); return `<div style="position:relative;display:flex;align-items:center;justify-content:center;width:${36*sc}px;height:${44*sc}px;">
             ${[0,1,2].map((i,_)=>`<div style="position:absolute;width:${1.5*sc}px;height:${14*sc}px;background:linear-gradient(to top,${c}cc,transparent);top:-${10*sc}px;left:${50+[0,12,-12][i]}%;transform:rotate(${[0,30,-30][i]}deg);animation:efxCrystalRay 3s ease-in-out infinite;animation-delay:${i*.5}s;"></div>`).join('')}
             <span style="font-size:${26*sc}px;animation:efxCrystalFloat 3s ease-in-out infinite;filter:drop-shadow(0 0 ${6*sc}px ${c});">💎</span></div>`; }
     },
     dragoneye: {
-        label:'Sárkány szem',
+        label:'Sárkány szem', color:'#f59e0b',
         build(c,s){ const sc=getEffectScale(s); return `<div style="position:relative;display:flex;align-items:center;justify-content:center;">
             <div style="position:absolute;inset:-${4*sc}px;border-radius:50%;border:${1*sc}px solid ${c}44;animation:efxDragonGlow 2s ease-in-out infinite alternate;"></div>
             <div style="width:${44*sc}px;height:${26*sc}px;border-radius:50%;border:${2*sc}px solid ${c}aa;display:flex;align-items:center;justify-content:center;overflow:hidden;animation:efxDragonBlink 4s ease-in-out infinite;">
@@ -3101,13 +3068,13 @@ const EFFECT_DEFS = {
             </div></div>`; }
     },
     poison: {
-        label:'Méreg/átok',
+        label:'Méreg/átok', color:'#22c55e',
         build(c,s){ const sc=getEffectScale(s); return `<div style="position:relative;display:flex;align-items:center;justify-content:center;width:${48*sc}px;height:${48*sc}px;">
             ${[0,1,2].map(i=>`<div style="position:absolute;width:${[10,7,12][i]*sc}px;height:${[10,7,12][i]*sc}px;border-radius:50%;background:${c}22;border:1px solid ${c}44;left:${[8,20,28][i]*sc}px;top:${20*sc}px;animation:efxPoison ${[2.5,2,3][i]}s linear infinite;animation-delay:${[0,.7,1.2][i]}s;"></div>`).join('')}
             <span style="font-size:${22*sc}px;z-index:2;filter:drop-shadow(0 0 ${5*sc}px ${c});">☠</span></div>`; }
     },
     pin: {
-        label:'Térkép tű',
+        label:'Térkép tű', color:'#3b82f6',
         build(c,s){ const sc=getEffectScale(s); return `<div style="display:flex;flex-direction:column;align-items:center;position:relative;">
             <div style="position:absolute;bottom:${6*sc}px;left:50%;width:${18*sc}px;height:${18*sc}px;border-radius:50%;border:1px solid ${c}66;animation:efxPinPulse 2.4s ease-out infinite;"></div>
             <div style="width:${22*sc}px;height:${22*sc}px;border-radius:50%;background:${c};border:${2*sc}px solid ${c}88;display:flex;align-items:center;justify-content:center;animation:efxPinBob 2.4s ease-in-out infinite;box-shadow:0 0 ${8*sc}px ${c}66;">
@@ -3118,7 +3085,7 @@ const EFFECT_DEFS = {
             <div style="width:${14*sc}px;height:${4*sc}px;background:#00000055;border-radius:50%;margin-top:${1*sc}px;animation:efxPinShadow 2.4s ease-in-out infinite;"></div></div>`; }
     },
     chest: {
-        label:'Kincsesláda',
+        label:'Kincsesláda', color:'#8b5a2b',
         build(c,s){ const sc=getEffectScale(s); return `<div style="position:relative;display:flex;flex-direction:column;align-items:center;filter:drop-shadow(0 0 ${4*sc}px #fbbf2488);">
             ${[0,1,2].map(i=>`<div style="position:absolute;width:${3*sc}px;height:${3*sc}px;border-radius:50%;background:#fbbf24;bottom:${30*sc}px;left:${[6,17,28][i]*sc}px;animation:efxChestSpark 3.5s ease-out infinite;animation-delay:${[.1,.25,.4][i]}s;"></div>`).join('')}
             <div style="width:${36*sc}px;height:${13*sc}px;background:${c};border:${2*sc}px solid #fbbf24;border-bottom:none;border-radius:${3*sc}px ${3*sc}px 0 0;animation:efxChestLid 3.5s ease-in-out infinite;transform-origin:bottom;position:relative;box-shadow:inset 0 ${2*sc}px 0 rgba(255,255,255,0.15),0 -${2*sc}px ${4*sc}px rgba(0,0,0,0.3);">
@@ -3131,7 +3098,7 @@ const EFFECT_DEFS = {
             </div></div>`; }
     },
     vortex: {
-        label:'Mágikus örvény',
+        label:'Mágikus örvény', color:'#06b6d4',
         build(c,s){ const sc=getEffectScale(s); return `<div style="position:relative;width:${44*sc}px;height:${44*sc}px;display:flex;align-items:center;justify-content:center;">
             <div style="position:absolute;inset:0;border-radius:50%;border:${2*sc}px solid ${c}cc;animation:efxVortex 3s linear infinite;"></div>
             <div style="position:absolute;inset:${5*sc}px;border-radius:50%;border:${1.5*sc}px dashed ${c}88;animation:efxVortex 2s linear infinite reverse;"></div>
@@ -3139,7 +3106,7 @@ const EFFECT_DEFS = {
             <div style="width:${7*sc}px;height:${7*sc}px;border-radius:50%;background:${c};box-shadow:0 0 ${10*sc}px ${c},0 0 ${20*sc}px ${c}66;animation:efxVortexCore 1.5s ease-in-out infinite alternate;"></div></div>`; }
     },
     shadow: {
-        label:'Árnyék lény',
+        label:'Árnyék lény', color:'#7c3aed',
         build(c,s){ const sc=getEffectScale(s); return `<div style="position:relative;width:${56*sc}px;height:${56*sc}px;display:flex;align-items:center;justify-content:center;">
             ${[0,1,2].map((i)=>`<div style="position:absolute;width:${[36,28,22][i]*sc}px;height:${[36,28,22][i]*sc}px;border-radius:50%;background:${c}${['44','55','44'][i]};top:${[0,8,14][i]*sc}px;left:${[0,8,12][i]*sc}px;animation:efxShadowBlob ${[3,3.5,2.5][i]}s ease-in-out infinite;animation-delay:${[0,.5,1][i]}s;"></div>`).join('')}
             <div style="position:absolute;display:flex;gap:${8*sc}px;top:${26*sc}px;left:${18*sc}px;">
@@ -3154,12 +3121,16 @@ function buildEffectMenu(){
     if (!list) return;
     list.innerHTML = '';
     list.style.cssText = 'display:flex;flex-direction:column;gap:6px;';
+    const picked = document.getElementById('effectColor')?.value;
     Object.entries(EFFECT_DEFS).forEach(([key, def]) => {
         const btn = document.createElement('button');
         btn.className = 'effect-preview';
+        if (key === activeEffectKey) btn.classList.add('active');
         btn.title = def.label;
         btn.dataset.key = key;
-        const c = document.getElementById('effectColor')?.value || '#000000';
+        // Minden effekt a saját alapszínével jelenik meg a menüben; a
+        // színválasztó csak az éppen aktív effekt előnézetét írja felül.
+        const c = (key === activeEffectKey && picked) ? picked : (def.color || '#a855f7');
         const s = effectSize;
         btn.innerHTML = def.build(c, s);
         btn.onclick = () => setActiveEffect(key, btn);
@@ -3170,9 +3141,14 @@ function buildEffectMenu(){
 function setActiveEffect(key, btn) {
     activeEffectKey = (activeEffectKey === key) ? null : key;
     document.querySelectorAll('.effect-preview').forEach(b => b.classList.remove('active'));
-    if (activeEffectKey) btn.classList.add('active');
-    // Ikon kiválasztás megszüntetése
-    if (activeEffectKey) deactivateMarkerMode();
+    if (activeEffectKey) {
+        btn.classList.add('active');
+        deactivateMarkerMode();
+        // A színválasztó kövesse az effekt alapszínét, hogy a lerakott
+        // effekt ugyanolyan legyen, mint a menübeli előnézet.
+        const picker = document.getElementById('effectColor');
+        if (picker) picker.value = EFFECT_DEFS[key].color || '#a855f7';
+    }
 }
 
 function setEffectSize(size, btn) {
@@ -3395,16 +3371,27 @@ window.deleteEffectPopup = function() {
    SUBTLE PARALLAX
 ========================= */
 
+// rAF-throttle: a mousemove eseményenkénti body-stílus írás folyamatos
+// repaintet okozott a nagy, backdrop-filteres felületeken.
+let _parallaxRaf = null;
 document.addEventListener('mousemove', e => {
 
-    const x =
-        (e.clientX / window.innerWidth - .5) * 10;
+    if (_parallaxRaf) return;
 
-    const y =
-        (e.clientY / window.innerHeight - .5) * 10;
+    _parallaxRaf = requestAnimationFrame(() => {
 
-    document.body.style.backgroundPosition =
-        `${x}px ${y}px`;
+        _parallaxRaf = null;
+
+        const x =
+            (e.clientX / window.innerWidth - .5) * 10;
+
+        const y =
+            (e.clientY / window.innerHeight - .5) * 10;
+
+        document.body.style.backgroundPosition =
+            `${x}px ${y}px`;
+
+    });
 
 });
 
@@ -3509,25 +3496,12 @@ document.addEventListener('mousemove', e => {
         })
         activeMapGroup  = data.active_layer ? layerNameToGroup(data.active_layer) : '3724'
         activeLayerName = data.active_layer || '3724_domborzati'
-        // Effektek visszatöltése
-        if (data.drawings.effects) {
-          effects.forEach(em => map.removeLayer(em))
-          effects.length = 0
-          data.drawings.effects.forEach(e => {
-            const def = EFFECT_DEFS[e.efxData?.key]
-            if (!def) return
-            const {key,color,size} = e.efxData
-            const sc = EFFECT_SIZE_MAP[size]||1
-            const sz = Math.round(56*sc)
-            const em = L.marker(e.latlng, { icon: L.divIcon({
-              className:'', html:`<div data-efx="${key}">${def.build(color,size)}</div>`,
-              iconSize:[sz,sz], iconAnchor:[sz/2,sz/2]
-            })})
-            em.efxData = {key,color,size}
-            em.addTo(map)
-            em.on('click', () => openEffectEditor(em))
-            effects.push(em)
-          })
+        // Régi (globális) effektlista migrálása az aktív csoportba, ha ott
+        // üres. A korábbi kód itt kézzel épített effekt-markereket, amiket
+        // a lentebbi loadGroupState azonnal le is törölt — legacy mentésnél
+        // így az effektek elvesztek.
+        if (data.drawings.effects?.length && !groupState[activeMapGroup].effects.length) {
+          groupState[activeMapGroup].effects = data.drawings.effects
         }
       } else if (data.drawings) {
         groupState['3724'].drawings = data.drawings
@@ -3539,7 +3513,7 @@ document.addEventListener('mousemove', e => {
       // map_type visszaállítása
       const savedType2 = data.drawings?.map_type || 'free'
       setMapType(savedType2, data.drawings?.campaign_id || null)
-      if (data.drawings?.wxZones) { wxZones.forEach(z=>{z.el.remove();z.delBtn?.remove();}); wxZones.length=0; data.drawings.wxZones.forEach(z=>addWxZone(z.latlng,z.type,z.size,z.density,z.color)); }
+      if (data.drawings?.wxZones) { wxZones.forEach(z=>{z.el?.remove();z.delBtn?.remove();}); wxZones.length=0; data.drawings.wxZones.forEach(z=>addWxZone(z.latlng,z.type,z.size,z.density,z.color)); }
     }
   }
 
@@ -3610,27 +3584,25 @@ document.addEventListener('mousemove', e => {
     effects.forEach(em => map.removeLayer(em)); effects.length = 0
     markers.forEach(m => map.removeLayer(m)); markers.length = 0
     drawnItems.clearLayers()
-    if (data.drawings?.version === 2 && data.drawings?.groups) {
+    // v2 ÉS v3 mentés is betölthető. (A saveToList version:3-mal ment, a
+    // régi feltétel viszont csak version===2-t fogadott el, így a mentés-
+    // listából betöltés a mentett tartalom NÉLKÜL futott le.)
+    if ((data.drawings?.version === 2 || data.drawings?.version === 3) && data.drawings?.groups) {
       Object.keys(groupState).forEach(grp => {
         groupState[grp].drawings = data.drawings.groups[grp]?.drawings || null
         groupState[grp].markers  = data.drawings.groups[grp]?.markers  || []
+        groupState[grp].effects  = data.drawings.groups[grp]?.effects  || []
+        groupState[grp].wxZones  = data.drawings.groups[grp]?.wxZones  || []
       })
       activeMapGroup  = data.active_layer ? layerNameToGroup(data.active_layer) : '3724'
       activeLayerName = data.active_layer || '3724_domborzati'
-      if (data.drawings.effects) {
-        data.drawings.effects.forEach(e => {
-          const def = EFFECT_DEFS[e.efxData?.key]; if (!def) return
-          const {key,color,size} = e.efxData
-          const sc = EFFECT_SIZE_MAP[size]||1; const sz = Math.round(56*sc)
-          const em = L.marker(e.latlng, { icon: L.divIcon({
-            className:'', html:`<div data-efx="${key}">${def.build(color,size)}</div>`,
-            iconSize:[sz,sz], iconAnchor:[sz/2,sz/2]
-          })})
-          em.efxData={key,color,size}; em.addTo(map)
-          em.on('click', () => openEffectEditor(em)); effects.push(em)
-        })
+      // v2-es (globális) effektlista migrálása az aktív csoportba, ha ott üres —
+      // a loadGroupState innen tölti be, kézi marker-építés nélkül
+      if (data.drawings.effects?.length && !groupState[activeMapGroup].effects.length) {
+        groupState[activeMapGroup].effects = data.drawings.effects
       }
     }
+    wxZones.forEach(z => { z.el?.remove(); z.delBtn?.remove(); }); wxZones.length = 0
     loadGroupState(activeMapGroup)
     // map_type visszaállítása
     const savedType = data.drawings?.map_type || 'free'
@@ -3722,7 +3694,7 @@ document.addEventListener('mousemove', e => {
         data.drawings.effects.forEach(e => {
           const def = EFFECT_DEFS[e.efxData?.key]; if (!def) return
           const {key, color, size} = e.efxData
-          const sc = EFFECT_SIZE_MAP[size] || 1
+          const sc = getEffectScale(size)
           const sz = Math.round(56 * sc)
           const em = L.marker(e.latlng, { icon: L.divIcon({
             className: '', html: `<div data-efx="${key}">${def.build(color, size)}</div>`,
@@ -3769,7 +3741,7 @@ document.addEventListener('mousemove', e => {
           data.drawings.effects.forEach(e => {
             const def = EFFECT_DEFS[e.efxData?.key]; if (!def) return;
             const {key,color,size} = e.efxData;
-            const sc = EFFECT_SIZE_MAP[size]||1; const sz = Math.round(56*sc);
+            const sc = getEffectScale(size); const sz = Math.round(56*sc);
             const em = L.marker(e.latlng, { icon: L.divIcon({
               className:'', html:`<div data-efx="${key}">${def.build(color,size)}</div>`,
               iconSize:[sz,sz], iconAnchor:[sz/2,sz/2]

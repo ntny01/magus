@@ -1877,10 +1877,10 @@ document.addEventListener('DOMContentLoaded', loadFullDatabase);
 
     let currentScale = 1;
 
-    const contentTarget =
-        document.querySelector('main')
-        || document.querySelector('article')
-        || document.body;
+    // A gyökérelemet skálázzuk: a tartalmi blokkok inline rem-alapú
+    // font-size-t kapnak (0.85–0.95rem), ami a gyökérhez képest számolódik —
+    // a korábbi <main>-re tett font-size ezekre a szövegekre nem hatott.
+    const contentTarget = document.documentElement;
 
     const buttons = [...document.querySelectorAll('.font-btn')];
 
@@ -1934,7 +1934,8 @@ document.addEventListener('DOMContentLoaded', loadFullDatabase);
     const mDec = document.getElementById('mobileFontDecrease');
     const mInc = document.getElementById('mobileFontIncrease');
     if (!mDec || !mInc) return;
-    const contentTarget = document.querySelector('main') || document.body;
+    // Ugyanaz a gyökérelem-skálázás, mint az asztali gomboknál (rem-alapú tartalom)
+    const contentTarget = document.documentElement;
     function getScale() { return parseFloat(localStorage.getItem('magusFontScale')) || 1; }
     function applyScale(s) {
         contentTarget.style.fontSize = `${s}rem`;
