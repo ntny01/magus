@@ -1183,6 +1183,16 @@ const sb = supabase.createClient(
             return card
         }
 
+        // XSS-védelem: minden felhasználói (más játékostól származó) szöveget
+        // ezen kell átvezetni, mielőtt innerHTML-be kerül. A km_pult idegen
+        // userek karakteradatát rendereli az admin böngészőjében, így escape
+        // nélkül egy játékos <img onerror=...>-t rejthetne a karakternevébe,
+        // ami az ADMIN munkamenetében futna le.
+        function esc(s) {
+            return String(s == null ? '' : s).replace(/[&<>"']/g, c =>
+                ({ '&':'&amp;', '<':'&lt;', '>':'&gt;', '"':'&quot;', "'":'&#39;' }[c]));
+        }
+
         function renderCards() {
             const list = document.getElementById('cardList');
             const empty = document.getElementById('cardEmptyMsg');
@@ -1198,18 +1208,18 @@ const sb = supabase.createClient(
 
                 const kaszt = [card.faj, card.kaszt].filter(Boolean).join(' · ');
                 const sub = [kaszt, card.isten ? '⚔ '+card.isten : ''].filter(Boolean).join('  |  ');
-                const playerBadge = card._playerName ? `<span style="font-size:.7rem;background:rgba(168,85,247,.15);border:1px solid rgba(168,85,247,.25);color:#c084fc;padding:.1rem .45rem;border-radius:.3rem;margin-left:.5rem;">👤 ${card._playerName}</span>` : '';
+                const playerBadge = card._playerName ? `<span style="font-size:.7rem;background:rgba(168,85,247,.15);border:1px solid rgba(168,85,247,.25);color:#c084fc;padding:.1rem .45rem;border-radius:.3rem;margin-left:.5rem;">👤 ${esc(card._playerName)}</span>` : '';
 
                 // Body: group stats by section+box
                 let bodyHtml = '';
 
                 // Info row
                 const infoPills = [
-                    card.faj ? `<span class="card-info-pill"><b>Faj:</b> ${card.faj}</span>` : '',
-                    card.kaszt ? `<span class="card-info-pill"><b>Kaszt:</b> ${card.kaszt}</span>` : '',
-                    card.isten ? `<span class="card-info-pill"><b>Hit:</b> ${card.isten}</span>` : '',
-                    card.kronika ? `<span class="card-info-pill"><b>Krónika:</b> ${card.kronika}</span>` : '',
-                    card.xp ? `<span class="card-info-pill"><b>XP:</b> <span class="card-xp-badge">${card.xp}</span></span>` : '',
+                    card.faj ? `<span class="card-info-pill"><b>Faj:</b> ${esc(card.faj)}</span>` : '',
+                    card.kaszt ? `<span class="card-info-pill"><b>Kaszt:</b> ${esc(card.kaszt)}</span>` : '',
+                    card.isten ? `<span class="card-info-pill"><b>Hit:</b> ${esc(card.isten)}</span>` : '',
+                    card.kronika ? `<span class="card-info-pill"><b>Krónika:</b> ${esc(card.kronika)}</span>` : '',
+                    card.xp ? `<span class="card-info-pill"><b>XP:</b> <span class="card-xp-badge">${esc(card.xp)}</span></span>` : '',
                 ].join('');
                 if (infoPills) bodyHtml += `<div class="card-info-row">${infoPills}</div>`;
 
@@ -1225,11 +1235,11 @@ const sb = supabase.createClient(
 
                 bodyHtml += '<div class="card-sections">';
                 Object.entries(sections).forEach(([secName, boxes]) => {
-                    bodyHtml += `<div><div class="card-section-title">${secName}</div>`;
+                    bodyHtml += `<div><div class="card-section-title">${esc(secName)}</div>`;
                     bodyHtml += '<div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:.5rem .75rem;">';
                     Object.entries(boxes).forEach(([boxName, rows]) => {
                         bodyHtml += '<div>';
-                        if (boxName) bodyHtml += `<div class="card-box-title">${boxName}</div>`;
+                        if (boxName) bodyHtml += `<div class="card-box-title">${esc(boxName)}</div>`;
                         bodyHtml += '<div class="card-rows">';
                         rows.forEach(r => {
                             if (r.type === 'dot' || r.type === 'header') {
@@ -1238,25 +1248,28 @@ const sb = supabase.createClient(
                                 for (let i=1;i<=max;i++)
                                     dotsHtml += `<span class="cd ${i<=r.value?'f':'e'}">${i<=r.value?'●':'○'}</span>`;
                                 if (r.type === 'header') {
-                                    bodyHtml += `<div class="card-header-row"><span class="card-header-lbl">${r.label}</span><div class="card-dots">${dotsHtml}</div></div>`;
+                                    bodyHtml += `<div class="card-header-row"><span class="card-header-lbl">${esc(r.label)}</span><div class="card-dots">${dotsHtml}</div></div>`;
                                 } else {
-                                    bodyHtml += `<div class="card-row"><span class="card-row-label">${r.label}</span><div class="card-dots">${dotsHtml}</div></div>`;
+                                    bodyHtml += `<div class="card-row"><span class="card-row-label">${esc(r.label)}</span><div class="card-dots">${dotsHtml}</div></div>`;
                                 }
                             } else if (r.type === 'symbol') {
                                 const sym = r.symbol || '★';
                                 const SYM_EMPTY = {'★':'☆','♥':'♡','♦':'♢','♣':'♧','●':'○','■':'□','▲':'△','⬟':'⬠','✦':'✧'};
                                 const empty = SYM_EMPTY[sym] || sym;
-                                const color = r.color || '#d4af37';
+                                // Szín validálása whitelisttel: csak valódi CSS-szín-alak
+                                // engedélyezett, különben a style-attribútumból ki lehetne törni.
+                                const rawColor = r.color || '#d4af37';
+                                const color = /^#[0-9a-fA-F]{3,8}$|^[a-zA-Z]{3,20}$/.test(rawColor) ? rawColor : '#d4af37';
                                 let symHtml = '';
                                 for (let i=1;i<=(r.max||5);i++) {
                                     const filled = i<=r.value;
-                                    symHtml += `<span style="color:${color};opacity:${filled?1:0.28};font-size:.95rem;">${filled?sym:empty}</span>`;
+                                    symHtml += `<span style="color:${color};opacity:${filled?1:0.28};font-size:.95rem;">${esc(filled?sym:empty)}</span>`;
                                 }
-                                bodyHtml += `<div class="card-row"><span class="card-row-label">${r.label}</span><div class="card-dots">${symHtml}</div></div>`;
+                                bodyHtml += `<div class="card-row"><span class="card-row-label">${esc(r.label)}</span><div class="card-dots">${symHtml}</div></div>`;
                             } else if (r.type === 'text') {
-                                bodyHtml += `<div class="card-row"><span class="card-row-label">${r.label}</span><span class="card-text-val">${r.value||''}</span></div>`;
+                                bodyHtml += `<div class="card-row"><span class="card-row-label">${esc(r.label)}</span><span class="card-text-val">${esc(r.value||'')}</span></div>`;
                             } else if (r.type === 'textarea' && (r.value||'').trim()) {
-                                bodyHtml += `<div style="font-size:.78rem;color:var(--text-muted);padding:.3rem .4rem;background:rgba(0,0,0,.2);border-radius:5px;margin-top:.2rem;">${(r.value||'').replace(/\n/g,'<br>')}</div>`;
+                                bodyHtml += `<div style="font-size:.78rem;color:var(--text-muted);padding:.3rem .4rem;background:rgba(0,0,0,.2);border-radius:5px;margin-top:.2rem;">${esc(r.value||'').replace(/\n/g,'<br>')}</div>`;
                             }
                         });
                         bodyHtml += '</div></div>';
@@ -1269,8 +1282,8 @@ const sb = supabase.createClient(
                     <div class="char-card-header" onclick="toggleCard(${idx})">
                         <div class="char-card-avatar">🧙</div>
                         <div class="char-card-meta">
-                            <div class="char-card-name">${card.name || card.title || 'Névtelen'}${playerBadge}</div>
-                            <div class="char-card-sub">${sub || 'Ismeretlen'}</div>
+                            <div class="char-card-name">${esc(card.name || card.title || 'Névtelen')}${playerBadge}</div>
+                            <div class="char-card-sub">${esc(sub) || 'Ismeretlen'}</div>
                         </div>
                         <span class="char-card-chevron">▼</span>
                         <button class="char-card-del" onclick="event.stopPropagation();removeCard(${idx})" title="Kártya eltávolítása">✕</button>

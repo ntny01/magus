@@ -1,1 +1,10 @@
 CLAUDE.md
+
+# Biztonsági SQL-ek: egyszer lefuttatandó Supabase-artifaktok, NEM az app kódja.
+# A statikus GitHub Pages bárkinek kiszolgálná őket (pl. /security/rls_policies.sql),
+# ezért nem commitoljuk — a helyük a Supabase + a helyi/priv. mentésed.
+security/
+
+# Helyi biztonsági mentések / scratch
+*.bak_before_fix
+.tagolas_hibalista.md

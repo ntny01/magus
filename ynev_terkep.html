@@ -2246,6 +2246,14 @@ map.on('click', function(e){
    CREATE MARKER
 ========================================================= */
 
+// XSS-védelem: felhasználói szöveg (marker név/leírás, mentésnevek) escape-elése
+// innerHTML-be írás előtt. Plain <script> blokkban deklarált, így a többi
+// script-blokkból (Supabase mentések) is elérhető ugyanezen a néven.
+function esc(s) {
+    return String(s == null ? '' : s).replace(/[&<>"']/g, c =>
+        ({ '&':'&amp;', '<':'&lt;', '>':'&gt;', '"':'&quot;', "'":'&#39;' }[c]));
+}
+
 function buildMarkerHTML(data){
     const sz = data.size || 30;
     const outline = data.outline !== false;
@@ -2256,7 +2264,7 @@ function buildMarkerHTML(data){
         <div class="customMarker" style="font-size:${sz}px;${outlineStyle}">
             ${data.icon}
         </div>
-        <div class="markerLabel">${data.name || ''}</div>
+        <div class="markerLabel">${esc(data.name || '')}</div>
     </div>`;
 }
 
@@ -2331,8 +2339,8 @@ function openMarkerEditor(marker){
 
     if (!canEdit()) {
         const roHtml = `<div class="popupForm" style="max-width:200px;">
-            ${d.name ? `<div style="font-weight:700;color:#e2e8f0;font-size:.9rem;">${d.name}</div>` : ''}
-            ${d.description ? `<div style="color:#94a3b8;font-size:.8rem;margin-top:4px;">${d.description}</div>` : ''}
+            ${d.name ? `<div style="font-weight:700;color:#e2e8f0;font-size:.9rem;">${esc(d.name)}</div>` : ''}
+            ${d.description ? `<div style="color:#94a3b8;font-size:.8rem;margin-top:4px;">${esc(d.description)}</div>` : ''}
             ${!d.name && !d.description ? `<div style="color:#64748b;font-size:.8rem;">Névtelen jelölő</div>` : ''}
         </div>`;
         L.popup({ closeButton:true, className:'leaflet-popup', offset:[0, -iconH] })
@@ -2347,8 +2355,8 @@ function openMarkerEditor(marker){
 
     const html = `
         <div class="popupForm">
-            <input id="markerName" placeholder="Név" value="${d.name}"/>
-            <textarea id="markerDesc" rows="3" placeholder="Leírás">${d.description}</textarea>
+            <input id="markerName" placeholder="Név" value="${esc(d.name)}"/>
+            <textarea id="markerDesc" rows="3" placeholder="Leírás">${esc(d.description)}</textarea>
             <label style="color:#94a3b8;font-size:11px;display:flex;flex-direction:column;gap:3px;">
                 Méret (${size}px)
                 <input type="range" id="markerSize" min="14" max="60" value="${size}"
@@ -3543,7 +3551,7 @@ document.addEventListener('mousemove', e => {
     const makeItem = s => `
       <div class="save-item">
         <span class="save-item-name" onclick="window.loadSaveItem('${s.id}')" title="${new Date(s.created_at).toLocaleString('hu-HU')}">
-          ${s.name}
+          ${esc(s.name)}
         </span>
         <button class="save-item-del" onclick="window.deleteSaveItem('${s.id}')" title="Törlés">✕</button>
       </div>`
@@ -3647,7 +3655,7 @@ document.addEventListener('mousemove', e => {
         color:#c084fc;border-radius:6px;padding:6px 10px;cursor:pointer;font-size:.8rem;transition:.15s;"
         onmouseover="this.style.background='rgba(168,85,247,.18)'"
         onmouseout="this.style.background='rgba(168,85,247,.08)'"
-      >📢 ${c.name}</button>`).join('');
+      >📢 ${esc(c.name)}</button>`).join('');
   }
 
   // Kívülre kattintásra bezár

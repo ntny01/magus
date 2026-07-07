@@ -1706,6 +1706,12 @@ renderAll();
     window.location.href = 'login.html'
   }
 
+  // XSS-védelem: felhasználói szöveg escape-elése innerHTML-be írás előtt.
+  function esc(s) {
+    return String(s == null ? '' : s).replace(/[&<>"']/g, c =>
+      ({ '&':'&amp;', '<':'&lt;', '>':'&gt;', '"':'&quot;', "'":'&#39;' }[c]));
+  }
+
   // ─── DROPDOWN KEZELÉS ───────────────────────────────────────────
   function toggleDD(id) {
     document.querySelectorAll('.dd-menu').forEach(m => { if(m.id !== id) m.classList.remove('open') })
@@ -1913,8 +1919,8 @@ renderAll();
       const publishedBadge = c.published ? '<span class="publish-badge">📢 KM</span>' : ''
       return `<div class="dd-item" onclick="window.loadChar('${c.id}', false)" style="${activeBg}">
         <span style="flex:1;">
-          <span style="font-weight:600;${nameColor}">${c.name || 'Névtelen'}${isActive?' ✦':''}${publishedBadge}</span>
-          ${c.faj||c.kaszt?`<span style="font-size:.72rem;color:var(--muted);display:block;">${[c.faj,c.kaszt].filter(Boolean).join(' · ')}</span>`:''}
+          <span style="font-weight:600;${nameColor}">${esc(c.name || 'Névtelen')}${isActive?' ✦':''}${publishedBadge}</span>
+          ${c.faj||c.kaszt?`<span style="font-size:.72rem;color:var(--muted);display:block;">${esc([c.faj,c.kaszt].filter(Boolean).join(' · '))}</span>`:''}
         </span>
         <span class="dd-item-del" onclick="window.deleteChar('${c.id}', event)" title="Törlés">✕</span>
       </div>`
@@ -1947,8 +1953,8 @@ renderAll();
     el.innerHTML = data.map(t => `
       <div class="dd-item" onclick="window.loadChar('${t.id}', true)">
         <span style="flex:1;">
-          <span style="font-weight:600;">${t.name}</span>
-          ${t.faj||t.kaszt?`<span style="font-size:.72rem;color:var(--muted);display:block;">${[t.faj,t.kaszt].filter(Boolean).join(' · ')}</span>`:''}
+          <span style="font-weight:600;">${esc(t.name)}</span>
+          ${t.faj||t.kaszt?`<span style="font-size:.72rem;color:var(--muted);display:block;">${esc([t.faj,t.kaszt].filter(Boolean).join(' · '))}</span>`:''}
         </span>
       </div>
     `).join('')
@@ -2137,7 +2143,7 @@ renderAll();
     let title = ''
     if (infoField) title = infoField.value || infoField.label
     else if (row) title = row.type === 'select' ? (row.value || row.label) : row.label
-    return `<div class="field-desc-popover-title">${title}</div>${(desc||'').replace(/\n/g,'<br>')}`
+    return `<div class="field-desc-popover-title">${esc(title)}</div>${esc(desc||'').replace(/\n/g,'<br>')}`
   }
 
   // Popover megjelenítés/elrejtés

@@ -1352,6 +1352,12 @@ const sb = supabase.createClient(
     window.location.href = 'login.html'
   }
 
+  // XSS-védelem: felhasználói szöveg escape-elése innerHTML-be írás előtt.
+  function esc(s) {
+    return String(s == null ? '' : s).replace(/[&<>"']/g, c =>
+      ({ '&':'&amp;', '<':'&lt;', '>':'&gt;', '"':'&quot;', "'":'&#39;' }[c]));
+  }
+
   // ─── KEGYPONT MAX ───────────────────────────────────────────────
   window.updateMaxPower = function(val) {
     let newMax = Math.max(0, parseInt(val) || 0)
@@ -1480,7 +1486,7 @@ const sb = supabase.createClient(
     const sub = [card.faj, card.kaszt].filter(Boolean).join(' · ')
     el.style.display = 'block'
     el.style.color = color
-    el.innerHTML = `${badge} <strong>${card.name}</strong>${sub ? ` <span style="color:#64748b;font-size:.75rem;">· ${sub}</span>` : ''}`
+    el.innerHTML = `${badge} <strong>${esc(card.name)}</strong>${sub ? ` <span style="color:#64748b;font-size:.75rem;">· ${esc(sub)}</span>` : ''}`
   }
 
   // Karakterlap adataiból kártya formátum generálása (infoFields + régi info struktúra is)

@@ -702,6 +702,12 @@ let _fieldKeysWithData = new Set();
 let _uid = 3000;
 const uid = () => 'u' + (++_uid) + '_' + (Math.random()*999|0);
 
+// XSS-védelem: felhasználói szöveg escape-elése innerHTML-be írás előtt.
+function esc(s) {
+  return String(s == null ? '' : s).replace(/[&<>"']/g, c =>
+    ({ '&':'&amp;', '<':'&lt;', '>':'&gt;', '"':'&quot;', "'":'&#39;' }[c]));
+}
+
 /* ==============================
    TAB VÁLTÁS
    ============================== */
@@ -1743,9 +1749,9 @@ async function loadCampaignMapList() {
         style="background:${_currentCampaignMapId===m.id?'rgba(168,85,247,.2)':'rgba(255,255,255,.04)'};
           border:none;color:${m.published?'#34d399':'#c084fc'};
           padding:.28rem .65rem;cursor:pointer;font-size:.75rem;white-space:nowrap;">
-        ${m.published?'📢 ':''}${m.name}
+        ${m.published?'📢 ':''}${esc(m.name)}
       </button>
-      <button onclick="deleteCampaignMap('${m.id}','${m.name.replace(/'/g, "\\'")}')" title="Törlés"
+      <button onclick="deleteCampaignMap('${m.id}','${esc(String(m.name).replace(/\\/g,'\\\\').replace(/'/g,"\\'"))}')" title="Törlés"
         style="background:rgba(239,68,68,.08);border:none;border-left:1px solid rgba(239,68,68,.2);
           color:#f87171;padding:.28rem .5rem;cursor:pointer;font-size:.75rem;">✕</button>
     </span>`).join('');
