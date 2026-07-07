@@ -380,7 +380,14 @@ const sb = supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY)
     const { data, error } = await sb.auth.signInWithPassword({ email, password: pass })
 
     if (error) {
-      showMsg('login-msg', 'error', 'Hibás email vagy jelszó.')
+      // Ha be van kapcsolva az email-megerősítés, a meg nem erősített
+      // fióknál a Supabase "Email not confirmed" hibát ad — ne "hibás jelszó"-t
+      // mutassunk, mert az félrevezető.
+      const notConfirmed = /not confirmed/i.test(error.message || '') || error.code === 'email_not_confirmed'
+      showMsg('login-msg', notConfirmed ? 'info' : 'error',
+        notConfirmed
+          ? 'Előbb erősítsd meg az email-címedet a kapott levélben, utána tudsz belépni.'
+          : 'Hibás email vagy jelszó.')
       btn.disabled = false
       btn.textContent = 'Belépés'
       return
@@ -471,7 +478,7 @@ const sb = supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY)
     // Azonnal kijelentkeztetjük – nem léphet be, amíg admin jóvá nem hagyta
     await sb.auth.signOut()
 
-    showMsg('reg-msg', 'success', 'Kérelem elküldve! Értesítünk amint jóváhagytuk a regisztrációdat.')
+    showMsg('reg-msg', 'success', 'Kérelem elküldve! 🎲 Tony hamarosan jelentkezik, amint jóváhagyta a belépésed — addig türelem, kalandozó!')
     btn.disabled = false
     btn.textContent = 'Regisztráció küldése'
     document.getElementById('reg-name').value = ''
