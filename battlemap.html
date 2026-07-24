@@ -242,12 +242,51 @@ const ASSETS = {
   well:         { label:'Kút',          w:64,  h:64,  src:'assets/objects/well.png' },
   fountain:     { label:'Szökőkút',     w:128, h:64,  src:'assets/objects/fountain.png' },
   hay:          { label:'Szénabála',    w:128, h:64,  src:'assets/objects/hay.png' },
+  roots:            { label:'Gyökerek',        w:64,  h:64,  src:'assets/objects/roots.png' },
+  bush3:            { label:'Bokor (kicsi)',    w:64,  h:64,  src:'assets/objects/bush3.png' },
+  tree3:            { label:'Fa (lombos)',      w:128, h:128, src:'assets/objects/tree3.png' },
+  plant_cluster:    { label:'Növénycsoport',    w:64,  h:64,  src:'assets/objects/plant_cluster.png' },
+  grave_rubble:     { label:'Sírkő-törmelék',   w:64,  h:128, src:'assets/objects/grave_rubble.png' },
+  tombstone_broken: { label:'Törött sírkő',     w:64,  h:64,  src:'assets/objects/tombstone_broken.png' },
+  tombstone2:       { label:'Sírkő (2)',        w:64,  h:64,  src:'assets/objects/tombstone2.png' },
+  chair2:       { label:'Szék (párnázott)', w:64,  h:64,  src:'assets/objects/chair2.png' },
+  chair3:       { label:'Szék (fa)',        w:64,  h:64,  src:'assets/objects/chair3.png' },
+  chair_broken: { label:'Törött szék',      w:64,  h:64,  src:'assets/objects/chair_broken.png' },
+  bed2:         { label:'Ágy (egyszerű)',   w:64,  h:128, src:'assets/objects/bed2.png' },
+  bed3:         { label:'Ágy (sötét)',      w:64,  h:128, src:'assets/objects/bed3.png' },
+  bearskin_rug: { label:'Medvebőr szőnyeg', w:128, h:128, src:'assets/objects/bearskin_rug.png' },
+  rug:          { label:'Szőnyeg',          w:128, h:64,  src:'assets/objects/rug.png' },
+  game_table:   { label:'Játékasztal',      w:64,  h:64,  src:'assets/objects/game_table.png' },
+  explosive_barrel_a: { label:'Robbanó hordó',    w:64,  h:128, src:'assets/objects/explosive_barrel_a.png' },
+  minecart:            { label:'Csillevagon',      w:64,  h:64,  src:'assets/objects/minecart.png' },
+  mine_track_straight: { label:'Bányasín (egyenes)', w:64, h:128, src:'assets/objects/mine_track_straight.png' },
+  pentagram:            { label:'Pentagram',          w:128, h:128, src:'assets/objects/pentagram.png' },
+  summon_circle_glow:   { label:'Idézőkör (izzó)',    w:128, h:128, src:'assets/objects/summon_circle_glow.png' },
+  summon_circle_inset:  { label:'Idézőkör (berakott)',w:128, h:128, src:'assets/objects/summon_circle_inset.png' },
+  scrying_pool:         { label:'Jósló medence',      w:64,  h:64,  src:'assets/objects/scrying_pool.png' },
+  cracked_circle:       { label:'Repedt kör',         w:128, h:128, src:'assets/objects/cracked_circle.png' },
+  clutter_pile1: { label:'Kacatkupac',   w:64,  h:64,  src:'assets/objects/clutter_pile1.png' },
+  handcart:      { label:'Kézikocsi',    w:128, h:192, src:'assets/objects/handcart.png' },
+  wagon:         { label:'Szekér',       w:128, h:320, src:'assets/objects/wagon.png' },
+  food_pile:     { label:'Ételhalom',    w:64,  h:64,  src:'assets/objects/food_pile.png' },
+  hunting_trap:  { label:'Vadászcsapda', w:64,  h:64,  src:'assets/objects/hunting_trap.png' },
+  mug:           { label:'Korsó (bögre)',w:64,  h:64,  src:'assets/objects/mug.png' },
+  paper_pile:    { label:'Papírkupac',   w:64,  h:64,  src:'assets/objects/paper_pile.png' },
+  book_stack:    { label:'Könyvkupac',   w:64,  h:64,  src:'assets/objects/book_stack.png' },
+  treasure_copper: { label:'Kincs (réz)',    w:64, h:64, src:'assets/objects/treasure_copper.png' },
+  treasure_mixed:  { label:'Kincs (vegyes)', w:64, h:64, src:'assets/objects/treasure_mixed.png' },
+  blood_pool: { label:'Vértócsa',        w:64,  h:64,  src:'assets/objects/blood_pool.png' },
+  blood_trail:{ label:'Vérnyom',         w:64,  h:128, src:'assets/objects/blood_trail.png' },
+  gore_pile:  { label:'Belsőség-kupac',  w:64,  h:64,  src:'assets/objects/gore_pile.png' },
+  market_stall: { label:'Piaci pult', w:128, h:128, src:'assets/objects/market_stall.png' },
+  shack:        { label:'Kunyhó',     w:128, h:128, src:'assets/objects/shack.png' },
+  outpost:      { label:'Előőrs',     w:192, h:192, src:'assets/objects/outpost.png' },
 };
 const CATEGORIES = {
-  'Természet':['tree','tree2','bare_tree','bush','bush2','rock','boulder','plant','fern','mushroom','log','stump','tombstone','well','fountain','hay'],
-  'Bútor':['table','table_round','desk','chair','bench','throne','couch','armchair','stool','bookshelf','shelf','bed','wardrobe','mirror','oven'],
+  'Természet':['tree','tree2','bare_tree','bush','bush2','bush3','rock','boulder','plant','fern','mushroom','log','stump','tombstone','tombstone2','tombstone_broken','grave_rubble','well','fountain','hay','roots','tree3','plant_cluster'],
+  'Bútor':['table','table_round','desk','chair','chair2','chair3','chair_broken','bench','throne','couch','armchair','stool','bookshelf','shelf','bed','bed2','bed3','wardrobe','mirror','oven','bearskin_rug','rug','game_table'],
   'Fény':['candle','sconce','brazier','lantern','chandelier','candelabra','campfire_lit','campfire_out'],
-  'Tárgyak':['chest','barrel','pot','bust','statue','basket','crate','sack','coins','gem','sign','forge','altar','magic_circle','banner'],
+  'Tárgyak':['chest','barrel','pot','bust','statue','basket','crate','sack','coins','gem','sign','forge','altar','magic_circle','banner','pentagram','summon_circle_glow','summon_circle_inset','scrying_pool','cracked_circle','clutter_pile1','handcart','wagon','food_pile','hunting_trap','mug','paper_pile','book_stack','treasure_copper','treasure_mixed','blood_pool','blood_trail','gore_pile','explosive_barrel_a','minecart','mine_track_straight','market_stall','shack','outpost'],
   'Fal':['door_plain','door_dark','door_panel'],
 };
 const BG_COLORS = ['#3f6b3a','#5a7d4e','#6b5d44','#7c8896','#2f6f9e','#1e293b','#8a6d3b','#0b1220'];
@@ -818,7 +857,7 @@ function refreshWallPreview(cur){ clearDrafts();
 // használja mint a szakaszok, ezért anyag szerint automatikusan illeszkedik (fa/kő/tégla).
 // Ez fedi el a törésnél a két ferde téglalap-vég csúnya, nem-illeszkedő varratát.
 function makeWallPillar(x,y,thick,matKey){
-  const size=thick*1.7;
+  const size=thick*2.6;
   const p=new Konva.Rect({ x,y, width:size, height:size, offsetX:size/2, offsetY:size/2,
     fillPatternImage:wallTexImg(matKey), fillPatternRepeat:'repeat', fillPatternScale:{x:1.4,y:1.4}, stroke:'#00000050', strokeWidth:1, draggable:(mode==='select') });
   p.setAttr('kind','wall'); p.setAttr('mat',matKey); p.setAttr('thick',thick);
