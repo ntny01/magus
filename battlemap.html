@@ -1,0 +1,1047 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Battlemap Szerkesztő — PoC</title>
+<script src="https://unpkg.com/konva@9/konva.min.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#0a0e1a; --panel:#141a2b; --panel2:#0f1626; --panel3:#1b2437;
+    --border:#26314a; --border2:#33405e;
+    --gold:#d9b45b; --gold2:#f0d488; --green:#4ade80; --accent:#8b7dd8;
+    --text:#e7ecf5; --muted:#8a97b0; --muted2:#5f6c85;
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;height:100%;font-family:'Inter',sans-serif;background:var(--bg);color:var(--text);overflow:hidden}
+  body{display:flex;flex-direction:column;-webkit-font-smoothing:antialiased}
+  ::-webkit-scrollbar{width:9px;height:9px}
+  ::-webkit-scrollbar-track{background:transparent}
+  ::-webkit-scrollbar-thumb{background:#2a3550;border-radius:6px}
+  ::-webkit-scrollbar-thumb:hover{background:#3a4560}
+
+  /* ---------- TOP BAR ---------- */
+  .topbar{
+    height:50px;display:flex;align-items:center;gap:10px;padding:0 14px;flex-shrink:0;
+    background:linear-gradient(180deg,#121a2e,#0b1120);
+    border-bottom:1px solid var(--border);z-index:20;
+    box-shadow:0 2px 14px rgba(0,0,0,.4);
+  }
+  .brand{font-family:'Cinzel',serif;color:var(--gold);font-weight:700;font-size:1.02rem;letter-spacing:.06em;display:flex;align-items:center;gap:7px}
+  .brand .pip{font-size:.55rem;color:var(--muted2);border:1px solid var(--border2);padding:2px 6px;border-radius:20px;letter-spacing:.12em;font-family:'Inter'}
+  .topsep{width:1px;height:24px;background:var(--border);margin:0 3px}
+  .spacer{flex:1}
+  .tbtn{
+    background:var(--panel3);border:1px solid var(--border);color:var(--text);
+    padding:7px 12px;border-radius:9px;cursor:pointer;font-size:.78rem;font-weight:500;white-space:nowrap;
+    transition:.14s;display:inline-flex;align-items:center;gap:6px;
+  }
+  .tbtn:hover{background:#232f48;border-color:var(--border2);transform:translateY(-1px)}
+  .tbtn.danger:hover{background:rgba(248,113,113,.14);border-color:rgba(248,113,113,.4);color:#fecaca}
+  .tbtn.on{background:rgba(217,180,91,.15);border-color:var(--gold);color:var(--gold2)}
+  .count{font-size:.7rem;color:var(--muted);font-variant-numeric:tabular-nums}
+
+  /* ---------- WORKSPACE ---------- */
+  .workspace{flex:1;display:flex;min-height:0}
+
+  /* Tool rail */
+  .toolrail{
+    width:60px;flex-shrink:0;background:linear-gradient(180deg,#111827,#0c1220);
+    border-right:1px solid var(--border);display:flex;flex-direction:column;align-items:center;gap:6px;padding:10px 0;z-index:10;
+  }
+  .tool{
+    width:44px;height:44px;border-radius:12px;border:1px solid transparent;background:transparent;color:var(--muted);
+    cursor:pointer;font-size:20px;display:flex;align-items:center;justify-content:center;transition:.14s;position:relative;
+  }
+  .tool:hover{background:var(--panel3);color:var(--text)}
+  .tool.on{background:linear-gradient(160deg,#2a3350,#1a2138);border-color:var(--gold);color:var(--gold2);box-shadow:0 4px 14px rgba(217,180,91,.15)}
+  .tool .lbl{
+    position:absolute;left:52px;top:50%;transform:translateY(-50%) translateX(-6px);opacity:0;pointer-events:none;
+    background:#0b1220;border:1px solid var(--border2);color:var(--text);font-size:.7rem;padding:4px 9px;border-radius:7px;white-space:nowrap;transition:.14s;z-index:30;
+  }
+  .tool:hover .lbl{opacity:1;transform:translateY(-50%) translateX(0)}
+  .railsep{width:26px;height:1px;background:var(--border);margin:3px 0}
+
+  /* Library panel */
+  .library{
+    width:226px;flex-shrink:0;background:var(--panel);border-right:1px solid var(--border);
+    display:flex;flex-direction:column;overflow:hidden;z-index:9;
+  }
+  .lib-head{padding:13px 14px 9px;border-bottom:1px solid var(--border)}
+  .lib-title{font-family:'Cinzel',serif;font-size:.9rem;color:var(--gold);font-weight:600;letter-spacing:.03em}
+  .lib-sub{font-size:.68rem;color:var(--muted);margin-top:2px}
+  .lib-body{flex:1;overflow-y:auto;padding:12px 14px;display:flex;flex-direction:column;gap:14px}
+  .lib-sec-title{font-size:.62rem;letter-spacing:.11em;text-transform:uppercase;color:var(--muted2);font-weight:600;margin-bottom:-4px}
+
+  .tabs{display:flex;gap:5px;flex-wrap:wrap}
+  .tab{font-size:.7rem;padding:5px 10px;border-radius:20px;border:1px solid var(--border);background:var(--panel2);color:var(--muted);cursor:pointer;transition:.13s}
+  .tab:hover{color:var(--text);border-color:var(--border2)}
+  .tab.on{background:rgba(217,180,91,.14);border-color:var(--gold);color:var(--gold2)}
+
+  .swgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+  .sw{
+    aspect-ratio:1;border-radius:10px;border:1px solid var(--border);background:var(--panel2);cursor:pointer;
+    overflow:hidden;transition:.13s;position:relative;display:flex;align-items:center;justify-content:center;
+  }
+  .sw:hover{border-color:var(--green);transform:translateY(-2px);box-shadow:0 6px 16px rgba(0,0,0,.4)}
+  .sw.on{border-color:var(--gold);box-shadow:0 0 0 2px rgba(217,180,91,.35)}
+  .sw img{width:100%;height:100%;object-fit:cover;pointer-events:none}
+  .sw.el img{object-fit:contain;padding:7px}
+  .sw .cap{position:absolute;bottom:0;left:0;right:0;font-size:.55rem;text-align:center;background:rgba(8,12,22,.72);color:var(--muted);padding:2px 0}
+
+  .field{display:flex;flex-direction:column;gap:6px}
+  .field label{font-size:.68rem;color:var(--muted);display:flex;justify-content:space-between}
+  .field input[type=range]{width:100%;accent-color:var(--gold)}
+  .bgrow{display:flex;gap:6px;flex-wrap:wrap}
+  .bgsw{width:24px;height:24px;border-radius:7px;border:2px solid var(--border);cursor:pointer;transition:.12s}
+  .bgsw:hover{border-color:#fff;transform:scale(1.08)}
+  .lib-empty{color:var(--muted2);font-size:.76rem;line-height:1.5;text-align:center;padding:24px 6px}
+  .lib-tip{font-size:.72rem;line-height:1.45;color:var(--gold2);background:rgba(217,180,91,.08);border:1px solid rgba(217,180,91,.22);border-radius:9px;padding:8px 10px}
+
+  /* Stage */
+  .stage-wrap{flex:1;position:relative;min-height:0;background:radial-gradient(circle at 50% 30%,#0e1424,#080b14)}
+  #canvas{position:absolute;inset:0}
+  .hint{
+    position:absolute;bottom:12px;left:50%;transform:translateX(-50%);z-index:5;
+    background:rgba(11,17,32,.9);border:1px solid var(--border2);border-radius:22px;
+    padding:7px 16px;font-size:.72rem;color:var(--muted);white-space:nowrap;max-width:92%;overflow:hidden;text-overflow:ellipsis;
+    box-shadow:0 6px 20px rgba(0,0,0,.4);
+  }
+  .zoombar{position:absolute;bottom:12px;right:12px;z-index:5;display:flex;gap:6px}
+  .toast{
+    position:absolute;top:14px;left:50%;transform:translateX(-50%);z-index:20;background:rgba(74,222,128,.14);
+    border:1px solid rgba(74,222,128,.4);color:var(--green);font-size:.8rem;padding:9px 16px;border-radius:10px;
+    opacity:0;transition:opacity .35s;pointer-events:none;box-shadow:0 8px 24px rgba(0,0,0,.4);
+  }
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="brand">⚔️ Ynev Battlemap <span class="pip">POC</span></div>
+  <div class="topsep"></div>
+  <button class="tbtn" onclick="saveScene()">💾 Mentés</button>
+  <button class="tbtn" onclick="loadScene()">📂 Betöltés</button>
+  <button class="tbtn danger" onclick="clearScene()">🗑 Ürítés</button>
+  <div class="spacer"></div>
+  <button class="tbtn on" id="gridBtn">▦ Rács</button>
+  <button class="tbtn" onclick="resetView()">🎯 Középre</button>
+  <span class="count" id="countTag">0 elem</span>
+</div>
+
+<div class="workspace">
+  <div class="toolrail" id="toolrail"></div>
+  <div class="library" id="library"></div>
+  <div class="stage-wrap">
+    <div id="canvas"></div>
+    <div class="hint" id="hint"></div>
+    <div class="zoombar">
+      <button class="tbtn" onclick="zoomBy(1.2)">＋</button>
+      <button class="tbtn" onclick="zoomBy(1/1.2)">－</button>
+    </div>
+    <div class="toast" id="toast"></div>
+  </div>
+</div>
+
+<script>
+/* =========================================================
+   TEXTÚRÁK
+========================================================= */
+const dataURI = s => `data:image/svg+xml,${encodeURIComponent(s)}`;
+const tex = inner => dataURI(`<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128">${inner}</svg>`);
+const TEXTURES = {
+  grass_flowers: { label:'Fű (virágos)', src:'assets/terrain/grass_flowers.jpg', seamless:true },
+  grass_meadow:  { label:'Fű (rét)',     src:'assets/terrain/grass_meadow.jpg', seamless:true },
+  grass_dark:    { label:'Fű (sötét)',   src:'assets/terrain/grass_dark.jpg', seamless:true },
+  grass_clover:  { label:'Fű (lóhere)',  src:'assets/terrain/grass_clover.jpg', seamless:true },
+  wood_light:  { label:'Fa padló (világos)', src:'assets/terrain/wood_light.jpg' },
+  wood_dark:   { label:'Fa padló (sötét)',   src:'assets/terrain/wood_dark.jpg' },
+  wood_walnut: { label:'Fa padló (dió)',     src:'assets/terrain/wood_walnut.jpg' },
+  wood_ashen:  { label:'Fa padló (hamuszín)',src:'assets/terrain/wood_ashen.jpg' },
+  water_ripple:  { label:'Víz (fodros)',   src:'assets/terrain/water_ripple.jpg' },
+  water_ripple2: { label:'Víz (hullámos)', src:'assets/terrain/water_ripple2.jpg' },
+  water_murky:   { label:'Víz (mély)',     src:'assets/terrain/water_murky.jpg' },
+  stone: { label:'Kő', src: tex(`<rect width="128" height="128" fill="#5b636e"/>${[[6,6,54,40],[64,4,60,50],[4,50,46,44],[54,58,40,38],[98,58,26,40],[6,98,52,26],[62,100,60,24]].map(([x,y,w,h])=>`<rect x="${x}" y="${y}" width="${w}" height="${h}" rx="6" fill="#6c757f" stroke="#454c55" stroke-width="2"/>`).join('')}`) },
+  road: { label:'Kőút', src: tex(`<rect width="128" height="128" fill="#8b8579"/>${Array.from({length:22},()=>{const x=Math.random()*120,y=Math.random()*120,w=10+Math.random()*22,h=10+Math.random()*18;return `<rect x="${x}" y="${y}" width="${w}" height="${h}" rx="4" fill="hsl(40,10%,${52+Math.random()*14}%)" stroke="#6f6a5f" stroke-width="1.5"/>`}).join('')}`) },
+  dirt: { label:'Föld', src: tex(`<rect width="128" height="128" fill="#7a5636"/>${Array.from({length:80},()=>{const x=Math.random()*128,y=Math.random()*128,r=1+Math.random()*3;return `<circle cx="${x}" cy="${y}" r="${r}" fill="hsl(30,35%,${28+Math.random()*22}%)" opacity="0.6"/>`}).join('')}`) },
+  dirt_dark:   { label:'Föld (sötét)', src:'assets/terrain/dirt_dark.jpg' },
+  dirt_plowed: { label:'Föld (szántott)', src:'assets/terrain/dirt_plowed.jpg' },
+  sand: { label:'Homok', src: tex(`<rect width="128" height="128" fill="#d8c084"/>${Array.from({length:60},()=>{const x=Math.random()*128,y=Math.random()*128;return `<circle cx="${x}" cy="${y}" r="${0.8+Math.random()*1.6}" fill="hsl(45,45%,${62+Math.random()*16}%)" opacity="0.7"/>`}).join('')}`) },
+  brick: { label:'Tégla', src: tex(`<rect width="128" height="128" fill="#7a4a3a"/>${[0,24,48,72,96].map((y,r)=>Array.from({length:4},(_,i)=>{const off=r%2?-16:0;const x=i*36+off;return `<rect x="${x}" y="${y+2}" width="32" height="20" rx="2" fill="#8a5646" stroke="#5e3a2d" stroke-width="2"/>`}).join('')).join('')}`) },
+};
+/* A grass_/wood_/water_ kulcsok valós fotó-textúrát töltenek be (assets/terrain/), NEM a procedurális
+   generátorral készülnek — buildTextures() ezért kihagyja őket, lásd PROCEDURAL_KEYS. */
+const PROCEDURAL_KEYS = ['stone','road','dirt','sand','brick'];
+
+/* FAL-ANYAGOK — KÜLÖN a padló-textúráktól (nem a "mivel festünk" (currentTex) dönti el, hanem
+   saját anyagválasztó). Mindegyik önálló, a padlóhoz eddig nem használt fotó. */
+const WALL_TEXTURES = {
+  brick: { label:'Tégla fal', src:'assets/terrain/wall_brick.jpg' },
+  stone: { label:'Kőfal',     src:'assets/terrain/wall_stone.jpg' },
+  wood:  { label:'Fa fal',    src:'assets/terrain/wall_wood.jpg' },
+};
+
+/* ELEM-ASSETEK + KATEGÓRIÁK — mind valós, felülnézeti FA_Assets objektum (assets/objects/) */
+const ASSETS = {
+  tree:      { label:'Fa',           w:384, h:384, src:'assets/objects/tree.png' },
+  tree2:     { label:'Fa (nagy)',    w:512, h:448, src:'assets/objects/tree2.png' },
+  bare_tree: { label:'Kopár fa',     w:512, h:576, src:'assets/objects/bare_tree.png' },
+  bush:      { label:'Bokor',        w:64,  h:64,  src:'assets/objects/bush.png' },
+  bush2:     { label:'Bokor (nagy)', w:128, h:128, src:'assets/objects/bush2.png' },
+  rock:      { label:'Szikla',       w:128, h:128, src:'assets/objects/rock.png' },
+  boulder:   { label:'Sziklatömb',   w:192, h:192, src:'assets/objects/boulder.png' },
+  plant:     { label:'Növény',       w:64,  h:64,  src:'assets/objects/plant.png' },
+  fern:      { label:'Páfrány',      w:128, h:128, src:'assets/objects/fern.png' },
+  mushroom:  { label:'Gomba',        w:64,  h:64,  src:'assets/objects/mushroom.png' },
+  log:       { label:'Fatörzs',      w:384, h:192, src:'assets/objects/log.png' },
+  stump:     { label:'Farönk',       w:256, h:256, src:'assets/objects/stump.png' },
+  table:     { label:'Asztal',       w:256, h:128, src:'assets/objects/table.png' },
+  chair:     { label:'Szék',         w:64,  h:64,  src:'assets/objects/chair.png' },
+  bench:     { label:'Pad',          w:128, h:64,  src:'assets/objects/bench.png' },
+  bookshelf: { label:'Könyvespolc',  w:128, h:64,  src:'assets/objects/bookshelf.png' },
+  shelf:     { label:'Polc',         w:128, h:64,  src:'assets/objects/shelf.png' },
+  bed:       { label:'Ágy',          w:64,  h:128, src:'assets/objects/bed.png' },
+  wardrobe:  { label:'Szekrény',     w:128, h:64,  src:'assets/objects/wardrobe.png' },
+  mirror:    { label:'Tükör',        w:64,  h:64,  src:'assets/objects/mirror.png' },
+  armchair:  { label:'Fotel',        w:64,  h:64,  src:'assets/objects/armchair.png' },
+  stool:     { label:'Zsámoly',      w:64,  h:64,  src:'assets/objects/stool.png' },
+  oven:      { label:'Kemence',      w:128, h:128, src:'assets/objects/oven.png' },
+  candle:    { label:'Gyertya',      w:64,  h:64,  src:'assets/objects/candle.png' },
+  sconce:    { label:'Fáklyatartó',  w:64,  h:64,  src:'assets/objects/sconce.png' },
+  brazier:   { label:'Parázstartó',  w:64,  h:64,  src:'assets/objects/brazier.png' },
+  chest:     { label:'Láda',         w:64,  h:64,  src:'assets/objects/chest.png' },
+  barrel:    { label:'Hordó',        w:192, h:192, src:'assets/objects/barrel.png' },
+  pot:       { label:'Korsó',        w:64,  h:64,  src:'assets/objects/pot.png' },
+  bust:      { label:'Mellszobor',   w:64,  h:64,  src:'assets/objects/bust.png' },
+  statue:    { label:'Szobor',       w:128, h:128, src:'assets/objects/statue.png' },
+  table_round:{ label:'Kerek asztal', w:128, h:128, src:'assets/objects/table_round.png' },
+  desk:      { label:'Íróasztal',    w:192, h:128, src:'assets/objects/desk.png' },
+  throne:    { label:'Trónszék',     w:64,  h:128, src:'assets/objects/throne.png' },
+  couch:     { label:'Kanapé',       w:128, h:64,  src:'assets/objects/couch.png' },
+  lantern:      { label:'Lámpás',        w:64,  h:64,  src:'assets/objects/lantern.png' },
+  chandelier:   { label:'Csillár (ég)',  w:128, h:128, src:'assets/objects/chandelier.png' },
+  candelabra:   { label:'Gyertyatartó',  w:64,  h:64,  src:'assets/objects/candelabra.png' },
+  campfire_lit: { label:'Tábortűz (ég)', w:64,  h:64,  src:'assets/objects/campfire_lit.png' },
+  campfire_out: { label:'Tábortűz (kialudt)', w:64, h:64, src:'assets/objects/campfire_out.png' },
+  basket:    { label:'Kosár',        w:64,  h:64,  src:'assets/objects/basket.png' },
+  crate:     { label:'Rekesz',       w:64,  h:64,  src:'assets/objects/crate.png' },
+  sack:      { label:'Zsák',         w:64,  h:64,  src:'assets/objects/sack.png' },
+  coins:     { label:'Érmék',        w:38,  h:38,  src:'assets/objects/coins.png' },
+  gem:       { label:'Drágakő',      w:29,  h:29,  src:'assets/objects/gem.png' },
+  sign:      { label:'Cégtábla',     w:64,  h:64,  src:'assets/objects/sign.png' },
+  forge:     { label:'Kovácstűzhely (ég)', w:192, h:192, src:'assets/objects/forge.png' },
+  door_plain: { label:'Ajtó (palánk)',   w:160, h:160, src:'assets/objects/door_plain.png', isDoor:true },
+  door_dark:  { label:'Ajtó (sötét fa)', w:160, h:160, src:'assets/objects/door_dark.png',  isDoor:true },
+  door_panel: { label:'Ajtó (vasalt)',   w:160, h:160, src:'assets/objects/door_panel.png', isDoor:true },
+  altar:        { label:'Oltár',        w:128, h:64,  src:'assets/objects/altar.png' },
+  magic_circle: { label:'Mágikus kör',  w:128, h:128, src:'assets/objects/magic_circle.png' },
+  banner:       { label:'Zászló',       w:128, h:64,  src:'assets/objects/banner.png' },
+  tombstone:    { label:'Sírkő',        w:64,  h:64,  src:'assets/objects/tombstone.png' },
+  well:         { label:'Kút',          w:64,  h:64,  src:'assets/objects/well.png' },
+  fountain:     { label:'Szökőkút',     w:128, h:64,  src:'assets/objects/fountain.png' },
+  hay:          { label:'Szénabála',    w:128, h:64,  src:'assets/objects/hay.png' },
+};
+const CATEGORIES = {
+  'Természet':['tree','tree2','bare_tree','bush','bush2','rock','boulder','plant','fern','mushroom','log','stump','tombstone','well','fountain','hay'],
+  'Bútor':['table','table_round','desk','chair','bench','throne','couch','armchair','stool','bookshelf','shelf','bed','wardrobe','mirror','oven'],
+  'Fény':['candle','sconce','brazier','lantern','chandelier','candelabra','campfire_lit','campfire_out'],
+  'Tárgyak':['chest','barrel','pot','bust','statue','basket','crate','sack','coins','gem','sign','forge','altar','magic_circle','banner'],
+  'Fal':['door_plain','door_dark','door_panel'],
+};
+const BG_COLORS = ['#3f6b3a','#5a7d4e','#6b5d44','#7c8896','#2f6f9e','#1e293b','#8a6d3b','#0b1220'];
+
+/* TOOLOK */
+const TOOLS = [
+  {mode:'select', icon:'🖱', label:'Kijelölés (V)'},
+  {mode:'stamp',  icon:'🌳', label:'Elemek (stamp)'},
+  {sep:true},
+  {mode:'brush',  icon:'🖌', label:'Ecset (festés)'},
+  {mode:'terrain-rect', icon:'▭', label:'Terület'},
+  {mode:'terrain-poly', icon:'⬠', label:'Folt (sokszög)'},
+  {mode:'eraser', icon:'🧽', label:'Radír'},
+  {sep:true},
+  {mode:'wall',   icon:'🧱', label:'Fal (Shift=szög-lock)'},
+];
+
+/* =========================================================
+   PROCEDURÁLIS TEXTÚRA-GENERÁTOR (csempézhető raszter, seamless)
+   Felülírja a fenti egyszerű SVG-textúrákat sokkal organikusabbal:
+   fraktál-zaj (fbm) + Worley-cellák (kő/kőút) + erezet (fa) + fodrok (víz).
+========================================================= */
+const TS=256;
+function _h(x,y,s){ let h=Math.imul(((x|0)*374761393) ^ ((y|0)*668265263) ^ ((s|0)*2246822519), 2654435761); h^=h>>>15; return ((h>>>0)%1000000)/1000000; }
+function _sm(t){ return t*t*(3-2*t); }
+function _lat(ix,iy,c,s){ ix=((ix%c)+c)%c; iy=((iy%c)+c)%c; return _h(ix,iy,s); }
+function _vn(fx,fy,c,s){ const x0=Math.floor(fx),y0=Math.floor(fy),tx=_sm(fx-x0),ty=_sm(fy-y0);
+  const a=_lat(x0,y0,c,s),b=_lat(x0+1,y0,c,s),d1=_lat(x0,y0+1,c,s),e=_lat(x0+1,y0+1,c,s);
+  return (a*(1-tx)+b*tx)*(1-ty)+(d1*(1-tx)+e*tx)*ty; }
+function _fbm(u,v,c,oct,s){ let amp=1,sum=0,tot=0,cc=c; for(let o=0;o<oct;o++){ sum+=amp*_vn(u*cc,v*cc,cc,s+o*13); tot+=amp; amp*=0.5; cc*=2; } return sum/tot; }
+function _wor(u,v,c,s){ const gx=Math.floor(u*c),gy=Math.floor(v*c); let f1=9,f2=9,id=0,nx=0,ny=0;
+  for(let oy=-1;oy<=1;oy++)for(let ox=-1;ox<=1;ox++){ const ci=gx+ox,cj=gy+oy, rx=((ci%c)+c)%c, ry=((cj%c)+c)%c;
+    const px=(ci+_h(rx,ry,s))/c, py=(cj+_h(rx,ry,s+71))/c; let dx=px-u,dy=py-v; dx-=Math.round(dx); dy-=Math.round(dy);
+    const dd=Math.hypot(dx,dy); if(dd<f1){f2=f1;f1=dd;id=rx*197+ry;nx=-dx;ny=-dy;} else if(dd<f2)f2=dd; }
+  return {f1,f2,id,nx,ny}; } // nx,ny = a legközelebbi cellaközéptől a pixel felé (megvilágításhoz)
+function _hsl(h,s,l){ l=Math.max(0,Math.min(100,l))/100; s=Math.max(0,Math.min(100,s))/100; h=((h%360)+360)%360;
+  const a=s*Math.min(l,1-l), f=n=>{ const k=(n+h/30)%12; return l-a*Math.max(-1,Math.min(k-3,Math.min(9-k,1))); };
+  return [255*f(0),255*f(8),255*f(4)]; }
+function _genTex(key){
+  const cv=document.createElement('canvas'); cv.width=cv.height=TS; const ctx=cv.getContext('2d');
+  const img=ctx.createImageData(TS,TS), D=img.data;
+  for(let py=0;py<TS;py++)for(let px=0;px<TS;px++){ const u=px/TS, v=py/TS; let r,g,b;
+    if(key==='grass'){ const n=_fbm(u,v,4,4,1), n2=_fbm(u,v,18,3,7), bl=_fbm(u,v,72,2,3), patch=_fbm(u,v,7,2,21);
+      let l=27+n*11+(n2-0.5)*11+(bl>0.74?9:0)-(patch>0.66?6:0), h=96+(n2-0.5)*22+(patch>0.66?-8:0), s=44;
+      const fl=_wor(u,v,9,44); if(fl.f1<0.045){ const t=_h(fl.id%1000000,3,1); h=t>0.5?52:(t>0.25?300:210); s=70; l=64; } // apró virágok
+      [r,g,b]=_hsl(h,s,l); }
+    else if(key==='dirt'){ const n=_fbm(u,v,5,4,2), cl=_fbm(u,v,14,3,9), sp=_fbm(u,v,80,2,4), pb=_wor(u,v,16,33);
+      let l=23+n*15-(cl>0.62?9:0)+(sp>0.82?11:0); if(pb.f1<0.03) l+=10+ (pb.nx*(-0.5)+pb.ny*(-0.8))/(pb.f1||1e-3)*4; // kavicsok
+      [r,g,b]=_hsl(27,42,l); }
+    else if(key==='sand'){ const n=_fbm(u,v,6,4,3), rp=Math.sin((v*8+_fbm(u,v,4,2,5)*2)*Math.PI), rp2=Math.sin((v*8+_fbm(u,v,4,2,5)*2)*Math.PI-1.2);
+      const l=63+n*11+rp*5-(rp2>0.7?3:0); [r,g,b]=_hsl(44,46,l); }
+    else if(key==='water'){ const dp=_fbm(u,v,4,4,5), rp=Math.sin((u*7+dp*3)*Math.PI*2)*0.5+0.5, rp2=Math.sin((v*9-dp*2)*Math.PI*2)*0.5+0.5;
+      let l=27+dp*17+(rp*rp2)*13; const gl=_fbm(u+0.13,v-0.2,50,2,15); if(gl>0.83) l+=20+(gl-0.83)*90; // csillámok
+      [r,g,b]=_hsl(204+dp*8,56,Math.min(82,l)); }
+    else if(key==='stone'||key==='road'){ const cells=key==='road'?9:6; const w=_wor(u,v,cells,key==='road'?21:11);
+      const edge=Math.min(1,(w.f2-w.f1)*cells*2.4), cv2=_h((w.id*13)%1000000,7,1);
+      const nlen=w.f1||1e-3, nl=(w.nx*(-0.55)+w.ny*(-0.83))/nlen; // ferde fény (bal-fent)
+      const rim=edge>0.82?6:0; // felső él csillanás
+      const base=key==='road'?54+cv2*16:44+cv2*18;
+      let l=(base*(0.42+edge*0.58)) + nl*7 + rim; l*=(0.86+_fbm(u,v,40,2,4)*0.28);
+      [r,g,b]=_hsl(key==='road'?38:212, key==='road'?11:9, Math.max(6,Math.min(88,l))); }
+    else if(key==='wood'){ const planks=5, pi=Math.floor(v*planks), pf=v*planks-pi, grain=_vn(u*26, v*3+pi*11, 26, 6+pi), grain2=_vn(u*70,v*4+pi*7,70,3+pi);
+      let l=29+(pi%2?0:4)+grain*13+(grain2-0.5)*6; if(pf<0.055||pf>0.945) l-=16;
+      const kn=_wor(u,v,6,90+pi); if(kn.f1<0.03) l-=18; // göcsök
+      [r,g,b]=_hsl(28,47+(grain>0.6?6:0),Math.max(7,l)); }
+    else if(key==='brick'){ const rows=6, ri=Math.floor(v*rows), rf=v*rows-ri, off=ri%2?0.5:0, cols=4;
+      const bu=u*cols+off, bi=Math.floor(bu), bf=bu-bi, mort=(rf<0.12||rf>0.88||bf<0.05||bf>0.95), bv=_h((bi*7+ri*31)%1000000,5,1);
+      let l=mort?28:34+bv*13; if(!mort){ if(rf<0.28) l+=6; else if(rf>0.72) l-=6; l+=(_vn(u*40,v*30,40,ri+3)-0.5)*7; } // domború tégla + textúra
+      [r,g,b]=_hsl(mort?24:13, mort?16:36, l); }
+    else { r=g=b=120; }
+    const i=(py*TS+px)*4; D[i]=r; D[i+1]=g; D[i+2]=b; D[i+3]=255;
+  }
+  ctx.putImageData(img,0,0);
+  return cv.toDataURL('image/png');
+}
+function buildTextures(){ PROCEDURAL_KEYS.forEach(k=>{ TEXTURES[k].src=_genTex(k); }); }
+
+/* =========================================================
+   KÉP-CACHE
+========================================================= */
+const imgCache = {};
+function loadImg(src){ return new Promise(res=>{ if(imgCache[src])return res(imgCache[src]); const im=new Image(); im.onload=()=>{imgCache[src]=im;res(im)}; im.src=src; }); }
+const texImg = key => imgCache[TEXTURES[key].src];
+const assetImg = key => imgCache[ASSETS[key].src];
+const wallTexImg = key => imgCache[WALL_TEXTURES[key].src];
+
+/* =========================================================
+   VARRATMENTESÍTÉS ("PS Offset + heal" trükk)
+   A négy negyedet felcseréljük (a kép szélei a közepére kerülnek) — ettől
+   a canvas KÜLSŐ pereme magától varratmentessé válik (moduláris wraparound:
+   a jobb szél mindig az eredeti bal szél folytatása marad). A régi szélek
+   most egy "+" alakú varratként futnak a KÖZÉPEN — ezt egy szűk sávra
+   korlátozott, lágy elmosással elkenjük. Az eredmény ugyanaz a fotó, de
+   'repeat' mintaként festve nem látszanak rajta rácsvonalak.
+========================================================= */
+function makeSeamless(img){
+  const w=img.width, h=img.height, hw=w/2, hh=h/2;
+  const cv=document.createElement('canvas'); cv.width=w; cv.height=h; const cx=cv.getContext('2d');
+  cx.drawImage(img, hw,hh,hw,hh, 0,0,hw,hh);
+  cx.drawImage(img, 0,hh,hw,hh, hw,0,hw,hh);
+  cx.drawImage(img, hw,0,hw,hh, 0,hh,hw,hh);
+  cx.drawImage(img, 0,0,hw,hh, hw,hh,hw,hh);
+  const band=Math.round(w*0.03);
+  const mask=document.createElement('canvas'); mask.width=w; mask.height=h; const mx=mask.getContext('2d');
+  const gV=mx.createLinearGradient(hw-band,0,hw+band,0); gV.addColorStop(0,'rgba(255,255,255,0)'); gV.addColorStop(0.5,'rgba(255,255,255,1)'); gV.addColorStop(1,'rgba(255,255,255,0)');
+  mx.fillStyle=gV; mx.fillRect(hw-band,0,band*2,h);
+  const gH=mx.createLinearGradient(0,hh-band,0,hh+band); gH.addColorStop(0,'rgba(255,255,255,0)'); gH.addColorStop(0.5,'rgba(255,255,255,1)'); gH.addColorStop(1,'rgba(255,255,255,0)');
+  mx.globalCompositeOperation='lighter'; mx.fillStyle=gH; mx.fillRect(0,hh-band,w,band*2);
+  const blurred=document.createElement('canvas'); blurred.width=w; blurred.height=h; const bx=blurred.getContext('2d');
+  bx.filter=`blur(${Math.round(w*0.03)}px)`; bx.drawImage(cv,0,0);
+  bx.globalCompositeOperation='destination-in'; bx.filter='none'; bx.drawImage(mask,0,0);
+  cx.drawImage(blurred,0,0);
+  return cv;
+}
+
+/* =========================================================
+   STAGE + RÉTEGEK
+========================================================= */
+const CELL = 64, WORLD = CELL*40;
+const wrap = document.querySelector('.stage-wrap');
+const stage = new Konva.Stage({ container:'canvas', width:wrap.clientWidth, height:wrap.clientHeight, draggable:true });
+const bgLayer=new Konva.Layer({listening:false}), terrainLayer=new Konva.Layer({listening:false}),
+      gridLayer=new Konva.Layer({listening:false}), mainLayer=new Konva.Layer(), overlay=new Konva.Layer({listening:false});
+stage.add(bgLayer, terrainLayer, gridLayer, mainLayer, overlay);
+
+let bgRect = new Konva.Rect({x:0,y:0,width:WORLD,height:WORLD,fill:'#3f6b3a'});
+bgLayer.add(bgRect);
+
+const terr = document.createElement('canvas'); terr.width=WORLD; terr.height=WORLD;
+const tctx = terr.getContext('2d');
+const terrNode = new Konva.Image({ image:terr, x:0, y:0, width:WORLD, height:WORLD, listening:false });
+terrainLayer.add(terrNode);
+function terrDraw(){ terrainLayer.batchDraw(); }
+const SBUF = 340; const sbuf=document.createElement('canvas'); sbuf.width=sbuf.height=SBUF; const sctx=sbuf.getContext('2d');
+
+function drawGrid(){
+  gridLayer.destroyChildren();
+  for(let i=0;i<=WORLD;i+=CELL){
+    gridLayer.add(new Konva.Line({points:[i,0,i,WORLD],stroke:'#00000026',strokeWidth:1}));
+    gridLayer.add(new Konva.Line({points:[0,i,WORLD,i],stroke:'#00000026',strokeWidth:1}));
+  }
+  gridLayer.batchDraw();
+}
+const tr = new Konva.Transformer({ rotateEnabled:true, borderStroke:'#4ade80', anchorStroke:'#4ade80', anchorFill:'#0f172a', anchorSize:9, borderDash:[4,3], rotationSnaps:[0,45,90,135,180,225,270,315], rotationSnapTolerance:8 });
+mainLayer.add(tr);
+
+/* =========================================================
+   ÁLLAPOT / MÓD
+========================================================= */
+let mode='select', currentTex='grass_meadow', brushSize=90, sharpEdge=false;
+let stampKey=null, stampScale=1, stampRot=0, ghost=null, stampCat='Természet';
+const HINTS = {
+  'select':'Húzd az ürességet = pan · görgő = zoom · kattints elemre = kijelöl · Delete = töröl',
+  'stamp':'Kattints a térképre = elem lerakása (több is) · görgő = méret · R = forgatás · Esc = kilép',
+  'brush':'Nyomd le és fesd a talajt — simított vonal, folytonos textúra, lágy szélek',
+  'terrain-rect':'Húzz egy területet (lágy szélű, textúrázott padló/kő)',
+  'terrain-poly':'Kattints a sarkokra · dupla katt / Enter = kész · Esc = mégse',
+  'eraser':'Nyomd le és töröld a festett talajt (lágy radír)',
+  'wall':'Kattints a sarokpontokra (rácsra pattan) · SHIFT = 45°-lock · dupla katt / Enter = kész',
+};
+function setMode(m){
+  if(m!=='stamp'){ clearGhost(); stampKey=null; }
+  cancelDraft(); mode=m;
+  document.querySelectorAll('.tool').forEach(b=>b.classList.toggle('on', b.dataset.mode===m));
+  const sel=(m==='select'); stage.draggable(sel);
+  mainLayer.getChildren().forEach(n=>{ if(n!==tr) n.draggable(sel && n.getAttr('kind')!=null); });
+  if(!sel) select(null);
+  const painty=(m==='brush'||m==='eraser');
+  if(painty) ensureRing(); else clearRing();
+  stage.container().style.cursor = sel ? 'default' : ((m==='stamp'||painty) ? 'none' : 'crosshair');
+  document.getElementById('hint').textContent = HINTS[m];
+  renderLibrary();
+}
+
+/* =========================================================
+   KIJELÖLÉS
+========================================================= */
+function select(node){ if(mode!=='select'){ tr.nodes([]); return; } tr.nodes(node?[node]:[]); mainLayer.batchDraw(); }
+function selected(){ return tr.nodes()[0]||null; }
+function attachSelectable(node){
+  node.on('click tap', e=>{ if(mode==='select'){ e.cancelBubble=true; select(node); } });
+  node.on('dragstart', ()=>{ if(mode==='select') select(node); });
+}
+function worldPointer(){ return stage.getRelativePointerPosition(); }
+
+/* =========================================================
+   ELEM + STAMP RENDSZER
+========================================================= */
+function makeAsset(key,x,y,opt={}){
+  const def=ASSETS[key];
+  const node=new Konva.Image({ image:assetImg(key), width:def.w, height:def.h, x, y, offsetX:def.w/2, offsetY:def.h/2,
+    draggable:(mode==='select'), rotation:opt.rotation||0, scaleX:opt.scaleX||1, scaleY:opt.scaleY||1 });
+  node.setAttr('kind','asset'); node.setAttr('assetKey',key);
+  attachSelectable(node); mainLayer.add(node); tr.moveToTop(); return node;
+}
+function setStamp(key){ stampKey=key; stampScale=1; stampRot=0; setMode('stamp'); ensureGhost(); renderLibrary(); }
+function ensureGhost(){ clearGhost(); if(!stampKey)return; const def=ASSETS[stampKey];
+  ghost=new Konva.Image({image:assetImg(stampKey),width:def.w,height:def.h,offsetX:def.w/2,offsetY:def.h/2,opacity:0.55,listening:false}); overlay.add(ghost); }
+function clearGhost(){ if(ghost){ghost.destroy();ghost=null;overlay.batchDraw();} }
+function moveGhost(){ if(!ghost)return; const p=worldPointer(); ghost.position(p); ghost.scale({x:stampScale,y:stampScale}); ghost.rotation(stampRot); overlay.batchDraw(); }
+function placeStamp(){ if(!stampKey)return; const p=worldPointer();
+  if(ASSETS[stampKey].isDoor) makeDoor(stampKey,p.x,p.y,{rotation:stampRot,scaleX:stampScale,scaleY:stampScale});
+  else makeAsset(stampKey,p.x,p.y,{scaleX:stampScale,scaleY:stampScale,rotation:stampRot});
+  mainLayer.batchDraw(); updateCount(); }
+// Ajtó: fa, kilinccsel, nyitható/csukható — a HINGE (zsanér) a bal szélen van (offsetX kicsi), így a
+// forgatás valódi ajtó-lengésként hat, nem a kép közepén pörög. isOpen=true -> -90°-kal elfordul a
+// zárt (fallal egy vonalban álló) alaphelyzethez (baseRotation) képest. Lerakáskor/húzás végén
+// AUTOMATIKUSAN a legközelebbi falhoz igazodik (tetszőleges szögben, nem csak 90°-onként) és
+// a fal ott KETTÉVÁLIK — a rés helyén nincs többé fal-textúra (ld. snapDoorToWall/cutWallForDoor).
+const DOOR_HINGE_OFFSET = 14;
+function makeDoor(key,x,y,opt={}){
+  const def=ASSETS[key], base=opt.rotation||0;
+  const node=new Konva.Image({ image:assetImg(key), width:def.w, height:def.h, x, y, offsetX:DOOR_HINGE_OFFSET, offsetY:def.h/2,
+    draggable:(mode==='select'), rotation:base, scaleX:opt.scaleX||1, scaleY:opt.scaleY||1 });
+  node.setAttr('kind','door'); node.setAttr('assetKey',key); node.setAttr('baseRotation',base); node.setAttr('isOpen',!!opt.isOpen);
+  if(opt.isOpen) node.rotation(base-90);
+  attachSelectable(node);
+  node.on('dragend', ()=>{ snapDoorToWall(node); });
+  mainLayer.add(node); tr.moveToTop();
+  snapDoorToWall(node);
+  return node;
+}
+function toggleDoor(node){ const open=!node.getAttr('isOpen'); node.setAttr('isOpen',open);
+  node.rotation(node.getAttr('baseRotation') + (open?-90:0)); node.getLayer().batchDraw(); renderLibrary(); }
+
+/* --- Ajtó ↔ fal illesztés: tetszőleges szögű snap + a fal kivágása a rés helyén --- */
+function wallGeom(w){
+  const rad=w.rotation()*Math.PI/180, len=w.width(), x0=w.x(), y0=w.y();
+  return { x0,y0, x1:x0+len*Math.cos(rad), y1:y0+len*Math.sin(rad), rad, len, thick:w.getAttr('thick'), mat:w.getAttr('mat') };
+}
+function closestPointOnSegment(px,py,x0,y0,x1,y1){
+  const dx=x1-x0, dy=y1-y0, len2=dx*dx+dy*dy;
+  let t = len2>0 ? ((px-x0)*dx+(py-y0)*dy)/len2 : 0; t=Math.max(0,Math.min(1,t));
+  return { x:x0+t*dx, y:y0+t*dy };
+}
+const DOOR_SNAP_RANGE = 36;
+function findWallForDoor(px,py){
+  let best=null, bestDist=DOOR_SNAP_RANGE;
+  mainLayer.getChildren(n=>n.getAttr('kind')==='wall').forEach(w=>{
+    const g=wallGeom(w), cp=closestPointOnSegment(px,py,g.x0,g.y0,g.x1,g.y1), d=Math.hypot(px-cp.x,py-cp.y);
+    if(d<bestDist){ bestDist=d; best={wall:w,geom:g,point:cp}; }
+  });
+  return best;
+}
+function snapDoorToWall(doorNode){
+  const def=ASSETS[doorNode.getAttr('assetKey')], scale=doorNode.scaleX()||1;
+  const halfLen=(def.w/2)*scale, hingeOffset=(def.w/2-DOOR_HINGE_OFFSET)*scale;
+  // A keresés a zsanér-pontból indul (a doorNode x/y-ja pont ez) — egyszerűbb és megbízhatóbb, mint
+  // a még-nem-ismert fal-irány alapján becsült középpontból indulni (az korábban hibásan messze
+  // eshetett egy ferde falnál, mert a becslés a RÉGI/0 elforgatást használta).
+  const found=findWallForDoor(doorNode.x(),doorNode.y());
+  if(!found) return false;
+  const {wall,geom,point}=found, rotDeg=geom.rad*180/Math.PI;
+  doorNode.position({ x:point.x-hingeOffset*Math.cos(geom.rad), y:point.y-hingeOffset*Math.sin(geom.rad) });
+  doorNode.setAttr('baseRotation',rotDeg);
+  doorNode.rotation(doorNode.getAttr('isOpen') ? rotDeg-90 : rotDeg);
+  cutWallForDoor(wall,geom,point,halfLen*2);
+  mainLayer.batchDraw(); updateCount();
+  return true;
+}
+function cutWallForDoor(wall,geom,point,doorWidth){
+  const half=doorWidth/2, distFromStart=Math.hypot(point.x-geom.x0,point.y-geom.y0);
+  const gapStart=Math.max(0,distFromStart-half), gapEnd=Math.min(geom.len,distFromStart+half);
+  const rotDeg=geom.rad*180/Math.PI;
+  wall.destroy();
+  if(gapStart>4) makeWallSegment(geom.x0,geom.y0,gapStart,rotDeg,geom.mat,{thick:geom.thick});
+  if(geom.len-gapEnd>4){ const sx=geom.x0+gapEnd*Math.cos(geom.rad), sy=geom.y0+gapEnd*Math.sin(geom.rad);
+    makeWallSegment(sx,sy,geom.len-gapEnd,rotDeg,geom.mat,{thick:geom.thick}); }
+}
+
+/* Kurzor-gyűrű: ecset/radír módban mutatja a hatás helyét ÉS méretét */
+let cursorRing=null;
+function ensureRing(){ clearRing(); cursorRing=new Konva.Circle({radius:brushSize/2,stroke:'#ffffffcc',strokeWidth:2,dash:[7,5],listening:false,fillEnabled:false}); overlay.add(cursorRing); }
+function updateRing(){ if(!cursorRing)return; const p=worldPointer(); cursorRing.position(p); cursorRing.radius(brushSize/2); cursorRing.stroke(mode==='eraser'?'#f87171dd':'#ffffffcc'); overlay.batchDraw(); }
+function clearRing(){ if(cursorRing){cursorRing.destroy();cursorRing=null;overlay.batchDraw();} }
+/* Overlay-draftok törlése a ghost és a kurzor-gyűrű megtartásával */
+function clearDrafts(){ overlay.getChildren().forEach(n=>{ if(n!==ghost && n!==cursorRing) n.destroy(); }); overlay.batchDraw(); }
+
+/* =========================================================
+   TALAJ-FESTÉS
+========================================================= */
+function paintStamp(x,y,texKey,size){
+  const r=size/2, d=Math.min(size,SBUF);
+  sctx.clearRect(0,0,SBUF,SBUF);
+  sctx.save(); sctx.translate(r-x, r-y);
+  sctx.fillStyle = sctx.createPattern(texImg(texKey),'repeat'); sctx.fillRect(x-r, y-r, d, d); sctx.restore();
+  sctx.globalCompositeOperation='destination-in';
+  const g=sctx.createRadialGradient(r,r,r*0.25, r,r,r);
+  g.addColorStop(0,'rgba(255,255,255,1)'); g.addColorStop(0.7,'rgba(255,255,255,0.92)'); g.addColorStop(1,'rgba(255,255,255,0)');
+  sctx.fillStyle=g; sctx.fillRect(0,0,d,d); sctx.globalCompositeOperation='source-over';
+  tctx.drawImage(sbuf, 0,0,d,d, x-r,y-r,d,d);
+}
+function eraseStamp(x,y,size){
+  const r=size/2; tctx.save(); tctx.globalCompositeOperation='destination-out';
+  const g=tctx.createRadialGradient(x,y,r*0.2, x,y,r); g.addColorStop(0,'rgba(0,0,0,1)'); g.addColorStop(1,'rgba(0,0,0,0)');
+  tctx.fillStyle=g; tctx.beginPath(); tctx.arc(x,y,r,0,Math.PI*2); tctx.fill(); tctx.restore();
+}
+function paintRegion(drawPath, bb, texKey, sharp){
+  const pad=sharp?2:28, w=Math.ceil(bb.w+pad*2), h=Math.ceil(bb.h+pad*2);
+  const mc=document.createElement('canvas'); mc.width=w; mc.height=h; const m=mc.getContext('2d');
+  m.save(); m.translate(pad-bb.x, pad-bb.y); if(!sharp) m.filter='blur(10px)'; m.fillStyle='#fff'; m.beginPath(); drawPath(m); m.fill(); m.restore();
+  const tc=document.createElement('canvas'); tc.width=w; tc.height=h; const t=tc.getContext('2d');
+  t.save(); t.translate(pad-bb.x, pad-bb.y); t.fillStyle=t.createPattern(texImg(texKey),'repeat'); t.fillRect(bb.x-pad, bb.y-pad, w, h); t.restore();
+  t.globalCompositeOperation='destination-in'; t.drawImage(mc,0,0);
+  tctx.drawImage(tc, bb.x-pad, bb.y-pad); terrDraw();
+}
+
+/* =========================================================
+   KONTEXTUS-ÉRZÉKENY SZÉLEK — v3 (elmosott maszkok, KÜLÖN réteg)
+   Finom (24 világ-egység/cella) rács tárolja, PONTOSAN melyik textúra-
+   variáns fedi legutóbb az adott cellát (kör/sokszög szerint jelölve,
+   nem bbox-szal). Festés/törlés/kitöltés után a dirty sávban:
+   1) minden jelenlévő (nem fa) KATEGÓRIÁRA felépítünk egy kis, cella-
+      felbontású fekete/fehér maszkot, majd nagyítva+elmosva ("blur")
+      egy FOLYTONOS, síma, a rács-cellák szögletességétől független
+      "közelség-felhőt" kapunk (nincs lépcsőzetes/szögletes műtermék,
+      mert a maszk bilineárisan interpolált, nem cellánkénti téglalap).
+   2) minden (A,B) szomszédos kategória-párra B "hatását" (jellemző
+      színe, blend-mód, elmosási sugár — ld. MAT_INFLUENCE, mindegyik
+      anyagnak saját "személyisége" van) ráUsztjuk A területére, a
+      B-hez való közelséggel arányos, sima erősséggel.
+   3) a szemcsés anyagoknál (kő/út/föld/homok) pár apró, ritkás morzsa
+      is átkerül a határ mentén (kő=vaskosabb kavics, homok=finom
+      szemcse, stb. — anyagonként más méret/sűrűség).
+   FONTOS: ez egy KÜLÖN, a talaj fölötti "blend" canvas/réteg (bctx),
+   NEM a talaj-raszterbe sütve! Ezért minden újraszámoláskor előbb
+   TÖRÖLJÜK az érintett sávot, és a JELENLEGI rács-állapotból építjük
+   újra — így a hatás SOSEM halmozódik (ez okozta a korábbi verzió
+   "opacity bug"-ját: egymást átfedő festések után egyes sávok többször
+   kaptak tintet, ezért lettek szembeötlően sötétebb/élesebb foltok).
+   MEGJEGYZÉS: a rács NEM kerül mentésre — mentéskor belesimítjuk a
+   blend-réteget a talaj-PNG-be (ld. serialize()).
+========================================================= */
+const EDGE_CELL=24, EDGE_GRIDN=Math.ceil(WORLD/EDGE_CELL);
+const typeGrid = new Uint8Array(EDGE_GRIDN*EDGE_GRIDN);
+const blend = document.createElement('canvas'); blend.width=WORLD; blend.height=WORLD;
+const bctx = blend.getContext('2d');
+const blendNode = new Konva.Image({ image:blend, x:0, y:0, width:WORLD, height:WORLD, listening:false });
+terrainLayer.add(blendNode);
+const CAT_LIST = ['grass','wood','water','stone','road','dirt','sand','brick'];
+const TEX_KEY_LIST = Object.keys(TEXTURES);
+function categoryOf(texKey){ if(!texKey) return 0; const i=CAT_LIST.indexOf(texKey.split('_')[0]); return i<0?0:i+1; }
+function texIndexOf(texKey){ const i=TEX_KEY_LIST.indexOf(texKey); return i<0?0:i+1; }
+function gridIdx(gx,gy){ return gy*EDGE_GRIDN+gx; }
+// Cella-KÖZÉPPONT teszttel jelöl (nem "minden cella, amit a bbox érint") — enélkül két,
+// pontosan egymáshoz illesztett téglalap (pl. fű vége = víz eleje ugyanazon a koordinátán)
+// UGYANAZT a határ-menti rács-sort próbálta igényelni, a később festett felülírta -> a
+// szomszédos anyag hatásköre egy teljes cellányit (24px) rossz helyre tolódott.
+function markGridRect(x0,y0,x1,y1,idx){
+  const gx0=Math.max(0,Math.floor(x0/EDGE_CELL)), gx1=Math.min(EDGE_GRIDN-1,Math.floor(x1/EDGE_CELL));
+  const gy0=Math.max(0,Math.floor(y0/EDGE_CELL)), gy1=Math.min(EDGE_GRIDN-1,Math.floor(y1/EDGE_CELL));
+  for(let gy=gy0; gy<=gy1; gy++) for(let gx=gx0; gx<=gx1; gx++){
+    const cx=(gx+0.5)*EDGE_CELL, cy=(gy+0.5)*EDGE_CELL;
+    if(cx>=x0 && cx<x1 && cy>=y0 && cy<y1) typeGrid[gridIdx(gx,gy)]=idx;
+  }
+}
+// Szabálytalan folt (poligon) esetén NEM a bbox-ot jelöljük — csak azokat a cellákat, amiknek a
+// középpontja ténylegesen a sokszögön belül esik. Enélkül a bbox sarkai (ahol valójában nincs
+// festés) hamis anyaghatárként jelentek meg -> szögletes "tömb" műtermékek a kerek/szerves folt szélén.
+function markGridPoly(pts,idx){
+  const xs=pts.filter((_,i)=>i%2===0), ys=pts.filter((_,i)=>i%2===1);
+  const x0=Math.min(...xs), x1=Math.max(...xs), y0=Math.min(...ys), y1=Math.max(...ys);
+  const gx0=Math.max(0,Math.floor(x0/EDGE_CELL)), gx1=Math.min(EDGE_GRIDN-1,Math.floor(x1/EDGE_CELL));
+  const gy0=Math.max(0,Math.floor(y0/EDGE_CELL)), gy1=Math.min(EDGE_GRIDN-1,Math.floor(y1/EDGE_CELL));
+  for(let gy=gy0; gy<=gy1; gy++) for(let gx=gx0; gx<=gx1; gx++){
+    const px=(gx+0.5)*EDGE_CELL, py=(gy+0.5)*EDGE_CELL; let inside=false;
+    for(let i=0,j=pts.length-2;i<pts.length;j=i,i+=2){ const xi=pts[i],yi=pts[i+1],xj=pts[j],yj=pts[j+1];
+      if(((yi>py)!==(yj>py)) && (px < (xj-xi)*(py-yi)/(yj-yi)+xi)) inside=!inside; }
+    if(inside) typeGrid[gridIdx(gx,gy)]=idx;
+  }
+}
+// Valódi kör szerint jelöli a rácsot (nem a bbox-szal) — enélkül a kerek stampek sarkai
+// tévesen "anyagosnak" tűntek a rácsban, ez okozta a szögletes él-műtermékeket.
+function markGridCircle(cx,cy,r,idx){
+  const gx0=Math.max(0,Math.floor((cx-r)/EDGE_CELL)), gx1=Math.min(EDGE_GRIDN-1,Math.floor((cx+r)/EDGE_CELL));
+  const gy0=Math.max(0,Math.floor((cy-r)/EDGE_CELL)), gy1=Math.min(EDGE_GRIDN-1,Math.floor((cy+r)/EDGE_CELL));
+  const r2=(r*0.72)*(r*0.72); // kicsit a sugáron belülre húzzuk, hogy a fedett cella tényleg jórészt festett legyen
+  for(let gy=gy0; gy<=gy1; gy++) for(let gx=gx0; gx<=gx1; gx++){
+    const ccx=(gx+0.5)*EDGE_CELL, ccy=(gy+0.5)*EDGE_CELL, dx=ccx-cx, dy=ccy-cy;
+    if(dx*dx+dy*dy<=r2) typeGrid[gridIdx(gx,gy)]=idx;
+  }
+}
+function sideRect(gx,gy,dir,side,thick){ const c=EDGE_CELL, t=thick;
+  if(dir==='r'){ const bx=(gx+1)*c, by=gy*c;
+    return side==='A' ? {x:bx-t,y:by,w:t,h:c} : {x:bx,y:by,w:t,h:c}; }
+  const bx=gx*c, by=(gy+1)*c;
+  return side==='A' ? {x:bx,y:by-t,w:c,h:t} : {x:bx,y:by,w:c,h:t};
+}
+function grainSide(r,grain,count){ for(let i=0;i<count;i++){ const x=r.x+Math.random()*r.w, y=r.y+Math.random()*r.h;
+  const rad=grain.r[0]+Math.random()*(grain.r[1]-grain.r[0]);
+  bctx.beginPath(); bctx.arc(x,y,rad,0,Math.PI*2); bctx.fillStyle=`rgba(${grain.c},${0.45+Math.random()*0.35})`; bctx.fill(); } }
+// Minden anyagnak SAJÁT "személyisége": jellemző színe, ahogy ez a szín rákeveredik a
+// szomszédra (blend-mód — a víz pl. sötétít/multiply, a homok világosít/screen, mintha
+// porként szóródna), meddig ér el az elmosott hatása (blur), és milyen "morzsát" hagy hátra
+// (csak a ténylegesen szemcsés anyagoknál — a víz és a fű nem szór darabkát).
+const MAT_INFLUENCE = {
+  grass: { color:'18,42,20',   mode:'multiply',    alpha:0.32, blur:15, grain:null },
+  water: { color:'4,14,18',    mode:'multiply',    alpha:0.78, blur:30, grain:null }, // messzire elmosódó, MÉLY sötétedés — "vizesedés" (user kérésére erősítve: fű+homok is jobban sötétedjen mellette)
+  stone: { color:'150,150,144',mode:'source-over', alpha:0.26, blur:13, grain:{c:'146,146,140', r:[1.1,2.6]} }, // vaskosabb kavics
+  road:  { color:'150,140,112',mode:'source-over', alpha:0.24, blur:14, grain:{c:'160,150,120', r:[0.9,2]} },
+  dirt:  { color:'92,66,42',   mode:'multiply',    alpha:0.3,  blur:14, grain:{c:'112,82,52', r:[1,2.2]} }, // "foltosít", sötétebbre old
+  sand:  { color:'232,214,164',mode:'screen',      alpha:0.5,  blur:20, grain:{c:'236,220,172', r:[0.5,1.2]} }, // finom, világosító por
+  brick: { color:'140,84,66',  mode:'source-over', alpha:0.2,  blur:11, grain:{c:'150,90,70', r:[0.9,1.8]} }, // épített anyag: rövid hatótáv
+};
+// Kis, cella-felbontású fekete/fehér maszkot épít egy kategóriára a megadott rács-tartományban,
+// majd világ-pixelre nagyítva ELMOSSA (bilineáris nagyítás + CSS blur) — ez adja a folytonos,
+// sima "közelség-felhőt", aminek NINCS köze a 24px-es rács szögletességéhez.
+function worldMaskFor(cat,gx0,gy0,gx1,gy1,blurPx){
+  const cw=gx1-gx0+1, ch=gy1-gy0+1;
+  const small=document.createElement('canvas'); small.width=cw; small.height=ch;
+  const sc=small.getContext('2d'); const id=sc.createImageData(cw,ch); let any=false;
+  for(let gy=gy0; gy<=gy1; gy++) for(let gx=gx0; gx<=gx1; gx++){
+    const idx=typeGrid[gridIdx(gx,gy)]; const c=idx?CAT_LIST[categoryOf(TEX_KEY_LIST[idx-1])-1]:null;
+    const on=c===cat; if(on) any=true;
+    const p=((gy-gy0)*cw+(gx-gx0))*4; id.data[p]=255;id.data[p+1]=255;id.data[p+2]=255;id.data[p+3]=on?255:0;
+  }
+  if(!any) return null;
+  sc.putImageData(id,0,0);
+  const wpx=cw*EDGE_CELL, hpx=ch*EDGE_CELL;
+  const big=document.createElement('canvas'); big.width=wpx; big.height=hpx;
+  const bc=big.getContext('2d'); bc.imageSmoothingEnabled=true; if(blurPx) bc.filter=`blur(${blurPx}px)`;
+  bc.drawImage(small,0,0,wpx,hpx);
+  return {canvas:big, x:gx0*EDGE_CELL, y:gy0*EDGE_CELL, w:wpx, h:hpx};
+}
+// srcCat "hatását" (jellemző színét, elmosva a hozzá való közelséggel arányosan) ráfesti
+// dstCat TÉNYLEGES (nem elmosott) területére — a bctx blend-rétegre, nem a talajra.
+function compositeInfluence(srcCat,dstCat,getBlurred,getHard){
+  const inf=MAT_INFLUENCE[srcCat]; if(!inf) return;
+  const srcMask=getBlurred(srcCat); if(!srcMask) return;
+  const dstMask=getHard(dstCat); if(!dstMask) return;
+  const tmp=document.createElement('canvas'); tmp.width=srcMask.w; tmp.height=srcMask.h;
+  const tc=tmp.getContext('2d');
+  tc.fillStyle=`rgb(${inf.color})`; tc.fillRect(0,0,tmp.width,tmp.height);
+  tc.globalCompositeOperation='destination-in'; tc.drawImage(srcMask.canvas,0,0);
+  tc.globalCompositeOperation='destination-in'; tc.drawImage(dstMask.canvas,0,0);
+  bctx.save(); bctx.globalAlpha=inf.alpha; bctx.globalCompositeOperation=inf.mode;
+  bctx.drawImage(tmp, srcMask.x, srcMask.y); bctx.restore();
+}
+// Ugyanaz a maszk-technika, de EGY KATEGÓRIÁN BELÜLI variáns-váltásra (pl. két fűfajta határa):
+// itt nem egy jellemző SZÍNT, hanem magát a MÁSIK VARIÁNS FOTÓ-TEXTÚRÁJÁT "oldjuk fel" lágyan
+// a szomszéd területére — így a két fű-fotó valóban egymásba mosódik, nem éles vágás van köztük.
+function worldMaskForKey(texKey,gx0,gy0,gx1,gy1,blurPx){
+  const idx=texIndexOf(texKey), cw=gx1-gx0+1, ch=gy1-gy0+1;
+  const small=document.createElement('canvas'); small.width=cw; small.height=ch;
+  const sc=small.getContext('2d'); const id=sc.createImageData(cw,ch); let any=false;
+  for(let gy=gy0; gy<=gy1; gy++) for(let gx=gx0; gx<=gx1; gx++){
+    const on=typeGrid[gridIdx(gx,gy)]===idx; if(on) any=true;
+    const p=((gy-gy0)*cw+(gx-gx0))*4; id.data[p]=255;id.data[p+1]=255;id.data[p+2]=255;id.data[p+3]=on?255:0;
+  }
+  if(!any) return null;
+  sc.putImageData(id,0,0);
+  const wpx=cw*EDGE_CELL, hpx=ch*EDGE_CELL;
+  const big=document.createElement('canvas'); big.width=wpx; big.height=hpx;
+  const bc=big.getContext('2d'); bc.imageSmoothingEnabled=true; if(blurPx) bc.filter=`blur(${blurPx}px)`;
+  bc.drawImage(small,0,0,wpx,hpx);
+  return {canvas:big, x:gx0*EDGE_CELL, y:gy0*EDGE_CELL, w:wpx, h:hpx};
+}
+const VARIANT_BLUR=18, VARIANT_ALPHA=0.55;
+function compositeVariantDissolve(srcKey,dstKey,getBlurredKey,getHardKey){
+  const srcMask=getBlurredKey(srcKey); if(!srcMask) return;
+  const dstMask=getHardKey(dstKey); if(!dstMask) return;
+  const tmp=document.createElement('canvas'); tmp.width=srcMask.w; tmp.height=srcMask.h;
+  const tc=tmp.getContext('2d');
+  tc.fillStyle=tc.createPattern(texImg(srcKey),'repeat'); tc.fillRect(0,0,tmp.width,tmp.height);
+  tc.globalCompositeOperation='destination-in'; tc.drawImage(srcMask.canvas,0,0);
+  tc.globalCompositeOperation='destination-in'; tc.drawImage(dstMask.canvas,0,0);
+  bctx.save(); bctx.globalAlpha=VARIANT_ALPHA; bctx.globalCompositeOperation='source-over';
+  bctx.drawImage(tmp, srcMask.x, srcMask.y); bctx.restore();
+}
+function applyEdgeBlends(x0,y0,x1,y1){
+  const pad=3; // extra rács-margó, hogy a blur "beázhasson" a régió szélén is, ne vágódjon le élesen
+  const gx0=Math.max(0,Math.floor(x0/EDGE_CELL)-pad), gx1=Math.min(EDGE_GRIDN-1,Math.floor(x1/EDGE_CELL)+pad);
+  const gy0=Math.max(0,Math.floor(y0/EDGE_CELL)-pad), gy1=Math.min(EDGE_GRIDN-1,Math.floor(y1/EDGE_CELL)+pad);
+  // Idempotencia: a blend-réteg CSAK a jelenlegi rács-állapotot tükrözi — előbb töröljük az
+  // érintett sávot, aztán frissen építjük fel. Így SOSEM halmozódik (nincs "opacity bug").
+  bctx.clearRect(gx0*EDGE_CELL, gy0*EDGE_CELL, (gx1-gx0+1)*EDGE_CELL, (gy1-gy0+1)*EDGE_CELL);
+  const present=new Set();
+  for(let gy=gy0; gy<=gy1; gy++) for(let gx=gx0; gx<=gx1; gx++){ const idx=typeGrid[gridIdx(gx,gy)]; if(!idx) continue;
+    const c=CAT_LIST[categoryOf(TEX_KEY_LIST[idx-1])-1]; if(c!=='wood') present.add(c); }
+  const cats=[...present];
+  if(cats.length>1){
+    const blurredCache={}, hardCache={};
+    const getBlurred=c=> c in blurredCache ? blurredCache[c] : (blurredCache[c]=worldMaskFor(c,gx0,gy0,gx1,gy1,MAT_INFLUENCE[c].blur));
+    const getHard   =c=> c in hardCache    ? hardCache[c]    : (hardCache[c]=worldMaskFor(c,gx0,gy0,gx1,gy1,0));
+    for(let i=0;i<cats.length;i++) for(let j=0;j<cats.length;j++){ if(i!==j) compositeInfluence(cats[i],cats[j],getBlurred,getHard); }
+  }
+  // Szemcse (különböző ANYAGOK határán) + variáns-pár gyűjtés (ugyanazon anyagcsalád két
+  // fotója közt, pl. két fűfajta) — cella-határonként, csak a ténylegesen szomszédos párokra.
+  const variantPairs=new Set();
+  for(let gy=gy0; gy<gy1; gy++) for(let gx=gx0; gx<gx1; gx++){
+    const here=typeGrid[gridIdx(gx,gy)]; if(!here) continue; const hereCat=CAT_LIST[categoryOf(TEX_KEY_LIST[here-1])-1];
+    if(hereCat==='wood') continue;
+    if(gx+1<EDGE_GRIDN){ const there=typeGrid[gridIdx(gx+1,gy)]; if(there && there!==here){ const thereCat=CAT_LIST[categoryOf(TEX_KEY_LIST[there-1])-1];
+      if(thereCat==='wood'){ /* fa padló kimarad */ }
+      else if(thereCat===hereCat){ variantPairs.add(TEX_KEY_LIST[here-1]+'|'+TEX_KEY_LIST[there-1]); }
+      else { const mH=MAT_INFLUENCE[hereCat], mT=MAT_INFLUENCE[thereCat];
+        if(mT.grain) grainSide(sideRect(gx,gy,'r','A',13), mT.grain, 2);
+        if(mH.grain) grainSide(sideRect(gx,gy,'r','B',13), mH.grain, 2); } } }
+    if(gy+1<EDGE_GRIDN){ const there=typeGrid[gridIdx(gx,gy+1)]; if(there && there!==here){ const thereCat=CAT_LIST[categoryOf(TEX_KEY_LIST[there-1])-1];
+      if(thereCat==='wood'){ /* fa padló kimarad */ }
+      else if(thereCat===hereCat){ variantPairs.add(TEX_KEY_LIST[here-1]+'|'+TEX_KEY_LIST[there-1]); }
+      else { const mH=MAT_INFLUENCE[hereCat], mT=MAT_INFLUENCE[thereCat];
+        if(mT.grain) grainSide(sideRect(gx,gy,'b','A',13), mT.grain, 2);
+        if(mH.grain) grainSide(sideRect(gx,gy,'b','B',13), mH.grain, 2); } } }
+  }
+  if(variantPairs.size){
+    const vBlurredCache={}, vHardCache={};
+    const getBlurredKey=k=> k in vBlurredCache ? vBlurredCache[k] : (vBlurredCache[k]=worldMaskForKey(k,gx0,gy0,gx1,gy1,VARIANT_BLUR));
+    const getHardKey   =k=> k in vHardCache    ? vHardCache[k]    : (vHardCache[k]=worldMaskForKey(k,gx0,gy0,gx1,gy1,0));
+    variantPairs.forEach(pair=>{ const [a,b]=pair.split('|');
+      compositeVariantDissolve(a,b,getBlurredKey,getHardKey);
+      compositeVariantDissolve(b,a,getBlurredKey,getHardKey); });
+  }
+  terrDraw();
+}
+
+let painting=false, rawBuf=[], lastPaint=null, paintBBox=null;
+// Egy pont "lestampolása": radírnál eraseStamp(x,y,size), ecsetnél paintStamp(x,y,tex,size).
+// (Korábban közös hívás volt, ami a radírnak a textúra-nevet adta méretként -> NaN sugár -> nem törölt.)
+function stampAt(x,y){
+  if(mode==='eraser'){ eraseStamp(x,y,brushSize); markGridCircle(x,y,brushSize/2,0); }
+  else { paintStamp(x,y,currentTex,brushSize); markGridCircle(x,y,brushSize/2,texIndexOf(currentTex)); }
+  const r=brushSize;
+  paintBBox = paintBBox ? {x0:Math.min(paintBBox.x0,x-r),y0:Math.min(paintBBox.y0,y-r),x1:Math.max(paintBBox.x1,x+r),y1:Math.max(paintBBox.y1,y+r)} : {x0:x-r,y0:y-r,x1:x+r,y1:y+r};
+}
+function beginPaint(){ painting=true; rawBuf=[]; paintBBox=null; const p=worldPointer(); rawBuf.push(p); lastPaint=p; stampAt(p.x,p.y); terrDraw(); }
+function movePaint(){ if(!painting)return; const p=worldPointer(); rawBuf.push(p); if(rawBuf.length>4)rawBuf.shift();
+  const s={x:0,y:0}; rawBuf.forEach(q=>{s.x+=q.x;s.y+=q.y}); s.x/=rawBuf.length; s.y/=rawBuf.length;
+  const d=Math.hypot(s.x-lastPaint.x,s.y-lastPaint.y), step=Math.max(2,brushSize*0.2), n=Math.floor(d/step);
+  for(let i=1;i<=n;i++){ const t=i/n; stampAt(lastPaint.x+(s.x-lastPaint.x)*t, lastPaint.y+(s.y-lastPaint.y)*t); }
+  if(n>0) lastPaint=s; terrDraw();
+}
+function endPaint(){ if(painting){ const p=worldPointer(); stampAt(p.x,p.y); terrDraw(); if(paintBBox) applyEdgeBlends(paintBBox.x0,paintBBox.y0,paintBBox.x1,paintBBox.y1); } painting=false; updateCount(); }
+
+/* terület / folt / fal draftok */
+let draftStart=null, draftRect=null, polyPts=[], polyPreview=null, wallPts=[], wallPreview=null, shiftDown=false;
+let wallMat='brick', wallThick=18;
+function refreshPolyPreview(extra){
+  clearDrafts();
+  const pts=[...polyPts]; if(extra)pts.push(extra.x,extra.y);
+  polyPreview=new Konva.Line({points:pts, stroke:'#4ade80', strokeWidth:2, dash:[6,4], closed:polyPts.length>=4, fill:'#4ade8022'});
+  overlay.add(polyPreview);
+  for(let i=0;i<polyPts.length;i+=2){ overlay.add(new Konva.Circle({x:polyPts[i],y:polyPts[i+1],radius:5,fill:'#4ade80',stroke:'#0b1220',strokeWidth:1})); }
+  overlay.batchDraw();
+}
+function finalizePoly(){ if(polyPts.length>=6){ const xs=polyPts.filter((_,i)=>i%2===0), ys=polyPts.filter((_,i)=>i%2===1);
+    const bb={x:Math.min(...xs),y:Math.min(...ys),w:Math.max(...xs)-Math.min(...xs),h:Math.max(...ys)-Math.min(...ys)};
+    paintRegion(m=>{ m.moveTo(polyPts[0],polyPts[1]); for(let i=2;i<polyPts.length;i+=2)m.lineTo(polyPts[i],polyPts[i+1]); m.closePath(); }, bb, currentTex, sharpEdge);
+    markGridPoly(polyPts,texIndexOf(currentTex));
+    applyEdgeBlends(bb.x-EDGE_CELL,bb.y-EDGE_CELL,bb.x+bb.w+EDGE_CELL,bb.y+bb.h+EDGE_CELL); }
+  polyPts=[]; polyPreview=null; clearDrafts(); }
+function snapP(p){ return { x:Math.round(p.x/CELL)*CELL, y:Math.round(p.y/CELL)*CELL }; }
+function angleLock(from,to){ const dx=to.x-from.x, dy=to.y-from.y, len=Math.hypot(dx,dy); let a=Math.atan2(dy,dx); a=Math.round(a/(Math.PI/4))*(Math.PI/4); return {x:from.x+Math.cos(a)*len,y:from.y+Math.sin(a)*len}; }
+function makeWallSegment(x,y,len,rotDeg,matKey,opt={}){
+  const th=opt.thick||wallThick;
+  const seg=new Konva.Rect({ x,y, width:len, height:th, offsetY:th/2, rotation:rotDeg, scaleX:opt.scaleX||1, scaleY:opt.scaleY||1,
+    fillPatternImage:wallTexImg(matKey), fillPatternRepeat:'repeat', fillPatternScale:{x:1.4,y:1.4}, stroke:'#00000040', strokeWidth:1, draggable:(mode==='select') });
+  seg.setAttr('kind','wall'); seg.setAttr('mat',matKey); seg.setAttr('thick',th);
+  attachSelectable(seg); mainLayer.add(seg);
+  seg.moveToBottom(); // a fal SOSE takarja el az elemeket (fa, bútor, stb.) — mindig a réteg aljára kerül
+  tr.moveToTop(); return seg;
+}
+function refreshWallPreview(cur){ clearDrafts();
+  const pts=wallPts.map(p=>({...p})); if(cur){ let c=cur; if(shiftDown&&pts.length)c=angleLock(pts[pts.length-1],cur); pts.push(c); }
+  const flat=[]; pts.forEach(p=>flat.push(p.x,p.y)); wallPreview=new Konva.Line({points:flat,stroke:'#f0d488',strokeWidth:4,dash:[8,5]}); overlay.add(wallPreview);
+  pts.forEach(p=> overlay.add(new Konva.Circle({x:p.x,y:p.y,radius:5,fill:'#f0d488',stroke:'#0b1220',strokeWidth:1}))); overlay.batchDraw(); }
+// Oszlop (pillar) minden TÖRÉSPONTBA (2+ fal-szakasz találkozása) — ugyanazt a fal-textúrát
+// használja mint a szakaszok, ezért anyag szerint automatikusan illeszkedik (fa/kő/tégla).
+// Ez fedi el a törésnél a két ferde téglalap-vég csúnya, nem-illeszkedő varratát.
+function makeWallPillar(x,y,thick,matKey){
+  const size=thick*1.7;
+  const p=new Konva.Rect({ x,y, width:size, height:size, offsetX:size/2, offsetY:size/2,
+    fillPatternImage:wallTexImg(matKey), fillPatternRepeat:'repeat', fillPatternScale:{x:1.4,y:1.4}, stroke:'#00000050', strokeWidth:1, draggable:(mode==='select') });
+  p.setAttr('kind','wall'); p.setAttr('mat',matKey); p.setAttr('thick',thick);
+  attachSelectable(p); mainLayer.add(p); p.moveToBottom(); tr.moveToTop(); return p;
+}
+function finalizeWall(){
+  for(let i=0;i<wallPts.length-1;i++){ const a=wallPts[i],b=wallPts[i+1],len=Math.hypot(b.x-a.x,b.y-a.y); if(len<2)continue;
+    makeWallSegment(a.x,a.y,len,Math.atan2(b.y-a.y,b.x-a.x)*180/Math.PI,wallMat,{thick:wallThick}); }
+  for(let i=1;i<wallPts.length-1;i++){ makeWallPillar(wallPts[i].x,wallPts[i].y,wallThick,wallMat); }
+  wallPts=[]; if(wallPreview){wallPreview.destroy();wallPreview=null;} overlay.destroyChildren(); overlay.batchDraw(); mainLayer.batchDraw(); updateCount(); }
+
+/* =========================================================
+   STAGE ESEMÉNYEK
+========================================================= */
+stage.on('mousedown touchstart', ()=>{
+  if(mode==='brush'||mode==='eraser'){ beginPaint(); }
+  else if(mode==='terrain-rect'){ draftStart=worldPointer();
+    draftRect=new Konva.Rect({x:draftStart.x,y:draftStart.y,width:0,height:0,stroke:'#4ade80',strokeWidth:2,dash:[6,4],fill:'#4ade8022'}); overlay.add(draftRect); overlay.batchDraw(); }
+});
+stage.on('mousemove touchmove', ()=>{
+  if(mode==='stamp'){ moveGhost(); return; }
+  if(mode==='brush'||mode==='eraser') updateRing();
+  if(painting){ movePaint(); }
+  else if(mode==='terrain-rect' && draftRect){ const p=worldPointer();
+    draftRect.position({x:Math.min(p.x,draftStart.x),y:Math.min(p.y,draftStart.y)}); draftRect.size({width:Math.abs(p.x-draftStart.x),height:Math.abs(p.y-draftStart.y)}); overlay.batchDraw(); }
+  else if(mode==='terrain-poly' && polyPts.length){ refreshPolyPreview(worldPointer()); }
+  else if(mode==='wall' && wallPts.length){ refreshWallPreview(worldPointer()); }
+});
+function finalizeRect(){ if(!draftRect)return; const x=draftRect.x(),y=draftRect.y(),w=draftRect.width(),h=draftRect.height();
+  draftRect.destroy(); draftRect=null; overlay.batchDraw();
+  if(w>8&&h>8){ paintRegion(m=>m.rect(x,y,w,h),{x,y,w,h},currentTex,sharpEdge);
+    markGridRect(x,y,x+w,y+h,texIndexOf(currentTex));
+    applyEdgeBlends(x-EDGE_CELL,y-EDGE_CELL,x+w+EDGE_CELL,y+h+EDGE_CELL); }
+  updateCount(); }
+stage.on('mouseup touchend', ()=>{ if(painting){ endPaint(); } else if(mode==='terrain-rect'){ finalizeRect(); } });
+// Ha a vásznon KÍVÜL engeded fel az egeret, a stage nem kap 'mouseup'-ot -> a
+// draft-téglalap / festés bennragadna. Globális felengedés lezárja őket.
+window.addEventListener('mouseup', ()=>{ if(painting) endPaint(); if(draftRect) finalizeRect(); });
+window.addEventListener('blur', ()=>{ if(painting) endPaint(); if(draftRect){ draftRect.destroy(); draftRect=null; overlay.batchDraw(); } });
+stage.on('click tap', e=>{
+  if(mode==='stamp'){ placeStamp(); return; }
+  if(mode==='select'){ if(e.target===stage) select(null); return; }
+  const p=worldPointer();
+  if(mode==='terrain-poly'){ polyPts.push(p.x,p.y); refreshPolyPreview(); }
+  else if(mode==='wall'){ let np=snapP(p); if(shiftDown&&wallPts.length)np=snapP(angleLock(wallPts[wallPts.length-1],p)); wallPts.push(np); refreshWallPreview(); }
+});
+stage.on('dblclick dbltap', ()=>{ if(mode==='terrain-poly')finalizePoly(); else if(mode==='wall')finalizeWall(); });
+function cancelDraft(){ polyPts=[]; wallPts=[]; painting=false; polyPreview=null; wallPreview=null; draftRect=null; clearDrafts(); }
+
+document.addEventListener('keydown', e=>{
+  if(e.key==='Shift') shiftDown=true;
+  if(e.key==='Enter'){ if(mode==='terrain-poly')finalizePoly(); else if(mode==='wall')finalizeWall(); }
+  else if(e.key==='Escape'){ if(mode==='stamp'){ setMode('select'); } else cancelDraft(); }
+  else if((e.key==='Delete'||e.key==='Backspace') && mode==='select' && selected()){ e.preventDefault(); deleteSelected(); }
+  else if((e.key==='r'||e.key==='R') && mode==='stamp'){ stampRot=(stampRot+90)%360; moveGhost(); }
+  else if((e.key==='r'||e.key==='R') && mode==='select' && selected()){ const n=selected(); n.rotation((Math.round(n.rotation()/90)*90+90)%360); mainLayer.batchDraw(); }
+  else if((e.key==='v'||e.key==='V') && mode!=='stamp') setMode('select');
+});
+document.addEventListener('keyup', e=>{ if(e.key==='Shift') shiftDown=false; });
+
+/* =========================================================
+   MŰVELETEK / PAN-ZOOM
+========================================================= */
+function deleteSelected(){ const n=selected(); if(n){ n.destroy(); select(null); mainLayer.batchDraw(); updateCount(); } }
+function bringFront(){ const n=selected(); if(n){ n.moveToTop(); tr.moveToTop(); mainLayer.batchDraw(); } }
+function sendBack(){ const n=selected(); if(n){ n.moveToBottom(); mainLayer.batchDraw(); } }
+let gridOn=true;
+document.getElementById('gridBtn').onclick=function(){ gridOn=!gridOn; gridLayer.visible(gridOn); gridLayer.batchDraw(); this.classList.toggle('on',gridOn); };
+function viewportCenterWorld(){ const s=stage.scaleX(); return { x:(stage.width()/2-stage.x())/s, y:(stage.height()/2-stage.y())/s }; }
+function resetView(){ const pad=40, sc=Math.min((stage.width()-pad)/WORLD,(stage.height()-pad)/WORLD); stage.scale({x:sc,y:sc}); stage.position({x:(stage.width()-WORLD*sc)/2,y:(stage.height()-WORLD*sc)/2}); stage.batchDraw(); }
+function zoomAt(ns, cx, cy){ const old=stage.scaleX(); const to={x:(cx-stage.x())/old,y:(cy-stage.y())/old}; ns=Math.max(0.15,Math.min(4,ns)); stage.scale({x:ns,y:ns}); stage.position({x:cx-to.x*ns,y:cy-to.y*ns}); stage.batchDraw(); }
+function zoomBy(f){ zoomAt(stage.scaleX()*f, stage.width()/2, stage.height()/2); }
+stage.on('wheel', e=>{ e.evt.preventDefault();
+  if(mode==='stamp' && stampKey){ stampScale=Math.max(0.12,Math.min(24, stampScale*(e.evt.deltaY>0?0.88:1.14))); moveGhost(); return; }
+  const pt=stage.getPointerPosition(); zoomAt(stage.scaleX()*(e.evt.deltaY>0?1/1.1:1.1), pt.x, pt.y);
+});
+
+/* =========================================================
+   MENTÉS / BETÖLTÉS
+========================================================= */
+function serialize(){ const items=[];
+  mainLayer.getChildren().forEach(n=>{ const k=n.getAttr('kind');
+    if(k==='asset') items.push({t:'asset',key:n.getAttr('assetKey'),x:n.x(),y:n.y(),rotation:n.rotation(),sx:n.scaleX(),sy:n.scaleY()});
+    else if(k==='door') items.push({t:'door',key:n.getAttr('assetKey'),x:n.x(),y:n.y(),rotation:n.getAttr('baseRotation'),isOpen:n.getAttr('isOpen'),sx:n.scaleX(),sy:n.scaleY()});
+    else if(k==='wall') items.push({t:'wall',mat:n.getAttr('mat'),thick:n.getAttr('thick'),x:n.x(),y:n.y(),w:n.width(),rotation:n.rotation(),sx:n.scaleX(),sy:n.scaleY()}); });
+  // Mentéskor a talaj + a KÜLÖN blend-réteg egy PNG-be simul (a blend-réteg csak futásidőben,
+  // a typeGrid-ből számolt segédréteg — a rács maga nem menthető, ld. fenti megjegyzés).
+  const flat=document.createElement('canvas'); flat.width=WORLD; flat.height=WORLD;
+  const fc=flat.getContext('2d'); fc.drawImage(terr,0,0); fc.drawImage(blend,0,0);
+  return { version:3, bg:bgRect.fill(), grid:gridOn, terrain:flat.toDataURL('image/png'), items };
+}
+function deserialize(scene){ mainLayer.destroyChildren(); mainLayer.add(tr); select(null);
+  bgRect.fill(scene.bg||'#3f6b3a'); bgLayer.batchDraw();
+  gridOn=scene.grid!==false; gridLayer.visible(gridOn); document.getElementById('gridBtn').classList.toggle('on',gridOn);
+  tctx.clearRect(0,0,WORLD,WORLD); bctx.clearRect(0,0,WORLD,WORLD); typeGrid.fill(0);
+  if(scene.terrain){ const im=new Image(); im.onload=()=>{ tctx.drawImage(im,0,0); terrDraw(); }; im.src=scene.terrain; }
+  (scene.items||[]).forEach(it=>{ if(it.t==='asset'&&ASSETS[it.key]) makeAsset(it.key,it.x,it.y,{rotation:it.rotation,scaleX:it.sx,scaleY:it.sy});
+    else if(it.t==='door') makeDoor(it.key||'door_plain',it.x,it.y,{rotation:it.rotation,isOpen:it.isOpen,scaleX:it.sx,scaleY:it.sy});
+    else if(it.t==='wall'){ const mat=WALL_TEXTURES[it.mat] ? it.mat : (it.tex && it.tex.startsWith('wood') ? 'wood' : (WALL_TEXTURES[it.tex]?it.tex:'stone'));
+      makeWallSegment(it.x,it.y,it.w,it.rotation,mat,{scaleX:it.sx,scaleY:it.sy,thick:it.thick}); } });
+  mainLayer.batchDraw(); updateCount();
+}
+function saveScene(){ try{ localStorage.setItem('battlemap_poc',JSON.stringify(serialize())); toast('💾 Elmentve'); }catch(e){ toast('⚠️ Túl nagy a mentés'); } }
+function loadScene(){ const raw=localStorage.getItem('battlemap_poc'); if(!raw){toast('Nincs mentés');return;} setMode('select'); deserialize(JSON.parse(raw)); toast('📂 Betöltve'); }
+function clearScene(){ if(!confirm('Üríted a csatateret?'))return; tctx.clearRect(0,0,WORLD,WORLD); bctx.clearRect(0,0,WORLD,WORLD); typeGrid.fill(0); terrDraw(); mainLayer.destroyChildren(); mainLayer.add(tr); select(null); mainLayer.batchDraw(); updateCount(); }
+
+/* =========================================================
+   UI FELÉPÍTÉS
+========================================================= */
+function buildToolRail(){
+  const rail=document.getElementById('toolrail');
+  TOOLS.forEach(t=>{
+    if(t.sep){ const s=document.createElement('div'); s.className='railsep'; rail.appendChild(s); return; }
+    const b=document.createElement('button'); b.className='tool'+(t.mode==='select'?' on':''); b.dataset.mode=t.mode;
+    b.innerHTML=`${t.icon}<span class="lbl">${t.label}</span>`;
+    b.onclick=()=>{ if(t.mode==='stamp'){ setMode('stamp'); if(!stampKey){ setStamp(CATEGORIES[stampCat][0]); } } else setMode(t.mode); };
+    rail.appendChild(b);
+  });
+}
+const LIB_META = {
+  select:{t:'Kijelölés', s:'Mozgat · forgat · méretez'},
+  stamp:{t:'Elemek', s:'Válaszd ki, majd kattints a térképre'},
+  brush:{t:'Ecset', s:'Talaj festése', tip:'Nyomd le és húzd. A fehér gyűrű mutatja a méretet.'},
+  eraser:{t:'Radír', s:'Festett talaj törlése', tip:'Nyomd le és húzd a piros gyűrűvel a törléshez.'},
+  'terrain-rect':{t:'Terület', s:'Textúrázott téglalap', tip:'HÚZZ egy téglalapot → kitölti a kijelölt textúrával.'},
+  'terrain-poly':{t:'Folt', s:'Szabálytalan textúrázott folt', tip:'Kattints a sarokpontokra, majd DUPLA KATT / Enter = kész.'},
+  wall:{t:'Fal', s:'Anyag kiválasztása', tip:'Kattints a sarkokra (Shift = szög-lock), dupla katt / Enter = kész.'},
+};
+function renderLibrary(){
+  const lib=document.getElementById('library'); const meta=LIB_META[mode]||LIB_META.select;
+  const head=`<div class="lib-head"><div class="lib-title">${meta.t}</div><div class="lib-sub">${meta.s}</div></div>`;
+  const tip = meta.tip ? `<div class="lib-tip">💡 ${meta.tip}</div>` : '';
+  const texGridHTML = `<div class="lib-sec-title">Textúra</div><div class="swgrid" id="texGrid"></div>`;
+  const brushHTML = `<div class="field"><label>Ecset méret <span>${brushSize}px</span></label><input type="range" id="brushSize" min="24" max="360" value="${brushSize}"></div>`;
+  const bgHTML = `<div class="lib-sec-title">Alap háttér</div><div class="bgrow" id="bgRow"></div>`;
+  const sharpHTML = `<label class="field" style="flex-direction:row;align-items:center;gap:8px;cursor:pointer"><input type="checkbox" id="sharpEdgeChk"${sharpEdge?' checked':''}> Éles szél (nincs elmosás)</label>`;
+
+  if(mode==='stamp'){
+    lib.innerHTML=`${head}<div class="lib-body">${tip}
+      <div class="tabs">${Object.keys(CATEGORIES).map(c=>`<div class="tab${c===stampCat?' on':''}" data-cat="${c}">${c}</div>`).join('')}</div>
+      <div class="swgrid" id="stampGrid"></div>
+      <div class="lib-tip" style="margin-top:2px">Görgő = méret · R = forgatás (${stampRot}°) · Esc = kilép</div></div>`;
+    const grid=lib.querySelector('#stampGrid');
+    CATEGORIES[stampCat].forEach(k=>{ const d=document.createElement('div'); d.className='sw el'+(k===stampKey?' on':''); d.title=ASSETS[k].label;
+      d.innerHTML=`<img src="${ASSETS[k].src}"><span class="cap">${ASSETS[k].label}</span>`; d.onclick=()=>setStamp(k); grid.appendChild(d); });
+    lib.querySelectorAll('.tab').forEach(t=> t.onclick=()=>{ stampCat=t.dataset.cat; renderLibrary(); });
+  }
+  else if(mode==='eraser'){
+    lib.innerHTML=`${head}<div class="lib-body">${tip}${brushHTML}</div>`;
+    wireBrush(lib);
+  }
+  else if(mode==='brush' || mode==='terrain-rect' || mode==='terrain-poly'){
+    const showBrush = (mode==='brush');
+    const showSharp = (mode==='terrain-rect' || mode==='terrain-poly');
+    lib.innerHTML=`${head}<div class="lib-body">${tip}${texGridHTML}${showSharp?sharpHTML:''}${showBrush?brushHTML:''}${bgHTML}</div>`;
+    const grid=lib.querySelector('#texGrid');
+    Object.entries(TEXTURES).forEach(([k,def])=>{ const d=document.createElement('div'); d.className='sw'+(k===currentTex?' on':''); d.title=def.label;
+      d.innerHTML=`<img src="${def.src}"><span class="cap">${def.label}</span>`; d.onclick=()=>{ currentTex=k; renderLibrary(); }; grid.appendChild(d); });
+    if(showSharp){ const chk=lib.querySelector('#sharpEdgeChk'); chk.onchange=()=>{ sharpEdge=chk.checked; }; }
+    if(showBrush) wireBrush(lib);
+    const bg=lib.querySelector('#bgRow'); BG_COLORS.forEach(c=>{ const s=document.createElement('div'); s.className='bgsw'; s.style.background=c; s.onclick=()=>{bgRect.fill(c);bgLayer.batchDraw();}; bg.appendChild(s); });
+  }
+  else if(mode==='wall'){
+    // A fal-anyag KÜLÖN a padló-textúráktól (WALL_TEXTURES) + állítható vastagság — új faltól kezdve.
+    lib.innerHTML=`${head}<div class="lib-body">${tip}
+      <div class="lib-sec-title">Fal anyaga</div><div class="swgrid" id="wallMatGrid"></div>
+      <div class="field"><label>Vastagság <span id="wallThickVal">${wallThick}px</span></label><input type="range" id="wallThickRange" min="6" max="48" value="${wallThick}"></div></div>`;
+    const grid=lib.querySelector('#wallMatGrid');
+    Object.entries(WALL_TEXTURES).forEach(([k,def])=>{ const d=document.createElement('div'); d.className='sw'+(k===wallMat?' on':''); d.title=def.label;
+      d.innerHTML=`<img src="${def.src}"><span class="cap">${def.label}</span>`; d.onclick=()=>{ wallMat=k; renderLibrary(); }; grid.appendChild(d); });
+    const thickRange=lib.querySelector('#wallThickRange');
+    thickRange.oninput=()=>{ wallThick=+thickRange.value; lib.querySelector('#wallThickVal').textContent=wallThick+'px'; };
+  }
+  else {
+    const sel=selected();
+    const wallSelected = sel && sel.getAttr('kind')==='wall';
+    const doorSelected = sel && sel.getAttr('kind')==='door';
+    let extra='';
+    if(wallSelected){
+      extra=`<div class="lib-sec-title">Kijelölt fal anyaga</div><div class="swgrid" id="wallMatGridSel"></div>
+        <div class="field"><label>Vastagság <span id="wallThickValSel">${sel.getAttr('thick')}px</span></label><input type="range" id="wallThickRangeSel" min="6" max="48" value="${sel.getAttr('thick')}"></div>`;
+    } else if(doorSelected){
+      const isOpen=sel.getAttr('isOpen');
+      extra=`<button class="tbtn" id="doorToggleBtn" style="width:100%;margin-bottom:8px">🚪 ${isOpen?'Becsukás':'Kinyitás'}</button>`;
+    }
+    lib.innerHTML=`${head}<div class="lib-body"><div class="lib-empty">Kattints egy elemre vagy falra a szerkesztéshez.<br><br>Bal oldalt: fesd a talajt, rakj le elemet, húzz falat.<br><br>Kijelölve: húzd a forgató fogantyút (45°-onként kattan), vagy nyomd meg <b>R</b>-t a pontos 90°-os forgatáshoz.</div>
+      ${extra}
+      <div class="lib-sec-title">Réteg-sorrend</div>
+      <div style="display:flex;gap:6px"><button class="tbtn" onclick="bringFront()" style="flex:1">⬆ Előre</button><button class="tbtn" onclick="sendBack()" style="flex:1">⬇ Hátra</button></div>
+      <button class="tbtn danger" onclick="deleteSelected()">🗑 Kijelölt törlése</button></div>`;
+    if(wallSelected){
+      const grid=lib.querySelector('#wallMatGridSel');
+      Object.entries(WALL_TEXTURES).forEach(([k,def])=>{ const d=document.createElement('div'); d.className='sw'+(k===sel.getAttr('mat')?' on':''); d.title=def.label;
+        d.innerHTML=`<img src="${def.src}"><span class="cap">${def.label}</span>`;
+        d.onclick=()=>{ sel.setAttr('mat',k); sel.fillPatternImage(wallTexImg(k)); sel.getLayer().batchDraw(); renderLibrary(); }; grid.appendChild(d); });
+      const tr2=lib.querySelector('#wallThickRangeSel');
+      tr2.oninput=()=>{ const v=+tr2.value; sel.setAttr('thick',v); sel.height(v); sel.offsetY(v/2); sel.getLayer().batchDraw(); lib.querySelector('#wallThickValSel').textContent=v+'px'; };
+    } else if(doorSelected){
+      lib.querySelector('#doorToggleBtn').onclick=()=>toggleDoor(sel);
+    }
+  }
+}
+function wireBrush(lib){ const bs=lib.querySelector('#brushSize'); if(!bs)return;
+  bs.oninput=()=>{ brushSize=+bs.value; bs.previousElementSibling.querySelector('span').textContent=bs.value+'px'; if(cursorRing){cursorRing.radius(brushSize/2);overlay.batchDraw();} }; }
+function updateCount(){ document.getElementById('countTag').textContent = mainLayer.getChildren(x=>x.getAttr('kind')).length+' elem'; }
+let _tt=null; function toast(m){ const el=document.getElementById('toast'); el.textContent=m; el.style.opacity='1'; clearTimeout(_tt); _tt=setTimeout(()=>el.style.opacity='0',1600); }
+window.addEventListener('resize', ()=>{ stage.width(wrap.clientWidth); stage.height(wrap.clientHeight); stage.batchDraw(); });
+
+/* =========================================================
+   INDÍTÁS
+========================================================= */
+(async ()=>{
+  buildTextures(); // procedurális textúrák generálása (felülírja az SVG-ket)
+  await Promise.all([ ...Object.values(TEXTURES).map(t=>loadImg(t.src)), ...Object.values(ASSETS).map(a=>loadImg(a.src)), ...Object.values(WALL_TEXTURES).map(t=>loadImg(t.src)) ]);
+  // Valós fotó-textúrák (fű/fa/víz/fal) varratmentesítése betöltés után — a cache-ben lecseréljük
+  // az eredeti képet a feldolgozott (offset+heal) canvasra, ezért minden downstream helyen
+  // (paintStamp, paintRegion, fal-kitöltés, könyvtár-thumbnail) automatikusan érvényesül.
+  // A már eleve varratmentes (user-szolgáltatott, AI-generált) textúrákat NEM dolgozzuk fel —
+  // a makeSeamless() a KÖZEPÉRE tenne egy felesleges (és akár árt is) elmosott heal-sávot.
+  TEX_KEY_LIST.filter(k=>!PROCEDURAL_KEYS.includes(k) && !TEXTURES[k].seamless).forEach(k=>{ const src=TEXTURES[k].src; imgCache[src]=makeSeamless(imgCache[src]); });
+  Object.values(WALL_TEXTURES).forEach(t=>{ imgCache[t.src]=makeSeamless(imgCache[t.src]); });
+  buildToolRail(); drawGrid(); resetView(); updateCount(); setMode('select');
+})();
+</script>
+</body>
+</html>
