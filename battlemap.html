@@ -472,7 +472,7 @@ function drawGrid(){
   }
   gridLayer.batchDraw();
 }
-const tr = new Konva.Transformer({ rotateEnabled:true, borderStroke:'#4ade80', anchorStroke:'#4ade80', anchorFill:'#0f172a', anchorSize:9, borderDash:[4,3], rotationSnaps:[0,45,90,135,180,225,270,315], rotationSnapTolerance:8 });
+const tr = new Konva.Transformer({ rotateEnabled:true, borderStroke:'#4ade80', anchorStroke:'#4ade80', anchorFill:'#0f172a', anchorSize:9, borderDash:[4,3], rotationSnaps:[], rotationSnapTolerance:0 });
 mainLayer.add(tr);
 
 /* =========================================================
@@ -482,7 +482,7 @@ let mode='select', currentTex='grass_meadow', brushSize=90, sharpEdge=false;
 let stampKey=null, stampScale=1, stampRot=0, ghost=null, stampCat='Természet';
 const HINTS = {
   'select':'Húzd az ürességet = pan · görgő = zoom · kattints elemre = kijelöl · Delete = töröl',
-  'stamp':'Kattints a térképre = elem lerakása (több is) · görgő = méret · R = forgatás · Esc = kilép',
+  'stamp':'Kattints a térképre = elem lerakása (több is) · görgő = méret · R = 90°-os forgatás · görgő lenyomva + húzás = szabad forgatás · Esc = kilép',
   'brush':'Nyomd le és fesd a talajt — simított vonal, folytonos textúra, lágy szélek',
   'terrain-rect':'Húzz egy területet (lágy szélű, textúrázott padló/kő)',
   'terrain-poly':'Kattints a sarkokra · dupla katt / Enter = kész · Esc = mégse',
@@ -914,13 +914,21 @@ function finalizeWall(){
 /* =========================================================
    STAGE ESEMÉNYEK
 ========================================================= */
-stage.on('mousedown touchstart', ()=>{
+let rotatingGhost=false, rotateStartAngle=0, rotateStartRot=0;
+stage.on('mousedown touchstart', e=>{
+  if(mode==='stamp' && ghost && e.evt && e.evt.button===1){ e.evt.preventDefault();
+    const p=worldPointer(); rotatingGhost=true;
+    rotateStartAngle=Math.atan2(p.y-ghost.y(), p.x-ghost.x())*180/Math.PI; rotateStartRot=stampRot; return; }
   if(mode==='brush'||mode==='eraser'){ beginPaint(); }
   else if(mode==='terrain-rect'){ draftStart=worldPointer();
     draftRect=new Konva.Rect({x:draftStart.x,y:draftStart.y,width:0,height:0,stroke:'#4ade80',strokeWidth:2,dash:[6,4],fill:'#4ade8022'}); overlay.add(draftRect); overlay.batchDraw(); }
 });
 stage.on('mousemove touchmove', ()=>{
-  if(mode==='stamp'){ moveGhost(); return; }
+  if(mode==='stamp'){
+    if(rotatingGhost && ghost){ const p=worldPointer();
+      const ang=Math.atan2(p.y-ghost.y(), p.x-ghost.x())*180/Math.PI;
+      stampRot=((rotateStartRot+(ang-rotateStartAngle))%360+360)%360; }
+    moveGhost(); return; }
   if(mode==='brush'||mode==='eraser') updateRing();
   if(painting){ movePaint(); }
   else if(mode==='terrain-rect' && draftRect){ const p=worldPointer();
@@ -928,6 +936,7 @@ stage.on('mousemove touchmove', ()=>{
   else if(mode==='terrain-poly' && polyPts.length){ refreshPolyPreview(worldPointer()); }
   else if(mode==='wall' && wallPts.length){ refreshWallPreview(worldPointer()); }
 });
+window.addEventListener('mouseup', e=>{ if(e.button===1) rotatingGhost=false; });
 function finalizeRect(){ if(!draftRect)return; const x=draftRect.x(),y=draftRect.y(),w=draftRect.width(),h=draftRect.height();
   draftRect.destroy(); draftRect=null; overlay.batchDraw();
   if(w>8&&h>8){ paintRegion(m=>m.rect(x,y,w,h),{x,y,w,h},currentTex,sharpEdge);
@@ -940,7 +949,7 @@ stage.on('mouseup touchend', ()=>{ if(painting){ endPaint(); } else if(mode==='t
 window.addEventListener('mouseup', ()=>{ if(painting) endPaint(); if(draftRect) finalizeRect(); });
 window.addEventListener('blur', ()=>{ if(painting) endPaint(); if(draftRect){ draftRect.destroy(); draftRect=null; overlay.batchDraw(); } });
 stage.on('click tap', e=>{
-  if(mode==='stamp'){ placeStamp(); return; }
+  if(mode==='stamp'){ if(e.evt && e.evt.button===1) return; placeStamp(); return; }
   if(mode==='select'){ if(e.target===stage) select(null); return; }
   const p=worldPointer();
   if(mode==='terrain-poly'){ polyPts.push(p.x,p.y); refreshPolyPreview(); }
@@ -1041,7 +1050,7 @@ function renderLibrary(){
     lib.innerHTML=`${head}<div class="lib-body">${tip}
       <div class="tabs">${Object.keys(CATEGORIES).map(c=>`<div class="tab${c===stampCat?' on':''}" data-cat="${c}">${c}</div>`).join('')}</div>
       <div class="swgrid" id="stampGrid"></div>
-      <div class="lib-tip" style="margin-top:2px">Görgő = méret · R = forgatás (${stampRot}°) · Esc = kilép</div></div>`;
+      <div class="lib-tip" style="margin-top:2px">Görgő = méret · R = 90° · görgő-húzás = szabad forgatás (${stampRot.toFixed(0)}°) · Esc = kilép</div></div>`;
     const grid=lib.querySelector('#stampGrid');
     CATEGORIES[stampCat].forEach(k=>{ const d=document.createElement('div'); d.className='sw el'+(k===stampKey?' on':''); d.title=ASSETS[k].label;
       d.innerHTML=`<img src="${ASSETS[k].src}"><span class="cap">${ASSETS[k].label}</span>`; d.onclick=()=>setStamp(k); grid.appendChild(d); });
