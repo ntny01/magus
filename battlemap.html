@@ -4,6 +4,30 @@
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <title>Battlemap Szerkesztő — PoC</title>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script>
+  // Admin-kapu: a szerkesztőt csak admin nyithatja meg. A tényleges védelmet a
+  // Supabase RLS adja (ld. security/battlemap_rls.sql) — ez itt csak UX-réteg.
+  const sb = supabase.createClient(
+    'https://nmzdvsnoomusukkczuav.supabase.co',
+    'sb_publishable_JCRzD-ElN1os72wkfX_DKw_PoOTgnYR'
+  );
+  window._sb = sb;
+  window._authReady = (async () => {
+    const { data: { session } } = await sb.auth.getSession();
+    if (!session) { window.location.href = 'login.html'; return null; }
+    const { data: profile } = await sb.from('user_profiles')
+      .select('status, role, display_name').eq('id', session.user.id).single();
+    if (!profile || profile.status !== 'active') {
+      await sb.auth.signOut(); window.location.href = 'login.html'; return null;
+    }
+    if (profile.role !== 'admin') { window.location.href = 'index.html'; return null; }
+    window._userProfile = profile;
+    window._userId = session.user.id;
+    document.documentElement.classList.add('authed');
+    return profile;
+  })();
+</script>
 <script src="https://unpkg.com/konva@9/konva.min.js"></script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
@@ -115,6 +139,52 @@
     border:1px solid rgba(74,222,128,.4);color:var(--green);font-size:.8rem;padding:9px 16px;border-radius:10px;
     opacity:0;transition:opacity .35s;pointer-events:none;box-shadow:0 8px 24px rgba(0,0,0,.4);
   }
+  /* Amíg az admin-ellenőrzés le nem fut, ne villanjon fel a szerkesztő. */
+  body{visibility:hidden}
+  html.authed body{visibility:visible}
+
+  /* ===== Modálok (mentés névvel / betöltés listából) ===== */
+  .mask{
+    position:fixed;inset:0;background:rgba(3,7,18,.72);backdrop-filter:blur(3px);
+    z-index:100;display:none;align-items:center;justify-content:center;padding:20px;
+  }
+  .mask.open{display:flex}
+  .dlg{
+    background:var(--panel);border:1px solid var(--border2);border-radius:14px;
+    width:min(560px,100%);max-height:82vh;display:flex;flex-direction:column;
+    box-shadow:0 24px 60px rgba(0,0,0,.6);overflow:hidden;
+  }
+  .dlg-head{padding:15px 18px 11px;border-bottom:1px solid var(--border)}
+  .dlg-title{font-family:Cinzel,serif;font-size:1rem;color:var(--gold2);letter-spacing:.03em}
+  .dlg-sub{font-size:.72rem;color:var(--muted);margin-top:3px}
+  .dlg-body{padding:15px 18px;overflow:auto}
+  .dlg-foot{padding:12px 18px;border-top:1px solid var(--border);display:flex;gap:8px;justify-content:flex-end}
+  .dlg input[type=text]{
+    width:100%;background:#0b1220;border:1px solid var(--border2);border-radius:9px;
+    color:var(--text);font-size:.85rem;padding:10px 12px;font-family:inherit;
+  }
+  .dlg input[type=text]:focus{outline:none;border-color:var(--gold)}
+  .dlg label{display:block;font-size:.72rem;color:var(--muted);margin-bottom:6px}
+  .maplist{display:flex;flex-direction:column;gap:7px}
+  .maprow{
+    display:flex;gap:11px;align-items:center;padding:8px;border-radius:10px;cursor:pointer;
+    background:var(--panel2);border:1px solid var(--border);transition:.14s;
+  }
+  .maprow:hover{background:var(--panel3);border-color:var(--border2)}
+  .maprow img{width:66px;height:66px;object-fit:cover;border-radius:7px;background:#0b1220;flex:none}
+  .maprow .mi{flex:1;min-width:0}
+  .maprow .mn{font-size:.84rem;color:var(--text);font-weight:600;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+  .maprow .md{font-size:.68rem;color:var(--muted);margin-top:2px}
+  .maprow .mdel{
+    background:none;border:1px solid var(--border2);color:var(--muted);border-radius:7px;
+    padding:5px 8px;cursor:pointer;font-size:.72rem;flex:none;
+  }
+  .maprow .mdel:hover{background:rgba(248,113,113,.14);border-color:rgba(248,113,113,.4);color:#fecaca}
+  .badge{
+    display:inline-block;font-size:.6rem;padding:2px 6px;border-radius:5px;margin-left:6px;
+    background:rgba(74,222,128,.16);color:var(--green);border:1px solid rgba(74,222,128,.35);vertical-align:middle;
+  }
+  .empty{color:var(--muted);font-size:.78rem;text-align:center;padding:22px 0}
 </style>
 </head>
 <body>
@@ -122,9 +192,10 @@
 <div class="topbar">
   <div class="brand">⚔️ Ynev Battlemap <span class="pip">POC</span></div>
   <div class="topsep"></div>
-  <button class="tbtn" onclick="saveScene()">💾 Mentés</button>
-  <button class="tbtn" onclick="loadScene()">📂 Betöltés</button>
+  <button class="tbtn" onclick="openSaveDlg()">💾 Mentés</button>
+  <button class="tbtn" onclick="openLoadDlg()">📂 Betöltés</button>
   <button class="tbtn danger" onclick="clearScene()">🗑 Ürítés</button>
+  <button class="tbtn" onclick="location.href='km_pult.html'">↩ KM Pult</button>
   <div class="spacer"></div>
   <button class="tbtn on" id="gridBtn">▦ Rács</button>
   <button class="tbtn" onclick="resetView()">🎯 Középre</button>
@@ -142,6 +213,39 @@
       <button class="tbtn" onclick="zoomBy(1/1.2)">－</button>
     </div>
     <div class="toast" id="toast"></div>
+  </div>
+</div>
+
+<!-- Mentés névvel -->
+<div class="mask" id="saveMask">
+  <div class="dlg">
+    <div class="dlg-head">
+      <div class="dlg-title">Battlemap mentése</div>
+      <div class="dlg-sub" id="saveSub">Adj nevet a térképnek — ezzel fogod megtalálni a KM Pultban.</div>
+    </div>
+    <div class="dlg-body">
+      <label for="mapNameInput">Térkép neve</label>
+      <input type="text" id="mapNameInput" maxlength="80" placeholder="pl. Elátkozott bánya — 2. szint" autocomplete="off">
+      <label style="display:flex;flex-direction:row;align-items:center;gap:8px;margin-top:13px;cursor:pointer;color:var(--text);font-size:.78rem">
+        <input type="checkbox" id="mapPublished"> Közzététel (a játékosok is látják)
+      </label>
+    </div>
+    <div class="dlg-foot">
+      <button class="tbtn" onclick="closeDlg('saveMask')">Mégse</button>
+      <button class="tbtn on" id="saveConfirmBtn" onclick="confirmSave()">💾 Mentés</button>
+    </div>
+  </div>
+</div>
+
+<!-- Mentett térképek listája -->
+<div class="mask" id="loadMask">
+  <div class="dlg">
+    <div class="dlg-head">
+      <div class="dlg-title">Mentett battlemapek</div>
+      <div class="dlg-sub">Kattints egy térképre a betöltéshez.</div>
+    </div>
+    <div class="dlg-body"><div class="maplist" id="mapList"><div class="empty">Betöltés…</div></div></div>
+    <div class="dlg-foot"><button class="tbtn" onclick="closeDlg('loadMask')">Bezár</button></div>
   </div>
 </div>
 
@@ -1004,16 +1108,165 @@ function deserialize(scene){ mainLayer.destroyChildren(); mainLayer.add(tr); sel
   bgRect.fill(scene.bg||'#3f6b3a'); bgLayer.batchDraw();
   gridOn=scene.grid!==false; gridLayer.visible(gridOn); document.getElementById('gridBtn').classList.toggle('on',gridOn);
   tctx.clearRect(0,0,WORLD,WORLD); bctx.clearRect(0,0,WORLD,WORLD); typeGrid.fill(0);
-  if(scene.terrain){ const im=new Image(); im.onload=()=>{ tctx.drawImage(im,0,0); terrDraw(); }; im.src=scene.terrain; }
+  // crossOrigin: a Storage-ból jövő kép nélküle "megmérgezné" a canvast, és a
+  // következő mentés toDataURL()-je SecurityError-ral elszállna.
+  if(scene.terrain){ const im=new Image(); im.crossOrigin='anonymous';
+    im.onload=()=>{ tctx.drawImage(im,0,0); terrDraw(); };
+    im.onerror=()=>toast('⚠️ A terep-kép nem tölthető be');
+    im.src=scene.terrain; }
   (scene.items||[]).forEach(it=>{ if(it.t==='asset'&&ASSETS[it.key]) makeAsset(it.key,it.x,it.y,{rotation:it.rotation,scaleX:it.sx,scaleY:it.sy});
     else if(it.t==='door') makeDoor(it.key||'door_plain',it.x,it.y,{rotation:it.rotation,isOpen:it.isOpen,scaleX:it.sx,scaleY:it.sy});
     else if(it.t==='wall'){ const mat=WALL_TEXTURES[it.mat] ? it.mat : (it.tex && it.tex.startsWith('wood') ? 'wood' : (WALL_TEXTURES[it.tex]?it.tex:'stone'));
       makeWallSegment(it.x,it.y,it.w,it.rotation,mat,{scaleX:it.sx,scaleY:it.sy,thick:it.thick}); } });
   mainLayer.batchDraw(); updateCount();
 }
-function saveScene(){ try{ localStorage.setItem('battlemap_poc',JSON.stringify(serialize())); toast('💾 Elmentve'); }catch(e){ toast('⚠️ Túl nagy a mentés'); } }
-function loadScene(){ const raw=localStorage.getItem('battlemap_poc'); if(!raw){toast('Nincs mentés');return;} setMode('select'); deserialize(JSON.parse(raw)); toast('📂 Betöltve'); }
-function clearScene(){ if(!confirm('Üríted a csatateret?'))return; tctx.clearRect(0,0,WORLD,WORLD); bctx.clearRect(0,0,WORLD,WORLD); typeGrid.fill(0); terrDraw(); mainLayer.destroyChildren(); mainLayer.add(tr); select(null); mainLayer.batchDraw(); updateCount(); }
+/* =========================================================
+   SUPABASE MENTÉS / BETÖLTÉS
+   - A terep-kép (2560×2560, PNG-ként ~7MB) NEM az adatbázisba megy, hanem a
+     'battlemaps' Storage bucketbe WEBP-ként (~3MB). Az adatbázisban csak a
+     metaadat + az elemek + egy pici bélyegkép van, így a lista-lekérdezés gyors
+     és a DB-kvóta nem fogy el. A Storage-URL állandó — erre tud majd az Ynev
+     térkép hivatkozni.
+   - Cross-origin canvas: a Storage másik domainről jön, ezért a betöltött képnél
+     KÖTELEZŐ a crossOrigin='anonymous', különben a canvas "tainted" lesz és a
+     KÖVETKEZŐ mentés toDataURL()-je biztonsági hibával elszáll.
+========================================================= */
+const BUCKET = 'battlemaps', THUMB_PX = 320;
+let currentMapId = null, currentMapName = '';
+
+// A jelenet metaadata terep-kép NÉLKÜL (ez megy a jsonb oszlopba, pár KB).
+function sceneMeta(){ const s = serialize(); delete s.terrain; return s; }
+
+function terrainBlob(){
+  const c=document.createElement('canvas'); c.width=WORLD; c.height=WORLD;
+  const x=c.getContext('2d'); x.drawImage(terr,0,0); x.drawImage(blend,0,0);
+  return new Promise(res=> c.toBlob(res,'image/webp',0.85));
+}
+
+// Bélyegkép: háttérszín + terep + elemek egy 320px-es képbe.
+function makeThumb(){
+  const prevSel=selected(); select(null);
+  const sc=stage.scaleX(), pos=stage.position();
+  stage.scale({x:1,y:1}); stage.position({x:0,y:0});
+  let objects=null;
+  try{ objects = mainLayer.toCanvas({x:0,y:0,width:WORLD,height:WORLD,pixelRatio:THUMB_PX/WORLD}); }
+  catch(e){ objects=null; }
+  stage.scale({x:sc,y:sc}); stage.position(pos); stage.batchDraw();
+  if(prevSel) select(prevSel);
+
+  const c=document.createElement('canvas'); c.width=THUMB_PX; c.height=THUMB_PX;
+  const x=c.getContext('2d');
+  x.fillStyle=bgRect.fill(); x.fillRect(0,0,THUMB_PX,THUMB_PX);
+  x.drawImage(terr,0,0,THUMB_PX,THUMB_PX);
+  x.drawImage(blend,0,0,THUMB_PX,THUMB_PX);
+  if(objects) x.drawImage(objects,0,0,THUMB_PX,THUMB_PX);
+  return c.toDataURL('image/webp',0.7);
+}
+
+function openDlg(id){ document.getElementById(id).classList.add('open'); }
+function closeDlg(id){ document.getElementById(id).classList.remove('open'); }
+
+function openSaveDlg(){
+  const inp=document.getElementById('mapNameInput');
+  inp.value = currentMapName || '';
+  document.getElementById('saveSub').textContent = currentMapId
+    ? 'A megnyitott térképet írod felül — vagy adj új nevet és mentsd újként.'
+    : 'Adj nevet a térképnek — ezzel fogod megtalálni a KM Pultban.';
+  document.getElementById('saveConfirmBtn').textContent = currentMapId ? '💾 Felülírás' : '💾 Mentés';
+  openDlg('saveMask'); setTimeout(()=>inp.focus(),50);
+}
+
+async function confirmSave(){
+  const name=document.getElementById('mapNameInput').value.trim();
+  if(!name){ toast('⚠️ Adj nevet a térképnek'); return; }
+  const published=document.getElementById('mapPublished').checked;
+  const btn=document.getElementById('saveConfirmBtn');
+  btn.disabled=true; btn.textContent='Mentés…';
+  try{
+    // Ha megnyitott térképnél MÁS nevet adsz, az új térképként mentődik (nem felülírás).
+    const isRename = currentMapId && name !== currentMapName;
+    const id = (currentMapId && !isRename) ? currentMapId : crypto.randomUUID();
+    const path = `${id}.webp`;
+    const blob = await terrainBlob();
+    const up = await sb.storage.from(BUCKET).upload(path, blob, { upsert:true, contentType:'image/webp' });
+    if(up.error) throw up.error;
+    const { data:{ publicUrl } } = sb.storage.from(BUCKET).getPublicUrl(path);
+    const row = {
+      id, owner_id: window._userId, name,
+      scene: sceneMeta(), thumb: makeThumb(),
+      terrain_url: publicUrl, published,
+      updated_at: new Date().toISOString()
+    };
+    const { error } = await sb.from('battlemaps').upsert(row);
+    if(error) throw error;
+    currentMapId=id; currentMapName=name;
+    closeDlg('saveMask'); toast('💾 Elmentve: '+name);
+  }catch(e){
+    console.error(e); toast('⚠️ Mentés sikertelen: '+(e.message||e));
+  }finally{
+    btn.disabled=false; btn.textContent = currentMapId ? '💾 Felülírás' : '💾 Mentés';
+  }
+}
+
+async function openLoadDlg(){
+  openDlg('loadMask');
+  const list=document.getElementById('mapList');
+  list.innerHTML='<div class="empty">Betöltés…</div>';
+  const { data, error } = await sb.from('battlemaps')
+    .select('id,name,thumb,published,updated_at').order('updated_at',{ascending:false});
+  if(error){ list.innerHTML=`<div class="empty">⚠️ ${error.message}</div>`; return; }
+  if(!data || !data.length){ list.innerHTML='<div class="empty">Még nincs mentett battlemap.</div>'; return; }
+  list.innerHTML='';
+  data.forEach(m=>{
+    const row=document.createElement('div'); row.className='maprow';
+    const d=new Date(m.updated_at).toLocaleString('hu-HU',{year:'numeric',month:'short',day:'numeric',hour:'2-digit',minute:'2-digit'});
+    row.innerHTML=`<img src="${m.thumb||''}" alt="">
+      <div class="mi"><div class="mn">${escapeHtml(m.name)}${m.published?'<span class="badge">közzétéve</span>':''}</div>
+      <div class="md">${d}</div></div>
+      <button class="mdel" title="Törlés">🗑</button>`;
+    row.querySelector('img').onerror=function(){ this.style.visibility='hidden'; };
+    row.onclick=()=>loadMap(m.id);
+    row.querySelector('.mdel').onclick=async ev=>{ ev.stopPropagation();
+      if(!confirm(`Törlöd a(z) "${m.name}" térképet?`)) return;
+      await sb.storage.from(BUCKET).remove([`${m.id}.webp`]);
+      const { error } = await sb.from('battlemaps').delete().eq('id',m.id);
+      if(error){ toast('⚠️ '+error.message); return; }
+      if(currentMapId===m.id){ currentMapId=null; currentMapName=''; }
+      toast('🗑 Törölve'); openLoadDlg();
+    };
+    list.appendChild(row);
+  });
+}
+
+async function loadMap(id){
+  const { data, error } = await sb.from('battlemaps').select('*').eq('id',id).single();
+  if(error){ toast('⚠️ '+error.message); return; }
+  setMode('select');
+  const scene = data.scene || {};
+  // Cache-busting: felülírás után a régi kép maradna a böngésző gyorsítótárában.
+  scene.terrain = data.terrain_url ? data.terrain_url+'?v='+Date.parse(data.updated_at) : null;
+  deserialize(scene);
+  currentMapId=data.id; currentMapName=data.name;
+  document.getElementById('mapPublished').checked = !!data.published;
+  closeDlg('loadMask'); toast('📂 Betöltve: '+data.name);
+}
+
+function escapeHtml(s){ return String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c])); }
+
+// Modál-billentyűk: Enter = mentés, Esc = bezár. Capture fázisban, hogy a
+// szerkesztő globális Esc/Delete kezelője ne szóljon bele nyitott modálnál.
+document.addEventListener('keydown', e=>{
+  const open=document.querySelector('.mask.open');
+  if(!open) return;
+  if(e.key==='Escape'){ e.stopPropagation(); closeDlg(open.id); }
+  else if(e.key==='Enter' && open.id==='saveMask'){ e.stopPropagation(); confirmSave(); }
+}, true);
+// Háttérre kattintva is bezárul
+document.querySelectorAll('.mask').forEach(m=>{
+  m.addEventListener('mousedown', e=>{ if(e.target===m) closeDlg(m.id); });
+});
+function clearScene(){ if(!confirm('Üríted a csatateret?'))return; tctx.clearRect(0,0,WORLD,WORLD); bctx.clearRect(0,0,WORLD,WORLD); typeGrid.fill(0); terrDraw(); mainLayer.destroyChildren(); mainLayer.add(tr); select(null); mainLayer.batchDraw(); updateCount();
+  currentMapId=null; currentMapName=''; document.getElementById('mapPublished').checked=false; }
 
 /* =========================================================
    UI FELÉPÍTÉS
@@ -1131,6 +1384,10 @@ window.addEventListener('resize', ()=>{ stage.width(wrap.clientWidth); stage.hei
   TEX_KEY_LIST.filter(k=>!PROCEDURAL_KEYS.includes(k) && !TEXTURES[k].seamless).forEach(k=>{ const src=TEXTURES[k].src; imgCache[src]=makeSeamless(imgCache[src]); });
   Object.values(WALL_TEXTURES).forEach(t=>{ imgCache[t.src]=makeSeamless(imgCache[t.src]); });
   buildToolRail(); drawGrid(); resetView(); updateCount(); setMode('select');
+  // A KM Pultból ?map=<uuid>-vel érkezve rögtön a kért térképet nyitjuk meg.
+  await window._authReady;
+  const wanted = new URLSearchParams(location.search).get('map');
+  if(wanted) loadMap(wanted);
 })();
 </script>
 </body>

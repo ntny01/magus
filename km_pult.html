@@ -524,6 +524,8 @@ const sb = supabase.createClient(
             
             <button class="km-btn" onclick="openEmbeddedView('mapView')" style="border-color: rgba(59, 130, 246, 0.3); color: #3b82f6 !important;">🗺️ Térkép</button>
             <button class="km-btn" onclick="openEmbeddedView('codexView')" style="border-color: rgba(167, 139, 250, 0.3); color: #a78bfa !important;">📚 Kódex</button>
+            <button class="km-btn" onclick="openBattlemapPanel()" style="border-color: rgba(212,175,55,.4); color: var(--gold) !important;">⚔️ Battlemapek</button>
+            <button class="km-btn" onclick="openEmbeddedView('sablonView')" style="border-color: rgba(45, 212, 191, 0.3); color: #2dd4bf !important;">📐 Sablon Editor</button>
             
             <button class="km-btn" onclick="exportData()">💾 Mentés</button>
             <button class="km-btn" onclick="document.getElementById('importFile').click()">📂 Betöltés</button>
@@ -676,6 +678,38 @@ const sb = supabase.createClient(
         <iframe src="index.html" class="embedded-iframe"></iframe>
     </div>
 
+    <div id="sablonView" class="embedded-view-container">
+        <div class="embedded-view-header">
+            <h4>📐 Sablon Editor</h4>
+            <button class="km-btn" style="border-color: #ef4444; color: #f87171 !important;" onclick="closeEmbeddedView('sablonView')">↩ Vissza a pulthoz</button>
+        </div>
+        <iframe src="sabloneditor.html" class="embedded-iframe"></iframe>
+    </div>
+
+    <div id="battlemapView" class="embedded-view-container">
+        <div class="embedded-view-header">
+            <h4 id="battlemapViewTitle">⚔️ Battlemap</h4>
+            <button class="km-btn" style="border-color: #ef4444; color: #f87171 !important;" onclick="closeBattlemapView()">↩ Vissza a pulthoz</button>
+        </div>
+        <iframe id="battlemapFrame" src="about:blank" class="embedded-iframe"></iframe>
+    </div>
+
+    <!-- ===== BATTLEMAP GALÉRIA ===== -->
+    <div id="battlemapPanel" style="display:none; position:fixed; inset:0; z-index:200; background:rgba(2,6,23,0.88); backdrop-filter:blur(18px); -webkit-backdrop-filter:blur(18px); overflow-y:auto; padding:2rem 1.5rem;">
+        <div style="max-width:1100px; margin:0 auto;">
+            <div style="display:flex; align-items:center; justify-content:space-between; margin-bottom:1.5rem; flex-wrap:wrap; gap:.75rem;">
+                <h2 style="font-family:'Cinzel',serif; color:var(--gold); font-size:1.35rem; letter-spacing:.08em; margin:0;">⚔️ Battlemapek</h2>
+                <div style="display:flex; gap:.5rem; flex-wrap:wrap; align-items:center;">
+                    <button class="km-btn" onclick="openBattlemapView(null,'Új battlemap')" style="border-color:rgba(16,185,129,.4);color:var(--accent-hover)!important;">＋ Új battlemap</button>
+                    <button class="km-btn" onclick="loadBattlemaps()" style="border-color:rgba(168,85,247,.4);color:#c084fc!important;">⟳ Frissítés</button>
+                    <button class="km-btn" onclick="closeBattlemapPanel()" style="border-color:rgba(239,68,68,.35);color:#f87171!important;">✕ Bezárás</button>
+                </div>
+            </div>
+            <div id="battlemapGrid" style="display:grid; grid-template-columns:repeat(auto-fill,minmax(200px,1fr)); gap:1rem;"></div>
+            <div id="battlemapEmptyMsg" style="text-align:center; color:var(--text-muted); padding:3rem 0; font-size:.95rem; display:none;"></div>
+        </div>
+    </div>
+
     <script>
         const kmNotes = document.getElementById('kmNotes');
         const groupNameInput = document.getElementById('groupName');
@@ -702,6 +736,72 @@ const sb = supabase.createClient(
 
         window.closeEmbeddedView = function(viewId) {
             document.getElementById(viewId).style.display = 'none';
+        };
+
+        /* ===== BATTLEMAP GALÉRIA =====
+           A bélyegképeket a battlemaps táblából olvassuk. A nagy terep-kép a
+           Storage-ban van, ide csak a kis thumb jön le — így a lista gyors. */
+        window.openBattlemapPanel = function() {
+            document.getElementById('battlemapPanel').style.display = 'block';
+            loadBattlemaps();
+        };
+        window.closeBattlemapPanel = function() {
+            document.getElementById('battlemapPanel').style.display = 'none';
+        };
+
+        window.openBattlemapView = function(mapId, title) {
+            document.getElementById('battlemapViewTitle').textContent = '⚔️ ' + (title || 'Battlemap');
+            document.getElementById('battlemapFrame').src = 'battlemap.html' + (mapId ? '?map=' + encodeURIComponent(mapId) : '');
+            closeBattlemapPanel();
+            document.getElementById('battlemapView').style.display = 'flex';
+        };
+        window.closeBattlemapView = function() {
+            document.getElementById('battlemapView').style.display = 'none';
+            // Az iframe kiürítése, hogy a Konva-vászon ne egyen memóriát a háttérben.
+            document.getElementById('battlemapFrame').src = 'about:blank';
+        };
+
+        window.loadBattlemaps = async function() {
+            const grid = document.getElementById('battlemapGrid');
+            const empty = document.getElementById('battlemapEmptyMsg');
+            grid.innerHTML = '';
+            empty.style.display = 'block';
+            empty.textContent = 'Betöltés…';
+
+            const sb = window._sb;
+            if (!sb) { empty.textContent = '⚠️ Nincs Supabase kapcsolat.'; return; }
+
+            const { data, error } = await sb.from('battlemaps')
+                .select('id,name,thumb,published,updated_at')
+                .order('updated_at', { ascending: false });
+
+            if (error) { empty.textContent = '⚠️ ' + error.message; return; }
+            if (!data || !data.length) {
+                empty.innerHTML = 'Még nincs mentett battlemap.<br><span style="font-size:.85rem;opacity:.6;">Kattints a „＋ Új battlemap" gombra a szerkesztő megnyitásához.</span>';
+                return;
+            }
+
+            empty.style.display = 'none';
+            data.forEach(m => {
+                const d = new Date(m.updated_at).toLocaleString('hu-HU', { year: 'numeric', month: 'short', day: 'numeric', hour: '2-digit', minute: '2-digit' });
+                const card = document.createElement('div');
+                card.style.cssText = 'background:var(--bg-card);border:1px solid var(--border-color);border-radius:.75rem;overflow:hidden;cursor:pointer;transition:.15s;';
+                card.onmouseenter = () => { card.style.borderColor = 'rgba(212,175,55,.45)'; card.style.transform = 'translateY(-2px)'; };
+                card.onmouseleave = () => { card.style.borderColor = 'var(--border-color)'; card.style.transform = 'none'; };
+                card.innerHTML =
+                    '<div style="aspect-ratio:1;background:#0b1220;display:flex;align-items:center;justify-content:center;">' +
+                        (m.thumb ? '<img src="' + m.thumb + '" style="width:100%;height:100%;object-fit:cover;" alt="">'
+                                 : '<span style="color:var(--text-muted);font-size:.8rem;">nincs előnézet</span>') +
+                    '</div>' +
+                    '<div style="padding:.6rem .7rem;">' +
+                        '<div style="font-size:.85rem;font-weight:600;color:var(--text-main);overflow:hidden;text-overflow:ellipsis;white-space:nowrap;">' + esc(m.name) + '</div>' +
+                        '<div style="font-size:.68rem;color:var(--text-muted);margin-top:.15rem;">' + d +
+                            (m.published ? ' · <span style="color:#34d399;">közzétéve</span>' : '') +
+                        '</div>' +
+                    '</div>';
+                card.onclick = () => openBattlemapView(m.id, m.name);
+                grid.appendChild(card);
+            });
         };
 
         function loadDashboardState() {
