@@ -1133,6 +1133,9 @@ function deserialize(scene){ mainLayer.destroyChildren(); mainLayer.add(tr); sel
 ========================================================= */
 const BUCKET = 'battlemaps', THUMB_PX = 320;
 let currentMapId = null, currentMapName = '';
+// Kampány-kontextus: ha a KM Pultból ?campaign=<id>-vel nyíltunk meg, minden
+// ITT mentett térkép automatikusan hozzákapcsolódik a kampányhoz (campaign_items).
+const campaignCtx = new URLSearchParams(location.search).get('campaign');
 
 // A jelenet metaadata terep-kép NÉLKÜL (ez megy a jsonb oszlopba, pár KB).
 function sceneMeta(){ const s = serialize(); delete s.terrain; return s; }
@@ -1199,8 +1202,15 @@ async function confirmSave(){
     };
     const { error } = await sb.from('battlemaps').upsert(row);
     if(error) throw error;
+    // Kampányhoz kötés. A UNIQUE(campaign_id,item_type,item_id) miatt az ismételt
+    // mentés nem duplikál — a már meglévő kapcsolat hibáját szándékosan elnyeljük.
+    if(campaignCtx){
+      const link = await sb.from('campaign_items')
+        .insert({ campaign_id:campaignCtx, item_type:'battlemap', item_id:id });
+      if(link.error && link.error.code!=='23505') console.warn('Kampányhoz kötés:', link.error.message);
+    }
     currentMapId=id; currentMapName=name;
-    closeDlg('saveMask'); toast('💾 Elmentve: '+name);
+    closeDlg('saveMask'); toast('💾 Elmentve: '+name+(campaignCtx?' (kampányhoz kötve)':''));
   }catch(e){
     console.error(e); toast('⚠️ Mentés sikertelen: '+(e.message||e));
   }finally{

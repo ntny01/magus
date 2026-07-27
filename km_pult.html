@@ -23,6 +23,8 @@ const sb = supabase.createClient(
       return
     }
     window._userProfile = profile
+    window._userId = session.user.id
+    window.dispatchEvent(new Event('magus-auth-ready'))
   })()
 </script>
 </script>
@@ -527,8 +529,21 @@ const sb = supabase.createClient(
             <button class="km-btn" onclick="openBattlemapPanel()" style="border-color: rgba(212,175,55,.4); color: var(--gold) !important;">⚔️ Battlemapek</button>
             <button class="km-btn" onclick="openEmbeddedView('sablonView')" style="border-color: rgba(45, 212, 191, 0.3); color: #2dd4bf !important;">📐 Sablon Editor</button>
             
-            <button class="km-btn" onclick="exportData()">💾 Mentés</button>
-            <button class="km-btn" onclick="document.getElementById('importFile').click()">📂 Betöltés</button>
+            <span style="width:1px;height:1.6rem;background:var(--border-color);margin:0 .15rem;"></span>
+
+            <select id="campaignSelect" class="km-input" title="Aktív kampány"
+                    style="max-width:190px;padding:.3rem .5rem;font-size:.8rem;border-color:rgba(212,175,55,.3)!important;"
+                    onchange="onCampaignSelected(this.value)">
+                <option value="">— nincs kampány —</option>
+            </select>
+            <button class="km-btn" onclick="saveCampaign()" title="Kampány mentése (jegyzetek + harcrend + hozzárendelt elemek)"
+                    style="border-color:rgba(212,175,55,.4);color:var(--gold)!important;">💾 Kampány mentése</button>
+            <button class="km-btn" onclick="openCampaignPanel()" title="Kampány tartalmának kezelése">🎬 Kampány tartalma</button>
+
+            <span style="width:1px;height:1.6rem;background:var(--border-color);margin:0 .15rem;"></span>
+
+            <button class="km-btn" onclick="exportData()" title="Biztonsági mentés JSON fájlba">⬇ JSON</button>
+            <button class="km-btn" onclick="document.getElementById('importFile').click()" title="Visszatöltés JSON fájlból">⬆ JSON</button>
             <input type="file" id="importFile" style="display:none;" onchange="importData(event)">
         </div>
         <div style="display:flex;align-items:center;gap:.5rem;flex-shrink:0;margin-left:.5rem;">
@@ -710,6 +725,40 @@ const sb = supabase.createClient(
         </div>
     </div>
 
+    <!-- ===== KAMPÁNY PANEL ===== -->
+    <div id="campaignPanel" style="display:none; position:fixed; inset:0; z-index:200; background:rgba(2,6,23,0.88); backdrop-filter:blur(18px); -webkit-backdrop-filter:blur(18px); overflow-y:auto; padding:2rem 1.5rem;">
+        <div style="max-width:900px; margin:0 auto;">
+            <div style="display:flex; align-items:center; justify-content:space-between; margin-bottom:1.25rem; flex-wrap:wrap; gap:.75rem;">
+                <h2 style="font-family:'Cinzel',serif; color:var(--gold); font-size:1.35rem; letter-spacing:.08em; margin:0;">🎬 Kampány</h2>
+                <div style="display:flex; gap:.5rem; flex-wrap:wrap; align-items:center;">
+                    <button class="km-btn" onclick="newCampaign()" style="border-color:rgba(16,185,129,.4);color:var(--accent-hover)!important;">＋ Új kampány</button>
+                    <button class="km-btn" onclick="deleteCampaign()" style="border-color:rgba(239,68,68,.35);color:#f87171!important;">🗑️ Kampány törlése</button>
+                    <button class="km-btn" onclick="closeCampaignPanel()" style="border-color:rgba(239,68,68,.35);color:#f87171!important;">✕ Bezárás</button>
+                </div>
+            </div>
+
+            <div style="background:var(--bg-card); border:1px solid var(--border-color); border-radius:.75rem; padding:1rem; margin-bottom:1.25rem;">
+                <div style="display:flex; gap:.75rem; flex-wrap:wrap; align-items:flex-end;">
+                    <div style="flex:1; min-width:220px;">
+                        <label style="display:block;font-size:.72rem;color:var(--text-muted);margin-bottom:.3rem;">Kampány neve</label>
+                        <input type="text" id="campaignName" class="km-input" style="width:100%;" maxlength="90" placeholder="pl. Az Északi Háború">
+                    </div>
+                    <div style="flex:2; min-width:260px;">
+                        <label style="display:block;font-size:.72rem;color:var(--text-muted);margin-bottom:.3rem;">Rövid leírás</label>
+                        <input type="text" id="campaignDesc" class="km-input" style="width:100%;" maxlength="200" placeholder="Miről szól a kampány?">
+                    </div>
+                    <label style="display:flex;align-items:center;gap:.4rem;cursor:pointer;font-size:.8rem;color:var(--text-main);padding-bottom:.5rem;">
+                        <input type="checkbox" id="campaignPublished"> Közzététel
+                    </label>
+                    <button class="km-btn" onclick="saveCampaign()" style="border-color:rgba(212,175,55,.4);color:var(--gold)!important;">💾 Mentés</button>
+                </div>
+                <div id="campaignStatus" style="font-size:.72rem;color:var(--text-muted);margin-top:.6rem;"></div>
+            </div>
+
+            <div id="campaignSections"></div>
+        </div>
+    </div>
+
     <script>
         const kmNotes = document.getElementById('kmNotes');
         const groupNameInput = document.getElementById('groupName');
@@ -751,7 +800,12 @@ const sb = supabase.createClient(
 
         window.openBattlemapView = function(mapId, title) {
             document.getElementById('battlemapViewTitle').textContent = '⚔️ ' + (title || 'Battlemap');
-            document.getElementById('battlemapFrame').src = 'battlemap.html' + (mapId ? '?map=' + encodeURIComponent(mapId) : '');
+            // A kampány-kontextust átadjuk: az ott mentett térkép automatikusan
+            // a most aktív kampányhoz kapcsolódik.
+            const qs = [];
+            if (mapId) qs.push('map=' + encodeURIComponent(mapId));
+            if (currentCampaignId) qs.push('campaign=' + encodeURIComponent(currentCampaignId));
+            document.getElementById('battlemapFrame').src = 'battlemap.html' + (qs.length ? '?' + qs.join('&') : '');
             closeBattlemapPanel();
             document.getElementById('battlemapView').style.display = 'flex';
         };
@@ -759,6 +813,230 @@ const sb = supabase.createClient(
             document.getElementById('battlemapView').style.display = 'none';
             // Az iframe kiürítése, hogy a Konva-vászon ne egyen memóriát a háttérben.
             document.getElementById('battlemapFrame').src = 'about:blank';
+        };
+
+        /* =========================================================
+           KAMPÁNY-KONTÉNER
+           A kampány fogja össze a KM Pult munkaállapotát (jegyzet + harcrend)
+           ÉS a hozzárendelt elemeket (battlemap, Ynev-térkép, sablon, karakter).
+           A hozzárendelés kapcsolótáblán (campaign_items) megy, ezért UGYANAZ
+           az elem több kampányhoz is tartozhat — pl. egy "Fogadó" battlemap.
+           Séma: security/campaign_rls.sql
+           ========================================================= */
+        let currentCampaignId = null;
+        let campaignCache = [];
+
+        // Mit tud a kampány tartalmazni. A `table`/`filter` a forrás-tábla,
+        // ahonnan a választható elemeket szedjük.
+        const CAMPAIGN_SECTIONS = [
+            { type:'battlemap', icon:'⚔️', title:'Battlemapek',      table:'battlemaps',       label:'name' },
+            { type:'ynev_map',  icon:'🗺️', title:'Ynev térképek',    table:'campaign_maps',    label:'name' },
+            { type:'template',  icon:'📐', title:'Karakterlap-sablonok', table:'character_sheets', label:'name', filter:{ is_template:true } },
+            { type:'character', icon:'👤', title:'Karakterek',       table:'character_sheets', label:'name', filter:{ is_template:false } },
+        ];
+
+        window.openCampaignPanel = function() {
+            document.getElementById('campaignPanel').style.display = 'block';
+            renderCampaignSections();
+        };
+        window.closeCampaignPanel = function() {
+            document.getElementById('campaignPanel').style.display = 'none';
+        };
+
+        // A KM Pult munkaállapota, amit a kampány eltárol.
+        function collectCampaignState() {
+            return {
+                notes: kmNotes.value,
+                combatants: combatants,
+                collapsedGroups: collapsedGroups,
+                currentIndex: currentCombatIndex
+            };
+        }
+        function applyCampaignState(st) {
+            st = st || {};
+            kmNotes.value = st.notes || '';
+            combatants = Array.isArray(st.combatants) ? st.combatants : [];
+            collapsedGroups = st.collapsedGroups || {};
+            currentCombatIndex = typeof st.currentIndex === 'number' ? st.currentIndex : -1;
+            saveDashboardState(); renderList(); updateTurnTracker();
+        }
+
+        window.loadCampaignList = async function(selectId) {
+            const sb = window._sb; if (!sb) return;
+            const { data, error } = await sb.from('campaigns')
+                .select('id,name,description,published,updated_at')
+                .order('updated_at', { ascending: false });
+            if (error) { console.error(error); return; }
+            campaignCache = data || [];
+            const sel = document.getElementById('campaignSelect');
+            const keep = selectId !== undefined ? selectId : currentCampaignId;
+            sel.innerHTML = '<option value="">— nincs kampány —</option>' +
+                campaignCache.map(c => '<option value="' + c.id + '">' +
+                    esc(c.name) + (c.published ? ' 📢' : '') + '</option>').join('');
+            sel.value = keep || '';
+        };
+
+        window.onCampaignSelected = async function(id) {
+            if (!id) { currentCampaignId = null; updateCampaignFields(null); return; }
+            const sb = window._sb; if (!sb) return;
+            const { data, error } = await sb.from('campaigns').select('*').eq('id', id).single();
+            if (error) { alert('Kampány betöltése sikertelen: ' + error.message); return; }
+            currentCampaignId = data.id;
+            applyCampaignState(data.state);
+            updateCampaignFields(data);
+            renderCampaignSections();
+            // Az URL is kövesse, hogy megosztható/könyvjelzőzhető legyen.
+            history.replaceState(null, '', 'km_pult.html?campaign=' + data.id);
+        };
+
+        function updateCampaignFields(c) {
+            document.getElementById('campaignName').value = c ? c.name : '';
+            document.getElementById('campaignDesc').value = c ? (c.description || '') : '';
+            document.getElementById('campaignPublished').checked = c ? !!c.published : false;
+            document.getElementById('campaignStatus').textContent = c
+                ? 'Betöltve: ' + new Date(c.updated_at).toLocaleString('hu-HU')
+                : 'Nincs kiválasztott kampány — a mentés újat hoz létre.';
+            document.getElementById('campaignSelect').value = c ? c.id : '';
+        }
+
+        window.newCampaign = function() {
+            if (!confirm('Új kampány indítása? A jelenlegi jegyzet és harcrend megmarad, de új kampányba fog mentődni.')) return;
+            currentCampaignId = null;
+            updateCampaignFields(null);
+            document.getElementById('campaignName').value = '';
+            renderCampaignSections();
+            history.replaceState(null, '', 'km_pult.html');
+        };
+
+        window.saveCampaign = async function() {
+            const sb = window._sb; if (!sb) { alert('Nincs Supabase kapcsolat.'); return; }
+            let name = document.getElementById('campaignName').value.trim();
+            if (!name) {
+                name = (prompt('Add meg a kampány nevét:') || '').trim();
+                if (!name) return;
+                document.getElementById('campaignName').value = name;
+            }
+            const row = {
+                id: currentCampaignId || crypto.randomUUID(),
+                owner_id: window._userId,
+                name: name,
+                description: document.getElementById('campaignDesc').value.trim() || null,
+                state: collectCampaignState(),
+                published: document.getElementById('campaignPublished').checked
+            };
+            const { error } = await sb.from('campaigns').upsert(row);
+            if (error) { alert('Mentés sikertelen: ' + error.message); return; }
+            currentCampaignId = row.id;
+            document.getElementById('campaignStatus').textContent = 'Elmentve: ' + new Date().toLocaleString('hu-HU');
+            history.replaceState(null, '', 'km_pult.html?campaign=' + row.id);
+            await loadCampaignList(row.id);
+            renderCampaignSections();
+        };
+
+        window.deleteCampaign = async function() {
+            if (!currentCampaignId) { alert('Nincs kiválasztott kampány.'); return; }
+            const c = campaignCache.find(x => x.id === currentCampaignId);
+            if (!confirm('Törlöd a(z) "' + (c ? c.name : '?') + '" kampányt? A hozzárendelések is törlődnek, de maguk a battlemapek/karakterek megmaradnak.')) return;
+            const sb = window._sb;
+            const { error } = await sb.from('campaigns').delete().eq('id', currentCampaignId);
+            if (error) { alert('Törlés sikertelen: ' + error.message); return; }
+            currentCampaignId = null;
+            updateCampaignFields(null);
+            await loadCampaignList('');
+            renderCampaignSections();
+            history.replaceState(null, '', 'km_pult.html');
+        };
+
+        /* ---- Kampányhoz rendelt elemek ---- */
+
+        async function fetchCampaignItems() {
+            if (!currentCampaignId) return [];
+            const { data } = await window._sb.from('campaign_items')
+                .select('*').eq('campaign_id', currentCampaignId).order('sort_order');
+            return data || [];
+        }
+
+        async function fetchSourceRows(sec) {
+            let q = window._sb.from(sec.table).select('id,' + sec.label);
+            if (sec.filter) Object.entries(sec.filter).forEach(([k, v]) => { q = q.eq(k, v); });
+            const { data } = await q.order(sec.label);
+            return data || [];
+        }
+
+        window.renderCampaignSections = async function() {
+            const host = document.getElementById('campaignSections');
+            if (!currentCampaignId) {
+                host.innerHTML = '<div style="text-align:center;color:var(--text-muted);padding:2.5rem 0;font-size:.9rem;">' +
+                    'Előbb ments el vagy válassz ki egy kampányt, hogy elemeket rendelhess hozzá.</div>';
+                return;
+            }
+            host.innerHTML = '<div style="text-align:center;color:var(--text-muted);padding:1.5rem 0;">Betöltés…</div>';
+
+            const items = await fetchCampaignItems();
+            const sources = {};
+            for (const sec of CAMPAIGN_SECTIONS) sources[sec.type] = await fetchSourceRows(sec);
+
+            host.innerHTML = '';
+            CAMPAIGN_SECTIONS.forEach(sec => {
+                const mine = items.filter(i => i.item_type === sec.type);
+                const rows = sources[sec.type];
+                const byId = {}; rows.forEach(r => { byId[r.id] = r; });
+                const free = rows.filter(r => !mine.some(m => m.item_id === r.id));
+
+                const box = document.createElement('div');
+                box.style.cssText = 'background:var(--bg-card);border:1px solid var(--border-color);border-radius:.75rem;padding:1rem;margin-bottom:1rem;';
+
+                let attachedHtml = mine.length
+                    ? mine.map(m => {
+                        const src = byId[m.item_id];
+                        const nm = src ? src[sec.label] : '(törölt elem)';
+                        const open = campaignItemLink(sec.type, m.item_id);
+                        return '<div style="display:flex;align-items:center;gap:.5rem;padding:.4rem .55rem;background:rgba(255,255,255,.03);border-radius:.45rem;margin-bottom:.35rem;">' +
+                            '<span style="flex:1;font-size:.85rem;color:var(--text-main);">' + esc(nm) + '</span>' +
+                            (open ? '<button class="km-btn" style="padding:.2rem .55rem;font-size:.72rem;" onclick="' + open + '">Megnyitás</button>' : '') +
+                            '<button class="km-btn" style="padding:.2rem .5rem;font-size:.72rem;border-color:rgba(239,68,68,.3);color:#f87171!important;" ' +
+                            'onclick="detachCampaignItem(\'' + m.id + '\')">✕</button>' +
+                        '</div>';
+                      }).join('')
+                    : '<div style="font-size:.8rem;color:var(--text-muted);padding:.3rem 0 .6rem;">Nincs hozzárendelt elem.</div>';
+
+                const pickerHtml = free.length
+                    ? '<div style="display:flex;gap:.5rem;margin-top:.6rem;">' +
+                        '<select class="km-input" id="pick_' + sec.type + '" style="flex:1;font-size:.8rem;padding:.3rem .5rem;">' +
+                          free.map(r => '<option value="' + r.id + '">' + esc(r[sec.label] || '(névtelen)') + '</option>').join('') +
+                        '</select>' +
+                        '<button class="km-btn" style="font-size:.78rem;" onclick="attachCampaignItem(\'' + sec.type + '\')">＋ Hozzáadás</button>' +
+                      '</div>'
+                    : '<div style="font-size:.75rem;color:var(--text-muted);margin-top:.5rem;">Nincs több hozzáadható elem.</div>';
+
+                box.innerHTML = '<div style="font-family:\'Cinzel\',serif;color:var(--gold);font-size:.95rem;margin-bottom:.6rem;">' +
+                        sec.icon + ' ' + sec.title + ' <span style="color:var(--text-muted);font-size:.75rem;">(' + mine.length + ')</span></div>' +
+                    attachedHtml + pickerHtml;
+                host.appendChild(box);
+            });
+        };
+
+        // Deep-link / megnyitási útvonal elemtípusonként.
+        // Csak oda adunk gombot, ahol a cél-oldal TÉNYLEG tud az adott elemre ugrani.
+        function campaignItemLink(type, id) {
+            if (type === 'battlemap') return "openBattlemapView('" + id + "','Battlemap')";
+            return null; // ynev_map / template / character: ld. a tudnivalókat, még nincs URL-fogadás
+        }
+
+        window.attachCampaignItem = async function(type) {
+            const sel = document.getElementById('pick_' + type);
+            if (!sel || !sel.value) return;
+            const { error } = await window._sb.from('campaign_items').insert({
+                campaign_id: currentCampaignId, item_type: type, item_id: sel.value
+            });
+            if (error) { alert('Hozzáadás sikertelen: ' + error.message); return; }
+            renderCampaignSections();
+        };
+
+        window.detachCampaignItem = async function(rowId) {
+            const { error } = await window._sb.from('campaign_items').delete().eq('id', rowId);
+            if (error) { alert('Eltávolítás sikertelen: ' + error.message); return; }
+            renderCampaignSections();
         };
 
         window.loadBattlemaps = async function() {
@@ -1112,6 +1390,21 @@ const sb = supabase.createClient(
         })();
 
         loadDashboardState();
+
+        /* Kampány-indítás: megvárjuk az auth-ot, feltöltjük a legördülőt, és ha
+           ?campaign=<id>-vel érkeztünk (deep link), rögtön azt töltjük be. */
+        (function initCampaigns() {
+            const start = async () => {
+                await loadCampaignList();
+                const wanted = new URLSearchParams(location.search).get('campaign');
+                if (wanted) {
+                    document.getElementById('campaignSelect').value = wanted;
+                    await onCampaignSelected(wanted);
+                }
+            };
+            if (window._userId) start();
+            else window.addEventListener('magus-auth-ready', start, { once: true });
+        })();
 
         /* ==============================
            KARAKTERKÁRTYA PANEL
