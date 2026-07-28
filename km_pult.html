@@ -84,46 +84,53 @@ const sb = supabase.createClient(
         }
 
         header {
-            display: flex; flex-direction: column; gap: 0.85rem;
-            border-bottom: 1px solid var(--border-color); padding-bottom: 0.85rem;
+            display: flex; flex-direction: row; align-items: center; gap: 1rem;
+            border-bottom: 1px solid var(--border-color); padding-bottom: 0.75rem;
         }
 
         header h1 {
-            margin: 0;
+            margin: 0; flex-shrink: 0;
             font-family: 'Cinzel', serif !important;
-            font-size: 1.5rem;
+            font-size: 1.4rem;
             color: var(--gold) !important;
             letter-spacing: .08em;
         }
 
-        /* Fejléc felső sáv: cím + felhasználó */
-        .header-top {
-            display: flex; justify-content: space-between; align-items: center; gap: 1rem;
-        }
         .header-user { display: flex; align-items: center; gap: .5rem; flex-shrink: 0; }
 
-        /* Csoportosított eszköztár: minden csoport önálló kártya */
+        /* Csoportosított eszköztár: egyetlen sor, vízszintesen görgethető */
         .km-toolbar {
-            display: flex; flex-wrap: wrap; align-items: stretch; gap: .65rem;
+            flex: 1 1 auto; min-width: 0;
+            display: flex; align-items: stretch; gap: 0; flex-wrap: nowrap;
+            overflow-x: auto; overflow-y: hidden;
+            padding-bottom: .3rem;                 /* hely a scrollbarnak */
+            scrollbar-width: thin;
+            scrollbar-color: rgba(212,175,55,.35) transparent;
         }
+        .km-toolbar::-webkit-scrollbar { height: 7px; }
+        .km-toolbar::-webkit-scrollbar-thumb {
+            background: rgba(212,175,55,.3); border-radius: 4px;
+        }
+        .km-toolbar::-webkit-scrollbar-track { background: transparent; }
+
+        /* Egy csoport: kis felirat + gombjai, egy sorban */
         .tb-group {
-            display: flex; flex-direction: column; gap: .4rem; flex: 0 0 auto;
-            background: rgba(255, 255, 255, .035);
-            border: 1px solid rgba(255, 255, 255, .1);
-            border-radius: .7rem;
-            padding: .5rem .7rem .55rem;
+            display: flex; align-items: center; gap: .35rem; flex: 0 0 auto;
+            padding: 0 .65rem;
         }
-        .tb-group--campaign {
-            background: rgba(212, 175, 55, .07);
-            border-color: rgba(212, 175, 55, .35);
-        }
+        .tb-group:first-child { padding-left: 0; }
+        .tb-group + .tb-group { border-left: 1px solid var(--border-color); }
         .tb-label {
-            font-family: 'Cinzel', serif; font-size: .62rem; letter-spacing: .14em;
-            text-transform: uppercase; color: var(--text-muted); padding-left: .1rem;
+            font-family: 'Cinzel', serif; font-size: .58rem; letter-spacing: .1em;
+            line-height: 1.15; text-transform: uppercase; color: var(--text-muted);
+            white-space: nowrap; margin-right: .05rem; max-width: 4.2rem;
         }
         .tb-group--campaign .tb-label { color: var(--gold); opacity: .9; }
-        .tb-row { display: flex; align-items: center; gap: .4rem; flex-wrap: nowrap; }
-        .tb-icon { padding: .5rem .7rem !important; }
+        .tb-group .km-btn {
+            flex: 0 0 auto; white-space: nowrap;
+            padding: .45rem .7rem; font-size: .82rem;
+        }
+        .tb-icon { padding: .45rem .6rem !important; font-size: .95rem; }
 
         .dashboard-grid {
             display: grid; grid-template-columns: 1.2fr 1fr; gap: 1.5rem;
@@ -323,27 +330,27 @@ const sb = supabase.createClient(
                 overflow-x: hidden;
             }
 
-            /* Header: csoportok egymás alá törnek */
+            /* Header: cím+felhasználó fent, eszköztár teljes szélességben alattuk */
             header {
+                flex-wrap: wrap;
                 gap: 0.6rem;
                 padding-bottom: 0.75rem;
             }
             header h1 {
                 font-size: 1.15rem !important;
-            }
-            .km-toolbar {
-                gap: 0.6rem;
-            }
-            .tb-group { width: 100%; box-sizing: border-box; flex: 1 1 100%; }
-            .tb-row { width: 100%; flex-wrap: wrap; }
-            .tb-row .km-btn {
                 flex: 1 1 auto;
-                min-height: 44px;
-                font-size: 0.78rem !important;
-                padding: 0.4rem 0.6rem !important;
-                white-space: nowrap;
             }
-            #campaignSelect { flex: 1 1 100%; max-width: none !important; }
+            .header-user { order: 1; }
+            .km-toolbar {
+                order: 2;
+                flex: 1 1 100%;
+                padding-bottom: 0.4rem;
+            }
+            .tb-group .km-btn {
+                min-height: 40px;
+                font-size: 0.78rem !important;
+                padding: 0.4rem 0.65rem !important;
+            }
 
             /* Dashboard: 1 oszlop */
             .dashboard-grid {
@@ -545,60 +552,51 @@ const sb = supabase.createClient(
     <div id="magic-particles"></div>
 
     <header>
-        <div class="header-top">
-            <h1 id="mainHeaderTitle">🛡️ Kalandmester Pult</h1>
-            <div class="header-user">
-                <span id="auth-username" style="font-size:.75rem;color:#d4af37;font-family:'Cinzel',serif;letter-spacing:.06em;white-space:nowrap;"></span>
-                <button onclick="doLogout()" style="background:rgba(248,113,113,0.08);border:1px solid rgba(248,113,113,0.2);color:#f87171;font-size:.75rem;padding:.3rem .7rem;border-radius:.4rem;cursor:pointer;white-space:nowrap;">Kilépés</button>
-            </div>
-        </div>
+        <h1 id="mainHeaderTitle">🛡️ Kalandmester Pult</h1>
 
         <div class="km-toolbar">
             <!-- KAMPÁNY: az elsődleges kontextus -->
             <div class="tb-group tb-group--campaign">
                 <span class="tb-label">Kampány</span>
-                <div class="tb-row">
-                    <select id="campaignSelect" class="km-input" title="Aktív kampány"
-                            style="max-width:190px;padding:.4rem .5rem;font-size:.8rem;border-color:rgba(212,175,55,.3)!important;"
-                            onchange="onCampaignSelected(this.value)">
-                        <option value="">— nincs kampány —</option>
-                    </select>
-                    <button class="km-btn" onclick="saveCampaign()" title="Kampány mentése (jegyzetek + harcrend + hozzárendelt elemek)"
-                            style="border-color:rgba(212,175,55,.4);color:var(--gold)!important;">💾 Mentés</button>
-                    <button class="km-btn" onclick="openCampaignPanel()" title="Kampány tartalmának kezelése (battlemapek, sablonok, karakterek hozzárendelése)">🎬 Tartalom</button>
-                </div>
+                <select id="campaignSelect" class="km-input" title="Aktív kampány"
+                        style="max-width:180px;padding:.4rem .5rem;font-size:.8rem;border-color:rgba(212,175,55,.3)!important;"
+                        onchange="onCampaignSelected(this.value)">
+                    <option value="">— nincs kampány —</option>
+                </select>
+                <button class="km-btn" onclick="saveCampaign()" title="Kampány mentése (jegyzetek + harcrend + hozzárendelt elemek)"
+                        style="border-color:rgba(212,175,55,.4);color:var(--gold)!important;">💾 Mentés</button>
+                <button class="km-btn" onclick="openCampaignPanel()" title="Kampány tartalmának kezelése (battlemapek, sablonok, karakterek hozzárendelése)">🎬 Tartalom</button>
             </div>
 
             <!-- NÉZETEK: beágyazott eszközök megnyitása -->
             <div class="tb-group">
                 <span class="tb-label">Nézetek</span>
-                <div class="tb-row">
-                    <button class="km-btn" onclick="openEmbeddedView('mapView')" style="border-color: rgba(59, 130, 246, 0.3); color: #3b82f6 !important;">🗺️ Térkép</button>
-                    <button class="km-btn" onclick="openEmbeddedView('codexView')" style="border-color: rgba(167, 139, 250, 0.3); color: #a78bfa !important;">📚 Kódex</button>
-                    <button class="km-btn" onclick="openBattlemapPanel()" style="border-color: rgba(212,175,55,.4); color: var(--gold) !important;">⚔️ Battlemapek</button>
-                    <button class="km-btn" onclick="openEmbeddedView('sablonView')" style="border-color: rgba(45, 212, 191, 0.3); color: #2dd4bf !important;">📐 Sablon</button>
-                </div>
+                <button class="km-btn" onclick="openEmbeddedView('mapView')" style="border-color: rgba(59, 130, 246, 0.3); color: #3b82f6 !important;">🗺️ Térkép</button>
+                <button class="km-btn" onclick="openEmbeddedView('codexView')" style="border-color: rgba(167, 139, 250, 0.3); color: #a78bfa !important;">📚 Kódex</button>
+                <button class="km-btn" onclick="openBattlemapPanel()" style="border-color: rgba(212,175,55,.4); color: var(--gold) !important;">⚔️ Battlemapek</button>
+                <button class="km-btn" onclick="openEmbeddedView('sablonView')" style="border-color: rgba(45, 212, 191, 0.3); color: #2dd4bf !important;">📐 Sablon</button>
             </div>
 
             <!-- KARAKTEREK -->
             <div class="tb-group">
                 <span class="tb-label">Karakterek</span>
-                <div class="tb-row">
-                    <button class="km-btn" id="cardPanelBtn" onclick="toggleCardPanel()" style="border-color:rgba(212,175,55,.4);color:var(--gold)!important;">🃏 Kártyák</button>
-                    <button class="km-btn" onclick="document.getElementById('importCharFile').click()" title="Karaktercsoport betöltése JSON-ból">👤 Csoport</button>
-                    <input type="file" id="importCharFile" style="display:none;" onchange="importIndividualGroup(event)">
-                </div>
+                <button class="km-btn" id="cardPanelBtn" onclick="toggleCardPanel()" style="border-color:rgba(212,175,55,.4);color:var(--gold)!important;">🃏 Kártyák</button>
+                <button class="km-btn" onclick="document.getElementById('importCharFile').click()" title="Karaktercsoport betöltése JSON-ból">👤 Csoport</button>
+                <input type="file" id="importCharFile" style="display:none;" onchange="importIndividualGroup(event)">
             </div>
 
             <!-- ADAT: teljes pult biztonsági mentése -->
             <div class="tb-group">
-                <span class="tb-label">Biztonsági mentés</span>
-                <div class="tb-row">
-                    <button class="km-btn tb-icon" onclick="exportData()" title="Teljes pult exportálása JSON fájlba">⬇ JSON</button>
-                    <button class="km-btn tb-icon" onclick="document.getElementById('importFile').click()" title="Teljes pult visszatöltése JSON fájlból">⬆ JSON</button>
-                    <input type="file" id="importFile" style="display:none;" onchange="importData(event)">
-                </div>
+                <span class="tb-label">Mentés JSON</span>
+                <button class="km-btn tb-icon" onclick="exportData()" title="Teljes pult exportálása JSON fájlba">⬇</button>
+                <button class="km-btn tb-icon" onclick="document.getElementById('importFile').click()" title="Teljes pult visszatöltése JSON fájlból">⬆</button>
+                <input type="file" id="importFile" style="display:none;" onchange="importData(event)">
             </div>
+        </div>
+
+        <div class="header-user">
+            <span id="auth-username" style="font-size:.75rem;color:#d4af37;font-family:'Cinzel',serif;letter-spacing:.06em;white-space:nowrap;"></span>
+            <button onclick="doLogout()" style="background:rgba(248,113,113,0.08);border:1px solid rgba(248,113,113,0.2);color:#f87171;font-size:.75rem;padding:.3rem .7rem;border-radius:.4rem;cursor:pointer;white-space:nowrap;">Kilépés</button>
         </div>
     </header>
 
