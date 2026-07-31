@@ -797,11 +797,20 @@ const sb = supabase.createClient(
                 </div>
             </div>
 
-            <div class="km-panel" id="notesPanel">
-                <h3>📝 Kaland Jegyzetek
-                    <button class="km-btn" style="padding:.25rem .7rem;font-size:.75rem;" onclick="openNoteEditor()">＋ Új jegyzet</button>
+            <div class="km-panel" id="journalPanel">
+                <h3 style="gap:.5rem;">
+                    <span style="display:flex;align-items:center;gap:.5rem;flex:1;">📖
+                        <select id="journalView" class="km-input" onchange="switchJournalView(this.value)" style="width:auto;font-size:.85rem;font-family:'Cinzel',serif;color:var(--gold)!important;">
+                            <option value="notes">Jegyzetek</option>
+                            <option value="locations">Helyszínek</option>
+                            <option value="npcs">Szereplők (NPC)</option>
+                        </select>
+                    </span>
+                    <button class="km-btn" style="padding:.25rem .7rem;font-size:.75rem;" onclick="openJournalEditor()">＋ Új</button>
                 </h3>
-                <div id="noteEditor" style="display:none; background:rgba(0,0,0,.2); border:1px solid var(--border-color); border-radius:.6rem; padding:.7rem; margin-bottom:.75rem;">
+
+                <!-- JEGYZET szerkesztő -->
+                <div id="noteEditor" class="journal-editor" style="display:none; background:rgba(0,0,0,.2); border:1px solid var(--border-color); border-radius:.6rem; padding:.7rem; margin-bottom:.75rem;">
                     <div style="display:flex; gap:.5rem; margin-bottom:.5rem;">
                         <select id="noteKind" class="km-input" style="flex:0 0 auto; width:auto; font-size:.8rem;">
                             <option value="jegyzet">📝 Jegyzet</option>
@@ -818,8 +827,61 @@ const sb = supabase.createClient(
                         <button class="km-btn" onclick="saveNote()" style="border-color:rgba(16,185,129,.4);color:var(--accent-hover)!important;font-size:.78rem;">💾 Mentés</button>
                     </div>
                 </div>
-                <div id="notesEmpty" style="text-align:center;color:var(--text-muted);font-size:.85rem;padding:1.5rem 0;">Betöltés…</div>
-                <div id="notesList" style="display:flex;flex-direction:column;gap:.5rem;overflow-y:auto;max-height:52vh;"></div>
+
+                <!-- HELYSZÍN szerkesztő -->
+                <div id="locationEditor" class="journal-editor" style="display:none; background:rgba(0,0,0,.2); border:1px solid var(--border-color); border-radius:.6rem; padding:.7rem; margin-bottom:.75rem;">
+                    <div style="display:flex; gap:.5rem; margin-bottom:.5rem;">
+                        <input type="text" id="locName" class="km-input" placeholder="Helyszín neve" style="flex:1;">
+                        <select id="locType" class="km-input" style="flex:0 0 auto; width:auto; font-size:.8rem;">
+                            <option value="telepules">🏘️ Település</option>
+                            <option value="epulet">🏛️ Épület</option>
+                            <option value="vadon">🌲 Vadon</option>
+                            <option value="romok">🏚️ Romok</option>
+                            <option value="dungeon">⚔️ Kazamata</option>
+                            <option value="egyeb">📍 Egyéb</option>
+                        </select>
+                    </div>
+                    <textarea id="locDesc" class="km-textarea" placeholder="Leírás…" style="min-height:70px; margin-bottom:.5rem;"></textarea>
+                    <div style="display:flex; gap:.5rem; margin-bottom:.5rem;">
+                        <select id="locBattlemap" class="km-input" style="flex:1; font-size:.8rem;" title="Csatolt battlemap"><option value="">— nincs battlemap —</option></select>
+                        <select id="locYnevMap" class="km-input" style="flex:1; font-size:.8rem;" title="Csatolt Ynev térkép"><option value="">— nincs Ynev térkép —</option></select>
+                    </div>
+                    <div style="display:flex; gap:.5rem; justify-content:flex-end; align-items:center;">
+                        <label style="flex:1; font-size:.75rem; color:var(--text-muted); display:flex; align-items:center; gap:.35rem; cursor:pointer;">
+                            <input type="checkbox" id="locPublished"> Látható a játékosoknak
+                        </label>
+                        <button class="km-btn" onclick="cancelLocation()" style="font-size:.78rem;">Mégse</button>
+                        <button class="km-btn" onclick="saveLocation()" style="border-color:rgba(16,185,129,.4);color:var(--accent-hover)!important;font-size:.78rem;">💾 Mentés</button>
+                    </div>
+                </div>
+
+                <!-- SZEREPLŐ (NPC) szerkesztő -->
+                <div id="npcEditor" class="journal-editor" style="display:none; background:rgba(0,0,0,.2); border:1px solid var(--border-color); border-radius:.6rem; padding:.7rem; margin-bottom:.75rem;">
+                    <input type="text" id="npcName" class="km-input" placeholder="NPC neve" style="margin-bottom:.5rem;">
+                    <input type="text" id="npcFeatures" class="km-input" placeholder="Ismertetőjelek (pl. sebhely a bal arcán, sánta)" style="margin-bottom:.5rem;">
+                    <textarea id="npcDesc" class="km-textarea" placeholder="Leírás…" style="min-height:70px; margin-bottom:.5rem;"></textarea>
+                    <div style="display:flex; gap:.5rem; justify-content:flex-end; align-items:center;">
+                        <label style="flex:1; font-size:.75rem; color:var(--text-muted); display:flex; align-items:center; gap:.35rem; cursor:pointer;">
+                            <input type="checkbox" id="npcPublished"> Látható a játékosoknak
+                        </label>
+                        <button class="km-btn" onclick="cancelNpc()" style="font-size:.78rem;">Mégse</button>
+                        <button class="km-btn" onclick="saveNpc()" style="border-color:rgba(16,185,129,.4);color:var(--accent-hover)!important;font-size:.78rem;">💾 Mentés</button>
+                    </div>
+                </div>
+
+                <!-- Listák (a legördülő szerint látszik egy) -->
+                <div class="journal-list" data-view="notes">
+                    <div id="notesEmpty" style="text-align:center;color:var(--text-muted);font-size:.85rem;padding:1.5rem 0;">Betöltés…</div>
+                    <div id="notesList" style="display:flex;flex-direction:column;gap:.5rem;overflow-y:auto;max-height:52vh;"></div>
+                </div>
+                <div class="journal-list" data-view="locations" style="display:none;">
+                    <div id="locationsEmpty" style="text-align:center;color:var(--text-muted);font-size:.85rem;padding:1.5rem 0;">Betöltés…</div>
+                    <div id="locationsList" style="display:flex;flex-direction:column;gap:.5rem;overflow-y:auto;max-height:52vh;"></div>
+                </div>
+                <div class="journal-list" data-view="npcs" style="display:none;">
+                    <div id="npcsEmpty" style="text-align:center;color:var(--text-muted);font-size:.85rem;padding:1.5rem 0;">Betöltés…</div>
+                    <div id="npcsList" style="display:flex;flex-direction:column;gap:.5rem;overflow-y:auto;max-height:52vh;"></div>
+                </div>
             </div>
         </div>
     </div>
@@ -1022,7 +1084,7 @@ const sb = supabase.createClient(
             collapsedGroups = st.collapsedGroups || {};
             currentCombatIndex = typeof st.currentIndex === 'number' ? st.currentIndex : -1;
             saveDashboardState(); renderList(); updateTurnTracker();
-            if (typeof loadNotes === 'function') loadNotes();
+            if (typeof loadJournal === 'function') loadJournal();
         }
 
         window.loadCampaignList = async function(selectId) {
@@ -1069,7 +1131,7 @@ const sb = supabase.createClient(
             updateCampaignFields(null);
             document.getElementById('campaignName').value = '';
             renderCampaignSections();
-            loadNotes();
+            loadJournal();
             history.replaceState(null, '', 'km_pult.html');
         };
 
@@ -1382,6 +1444,227 @@ const sb = supabase.createClient(
             } catch (e) { /* nem kritikus */ }
         }
 
+        /* =========================================================
+           KAMPÁNYNAPLÓ — nézetváltó (Jegyzetek / Helyszínek / Szereplők)
+           ========================================================= */
+        let journalView = 'notes';
+        window.switchJournalView = function(view) {
+            journalView = view;
+            document.querySelectorAll('.journal-editor').forEach(e => e.style.display = 'none');
+            editingNoteId = null; editingLocationId = null; editingNpcId = null;
+            document.querySelectorAll('.journal-list').forEach(l => {
+                l.style.display = (l.dataset.view === view) ? 'block' : 'none';
+            });
+            loadJournal();
+        };
+        window.openJournalEditor = function() {
+            if (journalView === 'notes') openNoteEditor();
+            else if (journalView === 'locations') openLocationEditor();
+            else openNpcEditor();
+        };
+        window.loadJournal = function() {
+            if (journalView === 'notes') loadNotes();
+            else if (journalView === 'locations') loadLocations();
+            else loadNpcs();
+        };
+
+        /* =========================================================
+           HELYSZÍNEK (campaign_locations)
+           A data jsonb tárolja a csatolt battlemap/Ynev-térkép hivatkozást,
+           hogy KÉSŐBB egy néző-oldal képként meg tudja nyitni őket.
+           ========================================================= */
+        const LOC_TYPES = {
+            telepules:{label:'Település',icon:'🏘️'}, epulet:{label:'Épület',icon:'🏛️'},
+            vadon:{label:'Vadon',icon:'🌲'}, romok:{label:'Romok',icon:'🏚️'},
+            dungeon:{label:'Kazamata',icon:'⚔️'}, egyeb:{label:'Egyéb',icon:'📍'}
+        };
+        let locationsCache = [], editingLocationId = null;
+
+        async function loadAttachmentOptions(selBattlemap, selYnev) {
+            const sb = window._sb; if (!sb) return;
+            const bmSel = document.getElementById('locBattlemap');
+            const ymSel = document.getElementById('locYnevMap');
+            try {
+                const { data:bms } = await sb.from('battlemaps').select('id,name').order('updated_at',{ascending:false});
+                bmSel.innerHTML = '<option value="">— nincs battlemap —</option>' +
+                    (bms||[]).map(b => '<option value="'+b.id+'">'+esc(b.name)+'</option>').join('');
+                bmSel.value = selBattlemap || '';
+            } catch (e) {}
+            try {
+                const { data:yms } = await sb.from('campaign_maps').select('id,name').order('updated_at',{ascending:false});
+                ymSel.innerHTML = '<option value="">— nincs Ynev térkép —</option>' +
+                    (yms||[]).map(m => '<option value="'+m.id+'">'+esc(m.name)+'</option>').join('');
+                ymSel.value = selYnev || '';
+            } catch (e) {}
+        }
+
+        window.openLocationEditor = async function(loc) {
+            editingLocationId = loc ? loc.id : null;
+            const d = (loc && loc.data) || {};
+            document.getElementById('locName').value = loc ? (loc.name||'') : '';
+            document.getElementById('locType').value = d.type || 'telepules';
+            document.getElementById('locDesc').value = loc ? (loc.description||'') : '';
+            document.getElementById('locPublished').checked = loc ? !!loc.published : false;
+            document.getElementById('locationEditor').style.display = 'block';
+            await loadAttachmentOptions(d.battlemap_id || '', d.ynev_map_id || '');
+            document.getElementById('locName').focus();
+        };
+        window.cancelLocation = function() { editingLocationId = null; document.getElementById('locationEditor').style.display = 'none'; };
+        window.saveLocation = async function() {
+            const sb = window._sb; if (!sb) { alert('Nincs Supabase kapcsolat.'); return; }
+            const name = document.getElementById('locName').value.trim();
+            if (!name) { alert('Adj nevet a helyszínnek.'); return; }
+            const row = {
+                name,
+                description: document.getElementById('locDesc').value.trim() || null,
+                data: {
+                    type: document.getElementById('locType').value,
+                    battlemap_id: document.getElementById('locBattlemap').value || null,
+                    ynev_map_id: document.getElementById('locYnevMap').value || null
+                },
+                published: document.getElementById('locPublished').checked,
+                campaign_id: currentCampaignId || null,
+                owner_id: window._userId
+            };
+            if (editingLocationId) row.id = editingLocationId;
+            const { error } = await sb.from('campaign_locations').upsert(row);
+            if (error) { alert('Mentés sikertelen: ' + error.message); return; }
+            cancelLocation(); loadLocations();
+        };
+        window.editLocation = function(id) { const l = locationsCache.find(x=>x.id===id); if (l) openLocationEditor(l); };
+        window.deleteLocation = async function(id) {
+            if (!confirm('Törlöd ezt a helyszínt?')) return;
+            const { error } = await window._sb.from('campaign_locations').delete().eq('id', id);
+            if (error) { alert('Törlés sikertelen: ' + error.message); return; }
+            loadLocations();
+        };
+        window.toggleLocationPublished = async function(id) {
+            const l = locationsCache.find(x=>x.id===id); if (!l) return;
+            const { error } = await window._sb.from('campaign_locations').update({ published: !l.published }).eq('id', id);
+            if (error) { alert('Nem sikerült: ' + error.message); return; }
+            loadLocations();
+        };
+        window.loadLocations = async function() {
+            const sb = window._sb; if (!sb) return;
+            const emptyEl = document.getElementById('locationsEmpty'), listEl = document.getElementById('locationsList');
+            emptyEl.style.display = 'block'; emptyEl.textContent = 'Betöltés…'; listEl.innerHTML = '';
+            let q = sb.from('campaign_locations').select('*');
+            q = currentCampaignId ? q.eq('campaign_id', currentCampaignId) : q.is('campaign_id', null);
+            const { data, error } = await q.order('sort_order', { ascending: true }).order('name', { ascending: true });
+            if (error) { emptyEl.textContent = '⚠️ ' + error.message; return; }
+            locationsCache = data || []; renderLocations();
+        };
+        function renderLocations() {
+            const emptyEl = document.getElementById('locationsEmpty'), listEl = document.getElementById('locationsList');
+            listEl.innerHTML = '';
+            if (!locationsCache.length) {
+                emptyEl.style.display = 'block';
+                emptyEl.innerHTML = 'Még nincs helyszín.<br><span style="font-size:.8rem;opacity:.7;">Kattints a „＋ Új" gombra.</span>';
+                return;
+            }
+            emptyEl.style.display = 'none';
+            locationsCache.forEach(l => {
+                const t = LOC_TYPES[l.data && l.data.type] || LOC_TYPES.egyeb;
+                const badges = [];
+                if (l.data && l.data.battlemap_id) badges.push('⚔️ battlemap');
+                if (l.data && l.data.ynev_map_id) badges.push('🗺️ térkép');
+                const card = document.createElement('div');
+                card.style.cssText = 'background:rgba(255,255,255,.02);border:1px solid var(--border-color);border-left:3px solid #60a5fa;border-radius:.55rem;padding:.6rem .7rem;';
+                card.innerHTML =
+                    '<div style="display:flex;align-items:center;gap:.5rem;margin-bottom:.3rem;">' +
+                        '<span style="font-size:.85rem;font-weight:600;color:var(--text-main);flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;">' + t.icon + ' ' + esc(l.name) + '</span>' +
+                        (l.published ? '<span style="font-size:.64rem;color:var(--accent-hover);border:1px solid rgba(16,185,129,.35);border-radius:20px;padding:.05rem .4rem;white-space:nowrap;">látható</span>' : '') +
+                        '<button class="km-btn" style="padding:.15rem .4rem;font-size:.7rem;" title="Játékos-láthatóság" onclick="toggleLocationPublished(\'' + l.id + '\')">' + (l.published ? '👁️' : '🚫') + '</button>' +
+                        '<button class="km-btn" style="padding:.15rem .4rem;font-size:.7rem;" title="Szerkesztés" onclick="editLocation(\'' + l.id + '\')">✏️</button>' +
+                        '<button class="km-btn" style="padding:.15rem .4rem;font-size:.7rem;border-color:rgba(239,68,68,.3);color:#f87171!important;" title="Törlés" onclick="deleteLocation(\'' + l.id + '\')">🗑️</button>' +
+                    '</div>' +
+                    (l.description ? '<div style="font-size:.82rem;color:var(--text-muted);white-space:pre-wrap;line-height:1.45;margin-bottom:' + (badges.length ? '.35rem' : '0') + ';">' + esc(l.description) + '</div>' : '') +
+                    (badges.length ? '<div style="display:flex;gap:.35rem;">' + badges.map(b => '<span style="font-size:.68rem;color:var(--gold);background:rgba(212,175,55,.08);border-radius:4px;padding:.1rem .4rem;">' + b + '</span>').join('') + '</div>' : '');
+                listEl.appendChild(card);
+            });
+        }
+
+        /* =========================================================
+           SZEREPLŐK / NPC-k (campaign_npcs) — STAT NÉLKÜL, játékos-facing
+           ========================================================= */
+        let npcsCache = [], editingNpcId = null;
+
+        window.openNpcEditor = function(npc) {
+            editingNpcId = npc ? npc.id : null;
+            document.getElementById('npcName').value = npc ? (npc.name||'') : '';
+            document.getElementById('npcFeatures').value = npc ? (npc.features||'') : '';
+            document.getElementById('npcDesc').value = npc ? (npc.description||'') : '';
+            document.getElementById('npcPublished').checked = npc ? !!npc.published : false;
+            document.getElementById('npcEditor').style.display = 'block';
+            document.getElementById('npcName').focus();
+        };
+        window.cancelNpc = function() { editingNpcId = null; document.getElementById('npcEditor').style.display = 'none'; };
+        window.saveNpc = async function() {
+            const sb = window._sb; if (!sb) { alert('Nincs Supabase kapcsolat.'); return; }
+            const name = document.getElementById('npcName').value.trim();
+            if (!name) { alert('Adj nevet az NPC-nek.'); return; }
+            const row = {
+                name,
+                features: document.getElementById('npcFeatures').value.trim() || null,
+                description: document.getElementById('npcDesc').value.trim() || null,
+                published: document.getElementById('npcPublished').checked,
+                campaign_id: currentCampaignId || null,
+                owner_id: window._userId
+            };
+            if (editingNpcId) row.id = editingNpcId;
+            const { error } = await sb.from('campaign_npcs').upsert(row);
+            if (error) { alert('Mentés sikertelen: ' + error.message); return; }
+            cancelNpc(); loadNpcs();
+        };
+        window.editNpc = function(id) { const n = npcsCache.find(x=>x.id===id); if (n) openNpcEditor(n); };
+        window.deleteNpc = async function(id) {
+            if (!confirm('Törlöd ezt az NPC-t?')) return;
+            const { error } = await window._sb.from('campaign_npcs').delete().eq('id', id);
+            if (error) { alert('Törlés sikertelen: ' + error.message); return; }
+            loadNpcs();
+        };
+        window.toggleNpcPublished = async function(id) {
+            const n = npcsCache.find(x=>x.id===id); if (!n) return;
+            const { error } = await window._sb.from('campaign_npcs').update({ published: !n.published }).eq('id', id);
+            if (error) { alert('Nem sikerült: ' + error.message); return; }
+            loadNpcs();
+        };
+        window.loadNpcs = async function() {
+            const sb = window._sb; if (!sb) return;
+            const emptyEl = document.getElementById('npcsEmpty'), listEl = document.getElementById('npcsList');
+            emptyEl.style.display = 'block'; emptyEl.textContent = 'Betöltés…'; listEl.innerHTML = '';
+            let q = sb.from('campaign_npcs').select('*');
+            q = currentCampaignId ? q.eq('campaign_id', currentCampaignId) : q.is('campaign_id', null);
+            const { data, error } = await q.order('name', { ascending: true });
+            if (error) { emptyEl.textContent = '⚠️ ' + error.message; return; }
+            npcsCache = data || []; renderNpcs();
+        };
+        function renderNpcs() {
+            const emptyEl = document.getElementById('npcsEmpty'), listEl = document.getElementById('npcsList');
+            listEl.innerHTML = '';
+            if (!npcsCache.length) {
+                emptyEl.style.display = 'block';
+                emptyEl.innerHTML = 'Még nincs NPC.<br><span style="font-size:.8rem;opacity:.7;">Kattints a „＋ Új" gombra.</span>';
+                return;
+            }
+            emptyEl.style.display = 'none';
+            npcsCache.forEach(n => {
+                const card = document.createElement('div');
+                card.style.cssText = 'background:rgba(255,255,255,.02);border:1px solid var(--border-color);border-left:3px solid #c084fc;border-radius:.55rem;padding:.6rem .7rem;';
+                card.innerHTML =
+                    '<div style="display:flex;align-items:center;gap:.5rem;margin-bottom:.3rem;">' +
+                        '<span style="font-size:.85rem;font-weight:600;color:var(--text-main);flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;">👤 ' + esc(n.name) + '</span>' +
+                        (n.published ? '<span style="font-size:.64rem;color:var(--accent-hover);border:1px solid rgba(16,185,129,.35);border-radius:20px;padding:.05rem .4rem;white-space:nowrap;">látható</span>' : '') +
+                        '<button class="km-btn" style="padding:.15rem .4rem;font-size:.7rem;" title="Játékos-láthatóság" onclick="toggleNpcPublished(\'' + n.id + '\')">' + (n.published ? '👁️' : '🚫') + '</button>' +
+                        '<button class="km-btn" style="padding:.15rem .4rem;font-size:.7rem;" title="Szerkesztés" onclick="editNpc(\'' + n.id + '\')">✏️</button>' +
+                        '<button class="km-btn" style="padding:.15rem .4rem;font-size:.7rem;border-color:rgba(239,68,68,.3);color:#f87171!important;" title="Törlés" onclick="deleteNpc(\'' + n.id + '\')">🗑️</button>' +
+                    '</div>' +
+                    (n.features ? '<div style="font-size:.75rem;color:var(--gold);margin-bottom:' + (n.description ? '.3rem' : '0') + ';">🔎 ' + esc(n.features) + '</div>' : '') +
+                    (n.description ? '<div style="font-size:.82rem;color:var(--text-muted);white-space:pre-wrap;line-height:1.45;">' + esc(n.description) + '</div>' : '');
+                listEl.appendChild(card);
+            });
+        }
+
         window.generateName = function() {
             if (typeof nameDictionary === 'undefined') { alert("A 'magus_szotar.js' fájl hiányzik!"); return; }
             const race = document.getElementById('genRace').value;
@@ -1676,7 +1959,7 @@ const sb = supabase.createClient(
                     await onCampaignSelected(wanted);   // ez már hívja a loadNotes-t
                 } else {
                     await migrateLegacyNote();
-                    loadNotes();                        // kampányfüggetlen jegyzetek
+                    loadJournal();                      // kampányfüggetlen napló
                 }
             };
             if (window._userId) start();
