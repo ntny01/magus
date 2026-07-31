@@ -64,19 +64,20 @@ const sb = supabase.createClient(
         /* ===== BAL OLDALI NAVIGÁCIÓS SÁV ===== */
         .km-sidebar {
             position: sticky; top: 0; align-self: stretch;
-            flex-shrink: 0; width: 172px; box-sizing: border-box;
-            height: 100vh; overflow-y: auto;
+            flex-shrink: 0; width: 178px; box-sizing: border-box;
+            height: 100vh; overflow-x: hidden; overflow-y: auto;
             display: flex; flex-direction: column; gap: .25rem;
-            padding: 1.1rem .7rem;
+            padding: .8rem .7rem;
             background: rgba(15, 23, 42, 0.55);
             backdrop-filter: blur(14px);
             border-right: 1px solid var(--border-color);
             z-index: 5;
+            transition: width .18s ease;
         }
         .km-sidebar .side-label {
             font-family: 'Cinzel', serif; font-size: .6rem; letter-spacing: .14em;
             text-transform: uppercase; color: var(--text-muted);
-            padding: .5rem .5rem .2rem;
+            padding: .5rem .5rem .2rem; white-space: nowrap;
         }
         .side-btn {
             display: flex; align-items: center; gap: .55rem;
@@ -84,16 +85,43 @@ const sb = supabase.createClient(
             background: transparent; border: 1px solid transparent;
             color: var(--text-main); font-size: .82rem; font-weight: 600;
             text-align: left; padding: .5rem .55rem; border-radius: .55rem;
-            cursor: pointer; transition: all .15s;
+            cursor: pointer; transition: all .15s; overflow: hidden;
         }
         .side-btn .side-ico { font-size: 1rem; width: 1.3rem; text-align: center; flex-shrink: 0; }
+        .side-btn .side-txt { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
         .side-btn:hover {
             background: rgba(16, 185, 129, 0.1);
             border-color: rgba(16, 185, 129, 0.3);
         }
-        .side-spacer { flex: 1 1 auto; }
-        .side-json-row { display: flex; gap: .4rem; }
-        .side-json-row .side-btn { justify-content: center; gap: .3rem; }
+        .side-select {
+            width: 100%; box-sizing: border-box; margin-bottom: .15rem;
+            border-color: rgba(212,175,55,.3) !important; font-size: .8rem;
+        }
+        .side-campaign .side-btn { border-color: rgba(212,175,55,.28); }
+        .side-spacer { flex: 1 1 auto; min-height: .5rem; }
+        .side-json-row { display: flex; flex-direction: column; gap: .3rem; }
+
+        /* Össecsukó nyíl */
+        .side-toggle {
+            align-self: flex-end; flex-shrink: 0;
+            width: 26px; height: 26px; margin-bottom: .35rem;
+            display: flex; align-items: center; justify-content: center;
+            background: transparent; border: 1px solid var(--border-color);
+            color: var(--text-muted); border-radius: 6px; cursor: pointer;
+            font-size: .72rem; transition: all .15s;
+        }
+        .side-toggle:hover { color: var(--gold); border-color: rgba(212,175,55,.4); }
+
+        /* Össecsukott állapot: ikon-sáv (csak desktop/tablet) */
+        @media (min-width: 768px) {
+            body.sidebar-collapsed .km-sidebar { width: 58px; padding-left: .45rem; padding-right: .45rem; }
+            body.sidebar-collapsed .side-label,
+            body.sidebar-collapsed .side-txt,
+            body.sidebar-collapsed .side-select { display: none; }
+            body.sidebar-collapsed .side-btn { justify-content: center; gap: 0; padding-left: .4rem; padding-right: .4rem; }
+            body.sidebar-collapsed .side-json-row { flex-direction: column; gap: .25rem; }
+            body.sidebar-collapsed .side-toggle { align-self: center; }
+        }
 
         /* Fő tartalom oszlop az oldalsáv mellett */
         .km-main {
@@ -125,7 +153,8 @@ const sb = supabase.createClient(
         }
 
         header {
-            display: flex; flex-direction: row; align-items: center; gap: 1rem;
+            display: flex; flex-direction: row; align-items: center;
+            justify-content: space-between; gap: 1rem;
             border-bottom: 1px solid var(--border-color); padding-bottom: 0.75rem;
         }
 
@@ -384,9 +413,13 @@ const sb = supabase.createClient(
                 border-right: none; border-bottom: 1px solid var(--border-color);
             }
             .km-sidebar .side-label { display: none; }
+            .km-sidebar .side-toggle { display: none; }
+            .km-sidebar .side-campaign { display: contents; }
+            .side-select { width: auto; max-width: 190px; flex: 0 0 auto; margin-bottom: 0; }
             .side-btn { width: auto; flex: 0 0 auto; white-space: nowrap; min-height: 40px; }
+            .side-btn .side-txt { display: inline; }
             .side-spacer { display: none; }
-            .side-json-row { flex: 0 0 auto; }
+            .side-json-row { flex: 0 0 auto; flex-direction: row; gap: .4rem; }
 
             .km-main {
                 padding: 0.75rem !important;
@@ -616,23 +649,35 @@ const sb = supabase.createClient(
 
     <!-- ===== BAL OLDALI NAVIGÁCIÓS SÁV ===== -->
     <aside class="km-sidebar">
+        <button class="side-toggle" id="sideToggle" onclick="toggleSidebar()" title="Menü össecsukása" aria-label="Menü be- és kikapcsolása">◀</button>
+
+        <span class="side-label">Kampány</span>
+        <div class="side-campaign">
+            <select id="campaignSelect" class="km-input side-select" title="Aktív kampány"
+                    onchange="onCampaignSelected(this.value)">
+                <option value="">— nincs kampány —</option>
+            </select>
+            <button class="side-btn" onclick="saveCampaign()" title="Kampány mentése (jegyzetek + harcrend + hozzárendelt elemek)"><span class="side-ico">💾</span><span class="side-txt">Mentés</span></button>
+            <button class="side-btn" onclick="openCampaignPanel()" title="Kampány tartalma (battlemapek, sablonok, karakterek)"><span class="side-ico">🎬</span><span class="side-txt">Tartalom</span></button>
+        </div>
+
         <span class="side-label">Nézetek</span>
-        <button class="side-btn" onclick="openEmbeddedView('mapView')"><span class="side-ico">🗺️</span> Térkép</button>
-        <button class="side-btn" onclick="openEmbeddedView('codexView')"><span class="side-ico">📚</span> Kódex</button>
-        <button class="side-btn" onclick="openBattlemapPanel()"><span class="side-ico">⚔️</span> Battlemapek</button>
-        <button class="side-btn" onclick="openEmbeddedView('sablonView')"><span class="side-ico">📐</span> Sablon</button>
+        <button class="side-btn" onclick="openEmbeddedView('mapView')" title="Ynev térkép"><span class="side-ico">🗺️</span><span class="side-txt">Térkép</span></button>
+        <button class="side-btn" onclick="openEmbeddedView('codexView')" title="Kódex"><span class="side-ico">📚</span><span class="side-txt">Kódex</span></button>
+        <button class="side-btn" onclick="openBattlemapPanel()" title="Battlemapek"><span class="side-ico">⚔️</span><span class="side-txt">Battlemapek</span></button>
+        <button class="side-btn" onclick="openEmbeddedView('sablonView')" title="Sablon editor"><span class="side-ico">📐</span><span class="side-txt">Sablon</span></button>
 
         <span class="side-label">Karakterek</span>
-        <button class="side-btn" id="cardPanelBtn" onclick="toggleCardPanel()"><span class="side-ico">🃏</span> Kártyák</button>
-        <button class="side-btn" onclick="document.getElementById('importCharFile').click()" title="Karaktercsoport betöltése JSON-ból"><span class="side-ico">👤</span> Csoport</button>
+        <button class="side-btn" id="cardPanelBtn" onclick="toggleCardPanel()" title="Karakterkártyák"><span class="side-ico">🃏</span><span class="side-txt">Kártyák</span></button>
+        <button class="side-btn" onclick="document.getElementById('importCharFile').click()" title="Karaktercsoport betöltése JSON-ból"><span class="side-ico">👤</span><span class="side-txt">Csoport</span></button>
         <input type="file" id="importCharFile" style="display:none;" onchange="importIndividualGroup(event)">
 
         <div class="side-spacer"></div>
 
         <span class="side-label">Biztonsági mentés</span>
         <div class="side-json-row">
-            <button class="side-btn" onclick="exportData()" title="Teljes pult exportálása JSON fájlba"><span class="side-ico">⬇</span> JSON</button>
-            <button class="side-btn" onclick="document.getElementById('importFile').click()" title="Teljes pult visszatöltése JSON fájlból"><span class="side-ico">⬆</span> JSON</button>
+            <button class="side-btn" onclick="exportData()" title="Teljes pult exportálása JSON fájlba"><span class="side-ico">⬇</span><span class="side-txt">JSON</span></button>
+            <button class="side-btn" onclick="document.getElementById('importFile').click()" title="Teljes pult visszatöltése JSON fájlból"><span class="side-ico">⬆</span><span class="side-txt">JSON</span></button>
         </div>
         <input type="file" id="importFile" style="display:none;" onchange="importData(event)">
     </aside>
@@ -640,20 +685,6 @@ const sb = supabase.createClient(
     <div class="km-main">
     <header>
         <h1 id="mainHeaderTitle">🛡️ Kalandmester Pult</h1>
-
-        <div class="km-toolbar">
-            <div class="tb-group tb-group--campaign">
-                <span class="tb-label">Kampány</span>
-                <select id="campaignSelect" class="km-input" title="Aktív kampány"
-                        style="max-width:200px;padding:.4rem .5rem;font-size:.8rem;border-color:rgba(212,175,55,.3)!important;"
-                        onchange="onCampaignSelected(this.value)">
-                    <option value="">— nincs kampány —</option>
-                </select>
-                <button class="km-btn" onclick="saveCampaign()" title="Kampány mentése (jegyzetek + harcrend + hozzárendelt elemek)"
-                        style="border-color:rgba(212,175,55,.4);color:var(--gold)!important;">💾 Mentés</button>
-                <button class="km-btn" onclick="openCampaignPanel()" title="Kampány tartalmának kezelése (battlemapek, sablonok, karakterek hozzárendelése)">🎬 Tartalom</button>
-            </div>
-        </div>
 
         <div class="header-user">
             <span id="auth-username" style="font-size:.75rem;color:#d4af37;font-family:'Cinzel',serif;letter-spacing:.06em;white-space:nowrap;"></span>
@@ -896,6 +927,23 @@ const sb = supabase.createClient(
         window.closeEmbeddedView = function(viewId) {
             document.getElementById(viewId).style.display = 'none';
         };
+
+        /* Oldalsáv össecsukása / kinyitása (állapot megjegyezve) */
+        window.toggleSidebar = function() {
+            const collapsed = document.body.classList.toggle('sidebar-collapsed');
+            const t = document.getElementById('sideToggle');
+            if (t) { t.textContent = collapsed ? '▶' : '◀'; t.title = collapsed ? 'Menü kinyitása' : 'Menü össecsukása'; }
+            try { localStorage.setItem('kmSidebarCollapsed', collapsed ? '1' : '0'); } catch (e) {}
+        };
+        (function restoreSidebar() {
+            try {
+                if (localStorage.getItem('kmSidebarCollapsed') === '1') {
+                    document.body.classList.add('sidebar-collapsed');
+                    const t = document.getElementById('sideToggle');
+                    if (t) { t.textContent = '▶'; t.title = 'Menü kinyitása'; }
+                }
+            } catch (e) {}
+        })();
 
         /* ===== BATTLEMAP GALÉRIA =====
            A bélyegképeket a battlemaps táblából olvassuk. A nagy terep-kép a
