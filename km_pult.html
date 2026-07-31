@@ -797,22 +797,29 @@ const sb = supabase.createClient(
                 </div>
             </div>
 
-            <div class="km-panel">
-                <h3>🎲 Titkos KM Dobások</h3>
-                <div class="dice-grid">
-                    <button class="dice-btn" onclick="rollDice(6)">k6</button>
-                    <button class="dice-btn" onclick="rollDice(10)">k10</button>
-                    <button class="dice-btn" onclick="rollDice(20)">k20</button>
-                    <button class="dice-btn" onclick="rollDice(100)">k100</button>
+            <div class="km-panel" id="notesPanel">
+                <h3>📝 Kaland Jegyzetek
+                    <button class="km-btn" style="padding:.25rem .7rem;font-size:.75rem;" onclick="openNoteEditor()">＋ Új jegyzet</button>
+                </h3>
+                <div id="noteEditor" style="display:none; background:rgba(0,0,0,.2); border:1px solid var(--border-color); border-radius:.6rem; padding:.7rem; margin-bottom:.75rem;">
+                    <div style="display:flex; gap:.5rem; margin-bottom:.5rem;">
+                        <select id="noteKind" class="km-input" style="flex:0 0 auto; width:auto; font-size:.8rem;">
+                            <option value="jegyzet">📝 Jegyzet</option>
+                            <option value="teendo">✅ Teendő</option>
+                            <option value="info">ℹ️ Infó</option>
+                            <option value="poszt">📣 Poszt-vázlat</option>
+                        </select>
+                        <input type="text" id="noteTitle" class="km-input" placeholder="Cím (opcionális)" style="flex:1;">
+                    </div>
+                    <textarea id="noteBody" class="km-textarea" placeholder="Jegyzet szövege…" style="min-height:90px; margin-bottom:.5rem;"></textarea>
+                    <div style="display:flex; gap:.5rem; justify-content:flex-end; align-items:center;">
+                        <span id="noteEditorHint" style="flex:1; font-size:.72rem; color:var(--text-muted);"></span>
+                        <button class="km-btn" onclick="cancelNote()" style="font-size:.78rem;">Mégse</button>
+                        <button class="km-btn" onclick="saveNote()" style="border-color:rgba(16,185,129,.4);color:var(--accent-hover)!important;font-size:.78rem;">💾 Mentés</button>
+                    </div>
                 </div>
-                <div style="text-align:center; font-size:0.9rem;">
-                    Eredmény: <span id="diceResult" style="font-size:1.4rem; font-weight:700; color:var(--accent-hover);">--</span>
-                </div>
-            </div>
-
-            <div class="km-panel" style="flex:1; min-height: 0;">
-                <h3>📝 Kaland Jegyzetek</h3>
-                <textarea id="kmNotes" class="km-textarea" placeholder="Írd ide a kaland részleteit, NJK-kat, aktuális eseményeket..."></textarea>
+                <div id="notesEmpty" style="text-align:center;color:var(--text-muted);font-size:.85rem;padding:1.5rem 0;">Betöltés…</div>
+                <div id="notesList" style="display:flex;flex-direction:column;gap:.5rem;overflow-y:auto;max-height:52vh;"></div>
             </div>
         </div>
     </div>
@@ -901,7 +908,6 @@ const sb = supabase.createClient(
     </div>
 
     <script>
-        const kmNotes = document.getElementById('kmNotes');
         const groupNameInput = document.getElementById('groupName');
         const combatName = document.getElementById('combatName');
         const combatMod = document.getElementById('combatMod');
@@ -1002,9 +1008,9 @@ const sb = supabase.createClient(
         };
 
         // A KM Pult munkaállapota, amit a kampány eltárol.
+        // (A jegyzetek MÁR NEM itt vannak, hanem a campaign_notes táblában.)
         function collectCampaignState() {
             return {
-                notes: kmNotes.value,
                 combatants: combatants,
                 collapsedGroups: collapsedGroups,
                 currentIndex: currentCombatIndex
@@ -1012,11 +1018,11 @@ const sb = supabase.createClient(
         }
         function applyCampaignState(st) {
             st = st || {};
-            kmNotes.value = st.notes || '';
             combatants = Array.isArray(st.combatants) ? st.combatants : [];
             collapsedGroups = st.collapsedGroups || {};
             currentCombatIndex = typeof st.currentIndex === 'number' ? st.currentIndex : -1;
             saveDashboardState(); renderList(); updateTurnTracker();
+            if (typeof loadNotes === 'function') loadNotes();
         }
 
         window.loadCampaignList = async function(selectId) {
@@ -1058,11 +1064,12 @@ const sb = supabase.createClient(
         }
 
         window.newCampaign = function() {
-            if (!confirm('Új kampány indítása? A jelenlegi jegyzet és harcrend megmarad, de új kampányba fog mentődni.')) return;
+            if (!confirm('Új kampány indítása? A jelenlegi harcrend megmarad, de új kampányba fog mentődni.')) return;
             currentCampaignId = null;
             updateCampaignFields(null);
             document.getElementById('campaignName').value = '';
             renderCampaignSections();
+            loadNotes();
             history.replaceState(null, '', 'km_pult.html');
         };
 
@@ -1241,7 +1248,6 @@ const sb = supabase.createClient(
         };
 
         function loadDashboardState() {
-            kmNotes.value = localStorage.getItem('magus_km_notes') || '';
             const saved = localStorage.getItem('magus_km_combatants');
             if (saved) { combatants = JSON.parse(saved); }
             const savedGroups = localStorage.getItem('magus_km_collapsed_groups');
@@ -1253,17 +1259,128 @@ const sb = supabase.createClient(
         }
 
         function saveDashboardState() {
-            localStorage.setItem('magus_km_notes', kmNotes.value);
             localStorage.setItem('magus_km_combatants', JSON.stringify(combatants));
             localStorage.setItem('magus_km_collapsed_groups', JSON.stringify(collapsedGroups));
             localStorage.setItem('magus_km_current_index', currentCombatIndex);
         }
 
-        kmNotes.addEventListener('input', saveDashboardState);
-
-        window.rollDice = function(type) {
-            document.getElementById('diceResult').innerText = `[k${type}]: ${Math.floor(Math.random() * type) + 1}`;
+        /* =========================================================
+           KALAND-JEGYZETEK (campaign_notes tábla, KM-privát)
+           Blokkok típussal; az aktuális kampányhoz (vagy campaign
+           nélkül a KM-hez) kötve. A feedre posztolás külön lépés lesz.
+           ========================================================= */
+        const NOTE_KINDS = {
+            jegyzet: { label: 'Jegyzet',       icon: '📝', color: '#94a3b8' },
+            teendo:  { label: 'Teendő',        icon: '✅', color: '#fbbf24' },
+            info:    { label: 'Infó',          icon: 'ℹ️', color: '#60a5fa' },
+            poszt:   { label: 'Poszt-vázlat',  icon: '📣', color: '#d4af37' }
         };
+        let notesCache = [];
+        let editingNoteId = null;
+
+        window.openNoteEditor = function(note) {
+            editingNoteId = note ? note.id : null;
+            document.getElementById('noteKind').value  = note ? note.kind : 'jegyzet';
+            document.getElementById('noteTitle').value = note ? (note.title || '') : '';
+            document.getElementById('noteBody').value  = note ? (note.body || '') : '';
+            document.getElementById('noteEditorHint').textContent =
+                currentCampaignId ? '' : '⚠ Nincs kiválasztott kampány — kampányfüggetlen jegyzet lesz.';
+            document.getElementById('noteEditor').style.display = 'block';
+            document.getElementById('noteTitle').focus();
+        };
+        window.cancelNote = function() {
+            editingNoteId = null;
+            document.getElementById('noteEditor').style.display = 'none';
+        };
+        window.saveNote = async function() {
+            const sb = window._sb; if (!sb) { alert('Nincs Supabase kapcsolat.'); return; }
+            const body = document.getElementById('noteBody').value.trim();
+            const title = document.getElementById('noteTitle').value.trim();
+            if (!body && !title) { alert('Írj be legalább egy címet vagy szöveget.'); return; }
+            const row = {
+                kind: document.getElementById('noteKind').value,
+                title: title || null,
+                body: body || null,
+                campaign_id: currentCampaignId || null,
+                owner_id: window._userId
+            };
+            if (editingNoteId) row.id = editingNoteId;
+            const { error } = await sb.from('campaign_notes').upsert(row);
+            if (error) { alert('Jegyzet mentése sikertelen: ' + error.message); return; }
+            cancelNote();
+            loadNotes();
+        };
+        window.editNote = function(id) {
+            const n = notesCache.find(x => x.id === id);
+            if (n) openNoteEditor(n);
+        };
+        window.deleteNote = async function(id) {
+            if (!confirm('Törlöd ezt a jegyzetet?')) return;
+            const { error } = await window._sb.from('campaign_notes').delete().eq('id', id);
+            if (error) { alert('Törlés sikertelen: ' + error.message); return; }
+            loadNotes();
+        };
+        window.toggleNotePin = async function(id) {
+            const n = notesCache.find(x => x.id === id); if (!n) return;
+            const { error } = await window._sb.from('campaign_notes')
+                .update({ pinned: !n.pinned }).eq('id', id);
+            if (error) { alert('Nem sikerült: ' + error.message); return; }
+            loadNotes();
+        };
+
+        window.loadNotes = async function() {
+            const sb = window._sb; if (!sb) return;
+            const listEl = document.getElementById('notesList');
+            const emptyEl = document.getElementById('notesEmpty');
+            emptyEl.style.display = 'block'; emptyEl.textContent = 'Betöltés…';
+            listEl.innerHTML = '';
+            let q = sb.from('campaign_notes').select('*');
+            q = currentCampaignId ? q.eq('campaign_id', currentCampaignId) : q.is('campaign_id', null);
+            const { data, error } = await q.order('pinned', { ascending: false }).order('updated_at', { ascending: false });
+            if (error) { emptyEl.textContent = '⚠️ ' + error.message; return; }
+            notesCache = data || [];
+            renderNotes();
+        };
+
+        function renderNotes() {
+            const listEl = document.getElementById('notesList');
+            const emptyEl = document.getElementById('notesEmpty');
+            listEl.innerHTML = '';
+            if (!notesCache.length) {
+                emptyEl.style.display = 'block';
+                emptyEl.innerHTML = 'Még nincs jegyzet.<br><span style="font-size:.8rem;opacity:.7;">Kattints a „＋ Új jegyzet" gombra.</span>';
+                return;
+            }
+            emptyEl.style.display = 'none';
+            notesCache.forEach(n => {
+                const meta = NOTE_KINDS[n.kind] || NOTE_KINDS.jegyzet;
+                const card = document.createElement('div');
+                card.style.cssText = 'background:rgba(255,255,255,.02);border:1px solid var(--border-color);border-left:3px solid ' + meta.color + ';border-radius:.55rem;padding:.6rem .7rem;';
+                card.innerHTML =
+                    '<div style="display:flex;align-items:center;gap:.5rem;margin-bottom:.35rem;">' +
+                        '<span style="font-size:.68rem;font-weight:600;letter-spacing:.04em;color:' + meta.color + ';white-space:nowrap;">' + meta.icon + ' ' + meta.label + '</span>' +
+                        (n.title ? '<span style="flex:1;font-weight:600;font-size:.85rem;color:var(--text-main);overflow:hidden;text-overflow:ellipsis;white-space:nowrap;">' + esc(n.title) + '</span>' : '<span style="flex:1;"></span>') +
+                        '<button class="km-btn" style="padding:.15rem .4rem;font-size:.7rem;" title="Rögzítés" onclick="toggleNotePin(\'' + n.id + '\')">' + (n.pinned ? '📌' : '📍') + '</button>' +
+                        '<button class="km-btn" style="padding:.15rem .4rem;font-size:.7rem;" title="Szerkesztés" onclick="editNote(\'' + n.id + '\')">✏️</button>' +
+                        '<button class="km-btn" style="padding:.15rem .4rem;font-size:.7rem;border-color:rgba(239,68,68,.3);color:#f87171!important;" title="Törlés" onclick="deleteNote(\'' + n.id + '\')">🗑️</button>' +
+                    '</div>' +
+                    (n.body ? '<div style="font-size:.82rem;color:var(--text-muted);white-space:pre-wrap;line-height:1.45;">' + esc(n.body) + '</div>' : '');
+                listEl.appendChild(card);
+            });
+        }
+
+        // A régi (egy nagy textarea) jegyzetet egyszer átemeljük egy blokkba.
+        async function migrateLegacyNote() {
+            const legacy = localStorage.getItem('magus_km_notes');
+            if (!legacy || !legacy.trim() || !window._sb || !window._userId) return;
+            try {
+                const { error } = await window._sb.from('campaign_notes').insert({
+                    kind: 'jegyzet', title: 'Régi jegyzet', body: legacy.trim(),
+                    campaign_id: null, owner_id: window._userId
+                });
+                if (!error) localStorage.removeItem('magus_km_notes');
+            } catch (e) { /* nem kritikus */ }
+        }
 
         window.generateName = function() {
             if (typeof nameDictionary === 'undefined') { alert("A 'magus_szotar.js' fájl hiányzik!"); return; }
@@ -1500,7 +1617,7 @@ const sb = supabase.createClient(
         });
 
         window.exportData = function() {
-            const pack = { notes: kmNotes.value, combatants: combatants };
+            const pack = { combatants: combatants };
             const dataStr = "data:text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(pack));
             const a = document.createElement('a'); a.setAttribute("href", dataStr); a.setAttribute("download", "magus_km_pult_mentes.json");
             document.body.appendChild(a); a.click(); a.remove();
@@ -1512,7 +1629,6 @@ const sb = supabase.createClient(
                 try {
                     const imported = JSON.parse(evt.target.result);
                     if (imported) {
-                        if(imported.notes !== undefined) kmNotes.value = imported.notes;
                         if(imported.combatants !== undefined) combatants = imported.combatants;
                         currentCombatIndex = -1;
                         saveDashboardState(); renderList(); updateTurnTracker();
@@ -1557,7 +1673,10 @@ const sb = supabase.createClient(
                 const wanted = new URLSearchParams(location.search).get('campaign');
                 if (wanted) {
                     document.getElementById('campaignSelect').value = wanted;
-                    await onCampaignSelected(wanted);
+                    await onCampaignSelected(wanted);   // ez már hívja a loadNotes-t
+                } else {
+                    await migrateLegacyNote();
+                    loadNotes();                        // kampányfüggetlen jegyzetek
                 }
             };
             if (window._userId) start();
