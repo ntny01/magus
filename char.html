@@ -311,6 +311,41 @@ const sb = supabase.createClient(
     }
     .add-row-btn:hover{border-color:var(--gold);color:var(--gold);background:rgba(212,175,55,.06);}
 
+    /* ===== FELSZERELÉS SOR ===== */
+    .equip-list{display:flex;flex-direction:column;gap:.28rem;}
+    .equip-item{display:flex;align-items:center;gap:.3rem;}
+    .equip-name{
+      flex:1;min-width:0;background:transparent;border:none;
+      border-bottom:1px solid rgba(255,255,255,.12);color:var(--text);
+      font-size:.82rem;padding:.15rem .2rem;outline:none;font-family:inherit;
+    }
+    .equip-name:focus{border-bottom-color:var(--accent);}
+    .equip-qbtn{
+      width:22px;height:22px;flex:0 0 auto;padding:0;line-height:1;
+      border:1px solid rgba(255,255,255,.15);background:rgba(255,255,255,.03);
+      color:var(--gold);border-radius:5px;cursor:pointer;font-size:.9rem;
+      display:flex;align-items:center;justify-content:center;
+    }
+    .equip-qbtn:hover{border-color:var(--gold);background:rgba(212,175,55,.1);}
+    .equip-qty{
+      width:34px;flex:0 0 auto;text-align:center;background:rgba(0,0,0,.25);
+      border:1px solid rgba(255,255,255,.12);border-radius:5px;color:var(--text);
+      font-size:.8rem;padding:.15rem 0;outline:none;font-family:inherit;
+    }
+    .equip-qty:focus{border-color:var(--accent);}
+    .equip-del{
+      background:none;border:none;color:rgba(239,68,68,.3);cursor:pointer;
+      font-size:.75rem;padding:0 .2rem;flex-shrink:0;line-height:1;transition:color .15s;
+    }
+    .equip-del:hover{color:var(--red);}
+    .equip-add{
+      align-self:flex-start;margin-top:.1rem;background:transparent;
+      border:1px dashed rgba(212,175,55,.3);color:var(--gold);
+      font-size:.72rem;padding:.25rem .6rem;border-radius:5px;cursor:pointer;font-family:inherit;
+    }
+    .equip-add:hover{border-color:var(--gold);background:rgba(212,175,55,.06);}
+    .equip-empty{font-size:.74rem;color:rgba(255,255,255,.35);padding:.1rem 0;}
+
     /* Add box / section */
     .add-box-placeholder{
       border:1px dashed rgba(255,255,255,.07);border-radius:14px;
@@ -893,6 +928,7 @@ function getInfoFieldById(id) {
    ============================== */
 function isRowHasValue(row) {
   if (row.type === 'dot' || row.type === 'header') return row.value > 0;
+  if (row.type === 'equipment') return Array.isArray(row.items) && row.items.some(i => (i.name || '').trim().length > 0);
   return (row.value || '').trim().length > 0;
 }
 
@@ -1090,16 +1126,19 @@ function renderBox(box, grid, sec) {
     {t:'text',  l:'___ Szöveges sor'},
     {t:'textarea',l:'≡ Szövegmező'},
     {t:'header',l:'◉ Fejléc sáv'},
+    {t:'equipment',l:'🎒 Felszerelés'},
   ].forEach(({t,l}) => {
     const b = document.createElement('button');
     b.className='add-row-btn'; b.innerText=l;
     b.onclick = () => {
-      box.rows.push({
+      const row = {
         id:uid(), type:t,
-        label: t==='dot'?'Új képesség': t==='header'?'Fejléc':'',
+        label: t==='dot'?'Új képesség': t==='header'?'Fejléc': t==='equipment'?'Felszerelés':'',
         value: (t==='dot'||t==='header') ? 0 : '',
         max:   t==='header' ? 10 : 5
-      });
+      };
+      if (t==='equipment') row.items = [];
+      box.rows.push(row);
       renderAll();
     };
     picker.appendChild(b);
@@ -1166,6 +1205,52 @@ function buildRow(row, box) {
     renderSymbols(sw, row);
     const icon = makeFieldDescIcon(row.id, row.label);
     wrap.append(li, sw, icon, makeDelRowBtn(row,box));
+
+  } else if (row.type === 'equipment') {
+    wrap.style.cssText='flex-direction:column;align-items:stretch;display:flex;gap:.35rem;';
+    if (!Array.isArray(row.items)) row.items = [];
+
+    const head = document.createElement('div');
+    head.style.cssText='display:flex;align-items:center;gap:.38rem;';
+    const li = makeRowLabelInput(row); li.placeholder='Felszerelés címe...';
+    head.append(li, makeDelRowBtn(row, box));
+    wrap.appendChild(head);
+
+    const list = document.createElement('div'); list.className='equip-list';
+    const renderItems = () => {
+      list.innerHTML='';
+      if (!row.items.length) {
+        const e = document.createElement('div'); e.className='equip-empty'; e.textContent='Nincs tárgy.';
+        list.appendChild(e);
+      }
+      row.items.forEach((it, idx) => {
+        const r = document.createElement('div'); r.className='equip-item';
+        const name = document.createElement('input');
+        name.type='text'; name.className='equip-name'; name.value=it.name||''; name.placeholder='Tárgy neve...';
+        name.oninput = e => { it.name=e.target.value; window.scheduleSave(); };
+        const minus = document.createElement('button');
+        minus.className='equip-qbtn edit-only'; minus.textContent='−'; minus.title='Kevesebb';
+        minus.onclick = () => { it.qty=Math.max(0,(parseInt(it.qty)||0)-1); renderItems(); window.scheduleSave(); };
+        const qty = document.createElement('input');
+        qty.type='text'; qty.className='equip-qty'; qty.value=(it.qty!=null?it.qty:1);
+        qty.oninput = e => { it.qty=e.target.value.replace(/[^0-9]/g,''); window.scheduleSave(); };
+        const plus = document.createElement('button');
+        plus.className='equip-qbtn edit-only'; plus.textContent='+'; plus.title='Több';
+        plus.onclick = () => { it.qty=(parseInt(it.qty)||0)+1; renderItems(); window.scheduleSave(); };
+        const rm = document.createElement('button');
+        rm.className='equip-del edit-only'; rm.textContent='✕'; rm.title='Tárgy törlése';
+        rm.onclick = () => { row.items.splice(idx,1); renderItems(); window.scheduleSave(); };
+        r.append(name, minus, qty, plus, rm);
+        list.appendChild(r);
+      });
+    };
+    renderItems();
+    wrap.appendChild(list);
+
+    const add = document.createElement('button');
+    add.className='equip-add edit-only'; add.textContent='+ Tárgy';
+    add.onclick = () => { row.items.push({name:'',qty:1}); renderItems(); window.scheduleSave(); };
+    wrap.appendChild(add);
   }
   return wrap;
 }
