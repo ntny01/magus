@@ -434,6 +434,11 @@ const sb = supabase.createClient(
     .sym.filled{text-shadow:0 0 6px currentColor;}
     .sheet-photo .sym,.sheet-locked .sym{pointer-events:none;}
 
+    /* Felszerelés: lezárt ÉS fotó módban nem szerkeszthető (a +/− gombok .edit-only-k) */
+    .sheet-locked .equip-name, .sheet-locked .equip-qty {
+      pointer-events:none; border-color:transparent!important; background:transparent!important;
+    }
+
     /* Kifejezetten FOTÓ MÓD (minden input mező rejtve/letiltva) */
     .sheet-photo .info-input,
     .sheet-photo .combo-input,
