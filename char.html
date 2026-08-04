@@ -775,6 +775,10 @@ const sb = supabase.createClient(
   </div>
 </header>
 
+<div id="henchBanner" style="display:none;align-items:center;gap:.4rem;justify-content:center;flex-wrap:wrap;
+     background:rgba(192,132,252,.1);border-bottom:1px solid rgba(192,132,252,.3);
+     color:#e2d9f5;font-size:.82rem;padding:.5rem 1rem;"></div>
+
 <div class="sheet-outer" id="sheet-wrapper">
 
   <div class="vtitle-wrap">
@@ -1936,9 +1940,31 @@ renderAll();
     closeAllDD()
     if (!confirm('Új karaktert kezdesz? A jelenlegi mentetlen változtatások elvesznek.')) return
     window._currentSheetId = null
+    window._currentParentId = null
     window._currentPublished = false
     updatePublishBtn()
     resetSheet()
+  }
+
+  // ─── CSATLÓS LÉTREHOZÁSA (a megadott gazdához) ──────────────────
+  window.createHenchman = async function(parentId) {
+    closeAllDD()
+    if (!window._sb || !window._userProfile) return
+    const { data: { user } } = await window._sb.auth.getUser()
+    if (!user) return
+    const freshData = {
+      vampireTitle: 'CSATLÓS',
+      infoFields: JSON.parse(JSON.stringify(DEFAULT_INFO_FIELDS)),
+      sections: JSON.parse(JSON.stringify(DEFAULT_SECTIONS)),
+      viewMode: 0
+    }
+    const { data, error } = await window._sb.from('character_sheets').insert({
+      user_id: user.id, name: 'Új csatlós', faj: '', kaszt: '',
+      data: freshData, is_template: false, template_visible: false, parent_id: parentId
+    }).select().single()
+    if (error || !data) { console.error('Csatlós létrehozási hiba:', error); alert('Csatlós létrehozása sikertelen.'); return }
+    await window.loadChar(data.id, false)
+    await window.loadCharList()
   }
 
   // ─── KARAKTER MENTÉS ────────────────────────────────────────────
@@ -1955,6 +1981,7 @@ renderAll();
         faj: getInfoVal('faj') || '',
         kaszt: getInfoVal('kaszt') || '',
         data: sheetData,
+        parent_id: window._currentParentId || null,
         updated_at: new Date().toISOString()
       }).eq('id', window._currentSheetId).eq('user_id', user.id)
       if (!error) window.showSaveIndicator()
@@ -1968,7 +1995,8 @@ renderAll();
         kaszt: getInfoVal('kaszt') || '',
         data: sheetData,
         is_template: false,
-        template_visible: false
+        template_visible: false,
+        parent_id: window._currentParentId || null
       }).select().single()
       if (!error && data) {
         window._currentSheetId = data.id
@@ -1987,10 +2015,12 @@ renderAll();
       sheetData = data.data
       if (isTemplate) {
         window._currentSheetId = null
+        window._currentParentId = null
         sheetData.template_id = data.id
         sheetData.template_name = data.name
       } else {
         window._currentSheetId = data.id
+        window._currentParentId = data.parent_id || null
       }
       migrateInfoToFields()
       syncInfoFieldOptions()
@@ -2005,6 +2035,7 @@ renderAll();
       renderAll()
       applyCharTheme()
       updatePublishBtn()
+      updateHenchBanner()
     } else {
       console.error('Karakter adat nem található:', id)
     }
@@ -2028,7 +2059,7 @@ renderAll();
     const { data: { user } } = await window._sb.auth.getUser()
     if (!user) return
     const { data } = await window._sb.from('character_sheets')
-      .select('id, name, faj, kaszt, updated_at, data, published')
+      .select('id, name, faj, kaszt, updated_at, data, published, parent_id')
       .eq('user_id', user.id)
       .eq('is_template', false)
       .order('updated_at', { ascending: false })
@@ -2037,8 +2068,26 @@ renderAll();
       el.innerHTML = '<div class="dd-item" style="color:var(--muted);cursor:default;font-size:.78rem;">Még nincs mentett karakter</div>'
       return
     }
-    const templateBased = data.filter(c => c.data && c.data.template_id)
-    const freeChars = data.filter(c => !c.data || !c.data.template_id)
+    // Gazda-karakterek (parent_id nélkül) és a csatlósaik gazdánként csoportosítva.
+    const topLevel = data.filter(c => !c.parent_id)
+    const henchByParent = {}
+    data.filter(c => c.parent_id).forEach(h => { (henchByParent[h.parent_id] || (henchByParent[h.parent_id] = [])).push(h) })
+
+    const templateBased = topLevel.filter(c => c.data && c.data.template_id)
+    const freeChars = topLevel.filter(c => !c.data || !c.data.template_id)
+
+    const makeHench = (h) => {
+      const isActive = window._currentSheetId === h.id
+      return `<div class="dd-item" onclick="window.loadChar('${h.id}', false)" style="padding-left:1.7rem;${isActive?'background:rgba(192,132,252,.12);':''}">
+        <span style="flex:1;font-size:.8rem;">🔗 <span style="color:#c084fc;">${esc(h.name || 'Csatlós')}</span>${isActive?' ✦':''}</span>
+        <span class="dd-item-del" onclick="window.deleteChar('${h.id}', event)" title="Törlés">✕</span>
+      </div>`
+    }
+    const henchBlock = (c) => {
+      const hs = henchByParent[c.id] || []
+      return hs.map(makeHench).join('') +
+        `<div class="dd-item" onclick="window.createHenchman('${c.id}')" style="padding-left:1.7rem;color:var(--muted);font-size:.74rem;">＋ Csatlós hozzáadása</div>`
+    }
     const makeItem = (c, isFree) => {
       const isActive = window._currentSheetId === c.id
       const activeBg = isActive ? (isFree ? 'background:rgba(74,222,128,.07);' : 'background:rgba(212,175,55,.07);') : ''
@@ -2050,7 +2099,7 @@ renderAll();
           ${c.faj||c.kaszt?`<span style="font-size:.72rem;color:var(--muted);display:block;">${esc([c.faj,c.kaszt].filter(Boolean).join(' · '))}</span>`:''}
         </span>
         <span class="dd-item-del" onclick="window.deleteChar('${c.id}', event)" title="Törlés">✕</span>
-      </div>`
+      </div>` + henchBlock(c)
     }
     let html = ''
     if (templateBased.length > 0) {
@@ -2062,6 +2111,19 @@ renderAll();
       html += freeChars.map(c => makeItem(c, true)).join('')
     }
     el.innerHTML = html
+    updateHenchBanner(data)
+  }
+
+  // ─── CSATLÓS-SÁV (ha éppen csatlóst szerkesztesz) ───────────────
+  window.updateHenchBanner = function(list) {
+    const bar = document.getElementById('henchBanner')
+    if (!bar) return
+    if (!window._currentParentId) { bar.style.display = 'none'; return }
+    let parentName = 'gazda'
+    if (Array.isArray(list)) { const p = list.find(c => c.id === window._currentParentId); if (p) parentName = p.name || 'gazda' }
+    bar.innerHTML = '🔗 Csatlós karakterlap — gazda: <b>' + esc(parentName) + '</b>' +
+      ' <button class="btn btn-sm" style="margin-left:.6rem;" onclick="window.loadChar(\'' + window._currentParentId + '\', false)">↩ Vissza a gazdához</button>'
+    bar.style.display = 'flex'
   }
 
   // ─── SABLON LISTA ───────────────────────────────────────────────
