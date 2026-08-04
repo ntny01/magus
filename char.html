@@ -687,6 +687,8 @@ const sb = supabase.createClient(
   .info-label { font-size: 0.7rem; }
   .sheet-card{padding:1.1rem .9rem 1.5rem;}
   .boxes-grid{grid-template-columns:1fr;}
+  .box-wrap{grid-column:auto!important;}
+  .equip-list{display:flex!important;flex-direction:column!important;}
   .vtitle-input{font-size:1.5rem; letter-spacing:.08em;}
   input, select, textarea { font-size: 16px !important; }
   .section-header {flex-wrap: wrap;gap: 0.5rem;}
@@ -932,6 +934,13 @@ function isRowHasValue(row) {
   return (row.value || '').trim().length > 0;
 }
 
+// Felszerelés: 8 tárgy / oszlop; a blokk annyi rács-oszlopot fog át, max 4 (=32 tárgy).
+function equipCols(n) { return Math.max(1, Math.min(4, Math.ceil((n || 0) / 8))); }
+function boxEquipSpan(box) {
+  const eq = (box.rows || []).filter(r => r.type === 'equipment');
+  return eq.length ? Math.max(1, ...eq.map(r => equipCols((r.items || []).length))) : 1;
+}
+
 /* ==============================
    RENDER
    ============================== */
@@ -1145,6 +1154,11 @@ function renderBox(box, grid, sec) {
   });
   addArea.appendChild(picker);
   div.appendChild(addArea);
+
+  // Felszerelést tartalmazó blokk kiszélesedik a tárgyszám szerint (max 4 blokk).
+  const span = boxEquipSpan(box);
+  if (span > 1) div.style.gridColumn = 'span ' + span;
+
   grid.appendChild(div);
 }
 
@@ -1217,6 +1231,21 @@ function buildRow(row, box) {
     wrap.appendChild(head);
 
     const list = document.createElement('div'); list.className='equip-list';
+    // Elrendezés: 8 tárgy / oszlop; a lista annyi oszlopos, a blokk annyi széles (max 4).
+    const applyLayout = () => {
+      const n = row.items.length;
+      const cols = equipCols(n);
+      if (cols > 1) {
+        const rpc = n > 32 ? Math.ceil(n / 4) : 8;   // 32 fölött lefelé nő
+        list.style.cssText = 'display:grid;grid-auto-flow:column;align-content:start;' +
+          'grid-template-rows:repeat(' + rpc + ',auto);' +
+          'grid-template-columns:repeat(' + cols + ',minmax(0,1fr));gap:.28rem .9rem;';
+      } else {
+        list.style.cssText = 'display:flex;flex-direction:column;gap:.28rem;';
+      }
+      const bw = list.closest('.box-wrap');
+      if (bw) { const sp = boxEquipSpan(box); bw.style.gridColumn = sp > 1 ? 'span ' + sp : ''; }
+    };
     const renderItems = () => {
       list.innerHTML='';
       if (!row.items.length) {
@@ -1243,6 +1272,7 @@ function buildRow(row, box) {
         r.append(name, minus, qty, plus, rm);
         list.appendChild(r);
       });
+      applyLayout();
     };
     renderItems();
     wrap.appendChild(list);
