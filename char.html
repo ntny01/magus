@@ -1146,7 +1146,11 @@ function renderBox(box, grid, sec) {
         value: (t==='dot'||t==='header') ? 0 : '',
         max:   t==='header' ? 10 : 5
       };
-      if (t==='equipment') row.items = [];
+      if (t==='equipment') {
+        row.items = [];
+        // Ha ez lesz az egyetlen sor: a box címe legyen a fejléc ("Felszerelés").
+        if (box.rows.length === 0 && (!box.title || box.title === 'Új blokk')) box.title = 'Felszerelés';
+      }
       box.rows.push(row);
       renderAll();
     };
@@ -1224,11 +1228,14 @@ function buildRow(row, box) {
     wrap.style.cssText='flex-direction:column;align-items:stretch;display:flex;gap:.35rem;';
     if (!Array.isArray(row.items)) row.items = [];
 
-    const head = document.createElement('div');
-    head.style.cssText='display:flex;align-items:center;gap:.38rem;';
-    const li = makeRowLabelInput(row); li.placeholder='Felszerelés címe...';
-    head.append(li, makeDelRowBtn(row, box));
-    wrap.appendChild(head);
+    // Ha az equipment az EGYETLEN sor a blokkban, a box címe a fejléc — nincs külön sor-fejléc.
+    if (box.rows.length > 1) {
+      const head = document.createElement('div');
+      head.style.cssText='display:flex;align-items:center;gap:.38rem;';
+      const li = makeRowLabelInput(row); li.placeholder='Felszerelés címe...';
+      head.append(li, makeDelRowBtn(row, box));
+      wrap.appendChild(head);
+    }
 
     const list = document.createElement('div'); list.className='equip-list';
     // Elrendezés: 8 tárgy / oszlop; a lista annyi oszlopos, a blokk annyi széles (max 4).
