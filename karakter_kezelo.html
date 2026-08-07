@@ -545,7 +545,7 @@ const sb = supabase.createClient(
             <div class="stat-row">
                 <div class="stat-info">
                     <span class="stat-label">Életerő Pont (HP)</span>
-                    <span class="stat-type-toggle" id="hp-max-display">Max: 0</span>
+                    <span class="stat-type-toggle" id="hp-max-display">Max: <input type="number" id="char-hp-max-input" value="0" min="0" style="width:48px;background:#1a1a1e;border:1px solid var(--panel-border);color:white;border-radius:4px;padding:1px 4px;font-size:0.75rem;text-align:center;" onchange="updateMaxHp(this.value)"></span>
                 </div>
                 <div class="stat-controls">
                     <button class="ctrl-btn" onclick="adjustStat('char', 'hp', -5)">-5</button>
@@ -790,7 +790,7 @@ const sb = supabase.createClient(
         }
 
         document.getElementById('char-initiative').innerText = `Kezdeményező pont: ${appState.charData.iniBonus}`;
-        document.getElementById('hp-max-display').innerText = `Max: ${appState.charData.maxHp}`;
+        { const hpMaxInp = document.getElementById('char-hp-max-input'); if (hpMaxInp) hpMaxInp.value = appState.charData.maxHp; }
         document.getElementById('char-hp-val').innerText = appState.charData.hp;
         document.getElementById('char-sfe-val').innerText = appState.charData.sfe;
         document.getElementById('char-power-val').innerText = appState.charData.power;
@@ -1371,6 +1371,17 @@ const sb = supabase.createClient(
     window.scheduleSave()
   }
 
+  window.updateMaxHp = function(val) {
+    let newMax = Math.max(0, parseInt(val) || 0)
+    appState.charData.maxHp = newMax
+    const inp = document.getElementById('char-hp-max-input'); if (inp) inp.value = newMax
+    if (appState.charData.hp > newMax) {
+      appState.charData.hp = newMax
+      const v = document.getElementById('char-hp-val'); if (v) v.innerText = newMax
+    }
+    window.scheduleSave()
+  }
+
   // ─── AUTOSAVE ───────────────────────────────────────────────────
   let _saveTimer = null
 
@@ -1472,16 +1483,22 @@ const sb = supabase.createClient(
     // 3. A karakterhez kötött CSATLÓSOKAT (parent_id) behúzzuk a segédbe.
     try {
       const { data: linked } = await window._sb.from('character_sheets')
-        .select('id, name').eq('parent_id', sheetId)
+        .select('id, name, data').eq('parent_id', sheetId)
       if (Array.isArray(linked)) {
         linked.forEach(h => {
           if (!appState.henchmen.some(x => x.linkedSheetId === h.id)) {
+            // A csatlós maxHp/maxPower-jét a SAJÁT lapjából számoljuk (mint a karakternél).
+            const hcard = buildCardFromSheet(h.data)
+            const allo = hcard ? getStatValue(hcard, 'Állóképesség') : 0
+            const akarat = hcard ? getStatValue(hcard, 'Akaraterő') : 0
+            const maxHp = allo * 5
+            const maxPower = akarat > 0 ? akarat : 5
             appState.henchmen.push({
               id: 'hench_link_' + h.id,
               name: h.name || 'Csatlós',
               linkedSheetId: h.id,
-              hp: 0, maxHp: 0, powerType: 'kegypont',
-              power: 0, maxPower: 5, sfe: 0,
+              hp: maxHp, maxHp: maxHp, powerType: 'kegypont',
+              power: maxPower, maxPower: maxPower, sfe: 0,
               weapons: [], money: { gold: 0, silver: 0, copper: 0 }
             })
           }
