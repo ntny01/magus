@@ -2115,12 +2115,19 @@ renderAll();
   }
 
   // ─── CSATLÓS-SÁV (ha éppen csatlóst szerkesztesz) ───────────────
-  window.updateHenchBanner = function(list) {
+  window.updateHenchBanner = async function(list) {
     const bar = document.getElementById('henchBanner')
     if (!bar) return
     if (!window._currentParentId) { bar.style.display = 'none'; return }
-    let parentName = 'gazda'
-    if (Array.isArray(list)) { const p = list.find(c => c.id === window._currentParentId); if (p) parentName = p.name || 'gazda' }
+    let parentName = null
+    if (Array.isArray(list)) { const p = list.find(c => c.id === window._currentParentId); if (p) parentName = p.name }
+    if (!parentName && window._sb) {
+      try {
+        const { data } = await window._sb.from('character_sheets').select('name').eq('id', window._currentParentId).single()
+        if (data && data.name) parentName = data.name
+      } catch (e) { /* marad a fallback */ }
+    }
+    parentName = parentName || 'gazda'
     bar.innerHTML = '🔗 Csatlós karakterlap — gazda: <b>' + esc(parentName) + '</b>' +
       ' <button class="btn btn-sm" style="margin-left:.6rem;" onclick="window.loadChar(\'' + window._currentParentId + '\', false)">↩ Vissza a gazdához</button>'
     bar.style.display = 'flex'

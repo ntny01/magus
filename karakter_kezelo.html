@@ -545,7 +545,11 @@ const sb = supabase.createClient(
             <div class="stat-row">
                 <div class="stat-info">
                     <span class="stat-label">Életerő Pont (HP)</span>
-                    <span class="stat-type-toggle" id="hp-max-display">Max: <input type="number" id="char-hp-max-input" value="0" min="0" style="width:48px;background:#1a1a1e;border:1px solid var(--panel-border);color:white;border-radius:4px;padding:1px 4px;font-size:0.75rem;text-align:center;" onchange="updateMaxHp(this.value)"></span>
+                    <span style="display:flex; gap:2px; font-size:0.8rem; align-items:center;">
+                        <button class="btn btn-sm" style="padding:1px 5px;" onclick="adjustStat('char','maxHp',-1)">-</button>
+                        <span id="hp-max-display">Max: 0</span>
+                        <button class="btn btn-sm" style="padding:1px 5px;" onclick="adjustStat('char','maxHp',1)">+</button>
+                    </span>
                 </div>
                 <div class="stat-controls">
                     <button class="ctrl-btn" onclick="adjustStat('char', 'hp', -5)">-5</button>
@@ -571,7 +575,11 @@ const sb = supabase.createClient(
                     <button class="ctrl-btn" id="char-power-half-plus" onclick="adjustStat('char', 'power', 0.5)">+0.5</button>
                     <button class="ctrl-btn" onclick="adjustStat('char', 'power', 1)">+1</button>
                 </div>
-                <div style="font-size:0.75rem; text-align:right; color:var(--text-muted); margin-top:4px;" id="char-power-max-display">Max: <input type="number" id="char-power-max-input" value="5" min="0" style="width:48px;background:#1a1a1e;border:1px solid var(--panel-border);color:white;border-radius:4px;padding:1px 4px;font-size:0.75rem;text-align:center;" onchange="updateMaxPower(this.value)"></div>
+                <div style="font-size:0.8rem; color:var(--text-muted); margin-top:4px; display:flex; gap:2px; align-items:center; justify-content:flex-end;" id="char-power-max-display">
+                    <button class="btn btn-sm" style="padding:1px 5px;" onclick="adjustStat('char','maxPower',-1)">-</button>
+                    <span id="char-power-max-val">Max: 5</span>
+                    <button class="btn btn-sm" style="padding:1px 5px;" onclick="adjustStat('char','maxPower',1)">+</button>
+                </div>
             </div>
 
             <div class="stat-row">
@@ -591,6 +599,15 @@ const sb = supabase.createClient(
                     <button class="btn btn-sm" onclick="addWeaponField('char')">+ Új Fegyver</button>
                 </div>
                 <div class="weapon-list" id="char-weapon-container"></div>
+            </div>
+
+            <!-- FELSZERELÉS (a karakterlapról; szerkesztés visszaír a lapba) -->
+            <div class="stat-row" id="char-equipment-row" style="display:none; flex-direction:column; align-items:stretch;">
+                <div class="stat-info" style="cursor:pointer; user-select:none;" onclick="toggleEquipPanel()">
+                    <span class="stat-label">🎒 Felszerelés <span id="equip-count" style="color:var(--text-muted); font-size:.8rem; font-weight:normal;"></span></span>
+                    <span id="equip-caret" style="color:var(--text-muted);">▾</span>
+                </div>
+                <div id="char-equip-list" style="display:none; margin-top:8px; flex-direction:column; gap:8px;"></div>
             </div>
         </div>
 
@@ -790,7 +807,7 @@ const sb = supabase.createClient(
         }
 
         document.getElementById('char-initiative').innerText = `Kezdeményező pont: ${appState.charData.iniBonus}`;
-        { const hpMaxInp = document.getElementById('char-hp-max-input'); if (hpMaxInp) hpMaxInp.value = appState.charData.maxHp; }
+        { const d = document.getElementById('hp-max-display'); if (d) d.innerText = `Max: ${appState.charData.maxHp}`; }
         document.getElementById('char-hp-val').innerText = appState.charData.hp;
         document.getElementById('char-sfe-val').innerText = appState.charData.sfe;
         document.getElementById('char-power-val').innerText = appState.charData.power;
@@ -808,6 +825,7 @@ const sb = supabase.createClient(
 
         renderWeapons('char', appState.charData.weapons, 'char-weapon-container');
         renderHenchmen();
+        if (window.renderEquipment) window.renderEquipment();
         updateTransDestOptions();
     }
 
@@ -907,8 +925,8 @@ const sb = supabase.createClient(
             document.getElementById('char-power-half-minus').style.display = isKegypont ? 'inline-block' : 'none';
             document.getElementById('char-power-half-plus').style.display = isKegypont ? 'inline-block' : 'none';
             if (isKegypont) {
-                document.getElementById('char-power-max-display').style.display = 'block';
-                document.getElementById('char-power-max-input').value = appState.charData.maxPower;
+                document.getElementById('char-power-max-display').style.display = 'flex';
+                document.getElementById('char-power-max-val').innerText = `Max: ${appState.charData.maxPower}`;
             } else {
                 document.getElementById('char-power-max-display').style.display = 'none';
             }
@@ -967,6 +985,20 @@ const sb = supabase.createClient(
                 }
                 appState.charData.power = newVal;
                 document.getElementById('char-power-val').innerText = appState.charData.power;
+            } else if (stat === 'maxHp') {
+                appState.charData.maxHp = Math.max(0, appState.charData.maxHp + amount);
+                if (appState.charData.hp > appState.charData.maxHp) {
+                    appState.charData.hp = appState.charData.maxHp;
+                    document.getElementById('char-hp-val').innerText = appState.charData.hp;
+                }
+                const d = document.getElementById('hp-max-display'); if (d) d.innerText = `Max: ${appState.charData.maxHp}`;
+            } else if (stat === 'maxPower') {
+                appState.charData.maxPower = Math.max(0, appState.charData.maxPower + amount);
+                if (appState.charData.power > appState.charData.maxPower && appState.charData.powerType === 'kegypont') {
+                    appState.charData.power = appState.charData.maxPower;
+                    document.getElementById('char-power-val').innerText = appState.charData.power;
+                }
+                const d = document.getElementById('char-power-max-val'); if (d) d.innerText = `Max: ${appState.charData.maxPower}`;
             }
         } else if (target === 'hench') {
             let hench = appState.henchmen.find(h => h.id === henchId);
@@ -1160,6 +1192,85 @@ const sb = supabase.createClient(
         scheduleSave();
     }
 
+    /* ===== FELSZERELÉS (a karakterlap adataiból; szerkesztés visszaír) ===== */
+    function getEquipmentRows(data) {
+        const out = [];
+        (data && data.sections || []).forEach(sec =>
+            (sec.boxes || []).forEach(box =>
+                (box.rows || []).forEach(row => {
+                    if (row.type === 'equipment') {
+                        if (!Array.isArray(row.items)) row.items = [];
+                        out.push({ row, title: row.label || box.title || 'Felszerelés' });
+                    }
+                })));
+        return out;
+    }
+    window.renderEquipment = function() {
+        const rowEl = document.getElementById('char-equipment-row');
+        const listEl = document.getElementById('char-equip-list');
+        if (!rowEl || !listEl) return;
+        const groups = getEquipmentRows(window._kkSheetData);
+        if (!groups.length) { rowEl.style.display = 'none'; return; }
+        rowEl.style.display = 'flex';
+        const total = groups.reduce((n, g) => n + g.row.items.length, 0);
+        document.getElementById('equip-count').innerText = '(' + total + ')';
+        listEl.innerHTML = '';
+        groups.forEach((g, gi) => {
+            const wrap = document.createElement('div');
+            wrap.style.cssText = 'background:rgba(0,0,0,.2);border:1px solid var(--panel-border);border-radius:6px;padding:8px;';
+            let inner = `<div style="font-weight:bold;font-size:.85rem;color:var(--accent);margin-bottom:6px;">${esc(g.title)}</div>`;
+            g.row.items.forEach((it, ii) => {
+                inner += `<div style="display:flex;align-items:center;gap:6px;margin-bottom:4px;">
+                    <input type="text" value="${esc(it.name || '')}" placeholder="Tárgy neve..." onchange="equipEdit(${gi},${ii},this.value)" style="flex:1;min-width:0;background:#1a1a1e;border:1px solid var(--panel-border);color:white;border-radius:4px;padding:2px 6px;font-size:.82rem;">
+                    <button class="ctrl-btn" style="padding:2px 8px;" onclick="equipQty(${gi},${ii},-1)">-</button>
+                    <span style="min-width:24px;text-align:center;font-size:.85rem;">${it.qty != null ? it.qty : 1}</span>
+                    <button class="ctrl-btn" style="padding:2px 8px;" onclick="equipQty(${gi},${ii},1)">+</button>
+                    <button class="btn btn-sm btn-danger" style="padding:2px 7px;" onclick="equipRemove(${gi},${ii})">✕</button>
+                </div>`;
+            });
+            if (!g.row.items.length) inner += `<div style="color:var(--text-muted);font-size:.78rem;margin-bottom:4px;">Nincs tárgy.</div>`;
+            inner += `<button class="btn btn-sm" style="margin-top:4px;" onclick="equipAdd(${gi})">+ Tárgy</button>`;
+            wrap.innerHTML = inner;
+            listEl.appendChild(wrap);
+        });
+    };
+    window.toggleEquipPanel = function() {
+        const l = document.getElementById('char-equip-list');
+        const c = document.getElementById('equip-caret');
+        const open = l.style.display === 'none';
+        l.style.display = open ? 'flex' : 'none';
+        if (c) c.innerText = open ? '▴' : '▾';
+    };
+    window.equipEdit = function(gi, ii, val) {
+        const g = getEquipmentRows(window._kkSheetData)[gi]; if (!g) return;
+        g.row.items[ii].name = val; saveEquipmentToSheet();
+    };
+    window.equipQty = function(gi, ii, d) {
+        const g = getEquipmentRows(window._kkSheetData)[gi]; if (!g) return;
+        const it = g.row.items[ii]; it.qty = Math.max(0, (parseInt(it.qty) || 0) + d);
+        renderEquipment(); saveEquipmentToSheet();
+    };
+    window.equipRemove = function(gi, ii) {
+        const g = getEquipmentRows(window._kkSheetData)[gi]; if (!g) return;
+        g.row.items.splice(ii, 1); renderEquipment(); saveEquipmentToSheet();
+    };
+    window.equipAdd = function(gi) {
+        const g = getEquipmentRows(window._kkSheetData)[gi]; if (!g) return;
+        g.row.items.push({ name: '', qty: 1 }); renderEquipment(); saveEquipmentToSheet();
+    };
+    let _equipSaveTimer = null;
+    function saveEquipmentToSheet() {
+        if (!window._sb || !window._currentKKSheetId || !window._kkSheetData) return;
+        if (_equipSaveTimer) clearTimeout(_equipSaveTimer);
+        _equipSaveTimer = setTimeout(async () => {
+            try {
+                await window._sb.from('character_sheets')
+                    .update({ data: window._kkSheetData, updated_at: new Date().toISOString() })
+                    .eq('id', window._currentKKSheetId);
+            } catch (e) { console.error('Felszerelés visszaírása:', e); }
+        }, 600);
+    }
+
     function renderHenchmen() {
         let container = document.getElementById('henchmen-container');
         container.innerHTML = "";
@@ -1169,8 +1280,8 @@ const sb = supabase.createClient(
             card.className = "henchman-card";
             card.innerHTML = `
                 <div class="henchman-header">
-                    ${h.linkedSheetId ? `<a href="char.html?id=${h.linkedSheetId}" title="Csatlós karakterlapja" style="color:#c084fc;text-decoration:none;font-size:1rem;margin-right:.3rem;">🔗</a>` : ''}
                     <input type="text" class="henchman-name-input" value="${h.name}" onchange="updateHenchName('${h.id}', this.value)">
+                    ${h.linkedSheetId ? `<a href="char.html?id=${h.linkedSheetId}" target="_blank" class="btn btn-sm" style="border-color:#c084fc;color:#c084fc;text-decoration:none;" title="Csatlós karakterlapjának megnyitása">🔗 Karakterlap</a>` : ''}
                     <button class="btn btn-sm btn-danger" onclick="deleteHenchman('${h.id}')">Eltávolítás</button>
                 </div>
 
@@ -1451,6 +1562,8 @@ const sb = supabase.createClient(
     // 1. Betöltjük a karakterlapot (kártya adatok)
     const { data: sheet } = await window._sb.from('character_sheets')
       .select('*').eq('id', sheetId).single()
+    // A teljes lap-adatot eltároljuk, hogy a felszerelést vissza tudjuk írni.
+    window._kkSheetData = (sheet && sheet.data) || null
 
     // 2. Betöltjük a hozzá tartozó session state-t
     const { data: { user } } = await window._sb.auth.getUser()
@@ -1608,6 +1721,7 @@ const sb = supabase.createClient(
       // Friss sheet adat lekérése (stat változások megjelennek)
       const { data: sheet } = await window._sb.from('character_sheets')
         .select('*').eq('id', sheetSession.sheet_id).single()
+      window._kkSheetData = (sheet && sheet.data) || null
       if (sheet?.data) {
         appState.charData = sheetSession.char_data || appState.charData
         appState.bankMoney = sheetSession.bank_money || { gold:0, silver:0, copper:0 }
