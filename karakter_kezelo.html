@@ -1169,6 +1169,7 @@ const sb = supabase.createClient(
             card.className = "henchman-card";
             card.innerHTML = `
                 <div class="henchman-header">
+                    ${h.linkedSheetId ? `<a href="char.html?id=${h.linkedSheetId}" title="Csatlós karakterlapja" style="color:#c084fc;text-decoration:none;font-size:1rem;margin-right:.3rem;">🔗</a>` : ''}
                     <input type="text" class="henchman-name-input" value="${h.name}" onchange="updateHenchName('${h.id}', this.value)">
                     <button class="btn btn-sm btn-danger" onclick="deleteHenchman('${h.id}')">Eltávolítás</button>
                 </div>
@@ -1467,6 +1468,26 @@ const sb = supabase.createClient(
       appState.henchmen = session.henchmen || []
       if (session.raw_card) loadRawCharacterCard(session.raw_card, false)
     }
+
+    // 3. A karakterhez kötött CSATLÓSOKAT (parent_id) behúzzuk a segédbe.
+    try {
+      const { data: linked } = await window._sb.from('character_sheets')
+        .select('id, name').eq('parent_id', sheetId)
+      if (Array.isArray(linked)) {
+        linked.forEach(h => {
+          if (!appState.henchmen.some(x => x.linkedSheetId === h.id)) {
+            appState.henchmen.push({
+              id: 'hench_link_' + h.id,
+              name: h.name || 'Csatlós',
+              linkedSheetId: h.id,
+              hp: 0, maxHp: 0, powerType: 'kegypont',
+              power: 0, maxPower: 5, sfe: 0,
+              weapons: [], money: { gold: 0, silver: 0, copper: 0 }
+            })
+          }
+        })
+      }
+    } catch (e) { /* parent_id oszlop hiánya esetén se boruljon */ }
 
     // Mentjük melyik sheet van betöltve
     window._currentKKSheetId = sheetId
