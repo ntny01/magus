@@ -161,6 +161,31 @@
 
         @keyframes d12roll  { 0% { transform: rotate(0) scale(1); } 60% { transform: rotate(720deg) scale(1.15); } 100% { transform: rotate(1080deg) scale(1); } }
 
+        /* K12 dobás-effekt: 1 = meteor (vörös), 12 = áldás (arany). A rajzok fekete
+           vonalasak fehér háttéren -> invert(1) + mix-blend-mode:screen: a háttér eltűnik
+           a sötét heron, a vonalak világítanak; sepia/saturate/hue adja a színt. */
+        .hero-text, .hero-die { position: relative; z-index: 1; }
+        .d12-fx {
+            position: absolute; top: 50%; right: 4%; z-index: 0;
+            width: 230px; max-width: 46%; pointer-events: none;
+            opacity: 0; mix-blend-mode: screen;
+            transition: opacity .55s ease;
+        }
+        .d12-fx.fx-meteor {
+            opacity: .9;
+            filter: invert(1) sepia(1) saturate(7) hue-rotate(-24deg) brightness(1)
+                    drop-shadow(0 0 16px rgba(239,68,68,.7));
+            animation: fxMeteor 3.4s ease-in-out infinite;
+        }
+        .d12-fx.fx-bless {
+            opacity: .82;
+            filter: invert(1) sepia(1) saturate(3.4) hue-rotate(2deg) brightness(1.12)
+                    drop-shadow(0 0 18px rgba(212,175,55,.72));
+            animation: fxBless 4.2s ease-in-out infinite;
+        }
+        @keyframes fxMeteor { 0%,100% { transform: translate(0,-50%) rotate(0deg); } 50% { transform: translate(-12px,calc(-50% + 10px)) rotate(-3deg); } }
+        @keyframes fxBless  { 0%,100% { transform: translateY(-50%) scale(1); } 50% { transform: translateY(calc(-50% - 8px)) scale(1.04); } }
+
         .section-title {
             font-family: 'Cinzel', serif; font-size: 1rem; color: var(--gold);
             letter-spacing: .06em; margin: .3rem 0 .1rem; display: flex; align-items: center; gap: .5rem;
@@ -251,6 +276,12 @@
             transition: opacity .16s ease, transform .16s ease;
         }
         .char-card.equip.open .eq-pop { opacity: 1; transform: translateY(0) scale(1); pointer-events: auto; }
+        /* Slim, aranyos görgetősáv (a km-toolbar mintájára) */
+        .eq-pop { scrollbar-width: thin; scrollbar-color: rgba(212,175,55,.35) transparent; }
+        .eq-pop::-webkit-scrollbar { width: 7px; }
+        .eq-pop::-webkit-scrollbar-thumb { background: rgba(212,175,55,.3); border-radius: 4px; }
+        .eq-pop::-webkit-scrollbar-thumb:hover { background: rgba(212,175,55,.5); }
+        .eq-pop::-webkit-scrollbar-track { background: transparent; }
         .eq-pop-title { font-size: .68rem; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); margin-bottom: .4rem; }
         .eq-row { display: flex; justify-content: space-between; gap: .6rem; font-size: .8rem; color: var(--text); padding: .2rem 0; border-bottom: 1px solid rgba(255,255,255,.06); }
         .eq-row:last-child { border-bottom: none; }
@@ -316,6 +347,7 @@
         <!-- FEED -->
         <main class="feed">
             <div class="hero">
+                <img class="d12-fx" id="d12fx" alt="" aria-hidden="true">
                 <div class="hero-text">
                     <h1 id="heroTitle">Üdv a Kodexiumban!</h1>
                     <p>Innen éred el a karaktereidet, a szabályzatot és a világ eszközeit. Görgess lejjebb a csempékért, vagy használd a bal oldali navigációt.</p>
@@ -352,6 +384,7 @@
             d.classList.remove('rolling'); void d.offsetWidth; d.classList.add('rolling');
             const roll = 1 + Math.floor(Math.random() * 12);
             if (r) r.textContent = '🎲 …';
+            const fx = document.getElementById('d12fx');
             setTimeout(() => {
                 if (!r) return;
                 r.className = 'd12-result';
@@ -360,6 +393,12 @@
                 else if (roll === 1) { r.classList.add('fail'); txt = 'Balszerencse… k12 → <b>1</b>'; }
                 r.innerHTML = txt;
                 void r.offsetWidth; r.classList.add('pop');
+                // Dobás-effekt: marad, amíg új dobás nem törli.
+                if (fx) {
+                    fx.classList.remove('fx-meteor', 'fx-bless');
+                    if (roll === 1) { fx.src = 'assets/logo/meteor.png'; void fx.offsetWidth; fx.classList.add('fx-meteor'); }
+                    else if (roll === 12) { fx.src = 'assets/logo/blessing.png'; void fx.offsetWidth; fx.classList.add('fx-bless'); }
+                }
             }, 620);
         };
 
@@ -545,8 +584,14 @@
             } else {
                 body = '<span class="soon">Nyisd meg a Karakter Segédben az életerő/kegypont követéséhez.</span>';
             }
-            const bank = (sess && Number(sess.bank_money)) || 0;
-            const bankLine = bank ? '<div class="cc-bank">🏦 Bankban: <b>' + fmtNum(bank) + '</b> arany</div>' : '';
+            // A bank a Karakter Segédben {gold,silver,copper} OBJEKTUMként mentődik (bank_money).
+            const bankLine = (function() {
+                const b = sess && sess.bank_money;
+                if (!b) return '';
+                const g = b.gold || 0, s = b.silver || 0, c = b.copper || 0;
+                if (!g && !s && !c) return '';
+                return '<div class="cc-bank">🏦 Bankban: <b>' + g + '</b> A · <b>' + s + '</b> E · <b>' + c + '</b> R</div>';
+            })();
             const henchmen = (sess && Array.isArray(sess.henchmen)) ? sess.henchmen : [];
 
             const group = document.createElement('div');
