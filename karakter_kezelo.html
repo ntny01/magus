@@ -1547,7 +1547,7 @@ const sb = supabase.createClient(
     const { data: { user } } = await window._sb.auth.getUser()
     if (!user) return
     const { data } = await window._sb.from('character_sheets')
-      .select('id, name, faj, kaszt, data')
+      .select('id, name, faj, kaszt, data, parent_id')
       .eq('user_id', user.id)
       .eq('is_template', false)
       .order('updated_at', { ascending: false })
@@ -1556,19 +1556,28 @@ const sb = supabase.createClient(
       el.innerHTML = '<div style="padding:.6rem 1rem;font-size:.82rem;color:#64748b;">Még nincs mentett karakter</div>'
       return
     }
-    const templateBased = data.filter(c => c.data && c.data.template_id)
-    const freeChars = data.filter(c => !c.data || !c.data.template_id)
+    // Csak a gazda-karakterek (parent_id nélkül) tölthetők be; a csatlósok a
+    // gazdájuk alatt CSAK névként jelennek meg, külön nem nyithatók meg.
+    const topLevel = data.filter(c => !c.parent_id)
+    const henchByParent = {}
+    data.filter(c => c.parent_id).forEach(h => { (henchByParent[h.parent_id] || (henchByParent[h.parent_id] = [])).push(h) })
+
+    const templateBased = topLevel.filter(c => c.data && c.data.template_id)
+    const freeChars = topLevel.filter(c => !c.data || !c.data.template_id)
+
+    const henchLabel = (h) => `<div style="padding:.28rem 1rem .28rem 2rem;font-size:.76rem;color:#c084fc;border-bottom:1px solid rgba(255,255,255,.04);cursor:default;" title="Csatlós (a gazda karakterrel együtt töltődik be)">🔗 ${esc(h.name || 'Csatlós')}</div>`
     const makeItem = (c, isFree) => {
       const isActive = window._currentKKSheetId === c.id
       const activeBg = isActive ? (isFree ? 'rgba(74,222,128,.07)' : 'rgba(212,175,55,.07)') : ''
       const nameColor = isFree ? '#4ade80' : '#d4af37'
+      const hench = (henchByParent[c.id] || []).map(henchLabel).join('')
       return `<div onclick="window.loadKKChar('${c.id}')" style="display:flex;align-items:center;gap:.6rem;padding:.5rem 1rem;font-size:.82rem;cursor:pointer;transition:background .15s;color:#e2e8f0;border-bottom:1px solid rgba(255,255,255,.06);background:${activeBg};"
         onmouseover="this.style.background='${isFree?'rgba(74,222,128,.07)':'rgba(212,175,55,.07)'}'" onmouseout="this.style.background='${activeBg}'">
         <span style="flex:1;">
-          <span style="font-weight:600;color:${nameColor}">${c.name || 'Névtelen'}${isActive?' ✦':''}</span>
-          ${c.faj||c.kaszt?`<span style="font-size:.72rem;color:#64748b;display:block;">${[c.faj,c.kaszt].filter(Boolean).join(' · ')}</span>`:''}
+          <span style="font-weight:600;color:${nameColor}">${esc(c.name || 'Névtelen')}${isActive?' ✦':''}</span>
+          ${c.faj||c.kaszt?`<span style="font-size:.72rem;color:#64748b;display:block;">${esc([c.faj,c.kaszt].filter(Boolean).join(' · '))}</span>`:''}
         </span>
-      </div>`
+      </div>${hench}`
     }
     const section = (label) => `<div style="padding:.3rem 1rem .15rem;font-size:.68rem;font-weight:700;letter-spacing:.1em;color:#64748b;text-transform:uppercase;border-bottom:1px solid rgba(255,255,255,.04);">${label}</div>`
     let html = ''
