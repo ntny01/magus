@@ -601,13 +601,12 @@ const sb = supabase.createClient(
                 <div class="weapon-list" id="char-weapon-container"></div>
             </div>
 
-            <!-- FELSZERELÉS (a karakterlapról; szerkesztés visszaír a lapba) -->
-            <div class="stat-row" id="char-equipment-row" style="display:none; flex-direction:column; align-items:stretch;">
-                <div class="stat-info" style="cursor:pointer; user-select:none;" onclick="toggleEquipPanel()">
+            <!-- FELSZERELÉS (külön rétegen nyílik; szerkesztés visszaír a lapba) -->
+            <div class="stat-row" id="char-equipment-row" style="display:none;">
+                <div class="stat-info">
                     <span class="stat-label">🎒 Felszerelés <span id="equip-count" style="color:var(--text-muted); font-size:.8rem; font-weight:normal;"></span></span>
-                    <span id="equip-caret" style="color:var(--text-muted);">▾</span>
+                    <button class="btn btn-sm btn-accent" onclick="openEquipmentModal()">Megnyitás</button>
                 </div>
-                <div id="char-equip-list" style="display:none; margin-top:8px; flex-direction:column; gap:8px;"></div>
             </div>
         </div>
 
@@ -683,6 +682,16 @@ const sb = supabase.createClient(
         <div class="modal-info-meta" id="modal-meta-bar"></div>
 
         <div id="modal-details-body"></div>
+    </div>
+</div>
+
+<div id="equip-modal" class="modal-overlay hidden" onclick="closeEquipmentModal()">
+    <div class="modal-content" onclick="event.stopPropagation()">
+        <div class="modal-header">
+            <div class="modal-title">🎒 Felszerelés</div>
+            <button class="btn btn-sm btn-danger" onclick="closeEquipmentModal()">Bezárás ✕</button>
+        </div>
+        <div id="equip-modal-body"></div>
     </div>
 </div>
 
@@ -763,12 +772,11 @@ const sb = supabase.createClient(
             appState.bankMoney = { gold: 0, silver: 0, copper: 0 };
             appState.henchmen = [];
         } else {
-            // Folytatás: csak a maxokat frissíti, HP/power/pénz/csatlós megmarad
-            appState.charData.maxHp = newMaxHp;
-            // Ha a jelenlegi HP > új max, csökkentjük
-            if (appState.charData.hp > newMaxHp) appState.charData.hp = newMaxHp;
-            appState.charData.maxPower = newMaxPower;
-            if (appState.charData.power > newMaxPower) appState.charData.power = newMaxPower;
+            // Folytatás: a maxokat NEM számoljuk újra — a mentett (esetleg kézzel
+            // felülírt) maxHp/maxPower megmarad. Csak ha hiányzik, essünk vissza a
+            // számolt értékre (régi session kompatibilitás).
+            if (appState.charData.maxHp == null) appState.charData.maxHp = newMaxHp;
+            if (appState.charData.maxPower == null) appState.charData.maxPower = newMaxPower;
         }
 
         renderEverything();
@@ -830,9 +838,9 @@ const sb = supabase.createClient(
     }
 
     /* TELJES OLDALAS OVERLAY MEGJELENÍTÉSE ÉS GENERÁLÁSA */
-    function openCharacterModal() {
-        if (!appState.rawCharacterCard) return;
-        const card = appState.rawCharacterCard;
+    function openCharacterModal(cardArg) {
+        const card = cardArg || appState.rawCharacterCard;
+        if (!card) return;
 
         document.getElementById('modal-char-name').innerText = card.name || "Karakter Adatlap";
         
@@ -1205,41 +1213,50 @@ const sb = supabase.createClient(
                 })));
         return out;
     }
+    let equipModalOpen = false;
+    // A fő panelen csak a gomb + darabszám frissül; a lista külön rétegen (modal).
     window.renderEquipment = function() {
         const rowEl = document.getElementById('char-equipment-row');
-        const listEl = document.getElementById('char-equip-list');
-        if (!rowEl || !listEl) return;
+        if (!rowEl) return;
         const groups = getEquipmentRows(window._kkSheetData);
-        if (!groups.length) { rowEl.style.display = 'none'; return; }
+        if (!groups.length) { rowEl.style.display = 'none'; if (equipModalOpen) closeEquipmentModal(); return; }
         rowEl.style.display = 'flex';
         const total = groups.reduce((n, g) => n + g.row.items.length, 0);
-        document.getElementById('equip-count').innerText = '(' + total + ')';
-        listEl.innerHTML = '';
+        const cnt = document.getElementById('equip-count'); if (cnt) cnt.innerText = '(' + total + ')';
+        if (equipModalOpen) renderEquipmentModal();
+    };
+    function renderEquipmentModal() {
+        const body = document.getElementById('equip-modal-body');
+        if (!body) return;
+        const groups = getEquipmentRows(window._kkSheetData);
+        body.innerHTML = '';
         groups.forEach((g, gi) => {
             const wrap = document.createElement('div');
-            wrap.style.cssText = 'background:rgba(0,0,0,.2);border:1px solid var(--panel-border);border-radius:6px;padding:8px;';
-            let inner = `<div style="font-weight:bold;font-size:.85rem;color:var(--accent);margin-bottom:6px;">${esc(g.title)}</div>`;
+            wrap.style.cssText = 'background:rgba(0,0,0,.2);border:1px solid var(--panel-border);border-radius:6px;padding:10px;margin-bottom:10px;';
+            let inner = `<div style="font-weight:bold;font-size:.9rem;color:var(--accent);margin-bottom:8px;">${esc(g.title)}</div>`;
             g.row.items.forEach((it, ii) => {
-                inner += `<div style="display:flex;align-items:center;gap:6px;margin-bottom:4px;">
-                    <input type="text" value="${esc(it.name || '')}" placeholder="Tárgy neve..." onchange="equipEdit(${gi},${ii},this.value)" style="flex:1;min-width:0;background:#1a1a1e;border:1px solid var(--panel-border);color:white;border-radius:4px;padding:2px 6px;font-size:.82rem;">
-                    <button class="ctrl-btn" style="padding:2px 8px;" onclick="equipQty(${gi},${ii},-1)">-</button>
-                    <span style="min-width:24px;text-align:center;font-size:.85rem;">${it.qty != null ? it.qty : 1}</span>
-                    <button class="ctrl-btn" style="padding:2px 8px;" onclick="equipQty(${gi},${ii},1)">+</button>
-                    <button class="btn btn-sm btn-danger" style="padding:2px 7px;" onclick="equipRemove(${gi},${ii})">✕</button>
+                inner += `<div style="display:flex;align-items:center;gap:8px;margin-bottom:6px;">
+                    <input type="text" value="${esc(it.name || '')}" placeholder="Tárgy neve..." onchange="equipEdit(${gi},${ii},this.value)" style="flex:1;min-width:0;background:#1a1a1e;border:1px solid var(--panel-border);color:white;border-radius:4px;padding:6px 8px;font-size:.9rem;">
+                    <button class="ctrl-btn" style="padding:4px 11px;" onclick="equipQty(${gi},${ii},-1)">-</button>
+                    <span style="min-width:28px;text-align:center;font-size:.95rem;">${it.qty != null ? it.qty : 1}</span>
+                    <button class="ctrl-btn" style="padding:4px 11px;" onclick="equipQty(${gi},${ii},1)">+</button>
+                    <button class="btn btn-sm btn-danger" style="padding:4px 8px;" onclick="equipRemove(${gi},${ii})">✕</button>
                 </div>`;
             });
-            if (!g.row.items.length) inner += `<div style="color:var(--text-muted);font-size:.78rem;margin-bottom:4px;">Nincs tárgy.</div>`;
-            inner += `<button class="btn btn-sm" style="margin-top:4px;" onclick="equipAdd(${gi})">+ Tárgy</button>`;
+            if (!g.row.items.length) inner += `<div style="color:var(--text-muted);font-size:.82rem;margin-bottom:6px;">Nincs tárgy.</div>`;
+            inner += `<button class="btn btn-sm" style="margin-top:6px;" onclick="equipAdd(${gi})">+ Tárgy</button>`;
             wrap.innerHTML = inner;
-            listEl.appendChild(wrap);
+            body.appendChild(wrap);
         });
+    }
+    window.openEquipmentModal = function() {
+        equipModalOpen = true;
+        renderEquipmentModal();
+        document.getElementById('equip-modal').classList.remove('hidden');
     };
-    window.toggleEquipPanel = function() {
-        const l = document.getElementById('char-equip-list');
-        const c = document.getElementById('equip-caret');
-        const open = l.style.display === 'none';
-        l.style.display = open ? 'flex' : 'none';
-        if (c) c.innerText = open ? '▴' : '▾';
+    window.closeEquipmentModal = function() {
+        equipModalOpen = false;
+        document.getElementById('equip-modal').classList.add('hidden');
     };
     window.equipEdit = function(gi, ii, val) {
         const g = getEquipmentRows(window._kkSheetData)[gi]; if (!g) return;
@@ -1271,6 +1288,17 @@ const sb = supabase.createClient(
         }, 600);
     }
 
+    // Csatlós karakterkártyájának megnyitása ugyanabban a kártya-modalban.
+    window.viewHenchCard = async function(sheetId) {
+        if (!window._sb || !sheetId) return;
+        const { data } = await window._sb.from('character_sheets').select('name, data').eq('id', sheetId).single();
+        if (data && data.data) {
+            const card = buildCardFromSheet(data.data);
+            if (!card.name) card.name = data.name || 'Csatlós';   // a név a name oszlopban is lehet
+            openCharacterModal(card);
+        } else { alert('A csatlós karakterlapja nem található.'); }
+    };
+
     function renderHenchmen() {
         let container = document.getElementById('henchmen-container');
         container.innerHTML = "";
@@ -1281,7 +1309,7 @@ const sb = supabase.createClient(
             card.innerHTML = `
                 <div class="henchman-header">
                     <input type="text" class="henchman-name-input" value="${h.name}" onchange="updateHenchName('${h.id}', this.value)">
-                    ${h.linkedSheetId ? `<a href="char.html?id=${h.linkedSheetId}" target="_blank" class="btn btn-sm" style="border-color:#c084fc;color:#c084fc;text-decoration:none;" title="Csatlós karakterlapjának megnyitása">🔗 Karakterlap</a>` : ''}
+                    ${h.linkedSheetId ? `<button class="btn btn-sm btn-accent" onclick="viewHenchCard('${h.linkedSheetId}')" title="Csatlós karakterkártyája">🃏 Kártya</button>` : ''}
                     <button class="btn btn-sm btn-danger" onclick="deleteHenchman('${h.id}')">Eltávolítás</button>
                 </div>
 
