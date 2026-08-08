@@ -960,11 +960,15 @@ const sb = supabase.createClient(
                     <label style="display:flex;align-items:center;gap:.4rem;cursor:pointer;font-size:.8rem;color:var(--text-main);padding-bottom:.5rem;">
                         <input type="checkbox" id="campaignPublished"> Közzététel
                     </label>
+                    <label title="Ha be van kapcsolva, a játékosok a feeden CSAK a kampány sablonjaiból készült karaktert használhatják." style="display:flex;align-items:center;gap:.4rem;cursor:pointer;font-size:.8rem;color:var(--text-main);padding-bottom:.5rem;">
+                        <input type="checkbox" id="campaignLocked"> 🔒 Karakter-zárolás
+                    </label>
                     <button class="km-btn" onclick="saveCampaign()" style="border-color:rgba(212,175,55,.4);color:var(--gold)!important;">💾 Mentés</button>
                 </div>
                 <div id="campaignStatus" style="font-size:.72rem;color:var(--text-muted);margin-top:.6rem;"></div>
             </div>
 
+            <div id="campaignMembers"></div>
             <div id="campaignSections"></div>
         </div>
     </div>
@@ -1119,6 +1123,7 @@ const sb = supabase.createClient(
             document.getElementById('campaignName').value = c ? c.name : '';
             document.getElementById('campaignDesc').value = c ? (c.description || '') : '';
             document.getElementById('campaignPublished').checked = c ? !!c.published : false;
+            document.getElementById('campaignLocked').checked = c ? !!c.locked_characters : false;
             document.getElementById('campaignStatus').textContent = c
                 ? 'Betöltve: ' + new Date(c.updated_at).toLocaleString('hu-HU')
                 : 'Nincs kiválasztott kampány — a mentés újat hoz létre.';
@@ -1149,7 +1154,8 @@ const sb = supabase.createClient(
                 name: name,
                 description: document.getElementById('campaignDesc').value.trim() || null,
                 state: collectCampaignState(),
-                published: document.getElementById('campaignPublished').checked
+                published: document.getElementById('campaignPublished').checked,
+                locked_characters: document.getElementById('campaignLocked').checked
             };
             const { error } = await sb.from('campaigns').upsert(row);
             if (error) { alert('Mentés sikertelen: ' + error.message); return; }
@@ -1190,7 +1196,79 @@ const sb = supabase.createClient(
             return data || [];
         }
 
+        /* ---- Kampány játékosai (campaign_members) ---- */
+
+        let userListCache = null;
+        async function loadUserList() {
+            if (userListCache) return userListCache;
+            const { data } = await window._sb.from('user_profiles')
+                .select('id,display_name,role').order('display_name');
+            userListCache = data || [];
+            return userListCache;
+        }
+
+        window.renderCampaignMembers = async function() {
+            const host = document.getElementById('campaignMembers');
+            if (!host) return;
+            if (!currentCampaignId) { host.innerHTML = ''; return; }
+
+            const [{ data: mem }, users] = await Promise.all([
+                window._sb.from('campaign_members').select('user_id').eq('campaign_id', currentCampaignId),
+                loadUserList()
+            ]);
+            const members = mem || [];
+            const byId = {}; users.forEach(u => { byId[u.id] = u; });
+            const memberIds = new Set(members.map(m => m.user_id));
+            const free = users.filter(u => !memberIds.has(u.id));
+            const uname = u => (u && (u.display_name || u.id.slice(0, 8))) || '(ismeretlen)';
+
+            const attached = members.length
+                ? members.map(m => {
+                    const u = byId[m.user_id];
+                    return '<div style="display:flex;align-items:center;gap:.5rem;padding:.4rem .55rem;background:rgba(255,255,255,.03);border-radius:.45rem;margin-bottom:.35rem;">' +
+                        '<span style="flex:1;font-size:.85rem;color:var(--text-main);">' + esc(uname(u)) +
+                            (u && u.role === 'admin' ? ' <span style="color:var(--gold);font-size:.7rem;">(KM)</span>' : '') + '</span>' +
+                        '<button class="km-btn" style="padding:.2rem .5rem;font-size:.72rem;border-color:rgba(239,68,68,.3);color:#f87171!important;" ' +
+                            'onclick="removeCampaignMember(\'' + m.user_id + '\')">✕</button>' +
+                    '</div>';
+                  }).join('')
+                : '<div style="font-size:.8rem;color:var(--text-muted);padding:.3rem 0 .6rem;">Még nincs hozzárendelt játékos.</div>';
+
+            const picker = free.length
+                ? '<div style="display:flex;gap:.5rem;margin-top:.6rem;">' +
+                    '<select class="km-input" id="pick_member" style="flex:1;font-size:.8rem;padding:.3rem .5rem;">' +
+                      free.map(u => '<option value="' + u.id + '">' + esc(uname(u)) + '</option>').join('') +
+                    '</select>' +
+                    '<button class="km-btn" style="font-size:.78rem;" onclick="addCampaignMember()">＋ Hozzáadás</button>' +
+                  '</div>'
+                : '<div style="font-size:.75rem;color:var(--text-muted);margin-top:.5rem;">Minden felhasználó hozzá van rendelve.</div>';
+
+            host.innerHTML = '<div style="background:var(--bg-card);border:1px solid var(--border-color);border-radius:.75rem;padding:1rem;margin-bottom:1rem;">' +
+                '<div style="font-family:\'Cinzel\',serif;color:var(--gold);font-size:.95rem;margin-bottom:.6rem;">👥 Játékosok ' +
+                    '<span style="color:var(--text-muted);font-size:.75rem;">(' + members.length + ')</span></div>' +
+                '<div style="font-size:.72rem;color:var(--text-muted);margin-bottom:.5rem;">Aki itt szerepel, a főoldali feeden láthatja és válthatja ezt a kampányt.</div>' +
+                attached + picker + '</div>';
+        };
+
+        window.addCampaignMember = async function() {
+            const sel = document.getElementById('pick_member');
+            if (!sel || !sel.value || !currentCampaignId) return;
+            const { error } = await window._sb.from('campaign_members').insert({
+                campaign_id: currentCampaignId, user_id: sel.value
+            });
+            if (error) { alert('Hozzáadás sikertelen: ' + error.message); return; }
+            renderCampaignMembers();
+        };
+
+        window.removeCampaignMember = async function(userId) {
+            const { error } = await window._sb.from('campaign_members').delete()
+                .eq('campaign_id', currentCampaignId).eq('user_id', userId);
+            if (error) { alert('Eltávolítás sikertelen: ' + error.message); return; }
+            renderCampaignMembers();
+        };
+
         window.renderCampaignSections = async function() {
+            renderCampaignMembers();
             const host = document.getElementById('campaignSections');
             if (!currentCampaignId) {
                 host.innerHTML = '<div style="text-align:center;color:var(--text-muted);padding:2.5rem 0;font-size:.9rem;">' +

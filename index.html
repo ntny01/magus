@@ -212,6 +212,34 @@
         .cc-money { font-size: .74rem; color: var(--muted); margin-top: 2px; }
         .cc-money b { color: var(--gold); font-weight: 500; }
 
+        /* Feed vezérlők (kampány- + karakterváltó) */
+        .char-controls { display: flex; flex-wrap: wrap; align-items: center; gap: .5rem; margin: .1rem 0 .2rem; }
+        .char-controls:empty { display: none; }
+        .fc-label { font-size: .72rem; color: var(--muted); letter-spacing: .04em; }
+        .fc-select {
+            background: var(--card); border: 1px solid var(--border); color: var(--text);
+            border-radius: .5rem; padding: .3rem .55rem; font-size: .8rem; font-family: inherit; cursor: pointer;
+        }
+        .fc-select:focus { outline: none; border-color: var(--gold-soft); }
+        .fc-static {
+            font-size: .8rem; color: var(--gold); background: rgba(212,175,55,.08);
+            border: 1px solid var(--gold-soft); border-radius: .5rem; padding: .3rem .6rem;
+        }
+
+        /* Felszerelés-csempe a karakter mellett (kinyíló) */
+        .char-card.equip { border-left-color: #34d399; width: 220px; }
+        .char-card.equip .eq-toggle { cursor: pointer; display: flex; align-items: center; gap: .35rem; user-select: none; }
+        .char-card.equip .eq-caret { margin-left: auto; transition: transform .2s; font-size: .8rem; color: var(--muted); }
+        .char-card.equip.open .eq-caret { transform: rotate(180deg); }
+        .char-card.equip .eq-count { color: var(--muted); font-size: .82rem; }
+        .char-card.equip .eq-body { display: none; flex-direction: column; gap: .1rem; margin-top: .2rem; }
+        .char-card.equip.open .eq-body { display: flex; }
+        .eq-row { display: flex; justify-content: space-between; gap: .5rem; font-size: .78rem; color: var(--text); padding: .18rem 0; border-bottom: 1px solid rgba(255,255,255,.05); }
+        .eq-qty { color: var(--gold); font-weight: 500; white-space: nowrap; }
+        .eq-empty { font-size: .75rem; color: var(--muted); }
+        .eq-bank { font-size: .78rem; color: var(--muted); margin-bottom: .3rem; }
+        .eq-bank b { color: var(--gold); }
+
         /* Csempe (feed tiles) */
         .tile {
             background: var(--card); border: 1px solid var(--border); border-radius: 14px;
@@ -285,7 +313,8 @@
             </div>
 
             <div class="section-title">🎭 Karaktereid</div>
-            <div class="card-grid" id="charGrid"></div>
+            <div class="char-controls" id="charControls"></div>
+            <div id="charGrid"></div>
             <div id="charEmpty" class="empty-note" style="display:none;">
                 Még nincs mentett karaktered. <a href="char.html" style="color:var(--gold);">Készíts egyet →</a>
             </div>
@@ -367,59 +396,173 @@
             '</div>';
         }
 
-        async function renderCharacters() {
+        /* ===== Feed: kampány- + karakterváltó, EGY aktív karakter =====
+           A feed egyszerre egy karaktert mutat. A „Karaktereid" legördülő
+           váltja. Ha a user több kampányhoz van rendelve (campaign_members),
+           kampányt is válthat; a karakter-lista a kampányhoz kötött elemekre
+           szűkül. Zárolt kampánynál (locked_characters) csak a kampány
+           sablonjaiból (data.template_id) készült karakter használható. */
+        const FEED = { chars: [], campaigns: [], sessById: {}, campaignId: null, charId: null };
+
+        function getEquipment(data) {
+            if (!data || !Array.isArray(data.sections)) return [];
+            const items = [];
+            data.sections.forEach(s => (s.boxes || []).forEach(b => (b.rows || []).forEach(r => {
+                if (r.type === 'equipment' && Array.isArray(r.items))
+                    r.items.forEach(it => { if (it && it.name) items.push(it); });
+            })));
+            return items;
+        }
+
+        function allowedChars() {
+            const camp = FEED.campaigns.find(c => c.id === FEED.campaignId);
+            if (!camp) return FEED.chars; // nincs kampány-kontextus → minden karakter
+            if (camp.locked) return FEED.chars.filter(ch => ch.data && ch.data.template_id && camp.tplIds.has(ch.data.template_id));
+            return FEED.chars.filter(ch => camp.charIds.has(ch.id));
+        }
+
+        function resolveActiveChar() {
+            const allowed = allowedChars();
+            if (!allowed.length) { FEED.charId = null; return; }
+            if (!allowed.some(c => c.id === FEED.charId)) {
+                const remembered = localStorage.getItem('magus_feed_char');
+                FEED.charId = (remembered && allowed.some(c => c.id === remembered)) ? remembered : allowed[0].id;
+            }
+        }
+
+        window.onFeedCampaign = function(id) {
+            FEED.campaignId = id || null;
+            localStorage.setItem('magus_feed_campaign', FEED.campaignId || '');
+            resolveActiveChar();
+            renderFeedControls();
+            renderActiveChar();
+        };
+        window.onFeedChar = function(id) {
+            FEED.charId = id || null;
+            localStorage.setItem('magus_feed_char', FEED.charId || '');
+            renderActiveChar();
+        };
+
+        function renderFeedControls() {
+            const host = document.getElementById('charControls');
+            let html = '';
+            if (FEED.campaigns.length > 1) {
+                html += '<label class="fc-label">Kampány:</label>' +
+                    '<select class="fc-select" onchange="onFeedCampaign(this.value)">' +
+                    FEED.campaigns.map(c => '<option value="' + c.id + '"' + (c.id === FEED.campaignId ? ' selected' : '') + '>' +
+                        esc(c.name) + (c.locked ? ' 🔒' : '') + '</option>').join('') +
+                    '</select>';
+            } else if (FEED.campaigns.length === 1) {
+                const c = FEED.campaigns[0];
+                html += '<span class="fc-static">📖 ' + esc(c.name) + (c.locked ? ' 🔒' : '') + '</span>';
+            }
+            const allowed = allowedChars();
+            if (allowed.length > 1) {
+                html += '<label class="fc-label">Karakter:</label>' +
+                    '<select class="fc-select" onchange="onFeedChar(this.value)">' +
+                    allowed.map(ch => '<option value="' + ch.id + '"' + (ch.id === FEED.charId ? ' selected' : '') + '>' +
+                        esc(ch.name || 'Névtelen') + '</option>').join('') +
+                    '</select>';
+            }
+            host.innerHTML = html;
+        }
+
+        function equipTile(ch, sess) {
+            const items = getEquipment(ch.data);
+            const bank = (sess && Number(sess.bank_money)) || 0;
+            if (!items.length && !bank) return '';
+            const rows = items.length
+                ? items.map(it => '<div class="eq-row"><span>' + esc(it.name) + '</span><span class="eq-qty">×' + (it.qty || 1) + '</span></div>').join('')
+                : '<div class="eq-empty">Nincs tárgy.</div>';
+            const bankLine = bank ? '<div class="eq-bank">🏦 Bankban: <b>' + fmtNum(bank) + '</b> arany</div>' : '';
+            return '<div class="char-card equip">' +
+                '<div class="cc-name eq-toggle" onclick="this.parentNode.classList.toggle(\'open\')">🎒 Felszerelés ' +
+                    '<span class="eq-count">(' + items.length + ')</span><span class="eq-caret">▾</span></div>' +
+                '<div class="eq-body">' + bankLine + rows + '</div>' +
+            '</div>';
+        }
+
+        function renderActiveChar() {
             const grid = document.getElementById('charGrid');
             const empty = document.getElementById('charEmpty');
             grid.innerHTML = '';
-            // Gazda-karakterek (csatlósok nélkül)
-            const { data, error } = await window._sb.from('character_sheets')
-                .select('id, name, faj, kaszt, updated_at')
-                .eq('user_id', window._userId).eq('is_template', false).is('parent_id', null)
-                .order('updated_at', { ascending: false });
-            if (error) { empty.style.display = 'block'; empty.textContent = '⚠️ ' + error.message; return; }
-            if (!data || !data.length) { empty.style.display = 'block'; return; }
+            const ch = FEED.chars.find(c => c.id === FEED.charId);
+            if (!ch) {
+                empty.style.display = 'block';
+                empty.innerHTML = (FEED.chars.length && FEED.campaignId)
+                    ? 'Ehhez a kampányhoz nincs használható karaktered.'
+                    : 'Még nincs mentett karaktered. <a href="char.html" style="color:var(--gold);">Készíts egyet →</a>';
+                return;
+            }
             empty.style.display = 'none';
-
-            // Élő HP/kegypont a Karakter Segéd session-jéből (sheet_id szerint).
-            const sessById = {};
-            try {
-                const { data: sessions } = await window._sb.from('session_states')
-                    .select('sheet_id, char_data, henchmen').eq('user_id', window._userId).not('sheet_id', 'is', null);
-                (sessions || []).forEach(s => { if (s.sheet_id) sessById[s.sheet_id] = s; });
-            } catch (e) { /* session nélkül is menjen */ }
-
-            data.forEach(c => {
-                const cd = sessById[c.id] && sessById[c.id].char_data;
-                let body;
-                if (cd) {
-                    const powLabel = cd.powerType === 'mana' ? '🔵 Mana' : '🔵 Kegypont';
-                    let powBar;
-                    if (cd.powerType === 'mana' && !(cd.maxPower > 0)) {
-                        powBar = '<div class="cc-bar"><div class="cc-bar-row"><span>' + powLabel +
-                            '</span><span><b>' + fmtNum(cd.power) + '</b></span></div>' +
-                            '<div class="cc-bar-track"><div class="cc-bar-fill pow" style="width:100%"></div></div></div>';
-                    } else {
-                        powBar = bar(powLabel, cd.power, cd.maxPower, 'pow');
-                    }
-                    body = bar('❤️ Életerő', cd.hp, cd.maxHp, 'hp') + powBar + moneyLine(cd.money);
+            const sess = FEED.sessById[ch.id];
+            const cd = sess && sess.char_data;
+            let body;
+            if (cd) {
+                const powLabel = cd.powerType === 'mana' ? '🔵 Mana' : '🔵 Kegypont';
+                let powBar;
+                if (cd.powerType === 'mana' && !(cd.maxPower > 0)) {
+                    powBar = '<div class="cc-bar"><div class="cc-bar-row"><span>' + powLabel +
+                        '</span><span><b>' + fmtNum(cd.power) + '</b></span></div>' +
+                        '<div class="cc-bar-track"><div class="cc-bar-fill pow" style="width:100%"></div></div></div>';
                 } else {
-                    body = '<span class="soon">Nyisd meg a Karakter Segédben az életerő/kegypont követéséhez.</span>';
+                    powBar = bar(powLabel, cd.power, cd.maxPower, 'pow');
                 }
-                const henchmen = (sessById[c.id] && Array.isArray(sessById[c.id].henchmen)) ? sessById[c.id].henchmen : [];
+                body = bar('❤️ Életerő', cd.hp, cd.maxHp, 'hp') + powBar + moneyLine(cd.money);
+            } else {
+                body = '<span class="soon">Nyisd meg a Karakter Segédben az életerő/kegypont követéséhez.</span>';
+            }
+            const henchmen = (sess && Array.isArray(sess.henchmen)) ? sess.henchmen : [];
 
-                // A karakter és a csatlósai egy vízszintes csoportban, egymás mellett.
-                const group = document.createElement('div');
-                group.className = 'cc-group';
-                group.innerHTML =
-                    '<div class="char-card">' +
-                        '<div class="cc-name">' + esc(c.name || 'Névtelen') + '</div>' +
-                        '<div class="cc-sub">' + esc([c.faj, c.kaszt].filter(Boolean).join(' · ') || 'M.A.G.U.S. karakter') + '</div>' +
-                        body +
-                        '<a class="cc-open" href="char.html?id=' + encodeURIComponent(c.id) + '">Megnyitás →</a>' +
-                    '</div>' +
-                    henchmen.map(henchCard).join('');
-                grid.appendChild(group);
-            });
+            const group = document.createElement('div');
+            group.className = 'cc-group';
+            group.innerHTML =
+                '<div class="char-card">' +
+                    '<div class="cc-name">' + esc(ch.name || 'Névtelen') + '</div>' +
+                    '<div class="cc-sub">' + esc([ch.faj, ch.kaszt].filter(Boolean).join(' · ') || 'M.A.G.U.S. karakter') + '</div>' +
+                    body +
+                    '<a class="cc-open" href="char.html?id=' + encodeURIComponent(ch.id) + '">Megnyitás →</a>' +
+                '</div>' +
+                henchmen.map(henchCard).join('') +
+                equipTile(ch, sess);
+            grid.appendChild(group);
+        }
+
+        async function loadFeed() {
+            const me = window._userId, sb = window._sb;
+            const empty = document.getElementById('charEmpty');
+            const [chRes, memRes, campRes, itemRes, sessRes] = await Promise.all([
+                sb.from('character_sheets').select('id, name, faj, kaszt, data, updated_at')
+                    .eq('user_id', me).eq('is_template', false).is('parent_id', null)
+                    .order('updated_at', { ascending: false }),
+                sb.from('campaign_members').select('campaign_id').eq('user_id', me),
+                sb.from('campaigns').select('id, name, locked_characters'),
+                sb.from('campaign_items').select('campaign_id, item_type, item_id'),
+                sb.from('session_states').select('sheet_id, char_data, henchmen, bank_money')
+                    .eq('user_id', me).not('sheet_id', 'is', null)
+            ]);
+            if (chRes.error) { empty.style.display = 'block'; empty.textContent = '⚠️ ' + chRes.error.message; return; }
+            FEED.chars = chRes.data || [];
+
+            // Kampányok, amelyeknek a user TAGJA (campaign_members). SQL nélkül üres marad → minden karakter látszik.
+            const memIds = new Set((memRes.data || []).map(m => m.campaign_id));
+            const items = itemRes.data || [];
+            FEED.campaigns = (campRes.data || []).filter(c => memIds.has(c.id)).map(c => ({
+                id: c.id, name: c.name, locked: !!c.locked_characters,
+                charIds: new Set(items.filter(i => i.campaign_id === c.id && i.item_type === 'character').map(i => i.item_id)),
+                tplIds:  new Set(items.filter(i => i.campaign_id === c.id && i.item_type === 'template').map(i => i.item_id))
+            }));
+
+            FEED.sessById = {};
+            (sessRes.data || []).forEach(s => { if (s.sheet_id) FEED.sessById[s.sheet_id] = s; });
+
+            const savedCamp = localStorage.getItem('magus_feed_campaign');
+            FEED.campaignId = (savedCamp && FEED.campaigns.some(c => c.id === savedCamp)) ? savedCamp
+                : (FEED.campaigns.length ? FEED.campaigns[0].id : null);
+            FEED.charId = localStorage.getItem('magus_feed_char') || null;
+            resolveActiveChar();
+            renderFeedControls();
+            renderActiveChar();
         }
 
         (async () => {
@@ -430,7 +573,7 @@
             if (profile.display_name) document.getElementById('heroTitle').textContent = 'Üdv, ' + profile.display_name + '!';
             if (isAdmin) document.querySelectorAll('.admin-only').forEach(e => e.style.display = e.classList.contains('nav-sep') ? 'block' : 'flex');
             renderTiles(isAdmin);
-            renderCharacters();
+            loadFeed();
         })();
     </script>
 </body>
