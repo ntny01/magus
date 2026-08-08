@@ -127,20 +127,45 @@
             color: var(--gold); letter-spacing: .04em;
         }
         .hero-text p { margin: 0; color: var(--muted); font-size: .9rem; line-height: 1.5; }
+        .hero-die {
+            flex-shrink: 0; display: flex; flex-direction: column; align-items: center;
+            gap: .4rem; cursor: pointer; user-select: none;
+        }
         .d12-wrap {
-            flex-shrink: 0; width: 110px; height: 110px;
+            width: 110px; height: 110px;
             display: flex; align-items: center; justify-content: center;
             border-radius: 50%;
-            background: radial-gradient(circle, rgba(212,175,55,.18), transparent 70%);
+            background: radial-gradient(circle, rgba(212,175,55,.22), transparent 68%);
+            transition: background .2s;
         }
+        .hero-die:hover .d12-wrap { background: radial-gradient(circle, rgba(212,175,55,.34), transparent 66%); }
         .d12 {
-            width: 92px; height: 92px; cursor: pointer;
-            filter: brightness(0) invert(1) drop-shadow(0 0 8px rgba(212,175,55,.4));
+            width: 92px; height: 92px;
+            /* aranyszínűre színezve, a részletek megmaradnak */
+            filter: invert(74%) sepia(48%) saturate(560%) hue-rotate(1deg) brightness(94%) contrast(92%)
+                    drop-shadow(0 0 9px rgba(212,175,55,.55));
             animation: d12spin 14s linear infinite, d12float 5s ease-in-out infinite;
         }
-        .d12.rolling { animation: d12roll .9s cubic-bezier(.3,.7,.4,1); }
+        .d12.rolling { animation: d12roll .8s cubic-bezier(.3,.7,.4,1); }
         @keyframes d12spin  { to { transform: rotate(360deg); } }
         @keyframes d12float { 0%,100% { translate: 0 -4px; } 50% { translate: 0 4px; } }
+        .d12-result {
+            font-family: 'Cinzel', serif; font-size: .82rem; letter-spacing: .04em;
+            color: var(--muted); min-height: 1.3em; text-align: center; white-space: nowrap;
+        }
+        .d12-result b { color: var(--gold); font-size: 1.05rem; }
+        .d12-result.crit b { color: #fbbf24; text-shadow: 0 0 10px rgba(251,191,36,.6); }
+        .d12-result.fail b { color: #f87171; }
+        .d12-result.pop { animation: d12pop .35s ease; }
+        @keyframes d12pop { 0% { transform: scale(.6); opacity: .2; } 60% { transform: scale(1.25); } 100% { transform: scale(1); opacity: 1; } }
+
+        /* Csatlós mini-kártya a karakterhez tűzve */
+        .cc-hench {
+            margin-top: .55rem; padding: .5rem .6rem;
+            background: rgba(192,132,252,.07); border: 1px solid rgba(192,132,252,.25);
+            border-left: 3px solid #c084fc; border-radius: 9px;
+        }
+        .cc-hench-name { font-size: .8rem; font-weight: 500; color: #d8b8ff; margin-bottom: .3rem; }
         @keyframes d12roll  { 0% { transform: rotate(0) scale(1); } 60% { transform: rotate(720deg) scale(1.15); } 100% { transform: rotate(1080deg) scale(1); } }
 
         .section-title {
@@ -249,8 +274,11 @@
                     <h1 id="heroTitle">Üdv a Kodexiumban!</h1>
                     <p>Innen éred el a karaktereidet, a szabályzatot és a világ eszközeit. Görgess lejjebb a csempékért, vagy használd a bal oldali navigációt.</p>
                 </div>
-                <div class="d12-wrap">
-                    <img class="d12" id="d12" src="assets/logo/d12-die.png" alt="D12 kocka" title="Dobj!" onclick="rollD12()">
+                <div class="hero-die" onclick="rollD12()" title="Kattints egy k12 dobáshoz!">
+                    <div class="d12-wrap">
+                        <img class="d12" id="d12" src="assets/logo/d12-die.png" alt="D12 kocka">
+                    </div>
+                    <div class="d12-result" id="d12Result">🎲 Dobj egy k12-t!</div>
                 </div>
             </div>
 
@@ -273,7 +301,19 @@
 
         window.rollD12 = function() {
             const d = document.getElementById('d12');
+            const r = document.getElementById('d12Result');
             d.classList.remove('rolling'); void d.offsetWidth; d.classList.add('rolling');
+            const roll = 1 + Math.floor(Math.random() * 12);
+            if (r) r.textContent = '🎲 …';
+            setTimeout(() => {
+                if (!r) return;
+                r.className = 'd12-result';
+                let txt = 'k12 → <b>' + roll + '</b>';
+                if (roll === 12) { r.classList.add('crit'); txt = '✦ Kritikus! k12 → <b>12</b>'; }
+                else if (roll === 1) { r.classList.add('fail'); txt = 'Balszerencse… k12 → <b>1</b>'; }
+                r.innerHTML = txt;
+                void r.offsetWidth; r.classList.add('pop');
+            }, 620);
         };
 
         // Felfedezés-csempék (a navigáció "csempe" változata a feeden)
@@ -316,6 +356,13 @@
             if (!g && !s && !c) return '';
             return '<div class="cc-money">🪙 <b>' + g + '</b> A · <b>' + s + '</b> E · <b>' + c + '</b> R</div>';
         }
+        function henchMini(h) {
+            return '<div class="cc-hench">' +
+                '<div class="cc-hench-name">🔗 ' + esc(h.name || 'Csatlós') + '</div>' +
+                bar('❤️ Életerő', h.hp, h.maxHp, 'hp') +
+                moneyLine(h.money) +
+            '</div>';
+        }
 
         async function renderCharacters() {
             const grid = document.getElementById('charGrid');
@@ -334,7 +381,7 @@
             const sessById = {};
             try {
                 const { data: sessions } = await window._sb.from('session_states')
-                    .select('sheet_id, char_data').eq('user_id', window._userId).not('sheet_id', 'is', null);
+                    .select('sheet_id, char_data, henchmen').eq('user_id', window._userId).not('sheet_id', 'is', null);
                 (sessions || []).forEach(s => { if (s.sheet_id) sessById[s.sheet_id] = s; });
             } catch (e) { /* session nélkül is menjen */ }
 
@@ -357,10 +404,13 @@
                 } else {
                     body = '<span class="soon">Nyisd meg a Karakter Segédben az életerő/kegypont követéséhez.</span>';
                 }
+                // Csatlósok (a szülő session-jéből) mini-kártyaként hozzátűzve.
+                const henchmen = (sessById[c.id] && Array.isArray(sessById[c.id].henchmen)) ? sessById[c.id].henchmen : [];
+                const henchHtml = henchmen.map(henchMini).join('');
                 card.innerHTML =
                     '<div class="cc-name">' + esc(c.name || 'Névtelen') + '</div>' +
                     '<div class="cc-sub">' + esc([c.faj, c.kaszt].filter(Boolean).join(' · ') || 'M.A.G.U.S. karakter') + '</div>' +
-                    body +
+                    body + henchHtml +
                     '<a class="cc-open" href="char.html?id=' + encodeURIComponent(c.id) + '">Megnyitás →</a>';
                 grid.appendChild(card);
             });
