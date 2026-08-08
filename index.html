@@ -159,13 +159,6 @@
         .d12-result.pop { animation: d12pop .35s ease; }
         @keyframes d12pop { 0% { transform: scale(.6); opacity: .2; } 60% { transform: scale(1.25); } 100% { transform: scale(1); opacity: 1; } }
 
-        /* Csatlós mini-kártya a karakterhez tűzve */
-        .cc-hench {
-            margin-top: .55rem; padding: .5rem .6rem;
-            background: rgba(192,132,252,.07); border: 1px solid rgba(192,132,252,.25);
-            border-left: 3px solid #c084fc; border-radius: 9px;
-        }
-        .cc-hench-name { font-size: .8rem; font-weight: 500; color: #d8b8ff; margin-bottom: .3rem; }
         @keyframes d12roll  { 0% { transform: rotate(0) scale(1); } 60% { transform: rotate(720deg) scale(1.15); } 100% { transform: rotate(1080deg) scale(1); } }
 
         .section-title {
@@ -180,9 +173,18 @@
             border-left: 3px solid var(--gold); border-radius: 14px; padding: 1rem 1.1rem;
             display: flex; flex-direction: column; gap: .6rem;
         }
-        .char-card.hench { border-left-color: #c084fc; }
+        .char-card.hench { border-left-color: #c084fc; background: rgba(192,132,252,.05); width: 200px; }
+        .char-card.hench .cc-name { color: #d8b8ff; font-size: .95rem; }
         .char-card .cc-name { font-family: 'Cinzel', serif; font-size: 1.05rem; color: #fff; }
         .char-card .cc-sub { font-size: .78rem; color: var(--muted); }
+
+        /* Karakter + csatlós(ok) egy vízszintes csoportban (egymás MELLETT) */
+        #charGrid { display: flex; flex-wrap: wrap; gap: 1rem; align-items: flex-start; }
+        .cc-group { display: flex; flex-wrap: wrap; gap: .55rem; align-items: stretch; }
+        .cc-group > .char-card { width: 260px; }
+        @media (max-width: 520px) {
+            .cc-group > .char-card, .char-card.hench { width: 100%; }
+        }
         .cc-stats { display: flex; gap: .5rem; flex-wrap: wrap; }
         .cc-stat {
             flex: 1 1 auto; min-width: 62px; text-align: center;
@@ -356,9 +358,10 @@
             if (!g && !s && !c) return '';
             return '<div class="cc-money">🪙 <b>' + g + '</b> A · <b>' + s + '</b> E · <b>' + c + '</b> R</div>';
         }
-        function henchMini(h) {
-            return '<div class="cc-hench">' +
-                '<div class="cc-hench-name">🔗 ' + esc(h.name || 'Csatlós') + '</div>' +
+        function henchCard(h) {
+            return '<div class="char-card hench">' +
+                '<div class="cc-name">🔗 ' + esc(h.name || 'Csatlós') + '</div>' +
+                '<div class="cc-sub">Csatlós</div>' +
                 bar('❤️ Életerő', h.hp, h.maxHp, 'hp') +
                 moneyLine(h.money) +
             '</div>';
@@ -386,8 +389,6 @@
             } catch (e) { /* session nélkül is menjen */ }
 
             data.forEach(c => {
-                const card = document.createElement('div');
-                card.className = 'char-card';
                 const cd = sessById[c.id] && sessById[c.id].char_data;
                 let body;
                 if (cd) {
@@ -404,15 +405,20 @@
                 } else {
                     body = '<span class="soon">Nyisd meg a Karakter Segédben az életerő/kegypont követéséhez.</span>';
                 }
-                // Csatlósok (a szülő session-jéből) mini-kártyaként hozzátűzve.
                 const henchmen = (sessById[c.id] && Array.isArray(sessById[c.id].henchmen)) ? sessById[c.id].henchmen : [];
-                const henchHtml = henchmen.map(henchMini).join('');
-                card.innerHTML =
-                    '<div class="cc-name">' + esc(c.name || 'Névtelen') + '</div>' +
-                    '<div class="cc-sub">' + esc([c.faj, c.kaszt].filter(Boolean).join(' · ') || 'M.A.G.U.S. karakter') + '</div>' +
-                    body + henchHtml +
-                    '<a class="cc-open" href="char.html?id=' + encodeURIComponent(c.id) + '">Megnyitás →</a>';
-                grid.appendChild(card);
+
+                // A karakter és a csatlósai egy vízszintes csoportban, egymás mellett.
+                const group = document.createElement('div');
+                group.className = 'cc-group';
+                group.innerHTML =
+                    '<div class="char-card">' +
+                        '<div class="cc-name">' + esc(c.name || 'Névtelen') + '</div>' +
+                        '<div class="cc-sub">' + esc([c.faj, c.kaszt].filter(Boolean).join(' · ') || 'M.A.G.U.S. karakter') + '</div>' +
+                        body +
+                        '<a class="cc-open" href="char.html?id=' + encodeURIComponent(c.id) + '">Megnyitás →</a>' +
+                    '</div>' +
+                    henchmen.map(henchCard).join('');
+                grid.appendChild(group);
             });
         }
 
