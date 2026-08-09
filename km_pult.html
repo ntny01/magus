@@ -804,6 +804,7 @@ const sb = supabase.createClient(
                             <option value="notes">Jegyzetek</option>
                             <option value="locations">Helyszínek</option>
                             <option value="npcs">Szereplők (NPC)</option>
+                            <option value="posts">📢 Feed-posztok</option>
                         </select>
                     </span>
                     <button class="km-btn" style="padding:.25rem .7rem;font-size:.75rem;" onclick="openJournalEditor()">＋ Új</button>
@@ -869,6 +870,26 @@ const sb = supabase.createClient(
                     </div>
                 </div>
 
+                <!-- FEED-POSZT szerkesztő (blokk-alapú) -->
+                <div id="postEditor" class="journal-editor" style="display:none; background:rgba(0,0,0,.2); border:1px solid var(--border-color); border-radius:.6rem; padding:.7rem; margin-bottom:.75rem;">
+                    <div id="postNoCampaign" style="display:none; color:#f7b955; font-size:.8rem; margin-bottom:.5rem;">⚠️ Előbb válassz ki vagy ments el egy kampányt — a poszt egy kampányhoz tartozik.</div>
+                    <input type="text" id="postTitle" class="km-input" placeholder="Poszt címe (pl. „3. este – A fogadóban”)" style="margin-bottom:.5rem;">
+                    <div id="postBlocks" style="display:flex;flex-direction:column;gap:.5rem;margin-bottom:.5rem;"></div>
+                    <div style="display:flex; gap:.4rem; flex-wrap:wrap; margin-bottom:.6rem;">
+                        <button class="km-btn" style="font-size:.75rem;" onclick="addPostBlock('text')">＋ Szöveg</button>
+                        <button class="km-btn" style="font-size:.75rem;" onclick="addPostBlock('heading')">＋ Alcím</button>
+                        <select id="pullLocation" class="km-input" style="width:auto;font-size:.75rem;" onchange="pullPostBlock('location', this)"><option value="">＋ Behúz helyszínt…</option></select>
+                        <select id="pullNpc" class="km-input" style="width:auto;font-size:.75rem;" onchange="pullPostBlock('npc', this)"><option value="">＋ Behúz NPC-t…</option></select>
+                    </div>
+                    <div style="display:flex; gap:.5rem; justify-content:flex-end; align-items:center;">
+                        <label style="flex:1; font-size:.75rem; color:var(--text-muted); display:flex; align-items:center; gap:.35rem; cursor:pointer;">
+                            <input type="checkbox" id="postPublished"> 📢 Közzététel a feeden
+                        </label>
+                        <button class="km-btn" onclick="cancelPost()" style="font-size:.78rem;">Mégse</button>
+                        <button class="km-btn" onclick="savePost()" style="border-color:rgba(16,185,129,.4);color:var(--accent-hover)!important;font-size:.78rem;">💾 Mentés</button>
+                    </div>
+                </div>
+
                 <!-- Listák (a legördülő szerint látszik egy) -->
                 <div class="journal-list" data-view="notes">
                     <div id="notesEmpty" style="text-align:center;color:var(--text-muted);font-size:.85rem;padding:1.5rem 0;">Betöltés…</div>
@@ -881,6 +902,10 @@ const sb = supabase.createClient(
                 <div class="journal-list" data-view="npcs" style="display:none;">
                     <div id="npcsEmpty" style="text-align:center;color:var(--text-muted);font-size:.85rem;padding:1.5rem 0;">Betöltés…</div>
                     <div id="npcsList" style="display:flex;flex-direction:column;gap:.5rem;overflow-y:auto;max-height:52vh;"></div>
+                </div>
+                <div class="journal-list" data-view="posts" style="display:none;">
+                    <div id="postsEmpty" style="text-align:center;color:var(--text-muted);font-size:.85rem;padding:1.5rem 0;">Betöltés…</div>
+                    <div id="postsList" style="display:flex;flex-direction:column;gap:.5rem;overflow-y:auto;max-height:52vh;"></div>
                 </div>
             </div>
         </div>
@@ -1529,7 +1554,7 @@ const sb = supabase.createClient(
         window.switchJournalView = function(view) {
             journalView = view;
             document.querySelectorAll('.journal-editor').forEach(e => e.style.display = 'none');
-            editingNoteId = null; editingLocationId = null; editingNpcId = null;
+            editingNoteId = null; editingLocationId = null; editingNpcId = null; editingPostId = null;
             document.querySelectorAll('.journal-list').forEach(l => {
                 l.style.display = (l.dataset.view === view) ? 'block' : 'none';
             });
@@ -1538,13 +1563,194 @@ const sb = supabase.createClient(
         window.openJournalEditor = function() {
             if (journalView === 'notes') openNoteEditor();
             else if (journalView === 'locations') openLocationEditor();
-            else openNpcEditor();
+            else if (journalView === 'npcs') openNpcEditor();
+            else openPostEditor();
         };
         window.loadJournal = function() {
             if (journalView === 'notes') loadNotes();
             else if (journalView === 'locations') loadLocations();
-            else loadNpcs();
+            else if (journalView === 'npcs') loadNpcs();
+            else loadPosts();
         };
+
+        /* =========================================================
+           FEED-POSZTOK (campaign_posts)
+           A KM a kampányról posztol; a poszt BLOKKOKBÓL áll (szöveg/alcím +
+           behúzott helyszín/NPC pillanatkép, szabadon átírható). Csak
+           published=true esetén látszik a kampány tagjainak a feeden.
+           Séma: security/campaign_posts.sql
+           ========================================================= */
+        const POST_BLOCK_META = {
+            heading:  { icon:'🔸', label:'Alcím' },
+            text:     { icon:'📝', label:'Szöveg' },
+            location: { icon:'📍', label:'Helyszín' },
+            npc:      { icon:'👤', label:'NPC' }
+        };
+        let postsCache = [], editingPostId = null, postBlocks = [];
+
+        function newBlockId() { return 'b' + Math.random().toString(16).slice(2, 8); }
+
+        window.openPostEditor = async function(post) {
+            document.querySelectorAll('.journal-editor').forEach(e => e.style.display = 'none');
+            editingPostId = post ? post.id : null;
+            postBlocks = post && Array.isArray(post.blocks)
+                ? post.blocks.map(b => Object.assign({ id: newBlockId() }, b))
+                : [];
+            document.getElementById('postTitle').value = post ? (post.title || '') : '';
+            document.getElementById('postPublished').checked = post ? !!post.published : false;
+            document.getElementById('postNoCampaign').style.display = currentCampaignId ? 'none' : 'block';
+            renderPostBlocks();
+            await loadPostPullOptions();
+            document.getElementById('postEditor').style.display = 'block';
+        };
+        window.cancelPost = function() {
+            document.getElementById('postEditor').style.display = 'none';
+            editingPostId = null; postBlocks = [];
+        };
+
+        // A behúzó legördülők feltöltése a mentett helyszínekből/NPC-kből (kampányra szűrve).
+        async function loadPostPullOptions() {
+            const locSel = document.getElementById('pullLocation');
+            const npcSel = document.getElementById('pullNpc');
+            let lq = window._sb.from('campaign_locations').select('id,name,description,data');
+            let nq = window._sb.from('campaign_npcs').select('id,name,features,description');
+            lq = currentCampaignId ? lq.eq('campaign_id', currentCampaignId) : lq.is('campaign_id', null);
+            nq = currentCampaignId ? nq.eq('campaign_id', currentCampaignId) : nq.is('campaign_id', null);
+            const [{ data: locs }, { data: npcs }] = await Promise.all([lq, nq]);
+            window._pullLocs = locs || []; window._pullNpcs = npcs || [];
+            locSel.innerHTML = '<option value="">＋ Behúz helyszínt…</option>' +
+                (locs || []).map(l => '<option value="' + l.id + '">' + esc(l.name) + '</option>').join('');
+            npcSel.innerHTML = '<option value="">＋ Behúz NPC-t…</option>' +
+                (npcs || []).map(n => '<option value="' + n.id + '">' + esc(n.name) + '</option>').join('');
+        }
+
+        window.addPostBlock = function(kind) {
+            postBlocks.push({ id: newBlockId(), kind: kind, title: '', body: '' });
+            renderPostBlocks();
+        };
+        window.pullPostBlock = function(kind, sel) {
+            const id = sel.value; sel.value = '';
+            if (!id) return;
+            if (kind === 'location') {
+                const l = (window._pullLocs || []).find(x => x.id === id); if (!l) return;
+                postBlocks.push({ id: newBlockId(), kind: 'location', title: l.name || '', body: l.description || '', ref_id: l.id });
+            } else {
+                const n = (window._pullNpcs || []).find(x => x.id === id); if (!n) return;
+                const body = [n.features ? 'Ismertetőjelek: ' + n.features : '', n.description || ''].filter(Boolean).join('\n');
+                postBlocks.push({ id: newBlockId(), kind: 'npc', title: n.name || '', body: body, ref_id: n.id });
+            }
+            renderPostBlocks();
+        };
+        window.updatePostBlock = function(id, field, val) {
+            const b = postBlocks.find(x => x.id === id); if (b) b[field] = val;
+        };
+        window.removePostBlock = function(id) {
+            postBlocks = postBlocks.filter(x => x.id !== id); renderPostBlocks();
+        };
+        window.movePostBlock = function(id, dir) {
+            const i = postBlocks.findIndex(x => x.id === id); if (i < 0) return;
+            const j = i + dir; if (j < 0 || j >= postBlocks.length) return;
+            const t = postBlocks[i]; postBlocks[i] = postBlocks[j]; postBlocks[j] = t;
+            renderPostBlocks();
+        };
+
+        function renderPostBlocks() {
+            const host = document.getElementById('postBlocks');
+            if (!postBlocks.length) {
+                host.innerHTML = '<div style="font-size:.78rem;color:var(--text-muted);padding:.4rem 0;">Adj hozzá blokkot lentről — szöveget, alcímet, vagy húzz be egy mentett helyszínt/NPC-t.</div>';
+                return;
+            }
+            host.innerHTML = '';
+            postBlocks.forEach((b, idx) => {
+                const meta = POST_BLOCK_META[b.kind] || POST_BLOCK_META.text;
+                const wrap = document.createElement('div');
+                wrap.style.cssText = 'border:1px solid var(--border-color);border-radius:.5rem;padding:.5rem;background:rgba(255,255,255,.02);';
+                const titlePh = b.kind === 'heading' ? 'Alcím szövege' : (b.kind === 'text' ? 'Cím (opcionális)' : 'Név');
+                let inner = '<div style="display:flex;align-items:center;gap:.4rem;margin-bottom:.35rem;">' +
+                    '<span style="font-size:.72rem;color:var(--gold);">' + meta.icon + ' ' + meta.label + '</span>' +
+                    '<span style="flex:1;"></span>' +
+                    '<button class="km-btn" style="padding:.1rem .4rem;font-size:.7rem;" title="Feljebb" onclick="movePostBlock(\'' + b.id + '\',-1)"' + (idx === 0 ? ' disabled' : '') + '>▲</button>' +
+                    '<button class="km-btn" style="padding:.1rem .4rem;font-size:.7rem;" title="Lejjebb" onclick="movePostBlock(\'' + b.id + '\',1)"' + (idx === postBlocks.length - 1 ? ' disabled' : '') + '>▼</button>' +
+                    '<button class="km-btn" style="padding:.1rem .4rem;font-size:.7rem;border-color:rgba(239,68,68,.3);color:#f87171!important;" onclick="removePostBlock(\'' + b.id + '\')">✕</button>' +
+                    '</div>';
+                inner += '<input type="text" class="km-input" style="margin-bottom:' + (b.kind === 'heading' ? '0' : '.35rem') + ';font-size:.82rem;" placeholder="' + titlePh + '" value="' + esc(b.title || '') + '" oninput="updatePostBlock(\'' + b.id + '\',\'title\',this.value)">';
+                if (b.kind !== 'heading') {
+                    inner += '<textarea class="km-textarea" style="min-height:60px;font-size:.82rem;" placeholder="Szöveg…" oninput="updatePostBlock(\'' + b.id + '\',\'body\',this.value)">' + esc(b.body || '') + '</textarea>';
+                }
+                wrap.innerHTML = inner;
+                host.appendChild(wrap);
+            });
+        }
+
+        window.savePost = async function() {
+            if (!currentCampaignId) { alert('A poszt egy kampányhoz tartozik — előbb válassz ki vagy ments el egy kampányt.'); return; }
+            const sb = window._sb;
+            const title = document.getElementById('postTitle').value.trim();
+            const clean = postBlocks
+                .map(b => ({ kind: b.kind, title: (b.title || '').trim(), body: (b.body || '').trim(), ref_id: b.ref_id || null }))
+                .filter(b => b.title || b.body);
+            if (!title && !clean.length) { alert('Adj a posztnak címet vagy legalább egy blokkot.'); return; }
+            const row = {
+                id: editingPostId || crypto.randomUUID(),
+                campaign_id: currentCampaignId,
+                author_id: window._userId,
+                title: title || null,
+                blocks: clean,
+                published: document.getElementById('postPublished').checked
+            };
+            const { error } = await sb.from('campaign_posts').upsert(row);
+            if (error) { alert('Mentés sikertelen: ' + error.message); return; }
+            cancelPost();
+            loadPosts();
+        };
+
+        window.editPost = function(id) {
+            const p = postsCache.find(x => x.id === id); if (p) openPostEditor(p);
+        };
+        window.deletePost = async function(id) {
+            if (!confirm('Törlöd ezt a posztot?')) return;
+            const { error } = await window._sb.from('campaign_posts').delete().eq('id', id);
+            if (error) { alert('Törlés sikertelen: ' + error.message); return; }
+            loadPosts();
+        };
+        window.togglePostPublished = async function(id, val) {
+            const { error } = await window._sb.from('campaign_posts').update({ published: val }).eq('id', id);
+            if (error) { alert('Nem sikerült: ' + error.message); return; }
+            loadPosts();
+        };
+
+        async function loadPosts() {
+            const listEl = document.getElementById('postsList');
+            const emptyEl = document.getElementById('postsEmpty');
+            listEl.innerHTML = ''; emptyEl.style.display = 'block';
+            if (!currentCampaignId) { emptyEl.textContent = 'Válassz ki egy kampányt a posztok kezeléséhez.'; return; }
+            emptyEl.textContent = 'Betöltés…';
+            const { data, error } = await window._sb.from('campaign_posts')
+                .select('*').eq('campaign_id', currentCampaignId).order('created_at', { ascending: false });
+            if (error) { emptyEl.textContent = '⚠️ ' + error.message; return; }
+            postsCache = data || [];
+            if (!postsCache.length) { emptyEl.textContent = 'Még nincs poszt ehhez a kampányhoz. Kattints a „＋ Új” gombra.'; return; }
+            emptyEl.style.display = 'none';
+            postsCache.forEach(p => {
+                const blocks = Array.isArray(p.blocks) ? p.blocks : [];
+                const preview = blocks.map(b => (b.title || '') + ' ' + (b.body || '')).join(' ').trim().slice(0, 120);
+                const card = document.createElement('div');
+                card.style.cssText = 'border:1px solid var(--border-color);border-left:3px solid ' + (p.published ? '#34d399' : 'var(--text-muted)') + ';border-radius:.5rem;padding:.6rem .7rem;background:rgba(255,255,255,.02);';
+                card.innerHTML =
+                    '<div style="display:flex;align-items:center;gap:.5rem;margin-bottom:.3rem;">' +
+                        '<span style="flex:1;font-family:\'Cinzel\',serif;color:var(--text-main);font-size:.9rem;">' + esc(p.title || '(cím nélküli poszt)') + '</span>' +
+                        (p.published ? '<span style="font-size:.68rem;color:#34d399;">📢 közzétéve</span>' : '<span style="font-size:.68rem;color:var(--text-muted);">vázlat</span>') +
+                    '</div>' +
+                    '<div style="font-size:.75rem;color:var(--text-muted);margin-bottom:.4rem;">' + esc(preview || '(üres)') + (preview.length >= 120 ? '…' : '') +
+                        ' · ' + blocks.length + ' blokk · ' + new Date(p.created_at).toLocaleDateString('hu-HU') + '</div>' +
+                    '<div style="display:flex;gap:.4rem;flex-wrap:wrap;">' +
+                        '<button class="km-btn" style="font-size:.72rem;padding:.2rem .55rem;" onclick="editPost(\'' + p.id + '\')">✏️ Szerkeszt</button>' +
+                        '<button class="km-btn" style="font-size:.72rem;padding:.2rem .55rem;" onclick="togglePostPublished(\'' + p.id + '\',' + (!p.published) + ')">' + (p.published ? '👁️ Elrejt' : '📢 Közzétesz') + '</button>' +
+                        '<button class="km-btn" style="font-size:.72rem;padding:.2rem .55rem;border-color:rgba(239,68,68,.3);color:#f87171!important;" onclick="deletePost(\'' + p.id + '\')">🗑️</button>' +
+                    '</div>';
+                listEl.appendChild(card);
+            });
+        }
 
         /* =========================================================
            HELYSZÍNEK (campaign_locations)

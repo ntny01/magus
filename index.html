@@ -315,6 +315,25 @@
         }
         .admin-only { display: none; }
 
+        /* ===== KAMPÁNY-POSZTOK (feed) ===== */
+        .post-card {
+            background: var(--card); border: 1px solid var(--border); border-radius: 14px;
+            padding: 1.1rem 1.2rem; margin-bottom: 1rem;
+        }
+        .post-card h3 { font-family: 'Cinzel', serif; color: var(--gold); font-size: 1.05rem; margin: 0 0 .2rem; }
+        .post-meta { font-size: .72rem; color: var(--muted); margin-bottom: .7rem; }
+        .post-block { margin-bottom: .7rem; }
+        .post-block:last-child { margin-bottom: 0; }
+        .pb-heading {
+            font-family: 'Cinzel', serif; color: var(--text); font-size: .92rem;
+            margin: .3rem 0; border-left: 3px solid var(--gold-soft); padding-left: .55rem;
+        }
+        .pb-title { font-weight: 600; color: var(--text); font-size: .9rem; margin-bottom: .15rem; }
+        .pb-body { font-size: .86rem; color: var(--muted); line-height: 1.55; white-space: pre-wrap; }
+        .pb-loc, .pb-npc { border-radius: 0 8px 8px 0; padding: .5rem .7rem; background: rgba(255,255,255,.02); }
+        .pb-loc { border-left: 3px solid #60a5fa; }
+        .pb-npc { border-left: 3px solid #c084fc; }
+
         /* ===== RESPONSIVE ===== */
         @media (max-width: 860px) {
             .layout { grid-template-columns: 1fr; padding: 1rem; gap: 1rem; }
@@ -370,6 +389,9 @@
             <div id="charEmpty" class="empty-note" style="display:none;">
                 Még nincs mentett karaktered. <a href="char.html" style="color:var(--gold);">Készíts egyet →</a>
             </div>
+
+            <div class="section-title" id="postFeedTitle" style="display:none;">📢 Kampánynapló</div>
+            <div id="postFeed"></div>
 
             <div class="section-title">🧭 Felfedezés</div>
             <div class="card-grid" id="tileGrid"></div>
@@ -495,7 +517,41 @@
             resolveActiveChar();
             renderFeedControls();
             renderActiveChar();
+            renderCampaignPosts();
         };
+
+        // A kampány published posztjai a feeden (a KM Pultból posztolva).
+        function renderPostBlock(b) {
+            const title = esc(b.title || ''), body = esc(b.body || '');
+            if (b.kind === 'heading') return '<div class="pb-heading">' + title + '</div>';
+            if (b.kind === 'location') return '<div class="post-block pb-loc">' + (title ? '<div class="pb-title">📍 ' + title + '</div>' : '') + (body ? '<div class="pb-body">' + body + '</div>' : '') + '</div>';
+            if (b.kind === 'npc') return '<div class="post-block pb-npc">' + (title ? '<div class="pb-title">👤 ' + title + '</div>' : '') + (body ? '<div class="pb-body">' + body + '</div>' : '') + '</div>';
+            return '<div class="post-block">' + (title ? '<div class="pb-title">' + title + '</div>' : '') + (body ? '<div class="pb-body">' + body + '</div>' : '') + '</div>';
+        }
+        async function renderCampaignPosts() {
+            const titleEl = document.getElementById('postFeedTitle');
+            const host = document.getElementById('postFeed');
+            host.innerHTML = '';
+            if (!FEED.campaignId) { titleEl.style.display = 'none'; return; }
+            const { data, error } = await window._sb.from('campaign_posts')
+                .select('id, title, blocks, created_at')
+                .eq('campaign_id', FEED.campaignId).eq('published', true)
+                .order('created_at', { ascending: false });
+            if (error || !data || !data.length) { titleEl.style.display = 'none'; return; }
+            const campName = (FEED.campaigns.find(c => c.id === FEED.campaignId) || {}).name || '';
+            titleEl.textContent = '📢 Kampánynapló' + (campName ? ' — ' + campName : '');
+            titleEl.style.display = '';
+            data.forEach(p => {
+                const blocks = Array.isArray(p.blocks) ? p.blocks : [];
+                const card = document.createElement('div');
+                card.className = 'post-card';
+                card.innerHTML =
+                    (p.title ? '<h3>' + esc(p.title) + '</h3>' : '') +
+                    '<div class="post-meta">' + new Date(p.created_at).toLocaleDateString('hu-HU', { year: 'numeric', month: 'long', day: 'numeric' }) + '</div>' +
+                    blocks.map(renderPostBlock).join('');
+                host.appendChild(card);
+            });
+        }
         window.onFeedChar = function(id) {
             FEED.charId = id || null;
             localStorage.setItem('magus_feed_char', FEED.charId || '');
@@ -647,6 +703,7 @@
             resolveActiveChar();
             renderFeedControls();
             renderActiveChar();
+            renderCampaignPosts();
         }
 
         (async () => {
