@@ -1025,12 +1025,16 @@
                     fields = '<input type="text" placeholder="' + (b.kind === 'banner' ? 'Szalagcím szövege' : 'Alcím') + '" value="' + esc(b.title || '') + '" oninput="updateCmpTile(\'' + b._id + '\',\'title\',this.value)">';
                 } else if (isImg) {
                     fields = '<input type="text" placeholder="Felirat" value="' + esc(b.title || '') + '" oninput="updateCmpTile(\'' + b._id + '\',\'title\',this.value)">';
-                    if (b.src) {
+                    if (b.kind === 'battlemap' && b.src) {
+                        // A battlemap teljes képéből itt vágsz ki egy négyzetet.
                         const cropped = b.crop && b.crop.w > 0 && (b.crop.w < 1 || b.crop.h < 1);
                         fields += '<div style="display:flex;align-items:center;gap:.5rem;flex-wrap:wrap;">' +
                             '<button class="cmp-ctl" onclick="openCrop(\'' + b._id + '\')">✂️ Kivágás</button>' +
                             '<span style="font-size:.72rem;color:' + (cropped ? '#34d399' : 'var(--muted)') + ';">' +
                                 (cropped ? '✓ Részlet kijelölve' : 'A teljes kép jelenik meg') + '</span></div>';
+                    } else if (b.kind === 'ynev_map' && b.src) {
+                        // A pillanatkép már a térképen ki lett jelölve → NINCS újravágás.
+                        fields += '<div style="font-size:.72rem;color:#34d399;">✓ Kész pillanatkép (a térképen jelölted ki) — a csempe új lapon nyitja a térképet.</div>';
                     } else {
                         fields += '<div style="font-size:.72rem;color:#f7b955;">' +
                             (b.kind === 'ynev_map' ? '🗺️ Nincs még pillanatkép — nyisd meg az Ynev térképet admin módban, és ments „📸 Pillanatkép"-et ehhez a térképhez. Addig link-csempe.' : '🖼️ Nincs kép — mentsd újra a battlemapet.') + '</div>';

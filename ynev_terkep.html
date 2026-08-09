@@ -3733,6 +3733,31 @@ document.addEventListener('mousemove', e => {
     } catch(e){}
   }
 
+  // Egy szöveges/emoji elemet a canvasra rajzol a saját pozíciójában és stílusában.
+  // (Az emoji színes glyphként renderelődik; a szöveg körvonalát fekete stroke adja.)
+  function drawTextEl(ctx, el, ox, oy, scale, isLabel){
+    if (!el) return;
+    const txt = (el.textContent || '').trim();
+    if (!txt) return;
+    const r = el.getBoundingClientRect();
+    if (!r.width || !r.height) return;
+    const cs = getComputedStyle(el);
+    const fs = (parseFloat(cs.fontSize) || 16) * scale;
+    ctx.save();
+    ctx.font = (isLabel ? '700 ' : '') + fs + 'px ' + (cs.fontFamily || 'sans-serif');
+    ctx.textAlign = 'center';
+    ctx.textBaseline = 'middle';
+    const cx = (r.left + r.width/2 - ox) * scale;
+    const cy = (r.top + r.height/2 - oy) * scale;
+    ctx.lineJoin = 'round';
+    ctx.lineWidth = Math.max(2, (isLabel ? 3 : 2) * scale);
+    ctx.strokeStyle = '#000';
+    try { ctx.strokeText(txt, cx, cy); } catch(e){}
+    ctx.fillStyle = isLabel ? (cs.color && cs.color !== 'rgba(0, 0, 0, 0)' ? cs.color : '#fff') : '#fff';
+    try { ctx.fillText(txt, cx, cy); } catch(e){}
+    ctx.restore();
+  }
+
   // A kijelölt négyzetből képet komponál: TILE-ok + vektoros rajzok (overlay SVG)
   // + markerek/effektek (kép vagy belső SVG). Emoji/tiszta szöveges divIcon lemaradhat.
   async function captureRegionBlob(sel, px){
@@ -3763,6 +3788,15 @@ document.addEventListener('mousemove', e => {
       } else if (svg) {
         const sr = svg.getBoundingClientRect();
         await drawSvgToCanvas(ctx, svg, (sr.left-ox)*scale, (sr.top-oy)*scale, sr.width*scale, sr.height*scale);
+      } else {
+        // HTML-divIcon (emoji-jelölő + felirat, effekt-emoji). Szövegként rajzoljuk:
+        // az emoji színes glyphként renderelődik a fillText-tel (nem taint-el).
+        drawTextEl(ctx, mk.querySelector('.customMarker'), ox, oy, scale, false);
+        drawTextEl(ctx, mk.querySelector('.markerLabel'),  ox, oy, scale, true);
+        // Effekt-divIcon: a data-efx-en belüli első elem szövege (emoji), ha van
+        if (!mk.querySelector('.customMarker') && !mk.querySelector('.markerLabel')) {
+          drawTextEl(ctx, mk.querySelector('[data-efx]') || mk, ox, oy, scale, false);
+        }
       }
     }
     return await new Promise(res => canvas.toBlob(res, 'image/webp', 0.85));
