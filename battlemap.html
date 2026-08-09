@@ -1166,6 +1166,29 @@ function makeThumb(){
   return c.toDataURL('image/webp',0.7);
 }
 
+// TELJES PILLANATKÉP: háttér + terep + MINDEN lerakott asset, nagy felbontásban.
+// Ezt tölti fel a mentés (snapshot_url), és erre vág a főoldali csempe-kivágó —
+// így a csempén tényleg a kész pálya (asszetekkel együtt) látszik.
+function snapshotBlob(px){
+  px = px || 1600;
+  const prevSel=selected(); select(null);
+  const sc=stage.scaleX(), pos=stage.position();
+  stage.scale({x:1,y:1}); stage.position({x:0,y:0});
+  let objects=null;
+  try{ objects = mainLayer.toCanvas({x:0,y:0,width:WORLD,height:WORLD,pixelRatio:px/WORLD}); }
+  catch(e){ objects=null; }
+  stage.scale({x:sc,y:sc}); stage.position(pos); stage.batchDraw();
+  if(prevSel) select(prevSel);
+
+  const c=document.createElement('canvas'); c.width=px; c.height=px;
+  const x=c.getContext('2d');
+  x.fillStyle=bgRect.fill(); x.fillRect(0,0,px,px);
+  x.drawImage(terr,0,0,px,px);
+  x.drawImage(blend,0,0,px,px);
+  if(objects) x.drawImage(objects,0,0,px,px);
+  return new Promise(res=> c.toBlob(res,'image/webp',0.82));
+}
+
 function openDlg(id){ document.getElementById(id).classList.add('open'); }
 function closeDlg(id){ document.getElementById(id).classList.remove('open'); }
 
@@ -1194,10 +1217,20 @@ async function confirmSave(){
     const up = await sb.storage.from(BUCKET).upload(path, blob, { upsert:true, contentType:'image/webp' });
     if(up.error) throw up.error;
     const { data:{ publicUrl } } = sb.storage.from(BUCKET).getPublicUrl(path);
+
+    // Teljes pillanatkép (terep + assetek) — ezt használja a főoldali csempe + kivágó.
+    let snapshotUrl = null;
+    try{
+      const snapPath = `${id}_snap.webp`;
+      const snapBlob = await snapshotBlob(1600);
+      const snapUp = await sb.storage.from(BUCKET).upload(snapPath, snapBlob, { upsert:true, contentType:'image/webp' });
+      if(!snapUp.error) snapshotUrl = sb.storage.from(BUCKET).getPublicUrl(snapPath).data.publicUrl;
+    }catch(e){ console.warn('Pillanatkép mentése kimaradt:', e); }
+
     const row = {
       id, owner_id: window._userId, name,
       scene: sceneMeta(), thumb: makeThumb(),
-      terrain_url: publicUrl, published,
+      terrain_url: publicUrl, snapshot_url: snapshotUrl, published,
       updated_at: new Date().toISOString()
     };
     const { error } = await sb.from('battlemaps').upsert(row);

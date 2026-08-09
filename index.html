@@ -930,8 +930,10 @@
             (items || []).forEach(i => { if (byType[i.item_type]) byType[i.item_type].push(i.item_id); });
 
             if (byType.battlemap.length) {
-                const { data } = await window._sb.from('battlemaps').select('id, name, terrain_url').in('id', byType.battlemap);
-                src.bms = (data || []).map(b => ({ id: b.id, name: b.name, src: b.terrain_url }));
+                const { data } = await window._sb.from('battlemaps').select('id, name, snapshot_url, terrain_url').in('id', byType.battlemap);
+                // A TELJES pillanatképet (asszetekkel) használjuk; ha még nincs (régi
+                // battlemap, nem volt újramentve), visszaesünk a terrain_url-re.
+                src.bms = (data || []).map(b => ({ id: b.id, name: b.name, src: b.snapshot_url || b.terrain_url }));
             }
             if (byType.ynev_map.length) {
                 const { data } = await window._sb.from('campaign_maps').select('id, name').in('id', byType.ynev_map);
