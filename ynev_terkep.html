@@ -3657,8 +3657,11 @@ document.addEventListener('mousemove', e => {
     ov.style.cssText = 'position:fixed;inset:0;z-index:1300;cursor:crosshair;display:none;touch-action:none;';
     ov.innerHTML =
       '<div id="ynevSelRect" style="position:absolute;border:2px solid #c084fc;box-shadow:0 0 0 9999px rgba(2,6,23,.5);display:none;pointer-events:none;"></div>' +
-      '<div style="position:fixed;top:14px;left:50%;transform:translateX(-50%);background:#111827;color:#e5e7eb;border:1px solid #374151;border-radius:8px;padding:8px 12px;font-size:.82rem;display:flex;gap:.5rem;align-items:center;flex-wrap:wrap;justify-content:center;">' +
+      '<div style="position:fixed;top:14px;left:50%;transform:translateX(-50%);background:#111827;color:#e5e7eb;border:1px solid #374151;border-radius:8px;padding:8px 12px;font-size:.82rem;display:flex;gap:.5rem;align-items:center;flex-wrap:wrap;justify-content:center;max-width:94vw;">' +
         '<span>Húzz egy négyzetet a rögzítendő területre</span>' +
+        '<label style="display:flex;align-items:center;gap:.35rem;">Cél:' +
+          '<select id="ynevSnapTarget" style="background:#0b1220;color:#e5e7eb;border:1px solid #374151;border-radius:6px;padding:3px 6px;font-size:.8rem;max-width:200px;"></select>' +
+        '</label>' +
         '<button id="ynevSelOk" style="background:rgba(52,211,153,.15);border:1px solid rgba(52,211,153,.5);color:#34d399;border-radius:6px;padding:4px 10px;cursor:pointer;">Rögzít</button>' +
         '<button id="ynevSelCancel" style="background:transparent;border:1px solid #374151;color:#f87171;border-radius:6px;padding:4px 10px;cursor:pointer;">Mégse</button>' +
       '</div>';
@@ -3689,14 +3692,23 @@ document.addEventListener('mousemove', e => {
     return ov;
   }
 
-  window.saveYnevSnapshot = function(){
+  window.saveYnevSnapshot = async function(){
     if (!window._sb) { alert('Nincs kapcsolat.'); return; }
-    if (!campaignMapId) { alert('Előbb tölts be egy kampány-térképet (📢 menü), ahhoz mentjük a pillanatképet a főoldali csempéhez.'); return; }
     _ynevSel = null;
     const ov = ynevSnapOverlay();
     ov.querySelector('#ynevSelRect').style.display = 'none';
+    // Cél kampány-térkép választó feltöltése (nem függünk a betöltési úttól).
+    const sel = ov.querySelector('#ynevSnapTarget');
+    sel.innerHTML = '<option value="">Betöltés…</option>';
     ov.style.display = 'block';
     if (map && map.dragging) map.dragging.disable();
+    const { data } = await window._sb.from('campaign_maps').select('id, name').order('updated_at', { ascending: false });
+    if (!data || !data.length) {
+      sel.innerHTML = '<option value="">Nincs kampány-térkép</option>';
+    } else {
+      sel.innerHTML = data.map(m => '<option value="' + m.id + '">' + esc(m.name || '(névtelen)') + '</option>').join('');
+      if (campaignMapId && data.some(m => m.id === campaignMapId)) sel.value = campaignMapId;
+    }
   };
   function cancelYnevSnapshot(){
     const ov = document.getElementById('ynevSnapOverlay'); if (ov) ov.style.display = 'none';
@@ -3752,18 +3764,20 @@ document.addEventListener('mousemove', e => {
 
   async function confirmYnevCapture(){
     if (!_ynevSel || _ynevSel.side < 10) { alert('Húzz egy nagyobb négyzetet a rögzítendő területre.'); return; }
+    const targetId = (document.getElementById('ynevSnapTarget')?.value) || campaignMapId;
+    if (!targetId) { alert('Válassz cél kampány-térképet a felső listából.'); return; }
     const sel = _ynevSel;
     const ov = document.getElementById('ynevSnapOverlay'); if (ov) ov.style.display = 'none';
     const btn = document.getElementById('ynevSnapBtn'); if (btn){ btn.disabled = true; btn.textContent = '📸 Mentés…'; }
     try {
       await new Promise(r => setTimeout(r, 60)); // hagyjuk eltűnni az overlayt a felvétel előtt
       const blob = await captureRegionBlob(sel, 1200);
-      const path = `ynev_${campaignMapId}.webp`;
+      const path = `ynev_${targetId}.webp`;
       const up = await window._sb.storage.from('battlemaps').upload(path, blob, { upsert:true, contentType:'image/webp' });
       if (up.error) throw up.error;
       const base = window._sb.storage.from('battlemaps').getPublicUrl(path).data.publicUrl;
       const url = base + '?v=' + Date.now();
-      const { error } = await window._sb.from('campaign_maps').update({ snapshot_url: url }).eq('id', campaignMapId);
+      const { error } = await window._sb.from('campaign_maps').update({ snapshot_url: url }).eq('id', targetId);
       if (error) throw error;
       alert('📸 Pillanatkép elmentve — a főoldali térkép-csempén ez fog látszani.');
     } catch(e){
