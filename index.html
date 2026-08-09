@@ -525,7 +525,7 @@
     <div id="cropModal" style="display:none;">
         <div class="crop-panel">
             <div class="crop-bar">
-                <span style="flex:1;font-family:'Cinzel',serif;color:var(--gold);">✂️ Jelöld ki a részletet (húzással)</span>
+                <span style="flex:1;font-family:'Cinzel',serif;color:var(--gold);">✂️ Jelöld ki a részletet — négyzet, húzással</span>
                 <button class="eb-btn" onclick="resetCropFull()">Teljes kép</button>
                 <button class="eb-btn" onclick="cancelCrop()">Mégse</button>
                 <button class="eb-btn primary" onclick="commitCrop()">Kész</button>
@@ -666,7 +666,7 @@
         function cssUrl(u) { return "'" + String(u || '').replace(/['"\\)]/g, '') + "'"; }
 
         function mapTileStyle(b) {
-            if (b.kind !== 'battlemap' || !b.src) return '';
+            if (!b.src) return '';
             const c = b.crop;
             if (c && c.w > 0 && c.h > 0 && (c.w < 1 || c.h < 1)) {
                 const sx = 100 / c.w, sy = 100 / c.h;
@@ -936,8 +936,8 @@
                 src.bms = (data || []).map(b => ({ id: b.id, name: b.name, src: b.snapshot_url || b.terrain_url }));
             }
             if (byType.ynev_map.length) {
-                const { data } = await window._sb.from('campaign_maps').select('id, name').in('id', byType.ynev_map);
-                src.yms = data || [];
+                const { data } = await window._sb.from('campaign_maps').select('id, name, snapshot_url').in('id', byType.ynev_map);
+                src.yms = (data || []).map(m => ({ id: m.id, name: m.name, src: m.snapshot_url || null }));
             }
             if (byType.character.length) {
                 const { data: chars } = await window._sb.from('character_sheets').select('id, name').in('id', byType.character);
@@ -989,7 +989,7 @@
                 cmpBlocks.push({ _id: cmpId(), kind: 'battlemap', title: b.name || '', map_id: b.id, src: b.src, size: '1x1' });
             } else {
                 const y = s.yms.find(x => x.id === id); if (!y) return;
-                cmpBlocks.push({ _id: cmpId(), kind: 'ynev_map', title: y.name || '', map_id: y.id, size: '1x1' });
+                cmpBlocks.push({ _id: cmpId(), kind: 'ynev_map', title: y.name || '', map_id: y.id, src: y.src || null, size: '1x1' });
             }
             renderComposerTiles();
         };
@@ -1023,14 +1023,15 @@
                     fields = '<input type="text" placeholder="' + (b.kind === 'banner' ? 'Szalagcím szövege' : 'Alcím') + '" value="' + esc(b.title || '') + '" oninput="updateCmpTile(\'' + b._id + '\',\'title\',this.value)">';
                 } else if (isImg) {
                     fields = '<input type="text" placeholder="Felirat" value="' + esc(b.title || '') + '" oninput="updateCmpTile(\'' + b._id + '\',\'title\',this.value)">';
-                    if (b.kind === 'battlemap') {
+                    if (b.src) {
                         const cropped = b.crop && b.crop.w > 0 && (b.crop.w < 1 || b.crop.h < 1);
                         fields += '<div style="display:flex;align-items:center;gap:.5rem;flex-wrap:wrap;">' +
                             '<button class="cmp-ctl" onclick="openCrop(\'' + b._id + '\')">✂️ Kivágás</button>' +
                             '<span style="font-size:.72rem;color:' + (cropped ? '#34d399' : 'var(--muted)') + ';">' +
                                 (cropped ? '✓ Részlet kijelölve' : 'A teljes kép jelenik meg') + '</span></div>';
                     } else {
-                        fields += '<div style="font-size:.72rem;color:var(--muted);">🗺️ Térkép-hivatkozás, új lapon nyílik.</div>';
+                        fields += '<div style="font-size:.72rem;color:#f7b955;">' +
+                            (b.kind === 'ynev_map' ? '🗺️ Nincs még pillanatkép — nyisd meg az Ynev térképet admin módban, és ments „📸 Pillanatkép"-et ehhez a térképhez. Addig link-csempe.' : '🖼️ Nincs kép — mentsd újra a battlemapet.') + '</div>';
                     }
                 } else if (b.kind === 'character') {
                     fields = '<input type="text" placeholder="Karakter neve" value="' + esc(b.title || '') + '" oninput="updateCmpTile(\'' + b._id + '\',\'title\',this.value)">' +
@@ -1080,7 +1081,7 @@
         /* ===== BATTLEMAP KIVÁGÓ (crop) =====
            A terrain_url képen téglalapot húzol; a normalizált {x,y,w,h} a csempére kerül,
            amit a mapTileStyle sprite-matekkal jelenít meg. */
-        let _cropTileId = null, _cropStart = null;
+        let _cropTileId = null, _cropStart = null, _cropBox = null;
         window.openCrop = function(tileId) {
             const b = cmpBlocks.find(x => x._id === tileId);
             if (!b || !b.src) { alert('Ehhez a csempéhez nincs forráskép.'); return; }
@@ -1107,6 +1108,7 @@
             if (!stage) return;
             stage.addEventListener('pointerdown', e => {
                 _cropStart = cropPoint(e);
+                _cropBox = stage.getBoundingClientRect();
                 try { stage.setPointerCapture(e.pointerId); } catch (x) {}
                 rect.style.display = 'block';
                 rect.style.left = _cropStart.x + 'px'; rect.style.top = _cropStart.y + 'px';
@@ -1115,10 +1117,17 @@
             stage.addEventListener('pointermove', e => {
                 if (!_cropStart) return;
                 const p = cropPoint(e);
-                rect.style.left = Math.min(_cropStart.x, p.x) + 'px';
-                rect.style.top = Math.min(_cropStart.y, p.y) + 'px';
-                rect.style.width = Math.abs(p.x - _cropStart.x) + 'px';
-                rect.style.height = Math.abs(p.y - _cropStart.y) + 'px';
+                // NÉGYZET-kényszer: a kijelölés mindig 1:1, hogy a (négyzet) csempét
+                // hézag/torzítás nélkül töltse ki. A méret a húzás iránya szerint nő,
+                // a kép szélén belülre vágva.
+                const dx = p.x - _cropStart.x, dy = p.y - _cropStart.y;
+                const signX = dx < 0 ? -1 : 1, signY = dy < 0 ? -1 : 1;
+                const maxX = signX > 0 ? (_cropBox.width - _cropStart.x) : _cropStart.x;
+                const maxY = signY > 0 ? (_cropBox.height - _cropStart.y) : _cropStart.y;
+                const s = Math.min(Math.max(Math.abs(dx), Math.abs(dy)), maxX, maxY);
+                rect.style.left = (signX > 0 ? _cropStart.x : _cropStart.x - s) + 'px';
+                rect.style.top = (signY > 0 ? _cropStart.y : _cropStart.y - s) + 'px';
+                rect.style.width = s + 'px'; rect.style.height = s + 'px';
             });
             stage.addEventListener('pointerup', () => { _cropStart = null; });
         }

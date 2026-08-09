@@ -3186,6 +3186,15 @@ document.addEventListener('DOMContentLoaded', () => {
             if (efxBlock) efxBlock.style.display = '';
             const wxBlock = document.getElementById('weatherMenuBlock');
             if (wxBlock) wxBlock.style.display = '';
+            // Pillanatkép-gomb a főoldali Ynev-csempéhez (betöltött kampány-térképnél él).
+            if (!document.getElementById('ynevSnapBtn')) {
+                const b = document.createElement('button');
+                b.id = 'ynevSnapBtn'; b.textContent = '📸 Pillanatkép';
+                b.title = 'A jelenlegi négyzetes nézetről pillanatkép mentése a betöltött kampány-térképhez (a főoldali csempe ezt mutatja).';
+                b.onclick = window.saveYnevSnapshot;
+                b.style.cssText = 'position:fixed;bottom:14px;left:14px;z-index:1200;background:rgba(168,85,247,.15);border:1px solid rgba(168,85,247,.5);color:#c084fc;border-radius:8px;padding:8px 12px;cursor:pointer;font-size:.82rem;';
+                document.body.appendChild(b);
+            }
         }
         // Kompakt mód: ha iframe-ben vagyunk (window !== window.top)
         if (window !== window.top || isAdminMode) {
@@ -3627,6 +3636,59 @@ document.addEventListener('mousemove', e => {
     await window._sb.from('map_saves').delete().eq('id', id).eq('user_id', user.id)
     window.loadSaveList()
   }
+
+  /* =========================================================
+     PILLANATKÉP a jelenlegi nézetről (a főoldali Ynev-csempéhez).
+     A térkép-csempék AZONOS EREDETŰEK (./terkep_kulon/...), ezért a
+     canvas nem lesz "tainted" → toBlob() működik. A látható négyzetes
+     részt komponáljuk egy képbe, feltöltjük, és a betöltött kampány-
+     térkép (campaignMapId) snapshot_url-jébe mentjük.
+     Séma: security/battlemap_snapshot.sql (campaign_maps.snapshot_url)
+  ========================================================= */
+  async function captureYnevSnapshotBlob(px){
+    px = px || 1200;
+    const mapEl = document.getElementById('map');
+    const mr = mapEl.getBoundingClientRect();
+    const side = Math.min(mr.width, mr.height);
+    const originX = mr.left + (mr.width - side)/2;
+    const originY = mr.top + (mr.height - side)/2;
+    const canvas = document.createElement('canvas');
+    canvas.width = px; canvas.height = px;
+    const ctx = canvas.getContext('2d');
+    ctx.fillStyle = '#0b1220'; ctx.fillRect(0,0,px,px);
+    const scale = px / side;
+    // Csak a betöltött, látható négyzetbe eső csempéket rajzoljuk.
+    const imgs = mapEl.querySelectorAll('.leaflet-tile-pane img');
+    imgs.forEach(img => {
+      if (!img.complete || !img.naturalWidth) return;
+      const ir = img.getBoundingClientRect();
+      if (ir.right < originX || ir.left > originX+side || ir.bottom < originY || ir.top > originY+side) return;
+      try { ctx.drawImage(img, (ir.left-originX)*scale, (ir.top-originY)*scale, ir.width*scale, ir.height*scale); } catch(e){}
+    });
+    return await new Promise(res => canvas.toBlob(res, 'image/webp', 0.85));
+  }
+
+  window.saveYnevSnapshot = async function(){
+    if (!window._sb) { alert('Nincs kapcsolat.'); return; }
+    if (!campaignMapId) { alert('Előbb tölts be egy kampány-térképet (📢 menü), ahhoz mentjük a pillanatképet a főoldali csempéhez.'); return; }
+    const btn = document.getElementById('ynevSnapBtn');
+    if (btn){ btn.disabled = true; btn.textContent = '📸 Mentés…'; }
+    try {
+      const blob = await captureYnevSnapshotBlob(1200);
+      const path = `ynev_${campaignMapId}.webp`;
+      const up = await window._sb.storage.from('battlemaps').upload(path, blob, { upsert:true, contentType:'image/webp' });
+      if (up.error) throw up.error;
+      const base = window._sb.storage.from('battlemaps').getPublicUrl(path).data.publicUrl;
+      const url = base + '?v=' + Date.now(); // cache-buster: ugyanaz a fájlnév frissül
+      const { error } = await window._sb.from('campaign_maps').update({ snapshot_url: url }).eq('id', campaignMapId);
+      if (error) throw error;
+      alert('📸 Pillanatkép elmentve ehhez a kampány-térképhez — a főoldali csempén ez fog látszani.');
+    } catch(e){
+      console.error(e); alert('Pillanatkép mentése sikertelen: ' + (e.message || e));
+    } finally {
+      if (btn){ btn.disabled = false; btn.textContent = '📸 Pillanatkép'; }
+    }
+  };
 
   // ─── KAMPÁNY BETÖLTÉSE (admin publikált adatok) ──────────────
   // ─── KAMPÁNY LENYÍLÓ MENÜ ──────────────────────────────────
