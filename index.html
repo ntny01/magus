@@ -152,6 +152,10 @@
         .d12-result {
             font-family: 'Cinzel', serif; font-size: .82rem; letter-spacing: .04em;
             color: var(--muted); min-height: 1.3em; text-align: center; white-space: nowrap;
+            /* Olvasható maradjon a világító effekt-kép fölött is */
+            position: relative; z-index: 2; padding: .12rem .55rem; border-radius: 8px;
+            background: rgba(2,6,23,.62);
+            text-shadow: 0 1px 3px rgba(0,0,0,.95), 0 0 8px rgba(0,0,0,.7);
         }
         .d12-result b { color: var(--gold); font-size: 1.05rem; }
         .d12-result.crit b { color: #fbbf24; text-shadow: 0 0 10px rgba(251,191,36,.6); }
@@ -166,19 +170,19 @@
            a sötét heron, a vonalak világítanak; sepia/saturate/hue adja a színt. */
         .hero-text, .hero-die { position: relative; z-index: 1; }
         .d12-fx {
-            position: absolute; top: 50%; right: 4%; z-index: 0;
-            width: 230px; max-width: 46%; pointer-events: none;
+            position: absolute; top: 36%; right: 4%; z-index: 0;
+            width: 215px; max-width: 42%; pointer-events: none;
             opacity: 0; mix-blend-mode: screen;
             transition: opacity .55s ease;
         }
         .d12-fx.fx-meteor {
-            opacity: .9;
+            opacity: .85;
             filter: invert(1) sepia(1) saturate(7) hue-rotate(-24deg) brightness(1)
                     drop-shadow(0 0 16px rgba(239,68,68,.7));
             animation: fxMeteor 3.4s ease-in-out infinite;
         }
         .d12-fx.fx-bless {
-            opacity: .82;
+            opacity: .72;
             filter: invert(1) sepia(1) saturate(3.4) hue-rotate(2deg) brightness(1.12)
                     drop-shadow(0 0 18px rgba(212,175,55,.72));
             animation: fxBless 4.2s ease-in-out infinite;
