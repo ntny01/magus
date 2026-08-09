@@ -930,10 +930,12 @@
             (items || []).forEach(i => { if (byType[i.item_type]) byType[i.item_type].push(i.item_id); });
 
             if (byType.battlemap.length) {
-                const { data } = await window._sb.from('battlemaps').select('id, name, snapshot_url, terrain_url').in('id', byType.battlemap);
-                // A TELJES pillanatképet (asszetekkel) használjuk; ha még nincs (régi
-                // battlemap, nem volt újramentve), visszaesünk a terrain_url-re.
-                src.bms = (data || []).map(b => ({ id: b.id, name: b.name, src: b.snapshot_url || b.terrain_url }));
+                const { data } = await window._sb.from('battlemaps').select('id, name, snapshot_url, thumb, terrain_url').in('id', byType.battlemap);
+                // Előny: teljes pillanatkép (hi-res, asszetekkel). Ha az még nincs
+                // (nem volt újramentve), a `thumb` MINDIG tartalmazza az asszeteket
+                // (kisebb felbontásban) — így azonnal látszanak. Végső fallback a
+                // terep-kép (asszetek nélkül).
+                src.bms = (data || []).map(b => ({ id: b.id, name: b.name, src: b.snapshot_url || b.thumb || b.terrain_url }));
             }
             if (byType.ynev_map.length) {
                 const { data } = await window._sb.from('campaign_maps').select('id, name, snapshot_url').in('id', byType.ynev_map);

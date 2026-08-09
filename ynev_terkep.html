@@ -3192,7 +3192,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 b.id = 'ynevSnapBtn'; b.textContent = '📸 Pillanatkép';
                 b.title = 'A jelenlegi négyzetes nézetről pillanatkép mentése a betöltött kampány-térképhez (a főoldali csempe ezt mutatja).';
                 b.onclick = window.saveYnevSnapshot;
-                b.style.cssText = 'position:fixed;bottom:14px;left:14px;z-index:1200;background:rgba(168,85,247,.15);border:1px solid rgba(168,85,247,.5);color:#c084fc;border-radius:8px;padding:8px 12px;cursor:pointer;font-size:.82rem;';
+                b.style.cssText = 'position:fixed;bottom:14px;left:50%;transform:translateX(-50%);z-index:1200;background:rgba(168,85,247,.18);border:1px solid rgba(168,85,247,.55);color:#c084fc;border-radius:8px;padding:8px 14px;cursor:pointer;font-size:.82rem;box-shadow:0 4px 14px rgba(0,0,0,.4);';
                 document.body.appendChild(b);
             }
         }
@@ -3645,50 +3645,135 @@ document.addEventListener('mousemove', e => {
      térkép (campaignMapId) snapshot_url-jébe mentjük.
      Séma: security/battlemap_snapshot.sql (campaign_maps.snapshot_url)
   ========================================================= */
-  async function captureYnevSnapshotBlob(px){
-    px = px || 1200;
-    const mapEl = document.getElementById('map');
-    const mr = mapEl.getBoundingClientRect();
-    const side = Math.min(mr.width, mr.height);
-    const originX = mr.left + (mr.width - side)/2;
-    const originY = mr.top + (mr.height - side)/2;
-    const canvas = document.createElement('canvas');
-    canvas.width = px; canvas.height = px;
-    const ctx = canvas.getContext('2d');
-    ctx.fillStyle = '#0b1220'; ctx.fillRect(0,0,px,px);
-    const scale = px / side;
-    // Csak a betöltött, látható négyzetbe eső csempéket rajzoljuk.
-    const imgs = mapEl.querySelectorAll('.leaflet-tile-pane img');
-    imgs.forEach(img => {
-      if (!img.complete || !img.naturalWidth) return;
-      const ir = img.getBoundingClientRect();
-      if (ir.right < originX || ir.left > originX+side || ir.bottom < originY || ir.top > originY+side) return;
-      try { ctx.drawImage(img, (ir.left-originX)*scale, (ir.top-originY)*scale, ir.width*scale, ir.height*scale); } catch(e){}
+  // A rögzítendő NÉGYZETES területet a felhasználó jelöli ki (overlay + húzás).
+  let _ynevSel = null;
+  function ynevMapBox(){ return document.getElementById('map').getBoundingClientRect(); }
+
+  function ynevSnapOverlay(){
+    let ov = document.getElementById('ynevSnapOverlay');
+    if (ov) return ov;
+    ov = document.createElement('div');
+    ov.id = 'ynevSnapOverlay';
+    ov.style.cssText = 'position:fixed;inset:0;z-index:1300;cursor:crosshair;display:none;touch-action:none;';
+    ov.innerHTML =
+      '<div id="ynevSelRect" style="position:absolute;border:2px solid #c084fc;box-shadow:0 0 0 9999px rgba(2,6,23,.5);display:none;pointer-events:none;"></div>' +
+      '<div style="position:fixed;top:14px;left:50%;transform:translateX(-50%);background:#111827;color:#e5e7eb;border:1px solid #374151;border-radius:8px;padding:8px 12px;font-size:.82rem;display:flex;gap:.5rem;align-items:center;flex-wrap:wrap;justify-content:center;">' +
+        '<span>Húzz egy négyzetet a rögzítendő területre</span>' +
+        '<button id="ynevSelOk" style="background:rgba(52,211,153,.15);border:1px solid rgba(52,211,153,.5);color:#34d399;border-radius:6px;padding:4px 10px;cursor:pointer;">Rögzít</button>' +
+        '<button id="ynevSelCancel" style="background:transparent;border:1px solid #374151;color:#f87171;border-radius:6px;padding:4px 10px;cursor:pointer;">Mégse</button>' +
+      '</div>';
+    document.body.appendChild(ov);
+    const rectEl = ov.querySelector('#ynevSelRect');
+    let start = null, box = null;
+    ov.addEventListener('pointerdown', e => {
+      if (e.target.tagName === 'BUTTON') return;
+      start = { x:e.clientX, y:e.clientY }; box = ynevMapBox();
+      rectEl.style.display = 'block'; rectEl.style.left = start.x+'px'; rectEl.style.top = start.y+'px';
+      rectEl.style.width = '0px'; rectEl.style.height = '0px';
+      try { ov.setPointerCapture(e.pointerId); } catch(x){}
     });
+    ov.addEventListener('pointermove', e => {
+      if (!start) return;
+      const dx = e.clientX-start.x, dy = e.clientY-start.y;
+      const signX = dx<0?-1:1, signY = dy<0?-1:1;
+      const maxX = signX>0 ? (box.right-start.x) : (start.x-box.left);
+      const maxY = signY>0 ? (box.bottom-start.y) : (start.y-box.top);
+      const s = Math.max(0, Math.min(Math.max(Math.abs(dx),Math.abs(dy)), maxX, maxY));
+      const l = signX>0?start.x:start.x-s, t = signY>0?start.y:start.y-s;
+      _ynevSel = { left:l, top:t, side:s };
+      rectEl.style.left = l+'px'; rectEl.style.top = t+'px'; rectEl.style.width = s+'px'; rectEl.style.height = s+'px';
+    });
+    ov.addEventListener('pointerup', () => { start = null; });
+    ov.querySelector('#ynevSelOk').onclick = confirmYnevCapture;
+    ov.querySelector('#ynevSelCancel').onclick = cancelYnevSnapshot;
+    return ov;
+  }
+
+  window.saveYnevSnapshot = function(){
+    if (!window._sb) { alert('Nincs kapcsolat.'); return; }
+    if (!campaignMapId) { alert('Előbb tölts be egy kampány-térképet (📢 menü), ahhoz mentjük a pillanatképet a főoldali csempéhez.'); return; }
+    _ynevSel = null;
+    const ov = ynevSnapOverlay();
+    ov.querySelector('#ynevSelRect').style.display = 'none';
+    ov.style.display = 'block';
+    if (map && map.dragging) map.dragging.disable();
+  };
+  function cancelYnevSnapshot(){
+    const ov = document.getElementById('ynevSnapOverlay'); if (ov) ov.style.display = 'none';
+    if (map && map.dragging) map.dragging.enable();
+    _ynevSel = null;
+  }
+
+  // Egy SVG DOM-csomópontot képként a canvasra rajzol (azonos eredetű → nem taint).
+  async function drawSvgToCanvas(ctx, svg, dx, dy, dw, dh){
+    try {
+      const clone = svg.cloneNode(true);
+      clone.setAttribute('width', dw); clone.setAttribute('height', dh);
+      const str = new XMLSerializer().serializeToString(clone);
+      const data = 'data:image/svg+xml;base64,' + btoa(unescape(encodeURIComponent(str)));
+      await new Promise(res => { const im = new Image(); im.onload = () => { try { ctx.drawImage(im, dx, dy, dw, dh); } catch(e){} res(); }; im.onerror = res; im.src = data; });
+    } catch(e){}
+  }
+
+  // A kijelölt négyzetből képet komponál: TILE-ok + vektoros rajzok (overlay SVG)
+  // + markerek/effektek (kép vagy belső SVG). Emoji/tiszta szöveges divIcon lemaradhat.
+  async function captureRegionBlob(sel, px){
+    px = px || 1200;
+    const canvas = document.createElement('canvas'); canvas.width = px; canvas.height = px;
+    const ctx = canvas.getContext('2d'); ctx.fillStyle = '#0b1220'; ctx.fillRect(0,0,px,px);
+    const scale = px / sel.side, ox = sel.left, oy = sel.top;
+    const inSel = r => !(r.right<ox || r.left>ox+sel.side || r.bottom<oy || r.top>oy+sel.side);
+    const mapEl = document.getElementById('map');
+    // 1) csempék
+    mapEl.querySelectorAll('.leaflet-tile-pane img').forEach(img => {
+      if (!img.complete || !img.naturalWidth) return;
+      const r = img.getBoundingClientRect(); if (!inSel(r)) return;
+      try { ctx.drawImage(img, (r.left-ox)*scale, (r.top-oy)*scale, r.width*scale, r.height*scale); } catch(e){}
+    });
+    // 2) vektoros rajzok (overlay-pane SVG)
+    for (const svg of mapEl.querySelectorAll('.leaflet-overlay-pane svg')) {
+      const r = svg.getBoundingClientRect(); if (!r.width || !r.height) continue;
+      await drawSvgToCanvas(ctx, svg, (r.left-ox)*scale, (r.top-oy)*scale, r.width*scale, r.height*scale);
+    }
+    // 3) markerek / effektek
+    for (const mk of mapEl.querySelectorAll('.leaflet-marker-pane > *')) {
+      const r = mk.getBoundingClientRect(); if (!r.width || !inSel(r)) continue;
+      const img = mk.tagName === 'IMG' ? mk : mk.querySelector('img');
+      const svg = mk.querySelector('svg');
+      if (img && img.complete && img.naturalWidth) {
+        try { ctx.drawImage(img, (r.left-ox)*scale, (r.top-oy)*scale, r.width*scale, r.height*scale); } catch(e){}
+      } else if (svg) {
+        const sr = svg.getBoundingClientRect();
+        await drawSvgToCanvas(ctx, svg, (sr.left-ox)*scale, (sr.top-oy)*scale, sr.width*scale, sr.height*scale);
+      }
+    }
     return await new Promise(res => canvas.toBlob(res, 'image/webp', 0.85));
   }
 
-  window.saveYnevSnapshot = async function(){
-    if (!window._sb) { alert('Nincs kapcsolat.'); return; }
-    if (!campaignMapId) { alert('Előbb tölts be egy kampány-térképet (📢 menü), ahhoz mentjük a pillanatképet a főoldali csempéhez.'); return; }
-    const btn = document.getElementById('ynevSnapBtn');
-    if (btn){ btn.disabled = true; btn.textContent = '📸 Mentés…'; }
+  async function confirmYnevCapture(){
+    if (!_ynevSel || _ynevSel.side < 10) { alert('Húzz egy nagyobb négyzetet a rögzítendő területre.'); return; }
+    const sel = _ynevSel;
+    const ov = document.getElementById('ynevSnapOverlay'); if (ov) ov.style.display = 'none';
+    const btn = document.getElementById('ynevSnapBtn'); if (btn){ btn.disabled = true; btn.textContent = '📸 Mentés…'; }
     try {
-      const blob = await captureYnevSnapshotBlob(1200);
+      await new Promise(r => setTimeout(r, 60)); // hagyjuk eltűnni az overlayt a felvétel előtt
+      const blob = await captureRegionBlob(sel, 1200);
       const path = `ynev_${campaignMapId}.webp`;
       const up = await window._sb.storage.from('battlemaps').upload(path, blob, { upsert:true, contentType:'image/webp' });
       if (up.error) throw up.error;
       const base = window._sb.storage.from('battlemaps').getPublicUrl(path).data.publicUrl;
-      const url = base + '?v=' + Date.now(); // cache-buster: ugyanaz a fájlnév frissül
+      const url = base + '?v=' + Date.now();
       const { error } = await window._sb.from('campaign_maps').update({ snapshot_url: url }).eq('id', campaignMapId);
       if (error) throw error;
-      alert('📸 Pillanatkép elmentve ehhez a kampány-térképhez — a főoldali csempén ez fog látszani.');
+      alert('📸 Pillanatkép elmentve — a főoldali térkép-csempén ez fog látszani.');
     } catch(e){
       console.error(e); alert('Pillanatkép mentése sikertelen: ' + (e.message || e));
     } finally {
       if (btn){ btn.disabled = false; btn.textContent = '📸 Pillanatkép'; }
+      if (map && map.dragging) map.dragging.enable();
+      _ynevSel = null;
     }
-  };
+  }
 
   // ─── KAMPÁNY BETÖLTÉSE (admin publikált adatok) ──────────────
   // ─── KAMPÁNY LENYÍLÓ MENÜ ──────────────────────────────────
