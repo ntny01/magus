@@ -3805,10 +3805,43 @@ document.addEventListener('mousemove', e => {
       }
     }
 
-    // 3) vektoros rajzok (overlay-pane SVG) — kézzel
-    for (const svg of mapEl.querySelectorAll('.leaflet-overlay-pane svg')) {
-      const r = svg.getBoundingClientRect(); if (!r.width || !r.height) continue;
-      await drawSvgToCanvas(ctx, svg, (r.left-ox)*scale, (r.top-oy)*scale, r.width*scale, r.height*scale);
+    // 3) vektoros rajzok — KÖZVETLENÜL a geometriából (megbízható, nem SVG/lib-függő).
+    //    A drawnItems rétegeit latLngToContainerPoint-tal canvas-vonallá alakítjuk.
+    if (typeof drawnItems !== 'undefined' && drawnItems.eachLayer && typeof map !== 'undefined') {
+      const mr3 = mapEl.getBoundingClientRect();
+      const toXY = ll => { const p = map.latLngToContainerPoint(ll); return [ (mr3.left + p.x - ox) * scale, (mr3.top + p.y - oy) * scale ]; };
+      const ringsOf = ll => {
+        if (!ll || !ll.length) return [];
+        if (ll[0] && ll[0].lat !== undefined) return [ll];
+        let out = []; ll.forEach(x => { out = out.concat(ringsOf(x)); }); return out;
+      };
+      drawnItems.eachLayer(layer => {
+        try {
+          const o = layer.options || {};
+          const strokeW = Math.max(1, (o.weight != null ? o.weight : 3) * scale);
+          // Kör / CircleMarker
+          if (typeof layer.getRadius === 'function' && layer.getLatLng) {
+            const [cx, cy] = toXY(layer.getLatLng());
+            const rad = Math.max(1, (layer._radius != null ? layer._radius : (o.radius || 10)) * scale);
+            ctx.save(); ctx.beginPath(); ctx.arc(cx, cy, rad, 0, Math.PI * 2);
+            if (o.fill !== false) { ctx.globalAlpha = o.fillOpacity != null ? o.fillOpacity : .2; ctx.fillStyle = o.fillColor || o.color || '#3388ff'; ctx.fill(); }
+            ctx.globalAlpha = o.opacity != null ? o.opacity : 1; ctx.lineWidth = strokeW; ctx.strokeStyle = o.color || '#3388ff'; ctx.stroke(); ctx.restore();
+            return;
+          }
+          if (!layer.getLatLngs) return;
+          const isPoly = (typeof L.Polygon !== 'undefined') && (layer instanceof L.Polygon);
+          ctx.save(); ctx.beginPath();
+          ringsOf(layer.getLatLngs()).forEach(ring => {
+            ring.forEach((pt, i) => { const [x, y] = toXY(pt); if (i === 0) ctx.moveTo(x, y); else ctx.lineTo(x, y); });
+            if (isPoly) ctx.closePath();
+          });
+          if (isPoly && o.fill !== false) { ctx.globalAlpha = o.fillOpacity != null ? o.fillOpacity : .2; ctx.fillStyle = o.fillColor || o.color || '#3388ff'; ctx.fill(); }
+          ctx.globalAlpha = o.opacity != null ? o.opacity : 1;
+          ctx.lineWidth = strokeW; ctx.strokeStyle = o.color || '#3388ff'; ctx.lineJoin = 'round'; ctx.lineCap = 'round';
+          if (o.dashArray) { try { ctx.setLineDash(String(o.dashArray).split(/[ ,]+/).map(n => parseFloat(n) * scale).filter(n => !isNaN(n))); } catch(e){} }
+          ctx.stroke(); ctx.restore();
+        } catch(e){ console.warn('rajz réteg:', e); }
+      });
     }
 
     // 4) markerek + EFFEKTEK
