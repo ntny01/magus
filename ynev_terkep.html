@@ -3769,50 +3769,66 @@ document.addEventListener('mousemove', e => {
     ctx.restore();
   }
 
-  // A kijelölt négyzetből képet komponál. html2canvas a térkép TELJES DOM-ját
-  // rendereli (csempék + jelölők + vonalak + EFFEKTEK + IDŐJÁRÁS), majd abból
-  // vágjuk ki a kijelölt négyzetet. A Leaflet-vezérlőket (zoom/rétegek/koordináta)
-  // a felvétel idejére elrejtjük, hogy ne kerüljenek a képre.
+  // A kijelölt négyzetből képet komponál — HIBRID módszer:
+  //  • csempék / vonalak (SVG) / jelölők (emoji+felirat): KÉZZEL rajzoljuk
+  //    (getBoundingClientRect + drawImage/fillText) — ez megbízható, SOSE fekete;
+  //  • CSS-alapú EFFEKTEK és IDŐJÁRÁS: html2canvas CSAK az adott kis elemre
+  //    (nem az egész térképre, mert a Leaflet-csempéket a html2canvas rosszul
+  //    kezeli → attól lett fekete az alja).
   async function captureRegionBlob(sel, px){
     px = px || 1200;
-    if (typeof html2canvas !== 'function') { alert('A pillanatkép-motor (html2canvas) nem töltődött be.'); return null; }
+    const canvas = document.createElement('canvas'); canvas.width = px; canvas.height = px;
+    const ctx = canvas.getContext('2d'); ctx.fillStyle = '#0b1220'; ctx.fillRect(0,0,px,px);
+    const scale = px / sel.side, ox = sel.left, oy = sel.top;
+    const inSel = r => !(r.right<ox || r.left>ox+sel.side || r.bottom<oy || r.top>oy+sel.side);
+    const put = (src, r) => { try { ctx.drawImage(src, (r.left-ox)*scale, (r.top-oy)*scale, r.width*scale, r.height*scale); } catch(e){} };
     const mapEl = document.getElementById('map');
-    const mr = mapEl.getBoundingClientRect();
-    const ctrls = mapEl.querySelector('.leaflet-control-container');
-    const prevDisp = ctrls ? ctrls.style.display : null;
-    if (ctrls) ctrls.style.display = 'none';
-    // A Leaflet csempéket halványulási átmenettel tölti be; ha félig átlátszón
-    // kapná el a html2canvas, az alsó (frissen töltött) sor sötét lenne → kényszerítjük.
+    const hasH2C = typeof html2canvas === 'function';
     mapEl.querySelectorAll('.leaflet-tile').forEach(t => { t.style.opacity = '1'; });
-    let full;
-    try {
-      full = await html2canvas(mapEl, {
-        useCORS: true, backgroundColor: '#0b1220', logging: false,
-        scale: 2, imageTimeout: 0
-      });
-    } finally {
-      if (ctrls) ctrls.style.display = prevDisp || '';
-    }
-    const s = full.width / mr.width;                 // renderelt px / CSS px
-    // A Leaflet VEKTOROS rajzait (overlay-pane SVG) a html2canvas gyakran kihagyja
-    // → kézzel ráfestjük a teljes renderre, a térkép koordináta-terében (×s).
-    try {
-      const fctx = full.getContext('2d');
-      for (const svg of mapEl.querySelectorAll('.leaflet-overlay-pane svg')) {
-        const r = svg.getBoundingClientRect(); if (!r.width || !r.height) continue;
-        await drawSvgToCanvas(fctx, svg, (r.left - mr.left) * s, (r.top - mr.top) * s, r.width * s, r.height * s);
+
+    // 1) csempék (kézzel — teljes, nincs fekete)
+    mapEl.querySelectorAll('.leaflet-tile-pane img').forEach(img => {
+      if (!img.complete || !img.naturalWidth) return;
+      const r = img.getBoundingClientRect(); if (inSel(r)) put(img, r);
+    });
+
+    // 2) IDŐJÁRÁS-overlay (CSS-div) — html2canvas csak erre az elemre
+    const wx = document.getElementById('weatherOverlay');
+    if (wx && hasH2C) {
+      const wr = wx.getBoundingClientRect();
+      const wcs = getComputedStyle(wx);
+      const hasWeather = wr.width && wr.height && inSel(wr) &&
+        (wcs.backgroundImage !== 'none' || (wcs.backgroundColor && wcs.backgroundColor !== 'rgba(0, 0, 0, 0)' && wcs.backgroundColor !== 'transparent') || wx.children.length);
+      if (hasWeather) {
+        try { const wc = await html2canvas(wx, { backgroundColor: null, useCORS: true, logging: false, scale: 1 }); put(wc, wr); }
+        catch(e){ console.warn('időjárás:', e); }
       }
-    } catch(e){ console.warn('overlay svg ráfestés:', e); }
-    let sx = Math.max(0, (sel.left - mr.left) * s);
-    let sy = Math.max(0, (sel.top  - mr.top ) * s);
-    let sw = sel.side * s;
-    // A forrás-négyzetet a renderelt kép HATÁRAIN BELÜLRE vágjuk (négyzet marad),
-    // hogy sose maradjon üres (fekete) folt a kép alján/szélén, ha a render kisebb.
-    sw = Math.max(1, Math.min(sw, full.width - sx, full.height - sy));
-    const out = document.createElement('canvas'); out.width = px; out.height = px;
-    const ctx = out.getContext('2d'); ctx.fillStyle = '#0b1220'; ctx.fillRect(0,0,px,px);
-    try { ctx.drawImage(full, sx, sy, sw, sw, 0, 0, px, px); } catch(e){ console.error(e); }
-    return await new Promise(res => out.toBlob(res, 'image/webp', 0.85));
+    }
+
+    // 3) vektoros rajzok (overlay-pane SVG) — kézzel
+    for (const svg of mapEl.querySelectorAll('.leaflet-overlay-pane svg')) {
+      const r = svg.getBoundingClientRect(); if (!r.width || !r.height) continue;
+      await drawSvgToCanvas(ctx, svg, (r.left-ox)*scale, (r.top-oy)*scale, r.width*scale, r.height*scale);
+    }
+
+    // 4) markerek + EFFEKTEK
+    for (const mk of mapEl.querySelectorAll('.leaflet-marker-pane > *')) {
+      const r = mk.getBoundingClientRect(); if (!r.width || !inSel(r)) continue;
+      const isEffect = mk.matches('[data-efx]') || !!mk.querySelector('[data-efx]');
+      const img = mk.tagName === 'IMG' ? mk : mk.querySelector('img');
+      if (isEffect && hasH2C) {
+        // CSS-effekt → html2canvas az elemre (kicsi, izolált → megbízható)
+        try { const ec = await html2canvas(mk, { backgroundColor: null, useCORS: true, logging: false, scale: 2 }); put(ec, r); }
+        catch(e){ console.warn('effekt:', e); }
+      } else if (img && img.complete && img.naturalWidth) {
+        put(img, r);
+      } else {
+        drawTextEl(ctx, mk.querySelector('.customMarker'), ox, oy, scale, false);
+        drawTextEl(ctx, mk.querySelector('.markerLabel'),  ox, oy, scale, true);
+      }
+    }
+
+    return await new Promise(res => canvas.toBlob(res, 'image/webp', 0.85));
   }
 
   async function confirmYnevCapture(){
