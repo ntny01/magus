@@ -131,13 +131,15 @@ const sb = supabase.createClient(
             font-size: 1.125rem;
         }
 
-        /* KODE(x) logó: „KODE" felirat-kép + iránytű mint X, betöltéskor 45°-ra fordulva */
-        .kodex-logo { display: inline-flex; align-items: center; gap: 0.1rem; height: 26px; line-height: 0; }
+        /* KODE(x) logó: „KODE" felirat-kép + iránytű mint X, betöltéskor 45°-ra fordulva.
+           Mindkettő FEHÉR (mint a szöveg), az iránytű lassan settle-el 45°-ra. */
+        .kodex-logo { display: inline-flex; align-items: center; gap: 0.12rem; height: 34px; line-height: 0; }
         .kodex-word { height: 100%; width: auto; filter: brightness(0) invert(1); }
         .kodex-x {
-            height: 134%; width: auto; margin-left: -0.05rem;
+            height: 138%; width: auto; margin-left: -0.05rem;
+            filter: brightness(0) invert(1);
             transform: rotate(0deg);
-            animation: kodexXSettle 1.5s cubic-bezier(0.16, 0.72, 0.14, 1) forwards;
+            animation: kodexXSettle 3s cubic-bezier(0.16, 0.72, 0.14, 1) forwards;
         }
         @keyframes kodexXSettle { from { transform: rotate(0deg); } to { transform: rotate(45deg); } }
         @media (prefers-reduced-motion: reduce) { .kodex-x { animation: none; transform: rotate(45deg); } }
