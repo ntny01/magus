@@ -301,10 +301,12 @@
             transform-origin: right center;
         }
         .comet-tail {
-            position: absolute; inset: 0;
-            background: linear-gradient(to left, rgba(255,236,182,.95) 0%, rgba(255,140,45,.55) 32%, rgba(255,80,20,.18) 66%, transparent 92%);
-            clip-path: polygon(100% 12%, 100% 88%, 0% 50%);   /* fejnél széles → farokban hegyes */
-            filter: blur(2px);
+            position: absolute; top: 50%; right: 2px; height: 30px; width: 94%;
+            transform: translateY(-50%);
+            background: linear-gradient(to left, rgba(255,220,150,.9) 0%, rgba(255,140,45,.5) 28%, rgba(255,80,20,.14) 62%, transparent 90%);
+            /* keskeny tő a fej mögött (nem lóg ki mellette) → lágyan elmosott hegy */
+            clip-path: polygon(100% 32%, 100% 68%, 0% 50%);
+            filter: blur(5px);
         }
         .comet-head {
             position: absolute; right: -6px; top: 50%; width: 40px; height: 40px;
@@ -329,7 +331,7 @@
             100% { transform: translate(var(--ex, -50vw), var(--ey, 60vh)) scale(1.7); opacity: 0; }
         }
         /* a translate a rúna-lökéshez (a runeRise transform-jától FÜGGETLEN, komponálódik) */
-        .rune { transition: color 1.4s ease, text-shadow 1.4s ease, translate .45s cubic-bezier(.2,.8,.3,1); }
+        .rune { transition: color 1.4s ease, text-shadow 1.4s ease, translate .22s ease-out; }
         .rune-field.blessed .rune {
             color: rgba(251,191,36,.62) !important;
             text-shadow: 0 0 22px rgba(251,191,36,.95) !important;
@@ -772,13 +774,12 @@
         // adja a rugózó vissza-simulást, amint a meteor elhalad).
         function shoveRunes(mover) {
             if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
-            const R = 170;            // hatósugár px
-            const end = performance.now() + 3500;
+            const R = 185;            // hatósugár px
+            const K = 16;             // képkockánkénti lökés-impulzus
+            const MAX = 150;          // max elmozdulás px
+            const end = performance.now() + 3700;
             function frame(now) {
-                if (!mover.isConnected || now > end) {
-                    document.querySelectorAll('#runeField .rune').forEach(r => { if (r._shoved) { r.style.translate = '0px 0px'; r._shoved = false; } });
-                    return;
-                }
+                if (!mover.isConnected || now > end) return;   // NINCS visszaállítás → maradnak eltolva
                 const head = mover.querySelector('.comet-head');
                 if (head) {
                     const hr = head.getBoundingClientRect();
@@ -788,11 +789,14 @@
                         const dx = (rr.left + rr.width / 2) - hx, dy = (rr.top + rr.height / 2) - hy;
                         const dist = Math.hypot(dx, dy);
                         if (dist < R && dist > 1) {
-                            const force = (1 - dist / R) * 90;   // közelebb → nagyobb lökés
-                            r.style.translate = (dx / dist * force).toFixed(0) + 'px ' + (dy / dist * force).toFixed(0) + 'px';
-                            r._shoved = true;
-                        } else if (r._shoved) {
-                            r.style.translate = '0px 0px'; r._shoved = false;
+                            // Impulzust HALMOZUNK (nem a pillanatnyi távolságra állítjuk) →
+                            // a meteor ELLÖKI őket, és ott is MARADNAK (nem rugóznak vissza).
+                            const f = (1 - dist / R) * K;
+                            r._ox = (r._ox || 0) + dx / dist * f;
+                            r._oy = (r._oy || 0) + dy / dist * f;
+                            const mag = Math.hypot(r._ox, r._oy);
+                            if (mag > MAX) { r._ox *= MAX / mag; r._oy *= MAX / mag; }
+                            r.style.translate = r._ox.toFixed(0) + 'px ' + r._oy.toFixed(0) + 'px';
                         }
                     });
                 }
