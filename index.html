@@ -282,34 +282,45 @@
             100% { transform: translate(var(--dx,0), calc(-1 * var(--rise,60px))) scale(.3); opacity: 0; }
         }
 
-        /* d12 háttér-effektek: 1 = messziről érkező meteor (jobb-fent → bal-lent),
-           12 = a háttér-rúnák aranyfénye pár másodpercig. */
+        /* d12 háttér-effektek: 1 = KAMERÁHOZ KÖZELÍTŐ tűzgömb (távoli pötty → nagy, izzó
+           gömb, ahogy közelít; majd elsuhan bal-lentre), 12 = a rúnák aranyfénye. */
         .bg-meteor {
-            position: fixed; z-index: 0; pointer-events: none; top: -10vh; right: -8vw;
-            width: 30px; height: 30px; border-radius: 50%;
-            background: radial-gradient(circle at 58% 40%, #fff4d6, #ff7a33 42%, #c81e1e 72%, transparent 80%);
-            box-shadow: 0 0 26px 8px rgba(239,68,68,.55), 0 0 64px 20px rgba(255,107,53,.28);
-            animation: meteorFall 2.3s cubic-bezier(.45,.06,.55,.95) forwards;
+            position: fixed; z-index: 0; pointer-events: none; top: 3vh; right: 5vw;
+            width: 24px; height: 24px;
+            animation: meteorApproach 3.6s cubic-bezier(.5, .02, .8, .38) forwards;
+            will-change: transform, opacity;
         }
-        .bg-meteor::after {
-            content: ''; position: absolute; left: 50%; top: 50%; width: 300px; height: 7px;
-            transform: translate(0,-50%) rotate(-40deg); transform-origin: left center;
-            background: linear-gradient(90deg, transparent, rgba(255,107,53,.45) 55%, rgba(255,240,200,.9));
-            border-radius: 4px; filter: blur(1.5px);
+        .bg-meteor .mt-core {
+            position: absolute; inset: 0; border-radius: 50%;
+            background: radial-gradient(circle at 54% 40%, #ffffff 0%, #ffe89a 20%, #ff8a2a 46%, #e0300a 70%, rgba(224,48,10,0) 82%);
+            box-shadow: 0 0 16px 5px rgba(255,120,30,.75), 0 0 44px 14px rgba(255,60,10,.42);
+            animation: meteorFlicker .12s steps(2) infinite;
+        }
+        .bg-meteor .mt-tail {
+            position: absolute; right: 42%; top: 44%; width: 360px; height: 13px;
+            transform-origin: right center; transform: rotate(-40deg);
+            background: linear-gradient(90deg, transparent 0%, rgba(255,80,15,.35) 45%, rgba(255,150,50,.7) 75%, rgba(255,230,170,.95) 100%);
+            border-radius: 50%; filter: blur(3px); opacity: .9;
         }
         .meteor-bit {
             position: fixed; z-index: 0; pointer-events: none; border-radius: 50%;
-            background: radial-gradient(circle, #ffd9a0, #e0491c 60%, transparent);
-            box-shadow: 0 0 8px rgba(239,68,68,.6);
-            animation: meteorFall 2.3s cubic-bezier(.45,.06,.55,.95) forwards;
+            background: radial-gradient(circle at 50% 45%, #fff, #ff8a2a 42%, #e0300a 68%, transparent 80%);
+            box-shadow: 0 0 8px rgba(255,90,20,.7);
+            animation: meteorBit var(--dur, 2.6s) cubic-bezier(.5, .02, .8, .4) forwards;
         }
-        @keyframes meteorFall {
-            0%   { transform: translate(0,0) scale(.25); opacity: 0; }
-            8%   { opacity: 1; }
-            52%  { transform: translate(-48vw, 46vh) scale(1.1); opacity: 1; }
-            88%  { opacity: .85; }
-            100% { transform: translate(-118vw, 114vh) scale(1.8); opacity: 0; }
+        @keyframes meteorApproach {
+            0%   { transform: translate(0,0) scale(.12); opacity: 0; }
+            9%   { opacity: .85; }
+            50%  { transform: translate(-20vw, 24vh) scale(.55); opacity: 1; }
+            84%  { transform: translate(-64vw, 80vh) scale(2.0); opacity: 1; }
+            100% { transform: translate(-100vw, 116vh) scale(3.0); opacity: 0; }
         }
+        @keyframes meteorBit {
+            0%   { transform: translate(0,0) scale(.3); opacity: 0; }
+            16%  { opacity: 1; }
+            100% { transform: translate(var(--ex, -50vw), var(--ey, 60vh)) scale(1.7); opacity: 0; }
+        }
+        @keyframes meteorFlicker { 0% { filter: brightness(1); } 100% { filter: brightness(1.25); } }
         .rune { transition: color 1.4s ease, text-shadow 1.4s ease; }
         .rune-field.blessed .rune {
             color: rgba(251,191,36,.62) !important;
@@ -723,20 +734,28 @@
         // vöröses izzással és pár törmelékkel, majd elhalványul, ahogy kimegy a képből.
         window.bgMeteor = function() {
             if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+            // Rétegelt tűzgömb: izzó mag + tapadó tűz-csóva. A közelítést a nagy
+            // méret-növekedés adja (a box-shadow a mérettel együtt nő → közel = intenzívebb).
             const meteor = document.createElement('div'); meteor.className = 'bg-meteor';
+            meteor.innerHTML = '<span class="mt-tail"></span><span class="mt-core"></span>';
             document.body.appendChild(meteor);
-            setTimeout(() => meteor.remove(), 2600);
-            const bits = 4 + (Math.random() * 3 | 0);
+            setTimeout(() => meteor.remove(), 3900);
+            // Szétszóródó (nem követő) törmelék: a fő pálya közeléből törnek le,
+            // eltérő szögben és távolságra, kicsit késleltetve.
+            const bits = 5 + (Math.random() * 4 | 0);
             for (let i = 0; i < bits; i++) {
                 const b = document.createElement('div'); b.className = 'meteor-bit';
-                const s = (3 + Math.random() * 5).toFixed(0);
+                const s = (2 + Math.random() * 5).toFixed(0);
                 b.style.width = b.style.height = s + 'px';
-                b.style.top = (-10 + Math.random() * 12) + 'vh';
-                b.style.right = (-8 + Math.random() * 16) + 'vw';
-                b.style.animationDelay = (Math.random() * 0.28).toFixed(2) + 's';
-                b.style.animationDuration = (2.1 + Math.random() * 0.6).toFixed(2) + 's';
+                b.style.top = (2 + Math.random() * 22) + 'vh';
+                b.style.right = (3 + Math.random() * 20) + 'vw';
+                // Eltérő végpont → szétszóródnak (nem párhuzamosan követik a meteort)
+                b.style.setProperty('--ex', -(28 + Math.random() * 70).toFixed(0) + 'vw');
+                b.style.setProperty('--ey', (28 + Math.random() * 74).toFixed(0) + 'vh');
+                b.style.setProperty('--dur', (1.7 + Math.random() * 1.1).toFixed(2) + 's');
+                b.style.animationDelay = (0.15 + Math.random() * 0.7).toFixed(2) + 's';
                 document.body.appendChild(b);
-                setTimeout(() => b.remove(), 3200);
+                setTimeout(() => b.remove(), 4200);
             }
         };
         // Kritikus 12: a háttér-rúnák aranyban felizzanak, majd lassan visszahalványulnak.
