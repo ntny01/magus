@@ -57,6 +57,24 @@
         }
         html.authed body { visibility: visible; }
 
+        /* ===== HÁTTÉR-RÚNÁK ===== */
+        .rune-field { position: fixed; inset: 0; z-index: 0; overflow: hidden; pointer-events: none; }
+        .rune {
+            position: absolute; bottom: -48px;
+            font-family: 'Cinzel', serif; user-select: none;
+            color: rgba(212,175,55,.14);
+            text-shadow: 0 0 14px currentColor;
+            animation: runeRise linear forwards;
+            will-change: transform, opacity;
+        }
+        @keyframes runeRise {
+            0%   { transform: translateY(0) rotate(0deg) scale(.85); opacity: 0; }
+            12%  { opacity: 1; }
+            85%  { opacity: 1; }
+            100% { transform: translateY(-112vh) rotate(200deg) scale(1.2); opacity: 0; }
+        }
+        .layout { position: relative; z-index: 1; }
+
         /* ===== BANNER ===== */
         .banner {
             position: sticky; top: 0; z-index: 20;
@@ -435,6 +453,7 @@
     </style>
 </head>
 <body>
+    <div class="rune-field" id="runeField" aria-hidden="true"></div>
     <div class="banner">
         <a class="banner-logo" href="index.html" title="KODEXIUM"><img src="assets/logo/banner-logo.png" alt="KODEXIUM"></a>
         <div class="user-box">
@@ -542,6 +561,29 @@
             try { await window._sb.auth.signOut(); } catch (e) {}
             window.location.href = 'login.html';
         };
+
+        // Háttérben felúszó rúnák — arany + néha zöld akcent, glow-val.
+        (function initRunes(){
+            const field = document.getElementById('runeField');
+            if (!field || window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+            const glyphs = ['✦','ᚱ','ᛟ','✧','☽','☼','᛫','ᚷ','ᛁ','✴','᚛','ᚔ','ᛞ','ᚦ','ᛗ','ᛊ','ᛖ'];
+            function spawn(){
+                if (document.hidden) return;
+                const r = document.createElement('div');
+                r.className = 'rune';
+                r.textContent = glyphs[Math.random()*glyphs.length|0];
+                r.style.left = (Math.random()*100).toFixed(1) + 'vw';
+                r.style.fontSize = (14 + Math.random()*40).toFixed(0) + 'px';
+                const dur = 14 + Math.random()*16;
+                r.style.animationDuration = dur.toFixed(1) + 's';
+                const a = (0.07 + Math.random()*0.14).toFixed(2);
+                r.style.color = Math.random() < 0.22 ? 'rgba(16,185,129,'+a+')' : 'rgba(212,175,55,'+a+')';
+                field.appendChild(r);
+                setTimeout(() => r.remove(), dur*1000 + 300);
+            }
+            for (let i=0;i<9;i++) setTimeout(spawn, i*450);   // kezdő raj
+            setInterval(spawn, 1500);
+        })();
 
         window.rollD12 = function() {
             const d = document.getElementById('d12');
