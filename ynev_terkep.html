@@ -3783,6 +3783,7 @@ document.addEventListener('mousemove', e => {
     const inSel = r => !(r.right<ox || r.left>ox+sel.side || r.bottom<oy || r.top>oy+sel.side);
     const put = (src, r) => { try { ctx.drawImage(src, (r.left-ox)*scale, (r.top-oy)*scale, r.width*scale, r.height*scale); } catch(e){} };
     const mapEl = document.getElementById('map');
+    const mrect = mapEl.getBoundingClientRect();
     const hasH2C = typeof html2canvas === 'function';
     mapEl.querySelectorAll('.leaflet-tile').forEach(t => { t.style.opacity = '1'; });
 
@@ -3792,16 +3793,26 @@ document.addEventListener('mousemove', e => {
       const r = img.getBoundingClientRect(); if (inSel(r)) put(img, r);
     });
 
-    // 2) IDŐJÁRÁS-overlay (CSS-div) — html2canvas csak erre az elemre
-    const wx = document.getElementById('weatherOverlay');
-    if (wx && hasH2C) {
-      const wr = wx.getBoundingClientRect();
-      const wcs = getComputedStyle(wx);
-      const hasWeather = wr.width && wr.height && inSel(wr) &&
-        (wcs.backgroundImage !== 'none' || (wcs.backgroundColor && wcs.backgroundColor !== 'rgba(0, 0, 0, 0)' && wcs.backgroundColor !== 'transparent') || wx.children.length);
-      if (hasWeather) {
-        try { const wc = await html2canvas(wx, { backgroundColor: null, useCORS: true, logging: false, scale: 1 }); put(wc, wr); }
-        catch(e){ console.warn('időjárás:', e); }
+    // 2) IDŐJÁRÁS: ZÓNÁNKÉNT (a #weatherOverlay konténer 0-méretű, ezért esett ki
+    //    korábban; a zóna-elemek viszont valódi méretűek). html2canvas a zóna-elemre
+    //    (az animált részecskék egy képkockája), + canvas-clip a poligon alakra, hogy
+    //    pontosan a rajzolt zóna területén látszódjon.
+    if (hasH2C && typeof wxZones !== 'undefined' && wxZones.length && typeof map !== 'undefined') {
+      for (const z of wxZones) {
+        if (!z.el) continue;
+        const zr = z.el.getBoundingClientRect();
+        if (!zr.width || !zr.height || !inSel(zr)) continue;
+        let zc; try { zc = await html2canvas(z.el, { backgroundColor: null, useCORS: true, logging: false, scale: 2 }); }
+        catch(e){ console.warn('időjárás zóna:', e); continue; }
+        ctx.save();
+        const ll = z.latlngs || z.polygon;
+        if (ll && ll.length) {
+          ctx.beginPath();
+          ll.forEach((c, i) => { const p = map.latLngToContainerPoint(c); const x = (mrect.left + p.x - ox) * scale, y = (mrect.top + p.y - oy) * scale; if (i === 0) ctx.moveTo(x, y); else ctx.lineTo(x, y); });
+          ctx.closePath(); ctx.clip();
+        }
+        put(zc, zr);
+        ctx.restore();
       }
     }
 
