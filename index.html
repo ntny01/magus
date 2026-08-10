@@ -57,10 +57,11 @@
         }
         html.authed body { visibility: visible; }
 
-        /* ===== HÁTTÉR-RÚNÁK ===== */
+        /* ===== HÁTTÉR-RÚNÁK (mélységi rétegek + egér-parallax) ===== */
         .rune-field { position: fixed; inset: 0; z-index: 0; overflow: hidden; pointer-events: none; }
+        .rune-layer { position: absolute; inset: -60px; will-change: transform; transition: transform .5s cubic-bezier(.22,.61,.36,1); }
         .rune {
-            position: absolute; bottom: -48px;
+            position: absolute; bottom: 0;
             font-family: 'Cinzel', serif; user-select: none;
             color: rgba(212,175,55,.14);
             text-shadow: 0 0 14px currentColor;
@@ -253,9 +254,33 @@
         .cc-bar-row { display: flex; justify-content: space-between; font-size: .72rem; color: var(--muted); margin-bottom: 2px; }
         .cc-bar-row b { color: var(--text); font-weight: 500; }
         .cc-bar-track { height: 8px; background: rgba(255,255,255,.08); border-radius: 5px; overflow: hidden; }
-        .cc-bar-fill { height: 100%; border-radius: 5px; transition: width .35s ease; }
+        .cc-bar-fill { height: 100%; border-radius: 5px; transition: width .35s ease; position: relative; overflow: hidden; animation: barBreathe 3.6s ease-in-out infinite; }
         .cc-bar-fill.hp  { background: linear-gradient(90deg, #b91c1c, #ef4444); }
         .cc-bar-fill.pow { background: linear-gradient(90deg, #1d4ed8, #3b82f6); }
+        /* Élő HP/kegy-csík: finom „lélegzés" + végigfutó fénypászta; alacsony HP → vörös vészjel */
+        .cc-bar-fill::after {
+            content: ''; position: absolute; inset: 0;
+            background: linear-gradient(100deg, transparent 22%, rgba(255,255,255,.32) 50%, transparent 78%);
+            transform: translateX(-120%); animation: barSheen 5s ease-in-out infinite;
+        }
+        @keyframes barBreathe { 0%,100% { filter: brightness(1); } 50% { filter: brightness(1.18); } }
+        @keyframes barSheen { 0% { transform: translateX(-120%); } 45%,100% { transform: translateX(320%); } }
+        .cc-bar-fill.low { animation: barLow 1s ease-in-out infinite; }
+        @keyframes barLow { 0%,100% { filter: brightness(.82); } 50% { filter: brightness(1.6) saturate(1.4); } }
+
+        /* Aranyparázs a kártya szélén (hoverre, JS-spawn) */
+        .char-card { position: relative; }
+        .ember {
+            position: absolute; border-radius: 50%; pointer-events: none; opacity: 0; z-index: 2;
+            background: radial-gradient(circle, #fff2c4, #d4af37 55%, transparent 75%);
+            box-shadow: 0 0 6px rgba(212,175,55,.8);
+            animation: emberRise linear forwards;
+        }
+        @keyframes emberRise {
+            0%   { transform: translate(0,0) scale(1); opacity: 0; }
+            18%  { opacity: .95; }
+            100% { transform: translate(var(--dx,0), calc(-1 * var(--rise,60px))) scale(.3); opacity: 0; }
+        }
         .cc-money { font-size: .74rem; color: var(--muted); margin-top: 2px; }
         .cc-money b { color: var(--gold); font-weight: 500; }
 
@@ -562,27 +587,75 @@
             window.location.href = 'login.html';
         };
 
-        // Háttérben felúszó rúnák — arany + néha zöld akcent, glow-val.
+        // Háttérben felúszó rúnák — HÁROM mélységi réteg (közelebbi = nagyobb/erősebb/
+        // gyorsabb) + finom egér-parallax (a közelebbi réteg jobban követi az egeret).
         (function initRunes(){
             const field = document.getElementById('runeField');
             if (!field || window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
-            const glyphs = ['✦','ᚱ','ᛟ','✧','☽','☼','᛫','ᚷ','ᛁ','✴','᚛','ᚔ','ᛞ','ᚦ','ᛗ','ᛊ','ᛖ'];
+            const glyphs = ['✦','ᚱ','ᛟ','✧','☽','☼','᛫','ᚷ','ᛁ','✴','᚛','ᚔ','ᛞ','ᚦ','ᛗ','ᛊ','ᛖ','ᚨ','ᚹ'];
+            const layers = [0.25, 0.55, 0.9].map(depth => {
+                const el = document.createElement('div'); el.className = 'rune-layer';
+                field.appendChild(el); return { el, depth };
+            });
             function spawn(){
                 if (document.hidden) return;
+                const layer = layers[Math.random()*layers.length|0], d = layer.depth;
                 const r = document.createElement('div');
                 r.className = 'rune';
                 r.textContent = glyphs[Math.random()*glyphs.length|0];
                 r.style.left = (Math.random()*100).toFixed(1) + 'vw';
-                r.style.fontSize = (14 + Math.random()*40).toFixed(0) + 'px';
-                const dur = 14 + Math.random()*16;
+                r.style.fontSize = (10 + d*44 + Math.random()*8).toFixed(0) + 'px';   // közelebb → nagyobb
+                const dur = (24 - d*11) + Math.random()*7;                            // közelebb → gyorsabb
                 r.style.animationDuration = dur.toFixed(1) + 's';
-                const a = (0.07 + Math.random()*0.14).toFixed(2);
+                const a = (0.05 + d*0.15).toFixed(2);                                 // közelebb → erősebb
                 r.style.color = Math.random() < 0.22 ? 'rgba(16,185,129,'+a+')' : 'rgba(212,175,55,'+a+')';
-                field.appendChild(r);
-                setTimeout(() => r.remove(), dur*1000 + 300);
+                layer.el.appendChild(r);
+                setTimeout(() => r.remove(), dur*1000 + 400);
             }
-            for (let i=0;i<9;i++) setTimeout(spawn, i*450);   // kezdő raj
-            setInterval(spawn, 1500);
+            for (let i=0;i<14;i++) setTimeout(spawn, i*320);   // kezdő raj
+            setInterval(spawn, 1100);
+            // Egér-parallax: a réteget a mélysége arányában toljuk el (max ~40px).
+            let raf = null, mx = 0, my = 0;
+            window.addEventListener('pointermove', e => {
+                mx = (e.clientX / window.innerWidth - 0.5);
+                my = (e.clientY / window.innerHeight - 0.5);
+                if (raf) return;
+                raf = requestAnimationFrame(() => {
+                    raf = null;
+                    layers.forEach(l => { l.el.style.transform = 'translate(' + (mx*l.depth*40).toFixed(1) + 'px,' + (my*l.depth*40).toFixed(1) + 'px)'; });
+                });
+            }, { passive: true });
+        })();
+
+        // Aranyparázs a kártyák alsó szélén, amíg fölötte az egér (delegált hover).
+        (function initEmbers(){
+            if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+            let hoverCard = null, timer = null;
+            function spawnEmber(card){
+                const w = card.clientWidth || 200;
+                const e = document.createElement('div'); e.className = 'ember';
+                const sz = (2 + Math.random()*3).toFixed(1);
+                e.style.width = e.style.height = sz + 'px';
+                e.style.left = (6 + Math.random()*(w-12)).toFixed(0) + 'px';
+                e.style.bottom = '2px';
+                e.style.setProperty('--dx', (Math.random()*26-13).toFixed(0) + 'px');
+                e.style.setProperty('--rise', (44 + Math.random()*52).toFixed(0) + 'px');
+                e.style.animationDuration = (1.1 + Math.random()*0.9).toFixed(2) + 's';
+                card.appendChild(e);
+                setTimeout(() => e.remove(), 2200);
+            }
+            document.addEventListener('mouseover', ev => {
+                const card = ev.target.closest && ev.target.closest('.char-card');
+                if (card && card !== hoverCard) {
+                    hoverCard = card;
+                    clearInterval(timer);
+                    timer = setInterval(() => { if (hoverCard && !document.hidden) spawnEmber(hoverCard); }, 130);
+                }
+            });
+            document.addEventListener('mouseout', ev => {
+                const card = ev.target.closest && ev.target.closest('.char-card');
+                if (card && !card.contains(ev.relatedTarget)) { hoverCard = null; clearInterval(timer); }
+            });
         })();
 
         window.rollD12 = function() {
@@ -639,9 +712,10 @@
         function fmtNum(n) { n = Number(n) || 0; return Number.isInteger(n) ? n : n.toFixed(1); }
         function bar(label, cur, max, cls) {
             const pct = max > 0 ? Math.max(0, Math.min(100, (cur / max) * 100)) : 0;
+            const low = (cls === 'hp' && max > 0 && cur / max < 0.3) ? ' low' : '';   // alacsony HP → vészjel
             return '<div class="cc-bar"><div class="cc-bar-row"><span>' + label +
                 '</span><span><b>' + fmtNum(cur) + '</b> / ' + fmtNum(max) + '</span></div>' +
-                '<div class="cc-bar-track"><div class="cc-bar-fill ' + cls + '" style="width:' + pct + '%"></div></div></div>';
+                '<div class="cc-bar-track"><div class="cc-bar-fill ' + cls + low + '" style="width:' + pct + '%"></div></div></div>';
         }
         function moneyLine(m) {
             if (!m) return '';
