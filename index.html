@@ -289,7 +289,10 @@
         .comet-mover {
             position: fixed; z-index: 0; pointer-events: none; top: -6vh; right: -3vw;
             width: 0; height: 0;
-            animation: cometPath 3.6s cubic-bezier(.55, .05, .85, .5) forwards;
+            /* A pozíció EGYETLEN sima gyorsuló ív (nincs több köztes keyframe → nincs
+               szaggatás); az áttűnés külön, lineáris. */
+            animation: cometPath 3.4s cubic-bezier(.42, 0, .72, .46) forwards,
+                       cometFade 3.4s linear forwards;
             will-change: transform, opacity;
         }
         .comet {
@@ -316,18 +319,17 @@
             animation: meteorBit var(--dur, 2.6s) cubic-bezier(.5, .02, .8, .4) forwards;
         }
         @keyframes cometPath {
-            0%   { transform: translate(0,0) scale(.14); opacity: 0; }
-            10%  { opacity: 1; }
-            55%  { transform: translate(-26vw, 30vh) scale(.72); }
-            85%  { transform: translate(-72vw, 84vh) scale(2.2); opacity: 1; }
-            100% { transform: translate(-110vw, 122vh) scale(3.3); opacity: 0; }
+            from { transform: translate(0,0) scale(.14); }
+            to   { transform: translate(-112vw, 124vh) scale(3.2); }
         }
+        @keyframes cometFade { 0% { opacity: 0; } 7% { opacity: 1; } 86% { opacity: 1; } 100% { opacity: 0; } }
         @keyframes meteorBit {
             0%   { transform: translate(0,0) scale(.3); opacity: 0; }
             16%  { opacity: 1; }
             100% { transform: translate(var(--ex, -50vw), var(--ey, 60vh)) scale(1.7); opacity: 0; }
         }
-        .rune { transition: color 1.4s ease, text-shadow 1.4s ease; }
+        /* a translate a rúna-lökéshez (a runeRise transform-jától FÜGGETLEN, komponálódik) */
+        .rune { transition: color 1.4s ease, text-shadow 1.4s ease, translate .45s cubic-bezier(.2,.8,.3,1); }
         .rune-field.blessed .rune {
             color: rgba(251,191,36,.62) !important;
             text-shadow: 0 0 22px rgba(251,191,36,.95) !important;
@@ -746,6 +748,7 @@
             mover.innerHTML = '<div class="comet"><div class="comet-tail"></div><div class="comet-head"></div></div>';
             document.body.appendChild(mover);
             setTimeout(() => mover.remove(), 3900);
+            shoveRunes(mover);   // a meteor eltolja a felszálló rúnákat
             // Szétszóródó (nem követő) törmelék: a fő pálya közeléből törnek le,
             // eltérő szögben és távolságra, kicsit késleltetve.
             const bits = 5 + (Math.random() * 4 | 0);
@@ -764,6 +767,40 @@
                 setTimeout(() => b.remove(), 4200);
             }
         };
+        // A meteor feje eltolja a közeli, felszálló rúnákat (independent `translate`
+        // tulajdonság → komponálódik a runeRise transform-jával; a CSS-transition
+        // adja a rugózó vissza-simulást, amint a meteor elhalad).
+        function shoveRunes(mover) {
+            if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+            const R = 170;            // hatósugár px
+            const end = performance.now() + 3500;
+            function frame(now) {
+                if (!mover.isConnected || now > end) {
+                    document.querySelectorAll('#runeField .rune').forEach(r => { if (r._shoved) { r.style.translate = '0px 0px'; r._shoved = false; } });
+                    return;
+                }
+                const head = mover.querySelector('.comet-head');
+                if (head) {
+                    const hr = head.getBoundingClientRect();
+                    const hx = hr.left + hr.width / 2, hy = hr.top + hr.height / 2;
+                    document.querySelectorAll('#runeField .rune').forEach(r => {
+                        const rr = r.getBoundingClientRect();
+                        const dx = (rr.left + rr.width / 2) - hx, dy = (rr.top + rr.height / 2) - hy;
+                        const dist = Math.hypot(dx, dy);
+                        if (dist < R && dist > 1) {
+                            const force = (1 - dist / R) * 90;   // közelebb → nagyobb lökés
+                            r.style.translate = (dx / dist * force).toFixed(0) + 'px ' + (dy / dist * force).toFixed(0) + 'px';
+                            r._shoved = true;
+                        } else if (r._shoved) {
+                            r.style.translate = '0px 0px'; r._shoved = false;
+                        }
+                    });
+                }
+                requestAnimationFrame(frame);
+            }
+            requestAnimationFrame(frame);
+        }
+
         // Kritikus 12: a háttér-rúnák aranyban felizzanak, majd lassan visszahalványulnak.
         window.blessRunes = function() {
             const field = document.getElementById('runeField');
