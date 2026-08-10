@@ -3729,7 +3729,15 @@ document.addEventListener('mousemove', e => {
   async function drawSvgToCanvas(ctx, svg, dx, dy, dw, dh){
     try {
       const clone = svg.cloneNode(true);
+      // Helyes koordináta-leképzés: ha nincs viewBox, a renderelt CSS-méretből
+      // csinálunk egyet (a Leaflet overlay SVG origója a bal-felső sarka), a
+      // width/height-ot a cél (device) méretre állítjuk.
+      const rr = svg.getBoundingClientRect();
+      if (!clone.getAttribute('viewBox') && rr.width && rr.height) {
+        clone.setAttribute('viewBox', '0 0 ' + rr.width + ' ' + rr.height);
+      }
       clone.setAttribute('width', dw); clone.setAttribute('height', dh);
+      clone.setAttribute('preserveAspectRatio', 'none');
       const str = new XMLSerializer().serializeToString(clone);
       const data = 'data:image/svg+xml;base64,' + btoa(unescape(encodeURIComponent(str)));
       await new Promise(res => { const im = new Image(); im.onload = () => { try { ctx.drawImage(im, dx, dy, dw, dh); } catch(e){} res(); }; im.onerror = res; im.src = data; });
@@ -3773,20 +3781,34 @@ document.addEventListener('mousemove', e => {
     const ctrls = mapEl.querySelector('.leaflet-control-container');
     const prevDisp = ctrls ? ctrls.style.display : null;
     if (ctrls) ctrls.style.display = 'none';
+    // A Leaflet csempéket halványulási átmenettel tölti be; ha félig átlátszón
+    // kapná el a html2canvas, az alsó (frissen töltött) sor sötét lenne → kényszerítjük.
+    mapEl.querySelectorAll('.leaflet-tile').forEach(t => { t.style.opacity = '1'; });
     let full;
     try {
       full = await html2canvas(mapEl, {
         useCORS: true, backgroundColor: '#0b1220', logging: false,
-        scale: 2, imageTimeout: 0,
-        width: mr.width, height: mr.height, windowWidth: mr.width, windowHeight: mr.height
+        scale: 2, imageTimeout: 0
       });
     } finally {
       if (ctrls) ctrls.style.display = prevDisp || '';
     }
     const s = full.width / mr.width;                 // renderelt px / CSS px
-    const sx = Math.max(0, (sel.left - mr.left) * s);
-    const sy = Math.max(0, (sel.top  - mr.top ) * s);
-    const sw = sel.side * s;
+    // A Leaflet VEKTOROS rajzait (overlay-pane SVG) a html2canvas gyakran kihagyja
+    // → kézzel ráfestjük a teljes renderre, a térkép koordináta-terében (×s).
+    try {
+      const fctx = full.getContext('2d');
+      for (const svg of mapEl.querySelectorAll('.leaflet-overlay-pane svg')) {
+        const r = svg.getBoundingClientRect(); if (!r.width || !r.height) continue;
+        await drawSvgToCanvas(fctx, svg, (r.left - mr.left) * s, (r.top - mr.top) * s, r.width * s, r.height * s);
+      }
+    } catch(e){ console.warn('overlay svg ráfestés:', e); }
+    let sx = Math.max(0, (sel.left - mr.left) * s);
+    let sy = Math.max(0, (sel.top  - mr.top ) * s);
+    let sw = sel.side * s;
+    // A forrás-négyzetet a renderelt kép HATÁRAIN BELÜLRE vágjuk (négyzet marad),
+    // hogy sose maradjon üres (fekete) folt a kép alján/szélén, ha a render kisebb.
+    sw = Math.max(1, Math.min(sw, full.width - sx, full.height - sy));
     const out = document.createElement('canvas'); out.width = px; out.height = px;
     const ctx = out.getContext('2d'); ctx.fillStyle = '#0b1220'; ctx.fillRect(0,0,px,px);
     try { ctx.drawImage(full, sx, sy, sw, sw, 0, 0, px, px); } catch(e){ console.error(e); }
