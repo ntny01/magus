@@ -281,6 +281,40 @@
             18%  { opacity: .95; }
             100% { transform: translate(var(--dx,0), calc(-1 * var(--rise,60px))) scale(.3); opacity: 0; }
         }
+
+        /* d12 háttér-effektek: 1 = messziről érkező meteor (jobb-fent → bal-lent),
+           12 = a háttér-rúnák aranyfénye pár másodpercig. */
+        .bg-meteor {
+            position: fixed; z-index: 0; pointer-events: none; top: -10vh; right: -8vw;
+            width: 30px; height: 30px; border-radius: 50%;
+            background: radial-gradient(circle at 58% 40%, #fff4d6, #ff7a33 42%, #c81e1e 72%, transparent 80%);
+            box-shadow: 0 0 26px 8px rgba(239,68,68,.55), 0 0 64px 20px rgba(255,107,53,.28);
+            animation: meteorFall 2.3s cubic-bezier(.45,.06,.55,.95) forwards;
+        }
+        .bg-meteor::after {
+            content: ''; position: absolute; left: 50%; top: 50%; width: 300px; height: 7px;
+            transform: translate(0,-50%) rotate(-40deg); transform-origin: left center;
+            background: linear-gradient(90deg, transparent, rgba(255,107,53,.45) 55%, rgba(255,240,200,.9));
+            border-radius: 4px; filter: blur(1.5px);
+        }
+        .meteor-bit {
+            position: fixed; z-index: 0; pointer-events: none; border-radius: 50%;
+            background: radial-gradient(circle, #ffd9a0, #e0491c 60%, transparent);
+            box-shadow: 0 0 8px rgba(239,68,68,.6);
+            animation: meteorFall 2.3s cubic-bezier(.45,.06,.55,.95) forwards;
+        }
+        @keyframes meteorFall {
+            0%   { transform: translate(0,0) scale(.25); opacity: 0; }
+            8%   { opacity: 1; }
+            52%  { transform: translate(-48vw, 46vh) scale(1.1); opacity: 1; }
+            88%  { opacity: .85; }
+            100% { transform: translate(-118vw, 114vh) scale(1.8); opacity: 0; }
+        }
+        .rune { transition: color 1.4s ease, text-shadow 1.4s ease; }
+        .rune-field.blessed .rune {
+            color: rgba(251,191,36,.62) !important;
+            text-shadow: 0 0 22px rgba(251,191,36,.95) !important;
+        }
         .cc-money { font-size: .74rem; color: var(--muted); margin-top: 2px; }
         .cc-money b { color: var(--gold); font-weight: 500; }
 
@@ -679,7 +713,38 @@
                     if (roll === 1) { fx.src = 'assets/logo/meteor.png'; void fx.offsetWidth; fx.classList.add('fx-meteor'); }
                     else if (roll === 12) { fx.src = 'assets/logo/blessing.png'; void fx.offsetWidth; fx.classList.add('fx-bless'); }
                 }
+                // Háttér-effektek: 1 → messziről érkező meteor, 12 → rúnák aranyfénye.
+                if (roll === 1) bgMeteor();
+                else if (roll === 12) blessRunes();
             }, 620);
+        };
+
+        // Balszerencse: egy egyre nagyobb meteor ível át a háttéren (jobb-fent → bal-lent),
+        // vöröses izzással és pár törmelékkel, majd elhalványul, ahogy kimegy a képből.
+        window.bgMeteor = function() {
+            if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+            const meteor = document.createElement('div'); meteor.className = 'bg-meteor';
+            document.body.appendChild(meteor);
+            setTimeout(() => meteor.remove(), 2600);
+            const bits = 4 + (Math.random() * 3 | 0);
+            for (let i = 0; i < bits; i++) {
+                const b = document.createElement('div'); b.className = 'meteor-bit';
+                const s = (3 + Math.random() * 5).toFixed(0);
+                b.style.width = b.style.height = s + 'px';
+                b.style.top = (-10 + Math.random() * 12) + 'vh';
+                b.style.right = (-8 + Math.random() * 16) + 'vw';
+                b.style.animationDelay = (Math.random() * 0.28).toFixed(2) + 's';
+                b.style.animationDuration = (2.1 + Math.random() * 0.6).toFixed(2) + 's';
+                document.body.appendChild(b);
+                setTimeout(() => b.remove(), 3200);
+            }
+        };
+        // Kritikus 12: a háttér-rúnák aranyban felizzanak, majd lassan visszahalványulnak.
+        window.blessRunes = function() {
+            const field = document.getElementById('runeField');
+            if (!field) return;
+            field.classList.add('blessed');
+            setTimeout(() => field.classList.remove('blessed'), 2600);
         };
 
         // Felfedezés-csempék (a navigáció "csempe" változata a feeden)
