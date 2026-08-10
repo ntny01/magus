@@ -133,10 +133,10 @@ const sb = supabase.createClient(
 
         /* KODE(x) logó: „KODE" felirat-kép + iránytű mint X, betöltéskor 45°-ra fordulva.
            Mindkettő FEHÉR (mint a szöveg), az iránytű lassan settle-el 45°-ra. */
-        .kodex-logo { display: inline-flex; align-items: center; gap: 0.12rem; height: 34px; line-height: 0; }
+        .kodex-logo { display: inline-flex; align-items: center; gap: 0; height: 34px; line-height: 0; }
         .kodex-word { height: 100%; width: auto; filter: brightness(0) invert(1); }
         .kodex-x {
-            height: 138%; width: auto; margin-left: -0.05rem;
+            height: 138%; width: auto; margin-left: -0.5rem;
             filter: brightness(0) invert(1);
             transform: rotate(0deg);
             animation: kodexXSettle 3s cubic-bezier(0.16, 0.72, 0.14, 1) forwards;
