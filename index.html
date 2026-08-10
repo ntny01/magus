@@ -282,25 +282,32 @@
             100% { transform: translate(var(--dx,0), calc(-1 * var(--rise,60px))) scale(.3); opacity: 0; }
         }
 
-        /* d12 háttér-effektek: 1 = KAMERÁHOZ KÖZELÍTŐ tűzgömb (távoli pötty → nagy, izzó
-           gömb, ahogy közelít; majd elsuhan bal-lentre), 12 = a rúnák aranyfénye. */
-        .bg-meteor {
-            position: fixed; z-index: 0; pointer-events: none; top: 3vh; right: 5vw;
-            width: 24px; height: 24px;
-            animation: meteorApproach 3.6s cubic-bezier(.5, .02, .8, .38) forwards;
+        /* d12 háttér-effekt: 1 = KAMERÁHOZ KÖZELÍTŐ üstökös. A MOZGÁS (.comet-mover)
+           és a RAJZ (.comet) szét van választva: a rajzot a haladási irányba (135° =
+           bal-lent) forgatjuk, így a csóva GARANTÁLTAN hátul (jobbra-fel) keskenyedik el.
+           A közeledést a nagy méret-növekedés adja; a fej glow-ja a mérettel nő. */
+        .comet-mover {
+            position: fixed; z-index: 0; pointer-events: none; top: -6vh; right: -3vw;
+            width: 0; height: 0;
+            animation: cometPath 3.6s cubic-bezier(.55, .05, .85, .5) forwards;
             will-change: transform, opacity;
         }
-        .bg-meteor .mt-core {
-            position: absolute; inset: 0; border-radius: 50%;
-            background: radial-gradient(circle at 54% 40%, #ffffff 0%, #ffe89a 20%, #ff8a2a 46%, #e0300a 70%, rgba(224,48,10,0) 82%);
-            box-shadow: 0 0 16px 5px rgba(255,120,30,.75), 0 0 44px 14px rgba(255,60,10,.42);
-            animation: meteorFlicker .12s steps(2) infinite;
+        .comet {
+            position: absolute; right: 0; top: 0; width: 300px; height: 46px;
+            transform: translateY(-50%) rotate(135deg);
+            transform-origin: right center;
         }
-        .bg-meteor .mt-tail {
-            position: absolute; right: 42%; top: 44%; width: 360px; height: 13px;
-            transform-origin: right center; transform: rotate(-40deg);
-            background: linear-gradient(90deg, transparent 0%, rgba(255,80,15,.35) 45%, rgba(255,150,50,.7) 75%, rgba(255,230,170,.95) 100%);
-            border-radius: 50%; filter: blur(3px); opacity: .9;
+        .comet-tail {
+            position: absolute; inset: 0;
+            background: linear-gradient(to left, rgba(255,236,182,.95) 0%, rgba(255,140,45,.55) 32%, rgba(255,80,20,.18) 66%, transparent 92%);
+            clip-path: polygon(100% 12%, 100% 88%, 0% 50%);   /* fejnél széles → farokban hegyes */
+            filter: blur(2px);
+        }
+        .comet-head {
+            position: absolute; right: -6px; top: 50%; width: 40px; height: 40px;
+            transform: translateY(-50%); border-radius: 50%;
+            background: radial-gradient(circle at 52% 42%, #fff 0%, #ffe89a 22%, #ff8a2a 48%, #e0300a 72%, rgba(224,48,10,0) 84%);
+            box-shadow: 0 0 18px 6px rgba(255,120,30,.8), 0 0 46px 16px rgba(255,60,10,.45);
         }
         .meteor-bit {
             position: fixed; z-index: 0; pointer-events: none; border-radius: 50%;
@@ -308,19 +315,18 @@
             box-shadow: 0 0 8px rgba(255,90,20,.7);
             animation: meteorBit var(--dur, 2.6s) cubic-bezier(.5, .02, .8, .4) forwards;
         }
-        @keyframes meteorApproach {
-            0%   { transform: translate(0,0) scale(.12); opacity: 0; }
-            9%   { opacity: .85; }
-            50%  { transform: translate(-20vw, 24vh) scale(.55); opacity: 1; }
-            84%  { transform: translate(-64vw, 80vh) scale(2.0); opacity: 1; }
-            100% { transform: translate(-100vw, 116vh) scale(3.0); opacity: 0; }
+        @keyframes cometPath {
+            0%   { transform: translate(0,0) scale(.14); opacity: 0; }
+            10%  { opacity: 1; }
+            55%  { transform: translate(-26vw, 30vh) scale(.72); }
+            85%  { transform: translate(-72vw, 84vh) scale(2.2); opacity: 1; }
+            100% { transform: translate(-110vw, 122vh) scale(3.3); opacity: 0; }
         }
         @keyframes meteorBit {
             0%   { transform: translate(0,0) scale(.3); opacity: 0; }
             16%  { opacity: 1; }
             100% { transform: translate(var(--ex, -50vw), var(--ey, 60vh)) scale(1.7); opacity: 0; }
         }
-        @keyframes meteorFlicker { 0% { filter: brightness(1); } 100% { filter: brightness(1.25); } }
         .rune { transition: color 1.4s ease, text-shadow 1.4s ease; }
         .rune-field.blessed .rune {
             color: rgba(251,191,36,.62) !important;
@@ -734,12 +740,12 @@
         // vöröses izzással és pár törmelékkel, majd elhalványul, ahogy kimegy a képből.
         window.bgMeteor = function() {
             if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
-            // Rétegelt tűzgömb: izzó mag + tapadó tűz-csóva. A közelítést a nagy
-            // méret-növekedés adja (a box-shadow a mérettel együtt nő → közel = intenzívebb).
-            const meteor = document.createElement('div'); meteor.className = 'bg-meteor';
-            meteor.innerHTML = '<span class="mt-tail"></span><span class="mt-core"></span>';
-            document.body.appendChild(meteor);
-            setTimeout(() => meteor.remove(), 3900);
+            // Üstökös: mozgás (.comet-mover) + rajz (.comet, a haladási irányba forgatva).
+            // A fej vezet bal-lentre, a csóva mögötte (jobbra-fel) keskenyedik el.
+            const mover = document.createElement('div'); mover.className = 'comet-mover';
+            mover.innerHTML = '<div class="comet"><div class="comet-tail"></div><div class="comet-head"></div></div>';
+            document.body.appendChild(mover);
+            setTimeout(() => mover.remove(), 3900);
             // Szétszóródó (nem követő) törmelék: a fő pálya közeléből törnek le,
             // eltérő szögben és távolságra, kicsit késleltetve.
             const bits = 5 + (Math.random() * 4 | 0);
