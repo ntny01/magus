@@ -9,13 +9,15 @@ const sb = supabase.createClient(
   'sb_publishable_JCRzD-ElN1os72wkfX_DKw_PoOTgnYR'
 )
     window._sb = sb
+    // Embed mód (?embed=1): a főoldal inline nézetében NEM redirectelünk login-ra
+    // (a szabályzat-tartalom auth nélkül is olvasható), és a fejlécet/sidebart elrejtjük.
+    const embed = new URLSearchParams(location.search).get('embed') === '1'
     const { data: { session } } = await sb.auth.getSession()
-    if (!session) { window.location.href = 'login.html'; return }
+    if (!session) { if (!embed) window.location.href = 'login.html'; return }
     const { data: profile } = await sb.from('user_profiles')
       .select('status, role, display_name').eq('id', session.user.id).single()
     if (!profile || profile.status !== 'active') {
-      await sb.auth.signOut()
-      window.location.href = 'login.html'
+      if (!embed) { await sb.auth.signOut(); window.location.href = 'login.html' }
       return
     }
     window._userProfile = profile
@@ -143,6 +145,12 @@ const sb = supabase.createClient(
         }
         @keyframes kodexXSettle { from { transform: rotate(0deg); } to { transform: rotate(45deg); } }
         @media (prefers-reduced-motion: reduce) { .kodex-x { animation: none; transform: rotate(45deg); } }
+
+        /* EMBED mód (?embed=1) — a főoldal inline nézete: csak a tartalom, fejléc/sidebar nélkül */
+        html.embed header, html.embed #sidebar, html.embed #overlay, html.embed #magic-particles { display: none !important; }
+        html.embed .layout-container { padding: 0 !important; }
+        html.embed main { margin: 0 !important; max-width: 100% !important; width: 100% !important; }
+        html.embed #content-area { max-width: 900px; margin: 0 auto; padding: 1.2rem 1.4rem; }
 
         .badge {
             font-size: 0.75rem;
@@ -1164,6 +1172,7 @@ tbody tr:hover{
 </style>
 </head>
 <body>
+<script>if(new URLSearchParams(location.search).get('embed')==='1')document.documentElement.classList.add('embed');</script>
 <div id="magic-particles"></div>
     <header>
         <div class="logo-area">
