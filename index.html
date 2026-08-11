@@ -521,6 +521,47 @@
         #cropImg { max-width: 100%; max-height: 68vh; display: block; border-radius: 8px; }
         .crop-rect { position: absolute; border: 2px solid var(--gold); box-shadow: 0 0 0 9999px rgba(2,6,23,.55); pointer-events: none; display: none; }
 
+        /* ===== KÓDEX-KERESŐ + MENTETT OLDALAK ===== */
+        .section-head { display: flex; align-items: center; justify-content: space-between; gap: 1rem; flex-wrap: wrap; }
+        .kx-search-btn {
+            background: transparent; border: 1px solid var(--gold-soft); color: var(--gold);
+            font-size: .82rem; padding: .4rem .85rem; border-radius: .5rem; cursor: pointer;
+            font-family: 'Cinzel', serif; transition: all .15s;
+        }
+        .kx-search-btn:hover { background: rgba(212,175,55,.12); }
+        #kodexSearchModal, #kodexViewer {
+            position: fixed; inset: 0; z-index: 340; background: rgba(2,6,23,.82);
+            backdrop-filter: blur(10px); display: flex; justify-content: center;
+        }
+        #kodexSearchModal { align-items: flex-start; padding: 6vh 1rem 1rem; }
+        #kodexViewer { align-items: center; padding: 3vh 1rem; }
+        .kx-panel { width: 100%; max-width: 640px; background: var(--card-solid); border: 1px solid var(--border); border-radius: 16px; padding: 1rem; box-shadow: 0 20px 60px rgba(0,0,0,.6); }
+        .kx-head, .kv-head { display: flex; align-items: center; gap: .6rem; margin-bottom: .7rem; }
+        .kx-title, .kv-title { flex: 1; font-family: 'Cinzel', serif; color: var(--gold); font-size: 1rem; }
+        .kx-x { background: transparent; border: 1px solid var(--border); color: #f87171; border-radius: .5rem; padding: .2rem .6rem; cursor: pointer; }
+        #kxInput { width: 100%; background: rgba(255,255,255,.05); border: 1px solid var(--border); color: var(--text); border-radius: .5rem; padding: .6rem .8rem; font-size: .95rem; box-sizing: border-box; }
+        .kx-results { margin-top: .7rem; max-height: 56vh; overflow-y: auto; display: flex; flex-direction: column; gap: .5rem; }
+        .kx-res { border: 1px solid var(--border); border-radius: .6rem; padding: .6rem .7rem; background: rgba(255,255,255,.02); }
+        .kx-res-title { font-weight: 600; color: var(--text); font-size: .9rem; margin-bottom: .2rem; }
+        .kx-res-snip { font-size: .78rem; color: var(--muted); line-height: 1.5; max-height: 3.1em; overflow: hidden; }
+        .kx-res-actions { display: flex; gap: .4rem; margin-top: .5rem; flex-wrap: wrap; align-items: center; }
+        .kx-res-actions button, .kx-res-actions select { background: transparent; border: 1px solid var(--border); color: var(--text); font-size: .74rem; padding: .28rem .55rem; border-radius: .45rem; cursor: pointer; }
+        .kx-res-actions .save { border-color: rgba(52,211,153,.5); color: #34d399; }
+        .kx-empty { text-align: center; color: var(--muted); font-size: .85rem; padding: 1.4rem 0; }
+        .kv-panel { width: 100%; max-width: 1100px; height: 90vh; background: var(--card-solid); border: 1px solid var(--border); border-radius: 16px; padding: .8rem; display: flex; flex-direction: column; box-shadow: 0 20px 60px rgba(0,0,0,.6); }
+        .kv-open { font-size: .78rem; color: var(--gold); text-decoration: none; border: 1px solid var(--gold-soft); padding: .2rem .55rem; border-radius: .45rem; }
+        #kvFrame { flex: 1; width: 100%; border: none; border-radius: 10px; background: #0b1220; }
+        #savedPagesRow { display: flex; flex-wrap: wrap; gap: .55rem; margin-top: .5rem; }
+        .saved-tile {
+            position: relative; display: flex; align-items: center; gap: .45rem;
+            border: 1px solid var(--border); border-left: 3px solid #60a5fa; border-radius: 10px;
+            padding: .5rem .7rem; background: rgba(96,165,250,.06); cursor: pointer; max-width: 250px;
+            font-size: .82rem; color: var(--text); transition: all .15s;
+        }
+        .saved-tile:hover { border-color: var(--gold-soft); }
+        .saved-tile .st-name { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+        .saved-tile .st-del { border: none; background: transparent; color: #f87171; cursor: pointer; font-size: .8rem; padding: 0 .1rem; line-height: 1; }
+
         /* ===== RESPONSIVE ===== */
         @media (max-width: 860px) {
             .layout { grid-template-columns: 1fr; padding: 1rem; gap: 1rem; }
@@ -573,9 +614,13 @@
                 </div>
             </div>
 
-            <div class="section-title">🎭 Karaktereid</div>
+            <div class="section-head">
+                <div class="section-title">🎭 Karaktereid</div>
+                <button class="kx-search-btn" onclick="openKodexSearch()">🔎 Kódex-keresés</button>
+            </div>
             <div class="char-controls" id="charControls"></div>
             <div id="charGrid"></div>
+            <div id="savedPagesRow"></div>
             <div id="charEmpty" class="empty-note" style="display:none;">
                 Még nincs mentett karaktered. <a href="char.html" style="color:var(--gold);">Készíts egyet →</a>
             </div>
@@ -633,6 +678,30 @@
                 <img id="cropImg" alt="" draggable="false">
                 <div class="crop-rect" id="cropRect"></div>
             </div>
+        </div>
+    </div>
+
+    <!-- KÓDEX-KERESŐ (inline) -->
+    <div id="kodexSearchModal" style="display:none;" onclick="if(event.target===this)closeKodexSearch()">
+        <div class="kx-panel">
+            <div class="kx-head">
+                <span class="kx-title">🔎 Keresés a Kódexben</span>
+                <button class="kx-x" onclick="closeKodexSearch()">✕</button>
+            </div>
+            <input type="text" id="kxInput" placeholder="Írj be egy szót… (pl. varázslat, sebzés, kocka)" autocomplete="off">
+            <div id="kxResults" class="kx-results"></div>
+        </div>
+    </div>
+
+    <!-- KÓDEX INLINE MEGNYITÓ (iframe) -->
+    <div id="kodexViewer" style="display:none;" onclick="if(event.target===this)closeKodexViewer()">
+        <div class="kv-panel">
+            <div class="kv-head">
+                <span class="kv-title" id="kvTitle">📖 Kódex</span>
+                <a class="kv-open" id="kvOpenNew" href="kodex.html" target="_blank" rel="noopener">Teljes oldal ↗</a>
+                <button class="kx-x" onclick="closeKodexViewer()">✕</button>
+            </div>
+            <iframe id="kvFrame" title="Kódex" src="about:blank"></iframe>
         </div>
     </div>
 
@@ -1062,6 +1131,7 @@
             const grid = document.getElementById('charGrid');
             const empty = document.getElementById('charEmpty');
             grid.innerHTML = '';
+            const savedRow = document.getElementById('savedPagesRow'); if (savedRow) savedRow.innerHTML = '';
             const ch = FEED.chars.find(c => c.id === FEED.charId);
             if (!ch) {
                 empty.style.display = 'block';
@@ -1110,6 +1180,7 @@
                 henchmen.map(henchCard).join('') +
                 equipTile(ch);
             grid.appendChild(group);
+            renderSavedPages();   // az aktív karakter mentett Kódex-oldalai
         }
 
         async function loadFeed() {
@@ -1144,11 +1215,135 @@
             FEED.campaignId = (savedCamp && FEED.campaigns.some(c => c.id === savedCamp)) ? savedCamp
                 : (FEED.campaigns.length ? FEED.campaigns[0].id : null);
             FEED.charId = localStorage.getItem('magus_feed_char') || null;
+            await loadSavedPages();
             resolveActiveChar();
             renderFeedControls();
             renderActiveChar();
             renderCampaignPosts();
         }
+
+        // Mentett UTK-oldalak (saved_pages) — karakterhez kötve. SQL nélkül üres marad.
+        async function loadSavedPages() {
+            try {
+                const { data } = await window._sb.from('saved_pages')
+                    .select('id, sheet_id, section_id, title')
+                    .eq('user_id', window._userId).order('created_at', { ascending: false });
+                FEED.savedPages = data || [];
+            } catch (e) { FEED.savedPages = []; }
+            return FEED.savedPages;
+        }
+        function renderSavedPages() {
+            const host = document.getElementById('savedPagesRow');
+            if (!host) return;
+            host.innerHTML = '';
+            const chId = FEED.charId;
+            if (!chId) return;
+            (FEED.savedPages || []).filter(p => p.sheet_id === chId).forEach(p => {
+                const t = document.createElement('div'); t.className = 'saved-tile';
+                t.onclick = (e) => { if (e.target.classList.contains('st-del')) return; openKodexViewer(p.section_id); };
+                t.innerHTML = '<span>📖</span><span class="st-name" title="' + esc(p.title || '') + '">' + esc(p.title || 'Kódex-oldal') + '</span>' +
+                    '<button class="st-del" title="Eltávolítás" onclick="removeSavedPage(\'' + p.id + '\')">✕</button>';
+                host.appendChild(t);
+            });
+        }
+        window.removeSavedPage = async function(id) {
+            const { error } = await window._sb.from('saved_pages').delete().eq('id', id);
+            if (error) { alert('Törlés sikertelen: ' + error.message); return; }
+            await loadSavedPages(); renderSavedPages();
+        };
+
+        /* ===== KÓDEX-KERESŐ (index inline) ===== */
+        let _utkIndex = null;
+        async function loadUtkData() {
+            if (_utkIndex) return _utkIndex;
+            const res = await fetch('utk_data.json');
+            const data = await res.json();
+            const idx = [];
+            (data.chapters || []).forEach(ch => (ch.sections || []).forEach(s => {
+                if (!s.id) return;
+                const title = s.section_title || s.title || 'Szakasz';
+                let text = '';
+                (s.content_blocks || s.content || []).forEach(b => {
+                    if (b.text) text += ' ' + b.text;
+                    if (b.title) text += ' ' + b.title;
+                    if (Array.isArray(b.headers)) text += ' ' + b.headers.join(' ');
+                    if (Array.isArray(b.rows)) b.rows.forEach(r => text += ' ' + (Array.isArray(r) ? r.join(' ') : r));
+                });
+                text = text.replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').trim();
+                idx.push({ id: s.id, title: title, text: text, low: (title + ' ' + text).toLowerCase() });
+            }));
+            _utkIndex = idx;
+            return idx;
+        }
+        function searchUtk(q) {
+            q = (q || '').trim().toLowerCase();
+            if (q.length < 2 || !_utkIndex) return [];
+            const terms = q.split(/\s+/);
+            const scored = [];
+            for (const s of _utkIndex) {
+                let score = 0, ok = true;
+                for (const t of terms) {
+                    if (!s.low.includes(t)) { ok = false; break; }
+                    score += s.title.toLowerCase().includes(t) ? 5 : 1;
+                }
+                if (ok) scored.push({ s, score });
+            }
+            scored.sort((a, b) => b.score - a.score);
+            return scored.slice(0, 30).map(x => x.s);
+        }
+        function renderKxResults(list) {
+            const host = document.getElementById('kxResults');
+            if (!list.length) { host.innerHTML = '<div class="kx-empty">Nincs találat…</div>'; return; }
+            const charOpts = (FEED.chars || []).map(c => '<option value="' + c.id + '">' + esc(c.name || 'Névtelen') + '</option>').join('');
+            host.innerHTML = list.map(s => {
+                const snip = esc(s.text.slice(0, 180));
+                let actions = '<button onclick="openKodexViewer(\'' + s.id + '\')">📖 Megnyitás</button>';
+                if (charOpts) actions += '<select class="kx-charsel">' + charOpts + '</select>' +
+                    '<button class="save" data-sec="' + esc(s.id) + '" onclick="savePageFromResult(this)">💾 Mentés</button>';
+                else actions += '<span style="font-size:.72rem;color:var(--muted);">nincs karaktered</span>';
+                return '<div class="kx-res"><div class="kx-res-title">' + esc(s.title) + '</div>' +
+                    '<div class="kx-res-snip">' + snip + '…</div>' +
+                    '<div class="kx-res-actions">' + actions + '</div></div>';
+            }).join('');
+        }
+        window.savePageFromResult = async function(btn) {
+            const sec = btn.getAttribute('data-sec');
+            const sel = btn.parentNode.querySelector('.kx-charsel');
+            const sheetId = sel ? sel.value : null;
+            if (!sheetId) return;
+            const s = (_utkIndex || []).find(x => x.id === sec);
+            const { error } = await window._sb.from('saved_pages').upsert(
+                { user_id: window._userId, sheet_id: sheetId, section_id: sec, title: s ? s.title : sec },
+                { onConflict: 'sheet_id,section_id' });
+            if (error) { alert('Mentés sikertelen: ' + error.message); return; }
+            btn.textContent = '✓ Mentve'; btn.disabled = true;
+            await loadSavedPages(); renderSavedPages();
+        };
+        window.openKodexSearch = async function() {
+            document.getElementById('kodexSearchModal').style.display = 'flex';
+            const input = document.getElementById('kxInput'); input.value = ''; setTimeout(() => input.focus(), 50);
+            document.getElementById('kxResults').innerHTML = '<div class="kx-empty">Kódex betöltése…</div>';
+            try { await loadUtkData(); document.getElementById('kxResults').innerHTML = '<div class="kx-empty">Írj be egy keresőszót.</div>'; }
+            catch (e) { document.getElementById('kxResults').innerHTML = '<div class="kx-empty">⚠️ Nem sikerült betölteni a Kódexet.</div>'; }
+        };
+        window.closeKodexSearch = function() { document.getElementById('kodexSearchModal').style.display = 'none'; };
+        window.openKodexViewer = function(sectionId) {
+            const s = (_utkIndex || []).find(x => x.id === sectionId);
+            document.getElementById('kvTitle').textContent = '📖 ' + (s ? s.title : 'Kódex');
+            document.getElementById('kvOpenNew').href = 'kodex.html?section=' + encodeURIComponent(sectionId);
+            document.getElementById('kvFrame').src = 'kodex.html?section=' + encodeURIComponent(sectionId);
+            document.getElementById('kodexViewer').style.display = 'flex';
+        };
+        window.closeKodexViewer = function() {
+            document.getElementById('kodexViewer').style.display = 'none';
+            document.getElementById('kvFrame').src = 'about:blank';
+        };
+        (function initKxInput() {
+            const input = document.getElementById('kxInput'); if (!input) return;
+            let t = null;
+            input.addEventListener('input', () => { clearTimeout(t); t = setTimeout(() => renderKxResults(searchUtk(input.value)), 180); });
+            document.addEventListener('keydown', e => { if (e.key === 'Escape') { closeKodexSearch(); closeKodexViewer(); } });
+        })();
 
         /* ===== INLINE ADMIN SZERKESZTŐ MÓD =====
            Az admin az indexen szerkeszti a kampánynapló-bejegyzéseket (campaign_posts):

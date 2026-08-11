@@ -1368,7 +1368,11 @@ async function loadFullDatabase() {
         initSidebar();
         
         if (allSections && allSections.length > 0) {
-            currentSectionIndex = 0;
+            // Deep-link: ?section=<id> → rögtön arra a szekcióra ugrunk (a főoldali
+            // mentett-oldal csempék így nyitják meg a Kódexet a megfelelő résznél).
+            const wantedSection = new URLSearchParams(location.search).get('section');
+            const deepIdx = wantedSection ? allSections.findIndex(s => s.id === wantedSection) : -1;
+            currentSectionIndex = deepIdx >= 0 ? deepIdx : 0;
             renderSection(allSections[currentSectionIndex]);
         } else {
             contentArea.innerHTML = "<h3>⚠️Az adatbázis szerkezete üres. Futtasd le a compile_cache.py szkriptet!</h3>";
