@@ -241,6 +241,42 @@ const sb = supabase.createClient(
             display: grid; grid-template-columns: repeat(4, 1fr); gap: 0.5rem; margin-bottom: 0.5rem;
         }
 
+        /* ===== Élő csapat panel ===== */
+        .lp-empty { color: var(--text-muted); font-size: .88rem; padding: 1.2rem 0; text-align: center; font-style: italic; }
+        .lp-grid { display: flex; flex-wrap: wrap; gap: 1rem; }
+        .lp-card {
+            flex: 1 1 280px; min-width: 260px; max-width: 360px;
+            background: rgba(0,0,0,.18); border: 1px solid var(--border-color);
+            border-left: 3px solid var(--gold); border-radius: .75rem; padding: .8rem .9rem;
+        }
+        .lp-card.hench { border-left-color: #a855f7; margin: .55rem 0 0 1rem; padding: .55rem .7rem; background: rgba(168,85,247,.05); }
+        .lp-head { display: flex; align-items: center; gap: .5rem; margin-bottom: .55rem; }
+        .lp-name { font-family: 'Cinzel', serif; color: var(--text-main); font-size: .95rem; flex: 1; }
+        .lp-name.hench { font-size: .85rem; color: #d8b4fe; }
+        .lp-actions { display: flex; gap: .35rem; }
+        .lp-mini { padding: .15rem .45rem !important; font-size: .68rem !important; }
+        .lp-stat { margin-bottom: .5rem; }
+        .lp-stat:last-child { margin-bottom: 0; }
+        .lp-stat-top { display: flex; align-items: center; justify-content: space-between; font-size: .74rem; color: var(--text-muted); margin-bottom: .2rem; }
+        .lp-stat-top b { color: var(--text-main); font-weight: 600; }
+        .lp-barwrap { display: flex; align-items: center; gap: .4rem; }
+        .lp-bar { flex: 1; height: 9px; border-radius: 5px; background: rgba(255,255,255,.08); overflow: hidden; }
+        .lp-bar-fill { height: 100%; border-radius: 5px; transition: width .2s; }
+        .lp-bar-fill.hp { background: linear-gradient(90deg, #ef4444, #f87171); }
+        .lp-bar-fill.hp.low { background: linear-gradient(90deg, #dc2626, #ef4444); animation: lpPulse 1s infinite; }
+        .lp-bar-fill.pw { background: linear-gradient(90deg, #3b82f6, #60a5fa); }
+        @keyframes lpPulse { 0%,100% { opacity: 1; } 50% { opacity: .5; } }
+        .lp-adj { display: flex; gap: .2rem; }
+        .lp-adj button {
+            width: 22px; height: 22px; line-height: 1; padding: 0; border-radius: 5px;
+            border: 1px solid var(--border-color); background: rgba(255,255,255,.04);
+            color: var(--text-main); cursor: pointer; font-size: .8rem;
+        }
+        .lp-adj button:hover { border-color: var(--gold); color: var(--gold); }
+        .lp-nosess { font-size: .72rem; color: #f7b955; font-style: italic; }
+        .lp-bank { font-size: .72rem; color: var(--text-muted); margin-top: .5rem; }
+        .lp-bank b { color: var(--gold); font-weight: 500; }
+
         .km-input, .gen-select, .km-textarea {
             background: rgba(15, 23, 42, 0.72) !important;
             border: 1px solid var(--border-color) !important;
@@ -714,6 +750,25 @@ const sb = supabase.createClient(
         </div>
     </div>
 
+    <!-- ===== ÉLŐ CSAPAT (a kampány roster karaktereinek valós HP/kegy adata) ===== -->
+    <div class="km-panel" id="livePartyPanel" style="margin-bottom:1.5rem;">
+        <h3>🎭 Élő csapat <span id="liveCampName" style="color:var(--text-muted);font-size:.8rem;font-weight:normal;"></span>
+            <button class="km-btn" style="padding:.25rem .7rem;font-size:.75rem;" onclick="renderLiveParty()" title="Friss adatok lekérése">↻ Frissítés</button>
+        </h3>
+        <div id="livePartyList"></div>
+    </div>
+
+    <!-- ===== KARAKTERLAP-NÉZEGETŐ (inline, könnyű olvasáshoz) ===== -->
+    <div id="kmSheetViewer" style="display:none; position:fixed; inset:0; z-index:210; background:rgba(2,6,23,.9); backdrop-filter:blur(14px); -webkit-backdrop-filter:blur(14px);">
+        <div style="max-width:1000px; height:92vh; margin:2.5vh auto; display:flex; flex-direction:column; background:var(--bg-card); border:1px solid var(--border-color); border-radius:1rem; overflow:hidden;">
+            <div style="display:flex; align-items:center; justify-content:space-between; padding:.7rem 1rem; border-bottom:1px solid var(--border-color);">
+                <span id="kmSheetTitle" style="font-family:'Cinzel',serif; color:var(--gold); font-size:1rem;">📄 Karakterlap</span>
+                <button class="km-btn" style="border-color:rgba(239,68,68,.35); color:#f87171!important;" onclick="closeKmSheet()">✕ Bezárás</button>
+            </div>
+            <iframe id="kmSheetFrame" src="about:blank" style="flex:1; width:100%; border:0; background:#0b0e14;"></iframe>
+        </div>
+    </div>
+
     <div class="dashboard-grid">
         <div class="km-panel">
             <h3>⚔️ Harci Sorrend & Csoportok</h3>
@@ -1134,7 +1189,7 @@ const sb = supabase.createClient(
         };
 
         window.onCampaignSelected = async function(id) {
-            if (!id) { currentCampaignId = null; updateCampaignFields(null); return; }
+            if (!id) { currentCampaignId = null; updateCampaignFields(null); renderLiveParty(); return; }
             const sb = window._sb; if (!sb) return;
             const { data, error } = await sb.from('campaigns').select('*').eq('id', id).single();
             if (error) { alert('Kampány betöltése sikertelen: ' + error.message); return; }
@@ -1142,8 +1197,144 @@ const sb = supabase.createClient(
             applyCampaignState(data.state);
             updateCampaignFields(data);
             renderCampaignSections();
+            renderLiveParty();
             // Az URL is kövesse, hogy megosztható/könyvjelzőzhető legyen.
             history.replaceState(null, '', 'km_pult.html?campaign=' + data.id);
+        };
+
+        /* ============================================================
+           ÉLŐ CSAPAT — a kampány roster karaktereinek VALÓS session_states
+           adata (HP/kegy/bank). A KM olvassa+írja (admin RLS: session_states_km.sql).
+           EGY forrás: amit itt állítasz, a játékos a feeden látja.
+           ============================================================ */
+        let _liveParty = [];               // [{ r:{id,name,henchmen}, sess:{...}|null }]
+        const _liveSaveTimers = {};
+
+        window.renderLiveParty = async function() {
+            const host = document.getElementById('livePartyList');
+            const nameEl = document.getElementById('liveCampName');
+            if (!host) return;
+            if (!currentCampaignId) {
+                host.innerHTML = '<div class="lp-empty">Válassz kampányt a bal oldalon az élő csapat megjelenítéséhez.</div>';
+                if (nameEl) nameEl.textContent = '';
+                return;
+            }
+            const { data: camp } = await window._sb.from('campaigns').select('name, roster').eq('id', currentCampaignId).single();
+            const roster = Array.isArray(camp && camp.roster) ? camp.roster : [];
+            if (nameEl) nameEl.textContent = camp ? '— ' + camp.name : '';
+            if (!roster.length) {
+                host.innerHTML = '<div class="lp-empty">Nincs csapattag. Add hozzá a „Tartalom → 🎭 Csapat" szekcióban.</div>';
+                return;
+            }
+            host.innerHTML = '<div class="lp-empty">Betöltés…</div>';
+            // session_states karakterenként (a stub és a valós Supabase is támogatja az eq+maybeSingle-t)
+            const rows = [];
+            for (const r of roster) {
+                let sess = null;
+                try {
+                    const { data } = await window._sb.from('session_states').select('*').eq('sheet_id', r.id);
+                    sess = (Array.isArray(data) ? data[0] : data) || null;
+                } catch (e) { /* RLS/tábla hiány → nincs session */ }
+                rows.push({ r, sess });
+            }
+            _liveParty = rows;
+            host.innerHTML = '<div class="lp-grid">' + rows.map((row, i) => liveCardHtml(row, i)).join('') + '</div>';
+        };
+
+        function lpBar(cur, max, cls) {
+            cur = Number(cur) || 0; max = Number(max) || 0;
+            const pct = max > 0 ? Math.max(0, Math.min(100, (cur / max) * 100)) : 0;
+            const low = cls === 'hp' && max > 0 && cur / max < 0.3 ? ' low' : '';
+            return '<div class="lp-bar"><div class="lp-bar-fill ' + cls + low + '" style="width:' + pct.toFixed(0) + '%"></div></div>';
+        }
+
+        // Egy stat sor (+/- gombokkal). who: 'char' vagy csatlós-index; stat: 'hp'|'power'.
+        function lpStatRow(i, who, stat, label, cur, max, cls) {
+            const maxTxt = max > 0 ? ' / ' + max : '';
+            return '<div class="lp-stat"><div class="lp-stat-top"><span>' + label + '</span><b>' + (Number(cur) || 0) + maxTxt + '</b></div>' +
+                '<div class="lp-barwrap">' + lpBar(cur, max, cls) +
+                '<div class="lp-adj">' +
+                    '<button onclick="liveAdjust(' + i + ',\'' + who + '\',\'' + stat + '\',-1)">−</button>' +
+                    '<button onclick="liveAdjust(' + i + ',\'' + who + '\',\'' + stat + '\',1)">＋</button>' +
+                '</div></div></div>';
+        }
+
+        function powerLabel(cd) {
+            const t = (cd && cd.powerType) || 'kegypont';
+            return t === 'mana' ? 'Mana' : (t === 'sfe' ? 'Sfé' : 'Kegypont');
+        }
+
+        function liveCardHtml(row, i) {
+            const r = row.r, sess = row.sess;
+            const openBtns = '<div class="lp-actions">' +
+                '<button class="km-btn lp-mini" onclick="openKmSheet(\'' + r.id + '\',&quot;' + String(r.name || '').replace(/"/g,'') + '&quot;)" title="Karakterlap megnyitása">📄 Lap</button>' +
+                '</div>';
+            if (!sess || !sess.char_data) {
+                return '<div class="lp-card"><div class="lp-head"><span class="lp-name">' + esc(r.name || 'Névtelen') + '</span>' + openBtns + '</div>' +
+                    '<div class="lp-nosess">Nincs élő session — a játékos nyissa meg a Karakter Segédben.</div></div>';
+            }
+            const cd = sess.char_data;
+            let html = '<div class="lp-card"><div class="lp-head"><span class="lp-name">' + esc(r.name || 'Névtelen') + '</span>' + openBtns + '</div>';
+            html += lpStatRow(i, 'char', 'hp', '❤️ Életerő', cd.hp, cd.maxHp, 'hp');
+            html += lpStatRow(i, 'char', 'power', '✨ ' + powerLabel(cd), cd.power, cd.maxPower, 'pw');
+            const bank = sess.bank_money;
+            if (bank && typeof bank === 'object') {
+                html += '<div class="lp-bank">🏦 Bank: <b>' + (bank.gold || 0) + ' A</b> · ' + (bank.silver || 0) + ' E · ' + (bank.copper || 0) + ' R</div>';
+            }
+            // Csatlósok (a szülő session henchmen tömbjéből)
+            const hench = Array.isArray(sess.henchmen) ? sess.henchmen : [];
+            hench.forEach((h, hi) => {
+                html += '<div class="lp-card hench"><div class="lp-head"><span class="lp-name hench">🔗 ' + esc(h.name || 'Csatlós') + '</span></div>';
+                html += lpStatRow(i, 'h' + hi, 'hp', '❤️ Életerő', h.hp, h.maxHp, 'hp');
+                html += lpStatRow(i, 'h' + hi, 'power', '✨ ' + powerLabel(h), h.power, h.maxPower, 'pw');
+                html += '</div>';
+            });
+            html += '</div>';
+            return html;
+        }
+
+        // +/- egy statra. Írja a memóriabeli _liveParty-t, frissít, és debounce-olva ment.
+        window.liveAdjust = function(i, who, stat, delta) {
+            const row = _liveParty[i]; if (!row || !row.sess) return;
+            let target;
+            if (who === 'char') target = row.sess.char_data;
+            else { const hi = parseInt(who.slice(1)); target = (row.sess.henchmen || [])[hi]; }
+            if (!target) return;
+            const maxKey = stat === 'hp' ? 'maxHp' : 'maxPower';
+            const max = Number(target[maxKey]) || 0;
+            let v = (Number(target[stat]) || 0) + delta;
+            if (v < 0) v = 0;
+            if (max > 0 && v > max) v = max;
+            target[stat] = v;
+            // Csak az érintett kártyát rajzoljuk újra
+            const host = document.getElementById('livePartyList');
+            const cards = host.querySelectorAll('.lp-grid > .lp-card');
+            if (cards[i]) cards[i].outerHTML = liveCardHtml(row, i);
+            scheduleLiveSave(i);
+        };
+
+        function scheduleLiveSave(i) {
+            clearTimeout(_liveSaveTimers[i]);
+            _liveSaveTimers[i] = setTimeout(() => saveLiveSession(i), 500);
+        }
+        async function saveLiveSession(i) {
+            const row = _liveParty[i]; if (!row || !row.sess) return;
+            const patch = { char_data: row.sess.char_data, henchmen: row.sess.henchmen };
+            try {
+                if (row.sess.id) await window._sb.from('session_states').update(patch).eq('id', row.sess.id);
+                else await window._sb.from('session_states').update(patch).eq('sheet_id', row.r.id);
+            } catch (e) { console.warn('Élő mentés hiba:', e); }
+        }
+
+        window.openKmSheet = function(sheetId, title) {
+            const frame = document.getElementById('kmSheetFrame');
+            document.getElementById('kmSheetTitle').textContent = '📄 ' + (title || 'Karakterlap');
+            frame.src = 'char.html?id=' + encodeURIComponent(sheetId);
+            document.getElementById('kmSheetViewer').style.display = 'block';
+        };
+        window.closeKmSheet = function() {
+            document.getElementById('kmSheetViewer').style.display = 'none';
+            document.getElementById('kmSheetFrame').src = 'about:blank';
         };
 
         function updateCampaignFields(c) {
@@ -2329,6 +2520,7 @@ const sb = supabase.createClient(
                 } else {
                     await migrateLegacyNote();
                     loadJournal();                      // kampányfüggetlen napló
+                    renderLiveParty();                  // üres-állapot ("válassz kampányt")
                 }
             };
             if (window._userId) start();
