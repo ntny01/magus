@@ -995,6 +995,7 @@ const sb = supabase.createClient(
             </div>
 
             <div id="campaignMembers"></div>
+            <div id="campaignRoster"></div>
             <div id="campaignSections"></div>
         </div>
     </div>
@@ -1293,8 +1294,91 @@ const sb = supabase.createClient(
             renderCampaignMembers();
         };
 
+        /* ---- Kampány-csapat (roster): játékos-karakterek + csatlósaik NEVEI ----
+           A feed tetején állandó fejlécként jelenik meg. CSAK neveket tárolunk
+           (campaigns.roster jsonb) → nincs kereszt-user karakterlap-olvasás. */
+        window.renderCampaignRoster = async function() {
+            const host = document.getElementById('campaignRoster');
+            if (!host) return;
+            if (!currentCampaignId) { host.innerHTML = ''; return; }
+
+            const [{ data: camp }, { data: chars }] = await Promise.all([
+                window._sb.from('campaigns').select('roster').eq('id', currentCampaignId).single(),
+                window._sb.from('character_sheets').select('id,name,parent_id')
+                    .eq('is_template', false).order('name')
+            ]);
+            const roster = Array.isArray(camp && camp.roster) ? camp.roster : [];
+            const all = chars || [];
+            const inRoster = new Set(roster.map(r => r.id));
+            // Választható: gazda-karakterek (parent_id null), amik még nincsenek a csapatban.
+            const free = all.filter(c => !c.parent_id && !inRoster.has(c.id));
+
+            const list = roster.length
+                ? roster.map(r => {
+                    const hen = Array.isArray(r.henchmen) && r.henchmen.length
+                        ? '<span style="color:var(--text-muted);font-size:.75rem;"> — 🔗 ' + r.henchmen.map(esc).join(', ') + '</span>' : '';
+                    return '<div style="display:flex;align-items:center;gap:.5rem;padding:.4rem .55rem;background:rgba(255,255,255,.03);border-radius:.45rem;margin-bottom:.35rem;">' +
+                        '<span style="flex:1;font-size:.85rem;color:var(--text-main);">🎭 ' + esc(r.name || '(névtelen)') + hen + '</span>' +
+                        '<button class="km-btn" style="padding:.2rem .5rem;font-size:.72rem;border-color:rgba(239,68,68,.3);color:#f87171!important;" ' +
+                            'onclick="removeRosterChar(\'' + r.id + '\')">✕</button>' +
+                    '</div>';
+                  }).join('')
+                : '<div style="font-size:.8rem;color:var(--text-muted);padding:.3rem 0 .6rem;">Még nincs csapattag.</div>';
+
+            const picker = free.length
+                ? '<div style="display:flex;gap:.5rem;margin-top:.6rem;">' +
+                    '<select class="km-input" id="pick_roster" style="flex:1;font-size:.8rem;padding:.3rem .5rem;">' +
+                      free.map(c => '<option value="' + c.id + '">' + esc(c.name || '(névtelen)') + '</option>').join('') +
+                    '</select>' +
+                    '<button class="km-btn" style="font-size:.78rem;" onclick="addRosterChar()">＋ Hozzáadás</button>' +
+                  '</div>'
+                : '<div style="font-size:.75rem;color:var(--text-muted);margin-top:.5rem;">Nincs több hozzáadható karakter.</div>';
+
+            host.innerHTML = '<div style="background:var(--bg-card);border:1px solid var(--border-color);border-radius:.75rem;padding:1rem;margin-bottom:1rem;">' +
+                '<div style="font-family:\'Cinzel\',serif;color:var(--gold);font-size:.95rem;margin-bottom:.6rem;">🎭 Csapat ' +
+                    '<span style="color:var(--text-muted);font-size:.75rem;">(' + roster.length + ')</span></div>' +
+                '<div style="font-size:.72rem;color:var(--text-muted);margin-bottom:.5rem;">A játékos-karakterek (és csatlósaik) NEVEI a kampánynapló tetején állandó fejlécként jelennek meg. Csak nevek — stat/pénz/felszerelés nem.</div>' +
+                list + picker + '</div>';
+        };
+
+        async function saveRoster(roster) {
+            const { error } = await window._sb.from('campaigns')
+                .update({ roster: roster }).eq('id', currentCampaignId);
+            if (error) { alert('Csapat mentése sikertelen: ' + error.message); return false; }
+            const c = campaignCache.find(x => x.id === currentCampaignId);
+            if (c) c.roster = roster;
+            return true;
+        }
+
+        window.addRosterChar = async function() {
+            const sel = document.getElementById('pick_roster');
+            if (!sel || !sel.value || !currentCampaignId) return;
+            const { data: camp } = await window._sb.from('campaigns').select('roster').eq('id', currentCampaignId).single();
+            const roster = Array.isArray(camp && camp.roster) ? camp.roster.slice() : [];
+            if (roster.some(r => r.id === sel.value)) return;
+            // A karakter neve + csatlósai (parent_id = char.id) NEVEI — snapshot.
+            const [{ data: charRow }, { data: hench }] = await Promise.all([
+                window._sb.from('character_sheets').select('id,name').eq('id', sel.value).single(),
+                window._sb.from('character_sheets').select('name').eq('parent_id', sel.value).eq('is_template', false)
+            ]);
+            if (!charRow) return;
+            roster.push({
+                id: charRow.id,
+                name: charRow.name || '(névtelen)',
+                henchmen: (hench || []).map(h => h.name || '(névtelen csatlós)')
+            });
+            if (await saveRoster(roster)) renderCampaignRoster();
+        };
+
+        window.removeRosterChar = async function(charId) {
+            const { data: camp } = await window._sb.from('campaigns').select('roster').eq('id', currentCampaignId).single();
+            const roster = (Array.isArray(camp && camp.roster) ? camp.roster : []).filter(r => r.id !== charId);
+            if (await saveRoster(roster)) renderCampaignRoster();
+        };
+
         window.renderCampaignSections = async function() {
             renderCampaignMembers();
+            renderCampaignRoster();
             const host = document.getElementById('campaignSections');
             if (!currentCampaignId) {
                 host.innerHTML = '<div style="text-align:center;color:var(--text-muted);padding:2.5rem 0;font-size:.9rem;">' +

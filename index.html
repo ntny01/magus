@@ -359,6 +359,23 @@
         .cc-bank { font-size: .74rem; color: var(--muted); }
         .cc-bank b { color: var(--gold); font-weight: 500; }
 
+        /* Csapat-fejléc (roster) — a kampánynapló tetején, állandó */
+        .cr-header {
+            background: linear-gradient(135deg, rgba(212,175,55,.09), rgba(212,175,55,.02));
+            border: 1px solid var(--border); border-left: 3px solid var(--gold);
+            border-radius: 14px; padding: .85rem 1.05rem; margin-bottom: 1rem;
+        }
+        .cr-title { font-family: 'Cinzel', serif; color: var(--gold); font-size: 1rem; margin-bottom: .7rem; }
+        .cr-list { display: flex; flex-wrap: wrap; gap: .6rem; }
+        .cr-member {
+            background: rgba(255,255,255,.03); border: 1px solid var(--border);
+            border-radius: 10px; padding: .5rem .7rem; min-width: 150px;
+        }
+        .cr-name { font-family: 'Cinzel', serif; font-size: .9rem; color: var(--text); }
+        .cr-hench { margin-top: .35rem; display: flex; flex-wrap: wrap; gap: .3rem; }
+        .cr-hchip { font-size: .72rem; color: var(--muted); background: rgba(168,85,247,.12);
+            border: 1px solid rgba(168,85,247,.3); border-radius: 999px; padding: .1rem .45rem; }
+
         /* Felszerelés-csempe + lebegő buborék (popover) — a feed nem nyúlik meg */
         .char-card.equip {
             border-left-color: #34d399; width: 260px; align-self: flex-start;   /* mint a karakter-kártya */
@@ -377,8 +394,8 @@
         .char-card.equip.open .eq-caret { transform: rotate(180deg); }
         .char-card.equip .eq-count { color: var(--muted); font-size: .82rem; }
         .eq-pop {
-            position: absolute; top: calc(100% + 6px); left: 0; z-index: 60;
-            min-width: 200px; max-width: 260px; max-height: 280px; overflow-y: auto;
+            position: absolute; top: calc(100% + 6px); left: -3px; right: -1px; z-index: 60;
+            max-height: 300px; overflow-y: auto;   /* a csempe TELJES szélessége (outer élek) */
             background: var(--card-solid); border: 1px solid rgba(52,211,153,.5); border-radius: 12px;
             box-shadow: 0 14px 34px rgba(0,0,0,.55); padding: .7rem .8rem;
             opacity: 0; transform: translateY(-6px) scale(.98); pointer-events: none;
@@ -639,6 +656,7 @@
                 <span class="eb-hint">A csempéket a bejegyzésen belül rendezed. Csak a kampány tagjai látják a publikáltat.</span>
             </div>
 
+            <div id="campaignRoster"></div>
             <div class="section-title" id="postFeedTitle" style="display:none;">📢 Kampánynapló</div>
             <div id="postFeed"></div>
 
@@ -980,6 +998,7 @@
             resolveActiveChar();
             renderFeedControls();
             renderActiveChar();
+            renderCampaignRoster();
             renderCampaignPosts();
         };
 
@@ -1036,6 +1055,26 @@
                 default: return '<div class="pt pt-full post-block">' + (t ? '<div class="pb-title">' + t + '</div>' : '') + (body ? '<div class="pb-body">' + body + '</div>' : '') + '</div>';
             }
         }
+        // Csapat-fejléc: a kampány játékos-karaktereinek + csatlósaiknak NEVEI.
+        // Állandó — a kampánynapló TETEJÉN, a posztok fölött; publikálás nem előzi be.
+        // Csak nevek (campaigns.roster snapshot), semmi stat/pénz/felszerelés.
+        function renderCampaignRoster() {
+            const host = document.getElementById('campaignRoster');
+            if (!host) return;
+            host.innerHTML = '';
+            const camp = FEED.campaigns.find(c => c.id === FEED.campaignId);
+            const roster = camp && Array.isArray(camp.roster) ? camp.roster : [];
+            if (!roster.length) return;
+            const cards = roster.map(r => {
+                const hen = Array.isArray(r.henchmen) && r.henchmen.length
+                    ? '<div class="cr-hench">' + r.henchmen.map(h => '<span class="cr-hchip">🔗 ' + esc(h) + '</span>').join('') + '</div>' : '';
+                return '<div class="cr-member"><div class="cr-name">🎭 ' + esc(r.name || 'Névtelen') + '</div>' + hen + '</div>';
+            }).join('');
+            host.innerHTML = '<div class="cr-header">' +
+                '<div class="cr-title">🛡️ A Csapat' + (camp && camp.name ? ' — ' + esc(camp.name) : '') + '</div>' +
+                '<div class="cr-list">' + cards + '</div></div>';
+        }
+
         async function renderCampaignPosts() {
             const titleEl = document.getElementById('postFeedTitle');
             const host = document.getElementById('postFeed');
@@ -1211,13 +1250,26 @@
             const memIds = new Set((memRes.data || []).map(m => m.campaign_id));
             const items = itemRes.data || [];
             FEED.campaigns = (campRes.data || []).filter(c => memIds.has(c.id)).map(c => ({
-                id: c.id, name: c.name, locked: !!c.locked_characters,
+                id: c.id, name: c.name, locked: !!c.locked_characters, roster: [],
                 charIds: new Set(items.filter(i => i.campaign_id === c.id && i.item_type === 'character').map(i => i.item_id)),
                 tplIds:  new Set(items.filter(i => i.campaign_id === c.id && i.item_type === 'template').map(i => i.item_id))
             }));
 
             FEED.sessById = {};
             (sessRes.data || []).forEach(s => { if (s.sheet_id) FEED.sessById[s.sheet_id] = s; });
+
+            // Csapat-fejléc (roster) — külön, HIBATŰRŐ lekérdezés: ha a campaign_roster.sql
+            // még nem futott, a hiányzó oszlop miatt itt hibázik, de a feed többi része él.
+            try {
+                if (FEED.campaigns.length) {
+                    const { data: rosterRows } = await sb.from('campaigns').select('id, roster')
+                        .in('id', FEED.campaigns.map(c => c.id));
+                    (rosterRows || []).forEach(r => {
+                        const c = FEED.campaigns.find(x => x.id === r.id);
+                        if (c) c.roster = Array.isArray(r.roster) ? r.roster : [];
+                    });
+                }
+            } catch (e) { /* oszlop még nincs → roster marad üres */ }
 
             const savedCamp = localStorage.getItem('magus_feed_campaign');
             FEED.campaignId = (savedCamp && FEED.campaigns.some(c => c.id === savedCamp)) ? savedCamp
@@ -1227,6 +1279,7 @@
             resolveActiveChar();
             renderFeedControls();
             renderActiveChar();
+            renderCampaignRoster();
             renderCampaignPosts();
         }
 
