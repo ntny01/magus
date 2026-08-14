@@ -860,11 +860,14 @@ const sb = supabase.createClient(
                             <option value="notes">Jegyzetek</option>
                             <option value="locations">Helyszínek</option>
                             <option value="npcs">Szereplők (NPC)</option>
-                            <option value="posts">📢 Feed-posztok</option>
                         </select>
                     </span>
+                    <button class="km-btn" style="padding:.25rem .7rem;font-size:.75rem;border-color:rgba(168,85,247,.4);color:#c084fc!important;" onclick="openFeedComposer()" title="A feed-posztokat az indexen, kontextusban szerkeszted (WYSIWYG). A helyszíneket/NPC-ket ott felfedheted.">📢 Feed-poszt ↗</button>
                     <button class="km-btn" style="padding:.25rem .7rem;font-size:.75rem;" onclick="openJournalEditor()">＋ Új</button>
                 </h3>
+                <div style="font-size:.72rem;color:var(--text-muted);margin:-.4rem 0 .6rem;border-left:2px solid rgba(168,85,247,.4);padding-left:.5rem;">
+                    A jegyzetek/helyszínek/NPC-k itt a KM privát referenciái. Amit a játékosok lássanak, azt a <b style="color:#c084fc;">📢 Feed-poszt</b> gombbal, az indexen szerkeszted — onnan felfedheted a helyszíneket/NPC-ket.
+                </div>
 
                 <!-- JEGYZET szerkesztő -->
                 <div id="noteEditor" class="journal-editor" style="display:none; background:rgba(0,0,0,.2); border:1px solid var(--border-color); border-radius:.6rem; padding:.7rem; margin-bottom:.75rem;">
@@ -1826,6 +1829,13 @@ const sb = supabase.createClient(
         /* =========================================================
            KAMPÁNYNAPLÓ — nézetváltó (Jegyzetek / Helyszínek / Szereplők)
            ========================================================= */
+        // Feed-poszt szerkesztése az INDEXEN (egy szerkesztő, kontextusban/WYSIWYG).
+        // Átadjuk a kampányt és a compose-jelzőt; az index edit-módban megnyitja a composert.
+        window.openFeedComposer = function() {
+            const u = 'index.html?compose=1' + (currentCampaignId ? '&campaign=' + encodeURIComponent(currentCampaignId) : '');
+            window.open(u, '_blank', 'noopener');
+        };
+
         let journalView = 'notes';
         window.switchJournalView = function(view) {
             journalView = view;

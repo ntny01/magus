@@ -680,6 +680,8 @@
                 <select class="cmp-sel" id="pullChar" onchange="pullTile('character', this)"><option value="">＋ Karakter…</option></select>
                 <select class="cmp-sel" id="pullBm" onchange="pullTile('battlemap', this)"><option value="">＋ Battlemap…</option></select>
                 <select class="cmp-sel" id="pullYm" onchange="pullTile('ynev_map', this)"><option value="">＋ Ynev térkép…</option></select>
+                <select class="cmp-sel" id="pullLoc" onchange="pullTile('location', this)"><option value="">🔓 Felfed helyszínt…</option></select>
+                <select class="cmp-sel" id="pullNpc" onchange="pullTile('npc', this)"><option value="">🔓 Felfed NPC-t…</option></select>
             </div>
             <div class="cmp-foot">
                 <label class="cmp-pub"><input type="checkbox" id="cmpPublished"> 📢 Közzététel a feeden</label>
@@ -1281,6 +1283,22 @@
             renderActiveChar();
             renderCampaignRoster();
             renderCampaignPosts();
+            handleComposeDeepLink();
+        }
+
+        // A KM Pult „📢 Feed-poszt ↗" gombja ide dob: ?campaign=<id>&compose=1.
+        // Egy szerkesztő van a posztokhoz — az indexes, kontextusban (WYSIWYG).
+        function handleComposeDeepLink() {
+            const p = new URLSearchParams(location.search);
+            const camp = p.get('campaign');
+            if (camp && FEED.campaigns.some(c => c.id === camp) && camp !== FEED.campaignId) {
+                onFeedCampaign(camp);
+            }
+            if (p.get('compose') === '1' && window._isAdmin) {
+                if (!_editMode) toggleEditMode();
+                openComposer();
+                history.replaceState(null, '', location.pathname);  // ne nyíljon újra frissítésnél
+            }
         }
 
         // Mentett UTK-oldalak (saved_pages) — karakterhez kötve. SQL nélkül üres marad.
@@ -1435,13 +1453,23 @@
         };
 
         async function loadComposerSources() {
-            const src = { chars: [], bms: [], yms: [] };
+            const src = { chars: [], bms: [], yms: [], locs: [], npcs: [] };
             window._cmpSrc = src;
             if (!FEED.campaignId) return;
             const { data: items } = await window._sb.from('campaign_items')
                 .select('item_type, item_id').eq('campaign_id', FEED.campaignId);
             const byType = { battlemap: [], ynev_map: [], character: [] };
             (items || []).forEach(i => { if (byType[i.item_type]) byType[i.item_type].push(i.item_id); });
+
+            // FELFEDÉS-HÍD: a KM privát jegyzeteiből (campaign_locations/npcs) snapshotot
+            // húzhat a publikált posztba. Egyirányú: privát → publikált, a KM döntésére.
+            try {
+                const [{ data: locs }, { data: npcs }] = await Promise.all([
+                    window._sb.from('campaign_locations').select('id,name,description').eq('campaign_id', FEED.campaignId),
+                    window._sb.from('campaign_npcs').select('id,name,features,description').eq('campaign_id', FEED.campaignId)
+                ]);
+                src.locs = locs || []; src.npcs = npcs || [];
+            } catch (e) { /* tábla/RLS hiány → üres felfedés-forrás */ }
 
             if (byType.battlemap.length) {
                 const { data } = await window._sb.from('battlemaps').select('id, name, snapshot_url, thumb, terrain_url').in('id', byType.battlemap);
@@ -1471,6 +1499,8 @@
             fill('pullChar', src.chars, '＋ Karakter…');
             fill('pullBm', src.bms, '＋ Battlemap…');
             fill('pullYm', src.yms, '＋ Ynev térkép…');
+            fill('pullLoc', src.locs, '🔓 Felfed helyszínt…');
+            fill('pullNpc', src.npcs, '🔓 Felfed NPC-t…');
         }
 
         window.openComposer = async function(post) {
@@ -1496,16 +1526,23 @@
         window.pullTile = function(kind, sel) {
             const id = sel.value; sel.value = '';
             if (!id) return;
-            const s = window._cmpSrc || { chars: [], bms: [], yms: [] };
+            const s = window._cmpSrc || { chars: [], bms: [], yms: [], locs: [], npcs: [] };
             if (kind === 'character') {
                 const c = s.chars.find(x => x.id === id); if (!c) return;
                 cmpBlocks.push({ _id: cmpId(), kind: 'character', title: c.name || '', henchmen: c.henchmen || [], body: '' });
             } else if (kind === 'battlemap') {
                 const b = s.bms.find(x => x.id === id); if (!b) return;
                 cmpBlocks.push({ _id: cmpId(), kind: 'battlemap', title: b.name || '', map_id: b.id, src: b.src, size: '1x1' });
-            } else {
+            } else if (kind === 'ynev_map') {
                 const y = s.yms.find(x => x.id === id); if (!y) return;
                 cmpBlocks.push({ _id: cmpId(), kind: 'ynev_map', title: y.name || '', map_id: y.id, src: y.src || null, size: '1x1' });
+            } else if (kind === 'location') {
+                const l = (s.locs || []).find(x => x.id === id); if (!l) return;
+                cmpBlocks.push({ _id: cmpId(), kind: 'location', title: l.name || '', body: l.description || '', ref_id: l.id });
+            } else if (kind === 'npc') {
+                const n = (s.npcs || []).find(x => x.id === id); if (!n) return;
+                const body = [n.features ? 'Ismertetőjelek: ' + n.features : '', n.description || ''].filter(Boolean).join('\n');
+                cmpBlocks.push({ _id: cmpId(), kind: 'npc', title: n.name || '', body: body, ref_id: n.id });
             }
             renderComposerTiles();
         };
@@ -1578,6 +1615,7 @@
                 if (b.map_id) o.map_id = b.map_id;
                 if (b.src) o.src = b.src;
                 if (b.crop) o.crop = b.crop;
+                if (b.ref_id) o.ref_id = b.ref_id;
                 if (Array.isArray(b.henchmen) && b.henchmen.length) o.henchmen = b.henchmen;
                 return o;
             }).filter(b => {
