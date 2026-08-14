@@ -362,7 +362,8 @@
         /* Felszerelés-csempe + lebegő buborék (popover) — a feed nem nyúlik meg */
         .char-card.equip {
             border-left-color: #34d399; width: 260px; align-self: flex-start;   /* mint a karakter-kártya */
-            position: relative; padding: 0 .75rem; height: 44px; display: flex; align-items: center;
+            position: relative; padding: 0 .75rem; height: 44px;
+            display: flex; flex-direction: row; align-items: center; justify-content: center;
             border-radius: 12px; gap: 0;
         }
         .char-card.equip { cursor: pointer; transition: border-color .15s, background .15s; }
