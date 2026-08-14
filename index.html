@@ -365,16 +365,61 @@
             border: 1px solid var(--border); border-left: 3px solid var(--gold);
             border-radius: 14px; padding: .85rem 1.05rem; margin-bottom: 1rem;
         }
-        .cr-title { font-family: 'Cinzel', serif; color: var(--gold); font-size: 1rem; margin-bottom: .7rem; }
-        .cr-list { display: flex; flex-wrap: wrap; gap: .6rem; }
+        .cr-top { display: flex; align-items: center; justify-content: space-between; gap: .6rem; margin-bottom: .7rem; }
+        .cr-title { font-family: 'Cinzel', serif; color: var(--gold); font-size: 1.15rem; }
+        .cr-details { background: rgba(212,175,55,.1); border: 1px solid var(--gold-soft); color: var(--gold);
+            border-radius: 8px; padding: .3rem .7rem; font-size: .78rem; cursor: pointer; white-space: nowrap; }
+        .cr-details:hover { background: rgba(212,175,55,.2); }
+        .cr-row { display: flex; align-items: flex-start; gap: .6rem; padding: .35rem 0; border-top: 1px solid rgba(255,255,255,.05); }
+        .cr-row:first-of-type { border-top: none; }
+        .cr-cat { flex: 0 0 118px; font-size: .78rem; color: var(--muted); padding-top: .25rem; }
+        .cr-items { flex: 1; display: flex; flex-wrap: wrap; gap: .4rem; align-items: center; }
         .cr-member {
             background: rgba(255,255,255,.03); border: 1px solid var(--border);
-            border-radius: 10px; padding: .5rem .7rem; min-width: 150px;
+            border-radius: 10px; padding: .4rem .6rem; min-width: 120px;
         }
-        .cr-name { font-family: 'Cinzel', serif; font-size: .9rem; color: var(--text); }
-        .cr-hench { margin-top: .35rem; display: flex; flex-wrap: wrap; gap: .3rem; }
+        .cr-name { font-family: 'Cinzel', serif; font-size: .88rem; color: var(--text); }
+        .cr-hench { margin-top: .3rem; display: flex; flex-wrap: wrap; gap: .3rem; }
         .cr-hchip { font-size: .72rem; color: var(--muted); background: rgba(168,85,247,.12);
             border: 1px solid rgba(168,85,247,.3); border-radius: 999px; padding: .1rem .45rem; }
+        .cr-empty { color: var(--muted); font-size: .82rem; opacity: .6; }
+        /* Szereplő/helyszín/infó chipek a fejlécben */
+        .cr-chip { display: inline-flex; align-items: center; gap: .35rem; font-size: .8rem; color: var(--text);
+            background: rgba(255,255,255,.04); border: 1px solid var(--border); border-radius: 999px;
+            padding: .22rem .6rem; cursor: pointer; transition: background .15s, border-color .15s; }
+        .cr-chip:hover { background: rgba(255,255,255,.09); border-color: var(--gold-soft); }
+        .cr-chip-npc { border-left: 3px solid #a855f7; }
+        .cr-chip-loc { border-left: 3px solid #60a5fa; }
+        .cr-chip-info { border-left: 3px solid #34d399; }
+        .cr-x { background: none; border: none; color: #f87171; cursor: pointer; font-size: .7rem; padding: 0 0 0 .1rem; line-height: 1; }
+        .cr-x:hover { color: #ef4444; }
+        .cr-add { background: rgba(212,175,55,.12); border: 1px dashed var(--gold-soft); color: var(--gold);
+            border-radius: 999px; width: 24px; height: 24px; cursor: pointer; font-size: .85rem; line-height: 1; }
+        .cr-add:hover { background: rgba(212,175,55,.25); }
+        /* Fejléc-modálok (szerkesztő + részletek) */
+        .cr-modal { position: fixed; inset: 0; z-index: 200; background: rgba(0,0,0,.7);
+            align-items: center; justify-content: center; padding: 1rem; }
+        .cr-modal-box { background: var(--card-solid); border: 1px solid var(--border); border-radius: 14px;
+            width: 100%; max-width: 460px; padding: 1.1rem; box-shadow: 0 20px 50px rgba(0,0,0,.6);
+            display: flex; flex-direction: column; gap: .7rem; }
+        .cr-details-box { max-width: 620px; max-height: 84vh; }
+        .cr-modal-head { display: flex; align-items: center; justify-content: space-between;
+            font-family: 'Cinzel', serif; color: var(--gold); font-size: 1.05rem; }
+        .cr-modal-x { background: none; border: none; color: var(--muted); cursor: pointer; font-size: 1.1rem; }
+        .cr-modal-box input, .cr-modal-box textarea {
+            width: 100%; background: rgba(0,0,0,.3); border: 1px solid var(--border); border-radius: 8px;
+            color: var(--text); padding: .55rem .7rem; font-size: .88rem; font-family: inherit; }
+        .cr-modal-box textarea { min-height: 90px; resize: vertical; }
+        .cr-modal-foot { display: flex; justify-content: flex-end; gap: .5rem; }
+        .cd-body-scroll { overflow-y: auto; max-height: 68vh; padding-right: .3rem; }
+        .cd-sect { margin-bottom: 1rem; }
+        .cd-sect-title { font-family: 'Cinzel', serif; color: var(--gold); font-size: .92rem; margin-bottom: .5rem;
+            border-bottom: 1px solid var(--border); padding-bottom: .3rem; }
+        .cd-item { background: rgba(255,255,255,.03); border: 1px solid var(--border); border-radius: 10px;
+            padding: .6rem .75rem; margin-bottom: .5rem; }
+        .cd-name { font-family: 'Cinzel', serif; color: var(--text); font-size: .9rem; margin-bottom: .2rem; }
+        .cd-feat { font-size: .75rem; color: #c084fc; margin-bottom: .25rem; }
+        .cd-body { font-size: .82rem; color: var(--muted); white-space: pre-wrap; }
 
         /* Felszerelés-csempe + lebegő buborék (popover) — a feed nem nyúlik meg */
         .char-card.equip {
@@ -657,6 +702,31 @@
             </div>
 
             <div id="campaignRoster"></div>
+
+            <!-- Kampány-fejléc: elem-szerkesztő (KM) -->
+            <div id="headerEditor" class="cr-modal" style="display:none;">
+                <div class="cr-modal-box">
+                    <div class="cr-modal-head"><span id="hdrEditTitle">Új</span>
+                        <button class="cr-modal-x" onclick="closeHeaderEditor()">✕</button></div>
+                    <input type="text" id="hdrEditName" placeholder="Név">
+                    <div id="hdrEditFeatRow" style="display:none;"><input type="text" id="hdrEditFeat" placeholder="Ismertetőjelek (pl. sebhely, sánta)"></div>
+                    <textarea id="hdrEditBody" placeholder="Leírás…"></textarea>
+                    <div class="cr-modal-foot">
+                        <button class="eb-btn" onclick="closeHeaderEditor()">Mégse</button>
+                        <button class="eb-btn primary" onclick="saveHeaderItem()">💾 Mentés</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Kampány-fejléc: Részletek (olvasó lista) -->
+            <div id="campaignDetails" class="cr-modal" style="display:none;">
+                <div class="cr-modal-box cr-details-box">
+                    <div class="cr-modal-head"><span id="cdTitle">📖 Kampány</span>
+                        <button class="cr-modal-x" onclick="closeCampaignDetails()">✕</button></div>
+                    <div id="cdBody" class="cd-body-scroll"></div>
+                </div>
+            </div>
+
             <div class="section-title" id="postFeedTitle" style="display:none;">📢 Kampánynapló</div>
             <div id="postFeed"></div>
 
@@ -1057,25 +1127,154 @@
                 default: return '<div class="pt pt-full post-block">' + (t ? '<div class="pb-title">' + t + '</div>' : '') + (body ? '<div class="pb-body">' + body + '</div>' : '') + '</div>';
             }
         }
-        // Csapat-fejléc: a kampány játékos-karaktereinek + csatlósaiknak NEVEI.
-        // Állandó — a kampánynapló TETEJÉN, a posztok fölött; publikálás nem előzi be.
-        // Csak nevek (campaigns.roster snapshot), semmi stat/pénz/felszerelés.
-        function renderCampaignRoster() {
+        // KAMPÁNY-FEJLÉC: a kampánynapló TETEJÉN, állandó. Tartalma:
+        //  🛡️ Csapat (roster-snapshot nevek + csatlós), 🌍 Világ szereplői (published
+        //  campaign_npcs), 📍 Helyszínek (published campaign_locations), 📌 Infók
+        //  (campaigns.header_infos). A KM szerkesztő módban helyben ír/töröl.
+        //  A csempék kattintásra a Részletek nézetben nyílnak (leírásokkal).
+        async function renderCampaignRoster() {
             const host = document.getElementById('campaignRoster');
             if (!host) return;
-            host.innerHTML = '';
             const camp = FEED.campaigns.find(c => c.id === FEED.campaignId);
-            const roster = camp && Array.isArray(camp.roster) ? camp.roster : [];
-            if (!roster.length) return;
-            const cards = roster.map(r => {
-                const hen = Array.isArray(r.henchmen) && r.henchmen.length
+            if (!camp) { host.innerHTML = ''; return; }
+            const roster = Array.isArray(camp.roster) ? camp.roster : [];
+
+            // Ismert szereplők/helyszínek (published) + infók — egyenként HIBATŰRŐ.
+            const sel = async (fn) => { try { const { data } = await fn(); return data || []; } catch (e) { return []; } };
+            const npcs = await sel(() => window._sb.from('campaign_npcs').select('id,name,description,features').eq('campaign_id', camp.id).eq('published', true).order('name'));
+            const locs = await sel(() => window._sb.from('campaign_locations').select('id,name,description').eq('campaign_id', camp.id).eq('published', true).order('name'));
+            const campRow = await sel(() => window._sb.from('campaigns').select('header_infos').eq('id', camp.id));
+            const infos = (campRow[0] && Array.isArray(campRow[0].header_infos)) ? campRow[0].header_infos : (Array.isArray(camp.header_infos) ? camp.header_infos : []);
+            FEED.headerNpcs = npcs; FEED.headerLocs = locs; FEED.headerInfos = infos; camp.header_infos = infos;
+
+            const editing = _editMode && window._isAdmin;
+            if (!roster.length && !npcs.length && !locs.length && !infos.length && !editing) { host.innerHTML = ''; return; }
+
+            const party = roster.map(r => {
+                const hen = (Array.isArray(r.henchmen) && r.henchmen.length)
                     ? '<div class="cr-hench">' + r.henchmen.map(h => '<span class="cr-hchip">🔗 ' + esc(h) + '</span>').join('') + '</div>' : '';
                 return '<div class="cr-member"><div class="cr-name">🎭 ' + esc(r.name || 'Névtelen') + '</div>' + hen + '</div>';
-            }).join('');
+            }).join('') || '<span class="cr-empty">—</span>';
+
+            const chipList = (arr, kind) => {
+                const chips = arr.map(x => {
+                    const rm = editing ? '<button class="cr-x" title="Törlés" onclick="event.stopPropagation();removeHeaderItem(\'' + kind + '\',\'' + x.id + '\')">✕</button>' : '';
+                    const act = editing ? 'editHeaderItem(\'' + kind + '\',\'' + x.id + '\')' : 'openCampaignDetails(\'' + kind + '\')';
+                    return '<span class="cr-chip cr-chip-' + kind + '" onclick="' + act + '">' + esc(x.name || '(névtelen)') + rm + '</span>';
+                }).join('');
+                const add = editing ? '<button class="cr-add" onclick="addHeaderItem(\'' + kind + '\')" title="Hozzáadás">＋</button>' : '';
+                return (chips || '<span class="cr-empty">—</span>') + add;
+            };
+            const infoChips = infos.map(x => {
+                const rm = editing ? '<button class="cr-x" onclick="event.stopPropagation();removeHeaderItem(\'info\',\'' + x.id + '\')">✕</button>' : '';
+                const act = editing ? 'editHeaderItem(\'info\',\'' + x.id + '\')' : 'openCampaignDetails(\'info\')';
+                return '<span class="cr-chip cr-chip-info" onclick="' + act + '">' + esc(x.title || 'Infó') + rm + '</span>';
+            }).join('') + (editing ? '<button class="cr-add" onclick="addHeaderItem(\'info\')" title="Hozzáadás">＋</button>' : '');
+
+            const detailsBtn = (npcs.length || locs.length || infos.length)
+                ? '<button class="cr-details" onclick="openCampaignDetails()">📖 Részletek</button>' : '';
+
             host.innerHTML = '<div class="cr-header">' +
-                '<div class="cr-title">🛡️ A Csapat' + (camp && camp.name ? ' — ' + esc(camp.name) : '') + '</div>' +
-                '<div class="cr-list">' + cards + '</div></div>';
+                '<div class="cr-top"><div class="cr-title">' + esc(camp.name || 'Kampány') + '</div>' + detailsBtn + '</div>' +
+                '<div class="cr-row"><span class="cr-cat">🛡️ Csapat</span><div class="cr-items">' + party + '</div></div>' +
+                '<div class="cr-row"><span class="cr-cat">🌍 Világ szereplői</span><div class="cr-items">' + chipList(npcs, 'npc') + '</div></div>' +
+                '<div class="cr-row"><span class="cr-cat">📍 Helyszínek</span><div class="cr-items">' + chipList(locs, 'loc') + '</div></div>' +
+                '<div class="cr-row"><span class="cr-cat">📌 Infók</span><div class="cr-items">' + (infoChips || '<span class="cr-empty">—</span>') + '</div></div>' +
+                '</div>';
         }
+
+        // ── Kampány-fejléc SZERKESZTÉS (csak KM, szerkesztő mód) ──
+        // kind: 'npc' (campaign_npcs) | 'loc' (campaign_locations) | 'info' (campaigns.header_infos)
+        let _hdrEdit = null;  // { kind, id|null }
+        window.addHeaderItem = function(kind) { openHeaderEditor(kind, null); };
+        window.editHeaderItem = function(kind, id) { openHeaderEditor(kind, id); };
+        function currentHeaderItem(kind, id) {
+            if (kind === 'npc') return (FEED.headerNpcs || []).find(x => x.id === id);
+            if (kind === 'loc') return (FEED.headerLocs || []).find(x => x.id === id);
+            return (FEED.headerInfos || []).find(x => x.id === id);
+        }
+        function openHeaderEditor(kind, id) {
+            _hdrEdit = { kind, id: id || null };
+            const item = id ? currentHeaderItem(kind, id) : null;
+            const labels = { npc: 'Világ szereplője', loc: 'Helyszín', info: 'Infó' };
+            document.getElementById('hdrEditTitle').textContent = (id ? 'Szerkesztés — ' : 'Új — ') + labels[kind];
+            document.getElementById('hdrEditName').value = item ? (kind === 'info' ? (item.title || '') : (item.name || '')) : '';
+            document.getElementById('hdrEditName').placeholder = kind === 'info' ? 'Infó címe' : 'Név';
+            document.getElementById('hdrEditBody').value = item ? (kind === 'info' ? (item.body || '') : (item.description || '')) : '';
+            document.getElementById('hdrEditFeatRow').style.display = kind === 'npc' ? 'block' : 'none';
+            document.getElementById('hdrEditFeat').value = (item && kind === 'npc') ? (item.features || '') : '';
+            document.getElementById('headerEditor').style.display = 'flex';
+        }
+        window.closeHeaderEditor = function() { document.getElementById('headerEditor').style.display = 'none'; _hdrEdit = null; };
+        window.saveHeaderItem = async function() {
+            if (!_hdrEdit) return;
+            const { kind, id } = _hdrEdit;
+            const name = document.getElementById('hdrEditName').value.trim();
+            const body = document.getElementById('hdrEditBody').value.trim();
+            const feat = document.getElementById('hdrEditFeat').value.trim();
+            if (!name) { alert('A név/cím nem lehet üres.'); return; }
+            const camp = FEED.campaigns.find(c => c.id === FEED.campaignId);
+            try {
+                if (kind === 'npc') {
+                    const row = { campaign_id: camp.id, name, description: body, features: feat, published: true, owner_id: window._userId };
+                    if (id) await window._sb.from('campaign_npcs').update(row).eq('id', id);
+                    else await window._sb.from('campaign_npcs').insert(row);
+                } else if (kind === 'loc') {
+                    const row = { campaign_id: camp.id, name, description: body, published: true, owner_id: window._userId };
+                    if (id) await window._sb.from('campaign_locations').update(row).eq('id', id);
+                    else await window._sb.from('campaign_locations').insert(row);
+                } else {
+                    const infos = Array.isArray(camp.header_infos) ? camp.header_infos.slice() : [];
+                    if (id) { const it = infos.find(x => x.id === id); if (it) { it.title = name; it.body = body; } }
+                    else infos.push({ id: 'inf_' + Math.random().toString(16).slice(2, 9), title: name, body });
+                    await window._sb.from('campaigns').update({ header_infos: infos }).eq('id', camp.id);
+                    camp.header_infos = infos;
+                }
+            } catch (e) { alert('Mentés sikertelen: ' + e.message); return; }
+            closeHeaderEditor();
+            renderCampaignRoster();
+        };
+        window.removeHeaderItem = async function(kind, id) {
+            if (!confirm('Biztosan törlöd?')) return;
+            const camp = FEED.campaigns.find(c => c.id === FEED.campaignId);
+            try {
+                if (kind === 'npc') await window._sb.from('campaign_npcs').delete().eq('id', id);
+                else if (kind === 'loc') await window._sb.from('campaign_locations').delete().eq('id', id);
+                else {
+                    const infos = (camp.header_infos || []).filter(x => x.id !== id);
+                    await window._sb.from('campaigns').update({ header_infos: infos }).eq('id', camp.id);
+                    camp.header_infos = infos;
+                }
+            } catch (e) { alert('Törlés sikertelen: ' + e.message); return; }
+            renderCampaignRoster();
+        };
+
+        // ── Részletek nézet (inline lista, leírásokkal) ──
+        window.openCampaignDetails = function(focus) {
+            const camp = FEED.campaigns.find(c => c.id === FEED.campaignId);
+            const npcs = FEED.headerNpcs || [], locs = FEED.headerLocs || [], infos = FEED.headerInfos || [];
+            const sect = (icon, title, items, render) => {
+                if (!items.length) return '';
+                return '<div class="cd-sect"><div class="cd-sect-title">' + icon + ' ' + title + '</div>' +
+                    items.map(render).join('') + '</div>';
+            };
+            let html = '';
+            html += sect('🌍', 'Világ szereplői', npcs, x =>
+                '<div class="cd-item"><div class="cd-name">' + esc(x.name || '') + '</div>' +
+                (x.features ? '<div class="cd-feat">Ismertetőjelek: ' + esc(x.features) + '</div>' : '') +
+                (x.description ? '<div class="cd-body">' + esc(x.description) + '</div>' : '') + '</div>');
+            html += sect('📍', 'Helyszínek', locs, x =>
+                '<div class="cd-item"><div class="cd-name">' + esc(x.name || '') + '</div>' +
+                (x.description ? '<div class="cd-body">' + esc(x.description) + '</div>' : '') + '</div>');
+            html += sect('📌', 'Infók', infos, x =>
+                '<div class="cd-item"><div class="cd-name">' + esc(x.title || '') + '</div>' +
+                (x.body ? '<div class="cd-body">' + esc(x.body) + '</div>' : '') + '</div>');
+            document.getElementById('cdTitle').textContent = '📖 ' + (camp ? camp.name : 'Kampány');
+            document.getElementById('cdBody').innerHTML = html || '<div class="cr-empty" style="padding:1rem;">Még nincs feljegyzett szereplő, helyszín vagy infó.</div>';
+            document.getElementById('campaignDetails').style.display = 'flex';
+            if (focus) { const el = document.querySelector('.cd-sect-title'); /* egyszerű: felülre görget */ document.getElementById('cdBody').scrollTop = 0; }
+        };
+        window.closeCampaignDetails = function() { document.getElementById('campaignDetails').style.display = 'none'; };
 
         async function renderCampaignPosts() {
             const titleEl = document.getElementById('postFeedTitle');
@@ -1449,6 +1648,7 @@
             document.getElementById('editorBar').style.display = _editMode ? 'flex' : 'none';
             const camp = FEED.campaigns.find(c => c.id === FEED.campaignId);
             document.getElementById('ebCampaign').textContent = camp ? camp.name : 'nincs kampány';
+            renderCampaignRoster();
             renderCampaignPosts();
         };
 
