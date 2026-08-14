@@ -365,8 +365,11 @@
             position: relative; padding: 0 .75rem; height: 44px; display: flex; align-items: center;
             border-radius: 12px; gap: 0;
         }
+        .char-card.equip { cursor: pointer; transition: border-color .15s, background .15s; }
+        .char-card.equip:hover { border-color: var(--gold-soft); background: rgba(52,211,153,.08); }
         .char-card.equip .eq-toggle {
-            cursor: pointer; display: flex; align-items: center; gap: .4rem; user-select: none;
+            cursor: pointer; display: flex; align-items: center; justify-content: center; gap: .4rem;
+            width: 100%; user-select: none;
             white-space: nowrap; font-family: 'Cinzel', serif; font-size: .9rem; color: #fff;
         }
         .char-card.equip .eq-caret { transition: transform .2s; font-size: .72rem; color: var(--muted); }
