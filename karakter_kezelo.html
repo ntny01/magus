@@ -1879,7 +1879,37 @@ const sb = supabase.createClient(
     setTimeout(() => el.style.opacity = '0', 1500)
   }
 
-  window.addEventListener('load', () => setTimeout(window.loadFromSupabase, 300))
+  // ── REALTIME: a KM (Élő csapat) módosításai azonnal látszanak itt is ──
+  // Csak a betöltött karakter session-jét frissíti, NEM az egész oldalt.
+  // Ha a user épp szerkeszt (_saveTimer aktív), kihagyjuk, hogy ne írjuk felül.
+  function subscribeKKSession() {
+    if (!window._sb || !window._sb.channel || window._kkChan) return;
+    window._kkChan = window._sb.channel('kk-session-sync')
+      .on('postgres_changes', { event: 'UPDATE', schema: 'public', table: 'session_states' }, payload => {
+        const row = payload.new;
+        if (!row || row.sheet_id !== window._currentKKSheetId) return;
+        if (typeof _saveTimer !== 'undefined' && _saveTimer) return; // a user épp szerkeszt
+        if (row.char_data) appState.charData = row.char_data;
+        if (row.bank_money) appState.bankMoney = row.bank_money;
+        if (Array.isArray(row.henchmen)) appState.henchmen = row.henchmen;
+        renderEverything();
+        showKKSyncHint();
+      }).subscribe();
+  }
+  function showKKSyncHint() {
+    let el = document.getElementById('kk-sync-hint');
+    if (!el) {
+      el = document.createElement('div');
+      el.id = 'kk-sync-hint';
+      el.textContent = '🔄 A KM frissítette az értékeidet';
+      el.style.cssText = 'position:fixed;bottom:1rem;left:1rem;background:rgba(168,85,247,.15);border:1px solid rgba(168,85,247,.4);color:#c084fc;font-size:.75rem;padding:.4rem .8rem;border-radius:.5rem;opacity:0;transition:opacity .4s;pointer-events:none;z-index:999;';
+      document.body.appendChild(el);
+    }
+    el.style.opacity = '1';
+    clearTimeout(el._t); el._t = setTimeout(() => el.style.opacity = '0', 2200);
+  }
+
+  window.addEventListener('load', () => setTimeout(() => { window.loadFromSupabase(); subscribeKKSession(); }, 300))
 </script>
 
 <div id="save-indicator" style="position:fixed;bottom:1rem;right:1rem;background:rgba(16,185,129,0.15);border:1px solid rgba(16,185,129,0.3);color:#34d399;font-size:.75rem;padding:.4rem .8rem;border-radius:.5rem;opacity:0;transition:opacity .5s;pointer-events:none;z-index:999;">✓ Mentve</div>

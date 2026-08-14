@@ -195,6 +195,9 @@
   <div class="topsep"></div>
   <button class="tbtn" onclick="openSaveDlg()">💾 Mentés</button>
   <button class="tbtn" onclick="openLoadDlg()">📂 Betöltés</button>
+  <button class="tbtn" onclick="exportSceneJson()" title="Jelenet mentése JSON-fájlba">⬇ JSON</button>
+  <button class="tbtn" onclick="document.getElementById('importJsonInput').click()" title="Jelenet betöltése JSON-fájlból">⬆ JSON</button>
+  <input type="file" id="importJsonInput" accept=".json" style="display:none" onchange="importSceneJson(event)">
   <button class="tbtn danger" onclick="clearScene()">🗑 Ürítés</button>
   <button class="tbtn" onclick="location.href='km_pult.html'">↩ KM Pult</button>
   <div class="spacer"></div>
@@ -1104,6 +1107,28 @@ function serialize(){ const items=[];
   const flat=document.createElement('canvas'); flat.width=WORLD; flat.height=WORLD;
   const fc=flat.getContext('2d'); fc.drawImage(terr,0,0); fc.drawImage(blend,0,0);
   return { version:3, bg:bgRect.fill(), grid:gridOn, terrain:flat.toDataURL('image/png'), items };
+}
+// Manuális JSON mentés/betöltés (a serialize/deserialize-t használja, mint a DB-út).
+function exportSceneJson(){
+  try {
+    const blob = new Blob([JSON.stringify(serialize())], { type:'application/json' });
+    const a = document.createElement('a');
+    a.href = URL.createObjectURL(blob);
+    a.download = 'battlemap_' + new Date().toISOString().slice(0,10) + '.json';
+    a.click(); setTimeout(()=>URL.revokeObjectURL(a.href), 1000);
+  } catch(e){ alert('Mentés sikertelen: ' + e.message); }
+}
+function importSceneJson(e){
+  const file = e.target.files && e.target.files[0]; if(!file) return;
+  const r = new FileReader();
+  r.onload = ev => {
+    try {
+      const scene = JSON.parse(ev.target.result);
+      if(!scene || !Array.isArray(scene.items)) throw new Error('Nem battlemap-JSON (hiányzik az items).');
+      deserialize(scene); mainLayer.batchDraw(); if(typeof updateCount==='function') updateCount();
+    } catch(err){ alert('Betöltés sikertelen: ' + err.message); }
+  };
+  r.readAsText(file); e.target.value='';
 }
 function deserialize(scene){ mainLayer.destroyChildren(); mainLayer.add(tr); select(null);
   bgRect.fill(scene.bg||'#3f6b3a'); bgLayer.batchDraw();

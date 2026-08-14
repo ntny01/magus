@@ -1483,6 +1483,21 @@
             renderCampaignRoster();
             renderCampaignPosts();
             handleComposeDeepLink();
+            subscribeFeedSession();
+        }
+
+        // ── REALTIME: ha a KM (vagy a Segéd) módosítja a session-t, a feed-kártya
+        // HP/kegy/pénz értékei azonnal frissülnek — csak az érintett karakter. ──
+        function subscribeFeedSession() {
+            if (!window._sb || !window._sb.channel || FEED._chan) return;
+            FEED._chan = window._sb.channel('feed-session-sync')
+                .on('postgres_changes', { event: '*', schema: 'public', table: 'session_states' }, payload => {
+                    const row = payload.new || payload.old;
+                    if (!row || !row.sheet_id) return;
+                    if (payload.new) FEED.sessById[row.sheet_id] = payload.new;
+                    // Csak akkor rajzolunk újra, ha a látott aktív karaktert (vagy csatlósát) érinti
+                    if (row.sheet_id === FEED.charId) renderActiveChar();
+                }).subscribe();
         }
 
         // A KM Pult „📢 Feed-poszt ↗" gombja ide dob: ?campaign=<id>&compose=1.

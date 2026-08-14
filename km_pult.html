@@ -1204,6 +1204,22 @@ const sb = supabase.createClient(
         let _liveParty = [];               // [{ r:{id,name,henchmen}, sess:{...}|null }]
         const _liveSaveTimers = {};
 
+        // ── REALTIME: ha egy játékos (vagy másik eszköz) módosít, a kártya azonnal frissül ──
+        function subscribeLiveParty() {
+            if (!window._sb || !window._sb.channel || window._livePartyChan) return;
+            window._livePartyChan = window._sb.channel('km-live-party-sync')
+                .on('postgres_changes', { event: '*', schema: 'public', table: 'session_states' }, payload => {
+                    const row = payload.new || payload.old;
+                    if (!row || !row.sheet_id) return;
+                    const i = _liveParty.findIndex(p => p.r.id === row.sheet_id);
+                    if (i < 0) return;
+                    _liveParty[i].sess = payload.new || _liveParty[i].sess;
+                    const host = document.getElementById('livePartyList');
+                    const cards = host ? host.querySelectorAll('.lp-grid > .lp-card') : [];
+                    if (cards[i]) cards[i].outerHTML = liveCardHtml(_liveParty[i], i);
+                }).subscribe();
+        }
+
         // Panel be-/kicsukása felfelé (állapot megjegyezve).
         window.toggleLiveParty = function() {
             const list = document.getElementById('livePartyList');
@@ -2543,6 +2559,7 @@ const sb = supabase.createClient(
         (function initCampaigns() {
             const start = async () => {
                 await loadCampaignList();
+                subscribeLiveParty();
                 const wanted = new URLSearchParams(location.search).get('campaign');
                 if (wanted) {
                     document.getElementById('campaignSelect').value = wanted;
