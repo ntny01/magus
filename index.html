@@ -348,9 +348,11 @@
             border-radius: .5rem; padding: .3rem .55rem; font-size: .8rem; font-family: inherit; cursor: pointer;
         }
         .fc-select:focus { outline: none; border-color: var(--gold-soft); }
+        /* Egységes „chip" stílus: kampány + mentett-oldal + felszerelés azonos magasság/keret */
         .fc-static {
-            font-size: .8rem; color: var(--gold); background: rgba(212,175,55,.08);
-            border: 1px solid var(--gold-soft); border-radius: .5rem; padding: .3rem .6rem;
+            display: inline-flex; align-items: center; gap: .4rem; height: 40px; box-sizing: border-box;
+            font-size: .82rem; color: var(--text); background: rgba(255,255,255,.03);
+            border: 1px solid var(--border); border-left: 3px solid var(--gold); border-radius: 10px; padding: 0 .75rem;
         }
 
         /* Bankban tárolt arany — közvetlenül a karakter-kártyán */
@@ -360,7 +362,8 @@
         /* Felszerelés-csempe + lebegő buborék (popover) — a feed nem nyúlik meg */
         .char-card.equip {
             border-left-color: #34d399; width: auto; align-self: flex-start;
-            position: relative; padding: .7rem .9rem; gap: 0;
+            position: relative; padding: 0 .75rem; height: 40px; display: flex; align-items: center;
+            border-radius: 10px; gap: 0;
         }
         .char-card.equip .eq-toggle {
             cursor: pointer; display: flex; align-items: center; gap: .4rem; user-select: none;
@@ -555,8 +558,8 @@
         .saved-tile {
             position: relative; display: flex; align-items: center; gap: .45rem;
             border: 1px solid var(--border); border-left: 3px solid #60a5fa; border-radius: 10px;
-            padding: .5rem .7rem; background: rgba(96,165,250,.06); cursor: pointer;
-            width: 200px; box-sizing: border-box;   /* egységes szélesség (mint a csatlós-kártya) */
+            padding: 0 .7rem; height: 40px; background: rgba(96,165,250,.06); cursor: pointer;
+            width: 200px; box-sizing: border-box;   /* egységes méret a többi chippel */
             font-size: .82rem; color: var(--text); transition: all .15s;
         }
         .saved-tile:hover { border-color: var(--gold-soft); }
@@ -1242,7 +1245,8 @@
             (FEED.savedPages || []).filter(p => p.sheet_id === chId).forEach(p => {
                 const t = document.createElement('div'); t.className = 'saved-tile';
                 t.onclick = (e) => { if (e.target.classList.contains('st-del')) return; openKodexViewer(p.section_id, p.title); };
-                t.innerHTML = '<span>🔖</span><span class="st-name" title="' + esc(p.title || '') + '">' + esc(p.title || 'Kódex-oldal') + '</span>' +
+                const cleanTitle = (p.title || 'Kódex-oldal').replace(/^📚\s*/, '');   // ne legyen dupla ikon
+                t.innerHTML = '<span>🔖</span><span class="st-name" title="' + esc(cleanTitle) + '">' + esc(cleanTitle) + '</span>' +
                     '<button class="st-del" title="Eltávolítás" onclick="removeSavedPage(\'' + p.id + '\')">✕</button>';
                 host.appendChild(t);
             });
