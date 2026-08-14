@@ -361,9 +361,9 @@
 
         /* Felszerelés-csempe + lebegő buborék (popover) — a feed nem nyúlik meg */
         .char-card.equip {
-            border-left-color: #34d399; width: auto; align-self: flex-start;
-            position: relative; padding: 0 .75rem; height: 40px; display: flex; align-items: center;
-            border-radius: 10px; gap: 0;
+            border-left-color: #34d399; width: 260px; align-self: flex-start;   /* mint a karakter-kártya */
+            position: relative; padding: 0 .75rem; height: 44px; display: flex; align-items: center;
+            border-radius: 12px; gap: 0;
         }
         .char-card.equip .eq-toggle {
             cursor: pointer; display: flex; align-items: center; gap: .4rem; user-select: none;
@@ -558,8 +558,8 @@
         .saved-tile {
             position: relative; display: flex; align-items: center; gap: .45rem;
             border: 1px solid var(--border); border-left: 3px solid #60a5fa; border-radius: 10px;
-            padding: 0 .7rem; height: 40px; background: rgba(96,165,250,.06); cursor: pointer;
-            width: 200px; box-sizing: border-box;   /* egységes méret a többi chippel */
+            padding: 0 .7rem; height: 44px; background: rgba(96,165,250,.06); cursor: pointer;
+            width: 260px; box-sizing: border-box;   /* mint a karakter-kártya (piros aláhúzott) */
             font-size: .82rem; color: var(--text); transition: all .15s;
         }
         .saved-tile:hover { border-color: var(--gold-soft); }
