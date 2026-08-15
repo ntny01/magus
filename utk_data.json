@@ -365,12 +365,84 @@
                             "text": "Amennyiben pártatlanul szeretnénk megismerni a négy fő jellemcsoportot, elsőként arról kell beszélnünk, milyen filozófia is húzódik meg hátterükben. Az Élet és Halál megmutatja, hogy az adott teremtmény mennyire tiszteli mások – legyenek akár emberek vagy állatok – életét, míg a Rend és Káosz jellem arról tájékoztat, mit vélekedik a teremtmény a természet törvényeiről, s ezeknek megjelenéséről az ember alkotta civilizációban."
                         },
                         {
-                            "type": "paragraph",
-                            "text": "Rend, Élet A Rend, Élet jelleműek mindenben alávetik magukat a saját maguk vagy mások által hozott törvényeknek; cselekedeteiket erős szabályok határozzák meg. Szabályok, melyek tiltják ugyan a gyilkosságot, de mindazok ellen szólnak, akik az életet veszélyeztetik. Ha arra kényszerülnek, hogy ölnek, azt soha nem élvezetből, hanem mindig kötelességből teszik."
+                            "type": "heading",
+                            "text": "Élet"
                         },
                         {
                             "type": "paragraph",
-                            "text": "Rend, Halál A Rend, Halál jelleműek szolgálnak és ölnek, ha kell. Kérlehetetlen és könyörtelen gyilkosok, mihelyt arra valakitől parancsot kaptak vagy érdekeik, hitük így követeli. Nem életcéljukon azonban más életének kioltása és semmiképp nem ölnek szórakozásból. Általában hideg és számító eszmerendszereket vallanak magukénak; nem ritkán a felsőbbrendűség ideáját szolgálják."
+                            "text": "Az Élet jelleműek nagy becsben tartanak minden élőlényt, s ha tehetik, megakadályozzák az erőszakos halált. Őrizkednek mások szabadságának korlátozásától, elutasítanak mindenfajta fenyegetéssel, erőszakkal járó tettet. Ám fegyvert ragadnak, ha az Élet szabadságát veszélyben érzik, s ilyenkor nem riadnak vissza a harctól sem."
+                        },
+                        {
+                            "type": "heading",
+                            "text": "Halál"
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "A Halál jellembe sorolhatók semmire sem becsülik az életet, lelkiismeret nélkül pusztítanak el mindent, ami útjukba kerül. Sokan azért lelik örömüket az élők pusztításában, mert maguknak nem adatott meg a jog az élethez. Mások megvetnek minden életet, kivéve sajátjukat. Előfordulnak azonban olyanok is, akiknek a létezés nem nyújt semmi üdvözítőt, s saját életüket ugyanolyan értéktelennek tartják, mint bárki másét. Többen az istenek követeinek érzik magukat, akiknek joga, mi több, kötelessége eldönteni, kinek van, illetve kinek nincs maradása az anyagi világban."
+                        },
+                        {
+                            "type": "heading",
+                            "text": "Rend"
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "A Rend hívei vallják, hogy az őket körülvevő Univerzumban bekövetkező változások – az istenek létezésének következményképp – megfoghatatlan harmóniát alkotnak. Ezt szeretnék megvalósítani saját életükben, munkájukban is. Céljuk az építés, a helyes élet törvényeinek megalkotása. Harmóniát keresnek a természettel, s elutasítanak minden olyan cselekedetet, mely az egyetemes törvények megszegését jelenti. Sokszor tekintik fontosabbnak a közösség érdekeit saját jólétüknél, s elejét veszik minden olyan cselekedetnek, mely a közösség rovására történik."
+                        },
+                        {
+                            "type": "heading",
+                            "text": "Káosz"
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "A Káosz szolgái nincsenek tekintettel semmilyen befolyásoló erőre, mely meggátolná őket szabad akaratuk érvényesítésében. Sokszor nem is saját jólétükért, hanem függetlenségük bizonyítására cselekszenek minden logika ellenében. Nem lételemük a pusztítás, de alkalmasint örömüket lelhetik benne. Előfordulhat, hogy csak azért rombolnak, mert valaki kísérletet tett megfékezésükre, s ezt a minden tiltást elutasító lelkük nem képes elviselni."
+                        },
+                        {
+                            "type": "heading",
+                            "text": "Élet, Rend"
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "Az Élet, Rend jelleműek amellett, hogy az élet szentségét védelmezik, mindig figyelembe veszik a fennálló – akár isteni, akár emberi – törvények betartását is, noha a vérontást mindenképpen kerülendőnek tartják. Ha kell, ennek érdekében még a törvények megszegésére is hajlandók, ameddig ez nem segíti elő a Halál vagy Káosz erőinek térnyerését."
+                        },
+                        {
+                            "type": "heading",
+                            "text": "Élet, Káosz"
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "Az Élet, Káosz jelleműek karakterek is elsődleges fontosságúnak tartják az élet védelmét, de eszközeikben már nem annyira válogatósak. Sokszor fittyet hánynak bármifajta törvényre, gyakorta még a józan ész diktálta elővigyázatosságot is figyelmen kívül hagyják. Annyira azonban nem öntörvényűek, hogy ne vegyék észre, cselekedeteikkel mikor ártanak olyanoknak is, akik nem szolgáltak arra rá."
+                        },
+                        {
+                            "type": "heading",
+                            "text": "Halál, Rend"
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "Mindazok, akik Halál, Rend jelleműek, nem tulajdonítanak nagy fontosságot mások életének, gyakorta a ragadozók kegyetlenségével gyilkolnak, de soha nem puszta szeszélyből. Általában egész eszmerendszer áll a hátuk mögött, olykor nagy hatalmú szervezetek, amelyek soha nem riadnak vissza a vér látványától. Hidegvérű gyilkosok. Ideológiájuk legalább annyira megveti a Káosz különféle megjelenési formáit, mint a cél nélküli létet."
+                        },
+                        {
+                            "type": "heading",
+                            "text": "Halál, Káosz"
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "A Halál, Káosz jellemű karakterek egyesítik magukban mindazt, amely gyűlöletes lehet a magukat józanul gondolkodónak nevezők szemében. Számukra az élet – gyakorta saját is – mit sem ér, nem ritka az olyan sem, aki kifejezetten gyűlöli mindazokat, akik szervezett államokban, közösségekben élnek. Módszereikben nem válogatnak, gyakorta elhamarkodottan döntenek. Céljaik között szerepel, hogy ne csak hatékonyan, de látványosan is cselekedjenek."
+                        },
+                        {
+                            "type": "heading",
+                            "text": "Rend, Élet"
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "A Rend, Élet jelleműek mindenben alávetik magukat a saját maguk vagy mások által hozott törvényeknek; cselekedeteiket erős szabályok határozzák meg. Szabályok, melyek tiltják ugyan a gyilkosságot, de mindazok ellen szólnak, akik az életet veszélyeztetik. Ha arra kényszerülnek, hogy ölnek, azt soha nem élvezetből, hanem mindig kötelességből teszik."
+                        },
+                        {
+                            "type": "heading",
+                            "text": "Rend, Halál"
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "A Rend, Halál jelleműek szolgálnak és ölnek, ha kell. Kérlehetetlen és könyörtelen gyilkosok, mihelyt arra valakitől parancsot kaptak vagy érdekeik, hitük így követeli. Nem életcéljukon azonban más életének kioltása és semmiképp nem ölnek szórakozásból. Általában hideg és számító eszmerendszereket vallanak magukénak; nem ritkán a felsőbbrendűség ideáját szolgálják."
                         },
                         {
                             "type": "paragraph",
@@ -383,6 +455,58 @@
                         {
                             "type": "paragraph",
                             "text": "Az ideális játékos soha nem követi el azt a hibát, hogy jellemével ellenkező tettre ragadtatja magát – de hát senki sem tökéletes. Ha a játékos ilyen cselekedetre készül, a KM köteles figyelmeztetni, hogy ezt a karakter személyisége nem teszi lehetővé. Ha a játékos nem tágít, karakterének jelleme, életfilozófiája torzulhat. A változás nem azonnali, s a karakternek több jellemével ellentétes tettet kell elkövetnie ahhoz, hogy életfelfogása, filozófiája az új irányvonalhoz alkalmazkodjék. Amennyiben a KM úgy érzi, a játékos sokszor megszegte saját filozófiájának íratlan törvényeit, s életszemlélete nem tükrözi többé eredeti jellemét, megváltoztathatja azt. Ez a legtöbb esetben kerülendő lépés, de ha a KM úgy érzi, minden más meggyőzési kísérlet eredménytelen maradt, szabad kezet kap. Előfordulhat az is, hogy a karakter életfelfogását a játékos szándékosan kívánja megváltoztatni, mert új eszmékkel, gondolatokkal szembesült kalandozásai során, s ezek meggyőzték arról, hogy eddig helytelenül szemlélte a világot maga körül. Ilyen esetben a jellemváltozás indokolt."
+                        }
+                    ]
+                },
+                {
+                    "id": "sec_6b",
+                    "title": "Jellemvonások",
+                    "content_blocks": [
+                        {
+                            "type": "paragraph",
+                            "text": "A jellem meghatározta általános viselkedésen kívül a jellemvonások azok, amelyek igazából megformálják egy karakter személyiségét. Minden játékosnak természetesen magának kell meghatároznia ezeket a jellemvonásokat, és célszerű olyanokat választani, amelyek eljátszására is képes lesz. Ezektől a néha jelentéktelennek tűnő részletektől lesz igazán életszerű a karakter, s bizonyos szituációkban ezeknek a részleteknek és nem a játékos gondolkodásának kell befolyásolnia a karakter cselekedeteit."
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "A jellemvonások arra szolgálnak, hogy színesítsék a karakter játékát, jellemét. Maguk a Jellemek is meghatároznak néhány jellemvonást, ám az sem kizárt, hogy a játékos ezekről másként gondolkodik. Az alábbiakban felsorolunk néhány, a négy fő jellem sugallta jellemvonást. Mindez nem azt jelenti, hogy ezek mindegyike megtalálható lesz az adott jellemű karakternél, csupán segít az eligazodásban. Az is előfordulhat, hogy valaki ezek egyikét sem tartja érvényesnek a saját karakterére, és az sem kizárt, hogy más – esetleg ellentétes – jellemvonások kioltsák egymást. Senki ne tekintse tehát mindezeket önmagára nézve kötelezőnek, hiszen mindenkinek olyan karaktert kell megformálnia, aki neki a leginkább tetszik. A fentieken kívül is van még számtalan jellemvonás, mindenki válasszon tetszése szerint!"
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "Élet – békés, belátó, barátságos, élvhajhász, gyöngéd, jámbor, jóindulatú, léha, toleráns, vendégszerető stb."
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "Halál – durva, erőszakos, érzéketlen, fatalista, hidegvérű, kiégett, könyörtelen, magába forduló, perverz stb."
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "Rend – akaratos, alázatos, becsületes, egyenes, kiegyensúlyozott, kitartó, makacs, nyugodt, rendszerető, tisztelettudó stb."
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "Káosz – hazug, hirtelen haragú, kárörvendő, képmutató, kiszámíthatatlan, lobbanékony, nyakas, tréfás, szemtelen, szenvedélyes, szertelen, szétszórt, szórakozott, vad stb."
+                        }
+                    ]
+                },
+                {
+                    "id": "sec_6c",
+                    "title": "Erények, hibák, jó és rossz szokások",
+                    "content_blocks": [
+                        {
+                            "type": "paragraph",
+                            "text": "Az itt következők nélkül is el lehet kezdeni persze a játékot, de azok, akik igazán élethű karaktert terveznek maguknak, nem feledkezhetnek meg ezekről az „apróságokról\" sem."
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "Senki sem mondhatja el magáról, hogy tökéletes, bizonyos téren viszont majd mindenki fel tud mutatni olyan dolgokat, amire mások nem képesek. Érdemes a KM-mel egyeztetve leírni mindazokat a dolgokat még az előtörténetben, amelyek később még fontosak lehetnek a számodra, viszont nem lehet számszerűsíteni őket. Az erények és a hibák jelentése nyilvánvaló, némelyikkel már a jellemvonásoknál is találkozhattál. Csakúgy fontossággal bírhatnak valakinek a jó vagy rossz tulajdonságai is. Van, aki képtelen korán felkelni, mások horkolnak vagy nem képesek ellenállni a nőknek, italnak, s persze olyan is akad, aki gondosan ellenőrzi mindenét lefekvés előtt vagy soha nem italozik. Az ilyen szokásokból számtalan akad. Ezeket is érdemes a KM-mel egyeztetni, aki arra ügyel, hogy mindezek egyensúlyban maradjanak! Hiszen az éppúgy elképzelhetetlen, hogy valaki csupa kiváló tulajdonsággal és szokással rendelkezzen, mint ennek az ellenkezője."
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "Szintén érdemes az előtörténetben felírni mindazoknak a nevét, akiket ellenségként, illetve barátként tart számon a karakter, s ide kerülhetnek az ismert városok, országok is. Ugyancsak jegyezzétek fel mindazon dolgokat, amely félelmet, undort stb. válthatnak ki, illetve amelyek önbizalommal, bátorsággal töltik el a karaktert."
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "Ezáltal szinte teljesen le is írtad azt a karaktert, akivel játszani szeretnél. Nincs is más hátra, mint hogy számszerű értékeket is rendelj hozzá!"
                         }
                     ]
                 },
@@ -744,6 +868,60 @@
                         {
                             "type": "paragraph",
                             "text": "megkeresedett gyilkosokat is. Hazudni hamar megtanultak, ám a barátság szentségét még a legelvetemültebbek sem gyalázzák meg."
+                        }
+                    ]
+                },
+                {
+                    "id": "sec_11a",
+                    "title": "Félelf",
+                    "content_blocks": [
+                        {
+                            "type": "paragraph",
+                            "text": "A félelfek Ynev legkülönösebb lényei. Egyik szülőjük elf, míg a másik ember, s ez a kettősség egész – igen hosszú – életük során végigkíséri őket. Egyik faj világába sem képesek maradéktalanul beilleszkedni – az embereknek túlságosan elfek, az elfeknek túlságosan emberek."
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "Legnagyobb közösségeik délen Yllinorban, északon Haonwellben találhatóak; Mogorva Chei birodalmában nagy megbecsülésnek örvendnek, az itt élő tisztavérűek többsége maguk közé tartozónak fogadja el a kevertvérű rokonait. Szöges ellentétben áll ezzel a mentalitással a sirenari elfek magatartása: az itteni büszke népek kínosan ügyelnek a vér tisztaságára, és a félelfeket megvetésre méltó korcsokként kezelik."
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "Kettős származásuk másutt is hátrányukra válhat. Nem egy emberlakta országban félelemmel, sőt gyűlölettel szemlélik az elfeket (ilyen például Toron magát kyrnek valló császársága és az Északi Szövetség Eren nevezetű tagállama). Itt kevertvérű fajtársaik sem számíthatnak jobb bánásmódra. Másrészt nem egy elf kolónia idegenkedik a félelfektől, és nem tűri meg őket lakói közt."
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "Gondolkodásmódjukban közelebb állnak az emberekhez (noha mindig egyfajta töprengő, a világ dolgain merengő életvitel jellemzi őket), külsejük azonban magán hordozza elf őseik örökségét. Légiesebbek, könnyedebbek, mint az emberek – igaz, az elfeknél erősebb testalkatúak –, vonásaik megnyerők, hajuk szőke, olykor ezüstszín, szemük legtöbbször ibolyakék."
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "Állandóan nyughatatlanok. Egyszer egy dorani bölcs azt találta mondani róluk, hogy örökké helyüket keresik a világban, s bár ez kissé profán általánosítás, van benne némi igazság. Igen sok világjáró kerül ki közülük, ennek oka nyilván a fenti tényekben keresendő. A két faj számtalan kitűnő tulajdonságát egyesítik, ám vég nélküli, önmaguk számára is megmagyarázhatatlan elégedetlenségük olyan átok, mely megakadályozza őket abban, hogy népük döntő befolyással bírjon a világ sorsának alakításában – bár akadnak olyanok köztük, kik azt hirdetik, az ő fajuk hordozza az elf nép jövőjét. A természet furcsa fintora, hogy két félelf utódja is félelf lesz, sőt egy félelf és tisztavérű elf frigyéből is csak félelf születhet. Félelf és ember kapcsolatból mindig embergyermek születik."
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "A félelfek is rajongva szeretik a természetet és az élőlényeket, noha korántsem olyan töretlen a kapcsolatuk, mint tisztavérű társaiké. Általában egyenesek, becsületesek, bár találhatunk köztük velejéig romlott, önmaguktól és a világtól megkeseredett gyilkosokat is. Hazudni hamar megtanultak, ám a barátság szentségét még a legelvetemültebbek sem gyalázzák meg."
+                        },
+                        {
+                            "type": "heading",
+                            "text": "Különleges képességeik"
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "Alkati adottságaik miatt a félelfek Gyorsasága, Karizmája és Érzékelés akár 19-es, míg Ereje és Állóképessége legfeljebb 17-es lehet."
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "Hallásuk, látásuk élessége másfélszerese az emberének, ezért minden félelf +5 Célzó értékkel rendelkezik."
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "Rendelkeznek infralátással, mely vaksötétben is 30 ynevi láb látótávolságot biztosít nekik."
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "A félelfek elf felmenőiktől örökölték ösztönös tehetségüket az alábbi képzettségekhez: Állatismeret, Idomítás, Erdőjárás, Lovaglás. Ezeket úgy tanulják, mintha 3. fokú oktatótól sajátítanák el (a képzettségek minden szintje 1 Kp-val olcsóbb a képzettség 3. fokáig, de legalább 1; ez a bónusz nem adódik össze az oktatás képzettség nyújtotta előnyökkel)."
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "A félelfek természetétől – akárcsak elf szülőikétől – leginkább a Feketemágia és a Nekromancia esik távol, ezért az efféle varázslatoknak kevésbé tudnak ellenszegülni, mint mások. Ez számokban kifejezve azt jelenti, hogy bármely Nekromancia típusú varázslat 2 E-vel erősebben hat rájuk."
                         }
                     ]
                 },
