@@ -24,6 +24,7 @@ const sb = supabase.createClient(
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Karakter Segéd</title>
+    <meta name="theme-color" content="#020617">
     <link rel="icon" href="assets/logo/compass-logo.png">
     <style>
         :root {
@@ -49,6 +50,12 @@ const sb = supabase.createClient(
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             -webkit-tap-highlight-color: transparent;
         }
+        /* Egységes arany, vékony görgősáv (koherencia) */
+        *{scrollbar-width:thin;scrollbar-color:rgba(212,175,55,.35) transparent}
+        *::-webkit-scrollbar{width:8px;height:8px}
+        *::-webkit-scrollbar-thumb{background:rgba(212,175,55,.3);border-radius:5px}
+        *::-webkit-scrollbar-thumb:hover{background:rgba(212,175,55,.55)}
+        *::-webkit-scrollbar-track{background:transparent}
 
         body {
             background-color: var(--bg-color);

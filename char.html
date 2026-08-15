@@ -24,6 +24,7 @@ const sb = supabase.createClient(
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Karakterlap</title>
+    <meta name="theme-color" content="#020617">
   <link rel="icon" href="assets/logo/compass-logo.png">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
   <style>
@@ -36,6 +37,12 @@ const sb = supabase.createClient(
       --gold-glow:rgba(212,175,55,0.3); --accent:#10b981; --accent-h:#34d399; --red:#f87171;
     }
     *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+    /* Egységes arany, vékony görgősáv (koherencia) */
+    *{scrollbar-width:thin;scrollbar-color:rgba(212,175,55,.35) transparent}
+    *::-webkit-scrollbar{width:8px;height:8px}
+    *::-webkit-scrollbar-thumb{background:rgba(212,175,55,.3);border-radius:5px}
+    *::-webkit-scrollbar-thumb:hover{background:rgba(212,175,55,.55)}
+    *::-webkit-scrollbar-track{background:transparent}
 
     body {
       font-family:'Inter',sans-serif;
