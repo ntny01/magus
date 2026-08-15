@@ -1607,6 +1607,10 @@
                             "text": "A karakterek cselekedeteinek sikerét, harci és egyéb képességeit a Tapasztalati szint mellett Tulajdonságai határozzák meg. Ezek a Tulajdonságok egy személy veleszületett és gyakorlással, tanulással megszerzett alapképességeit jellemzői. A Tulajdonságértékek 1-től 20-ig változhatnak, s minél magasabb egy érték, annál közelebb áll a tökéletességhez. Az átlagérték 10-12 körül mozog, s a 19-es és 20-as tulajdonság értékek oly ritkák, hogy csak különleges iskolák vagy kivételes adottság révén van mód megszerzésükre (Bővebben lásd a Háttérrel c. fejezetben!). A M.A.G.U.S. különböző Tulajdonságát hat fizikai és négy szellemi képességre bonthatjuk. Fizikai az Erő, Gyorsaság, Ügyesség, Állóképesség, Egészség és a Karizma. Szellemi az Intelligencia, Akaraterő, Asztrál és az Érzékelés."
                         },
                         {
+                            "type": "heading",
+                            "text": "Erő"
+                        },
+                        {
                             "type": "paragraph",
                             "text": "Ez az egyik legnyilvánvalóbb képesség, a karakter fizikai erejéről tájékoztat. Megmutatja, hogy bírja a személy a hirtelen fizikai terhelést, milyen maximális erőkifejtésre képesek izmai. A rövid izommunkával kapcsolatban használjuk, a hosszú, kevésbé intenzív, de folyamatos megterhelés mutatója az Állóképesség."
                         },
@@ -1619,6 +1623,45 @@
                             "text": "Az Erő fontos szerepet kap a közelharcban is, így a harcosok egyik meghatározó Tulajdonsága, mivel hozzáadódik a TE-hez, és 15-ös érték fölött pedig pontonként +1 sebzést eredményez közelharci fegyverek esetén."
                         },
                         {
+                            "type": "rule",
+                            "title": "Erő 1-3",
+                            "text": "A karakter teljesen bénult vagy rokkant, netán valamilyen ártó mágia sorvasztotta el izomrendszerét. Gyakorlatilag magatehetetlen, az ágyban is alig tud felülni vagy a dolgát elvégezni. Az életben maradáshoz mások segítségére van szüksége."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "Erő 4-5",
+                            "text": "Gyermekek bírnak ekkora értékkel, avagy kórságban szenvedő felnőttek. Fegyvert képtelen forgatni, egy hátizsák alatt már meg-megtántorodik."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "Erő 6-8",
+                            "text": "Az illető valószínűleg írnok, számvevő vagy más tollforgató személy, netán egyszerűen már öregember."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "Erő 9-12",
+                            "text": "Az átlagos ember, aki nem is túl izmos, nem is igazán vézna. Lógva, függeszkedésből csak kínlódva képes felhúzni magát."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "Erő 13-15",
+                            "text": "Kiemelkedő fizikum, erőtől duzzadó karok, tiszteletet parancsoló vállak."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "Erő 16-18",
+                            "text": "Robosztus termetével bárhol képes utat törni magának. Hivatásos verekedő vagy erőművész válhat belőle."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "Erő 19-20",
+                            "text": "Káprázatos dolgokra képes: acélt hajlíthat meg puszta kézzel, s ütései nemritkán csontokat zúznak szét. Képességei a józan ész határait feszegetik."
+                        },
+                        {
+                            "type": "heading",
+                            "text": "Gyorsaság"
+                        },
+                        {
                             "type": "paragraph",
                             "text": "Gyorsaságon a karakter fürgeségét, reakcióinak sebességét értjük. Ez a szám megmutatja azt, hogy milyen gyorsan futhat valaki, de jellemzi a cselekvések gyorsaságát is. Tehát nem ez dönti el, hogy valaki milyen gyorsan fejt meg egy logikai feladványt, hanem hogy a karakter el tud-e ugrani egy felé száguldó lovas elől."
                         },
@@ -1627,12 +1670,86 @@
                             "text": "A Gyorsaság még egy nagyon fontos értéket, a karakter Sebességét adja meg. Ebből a Tulajdonságból számítható ki, hogy a karakter 1 kör, illetve 1 szegmens alatt mekkora távolságot képes megtenni. Minden karakter egy körben ötször annyi ynevi láb távolságot képes megtenni, mint amennyi a Gyorsaság értéke. Egyetlen szegmens alatt pedig legfeljebb a Gyorsasága felének (lefelé kerekítve) megfelelő ynevi láb távolságra juthat. Ez az érték természetesen változik, ha a karakter Gyorsasága valamilyen okból (például MGT) csökken. Sokat számít a Gyorsaság a harcban is. Egyrészt vitathatatlan szerepe van egyrészt a támadások előli kitérésben, másrészt a karakter saját támadásának eredményességében. Minél gyorsabb ugyanis a támadó, hárítása annál nehezebb. A támadás pillanatát is befolyásolja ez az érték, így a Gyorsaság hozzáadódik a KE-hez, továbbá a TE-hez és a VE-hez is."
                         },
                         {
+                            "type": "rule",
+                            "title": "Gyorsaság 1-3",
+                            "text": "Általában rokkantak, nyomorékok sajátja. A biztonság kedvéért mindig tartanak egy ágytálat a közelben."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "Gyorsaság 4-5",
+                            "text": "Az ismeretlenek általában segítenek neki, mert nem győzik kivárni, amíg megtölti a boroskancsót. A lépcsők komoly kihívást jelentenek számára."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "Gyorsaság 6-8",
+                            "text": "Mire utánakapna, a pohár már rég eltörött…"
+                        },
+                        {
+                            "type": "rule",
+                            "title": "Gyorsaság 9-12",
+                            "text": "Az átlagos emberi érték. Az idős földműves általában félre tud ugrani, ha az asszonya megdobálja a lábosokkal az esti kimaradás miatt."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "Gyorsaság 13-15",
+                            "text": "Remek reflexei vagy kiválóak a reflexei. Nem egy párbajt nyert már meg a fürgébb kardrántással."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "Gyorsaság 16-18",
+                            "text": "Ha valaki lelöki a söröskupát az asztalról, szerencse ha ott van. Kár lenne akár egyetlen csepp drága nedűért is."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "Gyorsaság 19-20",
+                            "text": "Hihetetlen gyors a mozgása. Kár, hogy senki nem hisz neki, amikor azt meséli, hogyan kapta el a kilőtt nyílvesszőt."
+                        },
+                        {
+                            "type": "heading",
+                            "text": "Ügyesség"
+                        },
+                        {
                             "type": "paragraph",
                             "text": "E tulajdonság alatt a mozgáskoordinációt, az egyensúlyérzéket és a kézügyességet értjük. Az agy és az izmok tökéletes összhangja szükséges az igazán finom és összetett mozgások kivitelezéséhez, s ennek mutatója az Ügyesség. Meghatározó szerepe van az alvilági képzettségek legtöbbjében, a kártyázásban vagy a zsebmetszésben."
                         },
                         {
                             "type": "paragraph",
                             "text": "Fontos az Ügyesség a közelharcban, hiszen a legjobb technika is veszendőbe megy, ha a test nem azt hajtja végre, amit az elme diktál. Az Ügyesség hozzáadódik a TE-hez, a VE-hez és a CÉ-hez. Egyes százalékos képzettségek esetében az Ügyesség képezi a karakter alap százalékértékét."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "Ügyesség 1-3",
+                            "text": "Rokkant, bénult emberek sajátja. Egy imbolygó, rothadó élőhalott kötéltáncos hozzá képest."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "Ügyesség 4-5",
+                            "text": "Minél jobban igyekszik, annál rosszabb. Csak ne nyúljon semmi törékenyhez!"
+                        },
+                        {
+                            "type": "rule",
+                            "title": "Ügyesség 6-8",
+                            "text": "Ügyefogyott, kétbalkezes. Kiskorában mindig csúfolták, amiért sose tudta elkapni a labdát, de azért azóta se nagyon engedik szattyánszíj közelébe."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "Ügyesség 9-12",
+                            "text": "Átlagos emberi érték. Elboldogul három pohárral egy kézben."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "Ügyesség 13-15",
+                            "text": "Rugalmas, hajlékony, elegáns a mozgása. A nézők sosem látják, hol a csel a kártyatrükkben."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "Ügyesség 16-18",
+                            "text": "Bámulatos a kézügyessége, szokatlan, nem mindennapi mozdulatokra képes: az ember azt hinné, ilyen tartásból fogást kell váltani a dobótőrön ahhoz, hogy el lehessen hajítani. Pedig csak a megfelelő csuklómozdulat kérdése az egész…"
+                        },
+                        {
+                            "type": "rule",
+                            "title": "Ügyesség 19-20",
+                            "text": "„Az istenekre! Te láttad hogyan csinálja?” „Ez biztos varázslat, nekem elhiheted!”"
                         }
                     ]
                 },
@@ -1651,14 +1768,143 @@
                         {
                             "type": "paragraph",
                             "text": "Az Állóképesség adja a karakter Fájdalomtűrés pontjait, az Akaraterő értékével együtt."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "Állóképesség 1-3",
+                            "text": "Képtelen akár a szobában is átkúszni."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "Állóképesség 4-5",
+                            "text": "Hamar elfárad, az ilyen alacsony érték általában a korral jár."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "Állóképesség 6-8",
+                            "text": "Ha napközben gyakran leülhet pihenni, délután pedig tarthat egy párórás sziesztát, egész jól bírja a hétköznapokat."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "Állóképesség 9-12",
+                            "text": "Az átlagos emberi érték. Gond nélkül elsétál a szomszéd faluba és vissza, egész nap kint dolgozik a földeken, de a hosszú, megerőltető feladatoktól ő is kifárad."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "Állóképesség 13-15",
+                            "text": "Kiemelkedő a kitartása. A többiek már rég feladták volna, de ő a második napot is végiglovagolja. Nem hiába lett a Vittadora Postakocsi-szolgálat gyorsfutára."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "Állóképesség 16-18",
+                            "text": "Lenyűgöző mire képesek ezek az emberek. Az órákon át tartó futást pár perc alatt kiheveri, az egész napos ostromot mellvértben tölti a gyilokjárókon."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "Állóképesség 19-20",
+                            "text": "Tetteiről legendákat zengenek, „Vasember” mondogatják."
+                        }
+                    ]
+                },
+                {
+                    "id": "sec_14_krz",
+                    "title": "Karizma",
+                    "content_blocks": [
+                        {
+                            "type": "paragraph",
+                            "text": "A Karizma egyik összetevője a karakter fizikai szépsége, ugyanakkor nem teljesen egyenlő azzal. Magában foglalja a vezetőkészséget, a tekintélyt, megjelenést, hanghordozást, magabiztosságot is. A nagy Karizma segít a kapcsolatteremtésben, különösen ha az ellentétes nem képviselőjével kíván összeismerkedni a karakter, de szintén elengedhetetlen a politika területén, vagy a kényes szituációkból való kimagyarázkodásnál. A nagy Karizma igazi értéke számmal nem igazán mérhető, de meg kell mutatkoznia a szerepjátékban. Általában a nemesen született karakterek, valamint lovagok, papok, szerencsevadászok (különösen a bárdok) szinte létfontosságú Tulajdonsága. Fontosságára minden játékos rendszerint később ébred rá, mint a többi Tulajdonság értékére, mert csak a játék közben mutatkozik meg igazi jelentősége. A rendkívül alacsony Karizma sokszor megbosszulja magát a karakter életében: sokan bizalmatlanok lesznek vele szemben, szélsőséges esetben kimondottan ellenségesen bánnak vele."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "Karizma 1-3",
+                            "text": "„Kotródj innét! Úgy rohad az arcod, menten hányingert kapok… itt ugyan nem kapsz italt, még elriasztod a vendégeimet!”"
+                        },
+                        {
+                            "type": "rule",
+                            "title": "Karizma 4-5",
+                            "text": "Mondhatni, nem túl épületes látvány. Természetes érték nem lehet ilyen alacsony."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "Karizma 6-8",
+                            "text": "Az illető látványos testi fogyatékossággal bír: púpos, kancsal és ráadásul erősen gátlásos, társaságban képtelen megszólalni."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "Karizma 9-12",
+                            "text": "Sosem volt a nők bálványa, de nem is igen volt oka panaszra. Ha ki kell állni az emberek elé, általában nem ő viszi a szót."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "Karizma 13-15",
+                            "text": "Igen vonzó hölgy, esetleg férfiember, könnyen elegyedik szóba másokkal, ritkán marad fedél és hálótárs nélkül, ha ismeretlen helyre vetődik."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "Karizma 16-18",
+                            "text": "Nem pusztán férfias és jóképű. Van a mozgásában, a hangsúlyában valami, aminek a nők képtelenek ellenállni. Szinte sugárzik belőle az ösztönös magabiztosság, ami csak a nagyragadozók sajátja."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "Karizma 19-20",
+                            "text": "Az emberek csak nehezen tudják kivonni magukat személyisége befolyása alól. A gyengébb jellemekben akár fanatikus rajongás is kialakulhat, de nincs ember, akit hidegen hagyna megjelenése."
+                        }
+                    ]
+                },
+                {
+                    "id": "sec_14_egs",
+                    "title": "Egészség",
+                    "content_blocks": [
+                        {
+                            "type": "paragraph",
+                            "text": "Ez a tulajdonság jellemzi a karakter ellenálló képességét betegségekkel, mérgekkel és sérülésekkel szemben. Értéke nem függ össze a fizikai erővel, inkább a szervezet belső egyensúlyának harmóniájával, a jó kondícióval. A nagyon alacsony Egészségűek sokszor betegszenek meg, gyengének érzik magukat, s a mérgek is nagyon súlyosan hathatnak rájuk. Magas Egészség értékkel viszont a köznapi kórok többsége elkerüli a karaktert, a romlott étel sem jelent mindig gondot, szinte vasgyomorral táplálkozhatnak. Az Egészség Tulajdonság 10 feletti részével állhat ellen a karakter a mérgeknek és betegségeknek, továbbá az Egészség adja a karakter Ép-jét."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "Egészség 1-3",
+                            "text": "Általában halálos kórok végső stádiumában szenved így az ember. Szerencsére nem sokáig."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "Egészség 4-5",
+                            "text": "Gyakorlatilag állandóan beteg. Csak gyógynövények, teák és egyéb készítmények, netán mágia tartja életben. Immunrendszere annyira gyenge, hogy az első betegség is szinte halálos kimenetelű lehet számára."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "Egészség 6-8",
+                            "text": "Nagyon sokat betegeskedik. Egész télen náthás, tavasztól őszig pedig valami fránya növény miatt prüszköl állandóan. Az orvos hetente, havonta látogatja, s ha meleg ruházat nélkül megy ki a szélbe, biztosra veheti a másnapi tüdőgyulladást. A közeledő hideg időtől mindig sajog a dereka."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "Egészség 9-12",
+                            "text": "Átlagos emberi érték. A betegségek egy részét elkapja, a másik felét elkerüli. Azért jobban teszi ha az esti duhajkodás után a hajnal már fedél alatt találja és nem az ajtó előtt."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "Egészség 13-15",
+                            "text": "Kiemelkedő az ellenállóképessége. Idejét sem tudja mikor volt utoljára beteg, sebei gyorsan és könnyedén gyógyulnak."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "Egészség 16-18",
+                            "text": "A másnaposságot, betegségeket csak hírből ismeri. Romlott étel vagy más áfiumok nehezen döntik le a lábáról. Kora tavaszi reggeleken felfrissülésképpen néha vesz egy gyors fürdőt a folyóban."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "Egészség 19-20",
+                            "text": "A szervezete vasból van. Szinte bármilyen sérülést képes túlélni."
                         }
                     ]
                 },
                 {
                     "id": "sec_14b",
-                    "title": "Intelligencia (humoros melléktáblázat)",
+                    "title": "Intelligencia",
                     "section_title": "",
                     "content_blocks": [
+                        {
+                            "type": "paragraph",
+                            "text": "A karakter mentáltestét a könnyebb kezelhetőség végett két különböző tulajdonságra osztja fel a M.A.G.U.S. rendszere: az Intelligenciára és az Akaraterőre. Előbbi a gondolkodási képességet, az események logikus rendszerének átlátását és globális szemléletű világkép kialakítását teszi lehetővé. Elengedhetetlen a mágiahasználók számára, de a papok és boszorkánymesterek is híresek lehetnek magas Intelligenciájukról. A tények logikus egymásután fűzésén, teóriák és önálló vélemény kialakításán kívül az Intelligencia nagysága hatással van a Pszi pontok számára is. Az Intelligencia adja a karakter induló Kp-ját és a Pszi pontját."
+                        },
                         {
                             "type": "rule",
                             "text": "A karakter értelmi szintje egy nyáladzó idiótáé, személyisége (ha lehet ilyesmiről egyáltalán beszélni) nem emelkedik túl az állati ösztönök kusza halmazán.",
@@ -1697,13 +1943,148 @@
                     ]
                 },
                 {
+                    "id": "sec_14_akr",
+                    "title": "Akaraterő",
+                    "content_blocks": [
+                        {
+                            "type": "paragraph",
+                            "text": "A Mentáltest másik összetevője az Akaraterő. Lényeges szerepe van az agy felsőbbségének fenntartásában a test igényeivel szemben, legyen az valamely kísértés vagy a testi kínzás. Meghatározza továbbá, hogy a karakter mennyire ura érzelmeinek, képes-e hidegvérrel mérlegelni, félretenni érzéseit és csupán eszére hagyatkozni. A fájdalom eltűréséhez is ez adja a lelki, szellemi alapot, a fizikait pedig az Állóképesség. Az Akaraterő hozzáadódik a karakter Fp-jéhez, illetve a lelkierő megjelenése mellett komoly szerepe van a Mentáltest védelmében is, mert az képezi a karakter tudatalatti Mágiaellenállását a mentális támadások ellen."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "Akaraterő 1-3",
+                            "text": "Ösztönlény. Elhatározásai ritkán tartanak perceknél tovább. Önkontrollja egyáltalán nincs, gyakorta cserélik alatta a lepedőt."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "Akaraterő 4-5",
+                            "text": "Életét dührohamok és sírógörcsök fertályóránkénti váltakozása tölti ki. Képtelen rászánni magát bármi hasznos vagy önálló cselekvésre. Pillanatok alatt elbizonytalanodik, ha bárki visszakérdez: „Biztos?”"
+                        },
+                        {
+                            "type": "rule",
+                            "title": "Akaraterő 6-8",
+                            "text": "Az érzelmeinek rabja. Apró ingerlésre is hevesen reagál, képtelen valamire huzamosabb ideig koncentrálni. Könnyedén meggyőzhető bármiről, ha elég sokan és elég erélyesen bizonygatják."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "Akaraterő 9-12",
+                            "text": "Az átlagos emberi érték. Ha nagyon muszáj, bármire rászánja magát, nehéz felingerelni, de ha magával ragadja a hév, képtelen uralkodni magán. Hagyja magát sodorni az eseményekkel, s csak ritkán képes elég elszántságot összegyűjteni, hogy kezébe vegye saját sorsát."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "Akaraterő 13-15",
+                            "text": "Nem mindennapi önuralommal rendelkezik. A szélsőségek néha még magukkal ragadják ugyan, ám általában józan eszére hallgat."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "Akaraterő 16-18",
+                            "text": "Az akarat győzelme az érzelmek felett. Hidegvéréből, nyugalmából semmi sem tudja kizökkenteni."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "Akaraterő 19-20",
+                            "text": "Az önuralom csúcsa. Érzelmeit régen levetkezte már. Ő az, akire valóban igaz a mondás: „Csak akarnia kell…”"
+                        }
+                    ]
+                },
+                {
+                    "id": "sec_14_aszt",
+                    "title": "Asztrál",
+                    "content_blocks": [
+                        {
+                            "type": "paragraph",
+                            "text": "A karakter asztráltestének jellemzésére szolgáló érték. Az érzelmi gazdagság, a lelki harmónia mértéke; minél nagyobb, annál nyitottabb a karakter mások érzelemvilágára. Egy kiforrott lelkivilággal rendelkező egyéniséget sokkal nehezebb mágia útján érzelmileg befolyásolni, mint azt, aki közel sem fordít annyi figyelmet saját vagy mások érzéseire. Őket könnyebb haragra, gyűlöletre vagy éppenséggel megbékélésre kényszeríteni. Így az Asztrál képezi a karakter tudatalatti Mágiaellenállását az asztrális támadások ellen."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "Asztrál 1-3",
+                            "text": "Lelki társát régen meglelte csizmatalpa képében. Érzelemvilága nem terjed túl a puszta vegetatív léten."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "Asztrál 4-5",
+                            "text": "Érzelemvilágának kifinomultsága az állati ösztönök szintjén mozog."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "Asztrál 6-8",
+                            "text": "A legtöbb nő a fejéhez vágta már: „Érzéketlen tuskó!” Lelkivilága sivárságát mi sem példázza jobban, mint hogy ez egy cseppet sem érdekli. Sekélyes, középszerű jellem."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "Asztrál 9-12",
+                            "text": "Átlagos emberi érték. Az érzelmek, emberi kapcsolatok fontosak számára, de néha értetlenül áll mások reakciói előtt."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "Asztrál 13-15",
+                            "text": "Az árnyalatok már fontosak számára, érzelmei gazdagok, amolyan művészlélek; kár hogy csak képzeli magáról."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "Asztrál 16-18",
+                            "text": "Valódi művészlélek. Nem csak fejlett az esztétikai érzéke, de szépség utáni vágyát alkotás útján is képes kifejezésre juttatni. Empátiájával nem csak befogadni képes mások érzéseit, de azokra igen finoman reagálni is tud."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "Asztrál 19-20",
+                            "text": "„Nézz a szemembe, megmondom ki vagy.”"
+                        }
+                    ]
+                },
+                {
+                    "id": "sec_14_erz",
+                    "title": "Érzékelés",
+                    "content_blocks": [
+                        {
+                            "type": "paragraph",
+                            "text": "Mint a nevéből is következik, az érzékszervek működésére, hatékonyságára, összehangoltságára valamint a helyzetfelismerés sebességére is utal, ami alatt nem a tudatos gondolkozást, hanem az ösztönös veszélyfelismerést értjük. Ugyan nem létfontosságú, ám igen hasznos képesség. Ha ez az érték alacsony, az azt jelzi, hogy a karakter szétszórt, figyelmetlen, felületes szemlélő. Nem veszi észre, ha követik. Nem fedezi fel az ágy mellé ejtett kulcsokat, nem veszi észre, ha az éjjeli erdőben hirtelen elhallgatnak az állatok. Az érzékelés hozzáadódik a karakter KÉ-jéhez, CÉ-jéhez és ez képzi egyes százalékos Képzettségek esetében a karakter alap százalékértékét."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "Érzékelés 1-3",
+                            "text": "Csakis valamely testi fogyatékossággal rendelkezők sajátja (süketnéma stb.)."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "Érzékelés 4-5",
+                            "text": "Csak bambán néz ki a fejéből és retteg. A külvilág számára egy nagyon távoli, ismeretlen, veszélyes valami."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "Érzékelés 6-8",
+                            "text": "Szétszórt, figyelmetlen. Az ilyen emberek gondolkodás nélkül ülnek a széken felejtett holmikra, belekönyökölnek a borsoltba vagy hosszú pecekig keresik az asztalon, a zsebükben felejtett kulcsot."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "Érzékelés 9-12",
+                            "text": "Az átlagos emberi érték. Minden érzékszerve az emberi normának felel meg."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "Érzékelés 13-15",
+                            "text": "Jó megfigyelő. Pillanatok alatt kiszúrja az oda nem illő dolgokat, a szeme sarkából képes figyelni az őt követő alakot."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "Érzékelés 16-18",
+                            "text": "A legtöbb ember már csak azt veszi észre, hogy mozdul, nem pedig azt, hogy mi miatt."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "Érzékelés 19-20",
+                            "text": "„Figyelnek minket. Érzem.”"
+                        }
+                    ]
+                },
+                {
                     "id": "sec_14c",
-                    "title": "A próbadobás szükségessége (töredék)",
+                    "title": "Tulajdonságpróba",
                     "section_title": "",
                     "content_blocks": [
                         {
                             "type": "paragraph",
-                            "text": "az adott cselekvés. Ebből következik az is, hogy a karakter számára a mindennapos tevékenységek nem igényelnek külön próbát, hiszen egy 18-as Erejű ember különösebb megerőltetés nélkül tol arrébb egy szekeret, a patkókovács sem ront a patkoláskor és a tapasztalt lovas is biztosan üli a lovát (lásd az egyes Tulajdonságok leírásában szereplő hozzávetőleges meghatározásokat)."
+                            "text": "Minden esetben, mikor a karakter olyan szituációba keveredik, amikor egy cselekedete könnyen lehet, hogy kudarcba fullad, de van esély a sikerre is, Tulajdonságpróbát kell tenni annak eldöntésére, hogy a karakter képes volt-e végrehajtani az adott cselekvést. Ebből következik az is, hogy a karakter számára a mindennapos tevékenységek nem igényelnek külön próbát, hiszen egy 18-as Erejű ember különösebb megerőltetés nélkül tol arrébb egy szekeret, a patkókovács sem ront a patkoláskor és a tapasztalt lovas is biztosan üli meg a lovát (lásd az egyes Tulajdonságok leírásában szereplő hozzávetőleges meghatározásokat)."
                         },
                         {
                             "type": "paragraph",
@@ -1712,6 +2093,56 @@
                         {
                             "type": "paragraph",
                             "text": "Annak eldöntése, hogy az adott szituációban a karakter képes-e automatikusan végrehajtani a cselekvést vagy próbát kell dobnia, mindig a KM feladata."
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "A Tulajdonságpróba során a játékos k10-zel dob. Amennyiben a dobás eredménye kisebb vagy egyenlő az adott tulajdonság tíz feletti részénél, a próba sikeresnek minősül. Ha nagyobb annál, a próbát elvétette."
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "Ha egy karakter fel akar emelni egy nagy és nehéz tárgyat, melyről nem egyértelmű, hogy képes a megmozdítására, a KM Tulajdonságpróbát kérhet tőle. Ha Ereje 14-es: 1-es, 2-es, 3-as és 4-es dobásnál a tárgyat felemelte. Ha a dobás eredménye 4-nél nagyobb, nem tudta elmozdítani azt."
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "Előfordulhat, hogy a KM nehezíteni vagy könnyíteni kívánja a dobást, a helyzetnek megfelelően. Ha a feladatot egyszerűnek ítéli, a játékos dobhatja pluszokkal a tulajdonságpróbát (ilyenkor az adott Tulajdonsághoz hozzá kell adni a pluszt és úgy dobni), vagy egyszerűen le is hagyhatja a dobást, míg bonyolult, embert próbáló feladatoknál negatív módosítókkal sújthatja a játékost."
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "Tulajdonságpróbát az összes képességből lehet tenni. Az Erőpróbát általában akkor használják, ha valamely nagy erőkifejtés sikerének eldöntésére van szükség. A Gyorsaságpróbát olyankor, ha valami elől elugrani kell, vagy valamit elkapni kell. Az Ügyességpróbát a kézügyesség esetében használják. Az Egészségpróba igen gyakori: betegségek, mérgezések leküzdésekor játszik szerepet. A Karizmapróba olyankor számít, ha a játékos szimpatikussá kíván válni valaki számára, netán megpróbálja elcsábítani. Az Intelligenciapróba logikai láncok felismerésekor számíthat, az Asztrálpróba például valakinek a megnyugtatásakor, az Akaraterőpróba pedig magáért beszél – az akarat próbája a nyugalom megőrzésére."
+                        }
+                    ]
+                },
+                {
+                    "id": "sec_hatter",
+                    "title": "Háttér",
+                    "content_blocks": [
+                        {
+                            "type": "paragraph",
+                            "text": "A Háttér képviseli a karakter korábbi, még kalandozás előtti életét. Azokat a születésétől, gyerekkorától őt kísérő körülményeket, amelyek befolyással lehetnek egész életére. Karakteralkotó pontjaidból tetszőleges számú új Hátteret vehetsz fel, ám ne feledd, hogy ezt csak a karakter megalkotásakor teheted meg, illetve hogy az így elköltött pontok levonódnak szintenként kapott Karakteralkotó pontjaid számából (ennyivel kevesebbet oszthatsz el minden szintlépéskor). Az itt felsorolt Hátterek pusztán iránymutatásul szolgálnak, a KM-mel egyeztetve bárki kitalálhat sajátokat is. A képesség neve után zárójeles érték jelenti a képesség KAP-értékét. Ennyit kell elköltened, hogy birtokába juss."
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "Természetesen az egyes iskolák leírásában szereplő különleges előnyökért megkapott Háttereket nem kell fizetnie a játékosnak, ezeket a kiválasztott klán, rend, illetve iskola költségébe belekalkuláltuk. Mindemellett, a karakter, ha később bármely szervezet tanulójává válik, akkor sem kapja meg visszamenőleg e Háttereket. Ellenben rendelkeznie kell velük az adott iskolába történő felvételhez, ha a KM ezt szükségesnek látja vagy a szabályrendszer megköveteli."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "Adottság (1)",
+                            "text": "Minden fajnak vannak egyedei, akik valamely Tulajdonságukban magasan fajtársaik fölé emelkednek. Az ilyen veleszületett adottságot hivatott szimbolizálni ez a Háttér. Segítségével a karakter minden elköltött pontért egy általa választott Tulajdonságát növelheti eggyel. Ily módon a Tulajdonság akár a faji korlát fölé is emelhető, azonban egyetlen Tulajdonság sem emelkedhet 20 fölé."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "Faj (1)",
+                            "text": "Ha játékos embertől eltérő fajú karaktert kíván indítani, arra egy Háttérpontot kell áldoznia. Minden faj rendelkezik bizonyos előnyökkel és természetesen hátrányokkal. Vannak fajok melyeket Ynev egyes vidékein nagy tisztelet, máshol közgyűlölet fogad, és vannak iskolák, amelyek egyáltalán nem engednek falaik közé nem emberi fajú tanoncokat. Mindezekről bővebben lásd a Fajok leírását."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "Holtak szeme (1)",
+                            "text": "A karakter különösen érzékeny a másvilági entitások, illetve az evilág határán sodródó lények keltette benyomásokra. 20 ynevi láb sugarú gömbben mágia vagy pszi használat nélkül képes érzékelni holt lelkek, kísértetek, lidércek és más túlvilági lények jelenlétét, és azt is megérzi, ha egy területen 1 napnál nem régebben egy értelmes élőlény lelte halálát. Erre nem kell külön koncentrálnia, az érzések és benyomások azonnal megrohanják, amint az érintett területre lép. Sikeres Asztrálpróba esetén képes egyfajta primitív, érzelmi kommunikációra is velük; érzelmeket, benyomásokat, villanásnyi képeket tud átadni, közvetíteni."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "Kegyelt (1)",
+                            "text": "A karakter valamely általa (vagy a KM által) választott isten kitüntetett figyelmét élvezi. A Háttér szükséges mindazon karaktereknek, akik Papok vagy Paplovagok kívánnak lenni. Ugyanakkor annak a halandónak, aki bár nem pap, de egy isten figyelme kíséri sorsát, komoly feladatot szántak az égiek. A Háttér tehát akkor is megmutatkozik, ha az illető nem nyert beavatást a Szakrális mágia misztériumába. Arról, hogy az isteni kegy hogyan befolyásolja a karakter életét, a KM hivatott dönteni. Az a karakter, aki rendelkezik a Kegyelt Háttérrel, minden Tapasztalati szinten a Vallásismeret képzettség általa bitokolt fokánál feltüntetett mennyiségű Kegy pontot kap, amit tovább növelhet Karakteralkotó pontjaiból. Ahhoz azonban, hogy a kegyelt képessé váljon a Szakrális mágia fohászainak használatára, bírnia kell a Vallásismeret képzettség 3. fokával. Ha ezen képzettséggel nem rendelkezik a megfelelő szinten, akkor csak ösztönösen alkalmazza a mágiát, a fohászokat. Ebben az esetben legfeljebb a KM által engedélyezett helyzetben képes varázsolni és csakis az esetlegesen a szerepjáték által megszerzett Kegy pontjaiból (Lásd a Szakrális mágia c. fejezetben, 257. oldalon), s csakis az általa tisztelt felsőbb lény által uralt szférákból. Ha még nem igazi pap, s nem tudja hogyan keresse ura vagy úrnője kegyét imáival, akkor isteni kegyét minden napkeltekor és különleges, az isten által fontosnak vélt feladatok végrehajtása után nyerheti vissza a kegyelt karakter. Az igazi felkent papok, paplovagok, illetve az égi vagy más túlvilági hatalmak szolgái rendesen, a szakrális mágiánál leírt módon, imával, áldozattal szerzik vissza hatalmuk."
                         }
                     ]
                 },
@@ -1738,6 +2169,37 @@
                         {
                             "type": "paragraph",
                             "text": "Azonban azt is meg kell jegyeznünk, hogy ha a karakter a szükséges képzettségeket elsajátítja ugyanolyan, teljes értékű varázstudóvá válhat, mint a karakter mely az adott szervezet diákja már gyermekkora óta. Bár ezek után kénytelen immáron az új képesség megkövetelte pontokat is kifizetni, hogy alkalmazni tudja őket."
+                        }
+                    ]
+                },
+                {
+                    "id": "sec_hatter2",
+                    "title": "Hátterek (folytatás)",
+                    "content_blocks": [
+                        {
+                            "type": "rule",
+                            "title": "Léleklenyomat (1)",
+                            "text": "A karakter e különleges képesség birtokában képes tárgyakon mások aurájának lenyomatát felfedezni. Igaz ez mindazon eszközökre, amelyek valaki Személyes aurájának védelmét élvezik, illetve azon tárgyakra, melyekhez valamilyen módon igen erős érzelmek kapcsolódnak (például egy gyilkos tőr, amivel bosszút álltak valakin). Az érzések, bevillanó emlékképek és érzelemfoszlányok általában akaratlanul rohantják meg, ha ilyen tárgyhoz ér. (Azt azonban le kell szögeznünk, hogy ezen villanásnyi látomások semmiben sem hátráltatják a karaktert.) A karakter tudatosan is képes alkalmazni adottságát, ha sikeres Asztrálpróbát tesz. A benyomások legtöbbször valamely érzelmileg felkavaró, sokkoló vagy eufórikus látomás keretében érkeznek, a karakter villanásnyi idő alatt szinte teljesen átéli a történteket, míg van, mikor csak szavak, kósza érzések jutnak el hozzá. Erről minden esetben a KM-nek kell döntenie."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "Mágiatagadás (1-5)",
+                            "text": "A mágiától idegenkedő, annak hatalmával évezredek óta dacoló természeti népek sajátja, általában híresebb harcosaik, hőseik különleges képessége. A lélek és a tudat teljesen elzárkózik az Asztrál- és a Mentálsík behatásaitól, mintegy falat emel maga köré. A karakter elméje képtelen mind a tudati (pszi), mind a mágikus energiák (mana) befogadására, így számára örökre elérhetetlenné válik a Pszi érzékenység és a Mágikus fogékonyság Háttér, illetve bezárkózásuk miatt az igazi mély hit is, mely a papi mágia, vagy a hitből fakadó védelem alapja. Tehát ha a karakter bír a Mágiatagadás Háttérrel, akkor nem kaphatja meg az esetleges vallásgyakorlásából eredő tudatalatti Mágiaellenállás bónuszait. Emellett a karakter nem veheti fel a Manalátó Hátteret. Az efféle adottság hátránya továbbá, hogy a karakter kevésbé érzékeny a körülötte lévő világra, épp ezért minden Asztrál alapú próbadobását annyi negatív módosítóval hajtja végre, ahány KAP-ért a Hátteret felvette. Tehát az asztrális Mágiaellenállás szempontjából nem csökken az Asztrálja. A Háttér nyújtotta előny, hogy nemcsak a Mágiatagadás Háttérrel rendelkező nem képes befogadni a mágikus hatalmat, de az ő elméjét is jóval nehezebb befolyásolni. A játék nyelvén ez annyit tesz, hogy a karakter minden Tapasztalati szinten (már az elsőn is) annyi pontot kap mind az Asztrális mind a Mentális Tudatalatti Mágiaellenállására (TME), mint amennyi pontot a Mágiatagadás Háttérre költött."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "Mágikus fogékonyság (1)",
+                            "text": "Ha a karakter mágikus tanokat kíván elsajátítani, úgy fel kell vennie a Mágikus fogékonyság Hátteret. Ha egy karakter fogékony a mágiára, de nem lett egyetlen mágiahasználó rend tagja sem, örökségét akkor sem veszíti el. Akaratlanul is képes mágikus hatások megidézésére vagy érzékenyen reagál a Manaháló rezdüléseire, stb. A lehetőségek tárháza végtelen, arról pedig, hogy ez a játékban hogyan mutatkozik meg, a KM tisztje dönteni. Az ezen Háttérrel bíró karakter a kalandozását a Tapasztalati mágia, illetve a Magasmágia képzettsége nyújtotta Mp-okkal kezdi, illetve ezek mellé vásárolhat KAP-jaiból újabbakat minden Tapasztalati szinten (már első szinten is)."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "Manalátó (2-3)",
+                            "text": "A karakter szelleme nyitott az éteri csatornák felé, mintegy hatodik érzékként észleli a Manaháló különböző rezdüléseit, hullámait. A karakter összpontosítás nélkül érzékeli a közelében (20 ynevi láb sugarú gömbön belül) létrejövő varázslatokat és fohászokat, ha azokat nem rejti Leplezés. Ellenkező esetben a Leplezés E-jének megfelelő negatív módosítóval végrehajtott sikeres Asztrálpróbával fedezheti fel csak a varázslatot és ebben az esetben is csak akkor, ha a karakter aktívan igyekszik felkutatni a Manaháló rezdüléseit, azaz összpontosít. Az ilyen érzékkel bíró személy megfoganásuk pillanatában érzi a varázslatok és fohászok hozzávetőleges helyét és irányát. Puszta összpontosítással pedig, némi időráfordítás után (2 kör), képes megmondani, hogy lakozik-e varázserő egy tárgyban vagy személyben. Mindez a karakter szeme előtt éteri kékes fénnyel felizzó tárgyakként, rúnákként, személyekként jelenik meg, a varázslatok pedig cikázó fényfolyamokként szelik át a levegőt. A lélekre ható mágiák (pl. papok és más varázstudók átkai, Megbélyegzés csókja, Asztrál- és Mentálmágia, stb.) nem fedezhetők fel e képesség segítségével. Abban az esetben, ha ez a tehetség különösen erős (3 pontos Háttér) – főleg varázstudó famíliák gyermekeire igaz – a KM beleegyezésével a karakter képessé válik arra, hogy különbséget tegyen a különböző hatalmú varázslatok, fohászok és varázstárgyak között, a bennük foglalt varázserő mennyisége tekintetében: minél nagyobb a varázserő, annál fényesebben izzik a forrása a karakter előtt."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "Művésztehetség (1)",
+                            "text": "A Háttér birtokosa kiemelkedő tehetséggel bír valamely művészetben. Ha képzi magát, igazi híresség válhat belőle, ha időt és energiát fordít tehetsége kibontakoztatására, akkor akár évszázadok múlva is emlegetett nagy művész lehet. A játék nyelvén ez annyit tesz, hogy a karakter valamely általa választott művészetben képes 4. fok fölé emelkedni."
                         }
                     ]
                 },
@@ -4349,6 +4811,206 @@
                         {
                             "type": "paragraph",
                             "text": "leírtak szerint ünnepelheti uruk jeles napjait. A lovag akár esküvőket vagy temetéseket is vezethet, ilyenkor azonban a későbbiekben egy felszentelt papnak vagy paplovagnak kell megerősítenie a szertartást Domvik igéivel áldva meg az emberi szándékot."
+                        },
+                        {
+                            "type": "heading",
+                            "text": "Az Isten Kardja Lovagrend lovagjának különleges előnyei a Lovagnál leírtakon kívül"
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "I. A rendbe tartozó lovag egyházi személy, ezért Shadonban csakis egyházi bírák ítélkezhetnek felette, illetve sem neki, sem semmiféle kíséretének nem kell híd-, útvámokat és révpénzt fizetnie."
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "II. Induláskor a karakter megkapja valamely az általa leginkább tisztelt archoz köthető képzettséget, mivel ezen tudomány elsajátításában jeleskedett leginkább. Első Arc – az Élet Teremtője: Orvoslás 2. fok, Élettan 2. fok, Herbalizmus 2. fok, Lélektan 2. fok. Második Arc – a Jóság Forrása: Lélektan 3. fok, Szakma (Pénzügyek) 2. fok, Számtan/mértan 2. fok. Harmadik Arc – a Hit Védelmezője: Pusztítás 3. fok, Élettan 3. fok. Negyedik Arc – a Gyógyító: Orvoslás 3. fok, Élettan 3. fok, Herbalizmus 3. fok. Ötödik Arc – a Tanító: Oktatás 3. fok, Lélektan 2. fok. Hatodik Arc – az Eretnekek Ostora: Lélektan 3. fok, Vallásismeret (Ranagol 3. fok)."
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "III. Az Isten Kardja lovagjai, ha már bizonyították hitüket, elszántságukat és hűségüket az egyház és uruk felé (10. Tsz. felett) a KM-mel egyeztetve akár Misztikus képzettségeket is tanulhatnak, ha ezzel az egyház céljait szolgálják – ez esetben különleges eljárásként beavató szertartások eredményeképpen a karakter utólag is elnyerheti a Kegyelt, Pszi érzékenység vagy (és) a Mágikus fogékonyság háttereket."
+                        },
+                        {
+                            "type": "heading",
+                            "text": "Az Isten Kardja lovagjának induló képzettségei 1. Tapasztalati szinten"
+                        },
+                        {
+                            "type": "table",
+                            "headers": [
+                                "Képzettségek",
+                                "Fok"
+                            ],
+                            "rows": [
+                                [
+                                    "Fegyverhasználat",
+                                    "3. fok"
+                                ],
+                                [
+                                    "Fegyverhasználat",
+                                    "2. fok"
+                                ],
+                                [
+                                    "Harctéri gyakorlat",
+                                    "2. fok"
+                                ],
+                                [
+                                    "Pajzshasználat",
+                                    "2. fok"
+                                ],
+                                [
+                                    "Fegyverismeret",
+                                    "2. fok"
+                                ],
+                                [
+                                    "Vértviselet",
+                                    "3. fok"
+                                ],
+                                [
+                                    "Hadvezetés",
+                                    "1. fok"
+                                ],
+                                [
+                                    "Lovaglás",
+                                    "3. fok"
+                                ],
+                                [
+                                    "Udvari etikett",
+                                    "2. fok"
+                                ],
+                                [
+                                    "Heraldika",
+                                    "2. fok"
+                                ],
+                                [
+                                    "Párbaj",
+                                    "1. fok"
+                                ],
+                                [
+                                    "Történelem",
+                                    "2. fok"
+                                ],
+                                [
+                                    "Írás/olvasás",
+                                    "2. fok"
+                                ],
+                                [
+                                    "Vallásismeret (Domvik)",
+                                    "2. fok"
+                                ],
+                                [
+                                    "Ősi nyelv (lingua domini)",
+                                    "2. fok"
+                                ]
+                            ]
+                        },
+                        {
+                            "type": "heading",
+                            "text": "A lovag rendje által oktatott képzettségei, melyeket az Oktatás képzettség 4. foka által nyújtott bónuszokkal tanulhat"
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "Állatismeret, Esés, Fájdalomtűrés, Fegyverhasználat, Fegyverismeret, Hadvezetés, Harctéri gyakorlat, Heraldika, Írás/olvasás, Kultúra, Legendaismeret, Lélektan, Lovaglás, Művészetek (Rajz), Nyelvtudás, Ősi nyelv (lingua domini), Pajzshasználat, Párbaj, Pszi (pyarroni), Számtan/mértan, Taktika, Térképészet, Történelem, Udvari etikett, Vallásismeret, Vértviselet – illetve a választott Domvik-arcnak megfelelő képzettségek."
+                        }
+                    ]
+                },
+                {
+                    "id": "sec_31c",
+                    "title": "Erigowi Krad Lovagrend",
+                    "content_blocks": [
+                        {
+                            "type": "paragraph",
+                            "text": "Ynev legnagyobb északi központú lovagrendje. A pyarroni vallás elterjedése után Erigow lett Észak kulturális fővárosa. Nem csoda hát, hogy a legnagyobb és legősibb lovagrend is itt emelt magának fellegvárat. Tagjai között egyenlő arányban találunk lovagokat és paplovagokat. Mindükre szigorú igazságosság és kiemelkedő műveltség jellemző. A Rend nagymestere mindenkor az erigowi uralkodóherceg, aki egyben Vörös Hadúr is. Rendházaik behálózzák az egész Északi Szövetséget, felvételt nyerni tagjaik közé igazi megtiszteltetés és minden északi nemes vágya."
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "Az Erigowi Krad Rend megalakulása óta a pyarroni hit védelmezője északon, állandó háborúságban áll Toron haduraival, és a Kard Testvériség lovagjaival. Létszámuk igen változó, mert a rendtagság nem örökölhető: csak olyan lovagok kerülhetnek a rend soraiba, akik bizonyítottak és teljesítették a rend főtanácsának valamely küldetését. A kérelmező alkalmasságát maga a nagymester dönti el, s bizony sokakat visszautasítottak már. Az Erigowi Krad lovagok nem egyéni hőstetteikkel vívták ki hírnevüket, hanem hihetetlen fegyelmezettségükkel, kiváló taktikai érzékükkel és félelmet nem ismerő, már-már makacssággal határos bátorságukkal. Csapataik nemegyszer arattak fényes diadalt sokszoros túlerővel szemben is, aranykörrel ékített, vörös-fehér sávos lobogójuk mindig rettegést ébreszt ellenségeikben."
+                        },
+                        {
+                            "type": "heading",
+                            "text": "Az Erigowi Krad Lovagrend lovagjának különleges előnyei a Lovagnál leírtakon kívül"
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "I. A rend tagjai a Sigranomoi Egyetemhez fűződő jó viszonyuk miatt bármikor ellátogathatnak előadásokat meghallgatni, részt venni a vitákban stb. az egyetem falai közé. Emiatt 3. fokú Oktatás képzettségnek megfelelő bónusszal tanulhatnak minden Tudományos és Misztikus képzettséget."
+                        },
+                        {
+                            "type": "heading",
+                            "text": "Az Erigowi Krad Lovagrend lovagjának induló képzettségei 1. Tapasztalati szinten"
+                        },
+                        {
+                            "type": "table",
+                            "headers": [
+                                "Képzettségek",
+                                "Fok"
+                            ],
+                            "rows": [
+                                [
+                                    "Fegyverhasználat",
+                                    "3. fok"
+                                ],
+                                [
+                                    "Fegyverhasználat",
+                                    "2. fok"
+                                ],
+                                [
+                                    "Harci gyakorlat",
+                                    "2. fok"
+                                ],
+                                [
+                                    "Fegyverismeret",
+                                    "2. fok"
+                                ],
+                                [
+                                    "Vértviselet",
+                                    "3. fok"
+                                ],
+                                [
+                                    "Hadvezetés",
+                                    "3. fok"
+                                ],
+                                [
+                                    "Lovaglás",
+                                    "3. fok"
+                                ],
+                                [
+                                    "Udvari etikett",
+                                    "2. fok"
+                                ],
+                                [
+                                    "Heraldika",
+                                    "2. fok"
+                                ],
+                                [
+                                    "Párbaj",
+                                    "1. fok"
+                                ],
+                                [
+                                    "Lélektan",
+                                    "2. fok"
+                                ],
+                                [
+                                    "Történelem",
+                                    "2. fok"
+                                ],
+                                [
+                                    "Írás/olvasás",
+                                    "2. fok"
+                                ],
+                                [
+                                    "Számtan/mértan",
+                                    "2. fok"
+                                ],
+                                [
+                                    "Térképészet",
+                                    "2. fok"
+                                ]
+                            ]
+                        },
+                        {
+                            "type": "heading",
+                            "text": "A lovag rendje által oktatott képzettségei, melyeket az Oktatás képzettség 4. foka által nyújtott bónuszokkal tanulhat"
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "Állatismeret, Esés, Fájdalomtűrés, Fegyverhasználat, Fegyverismeret, Hadvezetés, Harctéri gyakorlat, Heraldika, Írás/olvasás, Kultúra, Legendaismeret, Lélektan, Lovaglás, Művészetek (Rajz), Pajzshasználat, Párbaj, Pszi (pyarroni), Számtan/mértan, Taktika, Térképészet, Történelem, Udvari etikett, Vallásismeret, Vértviselet."
                         }
                     ]
                 }
