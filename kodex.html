@@ -1521,6 +1521,13 @@ function renderSection(section) {
             p.innerHTML = autoLinkify(block.text);
             contentArea.appendChild(p);
         }
+        else if (block.type === 'heading' && (block.text || block.title)) {
+            const h = document.createElement('h4');
+            h.className = 'content-subheader';
+            h.style.cssText = "font-family:'Cinzel',serif;color:#d4af37;font-size:1.05rem;margin:1.5rem 0 .5rem;border-bottom:1px solid rgba(212,175,55,.25);padding-bottom:.3rem;";
+            h.textContent = block.text || block.title;
+            contentArea.appendChild(h);
+        }
         else if (block.type === 'rule' && block.text) {
             const div = document.createElement('div');
             div.className = 'callout callout-rule';

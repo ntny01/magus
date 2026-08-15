@@ -18015,11 +18015,11 @@
                             "text": "A híd nyelv ma már nem telítődik az ősök hatalomtól zengő, tárnákat rengető erejével, mégis nagy kincs birtokába juthat ezen nyelv ismerője, már ha a keményfejű törpék titkaikba avatják. Hiszen az északi historikusok rákfenéjétől, a Kyr Birodalom és utódállamainak elfogult történetírásától független, csak a törpékre jellemzően egyenes leírásokra és forrásokra bukkanhat az illető."
                         },
                         {
-                            "type": "section_title",
+                            "type": "heading",
                             "text": "Képzettségek"
                         },
                         {
-                            "type": "section_title",
+                            "type": "heading",
                             "text": "Számtan/mértan (III – Intelligencia)"
                         },
                         {
@@ -18035,7 +18035,7 @@
                             "text": "Mértanilag korszakalkotó ötletei vannak, főleg a tapasztalati építészeti, mechanikai felhasználásokban, de páran a világegyetem, Ynev felépítésének titkait is feszegetik."
                         },
                         {
-                            "type": "section_title",
+                            "type": "heading",
                             "text": "Térképészet (III – Intelligencia)"
                         },
                         {
@@ -23931,7 +23931,7 @@
                 },
                 {
                     "id": "sec_136",
-                    "title": "Tárgyak Ellenállása",
+                    "title": "Sisakok",
                     "content_blocks": [
                         {
                             "type": "paragraph",
@@ -23940,10 +23940,6 @@
                         {
                             "type": "paragraph",
                             "text": "Bonyolultságukban ezután következnek az egyszerű rostélyos sisakok, ahol az orrvédőt a mozgatható rostély váltja föl. A legfinomultabbak kétségkívül a teljes vértezetet kiegészítő nagy sisakok, ami több részből áll, és az egész fejet, sőt a nyakat is körülveszi."
-                        },
-                        {
-                            "type": "paragraph",
-                            "text": "Különböző anyagú tárgyak más és más hatásra érzékenyek, ezért először ezeket kell összefoglalnunk."
                         }
                     ]
                 },
@@ -23951,6 +23947,10 @@
                     "id": "sec_137",
                     "title": "Tárgyak ellenállása",
                     "content_blocks": [
+                        {
+                            "type": "paragraph",
+                            "text": "Különböző anyagú tárgyak más és más hatásra érzékenyek, ezért először ezeket kell összefoglalnunk."
+                        },
                         {
                             "type": "table",
                             "headers": [
@@ -25148,7 +25148,7 @@
                 },
                 {
                     "id": "sec_149",
-                    "title": "3. fokú diszciplínák",
+                    "title": "3. fokú diszciplínák (folytatás)",
                     "content_blocks": [
                         {
                             "type": "paragraph",
@@ -33997,7 +33997,7 @@
                             "text": "A tűzvarázsló ezt a varázslatot csak a hét iskolaformával és a szabálytalan elemi formákkal kapcsolatban alkalmazhatja."
                         },
                         {
-                            "type": "section_title",
+                            "type": "heading",
                             "text": "Őstüzek befolyásolása"
                         },
                         {
@@ -34218,7 +34218,7 @@
                 },
                 {
                     "id": "sec_191",
-                    "title": "Szabad Elemi Formák",
+                    "title": "Tűzvarázslatok táblázatai",
                     "content_blocks": [
                         {
                             "type": "table",
@@ -35813,7 +35813,7 @@
                             "text": "A személy, akit Mentálfonál köt össze a varázslóval, a mágia törvényei szerint Társszimpátiás viszonyban áll vele. A szimpatikus kapcsolat mindaddig fennáll, míg a fonál létezik."
                         },
                         {
-                            "type": "section_header",
+                            "type": "heading",
                             "text": "Beszédközpontra ható operációk"
                         },
                         {
@@ -35833,7 +35833,7 @@
                             "text": "Az áldozat megnémul: képtelen egy szót is kiejteni, csak érthetetlen nyögdécselésre képes, egészen addig, míg a varázslat időtartama tart."
                         },
                         {
-                            "type": "section_header",
+                            "type": "heading",
                             "text": "Érzékközpontra ható operációk"
                         },
                         {
@@ -38355,7 +38355,7 @@
                             "text": "zavarodnak és gyengébben harcolnak. A tárgy minden E-je után -1 levonás jár a démonok Te-re és minden varázslatukat -1 E-vel gyengébben képesek csak létrehozni. A hatás 10 percig tart. Két használata között legalább egy órának kell eltelnie."
                         },
                         {
-                            "type": "section_title",
+                            "type": "heading",
                             "text": "Elemek kövei"
                         },
                         {
@@ -38379,39 +38379,39 @@
                             "text": "Nefrit (Elemi Erő)"
                         },
                         {
-                            "type": "section_title",
+                            "type": "heading",
                             "text": "Borostyán"
                         },
                         {
-                            "type": "section_title",
+                            "type": "heading",
                             "text": "Cirkon"
                         },
                         {
-                            "type": "section_title",
+                            "type": "heading",
                             "text": "Füstkvarc"
                         },
                         {
-                            "type": "section_title",
+                            "type": "heading",
                             "text": "Hegyikristály, Holdkő, Kalcedon, Krizoberil, Obszidián"
                         },
                         {
-                            "type": "section_title",
+                            "type": "heading",
                             "text": "Jaspis"
                         },
                         {
-                            "type": "section_title",
+                            "type": "heading",
                             "text": "Krizopráz"
                         },
                         {
-                            "type": "section_title",
+                            "type": "heading",
                             "text": "Opál"
                         },
                         {
-                            "type": "section_title",
+                            "type": "heading",
                             "text": "Peridot (Asztrál), Szerpentin (Mentál)"
                         },
                         {
-                            "type": "section_title",
+                            "type": "heading",
                             "text": "Igaz-drágakövek"
                         },
                         {
@@ -38937,7 +38937,7 @@
                             "text": "Ha úgy gondolod, már ismered Eriont, biztosan elvesztél. Nem készülhetsz fel egy öntörvényű világ minden eseményére – hisz a látszólag állandó törvények napról napra, percről percre változnak. Előfordulhat, hogy az Inkvizítorok Szövetségének ügynökei keresnek életre-halálra, holott hithű pyarronita vagy, s még az is kiderülhet, hogy nem tévedés az egész. Ne csodálkozz hát, ha ezek után a Kard Testvériségének lovagjai mentenek meg, és ráadásul szépen kérnek, segíts nekik egy Orwella-szentély lerombolásában! Erion fele részben a Káosz gyermeke: az itt élők s az ide látogatók, szolgálják bár a Rendet, valójában a rendezetlenség esszenciáját hordozzák magukban különös céljaikkal és szörnyű tudásukkal. Ezt a tudást bárki megszerezheti, és attól fogva – akaratlanul – a Káosz szolgájává válik. Mert a tudás lényege igen egyszerű, s amíg csak hallod, fel sem foghatod veszélyét; a baj akkor kezdődik, amikor megérted. A veszélyes bölcsesség egyetlen mondatban is összefoglalható: „Az univerzum eseményei sosem azonosak azzal, aminek látszanak.” Lépj a városba a Keleti kapun, félig máris győzelmet arattál. A tolvajklánok tagjai errefelé sokkal megfontoltabbak: ha nem hivalkodik ruházatod, ha erszényedet nem az övedre kötötted, nyugtod lehet tőlük. Indulj a főtér felé egyenesen – igaz, innen még nem láthatod. Jobb kéz felé óriási, elhanyagolt bérkasárnyákat pillantasz meg. Fáradt koldusok kuporognak a kapuk előtt – nyomorúságuk nem talmi, rongyaikat sem cserélik hétvégén tiszta ruhára. El akarsz rejtőzni a nagyvilág elől? Jobb helyre nem is tévedhettél volna. Fordulj be az első sikátorba! Orrfacsaró bűz csapja meg orrodat, a viskók és romos házak látványa után az imént magad mögött hagyott bérkasárnyák valóságos palotának rémlenek. Mocskos utcagyerekek lézengének mindenfelé, de ne várd, hogy egy kis pénz reményében bármelyikük hozzád fusson megérdeklődni, segíthet-e valamiben! Rég megtanulták már, hogy az erre járóktól legfeljebb néhány rúgást kaphatnak. Tégy úgy, mintha tudnád, merre tartasz! A fegyveresek főleg elhúzóznak, sok hasznát úgysem vennéd. Ha jól alakítasz, talán elhiszik, hogy tudod, mit akarsz – legfeljebb távolról csodálják lovadat, némelyiküknek a nyál is összefut szájában: hetekre megoldaná vele az élelemszerzés gondját. Ha arcodon zavar tükröződik, esetleg túlzott magabizás, nem jutsz messzire. Mire észbe kapnál, már lerántottak a lóról, esetleg kiröpül feléd néhány nyílvessző. Nem, nem rád céloznak, hisz ruházatod vérteit is rejtheti; a hátasod dől majd ki alólad, és a hullamérge senkinek sem kegyelmez. Pattanj fel dühödten, ránts kardot – senki sem rohan rád. Az ablakokon üres tekintetű páriák kuporognak, és látszólag ügyet sem vetnek rád. Ezek után nincs sok választásod – igaz, az életedből sincs túl sok hátra. Elindulhatsz visszafelé, és sosem érsz ki. A kapualjból eléd pattanók közül legvághatsz kettőt-hármat, de a közepén elől nincs hová menekülnöd. Hány kődarabnak kell eltalálnia, hogy vérmocskosan a földre zuhanj? Újra állsz? Sebaj, van omladék elég. Az itt lakók pontosan céloznak, gondosan ügyelnek rá, hogy a lehetőségek szerint életben maradj. Amikor már alig lélegzel, megrohannak. A tárgyaidat sosem látott gyorsasággal szedik el tőled, és arra sem veszik a fáradtságot, hogy megkötözzenek. Mielőtt megpróbálnál talpra vergődni, néhány botütést kapsz, aztán egyikük – a legnagyobb darab – a vállára kap. Mindeközben egyetlen szó sem esik. Ordítasz, segítségért kiáltasz, eszedbe jut egy kincset ajánlasz az életedért, hiába. Utolsó utad sikátorokon keresztül, néha belső udvarokat kereszteztek, és egy fél nap múltán éred a Szegénynegyed peremét. Nincs okod a megkönnyebbülésre. Hatalmas kőkerítést pillantasz meg, melyet itt-ott szűk átjárónyílások tarkítanak. Alkonyodik. A fal mellett óvatos árnyak mozdulnak. Hordozód a földre dob; fájdalmat alig érzel. Rövid alkudozás következik halk torokhangon (ne erőlködj, úgysem érted), végül gazdát cserélsz. A behemót, aki idáig cipelt, néhány ezüstpénzt kap, esetleg egy zsák koszos lisztet – mit számít már ez? Újdonsült uraid közül az egyik felkap. A sötétben nem láthatod, kicsoda-micsoda. Béklyót vetnek rád, te megint próbálkozol, könyörögsz vagy átkozódsz. Legfeljebb érthetetlen morgás a válasz. Előbb vagy utóbb feltűnik, milyen különös szagot árasztanak rabtartóid: émelyítően édeskés, elmúlást idéző kipárolgás ez. A téged cipelő fickó kezei hidegek, verejtéktől síkosak. Egy fertályóra, talán kettő, és a fal egyik nyílásához érkezel. A vasrácsos ajtó nyikorog – az utolsó dolog, amit a külvilágból látsz, a horizontra kapaszkodó vörös hold. Egy kanyar, halálszagú fuvallat, s teljes sötétség borul rád. Ősi, megmagyarázhatatlan rettegés kerít hatalmába – ordítasz, a falak egykedvűen visszhangozzák sikolyodat. Eljutottál a Nekropoliszba."
                         },
                         {
-                            "type": "section_header",
+                            "type": "heading",
                             "text": "6. Temetőnegyed"
                         },
                         {
@@ -39031,7 +39031,7 @@
                             "text": "A Fekete Hadurak megjelenésük óta egy-egy nép, állam uralkodói is egyben: pontosabban, aki megszerzi magának e címet, rövidesen uralkodóvá válik – így azután nem kevés dinasztia bukott el a fekete lobogók miatt. A Fekete Hadurak rendre Toron császára, az ediomadi főhierarchia, Abaszisz nagykirálya, a keleti barbár kánja, Rowon zsoldoshercege,"
                         },
                         {
-                            "type": "section_title",
+                            "type": "heading",
                             "text": "Északi Szövetség"
                         },
                         {
@@ -39593,7 +39593,7 @@
                             "text": "A haonwelliek pyarroni hitet vallanak: Arel, Alborne és Kyel kultusza a legelterjedtebb, ám – különösen az elfek és kevertvérűek lakta negyedekben – gyakoriak a kalahorák emlékhelyei is."
                         },
                         {
-                            "type": "section_title",
+                            "type": "heading",
                             "text": "Erigow"
                         },
                         {
@@ -39633,7 +39633,7 @@
                             "text": "A közbiztonság kiemelkedően jó, meglehet, a legkülönb a Szövetség országai közül. Ez nem csupán gazdasági okokra vezethető vissza, hisz Erigow egyéb erényei mellett a pyarroni vallás északi központja. Természetesen nem hiányozhatnak innét a kyr istenségek templomai, sőt Ranil egyháza szintén képviselteti magát. A hercegség védistene Krad, de igen elterjedt Dreina és Arel kultusza is."
                         },
                         {
-                            "type": "section_title",
+                            "type": "heading",
                             "text": "Ilanor"
                         },
                         {
@@ -39689,7 +39689,7 @@
                             "text": "Szépmezőn többségben vannak a pýarroní hit hívei, elsősorban Arelt, Ellanát és Kyelt imádják, de nyílt titoknak számít, hogy sokan az ősi kultusz isteneit – Kai-Syahot, a Szűz Vadászt, Dal Lartit, Mindenek Anyját és Kruh-Berant, az Ősz Üstökűt – látják bennük."
                         },
                         {
-                            "type": "section_header",
+                            "type": "heading",
                             "text": "Tarin"
                         },
                         {
@@ -40269,9 +40269,8 @@
                             "text": "Toron társadalma a következő kasztokra tagolódik:"
                         },
                         {
-                            "type": "section_title",
-                            "text": "Elendor – Fényesség",
-                            "title": "Elendor – Fényesség"
+                            "type": "heading",
+                            "text": "Elendor – Fényesség"
                         },
                         {
                             "type": "paragraph",
@@ -40366,7 +40365,7 @@
                             "text": "sem hallanak, csak a határokon túli barbárok bárdolatlanságának és rosszindulatának folyamatos felemlegetését. Ha valaki külországiként kíván huzamosabb időt a császárságban tölteni, jobban teszi, ha pártfogó után néz. Nemcsak azért tanácsos ez, mert Shuluron és a nagyobb városokon kívül törve vagy sehogy sem beszélik a Közös Nyelvet, hanem azért is, mert az idegen csak a székesfővárosban érezheti többé-kevésbé biztonságban magát. Persze – Toronról lévén szó – ez a biztonság is erősen viszonylagos."
                         },
                         {
-                            "type": "section_header",
+                            "type": "heading",
                             "text": "EGYÉB NEVEZETES ÁLLAMOK"
                         },
                         {
@@ -40678,11 +40677,12 @@
                             "text": "A hivatalos nyelv a pyarroni, bár errefelé a kontinens majd’ minden élő nyelvét megértik."
                         },
                         {
-                            "type": "section",
-                            "text": "A Hat Város lakói magas, aranybarna bőrű, hullámos, sötét hajú emberek. A férfiak nagy súlyt fektetnek a kidolgozott izomzatra, a nők a csábító, buja megjelenésre. A férfiak ágyékkötőt, felette térdig érő szoknyát hordanak, felsőtestüket – ha felvértezve nem öltenek – vagy szabadon hagyják, vagy csak a vállukon vetnek át egy gondosan összehajtogatott, hűvösebb időben köpenyegként szolgáló ruhadarabot. A nők elől-hátul mélyen kivágott, lenge ruhát, hosszú szoknyát viselnek, amit csípőjük és kebleik ívének kihangsúlyozása végett a derekuknál övvel húznak össze. Mondják, a Délvidék asszonyai közül ők értenek a legjobban a férfiak nyelvén, ők ismerik legjobban a csábítás tudományát. Azt is beszélik, mindenre kaphatók.",
-                            "title": "Hat Város",
-                            "headers": [],
-                            "rows": []
+                            "type": "heading",
+                            "text": "Hat Város"
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "A Hat Város lakói magas, aranybarna bőrű, hullámos, sötét hajú emberek. A férfiak nagy súlyt fektetnek a kidolgozott izomzatra, a nők a csábító, buja megjelenésre. A férfiak ágyékkötőt, felette térdig érő szoknyát hordanak, felsőtestüket – ha felvértezve nem öltenek – vagy szabadon hagyják, vagy csak a vállukon vetnek át egy gondosan összehajtogatott, hűvösebb időben köpenyegként szolgáló ruhadarabot. A nők elől-hátul mélyen kivágott, lenge ruhát, hosszú szoknyát viselnek, amit csípőjük és kebleik ívének kihangsúlyozása végett a derekuknál övvel húznak össze. Mondják, a Délvidék asszonyai közül ők értenek a legjobban a férfiak nyelvén, ők ismerik legjobban a csábítás tudományát. Azt is beszélik, mindenre kaphatók."
                         },
                         {
                             "type": "paragraph",
@@ -40705,11 +40705,12 @@
                             "text": "A Hat Városban a pyarroni vallás selmovita irányzata, elsősorban Antoh kultusza dívik."
                         },
                         {
-                            "type": "section",
-                            "text": "Azonban elmúltak már azok az idők, mikor Krán megtörte az övével ellentétes felfogású civilizációk jelenlétét a Délvidéken. A kie-lyroniak nem voltak felkészülve azokra az aljasságokra, melyek annyira jellemzik Kránt, s melyet azóta oly alaposan megismerhetett a világ. Shackallor birodalma egyetlen évszázadot engedélyezett magának a sikerre – ennyi elegendőnek bizonyult, hogy politikai mesterkedéssel, mágiával szétbomlassza a Szövetséget.",
-                            "title": "Predoc és Edorl",
-                            "headers": [],
-                            "rows": []
+                            "type": "heading",
+                            "text": "Predoc és Edorl"
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "Azonban elmúltak már azok az idők, mikor Krán megtörte az övével ellentétes felfogású civilizációk jelenlétét a Délvidéken. A kie-lyroniak nem voltak felkészülve azokra az aljasságokra, melyek annyira jellemzik Kránt, s melyet azóta oly alaposan megismerhetett a világ. Shackallor birodalma egyetlen évszázadot engedélyezett magának a sikerre – ennyi elegendőnek bizonyult, hogy politikai mesterkedéssel, mágiával szétbomlassza a Szövetséget."
                         },
                         {
                             "type": "paragraph",
@@ -40886,7 +40887,7 @@
                             "text": "A pyarroni vallás selmovita irányzata a meghatározó, a syburriaiak elsősorban Arelt, Ellanát és Gilront imádják."
                         },
                         {
-                            "type": "section_title",
+                            "type": "heading",
                             "text": "Enysmon"
                         },
                         {
@@ -40946,7 +40947,7 @@
                             "text": "A pyarronita vallás Selmovita irányzata dívik itt is; főként Arelt, Dartont, Kyelt és Uwelt tisztelik, de természetesen főházkodnak más istenekhez is."
                         },
                         {
-                            "type": "section_title",
+                            "type": "heading",
                             "text": "Viadomo"
                         },
                         {
@@ -41331,7 +41332,7 @@
                             "text": "Vallás: Domvik hite az államilag bevett vallás, Shadonban még jövevények sem imádhatnak nyíltan más istent. A Pyarroni Paktum rendelkezései természetesen ehelyütt is érvényesek. A mágia gyakorlása tilos – noha a papok többségükben szintén varázstudók, akik, szellemileg megtisztultak lévén, beavatást nyertek a legnagyobb misztériumokba –, a fekete mágia használóit halállal sújtják. Érdekes tény, hogy Domvikhoz csak papok és szerzetesek fohászkodnak; az egyszerű paraszt és polgár számára e szakrális forma túlságosan emelkedett. A köznép inkább angyalaihoz, védszellemeihez imádkozik, akik egyébként az Egyetlen különféle megjelenési formáival azonosak."
                         },
                         {
-                            "type": "section_title",
+                            "type": "heading",
                             "text": "Tartományok"
                         },
                         {
@@ -41365,7 +41366,7 @@
                             ]
                         },
                         {
-                            "type": "section_title",
+                            "type": "heading",
                             "text": "Nagyvárosok"
                         },
                         {
@@ -41398,7 +41399,7 @@
                             "text": "Némelyik helytartónak saját titulusa is van – lásd Felföld: fejedelem. A helytartó adományozza a tartományi nemesi címeket. A vitatott adók behajtását minden esetben a birodalmi hadsereg végzi."
                         },
                         {
-                            "type": "section_title",
+                            "type": "heading",
                             "text": "Shadon városa"
                         },
                         {
@@ -41406,7 +41407,7 @@
                             "text": "A központi tartomány a Shadlek-folyó partján, az azonos nevű város körül terül el. Valaha, a birodalom felvirágzása előtt itt ütöttek fel táborukat a kóborló lovagok. A M.A.G.U.S. jelenének Shadonja élettől pezsgő, bűnben, kéjben és imákban tobzódó, százezres nagyváros, királyi székhely, a birodalom dicsőségének és erejének szimbóluma."
                         },
                         {
-                            "type": "section_title",
+                            "type": "heading",
                             "text": "Shadlek"
                         },
                         {
@@ -41500,7 +41501,7 @@
                             "text": "Árak: Változó"
                         },
                         {
-                            "type": "section_header",
+                            "type": "heading",
                             "text": "Gorvik"
                         },
                         {
@@ -41520,7 +41521,7 @@
                             "text": "P.sz. 3682-ben, Todvarban megrendezték a Nagy-Gorviki Tanácsülést, amelynek célja az egység megteremtése volt, a felek azonban nem jutottak egyezségre. A fiaskóért a hagyomány szerint Abrado kevély hercegét és Akvilona intrikus főpapját terheli a felelősség."
                         },
                         {
-                            "type": "section_header",
+                            "type": "heading",
                             "text": "Útravaló"
                         },
                         {
@@ -41552,7 +41553,7 @@
                             "text": "Wayne Chapman: Geofrámia"
                         },
                         {
-                            "type": "section_title",
+                            "type": "heading",
                             "text": "A hitvallás"
                         },
                         {
@@ -41572,7 +41573,7 @@
                             "text": "Soha, semmilyen körülmények között nem fordulhat elő, hogy a hitehagyott karakter egy másik istenség papjává váljon, akár ugyanazon a panteonon belül is! A gyülekezetbe, az egyszerű hívek közé esetenként beállhat ugyan, de egyetlen isten sem ajándékoz meg bizalmával egy olyan halandót, aki korábban már egy másikat megtagadott. Ennek semmi köze az égi hatalom erkölcsi beállítottságához: egyszerűen arról van szó, hogy akit egy másik istenség nem tartott méltónak kegyére, azt valószínűleg jó okkal taszította el magától. Az isteneknek ezernyi hűséges követője van, akit hatalommal ruházhatnak fel, nincsenek rászorulva az efféle kétes hírű renegátok szolgálataira. Soha ne feledjük, hogy nem az égiek keresik a halandók kegyeit, hanem éppen fordítva!"
                         },
                         {
-                            "type": "section_title",
+                            "type": "heading",
                             "text": "Domvik"
                         },
                         {
@@ -41939,7 +41940,7 @@
                             "text": "Gorhannain, a Tűzben Élő: Ízig-vérig kráni kalahora. Nem a tűzre vigyáz – ő maga a tűz. Nem a tűz miatt él, hanem általa. A hagyományok tiszteletben tartásával párosuló kíméletlen nagyrátörést jelképezi, kifordítva és eltorzítva Eidhíl K'meakhan, illetve Nemathiel Airaven tanait. Ezzel kitűnő ideológiai alapozást szolgáltat a kráni elfek agresszív és büszke belpolitikai csatározásaihoz."
                         },
                         {
-                            "type": "section_header",
+                            "type": "heading",
                             "text": "Krán"
                         },
                         {
@@ -41947,7 +41948,7 @@
                             "text": "Verrion H'anthall, a Sötétség Szája, a Mindeneket Elnyelő: A kráni elfek leghatalmasabb kalahorája, akit maga a Kosfejes Úr hozott létre: nyálát, könnyét és verítékét keverte el azzal a vérrel, amit az Elveszettek egyik mártírjának ereiből folyatott ki, majd teremtő leheletét a lüktető masszára bocsátotta. Ilyenképpen született meg Verrion, a Sötétség Szája, a Mindeneket Elnyelő, akit létezése első percétől kezdve csillapíthatatlan éhség gyötört. Egyesek szerint a Tizenhármak testvére ő; mások a huszonötödik Káosz-angyalnak tartják; megint mások művi lénynek, démonikus golemnek, Ranagol lángelméje holt-eleven bizonyítékának. Az igazsághoz"
                         },
                         {
-                            "type": "section_header",
+                            "type": "heading",
                             "text": "Mindenhol tisztelt"
                         },
                         {
@@ -41955,7 +41956,7 @@
                             "text": "Mallior, az Éjben Kacagó: Az egyetlen olyan kalahora, akit valamennyi elf tisztel Yneven, a Délvidéken éppúgy, mint Északon, de még Kránban is. Életében az elf-aquir háborúk legendás hőse volt, aki dicső halálával szentté magasztosult, s e minőségében a bosszúvágyat és a sötét szenvedélyeket személyesíti meg. A külvilágiak csak végső elkeseredésükben fordulnak hozzá, Kránban azonban sokkal elterjedtebb a kultusza; itt élnek vér szerinti leszármazottai is, a Ly'She-matenelek, azaz a Tettek Emlékezői."
                         },
                         {
-                            "type": "chapter_header",
+                            "type": "heading",
                             "text": "KÁOSZ-ANGYALOK"
                         },
                         {
@@ -42951,7 +42952,7 @@
                             "text": "A Xing általában magányos, még a hozzá hasonlók társaságát sem kedveli. Félelmetes harci technikái miatt még a démonurak és -hercegek is tartanak tőle, s ritkán szorítják engedelmességre. A Xing a démoni síkok kóbor lovagja. Megidézésétől is ajánlatos tartózkodni, hisz legfeljebb ártó mágiák kilátásba helyezésével lehet sakkban tartani, de tartsuk észben, hogy intelligens, könnyen átlát a szitán, és nem szenvedheti, ha ellenfele blöfföl."
                         },
                         {
-                            "type": "section_header",
+                            "type": "heading",
                             "text": "Sárkányok"
                         },
                         {
@@ -43331,7 +43332,7 @@
                             "text": "Ha a Lesath anyagi testet ölt, vonatkozik rá a fent jelölt Ép-érték. Ez az érték azonban csak az anyagi test jellemzi: ha a pontok elfogynak, az anyagi test szertefoszlik, és a Lesath egy teljes napig nem képes újat összeállítani, minek következtében nem képes fizikai kapcsolatba lépni az Anyagi Síkkal. Ez idő alatt – magától értetődően – nem használhat fegyvert, nem használhat Anyagi mágiát sem. A Lesath valódi, légies teste csak akkor szenved sérülést, ha Ép-t sebeznek rajta."
                         },
                         {
-                            "type": "section_title",
+                            "type": "heading",
                             "text": "Egyéb Bestiák"
                         },
                         {
