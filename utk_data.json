@@ -4,6 +4,306 @@
             "title": "BEVEZETÉS ÉS ALAPOK",
             "sections": [
                 {
+                    "id": "sec_kifejezesek",
+                    "title": "Kifejezések",
+                    "content_blocks": [
+                        {
+                            "type": "paragraph",
+                            "text": "(A játékban leggyakoribb kifejezések mellett azok rövidítése szerepel.)"
+                        },
+                        {
+                            "type": "rule",
+                            "title": "Akaraterő (Akr)",
+                            "text": "A karakter egyik fő Tulajdonsága. A karakter önkontrollját mutatja meg, azt a képességet, hogy szelleme mennyire képes uralkodni a teste felett. Fontos összetevője a Fájdalomtűrés pontnak és a Mentális Mágiaellenállásnak."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "Asztrál (Aszt)",
+                            "text": "A karakter egyik fő Tulajdonsága. Elsősorban az érzelemvilág kiegyensúlyozottságát jellemzi. Fontos összetevője az Asztrális Mágiaellenállásnak."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "Asztrálmágia",
+                            "text": "Azon mágiaformák gyűjtőneve, melyek a befolyásolni kívánt lény érzelemvilágára hatnak."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "Állóképesség (Áks)",
+                            "text": "A karakter egyik fő Tulajdonsága. A karakter hosszas fizikai erőkifejtésre való alkalmasságáról tudósít. Fontos összetevője a Fájdalomtűrés pontnak."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "Célzó érték (CÉ)",
+                            "text": "A karakter harcértékének egyik összetevője. Azt fejezi ki, hogy távolsági fegyverekkel (hajító- és lőfegyverekkel) milyen könnyen tud eltalálni valamit – vagy valakit."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "Egészség (Egs)",
+                            "text": "A karakter egyik fő Tulajdonsága. A fertőzésekkel és más egészségkárosító fizikai megpróbáltatásokkal szembeni védettségről tudósít. Fontos összetevője az Életerő pontnak."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "Életerő pont (Ép)",
+                            "text": "Azt mutatja meg, hogy egy adott lény hány súlyos, kritikus sebet tud elviselni, mielőtt meghalna. A humanoid lényeknek többé-kevésbé azonos mennyiségű Életerő pontjuk van. Ha az Ép nulla alá csökken, a lény meghal."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "Életút-játék",
+                            "text": "Az olyan kalandsorozatot nevezzük életútjátéknak, melynek azonosak a szereplői. Ez gyakorlatilag azt jelenti, hogy egy adott karakter életét játsszuk végig."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "Erő",
+                            "text": "A karakter egyik fő Tulajdonsága. A karakter fizikai erejét jellemzi. Fontos összetevője a Támadó értéknek és a Sebzésjáruléknak."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "Érzékelés (Érz)",
+                            "text": "A karakter egyik fő Tulajdonsága. Az adott lény általános figyelmének, illetve az érzékszervek fejlettségének, élességének mértékét jelöli. Fontos összetevője a Kezdeményező- és a Célzó értéknek."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "Fájdalomtűrés pont (Fp)",
+                            "text": "Annak a mértéke, hogy egy lény hány kisebb sebesülést képes elviselni. Ha egy lény Fp-i elfogynak, elájul. A Fájdalomtűrés pontok hiánya azt vonja maga után, hogy a sebzés értéke közvetlenül az Életerő pontokból (lásd ott) vonódik le."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "Fegyver méretkategória",
+                            "text": "Megmutatja, hogy az adott fegyver mekkora, melyik méretkategóriába esik, használata mely fegyverekkel szemben hatékony."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "Gyorsaság (Gy)",
+                            "text": "A karakter egyik fő Tulajdonsága. Az adott lény fizikai gyorsaságának, fürgeségének mértéke. Fontos összetevője mind a Kezdeményező, Támadó és Védő értéknek."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "Háttér",
+                            "text": "A karakter korábbi – kalandozás előtti – életét, veleszületett adottságait, képességeit írja le. Hátteret csak a karakter megalkotásakor (1. Tapasztalati szinten) lehet felvenni, és az erre elköltött pontok örökre levonódnak a Karakteralkotó pontokból, tehát későbbi szinteken is ennyivel kevesebb pontot lehet szétosztani."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "Harcérték módosító (HM)",
+                            "text": "Azt mutatja, hogy a karakter magasabb Tapasztalati szintre lépve mennyivel tud jobban harcolni. Elosztható a Kezdeményező, Támadó, Védő és Célzó érték között."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "Infralátás",
+                            "text": "Hőlátás. Segítségével a tárgyak és testek által kibocsátott hőt lehet látni. Nem ad tiszta képet a világról, csak a hőfoltok alapján enged tájékozódni."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "Intelligencia (Int)",
+                            "text": "A karakter egyik fő Tulajdonsága. A gondolkodás gyorsaságát, s a tényekből levont következtetések helyességének mértékét mutatja meg. Fontos összetevője a Képzettség pontnak és a Pszi pontnak."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "Játékos karakter (JK)",
+                            "text": "Azon karaktereknek a gyűjtőneve, amelyeket játékosok személyesítenek meg."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "k6",
+                            "text": "A hatoldalú dobókocka elnevezése."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "k10",
+                            "text": "A tízoldalú dobókocka elnevezése."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "k100",
+                            "text": "Egy elképzelt százoldalú dobókocka elnevezése. Dobás két tízoldalú kockával. Az első kocka eredménye a tízeseket, a második az egyeseket mutatja. Pl.: Az első dobás eredménye 6, a második dobás eredménye 8, ezek szerint a k100 végeredménye 68. A 01 eggyel egyenlő, míg a 00 a százat jelenti."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "Kaland",
+                            "text": "Az a történet, amit a játékosok végigjátszanak. Egy kaland bevégződhet egy játék alatt, de elhúzódhat játékok sokaságán keresztül is. A kaland megnevezés tehát nem feltétlenül egy játékot takar, hanem annak a történéssorozatnak az elnevezése, amely egységet képez – azaz eleje, közepe és vége van."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "Kalandmester (KM)",
+                            "text": "Az a játékos, aki a Kaland történéseit előadja, megszemélyesíti a Nem játékos karaktereket (NJK) és betartatja a szabályokat – a játékvezető."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "Kalandmodul",
+                            "text": "Előre kidolgozott és megírt Kaland, melyben a történet minden NJK szereplőjét, helyszínét, eseményvázlatát és egyéb mozzanatát rögzítették. Kalandmodulokat lehet vásárolni vagy saját magunknak kidolgozni. Figyelem! Játékosok soha ne olvassák el a kalandmodulokat!"
+                        },
+                        {
+                            "type": "rule",
+                            "title": "Kalandozó",
+                            "text": "Más néven kiválasztott. Olyan lelki alkattal megvert vagy megáldott személy, aki képtelen egy helyben megülni – függetlenül anyagi és társadalmi helyzetétől –, életelemének a veszélyt tekinti. Az összes játékos ehhez a csoporthoz tartozik, de kalandozók a legnevesebb NJK-k is. A kalandozókra a világ bizonyos törvényei és a sors rendelései nem szükségképpen érvényesek."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "Karakter",
+                            "text": "A játékos vagy a KM által mozgatott, a Kalandban szereplő figura elnevezése."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "Karakteralkotó pont (KAP)",
+                            "text": "Ez jelképezi a karakter fejlődését, ezektől válik minden karakter egyedivé. A karakter megalkotásakor 50 pont osztható szét, majd minden későbbi szinten ugyanennyi, amiből szabadon vásárolhatók különböző Hátterek, illetve növelhetők a harcértékek, a fájdalomtűrés, a varázserő, az isten által a karakterre ruházott kegy vagy képzettségek megszerzéséhez szükséges Képzettség pontok. Hátterek azonban csak a karakter megalkotásakor vásárolhatók belőle. Fontos, hogy azok a pontok, amiket a karakter indításakor Hátterekre költöttél, örökre levonódnak Karakteralkotó pontokból, tehát későbbi szinteken ennyivel kevesebb pontot oszthatsz majd szét. Egyes esetekben KAP-jaidból a későbbi szinteken is vásárolhatsz Háttereket, ha ezt az adott iskola leírása említi. Ebben az esetben is végleg le kell vonnod a Hátterekre költött pontokat. A következő Tapasztalati szinteken már az így csökkentett KAP mennyiséget oszthatja csak el a karaktered."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "Karizma (Krz)",
+                            "text": "A karakter egyik fő fizikai Tulajdonsága. A külső, esztétikai megjelenés, a tekintély, az emberekre gyakorolt befolyás mérőszáma, melyhez az emberi értékrendet vettük alapul."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "Kegy pont",
+                            "text": "Az isteni kegy mértékegysége. Mennyisége megmutatja, hogy az adott személy mennyire áll a felsőbb lény kegyében, azaz mennyi és milyen hatalmas csodákat képes megidézni istene hatalmából."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "Kezdeményezés",
+                            "text": "A harcrendszer azon eleme, mely egy harci szituációban a karakterek cselekvési sorrendjét állapítja meg – azaz, hogy ki cselekszik először, ki másodszor stb."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "Kezdeményező érték (KÉ)",
+                            "text": "Azt mutatja meg, hogy egy adott harci szituációban kinek van nagyobb esélye először cselekedni. Minél nagyobb a KÉ, annál valószínűbb, hogy a karakter elsőként támadhat fegyverrel vagy anélkül. A Kezdeményező érték összetevői: Gyorsaság, Érzékelés, HM, a fegyver Kezdeményező értéke, és a fegyveres képzettségekből adódó bónuszok."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "Kezdeményező dobás (KD)",
+                            "text": "A cselekvési sorrend eldöntésére szolgáló kockadobás, mely k10-zel történik. A dobás eredményét hozzá kell adni a karakter Kezdeményező értékéhez, s az így kapott érték lesz a Kezdeményezés. Akinek a legnagyobb a Kezdeményezése, harci helyzetben az cselekedhet az adott időtartamon belül először, a második legnagyobb Kezdeményezéssel bíró a következő stb."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "Képzettség",
+                            "text": "Azokat a tanult ismereteket nevezzük képzettségeknek, melyek bármely karakter számára megszerezhetők."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "Képzettség pont (Kp)",
+                            "text": "Ahhoz, hogy egy karakter újabb képzettséget szerezhessen, bizonyos mennyiségű Kp-t kell összegyűjtenie. Ennek mennyiségét a képzettség, és annak foka határozza meg. A Képzettség pont nem más, mint annak mérőszáma, hogy az adott időszak alatt mennyi ideje és energiája jutott a karakternek tanulásra."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "Klánok, rendek, iskolák",
+                            "text": "A játékosok és az NJK-k rendszerbe sorolásának fő meghatározója. Azt jelöli, hogy a karakter élete folyamán elsősorban milyen képességeire, képzettségeire támaszkodik, illetve ezeket hol szerezte meg. A különböző szervezeteket öt nagyobb csoportba osztjuk a tagjaik által leginkább alkalmazott képzettségek szerint: Harcosok, Szerencsevadászok, Harcművészek, Papok és Varázshasználók."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "Kör",
+                            "text": "Harci szituációk modellezésére használt időegység. Egy kör tíz szegmensből áll. Hat kör felel meg egy percnek."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "Mana",
+                            "text": "A mágikus energia elnevezése. Az a különleges erő, mely mindent áthat, s amely felhasználásával képesek a mágiahasználók varázsolni."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "Manaháló",
+                            "text": "Az anyagi síkokat körülölelő mágikus energiaháló, amely állandó áramainak köszönhetően folyamatosan pótolja, és vélhetően újratermeli a varázslatok által elhasznált manát."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "Mana pont (Mp)",
+                            "text": "A mana mértékegysége. A varázslatokhoz szükséges energiamennyiséget mérjük Mana pontban. Minél több Mp felhasználásába kerül egy mágia végrehajtása, az annál bonyolultabb, erősebb vagy hatékonyabb."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "Mágiaellenállás (ME)",
+                            "text": "Egy lénynek azon képessége, hogy ellenálljon a ráirányuló varázslatok hatásainak. Az ME két összetevőből áll. A Tudatalatti Mágiaellenállás (TME) képességével minden lélekkel bíró teremtmény rendelkezik. Ehhez adódhatnak hozzá tárgyakból, hitből, különleges módszerekből és szellemi diszciplínákból adódó mágia elleni védettségek. Az ME értéke azt mutatja meg, hogy egy teremtmény mekkora erejű mágikus hatásnak tud ellenállni."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "Mértékegységek",
+                            "text": "Yneven a földitől eltérő mértékegységeket használnak. Hosszmérték esetében az ynevi hüvelyk egy földi centiméternek, az ynevi láb vagy lépés egy földi méternek, az ynevi mérföld pedig egy földi kilométernek felel meg. Tömegek mérésénél a lat egy földi grammnak, a font pedig egy földi kilogrammnak felel meg."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "Mozgásgátló tényező (MGT)",
+                            "text": "Elsősorban páncélokra, vértekre és egyéb felszerelési tárgyakra vonatkoztatott érték, mely azt jelöli, hogy az adott tárgy vagy eszköz viselése mennyit von le a karakter Gyorsaságából, Ügyességéből és Állóképességéből."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "Nem játékos karakter (NJK)",
+                            "text": "Az olyan karakter elnevezése, amelyet nem játékos, hanem a KM személyesít meg. Döntéseit, cselekedeteit és a kaland folyamán tanúsított egész viselkedését (még ha valamelyik JK szolgájául vagy segítőjéül szegődött is) a KM befolyásolja, illetve adja elő."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "Od",
+                            "text": "Mágikus energia, amely felhasználására csupán az ősfajok és azok mai leszármazottai képesek. Annyiban különbözik a manától, hogy nem egyfajta külső energiaforrás, hanem a varázshasználók szervezete termeli."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "Pszi",
+                            "text": "A gondolkodó lények – kevés kivételtől eltekintve emberek – mentális energiáját felhasználni tudomány. A varázslók számára a mágia alapja. Segítségével a tudati erők felszabadíthatók, és akár az anyagi világ, akár más lények befolyásolására használhatók."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "Pszi pont (Ψp)",
+                            "text": "A pszi mértékegysége. Megmutatja, hogy a karakter mennyi tudati energiát képes tárolni elméjében (max. Ψp), illetve mennyi felhasználható energiája maradt még (aktuális Ψp). Valamint a különféle pszi diszciplínákhoz szükséges energiamennyiséget értjük alatta."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "Sebzés",
+                            "text": "Azon érték, mely megmutatja, hogy mekkora sebet okozott egy sikeres támadás. A „sebzést dobni” kifejezés arra utal, hogy a találat után a fegyver Sebzés rovatában meghatározott módon állapítják meg a seb mértékét – azaz az okozott Sebzés pontot (a továbbiakban Sp). A Sp-t vagy az Fp-ből, vagy ha azok már elfogytak az Ép-ből kell levonni. Egy karakter sebzését úgy lehet kiszámolni, hogy a fegyver saját sebzéséhez hozzáadjuk az Erőből származó Sebzésjárulékot valamint az egyéb módosító tényezőket, pl. pszi, mágia vagy speciális képzettség, esetleg méreg."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "Sebzésfelfogó érték (SFÉ)",
+                            "text": "A páncélok, vértek – esetenként egyéb tárgyak és viselt eszközök – jellemzője, mely megmutatja, hogy mennyi Sp-t képesek felfogni – elhárítani – az okozott sebzésből, ha a páncél stb. viselője ellen sikeres támadást hajtottak végre."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "Szegmens",
+                            "text": "A M.A.G.U.S. által használt legkisebb időegység. Hozzávetőleg egy másodpercnek felel meg. 10 szegmens egyenlő egy körrel."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "Támadó dobás",
+                            "text": "A harcrendszerben használatos kifejezés. Azt hivatott modellezni, hogy fegyveres – esetleg pusztakezes – harc folyamán, egy harci kör alatt (tíz másodperc) sikerült-e a támadónak megsebezni ellenfelét. A Támadó dobás mindig k100-zal történik, és az eredményéhez hozzáadódik a karakter Támadó értéke. Ha a végeredmény nagyobb vagy egyenlő az ellenfél Védő értékénél, akkor a támadás sikeres volt, és az okozott seb megállapítására Sebzés következik. Ha a végeredmény kisebbnek bizonyul az ellenfél VÉ-jénél, a támadás sikertelen."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "Támadó érték (TÉ)",
+                            "text": "A karakter egyik fő harci jellemzője. Azt mutatja meg, hogy valaki milyen jó fegyverforgató, mennyire gyakorlott a harcban – annak is a támadó részében. A TÉ főbb összetevői: Erő, Gyorsaság, Ügyesség, HM, a fegyver támadó értéke és a fegyveres képzettségekből adódó bónuszok."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "Tapasztalati pont (Tp)",
+                            "text": "Minden helyesen megoldott feladat, legyőzött szörny, megfejtett rejtély tapasztalatot jelent a karaktereknek. Ennek pontos meghatározása a Tp. Minél több Tp-t gyűjt egy karakter élete során, annál tapasztaltabbá (értsd: hatalmasabbá, veszedelmesebbé, nagyobb tudásúvá) válik. A Tapasztalati pontok odaítélése a KM dolga."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "Tapasztalati szint (TSZ)",
+                            "text": "Azt jelzi, hogy mennyire tapasztalt a karakter. Bizonyos mennyiségű Tp összegyűjtésekor a karakter a következő TSZ-re lép, ami általában nagyobb fájdalomtűrési képességgel, jobb harcértékekkel és plusz Mana pontokkal jár."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "Tulajdonság",
+                            "text": "A karakter fő fizikai és szellemi képességeit határozza meg. A 10 Tulajdonság a következő: Erő, Gyorsaság, Ügyesség, Állóképesség, Egészség, Karizma, Intelligencia, Akaraterő, Asztrál, Érzékelés."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "Tulajdonságpróba",
+                            "text": "Egy olyan helyzet eldöntésére szolgáló dobás, melyben valamelyik képesség, de a szerencse is döntő szerepet játszik. A képességpróba minden esetben k10-zel végzendő. Az adott Tulajdonság 10 feletti részénél nagyobb dobás sikertelenséget, kisebb vagy egyenlő dobás sikeres Tulajdonságpróbát jelent."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "Ultralátás",
+                            "text": "Az ibolyántúli sugarak alapján való tájékozódás. E nagyon rövid hullámhosszú fénysugarak segítségével még holdtalan éjszakákon és sötét, ablaktalan helységekben is tökéletes kép látható – akárcsak fényes nappal, normális látás esetén. Az ultralátás egyetlen hátránya, hogy a karakter számára minden kékes árnyalatú: a színek ilyenkor nem különböztethetők meg."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "Ügyesség (Ügy)",
+                            "text": "A karakter egyik fő fizikai Tulajdonsága. A mozgás koordináltságát, pontosságát határozza meg, valamint azt, hogy a karakter mennyire aprólékosan és gyorsan tud egy mozdulatsort megtanulni. Az ügyesség magába foglalja az egyensúlyérzéket is. Fontos összetevője a Támadó, Védő és Célzó értéknek."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "Védő érték (VÉ)",
+                            "text": "A karakter egyik fő harci jellemzője. Arról árulkodik, hogy a karakter milyen hatékonysággal tudja kivédeni a rázúduló csapásokat, mennyire jó a védekezésben. A VÉ fő összetevői: VÉ alap, Ügyesség, Gyorsaság, HM, a fegyver Védő értéke, valamint a fegyveres képzettségekből eredő bónuszok."
+                        }
+                    ]
+                },
+                {
                     "id": "sec_1",
                     "title": "A harc",
                     "content_blocks": [
@@ -981,6 +1281,48 @@
                             "text": "A törpék átlagos testmagassága 120-150 ynevi hüvelyk, alkatuk tömzszerű, nagy erőkifejezésre képesek, kitartásuk párját ritkítja. Arcuk széles; gyakorta – de nem mindig – szakáll ékíti. Szemük sötét árnyalatú, az egészen ősi, beriqueli vérvonal képviselőiéi azonban gleccserkék is lehetnek. Rendszerint csak egyszer házasodnak: a hűség fogalmának, az emberektől eltérő módon, csak egy változatát, a sírig tartót ismerik."
                         },
                         {
+                            "type": "heading",
+                            "text": "Különleges képességeik"
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "Alkati adottságaik miatt a törpék Ereje, Állóképessége és Egészsége akár 19-es, míg Karizmája, Intelligenciája és Asztrálja legfeljebb 17-es lehet."
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "Rendelkeznek infralátással, mely vaksötétben is 30 ynevi láb hőlátást jelent számukra."
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "Őseiktől örökölték ösztönös tehetségüket az alábbi képzettségekhez: Építészet, Térképészet, Mechanika, Művészetek (Szobrászat), Szakma. Ezeket úgy tanulják, mintha 4. fokú oktatótól sajátítanák el (a képzettségek minden szintje 2 Kp-val olcsóbb a képzettség 4. fokáig, de legalább 1; ez a bónusz nem adódik össze az oktatás képzettség nyújtotta előnyökkel)."
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "Időérzékük kiváló, a föld alatt, teljes sötétben is tisztában vannak vele, milyen napszak van éppen."
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "A föld alatt – barlangrendszerben, kiépített pincékben és labirintusokban is (5 ynevi láb eltéréssel) – meg tudják mondani, hogy milyen mélységben járnak. Ugyancsak tisztán érzik azt, hogy az út, amelyen haladnak, lejt vagy emelkedik, sőt jó közelítéssel megmondják a lejtés vagy emelkedés fokmértékét is."
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "Képesek megmondani egy építményről, hogy hozzávetőleg mikor építették (a törpe kéz emelte alkotásokról, a jelen évezred építményeiről teljes pontossággal nyilatkoznak, más hetedkori épületekről rövid vizsgálódással 10 évnyi eltéréssel képesek véleményt alkotni, míg az ennél régebbi épületekről évszázados vagy évezredes közelítéssel nyilatkozhatnak)."
+                        }
+                    ]
+                },
+                {
+                    "id": "sec_12k",
+                    "title": "Kyr származék",
+                    "content_blocks": [
+                        {
+                            "type": "paragraph",
+                            "text": "A történetírók feljegyzései szerint a P.e. XVIII. évezred derekán a Riegoy-öböl partjára érkezett hóhajú hódítók alig egyetlen évszázad alatt foglalták el egész Észak-Ynevet. A távoli hazájukból, Calowyn kontinenséről kivándorolt nép tagjai nem különleges, mágikus adottságokkal, hatalmas testi erejükkel nőttek az emberi faj fölé, hisz megjelenésükben és képességeikben alig különböznek tőlünk. Azonban hihetetlen birodalomépítő képességük, misztikájuk és társadalmuk berendezkedése elégséges volt a győzelemhez és majd tizenöt évezrednyi totális uralomhoz a fél kontinens felett."
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "A tisztavérű kyrek megjelenésüket tekintve hószínhajú, ezüstkék – a birodalom alapításakor feltűnt családok tagjainál smaragdzöld – szemű, széles vállú, keskeny csípőjű népek, kiknek távoli leszármazottaiból, az embervérrel elkeveredett gyermekeiből is egyfajta nemesség, kiemelkedettség érzése árad. Sokan és sokfélét tartanak róluk, azonban legyen bárkiről is szó, ritkán tud semleges maradni e faj tagjaival szemben. Mindenkiből vagy tiszteletet, vagy haragot váltanak ki élesen metszett, szabályos arcvonásaikkal, klasszikus szépséget mintázó arányaikkal."
+                        },
+                        {
                             "type": "paragraph",
                             "text": "Szertartásaik és szokásaik élnek a kontinens bármely szegletében is, majd húsz évezred történelmükből származnak, így megtalálhatók közöttük az embernép nagy barátai, igazi humánus gondolkodók, lánglelkű lovagok és démonimádó elfajzottak is egyaránt."
                         },
@@ -990,15 +1332,31 @@
                         },
                         {
                             "type": "paragraph",
-                            "text": "Igaz, a nem kevert vérű családokat a vér tisztaságán munkálkodó közeli rokonházasságok miatt kialakult szellemi és testi torzulások és különböző örökletes nyavalyák és kórságok gyötrik, s egyesek szerint hatalmuk lassan leáldozóban van, azonban még mindig kitartóan ragaszkodnak hatalmukhoz."
+                            "text": "Igaz, a nem kevert vérű családokat a vér tisztaságán munkálkodó közeli rokonházasságok miatt kialakult szellemi és testi torzulások és különböző, a Ryeki Démoncsászárság idejéből származó örökletes nyavalyák és kórságok gyötrik, s egyesek szerint hatalmuk lassan leáldozóban van, azonban még mindig kitartóan ragaszkodnak hatalmukhoz."
                         },
                         {
                             "type": "paragraph",
-                            "text": "Mindezen nehézségek és buktatók ellenére is a kyrek alkalmazkodtak és túlélték, három kor nagy viharai közepette is, és mind a mai napig megőrizték vezető szerepüket. Hiszen, nem csak Toron nemesei, elendorai és famorai közt találunk tiszta vérű kyreket Yneven. Godora nemesi családjainak jelentős része mai napig kyr származásával büszkélkedik, és valóban akadnak köztük olyan Házak, melyek esetében valós az az állítás. Észak államai közül Erigow nemesei őrizték meg talán leginkább vérük tisztaságát; a hercegség legrégebbi családjainak családfája egészen Kyráig nyúlik vissza. A Délvidéken a Hat Város Szövetségének ősibb családjai között, illetve Ordan tűzvarázslóinak, magasabb rangú nemeseinek soraiban fedezhetünk fel kyr származékokat. Egyes történetírók között szilárdan tartja magát azon elképzelés is, hogy esetlegesen Krán hegyeink túlra is jutott a kyr menekültek áradatából a Birodalom bukásakor. Ezt, és ezen csoportok túlélését bizonyítja a nem is oly rég Krád-magiában ismertté a pyarróni tudós körökben."
+                            "text": "Mindezen nehézségek és buktatók ellenére is a kyrek alkalmazkodtak és túléltek, három kor nagy viharai közepette is, és mind a mai napig megőrizték vezető szerepüket. Hiszen nem csak Toron nemesei, elendorai és famorai közt találunk tiszta vérű kyreket Yneven. Godora nemesi családjainak jelentős része mai napig kyr származásával büszkélkedik, és valóban akadnak köztük olyan Házak, melyek esetében valós ez az állítás. Észak államai közül Erigow nemesei őrizték meg talán leginkább vérük tisztaságát; a hercegség legrégebbi családjainak családfája egészen Kyriáig nyúlik vissza. A Délvidéken a Hat Város Szövetségének ősibb családjai között, illetve Ordan tűzvarázslóinak, magasabb rangú nemeseinek soraiban fedezhetünk fel kyr származékokat. Egyes történetírók között szilárdan tartja magát azon elképzelés is, hogy esetlegesen Krán hegyein túlra is jutott a kyr menekültek áradatából a Birodalom bukásakor. Ezt, és ezen csoportok túlélését bizonyítja a nem is oly rég Krad-lovagjainak birtokába került kódex, mely Birodalmi emlékezet címen vált ismertté a pyarroni tudós körökben."
                         },
                         {
                             "type": "paragraph",
                             "text": "A játékos egyaránt indíthat tiszta vérű és kevert származású karaktert, melynek legalább egyik szülője tiszta vérű kyr vagy mindkettő kevert vérű származék. A külső jegyek ettől függően változhatnak, azonban belső szellemi másságuk és különleges képességeik minden esetben érvényre jutnak."
+                        },
+                        {
+                            "type": "heading",
+                            "text": "Különleges képességeik"
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "Alkati adottságaik miatt a kyr származékok Karizmája, Intelligenciája és Asztrálja akár 19-es, míg Ereje, Állóképessége és Egészsége legfeljebb 17-es lehet."
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "Birodalomépítő őseiktől örökölt képességeik miatt a kyr származékoknak ösztönös tehetsége van a Szociális képzettségekhez. Ezeket úgy tanulják, mintha 4. fokú oktatótól sajátítanák el (a képzettségek minden szintje 2 Kp-val olcsóbb a képzettség 4. fokáig, de legalább 1; ez a bónusz nem adódik össze az oktatás képzettség nyújtotta előnyökkel)."
+                        },
+                        {
+                            "type": "heading",
+                            "text": "Kasztok és fajok"
                         },
                         {
                             "type": "table",
@@ -1129,6 +1487,10 @@
                         {
                             "type": "paragraph",
                             "text": "N = az adott fajba tartozó lény nem lehet az adott klán, rend, vagy iskola tagja"
+                        },
+                        {
+                            "type": "heading",
+                            "text": "A Fajok Tulajdonságainak maximális értéke"
                         },
                         {
                             "type": "table",
