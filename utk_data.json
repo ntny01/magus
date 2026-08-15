@@ -76,7 +76,8 @@
                             "text": "Ha valahol rosszul dönt, a túlerővel kerül szembe, ha szerencséje végképp cserbenhagyja, a karakter bizony meg is halhat, akárcsak a való életben. Ám ilyenkor sem szabad túlságosan elkeseredni, hiszen új karakter bármikor alkotható, s akkor csak a KM-en múlik, mikor és hogyan csempészi vissza játékosát – az új karakterrel – a már megkezdett játékba."
                         },
                         {
-                            "type": "paragraph",
+                            "type": "rule",
+                            "title": "Karakterfejlődés",
                             "text": "Az imént elmondottak nem azt jelentik, hogy a játékosnak fel-le kell ugrálnia, körbe futkosnia és úgy viselkednie, mint a karaktere. Arról van szó, hogy valahányszor a karakterével történik valami vagy döntést kell hoznia, úgy tesz, mintha ő lenne abban a helyzetben, és kiválasztja a megfelelő cselekvési irányt."
                         },
                         {
