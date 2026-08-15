@@ -241,6 +241,13 @@ const sb = supabase.createClient(
         .stat-form-grid {
             display: grid; grid-template-columns: repeat(4, 1fr); gap: 0.5rem; margin-bottom: 0.5rem;
         }
+        /* Közös „ADMIN" plecsni — jelzi, hogy ez KM-elérésű oldal (a Műhelyről átvéve) */
+        .admin-badge {
+            display: inline-block; vertical-align: middle; margin-left: .5rem;
+            font-size: .6rem; font-weight: 700; letter-spacing: .1em;
+            background: rgba(168,85,247,.12); border: 1px solid rgba(168,85,247,.3);
+            color: #a855f7; padding: .2rem .55rem; border-radius: .35rem; text-transform: uppercase;
+        }
 
         /* ===== Élő csapat panel ===== */
         .lp-empty { color: var(--text-muted); font-size: .88rem; padding: 1.2rem 0; text-align: center; font-style: italic; }
@@ -726,7 +733,7 @@ const sb = supabase.createClient(
 
     <div class="km-main">
     <header>
-        <h1 id="mainHeaderTitle">🛡️ Kalandmester Pult</h1>
+        <h1 id="mainHeaderTitle">🛡️ Kalandmester Pult <span class="admin-badge">Admin</span></h1>
 
         <div class="header-user">
             <span id="auth-username" style="font-size:.75rem;color:#d4af37;font-family:'Cinzel',serif;letter-spacing:.06em;white-space:nowrap;"></span>

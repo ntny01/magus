@@ -41,6 +41,8 @@
     --text:#e7ecf5; --muted:#8a97b0; --muted2:#5f6c85;
   }
   *{box-sizing:border-box}
+  /* Közös „ADMIN" plecsni — jelzi, hogy ez KM-elérésű oldal (a Műhelyről átvéve) */
+  .admin-badge{display:inline-block;vertical-align:middle;font-size:.6rem;font-weight:700;letter-spacing:.1em;background:rgba(168,85,247,.12);border:1px solid rgba(168,85,247,.3);color:#a855f7;padding:.15rem .5rem;border-radius:.35rem;text-transform:uppercase}
   html,body{margin:0;height:100%;font-family:'Inter',sans-serif;background:var(--bg);color:var(--text);overflow:hidden}
   body{display:flex;flex-direction:column;-webkit-font-smoothing:antialiased}
   ::-webkit-scrollbar{width:9px;height:9px}
@@ -192,7 +194,7 @@
 <body>
 
 <div class="topbar">
-  <div class="brand">⚔️ Ynev Battlemap <span class="pip">POC</span></div>
+  <div class="brand">⚔️ Ynev Battlemap <span class="pip">POC</span> <span class="admin-badge">Admin</span></div>
   <div class="topsep"></div>
   <button class="tbtn" onclick="openSaveDlg()">💾 Mentés</button>
   <button class="tbtn" onclick="openLoadDlg()">📂 Betöltés</button>
