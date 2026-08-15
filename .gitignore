@@ -8,3 +8,4 @@ security/
 # Helyi biztonsági mentések / scratch
 *.bak_before_fix
 .tagolas_hibalista.md
+kodex_javitasi_naplo.md
