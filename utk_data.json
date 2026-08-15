@@ -18533,10 +18533,114 @@
                     "content_blocks": [
                         {
                             "type": "paragraph",
-                            "text": "A képzettség leginkább vadászok, felderítők, nyomolvasók tudománya. Segítségével nyomokat, jeleket találhat, illetve ismerhet fel és értelmezhet a karakter. Képzetlenség esetén a KM joga eldönteni, hogy a karakter dobhat-e egyáltalán Érzékeléspróbát, és ha megtalálja a nyomokat, ki tud-e egyáltalán hüvelyezni belőlük valamit. A képzettség követelménye lehet a Vadonjárás megfelelő terepre vonatkozó ismerete, különleges bestiák esetén Állatismeret.",
-                            "title": "",
-                            "headers": [],
-                            "rows": []
+                            "text": "A képzettség leginkább vadászok, felderítők, nyomolvasók tudománya. Segítségével nyomokat, jeleket találhat, illetve ismerhet fel és értelmezhet a karakter. Képzetlenség esetén a KM joga eldönteni, hogy a karakter dobhat-e egyáltalán Érzékeléspróbát, és ha megtalálja a nyomokat, ki tud-e egyáltalán hüvelyezni belőlük valamit. A képzettség követelménye lehet a Vadonjárás megfelelő terepre vonatkozó ismerete, különleges bestiák esetén Állatismeret."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "1. fok",
+                            "text": "Az alkalmazó felismeri az 1-2 óránál nem régebbi nyomokat. A nyomot akkor képes követni, illetve a helyes következtetéseket levonni, ha sikeres Érzékeléspróbát tesz -1 módosítóval."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "2. fok",
+                            "text": "A gyakorlott nyomolvasó sikeres Érzékeléspróba esetén egy napnál nem régebbi nyomokat képes követni, ha ezt a terep lehetővé teszi. Az általa követett csoportok létszámát illetőleg csak becsléseket tehet."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "3. fok",
+                            "text": "A szakavatott nyomkövető már nagyon nehéz (például sziklás) terepen is képes követni az egy napnál nem régebbi nyomokat, ha sikeres Érzékeléspróbát tesz +1 módosítóval. Könnyebb terepen pedig már néhány nap távlatából is képes ezt megtenni. Csoportok létszámára vonatkozó pontosabb becsléseket is felállíthat, esetlegesen azok haladási sebességére, leterheltségére is következtethet. A képzettség ilyen fokú ismerete esetén már képes saját, vagy társai nyomait is eltüntetni."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "4. fok",
+                            "text": "A mesteri nyomolvasó akár egy hét távlatából is képes nyomokat követni, ha az időjárás, a terep vagy egyéb körülmények lehetővé teszik, ha sikeres Érzékeléspróbát tesz +2 módosítóval. Ezen a szinten már a nyomokból képes kikövetkeztetni nagy vonalakban az azokat hagyók legtöbb tevékenységét."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "5. fok",
+                            "text": "A legendás nyomolvasó, ha a körülmények lehetővé teszik (zárt barlang, nem bolygatott épület belseje) – képes pontosan kikövetkeztetni az ott járt személyek számát, igen nagy pontossággal vázolja fel az általuk végzett tevékenységeket, ha sikeres Érzékeléspróbát tesz +3 módosítóval."
+                        }
+                    ]
+                },
+                {
+                    "id": "sec_szakma",
+                    "title": "Szakma (II)",
+                    "content_blocks": [
+                        {
+                            "type": "paragraph",
+                            "text": "Ezen képzettség minden iparos és kézműves, földműves, vagy szellemi foglalkozású ember sajátja, ismerete egy bizonyos szakma megfelelő szintű ismeretét takarja."
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "A képzettség követelménye lehet a józan ész megkövetelte bármely képzettség, ha szükséges, mint pl. az Intéző szakmához Számtan/mértan, Helyismeret stb. A Tulajdonság-követelmény szakmánként eltérő."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "1. fok",
+                            "text": "A karakter kezdő tanonc, egyenlőre jobban teszi, ha figyel."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "2. fok",
+                            "text": "A karakter segéd egy mester mellett, az egyszerű folyamatokat ritka hibával végzi."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "3. fok",
+                            "text": "A karakter a céh vagy társaság mesterembere, megbízható pontos munkát végez. A varázshasználathoz kellő szakmák (varázstárgyak készítése, drágakőmágia) is legalább ezt a szintet kívánják meg. Ezen a szinten már képes magát és családját eltartani munkájával, vagy egyes szakmák esetén akár nagy vagyonra is szert tenni, például ékkőcsiszoló, intéző, kereskedő."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "4. fok",
+                            "text": "A karakter igazi mester szakmájában, igazi műremekeket készít, vagyonokat kereshet munkájával."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "5. fok",
+                            "text": "A karakter mások számára érthetetlen módon és gyorsasággal, vagy minőségben dolgozik, művei mágia nélkül is már-már mágikus képességűek, igazi vagyonokat érő műalkotások. Más esetben pedig a rábízott vagyonokat kezeli úgy, kereskedik olyan szakértelemmel és sikerességgel, mely a józan ész határait feszegeti."
+                        }
+                    ]
+                },
+                {
+                    "id": "sec_uszas",
+                    "title": "Úszás (I – Erő, Állóképesség, Egészség)",
+                    "content_blocks": [
+                        {
+                            "type": "paragraph",
+                            "text": "Ez a képzettség teszi képessé a karaktert arra, hogy ússzon, vagy legalább ne tapossa a vizet alacsonyabb fok ismeretében. Képzettebb karakter esetén már viharos, vagy folyóvízekben is képes haladni."
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "Nehézvértezetben nem lehet úszni, a karakter azonnal elsüllyed."
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "A felszerelés 20 ynevi fontonként 1-gyel csökkenti a képzettség alkalmazásának fokát, akárcsak a vihar vagy például az örvényes folyó."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "1. fok",
+                            "text": "Az úszó csak egy helyben evickélni, illetve vízbe esés esetén kedvező körülmények esetén képes partra jutni, persze csak felszerelés nélkül vagy annak elvesztésével. A karakter legfeljebb Állóképességének megfelelő számú percig tud lebegni a felszínen, ha addig nem ér partot, akkor percenként Állóképesség próbát köteles dobni, alkalmanként -1 módosítóval nehezítve, ha elvéti elfárad és elsüllyed."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "2. fok",
+                            "text": "A karakter már tud úszni, legfeljebb annyiszor öt percig, amennyi az Állóképessége. Ha addig nem ér partot, akkor percenként Állóképesség próbát köteles dobni, minden alkalommal -1 módosítóval nehezítve, ha elvéti elfárad és elsüllyed."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "3. fok",
+                            "text": "A hivatásos úszó már teljes felszerelésben is képes egy-két métert úszni, kedvező körülmények között. Annyiszor tíz percig képes felszerelés nélkül úszni, amennyi az Állóképessége. Tízpercenként köteles Állóképesség próbát dobni, ha túllépné az időhatárt, minden alkalommal -1 módosítóval nehezítve, ha elvéti elfárad és elsüllyed."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "4. fok",
+                            "text": "A fáradhatatlan úszó annyiszor félórán át képes úszni a fent vázolt körülmények között felszerelés nélkül, amennyi az Állóképessége. Majd húszpercenként köteles Állóképesség próbát dobni, ha túllépné az időhatárt, minden alkalommal -1 módosítóval nehezítve."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "5. fok",
+                            "text": "A karakter majdhogynem természetes közege a víz, annyiszor egy órán át képes úszni a fent vázolt körülmények között felszerelés nélkül, amennyi az Állóképessége. Majd félóránként köteles Állóképesség próbát dobni, ha túllépné az időhatárt, minden alkalommal -1 módosítóval nehezítve."
                         }
                     ]
                 },
@@ -18917,6 +19021,111 @@
                             "title": "5. fok",
                             "headers": [],
                             "rows": []
+                        }
+                    ]
+                },
+                {
+                    "id": "sec_parbaj",
+                    "title": "Párbaj (II – Intelligencia, Asztrál, Karizma)",
+                    "content_blocks": [
+                        {
+                            "type": "paragraph",
+                            "text": "A párbajok, legyen az bajvívó, nemesi, lovagi torna vagy varázstudók közötti összecsapás törvényeinek, szokásainak és legendáriumának ismeretét jelenti e képzettség, a karakter által ismert kultúrák vonatkozásában. A választott párbajformát fel kell tüntetni a karakterlapon az adott képzettség mellett, mint pl. Párbaj (lovagi torna) 2. fok."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "1. fok",
+                            "text": "A karakter ismeri nagy vonalakban az adott párbajforma mikéntjét és szabályait. Értő szemlélőként vehet részt egy efféle összecsapás megtekintésében."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "2. fok",
+                            "text": "A képzettség gyakorlott alkalmazója párbajképes, ismeri a vonatkozó szabályokat, szokásokat. Nem vét tudtán kívül semmiféleképp a szabályok ellen."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "3. fok",
+                            "text": "A szakavatott karakter ismeri a kultúrkör minden párbajstílusát, jó részükben járatos is, párbajhős, hivatásos párbajsegéd vagy herold."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "4. fok",
+                            "text": "A tudomány mesterfokú ismerője a kultúrkör minden párbajfajtájának minden apró kiskapuját, csínját-bínját ismeri, ceremóniamester. A képzettség ezen fokán akár már a becsület vagy hírnév elvesztése nélkül is találhat kibúvót egy párbaj alól, vagy párbajra kényszeríthet valakit."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "5. fok",
+                            "text": "A karakter az illem és a szokások ismeretének tárháza, maga is valószínűleg hírneves párbajhős, akár egy párbajkódexet is megalkothat, tettei legendásak, tudása páratlan."
+                        }
+                    ]
+                },
+                {
+                    "id": "sec_politika",
+                    "title": "Politika/diplomácia (III – Intelligencia, Asztrál, Karizma)",
+                    "content_blocks": [
+                        {
+                            "type": "paragraph",
+                            "text": "A Politika/diplomácia a meggyőzés, információszerzés, beházelgés tudománya. A karakter ezen képzettség birtokában nemcsak a tárgyalások folyamán mérheti fel ellenfelei szándékait, győzheti meg őket a maga igazáról, de afféle fogódzót is kap arra nézve, hogy milyen ügyekben kivel érdemes tárgyalnia, ki vagy mi lehet a kulcs kényes szituációkban. A KM a Tulajdonságpróba dobásánál saját belátása szerint, helyzetfüggően pluszmódosítóként beszámíthatja a karakter Lélektan, Színészet, vagy akár Szexuális kultúra képzettségének szintjét."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "1. fok",
+                            "text": "A karakter még csak megfigyelő, látásból ismer pár fontos embert, de még aktív szereplőként nem jelent meg a politika színpadán."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "2. fok",
+                            "text": "A kezdő politikus már átlátja az erőviszonyokat, esetlegesen következtethet bizonyos folyamatok, merényletek mögött megbúvó csoportok vagy személyek kilétére. Szintén következtethet a történések végkifejletére, ha a Politika/diplomácia képzettségre dobott próbán felülmúlja a másik tábort vezető személyt. A KM sikertelenség esetén is elhinthet pár részletet, információt a sikertelenség mértéke szerint, illetve teljesen valótlan dolgokat is, ha a karakter nagyon elhibázta a próbát."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "3. fok",
+                            "text": "Az igazi politikus már bejáratos az udvarba, aktív szereplője, egyelőre csak gyalogként a politikának. Már behatóan ismeri kultúrköre irányzatait és némi információval is bír azok vezetőiről, céljaikról."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "4. fok",
+                            "text": "A képzettség ezen fokának birtokosa már személyesen is ismer egy-két befolyásos embert, neki is neve van, vagy szürke eminenciásként van jelen a politikában. Már gazdasági, hadászati ügyek politikai ki- és behatásait is ismeri, és ha bír a vonatkozó Kultúrával, akkor már külpolitikai kérdésekben is mérvadó a véleménye."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "5. fok",
+                            "text": "A legendás államférfi vagy befolyásos hölgy diplomáciai zseni, nem ritkán kérik fel bizonyos titkos szervezetekkel történő tárgyalásra. Pontosan tudja ki vagy mi áll az események hátterében, rövidtávra akár meg is jósolhatja az események kihatásait, nagy valószínűséggel… hacsak ellenfelei nem állítanak egy hasonlóan képzett diplomatát ügyeik intézésére."
+                        }
+                    ]
+                },
+                {
+                    "id": "sec_szexkult",
+                    "title": "Szexuális kultúra (I – Asztrál, Karizma)",
+                    "content_blocks": [
+                        {
+                            "type": "paragraph",
+                            "text": "A karakter szexuális ismereteinek köre. Nemcsak a szeretkezés tudománya, de egyfajta lélektani tudás is az ellenkező nemmel szemben. A karakter a másik nemmel kapcsolatban Lélektan, illetve Színészet ellen próbáknál a Szexuális kultúra képzettségét is használhatja, ha az számára kedvezőbb és ezt KM engedélyezi."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "1. fok",
+                            "text": "A karakter gyakorlatilag elveszítette szüzességét, és okult a tapasztalataiból. Gyakorlati elképzelései vannak a partnerét is kielégítő szexuális életről."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "2. fok",
+                            "text": "Az ilyen fokú beavatott kultúrált, igényes szerető saját kultúrköre tagjai szerint, képes a szocializált, boldog párkapcsolatra, hacsak partnerének nincsenek különösebb igényei."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "3. fok",
+                            "text": "A képzettség ezen fokának birtokosa igen szakavatott, kiművelt szerető. Szexuális játékai ritkán mondanak csődöt, híre van a társaságban. Sikeres, +1 módosítóval dobott Karizmapróbával képes magához kötni alkalmi, vagy állandó szeretőit. A függés pusztán lelki természetű, a KM belátására bízott módosítókkal végrehajtott Akaraterő próbával legyőzhető."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "4. fok",
+                            "text": "A karakter igazi művész, még az ellene ágálókat is képes a pártjára csábítani, ha a KM szerint ez elképzelhető… Az ehhez szükséges Karizmapróbát a játékos +2 módosítóval dobja."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "5. fok",
+                            "text": "Igazi szeretőművész, képességeivel képes másokat a legmagasabb mennyektől a legmélyebb pokolbugyrokig eljuttatni. Szexuális játékai olyan szinten őrjítik meg szeretőit és oly járatossá vált az ellentétes nem vágyaiban, hogy Karizma próbáját +3 módosítóval dobhatja."
                         }
                     ]
                 },
