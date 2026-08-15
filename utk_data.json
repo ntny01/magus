@@ -5533,6 +5533,383 @@
                     ]
                 },
                 {
+                    "id": "sec_34a",
+                    "title": "Orgyilkos",
+                    "content_blocks": [
+                        {
+                            "type": "paragraph",
+                            "text": "Az Orgyilkos fejvadászok nem a nyílt harcot kedvelik, ezért nem is igen képzettek a többszereplős összecsapásokban. Általában lesből, orvul gyilkolnak, ellenfelük legyőzésére nem saját képességeiket vetik be, melyek meglehet gyengébbek, mint amilyenekkel a kiszemelt célpont bír. Sokkal inkább igyekeznek gondos tervezéssel és kivárással olyan helyzetet teremteni, ahol a meglepetés biztosan az ő oldalukra billenti a mérleget."
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "Ezek a férfiak és nők igen művelt, sok tapasztalattal bíró személyek, nem egy esetben tudós fők, kik a mágikus tudományokban is alapszinten járatosak lehetnek, hiszen fontosabb épületekbe való bejutáshoz, esetleg mágiaforgató vagy papi hatalommal bíró célszemélyek elpusztításához ez a tudás nélkülözhetetlen."
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "Fegyverzetük teljesen célirányos, kedvelik a jól elrejthető, kisebb fegyvereket. Páncélt ritkán viselnek, csakis igen jó indokkal hajlandóak plusz terhet magukon hordozni."
+                        },
+                        {
+                            "type": "heading",
+                            "text": "Az Orgyilkos fejvadász induló képzettségei 1. Tapasztalati szinten"
+                        },
+                        {
+                            "type": "table",
+                            "headers": [
+                                "Induló képzettségek",
+                                "Fok"
+                            ],
+                            "rows": [
+                                [
+                                    "Fegyverhasználat (a klán tradicionális fegyvere)",
+                                    "3. fok"
+                                ],
+                                [
+                                    "Fegyverhasználat",
+                                    "2. fok"
+                                ],
+                                [
+                                    "Fegyverhasználat (nehézkardok, egykezes kardok, tőrök, csatabárdok, buzogányok, szálfegyverek)",
+                                    "1. fok"
+                                ],
+                                [
+                                    "Pusztakezes harc",
+                                    "1. fok"
+                                ],
+                                [
+                                    "Fájdalomtűrés",
+                                    "1. fok"
+                                ],
+                                [
+                                    "Fegyverismeret",
+                                    "2. fok"
+                                ],
+                                [
+                                    "Álcázás/álruha",
+                                    "3. fok"
+                                ],
+                                [
+                                    "Színészet",
+                                    "2. fok"
+                                ],
+                                [
+                                    "Lélektan",
+                                    "2. fok"
+                                ],
+                                [
+                                    "Orvtámadás",
+                                    "3. fok"
+                                ],
+                                [
+                                    "Élettan",
+                                    "2. fok"
+                                ],
+                                [
+                                    "Futás",
+                                    "2. fok"
+                                ],
+                                [
+                                    "Úszás",
+                                    "2. fok"
+                                ],
+                                [
+                                    "Pszi (pyarroni)",
+                                    "2. fok"
+                                ],
+                                [
+                                    "Írás/olvasás",
+                                    "2. fok"
+                                ],
+                                [
+                                    "Lopódzás",
+                                    "+30%"
+                                ],
+                                [
+                                    "Rejtőzés",
+                                    "+30%"
+                                ],
+                                [
+                                    "Csapdafelfedezés",
+                                    "+10%"
+                                ],
+                                [
+                                    "Mászás",
+                                    "+30%"
+                                ],
+                                [
+                                    "Esés",
+                                    "+10%"
+                                ],
+                                [
+                                    "Akrobatika",
+                                    "+10%"
+                                ]
+                            ]
+                        },
+                        {
+                            "type": "heading",
+                            "text": "Az orgyilkos képzettségei, melyeket iskolájától az Oktatás képzettség 4. foka által nyújtott előnnyel tanulhat"
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "Akrobatika, Álcázás/álruha, Csapdaállítás, Csapdakeresés, Csomózás, Élettan, Esés, Fájdalomtűrés, Fegyverhasználat, Fegyverismeret, Harcművészet, Harctéri gyakorlat, Írás/olvasás, Jelbeszéd, Kétkezes harc, Kínzás, Kultúra, Lopódzás, Mászás, Mechanika, Mesterlövészet, Nyomolvasás, Orvtámadás, Pszi (pyarroni, slan*), Pusztakezes harc, Pusztítás, Rejtekhelykutatás, Rejtőzködés, Szabadulóművészet, Számtan/mértan, Színészet, Taktika, Vakharc, Vértviselet, Zárnyitás – illetve a tradicionálisabb rendekben esetleg Magasmágia képzettség, Ősi nyelv, Rúnamágia, Tapasztalati mágia vagy Vallásismeret 3. fokig. (* A tradicionálisabb rendekben.)"
+                        }
+                    ]
+                },
+                {
+                    "id": "sec_34b",
+                    "title": "Felderítő",
+                    "content_blocks": [
+                        {
+                            "type": "paragraph",
+                            "text": "A felderítők a fejvadászok között a legkevésbé harcképes csoportot alkotják, ennek ellenére igen nagy becsben tartott tagjai klánjuknak, mivel még talán az orgyilkosoknál is csendesebben és észrevétlenebbül képesek mozogni a terepen; és ez létfontosságú, mivel egy komolyabb bevetést alapos tervezés vagy a kellő tudás hiányában a Felderítők látogatása előz meg. Emellett a klánok vezetői akkor is egy Felderítőt bíznak meg a feladattal, ha nem csak adatgyűjtést, de esetleg valamely tárgyak eltulajdonítását is el kell végezni."
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "Fegyverzetük általában igen könnyű és nélkülözi a méretesebb darabokat: legtöbbször hajítópengékkel, esetleg apró nyílpuskákkal szerelik fel őket. Vértezeteket ritkán viselnek, akkor is leginkább csak fegyverkabátokat."
+                        },
+                        {
+                            "type": "heading",
+                            "text": "A Felderítő fejvadász induló képzettségei 1. Tapasztalati szinten"
+                        },
+                        {
+                            "type": "table",
+                            "headers": [
+                                "Induló képzettségek",
+                                "Fok"
+                            ],
+                            "rows": [
+                                [
+                                    "2 Fegyverhasználat",
+                                    "2. fok"
+                                ],
+                                [
+                                    "Fegyverhasználat (nehézkardok, egykezes kardok, tőrök, csatabárdok, buzogányok, szálfegyverek)",
+                                    "1. fok"
+                                ],
+                                [
+                                    "Fájdalomtűrés",
+                                    "1. fok"
+                                ],
+                                [
+                                    "Fegyverismeret",
+                                    "2. fok"
+                                ],
+                                [
+                                    "Álcázás/álruha",
+                                    "3. fok"
+                                ],
+                                [
+                                    "Színészet",
+                                    "2. fok"
+                                ],
+                                [
+                                    "Lélektan",
+                                    "2. fok"
+                                ],
+                                [
+                                    "Orvtámadás",
+                                    "1. fok"
+                                ],
+                                [
+                                    "Élettan",
+                                    "1. fok"
+                                ],
+                                [
+                                    "Futás",
+                                    "2. fok"
+                                ],
+                                [
+                                    "Úszás",
+                                    "2. fok"
+                                ],
+                                [
+                                    "Pszi (pyarroni)",
+                                    "2. fok"
+                                ],
+                                [
+                                    "Térképészet",
+                                    "2. fok"
+                                ],
+                                [
+                                    "Nyomolvasás",
+                                    "2. fok"
+                                ],
+                                [
+                                    "Vadonjárás (adott terep) vagy Szakma (Építészet)",
+                                    "2. fok"
+                                ],
+                                [
+                                    "Művészetek (Rajz)",
+                                    "2. fok"
+                                ],
+                                [
+                                    "Számtan/mértan",
+                                    "2. fok"
+                                ],
+                                [
+                                    "Lopódzás",
+                                    "+25%"
+                                ],
+                                [
+                                    "Rejtőzés",
+                                    "+25%"
+                                ],
+                                [
+                                    "Csapdafelfedezés",
+                                    "+10%"
+                                ],
+                                [
+                                    "Mászás",
+                                    "+20%"
+                                ],
+                                [
+                                    "Akrobatika",
+                                    "+10%"
+                                ],
+                                [
+                                    "Veszélyérzék",
+                                    "+10%"
+                                ],
+                                [
+                                    "Zárnyitás",
+                                    "+20%"
+                                ]
+                            ]
+                        },
+                        {
+                            "type": "heading",
+                            "text": "A felderítő képzettségei, melyeket iskolájától az Oktatás képzettség 4. foka által nyújtott előnnyel tanulhat"
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "Akrobatika, Álcázás/álruha, Csapdaállítás, Csapdakeresés, Csomózás, Élettan, Esés, Fájdalomtűrés, Fegyverhasználat, Fegyverismeret, Harctéri gyakorlat, Írás/olvasás, Jelbeszéd, Kétkezes harc, Kínzás, Kultúra, Lélektan, Lopódzás, Mászás, Mechanika, Művészetek, Nyomolvasás, Orvtámadás, Pszi (pyarroni, slan*), Rejtekhelykutatás, Rejtőzködés, Szabadulóművészet, Szakma, Számtan/mértan, Színészet, Taktika, Vakharc, Zárnyitás. (* A tradicionálisabb rendekben.)"
+                        }
+                    ]
+                },
+                {
+                    "id": "sec_34c",
+                    "title": "Testőr",
+                    "content_blocks": [
+                        {
+                            "type": "paragraph",
+                            "text": "A testőr fejvadászok talán a legspecializáltabbak minden szakmabéli társuk közül: egyetlen feladatuk a célszemély megóvása bármely áron. Ebben azonban társaik sokféle tapasztalatára kell támaszkodniuk, általában vezetik és irányítják azokat, egyértelműen az Orgyilkosok mellett a fejvadász alakulatok másik lehetséges vezető rétege ez."
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "Fegyverzetük teljesen feladatuktól függő, azonban ritkán jelennek meg valamiféle vértezet nélkül, hisz túlélésük mindennél fontosabb a védett személy szempontjából."
+                        },
+                        {
+                            "type": "heading",
+                            "text": "A testőr fejvadász induló képzettségei 1. Tapasztalati szinten"
+                        },
+                        {
+                            "type": "table",
+                            "headers": [
+                                "Induló képzettségek",
+                                "Fok"
+                            ],
+                            "rows": [
+                                [
+                                    "Fegyverhasználat (a klán tradicionális fegyvere)",
+                                    "3. fok"
+                                ],
+                                [
+                                    "Fegyverhasználat",
+                                    "2. fok"
+                                ],
+                                [
+                                    "Fegyverhasználat (nehézkardok, egykezes kardok, tőrök, csatabárdok, buzogányok, szálfegyverek)",
+                                    "1. fok"
+                                ],
+                                [
+                                    "Fájdalomtűrés",
+                                    "2. fok"
+                                ],
+                                [
+                                    "Vértviselet",
+                                    "2. fok"
+                                ],
+                                [
+                                    "Fegyverismeret",
+                                    "2. fok"
+                                ],
+                                [
+                                    "Harctéri gyakorlat",
+                                    "2. fok"
+                                ],
+                                [
+                                    "Hadvezetés",
+                                    "2. fok"
+                                ],
+                                [
+                                    "Taktika (kisebb egységes formációk)",
+                                    "1. fok"
+                                ],
+                                [
+                                    "Lélektan",
+                                    "2. fok"
+                                ],
+                                [
+                                    "Térképészet",
+                                    "1. fok"
+                                ],
+                                [
+                                    "Orvtámadás",
+                                    "1. fok"
+                                ],
+                                [
+                                    "Élettan",
+                                    "1. fok"
+                                ],
+                                [
+                                    "Futás",
+                                    "2. fok"
+                                ],
+                                [
+                                    "Úszás",
+                                    "2. fok"
+                                ],
+                                [
+                                    "Pszi (pyarroni)",
+                                    "2. fok"
+                                ],
+                                [
+                                    "Lopódzás",
+                                    "+10%"
+                                ],
+                                [
+                                    "Rejtőzés",
+                                    "+10%"
+                                ],
+                                [
+                                    "Csapdafelfedezés",
+                                    "+20%"
+                                ],
+                                [
+                                    "Esés",
+                                    "+10%"
+                                ],
+                                [
+                                    "Akrobatika",
+                                    "+15%"
+                                ],
+                                [
+                                    "Veszélyérzék",
+                                    "+20%"
+                                ]
+                            ]
+                        },
+                        {
+                            "type": "heading",
+                            "text": "A testőr képzettségei, melyeket iskolájától az Oktatás képzettség 4. foka által nyújtott előnnyel tanulhat"
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "Akrobatika, Álcázás/álruha, Csapdaállítás, Csapdakeresés, Csomózás, Élettan, Esés, Fegyverhasználat, Fájdalomtűrés, Harctéri gyakorlat, Fegyverismeret, Harcművészet, Írás/olvasás, Jelbeszéd, Kétkezes harc, Kínzás, Kultúra, Lopódzás, Mászás, Mechanika, Művészetek, Nyomolvasás, Orvtámadás, Pszi (pyarroni, slan*), Pusztítás, Pusztakezes harc, Rejtekhelykutatás, Rejtőzködés, Szabadulóművészet, Számtan/mértan, Színészet, Taktika, Vakharc, Vértviselet, Zárnyitás. (* A tradicionálisabb rendekben.)"
+                        }
+                    ]
+                },
+                {
                     "id": "sec_35",
                     "title": "Vértestvérek",
                     "content_blocks": [
@@ -13525,6 +13902,70 @@
                             "rows": []
                         },
                         {
+                            "type": "heading",
+                            "text": "Tűzmágia"
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "Ordanban ma is őrzik a Tűzvarázsló Rend alapítójának, Ardae Magnusnak titkos naplóját, melyben megemlíti, nem véletlenül választotta menedékül Sogron ordani rendházát. A Sheral hágóján nap mint nap támadásoknak kitett papok testileg és lelkileg is alkalmasnak látszottak, hogy – némi segítséggel – átvészeljék a pusztulás és káosz évezredéből hátramaradó századokat."
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "A Godoni Birodalom bukásakor elmenekülő mágus hihetetlen és azóta is irigyelt tudást hagyott örökül az ordani Sogron-papoknak: a godoni alapokon nyugvó Tűzmágiát. Ha a legendáknak hinni lehet, a napló magyarázattal is szolgál: Ardae Magnus – a szakrális hittételeit is figyelembe véve – Tűzmágiát dolgozott ki, melyben maradéktalanul elrejtette, és az utókorra hagyta a teljes godoni mágiát. Egyes, indexre tett elmélkedők munkái alapján Ardae Magnus maga Sogron közbenjárása alkotta meg az ordani Tűzmágia alapjait. Néhány Sogron tüzének adott bölcselő hátrahagyott, Pyarronba menekített jegyzetei alapján pedig Magnus volt az első, ki Sogron hívei közül szeráfi alkura lépett az istenséggel."
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "Habár az Ordanban felvirágzó rend már akkoriban sem ismerte és értette tudása alapjait, azóta Ynev minden táján varázslómesterek és mágusok igyekeztek fellelni a nagy erejű varázslatokban elrejtett kincset. A lappangó tudás, ha létezik is, aligha lelhető meg, s a bölcsek tudják csak, nehezíti meg, hogy az Ordani Rend féltékenyen őrzi, soha nem adja ki kezéből tudományát."
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "Az Ynev útját járó, tudományukkal a csatamezőket lángba borító tűzmágusok varázshatalma kivétel nélkül, egytől-egyig az Ordani Rend titkaira vezethető vissza. Ordan szemében kétféle tűzvarázsló létezik: az egyik Ordant szolgálja, a másikat pedig már elemésztették Sogron lángjai, csak még nem tud róla. Renegátok, kik nem Ordant ismerik el maguk felett, nagyobb számban csakis, kizárólag toroni szolgálatban találhatóak fel; tudományuk elég értékes ahhoz, hogy Sogron vallásának toroni papjai megvédelmezzék őket az ortodox tűzvarázslók haragjától."
+                        },
+                        {
+                            "type": "heading",
+                            "text": "Az Ordani Rend"
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "Az ordani Sogron-rend csak egy, az Yneven elterjedt Tűzkobra vallás rendjei és irányzatai között. Kitüntetett figyelmet főként különleges tudománya, a Tűzmágia miatt érdemel. A godoni elődöktől örökölt mágia nem Sogron adománya, kizárólag Ordanban gyakorolják, Sogron más rendjeiben – a közhiedelemmel ellentétben – nem ismerik. Éppen ezért az Ordani Rend sok vonatkozásban különbözik északi rokonaitól, nemcsak szertartásaiban, de hatalmi felépítésében is. Az Ordani Rendet nem a sogronita vallásban megszokott módon a Tűzkobra nagyhatalmú papjai, a Tűz Megtisztítói és a Tűz Letéteményesei irányítják, hanem a Tűzvarázslók."
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "A Tűzvarázslók éppúgy Sogron feltétlen hívei, miként az északi rendek papjai, azonban szigorú értelemben vett papi teendőket csak kevesen végeznek közülük. Sogron Ordani Rendje három alsóbb rendre osztható: a Tűz Harcosai, a Tűz Hordozói és a Tűz Táplálói. Mindhármat tűzvarázslók irányítják, de mindháromba tartoznak alacsonyabb rangú és tudású hívek is. A három nagy rend vezetői közül kerül ki – egyenlő arányban – a kilencven tagot számláló Varázslótanács és az ordani törvénykezés legfelső szintjét jelentő, harminc tanácsost tömörítő Főtanács."
+                        },
+                        {
+                            "type": "heading",
+                            "text": "Harcérték"
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "A tűzvarázslók erejüket nem a test-test elleni harcban, hanem mágiájukban vélik felfedezni, de ha rászorulnak, nem ódzkodnak a fegyveres küzdelemtől sem, s előszeretettel támogatják meg kevéske harci tudásukat a tűz hatalmával. Harcértékeik a legjobbak a mágiahasználók között, éppen ezért szintenként általában 7 ponttal növelik HM-jeik számát."
+                        },
+                        {
+                            "type": "heading",
+                            "text": "Életerő és Fájdalomtűrés"
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "A tűzvarázslók ritkán kerülnek szembe igazán testet próbáló feladatokkal, a lángokkal való manipulálás azonban néha az alkalmazóját sem kíméli, így gyakran jár kisebb sebekkel, sérülésekkel. A tűzvarázslók tehát nem is mérhetők egy harcoshoz, a varázshasználók között mégis ők rendelkeznek a legmagasabb fájdalomtűréssel. Szintenként általában 5 ponttal emelik Fp-ik számát."
+                        },
+                        {
+                            "type": "heading",
+                            "text": "Képzettségek"
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "A tűzmágusok világlátott emberek, mégis leginkább Sogron misztériumait kutatják, épp ezért a Világi és a Misztikus képzettségekben merülnek el. Céltudatos mágiajuk és világszemléletük miatt igen, a tűz manipulálásával és mágiájukkal foglalkozó képzettségekkel bírnak, és azokat is fejlesztik. Tanult emberek révén Kp-értékük általában magas, szintenként 10 pontnál ritkán növelik kevesebbel a Kp-ik számát."
+                        },
+                        {
+                            "type": "heading",
+                            "text": "Varázserő"
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "A tűzvarázslók a tűzből, ebből az éteri, megfoghatatlan matériából nyerik hatalmukat, mely az utolsó lépés az anyag útján, hogy visszatérjen a Manahálóba, melyből az idők kezdetén vétetett. A tűzmágia szakavatott képviselői ezt a pillanatot használják fel arra, hogy a felszabaduló erőkből elcsípjenek egy keveset, és hatalmat szerezzenek praktikáikhoz."
+                        },
+                        {
                             "type": "rule",
                             "text": "A tűzvarázslók szintenként átlagosan 6 ponttal növelik Mp-jaik számát.",
                             "title": "Manapont növekedés",
@@ -14042,9 +14483,73 @@
                     ]
                 },
                 {
-                    "id": "sec_79",
-                    "title": "Az Aschaoni Tűzmester különleges előnyei és hátrányai",
+                    "id": "sec_78b",
+                    "title": "Sogronita szerafisták",
                     "content_blocks": [
+                        {
+                            "type": "paragraph",
+                            "text": "Az Ordani Rend legmagasabb rangú beavatottai, Sogron ynevi birodalmát biztosítandó, ha elég odaadást és hűséget tanúsítanak az istenség iránt, akkor annak kezdeményezésére szeráfi alkura léphetnek az istenséggel. Ezen szerafisták biztosítják már-már hihetetlen hatalmukkal, hogy Ordan nemcsak a városállamok, de adott esetben Krán vagy Toron ellenében is megvédhesse érdekeit, biztosítva Sogron ynevi birodalmát. Hiszen segítségükkel vész idején a Tűzkobra az Isteni Paktum megszegése nélkül is képes szinte teljes hatalmát kinyilvánítani az Elsődleges Anyagi Síkon. Ám erre a teljes átlényegülésre csak a Fekete Láng képes, ki a béke napjait az Ordani Belsőváros főszentélyében tölti imádkozással, elmélkedéssel. Menedékét kizárólag csak akkor hagyja hátra, akkor jelenik meg a Főtanács ülésein, illetve akkor szól bele bárminemű ügyekbe, ha erre magától az istenségtől kap utasítást. Megjelenése bármely tanácsülésen, ne adja ég feltűnése Ordan falain kívül szinte mindig valamely nagy fontosságú esemény bekövetkeztét vetíti előre."
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "Az ordani szerafistákról vajmi keveset tudnak Ynev bölcselői. Annyi bizonyos, hogy a rejtélyes Fekete Láng, illetve az Ordani Belső Tanács mindenkori vezetői is közéjük tartoznak."
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "A szerafisták játéktechnikailag csakis 10. Tapasztalati szintet elért tűzvarázslók lehetnek, akiket ezen feladatra a Rend vezetői szemelnek ki, majd a megfelelő felkészültséget elérve döntés elé állítanak, hogy megfelelnek-e hitük és elszántságuk. A képzés 6. Tapasztalati szinten veszi kezdetét, s 10. Tsz.-re fejeződik be. Ezidő alatt a kiválasztott elsajátíthatja a Démonológia képzettséget; ekkorra a leendő szerafistának már legalább 3. fokú Démonológia képzettséggel kell bírnia. Sogron papja sohasem válhat szerafistává, hisz ő már másképpen szolgálja urát, lelkét már Sogronnak ajánlotta."
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "A szertartás során a karakter hűsége megméretettik, s Sogron dönt, elfogadja-e a szerafistát; a Fekete Láng, illetve a Rend nagymestere csak ekkor citálja elő a szent szövegeket, melyek kiejtése során a jelölt lassan, minden szó, minden elhangzott ige nyomán telítődik Sogron hatalmával és izzó zsarátnokként lobban el, majd pár perc múltán az isten kegyéből ölt alakot hamvaiból."
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "A Tűzkobra még ekkor is megvonhatja kegyét az áldozattól, hisz a szeráfi szöveg nem teljes; az csakis a Fekete Láng avatásakor hangzik el."
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "Ha a szertartás sikeres, a tűzvarázsló megváltozik, bőre színe mélyül, szemében apró szikrák lobbannak, s ha dühös, lehelete forró levegőként, máskor füstként robban elő."
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "A legfontosabb azonban, hogy innentől kezdve a karakter képessé válik a szeráfi mágia alkalmazására a Szerafizmus c. fejezetben leírtak szerint; a paktum Alkuként köttetik meg. (Lásd a 385. oldalon a Szerafizmus c. fejezetben.)"
+                        }
+                    ]
+                },
+                {
+                    "id": "sec_78c",
+                    "title": "Renegátok",
+                    "content_blocks": [
+                        {
+                            "type": "paragraph",
+                            "text": "Mint azt már korábban kifejtettük, az Ordani Tűzvarázslórend nem ismer renegátokat. A toroni hitsorsaik mellé húzódott szikrákról is csak mint pillanatokig létező szikrákról nyilatkoznak, melyek lángját hamar elfojtják, amint erre érkezésük adódik."
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "Az Ynev-szerte létező renegátok valamely renegát tanító diákjai, kikre folyamatos üldöztetés vár, mestereik általában nem birtokolják a teljes tűzmágiáját, így ők képtelenek akár a Godoni Örökség, akár a tűzmágia magasiskolájának elsajátítására, még akkor is, ha mesterük bírta e képességet. Emiatt azonban a karakteralkotásnál feltüntetett Háttereknél iskolájuk felvétele 1 ponttal kevesebb KAP-ot igényel. Azonban ezen iskolák tagjai nem szenvednek Ordan megkötéseitől, tehát bármilyen fegyvert forgathatnak, illetve választhatnak a karakteralkotáskor, emellett pedig bármiféle vértezetet ölthetnek."
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "Azonban a megfelelő tudás hiányában soha egyetlen renegát tűzvarázsló sem lehet szerafista, hacsak korábban be nem avatták az Ordani Renden belül ezen misztériumokba; azonban az ilyen magas rangú áruló ritkább, mint a fehér holló."
+                        }
+                    ]
+                },
+                {
+                    "id": "sec_79",
+                    "title": "Az Aschaon Tűzmesterei",
+                    "content_blocks": [
+                        {
+                            "type": "paragraph",
+                            "text": "Talán az egyetlen olyan tűzmágiával foglalkozó iskola, mely nem ismeri el Ordan főségét, és nem Toron birodalmának határain belül található, az Aschaon Tűzmestereinek rendje. Igaz, ezen szervezet sem nélkülözheti Toron támogatását, így azok a Quiron-Pentád száműzött nemeseinek védelme alatt, eképpen a birodalom árnyékában ténykednek, megóvandó magukat Ordan haragjától. Ennek ellenére az Aschaoni Tűzmestereket sem Ordan, sem Toron nem ismeri el; kontár bozótvarázslóként emlegetik a céh főrangúit is, így amint elhagyják a Pentád városainak védelmét, valóságos hajtóvadászatot rendeznek utánuk."
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "A Quiron-Pentád tűzmestereinek rendje, mely az öt város mértani középpontjában volt megtalálható, Kapuváros eredeti, toroni nevét (Lángforrás) vette fel, és itt a hagyományhűség tekintetében meg is álltak a vezetőik. A tűzmesterek hatalma nem dogmatikus tanokon alapul: nemzedékről nemzedékre változik, felölelve az asziszi bozótvarázslók és boszorkánymesterek tudását csakúgy, mint a sogronita kánon töredékeit. Ez utóbbi elsajátításának komoly akadálya, hogy a Tűzkobrával köthető szeráfi alku szövege feledésbe merült az idők folyamán, így az aschaoniak csupán bizonytalan kapcsolatban állnak a Lángok Urával. Épp ezért állítják észak nagy varázstudói, hogy az Aschaon nagymesterei nem iskolát, csupán céhet alapítottak."
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "A tűzmesterek azonban – korlátaikat felismerve – emberöltők óta keresik a sogronita szeráfi alku eredeti szövegét, egyszersmind gátlástalanul kísérleteznek a tűz és a Boszorkánymesteri mágia megidézési formáinak varázslataival. A céh, bár erősen megkérdőjelezhető módszerrel ugyan, de számottevő haladást ért el a lángtetoválások és az idők során sűrített rajzolatok kidolgozása terén is, melyek alkalmazásával a jelölt meglehetősen gyorsan és csekély erőfeszítéssel haladhat"
+                        },
                         {
                             "type": "paragraph",
                             "text": "előre az Őselemi Tűz uralásának ösvényén. A módszer igen hatékony, azonban nem kis hátránya, hogy a toroni nekromantikusok átvett alkalmazása miatt alkalmazása valósággal habzsolja az életerőt.",
@@ -17492,6 +17997,53 @@
                             "title": "",
                             "headers": [],
                             "rows": []
+                        }
+                    ]
+                },
+                {
+                    "id": "sec_93v",
+                    "title": "Vértviselet (II – Erő)",
+                    "content_blocks": [
+                        {
+                            "type": "paragraph",
+                            "text": "Harcászati értelemben Ynev a hidegfegyverek virágkorában él. Az átlagos harcos kardban, tőrben, buzogányban gondolkodik, s ezek ellen a legjobb védelem, ha az ember annyi keményre edzett fémet halmoz magára, amennyit csak elbír. Ezt a gyakorlatot a kontinens népei már korok óta gyakorolják, annak ellenére, hogy a rengeteg fém viselése lelassítja, akadályozza viselőjét; ezt nevezzük Mozgásgátló tényezőnek (MGT)."
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "Ezen akadályozó erő hatására fejlődött ki az évezredek során a sajátos képzettség, amely megedzi és képessé teszi birtokosa testét az irgalmatlan súlyú vértek viselésére is."
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "A vértezeteket anyaguk és típusaik szerint három csoportba soroljuk: az egyikbe a Könnyűvértezetek, azaz a nem fém vértezetek (posztóvért, bőrpáncél), a másodikba a Rugalmas Nehézvértek (gyűrűs vért, sodronying, brigandin, láncing, pikkelyvért), míg a harmadik csoportba a Merev Nehézvértek tartoznak (lemezvért, mellvért, félvértezet, teljesvért). A különböző klánok, rendek, iskolák speciális vértezeteit lásd az adott klán, rend, iskola vagy a fegyverek leírásánál."
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "Képzetlenség esetén a karakter, ha könnyűvértet ölt magára, képes viselni azt, de az MGT egésze érvényesül. Ha nehézvérttel próbálkozik, akkor az MGT érvényesül, illetve az irdatlan tömeg alatt tántorogva a karaktert a képzetlen fegyverforgatásból adódó negatív módosítók sújtják. A nehézvértet képzetlen személy maximálisan az Állóképességének megfelelő körig képes viselni, majd kimerülten, és a továbbiakban a Harc kábultan módosítóit is elszenvedni (KÉ: -10, TÉ: -20, VÉ: -10, CÉ: -30)."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "1. fok",
+                            "text": "A karakter izomszakasztó, több heti verejtékes gyakorlás után nemcsak Könnyűvértezeteket, hanem Rugalmas Nehézvértezeteket is képes viselni."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "2. fok",
+                            "text": "A képzettség birtokosának teste lassan átformálódik azzá a masszív felépítésű, nehézcsontozatú alakká, aki tapasztalataival és a rengeteg munkával már kihasználja a páncél felépítése adta lehetőségeket és segítségükkel huzamosabb ideig képes hordozni a terhet. A Könnyűvértezetek MGT-je 1-gyel csökken. A karakter már bármiféle Nehézvértezetet viselhet."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "3. fok",
+                            "text": "Az ilyen fokon képzett karakter már igazi páncélos vitéz, még kevésbé zavarják a nehezebb vértezetek. A Nehézvértek MGT-je 1-gyel csökken, a Könnyűvértezeteké 2-vel csökken. A karakter képességei miatt már ösztönösen alkalmazza a páncélzata nyújtotta lehetőséget a csapások hárítására, mérséklésére, az általa viselt vértezetek SFÉ-je 1 ponttal magasabbnak számít."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "4. fok",
+                            "text": "A képzettség ezen fokának birtokosa már igen nagy gyakorlattal bír a vértviselésben, a Nehézvértezetek MGT-je 2-vel csökken, az általa viselt páncélok SFÉ-je 2 ponttal magasabbnak számít."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "5. fok",
+                            "text": "„Páncélban született” tartják az efféléről a bölcsek és a köznép egyaránt, már szinte észrevétlen hordozza az irdatlan vasakkal felszerelt teljes vértezeteket is, a Nehézvértezetek MGT-je 3-mal csökken, az általa viselt vértek SFÉ-je 3 ponttal magasabbnak számít."
                         }
                     ]
                 },
