@@ -22920,6 +22920,32 @@
                             "text": "Például: Asyl a boszorkánymester – 4. fokon képzett méregkeverő egy fájdalomcsillapítót szeretne kikeverni. A 0. szintű (0 Ip) gyógyítóval természetesen italméregnek minősül (1 Ip), ami fájdalomcsillapító hatást, és (2 Ip), közepes ideig ható (3 Ip) és gyorsan hat (3 Ip). Tehát a gyógyítóval Ip költsége a rendes költség (9 Ip) kétszerese, azaz 18 Ip, és 4k6 Fp visszaadására képes – természetesen Fp-t nem gyógyulnak így semmiféleképpen, s amint a hatás időtartama lejár az így nyert Fp-k is elvesznek."
                         }
                     ]
+                },
+                {
+                    "id": "sec_fuggoseg",
+                    "title": "Függőség",
+                    "content_blocks": [
+                        {
+                            "type": "paragraph",
+                            "text": "Függőség akkor alakulhat ki, ha a karaktert valamely méreghez vagy ajzószerhez igyekeznek hozzászoktatni, hogy Egészségpróbáját könnyebben megdobhassa, vagy ha ezen anyagok bármelyikével huzamosabban él."
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "Játéktechnikailag ez annyit tesz, hogy a hozzászoktatás által szerzett minden plusz egy Egészségmódosító, mely az adott anyag elleni mentődobáskor érvényesül, -1 módosítót jelent a karakter minden Akaraterő dobására az anyaggal kapcsolatban, illetve hasonlóképpen megszüntet minden módosítót az a 3 holdhónap, amely alatt a karakter rendszeresen – legalább heti 1 alkalommal – használja a szert."
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "Abban az esetben, ha a karakter nem jut hozzá a megfelelő anyaghoz, akkor Akaraterőpróbát köteles tenni a megfelelő módosítókkal. Ha ez sikertelen, akkor a karakter minden Tulajdonsága annyival csökken, amennyi az Akaraterőpróbánál alkalmazott negatív módosító volt, illetve a karakterre érvénybe lépnek a Rosszullét módosító hatásai, melyek összeadódnak a fenti negatívumokkal. Ha a karakter Egészsége, vagy Állóképessége 0-ra csökken, a karakter belehal az elvonási tünetekbe."
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "A fent ismertetett negatív módosítók addig vannak életben, míg a karakter meg nem kapja az újabb adagot, vagy míg ki nem tisztul. Annak eldöntése, hogy le lehet-e szokni az adott szerről, minden esetben a KM jogköre, de a 20 Ip feletti anyagokról általában már szinte képtelenség."
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "A leszokás, tisztulás folyamata mindig hosszú és nehéz. A karakternek annyi hétig tart leszoknia az adott anyagról, amennyi negatív módosító sújtja. Eközben minden héten Egészségpróbát kell dobnia, hogy a teste képes-e regenerálódni, illetve kiheverni a szer hatását. Ha a próba sikertelen, akkor az adott héten megtorpan a javulás. A folyamat teljes ideje alatt, míg a karakter vissza nem nyeri Tulajdonságpontjait, érvényesülnek a fent említett elvonási tünetek, melyek minden egyes sikeres Egészségpróba után csökkennek egy ponttal. Természetesen a karakternek segítséget nyújthat egy Méregkeverés képzettségben járatos személy abban az esetben, ha képzettségpróbáját a karaktert sújtó negatív tulajdonságmódosítóval megegyező negatív értékkel sikerrel végzi el. A méregkeverő képzettségpróbájának sikere esetén a siker mértékével megegyező pozitív módosítóval végezheti próbáját a leszokó személy."
+                        }
+                    ]
                 }
             ]
         },
@@ -22939,8 +22965,120 @@
                             "text": "kis tapasztalattal felismerhetjük akkor is, ha rajzolatukat nem tudjuk beazonosítani: különleges fényük és tökéletes formájuk eligazít."
                         },
                         {
+                            "type": "heading",
+                            "text": "Észak"
+                        },
+                        {
+                            "type": "heading",
+                            "text": "Északi Szövetség"
+                        },
+                        {
                             "type": "paragraph",
-                            "text": "díszítik. Az érmék uralkodók képmását, palotákat, fegyvereket ábrázolhatnak. Régebben a sivatag legszárazabb részein a víznek pénz egyenértéke volt, azaz vízért is lehetett vásárolni. Sok külhoni arra gondolt, a legnagyszerűbb üzlet, ha ide vizet szállítanak nagy, hordókkal ellátott kocsikon. Sajnos, számításuk nem vált be, a karavánok jelentős része odaveszett a sivatagban. Varázslók azonban rájöttek, térkapukkal a szárazság sújtotta városok vízellátása is könnyen megoldható – ám nem ingyen. Ezért a sivatag mélyén lakókkal különös kereskedelmi kapcsolatot létesítettek néhányan. A bajba jutottak kiépített mágikus rendszereken át kérnek és kapnak segítséget, természetesen megfelelő tiszteletdíj ellenében."
+                            "text": "Szerencsés helyzetben van a krónikás (és persze az utazó is), hiszen az Északi Szövetség államainak pénzrendszere – gondos egyeztetési tárgyalások következményeként – szinte teljesen azonos. Alapegység tehát az északi korona, amely egy rézpénznek felel meg. Az ezüstpénz értéke így 100 korona, az aranyé 1000. Mondják, inkább a szegények számolnak koronában, a tehetősek már ezüstben, a gazdagok pedig aranyban. A nemesfém érmék arany- és ezüsttartalmát pontosan meghatározták, így minden tagállam pénze ugyanannyit ér a Szövetség területén belül – ennek megfelelően mindenütt elfogadott. Az egyes országok érméi azonban külsőleg nem egyformák, mindegyiknek önálló joga eldönteni, mit is veret pénzére. Általánosságként megállapíthatjuk, hogy a pénzverés jogát szigorúan kézben tartják az adott régió urai, nem rendelkezik minden nemes e kiváltsággal. Ez a rendelkezés többek között az egységesítést szolgálja, hiszen ellenkező esetben képtelenség lenne közös pénzrendszert használni. Mithrill érmét nem készítenek a Szövetségben, Tarin kivételével. Az idők folyamán voltak kísérletek a teljes egységesítésre is, azonban a nemzeti büszkeség mindig gátat szabott e törekvéseknek – csekélyke eredményként minden érme kerek, rajzolatuk viszont országonként eltérő maradt."
+                        },
+                        {
+                            "type": "heading",
+                            "text": "Doran"
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "A városállam kicsinysége ellenére saját pénzverdével rendelkezik, ahol Ynev talán legtökéletesebb érméit készítik. Az itteni érméknél csak a kharei mesterek munkái kidolgozottabbak. Motívumként Doran címere szerepel rajtuk."
+                        },
+                        {
+                            "type": "heading",
+                            "text": "Dwyll Unió"
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "A pénzverés jogát a Ranil-rend tartja kezében, az érméken a mindenkori nagymester arcképe látható. Pénzeik kicsik, vastagok. Kidolgozásuk sem igazán míves – hiába, az itt lakók még ebben sem adnak a külsőségekre."
+                        },
+                        {
+                            "type": "heading",
+                            "text": "Északi Hármak"
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "Az érmék különlegessége, hogy feltüntetik rajtuk a kibocsátás évét. A tagállamok hercegeinek portréja látható rajtuk – ez egyben az egyetlen különbség is."
+                        },
+                        {
+                            "type": "heading",
+                            "text": "Erigow"
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "A hercegség gazdagsága tükröződik pénzük csillogásában is. Mintha még ebben is valamiféle művészeti ágat látnának, minden évben más és más képet ütnek az érméikre. Ez lehet egy város látképe, fegyver rajza, állatkép, igen ritkán emberi arckép. Törvény tiltja egyébként, hogy bárki arcképe még életében érmére kerüljön. Másik helyi furcsaság, hogy a fényüket vesztett pénzeket időről időre begyűjtik, s megtisztítva, újra ragyogóként bocsátják ki megint – természetesen szigorúan ügyelve arra, hogy értékük ne csökkenjen."
+                        },
+                        {
+                            "type": "heading",
+                            "text": "Ilanor"
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "A lovasnép hazája, mi is lehetne pénzük dísze? Vágtató, ugró, ügető paripák egyedül, kisebb csoportban vagy ménesben, különböző háttér előtt – az ilanoriak hihetetlen képzelőerőről tesznek tanúbizonyságot, ha lovakat kell ábrázolni."
+                        },
+                        {
+                            "type": "heading",
+                            "text": "Tarin"
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "Az Északi Szövetség legkülönlegesebb érméit készítik a barlangok félhomályában munkálkodó pénzverők. Az érmékre képek mellett rúnák kerülnek, melyek csak a törpe nyelv ismerői előtt szólalnak meg. A jelek, s a körülmények révén különös erő költözik e pénzekbe, értékük így többszörösen meghaladja a bennük foglalt fémet – ezt azonban külhoni ritkán érzi át igazán. A törpék művészetnek tekintik a pénz előállítását, nem iparnak. A tervező néha több hónapon át dolgozik ugyanazon az érmén – munkájáért a tökéletesség a jutalom. Egyes emberek is megőrzik olykor az egyszerű érmében testet öltött művészetet. Sokszor megesik, hogy a kapott törpe érmén nem adnak túl, emlékként, kabalaként őrizgetik, s csak végszükség esetén válnak meg tőle. Odalent, Tarin tárnáiban azonban gyakorta nagyobb csereértékkel bírnak a felvilágból származó természeti javak, mint maga a pénz."
+                        },
+                        {
+                            "type": "heading",
+                            "text": "Tiadlan"
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "A kereskedők paradicsomában komoly szerep jut az arany- és ezüstpénzeknek. Az itt lakók sem többnek, sem kevesebbnek nem tekintik a pénzt, mint ami valójában: fizetőeszköznek. Az aranytartalom megtartása mellett olyan ötvözetet kerestek, amely tartós, fényes, jól használható érméket eredményez. Pénzük keményebb is, mint más országokban. Kialakításakor nem a rajta szereplő ábra, hanem a pontos forma volt a lényeges szempont. Nem könnyű nemesfémből tökéletesen egyforma pénzt verni, de a tiadlani mesterek mindig erre törekszenek – legfontosabb az állandó csereérték!"
+                        },
+                        {
+                            "type": "heading",
+                            "text": "Dél"
+                        },
+                        {
+                            "type": "heading",
+                            "text": "Abaszisz"
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "A Quiron-tenger déli partján fekvő birodalomban uralkodó fejetlenség nem csupán katonailag, de gazdaságilag is szembehelyezte a nagykirályt hercegkapitányaival. Pénzneme az abasziszi dénár – az uralkodó ragaszkodik kizárólagos pénzveretési jogához, s mindent megtesz ennek érvényesítésére. Határozatok és törvények tucatjai taglalják azon engedetlen nemesek büntetéseit, akik pénzverdét merészelnek építtetni. Ez persze nem gátolja meg a király orra alá minden lehetséges alkalommal borsot törő hercegkapitányokat a pénzveretésben. Csupán csínytevésből néhányan még hamis pénzt is készíttetnek, természetesen a király arcképével és nevével fémjelezve. Sokuk saját birtokán nem is fogad el királyi érméket, csak olyat, melyet a magánverdéjében készíttetett. Be kell ismerni, óvatosságuknak van is némi alapja, mert a királyi pénzverdék aranytartalékai jelentős ingadozást mutatnak. Ha kevés volt a befolyt adó, netán Toron hadjáratainak támogatása vitt el tetemesebb összeget vagy pusztán az udvartartás emésztett fel a kelleténél több aranyat, bizony gyakran lesz könnyebb a pénz. Ezt az egyszerű polgárok ritkán érzékelik, de a hozzáértők tudják, mely évben volt az érmékben a szokásosnál több réz. A főnemesek ilyenkor megkötik magukat, s csak tiszta aranyban fogadnak el pénzt a királytól, aki – attól függően, milyen biztosan ül éppen a trónján – fizet vagy harcba kezd. Ritka a nyílt szembeszállás a nagykirállyal, ám a híg arany mindig felbőszíti az egyébként is állandóan elégedetlenkedő hercegkapitányokat. Ilyenkor a király alkut köt – az esetek túlnyomó többségében legalábbis –, vagy katonákkal igyekszik érvényesíteni deklarált jogait. Nem egy nemes végzetét jelentette, hogy alulértékelte a király hatalmát, s családjával együtt elsöpörték az uralkodó zászlai alatt harcoló seregek. Ha biztonságban érzi magát, büntetőhadjáratait gyakran elrettentésként is alkalmazza Otlokir, bízva abban, hogy a nemesek legközelebb kétszer is meggondolják, szembeszegüljenek-e hatalmával. Az abasziszi pénzt fintorogva ugyan, de elfogadják az Északi Szövetség államaiban és Toronban, bár jobban szeretik abbitacélban kialkudni a fizetséget. Ez a fém adja Abaszisz igazi hatalmát a kereskedelemben, s ezért nézik el a vagyonosabb kereskedők a pénz aranytartalmának ingadozásait is, amikor abasziszival kötnek üzletet."
+                        },
+                        {
+                            "type": "heading",
+                            "text": "Toron"
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "A híres nyolcszögletű érmék hazája. A hatalmukat mindenhol és mindenkor érvényesítő boszorkánymesterek több kiváltságot hagytak a nemességnek, ezek közé tartozik a pénzverés joga is. Bár nem ügyelnek kínos pontossággal a pénz valódi értékére, ragaszkodnak ahhoz, hogy a beszedett császári és egyéb adók jó pénzben jussanak rendeltetési helyükre. Így, ha egy nemes birtokairól befolyt pénzben észrevehetően kevesebb a nemesfém, az illető komoly megtorlásra számíthat. Egyes nemesek többféle érmét is veretnek, melyeknek csak az összetételében van különbség – de ez már hosszabb történet. Az érméket általában nem arcképpel, hanem bonyolult díszítő motívumokkal, ábrákkal ékesítik. A toroni dukát nem örvend igazi megbecsülésnek az Északi Szövetség országaiban, Abaszisz azonban már nem lehet ilyen válogatós."
+                        },
+                        {
+                            "type": "heading",
+                            "text": "Gro-Ugon"
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "Bizton állíthatjuk, itt uralkodik Észak legnagyobb pénzügyi káosza. Mind a mai napig rendkívül fontos a cserekereskedelem, ám (ki tudja már, melyik külországban folyt rabló-hadjárat tapasztalatai alapján) virágzásnak indult a pénz kultusza is. Ám azt rögtön meg kell jegyezni, az ork gondolkodásmód tökéletesen másképp áll a pénzügyekhez, miként azt mi, emberek gondolnánk. A törzsfők egyéni véleménye igen szerteágazó, ám két dologban teljes közöttük az összhang. Szerintük a rossz pénz a törzsek megrontója, ám ügyesen alkalmazva mégis az orkok hasznára lehet. Rossz pénz alatt természetesen az embernépek fizetőeszközeit értik. A magántulajdon fogalma szinte tökéletesen idegen az orkok gondolkodásmódjától, s a külvilági tapasztalataik is mind arra engedtek következtetni, hogy az emberi puhányság, önzés, széthúzás mind-mind a felhalmozott pénznek köszönhető. Való igaz – mondják – hogy néha jó haszna van, s azért használják ők maguk is, mivel jelentősen megkönnyíti az árucserét, s értékmérőként kitűnően alkalmazható. Ám pénzüket vasból verik – az ezüstöt és aranyat értéktelennek tartják, mert mint mondják, az a fém, amelyből nem lehet fegyvert kovácsolni, hitványabb a kavicsnál is. Evvel elérték azt is, hogy az orkok pénzének másutt ne legyen értéke, ők maguk viszont remekül használják, a hatalmat pedig továbbra sem pénzzel, hanem haditettekkel szerzik. Manapság minden törzs saját vaspénzeket veret, noha a hagyományos cserekereskedelem még mindig nagy népszerűségnek örvend. A törzsfők kiválóan kezükben tartják a pénz- és hamisítóverés jogát. Saját törzsi szimbólumukat üttetik több-kevesebb sikerrel az érmére, s rendelkeznek egy különítménnyel a pénz valódiságának védelmére. Minden törzsfő fenntart egy csapatot, akiket viszonylag intelligens, jó harcosokból toboroz. Ezek egyetlen feladata, hogy az összes engedély nélküli pénzverdét felkutassák és elpusztítsák – természetesen a benn dolgozókkal együtt. Munkájuk mindig akad, hiszen a fémművességhez nagy kincset a konyító gro-ugoniakban egyre másra csillan fel az isteni szikra: adott idő alatt sokkal több vas érmécskéhez jutnak, ha mindjárt azt állítják elő, s nem nyílhegyért vagy csákányfejért kapják cserébe."
+                        },
+                        {
+                            "type": "heading",
+                            "text": "Pyarroni Államközösség"
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "Az Államközösség gazdasági és pénzügyi élete talán a legstabilabb és legolajozottabb egész Yneven. Az államok közti pénzügyi szövetség hasonló az Északon bemutatotthoz, de annál jóval szorosabb az együttműködés. Az érmék csaknem tökéletesen egységesek, rajtuk a kibocsátó állam fővárosának látképe szerepel. A nagyság, a vastagság s a nemesfémtartalom mind meghatározott; az államok igyekeznek kerülni a legkisebb eltérést is a többszáz éves etalontól. A pénz neme a pyarroni sepia, s egész Yneven kedvelt, elfogadott érme."
+                        },
+                        {
+                            "type": "heading",
+                            "text": "Dzsad államalakulatok"
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "Az emírségek és sejkségek mind önálló pénzverdével rendelkeznek. Állandó gondot jelent az újabb és újabb hamisítók felkutatása és megsemmisítése. Az emírek és sejkek verette dzsad rúpia önmagában jó, bár hullámzó megbízhatóságú pénz lenne, ám az állandóan megújuló hamisítási hullámok nem vetnek jó fényt külhoni megítélésére. Sokan rájöttek e sivatagos vidéken is, hogy nincs jobb módja a pénzszerzésnek, mint ha valaki saját maga állítja elő. Így a szigorú büntetések ellenére sem csökken a vállalkozó kedvűek száma. A rúpia megjelenési formája emírségenként más és más, egyes helyeken sokszög, máshol kerek, Abu-Dalek emírségében például egy vastag gyűrű. Ezt sokan láncra fűzve hordják, mondván, sokkalta biztonságosabb, mint az erszény."
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "A gyűrű körbe futó, kígyót idéző minták, vésetek díszítik. Az érmék uralkodók képmását, palotákat, fegyvereket ábrázolhatnak. Régebben a sivatag legszárazabb részein a víznek pénz egyenértéke volt, azaz vízért is lehetett vásárolni. Sok külhoni arra gondolt, a legnagyszerűbb üzlet, ha ide vizet szállítanak nagy, hordókkal ellátott kocsikon. Sajnos, számításuk nem vált be, a karavánok jelentős része odaveszett a sivatagban. Varázslók azonban rájöttek, térkapukkal a szárazság sújtotta városok vízellátása is könnyen megoldható – ám nem ingyen. Ezért a sivatag mélyén lakókkal különös kereskedelmi kapcsolatot létesítettek néhányan. A bajba jutottak kiépített mágikus rendszereken át kérnek és kapnak segítséget, természetesen megfelelő tiszteletdíj ellenében."
                         },
                         {
                             "type": "paragraph",
