@@ -19817,6 +19817,259 @@
                     ]
                 },
                 {
+                    "id": "sec_herbal",
+                    "title": "Herbalizmus (II – Intelligencia)",
+                    "content_blocks": [
+                        {
+                            "type": "paragraph",
+                            "text": "A gyógyfüvek és ártalmas gizgazok ismerője, aki e képzettséggel bír. Tudja mi milyen nyavalyát gyógyít, mi ehető, mi segít vagy mi hallgattatja el az embert végleg."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "1. fok",
+                            "text": "A karakter ártalmas és gyógyító kenőcsöket, főzeteket egyaránt készíthet, ezek csak lenyelve vagy nyílt sebbe kenve hatásosak és nagyon gyenge 0. szintű méregként funkcionálnak a KM belátása szerint. Az általa készített anyagok a sebek elfertőződésének esélyét nullára csökkenthetik."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "2. fok",
+                            "text": "A karakter kezelte sebek Fp gyógyulása a kétszeresére gyorsul, 1. szintű betegségeket is gyógyíthat."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "3. fok",
+                            "text": "A herbalista által kezelt Ép sebek gyógyulása a kétszeresére gyorsul, 2. szintű betegségeket is gyógyíthat. A karakter már 0. szintű komolyabb hatású mérgeket is előállíthat, ekkor már étel és italmérgeket is a KM belátása szerint."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "4. fok",
+                            "text": "A karakter által kezelt sebek Fp gyógyulása a háromszorosára gyorsul, 3. szintű betegségeket is gyógyíthat."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "5. fok",
+                            "text": "A karakter által kezelt sebek Ép gyógyulása a háromszorosára gyorsul, 4. szintű betegségeket is gyógyíthat."
+                        }
+                    ]
+                },
+                {
+                    "id": "sec_irasolvasas",
+                    "title": "Írás/olvasás (II – Intelligencia)",
+                    "content_blocks": [
+                        {
+                            "type": "paragraph",
+                            "text": "A betűvetés és az olvasás tudománya, magasabb fokú ismerői a kalligráfia alkalmazói."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "1. fok",
+                            "text": "A karakter még nem tud írni, csupán olvasni, azt is csak lassan és nehézkesen. Bármennyire erőlködik általában többszöri olvasásra érti meg a szöveget."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "2. fok",
+                            "text": "A képzettség ezen fokának birtokosa már szinte folyékonyan olvas, betűi még gyermeki ákombákomok, természetsen csak az általa beszélt nyelvek alfabétikumát használhatja."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "3. fok",
+                            "text": "A hivatásos tollnokok szintje, elsajátítója folyékonyan olvas és olvashatóan, gyorsan ír. Általában valamely nemes úr vagy valamelyik egyház szolgálatában álló írnok."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "4. fok",
+                            "text": "A híres tollforgató az összes humán nyelv ábécéjét felismeri, s azokat, ha beszéli az adott nyelveket, használni is tudja. Betűi szépek formásak igazán mutatós okleveleket és iratokat készíthet, illetve ha bírja a Művészetek (Rajzolás) képzettséget, akár iniciálékat is alkothat."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "5. fok",
+                            "text": "A karakter villámolvasással a KM belátása szerint képes akár félpercenként is végezni egy teljes, nagyméretű oldal szöveggel, illetve képes alkalmazni a gyorsírást, mellyel normál beszédtempójú szöveget képes lejegyezni."
+                        }
+                    ]
+                },
+                {
+                    "id": "sec_jog",
+                    "title": "Jog/Törvénykezés (III – Intelligencia, Asztrál)",
+                    "content_blocks": [
+                        {
+                            "type": "paragraph",
+                            "text": "A kódexbe foglalt, szájhagyományban terjedő törvények, szokásjogok ismerete és alkalmazásuk, illetve megalkotásuk tudománya."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "1. fok",
+                            "text": "A karakter már eligazodik az országa, szülőföldje törvényei között, akár már magát is képviselheti egy tárgyaláson, egyelőre még nem túl sok sikerrel."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "2. fok",
+                            "text": "Az olvasottabb személy szülőhazája törvényeiben már igen gyakorlott, s egy általa választott rend vagy testvériség, esetleg céh belső törvénykezésében is járatos."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "3. fok",
+                            "text": "A karakter már igazi jogász, hazája szomszédos kultúráiban is járatos, de igazi, komoly munkát csak szülőföldjén képes végezni."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "4. fok",
+                            "text": "A híres jogtudor már igazi törvényalkotó, nem csak alkalmazza, de már át is látja a törvények kialakulásának és működésének dinamikáját, az összes általa ismert kultúrában képes alkalmazni tudását."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "5. fok",
+                            "text": "Általában a nagyobb, törvénykező uralkodók vagy reformer főurak sajátja, de legtöbbször a mögöttük megbúvó szürke eminenciások birtokolják ezen a szinten a képzettséget."
+                        }
+                    ]
+                },
+                {
+                    "id": "sec_legenda",
+                    "title": "Legendaismeret (II – Intelligencia)",
+                    "content_blocks": [
+                        {
+                            "type": "paragraph",
+                            "text": "A legendaismeret tudománya a karakter tárgyi tudását ismerteti az adott kultúrkör legendáiban, meséiben, s azt, hogy mennyire képes kihüvelyezni azok igazságtartalmát."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "1. fok",
+                            "text": "A karakter már nem csak szülőföldje, de a környék legendáit is ismeri, Intelligenciapróbáját a legenda valóságtartalmának kiszűrésére -1 módosítóval dobja."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "2. fok",
+                            "text": "A karakter már saját kultúrköre legtöbb legendáját ismeri, próbáját módosítók nélkül dobhatja."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "3. fok",
+                            "text": "A karakter már kultúrköre minden legendáját ismeri, ezek helyi változataival együtt is, akár kategorizálásuk folytán egyéb információkat is nyerhet azok torzulásaiból. Próbáját +1 módosítóval dobja."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "4. fok",
+                            "text": "A karakter már a kapcsolódó, szomszédos kultúrkörök legendáiba is belelát, s a népeket összekötő regéket is elemezheti, s alaposan ismeri azokat. Próbáját +2 módosítóval dobja."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "5. fok",
+                            "text": "A karakter megbecsült tudós, képes akár ősi mítoszok valóságtartalmának kielemzésére is, ha bírja az adott kultúrát. Igazi mesékben élő ember, próbáját +3 módosítóval dobja."
+                        }
+                    ]
+                },
+                {
+                    "id": "sec_mechanika",
+                    "title": "Mechanika (III – Ügyesség, Intelligencia)",
+                    "content_blocks": [
+                        {
+                            "type": "paragraph",
+                            "text": "A Mechanika egyszerre elméleti és gyakorlati alkalmazhatóságú tudomány. Ismeretével a karakter hétköznapi eszközök működésének titkába láthat bele, magasabb szinteken, pedig maga is tervezhet efféléket."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "1. fok",
+                            "text": "A karakter csak nagyon kezdő szinten ismeri a tudományt, csak egyszerűbb szerkezetek működési elvét ismeri fel, komolyabb gépezeteknél inkább mágiára gyanakszik. Új alkalmatosságot még nem tud tervezni."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "2. fok",
+                            "text": "A karakternek már átfogó képe van a mechanikáról, az egyszerűbb szerkezetek működését már szétszedés nélkül értelmezi, s a bonyolultabbakról is egészen jó közelítésű véleményt alkot."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "3. fok",
+                            "text": "A karakter tisztában van a tudomány alapvető szabályaival, hacsak az alkotó nem akarta elrejteni azt szem elől, akkor már szinte bármilyen nem mágikus gép működési elvét, szabályait felismeri. Bármilyen általánosnak mondható szerkezet megépítésére képes, mint mondjuk vízimalmok, ostromgépek."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "4. fok",
+                            "text": "A karakter már igazi mérnök, zavarbaejtően kicsiny órákat, igen hatékony ostromgépeket, vagy épp más komolyabb mechanikus szerkezeteket épít. A tudomány mélyebb összefüggéseit is ismeri. Egyszerűbb mechanikus fegyvereket tervez, mint pl. tűvetők, vagy épp többvájatú, vagy tárral rendelkező nyílpuskák."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "5. fok",
+                            "text": "A karakter már igen bonyolult rendszereket vázol fel, akár önjáró alkalmatosságok (gépszolga), vagy épp gondolkodónak tűnő (sakkgép) szerkezetek megalkotására is képes."
+                        }
+                    ]
+                },
+                {
+                    "id": "sec_oktatas",
+                    "title": "Oktatás (III – Intelligencia, Asztrál)",
+                    "content_blocks": [
+                        {
+                            "type": "paragraph",
+                            "text": "A tanítás az egyike a legősibb tudományoknak, már a korai emberek sámánjai is elgyakoroltatták a vadászatot törzsük tagjaival."
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "Az Oktatás képzettség birtokosai képesek könnyebben átadni azon képzettségeket, melyeket ismernek, de csakis azon fokig, ameddig saját maguk is bírnak az adott ismerettel. Emellett az Oktatás nyújtotta előnyöket is csak azon fok oktatásához képesek biztosítani tanulóik számára, amely fokon bírják az Oktatás képzettséget."
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "Tehát, ha Wilvarien, a varázsló a csapat harcosát kívánja 3. fokú Oktatás képzettsége birtokában megtanítani írni és olvasni, akkor ezt megteheti, hiszen ő maga 4. fokon ismeri az Írás/olvasás képzettséget. Ekkor képes legfeljebb 4. fokig képezni bajtársát, de a tanulás kp-költségét csak a 3. fok elsajátításáig kevesbítheti. Ha nem bírna az Oktatás képzettséggel, tudását akkor is átadhatná 4. fokig, de ekkor a képzettség elsajátításának kp költsége nem csökkenne."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "1. fok",
+                            "text": "A karakter már tisztában van az oktatás alapjaival, az általa tanított képzettség Kp költsége 1-gyel csökken (de legalább 1)."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "2. fok",
+                            "text": "A kezdő tanár 2. fokú képzettségek átadására képes, a tanított képzettség Kp költsége 1-gyel csökken (de legalább 1)."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "3. fok",
+                            "text": "A gyakorló tanár által oktatott képzettség Kp költsége 1-gyel csökken (de legalább 1), Százalékos Jártasság esetén +1%-ot ad, minden a tanulni kívánt Százalékos képzettségre költött Kp után."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "4. fok",
+                            "text": "A híres oktató által tanított képzettség Kp költsége 2-vel csökken (de legalább 1), Százalékos Jártasság esetén +2%-ot ad, minden a tanulni kívánt Százalékos képzettségre költött Kp után."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "5. fok",
+                            "text": "A legendás tanár, mester által tanított képzettség Kp költsége 3-mal csökken (de legalább 1), Százalékos Jártasság esetén +3%-ot ad."
+                        }
+                    ]
+                },
+                {
+                    "id": "sec_orvoslas",
+                    "title": "Orvoslás (III – Intelligencia)",
+                    "content_blocks": [
+                        {
+                            "type": "paragraph",
+                            "text": "A gyógyítás, betegségek, sérülések orvoslása egyidős az ynevi civilizációkkal, s még a mágia egyeduralma mellett is igen szépen fejlődő, virágzó tudomány. A betegségek és mérgezések azonosításához Intelligenciapróba szükséges a leírásban szereplő módosítókkal."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "1. fok",
+                            "text": "A karakter borbély; sebet varr, a fertőzések esélyét minimálisra csökkenti. Intelligenciapróbáját -1 módosítóval dobja."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "2. fok",
+                            "text": "Az ilyen szinten képzett gyógyító 2. szintű betegségeket, mérgezéseket diagnosztizálhat és gyógyíthat. Az Fp és Ép sebek gyógyulását a kétszeresére gyorsítja. Intelligenciapróbáját módosító nélkül dobja."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "3. fok",
+                            "text": "Igazi orvos, 3. szintű betegségeket, mérgezéseket diagnosztizálhat és gyógyíthat. Intelligenciapróbáját +1 módosítóval dobja."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "4. fok",
+                            "text": "A karakter messze földön híres gyógyító. Az Fp és Ép sebek gyógyulását a háromszorosára gyorsítja, negyedik fokú betegségeket, mérgezéseket diagnosztizálhat és gyógyíthat. Intelligenciapróbáját +2 módosítóval dobja."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "5. fok",
+                            "text": "A karakter már igazi csodadoktor. Ötödik fokú betegségeket, mérgezéseket diagnosztizál és gyógyít. Akár még végtagok visszavarrására is vállalkozhat. Intelligenciapróbáját +3 módosítóval dobja."
+                        }
+                    ]
+                },
+                {
                     "id": "sec_103",
                     "title": "Tudományos képzettségek",
                     "content_blocks": [
@@ -19836,11 +20089,31 @@
                 },
                 {
                     "id": "sec_104",
-                    "title": "Inhumán kultúrák:",
+                    "title": "Ősi nyelv (IV – Intelligencia)",
                     "content_blocks": [
                         {
                             "type": "paragraph",
+                            "text": "A karakter valamely ősi nyelvben való jártasságát jelenti e képzettség, mind a beszélt nyelv egy átmeneti, kimentett formáját, mind pedig írásbeliségének tudományát."
+                        },
+                        {
+                            "type": "heading",
+                            "text": "Humán kultúrák"
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "Crantai: Északfölde első nagy emberbirodalmának nyelve, melyet a kyr hódítók taposták sárba és feledésbe a birodalommal együtt. Főleg északi természeti népek nyelveiben fedezhetőek fel jövevényszavai, illetve egyes nagyobb könyvtárak titkos rekeszeiben találhatunk efféle nyelven íródott iratokat, melyek jórészt természetszellemek és a síkmágia, késő Cranta idején pedig a nekromancia titkaiba nyújthatnak bepillantást. Írásmódja a kép és szimbólumírás érdekes keveréke."
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "Lupár és dolamin: A már Cranta ideje előtt, majd huszonötezer esztendeje itt élő nomád, majd földművelő népesség nyelve, amely először a crantai, majd a kyr uraknak behódolva őrizte meg majdnem eredeti formáját. Írásbelisége csakis az uralkodó kaszt számára létezett, mely bukása nyomán a feledés homályába veszett. Jelenlegi ismert formája a Quironeia déli partját lakó lupárok és dolaminok rontást és balszerencsét űző csaska jelei, hurkai, melyeket még ma is alkalmaznak a partvidék tapasztalati mágiát űző sámánjai, boszorkányai. Megjegyzendő mindenestre, hogy a helyi szájhagyomány állja a versenyt a kyr írásbeliséggel az általa átölelendő idő távlatában, és meglepő módon, kevéssé torzítja az eképpen megőrzött tudást."
+                        },
+                        {
+                            "type": "paragraph",
                             "text": "Godon, a Délvidék első nagy emberek alapította varázslóbirodalma, melyet évezredes tündöklés után Krán taszított a nemlétbe. A pyarronita, Lar-Dor városában tanult varázstudók mágikus nyelve, a godoni egyszerűsített változata. Az általa történő varázslás, csak a Mágikus fogékonyság előny felvételével, illetve a varázslóiskola elvégzésével válik lehetővé."
+                        },
+                        {
+                            "type": "heading",
+                            "text": "Inhumán kultúrák"
                         },
                         {
                             "type": "paragraph",
@@ -19875,32 +20148,99 @@
                             "text": "A híd nyelv ma már nem telítődik az ősök hatalomtól zengő, tárnákat rengető erejével, mégis nagy kincs birtokába juthat ezen nyelv ismerője, már ha a keményfejű törpék titkaikba avatják. Hiszen az északi historikusok rákfenéjétől, a Kyr Birodalom és utódállamainak elfogult történetírásától független, csak a törpékre jellemzően egyenes leírásokra és forrásokra bukkanhat az illető."
                         },
                         {
-                            "type": "heading",
-                            "text": "Képzettségek"
+                            "type": "rule",
+                            "title": "1. fok",
+                            "text": "A karakter felismeri az adott nyelvet, ismeri néhány írásjelét, esetleg rettegettebb rúnái közül maximum egyet-kettőt."
                         },
                         {
-                            "type": "heading",
-                            "text": "Számtan/mértan (III – Intelligencia)"
+                            "type": "rule",
+                            "title": "2. fok",
+                            "text": "A karakter lassan, betűnként olvassa a nyelvet, s egyszerűbb szövegeket még ugyan nagyobb hézaggal, de fordít is. Már biztos tudással bír a veszedelmes jelek nagy részéről."
                         },
+                        {
+                            "type": "rule",
+                            "title": "3. fok",
+                            "text": "A karakter néha ugyan hibákkal, de írja az adott nyelvet és egyszerűbb szövegeket magabiztosan fordít. Ha létezik az adott nyelvnek ma is beszélt formája, annak legelemibb szavait megformálni is képes."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "4. fok",
+                            "text": "A karakter töredékesen bár, de beszéli a nyelvet, bonyolultabb értekezések fordításával is megpróbálkozhat."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "5. fok",
+                            "text": "A karakter már következtetni is bír bizonyos, a szöveg származását, íróját érintő információkra, akkor is, ha a szövegben tartalmi utalás erre nem található. Afféle nyelvészeti, nyelvtörténeti háttértudást kap a kezébe a képzettség ezen szintű birtokosa."
+                        }
+                    ]
+                },
+                {
+                    "id": "sec_szamtan",
+                    "title": "Számtan/mértan (III – Intelligencia)",
+                    "content_blocks": [
                         {
                             "type": "paragraph",
                             "text": "A Számtan/mértan tudománya igen hasznos és Yneven jóval ritkábban előforduló tudás, mint azt sejtenénk, hiszen a hétköznapi életben nem okoz fennakadást hiánya. Az egyszerű ember tapasztalataira támaszkodva vásárol a piacon, illetve arassal, vagy lépésben méri ki a szükséges dolgokat. Ez a képzettség a pénzváltók, kereskedők, építő- és alkimista mesterek sajátja. Segítségével magasabb szinteken a világ egész működésének leírását közelítő misztikus egyenletek közelébe is eljuthatnak."
                         },
                         {
-                            "type": "paragraph",
-                            "text": "A Mozaikmágia termágikus, időmágikus mozaikjainak használatához is a képzettség ezen fokának ismerete szükséges."
+                            "type": "rule",
+                            "title": "1. fok",
+                            "text": "A karakter tisztában van a számjegyek sorrendjével, még papíros segítségével, de kivon, összead. A mértan alapjaival még csak ismerkedik, de már a hétköznapi életben is hasznát veszi, pl. a derékszög egyszerűbb kimérési módozatainak egy gerenda földbeállításakor."
                         },
                         {
-                            "type": "paragraph",
-                            "text": "Mértanilag korszakalkotó ötletei vannak, főleg a tapasztalati építészeti, mechanikai felhasználásokban, de páran a világegyetem, Ynev felépítésének titkait is feszegetik."
+                            "type": "rule",
+                            "title": "2. fok",
+                            "text": "A karakter már osztani és szorozni is tud, igaz csak papíroson. Nem hozzák zavarba az egyjegyű számoknál nagyobb műveletek sem, maradéktalanul bírja az alapvető trigonometria tudományát."
                         },
                         {
-                            "type": "heading",
-                            "text": "Térképészet (III – Intelligencia)"
+                            "type": "rule",
+                            "title": "3. fok",
+                            "text": "A karakter már kamatos kamatot is képes számolni, illetve tudásanyaga nagy részét fejben is el tudja végezni, munkája biztosabbá válik. Immáron a testek törvényszerűségeit, szabályait is ismeri. A Mozaikmágia térmágikus, időmágikus mozaikjainak használatához is a képzettség ezen fokának ismerete szükséges."
                         },
+                        {
+                            "type": "rule",
+                            "title": "4. fok",
+                            "text": "A karakter már minden matematikai műveletekre vonatkozó ismerettel bír, azokat alkalmazza is. Mértanilag már röppályát számol, akár a szél beiktatásával, halmazokkal és folyamatábrákkal dolgozik."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "5. fok",
+                            "text": "A karakter már bír a nagy egyenletrendszerek tudományával, matematikai becslések és jóslások felállítására képes, akár mondjuk hadjáratok sikerét illetőleg, ha bír a Hadvezetés képzettséggel. Mértanilag korszakalkotó ötletei vannak, főleg a tapasztalati építészeti, mechanikai felhasználásokban, de páran a világegyetem, Ynev felépítésének titkait is feszegetik."
+                        }
+                    ]
+                },
+                {
+                    "id": "sec_terkepeszet",
+                    "title": "Térképészet (III – Intelligencia)",
+                    "content_blocks": [
                         {
                             "type": "paragraph",
                             "text": "Kezdetben hajósnépek, kereskedők, hadvezérek birtokolták e tudományt, majd egyre többen rátettek a térképolvasás és készítés fontosságára, s mostanság már virágzó, szerteágazó tudásanyaggal áll a köznép rendelkezésére is."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "1. fok",
+                            "text": "A karakter még csak az egyszerűbb, legalapvetőbb kartográfiai jeleket ismeri fel, de azért egy primitívebb térképen némi üggyel-bajjal eligazodik."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "2. fok",
+                            "text": "A gyakorlott térképész már az általa ismert nyelven íródott térképeket nagy biztonsággal használja, s maga is készíthet használható vázlatokat egy helyszínről vagy épp területről, de ezek még messze nem részletesek és a méretarány is hibázik néha."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "3. fok",
+                            "text": "A hivatásos térképész már jól használható térképeket készít és a nem a saját nyelvén íródott térképekből is képes használható információkat kinyerni, amelyek gyakran azért eléggé pontatlanok. A képzettség ezen szintjén akár hajózva is képes felmérni egy partszakaszt."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "4. fok",
+                            "text": "A tudomány mestere már minden műszert ismer, amelyet a térképészet alkalmaz, pontos és igen részletes térképeket készít, s igen jól navigál."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "5. fok",
+                            "text": "A legendás hírű utazó már ritkaságszámba menő térképeket készíthet, akár útleírásokból is. A számára teljesen idegen jelekkel íródott térképeket is megfejtheti, ha elég ideje van rá."
                         }
                     ]
                 },
@@ -19917,6 +20257,37 @@
                             ]
                         },
                         {
+                            "type": "rule",
+                            "title": "1. fok",
+                            "text": "A karakter csak saját kultúrköre nagyobb eseményeit, helyszíneit, személyeit ismeri. De a hazája történelmében felmerülő rejtélyekre sem tud még mit mondani."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "2. fok",
+                            "text": "A tudomány ezen szintű birtokosa saját kultúrköre eseményeit már behatóbban ismeri, felidézhet történeteket, legendákat a nagyobb személyiségekről, a miértekkel még mindig nincs teljesen tisztában, de a kultúrkör egyes titokzatos rendjeiről, szervezeteiről már hallomásból tud dolgokat."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "3. fok",
+                            "text": "A karakter igazi történész már behatóan ismeri kultúrköre történelmét, saját, legtöbbször helytálló véleménye is van a rejtélyekről, s a politikai mozgásokat is felismeri a történelmi szálak között. A kultúrkör egyik titkos szervezetének történelméről már homályos, de biztos alapokra épített tudása van."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "4. fok",
+                            "text": "A legendáriumok mesteri, szakavatott ismerője, a karakter igazi történész, átlátja a politikai erővonalakat az események mögött. A történelmi folyamatok kimenetelére is lehetnek valószínűsíthető elképzelései. Kultúrköre minden titokzatos szervezetének történelméről tud egy keveset, s a választott szervezet teljes történelméről beható ismeretekkel bír, ami adott esetben nem életbiztosítás."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "5. fok",
+                            "text": "A legendás hírű tudós fő tisztában van minden kultúrkörébe tartozó nyílt és titkos szervezet történelmével (jóllehet az utóbbiak közül néhány még számára is rejtély). Már nem csak elemzi, de meg is jósolhatja nagy valószínűséggel az eljövendőben lezajló folyamatok végkifejletét. Igazán érdekessé a hadvezetés képzettség társításával válik a karakter tudománya."
+                        }
+                    ]
+                },
+                {
+                    "id": "sec_vallas",
+                    "title": "Vallásismeret (III – Intelligencia, Asztrál)",
+                    "content_blocks": [
+                        {
                             "type": "paragraph",
                             "text": "A képzettséget istenekre, vagy panteonokra kell felvenni. Alapszinten lexikális ismereteket, magasabb szinten már a szertartások levezetéséhez is elegendő tudást ad a képzettséggel. Egészen magas szinten pedig már hitvitákra, szekták, irányzatok vezetésére is vállalkozhat a karakter.",
                             "headers": [],
@@ -19931,6 +20302,171 @@
                             "rows": [
                                 []
                             ]
+                        },
+                        {
+                            "type": "rule",
+                            "title": "1. fok",
+                            "text": "A képzettséggel ismerkedő karakter már hallott az adott vallásról és ismeri alapvető törvényeit. A szertartásokat, fohászokat egy -1 módosítóval dobott Intelligenciapróbával ismerheti fel, ha a halló, illetve látótávolságán belül tartózkodik a kiszemelt pap vagy paplovag."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "2. fok",
+                            "text": "A közeli tapasztalatokkal bíró karakter már részt vett jó néhány szertartáson és felismeri az egyszerűbb elemeit a liturgiának. A szertartásokat és kegytárgyakat egy módosítók nélkül dobott Intelligenciapróbával ismerheti fel. A beavatott karakter immáron nem csak saját istensége, de más szférák urai által gyakorolt hatalmat is képes beazonosítani, azaz fogalmat alkotni más istenek papjai által bemutatott varázslatokról, ha járatos az adott kultúrában. Ebben az esetben is sikeres Intelligenciapróbával azonosíthatja a létrehozott fohászt. Természetesen ez alól kivételt képeznek a különböző egyedi varázslatok."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "3. fok",
+                            "text": "A karakter rendszeresen gyakorolja vallását és aktív egyházi életet él, rendszeresen meghallgatja, és magáévá teszi a szertartásokon elhangzottakat, részt vesz laikusként az egyház működésében. A szertartásokat és kegytárgyakat egy +1 módosítóval dobott Intelligenciapróbával ismerheti fel. Ha a karakter bír a Kegyelt előnnyel, akár istene papja is lehet; a Kegyelt előny birtokában az adott istenség varázslatait alkalmazza és képes a Kegy pontjai által megengedett varázslatokat a Szakrális mágia fejezetben leírtak szerint létrehozni. A pap vagy paplovag a képzettség ezen fokán minden Tapasztalati szinten (már az elsőn is) +1 Kegy pontot nyer hitéből. Ha a karakter igazán erős hittel bír, akkor szintenként 1 pont járul az Asztrális- és Mentális TME-hoz. A képzettség szakavatott ismerője az Intelligenciapróbáját +1 módosítóval dobja."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "4. fok",
+                            "text": "A hírneves hittantudós az adott vallás nagy ismerője, akár hitvitákban is részt vehet. A szertartásokat, kegytárgyakat, esetleges ismertebb ereklyéket és eretnek tanokat, a Szakrális mágia fohászait egy +2 módosítóval dobott Intelligenciapróbával ismerheti fel. A karakter a képzettség ezen fokán már hitéből eredően, szintenként 2 pontot kap az Asztrális és a Mentális TME-hoz. A pap vagy paplovag a képzettség ezen fokán minden Tapasztalati szinten +2 Kegy pontot nyer hitéből. A felszentelt személy ezen a szinten már komoly mágikus erővel és igen nagy elmélyüléssel bír istene tanaiban, ezért az Általános varázslatokat alap Erősítésen Kegy pontok feláldozása nélkül idézi meg."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "5. fok",
+                            "text": "A legendás egyháztudós, egyházfő az adott vallás istenének, isteneinek nagy ismerője, képes akár az istenségek más megjelenési formáit is azonosítani esetleg más vallásokban, ha erre megfelelő forrás akad a kezébe. Tudományával mindenestre csínján kell bánni, hiszen esetleges ellenlábasai könnyen máglyára küldhetik. A szertartásokat, kegytárgyakat, esetleges ismertebb ereklyéket és eretnek tanokat, a Szakrális mágia fohászait egy +3 módosítóval dobott Intelligenciapróbával ismerheti fel. A karakter a képzettség ezen fokán már, hitéből eredően szintenként 3 pontot kap az Asztrális és a Mentális TME-hoz. A pap vagy paplovag a képzettség ezen fokán minden Tapasztalati szinten +3 Kegy pontot nyer hitéből. A pap vagy paplovag ezen a szinten már annyira elmélyedt istene tanaiban, annyira magáévá tette az ő igazságait, hogy képes új rituálékat és litániákat kérni istenétől hétévente egyszer. Természetesen a fohász csak az istenség jóindulatából lehet sikeres. (Ám minden esetben a KM-é a döntő szó, ő bírálja el a játékos által megalkotott új fohászt is.)"
+                        }
+                    ]
+                },
+                {
+                    "id": "sec_demonologia",
+                    "title": "Démonológia (IV – Intelligencia, Akaraterő)",
+                    "content_blocks": [
+                        {
+                            "type": "paragraph",
+                            "text": "A legsötétebb praktikák egyike, melyet ynevi varázstudó valaha is művelhet. Eredendően két irányzata létezik: az egyik a démonok és szolgáik elleni hadakozásra tűzte zászlajára a köztes síkok lényei ellen fordítva tudását, a másik a hatalmat gátlástalanul áhító varázstudók tábora, mely sajnos jóval elterjedtebb. Ők a démoni alkuk és a démoni hatalom kijátszásának vagy megkaparintásának lehetőségeit vizsgálják."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "1. fok",
+                            "text": "A démonikus hagyománnyal még csak éppen ismerkedő személy sikeres -1 módosítóval dobott Intelligenciapróba esetén felismeri az 1. démonológiai osztályba sorolt démonokat, az adott mágiaformát űző varázstudót a varázsláshoz szükséges mozdulatok és mágikus igék alapján."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "2. fok",
+                            "text": "A démoni tudományokba avatott karakter sikeres Intelligenciapróba esetén képes azonosítani az 1. és a 2. démonológiai osztályba sorolt démonokat, azok képességeiről kimerítően tud nyilatkozni, egy módosítók nélkül elvégzett sikeres Intelligenciapróba után."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "3. fok",
+                            "text": "A tapasztalt varázstudó, vagy tudósfő már nagy gyakorlatra tett szert a köztes síkokkal foglalkozó tudományban, az Intelligenciapróbáját módosító nélkül végezheti el, siker esetén felismeri az 1–3. démonológiai osztályba sorolt túlvilági lényeket, azok képességeiről, elpusztításuk vagy idézésük módozatairól kimerítően tud nyilatkozni. Ha a karakter a Mozaikmágia alkalmazója, akkor képessé válik a démonikus mozaikok megidézésére. A karakter ettől a szinttől képes szeráfi paktum megkötésére, ha valaki megszerezte számára a kiszemelt lény igaz nevét, lásd a Démonológia c. fejezetben a 384. oldalon."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "4. fok",
+                            "text": "A démonikus hagyományok mestere az Intelligenciapróbáját +2 módosítóval végezheti el, siker esetén felismeri az 1-4. démonológiai osztályba sorolt túlvilági lényeket, azok képességeiről, elpusztításuk vagy megidézésük módozatairól kimerítően tud nyilatkozni. Ha bír asztrál/mentál alapú varázslatokkal, akkor innentől kezdve azokat képes alkalmazni a démonokra is. Lásd Démonológia c. fejezetben a 384. oldalon."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "5. fok",
+                            "text": "A legendás hírű pap, varázsló vagy démonvadász az Intelligenciapróbáját +3 módosítóval végezheti el, siker esetén felismeri az 1-5. démonológia osztályba sorolt köztes síkokról származó lényeket, azok képességeiről, elpusztításuk vagy létrehozásuk, megidézésük módozatairól kimerítően tud nyilatkozni. A karakter képes szeráfi paktum megkötésére, lásd a Démonológia c. fejezetben a 384. oldalon."
+                        }
+                    ]
+                },
+                {
+                    "id": "sec_dragakomagia",
+                    "title": "Drágakőmágia (IV – Intelligencia, Akaraterő)",
+                    "content_blocks": [
+                        {
+                            "type": "paragraph",
+                            "text": "A Drágakőmágia az ékkövek sajátos szerkezetében rejlő mágikus hatalmat aknázza ki. Alkalmazói képesek a különböző drágakövek mágikus töltéssel való felruházására, magasabb szinten akár komplett varázslatok eltárolására is."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "1. fok",
+                            "text": "A képzettség ezen fokú beavatottja még csak kevés ismerettel rendelkezik a módszer gyakorlati alkalmazásáról. Sikeres, -1 módosítóval végrehajtott Intelligenciapróba esetén felismeri a Drágakőmágia tárgykörébe tartozó varázstárgyakat."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "2. fok",
+                            "text": "A képzettség beavatottja sikeres Intelligenciapróba esetén képes felismerni a drágakövekben rejtőző erők típusát, azaz felismeri, hogy a drágakőbe foglalt varázslat mely mágikus hagyomány követőjének műve: mely tapasztalati hagyomány, szakrális vagy magasmágia eredetű-e."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "3. fok",
+                            "text": "A képzettség ezen fokának birtokosa az Intelligenciapróbáját +1 módosítóval dobja, sikeres próba esetén még a varázslatot is képes meghatározni, melyet a drágakő rejt. A karakter képes a drágaköveket mágikus töltéssel felruházni, így azok alkalmassá válnak a Detekció típusú hatásokra. Illetve a drágakőmágia beavatottja ettől a szinttől képes az adott mágikus hagyománynál felsorolt drágakő-mágikus varázstárgyak elkészítésére. Bővebben lásd a Drágakőmágia című fejezetben a 395. oldalon."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "4. fok",
+                            "text": "A drágakőmágikus hagyományok avatott mestere az Intelligenciapróbát +2 módosítóval dobja. A képzettség ezen fokának birtokosa már képes a drágaköveket Védelem típusú hatásokkal feltölteni, igaz drágakövekben Mp-ot tárolni."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "5. fok",
+                            "text": "A legendás hírű mester az Intelligenciapróbáját már +3 módosítóval dobja. Immár képes a drágaköveket Okozás típusú hatásokkal feltölteni, illetve igazi drágakövekben komplett varázslatokat tárolni."
+                        }
+                    ]
+                },
+                {
+                    "id": "sec_nekromancia",
+                    "title": "Nekromancia (IV – Intelligencia, Akaraterő)",
+                    "content_blocks": [
+                        {
+                            "type": "paragraph",
+                            "text": "Az életerő keletkezésének és áramlásának titkát kutató tudomány, melynek ezen rejtélyekre ugyan még nem sikerült maradéktalanul fény derítenie, de mintegy mellesleg a halál nagymestereivé avatta művelőit."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "1. fok",
+                            "text": "A sötét tudománnyal még csak éppen ismerkedő sikeres -1 módosítóval végrehajtott Intelligenciapróba esetén felismeri az 1. nekrográfiai osztályba sorolt élőhalottakat, az adott mágiaformát űző varázstudót, valamint jó eséllyel azonosítja a varázsláshoz szükséges mozdulatokat és mágikus igéket."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "2. fok",
+                            "text": "A beavatott a képzettség ezen fokán sikeres Intelligenciapróba esetén képes azonosítani az 1. és 2. nekrográfiai osztályba sorolt élőholtakat, azok képességeiről kimerítően tud nyilatkozni."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "3. fok",
+                            "text": "A nekromantikus tudományok avatott ismerője az Intelligenciapróbáját +1 módosítóval végezheti el, siker esetén felismeri az 1-3. nekrográfiai osztályba sorolt túlvilági lényeket, azok képességeiről, elpusztításuk vagy idézésük, létrehozásuk módozatairól kimerítően tud nyilatkozni. Ha a karakter bír a Mágikus fogékonyság Háttérrel, illetve Magasmágia képzettség hasonló fokával, akkor képes nekromantikus mozaikok megidézésére."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "4. fok",
+                            "text": "A sötét tudományok mestere az Intelligenciapróbáját +2 módosítóval végezheti el, siker esetén felismeri az 1-4. nekrográfiai osztályba sorolt túlvilági lényeket, azok képességeiről, elpusztításuk vagy megidézésük, létrehozásuk módozatairól kimerítően tud nyilatkozni. Ha bármely mágikus hagyomány művelője és bír asztrál/mentál alapú varázslatokkal, akkor képes hatni a tudattal vagy személyiséggel bíró élőhalottakra is."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "5. fok",
+                            "text": "A legendás hírű tudós fő az Intelligenciapróbáját +3 módosítóval végezheti el, siker esetén felismeri az 1-5. nekrográfiai osztályba sorolt túlvilági lényeket, azok képességeiről, elpusztításuk, vagy idézésük, létrehozásuk módozatairól kimerítően tud nyilatkozni. A karakter képes a saját, vagy mások életerejéből is varázsolni. Ha a saját életerejét használná varázslásra, akkor valahány 1 Ép-ért 5 Mp-ot nyer szervezetéből. Ez a rituálé mindösszesen némi összpontosítást és egy kör időtartamot vesz igénybe. Ebben az esetben nem vonatkoznak a mágiahasználóra az Életerő szabályozási megkötései az eszméletvesztésre és a halálra vonatkozóan, míg a varázslás folyik. A mágia befejeztével viszont számolnia kell a kiszipolyozott teste reakcióival. Mások életerejéből fertályórányi felkészülés után tud varázsolni. A rítushoz fel kell rónia az életerőből származó energiákat fókuszáló jeleket, mégpedig az áldozatok vérével, mely majd közvetíti ezen erőket a jel közepén álló varázstudóhoz. Az áldozatok csak a varázslás befejeztével sebződnek meg vagy hunynak el."
+                        }
+                    ]
+                },
+                {
+                    "id": "sec_oselemi",
+                    "title": "Őselemi mágia (IV – Intelligencia, Akaraterő)",
+                    "content_blocks": [
+                        {
+                            "type": "paragraph",
+                            "text": "A képzettség az elemi mágia szabályaival, az őselemi síkok törvényeivel, az ott őshonos lények tulajdonságaival foglalkozik. Magasabb szinteken betekintést enged az őselemek megidézésének fortélyaiba és formázásuk rejtelmeibe a Mozaikmágia által, lásd az Elemi mágia c. fejezet a 358. oldalon."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "1. fok",
+                            "text": "A karakter tisztában van az őselemek fogalmával, az anyagi síkon való megjelenésük formációival, ismeri veszélyeiket. Képes felsorolni, illetve felismeri a hírhedtebb őselemi lények fajtáját, hozzávetőleges képességeikről sikeres -1 módosítóval végrehajtott Intelligenciapróba után képes nyilatkozni. A karakter által ismert lények meghatározásának joga mindig a KM-é."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "2. fok",
+                            "text": "A karakter már ismeri a paraelemeket, tisztában van előnyeikkel, hátrányaikkal, azonosítja az alapvető Formázásokat, igen nagy pontossággal nyilatkozik az adott mágiaformák hatásait illetően. Az őselemi síkok teremtményeinek nagy részét felismeri, azok képességeiről sikeres Intelligenciapróba után tud nyilatkozni."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "3. fok",
+                            "text": "Az őselemi síkok teremtményeit felismeri, azok képességeiről +1 módosítóval dobott sikeres Intelligenciapróba után tud nyilatkozni. A karakter a Magasmágia képzettség hasonló szintű ismeretének, illetve a Mágikus fogékonyság Háttér birtokában képes őselemek megidézésére, illetve az alapvető Formázás mozaikok használatára."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "4. fok",
+                            "text": "Az őselemi síkok teremtményeit felismeri, immáron azok képességeiről +2 módosítóval dobott sikeres Intelligenciapróba után tud nyilatkozni. A képzettség ezen fokának ismerője az elemi mágia mestere, képes az egyszer már megidézett őselemeket újabb Formázás mozaikokkal kordában tartani, egyre újabb és újabb alakba kényszeríteni az időtartam letelte előtt. Bővebben lásd az Elemi mágia c. fejezetben az 358. oldalon."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "5. fok",
+                            "text": "Az őselemi mágia letéteményese, a világot alakító erők avatott ismerője. Az őselemi síkok minden teremtményét felismeri, immáron azok képességeiről +3 módosítóval dobott sikeres Intelligenciapróba után tud nyilatkozni. A varázsló ezen a szinten már képes az elemeket teljesen uralma alá hajtani, képes a Formázás mozaikkal szabad elemi formák megalkotására. Bővebben lásd az Elemi mágia c. fejezetben a 358. oldalon."
                         }
                     ]
                 },
@@ -20448,6 +20984,10 @@
                         },
                         {
                             "type": "paragraph",
+                            "text": "CÉ = Ügyesség + Érzékelés + a CÉ növelésére költött HM + Fegyver CÉ + Faji bónusz"
+                        },
+                        {
+                            "type": "heading",
                             "text": "Kezdeményező dobás"
                         },
                         {
