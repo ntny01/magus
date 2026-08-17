@@ -25852,6 +25852,38 @@
                         },
                         {
                             "type": "paragraph",
+                            "text": "Harci kalapács (1): Tulajdonképpen a buzogány különleges alakja. Eredetileg a törpéknél fejlődött ki, akik csak kényszerűségből használták fegyvernek a bányák kőfejtő kalapácsait. Bár a kalapács hossza nemritkán eléri az egy ynevi lábat, súlya pedig a húsz ynevi fontot, a törpék alacsony súlypontjuknak köszönhetően mégis meglehetős biztonsággal forgatják. Az emberek által alkalmazott harci kalapács nem nagyon emlékeztet törpe rokonára, itt ugyanis a fej könnyebb, karcsúbb lett. A hegye tompa, néha kis szögben csúcsos."
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "Egykezes buzogány (2): A klasszikus buzogányok tartoznak ide. Egyszerű kivitelezésű, de igen hatékony fegyver. Feje alma vagy körte alakú, de nincs megerősítve különféle tüskékkel vagy lapokkal. A nyél fél és egy ynevi láb közötti hosszúságú lehet."
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "Kétkezes buzogány (3): Félelmetes fegyver. Nehéz, vaskos dorongból készül, aminek az egyik végét megvasalják és szögekkel verik ki. Forgatása meglehetős erőt igényel. Lomha fegyver, kezelése nehézkes, de ha egyszer célba talál, nagyon hatékony. A nyél hossza elérheti a másfél ynevi lábnyi hosszúságot is."
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "Láncos buzogány (4): Ennél a buzogánytípusnál a fej (vagy fejek) hosszabb-rövidebb lánccal kapcsolódnak a nyélhez. Kezelése nehéz, hiszen a lánc végén lengő nehezék útját nem könnyű kiszámítani. Mindemellett két jelentős előnye is van: egyrészt a lánc meglóbálásával jóval nagyobb lendület vehető, mint egy közönséges nyéllel, másrészt pedig a lánc egyszerűen megkerüli a kisebb pajzsokat. Gondoljunk csak el: a buzogány lesújt, az áldozat hárítja a pajzsával. Azám, de a merev fegyverekkel ellentétben a lánc rásimul a pajzsra, követi alakját, s a szélén túllógva becsapódik mögé. Ha a védő nem volt elég elővigyázatos, a támadás a pajzs ellenére is találhatott."
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "Shadleki buzogány (5): Ez a fegyver tulajdonképpen valahol a csatabárd és a tollas buzogány között helyezkedik el, egyesítve ezek előnyeit. Két, de ritkábban három acéllapot kovácsolnak ki, és ezeket csúsztatják egymásba, így a fegyvernek összesen négy, hat vágóéle lesz. Mivel a nyél és a penge egy darabból – fémből – van, a súlya is tekintélyes. Különösen jó hasznát lehet venni bármiféle páncélzat ellen."
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "Csatacsillag (6): A közönséges egykezes buzogány továbbfejlesztett változata, válasz az egyre nehezebb és jobban védő páncélokra. Itt a központi gömbre plusz hegyes kitüremkedéseket erősítenek, ami találat esetén tovább fokozza a sebzést, illetve növeli a páncélromboló képességet."
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "Egykezes (7), kétkezes csatabárd (8), csatacsákány (9): Az egyik legősibb fegyvertípus, az ember és a törpe nép már a kezdetektől fogva ismerte és használta, de az orkok és goblinok is gyorsan elsajátították forgatásának tudományát. A fél ynevi láb hosszúságától a másfél lábig terjedő nyelekre a legkülönfélébb formájú fejek kerülnek. Ezek változatossága valóban elképesztő; többnyire egyélűek, de ismeretesek ellentétes irányba tekintő dupla fejjel ellátott, kétpengéjű típusaik is. Különleges megjelenésű, amikor a baltaívre egy csőr kerül."
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "Dzsenn szablya (10): A dzsennek hagyományos fegyvere, amely mágia segítségével készül. Megvásárolni gyakorlatilag lehetetlen – nem csak magas ára miatt, hanem azért is, mert senki sem válik meg szívesen tőle, ha egyszer a birtokába került. Mágia segítségével kialakított keménysége lehetővé tette, hogy ez a vékony penge szívósságban felvegye a versenyt bármely más karddal. Keménysége miatt éltartó is, gyakorlatilag sohasem csorbul ki. Mivel könnyű, ámde hihetetlenül éles, forgatása inkább ügyességet, semmint erőt igényel."
+                        },
+                        {
+                            "type": "paragraph",
                             "text": "Emrelin kard (11): Az amazonok hagyományos, leginkább a predoci egyeneskardra emlékeztető, majd 1 Ynevi láb hosszú pengéje, mely vágásra és szúrásra egyaránt alkalmas, s mely markolatkosárral is bír. A pengét gyakran díszítik az adott mesterre, klánra jellemző vésetekkel, gyakorlottabb szem, még a viselője családfájáról megtudhat egyet s mindent."
                         },
                         {
@@ -25939,6 +25971,18 @@
                         {
                             "type": "paragraph",
                             "text": "Dobótőr (42): Különlegesen kiképzett tőr, aminek súlyelosztása jó dobóhatóságot tesz lehetővé. Kétélű, keresztvasa kicsi vagy egyáltalán nincs is. Gyakran egyetlen fémdarabból készül, és nem vonják be külön a markolatot."
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "Hajítóbárd (43): Általában egyetlen darabból kovácsolt fegyver, nyelét gyakran rovátkolják, hogy ne csússzon. A nyél rövid, és néha a vége is hegyes. Ezen és a pengén kívül a hajítóbárdnak még két döfőhegye van, ami nagyban növeli a találat esélyeit. A legigényesebb darabokat úgy egyensúlyozzák ki, hogy a négy döfőhegy köré képzeletben kört lehet rajzolni, s ennek középpontja a súlypont. Ennek köszönhető a biztos röppálya és a stabil forgás."
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "Hajítódárda (44): Egészen más jellegű eszköz a hajítódárda. Hossza ritkán haladja meg a másfél métert, de rendszerint még ennél is rövidebb. Viszonylag könnyű fegyver, elsősorban dobásra kiegyensúlyozva. Hegye keskeny, hosszúkás levél alakú. Nyele többnyire nem igazán kidolgozott, mindössze a közepén alakítanak ki egy bőrrel betekert markolatot. Ha netán közelharcra használnák, akkor is gyakran egy kézben forgatják, a hegyet lefelé, előre tartva. Az északi államokban viszonylag hosszú heggyel készítik, így két kézzel megfogva vívásra is alkalmas. Abasziszban különös változatát használják. Ennek hegye jó fél méteres, s nem köpüvel illeszkedik a nyélre, hanem annak hasítékába szorítják. A hegy egyébként a hosszú (kb. 40 ynevi hüvelyk), vékony, kör, négyszög vagy háromszög keresztmetszetű tőből és a rövid, szintén szögletes átmetszetű csúcsból áll. Mivel a csúcs és a hegy ilyen vékony, nem akad el a nyél vége, könnyen átüti a pajzsot és elér a mögötte rejtőző harcosig. Ez a fajta hajítódárda kifejezetten a falanx harcmodor ellen alakult ki. Közelharcra nem alkalmas, de egy gyalogos akár négy-öt dárdát is elbír. A keleti barbárok különösen jó dárdavetők hírében állnak. A titkuk egyszerű, mégis igen hatékony megoldásban rejlik. Ők nem a dárdát markolják meg és dobják, hanem egy úgynevezett dobófába illesztik, és úgy vetik ki. A dobófa rövid, egy-két araszni faragott fadarab, egyik végében kanálszerű mélyedéssel. Ebbe a mélyedésbe támasztja a harcos a dárdát, és a dobófát meglendítve hajítja el azt. Ez – a parittya elvéhez hasonlóan – jócskán megnöveli a dobás erejét és így hatékonyságát is. Ha a KM úgy határoz, egy dobófával bánni tudó harcosnak +1 Sebzésmódosítót adhat a hajítódárdára – a dobófa használata azonban külön dobófegyverhasználatot igényel."
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "Slan csillag: Lapos, sokágú, tenyérnyi fémlap, kiválóan lehet dobni. Általában 3-8 csúcsa van."
                         }
                     ]
                 },
@@ -25949,6 +25993,34 @@
                         {
                             "type": "paragraph",
                             "text": "A tőr jellegű fegyverek szerte Yneven igen gyakoriak, egyaránt forgatják őket, nemesek és közrendűek, szent emberek és útonállók, de ezen csoportba tartoznak az egyszerű szerszámnak készült kések is. Játétechnikailag ebbe a kategóriába sorolunk minden 40 ynevi hüvelyknél rövidebb szúró/vágó eszközt, melyek közül a két élre fenve, valamely ujjvédővel vagy minimális keresztvassal ellátott pengék a tőrök, míg egy élre fenve, általában védelmi alkalmatosságok nélküli társaik a kések."
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "Béltépő: A gro-ugoni eredetű fegyver, mint beszédes neve is jelzi, kivételesen vérengző gyilokszerszám. Megjelenésében leginkább egy hosszú tőrre vagy szuronyra hasonlít, amelynek egyik – vagy mindkét – éle visszahajló fűrészfogszerűen van bereszelve. Az áldozat testébe hatolva hagyományos tőrként sebez, de kifelé húzva mintegy kifordítja az áldozatot. A legtöbb civilizált helyen lenézik és megvetik használatát."
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "Dzsambia (45): Elsősorban a dzsadok kedvelt fegyvere, de elvétve találni más vidéken is. A vágóél görbülete jól illeszkedik a harcos mozdulatának ívéhez, a kisebb találati felület pedig megkönnyíti a penge behatolását. A kétélű penge az alulról való vágást teszi lehetővé. Egykezes fegyver, a dzsadok előszeretettel viselik övükbe tűzve. Népükre jellemző módon tőreiket, dzsambiájikat is díszítik, gyakran túlzott mértékben."
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "Kés (46): A kés, bár nem fegyvernek készült, szükség esetén azzá válhat. A legfontosabb részletek, amelyek a tőrtől megkülönböztetik: nincs keresztvasa, és általában egyélű."
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "Levéltőr (47): Az elfek jellegzetes fegyvere, különösen kecses, nyújtott vagy csavart pengéjű tőr, mely gyakran valóban levélre emlékeztet. Kovácsmesterenként, tradíciónként, területenként változó formája sokat elárul a hozzáértőknek készítőjéről és használójáról."
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "Méregfog: A toroni orgyilkosok által kifejlesztett fegyver, egy különlegesen kiképzett tőr, markolatában méregtartállyal. Úgy van kialakítva, hogy egy gomb lenyomásával a rejtett mérget a pengére vagy az áldozatba juttatja. Több változatban létezik, a legegyszerűbb, amikor a markolat üreges, a vége levehető, és ott betölthető a méreg, a penge felőli részén pedig, a penge mellett közvetlenül egy vagy két kis lyuk található – ezeken át folyik a méreg a pengére. Így, ha a méregnek nem szabad kiszáradnia – egyetlen mozdulattal a pengére lehet kenni döfés előtt. Ennek fejlettebb változata, ahol a méreg már nem csak magától folyik a tőr pengéjére, hanem egy kis rugós mechanizmus nyomja ki a lyukakon keresztül. Létezik azonban egy, még ennél is kifinomultabb eszköz: a valódi méregfog, ami a viperamaráshoz hasonlóan működik. Ennél a penge belsejében egy szűk kis csatorna fut végig, a markolattól egészen a méregfog hegyéig. A döfés pillanatában kioldva egy rugós szerkezetet, a méreg a csatornán keresztül egyenesen az áldozat szervezetébe jut (képzeljük csak el az orvosi fecskendő példáját). A méregfog, bármelyik változatáról legyen is szó, nagyon drága eszköz és persze nem szerezhető be akárhol. Orgyilkos és embervadász klánok fegyvermesterein kívül igen kevesen készítenek efféle holmit."
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "Pugoss (48): Toron fejvadászainak és orgyilkosainak a rövidebbik (max. 25 ynevi hüvelykes) kiegészítő pengéje, az Ikrek hagyományos fegyvere. Keresztvasa gyakran csak jelzésértékű, bár egyes klánok különösen díszes markolat-kombinációkat kedvelnek."
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "Ramiera (49): A gorviki fejvadászok közkedvelt fegyvere, bár Gorvikon belül szinte népviseletnek számít mindenütt. Különösen hosszú, egyenes, lassan elvékonyodó, borotvaéles tőr, tartása biztos, egyensúlya kitűnő."
                         }
                     ]
                 },
@@ -26466,6 +26538,18 @@
                         {
                             "type": "paragraph",
                             "text": "Bonyolultságukban ezután következnek az egyszerű rostélyos sisakok, ahol az orrvédőt a mozgatható rostély váltja föl. A legfinomultabbak kétségkívül a teljes vértezetet kiegészítő nagy sisakok, ami több részből áll, és az egész fejet, sőt a nyakat is körülveszi."
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "SFÉ-jük az azonos minőségű páncélénak felel meg. Azonban, ha a karakter választott páncélzatánál nehezebb sisakot óhajt viselni, akkor ezt megteheti, csupán a viselt páncél MGT-jéhez járul +1 módosító. A sisak ez esetben is természetesen a saját kategóriájába eső vértezetnek megfelelő SFÉ-t biztosít a fejen."
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "Túlütés esetén a páncél súlyosan sérül. Ilyenkor az okozott teljes sebzésnek megfelelő STP-t veszít a páncél. Minden 20 elveszített STP után a vértezet elveszít egy pontot az SFÉ-jéből, de az MGT-je ennek ellenére változatlan marad."
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "A páncél javítási költsége, vagy sérült alkatrészének cseréjének költsége megegyezik a vértezet teljes STP-je, illetve az elveszített STP-k arányával a vért teljes árára vetítve; azaz ha a páncél elvesztette az STP-i egynegyedét, akkor a teljes ára egynegyedét kell megfizetni a javításhoz. Egy vértezet, ha elveszítette összes STP-jét, akkor javíthatatlanul tönkrement."
                         }
                     ]
                 },
@@ -26473,6 +26557,18 @@
                     "id": "sec_137",
                     "title": "Tárgyak ellenállása",
                     "content_blocks": [
+                        {
+                            "type": "paragraph",
+                            "text": "Az e fejezetben leírt szabályokat nem feltétlenül szükséges alkalmazni. Céljuk csupán az, hogy irányt, utat mutassanak a KM-nek a tárgyakat pusztító hatások körülírásában. Előfordulhat, hogy a helyzet dramatikai szempontokból ezen szabályok figyelmen kívül hagyását követeli meg – ilyen esetekben a KM szava a döntő, neki kell meghatároznia, hogy mi is történik. Ez sok más szabályra is igaz, erre azonban különösen."
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "Példának okáért, ha egy kötélen négyen másznak, annak a leírt szabályok szerint rövidesen el kell szakadnia. A KM tudja, hogy ha ez bekövetkezik, a karakterek halálukat lelik – nyugodtan határozhat úgy, hogy a kötél kibírja a fokozott terhelést. Ennek természetesen a fordítottja is előfordulhat: a hatás kedvéért egy kötél lehet hibás vagy gyengébb az átlagosnál, s akár egy személy alatt is leszakadhat. A Strukturális pontok jelentőséggel bírnak még várak ostromakor, szekerek vagy hajók csatájában. Ezekben az esetekben ugyanis a tulajdonképpeni sebzés nem személyek, hanem tárgyak ellen irányul. Ha egy hajó oldala átszakadt, a legénység állapota már figyelmen kívül hagyható: nem kell egyenként leszámolni velük, erejük megtöréséhez tengeri járművük szétzúzása is elégnek bizonyult."
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "Másodjára sor kerül több fontos és jó viszonyítási alapul szolgáló támadás ismertetésére, a vonatkozó Strukturális pontokkal együtt. Az STP tulajdonképpen a tárgyak Ép-je, de mivel a fogalom ebben az esetben értelmetlen lenne, új elnevezés kiagyalását éreztük szükségesnek. Ha egy tárgy STP-i csökkennek, a tárgy megrongálódott, sokszor nem töltheti be eredeti funkcióját, vagy csak részlegesen felel meg annak. Ha egy tárgy STP-je nullára csökkent, a tárgy teljes mértékben használhatatlanná vált, esetleg darabjaira vagy porrá hull, netán elég. A maximális STP függ a tárgy nagyságától és anyagától is. Egyes támadások bizonyos anyagfajtákra sokkal erősebben hatnak, mint másokra, így sokszorozódik. Példa erre az üveg ellenállása töréssel szemben – ugyanakkora ütés egy fadarabon sokkal kisebb károkat eredményezne. Az efféle hatások is helyet kaptak táblázatunkban."
+                        },
                         {
                             "type": "paragraph",
                             "text": "Különböző anyagú tárgyak más és más hatásra érzékenyek, ezért először ezeket kell összefoglalnunk."
