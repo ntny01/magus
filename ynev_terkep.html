@@ -1432,6 +1432,7 @@ body{
 }
 
 </style>
+    <script src="magus_avatar.js"></script>
 </head>
 
 <body>
@@ -1468,7 +1469,7 @@ body{
         # Grid
     </button>
 <div style="display:flex;align-items:center;gap:.5rem;flex-shrink:0;margin-left:.5rem;">
-  <span id="auth-username" style="font-size:.75rem;color:#d4af37;font-family:'Cinzel',serif;letter-spacing:.06em;white-space:nowrap;"></span>
+  <span style="display:inline-flex;align-items:center;gap:.5rem;"><span id="auth-avatar"></span><span id="auth-username" style="font-size:.75rem;color:#d4af37;font-family:'Cinzel',serif;letter-spacing:.06em;white-space:nowrap;"></span></span>
   <button onclick="doLogout()" style="background:rgba(248,113,113,0.08);border:1px solid rgba(248,113,113,0.2);color:#f87171;font-size:.75rem;padding:.3rem .7rem;border-radius:.4rem;cursor:pointer;white-space:nowrap;">Kilépés</button>
 </div>
 
@@ -3431,6 +3432,7 @@ document.addEventListener('mousemove', e => {
     if (!el) { setTimeout(trySetUsername, 50); return }
     if (window._userProfile) {
       el.textContent = window._userProfile.display_name
+      if (window.MagusAvatar) MagusAvatar.render(document.getElementById('auth-avatar'), window._userProfile, { size: 26 })
     } else {
       setTimeout(trySetUsername, 50)
     }

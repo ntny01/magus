@@ -109,6 +109,7 @@
             cursor: pointer; white-space: nowrap; transition: background .15s;
         }
         .logout-btn:hover { background: rgba(248,113,113,.16); }
+        .user-avatar { cursor: default; }
 
         /* ===== LAYOUT ===== */
         .layout {
@@ -656,12 +657,14 @@
             .nav-link { font-size: .92rem; }
         }
     </style>
+    <script src="magus_avatar.js"></script>
 </head>
 <body>
     <div class="rune-field" id="runeField" aria-hidden="true"></div>
     <div class="banner">
         <a class="banner-logo" href="index.html" title="KODEXIUM"><img src="assets/logo/banner-logo.png" alt="KODEXIUM"></a>
         <div class="user-box">
+            <span class="user-avatar" id="userAvatar"></span>
             <span class="user-name" id="userName"></span>
             <button class="logout-btn" onclick="doLogout()">Kilépés</button>
         </div>
@@ -1956,6 +1959,7 @@
             const isAdmin = profile.role === 'admin';
             window._isAdmin = isAdmin;
             document.getElementById('userName').textContent = profile.display_name || '';
+            if (window.MagusAvatar) MagusAvatar.render(document.getElementById('userAvatar'), profile, { size: 32 });
             if (profile.display_name) document.getElementById('heroTitle').textContent = 'Üdv, ' + profile.display_name + '!';
             if (isAdmin) document.querySelectorAll('.admin-only').forEach(e => e.style.display = e.classList.contains('nav-sep') ? 'block' : 'flex');
             renderTiles(isAdmin);
