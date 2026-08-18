@@ -1164,8 +1164,20 @@
             const infos = (campRow[0] && Array.isArray(campRow[0].header_infos)) ? campRow[0].header_infos : (Array.isArray(camp.header_infos) ? camp.header_infos : []);
             FEED.headerNpcs = npcs; FEED.headerLocs = locs; FEED.headerInfos = infos; camp.header_infos = infos;
 
+            // Kampány TAGJAI (campaign_members) + profiljuk (név + avatar) — HIBATŰRŐ.
+            // Admin mindenkit lát; RLS-korlát esetén a lista egyszerűen üresebb.
+            const memberRows = await sel(() => window._sb.from('campaign_members').select('user_id').eq('campaign_id', camp.id));
+            const memberIds = [...new Set(memberRows.map(m => m.user_id).filter(Boolean))];
+            let memberProfiles = [], membershipMap = {};
+            if (memberIds.length) {
+                memberProfiles = await sel(() => window._sb.from('user_profiles').select('id, display_name, avatar').in('id', memberIds));
+                const allMemberships = await sel(() => window._sb.from('campaign_members').select('user_id, campaign_id').in('user_id', memberIds));
+                const campName = id => (FEED.campaigns.find(c => c.id === id) || {}).name || 'Kampány';
+                allMemberships.forEach(m => { (membershipMap[m.user_id] = membershipMap[m.user_id] || []).push(campName(m.campaign_id)); });
+            }
+
             const editing = _editMode && window._isAdmin;
-            if (!roster.length && !npcs.length && !locs.length && !infos.length && !editing) { host.innerHTML = ''; return; }
+            if (!roster.length && !npcs.length && !locs.length && !infos.length && !memberProfiles.length && !editing) { host.innerHTML = ''; return; }
 
             const party = roster.map(r => {
                 const hen = (Array.isArray(r.henchmen) && r.henchmen.length)
@@ -1192,12 +1204,46 @@
                 ? '<button class="cr-details" onclick="openCampaignDetails()">📖 Részletek</button>' : '';
 
             host.innerHTML = '<div class="cr-header">' +
-                '<div class="cr-top"><div class="cr-title">' + esc(camp.name || 'Kampány') + '</div>' + detailsBtn + '</div>' +
+                '<div class="cr-top"><div class="cr-title-wrap" style="display:flex;align-items:center;gap:.6rem;flex-wrap:wrap;min-width:0;"><div class="cr-title">' + esc(camp.name || 'Kampány') + '</div><span class="cr-avatars" id="crAvatars" style="display:inline-flex;align-items:center;gap:.3rem;flex-wrap:wrap;"></span></div>' + detailsBtn + '</div>' +
                 '<div class="cr-row"><span class="cr-cat">🛡️ Csapat</span><div class="cr-items">' + party + '</div></div>' +
                 '<div class="cr-row"><span class="cr-cat">🌍 Világ szereplői</span><div class="cr-items">' + chipList(npcs, 'npc') + '</div></div>' +
                 '<div class="cr-row"><span class="cr-cat">📍 Helyszínek</span><div class="cr-items">' + chipList(locs, 'loc') + '</div></div>' +
                 '<div class="cr-row"><span class="cr-cat">📌 Infók</span><div class="cr-items">' + (infoChips || '<span class="cr-empty">—</span>') + '</div></div>' +
                 '</div>';
+
+            // Tag-avatarok élő renderelése a cím mellé (a fejre kattintva: név + kampányok).
+            const avHost = document.getElementById('crAvatars');
+            if (avHost && window.MagusAvatar && memberProfiles.length) {
+                memberProfiles.forEach(p => {
+                    const s = document.createElement('span');
+                    s.style.cursor = 'pointer';
+                    MagusAvatar.render(s, p, { size: 30 });
+                    s.title = p.display_name || '';
+                    s.onclick = (e) => showMemberPopover(e, p, membershipMap[p.id] || []);
+                    avHost.appendChild(s);
+                });
+            }
+        }
+
+        // Kis lebegő buborék egy kampány-tag fejére kattintva: név + kampányai.
+        function showMemberPopover(e, profile, campaigns) {
+            document.querySelectorAll('.mg-member-pop').forEach(x => x.remove());
+            const chips = campaigns.length
+                ? campaigns.map(c => '<span style="background:rgba(212,175,55,.12);border:1px solid rgba(212,175,55,.3);color:#d4af37;border-radius:.4rem;padding:.15rem .45rem;font-size:.75rem;">' + esc(c) + '</span>').join('')
+                : '<span style="color:#64748b;font-size:.8rem;">Nincs kampány</span>';
+            const pop = document.createElement('div');
+            pop.className = 'mg-member-pop';
+            pop.style.cssText = 'position:fixed;z-index:9998;background:#0f172a;border:1px solid rgba(255,255,255,.12);border-radius:12px;padding:.7rem .8rem;box-shadow:0 12px 32px rgba(0,0,0,.5);min-width:180px;max-width:260px;font-family:Inter,system-ui,sans-serif;';
+            pop.innerHTML = '<div style="font-family:Cinzel,serif;color:#d4af37;font-size:.95rem;margin-bottom:.45rem;">' + esc(profile.display_name || 'Ismeretlen') + '</div>'
+                + '<div style="font-size:.66rem;text-transform:uppercase;letter-spacing:.1em;color:#94a3b8;margin-bottom:.35rem;">Kampányai</div>'
+                + '<div style="display:flex;flex-wrap:wrap;gap:.3rem;">' + chips + '</div>';
+            document.body.appendChild(pop);
+            const r = e.currentTarget.getBoundingClientRect();
+            pop.style.left = Math.max(8, Math.min(window.innerWidth - pop.offsetWidth - 8, r.left)) + 'px';
+            pop.style.top = Math.min(window.innerHeight - pop.offsetHeight - 8, r.bottom + 6) + 'px';
+            setTimeout(() => document.addEventListener('click', function h(ev) {
+                if (!pop.contains(ev.target)) { pop.remove(); document.removeEventListener('click', h); }
+            }), 0);
         }
 
         // ── Kampány-fejléc SZERKESZTÉS (csak KM, szerkesztő mód) ──
@@ -1961,13 +2007,13 @@
             document.getElementById('userName').textContent = profile.display_name || '';
             if (window.MagusAvatar) {
                 const av = document.getElementById('userAvatar');
-                MagusAvatar.render(av, profile, { size: 32 });
-                MagusAvatar.hydrate(window._sb, av, window._userId, { size: 32 });
+                MagusAvatar.render(av, profile, { size: 40 });
+                MagusAvatar.hydrate(window._sb, av, window._userId, { size: 40 });
                 av.style.cursor = 'pointer';
                 av.title = 'Profilkép szerkesztése';
                 av.onclick = () => MagusAvatar.openEditor({
                     sb: window._sb, userId: window._userId, mount: av,
-                    current: av._mgAvatar, size: 32, name: profile.display_name
+                    current: av._mgAvatar, size: 40, name: profile.display_name
                 });
             }
             if (profile.display_name) document.getElementById('heroTitle').textContent = 'Üdv, ' + profile.display_name + '!';

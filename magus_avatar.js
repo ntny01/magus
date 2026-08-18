@@ -32,8 +32,10 @@
     var DEFAULT = {
         eyes: 'eye0', nose: 'nose0', mouth: 'mouth0',
         colors: { eyes: '#1a1a1a', nose: '#1a1a1a', mouth: '#1a1a1a' },
-        bg: '#d8c3a5'
+        bg: '#d8c3a5',
+        offset: { x: 0, y: 0 }   // az arc finom eltolása (a méret arányában), clamp ±0.22
     };
+    var OFFSET_CLAMP = 0.22;
 
     function featureByKey(k) {
         for (var i = 0; i < FEATURES.length; i++) { if (FEATURES[i].key === k) return FEATURES[i]; }
@@ -104,9 +106,16 @@
         mount.textContent = '';
         mount.style.background = cfg.bg || DEFAULT.bg;
         var colors = cfg.colors || {};
+        var off = cfg.offset || { x: 0, y: 0 };
+        // Az összes réteg egy belső dobozban, hogy egyben eltolható legyen.
+        var inner = document.createElement('div');
+        inner.style.position = 'absolute';
+        inner.style.top = '0'; inner.style.left = '0'; inner.style.right = '0'; inner.style.bottom = '0';
+        inner.style.transform = 'translate(' + ((off.x || 0) * 100) + '%,' + ((off.y || 0) * 100) + '%)';
         FEATURES.forEach(function (f) {
-            addLayer(mount, f.key, cfg[f.key], colors[f.key]);
+            addLayer(inner, f.key, cfg[f.key], colors[f.key]);
         });
+        mount.appendChild(inner);
         mount._mgAvatar = cfg;
         return true;
     }
@@ -158,7 +167,10 @@
         + '.mg-ed-x{background:none;border:none;color:#94a3b8;font-size:1.1rem;cursor:pointer;line-height:1;}'
         + '.mg-ed-x:hover{color:#fff;}'
         + '.mg-ed-preview{display:flex;justify-content:center;padding:1.1rem 0 .6rem;}'
-        + '.mg-ed-prev-circle{width:132px;height:132px;border-radius:50%;box-shadow:0 0 0 3px rgba(212,175,55,.35),0 8px 24px rgba(0,0,0,.4);}'
+        + '.mg-ed-prev-circle{width:150px;height:150px;border-radius:50%;box-shadow:0 0 0 3px rgba(212,175,55,.35),0 8px 24px rgba(0,0,0,.4);cursor:grab;touch-action:none;}'
+        + '.mg-ed-prev-circle:active{cursor:grabbing;}'
+        + '.mg-ed-hint{text-align:center;font-size:.7rem;color:#64748b;margin:-.2rem 0 .4rem;}'
+        + '.mg-ed-col-all{grid-column:1 / -1;}'
         + '.mg-ed-body{padding:.2rem 1.1rem;}'
         + '.mg-ed-sec{margin:.7rem 0;}'
         + '.mg-ed-sec-label{font-size:.72rem;text-transform:uppercase;letter-spacing:.12em;color:#94a3b8;margin-bottom:.35rem;}'
@@ -200,6 +212,7 @@
         var size = opts.size || 30;
         var cfg = clone(opts.current && opts.current.eyes ? opts.current : DEFAULT);
         if (!cfg.colors) cfg.colors = clone(DEFAULT.colors);
+        if (!cfg.offset) cfg.offset = { x: 0, y: 0 };
 
         ensureStyles();
         var overlay = document.createElement('div');
@@ -208,8 +221,10 @@
             '<div class="mg-ed-panel" role="dialog" aria-label="Profilkép szerkesztő">'
           +   '<div class="mg-ed-head"><span>Profilkép szerkesztő</span><button class="mg-ed-x" data-act="cancel" title="Bezárás">✕</button></div>'
           +   '<div class="mg-ed-preview"><div class="mg-ed-prev-circle" id="mgEdPrev"></div></div>'
+          +   '<div class="mg-ed-hint">Húzd az arcot a finomításhoz</div>'
           +   '<div class="mg-ed-body" id="mgEdBody"></div>'
           +   '<div class="mg-ed-colors">'
+          +     '<label class="mg-ed-col-all">Mind (vonal) <input type="color" data-color="all"></label>'
           +     '<label>Háttér <input type="color" data-color="bg"></label>'
           +     '<label>Szem <input type="color" data-color="eyes"></label>'
           +     '<label>Orr <input type="color" data-color="nose"></label>'
@@ -227,7 +242,7 @@
         var prev = overlay.querySelector('#mgEdPrev');
         var body = overlay.querySelector('#mgEdBody');
 
-        function updatePreview() { renderFace(prev, cfg, 132); }
+        function updatePreview() { renderFace(prev, cfg, 150); }
 
         // Feature-szekciók + thumbök felépítése.
         FEATURES.forEach(function (f) {
@@ -255,26 +270,61 @@
             f._row = row;
         });
 
-        // Színválasztók init + kezelés.
-        overlay.querySelectorAll('input[type=color]').forEach(function (inp) {
-            var key = inp.dataset.color;
-            inp.value = (key === 'bg') ? (cfg.bg || DEFAULT.bg) : ((cfg.colors && cfg.colors[key]) || '#1a1a1a');
+        // Színválasztók init + kezelés (bg / all / szem / orr / száj).
+        var colorInputs = {};
+        overlay.querySelectorAll('input[type=color]').forEach(function (inp) { colorInputs[inp.dataset.color] = inp; });
+        function repaintFeatureThumbs(featKey) {
+            FEATURES.forEach(function (f) {
+                if (f.key !== featKey || !f._row) return;
+                f._row.querySelectorAll('.mg-ed-thumb').forEach(function (t) { paintThumb(t, cfg, f.key, t.dataset.item); });
+            });
+        }
+        Object.keys(colorInputs).forEach(function (key) {
+            var inp = colorInputs[key];
+            inp.value = (key === 'bg') ? (cfg.bg || DEFAULT.bg)
+                      : (key === 'all') ? ((cfg.colors && cfg.colors.eyes) || '#1a1a1a')
+                      : ((cfg.colors && cfg.colors[key]) || '#1a1a1a');
             inp.addEventListener('input', function () {
-                if (key === 'bg') { cfg.bg = inp.value; }
-                else { cfg.colors[key] = inp.value; }
-                updatePreview();
-                // Az érintett feature thumbjeit újraszínezzük.
-                FEATURES.forEach(function (f) {
-                    if (key !== 'bg' && f.key !== key) return;
-                    if (!f._row) return;
-                    f._row.querySelectorAll('.mg-ed-thumb').forEach(function (t) {
-                        paintThumb(t, cfg, f.key, t.dataset.item);
+                if (key === 'bg') { cfg.bg = inp.value; updatePreview(); return; }
+                if (key === 'all') {
+                    ['eyes', 'nose', 'mouth'].forEach(function (k) {
+                        cfg.colors[k] = inp.value;
+                        if (colorInputs[k]) colorInputs[k].value = inp.value;
+                        repaintFeatureThumbs(k);
                     });
-                });
+                    updatePreview(); return;
+                }
+                cfg.colors[key] = inp.value;
+                if (colorInputs.all) colorInputs.all.value = inp.value;
+                repaintFeatureThumbs(key);
+                updatePreview();
             });
         });
 
         updatePreview();
+
+        // Az arc finom eltolása húzással (clamp-elve, hogy ki ne csússzon).
+        prev.style.cursor = 'grab'; prev.style.touchAction = 'none';
+        var dragging = false, startX = 0, startY = 0, startOff = { x: 0, y: 0 };
+        prev.addEventListener('pointerdown', function (e) {
+            dragging = true; startX = e.clientX; startY = e.clientY;
+            startOff = { x: (cfg.offset && cfg.offset.x) || 0, y: (cfg.offset && cfg.offset.y) || 0 };
+            try { prev.setPointerCapture(e.pointerId); } catch (err) {}
+        });
+        prev.addEventListener('pointermove', function (e) {
+            if (!dragging) return;
+            var rect = prev.getBoundingClientRect();
+            var nx = startOff.x + (e.clientX - startX) / rect.width;
+            var ny = startOff.y + (e.clientY - startY) / rect.height;
+            cfg.offset = {
+                x: Math.max(-OFFSET_CLAMP, Math.min(OFFSET_CLAMP, nx)),
+                y: Math.max(-OFFSET_CLAMP, Math.min(OFFSET_CLAMP, ny))
+            };
+            updatePreview();
+        });
+        function endDrag() { dragging = false; }
+        prev.addEventListener('pointerup', endDrag);
+        prev.addEventListener('pointercancel', endDrag);
 
         function close() { overlay.remove(); }
 
