@@ -1959,7 +1959,17 @@
             const isAdmin = profile.role === 'admin';
             window._isAdmin = isAdmin;
             document.getElementById('userName').textContent = profile.display_name || '';
-            if (window.MagusAvatar) MagusAvatar.render(document.getElementById('userAvatar'), profile, { size: 32 });
+            if (window.MagusAvatar) {
+                const av = document.getElementById('userAvatar');
+                MagusAvatar.render(av, profile, { size: 32 });
+                MagusAvatar.hydrate(window._sb, av, window._userId, { size: 32 });
+                av.style.cursor = 'pointer';
+                av.title = 'Profilkép szerkesztése';
+                av.onclick = () => MagusAvatar.openEditor({
+                    sb: window._sb, userId: window._userId, mount: av,
+                    current: av._mgAvatar, size: 32, name: profile.display_name
+                });
+            }
             if (profile.display_name) document.getElementById('heroTitle').textContent = 'Üdv, ' + profile.display_name + '!';
             if (isAdmin) document.querySelectorAll('.admin-only').forEach(e => e.style.display = e.classList.contains('nav-sep') ? 'block' : 'flex');
             renderTiles(isAdmin);
