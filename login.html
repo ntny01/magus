@@ -321,7 +321,7 @@ const sb = supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY)
   function spawnRune() {
     const r = document.createElement('div')
     r.className = 'rune'
-    r.innerText = RUNES[Math.floor(Math.random() * RUNES.length)]
+    r.innerText = RUNES[Math.floor(Math.random() * RUNES.length)] + '︎'
     r.style.left = Math.random() * 100 + 'vw'
     r.style.animationDuration = 12 + Math.random() * 16 + 's'
     r.style.fontSize = 11 + Math.random() * 16 + 'px'

@@ -2550,7 +2550,7 @@ const sb = supabase.createClient(
             function createRune(){
                 const rune = document.createElement('div');
                 rune.className = 'rune';
-                rune.innerText = runes[Math.floor(Math.random()*runes.length)];
+                rune.innerText = runes[Math.floor(Math.random()*runes.length)] + '︎';
                 rune.style.left = Math.random()*100 + 'vw';
                 rune.style.animationDuration = 10 + Math.random()*15 + 's';
                 rune.style.fontSize = 12 + Math.random()*20 + 'px';

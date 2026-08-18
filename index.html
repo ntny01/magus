@@ -825,7 +825,7 @@
                 const layer = layers[Math.random()*layers.length|0], d = layer.depth;
                 const r = document.createElement('div');
                 r.className = 'rune';
-                r.textContent = glyphs[Math.random()*glyphs.length|0];
+                r.textContent = glyphs[Math.random()*glyphs.length|0] + '︎';
                 r.style.left = (Math.random()*100).toFixed(1) + 'vw';
                 r.style.fontSize = (10 + d*44 + Math.random()*8).toFixed(0) + 'px';   // közelebb → nagyobb
                 const dur = (24 - d*11) + Math.random()*7;                            // közelebb → gyorsabb
