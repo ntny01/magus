@@ -2140,5 +2140,89 @@ document.addEventListener('mousemove', e => {
     window.location.href = 'login.html'
   }
 </script>
+
+<!-- ===== EASTER EGG: cikázó sárkány-kísérő + fejezet-vége pecsét ===== -->
+<script>
+(function(){
+  if (document.getElementById('mgDragon')) return;
+
+  var css = ''
+    + '#mgDragon{position:fixed;top:48vh;left:50%;width:132px;z-index:30;pointer-events:none;opacity:0;transition:opacity .45s ease;will-change:transform,opacity;}'
+    + '#mgDragon.show{opacity:.9;}'
+    + '#mgDragon svg{display:block;animation:mgFloat 3s ease-in-out infinite;}'
+    + '@keyframes mgFloat{0%,100%{transform:translateY(-4px);}50%{transform:translateY(4px);}}'
+    + '#mgSeal{position:fixed;top:50%;left:50%;width:150px;height:150px;z-index:30;pointer-events:none;opacity:0;'
+    + 'transform:translate(-50%,-50%) scale(.5) rotate(-14deg);transition:opacity .5s ease,transform .55s cubic-bezier(.2,.8,.3,1.25);}'
+    + '#mgSeal.show{opacity:.96;transform:translate(-50%,-50%) scale(1) rotate(0);}'
+    + '@media (max-width:767px){#mgSeal{width:118px;height:118px;}#mgDragon{width:100px;}}';
+  var st = document.createElement('style'); st.textContent = css; document.head.appendChild(st);
+
+  var dragon = document.createElement('div');
+  dragon.id = 'mgDragon'; dragon.setAttribute('aria-hidden','true');
+  dragon.innerHTML = ''
+    + '<svg viewBox="0 0 200 80" xmlns="http://www.w3.org/2000/svg">'
+    + '<defs><linearGradient id="mgdg" x1="0" y1="0" x2="1" y2="0">'
+    + '<stop offset="0" stop-color="#b8891f"/><stop offset=".5" stop-color="#f4d878"/><stop offset="1" stop-color="#d4af37"/></linearGradient>'
+    + '<filter id="mgdglow" x="-40%" y="-40%" width="180%" height="180%"><feDropShadow dx="0" dy="0" stdDeviation="3" flood-color="#d4af37" flood-opacity=".65"/></filter></defs>'
+    + '<g filter="url(#mgdglow)">'
+    + '<path d="M16,44 L2,36 L9,44 L2,52 Z" fill="url(#mgdg)"/>'
+    + '<path d="M14,44 Q42,14 70,42 T126,42 Q148,42 166,30" fill="none" stroke="url(#mgdg)" stroke-width="9" stroke-linecap="round"/>'
+    + '<path d="M42,22 l6,-9 4,10 z M84,22 l6,-9 4,10 z M118,26 l6,-8 4,9 z" fill="url(#mgdg)"/>'
+    + '<path d="M66,50 l-3,10 M100,50 l3,10" stroke="url(#mgdg)" stroke-width="4" stroke-linecap="round"/>'
+    + '<g fill="url(#mgdg)"><circle cx="170" cy="28" r="10"/><path d="M178,23 l14,-4 -8,10 z"/><path d="M164,18 l-4,-12 8,6 z"/><path d="M173,16 l3,-12 5,8 z"/></g>'
+    + '<circle cx="172" cy="26" r="2" fill="#1a1200"/>'
+    + '<path d="M184,30 q12,3 20,-3" fill="none" stroke="url(#mgdg)" stroke-width="1.5" stroke-linecap="round"/>'
+    + '</g></svg>';
+
+  var seal = document.createElement('div');
+  seal.id = 'mgSeal'; seal.setAttribute('aria-hidden','true');
+  seal.innerHTML = ''
+    + '<svg viewBox="0 0 140 140" xmlns="http://www.w3.org/2000/svg">'
+    + '<defs><radialGradient id="mgsg" cx="50%" cy="42%" r="65%"><stop offset="0" stop-color="#f4d878"/><stop offset="1" stop-color="#b8891f"/></radialGradient>'
+    + '<filter id="mgsglow" x="-30%" y="-30%" width="160%" height="160%"><feDropShadow dx="0" dy="0" stdDeviation="4" flood-color="#d4af37" flood-opacity=".5"/></filter>'
+    + '<path id="mgSealArc" d="M70,70 m-46,0 a46,46 0 1,1 92,0 a46,46 0 1,1 -92,0" fill="none"/></defs>'
+    + '<g filter="url(#mgsglow)">'
+    + '<circle cx="70" cy="70" r="60" fill="none" stroke="#d4af37" stroke-width="1.5" stroke-dasharray="2 5" opacity=".55"/>'
+    + '<circle cx="70" cy="70" r="53" fill="none" stroke="url(#mgsg)" stroke-width="2.5"/>'
+    + '<circle cx="70" cy="70" r="34" fill="none" stroke="url(#mgsg)" stroke-width="1.5" opacity=".8"/>'
+    + '<path d="M70,40 L75,65 100,70 75,75 70,100 65,75 40,70 65,65 Z" fill="url(#mgsg)"/>'
+    + '<circle cx="70" cy="70" r="4.5" fill="#0b1020" stroke="url(#mgsg)" stroke-width="1.5"/>'
+    + '<text font-family="Georgia,serif" font-size="8.5" letter-spacing="3" fill="url(#mgsg)"><textPath href="#mgSealArc" startOffset="2%">◆ A KRÓNIKÁS PECSÉTJE ◆ YNEV ◆</textPath></text>'
+    + '</g></svg>';
+
+  document.body.appendChild(dragon);
+  document.body.appendChild(seal);
+
+  var scroller = document.scrollingElement || document.documentElement;
+  var ticking = false;
+  function update(){
+    ticking = false;
+    var anchor = document.querySelector('.pagination') || document.getElementById('content-area');
+    if (!anchor) { dragon.classList.remove('show'); seal.classList.remove('show'); return; }
+    var vh = window.innerHeight, vw = window.innerWidth;
+    var rect = anchor.getBoundingClientRect();
+    var scrollable = scroller.scrollHeight > vh + 60;
+    var atBottom = (scroller.scrollTop + vh) >= (scroller.scrollHeight - 6);
+    var emptyBelow = scroller.scrollHeight - (rect.bottom + scroller.scrollTop);
+    var hasEmpty = emptyBelow > vh * 0.4;
+    var scrolledIn = rect.bottom < vh * 0.7;
+    if (hasEmpty && scrolledIn && !atBottom) {
+      dragon.classList.add('show');
+      var amp = Math.max(30, Math.min(170, vw * 0.2));
+      var t = scroller.scrollTop / 150;
+      var x = Math.sin(t) * amp, dir = Math.cos(t) >= 0 ? 1 : -1;
+      dragon.style.transform = 'translateX(calc(-50% + ' + x.toFixed(1) + 'px)) scaleX(' + dir + ')';
+    } else {
+      dragon.classList.remove('show');
+    }
+    seal.classList.toggle('show', atBottom && scrollable);
+  }
+  function onScroll(){ if (!ticking) { ticking = true; requestAnimationFrame(update); } }
+  window.addEventListener('scroll', onScroll, { passive: true });
+  window.addEventListener('resize', onScroll);
+  window._mgUpdateEasterEgg = update;   // hívható tartalomváltás után is
+  setTimeout(update, 400);
+})();
+</script>
 </body>
 </html>
