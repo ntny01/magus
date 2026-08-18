@@ -2141,39 +2141,19 @@ document.addEventListener('mousemove', e => {
   }
 </script>
 
-<!-- ===== EASTER EGG: cikázó sárkány-kísérő + fejezet-vége pecsét ===== -->
+<!-- ===== EASTER EGG: fejezet-vége pecsét ===== -->
 <script>
 (function(){
-  if (document.getElementById('mgDragon')) return;
+  if (document.getElementById('mgSeal')) return;
 
   var css = ''
-    + '#mgDragon{position:fixed;top:0;left:0;width:150px;z-index:30;pointer-events:none;opacity:0;transition:opacity .5s ease;will-change:transform,opacity;}'
-    + '#mgDragon.show{opacity:.92;}'
-    + '#mgDragon svg{display:block;}'
     + '#mgSeal{position:fixed;top:50%;left:50%;width:190px;height:190px;z-index:30;pointer-events:none;opacity:0;'
     + 'transform:translate(-50%,-50%) scale(.35);transition:opacity .55s ease,transform .75s cubic-bezier(.16,.9,.3,1.25);}'
     + '#mgSeal.show{opacity:.97;transform:translate(-50%,-50%) scale(1);}'
     + '#mgSeal .mgRing{transform-box:fill-box;transform-origin:center;animation:mgSpin 60s linear infinite;}'
     + '@keyframes mgSpin{to{transform:rotate(360deg);}}'
-    + '@media (max-width:767px){#mgSeal{width:148px;height:148px;}#mgDragon{width:118px;}}';
+    + '@media (max-width:767px){#mgSeal{width:148px;height:148px;}}';
   var st = document.createElement('style'); st.textContent = css; document.head.appendChild(st);
-
-  var dragon = document.createElement('div');
-  dragon.id = 'mgDragon'; dragon.setAttribute('aria-hidden','true');
-  dragon.innerHTML = ''
-    + '<svg viewBox="0 0 240 100" xmlns="http://www.w3.org/2000/svg">'
-    + '<defs><linearGradient id="mgdg" x1="0" y1="0" x2="1" y2="0">'
-    + '<stop offset="0" stop-color="#a8791a"/><stop offset=".5" stop-color="#f4d878"/><stop offset="1" stop-color="#d4af37"/></linearGradient>'
-    + '<filter id="mgdglow" x="-30%" y="-30%" width="160%" height="160%"><feDropShadow dx="0" dy="0" stdDeviation="2.5" flood-color="#f4d878" flood-opacity=".55"/></filter></defs>'
-    + '<g filter="url(#mgdglow)">'
-    + '<path d="M20,56 C9,50 6,45 2,41 C11,45 13,43 17,52 C13,61 11,59 2,63 C10,58 12,56 20,56 Z" fill="url(#mgdg)"/>'
-    + '<path d="M18,56 C44,32 70,32 96,52 C122,72 148,72 174,52 C184,44 191,42 199,45" fill="none" stroke="url(#mgdg)" stroke-width="11" stroke-linecap="round"/>'
-    + '<path d="M52,34 l4,-9 4,9 z M64,34 l4,-8 4,8 z M128,40 l4,-8 4,8 z M140,42 l4,-8 4,8 z" fill="url(#mgdg)"/>'
-    + '<path d="M74,60 l-5,13 M118,66 l5,13" stroke="url(#mgdg)" stroke-width="5" stroke-linecap="round"/>'
-    + '<g fill="url(#mgdg)"><path d="M193,45 C193,37 200,32 209,33 C218,34 224,40 228,47 C224,49 220,49 216,48 C219,52 218,56 214,58 C206,60 197,56 194,50 C193,48 193,46 193,45 Z"/><path d="M228,47 l9,-1 -5,6 z"/><path d="M200,33 l-5,-13 10,7 z"/><path d="M212,33 l2,-13 6,9 z"/></g>'
-    + '<circle cx="207" cy="44" r="2.4" fill="#160f00"/>'
-    + '<path d="M232,50 q13,6 21,1" fill="none" stroke="url(#mgdg)" stroke-width="1.3" stroke-linecap="round"/>'
-    + '</g></svg>';
 
   var seal = document.createElement('div');
   seal.id = 'mgSeal'; seal.setAttribute('aria-hidden','true');
@@ -2191,51 +2171,17 @@ document.addEventListener('mousemove', e => {
     + '<circle cx="75" cy="75" r="5" fill="#0b1020" stroke="url(#mgsg)" stroke-width="1.4"/>'
     + '</g></svg>';
 
-  document.body.appendChild(dragon);
   document.body.appendChild(seal);
 
   var scroller = document.scrollingElement || document.documentElement;
 
-  // ── Folyamatos, idő-vezérelt mozgás (nem görgetéshez kötött -> nagyon fluid).
-  //    Balra-jobbra sweep a jobb szélig, enyhe lefelé ívvel; a fej a haladás
-  //    irányába néz. A sárkány csak akkor látszik, ha .show osztálya van.
-  var t0 = performance.now();
-  function frame(now){
-    if (dragon.classList.contains('show')) {
-      var vw = window.innerWidth, vh = window.innerHeight;
-      var sidebar = vw >= 768 ? 288 : 0;          // 18rem oldalsáv desktopon
-      var areaL = sidebar + 24, areaR = vw - 24;
-      var centerX = (areaL + areaR) / 2;
-      var xAmp = (areaR - areaL) / 2;              // a jobb (és bal) szélig ér
-      var period = 7000;                            // ms egy teljes oda-vissza
-      var ph = ((now - t0) % period) / period * Math.PI * 2;
-      var posX = centerX + Math.sin(ph) * xAmp;
-      var posY = vh * 0.36 + Math.sin(ph * 2) * (vh * 0.055);   // enyhe lefelé ív
-      var dir = Math.cos(ph) >= 0 ? 1 : -1;         // haladási irányba fordul
-      var w = dragon.offsetWidth || 150;
-      dragon.style.transform = 'translate(' + (posX - w / 2).toFixed(1) + 'px,' + posY.toFixed(1) + 'px) scaleX(' + dir + ')';
-    }
-    requestAnimationFrame(frame);
-  }
-  requestAnimationFrame(frame);
-
-  // ── Láthatóság a görgetésből: a sárkány az üres térben; a pecsét a legalján.
-  //    A sárkány ELTŰNIK, mielőtt a pecséthez érne (nearBottom).
+  // ── A pecsét a lap legalján pecsételődik le.
   var ticking = false;
   function updateVis(){
     ticking = false;
-    var anchor = document.querySelector('.pagination') || document.getElementById('content-area');
-    if (!anchor) { dragon.classList.remove('show'); seal.classList.remove('show'); return; }
     var vh = window.innerHeight;
-    var rect = anchor.getBoundingClientRect();
     var scrollable = scroller.scrollHeight > vh + 60;
-    var distBottom = scroller.scrollHeight - (scroller.scrollTop + vh);
-    var atBottom = distBottom <= 4;
-    var emptyBelow = scroller.scrollHeight - (rect.bottom + scroller.scrollTop);
-    var hasEmpty = emptyBelow > vh * 0.5;
-    var scrolledIn = rect.bottom < vh * 0.55;
-    var nearBottom = distBottom < vh * 0.75;
-    dragon.classList.toggle('show', scrollable && hasEmpty && scrolledIn && !nearBottom);
+    var atBottom = (scroller.scrollTop + vh) >= (scroller.scrollHeight - 4);
     seal.classList.toggle('show', scrollable && atBottom);
   }
   function onScroll(){ if (!ticking) { ticking = true; requestAnimationFrame(updateVis); } }
