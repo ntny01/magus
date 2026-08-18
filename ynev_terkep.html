@@ -3432,7 +3432,7 @@ document.addEventListener('mousemove', e => {
     if (!el) { setTimeout(trySetUsername, 50); return }
     if (window._userProfile) {
       el.textContent = window._userProfile.display_name
-      if (window.MagusAvatar) MagusAvatar.render(document.getElementById('auth-avatar'), window._userProfile, { size: 26 })
+      if (window.MagusAvatar) MagusAvatar.attach(sb, document.getElementById('auth-avatar'), window._userProfile, { size: 26 })
     } else {
       setTimeout(trySetUsername, 50)
     }

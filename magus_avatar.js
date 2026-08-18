@@ -153,6 +153,33 @@
             .catch(function () { return null; });
     }
 
+    // Teljes bekötés egy sorban: monogram -> uid a session-ből -> hydrate ->
+    // kattintható (editor). Bármely oldalon működik, csak az `sb` kliens kell.
+    // Visszaadja a betöltött configot (vagy null, ha nincs avatar).
+    function attach(sb, mount, profile, opts) {
+        opts = opts || {};
+        var size = opts.size || 30;
+        render(mount, profile, { size: size });
+        if (!sb || !mount) return Promise.resolve(null);
+        var getUid = opts.userId
+            ? Promise.resolve(opts.userId)
+            : Promise.resolve(sb.auth.getSession())
+                .then(function (r) { return r && r.data && r.data.session && r.data.session.user && r.data.session.user.id; })
+                .catch(function () { return null; });
+        return getUid.then(function (uid) {
+            if (!uid) return null;
+            mount.style.cursor = 'pointer';
+            if (!mount.title) mount.title = 'Profilkép szerkesztése';
+            mount.onclick = function () {
+                openEditor({
+                    sb: sb, userId: uid, mount: mount, current: mount._mgAvatar,
+                    size: size, name: profile && profile.display_name, onSaved: opts.onSaved
+                });
+            };
+            return hydrate(sb, mount, uid, { size: size });
+        });
+    }
+
     /* ============================ EDITOR ============================ */
     function ensureStyles() {
         if (document.getElementById('mg-ed-styles')) return;
@@ -369,6 +396,7 @@
         render: render,
         renderFace: renderFace,
         hydrate: hydrate,
+        attach: attach,
         openEditor: openEditor,
         initials: initials,
         DEFAULT: DEFAULT,

@@ -1225,25 +1225,50 @@
             }
         }
 
-        // Kis lebegő buborék egy kampány-tag fejére kattintva: név + kampányai.
+        // Egy kampány-tag fejére kattintva: inline modal, nagyobb profilkép + név + kampányai.
         function showMemberPopover(e, profile, campaigns) {
-            document.querySelectorAll('.mg-member-pop').forEach(x => x.remove());
+            document.querySelectorAll('.mg-member-modal').forEach(x => x.remove());
             const chips = campaigns.length
-                ? campaigns.map(c => '<span style="background:rgba(212,175,55,.12);border:1px solid rgba(212,175,55,.3);color:#d4af37;border-radius:.4rem;padding:.15rem .45rem;font-size:.75rem;">' + esc(c) + '</span>').join('')
-                : '<span style="color:#64748b;font-size:.8rem;">Nincs kampány</span>';
-            const pop = document.createElement('div');
-            pop.className = 'mg-member-pop';
-            pop.style.cssText = 'position:fixed;z-index:9998;background:#0f172a;border:1px solid rgba(255,255,255,.12);border-radius:12px;padding:.7rem .8rem;box-shadow:0 12px 32px rgba(0,0,0,.5);min-width:180px;max-width:260px;font-family:Inter,system-ui,sans-serif;';
-            pop.innerHTML = '<div style="font-family:Cinzel,serif;color:#d4af37;font-size:.95rem;margin-bottom:.45rem;">' + esc(profile.display_name || 'Ismeretlen') + '</div>'
-                + '<div style="font-size:.66rem;text-transform:uppercase;letter-spacing:.1em;color:#94a3b8;margin-bottom:.35rem;">Kampányai</div>'
-                + '<div style="display:flex;flex-wrap:wrap;gap:.3rem;">' + chips + '</div>';
-            document.body.appendChild(pop);
-            const r = e.currentTarget.getBoundingClientRect();
-            pop.style.left = Math.max(8, Math.min(window.innerWidth - pop.offsetWidth - 8, r.left)) + 'px';
-            pop.style.top = Math.min(window.innerHeight - pop.offsetHeight - 8, r.bottom + 6) + 'px';
-            setTimeout(() => document.addEventListener('click', function h(ev) {
-                if (!pop.contains(ev.target)) { pop.remove(); document.removeEventListener('click', h); }
-            }), 0);
+                ? campaigns.map(c => '<span style="background:rgba(212,175,55,.12);border:1px solid rgba(212,175,55,.3);color:#d4af37;border-radius:.4rem;padding:.2rem .5rem;font-size:.78rem;">' + esc(c) + '</span>').join('')
+                : '<span style="color:#64748b;font-size:.85rem;">Nincs kampányhoz rendelve</span>';
+            const overlay = document.createElement('div');
+            overlay.className = 'mg-member-modal';
+            overlay.style.cssText = 'position:fixed;inset:0;z-index:9998;display:flex;align-items:center;justify-content:center;background:rgba(2,6,23,.72);backdrop-filter:blur(3px);padding:1rem;';
+            overlay.innerHTML = '<div style="background:#0f172a;border:1px solid rgba(255,255,255,.1);border-radius:16px;width:min(340px,94vw);padding:1.5rem 1.4rem;text-align:center;box-shadow:0 20px 60px rgba(0,0,0,.5);position:relative;">'
+                + '<button class="mmm-x" style="position:absolute;top:.6rem;right:.7rem;background:none;border:none;color:#94a3b8;font-size:1.15rem;cursor:pointer;line-height:1;">✕</button>'
+                + '<span class="mmm-av" style="display:inline-flex;"></span>'
+                + '<div style="font-family:Cinzel,serif;color:#d4af37;font-size:1.2rem;margin:.8rem 0 .1rem;">' + esc(profile.display_name || 'Ismeretlen') + '</div>'
+                + '<div style="font-size:.66rem;text-transform:uppercase;letter-spacing:.12em;color:#94a3b8;margin:.7rem 0 .45rem;">Kampányai</div>'
+                + '<div style="display:flex;flex-wrap:wrap;gap:.35rem;justify-content:center;">' + chips + '</div>'
+                + '</div>';
+            document.body.appendChild(overlay);
+            MagusAvatar.render(overlay.querySelector('.mmm-av'), profile, { size: 96 });
+            const close = () => overlay.remove();
+            overlay.querySelector('.mmm-x').onclick = close;
+            overlay.onclick = (ev) => { if (ev.target === overlay) close(); };
+        }
+
+        // ── Új-felhasználó figyelemfelhívás: ha nincs profilkép, egyszer jelezzük.
+        //    A leállítás (beállította VAGY elutasította) eszközön tárolódik (localStorage),
+        //    így belépve maradva nem jön elő újra.
+        function _nudgeKey(uid) { return 'mg_avatar_nudge_' + (uid || 'anon'); }
+        function dismissAvatarNudge() { if (window.__dismissAvatarNudge) window.__dismissAvatarNudge(); }
+        function maybeShowAvatarNudge(av, uid) {
+            try { if (localStorage.getItem(_nudgeKey(uid)) === 'done') return; } catch (e) {}
+            const n = document.createElement('div');
+            n.style.cssText = 'position:fixed;z-index:9997;background:#0f172a;border:1px solid rgba(212,175,55,.4);border-radius:12px;'
+                + 'padding:.6rem .8rem;box-shadow:0 12px 32px rgba(0,0,0,.5);font-family:Inter,system-ui,sans-serif;'
+                + 'font-size:.82rem;color:#e2e8f0;max-width:260px;display:flex;align-items:center;gap:.5rem;';
+            n.innerHTML = '<span>✨ Állíts be egy <b style="color:#d4af37">profilképet</b> — kattints a körödre!</span>'
+                + '<button class="man-x" style="background:none;border:none;color:#94a3b8;cursor:pointer;font-size:1rem;line-height:1;flex-shrink:0;">✕</button>';
+            document.body.appendChild(n);
+            const r = av.getBoundingClientRect();
+            n.style.left = Math.max(8, Math.min(window.innerWidth - n.offsetWidth - 8, r.left - 10)) + 'px';
+            n.style.top = (r.bottom + 8) + 'px';
+            const done = () => { try { localStorage.setItem(_nudgeKey(uid), 'done'); } catch (e) {} n.remove(); window.__dismissAvatarNudge = null; };
+            n.querySelector('.man-x').onclick = done;
+            window.__dismissAvatarNudge = done;
+            av.addEventListener('click', done, { once: true });
         }
 
         // ── Kampány-fejléc SZERKESZTÉS (csak KM, szerkesztő mód) ──
@@ -2007,14 +2032,11 @@
             document.getElementById('userName').textContent = profile.display_name || '';
             if (window.MagusAvatar) {
                 const av = document.getElementById('userAvatar');
-                MagusAvatar.render(av, profile, { size: 40 });
-                MagusAvatar.hydrate(window._sb, av, window._userId, { size: 40 });
-                av.style.cursor = 'pointer';
-                av.title = 'Profilkép szerkesztése';
-                av.onclick = () => MagusAvatar.openEditor({
-                    sb: window._sb, userId: window._userId, mount: av,
-                    current: av._mgAvatar, size: 40, name: profile.display_name
+                const cfg = await MagusAvatar.attach(window._sb, av, profile, {
+                    size: 40, userId: window._userId,
+                    onSaved: () => dismissAvatarNudge()
                 });
+                if (!cfg) maybeShowAvatarNudge(av, window._userId);
             }
             if (profile.display_name) document.getElementById('heroTitle').textContent = 'Üdv, ' + profile.display_name + '!';
             if (isAdmin) document.querySelectorAll('.admin-only').forEach(e => e.style.display = e.classList.contains('nav-sep') ? 'block' : 'flex');

@@ -2060,7 +2060,7 @@ document.addEventListener('mousemove', e => {
     if (!el) { setTimeout(trySetUsername, 50); return }
     if (window._userProfile) {
       el.textContent = window._userProfile.display_name
-      if (window.MagusAvatar) MagusAvatar.render(document.getElementById('auth-avatar'), window._userProfile, { size: 26 })
+      if (window.MagusAvatar) MagusAvatar.attach(sb, document.getElementById('auth-avatar'), window._userProfile, { size: 26 })
       if (window._userProfile.role === 'admin') {
         const btn = document.getElementById('adminNavBtn')
         if (btn) btn.style.display = 'inline-flex'
