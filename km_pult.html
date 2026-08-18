@@ -34,7 +34,7 @@ const sb = supabase.createClient(
     <meta name="theme-color" content="#020617">
     <link rel="icon" href="assets/logo/compass-logo.png">
     <script src="magus_szotar.js"></script>
-    <script src="magus_avatar.js"></script>
+    <script src="magus_avatar.js?v=2"></script>
     <style>
         /* ===== AZ INDEX.HTML RECEPTJE: BETŰTÍPUSOK ÉS GENERÁLT AMBIENT SZÍNEK ===== */
         @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap');
@@ -2868,7 +2868,7 @@ const sb = supabase.createClient(
     if (!el) return
     if (window._userProfile) {
       el.textContent = window._userProfile.display_name
-      if (window.MagusAvatar) MagusAvatar.attach(sb, document.getElementById('auth-avatar'), window._userProfile, { size: 26 })
+      if (window.MagusAvatar && MagusAvatar.attach) MagusAvatar.attach(sb, document.getElementById('auth-avatar'), window._userProfile, { size: 26 })
     } else {
       setTimeout(trySetUsername, 50)
     }
