@@ -10,16 +10,16 @@ const sb = supabase.createClient(
 )
     window._sb = sb
     const { data: { session } } = await sb.auth.getSession()
-    if (!session) { window.location.href = 'login.html'; return }
+    if (!session) { window.location.href = 'login'; return }
     const { data: profile } = await sb.from('user_profiles')
       .select('status, role, display_name').eq('id', session.user.id).single()
     if (!profile || profile.status !== 'active') {
       await sb.auth.signOut()
-      window.location.href = 'login.html'
+      window.location.href = 'login'
       return
     }
     if (profile.role !== 'admin') {
-      window.location.href = 'index.html'
+      window.location.href = 'index'
       return
     }
     window._userProfile = profile
@@ -34,7 +34,7 @@ const sb = supabase.createClient(
     <meta name="theme-color" content="#020617">
     <link rel="icon" href="assets/logo/compass-logo.png">
     <script src="magus_szotar.js"></script>
-    <script src="magus_avatar.js?v=2"></script>
+    <script src="magus_avatar.js?v=3"></script>
     <style>
         /* ===== AZ INDEX.HTML RECEPTJE: BETŰTÍPUSOK ÉS GENERÁLT AMBIENT SZÍNEK ===== */
         @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap');
@@ -735,7 +735,7 @@ const sb = supabase.createClient(
     <div class="km-main">
     <header>
         <div style="display:flex;align-items:center;gap:.7rem;flex-shrink:0;">
-            <a href="index.html" class="km-btn" title="Vissza a főoldalra">◀&#xFE0E;</a><script>if(window.self!==window.top){var e=document.currentScript.previousElementSibling;if(e)e.style.display='none';}</script>
+            <a href="index" class="km-btn" title="Vissza a főoldalra">◀&#xFE0E;</a><script>if(window.self!==window.top){var e=document.currentScript.previousElementSibling;if(e)e.style.display='none';}</script>
             <h1 id="mainHeaderTitle">🛡️ Kalandmester Pult <span class="admin-badge">Admin</span></h1>
         </div>
 
@@ -979,7 +979,7 @@ const sb = supabase.createClient(
             <h4>🗺️ Ynev Térkép - Elmesélő Nézet</h4>
             <button class="km-btn" style="border-color: #ef4444; color: #f87171 !important;" onclick="closeEmbeddedView('mapView')">↩ Vissza a pulthoz</button>
         </div>
-        <iframe src="ynev_terkep.html" class="embedded-iframe"></iframe>
+        <iframe src="ynev_terkep" class="embedded-iframe"></iframe>
     </div>
 
     <div id="codexView" class="embedded-view-container">
@@ -987,7 +987,7 @@ const sb = supabase.createClient(
             <h4>📚 Digitális Szabálykönyv & Kódex</h4>
             <button class="km-btn" style="border-color: #ef4444; color: #f87171 !important;" onclick="closeEmbeddedView('codexView')">↩ Vissza a pulthoz</button>
         </div>
-        <iframe src="kodex.html" class="embedded-iframe"></iframe>
+        <iframe src="kodex" class="embedded-iframe"></iframe>
     </div>
 
     <div id="sablonView" class="embedded-view-container">
@@ -995,7 +995,7 @@ const sb = supabase.createClient(
             <h4>📐 Sablon Editor</h4>
             <button class="km-btn" style="border-color: #ef4444; color: #f87171 !important;" onclick="closeEmbeddedView('sablonView')">↩ Vissza a pulthoz</button>
         </div>
-        <iframe src="sabloneditor.html" class="embedded-iframe"></iframe>
+        <iframe src="sabloneditor" class="embedded-iframe"></iframe>
     </div>
 
     <div id="battlemapView" class="embedded-view-container">
@@ -1123,7 +1123,7 @@ const sb = supabase.createClient(
             const qs = [];
             if (mapId) qs.push('map=' + encodeURIComponent(mapId));
             if (currentCampaignId) qs.push('campaign=' + encodeURIComponent(currentCampaignId));
-            document.getElementById('battlemapFrame').src = 'battlemap.html' + (qs.length ? '?' + qs.join('&') : '');
+            document.getElementById('battlemapFrame').src = 'battlemap' + (qs.length ? '?' + qs.join('&') : '');
             closeBattlemapPanel();
             document.getElementById('battlemapView').style.display = 'flex';
         };
@@ -1413,7 +1413,7 @@ const sb = supabase.createClient(
             document.getElementById('campaignName').value = '';
             renderCampaignSections();
             loadJournal();
-            history.replaceState(null, '', 'km_pult.html');
+            history.replaceState(null, '', 'km_pult');
         };
 
         window.saveCampaign = async function() {
@@ -1453,7 +1453,7 @@ const sb = supabase.createClient(
             updateCampaignFields(null);
             await loadCampaignList('');
             renderCampaignSections();
-            history.replaceState(null, '', 'km_pult.html');
+            history.replaceState(null, '', 'km_pult');
         };
 
         /* ---- Kampányhoz rendelt elemek ---- */
@@ -2885,7 +2885,7 @@ async function doLogout() {
       .filter(k => k.startsWith('sb-'))
       .forEach(k => localStorage.removeItem(k))
   } catch(e) {}
-  window.location.href = 'login.html'
+  window.location.href = 'login'
 }
 </script>
 </body>

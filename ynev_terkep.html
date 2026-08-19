@@ -10,12 +10,12 @@ const sb = supabase.createClient(
 )
     window._sb = sb
     const { data: { session } } = await sb.auth.getSession()
-    if (!session) { window.location.href = 'login.html'; return }
+    if (!session) { window.location.href = 'login'; return }
     const { data: profile } = await sb.from('user_profiles')
       .select('status, role, display_name').eq('id', session.user.id).single()
     if (!profile || profile.status !== 'active') {
       await sb.auth.signOut()
-      window.location.href = 'login.html'
+      window.location.href = 'login'
       return
     }
     window._userProfile = profile
@@ -1432,14 +1432,14 @@ body{
 }
 
 </style>
-    <script src="magus_avatar.js?v=2"></script>
+    <script src="magus_avatar.js?v=3"></script>
 </head>
 
 <body>
 <div id="magic-particles"></div>
 <div class="toolbar">
 
-    <a href="index.html" class="btn" style="padding:.3rem .6rem;" title="Vissza a főoldalra">◀&#xFE0E;</a><script>if(window.self!==window.top){var e=document.currentScript.previousElementSibling;if(e)e.style.display='none';}</script>
+    <a href="index" class="btn" style="padding:.3rem .6rem;" title="Vissza a főoldalra">◀&#xFE0E;</a><script>if(window.self!==window.top){var e=document.currentScript.previousElementSibling;if(e)e.style.display='none';}</script>
     <div class="title">
         🗺️ YNEV KALAND TÉRKÉP
     </div>
@@ -3446,7 +3446,7 @@ document.addEventListener('mousemove', e => {
       await window._sb.auth.signOut()
       Object.keys(localStorage).filter(k => k.startsWith('sb-')).forEach(k => localStorage.removeItem(k))
     } catch(e) {}
-    window.location.href = 'login.html'
+    window.location.href = 'login'
   }
 
   // ─── AUTOSAVE ───────────────────────────────────────────────────

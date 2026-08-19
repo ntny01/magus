@@ -10,16 +10,16 @@
   )
   window._sb = sb
   const { data: { session } } = await sb.auth.getSession()
-  if (!session) { window.location.href = 'login.html'; return }
+  if (!session) { window.location.href = 'login'; return }
   const { data: profile } = await sb.from('user_profiles')
     .select('status, role, display_name').eq('id', session.user.id).single()
   if (!profile || profile.status !== 'active') {
     await sb.auth.signOut()
-    window.location.href = 'login.html'
+    window.location.href = 'login'
     return
   }
   if (profile.role !== 'admin') {
-    window.location.href = 'index.html'
+    window.location.href = 'index'
     return
   }
   window._userProfile = profile
@@ -525,14 +525,14 @@ header{
   header{padding:.4rem .75rem;}
 }
 </style>
-    <script src="magus_avatar.js?v=2"></script>
+    <script src="magus_avatar.js?v=3"></script>
 </head>
 <body>
 <div id="magic-particles"></div>
 
 <header>
   <div class="header-left">
-    <a href="index.html" class="btn" style="padding:.3rem .6rem;" title="Vissza a főoldalra">◀&#xFE0E;</a><script>if(window.self!==window.top){var e=document.currentScript.previousElementSibling;if(e)e.style.display='none';}</script>
+    <a href="index" class="btn" style="padding:.3rem .6rem;" title="Vissza a főoldalra">◀&#xFE0E;</a><script>if(window.self!==window.top){var e=document.currentScript.previousElementSibling;if(e)e.style.display='none';}</script>
     <span class="muhely-title">🔨 Műhely</span>
     <span class="muhely-badge">Admin</span>
   </div>
@@ -604,7 +604,7 @@ header{
   <!-- Térkép iframe -->
   <div style="position:relative;flex:1;min-height:0;border-radius:.75rem;overflow:hidden;border:1px solid rgba(168,85,247,.2);">
     <iframe id="mapIframe"
-      src="ynev_terkep.html?mode=admin"
+      src="ynev_terkep?mode=admin"
       style="width:100%;height:calc(100vh - 220px);border:none;display:block;"
       title="Ynev Kaland Térkép">
     </iframe>
@@ -1703,7 +1703,7 @@ async function doLogout() {
     await window._sb.auth.signOut()
     Object.keys(localStorage).filter(k=>k.startsWith('sb-')).forEach(k=>localStorage.removeItem(k))
   } catch(e) {}
-  window.location.href = 'login.html'
+  window.location.href = 'login'
 }
 
 /* ==============================

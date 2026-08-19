@@ -366,7 +366,7 @@ const sb = supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY)
       .eq('id', userId)
       .single()
     if (profile?.status === 'active') {
-      window.location.href = 'index.html'
+      window.location.href = 'index'
     }
   }
 
@@ -420,7 +420,7 @@ const sb = supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY)
       await sb.auth.updateSession({ ...data.session, expires_in: 0 })
     }
 
-    window.location.href = 'index.html'
+    window.location.href = 'index'
   }
 
   // Enter gomb támogatás

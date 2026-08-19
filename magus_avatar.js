@@ -180,6 +180,19 @@
         });
     }
 
+    // Saját avatar mentése: előbb a biztonságos rpc (set_my_avatar), ami CSAK
+    // az avatar oszlopot írja a saját sorban. Ha a függvény még nincs kint
+    // (régi DB), visszaesik a közvetlen update-re (admin útja most se törik).
+    function saveMyAvatar(sb, userId, avatar) {
+        return Promise.resolve(sb.rpc('set_my_avatar', { new_avatar: avatar }))
+            .then(function (res) {
+                if (res && res.error) {
+                    return Promise.resolve(sb.from('user_profiles').update({ avatar: avatar }).eq('id', userId))
+                        .then(function (r2) { if (r2 && r2.error) throw r2.error; });
+                }
+            });
+    }
+
     /* ============================ EDITOR ============================ */
     function ensureStyles() {
         if (document.getElementById('mg-ed-styles')) return;
@@ -367,22 +380,20 @@
         function doSave() {
             var btn = overlay.querySelector('[data-act=save]');
             btn.disabled = true; btn.textContent = 'Mentés…';
-            Promise.resolve(sb.from('user_profiles').update({ avatar: cfg }).eq('id', userId))
-                .then(function (res) {
-                    if (res && res.error) throw res.error;
+            saveMyAvatar(sb, userId, cfg)
+                .then(function () {
                     if (mount) renderFace(mount, cfg, size);
                     if (opts.onSaved) opts.onSaved(cfg);
                     close();
                 })
                 .catch(function (e) {
                     btn.disabled = false; btn.textContent = 'Kész';
-                    alert('Mentés sikertelen. Lehet, hogy még nem futott le az avatar-oszlop SQL a Supabase-en.\n\n' + (e && e.message ? e.message : e));
+                    alert('Mentés sikertelen. Lehet, hogy még nem futott le az avatar SQL a Supabase-en.\n\n' + (e && e.message ? e.message : e));
                 });
         }
 
         function doDelete() {
-            Promise.resolve(sb.from('user_profiles').update({ avatar: null }).eq('id', userId))
-                .then(function () {})
+            saveMyAvatar(sb, userId, null)
                 .catch(function () {})
                 .then(function () {
                     if (mount) render(mount, { display_name: opts.name || '' }, { size: size });

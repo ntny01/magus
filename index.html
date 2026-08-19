@@ -11,11 +11,11 @@
         window._sb = sb;
         window._authReady = (async () => {
             const { data: { session } } = await sb.auth.getSession();
-            if (!session) { window.location.href = 'login.html'; return null; }
+            if (!session) { window.location.href = 'login'; return null; }
             const { data: profile } = await sb.from('user_profiles')
                 .select('status, role, display_name').eq('id', session.user.id).single();
             if (!profile || profile.status !== 'active') {
-                await sb.auth.signOut(); window.location.href = 'login.html'; return null;
+                await sb.auth.signOut(); window.location.href = 'login'; return null;
             }
             window._userProfile = profile;
             window._userId = session.user.id;
@@ -679,12 +679,12 @@
             .nav-link { font-size: .92rem; }
         }
     </style>
-    <script src="magus_avatar.js?v=2"></script>
+    <script src="magus_avatar.js?v=3"></script>
 </head>
 <body>
     <div class="rune-field" id="runeField" aria-hidden="true"></div>
     <div class="banner">
-        <a class="banner-logo" href="index.html" title="KODEXIUM"><img src="assets/logo/banner-logo.png" alt="KODEXIUM"></a>
+        <a class="banner-logo" href="index" title="KODEXIUM"><img src="assets/logo/banner-logo.png" alt="KODEXIUM"></a>
         <div class="user-box">
             <span class="user-avatar" id="userAvatar"></span>
             <span class="user-name" id="userName"></span>
@@ -696,13 +696,13 @@
         <!-- NAVIGÁCIÓ -->
         <aside class="nav">
             <span class="nav-title">Navigáció</span>
-            <a class="nav-link" href="kodex.html"><span class="ico">📖</span> Kódex<button class="nav-open" title="Megnyitás itt (inline)" onclick="openInlinePage(event,'kodex.html','Kódex')"><svg viewBox="0 0 20 20" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="3.5" width="15" height="13" rx="2.3"></rect><path d="M2.5 7.5H17.5"></path><path d="M5 5.5h0.01"></path><path d="M7.3 5.5h0.01"></path></svg></button></a>
-            <a class="nav-link" href="char.html"><span class="ico">🧙‍♂️</span> Karakterlap<button class="nav-open" title="Megnyitás itt (inline)" onclick="openInlinePage(event,'char.html','Karakterlap')"><svg viewBox="0 0 20 20" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="3.5" width="15" height="13" rx="2.3"></rect><path d="M2.5 7.5H17.5"></path><path d="M5 5.5h0.01"></path><path d="M7.3 5.5h0.01"></path></svg></button></a>
-            <a class="nav-link" href="karakter_kezelo.html"><span class="ico">📊</span> Karakter Segéd<button class="nav-open" title="Megnyitás itt (inline)" onclick="openInlinePage(event,'karakter_kezelo.html','Karakter Segéd')"><svg viewBox="0 0 20 20" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="3.5" width="15" height="13" rx="2.3"></rect><path d="M2.5 7.5H17.5"></path><path d="M5 5.5h0.01"></path><path d="M7.3 5.5h0.01"></path></svg></button></a>
-            <a class="nav-link" href="ynev_terkep.html"><span class="ico">🗺️</span> Ynev Térkép<button class="nav-open" title="Megnyitás itt (inline)" onclick="openInlinePage(event,'ynev_terkep.html','Ynev Térkép')"><svg viewBox="0 0 20 20" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="3.5" width="15" height="13" rx="2.3"></rect><path d="M2.5 7.5H17.5"></path><path d="M5 5.5h0.01"></path><path d="M7.3 5.5h0.01"></path></svg></button></a>
+            <a class="nav-link" href="kodex"><span class="ico">📖</span> Kódex<button class="nav-open" title="Megnyitás itt (inline)" onclick="openInlinePage(event,'kodex','Kódex')"><svg viewBox="0 0 20 20" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="3.5" width="15" height="13" rx="2.3"></rect><path d="M2.5 7.5H17.5"></path><path d="M5 5.5h0.01"></path><path d="M7.3 5.5h0.01"></path></svg></button></a>
+            <a class="nav-link" href="char"><span class="ico">🧙‍♂️</span> Karakterlap<button class="nav-open" title="Megnyitás itt (inline)" onclick="openInlinePage(event,'char','Karakterlap')"><svg viewBox="0 0 20 20" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="3.5" width="15" height="13" rx="2.3"></rect><path d="M2.5 7.5H17.5"></path><path d="M5 5.5h0.01"></path><path d="M7.3 5.5h0.01"></path></svg></button></a>
+            <a class="nav-link" href="karakter_kezelo"><span class="ico">📊</span> Karakter Segéd<button class="nav-open" title="Megnyitás itt (inline)" onclick="openInlinePage(event,'karakter_kezelo','Karakter Segéd')"><svg viewBox="0 0 20 20" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="3.5" width="15" height="13" rx="2.3"></rect><path d="M2.5 7.5H17.5"></path><path d="M5 5.5h0.01"></path><path d="M7.3 5.5h0.01"></path></svg></button></a>
+            <a class="nav-link" href="ynev_terkep"><span class="ico">🗺️</span> Ynev Térkép<button class="nav-open" title="Megnyitás itt (inline)" onclick="openInlinePage(event,'ynev_terkep','Ynev Térkép')"><svg viewBox="0 0 20 20" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="3.5" width="15" height="13" rx="2.3"></rect><path d="M2.5 7.5H17.5"></path><path d="M5 5.5h0.01"></path><path d="M7.3 5.5h0.01"></path></svg></button></a>
             <div class="nav-sep admin-only"></div>
-            <a class="nav-link admin-only" href="km_pult.html"><span class="ico">🛡️</span> KM Pult</a>
-            <a class="nav-link admin-only" href="sabloneditor.html"><span class="ico">🔨</span> Műhely</a>
+            <a class="nav-link admin-only" href="km_pult"><span class="ico">🛡️</span> KM Pult</a>
+            <a class="nav-link admin-only" href="sabloneditor"><span class="ico">🔨</span> Műhely</a>
             <div class="nav-sep admin-only"></div>
             <button class="nav-link nav-edit admin-only" id="editModeBtn" type="button" onclick="toggleEditMode()"><span class="ico">✏️</span> Szerkesztő mód</button>
         </aside>
@@ -731,7 +731,7 @@
             <div id="charGrid"></div>
             <div id="savedPagesRow"></div>
             <div id="charEmpty" class="empty-note" style="display:none;">
-                Még nincs mentett karaktered. <a href="char.html" style="color:var(--gold);">Készíts egyet →</a>
+                Még nincs mentett karaktered. <a href="char" style="color:var(--gold);">Készíts egyet →</a>
             </div>
 
             <div id="editorBar" style="display:none;">
@@ -835,7 +835,7 @@
         <div class="kv-panel">
             <div class="kv-head">
                 <span class="kv-title" id="kvTitle">📖 Kódex</span>
-                <a class="kv-open" id="kvOpenNew" href="kodex.html" target="_blank" rel="noopener">Teljes oldal ↗</a>
+                <a class="kv-open" id="kvOpenNew" href="kodex" target="_blank" rel="noopener">Teljes oldal ↗</a>
                 <button class="kx-x" onclick="closeKodexViewer()">✕</button>
             </div>
             <iframe id="kvFrame" title="Kódex" src="about:blank"></iframe>
@@ -845,7 +845,7 @@
     <script>
         window.doLogout = async function() {
             try { await window._sb.auth.signOut(); } catch (e) {}
-            window.location.href = 'login.html';
+            window.location.href = 'login';
         };
 
         // Háttérben felúszó rúnák — HÁROM mélységi réteg (közelebbi = nagyobb/erősebb/
@@ -1021,12 +1021,12 @@
 
         // Felfedezés-csempék (a navigáció "csempe" változata a feeden)
         const TILES = [
-            { icon:'📖', title:'Kódex', href:'kodex.html', desc:'A teljes M.A.G.U.S. szabályzat, kereséssel és könyvjelzőkkel.' },
-            { icon:'🧙‍♂️', title:'Karakterlap', href:'char.html', desc:'Karakterlap készítése, szerkesztése és nyomtatása.' },
-            { icon:'📊', title:'Karakter Segéd', href:'karakter_kezelo.html', desc:'Karaktereid kezelése, gyors áttekintés és segédletek.' },
-            { icon:'🗺️', title:'Ynev Térkép', href:'ynev_terkep.html', desc:'Interaktív világtérkép helyszínekkel és jelölőkkel.' },
-            { icon:'🛡️', title:'KM Pult', href:'km_pult.html', desc:'Kalandmester-felület: kampányok, harcrend, napló.', admin:true },
-            { icon:'🔨', title:'Műhely', href:'sabloneditor.html', desc:'Sablon- és helyszín-szerkesztő a kalandmestereknek.', admin:true },
+            { icon:'📖', title:'Kódex', href:'kodex', desc:'A teljes M.A.G.U.S. szabályzat, kereséssel és könyvjelzőkkel.' },
+            { icon:'🧙‍♂️', title:'Karakterlap', href:'char', desc:'Karakterlap készítése, szerkesztése és nyomtatása.' },
+            { icon:'📊', title:'Karakter Segéd', href:'karakter_kezelo', desc:'Karaktereid kezelése, gyors áttekintés és segédletek.' },
+            { icon:'🗺️', title:'Ynev Térkép', href:'ynev_terkep', desc:'Interaktív világtérkép helyszínekkel és jelölőkkel.' },
+            { icon:'🛡️', title:'KM Pult', href:'km_pult', desc:'Kalandmester-felület: kampányok, harcrend, napló.', admin:true },
+            { icon:'🔨', title:'Műhely', href:'sabloneditor', desc:'Sablon- és helyszín-szerkesztő a kalandmestereknek.', admin:true },
         ];
 
         function esc(s){ return (s==null?'':String(s)).replace(/[&<>"]/g, c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c])); }
@@ -1137,7 +1137,7 @@
             const label = esc(b.title || (b.kind === 'ynev_map' ? 'Térkép' : 'Battlemap'));
             const href = b.kind === 'battlemap'
                 ? 'battlemap.html?map=' + encodeURIComponent(b.map_id || '')
-                : 'ynev_terkep.html' + (b.map_id ? '?campaign_map=' + encodeURIComponent(b.map_id) : '');
+                : 'ynev_terkep' + (b.map_id ? '?campaign_map=' + encodeURIComponent(b.map_id) : '');
             const style = mapTileStyle(b);
             const icon = style ? '' : '<div class="pt-mapicon">' + (b.kind === 'ynev_map' ? '🗺️' : '⚔️') + '</div>';
             return '<a class="pt pt-map ' + size + '" target="_blank" rel="noopener" href="' + href + '" style="' + style + '">' +
@@ -1192,7 +1192,8 @@
             const memberIds = [...new Set(memberRows.map(m => m.user_id).filter(Boolean))];
             let memberProfiles = [], membershipMap = {};
             if (memberIds.length) {
-                memberProfiles = await sel(() => window._sb.from('user_profiles').select('id, display_name, avatar').in('id', memberIds));
+                memberProfiles = await sel(() => window._sb.from('user_avatars').select('id, display_name, avatar').in('id', memberIds));
+                if (!memberProfiles.length) memberProfiles = await sel(() => window._sb.from('user_profiles').select('id, display_name, avatar').in('id', memberIds));
                 const allMemberships = await sel(() => window._sb.from('campaign_members').select('user_id, campaign_id').in('user_id', memberIds));
                 const campName = id => (FEED.campaigns.find(c => c.id === id) || {}).name || 'Kampány';
                 allMemberships.forEach(m => { (membershipMap[m.user_id] = membershipMap[m.user_id] || []).push(campName(m.campaign_id)); });
@@ -1495,7 +1496,7 @@
                 empty.style.display = 'block';
                 empty.innerHTML = (FEED.chars.length && FEED.campaignId)
                     ? 'Ehhez a kampányhoz nincs használható karaktered.'
-                    : 'Még nincs mentett karaktered. <a href="char.html" style="color:var(--gold);">Készíts egyet →</a>';
+                    : 'Még nincs mentett karaktered. <a href="char" style="color:var(--gold);">Készíts egyet →</a>';
                 return;
             }
             empty.style.display = 'none';
@@ -1533,7 +1534,7 @@
                     '<div class="cc-name">' + esc(ch.name || 'Névtelen') + '</div>' +
                     '<div class="cc-sub">' + esc([ch.faj, ch.kaszt].filter(Boolean).join(' · ') || 'M.A.G.U.S. karakter') + '</div>' +
                     body + bankLine +
-                    '<a class="cc-open" href="char.html?id=' + encodeURIComponent(ch.id) + '">Megnyitás →</a>' +
+                    '<a class="cc-open" href="char?id=' + encodeURIComponent(ch.id) + '">Megnyitás →</a>' +
                 '</div>' +
                 henchmen.map(henchCard).join('') +
                 equipTile(ch);
