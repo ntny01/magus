@@ -1451,8 +1451,13 @@ body{
         🗺️ YNEV KALAND TÉRKÉP
     </div>
 
-    <button class="btn" onclick="exportCampaign()">💾 JSON</button>
-    <button class="btn" onclick="importCampaign()">📂 JSON be</button>
+    <div style="position:relative;display:inline-block;">
+        <button class="btn" onclick="toggleFileMenu()" id="fileMenuBtn">💾 Fájl ▾</button>
+        <div id="fileMenu" style="display:none;position:absolute;top:100%;left:0;min-width:190px;background:#0f172a;border:1px solid rgba(212,175,55,.3);border-radius:10px;padding:6px;z-index:99999;box-shadow:0 8px 24px rgba(0,0,0,.5);margin-top:4px;">
+            <button onclick="exportCampaign();toggleFileMenu()" style="display:block;width:100%;text-align:left;background:rgba(212,175,55,.08);border:1px solid rgba(212,175,55,.2);color:#e2e8f0;border-radius:6px;padding:6px 10px;cursor:pointer;font-size:.8rem;margin-bottom:4px;">💾 Exportálás (JSON)</button>
+            <button onclick="importCampaign();toggleFileMenu()" style="display:block;width:100%;text-align:left;background:rgba(212,175,55,.08);border:1px solid rgba(212,175,55,.2);color:#e2e8f0;border-radius:6px;padding:6px 10px;cursor:pointer;font-size:.8rem;">📂 Importálás (JSON)</button>
+        </div>
+    </div>
     <button class="btn" onclick="toggleSavePanel()">🗃️ Mentések</button>
     <div style="position:relative;display:inline-block;">
         <button class="btn" onclick="toggleCampaignMenu()" id="campaignMenuBtn">📜 Kampány ▾</button>
@@ -3933,6 +3938,20 @@ document.addEventListener('mousemove', e => {
     menu.style.display = isOpen ? 'none' : 'block';
     if (!isOpen) await window.loadCampaignMenuList();
   }
+
+  // Fájl legördülő (Export/Import JSON) — a Kampány-menü mintájára.
+  window.toggleFileMenu = function() {
+    const menu = document.getElementById('fileMenu');
+    if (!menu) return;
+    menu.style.display = menu.style.display === 'none' ? 'block' : 'none';
+  }
+  document.addEventListener('click', function(e) {
+    const menu = document.getElementById('fileMenu');
+    const btn = document.getElementById('fileMenuBtn');
+    if (menu && btn && !menu.contains(e.target) && !btn.contains(e.target)) {
+      menu.style.display = 'none';
+    }
+  });
 
   window.loadCampaignMenuList = async function() {
     const listEl = document.getElementById('campaignMenuList');
