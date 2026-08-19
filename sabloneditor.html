@@ -525,7 +525,7 @@ header{
   header{padding:.4rem .75rem;}
 }
 </style>
-    <script src="magus_avatar.js?v=4"></script>
+    <link rel="stylesheet" href="magus_ui.css?v=1"><script src="magus_avatar.js?v=4"></script>
 </head>
 <body>
 <div id="magic-particles"></div>
@@ -546,7 +546,7 @@ header{
 
   <div class="header-right">
     <span style="display:inline-flex;align-items:center;gap:.5rem;"><span id="auth-avatar"></span><span id="auth-username" style="font-size:.75rem;color:#a855f7;font-family:'Cinzel',serif;letter-spacing:.06em;white-space:nowrap;"></span></span>
-    <button onclick="doLogout()" style="background:rgba(248,113,113,0.08);border:1px solid rgba(248,113,113,0.2);color:#f87171;font-size:.75rem;padding:.3rem .7rem;border-radius:.4rem;cursor:pointer;">Kilépés</button>
+    <button class="mg-btn mg-btn--danger" onclick="doLogout()">Kilépés</button>
   </div>
 </header>
 

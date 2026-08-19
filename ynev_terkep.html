@@ -402,6 +402,13 @@ body.compact-menu .effect-size-btn { padding:2px; font-size:10px; }
 
 }
 
+/* Jelölő-menü: kategóriákba rendezett rács (nem egy hosszú oszlop) */
+#markerDropdown{ width:auto; }
+#markerDropdown .markerGrid{ display:flex; flex-wrap:wrap; gap:8px; max-width:200px; }
+#markerDropdown .markerCat{ font-size:10px; font-weight:600; text-transform:uppercase; letter-spacing:.08em; color:#94a3b8; margin:2px 0 0 2px; }
+#markerDropdown .markerCat:first-child{ margin-top:0; }
+body.compact-menu #markerDropdown .markerGrid{ max-width:150px; }
+
 /* =========================================================
    SCROLLBAR
 ========================================================= */
@@ -1432,7 +1439,7 @@ body{
 }
 
 </style>
-    <script src="magus_avatar.js?v=4"></script>
+    <link rel="stylesheet" href="magus_ui.css?v=1"><script src="magus_avatar.js?v=4"></script>
 </head>
 
 <body>
@@ -1471,7 +1478,7 @@ body{
     </button>
 <div style="display:flex;align-items:center;gap:.5rem;flex-shrink:0;margin-left:.5rem;">
   <span style="display:inline-flex;align-items:center;gap:.5rem;"><span id="auth-avatar"></span><span id="auth-username" style="font-size:.75rem;color:#d4af37;font-family:'Cinzel',serif;letter-spacing:.06em;white-space:nowrap;"></span></span>
-  <button onclick="doLogout()" style="background:rgba(248,113,113,0.08);border:1px solid rgba(248,113,113,0.2);color:#f87171;font-size:.75rem;padding:.3rem .7rem;border-radius:.4rem;cursor:pointer;white-space:nowrap;">Kilépés</button>
+  <button class="mg-btn mg-btn--danger" onclick="doLogout()">Kilépés</button>
 </div>
 
 </div>
@@ -1495,19 +1502,28 @@ body{
             id="markerDropdown"
         >
 
-            <button class="iconBtn markerBtn" data-icon="🏰" title="Vár">🏰</button>
-            <button class="iconBtn markerBtn" data-icon="🏙️" title="Város">🏙️</button>
-            <button class="iconBtn markerBtn" data-icon="🏠" title="Falu">🏠</button>
-            <button class="iconBtn markerBtn" data-icon="⚔️" title="Csata">⚔️</button>
-            <button class="iconBtn markerBtn" data-icon="☠️" title="Veszély">☠️</button>
-            <button class="iconBtn markerBtn" data-icon="❗" title="Fontos">❗</button>
-            <button class="iconBtn markerBtn" data-icon="❓" title="Rejtély">❓</button>
-            <button class="iconBtn markerBtn" data-icon="⭐" title="Kiemelt">⭐</button>
-            <button class="iconBtn markerBtn" data-icon="🐉" title="Sárkány">🐉</button>
-            <button class="iconBtn markerBtn" data-icon="🛡️" title="Erőd">🛡️</button>
-            <button class="iconBtn markerBtn" data-icon="⛪" title="Templom">⛪</button>
-            <button class="iconBtn markerBtn" data-icon="🧙" title="Mágus">🧙</button>
-            <button class="iconBtn markerBtn" data-icon="💎" title="Kincs">💎</button>
+            <div class="markerCat">Települések</div>
+            <div class="markerGrid">
+                <button class="iconBtn markerBtn" data-icon="🏰" title="Vár">🏰</button>
+                <button class="iconBtn markerBtn" data-icon="🏙️" title="Város">🏙️</button>
+                <button class="iconBtn markerBtn" data-icon="🏠" title="Falu">🏠</button>
+                <button class="iconBtn markerBtn" data-icon="🛡️" title="Erőd">🛡️</button>
+                <button class="iconBtn markerBtn" data-icon="⛪" title="Templom">⛪</button>
+            </div>
+            <div class="markerCat">Veszélyek</div>
+            <div class="markerGrid">
+                <button class="iconBtn markerBtn" data-icon="⚔️" title="Csata">⚔️</button>
+                <button class="iconBtn markerBtn" data-icon="☠️" title="Veszély">☠️</button>
+                <button class="iconBtn markerBtn" data-icon="🐉" title="Sárkány">🐉</button>
+            </div>
+            <div class="markerCat">Kiemelt</div>
+            <div class="markerGrid">
+                <button class="iconBtn markerBtn" data-icon="❗" title="Fontos">❗</button>
+                <button class="iconBtn markerBtn" data-icon="❓" title="Rejtély">❓</button>
+                <button class="iconBtn markerBtn" data-icon="⭐" title="Kiemelt">⭐</button>
+                <button class="iconBtn markerBtn" data-icon="🧙" title="Mágus">🧙</button>
+                <button class="iconBtn markerBtn" data-icon="💎" title="Kincs">💎</button>
+            </div>
 
         </div>
 

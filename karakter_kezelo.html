@@ -507,7 +507,7 @@ const sb = supabase.createClient(
 
         .hidden { display: none !important; }
     </style>
-    <script src="magus_avatar.js?v=4"></script>
+    <link rel="stylesheet" href="magus_ui.css?v=1"><script src="magus_avatar.js?v=4"></script>
 </head>
 <body>
 
@@ -534,7 +534,7 @@ const sb = supabase.createClient(
         </div>
         <div style="display:flex;align-items:center;justify-content:space-between;margin-top:.5rem;">
             <span style="display:inline-flex;align-items:center;gap:.5rem;"><span id="auth-avatar"></span><span id="auth-username" style="font-size:.78rem;color:#d4af37;"></span></span>
-            <button onclick="doLogout()" style="background:rgba(248,113,113,0.08);border:1px solid rgba(248,113,113,0.2);color:#f87171;font-size:.75rem;padding:.3rem .7rem;border-radius:.4rem;cursor:pointer;">Kilépés</button>
+            <button class="mg-btn mg-btn--danger" onclick="doLogout()">Kilépés</button>
         </div>
 
     <div id="main-character-panel" class="panel hidden">
