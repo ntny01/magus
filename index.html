@@ -139,6 +139,28 @@
         .nav-link .ico { font-size: 1.05rem; width: 1.4rem; text-align: center; }
         .nav-link:hover { background: rgba(212,175,55,.09); border-color: var(--gold-soft); color: #fff; }
         .nav-sep { height: 1px; background: var(--border); margin: .5rem .4rem; }
+        .nav-open {
+            margin-left: auto; display: inline-flex; align-items: center; justify-content: center;
+            background: transparent; border: 1px solid var(--border); border-radius: .4rem;
+            color: var(--muted); padding: .18rem .3rem; cursor: pointer; flex-shrink: 0; transition: all .15s;
+        }
+        .nav-open:hover { color: var(--gold); border-color: var(--gold-soft); background: rgba(212,175,55,.1); }
+        .nav-open svg { display: block; }
+        /* Inline oldal-megnyitó (iframe) overlay */
+        #inlinePageOverlay { position: fixed; inset: 0; z-index: 9000; display: none;
+            background: rgba(2,6,23,.8); backdrop-filter: blur(4px); padding: 1.5rem; }
+        .ipo-panel { max-width: 1200px; height: 100%; margin: 0 auto; display: flex; flex-direction: column;
+            background: var(--card-solid); border: 1px solid var(--border); border-radius: 14px; overflow: hidden;
+            box-shadow: 0 20px 60px rgba(0,0,0,.55); }
+        .ipo-head { display: flex; align-items: center; justify-content: space-between; gap: 1rem;
+            padding: .6rem .9rem; border-bottom: 1px solid var(--border); flex-shrink: 0; }
+        .ipo-title { font-family: 'Cinzel', serif; color: var(--gold); font-size: 1rem; letter-spacing: .04em; }
+        .ipo-actions { display: flex; align-items: center; gap: .5rem; }
+        .ipo-btn { background: rgba(255,255,255,.04); border: 1px solid var(--border); color: var(--muted);
+            font-size: .8rem; padding: .35rem .7rem; border-radius: .45rem; cursor: pointer; text-decoration: none; white-space: nowrap; }
+        .ipo-btn:hover { color: var(--gold); border-color: var(--gold-soft); }
+        #inlinePageFrame { flex: 1; width: 100%; border: none; background: #0b1020; }
+        @media (max-width: 767px) { #inlinePageOverlay { padding: 0; } .ipo-panel { border-radius: 0; } }
 
         /* ===== FEED ===== */
         .feed { display: flex; flex-direction: column; gap: 1.25rem; min-width: 0; }
@@ -674,10 +696,10 @@
         <!-- NAVIGÁCIÓ -->
         <aside class="nav">
             <span class="nav-title">Navigáció</span>
-            <a class="nav-link" href="kodex.html"><span class="ico">📖</span> Kódex</a>
-            <a class="nav-link" href="char.html"><span class="ico">🧙‍♂️</span> Karakterlap</a>
-            <a class="nav-link" href="karakter_kezelo.html"><span class="ico">📊</span> Karakter Segéd</a>
-            <a class="nav-link" href="ynev_terkep.html"><span class="ico">🗺️</span> Ynev Térkép</a>
+            <a class="nav-link" href="kodex.html"><span class="ico">📖</span> Kódex<button class="nav-open" title="Megnyitás itt (inline)" onclick="openInlinePage(event,'kodex.html','Kódex')"><svg viewBox="0 0 20 20" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"><rect x="2.3" y="2.8" width="11" height="11" rx="2.2"></rect><rect x="7.3" y="7.3" width="10.4" height="10.4" rx="2.2" fill="var(--card-solid)"></rect></svg></button></a>
+            <a class="nav-link" href="char.html"><span class="ico">🧙‍♂️</span> Karakterlap<button class="nav-open" title="Megnyitás itt (inline)" onclick="openInlinePage(event,'char.html','Karakterlap')"><svg viewBox="0 0 20 20" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"><rect x="2.3" y="2.8" width="11" height="11" rx="2.2"></rect><rect x="7.3" y="7.3" width="10.4" height="10.4" rx="2.2" fill="var(--card-solid)"></rect></svg></button></a>
+            <a class="nav-link" href="karakter_kezelo.html"><span class="ico">📊</span> Karakter Segéd<button class="nav-open" title="Megnyitás itt (inline)" onclick="openInlinePage(event,'karakter_kezelo.html','Karakter Segéd')"><svg viewBox="0 0 20 20" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"><rect x="2.3" y="2.8" width="11" height="11" rx="2.2"></rect><rect x="7.3" y="7.3" width="10.4" height="10.4" rx="2.2" fill="var(--card-solid)"></rect></svg></button></a>
+            <a class="nav-link" href="ynev_terkep.html"><span class="ico">🗺️</span> Ynev Térkép<button class="nav-open" title="Megnyitás itt (inline)" onclick="openInlinePage(event,'ynev_terkep.html','Ynev Térkép')"><svg viewBox="0 0 20 20" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"><rect x="2.3" y="2.8" width="11" height="11" rx="2.2"></rect><rect x="7.3" y="7.3" width="10.4" height="10.4" rx="2.2" fill="var(--card-solid)"></rect></svg></button></a>
             <div class="nav-sep admin-only"></div>
             <a class="nav-link admin-only" href="km_pult.html"><span class="ico">🛡️</span> KM Pult</a>
             <a class="nav-link admin-only" href="sabloneditor.html"><span class="ico">🔨</span> Műhely</a>
@@ -2048,6 +2070,36 @@
                 }
             } catch (e) { console.warn('Avatar init kihagyva:', e); }
         })();
+    </script>
+
+    <!-- Inline oldal-megnyitó (iframe) -->
+    <div id="inlinePageOverlay" onclick="if(event.target===this)closeInlinePage()">
+        <div class="ipo-panel">
+            <div class="ipo-head">
+                <span class="ipo-title" id="inlinePageTitle"></span>
+                <div class="ipo-actions">
+                    <a class="ipo-btn" id="inlinePageFull" href="#" target="_blank" rel="noopener">Teljes oldal ↗</a>
+                    <button class="ipo-btn" onclick="closeInlinePage()">✕ Bezárás</button>
+                </div>
+            </div>
+            <iframe id="inlinePageFrame" title="Beágyazott oldal"></iframe>
+        </div>
+    </div>
+    <script>
+        function openInlinePage(e, src, title){
+            if(e){ e.preventDefault(); e.stopPropagation(); }
+            document.getElementById('inlinePageTitle').textContent = title || '';
+            document.getElementById('inlinePageFull').href = src;
+            document.getElementById('inlinePageFrame').src = src;
+            document.getElementById('inlinePageOverlay').style.display = 'block';
+            document.body.style.overflow = 'hidden';
+        }
+        function closeInlinePage(){
+            document.getElementById('inlinePageOverlay').style.display = 'none';
+            document.getElementById('inlinePageFrame').src = 'about:blank';
+            document.body.style.overflow = '';
+        }
+        document.addEventListener('keydown', function(ev){ if(ev.key === 'Escape') closeInlinePage(); });
     </script>
 </body>
 </html>

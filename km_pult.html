@@ -734,7 +734,10 @@ const sb = supabase.createClient(
 
     <div class="km-main">
     <header>
-        <h1 id="mainHeaderTitle">🛡️ Kalandmester Pult <span class="admin-badge">Admin</span></h1>
+        <div style="display:flex;align-items:center;gap:.7rem;flex-shrink:0;">
+            <a href="index.html" title="Vissza a főoldalra" style="display:inline-flex;align-items:center;justify-content:center;text-decoration:none;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.14);color:#d4af37;font-size:1.05rem;line-height:1;padding:.3rem .58rem;border-radius:.45rem;flex-shrink:0;">←</a>
+            <h1 id="mainHeaderTitle">🛡️ Kalandmester Pult <span class="admin-badge">Admin</span></h1>
+        </div>
 
         <div class="header-user">
             <span style="display:inline-flex;align-items:center;gap:.5rem;"><span id="auth-avatar"></span><span id="auth-username" style="font-size:.75rem;color:#d4af37;font-family:'Cinzel',serif;letter-spacing:.06em;white-space:nowrap;"></span></span>
