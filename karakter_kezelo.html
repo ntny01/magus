@@ -507,7 +507,7 @@ const sb = supabase.createClient(
 
         .hidden { display: none !important; }
     </style>
-    <script src="magus_avatar.js?v=3"></script>
+    <script src="magus_avatar.js?v=4"></script>
 </head>
 <body>
 
@@ -1564,7 +1564,7 @@ const sb = supabase.createClient(
     if (!el) { setTimeout(trySetUsername, 50); return }
     if (window._userProfile) {
       el.textContent = window._userProfile.display_name
-      if (window.MagusAvatar && MagusAvatar.attach) MagusAvatar.attach(window._sb, document.getElementById('auth-avatar'), window._userProfile, { size: 26 })
+      if (window.MagusAvatar && MagusAvatar.attach) MagusAvatar.attach(window._sb, document.getElementById('auth-avatar'), window._userProfile, { size: 26, editable: false })
     } else {
       setTimeout(trySetUsername, 50)
     }

@@ -169,12 +169,17 @@
         return getUid.then(function (uid) {
             if (!uid) return null;
             mount.style.cursor = 'pointer';
-            if (!mount.title) mount.title = 'Profilkép szerkesztése';
+            var editable = opts.editable !== false;   // alapból szerkeszthető (index); máshol csak-nézet
+            if (!mount.title) mount.title = editable ? 'Profilkép szerkesztése' : 'Profilkép megtekintése';
             mount.onclick = function () {
-                openEditor({
-                    sb: sb, userId: uid, mount: mount, current: mount._mgAvatar,
-                    size: size, name: profile && profile.display_name, onSaved: opts.onSaved
-                });
+                if (editable) {
+                    openEditor({
+                        sb: sb, userId: uid, mount: mount, current: mount._mgAvatar,
+                        size: size, name: profile && profile.display_name, onSaved: opts.onSaved
+                    });
+                } else {
+                    showLarge({ display_name: profile && profile.display_name, avatar: mount._mgAvatar });
+                }
             };
             return hydrate(sb, mount, uid, { size: size });
         });
@@ -191,6 +196,30 @@
                         .then(function (r2) { if (r2 && r2.error) throw r2.error; });
                 }
             });
+    }
+
+    // Nagy, CSAK-NÉZET profilkép modal (nem szerkesztő). Az index-en kívül a
+    // fejléc-avatarra kattintva ez nyílik meg.
+    function showLarge(profile, opts) {
+        opts = opts || {};
+        var overlay = document.createElement('div');
+        overlay.className = 'mg-large-overlay';
+        overlay.style.cssText = 'position:fixed;inset:0;z-index:9998;display:flex;align-items:center;justify-content:center;background:rgba(2,6,23,.72);backdrop-filter:blur(3px);padding:1rem;';
+        var card = document.createElement('div');
+        card.style.cssText = 'background:#0f172a;border:1px solid rgba(255,255,255,.1);border-radius:16px;padding:1.8rem;text-align:center;box-shadow:0 20px 60px rgba(0,0,0,.5);';
+        var avEl = document.createElement('span');
+        avEl.style.display = 'inline-flex';
+        card.appendChild(avEl);
+        if (profile && profile.display_name) {
+            var nm = document.createElement('div');
+            nm.style.cssText = "font-family:'Cinzel',serif;color:#d4af37;font-size:1.15rem;letter-spacing:.04em;margin-top:.8rem;";
+            nm.textContent = profile.display_name;
+            card.appendChild(nm);
+        }
+        overlay.appendChild(card);
+        document.body.appendChild(overlay);
+        render(avEl, profile || {}, { size: opts.size || 160 });
+        overlay.addEventListener('click', function () { overlay.remove(); });
     }
 
     /* ============================ EDITOR ============================ */
@@ -408,6 +437,7 @@
         renderFace: renderFace,
         hydrate: hydrate,
         attach: attach,
+        showLarge: showLarge,
         openEditor: openEditor,
         initials: initials,
         DEFAULT: DEFAULT,

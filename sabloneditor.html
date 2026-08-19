@@ -525,7 +525,7 @@ header{
   header{padding:.4rem .75rem;}
 }
 </style>
-    <script src="magus_avatar.js?v=3"></script>
+    <script src="magus_avatar.js?v=4"></script>
 </head>
 <body>
 <div id="magic-particles"></div>
@@ -588,6 +588,10 @@ header{
     <span style="font-family:'Cinzel',serif;color:var(--purple);font-size:.82rem;letter-spacing:.08em;white-space:nowrap;">🗺️ Kampány Térkép</span>
     <input type="text" id="campaignMapName" placeholder="Kampány térkép neve..."
       style="flex:1;min-width:160px;background:rgba(255,255,255,.04);border:1px solid rgba(168,85,247,.2);border-radius:.5rem;color:var(--text);padding:.35rem .7rem;font-size:.82rem;outline:none;">
+    <select id="campaignMapCampaign" title="Melyik kampányhoz tartozik (ezt csak a tagjai látják)"
+      style="min-width:150px;background:rgba(255,255,255,.04);border:1px solid rgba(168,85,247,.2);border-radius:.5rem;color:var(--text);padding:.35rem .5rem;font-size:.82rem;outline:none;cursor:pointer;">
+      <option value="">— Nincs kampány —</option>
+    </select>
     <button onclick="newCampaignMap()" id="newCampaignBtn" style="background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.12);color:var(--text);border-radius:.5rem;padding:.35rem .8rem;cursor:pointer;font-size:.82rem;white-space:nowrap;">✨ Új kampány</button>
     <button onclick="saveCampaignMap()" style="background:rgba(168,85,247,.15);border:1px solid rgba(168,85,247,.3);color:#c084fc;border-radius:.5rem;padding:.35rem .8rem;cursor:pointer;font-size:.82rem;white-space:nowrap;">💾 Mentés</button>
     <button onclick="publishCampaignMap()" id="publishCampaignBtn" style="background:rgba(16,185,129,.1);border:1px solid rgba(16,185,129,.25);color:#34d399;border-radius:.5rem;padding:.35rem .8rem;cursor:pointer;font-size:.82rem;white-space:nowrap;">📢 Publikálás</button>
@@ -1691,7 +1695,7 @@ function trySetUsername() {
   if (!el) { setTimeout(trySetUsername, 50); return }
   if (window._userProfile) {
     el.textContent = window._userProfile.display_name
-  if (window.MagusAvatar && MagusAvatar.attach) MagusAvatar.attach(window._sb, document.getElementById('auth-avatar'), window._userProfile, { size: 26 })
+  if (window.MagusAvatar && MagusAvatar.attach) MagusAvatar.attach(window._sb, document.getElementById('auth-avatar'), window._userProfile, { size: 26, editable: false })
   } else {
     setTimeout(trySetUsername, 50)
   }
@@ -1772,6 +1776,8 @@ window.newCampaignMap = function() {
   _currentCampaignMapId = null;
   const nameInput = document.getElementById('campaignMapName');
   if (nameInput) nameInput.value = '';
+  const campSel = document.getElementById('campaignMapCampaign');
+  if (campSel) campSel.value = '';
   document.getElementById('campaignMapStatus').textContent = 'Új kampány – még nincs elmentve';
   updatePublishButtons(false);
   const iframe = document.getElementById('mapIframe');
@@ -1800,6 +1806,8 @@ async function loadCampaignMap(id) {
   if (!data) return;
   _currentCampaignMapId = id;
   document.getElementById('campaignMapName').value = data.name;
+  const campSel = document.getElementById('campaignMapCampaign');
+  if (campSel) campSel.value = data.campaign_id || '';
   updatePublishButtons(data.published);
   document.getElementById('campaignMapStatus').textContent =
     `Betöltve: ${new Date(data.updated_at).toLocaleString('hu-HU')}`;
@@ -1836,6 +1844,7 @@ window.saveCampaignMap = async function() {
     clearTimeout(timeoutId);
     const row = {
       name,
+      campaign_id: (document.getElementById('campaignMapCampaign')?.value || null),
       drawings: mapData.drawings,
       active_layer: mapData.activeLayer,
       updated_at: new Date().toISOString()
@@ -1863,8 +1872,12 @@ window.saveCampaignMap = async function() {
 
 window.publishCampaignMap = async function() {
   if (!_currentCampaignMapId || !window._sb) return;
-  // Először az összes többi unpublish
-  await window._sb.from('campaign_maps').update({ published: false }).neq('id', _currentCampaignMapId);
+  // Csak az AZONOS kampányhoz tartozó többi térképet vonjuk vissza (kampányonként
+  // egy publikált térkép), hogy egy másik kampány publikálása ne oltsa ki ezt.
+  const campId = document.getElementById('campaignMapCampaign')?.value || null;
+  let unpub = window._sb.from('campaign_maps').update({ published: false }).neq('id', _currentCampaignMapId);
+  unpub = campId ? unpub.eq('campaign_id', campId) : unpub.is('campaign_id', null);
+  await unpub;
   const { error } = await window._sb.from('campaign_maps')
     .update({ published: true }).eq('id', _currentCampaignMapId);
   if (!error) { updatePublishButtons(true); loadCampaignMapList(); }
@@ -1894,9 +1907,21 @@ window.addEventListener('message', function(e) {
   }
 });
 
+// Kampány-legördülő feltöltése (melyik kampányhoz tartozik a térkép).
+async function loadCampaignMapCampaignOptions() {
+  const sel = document.getElementById('campaignMapCampaign');
+  if (!sel || !window._sb) return;
+  const prev = sel.value;
+  const { data } = await window._sb.from('campaigns').select('id, name').order('name');
+  sel.innerHTML = '<option value="">— Nincs kampány —</option>' +
+    (data || []).map(c => `<option value="${c.id}">${(c.name || '').replace(/</g,'&lt;')}</option>`).join('');
+  sel.value = prev;
+}
+
 // Tab váltáskor lista betöltés
 document.addEventListener('DOMContentLoaded', () => {
   loadCampaignMapList();
+  loadCampaignMapCampaignOptions();
 });
 
 </script>
