@@ -1788,6 +1788,7 @@ function importData(e) {
       if (btn) { btn.innerHTML = '🔒 Lezárva (Szerkesztés)'; btn.style.cssText='border-color:rgba(239,68,68,.4)!important;color:#f87171!important;'; }
       renderAll();
       applyCharTheme();
+      window._resetUndo && window._resetUndo();
       window.scheduleSave();
       alert(isTemplateFile ? 'Sablon betöltve – szabad karakterként szerkesztheted!' : (sheetData.template_id ? 'Sablon alapú karakter betöltve!' : 'Szabad karakter betöltve!'));
     } catch(err) { alert('Hiba: ' + err.message); }
@@ -1881,6 +1882,7 @@ function resetSheet() {
   setViewMode(1);
   renderAll();
   applyCharTheme();
+  window._resetUndo && window._resetUndo();
   window.scheduleSave()
 }
 
@@ -1955,11 +1957,74 @@ renderAll();
     if (!e.target.closest('.dd-wrap') && !e.target.closest('.export-wrap')) closeAllDD()
   })
 
+  // ─── UNDO / REDO (CTRL+Z / CTRL+SHIFT+Z) ────────────────────────
+  // A teljes sheetData-t pillanatképezzük a szerkesztési "csomópontokon"
+  // (a scheduleSave 1500ms-es debounce-a összevonja a gyors gépelést egy
+  // lépéssé). Karakterváltáskor (_currentSheetId változás) a history nullázódik.
+  window._undoStack = []; window._redoStack = []; window._undoBase = null
+  window._undoKey = undefined; const _UNDO_MAX = 60
+  function _cloneSheet() { return JSON.parse(JSON.stringify(sheetData)) }
+  function _undoCurKey() { return window._currentSheetId || null }
+  window._resetUndo = function() {
+    window._undoStack = []; window._redoStack = []
+    window._undoBase = _cloneSheet(); window._undoKey = _undoCurKey()
+  }
+  // Ha közben más karakter töltődött be, dobjuk a régi history-t.
+  function _undoSyncKey() {
+    if (window._undoKey !== _undoCurKey()) window._resetUndo()
+  }
+  // Pillanatkép rögzítése (settle-kor hívjuk): ha változott, a base-t verembe tesszük.
+  window._commitUndoSnapshot = function() {
+    _undoSyncKey()
+    if (window._undoBase === null) { window._undoBase = _cloneSheet(); return }
+    if (JSON.stringify(sheetData) === JSON.stringify(window._undoBase)) return
+    window._undoStack.push(window._undoBase)
+    if (window._undoStack.length > _UNDO_MAX) window._undoStack.shift()
+    window._redoStack = []
+    window._undoBase = _cloneSheet()
+  }
+  function _undoToast(msg) {
+    let el = document.getElementById('_undoToast')
+    if (!el) {
+      el = document.createElement('div'); el.id = '_undoToast'
+      el.style.cssText = 'position:fixed;bottom:1.4rem;left:50%;transform:translateX(-50%);background:rgba(20,20,28,.92);border:1px solid rgba(212,175,55,.35);color:#d4af37;font-size:.8rem;padding:.45rem 1rem;border-radius:.6rem;opacity:0;transition:opacity .25s;pointer-events:none;z-index:9999;'
+      document.body.appendChild(el)
+    }
+    el.textContent = msg; el.style.opacity = '1'
+    clearTimeout(el._t); el._t = setTimeout(() => el.style.opacity = '0', 1400)
+  }
+  window.undoSheet = function() {
+    // Függő szerkesztés véglegesítése egy lépésbe, hogy a legutóbbit is visszavonhassuk.
+    if (_saveTimer) { clearTimeout(_saveTimer); _saveTimer = null; window._commitUndoSnapshot(); window._bgSave() }
+    else _undoSyncKey()
+    if (!window._undoStack.length) { _undoToast('Nincs mit visszavonni'); return }
+    window._redoStack.push(_cloneSheet())
+    sheetData = window._undoStack.pop()
+    window._undoBase = _cloneSheet()
+    renderAll(); applyCharTheme(); window._bgSave()
+    _undoToast('↩︎ Visszavonva')
+  }
+  window.redoSheet = function() {
+    _undoSyncKey()
+    if (!window._redoStack.length) { _undoToast('Nincs mit újra elvégezni'); return }
+    window._undoStack.push(_cloneSheet())
+    sheetData = window._redoStack.pop()
+    window._undoBase = _cloneSheet()
+    renderAll(); applyCharTheme(); window._bgSave()
+    _undoToast('↪︎ Újra')
+  }
+  document.addEventListener('keydown', e => {
+    if (!(e.ctrlKey || e.metaKey)) return
+    const k = e.key.toLowerCase()
+    if (k === 'z' && !e.shiftKey) { e.preventDefault(); window.undoSheet() }
+    else if ((k === 'z' && e.shiftKey) || k === 'y') { e.preventDefault(); window.redoSheet() }
+  })
+
   // ─── AUTOSAVE (háttér) ──────────────────────────────────────────
   let _saveTimer = null
   window.scheduleSave = function() {
     if (_saveTimer) clearTimeout(_saveTimer)
-    _saveTimer = setTimeout(window._bgSave, 1500)
+    _saveTimer = setTimeout(() => { window._commitUndoSnapshot(); window._bgSave() }, 1500)
   }
 
   window._bgSave = async function() {
@@ -2136,6 +2201,7 @@ renderAll();
       applyCharTheme()
       updatePublishBtn()
       updateHenchBanner()
+      window._resetUndo && window._resetUndo()
     } else {
       console.error('Karakter adat nem található:', id)
     }
@@ -2284,11 +2350,13 @@ renderAll();
       renderAll()
       applyCharTheme()
       updatePublishBtn()
+      window._resetUndo && window._resetUndo()
     } else {
       // Első betöltés: üres lap, de opciók szinkronizálása
       syncInfoFieldOptions()
       renderAll()
       applyCharTheme()
+      window._resetUndo && window._resetUndo()
     }
   }
 
