@@ -266,6 +266,15 @@ header{
   transition:border-color .15s;
 }
 .box-title-input:focus{border-bottom-color:rgba(168,85,247,.3);}
+/* Drag-fogantyú + drop-zóna (blokk / szekció / fejléc-mező átrendezés) */
+.drag-grip{cursor:grab;color:var(--muted);font-size:1rem;line-height:1;padding:0 .1rem;user-select:none;flex-shrink:0;opacity:.6;}
+.drag-grip:hover{opacity:1;color:var(--purple);}
+.drag-grip:active{cursor:grabbing;}
+.drag-grip-sm{font-size:.8rem;opacity:.45;align-self:center;padding:0 .05rem 0 0;}
+.box-wrap.dragging,.section-wrap.dragging,.info-field-edit.dragging{opacity:.45;}
+.box-wrap.drag-over{outline:2px dashed var(--purple);outline-offset:2px;}
+.section-wrap.drag-over{outline:2px dashed var(--purple);outline-offset:3px;border-radius:10px;}
+.info-field-edit.drag-over{outline:2px dashed var(--purple);outline-offset:2px;border-radius:6px;}
 .btn-del-box{
   background:none;border:none;color:rgba(239,68,68,.4);font-size:.75rem;
   cursor:pointer;padding:.1rem .3rem;border-radius:.3rem;transition:all .15s;
@@ -813,6 +822,14 @@ function renderInfoCard() {
   fields.forEach(field => {
     const div = document.createElement('div'); div.className = 'info-field-edit'
 
+    // Drag-fogantyú: húzással átrendezhető a fejléc-mező.
+    const fgrip = document.createElement('span')
+    fgrip.className = 'drag-grip drag-grip-sm'; fgrip.textContent = '⠿'; fgrip.title = 'Húzd a mező átrendezéséhez'
+    fgrip.setAttribute('draggable', 'true')
+    fgrip.addEventListener('dragstart', e => { e.dataTransfer.setData('text/plain','inf:'+field.id); e.dataTransfer.effectAllowed='move'; div.classList.add('dragging') })
+    fgrip.addEventListener('dragend', () => div.classList.remove('dragging'))
+    div.appendChild(fgrip)
+
     // Label szerkeszthető input
     const labelInp = document.createElement('input')
     labelInp.type = 'text'; labelInp.className = 'info-field-label-input'
@@ -880,6 +897,25 @@ function renderInfoCard() {
       }
     }
     div.appendChild(del)
+
+    // Fejléc-mező drop-zóna: ide ejtve átrendezi a mezőket (csak 'inf:' drag).
+    div.addEventListener('dragover', e => { e.preventDefault(); e.dataTransfer.dropEffect='move'; div.classList.add('drag-over') })
+    div.addEventListener('dragleave', e => { if (!div.contains(e.relatedTarget)) div.classList.remove('drag-over') })
+    div.addEventListener('drop', e => {
+      const data = e.dataTransfer.getData('text/plain')
+      div.classList.remove('drag-over')
+      if (!data || !data.startsWith('inf:')) return
+      e.preventDefault()
+      const fromId = data.slice(4)
+      if (fromId === field.id) return
+      const arr = sheetData.infoFields || (sheetData.infoFields = fields.slice())
+      const fi = arr.findIndex(f => f.id === fromId), tii = arr.findIndex(f => f.id === field.id)
+      if (fi < 0 || tii < 0) return
+      const [moved] = arr.splice(fi, 1)
+      arr.splice(tii, 0, moved)
+      renderInfoCard()
+    })
+
     grid.appendChild(div)
   })
 
@@ -919,6 +955,11 @@ function renderSection(sec, cont) {
   const wrap = document.createElement('div'); wrap.className='section-wrap'
   const ornSm = document.createElement('div'); ornSm.className='ornament-sm'
   const hdr = document.createElement('div'); hdr.className='section-header'
+  const sgrip = document.createElement('span')
+  sgrip.className='drag-grip'; sgrip.textContent='⠿'; sgrip.title='Húzd a szekció átrendezéséhez'
+  sgrip.setAttribute('draggable','true')
+  sgrip.addEventListener('dragstart', e => { e.dataTransfer.setData('text/plain','sec:'+sec.id); e.dataTransfer.effectAllowed='move'; wrap.classList.add('dragging') })
+  sgrip.addEventListener('dragend', () => wrap.classList.remove('dragging'))
   const ti = document.createElement('input')
   ti.type='text'; ti.className='section-title-input'; ti.value=sec.title
   ti.oninput = e => { sec.title=e.target.value }
@@ -934,7 +975,7 @@ function renderSection(sec, cont) {
     }
   }
   ctrls.append(addBoxBtn, delSecBtn)
-  hdr.append(ti, ctrls)
+  hdr.append(sgrip, ti, ctrls)
   const grid = document.createElement('div'); grid.className='boxes-grid'
   sec.boxes.forEach(box => renderBox(box, grid, sec))
   const addBoxPh = document.createElement('div'); addBoxPh.className='add-box-placeholder'
@@ -942,12 +983,36 @@ function renderSection(sec, cont) {
   addBoxPh.onclick = () => { sec.boxes.push({id:uid(),title:'Új blokk',rows:[]}); renderAll() }
   grid.appendChild(addBoxPh)
   wrap.append(ornSm, hdr, grid)
+
+  // Szekció drop-zóna: ide ejtve átrendezi a szekciókat (csak 'sec:' drag).
+  wrap.addEventListener('dragover', e => { e.preventDefault(); e.dataTransfer.dropEffect='move'; wrap.classList.add('drag-over') })
+  wrap.addEventListener('dragleave', e => { if (!wrap.contains(e.relatedTarget)) wrap.classList.remove('drag-over') })
+  wrap.addEventListener('drop', e => {
+    const data = e.dataTransfer.getData('text/plain')
+    wrap.classList.remove('drag-over')
+    if (!data || !data.startsWith('sec:')) return
+    e.preventDefault()
+    const fromId = data.slice(4)
+    if (fromId === sec.id) return
+    const arr = sheetData.sections
+    const fi = arr.findIndex(s => s.id === fromId), tii = arr.findIndex(s => s.id === sec.id)
+    if (fi < 0 || tii < 0) return
+    const [moved] = arr.splice(fi, 1)
+    arr.splice(tii, 0, moved)
+    renderAll()
+  })
+
   cont.appendChild(wrap)
 }
 
 function renderBox(box, grid, sec) {
   const div = document.createElement('div'); div.className='box-wrap'
   const bHdr = document.createElement('div'); bHdr.className='box-header'
+  const grip = document.createElement('span')
+  grip.className='drag-grip'; grip.textContent='⠿'; grip.title='Húzd a blokk átrendezéséhez'
+  grip.setAttribute('draggable','true')
+  grip.addEventListener('dragstart', e => { e.dataTransfer.setData('text/plain','box:'+box.id); e.dataTransfer.effectAllowed='move'; div.classList.add('dragging') })
+  grip.addEventListener('dragend', () => div.classList.remove('dragging'))
   const bTi = document.createElement('input')
   bTi.type='text'; bTi.className='box-title-input'; bTi.value=box.title
   bTi.oninput = e => { box.title=e.target.value }
@@ -958,7 +1023,25 @@ function renderBox(box, grid, sec) {
       sec.boxes=sec.boxes.filter(b=>b.id!==box.id); renderAll()
     }
   }
-  bHdr.append(bTi, delBoxBtn); div.appendChild(bHdr)
+  bHdr.append(grip, bTi, delBoxBtn); div.appendChild(bHdr)
+
+  // Blokk drop-zóna: az adott szekción belül átrendez (csak 'box:' drag).
+  div.addEventListener('dragover', e => { e.preventDefault(); e.dataTransfer.dropEffect='move'; div.classList.add('drag-over') })
+  div.addEventListener('dragleave', () => div.classList.remove('drag-over'))
+  div.addEventListener('drop', e => {
+    e.preventDefault(); div.classList.remove('drag-over')
+    const data = e.dataTransfer.getData('text/plain')
+    if (!data || !data.startsWith('box:')) return
+    const fromId = data.slice(4)
+    if (fromId === box.id) return
+    const arr = sec.boxes
+    const fi = arr.findIndex(b => b.id === fromId), tii = arr.findIndex(b => b.id === box.id)
+    if (fi < 0 || tii < 0) return
+    const [moved] = arr.splice(fi, 1)
+    arr.splice(tii, 0, moved)
+    renderAll()
+  })
+
   box.rows.forEach(row => div.appendChild(buildRow(row, box)))
   const addArea = document.createElement('div'); addArea.className='add-row-area'
   const picker = document.createElement('div'); picker.className='add-row-picker';

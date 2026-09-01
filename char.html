@@ -357,8 +357,13 @@ const sb = supabase.createClient(
     /* Drag-fogantyú a blokk-átrendezéshez */
     .drag-grip{cursor:grab;color:var(--muted);font-size:1rem;line-height:1;padding:0 .15rem;user-select:none;flex-shrink:0;}
     .drag-grip:active{cursor:grabbing;}
+    .drag-grip-sm{font-size:.8rem;opacity:.5;align-self:center;padding:0 .05rem 0 0;}
+    .info-field.dragging{opacity:.45;}
+    .info-field.drag-over{outline:2px dashed var(--accent);outline-offset:2px;border-radius:6px;}
     .box-wrap.dragging{opacity:.45;}
     .box-wrap.drag-over{outline:2px dashed var(--accent);outline-offset:2px;}
+    .section-wrap.dragging{opacity:.5;}
+    .section-wrap.drag-over{outline:2px dashed var(--accent);outline-offset:3px;border-radius:10px;}
 
     /* Add box / section */
     .add-box-placeholder{
@@ -985,6 +990,16 @@ function renderInfoFields() {
     const div = document.createElement('div');
     div.className = 'info-field';
     div.id = 'info-field-wrap-' + field.id;
+
+    // Drag-fogantyú: húzással átrendezhető a fejléc-mező (szerk. mód).
+    const fgrip = document.createElement('span');
+    fgrip.className = 'drag-grip drag-grip-sm edit-only';
+    fgrip.textContent = '⠿'; fgrip.title = 'Húzd a mező átrendezéséhez';
+    fgrip.setAttribute('draggable', 'true');
+    fgrip.addEventListener('dragstart', e => { e.dataTransfer.setData('text/plain','inf:'+field.id); e.dataTransfer.effectAllowed='move'; div.classList.add('dragging'); });
+    fgrip.addEventListener('dragend', () => div.classList.remove('dragging'));
+    div.appendChild(fgrip);
+
     const label = document.createElement('span');
     label.className = 'info-label';
     label.textContent = field.label + ':';
@@ -1034,6 +1049,24 @@ function renderInfoFields() {
       div.appendChild(inp);
     }
 
+    // Fejléc-mező drop-zóna: ide ejtve átrendezi a mezőket.
+    div.addEventListener('dragover', e => { e.preventDefault(); e.dataTransfer.dropEffect='move'; div.classList.add('drag-over'); });
+    div.addEventListener('dragleave', e => { if (!div.contains(e.relatedTarget)) div.classList.remove('drag-over'); });
+    div.addEventListener('drop', e => {
+      const data = e.dataTransfer.getData('text/plain');
+      div.classList.remove('drag-over');
+      if (!data || !data.startsWith('inf:')) return;
+      e.preventDefault();
+      const fromId = data.slice(4);
+      if (fromId === field.id) return;
+      const arr = sheetData.infoFields || (sheetData.infoFields = fields.slice());
+      const fi = arr.findIndex(f => f.id === fromId), tii = arr.findIndex(f => f.id === field.id);
+      if (fi < 0 || tii < 0) return;
+      const [moved] = arr.splice(fi, 1);
+      arr.splice(tii, 0, moved);
+      window.scheduleSave(); renderInfoFields();
+    });
+
     // Photo mode: hide if empty
     if (isPhoto && !(field.value && field.value !== '0' && field.value !== 0)) {
       div.style.display = 'none';
@@ -1077,6 +1110,13 @@ function renderSection(sec, cont) {
   const ornSm = document.createElement('div'); ornSm.className='ornament-sm';
 
   const hdr = document.createElement('div'); hdr.className='section-header';
+
+  const sgrip = document.createElement('span');
+  sgrip.className='drag-grip edit-only'; sgrip.textContent='⠿'; sgrip.title='Húzd a szekció átrendezéséhez';
+  sgrip.setAttribute('draggable','true');
+  sgrip.addEventListener('dragstart', e => { e.dataTransfer.setData('text/plain','sec:'+sec.id); e.dataTransfer.effectAllowed='move'; wrap.classList.add('dragging'); });
+  sgrip.addEventListener('dragend', () => wrap.classList.remove('dragging'));
+
   const ti = document.createElement('input');
   ti.type='text'; ti.className='section-title-input'; ti.value=sec.title;
   ti.oninput = e => { sec.title = e.target.value; window.scheduleSave(); };
@@ -1099,7 +1139,7 @@ function renderSection(sec, cont) {
     }
   };
   ctrls.append(addBoxBtn, delSecBtn);
-  hdr.append(ti, ctrls);
+  hdr.append(sgrip, ti, ctrls);
 
   const grid = document.createElement('div'); grid.className='boxes-grid';
   sec.boxes.forEach(box => renderBox(box, grid, sec));
@@ -1115,6 +1155,25 @@ function renderSection(sec, cont) {
   grid.appendChild(addBoxPh);
 
   wrap.append(ornSm, hdr, grid);
+
+  // Szekció drop-zóna: ide ejtve átrendezi a szekciókat.
+  wrap.addEventListener('dragover', e => { e.preventDefault(); e.dataTransfer.dropEffect='move'; wrap.classList.add('drag-over'); });
+  wrap.addEventListener('dragleave', e => { if (!wrap.contains(e.relatedTarget)) wrap.classList.remove('drag-over'); });
+  wrap.addEventListener('drop', e => {
+    const data = e.dataTransfer.getData('text/plain');
+    wrap.classList.remove('drag-over');
+    if (!data || !data.startsWith('sec:')) return;   // csak szekció-drag (a blokk-drop külön kezeli)
+    e.preventDefault();
+    const fromId = data.slice(4);
+    if (fromId === sec.id) return;
+    const arr = sheetData.sections;
+    const fi = arr.findIndex(s => s.id === fromId), tii = arr.findIndex(s => s.id === sec.id);
+    if (fi < 0 || tii < 0) return;
+    const [moved] = arr.splice(fi, 1);
+    arr.splice(tii, 0, moved);
+    window.scheduleSave(); renderAll();
+  });
+
   cont.appendChild(wrap);
 }
 
