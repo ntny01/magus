@@ -803,7 +803,58 @@ function renderAll() {
   cont.innerHTML = ''
   sheetData.sections.forEach(sec => renderSection(sec, cont))
   renderInfoCard()
+  if (typeof scheduleSnap === 'function') scheduleSnap()
 }
+
+/* ==============================
+   UNDO / REDO (CTRL+Z / CTRL+SHIFT+Z)
+   A teljes sheetData-t pillanatképezzük egy 600ms debounce mentén (a
+   gyors gépelés / kattintás-sorozat egy visszavonható lépéssé olvad össze).
+   Sablonváltáskor (newTemplate/loadTemplate) a history nullázódik.
+   ============================== */
+let _undoStack = [], _redoStack = [], _undoBase = null, _undoBusy = false, _snapTimer = null
+const _UNDO_MAX = 60
+function _cloneSheet() { return JSON.parse(JSON.stringify(sheetData)) }
+function resetUndo() { _undoStack = []; _redoStack = []; _undoBase = _cloneSheet() }
+function commitSnap() {
+  if (_undoBusy) return
+  if (_undoBase === null) { _undoBase = _cloneSheet(); return }
+  if (JSON.stringify(sheetData) === JSON.stringify(_undoBase)) return
+  _undoStack.push(_undoBase)
+  if (_undoStack.length > _UNDO_MAX) _undoStack.shift()
+  _redoStack = []
+  _undoBase = _cloneSheet()
+}
+function scheduleSnap() { if (_snapTimer) clearTimeout(_snapTimer); _snapTimer = setTimeout(commitSnap, 600) }
+function undoTemplate() {
+  if (_snapTimer) { clearTimeout(_snapTimer); _snapTimer = null; commitSnap() }
+  if (!_undoStack.length) { showToast('↩︎ Nincs mit visszavonni'); return }
+  _redoStack.push(_cloneSheet())
+  sheetData = _undoStack.pop()
+  _undoBase = _cloneSheet()
+  _undoBusy = true; renderEditor(); _undoBusy = false
+  showToast('↩︎ Visszavonva')
+}
+function redoTemplate() {
+  if (!_redoStack.length) { showToast('↪︎ Nincs mit újra elvégezni'); return }
+  _undoStack.push(_cloneSheet())
+  sheetData = _redoStack.pop()
+  _undoBase = _cloneSheet()
+  _undoBusy = true; renderEditor(); _undoBusy = false
+  showToast('↪︎ Újra')
+}
+// Delegált figyelő: minden szerkesztő-területi input/kattintás snapshotot ütemez.
+document.addEventListener('input', e => { if (e.target.closest && e.target.closest('#editorArea')) scheduleSnap() })
+document.addEventListener('click', e => { if (e.target.closest && e.target.closest('#editorArea')) scheduleSnap() })
+document.addEventListener('keydown', e => {
+  if (!(e.ctrlKey || e.metaKey)) return
+  // Modál (opció-szerkesztő) nyitva → hagyjuk a natív undo-t a modál mezőin.
+  const modal = document.getElementById('optModalOverlay')
+  if (modal && modal.style.display === 'flex') return
+  const k = e.key.toLowerCase()
+  if (k === 'z' && !e.shiftKey) { e.preventDefault(); undoTemplate() }
+  else if ((k === 'z' && e.shiftKey) || k === 'y') { e.preventDefault(); redoTemplate() }
+})
 
 function renderInfoCard() {
   const card = document.getElementById('info-card-container')
@@ -1327,6 +1378,7 @@ function newTemplate() {
     viewMode:0, _published:false
   }
   renderEditor()
+  resetUndo()
   document.querySelectorAll('.template-item').forEach(el => el.classList.remove('active'))
 }
 
@@ -1424,6 +1476,7 @@ async function loadTemplate(id) {
     el.classList.toggle('active', el.dataset.id === id)
   })
   renderEditor()
+  resetUndo()
 }
 
 async function loadTemplateList() {
