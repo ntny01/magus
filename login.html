@@ -283,6 +283,9 @@
       <label for="remember-me">Jegyezz meg ezen az eszközön</label>
     </div>
     <button class="btn-submit" onclick="doLogin()">Belépés</button>
+    <div style="text-align:center;margin-top:.9rem;">
+      <a href="#" onclick="showForgot(event)" style="color:var(--muted);font-size:.8rem;text-decoration:none;">Elfelejtett jelszó?</a>
+    </div>
   </div>
 
   <!-- REGISTER -->
@@ -301,6 +304,20 @@
       <input type="password" id="reg-pass" placeholder="min. 8 karakter" autocomplete="new-password">
     </div>
     <button class="btn-submit" onclick="doRegister()">Regisztráció küldése</button>
+  </div>
+
+  <!-- FORGOT PASSWORD -->
+  <div id="panel-forgot" class="form-panel">
+    <div id="forgot-msg" class="msg"></div>
+    <p style="color:var(--muted);font-size:.82rem;margin-bottom:1rem;line-height:1.5;">Add meg a fiókod email-címét, és küldünk egy jelszó-visszaállító linket.</p>
+    <div class="field">
+      <label>Email</label>
+      <input type="email" id="forgot-email" placeholder="karakter@magus.hu" autocomplete="email">
+    </div>
+    <button class="btn-submit" onclick="doForgot()">Visszaállító link küldése</button>
+    <div style="text-align:center;margin-top:.9rem;">
+      <a href="#" onclick="switchTab('login')" style="color:var(--muted);font-size:.8rem;text-decoration:none;">← Vissza a belépéshez</a>
+    </div>
   </div>
 
 </div>
@@ -337,12 +354,37 @@ const sb = supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY)
     })
     document.getElementById('panel-login').classList.toggle('active', tab === 'login')
     document.getElementById('panel-register').classList.toggle('active', tab === 'register')
+    document.getElementById('panel-forgot').classList.remove('active')
     clearMsgs()
+  }
+
+  function showForgot(e) {
+    if (e) e.preventDefault()
+    document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'))
+    document.getElementById('panel-login').classList.remove('active')
+    document.getElementById('panel-register').classList.remove('active')
+    document.getElementById('panel-forgot').classList.add('active')
+    clearMsgs()
+    const le = document.getElementById('login-email').value.trim()
+    if (le) document.getElementById('forgot-email').value = le
   }
 
   function clearMsgs() {
     document.getElementById('login-msg').className = 'msg'
     document.getElementById('reg-msg').className = 'msg'
+    const f = document.getElementById('forgot-msg'); if (f) f.className = 'msg'
+  }
+
+  // ─── ELFELEJTETT JELSZÓ ─────────────────────────────────────────
+  async function doForgot() {
+    const email = document.getElementById('forgot-email').value.trim()
+    if (!email) { showMsg('forgot-msg', 'error', 'Add meg az email-címed.'); return }
+    const btn = document.querySelector('#panel-forgot .btn-submit')
+    btn.disabled = true; btn.textContent = 'Küldés...'
+    const { error } = await sb.auth.resetPasswordForEmail(email, { redirectTo: location.origin + '/reset' })
+    btn.disabled = false; btn.textContent = 'Visszaállító link küldése'
+    if (error) { showMsg('forgot-msg', 'error', 'Hiba: ' + error.message); return }
+    showMsg('forgot-msg', 'success', 'Ha létezik ilyen fiók, elküldtük a visszaállító linket. Nézd meg a postaládád (és a spam mappát is)!')
   }
 
   function showMsg(id, type, text) {
@@ -426,6 +468,7 @@ const sb = supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY)
   // Enter gomb támogatás
   document.addEventListener('keydown', e => {
     if (e.key !== 'Enter') return
+    if (document.getElementById('panel-forgot').classList.contains('active')) { doForgot(); return }
     const loginActive = document.getElementById('panel-login').classList.contains('active')
     if (loginActive) doLogin()
     else doRegister()
