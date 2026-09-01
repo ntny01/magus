@@ -304,17 +304,32 @@ header{
 .row-textarea:focus{border-color:rgba(168,85,247,.3);}
 
 .header-row-wrap{
-  display:flex;align-items:center;gap:.5rem;
+  display:flex;align-items:center;gap:.5rem;flex-wrap:wrap;
   background:rgba(168,85,247,.05);border:1px solid rgba(168,85,247,.1);
   border-radius:.5rem;padding:.4rem .6rem;margin:.25rem 0;
 }
 .header-row-input{
   font-family:'Cinzel',serif;font-size:.85rem;font-weight:600;letter-spacing:.08em;
-  color:var(--purple);background:transparent;border:none;outline:none;flex:1;
+  color:var(--purple);background:transparent;border:none;outline:none;flex:1 1 100%;min-width:0;
 }
-.header-dots-wrap{display:flex;gap:2px;user-select:none;flex-shrink:0;}
+.header-dots-wrap{display:flex;flex-wrap:wrap;gap:2px;user-select:none;}
 .header-dot{cursor:pointer;color:var(--muted);font-size:1.1rem;transition:color .1s;line-height:1;}
 .header-dot.filled{color:var(--purple);}
+
+/* ===== FELSZERELÉS SOR (a char.html-ből átemelve, lila témára) ===== */
+.equip-list{display:flex;flex-direction:column;gap:.28rem;}
+.equip-item{display:flex;align-items:center;gap:.3rem;}
+.equip-name{flex:1;min-width:0;background:transparent;border:none;border-bottom:1px solid rgba(255,255,255,.12);color:var(--text);font-size:.82rem;padding:.15rem .2rem;outline:none;font-family:inherit;}
+.equip-name:focus{border-bottom-color:var(--purple);}
+.equip-qbtn{width:22px;height:22px;flex:0 0 auto;padding:0;line-height:1;border:1px solid rgba(255,255,255,.15);background:rgba(255,255,255,.03);color:var(--purple);border-radius:5px;cursor:pointer;font-size:.9rem;display:flex;align-items:center;justify-content:center;}
+.equip-qbtn:hover{border-color:var(--purple);background:rgba(168,85,247,.1);}
+.equip-qty{width:34px;flex:0 0 auto;text-align:center;background:rgba(0,0,0,.25);border:1px solid rgba(255,255,255,.12);border-radius:5px;color:var(--text);font-size:.8rem;padding:.15rem 0;outline:none;font-family:inherit;}
+.equip-qty:focus{border-color:var(--purple);}
+.equip-del{background:none;border:none;color:rgba(239,68,68,.4);cursor:pointer;font-size:.75rem;padding:0 .2rem;flex-shrink:0;line-height:1;transition:color .15s;}
+.equip-del:hover{color:var(--red);}
+.equip-add{align-self:flex-start;margin-top:.1rem;background:transparent;border:1px dashed rgba(168,85,247,.3);color:var(--purple);font-size:.72rem;padding:.25rem .6rem;border-radius:5px;cursor:pointer;font-family:inherit;}
+.equip-add:hover{border-color:var(--purple);background:rgba(168,85,247,.06);}
+.equip-empty{font-size:.74rem;color:rgba(255,255,255,.35);padding:.1rem 0;}
 
 .add-row-area{margin-top:.5rem;}
 .add-row-picker{display:flex;flex-wrap:wrap;gap:.3rem;}
@@ -947,18 +962,28 @@ function renderBox(box, grid, sec) {
   box.rows.forEach(row => div.appendChild(buildRow(row, box)))
   const addArea = document.createElement('div'); addArea.className='add-row-area'
   const picker = document.createElement('div'); picker.className='add-row-picker';
-  [{t:'dot',l:'● Pont-sor'},{t:'symbol',l:'★ Szimbólum'},{t:'text',l:'_ Szöveges'},{t:'select',l:'▾ Legördülő'},{t:'textarea',l:'≡ Szövegmező'},{t:'header',l:'◉ Fejléc'}]
+  [{t:'dot',l:'● Pont-sor'},{t:'symbol',l:'★ Szimbólum'},{t:'text',l:'_ Szöveges'},{t:'select',l:'▾ Legördülő'},{t:'textarea',l:'≡ Szövegmező'},{t:'header',l:'◉ Fejléc'},{t:'equipment',l:'🎒 Felszerelés'}]
     .forEach(({t,l}) => {
       const b = document.createElement('button'); b.className='add-row-btn'; b.innerText=l
       b.onclick = () => {
-        box.rows.push({id:uid(),type:t,label:t==='dot'?'Új képesség':t==='symbol'?'Szimbólum sor':t==='header'?'Fejléc':t==='select'?'Új legördülő':'',
+        const before = box.rows.length
+        box.rows.push({id:uid(),type:t,label:t==='dot'?'Új képesség':t==='symbol'?'Szimbólum sor':t==='header'?'Fejléc':t==='select'?'Új legördülő':t==='equipment'?'Felszerelés':'',
           value:(t==='dot'||t==='header'||t==='symbol')?0:'',max:t==='header'?10:5,
-          ...(t==='symbol'?{symbol:'★',color:'#d4af37'}:{})})
+          ...(t==='symbol'?{symbol:'★',color:'#d4af37'}:{}),
+          ...(t==='equipment'?{items:[]}:{})})
+        if (t==='equipment' && before === 0 && (!box.title || box.title === 'Új blokk')) box.title = 'Felszerelés'
         renderAll()
       }
       picker.appendChild(b)
     })
   addArea.appendChild(picker); div.appendChild(addArea); grid.appendChild(div)
+}
+
+// Felszerelés: 8 tárgy / oszlop; a blokk annyi rács-oszlopot fog át, max 4 (=32 tárgy).
+function equipCols(n) { return Math.max(1, Math.min(4, Math.ceil((n || 0) / 8))); }
+function boxEquipSpan(box) {
+  const eq = (box.rows || []).filter(r => r.type === 'equipment');
+  return eq.length ? Math.max(1, ...eq.map(r => equipCols((r.items || []).length))) : 1;
 }
 
 function buildRow(row, box) {
@@ -1008,6 +1033,49 @@ function buildRow(row, box) {
     renderDots(hdw, row, true)
     const del=makeDelRowBtn(row,box)
     hw.append(hi, hdw, del); wrap.appendChild(hw)
+  } else if (row.type==='equipment') {
+    wrap.style.cssText='flex-direction:column;align-items:stretch;display:flex;gap:.35rem;'
+    if (!Array.isArray(row.items)) row.items = []
+    // Ha az equipment az EGYETLEN sor a blokkban, a box címe a fejléc — nincs külön sor-fejléc.
+    if (box.rows.length > 1) {
+      const head = document.createElement('div'); head.style.cssText='display:flex;align-items:center;gap:.38rem;'
+      const li = makeRowLabelInput(row); li.placeholder='Felszerelés címe...'
+      head.append(li, makeDelRowBtn(row, box))
+      wrap.appendChild(head)
+    }
+    const list = document.createElement('div'); list.className='equip-list'
+    const applyLayout = () => {
+      const n = row.items.length, cols = equipCols(n)
+      if (cols > 1) {
+        const rpc = n > 32 ? Math.ceil(n / 4) : 8
+        list.style.cssText = 'display:grid;grid-auto-flow:column;align-content:start;grid-template-rows:repeat(' + rpc + ',auto);grid-template-columns:repeat(' + cols + ',minmax(0,1fr));gap:.28rem .9rem;'
+      } else { list.style.cssText = 'display:flex;flex-direction:column;gap:.28rem;' }
+      const bw = list.closest('.box-wrap')
+      if (bw) { const sp = boxEquipSpan(box); bw.style.gridColumn = sp > 1 ? 'span ' + sp : '' }
+    }
+    const renderItems = () => {
+      list.innerHTML=''
+      if (!row.items.length) { const e=document.createElement('div'); e.className='equip-empty'; e.textContent='Nincs tárgy.'; list.appendChild(e) }
+      row.items.forEach((it, idx) => {
+        const r=document.createElement('div'); r.className='equip-item'
+        const name=document.createElement('input'); name.type='text'; name.className='equip-name'; name.value=it.name||''; name.placeholder='Tárgy neve...'
+        name.oninput=e=>{it.name=e.target.value}
+        const minus=document.createElement('button'); minus.className='equip-qbtn'; minus.textContent='−'; minus.title='Kevesebb'
+        minus.onclick=()=>{it.qty=Math.max(0,(parseInt(it.qty)||0)-1); renderItems()}
+        const qty=document.createElement('input'); qty.type='text'; qty.className='equip-qty'; qty.value=(it.qty!=null?it.qty:1)
+        qty.oninput=e=>{it.qty=e.target.value.replace(/[^0-9]/g,'')}
+        const plus=document.createElement('button'); plus.className='equip-qbtn'; plus.textContent='+'; plus.title='Több'
+        plus.onclick=()=>{it.qty=(parseInt(it.qty)||0)+1; renderItems()}
+        const rm=document.createElement('button'); rm.className='equip-del'; rm.textContent='✕'; rm.title='Tárgy törlése'
+        rm.onclick=()=>{row.items.splice(idx,1); renderItems()}
+        r.append(name,minus,qty,plus,rm); list.appendChild(r)
+      })
+      applyLayout()
+    }
+    renderItems(); wrap.appendChild(list)
+    const add=document.createElement('button'); add.className='equip-add'; add.textContent='+ Tárgy'
+    add.onclick=()=>{row.items.push({name:'',qty:1}); renderItems()}
+    wrap.appendChild(add)
   } else if (row.type==='symbol') {
     wrap.className='row-wrap symbol-row'
     const li=makeRowLabelInput(row); li.style.flexShrink='0'

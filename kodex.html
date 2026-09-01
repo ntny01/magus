@@ -2104,9 +2104,11 @@ document.addEventListener('mousemove', e => {
   function updateVis(){
     ticking = false;
     var vh = window.innerHeight;
+    // Telefonon/tableten NINCS pecsét (ott a görgetés-matek miatt rögtön felugrott).
+    var wide = window.innerWidth > 1024;
     var scrollable = scroller.scrollHeight > vh + 60;
     var atBottom = (scroller.scrollTop + vh) >= (scroller.scrollHeight - 4);
-    seal.classList.toggle('show', scrollable && atBottom);
+    seal.classList.toggle('show', wide && scrollable && atBottom);
   }
   function onScroll(){ if (!ticking) { ticking = true; requestAnimationFrame(updateVis); } }
   window.addEventListener('scroll', onScroll, { passive: true });
