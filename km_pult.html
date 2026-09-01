@@ -1317,6 +1317,7 @@ const sb = supabase.createClient(
             let html = '<div class="lp-card"><div class="lp-head"><span class="lp-name">' + esc(r.name || 'Névtelen') + '</span>' + openBtns + '</div>';
             html += lpStatRow(i, 'char', 'hp', '❤️ Életerő', cd.hp, cd.maxHp, 'hp');
             html += lpStatRow(i, 'char', 'power', '✨ ' + powerLabel(cd), cd.power, cd.maxPower, 'pw');
+            if (cd.pszi && cd.pszi.on) html += lpStatRow(i, 'char', 'pszi', '🔮 Pszi', cd.pszi.value, cd.pszi.max, 'pw');
             const bank = sess.bank_money;
             if (bank && typeof bank === 'object') {
                 html += '<div class="lp-bank">🏦 Bank: <b>' + (bank.gold || 0) + ' A</b> · ' + (bank.silver || 0) + ' E · ' + (bank.copper || 0) + ' R</div>';
@@ -1340,12 +1341,21 @@ const sb = supabase.createClient(
             if (who === 'char') target = row.sess.char_data;
             else { const hi = parseInt(who.slice(1)); target = (row.sess.henchmen || [])[hi]; }
             if (!target) return;
-            const maxKey = stat === 'hp' ? 'maxHp' : 'maxPower';
-            const max = Number(target[maxKey]) || 0;
-            let v = (Number(target[stat]) || 0) + delta;
-            if (v < 0) v = 0;
-            if (max > 0 && v > max) v = max;
-            target[stat] = v;
+            if (stat === 'pszi') {
+                if (!target.pszi) return;
+                const pmax = Number(target.pszi.max) || 0;
+                let pv = (Number(target.pszi.value) || 0) + delta;
+                if (pv < 0) pv = 0;
+                if (pmax > 0 && pv > pmax) pv = pmax;
+                target.pszi.value = pv;
+            } else {
+                const maxKey = stat === 'hp' ? 'maxHp' : 'maxPower';
+                const max = Number(target[maxKey]) || 0;
+                let v = (Number(target[stat]) || 0) + delta;
+                if (v < 0) v = 0;
+                if (max > 0 && v > max) v = max;
+                target[stat] = v;
+            }
             // Csak az érintett kártyát rajzoljuk újra
             const host = document.getElementById('livePartyList');
             const cards = host.querySelectorAll('.lp-grid > .lp-card');

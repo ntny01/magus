@@ -1513,7 +1513,9 @@
                 } else {
                     powBar = bar(powLabel, cd.power, cd.maxPower, 'pow');
                 }
-                body = bar('❤️ Életerő', cd.hp, cd.maxHp, 'hp') + powBar + moneyLine(cd.money);
+                let psziBar = '';
+                if (cd.pszi && cd.pszi.on) psziBar = bar('🔮 Pszi', cd.pszi.value, cd.pszi.max, 'pow');
+                body = bar('❤️ Életerő', cd.hp, cd.maxHp, 'hp') + powBar + psziBar + moneyLine(cd.money);
             } else {
                 body = '<span class="soon">Nyisd meg a Karakter Segédben az életerő/kegypont követéséhez.</span>';
             }
