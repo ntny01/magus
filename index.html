@@ -515,6 +515,22 @@
         .post-meta { font-size: .72rem; color: var(--muted); margin-bottom: .7rem; }
         .post-block { margin-bottom: .7rem; }
         .post-block:last-child { margin-bottom: 0; }
+        /* Játékos-poszt: más háttér + szerző avatarja/neve */
+        .post-card { position: relative; }
+        .post-card--player { background: rgba(96,165,250,.06); border-color: rgba(96,165,250,.28); }
+        .post-author { display: flex; align-items: center; gap: .5rem; margin-bottom: .5rem; }
+        .post-author-name { font-size: .82rem; font-weight: 600; color: #93c5fd; }
+        .post-author-tag { font-size: .64rem; color: var(--muted); border: 1px solid var(--border); border-radius: .3rem; padding: .05rem .35rem; }
+        .post-del-btn { position: absolute; top: .6rem; right: .6rem; background: rgba(248,113,113,.1); border: 1px solid rgba(248,113,113,.25); color: #f87171; font-size: .72rem; padding: .2rem .45rem; border-radius: .4rem; cursor: pointer; }
+        /* Játékos-posztoló */
+        #playerComposer { margin-bottom: 1rem; }
+        .pc-toggle { background: rgba(212,175,55,.08); border: 1px solid var(--gold-soft); color: var(--gold); font-size: .82rem; padding: .5rem .9rem; border-radius: .5rem; cursor: pointer; font-family: 'Cinzel', serif; }
+        .pc-toggle:hover { background: rgba(212,175,55,.14); }
+        #pcForm { display: flex; flex-direction: column; gap: .5rem; margin-top: .6rem; background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: .8rem; }
+        #pcForm input, #pcForm textarea { background: rgba(0,0,0,.25); border: 1px solid var(--border); border-radius: .5rem; color: var(--text); font-family: inherit; font-size: .88rem; padding: .5rem .7rem; outline: none; resize: vertical; }
+        #pcForm input:focus, #pcForm textarea:focus { border-color: var(--gold-soft); }
+        .pc-actions { display: flex; gap: .5rem; }
+        .pc-cancel { background: transparent; border: 1px solid var(--border); color: var(--muted); font-size: .82rem; padding: .4rem .8rem; border-radius: .5rem; cursor: pointer; }
         .pb-heading {
             font-family: 'Cinzel', serif; color: var(--text); font-size: .92rem;
             margin: .3rem 0; border-left: 3px solid var(--gold-soft); padding-left: .55rem;
@@ -767,6 +783,17 @@
             </div>
 
             <div class="section-title" id="postFeedTitle" style="display:none;">📢 Kampánynapló</div>
+            <div id="playerComposer" style="display:none;">
+                <button class="pc-toggle" onclick="togglePlayerComposer()">✍️ Írj a naplóba</button>
+                <div id="pcForm" style="display:none;">
+                    <input type="text" id="pnTitle" placeholder="Cím (opcionális)">
+                    <textarea id="pnBody" placeholder="Írd meg a bejegyzésed…" rows="4"></textarea>
+                    <div class="pc-actions">
+                        <button class="eb-btn" onclick="submitPlayerNote()">Beküldés</button>
+                        <button class="pc-cancel" onclick="togglePlayerComposer(false)">Mégse</button>
+                    </div>
+                </div>
+            </div>
             <div id="postFeed"></div>
 
             <div class="section-title">🧭 Felfedezés</div>
@@ -1391,10 +1418,12 @@
             const titleEl = document.getElementById('postFeedTitle');
             const host = document.getElementById('postFeed');
             host.innerHTML = '';
+            const pc = document.getElementById('playerComposer');
+            if (pc) pc.style.display = FEED.campaignId ? '' : 'none';
             if (!FEED.campaignId) { titleEl.style.display = 'none'; return; }
             // Szerkesztő módban (admin) a vázlatok is látszanak; egyébként csak a published.
             let q = window._sb.from('campaign_posts')
-                .select('id, title, blocks, created_at, published')
+                .select('id, title, blocks, created_at, published, author_id, posted_by_player')
                 .eq('campaign_id', FEED.campaignId);
             if (!(_editMode && window._isAdmin)) q = q.eq('published', true);
             const { data, error } = await q.order('created_at', { ascending: false });
@@ -1404,21 +1433,80 @@
             if (!showSection) return;
             const campName = (FEED.campaigns.find(c => c.id === FEED.campaignId) || {}).name || '';
             titleEl.textContent = '📢 Kampánynapló' + (campName ? ' — ' + campName : '');
+            // Játékos-posztok szerzőinek neve + avatarja (user_avatars nézet, hibatűrő).
+            const authors = [...new Set(data.filter(p => p.posted_by_player).map(p => p.author_id).filter(Boolean))];
+            const avMap = {};
+            if (authors.length) {
+                try {
+                    const { data: avs } = await window._sb.from('user_avatars').select('id, display_name, avatar').in('id', authors);
+                    (avs || []).forEach(a => avMap[a.id] = a);
+                } catch (e) {}
+            }
             data.forEach(p => {
                 const blocks = Array.isArray(p.blocks) ? p.blocks : [];
+                const isPlayer = !!p.posted_by_player;
                 const card = document.createElement('div');
-                card.className = 'post-card';
+                card.className = 'post-card' + (isPlayer ? ' post-card--player' : '');
                 const draft = (_editMode && window._isAdmin && !p.published)
                     ? ' <span style="color:#f7b955;font-size:.72rem;">• vázlat</span>' : '';
                 const editBtn = (window._isAdmin)
                     ? '<button class="post-edit-btn" onclick="editPostOnFeed(\'' + p.id + '\')">✏️ Szerkeszt</button>' : '';
-                card.innerHTML = editBtn +
+                const delBtn = (isPlayer && p.author_id === window._userId)
+                    ? '<button class="post-del-btn" onclick="deletePlayerPost(\'' + p.id + '\')" title="Bejegyzés törlése">🗑️</button>' : '';
+                let authorHead = '';
+                if (isPlayer) {
+                    const nm = esc((avMap[p.author_id] || {}).display_name || 'Játékos');
+                    authorHead = '<div class="post-author"><span class="post-author-av" data-uid="' + esc(p.author_id || '') + '"></span>' +
+                        '<span class="post-author-name">' + nm + '</span><span class="post-author-tag">játékos</span></div>';
+                }
+                card.innerHTML = editBtn + delBtn + authorHead +
                     (p.title ? '<h3>' + esc(p.title) + draft + '</h3>' : (draft ? '<h3>' + draft + '</h3>' : '')) +
                     '<div class="post-meta">' + new Date(p.created_at).toLocaleDateString('hu-HU', { year: 'numeric', month: 'long', day: 'numeric' }) + '</div>' +
                     '<div class="post-grid">' + blocks.map(renderTile).join('') + '</div>';
                 host.appendChild(card);
             });
+            // Avatarok renderelése a játékos-posztok fejlécén.
+            host.querySelectorAll('.post-author-av').forEach(el => {
+                if (window.MagusAvatar) MagusAvatar.render(el, avMap[el.dataset.uid] || {}, { size: 30 });
+            });
         }
+
+        window.togglePlayerComposer = function(show) {
+            const form = document.getElementById('pcForm');
+            const open = (show === undefined) ? (form.style.display === 'none') : show;
+            form.style.display = open ? 'flex' : 'none';
+            if (open) document.getElementById('pnBody').focus();
+        };
+        window.submitPlayerNote = async function() {
+            if (!FEED.campaignId) { alert('Nincs kiválasztott kampány.'); return; }
+            const title = document.getElementById('pnTitle').value.trim();
+            const body = document.getElementById('pnBody').value.trim();
+            if (!title && !body) { alert('Írj valamit a bejegyzésbe.'); return; }
+            const blocks = [];
+            if (body) blocks.push({ kind: 'text', ...(title ? { title } : {}), body });
+            else blocks.push({ kind: 'heading', title });
+            const row = {
+                id: crypto.randomUUID(),
+                campaign_id: FEED.campaignId,
+                author_id: window._userId,
+                title: title || null,
+                blocks,
+                published: true,
+                posted_by_player: !window._isAdmin   // admin gyors-jegyzete KM-posztként megy
+            };
+            const { error } = await window._sb.from('campaign_posts').insert(row);
+            if (error) { alert('Nem sikerült beküldeni: ' + error.message); return; }
+            document.getElementById('pnTitle').value = '';
+            document.getElementById('pnBody').value = '';
+            togglePlayerComposer(false);
+            renderCampaignPosts();
+        };
+        window.deletePlayerPost = async function(id) {
+            if (!confirm('Törlöd ezt a bejegyzést?')) return;
+            const { error } = await window._sb.from('campaign_posts').delete().eq('id', id);
+            if (error) { alert('Törlés sikertelen: ' + error.message); return; }
+            renderCampaignPosts();
+        };
         window.editPostOnFeed = function(id) {
             const p = (FEED.posts || []).find(x => x.id === id);
             if (p) openComposer(p);

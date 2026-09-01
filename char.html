@@ -354,6 +354,12 @@ const sb = supabase.createClient(
     .equip-add:hover{border-color:var(--gold);background:rgba(212,175,55,.06);}
     .equip-empty{font-size:.74rem;color:rgba(255,255,255,.35);padding:.1rem 0;}
 
+    /* Drag-fogantyú a blokk-átrendezéshez */
+    .drag-grip{cursor:grab;color:var(--muted);font-size:1rem;line-height:1;padding:0 .15rem;user-select:none;flex-shrink:0;}
+    .drag-grip:active{cursor:grabbing;}
+    .box-wrap.dragging{opacity:.45;}
+    .box-wrap.drag-over{outline:2px dashed var(--accent);outline-offset:2px;}
+
     /* Add box / section */
     .add-box-placeholder{
       border:1px dashed rgba(255,255,255,.07);border-radius:14px;
@@ -1123,6 +1129,14 @@ function renderBox(box, grid, sec) {
 
   // Header
   const bHdr = document.createElement('div'); bHdr.className='box-header';
+
+  // Drag-fogantyú: húzással átrendezhető a blokk a szekción belül (szerk. mód).
+  const grip = document.createElement('span');
+  grip.className='drag-grip edit-only'; grip.textContent='⠿'; grip.title='Húzd a blokk átrendezéséhez';
+  grip.setAttribute('draggable','true');
+  grip.addEventListener('dragstart', e => { e.dataTransfer.setData('text/plain','box:'+box.id); e.dataTransfer.effectAllowed='move'; div.classList.add('dragging'); });
+  grip.addEventListener('dragend', () => div.classList.remove('dragging'));
+
   const bTi = document.createElement('input');
   bTi.type='text'; bTi.className='box-title-input'; bTi.value=box.title;
   bTi.oninput = e => { box.title = e.target.value; window.scheduleSave(); };
@@ -1136,8 +1150,25 @@ function renderBox(box, grid, sec) {
       renderAll();
     }
   };
-  bHdr.append(bTi, delBoxBtn);
+  bHdr.append(grip, bTi, delBoxBtn);
   div.appendChild(bHdr);
+
+  // A blokk drop-zóna: ide ejtve az adott szekción belül átrendez.
+  div.addEventListener('dragover', e => { e.preventDefault(); e.dataTransfer.dropEffect='move'; div.classList.add('drag-over'); });
+  div.addEventListener('dragleave', () => div.classList.remove('drag-over'));
+  div.addEventListener('drop', e => {
+    e.preventDefault(); div.classList.remove('drag-over');
+    const data = e.dataTransfer.getData('text/plain');
+    if (!data || !data.startsWith('box:')) return;
+    const fromId = data.slice(4);
+    if (fromId === box.id) return;
+    const arr = sec.boxes;
+    const fi = arr.findIndex(b => b.id === fromId), tii = arr.findIndex(b => b.id === box.id);
+    if (fi < 0 || tii < 0) return;
+    const [moved] = arr.splice(fi, 1);
+    arr.splice(tii, 0, moved);
+    window.scheduleSave(); renderAll();
+  });
 
   // Rows (Csak azokat jelenítjük meg, amik nem üresek fotó módban)
   box.rows.forEach(row => {
