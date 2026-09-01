@@ -1422,11 +1422,17 @@
             if (pc) pc.style.display = FEED.campaignId ? '' : 'none';
             if (!FEED.campaignId) { titleEl.style.display = 'none'; return; }
             // Szerkesztő módban (admin) a vázlatok is látszanak; egyébként csak a published.
-            let q = window._sb.from('campaign_posts')
-                .select('id, title, blocks, created_at, published, author_id, posted_by_player')
-                .eq('campaign_id', FEED.campaignId);
-            if (!(_editMode && window._isAdmin)) q = q.eq('published', true);
-            const { data, error } = await q.order('created_at', { ascending: false });
+            const runPosts = (cols) => {
+                let qq = window._sb.from('campaign_posts').select(cols).eq('campaign_id', FEED.campaignId);
+                if (!(_editMode && window._isAdmin)) qq = qq.eq('published', true);
+                return qq.order('created_at', { ascending: false });
+            };
+            let { data, error } = await runPosts('id, title, blocks, created_at, published, author_id, posted_by_player');
+            if (error && /posted_by_player/i.test((error.message || '') + (error.details || ''))) {
+                // A feed_player_posts.sql még nem futott le — töltsünk az oszlop nélkül, hogy a feed ne tűnjön el.
+                ({ data, error } = await runPosts('id, title, blocks, created_at, published, author_id'));
+                (data || []).forEach(p => { p.posted_by_player = false; });
+            }
             FEED.posts = data || [];
             const showSection = !error && data && data.length;
             titleEl.style.display = showSection ? '' : 'none';
@@ -1494,7 +1500,12 @@
                 published: true,
                 posted_by_player: !window._isAdmin   // admin gyors-jegyzete KM-posztként megy
             };
-            const { error } = await window._sb.from('campaign_posts').insert(row);
+            let { error } = await window._sb.from('campaign_posts').insert(row);
+            if (error && /posted_by_player/i.test((error.message || '') + (error.details || ''))) {
+                // Oszlop még nincs (feed_player_posts.sql nem futott) — admin-poszt megy nélküle is.
+                const { posted_by_player, ...rowNoFlag } = row;
+                ({ error } = await window._sb.from('campaign_posts').insert(rowNoFlag));
+            }
             if (error) { alert('Nem sikerült beküldeni: ' + error.message); return; }
             document.getElementById('pnTitle').value = '';
             document.getElementById('pnBody').value = '';
