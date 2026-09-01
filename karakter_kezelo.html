@@ -592,6 +592,27 @@ const sb = supabase.createClient(
                 </div>
             </div>
 
+            <!-- PSZI (opcionális második sáv) -->
+            <div class="stat-row" id="pszi-row" style="display:none;">
+                <div class="stat-info">
+                    <span class="stat-label">Pszi</span>
+                    <button class="btn btn-sm" style="padding:1px 6px;" onclick="removePszi()" title="Pszi sáv eltávolítása">✕</button>
+                </div>
+                <div class="stat-controls">
+                    <button class="ctrl-btn" onclick="adjustStat('char','pszi',-1)">-1</button>
+                    <div class="stat-value-display" id="char-pszi-val">0</div>
+                    <button class="ctrl-btn" onclick="adjustStat('char','pszi',1)">+1</button>
+                </div>
+                <div style="font-size:0.8rem; color:var(--text-muted); margin-top:4px; display:flex; gap:2px; align-items:center; justify-content:flex-end;">
+                    <button class="btn btn-sm" style="padding:1px 5px;" onclick="adjustStat('char','psziMax',-1)">-</button>
+                    <span id="char-pszi-max-val">Max: 5</span>
+                    <button class="btn btn-sm" style="padding:1px 5px;" onclick="adjustStat('char','psziMax',1)">+</button>
+                </div>
+            </div>
+            <div id="pszi-add-wrap" style="text-align:center; margin:2px 0 4px;">
+                <button class="btn btn-sm" style="padding:2px 12px; font-size:.75rem;" onclick="addPszi()">+ Pszi sáv hozzáadása</button>
+            </div>
+
             <div class="stat-row">
                 <div class="stat-info">
                     <span class="stat-label">SFÉ (Sebzésfelfogó)</span>
@@ -789,7 +810,8 @@ const sb = supabase.createClient(
         let allokepesseg = getStatValue(card, "Állóképesség");
         let newMaxHp = allokepesseg * 5;
         let akaratero = getStatValue(card, "Akaraterő");
-        let newMaxPower = akaratero > 0 ? akaratero : 5;
+        // Alap: Kegypont bázis = Akaraterő + Vallásismeret (típusváltáskor újraszámol).
+        let newMaxPower = computePowerMax('kegypont');
 
         if (freshLoad) {
             // Teljesen friss betöltés: mindent nulláz és max-ra állít
@@ -798,6 +820,7 @@ const sb = supabase.createClient(
             appState.charData.maxPower = newMaxPower;
             appState.charData.power = newMaxPower;
             appState.charData.powerType = "kegypont";
+            appState.charData.pszi = null;   // friss betöltéskor nincs Pszi sáv
             appState.charData.sfe = 0;
             appState.charData.weapons = [];
             appState.charData.money = { gold: 0, silver: 0, copper: 0 };
@@ -831,6 +854,18 @@ const sb = supabase.createClient(
         return found ? (found.value || 0) : 0;
     }
 
+    // Kegy/Mana/Pszi bázis (max) = Akaraterő + a megfelelő képzettség.
+    //   Kegy: Akaraterő + Vallásismeret · Mana: Akaraterő + Magasmágia · Pszi: Akaraterő + Önuralom
+    function skillLabelForPower(type) {
+        return type === 'mana' ? 'Magasmágia' : type === 'pszi' ? 'Önuralom' : 'Vallásismeret';
+    }
+    function computePowerMax(type) {
+        const card = appState.rawCharacterCard;
+        if (!card) return (type === 'pszi' ? (appState.charData.pszi && appState.charData.pszi.max) : appState.charData.maxPower) || 5;
+        const base = getStatValue(card, 'Akaraterő') + getStatValue(card, skillLabelForPower(type));
+        return base > 0 ? base : 5;
+    }
+
     function renderEverything() {
         document.getElementById('main-character-panel').classList.remove('hidden');
         document.getElementById('henchmen-wrapper').classList.remove('hidden');
@@ -852,8 +887,9 @@ const sb = supabase.createClient(
         document.getElementById('char-sfe-val').innerText = appState.charData.sfe;
         document.getElementById('char-power-val').innerText = appState.charData.power;
         document.getElementById('power-mode-select').value = appState.charData.powerType;
-        
+
         updatePowerUI('char');
+        renderPsziUI();
 
         document.getElementById('char-m-gold').value = appState.charData.money.gold;
         document.getElementById('char-m-silver').value = appState.charData.money.silver;
@@ -980,16 +1016,38 @@ const sb = supabase.createClient(
         }
     }
 
+    // ── PSZI opcionális sáv (fő karakter). Max = Akaraterő + Önuralom. ──
+    function addPszi() {
+        if (!appState.charData.pszi) appState.charData.pszi = { on: true, value: 0, max: computePowerMax('pszi') };
+        appState.charData.pszi.on = true;
+        if (appState.charData.pszi.max == null) appState.charData.pszi.max = computePowerMax('pszi');
+        appState.charData.pszi.value = appState.charData.pszi.max;   // új sáv -> tele
+        renderPsziUI();
+        scheduleSave();
+    }
+    function removePszi() {
+        if (appState.charData.pszi) appState.charData.pszi.on = false;
+        renderPsziUI();
+        scheduleSave();
+    }
+    function renderPsziUI() {
+        const on = !!(appState.charData.pszi && appState.charData.pszi.on);
+        const row = document.getElementById('pszi-row'); if (row) row.style.display = on ? '' : 'none';
+        const add = document.getElementById('pszi-add-wrap'); if (add) add.style.display = on ? 'none' : '';
+        if (on) {
+            document.getElementById('char-pszi-val').innerText = appState.charData.pszi.value;
+            document.getElementById('char-pszi-max-val').innerText = `Max: ${appState.charData.pszi.max}`;
+        }
+    }
+
     function togglePowerMode(target, henchId = null) {
         if (target === 'char') {
             appState.charData.powerType = document.getElementById('power-mode-select').value;
-            if (appState.charData.powerType === 'kegypont' && appState.charData.power > appState.charData.maxPower) {
-                appState.charData.power = appState.charData.maxPower;
-            }
-            if (appState.charData.powerType === 'mana') {
-                appState.charData.power = Math.floor(appState.charData.power);
-            }
+            // Új típus -> a bázisérték (Akaraterő + képzettség) újraszámolva, tele feltöltve.
+            appState.charData.maxPower = computePowerMax(appState.charData.powerType);
+            appState.charData.power = appState.charData.maxPower;
             document.getElementById('char-power-val').innerText = appState.charData.power;
+            { const d = document.getElementById('char-power-max-val'); if (d) d.innerText = `Max: ${appState.charData.maxPower}`; }
             updatePowerUI('char');
             scheduleSave();
         } else {
@@ -1039,6 +1097,15 @@ const sb = supabase.createClient(
                     document.getElementById('char-power-val').innerText = appState.charData.power;
                 }
                 const d = document.getElementById('char-power-max-val'); if (d) d.innerText = `Max: ${appState.charData.maxPower}`;
+            } else if (stat === 'pszi') {
+                const p = appState.charData.pszi; if (!p) return;
+                p.value = Math.min(p.max, Math.max(0, p.value + amount));
+                document.getElementById('char-pszi-val').innerText = p.value;
+            } else if (stat === 'psziMax') {
+                const p = appState.charData.pszi; if (!p) return;
+                p.max = Math.max(0, p.max + amount);
+                if (p.value > p.max) { p.value = p.max; document.getElementById('char-pszi-val').innerText = p.value; }
+                document.getElementById('char-pszi-max-val').innerText = `Max: ${p.max}`;
             }
         } else if (target === 'hench') {
             let hench = appState.henchmen.find(h => h.id === henchId);
