@@ -640,6 +640,14 @@ const sb = supabase.createClient(
                 </div>
             </div>
 
+            <!-- JEGYZETFÜZET (külön rétegen nyílik, a char_data-ban mentődik) -->
+            <div class="stat-row" id="char-notebook-row">
+                <div class="stat-info">
+                    <span class="stat-label">📓 Jegyzetfüzet</span>
+                    <button class="btn btn-sm btn-accent" onclick="openNotebook()">Megnyitás</button>
+                </div>
+            </div>
+
             <!-- MENTETT KÓDEX-OLDALAK (a betöltött karakterhez mentve a feed keresőjéből) -->
             <div class="stat-row" id="char-savedpages-row" style="display:none; flex-direction:column; align-items:stretch; gap:.5rem;">
                 <div class="stat-info">
@@ -731,6 +739,19 @@ const sb = supabase.createClient(
             <button class="btn btn-sm btn-danger" onclick="closeEquipmentModal()">Bezárás ✕</button>
         </div>
         <div id="equip-modal-body"></div>
+    </div>
+</div>
+
+<div id="notebook-modal" class="modal-overlay hidden" onclick="closeNotebook()">
+    <div class="modal-content" style="max-width:760px; width:94vw; height:82vh; display:flex; flex-direction:column;" onclick="event.stopPropagation()">
+        <div class="modal-header">
+            <div class="modal-title">📓 Jegyzetfüzet</div>
+            <button class="btn btn-sm btn-danger" onclick="closeNotebook()">Bezárás ✕</button>
+        </div>
+        <textarea id="notebook-text" placeholder="Ide írhatod a kaland jegyzeteidet, terveidet, NPC-ket, bármit…"
+            style="flex:1; width:100%; resize:none; background:rgba(0,0,0,.25); border:1px solid rgba(255,255,255,.12); border-radius:8px; color:var(--text); font-family:inherit; font-size:.92rem; line-height:1.55; padding:.8rem; outline:none; margin-top:.6rem;"
+            oninput="onNotebookInput()"></textarea>
+        <div style="font-size:.72rem; color:var(--text-muted); margin-top:.4rem; text-align:right;">✍️ Automatikusan mentődik</div>
     </div>
 </div>
 
@@ -1038,6 +1059,21 @@ const sb = supabase.createClient(
             document.getElementById('char-pszi-val').innerText = appState.charData.pszi.value;
             document.getElementById('char-pszi-max-val').innerText = `Max: ${appState.charData.pszi.max}`;
         }
+    }
+
+    // ── JEGYZETFÜZET (a char_data.notebook-ban mentődik) ──
+    function openNotebook() {
+        const ta = document.getElementById('notebook-text');
+        ta.value = (appState.charData.notebook || '');
+        document.getElementById('notebook-modal').classList.remove('hidden');
+        ta.focus();
+    }
+    function closeNotebook() {
+        document.getElementById('notebook-modal').classList.add('hidden');
+    }
+    function onNotebookInput() {
+        appState.charData.notebook = document.getElementById('notebook-text').value;
+        scheduleSave();
     }
 
     function togglePowerMode(target, henchId = null) {
