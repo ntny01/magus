@@ -407,6 +407,28 @@ const sb = supabase.createClient(
             letter-spacing:.05em; margin:.35rem .25rem .1rem; }
         .note-body-html { font-size:.82rem; color:var(--text-muted); line-height:1.5; }
         .note-body-html a.rt-maplink { color:#c084fc!important; }
+
+        /* Teljes képernyős jegyzet-szerkesztő overlay */
+        .note-fs-overlay { position:fixed; inset:0; z-index:4000; background:rgba(8,8,12,.72);
+            -webkit-backdrop-filter:blur(3px); backdrop-filter:blur(3px);
+            display:flex; align-items:stretch; justify-content:center; padding:3vh 2vw; }
+        .note-fs-panel { display:flex; flex-direction:column; width:100%; max-width:900px;
+            background:var(--bg-card,#14141c); border:1px solid var(--border-color); border-radius:.9rem;
+            box-shadow:0 24px 70px rgba(0,0,0,.6); overflow:hidden; }
+        .note-fs-head { display:flex; gap:.55rem; align-items:center; padding:.75rem 1rem;
+            border-bottom:1px solid var(--border-color); background:rgba(0,0,0,.15); }
+        .note-fs-close { margin-left:.25rem; }
+        .note-fs-panel .rt-toolbar { border-radius:0; border-left:none; border-right:none;
+            position:sticky; top:0; }
+        .note-fs-body { flex:1 1 auto; max-height:none; min-height:0; border-radius:0;
+            border-left:none; border-right:none; }
+        .note-fs-foot { display:flex; gap:.5rem; align-items:center; padding:.7rem 1rem;
+            border-top:1px solid var(--border-color); background:rgba(0,0,0,.15); }
+        @media (max-width: 640px) {
+            .note-fs-overlay { padding:0; }
+            .note-fs-panel { border-radius:0; max-width:none; }
+            .note-fs-head { flex-wrap:wrap; }
+        }
         
         .gen-section {
             display: flex; flex-direction: column; gap: 0.5rem; margin-bottom: 0.75rem;
@@ -923,23 +945,27 @@ const sb = supabase.createClient(
                     A jegyzetek/helyszínek/NPC-k a KM privát referenciái. Amit a játékosok lássanak, azt az indexen (Szerkesztő mód) posztolod — ott felfedheted őket.
                 </div>
 
-                <!-- JEGYZET szerkesztő -->
-                <div id="noteEditor" class="journal-editor" style="display:none; background:rgba(0,0,0,.2); border:1px solid var(--border-color); border-radius:.6rem; padding:.7rem; margin-bottom:.75rem;">
-                    <div style="display:flex; gap:.5rem; margin-bottom:.5rem;">
-                        <select id="noteKind" class="km-input" style="flex:0 0 auto; width:auto; font-size:.8rem;">
-                            <option value="jegyzet">📝 Jegyzet</option>
-                            <option value="teendo">✅ Teendő</option>
-                            <option value="info">ℹ️ Infó</option>
-                            <option value="poszt">📣 Poszt-vázlat</option>
-                        </select>
-                        <input type="text" id="noteTitle" class="km-input" placeholder="Cím (opcionális)" style="flex:1;">
-                    </div>
-                    <div id="noteBodyTools" class="rt-toolbar"></div>
-                    <div id="noteBody" class="rt-edit" contenteditable="true" data-placeholder="Jegyzet szövege…" style="min-height:90px; margin-bottom:.5rem;"></div>
-                    <div style="display:flex; gap:.5rem; justify-content:flex-end; align-items:center;">
-                        <span id="noteEditorHint" style="flex:1; font-size:.72rem; color:var(--text-muted);"></span>
-                        <button class="km-btn" onclick="cancelNote()" style="font-size:.78rem;">Mégse</button>
-                        <button class="km-btn" onclick="saveNote()" style="border-color:rgba(16,185,129,.4);color:var(--accent-hover)!important;font-size:.78rem;">💾 Mentés</button>
+                <!-- JEGYZET szerkesztő — teljes képernyős inline overlay -->
+                <div id="noteEditor" class="journal-editor note-fs-overlay" style="display:none;" onclick="if(event.target===this) cancelNote()">
+                    <div class="note-fs-panel" onclick="event.stopPropagation()">
+                        <div class="note-fs-head">
+                            <span style="font-family:'Cinzel',serif;color:var(--gold);font-size:1rem;white-space:nowrap;">📝 Jegyzet</span>
+                            <select id="noteKind" class="km-input" style="flex:0 0 auto; width:auto; font-size:.85rem;">
+                                <option value="jegyzet">📝 Jegyzet</option>
+                                <option value="teendo">✅ Teendő</option>
+                                <option value="info">ℹ️ Infó</option>
+                                <option value="poszt">📣 Poszt-vázlat</option>
+                            </select>
+                            <input type="text" id="noteTitle" class="km-input" placeholder="Cím (opcionális)" style="flex:1;">
+                            <button class="km-btn note-fs-close" onclick="cancelNote()" title="Bezárás (Esc)" style="font-size:1rem;padding:.25rem .6rem;">✕</button>
+                        </div>
+                        <div id="noteBodyTools" class="rt-toolbar"></div>
+                        <div id="noteBody" class="rt-edit note-fs-body" contenteditable="true" data-placeholder="Jegyzet szövege…"></div>
+                        <div class="note-fs-foot">
+                            <span id="noteEditorHint" style="flex:1; font-size:.75rem; color:var(--text-muted);"></span>
+                            <button class="km-btn" onclick="cancelNote()" style="font-size:.82rem;">Mégse</button>
+                            <button class="km-btn" onclick="saveNote()" style="border-color:rgba(16,185,129,.4);color:var(--accent-hover)!important;font-size:.82rem;padding:.35rem 1rem;">💾 Mentés</button>
+                        </div>
                     </div>
                 </div>
 
@@ -1972,13 +1998,20 @@ const sb = supabase.createClient(
             RT.set('noteBody', RT.fromStored(note ? (note.body || '') : ''));
             document.getElementById('noteEditorHint').textContent =
                 currentCampaignId ? '' : '⚠ Nincs kiválasztott kampány — kampányfüggetlen jegyzet lesz.';
-            document.getElementById('noteEditor').style.display = 'block';
+            document.getElementById('noteEditor').style.display = 'flex';
             document.getElementById('noteTitle').focus();
         };
         window.cancelNote = function() {
             editingNoteId = null;
             document.getElementById('noteEditor').style.display = 'none';
         };
+        // Esc = jegyzet-overlay bezárása (ha nyitva).
+        document.addEventListener('keydown', e => {
+            if (e.key === 'Escape') {
+                const ov = document.getElementById('noteEditor');
+                if (ov && ov.style.display === 'flex') { e.preventDefault(); cancelNote(); }
+            }
+        });
         window.saveNote = async function() {
             const sb = window._sb; if (!sb) { alert('Nincs Supabase kapcsolat.'); return; }
             const body = RT.getClean('noteBody');
