@@ -375,6 +375,38 @@ const sb = supabase.createClient(
 
         .km-textarea { width: 100%; flex: 1; resize: none; padding: 0.75rem; min-height: 160px; }
         .data-actions { display: flex; gap: 0.5rem; }
+
+        /* ── Rich text editor (inline) ───────────────────────────── */
+        .rt-toolbar { display:flex; flex-wrap:wrap; gap:.25rem; align-items:center;
+            background:rgba(0,0,0,.28); border:1px solid var(--border-color); border-bottom:none;
+            border-radius:.5rem .5rem 0 0; padding:.3rem .4rem; }
+        .rt-btn { background:rgba(255,255,255,.04); border:1px solid var(--border-color); color:var(--text-main);
+            border-radius:.35rem; padding:.18rem .5rem; font-size:.82rem; cursor:pointer; line-height:1.1; }
+        .rt-btn:hover { border-color:rgba(168,85,247,.45); color:#c084fc; }
+        .rt-sep { width:1px; align-self:stretch; background:var(--border-color); margin:0 .15rem; }
+        .rt-select { background:rgba(0,0,0,.3); border:1px solid var(--border-color); color:var(--text-main);
+            border-radius:.35rem; font-size:.75rem; padding:.15rem .3rem; cursor:pointer; }
+        .rt-color { width:1.7rem; height:1.6rem; padding:0; border:1px solid var(--border-color);
+            border-radius:.35rem; background:none; cursor:pointer; }
+        .rt-edit { min-height:110px; max-height:340px; overflow:auto; padding:.6rem .7rem;
+            border:1px solid var(--border-color); border-radius:0 0 .5rem .5rem; background:rgba(0,0,0,.2);
+            color:var(--text-main); font-size:.85rem; line-height:1.5; outline:none; }
+        .rt-edit:empty:before { content:attr(data-placeholder); color:var(--text-muted); opacity:.65; }
+        .rt-edit:focus { border-color:rgba(168,85,247,.45); }
+        .rt-maplink { display:inline-flex; align-items:center; gap:.25rem; background:rgba(168,85,247,.14);
+            border:1px solid rgba(168,85,247,.35); color:#c084fc!important; border-radius:.4rem;
+            padding:.02rem .4rem; font-size:.82rem; text-decoration:none; white-space:nowrap; }
+        .rt-maplink:hover { background:rgba(168,85,247,.25); }
+        .rt-linkpop { position:absolute; z-index:9999; background:var(--bg-card,#14141c);
+            border:1px solid var(--border-color); border-radius:.55rem; padding:.4rem; min-width:230px;
+            max-height:300px; overflow:auto; box-shadow:0 12px 34px rgba(0,0,0,.55); }
+        .rt-lp-item { display:flex; align-items:center; gap:.4rem; padding:.3rem .45rem; border-radius:.35rem;
+            cursor:pointer; font-size:.82rem; color:var(--text-main); }
+        .rt-lp-item:hover { background:rgba(168,85,247,.16); }
+        .rt-lp-head { font-size:.68rem; color:var(--text-muted); text-transform:uppercase;
+            letter-spacing:.05em; margin:.35rem .25rem .1rem; }
+        .note-body-html { font-size:.82rem; color:var(--text-muted); line-height:1.5; }
+        .note-body-html a.rt-maplink { color:#c084fc!important; }
         
         .gen-section {
             display: flex; flex-direction: column; gap: 0.5rem; margin-bottom: 0.75rem;
@@ -902,7 +934,8 @@ const sb = supabase.createClient(
                         </select>
                         <input type="text" id="noteTitle" class="km-input" placeholder="Cím (opcionális)" style="flex:1;">
                     </div>
-                    <textarea id="noteBody" class="km-textarea" placeholder="Jegyzet szövege…" style="min-height:90px; margin-bottom:.5rem;"></textarea>
+                    <div id="noteBodyTools" class="rt-toolbar"></div>
+                    <div id="noteBody" class="rt-edit" contenteditable="true" data-placeholder="Jegyzet szövege…" style="min-height:90px; margin-bottom:.5rem;"></div>
                     <div style="display:flex; gap:.5rem; justify-content:flex-end; align-items:center;">
                         <span id="noteEditorHint" style="flex:1; font-size:.72rem; color:var(--text-muted);"></span>
                         <button class="km-btn" onclick="cancelNote()" style="font-size:.78rem;">Mégse</button>
@@ -1787,11 +1820,156 @@ const sb = supabase.createClient(
         let notesCache = [];
         let editingNoteId = null;
 
+        /* =========================================================
+           RICH TEXT EDITOR (inline, vanilla execCommand) + sanitizer
+           Formázás: félkövér/dőlt/aláhúzott, betűtípus, méret, szín,
+           formázás-törlés, + battlemap/Ynev térkép hivatkozás beszúrás
+           előnézet-chippel. Tárolás: sanitizált HTML a body-ban.
+           ========================================================= */
+        const RT = (() => {
+            const FONTS = [['','Alap betű'],["'Cinzel',serif",'Cinzel (dísz)'],['Georgia,serif','Georgia'],["'Courier New',monospace",'Írógép']];
+            const SIZES = [['','Méret'],['1','Apró'],['3','Normál'],['5','Nagy'],['7','Óriás']];
+            let mapCache = null;
+            async function getMaps() {
+                if (mapCache) return mapCache;
+                const sb = window._sb; const out = { battlemaps:[], ynev:[] };
+                if (sb) {
+                    try { const { data } = await sb.from('battlemaps').select('id,name').order('updated_at',{ascending:false}); out.battlemaps = data || []; } catch(e){}
+                    try { const { data } = await sb.from('campaign_maps').select('id,name').order('updated_at',{ascending:false}); out.ynev = data || []; } catch(e){}
+                }
+                mapCache = out; return out;
+            }
+            window.rtInvalidateMaps = () => { mapCache = null; };
+            const exec = (cmd, val) => document.execCommand(cmd, false, val);
+
+            // ── selection mentés/visszaállítás (a popover kattintás ne veszítse el a caretet) ──
+            let savedRange = null;
+            function saveSel(editor) { const s = window.getSelection(); if (s && s.rangeCount && editor.contains(s.anchorNode)) savedRange = s.getRangeAt(0).cloneRange(); }
+            function restoreSel() { if (savedRange) { const s = window.getSelection(); s.removeAllRanges(); s.addRange(savedRange); } }
+
+            function init(editorId, toolbarId) {
+                const editor = document.getElementById(editorId);
+                const tb = document.getElementById(toolbarId);
+                if (!editor || !tb || tb.dataset.rtInit) return;
+                tb.dataset.rtInit = '1';
+                const mk = (html, title, on) => { const b = document.createElement('button'); b.type='button'; b.className='rt-btn'; b.innerHTML=html; b.title=title; b.addEventListener('mousedown', e=>e.preventDefault()); b.addEventListener('click', on); return b; };
+                const sep = () => { const s=document.createElement('span'); s.className='rt-sep'; return s; };
+                editor.addEventListener('mouseup', ()=>saveSel(editor));
+                editor.addEventListener('keyup', ()=>saveSel(editor));
+                tb.appendChild(mk('<b>B</b>','Félkövér (Ctrl+B)', ()=>{ editor.focus(); exec('bold'); }));
+                tb.appendChild(mk('<i>I</i>','Dőlt (Ctrl+I)', ()=>{ editor.focus(); exec('italic'); }));
+                tb.appendChild(mk('<u>U</u>','Aláhúzott (Ctrl+U)', ()=>{ editor.focus(); exec('underline'); }));
+                tb.appendChild(sep());
+                const fam = document.createElement('select'); fam.className='rt-select'; fam.title='Betűtípus';
+                FONTS.forEach(([v,l])=>{ const o=document.createElement('option'); o.value=v; o.textContent=l; fam.appendChild(o); });
+                fam.addEventListener('change', ()=>{ editor.focus(); restoreSel(); if (fam.value) exec('fontName', fam.value); fam.selectedIndex=0; });
+                tb.appendChild(fam);
+                const sz = document.createElement('select'); sz.className='rt-select'; sz.title='Betűméret';
+                SIZES.forEach(([v,l])=>{ const o=document.createElement('option'); o.value=v; o.textContent=l; sz.appendChild(o); });
+                sz.addEventListener('change', ()=>{ editor.focus(); restoreSel(); if (sz.value) exec('fontSize', sz.value); sz.selectedIndex=0; });
+                tb.appendChild(sz);
+                const col = document.createElement('input'); col.type='color'; col.className='rt-color'; col.title='Betűszín'; col.value='#c084fc';
+                col.addEventListener('mousedown', e=>e.stopPropagation());
+                col.addEventListener('input', ()=>{ editor.focus(); restoreSel(); exec('foreColor', col.value); });
+                tb.appendChild(col);
+                tb.appendChild(sep());
+                tb.appendChild(mk('⨯','Formázás törlése', ()=>{ editor.focus(); exec('removeFormat'); }));
+                tb.appendChild(mk('🔗 Térkép','Battlemap / Ynev térkép hivatkozás beszúrása', (e)=>openLinkPop(e.currentTarget, editor)));
+            }
+
+            async function openLinkPop(anchorBtn, editor) {
+                editor.focus(); saveSel(editor); closeLinkPop();
+                const pop = document.createElement('div'); pop.className='rt-linkpop'; pop.id='rtLinkPop';
+                pop.innerHTML = '<div class="rt-lp-head">Betöltés…</div>';
+                document.body.appendChild(pop);
+                const r = anchorBtn.getBoundingClientRect();
+                pop.style.top = (r.bottom + window.scrollY + 4) + 'px';
+                pop.style.left = Math.min(r.left + window.scrollX, window.innerWidth - 250) + 'px';
+                const maps = await getMaps();
+                const item = (type, m) => '<div class="rt-lp-item" data-mid="'+esc(m.id)+'" data-mtype="'+type+'" data-mname="'+esc(m.name)+'">'+(type==='battlemap'?'⚔️':'🗺️')+' '+esc(m.name)+'</div>';
+                let html = '<div class="rt-lp-head">⚔️ Battlemapek</div>';
+                html += maps.battlemaps.length ? maps.battlemaps.map(b=>item('battlemap',b)).join('') : '<div class="rt-lp-item" style="opacity:.55;cursor:default;">nincs</div>';
+                html += '<div class="rt-lp-head">🗺️ Ynev térképek</div>';
+                html += maps.ynev.length ? maps.ynev.map(m=>item('ynev',m)).join('') : '<div class="rt-lp-item" style="opacity:.55;cursor:default;">nincs</div>';
+                pop.innerHTML = html;
+                pop.querySelectorAll('[data-mid]').forEach(el => el.addEventListener('click', () => { insertMapLink(editor, el.dataset.mtype, el.dataset.mid, el.dataset.mname); closeLinkPop(); }));
+            }
+            function closeLinkPop() { const p = document.getElementById('rtLinkPop'); if (p) p.remove(); }
+            document.addEventListener('click', e => { if (!e.target.closest('#rtLinkPop') && !e.target.closest('.rt-btn')) closeLinkPop(); });
+
+            function insertMapLink(editor, type, id, name) {
+                editor.focus(); restoreSel();
+                const href = type==='battlemap' ? ('battlemap?open='+encodeURIComponent(id)) : ('ynev_terkep?map='+encodeURIComponent(id));
+                const icon = type==='battlemap' ? '⚔️' : '🗺️';
+                const a = '<a href="'+href+'" class="rt-maplink" data-map-type="'+type+'" data-map-id="'+esc(id)+'" contenteditable="false" target="_blank" rel="noopener">'+icon+' '+esc(name)+'</a>&nbsp;';
+                exec('insertHTML', a);
+            }
+
+            // ── Sanitizer: engedélyezett elemek/attribútumok klónozása ──
+            const ALLOW = { B:[], I:[], U:[], STRONG:[], EM:[], BR:[], P:['style'], DIV:['style'], SPAN:['style'], FONT:['color','size','face'], A:['href','target','rel','data-map-type','data-map-id'] };
+            const STYLE_OK = /^(color|font-weight|font-style|text-decoration|font-family|font-size)$/;
+            function cleanStyle(v) {
+                return String(v).split(';').map(s=>s.trim()).filter(Boolean).filter(d => STYLE_OK.test((d.split(':')[0]||'').trim().toLowerCase())).join('; ');
+            }
+            function safeHref(h) {
+                h = String(h || '');
+                if (/^(battlemap|ynev_terkep)\?/.test(h)) return h;
+                if (/^https?:\/\//i.test(h)) return h;
+                return '#';
+            }
+            function sanitizeInto(node, out, doc) {
+                node.childNodes.forEach(ch => {
+                    if (ch.nodeType === 3) { out.appendChild(doc.createTextNode(ch.nodeValue)); return; }
+                    if (ch.nodeType !== 1) return;
+                    const tag = ch.tagName;
+                    if (tag === 'SCRIPT' || tag === 'STYLE') return;
+                    if (ALLOW[tag]) {
+                        const el = doc.createElement(tag.toLowerCase());
+                        ALLOW[tag].forEach(attr => {
+                            if (!ch.hasAttribute(attr)) return;
+                            let v = ch.getAttribute(attr);
+                            if (attr === 'style') { v = cleanStyle(v); if (!v) return; }
+                            if (attr === 'href') { v = safeHref(v); }
+                            el.setAttribute(attr, v);
+                        });
+                        if (tag === 'A') { el.className='rt-maplink'; el.setAttribute('rel','noopener'); el.setAttribute('target','_blank'); }
+                        sanitizeInto(ch, el, doc);
+                        out.appendChild(el);
+                    } else {
+                        sanitizeInto(ch, out, doc); // nem engedett tag: csak a tartalmat hozzuk át
+                    }
+                });
+            }
+            function sanitize(html) {
+                const doc = new DOMParser().parseFromString('<body><div id="_r">'+String(html||'')+'</div></body>', 'text/html');
+                const src = doc.getElementById('_r'); const out = doc.createElement('div');
+                if (src) sanitizeInto(src, out, doc);
+                return out.innerHTML;
+            }
+            const looksHtml = b => /<(b|i|u|strong|em|br|div|p|span|font|a)\b/i.test(String(b||''));
+            const plainToHtml = t => esc(String(t||'')).replace(/\n/g, '<br>');
+
+            return {
+                init,
+                // Szerkesztőbe töltés: régi sima szöveg → escapelt+sortöréses HTML; új HTML → sanitizált.
+                fromStored: b => looksHtml(b) ? sanitize(b) : plainToHtml(b),
+                // Mentéshez: sanitizált HTML, vagy null ha üres.
+                getClean: id => { const el = document.getElementById(id); if (!el) return null; const txt = (el.innerText||'').replace(/ /g,' ').trim(); if (!txt && !el.querySelector('a.rt-maplink')) return null; return sanitize(el.innerHTML); },
+                set: (id, html) => { const el = document.getElementById(id); if (el) el.innerHTML = html || ''; },
+                get: id => { const el = document.getElementById(id); return el ? el.innerHTML : ''; },
+                // Listás megjelenítéshez: régi sima szöveg → escapelt; új → sanitizált.
+                renderStored: b => looksHtml(b) ? sanitize(b) : plainToHtml(b),
+                sanitize
+            };
+        })();
+
         window.openNoteEditor = function(note) {
             editingNoteId = note ? note.id : null;
             document.getElementById('noteKind').value  = note ? note.kind : 'jegyzet';
             document.getElementById('noteTitle').value = note ? (note.title || '') : '';
-            document.getElementById('noteBody').value  = note ? (note.body || '') : '';
+            RT.init('noteBody', 'noteBodyTools');
+            // Régi (sima szöveges) jegyzet visszafelé kompatibilis: ha nincs HTML tag, escapelve + sortörésekkel töltjük.
+            RT.set('noteBody', RT.fromStored(note ? (note.body || '') : ''));
             document.getElementById('noteEditorHint').textContent =
                 currentCampaignId ? '' : '⚠ Nincs kiválasztott kampány — kampányfüggetlen jegyzet lesz.';
             document.getElementById('noteEditor').style.display = 'block';
@@ -1803,7 +1981,7 @@ const sb = supabase.createClient(
         };
         window.saveNote = async function() {
             const sb = window._sb; if (!sb) { alert('Nincs Supabase kapcsolat.'); return; }
-            const body = document.getElementById('noteBody').value.trim();
+            const body = RT.getClean('noteBody');
             const title = document.getElementById('noteTitle').value.trim();
             if (!body && !title) { alert('Írj be legalább egy címet vagy szöveget.'); return; }
             const row = {
@@ -1873,7 +2051,7 @@ const sb = supabase.createClient(
                         '<button class="km-btn" style="padding:.15rem .4rem;font-size:.7rem;" title="Szerkesztés" onclick="editNote(\'' + n.id + '\')">✏️</button>' +
                         '<button class="km-btn" style="padding:.15rem .4rem;font-size:.7rem;border-color:rgba(239,68,68,.3);color:#f87171!important;" title="Törlés" onclick="deleteNote(\'' + n.id + '\')">🗑️</button>' +
                     '</div>' +
-                    (n.body ? '<div style="font-size:.82rem;color:var(--text-muted);white-space:pre-wrap;line-height:1.45;">' + esc(n.body) + '</div>' : '');
+                    (n.body ? '<div class="note-body-html">' + RT.renderStored(n.body) + '</div>' : '');
                 listEl.appendChild(card);
             });
         }
