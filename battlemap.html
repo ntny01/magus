@@ -190,6 +190,41 @@
   }
   .empty{color:var(--muted);font-size:.78rem;text-align:center;padding:22px 0}
 
+  /* ===== TABLET MÓD (szerkesztés) — behúzható Tár, touch-barát vezérlők =====
+     Érintős / keskeny kijelzőn magától bekapcsol. A Tár (library) fiókká válik,
+     hogy a vászon teljes szélességű legyen; a felső sáv görgethető. */
+  #libToggle{ display:none; position:absolute; left:12px; bottom:12px; z-index:17;
+    align-items:center; gap:7px; background:rgba(11,17,32,.94); color:var(--gold2);
+    border:1px solid var(--gold); border-radius:12px; padding:11px 15px; font-size:.9rem;
+    cursor:pointer; box-shadow:0 6px 20px rgba(0,0,0,.45); }
+  #libBackdrop{ display:none; }
+  .lib-close{ display:none; }
+  @media (max-width: 860px), (pointer: coarse) {
+    .topbar{ gap:7px; padding:0 10px; overflow-x:auto; overflow-y:hidden; }
+    .topbar::-webkit-scrollbar{ height:0 }
+    .topbar .tbtn{ flex:0 0 auto; padding:10px 12px; font-size:.82rem }
+    .brand{ font-size:.9rem; flex:0 0 auto }
+    .brand .pip, .admin-badge{ display:none }
+    .count{ display:none }
+    .toolrail{ width:66px; gap:8px }
+    .tool{ width:50px; height:50px; font-size:22px }
+    .tool .lbl{ display:none }
+    .workspace{ position:relative }
+    .library{
+      position:absolute; top:0; bottom:0; left:66px; width:min(340px,84vw);
+      transform:translateX(-118%); transition:transform .22s ease; z-index:16;
+      box-shadow:14px 0 44px rgba(0,0,0,.55);
+    }
+    .library.open{ transform:translateX(0) }
+    .lib-close{ display:inline-flex; align-items:center; justify-content:center; }
+    #libBackdrop{ display:block; position:absolute; inset:0 0 0 66px; z-index:15;
+      background:rgba(2,6,18,.5); opacity:0; pointer-events:none; transition:opacity .22s; }
+    #libBackdrop.on{ opacity:1; pointer-events:auto; }
+    #libToggle{ display:inline-flex }
+    .swgrid{ grid-template-columns:repeat(4,1fr) }
+    .hint{ display:none }
+  }
+
   /* ===== VETÍTŐ MÓD (cast) — csak a battlemap + vissza gomb ===== */
   #castBack{ display:none; position:fixed; top:14px; left:14px; z-index:100000;
     align-items:center; gap:6px; background:rgba(10,14,26,.82); color:#e5e7eb;
@@ -230,8 +265,10 @@
 <div class="workspace">
   <div class="toolrail" id="toolrail"></div>
   <div class="library" id="library"></div>
+  <div id="libBackdrop" onclick="toggleLibrary(false)"></div>
   <div class="stage-wrap">
     <div id="canvas"></div>
+    <button id="libToggle" onclick="toggleLibrary()" title="Eszköztár / elemek">📚 Tár</button>
     <div class="hint" id="hint"></div>
     <div class="zoombar">
       <button class="tbtn" onclick="zoomBy(1.2)">＋</button>
@@ -632,6 +669,11 @@ function setMode(m){
   stage.container().style.cursor = sel ? 'default' : ((m==='stamp'||painty) ? 'none' : 'crosshair');
   document.getElementById('hint').textContent = HINTS[m];
   renderLibrary();
+  // Tableten: a Tárat használó eszköznél nyíljon a fiók; 'select'-nél záruljon.
+  if (typeof isCoarse === 'function' && isCoarse()) {
+    if (typeof _LIB_TOOLS !== 'undefined' && _LIB_TOOLS.has(m)) window.toggleLibrary(true);
+    else if (m === 'select') window.toggleLibrary(false);
+  }
 }
 
 /* =========================================================
@@ -1523,6 +1565,23 @@ window.addEventListener('message', e=>{
   const d = e.data || {};
   if (d.type === 'CAST_MODE') applyCast(!!d.on);
 });
+
+/* =========================================================
+   TABLET: behúzható Tár (library) fiók
+========================================================= */
+function isCoarse(){ return window.matchMedia('(max-width: 860px), (pointer: coarse)').matches; }
+window.toggleLibrary = function(force){
+  const lib = document.getElementById('library');
+  const bd  = document.getElementById('libBackdrop');
+  if (!lib) return;
+  const open = (force === undefined) ? !lib.classList.contains('open') : !!force;
+  lib.classList.toggle('open', open);
+  if (bd) bd.classList.toggle('on', open);
+  const t = document.getElementById('libToggle');
+  if (t) t.textContent = open ? '✕ Bezár' : '📚 Tár';
+};
+// A Tárat használó eszközök kiválasztásakor (tableten) nyíljon ki a fiók.
+const _LIB_TOOLS = new Set(['stamp','brush','terrain-rect','terrain-poly','wall']);
 
 /* =========================================================
    INDÍTÁS
