@@ -189,6 +189,22 @@
     background:rgba(74,222,128,.16);color:var(--green);border:1px solid rgba(74,222,128,.35);vertical-align:middle;
   }
   .empty{color:var(--muted);font-size:.78rem;text-align:center;padding:22px 0}
+
+  /* ===== VETÍTŐ MÓD (cast) — csak a battlemap + vissza gomb ===== */
+  #castBack{ display:none; position:fixed; top:14px; left:14px; z-index:100000;
+    align-items:center; gap:6px; background:rgba(10,14,26,.82); color:#e5e7eb;
+    border:1px solid var(--border2); border-radius:10px; padding:9px 14px;
+    font-size:.9rem; cursor:pointer; backdrop-filter:blur(6px); -webkit-backdrop-filter:blur(6px); }
+  #castBack:hover{ background:rgba(20,26,43,.95); }
+  body.cast-mode .topbar,
+  body.cast-mode .toolrail,
+  body.cast-mode .library,
+  body.cast-mode .zoombar,
+  body.cast-mode .hint{ display:none !important; }
+  body.cast-mode #castBack{ display:inline-flex; }
+  body.cast-mode{ overflow:hidden; overscroll-behavior:none; }
+  body.cast-mode .stage-wrap{ touch-action:none; }
+  body.cast-mode #canvas{ touch-action:none; }
 </style>
 </head>
 <body>
@@ -222,6 +238,8 @@
     <div class="toast" id="toast"></div>
   </div>
 </div>
+
+<button id="castBack" onclick="exitCast()" title="Kilépés a vetítésből">↩ Vissza</button>
 
 <!-- Mentés névvel -->
 <div class="mask" id="saveMask">
@@ -1441,6 +1459,33 @@ function wireBrush(lib){ const bs=lib.querySelector('#brushSize'); if(!bs)return
 function updateCount(){ document.getElementById('countTag').textContent = mainLayer.getChildren(x=>x.getAttr('kind')).length+' elem'; }
 let _tt=null; function toast(m){ const el=document.getElementById('toast'); el.textContent=m; el.style.opacity='1'; clearTimeout(_tt); _tt=setTimeout(()=>el.style.opacity='0',1600); }
 window.addEventListener('resize', ()=>{ stage.width(wrap.clientWidth); stage.height(wrap.clientHeight); stage.batchDraw(); });
+
+/* =========================================================
+   VETÍTŐ MÓD (cast) — a KM Pult iframe-je üzenetben kapcsolja.
+   Csak a battlemap + egy Vissza gomb; a háttér nem húzható (nincs
+   panolás/zoom), hogy vetítéskor ne mozduljon el a kép.
+========================================================= */
+let _castOn=false;
+function fitStageToWrap(){ stage.width(wrap.clientWidth); stage.height(wrap.clientHeight); stage.batchDraw(); }
+function applyCast(on){
+  _castOn = !!on;
+  document.body.classList.toggle('cast-mode', _castOn);
+  // Vetítéskor a stage NEM húzható/zoom-olható; egyébként a mód szerint.
+  stage.draggable(!_castOn && mode==='select');
+  stage.listening(!_castOn);              // vetítéskor minden interakció tiltva
+  // A panelek eltűntével/visszatértével a vászon mérete változik.
+  requestAnimationFrame(fitStageToWrap);
+  setTimeout(fitStageToWrap, 120);
+}
+window.exitCast = function(){
+  applyCast(false);
+  try { if (window.parent && window.parent !== window) window.parent.postMessage({ type:'CAST_EXIT' }, '*'); } catch(e){}
+  try { if (document.fullscreenElement && document.exitFullscreen) document.exitFullscreen(); } catch(e){}
+};
+window.addEventListener('message', e=>{
+  const d = e.data || {};
+  if (d.type === 'CAST_MODE') applyCast(!!d.on);
+});
 
 /* =========================================================
    INDÍTÁS

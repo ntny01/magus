@@ -1211,22 +1211,37 @@ const sb = supabase.createClient(
             el.textContent = msg; el.style.opacity = '1';
             clearTimeout(el._t); el._t = setTimeout(() => el.style.opacity = '0', 4200);
         }
+        function tellBattlemapCast(on) {
+            const f = document.getElementById('battlemapFrame');
+            try { if (f && f.contentWindow) f.contentWindow.postMessage({ type: 'CAST_MODE', on: on }, '*'); } catch (e) {}
+        }
         window.castFullscreen = function() {
-            const el = document.getElementById('battlemapFrame') || document.getElementById('battlemapView');
+            const el = document.getElementById('battlemapFrame');
             if (!el) return;
-            const req = el.requestFullscreen || el.webkitRequestFullscreen || el.webkitEnterFullscreen || el.msRequestFullscreen;
+            const req = el.requestFullscreen || el.webkitRequestFullscreen || el.msRequestFullscreen;
+            // Vetítő mód: a battlemap elrejti a saját menüit, marad a vászon + Vissza gomb.
+            tellBattlemapCast(true);
             if (req) {
                 try {
                     const r = req.call(el);
                     if (r && r.catch) r.catch(() => {});
-                    showCastHint('📺 Teljes képernyő — most tükrözd a TV-re (Android „Képernyő átküldése" / iPad AirPlay a gyorsbeállításokból). Kilépés: Esc.');
-                } catch (e) {
-                    showCastHint('A teljes képernyő nem indult el — tükrözd a teljes képernyőt a TV-re a gyorsbeállításokból.');
-                }
-            } else {
-                showCastHint('Ez a böngésző nem támogatja a teljes képernyőt — tükrözd a teljes képernyőt a TV-re a gyorsbeállításokból.');
+                } catch (e) {}
             }
+            showCastHint('📺 Teljes képernyő — most tükrözd a TV-re (Android „Képernyő átküldése" / iPad AirPlay a gyorsbeállításokból).');
         };
+        // A battlemap „Vissza" gombja (iframe) → kilépés a teljes képernyőből.
+        window.addEventListener('message', function(e) {
+            if (e.data && e.data.type === 'CAST_EXIT') {
+                try { if (document.fullscreenElement && document.exitFullscreen) document.exitFullscreen(); } catch (err) {}
+            }
+        });
+        // Ha a teljes képernyőből Esc-cel lépünk ki, a battlemap menüi jöjjenek vissza.
+        function _onFsChange() {
+            const fsEl = document.fullscreenElement || document.webkitFullscreenElement;
+            if (!fsEl) tellBattlemapCast(false);
+        }
+        document.addEventListener('fullscreenchange', _onFsChange);
+        document.addEventListener('webkitfullscreenchange', _onFsChange);
 
         /* =========================================================
            KAMPÁNY-KONTÉNER
