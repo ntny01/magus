@@ -203,8 +203,10 @@
   body.cast-mode .hint{ display:none !important; }
   body.cast-mode #castBack{ display:inline-flex; }
   body.cast-mode{ overflow:hidden; overscroll-behavior:none; }
-  body.cast-mode .stage-wrap{ touch-action:none; }
-  body.cast-mode #canvas{ touch-action:none; }
+  /* A böngésző ne kapja el a touch-gesztusokat (pan/pinch) — a valódi Konva
+     canvasra KELL tenni, mert a touch-action nem öröklődik. Globálisan, hogy
+     tableten szerkesztéskor és vetítéskor is a Konva kapja meg az érintést. */
+  .stage-wrap, #canvas, #canvas .konvajs-content, #canvas canvas { touch-action: none; }
 </style>
 </head>
 <body>
