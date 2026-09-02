@@ -1061,9 +1061,7 @@ const sb = supabase.createClient(
         <div class="embedded-view-header">
             <h4 id="battlemapViewTitle">⚔️ Battlemap</h4>
             <div style="display:flex; gap:.4rem; flex-wrap:wrap; align-items:center;">
-                <button id="castNowBtn" class="km-btn" style="border-color:rgba(168,85,247,.5);color:#c084fc!important;" onclick="castToScreen()" title="A megnyitott battlemap pillanatképét kivetíti a kampány vetítőjére">📺 Vetítés</button>
-                <button class="km-btn" style="border-color:rgba(168,85,247,.3);color:#c084fc!important;" onclick="openProjector()" title="A vetítő oldal megnyitása új fülön (húzd a kivetítőre / 2. képernyőre)">🖥️ Vetítő</button>
-                <button class="km-btn" style="border-color:rgba(239,68,68,.35);color:#f87171!important;" onclick="stopCast()" title="Vetítés leállítása">⏹</button>
+                <button class="km-btn" style="border-color:rgba(168,85,247,.5);color:#c084fc!important;" onclick="castFullscreen()" title="Teljes képernyő — utána tükrözd a TV-re (Chromecast / AirPlay a táblagép gyorsbeállításaiból)">📺 Kivetítés</button>
                 <button class="km-btn" style="border-color: #ef4444; color: #f87171 !important;" onclick="closeBattlemapView()">↩ Vissza a pulthoz</button>
             </div>
         </div>
@@ -1181,8 +1179,6 @@ const sb = supabase.createClient(
         };
 
         window.openBattlemapView = function(mapId, title) {
-            window._openBattlemap = mapId ? { id: mapId, title: title || 'Battlemap' } : null;
-            updateCastButtons();
             document.getElementById('battlemapViewTitle').textContent = '⚔️ ' + (title || 'Battlemap');
             // A kampány-kontextust átadjuk: az ott mentett térkép automatikusan
             // a most aktív kampányhoz kapcsolódik.
@@ -1199,52 +1195,37 @@ const sb = supabase.createClient(
             document.getElementById('battlemapFrame').src = 'about:blank';
         };
 
-        /* ===== CAST TO SCREEN — élő vetítés a kampány vetítő-oldalára =====
-           A KM egy battlemap PILLANATKÉPÉT vetíti a vetito.html-re, ami
-           realtime követi a cast_state táblát. Séma: security/cast_state.sql */
-        function updateCastButtons() {
-            const on = !!(window._openBattlemap && window._openBattlemap.id);
-            const b = document.getElementById('castNowBtn');
-            if (b) { b.disabled = !on; b.style.opacity = on ? '1' : '.5'; b.style.cursor = on ? 'pointer' : 'not-allowed'; }
-        }
-        function showCastStatus(msg) {
-            let el = document.getElementById('castToast');
+        /* ===== KIVETÍTÉS — teljes képernyő (TV-tükrözéshez) =====
+           A megnyitott battlemap teljes képernyőre megy (a KM Pult kerete
+           eltűnik, csak a battlemap látszik az assetekkel, élőben). Ezt a
+           táblagép/böngésző beépített képernyőtükrözésével (Chromecast /
+           AirPlay) dobod a TV-re — a weboldal magától nem tud hálózati
+           TV-t választani, de a tükrözés pont ezt csinálja. */
+        function showCastHint(msg) {
+            let el = document.getElementById('castHint');
             if (!el) {
-                el = document.createElement('div'); el.id = 'castToast';
-                el.style.cssText = 'position:fixed;bottom:1.4rem;left:50%;transform:translateX(-50%);z-index:9999;background:rgba(20,10,30,.94);border:1px solid rgba(168,85,247,.45);color:#c084fc;font-size:.85rem;padding:.5rem 1.1rem;border-radius:.6rem;opacity:0;transition:opacity .25s;pointer-events:none;';
+                el = document.createElement('div'); el.id = 'castHint';
+                el.style.cssText = 'position:fixed;bottom:1.4rem;left:50%;transform:translateX(-50%);z-index:99999;max-width:90vw;text-align:center;background:rgba(20,10,30,.95);border:1px solid rgba(168,85,247,.45);color:#c084fc;font-size:.85rem;padding:.55rem 1.1rem;border-radius:.6rem;opacity:0;transition:opacity .25s;pointer-events:none;';
                 document.body.appendChild(el);
             }
             el.textContent = msg; el.style.opacity = '1';
-            clearTimeout(el._t); el._t = setTimeout(() => el.style.opacity = '0', 2200);
+            clearTimeout(el._t); el._t = setTimeout(() => el.style.opacity = '0', 4200);
         }
-        window.castToScreen = async function() {
-            if (!currentCampaignId) { alert('Előbb válassz kampányt (bal oldalt), hogy a vetítő tudja, melyik kampányé.'); return; }
-            const b = window._openBattlemap;
-            if (!b || !b.id) { alert('Nyiss meg egy MENTETT battlemapet a vetítéshez (a galériából).'); return; }
-            let img = null, name = b.title;
-            try {
-                const { data } = await window._sb.from('battlemaps').select('snapshot_url, terrain_url, thumb, name').eq('id', b.id).single();
-                if (data) { img = data.snapshot_url || data.terrain_url || data.thumb || null; name = b.title || data.name; }
-            } catch (e) {}
-            if (!img && !confirm('Ehhez a battlemaphez nincs elmentett pillanatkép — a vetítőn csak egy „nincs kép" üzenet látszik majd (mentsd el a battlemapet a pillanatképhez). Mégis elindítod a vetítést?')) return;
-            const { error } = await window._sb.from('cast_state').upsert({
-                campaign_id: currentCampaignId, kind: 'battlemap', ref_id: b.id,
-                title: name || 'Battlemap', image_url: img, updated_at: new Date().toISOString()
-            });
-            if (error) { alert('Vetítés sikertelen: ' + error.message + '\n(Lehet, hogy a security/cast_state.sql még nem futott le a Supabase-ben.)'); return; }
-            showCastStatus('📺 Vetítve: ' + (name || 'Battlemap'));
-        };
-        window.stopCast = async function() {
-            if (!currentCampaignId) { alert('Nincs kiválasztott kampány.'); return; }
-            const { error } = await window._sb.from('cast_state').upsert({
-                campaign_id: currentCampaignId, kind: null, ref_id: null, title: null, image_url: null, updated_at: new Date().toISOString()
-            });
-            if (error) { alert('Nem sikerült leállítani: ' + error.message); return; }
-            showCastStatus('⏹ Vetítés leállítva');
-        };
-        window.openProjector = function() {
-            if (!currentCampaignId) { alert('Előbb válassz kampányt, hogy a vetítő a helyes kampányt kövesse.'); return; }
-            window.open('vetito?campaign=' + encodeURIComponent(currentCampaignId), '_blank', 'noopener');
+        window.castFullscreen = function() {
+            const el = document.getElementById('battlemapFrame') || document.getElementById('battlemapView');
+            if (!el) return;
+            const req = el.requestFullscreen || el.webkitRequestFullscreen || el.webkitEnterFullscreen || el.msRequestFullscreen;
+            if (req) {
+                try {
+                    const r = req.call(el);
+                    if (r && r.catch) r.catch(() => {});
+                    showCastHint('📺 Teljes képernyő — most tükrözd a TV-re (Android „Képernyő átküldése" / iPad AirPlay a gyorsbeállításokból). Kilépés: Esc.');
+                } catch (e) {
+                    showCastHint('A teljes képernyő nem indult el — tükrözd a teljes képernyőt a TV-re a gyorsbeállításokból.');
+                }
+            } else {
+                showCastHint('Ez a böngésző nem támogatja a teljes képernyőt — tükrözd a teljes képernyőt a TV-re a gyorsbeállításokból.');
+            }
         };
 
         /* =========================================================
