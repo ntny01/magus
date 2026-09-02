@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="hu" class="dark">
+<head>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script>
+  (async () => {
+    const sb = supabase.createClient(
+      'https://nmzdvsnoomusukkczuav.supabase.co',
+      'sb_publishable_JCRzD-ElN1os72wkfX_DKw_PoOTgnYR'
+    );
+    window._sb = sb;
+    const { data: { session } } = await sb.auth.getSession();
+    if (!session) { window.location.href = 'login'; return; }
+    const { data: profile } = await sb.from('user_profiles')
+      .select('status, display_name').eq('id', session.user.id).single();
+    if (!profile || profile.status !== 'active') {
+      await sb.auth.signOut(); window.location.href = 'login'; return;
+    }
+    window._userId = session.user.id;
+    window.dispatchEvent(new Event('magus-auth-ready'));
+  })();
+</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Vetítő</title>
+<meta name="theme-color" content="#000000">
+<link rel="icon" href="assets/logo/compass-logo.png">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Inter:wght@400;500&display=swap');
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { height: 100%; background: #000; overflow: hidden; }
+  body { font-family: 'Inter', system-ui, sans-serif; color: #e2e8f0; }
+  #stage { position: fixed; inset: 0; display: flex; align-items: center; justify-content: center; background: #000; }
+  #castImg { max-width: 100%; max-height: 100%; object-fit: contain; display: none; }
+  /* Cím-sáv (halványan, felül) */
+  #bar { position: fixed; top: 0; left: 0; right: 0; z-index: 5; display: flex; align-items: center;
+    gap: .6rem; padding: .6rem 1rem; background: linear-gradient(to bottom, rgba(0,0,0,.65), rgba(0,0,0,0));
+    opacity: 0; transition: opacity .4s; pointer-events: none; }
+  #bar.show { opacity: 1; }
+  #castTitle { font-family: 'Cinzel', serif; font-size: 1.05rem; letter-spacing: .06em; color: #d4af37; }
+  #liveDot { width: .55rem; height: .55rem; border-radius: 50%; background: #ef4444; box-shadow: 0 0 8px #ef4444;
+    animation: pulse 1.6s infinite; }
+  @keyframes pulse { 0%,100% { opacity: 1; } 50% { opacity: .35; } }
+  #liveTxt { font-size: .7rem; letter-spacing: .12em; text-transform: uppercase; color: #f87171; }
+  /* Várakozó képernyő */
+  #waiting { position: fixed; inset: 0; display: flex; flex-direction: column; align-items: center;
+    justify-content: center; gap: 1rem; text-align: center; padding: 2rem; }
+  #waiting .w-logo { font-size: 3.2rem; opacity: .5; }
+  #waiting .w-title { font-family: 'Cinzel', serif; font-size: 1.5rem; letter-spacing: .1em; color: #d4af37; }
+  #waiting .w-sub { font-size: .95rem; color: #64748b; max-width: 30rem; line-height: 1.55; }
+  #err { position: fixed; bottom: 1rem; left: 50%; transform: translateX(-50%); font-size: .8rem;
+    color: #f87171; background: rgba(30,10,10,.7); border: 1px solid rgba(239,68,68,.3);
+    padding: .4rem .9rem; border-radius: .5rem; display: none; }
+</style>
+</head>
+<body>
+  <div id="stage"><img id="castImg" alt="Kivetített térkép"></div>
+  <div id="bar"><span id="liveDot"></span><span id="liveTxt">élő</span><span id="castTitle"></span></div>
+  <div id="waiting">
+    <div class="w-logo">📺</div>
+    <div class="w-title" id="wTitle">Vetítő készen áll</div>
+    <div class="w-sub" id="wSub">A kalandmester által kivetített térkép itt jelenik meg, élőben. Amíg nincs mit mutatni, ez a képernyő látszik.</div>
+  </div>
+  <div id="err"></div>
+
+  <script>
+    let CAMP = null;
+    const qp = new URLSearchParams(location.search);
+    CAMP = qp.get('campaign');
+
+    const elImg = document.getElementById('castImg');
+    const elWait = document.getElementById('waiting');
+    const elBar = document.getElementById('bar');
+    const elTitle = document.getElementById('castTitle');
+    const elErr = document.getElementById('err');
+    const wTitle = document.getElementById('wTitle');
+    const wSub = document.getElementById('wSub');
+
+    let barTimer = null;
+    function flashBar() {
+      elBar.classList.add('show');
+      clearTimeout(barTimer);
+      barTimer = setTimeout(() => elBar.classList.remove('show'), 4000);
+    }
+    function showErr(msg) { elErr.textContent = msg; elErr.style.display = msg ? 'block' : 'none'; }
+
+    let lastKey = '';
+    function apply(row) {
+      const kind = row && row.kind;
+      const url = row && row.image_url;
+      const key = (kind || '') + '|' + (row && row.ref_id || '') + '|' + (url || '');
+      if (key === lastKey) return;       // nincs változás
+      lastKey = key;
+      if (kind && url) {
+        elImg.onload = () => { elImg.style.display = 'block'; elWait.style.display = 'none'; };
+        elImg.onerror = () => { elImg.style.display = 'none'; elWait.style.display = 'flex';
+          wTitle.textContent = 'A kép nem tölthető be'; wSub.textContent = 'A kivetített térkép pillanatképe nem érhető el.'; };
+        elImg.src = url;
+        elTitle.textContent = row.title || '';
+        flashBar();
+      } else if (kind && !url) {
+        // Van kivetítés, de nincs elmentett pillanatkép.
+        elImg.style.display = 'none'; elImg.src = '';
+        elWait.style.display = 'flex';
+        wTitle.textContent = row.title || 'Nincs pillanatkép';
+        wSub.textContent = 'Ehhez az elemhez nincs elmentett pillanatkép. A kalandmester nyissa meg és mentse el a térképet a kép frissítéséhez.';
+      } else {
+        // Nincs mit vetíteni.
+        elImg.style.display = 'none'; elImg.src = '';
+        elWait.style.display = 'flex';
+        wTitle.textContent = 'Vetítő készen áll';
+        wSub.textContent = 'A kalandmester által kivetített térkép itt jelenik meg, élőben.';
+      }
+    }
+
+    async function loadOnce() {
+      if (!window._sb || !CAMP) return;
+      try {
+        const { data, error } = await window._sb.from('cast_state').select('*').eq('campaign_id', CAMP).maybeSingle();
+        if (error) { showErr('Kapcsolat: ' + error.message); return; }
+        showErr('');
+        apply(data || {});
+      } catch (e) { showErr('Hiba: ' + (e.message || e)); }
+    }
+
+    function subscribe() {
+      if (!window._sb || !CAMP) return;
+      try {
+        window._sb.channel('cast_' + CAMP)
+          .on('postgres_changes',
+            { event: '*', schema: 'public', table: 'cast_state', filter: 'campaign_id=eq.' + CAMP },
+            payload => apply(payload.new || {}))
+          .subscribe();
+      } catch (e) { /* realtime nem elérhető — a poll fallback viszi tovább */ }
+    }
+
+    function boot() {
+      if (!CAMP) {
+        elWait.style.display = 'flex';
+        wTitle.textContent = 'Hiányzó kampány';
+        wSub.textContent = 'A vetítő megnyitásához add meg a kampányt az URL-ben: vetito?campaign=…  (A KM Pultból a „📺 Vetítő" gombbal a helyes linket kapod.)';
+        return;
+      }
+      loadOnce();
+      subscribe();
+      // Poll-fallback, ha a realtime nincs engedélyezve / megszakad.
+      setInterval(loadOnce, 6000);
+      // Ha visszatér a fókusz (pl. TV-t felébresztik), frissítsünk.
+      document.addEventListener('visibilitychange', () => { if (!document.hidden) loadOnce(); });
+    }
+
+    if (window._sb) boot();
+    else window.addEventListener('magus-auth-ready', boot, { once: true });
+  </script>
+</body>
+</html>

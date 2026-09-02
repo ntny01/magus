@@ -2053,15 +2053,21 @@ window.saveCampaignMap = async function() {
       active_layer: mapData.activeLayer,
       updated_at: new Date().toISOString()
     };
-    let error;
-    if (_currentCampaignMapId) {
-      ({ error } = await window._sb.from('campaign_maps')
-        .update(row).eq('id', _currentCampaignMapId));
-    } else {
-      const { data, error: e } = await window._sb.from('campaign_maps').insert(row).select().single();
-      error = e;
-      if (data) _currentCampaignMapId = data.id;
+    const doSave = async (r) => {
+      if (_currentCampaignMapId) {
+        return await window._sb.from('campaign_maps').update(r).eq('id', _currentCampaignMapId);
+      }
+      const res = await window._sb.from('campaign_maps').insert(r).select().single();
+      if (res.data) _currentCampaignMapId = res.data.id;
+      return res;
+    };
+    let res = await doSave(row);
+    // Ha a map_visibility.sql még nem futott (nincs campaign_id oszlop), mentsünk nélküle.
+    if (res.error && /campaign_id/i.test((res.error.message || '') + (res.error.details || ''))) {
+      const { campaign_id, ...rowNoCamp } = row;
+      res = await doSave(rowNoCamp);
     }
+    const error = res.error;
     if (!error) {
       if (statusEl) statusEl.textContent = '✓ Elmentve';
       loadCampaignMapList();
@@ -2081,7 +2087,11 @@ window.publishCampaignMap = async function() {
   const campId = document.getElementById('campaignMapCampaign')?.value || null;
   let unpub = window._sb.from('campaign_maps').update({ published: false }).neq('id', _currentCampaignMapId);
   unpub = campId ? unpub.eq('campaign_id', campId) : unpub.is('campaign_id', null);
-  await unpub;
+  const ures = await unpub;
+  // Ha nincs campaign_id oszlop (map_visibility.sql nem futott), globálisan vonjuk vissza a többit.
+  if (ures.error && /campaign_id/i.test((ures.error.message || '') + (ures.error.details || ''))) {
+    await window._sb.from('campaign_maps').update({ published: false }).neq('id', _currentCampaignMapId);
+  }
   const { error } = await window._sb.from('campaign_maps')
     .update({ published: true }).eq('id', _currentCampaignMapId);
   if (!error) { updatePublishButtons(true); loadCampaignMapList(); }
