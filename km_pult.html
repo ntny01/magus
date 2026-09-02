@@ -1793,8 +1793,15 @@ const sb = supabase.createClient(
                       '</div>'
                     : '<div style="font-size:.75rem;color:var(--text-muted);margin-top:.5rem;">Nincs több hozzáadható elem.</div>';
 
-                box.innerHTML = '<div style="font-family:\'Cinzel\',serif;color:var(--gold);font-size:.95rem;margin-bottom:.6rem;">' +
-                        sec.icon + ' ' + sec.title + ' <span style="color:var(--text-muted);font-size:.75rem;">(' + mine.length + ')</span></div>' +
+                const create = campaignItemCreate(sec.type);
+                const createBtn = create
+                    ? '<button class="km-btn" style="padding:.22rem .6rem;font-size:.74rem;border-color:rgba(16,185,129,.4);color:var(--accent-hover)!important;white-space:nowrap;" onclick="' + create.onclick + '">' + create.label + '</button>'
+                    : '';
+                box.innerHTML = '<div style="display:flex;align-items:center;gap:.5rem;margin-bottom:.6rem;">' +
+                        '<div style="flex:1;font-family:\'Cinzel\',serif;color:var(--gold);font-size:.95rem;">' +
+                          sec.icon + ' ' + sec.title + ' <span style="color:var(--text-muted);font-size:.75rem;">(' + mine.length + ')</span></div>' +
+                        createBtn +
+                    '</div>' +
                     attachedHtml + pickerHtml;
                 host.appendChild(box);
             });
@@ -1805,6 +1812,14 @@ const sb = supabase.createClient(
         function campaignItemLink(type, id) {
             if (type === 'battlemap') return "openBattlemapView('" + id + "','Battlemap')";
             return null; // ynev_map / template / character: ld. a tudnivalókat, még nincs URL-fogadás
+        }
+
+        // Új elem KÉSZÍTÉSE közvetlenül a Tartalomból (ahol van rá szerkesztő).
+        function campaignItemCreate(type) {
+            if (type === 'battlemap') return { label: '＋ Új battlemap', onclick: "closeCampaignPanel(); openBattlemapView(null,'Új battlemap')" };
+            if (type === 'ynev_map')  return { label: '＋ Új térkép',    onclick: "closeCampaignPanel(); openEmbeddedView('sablonView')" };
+            if (type === 'template')  return { label: '＋ Új sablon',    onclick: "closeCampaignPanel(); openEmbeddedView('sablonView')" };
+            return null; // character: a karaktereket a játékosok készítik
         }
 
         window.attachCampaignItem = async function(type) {

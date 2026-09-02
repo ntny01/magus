@@ -1185,6 +1185,16 @@ stage.on('touchmove', e=>{
 });
 stage.on('touchend', e=>{ if(!e.evt.touches || e.evt.touches.length<2){ _pinchDist=0; _pinchCenter=null; } });
 
+/* Szerkesztő módban EGY ujjal ne lehessen a hátteret (stage-et) panolni — csak
+   két ujjal (pinch/pan) vagy egérrel. Egy ujjal ELEMET viszont lehessen mozgatni
+   (az objektum dragstart target-je nem a stage). Vetítő módban az egyujjas pan OK. */
+let _activeTouches = 0;
+stage.on('touchstart', e=>{ _activeTouches = (e.evt.touches ? e.evt.touches.length : 1); });
+stage.on('touchend touchcancel', e=>{ _activeTouches = (e.evt.touches ? e.evt.touches.length : 0); });
+stage.on('dragstart', e=>{
+  if(!_castOn && _activeTouches === 1 && e.target === stage) stage.stopDrag();
+});
+
 /* =========================================================
    MENTÉS / BETÖLTÉS
 ========================================================= */

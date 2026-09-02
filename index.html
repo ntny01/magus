@@ -719,6 +719,7 @@
             <div class="nav-sep admin-only"></div>
             <a class="nav-link admin-only" href="km_pult"><span class="ico">🛡️</span> KM Pult</a>
             <a class="nav-link admin-only" href="sabloneditor"><span class="ico">🔨</span> Műhely</a>
+            <a class="nav-link admin-only" href="battlemap"><span class="ico">⚔️</span> Battlemap</a>
             <div class="nav-sep admin-only"></div>
             <button class="nav-link nav-edit admin-only" id="editModeBtn" type="button" onclick="toggleEditMode()"><span class="ico">✏️</span> Szerkesztő mód</button>
         </aside>
@@ -1054,6 +1055,7 @@
             { icon:'🗺️', title:'Ynev Térkép', href:'ynev_terkep', desc:'Interaktív világtérkép helyszínekkel és jelölőkkel.' },
             { icon:'🛡️', title:'KM Pult', href:'km_pult', desc:'Kalandmester-felület: kampányok, harcrend, napló.', admin:true },
             { icon:'🔨', title:'Műhely', href:'sabloneditor', desc:'Sablon- és helyszín-szerkesztő a kalandmestereknek.', admin:true },
+            { icon:'⚔️', title:'Battlemap', href:'battlemap', desc:'Taktikai csata-térkép szerkesztő — assetekkel, tableten és vetíthető.', admin:true },
         ];
 
         function esc(s){ return (s==null?'':String(s)).replace(/[&<>"]/g, c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c])); }
