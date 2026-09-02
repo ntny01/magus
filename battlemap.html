@@ -1115,6 +1115,32 @@ stage.on('wheel', e=>{ e.evt.preventDefault();
   const pt=stage.getPointerPosition(); zoomAt(stage.scaleX()*(e.evt.deltaY>0?1/1.1:1.1), pt.x, pt.y);
 });
 
+/* Kétujjas PINCH-zoom + pan (tablet). A két ujj közepéhez zoomol, és a
+   közép elmozdulásával panol. Működik vetítő módban és szerkesztéskor is. */
+let _pinchDist=0, _pinchCenter=null;
+function _touchMid(t1,t2){
+  const rect = stage.container().getBoundingClientRect();
+  return { x:(t1.clientX+t2.clientX)/2 - rect.left, y:(t1.clientY+t2.clientY)/2 - rect.top };
+}
+stage.on('touchmove', e=>{
+  const ts = e.evt.touches;
+  if(ts && ts.length>=2){
+    e.evt.preventDefault();
+    if(stage.isDragging()) stage.stopDrag();
+    const t1=ts[0], t2=ts[1];
+    const dist=Math.hypot(t2.clientX-t1.clientX, t2.clientY-t1.clientY);
+    const mid=_touchMid(t1,t2);
+    if(_pinchDist){
+      // Zoom a közép köré:
+      zoomAt(stage.scaleX()*(dist/_pinchDist), mid.x, mid.y);
+      // Pan a közép elmozdulásával:
+      if(_pinchCenter){ stage.position({ x:stage.x()+(mid.x-_pinchCenter.x), y:stage.y()+(mid.y-_pinchCenter.y) }); stage.batchDraw(); }
+    }
+    _pinchDist=dist; _pinchCenter=mid;
+  }
+});
+stage.on('touchend', e=>{ if(!e.evt.touches || e.evt.touches.length<2){ _pinchDist=0; _pinchCenter=null; } });
+
 /* =========================================================
    MENTÉS / BETÖLTÉS
 ========================================================= */
@@ -1470,12 +1496,21 @@ function fitStageToWrap(){ stage.width(wrap.clientWidth); stage.height(wrap.clie
 function applyCast(on){
   _castOn = !!on;
   document.body.classList.toggle('cast-mode', _castOn);
-  // Vetítéskor a stage NEM húzható/zoom-olható; egyébként a mód szerint.
-  stage.draggable(!_castOn && mode==='select');
-  stage.listening(!_castOn);              // vetítéskor minden interakció tiltva
-  // A panelek eltűntével/visszatértével a vászon mérete változik.
-  requestAnimationFrame(fitStageToWrap);
-  setTimeout(fitStageToWrap, 120);
+  if (_castOn){
+    // Vetítéskor: nézet mozgatható (pan) és nagyítható (pinch/görgő), DE a
+    // térkép-elemek NEM húzhatók (ne mozduljanak el véletlenül vetítés közben).
+    select(null);
+    stage.draggable(true);
+    mainLayer.getChildren().forEach(n=>{ if(n!==tr) n.draggable(false); });
+  } else {
+    setMode(mode);   // visszaállítja a húzhatóságot / kurzort a mód szerint
+  }
+  // A panelek eltűntével/visszatértével változik a vászon mérete → átméretezés,
+  // majd belépéskor középre igazítás (fit az egész térképre).
+  const settle = () => { fitStageToWrap(); if (_castOn) resetView(); };
+  requestAnimationFrame(settle);
+  setTimeout(settle, 140);
+  setTimeout(settle, 400);
 }
 window.exitCast = function(){
   applyCast(false);
