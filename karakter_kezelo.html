@@ -57,11 +57,13 @@ const sb = supabase.createClient(
         *::-webkit-scrollbar-thumb:hover{background:rgba(212,175,55,.55)}
         *::-webkit-scrollbar-track{background:transparent}
 
+        html { background: var(--bg-color, #0b1120); color-scheme: dark; overscroll-behavior-y: none; }
         body {
             background-color: var(--bg-color);
             color: var(--text-color);
             padding: 10px;
             padding-bottom: 40px;
+            overscroll-behavior-y: none;
         }
 
         .container {

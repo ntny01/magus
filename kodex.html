@@ -94,6 +94,7 @@ const sb = supabase.createClient(
         html {
             scroll-behavior: smooth;
             font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background: var(--bg-main, #050c15); overscroll-behavior-y: none;
         }
 
         body {
@@ -102,6 +103,7 @@ const sb = supabase.createClient(
             min-height: 100vh;
             display: flex;
             flex-direction: column;
+            overscroll-behavior-y: none;
             transition: background-color 0.2s, color 0.2s;
         }
 

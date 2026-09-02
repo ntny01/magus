@@ -50,6 +50,7 @@ const sb = supabase.createClient(
             --gold: #d4af37;    /* Arany kódex fény */
         }
 
+        html { background: #050c15; color-scheme: dark; overscroll-behavior-y: none; }
         body {
             font-family: 'Inter', sans-serif !important;
             background:
@@ -61,6 +62,7 @@ const sb = supabase.createClient(
             box-sizing: border-box;
             display: flex; flex-direction: row; align-items: flex-start;
             min-height: 100vh;
+            overscroll-behavior-y: none;
             transition: background-position 0.1s ease-out;
         }
 
