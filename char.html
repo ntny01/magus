@@ -80,6 +80,16 @@ const sb = supabase.createClient(
       white-space:nowrap;
     }
     .header-sep{width:1px;height:24px;background:rgba(255,255,255,0.08);flex-shrink:0;margin:0 .15rem;}
+    /* App-menü kapcsoló (☰) — csak telefonon/tableten látszik (lásd @media) */
+    .menu-toggle{display:none;align-items:center;justify-content:center;flex-shrink:0;
+      width:42px;height:40px;font-size:1.25rem;cursor:pointer;
+      background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.12);
+      color:var(--gold);border-radius:.5rem;}
+    .menu-toggle:hover{border-color:var(--gold);background:rgba(212,175,55,.12);}
+    .menu-only-label{display:none;}   /* csak az app-menü fiókban látszik (lásd @media) */
+    .header-menu-backdrop{position:fixed;inset:0;background:rgba(2,6,15,.55);z-index:55;
+      opacity:0;pointer-events:none;transition:opacity .24s;}
+    .header-menu-backdrop.open{opacity:1;pointer-events:auto;}
 
     /* ===== BUTTONS ===== */
     .btn{
@@ -705,26 +715,31 @@ const sb = supabase.createClient(
     /* ===== RESPONSIVE ===== */
 @media (max-width:767px){
   .sheet-outer{padding:1rem .75rem 5rem;gap:1rem;}
-  header{flex-wrap:wrap;padding:.4rem .6rem;gap:.35rem .5rem;}
-  .header-left{order:1;}
+  header{padding:.4rem .6rem;gap:.4rem;}
+  .header-left{order:1;min-width:0;}
   .header-right{order:2;margin-left:auto;}
-  /* Az eszközgombok EGYETLEN, vízszintesen görgethető sávban (nem tördelnek szét). */
-  .header-center{
-    order:3;width:100%;
-    flex-wrap:nowrap;overflow-x:auto;overflow-y:hidden;
-    justify-content:flex-start;gap:.4rem;padding-bottom:.15rem;
-    -webkit-overflow-scrolling:touch;scrollbar-width:none;
-  }
-  .header-center::-webkit-scrollbar{display:none;}
-  .header-center > *{flex:0 0 auto;}
+  .menu-toggle{display:inline-flex;order:3;}
   .header-sep{display:none;}
   .page-title{display:none;}
-  .btn{padding:.45rem .7rem;font-size:.8rem;min-height:40px;white-space:nowrap;}
-  /* A görgethető gomb-sáv overflow-ja levágná a legördülőket → mobilon a nyitott
-     menü fix-pozíciós lap a fejléc alatt (a viewporthoz kötve, nem vágódik le). */
-  .dd-menu.open, .export-menu.open{
-    position:fixed;top:58px;left:.6rem;right:.6rem;
-    min-width:0;width:auto;max-height:72vh;overflow-y:auto;
+  /* App-menü: az eszközgombok behúzható jobb oldali fiókban (☰ nyitja). */
+  .header-center{
+    position:fixed;top:0;right:0;height:100vh;height:100dvh;
+    width:min(300px,86vw);
+    flex-direction:column;align-items:stretch;justify-content:flex-start;
+    gap:.4rem;padding:1rem .8rem 2rem;overflow-y:auto;overscroll-behavior:contain;
+    background:var(--bg-card);border-left:1px solid var(--border);
+    box-shadow:-16px 0 46px rgba(0,0,0,.55);
+    transform:translateX(101%);transition:transform .24s ease;z-index:60;
+  }
+  .header-center.open{transform:translateX(0);}
+  .header-center .dd-wrap, .header-center .export-wrap{width:100%;}
+  .header-center .btn{width:100%;justify-content:flex-start;min-height:44px;font-size:.9rem;padding:.6rem .8rem;white-space:nowrap;gap:.5rem;}
+  .menu-only-label{display:inline;}
+  /* Legördülők a fiókban: accordionként, inline — nem lebegő panel. */
+  .dd-menu, .export-menu{
+    position:static !important;width:100%;min-width:0;
+    box-shadow:none;margin:.15rem 0 .3rem;background:rgba(0,0,0,.28);
+    max-height:46vh;overflow-y:auto;left:auto;top:auto;
   }
   .info-card{padding:1rem;}
   .info-grid{grid-template-columns: 1fr !important; gap: .7rem;}
@@ -804,8 +819,8 @@ const sb = supabase.createClient(
     <!-- Import / Nyomtatás / Kép -->
     <button class="btn" onclick="document.getElementById('importFile').click()">📂 Import</button>
     <input type="file" id="importFile" accept=".json" style="display:none" onchange="importData(event)">
-    <button class="btn" onclick="printSheet()">🖨️</button>
-    <button class="btn" id="imgBtn" onclick="saveAsImage()">🖼️</button>
+    <button class="btn" onclick="printSheet()">🖨️<span class="menu-only-label">Nyomtatás</span></button>
+    <button class="btn" id="imgBtn" onclick="saveAsImage()">🖼️<span class="menu-only-label">Kép mentése</span></button>
 
   </div>
 
@@ -814,7 +829,9 @@ const sb = supabase.createClient(
     <span style="display:inline-flex;align-items:center;gap:.5rem;"><span id="auth-avatar"></span><span id="auth-username" style="font-size:.75rem;color:#d4af37;font-family:'Cinzel',serif;letter-spacing:.06em;white-space:nowrap;"></span></span>
     <button class="mg-btn mg-btn--danger" onclick="doLogout()">Kilépés</button>
   </div>
+  <button class="menu-toggle" onclick="toggleHeaderMenu()" aria-label="Menü" title="Eszközök">☰</button>
 </header>
+<div class="header-menu-backdrop" onclick="toggleHeaderMenu(false)"></div>
 
 <div id="henchBanner" style="display:none;align-items:center;gap:.4rem;justify-content:center;flex-wrap:wrap;
      background:rgba(192,132,252,.1);border-bottom:1px solid rgba(192,132,252,.3);
@@ -1977,6 +1994,32 @@ renderAll();
   document.addEventListener('click', e => {
     if (!e.target.closest('.dd-wrap') && !e.target.closest('.export-wrap')) closeAllDD()
   })
+
+  // ─── APP-MENÜ (telefon/tablet ☰) ────────────────────────────────
+  // Az eszközgombok behúzható jobb oldali fiókban; a ☰ nyitja/zárja.
+  window.toggleHeaderMenu = function(force){
+    const hc = document.querySelector('.header-center')
+    const bd = document.querySelector('.header-menu-backdrop')
+    if (!hc) return
+    const open = (force === undefined) ? !hc.classList.contains('open') : !!force
+    hc.classList.toggle('open', open)
+    if (bd) bd.classList.toggle('open', open)
+    document.body.style.overflow = open ? 'hidden' : ''
+    if (!open) closeAllDD()
+  }
+  // Konkrét művelet választásakor záruljon a fiók (a legördülő-nyitók NEM).
+  ;(function(){
+    const hc = document.querySelector('.header-center'); if (!hc) return
+    hc.addEventListener('click', e => {
+      if (!hc.classList.contains('open')) return
+      if (e.target.closest('.dd-item, .export-item')) { setTimeout(()=>toggleHeaderMenu(false), 80); return }
+      const btn = e.target.closest('.btn')
+      if (btn) {
+        const oc = btn.getAttribute('onclick') || ''
+        if (!/toggleDD|toggleExportMenu/.test(oc)) setTimeout(()=>toggleHeaderMenu(false), 80)
+      }
+    })
+  })()
 
   // ─── UNDO / REDO (CTRL+Z / CTRL+SHIFT+Z) ────────────────────────
   // A teljes sheetData-t pillanatképezzük a szerkesztési "csomópontokon"
