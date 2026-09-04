@@ -87,7 +87,10 @@ const sb = supabase.createClient(
       color:var(--gold);border-radius:.5rem;}
     .menu-toggle:hover{border-color:var(--gold);background:rgba(212,175,55,.12);}
     .menu-only-label{display:none;}   /* csak az app-menü fiókban látszik (lásd @media) */
-    .header-menu-backdrop{position:fixed;inset:0;background:rgba(2,6,15,.55);z-index:55;
+    /* z-index a header (z:50) ALATT: a header saját stacking-kontextust csinál, így
+       a menü (z:60) az 50-es szinten "csapdázódik"; a backdropnak alá kell mennie,
+       különben elfogná a menü-gombokra irányuló koppintást. */
+    .header-menu-backdrop{position:fixed;inset:0;background:rgba(2,6,15,.55);z-index:40;
       opacity:0;pointer-events:none;transition:opacity .24s;}
     .header-menu-backdrop.open{opacity:1;pointer-events:auto;}
 
