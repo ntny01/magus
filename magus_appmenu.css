@@ -1,0 +1,58 @@
+/* =====================================================================
+   magus_appmenu.css — közös "app-menü" telefonra/tabletre
+   Egy ☰ gomb egy felugró, lekerekített panelbe rejti a fejléc-eszközöket.
+   A lap a tool-konténerre teszi a .app-menu osztályt, a JS (magus_appmenu.js)
+   hozza létre a ☰-t és a hátteret. Témázás CSS-változókkal:
+     --am-panel  (panel háttér), --am-border, --am-accent (☰ szín)
+   Desktopon (≥768px) semmit nem változtat.
+   ===================================================================== */
+
+.app-menu-toggle{
+  display:none;                 /* csak mobilon (lásd @media) */
+  align-items:center; justify-content:center; flex-shrink:0;
+  width:42px; height:40px; font-size:1.25rem; line-height:1; cursor:pointer;
+  background:rgba(255,255,255,0.05);
+  border:1px solid rgba(255,255,255,0.15);
+  color:var(--am-accent,#d4af37); border-radius:.5rem;
+}
+.app-menu-toggle:hover{ border-color:var(--am-accent,#d4af37); background:rgba(212,175,55,.12); }
+.app-menu-backdrop{ position:fixed; inset:0; background:transparent; z-index:855; display:none; }
+.app-menu-backdrop.open{ display:block; }
+
+@media (max-width:767px){
+  .app-menu-toggle{ display:inline-flex; margin-left:auto; }
+
+  /* A tool-konténer felugró panellé válik a ☰ alatt. */
+  .app-menu{
+    position:fixed !important; top:54px; right:.5rem;
+    width:min(300px,86vw); max-height:calc(100dvh - 66px); height:auto !important;
+    display:flex !important; flex-direction:column !important; align-items:stretch !important;
+    justify-content:flex-start !important; gap:.35rem !important; flex-wrap:nowrap !important;
+    padding:.55rem !important; overflow:auto !important; overscroll-behavior:contain;
+    background:var(--am-panel,#0f172a); border:1px solid var(--am-border,rgba(255,255,255,.12));
+    border-radius:.85rem; box-shadow:0 18px 50px rgba(0,0,0,.6);
+    transform-origin:top right; opacity:0; transform:scale(.96) translateY(-6px);
+    pointer-events:none; transition:opacity .16s ease, transform .16s ease; z-index:860;
+  }
+  .app-menu.open{ opacity:1; transform:none; pointer-events:auto; }
+
+  /* Menü-elemek: teljes szélesség, balra igazítva, kényelmes tap-méret. */
+  .app-menu > button,
+  .app-menu > a,
+  .app-menu > .app-item,
+  .app-menu > .dd-wrap,
+  .app-menu > .export-wrap{ width:100% !important; flex:0 0 auto !important; }
+  .app-menu > button,
+  .app-menu > a.app-item{ min-height:44px; }
+  /* Minden menü-gomb balra igazítva (koherens, laptól függetlenül). */
+  .app-menu button, .app-menu a.app-item{ justify-content:flex-start !important; text-align:left; }
+
+  /* Csoport-elválasztó vékony vonal. */
+  .app-menu .app-sep{ display:block; width:auto; height:1px; background:rgba(255,255,255,.09); margin:.35rem .15rem; flex:0 0 auto; }
+
+  /* A user-sor (avatar + Kilépés) a menü tetején. */
+  .app-menu .app-menu-user{
+    display:flex; width:100%; align-items:center; justify-content:space-between; gap:.5rem;
+    padding:.25rem .3rem .55rem; border-bottom:1px solid var(--am-border,rgba(255,255,255,.12)); margin-bottom:.15rem;
+  }
+}

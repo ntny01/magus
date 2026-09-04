@@ -719,8 +719,9 @@ const sb = supabase.createClient(
   .header-left{order:1;min-width:0;}
   .header-right{display:none;}                 /* JS a menübe helyezi mobilon */
   .menu-toggle{display:inline-flex;order:3;margin-left:auto;}
-  .header-sep{display:none;}
   .page-title{display:none;}
+  /* Elválasztó a menüben: vékony vízszintes vonal (csoportosítás) */
+  .header-center .header-sep{display:block;width:auto;height:1px;background:rgba(255,255,255,.09);margin:.35rem .15rem;}
   /* App-menü: felugró panel a ☰ alatt — csak a tartalomig ér, lekerekített. */
   .header-center{
     position:fixed;top:54px;right:.5rem;
@@ -810,6 +811,8 @@ const sb = supabase.createClient(
     <!-- Nézet -->
     <button class="btn btn-gold" id="viewBtn" onclick="toggleViewMode()">🔓 Szerkeszthető</button>
 
+    <div class="header-sep"></div>
+
     <!-- Export -->
     <div class="export-wrap">
       <button class="btn" onclick="toggleExportMenu()">💾 Export ▾</button>
@@ -822,6 +825,8 @@ const sb = supabase.createClient(
 
     <!-- Publikálás -->
     <button class="btn btn-publish" id="publishBtn" onclick="togglePublish()">📢 Publikálás</button>
+
+    <div class="header-sep"></div>
 
     <!-- Import / Nyomtatás / Kép -->
     <button class="btn" onclick="document.getElementById('importFile').click()">📂 Import</button>

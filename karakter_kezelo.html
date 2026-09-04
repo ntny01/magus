@@ -130,6 +130,17 @@ const sb = supabase.createClient(
             flex-wrap: wrap;
             margin-top: 5px;
         }
+        /* A tool-gombok konténere desktopon átlátszó; mobilon a ☰ app-menü alakítja. */
+        .io-tools { display: contents; }
+        @media (max-width: 767px) {
+            #kkCharWrap { width: 100%; }
+            .io-tools .btn, .io-tools > div { width: 100%; }
+            #kkCharDD {
+                position: static !important; width: 100%; min-width: 0;
+                left: auto; top: auto; margin: .2rem 0 .3rem; box-shadow: none;
+                max-height: 46vh; overflow-y: auto;
+            }
+        }
 
         /* Telefon: tömörebb, balra igazított fejléc (koherens a többi lappal) */
         @media (max-width: 600px) {
@@ -518,6 +529,7 @@ const sb = supabase.createClient(
         .hidden { display: none !important; }
     </style>
     <link rel="stylesheet" href="magus_ui.css?v=1"><script src="magus_avatar.js?v=4"></script>
+    <link rel="stylesheet" href="magus_appmenu.css?v=1"><script src="magus_appmenu.js?v=1"></script>
 </head>
 <body>
 
@@ -528,8 +540,9 @@ const sb = supabase.createClient(
         <div class="io-bar">
             <a href="index" class="btn" style="padding:.3rem .6rem;" title="Vissza a főoldalra">◀&#xFE0E;</a><script>if(window.self!==window.top){var e=document.currentScript.previousElementSibling;if(e)e.style.display='none';}</script>
             <!-- Karakterek Supabase-ből -->
+            <div class="io-tools">
             <div style="position:relative;" id="kkCharWrap">
-                <button class="btn" onclick="toggleKKCharDD()" style="border-color:rgba(212,175,55,.4);color:#d4af37;">📁 Karakterek ▾</button>
+                <button class="btn" data-am-keepopen onclick="toggleKKCharDD()" style="border-color:rgba(212,175,55,.4);color:#d4af37;">📁 Karakterek ▾</button>
                 <div id="kkCharDD" style="display:none;position:absolute;top:110%;left:0;background:#1a1a1e;border:1px solid rgba(212,175,55,.2);border-radius:.6rem;min-width:220px;box-shadow:0 12px 40px rgba(0,0,0,.5);z-index:200;">
                     <div style="padding:.4rem 1rem .25rem;font-size:.68rem;font-weight:700;letter-spacing:.1em;color:#64748b;text-transform:uppercase;border-bottom:1px solid rgba(255,255,255,.06);">Mentett karakterek</div>
                     <div id="kkCharList"><div style="padding:.6rem 1rem;font-size:.82rem;color:#64748b;">Betöltés...</div></div>
@@ -541,6 +554,7 @@ const sb = supabase.createClient(
                 <input type="file" id="json-loader" accept=".json">
             </div>
             <button class="btn btn-accent" id="json-exporter">💾 Állapot Mentése</button>
+            </div><!-- /io-tools -->
         </div>
         <div class="user-chip" style="display:flex;align-items:center;justify-content:flex-end;gap:.6rem;margin-top:.5rem;">
             <span style="display:inline-flex;align-items:center;gap:.5rem;"><span id="auth-avatar"></span><span id="auth-username" style="font-size:.78rem;color:#d4af37;"></span></span>
@@ -1683,6 +1697,13 @@ const sb = supabase.createClient(
     }
   }
   setTimeout(trySetUsername, 100)
+
+  // App-menü (☰): a tool-gombok + user felugró menübe telefonon/tableten.
+  (function(){
+    function initAM(){ if (window.MagusAppMenu) MagusAppMenu.mount({ menu:'.io-tools', header:'.io-bar', user:'.user-chip' }); }
+    if (document.readyState !== 'loading') initAM();
+    else document.addEventListener('DOMContentLoaded', initAM);
+  })();
 
   // ─── LOGOUT ─────────────────────────────────────────────────────
   async function doLogout() {

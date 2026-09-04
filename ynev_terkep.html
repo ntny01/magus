@@ -1111,29 +1111,32 @@ body{
         rgba(15,23,42,.96) !important;
 }
 
+/* A tool-gombok konténere desktopon átlátszó (a gombok a toolbar-ban maradnak);
+   mobilon a magus_appmenu.css alakítja felugró ☰-menüvé. */
+.toolbar-tools{ display: contents; }
+
 /* =========================
    MOBILE
 ========================= */
 
 @media(max-width:768px){
 
-    /* Toolbar: kompakt, egy sor marad ha lehet */
+    /* Toolbar mobilon: ◀ + cím + ☰ (a tool-gombok a ☰ app-menübe kerülnek). */
     .toolbar{
         height: auto !important;
         min-height: 52px;
         padding: 0 10px !important;
         gap: 6px !important;
         flex-wrap: nowrap;
-        overflow-x: auto;
-        -webkit-overflow-scrolling: touch;
-        scrollbar-width: none;
     }
-    .toolbar::-webkit-scrollbar{ display: none; }
-    /* A görgethető toolbar overflow-ja levágná a legördülőket → mobilon fix a fejléc alatt */
+    /* A tool-gombok teljes szélességű menü-elemek; a legördülők accordionként. */
+    .toolbar-tools > div, .toolbar-tools > button{ width: 100%; }
+    .toolbar-tools .btn{ width: 100%; justify-content: flex-start; min-height: 44px; }
     #fileMenu, #campaignMenu{
-        position: fixed !important;
-        top: 56px !important; left: 10px !important; right: auto !important;
-        max-height: 70vh; overflow-y: auto;
+        position: static !important; width: 100%; min-width: 0;
+        left: auto !important; top: auto !important; right: auto !important;
+        margin: .2rem 0 .3rem; box-shadow: none;
+        max-height: 46vh; overflow-y: auto;
     }
 
     /* Cím rövidebb mobilon */
@@ -1448,6 +1451,7 @@ body{
 
 </style>
     <link rel="stylesheet" href="magus_ui.css?v=1"><script src="magus_avatar.js?v=4"></script>
+    <link rel="stylesheet" href="magus_appmenu.css?v=1"><script src="magus_appmenu.js?v=1"></script>
 </head>
 
 <body>
@@ -1459,8 +1463,9 @@ body{
         🗺️ YNEV KALAND TÉRKÉP
     </div>
 
+    <div class="toolbar-tools">
     <div style="position:relative;display:inline-block;">
-        <button class="btn" onclick="toggleFileMenu()" id="fileMenuBtn">💾 Fájl ▾</button>
+        <button class="btn" data-am-keepopen onclick="toggleFileMenu()" id="fileMenuBtn">💾 Fájl ▾</button>
         <div id="fileMenu" style="display:none;position:absolute;top:100%;left:0;min-width:190px;background:#0f172a;border:1px solid rgba(212,175,55,.3);border-radius:10px;padding:6px;z-index:99999;box-shadow:0 8px 24px rgba(0,0,0,.5);margin-top:4px;">
             <button onclick="exportCampaign();toggleFileMenu()" style="display:block;width:100%;text-align:left;background:rgba(212,175,55,.08);border:1px solid rgba(212,175,55,.2);color:#e2e8f0;border-radius:6px;padding:6px 10px;cursor:pointer;font-size:.8rem;margin-bottom:4px;">💾 Exportálás (JSON)</button>
             <button onclick="importCampaign();toggleFileMenu()" style="display:block;width:100%;text-align:left;background:rgba(212,175,55,.08);border:1px solid rgba(212,175,55,.2);color:#e2e8f0;border-radius:6px;padding:6px 10px;cursor:pointer;font-size:.8rem;">📂 Importálás (JSON)</button>
@@ -1468,7 +1473,7 @@ body{
     </div>
     <button class="btn" onclick="toggleSavePanel()">🗃️ Mentések</button>
     <div style="position:relative;display:inline-block;">
-        <button class="btn" onclick="toggleCampaignMenu()" id="campaignMenuBtn">📜 Kampány ▾</button>
+        <button class="btn" data-am-keepopen onclick="toggleCampaignMenu()" id="campaignMenuBtn">📜 Kampány ▾</button>
         <div id="campaignMenu" style="display:none;position:absolute;top:100%;left:0;min-width:200px;background:#0f172a;border:1px solid rgba(168,85,247,.3);border-radius:10px;padding:6px;z-index:99999;box-shadow:0 8px 24px rgba(0,0,0,.5);margin-top:4px;">
             <div id="campaignMenuList" style="display:flex;flex-direction:column;gap:4px;">
                 <div style="color:#64748b;font-size:.75rem;padding:4px 8px;">Betöltés...</div>
@@ -1489,7 +1494,8 @@ body{
     >
         # Grid
     </button>
-<div style="display:flex;align-items:center;gap:.5rem;flex-shrink:0;margin-left:auto;">
+    </div><!-- /toolbar-tools -->
+<div class="toolbar-user" style="display:flex;align-items:center;gap:.5rem;flex-shrink:0;margin-left:auto;">
   <span style="display:inline-flex;align-items:center;gap:.5rem;"><span id="auth-avatar"></span><span id="auth-username" style="font-size:.75rem;color:#d4af37;font-family:'Cinzel',serif;letter-spacing:.06em;white-space:nowrap;"></span></span>
   <button class="mg-btn mg-btn--danger" onclick="doLogout()">Kilépés</button>
 </div>
@@ -3960,6 +3966,13 @@ document.addEventListener('mousemove', e => {
       menu.style.display = 'none';
     }
   });
+
+  // App-menü (☰): a tool-gombok felugró menübe telefonon/tableten.
+  (function(){
+    function initAM(){ if (window.MagusAppMenu) MagusAppMenu.mount({ menu:'.toolbar-tools', header:'.toolbar', user:'.toolbar-user' }); }
+    if (document.readyState !== 'loading') initAM();
+    else document.addEventListener('DOMContentLoaded', initAM);
+  })();
 
   window.loadCampaignMenuList = async function() {
     const listEl = document.getElementById('campaignMenuList');
