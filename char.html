@@ -717,30 +717,37 @@ const sb = supabase.createClient(
   .sheet-outer{padding:1rem .75rem 5rem;gap:1rem;}
   header{padding:.4rem .6rem;gap:.4rem;}
   .header-left{order:1;min-width:0;}
-  .header-right{order:2;margin-left:auto;}
-  .menu-toggle{display:inline-flex;order:3;}
+  .header-right{display:none;}                 /* JS a menübe helyezi mobilon */
+  .menu-toggle{display:inline-flex;order:3;margin-left:auto;}
   .header-sep{display:none;}
   .page-title{display:none;}
-  /* App-menü: az eszközgombok behúzható jobb oldali fiókban (☰ nyitja). */
+  /* App-menü: felugró panel a ☰ alatt — csak a tartalomig ér, lekerekített. */
   .header-center{
-    position:fixed;top:0;right:0;height:100vh;height:100dvh;
-    width:min(300px,86vw);
-    flex-direction:column;align-items:stretch;justify-content:flex-start;
-    gap:.4rem;padding:1rem .8rem 2rem;overflow-y:auto;overscroll-behavior:contain;
-    background:var(--bg-card);border-left:1px solid var(--border);
-    box-shadow:-16px 0 46px rgba(0,0,0,.55);
-    transform:translateX(101%);transition:transform .24s ease;z-index:60;
+    position:fixed;top:54px;right:.5rem;
+    width:min(300px,86vw);max-height:calc(100vh - 66px);height:auto;
+    flex-direction:column;align-items:stretch;gap:.35rem;
+    padding:.55rem;overflow-y:auto;overscroll-behavior:contain;
+    background:var(--bg-card);border:1px solid var(--border);
+    border-radius:.85rem;box-shadow:0 18px 50px rgba(0,0,0,.6);
+    transform-origin:top right;opacity:0;transform:scale(.96) translateY(-6px);
+    pointer-events:none;transition:opacity .16s ease, transform .16s ease;z-index:60;
   }
-  .header-center.open{transform:translateX(0);}
+  .header-center.open{opacity:1;transform:none;pointer-events:auto;}
+  /* User dolgok a menü tetején */
+  .header-center .header-right{display:flex;width:100%;align-items:center;
+    justify-content:space-between;gap:.5rem;padding:.25rem .3rem .55rem;
+    border-bottom:1px solid var(--border-soft);margin-bottom:.15rem;}
   .header-center .dd-wrap, .header-center .export-wrap{width:100%;}
   .header-center .btn{width:100%;justify-content:flex-start;min-height:44px;font-size:.9rem;padding:.6rem .8rem;white-space:nowrap;gap:.5rem;}
   .menu-only-label{display:inline;}
-  /* Legördülők a fiókban: accordionként, inline — nem lebegő panel. */
+  /* Legördülők a menüben: accordionként, inline. */
   .dd-menu, .export-menu{
     position:static !important;width:100%;min-width:0;
     box-shadow:none;margin:.15rem 0 .3rem;background:rgba(0,0,0,.28);
     max-height:46vh;overflow-y:auto;left:auto;top:auto;
   }
+  /* Nincs teljes elsötétítés — a panel árnyéka elég; a réteg csak zárásra fogja a kattintást. */
+  .header-menu-backdrop{background:transparent;}
   .info-card{padding:1rem;}
   .info-grid{grid-template-columns: 1fr !important; gap: .7rem;}
   .info-field { flex-direction: column; align-items: flex-start; gap: 0.2rem; }
@@ -2020,6 +2027,19 @@ renderAll();
       }
     })
   })()
+
+  // Telefonon/tableten a user-chip (avatar + Kilépés) a ☰ menübe kerül; desktopon a fejlécbe vissza.
+  function syncMenuUser(){
+    const mobile = window.matchMedia('(max-width:767px)').matches
+    const hr = document.querySelector('.header-right')
+    const hc = document.querySelector('.header-center')
+    const hdr = document.querySelector('header')
+    if (!hr || !hc || !hdr) return
+    if (mobile) { if (hr.parentElement !== hc) hc.insertBefore(hr, hc.firstChild) }
+    else { if (hr.parentElement !== hdr) hdr.appendChild(hr) }
+  }
+  syncMenuUser()
+  window.addEventListener('resize', syncMenuUser)
 
   // ─── UNDO / REDO (CTRL+Z / CTRL+SHIFT+Z) ────────────────────────
   // A teljes sheetData-t pillanatképezzük a szerkesztési "csomópontokon"
