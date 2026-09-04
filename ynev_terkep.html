@@ -1126,6 +1126,14 @@ body{
         flex-wrap: nowrap;
         overflow-x: auto;
         -webkit-overflow-scrolling: touch;
+        scrollbar-width: none;
+    }
+    .toolbar::-webkit-scrollbar{ display: none; }
+    /* A görgethető toolbar overflow-ja levágná a legördülőket → mobilon fix a fejléc alatt */
+    #fileMenu, #campaignMenu{
+        position: fixed !important;
+        top: 56px !important; left: 10px !important; right: auto !important;
+        max-height: 70vh; overflow-y: auto;
     }
 
     /* Cím rövidebb mobilon */

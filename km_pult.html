@@ -511,9 +511,11 @@ const sb = supabase.createClient(
                 flex-direction: row; flex-wrap: nowrap;
                 align-items: center; gap: .4rem;
                 overflow-x: auto; overflow-y: hidden;
+                -webkit-overflow-scrolling: touch; scrollbar-width: none;
                 padding: .5rem .6rem;
                 border-right: none; border-bottom: 1px solid var(--border-color);
             }
+            .km-sidebar::-webkit-scrollbar { display: none; }
             .km-sidebar .side-label { display: none; }
             .km-sidebar .side-toggle { display: none; }
             .km-sidebar .side-campaign { display: contents; }
@@ -538,7 +540,7 @@ const sb = supabase.createClient(
                 font-size: 1.15rem !important;
                 flex: 1 1 auto;
             }
-            .header-user { order: 1; }
+            .header-user { order: 1; margin-left: auto; }
             .km-toolbar {
                 order: 2;
                 flex: 1 1 100%;

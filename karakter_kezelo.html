@@ -131,6 +131,14 @@ const sb = supabase.createClient(
             margin-top: 5px;
         }
 
+        /* Telefon: tömörebb, balra igazított fejléc (koherens a többi lappal) */
+        @media (max-width: 600px) {
+            header { text-align: left; padding: .7rem .8rem; margin-bottom: 10px; }
+            h1 { font-size: 1.15rem; margin-bottom: .4rem; }
+            .io-bar { justify-content: flex-start; gap: .5rem; margin-top: .3rem; }
+            .io-bar .btn { padding: 8px 11px; font-size: .82rem; min-height: 40px; }
+        }
+
         .panel {
             background: var(--panel-bg);
             border: 1px solid var(--panel-border);
@@ -534,7 +542,7 @@ const sb = supabase.createClient(
             </div>
             <button class="btn btn-accent" id="json-exporter">💾 Állapot Mentése</button>
         </div>
-        <div style="display:flex;align-items:center;justify-content:space-between;margin-top:.5rem;">
+        <div class="user-chip" style="display:flex;align-items:center;justify-content:flex-end;gap:.6rem;margin-top:.5rem;">
             <span style="display:inline-flex;align-items:center;gap:.5rem;"><span id="auth-avatar"></span><span id="auth-username" style="font-size:.78rem;color:#d4af37;"></span></span>
             <button class="mg-btn mg-btn--danger" onclick="doLogout()">Kilépés</button>
         </div>
