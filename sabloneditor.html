@@ -549,6 +549,21 @@ header{
   .boxes-grid{grid-template-columns:1fr;}
   header{padding:.4rem .75rem;}
 }
+/* Mobil/kis tablet: a fejléc tördeljen — a tabok külön, teljes szélességű sorba
+   kerülnek (nem lógnak ki), a user jobbra. */
+@media(max-width:767px){
+  header{flex-wrap:wrap;padding:.4rem .6rem;gap:.4rem .5rem;}
+  .header-left{order:1;min-width:0;}
+  .header-right{order:2;margin-left:auto;}
+  .header-center{order:3;width:100%;flex:0 0 100%;justify-content:center;}
+  .tab-bar{width:100%;justify-content:center;}
+  .muhely-badge{display:none;}
+  .muhely-title{font-size:1rem;letter-spacing:.1em;}
+  /* A sablon-név külön, teljes sorban, hogy a gombok szépen alá tördeljenek */
+  .editor-name-input{flex:1 1 100%;min-width:0;}
+  /* A Térkép-fül vezérlősávja tapadjon kényelmesebben, a térkép kapjon több helyet */
+  #mapIframe{height:calc(100vh - 300px)!important;min-height:340px;}
+}
 </style>
     <link rel="stylesheet" href="magus_ui.css?v=1"><script src="magus_avatar.js?v=4"></script>
 </head>

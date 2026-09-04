@@ -492,14 +492,20 @@ const sb = supabase.createClient(
       border-radius:.6rem;padding:.6rem .8rem;
       font-size:.78rem;line-height:1.5;color:var(--text);
       max-width:260px;min-width:140px;
+      max-height:min(240px,45vh);overflow-y:auto;overscroll-behavior:contain;
       box-shadow:0 12px 40px rgba(0,0,0,.55);
       bottom:calc(100% + 8px);left:50%;transform:translateX(-50%);
       display:none;
     }
     .field-desc-popover.open{display:block;}
+    /* Ha nincs hely felül, lefelé nyílik (JS teszi rá a .below-t) */
+    .field-desc-popover.below{ bottom:auto;top:calc(100% + 8px); }
     .field-desc-popover::after{
       content:'';position:absolute;top:100%;left:50%;transform:translateX(-50%);
       border:6px solid transparent;border-top-color:rgba(212,175,55,.3);
+    }
+    .field-desc-popover.below::after{
+      top:auto;bottom:100%;border-top-color:transparent;border-bottom-color:rgba(212,175,55,.3);
     }
     .field-desc-popover-title{
       font-family:'Cinzel',serif;color:var(--gold);font-size:.72rem;
@@ -699,12 +705,27 @@ const sb = supabase.createClient(
     /* ===== RESPONSIVE ===== */
 @media (max-width:767px){
   .sheet-outer{padding:1rem .75rem 5rem;gap:1rem;}
-  header{flex-wrap:wrap;padding:.4rem .5rem;gap:.3rem;}
+  header{flex-wrap:wrap;padding:.4rem .6rem;gap:.35rem .5rem;}
   .header-left{order:1;}
-  .header-center{order:3;width:100%;justify-content:flex-start;overflow-x:auto;padding-bottom:.2rem;}
   .header-right{order:2;margin-left:auto;}
+  /* Az eszközgombok EGYETLEN, vízszintesen görgethető sávban (nem tördelnek szét). */
+  .header-center{
+    order:3;width:100%;
+    flex-wrap:nowrap;overflow-x:auto;overflow-y:hidden;
+    justify-content:flex-start;gap:.4rem;padding-bottom:.15rem;
+    -webkit-overflow-scrolling:touch;scrollbar-width:none;
+  }
+  .header-center::-webkit-scrollbar{display:none;}
+  .header-center > *{flex:0 0 auto;}
+  .header-sep{display:none;}
   .page-title{display:none;}
-  .btn{padding:.4rem .6rem;font-size:.78rem;min-height:36px;}
+  .btn{padding:.45rem .7rem;font-size:.8rem;min-height:40px;white-space:nowrap;}
+  /* A görgethető gomb-sáv overflow-ja levágná a legördülőket → mobilon a nyitott
+     menü fix-pozíciós lap a fejléc alatt (a viewporthoz kötve, nem vágódik le). */
+  .dd-menu.open, .export-menu.open{
+    position:fixed;top:58px;left:.6rem;right:.6rem;
+    min-width:0;width:auto;max-height:72vh;overflow-y:auto;
+  }
   .info-card{padding:1rem;}
   .info-grid{grid-template-columns: 1fr !important; gap: .7rem;}
   .info-field { flex-direction: column; align-items: flex-start; gap: 0.2rem; }
@@ -2530,7 +2551,16 @@ renderAll();
     if (!desc) return
     const pop = getOrCreatePopover(fieldKey, icon)
     pop.innerHTML = window._buildPopoverContent(fieldKey, desc)
+    pop.classList.remove('below')
     pop.classList.add('open')
+    // Ha felül nincs elég hely (kilógna a képernyő tetején), lefelé nyisson.
+    requestAnimationFrame(() => {
+      const r = icon.getBoundingClientRect()
+      const popH = pop.offsetHeight
+      if (r.top - popH - 12 < 0 && (r.bottom + popH + 12) < window.innerHeight) {
+        pop.classList.add('below')
+      }
+    })
   }
 
   window.hideDescPopover = function(fieldKey) {
