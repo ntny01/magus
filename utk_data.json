@@ -27499,6 +27499,14 @@
                         },
                         {
                             "type": "paragraph",
+                            "text": "Mivel az Abszolút látásban a szem nem játszik szerepet, a diszciplínát vakok és bekötött szeműek is alkalmazhatják."
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "A diszciplína használata alatt az alkalmazót nem lehet meglepni, ám a tompa koncentráció és a tudat leterheltsége miatt képtelen más diszciplínát vagy varázslatot alkalmazni."
+                        },
+                        {
+                            "type": "paragraph",
                             "text": "Az egyik legősibb alkalmazás, amelyet a Dinamikus pajzs diszciplína alkalmazásából eredeztetnek a délvidéki tudósok. Az alkalmazó a pszi energiát ezúttal nem csak, hogy maga köré gyűjti, de egyfajta szellemi végtagként kinyújtja a kommunikáció célpontja felé. Ezáltal egyfajta csatornát (Mentálfonál) nyitva az elmék között."
                         },
                         {
@@ -28847,6 +28855,58 @@
                         },
                         {
                             "type": "paragraph",
+                            "text": "A bárdok varázshatalmukat tehát az Összhangzat megszólaltatásával tölthetik. Ez mindössze három percet vesz igénybe, ez idő alatt a bárd maximális Mana pont mennyiségét nyerheti vissza. A bárd azonban csak akkor képes az Összhangzat segítségével mágikus energiákhoz jutni, ha a csillagfény szabad szemmel érzékelhető számára – borús ég alatt, zivatar sötétjében képtelen megtalálni a csatornát a Szférákon túli erőkhöz."
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "Alborne a dalok és ünnepek istene, azonban híveit néha erejükön felül is megsegítheti, azaz napjában egyszer a papi mágiához hasonlóan képes hatalmat juttatni szorult helyzetben lévő, arra érdemes dalnokainak. Játéktechnikailag ez annyit tesz, hogy a KM döntésétől függően az Alborne hitű bárdok napjában egyszer fohászkodhatnak mágikus energiákért istenükhöz, de csakis abban az esetben, ha nincs lehetőségük megszólaltatni az Összhangzatot."
+                        },
+                        {
+                            "type": "heading",
+                            "text": "A bárdok mágiája"
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "A széltoló világcsavargók, a kontinens bármely táján látták is meg Ynev egét, mindenütt ugyanazt a mágiaformát használják, melyet még őseik hoztak magukkal korokkal ezelőtt tengerentúli hazájukból. A bárdmágiát lehetetlen vállalkozás könyvekből megtanulni. Talán az egész kontinensen fél tucat kötet, ha akad, amely bárdvarázslatokat tartalmazna. Egyrészt, mert a vándor szemfényvesztők széthúzó társaságából még senki sem vette a fáradtságot, hogy szükségtelenül lejegyezze azokat, másrészt mert is kockáztathatják, hogy tudásuk illetéktelen kezekbe kerüljön. Varázslataikat így mestereiktől, elmondás alapján tanulják; nem tudják, mi miért jön létre, nem ismerik varázshatalmuk forrását, mágiájuk összefüggéseit; csupán felhasználják, de nem tanulmányozzák azt. Éppen ezért ritkaságszámba megy, ha új, eladdig ismeretlen bárdvarázslat tűnik fel, hisz az ilyenek kifejlesztéséhez szükséges tudás köreikben rég feledésbe merült."
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "Csupán egyetlen kivétel akad ez alól: Enika Gwon, Alborne kegyeltjének, a Hetedkor leghíresebb bárdjának gigászi műve, a Legendák és Enigmák. A szóbeszéd szerint ebben az ősi fóliánsban Ynev minden valaha volt legendáját, dalát, történetét lejegyezték, és megtalálható benne a valaha létrehozott összes bárdvarázslat is. Bár avatott körökben esik még szó néhány figyelmet érdemlő kötetről, ám azok közel sem annyira átfogóak, mint Gwon műve."
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "Éppen ezért minden bárd kötelességének érzi, hogy életében legalább egyszer ellátogasson Erigowba, a Legendák Tornyába, ahol Gwon híres könyvének egyetlen hiteles példányát őrzik. A bárdok életükben egyetlen egyszer felkereshetik a tornyot, s abban az esetben, ha méltónak találtatnak rá (6. Tapasztalati szinttől) egy egész napot tölthetnek a könyv tanulmányozásával. Célszerű az efféle igényt jó előre bejelenteni, mivel egyszerre csupán egy bárd tartózkodhat a toronyban, s ezért olykor holdhónapokat kell várni, míg a kérelmező végre sorra kerül."
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "Mint följebb már említést nyert, a bárdok (akárcsak a többi tapasztalati mágiahasználó) csak felhasználói, nem pedig értő művelői mágiájuknak, nem ismerik sem hagyományuk rejtett összefüggéseit, sem a mágia egyetemes törvényszerűségeit."
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "Mágikus formuláikat – ellentétben minden más varázshasználóval – nem kísérik bonyolult taglejtések, vagy a mágiát összefogó, s fókuszban tartó bűvigék, varázsjelek, puszta koncentrációval képesek azok megidézésére."
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "Varázslataik Erőssége egységesen 1-es, és képtelenek ezek erősítésére. Ezen szabályok alól egyedül a Dalmágia képez kivételt, ahol azonban érvényesül az általános szabály, miszerint a varázslat Mana pont költségének többszörözésével az Erősség növelhető."
+                        },
+                        {
+                            "type": "heading",
+                            "text": "Dalmágia"
+                        },
+                        {
+                            "type": "flavor_text",
+                            "text": "„…A barnásvörös gyökérdarabok lassan felizzottak, éles fényt és átható illatot árasztottak. Gorduin félretette a lámpást, ám az még így is elég világosságot adott ahhoz, hogy láthassa a lány elgyötört profilját. Várt pár percet, azután megpengette a húrokat: az egyszerű dallam, akár a füst, egykettőre betöltötte a helyiséget. Eriel halkan felnyögött, mintha valami láthatatlan ellenféllel küzdene; két szeme alatt veríték csillogott. Gorduin gondolt egyet, syrkset keresett, elmélyülten nézegette, azután a gyökérparázshoz érintve meggyújtotta. A Felcsercsarab illata a dohány kesernyés aromájával keveredett, a füst egyre sűrűbb lett a Hajlékban. Sűrű volt, de nem fojtogató, hisz a fedél nem zárt légmentesen, s ahogy ezt az eszébe idézte, a bárd ráébredt, nem vesztegetheti az időt: az értékes pára egy fertályóra alatt biztosan elillan. Megint kézbe vette a lantot, s tovább játszott. A hangok egymásba olvadtak, finom szövedéket alkottak, maguk is parázslani látszottak. Gorduin szabadjára engedte teremtő ösztöneit, befelé fordult, kutakodni kezdett emlékezete kacattárában… Tüstént megjelent előtte a ködülte északi völgy, nem messze Erentől, ahol Gerum a gyógyítás dalaira tanította. Igaz nem játszott, akkoriban sokkal inkább foglalkoztatták képzeletét a másféle dalok: azok, amelyek hatalmat adnak az állatok és az emberek felett; azok, amelyekkel gyönyörködtetni, bájolni, vadítani, irányítani vagy épp parancsolni lehet… Az azóta eltelt évek során magába szívta belőlük, ahogyan a legszilajabb szeretőre is ráun egyszer az ember – s most, hogy a dalból szőtt gyógyító fátyol lassanként aláereszkedett, most volt csak igazán hálás az öregnek, amiért az hajthatatlan maradt, s fejébe verte a valóban hasznos melódiák egész sorát…”"
+                        },
+                        {
+                            "type": "flavor_text",
+                            "text": "Wayne Chapman – A Halál havában"
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "Ynev bárdjai (jóllehet ők maguk sincsenek tisztában ezen besorolással) jártasak az Asztrál- és Mentálvarázslatok használatában, ám azokat csak egy különleges módszer, a Dalmágia segítségével képesek alkalmazni. Ennek gyakorlásához énekelniük vagy muzsikálniuk kell, hogy a dallamok formába öntsék, s célba juttassák a varázslat bennük fókuszálódott energiáit."
+                        },
+                        {
+                            "type": "paragraph",
                             "text": "I. Ebből következően a dalmágia varázslatainak hatótávja hallótávolság, és eredményességének feltétele az is, hogy a kiszemelt alany ne csak belül tartózkodjon a dalmágia varázslatainak hatótávolságán, de hallja is a dalt. Amennyiben a célpont süket, vagy – saját jól felfogott érdekében – fülének befogásával védekezik a mágia ellen, a dal hatástalan marad. Minden esetben a KM feladata eldönteni, hogy az adott szituációban milyen messzire hallatszik el a bárd éneke."
                         },
                         {
@@ -29659,6 +29719,204 @@
                     ]
                 },
                 {
+                    "id": "sec_azaldozat",
+                    "title": "Az áldozat",
+                    "content_blocks": [
+                        {
+                            "type": "paragraph",
+                            "text": "A papok istenüknek, olykor a panteon más istenének is áldozatot mutatnak be. Erre mindig szükség van, valahányszor egy-egy különösen nehéz vagy veszélyes dologba fognak, vagy valamit nagyon szeretnének elérni égi pártfogójuknál. A kegyelt az áldozattal istene jóindulatát, segítségét kéri, jelet vagy jóslatot, kinyilatkoztatást, netán bűnbocsánatot kíván elérni."
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "Az áldozatnak két formája, és nagyon sok – istenenként eltérő – módja van. Közös vonásuk azonban, hogy csak felszentelt vagy az istenségnek különösen kedves helyen hajthatók végre. Ilyen helyek többek között Darton számára a temetők, Antoh-nak a végtelen tenger, Arelnek az emberi kéz által érintetlen ligetek vagy Uwelnek azon helyek, ahol jogos bosszú teljesült be."
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "Az egyik módja, amikor a pap valamilyen számára kedves és fontos dolgot – lehet tárgy, de akár élőlény is – ajánl fel istenének. Ezzel a lemondással utal arra, hogy az isten jóindulata mennyire fontos számára, vagy ha engesztelő áldozatról van szó, hogy mennyire szeretné elnyerni a megbocsátást."
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "A második forma egyszerűbb rituális áldozat, amikor nem saját, hanem istene kedvelt dolgát áldozza fel, juttatja el istenének. Ha a pap elmulaszt áldozatot bemutatni, vagy a kéréshez mérten csekély, netán a bűnhöz mérten nem elég nagy áldozatot mutat be, úgy pártfogója rosszallását fejezi ki, s akár (újabb) Kegy pontok megvonásával is büntetheti."
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "Minden istennek másképp kell áldozni. Álljon itt néhány módozat, s azokon belül néhány példa:"
+                        },
+                        {
+                            "type": "rule",
+                            "title": "Italáldozat",
+                            "text": "A pap földre, tűzbe, vízbe loccsantja istene kedvelt italát. Ez lehet bor, vagy más drága, értékes nedű. A Pyarroni Istencsalád tagjai közül Kyel, Darton, Uwel és Antoh kedveli az italáldozatot. Uwelnek és Dartonnak a papnak saját vérével kevert óbort kell a felszentelt oltárra folyatnia."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "Ételáldozat",
+                            "text": "A pap az oltárra helyezi, istene szent állata elé veti vagy elégeti égi pártfogója kedvelt eledelét. Arel és az elf kalahórák igénylik az efféle áldozatot."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "Tárgyáldozat",
+                            "text": "A pap valamely, az isten által kedvelt tárgyat helyez az oltárra. Van olyan isten (mint például Sogron) akinek a tárgyat el kell égetni. Efféle tárgy lehet értékes szobor vagy fegyver, míg Antoh tengerre bocsájtott apró tutajon úszó áldozati mécsest követel meg."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "Élőáldozat",
+                            "text": "A pap istenének ajánl valamely élőlényt – általában szent állatának kedvelt eledelét. Ezt megteheti úgy is, hogy a templomban vagy szentélyben lakó állat elé veti, de úgy is, hogy előbb az áldozó szertartás során megöli, majd elégeti, tengerbe veti, netán eltemeti. Egyes isteneknél az áldozat véréből inni is kell, míg Ranagol és Tharr hívei között gyakori az emberáldozat, ám ezt a Pyarroni Paktum tiltja, s az emberáldozó papokra az Inkvizítorok Szövetsége is vadászik."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "Egyéb áldozatok",
+                            "text": "Vannak istenek, akik nem elégszenek meg közönséges áldozatokkal. Adron például hívei érzelmeit, Ranagol mások vagy a pap saját kínját követeli meg. Alborne és Della műalkotások létrehozásában leli örömét, míg Ellanának másoknak nyújtott kéjjel áldoznak papnői."
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "Ha az áldozatot elfogadta az istenség, akkor maradványainak nyomuk vész (az oltárról az odahelyezett ajándék, a kupából a maradék néhány csepp ital, az áldozati állat teteme semmivé lesz); ez mindenképpen jó ómen, s azt jelenti, hogy az istenség elégedett."
+                        }
+                    ]
+                },
+                {
+                    "id": "sec_papokvarazslasa",
+                    "title": "A papok varázslása",
+                    "content_blocks": [
+                        {
+                            "type": "paragraph",
+                            "text": "Ynev istenségeinek papjai nem az évezredes hagyományokra épülő tapasztalati varázslás útját járó, vagy a mágiát tudományként szabályok és törvények után kutató mágiahasználókhoz hasonlóan varázsolnak, hanem a hitük erejéből. Abból a hitből, melyet istenükbe vetnek, hogy ő majd csodát tesz, hogy megvédi őket, vagy ha másért nem, hát azért ad hatalmat, hogy bizonyíthassák kiemelkedettségüket. Tehát a papok szintén a mindenütt jelenlévő manát használják fel, jóllehet közvetett módon, fohászaikban istenük vagy az imádott felsőbbrendű lényt kérve, hogy vigye végbe a csodát. Tehát az istenség hatalmából idéződik meg a hatás, a felkent személy hite által nyitott csatornán keresztül."
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "Így játsszák ki az istenek és isteni hatalmú lények a Paktumot, mivel ők maguk nem teremthetnek vagy pusztíthatnak az Anyagi Síkon, hanem közvetlegesen egy szabad akarattal bíró lényre testálják hatalmukat. Azonban ez azt is jelenti, hogy az istenség bármikor megtagadhatja hívétől a csoda teljesítését, ha az nem az ő érdekét szolgálja."
+                        }
+                    ]
+                },
+                {
+                    "id": "sec_istenikegy",
+                    "title": "Az Isteni Kegy",
+                    "content_blocks": [
+                        {
+                            "type": "paragraph",
+                            "text": "Tehát a papok nem az elméjük által összegyűjtött és fókuszált manából, hanem hitük erejéből, azaz az Isteni Kegyből „varázsolnak”. Ez az érték mutatja meg, hogy a pap által imádott természetfeletti entitás mekkora jóindulattal viseltet híve iránt, mekkora kegyben áll nála a fohászkodó halandó. Egy karakter minél magasabb szintre lép, minél több istenének tetsző tettet hajt végre, annál inkább kiérdemli istene figyelmét. Azt, hogy istene mekkora hatalommal ruházza fel, mennyi fohásza talál meghallgattatásra, a Kegy pontjainak száma hivatott szimbolizálni."
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "A papok maximális Kegy pontjainak száma csakis az istenük vallásában megélt elmélyedéstől, hitüknek erejétől függ, amit a szintenként kapott Karakteralkotó pontjaikból vásárolt, illetve a Vallásismeret képzettség bónuszaként kapott Kegy pontok jelölnek. Megjegyzendő még, hogy bizonyos cselekedetek végrehajtásával, mellyel a pap istene jóindulatát keresi, vagy kitüntetett figyelmet érdemel ki, jutalmul újabb Kegy pontokat kaphat. Ezen extra Kegy pontok összegének száma sohasem haladhatja meg a pap vagy kegyelt tapasztalati szintjét."
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "A Kegy pontok mennyisége mutatja meg, hogy a pap mekkora csodát kérhet urától vagy úrnőjétől, mi az a cselekedet, amit egy isteni lényegű hatalom hajlandó egy halandó kérésére végrehajtani, ugyanakkor azt is meghatározza, hogy hányszor kérheti pártfogója segítségét."
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "Egy fohász megidézéséhez a papnak legalább annyi Kegy ponttal kell rendelkeznie, amennyi a fohász leírásának Kegy pont rovatában szerepel, mivel egy fohász megidézése annyi Kegy ponttal csökkenti a pap tartalékát, amennyi a fohász Kegy pont igénye."
+                        },
+                        {
+                            "type": "example",
+                            "title": "Például",
+                            "text": "Ha egy pap Csapás nevezetű fohászt alkalmaz, aminek Kegy pont igénye 4, akkor ha neki 14 Kegy pontja van, könnyedén megidézheti, de ettől Kegy pontjainak száma 10-re csökken. Ha erősítette volna a fohászt, mondjuk újabb 4 pontért, akkor pontjai száma 6-ra zuhanna."
+                        }
+                    ]
+                },
+                {
+                    "id": "sec_kegy_szint",
+                    "title": "Tapasztalati szintenként kapott Kegy pontok",
+                    "content_blocks": [
+                        {
+                            "type": "paragraph",
+                            "text": "A karakteralkotás során megvásárolt Kegyelt Háttér által a karakter valamely felsőbb lény szemében kitüntetett figyelemben részesült elmélyült hite és tettei által, ezért az adott istenség hatalma csatornájává választotta, azaz képessé tette az általa uralt szférák fohászainak megidézésére. A karakter a Kegyelt Háttér felvétele után a Vallásismeret képzettség ismeretének fokától függően kap Kegy pontokat minden Tapasztalati szinten, hiszen ez mutatja meg, hogy mennyire van elmélyedve istene hitében (3. fokon 1 Kegy pontot kap szintenként, 4. fokon 2 Kegy pontot, 5. fokon pedig 3 Kegy pontot)."
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "Ha valamelyik szinten magasabb fokot sajátít el a képzettségből, akkor természetesen a következő szintlépés alkalmával már a nagyobb Kegy pont értéket kapja. Ezen felül minden szintlépéskor a Karakteralkotó Pontjaiból vásárolt Kegy pontok és a szerepjátékkal szerezhető pontok is hozzáadódnak az értékhez."
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "Szintenként szerezhető Maximális Kegy pont: a Vallásismeret képzettségből eredő Kegy pontok + a Tapasztalati szintlépéskor vásárolt pontok + a szerepjáték által szerezhető jutalompontok összege."
+                        }
+                    ]
+                },
+                {
+                    "id": "sec_kegy_szerep",
+                    "title": "Szerepjátékkal szerezhető Kegy pontok",
+                    "content_blocks": [
+                        {
+                            "type": "paragraph",
+                            "text": "A karakter kiemelkedő tetteivel, erejét meghaladó erőfeszítéseivel, cselekedeteivel vagy mélyen hithű, istene tanait, törvényeit tisztelő viselkedésével elnyerheti a fensőbb hatalom elismerését. Kiérdemelve figyelmét pedig az isten is jóval több kegyet juttat számára, azaz megnövekedhet maximális Kegy pontjai száma. Azonban a plusz pontok száma (nem szintenként, hanem összesen) sosem lehet több, mint a karakter Tapasztalati szintje."
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "Egy istenség a KM belátása szerint az alábbi cselekedetek végrehajtásakor jutalmazza, vagy segíti szolgáját, cselekedetenként 1-3 Kegy ponttal:"
+                        },
+                        {
+                            "type": "rule",
+                            "title": "1 Kegy pont",
+                            "text": "Kiemelkedő áldozat (például Ranagol papjának egy nála kiemelkedettebb – tehát nagyobb hatalmú – lény szembesítése önnön kisszerűségével, majd véráldozat bemutatása) vagy a hit tanai szerinti életvitel – legalább tíz esztendő – a legkisebb kihágás nélkül, áldozat bemutatása valamilyen fontosabb feladat végrehajtása előtt."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "2 Kegy pont",
+                            "text": "Komolyabb győzelem egy halálos összecsapásban a hit egyik ellenségével, vagy az isten és az egyház által kívánatosnak tartott komolyabb küldetés, feladat végrehajtása (például Pyarron papjai felszámolják a Romlás Virágainak egyik főszentélyét)."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "3 Kegy pont",
+                            "text": "Az istenség vagy az egyház sorsára pozitívan kiható történelmi eseményben való aktív részvétel (például Amhe-Ramun egyik manifesztációjának felkutatása és legyőzése, leszámolás az egyik ellenséges egyház főpapjával)."
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "Ezek természetesen csak irányelvek, melyeket a KM belátása szerint bővíthet. Ideiglenesen, rövidebb időre (általában a következő szintlépéskor intézett imáig) további Kegy pont is adható többek között:"
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "– Nagy értékű, a pap számára fontos, vagy az istenség hitének egy komoly ellenfelétől elragadott tárgy feláldozásáért, vagy sötétebb hitek esetén emberáldozat bemutatásáért."
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "– Komoly, az isten által sugallt, vagy a hit által sarkallt küldetés végrehajtása közben, vagy halálos veszedelemmel fenyegető próbatétel felvállalása a hit, vagy az egyház érdekében (kiválasztottak, kalahórák, ereklyék felkutatása stb.)."
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "– Ha a pap istene templomát védelmezi, netán a szentélybe hívek menekültek, és most közös imával könyörögnek istennek segítségért."
+                        }
+                    ]
+                },
+                {
+                    "id": "sec_kegy_vissza",
+                    "title": "A Kegy pontok visszaszerzése",
+                    "content_blocks": [
+                        {
+                            "type": "paragraph",
+                            "text": "A pap Kegy pontjait imával, illetve áldozattal, elmélyüléssel, hite gyakorlásával nyerheti vissza. Egy gyors (legalább 20 körig tartó) imával a pap mindig annyi Kegy pontot nyerhet vissza, mint maximális Kegy pontjainak fele. Ezt bármikor, bárhol megteheti, ha van ideje, hogy imájába mélyedjen (kivéve egy nem azonos panteonbéli istenség felszentelt helyén). Azonban akárhányszor imádkozik is, a pap nem kerülhet maximális Kegy pont értéke fölé."
+                        },
+                        {
+                            "type": "example",
+                            "title": "Például",
+                            "text": "Assero atya maximális 20 Kegy pontjából elhasznált 12-t, így maradt neki 8. Mivel temploma és nyája védelmében újabb fohászokat kíván megidézni, ezért gyorsan istenéhez fohászkodik erőért, s imája meghallgatásra talál. Istene hitét és könyörgését 10 Kegy ponttal jutalmazza, így 18 ponttal fog rendelkezni. Ha Assero atya 13 aktuális Kegy ponttal kezdett volna neki az imának, akkor annak befejeztével 20 lenne aktuális Kegy pontjai száma, hiszen efölé nem emelkedhet az érték."
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "Az imák elmulasztása ellenben komoly következményeket von maga után. Minden egyes ima nélkül töltött nap 1-gyel csökkenti a pap maximális Kegy pont értékét, s az így elveszett pontok csak áldozat bemutatásával térnek vissza."
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "Hasonló módon bünteti istenük mindazokat, akik hatalmukat az istenségnek nem tetsző módon használják, netán vétenek a papi regulában meghatározott szabályok ellen. Ilyenkor az istenség a bűn nagyságától függően csökkenti a híve számára juttatott kegy mértékét, tehát maximális Kegy pontjait. Ez kivételes helyzetekben akár a Kegyelt Háttér végleges vagy időleges elvesztésével is járhat. Ilyenkor a papnak hosszas vezekléssel, imákkal és áldozatokkal kell kedveskednie istenének, könyörögve a megbocsátásért."
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "A túlzottan gyakori imádkozás azonban éppúgy megbosszulja magát, mint az imák elmulasztása. Ez természetesen nem azt jelenti, hogy a pap ne intézhetne korlátlan mértékben imákat istenéhez, azonban Kegy pontokért egyetlen napon legfeljebb 8-szor folyamodhat urához vagy úrnőjéhez, ezek után az imák nem találnak meghallgattatásra."
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "A pap megfelelő áldozat bemutatásával azonnal visszanyeri maximális Kegy pont értékét, ezt azonban naponta legfeljebb egyszer alkalmazhatja Kegy pontok visszaszerzéséért; ha megteszi, aznap 2-vel kevesebb imája talál meghallgattatásra."
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "A pap vallása gyakorlásával, szertartások végzésével is visszanyerheti az isten kegyét, akár egy-két óra, vagy a KM által meghatározott időtartam alatt elérheti a maximális értéket."
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "A Kegyeltek manamentes területeken is képesek visszanyerni hatalmukat, mivel a Manaháló felfeslései és szakadásai nem befolyásolják az általuk tisztelt felsőbb lénnyel kialakított csatornát."
+                        }
+                    ]
+                },
+                {
                     "id": "sec_156",
                     "title": "A Szakrális mágia szférái",
                     "content_blocks": [
@@ -29667,6 +29925,43 @@
                             "text": "Az istenek hatalmukkal – mely emberi mércével ugyan korlátlannak tűnik – nem képesek az univerzum minden szféráját egyformán befolyásolni. Vannak olyan szférák, melyekre nagyobb hatalmat gyakorolnak, másokra kisebbet vagy egyáltalán semmilyet. Ez meghatározza azt is, hogy az isten papjai hatalma meddig terjed, a Szakrális mágia mely részeit képes használni. A papi rendek tárgyalásánál leírásra került, hogy mely istenek mely szférákat uralják – e szférákhoz tartozó fohászokat képesek használni az adott isten papjai és paplovagjai. Illetve ezen szférák határozzák meg azt is, hogy mekkora erővel képesek megidézni ezeket a hatalmakat. Azt, hogy egy fohász mely szférához tartozik, a fohász leírásánál a Szféra rovatban adtuk meg.",
                             "headers": [],
                             "rows": []
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "Az istenség papjai az égi patrónusuk által uralt szférák számától függően képesek „varázsolni”. A pap azon fohászokat képes megidézni alaperősítésként 1 E-vel, melyek leírásában szerepel valamely, az istenség által uralt szféra. Minden, a fohász leírásában szereplő, az istenség által uralt további szféra után a szövegben szereplő Kegy pontokért +1 E-vel jön létre."
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "Hacsak a leírás másként nem rendelkezik, a Kegy pontok többszörözésével a varázslat erősítése vagy az időtartama is többszörözhető."
+                        },
+                        {
+                            "type": "example",
+                            "title": "Például",
+                            "text": "Domvik papja, ki ura jóvoltából az Élet, Természet, Lélek szférák felett bír hatalommal, a Mágia szétoszlatása nevezetű fohászt (melynek szférái: Lélek, Élet, Természet, Halál) 3 E-vel hozza létre a fohásznál feltüntetett 2 Kegy pontért, hiszen a fohász megkövetelte szférák közül három felett bír hatalommal. A Kegy pontok többszörözésével a fohász Erősítése is többszöröződik. Tehát egy 2 Kegy pont igényű fohászt, melynek az adott esetben az alap Erőssége 3-as, 4 Kegy pontért 6 E-re, 6 Kegy pontért 9 E-re stb. lehet erősíteni."
+                        },
+                        {
+                            "type": "heading",
+                            "text": "Élet"
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "Az Élet szférájába tartoznak azok a fohászok, melyek az élet megőrzését vagy szebbé tételét szolgálják. A pap e szférába tartozó litániákat és rituálékat csak a leírás szerint lehet használni, tehát ártó szándékkal nem alkalmazhatóak – ezzel hiába is próbálkozna bárki. Az Élet szférába tartozó megidézésekkel szolgálatra bírt lények csak arra utasíthatók, hogy védjék meg a papot valamely veszedelemtől. Közvetlen támadásra vagy pusztításra nem vehetők rá, az efféle parancs hatására a lény azonnal felszabadul a mágia hatása alól. A fohász létrehozásakor a pap szent jelképe ezüstfehéren izzó fényt áraszt."
+                        },
+                        {
+                            "type": "heading",
+                            "text": "Halál"
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "E szférába tartoznak mindazon fohászok, melyek ártó szándékúak, az elmúlást és a pusztulást szolgálják. Végrehajtásukkor a pap szent jelképe vérvörös színben izzik. A Halál szférába tartozó bizonyos fohászok a mágia Nekromancia részébe sorolhatók, így például az elfekre – a Karakteralkotás c. fejezetben a játszható fajoknál leírásánál ismertetett szabályok szerint – különösen veszedelmesek."
+                        },
+                        {
+                            "type": "heading",
+                            "text": "Lélek"
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "A Lélek szférához tartozó fohászok leginkább a lények Asztrál- és Mentáltestére gyakorolnak hatást – az olyan lények ellen, melyek nem rendelkeznek a két fent említett test közül egyikkel sem, a fohászok nem használhatók. Ugyanígy, mindazon lények, akik immunisak az Asztrál- vagy Mentálmágiára, immunisak a Lélek szférába tartozó fohászokra is. A Lélek szférába tartozó fohászok végrehajtásakor a pap szent jelképe aranyszín fényt áraszt."
                         }
                     ]
                 },
@@ -29896,6 +30191,86 @@
                         {
                             "type": "paragraph",
                             "text": "A hit pajzsa nevezetű fohász segítségével a kegyelt egy rövid fohásszal felhívja magára pártfogója figyelmét, hogy óvja meg az elkövetkezendőkben. Az ima nyomán a pap, vagy paplovag hatalma egy, a kegyelt körüli 20 ynevi láb sugarú gömbben nyilvánul meg; itt az időtartam lejártáig minden létrejövő ártó szándékú varázslat, vagy fohász ellen kinyilváníthatja istene hatalmát. Ez annyit tesz, hogy a segített akár 1 szegmenses varázslatokat is képes még létrejöttük előtt szétoszlatni a Mágia szétoszlatása nevezetű fohásznál leírtaknak megfelelően, az ott részletezett Kegy pont mennyiségéért. Azonban a pap képtelen előre felmérni egy megrohanó varázslat erejét, így ha a fohász segítségével ellenségül és nem bír a varázslat szétoszlatásához szükséges Kegy pontokkal, akkor a varázslat a fohász félbeszakadásának pillanatában ismét teljes erősítésével fogan meg."
+                        },
+                        {
+                            "type": "heading",
+                            "text": "Mágiaérzékelés"
+                        },
+                        {
+                            "type": "rule",
+                            "title": "Adatok",
+                            "text": "Szféra: Élet, Halál, Lélek, Természet · Kegy pont: 2 · Fohász hossza: 1 szegmens · Hatótáv: 20 ynevi láb · Időtartam: 10 kör · Mágiaellenállás: lásd a leírást!"
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "A rövid litánia alatt a pap szent szimbólumát, vagy kezét felemelve lassan körbefordul, és megpillantja a csak számára felderengő tárgyakban, személyekben, varázslatokban fénylő mágiát. A fohász segítségével a pap bármely mágikus energiát érzékelhet. Ez sugárzat tárgyakból, személyekből, jelekből, rúnákból is. A fohász a mágia természetét és erősségét nem mutatja meg, csak jelenlétét érzékeli. Ha a célpont varázslat leplezve van, jelenlétét csak akkor fedi fel, ha Erőssége nagyobb a leplezés Erősségénél."
+                        },
+                        {
+                            "type": "heading",
+                            "text": "Mágia kifürkészése"
+                        },
+                        {
+                            "type": "rule",
+                            "title": "Adatok",
+                            "text": "Szféra: Élet, Halál, Lélek, Természet · Kegy pont: 4/8/12 · Fohász hossza: 5 szegmens · Hatótáv: 20 ynevi láb · Időtartam: Egyszeri"
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "A fohász segítségével a pap megtudja, hogy a kifürkészésre szánt varázslat milyen erősítésű, tehát mennyi Mp-ból, vagy Kegy pontból hozták létre. Ily módon nem kell találomra használnia a Mágia szétoszlatását, s nem vesznek el a Kegy pontok, ha rosszul méri fel a lehetőségeit."
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "A második, nagyobb Kegy pont költségű módozattal a pap nemcsak a varázslat erősítését mérheti fel, de megtudja azt is, hogy mely mágikus hagyományba tartozik az adott varázs, és hogy mennyi ideig tart még ki, mielőtt magától szétoszlana."
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "A harmadik esetben a pap egy varázstárgyat fürkészhet ki. Ilyenkor azt istene oltárára kell helyeznie, és úgy végrehajtania a fohászt. Ebben az esetben az istenség felfedi papja előtt a tárgy képességeit, ám a fohász nem árulja el használatának titkát, az esetlegesen szükséges szavakat, mellyel a varázstárgy aktiválható."
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "Természetesen, ha az adott varázslatot vagy varázstárgyat bármiféle leplezés védelmezi, akkor csak úgy jut információkhoz a pap, ha fohásza Erőssége meghaladja a leplezés Erősségét."
+                        },
+                        {
+                            "type": "heading",
+                            "text": "Mágia szétoszlatása"
+                        },
+                        {
+                            "type": "rule",
+                            "title": "Adatok",
+                            "text": "Szféra: Élet, Halál, Lélek, Természet · Kegy pont: 2/E · Fohász hossza: 1 kör · Hatótáv: Kijelölt varázslat · Időtartam: Egyszeri"
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "A litánia szavait elősorolva a pap istene nevében megtagadja a varázslat létezését, majd a fohász befejeztével öklével a szétoszlatni kívánt mágia felé sújt."
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "A fohász alkalmazva a pap képessé válik mindenféle mágiák hatásainak megszüntetésére, ám csakis abban az esetben, ha a fohász Erőssége meghaladja a kiszemelt varázslatba fektetett Mana pontok számát."
+                        },
+                        {
+                            "type": "heading",
+                            "text": "Rendreutasítás"
+                        },
+                        {
+                            "type": "rule",
+                            "title": "Adatok",
+                            "text": "Szféra: Élet, Halál, Lélek, Természet · Kegy pont: 1 · Fohász hossza: 3 szegmens · Hatótáv: 20 ynevi láb sugarú kör · Időtartam: Végleges · Mágiaellenállás: Mentális"
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "Ez a fohász akkor juthat komoly szerephez, ha a papnak magából kikelt hívőkkel kell foglalkoznia. Olyan esetben, melyben a pappal azonos valláskörbe tartozó, a papot más körülmények között tisztelő, esetleg azonos szenvedéllyel vagy személyekkel akadnak problémák. Előfordulhat, hogy az illetők olyan cselekedet végrehajtására készülnek, mely a pap istenének nem tetsző. Amennyiben a pap tudomást szerez erről, a fohásszal – a kellő időben, a kellő helyen – megakadályozhatja a tett végrehajtását. Így megkímélheti a más körülmények között tisztességes híveket, s megmentheti lelkük üdvösségét."
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "A fohász egyszerre több célpontra is alkalmazható, és nem tesz mást, mint ráébreszti a cselekedet végrehajtani szándékozókat a tett valódi hatásaira, következményeire. A pap alakja a fohász pillanatában eleven, félelmetes lelkiismeretként szegül szembe a megtévedt hívők akaratával. Amennyiben azok Mentális Mágiaellenállása sikertelen, feladják szándékukat és belátják a pap igazát."
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "Megjegyzendő, hogy a fohász csak akkor működik, ha a célpontok valóban istenüknek nem tetsző dolgot követtek el, vagy annak elkövetésére készülnek. Amennyiben az előbbi feltétel nem teljesül, a fohásznak semmiféle hatása nem lesz. Különösen jól használható például akkor, ha két hívő vész össze, és egymás torkának ugrana."
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "A fohász – ha a célpontok Mágiaellenállása sikertelen – minden ártalom nélkül visszavezeti az eltévelyedetteket istenükhöz, hitükhöz, meggátolva őket a bűnös tett végrehajtásában. Ez nem kényszerítő erőként, hanem a felébredt lelkiismeretként, a célpont saját döntéseként jelentkezik. Persze a KM is alkalmazhat NJK-papot a kalandozók lelkiismeretének állandó ébrentartására; ezzel több, vallásának nem megfelelően viselkedő játékos közvetett úton történő kordában tartására is lehetőség nyílik."
                         }
                     ]
                 },
@@ -29918,6 +30293,27 @@
                         {
                             "type": "paragraph",
                             "text": "Szféra: Élet, Halál, Lélek, Természet Kegy pont: 8 Fohász hossza: 1 szegmens Hatótáv: Önmagam Időtartam: 6 kör (1 perc)"
+                        },
+                        {
+                            "type": "heading",
+                            "text": "A hatalom szava"
+                        },
+                        {
+                            "type": "rule",
+                            "title": "Adatok",
+                            "text": "Szféra: Élet, Halál, Lélek, Természet · Kegy pont: 1 · Fohász hossza: 1 szegmens · Hatótáv: 20 ynevi láb · Időtartam: Egyszeri"
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "Az igazi hatalommal bírók nemritkán titkolják, mire képesek valójában. Egyszerű, szerény megjelenésük nem árulkodik igazi képességeikről, s ez megtévesztő lehet. Persze a valódi hatalom kisugárzása szinte tapinthatóan árad birtokosából, s ezt látja minden nyitott szemmel, tiszta elmével járó lény. Ám a sok nagyhangú, felületes, csupán a látszatra adó szerencsétlen gyakorta már csak akkor veszi észre, kivel került szembe, ha sértett vérig, amikor már késő, visszakozni lehetetlen. Az efféle fickók megtorpanására szolgál A hatalom szava."
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "A fohász alapja egy mondat elcitálásából áll, melyben a pap fennhangon kijelti saját nevét, égi pártfogóját és világi méltóságát (például „Assero atya vagyok, Dreina felkent főpapja!”), s melynek tisztán és érthetően kell hallatszania 20 ynevi láb körzetben. A papnak közben fel kell mutatnia szent jelképét. Mindenki, aki ezen a területen belül tartózkodik, szembesül a pap valódi hatalmával és tudatára ébred annak, mi mindenre képes az (megismeri kegyelt mivoltát, Tapasztalati szintjét, maximális Kegy pontjainak értékét, valamint tisztában lesz minden világi és vallási rangjával, méltóságával)."
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "A fohász sohasem hazudik, mindig a valóság szerint mutatja be alkalmazóját. A hatalom szavának nincs kényszerítő ereje. Ha a támadók, kötekedők a valódi mivoltot megpillantva sem riadnak meg, a papnak más eszközöket kell keresnie megfékezésükre. Nem Játékos Karakter esetében a KM belátására van bízva, hogy a megismert tudás fényében az NJK féli-e a pap hatalmát."
                         },
                         {
                             "type": "paragraph",
@@ -29962,6 +30358,70 @@
                         {
                             "type": "paragraph",
                             "text": "A fohász a papok bűntől és földi kísértéstől való megtisztulását segíti elő. Új gondolatokat ébreszt, közelebb hozza a papot istenéhez, segít elszakadni a világi örömök gyarlóságától. Első lépésként a papnak el kell szakadnia a mindennapi valóságtól, egyedül kell maradnia gondolataival. Erre a legtökéletesebb, ha egy elhagyatott helyen, netán cellája magányában meditál. A papnak a nap elején napkeltékor elmondania a fohászt, mely egy órás imádkozást és rituális szövegek kántálását jelenti. Ezek után a napot imáknak és meditációnak kell szentelnie."
+                        },
+                        {
+                            "type": "heading",
+                            "text": "Szent fény"
+                        },
+                        {
+                            "type": "rule",
+                            "title": "Adatok",
+                            "text": "Szféra: Élet, Halál, Lélek, Természet · Kegy pont: 1 · Fohász hossza: 1 szegmens · Hatótáv: Speciális · Időtartam: 6 kör (1 perc)"
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "Nevezik az Istenek vezérlő tüzének is. A pap érintésével fényt gyújt valamely tárgyon vagy helyen. E fény 5 ynevi hüvelyk sugarú gömbként, kékesen ragyogva világít. A Szent fény csak olyan tárgyon vagy helyen – élőlényen, élőholton nem! – jelenik meg, melyet Szertartás segítségével felszenteltek. A mágia 5 ynevi lábnyi világosságot ad a legnagyobb sötétben is, és időlegesen eloszlatja a Sötétség-varázs hatását. A Szent fény csak erősebb papi Mágia szétoszlatása fohásszal szüntethető meg, egyéb módon eloltani lehetetlen."
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "A fohász az időtartam alatt figyelmezteti a papot, ha olyan helyre téved, amelynek vallásával ellentétes jellemű kisugárzása van, illetve ha veszély leselkedik rá. Ilyenkor színe egyre mélyül, majd vöröses árnyalatba csap át. A Szent fény időtartama alatt – további Kegy pontok felhasználása nélkül – a pap akaratának megfelelően bármikor kioltható és újraéleszthető."
+                        },
+                        {
+                            "type": "heading",
+                            "text": "Szertartás"
+                        },
+                        {
+                            "type": "rule",
+                            "title": "Adatok",
+                            "text": "Szféra: Élet, Halál, Lélek, Természet · Kegy pont: 3 · Fohász hossza: Speciális · Hatótáv: Speciális · Időtartam: Végleges"
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "A legelső fohász, amit egy papnak felszentelése után megtanítanak, s az átlagemberek leggyakrabban csupán a fohászok ezen formájával találkoznak életük folyamán. Habár vallásonként változnak formái, s egyes hitek többfélét ismernek, mint mások, az alább következő hat szertartást mind alkalmazzák. A leírások pusztán egyszerű vázlatai az eseményeknek."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "1. Templomszentelés",
+                            "text": "Új oltár, szentély vagy templom felavatásakor celebrálják. A felépített helyet a papnak körbe kell járnia, s fennhangon idéznie a szertartás szövegét. A templom vagy szentély ezek után már alkalmas fohászkodásra, áldozat bemutatására, s otthont, támogatást nyújt az azonos vallású hívőknek."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "2. Névadás",
+                            "text": "Ezen szertartás alatt adatik az újszülöttnek a név, melyet élete során viselnie kell."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "3. Felszentelés",
+                            "text": "A szertartással szenteltvíz, és más szentelt tárgy készíthető."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "4. Áldozat",
+                            "text": "Az istentől függő áldozati formula és rituális szöveg, melyet az Áldozat bemutatása közben mormolnak."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "5. Áldás",
+                            "text": "Segítségével a következő év termése biztosíttatik, s nem kell nagyobb természeti katasztrófától sem tartani a megszentelt területen. Legalábbis olyantól nem, amit a pap istene idézne elő."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "6. Összeesketés",
+                            "text": "A szertartással házasság köttetik."
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "A szertartások lefolyása vallásonként nagyon eltérő lehet, így ezek ismertetésére itt nem térünk ki. A papok a legtöbb fenti szertartáshoz különleges, felszentelt füstölőket, gyertyákat, istenüknek szentelt tárgyakat és egyéb kultikus segédeszközöket használnak. Akárcsak az Áldás esetén, a pap itt is istene jóindulatát kéri, s ennek következtében a fohász Erőssége végtelenül magas, hiszen ha valaki meg akarná törni, a közvetlen isteni hatalommal kéne szembeszegülnie."
                         }
                     ]
                 },
@@ -29972,6 +30432,36 @@
                         {
                             "type": "paragraph",
                             "text": "Ez alatt az idő alatt a pap szükségletei szinte nullára esnek vissza, így nem kötik le a test kívánalmai. Napi egy pohár víz és egy szelet kenyér elég táplálék az aszketizmussal töltött nap elején kell koncentrálnia. Az aszketizmust addig kell folytatnia, míg istene jónak látja. Véget vethet önnön sanyargatásának, ha jelet kap istenétől. A fohászt minden aszketizmussal töltött nap elején használni kell (ez teszi lehetővé, hogy a szervezet elviselje a kevés élelem és víz okozta ártalmakat). Az aszketizmus végeztével a pap bűnei megbocsátást nyernek, esetleg istene valamely küldetést ír elő számára, amit teljesítenie kell a bűnbocsánathoz."
+                        },
+                        {
+                            "type": "heading",
+                            "text": "A halál szava"
+                        },
+                        {
+                            "type": "rule",
+                            "title": "Adatok",
+                            "text": "Szféra: Halál · Kegy pont: 5 · Fohász hossza: 1 szegmens · Hatótáv: 10 ynevi láb · Időtartam: Végleges · Mágiaellenállás: Asztrális"
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "A fohász egyetlen rövid túlvilági sikoly, mely egyaránt hallik az Anyagi-, az Asztrál-, illetve a Mentálsíkokon is. Hatására nemcsak az áldozat lelke téphető ki porhüvelyéből, de a közelben állók is pillanatnyi fehéren izzó gyötrelmet élnek át."
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "A pap ezen fohásza képes kiszakítani a lelket a testből, azaz megölni az áldozatot. A fohász létrehozásához a papnak elég egy szót hangosan kimondania. A halál rendkívül fájdalmas, de legalább gyors. Legtöbbször Halál jellemű papok használják – a testből így kiszakított lélek sokszor élőhalottként visszatér, s rettegésben tartja a környéket, ahol meghalt. Ám nemritkán megesik, hogy a lélek bosszút esküszik halálának pillanatában. A varázslat másik mellékhatása, hogy az 1 ynevi mérföldön belül tartózkodó élőholtak, amennyiben nem rendelkeznek személyiséggel, önkéntelenül a varázs helyére gyűlnek, a lélekkel bírók pedig tudomást szereznek a pap jelenlétéről."
+                        },
+                        {
+                            "type": "heading",
+                            "text": "Asztrál-/Mentálfátyol"
+                        },
+                        {
+                            "type": "rule",
+                            "title": "Adatok",
+                            "text": "Szféra: Lélek · Kegy pont: 2 · Fohász hossza: 2 szegmens · Hatótáv: Érintés · Időtartam: 30 kör (5 perc)"
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "A rövid suttogásnyi fohász kezdetkor a papnak választania kell, hogy Asztrál- vagy Mentálfátylat kér-e urától, úrnőjétől. A fohász egyetlen személyre hat, s ha az valamely ok miatt ellenszegülne, akkor sem jogosult Mágiaellenállásra. A fohász alkalmazásakor meg kell érinteni a kijelölt személyt jobb kezével, s eközben kell elmormolni a védő ige szavait. A Fátyol elrejti az Asztrál- vagy Mentáltestet, így megnehezíti annak megtámadását, megfigyelését. Ez annyit jelent, hogy a fohász idejére a célpont Asztrál vagy Mentál Mágiaellenállása minden mágia ellen a Fátyol Erősségével nő. A védelem nem növelhető a varázslat megismétlésével."
                         },
                         {
                             "type": "paragraph",
@@ -37127,6 +37617,180 @@
                         {
                             "type": "paragraph",
                             "text": "Attól kezdve, hogy a Lélek Mentáltesttel bír, közvetlenül a Tudatra gyakorolt Asztrális és Mentális hatásoknak is ellen tud szegülni; mi több, képessé válik arra, hogy másokra hasonló hatást gyakoroljon. A csiszolt elmével bíró ember megtanulta, miként fokozhatja és emelheti tudatossá a lélek eme tudattalati képességét."
+                        }
+                    ]
+                },
+                {
+                    "id": "sec_varazslas",
+                    "title": "A varázslás",
+                    "content_blocks": [
+                        {
+                            "type": "paragraph",
+                            "text": "A varázslás a mágia egy adott cél érdekében történő felhasználását jelenti. Varázslás esetén a mágiahasználó koncentrál, s szabadjára engedi a lelkében raktározott varázserőt, a manát. A testén átáramló mágikus energiákat megfelelő taglejtésekkel (rúnák és rajzolatok levegőbe írásával) valamint varázsigék kántálásával köti meg. A meghatározott mozdulatsor és varázsige mintázata rendezi a mágiahasználóból kiáramló erőket, s beleszövi a mindenséget átható Manaháló szövedékébe. A Manaháló erővonalainak átrendeződésének egyfajta kivetülése az, amit mi mágikus hatásként érzékelünk az Anyagi-, az Asztrál- vagy Mentálsíkon."
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "A mágiahasználó tehát a lelkében tárolt manát használja fel a hatás megidézéshez, tehát fogalmazhatunk úgy is, hogy a varázslás Mana pontba kerül, és a mágia hatalmától függően több vagy kevesebb energiát követel alkalmazójától. Minél hatalmasabb egy varázslat, minél nagyobb változást idéz elő a Manaháló szövedékében, annál több mágikus energiát szipolyoz el megidézőjétől."
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "Mint láthatjuk, a varázshasználók puszta akaratukkal képesek változásokat előidézni a síkokon és az azokat átható erővonalakon, ez azonban az alkalmazótól elmélyült és töretlen összpontosítást igényel; ezért ideje alatt a mágiaforgató csak egyszerű tevékenységet végezhet. Gyalogolhat, léptethet a lovával, harc közben csak védekezhet. Ha bármilyen koncentrációt igénylő, vagy azt megszakító cselekvést végez, a varázslás félbeszakad és a varázslat nem jön létre, a felhasználásra szánt Mana pontok viszont nem vesznek el."
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "Az egyes varázslatok leírásakor több ismétlődő fogalommal találkozhatunk. Ezek a mágia olyan jellemzői, melyek minden varázslat leírásában előfordulnak, s fontos szerepük van a pontos hatás ismertetésében. Az alábbiakban ezek kerülnek bemutatásra."
+                        }
+                    ]
+                },
+                {
+                    "id": "sec_magia_jatek",
+                    "title": "A mágia használata a játékban",
+                    "content_blocks": [
+                        {
+                            "type": "paragraph",
+                            "text": "Yneven a mágia szerves részét képezi a mindennapoknak. Az emberek ritkán találkoznak a varázslás avatott művelőivel, ám hagyományaik részét képezi a különböző természetfeletti entitásokkal való kapcsolat. A babonáikban szereplő szellemek néha nagyon is érzékelhető formában öltenek testet, a gonosz erőktől óvó rajzok pedig nemritkán tényleges hatalommal bírnak."
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "Az ynevi halandó tehát együtt él a mágiával, viszont nem ismeri működését és féli hatalmát. Vannak azonban olyan kiemelkedett emberek, akik képesek rá, hogy uralmuk alá hajtsák a mindenséget átható mágikus erőket, s akaratuk szerint befolyásolják vele mind az anyagi, mind a szellemi világot. Az ilyen emberek közös tulajdonsága, hogy rendelkeznek a Mágikus Fogékonyság Háttérrel, ami lehetővé teszi számukra, hogy valamilyen formában felhasználják a manát. Vannak azonban olyanok is, akik valamely másvilági lény pártfogását élvezik, s ezért rendelkeznek a Kegyelt Háttérrel (bővebben lásd a Szakrális mágia c. fejezetet a 255. oldalon)."
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "Ezen Háttér birtokosai közül sem mind varázshasználó. Sokakban lappang ez a tehetség anélkül, hogy kiaknáznák tudásukat, mások megrekednek a fejlődés egy-egy lépcsőfokán, vagy egyáltalán nem is kívánják magukban a varázserőt, s nyűgként cipelik adottságukat egész életükben."
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "Azon kevesekből pedig, akik képességeiket egy-egy klán, rend, iskola vagy magányos mester segítségével fejlesztik, válnak az igazi mágiahasználók."
+                        }
+                    ]
+                },
+                {
+                    "id": "sec_manapont",
+                    "title": "Mana pont",
+                    "content_blocks": [
+                        {
+                            "type": "paragraph",
+                            "text": "A mágikus hatások létrehozásához minden varázshasználónak mágikus energiákra, Mana pontra van szüksége. Egy mágiahasználó maximális Mana pontja (max. Mp) azt mutatja meg, hogy mennyi manát képes egyszerre tárolni, s ezáltal mekkora az az energia, amit egyszerre felszabadítani képes."
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "A varázslat Mana pont rovata megmutatja, hogy a varázslat megidézése mennyi mágikus energia befektetését, azaz Mp-t követel használójától. Varázslás közben a mágiahasználó a rituális igék kimondásával és a levegőbe írt rúnák segítségével fókuszálja a manát, s formába öntve létrehozza a kívánt hatást."
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "Ilyenkor természetesen a tárolt mana mennyiség csökken – annyival, amennyi a varázslat Mana pont költsége. Ha varázsereje elfogy (aktuális Mana pontjai nullára vagy olyan alacsonyra zuhannak, hogy már képtelen újabb varázslatot létrehozni), újra kell töltenie mágikus tartalékait. Ezt természetesen alvással is megteheti, tehát nem kell vele addig várnia, míg összes hatalma elfogy. Arról, hogy az egyes mágiahasználók hogyan nyerik vissza elvesztett Mana pontjaikat, a különböző klánok, rendek, iskolák, illetve az adott mágiaforma leírásában olvashatsz."
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "Fontos, hogy a varázslat Mana pont igénye 1-es Erősségre vonatkozik. Az Mp-ok többszörözésével az Erősítés, az Időtartam vagy mindkettő növelhető. A Mana pontok duplázásával az Erősség vagy az Időtartam duplájára nő, míg négyszeres Mp-befektetés esetén az Erősség vagy az Időtartam növelhető négyszeresére, vagy a kettő egyszerre a kétszeresére, és így tovább. Amennyiben valamelyik varázslat ettől eltér, arra az adott mágia leírásában külön kitérünk."
+                        }
+                    ]
+                },
+                {
+                    "id": "sec_erosseg",
+                    "title": "Erősség",
+                    "content_blocks": [
+                        {
+                            "type": "paragraph",
+                            "text": "Ez az érték mutatja meg a varázslat hatásfokát, a varázslat által megidézett hatás mértékét. A mágia típusától függően az erősítés kihathat a megidézett mágiával szemben alkalmazható ellenállás leküzdésére, illetve a létrehozott mágia nagyságára. Előbbiről részletesen a Mágiaellenállás leírása tudósít. Az elemi mágia erősségének nagysága minden esetben a megidézett anyag mennyiségében jelenik meg. A legtöbb varázslat Erőssége (E) alapból 1-es, ami a Mana pontok többszörözésével növelhető."
+                        }
+                    ]
+                },
+                {
+                    "id": "sec_varazslas_ideje",
+                    "title": "A varázslás ideje",
+                    "content_blocks": [
+                        {
+                            "type": "paragraph",
+                            "text": "Azt az időtartamot jelenti, amely a varázslat létrehozásához, az idéző igék kántálásához, a mágiát megkötő kézmozdulatok végrehajtásához szükséges. A varázslás ideje általában nem több pár szegmensnél (másodpercnél), ám a nagyobb hatalmú mágiaformák megidézéséhez teljes körökre, olykor percekre van szükség. Általános érvényű szabály, hogy az anyagi mágiák (tehát mindazon varázslatok, amelyek az anyag természetének megváltoztatásával, teremtéssel vagy pusztítással járnak) létrehozásának ideje attól függ, milyen mértékben kívánja a mágiahasználó befolyásolni az Anyagi síkot. Tehát minél komolyabb hatású varázslatot akar megidézni a varázstudó, a varázslás ideje annál hosszabb (általában 1 szegmens a varázslat minden 1 E-je után). Ha a varázslat ettől eltér, azt a leírásában feltüntettük."
+                        }
+                    ]
+                },
+                {
+                    "id": "sec_idotartam",
+                    "title": "Időtartam",
+                    "content_blocks": [
+                        {
+                            "type": "paragraph",
+                            "text": "A varázslat hatásának idejét jelöli, ami igen változó lehet. Vannak, melyek egy röpke pillanat után elenyésznek, másokat csak a megfelelő ellenhatás képes semlegesíteni, s olyanok is vannak, melyek örök időkre fennmaradnak."
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "Az egyszeri hatású varázslatok a megidézés pillanatában fejtik ki hatásukat, majd azonnal szertefoszlanak, csak az általuk okozott változás marad meg. Ilyen például a boszorkánymesteri Villámvarázs, ahol maga a varázslat pillanatnyi, ám az elszenvedett sebződés csak gyógyulás útján tér vissza."
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "Vannak olyan varázslatok, melyek időtartama állandó, egyes esetekben pedig a befektetett varázserőtől függ, hogy meddig fejtik ki hatásukat."
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "Egyes varázslatok hatása maradandó, tehát nem foszlik szét, hanem véglegesen megmarad, hacsak egy másik varázslat vagy meghatározott körülmény véget nem vet neki."
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "Az összpontosítást igénylő varázslatok pedig csak addig maradnak fenn, míg az alkalmazó figyelmét a mágia fenntartásának szenteli, tehát a varázslatra koncentrál. Amennyiben valamilyen körülmény miatt a koncentráció megszakad, úgy a varázslat általában szertefoszlik."
+                        }
+                    ]
+                },
+                {
+                    "id": "sec_magiaellenallas",
+                    "title": "Mágiaellenállás",
+                    "content_blocks": [
+                        {
+                            "type": "paragraph",
+                            "text": "Egyes varázslatok hatása nem az alkalmazót veszi célba, hanem más személyekre, élőlényekre hat. A célpontok azonban nem feltétlenül szándékoznak alávetni magukat a mágikus hatásnak, s ilyenkor van helye a Mágiaellenállásnak. Minden teremtett lény rendelkezik a külső behatások elleni bizonyos fokú védelemmel, amit lelke bocsát ki az őt hordozó testre, s amit Személyes Aurának nevezünk. Viszont nem minden varázslat ellen véd ez a fajta ellenállás."
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "A Mágiaellenállás megmutatja, mi módon védekezhet a megtámadott a varázslat ellen. Ha a varázslat leírásánál ilyen rovat nem szerepel, úgy nincs mód a varázslat ellen semmiféle ellenállásra. Az Asztrál- és Mentálmágia ellen minden esetben lehetőség nyílik Mágiaellenállásra, a Karakteralkotás c. fejezet idevágó részében leírtak szerint (lásd a 19. oldalon):"
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "A mágiát alkalmazó dob 1k10-zel és ezt hozzáadja a varázslat Erősségéhez. Amennyiben az így kapott eredmény nagyobb, mint a célpont Mágiaellenállása, akkor a varázslat sikeres és a leírás szerint hat. Ha kisebb vagy egyenlő, akkor az ellenállás sikeres volt, a mágia hatástalan marad."
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "Asztrális támadás esetén a védekező Asztrális Mágiaellenállása (AME) egyenlő az Asztrál Tulajdonságával, amihez hozzájárul még az Asztrálteste köré épített Ψ-pajzsok Erőssége, valamint az egyéb óvó amulettek, varázslatok, illetve különleges hatások Erőssége."
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "Mentális támadás esetén a védekező Mentális Mágiaellenállása (MME) egyenlő az Akaraterő Tulajdonságával, amihez hozzájárul a Mentálteste köré épített Ψ-pajzsok Erőssége, valamint az egyéb óvó amulettek, varázslatok és különleges hatások Erőssége."
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "A célpont számára hasznos mágiákkal szemben is érvényesül a karakter Tudatalatti Mágiaellenállása (TME), illetve pszi pajzsai, vagy egyéb védelme, míg ezeket le nem bontja, vagy el nem távolítja. A TME időszakos megszüntetésére csakis a Tudatnyitás nevezetű pszi diszciplínával van lehetőség, az ott leírtak szerint."
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "Az Asztrális és Mentális támadások ellen a korábbiak mellett még az igazi elmélyült hit is védelmet adhat. Erről bővebbet a Szakrális mágia c. fejezetben a 255. oldalon olvashatsz."
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "Az Elemi, illetve a Természeti mágiák ellen ME nincs, hacsak a leírásban ez másképp nem szerepel."
+                        }
+                    ]
+                },
+                {
+                    "id": "sec_hatotav",
+                    "title": "Hatótáv",
+                    "content_blocks": [
+                        {
+                            "type": "paragraph",
+                            "text": "A Hatótáv azt mutatja meg, hogy az adott varázslatot milyen távolságon belül lehet alkalmazni – legfeljebb milyen messze lehet a célpont a mágiahasználótól. A varázslatok Hatótávja igen változó: vannak, melyek csak az alkalmazóra hatnak, mások egy meghatározott távolságon belül fejtik ki hatásukat, míg egyes esetekben elengedhetetlen feltétel, hogy az alkalmazó megérintse áldozatát."
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "Az érintést igénylő varázslatok és fohászok esetében, ha a varázslási idő letelte után az alkalmazónak egy körön belül nem sikerül megérintenie az áldozatot, a varázslat vagy a fohász hatástalan marad és a Mana illetve Kegy pontok elvesznek (kivéve, ha erről a leírás másképp rendelkezik). Ha a célpont ebbe nem egyezik bele, úgy a mágiahasználónak sikeres Támadó dobást kell tennie."
+                        }
+                    ]
+                },
+                {
+                    "id": "sec_ossz_tabla",
+                    "title": "Összefoglaló táblázatok",
+                    "content_blocks": [
+                        {
+                            "type": "paragraph",
+                            "text": "A különböző mágiaformák részletes taglalása után találhatsz egy, a varázslatok ismérveit összefoglaló táblázatot. Ezekből a varázslat legtöbb fontos tulajdonsága megtudható, melyek segítségével rövid gyakorlás után szükségtelenné válik a részletes leírás fellapozása, s a játék ezáltal gördülékenyebbé, jelentősen gyorsabbá tehető."
                         }
                     ]
                 },

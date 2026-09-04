@@ -51,7 +51,7 @@ const sb = supabase.createClient(
         radial-gradient(ellipse at 80% 80%,rgba(16,185,129,.06) 0%,transparent 40%),
         radial-gradient(ellipse at 50% 50%,rgba(30,10,60,.4) 0%,transparent 70%),
         linear-gradient(160deg,#020617 0%,#050e1f 50%,#020a14 100%);
-      color:var(--text); min-height:100vh; overflow-x:hidden; overscroll-behavior-y:none;
+      color:var(--text); min-height:100vh; overflow-x:clip; overscroll-behavior-y:none;
     }
 
     /* ===== PARTICLES ===== */
@@ -723,7 +723,7 @@ const sb = supabase.createClient(
       .info-grid{grid-template-columns:repeat(2,1fr);}
       .boxes-grid{grid-template-columns:repeat(2,1fr);}
     }
-    html{overflow-x:hidden;background:#03060f;color-scheme:dark;overscroll-behavior-y:none;}
+    html{overflow-x:clip;background:#03060f;color-scheme:dark;overscroll-behavior-y:none;}
   </style>
     <link rel="stylesheet" href="magus_ui.css?v=1"><script src="magus_avatar.js?v=4"></script>
 </head>
