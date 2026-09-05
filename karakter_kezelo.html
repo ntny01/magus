@@ -1696,11 +1696,11 @@ const sb = supabase.createClient(
       setTimeout(trySetUsername, 50)
     }
   }
-  setTimeout(trySetUsername, 100)
+  setTimeout(trySetUsername, 100);
 
   // App-menü (☰): a tool-gombok + user felugró menübe telefonon/tableten.
-  (function(){
-    function initAM(){ if (window.MagusAppMenu) MagusAppMenu.mount({ menu:'.io-tools', header:'.io-bar', user:'.user-chip' }); }
+  ;(function(){
+    function initAM(){ if (window.MagusAppMenu) MagusAppMenu.mount({ menu:'.io-tools', header:'.io-bar' }); }
     if (document.readyState !== 'loading') initAM();
     else document.addEventListener('DOMContentLoaded', initAM);
   })();
