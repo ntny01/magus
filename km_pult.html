@@ -35,6 +35,7 @@ const sb = supabase.createClient(
     <link rel="icon" href="assets/logo/compass-logo.png">
     <script src="magus_szotar.js"></script>
     <link rel="stylesheet" href="magus_ui.css?v=1"><script src="magus_avatar.js?v=4"></script>
+    <link rel="stylesheet" href="magus_appmenu.css?v=1"><script src="magus_appmenu.js?v=1"></script>
     <style>
         /* ===== AZ INDEX.HTML RECEPTJE: BETŰTÍPUSOK ÉS GENERÁLT AMBIENT SZÍNEK ===== */
         @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap');
@@ -504,26 +505,17 @@ const sb = supabase.createClient(
                 overflow-x: hidden;
             }
 
-            /* Oldalsáv: vízszintes, görgethető gombsor a tetején */
-            .km-sidebar {
-                position: static;
-                width: 100%; height: auto;
-                flex-direction: row; flex-wrap: nowrap;
-                align-items: center; gap: .4rem;
-                overflow-x: auto; overflow-y: hidden;
-                -webkit-overflow-scrolling: touch; scrollbar-width: none;
-                padding: .5rem .6rem;
-                border-right: none; border-bottom: 1px solid var(--border-color);
-            }
-            .km-sidebar::-webkit-scrollbar { display: none; }
-            .km-sidebar .side-label { display: none; }
+            /* Oldalsáv → app-menü (☰): a magus_appmenu.css alakítja felugró panellé.
+               Itt csak a menü-tartalom stílusa (teljes szélességű gombok, szekció-fejlécek). */
             .km-sidebar .side-toggle { display: none; }
-            .km-sidebar .side-campaign { display: contents; }
-            .side-select { width: auto; max-width: 190px; flex: 0 0 auto; margin-bottom: 0; }
-            .side-btn { width: auto; flex: 0 0 auto; white-space: nowrap; min-height: 40px; }
+            .km-sidebar .side-label { display: block; }       /* szekció-fejlécek a menüben */
+            .km-sidebar .side-campaign { display: flex; flex-direction: column; gap: .3rem; }
+            .side-select { width: 100%; max-width: none; flex: none; margin-bottom: 0; }
+            .side-btn { width: 100%; justify-content: flex-start; white-space: nowrap; min-height: 44px; }
             .side-btn .side-txt { display: inline; }
             .side-spacer { display: none; }
-            .side-json-row { flex: 0 0 auto; flex-direction: row; gap: .4rem; }
+            .side-json-row { flex-direction: row; gap: .4rem; }
+            .side-json-row .side-btn { flex: 1; }
 
             .km-main {
                 padding: 0.75rem !important;
@@ -1169,6 +1161,13 @@ const sb = supabase.createClient(
                     if (t) { t.textContent = '▶'; t.title = 'Menü kinyitása'; }
                 }
             } catch (e) {}
+        })();
+
+        // App-menü (☰): az oldalsáv felugró menübe telefonon/tableten.
+        ;(function(){
+            function initAM(){ if (window.MagusAppMenu) MagusAppMenu.mount({ menu: '.km-sidebar', header: 'header', user: '.header-user' }); }
+            if (document.readyState !== 'loading') initAM();
+            else document.addEventListener('DOMContentLoaded', initAM);
         })();
 
         /* ===== BATTLEMAP GALÉRIA =====
