@@ -27145,7 +27145,7 @@
                 },
                 {
                     "id": "sec_143",
-                    "title": "A Neszezoklán transzepsz noviciátushoz",
+                    "title": "A diszciplínák és általános szabályaik",
                     "content_blocks": [
                         {
                             "type": "paragraph",
@@ -27166,9 +27166,15 @@
                         {
                             "type": "paragraph",
                             "text": "II. A diszciplínák alap erősítése 1 E, az alkalmazásnál feltüntetett Ψ-pont érték újabb többszörözésével a diszciplina Erőssége növelhető."
-                        },
+                        }
+                    ]
+                },
+                {
+                    "id": "sec_pyarroni_disc",
+                    "title": "A Pyarroni Módszer diszciplínái",
+                    "content_blocks": [
                         {
-                            "type": "paragraph",
+                            "type": "heading",
                             "text": "A Pyarroni Módszer diszciplínái"
                         },
                         {
@@ -27635,7 +27641,7 @@
                 },
                 {
                     "id": "sec_148",
-                    "title": "5. fokú diszciplínák",
+                    "title": "5. fokú diszciplínák (Pyarroni Módszer)",
                     "content_blocks": [
                         {
                             "type": "paragraph",
@@ -27644,9 +27650,15 @@
                         {
                             "type": "paragraph",
                             "text": "Az uralom szintje egyes bölcselők és diplomata-kémek elgondolása szerint az újrafelfedezett godoni hagyaték része, s a Fehér Páholy nagyjai már évek óta birtokolják. Erről azonban egyelőre még senkinek sem sikerült megbizonyosodnia."
-                        },
+                        }
+                    ]
+                },
+                {
+                    "id": "sec_kyr_disc",
+                    "title": "A Kyr Metódus diszciplínái",
+                    "content_blocks": [
                         {
-                            "type": "paragraph",
+                            "type": "heading",
                             "text": "A Kyr Metódus diszciplínái"
                         },
                         {
@@ -27758,7 +27770,7 @@
                 },
                 {
                     "id": "sec_149",
-                    "title": "3. fokú diszciplínák (folytatás)",
+                    "title": "A Kyr Metódus diszciplínái (folytatás)",
                     "content_blocks": [
                         {
                             "type": "paragraph",
@@ -27808,7 +27820,7 @@
                 },
                 {
                     "id": "sec_150",
-                    "title": "4. fokú diszciplína",
+                    "title": "A Slan Út diszciplínái",
                     "content_blocks": [
                         {
                             "type": "paragraph",
@@ -27965,11 +27977,11 @@
                     ]
                 },
                 {
-                    "id": "sec_151",
-                    "title": "Pszi diszciplínák",
+                    "id": "sec_disc_pyarroni_tabla",
+                    "title": "A Pyarroni Módszer diszciplínái (áttekintő táblázat)",
                     "content_blocks": [
                         {
-                            "type": "paragraph",
+                            "type": "heading",
                             "text": "A Pyarroni Módszer diszciplínái"
                         },
                         {
@@ -28183,9 +28195,15 @@
                                     "—"
                                 ]
                             ]
-                        },
+                        }
+                    ]
+                },
+                {
+                    "id": "sec_disc_godoni_tabla",
+                    "title": "A Godoni Örökség diszciplínái (áttekintő táblázat)",
+                    "content_blocks": [
                         {
-                            "type": "paragraph",
+                            "type": "heading",
                             "text": "A Godoni Örökség diszciplínái"
                         },
                         {
@@ -28228,9 +28246,15 @@
                                     "—"
                                 ]
                             ]
-                        },
+                        }
+                    ]
+                },
+                {
+                    "id": "sec_disc_kyr_tabla",
+                    "title": "A Kyr Metódus diszciplínái (áttekintő táblázat)",
+                    "content_blocks": [
                         {
-                            "type": "paragraph",
+                            "type": "heading",
                             "text": "A Kyr Metódus diszciplínái"
                         },
                         {
@@ -28318,9 +28342,15 @@
                                     "—"
                                 ]
                             ]
-                        },
+                        }
+                    ]
+                },
+                {
+                    "id": "sec_disc_slan_tabla",
+                    "title": "A Slan Út diszciplínái (áttekintő táblázat)",
+                    "content_blocks": [
                         {
-                            "type": "paragraph",
+                            "type": "heading",
                             "text": "A Slan Út diszciplínái"
                         },
                         {
@@ -28453,7 +28483,13 @@
                                     "Akaraterőpróba"
                                 ]
                             ]
-                        },
+                        }
+                    ]
+                },
+                {
+                    "id": "sec_disc_fak",
+                    "title": "Diszciplína-fák (Tudat és Test)",
+                    "content_blocks": [
                         {
                             "type": "paragraph",
                             "text": "Tudat fa"
@@ -49721,11 +49757,13 @@
                         {
                             "type": "paragraph",
                             "text": "A Xing általában magányos, még a hozzá hasonlók társaságát sem kedveli. Félelmetes harci technikái miatt még a démonurak és -hercegek is tartanak tőle, s ritkán szorítják engedelmességre. A Xing a démoni síkok kóbor lovagja. Megidézésétől is ajánlatos tartózkodni, hisz legfeljebb ártó mágiák kilátásba helyezésével lehet sakkban tartani, de tartsuk észben, hogy intelligens, könnyen átlát a szitán, és nem szenvedheti, ha ellenfele blöfföl."
-                        },
-                        {
-                            "type": "heading",
-                            "text": "Sárkányok"
-                        },
+                        }
+                    ]
+                },
+                {
+                    "id": "sec_253",
+                    "title": "Sárkányok",
+                    "content_blocks": [
                         {
                             "type": "paragraph",
                             "text": "Ős-sárkányok és korcs sárkányok"
@@ -49742,54 +49780,6 @@
                             "type": "paragraph",
                             "text": "Egy sárkány annál nagyobb és veszedelmesebb, minél öregebb; de természetesen az ős-sárkányok a leghatalmasabbak. Egy kifejlett ős-sárkány eléri a 80-150 ynevi lábnyi hosszúságot, s a feje 35-40 ynevi láb magasra képes emelni. Ezzel szemben a legnagyobb korcs sárkány is legfeljebb 70 ynevi láb hosszú, s nem ritka közöttük a 15 ynevi lábnyi „apróság” sem."
                         },
-                        {
-                            "type": "paragraph",
-                            "text": "A sárkányok nagy testű, súlyos, ellenben igen gyors teremtmények. Ha végtagjaikkal fizikailag támadnak, KÉ-jük gyakorlatilag 30."
-                        },
-                        {
-                            "type": "table",
-                            "headers": [
-                                "Támadás",
-                                "TÉ",
-                                "Sp"
-                            ],
-                            "rows": [
-                                [
-                                    "Mancs csapás",
-                                    "80-120",
-                                    "5k6-7k6"
-                                ],
-                                [
-                                    "Farok csapás",
-                                    "100-130",
-                                    "10k6-14k6"
-                                ],
-                                [
-                                    "Harapás",
-                                    "140-160",
-                                    "4k6-8k6"
-                                ],
-                                [
-                                    "Tűzlehelet*",
-                                    "CÉ: 60-70",
-                                    "Lásd a leírást"
-                                ]
-                            ]
-                        },
-                        {
-                            "type": "paragraph",
-                            "text": "* a tűzlehelet lásd később!"
-                        },
-                        {
-                            "type": "paragraph",
-                            "text": "A sárkányok óriásiak, ennek megfelelően TÉ-jük nagy. Küzdelemben mellső két mancsukat, és ostorszerűen csapkodó farkukat használják, s ha megszorulnak, harapnak is. Hosszú nyakukkal meglepően messzire elérnek, s fejüket többi végtagjukhoz képest váratlan fürgeséggel mozgatják. Természetesen a felsorolt támadási módok közül koronként mindegyiket legfeljebb egyszer alkalmazhatják – de akár egyidejűleg is. A következő táblázat arra tudósít, melyik támadási mód mennyire hatékony, s találat esetén milyen sebzést okoz az ellenfélnek."
-                        }
-                    ]
-                },
-                {
-                    "id": "sec_253",
-                    "title": "Sárkányok",
-                    "content_blocks": [
                         {
                             "type": "heading",
                             "text": "A sárkány, mint szörnyeteg"
@@ -49987,9 +49977,15 @@
                         {
                             "type": "paragraph",
                             "text": "A sárkányok nem rendelkeznek a Pszi semmilyen formájával és immunisak annak minden rájuk irányuló hatásával szemben. Azonban faji mentális képességeik leginkább a Kyr metódusnak megfeleltethető képességekkel ruházzák fel őket. Nem hat rájuk az Asztrálmágia és Mentálmágia sem; pikkelyeiknek köszönhetően a tűz semmilyen megnyilvánulása, még az Őstűz sem sebzi testüket."
-                        },
+                        }
+                    ]
+                },
+                {
+                    "id": "sec_best_tulvilagi",
+                    "title": "Túlvilági teremtmények",
+                    "content_blocks": [
                         {
-                            "type": "paragraph",
+                            "type": "heading",
                             "text": "Túlvilági teremtmények"
                         },
                         {
@@ -50055,7 +50051,13 @@
                         {
                             "type": "paragraph",
                             "text": "Ha a halott lelke egy közelmúltban meghalt másik lény testébe kerül, a létrejövő lény Homunkulusz. Természetesen az Élet princípiuma e teremtményben nem található meg."
-                        },
+                        }
+                    ]
+                },
+                {
+                    "id": "sec_best_zombi",
+                    "title": "Zombi (Zaurak)",
+                    "content_blocks": [
                         {
                             "type": "heading",
                             "text": "Zombi (Zaurak)"
@@ -50156,7 +50158,13 @@
                         {
                             "type": "paragraph",
                             "text": "Testük lehet ép holttest, de akár összeaszott csontváz is. A bomlás akármilyen szakában is lett belőlük élőholt, rothadásuk azon a fokon megállt, azonban állandóan az elmúlás szaga lengi őket körül."
-                        },
+                        }
+                    ]
+                },
+                {
+                    "id": "sec_best_crantaikoborlo",
+                    "title": "Crantai Kóborló",
+                    "content_blocks": [
                         {
                             "type": "heading",
                             "text": "Crantai Kóborló"
@@ -50270,7 +50278,7 @@
                 },
                 {
                     "id": "sec_254",
-                    "title": "Crantai Haláltörvény",
+                    "title": "Crantai Haláltörvény (Vérfarkas)",
                     "content_blocks": [
                         {
                             "type": "paragraph",
@@ -50307,100 +50315,13 @@
                         {
                             "type": "paragraph",
                             "text": "Mint minden egyéb lelket, a vérfarkast is be lehet börtönözni Lélekcsapda varázsjellel – a neve ismeretében."
-                        },
-                        {
-                            "type": "heading",
-                            "text": "Vámpír"
-                        },
-                        {
-                            "type": "table",
-                            "headers": [
-                                "Jellemző",
-                                "Érték"
-                            ],
-                            "rows": [
-                                [
-                                    "Előfordulás",
-                                    "Nagyon ritka"
-                                ],
-                                [
-                                    "Megjelenők száma",
-                                    "1"
-                                ],
-                                [
-                                    "Termet",
-                                    "E"
-                                ],
-                                [
-                                    "Méretkategória",
-                                    "1"
-                                ],
-                                [
-                                    "Sebesség",
-                                    "100 (SZ)"
-                                ],
-                                [
-                                    "Időigény",
-                                    "3 vagy fegyver szerint"
-                                ],
-                                [
-                                    "Kezdeményező érték",
-                                    "32"
-                                ],
-                                [
-                                    "Támadó érték",
-                                    "80"
-                                ],
-                                [
-                                    "Védő érték",
-                                    "120"
-                                ],
-                                [
-                                    "Sebzés",
-                                    "1k6 vagy fegyver"
-                                ],
-                                [
-                                    "Életerő pontok",
-                                    "40"
-                                ],
-                                [
-                                    "Fájdalomtűrés pontok",
-                                    "–"
-                                ],
-                                [
-                                    "Asztrál ME",
-                                    "Immunis"
-                                ],
-                                [
-                                    "Mentál ME",
-                                    "Immunis"
-                                ],
-                                [
-                                    "Méregellenállás",
-                                    "Immunis"
-                                ],
-                                [
-                                    "Intelligencia",
-                                    "Magas"
-                                ],
-                                [
-                                    "Jellem",
-                                    "Káosz, Halál"
-                                ],
-                                [
-                                    "Tapasztalati pont",
-                                    "40"
-                                ],
-                                [
-                                    "Necrografiai osztály",
-                                    "III. vérivó élőholt"
-                                ]
-                            ]
-                        },
-                        {
-                            "type": "paragraph",
-                            "text": "A vámpír minden élőholtak közül a legveszedelmesebb, legravaszabb ellenfél, hiszen ránézésre nem lehet megállapítani kilétét. Megjelenését tekintve általában magas, délceg tartású emberre hasonlít, kemény, határozott arcvonásokkal. Bőre sápadt, ajkai teltek és vörösek – ám ezen jegyek alapján szinte semmivel nem könnyebb felismerni, hisz nem csupán rá jellemzőek. Hosszúra nőtt szemfogukat a vámpírok az utolsó pillanatig gondosan rejtve tartják. Viselkedésük minden esetben tiszteletet parancsoló, lényüket egyfajta fölényesség lengi körül. Tekintetüket kevés ember képes hosszan állni."
-                        },
+                        }
+                    ]
+                },
+                {
+                    "id": "sec_best_koborlelek",
+                    "title": "Kóbor lélek (Hekator)",
+                    "content_blocks": [
                         {
                             "type": "heading",
                             "text": "Kóbor lélek (Hekator)"
@@ -50509,7 +50430,13 @@
                         {
                             "type": "paragraph",
                             "text": "Az elérendő cél sok minden lehet, ami csak egy őrült elmében felmerülhet. Lehet, hogy életében az aranycsinálás titkát kereste és nem nyugodhat, amíg meg nem találta; talán kedvese gyilkosán akar bosszút állni, vagy más efféle. Természetesen amint elérte célját, megszűnik élőholt lenni, és visszatér a reinkarnáció rendes körforgásába."
-                        },
+                        }
+                    ]
+                },
+                {
+                    "id": "sec_best_syvan",
+                    "title": "Syvan",
+                    "content_blocks": [
                         {
                             "type": "heading",
                             "text": "Syvan"
@@ -50610,9 +50537,102 @@
                     ]
                 },
                 {
-                    "id": "sec_255",
-                    "title": "A vámpír és az árny",
+                    "id": "sec_best_vampir",
+                    "title": "Vámpír",
                     "content_blocks": [
+                        {
+                            "type": "heading",
+                            "text": "Vámpír"
+                        },
+                        {
+                            "type": "table",
+                            "headers": [
+                                "Jellemző",
+                                "Érték"
+                            ],
+                            "rows": [
+                                [
+                                    "Előfordulás",
+                                    "Nagyon ritka"
+                                ],
+                                [
+                                    "Megjelenők száma",
+                                    "1"
+                                ],
+                                [
+                                    "Termet",
+                                    "E"
+                                ],
+                                [
+                                    "Méretkategória",
+                                    "1"
+                                ],
+                                [
+                                    "Sebesség",
+                                    "100 (SZ)"
+                                ],
+                                [
+                                    "Időigény",
+                                    "3 vagy fegyver szerint"
+                                ],
+                                [
+                                    "Kezdeményező érték",
+                                    "32"
+                                ],
+                                [
+                                    "Támadó érték",
+                                    "80"
+                                ],
+                                [
+                                    "Védő érték",
+                                    "120"
+                                ],
+                                [
+                                    "Sebzés",
+                                    "1k6 vagy fegyver"
+                                ],
+                                [
+                                    "Életerő pontok",
+                                    "40"
+                                ],
+                                [
+                                    "Fájdalomtűrés pontok",
+                                    "–"
+                                ],
+                                [
+                                    "Asztrál ME",
+                                    "Immunis"
+                                ],
+                                [
+                                    "Mentál ME",
+                                    "Immunis"
+                                ],
+                                [
+                                    "Méregellenállás",
+                                    "Immunis"
+                                ],
+                                [
+                                    "Intelligencia",
+                                    "Magas"
+                                ],
+                                [
+                                    "Jellem",
+                                    "Káosz, Halál"
+                                ],
+                                [
+                                    "Tapasztalati pont",
+                                    "40"
+                                ],
+                                [
+                                    "Necrografiai osztály",
+                                    "III. vérivó élőholt"
+                                ]
+                            ]
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "A vámpír minden élőholtak közül a legveszedelmesebb, legravaszabb ellenfél, hiszen ránézésre nem lehet megállapítani kilétét. Megjelenését tekintve általában magas, délceg tartású emberre hasonlít, kemény, határozott arcvonásokkal. Bőre sápadt, ajkai teltek és vörösek – ám ezen jegyek alapján szinte semmivel nem könnyebb felismerni, hisz nem csupán rá jellemzőek. Hosszúra nőtt szemfogukat a vámpírok az utolsó pillanatig gondosan rejtve tartják. Viselkedésük minden esetben tiszteletet parancsoló, lényüket egyfajta fölényesség lengi körül. Tekintetüket kevés ember képes hosszan állni."
+                        },
                         {
                             "type": "paragraph",
                             "text": "Az alaposabb megfigyelő azonban bizonyos jelekből következtethet egy illető vámpír mivoltára. A vámpír sosem vet árnyékot, képe nem látszik a tükörben, lépte sohasem hallatszik, retteg a fokhagyma szagától, és sohasem mutatkozik, míg a nap ragyog."
@@ -50640,7 +50660,13 @@
                         {
                             "type": "paragraph",
                             "text": "A vámpír az egyetlen élőhalott, amelynek van még valami köze az élethez. Nemcsak megjelenésekor kelti eleven ember benyomását – szeretkezni is képes, mégpedig a játékrendszerben szereplő 5. fokon. Természetesen az ilyen aktusból utód nem származhat."
-                        },
+                        }
+                    ]
+                },
+                {
+                    "id": "sec_255",
+                    "title": "Árny (Arich)",
+                    "content_blocks": [
                         {
                             "type": "heading",
                             "text": "Árny (Arich)"
@@ -50814,7 +50840,13 @@
                         {
                             "type": "paragraph",
                             "text": "Ha a Lesath anyagi testet ölt, vonatkozik rá a fent jelölt Ép-érték. Ez az érték azonban csak az anyagi test jellemzi: ha a pontok elfogynak, az anyagi test szertefoszlik, és a Lesath egy teljes napig nem képes újat összeállítani, minek következtében nem képes fizikai kapcsolatba lépni az Anyagi Síkkal. Ez idő alatt – magától értetődően – nem használhat fegyvert, nem használhat Anyagi mágiát sem. A Lesath valódi, légies teste csak akkor szenved sérülést, ha Ép-t sebeznek rajta."
-                        },
+                        }
+                    ]
+                },
+                {
+                    "id": "sec_best_egyeb",
+                    "title": "Egyéb Bestiák",
+                    "content_blocks": [
                         {
                             "type": "heading",
                             "text": "Egyéb Bestiák"
@@ -50963,7 +50995,13 @@
                         {
                             "type": "paragraph",
                             "text": "Méretükre nézve a Szolgák ember nagyságúak, a Harcosok közelebb állnak a 3 ynevi láb magassághoz, azaz nagy méretűek."
-                        },
+                        }
+                    ]
+                },
+                {
+                    "id": "sec_best_erdopille",
+                    "title": "Erdőpille",
+                    "content_blocks": [
                         {
                             "type": "heading",
                             "text": "Erdőpille"
@@ -51072,7 +51110,13 @@
                         {
                             "type": "paragraph",
                             "text": "Komolyabb mérgeket kizárólag nagytestű lények ellen használnak – saját viszályaikat félretéve, csapdák és szilánknyi szálfegyverek segítségével igyekeznek rendezni. Az elaltatott vagy megölt személyt szinte mindig megszabadítják fegyvereitől. Ezeket a fegyvereket azután elhagyják valahol, és szinte azonnal megfeledkeznek róluk."
-                        },
+                        }
+                    ]
+                },
+                {
+                    "id": "sec_best_ginsour",
+                    "title": "Ginsour",
+                    "content_blocks": [
                         {
                             "type": "heading",
                             "text": "Ginsour"
