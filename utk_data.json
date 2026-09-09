@@ -48110,12 +48110,94 @@
                     ]
                 },
                 {
+                    "id": "sec_god_kaoraku",
+                    "title": "Kaoraku",
+                    "content_blocks": [
+                        {
+                            "type": "paragraph",
+                            "text": "A rejtőző Niarében tisztelt isten, akitől a mikádó egyenes ágon eredezteti magát. Egyesek őselemi hatalmasságnak, mások egy aquir nép utolsó túlélőjének tartják, aki hosszas háborút vívott fajtársaival, az utolsó szálig kiirtotta őket, s mindegyikük életenergiáját magába szívta. Sárkány képében tisztelik ugyan, ám szinte bizonyos, hogy a valódi sárkányokkal semmiféle rokonságban nem áll. Morálisan semleges istenség, mint a viharok és a villámlások, melyekben kinyilvánítja akaratát. Hívei nem teremtőnek vélik, s leginkább azért fohászkodnak hozzá, hogy fordítsa el tőlük az arcát."
+                        }
+                    ]
+                },
+                {
+                    "id": "sec_pyarron_intro",
+                    "title": "Pyarroni istencsalád",
+                    "content_blocks": [
+                        {
+                            "type": "flavor_text",
+                            "text": "Tiszteld az idősebbeket és a bölcsebbeket! Tiszteld a rangban fölötted állókat! Hajts fejet engedelmesen elöljáróidnak! Az élet szent; kioltására csak a védelmében vetemedj! Ne keresd a viszályt, de azt se hagyd, hogy jámbor tétlenségedben megalázzanak! Légy gazdag, de ha nem vagy az, élj úgy, hogy gyermekeid azok lehessenek! Élvezd az élet szépségét, és kelj oltalmára, ha fenyegetik! Légy türelmes más hitekkel, ha ők is türelmesek veled! Hagyj másokat akaratuk szerint élni, ha ők is hagynak téged! A tudás szent; minden formáját óvni és védeni kell! Gyűlöld Orwellát minden megnyilvánulásában, mert ellensége ő; aki pedig a szolgálatába áll, túl soká élt már az ezen a földön! — Pyarroni Parancsolatok"
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "Ynev legnépszerűbb, legszélesebb körben elterjedt humán vallása. A pyarroni istenek állítólag aránylag fiatalok; csupán valamikor az időszámítás fordulója körül nyilatkoztak meg egy Selmo nevű godoni kalandornak, aki megvilágosodást nyert, prófétává lett és áttérítette az új hitre a fél világot. Hogy Selmo isteni pártfogást élvezett, az vitathatatlan – több mint három és félezer esztendős korában hunyt el –, a történet azonban ebben a formában semmiképpen nem lehet igaz. A pyarroni panteon számos istensége ugyanis már évezredekkel Pyarron alapítása, illetve Selmo működése előtt igen tevékeny szerepet játszott az antik Ynev történetében. Orwella például, hogy mást ne is említsünk, drámai módon megdöntötte a kyr birodalmat; Kyel pedig már egy teljes világkorszakkal azelőtt megfáradt és passzivitásba vonult, semhogy „új” istenségként megmutatkozott volna a godoni rablólovagnak!"
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "Selmo, az egzaltált próféta tehát egyáltalán nem fiatal és ismeretlen istenekre építette egyházát. Esetleg ilyenek is akadnak közöttük – Gilron, netán Alborne –, ám a pyarroni panteon legtöbb tagját egészen az Ötödkorig vissza tudjuk vezetni. Mivel valamennyien Észak-Yneven bukkantak föl előszőr, eredetileg talán a kyr hódítók által legyőzött és beolvasztott, ma már azonosíthatatlan embernépek istenei lehettek. Néhány rendkívül archaikus vonásokat hordozó istenalak – Noir, Uwel – esetében azonban az a lehetőség sem zárható ki teljesen, hogy még ötödkorinál is idősebbek, és valaha inhumán népek tisztelték őket. Azok a közismert legendák, melyek erőltetett módon megkísérlik különböző rokoni viszonylatokba összefércelni az egyes istenségeket, semmiféle támpontot nem nyújtanak számunkra; primitív antropomorfizmusukról messziről lerí, hogy kései koholmányok, feltehetőleg már a pyarroni térítés szülöttei."
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "Hogy milyen körülmények között került kapcsolatba ez a furcsa égi gyülekezet a godoni Selmóval, az valószínűleg már örökre rejtély marad. Tény viszont, hogy a kétes-ködös kezdetekből az embernépek vallástörténetének mindezidáig legfényesebb és leghosszabb fejezete bontakozott ki. Mert meglehet, hogy az egyes pyarroni istenek léteztek már korábban is – ám közösen, ámbár az összeállításban valóban ekkor léptek föl előszőr. És így, együttes erővel sikerült olyan közel kerülniük az embernépek szívéhez, hogy nem is támadt vetélytársuk csaknem négyezer évig. Ezalatt az idő alatt az általuk hirdetett elvek és erkölcsök szinte egész Ynevet meghódították, néhány kisebb-nagyobb folt kivételével. Ma már kétségtelen, hogy a jövő historikusai úgy fognak emlékezni a Hetedkorra, mint a pyarroni istenek aranykorára."
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "Az egyetlen, ám döntő hibát ott követték el, amikor kihívták maguk ellen Krán haragját. A szunnyadó óriásnak kétezer esztendejébe telt, míg lustán megrázta magát, szuszogva kinyújtózott, majd lesújtott; ám ahová az ökle zuhant, ott még törmelék sem maradt. A fennen fénylő Pyarron füstölgő salakhalmazzá vált; Selmo, Elorand, Ordaric Lykargon és a többi legendás hős mind ott pusztult a romok alatt; az Államszövetséget a shadoni és az yllinori határokig végigdúlták; több istenség kultuszát a kihalás szélére sodorta a szörnyű vereség."
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "Soha senki nem állt még talpra az alvó óriás első ütése után. Sem az óbirodalom démonigázói, sem a Tysson Lar-i nemes elfek, sem a godoni mágusfejedelmek, senki. Kérdéses, hogy a pyarroni hitnek most sikerül-e."
+                        }
+                    ]
+                },
+                {
                     "id": "sec_245",
                     "title": "A pyarroni panteon",
                     "content_blocks": [
                         {
                             "type": "paragraph",
                             "text": "A pyarroni panteon legtitokzatosabb tagja, a fény és a mágia ura. Hatalmát kevesen ismerik, a beavatottak azonban tudják, Pyrron legbőkezűbb istenének szolgáivá, ynevi képviselőivé lettek. Adron kevés figyelmet szentel az egyszerű halandóknak, papjainak sorsa ellenben mindennél jobban foglalkoztatja. Ritkán avatkozik az Anyagi sík eseményeibe, akár egymaga, akár más istenek oldalán. Ám papjain keresztül, a számukra kijelölt feladatok megválasztásával és támogatásával többet ártott már a Káosz híveinek, mint sok más istenség. Mondják, kevés isten akad, ki oly kevéssé lenne érzelmei rabja, mint ő. Indulatainak minden körülmények között tökéletes ura, s ezt megköveteli papjaitól is. A fény és a mágia anyagtól mentes, a lét egy tisztább, elvontabb formája – energia. Így uruk is távol áll az anyagi világtól, Ynevhez csak papjaival kötődik, akik maguk is igyekeznek Adronhoz mind hasonlatosabbá válni. Többre tartják a szellemi örömöket a test gyarló gyönyöreinél, szívesebben élnek a jövőnek, mint az adott pillanatnak. Életük szakadatlan küzdelem Ynevért, a kontinens népeiért, a Káosz és a Sötétség hívei ellen. Szent szimbóluma lángvörös rubinkő, stilizált napkorongba foglalva."
+                        }
+                    ]
+                },
+                {
+                    "id": "sec_god_alborne",
+                    "title": "Alborne",
+                    "content_blocks": [
+                        {
+                            "type": "paragraph",
+                            "text": "A pyarroni panteon e halhatatlanját sokan – és helytelenül – a bárdok istenének tartják. Ez már csak azért sem felelhet meg a valóságnak, mert bár a dal mesterei nagy számban kóborolnak Ynev térségein, az ő hitük révén Alborne sosem emelkedett volna a panteon jelentős alakjai közé, s aligha tett volna szert arra a befolyásra, aminek manapság, a Hetedkor utolsó harmadában örvend."
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "Alborne – vagy ahogy hívei emlegetik, a Harmónia Őre – mindazok istene, akik a szabad művészetek gyakorlásával, dallal, tánccal, széphistóriák és poémák írásával, vászonnal és festékkel, vésővel és márvánnyal keresik kenyerüket. Kedvére való minden, ami gyönyörködtet, legyen az műtárgy vagy eleven test, ember vagy más fajú, mágikus vagy természeti jelenség. Szent szimbóluma a csillaglant. Nem követeli meg híveitől, hogy tiszteletére impozáns templomokat emeljenek: szent helye lehet bármely nagy művész otthona, oltárai majd' minden ynevi színház fedele alatt megtalálhatók, papjai és papnői pedig – ha kivétel nélkül egy vagy több szabad művészet gyakorlásában jeleskednek – gyakorta emelkednek a közösség szellemi vezetőivé olyan településeken is, ahol más halhatatlanok kultusza éppoly elfogadott, mint saját uruké."
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "A meleg évszak első harmada kontinens-szerte a dalversenyek, költői megméretettések ideje. A Harmónia Őrének ünnepeit, a közös fohászokat rendszerint csillagos ég – „Alborne kupolája” – alatt tartják; az isten, aki a hagyomány szerint a világot ölelő kristályszférákon túl lakozik, ilyenkor juttat hatalmából az arra érdemeseknek, s a szükséges képest nyers manával, ihlettel vagy sugallattal támogatja a hozzá fordulókat. Felkentjei olykor akaratának közvetítőivé válnak, leghíresebb követői (innen a közkeletű félreértés) mégis a bárdok, akiknek legkiválóbbjai – Enika Gwon, Iriogo Orel és Lirian vil Sineas – hosszú vagy épp örök életet nyerhetnek a kezéből."
+                        }
+                    ]
+                },
+                {
+                    "id": "sec_god_antoh",
+                    "title": "Antoh",
+                    "content_blocks": [
+                        {
+                            "type": "paragraph",
+                            "text": "Antoh a vizek, tengerek, viharok istennője a pyarroni panteonban. Szeszélyes, kiszámíthatatlan, akár az általa uralt tenger, s vad, mint a vihar, melyet megidéz. A víz sok filozófiában a kettősség jelképe, akárcsak ellentéte, a tűz. A víz nélkülözhetetlen, ahol nincs, ott élet sincs – ugyanakkor gyilkos, pusztító áradat, ha energiái elszabadulnak. A csendes, sima víztükör a béke és harmónia szimbóluma, a szél korbácsolta hullámok, a szilaj habok a vadság, az elemi erő üzenetét hordozzák. Ennek megfelelően kettős Antoh természete is; időnként szelíd és megbocsátó, máskor haragos és engesztelhetetlen. Kultusza a Quiron-tenger mellékén a legerősebb, ahol megacélozta híveit a Tharral vívott szakadatlan háború; az erv és aszisz Antoh-papok semmittevésben elkényelmesedett puhányoknak tartják déli hitsorosaikat. Az istennő szent szimbóluma a viharkagyló."
+                        }
+                    ]
+                },
+                {
+                    "id": "sec_god_arel",
+                    "title": "Arel",
+                    "content_blocks": [
+                        {
+                            "type": "paragraph",
+                            "text": "A pyarroni panteon főistenének forróvérű, csapodárnak tartott párja, a Harc és Természet istennője. Testét finoman megmunkált abbitacél láncruha óvja, amelyet Gilron készített számára. Adron segítségével bármely elem támadásával szemben ellenállóvá vált. Mindig célba találó íja, ha úgy akarja, dögvészt, pestist, fekete himlőt terjeszt. Sötét haját zöld jádepánt fogja össze, s jádezölden ragyognak szemei is."
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "A vakmerőség, esztelen bátorság meggyőződése szerint a legfőbb erény. Határtalan felelőtlensége volt egyik oka annak, hogy bár hatalom dolgában felülmúlja férjét – Orwella utolsó lázadását is ő fékezte meg –, mégsem őt választották az istencsalád fejévé. Kedveli az esztelen hőstetteket, különösen azokat, amelyeket puszta virtusból, az ő kedvéért hajtanak végre. Papjai általában kalandor zsoldosok, Ynev legnagyobb szélhámosai, öngyilkos hőstetteikről éppúgy ismertek. Arel szent állata a sólyom, elpusztítása a legnagyobb vétkeknek számít a szemében. Szentélyei a kontinens erdeiben, magányosan állnak, csak fából vagy más növényi anyagból épülnek. Kultusza elsősorban az Északi Szövetség államaiban, illetve a déli Yllinorban terjedt el. Szent szimbólumát, a sólyomholdat gyakorta látni neves kalandozók nyakában."
                         }
                     ]
                 },
@@ -48144,12 +48226,100 @@
                             "text": "A pyarroni istencsalád talán legellentmondásosabb figurája, az igazságos bosszú istene, közkeletű nevén a Bosszúállás Atyja. Szent szimbóluma a lesújtani készülő, páros ököl. Papjai egyben lovagok is, akik Ynev-szerte magányosan álló erődítményekben, várakban élnek, a környező lakosság adományaiból, illetve megbízásaik szerény béréből tartják fenn magukat. Uwel papjait bárki felkeresheti: ha bosszúját igazságosnak ítélik, s nyilvánvaló, hogy nem tudja maga beteljesíteni, akkor minimális, sok esetben nem is létező díjért, mint az alvilági démonok – guttarok – egyike. Főemlékezete a Pártütés Korával, Ó-Kyria hanyatlásával vette kezdetét, és az egész Hatodkoron keresztül tartott. Ennek folyamán feltehetőleg sorra letaszította maga elől a többieket, illetve módszeresen kiirtotta híveiket, míg végül egymaga maradt az isteni hatalom letéteményese. Nem kizárt, hogy a Hatod- és Hetedkor fordulóján bekövetkező apoteózisa a daumyrri Hatalmasok tevékeny támogatásával következett be."
                         },
                         {
+                            "type": "heading",
+                            "text": "Kyr istencsalád"
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "Igere, a Teremtő Anya; Weila, a Sorskovács; Morgena, az Árnyékúrnő; Sogron, a Tűzkobra; Tharr, a Háromfejű."
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "Calowyni eredetű panteon, a hódító kyrek hoztak magukkal Ynevre az Ötödkorban. Voltaképpen inhumán istenekből áll – a kyrek nem voltak emberek –, akik azonban később rászorultak más fajok hódolatának elfogadására. Némely inhumán vonást azonban sohasem sikerült levetkőzniük, az embernépek a mai napig bizonyos irtózattal és idegenkedéssel szemlélik őket."
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "Az ősi kyr panteonban még nem szerepelt közülük az ötödik, Tharr, aki akkoriban csupán alárendelt jelentőséggel bírt, mint az alvilági kíndémonok – guttarok – egyike. Fölemelkedését a Pártütés Korával, Ó-Kyria hanyatlásával vette kezdetét, a birodalom szükségszerű változása, a folytonos megújulás jegyében. Ennek folyamán feltehetőleg sorra leszakította maga elől a többieket, illetve módszeresen kiirtotta híveiket, míg végül egymaga maradt az isteni hatalom isteni tényezése. Nem kizárt, hogy a Hatod- és Hetedkor fordulóján bekövetkező apoteózisa a daumyri Hatalmasok tevékeny támogatásával következett be."
+                        },
+                        {
                             "type": "paragraph",
                             "text": "Igerének és Weilának ma már nincsenek hívei Yneven, még az is kétséges, hogy egyáltalán ők maguk megmaradtak-e létezőnek. Morgena, aki a legtovább dacolt Tharral, a jelek szerint egymástól független tudatsíkokra hasadt. A Káosz-kor második felében néhány ilyen tudatsík ismételten önálló személyiségként manifesztálódott, melyeket bizonyos szekták különféle neveken imádtak (pl. Berkano, a Sötét Anya vagy Lysianel, a Hús Angyala). A Hetedkor derekára a manifesztációk megszűntek, manapság bizonyos jelek Morgena lassú ébredésére utalnak."
                         },
                         {
                             "type": "paragraph",
                             "text": "Tharr Sogronnal is kíméletlenül leszámolt (éppen Morgena segítségével, a Gódorai Függetlenségi háborúk idején), ám a Tűzkobra valahogyan mégis aktív tudott maradni, és maradék híveit – feltehetőleg – biztos távolságba, a Délvidékre menekítette. Ma a kyr eredetű istenségek közül egyedül ennek a kettőnek van ismert, élő kultusza a Földrészen."
+                        }
+                    ]
+                },
+                {
+                    "id": "sec_god_dreina",
+                    "title": "Dreina",
+                    "content_blocks": [
+                        {
+                            "type": "paragraph",
+                            "text": "A pyarroni panteon legtöbb hívével bíró tagja, a hatalom s a rend istenasszonya, Krad és Arel gyermeke. Ő maga két gyermeket szült Adronnak, a fény és a mágia istenének: Ellanát, a szerelem és a szépség istennőjét, és Dellát, a művészetek régi pártfogóját. Harmadik gyermeke a fattyú Orwella, a Kitaszított, akit Uwel, a Bosszúállás Atyja nemzett neki. Szent szimbóluma az ezüsttenyér."
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "Dreina papi rendjének tagjai világszerte elismert tudósok, közülük kerülnek ki a legnagyobb tekintélynek örvendő politikusok, udvari tanácsnokok. Egyetemeik Ynev minden vidékén a legjobb hírű iskolák közé tartoznak; Dreina papjai a Pyarron érdekszféráiba tartozó vallási központok gazdasági, világi vezetői. Az istennő templomai minden nagyobb városban megtalálhatók, szerzetesrendjei, zárdái számos sorsüldözött, keserű lelkű embernek adnak menedéket."
+                        }
+                    ]
+                },
+                {
+                    "id": "sec_god_ellana",
+                    "title": "Ellana",
+                    "content_blocks": [
+                        {
+                            "type": "paragraph",
+                            "text": "A szerelem és a szépség istennője a pyarroni panteonban, Adron és Dreina gyermeke. Papnői hivatásos kurtizánok, gyönyörűlárokkal ékes templomai, szentélyei szerte a világon a legismertebb – és legdrágább – bordélyházak közé tartoznak. Szent szimbóluma a lótuszvirág, papnőit rendszerint a Lótusz Leányaiként emlegetik. Kalandozni ritkán járnak – nem is nekik való foglalatosság –, ám hírszolgálatuk kiváló, s jó pénzért nemcsak a test örömeit bocsátják áruba, hanem a legkülönfélébb forrásokból összegyűjtött információkat is, melyek szerfölött ritkán bizonyulnak hiteltelennek."
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "Hívével ellentétben Ellana korántsem felelőtlen istenség; hiú és kacér ugyan, de a néki kedveseket – különösen a szerelmeseket s a szépség letéteményeseit – minden körülmények között megsegíti. Nagy ellenfele a kyr Morgena némely káoszkori aspektusának, különösen Berkanónak, a Sötét Anyának, és Lysianelnek, a Hús Angyalának."
+                        }
+                    ]
+                },
+                {
+                    "id": "sec_god_gilron",
+                    "title": "Gilron (Gi-Elron)",
+                    "content_blocks": [
+                        {
+                            "type": "paragraph",
+                            "text": "A pyarroni istencsalád tagja, a fegyverkovácsok patrónusa; szent szimbóluma az acélpöröly. Templomai nincsenek, ám azok a fegyverkovácsok, akik őt választják védelmezőjüknek, beavatási szertartáson esnek át. Ennek során a mesterség számtalan fortélyával megismerkednek; a tanultabbak közülük tűzfegyverek és önjáró gépezetek előállítására is képesek. A Gilron-hívő fegyverkovácsok egyszersmind az isten felszentelt papjai, titkaikat szigorúan őrzik, minden eszközzel megakadályozzák az avatatlanokat azok felfedésében. Az esetleges újítások ügyében a papság nagyjai döntenek. Alapjában véve maradiak, kivéve azt a szakadár felekezetet, amely Kahre városában tartja székhelyét, s vezetője Honorius Caldinbras, az Első Mérnök. Noha Gilron fegyverkovácsait megbecsülés övezi szerte a világon, számuk csekély: évente mindössze három új tagot fogadnak soraikba."
+                        }
+                    ]
+                },
+                {
+                    "id": "sec_god_krad",
+                    "title": "Krad",
+                    "content_blocks": [
+                        {
+                            "type": "paragraph",
+                            "text": "A pyarroni mítosz főistene, a tudományok patrónusa, Kyel legidősebb fia. Ideje legjavát – felesége, Arel nem kis bosszúságára – elmélkedéssel tölti, a halandók és világuk dolgaival nagy ritkán, akkor is csak elméleti szinten foglalkozik. Mérhetetlen bölcsessége okán választotta Kyel éppen őt utódjául. Uralkodása első napjaiban alkotta meg az Elsődleges Anyagi Síkon zajló eseményekbe való be nem avatkozás törvényét – ez az Ősi Egyezménynek emlegetett égi Paktum alapja. Döntése helyességéről csaknem valamennyi istent sikerült meggyőznie."
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "Krad nem kíván áldozatokat, bonyolult szertartásokat, megelégszik akár sebtében elsuttogott, ám szívből jövő imákkal is. Helyesli, hogy tudós papjai sok tájat, országot bejárnak, hogy folyvást gyarapítsák tudásukat. Elvárja tőlük, hogy tapasztalataikat átgondolják és könyvekben rögzítsék. Az elmélkedést mindennél többre tartja; szent szimbóluma az aranykör. Hirdeti a tudományok szeretetét, vallja, hogy a jónak kell nyernie méltó jutalmát – és ekként is cselekszik. Leghíresebb követője, első és legnagyszerűbb prófétája Pyarron megalapítója, Selmo atya. Őt az isten, tettei elismeréseként, örök élettel jutalmazta, és a pusztító kráni hordák ellen Pyarron oltalmazásáért vívott harcban bekövetkezett halála után maga mellé emelte az égiek közé."
+                        }
+                    ]
+                },
+                {
+                    "id": "sec_god_noir",
+                    "title": "Noir",
+                    "content_blocks": [
+                        {
+                            "type": "paragraph",
+                            "text": "Az álmok és a szerencse istenasszonya, különös és ellentmondásos személyiség. A panteon többi tagjához nem fűzik rokoni szálak; feltehetően valamely rég letűnt nép istenségei közül került a pyarroni hitvilágba, kultuszára utaló elszórt jelek már a crantai korszakból kimutathatók. Szent jelképe, a félig lehunyt udzs-szemmel, gyakrabban találkozhatunk omlatag rommezőkön, mint a ma álló városok szentélynegyedében. Rendszeresen csak a hivatásos hazárdjátékosok fohászkodnak hozzá, de az álombéli jelet vagy útmutatást kérők mind őt keresik az imáikkal, bármelyik pyarroni istent imádják máskülönben. Papjai álomutazók, áfiumkereskedők és titkos fogadóirodák üzemeltetői, az ynevi alvilág prominens alakjai; kik hajlamosak gátlástalan szexuális szokások kialakítására is."
+                        }
+                    ]
+                },
+                {
+                    "id": "sec_god_uwel",
+                    "title": "Uwel",
+                    "content_blocks": [
+                        {
+                            "type": "paragraph",
+                            "text": "A pyarroni istencsalád talán legellentmondásosabb figurája, az igazságos bosszú istene, közkeletű nevén a Bosszúállás Atyja. Szent szimbóluma a lesújtani készülő, páros ököl. Papjai egyben lovagok is, akik Ynev-szerte magányosan álló erődítményeikben, várakban élnek, a környező lakosság adományaiból, illetve megbízásaik szerény béréből tartják fenn magukat. Uwel papjait bárki felkeresheti: ha bosszúját igazságosnak ítélik, s nyilvánvaló, hogy nem tudja maga beteljesíteni, akkor minimális, sok esetben névleges ellenszolgáltatás fejében bevégzik azt. Félelmetes harcosok hírében állnak, s azt tartják róluk, amíg egy ügyet le nem tudtak, nem nyughatnak. Ha valamelyikük odavész, menten egy társa áll a helyére. Darton mellett Uwel a másik pyarroni istenség, akinek állásfoglalása az Anyagi Síkon zajló eseményekben nem egyértelmű; több ízben előfordult már, hogy kegyelmét kiterjesztette az Északi Szövetség és Pyarron ellenségeire, mert az adott esetben az ő ügyüket ítélte igazságosnak."
                         }
                     ]
                 },
@@ -48185,8 +48355,20 @@
                 },
                 {
                     "id": "sec_248",
-                    "title": "Sogron",
+                    "title": "Tharr",
                     "content_blocks": [
+                        {
+                            "type": "heading",
+                            "text": "Tharr"
+                        },
+                        {
+                            "type": "flavor_text",
+                            "text": "A kiontott vér halált hoz; a kiontott mag életet. Ürességes semminek mondjuk a levegőt; de ha megfosztanak tőle, elpusztulunk. Fiat nemzeni is megölni könnyű; felnevelni nehéz. Akkor nyugodalmas a tenger, ha az ellentétes áramlatok kioltják benne egymást. A törvény úgy törvény, ha időnként megszegik; ha mindig betartják, feledésbe merül. A legtüzesebb gyönyörben a fájdalom magva rejlik; amiképpen a legszörnyűbb kínban az élvezeté. Ne parancsolj önmagadnak; akkor mások sem parancsolhatnak neked. Virágozzék ki lelkedben a gyűlölet, mert igaz belső békét csak ezáltal találsz; és ne riadozz ártalmára lenni embertársaidnak, mert őszinte szívvel csak így használhatsz nekik. — Aruth Dyn-Dayaell: Paradoxia"
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "Az egyetlen kyr eredetű istenség, aki jelentős és egyértelmű szerepet játszik korunk Ynevén. Toron határain kívül a káosz és az értelmetlen rombolás megtestesítőjeként tartják számon; a birodalomban a szükségszerű változás, a folytonos megújulás szimbóluma. Teológiájának alaptétele, hogy az állandó-folytonos átalakulásból teremtőerő és kreativitás fakad; ennek híján az egész világ fejlődés nélküli pangásba fulladna, a meglévő sémák örökös, gépies ismétlődésébe. Inhumán gyökerei főként az embernépek erkölcsiségének kirívó elutasításában nyilvánulnak meg. Tharr egyháza nem csatlakozott a Pyarroni Paktumhoz, ami nem csupán az emberáldozat gyakorlatának elismerését"
+                        },
                         {
                             "type": "paragraph",
                             "text": "jelenti, hanem mindenfajta morális szabályozás teljes elvetését is."
@@ -48338,12 +48520,138 @@
                     ]
                 },
                 {
+                    "id": "sec_god_bulruurig",
+                    "title": "Bul Ruurig, a Kőatya",
+                    "content_blocks": [
+                        {
+                            "type": "paragraph",
+                            "text": "A törpék első istene; a törzsi hagyomány neki – és csak neki – tulajdonítja a kőfiak teremtését, az Ősmítosz azonban szót ejt Tyrrano közreműködéséről is. A két forrás egybehangzóan állítja, hogy a világ már létezett, mikor összecsaptak felette; a harcban a démon megsebesült, a Külső Hidegbe taszíttatott, az isten pedig alászállt, hogy gondoskodjon övéiről, akiknek „feje, karja-lába s minden része éppen olyan volt, mint az övé”."
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "Az Ősmítosz szerint Bul Ruurig a nap és a holdak születése után paktumot kötött a szférákat létrehozó Nagyokkal, akik beleegyeztek, hogy az addig mozdulatlan planétát megforgassa, hogy a nappalt tízóránként éjszakával váltsa fel, némi könnyebbséget hozva a hidegtűrő, homálykedvelő kőfiaknak. Egyes töredékek szerint az engedmény fejében övéi lelkét ígérte oda, ám utóbb elállt az egyezségtől, ezért a Nagyok és a törpék minden nemzedékét átkukkal sújtották – innét ered a Hat Csapás legendája, mely, mint kiderült, nem nélkülözi a valóságalapot."
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "Bul Ruurig csak papjait (a Tudókat) figyelmeztette a Csapások eljövetelére, s szigorú titoktartást parancsolt nekik, a nép legválságosabb órájában azonban (lásd Kőfiak – Első Csapás) megmutatkozott Bórog földjén, és olyan ajándékokat adott a törpéknek, melyek jóvoltából azok megmaradhattak, sőt megerősödve várhatták az újabb veszedelmeket."
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "Bul Ruurig következetlensége kezdettől zavarba ejtette az embernép hittudorait. Közülük néhányan odáig merészkednek, hogy kijelentik: a Kőatya alighanem megháborodott a Tyrranoval (első Homálytestvérével?) vívott küzdelemben. Kultusza máig fennmaradt, noha nem bír olyan jelentőséggel, mint utódáé. Rendszerint olyan törpék fohászkodnak hozzá, akik segítségével remélik feltárni és uralmuk alá vonni lelkük sötét aspektusait. Suttogják, hogy papjai – a törpe Tudók közt egyedülálló módon – képesek a legősibb mágia „dús szavainak” használatára is."
+                        }
+                    ]
+                },
+                {
+                    "id": "sec_god_kadal",
+                    "title": "Kadal, a Tárnákat Zengető",
+                    "content_blocks": [
+                        {
+                            "type": "paragraph",
+                            "text": "Az Ősmítosz szerint Bul Ruurig sarja, aki a megfáradt Kőatya távoztával került a törpe panteon főhelyére. Az apokrif elmélet szerint a „fiú” kifejezést a suógok átvitt értelemben alkalmazzák, és csupán annyi történt, hogy a Bul Ruurigban manifesztálódott isteni erő megfiatalította önmagát – ezt látszik igazolni, hogy a Kőatya asszonyáról egyetlen szövegben, egyetlen töredékben sem esik említés, s hiányzik az északi népekre egyébként oly jellemző „állat-anya” figurája is."
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "Bárki volt egykor, bizton állíthatjuk, hogy Kadal a Hetedkor derekára megtalálta saját arcát. Ő az egyetlen törpe istenség, aki akaratát időről időre kristálytiszta, ám halandó küldöttek révén nyilvánítja ki: az első Tooma, a Fejszés, akinek makacsságából a törpék históriájuk mélypontjain is erőt meríthettek; a másodikként teremtett küldött, Ezüstcsákány Gráim a Harmadik Csapás során esett el Bórog földjén, ám valahányszor Tarin háborúra készül, lehetővé teszi számára, hogy az Örök Visszhangtalanból kiszakadva új testet öltsön."
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "Kadal szolgái rangjuktól, beosztásuktól függetlenül tekintélyes személyiségeknek számítanak, szavuk akkora – ha nem nagyobb – súllyal esik latba, mint egy daug főnöké. Különös vonzalmat éreznek a drágakövek iránt, felhasználásuknak, a bennük rejlő hatalom kinyerésének számtalan módját ismerik. Ők irányítják a földmélyi fajzatokkal, démonokkal, Homálytestvérekkel vívott harcot, és Tooma szolgáival együtt képviselik a birodalom papságát az Északi Szövetség évi közgyűlésein."
+                        }
+                    ]
+                },
+                {
+                    "id": "sec_god_tooma",
+                    "title": "Tooma, a Fejszés",
+                    "content_blocks": [
+                        {
+                            "type": "paragraph",
+                            "text": "A mítoszok legendás Engedetlenje; hadisten, korhely és bajkeverő egy személyben. Küldöttei nincsenek, papjai a legkiválóbb harcosok közül kerülnek ki, akiket kivételes helyzetekben (háborúk, sorsfordulók), avagy a lehető legrosszabbkor (külországi temetési szertartások alatt, követek jelenlétében) átszellemít, s rendkívüli, olykor megbotránkoztató tettekre sarkall. Főként a kőfiak újabb generációinak körében kedvelt, a hittudorok azonban nem tartják kizártnak, hogy csupán Bul Ruurig szellemének egy újabb aspektusát testesíti meg."
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "Tooma papjai erős támaszai Tarin hadseregének, szavuknak súlya van majd' minden tanácsszinten. Különös vonzalmat éreznek az ércek – különösképp az eleven fém – iránt, felhasználásuk, engedelmességre szorításuk, hatalommal való felruházásuk számtalan módozatát ismerik és gyakorolják. Kiveszik részüket a Tarin sötét zónáiban vívott harcokból, és kimagaslóan népszerűek a szövetséges embernép fegyverforgatói körében, akik a „jóféle kétkezes tarini törpe” típusának megtestesítőit látják bennük. A kőfiak hitének szakadatlan fejlődését hirdető elmélet szerint a Fejszés a bizonytalan jövőben – talán nem is túl sokára – átveheti a panteon élén Kadal szerepét."
+                        }
+                    ]
+                },
+                {
                     "id": "sec_249",
                     "title": "Zimnah kultusza",
                     "content_blocks": [
                         {
                             "type": "paragraph",
                             "text": "Zimnah kultusza főként a renegát törzsekben és a törpe diaszpóra délvidéki kolóniáin dívik – tiszteletét Tarinban szokásjog és törvény tiltja, s felettébb ritka az olyan törpe, aki a fennálló rend elleni lázadás e szegényes módját választaná."
+                        },
+                        {
+                            "type": "heading",
+                            "text": "Ork héroszok"
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "Hram, a Mélységben Lakozó. A Vérivók, a Kacagók, az Irtóztatók és az Irgalmatlanok hérosza. A föld alatt él, és soha nem hagyja el a szó az ajkát. Kedvelt híveit magához szólítja, és felruházza kegyelmével; azok eztán ugyanúgy megnémulnak, vérrel táplálkoznak és halhatatlanná válnak, mint ő maga."
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "Tha'ushur, a Szunnyadó. A Fadöntők és a Bűvölők hérosza. Porhüvelye Ediomad mélyén pihen, őrzéséről egyenes ági leszármazottai gondoskodnak, valamennyien ork-aquir félvérek. Ha a szükség úgy kívánja, kikél nyugvóhelyéről, és testi valójában hívei segítségére siet."
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "Nagy Vordak. A Csonttörők és a Viharkeltők hérosza. Törzsvesztett hős, a hódító kyrekkel vívott háború legendás bajnoka; minden valószínűség szerint a valaha élt legnagyobb ork harcos. Sámán-nemzetségei páriasorból verekedték fel magukat hivatalos rangra."
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "Bhaer-Shadagg. A Látók hérosza; kovács-nemzetségből származott. Halála közeledtét érezvén belefoglalta lelkét a szent csatabárdok – a graer dwaghulok – leghatalmasabbikába. A fegyver ma a Látók vezéri nemzetségének örökletes tulajdonát képezi."
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "Ghazga. A Holdimádók hérosza, egykor volt matriarcha, legendás méregkeverő. A vörös holdon él, ahová a Viperaszellem ragadta magával párjául. Sámánjai a harcban mérget idéznek a fegyverükre, a körmükre és a fogukra."
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "Hurag Dhaur, a Szürke Öreg. A Vas Fiainak hérosza. Farkas képében járja Ynev vadonjait, sámánjai bőreváltók, s a csatában tomboló őrület uralja magával őket. Igen nagy ellenségeskedés uralkodik közte és Tha'ushur között."
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "Ughjorbagan, a Falánk. A Halálhozók hérosza. Az egyetlen ork, aki sikeresen elsajátította a mágia magasabb művészetét. Az általa vezetett, tizenhárom törzsből álló Koponyaszövetség és a velariumi elfek gyilkos viszályát az óidők nevezetesebb fajháborúi között tartják számon. A rehynnek elől a Démoni Síkok egyikére menekült, ahol az ott honos fejedelmek befogadták maguk közé."
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "Oothr, a Titokzatos. Az Árnyékjárók hérosza. Halhatatlan szelleme egyik sámánja testéből a másikéba költözik, kioltván a befogadó ork önálló személyiségét. Hívei áldozati körmeneteken könyörögnek hozzá, hogy kímélje meg őket."
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "Gar Bokkar. Törzs nélküli hérosz, crantai kóborló, páriakultuszát leginkább a Látók vezéri nemzetsége pártfogolja. Sámánjai önálló politika folytatására, az embernépek viszályaitól való távolságtartásra buzdítják az orkokat."
+                        },
+                        {
+                            "type": "heading",
+                            "text": "Az elfek kalahorái"
+                        },
+                        {
+                            "type": "heading",
+                            "text": "Észak"
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "Narmiraen, a Ködökön Járó: A legnépszerűbb kalahorák egyike. A Hajnalok Uránaknak is nevezik, s ez sokat elárul róla és híveiről egyaránt. Megszemélyesíti mindazt a kiábrándultságot és tehetetlenséget, ami a Hetedkor elfjeinek nagy többségét jellemzi. Rendkívül közeli a kapcsolata a természettel, alakján keresztül gyakorta magát a végtelen erdőket, az érintetlen szépséget idézik fel. Az elfek szerint minden növény nevét ismeri, amely valaha kisarjadt Yneven. Az ő útmutatását követik a „kizökkent lét” elől a természetbe menekülő elfek népes csoportjai. Délen Siena Boralisse és Flidais D'Anatel alakjában, némiképp megváltozott értelmezésben bukkan fel."
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "Tyssa L'imenel, a Vér Nélkül Való: A legismertebb mártírkalahora. A hozzá hasonló, egészen ősi elf szentségek már rég eltűntek a mítoszok és legendák homályködében, ám az ő szenvedései mind a mai napig példát állítanak az elfek elé. Jellemző az önostorozó elf gondolkodásra, hogy még az olyan távoli múltban elszakadt Családok is tisztelik, mint a Taba el Ibara homoki elfjei. Az aquir háborúk során csorgatták ki utolsó cseppig a vérét, s szótlan szenvedése még a Hetedkor elfjeit is csendes és türelmes beletörődésre inti. Délvidéken Nemathial Airaven a megfelelője."
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "Veela Luminatar, az Egykor Volt Fényesség: A legrégebben ismert kalahorák egyike. Az óelf iratokban csak Finna Liest említik nála hamarabb. Ő volt népe első megvilágosodott „Mestere”: a múlt dicsőségét fenséges arcán tükröző isteni lény. Mind a mai napig híven teljesíti kötelességét: folyton emlékezteti népét az ősidőkben elkövetett vérbűnre, a kitaszíttatásra, a szenvedésre. Hol kalahorák szellemít át, hol víziókban és jósálmokban nyilvánul meg, hol pedig a patakvíz csörgedezésébe, a lombok susogásába csempészi intő jeleket az értő fül számára. Ritkán van szüksége ilyen módszerekre; többnyire puszta létezésével is eléri célját."
+                        },
+                        {
+                            "type": "heading",
+                            "text": "Délvidék"
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "Finna Lies, a Korokon Tanító: A Nép legelső gyámolítója, aki a Fergeteg elvonulta után állt az elfek élére, s istenük parancsai szerint, saját példájával elöljárván biztatta az elesetteket, gyámolította a csalódottakat, mutatott kiutat a gyötrelemből. Noha kultusza már jelentős mértékben megkopott, s északon jobbára Narmiraen vette át a szerepét, délen még mindig számos elf áldoz neki a legfontosabb ünnepeken."
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "Siena Boralisse, az Érintéssel Enyhítő: Déli mártírkalahora, aki a legenda szerint saját örökifjú testét áldozta fel a korok oltárán, csak hogy mindig új alakban lehessen együtt szeretett gyermekeivel. A fák és a patakok szelleme, az ő testéből sarjadnak a gyógynövények. Az egészség és a természet felvigyázója, bizonyos vidékeken Narmiraen fákba költözött lelkeként tisztelik."
                         },
                         {
                             "type": "paragraph",
@@ -49458,6 +49766,145 @@
                     "title": "Sárkányok",
                     "content_blocks": [
                         {
+                            "type": "heading",
+                            "text": "A sárkány, mint szörnyeteg"
+                        },
+                        {
+                            "type": "table",
+                            "headers": [
+                                "Jellemző",
+                                "Érték"
+                            ],
+                            "rows": [
+                                [
+                                    "Előfordulás",
+                                    "Nagyon ritka"
+                                ],
+                                [
+                                    "Megjelenők száma",
+                                    "1"
+                                ],
+                                [
+                                    "Termet",
+                                    "Ó"
+                                ],
+                                [
+                                    "Méretkategória",
+                                    "10"
+                                ],
+                                [
+                                    "Sebesség",
+                                    "100 (SZ) 300 (L)"
+                                ],
+                                [
+                                    "Időigény",
+                                    "Lásd lent"
+                                ],
+                                [
+                                    "Kezdeményező érték",
+                                    "30"
+                                ],
+                                [
+                                    "Támadó érték",
+                                    "Lásd lent"
+                                ],
+                                [
+                                    "Védő érték",
+                                    "Lásd lent"
+                                ],
+                                [
+                                    "Célzó érték",
+                                    "Lásd lent"
+                                ],
+                                [
+                                    "Sebzés",
+                                    "Lásd lent"
+                                ],
+                                [
+                                    "Életerő pontok",
+                                    "50-200"
+                                ],
+                                [
+                                    "Fájdalomtűrés pontok",
+                                    "150-500"
+                                ],
+                                [
+                                    "Asztrál ME",
+                                    "Immunis"
+                                ],
+                                [
+                                    "Mentál ME",
+                                    "Immunis"
+                                ],
+                                [
+                                    "Méregellenállás",
+                                    "Immunis"
+                                ],
+                                [
+                                    "Pszi",
+                                    "50-100 (Kyr 5.fok)"
+                                ],
+                                [
+                                    "Mp",
+                                    "100-150"
+                                ],
+                                [
+                                    "Intelligencia",
+                                    "Átlagos-kimagasló"
+                                ],
+                                [
+                                    "Jellem",
+                                    "Káosz, Halál"
+                                ],
+                                [
+                                    "Tapasztalati pont",
+                                    "2500–30 000"
+                                ]
+                            ]
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "A sárkányok nagy testű, súlyos, ellenben igen gyors teremtmények. Ha végtagjaikkal fizikailag támadnak, KÉ-jük gyakorlatilag 30."
+                        },
+                        {
+                            "type": "table",
+                            "headers": [
+                                "Támadás",
+                                "TÉ",
+                                "Sp"
+                            ],
+                            "rows": [
+                                [
+                                    "Mancs csapás",
+                                    "80-120",
+                                    "5k6-7k6"
+                                ],
+                                [
+                                    "Farok csapás",
+                                    "100-130",
+                                    "10k6-14k6"
+                                ],
+                                [
+                                    "Harapás",
+                                    "140-160",
+                                    "4k6-8k6"
+                                ],
+                                [
+                                    "Tűzlehelet*",
+                                    "CÉ: 60-70",
+                                    "Lásd a leírást"
+                                ]
+                            ]
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "* a tűzleheletet lásd később!"
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "A sárkányok óriásiak, ennek megfelelően TÉ-jük nagy. Küzdelemben mellső két mancsukat, és ostorszerűen csapkodó farkukat használják, s ha megszorulnak, harapnak is. Hosszú nyakukkal meglepően messzire elérnek, s fejüket a többi végtagukhoz képest váratlan fürgeséggel mozgatják. Természetesen a felsorolt támadási módok közül körönként mindegyiket legfeljebb egyszer alkalmazhatják – de akár egyidejűleg is."
+                        },
+                        {
                             "type": "paragraph",
                             "text": "A Sárkányok Védő értéke kevés (legalábbis törzsük túlnyomó részén) – hiszen ki ne lenne képes eltalálni óriási testüket? Hogy mégis szinte sebezhetetlenek, azt a testüket mindenütt borító, acélnál is keményebb, olykor fél méter vastag pikkelyeknek köszönhetik. (SFÉ: 15–30 – a KM dönti el) Ezeket átszúrni lehetetlen, kizárólag a köztük húzódó keskeny réseken nyílik mód a lágyabb részek elérésére. Ahhoz, hogy egy sárkány törzsén sebet ejtsen, legalább másfél méter hosszú fegyver szükségeseltetik – az ennél rövidebb még Ép-veszteség sem okoz. E célra külön készítenek kardokat, de legtöbbször kopját, esetleg nyeles fegyvert használnak a sárkányölők."
                         },
@@ -49553,6 +50000,10 @@
                             "text": "Az életerővel táplálkozó szellemek Abdul al Sahred Necrografiájában külön osztályt szentelt az életerővel táplálkozó szellemeknek – s nem véletlenül. Az emberek életerőenergiáit elszívó kísértetek gyengítik áldozatukat, de saját magukat erősítik is egyúttal. A Necrografia ezt írja az életerővel táplálkozó szellemekről:"
                         },
                         {
+                            "type": "flavor_text",
+                            "text": "„Akit ez a fajta fajzat megérint, azonnal dermesztő kábaságot érez testben és lélekben egyaránt. Minél többet szipolyoz ki belőle a szellem az élet értékes esszenciájából, annál gyengébb és erőtlenebb lesz a halandó, míg végül, ha a lét utolsó szikrája is távozott belőle, rémes élőholtként kísért tovább, amit a tudósok csak Izarnak ismernek… Míg a vérivó élőholtak nagyritkán bár, de ráfanyalodnak állati vérre, az életerővel táplálkozó szellemek áldozata csak ember lehet.”"
+                        },
+                        {
                             "type": "paragraph",
                             "text": "A játék nyelvén ez a következőket jelenti az áldozat számára: az életerővel táplálkozó szellemek puszta érintésükkel képesek elorozni áldozatuk életerőenergiáit. Ennek hatása azonos a boszorkánymester Nekromancia típusú varázslatainál leírt, életerőt szívó varázslatokkal. Az ott leírtak közül a szellem tetszés szerint alkalmazhatja bármelyiket."
                         },
@@ -49581,6 +50032,95 @@
                             "text": "Ha a halott lelke egy közelmúltban meghalt másik lény testébe kerül, a létrejövő lény Homunkulusz. Természetesen az Élet princípiuma e teremtményben nem található meg."
                         },
                         {
+                            "type": "heading",
+                            "text": "Zombi (Zaurak)"
+                        },
+                        {
+                            "type": "table",
+                            "headers": [
+                                "Jellemző",
+                                "Érték"
+                            ],
+                            "rows": [
+                                [
+                                    "Előfordulás",
+                                    "Ritka"
+                                ],
+                                [
+                                    "Megjelenők száma",
+                                    "1"
+                                ],
+                                [
+                                    "Termet",
+                                    "E"
+                                ],
+                                [
+                                    "Méretkategória",
+                                    "1"
+                                ],
+                                [
+                                    "Sebesség",
+                                    "60 (SZ)"
+                                ],
+                                [
+                                    "Időigény",
+                                    "3"
+                                ],
+                                [
+                                    "Kezdeményező érték",
+                                    "20"
+                                ],
+                                [
+                                    "Támadó érték",
+                                    "60"
+                                ],
+                                [
+                                    "Védő érték",
+                                    "70"
+                                ],
+                                [
+                                    "Sebzés",
+                                    "1k6 vagy fegyver"
+                                ],
+                                [
+                                    "Életerő pontok",
+                                    "15"
+                                ],
+                                [
+                                    "Fájdalomtűrés pontok",
+                                    "–"
+                                ],
+                                [
+                                    "Asztrál ME",
+                                    "Immunis"
+                                ],
+                                [
+                                    "Mentál ME",
+                                    "Immunis"
+                                ],
+                                [
+                                    "Méregellenállás",
+                                    "Immunis"
+                                ],
+                                [
+                                    "Intelligencia",
+                                    "Alacsony"
+                                ],
+                                [
+                                    "Jellem",
+                                    "Káosz, Halál"
+                                ],
+                                [
+                                    "Tapasztalati pont",
+                                    "8"
+                                ],
+                                [
+                                    "Necrografiai osztály",
+                                    "I. tudattalan élőholt"
+                                ]
+                            ]
+                        },
+                        {
                             "type": "paragraph",
                             "text": "A zombik lélekkel nem rendelkező, mágiával mozgatott holttestek, akiket gonosz papok vagy boszorkánymesterek használnak fel sötét céljaik érdekében. Teremtőik egyszerű parancsainak engedelmeskednek, gondolkodás nélkül. Lelkük nem lévén, minden érzelemtől mentesek, fájdalmat sem éreznek."
                         },
@@ -49591,6 +50131,99 @@
                         {
                             "type": "paragraph",
                             "text": "Testük lehet ép holttest, de akár összeaszott csontváz is. A bomlás akármilyen szakában is lett belőlük élőholt, rothadásuk azon a fokon megállt, azonban állandóan az elmúlás szaga lengi őket körül."
+                        },
+                        {
+                            "type": "heading",
+                            "text": "Crantai Kóborló"
+                        },
+                        {
+                            "type": "table",
+                            "headers": [
+                                "Jellemző",
+                                "Érték"
+                            ],
+                            "rows": [
+                                [
+                                    "Előfordulás",
+                                    "Nagyon ritka (lásd lentebb)"
+                                ],
+                                [
+                                    "Megjelenők száma",
+                                    "2k6"
+                                ],
+                                [
+                                    "Termet",
+                                    "E"
+                                ],
+                                [
+                                    "Méretkategória",
+                                    "1 vagy fegyvertől függ"
+                                ],
+                                [
+                                    "Sebesség",
+                                    "100 (SZ)"
+                                ],
+                                [
+                                    "Támadások száma",
+                                    "2"
+                                ],
+                                [
+                                    "Kezdeményező érték",
+                                    "40 vagy 52 (hosszúkard)"
+                                ],
+                                [
+                                    "Támadó érték",
+                                    "95 vagy 120 (hosszúkard)"
+                                ],
+                                [
+                                    "Védő érték",
+                                    "115 vagy 140 (hosszúkard)"
+                                ],
+                                [
+                                    "Sebzés",
+                                    "1k6 vagy 2k6+4 (hosszúkard)"
+                                ],
+                                [
+                                    "Életerő pontok",
+                                    "35"
+                                ],
+                                [
+                                    "Fájdalomtűrés pontok",
+                                    "–"
+                                ],
+                                [
+                                    "Asztrál ME",
+                                    "Immunis"
+                                ],
+                                [
+                                    "Mentál ME",
+                                    "Immunis"
+                                ],
+                                [
+                                    "Méregellenállás",
+                                    "Immunis"
+                                ],
+                                [
+                                    "Pszi képzettség",
+                                    "25 (lásd lentebb)"
+                                ],
+                                [
+                                    "Intelligencia",
+                                    "Magas"
+                                ],
+                                [
+                                    "Jellem",
+                                    "Káosz, Halál"
+                                ],
+                                [
+                                    "Tapasztalati pont",
+                                    "70"
+                                ],
+                                [
+                                    "Necrografiai osztály",
+                                    "II. éji rém"
+                                ]
+                            ]
                         },
                         {
                             "type": "paragraph",
@@ -49651,8 +50284,303 @@
                             "text": "Mint minden egyéb lelket, a vérfarkast is be lehet börtönözni Lélekcsapda varázsjellel – a neve ismeretében."
                         },
                         {
+                            "type": "heading",
+                            "text": "Vámpír"
+                        },
+                        {
+                            "type": "table",
+                            "headers": [
+                                "Jellemző",
+                                "Érték"
+                            ],
+                            "rows": [
+                                [
+                                    "Előfordulás",
+                                    "Nagyon ritka"
+                                ],
+                                [
+                                    "Megjelenők száma",
+                                    "1"
+                                ],
+                                [
+                                    "Termet",
+                                    "E"
+                                ],
+                                [
+                                    "Méretkategória",
+                                    "1"
+                                ],
+                                [
+                                    "Sebesség",
+                                    "100 (SZ)"
+                                ],
+                                [
+                                    "Időigény",
+                                    "3 vagy fegyver szerint"
+                                ],
+                                [
+                                    "Kezdeményező érték",
+                                    "32"
+                                ],
+                                [
+                                    "Támadó érték",
+                                    "80"
+                                ],
+                                [
+                                    "Védő érték",
+                                    "120"
+                                ],
+                                [
+                                    "Sebzés",
+                                    "1k6 vagy fegyver"
+                                ],
+                                [
+                                    "Életerő pontok",
+                                    "40"
+                                ],
+                                [
+                                    "Fájdalomtűrés pontok",
+                                    "–"
+                                ],
+                                [
+                                    "Asztrál ME",
+                                    "Immunis"
+                                ],
+                                [
+                                    "Mentál ME",
+                                    "Immunis"
+                                ],
+                                [
+                                    "Méregellenállás",
+                                    "Immunis"
+                                ],
+                                [
+                                    "Intelligencia",
+                                    "Magas"
+                                ],
+                                [
+                                    "Jellem",
+                                    "Káosz, Halál"
+                                ],
+                                [
+                                    "Tapasztalati pont",
+                                    "40"
+                                ],
+                                [
+                                    "Necrografiai osztály",
+                                    "III. vérivó élőholt"
+                                ]
+                            ]
+                        },
+                        {
                             "type": "paragraph",
                             "text": "A vámpír minden élőholtak közül a legveszedelmesebb, legravaszabb ellenfél, hiszen ránézésre nem lehet megállapítani kilétét. Megjelenését tekintve általában magas, délceg tartású emberre hasonlít, kemény, határozott arcvonásokkal. Bőre sápadt, ajkai teltek és vörösek – ám ezen jegyek alapján szinte semmivel nem könnyebb felismerni, hisz nem csupán rá jellemzőek. Hosszúra nőtt szemfogukat a vámpírok az utolsó pillanatig gondosan rejtve tartják. Viselkedésük minden esetben tiszteletet parancsoló, lényüket egyfajta fölényesség lengi körül. Tekintetüket kevés ember képes hosszan állni."
+                        },
+                        {
+                            "type": "heading",
+                            "text": "Kóbor lélek (Hekator)"
+                        },
+                        {
+                            "type": "table",
+                            "headers": [
+                                "Jellemző",
+                                "Érték"
+                            ],
+                            "rows": [
+                                [
+                                    "Előfordulás",
+                                    "Ritka"
+                                ],
+                                [
+                                    "Megjelenők száma",
+                                    "1"
+                                ],
+                                [
+                                    "Termet",
+                                    "E"
+                                ],
+                                [
+                                    "Méretkategória",
+                                    "–"
+                                ],
+                                [
+                                    "Sebesség",
+                                    "20 (L) vagy megszállt test"
+                                ],
+                                [
+                                    "Időigény",
+                                    "10"
+                                ],
+                                [
+                                    "Kezdeményező érték",
+                                    "10"
+                                ],
+                                [
+                                    "Támadó érték",
+                                    "20"
+                                ],
+                                [
+                                    "Védő érték",
+                                    "50"
+                                ],
+                                [
+                                    "Sebzés",
+                                    "Fegyver szerint"
+                                ],
+                                [
+                                    "Életerő pontok",
+                                    "Megszállt testé"
+                                ],
+                                [
+                                    "Fájdalomtűrés pontok",
+                                    "–"
+                                ],
+                                [
+                                    "Asztrál ME",
+                                    "Immunis"
+                                ],
+                                [
+                                    "Mentál ME",
+                                    "Immunis"
+                                ],
+                                [
+                                    "Méregellenállás",
+                                    "Immunis"
+                                ],
+                                [
+                                    "Intelligencia",
+                                    "Magas"
+                                ],
+                                [
+                                    "Jellem",
+                                    "Káosz, Halál"
+                                ],
+                                [
+                                    "Tapasztalati pont",
+                                    "10"
+                                ],
+                                [
+                                    "Necrografiai osztály",
+                                    "III. kóborló dög"
+                                ]
+                            ]
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "A Kóbor lélek olyan rég meghalt valami nyugalmat nem talált lelke, aki evilágon valami számára fontosat már nem fejezhetett be, mert a halál előbb eljött érte. Nem nyugodhat békében, amíg célját – melyet már-már őrülten hajszol – el nem éri, és ennek érdekében bármilyen eszközt felhasznál."
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "Alapjában véve nem látható, hiszen teste nincs, de néhány Pszi diszciplínával észlelhető (Asztrálszem, Auraérzékelés). Az efféle lelkek leggyakrabban már életükben őrültek voltak, de ha nem, a halál utáni bolyongástól mindenképpen megőrülnek, Asztráljuk eltorzul, egyetlen vágyuk céljuk elérése lesz."
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "A Kóbor lélek test nélkül kizárólag Pszit használhat, ha életében képes volt rá. Anyagi vagy mágikus támadásra nem képes, ám ezek óá sincsenek hatással. Van azonban egy különleges képessége: beleköltözhet élő emberek testébe, azt használva az anyagi világon. Ha meg is száll valakit, irányítani csak akkor tudja, ha Akaratereje nagyobb, mint az áldozaté (Akaratereje 14+1k6). A testet bármikor elhagyhatja, ha már nem veszi hasznát. Természetesen a testen okozott sebek a Kóbor lélekre semmilyen hatással nincsenek. Az illető szellemi képességeinek (úgymint Pszi, Mágiahasználat, Képzettségek) nem kerül birtokába."
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "A leghatékonyabb mód a legyőzésére, ha egy Lélekcsapda varázsjellel valaki bebörtönzi a kóbor lelket. Ez esetben, ha a közelben van, azonnal elhagyja az éppen megszállt embert."
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "Az elérendő cél sok minden lehet, ami csak egy őrült elmében felmerülhet. Lehet, hogy életében az aranycsinálás titkát kereste és nem nyugodhat, amíg meg nem találta; talán kedvese gyilkosán akar bosszút állni, vagy más efféle. Természetesen amint elérte célját, megszűnik élőholt lenni, és visszatér a reinkarnáció rendes körforgásába."
+                        },
+                        {
+                            "type": "heading",
+                            "text": "Syvan"
+                        },
+                        {
+                            "type": "table",
+                            "headers": [
+                                "Jellemző",
+                                "Érték"
+                            ],
+                            "rows": [
+                                [
+                                    "Előfordulás",
+                                    "Nagyon ritka"
+                                ],
+                                [
+                                    "Megjelenők száma",
+                                    "1k6"
+                                ],
+                                [
+                                    "Termet",
+                                    "E"
+                                ],
+                                [
+                                    "Méretkategória",
+                                    "1"
+                                ],
+                                [
+                                    "Sebesség",
+                                    "80 (SZ)"
+                                ],
+                                [
+                                    "Időigény",
+                                    "3"
+                                ],
+                                [
+                                    "Kezdeményező érték",
+                                    "25"
+                                ],
+                                [
+                                    "Támadó érték",
+                                    "60"
+                                ],
+                                [
+                                    "Védő érték",
+                                    "90"
+                                ],
+                                [
+                                    "Sebzés",
+                                    "1k6 vagy fegyvertől függ"
+                                ],
+                                [
+                                    "Életerő pontok",
+                                    "13"
+                                ],
+                                [
+                                    "Fájdalomtűrés pontok",
+                                    "46"
+                                ],
+                                [
+                                    "Asztrál ME",
+                                    "Immunis"
+                                ],
+                                [
+                                    "Mentál ME",
+                                    "Immunis"
+                                ],
+                                [
+                                    "Méregellenállás",
+                                    "Immunis"
+                                ],
+                                [
+                                    "Intelligencia",
+                                    "Magas"
+                                ],
+                                [
+                                    "Jellem",
+                                    "Káosz, Halál"
+                                ],
+                                [
+                                    "Tapasztalati pont",
+                                    "70"
+                                ],
+                                [
+                                    "Necrografiai osztály",
+                                    "II. éji rém"
+                                ]
+                            ]
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "A legocsmányabb újkori élőhalottak, melyeket a Necrografia az éji rémek kategóriájába sorol. Négyszáz éve találkoztak először efféle szörnyeteggel a Dwyll Unió gyepűin, s ez a találkozás sokáig emlékezetes marad az Inkvizítorok Szövetségének tagjai soraiban. A Syvan megszólalásig hasonlít az egyszerű, zombi típusú, tudattalan élőhalottakra – a különbség végtelenül gonosz természetében és már-már állati ravaszságában nyilvánul meg leginkább. Egyes nekromantái gyanítják: óvatlan abasziszi boszorkánymesterekből válik Syvan, erre utal lassan rothadó testük kinézete, s a Boszorkánymesteri mágia használata (naponta 50 Mp felhasználásra képesek). Temetők, jeltelen sírok lakói, kik a két hold együttállásakor másznak elő, hogy a környék lakóit riogassák. Minden különösebb ok nélkül gyilkolják, átkozzák áldozataikat, hogy azután a helybe költözzenek. Feljegyzések szólnak egészen elnéptelenedett falvakról, melyek nappal üresen konganak, hogy az éj leszálltával megelevenedve Syvan településül váljanak."
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "Szerencsére a mágia használatán kívül más fegyverhez nem szívesen nyúlnak, tőrnél, rövidkardnál nagyobb alkalmatosságot sosem használnak. Immunisak minden méregre, Illúzió- és Asztrálalapú varázslatra, testüket csak mágikus hatalmú fegyver sebzi."
                         }
                     ]
                 },
@@ -49687,6 +50615,103 @@
                         {
                             "type": "paragraph",
                             "text": "A vámpír az egyetlen élőhalott, amelynek van még valami köze az élethez. Nemcsak megjelenésekor kelti eleven ember benyomását – szeretkezni is képes, mégpedig a játékrendszerben szereplő 5. fokon. Természetesen az ilyen aktusból utód nem származhat."
+                        },
+                        {
+                            "type": "heading",
+                            "text": "Árny (Arich)"
+                        },
+                        {
+                            "type": "table",
+                            "headers": [
+                                "Jellemző",
+                                "Érték"
+                            ],
+                            "rows": [
+                                [
+                                    "Előfordulás",
+                                    "Ritka"
+                                ],
+                                [
+                                    "Megjelenők száma",
+                                    "1"
+                                ],
+                                [
+                                    "Termet",
+                                    "E"
+                                ],
+                                [
+                                    "Méretkategória",
+                                    "1"
+                                ],
+                                [
+                                    "Sebesség",
+                                    "160 (L)"
+                                ],
+                                [
+                                    "Időigény",
+                                    "3"
+                                ],
+                                [
+                                    "Kezdeményező érték",
+                                    "20"
+                                ],
+                                [
+                                    "Támadó érték",
+                                    "50"
+                                ],
+                                [
+                                    "Védő érték",
+                                    "90"
+                                ],
+                                [
+                                    "Sebzés",
+                                    "1k10"
+                                ],
+                                [
+                                    "Életerő pontok",
+                                    "30"
+                                ],
+                                [
+                                    "Fájdalomtűrés pontok",
+                                    "–"
+                                ],
+                                [
+                                    "Asztrál ME",
+                                    "Immunis"
+                                ],
+                                [
+                                    "Mentál ME",
+                                    "Immunis"
+                                ],
+                                [
+                                    "Méregellenállás",
+                                    "Immunis"
+                                ],
+                                [
+                                    "Pszi",
+                                    "–"
+                                ],
+                                [
+                                    "Intelligencia",
+                                    "alacsony"
+                                ],
+                                [
+                                    "Max. Mp",
+                                    "–"
+                                ],
+                                [
+                                    "Jellem",
+                                    "Káosz, Halál"
+                                ],
+                                [
+                                    "Tapasztalati pont",
+                                    "32"
+                                ],
+                                [
+                                    "Necrografiai osztály",
+                                    "IV. lidérc"
+                                ]
+                            ]
                         },
                         {
                             "type": "paragraph",
@@ -49915,6 +50940,99 @@
                             "text": "Méretükre nézve a Szolgák ember nagyságúak, a Harcosok közelebb állnak a 3 ynevi láb magassághoz, azaz nagy méretűek."
                         },
                         {
+                            "type": "heading",
+                            "text": "Erdőpille"
+                        },
+                        {
+                            "type": "table",
+                            "headers": [
+                                "Jellemző",
+                                "Érték"
+                            ],
+                            "rows": [
+                                [
+                                    "Előfordulás",
+                                    "Nagyon ritka"
+                                ],
+                                [
+                                    "Megjelenők száma",
+                                    "2k6"
+                                ],
+                                [
+                                    "Termet",
+                                    "K"
+                                ],
+                                [
+                                    "Méretkategória",
+                                    "0"
+                                ],
+                                [
+                                    "Sebesség",
+                                    "12 (SZ) 50 (L)"
+                                ],
+                                [
+                                    "Támadó érték",
+                                    "15"
+                                ],
+                                [
+                                    "Védő érték",
+                                    "120"
+                                ],
+                                [
+                                    "Kezdeményező érték",
+                                    "40"
+                                ],
+                                [
+                                    "Célzó érték",
+                                    "60"
+                                ],
+                                [
+                                    "Sebzés",
+                                    "Lásd a leírásban"
+                                ],
+                                [
+                                    "Időigény",
+                                    "2"
+                                ],
+                                [
+                                    "Életerő pontok",
+                                    "1"
+                                ],
+                                [
+                                    "Fájdalomtűrés pontok",
+                                    "3"
+                                ],
+                                [
+                                    "Asztrál ME",
+                                    "20"
+                                ],
+                                [
+                                    "Mentál ME",
+                                    "20"
+                                ],
+                                [
+                                    "Méregellenállás",
+                                    "4"
+                                ],
+                                [
+                                    "Pszi",
+                                    "–"
+                                ],
+                                [
+                                    "Intelligencia",
+                                    "Átlagos"
+                                ],
+                                [
+                                    "Jellem",
+                                    "Élet"
+                                ],
+                                [
+                                    "Tapasztalati pont",
+                                    "1"
+                                ]
+                            ]
+                        },
+                        {
                             "type": "paragraph",
                             "text": "Az erdőpillék különös népség. Alig nagyobbak egy arasznál. Felépítésük sokban hasonlít az elfekére, de hátukon két áttetsző, hártyás szárny rezeg, kolibrihez hasonló röptük látványa lenyűgöző. Szeretik a színes és díszes ruhákat, melyeket növényi rostokból készítenek, és élőhelyük közelében fellelhető anyagokkal festenek. Mindenevők. Filozófiájuk szerint nincs nemesebb időtöltés a gyanútlan utazók zargatásánál – erről a gyanútlan utazók persze másként vélekednek. Ha valaki erdőpillék lakta, mérsékelt övi rengetegbe téved, azonnal különös dolgok kezdenek vele történni. Annyi eszük a bujkáló bajkeverőknek azért mindig van, hogy megérezzék, kivel nem tanácsos próbálkozniuk."
                         },
@@ -49929,6 +51047,99 @@
                         {
                             "type": "paragraph",
                             "text": "Komolyabb mérgeket kizárólag nagytestű lények ellen használnak – saját viszályaikat félretéve, csapdák és szilánknyi szálfegyverek segítségével igyekeznek rendezni. Az elaltatott vagy megölt személyt szinte mindig megszabadítják fegyvereitől. Ezeket a fegyvereket azután elhagyják valahol, és szinte azonnal megfeledkeznek róluk."
+                        },
+                        {
+                            "type": "heading",
+                            "text": "Ginsour"
+                        },
+                        {
+                            "type": "table",
+                            "headers": [
+                                "Jellemző",
+                                "Érték"
+                            ],
+                            "rows": [
+                                [
+                                    "Előfordulás",
+                                    "Nagyon ritka"
+                                ],
+                                [
+                                    "Megjelenők száma",
+                                    "1"
+                                ],
+                                [
+                                    "Termet",
+                                    "K (5 arasz)"
+                                ],
+                                [
+                                    "Méretkategória",
+                                    "0"
+                                ],
+                                [
+                                    "Sebesség",
+                                    "80 (SZ)"
+                                ],
+                                [
+                                    "Támadó érték",
+                                    "50"
+                                ],
+                                [
+                                    "Védő érték",
+                                    "95"
+                                ],
+                                [
+                                    "Kezdeményező érték",
+                                    "30"
+                                ],
+                                [
+                                    "Célzó érték",
+                                    "90"
+                                ],
+                                [
+                                    "Sebzés",
+                                    "1k5"
+                                ],
+                                [
+                                    "Időigény",
+                                    "5"
+                                ],
+                                [
+                                    "Életerő pontok",
+                                    "6"
+                                ],
+                                [
+                                    "Fájdalomtűrés pontok",
+                                    "18"
+                                ],
+                                [
+                                    "Asztrál ME",
+                                    "35"
+                                ],
+                                [
+                                    "Mentál ME",
+                                    "25"
+                                ],
+                                [
+                                    "Méregellenállás",
+                                    "10"
+                                ],
+                                [
+                                    "Pszi képzettség",
+                                    "–"
+                                ],
+                                [
+                                    "Intelligencia",
+                                    "Átlagos"
+                                ],
+                                [
+                                    "Jellem",
+                                    "Élet, Káosz"
+                                ],
+                                [
+                                    "Tapasztalati pont",
+                                    "Lásd a táblázatot!"
+                                ]
+                            ]
                         },
                         {
                             "type": "paragraph",
