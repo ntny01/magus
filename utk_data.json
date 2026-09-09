@@ -33552,10 +33552,15 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "title": "BOSZORKÁNYMÁGIA",
+            "sections": [
                 {
                     "id": "sec_167",
-                    "title": "Varázslás",
+                    "title": "A boszorkánymágia — Varázslás",
                     "content_blocks": [
                         {
                             "type": "paragraph",
@@ -33654,7 +33659,7 @@
                 },
                 {
                     "id": "sec_168",
-                    "title": "Misztikus képességek",
+                    "title": "Misztikus képességek (Tűzmágia)",
                     "content_blocks": [
                         {
                             "type": "paragraph",
@@ -33879,12 +33884,7 @@
                             "text": "Az egyetlen kiáltásnyi varázslat nyomán a boszorkány tíz ujjának hegyéből körönként apró tűzvillámokat lőhet ki – körönként tehát 10-et. A villámok inkább látványosak, mint veszedelmesek: darabonként 1k6/2 Sp égési sebet okoznak – ami ellen a páncélok SFÉ-je érvényesül. Egy körben maximum 4 célpontra irányíthatóak, és ezek sem lehetnek egymástól két ynevi lábnál távolabb. Az áldozatok sikeres Gyorsaságpróba esetén elkerülhetik a villámokat. A varázslat hatóideje 3 kör – összesen tehát 30 villám bocsátható útjára."
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "title": "ANYAGI MÁGIA",
-            "sections": [
+                },
                 {
                     "id": "sec_169",
                     "title": "Általános Áttekintés",
@@ -36347,6 +36347,100 @@
                                     "Lásd a leírást!"
                                 ]
                             ]
+                        }
+                    ]
+                },
+                {
+                    "id": "sec_bajitalok",
+                    "title": "Bájitalok",
+                    "content_blocks": [
+                        {
+                            "type": "paragraph",
+                            "text": "A boszorkányok bájitalai több tekintetben is különlegesek. Néhányuk – hasonlóan a Hatalom italához – a boszorkány mágiáját erősítheti, mások hatása pedig a Szimpatikus mágia használatán alapul. A Szimpatikus mágiát felhasználó bájitalok elkészítéséhez – miképpen a hasonló varázslatokhoz – az áldozat hajára, körmére, esetleg vérére van szükség. A folyadékok némelyikét nem csupán a boszorkány használhatja, hanem mások is, közönséges esetben is. Ezeknél nemcsak elkészítési, de eladási árak is feltüntetésre kerültek. Az itt leírt árak átlagosak, szélsőséges esetben akár tízszer ennyit is fizettethetnek értük, ha pl. a vevő igazán rászorul a folyadékra. Megeshet ellenben az is, hogy a boszorkány van szorító pénzszükségben – ekkor az árak meglehetősen kedvezőn változnak."
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "A csak boszorkányok által használható italokat a rendek vezetői gyakran adják – persze a józan ész határain belül – olyanoknak is, akik maguk még képtelenek lennének az adott mennyiségű Mana pont előteremtésére. Ez leggyakrabban küldetések végrehajtása előtt fordul elő. Arról sem érdemes megfeledkezni, hogy a boszorkány, ha valóban el akarja készíteni a kívánt italt, társai segítségével Boszorkánykört alkothat, és az egyesített Mana pontokból már létrehozhatja a áhított szert."
+                        },
+                        {
+                            "type": "heading",
+                            "text": "Jellemtorzítás itala"
+                        },
+                        {
+                            "type": "rule",
+                            "title": "Adatok",
+                            "text": "Mana pont: Lásd a leírást! · Időtartam: Végleges · Elkészítési ár: 1 arany · Eladási ár: 10-200 arany"
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "Az ital tulajdonképpen többféle folyadékot foglal magába. Segítségével a boszorkány Jellemtorzító átkokat hozhat létre bájital formájában. A kiszemelt áldozatnak csak el kell fogyasztania a két-három kortynyi keveréket, és sikertelen ellenállás esetén máris a varázslat hatása alá kerül. Ráadásként meglehetősen nehezen erősíthető varázslatok így sokkal hatékonyabban alkalmazhatóak: mivel az áldozat testén belül fejtik ki hatásukat, az Erősítés sokkal kevesebb Mana pontot igényel. Az átkot hordozó ital elkészítéséhez csupán viszonylag könnyen beszerezhető gyógyfüvek és egy apró tűz szükséges – no meg Mana pontok. A bájital elkészítése 20 + annyi Mp-t igényel, amennyi az eredeti varázslat Mana pont igénye. Ezért a befektetésért az átok alaperőssége minden esetben 30E lesz, a további Erősítés pedig feleannyi Mana pontot igényel, mint az eredeti varázslatnál feltüntetett értékek. Az így elkészített bájital természetesen nem méreg, ám egyetlen módon akként is felhasználható. Amennyiben a boszorkány az elkészített italt Zöld gyertya megformálásához alkalmazza, a gyertya öt adag mérget kétfözetnyi bájitallal helyettesítheti."
+                        },
+                        {
+                            "type": "heading",
+                            "text": "Kapcsolat főzete"
+                        },
+                        {
+                            "type": "rule",
+                            "title": "Adatok",
+                            "text": "Mana pont: 45 · Időtartam: 1 óra · Elkészítési ár: 6 arany · Eladási ár: –"
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "Kérdéses, hogy egyáltalán bájitalnak nevezhető-e a folyadék, mivel elfogyasztania senkinek sem kell. Tulajdonképpen a Szimpatikus mágia egyik eszköze ez, mellyel a boszorkány elképesztő hatalomra tehet szert áldozata felett. A folyadék nem más, mint a célpont fizikai testének egykori részéből készített esszencia. Az elkészítés több órás szertartást igényel, melynek során az áldozat körmét, haját többféle különleges növény keverékével és ráolvasásokkal halványzöld színnel derengő folyadékká alakítják. A boszorkánynak a felhasználás kezdetén be kell mártania bal kezének mutatóujját a folyadékba. Mikor ez megtörténik, a maradék főzet minden mágikus képességét elveszti, az egy óra pedig telni kezd. A varázsszer hatására a boszorkány minden varázslatát – mely ellen az áldozat Asztrál vagy Mentálellenállásra jogosult – a kiszemelt személy ellen sokkal könnyebben alkalmazza. Minden egyes eredeti Erősítés a varázslat hatására kétszeresére nő. Ha a boszorkány tovább kíván Erősíteni egy varázslatot, a hatás természetesen ugyanez lesz, vagyis az eredendően 1 E-t jelentő Mp-ért most 2E lesz a növekedés. Az áldozat csak egy órán át van veszélyben."
+                        },
+                        {
+                            "type": "heading",
+                            "text": "Szerelem itala"
+                        },
+                        {
+                            "type": "rule",
+                            "title": "Adatok",
+                            "text": "Mana pont: 60 · Időtartam: Végleges · Elkészítési ár: 10 arany · Eladási ár: 150 arany"
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "A boszorkányok ezen italának hatása szinte mindenben megegyezik a Szerelemvarázzsal. Két dologban azonban mégis különbözik. Egyrészt a hatás végleges, másrészt a folyadékot elfogyasztó személy nem abba szeret bele, akit az ellentétes nem tagjai közül először megpillant, hanem abba, akinek elrendeltetett – ha nem is a sors, a boszorkány szándéka szerint. Ez azt jelenti, hogy az ital elkészítésekor az éppen forrásban lévő folyadékba bele kell keverni egy, a kívánt személlyel szimpatikus viszonyban álló tárgyat – természetesen a boszorkányok Szimpatikus mágiája szerint a fizikai test egykori részét. Az áldozat Asztrális Mágiaellenállásra jogosult az ital elfogyasztásakor, 50E erősség ellen. Ha az ellenállás sikertelen, az áldozat egy szempillantás töredékéig meginog, mintha eszméletét veszítené el. Ezek után előtte a mágikus italba szőtt személy képe, akinek arcát, alakját soha sem lesz képes elfelejteni. Többször megtörtént, hogy boszorkányok merő gonoszságból már elhunytak hajának, körmének segítségével készítettek italt, majd ezt itatták meg kísérletük alanyával. A szerencsétlen sorsú áldozatok több éven át utaztak, kóboroltak szerte Yneven, hogy megleljék álmaik választottját – persze sikertelenül."
+                        },
+                        {
+                            "type": "heading",
+                            "text": "Szépség itala"
+                        },
+                        {
+                            "type": "rule",
+                            "title": "Adatok",
+                            "text": "Mana pont: 40 · Időtartam: 1 nap · Elkészítési ár: 10 arany · Eladási ár: 50 vagy 80 arany"
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "A boszorkányok ezen mágikus főzetének a hatása igen különleges; nem csupán széppé teszi az illetőt, aki elfogyasztja, de egyfajta karizmatikus kisugárzást is kölcsönöz neki. Az ital alapesetben 1k6-tal emeli meg a boszorkány Karizmáját, azonban létezik a főzetnek egy másik elkészítési módszere is. Akkor, ha az elkészítéskor az italba kevernek valamely, a kiszemelt áldozattal szimpatikus viszonyban álló tárgyat, vagy valamely testrészét: körömvagdalék, egy kis vér, esetleg pár szál haj, megiható; akkor a boszorkány, vagy az italt felhajtó személy a bűbáj célpontja szerinti nő-, vagy férfiideálhoz kezd el hasonulni. Egyfajta tudatalatti mágikus vonzerőt fejt ki irányában puszta megjelenésével. Az effajta vonzódás nem minősül varázslatnak, így efféleképpen felfedezni is lehetetlen, azonban a kiszemelt áldozatnak, ha az ital elfogyasztója környezetében van, sikeres Asztrálpróbát kell tennie, különben vonzódni kezd az illetőhöz, a Bűbáj varázslatnál leírtaknak megfelelően. A varázsital a hatását egy napig fejti ki, azonban a vonzalom bűbáj sem múlik el, ha az alkalmazónak eközben sikerült becserkésznie a kiszemelt személyt."
+                        },
+                        {
+                            "type": "heading",
+                            "text": "Átváltozás itala"
+                        },
+                        {
+                            "type": "rule",
+                            "title": "Adatok",
+                            "text": "Mana pont: Lásd a leírást! · Időtartam: 1 nap · Elkészítési ár: Lásd a leírást! · Eladási ár: Lásd a leírást!"
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "Ezen különleges főzetet nem minden boszorkányrend tagjai ismerik, (csakis az idősebb, komolyabb történelemmel rendelkező szervezetek kaparinthatták meg,) vagy juthattak el a természeti anyagok mágiájának ezen fokára. (Arról, hogy az adott boszorkányrend ismeri-e ezen varázsital receptjét, mindig a KM hivatott dönteni.) A varázsital hatása mindenben megegyezik az Átváltoztatás csókja nevezetű varázslatnál leírtakkal, azonban hatása mindig arra fejti ki, aki felhajtja a varázsitalt, és elvéti Asztrális és Mentális ME-jét 40 E erősséggel szemben. A varázsital elkészítéséhez mindig az italba kell keverni az átváltozás végeredményéül kiszemelt fajú lény vérének legalább hét cseppjét. Az ital elkészítéséhez szükséges Mana pont igény 10 Mp-tal több mint az Átváltozás csókjánál feltüntetett érték. Amikor a boszorkány palackba zárja a főzetet, egy csókot lehel rá, így hívja életre a mágikus hatást. Abban az esetben, ha egy kiszemelt lénnyé kíván változni az ital alkalmazója, akkor az adott teremtmény vérét kell felhasználnia, és újabb 10 Mana pontot feláldoznia."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "BOSZORKÁNYMESTERI MÁGIA",
+            "sections": [
+                {
+                    "id": "sec_villammagia",
+                    "title": "Villámmágia",
+                    "content_blocks": [
+                        {
+                            "type": "heading",
+                            "text": "Villámmágia"
                         },
                         {
                             "type": "paragraph",
@@ -36487,85 +36581,10 @@
                         {
                             "type": "paragraph",
                             "text": "Mana pont: 4/E Hatótáv: 10 láb Időtartam: 1 óra/szintA varázslat segítségével a boszorkánymester nyers energiájából való erőtérketrecbe zárhat egy emberi méretű, vagy kisebb teremtményt. A ketrec kör alakú, sugara 1 ynevi láb, rácsai anyagtalanok és derengő kék fényt sugároznak – gyakorlatilag villámnak minősülnek. A bezárt lény nem képes kitörni börtönéből, csak ha vállalja a „rácsokkal” való érintkezés kockázatát."
-                        }
-                    ]
-                },
-                {
-                    "id": "sec_bajitalok",
-                    "title": "Bájitalok",
-                    "content_blocks": [
-                        {
-                            "type": "paragraph",
-                            "text": "A boszorkányok bájitalai több tekintetben is különlegesek. Néhányuk – hasonlóan a Hatalom italához – a boszorkány mágiáját erősítheti, mások hatása pedig a Szimpatikus mágia használatán alapul. A Szimpatikus mágiát felhasználó bájitalok elkészítéséhez – miképpen a hasonló varázslatokhoz – az áldozat hajára, körmére, esetleg vérére van szükség. A folyadékok némelyikét nem csupán a boszorkány használhatja, hanem mások is, közönséges esetben is. Ezeknél nemcsak elkészítési, de eladási árak is feltüntetésre kerültek. Az itt leírt árak átlagosak, szélsőséges esetben akár tízszer ennyit is fizettethetnek értük, ha pl. a vevő igazán rászorul a folyadékra. Megeshet ellenben az is, hogy a boszorkány van szorító pénzszükségben – ekkor az árak meglehetősen kedvezőn változnak."
                         },
                         {
                             "type": "paragraph",
-                            "text": "A csak boszorkányok által használható italokat a rendek vezetői gyakran adják – persze a józan ész határain belül – olyanoknak is, akik maguk még képtelenek lennének az adott mennyiségű Mana pont előteremtésére. Ez leggyakrabban küldetések végrehajtása előtt fordul elő. Arról sem érdemes megfeledkezni, hogy a boszorkány, ha valóban el akarja készíteni a kívánt italt, társai segítségével Boszorkánykört alkothat, és az egyesített Mana pontokból már létrehozhatja a áhított szert."
-                        },
-                        {
-                            "type": "heading",
-                            "text": "Jellemtorzítás itala"
-                        },
-                        {
-                            "type": "rule",
-                            "title": "Adatok",
-                            "text": "Mana pont: Lásd a leírást! · Időtartam: Végleges · Elkészítési ár: 1 arany · Eladási ár: 10-200 arany"
-                        },
-                        {
-                            "type": "paragraph",
-                            "text": "Az ital tulajdonképpen többféle folyadékot foglal magába. Segítségével a boszorkány Jellemtorzító átkokat hozhat létre bájital formájában. A kiszemelt áldozatnak csak el kell fogyasztania a két-három kortynyi keveréket, és sikertelen ellenállás esetén máris a varázslat hatása alá kerül. Ráadásként meglehetősen nehezen erősíthető varázslatok így sokkal hatékonyabban alkalmazhatóak: mivel az áldozat testén belül fejtik ki hatásukat, az Erősítés sokkal kevesebb Mana pontot igényel. Az átkot hordozó ital elkészítéséhez csupán viszonylag könnyen beszerezhető gyógyfüvek és egy apró tűz szükséges – no meg Mana pontok. A bájital elkészítése 20 + annyi Mp-t igényel, amennyi az eredeti varázslat Mana pont igénye. Ezért a befektetésért az átok alaperőssége minden esetben 30E lesz, a további Erősítés pedig feleannyi Mana pontot igényel, mint az eredeti varázslatnál feltüntetett értékek. Az így elkészített bájital természetesen nem méreg, ám egyetlen módon akként is felhasználható. Amennyiben a boszorkány az elkészített italt Zöld gyertya megformálásához alkalmazza, a gyertya öt adag mérget kétfözetnyi bájitallal helyettesítheti."
-                        },
-                        {
-                            "type": "heading",
-                            "text": "Kapcsolat főzete"
-                        },
-                        {
-                            "type": "rule",
-                            "title": "Adatok",
-                            "text": "Mana pont: 45 · Időtartam: 1 óra · Elkészítési ár: 6 arany · Eladási ár: –"
-                        },
-                        {
-                            "type": "paragraph",
-                            "text": "Kérdéses, hogy egyáltalán bájitalnak nevezhető-e a folyadék, mivel elfogyasztania senkinek sem kell. Tulajdonképpen a Szimpatikus mágia egyik eszköze ez, mellyel a boszorkány elképesztő hatalomra tehet szert áldozata felett. A folyadék nem más, mint a célpont fizikai testének egykori részéből készített esszencia. Az elkészítés több órás szertartást igényel, melynek során az áldozat körmét, haját többféle különleges növény keverékével és ráolvasásokkal halványzöld színnel derengő folyadékká alakítják. A boszorkánynak a felhasználás kezdetén be kell mártania bal kezének mutatóujját a folyadékba. Mikor ez megtörténik, a maradék főzet minden mágikus képességét elveszti, az egy óra pedig telni kezd. A varázsszer hatására a boszorkány minden varázslatát – mely ellen az áldozat Asztrál vagy Mentálellenállásra jogosult – a kiszemelt személy ellen sokkal könnyebben alkalmazza. Minden egyes eredeti Erősítés a varázslat hatására kétszeresére nő. Ha a boszorkány tovább kíván Erősíteni egy varázslatot, a hatás természetesen ugyanez lesz, vagyis az eredendően 1 E-t jelentő Mp-ért most 2E lesz a növekedés. Az áldozat csak egy órán át van veszélyben."
-                        },
-                        {
-                            "type": "heading",
-                            "text": "Szerelem itala"
-                        },
-                        {
-                            "type": "rule",
-                            "title": "Adatok",
-                            "text": "Mana pont: 60 · Időtartam: Végleges · Elkészítési ár: 10 arany · Eladási ár: 150 arany"
-                        },
-                        {
-                            "type": "paragraph",
-                            "text": "A boszorkányok ezen italának hatása szinte mindenben megegyezik a Szerelemvarázzsal. Két dologban azonban mégis különbözik. Egyrészt a hatás végleges, másrészt a folyadékot elfogyasztó személy nem abba szeret bele, akit az ellentétes nem tagjai közül először megpillant, hanem abba, akinek elrendeltetett – ha nem is a sors, a boszorkány szándéka szerint. Ez azt jelenti, hogy az ital elkészítésekor az éppen forrásban lévő folyadékba bele kell keverni egy, a kívánt személlyel szimpatikus viszonyban álló tárgyat – természetesen a boszorkányok Szimpatikus mágiája szerint a fizikai test egykori részét. Az áldozat Asztrális Mágiaellenállásra jogosult az ital elfogyasztásakor, 50E erősség ellen. Ha az ellenállás sikertelen, az áldozat egy szempillantás töredékéig meginog, mintha eszméletét veszítené el. Ezek után előtte a mágikus italba szőtt személy képe, akinek arcát, alakját soha sem lesz képes elfelejteni. Többször megtörtént, hogy boszorkányok merő gonoszságból már elhunytak hajának, körmének segítségével készítettek italt, majd ezt itatták meg kísérletük alanyával. A szerencsétlen sorsú áldozatok több éven át utaztak, kóboroltak szerte Yneven, hogy megleljék álmaik választottját – persze sikertelenül."
-                        },
-                        {
-                            "type": "heading",
-                            "text": "Szépség itala"
-                        },
-                        {
-                            "type": "rule",
-                            "title": "Adatok",
-                            "text": "Mana pont: 40 · Időtartam: 1 nap · Elkészítési ár: 10 arany · Eladási ár: 50 vagy 80 arany"
-                        },
-                        {
-                            "type": "paragraph",
-                            "text": "A boszorkányok ezen mágikus főzetének a hatása igen különleges; nem csupán széppé teszi az illetőt, aki elfogyasztja, de egyfajta karizmatikus kisugárzást is kölcsönöz neki. Az ital alapesetben 1k6-tal emeli meg a boszorkány Karizmáját, azonban létezik a főzetnek egy másik elkészítési módszere is. Akkor, ha az elkészítéskor az italba kevernek valamely, a kiszemelt áldozattal szimpatikus viszonyban álló tárgyat, vagy valamely testrészét: körömvagdalék, egy kis vér, esetleg pár szál haj, megiható; akkor a boszorkány, vagy az italt felhajtó személy a bűbáj célpontja szerinti nő-, vagy férfiideálhoz kezd el hasonulni. Egyfajta tudatalatti mágikus vonzerőt fejt ki irányában puszta megjelenésével. Az effajta vonzódás nem minősül varázslatnak, így efféleképpen felfedezni is lehetetlen, azonban a kiszemelt áldozatnak, ha az ital elfogyasztója környezetében van, sikeres Asztrálpróbát kell tennie, különben vonzódni kezd az illetőhöz, a Bűbáj varázslatnál leírtaknak megfelelően. A varázsital a hatását egy napig fejti ki, azonban a vonzalom bűbáj sem múlik el, ha az alkalmazónak eközben sikerült becserkésznie a kiszemelt személyt."
-                        },
-                        {
-                            "type": "heading",
-                            "text": "Átváltozás itala"
-                        },
-                        {
-                            "type": "rule",
-                            "title": "Adatok",
-                            "text": "Mana pont: Lásd a leírást! · Időtartam: 1 nap · Elkészítési ár: Lásd a leírást! · Eladási ár: Lásd a leírást!"
-                        },
-                        {
-                            "type": "paragraph",
-                            "text": "Ezen különleges főzetet nem minden boszorkányrend tagjai ismerik, (csakis az idősebb, komolyabb történelemmel rendelkező szervezetek kaparinthatták meg,) vagy juthattak el a természeti anyagok mágiájának ezen fokára. (Arról, hogy az adott boszorkányrend ismeri-e ezen varázsital receptjét, mindig a KM hivatott dönteni.) A varázsital hatása mindenben megegyezik az Átváltoztatás csókja nevezetű varázslatnál leírtakkal, azonban hatása mindig arra fejti ki, aki felhajtja a varázsitalt, és elvéti Asztrális és Mentális ME-jét 40 E erősséggel szemben. A varázsital elkészítéséhez mindig az italba kell keverni az átváltozás végeredményéül kiszemelt fajú lény vérének legalább hét cseppjét. Az ital elkészítéséhez szükséges Mana pont igény 10 Mp-tal több mint az Átváltozás csókjánál feltüntetett érték. Amikor a boszorkány palackba zárja a főzetet, egy csókot lehel rá, így hívja életre a mágikus hatást. Abban az esetben, ha egy kiszemelt lénnyé kíván változni az ital alkalmazója, akkor az adott teremtmény vérét kell felhasználnia, és újabb 10 Mana pontot feláldoznia."
+                            "text": "Ha hozzájuk ér, vagy áthatol rajtuk, körönként a villám É-jének megfelelően sebződik – ami érthetően erős fájdalommal jár –, s ha Éveti Egészségpróbáját, izmai 1k6 körre felmondják a szolgálatot. Bénultan rogy a földre, és szerencsésnek mondhatja magát, ha kellő távolságra zuhan az irtózatos energiarácsoktól. A ketrecből biztonságosan kijutni csak mágia segítségével lehet. A varázslat a boszorkánymester szintjeinek megfelelő számú óráig tart."
                         }
                     ]
                 },
@@ -36573,10 +36592,6 @@
                     "id": "sec_177",
                     "title": "Anyagmágia",
                     "content_blocks": [
-                        {
-                            "type": "paragraph",
-                            "text": "Ha hozzájuk ér, vagy áthatol rajtuk, körönként a villám É-jének megfelelően sebződik – ami érthetően erős fájdalommal jár –, s ha Éveti Egészségpróbáját, izmai 1k6 körre felmondják a szolgálatot. Bénultan rogy a földre, és szerencsésnek mondhatja magát, ha kellő távolságra zuhan az irtózatos energiarácsoktól. A ketrecből biztonságosan kijutni csak mágia segítségével lehet. A varázslat a boszorkánymester szintjeinek megfelelő számú óráig tart."
-                        },
                         {
                             "type": "paragraph",
                             "text": "Az Anyagmágia nem foglal el kitüntetett szerepet a boszorkánymesterek repertoárjában. Kevés, és igen korlátozott képességű formulát ismernek csupán: olyanokat, melyek hathatós pusztítással járnak."
@@ -40724,7 +40739,7 @@
                 },
                 {
                     "id": "sec_194",
-                    "title": "Új törvénykönyv",
+                    "title": "Elemi mágia",
                     "content_blocks": [
                         {
                             "type": "paragraph",
@@ -43495,7 +43510,7 @@
                 },
                 {
                     "id": "sec_210",
-                    "title": "Elemi mágia",
+                    "title": "Összefoglaló táblázatok",
                     "content_blocks": [
                         {
                             "type": "table",
@@ -44114,13 +44129,7 @@
                                     "70 (2x)"
                                 ]
                             ]
-                        }
-                    ]
-                },
-                {
-                    "id": "sec_211",
-                    "title": "Nekromancia",
-                    "content_blocks": [
+                        },
                         {
                             "type": "table",
                             "title": "Nekromancia",
@@ -48093,7 +48102,7 @@
             "sections": [
                 {
                     "id": "sec_244",
-                    "title": "Istenek és vallások",
+                    "title": "Ranil",
                     "content_blocks": [
                         {
                             "type": "paragraph",
@@ -48151,7 +48160,7 @@
                 },
                 {
                     "id": "sec_245",
-                    "title": "A pyarroni panteon",
+                    "title": "Adron",
                     "content_blocks": [
                         {
                             "type": "paragraph",
@@ -48202,13 +48211,37 @@
                     ]
                 },
                 {
-                    "id": "sec_246",
+                    "id": "sec_god_darton",
+                    "title": "Darton",
+                    "content_blocks": [
+                        {
+                            "type": "paragraph",
+                            "text": "A pyarroni panteonban a halottak istene, a túlvilág őrzője, a tréfamester, Krad és Arel gyermeke. Súlyos páncélt visel, roppant kétkezes kard a fegyvere; szent szimbóluma a varjúszárny. Noha alapjában véve jóindulatú, kedvvel tréfál meg halandókat, s e tréfák olykor igen komoly következményekkel járnak. Híveinek száma Airun al Marem, a próféta fellépéséig viszonylag csekély volt, vallásának gyakorlása a beavatottak szűk körére korlátozódott."
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "A pyarroni tanítások szerint a halál misztériumai túl magasztos titkok ahhoz, semhogy egyszerű hívek birtokába jussanak; Darton kultuszának elterjedését mesterségesen gátolták, s ebben épp az istenség tévutakon járó, Selmo által fondorlatosan félrevezetett papjai jártak az élen. Végezetül a halottak istene sajátos módon épített hidat a hívek számára. Prófétát szemelt ki a halandók közül, és isteni küldetést jelölt ki számára, olyat, amivel nem sérti meg a Pyarroni Paktumot, az elsődleges anyagi síkon való be nem avatkozás törvényét."
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "Airun al Marem megjelenése, illetőleg az ezzel járó egyházszakadás széles tömegeket vont a próféta zászlaja alá. A vallás reformációja mind a mai napig tart."
+                        }
+                    ]
+                },
+                {
+                    "id": "sec_god_della",
                     "title": "Della",
                     "content_blocks": [
                         {
                             "type": "paragraph",
                             "text": "A pyrarroni panteon obskurus alakja, a Fátylak Takarta Arcú Hölgy, akit az istencsalád megnyilatkozásának idején a művészek patrónusaként tiszteltek. A vallástörténészek körében máig vita dúl arról, mi okozta háttérbe szorulását – a legelterjedtebb nézet szerint túlontúl megfoghatatlan a kontinens lakói számára, akik magukhoz közelebb állónak érzik a markáns Arelt, a nagytudású Kradot, vagy – távolabb vándorolva – a híveikkel szemben egyértelműbb követelményeket támasztó Tharrt és Ranagolt. Dellának csak a Pyrarroni Államszövetség ideológiai hátsó udvarán számító Városállamokban, valamint Erionban van számottevő kultusza. Lar-Dorban temploma is áll, szertartásainak irodalma könyvtárnyi, akár a többi halhatatlané, saját ünnepnapokkal azonban az utóbbi félezer évben – mióta szerepkörét Alborne vette át – már nem rendelkezik, s papjait sem képes felruházni a Szakrális mágia minimumát meghaladó képességekkel. Szent szimbóluma – manapság mind ritkábban találkozhatunk vele – két egymást keresztező fénykéve."
-                        },
+                        }
+                    ]
+                },
+                {
+                    "id": "sec_god_kyel",
+                    "title": "Kyel",
+                    "content_blocks": [
                         {
                             "type": "paragraph",
                             "text": "Kyelnek mindazonáltal komoly feladat jutott: felügyelni tartozik a Teremtés művének egészét, az égben és a földön zajló változásokat, a halhatatlanok Ősi Egyezményének betartását, s neki kell új utat mutatnia azoknak is, akik kutatásaikkal vagy vétkeikkel az előre felvázolt jövőt fenyegetik. A pyarroni katekizmus szerint része volt az emberiség felemelkedésében – azt már csak az apokrifok teszik hozzá, hogy élnek a nap és a holdak alatt olyan teremtmények, melyek létüket is neki köszönhetik, s nem feltétlenül hálásak félbehagyott munkájáért."
@@ -48216,38 +48249,6 @@
                         {
                             "type": "paragraph",
                             "text": "Kyel hívei a nagyobb városokban kéttornyú katedrálisokat emelnek, homlokzatukon istenük szent szimbólumával, és megemlékeznek mindazon szentekről és hősökről, akik Kyel szándékainak megvalósítása közben áldozták életüket. A Harag havának utolsó napján pedig uruk kegyelmébe ajánlják ott-honukat, a széles nagyvilágot."
-                        },
-                        {
-                            "type": "paragraph",
-                            "text": "Az álmok és a szerencse istenasszonya, különös és ellentmondásos személyiség. A panteon többi tagjához nem fűzik rokoni szálak; feltehetően valamely rég letűnt nép istenségei közül került a pyarroni hitvilágba, kultuszára utaló első jelek már a crantai korszakból kimutathatók. Szent jelképével, a félig lehúnyt üdv-szemmel, gyakrabban találkozhatunk omlatag rommezőkön, mint a ma álló városok szentélynegyedében. Rendszeresen csak a hivatásos hazárdjátékosok fohászkodnak hozzá, de az álombéli jelet vagy útmutatást kérők mind őt keresik az imáikkal, bármelyik pyarroni istent is imádják máskülönben. Papjai álomutazók, ópiumkereskedők és titkos fogadóirodák üzemeltetői, az ynevi alvilág prominens alakjai; kik hajlamosak egészen szélsőséges szexuális szokások kialakítására is."
-                        },
-                        {
-                            "type": "paragraph",
-                            "text": "A pyarroni istencsalád talán legellentmondásosabb figurája, az igazságos bosszú istene, közkeletű nevén a Bosszúállás Atyja. Szent szimbóluma a lesújtani készülő, páros ököl. Papjai egyben lovagok is, akik Ynev-szerte magányosan álló erődítményekben, várakban élnek, a környező lakosság adományaiból, illetve megbízásaik szerény béréből tartják fenn magukat. Uwel papjait bárki felkeresheti: ha bosszúját igazságosnak ítélik, s nyilvánvaló, hogy nem tudja maga beteljesíteni, akkor minimális, sok esetben nem is létező díjért, mint az alvilági démonok – guttarok – egyike. Főemlékezete a Pártütés Korával, Ó-Kyria hanyatlásával vette kezdetét, és az egész Hatodkoron keresztül tartott. Ennek folyamán feltehetőleg sorra letaszította maga elől a többieket, illetve módszeresen kiirtotta híveiket, míg végül egymaga maradt az isteni hatalom letéteményese. Nem kizárt, hogy a Hatod- és Hetedkor fordulóján bekövetkező apoteózisa a daumyrri Hatalmasok tevékeny támogatásával következett be."
-                        },
-                        {
-                            "type": "heading",
-                            "text": "Kyr istencsalád"
-                        },
-                        {
-                            "type": "paragraph",
-                            "text": "Igere, a Teremtő Anya; Weila, a Sorskovács; Morgena, az Árnyékúrnő; Sogron, a Tűzkobra; Tharr, a Háromfejű."
-                        },
-                        {
-                            "type": "paragraph",
-                            "text": "Calowyni eredetű panteon, a hódító kyrek hoztak magukkal Ynevre az Ötödkorban. Voltaképpen inhumán istenekből áll – a kyrek nem voltak emberek –, akik azonban később rászorultak más fajok hódolatának elfogadására. Némely inhumán vonást azonban sohasem sikerült levetkőzniük, az embernépek a mai napig bizonyos irtózattal és idegenkedéssel szemlélik őket."
-                        },
-                        {
-                            "type": "paragraph",
-                            "text": "Az ősi kyr panteonban még nem szerepelt közülük az ötödik, Tharr, aki akkoriban csupán alárendelt jelentőséggel bírt, mint az alvilági kíndémonok – guttarok – egyike. Fölemelkedését a Pártütés Korával, Ó-Kyria hanyatlásával vette kezdetét, a birodalom szükségszerű változása, a folytonos megújulás jegyében. Ennek folyamán feltehetőleg sorra leszakította maga elől a többieket, illetve módszeresen kiirtotta híveiket, míg végül egymaga maradt az isteni hatalom isteni tényezése. Nem kizárt, hogy a Hatod- és Hetedkor fordulóján bekövetkező apoteózisa a daumyri Hatalmasok tevékeny támogatásával következett be."
-                        },
-                        {
-                            "type": "paragraph",
-                            "text": "Igerének és Weilának ma már nincsenek hívei Yneven, még az is kétséges, hogy egyáltalán ők maguk megmaradtak-e létezőnek. Morgena, aki a legtovább dacolt Tharral, a jelek szerint egymástól független tudatsíkokra hasadt. A Káosz-kor második felében néhány ilyen tudatsík ismételten önálló személyiségként manifesztálódott, melyeket bizonyos szekták különféle neveken imádtak (pl. Berkano, a Sötét Anya vagy Lysianel, a Hús Angyala). A Hetedkor derekára a manifesztációk megszűntek, manapság bizonyos jelek Morgena lassú ébredésére utalnak."
-                        },
-                        {
-                            "type": "paragraph",
-                            "text": "Tharr Sogronnal is kíméletlenül leszámolt (éppen Morgena segítségével, a Gódorai Függetlenségi háborúk idején), ám a Tűzkobra valahogyan mégis aktív tudott maradni, és maradék híveit – feltehetőleg – biztos távolságba, a Délvidékre menekítette. Ma a kyr eredetű istenségek közül egyedül ennek a kettőnek van ismert, élő kultusza a Földrészen."
                         }
                     ]
                 },
@@ -48324,6 +48325,36 @@
                     ]
                 },
                 {
+                    "id": "sec_kyr_intro",
+                    "title": "Kyr istencsalád",
+                    "content_blocks": [
+                        {
+                            "type": "heading",
+                            "text": "Kyr istencsalád"
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "Igere, a Teremtő Anya; Weila, a Sorskovács; Morgena, az Árnyékúrnő; Sogron, a Tűzkobra; Tharr, a Háromfejű."
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "Calowyni eredetű panteon, a hódító kyrek hoztak magukkal Ynevre az Ötödkorban. Voltaképpen inhumán istenekből áll – a kyrek nem voltak emberek –, akik azonban később rászorultak más fajok hódolatának elfogadására. Némely inhumán vonást azonban sohasem sikerült levetkőzniük, az embernépek a mai napig bizonyos irtózattal és idegenkedéssel szemlélik őket."
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "Az ősi kyr panteonban még nem szerepelt közülük az ötödik, Tharr, aki akkoriban csupán alárendelt jelentőséggel bírt, mint az alvilági kíndémonok – guttarok – egyike. Fölemelkedését a Pártütés Korával, Ó-Kyria hanyatlásával vette kezdetét, a birodalom szükségszerű változása, a folytonos megújulás jegyében. Ennek folyamán feltehetőleg sorra leszakította maga elől a többieket, illetve módszeresen kiirtotta híveiket, míg végül egymaga maradt az isteni hatalom isteni tényezése. Nem kizárt, hogy a Hatod- és Hetedkor fordulóján bekövetkező apoteózisa a daumyri Hatalmasok tevékeny támogatásával következett be."
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "Igerének és Weilának ma már nincsenek hívei Yneven, még az is kétséges, hogy egyáltalán ők maguk megmaradtak-e létezőnek. Morgena, aki a legtovább dacolt Tharral, a jelek szerint egymástól független tudatsíkokra hasadt. A Káosz-kor második felében néhány ilyen tudatsík ismételten önálló személyiségként manifesztálódott, melyeket bizonyos szekták különféle neveken imádtak (pl. Berkano, a Sötét Anya vagy Lysianel, a Hús Angyala). A Hetedkor derekára a manifesztációk megszűntek, manapság bizonyos jelek Morgena lassú ébredésére utalnak."
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "Tharr Sogronnal is kíméletlenül leszámolt (éppen Morgena segítségével, a Gódorai Függetlenségi háborúk idején), ám a Tűzkobra valahogyan mégis aktív tudott maradni, és maradék híveit – feltehetőleg – biztos távolságba, a Délvidékre menekítette. Ma a kyr eredetű istenségek közül egyedül ennek a kettőnek van ismert, élő kultusza a Földrészen."
+                        }
+                    ]
+                },
+                {
                     "id": "sec_247",
                     "title": "Igere",
                     "content_blocks": [
@@ -48354,7 +48385,7 @@
                     ]
                 },
                 {
-                    "id": "sec_248",
+                    "id": "sec_god_tharr",
                     "title": "Tharr",
                     "content_blocks": [
                         {
@@ -48380,7 +48411,13 @@
                         {
                             "type": "paragraph",
                             "text": "Megjegyzendő, hogy a Tharr-féle teológiával a Ranagol által hirdetett hitelvek éppúgy tökéletesen összebékeztethetetlenek, mint a pyarroni dogmák. Ha földrajzilag nem választanák el őket irdatlan távolságok, a két vallás egymás gyilkos és kérlelhetetlen ellensége lenne."
-                        },
+                        }
+                    ]
+                },
+                {
+                    "id": "sec_god_sogron",
+                    "title": "Sogron",
+                    "content_blocks": [
                         {
                             "type": "paragraph",
                             "text": "Sogron"
@@ -48388,7 +48425,13 @@
                         {
                             "type": "paragraph",
                             "text": "Rejtélyes és kifürkészhetetlen égi hatalom. Yneven két főbb kultuszközpontja létezik: az egyik Ordan a Délvidéken, az engesztelhetetlenségükről hírhedt tűzvarázslók székhelye, a másik Toron, ahol az istenség papjai Tharr egyházának pártfogását élvezik. A kétféle Sogron-hit kibékíthetetlen ellentétben áll egymással, ugyanakkor létezik számos kisebb-nagyobb, függetlenségre – vagy legalábbis önállóságra – törekvő, ún. „semleges” felekezet is, amelyeket mindkét fél igyekszik nyílt vagy leplezett eszközökkel a befolyása alá vonni. A megdöbbentő, hogy a Tűzkobra valamennyi híve-re megkülönböztetés nélkül kiterjeszti kegyeit, még akkor is, ha egymás esküdt ellensége. Aligha lehet ezt másként magyarázni, minthogy a Tűzkobra tökéletesen érzéketlen a humán erkölcsiség iránt. Ami Pyarron számára fekete vagy fehér – két élesen elütő szín –, abban Sogron legfeljebb a vörös halványabb és sötétebb árnyalatát látja."
-                        },
+                        }
+                    ]
+                },
+                {
+                    "id": "sec_dzsad",
+                    "title": "Dzsad istencsalád",
+                    "content_blocks": [
                         {
                             "type": "heading",
                             "text": "DZAD ISTENCSALÁD"
@@ -48416,7 +48459,13 @@
                         {
                             "type": "paragraph",
                             "text": "A M.A.G.U.S. jelenében az Ibara-vidéki dzsadok vallását, az egész kultúrkörrel együtt, pillanatnyilag a teljes megsemmi-sülés fenyegeti, hála a Második Manifesztációs Háborúnak. Az egymással torzsalkodó, szétszórt sivatagi államocskák saját erejükből képtelenek ellenállni az új életre támadt Am-he-Ramunnak. A pyarroni támogatás elégtelennek bizonyult; a megváltó segítség, meglehetősen rendhagyó módon, talán a joggal rettegett másik szomszéd, a sötét Krán oldaláról érkezhet."
-                        },
+                        }
+                    ]
+                },
+                {
+                    "id": "sec_amund",
+                    "title": "Amund istencsalád",
+                    "content_blocks": [
                         {
                             "type": "heading",
                             "text": "AMUND ISTENCSALÁD"
@@ -48464,58 +48513,16 @@
                         {
                             "type": "paragraph",
                             "text": "Themes szent szimbóluma arany napkorong. Valamennyi amund kultusz közül az övé állta legtovább a háborúságot Amhe-Ramun híveivel, a bukást azonban csak elodázniuk sikerült, megakadályozniuk nem. Állítólag utolsó napjaikban néhány kisgyermeket sikerült biztonságba csempészniük a vérükre szomjazó menetek elől, s ezeknek a leszármazottai mind a mai napig élnek a dzsádok között. Kétséges, hogy mennyi az igazság ezekben a híresztelésekben; mégha léteznek is ilyen kései papi sarjak, örökségüknek aligha vannak tudatában."
-                        },
+                        }
+                    ]
+                },
+                {
+                    "id": "sec_torp_intro",
+                    "title": "Törp istenek",
+                    "content_blocks": [
                         {
                             "type": "paragraph",
                             "text": "Az egykor Bórogot (Beriquel), manapság Ynev legészakibb partvidékének hegyeit lakó törpék eredete az idők homályába vész: bizton állíthatjuk, az elsők voltak azon fajok közt, melyeket a végzet örvénye e világra vetett. Írásbeliségük felülmúlja az emlékezetükre hagyatkozó elfekét, a hieroglifák béklyóiba vert amundokét, s természetesen a dzsennékét, akik jobban kedvelik a példabeszédeket a krónikáknál. Ha igaz, amit a Tarinban őrzött Mak Haroór, a sajnálatosan töredékes Ósmítosz állít, a törpék a Teremtés hajnalán, két gyürkőző istenség, a rendíthetetlen Bul Ruurig és a tüzes Tyrrano kövekre hulló véréből születtek. Hitviláguk alapvetése a többarcúság: megélik a lelkükben dúló kozmikus küzdelmet, tudják, hogy egyik vagy másik erő hosszabb-rövidebb időre felülkerekedhet rajtuk (lásd: Kófiak – Homálytestvér), s azt latolgatják, vajon mikor válnak végérvényesen e harc kárvallottjaivá. Az első csatában győztes Bul Ruurig a sajátjának érzi a a törpéket, Tyrrano vad gyűlölettel viseltetik irányukban, és újra meg újra saját szörnyeteg teremtményeit küldi ellenük. A bizonyosságok, vagy majdnem-bizonyosságok, itt el is fogynak; az anyag hátralévő részét súlyos ellentmondások feszítik, ezért döntöttünk úgy, hogy a törpe istenekről megemlékezve sorra vesszük őket, s ahol módunkban áll, több lehetséges értelmezést is közreadunk."
-                        },
-                        {
-                            "type": "paragraph",
-                            "text": "Az Ósmítosz szerint Bul Ruurig a nap és a holdak születése után paktumot kötött a szférákat létrehozó Nagyokkal, akik beleegyeztek, hogy az addig mozdulatlan planétát megforgassa, hogy a nappalt tízóránként éjszakával váltsa fel, s némi könnyebbséget hozva a hidegtűrő, homálykedvelő kófiafajnak. Egyes töredékek szerint az eredmény fejében övéi lelket ígérte oda, ám utóbb elállt az egyezségtől, ezért a Nagyok a törpék minden nemzedékét átkukallal sújtották – innét ered a Hat Csapás legendája, mely, mint kiderült, nem nélkülözi a valóságalapot."
-                        },
-                        {
-                            "type": "paragraph",
-                            "text": "Bul Rúurig papjait (a Tudókat) figyelmeztette a Csapások eljövetelére, s szigorú titoktartást parancsolt nekik, a nép megóvása érdekében azonban (lásd Kófiak – Első Csapás) megmutatkozott Börög földjén, és olyan ajándékokat adott a törpéknek, melyek jóvoltából azok megmaradhattak, sőt megerősödve várhatták az újabb veszedelmeket."
-                        },
-                        {
-                            "type": "paragraph",
-                            "text": "Bul Rúurig következetlensége kezdettől zavarba ejtette az embernép hittudorait. Közülük néhányan odáig merészkedtek, hogy kijelentik: a Kóatya alighanem megháborodott a Tyrranoval (első Homálytestvérrel?) vívott küzdelemben. Az Ősmitosz egyes mozzanatai (elhajított csatabárd, új, nyíltan rosszindulatú Homálytestvér) alkalmasak e vád alátámasztására, és a feltételezés mellett szól az is, hogy Bul Rúurig még a sziget elhagyása előtt „fiára”, Kadalra ruházta a nép vezetésének terhét, s többé nem mutatkozott meg övéi előtt."
-                        },
-                        {
-                            "type": "paragraph",
-                            "text": "Kultusza máig fennmaradt, noha nem bír olyan jelentőséggel, mint utódáé. Rendszerint olyan törpék fohászkodnak hozzá, akik segítségével remélik feltárni és uralmuk alá vonni lelkük sötét aspektusait. Suttogják, hogy papjai – a törpe Tudók közt egyedülálló módon – képesek a legősibb mágia „dús szavainak” használatára is."
-                        },
-                        {
-                            "type": "paragraph",
-                            "text": "Az Ősmitosz szerint Bul Rúurig sarja, aki a megfáradt Kóatya távoztával került a törpe panteon főhelyére. Az apokrif elmélet szerint a „fiú” kifejezést a súgók átvitt értelemben alkalmazzák, és csupán annyi történt, hogy a Bul Rúurigban manifesztálódott isteni erő megfiatalította önmagát – ezt látszik igazolni, hogy a Kóatya asszonyáról egyetlen szövegben, egyetlen töredékben sem esik említés, s hiányzik az északi népekre egyébként oly jellemző „állatanya” figurája is. A híl nyelvben jártas vallástörténészek elismerik: az Ősmitosz Kadalról szólva elveszti konzisztenciáját; ez magyarázza, hogy a „tisztán jött gyermek” fordulatot egyesek az isteni lényeg fizikai, mások lelki megújulására vonatkoztatják."
-                        },
-                        {
-                            "type": "paragraph",
-                            "text": "Bárki volt egykor, bizton állíthatjuk, hogy Kadal a Hetedkor derekára megtalálta saját arcát. Ő az egyetlen törpe istenség, aki akaratát időről időre karizmatikus, ám halandó küldöttek révén nyilvánítja ki: az első (aki az apokrif változat szerint azért sikerült a szándékoltnál tökéletesebbre, mert Bul Rúurig a véréhez való ezüstöt kevert) megtagadta a szolgálatot, s csak akkor békélt meg, mikor Kadal örök léttel ajándékozta meg, és isteni rangra emelte. Ő Tooma, a Fejszés, akinek makacsságából a törpék históriájuk mélypontjain is erőt merítettek. A másodiknak teremtett küldött, Ezüstcskány Gráim a Harmadik Csapás során esett el Börög földjén, emlékét azonban szívében őrzi a nép, és nem feledkezett meg róla a Tárnakát Zengető sem: valahányszor Tarin háborúra készül, lehetővé teszi számára, hogy az Örök Visszhangtalanból kiszakadva új testet öltsön. Gráim, aki maga dönthet visszatéréséről, még nem szalasztott el egyetlen ilyen alkalmat sem – beszélik, ő vezette azt a különítményt, mely a Tizennegyedik Zászlóháború utolsó esztendejében kiragadta az ediomadi Belső Csarnokokból Kabur Lah lobogóját. Kadal szolgái rangjuktól, beosztásuktól függetlenül tekintélyes személyiségeknek számítanak, szavuk akkora – ha nem nagyobb – súllyal esik latba, mint egy daug főnöké. Különös vonzalmat éreznek a drágakövek iránt, felhasználásuknak, a bennük rejlő hatalom kinyerésének számtalan módját ismerik. Ők irányítják a földmélyi fajzatokkal, démonokkal, Homálytestvérekkel vívott harcot, és Tooma szolgáival együtt képviselik a birodalom papságát az Északi Szövetség évi közgyűlésein."
-                        },
-                        {
-                            "type": "paragraph",
-                            "text": "A mítoszok legendás Engedetlenje; hadisten, korhely és bajkeverő egy személyben. Küldöttei nincsenek, papjai a legkiválóbb harcosok közül kerülnek ki, akiket kivételes helyzetekben (háborúk, sorsfordulók), avagy a lehető legrosszabbkor (külörszági temetési szertartások alatt, követek jelenlétében) átszellemít, s rendkívüli, olykor megbotránkoztató tettekre sarkall. Főként a kófiak újabb generációinak körében kedvelt, a hittudorok azonban nem tartják kizártnak, hogy csupán Bul Rúurig szellemének egy újabb aspektusát testesíti meg, és hogy a hátralévő Csapások egyike – vagy mindegyike – az ő tevékenységével függ majd össze."
-                        },
-                        {
-                            "type": "paragraph",
-                            "text": "Tooma papjai erős támaszai Tarin hadseregének, szavuknak súlya van majd’ minden tanácsszinten. Különös vonzalmat éreznek az ércek – különösképp az eleven fém – iránt, felhasználásuk, engedelmességre szorításuk, hatalommal való felruházásuk számtalan módozatát ismerik és gyakorolják. Kiveszik részüket a Tarin alsó zónáiban vívott harcokból, és kimagaslóan népszerűek a szövetséges embernép fegyverforgatói körében, akik a „jóféle kétkezes tarini törpe” típusának megtestesítőit látják bennük."
-                        },
-                        {
-                            "type": "paragraph",
-                            "text": "A kófiak hitének szakadatlan fejlődését hirdető elmélet szerint a Fejszés a bizonytalan jövőben – talán nem is túl sokára – átveheti a panteon élén Kadal szerepét."
-                        },
-                        {
-                            "type": "paragraph",
-                            "text": "Az Átkos Fivérek óta a kófiak legnagyobb antihőse, fejlett egójú, alacsony etikai fokon álló lény, sokak szemében az állhatatlanság maga. A törpe istenkép esetlegességének jó példájával szolgál: halandónak született, és papi sorból, jórészt a maga akaratából emelkedett a panteon tagjai közé. Az isteni rendeléssel elégedetlenek utolsó nagy hulláma az ő vezetésével hagyta el Tarint. Személyét a birodalom nagyjai megvetéssel, a közrendűek elnéző utálattal emlegetik; a kivonulás óta nem akadt példa arra, hogy hithű törpe renegát törpe vérét ontsa – ha mégis megtörtént ilyesmi, a kiváltó ok bizonyosan nem vallási vita volt."
-                        },
-                        {
-                            "type": "paragraph",
-                            "text": "Zimah jelenlegi státusa és holléte egyaránt bizonytalan. A rossz nyelvek szerint aggkori végelgyengülést titkolandó rejtőzött el, talán meg is halt már. Mások úgy vélik, azon az áron sikerült öröklétűvé válnia, hogy behódolt Homálytestvérének, s most a magára rótt félezer éves penitenciát tölti. A legmerészebb feltevés szerint változás iránti igényét az elvándorlás sem elégítette ki, hamarosan elhagyta nyáját, de nem a kóborló prédikátorok, hanem a kalandozók útjára lépett, valódi nevét és múltját azonban – érthető okból – titkolni igyekszik."
-                        },
-                        {
-                            "type": "paragraph",
-                            "text": "Zimah papjai a Szökevényhez imádkoznak ugyan, ám nincs bizonyíték rá, hogy hatalmukat szakrális forrásból nyernék; egyesek a profán mágia és a szemfényvesztés mesterei, mások egyszerű képmutatókat látnak bennük, akik titkon Bul Ruurigot imádják, és korlátozott mértékben bár, de részesülhetnek a Kóatya erejéből."
                         }
                     ]
                 },
@@ -48574,13 +48581,31 @@
                     ]
                 },
                 {
-                    "id": "sec_249",
-                    "title": "Zimnah kultusza",
+                    "id": "sec_god_zimah",
+                    "title": "Zimah, a Szökevény",
                     "content_blocks": [
                         {
                             "type": "paragraph",
-                            "text": "Zimnah kultusza főként a renegát törzsekben és a törpe diaszpóra délvidéki kolóniáin dívik – tiszteletét Tarinban szokásjog és törvény tiltja, s felettébb ritka az olyan törpe, aki a fennálló rend elleni lázadás e szegényes módját választaná."
+                            "text": "Az Átkos Fivérek óta a kófiak legnagyobb antihőse, fejlett egójú, alacsony etikai fokon álló lény, sokak szemében az állhatatlanság maga. A törpe istenkép esetlegességének jó példájával szolgál: halandónak született, és papi sorból, jórészt a maga akaratából emelkedett a panteon tagjai közé. Az isteni rendeléssel elégedetlenek utolsó nagy hulláma az ő vezetésével hagyta el Tarint. Személyét a birodalom nagyjai megvetéssel, a közrendűek elnéző utálattal emlegetik; a kivonulás óta nem akadt példa arra, hogy hithű törpe renegát törpe vérét ontsa – ha mégis megtörtént ilyesmi, a kiváltó ok bizonyosan nem vallási vita volt."
                         },
+                        {
+                            "type": "paragraph",
+                            "text": "Zimah jelenlegi státusa és holléte egyaránt bizonytalan. A rossz nyelvek szerint aggkori végelgyengülést titkolandó rejtőzött el, talán meg is halt már. Mások úgy vélik, azon az áron sikerült öröklétűvé válnia, hogy behódolt Homálytestvérének, s most a magára rótt félezer éves penitenciát tölti. A legmerészebb feltevés szerint változás iránti igényét az elvándorlás sem elégítette ki, hamarosan elhagyta nyáját, de nem a kóborló prédikátorok, hanem a kalandozók útjára lépett, valódi nevét és múltját azonban – érthető okból – titkolni igyekszik."
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "Zimah papjai a Szökevényhez imádkoznak ugyan, ám nincs bizonyíték rá, hogy hatalmukat szakrális forrásból nyernék; egyesek a profán mágia és a szemfényvesztés mesterei, mások egyszerű képmutatókat látnak bennük, akik titkon Bul Ruurigot imádják, és korlátozott mértékben bár, de részesülhetnek a Kóatya erejéből."
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "Zimnah kultusza főként a renegát törzsekben és a törpe diaszpóra délvidéki kolóniáin dívik – tiszteletét Tarinban szokásjog és törvény tiltja, s felettébb ritka az olyan törpe, aki a fennálló rend elleni lázadás e szegényes módját választaná."
+                        }
+                    ]
+                },
+                {
+                    "id": "sec_249",
+                    "title": "Ork héroszok és elf kalahorák",
+                    "content_blocks": [
                         {
                             "type": "heading",
                             "text": "Ork héroszok"
@@ -48704,14 +48729,6 @@
                         {
                             "type": "paragraph",
                             "text": "Mallior, az Éjben Kacagó: Az egyetlen olyan kalahora, akit valamennyi elf tisztel Yneven, a Délvidéken éppúgy, mint Északon, de még Kránban is. Életében az elf-aquir háborúk legendás hőse volt, aki dicső halálával szentté magasztosult, s e minőségében a bosszúvágyat és a sötét szenvedélyeket személyesíti meg. A külvilágiak csak végső elkeseredésükben fordulnak hozzá, Kránban azonban sokkal elterjedtebb a kultusza; itt élnek vér szerinti leszármazottai is, a Ly'She-matenelek, azaz a Tettek Emlékezői."
-                        },
-                        {
-                            "type": "heading",
-                            "text": "KÁOSZ-ANGYALOK"
-                        },
-                        {
-                            "type": "paragraph",
-                            "text": "A Káosz-angyalok túlvilági entitások, akik Ranagol szűkebb aspektusait testesítik meg, s őt táplálják a híveiktől nyert hatalommal. Mindannyian az abszolút igazsághoz vezető utak egyikét jelképezik, a transzcendens megismerés különféle módozatait. Együttesen piramisként szokás ábrázolni őket, amelynek a csúcsán maga Ranagol áll, a káoszból születő dinamikus rend szimbólumaként. Számuk összesen huszonnégy, az év hónapjainak megfelelően. Eredetüket tekintve meglehetősen sokfélék: akadnak köztük ősi, elfeledett istenek, akik behódoltak a Kosfejes Úrnak; valaha volt halandók, akik eljutottak az apoteózis hón sóvárgott állapotába; tiszta eszmék, amelyek formát és öntudatot öltöttek az önmagukról való hosszas elmélkedés során; démoni és őselemi lények, a túlsó létsíkokon honos hatalmak tarka egyvelege. Számuk tizenkétezer éve óta változott, összetételük azonban nem – egyikük-másikuk olykor lehanyatlik, elpusztul, gyökeresen átalakul vagy egyszerűen eltűnik. Hiánytalan lajstromba foglalásuk már csak ezért is lehetetlen vállalkozás volna; a helyzetet tovább nehezíti, hogy Kránról roppant kevés hiteles információval rendelkezünk, s azok is meglehetősen hézagosak. Az alábbiakban a jelentősebb Káosz-angyalokat kíséreltük meg számba venni; a nekik hódoló szekták fontos szerepet töltenek be a birodalom életében, tanításaik utat találtak a vérfilozófusok teológiai értekezéseibe."
                         }
                     ]
                 },
@@ -48719,6 +48736,14 @@
                     "id": "sec_250",
                     "title": "A káosz-angyalok",
                     "content_blocks": [
+                        {
+                            "type": "heading",
+                            "text": "KÁOSZ-ANGYALOK"
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "A Káosz-angyalok túlvilági entitások, akik Ranagol szűkebb aspektusait testesítik meg, s őt táplálják a híveiktől nyert hatalommal. Mindannyian az abszolút igazsághoz vezető utak egyikét jelképezik, a transzcendens megismerés különféle módozatait. Együttesen piramisként szokás ábrázolni őket, amelynek a csúcsán maga Ranagol áll, a káoszból születő dinamikus rend szimbólumaként. Számuk összesen huszonnégy, az év hónapjainak megfelelően. Eredetüket tekintve meglehetősen sokfélék: akadnak köztük ősi, elfeledett istenek, akik behódoltak a Kosfejes Úrnak; valaha volt halandók, akik eljutottak az apoteózis hón sóvárgott állapotába; tiszta eszmék, amelyek formát és öntudatot öltöttek az önmagukról való hosszas elmélkedés során; démoni és őselemi lények, a túlsó létsíkokon honos hatalmak tarka egyvelege. Számuk tizenkétezer éve óta változott, összetételük azonban nem – egyikük-másikuk olykor lehanyatlik, elpusztul, gyökeresen átalakul vagy egyszerűen eltűnik. Hiánytalan lajstromba foglalásuk már csak ezért is lehetetlen vállalkozás volna; a helyzetet tovább nehezíti, hogy Kránról roppant kevés hiteles információval rendelkezünk, s azok is meglehetősen hézagosak. Az alábbiakban a jelentősebb Káosz-angyalokat kíséreltük meg számba venni; a nekik hódoló szekták fontos szerepet töltenek be a birodalom életében, tanításaik utat találtak a vérfilozófusok teológiai értekezéseibe."
+                        },
                         {
                             "type": "paragraph",
                             "text": "Káosz-Abbog: Karnális lény, a test és a hús angyala. Hívei annak az ideális állapotnak az elérésére törekednek, amelyben az egész világ egyetlen hatalmas organizmussá olvad össze, méltó anyagi testként szolgálva Ranagolt. Szertartásaikon elevenen falják föl egymást, hogy ily módon összpontosítsák az életerejüket. A nemzést és a tükröket istenkáromlónak vélik, hívei megszaporítják az élőlényeket."
@@ -51482,7 +51507,7 @@
                 },
                 {
                     "id": "sec_257",
-                    "title": "Az anyagokból eredő egyéb módosítók és megjegyzések:",
+                    "title": "Asztrál- és Mentállények, Ork",
                     "content_blocks": [
                         {
                             "type": "paragraph",
@@ -51555,7 +51580,18 @@
                         {
                             "type": "paragraph",
                             "text": "Az orkok között éppúgy akadnak tapasztaltabb harcosok, mint az emberek között."
-                        },
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "VARÁZSTÁRGYAK",
+            "sections": [
+                {
+                    "id": "sec_vt_attekintes",
+                    "title": "Áttekintés",
+                    "content_blocks": [
                         {
                             "type": "paragraph",
                             "text": "Minden kincs közül a mágikus tulajdonságokkal bíró a legértékesebb. Aki ilyen tárgyat birtokol, hatalmat birtokol. A Varázstárgyak készítése költséges és fáradságos eljárás – tudást, tapasztalatot igényel. Játékos Karakter csak akkor készíthet efféle holmit, ha megfelelő képzettséggel bír."
@@ -51619,7 +51655,13 @@
                         {
                             "type": "paragraph",
                             "text": "Az egyes tárgyaknál (bájitaloknál) a Mp rovatban tüntettük fel, hogy mennyi Mana pontba kerül az adott tárgy létrehozása."
-                        },
+                        }
+                    ]
+                },
+                {
+                    "id": "sec_vt_tapasztalati",
+                    "title": "Tapasztalati és szakrális úton készült varázstárgyak",
+                    "content_blocks": [
                         {
                             "type": "paragraph",
                             "text": "Gyógyital"
@@ -52033,7 +52075,13 @@
                             "type": "rule",
                             "title": "Igazság amulettje",
                             "text": "Készítheti: Pap, boszorkány\nMp: 60\nÁra: 2 ezüst\nAki ezt az amulettet viseli, képes lesz különbséget tenni igazság és hazugság között, bármilyen meggyőzően érvelnek is az ellenkezője mellett. Az amulett használata koncentrációt igényel, azaz a karakternek figyelnie kell a hamisnak gondolt szavakra, (a játékosnak ezt előre be kell jelentenie!). Az amulett általában magában rejt egy darabka fehér, illetve fekete alabástromot."
-                        },
+                        }
+                    ]
+                },
+                {
+                    "id": "sec_vt_runamagia",
+                    "title": "Rúnamágiával készült varázstárgyak",
+                    "content_blocks": [
                         {
                             "type": "paragraph",
                             "text": "Rúnamágiával készült varázstárgyak\nEfféle Varázstárgyat csak a Rúnamágiában megfelelően jártas karakter képes alkotni, mert egyedül ő ismeri a mágia mélyebb összefüggéseit, s a rajzolatok hatalmát. A Rúnamágiával készített tárgyak mindegyikén találhatunk Mágikus Aura Varázsjelet (lásd Rúnamágia), amely összefogja, s a tárgyhoz köti a mágikus hatást kölcsönző rúnákat, illetve ellátja őket energiával. Számlálhatatlan mágikus rúna létezik; mind más és más hatalommal ruházza fel a tárgyat, amelyre írták. A rúnák együttes alkalmazásával – akárcsak a Mozaikmágia esetében: varázslat mozaikokkal – szinte bármilyen mágikus hatás elérhető, következésképp bármilyen Varázstárgy elkészíthető. Hely hiányában nem sorolhatjuk fel az ismert rúnákat – a Rúnamágia mesterei több ezer efféle jelet tartanak számon –, csak néhány így készített Varázstárgyat."
