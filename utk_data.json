@@ -1120,13 +1120,11 @@
                         {
                             "type": "paragraph",
                             "text": "Az idők változását és a büszke nép hanyatlását mutatja, hogy ilyen elfekkel már nemcsak Kránban lehet találkozni. Az elmúlt évszázadokban egyre több hasonló elf bukkant fel kitaszítattván népükből, sok esetben szektákba tömörülnek, és magukat szent gyilkosnak tartva, Mallior nevével az ajkukon vesznek elégtételt népük vélt vagy valós sérelmeiért. Maguk a fajtársaik végeznek legkészségesebben ily módon eltorzult testvéreikkel."
-                        }
-                    ]
-                },
-                {
-                    "id": "sec_11",
-                    "title": "Különleges képességeik",
-                    "content_blocks": [
+                        },
+                        {
+                            "type": "heading",
+                            "text": "Különleges képességek"
+                        },
                         {
                             "type": "paragraph",
                             "text": "A természet egyéb teremtményeivel kialakult évezredes jó kapcsolat nem múlik el nyomtalanul: nincs az az elf, aki tétlenül tűrné, hogy egy állatot megkínozzanak vagy egy ligetet fölöslegesen kivágjanak. Ez persze kölcsönös, az erdők-mezők vadjai ösztönös bizalommal viseltetnek irányukban, s ha egy nekivadult lovat vagy őrjöngő kutyát kell lecsillapítani, az elfeknél jobban senki sem képes teljesíteni a feladatot."
@@ -1232,7 +1230,27 @@
                     "content_blocks": [
                         {
                             "type": "paragraph",
-                            "text": "ideális a gátlásoktól gyötört, mélabúra hajlamos udvari orkok számára, akiket bizonyos idő elteltével biztosan helyreráznak."
+                            "text": "Mágikus praktikák folytán létrejött faj, melynek egyedei az orkok sok értékes vonásával rendelkeznek: a csökönyösségig menő kitartást, a természetes, állati intelligenciát, az engesztelhetetlen vadságot ezúttal azonban az emberiség érdekében kamatoztatják."
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "Az udvari – másképp nemesített – orkok Északon jelentek meg, első osztaguk egy ottani hatalmasság szolgálatában állt. A világhír – azaz még inkább a koronás fők divathóbortja –, akkor kapta szárnyra őket, mikor kemény küzdelemben megmentették a szorongatott nagyúr életét."
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "Alkotóik, mikor magasabb intelligenciával ruházták fel őket, csak bizonyos problémák kiküszöbölésére törekedtek, nem szenteltek elég figyelmet az így létrehozott új faj asztrális és mentális adottságainak növelésére. Az emberi értelemben vett érzelmek a természetes körülmények közt élő orkoknál sem mennek ritkaságszámba, az udvari orkok gondolatvilága azonban olyannyira kifinomult, hogy ideális táptalajt jelent az öncélú lelki folyamatok – pl. a szépelgés, melankólia – számára is. Bármely udvari ork képes bonyolult gondolatfüzéreit akár egy álló héten át gombolyítani, mielőtt rászánná magát, hogy végkövetkeztetéseit egy arra alkalmas emberrel megossza. Ha megteszi, rendszerint csalódás az osztályrésze: gondolatai hiába magvasak, szinte minden esetben sokezer éve ismertek már, réges-rég papírra vetették őket azóta elporladt tollforgatók. Az udvari orkok kisebbrendűségi érzése alighanem épp e szerencsétlen fáziseltolódás következménye. Filozófiáról, művészetről egyszerűen képtelenek újat mondani alkotójuknak, az embernek – azt pedig, hogy személyiségük, személyük is értékek hordozója lehet, nemigen tudják elfogadni, elfogadtatni."
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "Az udvari orkok szinte valamennyi északi ynevi országban megtalálhatóak, és uraik kíséretében Ynev majd' minden tájára eljuthatnak. Őseik vagy páriák voltak, akik az embernépek védőszárnyai alá menekültek, vagy fogságba ejtett vad orkok. A legtöbben közülük Toronban élnek; ami társadalmi pozíciójukat illeti, köztes helyet foglalnak el a vérebek és a rabszolgák között. Nincs az az alantas sorú obsor, aki ne nézné le őket. Egyetlen ork törzs sem hajlandó velük vállvetve harcolni, még Toron legfanatikusabb hívei, a Csonttörők és a Bűvölők sem."
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "Valamivel jobb dolga van azoknak a társaiknak, akik a Szövetség államaiban élnek. A gazdag erv földbirtokosok körében az utóbbi évszázadokban afféle divattá vált az ork-nemesítés; nem is számít közöttük társasági embernek, aki nem tart a kastélyában ilyen testőrséget. Nézőpont kérdése, hogy minek tekintjük ezeket a példányokat: elit testőrnek, státuszszimbólumnak vagy ölebnek. Az utóbbi évszázadban vált általánossá az a gyakorlat, hogy a főnemesek kiemelkedő képességű udvari orkjaikat taníttatják, netán szélnek is eresztik – ekkor jelennek meg a kontinensen a kalandkeresők között."
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "A kalandozók többnyire nem adnak sokat a külsőre, annál többet a belső értékekre: társaságuk ideális a gátlásoktól gyötört, mélabúra hajlamos udvari orkok számára, akiket bizonyos idő elteltével biztosan helyreráznak."
                         },
                         {
                             "type": "paragraph",
@@ -2143,13 +2161,11 @@
                             "type": "rule",
                             "title": "Kegyelt (1)",
                             "text": "A karakter valamely általa (vagy a KM által) választott isten kitüntetett figyelmét élvezi. A Háttér szükséges mindazon karaktereknek, akik Papok vagy Paplovagok kívánnak lenni. Ugyanakkor annak a halandónak, aki bár nem pap, de egy isten figyelme kíséri sorsát, komoly feladatot szántak az égiek. A Háttér tehát akkor is megmutatkozik, ha az illető nem nyert beavatást a Szakrális mágia misztériumába. Arról, hogy az isteni kegy hogyan befolyásolja a karakter életét, a KM hivatott dönteni. Az a karakter, aki rendelkezik a Kegyelt Háttérrel, minden Tapasztalati szinten a Vallásismeret képzettség általa bitokolt fokánál feltüntetett mennyiségű Kegy pontot kap, amit tovább növelhet Karakteralkotó pontjaiból. Ahhoz azonban, hogy a kegyelt képessé váljon a Szakrális mágia fohászainak használatára, bírnia kell a Vallásismeret képzettség 3. fokával. Ha ezen képzettséggel nem rendelkezik a megfelelő szinten, akkor csak ösztönösen alkalmazza a mágiát, a fohászokat. Ebben az esetben legfeljebb a KM által engedélyezett helyzetben képes varázsolni és csakis az esetlegesen a szerepjáték által megszerzett Kegy pontjaiból (Lásd a Szakrális mágia c. fejezetben, 257. oldalon), s csakis az általa tisztelt felsőbb lény által uralt szférákból. Ha még nem igazi pap, s nem tudja hogyan keresse ura vagy úrnője kegyét imáival, akkor isteni kegyét minden napkeltekor és különleges, az isten által fontosnak vélt feladatok végrehajtása után nyerheti vissza a kegyelt karakter. Az igazi felkent papok, paplovagok, illetve az égi vagy más túlvilági hatalmak szolgái rendesen, a szakrális mágiánál leírt módon, imával, áldozattal szerzik vissza hatalmuk."
-                        }
-                    ]
-                },
-                {
-                    "id": "sec_15",
-                    "title": "Klán, rend, iskola (5-10)",
-                    "content_blocks": [
+                        },
+                        {
+                            "type": "heading",
+                            "text": "Klán, rend, iskola (5-10)"
+                        },
                         {
                             "type": "paragraph",
                             "text": "Minden szervezet, testvériség, klán, iskola vagy magányos mester ahol egy karakter tanulmányait végzi, bizonyos számú háttérpontot követel tőle cserébe az általa nyújtott előnyökért. Aki klánt, rendet, vagy iskolát választ, az már első szinten, későbbiekben pedig bármikor visszatérhet oktatóihoz, hogy tudás gyarapítsa."
@@ -2169,13 +2185,7 @@
                         {
                             "type": "paragraph",
                             "text": "Azonban azt is meg kell jegyeznünk, hogy ha a karakter a szükséges képzettségeket elsajátítja ugyanolyan, teljes értékű varázstudóvá válhat, mint a karakter mely az adott szervezet diákja már gyermekkora óta. Bár ezek után kénytelen immáron az új képesség megkövetelte pontokat is kifizetni, hogy alkalmazni tudja őket."
-                        }
-                    ]
-                },
-                {
-                    "id": "sec_hatter2",
-                    "title": "Hátterek (folytatás)",
-                    "content_blocks": [
+                        },
                         {
                             "type": "rule",
                             "title": "Léleklenyomat (1)",
@@ -2200,22 +2210,15 @@
                             "type": "rule",
                             "title": "Művésztehetség (1)",
                             "text": "A Háttér birtokosa kiemelkedő tehetséggel bír valamely művészetben. Ha képzi magát, igazi híresség válhat belőle, ha időt és energiát fordít tehetsége kibontakoztatására, akkor akár évszázadok múlva is emlegetett nagy művész lehet. A játék nyelvén ez annyit tesz, hogy a karakter valamely általa választott művészetben képes 4. fok fölé emelkedni."
-                        }
-                    ]
-                },
-                {
-                    "id": "sec_16",
-                    "title": "Nemesi vér (1)",
-                    "content_blocks": [
+                        },
                         {
                             "type": "rule",
                             "text": "Ha a játékos nemesi származású karaktert akar indítani Háttérpontot köteles rákölteni. Ilyenkor a karakter nem kap rangot, vagyont vagy egyéb kiváltságokat, csupán kékvérű származása bizonyított. További előnye, hogy ha gyermekkorában nemesi udvarban nevelkedett vagy később nemesi körökben forgolódik, a Szociális képzettségeket úgy tanulhatja, mintha 4. fokú oktatótól sajátítaná el, ez az előny nem adódik össze az Oktatás képzettség nyújtotta előnyökkel, ellenben a karakter faja által biztosítottakkal igen.",
                             "title": "Nemesi vér (1)"
                         },
                         {
-                            "type": "rule",
-                            "text": "Nem kell Nemesi vér Hátteret felvennie például a balkézről származó fattyúnak, aki bár apja révén félig nemes, de a cselekedetek között nőtt fel, s később is egyszerű haramiaként tengeti napjait.",
-                            "title": "Nemesi vér (1)"
+                            "type": "paragraph",
+                            "text": "Nem kell Nemesi vér Hátteret felvennie például a balkézről származó fattyúnak, aki bár apja révén félig nemes, de a cselekedetek között nőtt fel, s később is egyszerű haramiaként tengeti napjait."
                         },
                         {
                             "type": "rule",
@@ -2223,9 +2226,8 @@
                             "title": "Pszi érzékenység (1)"
                         },
                         {
-                            "type": "rule",
-                            "text": "A karakter, aki rendelkezik a Pszi érzékenység Háttérrel, első Tapasztalati szinten annyi Pszi pontot kap, amennyi az Intelligencia tulajdonságának értéke, ami minden szinten tovább növekszik a Pszi képzettség általa birtokolt foka által biztosított pontokkal. Ezen pontok mellé a karakter minden Tapasztalati szinten (már az elsőn is) újabbakat vásárolhat KAP-jaiból. Értelemszerűen ahhoz, hogy képessé váljon pszi diszciplínák tudatos használatára, a karakternek bírnia kell a Pszi képzettség legalább 1. fokával.",
-                            "title": "Pszi érzékenység (1)"
+                            "type": "paragraph",
+                            "text": "A karakter, aki rendelkezik a Pszi érzékenység Háttérrel, első Tapasztalati szinten annyi Pszi pontot kap, amennyi az Intelligencia tulajdonságának értéke, ami minden szinten tovább növekszik a Pszi képzettség általa birtokolt foka által biztosított pontokkal. Ezen pontok mellé a karakter minden Tapasztalati szinten (már az elsőn is) újabbakat vásárolhat KAP-jaiból. Értelemszerűen ahhoz, hogy képessé váljon pszi diszciplínák tudatos használatára, a karakternek bírnia kell a Pszi képzettség legalább 1. fokával."
                         },
                         {
                             "type": "rule",
@@ -2233,14 +2235,12 @@
                             "title": "Rang (1-3)"
                         },
                         {
-                            "type": "rule",
-                            "text": "A Ranggal rendelkező 1 pontért egy kisebb városka befolyásos embere, 2 pontért egy nagyvárosban is ismert és hatalommal rendelkező illető, míg 3 pontért tartományi szinten is befolyással bíró személy.",
-                            "title": "Rang (1-3)"
+                            "type": "paragraph",
+                            "text": "A Ranggal rendelkező 1 pontért egy kisebb városka befolyásos embere, 2 pontért egy nagyvárosban is ismert és hatalommal rendelkező illető, míg 3 pontért tartományi szinten is befolyással bíró személy."
                         },
                         {
-                            "type": "rule",
-                            "text": "Arról, hogy a karakter pontosan mekkora hatalommal rendelkezik, a KM joga dönteni.",
-                            "title": "Rang (1-3)"
+                            "type": "paragraph",
+                            "text": "Arról, hogy a karakter pontosan mekkora hatalommal rendelkezik, a KM joga dönteni."
                         },
                         {
                             "type": "rule",
@@ -2253,14 +2253,12 @@
                             "title": "Szellemek jóindulata (1-3)"
                         },
                         {
-                            "type": "rule",
-                            "text": "Ez a Háttér a természetes népek, illetve leszármazottaik sajátja. A Háttér 3 pontos Háttér felvétele esetén hatalmát fejezik ki, pl. 1 pont egy tó szelleme, 2 pont egy rengetegé, 3 pont egy hegységé. A karakter személyisége, asztrális jellemvonásai idomulnak a szelleméhez. Egy hegyszellem pártfogoltja nyugodt, megingathatatlan lesz, szeme a gleccserek vakító fagy-kékjét idézi, míg egy völgymélyi erdő szellemének védence érzékeny lesz, cserfes, játékos, mint a lombok, szeme pedig a napsütötte levelek zöldjében játszik.",
-                            "title": "Szellemek jóindulata (1-3)"
+                            "type": "paragraph",
+                            "text": "Ez a Háttér a természetes népek, illetve leszármazottaik sajátja. A Háttér 3 pontos Háttér felvétele esetén hatalmát fejezik ki, pl. 1 pont egy tó szelleme, 2 pont egy rengetegé, 3 pont egy hegységé. A karakter személyisége, asztrális jellemvonásai idomulnak a szelleméhez. Egy hegyszellem pártfogoltja nyugodt, megingathatatlan lesz, szeme a gleccserek vakító fagy-kékjét idézi, míg egy völgymélyi erdő szellemének védence érzékeny lesz, cserfes, játékos, mint a lombok, szeme pedig a napsütötte levelek zöldjében játszik."
                         },
                         {
-                            "type": "rule",
-                            "text": "Ez a kapcsolat a karakter Asztrális és Mentális TME-jében is visszaköszön, a 2 vagy 3 pontos Háttér felvétele esetén a Háttér birtokosának TME-je minden Tapasztalati szinten 1 ponttal nő.",
-                            "title": "Szellemek jóindulata (1-3)"
+                            "type": "paragraph",
+                            "text": "Ez a kapcsolat a karakter Asztrális és Mentális TME-jében is visszaköszön, a 2 vagy 3 pontos Háttér felvétele esetén a Háttér birtokosának TME-je minden Tapasztalati szinten 1 ponttal nő."
                         },
                         {
                             "type": "rule",
@@ -2268,24 +2266,16 @@
                             "title": "Vagyon (1-3)"
                         },
                         {
-                            "type": "rule",
-                            "text": "1 pontos Háttér esetén a karakternek vagy közeli rokonának kisebb földbirtoka és kúriája van néhány szolgával. A karakter így indulója a klánja, rendje, iskolája által biztosított felszerelésen túl 20-40 arannyal rendelkezik. Éves szinten legfeljebb 5-10 arany értékű támogatást képes szerezni, a KM belátása szerint.",
-                            "title": "Vagyon (1-3)"
+                            "type": "paragraph",
+                            "text": "1 pontos Háttér esetén a karakternek vagy közeli rokonának kisebb földbirtoka és kúriája van néhány szolgával. A karakter így indulója a klánja, rendje, iskolája által biztosított felszerelésen túl 20-40 arannyal rendelkezik. Éves szinten legfeljebb 5-10 arany értékű támogatást képes szerezni, a KM belátása szerint."
                         },
                         {
-                            "type": "rule",
-                            "text": "2 pontos Háttér esetén a karakter vagy közeli rokona jómódú kereskedő, főpap vagy nemesember, jelentős földbirtokkal. Induláskor a karakter 50-100 arannyal rendelkezik és éves szinten 12-25 aranyat érő életjáradékkal bír, a KM belátása szerint.",
-                            "title": "Vagyon (1-3)"
+                            "type": "paragraph",
+                            "text": "2 pontos Háttér esetén a karakter vagy közeli rokona jómódú kereskedő, főpap vagy nemesember, jelentős földbirtokkal. Induláskor a karakter 50-100 arannyal rendelkezik és éves szinten 12-25 aranyat érő életjáradékkal bír, a KM belátása szerint."
                         },
                         {
-                            "type": "rule",
-                            "text": "3 pontos Háttér esetén a karakter vagy közeli rokona a tartományúr közvetlen hűbérese, gróf vagy báró, esetleg egy jelentős kereskedőház vezetője. Induláskor 200-300 arannyal rendelkezik, birtokai évente 50-75 arannyal gyarapítják vagyonát, a KM belátása szerint.",
-                            "title": "Vagyon (1-3)"
-                        },
-                        {
-                            "type": "rule",
-                            "text": "Ynev bármely tájáról származzon is egy kalandor, tanulóévei nem érnek véget az iskola elhagyásával. Sőt, az igazi megmérettetés még csak most kezdődik számára. Minél többet lát, tapasztal, minél több veszedelmet él túl, tudása annál jobban bővül, képességei fejlődnek. Ennek a fejlődésnek az alapköve a tapasztalat. Tapasztalatot jelenthet az ellenség legyőzése, a nehéz, veszedelmes helyzetek túlélése, küldetések, feladatok teljesítése, rejtélyek megoldása, különös tárgyak, helyek, lények megismerése és még ezer egyéb dolog. A karakter, aki kiválasztottsága révén megvetett a nyughatatlanság átkával vagy áldásával, fokozottan szembesül mindezzel. Kalandról kalandra, mások által elképzelhetetlen",
-                            "title": "Tapasztalati szint"
+                            "type": "paragraph",
+                            "text": "3 pontos Háttér esetén a karakter vagy közeli rokona a tartományúr közvetlen hűbérese, gróf vagy báró, esetleg egy jelentős kereskedőház vezetője. Induláskor 200-300 arannyal rendelkezik, birtokai évente 50-75 arannyal gyarapítják vagyonát, a KM belátása szerint."
                         }
                     ]
                 },
@@ -2293,6 +2283,11 @@
                     "id": "sec_17",
                     "title": "Életkorok",
                     "content_blocks": [
+                        {
+                            "type": "rule",
+                            "text": "Ynev bármely tájáról származzon is egy kalandor, tanulóévei nem érnek véget az iskola elhagyásával. Sőt, az igazi megmérettetés még csak most kezdődik számára. Minél többet lát, tapasztal, minél több veszedelmet él túl, tudása annál jobban bővül, képességei fejlődnek. Ennek a fejlődésnek az alapköve a tapasztalat. Tapasztalatot jelenthet az ellenség legyőzése, a nehéz, veszedelmes helyzetek túlélése, küldetések, feladatok teljesítése, rejtélyek megoldása, különös tárgyak, helyek, lények megismerése és még ezer egyéb dolog. A karakter, aki kiválasztottsága révén megvetett a nyughatatlanság átkával vagy áldásával, fokozottan szembesül mindezzel. Kalandról kalandra, mások által elképzelhetetlen",
+                            "title": "Tapasztalati szint"
+                        },
                         {
                             "type": "paragraph",
                             "text": "Rendkívül nehéz helyzetekben kényszerül tudása legjavát nyújtani – gyakran bizony a túlélésért. Ez hihetetlenül gyors fejlődés eredményez, így a kalandozók előtt nyitva áll az út a hőssé válás felé."
@@ -4161,11 +4156,15 @@
                 },
                 {
                     "id": "sec_27",
-                    "title": "A lovag induló képzettségei 1. Tapasztalati szinten",
+                    "title": "A lovag induló képzettségei",
                     "content_blocks": [
                         {
                             "type": "paragraph",
                             "text": "A lovag induló képzettségei A Lovag karakter már első Tapasztalati szinten is igen komoly harcképességet jelentő képzettségekkel bír, illetve járatos a nemesi udvarokban szükséges minden Szociális tudományban."
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "1. Tapasztalati szinten"
                         },
                         {
                             "type": "table",
@@ -4714,7 +4713,7 @@
                 },
                 {
                     "id": "sec_31",
-                    "title": "Az Marico con Rabóra lovag különleges előnyei és hátrányai a lovagnál leírtakon kívül",
+                    "title": "A Marico con Rabóra lovag különleges előnyei és hátrányai a lovagnál leírtakon kívül",
                     "content_blocks": [
                         {
                             "type": "paragraph",
@@ -5915,113 +5914,15 @@
                     "content_blocks": [
                         {
                             "type": "paragraph",
-                            "text": "egyértelműen az Orgyilkosok mellett a fejvadász alakulatok másik lehetséges vezető rétege ez."
+                            "text": "Az egész Gorvikot behálózó fejvadász szervezetek tagjait illetik ezzel a névvel. Szerte Yneven gyűlölt és rettegett orgyilkosok, gátlástalanáguk és aljasságuk közmondásos; körmönfont cselszövők és úgy hazudnak, mint a vízfolyás. Nem vetik meg a mérgeket, sőt – kimondottan előszeretettel folyamodnak hozzájuk. Nyílt harcra nemigen kaphatók, a szavuk széle szórt pelyva, s nemcsak megbízásból ölnek, hanem élvezetből is."
                         },
                         {
                             "type": "paragraph",
-                            "text": "Fegyverzetük teljesen feladatuktól függő, azonban ritkán jelennek meg valamilyféle vértezet nélkül, túlélésük mindennél fontosabb a védett személy szempontjából."
+                            "text": "Vesztett hírüknek köszönhetik, hogy hazájukon kívül mindenütt csak rejtve és titokban tevékenykedhetnek – hacsak nem állnak befolyásos helyi hatalmasság védelme alatt. Ha lelepleződnek vagy pártfogójuk elbukik, nincs senki, aki megkönyörülne rajtuk; velük szemben még az ősi ellenségek is összefognak. Persze épp ez az, ami oly szívesen látott vendéggé teszi őket a gátlástalanabb nagyurak udvarában: kiszolgáltatottságuk biztosítja a védnökük iránti hűségüket."
                         },
                         {
                             "type": "paragraph",
                             "text": "A befolyásos pártfogókat azonban a belviszályoktól dúlt Szent Földön sem nélkülözhetik. Független klán rendkívül kevés van; többségük egy-egy nagyhatalmú nemesi család, egyházfő vagy lovagrend védelmét élvezi. Ők gondoskodnak a saját faluközösségeikben (gorviki kifejezéssel gorvákban) élő fejvadászokról, akik viszonzásul feltétlen engedelmességgel tartoznak nekik."
-                        },
-                        {
-                            "type": "table",
-                            "title": "1. Tapasztalati szinten:",
-                            "headers": [
-                                "Induló képzettségek",
-                                "Fok"
-                            ],
-                            "rows": [
-                                [
-                                    "Fegyverhasználat (a klán tradicionális fegyvere)",
-                                    "3. fok"
-                                ],
-                                [
-                                    "Fegyverhasználat",
-                                    "2. fok"
-                                ],
-                                [
-                                    "Fegyverhasználat (nehézkardok, egykezes kardok, tőrök, csatabárdok, buzogányok, szálfegyverek)",
-                                    "1. fok"
-                                ],
-                                [
-                                    "Fájdalomtűrés",
-                                    "2. fok"
-                                ],
-                                [
-                                    "Vértviselet",
-                                    "2. fok"
-                                ],
-                                [
-                                    "Fegyverismeret",
-                                    "2. fok"
-                                ],
-                                [
-                                    "Harctéri gyakorlat",
-                                    "2. fok"
-                                ],
-                                [
-                                    "Hadvezetés",
-                                    "2. fok"
-                                ],
-                                [
-                                    "Taktika (kisebb egységes formációk)",
-                                    "1. fok"
-                                ],
-                                [
-                                    "Lélektan",
-                                    "2. fok"
-                                ],
-                                [
-                                    "Térképészet",
-                                    "1. fok"
-                                ],
-                                [
-                                    "Orvtámadás",
-                                    "1. fok"
-                                ],
-                                [
-                                    "Élettan",
-                                    "1. fok"
-                                ],
-                                [
-                                    "Futás",
-                                    "2. fok"
-                                ],
-                                [
-                                    "Úszás",
-                                    "2. fok"
-                                ],
-                                [
-                                    "Pszi (pyarroni)",
-                                    "2. fok"
-                                ],
-                                [
-                                    "Lopódzás",
-                                    "+10%"
-                                ],
-                                [
-                                    "Rejtőzés",
-                                    "+10%"
-                                ],
-                                [
-                                    "Csapdafelderítés",
-                                    "+20%"
-                                ],
-                                [
-                                    "Esés",
-                                    "+10%"
-                                ],
-                                [
-                                    "Akrobatika",
-                                    "+15%"
-                                ],
-                                [
-                                    "Veszélyérzék",
-                                    "+20%"
-                                ]
-                            ]
                         },
                         {
                             "type": "paragraph",
@@ -6033,19 +5934,23 @@
                         },
                         {
                             "type": "paragraph",
-                            "text": "Az egész Gorvikot behálózó fejvadász szervezetek tagjait illetik ezzel a névvel. Szerte Yneven gyűlölt és rettegett orgyilkosok, gátlástalanáguk és aljasságuk közmondásos; körmönfont cselszövők és úgy hazudnak, mint a vízfolyás. Nem vetik meg a mérgeket, sőt – kimondottan előszeretettel folyamodnak hozzájuk. Nyílt harcra nemigen kaphatók, a szavuk széle szórt pelyva, s nemcsak megbízásból ölnek, hanem élvezetből is."
-                        },
-                        {
-                            "type": "paragraph",
                             "text": "A Vértestvérektől nem egészen idegen a mechanika tudománya, és nagyra tartják a csavaros, kézi fegyverés páncélkovácsokat. Vezetőik méregdrága páncéljai nem csupán bámulatosan könnyűek és ütésállóak, hanem kisebbfajta fegyverraktár is lapul bennük: tűvetők, rugóra járó pengék, tőröket, mérgeket rejtő rekeszek. Felszerelésüket különleges, egyedi célzófegyverekkel egészítik ki, például nehéz, ismétlő számszeríjakkal, vagy épp ellenkezőleg, apró, köpenyráncban eldugható műremekekkel, melyeket fél kézzel is használni lehet cinikus eltökéltségüknek hála, könnyűszerrel túlteszik magukat a hagyományhűségen, a morális megfontolásokon. Épp ezért nagyon ritka az olyan gorviki klán napjainkra, amely birtokolja és oktatja a Slan Pszi diszciplínáit. Ezen klánok a Birodalmi Fejvadászklán beszállítói, ezért ezekből JK nem indulhat."
                         },
                         {
                             "type": "paragraph",
-                            "text": "Vesztett hírüknek köszönhetik, hogy hazájukon kívül mindenütt csak rejtve és titokban tevékenykedhetnek – hacsak nem állnak befolyásos helyi hatalmasság védelme alatt. Ha lelepleződnek vagy pártfogójuk elbukik, nincs senki, aki megkönyörülne rajtuk; velük szemben még az ősi ellenségek is összefognak. Persze épp ez az, ami oly szívesen látott vendéggé teszi őket a gátlástalanabb nagyurak udvarában: kiszolgáltatottságuk biztosítja a védnökük iránti hűségüket."
+                            "text": "A szervezet mind a négy fejvadásztípust képzi és alkalmazza."
+                        },
+                        {
+                            "type": "heading",
+                            "text": "A gorviki Vértestvér különleges képességei:"
                         },
                         {
                             "type": "paragraph",
-                            "text": "A szervezet mind a négy fejvadásztípust képzi és alkalmazza."
+                            "text": "I. A Gorvikban képzett fejvadász karakterek számára néha létfontosságú lehet, hogy gyorsan és könnyen eligazodjanak a különböző klánok és rendek, nemesi csoportosulások ügyes-bajos dolgaiban, ezért számukra az iskolájuk a szokásos 4. fokú Oktatáshoz hasonló bónuszokkal tanítja a Heraldika, illetve a Politika/diplomácia és az Udvari etikett képzettségeket."
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "II. Az ilyen szervezetek tagjai képesek elsajátítani a fejvadászkard forgatásának trükkjeit; emellett pedig rendjük 5. Tsz.-től felfelé megbecsülése jeléül általában különös srófra járó nyílvetőket és más elmés szerkezeteket juttat tagjai számára. (Ezek pontos értékeiről minden esetben a KM dönt, bár egy rejtett pengevető vagy nyílvető ritkán bír egy rendes vadász számszeríjánál jobb értékekkel.)"
                         }
                     ]
                 },
@@ -6208,7 +6113,7 @@
             "sections": [
                 {
                     "id": "sec_37",
-                    "title": "A tolvaj induló képzettségei 1. Tapasztalati szinten:",
+                    "title": "A tolvaj induló képzettségei",
                     "content_blocks": [
                         {
                             "type": "flavor_text",
@@ -6237,6 +6142,10 @@
                         {
                             "type": "paragraph",
                             "text": "A tolvaj karaktert leginkább azoknak ajánljuk, akik a kardforgatás helyett egy kis ügyességgel, képzettségeik alkalmazásával szeretnék elérni céljukat. Igen sokrétűen képzett, sokoldalú karakter, mellyel könnyű és élvezetes a játék."
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "1. Tapasztalati szinten:"
                         },
                         {
                             "type": "table",
@@ -6638,11 +6547,15 @@
                 },
                 {
                     "id": "sec_38",
-                    "title": "Kobrák",
+                    "title": "Hamisító",
                     "content_blocks": [
                         {
                             "type": "paragraph",
-                            "text": "lói felszámolják, a hamisítók az elsők között találnak újra munkát egy másik szervezet oltalmában. Legtöbbször nem maguk szerzik a megbízásokat, bár kétségkívül léteznek közöttük olyanok is, akik akár védelmező klán nélkül is meg találják a számításukat."
+                            "text": "Ez a név is önmagáért beszél. A hamisítók kitűnő kézügyességgel megáldott tolvajok, akik valamely általuk választott szakterületen megtévesztésig hasonló másolatokat, aláírásokat, ékszereket, műtárgyakat képesek készíteni. Általában csak egyetlen irányban szakosodnak, de nem ritka az olyan hamisító sem, aki ha kell aranyat „csinál”, máskor bizalmas leveleket ír, bullákat, pecséteket farigcsál. Jó pénzért boszorkányos ügyességgel utánozza bárki kézírását, és néhány óra múlva ott domborodik a tökéletes pecsét az irományt lezáró viaszban."
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "Egy magára valamit is adó tolvajszervezet nem létezhet nélkülük, ennek megfelelően nagy becsben tartják őket, ha valamelyik klánt vagy céhet a helyi hatalmasságok poroszlói felszámolják, a hamisítók az elsők között találnak újra munkát egy másik szervezet oltalmában. Legtöbbször nem maguk szerzik a megbízásokat, bár kétségkívül léteznek közöttük olyanok is, akik akár védelmező klán nélkül is meg találják a számításukat."
                         },
                         {
                             "type": "paragraph",
@@ -6736,7 +6649,13 @@
                         {
                             "type": "paragraph",
                             "text": "Az efféle tolvaj az alap tolvaj leírásában feltüntetett képzettségeket tanulhatja iskolája nyújtotta 4. fokú Oktatás képzettségnek megfelelő bónuszokkal."
-                        },
+                        }
+                    ]
+                },
+                {
+                    "id": "sec_38b",
+                    "title": "Besurranó",
+                    "content_blocks": [
                         {
                             "type": "paragraph",
                             "text": "Az igazi besurranó tolvajok valódi művészei szakmájuknak. Nem elégszenek meg azzal, hogy éjnek idején nesztelen mozdulatokkal átkutassák a fehérneműket némi aranyért vagy az ezüst étkészletért. Nem lesik áldozatukat napokon keresztül, hogy mikor egy el hosszabb időre, hogy aztán nyugodtan kifoszthassák otthonát. Ezek a módszerek a kezdők és a pitiánerek eszköztárát gazdagítják. Az igazi profik maguk szervezik meg a ház népének eltávozását, semmit nem bíznak a véletlenre, de arra azért számítanak, hogy mindig közbejöhet valami."
@@ -6845,7 +6764,13 @@
                         {
                             "type": "paragraph",
                             "text": "Az efféle tolvaj az alap tolvaj leírásában feltüntetett képzettségeket tanulhatja iskolája nyújtotta 4. fokú Oktatás képzettségnek megfelelő bónuszokkal."
-                        },
+                        }
+                    ]
+                },
+                {
+                    "id": "sec_39",
+                    "title": "Kobrák",
+                    "content_blocks": [
                         {
                             "type": "paragraph",
                             "text": "A Kobrák Észak-Ynev legnagyobb és legbefolyásosabb tolvajklánja. Ez – ahogyan egymás közt hívják magukat – a Család. Székhelye Toron fővárosában, Shulurban található a híresztelések szerint, ám pontos adatokkal az Északi Szövetség hírszerzése sem rendelkezik. Mondják még, hogy a Család feje, a tolvajkirály befolyásos toroni főúr, ám a gyanúsítgatásoknak hamar véget vetett néhány kíváncsi katonatiszt halála. Toronban – de Abasziszban és a környező városállamokban is – a tényleges hatalom ennek a tolvajklánnak a kezében van. Nincs azonban Ynevnek egyetlen olyan birodalma, városa, ahol ne lennének valamilyen módon érdekeltek a Kobrák. Olykor a tisztesség látszatát próbálják megőrizni, máskor azonban erre sem ügyelnek: külön hadsereget, kémszolgálatot tartanak fenn, saját törvényeket alkotnak, melyek betartatását kíméletlen eszközökkel vigyázzák."
@@ -6861,13 +6786,7 @@
                         {
                             "type": "paragraph",
                             "text": "A belső tagok – akik a Családban születtek és nevelkedtek"
-                        }
-                    ]
-                },
-                {
-                    "id": "sec_39",
-                    "title": "A Kobrák tolvajainak különleges képességei:",
-                    "content_blocks": [
+                        },
                         {
                             "type": "paragraph",
                             "text": "Teljes bevételükre leadják cserébe fizetésükért, ráadásul fényes jómódot és számtalan kedvezményt élveznek. A Kobrák befolyásolását csak az Északi Szövetség államai nemesek; noha, ezt kár is lenne tagadni, ott is megtalálhatóak szép számmal a Család emberei és üzleti érdekeltségei.",
@@ -6876,11 +6795,8 @@
                             "rows": []
                         },
                         {
-                            "type": "paragraph",
-                            "text": "nevelőitől függ, ám mivel a vidéket dolgos, az összetartozást mindennél előbbre valónak tartó nép lakja, kijelenthetjük: Talavra (ha csak rajta áll) sosem lesz dologtalan vagy renegát.",
-                            "title": "",
-                            "headers": [],
-                            "rows": []
+                            "type": "heading",
+                            "text": "A Kobrák tolvajainak különleges képességei:"
                         },
                         {
                             "type": "rule",
@@ -6890,23 +6806,9 @@
                             "rows": []
                         },
                         {
-                            "type": "paragraph",
-                            "text": "A klánbeliek erkölcsiségét a gorviki Vértestvériségek hagyományaiból és a helyi céhek szabályzatából összeállított Kódex határozza meg – erre a sajátos irományra kell esküt tenniük mindazoknak, akik elérik a Jelölés (függőgyermekeknél 10., leánygyermekeknél 8. életév) Korát. A jelöltek a beavatottság köztes állapotában leledzenek: idősebb társaik nem titkolóznak többé előttük, ám a közösség teljes jogú tagjaivá csak később, rendszerint a 15. életévet betöltve válhatnak. A beavatás utolsó fázisaként nevük a Kódexbe kerül, s ide jegyeztetnek fel a klán szempontjából jelentős tetteik is. A Csodaművesek hierarchiájának felső rétegét az úgynevezett minősítettek képezik. Minősítetté a külvilágból érkezett hírek, hiteles körözési levelek, széles körben ismert dalok tanúságtétele alapján válhat a talavrai – partjaikon elképzelni sem lehet nagyobb megtiszteltetést. A minősítettek a legjobban fizetettek szakmájuk gyakorlói közül, árfolyamuk eléri, gyakorta meg is haladja a toroni, abasziszi, vagy épp gorviki specialistákét.",
-                            "title": "",
-                            "headers": [],
-                            "rows": []
-                        },
-                        {
                             "type": "rule",
                             "text": "A Kobrák magasabb rangú tagjai, 5. Tsz felett szervezetük segítségével, 3. fokú Oktatás képzettséggel tanulhatnak Tudományos képzettségeket, 10. Tsz. felett pedig Misztikus képzettségeket is. Ezen a szinten történik meg a vállalkozó kiválasztottak átlényegítése is, melynek során egyfajta alacsonyrendű szeráfista szertartás keretében egy korábban a klán varázstudói által megidézett, bebörtönzött démon esszenciáját adják át a delikvensnek, aki sikeres Démonológia képzettségpróba esetén a démon fizikai képességeit tudja megkaparintani – minden feláldozott Fp-ért cserébe egy HM-et, vagy 5 Fp-ként 1 Tulajdonságpontot nyerve, természetesen csupán rövid időre: alkalmanként 10 percre. Ezt bármikor és bárhol képesek megtenni. Azonban ha a próba sikertelen, a karakter 10 percre kábulttá válik, és ilyenkor Akaraterőpróbát kell tennie, különben a KM belátása szerint a démon rövid időre akár át is veheti felette az irányítást.",
                             "title": "Démoni esszencia átlényegítés",
-                            "headers": [],
-                            "rows": []
-                        },
-                        {
-                            "type": "paragraph",
-                            "text": "A klán élén a kapitány áll. E tisztség csak elvben öröklődő – általános vélemény szerint a helyi vérrel keveredett Sichetti-dinasztia addig birtokolhatja, míg „érdemes” utódokat tud kiállítani. A M.A.G.U.S. jelenében ez az utód a húszesztendős Lai-Felip, a klánalapító Ramando unokája, aki az utolsó narvani karneválon (P.Sz. 3697) bizonyította rátermettségét, sőt, apja megelégedésére nemesenszületett párt hozott a házhoz.",
-                            "title": "",
                             "headers": [],
                             "rows": []
                         }
@@ -6919,28 +6821,7 @@
                     "content_blocks": [
                         {
                             "type": "paragraph",
-                            "text": "Talavra csodaművesei",
-                            "title": "",
-                            "headers": [],
-                            "rows": []
-                        },
-                        {
-                            "type": "paragraph",
-                            "text": "Első kapitányuk sokoldalúságának hála, a Csodaművesek a legkülönfélébb küldetésekre kaphatók, a Quiron-tenger medencéjének nagypolitikai kérdéseibe azonban sosem ártják bele magukat, nehogy magukra vonják az Északi Szövetség vagy Toron és csatlósai dühét. Azonosítójelüket, a tört bilincset – gorviki szokás szerint – a hajas fejbőrre tetoválják.",
-                            "title": "",
-                            "headers": [],
-                            "rows": []
-                        },
-                        {
-                            "type": "paragraph",
                             "text": "A múlt Talavra apró, a térképekről következetesen lefelejtett városállam a Quiron-tenger délkeleti partvidékén. Mind a keleti barbárok lakta síkságtól, mind Abaszisztól jókora (lakói szóhasználatával élve egészséges) távolság választja el; népe halászatból és földművelésből élt a Hetedkor hajnala, Kyria bukása óta, birkatürelemmel viselve urai szeszélyét – egészen a Pyraron szerinti IV. évezred derekáig. Ekkor vett különös, senki számára előre nem látható fordulatot Talavra sorsa az épp aktuális trónviszály, no meg egy szabadszájú gorviki bérgyilkos, Ramando Sichetti jóvoltából.",
-                            "title": "",
-                            "headers": [],
-                            "rows": []
-                        },
-                        {
-                            "type": "paragraph",
-                            "text": "Kapcsolatok",
                             "title": "",
                             "headers": [],
                             "rows": []
@@ -6954,14 +6835,46 @@
                         },
                         {
                             "type": "paragraph",
-                            "text": "A talavraiak buzgón ápolják a viszonyt mindazokkal, akik hasznosak lehetnek számukra; egy kalandozó, ha magatehetetlen testét Talavra partjain vetik ki a hullámok, gondos ápolásra, biztos menedékre, felépülése után pedig udvarias kérésre számíthat: ne engedje, hogy jövőjének baja essék. (A városállam leányai kötelességtudatukkal tűnnek ki: nem egy híres fegyverforgatót csábítottak klánjuk parancsára a házasság révbe.) Suttogják, a kapitánynak a Quiron-tenger minden jelentős flottájánál akadnak emberei; tény, hogy bár maga a város továbbra sem szerepel a térképeken, számos hajó útvonala érinti a Talavra-fokot, hogy a városállam révbe érkező hadihajók szíves fogadtatásra számíthatnak – s hogy a kalózok kerülik még a környéket is.",
+                            "text": "A szervezet Talavra minden lakója születésétől fogva tagja a Csodaművesek klánjának. Hogy mikortól, milyen módon vesz részt a közös munkában, adottságaitól, hajlandóságától, szüleitől és",
                             "title": "",
                             "headers": [],
                             "rows": []
                         },
                         {
                             "type": "paragraph",
-                            "text": "A szervezet Talavra minden lakója születésétől fogva tagja a Csodaművesek klánjának. Hogy mikortól, milyen módon vesz részt a közös munkában, adottságaitól, hajlandóságától, szüleitől és",
+                            "text": "nevelőitől függ, ám mivel a vidéket dolgos, az összetartozást mindennél előbbre valónak tartó nép lakja, kijelenthetjük: Talavra (ha csak rajta áll) sosem lesz dologtalan vagy renegát.",
+                            "title": "",
+                            "headers": [],
+                            "rows": []
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "A klánbeliek erkölcsiségét a gorviki Vértestvériségek hagyományaiból és a helyi céhek szabályzatából összeállított Kódex határozza meg – erre a sajátos irományra kell esküt tenniük mindazoknak, akik elérik a Jelölés (függőgyermekeknél 10., leánygyermekeknél 8. életév) Korát. A jelöltek a beavatottság köztes állapotában leledzenek: idősebb társaik nem titkolóznak többé előttük, ám a közösség teljes jogú tagjaivá csak később, rendszerint a 15. életévet betöltve válhatnak. A beavatás utolsó fázisaként nevük a Kódexbe kerül, s ide jegyeztetnek fel a klán szempontjából jelentős tetteik is. A Csodaművesek hierarchiájának felső rétegét az úgynevezett minősítettek képezik. Minősítetté a külvilágból érkezett hírek, hiteles körözési levelek, széles körben ismert dalok tanúságtétele alapján válhat a talavrai – partjaikon elképzelni sem lehet nagyobb megtiszteltetést. A minősítettek a legjobban fizetettek szakmájuk gyakorlói közül, árfolyamuk eléri, gyakorta meg is haladja a toroni, abasziszi, vagy épp gorviki specialistákét.",
+                            "title": "",
+                            "headers": [],
+                            "rows": []
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "A klán élén a kapitány áll. E tisztség csak elvben öröklődő – általános vélemény szerint a helyi vérrel keveredett Sichetti-dinasztia addig birtokolhatja, míg „érdemes” utódokat tud kiállítani. A M.A.G.U.S. jelenében ez az utód a húszesztendős Lai-Felip, a klánalapító Ramando unokája, aki az utolsó narvani karneválon (P.Sz. 3697) bizonyította rátermettségét, sőt, apja megelégedésére nemesenszületett párt hozott a házhoz.",
+                            "title": "",
+                            "headers": [],
+                            "rows": []
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "Első kapitányuk sokoldalúságának hála, a Csodaművesek a legkülönfélébb küldetésekre kaphatók, a Quiron-tenger medencéjének nagypolitikai kérdéseibe azonban sosem ártják bele magukat, nehogy magukra vonják az Északi Szövetség vagy Toron és csatlósai dühét. Azonosítójelüket, a tört bilincset – gorviki szokás szerint – a hajas fejbőrre tetoválják.",
+                            "title": "",
+                            "headers": [],
+                            "rows": []
+                        },
+                        {
+                            "type": "heading",
+                            "text": "Kapcsolatok"
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "A talavraiak buzgón ápolják a viszonyt mindazokkal, akik hasznosak lehetnek számukra; egy kalandozó, ha magatehetetlen testét Talavra partjain vetik ki a hullámok, gondos ápolásra, biztos menedékre, felépülése után pedig udvarias kérésre számíthat: ne engedje, hogy jövőjének baja essék. (A városállam leányai kötelességtudatukkal tűnnek ki: nem egy híres fegyverforgatót csábítottak klánjuk parancsára a házasság révbe.) Suttogják, a kapitánynak a Quiron-tenger minden jelentős flottájánál akadnak emberei; tény, hogy bár maga a város továbbra sem szerepel a térképeken, számos hajó útvonala érinti a Talavra-fokot, hogy a városállam révbe érkező hadihajók szíves fogadtatásra számíthatnak – s hogy a kalózok kerülik még a környéket is.",
                             "title": "",
                             "headers": [],
                             "rows": []
@@ -6979,13 +6892,7 @@
                             "title": "",
                             "headers": [],
                             "rows": []
-                        }
-                    ]
-                },
-                {
-                    "id": "sec_40",
-                    "title": "Szürkecsuklyások",
-                    "content_blocks": [
+                        },
                         {
                             "type": "rule",
                             "text": "I. A Talavraiak hihetetlenül összetartó népek, kik tudományukat egytől-egyig igen szívesen megosztják, legyen bár szó a magasabb mágia titkairól, vagy egészen egyszerűen a kolbásztöltés csínjáról-bínjáról. Ez annyit jelent, hogy egy átlagos Csodaműves minden képzettségét 2. fokú Oktatásnak megfelelő bónuszokkal tanulhat.",
@@ -6994,7 +6901,13 @@
                             "rows": [
                                 []
                             ]
-                        },
+                        }
+                    ]
+                },
+                {
+                    "id": "sec_40",
+                    "title": "Szürkecsuklyások",
+                    "content_blocks": [
                         {
                             "type": "paragraph",
                             "text": "A Kobrákhoz hasonlóan a Szürkecsuklyásokról sem lehet pusztán mint egyénekről írni. Óriási, egész Ynevre kiterjedő szervezet, melynek tagjai között nem csupán tolvajokat, de harcosokat és mágiahasználókat is találunk szép számmal. Abban is megegyeznek a Családdal, hogy vezetőik általában rangrejtve járnak, a klán életét irányítók személyét a titokzatosság homálya fedi, bár sokan esküdt mérnökök, hogy valamennyien nemesemberek."
@@ -7014,6 +6927,10 @@
                         {
                             "type": "paragraph",
                             "text": "Szükségük is van a gyilkolás nyelvén jól beszélőkre, mert noha ők maguk ha lehetőség van rá tartózkodnak a vér kiontásától, számtalan ellenségük akad, s jó néhány tolvajszervezet kér tőlük védelmet, s ezért csengő aranyakkal fizetni is hajlandó."
+                        },
+                        {
+                            "type": "heading",
+                            "text": "A Szürkecsuklyások tolvajainak különleges képességei:"
                         },
                         {
                             "type": "rule",
@@ -7169,7 +7086,7 @@
                 },
                 {
                     "id": "sec_43",
-                    "title": "A bárd induló képzettségei 1. Tapasztalati szinten:",
+                    "title": "A bárd induló képzettségei",
                     "content_blocks": [
                         {
                             "type": "paragraph",
@@ -7212,6 +7129,10 @@
                             "title": "Varázserő",
                             "headers": [],
                             "rows": []
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "1. Tapasztalati szinten:"
                         },
                         {
                             "type": "table",
@@ -8423,7 +8344,7 @@
                 },
                 {
                     "id": "sec_48",
-                    "title": "1. Tapasztalati szinten",
+                    "title": "A harcművész karakter",
                     "content_blocks": [
                         {
                             "type": "paragraph",
@@ -9068,7 +8989,7 @@
                 },
                 {
                     "id": "sec_50",
-                    "title": "1. Hollószárnyak (khrin-kao)",
+                    "title": "Harcművész fegyverek",
                     "content_blocks": [
                         {
                             "type": "paragraph",
@@ -9118,6 +9039,10 @@
                             "title": "Harcművész fegyverek képességei",
                             "headers": [],
                             "rows": []
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "1. Hollószárnyak (khrin-kao)"
                         },
                         {
                             "type": "paragraph",
@@ -9279,7 +9204,13 @@
                             "title": "Nunchaku statisztikák",
                             "headers": [],
                             "rows": []
-                        },
+                        }
+                    ]
+                },
+                {
+                    "id": "sec_50b",
+                    "title": "Kardművészek",
+                    "content_blocks": [
                         {
                             "type": "paragraph",
                             "text": "Mielőtt részletesebben szemügyre vennénk a slanek e specializált csoportját, mindenféleképpen szót kell ejtenünk Tiadlan, ezen hármas kormányzás alatt álló ország berendezkedéséről, hogy megértsük e harcos nemesek filozófiáját.",
@@ -10328,11 +10259,39 @@
                 },
                 {
                     "id": "sec_53",
-                    "title": "Az Arel-pap különleges előnyei és hátrányai a papnál leírtakon kívül",
+                    "title": "Arel-pap",
                     "content_blocks": [
                         {
+                            "type": "heading",
+                            "text": "Sólyomszív"
+                        },
+                        {
                             "type": "paragraph",
-                            "text": "valamifajta misztikus halálösztönt fejlesztettek ki magukban, talán a folyamatos veszteség, az elmúlás fenyegető közelsége miatt. Mások inkább attól tartanak, hogy Krán árnyéka túlságosan mély nyomot hagyott a lelkükön. Mindenesetre tény, hogy a Dúlas éveit követően szerte a Délvidéken láthatóan nagyobb teret hódított magának az irányzat a másik kettő ellenében.",
+                            "text": "Leginkább Északon népszerű irányzat, mely a Sólyomasszony érzelmi aspektusát tiszteli. Papjai lobbanékonyak és hamar fortyanók, hirtelen gyúlnak szenvedélyre, ám ugyanolyan gyorsan ki is hűlnek megint. Szeszélyes, csapongó, rajongásra hajlamos emberek. Legjelesebb erénynek a bátorságot tartják, elvi meggyőződésüket a gyakorlatba azonban inkább esztelenség formájában ültetik át. Minden hibájuk ellenére az erőszakos féktelenség nem jellemző rájuk – talán éppen azért, mert sokan lelkifurdalásból álltak csavargó-papnak, hogy levezekeljenek valami jóvátehetetlen bűnt, melyet ifjan és forró fővel követtek el. Arel minden halandó szolgája közül őket tartják a legmerészebbnek, ami nem kicsinység. Maguk is elismerik, hogy ritkán van idejük megöregedni."
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "Az irányzat szférái a Természet és a Lélek; szent jelképei a sólyomhold és a sólyomszív."
+                        },
+                        {
+                            "type": "heading",
+                            "text": "Sólyomcsőr"
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "Ez az irányzat a Délvidékről, az Államszövetség területéről terjedt el az egész Yneven. Papjai az élet mindent lebíró hatalmát hirdetik, s ádáz harcot vívnak az emberiség gonosz rákfenéivel: a közönnyel, a mélabúval, a betegségekkel. Talán Arel összes híve közül ők érzik át legmélyebben a természet örök harmóniáját. Az elmúlást – a másokét csakúgy, mint a sajátjukat – nem késleltetik, de nem is sürgetik. Igyekeznek elégedett, teljes életet élni és ehhez másokat is hozzásegíteni. Ha a két másik irányzattal vetjük össze őket, bölcsnek és megfontoltnak tűnnek. Kívülálló szemmel nézve persze még így is ijesztően kiszámíthatatlanok; ám annyi bizonyos, hogy rajtuk kívül egyetlen Arel-papnak sincs türelme másokat tanítani."
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "Az irányzat szférái a Természet és az Élet; szent jelképei a sólyomhold és a sólyomcsőr."
+                        },
+                        {
+                            "type": "heading",
+                            "text": "Sólyomkarom"
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "A messzi Yllinorban, az ilanori kultúrkörnek e távolba szakadt sarjhajtásában az Arel-hit már-már államvallásnak tekinthető, annyira túlsúlyba került a többi pyarroni kultuszhoz képest. Chei király kalandozó-papjai elsősorban a zabolátlan hadistennőt tisztelik benne. Krédójukat sem szóban, sem írásban nem terjesztik; hagyják, hogy a tetteik beszéljenek helyettük. Számukra az élet vég nélküli küzdelem, örökkön-örökké dúló háború, mely értelmet ad az üres hétköznapoknak. Minden tusát egy újabb követ, majd egy még újabb, egy annál is újabb – és így tovább. A győzelem csupán annyiban előrelépés, hogy a lehanyatló ellenfél mögött megpillantja a következőt. Az örökös körforgásnak soha nincs vége, legfeljebb a harcosok beleszövődő életének. Elvégre előbb-utóbb a legderekabb bajnok is kifárad, megöregszik, és egyszer óhatatlanul elérkezik az a viadal, melyen el kell buknia. Ez az irányzat mind közül a legfiatalabb. Papjai vadak és félelmet nem ismerők, testvéreiktől eltérően néha hajlamosak az eszevesztett, vérszomjas dührohamokra. Egyesek szerint valamifajta misztikus halálösztönt fejlesztettek ki magukban, talán a folyamatos veszteség, az elmúlás fenyegető közelsége miatt. Mások inkább attól tartanak, hogy Krán árnyéka túlságosan mély nyomot hagyott a lelkükön. Mindenesetre tény, hogy a Dúlas éveit követően szerte a Délvidéken láthatóan nagyobb teret hódított magának az irányzat a másik kettő ellenében.",
                             "title": "",
                             "headers": [],
                             "rows": []
@@ -10357,6 +10316,10 @@
                             "title": "",
                             "headers": [],
                             "rows": []
+                        },
+                        {
+                            "type": "heading",
+                            "text": "Az Arel-pap különleges előnyei és hátrányai a papnál leírtakon kívül:"
                         },
                         {
                             "type": "rule",
@@ -10428,7 +10391,13 @@
                             "title": "Az Arel-pap képzettségei, melyeket mesterétől az Oktatás képzettség 4. foka által nyújtott előnnyel tanulhat",
                             "headers": [],
                             "rows": []
-                        },
+                        }
+                    ]
+                },
+                {
+                    "id": "sec_54",
+                    "title": "Kyel-pap",
+                    "content_blocks": [
                         {
                             "type": "flavor_text",
                             "text": "„A Pyarron bukása előtti esztendőkben tulajdon paptársai közül is sokan felrótták Ordaric Lykargon atyának, hogy elriasztja egyházától a hívőit baljós vészmadárkodásával. Suttogva bár, de néhol még arról is szó esett, hogy le kellene tenni a zord aggastyánt a Papi Szék legfőbb ítélőbírói posztjáról, amely – mint Kyel szolgáinak rangidősét – őt illette meg. Ordaric atya egy ízben aztán így szólt a suttogókhoz: Fölösleges ennyit fondorkodnotok ellenem, ti jámborok. Rátok a szebbik orcájával mosolygott az én Uram; ezért nem is tanultatok el tőle ti egyebet, csak az élet örömét. Énrám viszont a másik orcájával tekint, amely epévé keseríti az ember szívét, az elméjét viszont bölcsességre nyitja. Bizony mondom néktek: midőn eljövend ama vész, amiről az én Uram a halott orcájával beszélt nekem, ti jámborok, valahányan csak vagytok, nyüszítve fogtok szertefutni előle mind. Én viszont... én majd itt maradok, hogy szembenézzek vele.",
@@ -10480,13 +10449,7 @@
                         {
                             "type": "paragraph",
                             "text": "Kyel egyháza gyakorlatilag csak az Államszövetség központi területein és az Északi szövetség nagyobb városaiban létezik, mindenütt másutt kihaltnak tekinthető. További súlyos vérveszteséget okozott benne a Dúlás, melynek során a papok több mint háromnegyede hősi halált halt és jóformán az összes"
-                        }
-                    ]
-                },
-                {
-                    "id": "sec_54",
-                    "title": "A Kyel-pap induló képzettségei 1. Tapasztalati szinten az alapkasztnál feltünteteken kívül:",
-                    "content_blocks": [
+                        },
                         {
                             "type": "paragraph",
                             "text": "Számos kolostorerőd romba dőlt. A megkeresett túlélők közül számosan a krániak elleni öngyilkos bevetéseken vesztették életüket. Hogy fennmarad-e egyáltalán Yneven a nagymúltú Kyel-hit, azt csakis a jövő dönti el; őszintén be kell azonban ismernünk, hogy kilátásai egyelőre nem túl kecsegtetőek."
@@ -10533,6 +10496,10 @@
                             "type": "rule",
                             "text": "VII. Kyel papjait igen figyelemreméltó és szellemileg kiemelkedett fiatalemberek közül választják ki, mindegyikük rendelkezik a Pszi érzékenység Háttérrel, így erre KAP-jaikból nem kell költeniük a karakter megalkotásakor.",
                             "title": "Kyel szolgái: Pszi érzékenység"
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "1. Tapasztalati szinten az alapkasztnál feltünteteken kívül:"
                         },
                         {
                             "type": "table",
@@ -10665,11 +10632,35 @@
                 },
                 {
                     "id": "sec_55",
-                    "title": "A Tharr-pap induló képzettségei 1. Tapasztalati szinten az alapkasztnál feltünteteken kívül:",
+                    "title": "Tharr-pap",
                     "content_blocks": [
                         {
+                            "type": "flavor_text",
+                            "text": "Szent a viharnak tombolása, mert eltakarítja a föld színéről, ami elburjánzik rajta és rothadásba fülled.\nSzent az örvénynek torka, mert elnyeli a nyüvek salakos hordalékát, amit a zúgó szél a tenger habjaiba söpör.\nSzent a vulkánnak gyomra, mert a benne lángoló tűz megemészti a mélyére rekedt mocskot, és kioldaszt belőle mindent, ami tisztátalan.\nSzent a földmélynek sötétje, mert örökre elrejti a szemünk elől, ami nem bizonyult méltónak rá, hogy visszatérjen a napvilágra.\n\n– Khótorr liturgikus szöveg"
+                        },
+                        {
                             "type": "paragraph",
-                            "text": "legtöbben azt a homályos választ adják, hogy a változások és változtatások szakadatlan folyamatának fenntartása a dolguk. Érthetetlen céljukat mindenesetre kiválóan össze tudják egyeztetni személyes ambícióikkal; ha vagyonuk, tekintélyük és befolyásuk gyarapításáról van szó, nem válogatnak az eszközökben. Gondolkodás nélkül csalnak és hazudnak, tökélyre fejlesztették mások manipulálásának és kihasználásának művészetét. Mélységesen megvetnek és lenéznek mindenkit, aki nem képes önerejéből magasabbra jutni. Szövetségeik mindig ideiglenesek: amíg közös érdek fűzi őket társukhoz, addig kívánni sem lehet náluk kitartóbb támogatót – a kötelék felbomlása után azonban árulásuk már csak idő kérdése. Állandóan résen vannak, hisz ebben a játszmában egymásnak is ellenfelei; a gyöngék és az ostobák ritkán élnek annyi ideig, hogy tanulhassanak a hibáikból. Ahogyan végigvizsgálják az életüket, mindnyájan csak följebb és még följebb törve, az mintegy tükörképe uruk pályafutásának, aki alantas kindémonból a panteon leghatalmasabb – és jószerivel utolsó – istenségévé magasztosult."
+                            "text": "Toron szörnyistenének papjairól számos történet és legenda kering szerte Északon, ám ezek szinte mind előítéleteken és elfogult beszámolókon alapulnak; igencsak ritkán találunk közöttük olyat, ami részrehajlás nélkül mutatná be őket. Ez persze nem is csoda, hiszen manapság az embernépek zöme pyarroni erkölcsöket vall; márpedig pyarroni szemmel nézve a Háromfejű szolgáinak tevékenysége valóban visszataszító és értelmetlen. Vádló hangvételű, érzelmektől fűtött forrásokból azonban aligha alkothatunk hiteles képet egy olyan összetett hitrendszerről, amely kontinensnyi régiókat tart a befolyása alatt már ezredévek óta."
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "A Tharr-hit gyakorlatilag Toron államvallása, és a birodalom vonzáskörzetében mindenütt tekintélyes, elismert felekezetnek számít. Észak-Ynev más tájain számtalan kisebb-nagyobb szekta vallja, hol rejtőzködve, hol – mint például Erionban – teljesen nyíltan. A Délvidéken mindeddig nem tudta megvetni a lábát, mivel itteni terjeszkedése részben Krán, részben Ordan érdekeit sértené, és ez a két hatalom összehasonlíthatatlanul brutálisabb módszerekkel lép föl ellene, mint Északon bárki."
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "Tharr papjai rendkívül magabiztos és öntudatos emberek. Okkal éreznek így: egyházukban a Háromfejű udvartartásának földi mását látják, márpedig a Lindigasson hitük szerint Tharr a legfőbb hatalom, és csak azokat a hekkákat és jahorrokat tűri meg maga körül, akik feltétel nélkül behódolnak neki. Szülőhazájukban senki nem ütközik meg a Háromfejű szolgáinak szüntelen belviszályain, hitszegésein és lángoló becsvágyukon. Épp ellenkezőleg, nagy tisztelet övezi őket, mint a toroni kultúra magasabb eszményeinek megtestesítőit. Nem vetik szemükre, ha vért ontanak – a vér szentsége és hatalma Toronban megkérdőjelezhetetlen –, s aki a kezük által hal, azt általában szerencsésnek tartják, elvégre Tharr kegyeltje segítette őt ura elé. Ennél jobb túlvilági ajánlólevél nemigen kapható, hiszen a végső ítélet így is, úgy is az istenség kezében van."
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "A Tharr-papok többsége a sedular kasztba tartozik, tehát csak a nemesek és a hivatásos fegyverforgatók állnak fölöttük a társadalmi hierarchiában. Ide sorolhatók a nyughatatlansági fogadalmat tett vándorprédikátorok, a khótorr-papok is, akik birodalom szerte hirdetik Tharr örök parancsát a folytonos megújulásra, és ékes szavú példabeszédekkel szolgálják az alacsonyabb kasztok lelki épülését. Ők – más Tharr-papokkal ellentétben – egyáltalán nem harciasak, bár egyéb lehetőségek híján természetesen nem riadnak vissza a vérontástól."
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "A khótorrok számára azonban Tharr az igehirdetést, a köznép megvilágosítását, a lelkekben kicsírázó magok elhintését szabta feladatul."
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "Persze a Háromfejű követői közül távolról sem mindenki tesz khótorr-fogadalmat. Ha vállalt kötelességeikről kérdezik őket (és ha egyáltalán válaszra érdemesítik az érdeklődőt), a legtöbben azt a homályos választ adják, hogy a változások és változtatások szakadatlan folyamatának fenntartása a dolguk. Érthetetlen céljukat mindenesetre kiválóan össze tudják egyeztetni személyes ambícióikkal; ha vagyonuk, tekintélyük és befolyásuk gyarapításáról van szó, nem válogatnak az eszközökben. Gondolkodás nélkül csalnak és hazudnak, tökélyre fejlesztették mások manipulálásának és kihasználásának művészetét. Mélységesen megvetnek és lenéznek mindenkit, aki nem képes önerejéből magasabbra jutni. Szövetségeik mindig ideiglenesek: amíg közös érdek fűzi őket társukhoz, addig kívánni sem lehet náluk kitartóbb támogatót – a kötelék felbomlása után azonban árulásuk már csak idő kérdése. Állandóan résen vannak, hisz ebben a játszmában egymásnak is ellenfelei; a gyöngék és az ostobák ritkán élnek annyi ideig, hogy tanulhassanak a hibáikból. Ahogyan végigvizsgálják az életüket, mindnyájan csak följebb és még följebb törve, az mintegy tükörképe uruk pályafutásának, aki alantas kindémonból a panteon leghatalmasabb – és jószerivel utolsó – istenségévé magasztosult."
                         },
                         {
                             "type": "paragraph",
@@ -10704,6 +10695,10 @@
                             "type": "rule",
                             "text": "I. Tharr szolgálói számára a Lélek és a Halál szférák elérhetők. Ezenkívül a Háromfejű néhány egyedi fohásszal is felruházza papjait, amelyeket egyetlen más istenség hívei sem ismernek. Ezek túlnyomórészt a Tharr által olyannyira kedvelt vérmágia körébe sorolhatók.",
                             "title": "Tharr-pap mágia"
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "1. Tapasztalati szinten az alapkasztnál feltünteteken kívül:"
                         },
                         {
                             "type": "table",
@@ -11517,7 +11512,7 @@
                 },
                 {
                     "id": "sec_61",
-                    "title": "Az Domvik-paplovag különleges előnyei és hátrányai",
+                    "title": "A Domvik-paplovag különleges előnyei és hátrányai",
                     "content_blocks": [
                         {
                             "type": "paragraph",
@@ -11595,8 +11590,24 @@
                     "title": "Dreina-paplovag",
                     "content_blocks": [
                         {
+                            "type": "flavor_text",
+                            "text": "Mesélik, hogy az Aranyúrnő rendjének beavatási szertartásán egy kardot, egy jogart és egy bőségszarut tesznek a jelölt elé, majd felszólítják, hogy válasszon közülük. A jogartól sokan azért riadnak vissza, mert nem akarnak dölyfösnek mutatkozni; pedig ez a legjobb döntés, a bírói hatalom szimbóluma, tökéletesen jelképezi azt a szerepkört, amit Dreina szolgái töltenek be az Államszövetségben. Nem jár rosszul az a jelölt sem, aki a bőségszaru után nyúl: ez pedig Dreina gazdag áldását jelenti, amellyel bőkezűen megajándékozza a teremtett világot. Azokból, akik a jogar mellett döntenek, általában jeles tanácsurak és diplomaták válnak, a bőségszaru-pártiak pedig kiváltképp a rendi birtokok igazgatásában, a termelés és a kereskedelem szervezésében tűnnek ki.\nA próbán csak akkor lehet elbukni, ha valaki a kardot választja. Az ilyet az Aranyúrnő felkentjei mindjárt eltanácsolják: próbáljon inkább szerencsét Darton vagy Uwel rendházaiban. Oroszlánszív ide vagy oda, mondják, nekik semmi szükségük üresfejű verekedőkre, akik előbb ütnek, és csak azután gondolkodnak.\n\n– Delcardo di Therrosa: Pyarroni útinapló (Részlet)"
+                        },
+                        {
                             "type": "paragraph",
-                            "text": "ó-hiten maradottak teszik ki; Észak-Yneven az egyháznak gyakorlatilag csak ez az irányzata létezik.",
+                            "text": "Ha a Dreina-hitű paplovagokról esik szó, mindenkinek azonnal az Oroszlánszív rend és Viadomo jut eszébe, ami legalábbis erős aránytévesztés. Perspektívánk e torzulásához nyilván rendkívüli mértékben hozzájárultak a Dúlás esztendejében történtek, amikor Viadomo erődje, akár a tengerárnak feszülő sziklaszirt, szegült szembe a mindent elsöprő kráni forgataggal, s a bástyáin hadakozó védők legendába illő hősiességgel verték vissza a meg-megújuló ostromokat. Természetesen az is mély nyomot hagyott az emberek emlékezetében, hogy a Fényes Város bukása és utódjának megépülése között Viadomo adott otthont a Papi Széknek és az Államszövetség teljes politikai vezetésének."
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "Mindez azonban nem feledtetheti azt a tényt, hogy az Oroszlánszív rendet Dreina paplovagjainak egy szélsőségesen militáns szárnya alapította, amely távolról sem képviseli az egyház egészét. Ez az agresszív irányzat, amely folyton berzenkedett a Dreina-papság pacifistának vélt politikája ellen, sohasem tudott számbeli túlsúlyra jutni a paplovagok között, s végül a P.sz. XIX. században le is szakadt a központi egyházról, azzal a bevallott szándékkal, hogy saját katonaállamot alapítanak, amelyben megkísérlik a valóságba átültetni az Aranyúrnő általuk megreformált hitét."
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "Igyekezetüket végül siker koronázta, és Viadomót P.sz. 2543-ban teljes jogú tagként felvették az Államszövetségbe. A pyarroni országok közül mindmostanáig Viadomo az egyetlen tiszta teokrácia, politikai befolyása a Dúlás óta jelentősen megnövekedett. Ám ennek ellenére a délvidéki Dreina-paplovagoknak továbbra is legföljebb egyötöde tartozik az Oroszlánszív rendbe."
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "A fennmaradó négyötödöt az ó-hiten maradottak teszik ki; Észak-Yneven az egyháznak gyakorlatilag csak ez az irányzata létezik.",
                             "title": "",
                             "headers": [],
                             "rows": []
@@ -11703,7 +11714,7 @@
                 },
                 {
                     "id": "sec_63",
-                    "title": "A Krad-paplovag induló képzettségei 1. Tapasztalati szinten az alap paplovagnál feltünteteken kívül:",
+                    "title": "A Krad-paplovag induló képzettségei",
                     "content_blocks": [
                         {
                             "type": "flavor_text",
@@ -11816,6 +11827,10 @@
                             "title": "Induló felszerelés",
                             "headers": [],
                             "rows": []
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "1. Tapasztalati szinten az alap paplovagnál feltünteteken kívül:"
                         },
                         {
                             "type": "table",
@@ -12011,13 +12026,7 @@
                             "title": "",
                             "headers": [],
                             "rows": []
-                        }
-                    ]
-                },
-                {
-                    "id": "sec_67",
-                    "title": "Bosszúangyal (Uwel-paplovag)",
-                    "content_blocks": [
+                        },
                         {
                             "type": "paragraph",
                             "text": "Főnixeket kizárólag Ordanban képeznek, a legtehetségesebbnek ígérkező Lángőr-növendékekből. Elnevezésük állítólag az ordani tűzmágia alapvetését rejtő varázsfőnixra, a Phoenix Triumphatra utalna, egyesek azonban elképzelhetetlennek tartanak egy sokkal baljósabb magyarázatot. Eszerint a Sogron-paplovagokat azért hívják Főnixeknek, mert akik a leghűségesebben és a legeredményesebben szolgálják urukat, azok idővel elnyerik ama hőn áhított kiváltságot, hogy önkéntes máglyahalált halhatnak érte. A Tűzkobra aztán – a tűzvarázslók hathatós segítségével – feltámasztja őket még forró hamvaikból.",
@@ -12096,7 +12105,13 @@
                             "title": "Sogron-paplovag képzettségei",
                             "headers": [],
                             "rows": []
-                        },
+                        }
+                    ]
+                },
+                {
+                    "id": "sec_67",
+                    "title": "Bosszúangyal (Uwel-paplovag)",
+                    "content_blocks": [
                         {
                             "type": "flavor_text",
                             "text": "Rak Narval tartományban, ahol a dúl Mordak család kormányoz, volt valaha egy város. Messzehírű, nyüzsgő kikötő, temérdek lármás népséggel, hajókkal, matrózokkal, aranyláncos kalmárokkal. Ifjabb éveimben még sokfelé ismerték a nevét. Manapság már másképp hívják, legalábbis azt a keveset, ami megmaradt belőle. Ti is látjátok, fiaim; az a feketére perzselt, öbölmenti katlan volt az, ami mellett a minap elhajóztunk.",
@@ -12117,13 +12132,7 @@
                             "title": "",
                             "headers": [],
                             "rows": []
-                        }
-                    ]
-                },
-                {
-                    "id": "sec_68",
-                    "title": "Az Uwel-paplovag különleges előnyei",
-                    "content_blocks": [
+                        },
                         {
                             "type": "flavor_text",
                             "text": "kevés volt, többen tán elegendően lesznek – és felkerekedtek mindahányan. Takaros látogatás volt, csudára megszervezve. Még a nevét is eltörölték a városnak; azóta is óvákodnak a környékbeli népek a szájukra venni, állítólag átok ül rajta. Azt a kiégett romhalmazt meg azóta Sathkun Uweliornak hívják. Uwel Lába Nyomának.",
