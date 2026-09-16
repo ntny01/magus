@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script>
+        (async () => {
+            const sb = supabase.createClient(
+                'https://nmzdvsnoomusukkczuav.supabase.co',
+                'sb_publishable_JCRzD-ElN1os72wkfX_DKw_PoOTgnYR'
+            );
+            window._sb = sb;
+            const { data: { session } } = await sb.auth.getSession();
+            if (!session) { window.location.href = 'login'; return; }
+            const { data: profile } = await sb.from('user_profiles')
+                .select('status, role, display_name, avatar').eq('id', session.user.id).single();
+            if (!profile || profile.status !== 'active') {
+                await sb.auth.signOut(); window.location.href = 'login'; return;
+            }
+            window._userId = session.user.id;
+            window._userProfile = profile;
+            window._isAdmin = profile.role === 'admin';
+            window._authReady = true;
+            window.dispatchEvent(new Event('magus-auth-ready'));
+        })();
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kockadobó</title>
+    <meta name="theme-color" content="#020617">
+    <link rel="icon" href="assets/logo/compass-logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="magus_ui.css?v=1">
+    <script src="magus_avatar.js?v=4"></script>
+    <script src="magus_dice.js?v=1"></script>
+    <style>
+        :root {
+            --bg: #0d0e13;
+            --panel: #16171e;
+            --panel-2: #1c1e27;
+            --border: #2a2c38;
+            --border-2: #3a3d4d;
+            --text: #e6e7ee;
+            --muted: #9498a8;
+            --accent: #e0b84a;
+            --accent-soft: rgba(224, 184, 74, .12);
+            --facet: #4a4d60;
+            --ink: #f2dc93;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; -webkit-tap-highlight-color: transparent; }
+        *{scrollbar-width:thin;scrollbar-color:rgba(224,184,74,.35) transparent}
+        *::-webkit-scrollbar{width:8px;height:8px}
+        *::-webkit-scrollbar-thumb{background:rgba(224,184,74,.3);border-radius:5px}
+        *::-webkit-scrollbar-track{background:transparent}
+        html { background: var(--bg); color-scheme: dark; overscroll-behavior-y: none; }
+        body {
+            font-family: 'Inter', 'Segoe UI', Tahoma, sans-serif;
+            background: var(--bg); color: var(--text);
+            min-height: 100dvh; overflow-x: clip;
+            display: flex; flex-direction: column;
+        }
+
+        /* ---------- Fejléc ---------- */
+        header {
+            display: flex; align-items: center; gap: .6rem;
+            padding: .6rem .9rem; border-bottom: 1px solid var(--border);
+            background: rgba(13, 14, 19, .9); position: sticky; top: 0; z-index: 20;
+            flex-wrap: wrap;
+        }
+        .brand { display: flex; align-items: center; gap: .5rem; font-family: 'Cinzel', serif; font-weight: 700; }
+        .brand .d { color: var(--accent); }
+        .back-btn {
+            display: inline-flex; align-items: center; gap: .3rem;
+            color: var(--muted); text-decoration: none; font-size: .85rem;
+            padding: .35rem .55rem; border-radius: .45rem; border: 1px solid transparent;
+        }
+        .back-btn:hover { color: var(--text); border-color: var(--border); }
+        .h-spacer { flex: 1 1 auto; }
+        .sel {
+            background: var(--panel-2); color: var(--text);
+            border: 1px solid var(--border-2); border-radius: .5rem;
+            padding: .4rem .6rem; font-size: .85rem; font-family: inherit; max-width: 46vw;
+        }
+        .sel:focus { outline: none; border-color: var(--accent); }
+        .user-chip { display: flex; align-items: center; gap: .45rem; }
+        .user-chip .ua { width: 30px; height: 30px; border-radius: 50%; overflow: hidden; flex: none; }
+        .user-chip .un { font-size: .8rem; color: var(--muted); max-width: 120px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+
+        /* ---------- Elrendezés ---------- */
+        main {
+            flex: 1; display: grid; gap: 1rem;
+            grid-template-columns: minmax(0, 360px) minmax(0, 1fr);
+            align-items: start;
+            padding: 1rem; max-width: 1100px; width: 100%; margin: 0 auto;
+        }
+        @media (max-width: 820px) { main { grid-template-columns: 1fr; } }
+
+        .card {
+            background: var(--panel); border: 1px solid var(--border);
+            border-radius: 14px; padding: 1rem;
+        }
+        .card h2 {
+            font-family: 'Cinzel', serif; font-size: 1rem; font-weight: 600;
+            color: var(--accent); margin-bottom: .75rem; letter-spacing: .3px;
+            display: flex; align-items: center; justify-content: space-between; gap: .5rem;
+        }
+
+        /* ---------- Kocka-tálca ---------- */
+        .tray { display: grid; grid-template-columns: repeat(4, 1fr); gap: .5rem; }
+        @media (max-width: 380px) { .tray { grid-template-columns: repeat(3, 1fr); } }
+        .die-btn {
+            background: var(--panel-2); border: 1px solid var(--border-2);
+            border-radius: 12px; padding: .4rem .2rem .25rem; cursor: pointer;
+            display: flex; flex-direction: column; align-items: center; gap: .1rem;
+            transition: border-color .12s, background .12s, transform .06s;
+        }
+        .die-btn:hover { border-color: var(--accent); background: var(--accent-soft); }
+        .die-btn:active { transform: scale(.94); }
+        .die-btn .lbl { font-size: .72rem; color: var(--muted); }
+
+        /* ---------- Pool ---------- */
+        .pool { display: flex; flex-wrap: wrap; gap: .4rem; margin: .8rem 0 .2rem; min-height: 2rem; }
+        .pool .empty { color: var(--muted); font-size: .82rem; align-self: center; }
+        .chip {
+            display: inline-flex; align-items: center; gap: .35rem;
+            background: var(--accent-soft); border: 1px solid rgba(224,184,74,.35);
+            color: var(--ink); border-radius: 999px; padding: .18rem .3rem .18rem .55rem;
+            font-size: .82rem; font-weight: 600;
+        }
+        .chip button {
+            background: none; border: none; color: var(--ink); cursor: pointer;
+            width: 20px; height: 20px; border-radius: 50%; font-size: .95rem; line-height: 1;
+            display: inline-flex; align-items: center; justify-content: center;
+        }
+        .chip button:hover { background: rgba(224,184,74,.25); }
+
+        .row { display: flex; align-items: center; gap: .5rem; margin-top: .7rem; flex-wrap: wrap; }
+        .row label { font-size: .8rem; color: var(--muted); }
+        .stepper { display: inline-flex; align-items: center; border: 1px solid var(--border-2); border-radius: .5rem; overflow: hidden; }
+        .stepper button { background: var(--panel-2); color: var(--text); border: none; width: 34px; height: 34px; font-size: 1.1rem; cursor: pointer; }
+        .stepper button:hover { background: var(--accent-soft); color: var(--accent); }
+        .stepper input { width: 46px; text-align: center; background: var(--bg); color: var(--text); border: none; border-left: 1px solid var(--border-2); border-right: 1px solid var(--border-2); font-family: inherit; font-size: .9rem; height: 34px; }
+        .txt {
+            flex: 1 1 140px; min-width: 0; background: var(--bg); color: var(--text);
+            border: 1px solid var(--border-2); border-radius: .5rem; padding: .5rem .6rem;
+            font-family: inherit; font-size: .88rem;
+        }
+        .txt:focus { outline: none; border-color: var(--accent); }
+        .txt.bad { border-color: #f87171; }
+
+        .roll-btn {
+            width: 100%; margin-top: .9rem; padding: .8rem; border-radius: 12px;
+            background: linear-gradient(180deg, #e6c258, #cf9f30); color: #241c05;
+            border: none; font-family: 'Cinzel', serif; font-weight: 700; font-size: 1.05rem;
+            cursor: pointer; letter-spacing: .5px; transition: filter .12s, transform .06s;
+        }
+        .roll-btn:hover { filter: brightness(1.06); }
+        .roll-btn:active { transform: scale(.98); }
+        .roll-btn:disabled { filter: grayscale(.6) brightness(.7); cursor: not-allowed; }
+        .mini-btn {
+            background: var(--panel-2); color: var(--muted); border: 1px solid var(--border-2);
+            border-radius: .5rem; padding: .4rem .6rem; font-size: .8rem; cursor: pointer; font-family: inherit;
+        }
+        .mini-btn:hover { color: var(--text); border-color: var(--accent); }
+
+        /* ---------- Feed ---------- */
+        .feed-head { display: flex; align-items: center; justify-content: space-between; gap: .5rem; flex-wrap: wrap; }
+        .feed-tools { display: flex; gap: .4rem; flex-wrap: wrap; }
+        .feed { display: flex; flex-direction: column; gap: .6rem; margin-top: .3rem; }
+        .feed-empty { color: var(--muted); font-size: .9rem; text-align: center; padding: 2rem 1rem; }
+        .roll {
+            background: var(--panel-2); border: 1px solid var(--border);
+            border-radius: 12px; padding: .7rem .8rem; display: flex; gap: .7rem; align-items: flex-start;
+        }
+        .roll .who { display: flex; flex-direction: column; align-items: center; gap: .25rem; width: 56px; flex: none; text-align: center; }
+        .roll .who .ua { width: 34px; height: 34px; border-radius: 50%; overflow: hidden; }
+        .roll .who .cn { font-size: .66rem; color: var(--muted); line-height: 1.1; word-break: break-word; }
+        .roll .body { flex: 1; min-width: 0; }
+        .roll .meta { display: flex; align-items: baseline; gap: .5rem; flex-wrap: wrap; margin-bottom: .35rem; }
+        .roll .rlabel { font-weight: 600; color: var(--text); font-size: .9rem; }
+        .roll .rnote { color: var(--muted); font-size: .76rem; }
+        .roll .rtime { color: var(--muted); font-size: .7rem; margin-left: auto; }
+        .roll .dice { display: flex; flex-wrap: wrap; gap: .3rem; align-items: center; }
+        .roll .total {
+            margin-left: auto; font-family: 'Cinzel', serif; font-weight: 700; font-size: 1.5rem;
+            color: var(--accent); display: flex; align-items: center; gap: .2rem; padding-left: .5rem;
+        }
+        .roll .total small { font-size: .7rem; color: var(--muted); font-family: 'Inter', sans-serif; font-weight: 400; }
+        .roll .diceline { display: flex; align-items: center; gap: .5rem; flex-wrap: wrap; }
+
+        /* ---------- Overlay (Korábbi menetek) ---------- */
+        .overlay {
+            position: fixed; inset: 0; background: rgba(6,7,11,.72); z-index: 60;
+            display: none; align-items: flex-start; justify-content: center; padding: 4dvh 1rem;
+            overflow-y: auto;
+        }
+        .overlay.open { display: flex; }
+        .sheet {
+            background: var(--panel); border: 1px solid var(--border); border-radius: 16px;
+            width: 100%; max-width: 720px; padding: 1.1rem; margin: auto 0;
+        }
+        .sheet h3 { font-family: 'Cinzel', serif; color: var(--accent); font-weight: 600; margin-bottom: .8rem; display: flex; justify-content: space-between; align-items: center; }
+        .sess {
+            border: 1px solid var(--border); border-radius: 10px; margin-bottom: .6rem; overflow: hidden;
+        }
+        .sess > summary {
+            list-style: none; cursor: pointer; padding: .6rem .8rem; display: flex; justify-content: space-between; gap: .5rem;
+            background: var(--panel-2); font-weight: 600; font-size: .9rem;
+        }
+        .sess > summary::-webkit-details-marker { display: none; }
+        .sess > summary .cnt { color: var(--muted); font-weight: 400; font-size: .8rem; }
+        .sess .sbody { padding: .6rem .8rem; display: flex; flex-direction: column; gap: .5rem; }
+        .x-btn { background: none; border: 1px solid var(--border-2); color: var(--muted); border-radius: .5rem; width: 32px; height: 32px; cursor: pointer; font-size: 1.1rem; }
+        .x-btn:hover { color: var(--text); border-color: var(--accent); }
+
+        .banner { grid-column: 1 / -1; background: var(--panel); border: 1px solid var(--border); border-radius: 12px; padding: 1rem; color: var(--muted); text-align: center; }
+        .banner b { color: var(--text); }
+    </style>
+</head>
+<body>
+    <header>
+        <a class="back-btn" href="index" title="Vissza a főoldalra">◀ Vissza</a>
+        <span class="brand"><span class="d">🎲</span> Kockadobó</span>
+        <div class="h-spacer"></div>
+        <select id="campSelect" class="sel" title="Kampány" aria-label="Kampány"></select>
+        <select id="charSelect" class="sel" title="Karakter" aria-label="Karakter"></select>
+        <div class="user-chip"><span class="ua" id="userAv"></span><span class="un" id="userName"></span></div>
+    </header>
+
+    <main id="main">
+        <div class="banner" id="banner" style="display:none"></div>
+
+        <section class="card" id="rollerCard">
+            <h2>Dobás összeállítása</h2>
+            <div class="tray" id="tray"></div>
+
+            <div class="pool" id="pool"><span class="empty">Koppints egy kockára a hozzáadáshoz.</span></div>
+
+            <div class="row">
+                <label>Módosító</label>
+                <div class="stepper">
+                    <button type="button" id="modMinus" aria-label="Módosító csökkentése">−</button>
+                    <input id="modInput" type="text" inputmode="numeric" value="0" aria-label="Módosító">
+                    <button type="button" id="modPlus" aria-label="Módosító növelése">+</button>
+                </div>
+                <button type="button" class="mini-btn" id="clearBtn">Ürítés</button>
+            </div>
+
+            <div class="row">
+                <input class="txt" id="labelInput" type="text" maxlength="40" placeholder="Címke (pl. Támadás) — opcionális">
+            </div>
+
+            <div class="row">
+                <input class="txt" id="notationInput" type="text" placeholder="vagy írd be: 2d6+3" aria-label="Kocka-jelölés">
+                <button type="button" class="mini-btn" id="notationBtn">Betölt</button>
+            </div>
+
+            <button class="roll-btn" id="rollBtn">DOBÁS</button>
+        </section>
+
+        <section class="card" id="feedCard">
+            <h2 class="feed-head">
+                <span>Élő dobások</span>
+                <span class="feed-tools" id="feedTools"></span>
+            </h2>
+            <div class="feed" id="feed"><div class="feed-empty">Még nincs dobás ebben a menetben.</div></div>
+        </section>
+    </main>
+
+    <div class="overlay" id="archiveOverlay">
+        <div class="sheet">
+            <h3><span>🗄️ Korábbi menetek</span><button class="x-btn" id="archiveClose" aria-label="Bezárás">✕</button></h3>
+            <div id="archiveBody"><div class="feed-empty">Betöltés…</div></div>
+        </div>
+    </div>
+
+    <script>
+    (function () {
+        var DR = {
+            campaigns: [], campId: null,
+            chars: [], charId: null,
+            pool: {}, modifier: 0,
+            profiles: {},           // user_id -> {display_name, avatar}
+            channel: null, loaded: false
+        };
+        var $ = function (id) { return document.getElementById(id); };
+        function esc(s) { return String(s == null ? '' : s).replace(/[&<>"']/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]; }); }
+        function sb() { return window._sb; }
+
+        function boot() {
+            if (window.MagusDice) MagusDice.ensureStyles();
+            renderUserChip();
+            renderTray();
+            wireControls();
+            loadData();
+        }
+
+        function renderUserChip() {
+            var p = window._userProfile || {};
+            $('userName').textContent = p.display_name || '';
+            if (window.MagusAvatar) MagusAvatar.render($('userAv'), { display_name: p.display_name, avatar: p.avatar }, { size: 30 });
+        }
+
+        function renderTray() {
+            var t = $('tray'); t.innerHTML = '';
+            MagusDice.SIDES.forEach(function (s) {
+                var b = document.createElement('button');
+                b.className = 'die-btn'; b.type = 'button';
+                b.setAttribute('aria-label', 'd' + s + ' hozzáadása');
+                b.innerHTML = MagusDice.dieSVG(s, null, { size: 52, hideLabel: true }) + '<span class="lbl">d' + s + '</span>';
+                b.onclick = function () { addToPool(s); };
+                t.appendChild(b);
+            });
+        }
+
+        function wireControls() {
+            $('campSelect').onchange = function () {
+                DR.campId = this.value;
+                try { localStorage.setItem('magus_dice_camp', DR.campId); } catch (e) {}
+                resolveChars(); renderCharSelect();
+                subscribe(); loadFeed();
+                renderFeedTools();
+            };
+            $('charSelect').onchange = function () {
+                DR.charId = this.value || null;
+                try { localStorage.setItem('magus_dice_char_' + DR.campId, DR.charId || ''); } catch (e) {}
+            };
+            $('modMinus').onclick = function () { setMod(DR.modifier - 1); };
+            $('modPlus').onclick = function () { setMod(DR.modifier + 1); };
+            $('modInput').oninput = function () { var v = parseInt(this.value, 10); DR.modifier = isNaN(v) ? 0 : v; };
+            $('modInput').onblur = function () { setMod(DR.modifier); };
+            $('clearBtn').onclick = function () { DR.pool = {}; setMod(0); $('labelInput').value = ''; renderPool(); };
+            $('notationBtn').onclick = loadNotation;
+            $('notationInput').oninput = function () { this.classList.remove('bad'); };
+            $('notationInput').onkeydown = function (e) { if (e.key === 'Enter') { loadNotation(); } };
+            $('rollBtn').onclick = doRoll;
+            $('archiveClose').onclick = function () { $('archiveOverlay').classList.remove('open'); };
+            $('archiveOverlay').onclick = function (e) { if (e.target === this) this.classList.remove('open'); };
+        }
+
+        function setMod(v) { DR.modifier = v | 0; $('modInput').value = DR.modifier; }
+
+        function addToPool(s) { DR.pool[s] = (DR.pool[s] || 0) + 1; renderPool(); }
+        function decPool(s) { DR.pool[s] = (DR.pool[s] || 0) - 1; if (DR.pool[s] <= 0) delete DR.pool[s]; renderPool(); }
+
+        function poolArray() {
+            return MagusDice.SIDES.filter(function (s) { return DR.pool[s] > 0; })
+                .map(function (s) { return { sides: s, count: DR.pool[s] }; });
+        }
+
+        function renderPool() {
+            var el = $('pool'); var arr = poolArray();
+            if (!arr.length) { el.innerHTML = '<span class="empty">Koppints egy kockára a hozzáadáshoz.</span>'; return; }
+            el.innerHTML = arr.map(function (p) {
+                return '<span class="chip">' + p.count + '×d' + p.sides +
+                    ' <button type="button" data-s="' + p.sides + '" aria-label="egy d' + p.sides + ' elvétele">−</button></span>';
+            }).join('');
+            Array.prototype.forEach.call(el.querySelectorAll('button'), function (b) {
+                b.onclick = function () { decPool(parseInt(b.getAttribute('data-s'), 10)); };
+            });
+        }
+
+        function loadNotation() {
+            var inp = $('notationInput');
+            var parsed = MagusDice.parseNotation(inp.value);
+            if (!parsed) { inp.classList.add('bad'); return; }
+            DR.pool = {}; parsed.pool.forEach(function (p) { DR.pool[p.sides] = p.count; });
+            setMod(parsed.modifier);
+            inp.value = ''; inp.classList.remove('bad');
+            renderPool();
+        }
+
+        /* ---------- Adatbetöltés ---------- */
+        function loadData() {
+            var me = window._userId;
+            Promise.all([
+                sb().from('campaign_members').select('campaign_id').eq('user_id', me),
+                sb().from('campaigns').select('id, name'),
+                sb().from('campaign_items').select('campaign_id, item_type, item_id'),
+                sb().from('character_sheets').select('id, name').eq('user_id', me).eq('is_template', false)
+            ]).then(function (res) {
+                var memErr = res[0].error;
+                var memIds = new Set((res[0].data || []).map(function (m) { return m.campaign_id; }));
+                var items = res[2].data || [];
+                DR.allChars = res[3].data || [];
+                DR.campaigns = (res[1].data || []).filter(function (c) { return memIds.has(c.id); }).map(function (c) {
+                    return {
+                        id: c.id, name: c.name,
+                        charIds: new Set(items.filter(function (i) { return i.campaign_id === c.id && i.item_type === 'character'; }).map(function (i) { return i.item_id; }))
+                    };
+                });
+                if (!DR.campaigns.length) {
+                    showBanner(memErr
+                        ? '⚠️ Nem sikerült betölteni a kampányokat: ' + esc(memErr.message)
+                        : 'Nem vagy tagja egyetlen kampánynak sem. A kalandmester tud hozzáadni egy kampányhoz — utána tudsz ide dobni.');
+                    $('rollerCard').style.display = 'none'; $('feedCard').style.display = 'none';
+                    return;
+                }
+                var saved = null; try { saved = localStorage.getItem('magus_dice_camp'); } catch (e) {}
+                DR.campId = (saved && DR.campaigns.some(function (c) { return c.id === saved; })) ? saved : DR.campaigns[0].id;
+                renderCampSelect(); resolveChars(); renderCharSelect(); renderPool();
+                renderFeedTools(); subscribe(); loadFeed();
+                DR.loaded = true;
+            });
+        }
+
+        function curCamp() { return DR.campaigns.find(function (c) { return c.id === DR.campId; }); }
+
+        function resolveChars() {
+            var c = curCamp(); if (!c) { DR.chars = []; DR.charId = null; return; }
+            var linked = DR.allChars.filter(function (ch) { return c.charIds.has(ch.id); });
+            DR.chars = linked.length ? linked : DR.allChars.slice();
+            var saved = null; try { saved = localStorage.getItem('magus_dice_char_' + DR.campId); } catch (e) {}
+            DR.charId = (saved && DR.chars.some(function (ch) { return ch.id === saved; })) ? saved
+                : (DR.chars.length ? DR.chars[0].id : null);
+        }
+
+        function renderCampSelect() {
+            var s = $('campSelect');
+            s.innerHTML = DR.campaigns.map(function (c) { return '<option value="' + c.id + '">' + esc(c.name || 'Kampány') + '</option>'; }).join('');
+            s.value = DR.campId;
+            s.style.display = DR.campaigns.length > 1 ? '' : 'none';
+        }
+        function renderCharSelect() {
+            var s = $('charSelect');
+            var opts = DR.chars.map(function (ch) { return '<option value="' + ch.id + '">' + esc(ch.name || 'Névtelen') + '</option>'; });
+            if (!DR.chars.length) opts = ['<option value="">(nincs karakter)</option>'];
+            s.innerHTML = opts.join('');
+            if (DR.charId) s.value = DR.charId;
+        }
+
+        function curCharName() {
+            var ch = DR.chars.find(function (x) { return x.id === DR.charId; });
+            return ch ? (ch.name || 'Névtelen') : (window._userProfile && window._userProfile.display_name) || '—';
+        }
+
+        function showBanner(html) { var b = $('banner'); b.innerHTML = html; b.style.display = ''; }
+
+        /* ---------- Dobás ---------- */
+        function doRoll() {
+            var arr = poolArray();
+            if (!arr.length) { $('pool').animate([{ opacity: .3 }, { opacity: 1 }], 260); return; }
+            if (!DR.campId) return;
+            var res = MagusDice.rollPool(arr, DR.modifier);
+            var label = $('labelInput').value.trim();
+            var btn = $('rollBtn'); btn.disabled = true; btn.textContent = 'DOBÁS…';
+            sb().from('dice_rolls').insert({
+                campaign_id: DR.campId,
+                user_id: window._userId,
+                char_id: DR.charId,
+                char_name: curCharName(),
+                label: label || null,
+                notation: res.notation,
+                dice: res.dice,
+                modifier: res.modifier,
+                total: res.total
+            }).then(function (r) {
+                btn.disabled = false; btn.textContent = 'DOBÁS';
+                if (r.error) { showBanner('⚠️ A dobás mentése nem sikerült: ' + esc(r.error.message) + ' (futott már a dice_rolls.sql?)'); return; }
+                // a realtime esemény jeleníti meg mindenkinek (magunknak is)
+            });
+        }
+
+        /* ---------- Feed ---------- */
+        function loadFeed() {
+            var feed = $('feed'); feed.innerHTML = '<div class="feed-empty">Betöltés…</div>';
+            sb().from('dice_rolls').select('id, user_id, char_name, label, notation, dice, modifier, total, created_at')
+                .eq('campaign_id', DR.campId).is('archived_at', null)
+                .order('created_at', { ascending: false }).limit(60)
+                .then(function (r) {
+                    if (r.error) { feed.innerHTML = '<div class="feed-empty">⚠️ ' + esc(r.error.message) + '</div>'; return; }
+                    var rows = r.data || [];
+                    ensureProfiles(rows.map(function (x) { return x.user_id; })).then(function () {
+                        if (!rows.length) { feed.innerHTML = '<div class="feed-empty">Még nincs dobás ebben a menetben.</div>'; return; }
+                        feed.innerHTML = '';
+                        rows.forEach(function (row) { feed.appendChild(rollEl(row, false)); });
+                    });
+                });
+        }
+
+        function ensureProfiles(ids) {
+            var need = [...new Set(ids)].filter(function (id) { return id && !DR.profiles[id]; });
+            if (!need.length) return Promise.resolve();
+            return sb().from('user_avatars').select('id, display_name, avatar').in('id', need)
+                .then(function (r) {
+                    if (r.error || !r.data) return sb().from('user_profiles').select('id, display_name, avatar').in('id', need);
+                    return r;
+                }).then(function (r) {
+                    (r && r.data ? r.data : []).forEach(function (p) { DR.profiles[p.id] = { display_name: p.display_name, avatar: p.avatar }; });
+                }).catch(function () {});
+        }
+
+        function timeStr(iso) {
+            var d = new Date(iso); if (isNaN(d)) return '';
+            return d.toLocaleTimeString('hu-HU', { hour: '2-digit', minute: '2-digit' });
+        }
+
+        function rollEl(row, fresh) {
+            var prof = DR.profiles[row.user_id] || {};
+            var wrap = document.createElement('div'); wrap.className = 'roll'; wrap.dataset.id = row.id;
+            var dice = (row.dice || []).map(function (d) {
+                return MagusDice.dieSVG(d.sides, d.value, { size: 42, cls: fresh ? 'mdice-rolling' : '' });
+            }).join('');
+            var modTxt = row.modifier ? (row.modifier > 0 ? ' +' + row.modifier : ' −' + Math.abs(row.modifier)) : '';
+            wrap.innerHTML =
+                '<div class="who"><span class="ua"></span><span class="cn">' + esc(row.char_name || '') + '</span></div>' +
+                '<div class="body">' +
+                    '<div class="meta">' +
+                        '<span class="rlabel">' + esc(row.label || row.notation || '') + '</span>' +
+                        (row.label ? '<span class="rnote">' + esc(row.notation) + '</span>' : '') +
+                        '<span class="rtime">' + esc((prof.display_name || '') + ' · ' + timeStr(row.created_at)) + '</span>' +
+                    '</div>' +
+                    '<div class="diceline"><div class="dice">' + dice + '</div>' +
+                        '<span class="total">' + row.total + (modTxt ? '<small>' + esc(modTxt.trim()) + '</small>' : '') + '</span>' +
+                    '</div>' +
+                '</div>';
+            var av = wrap.querySelector('.ua');
+            if (window.MagusAvatar) MagusAvatar.render(av, { display_name: prof.display_name, avatar: prof.avatar }, { size: 34 });
+            return wrap;
+        }
+
+        function prependRoll(row) {
+            var feed = $('feed');
+            var empty = feed.querySelector('.feed-empty'); if (empty) feed.innerHTML = '';
+            if (feed.querySelector('[data-id="' + row.id + '"]')) return;
+            ensureProfiles([row.user_id]).then(function () {
+                var el = rollEl(row, true);
+                feed.insertBefore(el, feed.firstChild);
+            });
+        }
+
+        function subscribe() {
+            if (DR.channel) { try { sb().removeChannel(DR.channel); } catch (e) {} DR.channel = null; }
+            if (!DR.campId) return;
+            DR.channel = sb().channel('dice-' + DR.campId)
+                .on('postgres_changes', { event: 'INSERT', schema: 'public', table: 'dice_rolls', filter: 'campaign_id=eq.' + DR.campId }, function (payload) {
+                    var row = payload.new; if (row && !row.archived_at) prependRoll(row);
+                })
+                .on('postgres_changes', { event: 'UPDATE', schema: 'public', table: 'dice_rolls', filter: 'campaign_id=eq.' + DR.campId }, function (payload) {
+                    var row = payload.new;
+                    if (row && row.archived_at) {
+                        var el = $('feed').querySelector('[data-id="' + row.id + '"]'); if (el) el.remove();
+                        if (!$('feed').children.length || (!$('feed').querySelector('.roll'))) $('feed').innerHTML = '<div class="feed-empty">Még nincs dobás ebben a menetben.</div>';
+                    }
+                })
+                .subscribe();
+        }
+
+        /* ---------- Admin: menet lezárása + archívum ---------- */
+        function renderFeedTools() {
+            var t = $('feedTools'); t.innerHTML = '';
+            var arch = document.createElement('button'); arch.className = 'mini-btn';
+            arch.textContent = '🗄️ Korábbi menetek'; arch.onclick = openArchive;
+            t.appendChild(arch);
+            if (window._isAdmin) {
+                var end = document.createElement('button'); end.className = 'mini-btn';
+                end.style.borderColor = 'rgba(224,184,74,.4)'; end.style.color = 'var(--accent)';
+                end.textContent = '🎬 Játékmenet vége'; end.onclick = endSession;
+                t.appendChild(end);
+            }
+        }
+
+        function endSession() {
+            var def = new Date().toISOString().slice(0, 10);
+            var label = prompt('Játékmenet lezárása és archiválása.\nAdj egy nevet a mentett menetnek:', def);
+            if (label == null) return;
+            label = (label.trim() || def);
+            sb().from('dice_rolls').update({ archived_at: new Date().toISOString(), session_label: label })
+                .eq('campaign_id', DR.campId).is('archived_at', null)
+                .then(function (r) {
+                    if (r.error) { showBanner('⚠️ Archiválás nem sikerült: ' + esc(r.error.message)); return; }
+                    $('feed').innerHTML = '<div class="feed-empty">Menet lezárva. Új dobások új menetbe kerülnek.</div>';
+                });
+        }
+
+        function openArchive() {
+            var ov = $('archiveOverlay'); ov.classList.add('open');
+            var body = $('archiveBody'); body.innerHTML = '<div class="feed-empty">Betöltés…</div>';
+            sb().from('dice_rolls').select('id, user_id, char_name, label, notation, dice, modifier, total, created_at, session_label')
+                .eq('campaign_id', DR.campId).not('archived_at', 'is', null)
+                .order('created_at', { ascending: false }).limit(500)
+                .then(function (r) {
+                    if (r.error) { body.innerHTML = '<div class="feed-empty">⚠️ ' + esc(r.error.message) + '</div>'; return; }
+                    var rows = r.data || [];
+                    if (!rows.length) { body.innerHTML = '<div class="feed-empty">Még nincs archivált menet.</div>'; return; }
+                    var groups = {}; var order = [];
+                    rows.forEach(function (row) { var k = row.session_label || '—'; if (!groups[k]) { groups[k] = []; order.push(k); } groups[k].push(row); });
+                    ensureProfiles(rows.map(function (x) { return x.user_id; })).then(function () {
+                        body.innerHTML = '';
+                        order.forEach(function (k, i) {
+                            var d = document.createElement('details'); d.className = 'sess'; if (i === 0) d.open = true;
+                            d.innerHTML = '<summary><span>' + esc(k) + '</span><span class="cnt">' + groups[k].length + ' dobás</span></summary><div class="sbody"></div>';
+                            var sbody = d.querySelector('.sbody');
+                            groups[k].forEach(function (row) { sbody.appendChild(rollEl(row, false)); });
+                            body.appendChild(d);
+                        });
+                    });
+                });
+        }
+
+        /* ---------- start ---------- */
+        if (window._authReady) boot();
+        else window.addEventListener('magus-auth-ready', boot, { once: true });
+    })();
+    </script>
+</body>
+</html>
