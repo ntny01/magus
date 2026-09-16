@@ -554,7 +554,7 @@ const sb = supabase.createClient(
                 <input type="file" id="json-loader" accept=".json">
             </div>
             <button class="btn btn-accent" id="json-exporter">💾 Állapot Mentése</button>
-            <button class="btn" onclick="openDiceRoller()" title="Élő kockadobó a kampányhoz" style="border-color:rgba(224,184,74,.4);color:#e0b84a;">🎲 Kockadobó</button>
+            <button class="btn" onclick="openDiceRoller()" title="Élő kockadobó a kampányhoz" style="border-color:rgba(224,184,74,.4);color:#e0b84a;">🎲 Kalandkockák</button>
             </div><!-- /io-tools -->
         </div>
         <div class="user-chip" style="display:flex;align-items:center;justify-content:flex-end;gap:.6rem;margin-top:.5rem;">
@@ -2063,10 +2063,10 @@ const sb = supabase.createClient(
 <div id="dice-overlay" style="display:none;position:fixed;inset:0;z-index:3000;background:#0d0e13;">
     <div style="position:absolute;inset:0;display:flex;flex-direction:column;">
         <div style="display:flex;align-items:center;justify-content:space-between;gap:.5rem;padding:.5rem .8rem;background:#0d0e13;border-bottom:1px solid #2a2c38;flex:none;">
-            <span style="font-family:'Cinzel',serif;color:#e0b84a;font-weight:700;letter-spacing:.3px;">🎲 Kockadobó</span>
+            <span style="font-family:'Cinzel',serif;color:#e0b84a;font-weight:700;letter-spacing:.3px;">🎲 Kalandkockák</span>
             <button onclick="closeDiceRoller()" aria-label="Bezárás" style="background:none;border:1px solid #3a3d4d;color:#9498a8;border-radius:.5rem;width:34px;height:34px;font-size:1.1rem;cursor:pointer;">✕</button>
         </div>
-        <iframe id="dice-frame" title="Kockadobó" style="flex:1;width:100%;border:0;background:#0d0e13;"></iframe>
+        <iframe id="dice-frame" title="Kalandkockák" style="flex:1;width:100%;border:0;background:#0d0e13;"></iframe>
     </div>
 </div>
 <script>

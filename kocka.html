@@ -25,7 +25,7 @@
     </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kockadobó</title>
+    <title>Kalandkockák</title>
     <meta name="theme-color" content="#020617">
     <link rel="icon" href="assets/logo/compass-logo.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -224,7 +224,7 @@
 <body>
     <header>
         <a class="back-btn" href="index" title="Vissza a főoldalra" aria-label="Vissza a főoldalra">◀&#xFE0E;</a><script>if(window.self!==window.top){var e=document.currentScript.previousElementSibling;if(e)e.style.display='none';}</script>
-        <span class="brand"><span class="d">🎲</span> Kockadobó</span>
+        <span class="brand"><span class="d">🎲</span> Kalandkockák</span>
         <div class="h-spacer"></div>
         <select id="campSelect" class="sel" title="Kampány" aria-label="Kampány"></select>
         <select id="charSelect" class="sel" title="Karakter" aria-label="Karakter"></select>
@@ -247,6 +247,8 @@
                     <input id="modInput" type="text" inputmode="numeric" value="0" aria-label="Módosító">
                     <button type="button" id="modPlus" aria-label="Módosító növelése">+</button>
                 </div>
+                <label title="Sikerküszöb: a kockát pirosra színezi alatta, zöldre tőle felfelé">Cél</label>
+                <input id="targetInput" class="txt" type="text" inputmode="numeric" placeholder="—" style="flex:0 0 62px;text-align:center" aria-label="Célszám (sikerküszöb)">
                 <button type="button" class="mini-btn" id="clearBtn">Ürítés</button>
             </div>
 
@@ -344,7 +346,8 @@
             $('modPlus').onclick = function () { setMod(DR.modifier + 1); };
             $('modInput').oninput = function () { var v = parseInt(this.value, 10); DR.modifier = isNaN(v) ? 0 : v; };
             $('modInput').onblur = function () { setMod(DR.modifier); };
-            $('clearBtn').onclick = function () { DR.pool = {}; setMod(0); $('labelInput').value = ''; renderPool(); };
+            $('clearBtn').onclick = function () { DR.pool = {}; setMod(0); $('labelInput').value = ''; $('targetInput').value = ''; renderPool(); };
+            $('targetInput').oninput = function () { this.value = this.value.replace(/[^\d]/g, ''); };
             $('notationBtn').onclick = loadNotation;
             $('notationInput').oninput = function () { this.classList.remove('bad'); };
             $('notationInput').onkeydown = function (e) { if (e.key === 'Enter') { loadNotation(); } };
@@ -463,6 +466,13 @@
             if (!DR.campId) return;
             var res = MagusDice.rollPool(arr, DR.modifier);
             var label = $('labelInput').value.trim();
+            var traw = $('targetInput').value.trim();
+            var target = traw === '' ? null : parseInt(traw, 10);
+            if (target != null && isNaN(target)) target = null;
+            // Célszám esetén kockánként find/miss (a nyers dobott érték a célszámhoz mérve)
+            var diceOut = (target == null) ? res.dice : res.dice.map(function (d) {
+                return { sides: d.sides, value: d.value, hit: d.value >= target };
+            });
             var btn = $('rollBtn'); btn.disabled = true; btn.textContent = 'DOBÁS…';
             sb().from('dice_rolls').insert({
                 campaign_id: DR.campId,
@@ -470,8 +480,8 @@
                 char_id: DR.charId,
                 char_name: curCharName(),
                 label: label || null,
-                notation: res.notation,
-                dice: res.dice,
+                notation: res.notation + (target != null ? '  •  cél ' + target : ''),
+                dice: diceOut,
                 modifier: res.modifier,
                 total: res.total
             }).then(function (r) {
@@ -518,10 +528,15 @@
         function rollEl(row, fresh) {
             var prof = DR.profiles[row.user_id] || {};
             var wrap = document.createElement('div'); wrap.className = 'roll'; wrap.dataset.id = row.id;
+            var GREEN = '#4ade80', RED = '#f87171';
             var dice = (row.dice || []).map(function (d) {
-                return MagusDice.dieSVG(d.sides, d.value, { size: 42, cls: fresh ? 'mdice-rolling' : '' });
+                var acc = d.hit === true ? GREEN : d.hit === false ? RED : undefined;
+                return MagusDice.dieSVG(d.sides, d.value, { size: 42, cls: fresh ? 'mdice-rolling' : '', accent: acc });
             }).join('');
+            var hasTarget = (row.dice || []).some(function (d) { return typeof d.hit === 'boolean'; });
+            var hits = (row.dice || []).filter(function (d) { return d.hit === true; }).length;
             var modTxt = row.modifier ? (row.modifier > 0 ? ' +' + row.modifier : ' −' + Math.abs(row.modifier)) : '';
+            var smallTxt = hasTarget ? (hits + '/' + (row.dice || []).length + ' siker' + modTxt) : modTxt.trim();
             wrap.innerHTML =
                 '<div class="who"><span class="ua"></span><span class="cn">' + esc(row.char_name || '') + '</span></div>' +
                 '<div class="body">' +
@@ -531,7 +546,7 @@
                         '<span class="rtime">' + esc((prof.display_name || '') + ' · ' + timeStr(row.created_at)) + '</span>' +
                     '</div>' +
                     '<div class="diceline"><div class="dice">' + dice + '</div>' +
-                        '<span class="total">' + row.total + (modTxt ? '<small>' + esc(modTxt.trim()) + '</small>' : '') + '</span>' +
+                        '<span class="total">' + row.total + (smallTxt ? '<small>' + esc(smallTxt) + '</small>' : '') + '</span>' +
                     '</div>' +
                 '</div>';
             var av = wrap.querySelector('.ua');
