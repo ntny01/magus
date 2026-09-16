@@ -82,6 +82,10 @@
             padding: .4rem .6rem; font-size: .85rem; font-family: inherit; max-width: 46vw;
         }
         .sel:focus { outline: none; border-color: var(--accent); }
+        /* Inline (iframe) mód a Karakter Segéden: rejtett márkajel, tömörebb */
+        body.embed header .brand, body.embed .back-btn, body.embed .user-chip { display: none !important; }
+        body.embed header { padding: .5rem .7rem; }
+        body.embed main { padding: .75rem; }
         .user-chip { display: flex; align-items: center; gap: .45rem; }
         .user-chip .ua { width: 30px; height: 30px; border-radius: 50%; overflow: hidden; flex: none; }
         .user-chip .un { font-size: .8rem; color: var(--muted); max-width: 120px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
@@ -219,12 +223,12 @@
 </head>
 <body>
     <header>
-        <a class="back-btn" href="index" title="Vissza a főoldalra">◀ Vissza</a>
+        <a class="back-btn" href="index" title="Vissza a főoldalra" aria-label="Vissza a főoldalra">◀&#xFE0E;</a><script>if(window.self!==window.top){var e=document.currentScript.previousElementSibling;if(e)e.style.display='none';}</script>
         <span class="brand"><span class="d">🎲</span> Kockadobó</span>
         <div class="h-spacer"></div>
         <select id="campSelect" class="sel" title="Kampány" aria-label="Kampány"></select>
         <select id="charSelect" class="sel" title="Karakter" aria-label="Karakter"></select>
-        <div class="user-chip"><span class="ua" id="userAv"></span><span class="un" id="userName"></span></div>
+        <div class="user-chip"><span class="ua" id="userAv"></span><span class="un" id="userName"></span><button class="mg-btn mg-btn--danger" onclick="doLogout()">Kilépés</button></div>
     </header>
 
     <main id="main">
@@ -287,7 +291,18 @@
         function esc(s) { return String(s == null ? '' : s).replace(/[&<>"']/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]; }); }
         function sb() { return window._sb; }
 
+        var PARAMS = new URLSearchParams(location.search);
+        var EMBED = PARAMS.get('embed') === '1' || window.self !== window.top;
+        var WANT_CAMP = PARAMS.get('campaign') || null;   // előre kiválasztandó kampány
+        var WANT_CHAR = PARAMS.get('char') || null;       // előre kiválasztandó karakter (kampányát behúzza)
+
+        window.doLogout = function () {
+            try { sb().auth.signOut(); } catch (e) {}
+            window.location.href = 'login';
+        };
+
         function boot() {
+            if (EMBED) document.body.classList.add('embed');
             if (window.MagusDice) MagusDice.ensureStyles();
             renderUserChip();
             renderTray();
@@ -396,8 +411,12 @@
                     $('rollerCard').style.display = 'none'; $('feedCard').style.display = 'none';
                     return;
                 }
+                var byChar = WANT_CHAR ? DR.campaigns.find(function (c) { return c.charIds.has(WANT_CHAR); }) : null;
                 var saved = null; try { saved = localStorage.getItem('magus_dice_camp'); } catch (e) {}
-                DR.campId = (saved && DR.campaigns.some(function (c) { return c.id === saved; })) ? saved : DR.campaigns[0].id;
+                DR.campId = byChar ? byChar.id
+                    : (WANT_CAMP && DR.campaigns.some(function (c) { return c.id === WANT_CAMP; })) ? WANT_CAMP
+                    : (saved && DR.campaigns.some(function (c) { return c.id === saved; })) ? saved
+                    : DR.campaigns[0].id;
                 renderCampSelect(); resolveChars(); renderCharSelect(); renderPool();
                 renderFeedTools(); subscribe(); loadFeed();
                 DR.loaded = true;
@@ -411,7 +430,8 @@
             var linked = DR.allChars.filter(function (ch) { return c.charIds.has(ch.id); });
             DR.chars = linked.length ? linked : DR.allChars.slice();
             var saved = null; try { saved = localStorage.getItem('magus_dice_char_' + DR.campId); } catch (e) {}
-            DR.charId = (saved && DR.chars.some(function (ch) { return ch.id === saved; })) ? saved
+            DR.charId = (WANT_CHAR && DR.chars.some(function (ch) { return ch.id === WANT_CHAR; })) ? WANT_CHAR
+                : (saved && DR.chars.some(function (ch) { return ch.id === saved; })) ? saved
                 : (DR.chars.length ? DR.chars[0].id : null);
         }
 
