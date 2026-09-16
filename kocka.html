@@ -469,9 +469,14 @@
             var traw = $('targetInput').value.trim();
             var target = traw === '' ? null : parseInt(traw, 10);
             if (target != null && isNaN(target)) target = null;
-            // Célszám esetén kockánként find/miss (a nyers dobott érték a célszámhoz mérve)
+            // Célszám esetén kockánként jelölés a nyers dobott érték alapján:
+            //   fail = 1 (legrosszabb), crit = max lap (és siker), hit = célon/felette, miss = alatta
             var diceOut = (target == null) ? res.dice : res.dice.map(function (d) {
-                return { sides: d.sides, value: d.value, hit: d.value >= target };
+                var isFail = d.value === 1;
+                var isHit = d.value >= target;
+                var isCrit = isHit && d.value === d.sides;
+                var mark = isFail ? 'fail' : isCrit ? 'crit' : isHit ? 'hit' : 'miss';
+                return { sides: d.sides, value: d.value, mark: mark };
             });
             var btn = $('rollBtn'); btn.disabled = true; btn.textContent = 'DOBÁS…';
             sb().from('dice_rolls').insert({
@@ -528,13 +533,16 @@
         function rollEl(row, fresh) {
             var prof = DR.profiles[row.user_id] || {};
             var wrap = document.createElement('div'); wrap.className = 'roll'; wrap.dataset.id = row.id;
-            var GREEN = '#4ade80', RED = '#f87171';
-            var dice = (row.dice || []).map(function (d) {
-                var acc = d.hit === true ? GREEN : d.hit === false ? RED : undefined;
+            var MARKC = { hit: '#4ade80', miss: '#f87171', crit: '#fcd34d', fail: '#0b0b0f' };
+            var marks = (row.dice || []).map(function (d) {
+                return d.mark || (typeof d.hit === 'boolean' ? (d.hit ? 'hit' : 'miss') : null);
+            });
+            var dice = (row.dice || []).map(function (d, i) {
+                var acc = marks[i] ? MARKC[marks[i]] : undefined;
                 return MagusDice.dieSVG(d.sides, d.value, { size: 42, cls: fresh ? 'mdice-rolling' : '', accent: acc });
             }).join('');
-            var hasTarget = (row.dice || []).some(function (d) { return typeof d.hit === 'boolean'; });
-            var hits = (row.dice || []).filter(function (d) { return d.hit === true; }).length;
+            var hasTarget = marks.some(function (m) { return !!m; });
+            var hits = marks.filter(function (m) { return m === 'hit' || m === 'crit'; }).length;
             var modTxt = row.modifier ? (row.modifier > 0 ? ' +' + row.modifier : ' −' + Math.abs(row.modifier)) : '';
             var smallTxt = hasTarget ? (hits + '/' + (row.dice || []).length + ' siker' + modTxt) : modTxt.trim();
             wrap.innerHTML =
