@@ -19517,14 +19517,13 @@
                             "title": "5. fok",
                             "headers": [],
                             "rows": []
-                        },
-                        {
-                            "type": "paragraph",
-                            "text": "Udvari etikett/intrika (II – Intelligencia, Asztrál, Karizma)",
-                            "title": "",
-                            "headers": [],
-                            "rows": []
-                        },
+                        }
+                    ]
+                },
+                {
+                    "id": "sec_udvari",
+                    "title": "Udvari etikett/intrika (II – Intelligencia, Asztrál, Karizma)",
+                    "content_blocks": [
                         {
                             "type": "paragraph",
                             "text": "A karakter az udvarok, klánok, rendek szertartásrendjébe, belső elrendeződésébe, erővonalaiba láthat bele a képzettség segítségével, magasabb szinten pedig átrendezheti őket. Tetszése szerint taposhat el, vagy emelhet fel bárkit az adott közösségen belül.",
@@ -19566,20 +19565,16 @@
                             "title": "5. fok",
                             "headers": [],
                             "rows": []
-                        },
+                        }
+                    ]
+                },
+                {
+                    "id": "sec_alcazas",
+                    "title": "Álcázás/álruha (II – Érzékelés, Ügyesség)",
+                    "content_blocks": [
                         {
-                            "type": "paragraph",
-                            "text": "Alvilági képzettségek",
-                            "title": "",
-                            "headers": [],
-                            "rows": []
-                        },
-                        {
-                            "type": "paragraph",
-                            "text": "Álcázás/álruha (II – Érzékelés, Ügyesség)",
-                            "title": "",
-                            "headers": [],
-                            "rows": []
+                            "type": "heading",
+                            "text": "Alvilági képzettségek"
                         },
                         {
                             "type": "paragraph",
@@ -19622,13 +19617,7 @@
                             "title": "3. fok",
                             "headers": [],
                             "rows": []
-                        }
-                    ]
-                },
-                {
-                    "id": "sec_99",
-                    "title": "Hamisítás (III – Ügyesség, Intelligencia)",
-                    "content_blocks": [
+                        },
                         {
                             "type": "paragraph",
                             "text": "4. fok A Mesteri művelője e „szakmának” már bármilyen körbe bejuthat öltözékei segítségével, ha bír a KM által meghatározott Udvari etikett vagy Kultúra képzettség szükséges fokával. Maszkjai akár nyolc órán át használhatóak maradnak. A sajátjától maximálisan 30%-kal eltérő testméretek utánzására képes.",
@@ -19670,7 +19659,13 @@
                             "title": "Rendszerszabály",
                             "headers": [],
                             "rows": []
-                        },
+                        }
+                    ]
+                },
+                {
+                    "id": "sec_99",
+                    "title": "Hamisítás (III – Ügyesség, Intelligencia)",
+                    "content_blocks": [
                         {
                             "type": "paragraph",
                             "text": "A képzettség különböző iratok, értékek hamisítására, az eredetihez megszólalásig hasonló másolatának elkészítésére szolgál.",
@@ -19733,13 +19728,7 @@
                             "title": "Rendszerszabály",
                             "headers": [],
                             "rows": []
-                        }
-                    ]
-                },
-                {
-                    "id": "sec_100",
-                    "title": "Jelbeszéd (II – Érzékelés)",
-                    "content_blocks": [
+                        },
                         {
                             "type": "paragraph",
                             "text": "4. fok Ezen a szinten a karakter már komolyabb ékszereket vagy iratokat hamisít, csak igazi, szakavatott mesterek kezdenek el gyanakodni munkája láttán.",
@@ -19767,7 +19756,13 @@
                             "title": "Rendszerszabály",
                             "headers": [],
                             "rows": []
-                        },
+                        }
+                    ]
+                },
+                {
+                    "id": "sec_100",
+                    "title": "Jelbeszéd (II – Érzékelés)",
+                    "content_blocks": [
                         {
                             "type": "paragraph",
                             "text": "A jelekkel folytatott kommunikáció tudománya, a fejvadászrendek és tolvajklánok sajátos belső nyelve, de kalandozóknak is jól jöhet.",
@@ -19816,14 +19811,13 @@
                             "title": "",
                             "headers": [],
                             "rows": []
-                        },
-                        {
-                            "type": "paragraph",
-                            "text": "Kocsmai verekedés (I – Erő, Gyorsaság, Ügyesség)",
-                            "title": "",
-                            "headers": [],
-                            "rows": []
-                        },
+                        }
+                    ]
+                },
+                {
+                    "id": "sec_kocsmai",
+                    "title": "Kocsmai verekedés (I – Erő, Gyorsaság, Ügyesség)",
+                    "content_blocks": [
                         {
                             "type": "paragraph",
                             "text": "Ezen képzettséggel felvértezve bármilyen rögtönzött fegyverrel képes a karakter helytállni, amit egy ivó vagy egy fogadó söntése nyújthat, például szék, asztal, söröskupa, kancsó, esetleg étkőfogóvilla. A magasabb szintjein már igen komoly harci tapasztalatot birtokol a karakter.",
@@ -19872,14 +19866,13 @@
                             "title": "Rendszerszabály",
                             "headers": [],
                             "rows": []
-                        },
-                        {
-                            "type": "paragraph",
-                            "text": "Méregkeverés/semlegesítés (II – Intelligencia)",
-                            "title": "",
-                            "headers": [],
-                            "rows": []
-                        },
+                        }
+                    ]
+                },
+                {
+                    "id": "sec_101",
+                    "title": "Méregkeverés/semlegesítés (II – Intelligencia)",
+                    "content_blocks": [
                         {
                             "type": "paragraph",
                             "text": "A képzettség birtokosa képes mérgek, afiumok és ajzó-szerek keverésére. Ha úgy hozza a szükség, a méreg típusának és jellemzőinek meghatározása után képes ellenszert készíteni, ha az adott képességekkel bíró mérget maga is ki tudná keverni. Azonban a méreg képességeinek kiderítéséhez vagy magát használná a karakternek, vagy sikeres Intelligenciapróbát kell dobnia a leírásban szereplő módosítókkal.",
@@ -19975,13 +19968,7 @@
                             "title": "",
                             "headers": [],
                             "rows": []
-                        }
-                    ]
-                },
-                {
-                    "id": "sec_101",
-                    "title": "Méregkeverés",
-                    "content_blocks": [
+                        },
                         {
                             "type": "table",
                             "headers": [
@@ -20034,9 +20021,67 @@
                     ]
                 },
                 {
-                    "id": "sec_102",
-                    "title": "Szabadulóművészet (III – Ügyesség)",
+                    "id": "sec_orvtamadas",
+                    "title": "Orvtámadás (II – Ügyesség)",
                     "content_blocks": [
+                        {
+                            "type": "paragraph",
+                            "text": "A karakter képes meglepetésből gyilkos döféseket, pusztító vágásokat vagy halálos lövéseket végrehajtani."
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "A képzettség nem alkalmazható együtt a Pusztítás képzettséggel."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "Orvtámadás 1. fok",
+                            "text": "1. fok A kezdő orvtámadó meglepetésszerű támadás esetén +1 Sp sebzést adhat a sebzéséhez."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "Orvtámadás 2. fok",
+                            "text": "2. fok A gyakorlott orvgyilkos meglepetésszerű támadás esetén +1k3 Sp sebzést adhat a sebzéséhez."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "Orvtámadás 3. fok",
+                            "text": "3. fok A karakter hivatásos gyilkos, meglepetésszerű támadás esetén +1k6 Sp-t adhat a sebzéséhez."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "Orvtámadás 4. fok",
+                            "text": "4. fok A karakter mestere a meglepetésszerű támadásokból bevitt iszonyató sebek okozásának, sikeres támadás esetén +2k6 Sp-t adhat a sebzéséhez."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "Orvtámadás 5. fok",
+                            "text": "5. fok A legendás orvgyilkos, már fogalom a szakmában, meglepetésszerű támadás esetén +3k6 Sp-t adhat a sebzéséhez."
+                        }
+                    ]
+                },
+                {
+                    "id": "sec_kinzas",
+                    "title": "Kínzás (II – Ügyesség, Intelligencia)",
+                    "content_blocks": [
+                        {
+                            "type": "paragraph",
+                            "text": "A kínzás és vallatás művészete, a minél fájdalmasabb sebek okozásának és a lelki gyötrelmek keltésének tudománya, melyet leginkább a sötét birodalmak hóhérai, vallatói, fejvadászai, valamint boszorkány- és boszorkánymesteri rendek képviselői tanulmányoznak."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "Kínzás 1. fok",
+                            "text": "1. fok Vallatás esetén az áldozat óránként köteles Akaraterő próbát tenni a vallató Tulajdonságpróbája ellenében, hogy megtörik-e a vallatás kínjai közepette. A vallatott próbáját -1 módosítóval teszi."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "Kínzás 2. fok",
+                            "text": "2. fok Vallatás esetén az áldozat félóránként köteles Akaraterő próbát tenni a vallató Tulajdonságpróbája ellenében, hogy megtörik-e a vallatás kínjai közepette. A kínokozó próbáját módosítók nélkül dobja."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "Kínzás 3. fok",
+                            "text": "3. fok Vallatás esetén az áldozat negyedóránként köteles Akaraterő próbát tenni a vallató Tulajdonságpróbája ellenében, hogy megtörik-e. A vallató próbáját +1 módosítóval teszi."
+                        },
                         {
                             "type": "paragraph",
                             "text": "A már szinte művészetként hivatását gyakorló kínzómester áldozata 10 percenként köteles dobni, a vallató karakter +2 módosítóval dobhatja próbáját."
@@ -20044,7 +20089,13 @@
                         {
                             "type": "paragraph",
                             "text": "A legendás hírű mester áldozatának öt percenként kell Akaraterő próbát dobnia, amely ellenében a vallató +3 módosítóval mérhet el dobni. A képzettség ilyen szintű alkalmazója már inkább a lelki kínzásban, áldozata személyiségének és akarerejének teljes megtörésében látja a megszerzni kívánt információhoz vezető utat, semmint a fizikai test fájdalmas szétrombolásában."
-                        },
+                        }
+                    ]
+                },
+                {
+                    "id": "sec_102",
+                    "title": "Szabadulóművészet (III – Ügyesség)",
+                    "content_blocks": [
                         {
                             "type": "paragraph",
                             "text": "A karakter szorongatott helyzetekből, csapdákból, kötelékekből, leláncolva, vagy lelakatolt szerkezetekből juthat ki ily módon. A szabaduláshoz sikeres próbát kell dobnia a leírásban szereplő módosítókkal, a csapdát vagy a köteléket megalkotó vonatkozó próbája ellenében."
@@ -20068,7 +20119,13 @@
                         {
                             "type": "paragraph",
                             "text": "A karakter igazi nagy művész, már bármilyen kötelékből, bilincsből képes kijutni, ahonnét mágia alkalmazása nélkül is lehetséges, szükséges próbáját +3 módosítóval dobhatja."
-                        },
+                        }
+                    ]
+                },
+                {
+                    "id": "sec_szerencsejatek",
+                    "title": "Szerencsejáték (II – Ügyesség, Intelligencia)",
+                    "content_blocks": [
                         {
                             "type": "paragraph",
                             "text": "A szerencse forgandó, de néha segíthetünk neki egy kicsit... A legtöbb szerencsejáték hideg fejjel, vagy a partner alapos megfigyelésével sikeresebbé tehető a számunkra. Ha a játékos csalni is szeretne, hát lelke rajta, de ekkor egy átvert ellenfél haragjával is számolnia kell."
@@ -20092,11 +20149,23 @@
                         {
                             "type": "paragraph",
                             "text": "A karakter szinte mágikus képességekkel bír egy általa választott játéktípusban, ebben próbadobásához +4, a többi általa ismert játékban +3 módosító járul. Valószínűleg már kidolgozott egy-két játékot maga is."
-                        },
+                        }
+                    ]
+                },
+                {
+                    "id": "sec_csapdakeres",
+                    "title": "Csapdakeresés (I – Érzékelés)",
+                    "content_blocks": [
                         {
                             "type": "paragraph",
                             "text": "A csapdák felkutatásának képessége %-ban mérve. A képzettség 30%-os ismerete még zsenge kezdett jelent, az igazi kalandorok és tolvajok képessége 50% felett mozog."
-                        },
+                        }
+                    ]
+                },
+                {
+                    "id": "sec_lopodzas",
+                    "title": "Lopódzás (Ügyesség, Érzékelés)",
+                    "content_blocks": [
                         {
                             "type": "paragraph",
                             "text": "A karakter lopakodási képessége %-ban mérve. Az éjszakai légyottokról hazasettenkedő ifjú feleségek képességei 30% körül mozognak, míg egy képzett fejvadász vagy tolvaj 50-60%-kal bír."
@@ -20133,15 +20202,33 @@
                                     "-20%"
                                 ]
                             ]
-                        },
+                        }
+                    ]
+                },
+                {
+                    "id": "sec_rejtozes",
+                    "title": "Rejtőzés (Ügyesség, Érzékelés)",
+                    "content_blocks": [
                         {
                             "type": "paragraph",
                             "text": "A karakter rejtőzködőképzettsége %-ban mérve. Egy vadorzó, aki rendszeresen a cserjésben keres menedéket a herceg emberei elől birtokolja a képzettséget 30% körül, míg egy képzett tolvaj vagy orgyilkos már akár 60%-kal rendelkezik. A módosítók a KM döntésétől függően változhatnak."
-                        },
+                        }
+                    ]
+                },
+                {
+                    "id": "sec_rejtekhely",
+                    "title": "Rejtekhelykutatás (Érzékelés)",
+                    "content_blocks": [
                         {
                             "type": "paragraph",
                             "text": "A karakter titkosajtó és egyéb rejtekhelykutató képessége %-ban mérve. A perlekedő, házsártos feleség, ki ura eldugott pálinkáját rendszeresen felkutatja 20%-kal bír, míg egy képzett besurranó már 60%-ot is birtokolhat."
-                        },
+                        }
+                    ]
+                },
+                {
+                    "id": "sec_zarnyitas",
+                    "title": "Zárnyitás (Ügyesség, Érzékelés)",
+                    "content_blocks": [
                         {
                             "type": "paragraph",
                             "text": "A karakter zárnyitó tudománya %-ban kifejezve. A képzettség már magában foglalja a képzettséghez szükséges minimális és célirányos mechanika tudományát. A betörő tolvajok bírnak 20-30%-kal e képzettségből, hivatásos kasszafúró társaik majd 60-80%-kal bír, itt már a KM megkövetelheti a Mechanika képzettség elsajátítását is."
@@ -20149,6 +20236,135 @@
                         {
                             "type": "paragraph",
                             "text": "A karakter csakis a szükséges segédeszközök birtokában képes alkalmazni a képzettséget. A jobb vagy gyengébb minőségű eszközök a KM által megítélt negatív vagy pozitív módosítókkal befolyásolhatják a próbadobást."
+                        }
+                    ]
+                },
+                {
+                    "id": "sec_zsebmetszes",
+                    "title": "Zsebmetszés (Ügyesség, Érzékelés)",
+                    "content_blocks": [
+                        {
+                            "type": "paragraph",
+                            "text": "A karakter zsebmetsző, apróbb tárgyakat kézzel manipuláló képzettsége %-ban mérve. A kezdő piaci tolvajok rendelkeznek 20-30%-kal e képzettségből, hivatásos társaik majd 60%-kal."
+                        }
+                    ]
+                },
+                {
+                    "id": "sec_veszelyerzek",
+                    "title": "Veszélyérzék (Ügyesség, Érzékelés)",
+                    "content_blocks": [
+                        {
+                            "type": "paragraph",
+                            "text": "A karakter összeszedett figyelmét, képzett megfigyelőkészségét mérő képzettség, tolvajok, fejvadászok, testőrök sajátja. A kezdők 20, hivatásos, alaposan megfizetett társaik majd 60-70%-kal rendelkeznek."
+                        }
+                    ]
+                },
+                {
+                    "id": "sec_alkimia",
+                    "title": "Alkímia (III – Intelligencia)",
+                    "content_blocks": [
+                        {
+                            "type": "heading",
+                            "text": "Tudományos képzettségek"
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "Az alkímia célja a Prima Matéria, azaz a Bölcsek Kövének előállítása, a Dicsőséges Transzmutáció. No persze mágiával mindez jóval könnyebb, de az alkímia nem csak egy tudomány, hanem világnézet is, és ha szükséges hasznos segítőtárs az avatott elme kezében."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "Alkímia 1. fok",
+                            "text": "1. fok A kezdő alkimista gyenge savakat (Sebzés: 0) kellemetlen anyagokat ismer és képes előállítani."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "Alkímia 2. fok",
+                            "text": "2. fok A gyakorlottabb tudós fő már közepesen erős savakat (1 pohárnyi anyag 1k3 sebzés okoz 1 körig) illetve gyengébb serkentőket, oldószereket és konzerváló hatású anyagokat képes előállítani. Kezdi átlátni az anyagok szerkezetét."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "Alkímia 3. fok",
+                            "text": "3. fok A hivatásos alkimista már ismeri az erős savakat (1k6Sp sebzés okoz 1 pohárnyi anyag 1k6 körig, körönként), képes narkotikumokat és bájitalokat főzni, illetve akár világító oldatokat is, melyek kísérteties zöldes, kékes fénnyel izzanak akár fertályórán át. Vagy bármiféle kártékony vagy hasznos szert, melyet a KM engedélyez. A képzettség ezen szintje szükségeltetik a Természeti anyagi mágia tanulmányozásának megkezdéséhez, az 1. anyagcsoportba tartozó anyagok teremtéséhez, formázásához és átváltoztatásához."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "Alkímia 4. fok",
+                            "text": "4. fok A híres alkimista harci narkotikumokat gyárthat, melyek képességnövelése nem haladhatja meg a harc kábultan helyzet módosítóit, természetesen pozitív irányba értelmezve (KÉ: +10, TÉ: +20, VÉ: +10) és tíz-húsz percnél tovább nem hatnak. Természeti anyagi mágia szempontjából fontos, hogy a karakter immáron képes a 2. anyagcsoportba tartozó anyagok teremtésére, átváltoztatására és formázására is."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "Alkímia 5. fok",
+                            "text": "5. fok A legendás alkimista, tudós már mágia alkalmazása nélkül is képes a Természeti anyagi mágia első két csoportjába tartozó anyagokat mágiába átalakítani korlátozások nélkül, ha van elég ideje és elég nagy laboratóriuma. Természeti anyagi mágia szempontjából fontos, hogy a karakter immáron képes a 3. anyagcsoportba tartozó anyagok teremtésére, átváltoztatására és formázására is."
+                        }
+                    ]
+                },
+                {
+                    "id": "sec_elettan",
+                    "title": "Élettan (III – Intelligencia)",
+                    "content_blocks": [
+                        {
+                            "type": "paragraph",
+                            "text": "Az alacsonyabb szinteken még csak a humanoidok anatómiája, később a szervezet működése kerül ismertetésre ezen képzettségen belül. Lénycsoportonként kell felvenni a képzettséget: pl. humanoidok, emlősök, gyíklények stb..."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "Élettan 1. fok",
+                            "text": "1. fok A kezdő anatómus még csak sejti a belső szervek és izmok elhelyezkedését, a csontok pontos alakját."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "Élettan 2. fok",
+                            "text": "2. fok A karakter már képzett anatómusnak mondható az adott lénycsoporton belül."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "Élettan 3. fok",
+                            "text": "3. fok A képzettség ezen fokának birtokosa hivatásos boncnok, bepillantást nyer az életfolyamatok működésébe. A karakter, ha a Nekromancia tudományával akar foglalkozni, akkor a képzettség ezen foka elengedhetetlen a számára."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "Élettan 4. fok",
+                            "text": "4. fok A tudós mester tisztában van a szervek működésével, a testnedvek szerepével. Ha a karakter bír a megfelelő varázserővel, akkor megértve az élőlények felépítésének módozatait, akár egyszerűbb homonkuluszok megalkotására is képes."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "Élettan 5. fok",
+                            "text": "5. fok A legendás tudós akár már mágia nélkül is képes élő szervezeteket alkotni, de ezek csak alig egy-két órát létezhetnek, s nem lehetnek nagyobbak egy kutyánál, mert hiányzik belőlük az élet princípiuma. A Varázstudó (anyagi mágus, nekromanta) karakterek igazi lényeket alkothatnak, mely egy újszülött elméjével születnek és magatehetetlenek, igazi lélekkel nem bírnak, mégis néhány esztendeig életképesek. Puszta létezésük is sok egyház és a Pyarroni Varázsló Tanács ellenszenvét váltja ki. A képzettség ezen szintű birtokosának, ha kiderül, hogy efféle lényt alkotott, valószínűleg hamarosan menekülnie kell... Épp ezért nem köztudott, hogy egyeseknek már sikerült értelemmel bíró, hosszabb életű lényt alkotni, mely szaporodni ugyan nem képes, mégis tökéletes teremtmény. Egyesek Észak tudósfői közül efféle eseményeket gyanítanak az udvari orkok megjelenése mögött is."
+                        }
+                    ]
+                },
+                {
+                    "id": "sec_epiteszet",
+                    "title": "Építészet (III – Intelligencia)",
+                    "content_blocks": [
+                        {
+                            "type": "paragraph",
+                            "text": "Az építészet épületek, nagyobb méretű alakzatok emelését jelenti kőből, fémből, vagy fából. A képzettség komoly statikai és némi építészettörténeti ismeretet is takar, ami Történelem, vagy Legendaismeret képzettséggel párosulva komoly tudást adhat a karakter kezébe."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "Építészet 1. fok",
+                            "text": "1. fok A kezdő építész gyakorlati tudása egy kezdő kőműves, művészettörténeti ismeretei a saját korára és kultúrkörére terjednek ki."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "Építészet 2. fok",
+                            "text": "2. fok A gyakorlott segéd tapasztalati tudása már egy egyszerű iparosé, ácsé, kőművesé. Ellenben egy épületről már nagyjából komolyabb véleményt alkot: mely kultúra emelte és körülbelül mely században."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "Építészet 3. fok",
+                            "text": "3. fok Az építész, kisebb épületeket tervez és nagyobb építkezéseket is levezethet már kész tervek alapján. Képzettsége miatt Rejtekhelykutatás Képzettsége 10%-kal hatékonyabb."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "Építészet 4. fok",
+                            "text": "4. fok A híres építőművész már minden humán kultúra építészetét ismeri a Hetedkorból, s nagyobb alakjairól is tud ezt-azt. Komolyabb épületek, kastélyok, várak, nagyobb hidak megtervezését is vállalhatja kockázat nélkül. Képzettsége miatt a Rejtekhelykutatás képzettségre +20%-ot kap."
+                        },
+                        {
+                            "type": "rule",
+                            "text": "5. fok A legendás építész már művészi fokra fejlesztette az építészetet. Katedrálisokat, uralkodói palotákat emel, új stílusokat talál ki, új technikákat eszel ki és alkalmaz. Képzettsége folytán +30%-ot kap a Rejtekhelykutatás képzettségére.",
+                            "title": "Építészet 5. fok"
                         }
                     ]
                 },
@@ -20402,24 +20618,6 @@
                             "type": "rule",
                             "title": "5. fok",
                             "text": "A karakter már igazi csodadoktor. Ötödik fokú betegségeket, mérgezéseket diagnosztizál és gyógyít. Akár még végtagok visszavarrására is vállalkozhat. Intelligenciapróbáját +3 módosítóval dobja."
-                        }
-                    ]
-                },
-                {
-                    "id": "sec_103",
-                    "title": "Tudományos képzettségek",
-                    "content_blocks": [
-                        {
-                            "type": "paragraph",
-                            "text": "hidak megtervezését is vállalhatja kockázat nélkül. Képzettsége miatt a Rejtekhelykutatás képzettségre +20%-ot kap."
-                        },
-                        {
-                            "type": "paragraph",
-                            "text": "5. fok A legendás építész már művészi fokra fejlesztette az építészetet. Katedrálisokat, uralkodói palotákat emel, új stílusokat talál ki, új technikákat eszel ki és alkalmaz. Képzettsége folytán +30%-ot kap a Rejtekhelykutatás képzettségére."
-                        },
-                        {
-                            "type": "paragraph",
-                            "text": "fel, komolyabb gépezeteknél inkább mágiára gyanakszik. Új alkalmatosságot még nem tud tervezni."
                         }
                     ]
                 },
@@ -20825,11 +21023,13 @@
                         {
                             "type": "paragraph",
                             "text": "Abban az esetben, ha a karakter nem a magasmágia beavatottja, hanem tapasztalati mágiahasználó, akkor csakis a Végrehajtó Varázskör, Kisugárzó Varázsjel, illetve, ha bír Asztrál-, Mentálmágiával, akkor az Asztrál-, Mentálbélyegek alkalmazása elérhető a számára."
-                        },
-                        {
-                            "type": "paragraph",
-                            "text": "Tapasztalati mágia (IV – Intelligencia, Akaraterő)"
-                        },
+                        }
+                    ]
+                },
+                {
+                    "id": "sec_tapasztalati",
+                    "title": "Tapasztalati mágia (IV – Intelligencia, Akaraterő)",
+                    "content_blocks": [
                         {
                             "type": "paragraph",
                             "text": "A hagyományokon, az évezredeken átöröklődő, mágikus procedúrákon alapuló mágikus fortélyok ismeretébe, illetve magasabb szinteken azok használatába enged betekintést e képzettség. Felvételkor természetesen meg kell jelölni az adott hagyományt, mint pl. Tapasztalati mágia – bárd varázslatok (iskola, vagy magányos mester)."
@@ -20874,30 +21074,6 @@
                     "content_blocks": [
                         {
                             "type": "paragraph",
-                            "text": "2. fok A karakter már ismeri a paraelemeket, tisztában van előnyeikkel, hátrányaikkal, azonosítja az alapvető Formázásokat, igen nagy pontossággal nyilatkozik az adott mágiaforma hatásait illetően. Az őselemi síkok teremtményeinek nagy részét felismeri azok képességeiről sikeres Intelligenciapróba után tud nyilatkozni."
-                        },
-                        {
-                            "type": "paragraph",
-                            "text": "A karakter a Magasmágia képzettség hasonló szintű ismerője, illetve a Mágikus fegyverek, háttér birtokában képes őselemek megidézésére, illetve az alapvető Formázás mozaikok használatára."
-                        },
-                        {
-                            "type": "paragraph",
-                            "text": "4. fok Az őselemi síkok teremtményeit felismeri, immáron azok képességeiről +2 módosítóval dobott sikeres Intelligenciapróba után tud nyilatkozni."
-                        },
-                        {
-                            "type": "paragraph",
-                            "text": "A képzettség ezen fokának ismerője az elemi mágia mestere, képes az egyszer már megidézett őselemeket újabb Formázás mozaikokkal kordában tartani, egyre újabb és újabb alakba kényszeríteni az időtartam letelte előtt. Bővebben lásd az Elemi mágia c. fejezetben az 358. oldalon."
-                        },
-                        {
-                            "type": "paragraph",
-                            "text": "5. fok Az őselemi mágia letéteményese, a világot alakító erők avatott ismerője. Az őselemi síkok minden teremtményét felismeri, immáron azok képességeiről +3 módosítóval dobott sikeres Intelligenciapróba után tud nyilatkozni."
-                        },
-                        {
-                            "type": "paragraph",
-                            "text": "A varázsló ezen a szinten már képes az elemeket teljesen uralma alá hajtani, képes a Formázás mozaikkal szabad elemi formák megalkotására. Bővebben lásd az Elemi mágia c. fejezetben a 358. oldalon."
-                        },
-                        {
-                            "type": "paragraph",
                             "text": "A világegyetem legnagyobb hatalma a képzelet, mely alkotásra, tettekre sarkallja a teremtett világ lényeit, s ennek a hihetetlen erőnek a forrása a gondolkodó elme. Ahány faj és világ, annyi módon próbálták a tudat erejét az idők folyamán közvetlenül felhasználni a külső, belső és az anyagi világok lakói. Voltak, akik csak egy lépcsőfokot láttak a mentális energiákban a magasabb rendű formáló erő, a mágia megértése és megzabolázása felé, voltak, akik magát az utat."
                         },
                         {
@@ -20931,7 +21107,13 @@
                         {
                             "type": "paragraph",
                             "text": "5. fok Az elme művészetének magasiskolája, az uralom szintje, a karakter erre a szintre csakis a Slan Út vagy a Kyr Metódus tanulmányozásával juthat. Az ilyen szinten képzett pszikalmazó már komolyan formálja, a valóságot. A belső síkokon keresztül képes elérni, megfigyelni és befolyásolni mások elméjét. A karakter ismeri és alkalmazza a 5. foknál feltüntetett, az általa választott ágon található diszciplínákat, azaz oktatói által elérhetővé tett Kyr Metódust vagy a Slan pszit."
-                        },
+                        }
+                    ]
+                },
+                {
+                    "id": "sec_runamagia",
+                    "title": "Rúnamágia (IV – Intelligencia, Akaraterő)",
+                    "content_blocks": [
                         {
                             "type": "paragraph",
                             "text": "Ynev majd minden népcsoportja idővel megörökölte, vagy újra felfedezte magának a jelmágikus rajzolatokban rejtőző, céljaikhoz igazítva átrendezett mágikus erők tudományát. A képzettség ismerete ezen örökkévaló, a kontinenssel egyidős kultúrától független jelek felismerését, működésük megértését, esetleg maguknak a rúnáknak az alkalmazását jelenti."
