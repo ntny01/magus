@@ -19,6 +19,9 @@
             window._userId = session.user.id;
             window._userProfile = profile;
             window._isAdmin = profile.role === 'admin';
+            // FONTOS: a realtime WebSocket-et is hitelesíteni kell, különben az RLS
+            // elnyeli a dice_rolls változás-eseményeket (új tábla → realtime RLS).
+            try { sb.realtime.setAuth(session.access_token); } catch (e) {}
             window._authReady = true;
             window.dispatchEvent(new Event('magus-auth-ready'));
         })();
@@ -489,10 +492,11 @@
                 dice: diceOut,
                 modifier: res.modifier,
                 total: res.total
-            }).then(function (r) {
+            }).select().then(function (r) {
                 btn.disabled = false; btn.textContent = 'DOBÁS';
                 if (r.error) { showBanner('⚠️ A dobás mentése nem sikerült: ' + esc(r.error.message) + ' (futott már a dice_rolls.sql?)'); return; }
-                // a realtime esemény jeleníti meg mindenkinek (magunknak is)
+                // Azonnali visszajelzés a sajátunkról (a realtime-echo id alapján dedupol).
+                if (r.data && r.data[0]) prependRoll(r.data[0]);
             });
         }
 
@@ -575,18 +579,26 @@
         function subscribe() {
             if (DR.channel) { try { sb().removeChannel(DR.channel); } catch (e) {} DR.channel = null; }
             if (!DR.campId) return;
+            // A bevált projekt-minta: NINCS szerver-oldali filter (az néma eseményvesztést okozhat),
+            // helyette kliens-oldalon szűrünk a betöltött kampányra.
             DR.channel = sb().channel('dice-' + DR.campId)
-                .on('postgres_changes', { event: 'INSERT', schema: 'public', table: 'dice_rolls', filter: 'campaign_id=eq.' + DR.campId }, function (payload) {
-                    var row = payload.new; if (row && !row.archived_at) prependRoll(row);
-                })
-                .on('postgres_changes', { event: 'UPDATE', schema: 'public', table: 'dice_rolls', filter: 'campaign_id=eq.' + DR.campId }, function (payload) {
-                    var row = payload.new;
-                    if (row && row.archived_at) {
-                        var el = $('feed').querySelector('[data-id="' + row.id + '"]'); if (el) el.remove();
-                        if (!$('feed').children.length || (!$('feed').querySelector('.roll'))) $('feed').innerHTML = '<div class="feed-empty">Még nincs dobás ebben a menetben.</div>';
+                .on('postgres_changes', { event: '*', schema: 'public', table: 'dice_rolls' }, function (payload) {
+                    var row = payload.new || payload.old;
+                    if (!row || row.campaign_id !== DR.campId) return;
+                    if (payload.eventType === 'INSERT') {
+                        if (!row.archived_at) prependRoll(row);
+                    } else if (payload.eventType === 'UPDATE') {
+                        if (row.archived_at) {
+                            var el = $('feed').querySelector('[data-id="' + row.id + '"]'); if (el) el.remove();
+                            if (!$('feed').querySelector('.roll')) $('feed').innerHTML = '<div class="feed-empty">Még nincs dobás ebben a menetben.</div>';
+                        }
                     }
                 })
-                .subscribe();
+                .subscribe(function (status) {
+                    if (status === 'CHANNEL_ERROR' || status === 'TIMED_OUT') {
+                        console.warn('[Kalandkockák] realtime státusz:', status, '— a dice_rolls tábla engedélyezve van a Realtime-ban?');
+                    }
+                });
         }
 
         /* ---------- Admin: menet lezárása + archívum ---------- */

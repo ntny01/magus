@@ -10977,13 +10977,7 @@
                                     "3. fok"
                                 ]
                             ]
-                        }
-                    ]
-                },
-                {
-                    "id": "sec_57",
-                    "title": "Darton-paplovag",
-                    "content_blocks": [
+                        },
                         {
                             "type": "paragraph",
                             "text": "A paplovag képzettségei, melyeket rendjétől az Oktatás képzettség 4. foka által nyújtott előnnyel tanulhat: Állatismeret, Ékesszólás, Fájdalomtűrés, Fegyverhasználat, Fegyverismeret, Hadvezetés, Harctéri gyakorlat, Heraldika, Herbalizmus, Írás/olvasás, Kultúra, Legendaismeret, Lélektan, Lovaglás, Művészetek (Éneklés, Rajz stb.), Nyelvtudás, Orvoslás, Pajzshasználat, Pszi (pyarroni), Számtan/mértan, Térképészet, Történelem, Udvari etikett, Vallásismeret, Vértviselet. (illetve az egyház profiljából adódó egyéb képzettségek).",
@@ -11298,7 +11292,13 @@
                                     ""
                                 ]
                             ]
-                        },
+                        }
+                    ]
+                },
+                {
+                    "id": "sec_60",
+                    "title": "Darton-paplovag",
+                    "content_blocks": [
                         {
                             "type": "flavor_text",
                             "text": "Örvendezz, emberfia, magasztos perc előtt állsz! A Hallgatag Úr mindjárt szólani fog hozzád, a saját szájával, ahogyan minden halandóhoz csak egyszer. Figyelmezz hát jól; el ne szalaszd a szavát!",
@@ -11326,13 +11326,7 @@
                             "title": "",
                             "headers": [],
                             "rows": []
-                        }
-                    ]
-                },
-                {
-                    "id": "sec_60",
-                    "title": "Domvik-paplovag",
-                    "content_blocks": [
+                        },
                         {
                             "type": "paragraph",
                             "text": "Egyelőre igen valószínűtlennek látszik, hogy a két fél álláspontja belátható időn belül közelébe egymáshoz.",
@@ -11444,7 +11438,13 @@
                             "title": "A Darton-paplovag képzettségei, melyeket rendjétől az Oktatás képzettség 4. foka által nyújtott előnnyel tanulhatnak az alap paplovagnál feltüntetetteken kívül:",
                             "headers": [],
                             "rows": []
-                        },
+                        }
+                    ]
+                },
+                {
+                    "id": "sec_60b",
+                    "title": "Domvik-paplovag",
+                    "content_blocks": [
                         {
                             "type": "flavor_text",
                             "text": "Erős esküvéssel fogadom...",
@@ -11655,11 +11655,16 @@
                             "rows": []
                         },
                         {
-                            "type": "rule",
-                            "text": "A Dreina-paplovag a játék kezdetén saját fegyverzettel rendelkezik, amelyért nem kell pénzzel fizetnie, egyháza ajándéka harcához az egyház és az állam ellenségei ellen. A fegyverzet tartozékai: acél teljesvértezet megfelelő sisakkal, közepes acélpajzs, lovagkard.",
-                            "title": "Induló fegyverzet",
-                            "headers": [],
-                            "rows": []
+                            "type": "heading",
+                            "text": "A Dreina-paplovag különleges előnyei"
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "I. Dreina szent jelképei az ezüsttenyér és a bőségszaru; paplovagjai az Élet és a Lélek szféráiból merítik fohászaikat, és úrnőjük felvértezi őket néhány egyedi fohásszal is, amiket egyetlen más istenség paplovagjai sem ismernek. Ezek leginkább az utazás, a hűség és az anyagi javak felett bírnak hatalommal."
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "II. A Dreina-paplovag a játék kezdetén saját fegyverzettel rendelkezik, amelyért nem kell pénzzel fizetnie, egyháza ajándéka harcához az egyház és az állam ellenségei ellen. A fegyverzet tartozékai: acél teljesvértezet megfelelő sisakkal, közepes acélpajzs, lovagkard."
                         },
                         {
                             "type": "table",
@@ -11699,14 +11704,7 @@
                         {
                             "type": "paragraph",
                             "text": "Értékbecslés, Jog/Törvénykezés, Politika/Diplomácia, Szakma (Birtokigazgatás vagy Pénzügyek).",
-                            "title": "B. A Dreina-paplovag képzettségei, melyeket rendjétől az Oktatás képzettség 4. foka által nyújtott előnnyel tanulhat:",
-                            "headers": [],
-                            "rows": []
-                        },
-                        {
-                            "type": "paragraph",
-                            "text": "Dreina szent jelképei az ezüstfényű és a bőségszaru; paplovagjai az Élet és a Lélek szféráiból merítik fohászaikat, és úrnőjük felvértezi őket néhány egyedi fohásszal is, amiket egyetlen más istenség paplovagjai sem ismernek. Ezek leginkább az utazás, a hűség és az anyagi javak felett bírnak hatalommal.",
-                            "title": "E. A Dreina-paplovag különleges előnyei",
+                            "title": "A Dreina-paplovag képzettségei, melyeket rendjétől az Oktatás képzettség 4. foka által nyújtott előnnyel tanulhat:",
                             "headers": [],
                             "rows": []
                         }
@@ -11714,7 +11712,7 @@
                 },
                 {
                     "id": "sec_63",
-                    "title": "A Krad-paplovag induló képzettségei",
+                    "title": "Aranykör lovag (Krad-paplovag)",
                     "content_blocks": [
                         {
                             "type": "flavor_text",
@@ -11808,11 +11806,8 @@
                             "rows": []
                         },
                         {
-                            "type": "rule",
-                            "text": "Krad-paplovag különleges előnyei",
-                            "title": "Krad-paplovag különleges előnyei",
-                            "headers": [],
-                            "rows": []
+                            "type": "heading",
+                            "text": "A Krad-paplovag különleges előnyei"
                         },
                         {
                             "type": "rule",
