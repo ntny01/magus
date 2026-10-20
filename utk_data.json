@@ -18085,6 +18085,45 @@
                     ]
                 },
                 {
+                    "id": "sec_vakharc",
+                    "title": "Vakharc (III – Érzékelés)",
+                    "content_blocks": [
+                        {
+                            "type": "paragraph",
+                            "text": "A képzettség a vak harcosok, illetve leginkább felkészültebb fejvadászok, tárnaharcosok sajátja. A képzettség segítsége nélkül a megvakult, vagy vaksötétbe került karakter a Harc vakon (KÉ: nincs, TÉ: -60, VÉ: -60 CÉ: -150) módosítóit, a láthatatlan ellenféllel küzdve, pedig a Harc láthatatlan ellenféllel (KÉ: nincs, TÉ: -30, VÉ: -30 CÉ: -75) módosítókat szenvedik el."
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "A Vakharcnak csak akkor veszi hasznát a karakter, ha képes a hangok, zajok, neszek alapján hozzávetőlegesen betájolni ellenfele helyzetét, a lesújtó penge suhogásából megsejteni a támadás irányát, a csikorduló fém hangjából megállapítani, hogy ellenfele visel-e vértet vagy pajzsot stb. Hangzavarban, csatatéren vagy bármely más zajos helyen a képzettséget csak egy fokkal alacsonyabban alkalmazhatja emiatt."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "Vakharc 1. fok",
+                            "text": "1. fok A karakter harcolni ezen a szinten még nem tud, képessége botlás, nagyobb tárgyakkal történő ütközés nélküli haladásra jogosítja fel."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "Vakharc 2. fok",
+                            "text": "2. fok A képzettség alkalmazója már éles helyzetben is hasznát veszi a képzettségének. A Harc vakon módosítók helyett már csak egy Harc láthatatlan ellenféllel módosítót kap, hiszen képes látása híján hallására (az ellenfele ütötte apró zajokra, neszekre), és megérzéseire támaszkodni. Ám láthatatlan ellenféllel szemben továbbra is elszenved a negatív módosítókat. Bármely más látást rontó helyzetben, mely nem teljes vakságot okoz, csak KM által meghatározott módosítók felét szenvedi el."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "Vakharc 3. fok",
+                            "text": "3. fok Az alkalmazó látást rontó, de vakságot nem okozó helyzetben már levonások nélkül harcol. Teljesen vakon vagy láthatatlan ellenféllel szemben pedig egy csökkentett KÉ: -10, TÉ: -20, VÉ: -20, CÉ: -50 módosítóval kell számolni."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "Vakharc 4. fok",
+                            "text": "4. fok A vakharcos innentől kezdve hagyatkozik leginkább az ösztöneire, megérzéseire. Negatív módosítók immáron nem sújtják."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "Vakharc 5. fok",
+                            "text": "5. fok A Játékos karakter ezen a szinten nem tanulhatja a képzettséget, csak ha vaknak született, vagy ha legalább már öt éve világtalan. Ezen a szinten, ha a harcoló feleknek sötétben kell hadakoznia, akkor a vakharcos már egy bónusz KÉ: +5, TÉ: +10, VÉ: +10 módosítóval is számolhat."
+                        }
+                    ]
+                },
+                {
                     "id": "sec_93v",
                     "title": "Vértviselet (II – Erő)",
                     "content_blocks": [
@@ -18133,14 +18172,11 @@
                 },
                 {
                     "id": "sec_94",
-                    "title": "Világi képzettségek",
+                    "title": "Állatismeret (I)",
                     "content_blocks": [
                         {
-                            "type": "paragraph",
-                            "text": "tartják az efféléről a bölcsek és a köznép egyaránt, már szinte észrevétlen hordozza az irdatlan vasakkal felszerelt teljes vértezetet is. A Nehézvértesek MGT-je 3-mal csökken, az általa viselt vértek SFÉ-je 3 ponttal magasabbnak számít.",
-                            "title": "",
-                            "headers": [],
-                            "rows": []
+                            "type": "heading",
+                            "text": "Világi képzettségek"
                         },
                         {
                             "type": "paragraph",
@@ -18183,7 +18219,13 @@
                             "title": "",
                             "headers": [],
                             "rows": []
-                        },
+                        }
+                    ]
+                },
+                {
+                    "id": "sec_csapda",
+                    "title": "Csapdaállítás/leszerelés (II – Ügyesség)",
+                    "content_blocks": [
                         {
                             "type": "paragraph",
                             "text": "Jó csapdát állítani nem egyszerű feladat, főleg akkor nem, ha az ember huzamosabb ideig próbál fogva tartani valamilyen intelligens bestiát, ne adja az ég humanoidot. A karakter ezzel a képzettséggel nemcsak csapdák felállításában, hanem azok elkészítésében is járatossá válhat, illetve képessé válik a szerkezetek hatástalanítására is.",
@@ -18232,7 +18274,13 @@
                             "title": "",
                             "headers": [],
                             "rows": []
-                        },
+                        }
+                    ]
+                },
+                {
+                    "id": "sec_csomo",
+                    "title": "Csomózás (II – Ügyesség)",
+                    "content_blocks": [
                         {
                             "type": "paragraph",
                             "text": "Egyszerű csomót kötni bárki tud, de ezen képzettség segítségével tudományát igen csak hasznosan bővítheti a bogok, csúszóhurkok, önoldó csomók és egyéb nyalánkságok titkaival. A csomók, kötelek mesterévé válhat; igen hasznos tudomány tengerészek, falmászók és kalandozók számára.",
@@ -18274,7 +18322,13 @@
                             "title": "",
                             "headers": [],
                             "rows": []
-                        },
+                        }
+                    ]
+                },
+                {
+                    "id": "sec_vadon",
+                    "title": "Vadonjárás (II – Érzékelés)",
+                    "content_blocks": [
                         {
                             "type": "paragraph",
                             "text": "A képzettség a természet, illetve egy táj vonásainak jellegének ismeretét jelenti. Olyan tudás, melynek segítségével a karakter eligazodik az adott terepen, ismeri a ragadozókat, a",
@@ -18323,13 +18377,20 @@
                             "title": "",
                             "headers": [],
                             "rows": []
+                        }
+                    ]
+                },
+                {
+                    "id": "sec_ertek",
+                    "title": "Értékbecslés (I – Intelligencia, Érzékelés)",
+                    "content_blocks": [
+                        {
+                            "type": "paragraph",
+                            "text": "A képzettség a KM belátása szerint korlátlanul alkalmazható, de csak a karakter által ismert kultúrákra, vagy ősibb tárgyak esetén Történelem, esetleg Legendaismeret képzettségekkel kombinálva, mágikus tárgyak esetén pedig, a vonatkozó mágiaforma ismeretével párosítva."
                         },
                         {
                             "type": "paragraph",
-                            "text": "A karakter ezen a szinten kezdi el átlátni a nagy bankházak és kereskedőházak működését, az általuk képviselt értéket.",
-                            "title": "",
-                            "headers": [],
-                            "rows": []
+                            "text": "A karakterek ezzel a képzettséggel megismerhetik Ynev egyes országainak értékviszonyait, a helyi fizetőeszközök, illetve ingóságok, ingatlanok értékét, így felbecsülhetik egy tárgy minőségét. Megóvhatják magukat a mindennapos kellemetlenségektől, melyek egy tapasztalatlan vásárlóra leselkedhetnek Ynev bazárjainak, piacainak mélyén."
                         },
                         {
                             "type": "paragraph",
@@ -18354,7 +18415,7 @@
                         },
                         {
                             "type": "paragraph",
-                            "text": "4. fok A fenti próbát az általa ismert kultúrák esetén +2, az idegen kultúrák esetében +1 módosítóval végezheti el.",
+                            "text": "4. fok A fenti próbát az általa ismert kultúrák esetén +2, az idegen kultúrák esetében +1 módosítóval végezheti el. A karakter ezen a szinten kezdi el átlátni a nagy bankházak és kereskedőházak működését, az általuk képviselt értéket.",
                             "title": "",
                             "headers": [],
                             "rows": []
@@ -18365,6 +18426,32 @@
                             "title": "",
                             "headers": [],
                             "rows": []
+                        }
+                    ]
+                },
+                {
+                    "id": "sec_futas",
+                    "title": "Futás (I – Állóképesség, Egészség)",
+                    "content_blocks": [
+                        {
+                            "type": "paragraph",
+                            "text": "A képzettség a hosszútávfutás titkait fedi fel ismerői előtt. Nem a szélsebes vágtázás, a rohanás tartozik ide, hiszen azok sebessége csak a karakter Gyorsaságától függ, hanem az órákig tartó lassú egyenletes futás képességének elsajátítása. A képzettség szakavatott ismerői a futárok, hírvivők, esetleg az ork törzsek felderítő portyázói."
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "Egy átlagos karakter képzetlenség esetén annyi mérföldet képes futni, amennyi Állóképességének az ötöde (felfelé kerekítve)."
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "A karakter a képzettség fokától függő távolságot képes egyhuzamban megtenni, majd pihennie kell. A táv megtétele után mérföldenként Akaraterő próbadobást köteles tenni, ha tovább akar futni. Minden újabb próba alkalmával további -1 módosítóval, mely módosítók összeadódnak. A sikeres próba esetén a karakter tovább haladhat, sikertelenség esetén pedig nem képes folytatni a futást."
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "A karakternél a képzettség leírásában szereplő távolság megtétele után pihennie kell legalább 3 órát. Azonban, ha a futás befejeztekor megtett Állóképesség próba sikertelen, akkor ez az időtartam minimálisan 6 óra. Hosszabb, legalább félnapos pihenő nélkül egyetlen karakter sem tehet meg a fent említett rövid pihenő közbeiktatásával sem két teljes futásszakasznál többet."
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "A felszerelés komolyan hátráltatja a futót, ezért minden 20 ynevi font súlynyi teher eggyel csökkenti a képzettség alkalmazásának fokát."
                         },
                         {
                             "type": "paragraph",
@@ -18405,8 +18492,12 @@
                 },
                 {
                     "id": "sec_95",
-                    "title": "Hangutánzás (II - Érzékelés)",
+                    "title": "Hajózás (II – Erő, Ügyesség, Állóképesség, Intelligencia)",
                     "content_blocks": [
+                        {
+                            "type": "paragraph",
+                            "text": "Tengerek, tavak és folyók megzabolázásának és hasznunkra hajtásának titkait tárja fel e tudomány. Alacsonyabb fokú képzettség ismerete még csak kisebb tutajok, csónakok, magasabb fokon már nagyobb hajók, esetleg tengeri járművek irányítását fedi a képzettség. Alkalmazásához szükséges lehet Csomózás, Időjóslás, Térképészet, Hadvezetés megfelelő fokú ismerete, ha a KM szerint a hajó felszereltsége, vagy mérete megköveteli."
+                        },
                         {
                             "type": "paragraph",
                             "text": "A képzettség ismerete növeli a hajó sebességét harmadik fok felett, szintenként 10%-kal.",
@@ -18455,14 +18546,13 @@
                             "title": "Tengeri csata szabályai",
                             "headers": [],
                             "rows": []
-                        },
-                        {
-                            "type": "paragraph",
-                            "text": "– legalább 2. fokon – akkor akár az áldozat közeli ismerőseit, családtagjait, szeretőjét is könnyedén megtévesztheti.",
-                            "title": "",
-                            "headers": [],
-                            "rows": []
-                        },
+                        }
+                    ]
+                },
+                {
+                    "id": "sec_hangutanzas",
+                    "title": "Hangutánzás (II – Érzékelés)",
+                    "content_blocks": [
                         {
                             "type": "paragraph",
                             "text": "Mulatságos, olykor életet mentő képzettség. Vannak, akik kizárólag szájukat használják hangutánzásra, mások, főleg magasabb fokozatú képzettség esetén, már egyéb segédeszközöknek sincsenek híján, pl. kezük, használati tárgyak.",
@@ -18500,7 +18590,7 @@
                         },
                         {
                             "type": "paragraph",
-                            "text": "4. fok A mesteri szintű hangutánzó már egy óra alatt képes valaki hangját „ellopni”, ha jártas a Lélektan képzettségben.",
+                            "text": "4. fok A mesteri szintű hangutánzó már egy óra alatt képes valaki hangját „ellopni”, ha jártas a Lélektan képzettségben. – legalább 2. fokon – akkor akár az áldozat közeli ismerőseit, családtagjait, szeretőjét is könnyedén megtévesztheti.",
                             "title": "",
                             "headers": [],
                             "rows": []
@@ -18511,7 +18601,13 @@
                             "title": "",
                             "headers": [],
                             "rows": []
-                        },
+                        }
+                    ]
+                },
+                {
+                    "id": "sec_helyismeret",
+                    "title": "Helyismeret (I – Intelligencia)",
+                    "content_blocks": [
                         {
                             "type": "paragraph",
                             "text": "A karakter ismereteinek összessége egy hely térképészeti, szociális (akár alvilági) berendezéséről. Minden karakter sajátja, a klánok, rendek, iskolák beavatottjai, tagjai bizonyos, az adott szervezetnél megjelölt szintű ismerettel indulnak saját szülőföldjükre vonatkozóan.",
@@ -18574,7 +18670,13 @@
                             "title": "Helyismeret próba módosító",
                             "headers": [],
                             "rows": []
-                        },
+                        }
+                    ]
+                },
+                {
+                    "id": "sec_idomitas",
+                    "title": "Idomítás (II – Asztrál)",
+                    "content_blocks": [
                         {
                             "type": "paragraph",
                             "text": "Ynev világán rengeteg olyan állat és félintelligens lény akad, amely beidomítható a karakter számára, amely némely foglalkozás és törődés után képes akár igen bonyolult feladatok végrehajtására is. Ezen lények száma szinte korlátlan, a játékos ötleteinek az idomítandó lény fajának csak a józanész és a KM döntése szabhat határt.",
@@ -18608,6 +18710,111 @@
                         {
                             "type": "paragraph",
                             "text": "Ezen a szinten már igazi kalandozótársat nevelhet a karakter a választott állatból, aki helyette őrködik, megvédelmezi, vagy intelligenciájának függvényében, megfelelő feladatokat hajt végre önállóan. Az állat és gazdája között egyfajta asztrális kapcsolat jön létre, amely nem nevezhető a szó szoros értelmében kommunikációnak, inkább afféle benyomások és hangulatok villanásnyi cseréjének."
+                        }
+                    ]
+                },
+                {
+                    "id": "sec_idojoslas",
+                    "title": "Időjóslás (II – Intelligencia, Érzékelés)",
+                    "content_blocks": [
+                        {
+                            "type": "paragraph",
+                            "text": "Az időjóslás ezer szempontból elengedhetetlen fontosságú Ynev világán is. A tengerészek életében a biztonság, hadjáratok esetén a utazók számára pedig a kényelem biztosítéka. Nem csoda hát, ha sokan igyekeznek kifürkészni az időjárás szeszélyeit, hogy megjósolhassák az eljövendőt. Ezer módszer létezik erre: az egyszerű, tapasztalatokon alapuló következtetések levonásától egészen a misztikus megoldásokig – mint amilyen a madarak röptének megfigyelése, vagy a leölt állatok belső szerveinek bűbájos megolvasása. Egyet azonban le kell szögeznünk: ezek a módszerek igenis működnek."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "Időjóslás 1. fok",
+                            "text": "1. fok Egyelőre még csak ismerkedik a karakter az időjóslás alapjaival. Maximum 1 napra előre képes előrejelzést felállítani, amely egy -1 módosítóval dobott sikeres Intelligenciapróba esetén pontos."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "Időjóslás 2. fok",
+                            "text": "2. fok A karakter már gyakorlottan állít fel helyes előrejelzést akár egy hétre előre is, sikeres Intelligenciapróba esetén."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "Időjóslás 3. fok",
+                            "text": "3. fok A karakter már gyakorlott és szakavatott időjós, rövid távú, két hetes előrejelzéseket készít, amelyek +1 módosítóval dobott Intelligenciapróba sikere esetén helyesek."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "Időjóslás 4. fok",
+                            "text": "4. fok Az időjóslás mesteri szintű alkalmazója már akár egy hónapra előre képes távlati előrejelzéseket készíteni, Intelligenciapróbáját +2 módosítóval dobja."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "Időjóslás 5. fok",
+                            "text": "5. fok A legendás időjós egy teljes év időjárását képes nagyjából előre jelezni, képes nyilatkozni egyes időjárásmágiák hosszabb távú kihatásairól, ha Intelligenciapróbáját +3 módosítóval sikeresen megdobja."
+                        }
+                    ]
+                },
+                {
+                    "id": "sec_lovaglas",
+                    "title": "Lovaglás (I – Ügyesség)",
+                    "content_blocks": [
+                        {
+                            "type": "paragraph",
+                            "text": "Széles körben elterjedt, igen hasznos ismeret, mely nem csupán lovakra, de bármely hátas állatokra alkalmazható. Igaz állatonként kell felvenni, de valamely lovagló stílus ismerete maga után vonja a többi ismeretét 1 fokkal alacsonyabb szinten. A karakter lóhátról csak a képzettség leírása szerinti, illetve a KM által engedélyezett képzettségeit használhatja, de maximálisan azon a fokon, amennyire a Lovaglás képzettséget ismeri."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "Lovaglás 1. fok",
+                            "text": "1. fok A karakter ismerkedik a lovaglással, csak lassú léptben haladva képes nyeregben maradni."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "Lovaglás 2. fok",
+                            "text": "2. fok A gyakorlottabb lovas már szabályosan képes ügetni hátasával."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "Lovaglás 3. fok",
+                            "text": "3. fok A szakavatott lovas már vágtázik, akár nyeregből harcolni, íjászkodni is tud, természetesen csak 3. fokon alkalmazhatja ezeket a képzettségeket, illetve sújtja Harc mozgó lóról helyzeti módosító CÉ levonása."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "Lovaglás 4. fok",
+                            "text": "4. fok A mesteri lovas ezen a szinten már megkapja a Harc mozgó lóról bónuszait, illetve nem sújtja a CÉ levonás."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "Lovaglás 5. fok",
+                            "text": "5. fok A karakter lovagló tudása már legendás ezen a szinten, ördögi lovas, hátasa plusz egy támadást kap körönként, illetve az állat is megkapja a Harc mozgó lóról módosítókat saját értékeikhez."
+                        }
+                    ]
+                },
+                {
+                    "id": "sec_kocsihajtas",
+                    "title": "Kocsihajtás (I – Ügyesség)",
+                    "content_blocks": [
+                        {
+                            "type": "paragraph",
+                            "text": "A karakter fogathajtó tudását jelenti ez a képzettség; kocsisok, udvaroncok, kereskedők, vidéki emberek sajátja. Leginkább a lovak húzta fogat vagy szekér hajtását jelenti, de ez a képzettség fedi a marhák, tevék stb. vontatta alkotmányok és a hatlovas úri hintók hajtását is."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "Kocsihajtás 1. fok",
+                            "text": "1. fok A karakter még a szerszámokkal és a kocsival is nehezen boldogul. A kocsit csak lassan és könnyű terepen tudja hajtani."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "Kocsihajtás 2. fok",
+                            "text": "2. fok Az ilyen fokon képzett kocsis már lassan biztosan hajt, akár nehezebb terepen is. Egyedül is képes befogni a lovakat."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "Kocsihajtás 3. fok",
+                            "text": "3. fok A képzett hajtó már nehéz terepen is képes közepes tempóval haladni, könnyű terepen akár gyorsan is. Érzékeli a kocsi hibáit, s a szakembert nem igénylő hibákat maga is kijavíthatja."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "Kocsihajtás 4. fok",
+                            "text": "4. fok A mesterien képzett karakter akár négyes- és hatosfogatok hajtására is képes. Járművét akár fegyverként is használhatja. A karakternek 5-30 körre van szüksége arra, hogy támadó helyzetbe navigálja magát. A kocsi TÉ-je 100, amihez a karakter Ügyességértéke is hozzáadódik, a megtámadott karakter a fegyvernélküli VÉ-jével védekezhet, illetve egy sikeres Gyorsaságpróbával ugorhat el a jármű útjából."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "Kocsihajtás 5. fok",
+                            "text": "5. fok A karakter kocsival való TÉ-je 150 + Ügyesség. Csodás kunsztokra képes, akár lépcsőzni is tud fogatával."
                         }
                     ]
                 },
@@ -18752,7 +18959,13 @@
                             "title": "Akrobatika - Felszerelés hatása",
                             "headers": [],
                             "rows": []
-                        },
+                        }
+                    ]
+                },
+                {
+                    "id": "sec_eses",
+                    "title": "Esés (I – Ügyesség)",
+                    "content_blocks": [
                         {
                             "type": "rule",
                             "text": "A karakter százalékokban kifejezett képessége a zuhanások tompítására, túlélésére. Sikeres próba esetén a zuhanásból származó, a karaktert érő sebzést 5%-onként 2 ponttal, sikertelen százalékdobás esetén 1 ponttal csökkenti.",
@@ -18766,7 +18979,13 @@
                             "title": "Esés - Felszerelés hatása",
                             "headers": [],
                             "rows": []
-                        },
+                        }
+                    ]
+                },
+                {
+                    "id": "sec_maszas",
+                    "title": "Mászás (I – Erő, Ügyesség)",
+                    "content_blocks": [
                         {
                             "type": "paragraph",
                             "text": "A karakter százalékokban kifejezett képessége magasabb tárgyak, pontok elérésére, meghódítására.",
@@ -18853,6 +19072,16 @@
                             "title": "Mászás időtartama és harci helyzet",
                             "headers": [],
                             "rows": []
+                        }
+                    ]
+                },
+                {
+                    "id": "sec_ekesszolas",
+                    "title": "Ékesszólás (II – Intelligencia, Asztrál, Karizma)",
+                    "content_blocks": [
+                        {
+                            "type": "heading",
+                            "text": "Szociális képzettségek"
                         },
                         {
                             "type": "paragraph",
@@ -18895,7 +19124,13 @@
                             "title": "Ékesszólás 5. fok hatása",
                             "headers": [],
                             "rows": []
-                        },
+                        }
+                    ]
+                },
+                {
+                    "id": "sec_heraldika",
+                    "title": "Heraldika (II – Intelligencia)",
+                    "content_blocks": [
                         {
                             "type": "paragraph",
                             "text": "Ynev különféle címereinek, jeleinek, tetoválásainak ismeretét és azok mögött rejlő összefüggésének értelmezését fedi a képzettség.",
@@ -18937,7 +19172,13 @@
                             "title": "Címertudós képzettség (5. fok)",
                             "headers": [],
                             "rows": []
-                        },
+                        }
+                    ]
+                },
+                {
+                    "id": "sec_kultura",
+                    "title": "Kultúra (I – Intelligencia)",
+                    "content_blocks": [
                         {
                             "type": "paragraph",
                             "text": "A karakter az adott terület, vagy népcsoport szokásaiba, szociális berendezkedésébe nyer bepillantást. Alacsonyabb fokú képzettség esetén még csak látogatóként ismeri a dolgok menetét, magasabb fokú képzettség birtokában már a helyi néprajz rejtelmeivel is tisztában van. A képzettséget valamely civilizáció vagy népcsoport kultúrájára kell felvenni, pl.: Kultúra (Erv) 3. fok.",
@@ -18979,7 +19220,13 @@
                             "title": "",
                             "headers": [],
                             "rows": []
-                        },
+                        }
+                    ]
+                },
+                {
+                    "id": "sec_lelektan",
+                    "title": "Lélektan (III – Intelligencia, Asztrál, Érzékelés)",
+                    "content_blocks": [
                         {
                             "type": "rule",
                             "text": "A psziché megismerésének tudománya. Birtokosa könnyebben férkőzik közel mások lelkéhez, érti meg a szándékaik mögött megbúvó indítékaikat, leplezi le hazugságaikat, vagy magasabb szinteken hajtja befolyása alá az illetőt. Ha a képzettség célpontja bármely leplező képzettséggel bír, akkor a képzettségek összevetésére vonatkozó szabályok a mérvadóak. Azonban a fent említett szabályok által megállapított siker esetén sem mentesül a karakter az alábbi leírásban szereplő próbadobás alól.",
@@ -19021,7 +19268,13 @@
                             "title": "Lélektan 5. fok",
                             "headers": [],
                             "rows": []
-                        },
+                        }
+                    ]
+                },
+                {
+                    "id": "sec_muveszetek",
+                    "title": "Művészetek (II)",
+                    "content_blocks": [
                         {
                             "type": "rule",
                             "text": "A karakter valamely művészeti ágban tökéletesíti tudását és egyre csodálatosabb műveket képes alkotni, előadni. A Tulajdonságkövetelmény művészeti áganként eltérő lehet, ez a KM belátására és fantáziájára van bízva, bár leggyakrabban az Asztrál és valamely másik Tulajdonság kombinációja. (Pl. éneklés, zenélés, tánc, költészet, szobrászat, színjátszás stb.)",
@@ -19063,7 +19316,13 @@
                             "title": "Művészetek 5. fok",
                             "headers": [],
                             "rows": []
-                        },
+                        }
+                    ]
+                },
+                {
+                    "id": "sec_nyelvtudas",
+                    "title": "Nyelvtudás (I)",
+                    "content_blocks": [
                         {
                             "type": "paragraph",
                             "text": "A képzettség a karakter anyanyelvének, illetve attól eltérő nyelvek ismeretét fedi. Alacsonyabb fokon a nyelv használatát, magasabb fokú képzettség esetén pedig már igazi, irodalmi szintű nyelvtudást jelent. Yneven papok, művelt tudós fők, varázslók, esetleg művészek bírnak a nyelvek magasabb fokú ismeretével.",
@@ -19217,13 +19476,6 @@
                     "id": "sec_98",
                     "title": "Színészet (III – Asztrál, Karizma)",
                     "content_blocks": [
-                        {
-                            "type": "paragraph",
-                            "text": "eljuttatni. Szexuális játékai olyan szinten őrítik meg szeretőit és oly járatossá vált az ellentétes nem vágyaiban, hogy Karizma próbáját +3 módosítóval dobhatja.",
-                            "title": "",
-                            "headers": [],
-                            "rows": []
-                        },
                         {
                             "type": "paragraph",
                             "text": "A színészet a tettetés, a beleélés, az alkalmazkodás és a színészi átalakuló képesség tudománya, a karakter nem csak művészetként, de hazudozásaihoz, csalásaihoz is felhasználhatja... főleg Álcázás/álruha képzettséggel együtt. Ha a karakter valakit át szeretne ejteni és szerepjátéka a KM szerint nem elég meggyőző, vagy a célpont gyanakodni kezd, akkor képes leleplezni a karaktert a vonatkozó képzettségek (Lélektan) összevetését taglaló szabályok szerint.",
