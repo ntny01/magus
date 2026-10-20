@@ -14964,13 +14964,7 @@
                                     "86"
                                 ]
                             ]
-                        }
-                    ]
-                },
-                {
-                    "id": "sec_82",
-                    "title": "A Lar-Dori varázsló",
-                    "content_blocks": [
+                        },
                         {
                             "type": "rule",
                             "text": "CÉ: 26",
@@ -15078,14 +15072,13 @@
                                     ""
                                 ]
                             ]
-                        },
-                        {
-                            "type": "flavor_text",
-                            "text": "szabadulhattam tőle másképp, de te... – Hangja halkult, a mosoly azonban változatlanul ott derengett az ajkán. – A sétány. Tich. A hajnali köd, az a lány a Fehér Szárnyak házából. Megvannak mind, és most már nem is vészhetnek el. Igazában nem vész el semmi... semmi, amit meg ne lehetne találni. „Megint mosolygott, azután meghalt.” Wayne Chapman: Karnevál",
-                            "title": "",
-                            "headers": [],
-                            "rows": []
-                        },
+                        }
+                    ]
+                },
+                {
+                    "id": "sec_82",
+                    "title": "A Lar-Dori varázsló",
+                    "content_blocks": [
                         {
                             "type": "flavor_text",
                             "text": "„...A magiszter áll még, mikor fölé hajolt. Arcát, nyakát, a Lar-Dori belsőszigeti iskola pecsétjével ékes medált rozsdaszín foltokkal borította a találatok erejétől szétfreccsent vér. Szaggatottan lélegzett, teste, mint valami túlterhelt kahrei szerkezet, hevesen remegett, a bárd azonban különös elégedettséget vélt kiérezni a mosolyából.",
@@ -15130,10 +15123,7 @@
                         },
                         {
                             "type": "flavor_text",
-                            "text": "– Sose rágódj azon, mit nem tettél meg – suttogta a légátus. – Arra gondolj, amit megtehetsz még, mert csak így... csak így lehetsz szabad. Krán ádáz ellenség, de a bűntudat és a bosszúvágy... sokkal veszedelmesebb nála. Bestia, mely belülről marcangol... felfalja a múltat és a jövőt... elfeledteti, honnét jövünk, hová megyünk, és mi mindent kell... véghezvinnünk ezen a világon. Az enyém túl vén, túl erős volt már, nem",
-                            "title": "",
-                            "headers": [],
-                            "rows": []
+                            "text": "– Sose rágódj azon, mit nem tettél meg – suttogta a légátus. – Arra gondolj, amit megtehetsz még, mert csak így... csak így lehetsz szabad. Krán ádáz ellenség, de a bűntudat és a bosszúvágy... sokkal veszedelmesebb nála. Bestia, mely belülről marcangol... felfalja a múltat és a jövőt... elfeledteti, honnét jövünk, hová megyünk, és mi mindent kell... véghezvinnünk ezen a világon. Az enyém túl vén, túl erős volt már, nem szabadulhattam tőle másképp, de te... – Hangja halkult, a mosoly azonban változatlanul ott derengett az ajkán. – A sétány. Tich. A hajnali köd, az a lány a Fehér Szárnyak házából. Megvannak mind, és most már nem is vészhetnek el. Igazában nem vész el semmi... semmi, amit meg ne lehetne találni. „Megint mosolygott, azután meghalt.” Wayne Chapman: Karnevál"
                         },
                         {
                             "type": "paragraph",
@@ -15146,7 +15136,7 @@
                 },
                 {
                     "id": "sec_83",
-                    "title": "A Lar-Dori varázsló a varázslónál leírtakon kívüli különleges előnyei és hátrányai:",
+                    "title": "A Lar-Dori varázsló és a Pyraroni Varázslórend",
                     "content_blocks": [
                         {
                             "type": "paragraph",
@@ -15198,6 +15188,10 @@
                             "rows": []
                         },
                         {
+                            "type": "heading",
+                            "text": "A lar-dori varázsló a varázslónál leírtakon kívüli különleges előnyei és hátrányai:"
+                        },
+                        {
                             "type": "rule",
                             "text": "I. 3. Tapasztalati szinten rendjétől megkapja varázslóbotját, ha a Pyraroni Varázslórend tagjává válik, és ha érdemes rá. Ennek eldöntése a KM jogköre.",
                             "title": "Varázslóbot megszerzése",
@@ -15219,11 +15213,12 @@
                             "rows": []
                         },
                         {
+                            "type": "heading",
+                            "text": "Pyraroni Varázslórend"
+                        },
+                        {
                             "type": "paragraph",
-                            "text": "A Délvidék legnagyobb varázslórendje, a Pyraroni Eszmét magukénak valló beavatottakat magába tömörítő szervezet. A Rend nyílt, minden 3. Tapasztalati szintet elért varázsló kérheti felvételét, bármelyik iskolában vagy magányos mesternél is sajátította el a mágia tudományát. Mivel azonban a jelentkezőket a Rend nagy tudású mesterei (a Fehér Páholy mágusai) szigorú asztrális és mentális próbának vetik alá, csak kevesen nyerhetnek felvételt. Főként azok, akik a Lar-Dori iskolában illetve a Rendhez tartozó mestertől tanultak.",
-                            "title": "Pyraroni Varázslórend",
-                            "headers": [],
-                            "rows": []
+                            "text": "A Délvidék legnagyobb varázslórendje, a Pyraroni Eszmét magukénak valló beavatottakat magába tömörítő szervezet. A Rend nyílt, minden 3. Tapasztalati szintet elért varázsló kérheti felvételét, bármelyik iskolában vagy magányos mesternél is sajátította el a mágia tudományát. Mivel azonban a jelentkezőket a Rend nagy tudású mesterei (a Fehér Páholy mágusai) szigorú asztrális és mentális próbának vetik alá, csak kevesen nyerhetnek felvételt. Főként azok, akik a Lar-Dori iskolában illetve a Rendhez tartozó mestertől tanultak."
                         },
                         {
                             "type": "paragraph",
@@ -15287,13 +15282,7 @@
                             "title": "Varázslóbot tulajdonságai",
                             "headers": [],
                             "rows": []
-                        }
-                    ]
-                },
-                {
-                    "id": "sec_84",
-                    "title": "Dorani varázsló",
-                    "content_blocks": [
+                        },
                         {
                             "type": "paragraph",
                             "text": "Minden bot tulajdonosának természetét, jellemét, tulajdonságait tükrözi. Ezáltal minden pyarroni varázslóbot más, mindössze a hozzájuk hasonló, mindegyik azonos magasságú a tulajdonosával."
@@ -15325,7 +15314,13 @@
                             "type": "rule",
                             "text": "A mágikus hatalom mellett a bot a Rendhez tartozás jelképe. Ha a varázsló kívánja, a bot mágikus úton – hasonlóan a papok Hatalom szava litániájához – a Zónán belül mindenki tudatosítja, hogy a bot felmutatója a Rend varázslója. Az illetők semmilyen módon nem zárhatják ki tudatukból a felismerést, birtokába kerülnek az említett tényeknek, és tisztában lesznek a varázsló Jellemével is. Ezek után maguk dönthetnek, miként reagálnak, támogatják vagy ellen fordulnak, esetleg megrémülnek tőle. A Rend tagjai pedig egyértelműen felismerik a bot felmutatóját, sőt Tapasztalati szintjét és nevét is megtudják. Számukra a bot hatalma nem hamisítható.",
                             "title": "A Rend jelképe"
-                        },
+                        }
+                    ]
+                },
+                {
+                    "id": "sec_84",
+                    "title": "Dorani varázsló",
+                    "content_blocks": [
                         {
                             "type": "flavor_text",
                             "text": "„...Nem szólt, csak elmosolyodott, mielőtt folytatta volna sajátos ténykedését. Jókorra kört rajzolt maga köré a porba, majd kiegészítette egy pentagrammával. Öt csúcsába egy-egy ó-kyr rúna került, a közepébe egy megidéző formula Abdul al-Sahred Necrografia című könyvéből. A magasabbik domb tetején jártak már a lovasok, mire az elf intett egyet a dorani Szarvtornyot jelképező botjával – s a pentagramma csúcsaiba írt rúnák kékes fénnyel nyomban felizzottak. Alír csúfondáros ajakbiggyesztéssel kántálásba kezdett. Készen állt. A lovasok tempósan közeledtek. Gorduin e pillanatokban már-már szánta őket. Ezeknek a nomádoknak sosem volt alkalmuk megtanulni a legalapvetőbb szabályt: Soha, semmilyen körülmények között ne támadj magányos, netán kis csoportban utazó kalandozókra! Ha pedig mégis úgy hozza a sors, hogy meg kell tenned... Nos, akkor készülj fel a legrosszabbra! A pyarroni mágiájának természetével nem volt tisztában, a nekromanta körül formáló aura azonban életenergiával manipuláló varázslatra vallott, s ez megborzongatta. Az elf nem csupán életüktől képes megfosztani áldozatait, hanem még a halál nyugalmától is! A kántálás egyre erősödött. Alír előhúzta a minap zsákmányolt kézfejet – kékes derengés övezte, akár magát a zöldköpenyest...”"
@@ -17121,18 +17116,30 @@
                                     "Int, Akr, Aszt"
                                 ]
                             ]
-                        },
+                        }
+                    ]
+                },
+                {
+                    "id": "sec_faj",
+                    "title": "Fájdalomtűrés (II – Akaraterő, Állóképesség)",
+                    "content_blocks": [
                         {
-                            "type": "paragraph",
+                            "type": "heading",
                             "text": "Harci képzettségek"
                         },
                         {
                             "type": "paragraph",
-                            "text": "Fájdalomtűrés (II-Akaraterő, Állóképesség)A képzettség birtokosa sokat megélt szívós ember. Képes a teste figyelmeztetéseként jelentkező fájdalmat rövid, vagy hosszú távon lebírni, hogy elméjét tisztán, testét pedig mozgásban tarthassa minél tovább.Az efféle tapasztalatokkal rendelkező karakter hosszútávfutó, harcos, esetleg sokat megélt szerencsevadász, vándor, aki nem riad vissza a hétköznapok jelentette fájdalmaktól, esetleg olyan személy, aki magasabb szinteken nemi gyakorlással már szinte teljesen képes elszakadni testétől, addig sanyargatva, kihasználva annak tartalékait, míg az egyáltalán lehetséges.1. fok A karakter durva közegben nőtt fel, esetleg rendszeresen kénytelen testi épségét kockára tenni, netalántán gyakran kénytelen fizikumát a végleteken túlhajszolva újra és újra felülmúlni önnön teljesítőképessége határait. A karakter bármely esetben, mely tőle Állóképesség vagy Akaraterő próbát követelne meg – kizárólag fizikai kimerültség, ájulás, egyéb fájdalmak elviselése, kínzás stb., de semmiféleképpen mágikus procedúrák, vagy más szellemi beavatkozások ellensúlyozására tett kísérlet esetén – az adott helyzetnél ismertetett módosítók mellett még egyszer -1 módosítóval megismételheti próbáját, az eredeti próba kudarca esetén.2. fok A karakter már igen széleskörű tapasztalatokkal bír bizonyos sérülések fájdalmának leküzdésében. A karakter egy sikeres Akaraterő, vagy Állóképesség próba után figyelmen kívül hagyhatja az Fp sérülések okozta negatív módosítókat. Természetesen újabb sérülések esetén a karakter újabb próbát köteles dobni. Az 1. fokán ismertetett „újradobást” a karakter már csupán az adott szituációban leírt módosítókkal hajtja végre.3. fok A képzettség ezen fokának birtokosa már igazi túlélő. A különböző fájdalmak leküzdésére szolgáló próbáját, illetve a fent ismertetett „újradobást” (az adott szituáció módosítói mellett) immáron +1 módosítóval végezheti el. A karakter egy +1 módosítóval végrehajtott sikeres próba esetén akkor is képes talpon maradni, ha Fp-je nullára csökkenne. Ebben az esetben azonban minden körben köteles elvégezni a próbadobást. Sikertelenség esetén azonnal elájul és meghal a dobás sikerétől függetlenül. Az ilyen szívós személy már könnyedén gyűri le a fájdalmat, Fp-hez szintenként +1 járul.4. fok A képzettség ilyen szintű birtokosa a vonatkozó Tulajdonságpróbáját immáron +2 módosítóval teheti, illetve a korábbiakhoz képest szintenként nem +1, hanem +2 Fp-t kap.5. fok A karakter szinte teljesen érzéketlen a fájdalomra, vonatkozó Tulajdonságpróbáját már +3 módosítóval dobhatja. Szintenként +3 Fp-t kap."
-                        },
+                            "text": "A képzettség birtokosa sokat megélt szívós ember. Képes a teste figyelmeztetéseként jelentkező fájdalmat rövid, vagy hosszú távon lebírni, hogy elméjét tisztán, testét pedig mozgásban tarthassa minél tovább.Az efféle tapasztalatokkal rendelkező karakter hosszútávfutó, harcos, esetleg sokat megélt szerencsevadász, vándor, aki nem riad vissza a hétköznapok jelentette fájdalmaktól, esetleg olyan személy, aki magasabb szinteken nemi gyakorlással már szinte teljesen képes elszakadni testétől, addig sanyargatva, kihasználva annak tartalékait, míg az egyáltalán lehetséges.1. fok A karakter durva közegben nőtt fel, esetleg rendszeresen kénytelen testi épségét kockára tenni, netalántán gyakran kénytelen fizikumát a végleteken túlhajszolva újra és újra felülmúlni önnön teljesítőképessége határait. A karakter bármely esetben, mely tőle Állóképesség vagy Akaraterő próbát követelne meg – kizárólag fizikai kimerültség, ájulás, egyéb fájdalmak elviselése, kínzás stb., de semmiféleképpen mágikus procedúrák, vagy más szellemi beavatkozások ellensúlyozására tett kísérlet esetén – az adott helyzetnél ismertetett módosítók mellett még egyszer -1 módosítóval megismételheti próbáját, az eredeti próba kudarca esetén.2. fok A karakter már igen széleskörű tapasztalatokkal bír bizonyos sérülések fájdalmának leküzdésében. A karakter egy sikeres Akaraterő, vagy Állóképesség próba után figyelmen kívül hagyhatja az Fp sérülések okozta negatív módosítókat. Természetesen újabb sérülések esetén a karakter újabb próbát köteles dobni. Az 1. fokán ismertetett „újradobást” a karakter már csupán az adott szituációban leírt módosítókkal hajtja végre.3. fok A képzettség ezen fokának birtokosa már igazi túlélő. A különböző fájdalmak leküzdésére szolgáló próbáját, illetve a fent ismertetett „újradobást” (az adott szituáció módosítói mellett) immáron +1 módosítóval végezheti el. A karakter egy +1 módosítóval végrehajtott sikeres próba esetén akkor is képes talpon maradni, ha Fp-je nullára csökkenne. Ebben az esetben azonban minden körben köteles elvégezni a próbadobást. Sikertelenség esetén azonnal elájul és meghal a dobás sikerétől függetlenül. Az ilyen szívós személy már könnyedén gyűri le a fájdalmat, Fp-hez szintenként +1 járul.4. fok A képzettség ilyen szintű birtokosa a vonatkozó Tulajdonságpróbáját immáron +2 módosítóval teheti, illetve a korábbiakhoz képest szintenként nem +1, hanem +2 Fp-t kap.5. fok A karakter szinte teljesen érzéketlen a fájdalomra, vonatkozó Tulajdonságpróbáját már +3 módosítóval dobhatja. Szintenként +3 Fp-t kap."
+                        }
+                    ]
+                },
+                {
+                    "id": "sec_fhaszn",
+                    "title": "Fegyverhasználat (III)",
+                    "content_blocks": [
                         {
                             "type": "paragraph",
-                            "text": "Fegyverhasználat (III)Fegyvereket az ősidők hajnalától Ynev minden értelmes faja forgat. Az első eszköz is, mely kóborló őseink kezébe akadt nem szerszám, hanem egy fegyver, kődarab vagy husáng volt. Az alábbiakban annyiféle képzettséget foglaltunk össze, ahány fegyvert a Hetedkor alkonyáig a kontinens földjén halandó kezébe akadhatott. Minden fegyvercsaládhoz, illetve fegyvertípushoz tartozik egy képzettség, mely a forgatásában való jártasság fokmérője. Amikor a játékos eldönti, hogy mely csoportba, illetve mely típusba tartozó fegyverrel kíván bánni, karaktere a Fegyverek táblázatban feltüntetettek közül válogathat. A képzettség alacsonyabb szintjein (1. és 2. fokon) a karakter még csak egy fegyvercsalád forgatásának alapvető technikáit sajátítja el, (a szúrás, vágás vagy zúzás a hasonló felépítésű fegyverek esetén hasonló alapokon nyugszik) azaz képessé válik a csatabárdok, a buzogányok vagy a tőrök stb. forgatására. Magasabb szinteken, a 3. foktól kezdődően pedig a képzettség egy adott harci eszköz használatának titkaiba, trükkjeibe avatja be birtokosát, aki az innen számított bónuszokat már csak a kiválasztott fegyverre kapja meg.A karakterlapon a képzettségek felsorolásakor a Fegyverhasználat képzettség mellet a forgatott fegyvercsaládot is fel kell tüntetni 1. és a 2. fokú alkalmazó esetén, 3. foktól pedig a választott fegyvert, melynek mesterévé kíván válni a játékos karaktere. Például: Fegyverhasználat 2. fok (buzogányok) majd Fegyverhasználat 3. fok (Shadileki buzogány)Ha a karakter nem bír a képzettséggel, akkor azon összecsapásokban, ahol fegyverrel vesz részt a harcban, sújtják a Képzetlen fegyverforgatásból eredő módosítók. (Lásd a Harcrendszer c. fejezetben a 167. oldalt)."
+                            "text": "Fegyvereket az ősidők hajnalától Ynev minden értelmes faja forgat. Az első eszköz is, mely kóborló őseink kezébe akadt nem szerszám, hanem egy fegyver, kődarab vagy husáng volt. Az alábbiakban annyiféle képzettséget foglaltunk össze, ahány fegyvert a Hetedkor alkonyáig a kontinens földjén halandó kezébe akadhatott. Minden fegyvercsaládhoz, illetve fegyvertípushoz tartozik egy képzettség, mely a forgatásában való jártasság fokmérője. Amikor a játékos eldönti, hogy mely csoportba, illetve mely típusba tartozó fegyverrel kíván bánni, karaktere a Fegyverek táblázatban feltüntetettek közül válogathat. A képzettség alacsonyabb szintjein (1. és 2. fokon) a karakter még csak egy fegyvercsalád forgatásának alapvető technikáit sajátítja el, (a szúrás, vágás vagy zúzás a hasonló felépítésű fegyverek esetén hasonló alapokon nyugszik) azaz képessé válik a csatabárdok, a buzogányok vagy a tőrök stb. forgatására. Magasabb szinteken, a 3. foktól kezdődően pedig a képzettség egy adott harci eszköz használatának titkaiba, trükkjeibe avatja be birtokosát, aki az innen számított bónuszokat már csak a kiválasztott fegyverre kapja meg.A karakterlapon a képzettségek felsorolásakor a Fegyverhasználat képzettség mellet a forgatott fegyvercsaládot is fel kell tüntetni 1. és a 2. fokú alkalmazó esetén, 3. foktól pedig a választott fegyvert, melynek mesterévé kíván válni a játékos karaktere. Például: Fegyverhasználat 2. fok (buzogányok) majd Fegyverhasználat 3. fok (Shadileki buzogány)Ha a karakter nem bír a képzettséggel, akkor azon összecsapásokban, ahol fegyverrel vesz részt a harcban, sújtják a Képzetlen fegyverforgatásból eredő módosítók. (Lásd a Harcrendszer c. fejezetben a 167. oldalt)."
                         },
                         {
                             "type": "paragraph",
@@ -17145,13 +17152,7 @@
                         {
                             "type": "paragraph",
                             "text": "2. Méretkategória: – Tőr jellegű (kés, tőr, dzsambia, ököl-tőr, sequor stb.) ***"
-                        }
-                    ]
-                },
-                {
-                    "id": "sec_89",
-                    "title": "Fegyverismeret (II – Intelligencia, Érzékelés)",
-                    "content_blocks": [
+                        },
                         {
                             "type": "paragraph",
                             "text": "3. Méretkategória: Egykezes fegyverek"
@@ -17223,7 +17224,13 @@
                             "type": "rule",
                             "text": "A karakter legendás mestere választott fegyvere forgatásának, sebzéseihez +1 Sp kap és a Túlütés küszöbe 10 ponttal csökken. A karakter a lefegyverző, illetve fegyvertörő támadásait immáron csak –10 TÉ módosítóval hajtja végre, csapásainak, ha a fegyvere bír ilyen képességgel a páncélok –3 SFE-vel állnak ellen. Ha a karakter célzófegyvert használ, akkor képes felkészülni a lövésre. Minden egyes felkészüléssel töltött kör +10 CÉ-t jelent a képzettség birtokosa számára. Hagyományos íjjal lövő lövész 1 körnél, számszeríjjal alkalmazó lövész 3 körnél többet nem tölthet felkészüléssel. A karakter már a hárommal magasabb méretkategóriába eső fegyverekkel szemben is a fegyvere adta, illetve a képzettség nyújtotta plusz pontokkal megnövelt harcértékkel számolhat.",
                             "title": "Fegyverhasználat 5. fok"
-                        },
+                        }
+                    ]
+                },
+                {
+                    "id": "sec_89",
+                    "title": "Fegyverismeret (II – Intelligencia, Érzékelés)",
+                    "content_blocks": [
                         {
                             "type": "paragraph",
                             "text": "Minden valamire való kardforgató, nemesember, bérverekedő, zsoldos vagy fejvadász, esetleg tolvaj vagy orgazda sajátja ez a képzettség, bár magasabb szintű alkalmazói között ősi ereklyéket kutató mágusok és történettudorok is akadnak."
@@ -17273,7 +17280,13 @@
                             "title": "Fegyverismeret 5. fok",
                             "headers": [],
                             "rows": []
-                        },
+                        }
+                    ]
+                },
+                {
+                    "id": "sec_hadv",
+                    "title": "Hadvezetés (III – Intelligencia, Karizma)",
+                    "content_blocks": [
                         {
                             "type": "paragraph",
                             "text": "A Hadvezetés nem a párviadalszerű összecsapások, hanem a csatamezők és háborúk nélkülözhetetlen képzettsége, a tisztek, lovagok és rendszeresen háborúskodó nemesek sajátja. Segítségével csapatokat vezethet, ütközeteket vívhat meg birtokosa, magasabb fokú ismerete esetén pedig (Lélektannal, Térképészettel, Történelemmel, Alakzatharc-cal) alkalmazásával már háborúk levezénylésére, megtervezésére is befoghat. Ez esetben a vezénylendő sereg méretétől és a hadjárat hosszától függően a KM feladata a szükséges képzettségek megállapítása.",
@@ -17378,7 +17391,13 @@
                             "title": "Hadvezetés 5. fok (hadjárat előrejelzés)",
                             "headers": [],
                             "rows": []
-                        },
+                        }
+                    ]
+                },
+                {
+                    "id": "sec_hlaz",
+                    "title": "Harci láz (II – Állóképesség, Egészség)",
+                    "content_blocks": [
                         {
                             "type": "paragraph",
                             "text": "Igen riasztó vagy magasztos külsőségek között jelentkező harci képzettség, amelyet a történelem folyamán majd minden civilizáció és kultúra felfedezett magának. A módszer lényege, hogy a kellőképp feltüzelt harcos nagyobb lelkesedéssel és lendülettel veti magát a csata forgatagába; vadul lobogó, vagy épp fehéren izzó, csendes gyűlölettel koncentrálva fordítja ellenfelei ellen.",
@@ -17413,13 +17432,7 @@
                             "title": "Harci láz 1. fok",
                             "headers": [],
                             "rows": []
-                        }
-                    ]
-                },
-                {
-                    "id": "sec_90",
-                    "title": "Harctéri gyakorlat",
-                    "content_blocks": [
+                        },
                         {
                             "type": "rule",
                             "text": "A gyakorlott alkalmazó az őrjöngés ideje alatt nem esik össze, ha esetleg ÉP-i nullára csökkennek, csak ÉP-i elfogytával veszíti el az eszméletét.",
@@ -17447,14 +17460,13 @@
                             "title": "Őrjöngés 5. fok (fegyver gyorsaság)",
                             "headers": [],
                             "rows": []
-                        },
-                        {
-                            "type": "rule",
-                            "text": "(II – Gyorsaság, Ügyesség, Érzékelés)",
-                            "title": "Harctéri gyakorlat követelmények",
-                            "headers": [],
-                            "rows": []
-                        },
+                        }
+                    ]
+                },
+                {
+                    "id": "sec_90",
+                    "title": "Harctéri gyakorlat (II – Gyorsaság, Ügyesség, Érzékelés)",
+                    "content_blocks": [
                         {
                             "type": "paragraph",
                             "text": "A képzettség birtokosa nem csak vívótermekben, illetve párbajokban fejlesztette harci tudását, hanem valódi csatamezők öldöklő forgatagában is tapasztalatokat szerzett. Nem jön zavarba, ha többen törnek ellene, illetve tudja, miként kezelje a derékig érő víz, a csúszós pallók, a magasabbról hadakozó ellenfél vagy bármely más harci helyzet miatt kialakult kellemetlen helyzeteket. A képzettség nem alkalmazható a sötétség, köd, nagy zaj vagy bármely, az érzékszerveket tompító negatív módosító leküzdésére, ellenben semlegesíthetőek vele a karakter ellen alkalmazott alakzatokból eredő negatív módosítók.",
@@ -17517,14 +17529,13 @@
                             "title": "Harctéri gyakorlat HM bónusz (szintlépéskor)",
                             "headers": [],
                             "rows": []
-                        },
-                        {
-                            "type": "rule",
-                            "text": "(IV – Erő, Gyorsaság, Ügyesség, Akaraterő)",
-                            "title": "Harcművészet követelmények",
-                            "headers": [],
-                            "rows": []
-                        },
+                        }
+                    ]
+                },
+                {
+                    "id": "sec_hmuv",
+                    "title": "Harcművészet (IV – Erő, Gyorsaság, Ügyesség, Akaraterő)",
+                    "content_blocks": [
                         {
                             "type": "paragraph",
                             "text": "A képzettség nem csak harcmodor, de a test-test elleni küzdelem és a harcművész fegyverek használatának tudománya, a lélek összpontosító képességének kifejlesztése. Ezen képzettség segítségével képes a karakter testét és harcművész fegyvereit a Sárkány-harc megkövetelte rendben és harmóniában alkalmazni. Nem Slan felhasználók esetén ez a képzettség teszi igazán veszedelmessé ökölcsapásaikat és rúgásaikat.",
@@ -17605,30 +17616,117 @@
                     ]
                 },
                 {
-                    "id": "sec_91",
-                    "title": "Pusztakezes harc (II – Erő, Ügyesség, Állóképesség)",
+                    "id": "sec_ketkez",
+                    "title": "Kétkezes harc (III – Gyorsaság, Ügyesség)",
                     "content_blocks": [
+                        {
+                            "type": "paragraph",
+                            "text": "Követelmény: Fegyverhasználat ismerete (csak egyszer kell felvenni). Különböző fegyverek esetén az alacsonyabb alkalmazható csak számít. A Harcművészet és a Pusztakezes harc már önmagában kétkezes technikára épít, így Kétkezes harccal nem párosítható."
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "A képzettség a páros fegyverhasználat képességével ruházza fel birtokosait. Alacsonyabb fokú tanulmányok esetén még csak sajátos, egyedi harci stílust mondhatnak magukénak az elsajátítói, de hosszabb tanulás után már halálos kombinációk tárházát képesek felvonultatni."
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "A fegyverek, illetve pengék puszta méretei miatt 4. és 5. Méretkategóriájú két fegyverrel egyszerre nem lehet Kétkezes harcot alkalmazni."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "Kétkezes harc 1. fok",
+                            "text": "1. fok A karakter Harcértékei az alább módosítókat szenvedik el: KÉ: -5, TÉ: -10, VÉ: -10. A karakter Védő értékét az általa választott keze adja, valamint fegyverei eggyel lassabb kategóriába esnek (például a Tőr jellegű fegyverek annyiszor támadnak mint az egykezes kardok)."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "Kétkezes harc 2. fok",
+                            "text": "2. fok A karakter már összehangoltabban dolgozik mindkét kezével. A karakter Védő értékét az általa választott keze adja, azonban mindkét kezével továbbra is a lassabb kategória szerint támadhat."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "Kétkezes harc 3. fok",
+                            "text": "3. fok A karakter már biztosan harcol két fegyverrel is, nincsenek levonásai, VÉ-jét választott keze adja, azonban rosszabbik kezével még mindig csak egy kategóriával lassabban támadhat. Fegyverei immár nem csak kiegészítik, segítik egymást, képes az Ismétlő csel illetve a Kettős védelem használatára. A manővereket a kör elején kell bejelenteni."
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "Ismétlő csel esetén a kiválasztott kézzel egy támadást hajt végre a karakter, melynek sikere esetén nem sebzi meg a célpontot, hanem a támadás sebzését (túlütés esetén duplázódik) hozzáadhatja bónusz Támadó értékként következő támadásához."
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "Kettős védelem esetén a rosszabbik kéz fegyverének támadását feladva a karakter mindkét fegyvere VÉ-jére támaszkodva (ha rendelkezik vele, akkor természetesen a 3. vagy a 4. fokú Fegyverhasználat nyújtotta bónuszokkal együtt) számíthatja ki az adott körre a Védő értékét."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "Kétkezes harc 4. fok",
+                            "text": "4. fok A kétkezes harc mesterének figyelmét már nem kell megosztania fegyverei között, ezért mindkét kezével a fegyver kategóriájának megfelelően támadhat."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "Kétkezes harc 5. fok",
+                            "text": "5. fok A képzettség nagymesterei minden esetben mindkét fegyverük Védő értékének alkalmazásával számíthatják ki teljes VÉ-jüket, akkor is, ha támadnak mindkét fegyverükkel."
+                        }
+                    ]
+                },
+                {
+                    "id": "sec_pajzs",
+                    "title": "Pajzshasználat (II – Erő, Ügyesség)",
+                    "content_blocks": [
+                        {
+                            "type": "paragraph",
+                            "text": "Mind a síkokon vitézkedő seregek, mind a páros összecsapások színterén alapvető harcmodornak számít a pajzs használata, amikor a harcos egyik kezében fegyverrel, a másikban pajzzsal verekszik. A pajzs speciális harceszköz, funkcióját tekintve félúton áll a fegyver és a vértezet között. A vértezethez hasonlóan óvja viselőjét, mégis nem a már sikeres támadások okozta veszteséget mérsékli, inkább elhárítani igyekszik a találatot, akár egy fegyver."
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "Alakjukat és méretüket tekintve a pajzsok rendkívül sokfélék lehetnek, mi azonban az egyszerűség kedvéért három játéktechnikai csoportba soroljuk őket: kis pajzs, melyek VÉ-je 20, közepes pajzsok, melyek VÉ-je 35 és nagy pajzsok, melyeké 50."
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "Ahhoz persze, hogy ezeket a módosítókat élvezhesse a karakter, nem elegendő magára aggatni a pajzsot, de használni is tudni kell a készséget. A pajzs használatát a fegyverforgatáshoz hasonló módon tanulni kell, hogy ne csak a pajzsok súlya adta MGT-t, hanem VÉ-jüket is birtokolja gazdájuk."
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "Két pajzsot forgatni nem kivitelezhetetlen vállalkozás, de maximálisan két kis pajzzsal lehetséges."
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "Ynev majd minden harcosa ért valamilyen szinten e tudományhoz, mégis vitathatatlan bajnokai a lovagrendek soraiból kerülnek ki."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "Pajzshasználat 1. fok",
+                            "text": "1. fok A karakter képes a három pajzstípusból egyet használni (kicsi, közepes vagy nagy), de ekkor a pajzs csak szemből, illetve a pajzsos oldaláról védi hordozóját. A pajzsot viselő karaktert még sújtja a pajzs MGT-je, értéke levonódik a Tulajdonságokból."
+                        },
+                        {
+                            "type": "rule",
+                            "title": "Pajzshasználat 2. fok",
+                            "text": "2. fok A karakter ezen a szinten, már minden pajzstípust használ, viszont, még mindig csak a szemből és a pajzsos oldalról jövő támadások ellen véd."
+                        },
                         {
                             "type": "rule",
                             "text": "3. fok A pajzs ezen a szinten már a fegyverforgató oldaláról is védelmet viselhet, illetve a fegyvernélküli harcértékeivel támadhat is vele, bár ekkor elveszíti a pajzs adta VÉ-t a teljes körre. A manővert a kör elején kell bejelenteni és a karakter bármelyik harci cselekedetének ideje alatt bónusz támadásként végrehajthatja a fegyvertelen támadó értékével. Ha karakter nem rendelkezik külön fegyverrel, vagy csak pajzzsal kíván támadni, úgy a közelharc egykezes fegyver időbeli megszorításai vonatkoznak rá. A pajzs sebzése 1k6+Erőbónusz. A pajzs MGT-je 1 ponttal csökken.",
-                            "title": "Pajzsforgatás 3. fok",
+                            "title": "Pajzshasználat 3. fok",
                             "headers": [],
                             "rows": []
                         },
                         {
                             "type": "rule",
                             "text": "4. fok Ezen a szinten pajzs MGT-je 2 ponttal csökken. Ha a pajzzsal sikeres támadás hajt végre, megpróbálhatja fellökni ellenfelét. Ilyenkor mind a két ellenfele dob, s ha a karakter nagyobb sikert ér el mint ellenfele, a földre döntés sikeres. Amennyiben rendje oktat különleges támadásokat, azok is ezen a szinten válnak számára elérhetővé.",
-                            "title": "Pajzsforgatás 4. fok",
+                            "title": "Pajzshasználat 4. fok",
                             "headers": [],
                             "rows": []
                         },
                         {
                             "type": "rule",
                             "text": "5. fok A pajzs MGT-je immár 3 ponttal csökken, valamint ha támadni kíván a pajzzsal, nem veszíti el annak Védő értékét.",
-                            "title": "Pajzsforgatás 5. fok",
+                            "title": "Pajzshasználat 5. fok",
                             "headers": [],
                             "rows": []
-                        },
+                        }
+                    ]
+                },
+                {
+                    "id": "sec_91",
+                    "title": "Pusztakezes harc (II – Erő, Ügyesség, Állóképesség)",
+                    "content_blocks": [
                         {
                             "type": "paragraph",
                             "text": "A képzettség magában foglalja a puszta kézzel folytatott harc minden fogását. Alacsonyabb szinten egyaránt tartalmazza a bakkéz leszorítás, végtagnyomorító fogásait éppúgy, mint az öklözés és a rúgások alapvető elemeit. Azonban a képzettség hivatásos szintjétől, 3. foktól a karakternek választania kell, hogy a birkózás, vagy az ökölharc (amely magába foglalhat rúgásokat is, ha karakter mesterei ilyen jellegű harci technikákat tanítanak) képességét fejleszti e tovább. Ezt fel kell tüntetnie karakterlapján is, mondjuk pl.: Ökölharc 3. fok. Természetesen arra is van lehetőség, hogy az adott személy mindkét stílusban jártasságot szerezzen; ekkor az adott képzettségszint eléréséhez szükséges Kp mennyiség kétszeresét kell kifizetnie. (Tehát a 3. fokot már kétszer kell felvenni, ha mindkét stílusban járatos akar lenni!)",
@@ -17747,14 +17845,13 @@
                             "title": "Pusztakezes harc 5. fok (Méretkategória)",
                             "headers": [],
                             "rows": []
-                        },
-                        {
-                            "type": "paragraph",
-                            "text": "Pusztítás (III – Erő)",
-                            "title": "Pusztítás (III – Erő)",
-                            "headers": [],
-                            "rows": []
-                        },
+                        }
+                    ]
+                },
+                {
+                    "id": "sec_puszt",
+                    "title": "Pusztítás (III – Erő)",
+                    "content_blocks": [
                         {
                             "type": "paragraph",
                             "text": "A harctéri hatékonyság, a halálosabbnál halálosabb sebek osztásának tudománya. Csak humanoidok ellen (vagy a megfelelő fajra felvett Élettan képzettség ismerete esetén más fajokra is) alkalmazható. Csakis 3-as, vagy nagyobb méretkategóriájú fegyverekre vehető fel. Az egyéb kategória tagjaival, illetve hajtó és célzó fegyverekre nem alkalmazható, fegyvercsaládonként kell felvenni.",
@@ -17775,13 +17872,7 @@
                             "title": "Pusztítás 1. fok",
                             "headers": [],
                             "rows": []
-                        }
-                    ]
-                },
-                {
-                    "id": "sec_92",
-                    "title": "Taktika (II – Érzékelés)",
-                    "content_blocks": [
+                        },
                         {
                             "type": "rule",
                             "text": "A gyakorlott pusztító hatékonysága nő, a túlélés küszöbe 10-zel csökken, csapásai egyre halálosabbá válnak. (Ez a módosító összeadódik a Fegyverhasználat képzettség 5. fokának túlélésküszöböt csökkentő képességével, ha a karakter az utóbbival is bír).",
@@ -17809,21 +17900,13 @@
                             "title": "Pusztító képzettség - 5. fok",
                             "headers": [],
                             "rows": []
-                        },
-                        {
-                            "type": "paragraph",
-                            "text": "továbbra is csak maximum egy vagy kettő kis-egységes alakzat.",
-                            "title": "",
-                            "headers": [],
-                            "rows": []
-                        },
-                        {
-                            "type": "paragraph",
-                            "text": "A reguláris hadseregek elitcsapatai általában 3. fokon képzett harcosokból állnak; a fejlett hadszervezetükről híres országokban, például Abasziszban – minden katona ilyen szintű kiképzésben részesül.",
-                            "title": "",
-                            "headers": [],
-                            "rows": []
-                        },
+                        }
+                    ]
+                },
+                {
+                    "id": "sec_92",
+                    "title": "Taktika (II – Érzékelés)",
+                    "content_blocks": [
                         {
                             "type": "paragraph",
                             "text": "A harcmezők vagy bármiféle összecsapás túlélésének záloga, ha társaiddal együtt, egymást segítve harcoltok. Ez a felismerés késztette Ynev fegyverforgatóit, hogy alakzatok formálásával nemesítsék az egyéni párviadalok zűrzavarából nagyobb egységek összecsapásává a többszereplős kézitusaát.",
@@ -17882,20 +17965,6 @@
                         },
                         {
                             "type": "rule",
-                            "text": "A képzettség ezen fokán a karakter már képes viszonylag gyorsan alkalmazkodni – sikeres Érzékelésproba esetén – bármely harci alakzathoz, s részt venni azok működésében anélkül, hogy akadályozná annak működését. Igaz, ekkor sem kapja meg az alakzatok nyújtotta előnyöket.",
-                            "title": "Taktika képzettség - 4. fok",
-                            "headers": [],
-                            "rows": []
-                        },
-                        {
-                            "type": "rule",
-                            "text": "A karakter már egy-két kör alatt képes alkalmazkodni Ynev bármely harci alakzatához – sikeres Érzékelésproba esetén. Ekkor nem csak, hogy nem akadályozza az alakzat működését, de hatásos részvételével részesül a taktika nyújtotta előnyökből.",
-                            "title": "Taktika képzettség - 5. fok",
-                            "headers": [],
-                            "rows": []
-                        },
-                        {
-                            "type": "rule",
                             "text": "A képzettség 1. fokú ismerete összesen egy harci alakzat ismeretét biztosítja a karakternek a legegyszerűbbek és a legalapvetőbbek közül.",
                             "title": "Taktika képzettség - 1. fok",
                             "headers": [],
@@ -17912,6 +17981,34 @@
                             "type": "rule",
                             "text": "A képzettség 3. foka minőségi változást hoz: a karakter immáron öt harci alakzat ismer. Ezekből általában",
                             "title": "Taktika képzettség - 3. fok",
+                            "headers": [],
+                            "rows": []
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "továbbra is csak maximum egy vagy kettő kis-egységes alakzat.",
+                            "title": "",
+                            "headers": [],
+                            "rows": []
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "A reguláris hadseregek elitcsapatai általában 3. fokon képzett harcosokból állnak; a fejlett hadszervezetükről híres országokban, például Abasziszban – minden katona ilyen szintű kiképzésben részesül.",
+                            "title": "",
+                            "headers": [],
+                            "rows": []
+                        },
+                        {
+                            "type": "rule",
+                            "text": "A képzettség ezen fokán a karakter már képes viszonylag gyorsan alkalmazkodni – sikeres Érzékelésproba esetén – bármely harci alakzathoz, s részt venni azok működésében anélkül, hogy akadályozná annak működését. Igaz, ekkor sem kapja meg az alakzatok nyújtotta előnyöket.",
+                            "title": "Taktika képzettség - 4. fok",
+                            "headers": [],
+                            "rows": []
+                        },
+                        {
+                            "type": "rule",
+                            "text": "A karakter már egy-két kör alatt képes alkalmazkodni Ynev bármely harci alakzatához – sikeres Érzékelésproba esetén. Ekkor nem csak, hogy nem akadályozza az alakzat működését, de hatásos részvételével részesül a taktika nyújtotta előnyökből.",
+                            "title": "Taktika képzettség - 5. fok",
                             "headers": [],
                             "rows": []
                         },
@@ -17942,13 +18039,7 @@
                             "title": "Kráni pusztító ék módosítói és szabályai",
                             "headers": [],
                             "rows": []
-                        }
-                    ]
-                },
-                {
-                    "id": "sec_93",
-                    "title": "Sün",
-                    "content_blocks": [
+                        },
                         {
                             "type": "rule",
                             "text": "Hasonló mint a pajzsfal, de nem támadásra, hanem védekezésre használatos. Ennek alkalmazásához kevesebb katona is elég, de minimum 5 szükséges. A technika lényegében megegyezik a pajzsfal-lal, ám jelen esetben az alakzat minden oldalán felülről a pajzsok alkotta védmű. Legelterjedtebb formái a háromszög, négyszög és kör. A középen állók, akiknek társuk élesítésig nincs feladatuk, pajzsaikat fejük fölé emelik, ezzel is megnehezítve az ellenfél íjászainak, parittyásainak dolgát. Az ilyen alakzat nehezen mozog, hiszen tagjai különböző irányokba néznek, haladniuk azonban egy irányba, egyszerre kellene. Védekezéshez viszont ideális: a szálfegyverek nyelének földbetámasztásával a lovasrohamot is képes megtörni, a gyalogos ellenfelek támadását pedig még inkább megnehezíti. A formációban állók VÉ-je –20-szal nő, célzott fegyverek ellen +50-nel. Ha netán haladni akarnának, úgy csak a pajzsfalból származó előnyöket kapják meg.",
