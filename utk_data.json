@@ -12875,17 +12875,7 @@
                         },
                         {
                             "type": "paragraph",
-                            "text": "Az Ezer Fátyol Nővérei boszorkányszektája alapításának ideje a múlt homályába vész, és sokan a dzsenn mára kihalt női mágiájának örökségét látják bennük. Az egyes ősi tekercsek és vésetek azonban arról árulkodnak, hogy a szekta első mágiaforgatói a területen kóborló nomád embernépek vajákos asszonyai közül kerültek ki, kik törzseik ősi földanykultuszát ápolták és a déli nomádok sámánjaihoz hasonló kultikus szertartásokat.",
-                            "title": "",
-                            "headers": [],
-                            "rows": []
-                        },
-                        {
-                            "type": "paragraph",
-                            "text": "repet töltöttek be nemzettségeik életében. Az nem bizonyos azonban, – s egyes vérmesebb helyeken az efféle feltételezés is karóba húzás érdemlő rémségnek számít –, hogy kapcsolat áll-e fent Tallaren, az elf Kék Hadúr álomtáncosai és a dzsadok varázstudói között az emberek mágiájának fejlődését tekintve. Lar-Dor bölcsei arra a véleményre hajlanak, hogy a törzsek boszorkányai az álomtáncosoktól lesték el különleges varázstáncuk alapjait, mivel mindkét irányzat ereje a térben felrajzolt, a tánc során megjelenített rúnák delejes hatalmában rejlik. Mivel így nem csak megragadják, de bezárók közé zárva újra is formázzák a rúna vonalai által körbekerített szövedékét. A szekta ezen misztikus táncmágiáról kapta nevét is.",
-                            "title": "",
-                            "headers": [],
-                            "rows": []
+                            "text": "Az Ezer Fátyol Nővérei boszorkányszektája alapításának ideje a múlt homályába vész, és sokan a dzsenn mára kihalt női mágiájának örökségét látják bennük. Az egyes ősi tekercsek és vésetek azonban arról árulkodnak, hogy a szekta első mágiaforgatói a területen kóborló nomád embernépek vajákos asszonyai közül kerültek ki, kik törzseik ősi földanykultuszát ápolták és a déli nomádok sámánjaihoz hasonló kultikus szerepet töltöttek be nemzetségeik életében. Az nem bizonyos azonban, – s egyes vérmesebb helyeken az efféle feltételezés is karóba húzás érdemlő rémségnek számít –, hogy kapcsolat áll-e fent Tallaren, az elf Kék Hadúr álomtáncosai és a dzsadok varázstudói között az emberek mágiájának fejlődését tekintve. Lar-Dor bölcsei arra a véleményre hajlanak, hogy a törzsek boszorkányai az álomtáncosoktól lesték el különleges varázstáncuk alapjait, mivel mindkét irányzat ereje a térben felrajzolt, a tánc során megjelenített rúnák delejes hatalmában rejlik. Mivel így nem csak megragadják, de bezárók közé zárva újra is formázzák a rúna vonalai által körbekerített szövedékét. A szekta ezen misztikus táncmágiáról kapta nevét is."
                         },
                         {
                             "type": "paragraph",
@@ -14372,13 +14362,41 @@
                             "title": "",
                             "headers": [],
                             "rows": []
-                        },
+                        }
+                    ]
+                },
+                {
+                    "id": "sec_77b",
+                    "title": "Tűz Harcosai Rend",
+                    "section_title": "",
+                    "content_blocks": [
                         {
                             "type": "paragraph",
-                            "text": "érdekében a Sogron által megszentelt mágikus tárgyakra cserélik le.",
+                            "text": "A Tűz Harcosai Rend felelős Ordan és az azon kívüli templomok, rendházak védelméért. Ők képzik fegyverforgatásra az Ordani Rend minden tagját. A Tűz Harcosai Rendet a Pusztító Tűz Útjára lépett tűzvarázslók irányítják, akik főként a hadi taktikában és a Tűzmágia harctéri alkalmazásában jeleskednek, hiszen a Lángörök és a Főnixek között akadnak náluk is különb fegyverforgatók.",
                             "title": "",
                             "headers": [],
                             "rows": []
+                        },
+                        {
+                            "type": "rule",
+                            "text": "A Lángörök különleges harcos irányzat, akik a tűzvarázslókkal való együttműködést vitték tökélyre. A Tűz Harcosai Rendbe történő felvételükkor nem avatják őket tűzvarázslóvá, azonban minden szükséges képzést megkapnak, ide értve a Tapasztalati mágia (tűzvarázsló), Ősi nyelv (kyr, godoni), illetve a Pszi (pyarroni) oktatását. Ezeknek a harcosoknak, ha bírnak a Tapasztalati mágia (tűzvarázsló) képzettség 3. fokával, akkor lehetőségük nyílik tetteiket és hitüket megmérettetve felvételüket kérni a Tűz Harcosai Rend tűzvarázslói közé. Ha a mesterek és Sogron is akaratával egyezőnek érzi ezt a kérést, akkor a jelentkezőt felavatják és megkapja a Mágikus fogékonyság Hátteret, innentől kezdve vásárolhat KAP-jaikból Mana pontokat és alkalmazhatja a Tűzmágiát.",
+                            "title": "Lángörök Felvétel és Képzés",
+                            "headers": [],
+                            "rows": []
+                        }
+                    ]
+                },
+                {
+                    "id": "sec_77c",
+                    "title": "A Pusztító Tűz Útja",
+                    "content_blocks": [
+                        {
+                            "type": "heading",
+                            "text": "Sogron misztériumának irányzatai"
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "Ezen irányzat követői az 5. Tapasztalati szint elérése után, ha KM is úgy ítéli meg, felvételt nyerhetnek Ordan elitkatonái közé. Ekkor fegyverzetüket hatékonyságuk növelése érdekében a Sogron által megszentelt mágikus tárgyakra cserélik le."
                         },
                         {
                             "type": "paragraph",
@@ -14400,7 +14418,13 @@
                             "title": "",
                             "headers": [],
                             "rows": []
-                        },
+                        }
+                    ]
+                },
+                {
+                    "id": "sec_77d",
+                    "title": "Sogron Útja",
+                    "content_blocks": [
                         {
                             "type": "paragraph",
                             "text": "A Sogron Útját járó tűzvarázslók magasabb szinteken – 5. Tapasztalati szint felett – beavatatást nyerhetnek Sogron szakrális misztériumaiba. Azaz a KM beleegyezésével, utólag megkapják a Kegyelt Hátteret, s ekkor a Vallásismeret képzettség 3. fokának elsajátításával és a beavatási szertartások elvégzése után Sogron papjává emelkedhetnek.",
@@ -14432,34 +14456,6 @@
                         {
                             "type": "paragraph",
                             "text": "Az ilyen megtiszteltetésben részesült tűzvarázslók nem csak a nyakukban hordott vándormécsest kapják meg szent szimbólumukként, melyben egy Sogronnak szentelt örökláng lobog, hanem testük valamely részére ábrázolva a fejtetőre Sogron valamely ábrázolása, leggyakrabban egy kitárt csuklyájú kobra tetoválása is felkerül, mely szintén működhet szent szimbólumként.",
-                            "title": "",
-                            "headers": [],
-                            "rows": []
-                        }
-                    ]
-                },
-                {
-                    "id": "sec_77b",
-                    "title": "Tűz Harcosai Rend",
-                    "section_title": "",
-                    "content_blocks": [
-                        {
-                            "type": "paragraph",
-                            "text": "A Tűz Harcosai Rend felelős Ordan és az azon kívüli templomok, rendházak védelméért. Ők képzik fegyverforgatásra az Ordani Rend minden tagját. A Tűz Harcosai Rendet a Pusztító Tűz Útjára lépett tűzvarázslók irányítják, akik főként a hadi taktikában és a Tűzmágia harctéri alkalmazásában jeleskednek, hiszen a Lángörök és a Főnixek között akadnak náluk is különb fegyverforgatók.",
-                            "title": "",
-                            "headers": [],
-                            "rows": []
-                        },
-                        {
-                            "type": "rule",
-                            "text": "A Lángörök különleges harcos irányzat, akik a tűzvarázslókkal való együttműködést vitték tökélyre. A Tűz Harcosai Rendbe történő felvételükkor nem avatják őket tűzvarázslóvá, azonban minden szükséges képzést megkapnak, ide értve a Tapasztalati mágia (tűzvarázsló), Ősi nyelv (kyr, godoni), illetve a Pszi (pyarroni) oktatását. Ezeknek a harcosoknak, ha bírnak a Tapasztalati mágia (tűzvarázsló) képzettség 3. fokával, akkor lehetőségük nyílik tetteiket és hitüket megmérettetve felvételüket kérni a Tűz Harcosai Rend tűzvarázslói közé. Ha a mesterek és Sogron is akaratával egyezőnek érzi ezt a kérést, akkor a jelentkezőt felavatják és megkapja a Mágikus fogékonyság Hátteret, innentől kezdve vásárolhat KAP-jaikból Mana pontokat és alkalmazhatja a Tűzmágiát.",
-                            "title": "Lángörök Felvétel és Képzés",
-                            "headers": [],
-                            "rows": []
-                        },
-                        {
-                            "type": "paragraph",
-                            "text": "Ezen irányzat követői az 5. Tapasztalati szint elérése után, ha KM is úgy ítéli meg, felvételt nyerhetnek Ordan elitkatonái közé. Ekkor fegyverzetüket hatékonyságuk növelése",
                             "title": "",
                             "headers": [],
                             "rows": []
@@ -14552,14 +14548,7 @@
                         },
                         {
                             "type": "paragraph",
-                            "text": "A tűzmesterek azonban – korlátaikat felismerve – emberöltők óta keresik a sogronita szeráfi alku eredeti szövegét, egyszersmind gátlástalanul kísérleteznek a tűz és a Boszorkánymesteri mágia megidézési formáinak varázslataival. A céh, bár erősen megkérdőjelezhető módszerrel ugyan, de számottevő haladást ért el a lángtetoválások és az idők során sűrített rajzolatok kidolgozása terén is, melyek alkalmazásával a jelölt meglehetősen gyorsan és csekély erőfeszítéssel haladhat"
-                        },
-                        {
-                            "type": "paragraph",
-                            "text": "előre az Őselemi Tűz uralásának ösvényén. A módszer igen hatékony, azonban nem kis hátránya, hogy a toroni nekromantikusok átvett alkalmazása miatt alkalmazása valósággal habzsolja az életerőt.",
-                            "title": "",
-                            "headers": [],
-                            "rows": []
+                            "text": "A tűzmesterek azonban – korlátaikat felismerve – emberöltők óta keresik a sogronita szeráfi alku eredeti szövegét, egyszersmind gátlástalanul kísérleteznek a tűz és a Boszorkánymesteri mágia megidézési formáinak varázslataival. A céh, bár erősen megkérdőjelezhető módszerrel ugyan, de számottevő haladást ért el a lángtetoválások és az idők során sűrített rajzolatok kidolgozása terén is, melyek alkalmazásával a jelölt meglehetősen gyorsan és csekély erőfeszítéssel haladhat előre az Őselemi Tűz uralásának ösvényén. A módszer igen hatékony, azonban nem kis hátránya, hogy a toroni nekromantikusok átvett alkalmazása miatt alkalmazása valósággal habzsolja az életerőt."
                         },
                         {
                             "type": "paragraph",
