@@ -26576,7 +26576,7 @@
                 },
                 {
                     "id": "sec_129",
-                    "title": "Hajítófegyverek",
+                    "title": "Nyeles fegyverek",
                     "content_blocks": [
                         {
                             "type": "paragraph",
@@ -26593,7 +26593,13 @@
                         {
                             "type": "paragraph",
                             "text": "Pika (39): Északon – főleg Abasziszban és Toronban – kialakult fegyver, a lándzsának egy egészen különleges válfaja. Az a két és fél ynevnyi láb hosszú döfőalkalmatosság félméteres lándzsa. A kétlábnyi nyél végére erősíti a fél lábnyi, szögletes keresztmetszetű, vékony szurony, amit ugyan nem éleznek el, de annál hegyesebbre fennek. A nyárs tövében kis, kerek fémlap található, ami a védekezést, az ellenfél fegyverének megakasztását szolgálja. Elkészítése nagyon egyszerű és olcsó, mindazonáltal hihetetlenül hatékony lovasok ellen, ezért Abasziszban és Toronban a hadsereg nagy részét ilyen fegyverrel látják el. A pika az Északi Szövetség országaiban is ismert, ott azonban kevésbé használatos."
-                        },
+                        }
+                    ]
+                },
+                {
+                    "id": "sec_hajito",
+                    "title": "Hajítófegyverek",
+                    "content_blocks": [
                         {
                             "type": "paragraph",
                             "text": "Dobótőr (42): Különlegesen kiképzett tőr, aminek súlyelosztása jó dobóhatóságot tesz lehetővé. Kétélű, keresztvasa kicsi vagy egyáltalán nincs is. Gyakran egyetlen fémdarabból készül, és nem vonják be külön a markolatot."
@@ -26647,13 +26653,7 @@
                         {
                             "type": "paragraph",
                             "text": "Ramiera (49): A gorviki fejvadászok közkedvelt fegyvere, bár Gorvikon belül szinte népviseletnek számít mindenütt. Különösen hosszú, egyenes, lassan elvékonyodó, borotvaéles tőr, tartása biztos, egyensúlya kitűnő."
-                        }
-                    ]
-                },
-                {
-                    "id": "sec_131",
-                    "title": "Célzófegyverek",
-                    "content_blocks": [
+                        },
                         {
                             "type": "paragraph",
                             "text": "keskeny keresztvassal. Nem gorviki kezében csak tőrként forgathat."
@@ -26661,7 +26661,13 @@
                         {
                             "type": "paragraph",
                             "text": "A legáltalánosabb fegyver szerte Yneven. Rengeteg különböző formája van, de pengéje nem haladja meg a 40 ynevi hüvelyket. Azonban mindig szúrásra alkalmas, kétélű penge, mely szinte mindig ujjvédővel is el van látva."
-                        },
+                        }
+                    ]
+                },
+                {
+                    "id": "sec_131",
+                    "title": "Célzófegyverek",
+                    "content_blocks": [
                         {
                             "type": "paragraph",
                             "text": "Az ebbe a kategóriába tartozó fegyverek mind valamiféle lövedék kilövésére szolgálnak. A M.A.G.U.S.-ban az összes ilyen fegyver használatakor nem a karakter TÉ-je, hanem CÉ-je a mérvadó. Vonatkozik rájuk továbbá az íjászszabály is. A lőfegyvereknek számos előnye van. Ezek közül a legnyilvánvalóbb az, hogy az íjat, nyílpuskát használó karakter képes úgy támadni, hogy őt nem támadják."
@@ -26720,75 +26726,8 @@
                     ]
                 },
                 {
-                    "id": "sec_132",
-                    "title": "A Hitvallás Ereje",
-                    "content_blocks": [
-                        {
-                            "type": "flavor_text",
-                            "text": "A hit nem csupán szó, hanem tett, mely hegyeket mozdít és isteneket hív. Aki igazán hisz, annak ereje túlszárnyalja a halandó korlátokat. - Ismeretlen papírnok"
-                        },
-                        {
-                            "type": "paragraph",
-                            "text": "A M.A.G.U.S. világában a hit nem csupán vallási meggyőződés, hanem valós, tapintható erőforrás, melyet a papok, szerzetesek és más istenhívők használnak. A hitvallás ereje a karakter istenével való kapcsolatának mélységétől függ, és közvetlenül befolyásolja a liturgiák hatékonyságát, valamint bizonyos képességek erejét."
-                        },
-                        {
-                            "type": "paragraph",
-                            "text": "A hitvallás szintje a karakter tapasztalati pontjainak elköltésével növelhető, vagy bizonyos isteni küldetések teljesítésével. Fontos megjegyezni, hogy az istenek haragja súlyos következményekkel járhat a hűtlenek számára."
-                        }
-                    ]
-                },
-                {
-                    "id": "sec_133",
-                    "title": "Ranagol",
-                    "content_blocks": [
-                        {
-                            "type": "flavor_text",
-                            "text": "A sötétség úrnője, a halál és a pusztulás istennője. Az ő árnyéka borul mindenre, ami elmúlik, és az ő lehelete fagyasztja meg a szíveket. Ne keress benne irgalmat, mert csak a végtelen éjszaka vár rád."
-                        },
-                        {
-                            "type": "paragraph",
-                            "text": "Ranagol, a Sötétség Úrnője, Ynev egyik legősibb és legrettegettebb istensége. Kultusza titokban virágzik a romlott városokban és a sötét erdők mélyén. Papjai, a fekete papok, a halál és a pusztulás hírnökei, akik az istennő akaratát hajtják végre a halandók világában. Hatalmuk a félelemből és a kétségbeesésből táplálkozik, és céljuk a rend felborítása, a káosz elterjesztése."
-                        },
-                        {
-                            "type": "table",
-                            "title": "Ranagol papjainak képzettségei",
-                            "headers": [
-                                "Képzettség",
-                                "Szint",
-                                "Leírás"
-                            ],
-                            "rows": [
-                                [
-                                    "Halálérzék",
-                                    "Alap",
-                                    "Érzékeli a halál közelségét."
-                                ],
-                                [
-                                    "Árnyékjárás",
-                                    "Mester",
-                                    "Képes az árnyékokban rejtőzni."
-                                ],
-                                [
-                                    "Félelemkeltés",
-                                    "Alap",
-                                    "Rettegést kelt az ellenfelekben."
-                                ],
-                                [
-                                    "Méregkészítés",
-                                    "Mester",
-                                    "Különféle mérgek előállítása."
-                                ]
-                            ]
-                        },
-                        {
-                            "type": "paragraph",
-                            "text": "A Sötétség Úrnője hűséges követőit hatalommal és tudással jutalmazza, de cserébe teljes odaadást és engedelmességet vár el. Azok, akik elfordulnak tőle, vagy megkérdőjelezik akaratát, szörnyű sorsra számíthatnak, lelkük örökre a sötétségben bolyong majd."
-                        }
-                    ]
-                },
-                {
                     "id": "sec_134",
-                    "title": "Egyéb fegyverek",
+                    "title": "Pajzsok",
                     "content_blocks": [
                         {
                             "type": "table",

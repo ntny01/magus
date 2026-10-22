@@ -51,6 +51,7 @@
             --ink: #f2dc93;
         }
         * { box-sizing: border-box; margin: 0; padding: 0; -webkit-tap-highlight-color: transparent; }
+        [hidden] { display: none !important; }
         *{scrollbar-width:thin;scrollbar-color:rgba(224,184,74,.35) transparent}
         *::-webkit-scrollbar{width:8px;height:8px}
         *::-webkit-scrollbar-thumb{background:rgba(224,184,74,.3);border-radius:5px}
@@ -85,6 +86,29 @@
             padding: .4rem .6rem; font-size: .85rem; font-family: inherit; max-width: 46vw;
         }
         .sel:focus { outline: none; border-color: var(--accent); }
+        #roomBtn { cursor: pointer; white-space: nowrap; }
+        .room-wrap { position: relative; }
+        .room-panel {
+            position: absolute; top: calc(100% + .4rem); right: 0; z-index: 60;
+            width: min(300px, 86vw); background: var(--panel); border: 1px solid var(--border-2);
+            border-radius: 12px; padding: .8rem; box-shadow: 0 14px 40px rgba(0,0,0,.5);
+            display: flex; flex-direction: column; gap: .7rem;
+        }
+        .rp-sec { display: flex; flex-direction: column; gap: .4rem; }
+        .rp-lbl { font-size: .68rem; text-transform: uppercase; letter-spacing: .08em; color: var(--muted); }
+        .rp-row { display: flex; gap: .4rem; }
+        .rp-row .txt { flex: 1; min-width: 0; }
+        .rp-msg { font-size: .76rem; color: var(--muted); min-height: 1em; }
+        .rp-msg.bad { color: #f87171; }
+        .rp-mine { display: flex; flex-direction: column; gap: .3rem; max-height: 180px; overflow-y: auto; }
+        .rp-room { display: flex; align-items: center; gap: .4rem; background: var(--panel-2); border: 1px solid var(--border);
+            border-radius: .5rem; padding: .35rem .5rem; cursor: pointer; font-size: .82rem; }
+        .rp-room:hover { border-color: var(--accent); }
+        .rp-room .rp-code { margin-left: auto; font-family: ui-monospace, monospace; color: var(--accent); letter-spacing: .08em; font-size: .78rem; }
+        .rp-sep { height: 1px; background: var(--border); }
+        .room-chip { display: inline-flex; align-items: center; gap: .4rem; background: var(--accent-soft);
+            border: 1px solid rgba(224,184,74,.35); color: var(--ink); border-radius: 999px; padding: .25rem .6rem;
+            font-size: .82rem; font-weight: 600; max-width: 46vw; overflow: hidden; }
         /* Inline (iframe) mód a Karakter Segéden: rejtett márkajel, tömörebb */
         body.embed header .brand, body.embed .back-btn, body.embed .user-chip { display: none !important; }
         body.embed header { padding: .5rem .7rem; }
@@ -231,6 +255,11 @@
         <div class="h-spacer"></div>
         <select id="campSelect" class="sel" title="Kampány" aria-label="Kampány"></select>
         <select id="charSelect" class="sel" title="Karakter" aria-label="Karakter"></select>
+        <span id="roomChip" class="room-chip" hidden></span>
+        <div class="room-wrap">
+            <button id="roomBtn" class="sel" type="button" aria-haspopup="true" aria-expanded="false">🔑 Szoba ▾</button>
+            <div id="roomPanel" class="room-panel" hidden></div>
+        </div>
         <div class="user-chip"><span class="ua" id="userAv"></span><span class="un" id="userName"></span><button class="mg-btn mg-btn--danger" onclick="doLogout()">Kilépés</button></div>
     </header>
 
@@ -290,8 +319,13 @@
             chars: [], charId: null,
             pool: {}, modifier: 0,
             profiles: {},           // user_id -> {display_name, avatar}
-            channel: null, loaded: false
+            channel: null, memChannel: null, loaded: false,
+            // --- szoba mód ---
+            mode: 'campaign',       // 'campaign' | 'room'
+            roomId: null, roomName: '', roomIsOwner: false, roomCode: null,
+            roomProfiles: {}        // user_id -> {display_name, avatar} a room_members-ből
         };
+        function roomMode() { return DR.mode === 'room'; }
         var $ = function (id) { return document.getElementById(id); };
         function esc(s) { return String(s == null ? '' : s).replace(/[&<>"']/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]; }); }
         function sb() { return window._sb; }
@@ -357,6 +391,9 @@
             $('rollBtn').onclick = doRoll;
             $('archiveClose').onclick = function () { $('archiveOverlay').classList.remove('open'); };
             $('archiveOverlay').onclick = function (e) { if (e.target === this) this.classList.remove('open'); };
+            $('roomBtn').onclick = toggleRoomPanel;
+            document.addEventListener('click', function (e) { if (!e.target.closest('.room-wrap')) closeRoomPanel(); });
+            document.addEventListener('keydown', function (e) { if (e.key === 'Escape') closeRoomPanel(); });
         }
 
         function setMod(v) { DR.modifier = v | 0; $('modInput').value = DR.modifier; }
@@ -411,10 +448,11 @@
                     };
                 });
                 if (!DR.campaigns.length) {
-                    showBanner(memErr
-                        ? '⚠️ Nem sikerült betölteni a kampányokat: ' + esc(memErr.message)
-                        : 'Nem vagy tagja egyetlen kampánynak sem. A kalandmester tud hozzáadni egy kampányhoz — utána tudsz ide dobni.');
-                    $('rollerCard').style.display = 'none'; $('feedCard').style.display = 'none';
+                    DR.campId = null;
+                    $('campSelect').style.display = 'none'; $('charSelect').style.display = 'none';
+                    if (memErr) showBanner('⚠️ Nem sikerült betölteni a kampányokat: ' + esc(memErr.message));
+                    renderFeedTools();
+                    $('feed').innerHTML = '<div class="feed-empty">Nincs kampányod. Lépj be egy szobába a 🔑 Szoba gombbal, vagy kérd a KM-et, hogy adjon kampányhoz.</div>';
                     return;
                 }
                 var byChar = WANT_CHAR ? DR.campaigns.find(function (c) { return c.charIds.has(WANT_CHAR); }) : null;
@@ -466,7 +504,7 @@
         function doRoll() {
             var arr = poolArray();
             if (!arr.length) { $('pool').animate([{ opacity: .3 }, { opacity: 1 }], 260); return; }
-            if (!DR.campId) return;
+            if (roomMode()) { if (!DR.roomId) return; } else { if (!DR.campId) return; }
             var res = MagusDice.rollPool(arr, DR.modifier);
             var label = $('labelInput').value.trim();
             var traw = $('targetInput').value.trim();
@@ -481,20 +519,33 @@
                 var mark = isFail ? 'fail' : isCrit ? 'crit' : isHit ? 'hit' : 'miss';
                 return { sides: d.sides, value: d.value, mark: mark };
             });
+            var noteTail = (target != null ? '  •  cél ' + target : '');
+            var table, payload;
+            if (roomMode()) {
+                table = 'room_rolls';
+                payload = {
+                    room_id: DR.roomId, user_id: window._userId, display_name: myName(),
+                    dice: diceOut, modifier: res.modifier, total: res.total, target: target,
+                    notation: (label ? label + ' · ' : '') + res.notation + noteTail
+                };
+            } else {
+                table = 'dice_rolls';
+                payload = {
+                    campaign_id: DR.campId, user_id: window._userId, char_id: DR.charId, char_name: curCharName(),
+                    label: label || null, notation: res.notation + noteTail,
+                    dice: diceOut, modifier: res.modifier, total: res.total
+                };
+            }
             var btn = $('rollBtn'); btn.disabled = true; btn.textContent = 'DOBÁS…';
-            sb().from('dice_rolls').insert({
-                campaign_id: DR.campId,
-                user_id: window._userId,
-                char_id: DR.charId,
-                char_name: curCharName(),
-                label: label || null,
-                notation: res.notation + (target != null ? '  •  cél ' + target : ''),
-                dice: diceOut,
-                modifier: res.modifier,
-                total: res.total
-            }).select().then(function (r) {
+            sb().from(table).insert(payload).select().then(function (r) {
                 btn.disabled = false; btn.textContent = 'DOBÁS';
-                if (r.error) { showBanner('⚠️ A dobás mentése nem sikerült: ' + esc(r.error.message) + ' (futott már a dice_rolls.sql?)'); return; }
+                if (r.error) {
+                    var m = r.error.message || '';
+                    if (roomMode() && /row-level security|policy|member|permission/i.test(m)) {
+                        leaveRoom('⚠️ Kiléptél vagy lecserélték a kódot — lépj be újra a 🔑 Szoba gombbal.'); return;
+                    }
+                    showBanner('⚠️ A dobás mentése nem sikerült: ' + esc(m)); return;
+                }
                 // Azonnali visszajelzés a sajátunkról (a realtime-echo id alapján dedupol).
                 if (r.data && r.data[0]) prependRoll(r.data[0]);
             });
@@ -503,18 +554,24 @@
         /* ---------- Feed ---------- */
         function loadFeed() {
             var feed = $('feed'); feed.innerHTML = '<div class="feed-empty">Betöltés…</div>';
-            sb().from('dice_rolls').select('id, user_id, char_name, label, notation, dice, modifier, total, created_at')
-                .eq('campaign_id', DR.campId).is('archived_at', null)
-                .order('created_at', { ascending: false }).limit(60)
-                .then(function (r) {
-                    if (r.error) { feed.innerHTML = '<div class="feed-empty">⚠️ ' + esc(r.error.message) + '</div>'; return; }
-                    var rows = r.data || [];
-                    ensureProfiles(rows.map(function (x) { return x.user_id; })).then(function () {
-                        if (!rows.length) { feed.innerHTML = '<div class="feed-empty">Még nincs dobás ebben a menetben.</div>'; return; }
-                        feed.innerHTML = '';
-                        rows.forEach(function (row) { feed.appendChild(rollEl(row, false)); });
-                    });
+            var q;
+            if (roomMode()) {
+                q = sb().from('room_rolls').select('id, user_id, display_name, notation, dice, modifier, total, created_at')
+                    .eq('room_id', DR.roomId).is('archived_at', null).order('created_at', { ascending: false }).limit(60);
+            } else {
+                if (!DR.campId) { feed.innerHTML = '<div class="feed-empty">Nincs kampányod. Lépj be egy szobába a 🔑 Szoba gombbal.</div>'; return; }
+                q = sb().from('dice_rolls').select('id, user_id, char_name, label, notation, dice, modifier, total, created_at')
+                    .eq('campaign_id', DR.campId).is('archived_at', null).order('created_at', { ascending: false }).limit(60);
+            }
+            q.then(function (r) {
+                if (r.error) { feed.innerHTML = '<div class="feed-empty">⚠️ ' + esc(r.error.message) + '</div>'; return; }
+                var rows = r.data || [];
+                ensureIdentity(rows.map(function (x) { return x.user_id; })).then(function () {
+                    if (!rows.length) { feed.innerHTML = '<div class="feed-empty">Még nincs dobás ebben a menetben.</div>'; return; }
+                    feed.innerHTML = '';
+                    rows.forEach(function (row) { feed.appendChild(rollEl(row, false)); });
                 });
+            });
         }
 
         function ensureProfiles(ids) {
@@ -535,7 +592,8 @@
         }
 
         function rollEl(row, fresh) {
-            var prof = DR.profiles[row.user_id] || {};
+            var isRoom = roomMode();
+            var prof = (isRoom ? DR.roomProfiles : DR.profiles)[row.user_id] || {};
             var wrap = document.createElement('div'); wrap.className = 'roll'; wrap.dataset.id = row.id;
             var MARKC = { hit: '#4ade80', miss: '#f87171', crit: '#fcd34d', fail: '#0b0b0f' };
             var marks = (row.dice || []).map(function (d) {
@@ -549,13 +607,17 @@
             var hits = marks.filter(function (m) { return m === 'hit' || m === 'crit'; }).length;
             var modTxt = row.modifier ? (row.modifier > 0 ? ' +' + row.modifier : ' −' + Math.abs(row.modifier)) : '';
             var smallTxt = hasTarget ? (hits + '/' + (row.dice || []).length + ' siker' + modTxt) : modTxt.trim();
+            var whoName = isRoom ? (row.display_name || prof.display_name || 'Játékos') : (row.char_name || '');
+            var rlabel = isRoom ? (row.notation || '') : (row.label || row.notation || '');
+            var rnote = (!isRoom && row.label) ? '<span class="rnote">' + esc(row.notation) + '</span>' : '';
+            var rtime = esc((isRoom ? '' : ((prof.display_name || '') + ' · ')) + timeStr(row.created_at));
             wrap.innerHTML =
-                '<div class="who"><span class="ua"></span><span class="cn">' + esc(row.char_name || '') + '</span></div>' +
+                '<div class="who"><span class="ua"></span><span class="cn">' + esc(whoName) + '</span></div>' +
                 '<div class="body">' +
                     '<div class="meta">' +
-                        '<span class="rlabel">' + esc(row.label || row.notation || '') + '</span>' +
-                        (row.label ? '<span class="rnote">' + esc(row.notation) + '</span>' : '') +
-                        '<span class="rtime">' + esc((prof.display_name || '') + ' · ' + timeStr(row.created_at)) + '</span>' +
+                        '<span class="rlabel">' + esc(rlabel) + '</span>' +
+                        rnote +
+                        '<span class="rtime">' + rtime + '</span>' +
                     '</div>' +
                     '<div class="diceline"><div class="dice">' + dice + '</div>' +
                         '<span class="total">' + row.total + (smallTxt ? '<small>' + esc(smallTxt) + '</small>' : '') + '</span>' +
@@ -570,44 +632,64 @@
             var feed = $('feed');
             var empty = feed.querySelector('.feed-empty'); if (empty) feed.innerHTML = '';
             if (feed.querySelector('[data-id="' + row.id + '"]')) return;
-            ensureProfiles([row.user_id]).then(function () {
+            ensureIdentity([row.user_id]).then(function () {
                 var el = rollEl(row, true);
                 feed.insertBefore(el, feed.firstChild);
             });
         }
 
+        function rollChanged(payload) {
+            var keyRoom = roomMode();
+            var row = payload.new || payload.old;
+            if (!row) return;
+            if (keyRoom ? (row.room_id !== DR.roomId) : (row.campaign_id !== DR.campId)) return;
+            if (payload.eventType === 'INSERT') {
+                if (!row.archived_at) prependRoll(row);
+            } else if (payload.eventType === 'UPDATE') {
+                if (row.archived_at) {
+                    var el = $('feed').querySelector('[data-id="' + row.id + '"]'); if (el) el.remove();
+                    if (!$('feed').querySelector('.roll')) $('feed').innerHTML = '<div class="feed-empty">Még nincs dobás ebben a menetben.</div>';
+                }
+            }
+        }
+        function roomStatus(status) {
+            if (status === 'CHANNEL_ERROR' || status === 'TIMED_OUT') console.warn('[Kalandkockák] realtime státusz:', status);
+        }
         function subscribe() {
             if (DR.channel) { try { sb().removeChannel(DR.channel); } catch (e) {} DR.channel = null; }
-            if (!DR.campId) return;
-            // A bevált projekt-minta: NINCS szerver-oldali filter (az néma eseményvesztést okozhat),
-            // helyette kliens-oldalon szűrünk a betöltött kampányra.
-            DR.channel = sb().channel('dice-' + DR.campId)
-                .on('postgres_changes', { event: '*', schema: 'public', table: 'dice_rolls' }, function (payload) {
-                    var row = payload.new || payload.old;
-                    if (!row || row.campaign_id !== DR.campId) return;
-                    if (payload.eventType === 'INSERT') {
-                        if (!row.archived_at) prependRoll(row);
-                    } else if (payload.eventType === 'UPDATE') {
-                        if (row.archived_at) {
-                            var el = $('feed').querySelector('[data-id="' + row.id + '"]'); if (el) el.remove();
-                            if (!$('feed').querySelector('.roll')) $('feed').innerHTML = '<div class="feed-empty">Még nincs dobás ebben a menetben.</div>';
+            if (DR.memChannel) { try { sb().removeChannel(DR.memChannel); } catch (e) {} DR.memChannel = null; }
+            // NINCS szerver-oldali filter (néma eseményvesztést okozhat) — kliens-oldalon szűrünk.
+            if (roomMode()) {
+                if (!DR.roomId) return;
+                DR.channel = sb().channel('room-' + DR.roomId)
+                    .on('postgres_changes', { event: '*', schema: 'public', table: 'room_rolls' }, rollChanged)
+                    .subscribe(roomStatus);
+                DR.memChannel = sb().channel('roommem-' + DR.roomId)
+                    .on('postgres_changes', { event: '*', schema: 'public', table: 'room_members' }, function (payload) {
+                        var row = payload.new || payload.old;
+                        if (!row || row.room_id !== DR.roomId) return;
+                        if (payload.eventType === 'DELETE' && row.user_id === window._userId) {
+                            leaveRoom('⚠️ Lecserélték a kódot — lépj be újra a 🔑 Szoba gombbal.'); return;
                         }
-                    }
-                })
-                .subscribe(function (status) {
-                    if (status === 'CHANNEL_ERROR' || status === 'TIMED_OUT') {
-                        console.warn('[Kalandkockák] realtime státusz:', status, '— a dice_rolls tábla engedélyezve van a Realtime-ban?');
-                    }
-                });
+                        loadRoomMembers();
+                    }).subscribe();
+                return;
+            }
+            if (!DR.campId) return;
+            DR.channel = sb().channel('dice-' + DR.campId)
+                .on('postgres_changes', { event: '*', schema: 'public', table: 'dice_rolls' }, rollChanged)
+                .subscribe(roomStatus);
         }
 
         /* ---------- Admin: menet lezárása + archívum ---------- */
         function renderFeedTools() {
             var t = $('feedTools'); t.innerHTML = '';
+            if (!roomMode() && !DR.campId) return;
             var arch = document.createElement('button'); arch.className = 'mini-btn';
             arch.textContent = '🗄️ Korábbi menetek'; arch.onclick = openArchive;
             t.appendChild(arch);
-            if (window._isAdmin) {
+            var canEnd = roomMode() ? DR.roomIsOwner : window._isAdmin;
+            if (canEnd) {
                 var end = document.createElement('button'); end.className = 'mini-btn';
                 end.style.borderColor = 'rgba(224,184,74,.4)'; end.style.color = 'var(--accent)';
                 end.textContent = '🎬 Játékmenet vége'; end.onclick = endSession;
@@ -620,6 +702,13 @@
             var label = prompt('Játékmenet lezárása és archiválása.\nAdj egy nevet a mentett menetnek:', def);
             if (label == null) return;
             label = (label.trim() || def);
+            if (roomMode()) {
+                sb().rpc('end_room_session', { p_room_id: DR.roomId, p_label: label }).then(function (r) {
+                    if (r.error) { showBanner('⚠️ Archiválás nem sikerült: ' + esc(r.error.message)); return; }
+                    $('feed').innerHTML = '<div class="feed-empty">Menet lezárva. Új dobások új menetbe kerülnek.</div>';
+                });
+                return;
+            }
             sb().from('dice_rolls').update({ archived_at: new Date().toISOString(), session_label: label })
                 .eq('campaign_id', DR.campId).is('archived_at', null)
                 .then(function (r) {
@@ -631,16 +720,19 @@
         function openArchive() {
             var ov = $('archiveOverlay'); ov.classList.add('open');
             var body = $('archiveBody'); body.innerHTML = '<div class="feed-empty">Betöltés…</div>';
-            sb().from('dice_rolls').select('id, user_id, char_name, label, notation, dice, modifier, total, created_at, session_label')
-                .eq('campaign_id', DR.campId).not('archived_at', 'is', null)
-                .order('created_at', { ascending: false }).limit(500)
+            var q = roomMode()
+                ? sb().from('room_rolls').select('id, user_id, display_name, notation, dice, modifier, total, created_at, session_label')
+                    .eq('room_id', DR.roomId).not('archived_at', 'is', null).order('created_at', { ascending: false }).limit(500)
+                : sb().from('dice_rolls').select('id, user_id, char_name, label, notation, dice, modifier, total, created_at, session_label')
+                    .eq('campaign_id', DR.campId).not('archived_at', 'is', null).order('created_at', { ascending: false }).limit(500);
+            q
                 .then(function (r) {
                     if (r.error) { body.innerHTML = '<div class="feed-empty">⚠️ ' + esc(r.error.message) + '</div>'; return; }
                     var rows = r.data || [];
                     if (!rows.length) { body.innerHTML = '<div class="feed-empty">Még nincs archivált menet.</div>'; return; }
                     var groups = {}; var order = [];
                     rows.forEach(function (row) { var k = row.session_label || '—'; if (!groups[k]) { groups[k] = []; order.push(k); } groups[k].push(row); });
-                    ensureProfiles(rows.map(function (x) { return x.user_id; })).then(function () {
+                    ensureIdentity(rows.map(function (x) { return x.user_id; })).then(function () {
                         body.innerHTML = '';
                         order.forEach(function (k, i) {
                             var d = document.createElement('details'); d.className = 'sess'; if (i === 0) d.open = true;
@@ -651,6 +743,135 @@
                         });
                     });
                 });
+        }
+
+        /* ---------- Szoba mód ---------- */
+        function clearBanner() { var b = $('banner'); b.style.display = 'none'; b.innerHTML = ''; }
+        function myName() {
+            var p = DR.roomProfiles[window._userId];
+            return (p && p.display_name) || (window._userProfile && window._userProfile.display_name) || 'Játékos';
+        }
+        function ensureIdentity(ids) { return roomMode() ? loadRoomMembers() : ensureProfiles(ids); }
+
+        function toggleRoomPanel() {
+            var p = $('roomPanel');
+            if (p.hidden) { renderRoomPanel(); p.hidden = false; $('roomBtn').setAttribute('aria-expanded', 'true'); }
+            else closeRoomPanel();
+        }
+        function closeRoomPanel() { $('roomPanel').hidden = true; $('roomBtn').setAttribute('aria-expanded', 'false'); }
+        function roomMsg(txt, bad) { var m = $('rpMsg'); if (!m) return; m.textContent = txt || ''; m.classList.toggle('bad', !!bad); }
+
+        function renderRoomPanel() {
+            var p = $('roomPanel');
+            if (roomMode()) {
+                p.innerHTML =
+                    '<div class="rp-sec"><span class="rp-lbl">Szoba</span><div style="font-weight:600">' + esc(DR.roomName) + '</div>' +
+                    (DR.roomIsOwner && DR.roomCode ? '<div class="rp-row" style="align-items:center"><span class="rp-lbl" style="flex:1">Kód (oszd meg)</span><span style="font-family:ui-monospace,monospace;color:var(--accent);letter-spacing:.14em;font-size:1rem">' + esc(DR.roomCode) + '</span></div>' : '') +
+                    '</div>' +
+                    (DR.roomIsOwner ? '<button class="mini-btn" id="rpRotate">🔑 Új kód (mindenkit kidob)</button>' : '') +
+                    '<button class="mini-btn" id="rpLeave">↩ Kilépés a szobából</button>';
+                if (DR.roomIsOwner) $('rpRotate').onclick = rotateCode;
+                $('rpLeave').onclick = function () { closeRoomPanel(); leaveRoom(null); };
+                return;
+            }
+            p.innerHTML =
+                '<div class="rp-sec"><span class="rp-lbl">Csatlakozz kóddal</span>' +
+                '<div class="rp-row"><input id="rpCode" class="txt" maxlength="6" placeholder="KÓD" autocomplete="off" style="text-transform:uppercase;letter-spacing:.14em;font-family:ui-monospace,monospace"><button class="mini-btn" id="rpJoin">Belépés</button></div>' +
+                '<div class="rp-msg" id="rpMsg"></div></div>' +
+                (window._isAdmin ? '<div class="rp-sep"></div><button class="mini-btn" id="rpCreate">➕ Új szoba</button>' : '') +
+                '<div class="rp-sec"><span class="rp-lbl">Szobáid</span><div class="rp-mine" id="rpMine"><span class="rp-msg">Betöltés…</span></div></div>';
+            var codeIn = $('rpCode');
+            codeIn.oninput = function () { this.value = this.value.toUpperCase().replace(/[^A-Z0-9]/g, '').slice(0, 6); roomMsg(''); };
+            codeIn.onkeydown = function (e) { if (e.key === 'Enter') joinByCode(codeIn.value); };
+            $('rpJoin').onclick = function () { joinByCode(codeIn.value); };
+            if (window._isAdmin) $('rpCreate').onclick = createRoom;
+            loadMyRooms();
+            setTimeout(function () { try { codeIn.focus(); } catch (e) {} }, 30);
+        }
+
+        function joinByCode(code) {
+            code = (code || '').toUpperCase().replace(/[^A-Z0-9]/g, '');
+            if (code.length !== 6) { roomMsg('A kód 6 karakter.', true); return; }
+            roomMsg('Belépés…');
+            var p = window._userProfile || {};
+            sb().rpc('join_room', { p_code: code, p_name: p.display_name || 'Játékos', p_avatar: p.avatar || null })
+                .then(function (r) {
+                    if (r.error || !r.data) { roomMsg('Hibás vagy lezárt kód.', true); return; }
+                    var d = r.data; closeRoomPanel();
+                    enterRoom(d.room_id, d.name, !!d.is_owner, null);
+                });
+        }
+
+        function createRoom() {
+            var name = prompt('Új szoba neve:', 'Szoba');
+            if (name == null) return;
+            sb().rpc('create_room', { p_name: name }).then(function (r) {
+                if (r.error || !r.data) { roomMsg('Nem sikerült: ' + esc((r.error && r.error.message) || ''), true); return; }
+                var room = r.data; closeRoomPanel();
+                enterRoom(room.id, room.name, true, room.code);
+            });
+        }
+
+        function rotateCode() {
+            if (!confirm('Új kódot generálsz ehhez a szobához.\nMindenki kiesik és az ÚJ kóddal kell visszajönniük. A dobás-történet megmarad.\n\nFolytatod?')) return;
+            sb().rpc('rotate_room_code', { p_room_id: DR.roomId }).then(function (r) {
+                if (r.error || !r.data) { alert('Nem sikerült: ' + ((r.error && r.error.message) || '')); return; }
+                DR.roomCode = r.data; DR.roomProfiles = {};
+                renderRoomPanel(); loadRoomMembers();
+            });
+        }
+
+        function loadMyRooms() {
+            var box = $('rpMine'); if (!box) return;
+            sb().rpc('my_rooms').then(function (r) {
+                box = $('rpMine'); if (!box) return;
+                var rooms = r.data || [];
+                if (typeof rooms === 'string') { try { rooms = JSON.parse(rooms); } catch (e) { rooms = []; } }
+                if (!rooms.length) { box.innerHTML = '<span class="rp-msg">Még nincs szobád.</span>'; return; }
+                box.innerHTML = '';
+                rooms.forEach(function (rm) {
+                    var el = document.createElement('div'); el.className = 'rp-room';
+                    el.innerHTML = '<span>' + esc(rm.name) + '</span>' +
+                        (rm.is_owner ? '<span class="rp-code">' + esc(rm.code || '') + '</span>' : '<span class="rp-code" style="color:var(--muted)">tag</span>');
+                    el.onclick = function () { closeRoomPanel(); enterRoom(rm.room_id, rm.name, !!rm.is_owner, rm.code || null); };
+                    box.appendChild(el);
+                });
+            });
+        }
+
+        function loadRoomMembers() {
+            if (!DR.roomId) return Promise.resolve();
+            return sb().from('room_members').select('user_id, display_name, avatar').eq('room_id', DR.roomId)
+                .then(function (r) {
+                    if (r.error) return;
+                    DR.roomProfiles = {};
+                    (r.data || []).forEach(function (m) { DR.roomProfiles[m.user_id] = { display_name: m.display_name, avatar: m.avatar }; });
+                    updatePresence((r.data || []).length);
+                }).catch(function () {});
+        }
+        function updatePresence(n) {
+            if (!roomMode()) return;
+            $('roomChip').innerHTML = '🏠 ' + esc(DR.roomName) + ' <span style="color:var(--muted);font-weight:400">· ' + n + ' fő</span>';
+        }
+
+        function enterRoom(roomId, name, isOwner, code) {
+            DR.mode = 'room'; DR.roomId = roomId; DR.roomName = name; DR.roomIsOwner = isOwner; DR.roomCode = code || null;
+            clearBanner();
+            $('rollerCard').style.display = ''; $('feedCard').style.display = '';
+            $('campSelect').style.display = 'none'; $('charSelect').style.display = 'none';
+            $('roomChip').hidden = false; updatePresence(0);
+            $('roomBtn').innerHTML = '🏠 Szoba ▾';
+            loadRoomMembers().then(function () { renderFeedTools(); subscribe(); loadFeed(); });
+        }
+
+        function leaveRoom(msg) {
+            if (DR.memChannel) { try { sb().removeChannel(DR.memChannel); } catch (e) {} DR.memChannel = null; }
+            DR.mode = 'campaign'; DR.roomId = null; DR.roomName = ''; DR.roomIsOwner = false; DR.roomCode = null; DR.roomProfiles = {};
+            $('roomChip').hidden = true;
+            $('roomBtn').innerHTML = '🔑 Szoba ▾';
+            if (DR.campaigns.length) { renderCampSelect(); renderCharSelect(); }
+            if (msg) showBanner(msg); else clearBanner();
+            renderFeedTools(); subscribe(); loadFeed();
         }
 
         /* ---------- start ---------- */
