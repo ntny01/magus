@@ -21248,6 +21248,10 @@
                         {
                             "type": "paragraph",
                             "text": "Eztán mindenki bejelentheti, hogy mit kíván tenni. Akik harcolnak, megindítják első támadásukat, abban a sorrendben, ahogyan azt a Kezdeményező dobás meghatározza. A támadás sikeressége szintén kockadobás függvénye. Azok, akik a kapott sérülések dacára továbbra is képesek folytatni a küzdelmet, támadhatnak másodszor, majd harmadszor vagy akár többször is – ha a Támadások száma rovat ezt számukra lehetővé teszi, vagy ha egyszerre két kézzel harcolnak."
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "A kör végeztével új kör veszi kezdetét, egészen a harc befejezéséig, körönként új Kezdeményező dobással."
                         }
                     ]
                 },
@@ -21255,10 +21259,6 @@
                     "id": "sec_111",
                     "title": "A cselekedetek típusai",
                     "content_blocks": [
-                        {
-                            "type": "paragraph",
-                            "text": "A kör végeztével új kör veszi kezdetét, egészen a harc befejezéséig, körönként új Kezdeményező dobással."
-                        },
                         {
                             "type": "paragraph",
                             "text": "Mint ahogy azt a harc meneténél már említettük, egy körben nem csak harcolni, hanem számtalan egyéb dolgot is lehet tenni. Ezért a különböző cselekedeteket típusokra osztottuk fel."
@@ -21442,6 +21442,10 @@
                         {
                             "type": "paragraph",
                             "text": "Egész körös cselekedet továbbá a különböző Képzettségek alkalmazása (kivételt képeznek ez alól azon Képzettségek, amik nem követelnek meg eltérő cselekvést alkalmazójuktól pl. Harcművészet, Pusztítás, stb.)."
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "Az itt fel nem sorolt cselekedetek melyik kategóriába esnek, s ezeket az adott szituációban a játék nyelvére lefordítva hogyan lehet alkalmazni, arról mindig a KM joga dönteni."
                         }
                     ]
                 },
@@ -21451,7 +21455,7 @@
                     "content_blocks": [
                         {
                             "type": "paragraph",
-                            "text": "Az itt fel nem sorolt cselekedetek melyik kategóriába esnek, s ezeket az adott szituációban a játék nyelvére lefordítva hogyan lehet alkalmazni, arról mindig a KM joga dönteni."
+                            "text": "A különböző korok, különböző felépítésű és méretű fegyverei különböző módon hatásosak, illetve hatástalanok egymással szemben. Egy nehéz, kétkezes csatabárd támadását szinte lehetetlen hárítani egy tőrrel, míg ahogy egy nehézlovas kopja is elsöpri az ellene védekezésre emelt csatakardot. Alább olvashatóak a méretkategóriák, melyek fontos és meghatározó a valósághű összecsapások modellezésének. A M.A.G.U.S. harcrendszere öt ilyen méretkategóriát ismer:"
                         },
                         {
                             "type": "paragraph",
@@ -21485,6 +21489,84 @@
                                     "Nyeles fegyverek"
                                 ]
                             ]
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "A karakterek által forgatott fegyverek alaphelyzetben csakis a velük egy méretkategóriában lévő, illetve kisebb fegyverekkel szemben hatékonyak. Tehát, csak akkor adódnak hozzá harcértékeik, illetve az esetleges Fegyverhasználat képzettségből eredő bónuszaik a forgatójuk fegyvernélküli harcértékeihez, ha az ellenfél azonos vagy kisebb méretkategóriába eső fegyvert forgat. Ellenkező esetben az adott személy kénytelen Sebzését leszámítva a fegyvernélküli értékeivel részt venni a harcban."
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "Például: a városőrség katonái lándzsáikkal, melyek az 5. méretkategóriába tartoznak harcba keverednek a helyi alvilág egy-két vérmesebb figurájával, kik tőrt rántanak elő. A tőrök, mivel a 2. méretkategóriába esnek és mindannyian 3. fokon képzettek fegyvereik használatában, ezért harceszközeik a kisebb, a hasonló méretkategóriájú, illetve az egyel nagyobb kategóriába eső fegyverekkel szemben hatékonyak. Tehát a késelők nem kapnak harcértékeiket a lándzsásokkal szemben, míg amazok teljes, fegyveres harcértékeikkel vonulnak fel. A gazemberek pillanatai meg vannak számlálva."
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "No persze a mérges, és a felbukkanó segítség miatt a túlerő mégis legyűrné katonáinkat, ezért az arra járó nemes ifjú, Villar rövid szemlélődés után a poroszlók mellett száll harcba, berontva a sikátorba, kivont tőrszukardját. Igaz, fegyvere a 3. méretkategóriába esik, de sajnos még csak 2. fokon képzett forgatásában, ezért nem kap bónuszt a méretkategóriájára. A kardnál kisebb méretű tőröket elméletben feltartaná a hosszabb penge puszta mérete, táncoló hegye, mégis Képzettségük miatt a zsiványok hozzáadhatják tőreik értékét fegyvertelen értékeikhez. Villarnak vigyáznia kell, nehogy kalandja túl hamar véget érjen."
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "Persze megfelelő harci tudással ez a hátrány is kiküszöbölhető. (Lásd még a Fegyverhasználat képzettséget a 135. oldalon.)"
+                        }
+                    ]
+                },
+                {
+                    "id": "sec_harcertekek",
+                    "title": "Harcértékek",
+                    "content_blocks": [
+                        {
+                            "type": "paragraph",
+                            "text": "A játékban résztvevő karakterek – legyenek játékosok (JK) vagy nem játékosok (NJK) –, netán szörnyetegek, mind rendelkeznek ún. harcértékekkel. A harcérték hivatott szimbolizálni a küzdő felek tapasztalatát. Négy összetevőből áll: Kezdeményező érték (KÉ), Támadó érték (TÉ), Védő érték (VÉ) és végül a Célzó érték (CÉ)."
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "Egy karakter harcértéke több alapvető jellemzőtől függ: legfőképp a Tulajdonságaitól, a szintenként elosztott Harcérték módosítójától (HM) és ezért persze a Tapasztalati szintjétől."
+                        },
+                        {
+                            "type": "heading",
+                            "text": "A Harcérték módosító (HM)"
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "A Harcérték módosító hivatott megmutatni azt, hogy a karakter fejlődése során mennyi új harci tapasztalatot sajátított el. A Harcérték módosítókat a karakter elosztja a négy összetevő között, melyek: a KÉ, VÉ, TÉ és a CÉ. Abban, hogy a játékos melyik értéket részesíti előnyben a többi hátrányára, a M.A.G.U.S. szabályai szabad kezet adnak."
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "Mint a fentiekből is kiviláglik: a játékos szintlépésenként eldöntheti, hogy karakterét ütőképesebb támadóként, vagy inkább fürge kezdeményezőként, netán sérthetetlenebb védekezőként, esetleg pontosabb céllövőként kívánja-e látni, így a M.A.G.U.S. harcrendszerében mindenki szabadon kialakíthatja az igényeinek leginkább megfelelő figurát."
+                        },
+                        {
+                            "type": "heading",
+                            "text": "Kezdeményező érték (KÉ)"
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "A Kezdeményező érték a Kezdeményező dobás alapvető összetevője. Annak meghatározásában van jelentős szerepe, hogy az adott harci körben melyik résztvevő képes fürgébben cselekedni, azaz – adott esetben – hamarabb támadni. Kezdeményező dobást azonban csak akkor teszünk, ha nem dönthető el egyértelműen, hogy melyik fél cselekszik hamarabb, a másiknak esélye sincs megelőzni őt."
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "A karakterek KÉ-je is több paraméter függvénye. Függ az illető Érzékelésétől, Gyorsaságától, harci tapasztalatától, képzettségeitől, a támadó fegyver típusától illetve a harci helyzettől.\nKÉ = Gyorsaság + Érzékelés + a KÉ növelésére költött HM + Fegyver KÉ"
+                        },
+                        {
+                            "type": "heading",
+                            "text": "Támadó érték (TÉ)"
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "A Támadó értéknek a közelharci támadások sikerességét meghatározó Támadó dobásban jut jelentős szerep. Minél magasabb valakinek a TÉ-je, annál képzettebb vívó. Több cselt, harci fogást ismer, vagy pusztán régebb óta járja már az acél iskoláját."
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "Az, hogy a karakter TÉ-je mekkora, az következő paraméterektől függ: az illető Erejétől, Gyorsaságától, Ügyességétől, harci tapasztalatától (HM), képzettségeitől és a támadó fegyver típusától.\nTÉ = Erő + Gyorsaság + Ügyesség + a TÉ növelésére költött HM + Fegyver TÉ"
+                        },
+                        {
+                            "type": "heading",
+                            "text": "Védő érték (VÉ)"
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "A Védő érték a TÉ-hez hasonlóan a Támadó dobás – ám ezúttal az ellenfél dobása – során játszik szerepet. A VÉ-től függ, hogy az ellenfél támadása sikeres-e vagy sem. Minél magasabb valakinek a Védő értéke, annál fürgébben tér ki a csapások elől, felismeri a harci cseleket, fegyverével annál hatékonyabban háríthatja ellenfele támadásait."
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "A VÉ meghatározó összetevői a következők: egy alap Védő érték, amivel mindenki rendelkezik, ezen felül a karakter Gyorsasága, Ügyessége, harci tapasztalata (HM), képzettségei és végül a fegyver, netán pajzs vagy alkarvédő nyújtotta bónuszok.\nVÉ = 60 + Gyorsaság + Ügyesség + a VÉ növelésére költött HM + Fegyver VÉ + Pajzs VÉ"
                         }
                     ]
                 },
@@ -21877,13 +21959,7 @@
                             "rows": [
                                 []
                             ]
-                        }
-                    ]
-                },
-                {
-                    "id": "sec_115",
-                    "title": "Harci helyzetek",
-                    "content_blocks": [
+                        },
                         {
                             "type": "paragraph",
                             "text": "Koronként többször támadhat tehát az, aki arra alkalmas fegyvert forgat."
@@ -21891,7 +21967,13 @@
                         {
                             "type": "paragraph",
                             "text": "Ha a karakter rendelkezik a Harcművészet, Pajzshasználat vagy Kétkezes harc képzettségek bármelyikével, az ott leírtaknak megfelelően több támadásra jogosult. Mindentképpen megjegyzendő, hogy több fenti feltétel megléte esetén nem adódik össze az eredmény. Sőt: azoknál a fegyvereknél, amelyek ezt lehetővé teszik, több támadás lehetséges. Aki emellett még Kétkezes harcban is jártas, az mindkét kézben tartott fegyverével képes erre. Abban az esetben, amikor a fegyverekre erre lehetőséget adnak, ő pedig jártas a képzettségben, mindkét kézzel kétszer támadhat. Azok ellen, akik magatehetetlenre, vagy egyéb okból képtelenek védekezésre, mindenki annyiszor támad koronként, ahányadik szintű a Fegyverhasználat képzettsége."
-                        },
+                        }
+                    ]
+                },
+                {
+                    "id": "sec_115",
+                    "title": "Harci helyzetek",
+                    "content_blocks": [
                         {
                             "type": "paragraph",
                             "text": "A Kezdeményező, Támadó és Céldobás eredményességét nagyban befolyásolhatja a harci helyzet. Ez magában foglalja a küzdő felek egymáshoz viszonyított helyzetéből, illetve a környezetükből származó előnyöket és hátrányokat. A következőkben majd más, felhasználati különböző harci helyzetet említünk és kommentálunk."
@@ -22047,9 +22129,15 @@
                                     "Lásd a leírást!"
                                 ]
                             ]
-                        },
+                        }
+                    ]
+                },
+                {
+                    "id": "sec_sebzes",
+                    "title": "Sebzés",
+                    "content_blocks": [
                         {
-                            "type": "paragraph",
+                            "type": "heading",
                             "text": "Sebzés"
                         },
                         {
