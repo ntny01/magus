@@ -36,6 +36,7 @@
     <link rel="stylesheet" href="magus_ui.css?v=1">
     <script src="magus_avatar.js?v=4"></script>
     <script src="magus_dice.js?v=1"></script>
+    <script src="magus_music.js?v=1"></script>
     <style>
         :root {
             --bg: #0d0e13;
@@ -303,6 +304,8 @@
             </h2>
             <div class="feed" id="feed"><div class="feed-empty">Még nincs dobás ebben a menetben.</div></div>
         </section>
+
+        <div id="musicMount" style="grid-column:1/-1"></div>
     </main>
 
     <div class="overlay" id="archiveOverlay">
@@ -326,6 +329,18 @@
             roomProfiles: {}        // user_id -> {display_name, avatar} a room_members-ből
         };
         function roomMode() { return DR.mode === 'room'; }
+        // Szoba-zene (DJ) — a közös magus_music.js modul; csak szoba módban aktív.
+        var _music = null;
+        function music() {
+            if (!_music) {
+                _music = (window.MagusMusic && sb()) ? MagusMusic.mount({
+                    sb: sb(), bar: $('musicMount'),
+                    getUid: function () { return window._userId; },
+                    getName: myName
+                }) : { enter: function () {}, leave: function () {} };
+            }
+            return _music;
+        }
         var $ = function (id) { return document.getElementById(id); };
         function esc(s) { return String(s == null ? '' : s).replace(/[&<>"']/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]; }); }
         function sb() { return window._sb; }
@@ -861,10 +876,11 @@
             $('campSelect').style.display = 'none'; $('charSelect').style.display = 'none';
             $('roomChip').hidden = false; updatePresence(0);
             $('roomBtn').innerHTML = '🏠 Szoba ▾';
-            loadRoomMembers().then(function () { renderFeedTools(); subscribe(); loadFeed(); });
+            loadRoomMembers().then(function () { renderFeedTools(); subscribe(); loadFeed(); music().enter(DR.roomId, DR.roomIsOwner); });
         }
 
         function leaveRoom(msg) {
+            if (_music) _music.leave();
             if (DR.memChannel) { try { sb().removeChannel(DR.memChannel); } catch (e) {} DR.memChannel = null; }
             DR.mode = 'campaign'; DR.roomId = null; DR.roomName = ''; DR.roomIsOwner = false; DR.roomCode = null; DR.roomProfiles = {};
             $('roomChip').hidden = true;

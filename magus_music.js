@@ -27,6 +27,27 @@
 
   function esc(s) { return String(s == null ? '' : s).replace(/[&<>"']/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]; }); }
 
+  /* Letisztult, monokróm SVG-ikonok (currentColor) — nem emoji. */
+  var ICONS = {
+    play: '<path d="M5 3.3v9.4L13 8z" fill="currentColor"/>',
+    pause: '<rect x="4.4" y="3.4" width="2.4" height="9.2" rx=".6" fill="currentColor"/><rect x="9.2" y="3.4" width="2.4" height="9.2" rx=".6" fill="currentColor"/>',
+    prev: '<rect x="3.3" y="3.4" width="1.9" height="9.2" rx=".5" fill="currentColor"/><path d="M13 3.7v8.6L6.4 8z" fill="currentColor"/>',
+    next: '<rect x="10.8" y="3.4" width="1.9" height="9.2" rx=".5" fill="currentColor"/><path d="M3 3.7v8.6L9.6 8z" fill="currentColor"/>',
+    repeat: '<g fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7.3V6.5A2.5 2.5 0 0 1 5.5 4H12"/><path d="M10 2 12.6 4 10 6"/><path d="M13 8.7v.8A2.5 2.5 0 0 1 10.5 12H4"/><path d="M6 10 3.4 12 6 14"/></g>',
+    repeat1: '<g fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7.3V6.5A2.5 2.5 0 0 1 5.5 4H12"/><path d="M10 2 12.6 4 10 6"/><path d="M13 8.7v.8A2.5 2.5 0 0 1 10.5 12H4"/><path d="M6 10 3.4 12 6 14"/></g><text x="8" y="9.7" font-size="5.6" font-weight="700" text-anchor="middle" fill="currentColor" font-family="Inter,system-ui,sans-serif">1</text>',
+    vol: '<path d="M3 6.2h2L8 3.8v8.4L5 9.8H3z" fill="currentColor"/><g fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"><path d="M10.4 6.3a2.4 2.4 0 0 1 0 3.4"/><path d="M12.2 4.8a4.6 4.6 0 0 1 0 6.4"/></g>',
+    mute: '<path d="M3 6.2h2L8 3.8v8.4L5 9.8H3z" fill="currentColor"/><g fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"><path d="M10.6 6.4 13.4 9.6M13.4 6.4 10.6 9.6"/></g>',
+    note: '<path d="M12.6 2.1 6 3.6v6.3a2 2 0 1 1-1.2-1.85V5.05l6-1.35v4.3a2 2 0 1 1-1.2-1.85V3.2l3-.65z" fill="currentColor"/>',
+    upload: '<g fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M8 10.5V3"/><path d="M5.2 5.6 8 2.8l2.8 2.8"/><path d="M3 10.6v1.6a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1v-1.6"/></g>',
+    plus: '<g fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><path d="M8 3.6v8.8M3.6 8h8.8"/></g>',
+    trash: '<g fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><path d="M3 4.5h10"/><path d="M6.2 4.5V3.3a.8.8 0 0 1 .8-.8h2a.8.8 0 0 1 .8.8v1.2"/><path d="M4.7 4.5 5.1 12a1 1 0 0 0 1 .9h3.8a1 1 0 0 0 1-.9l.4-7.5"/></g>',
+    up: '<g fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 9.5 8 6l3.5 3.5"/></g>',
+    down: '<g fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 6.5 8 10l3.5-3.5"/></g>',
+    x: '<g fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><path d="M4.5 4.5 11.5 11.5M11.5 4.5 4.5 11.5"/></g>',
+    edit: '<g fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><path d="M9.8 3.4 12.6 6.2"/><path d="M10.8 2.4a1.1 1.1 0 0 1 1.6 0l1.2 1.2a1.1 1.1 0 0 1 0 1.6L6.2 13 3 13l0-3.2z"/></g>'
+  };
+  function ic(n) { return '<svg class="mm-ic" viewBox="0 0 16 16" width="15" height="15" aria-hidden="true">' + (ICONS[n] || '') + '</svg>'; }
+
   function ensureStyles() {
     if (document.getElementById('mmusic-style')) return;
     var css =
@@ -45,12 +66,12 @@
       ".mm-ovl{position:fixed;inset:0;z-index:80;background:rgba(6,7,11,.72);display:flex;align-items:flex-start;justify-content:center;padding:5dvh 1rem;overflow-y:auto;font-family:'Inter',system-ui,sans-serif}" +
       ".mm-sheet{background:var(--panel,#16171e);border:1px solid var(--border-2,#3a3d4d);border-radius:14px;width:100%;max-width:560px;max-height:88vh;display:flex;flex-direction:column;overflow:hidden;color:var(--text,#e6e7ee)}" +
       ".mm-sh-h{display:flex;align-items:center;justify-content:space-between;padding:.8rem 1rem;border-bottom:1px solid var(--border,#2a2c38);font-family:'Cinzel',serif;color:var(--gold,#d4af37);font-weight:600}" +
-      ".mm-x{background:none;border:1px solid var(--border-2,#3a3d4d);color:var(--muted,#9498a8);border-radius:8px;width:30px;height:30px;cursor:pointer}" +
+      ".mm-x{background:none;border:1px solid var(--border-2,#3a3d4d);color:var(--muted,#9498a8);border-radius:8px;width:30px;height:30px;cursor:pointer;display:inline-flex;align-items:center;justify-content:center}" +
       ".mm-x:hover{color:var(--text,#e6e7ee);border-color:var(--gold,#d4af37)}" +
       ".mm-sh-b{padding:.8rem 1rem;overflow-y:auto}" +
       ".mm-sec{margin-bottom:14px}" +
       ".mm-lbl{display:flex;align-items:center;justify-content:space-between;gap:.5rem;font-size:11px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted,#9498a8);margin-bottom:8px}" +
-      ".mm-mini{background:var(--panel-2,#1c1e27);color:var(--muted,#9498a8);border:1px solid var(--border-2,#3a3d4d);border-radius:8px;padding:4px 9px;font-family:inherit;font-size:11.5px;cursor:pointer}" +
+      ".mm-mini{background:var(--panel-2,#1c1e27);color:var(--muted,#9498a8);border:1px solid var(--border-2,#3a3d4d);border-radius:8px;padding:4px 9px;font-family:inherit;font-size:11.5px;cursor:pointer;display:inline-flex;align-items:center;gap:4px}" +
       ".mm-mini:hover{color:var(--text,#e6e7ee);border-color:var(--gold,#d4af37)}" +
       ".mm-list{display:flex;flex-direction:column;gap:5px;max-height:34vh;overflow-y:auto}" +
       ".mm-empty{color:var(--muted,#9498a8);font-size:.82rem;padding:.6rem;text-align:center}" +
@@ -61,7 +82,14 @@
       ".mm-row button{background:none;border:none;color:var(--muted,#9498a8);cursor:pointer;font-size:13px;padding:0 2px}" +
       ".mm-row button:hover{color:var(--gold,#d4af37)}" +
       ".mm-row .mm-del{color:#f87171}.mm-row .mm-del:hover{color:#fca5a5}" +
-      ".mm-badge{font-size:9px;background:rgba(248,113,113,.15);color:#f87171;border:1px solid rgba(248,113,113,.3);border-radius:4px;padding:1px 4px;letter-spacing:.04em;flex:none}";
+      ".mm-badge{font-size:9px;background:rgba(248,113,113,.15);color:#f87171;border:1px solid rgba(248,113,113,.3);border-radius:4px;padding:1px 4px;letter-spacing:.04em;flex:none}" +
+      ".mm-cur{color:var(--gold,#d4af37);display:inline-flex;align-items:center;flex:none}" +
+      ".mm-hint{font-size:11px;line-height:1.5;color:var(--muted,#9498a8)}.mm-hint .mm-invcur{color:var(--gold,#d4af37);font-weight:600}" +
+      ".mm-lrow,.mm-allrow{gap:9px}.mm-allrow{margin-bottom:6px;border-color:var(--border-2,#3a3d4d)}.mm-allrow .mm-t{font-weight:600;color:var(--gold,#d4af37)}" +
+      ".mm-lnum{flex:none;min-width:30px;text-align:right;font-size:12px;color:var(--muted,#9498a8);display:inline-flex;align-items:center;justify-content:flex-end}" +
+      ".mm-lr{flex:none;width:120px;accent-color:var(--gold,#d4af37)}" +
+      ".mm-ren{color:var(--muted,#9498a8)}.mm-ren:hover{color:var(--gold,#d4af37)}" +
+      ".mm-btn svg,.mm-mini svg,.mm-x svg,.mm-row button svg{display:block;flex:none}.mm-btn{gap:5px}";
     var st = document.createElement('style'); st.id = 'mmusic-style'; st.textContent = css; document.head.appendChild(st);
   }
 
@@ -90,19 +118,34 @@
     ensureStyles();
     var sb = opts.sb, bar = opts.bar;
     var getUid = opts.getUid || function () { return null; };
+    var getName = opts.getName || function () { return ''; };
 
-    var ST = { roomId: null, isOwner: false, state: null, tracks: [], chan: null, vol: 60, muted: false, armed: false, ytP: null, ytLoaded: null };
+    var ST = { roomId: null, isOwner: false, state: null, tracks: [], chan: null, vol: 60, muted: false, armed: false, ytP: null, ytLoaded: null,
+      invHosts: [], ytCache: {}, ytFail: {}, ytResolving: null, presence: {} };
+
+    /* ---------- Invidious instance-ok (YT-linkek reklámmentes feloldásához) ---------- */
+    // Sorrend = próbálkozási sorrend; az első a leggyakrabban működő. A felhasználó
+    // felülírhatja (DJ-pult „Invidious szerver" mező → localStorage).
+    var DEFAULT_INV = ['https://yt.chocolatemoo53.com', 'https://invidious.nerdvpn.de', 'https://inv.nadeko.net', 'https://invidious.tiekoetter.com'];
+    function normHost(h) { h = (h || '').trim().replace(/\/+$/, ''); if (h && !/^https?:\/\//.test(h)) h = 'https://' + h; return h; }
+    (function initHosts() {
+      var custom = []; try { var raw = localStorage.getItem('kk_inv_hosts'); if (raw) custom = JSON.parse(raw) || []; } catch (e) {}
+      if (opts.invidiousHosts && opts.invidiousHosts.length) custom = opts.invidiousHosts;
+      var seen = {}, out = [];
+      custom.concat(DEFAULT_INV).forEach(function (h) { h = normHost(h); if (h && !seen[h]) { seen[h] = 1; out.push(h); } });
+      ST.invHosts = out;
+    })();
 
     // --- Sáv DOM ---
     bar.innerHTML =
       '<div class="mm-bar" hidden>' +
-      '<button class="mm-btn mm-prev" hidden title="Előző">⏮</button>' +
-      '<button class="mm-btn mm-play" hidden title="Lejátszás/Szünet">▶</button>' +
-      '<button class="mm-btn mm-next" hidden title="Következő">⏭</button>' +
+      '<button class="mm-btn mm-prev" hidden title="Előző">' + ic('prev') + '</button>' +
+      '<button class="mm-btn mm-play" hidden title="Lejátszás/Szünet">' + ic('play') + '</button>' +
+      '<button class="mm-btn mm-next" hidden title="Következő">' + ic('next') + '</button>' +
       '<div class="mm-now"><span class="mm-title">Nincs zene</span><div class="mm-prog"><div class="mm-progf"></div></div></div>' +
-      '<button class="mm-btn mm-loop" hidden title="Ismétlés">🔁</button>' +
-      '<span class="mm-vol"><button class="mm-btn mm-mute" title="Némítás">🔊</button><input type="range" class="mm-volr" min="0" max="100" value="60" aria-label="Hangerő"></span>' +
-      '<button class="mm-btn mm-gold mm-dj" hidden title="Zene vezérlés">🎵 Zene</button>' +
+      '<button class="mm-btn mm-loop" hidden title="Ismétlés">' + ic('repeat') + '</button>' +
+      '<span class="mm-vol"><button class="mm-btn mm-mute" title="Némítás">' + ic('vol') + '</button><input type="range" class="mm-volr" min="0" max="100" value="60" aria-label="Hangerő"></span>' +
+      '<button class="mm-btn mm-gold mm-dj" hidden title="Zene vezérlés">' + ic('note') + ' Zene</button>' +
       '</div>';
     var el = function (s) { return bar.querySelector(s); };
     var barEl = el('.mm-bar');
@@ -112,13 +155,18 @@
     var ytHost = document.createElement('div'); ytHost.className = 'mm-yt'; document.body.appendChild(ytHost);
     var dj = document.createElement('div'); dj.className = 'mm-ovl'; dj.hidden = true;
     dj.innerHTML =
-      '<div class="mm-sheet"><div class="mm-sh-h"><span>🎵 Zene — DJ pult</span><button class="mm-x mm-close" aria-label="Bezárás">✕</button></div>' +
+      '<div class="mm-sheet"><div class="mm-sh-h"><span>Zene — DJ pult</span><button class="mm-x mm-close" aria-label="Bezárás">' + ic('x') + '</button></div>' +
       '<div class="mm-sh-b">' +
-      '<div class="mm-sec"><div class="mm-lbl"><span>Zene-könyvtár</span><span><button class="mm-mini mm-upload">⬆ Feltöltés</button> <button class="mm-mini mm-ytadd">＋ YT-link</button></span></div>' +
+      '<div class="mm-sec"><div class="mm-lbl"><span>Zene-könyvtár</span><span><button class="mm-mini mm-upload">' + ic('upload') + ' Feltöltés</button> <button class="mm-mini mm-ytadd">' + ic('plus') + ' YT-link</button></span></div>' +
       '<input type="file" class="mm-file" accept="audio/*" multiple hidden>' +
       '<div class="mm-list mm-lib"><div class="mm-empty">Tölts fel zenéket.</div></div></div>' +
       '<div class="mm-sec"><div class="mm-lbl"><span>Lejátszási sor</span><button class="mm-mini mm-clear">Ürítés</button></div>' +
-      '<div class="mm-list mm-queue"><div class="mm-empty">A sor üres — a könyvtárból add hozzá ➕.</div></div></div>' +
+      '<div class="mm-list mm-queue"><div class="mm-empty">A sor üres — a könyvtárból add hozzá.</div></div></div>' +
+      '<div class="mm-sec"><div class="mm-lbl"><span>Hallgatók — hangerő</span></div>' +
+      '<div class="mm-row mm-allrow"><span class="mm-t">Mindenki</span><span class="mm-lnum mm-allnum">80</span><input type="range" class="mm-lr mm-allr" min="0" max="100" value="80"></div>' +
+      '<div class="mm-list mm-listeners"><div class="mm-empty">Nincs csatlakozott hallgató.</div></div></div>' +
+      '<div class="mm-sec"><div class="mm-lbl"><span>YT-forrás (Invidious)</span><span><button class="mm-mini mm-invset">Szerver</button> <button class="mm-mini mm-invreset">Alap</button></span></div>' +
+      '<div class="mm-hint">A YouTube-linkeket ezen az <b class="mm-invcur">szerveren</b> át játsszuk le, reklámmentesen. Ha egy link nem szólal meg, válts szervert.</div></div>' +
       '</div></div>';
     document.body.appendChild(dj);
     var djEl = function (s) { return dj.querySelector(s); };
@@ -126,14 +174,14 @@
     /* ---------- hangerő ---------- */
     try { ST.vol = parseInt(localStorage.getItem('kk_music_vol'), 10); if (isNaN(ST.vol)) ST.vol = 60; } catch (e) { ST.vol = 60; }
     try { ST.muted = localStorage.getItem('kk_music_muted') === '1'; } catch (e) {}
-    el('.mm-volr').value = ST.vol; el('.mm-mute').textContent = ST.muted ? '🔇' : '🔊';
+    el('.mm-volr').value = ST.vol; el('.mm-mute').innerHTML = ic(ST.muted ? 'mute' : 'vol');
     function applyVol() {
       var v = ST.muted ? 0 : (ST.vol / 100);
       try { audio.volume = v; } catch (e) {}
       try { if (ST.ytP && ST.ytP.setVolume) ST.ytP.setVolume(ST.muted ? 0 : ST.vol); } catch (e) {}
     }
-    el('.mm-volr').oninput = function () { ST.vol = parseInt(this.value, 10) || 0; ST.muted = false; applyVol(); el('.mm-mute').textContent = '🔊'; try { localStorage.setItem('kk_music_vol', ST.vol); } catch (e) {} };
-    el('.mm-mute').onclick = function () { ST.muted = !ST.muted; applyVol(); el('.mm-mute').textContent = ST.muted ? '🔇' : '🔊'; try { localStorage.setItem('kk_music_muted', ST.muted ? '1' : '0'); } catch (e) {} };
+    el('.mm-volr').oninput = function () { ST.vol = parseInt(this.value, 10) || 0; ST.muted = false; applyVol(); el('.mm-mute').innerHTML = ic('vol'); try { localStorage.setItem('kk_music_vol', ST.vol); } catch (e) {} trackPresence(); };
+    el('.mm-mute').onclick = function () { ST.muted = !ST.muted; applyVol(); el('.mm-mute').innerHTML = ic(ST.muted ? 'mute' : 'vol'); try { localStorage.setItem('kk_music_muted', ST.muted ? '1' : '0'); } catch (e) {} trackPresence(); };
 
     /* ---------- transport gombok + overlay ---------- */
     el('.mm-play').onclick = djTogglePlay;
@@ -141,7 +189,9 @@
     el('.mm-prev').onclick = djPrev;
     el('.mm-loop').onclick = djToggleLoop;
     el('.mm-prog').onclick = function (e) { if (!ST.isOwner) return; var r = this.getBoundingClientRect(); djSeek(((e.clientX - r.left) / r.width) * getDur()); };
-    el('.mm-dj').onclick = function () { dj.hidden = false; renderLib(); renderQueue(); };
+    el('.mm-dj').onclick = function () { dj.hidden = false; renderLib(); renderQueue(); renderListeners(); };
+    djEl('.mm-allr').oninput = function () { djEl('.mm-allnum').textContent = parseInt(this.value, 10) || 0; };
+    djEl('.mm-allr').onchange = function () { sendVol('all', parseInt(this.value, 10) || 0); };
     djEl('.mm-close').onclick = function () { dj.hidden = true; };
     dj.onclick = function (e) { if (e.target === dj) dj.hidden = true; };
     document.addEventListener('keydown', function (e) { if (e.key === 'Escape' && !dj.hidden) dj.hidden = true; });
@@ -149,19 +199,77 @@
     djEl('.mm-file').onchange = function () { uploadTracks(this.files); this.value = ''; };
     djEl('.mm-ytadd').onclick = addYtLink;
     djEl('.mm-clear').onclick = function () { if (confirm('Üríted a lejátszási sort?')) djSetQueue([], true); };
+    function renderInv() { var c = djEl('.mm-invcur'); if (c) c.textContent = (ST.invHosts[0] || '').replace(/^https?:\/\//, ''); }
+    function setInvHosts(primary) {
+      var seen = {}, out = [];
+      [primary].concat(DEFAULT_INV).forEach(function (h) { h = normHost(h); if (h && !seen[h]) { seen[h] = 1; out.push(h); } });
+      ST.invHosts = out; ST.ytCache = {}; ST.ytFail = {};     // új szerver → minden yt-szám újra-feloldandó
+      try { localStorage.setItem('kk_inv_hosts', JSON.stringify([ST.invHosts[0]])); } catch (e) {}
+      renderInv(); if (activeType() === 'yt') applyState();
+    }
+    djEl('.mm-invset').onclick = function () { var h = prompt('Invidious-szerver címe (pl. https://inv.nadeko.net):', ST.invHosts[0] || ''); if (h && normHost(h)) setInvHosts(h); };
+    djEl('.mm-invreset').onclick = function () { ST.ytCache = {}; ST.ytFail = {}; try { localStorage.removeItem('kk_inv_hosts'); } catch (e) {} var seen = {}, out = []; DEFAULT_INV.forEach(function (h) { h = normHost(h); if (!seen[h]) { seen[h] = 1; out.push(h); } }); ST.invHosts = out; renderInv(); if (activeType() === 'yt') applyState(); };
+    renderInv();
 
-    // progress-sáv frissítés (file + yt egyaránt)
-    audio.ontimeupdate = function () { if (activeType() === 'file') updateProg(); };
-    audio.onended = function () { if (ST.isOwner && activeType() === 'file') djTrackEnded(); };
-    setInterval(function () { if (!barEl.hidden && activeType() === 'yt') updateProg(); }, 500);
+    // progress-sáv frissítés (file + feloldott yt az <audio>-ból)
+    audio.ontimeupdate = function () { if (usesAudio()) updateProg(); };
+    audio.onended = function () { if (ST.isOwner && usesAudio()) djTrackEnded(); };
+    // Ha egy feloldott yt-stream URL-je lejárt (pár óra után) → dobd a cache-t és oldd fel újra.
+    audio.onerror = function () { var t = curTrack(); if (t && (t.type || 'file') === 'yt' && ST.ytCache[t.videoId]) { delete ST.ytCache[t.videoId]; applyState(); } };
+    // IFrame-fallback esetén a yt haladását időzítőből frissítjük.
+    setInterval(function () { var t = curTrack(); if (!barEl.hidden && t && (t.type || 'file') === 'yt' && !usesAudio(t)) updateProg(); }, 500);
 
     /* ---------- lejátszó-absztrakció ---------- */
     function curTrack() { var s = ST.state; return (s && s.queue && s.queue[s.index]) || null; }
     function activeType() { var t = curTrack(); return t ? (t.type || 'file') : null; }
-    function getDur() { var t = curTrack(); if (!t) return 0; if ((t.type || 'file') === 'yt') { try { return (ST.ytP && ST.ytP.getDuration) ? ST.ytP.getDuration() : 0; } catch (e) { return 0; } } return audio.duration || 0; }
-    function getTime() { var t = curTrack(); if (!t) return 0; if ((t.type || 'file') === 'yt') { try { return (ST.ytP && ST.ytP.getCurrentTime) ? ST.ytP.getCurrentTime() : 0; } catch (e) { return 0; } } return audio.currentTime || 0; }
+    // Egy yt-szám akkor szól az <audio>-ból (reklámmentes, Invidious-feloldva),
+    // ha van hozzá cache-elt URL; különben a YouTube IFrame-ről (fallback).
+    function ytUrl(t) { return (t && (t.type || 'file') === 'yt' && ST.ytCache[t.videoId]) ? ST.ytCache[t.videoId] : null; }
+    function usesAudio(t) { t = t || curTrack(); if (!t) return false; return (t.type || 'file') === 'file' || !!ytUrl(t); }
+    function getDur() { var t = curTrack(); if (!t) return 0; if (!usesAudio(t)) { try { return (ST.ytP && ST.ytP.getDuration) ? ST.ytP.getDuration() : 0; } catch (e) { return 0; } } return audio.duration || 0; }
+    function getTime() { var t = curTrack(); if (!t) return 0; if (!usesAudio(t)) { try { return (ST.ytP && ST.ytP.getCurrentTime) ? ST.ytP.getCurrentTime() : 0; } catch (e) { return 0; } } return audio.currentTime || 0; }
     function updateProg() { var d = getDur(); el('.mm-progf').style.width = (d ? Math.min(100, (getTime() / d) * 100) : 0) + '%'; }
     function pauseAll() { try { audio.pause(); } catch (e) {} try { if (ST.ytP && ST.ytP.pauseVideo) ST.ytP.pauseVideo(); } catch (e) {} }
+
+    // Közös <audio>-lejátszás (fájl ÉS feloldott yt-stream ugyanazt használja).
+    function playAudioSrc(url, s, pos) {
+      try { if (ST.ytP && ST.ytP.pauseVideo) ST.ytP.pauseVideo(); } catch (e) {}
+      if (audio.getAttribute('src') !== url) { audio.setAttribute('src', url); audio.load(); }
+      var go = function () {
+        if (Math.abs((audio.currentTime || 0) - pos) > 1.6) { try { audio.currentTime = pos; } catch (e) {} }
+        if (s.playing) { var pr = audio.play(); if (pr && pr.catch) pr.catch(needArm); } else { try { audio.pause(); } catch (e) {} }
+      };
+      if (audio.readyState >= 1) go(); else { audio.onloadedmetadata = function () { audio.onloadedmetadata = null; go(); }; }
+    }
+
+    /* ---------- Invidious feloldó: videoId → reklámmentes audio-stream URL ---------- */
+    // A proxy-URL (local=true) az instance-on át megy → minden kliensnek lejátszható
+    // (nem IP-hez kötött), és CORS-barát. itag 140 = m4a audio; 251 = webm/opus.
+    function canLoad(src) {
+      return new Promise(function (res) {
+        var a = new Audio(); var done = false;
+        var fin = function (v) { if (done) return; done = true; try { a.src = ''; } catch (e) {} res(v); };
+        a.preload = 'metadata';
+        a.addEventListener('loadedmetadata', function () { fin(true); });
+        a.addEventListener('error', function () { fin(false); });
+        setTimeout(function () { fin(false); }, 7000);
+        try { a.src = src; } catch (e) { fin(false); }
+      });
+    }
+    function resolveYT(vid) {
+      var hosts = ST.invHosts, itags = ['140', '251', '18'], hi = 0;
+      function nextHost() {
+        if (hi >= hosts.length) return Promise.resolve(null);
+        var h = hosts[hi++];
+        return probe(h, 0);
+      }
+      function probe(h, ti) {
+        if (ti >= itags.length) return nextHost();
+        var url = h + '/latest_version?id=' + encodeURIComponent(vid) + '&itag=' + itags[ti] + '&local=true';
+        return canLoad(url).then(function (ok) { return ok ? url : probe(h, ti + 1); });
+      }
+      return nextHost();
+    }
 
     function applyState() {
       var s = ST.state, t = curTrack();
@@ -169,29 +277,45 @@
       var type = t.type || 'file';
       var pos = s.playing ? Math.max(0, (Date.now() - (s.started_at || Date.now())) / 1000) : (s.paused_sec || 0);
       if (type === 'file') {
-        try { if (ST.ytP && ST.ytP.pauseVideo) ST.ytP.pauseVideo(); } catch (e) {}
-        if (audio.getAttribute('src') !== t.url) { audio.setAttribute('src', t.url); audio.load(); }
-        var go = function () {
-          if (Math.abs((audio.currentTime || 0) - pos) > 1.6) { try { audio.currentTime = pos; } catch (e) {} }
-          if (s.playing) { var pr = audio.play(); if (pr && pr.catch) pr.catch(needArm); } else { try { audio.pause(); } catch (e) {} }
-        };
-        if (audio.readyState >= 1) go(); else { audio.onloadedmetadata = function () { audio.onloadedmetadata = null; go(); }; }
-      } else if (type === 'yt') {
-        try { audio.pause(); } catch (e) {}
-        loadYT().then(function (YT) {
-          if (!ST.ytP) {
-            ST.ytP = new YT.Player(ytHost, {
-              height: '1', width: '1', videoId: t.videoId,
-              playerVars: { autoplay: 0, controls: 0, disablekb: 1, modestbranding: 1, rel: 0, playsinline: 1 },
-              events: {
-                onReady: function () { ST.ytLoaded = t.videoId; applyVol(); ytApply(t, s, pos); },
-                onStateChange: function (ev) { if (ev.data === 0 && ST.isOwner) djTrackEnded(); }
-              }
+        playAudioSrc(t.url, s, pos);
+      } else { // yt
+        var cached = ytUrl(t);
+        if (cached) {
+          playAudioSrc(cached, s, pos);           // reklámmentes stream az <audio>-ból
+        } else if (ST.ytFail[t.videoId]) {
+          ytIframe(t, s, pos);                     // fallback: beépített YouTube-lejátszó (reklám lehet)
+        } else {
+          // feloldás Invidious-on át; közben szünet
+          try { audio.pause(); } catch (e) {}
+          if (ST.ytResolving !== t.videoId) {
+            ST.ytResolving = t.videoId;
+            resolveYT(t.videoId).then(function (url) {
+              ST.ytResolving = null;
+              if (url) ST.ytCache[t.videoId] = url; else ST.ytFail[t.videoId] = true;
+              var cur = curTrack(); if (cur && cur.videoId === t.videoId) applyState();
             });
-          } else { ytApply(t, s, pos); }
-        });
+          }
+          renderBar(); return;
+        }
       }
       renderBar();
+    }
+
+    // Beépített YouTube IFrame (csak ha az Invidious-feloldás nem sikerült).
+    function ytIframe(t, s, pos) {
+      try { audio.pause(); } catch (e) {}
+      loadYT().then(function (YT) {
+        if (!ST.ytP) {
+          ST.ytP = new YT.Player(ytHost, {
+            height: '1', width: '1', videoId: t.videoId,
+            playerVars: { autoplay: 0, controls: 0, disablekb: 1, modestbranding: 1, rel: 0, playsinline: 1 },
+            events: {
+              onReady: function () { ST.ytLoaded = t.videoId; applyVol(); ytApply(t, s, pos); },
+              onStateChange: function (ev) { if (ev.data === 0 && ST.isOwner && !usesAudio()) djTrackEnded(); }
+            }
+          });
+        } else { ytApply(t, s, pos); }
+      });
     }
     function ytApply(t, s, pos) {
       try {
@@ -202,8 +326,8 @@
     }
     function needArm() {
       if (ST.armed) return;
-      var b = el('.mm-play'); b.hidden = false; b.textContent = '🔊 Hang be'; b.classList.add('on');
-      b.onclick = function () { ST.armed = true; b.classList.remove('on'); b.textContent = '▶'; b.onclick = djTogglePlay; b.hidden = !ST.isOwner; applyState(); };
+      var b = el('.mm-play'); b.hidden = false; b.innerHTML = ic('vol') + ' Hang be'; b.classList.add('on');
+      b.onclick = function () { ST.armed = true; b.classList.remove('on'); b.innerHTML = ic('play'); b.onclick = djTogglePlay; b.hidden = !ST.isOwner; applyState(); };
     }
 
     /* ---------- könyvtár (feltöltött fájlok) ---------- */
@@ -234,20 +358,36 @@
       });
     }
     function addYtLink() {
-      var u = prompt('YouTube link vagy videó-ID:\n(Figyelem: a YouTube-számoknál reklám előfordulhat — a fájl-feltöltés 100% reklámmentes.)');
+      var u = prompt('YouTube link vagy videó-ID:\n(Reklámmentesen játsszuk le egy Invidious-szerveren át. Ha egy szerver épp nem elérhető, a beépített YouTube-lejátszóra vált — ott lehet reklám. A fájl-feltöltés mindig 100% reklámmentes.)');
       if (!u) return;
       var vid = parseYT(u); if (!vid) { alert('Nem ismerem fel a YouTube-linket.'); return; }
-      var title = prompt('Cím a számhoz:', 'YouTube: ' + vid) || ('YouTube: ' + vid);
+      var title = (prompt('Adj nevet a számnak:', '') || '').trim() || 'YouTube-szám';
       var s = curState(); s.queue = (s.queue || []).concat([{ type: 'yt', videoId: vid, title: title }]); saveState(s); renderQueue(); renderBar();
+    }
+    // Átnevezés: könyvtári szám (DB) + a lejátszási sorban lévő tétel (room_music.state).
+    function renameTrack(t) {
+      var name = (prompt('Új név a számhoz:', t.title) || '').trim(); if (!name || name === t.title) return;
+      sb.from('music_tracks').update({ title: name }).eq('id', t.id).then(function (r) {
+        if (r && r.error) { alert('Átnevezés hiba: ' + r.error.message); return; }
+        t.title = name; renderLib();
+      });
+    }
+    function renameQueue(i) {
+      var s = curState(); var tr = s.queue && s.queue[i]; if (!tr) return;
+      var name = (prompt('Új név a sorban lévő számhoz:', tr.title) || '').trim(); if (!name || name === tr.title) return;
+      tr.title = name; saveState(s); renderQueue(); renderBar();
     }
     function renderLib() {
       var box = djEl('.mm-lib'); if (!box) return;
-      if (!ST.tracks.length) { box.innerHTML = '<div class="mm-empty">Tölts fel zenéket (⬆ Feltöltés) vagy adj YT-linket.</div>'; return; }
+      if (!ST.tracks.length) { box.innerHTML = '<div class="mm-empty">Tölts fel zenéket a Feltöltés gombbal, vagy adj YT-linket.</div>'; return; }
       box.innerHTML = '';
       ST.tracks.forEach(function (t) {
         var row = document.createElement('div'); row.className = 'mm-row';
-        row.innerHTML = '<span class="mm-t" title="Lejátszás most">' + esc(t.title) + '</span><button class="mm-add" title="Sorba">➕</button><button class="mm-del" title="Törlés">🗑</button>';
+        row.innerHTML = '<span class="mm-t" title="Lejátszás most">' + esc(t.title) + '</span>' +
+          '<button class="mm-ren" title="Átnevezés">' + ic('edit') + '</button>' +
+          '<button class="mm-add" title="Sorba">' + ic('plus') + '</button><button class="mm-del" title="Törlés">' + ic('trash') + '</button>';
         row.querySelector('.mm-t').onclick = function () { djAddAndPlay({ type: 'file', url: t.url, title: t.title }); };
+        row.querySelector('.mm-ren').onclick = function () { renameTrack(t); };
         row.querySelector('.mm-add').onclick = function () { djAddToQueue({ type: 'file', url: t.url, title: t.title }); };
         row.querySelector('.mm-del').onclick = function () { delTrack(t); };
         box.appendChild(row);
@@ -258,25 +398,83 @@
     function curState() { return ST.state || { queue: [], index: 0, playing: false, started_at: 0, paused_sec: 0, loop: 'off' }; }
     function loadState() {
       return sb.from('room_music').select('state').eq('room_id', ST.roomId).maybeSingle()
-        .then(function (r) { ST.state = (r && r.data && r.data.state) ? r.data.state : null; })
-        .catch(function () { ST.state = null; });
+        .then(function (r) { if (r && r.error) console.warn('[zene] loadState hiba:', r.error.message); ST.state = (r && r.data && r.data.state) ? r.data.state : null; })
+        .catch(function (e) { console.warn('[zene] loadState kivétel:', e); ST.state = null; });
     }
-    function saveState(s) { ST.state = s; sb.from('room_music').upsert({ room_id: ST.roomId, state: s, updated_at: new Date().toISOString() }).then(function () {}); }
+    function saveState(s) {
+      ST.state = s;
+      sb.from('room_music').upsert({ room_id: ST.roomId, state: s, updated_at: new Date().toISOString() })
+        .then(function (r) { if (r && r.error) console.warn('[zene] saveState hiba (a többi gép nem kapja meg):', r.error.message); })
+        .catch(function (e) { console.warn('[zene] saveState kivétel:', e); });
+    }
     function subscribe() {
       if (ST.chan) { try { sb.removeChannel(ST.chan); } catch (e) {} ST.chan = null; }
-      ST.chan = sb.channel('music-' + ST.roomId).on('postgres_changes', { event: '*', schema: 'public', table: 'room_music' }, function (p) {
-        var row = p.new; if (!row || row.room_id !== ST.roomId) return;
-        ST.state = row.state || null; applyState(); renderBar();
-      }).subscribe();
+      var uid = getUid() || 'anon';
+      ST.chan = sb.channel('music-' + ST.roomId, { config: { presence: { key: uid } } })
+        .on('postgres_changes', { event: '*', schema: 'public', table: 'room_music' }, function (p) {
+          var row = p.new; if (!row || row.room_id !== ST.roomId) return;
+          ST.state = row.state || null; applyState(); renderBar();
+        })
+        .on('presence', { event: 'sync' }, function () { try { ST.presence = ST.chan.presenceState(); } catch (e) { ST.presence = {}; } renderListeners(); })
+        .on('broadcast', { event: 'setvol' }, function (m) { applyRemoteVol(m && m.payload); })
+        .subscribe(function (status, err) {
+          console.log('[zene] realtime csatorna:', status, err || '');
+          if (status === 'SUBSCRIBED') trackPresence();
+          if (status === 'CHANNEL_ERROR' || status === 'TIMED_OUT') console.warn('[zene] a realtime NEM él — a room_music tábla valószínűleg nincs a realtime publikációban (lásd room_music.sql).');
+        });
+    }
+
+    /* ---------- jelenlét + távoli hangerő (ki mennyin hallgatja / DJ állítja) ---------- */
+    function trackPresence() {
+      if (!ST.chan || !ST.chan.track) return;
+      try { ST.chan.track({ name: (getName() || 'Játékos'), vol: ST.vol, muted: !!ST.muted, owner: !!ST.isOwner }); } catch (e) {}
+    }
+    // Más gépen állítottak a hangerőmön (DJ) → alkalmazom helyben.
+    function applyRemoteVol(p) {
+      if (!p) return;
+      var me = getUid() || 'anon';
+      if (p.target !== 'all' && p.target !== me) return;
+      if (typeof p.vol === 'number') { ST.vol = Math.max(0, Math.min(100, p.vol)); ST.muted = false; }
+      if (typeof p.muted === 'boolean') ST.muted = p.muted;
+      try { el('.mm-volr').value = ST.vol; el('.mm-mute').innerHTML = ic(ST.muted ? 'mute' : 'vol'); } catch (e) {}
+      applyVol();
+      try { localStorage.setItem('kk_music_vol', ST.vol); localStorage.setItem('kk_music_muted', ST.muted ? '1' : '0'); } catch (e) {}
+      trackPresence();
+    }
+    // DJ → beállít egy hallgatónak (uid) vagy mindenkinek ('all') egy hangerőt.
+    function sendVol(target, vol) {
+      if (ST.chan && ST.chan.send) { try { ST.chan.send({ type: 'broadcast', event: 'setvol', payload: { target: target, vol: vol } }); } catch (e) {} }
+      applyRemoteVol({ target: target, vol: vol }); // a feladó a saját broadcastját nem kapja vissza → 'all'/saját esetén itt
+    }
+    function renderListeners() {
+      var box = djEl('.mm-listeners'); if (!box) return;
+      var ps = ST.presence || {}; var keys = Object.keys(ps);
+      if (!keys.length) { box.innerHTML = '<div class="mm-empty">Nincs csatlakozott hallgató.</div>'; return; }
+      var me = getUid() || 'anon';
+      box.innerHTML = '';
+      keys.forEach(function (k) {
+        var meta = (ps[k] || [])[0] || {};
+        var vol = typeof meta.vol === 'number' ? meta.vol : 0, muted = !!meta.muted;
+        var nm = (meta.name || 'Játékos') + (k === me ? ' (te)' : '') + (meta.owner ? ' · DJ' : '');
+        var row = document.createElement('div'); row.className = 'mm-row mm-lrow';
+        row.innerHTML = '<span class="mm-t">' + esc(nm) + '</span><span class="mm-lnum">' + (muted ? '🔇' : vol) + '</span>' +
+          '<input type="range" class="mm-lr" min="0" max="100" value="' + vol + '">';
+        var num = row.querySelector('.mm-lnum');
+        if (muted) num.innerHTML = ic('mute'); else num.textContent = vol;
+        var r = row.querySelector('.mm-lr');
+        r.oninput = function () { num.textContent = parseInt(this.value, 10) || 0; };
+        r.onchange = function () { sendVol(k, parseInt(this.value, 10) || 0); };
+        box.appendChild(row);
+      });
     }
 
     function renderBar() {
       var s = ST.state, t = (s && s.queue && s.queue[s.index]) ? s.queue[s.index] : null;
-      el('.mm-title').innerHTML = t ? ((t.type === 'yt' ? '<span class="mm-badge" title="YouTube — reklám lehet">YT</span> ' : '') + esc(t.title)) : 'Nincs zene';
+      el('.mm-title').innerHTML = t ? ((t.type === 'yt' ? '<span class="mm-badge" title="YouTube-link — reklámmentesen, Invidious-on át">YT</span> ' : '') + esc(t.title)) : 'Nincs zene';
       if (ST.isOwner) {
-        el('.mm-play').textContent = (s && s.playing) ? '⏸' : '▶';
+        el('.mm-play').innerHTML = ic((s && s.playing) ? 'pause' : 'play');
         var loop = (s && s.loop) || 'off';
-        el('.mm-loop').textContent = loop === 'one' ? '🔂' : '🔁';
+        el('.mm-loop').innerHTML = ic(loop === 'one' ? 'repeat1' : 'repeat');
         el('.mm-loop').classList.toggle('on', loop !== 'off');
         el('.mm-loop').title = loop === 'off' ? 'Ismétlés: ki' : loop === 'all' ? 'Ismétlés: összes' : 'Ismétlés: egy';
       }
@@ -299,13 +497,15 @@
 
     function renderQueue() {
       var box = djEl('.mm-queue'); if (!box) return; var s = ST.state; var q = (s && s.queue) || [];
-      if (!q.length) { box.innerHTML = '<div class="mm-empty">A sor üres — a könyvtárból add hozzá ➕.</div>'; return; }
+      if (!q.length) { box.innerHTML = '<div class="mm-empty">A sor üres — a könyvtárból add hozzá.</div>'; return; }
       box.innerHTML = '';
       q.forEach(function (tr, i) {
         var row = document.createElement('div'); row.className = 'mm-row' + ((s && s.index === i && s.playing) ? ' playing' : '');
-        row.innerHTML = '<span class="mm-t" title="Lejátszás innen">' + (s && s.index === i ? '▶ ' : '') + (tr.type === 'yt' ? '<span class="mm-badge">YT</span> ' : '') + esc(tr.title) + '</span>' +
-          '<button class="mm-up" title="Fel">▲</button><button class="mm-dn" title="Le">▼</button><button class="mm-del" title="Kivesz">✕</button>';
+        row.innerHTML = '<span class="mm-t" title="Lejátszás innen">' + (s && s.index === i ? '<span class="mm-cur">' + ic('play') + '</span>' : '') + (tr.type === 'yt' ? '<span class="mm-badge">YT</span> ' : '') + esc(tr.title) + '</span>' +
+          '<button class="mm-ren" title="Átnevezés">' + ic('edit') + '</button>' +
+          '<button class="mm-up" title="Fel">' + ic('up') + '</button><button class="mm-dn" title="Le">' + ic('down') + '</button><button class="mm-del" title="Kivesz">' + ic('x') + '</button>';
         row.querySelector('.mm-t').onclick = function () { playAt(curState(), i); };
+        row.querySelector('.mm-ren').onclick = function () { renameQueue(i); };
         row.querySelector('.mm-up').onclick = function () { djMove(i, -1); };
         row.querySelector('.mm-dn').onclick = function () { djMove(i, 1); };
         row.querySelector('.mm-del').onclick = function () { djRemoveQ(i); };
