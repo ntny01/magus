@@ -330,11 +330,15 @@
       b.onclick = function () { ST.armed = true; b.classList.remove('on'); b.innerHTML = ic('play'); b.onclick = djTogglePlay; b.hidden = !ST.isOwner; applyState(); };
     }
 
-    /* ---------- könyvtár (feltöltött fájlok) ---------- */
+    /* ---------- könyvtár (a FELHASZNÁLÓ zenéi: fájlok ÉS YT-linkek, szobák közt újrahasználható) ---------- */
     function loadLib() {
-      sb.from('music_tracks').select('id,title,url,path').eq('owner_id', getUid()).order('created_at', { ascending: false }).then(function (r) {
+      sb.from('music_tracks').select('id,title,url,path,type,video_id').eq('owner_id', getUid()).order('created_at', { ascending: false }).then(function (r) {
         ST.tracks = (r && r.data && !r.error) ? r.data : []; renderLib();
       });
+    }
+    // Könyvtári sor → lejátszási-sor tétel (type-helyesen).
+    function trackToQueue(t) {
+      return (t.type === 'yt') ? { type: 'yt', videoId: t.video_id, title: t.title } : { type: 'file', url: t.url, title: t.title };
     }
     function uploadTracks(files) {
       if (!files || !files.length) return;
@@ -362,7 +366,13 @@
       if (!u) return;
       var vid = parseYT(u); if (!vid) { alert('Nem ismerem fel a YouTube-linket.'); return; }
       var title = (prompt('Adj nevet a számnak:', '') || '').trim() || 'YouTube-szám';
-      var s = curState(); s.queue = (s.queue || []).concat([{ type: 'yt', videoId: vid, title: title }]); saveState(s); renderQueue(); renderBar();
+      // 1) mentés a felhasználó könyvtárába → bármelyik szobádban újrahasználható
+      sb.from('music_tracks').insert({ owner_id: getUid(), title: title, type: 'yt', video_id: vid, url: 'https://youtu.be/' + vid }).then(function (r) {
+        if (r && r.error) console.warn('[zene] a YT-link könyvtárba mentése nem sikerült:', r.error.message);
+        loadLib();
+      });
+      // 2) és rögtön a mostani sorba is
+      djAddToQueue({ type: 'yt', videoId: vid, title: title });
     }
     // Átnevezés: könyvtári szám (DB) + a lejátszási sorban lévő tétel (room_music.state).
     function renameTrack(t) {
@@ -383,12 +393,12 @@
       box.innerHTML = '';
       ST.tracks.forEach(function (t) {
         var row = document.createElement('div'); row.className = 'mm-row';
-        row.innerHTML = '<span class="mm-t" title="Lejátszás most">' + esc(t.title) + '</span>' +
+        row.innerHTML = '<span class="mm-t" title="Lejátszás most">' + (t.type === 'yt' ? '<span class="mm-badge">YT</span> ' : '') + esc(t.title) + '</span>' +
           '<button class="mm-ren" title="Átnevezés">' + ic('edit') + '</button>' +
           '<button class="mm-add" title="Sorba">' + ic('plus') + '</button><button class="mm-del" title="Törlés">' + ic('trash') + '</button>';
-        row.querySelector('.mm-t').onclick = function () { djAddAndPlay({ type: 'file', url: t.url, title: t.title }); };
+        row.querySelector('.mm-t').onclick = function () { djAddAndPlay(trackToQueue(t)); };
         row.querySelector('.mm-ren').onclick = function () { renameTrack(t); };
-        row.querySelector('.mm-add').onclick = function () { djAddToQueue({ type: 'file', url: t.url, title: t.title }); };
+        row.querySelector('.mm-add').onclick = function () { djAddToQueue(trackToQueue(t)); };
         row.querySelector('.mm-del').onclick = function () { delTrack(t); };
         box.appendChild(row);
       });
@@ -402,10 +412,22 @@
         .catch(function (e) { console.warn('[zene] loadState kivétel:', e); ST.state = null; });
     }
     function saveState(s) {
+      s.rev = (((ST.state && ST.state.rev) || 0) + 1);                // monoton verzió → az elkésett/elavult üzenet nem írja felül az újabbat
       ST.state = s;
-      sb.from('room_music').upsert({ room_id: ST.roomId, state: s, updated_at: new Date().toISOString() })
-        .then(function (r) { if (r && r.error) console.warn('[zene] saveState hiba (a többi gép nem kapja meg):', r.error.message); })
+      pushState();                                                    // 1) AZONNALI, megbízható élő szinkron (broadcast) — nem függ a postgres_changes UPDATE-kézbesítéstől
+      sb.from('room_music').upsert({ room_id: ST.roomId, state: s, updated_at: new Date().toISOString() }) // 2) perzisztencia + késői csatlakozóknak (loadState)
+        .then(function (r) { if (r && r.error) console.warn('[zene] saveState DB-hiba:', r.error.message); })
         .catch(function (e) { console.warn('[zene] saveState kivétel:', e); });
+    }
+    // A tulaj a teljes állapotot broadcast-tal is kiküldi (ez a megbízható élő csatorna).
+    function pushState() {
+      if (ST.chan && ST.chan.send && ST.state) { try { ST.chan.send({ type: 'broadcast', event: 'state', payload: ST.state }); } catch (e) {} }
+    }
+    // Beérkező állapot alkalmazása (broadcast ÉS postgres_changes közös útja), elavult-szűréssel.
+    function applyIncoming(st) {
+      if (!st) return;
+      if (st.rev != null && ST.state && ST.state.rev != null && st.rev < ST.state.rev) return; // régebbi, mint ami már nálunk van → eldobjuk
+      ST.state = st; applyState(); renderBar(); if (!dj.hidden) renderQueue();
     }
     function subscribe() {
       if (ST.chan) { try { sb.removeChannel(ST.chan); } catch (e) {} ST.chan = null; }
@@ -413,13 +435,14 @@
       ST.chan = sb.channel('music-' + ST.roomId, { config: { presence: { key: uid } } })
         .on('postgres_changes', { event: '*', schema: 'public', table: 'room_music' }, function (p) {
           var row = p.new; if (!row || row.room_id !== ST.roomId) return;
-          ST.state = row.state || null; applyState(); renderBar();
+          applyIncoming(row.state);                                   // tartalék csatorna (a broadcast az elsődleges)
         })
-        .on('presence', { event: 'sync' }, function () { try { ST.presence = ST.chan.presenceState(); } catch (e) { ST.presence = {}; } renderListeners(); })
+        .on('presence', { event: 'sync' }, function () { try { ST.presence = ST.chan.presenceState(); } catch (e) { ST.presence = {}; } renderListeners(); if (ST.isOwner) pushState(); /* új csatlakozó is megkapja az aktuális állapotot */ })
+        .on('broadcast', { event: 'state' }, function (m) { applyIncoming(m && m.payload); })
         .on('broadcast', { event: 'setvol' }, function (m) { applyRemoteVol(m && m.payload); })
         .subscribe(function (status, err) {
           console.log('[zene] realtime csatorna:', status, err || '');
-          if (status === 'SUBSCRIBED') trackPresence();
+          if (status === 'SUBSCRIBED') { trackPresence(); if (ST.isOwner) pushState(); }
           if (status === 'CHANNEL_ERROR' || status === 'TIMED_OUT') console.warn('[zene] a realtime NEM él — a room_music tábla valószínűleg nincs a realtime publikációban (lásd room_music.sql).');
         });
     }
