@@ -120,7 +120,7 @@
     var getUid = opts.getUid || function () { return null; };
     var getName = opts.getName || function () { return ''; };
 
-    var ST = { roomId: null, isOwner: false, state: null, tracks: [], chan: null, vol: 60, muted: false, armed: false, ytP: null, ytLoaded: null,
+    var ST = { roomId: null, isOwner: false, state: null, tracks: [], chan: null, dbChan: null, hb: null, vol: 60, muted: false, armed: false, ytP: null, ytLoaded: null,
       invHosts: [], ytCache: {}, ytFail: {}, ytResolving: null, presence: {} };
 
     /* ---------- Invidious instance-ok (YT-linkek reklámmentes feloldásához) ---------- */
@@ -236,8 +236,8 @@
       try { if (ST.ytP && ST.ytP.pauseVideo) ST.ytP.pauseVideo(); } catch (e) {}
       if (audio.getAttribute('src') !== url) { audio.setAttribute('src', url); audio.load(); }
       var go = function () {
-        if (Math.abs((audio.currentTime || 0) - pos) > 1.6) { try { audio.currentTime = pos; } catch (e) {} }
-        if (s.playing) { var pr = audio.play(); if (pr && pr.catch) pr.catch(needArm); } else { try { audio.pause(); } catch (e) {} }
+        if (Math.abs((audio.currentTime || 0) - pos) > 2.0) { try { audio.currentTime = pos; } catch (e) {} }
+        if (s.playing) { var pr = audio.play(); if (pr && pr.catch) pr.catch(function (err) { if (err && err.name === 'NotAllowedError') needArm(); }); } else { try { audio.pause(); } catch (e) {} }
       };
       if (audio.readyState >= 1) go(); else { audio.onloadedmetadata = function () { audio.onloadedmetadata = null; go(); }; }
     }
@@ -320,7 +320,7 @@
     function ytApply(t, s, pos) {
       try {
         if (ST.ytLoaded !== t.videoId) { ST.ytP.loadVideoById({ videoId: t.videoId, startSeconds: pos }); ST.ytLoaded = t.videoId; applyVol(); }
-        else { var ct = ST.ytP.getCurrentTime ? ST.ytP.getCurrentTime() : 0; if (Math.abs(ct - pos) > 1.8) { ST.ytP.seekTo(pos, true); } }
+        else { var ct = ST.ytP.getCurrentTime ? ST.ytP.getCurrentTime() : 0; if (Math.abs(ct - pos) > 2.0) { ST.ytP.seekTo(pos, true); } }
         if (s.playing) { ST.ytP.playVideo(); } else { ST.ytP.pauseVideo(); }
       } catch (e) {}
     }
@@ -419,31 +419,53 @@
         .then(function (r) { if (r && r.error) console.warn('[zene] saveState DB-hiba:', r.error.message); })
         .catch(function (e) { console.warn('[zene] saveState kivétel:', e); });
     }
-    // A tulaj a teljes állapotot broadcast-tal is kiküldi (ez a megbízható élő csatorna).
+    // A tulaj a teljes állapotot broadcast-tal küldi ki — EZ a megbízható élő csatorna.
     function pushState() {
       if (ST.chan && ST.chan.send && ST.state) { try { ST.chan.send({ type: 'broadcast', event: 'state', payload: ST.state }); } catch (e) {} }
     }
-    // Beérkező állapot alkalmazása (broadcast ÉS postgres_changes közös útja), elavult-szűréssel.
+    // Beérkező állapot alkalmazása (broadcast ÉS a tartalék postgres_changes közös útja), elavult-szűréssel.
     function applyIncoming(st) {
       if (!st) return;
       if (st.rev != null && ST.state && ST.state.rev != null && st.rev < ST.state.rev) return; // régebbi, mint ami már nálunk van → eldobjuk
       ST.state = st; applyState(); renderBar(); if (!dj.hidden) renderQueue();
     }
-    function subscribe() {
+    // Tulaj-szívverés: 4 mp-enként újra-broadcastolja az állapotot, hogy bármilyen
+    // kimaradt üzenet magától helyreálljon és a (vissza)csatlakozó is szinkronba kerüljön.
+    function startHeartbeat() { stopHeartbeat(); ST.hb = setInterval(function () { if (ST.isOwner && ST.state) pushState(); }, 4000); }
+    function stopHeartbeat() { if (ST.hb) { clearInterval(ST.hb); ST.hb = null; } }
+    function teardownChans() {
+      stopHeartbeat();
       if (ST.chan) { try { sb.removeChannel(ST.chan); } catch (e) {} ST.chan = null; }
+      if (ST.dbChan) { try { sb.removeChannel(ST.dbChan); } catch (e) {} ST.dbChan = null; }
+    }
+    function subscribe() {
+      teardownChans();
       var uid = getUid() || 'anon';
-      ST.chan = sb.channel('music-' + ST.roomId, { config: { presence: { key: uid } } })
-        .on('postgres_changes', { event: '*', schema: 'public', table: 'room_music' }, function (p) {
-          var row = p.new; if (!row || row.room_id !== ST.roomId) return;
-          applyIncoming(row.state);                                   // tartalék csatorna (a broadcast az elsődleges)
-        })
-        .on('presence', { event: 'sync' }, function () { try { ST.presence = ST.chan.presenceState(); } catch (e) { ST.presence = {}; } renderListeners(); if (ST.isOwner) pushState(); /* új csatlakozó is megkapja az aktuális állapotot */ })
+      // 1) ÉLŐ csatorna — CSAK broadcast + presence. Tiszta, publikus, efemer: semmilyen
+      //    DB-feliratkozás nem destabilizálja, ezért a vezérlés mindig átmegy és a presence stabil.
+      ST.chan = sb.channel('music-live-' + ST.roomId, { config: { presence: { key: uid }, broadcast: { self: false } } })
+        .on('presence', { event: 'sync' }, function () { try { ST.presence = ST.chan.presenceState(); } catch (e) { ST.presence = {}; } renderListeners(); if (ST.isOwner) pushState(); /* belépő is megkapja az aktuális állapotot */ })
         .on('broadcast', { event: 'state' }, function (m) { applyIncoming(m && m.payload); })
         .on('broadcast', { event: 'setvol' }, function (m) { applyRemoteVol(m && m.payload); })
+        .on('broadcast', { event: 'req' }, function () { if (ST.isOwner) pushState(); }) // belépő kér egy friss állapotot
         .subscribe(function (status, err) {
-          console.log('[zene] realtime csatorna:', status, err || '');
-          if (status === 'SUBSCRIBED') { trackPresence(); if (ST.isOwner) pushState(); }
-          if (status === 'CHANNEL_ERROR' || status === 'TIMED_OUT') console.warn('[zene] a realtime NEM él — a room_music tábla valószínűleg nincs a realtime publikációban (lásd room_music.sql).');
+          console.log('[zene] élő csatorna:', status, err || '');
+          if (status === 'SUBSCRIBED') {
+            trackPresence();
+            if (ST.isOwner) { pushState(); startHeartbeat(); }
+            else { try { ST.chan.send({ type: 'broadcast', event: 'req', payload: {} }); } catch (e) {} } // kérjük az aktuális állapotot
+          }
+          if (status === 'CHANNEL_ERROR' || status === 'TIMED_OUT') console.warn('[zene] az élő csatorna hibázott, újracsatlakozás…');
+        });
+      // 2) DB-csatorna — CSAK postgres_changes, tartaléknak. Ha a room_music nincs a realtime
+      //    publikációban (room_music.sql), ez némán hibázik, de az élő csatornát NEM érinti.
+      ST.dbChan = sb.channel('music-db-' + ST.roomId)
+        .on('postgres_changes', { event: '*', schema: 'public', table: 'room_music' }, function (p) {
+          var row = p.new; if (!row || row.room_id !== ST.roomId) return;
+          applyIncoming(row.state);
+        })
+        .subscribe(function (status) {
+          if (status === 'CHANNEL_ERROR' || status === 'TIMED_OUT') console.warn('[zene] DB-tartalékcsatorna nem él (a broadcast az elsődleges) — futtasd a room_music.sql-t a teljes biztonságért.');
         });
     }
 
@@ -547,7 +569,7 @@
       subscribe();
     }
     function leave() {
-      if (ST.chan) { try { sb.removeChannel(ST.chan); } catch (e) {} ST.chan = null; }
+      teardownChans();
       pauseAll();
       try { audio.removeAttribute('src'); audio.load(); } catch (e) {}
       try { if (ST.ytP && ST.ytP.stopVideo) ST.ytP.stopVideo(); } catch (e) {}
